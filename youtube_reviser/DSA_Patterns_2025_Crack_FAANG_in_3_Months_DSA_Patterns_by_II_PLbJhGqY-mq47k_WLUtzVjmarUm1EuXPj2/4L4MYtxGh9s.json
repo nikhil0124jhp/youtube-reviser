@@ -1,0 +1,492 @@
+{
+  "video_id": "4L4MYtxGh9s",
+  "video_title": "Rotten Oranges: Multi-Source BFS | Graph Series",
+  "video_number": 96,
+  "chunks": [
+    {
+      "start_time": 2.389,
+      "end_time": 36.15,
+      "text": "देखो भाई आज करेंगे रोटन ऑरेंजेस। मेरा शुरू में मन था कि दो क्वेश्चन कराने का लेकिन ये बड़ा हैवी हो गया क्वेश्चन। हैवी क्या हो गया? मतलब बहुत ज्यादा हम समझा के चाहते हैं कि एक क्वेश्चन समझ लीजिए इसके आगे वाले सिमिलर क्वेश्चन कर सकें। कुछ लोग ये भी लिख रहे थे कि कमेंट में कि बड़ा कम नंबर ऑफ़ क्वेश्चन हो रहा है। कम देखिए कभी भी नंबर ऑफ क्वेश्चन पे मत डिपेंडेंट रहिए। ऐसा नहीं है कि हम कुछ छुपा ले रहे हैं या हम कुछ ऐसा सोच रहे हैं कि चलो यह क्वेश्चन ना कराएं। इंटरव्यू में आएगा तो आप लोग मेरा कंपटीशन नहीं है। हम ऐसा नहीं कर रहे हैं ना कि कुछ बचा ले रहे हैं नॉलेज वो नहीं दे रहे क्योंकि पैसा तो ले नहीं रहे हैं। फ्री में दे रहे हैं ना। तो नंबर ऑफ क्वेश्चन कम करने का क्या रीज़न है ना कि हर क्वेश्चन को ज्यादा से ज्यादा",
+      "source": "caption",
+      "english_text": "Look brother, we will do Rotten Oranges today. Initially I wanted to ask two questions but these questions turned out to be very heavy. Heavy what happened? It means that after explaining a lot, we want that one question can be understood so that the others can ask similar questions. Some people were also writing that the number of questions was very less in the comments. Look less, never depend on the number of questions. It is not that we are hiding anything or that we are thinking that let's not ask this question. If I come in the interview, you guys are not my competition. We are not doing this to save anything, they are not giving knowledge because they are not taking money. Giving it for free, right? So what is the reason to reduce the number of questions instead of increasing each question as much as possible?"
+    },
+    {
+      "start_time": 36.16,
+      "end_time": 69.99,
+      "text": "टाइम मिले। 100 क्वेश्चन आधा अधूरा कर लेने से और ऐसा बना लेने से उससे बहुत ज्यादा अच्छा ऑप्शन है कि आप 20 क्वेश्चन करिए। वो 20 इतना सॉलिड करिए ना कि वो 20 के बिना पे आप 80 बना सकें। ये गोल होना चाहिए। नंबर ऑफ़ क्वेश्चन कम है कि ज़्यादा है वो हमको छोड़ दीजिए। इतने इतने दिनों से आप देख रहे हैं तो अभी तक तो नहीं कुछ गलत हुआ है। तो आगे भी थोड़ा ट्रस्ट रखिए। रॉटन ऑरेंजेस है बहुत बहुत फेमस क्वेश्चन मतलब हर एक कंपनी में पूछा जा चुका है मेरे हिसाब से। तो ध्यान से देखिएगा। जो लोग आइलैंड वाला नहीं देखे हैं तो आप लोग को कुछ समझ में नहीं आएगा। आप लोग अभी चले जाइए बाकी है जल्दी। जो लोग वो देख चुके",
+      "source": "caption",
+      "english_text": "Got time. Doing 20 questions is a much better option than doing 100 questions half-heartedly and making them look like this. Make that 20 so solid that you can make 80 without that 20. It should be round. Leave it to us whether the number of questions is less or more. If you have been watching for so many days, nothing wrong has happened yet. So keep some trust in future too. Rotten Oranges is a very famous question, I think it has been asked in every company. So look carefully. Those who have not seen The Islander, you will not understand anything. You guys go now, it's too soon. those who have seen it"
+    },
+    {
+      "start_time": 70.0,
+      "end_time": 100.149,
+      "text": "हैं। इसमें आपको समझ में आएगा कि क्यों इसमें डीएफएस लगा था। और यहां पे डीएफएस नहीं लगते। यहां पे कुछ अलग ही लग रहा है। बहुत ध्यान खोल के सुनिएगा। कान, आंख, नाक सब खोल के सुनिएगा। शुरू करते हैं। चलिए। तो आइए सबसे पहले देखते हैं कि कवि क्या कहते हैं। क्वेश्चन में क्या कहा जाए आपको। आपको सबसे पहले तो एक n * m का ग्रिड दिया है। देखिए कभी भी आपको जिंदगी में n * m का ग्रिड मिले ना और उसमें ये सब बताया जाए कि आप मूव कर सकते हैं। आप चार दिशाओं में आठ दिशाओं में छह दिशाओं में मूव कर सकते हैं ना। 100% ग्राफ का क्वेश्चन है। सबसे पहले आप समझ जाया करिए।",
+      "source": "caption",
+      "english_text": "Are. In this you will understand why DFS was included in it. And DFS is not applicable here. Something seems different here. Listen very carefully. Listen with your ears, eyes and nose open. let start. Let go. So let us first see what the poet says. What should you say in the question? First of all, you have been given a grid of n * m. Look, if you ever come across a grid of n * m in your life and it tells you that you can move. You can move in four directions, eight directions, six directions, right? 100% is a graph question. First of all you should understand."
+    },
+    {
+      "start_time": 100.159,
+      "end_time": 131.83,
+      "text": "अपने आप को तैयार कर लिया करिए कि ये ग्राफ का क्वेश्चन है। मतलब या तो बीएफएस या तो डीएफएस या तो ब्रेड फर्स्ट सर्च या तो डेप्थ फर्स्ट सर्च। दोनों नहीं देखे हैं तो देख लीजिए। अच्छा आपको बोला है इस ग्रिड में आपको ग्रिड दिया हुआ है एनीम का मतलब एक मैट्रिक्स दिया हुआ है। अच्छा बहुत अच्छी बात है। इसमें तीन चीजें हो सकती हैं। जैसे पिछला क्वेश्चन नंबर ऑफ़ आइलैंड में दो चीजें हो सकती थी। जीरो और वन जीरो मतलब पानी एक मतलब जमीन। इसमें तीन चीजें हो सकती हैं। अच्छा क्या-क्या? 0 1 2 तीन ही नंबर होंगे। नंबर का मैट्रिक्स है। या तो एक नंबर ज़ीरो होगा, वन होगा, दो होगा। इसके अलावा नहीं हो",
+      "source": "caption",
+      "english_text": "Prepare yourself that this is a graph question. Meaning either BFS or DFS or Breadth First Search or Depth First Search. If you haven't seen both, check them out. Well, I have told you that in this grid you have been given a grid, which means a matrix has been given. Okay, that's a very good thing. Three things can happen in this. Like in the previous question number of Island, two things could have happened. Zero and one, zero means water, one means land. Three things can happen in this. ok what? There will be only three numbers 0 1 2. is a matrix of numbers. Either a number will be zero, one, or two. not be besides"
+    },
+    {
+      "start_time": 131.84,
+      "end_time": 165.91,
+      "text": "सकता है। वेरी गुड। इसमें से ज़ीरो का मतलब एम्प्टी। अच्छा। ज़ीरो का मतलब खाली कुछ नहीं। खाली या दीवाल कुछ भी समझ सकते हैं। अच्छा वन का क्या मतलब है? फ्रेश ऑरेंज। क्या? फ्रेश ऑरेंज। यस फ्रेश ऑरेंज। ताजा संतरा। ओके। दो का मतलब रोटन ऑरेंज। दो का मतलब रोटन ऑरेंज मतलब सड़ा हुआ संतरा। वेरी गुड। तो आपको एक ग्रिड दिया हुआ है। इसको आप एक बक्सी की तरह समझ लीजिए। फल का टोकरी दिया हुआ है। फल में ऐसा बहुत सारा खाना है। कहीं पर खाली है। मतलब कोई टोकरी खाली है। कहीं पे अच्छा संतरा है। कहीं पे",
+      "source": "caption",
+      "english_text": "Could. very good. Of these, zero means empty. Good. Zero means empty nothing. Blank or wall can understand anything. What does good forest mean? Fresh Orange. What? Fresh Orange. Yes fresh orange. Fresh Orange. Ok. Two means Rotten Orange. Two means rotten orange. very good. So you are given a grid. Consider it like a box. A basket of fruits has been given. There is a lot of such food in the fruit. It's empty somewhere. Meaning some basket is empty. There is a good orange somewhere. somewhere"
+    },
+    {
+      "start_time": 165.92,
+      "end_time": 199.589,
+      "text": "सड़ा हुआ संतरा आपको दिया हुआ है। अच्छा हर एक मिनट देखिए हर एक मिनट बोला गया है एव्री मिनट। ओके क्या होता है एव्री मिनट? एक सड़ा हुआ संतरा। आप आपको आप वो कहावत सुने होंगे ना कि वन वन स्पॉइल एप्पल स्पॉइल्स द लॉट। मतलब एक टोकरी में अगर आप सारे सेब अच्छे हैं। एक सड़ा हुआ सेब रख देंगे ना तो वो पूरा टोकरी सड़ जाएगा। इसी तरीके से इस टोकरी में भी हर एक मिनट क्या होगा ना मान लीजिए कहीं पे कोई रोटेटन संतरा है कहीं पे क्या कोई सड़ा हुआ संतरा है ये अपने चारों दिशाओं में ऊपर राइट",
+      "source": "caption",
+      "english_text": "A rotten orange has been given to you. Well, look at every minute, every minute has been said, every minute. Ok what happens every minute? A rotten orange. You must have heard the saying that one spoiled apple spoils the lot. Meaning if you want all the apples in one basket are good. If you keep one rotten apple, the whole basket will rot. In the same way, what will happen in this basket every minute, suppose there is a rotten orange somewhere, is there a rotten orange somewhere, it is on the top right in all four directions."
+    },
+    {
+      "start_time": 199.599,
+      "end_time": 233.27,
+      "text": "नीचे और लेफ्ट चारों दिशाओं में अगर फ्रेश ऑरेंज रखा हुआ है अगर कहीं पे फ्रेश ऑरेंज रखा हुआ है तो हर एक मिनट में ये एक रोटेटन संतरा अपने चारों ओर के संतरों को फ्रेश संतरों को सड़ाने की ताकत रखता है। फिर से सुनिए। हर एक मिनट में अगर कोई सड़ा हुआ संतरा कहीं पे रखा हुआ है, और इसके चारों दिशाओं में कहीं भी कोई फ्रेश संतरा है, याद रखिए फ्रेश खाली जगह नहीं होनी चाहिए। फ्रेश संतरा रखा हुआ है, तो ये उनको सड़ाने की ताकत रखता है। सड़ाने की ताकत मतलब एक ही मिनट में चारों सड़",
+      "source": "caption",
+      "english_text": "If fresh oranges are kept in the four directions below and on the left, if fresh oranges are kept anywhere, then every minute this rotted orange has the power to rot all the fresh oranges around it. Listen again. Every minute, if there is a rotten orange kept somewhere, and there is a fresh orange somewhere around it, remember that there should not be any empty space for fresh. If fresh oranges are kept, it has the power to rot them. The power to rot means all four rot in one minute."
+    },
+    {
+      "start_time": 233.28,
+      "end_time": 265.51,
+      "text": "जाएंगे। अगर चार में रखे होंगे ना, तो चारों सड़ जाएंगे। अच्छा! उसके बाद होगा क्या? ये प्रोसेस रिपीट होता जाएगा। मान लीजिए पहले एक सड़ा हुआ संतरा था। मान लीजिए पहले एक सड़ा हुआ संतरा था। ये क्या किया ना अपने आसपास के दो संतरों को सड़ा दिया उसके बाद उसके अगले मिनट ना क्या होगा फिर होगा ये अब अपने आसपास करना शुरू कर देगा ये अपने आसपास करना शुरू कर देगा ऐसे करके ये जो सड़ने का प्रोसेस है ना ये टोकरी में फैल जाएगा ये टोकरी में क्या होगा फैल जाएगा इसको कोरोना वायरस की तरह समझिए आप यहां खड़े हैं आपको कोरोना वायरस",
+      "source": "caption",
+      "english_text": "Will go. If they are kept in four, all four will rot. Good! What will happen after that? This process will keep repeating. Suppose earlier there was a rotten orange. Suppose earlier there was a rotten orange. What did he do, he rotted two oranges around him, after that, what would happen in the next minutes, now he would start doing this around himself, he would start doing this around himself, by doing this, this is the process of rotting, wouldn't it spread in the basket, what would happen in the basket, would it spread, think of it like a corona virus, you are standing here, you will get corona virus."
+    },
+    {
+      "start_time": 265.52,
+      "end_time": 298.87,
+      "text": "हो गया है आप अपने चार पड़ोसी को कोरोना वायरस दिए अब चारों पड़ोसी को कोरोना हो गया अब देखिए आपका काम तो खत्म हो गया आपको चार को देना आप चार को दे दिए। अब ये चारों अपने चारों को देगा। ये एक्सपैंड कर जाएगा प्रॉब्लम। अब ये अपने इधर-उधर देगा। ये अपने इधर-उधर देगा। ये तो ऐसा करके क्या होगा कि फैल जाएगा। ये जो वायरस है ना ये फैल जाएगा। आपको बताना है हाउ मेनी मिनट्स? हाउ मेनी मिनट्स? हाउ मेनी मिनट्स? कितने मिनट लगेंगे? पूरा ग्रिड सड़ जाने में। पूरा ग्रिड सड़ जाने में।",
+      "source": "caption",
+      "english_text": "It's done, you have given Corona virus to four of your neighbors, now all four neighbors have got Corona virus, now look, your work is over, you have given it to four, you have given it to four. Now these four will give each other. This will expand the problem. Now he will give his here and there. He will give his here and there. What will happen by doing this is that it will spread. This virus will spread. Do you want to tell me how many minutes? How many minutes? How many minutes? How many minutes will it take? The entire grid will rot. The entire grid will rot."
+    },
+    {
+      "start_time": 298.88,
+      "end_time": 332.71,
+      "text": "मतलब पूरे ग्रिड में जितने भी फ्रेश ऑरेंजेस हैं उनको सड़ जाने में उनको रोटेटन हो जाने में रोटेटन हो जाने में या तो सड़ जाने में और अगर कोई फ्रेश ऑरेंज ऐसा है जो सड़ा नहीं है अगर कोई फ्रेश ऑरेंज ऐसा है जो नहीं सड़ पाया बावजूद आपके कि आप सब करके देख लिए नहीं सड़ पाया तो आपको -1 लौटाना है -1 अगर सारे सड़ गए कितने मिनट में सारे सड़ गए कितने मिनट में सारे संतरे सड़ गए अगर कोई संतरा बच जाता है लास्ट तक कैसे बच जाएगा कोरोना कोरोना वायरस में कोई आदमी आइसोलेशन में था। उसके आसपास कोई पड़ोसी ही नहीं था। वो",
+      "source": "caption",
+      "english_text": "Meaning, all the fresh oranges in the entire grid are either rotted, rotted, rotted, and if there is any fresh orange which has not rotted, if there is any fresh orange which has not rotted despite all you have tried, then you have to return -1 -1 if all have rotted, in how many minutes have all rotted, in how many minutes have all the oranges rotted, if any orange is left. How will Corona survive till the end? A person was in isolation due to Corona virus. There were no neighbors around him. that"
+    },
+    {
+      "start_time": 332.72,
+      "end_time": 358.71,
+      "text": "अपना चारों बगल में खाली रखा था तो वो बच जाएगा। उसको कोई नहीं बता पाएगा। तो ऐसे बच जाएगा। तो ऐसे कोई संतरा बच भी सकता है। अगर कोई संतरा बच जाता है तो आपको -1 रिटर्न करना है। तो ये था क्वेश्चन। अब चलिए इसमें सोचे और समझे कि इसमें क्या-क्या किया जा सकता है। अब आइए इसको हम आपको विजुअलाइज़ कराते हैं। क्वेश्चन समझने से पहले या क्वेश्चन सोचने से पहले एक बार देख लीजिए कि चलेगा कैसा। कैसा रियल वर्ल्ड में कैसा होगा। देखिए ये वाला आपका ग्रिड दिया हुआ है। आपको टोकरी दिया हुआ है। इसमें क्या-क्या आपको दिख रहा है?",
+      "source": "caption",
+      "english_text": "If he had kept his surroundings empty, he would have been saved. No one will be able to tell him. So this way he will be saved. So such an orange can also survive. If any oranges are left, you return -1. So this was the question. Now let us think about it and understand what can be done in it. Now let us visualize this for you. Before understanding the question or thinking of the question, first see how it will work. How would it be in the real world? Look, this is your grid given. You have been given a basket. What do you see in this?"
+    },
+    {
+      "start_time": 358.72,
+      "end_time": 384.23,
+      "text": "आपको एक टू दिख रहा है। बहुत सारे वन दिख रहे हैं और कुछ दो जीरो दिख रहे हैं। टू का मतलब क्या है? कि वो संतरा सड़ा हुआ है। वन का मतलब कि वो संतरा बढ़िया संतरा है। और जीरो का मतलब कि वो एम्प्टी संतरा है। तो देख लेते हैं कि सारा सड़ेगा। देखिए आपको दिख रहा होगा केवल एक सड़ा हुआ है। देखिए एक सड़ा हुआ ना कितना फैल जाएगा। देखिएगा। सबसे पहले तो शुरुआत होगी दुनिया की। आपको ये टोकरी मिलेगा। t = 1 में मतलब t = 1 मिनट में देखिए क्या होगा?",
+      "source": "caption",
+      "english_text": "You see a two. A lot of forests are visible and some two zeros are visible. What does to mean? That orange is rotten. One means that the orange is a good orange. And zero means it is an empty orange. So let's see that everything will rot. Look, you can see only one is rotten. See how much this rotten thing will spread. Will see. First of all the world will begin. You will get this basket. t = 1 means see what will happen in t = 1 minute?"
+    },
+    {
+      "start_time": 384.24,
+      "end_time": 417.029,
+      "text": "t = 1 मिनट में देखिए क्या होगा? ये वाला जो सड़ा हुआ संतरा है ये अपने चारों तरफ सड़ाने की क्षमता रखता है। वेरी गुड है ना? अभी तो एक ही देखिए हर मिनट हर मिनट ना जितने भी सड़े हुए संतरे होंगे वो सब एक साथ काम कर रहे होंगे। बहुत इंपॉर्टेंट है यहां पे क्योंकि एक ही सड़ा हुआ है। अभी है तो आपको लग रहा होगा कि ठीक है एक ही काम नहीं हर मिनट हर सड़ा हुआ संतरा अपने चारों ओर फैलाएगा। कोरोना वायरस में अगर देश में शहर में 100 लोगों को कोरोना है ना तो ये 100 लोग एक साथ फैला रहे होते थे उस मिनट ऐसा नहीं कि एक एक करके नहीं",
+      "source": "caption",
+      "english_text": "See what will happen in t = 1 minute? This one, which is a rotten orange, has the ability to rot all around itself. Very good isn't it? Right now, just see, every minute, every minute, all the rotten oranges will be working together. Very important here because only one is rotten. Now you might be feeling that it is okay, not just one job, every minute every rotten orange will be spread around it. In Corona virus, if 100 people in the city in the country have Corona, then these 100 people would be spreading it together, not one by one."
+    },
+    {
+      "start_time": 417.039,
+      "end_time": 451.029,
+      "text": "हर सड़ा हुआ संतरा हर मिनट में एक साथ फैलाएगा इसीलिए इसको एक्सप्पोनेंशियल एक्सपेंड करेगा देखिए t = 1 मिनट में तो एक ही सड़ा हुआ संतरा है तो ये क्या करेगा अपने चारों ओर देखेगा क्या अपने ऊपर ये कुछ कर सकता है नहीं ऊपर तो टोकरी खत्म हो जाती है लेफ्ट में टोकरी खत्म हो जाती है राइट में राइट में क्या इसके राइट में एक अच्छा संतरा यस अच्छा संतरा है। तो ये क्या करेगा? ये क्या करेगा? अपने राइट वाले संतरे को अपने राइट वाले संतरे को सड़ा देगा। तो अपने राइट वाले संतरे को ये सड़ा देगा। ये देखिए इसको सड़ा दिया। वेरी",
+      "source": "caption",
+      "english_text": "Every rotten orange will expand simultaneously every minute, that is why it will expand exponentially. See, in t = 1 minute, if there is only one rotten orange, then what will it do? Will it look around, can it do anything on itself? No, at the top, the basket gets exhausted. On the left, the basket gets exhausted. On the right, is there a good orange on its right? Yes, there is a good orange. So what will he do? What will this do? The orange to your right will rot the orange to your right. So he will rot the orange on his right. Look at this, it's rotten. Very"
+    },
+    {
+      "start_time": 451.039,
+      "end_time": 477.029,
+      "text": "गुड। लेकिन अभी खत्म नहीं हुआ है। अभी अपने नीचे क्या अपने नीचे वाले को भी सड़ा सकता है? यस। अपने नीचे वाले को भी सड़ा सकता है। अपने नीचे वाले को भी सड़ा दिया। नीचे वाले को भी सड़ा दिया। ये देखिए। अब इसका काम खत्म। इसका काम खत्म हो चुका। और अब ये और कुछ नहीं कर सकता है ना। अब इसको हर आदमी अपने बस नेबर को सड़ा सकता है। नेबर आगे का काम करेगा। इसका काम खत्म हो गया। कितना मिनट हुआ? 1 मिनट। अच्छा। क्या सारे संतरे सड़ गए हैं? नहीं, अभी बाकी है।",
+      "source": "caption",
+      "english_text": "Good. But it is not over yet. Now, can he rot the one below him? Yes. It can also rot those below it. He also spoiled the one below him. The one below also rotted. Look at this. Now its work is over. Its work is finished. And now he can't do anything else. Now every man can destroy his neighbor. Neighbor will do further work. Its work is finished. What time is it? 1 minute. Good. Have all the oranges gone rotten? No, it is still pending."
+    },
+    {
+      "start_time": 477.039,
+      "end_time": 504.469,
+      "text": "ओके? अगले मिनट में आइए। अब आपको पता चलेगा कि ये प्रॉब्लम कैसे फैल जाएगा? देखिएगा। t = 2 मिनट्स। t = 2 मिनट्स। अब कितने एक्टिव सड़े हुए संतरे हैं? देखिए इसका तो काम खत्म हो गया है। इसका काम हो गया है। कितने एक्टिव सड़े हुए संतरे हैं? एक और दो। ये इन दोनों को सड़ाया था। अब ये दोनों मिलके इस मिनट में काम करेंगे। ये दोनों मिलके सड़ाएंगे। तो पहले इसका देख लेते हैं। पहले इसका देख लेते हैं। क्या ये अपने ऊपर वाले किसी को सड़ा सकता है?",
+      "source": "caption",
+      "english_text": "ok? Come in the next minute. Now you will know how this problem will spread? Will see. t = 2 minutes. t = 2 minutes. How many active rotten oranges are there now? Look, his work is finished. Its work is done. How many active rotten oranges are there? one and two. It had spoiled both of them. Now both of them will work together in this minute. These two will rot together. So let's take a look at this first. Let's take a look at this first. Can it rot anyone above it?"
+    },
+    {
+      "start_time": 504.479,
+      "end_time": 537.67,
+      "text": "नहीं। क्या आपने लेफ्ट वाले को सड़ा लेफ्ट वाला ऑलरेडी सड़ा हुआ था। लेफ्ट वाले का काम खत्म हो चुका है। लेफ्ट वाले को ऑलरेडी देख चुके हैं। वो सड़ा जो करना था कर चुका है। वेरी गुड। तो क्या ये अपने राइट वाले को सड़ा सकता है? यस। राइट वाला एक फ्रेश संतरा है। राइट वाला एक फ्रेश संतरा है। तो ये क्या करेगा? अपने राइट वाले को सड़ा देगा। इसको सड़ा दिया। इसको सड़ा दिया। ठीक है? क्या यह अपने नीचे वाले को सड़ा सकता है? यस। नीचे वाला भी फ्रेश संतरा है। नीचे वाला को भी सड़ा देगा। इसका काम खत्म। इसका काम खत्म। लेकिन हम क्या बोले थे? इस मिनट के शुरुआत में कितने सड़े",
+      "source": "caption",
+      "english_text": "No. Did you find the left one rotten? The left one was already rotten. The work of the left one is finished. Already seen the left one. That scoundrel has done what he had to do. very good. So can it rot the one on its right? Yes. The one on the right is a fresh orange. The one on the right is a fresh orange. So what will he do? Will make the person on his right rot. Made it rotten. Made it rotten. Ok? Can it rot the one below it? Yes. The one below is also a fresh orange. It will rot the one below also. Its work is finished. Its work is finished. But what did we say? How many are rotten at the beginning of this minute"
+    },
+    {
+      "start_time": 537.68,
+      "end_time": 570.47,
+      "text": "संतरे थे? दो। ये भी था। ये भी पैरेलल उस मिनट में काम करेगा। अब देखते हैं कि ये क्या काम करेगा? क्या ये अपने ऊपर वाले को सड़ाएगा? नहीं। ऊपर वाला ऑलरेडी सड़ के खत्म हो चुका है। क्या ये अपने राइट वाले को सड़ाएगा? नहीं। क्योंकि राइट वाले को ये ऑलरेडी सड़ा दिया था। राइट वाले को ये ऑलरेडी सड़ा दिया है। तो ये उसको नहीं सड़ाएगा। छोड़ देगा। क्या ये अपने लेफ्ट वाले को सड़ा पाएगा? नहीं। लेफ्ट में टोकरी खत्म हो जाती है। क्या ये अपने नीचे वाले को सड़ा पाएगा? नहीं। क्योंकि नीचे में एम्प्टी स्पेस है। एम्प्टी स्पेस को आप कुछ नहीं कर सकते हैं। इसका भी हो गया काम खत्म। ये किसी को नहीं कर पाया उस मिनट",
+      "source": "caption",
+      "english_text": "were oranges? Two. This was also there. This will also work parallel in that minute. Now let's see what work this will do? Will it rot the one above it? No. The one above is already rotten. Will he rot the one on his right? No. Because the one on the right was already rotten. This has already spoiled the right one. So it won't rot him. Will leave. Will he be able to destroy the one on his left? No. The basket ends up on the left. Will it be able to rot the one below it? No. Because there is empty space at the bottom. You can't do anything with empty space. This work is also finished. Couldn't do it to anyone that minute"
+    },
+    {
+      "start_time": 570.48,
+      "end_time": 604.15,
+      "text": "में। चलिए इसका भी काम खत्म। कितने संतरों का काम खत्म हो चुका है? 1 2 3 लेकिन क्या टोकरी में सारे संतरे सड़ चुके हैं? नहीं। सारे संतरे नहीं सड़े हैं। आइए अगले मिनट में चलिए। t = 3 मिनट्स। देखिए कितने एक्टिव सड़े हुए संतरे हैं? वन टू ये दोनों किससे निकले थे? इससे निकले थे। ये तीनों का काम खत्म हो चुका है। एक्टिव सड़े हुए संतरे कितने हैं? एक दो। ये दोनों पैरेलल में एक साथ इस मिनर में काम करेंगे। आइए पहले इसको देख लेते हैं। क्या ये अपने ऊपर",
+      "source": "caption",
+      "english_text": "In. Let's finish this work too. How many oranges have been finished? 1 2 3 But are all the oranges in the basket rotten? No. Not all oranges are rotten. Let's go in the next minute. t = 3 minutes. See how many active rotten oranges there are? One Two From whom did these two emerge? Came out of this. The work of these three is finished. How active are rotten oranges? One or two. Both of them will work together in parallel in this miner. Let's look at this first. Is it on you?"
+    },
+    {
+      "start_time": 604.16,
+      "end_time": 633.509,
+      "text": "किसी को कुछ कर पाएगा? नहीं। नहीं ऊपर टोकरी खत्म है। लेफ्ट में लेफ्ट वाला ऑलरेडी सड़ के खत्म हो चुका है। कुछ नहीं कर पाएंगे। राइट में टोकरी खत्म है। नीचे एम्प्टी स्पेस है। ये एकदम बेकार था। ये कुछ नहीं कर पाया उस मिनट में। इसको भी खत्म कर दो। इसको भी खत्म कर दो। खत्म हो गया। वेरी गुड। लेकिन उस मिनट में ये भी तो है। ये भी पैरेलल में काम कर रहा है। 1/1 वन बाय वन काम नहीं हो रहा है। जितने भी एक्टिव सड़े हुए संतरे हैं उस मिनट में सब एक साथ काम कर रहे हैं। इसका देखिए।",
+      "source": "caption",
+      "english_text": "Will anyone be able to do anything? No. No the top basket is over. The one on the left is already rotten. Will not be able to do anything. The basket on the right is over. There is empty space below. This was absolutely useless. He couldn't do anything in that minute. End this too. End this too. It's over. very good. But this is also there in that minute. This is also working in parallel. 1/1 One by one is not working. All the active rotten oranges are working together in that minute. Look at this."
+    },
+    {
+      "start_time": 633.519,
+      "end_time": 667.99,
+      "text": "क्या ये अपने ऊपर वाले को सड़ा पाएगा? नहीं। ऊपर वाला ऑलरेडी सड़ के खत्म हो चुका है। लेफ्ट में नहीं। लेफ्ट वाला ऑलरेडी सड़ के खत्म हो चुका है। राइट में नहीं। राइट में एम्प्टी स्पेस है। नहीं कुछ कर पाएगा। लेकिन क्या ये अपने नीचे वाले को सड़ाएगा? यस। नीचे वाले को सड़ा देगा कि क्या क्यों? नीचे में फ्रेश है। तो नीचे वाले को क्या किया? सड़ा के सड़ा दिया। अब इस आदमी का भी काम खत्म हो चुका। इस आदमी का भी काम खत्म हो चुका। इस t = 3 मिनट में दो लोग थे। एक तो ये था, एक तो ये था। दोनों अपना काम खत्म कर चुके। क्या सारे संतरे सड़ चुके हैं? नहीं, सारे संतरे नहीं सड़ चुके हैं।",
+      "source": "caption",
+      "english_text": "Will it be able to destroy the one above it? No. The one above is already rotten. Not in the left. The one on the left is already rotten. Not in the right. There is empty space on the right. Will not be able to do anything. But will it rot the one below it? Yes. Will the one below rot, why? It's fresh down there. So what happened to the one below? Rotten and rotten. Now this man's work is also over. This man's work is also over. There were two people at this t = 3 minutes. One was this, one was this. Both have finished their work. Are all the oranges rotten? No, not all the oranges are rotten."
+    },
+    {
+      "start_time": 668.0,
+      "end_time": 694.15,
+      "text": "अगले मिनट में आपको जाना पड़ेगा अगले मिनट में। t = 4 मिनट्स। 4 मिनट्स। 4 मिनट में कौन-कौन से एक्टिव सड़े हुए संतरे हैं? केवल एक एक्टिव सड़ा हुआ संतरा है। सड़ा हुआ संतरा बहुत सारा है। लेकिन ये सब का काम हो चुका है। एक्टिव कितने सारे हैं भैया? ये वाला है। आइए देखते हैं क्या करेगा उसपे। ऊपर? नहीं। ऊपर में ऑलरेडी सड़ चुका था। लेफ्ट लेफ्ट में खाली जगह है। नीचे नीचे टोकरी खत्म है। राइट राइट में क्या फ्रेश है? यस राइट में फ्रेश है।",
+      "source": "caption",
+      "english_text": "You will have to go in the next minute. In the next minute. t = 4 minutes. 4 minutes. Who are the active Rotten Oranges in 4 Minutes? There is only one active Rotten Orange. There are plenty of rotten oranges. But all this work has been done. How many are active brother? This one is. Let's see what he will do with that. Above? No. The top was already rotten. There is empty space on the left. The basket below is finished. What's fresh at Right Right? Yes, it's fresh in the right."
+    },
+    {
+      "start_time": 694.16,
+      "end_time": 728.389,
+      "text": "तो क्या करेगा? राइट में इस संतरे को सड़ा देगा। राइट में इस संतरे को सड़ा देगा। और अब इसका काम खत्म हो चुका है। अब इसका काम खत्म हो चुका है। अब देखिए। अब देखिए 4 मिनट हो चुके हैं। क्या इस टोकरी के सारे संतरे सड़ चुके हैं? हां, इस टोकरी के सारे संतरे सड़ चुके हैं। हालांकि एक एक्टिव सड़ा हुआ संतरा है। आपके मन में आएगा कि इसको भी चला के देख लेते हैं। उससे कुछ होना नहीं है। टोकरी में और कोई फ्रेश ऑरेंज बचा है कि नहीं बचा है? नहीं बचा है। तो नहीं बचा है तो यही तो क्वेश्चन पूछा था। कितने मिनट लगेंगे?",
+      "source": "caption",
+      "english_text": "So what will you do? Right this orange will rot. Right this orange will rot. And now its work is finished. Now its work is finished. watch now. Now look, 4 minutes have passed. Are all the oranges in this basket rotten? Yes, all the oranges in this basket are rotten. Although there is an active rotten orange. It will come to your mind that let's try this also. Nothing has to happen with that. Is there any more fresh orange left in the basket or not? There is no left. So if it is not left then this is the question I asked. How many minutes will it take?"
+    },
+    {
+      "start_time": 728.399,
+      "end_time": 760.47,
+      "text": "टोकरी में कोई भी फ्रेश ऑरेंज ना बचे। कितने मिनट लगेंगे? आप कितना बोलेंगे? 4 मिनट। 4 मिनट में इस टोकरी का हर एक ऑरेंज। हर एक फ्रेश ऑरेंज सड़ जाएगा। हर एक फ्रेश ऑरेंज सड़ जाएगा। या फिर 4 मिनट बाद इस टोकरी में एक भी फ्रेश ऑरेंज नहीं बचेगा। एक भी फ्रेश ऑरेंज नहीं बचेगा। आपको समझ में आ रहा है कि नहीं आ रहा है? एक और एग्जांपल देखिए। एक और छोटा सा एग्जांपल ज्यादा बड़ा एग्जांपल लें। छोटा सा एग्जांपल देखिए। एक 2 / 2 का मैट्रिक्स हम ले लेते हैं। देखिए यहां पे टू हो गया।",
+      "source": "caption",
+      "english_text": "There should not be any fresh orange left in the basket. How many minutes will it take? How much will you say? 4 minutes. Every orange in this basket in 4 minutes. Every fresh orange will rot. Every fresh orange will rot. Or after 4 minutes there will not be a single fresh orange left in this basket. Not a single fresh orange will be left. Are you understanding or not? Look at another example. Take another small example and a bigger example. Look at a small example. We take a 2/2 matrix. Look, pay two is done here."
+    },
+    {
+      "start_time": 760.48,
+      "end_time": 786.23,
+      "text": "0 0 1 ठीक है? शुरू में कितना सड़ा हुआ ऑरेंज आपके पास? एक। आइए t = 1 मिनट में देखते हैं कि ये क्या गुल खिलाएगा। एक ही है ना? एक्टिव सड़ा हुआ। अच्छा एक ही है। क्या ये अपने ऊपर में कुछ कर सकता है? नहीं टोकरी खत्म। लेफ्ट में टोकरी खत्म। राइट में जीरो है। कुछ नहीं कर पाओगे। नीचे जीरो है। कुछ नहीं कर पाओगे। तो क्या इस सड़े हुए का काम खत्म हो गया? इसको जितना करना था खेल कर चुका ना। काट दीजिए।",
+      "source": "caption",
+      "english_text": "0 0 1 ok? How much Rotten Orange do you have to begin with? One. Let us see what will happen in t = 1 minute. Is it only one? Active rotten. Well there is only one. Can it do anything on its own? No, the basket is finished. Basket finished on the left. There is zero on the right. You won't be able to do anything. Below is zero. You won't be able to do anything. So is this rotten person's work finished? He has played as much as he had to do. Cut it out."
+    },
+    {
+      "start_time": 786.24,
+      "end_time": 817.75,
+      "text": "काट दीजिए। ठीक है? ओके। अब कितने एक्टिव संतरे बचे हैं? कितने एक्टिव सड़े हुए संतरे हैं? एक भी नहीं। ये था। इसका काम खत्म हो चुका है। ओके। लेकिन क्या टोकरी में सारे संतरे सड़ गए हैं? नहीं भाई, सारे संतरे नहीं सड़े। ये बचा हुआ है। इसको नहीं सड़ा पाया। इसको नहीं सड़ा पाया। इसको क्यों नहीं सड़ा पाया? क्योंकि डायगोनल जाना अलाउड नहीं है ना। चार ही दिशा में जाना अलाउड है। अब इसको ये सड़ा हुआ था। ये अपने इधर-उधर इधर-उधर देख लिया करके। अब कुछ कर नहीं सकता है। कोई और सड़ा हुआ संतरा है नहीं एक्टिव जो इसको सड़ा सके। इस केस में आपको क्या करना है?",
+      "source": "caption",
+      "english_text": "Cut it out. Ok? Ok. How many active oranges are left now? How many active rotten oranges are there? Not even one. This was. Its work is finished. Ok. But are all the oranges in the basket rotten? No brother, not all the oranges are rotten. This is left over. Couldn't rot it. Couldn't rot it. Why couldn't it rot? Because going diagonal is not allowed, right? Going in only four directions is allowed. Now this was rotten to him. After looking around here and there. Can't do anything now. There is no other rotten orange active that can rot this one. What do you have to do in this case?"
+    },
+    {
+      "start_time": 817.76,
+      "end_time": 849.99,
+      "text": "-1। आप इसको अंतकाल तक भी ले जाएंगे ना समय के तो भी ये संतरा नहीं सड़ेगा। क्यों नहीं सड़ेगा? क्योंकि इस तरीके से प्लेस्ड है। आपको क्या करना है? -1 भैया फ्रेश है, बचा हुआ है, बच गया। कोई एक्टिव सड़ा हुआ बचा नहीं तो बच गया। इस तरीके से इस क्वेश्चन में काम हो रहा है। इसीलिए हम बहुत इंपॉर्टेंट बात आपको बार-बार बोल रहे हैं। हर एक मिनट में जितने भी एक्टिव सड़े हुए संतरे हैं, एक्टिव मतलब जिनका काम अभी नहीं हुआ है, जो संतरा सड़ के अपना काम कर चुका हो गया, एक्टिव सड़े हुए संतरे एक साथ अपना काम करेंगे। तब वो मिनट पूरा होगा।",
+      "source": "caption",
+      "english_text": "-1. Even if you take it till the end of time, this orange will not rot. Why won't it rot? Because it is placed this way. What do you have to do? -1 Brother is fresh, saved, saved. If there is no active rot left then it is saved. In this manner, work is being done on this question. That is why we are telling you this very important thing again and again. Every minute, all the active rotten oranges, active means those whose work has not been done yet, the oranges which have rotted and done their work, the active rotten oranges will do their work together. Then that minute will be over."
+    },
+    {
+      "start_time": 850.0,
+      "end_time": 876.87,
+      "text": "ऐसा नहीं होगा कि अगर t = 1 मिनट में दो सड़ा हुआ संतरा है। तो एक मिनट लगेगा कि पहला सड़ा हुआ संतरा सड़ाएगा। दूसरे मिनट में नहीं। जितने भी सड़े हुए संतरे हैं एक साथ सब सड़ाएंगे। उसके बाद मान लीजिए कि शुरू में दो सड़े हुए संतरे थे। ये मिलके मान लीजिए छह संतरे सड़ाते हैं। तो इनको एक मिनट लगता है दोनों को मिला के। अब ये जो 6 सड़े हुए संतरे हैं ना ये मान लीजिए 18 संतरों को सड़ाएंगे। इनको भी एक ही मिनट लगेगा। पैरेलल में काम हो रहा है।",
+      "source": "caption",
+      "english_text": "This will not happen if there are two rotten oranges at t = 1 minute. So it will take a minute for the first rotten orange to rot. Not in another minute. All the rotten oranges will rot together. Then suppose that initially there were two rotten oranges. Together, let's say they rot six oranges. So it takes them a minute to mix the two. Now these 6 rotten oranges will, let's say, rot 18 oranges. These will also take only one minute. Work is being done in parallel."
+    },
+    {
+      "start_time": 876.88,
+      "end_time": 910.069,
+      "text": "अकेले-अकेले काम नहीं हो रहा है। अब चलते हैं आपको। हम समझाते हैं कि इसको सॉल्व कैसे करना है। आइए। चलिए। तो देखिए इस क्वेश्चन में ना डीएफएस करने से काम नहीं चलेगा। जैसा आप लोग आइलैंड वाले क्वेश्चन में किए थे कि आप आइलैंड वाले से आप सोच सकते थे कि हम ऊपर से जाएंगे। हम बोलेंगे कि हां भैया हमको एक सड़े हुए पे उतार दो। उस सड़े हुए से हम देखेंगे कि कितना और सड़ा सकते हैं और सड़ाते जाएंगे। देखेंगे कि नहीं। लेकिन वैसा काम नहीं हो रहा है ना। इस क्वेश्चन में कभी भी आपको क्वेश्चन में बोला जाए ना ग्राफ के कि साइमलटेनियसली काम हो रहा है। मतलब जितने भी ऐसे लोग हैं जितने भी डिफॉल्टर लोग हैं वो एक साथ काम कर रहे हैं। अब बताओ कितना",
+      "source": "caption",
+      "english_text": "The work is not getting done alone. Now let's go to you. We explain how to solve it. Come. Let go. So see, not doing DFS in this question will not work. As you guys did in the island question, you could have thought from the islanders that we will go from above. We will say, yes brother, put us on a rotten one. We will see how much more we can rot from that rotten and will continue to rot. We will see whether not. But that is not working. In this question, you should never be told in the question that work is being done simultaneously on the graph. Meaning, all such people, all the defaulters, are working together. now tell me how much"
+    },
+    {
+      "start_time": 910.079,
+      "end_time": 944.47,
+      "text": "टाइम लगेगा जब एक साथ काम हो। मतलब ये इस तरीके का काम हो रहा है। देखिए एक आदमी था शुरू में एक आदमी तीन लोगों को इनफेक्ट करता है। ये तीन और इन तीनों को इनफेक्ट करते हैं। ये तीन और तो ये क्या हो रहा है ना? ये एक तरीके का बीएफएस हो रहा है। ब्रेड्थ फर्स्ट सर्च धीरे धीरे धीरे-धीरे बीएफएस क्या होता है? एक आदमी है वो इसको किया वो इसको किया वो इसको किया वो इसको किया उसके बाद बीएफएस क्या होता है एक आदमी तीन को कर दिया तीनों एक-एक करके अपने तीन को करें ये देखिए ये देखिए ये धीरे-धीरे देखे ना फैल रहा है धीरे-धीरे फैल रहा है ये ट्री धीरे-धीरे फैल रहा है इसी तरीके का हो रहा है ना शुरू में एक",
+      "source": "caption",
+      "english_text": "It will take time to work together. Meaning this is the way the work is being done. See, initially there was one man who infected three people. These three infect all three more. These three and so what is happening right? This is a kind of BFS happening. Breadth First Search Slowly Slowly What is BFS? There is one man, he did this, he did this, he did this, he did this, after that, what is BFS, one man did it to three, all three of them, one by one, do this to their three, look at this, look at this, it is spreading slowly, it is spreading slowly, this tree is spreading slowly, this is what is happening in the beginning, isn't one"
+    },
+    {
+      "start_time": 944.48,
+      "end_time": 978.71,
+      "text": "रोट एंड ऑरेंज था वो दो को करेगा ये दोनों अपने दो-दो को करेंगे ये अपने दो को करेगा इस तरीके से फैल रहा है ऐसा नहीं हो रहा है एक रोटन ऑरेंज इसको किया फिर ये इसको किया फिर ये इसको किया ऐसा नहीं हो रहा कभी भी इस तरीके का क्वेश्चन आपको बहुत सारा मिलेगा। जहां पे साइमलटेनियसली काम हो रहा है ना तो वो डीएफएस करने से काम नहीं चलेगा। आप ये नहीं कर सकते हैं कि ठीक है हम एक सड़े को पकड़ लेंगे। उस सड़े हुए पे डीएफएस लगा देंगे और देख लेंगे नहीं ऐसा नहीं क्योंकि पैरेलली काम हो रहा है। इसीलिए यहां पे एक टेक्निक है। ग्राफ में आप इसको नाम दे सकते हैं तो नाम दे दीजिए। जरूरत नहीं है लेकिन आना चाहिए।",
+      "source": "caption",
+      "english_text": "It was Rotten and Orange, it will do it to two, both of them will do it to their two, they will do it to their two, it is spreading in this way, it is not happening, one Rotten Orange did it to this, then this one did it to this, then this one did it to this one, it is not happening, you will get a lot of questions like this anytime. DFS will not work where work is being done simultaneously. You can't say okay we'll catch a rotten one. We will apply DFS on that rotten thing and see that it is not so because the work is being done in parallel. That's why there is a technique here. If you can name it in the graph then give it a name. It is not necessary but should come."
+    },
+    {
+      "start_time": 978.72,
+      "end_time": 1012.87,
+      "text": "मल्टीसोर्स बीएफएस इसको बोला जाता है। क्या बोला जाता है? मल्टीसोर्स बीएफएस। मल्टीसोर्स बीएफएस एक एडवांस तरीका है इस तरीके के प्रॉब्लम्स को सॉल्व करने का। देखिए बड़ा इंट्यूटिव तरीका है। हम क्या करेंगे? देखिए हम ज्यादा कुछ नहीं करेंगे। हम एक जब भी जब भी बीएफएस का नाम आपके आप दिमाग में आए आपके दिमाग में q आना चाहिए। जब भी बीएफएस का नाम आपके कोई सामने ले तो आपके दिमाग में क्या आना चाहिए? क्यू क्यू डेटा स्ट्रक्चर। अच्छा बीएफएस हम आपको सिखाए भी थे। ग्राफ में कैसे सिखाए थे? एक नोड को डाले थे। बीएफएस याद कीजिए। आपको ग्राफ में पढ़ाए थे ना। q में क्या किए थे? वो नोड डाल दिए थे। फिर वो नोड के",
+      "source": "caption",
+      "english_text": "This is called multisource BFS. What is said? Multisource BFS. Multisource BFS is an advanced method to solve this type of problems. See, this is a very intuitive method. What will we do? Look, we won't do much. Whenever the name of BFS comes to your mind, it should come to your mind. Whenever someone mentions the name of BFS, what should come to your mind? QQ Data Structure. Well BFS, we taught you also. How were you taught in graphs? A node was inserted. Remember BFS. Taught you in graphs, right? What did you do in q? That node was put. Then that node"
+    },
+    {
+      "start_time": 1012.88,
+      "end_time": 1040.549,
+      "text": "सारे नेबर्स उसमें डाल दिए थे। फिर उन सारे नेबर्स के सारे नेबर्स क्यू में डाल दिए ना। ऐसे कर करके अपने पीएफएस किए थे। सेम काम यहां पे हम लोग करेंगे। लेकिन हम लोग क्या करेंगे? देखिएगा शुरू में शुरू में हम लोग एक मिनट। तो देखिए एक क्यू [गला साफ़ करने की आवाज़] बना के हम उसमें क्या रखेंगे ना? किसी भी गिवन मिनट पे ऊपर में हम लोग क्या कर रहे थे कि हर मिनट में जितने भी एक्टिव सड़े हुए संतरे हैं, जितने भी एक्टिव सड़े हुए संतरे हैं जो अपना काम अभी तक नहीं कर पाए हैं वो एक्टिव हो जाएंगे। वो अपना काम कर देंगे।",
+      "source": "caption",
+      "english_text": "All the neighbors were included in it. Then all those neighbors' neighbors were put in the queue. Did your PFS by doing this. We will do the same work here. But what will we do? Let us see in the beginning for a minute. So see what we will put in a cue [throat clearing sound], right? What we were doing above at any given minute is that every minute all the active rotten oranges, all the active rotten oranges who have not been able to do their work yet will become active. They will do their work."
+    },
+    {
+      "start_time": 1040.559,
+      "end_time": 1074.23,
+      "text": "हम लोग एक क्यू बनाएंगे जिसमें हम लोग क्या रखेंगे? एक ऐसा करके क्यू बनाएंगे। ये इसका फ्रंट हो गया और ये इसका रियर हो गया। ठीक है? क्यू में किसी भी गिवन मिनट पे कितने एक्टिव सड़े हुए संतरे हो सकते हैं वो हम लोग वहां पे स्टोर कर देंगे। तो देखिए जब टाइम शुरू होगा जब टाइम शुरू होगा तो शुरू में तो जीरो पे शुरू होता है टाइम। तो जीरो पे एक लूप चला के ना जो भी ऑलरेडी सड़े हुए संतरे हैं जिनको सड़ाने की जरूरत नहीं है उनको Q में पुश कर दीजिए। जितने भी ऑलरेडी सड़े हुए संतरे हैं उनको Q में। देखिए ये ऑलरेडी",
+      "source": "caption",
+      "english_text": "We will create a queue in which what will we put? Why would we create a situation like this? This became its front and this became its rear. Ok? We will store in the queue how many active rotten oranges there can be at any given minute. So see, when the time starts, initially the time starts at zero. So by running a loop at zero, push all the already rotten oranges which do not need to be rotted into Q. All the already rotten oranges are in Q. See this already"
+    },
+    {
+      "start_time": 1074.24,
+      "end_time": 1105.19,
+      "text": "सड़ा हुआ संतरा है। पुश कर दीजिए। क्या पुश करिए? इनका कोऑर्डिनेट पुश कर दीजिए। इनका आई और J पुश कर दीजिए। तो हम यहां क्या करते हैं ना? 0 पुश कर दिए। क्या और कोई सड़ा हुआ संतरा है? नहीं। और और जिसको भी आप पुश कर रहे हैं ना उसको उसकी वैल्यू बदल के कुछ -1 जैसा कर दीजिए। ये क्यों? क्योंकि आपको बाद में याद रखना है कि ये वाला विजिट हो चुका है। जो विजिटेड एरे है ना अलग से नहीं बनाइए। इसी को हम क्या कर देंगे ना? इसको -2 कर दीजिए। पुश कर दीजिए कोऑर्डिनेट। इसको बाद में -2 कर दीजिए।",
+      "source": "caption",
+      "english_text": "It is a rotten orange. Push it. What to push? Push their coordinates. Push their I and J. So what do we do here? Pushed 0. Are there any other rotten oranges? No. And whoever you are pushing, change its value to something like -1. Why this? Because you have to remember later that this one has already been visited. Do not create the visited array separately. What will we do with this? Make it -2. Push the coordinates. Later change it to -2."
+    },
+    {
+      "start_time": 1105.2,
+      "end_time": 1138.47,
+      "text": "ठीक है? हो गया पुश। अब इसको कोई और सड़ाने की मतलब वो ना करे कोशिश या इसको और एक बार पुश ना हो जाए। इसीलिए याद रखने के लिए कुछ भी -1 -2 - जो कोई 0 1 2 के अलावा कोई वैल्यू कर दीजिए। हो सके ज़ीरो ही कर दीजिए। ज़ीरो बना दीजिए। एम्प्टी स्पेस हो गया। अब उसका कोई और काम नहीं बचा है। ठीक है? तो t = 0 पे कितना संतरा सड़ा था? ऑलरेडी एक संतरा सड़ा था। एक लूप चला के एक नेस्टेड लूप चला के ये पुश कर दिए। और नेस्टेड लूप चला के ना एक और काम कर लीजिए। फ्रेश संतरों का काउंट निकाल लीजिए। कितने संतरे फ्रेश है? तो देखिए एक",
+      "source": "caption",
+      "english_text": "ok? Push done. Now it means that no one else should try to spoil it or it should not be pushed once again. That's why to remember, give anything -1 -2 - any value other than 0 1 2. If possible, reduce it to zero. Make it zero. There is empty space. Now he has no other work left. Ok? So how much orange was rotten at t = 0? Already one orange was rotten. These were pushed by running a loop and a nested loop. And do one more thing by running the nested loop. Count the fresh oranges. How many oranges are fresh? so see one"
+    },
+    {
+      "start_time": 1138.48,
+      "end_time": 1171.75,
+      "text": "दो तीन चार पांच छ फ्रेश कितना है छह छह संतरा फ्रेश है ठीक है इसका काउंट रख लीजिए आगे बताएंगे क्यों काउंट निकालना जरूरी है हो गया शुरू में ये लूप कर दिए q बन गया सारे ऑलरेडी सड़े हुए डाल दिए t = 0 पे अब इस q पे लूप कीजिए कैसा वाइल q नॉट एम्प्टी वाइल q नॉट एम्प्टी एंड फ्रेश ग्रेटर देन ज़ीरो मतलब कि जब जब तक एक भी फ्रेश संतरा बाकी है आपको ये प्रोसेस करना है। जैसे ही सारे फ्रेश खत्म",
+      "source": "caption",
+      "english_text": "Two, three, four, five, six, how much is fresh? Six, six, oranges are fresh. Okay, keep a count of them. We will explain later why it is necessary to count. In the beginning, we did this loop, q became all the already rotten ones, put all the rotten ones at t = 0, now loop over this q, how void is q, not empty, void q is not empty and fresh, greater than zero, which means that as long as there is even one fresh orange left, you have to do this process. As soon as all the fresh are finished"
+    },
+    {
+      "start_time": 1171.76,
+      "end_time": 1201.99,
+      "text": "हो जाए। सारे फ्रेश खत्म। जैसे ही ये फ्रेश का नंबर ना छ से जीरो हो जाए रोक दीजिए। उसके बाद आपको करने की जरूरत नहीं है। अच्छा अब देखिए यहां पे हम लोग मिनट बाय मिनट चलेंगे। क्या? मिनट बाय मिनट जैसा लेवल ऑर्डर ट्रेवर्सल में किए थे ना। मिनट बाय मिनट चलेंगे। तो देखिए सबसे पहला काम क्या करिए? टाइम प्लस प्लस कर दीजिए। टाइम प्लस प्लस कर दीजिए। आपका टाइम क्या हो गया? एक हो गया। अब इस 1 मिनट में Q में जो भी है वो सारे एक साथ काम करेंगे।",
+      "source": "caption",
+      "english_text": "Let it be done. All fresh finished. Stop as soon as the fresh number goes from six to zero. After that you don't need to. Okay, now look here we will go minute by minute. What? Minute by minute like we did in level order traversal. It will go minute by minute. So see, what is the first thing to do? Time plus plus. Time plus plus. What's your time? One is done. Now whatever is in Q will work together in this 1 minute."
+    },
+    {
+      "start_time": 1202.0,
+      "end_time": 1230.87,
+      "text": "वो सारे एक साथ काम करेंगे। उसके बाद टाइम बाद में बढ़ेगा। इस टाइम पे इस मिनट पे Q में जितने भी संतरे हैं ना ये एक साथ काम करेंगे। तो इसके लिए हम क्या करेंगे? इंट S = Q डॉट साइज़। Q में जितने भी संतरे हैं सब एक साथ काम करेंगे। आगे वाले डायग्राम में आपको पता चल जाएगा। उसके बाद वाइल s माइनस माइनस मतलब जितना भी है। उसके बाद क्या करेंगे?",
+      "source": "caption",
+      "english_text": "They will all work together. After that the time will increase later. All the oranges in Q at this time and this minute will work together. So what should we do about this? Int S = Q DotSize. All the oranges in Q will work together. You will know in the following diagram. After that while s minus minus means whatever. What will you do after that?"
+    },
+    {
+      "start_time": 1230.88,
+      "end_time": 1265.19,
+      "text": "इसको निकालिए। एक-एक करके जितने भी साइज में है उसको निकालिए। इसको पॉप कराइए। इसको पॉप कराइए। आपको क्या मिला? जीरो जीरो यहां पे मिल गया। क्या होगा? अब जीरो जीरो अपने चारों ओर के संतरों को सड़ाएगा और अगर वो सड़ जाते हैं तो उनको Q में पुश कर देगा। आइए देखते हैं। क्या यह अपने ऊपर सड़ा पाएगा? नहीं। लेफ्ट में नहीं राइट में यस राइट में यस तो हम लोग क्या करेंगे राइट वाले इस वाले कोऑर्डिनेट को तो पुश कर ही देंगे 0 1 और इसकी वैल्यू बदल के",
+      "source": "caption",
+      "english_text": "Take this out. Take out all the sizes one by one. Pop it. Pop it. What have you got? Zero zero found here. What will happen? Now Zero Zero will rot the oranges around it and if they rot, it will push them into Q. let's watch. Will it rot on itself? No. No on the left. Yes on the right. Yes on the right. So what will we do? The ones on the right will push this coordinate to 0 1 and change its value."
+    },
+    {
+      "start_time": 1265.2,
+      "end_time": 1297.11,
+      "text": "कुछ -2 या 0 कुछ भी कि इस पे और नहीं जाना है हो गया इसको एक बार पुश कर दिए ना पुश करना है और कम करना है और फ्रेश की वैल्यू फ्रेश की वैल्यू एक कम कर दिए ठीक है लेकिन अभी काम पूरा नहीं हुआ है ये इधर नहीं इधर नहीं इधर नहीं नीचे वाले को हां नीचे वाले वाले को भी सड़ाने की ताकत रखता है। सेम काम नीचे वाले में करिए। क्या-क्या काम करिए? सबसे पहले तो इसका कोऑर्डिनेट पुश करिए। 1 0 क्या करें? 1 0 कोऑर्डिनेट पुश हो गया। फ्रेश क्योंकि आप एक फ्रेश संतरे को सड़ा के भेज रहे हैं।",
+      "source": "caption",
+      "english_text": "Something - 2 or 0 or anything, don't go any further on this, it is done, push it once, push it further and reduce it and reduce the value of fresh, reduce the value of fresh by one, okay but the work is not done yet, this is not here, not here, not here, yes, it has the power to rot the one below also. Do the same thing in the lower one. What work should you do? First of all push its coordinates. 1 0 What to do? 1 0 Coordinate pushed. Fresh because you are sending a fresh orange rotten."
+    },
+    {
+      "start_time": 1297.12,
+      "end_time": 1323.19,
+      "text": "फ्रेश की संख्या फोर हो गई। फ्रेश की संख्या फोर हो गई। और अब इसको भी बदल के कुछ -1 या -2 जैसा कुछ कर दीजिए। वन वन के अलावा कुछ भी कर दीजिए। वन और टू के अलावा कुछ भी कर दीजिए। वन और टू के अलावा कुछ भी लिख दीजिए। जस्ट फॉर मार्किंग कि विजिटेड हो गया है। अब इस पे काम नहीं करना है। वेरी गुड। ठीक है? ये जीरो जीरो अपना काम कर चुका। वेरी गुड। अब जाके अब जाके ये लूप बंद होगा। अब वापस आएंगे।",
+      "source": "caption",
+      "english_text": "The number of fresh became four. The number of fresh became four. And now change this also to something like -1 or -2. Do anything other than One One. Do anything other than one and two. Write anything except one and two. Just for marking that it has been visited. Don't have to work on this now. very good. Ok? This zero zero has done its work. very good. Go now, this loop will be closed. Will come back now."
+    },
+    {
+      "start_time": 1323.2,
+      "end_time": 1349.029,
+      "text": "क्या आपका q खाली हो गया है? नहीं। अब आपके q में दो सड़े हुए संतरे हैं। तो जब टाइम प्लस प्लस होगा ना जब टाइम 2 मिनट्स पे आएगा। ये दोनों संतरे एक साथ काम करेंगे। क्या होगा? s = q का साइज। s का वैल्यू कितना आएगा? दो। अब ये दोनों संतरों को मौका दीजिए सड़ाने का। दोनों संतरों को मौका दीजिए। एक-एक करके। पहले किसको पाप कीजिए? 0 1 को। किसको? 0 1 को।",
+      "source": "caption",
+      "english_text": "Is your q empty? No. Now you have two rotten oranges in q. So when the time will be plus plus when the time will come at 2 minutes. These two oranges will work together. What will happen? s = size of q. What will be the value of s? Two. Now give these two oranges a chance to rot. Give both oranges a chance. One by one. Who should sin first? 0 to 1. Whom? 0 to 1."
+    },
+    {
+      "start_time": 1349.039,
+      "end_time": 1374.71,
+      "text": "आइए देखते हैं 0 वन क्या करने की ताकत रखता है? 0 1 आप इस पे आ चुके हैं। इसके चारों तरफ देखिए। क्या अपने ऊपर कुछ कर सकता है? नहीं। लेफ्ट में नहीं। लेफ्ट में नहीं कर सकता है। लेफ्ट में हम लोग उसको -1 या कुछ। हम लोग तभी करेंगे जब हमारा डायरेक्शन में ना एक हो। फ्रेश ऑरेंज का मतलब एक। जैसे एक मिलेगा तो कुछ करेंगे। ओके? राइट में यस राइट में कर सकता है। तो राइट में क्या करना है? तीन स्टेप है।",
+      "source": "caption",
+      "english_text": "Let's see what the forest has the power to do? 0 1 You have come to this. Look around it. Can you do anything about yourself? No. Not in the left. Can't do it on the left. We on the left give him -1 or something. We will do it only when there is no one in our direction. Fresh orange means one. Like if we get one we will do something. Ok? Yes, it can be done right. So what to do right? There are three steps."
+    },
+    {
+      "start_time": 1374.72,
+      "end_time": 1409.029,
+      "text": "सबसे पहले तो राइट वाले का कोऑर्डिनेट उठा के पुश कर दीजिए। क्या कोऑर्डिनेट है? 0 2 फ्रेश की संख्या एक कम कर दीजिए। एक फ्रेश ऑरेंज को आप सड़ा दिए। ओके? और इस राइट वाले की वैल्यू कुछ -1 या -2 कर दीजिए। वो हम आगे कोड लिखेंगे तो आपको हम दिखा देंगे। -1 या -2 कर दिए। ओके? ये इसका काम खत्म हो गया। अब नीचे वाले को सड़ाएगा। हां, नीचे वाले को भी सड़ाएगा। तो क्या पुश कर दीजिए? सबसे पहले तो वन सबसे पहले तो वन वन पुश कर दीजिए। फ्रेश की संख्या एक और कम हो गई। एक और फ्रेश की",
+      "source": "caption",
+      "english_text": "First of all, select the coordinate of the right one and push it. What is the coordinate? 0 2 Decrease the number of fresh by one. You spoiled a fresh orange. Ok? And make the value of this right one something like -1 or -2. If we write that code further, we will show it to you. Made it -1 or -2. Ok? This is the end of his work. Now the one below will rot. Yes, it will rot the one below also. So what should you push? First of all, push one first. The number of fresh decreased by one more. another fresh one"
+    },
+    {
+      "start_time": 1409.039,
+      "end_time": 1443.51,
+      "text": "संख्या कम हो गई। और वन वन को भी कुछ -1 या -2 ऐसा अपने मन से कर दीजिए। वेरी गुड। इसका काम हो चुका। इसका काम हो चुका। लेकिन यहां पे लूप क्या चल रहा है? वाइल s - दो चीज़ थे। ये भी था, यह भी था। अब 1 का मौका 10 उसी मिनट में एक्ट करेगा। साथ में एक्ट करेगा 1 0 भी। 1 0 साथ में एक्ट करेगा। आइए देखते हैं 10 क्या कर सकता है। 1 0 यहां पे आ गए। ऊपर वाले में नहीं। ऊपर वाले में ऑलरेडी काम हो चुका था। राइट में नहीं। राइट में वन है। लेकिन इस वन को हम लोग ऑलरेडी पुश कर चुके हैं। इस वन को",
+      "source": "caption",
+      "english_text": "The numbers decreased. And give some -1 or -2 to each one also in your mind. very good. Its work is done. Its work is done. But what is the loop going on here? While there were two things. This was also, this was also. Now a chance of 1 in 10 will act in the same minute. 1 0 will also act together. 1 0 will act together. Let's see what 10 can do. 1 0 Came here. Not in the one above. Work was already done on the upper one. Not in the right. There is a forest on the right. But we have already pushed this forest. to this forest"
+    },
+    {
+      "start_time": 1443.52,
+      "end_time": 1478.47,
+      "text": "ऑलरेडी पुश कर चुके हैं। और इस वन को हम लोग -1 या -2 बना दिए होंगे। नहीं होगा। नीचे नीचे तो ज़ीरो है। लेफ्ट में लेफ्ट में सर्कल खत्म है। ग्रिड खत्म है। ये कुछ नहीं कर पाएगा और सीधा पॉप हो जाएगा। तीनों पॉप हो गए। चलिए इस मिनट में t = 2 मिनट में कौन से दो लोगों ने अपना काम किया? इन दोनों ने। इन दोनों ने। अब वापस आइए। क्या आपका q खाली है? नहीं। आपका q खाली नहीं है। और q तो खाली नहीं है। क्या आपका फ्रेश अभी तक ज़ीरो है। बड़ा है? हां, अभी तक दो फ्रेश बचे हैं। मतलब आपको ये कंटिन्यू करना है। जब फ्रेश जीरो हो जाएगा",
+      "source": "caption",
+      "english_text": "Already pushed. And we might have made this forest -1 or -2. Will not done. Down below it is zero. The circle is over on the left. The grid is over. It won't be able to do anything and will pop straight away. All three popped. Let us consider which two people did their work in this minute t = 2 minutes? Both of them. Both of them. Come back now. Is your q empty? No. Your q is not empty. And q is not empty. Is your fresh still zero? Is it big? Yes, there are still two fresh ones left. Meaning you have to continue this. when fresh becomes zero"
+    },
+    {
+      "start_time": 1478.48,
+      "end_time": 1512.95,
+      "text": "नहीं करेंगे। देखिएगा अब कितने चीजें बची है क्यू में? ये दो संतरे बचे हैं। 0 टू 1 ये दोनों संतरे इसी में काम करेंगे। सबसे पहले तो टाइम प्लस प्लस मतलब टाइम बढ़ के 3 मिनट हो गया। एक-एक करके निकालिए। सबसे पहले 0 2 को निकालिए। आइए देखते हैं 02 क्या करेगा। यहां पे आए। क्या यहां लेफ्ट में कुछ कर सकता है? नहीं। ऊपर नहीं राइट नहीं नीचे नहीं बेकार था बेकार था लेकिन एक और बचा है वो भी इसी पे एक्ट कर रहा है ना वन वन को निकालिए किसको वन वन को",
+      "source": "caption",
+      "english_text": "Will not do. Let's see how many things are left in the queue? These are two oranges left. 0 to 1 These two oranges will work in this. First of all, Time Plus Plus means the time has increased to 3 minutes. Take out one by one. First remove 0 2. Let's see what 02 will do. Came here. Can the left do anything here? No. Not up, not right, not down, it was useless, it was useless, but there is one more left, he is also acting on the same, take out one one, whom one one, one one?"
+    },
+    {
+      "start_time": 1512.96,
+      "end_time": 1544.95,
+      "text": "निकालिए वन वन को निकालिए आइए देखते हैं वन वन क्या कर सकता है वन वन यहां आ गया ऊपर नहीं ऊपर में ऑलरेडी हो चुका है लेफ्ट में ऑलरेडी हो चुका है राइट में ज़ीरो है नीचे वाला यस नीचे वाला मिल गया नीचे वाला मिल गया क्या तीन स्टेप करना है सबसे पहले तो नीचे वाले का कोऑर्डिनेट यहां पे लिख लिख लो 2 1 2 1 लिख लिए फ्रेश की संख्या एक और कम हो गई और इस टू वन को कुछ -1 या -2 जो भी बनाना है बना दो खत्म हो गया ये",
+      "source": "caption",
+      "english_text": "Take out one, take out one, let's see what one one can do, one one is here, not up, up is already done, left is already done, right has zero, bottom yes, bottom one is found, bottom one is found, what three steps have to be done, first of all, write down the coordinate of the bottom here, write down 2 1 2 1, the number of fresh is reduced by one more and make this two one something -1 or -2, whatever you want, finish it. this is done"
+    },
+    {
+      "start_time": 1544.96,
+      "end_time": 1578.31,
+      "text": "भी पॉप कर गया ये भी पॉप कर गया क्या t = 3 मिनट में आपका साइज टू था कौन-कौन से दो थे ये दोनों इन दोनों का काम खत्म हां खत्म वापस करिए क्या आपका q एम्प्टी है नहीं आपका q एम्प्टी नहीं है क्या आपका फ्रेश की वैल्यू ज़ीरो से ज्यादा है हां जी फ्रेश की वैल्यू ज़ीरो से ज्यादा है मतलब मतलब बचा हुआ है अभी तक। कोशिश करते रहिए। कोशिश करते रहिए। टू वन निकला। टू वन। देखते हैं टू वन क्या करेगा। टू वन देखते हैं क्या करेगा। टू वन पॉप हो गया। आइए देखते हैं टू वन क्या करेगा। टू वन यहां पे आए। क्या अपने ऊपर वाले को कुछ कर सकता है? नहीं। ऊपर में ऑलरेडी हो चुका है।",
+      "source": "caption",
+      "english_text": "Is this also popped? Did this also pop in t = 3 minutes? Which two were your size? Which two were these two? Finished work. Yes, finish it. Return it. Is your q empty? No Is your q not empty? Is your fresh key value more than zero? Yes Yes, fresh key value is more than zero. Meaning, it is still left. Keep trying. Keep trying. Two turned out to be one. Two one. Let's see what Two One will do. Let's see what Two One will do. Two one popped. Let's see what Two One will do. Two one came here. Can he do anything to those above him? No. It is already done above."
+    },
+    {
+      "start_time": 1578.32,
+      "end_time": 1606.39,
+      "text": "लेफ्ट में ज़ीरो है। नीचे ग्रिड खत्म हो जाएगा। राइट में यस यस यस मिल गया। मिल गया मिल गया। वन मिल गया। क्या करेंगे? सबसे पहले तो इसको कोऑर्डिनेट को पुश करिए। टू टू पुश हो गया। फ्रेश की वैल्यू एक घटाइए। देखिए फ्रेश जीरो हो गया। आप देख सकते हैं कि अब कोई भी नहीं बचा है और इसकी वैल्यू -1 या -2 हम लोग कर दिए। -1 या -2 कर दिए। ठीक है? खत्म हो गया। ये टाइम खत्म हो गया। ये टाइम खत्म हो गया।",
+      "source": "caption",
+      "english_text": "There is zero on the left. The grid below will be finished. Yes yes yes got it right. Got it, got it. Found the forest. What to do? First of all, push its coordinates. Too much has been pushed. Decrease the value of FRESH by one. See the fresh has become zero. You can see that now there is none left and we changed its value to -1 or -2. Made it -1 or -2. Ok? It's over. This time is over. This time is over."
+    },
+    {
+      "start_time": 1606.4,
+      "end_time": 1631.43,
+      "text": "अच्छा हम टाइम को शायद बढ़ाए नहीं थे। ये टाइम घट के फोर हो जाएगा। ये टाइम को हम बढ़ाना भूल गए थे। ठीक बात है। टाइम हो गया। वापस चेक कीजिए। क्या आपका Q खाली है? नहीं। आपका Q खाली नहीं है। टू टू है Q में। लेकिन क्या आपका फ्रेश ज़ीरो से बड़ा है? नहीं। फ्रेश जीरो हो चुका है। तो क्या आपको और कंटिन्यू करने की और टाइम बढ़ाने की जरूरत है? नहीं। अब आपको कुछ करने की जरूरत नहीं है। अब आप इससे बाहर आ जाएंगे।",
+      "source": "caption",
+      "english_text": "Well, perhaps we did not extend the time. This time will reduce to four. We had forgotten to increase this time. That's right. It's time. Check back. Is your Q empty? No. Your Q is not empty. Two is in Q. But is your fresh greater than zero? No. Fresh has become zero. So do you need to continue further and increase the time? No. Now you don't need to do anything. Now you will come out of this."
+    },
+    {
+      "start_time": 1631.44,
+      "end_time": 1664.87,
+      "text": "अब इससे बाहर आ जाइए। क्योंकि ये पूरा प्रोसेस किस लिए था? फ्रेश ऑरेंजेस को सड़ाने के लिए। आपका फ्रेश जीरो से बड़ा नहीं है। आपको कुछ करने की जरूरत नहीं है। रुक जाइए। आपसे पूछा है मिनिमम कितना मिनट लगेगा? तो जितना भी मिनट यहां लगना था चार हो चुका है। उसके बाद आप बाहर आ जाइए। एक छोटा सा चेक अगर यह सब करने के बाद भी फ्रेश बड़ा रह जाए जीरो से इसका मतलब ना कि कोई ऐसा फ्रेश ऑरेंज ऐसी जगह पे है उस तक कोई पहुंच ही नहीं सकता है। जैसे कि इस एग्जांपल में इस एग्जांपल में अगर आप इसको ड्राई रन करेंगे तो आपका q खत्म हो जाएगा।",
+      "source": "caption",
+      "english_text": "Now come out of this. Because what was this whole process for? To rot fresh oranges. Your fresh is not greater than zero. You don't need to do anything. Stop. I asked you what is the minimum number of minutes it will take? So the total number of minutes it was supposed to take here has already been four. After that you come out. A small check, if even after doing all this the fresh remains more than zero, it does not mean that such a fresh orange is at such a place that no one can reach it. Like in this example, if you dry run it, your Q will be lost."
+    },
+    {
+      "start_time": 1664.88,
+      "end_time": 1699.669,
+      "text": "लेकिन आपका फ्रेश जो है ना वो ज़ीरो से बड़ा है यानी कि वन रह जाएगा। अगर आपको लगता है कि फ्रेश अभी भी बड़ा है रिटर्न -1 रिटर्न -1 नहीं तो रिटर्न टाइम। रिटर्न हमारा टाइम। रिटर्न टाइम। तो, यह इसका ऐसे करके यह काम हो रहा है। फिर से एक बहुत छोटा सा रिककैप दे देते हैं। सबसे पहला स्टेप आप क्या किए? सबसे पहला स्टेप क्या किए? सारे रोटेटन ऑरेंजेस को क्यू में डालिए। ठीक है? क्यू में डालने का क्या होता है? ऑलरेडी रोटेट जो थे। तो इसमें फ्रेश को छेड़छाड़ मत कीजिए। क्यू में डालिए और उनको उनकी वैल्यू बदल के कुछ जीरो कर दीजिए या माइनस वन कर दीजिए ताकि",
+      "source": "caption",
+      "english_text": "But your fresh number is greater than zero, that is, one will remain. If you think fresh is still big return -1 else return -1 then return time. Return our time. Return time. So, this is how it is done. Let's give a very short recap again. What was the first step you did? What was the first step? Put all the Rotaton Oranges in the queue. Ok? What happens when put in queue? Who were already rotated? So don't tamper with the freshness in it. Put them in queue and change their value to some zero or minus one so that"
+    },
+    {
+      "start_time": 1699.679,
+      "end_time": 1729.029,
+      "text": "उन पे बार-बार ना जाया जा सके। ओके? और इसी लूप में फ्रेश की संख्या भी गिन लीजिए। फ्रेश की संख्या भी गिन लीजिए। उसके बाद एक हम लोग लूप चलाए क्या? q डॉट नॉट एम्प्टी का मतलब q खाली नहीं होने चाहिए और फ्रेश जीरो से बड़ा होना चाहिए। सबसे पहले टाइम प्लस प्लस किए। अब इस समय इस समय उस q में जितने भी मौजूद हैं उस हो सकता है कि ऑलरेडी रोटेट इन जब आप ऑलरेडी रोटेट इन पुश किए हो ना तो थ्री ऑरेंजेस आया हो। ये तीनों इसी टाइम पे काम करेंगे।",
+      "source": "caption",
+      "english_text": "They cannot be visited again and again. Ok? And also count the number of fresh in this loop. Also count the number of fresh. After that, should we run a loop? q dot not empty means q should not be empty and fresh should be greater than zero. First of all did time plus plus. Now, whatever is present in that q at this time, it is possible that when you have pushed Already Rotate In, three oranges have come up. All three will work at the same time."
+    },
+    {
+      "start_time": 1729.039,
+      "end_time": 1762.389,
+      "text": "इसके लिए हम लोग क्या किए थे? इंट साइज इज़ इक्वल टू q डॉट साइज और वाइल साइज माइनस माइनस। इन तीनों को इसी में एग्ज़क्यूट करेंगे। इसी में उसके बाद जाके टाइम बढ़ाएंगे। उसके बाद जाके टाइम बढ़ाएंगे। कभी भी अगर क्यू खाली हो जाता है। क्यू खाली होने का मतलब क्या है? क्यू रखता क्या है? उस मिनट पे कितने एक्टिव सड़े हुए संतरे हैं? अगर आपका क्यू खाली हो गया मतलब कोई एक्टिव सड़ा हुआ संतरा नहीं बचा है। तो अगर कोई सड़ा हुआ संतरा नहीं बचा है तो कहीं पे सड़ान फैलेगी भी नहीं। बंद कर दीजिए। या फिर अगर आपका फ्रेश जीरो हो जाए, फ्रेश ऑरेंजेस अगर जीरो हो गए, कुछ करने की",
+      "source": "caption",
+      "english_text": "What did we do for this? Int size is equal to q dot size and while size is minus minus. All three will be executed here. After that we will increase the time. After that we will increase the time. Anytime if the queue becomes empty. Q What does it mean to be empty? Why do you keep what? How many active rotten oranges are there at that minute? If your queue becomes empty it means there are no active rotten oranges left. So if there are no rotten oranges left then the rot will not spread anywhere. Turn it off. Or if your fresh becomes zero, if your fresh oranges become zero, there is something to be done."
+    },
+    {
+      "start_time": 1762.399,
+      "end_time": 1792.31,
+      "text": "जरूरत नहीं है। बाहर आ जाइए। बाहर आने के बाद अगर फ्रेश अभी भी जीरो से बड़ा है मतलब कि वो ऐसी जगह पे है जहां उसको कोई नहीं सड़ा सकता है -1 नहीं तो रिटर्न टाइम रिटर्न टाइम आइए इसका कोड देखिए इसका कोड देखिए इसका कोड कल की तरह कल की तरह हम लोग को दो फंक्शन लिखने पड़ेंगे जो लोग कल नहीं देखे हैं बहुत अच्छी बात है आप मत देखिएगा सबसे पहले डायरेक्शन के लिए सबसे पहले डायरेक्शन के लिए डायरेक्शन में सबसे पहले डायरेक्शन के लिए क्या नॉर्थ ईस्ट",
+      "source": "caption",
+      "english_text": "No need. Come out. After coming out, if fresh is still greater than zero, that means it is in a place where no one can destroy it -1 otherwise return time return time let's see its code, see its code, like yesterday, like yesterday, we will have to write two functions, which people have not seen yesterday, it is a very good thing, don't you see, first of all for the direction, first of all for the direction, first of all for the direction, what is North East?"
+    },
+    {
+      "start_time": 1792.32,
+      "end_time": 1824.07,
+      "text": "साउथ वेस्ट करने के -1 1 0 0 इंट y4 = 0 0 -1 1 वेरी गुड एक फंक्शन वैलिड वैलिडिटी निकालने के लिए कि आप जिस डायरेक्शन में जा रहे हैं वो वैलिड भी है कि नहीं है? इंट ij इंट n इंट m nm क्या है? ग्रिड का साइज है। अगर i 0 से छोटा हो जाए। i n के बराबर हो जाए। J 0 से छोटा हो",
+      "source": "caption",
+      "english_text": "South West -1 1 0 0 Int y4 = 0 0 -1 1 Very Good A function to find out whether the direction in which you are going is valid or not? What is int ij int n int m nm? is the size of the grid. If i becomes smaller than 0. i becomes equal to n. J is less than 0"
+    },
+    {
+      "start_time": 1824.08,
+      "end_time": 1855.029,
+      "text": "जाए और JM के बराबर हो जाए। तुरंत फॉल्स रिटर्न कर दीजिए कि यहां नहीं जाया जा सकता है। यह ग्रिड के बाहर निकल रहा है। नहीं तो रिटर्न ट्रू कर दे मस्ती में अपने। वैलिड हो गया। अब आइए अपना मेन फंक्शन लिखते हैं। अब अपना मेन फंक्शन लिखते हैं। इंट ये आपका लीड कोड का फंक्शन। इसमें आपको क्या दिया हुआ है? एक वेक्टर ऑफ़ वेक्टर ऑफ़ इंट यस यस यस। सबसे पहला काम साइज निकाल लिया करिए। A डॉट साइज करेंगे। नंबर ऑफ रोज़ आ जाएंगे।",
+      "source": "caption",
+      "english_text": "Go and become equal to JM. Immediately return false that cannot be accessed here. It's going off the grid. Otherwise, make your return in fun. It has been validated. Now let's write our main function. Now let's write our main function. Int This is the function of your lead code. What is given to you in this? A vector of vector of int yes yes yes. The first thing to do is find out the size. Will dot size A. Numbers will come every day."
+    },
+    {
+      "start_time": 1855.039,
+      "end_time": 1887.19,
+      "text": "नंबर ऑफ कॉलम्स के लिए A के जीरो का साइज मतलब कितने कॉलम्स हैं? ये रो कॉलम ऐसे निकल जाएगा। उसके बाद क्या करना है? एक Q बना लीजिए। किस तरीके का? आपको क्योंकि उसमें कोऑर्डिनेट घुसाना है। पेयर टाइप का क्यू बना लीजिए। पेयर टाइप का क्यू बना लीजिए। इंट फ्रेश = 0 नंबर ऑफ़ फ्रेश ऑरेंजज़ याद रखने के लिए। इंट टाइम = 0 टाइम याद रखने के लिए इंट लूप चलाने के लिए क्या करना है? ऑलरेडी रोटेटन ऑरेंजेस",
+      "source": "caption",
+      "english_text": "For number of columns, the size of zero of A means how many columns are there? This row column will come out like this. What to do after that? Make a Q. Which way? Because you have to enter the coordinates in it. Make a pair type queue. Make a pair type queue. int fresh = 0 Number of fresh oranges to remember. int time = 0 What to do to run an int loop to remember the time? Already Rotten Oranges"
+    },
+    {
+      "start_time": 1887.2,
+      "end_time": 1922.149,
+      "text": "को करिए। लूप चलाइए सबसे पहले बड़ा सा पूरे ग्रिड पे लूप चलाइए। फॉर J = 0 j &lt; &lt; M J + वेरी गुड। अगर अगर अगर aij aij = 2 मतलब ऑलरेडी रॉटेन तो दो चीजें करनी है। सबसे पहले तो ij को q में पुश कर लिया करिए क्योंकि काम आएगा। ये एक्टिव है। अभी एक्टिव है शुरू में और aij की वैल्यू बदल दीजिए। aij की वैल्यू -2 कर दीजिए। चलिए -2 हर बार हम लोग करेंगे। जब भी q में पुश करेंगे -2 कर देंगे। बंद कर",
+      "source": "caption",
+      "english_text": "Do it. Run a Loop First, run a large loop over the entire grid. For J = 0 j < < M J + very good. If if aij aij = 2 means already rotten then two things have to be done. First of all, push ij into q because it will be useful. This is active. Now active in the beginning and change the value of aij. Make the value of aij -2. Come on, we will do -2 every time. Whenever you push in q it will make -2. turn it off"
+    },
+    {
+      "start_time": 1922.159,
+      "end_time": 1956.149,
+      "text": "दीजिए। लेकिन अभी काम खत्म नहीं हुआ है। लेकिन अभी काम खत्म नहीं हुआ है। इफ अगर एरे ऑफ़ ij इक्वल इक्वल टू वन हो गया। अगर एरे ऑफ़ ij इक्वल इक्वल टू वन हो गया। एल्स इफ लिख दीजिए। तो फ्रेश प्लस प्लस फ्रेश की गिनती गिन ली है। i बंद करिए जे बंद करिए। i बंद करिए। तो आपके q में अब ऑलरेडी रोट एंड ऑरेंजज़ आ चुके हैं। अब अपना लूप लिखिए। वाइल q डॉट नॉट एम्प्टी। q खाली नहीं होना चाहिए। मतलब अगर उसमें एक्टिव संतरे होने चाहिए सड़े हुए जो सड़ाएं एंड",
+      "source": "caption",
+      "english_text": "Give it. But the work is not over yet. But the work is not over yet. If if array of ij becomes equal to one. If array of ij becomes equal to one. Write else if. So the count of fresh plus plus fresh has been counted. Stop i. Stop j. i close. So now you already have rot and oranges in your q. Now write your loop. While q is not empty. q must not be empty. Meaning, if it contains active oranges, it should be rotten and rotten."
+    },
+    {
+      "start_time": 1956.159,
+      "end_time": 1989.99,
+      "text": "एंड सॉरी थोड़ा ये हो गया एंड फ्रेश शुड बी ग्रेटर दन ज़ीरो ये होनी चाहिए अगर फ्रेश नहीं है ग्रेटर दैन ज़ीरो तो आप क्या कर रहे हैं सबसे पहले टाइम सॉरी इंट नहीं टाइम प्लस प्लस कर दीजिए टाइम प्लस प्लस वेरी गुड इंट s = q डॉट साइज जितने भी इसमें हैं वो सब अब चलेंगे सबको मौका दीजिए कैसे वाइल s माइनस माइनस कर ठीक है सबसे पहला काम उस सड़े हुए के कोआर्डिनेट को निकालिए",
+      "source": "caption",
+      "english_text": "And sorry, this is a little, and fresh should be greater than zero, this should be, if fresh is not greater than zero, then what are you doing? First of all, time, sorry, not int, time plus plus, time plus plus very good int s = q dot size, all the people who are in it will work now, give everyone a chance, how can we do s minus minus, okay, the first thing to do is find the coordinate of that rotten."
+    },
+    {
+      "start_time": 1990.0,
+      "end_time": 2024.71,
+      "text": "इंट = q डॉट फ्रंट और q डॉट पॉप वेरी गुड हो गया पॉप इसको हम क्या करते हैं r = p डॉट फर्स्ट मतलब ये कौन सा रो है उसका ठीक है जस्ट फॉर सिंपलीसिटी ऐसा जरूरी नहीं होता है हम ऐसा आपको अच्छा लगता है c = p डॉट सेकंड तो रो कौन सा और कॉलम कौन सा आ गया। ठीक है? अब क्या करेंगे? ये अपने चारों ओर सड़ाने की कोशिश करेगा। चारों ओर जाने का तरीका आइलैंड वाला ट्रिक क्या करिए? फॉर इंट k = 0 कितने दिशाओं में जा सकते हैं?",
+      "source": "caption",
+      "english_text": "Int = q dot front and q dot pop very good done pop, what do we do with this r = p dot first means which row is this, its correct, just for simplicity, it is not necessary, we like it like this c = p dot second, then which row and which column has come. Ok? What will you do now? It will try to rot all around itself. HOW TO GO AROUND THE ISLAND TRICK What to do? In how many directions can one go for int k = 0?"
+    },
+    {
+      "start_time": 2024.72,
+      "end_time": 2058.31,
+      "text": "चार दिशाओं में प्लस प्लस कैसे होता है? रो = r + x k ये हम बहुत अच्छे से समझाए हैं पिछले वाले वीडियो में। तो प्लीज देखिएगा। अगर ये आपको पल्ले नहीं पड़ रहा है। ऐसे आप पिछला वाला नहीं देखे तो आपको ये कुछ नहीं समझ में आएगा। वो तो ठीक ही बात है। ठीक है? अब अब दो चीजें चेक करनी है। अगर ये रो कॉलम वैलिड निकल गया। अगर ये वैलिड इनवैलिड है तब तो कुछ करने की जरूरत ही नहीं है भाई। आगे चलो। वैलिड एंड इस जगह पे कोई फ्रेश ऑरेंज है तो उसको सड़ाएंगे ना। फ्रेश कोई तो सड़ाएंगे। ज़ीरो",
+      "source": "caption",
+      "english_text": "How is plus plus in four directions? Ro = r + x k. We have explained this very well in the previous video. So please see. If this doesn't bother you. If you haven't seen the previous one then you won't understand anything like this. That is right. Ok? Now two things have to be checked. If this row column turns out to be valid. If this is valid and invalid then there is no need to do anything brother. Move ahead. Valid and if there is any fresh orange in this place then we will rot it, right? Some fresh ones will rot. zero"
+    },
+    {
+      "start_time": 2058.32,
+      "end_time": 2091.349,
+      "text": "को सड़ाएंगे नहीं। जो -2 बन चुका है उसको सड़ाएंगे नहीं। जो कुछ को कुछ करेंगे नहीं। तो फ्रेश ऑरेंज होना चाहिए। वन है। क्या [गला साफ़ करने की आवाज़] करेंगे? तीन चीज करेंगे। सबसे पहले तो पुश करेंगे। सबसे पहले पुश कर दिए। यह लीजिए पुश हो गया। इसको वैल्यू बदल के कुछ और कर दीजिए। इसको वैल्यू बदल के कुछ और -2 ही कर दीजिए। ऊपर में -2 इसमें -2 -2 कहां से देखिए? पर्पस क्या है ना? वन वन के अलावा कुछ भी बना दो। वन के अलावा कुछ भी बना दो। और फ्रेश की गिनती क्योंकि आप एक फ्रेश ऑरेंज को सड़ा रहे हैं। माइनस",
+      "source": "caption",
+      "english_text": "Will not rot. The one which has become -2 will not rot. Those who will do nothing to some. So it should be fresh orange. There is a forest. Will [clearing throat] do? Will do three things. First of all we will push. Pushed first. There you go, the push is done. Change its value to something else. Change its value to something more like -2. -2 in above, -2 in this -2 Where to look from? What is the purpose? Make anything other than One One. Make anything other than a forest. And fresh counts because you're rotting a fresh orange. minus"
+    },
+    {
+      "start_time": 2091.359,
+      "end_time": 2116.71,
+      "text": "माइनस कर देंगे। ये आपका इफ लूप बंद हुआ। ये आपका के वाला लूप बंद हुआ। अ फिर आपका शायद ये साइज वाला लूप और ये आपका मेन वाला लूप बंद हो गया। नीचे आके अगर फ्रेश अभी भी जीरो से बड़ा है कुछ नहीं कर सकते आप। रिटर्न -1 नहीं तो रिटर्न टाइम। ये मेन लूप बंद हो गया। देख लीजिए।",
+      "source": "caption",
+      "english_text": "Will make minus. This is your if loop closed. This is your loop closed. Then perhaps this size loop of yours and this loop of yours are closed. Coming down, if the fresh is still greater than zero, you can't do anything. Returns -1 otherwise return time. This main loop is closed. Take a look."
+    },
+    {
+      "start_time": 2116.72,
+      "end_time": 2149.99,
+      "text": "कोड थोड़ा लंबा हो गया शायद। देख लीजिए। ये ये पूरा कोड है। थोड़ा लंबा थोड़ा क्या ज्यादा ही लंबा हो गया है। तो ये आपका कोड है। ठीक है? टाइम कॉम्प्लेक्सिटी n * m स्पेस कॉम्प्लेक्सिटी n * m तो ये पूरा कोड देखिए ये ऊपर के वैलिड और ये आपका रटन सेक्शन बाय सेक्शन में वैसा कुछ है नहीं यहां पे बना रहे हैं यहां पे ऑलरेडी रन वाले को कर रहे हैं ये आपका मेन लूप है पूरा ये आपका मेन लूप यहां खत्म होता है यहां पे आप रिटर्न कर देना है इसको जाइए इसको कोड करिए इसको समझिए ड्राई रन कीजिए इसीलिए मेरा मन था कि आज दो क्वेश्चन कराने का लेकिन ये बहुत हैवी और बहुत इंपॉर्टेंट क्वेश्चन है इसलिए हम एक",
+      "source": "caption",
+      "english_text": "The code may be a bit long. Take a look. This is the complete code. A little long, a little has become too long. So this is your code. Ok? Time Complexity n * m Space Complexity n * m So see this entire code, it is valid above and this is your run section by section, no, here we are making it, here we are doing the already run one, this is your main loop, this is complete, your main loop ends here, here you have to return, go, code it, understand it, do a dry run, that is why I felt like giving two questions today but these are very heavy and very This is an important question so we"
+    },
+    {
+      "start_time": 2150.0,
+      "end_time": 2160.8,
+      "text": "क्वेश्चन में रुक जाते हैं थोड़ा आप लोग का भी ज्यादा ओवरलोड ना हो इसलिए ठीक है क्वेश्चन कमिंग कीजिए अच्छे से कीजिए है ना तो चलिए मिलते हैं कल",
+      "source": "caption",
+      "english_text": "Let's pause for a bit in the questions, so that you too don't get overloaded, so it's okay, come up with the questions, do it well, otherwise let's meet tomorrow."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

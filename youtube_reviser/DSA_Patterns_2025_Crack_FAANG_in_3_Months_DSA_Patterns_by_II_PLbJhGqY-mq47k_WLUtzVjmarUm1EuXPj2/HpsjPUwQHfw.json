@@ -1,0 +1,422 @@
+{
+  "video_id": "HpsjPUwQHfw",
+  "video_title": "Word Ladder Explained Like a Pro! DSA Patterns Graph Series",
+  "video_number": 108,
+  "chunks": [
+    {
+      "start_time": 2.389,
+      "end_time": 36.229,
+      "text": "वर्ड लैडर देखिए लीड कोड का हार्ड प्रॉब्लम है। एक चीज और आपको हम बता देते हैं कि हार्ड बस लिखा हुआ है। वैसा कुछ नहीं है। एकदम बेकार सा क्वेश्चन है। फदू क्वेश्चन है। आपसे अगर ये इंटरव्यू में पूछा जा रहा है ना तो बहुत ज्यादा चांस है कि आपका सिलेक्शन हो जाएगा। अगर आपसे ये क्वेश्चन पूछता है कोई और आप ये बना देते हैं। 99% आपका सिलेक्शन होना तय है। क्योंकि बहुत फेमस क्वेश्चन है। ठीक है? और इसको उसी से पूछा जाता है जिसका बहुत हाई एक्सपेक्टेशन होता है कि चलो लड़का पढ़ के आया है। इसको आता है। उसी से पूछा जाता है। बेकार आदमी से सब नहीं पूछा जाता है। ठीक है? तो वो पूछने में टाइम वेस्ट भी नहीं करेगा। कि जो बेकार स्टूडेंट है ना उसका हवा-हवा ऐसे ही उड़ जाएगा। ये सब का जरूरत नहीं पड़ता है। अगर आपसे ये पूछा",
+      "source": "caption",
+      "english_text": "See Word Ladder, Lead is a hard code problem. One more thing, let us tell you that the hard bus is written. There is nothing like that. This is a completely useless question. It's a stupid question. If you are being asked this in the interview then there is a very high chance that you will be selected. If someone else asks you this question, you ask this question. Your selection is 99% certain. Because it is a very famous question. Ok? And this is asked only from those who have very high expectations that the boy has come back after studying. Knows this. He is asked the same. Everything is not asked of an idle man. Ok? So he won't even waste time in asking. That the useless student will be blown away like this. There is no need for all this. if asked you this"
+    },
+    {
+      "start_time": 36.239,
+      "end_time": 69.27,
+      "text": "जाए तो बहुत अच्छा लक है आपका। अगर आप इसको बना देते हैं ना तो लेक्चर ऑलमोस्ट ऑलमोस्ट गारंटीड है। बहुत ध्यान से सुनिएगा। उतना हार्ड है नहीं। बहुत इजी क्वेश्चन है। ठीक है? चलिए। वर्ड लैडर। वर्ड लैडर का मतलब क्या है? आपको बोला क्या हुआ है ना? आपको बहुत सारा चीज दिया हुआ है। सबसे पहले तो आपको एक एरे ऑफ़ वर्ड्स दिया हुआ है। आपको क्या दिया हुआ है? एक एरे ऑफ़ वर्ड्स। मतलब कि आपको ये चीजें दी हुई है। मान लीजिए हॉट अच्छा डॉग ओके और डॉट अच्छा और लॉट अच्छा और लॉग और कॉग मान",
+      "source": "caption",
+      "english_text": "If you go then you are in luck. If you make it then the lecture is almost guaranteed. Listen very carefully. It is not that hard. It is a very easy question. Ok? Let go. Word Ladder. What does word ladder mean? Told you what happened? You have been given a lot of things. First of all, you are given an array of words. What has been given to you? An array of words. Meaning that these things have been given to you. Let's assume hot good dog ok and dot good and lot good and log and cog values"
+    },
+    {
+      "start_time": 69.28,
+      "end_time": 102.63,
+      "text": "लीजिए ये आपको एक एरे ऑफ़ वर्ड्स दिया हुआ है। अब ऐसा नहीं हो सकता है कि वर्ड्स एक ही लेटर का होगा या कुछ नहीं। वर्ड सारा लोअर केस लेटर में होगा। मतलब छोटे इंग्लिश में होगा। छोटा ए बी सी डी का वर्ड्स होगा। ठीक है? और और इसका मान लीजिए हम इंडेक्सिंग मार्क कर दिए। 0 1 2 3 4 और 5 ये आपको एरे दिया रहेगा। अच्छा और क्या दिया रहेगा? आपको दो शब्द और दिए रहेंगे। आपको एक बिगिन वर्ड दिया रहेगा। क्या दिया रहेगा? बिगिन वर्ड। जैसे कि इस एग्जांपल में हम देख पा रहे हैं इसका बिगिन वर्ड क्या है? हिट। बिगिन वर्ड क्या है? हिट। अच्छा। और आपको एक एंड वर्ड दिया",
+      "source": "caption",
+      "english_text": "Here you are given an array of words. Now it cannot be the case that words will be of only one letter or nothing. The word Sara will be in lower case letter. Meaning will be in small English. The words will be small ABCD. Ok? And and suppose we mark indexing. You will be given an array of 0 1 2 3 4 and 5. Well, what else can be given? You will be given two more words. You will be given a beginning word. What will be given? Begin Word. As we can see in this example, what is its beginning word? Hit. What is begin word? Hit. Good. and gave you an end word"
+    },
+    {
+      "start_time": 102.64,
+      "end_time": 136.229,
+      "text": "रहेगा। एंड वर्ड इस एग्जांपल में क्या है? कॉग। ठीक है? एंड वर्ड क्या है? कॉग। हो गया। यही तीन चीज दिया हुआ है। आपका काम क्या है? आपका काम देखिए क्या है? हिट सबसे पहले तो देखिए कि हिट ना इस एरे में नहीं है। इस एरे में कहीं भी हिट है नहीं। कोई दिक्कत नहीं है। कोई दिक्कत नहीं है। नहीं है कोई दिक्कत नहीं है। क्या इस एरे में कॉग है? हां इस एरे में कॉग यहां पे है। क्यों बता रहे हैं? आपको समझ में आएगा। ठीक है? आपका काम क्या है? आपको हिट से स्टार्ट करना है। आपको किससे स्टार्ट करना है? हिट से स्टार्ट करना है। हिट से स्टार्ट करना है। अच्छा। स्टार्ट करके",
+      "source": "caption",
+      "english_text": "Will remain. What is the end word in this example? Cog. Ok? What is end word? Cog. Done. These three things have been given. What is your job? Look, what is your work? Hit First of all, see that Hit Na is not in this array. There is no hit anywhere in this array. There is no problem. There is no problem. No, there is no problem. Does this array have cogs? Yes, the cog is here in this array. Why are you telling? You will understand. Ok? What is your job? You have to start with the hit. What do you have to start with? Have to start with hit. Have to start with hit. Good. after starting"
+    },
+    {
+      "start_time": 136.239,
+      "end_time": 170.39,
+      "text": "क्या करना है? हिट में ना आप एक लेटर अपनी मर्जी से बदल सकते हैं। हिट का कोई भी एक शब्द कोई भी एक लेटर आप अपनी मर्जी से बदल सकते हैं और उसको कोई और लोअर केस लेटर में कन्वर्ट कर सकते हैं। फॉर एग्जांपल अगर आपका मन करता है तो आप एच आई टी को एल आई टी बना सकते हैं। आप एल आई टी बना सकते हैं। आप एच आई टी को बी आई टी बना सकते हैं। आप आप कोई भी एक लेटर अपने मन से बदल सकते हैं। लेकिन आपका गोल है ना कि आप उसमें हिट में एक लेटर बदलिए और कुछ कुछ करके मतलब यही रूल फॉलो करके कि आपको एक",
+      "source": "caption",
+      "english_text": "What to do? In HIT, you can change a letter as per your wish. You can change any single word or letter of the hit as per your wish and convert it into any other lower case letter. For example, if you feel like it, you can make HIT LIT. You can create LIT. You can make HIT a BIT. You can change any letter as per your wish. But your goal is that you change one letter in the hit and by doing something means by following this rule that you get a"
+    },
+    {
+      "start_time": 170.4,
+      "end_time": 204.229,
+      "text": "वर्ड दिया रहेगा। आप उस वर्ड को बदल के किसी और वर्ड पे पहुंचिए। ऐसे करते करते आपको इस फाइनल वर्ड तक पहुंचना है। आपको किस तक पहुंचना है? इस फाइनल वर्ड तक। कहने का क्या मतलब है? अब देखिए आप हिट में एक लेटर बदल के मान लीजिए एल आई टी तक पहुंच गए। क्या आपको एल आई टी इस एरे में दिख रहा है? नहीं। नहीं हमको एलई एलआईटी इस एरे में नहीं दिख रहा है। मतलब कि एलआईटी में बदल के फायदा नहीं होने वाला है। आप एचआईटी को एच आई एस कर दिए। एच आई एस मतलब हिज बना दिए। अगेन क्या आपको इस एरे में हिज दिख रहा है? नहीं इस एरे में",
+      "source": "caption",
+      "english_text": "Word will be given. You change that word and reach some other word. By doing this you have to reach this final word. Who do you want to reach? Until this final word. What does it mean to say? Now see, suppose you reached LIT by changing one letter in HIT. Do you see LIT in this array? No. No, we do not see LE LIT in this array. Meaning that changing to LIT is not going to be beneficial. You changed HIT to HIS. HIS means made his. Again do you see his in this array? not in this array"
+    },
+    {
+      "start_time": 204.239,
+      "end_time": 238.07,
+      "text": "आपको हिज नहीं दिख रहा है। उससे भी कोई फायदा नहीं है। लेकिन लेकिन लेकिन आप इस आई को बदल के ना ओ बना दिए। मतलब हिट को आप हॉट कर दिए। हिट को आप क्या कर दिए? हॉट कर दिए। हॉट हॉट हॉट यस। हॉट क्या आपको इस एरे में दिख रहा है? बिल्कुल दिख रहा है। मतलब ये एक बढ़िया ट्रांसफॉर्मेशन है। ये एक बढ़िया ट्रांसफॉर्मेशन है। और आइए अब इस हॉट में आप इस एच को डी बना दीजिए। देखिए हॉट में आप बहुत कुछ कर सकते हैं। आप इसमें तीन लेटर दिख रहा है ना? इस तीन में से किसी भी एक लेटर को आप कुछ भी बना सकते हैं। लेकिन जो आप कुछ भी बनाएंगे",
+      "source": "caption",
+      "english_text": "You can't see the hinge. There is no benefit from that either. But but but you changed this i to na o. Meaning you made the hit hot. What did you do to the hit? Made it hot. Hot hot hot yes. What do you see hot in this array? Absolutely visible. Meaning this is a great transformation. This is a great transformation. And now in this hot, you change this H to D. See, you can do a lot in HOT. You can see three letters in it, right? You can make anything out of any one of these three letters. but whatever you make"
+    },
+    {
+      "start_time": 238.08,
+      "end_time": 269.909,
+      "text": "ना वो आपके एरे में होना चाहिए। आप ऐसे ही अपने मन से कुछ भी नहीं। आपके एरे में होना चाहिए। ये इसी को लैडर बोला गया है कि एक-एक एक-एक करके सीढ़ी चढ़-चढ़ के आप अपने फाइनल तक पहुंचिए। अगेन हॉट में आप क्या करिए? आप हॉट को क्या बनाया? जी एच को डी बना दीजिए। मतलब कि हॉट को डॉट बना दीजिए। क्या डॉट आपके एरे में है? बिल्कुल डॉट आपके एरे में है। तो ये एक बढ़िया ट्रांसफॉर्मेशन है। आप अब क्या करिए? डॉट में ना डी को बदल के एल बना दीजिए। मतलब",
+      "source": "caption",
+      "english_text": "Neither should it be in your array. You just don't do anything with your mind. Should be in your array. This is called a ladder so that you can climb the stairs one by one to reach your final. What do you do in Hot Again? What made you hot? Make GH into D. Meaning, make hot a dot. Is dot in your array? Of course dot is in your array. So this is a great transformation. What should you do now? Change the letter D in dot to L. meaning"
+    },
+    {
+      "start_time": 269.919,
+      "end_time": 300.79,
+      "text": "कि आप डॉट को लॉट बना दिए। एल ओ टी क्या एल ओ टी आपके एरे में है? यस सर एल ओ टी भी मेरे एरे में है। वेरी गुड। और करते रहिए और करते रहिए। अब आप क्या किए? एल ओ टी को बदल के। एल ओ टी को बदल के किसको बदलाया? जी बड़ा कंफ्यूजिंग क्वेश्चन है। हां सॉरी। डॉट को डॉट नहीं बनाना था। डॉट को क्या बनाना था? डी ओ टी के जगह टी को जी बना के आप डॉट को डॉग बना दिए। क्या बना दिए? डॉग बना दिए। क्या डॉग आपके एरे में है? यस सर। डॉग आपके एरे में है। डॉग को भी कंफर्म कीजिए। डॉग को भी करिए कुछ।",
+      "source": "caption",
+      "english_text": "That you made Dot a Lot. LOT Is LOT in your array? Yes sir LOT is also in my array. very good. And keep doing it and keep doing it. What did you do now? By changing LOT. Who was changed by changing LOT? Yes, this is a very confusing question. Yes sorry. Dot was not to be made dot. What was Dot supposed to make? By changing t to g instead of dot, you made dot a dog. What did you make? Made a dog. Is the dog in your array? Yes sir. Dog is in your array. Confirm the dog also. Do something for the dog too."
+    },
+    {
+      "start_time": 300.8,
+      "end_time": 333.59,
+      "text": "डॉग को भी कीजिए। आप डी ओ जी में डी को सी में बदल के कॉग बना दीजिए। ये लीजिए आप आ गए कॉग तक। क्या कॉग आपके एरे में है? बिल्कुल आपके एरे में है। और क्या कॉग ही आपका फाइनल डेस्टिनेशन था? यस सर। कितना स्टेप लगाने में? एक स्टेप, दो स्टेप, तीन स्टेप, चार स्टेप, पांच स्टेप। आपको क्या रिटर्न करना है? फाइव। आपको मिनिमम नंबर ऑफ़ वर्ड्स में आप क्या बना सकते हैं? वो आपको रिटर्न करना है। अगर आप ऐसा नहीं कर पाते हैं मतलब ऐसा कोई तरीका ही नहीं होता",
+      "source": "caption",
+      "english_text": "Do it to the dog too. You make a cog by changing the D in D O G to C. There you go, you have come to the cog. Is the cog in your array? Exactly in your array. And was COG your final destination? Yes sir. How many steps to take? One step, two step, three step, four step, five step. What do you have to return? Five. What can you create in minimum number of words? You have to return it. If you can't do this then there is no way."
+    },
+    {
+      "start_time": 333.6,
+      "end_time": 362.23,
+      "text": "है। मान लीजिए आपका जो एंड वर्ड था ना वो कॉग नहीं होता। वो कुछ और होता। वो क्या होता? ए ओ जी होता। मान लीजिए कि ए ओजी होता और कुछ भी करके ना आपको पता चलता कि ए ओजी पॉसिबल है ही नहीं। तो आप जीरो रिटर्न कर देते कि भैया हम बहुत कुछ करके देख लिए। ए ओजी तो पॉसिबल नहीं लग रहा है। तो जीरो रिटर्न कर दिए। यही चीज आपको करनी है। क्या करनी हम फिर से बता रहे हैं। आपको बिगिन वाले वर्ड से शुरू करना है। बिगिन वाले वर्ड में आपकी मर्जी आप उसको कुछ भी बना सकते हैं। आप उसमें कोई भी एक लेटर को कुछ भी कन्वर्ट कर सकते हैं।",
+      "source": "caption",
+      "english_text": "Is. Suppose your ending word was not a cog. That would have been something else. What would that have been? Would have been AOG. Suppose A was OG and by doing nothing you would realize that A OG is not possible. So you would have given zero return that brother, we have tried many things. A OG doesn't seem possible. So returned zero. This is what you have to do. We are telling you again what to do. You have to start from the beginning word. You can make the beginning of the word whatever you want. You can convert any single letter in it into anything."
+    },
+    {
+      "start_time": 362.24,
+      "end_time": 392.71,
+      "text": "लेकिन जो वर्ड आप बनाएंगे ना वो आपके एरे में होना चाहिए। अगर वो आपके एरे में है तो आप उसमें आगे बढ़िए। अगले उस वर्ड को कन्वर्ट कीजिए। उसमें और आगे बढ़िए। करते करते करते करते करते करते फाइनल वर्ड तक आपको पहुंचना है और आपको बताना है कि भैया कितने स्टेप में कितना क्या शॉर्टेस्ट स्टेप है जिससे हम फाइनल वर्ड में पहुंच गए। मान लीजिए अगर आपका एंड वर्ड एलआईटी होता एलआईटी और आपके एरे में भी एलआईटी होता। आपके एरे में भी एलआईटी होता तो आपको बस दो स्टेप लगता। कौन सा दो स्टेप?",
+      "source": "caption",
+      "english_text": "But the word you will create should be in your array. If it is in your category then you should move forward in it. Convert that word next. Go further in that. By doing it, you have to reach the final word and you have to tell me, brother, in how many steps, what is the shortest step by which we reached the final word. Suppose if your end word was LIT and your array also contained LIT. If you had LIT in your array also, you would have needed only two steps. Which two steps?"
+    },
+    {
+      "start_time": 392.72,
+      "end_time": 427.35,
+      "text": "पहला वर्ड तो आपका हिट हो गया। मतलब ये तो बिगिन वर्ड है। तो यहां पे एक स्टेप काउंट हुआ। आप एच को एल बना के एलआईटी ले आए और एलआईटी आपके एरे में भी है। तो कितना स्टेप इसका आंसर हो गया? इसका आंसर हो गया दो स्टेप। आपको यही करना है। आपको क्या करना है? इसी को लैडर बोला गया है। वर्ड लैडर मतलब एक वर्ड से दूसरा बनाए दूसरे से तीसरा, तीसरा से चौथा करते करते एंड वर्ड बन गया। एक चीज का ध्यान रखिएगा। आपका जो बिगिन वाला शब्द है वो आपके एरे में नहीं हो चलता है। वो आपके एरे में नहीं हो चलता है क्योंकि वो बिगिन वर्ड है। लेकिन अगर आपका एंड वर्ड आपके एरे में नहीं है। अगर आपको पता चलता है कि हमको जो",
+      "source": "caption",
+      "english_text": "Your first word became a hit. Meaning this is the beginning word. So there was a step count here. You changed H to L and got LIT and LIT is also in your array. So how many steps is the answer? The answer is two steps. This is what you have to do. What do you have to do? This is called ladder. Word ladder means by making one word another, from second to third, from third to fourth, the end word is formed. Keep one thing in mind. Your beginning word is not in your array. It cannot be in your array because it is a beginning word. But if your end word is not in your array. If you find out that we"
+    },
+    {
+      "start_time": 427.36,
+      "end_time": 462.23,
+      "text": "एंड वर्ड दिया हुआ है ना वो मेरे एरे में ही नहीं है। इसका मतलब आप कुछ भी कर लीजिए। आप एंड वर्ड तक नहीं पहुंचिएगा। क्यों? क्योंकि आप जो भी कर रहे हैं वो तो एरे के वर्ड्स के ऊपर चढ़ रहे हैं ना। अगर आपका एंड वर्ड आपके एरे में है ही नहीं। आप दुनिया में कुछ भी कर लीजिए आप वो नहीं बना पाएंगे। तो उसमें तो तुरंत सबसे पहले चेक करके ज़ीरो रिटर्न कर देना कि ये पॉसिबल नहीं है। ये है आपका सवाल। अब सवाल सुनने में बहुत खतरनाक लगता है। मतलब माथा घूमने वाला सवाल है कि ये तो मतलब अभी तक ऐसा तो कुछ किए ही नहीं थे। मतलब समझ में नहीं आ रहा है कि किसका सवाल है, क्यों सवाल है? और ये ग्राफ सीरीज़ में क्यों पढ़ा",
+      "source": "caption",
+      "english_text": "End word is given and it is not in my array. This means you can do anything. You will not reach the end word. Why? Because whatever you are doing is going over the words of the array. If your end word is not in your array. No matter what you do in this world, you will not be able to make it. So in that case, first of all check immediately and return zero if it is not possible. This is your question. Now the question sounds very dangerous. This means that it is a mind-boggling question that nothing like this had been done till now. Meaning, I am not able to understand whose question it is, why the question is there? And why read this graph in series"
+    },
+    {
+      "start_time": 462.24,
+      "end_time": 496.15,
+      "text": "रहे हैं? तो ग्राफ जैसा नहीं तो स्ट्रिंग का क्वेश्चन लग रहा है। अभी सब बताते हैं धीरे-धीरे। ये आपको हम क्वेश्चन समझा दिए। ये आपको चीजें करनी है। अब आपको हम समझाते हैं कि क्यों ये किसका सवाल है और कैसा है और इसको खोलेंगे। बड़ा इजी है। बहुत छोटे समय में कर देंगे। आइए शुरू करिए आगे बढ़। अब देखिए ये क्वेश्चन आपको हार्ड इसीलिए लग रहा था ना क्योंकि उसमें बड़ा-बड़ा वर्ड था। बड़ा-बड़ा वर्ड का मतलब क्या है? कि उसमें तीन लेटर का वर्ड था। इसको एक लेटर के वर्ड एक लेटर का भी वर्ड आपको मिल सकता है ना। आपको हो सकता है कि ऐसा एरे मिल जाए। आपका बिगिन हो ए और आपका एंड हो वाई। एक चीज हमेशा याद रखिएगा कि बिगिन का लेंथ, एंड का लेंथ और हर एक वर्ड का लेंथ",
+      "source": "caption",
+      "english_text": "Are you? So if not like a graph then it seems like a string question. Now let's tell everything slowly. We have explained these questions to you. These are the things you have to do. Now we will explain to you why and whose question it is and how it is and will open it. It is very easy. Will do it in very short time. Let's start moving forward. Now see, this question seemed difficult to you because it contained big words. What is the meaning of big words? That it contained a three letter word. You can also get the word of one letter in this, right. You might find such an array. Your beginning should be A and your end should be Y. Always remember one thing that the length of the beginning, the length of the end and the length of each word."
+    },
+    {
+      "start_time": 496.16,
+      "end_time": 528.949,
+      "text": "हमेशा सेम रहेगा। मतलब कि हमेशा इक्वल रहेगा। अगर बिगिन एक लेटर का है तो एंड भी एक लेटर का होगा और एरे का भी सारा शब्द एक ही लेटर का होगा। ऐसा नहीं होगा कि एरे में कोई तीन लेटर का शब्द आ गया। ऐसा नहीं होगा। ठीक है? तो एक लेटर के लिए क्या करना है? देखिए आपको ए से शुरुआत करनी है। क्या ए आपके एरे में है? नहीं है लेकिन ओके है। बिगिन नहीं हो तो चलेगा। क्या एंड आपके एरे में है? बिल्कुल एंड आपके एरे में है। तो आप ट्राई कर सकते हैं। अब आप अगर इसको मान लीजिए अभी तक आपको कुछ नहीं आता। अभी तक आपको ग्राफ ये सब कुछ नहीं पता होता तो आप क्या करते? आप यही करते हैं ना ब्रूट फोर्स एप्रोच से ट्राई करके",
+      "source": "caption",
+      "english_text": "There will always be beans. Meaning it will always be equal. If the beginning is of one letter then the end will also be of one letter and all the words in the array will also be of the same letter. It will not happen that any three letter word appears in the array. This will not happen. Ok? So what does a letter have to do with it? See you have to start with A. Is A in your array? No but ok. It will be fine if it doesn't start. Is end in your array? Of course end is in your array. So you can try. Now if you accept this, you don't know anything yet. What would you have done if you didn't know all this about graphs yet? That's what you do by trying the brute force approach."
+    },
+    {
+      "start_time": 528.959,
+      "end_time": 563.03,
+      "text": "देख लेते हैं कि ठीक है अब ए है ए को अब ए में आप कितना लेटर बदल सकते हैं एक लेटर ए में है कितना लेटर एक ही लेटर अब इसको बदलने का कितना ऑप्शन है आपके पास आपको अगर ए को बदलना है एक ही लेटर बदलना है ना तो एक ही लेटर है कितना ऑप्शन है 26 ऑप्शन है क्योंकि आपको लोअर इंग्लिश ए बी सी डी में ही बदलना है और किसी में नहीं बदलना है तो अगर आपको ब्रूट फ़ोर्स पता होता अगर आपको कुछ और आईडिया नहीं होता तो आप क्या करते आप बदल के देख लेते से वही एग्जैक्ट सेम चीज करना है। इसमें भी बदल के देख लो a को जब आप बदलेंगे कितना पॉसिबल चीज है।",
+      "source": "caption",
+      "english_text": "Let's see, okay, now A is now A, how many letters can you change in A, how many letters are there in A, one letter, now how many options do you have to change it, if you have to change A, you have to change only one letter, there is only one letter, how many options are there, there are 26 options because you have to change only lower English A B C D and not any other, so if you knew brute force, if you had no other idea, then you What do you do by changing it and then you have to do the exact same thing. In this also, see how possible it is when you change a."
+    },
+    {
+      "start_time": 563.04,
+      "end_time": 592.389,
+      "text": "26 ही तो है। 26000 तो नहीं बदलेगा। कितना होगा? आप ए को बी कर सकते हैं। आप ए को सी कर सकते हैं। आप ए को डी कर सकते हैं। आप ए को ई सो दैट एंड सो ऑन। अब इसमें से कौन-कौन सा ट्रांसफॉर्मेशन वैलिड ट्रांसफॉर्मेशन है? मतलब कि कौन-कौन सा ट्रांसफॉर्मेशन ऐसा है जिसमें आप ए को कुछ ऐसा बना रहे हैं जो कि एरे में है। तो एक ट्रांसफॉर्मेशन तो देखिए ये हो गया सी वाला। C आपके एरे में है। अगेन ए को जब आप शुरू किए थे तो आपका वैल्यू कितना था? एक।",
+      "source": "caption",
+      "english_text": "It is only 26. 26000 will not change. How much will it be? You can turn A into B. You can turn A into C. You can do A to D. You A to E so that and so on. Now which of these transformations is a valid transformation? Meaning what are the transformations in which you are making A something that is in the array. So see a transformation, this one has happened. C is in your array. What was your value when you started Again A? One."
+    },
+    {
+      "start_time": 592.399,
+      "end_time": 625.829,
+      "text": "जब आप बिगिन से शुरू करते हैं तो आप एक पे रहते हैं। जब आप C पे आए तो C का वैल्यू कितना हो जाएगा? जितना भी A का वैल्यू था उससे एक ज्यादा। मतलब C का वैल्यू कितना हो जाएगा? दो हो जाएगा। वेरी गुड। ऐसे आप बदलते जाइए। आपको क्या-क्या मिलेगा? देखिए एक तो और e मिल गया। इसका भी वैल्यू हो गया दो। और बदलेंगे और बदलेंगे। समवेयर अलोंग द लाइन जाके q बनेगा। फिर एस बनेगा। फिर जाके y बनेगा और लास्ट में z भी बनेगा। आपको क्या मिला? इसका भी वैल्यू टू। इसका भी वैल्यू टू। इसका भी वैल्यू टू। इसका भी वैल्यू टू। ठीक है? मतलब a को",
+      "source": "caption",
+      "english_text": "When you start from the beginning you are on one. When you come to C, what will be the value of C? One more than whatever the value of A was. Meaning, what will be the value of C? It will be two. very good. You keep changing like this. What will you get? Look, one more e has been found. Give this also its value. And will change and change. Somewhere along the line it will become q. Then S will be formed. Then y will be formed and finally z will also be formed. What have you got? Its value is also two. Its value is also two. Its value is also two. Its value is also two. Ok? means to a"
+    },
+    {
+      "start_time": 625.839,
+      "end_time": 658.63,
+      "text": "जब आप कन्वर्ट किए तो ऑलदो आपके पास 26 पॉसिबिलिटी था। लेकिन उस 26 में से आपके एरे में क्या-क्या था? आपके एरे में ये छह चीजें था। तो आप A को कन्वर्ट करके ये बना दिए। अब अगला साइकिल शुरू कीजिए। अगला साइकिल शुरू कीजिए। फॉर एग्जांपल अब आप C को कन्वर्ट कर सकते हैं। लेकिन देखिए C को कन्वर्ट करेंगे तो C भी A, B, डी, ई, ई, एफ सब बन जाएगा। लेकिन वो सब ऑलरेडी हो चुका है। वो सब ऑलरेडी हो चुका है। करते करते आप कहां पहुंचेंगे? y पे। लेकिन आपको y पे पता चलेगा कि मेरा y इक्वल इक्वल टू n है। तो आप क्या रिटर्न कर देंगे? वैल्यू",
+      "source": "caption",
+      "english_text": "When you converted you already had 26 possibilities. But out of those 26, what was in your array? There were these six things in your array. So you converted A and made it this. Now start the next cycle. Start the next cycle. For example now you can convert C. But see, if you convert C then C will also become A, B, D, E, E, F. But all that is already done. All that is already done. Where will you reach by doing this? y pe. But you'll find on y that my y is equal to n. So what will you return? value"
+    },
+    {
+      "start_time": 658.64,
+      "end_time": 692.71,
+      "text": "इज़ इक्वल टू टू रिटर्न कर देंगे। मतलब दो स्टेप में आप अपने ए को अपने वाई में बना सकते हैं। मतलब अपने बिगिन को आप अपने उसमें बना सकते हैं। तो ये तो एक लेटर का था। ये तो बहुत इजी लग रहा है। दो लेटर में भी देख लीजिए। दो लेटर में देखिए क्या होता है। मान लीजिए आपका एरे ये है। आपका एरे ये है। AB और ये हो गया आपका DC और ये हो गया BC। ठीक है? आपका बिगिन वाला शब्द जो है ना वो आपको AB दिया हुआ है। वेरी गुड है। आपका एंड वाला शब्द आपको DC दिया हुआ है। समझ में आती है बात? सबसे पहले तो दोनों को देख लीजिए। क्या AB आपके एरे में है? हां,",
+      "source": "caption",
+      "english_text": "Will return is equal to two. Meaning, in two steps you can make your A into your Y. Meaning, you can make your beginning in it. So this was from a letter. This looks very easy. Look at the two letters also. Let's see what happens in two letters. Suppose your array is this. This is your array. AB and this becomes your DC and this becomes BC. Ok? Your beginning word is given to you as AB. Very good. Your ending word has been given to you by DC. Do you understand? First of all, look at both of them. Is AB in your array? yes,"
+    },
+    {
+      "start_time": 692.72,
+      "end_time": 727.509,
+      "text": "है। नहीं भी होता तो ठीक था। क्या डीसी आपके एरे में है? हां, डीसी भी आपके एरे में है। बदलना शुरू कीजिए। बदलना शुरू कीजिए। देखिए ए बी ए बी में दो लेटर है। दो लेटर है। आप दोनों लेटर को 26 26 तरीके से कन्वर्ट कर सकते हैं। मतलब कि सबसे पहले तो आप पहले लेटर को 26 तरीके से कर सकते हैं चेंज। उसके बाद पहले लेटर को सेम रख के दूसरे लेटर को 26 तरीके से कर सकते हैं। मतलब कि अगर आप इसका परम्यूटेशन कॉम्बिनेशन करने लगेंगे ना तो देखिए ए बी सबसे पहले तो ये क्या बनेगा? बी बी बनेगा, सी बी बनेगा, डी बी बनेगा, ई बी बनेगा, एफ",
+      "source": "caption",
+      "english_text": "Is. Even if it didn't happen, it was okay. Is DC in your array? Yes, DC is also in your array. Start changing. Start changing. See, there are two letters in ABAB. There are two letters. You can convert both letters in 26 26 ways. Meaning that first of all you can change the first letter in 26 ways. After that, by keeping the first letter the same, the second letter can be formed in 26 ways. Meaning that if you start doing its permutation combination then see A B, first of all what will it become? B becomes B, C becomes B, D becomes B, E becomes B, F."
+    },
+    {
+      "start_time": 727.519,
+      "end_time": 760.629,
+      "text": "बी बनेगा। मतलब कि दूसरे लेटर को सेम करके पहले लेटर को सारा में बदलिए। मतलब ए को छोड़ के बाकी 25 लेटर यहां पे हो गया। उसके बाद पहले लेटर को सेम छोड़ दीजिए। पहले लेटर को सेम छोड़ दीजिए और दूसरे लेटर को बदलना शुरू कीजिए। मतलब कि ऐसा इसको बी है तो ये ए बन सकता है, सी बन सकता है, डी बन सकता है, ई बन सकता है, एफ बन सकता है। ऐसे करके आपके पास बहुत सारा परम्यूटेशन कॉम्बिनेशन बनेगा। ठीक है? अब इन परम्यूटेशन कॉम्बिनेशन में से आप देखेंगे ना कि सिर्फ ये वाला बी सी आपके एरे में है। ठीक है? AB को कन्वर्ट करके",
+      "source": "caption",
+      "english_text": "Will become B. Meaning, change the first letter to Sara by changing the second letter to Same. Meaning, except A, the remaining 25 letters are here. After that leave the first letter the same. Leave the first letter the same and start changing the second letter. Meaning if it is B then it can become A, it can become C, it can become D, it can become E, it can become F. By doing this you will have a lot of permutation combinations. Ok? Now among these permutation combinations you will see that only this one BC is in your array. Ok? By converting AB"
+    },
+    {
+      "start_time": 760.639,
+      "end_time": 787.509,
+      "text": "आप DC तो बना नहीं सकते हैं। AB को कन्वर्ट करके आप DC तो बना नहीं पाएंगे। क्यों नहीं बना पाएंगे? क्योंकि इसमें देखिए ए चेंज हो के डी बना है। बी चेंज हो के सी बना है। दो लेटर एक साथ चेंज नहीं करना है। आप एक लेटर चेंज कर सकते हैं अपने हिसाब से। मतलब जो भी आप चॉइस लेंगे ना उसमें सिर्फ एक लेटर चेंज होगा। अगर ab है तो ab ना ab क्या बन सकता है? अच्छा ab bc भी नहीं बन सकता है उस हिसाब से। तो bc भी नहीं बन सकता। इसको हम बदल देते हैं।",
+      "source": "caption",
+      "english_text": "You cannot create DC. You will not be able to make DC by converting AB. Why can't you make it? Because see in this A has changed and D has become. B is changed to C. Do not change two letters together. You can change one letter as per your choice. Meaning, whatever choice you take, there will be only one letter change in it. If ab is there then what can become ab na ab? Well, even ab and bc cannot be formed in that manner. So bc also cannot be formed. Let us change this."
+    },
+    {
+      "start_time": 787.519,
+      "end_time": 820.949,
+      "text": "इसको हम चेंज करके क्या लिख देते हैं? ab को ac लिख देते हैं। तो क्या ab ac बन सकता है? बिल्कुल बन सकता है। क्यों? A आपका सेम है, B आपका C बन गया। तो जब आप ये करेंगे तो आपको लगेगा कि AB चेंज हो के AC बन गया है। किस वैल्यू के साथ? आप शुरू किए थे वैल्यू वन के साथ। AC किस वैल्यू के साथ बना? वैल्यू टू के साथ। अब आप सेम चीज़ AC पे करेंगे। मतलब AC को भी इधर-उधर करके चेंज करने का कोशिश कीजिए। अब आपको पता चलेगा कि AC चेंज हो के क्या बन सकता है? डीसी बन सकता है। क्यों? C और C सेम रहेगा। A कभी ना कभी चेंज हो के तो D पे",
+      "source": "caption",
+      "english_text": "What do we write after changing this? Let's write ab as ac. So can ab become ac? Absolutely can be made. Why? A is your bean, B becomes your C. So when you do this, you will feel that AB has changed to AC. With what value? You started with value one. With which value was AC made? With value to. Now you will do the same thing on AC. Meaning, try to change the AC by moving it here and there. Now you will know what can happen after changing the AC? Can become DC. Why? C and C will remain the same. If A changes at some point, then on D."
+    },
+    {
+      "start_time": 820.959,
+      "end_time": 854.15,
+      "text": "जाएगा ही तो आपको DC मिल जाएगा। किस वैल्यू के साथ? वैल्यू इज इक्वल टू 3 के साथ। जब आप डीसी पे आएंगे तो आपको पता चलेगा कि भैया यही तो मेरा एंड था। यही तो मेरा एंड था। तो आप क्या रिटर्न कर देंगे? वैल्यू इज़ इक्वल टू थ्री। सेम यही काम आपको करना है। ये जो ब्रूट फोर्स एप्रोच आपको देखने में लग रहा है ना ये ब्रूट फ़ोर्स एप्रोच नहीं है। ये बीएफएस अप्रोच है। ये कौन सा एप्रोच है? बीएफएस एप्रोच है। मतलब कि आप क्या करते हैं? आप शुरू करते हैं बिगिन के साथ। अपने बिगिन वाले वर्ड के साथ। उसका वैल्यू आप बोलते हैं कि इसका वैल्यू है वन। आप बिगिन को जितने",
+      "source": "caption",
+      "english_text": "If you go, you will get DC. With what value? With value is equal to 3. When you come to DC, you will know that brother, this was my end. This was my end. So what will you return? Value is equal to three. Same thing you have to do. This brute force approach that you are seeing is not a brute force approach. This is BFS approach. Which approach is this? BFS approach. I mean, what do you do? You start with the beginning. With your beginning word. Its value: You say that its value is one. you win the beginning"
+    },
+    {
+      "start_time": 854.16,
+      "end_time": 887.91,
+      "text": "तरीके से हो सकता है उतने तरीके से चेंज करते हैं। मतलब बिगिन के हर एक लेटर को उठाते हैं। हर एक लेटर के लिए आपके पास 25 पॉसिबिलिटी 26 नहीं 25 क्योंकि अगर मान लीजिए ए बी है तो आप ए को अगर पकड़ लिए कि हम ए वाले को चेंज करेंगे तो ए को ए में तो नहीं बदलेंगे ना। ए को बाकि 25 अल्फाबेट बनाया जा सकता है। तो बिगिन के हर एक लेटर के लिए आपके पास 25 पॉसिबिलिटी बनेगा। 25 पॉसिबिलिटी बनेगा। 25 पॉसिबिलिटी बनेगा। कितना बनेगा? 25 पॉसिबिलिटी। ये सारे पॉसिबिलिटी में से जो जो चीज आपके एरे में है, जो जो चीज आपके",
+      "source": "caption",
+      "english_text": "Let's change it in as many ways as possible. Meaning, each letter of the beginning is picked up. For each letter you have 25 possibilities, not 26, 25 because if suppose A is B, then if you hold A that we will change A, then A will not be changed to A. A can be made into the remaining 25 alphabets. So for each letter of the beginning you will have 25 possibilities. 25 possibilities will be created. 25 possibilities will be created. How much will it cost? 25 possibilities. Out of all these possibilities, whatever is in your array, whatever is in your"
+    },
+    {
+      "start_time": 887.92,
+      "end_time": 922.31,
+      "text": "एरे में है और अभी तक वो विजिटेड नहीं है। मतलब अभी तक वो हम लोग नहीं बना पाए थे। उनको आप क्या कर देंगे? वापस अपने क्यू में पुश कर देंगे। और क्योंकि बिगिन का वैल्यू वन था तो इन सारे 25 25 जितने भी होंगे ना इन सबका वैल्यू क्या होगा? टू होगा। इन सबका वैल्यू क्या हो जाएगा? टू हो जाएगा। क्योंकि अगर आप बिगिन वाले वर्ड से सिर्फ एक चीज चेंज करेंगे तो आपको ये सारे मिलने की पॉसिबिलिटी है। अब एक बार आपको वो मिल गया कि चलो बिगिन को चेंज किए हमको मान लीजिए कि ये 25-25 सब तो ऑब्वियसली नहीं मिलेगा। ये पांच वर्ड हमको मिल गया जो कि मेरे एरे में भी है। सेम",
+      "source": "caption",
+      "english_text": "It is in the array and has not been visited yet. Meaning, we had not been able to make it till now. What will you do to them? Will push it back to your queue. And since the value of begin was one, then all these 25 will be equal to 25, what will be the value of all of them? There will be two. What will be the value of all this? It will be two. Because if you change just one thing from the beginning word then you have the possibility of getting all these. Now once you have got that, let's change the beginning and let us accept that these 25-25 subs will obviously not be found. We found these five words which are also in my array. beans"
+    },
+    {
+      "start_time": 922.32,
+      "end_time": 955.59,
+      "text": "काम उन वर्ड में भी होगा। मतलब ये सारे 25 इधर-उधर इधर-उधर करके फैलेंगे। ये करते करते करते आपको क्या मिल जाएगा? आपको आपका एंड वर्ड मिल जाएगा। जैसे ही आपको एंड वर्ड मिलता है आप क्या करेंगे? रिटर्न वैल्यू कर देंगे। मतलब कि इतने वैल्यू के बाद हमको आपका एंड वर्ड मिल जाएगा। तो ये क्या है? ये क्या है? ये बीएफएस है। ये बीएफएस है। क्यों बीएफएस है? क्योंकि आप एक सोर्स से स्टार्ट किए थे। एक सोर्स से स्टार्ट किए थे। किससे? बिगिन वाले शब्द से। आप उस बिगिन वाले शब्द से कहां-कहां",
+      "source": "caption",
+      "english_text": "Work will be done in those words also. Meaning, all these 25 will be spread here and there. What will you get by doing this? You will get your end word. What will you do as soon as you get the end word? Will make return value. Meaning that after this value we will get your end word. So what is this? What is this? This is BFS. This is BFS. Why is BFS? Because you started from one source. Started from one source. With whom? From the beginning word. Where do you start with that beginning word?"
+    },
+    {
+      "start_time": 955.6,
+      "end_time": 986.069,
+      "text": "जा सकते हैं? सारे पॉसिबिलिटी देख लेते हैं। हम यहां, यहां, यहां, यहां सब जगह जा सकते हैं। उसमें से वैलिड कौन-कौन से हैं? जो वर्ड आपके एरे में ऑलरेडी पड़े हुए हैं। तो आप सोर्स पे आपका वैल्यू था वन। मतलब कि आपका डिस्टेंस था वन। उस सोर्स से जिस-जिस वैलिड वर्ड तक आप गए उन सबका वैल्यू क्या हो गया? वैल्यू प्लस वन मतलब वैल्यू टू बन गया। सेम काम अब इन सारे से दोहराइए। इन सारे से दोहराइए। कब तक? जब तक कि आपको एंड वाला वर्ड ना मिल जाए।",
+      "source": "caption",
+      "english_text": "can go? Let's look at all the possibilities. We can go here, here, here, here, everywhere. Which of them are valid? The words which are already present in your array. So your value at source was one. Meaning your distance was one. What was the value of all the valid words that you accessed from that source? Value plus one became value two. Now repeat the same thing with all these. Repeat with all of these. Till when? Until you find the ending word."
+    },
+    {
+      "start_time": 986.079,
+      "end_time": 1020.629,
+      "text": "जैसे ही आपको एंड वाला वर्ड मिलता है, आप क्या करेंगे? वैल्यू को रिटर्न कर देंगे। अगर अगर आपको एंड वाला वर्ड मिलता ही नहीं है तो ठीक है। मान लीजिए आप पूरा कोशिश किया आपको एंड वाला वर्ड मिला ही नहीं। इस एग्जांपल में ये ए बी सी डी वाले एग्जांपल में मान लीजिए आपका एंड वाला वर्ड कुछ और होता मतलब कुछ भी और होता ef होता और ये ef ऐसा भी होता। आप ef तक कुछ करके पहुंच ही नहीं सकते हैं। क्या रिटर्न करेंगे? ज़ीरो रिटर्न करेंगे। तो ये जो ग्राफ का क्वेश्चन है ना ये स्ट्रिंग का क्वेश्चन नहीं है। ये जो आपको देखने में ब्रूट फ़ लग रहा है ना कि ऐसा कैसे कर सकते हैं? कर सकते हैं। जब आप एक वर्ड और हर वर्ड का",
+      "source": "caption",
+      "english_text": "As soon as you get the word ending, what will you do? Will return the value. It is okay if you do not find the ending word. Suppose you tried your best but did not find the word ending. In this example, in the example of A B C D, suppose your ending word would have been something else, meaning anything else would have been ef and this ef would also have been like this. You cannot reach ef by doing anything. What will you return? Will return zero. So this is a question of graph, it is not a question of string. This looks like a brute to you, how can this be done? Can do. When you use a word and every word"
+    },
+    {
+      "start_time": 1020.639,
+      "end_time": 1054.549,
+      "text": "लेंथ कितना है? बहुत छोटा शायद 10 है। हर वर्ड का लेंथ 10 है। तो आप क्या करेंगे? हर वर्ड के लिए जितने कॉम्बिनेशन हो सकते हैं सबको देखेंगे। उनमें से एरे में कौन-कौन सा है? उसको ले लो और q में पुश कर दो। बीएफएस q से चलता है। q में पुश कर दो। किस वैल्यू के साथ? वैल्यू प्लस वन के साथ। करते करते करते आप एंड तक पहुंच जाएंगे। तो ये हम उम्मीद करते हैं कि ये बात आपको समझ में आए। जितना ये हार्ड क्वेश्चन दिखता है उतना हार्ड नहीं है। बिल्कुल हार्ड नहीं है। अब आपको हम इसका एल्गोरिदम समझाते हैं। आइए चलिए इसका एल्गोरिदम समझाएंगे और उसका कोड भी लिखेंगे। आगे बढ़ते हैं। तो देखिए इसका सूडो कोड या जो भी होता है इसका जो भी",
+      "source": "caption",
+      "english_text": "What is the length? Very small maybe 10. The length of each word is 10. So what will you do? We will see all the possible combinations for each word. Which of them is in the array? Take that and push it into q. BFS runs from q. Push in q. With what value? With value plus one. By doing this you will reach the end. So we hope that you understand this. This hard question is not as hard as it looks. Not hard at all. Now let us explain its algorithm to you. Let us explain its algorithm and also write its code. Let's move ahead. So look at its pseudo code or whatever it is."
+    },
+    {
+      "start_time": 1054.559,
+      "end_time": 1089.27,
+      "text": "एल्गोरिदम होगा क्या होगा? सबसे पहले तो आपको एक एरे दिया रहेगा। एरे क्या दिया रहेगा? अरे क्या हो जाता है? आपको एक वेक्टर ऑफ़ स्ट्रिंग दिया रहेगा। आपको एक वेक्टर ऑफ़ स्ट्रिंग ही तो दिया रहेगा ना एरे में। ये आपका वर्ड्स होगा। वर्ड्स वाला एरे। आपको दो शब्द और दिए रहेंगे। क्या-क्या? एक होगा आपका स्ट्रिंग बिगिन यस और एक होगा आपका स्ट्रिंग एंड ठीक है सबसे पहले तो एक बात याद रखिए ना कि कभी भी स्ट्रिंग का क्वेश्चन हो और आपको बार-बार ये कभी पता करना हो ना कि ये चीज एरन है कि नहीं है सबसे अच्छा होता है कि उसका एक हैशमैप बना के रख लीजिए। क्यों हम ये बात बोल रहे हैं? ये हमारा पूरा चीज किस पे टिका हुआ है कि आप जिस वर्ड पे",
+      "source": "caption",
+      "english_text": "What will happen to the algorithm? First of all you will be given an array. Hey, what will be given? hey what happens? You will be given a vector of strings. You will be given only one vector of strings in the array. This will be your words. Array with words. You will be given two more words. what-what? One will be your string start yes and one will be your string end. Okay, first of all remember one thing that whenever there is a question of string and you have to find out again and again whether this thing is array or not, it is best to create a hashmap of it. Why are we saying this? This whole thing of ours is based on the word you"
+    },
+    {
+      "start_time": 1089.28,
+      "end_time": 1123.029,
+      "text": "पहुंचे हैं, आप जिस वर्ड वाले कॉम्बिनेशन पे पहुंचे हैं, वो आपके एरे में है कि नहीं? अब एरे में सर्च करना मुश्किल होता है। आप एरे में कैसे बार-बार सर्च करेंगे ना तो ऑर्डर ऑफ़ एन हो जाएगा। सबसे पहले एक हैश मैप बना लीजिए। क्या हैश मैप बनाएंगे? अनऑर्डर्ड मैप। अनऑर्डर्ड मैप एक बनाएंगे। अभी हम कोड नहीं लिख रहे हैं। आपको बस बता रहे हैं कि करेंगे क्या उसमें? अनऑर्डर्ड मैप किस तरीके का? स्ट्रिंग और इंट तरीके का। सबसे पहले तो एरे के सारे शब्द उठा के इसमें डाल दीजिए। उसके बाद एक बहुत इंपॉर्टेंट बात चेक कीजिए। इफ बिगिन इज़ नॉट देयर। इफ बिगिन इज़ नॉट देयर।",
+      "source": "caption",
+      "english_text": "Have you reached, is the word combination you have reached in your array or not? Now it is difficult to search in the array. No matter how you search the array repeatedly, the order will be n. First of all create a hash map. Will we create a hash map? Unordered map. Will create an unordered map. We are not writing code right now. Just telling you what to do in it? What type of unordered map? Of string and int methods. First of all, select all the words from the array and put them in it. After that check one very important thing. If Begin Isn't There. If Begin Isn't There."
+    },
+    {
+      "start_time": 1123.039,
+      "end_time": 1157.75,
+      "text": "अगर बिगिन इसमें नहीं है तो इसमें डाल दीजिए। अगर इसमें नहीं है तो इसमें डाल दीजिए क्योंकि आपको बोला हुआ है कि अगर बिगिन नहीं है एरे में है ना तो ठीक है आप बिगिन से शुरुआत कर सकते हैं डाल दिया हैश मैप में अगर एंड इज नॉट फाउंड अगर एंड भी इस हैश मैप में नहीं मिला आपको तो क्या करना है आपको सीधा-सीधा रिटर्न ज़ीरो कर देना है अगर एंड ही नहीं मिला है रिटर्न ज़ीरो कर दीजिए हो गया हैश मैप बन गया वेरी गुड अब अपना बीएफएस शुरू कीजिए बीएफएस शुरू करने के लिए हम लोग एक q बनाएंगे क्यू किस तरीके का बनाएंगे पेअर ऑफ स्ट्रिंग िंग पेयर ऑफ स्ट्रिंग और इंट",
+      "source": "caption",
+      "english_text": "If Begin is not in it then put it in it. If it is not there then put it in it because you have been told that if the beginning is not there in the array then it is fine, you can start from the beginning, put it in the hash map, if the end is not found, if the end is also not found in this hash map, then what do you have to do, you have to simply return zero, if the end is not found, return zero, done, hash map is created, very good, now start your BFS to start the BFS. We will create a q for Q. What way will we create a pair of string and int?"
+    },
+    {
+      "start_time": 1157.76,
+      "end_time": 1191.51,
+      "text": "क्यों ये पेयर बनाए? इसमें आप क्या स्टोर करेंगे? स्ट्रिंग में आपका वर्ड स्टोर होगा। मतलब आप शुरू किससे कर रहे हैं? बिगिन से। बिगिन स्टोर होगा। ये जो इंट है ये आपके वैल्यू के लिए है। बिगिन किस वैल्यू के साथ शुरू होता है? एक के साथ। तो आप सबसे पहले इसमें क्या डालेंगे? बिगिन और वन। बिगिन और वन। ध्यान दीजिएगा ज़ीरो से मत डालिएगा। वन से क्योंकि क्वेश्चन में लिखा हुआ है ऐसा। वन से डालें। इसके साथ ही इरेज़ कर दीजिए बिगिन को। ये हम क्यों कर रहे हैं? हम लोग इस अनऑर्डर्ड मैप को ही इस हैश मैप को ही ना विजिटेड की तरह भी यूज़ करेंगे। किसकी तरह यूज़ करेंगे? विजिटेड की तरह यूज़ करेंगे।",
+      "source": "caption",
+      "english_text": "Why make this pair? What will you store in it? Your word will be stored in the string. I mean what are you starting with? From the beginning. There will be a Begin Store. This int is for your value. What value does begin begin with? with one. So what do you put in it first? Biggin and Forest. Biggin and Forest. Pay attention, do not enter with zero. From one because it is written like this in the question. Insert from the forest. Also erase the beginning. Why are we doing this? We will use this unordered map as not only this hash map but also as visited. How will you use it? Will use as visited."
+    },
+    {
+      "start_time": 1191.52,
+      "end_time": 1224.789,
+      "text": "क्यों? मान लीजिए मान लीजिए आप AB से AC बनाए। आप AB से AC बनाए। ठीक है? ऐसा भी आप कर सकते थे। आप AB से कुछ और बनाए हो। आप AC यहां पे बना लिए। मतलब इसका वैल्यू तो वन था। इसका वैल्यू हो जाएगा टू। ठीक है? आप AB से एक और चीज़ बनाए। आप AB से क्या बनाएं? अ क्या बना सकते हैं आप जो वापस जाके वापस जाके ए सी बने तो आप ना सी को यहां पे सेम रखिए अच्छा ये तो ए सी हो जाएगा जी एबी से और क्या बनाया जा सकता है",
+      "source": "caption",
+      "english_text": "Why? Suppose you make AC from AB. You make AC from AB. Ok? You could have done this also. You have made something else from AB. You can make AC here. Meaning its value was one. Its value will be two. Ok? You make one more thing from AB. What do you make from AB? What can you make of A? If you go back and make it A-C, then you can put the same C here, well, it will become A-C. What else can be made from A-B?"
+    },
+    {
+      "start_time": 1224.799,
+      "end_time": 1257.83,
+      "text": "अ [हंसी] चलिए ठीक है विजिटेड एरे का हम एग्जांपल नहीं सोच पा रहे लेकिन विजिटेड एरे आपको क्या बताता है जब एक वर्ड ऑलरेडी हो चुका है एक वर्ड तक आप ऑलरेडी पहुंच चुके हैं उसको ऑलरेडी क्यू में डाल चुके हैं बार-बार उसको मत डालिए बार-बार उसको मत डालिए है। इसीलिए हम लोग जब बिगिन को डाले तो हम लोग बिगिन को#शप से उड़ा दिए। अब बीएफएस शुरू कीजिए। कैसे? जब तक कि आपका q एम्प्टी नहीं हो। जब तक कि आपका q एम्प्टी नहीं हो। ठीक है? अच्छी बात है। एक पेयर को निकालिए। एक पेयर को हम लोग निकालेंगे यहां से q से और q से उसको पॉप कर देंगे।",
+      "source": "caption",
+      "english_text": "A [laughter] Okay, we are not able to think of an example of a visited array, but what does a visited array tell you when a word is already there? You have already reached a word, you have put it in the already queue, don't put it again and again, don't put it again and again. That's why when we put the beginning, we cursed the beginning. Now start BFS. How? Unless your q is empty. Unless your q is empty. Ok? It's a good thing. Pick out a pair. We will take out a pair from here with q and pop it with q."
+    },
+    {
+      "start_time": 1257.84,
+      "end_time": 1291.75,
+      "text": "अब आता है इंपॉर्टेंट बात। अब आता है इंपॉर्टेंट बात। आपका जो पेयर आया है उसमें दो चीजें हैं। सबसे पहले तो आपका एक स्ट्रिंग s = p डॉट फर्स्ट है। मतलब जो आप वर्ड निकाले हैं मान लीजिए बिगिन निकाले हैं। ठीक है? और आपका एक इंट वेल इक्वल टू p डॉट सेकंड। उसका क्या वैल्यू है? सबसे पहले तो आपको चेक कर लेना चाहिए कि अगर मेरा s इक्वल इक्वल टू एंड है। मतलब आप एंड तक पहुंच गए। कुछ मत करिए। कंफर्टेबल हो के क्या रिटर्न कर दीजिए? वेल अपना रिटर्न कर दीजिए। अगर आप एंड तक पहुंच गए तो आ गए वहां तक वेल रिटर्न कर दीजिए। अगर ऐसा नहीं है। अगर ऐसा नहीं है तो आपको",
+      "source": "caption",
+      "english_text": "Now comes the important thing. Now comes the important thing. The pair you received contains two things. First of all you have a string s = p dot first. Meaning, whatever word you have come out, assume that you have come out with the beginning. Ok? And your one int well equals two p dot seconds. What is its value? First of all you should check if my s is equal to end. Meaning you have reached the end. Don't do anything. What should I return after being comfortable? Well please make your return. If you reach the end then return well till you reach there. If it is not so. If it is not so then you"
+    },
+    {
+      "start_time": 1291.76,
+      "end_time": 1326.31,
+      "text": "क्या करना है? देखिए अब आपको इस एस में ना जो आप वर्ड निकाले हैं इसके हर एक लेटर को इसके हर एक लेटर को पूरा ए टू जेड चेंज करना है। पूरा ए टू जेड चेंज करके हर एक कॉम्बिनेशन देखना है। मतलब कि मान लीजिए आपका एस ना ये है। आपका एस है ए और बी। ठीक है? दो लेटर का वर्ड है। आपको इसके हर एक लेटर को सारा अल्फाबेट में बदलना है। तो इसके लिए हम लोग क्या करेंगे? सिंपल सा लूप लिखेंगे। क्या लूप लिखेंगे? देखिए फॉर i = 0 i &lt; &lt; s डॉट साइज i &lt; s डॉट साइज i",
+      "source": "caption",
+      "english_text": "What to do? See, now you have to change each and every letter of the word that you have derived in this S, from A to Z. You have to change the complete A to Z and see each combination. Meaning that suppose your S is this. Your S is A and B. Ok? It is a two letter word. You have to convert each letter into the entire alphabet. So what should we do for this? Will write a simple loop. Will you write a loop? See for i = 0 i < < s dot size i < s dot size i"
+    },
+    {
+      "start_time": 1326.32,
+      "end_time": 1357.51,
+      "text": "प्लस प्लस ठीक है समझ में आती है बात आपको पता चल रहा है ना कि i क्या है ठीक है उसके बाद कैर c = कैर c = s ऑफ i s ऑफ आई ठीक है इससे क्या हुआ अभी आपका i क्या है ज़ीरो आपका c क्या बन गया a c बन गया a c को आप करके रख लिए अब इस लेटर को अब इस वाले लेटर को पूरा चेंज कीजिए। पूरा ए बी सी डी एफ जी एच आई जे के जो भी होता है सब चेंज कीजिए। इसके लिए क्या करेंगे? फॉर j",
+      "source": "caption",
+      "english_text": "Plus Plus Okay, it makes sense, you are getting to know what is i Okay, after that care c = care c = s off i s off i Okay, what happened with this, now what is your i, zero is your c, what has become a c has become a c, you have kept this letter, now change this letter completely. Complete A B C D F G H I J K. Whatever happens, change everything. What will you do for this? for j"
+    },
+    {
+      "start_time": 1357.52,
+      "end_time": 1389.83,
+      "text": "= 0 सॉरी j = 0 नहीं आपको लोअर केस में चेंज करना है ना? j = 97 j &lt; &lt; = 122 j + ये क्या बताता है आपको? ये पूरा स्मॉलर एबीसीडी का एस्स की होता है। 97 से 122 तक। अब अब सबसे पहले सबसे पहले इफ C इक्वल इक्वल टू जे मतलब कि जो लेटर आपका था जो ए था आपका जे अभी ए पे है तो ए को ए पे चेंज करने से तो कोई फायदा नहीं है ना अगर आप ए को ए में चेंज कर देंगे तो क्या चेंज हुआ कुछ मत कीजिए अगर ऐसा है तो कंटिन्यू कर",
+      "source": "caption",
+      "english_text": "= 0 Sorry j = 0 No you have to change to lower case right? j = 97 j < < = 122 j + What does this tell you? This entire smaller ABCD is composed of ess keys. From 97 to 122. Now, first of all, if C is equal to J, it means that the letter which was yours, which was A, your J is now on A, then there is no benefit in changing A to A. If you change A to A, then what has changed? Do nothing. If so, then continue."
+    },
+    {
+      "start_time": 1389.84,
+      "end_time": 1422.23,
+      "text": "जाइए लेकिन बाकी 25 लेटर्स के लिए आपको इसको चेंज करना पड़ेगा तो आप क्या करेंगे एस आई इक्वल टू जे एस आई को आप उठा के जे कर दिए मतलब आपका अगर एस आई यहां पे ए था ना तो अब आपका एस क्या बन चुका है? ए को आप उठा के मान लीजिए बी कर दिए तो आपका एस अब बी बी बन चुका है। तो देखिए एक लेटर चेंज हुआ बी बी बना। अब चेक कीजिए कि क्या ये वैलिड ट्रांसफॉर्मेशन है? इफ अगर आपके हैश मैप में एस है। अगर आपके हैश मैप में एस है। ध्यान दीजिएगा ये एस जो है",
+      "source": "caption",
+      "english_text": "Go, but for the remaining 25 letters, you will have to change it, so what will you do? S I is equal to J, you have changed S I to J, meaning if S I was here on A, then what has your S become now? Suppose if you change A to B then your S has now become BB. So see one letter changed to become BB. Now check whether this is a valid transformation? If your hash map contains s. If your hash map contains s. Pay attention to this S which is"
+    },
+    {
+      "start_time": 1422.24,
+      "end_time": 1456.71,
+      "text": "ना अब चेंज हो चुका है। एस अब चेंज हो चुका है। अगर आपके हैश मैप में एस है। मतलब अगर आपके हैश मैप में बीबी है तो क्या कीजिए? इसको Q में पुश कर दीजिए। इसको Q में पुश कर दीजिए। S और किसके साथ? वैल्यू +1 के साथ। +1 के साथ। और इसको अब हैश मैप से मिटा दीजिए। इसको अब हैश मैप से मिटा दीजिए। हो गया एस का। अब अपना जे वाला लूप बंद कर दीजिए। अभी आप क्या किए? अभी आप क्या किए? अभी ना आप अभी आपका i = 0 था। मतलब आप पहला लेटर को पकड़े और इस पे सब करके देख लिए। मतलब ए को पहले बी बनाए,",
+      "source": "caption",
+      "english_text": "No, it has changed now. S has now changed. If your hash map contains s. Meaning, what to do if there is BB in your hash map? Push it into Q. Push it into Q. S and with whom? With value +1. With +1. And now erase it from the hash map. Now erase it from the hash map. S's done. Now close your J loop. What did you do just now? What did you do just now? Now you just had i = 0. Meaning, you hold the first letter and try everything on it. Meaning first turn A into B,"
+    },
+    {
+      "start_time": 1456.72,
+      "end_time": 1489.669,
+      "text": "सी बनाए। मतलब BB, CB, DB, EB, FB सब बना दिए। जब आप यहां से निकलेंगे, जब आप यहां से निकलेंगे ना यहां पे आएंगे। जब आप इस जे लूप के ये जे लूप का है। जब आप यहां पे आएंगे तो आपका एस क्या बन चुका होगा? ZB। आपका एस क्या बन चुका होगा? ZB। अब काम हो चुका है। ZB अंदर जाना होगा तो चला गया। नहीं हुआ। लेकिन अब आपको S को वापस पहले जैसा बनाना है। मतलब कि आपको क्या करना है? है si = c जो आपका सी था जो आपका सी था जो आपका",
+      "source": "caption",
+      "english_text": "Make C. Meaning BB, CB, DB, EB, FB all were made. When you leave here, when you leave here, you will not come here. When you have this J loop of this J loop. What will your S have become when you come here? Z.B. What would your S have become? Z.B. Now the work is done. ZB had to go inside so went. Didn't happen. But now you have to make S back as before. Meaning what do you have to do? is si = c which was your si which was your si which was your"
+    },
+    {
+      "start_time": 1489.679,
+      "end_time": 1517.029,
+      "text": "ओरिजिनल लेटर था आप उसको वापस बना दिए मतलब आपने एस को वापस ए बी बना दिए क्यों क्योंकि अगले बार अब हम लोग को इस वाले दूसरे वाले लेटर पे फोकस करना है अगर आप इसको zb पे छोड़ देते तो आप फिर zb से शुरू कर देते फिर आप तो z ए और z बी और zc ये करने लगते एस ओरिजिनल में ये नहीं था ओरिजिनल एस ए बी था आप ए पे कंसंट्रेट करके ए को सारे तरीके से चेंज करके देख लिए सारा परम्यूटेशन कॉम्बिनेशन हो गया।",
+      "source": "caption",
+      "english_text": "The original letter was there, you changed it back, meaning you changed S back to AB, why because next time now we have to focus on this other letter, if you had left it at zb, then you would have started again from zb, then you would have started doing z a, z b and zc. This was not there in the original S. The original was S A B. You concentrated on A and changed A in all the ways and tried all the permutation combinations."
+    },
+    {
+      "start_time": 1517.039,
+      "end_time": 1549.909,
+      "text": "जब आप ये हो गया जब पहले लेटर का काम हो गया उसको वापस रिवर्ट कर दीजिए। मतलब एस को एस को वापस ए बी यहां पे बना दिए ताकि अगले लेटर पे अच्छे से फोकस हो सके। अब क्या होगा? अगले लेटर का मतलब ए बी है। अब आप बी वाले पोजीशन को पकड़ेंगे। सेकंड लेटर को इसको आप क्या बनाएंगे? ए ए, ए सी, ए डी, A इ ए, A एफ, Z ऐसा करके बनाते जाएंगे। तो ये जो चीज है ये जो चीज है ये क्या करता है? हर एक लेटर को उठाता है। हर एक लेटर पे आपका 26 पॉसिबिलिटी या 25",
+      "source": "caption",
+      "english_text": "When you are done with the first letter, revert it. Meaning, turn S back into A B here so that the next letter can be focused better. What will happen now? The next letter means A B. Now you will hold position B. What will you make of this second letter? A A, A C, A D, A E A, A F, Z will be created by doing this. So whatever this thing is, what does this thing do? Each one picks up the letter. You have 26 possibilities or 25 on each letter."
+    },
+    {
+      "start_time": 1549.919,
+      "end_time": 1575.909,
+      "text": "पॉसिबिलिटी जो भी है वो लगाता है। हर एक पॉसिबिलिटी को चेक करता है कि भैया आप है कि नहीं हैश मैप में। अगर आप हैं तो आप एक वैलिड है। आपको ये क्यू में पुश करेगा और हैश मैप से उसको इरेस कर देगा। तो उतना कुछ रॉकेट साइंस नहीं है। लेकिन थोड़ा कंफ्यूजिंग हो सकता है। इसीलिए हम इतना इस पे वो दे रहे हैं। ठीक है? अगर आपका क्यू एम्प्टी हो जाता है। आप बहुत कुछ करके देख लिया। आपका q एम्प्टी हो गया। मतलब कि आपको ये एंड नहीं मिल पाया। अगर आपको ये एंड नहीं मिल पाया तो आप क्या करेंगे?",
+      "source": "caption",
+      "english_text": "Whatever is the possibility, he applies it. Checks every possibility whether you are there or not in the hash map. If you are then you are a valid one. It will push it to your queue and erase it from the hash map. So it's not that much rocket science. But it can be a little confusing. That's why we are giving so much on this. Ok? If your queue becomes empty. You have tried many things. Your q is empty. Meaning that you could not get this ending. What will you do if you don't get this ending?"
+    },
+    {
+      "start_time": 1575.919,
+      "end_time": 1607.11,
+      "text": "लास्ट में जाके रिटर्न ज़ीरो कर दीजिए। अगर आपको एंड नहीं मिला मतलब एंड तक आप नहीं जा सकते। नहीं जा सकते हैं तो ज़ीरो रिटर्न कर दीजिए। सिंपल है। ठीक है? तो इतना कुछ हार्ड इसमें है नहीं। इसका कोड यही रहेगा। इसका कोड हम आइए लिखें। तो हमको थोड़ा खांसी भी हो गया। तो हमको थोड़ा बोलने में चिल्लाने में दिक्कत होता है। अ ठीक है? इसका आइए कोड लिखें। इंट क्या होगा? सबसे पहले n = वर्ड्स डॉट साइज ध्यान दीजिएगा आपको n वर्ड्स मिला रहेगा बिगिन मिला रहेगा और एंड मिला",
+      "source": "caption",
+      "english_text": "Go to the last and make the return zero. If you don't find the end, it means you can't go till the end. If you can't go then return zero. It is simple. Ok? So there is nothing that hard in it. Its code will remain the same. Let us write its code. So we coughed a little too. So we face difficulty in speaking or shouting. A. Okay? Let's write its code. What will be int? First of all n = words dot size, note that you will get n words, start will be given and end will be given."
+    },
+    {
+      "start_time": 1607.12,
+      "end_time": 1638.63,
+      "text": "रहेगा ठीक है n = वर्ड्स डॉट साइज इंट आई एक हैश मैप बना लीजिए अपने लिए अनऑर्डर्ड मैप किस तरीके का स्ट्रिंग और स्ट्रिंग और इंट बना सकते हैं स्ट्रिंग और बुलियन बना सकते हैं जो भी आपको मर्जी करे सबसे पहले तो सबको उठा के i = 0 i &lt; n i + सबको उठा के इसमें डाल दीजिए। हैश मैप में डाल दीजिए। वर्ड्स i = 1 वन का मतलब कि है बस है। सबसे पहले तो देख लीजिए कि इफ f डॉट",
+      "source": "caption",
+      "english_text": "It will be okay n = words dot size int i Create a hash map for yourself What kind of unordered map can you create string and string and int You can create string and boolean Whatever you want, first of all pick all i = 0 i < n i + pick all and put them in it. Put it in the hash map. Words i = 1 one means that is is just. First of all, see that if f dot"
+    },
+    {
+      "start_time": 1638.64,
+      "end_time": 1671.269,
+      "text": "फाइंड f डॉट फाइंड बिगिन बिगिन इक्वल इक्वल टू f डॉट एंड ये सिंटेक्स कहां से आया है? सिंटेक्स याद कीजिए। अ हैशमप वाले वीडियो में सिंटेक्स था। ये सर्च का सिंटेक्स होता है। अगर बिगिन नहीं है। इक्वल इक्वल टू f ऑफ़ एंड मतलब नहीं मिला। अगर नहीं मिला तो डाल दीजिए। उसमें कोई दिक्कत नहीं है। नहीं मिला तो डाल दीजिए। ये क्या हो गया? मतलब बिगिन एरे में नहीं मिला कोई दिक्कत नहीं है। लेकिन अगर f डॉट फाइंड f डॉट फाइंड एंड इक्वल इक्वल टू f डॉट एंड मतलब एंड ही नहीं मिला आपके#श मैप में तुरंत रिटर्न ज़ीरो कीजिए।",
+      "source": "caption",
+      "english_text": "Find f dot Find begin begin equal equal to f dot And where does this syntax come from? Memorize the syntax. There was a syntax in the video with a hashmap. This is the syntax of search. If there is no beginning. Equals equals to f off and meaning not found. If not found then add it. There is no problem in that. If not found then put it. What has happened? Meaning not found in begin array, there is no problem. But if f dot find f dot find end is equal to f dot end means end is not found then immediately return zero in your #sh map."
+    },
+    {
+      "start_time": 1671.279,
+      "end_time": 1696.549,
+      "text": "बिना समय गवाए हुए ज़ीरो रिटर्न कर दीजिए। ठीक है? अब शुरू कीजिए। एक Q बनाइए। किस तरीके का? पेयर ऑफ़ स्ट्रिंग एंड इंट। पेयर ऑफ़ स्ट्रिंग एंड इंट। इसको किससे शुरू करना है? इसमें बिगिन पुश कीजिए। बिगिन और जीरो पुश कीजिए। f डॉट इरेज बिगिन एफ से बिगिन को हटा दीजिए। अब f से बिगिन को हटा दीजिए। बिगिन का काम हो गया।",
+      "source": "caption",
+      "english_text": "Return zero without wasting any time. Ok? Start now. Make a Q. Which way? Pair of string and int. Pair of string and int. What to start with? Push Begin in it. Begin and push zero. f dot erase begin Remove the beginning from f. Now remove the beginning from f. Begin work is done."
+    },
+    {
+      "start_time": 1696.559,
+      "end_time": 1729.35,
+      "text": "वो q में चला गया। अपना बीएफएस शुरू कीजिए। वाइल q डॉट नॉट एम्प्टी। सेम बीएफएस जैसा बीएफएस होता है वैसा ही होगा। ये इसमें बस एक ही दिक्कत है ना। एक ही ट्रिक है ना कि जो आप ग्राफ में एडजेसेंट के साथ करते थे। ग्राफ में आप नेबर के साथ करते थे। आप एक तरीके से अपना नेबर ही खोज रहे हैं बार-बार। जब आप एक लेटर को बदल के दूसरा वर्ड बनाते हैं ना तो वो एक तरीके से आपका नेबर ही है। इसमें बस ये है कि वो नेबर आपके एरे में है कि नहीं। अगर एरे में है तो पुश कीजिए। ठीक है? आइए सबसे पहले तो वो पेयर को निकालिए। सबसे पहले पेयर को",
+      "source": "caption",
+      "english_text": "He went into q. Start your BFS. While q is not empty. The same BFS will be the same as BFS. That's the only problem with it, isn't it? There is only one trick which you used to do with adjacencies in the graph. In the graph you used to do with Neighbor. In a way, you are searching for your neighbor again and again. When you change one letter to make another word, then in a way he is your neighbor. All that matters is whether that neighbor is in your array or not. If in array then push. Ok? Let's first take out that pair. first pair"
+    },
+    {
+      "start_time": 1729.36,
+      "end_time": 1757.11,
+      "text": "निकालिए। अ p = q डॉट फ्रंट। ठीक बात है? और q से पॉप मत भूलिएगा कभी भी। नहीं तो इनफाइनाइट लूप में चला जाएगा। ठीक है? आइए अपना स्ट्रिंग s निकालिए। s = p डॉट फर्स्ट। और इन वेल इज इक्वल टू P डॉट सेकंड। ठीक है? वेरी गुड। सबसे पहले तो एक चीज चेक कर लीजिए कि अगर अगर S इक्वल इक्वल टू एंड तुरंत रिटर्न वेल कर दीजिए। मिल गया आपको।",
+      "source": "caption",
+      "english_text": "Take it out. A p = q dot front. Is that correct? And never forget to pop with q. Otherwise it will go into an infinite loop. Ok? Let's get our string s. s = p dot first. And in well is equal to P dot second. Ok? very good. First of all, check one thing that if S is equal to end then immediately do return well. Got it."
+    },
+    {
+      "start_time": 1757.12,
+      "end_time": 1789.83,
+      "text": "रिटर्न वेल कर दीजिए। मिल गया आपको। अगर ऐसा नहीं है तो आपको ये थोड़ा सा तामझाम करना पड़ेगा। क्या तामझाम करना पड़ेगा? जो हम लोग वो किए हैं। आपको सबको चेंज करना पड़ेगा। ठीक है? आइए चेंज करें। फॉर i = 0 i &lt; s डॉट साइज मतलब हर एक लेटर पे एक-एक बार जाएंगे i प्लस प्लस सबसे पहले यहां जो ओरिजिनल कररेक्टर है उसको एक जगह पे रख लेंगे ताकि बाद में रिवर्ट करने में आसानी हो। अब हर एक अल्फाबेट पे जाएंगे आई एन टी j = 97 j &lt; &lt; = 122 j + हर एक अल्फाबेट पे",
+      "source": "caption",
+      "english_text": "Make a return well. Got it. If it is not so then you will have to do this a little bit. Will there be any fuss? Whatever we have done. You will have to change everything. Ok? Let's change. For i = 0 i < s dot size means we will go to each letter once i plus plus, first of all we will keep the original character here at one place so that it can be easy to revert later. Now we will go to each alphabet i n t j = 97 j < < = 122 j + to each alphabet"
+    },
+    {
+      "start_time": 1789.84,
+      "end_time": 1822.47,
+      "text": "जाएंगे। सबसे पहले देख लीजिए कि अगर c इक्वल इक्वल टू j कंटिन्यू नहीं चेंज करना है। मतलब चेंज करने का फायदा क्या है? तो उसी को उसी बना देंगे तो नहीं होगा ना। अगर ऐसा नहीं है चेंज कर दीजिए si = j चेक कीजिए इफ f डॉट फाइंड क्या s नॉट इक्वल टू f डॉट एंड मतलब ये है मतलब ये हैश मैप में एरे में है तो क्या करना है q डॉट पुश किसको पुश करेंगे s को किसके साथ वैल्यू + 1 के साथ बंद कर देंगे एफ से किसको इरेज़",
+      "source": "caption",
+      "english_text": "Will go. First of all check that if c is equal to j the continuation is not to be changed. Meaning, what is the benefit of changing? So if we make it the same then it won't happen, right? If it is not so then change si = j check if f dot find what s is not equal to f dot end meaning this means it is in the array in hash map then what to do q dot push whom will we push s with whom will we close with value + 1 erase whom from f"
+    },
+    {
+      "start_time": 1822.48,
+      "end_time": 1856.149,
+      "text": "करेंगे एस को इफ बंद जे बंद जे बंद होने के बाद si इक्व इक्व सी वापस रिवर्ट कर दिए एस को वापस जो था वही बना दिए ताकि अगले लेटर में बिगड़े ना आई बंद और आपका q बंद अगर आपका ऐसा करने के बाद भी आपको कोई नहीं मिलती है किस्मत से तो आप जीरो रिटर्न कर सकते हैं। तो ये देखिए ये इसका छोटा सा प्यारा सा कोड है। ठीक है? उतना हार्ड नहीं है जितना हार्ड लग रहा था सुनने में। हमको उम्मीद है कि अब उतना हार्ड नहीं लग रहा होगा। कोड लंबा हो सकता है। मतलब लंबा है। हार्ड नहीं है। हार्ड तो इसमें कुछ नहीं है। ऐसा कुछ नहीं है जो आप आज तक नहीं सुने हैं। ठीक है? ऐसा कोई",
+      "source": "caption",
+      "english_text": "Will do s if closed j closed j closed after si equal equal si reverted s back to what it was so that it doesn't get messed up in the next letter i closed and your q closed if even after doing this you are lucky you don't get any then you can return zero. So look at this, this is a small and cute code. Ok? It's not as hard as it sounds. We hope it doesn't seem that hard now. The code may be long. Means long. Not hard. There is nothing hard in it. It's nothing you haven't heard before. Ok? someone like that"
+    },
+    {
+      "start_time": 1856.159,
+      "end_time": 1890.23,
+      "text": "नई चीज या नई टेक्नोलॉजी इसमें नहीं इंट्रोड्यूस हुई है। तो ये वर्ड लैडर है। अब लीड कोड हार्ड है तो ऑब्वियसली थोड़ा सा इधर-उधर ट्रिकी तो होगा ही। लेकिन इसको जरूर से कीजिए। इसको समझिए और अब मेरे ख्याल से आपका ग्राफ खत्म हो चुका है। हमको मालूम है कुछ और टॉपिक बचा हुआ है। क्रूसल वगैरह बचा हुआ है लेकिन वो सब बाद में देखेंगे। क्रूसल और शायद कोसारा राजू वो सब बचा हुआ है। सब बहुत बाद का टॉपिक है। वो सब बाद में। अब हम लोग डीपी शुरू करने वाले हैं अगले दिन से। ठीक है? अब डीपी के लिए तैयार रहिए। आपका ग्राफ में मतलब आप ग्राफ में अच्छे खासे तक पहुंच चुके हैं। 90% ग्राफ खत्म हो चुका है आपका। इससे ज्यादा ग्राफ नहीं पूछा जाता",
+      "source": "caption",
+      "english_text": "No new thing or new technology has been introduced in it. So this is a word ladder. Now the lead code is hard so obviously it will be a little tricky here and there. But do it definitely. Understand this and now I think your graph is finished. We know some more topics are left. Crusal etc. are left but we will see all that later. Crusal and probably Kosara Raju are all that is left. All this is a topic for much later. All that later. Now we are going to start DP from the next day. Ok? Now be ready for DP. Your meaning in the graph is that you have reached a good place in the graph. 90% of your graph is finished. No more graph is asked than this"
+    },
+    {
+      "start_time": 1890.24,
+      "end_time": 1900.48,
+      "text": "है। वो सब कोसाफसा वो सब बहुत दूर का बात है। ठीक है? सब नहीं पूछा जाता है। तो ठीक है? इसको करिएगा। इसको कोड करिए और डाउट हो तो पूछिए। मिलते हैं अगले वीडियो में।",
+      "source": "caption",
+      "english_text": "Is. All that whispering is a very distant thing. Ok? Not everything is asked. Well then? Will do this. Code it and if in doubt ask. See you in the next video."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

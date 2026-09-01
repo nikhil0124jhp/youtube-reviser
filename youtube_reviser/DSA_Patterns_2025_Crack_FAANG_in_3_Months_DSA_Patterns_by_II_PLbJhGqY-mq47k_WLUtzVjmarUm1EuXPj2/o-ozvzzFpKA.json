@@ -1,0 +1,450 @@
+{
+  "video_id": "o-ozvzzFpKA",
+  "video_title": "35. DSA PATTERNS 2025 | Master Merge Interval With Interview Questions | FAANG",
+  "video_number": 38,
+  "chunks": [
+    {
+      "start_time": 1.67,
+      "end_time": 36.389,
+      "text": "इससे पहले कि आज का रिवीजन हम लोग स्टार्ट करें। एक क्वेश्चन बचा हुआ है जो कि बहुत फेमस क्वेश्चन है। बहुत कॉमन क्वेश्चन है। यह क्वेश्चन आपको Amazon, Microsoft किसी भी अच्छे कंपनी में पूछा जा सकता है। और क्वेश्चन सेम होता है। इसका सॉल्व करने का तरीका सेम होता है। इसमें कहानी अलग-अलग बना के पूछते हैं। मतलब कोई बोलता है कि मीटिंग रूम्स है, कोई बोलता है कि ट्रेन स्टेशन है, कोई बोलता है मेट्रो स्टेशन है। तो मतलब कहानी अलग-अलग है। क्वेश्चन सेम है। और बहुतेंट क्वेश्चन है। बहुत फेमस क्वेश्चन है। और ये वन ऑफ़ द क्वेश्चंस है मर्ज इंटरवल में जिसके लिए आपको कोई अ कॉम्प्लेक्स डेटा स्ट्रक्चर, कोई फैंसी डेटा स्ट्रक्चर नहीं चाहिए होता है। कॉमन सेंस से बन जाता है। तो मर्ज इंटरवल की यही खास बात है कि इसके ज्यादातर क्वेश्चन ना कॉमन सेंस से बन",
+      "source": "caption",
+      "english_text": "Before we start today's revision. One question is left which is a very famous question. It is a very common question. You can be asked this question in any good company like Amazon, Microsoft. And the question is the same. The method to solve it is the same. In this, different stories are made and asked. Meaning, some say it is meeting rooms, some say it is a train station, some say it is a metro station. So meaning the story is different. Question is same. And there are many questions. It is a very famous question. And this is one of the questions in merge interval for which you do not need any complex data structure, any fancy data structure. It is made through common sense. So the special thing about Merge Interval is that most of its questions are made from common sense."
+    },
+    {
+      "start_time": 36.399,
+      "end_time": 69.83,
+      "text": "सकते हैं। मतलब कॉमन सेंस क्या होता है कि हां कॉमन सेंस देख के पता चल रहा है, सोच के पता चल रहा है उसको कोड कर देना है। तो चलिए इससे पहले कि हम लोग रिवीज़न कर लें पूरे पैटर्न का ये क्वेश्चन देख लेते हैं। उसके बाद रिवीज़न पे चलेंगे। तो ये क्वेश्चन बोलता क्या है ना कि ये क्वेश्चन बोलता है कि मिनिमम मीटिंग रूम्स। क्या? मिनिमम मीटिंग रूम्स। जो लोग यहां पहली बार आ रहे हैं आप लोग डिस्क्रिप्शन में जाके चेक कीजिए। हम लोग यहां पे पैटर्न्स पढ़ते हैं। शुरू से देखिए। बीच से मत देखिए। तो ये आपको क्या बोलता है कि एक होटल है या कुछ भी है। एक होटल है या तो कोई ऑडिटोरियम है। वहां पे कुछ मीटिंग्स होने हैं। क्या कुछ मीटिंग्स होने हैं। हर",
+      "source": "caption",
+      "english_text": "Can. Meaning, what is common sense? Yes, common sense is known by seeing, it is known by thinking and it has to be coded. So, before we start revision, let us see these questions of the entire pattern. After that we will move on to revision. So what does this question say? What does this question say? Minimum meeting rooms. What? Minimal meeting rooms. Those who are coming here for the first time, please go to the description and check. We study patterns here. Watch from the beginning. Don't look from the middle. So what does this tell you whether it is a hotel or anything. There is either a hotel or an auditorium. There are some meetings to be held there. Are there any meetings to be held? every"
+    },
+    {
+      "start_time": 69.84,
+      "end_time": 103.99,
+      "text": "मीटिंग का एक स्टार्ट टाइम है और एक एंड टाइम है। ऑब्वियसली हर टाइम का क्या है? एक स्टार्ट है और एक एंड टाइम है हर मीटिंग का। तो होता ही है। आपको पता करना है कि आपको होटल में मिनिमम कितने रूम्स चाहिए? कितने? मिनिमम कितने रूम्स चाहिए कि ये सारे मीटिंग्स हो सके। कहने का क्या मतलब है? इसको आप मीटिंग की तरह ना भी समझिए। इसको आप एक होटल में लोग आते हैं चेक इन करते हैं चेक आउट करने। तो कोई आदमी बोलता है कि मेरा चेक इन टाइम कुछ स्टार्ट वन है और मेरा एंडिंग टाइम कुछ एंड वन है। एक और आदमी बोलता है मेरा चेक इन टाइम वो स्टार्ट टू होगा और मेरा चेक आउट टाइम एंड टू होगा। आपको होटल में",
+      "source": "caption",
+      "english_text": "The meeting has a start time and an end time. What is Obviously Every Time? There is a start and an end time for every meeting. So it happens. You want to know what is the minimum number of rooms you need in a hotel? How many? What is the minimum number of rooms required so that all these meetings can take place? What does it mean to say? Don't consider this as a meeting. In this, people come to a hotel, check in and check out. So a person says that my check in time is some start one and my ending time is some end one. Another man says that my check in time will be from start to and my check out time will be from end to. you in the hotel"
+    },
+    {
+      "start_time": 104.0,
+      "end_time": 136.869,
+      "text": "कितने रूम्स रखने पड़ेंगे कि सारे लोग अकोमोडेट हो जाए। जैसे कि अगर इस क्वेश्चन को आप समझना चाहें अगर कोई आदमी बोलता है कि हम 10:00 am में चेक आउट करेंगे। चेक इन करेंगे और 11:00 am में चेक आउट कर जाएंगे। 1 घंटे के लिए रूम चाहिए। एक घंटे के लिए चाहिए रूम। ठीक है? कोई और आदमी बोलता है कि हम 1:00 बजे दोपहर में चेक इन करेंगे और 4:00 बजे दोपहर में निकल जाएंगे। इस सिनेरियो में ना आपको होटल में एक ही रूम चाहिए। आपको क्यों एक ही रूम चाहिए? क्योंकि एक रूम है। आप एक रूम उस पर्सन वन को दे दीजिए। इसको दे दीजिए 10:00 बजे सुबह। ये क्या करेगा? 10:00 बजे",
+      "source": "caption",
+      "english_text": "How many rooms will have to be kept to accommodate all the people? For example, if you want to understand this question, if a person says that we will check out at 10:00 am. Will check in and check out at 11:00 am. Need room for 1 hour. Need room for one hour. Ok? Another man says we will check in at 1:00 pm and leave at 4:00 pm. In this scenario, you do not want only one room in the hotel. Why do you need only one room? Because there is one room. You give one room to that person. Give it to him at 10:00 in the morning. What will this do? at 10:00"
+    },
+    {
+      "start_time": 136.879,
+      "end_time": 168.47,
+      "text": "सुबह उसमें घुसेगा। 11:00 बजे रूम की चाबी आपको देके निकल जाएगा। तो आपका रूम खाली हो जाएगा। कितने बजे? 11:00 बजे आपका रूम खाली हो जाएगा। 1:00 बजे दोपहर में जो दूसरा बंदा आता है उसको आप ये रूम फिर से दे दीजिए। ये उसमें रहेगा और 4 pm में ये भी आपको चाबी देके चला जाएगा। तो आपका ये रूम भी खाली हो जाएगा। तो सिर्फ एक रूम रख के सिर्फ एक रूम रख के भी आप होटल चला सकते हैं। कब? जब चेक इन चेक आउट ऐसा हो। लेकिन लेकिन लेकिन अगर पहला आदमी बोलता है कि हम 10 am में आएंगे और 1:00 बजे दोपहर में निकलेंगे। कितने? 1:00 बजे दोपहर में निकलेंगे। दूसरा आदमी आपको बोलता है कि हम",
+      "source": "caption",
+      "english_text": "Will enter it in the morning. At 11:00 he will give you the room key and leave. So your room will be vacant. What time? Your room will be vacated at 11:00. Give this room again to the next person who comes at 1:00 pm. He will stay there and at 4 pm he will also give you the keys and go away. So this room of yours will also become vacant. So you can run a hotel by keeping just one room. When? When check in check out is like this. But but but if the first person says we will come in at 10 am and leave at 1:00 pm. How many? Will leave at 1:00 pm. The other man tells you that we"
+    },
+    {
+      "start_time": 168.48,
+      "end_time": 203.35,
+      "text": "भाई 12:00 बजे आएंगे दोपहर में और हम 3:00 बजे निकलेंगे। कितने? 3:00 बजे निकलेंगे। अब देखिए आपके पास मान लीजिए एक रूम है। एक रूम तो होना ही पड़ेगा ना होटल में। अगर एक भी गेस्ट रखना है तो एक रूम तो चाहिए ही चाहिए। ठीक है? आप इस पर्सन वन को ये रूम दे दीजिए। ठीक है? लेकिन क्या होगा ना? ये पर्सन रूम ले तो लेगा 10:00 बजे। लेकिन ये खाली कब करेगा? 1:00 बजे जाके दोपहर में। लेकिन 12:00 बजे दोपहर में पर्सन टू भी आ जाएगा। अब पर्सन टू को आप सेम रूम नहीं दे सकते। एक रूम में दो आदमी नहीं रह सकते। एक रूम में एक आदमी रहेगा। आपको एक और रूम की जरूरत पड़ेगी जिसमें आप पर्सन टू को डालेंगे। कितने बजे? 12:00 बजे। यहां पे दो रूम की जरूरत क्यों पड़ रही है? क्योंकि 12:00 बजे आपका",
+      "source": "caption",
+      "english_text": "Brother will come at 12:00 in the afternoon and we will leave at 3:00. How many? Will leave at 3:00. Now see, suppose you have a room. There will have to be a room in the hotel. If you have to have even one guest, you will definitely need a room. Ok? You give this room to this person one. Ok? But what will happen? If this person takes the room, he will take it at 10:00. But when will it vacate? By 1:00 in the afternoon. But Person 2 will also arrive at 12:00 noon. Now you cannot give the same room to another person. Two people cannot live in one room. There will be one person in one room. You will need another room in which you will put Person 2. What time? 12:00 AM. Why is there a need for two rooms here? because at 12:00 your"
+    },
+    {
+      "start_time": 203.36,
+      "end_time": 237.509,
+      "text": "जो एकिस्टिंग रूम था ना वो खाली नहीं है। वो खाली नहीं है ना। इसमें पर्सन वन ऑलरेडी है। ये 1:00 बजे जाएगा। ये आदमी 1:00 बजे से पहले ही आ गया दूसरा वाला। तो आपको इसको दूसरा रूम देना पड़ा। इस सिनेरियो में आपको मिनिमम टू रूम्स चाहिए होंगे। अगर आपको सबको अकोमोडेट करना है टाइम पे तो। यही क्वेश्चन बोलता है कि आपको बहुत सारे लोग दिए हुए हैं। सबका चेक इन टाइम है, चेक आउट टाइम है। दो एरे दिए हुए हैं। एक एरे में सबके चेक इन टाइम है। एक एरे में सबके चेक आउट टाइम है। आप बताइए आपको होटल में मिनिमम कितने रूम्स रखने हैं कि सारे लोग कंफर्टेबली रहें। या तो इस क्वेश्चन में बोलता है कि सारे मीटिंग्स कंफर्टेबली हो जाए। हम बोले ना अलग-अलग कहानी बनाया रहेगा। कोई बोलेगा कि ट्रेन का टाइमिंग दिया हुआ है कि ट्रेन",
+      "source": "caption",
+      "english_text": "The existing room is not empty. It is not empty, right? There is already one person in it. It will go at 1:00. This guy came just before 1:00, the second one. So you had to give him another room. In this scenario you will need minimum two rooms. If you have to accommodate everyone on time. This question itself says that you have been given a lot of people. Everyone has their check in time and check out time. Two arrays are given. Everyone in an array has a check-in time. Everyone in an array has a check out time. You tell us the minimum number of rooms you want to have in the hotel so that everyone remains comfortable. Either this question says that all the meetings should be conducted comfortably. We said no, different stories will be made. Someone will say that the timing of the train is given or the train"
+    },
+    {
+      "start_time": 237.519,
+      "end_time": 271.27,
+      "text": "आती कितने बजे हैं? जाती कितने बजे हैं? आपको कितने प्लेटफॉर्म्स चाहिए? कोई बोलेगा मेट्रो के टाइमिंग्स दिए हुए हैं। आपको कितने स्टेशंस चाहिए? कोई बोलेगा मीटिंग हो रहे हैं होटल में। होटल में कितने रूम चाहिए? लोग मतलब कहानी अलग-अलग बन सकती है। वैरायटी ऑफ़ कहानी है। वैरायटी ऑफ़ लोग हैं। कांसेप्ट ये है कि आपको कितने रूम चाहिए। अच्छा सबसे पहले तो ये मर्ज इंटरवल का क्वेश्चन है कि नहीं? बिल्कुल है। बिल्कुल है। क्योंकि मर्ज इंटरवल का क्वेश्चन को पहचानने का एक ही तरीका होता है कि आपको रेंजेस दिए हो। आपको क्या दिए हो? रेंजेस मतलब स्टार्ट और स्टॉप दिया हो। क्लियरली यहां पे स्टार्ट और स्टॉप दिया है। मतलब चेक इन टाइम दिया है और चेक आउट टाइम दिया है। इस क्वेश्चन की बात करें तो मीटिंग का स्टार्ट टाइम और मीटिंग",
+      "source": "caption",
+      "english_text": "What time does it come? What time does it go? How many platforms do you need? Someone will say that metro timings are given. How many stations do you need? Someone will say that meetings are being held in the hotel. How many rooms do you need in a hotel? People means the story may be different. Variety of stories. There are variety of people. The concept is how many rooms do you want. Well, first of all is it a question of merge interval or not? Of course it is. Of course it is. Because the only way to identify the merge interval question is if you are given ranges. What have you given? Ranges means start and stop are given. Clearly start and stop are given here. Meaning check in time is given and check out time is given. Talking about this question, the start time of the meeting and the meeting itself."
+    },
+    {
+      "start_time": 271.28,
+      "end_time": 304.15,
+      "text": "का एंड टाइम क्लियरली आपको दिया हुआ है। तो पक्की पक्की बात है कि रेंजेस का क्वेश्चन है। तो इसमें मर्ज इंटरवल लगेगा ही लगेगा। अच्छा अब इसको सॉल्व करने का कांसेप्ट क्या है? अभी तक तो हम लोग कर रहे थे कि अभी तक हम लोग क्या-क्या सीखे थे कि मर्ज इंटरवल है तो अच्छी बात है। उसको स्टार्ट टाइम से सॉर्ट कर लेते थे। ओवरलैप करा देते थे। ओवरलैप होने का कुछ कंडीशन था। अगर ओवरलैप होता था तो दो इंटरवल को कैसे मर्ज करते तो उसका भी एक मैथ्स था कि स्टार्ट वन था और मैक्सिमम ऑफ़ एंड वन एंड टू था। लेकिन अब इस क्वेश्चन में क्या करें? इस क्वेश्चन में आपको कुछ मर्ज वर्ज नहीं करना है। आपको बस देखना है कि मैक्सिमम नंबर ऑफ़ रूम्स कितने रिक्वायर्ड हो। मतलब एक तरीके से ये बोल",
+      "source": "caption",
+      "english_text": "The end time has been clearly given to you. So it is certain that there is a question of ranges. So there will definitely be a merge interval. Okay, now what is the concept to solve this? Till now we were talking about what we had learned till now that if there is a merge interval then it is a good thing. Used to sort it from start time. Used to overlap. There was some condition of overlap. If there was overlap then how to merge two intervals, there was a math for that too that start was one and maximum of end was one and two. But now what to do in this question? You do not have to merge or merge anything in this question. You just have to see what is the maximum number of rooms required. I mean say this in a way"
+    },
+    {
+      "start_time": 304.16,
+      "end_time": 338.39,
+      "text": "रहा है ना कि मान लीजिए आप ऐसा-ऐसा करके ड्राइंग बना दिए। ये स्टार्ट है और ये एंड है किसी एक इंसान का। अगला आदमी यहां से यहां तक जाता है और फिर एक आदमी यहां से यहां तक जाता है और एक आदमी यहां से यहां तक जाता है। अब देखिए जहां पे सबसे मैक्सिमम नंबर ऑफ इंटरसेक्शंस होंगे ना इस जगह पे देखिए इस जगह पे इस जगह पे देखिए सबसे मैक्सिमम इंटर कितने हो रहे हैं? तीन। मतलब तीन मीटिंग का टाइम स्लॉट कॉमन है। कॉमन टाइमिंग है। यहां पे आपको मिनिमम तीन रूम रखना है। तो ड्राइंग के हिसाब से आपको पता चल रहा है कि हां भाई तीन रूम तो चाहिए होगा क्योंकि एक ना एक टाइम स्लॉट ऐसा आएगा ना जहां पे तीन मीटिंग पैरेलल",
+      "source": "caption",
+      "english_text": "Suppose you have made a drawing by doing such and such. This is the beginning and this is the end of one person. The next guy goes from here to here and then another guy goes from here to here and another guy goes from here to here. Now see where the maximum number of intersections will be, see at this place, at this place, see how many maximum intersections are happening? Three. Meaning the time slot of three meetings is common. There is common timing. Here you have to have minimum three rooms. So, according to the drawing, you are coming to know that yes brother, three rooms will be required because at some point there will be a time slot where three meetings will be held parallel."
+    },
+    {
+      "start_time": 338.4,
+      "end_time": 365.35,
+      "text": "में चल रही होंगी। पैरेलल इज़ द की। पैरेलल ये जो दो लोग थे ये जो दो लोग थे एक टाइम स्लॉट ऐसा आता था। कौन सा टाइम स्लॉट? 12:00 pm से लेके 1:00 pm तक। ये कॉमन टाइम स्लॉट था। ये दोनों लोग पैरेलल आपके होटल में रह रहे थे। इसीलिए आपको जरूरत पड़ी थी दो रूम की। ऊपर वाले दोनों लोग पैरेलल में कभी नहीं रह रहे थे। ये 10:00 बजे आता था, 11:00 बजे निकल जाता था ये। ये उसके बाद 1:00 pm आता था 4:00 p.m. तो पैरेलल में एक ही आदमी रह रहा था। इसमें पैरेलल में दो आदमी रहे। तो आपको दो रूम चाहिए था। तो ये तो हो गया क्वेश्चन।",
+      "source": "caption",
+      "english_text": "Will be walking in. Parallel is the key. Parallel Yeh jo do log tha yeh jo do log tha there used to be a time slot like this. Which time slot? From 12:00 pm to 1:00 pm. This was a common time slot. These two people were staying parallel in your hotel. That's why you needed two rooms. The above two people were never living in parallel. He used to come at 10:00 and leave at 11:00. After that it came at 1:00 pm and 4:00 p.m. So only one man was living in parallel. There were two men in parallel. So you wanted two rooms. So this is the question."
+    },
+    {
+      "start_time": 365.36,
+      "end_time": 390.87,
+      "text": "क्वेश्चन ये बोलता है आपको। ठीक है? अब इसको सॉल्व करने का बहुत सारा तरीका है। लेकिन जो सबसे अच्छा तरीका हम बोले सबसे कॉमन सेंस वाला तरीका है। कॉमन सेंस वाला तरीका क्या है कि आप एज अ होटल ओनर आप पहले से एक भी रूम ना बनाएं अपने होटल में। आपका होटल अंडर कंस्ट्रक्शन है। आपका होटल अंडर कंस्ट्रक्शन है। आपके पास एक भी रूम नहीं है। कोई रूम नहीं है। आप डिसाइड किए कि भाई जैसे-जैसे लोग आएंगे वैसे-वैसे हम रूम को बना देंगे और उनको दे देंगे।",
+      "source": "caption",
+      "english_text": "The question speaks to you. Ok? Now there are many ways to solve this. But the best way we said is the most common sense way. The common sense approach is that as a hotel owner, you should not create even a single room in your hotel in advance. Your hotel is under construction. Your hotel is under construction. You don't have a single room. There is no room. You decided that as people come, we will prepare the room and give it to them."
+    },
+    {
+      "start_time": 390.88,
+      "end_time": 419.11,
+      "text": "जैसे-जैसे हमको जरूरत पड़ी। अगर कोई रूम ऑलरेडी खाली होगा तो उसमें दे देंगे। अगर सारे रूम भरे हुए होंगे तो सबको नहीं देंगे। देखिए फॉर एग्जांपल आपको बोलता है कि चेक इन टाइम ये है। चेक इन टाइम वन है, 10 है और सेवन है। ये क्या है आपका? चेक इन टाइम या फिर स्टार्ट टाइम मीटिंग का। चेक आउट टाइम है 4 5 10 ये आपका एंड टाइम्स है। ये आपका स्टार्ट टाइम्स है। इसका मतलब क्या होता है? देखिए दोनों में तीन-तीन एलिमेंट हैं। दोनों में तीन-तीन एलिमेंट है। है ना? तीन-तीन टोटल छह हैं।",
+      "source": "caption",
+      "english_text": "As per our need. If any room is already vacant then we will give it there. If all the rooms are full then we will not give it to everyone. See, for example it tells you that the check in time is this. Check in times are one, 10 and seven. What is this of yours? Check in time or start time of the meeting. Check out time is 4 5 10 This is your end times. This is your start time. What does it mean? See, both have three elements each. Both have three elements each. Isn't it? Three each are six in total."
+    },
+    {
+      "start_time": 419.12,
+      "end_time": 452.95,
+      "text": "इसको अगर आप पेअर बनाएंगे इसको आप क्या बनाएंगे? पेयर बनाएंगे ना तो ऐसा लगेगा। पहला मीटिंग वन से फोर तक चलता है। दूसरा मीटिंग 10 से अच्छा सॉरी वैसा नहीं है। मतलब ऐसा कोई खास करके पैर नहीं घुसाया हुआ है। आपको बोला गया है ये आपके स्टार्ट टाइम्स हैं। तीन स्टार्ट टाइम्स हैं और तीन एंड टाइम्स हैं। मतलब कि तीन मीटिंग होनी है आपके होटल में। तीनों का स्टार्ट टाइम आपको बोला हुआ है। और तीनों मीटिंग का एंड टाइम भी आपको बोला हुआ है। कौन सा मीटिंग कब एंड होगा ये नहीं बोला गया। मतलब कोई स्पेसिफिक रेंज नहीं बताई हुई है। मतलब आप आपको ये नहीं बोला गया कि वन से फोर एक मीटिंग है। नहीं हो सकता है वन से फाइव भी",
+      "source": "caption",
+      "english_text": "If you pair this, what will you make of it? It will look like this if you make a pair. The first meeting runs from one to four. The second meeting is better than 10, sorry, not the same. This means that no one has deliberately entered into it. You have been told these are your start times. There are three start times and three end times. This means that three meetings are to be held in your hotel. The start time of all three has been told to you. And the end time of all three meetings has also been told to you. It was not said which meeting would end and when. Meaning no specific range has been mentioned. Meaning, you were not told that one to four is a meeting. One cannot even be five"
+    },
+    {
+      "start_time": 452.96,
+      "end_time": 487.67,
+      "text": "एक मीटिंग हो, वन से 10 भी एक मीटिंग हो, मालूम नहीं है। स्टार्ट इतने बजे होगा, एंड इतने बजे होगा। ठीक है? तो इसको इसीलिए हम एग्जांपल दिए कि सबसे अच्छा इंट्यूशन क्या है कि आप होटल ओनर आप कुछ मत रखिए। आप कुछ मत रखिए। क्या-क्या है हमारे स्टार्ट टाइम? 1 10 7 okay और एंड टाइम क्या है? फोर सॉरी ये 15 था। 15 और 10। ठीक है? अच्छा। तो आप एक काम करिए ना आप अभी कोई रूम मत बनाइए। तीन तरीके के स्टार्ट टाइम है। स्टार्ट टाइम मतलब स्टार्ट टाइम में आपको लोग आएंगे कि हमको रूम दो। स्टार्ट टाइम का तो भाई मतलब होता है ना कि रूम दो। रूम दो। इसका मतलब यही",
+      "source": "caption",
+      "english_text": "Whether it is one meeting, one to 10 or even one meeting, I don't know. It will start at this time and end at this time. Ok? So that is why we gave an example that the best intuition is that you, the hotel owner, should not keep anything. Don't keep anything. What are our start times? 1 10 7 okay and what is the end time? Four sorry it was 15. 15 and 10. Ok? Good. So you do one thing, don't make any room right now. There are three types of start times. Start time means people will come to you at the start time asking you to give us rooms. Start time means brother, not room two. Give room. this is what it means"
+    },
+    {
+      "start_time": 487.68,
+      "end_time": 514.23,
+      "text": "होता है। एंड टाइम या चेक आउट टाइम का मतलब क्या होता है? कि ये रूम खाली करके जा रहा है। ये रूम खाली कर रहा है। ये रूम खाली कर दे रहे हैं। खाली कर रहा है। यही होता है। होटल में यही होता है। स्टार्ट टाइम पे लोग आएंगे। रूम की चाबी मांगेंगे। रूम ऑक्यूपाई कर लेंगे। एंड टाइम पे जाके रूम खाली कर देंगे। किसी भी ऐसे क्वेश्चन में सेम चीज होगा। ट्रेन आएगी स्टेशन पे तो जब ट्रेन आएगी तो वो प्लेटफार्म ऑक्युपाई करेगी। ट्रेन जाएगी तो वो प्लेटफार्म खाली कर देगी। मेट्रो आएगी तो वो स्टेशन ऑक्युपाई करेगी। मेट्रो जाएगी तो वो स्टेशन खाली हो जाएगा। यही होता है।",
+      "source": "caption",
+      "english_text": "It happens. What does end time or check out time mean? That he is leaving the room vacated. He is vacating the room. They are vacating the room. Evacuating. Same thing happens. This is what happens in hotels. People will come at the start time. Will ask for the room key. Will occupy the room. Will vacate the room at the end time. Same thing will happen in any such question. When the train will arrive at the station, it will occupy the platform. When the train leaves, it will vacate the platform. If the metro comes, it will occupy the station. If the metro goes, that station will be empty. Same thing happens."
+    },
+    {
+      "start_time": 514.24,
+      "end_time": 547.99,
+      "text": "चलिए। इसीलिए इसीलिए बहुत जरूरी हो जाता है कि इसको हम क्रोनोलॉजिकल ऑर्डर में देखें। अमित शाह जी बोलते हैं ना आप क्रोनोलॉजी समझिए। क्रोनोलॉजिकल ऑर्डर क्या होता है? इसमें हम चलिए टाइम के हिसाब से देखते हैं। टाइम के हिसाब से देखते हैं। टाइम के हिसाब से देखते हैं। टाइम के हिसाब से कैसे देखेंगे? ये क्या है? ये टाइम ही तो है या आप इसको घंटे समझ लीजिए। दिन के घंटे ही है ना? 1:00 बजे आता है, 4:00 बजे निकलता है। ऐसा 10:00 बजे आता है, 15:00 बजे निकलता है या तो 7:00 बजे आता है, कुछ भी टाइम है ना? या तो रेंजेस ही हैं। तो चलिए टाइम के हिसाब से देखते हैं और देखते हैं कि हम लोग को",
+      "source": "caption",
+      "english_text": "Let's go. That is why it becomes very important that we look at it in chronological order. Amit Shah ji says, you should understand the chronology. What is chronological order? Let us look at this in terms of time. Let's see according to time. Let's see according to time. How will we see it according to time? What is this? This is just time or you can consider it as hours. It's just the hours of the day, isn't it? Arrives at 1:00, leaves at 4:00. Like it arrives at 10:00, leaves at 15:00 or arrives at 7:00, whatever time it is, right? Either ranges only. So let's look at it in terms of time and see how we"
+    },
+    {
+      "start_time": 548.0,
+      "end_time": 573.19,
+      "text": "कितना रूम की जरूरत पड़ेगी। अच्छा सबसे पहला टाइम क्या है? सबसे पहला इन छहों में से छहों में से अब तीन में से नहीं पूरे छहों में से दिन का पहला आपका इवेंट क्या होगा? दिन का पहला इवेंट क्या होगा? वो होगा 1:00 बजे 1:00 बजे। 1:00 बजे एक आदमी बोलेगा हमको रूम चाहिए। क्योंकि ये स्टार्ट का है क्योंकि ये स्टार्ट का आदमी है ना? स्टार्ट का आदमी है। 1:00 बजे आके बोलेगा हमको रूम चाहिए। तो आपके पास अभी तो कोई रूम नहीं था। आप एक रूम बना दीजिए। आप एक रूम बना दीजिए। ये आपका R1 हो गया।",
+      "source": "caption",
+      "english_text": "How much room will be required? Okay, what's the first time? First of all, out of these six, now not out of three, but out of all six. What will be your first event of the day? What will be the first event of the day? That will be at 1:00 at 1:00. At 1:00 a man will say we need a room. Because he is from Start, because he is a man from Start, right? He is a man from the start. Will come at 1:00 and say we need a room. So you didn't have any room yet. You make a room. You make a room. This is your R1."
+    },
+    {
+      "start_time": 573.2,
+      "end_time": 602.15,
+      "text": "तो अब आपको पता चला कि एक तो चाहिए। एक रूम तो चाहिए। क्योंकि इसको देने के लिए आपको रूम बनाना पड़ा। ठीक है? इसमें आप घुसा दिए। एक आदमी को घुसा दिए। यहां पे घुस गया। चलिए। अगला टाइम कौन सा है? पूरे में से। अगला टाइम ये फोर है। 10 नहीं है। फोर है। दिन का अगला टाइम क्या है? 4:00 बजे। फोर किसका पार्ट है? फोर एंड का पार्ट है। मतलब 4:00 बजे कोई ना कोई बोलेगा कि हम रूम खाली कर रहे हैं। कौन बोलेगा? छोड़ दीजिए। जो आदमी आया होगा वही बोलेगा ऑब्वियसली। लेकिन कौन सा आदमी बोलेगा इस पे ध्यान मत दीजिए। कोई ना कोई आदमी आपका रूम खाली कर रहा है। आपको तो रूम से मतलब है ना। कौन सा आदमी कब खाली?",
+      "source": "caption",
+      "english_text": "So now you know you need one. Need a room. Because to give it you had to make a room. Ok? You entered it. Pushed a man in. Entered here. Let go. What time is next? Out of the whole. Next time is this four. There is no 10. Is four. What is the next time of the day? At 4:00. Whose part is four? It is part of the four end. Meaning at 4:00 someone will say that we are vacating the room. Who will speak? Leave it. Only the person who has come will speak obviously. But don't pay attention to which person will speak. Some person or the other is vacating your room. You mean the room, right? Which man is free when?"
+    },
+    {
+      "start_time": 602.16,
+      "end_time": 633.59,
+      "text": "नहीं। रूम खाली कर दो। तुम जाओ। ये बोलेगा हम रूम खाली कर रहे हैं। ठीक है? रूम खाली कर दीजिए। तो क्या करिए? रूम खाली का क्या मतलब होता है? आपके पास जितना भी रूम है ना उसमें से एक रूम हटा दीजिए। एक रूम मिटा दीजिए। उस रूम को फिर से तोड़ देंगे। तोड़ दीजिए इस रूम को। इस रूम को क्या कीजिए? तोड़ दीजिए। तोड़ दिया आपने। ठीक है? अब आपके होटल में फिर से ज़ीरो रूम है। जो कि अच्छी बात भी है। आपके रूम में ज़ीरो रूम है। अभी तक कोई एक गेस्ट आया था। एक गेस्ट चला गया। आपके रूम होटल में ज़ीरो रूम है। चलिए। अगला टाइम कौन सा है? अगला टाइम हमको दिख रहा है 7, 7:00, 7:00 बजे।",
+      "source": "caption",
+      "english_text": "No. Vacate the room. Go. He will say that we are vacating the room. Ok? Vacate the room. So what to do? What does room empty mean? Remove one room from all the rooms you have. Delete a room. Will demolish that room again. Destroy this room. What to do with this room? Break it. You broke it. Ok? Now your hotel has zero rooms again. Which is also a good thing. There is zero room in your room. Till now only one guest had come. A guest left. There is zero room in your room hotel. Let go. What time is next? The next time we see is 7, 7:00, 7:00."
+    },
+    {
+      "start_time": 633.6,
+      "end_time": 659.03,
+      "text": "7:00 बजे एक आदमी आता है बोलता है रूम चाहिए। क्योंकि ये स्टार्ट का है, स्टार्ट का पार्ट है, स्टार्ट वाले एरे का पार्ट है। ये बोलता है हमको रूम चाहिए। ठीक है? आपके होटल में एक भी रूम नहीं है। रूम बना के इसको दे दीजिए। रूम बनाइए इसको दे दीजिए। ठीक है? अगला इवेंट कौन सा है? अगला इवेंट आपको दिख रहा है कि हां। अब अगले में 10 दोनों में है। 10 दोनों में है। देखिए 10 यहां भी है, 10 यहां भी है।",
+      "source": "caption",
+      "english_text": "At 7:00 a man comes and says he needs a room. Because it belongs to start, is part of start, is part of the array with start. He says we need a room. Ok? There is not a single room in your hotel. Make a room and give it to him. Make a room and give it to him. Ok? What's the next event? The next event you see is yes. Now the next one has 10 in both. 10 is there in both. Look, 10 is here too, 10 is here too."
+    },
+    {
+      "start_time": 659.04,
+      "end_time": 693.43,
+      "text": "अच्छा। अब क्या करें? एक लाइन इसमें होती है ना कि अगर कोई दो मीटिंग ऐसे होंगे अगर या दो आदमी ऐसे होंगे एक और एक आदमी बोलता है कि हम 4:00 बजे से 10:00 बजे तक रूम लेंगे। ठीक है? एक आदमी बोलता है हम एग्जैक्ट 10:00 बजे आएंगे। एग्जैक्ट 10:00 बजे आएंगे और 12:00 बजे रूम छोड़ेंगे। अगर ऐसे दो इवेंट आते हैं तो इसमें क्या करना है? तो ये जनरली क्वेश्चन में लिखा होता है। लेकिन 90% ऑफ़ द केसेस में इसमें ही होता है ना कि चलो अगर ये सेम भी है। अगर ये सेम भी है तो हम लोग मान के चलेंगे कि ये पहले खाली कर देगा। ये पहले खाली कर देगा। उसके बाद आप इसको रूम दे सकते हो।",
+      "source": "caption",
+      "english_text": "Okay. What do we do now? There is a line in it that if any two meetings will be like this, if or two people will be like this, one and one person say that we will take the room from 4:00 to 10:00. Ok? A man says we will come at exactly 10:00. Executors will arrive at 10:00 and leave the room at 12:00. If two such events come then what to do? So this is written in general question. But in 90% of the cases it happens only in this and not if it is even the same. Even if it is a bean, we will assume that it will empty it first. This will empty it first. After that you can give it room."
+    },
+    {
+      "start_time": 693.44,
+      "end_time": 723.99,
+      "text": "तो एक रूम में ही काम हो जाएगा। कहने का मतलब कि चार से 10 का ये मतलब नहीं है कि वो 10 और 10 कॉमन हो गया तो आपको दो रूम बनाना पड़ेगा। नहीं पहले वाला आदमी खाली कर देगा। उसके बाद आप उसको रूम दे सकते हो। तो यहां भी हम लोग वही करेंगे कि जैसे 2 10 है। एक स्टार्ट में भी 10 है, एक एंड में भी 10 है। तो हम लोग मान के चलेंगे कि जो एंड वाला है ना वो पहले खाली कर देगा। स्टार्ट वाला बाद में लेगा। तो सबसे पहले अगला इवेंट में इस वाले को ले लेते हैं। 10:00 बजे ये बोलता है हम रूम खाली कर रहे हैं। फिर क्या कर रहे हैं? रूम खाली कर रहे हैं। कौन सा आदमी कर रहा है? फर्क मत कीजिए। रूम खाली में क्या कीजिए? अपना होटल से एक रूम तोड़ दीजिए। तोड़ दीजिए।",
+      "source": "caption",
+      "english_text": "So the work will be done in one room only. To say that four to 10 does not mean that if 10 and 10 become common then you will have to make two rooms. No, the first person will vacate. After that you can give him the room. So here also we will do the same thing like 2 is 10. There is 10 in one start and 10 in the end also. So we will assume that the one at the end will empty it first. The one who starts will take it later. तो सबसे पहले अगला इवेंट में इस वाले को ले लेते हैं। 10:00 बजे ये बोलता है हम रूम खाली कर रहे हैं। Then what are you doing? रूम खाली कर रहे हैं। कौन सा आदमी कर रहा है? फर्क मत कीजिए। रूम खाली में क्या कीजिए? अपना होटल से एक रूम तोड़ दीजिए। Break it."
+    },
+    {
+      "start_time": 724.0,
+      "end_time": 757.67,
+      "text": "तोड़ दीजिए। तोड़ दीजिए। वेरी गुड। ओके? अगला अगला फिर से आइए 10:00 बजे। 10 वाला आदमी बोलता है एक रूम चाहिए। एक रूम चाहिए। तो ठीक है? एक रूम बना के इसको दे दीजिए। ये आपका R1 हो गया। ठीक है? याद रखिएगा। मैक्सिमम नंबर ऑफ रूम कितने हो रहे हैं? ठीक है? अगला इवेंट हमको दिख रहा है 15। 15 क्या बोलता है? 15 क्योंकि एंड का पार्ट है। ये बोलता है हमको रूम खाली करना है। रूम खाली करना है। कोई बात नहीं। रूम खाली करिए। अपने होटल का रूम तोड़ दीजिए। तोड़ दीजिए। मैक्सिमम कितना रूम बनाए आप? इसमें आप देखे होंगे अगर आपको याद होगा शुरू से मैक्सिमम हम लोग एक रूम बनाए। ये आपका आंसर हो जाएगा। एक रूम में सबका काम हो जाएगा। एक रूम में आप सबका",
+      "source": "caption",
+      "english_text": "Break it. Break it. very good. Ok? अगला अगला फिर से आइए 10:00 बजे। 10 वाला आदमी बोलता है एक रूम चाहिए। एक रूम चाहिए। Well then? एक रूम बना के इसको दे दीजिए। ये आपका R1 हो गया। Ok? Remember this. मैक्सिमम नंबर ऑफ रूम कितने हो रहे हैं? Ok? अगला इवेंट हमको दिख रहा है 15। 15 क्या बोलता है? 15 क्योंकि एंड का पार्ट है। ये बोलता है हमको रूम खाली करना है। रूम खाली करना है। No problem. रूम खाली करिए। अपने होटल का रूम तोड़ दीजिए। Break it. मैक्सिमम कितना रूम बनाए आप? इसमें आप देखे होंगे अगर आपको याद होगा शुरू से मैक्सिमम हम लोग एक रूम बनाए। This will be your answer. एक रूम में सबका काम हो जाएगा। एक रूम में आप सबका"
+    },
+    {
+      "start_time": 757.68,
+      "end_time": 792.31,
+      "text": "काम कर दिया। ऐसा कभी नहीं हुआ ना कि आप एक रूम बना हुआ था। एक और आदमी आ गया कि हमको रूम चाहिए तो आपको एक और रूम बनाना पड़ा। ऐसा कभी नहीं हुआ था। ऐसा कहां पे होगा? आइए एक और एग्जांपल ड्राइवरन देखिए। पूरा क्लियर हो जाएगा। देखिए पूरा कॉमन सेंस है। इसमें कोई कोडिंग, कोई एल्गोरिदम कुछ नहीं है। एकदम कॉमन सेंस का क्वेश्चन है कि रियल जिंदगी में भी यही होता है। मर्ज इंटरवल एक ऐसा डीएसए पैटर्न है ना जो रियल जिंदगी के बहुत करीब है। रियल लाइफ में जो आप काम करते हैं वही आप यहां भी करते हैं। चलिए आइए। 2 9 और सिक्स। ठीक है? और एंड टाइम क्या दिया हुआ है? 4 12 और 10। वही काम करिए। एज ए होटल ओनर आपके पास कोई रूम नहीं है। कोई रूम नहीं है।",
+      "source": "caption",
+      "english_text": "Did the work. ऐसा कभी नहीं हुआ ना कि आप एक रूम बना हुआ था। एक और आदमी आ गया कि हमको रूम चाहिए तो आपको एक और रूम बनाना पड़ा। This never happened. ऐसा कहां पे होगा? आइए एक और एग्जांपल ड्राइवरन देखिए। पूरा क्लियर हो जाएगा। देखिए पूरा कॉमन सेंस है। इसमें कोई कोडिंग, कोई एल्गोरिदम कुछ नहीं है। एकदम कॉमन सेंस का क्वेश्चन है कि रियल जिंदगी में भी यही होता है। मर्ज इंटरवल एक ऐसा डीएसए पैटर्न है ना जो रियल जिंदगी के बहुत करीब है। रियल लाइफ में जो आप काम करते हैं वही आप यहां भी करते हैं। Let's come. 2 9 और सिक्स। Ok? और एंड टाइम क्या दिया हुआ है? 4 12 और 10। वही काम करिए। एज ए होटल ओनर आपके पास कोई रूम नहीं है। कोई रूम नहीं है।"
+    },
+    {
+      "start_time": 792.32,
+      "end_time": 819.269,
+      "text": "ठीक है? सबसे पहला इवेंट दिन का कौन सा होगा? टू। 2:00 बजे क्या बोलता है? क्योंकि ये स्टार्ट का पार्ट है। ये स्टार्ट है और ये वाला आपका एंड है। तो क्योंकि ये स्टार्ट का पार्ट है। ये बोलता है हमको रूम दो। रूम दो। दे दीजिए। एक रूम बना के दे दीजिए। एक रूम बना के R1 दे दीजिए। ठीक है? याद रखिएगा कितना रूम का ड्राइंग एक साथ बनाएंगे। ठीक है? अगला इवेंट क्या है? फोर। फोर बोलता है क्योंकि एंड का पार्ट है। ये बोलता है हमको रूम खाली करना है। हमको रूम खाली करना है। ठीक है? खाली करना है मतलब एक रूम तोड़ दीजिए।",
+      "source": "caption",
+      "english_text": "Ok? What will be the first event of the day? To. What speaks at 2:00? Because this is part of the start. This is the start and this one is your end. So because this is part of the start. He says give us room. Give room. Give it. Make a room and give it to me. Make a room and give R1. Ok? Remember how many rooms will be drawn together. Ok? What's the next event? Four. Says four because it is part of and. It says we have to vacate the room. We have to vacate the room. Ok? To vacate means demolish a room."
+    },
+    {
+      "start_time": 819.279,
+      "end_time": 850.069,
+      "text": "कोई भी एक रूम तोड़ दीजिए अपना। चलिए। कोई भी एक रूम तोड़ दिया करिए। मतलब ऐसा नहीं है। रूम वन, रूम टू, रूम थ्री कितना ही बनेगा? का कोई एक रूम तोड़ दीजिए। हटा दीजिए। चलिए अगला इवेंट पे आइए। अगला इवेंट क्या दिख रहा है? सिक्स दिख रहा है हमको। सिक्स क्योंकि स्टार्ट का पार्ट है। ये बोलता है भाई हमको रूम दे दो यार। हमको एक रूम दे दो। हमको बहुत भूख लगा है। एक रूम बना के इसको दे दीजिए। ठीक? दे दिए। अगला इवेंट कौन सा है? अगला इवेंट देखिए। ये हो चुका है। हां। अगला इवेंट 1210 नहीं है। अगला इवेंट भी नाइन है। अगला बहुत ध्यान से देखिएगा। नाइन क्योंकि स्टार्ट का पार्ट है। ये बोलता है रूम दो। रूम दो।",
+      "source": "caption",
+      "english_text": "Destroy any one of your rooms. Let go. Destroy any one room. Meaning it is not so. How much room one, room two, room three will be built? Destroy one of the rooms. Remove it. Let's come to the next event. What is the next event looking like? We can see six. Six because it is part of the start. He says, brother, give us a room. Give us a room. We are very hungry. Make a room and give it to him. Correct? Gave it. What's the next event? Watch the next event. This has happened. Yes. The next event is not 1210. The next event is also nine. Will watch the next one very carefully. Nine because it is part of the start. It says room two. Give room."
+    },
+    {
+      "start_time": 850.079,
+      "end_time": 877.59,
+      "text": "आपको एक और रूम बनाना पड़ेगा। जब भी रूम देना है तो आपको रूम बनाना पड़ेगा। चलिए। बनाइए। अब देखिए आपको एक साथ दो रूम बनाना पड़ा है। एक साथ दो रूम आपके होटल में बन चुका है। एक बार तो कभी तो दो तो आपका आंसर होने ही वाला है। चलिए देखते हैं आगे क्या होता है। अगला है 10 10 बोलता है रूम खाली। रूम खाली करना है। खाली करना है कोई भी एक रूम अपने हिसाब से तोड़ दीजिए। अपने हिसाब से इसको तोड़ दीजिए। तोड़ के फेंक दीजिए इस रूम को। फेंक दिए। चलिए। अगला क्या बोलता है? 12। 12 क्योंकि एंड है।",
+      "source": "caption",
+      "english_text": "You will have to make another room. Whenever a room has to be given, you will have to make a room. Let go. Make it. Now see you have to make two rooms together. Two rooms together have been made in your hotel. Give it once or twice and your answer is bound to happen. Let's see what happens next. Next is 10 10 says room empty. Have to vacate the room. If you want to vacate, demolish any one room as per your convenience. Break it down as per your convenience. Demolish and throw away this room. Thrown away. Let go. What says next? 12. 12 because is the end."
+    },
+    {
+      "start_time": 877.6,
+      "end_time": 911.43,
+      "text": "बोलता है रूम खाली करना है हमको। रूम खाली करना है। अपने हिसाब से एक भी रूम तोड़ दीजिए। अपना एक रूम तोड़ दीजिए। और पूरा टाइम खत्म हो गया। पूरा दिन आपका खत्म हो गया। मैक्सिमम रूम आप कितने बनाए थे? मैक्सिमम एक समय पे रूम कितने बने थे आपके? टू। आपका आंसर हो गया टू। इस होटल में इस तरीके के गेस्ट में आप बिना दो रूम के होटल नहीं चला पाएंगे। क्यों? क्योंकि एक रूम में एक आदमी पहले ही था और फिर से ये नाइन आ के बोला था कि हमको रूम दो। तो आपको एक और रूम बनाना पड़ गया। बिना उस रूम को तोड़े। क्योंकि उस रूम में एक और आदमी है ना तो एक साथ आप होटल में कितना रूम बनाए? दो रूम आपको कंस्ट्रक्शन करना पड़ गया। इसीलिए इसका आंसर होगा दो की। आपको",
+      "source": "caption",
+      "english_text": "He says we have to vacate the room. Have to vacate the room. Destroy even one room as per your convenience. Destroy one of your rooms. And all the time is over. Your whole day is over. How many maximum rooms did you make? Maximum how many rooms did you have at one time? To. Your answer is two. In this hotel, with this type of guest, you will not be able to run the hotel without two rooms. Why? Because there was already a man in one room and again this nine came and said to give us the room. So you had to make another room. Without breaking that room. Because there is one more person in that room, how many rooms should you make in the hotel together? You had to construct two rooms. That's why the answer will be two. to you"
+    },
+    {
+      "start_time": 911.44,
+      "end_time": 945.829,
+      "text": "दो रूम तो रखना पड़ेगा भाई। आपको दो रूम रखना ही रखना पड़ेगा ताकि आप सारे गेस्ट को अकोमोडेट कर सके। तो अगर ये रूम तोड़ने के लिए और रूम बनाने वाले एग्जांपल समझेंगे आसान पड़ेगा। चलिए तो अब इसमें करें क्या? अब अब इसमें करें क्या? मतलब ये तो अच्छा अच्छा समझ में आ गया ड्राई रन वगैरह। कोड में कैसे इसको इंप्लीमेंट करेंगे? तो देखिए आप एक तरीके से कर क्या रहे हैं? आप एक तरीके से कर क्या रहे हैं? आप टाइम के अनुसार चल रहे हैं। टाइम के हिसाब से चल रहे हैं। टाइम के हिसाब से चल रहे हैं। ठीक है? टाइम के हिसाब से चल रहे हैं। अच्छी बात है। लेकिन और आप टाइम के",
+      "source": "caption",
+      "english_text": "You will have to keep two rooms, brother. You will have to keep two rooms so that you can accommodate all the guests. So, if you consider this as an example of breaking a room and making a room, it will be easier. Come on, what to do in this now? Now what to do in this? I mean, it's okay, I understand dry run etc. How to implement this in the code? So see what you are doing in a way? What are you doing in a way? You are moving according to time. We are moving according to time. We are moving according to time. Ok? We are moving according to time. It's a good thing. But and you of time"
+    },
+    {
+      "start_time": 945.839,
+      "end_time": 979.91,
+      "text": "हिसाब से चल तो रहे हैं लेकिन आपके पास दो तरीके के इवेंट हैं। अगर आपका स्टार्ट वाला इवेंट होता था। मतलब अगर आपके स्टार्ट वाले एरे से कोई आता था तो आप रूम बनाते थे। आप रूम बनाते थे। यही करते थे ना? अगर आपका स्टॉप वाला इवेंट होता था या तो एंड वाला इवेंट होता था आप रूम तोड़ देते थे। रूम तोड़ देते थे। ठीक है? किसी भी समय आप ट्रैक रखते थे कि मैक्सिमम कितना रूम बन सकता है? मैक्सिमम एक समय पे एक टाइम पे कितने रूम हैं? कितने रूम हैं? यही आपका",
+      "source": "caption",
+      "english_text": "Things are going according to plan but you have two types of events. If you had a start event. Meaning, if someone came from your starting area, you used to create a room. You used to make rooms. This is what you used to do, right? If you had an event with a stop or an event with an end, you would break the room. Used to destroy the room. Ok? At any point in time, did you keep track of the maximum amount of room that can be created? What is the maximum number of rooms at a time? How many rooms are there? this is yours"
+    },
+    {
+      "start_time": 979.92,
+      "end_time": 1014.389,
+      "text": "आंसर हो जाता था। तो ये तो आसान है। रूम बनाते थे एक वेरिएबल रख लीजिए। रूम इक्वल टू 0 शुरू में तो होटल में कोई रूम नहीं था। रूम बनाने का क्या मतलब है? रूम प्लस प्लस रूम तोड़ने का क्या मतलब है? रूम माइनस माइनस आपको मैक्स रखना है। एक रेस रख लीजिए। रेस इक्वल टू मैक्स ऑफ़ रेस एंड रूम। ये तो बहुत अच्छी बात है। प्रॉब्लम इसमें है। ये टाइम के हिसाब से कैसे चल रहे हैं? टाइम के हिसाब से कैसे चलें और कैसे पहचाने कि वो स्टार्ट का है कि स्टॉप का है। तो देखिए आपको इस क्वेश्चन में दो एरे दिया हुआ है। आपको इस क्वेश्चन में दो एरे दिया हुआ है। एक एरे आपका स्टार्ट का",
+      "source": "caption",
+      "english_text": "The answer would be given. So this is easy. Used to make rooms, keep a variable. Room Equal to 0: Initially there was no room in the hotel. What does it mean to create a room? What does it mean to break room plus plus room? Room minus minus you have to keep max. Have a race. Race equal to max of race and room. This is a very good thing. The problem lies in this. How are they going in terms of time? How to follow time and how to recognize whether it is about to start or stop. So see, you have been given two arrays in this question. You have been given two arrays in this question. Here's your start"
+    },
+    {
+      "start_time": 1014.399,
+      "end_time": 1040.549,
+      "text": "2 9 और सिक्स। एक एरे है आपके स्टॉप का जो कि है 4 12 और 10 ये आपका स्टॉप है। ये आपका स्टार्ट है। दो एरे दिया हुआ है इस क्वेश्चन में। ठीक है? हम आपको जब चलना टाइम के हिसाब से ही है। देखिए आपको चलना तो टाइम के हिसाब से ही है। एक काम हम लोग कर सकते थे कि दोनों को एक एरे में सॉर्ट एक एरे में डाल देते। एक एरे में डाल देते तो इसको हम लोग लिखते 2 9 6 4 12 और 10।",
+      "source": "caption",
+      "english_text": "29 and six. There is an array of your stops which are 4 12 and 10 these are your stops. This is your start. Two arrays are given in this question. Ok? When we come to you, it is according to time. Look, you have to move according to time. One thing we could have done was to sort both of them in one array and put them in one array. If we had put it in an array, we would have written it as 2 9 6 4 12 and 10."
+    },
+    {
+      "start_time": 1040.559,
+      "end_time": 1074.31,
+      "text": "ये कर सकते थे और इसको सॉर्ट कर लेते। इसको सॉर्ट कर लेते अगर तो हमको पता चलता कि टू 4 6 9 10 और ये 12 तो ये ऐसा एरे बन जाता। अगर ये दो एरे को कंबाइन कर लेते तो सॉर्ट कर लेते। अब आप टाइम के हिसाब से ही चलेंगे। अब आप टाइम के हिसाब से ही चलेंगे। लेकिन आपको मालूम नहीं चलेगा कि कौन सा इवेंट किसका पार्ट था। ये जो टू था ये स्टार्ट का पार्ट था कि स्टॉप का पार्ट था। ये रूम मांगेगा कि रूम खाली करेगा वो आपको मालूम नहीं चलेगा। तो वो मालूम करने का एक तरीका है। एक और तरीका है। मतलब आप एक पेअर का एरे बना लीजिए। ये जो आप एरे बनाए ना आप जो यहां पे एरे बनाए ना इसको",
+      "source": "caption",
+      "english_text": "They could have done this and sorted it. If we had sorted it, we would have known that two are 4 6 9 10 and this is 12, then it would have become such an array. If you had combined these two arrays, you would have sorted them. Now you will move according to time. Now you will move according to time. But you will not know whose part was in which event. This was the two, was it the part of start or the part of stop. You won't know whether he will ask for room or vacate the room. So that is one way to find out. There is another way. Meaning you create an array of one pair. This is what you make here, you are what is made here is not this"
+    },
+    {
+      "start_time": 1074.32,
+      "end_time": 1108.07,
+      "text": "आप सिंगल के जगह पेयर का एरे बना लीजिए। तो जब आप टू को इसमें इंसर्ट करेंगे ना तो आप टू के साथ कोई ज़ीरो इंसर्ट कर दीजिए। ज़ीरो का मतलब होगा कि वो स्टार्ट का पार्ट है। फोर को जब आप इंसर्ट करें तो फोर को वन करके इंसर्ट कर दीजिए। वन से पता चलेगा कि वो इसका पार्ट है। क्या बोलते हैं? स्टॉप का पार्ट है। लेकिन ये थोड़ा बेकार तरीका है। मतलब एक एरे क्यों और बनाना है। ऑलरेडी दो एरे दिया हुआ है और एक एरे बना रहे हैं तो स्पेस बढ़ रहा है आपका। स्पेस बढ़ रहा है और उसमें पेअर वगैरह कर रहे हैं। फिर सॉर्ट करेंगे तो अगर स्टार्ट और स्टॉप का सेम हो जाएगा तो फिर ज़ीरो वन से सॉर्ट हो जाएगा। मतलब बहुत घचपच घचपच टाइप का एप्रोच है। एक चीज़ आप कर सकते हैं। एक चीज़ आप कर सकते हैं। स्टार्ट और स्टॉप",
+      "source": "caption",
+      "english_text": "You create an array of pairs instead of singles. So when you insert two in it, then you insert a zero along with two. Zero would mean that it is part of the start. When you insert four, insert four by making one. One will know that he is a part of it. What do you say? It's part of the stop. But this is a bit useless method. Meaning why create another array? Already two arrays are given and if you are making one array then your space is increasing. The space is increasing and people are adding to it. Then if we sort, if the start and stop are the same then it will be sorted from zero to one. Meaning, it is a very ghachapacha-ghachapacha type of approach. There is one thing you can do. There is one thing you can do. start and stop"
+    },
+    {
+      "start_time": 1108.08,
+      "end_time": 1139.029,
+      "text": "ऑलरेडी दिया हुआ है ना। स्टार्ट और स्टॉप तो ऑलरेडी दिया हुआ है। मतलब कि आपको 2 9 6 देखिए पूरा क्वेश्चन आप लोग समझ चुके हैं। पूरा एल्गोरिदम क्लियर। अब उसको इम्प्लीमेंट कैसे करना है? उसको उस चीज़ को जो आप सोचे हैं जो कॉमन सेंस है उसको कोड में कैसे करना है वो देख रहे हैं। तो आपको बोलता है कि ये फोर है, 12 है, 10 है। चलना आपको टाइम के हिसाब से है। आपको दिन के टाइम के हिसाब से चलना है। तो क्यों ना हम दोनों एरे को सॉर्ट कर दें। दोनों एरे को सॉर्ट करेंगे तो कम से कम मेरा स्टार्ट सॉर्टेड हो जाएगा और मेरा एंड भी सॉर्टेड हो जाएगा। आइए दोनों को सॉर्ट कर दीजिए।",
+      "source": "caption",
+      "english_text": "It is already given. Start and stop are already given. It means that you have understood the entire question. Complete algorithm cleared. Now how to implement it? He is looking at how to code what you think is common sense. So it tells you that this is four, this is 12, this is 10. You have to move according to time. You have to move according to the time of day. So why don't we sort both arrays. If you sort both the arrays then at least my start will be sorted and my end will also be sorted. Let's sort both."
+    },
+    {
+      "start_time": 1139.039,
+      "end_time": 1164.39,
+      "text": "दोनों को सॉर्ट कर दीजिए। ये आपका बन जाएगा 2 6 9 ठीक है? दूसरा वाला आपका क्या बन जाएगा? अह 4 10 और 12 यह आपका स्टार्ट है। यह आपका एन्ड है। दोनों सॉर्टेड हैं। दोनों अपने आप में सॉर्टेड हैं। अब आपको ये क्या है? ये क्या आपको कुछ चमक रहा होगा। मर्ज टू सॉर्टेड एरे। मर्ज टू सॉर्टेड एरे। इसमें कुछ किए थे।",
+      "source": "caption",
+      "english_text": "Sort both of them. This will become yours 2 6 9 ok? What will become of your second one? Ah 4 10 and 12 this is your start. This is your end. Both are sorted. Both are sorted in themselves. Now what is this to you? Is this something shining to you? Merge two sorted arrays. Merge two sorted arrays. Did something in this."
+    },
+    {
+      "start_time": 1164.4,
+      "end_time": 1191.669,
+      "text": "क्योंकि देखिए जब दोनों एरे सॉर्ट हो गया ना तो स्टार्ट तो सॉर्टेड है। ये ज़ीरो है। ये वन है। ये टू है। तो आप इसको अगर नीचे जाते जाएंगे तो आप टाइम के हिसाब से चलेंगे। एंड भी अपने आप में सॉर्टेड है। तो ये भी ज़ीरो है, वन है, टू है। आप नीचे चलते जाएंगे आप टाइम के हिसाब से ही चलेंगे। लेकिन लेकिन लेकिन इसमें और इसमें कौन सा बड़ा है? उसके हिसाब से आपको चलना पड़ेगा। आपको लोएस्ट टाइम चाहिए। हमेशा आपको लोएस्ट टाइम चाहिए। आपको मालूम है ये एरे सॉर्टेड है। ओके? ये एरे सॉर्टेड है।",
+      "source": "caption",
+      "english_text": "Because see, when both the arrays are sorted, neither the start nor the array is sorted. This is zero. This is a forest. This is two. So if you go down it, you will move according to time. End is also sorted in itself. So this is also zero, one, two. You will move down, you will move according to time. But but but which is bigger in this and this? You will have to proceed accordingly. You want the lowest time. You always want the lowest time. You know this array is sorted. Ok? This array is sorted."
+    },
+    {
+      "start_time": 1191.679,
+      "end_time": 1224.789,
+      "text": "तो जब पहला लोएस्ट टाइम जब आप निकालेंगे ये 0 1 2 0 1 2 पहला लोएस्ट टाइम आपको निकालना पड़ेगा तो उसके कैंडिडेट्स कौन-कौन से हैं? जो लोग टू पॉइंटर का पैटर्न देखे थे उनको समझ में आ गया होगा पूरा। पहले वाले के कैंडिडेट्स कौन-कौन हैं? पहले वाले के कैंडिडेट्स हैं या तो ये आदमी या तो ये आदमी और कोई नहीं हो और कोई नहीं हो सकता है। पहले वाले के कैंडिडेट और कोई नहीं हो सकता है। क्यों? क्योंकि आप पूरा एरे शॉर्ट कर दिए। पहले वाले का कैंडिडेट सिक्स और नाइन तो नहीं हो सकता है क्योंकि सिक्स और नाइन के पहले टू आना चाहिए। 10 12 भी नहीं हो सकता क्योंकि 10 12 के पहले फोर आना चाहिए। तो पहले का कैंडिडेट वही है। ठीक है? कोई बात नहीं। यहां पे एक आई",
+      "source": "caption",
+      "english_text": "So, when you will find the first lowest time, then what are its candidates? Those who had seen the two pointer pattern must have understood it completely. Who are the candidates for the first one? The candidates for the first one are either this man or this man and no one else and cannot be anyone else. The first candidate cannot be anyone else. Why? Because you shorted the entire array. The candidate for the first one cannot be six or nine because two should come before six and nine. 10 also cannot be 12 because 10 must be preceded by 12. So the first candidate is the same. Ok? No problem. one came here"
+    },
+    {
+      "start_time": 1224.799,
+      "end_time": 1259.35,
+      "text": "रख लीजिए। जे रख लीजिए। आपको पहले क्या पता चल रहा है कि स्टार्ट वाला छोटा है। स्टार्ट वाला छोटा है। स्टार्ट आई जो है वो लेस देन है स्टॉप आई से। स्टॉप जे से क्या करते थे? तो मतलब ये इवेंट पहला इवेंट स्टार्ट का है। सबसे पहले रूम प्लस प्लस रेस इज़ इक्वल टू मैक्स ऑफ़ रेस्ट एंड रूम्स। और वर्सेस ऑर्डर में क्या करता है? जिसका काम हो चुका है उसको i प्लस प्लस बस एल्स एल्स एल्स एल्स मान लीजिए आप अगर ऐसा किए तो आपका i यहां से हट के कहां आ गया होगा अब यहां पे आ गया",
+      "source": "caption",
+      "english_text": "Keep it. Keep it J. The first thing you realize is that the start one is small. The one at the start is small. The start eye is less than the stop eye. What did you do with stop J? So that means this event is the first event of the start. First of all room plus plus race is equal to max of rest and rooms. And what does Versus do in order? The one whose work has been done is given i plus plus bus else else else else else. Suppose, if you do this then where would your i have moved away from here and now it has come here."
+    },
+    {
+      "start_time": 1259.36,
+      "end_time": 1292.549,
+      "text": "होगा अब कौन सा ज्यादा है इन दोनों में कौन सा ज्यादा मतलब कम है स्टॉप वाला कम है स्टॉप वाला कम है तो देखिए इसमें तीन केसेस होता है ना कि स्टार्ट आई और स्टॉप j मतलब दोनों में से बड़ा कौन है तो इसमें तो आपको पता चल गया कि अगर स्टॉप j छोटा है स्टॉप जे छोटा है तो कुछ करना नहीं है रूम माइनस माइनस j प्लस प्लस लेकिन दोनों इक्वल हैं तो क्या करेंगे दोनों इक्वल हैं तो क्या करेंगे ऊपर हम लोग समझे थे एग्जांपल में अगर किसी आदमी का चेक आउट टाइम भी 10:00 बजे है और किसी और आदमी का चेक इन टाइम 10:00 बजे है तो क्या होगा क्वेश्चन के हिसाब से पहले वो आदमी चेक आउट करेगा मतलब पहले वो एक रूम खाली करेगा फिर ये आदमी चेक इन करेगा फिर ये रूम",
+      "source": "caption",
+      "english_text": "Now which of these two is more, which one is greater, the one with stop is less, the one with stop is less, so see, there are three cases in it, not start i and stop j, which means which of the two is bigger, then in this you have come to know that if stop j is smaller, stop j is smaller, then there is nothing to be done, room minus minus j plus plus, but if both are equal, then what will we do? if both are equal, what will we do, above we had understood in the example that if the check out time of a person is also It is 10:00 and check in time of some other person is 10:00 then what will happen as per the question that person will check out first means first he will vacate a room then this person will check in and then this room"
+    },
+    {
+      "start_time": 1292.559,
+      "end_time": 1320.71,
+      "text": "बढ़ाएगा तो अगर अगर कभी ऐसे केस में स्टार्ट आई इक्वल इक्वल टू स्टॉप जे आ गया तो इसको आपको ऐसा ट्रीट करना है कि पहले स्टॉप वाला पहले जो एंड वाला है वो अपना रूम खाली कर देगा मतलब होटल वाला एक रूम तोड़ेगा उसके बाद ये आदमी चेक इन कर सकता है तो उसको मन है तो करेगा नहीं तो नहीं करेगा। इस केस में भी आपको वही करना है। J प्लस प्लस और रूम माइनस माइनस ऐसा करना है। चलिए इसका इसका भी एक बार ड्राई डाउन करके एक बार छोटा सा देख लेते हैं। आइए।",
+      "source": "caption",
+      "english_text": "If ever in such a case, Start I is equal to Stop J, then you have to treat it in such a way that the one who stops first will vacate his room, that is, the hotel owner will break one room, after that this person can check in. If he feels like it, he will do it, otherwise he will not. In this case also you have to do the same. J plus plus and room minus minus have to do this. Let's dry it down and take a small look at it. Come."
+    },
+    {
+      "start_time": 1320.72,
+      "end_time": 1353.51,
+      "text": "क्या था हमारा दो एरे? हमारा जो दो एरे था वो क्या था? हमारे जो दो सॉर्टेड एरे हैं खास करके। दोनों को हम सॉर्ट कर चुके हैं। 269 2 6 9 पूरा कॉमन सेंस का क्वेश्चन है। इसमें कोई मैथ उतना है नहीं। ठीक है? और ये एंड आरे ये आपका एंड आरे है। ठीक है? क्या है ये? 4 10 और 12 0 1 2 शुरुआत में i = 0 j = 0 शुरू में आपके पास कोई रूम नहीं है। तो रूम = 0 रेस्ट = 0 रिजल्ट मतलब आपका आंसर",
+      "source": "caption",
+      "english_text": "What was our do ere? What was our two array? Especially our two sorted arrays. We have sorted both. 269 ​​2 6 9 is a question of complete common sense. There is not that much math in it. Ok? And this is your end here. Ok? What is this? 4 10 and 12 0 1 2 Initially i = 0 j = 0 Initially you have no room. So Room = 0 Rest = 0 Result means your answer"
+    },
+    {
+      "start_time": 1353.52,
+      "end_time": 1386.87,
+      "text": "जो भी आप कंटेन करना चाहते हैं। चलिए i है j है। कौन सा छोटा है? ये वाला छोटा है। कोई बात नहीं। तो ये किसका इवेंट है? ये स्टार्ट का इवेंट है। मतलब दिन का जो पहला टाइम है, जो पहला वाला टाइम हो रहा है वो स्टार्ट का हो रहा है। तो सबसे पहले आप क्या करते थे? रूम को वन। ओके? रेस्ट इज इक्वल टू मैक्सिमम ऑफ रेस्ट एंड रूम। तो रेस्ट भी हो गया वन। ओके? आई को बढ़ा दिया। चलिए आई यहां आ गया। अभी कौन सा छोटा है? अभी जे वाला छोटा है। मतलब जे वाला छोटा है मतलब क्या? कि ये तो एक तो टाइम में पहले आ रहा है और ये स्टॉप भी है। आपको क्या करना था? रूम को माइनस माइनस रूम तोड़ दीजिए और जे को बढ़ा दीजिए। जे यहां पे आ",
+      "source": "caption",
+      "english_text": "Whatever you want to contain. Let i be j. Which one is smaller? This one is small. No problem. So whose event is this? This is the start event. Meaning, the first time of the day, the first time, is the beginning. So what was the first thing you did? Room one. Ok? Rest is equal to maximum of rest and room. So the forest also rested. Ok? I was increased. Come on, I am here. Which one is smaller now? Right now the J one is small. What does that mean? That this one is coming first in time and this is also the stop. What did you have to do? Break room down to minus room and increase j. J come here"
+    },
+    {
+      "start_time": 1386.88,
+      "end_time": 1420.71,
+      "text": "गया। इन दोनों में अब आई जे में कौन सा छोटा है? ये छोटा है। सिक्स छोटा है। मतलब मतलब मतलब इसका मतलब क्या है कि एक आदमी आया बोलता है हम स्टार्ट है। हमको रूम चाहिए। तो क्या करना था? रूम को एक से बढ़ा देना था। रिजल्ट इज़ इक्वल टू मैक्सिमम ऑफ़ रिजल्ट एंड रूम तो जो वन ही रहेगा i को भी बढ़ा देना था। कोई बात नहीं। यहां पे आ जाइए। अभी कौन सा छोटा है? अभी भी i छोटा है। अभी भी i छोटा है। आइए। एक और आई एक और आई। आपको रूम एक और बढ़ाना पड़ेगा। रूम बढ़ाए। रिजल्ट अपडेट हो के क्या बन गया? अब टू आई भी बढ़ गया। अब आई बाहर चला गया। आई आपका बाहर चला गया। एक बार आई बाहर चला गया तो आपको कुछ नहीं करना है। कुछ क्यों",
+      "source": "caption",
+      "english_text": "Gone. Now which of these two is smaller in IJ? This is small. Six is ​​small. Meaning Meaning Meaning What does it mean that a man has come and says we are starting. We need a room. So what was to be done? The room had to be increased by one. Result is equal to maximum of result and room will remain one, i also had to be increased. No problem. Come here. Which one is smaller now? Still i is small. Still i is small. Come. Another one came and another one came. You will have to increase the room one more time. Increase the room. What happened after the result was updated? Now the number has also increased. Now Aai went out. Aayi your went out. Once the eye goes out you don't have to do anything. why something"
+    },
+    {
+      "start_time": 1420.72,
+      "end_time": 1450.31,
+      "text": "नहीं करना है? देखिए आपका यहां पे आके आई बाहर चला गया एरे से। से तो मर्ज टू सॉर्टेड एरे में क्या करते थे? आई और जे दोनों को चलाते थे। ओके। लेकिन जब आई बाहर चला जाता था तो क्या करते थे? उसके बाद जे को पूरा चलाते थे। जे बाहर चला जाता था तो फिर आई को पूरा चलाते थे। लेकिन इसमें जरूरत नहीं है। अच्छा क्यों नहीं है इसमें जरूरत? अच्छा एक बात बताइए। पहले कौन बाहर जाएगा हमेशा? पहले कौन एरे से बाहर जाएगा? पहले कौन एरे से बाहर जाएगा? आई या तो जे कौन बाहर जाएगा?",
+      "source": "caption",
+      "english_text": "Don't want to do it? Look, you came here and went out. So what did you do in merge to sorted array? Used to drive both I and J. Ok. But what did they do when Aai went out? After that used to run J completely. When J went out, I was allowed to run completely. But there is no need in this. Well why is there no need for it? Okay, tell me one thing. Who will always go out first? Who will go out of the array first? Who will go out of the array first? I or J. Who will go out?"
+    },
+    {
+      "start_time": 1450.32,
+      "end_time": 1476.31,
+      "text": "अब कुछ लोग सोचेंगे कि दोनों बाहर जा सकता है। है ना? तो दोनों बाहर नहीं जा सकता है। क्यों नहीं जा सकता है? देखिए बाहर कौन जाएगा? बाहर कौन जाएगा? लास्ट वाले पे आते हैं। लास्ट वाले एंट्री पे दोनों के आते हैं। लास्ट वाले एंट्री पे दोनों पे आते हैं। जो लास्ट वाली एंट्री छोटी होगी, जिस एरे का लास्ट एंट्री छोटा होगा ना वो पहले बाहर जाएगा। वही पहले जाएगा ना? क्योंकि हम लोग छोटा देख के उसको बढ़ा रहे हैं। तो जिसका लास्ट वाला एंट्री छोटा होगा वो बाहर जाएगा। ऑब्वियस सी बात है।",
+      "source": "caption",
+      "english_text": "Now some people will think that both can go out. Isn't it? So both cannot go out. Why can't I go? Look who will go out? Who will go out? Coming to the last one. Both come at the last entry point. Both come at the last entry. The array whose last entry is smallest will go out first. He will go first, right? Because we are seeing it small and making it bigger. So the one whose last entry is smaller will go out. It's an obvious thing."
+    },
+    {
+      "start_time": 1476.32,
+      "end_time": 1504.23,
+      "text": "अब बताइए लास्ट वाला एंट्री स्टार्ट का छोटा होगा कि स्टॉप का छोटा होगा? लास्ट एंट्री क्या बताता है? स्टार्ट का स्टार्ट का लास्ट एंट्री आपको बोलता क्या है कि लास्ट टाइम टू चेक इन। लास्ट टाइम चेक इन कोई आदमी लास्ट टाइम चेक इन। ओके? मतलब दिन के कभी भी किया होगा तो लास्ट होगा ये चेक। इसके बाद चेक इन्स नहीं है। ओके? और आपको इसका एंड वाले का लास्ट क्या बताता है? लास्ट चेक आउट टाइम। लास्ट चेक आउट टाइम।",
+      "source": "caption",
+      "english_text": "Now tell me, will the last entry be shorter than the start or stop? What does the last entry tell? What does the last entry of Start tell you about the last time to check in? Last time check in No man last time check in. Ok? Meaning, if you do it any time of the day, this check will be the last one. There is no check in after this. Ok? And what does the last part of this tell you? Last check out time. Last check out time."
+    },
+    {
+      "start_time": 1504.24,
+      "end_time": 1539.19,
+      "text": "अब एक बात बताइए कोई आदमी कितना भी बाद में चेक इन करेगा मतलब मान लीजिए यह बहुत बड़ा नंबर हो मान लीजिए 100 हो 100 बजे चेक इन किया 100 व दिन जो भी है 100 बजे चेक इन किया कभी ना कभी तो ये चेक आउट करेगा और चेक आउट का टाइम कभी भी चेक इन से पहले तो नहीं हो सकता ऐसा तो आप नहीं बोल सकते ना कि हम 2:00 बजे चेक इन किया और 1:00 बजे ही चेक आउट नहीं 2:00 बजे चेक इन किया तो 2 1 पे 2 पे 30 सेकंड बाद कभी बाद में ही करोगे ना इसके लिए पक्का एक ना एक चेक आउट टाइम इसका होगा या किसी और का होगा कम से कम इसका तो इससे बड़ा बड़ा चेक आउट टाइम होगा तो ये हो सकता है 1001 हो 102 हो 200 हो कुछ भी हो 100 से तो बड़ा",
+      "source": "caption",
+      "english_text": "Now tell me one thing, no matter how late a person will check in, that is, suppose it is a very big number, let's say it is 100, we checked in at 100 o'clock, 100 and whatever is the day, if we checked in at 100 o'clock, sooner or later, he will check out and the time of check out can never be before check in. So, you cannot say that we checked in at 2:00 and did not check out at 1:00, if we checked in at 2:00. 2 1 on 2, you will do it sometime later after 30 seconds, for sure there will be some check out time for this or someone else's, at least this will have a bigger check out time than this, so it could be 1001, 102, 200, anything, it should be bigger than 100."
+    },
+    {
+      "start_time": 1539.2,
+      "end_time": 1571.269,
+      "text": "एक नंबर पक्का पक्का रहेगा या तो वो इसका चेक आउट टाइम या तो किसी और का भी चेक आउट टाइम इससे बड़ा हो सकता है इसका चेक आउट टाइम तो इससे बड़ा होगा ही इसीलिए पहले हमेशा आपका स्टार्ट खत्म हो जाएगा पहले हमेशा आपका क्या खत्म हो जाएगा स्टार्ट खत्म हो जाएगा क्योंकि स्टार्ट का लास्ट हमेशा एंड के लास्ट से छोटा रहेगा क्योंकि चेक इन टाइम कैन नॉट बी ग्रेटर देन द चेक आउट टाइम जो भी चेक इन टाइम होगा उससे बड़ा चेक आउट टाइम तो होगा ही होगा किसी और का भी हो सकता है। उसका तो होगा ही होगा। इसीलिए पहले i खत्म हो जाएगा। अच्छा तो जब पहले i खत्म हो जाएगा तो फिर आप कर सकते हैं। फिर आप j को भी चला सकते हैं।",
+      "source": "caption",
+      "english_text": "One number will always be fixed, either its check out time or someone else's check out time can be bigger than this, that's why your start will always finish first, your start will always finish first, the start will finish because the last of the start will always be smaller than the last of the end because the check in time cannot be greater than the check out time. Whatever the check in time, the check out time will definitely be bigger than that, it can be someone else's too. It will definitely happen to him. That's why i will be eliminated first. Well, when the first i is over then you can do it. Then you can run j also."
+    },
+    {
+      "start_time": 1571.279,
+      "end_time": 1605.11,
+      "text": "मतलब फिर आप ऐसा कर सकते हैं। जैसा हम लोग टू पॉइंटर में करते भी थे कि j &lt; n और किया क्या जाएगा? कुछ नहीं। रूम माइनस माइनस और j + तो ये आप कर सकते हैं। लेकिन इससे यहां पे कोई फायदा नहीं होगा। आपको कोई फायदा नहीं होगा। क्यों नहीं होगा? क्योंकि हम लोग मैक्सिमम रूम खोज रहे थे। हम लोग मैक्सिमम रूम खोज रहे थे। तो हमारा सारा इंटरेस्ट कहां पे था? हमारा सारा इंटरेस्ट था जब हम लोग रूम को बढ़ाते थे जब आई आई वाला छोटा होता था ना तो जभी भी हम लोग रूम को प्लस प्लस जभी भी हम लोग रूम को बढ़ाते थे ना वहां पे हम लोग का इंटरेस्ट होता था कि वहां पे हमको मैक्सिमम लेना है। रूम माइनस माइनस ठीक है मतलब मान लीजिए कभी ना कभी रूम थ्री बन",
+      "source": "caption",
+      "english_text": "Meaning then you can do this. Like we used to do in two pointer that j < n and what will be done? Nothing. Room minus minus and j + so you can do this. But this will be of no use here. You will not get any benefit. Why wouldn't it happen? Because we were looking for maximum room. We were searching for maximum room. So where was all our interest? Our entire interest was that whenever we used to increase the room, when the I-I was small, whenever we used to increase the room, whenever we used to increase the room, our interest was that we have to take maximum there. Room minus minus is okay, it means let's say room three will be created someday."
+    },
+    {
+      "start_time": 1605.12,
+      "end_time": 1638.149,
+      "text": "गया होगा ठीक है उसके बाद तीन लोगों का चेक आउट बचा है तो रूम थ्री से टू हो जाएगा फिर वन हो जाएगा फिर ज़ीरो हो जाएगा तो इसमें आपको इंटरेस्ट नहीं है आपको तीन में इंटरेस्ट था तीन आपको मिल गया होगा जब भी रूम बढ़ के तीन हुआ होगा वहां पे आप कर लिए होंगे कैलकुलेट इसमें कोई खास ज्यादा आपको इंटरेस्ट नहीं है तो ये करने की जरूरत नहीं है मन करे तो कर सकते हैं मन करे तो कर सकते हैं मन करे तो कुछ भी कर सकते हैं चलिए ये बात समझ में आई कि कौन बाहर जाएगा और कौन कहां जाएगा ठीक है इसका एक बार कोड देख लेते हैं कोड बहुत सिंपल आपका फंक्शन क्या है? इंट मीटिंग। आपको दो तरीके के एरे दिए हुए",
+      "source": "caption",
+      "english_text": "Okay, after that, three people are left to check out, then the room will be reduced from three to two, then it will become one, then it will become zero, so you are not interested in it. You were interested in three, you must have got three. Whenever the room has increased to three, you must have done the calculations there. If you do not have much interest in it, then there is no need to do this. If you feel like it, you can do it, if you feel like it, you can do anything, if you feel like it, you can do anything. Let us understand who will go out and who will go where. Ok, let's see the code once, the code is very simple, what is your function? Int meeting. You are given two types of arrays."
+    },
+    {
+      "start_time": 1638.159,
+      "end_time": 1672.07,
+      "text": "हैं। आपको सॉरी आपको दो तरीके के क्या दिए हुए हैं? एरे दिए हुए हैं। स्टार्ट और स्टॉप। तो ये होगा इंट मीट। एक आपको जो एरे दिया है वो है स्टार्ट। स्टार्ट। और एक और जो एरे दिया है वो क्या है? स्टॉप। क्या? स्टॉप। सबसे पहला काम साइज निकाल लीजिए। दोनों का साइज सेम ही रहेगा। जितने लोग चेक इन करेंगे उतने लोग चेक आउट करेंगे हमेशा। तो किसी का एक का साइज निकाल लीजिए। स्टार्ट डॉट साइज दोनों को सॉर्ट कर लीजिए। दोनों को सॉर्ट कर लीजिए क्योंकि हम लोग को क्रोनोलॉजी से चलना है।",
+      "source": "caption",
+      "english_text": "Are. What two ways are you given to say sorry? Arrays are given. Start and Stop. So this will be int meet. The one array given to you is start. Start. And what is the one more array given? Stop. What? Stop. The first thing to do is find out the size. The size of both will remain the same. There will always be as many people checking out as people checking in. So find out the size of one. Sort both start dot sizes. Sort both of them because we have to follow chronology."
+    },
+    {
+      "start_time": 1672.08,
+      "end_time": 1700.87,
+      "text": "टाइम के हिसाब से देखना है। सॉर्ट स्टार्ट डॉट बिगिन स्टार्ट डॉट बिगिन और स्टार्ट डॉट एंड। जो लोग बोलते हैं आप कोड का लिंक नहीं देते हैं। यही है कोड का लिंक। ये कोड देखो। कोड मेरा लिंक देख के कॉपी पेस्ट करके क्या होगा? ये कोड है। यही कोड हम वहां पे चलाते हैं। वहां पे कुछ अलग नहीं चलाते हैं। तो कोड का लिंक क्यों चाहिए? मतलब कहां आपको कॉपी पेस्ट करना है उसको? ये देखिए। दूसरा उसको अभी सॉर्ट कर लीजिए। इसीलिए हम बस पूरा कोड लिख रहे हैं। सूडो कोड नहीं लिख रहे हैं।",
+      "source": "caption",
+      "english_text": "Have to see according to time. Sort start dot begin start dot begin and start dot end. People who say you don't give a link to the code. This is the link to the code. Look at this code. What will happen if you copy and paste the code after seeing my link? This is the code. This is the code we run there. Nothing different is done there. So why do you need a link to the code? Meaning where do you have to copy paste it? Look at this. Second, sort it now. That's why we're just writing the complete code. Not writing pseudo code."
+    },
+    {
+      "start_time": 1700.88,
+      "end_time": 1732.549,
+      "text": "एंड जब तक कॉपी में लिखने का आदत नहीं डालिएगा नहीं आएगा कोडिंग। ठीक है? तो वो सब फालतू बात है कि हम आपको टाइपिस्ट नहीं बनना है। दोनों को सॉर्ट कर लिया। ठीक है? क्या-क्या लेना था? इंट रूम = 0 इंट रेस्ट = 0 शुरू में कोई रूम नहीं है। ओके? आइए अपना टू पॉइंटर वाला लूप चलाते हैं। हां, दो और वेरिएबल चाहिए। इंट i = 0, j = 0 दोनों स्टार्ट पे व्हाइल i &lt; nस n ठीक? इफ",
+      "source": "caption",
+      "english_text": "And unless you develop the habit of writing in a notebook, you will not learn coding. Ok? So all that nonsense that we say that you do not have to become a typist. Sorted both of them. Ok? What all had to be taken? Int Room = 0 Int Rest = 0 There is no room initially. Ok? Let's run our two pointer loop. Yes, two more variables are needed. Int i = 0, j = 0 both start while i < ns n ok? If"
+    },
+    {
+      "start_time": 1732.559,
+      "end_time": 1765.11,
+      "text": "स्टार्ट i इज़ लेस &lt; स्टॉप j इज़ लेस &lt; स्टॉप j क्या करते थे? रूम प्लस प्लस इस रूम को अपने रिजल्ट में रिकॉर्ड कर लीजिए। ये होगा मैक्स रेस्ट ऑफ रूम आई को प्लस प्लस एल्स मतलब कि या तो अगर स्टॉप जे बड़ा हो या दोनों इक्वल भी हो तो कोई फर्क नहीं पड़ता। पहले वो खाली कर देगा इक्वल में। एल्स कुछ नहीं करना है। रूम माइनस माइनस j प्लस प्लस इसको बंद लूप बंद और क्या?",
+      "source": "caption",
+      "english_text": "Start i is less < stop j is less < stop j What did you do? Room Plus Plus Record this room in your results. This will be max rest of room i co plus plus els meaning that either if the stop j is larger or both are equal then it does not matter. First he will empty it in equal. Nothing else to do. Room minus minus j plus plus this off loop off what else?"
+    },
+    {
+      "start_time": 1765.12,
+      "end_time": 1799.83,
+      "text": "रिटर्न प्लस ये देखिए इतना छोटा सा कोड है इसका इतना छोटा सा क्या है इसका कोड है पूरा कॉमन सेंस का कोड है ये पूरा क्या है ये कॉमन सेंस का कोड है ये टाइम कॉम्प्लेक्सिटी सॉर्ट कर दिए n log n स्पेस कॉम्प्लेक्सिटी कुछ नहीं कुछ नहीं इस तरीके के जितने भी क्वेश्चन आएंगे इसी टाइम से इसी तरीके से बनेंगे आपको टाइम के हिसाब से देखना पड़ेगा क्रोनोलॉजी समझिए टाइम के हिसाब से देखिए अगर वो टाइम चेक इन का टाइम है। अपने रिसोर्स को बढ़ा दीजिए। रूम क्या है? आपका रूम रिसोर्स है ना? तो ऐसा बहुत सारा आएगा। ऑपरेटिंग",
+      "source": "caption",
+      "english_text": "Return Plus Look, this is such a small code, what is it so small, its code is the complete common sense code, what is this complete, this is the common sense code, it is sorted by time complexity n log n space complexity nothing nothing nothing all the questions of this method that will come from the same time will be made in the same way, you will have to look according to the time, understand the chronology, look according to the time if that time is the time of check in. Increase your resources. What is room? Your room is a resource, right? So a lot of this will come. operating"
+    },
+    {
+      "start_time": 1799.84,
+      "end_time": 1826.23,
+      "text": "सिस्टम में क्वेश्चन पूछ देता है। बहुत सारे प्रोसेस आ रहे हैं। कितने सीपीू चाहिए? मतलब बोले ना बहुत वैरायटी ऑफ़ कहानी बन सकता है इसमें। और कहानी गढ़ने लगिएगा तो बहुत बनेगा। तो कितने प्रोसेस आ रहे हैं? कितना थ्रेड लगेगा। अरे जो भी है। प्रोसेस आएगा। थ्रेड बढ़ा लीजिएगा। प्रोसेस जाएगा। थ्रेड घटा लीजिएगा। मतलब चेकिंग मतलब एंट्री जब होगा अपना रिसोर्स बढ़ा लेना है। उसको रिकॉर्ड कर लेना है। एग्जिट होगा अपना रिसोर्स कम कर लेना। कोई भी एक रिसोर्स कम कर दीजिएगा। ऐसा वेरिएबल बना के फर्क नहीं पड़ता है कौन सा गेस्ट किस रूम में रहेगा।",
+      "source": "caption",
+      "english_text": "Asks questions in the system. A lot of processes are coming. How many CPUs do you need? Meaning, a lot of variety of stories can be made in it. And if you start creating stories, a lot will happen. So how many processes are coming? How much thread will it take? Hey whatever. The process will come. Increase the thread. The process will go. Decrease the thread. Checking means increasing your resources when there is entry. It has to be recorded. The exit would be to reduce your resources. Reduce any one resource. By creating such a variable it does not matter which guest will stay in which room."
+    },
+    {
+      "start_time": 1826.24,
+      "end_time": 1859.269,
+      "text": "नहीं आपसे बस नंबर ऑफ़ रूम पूछा है तो नंबर ऑफ़ रूम आपको ऐसे करके मिल जाएगा। तो ये तो था ये क्वेश्चन। चलिए एक छोटा सा रिवीज़ कर लेते हैं। हां अभी भी बोलेंगे कि इसमें तीन क्वेश्चन बचा हुआ है मर्ज इंटरवल में। वो तीन क्वेश्चन हम इसलिए नहीं करा रहे क्योंकि उसमें थोड़ा एडवांस डेटा स्ट्रक्चर। उसमें क्या चाहिए? हिप वगैरह चाहिए। तो हिप जब पढ़ेंगे तो ये सब क्वेश्चन आपको आने लगेगा। तो यही था मर्ज इंटरवल। मर्ज इंटरवल में क्या-क्या था? सबसे पहले तो रेंजेस पे काम करता है ये। किस पे? स्टार्ट और स्टॉप पे स्टार्ट और स्टॉप पे एक कैटेगरी जो क्वेश्चन होती है कि जिसमें आपको मर्ज करना होता है मर्ज या",
+      "source": "caption",
+      "english_text": "No, I have just asked you for the room number, so you will get the room number in this way. So this was this question. Let's do a little revision. Yes, we will still say that there are three questions left in the merge interval. We are not asking those three questions because they have some advanced data structure. What is needed in that? Need hip etc. So when you read HIP, all these questions will come to you. So this was the merge interval. What was there in the merge interval? First of all, it works on ranges. On what? Start and Stop Pe Start and Stop Pe is a category question in which you have to merge or"
+    },
+    {
+      "start_time": 1859.279,
+      "end_time": 1892.87,
+      "text": "तो ओवरलैप फाइंड करना होता है। ओवरलैप फाइंड करना होता है या तो इंटरसेक्शन फाइंड करना होता है। कुछ भी ऐसा करना होता है। उसकी एक क्या होती है खास बात? स्टार्ट से सॉर्ट करना है आपको। स्टार्ट से सॉर्ट करना है रेंजेस को। फिर अपना काम करना है। ओवरलैप कैसे पता चलेगा? अगर आप दो रेंजेस देख रहे हैं तो अगर एंड वन ग्रेटर दैन इक्वल टू स्टार्ट टू इसका क्या मतलब होता है? ओवर लैप। ओवरलैप हो गया तो मर्ज कैसे करते थे? ये मिलके क्या बन जाएगा दोनों? पहला तो इसका स्टार्ट वन ही रहेगा और दूसरा रहेगा मैक्स ऑफ़ एंड वन एंड",
+      "source": "caption",
+      "english_text": "So overlap has to be found. Either overlap has to be found or intersection has to be found. Something has to be done. What is the special thing about it? You have to sort from the start. Ranges have to be sorted from the start. Then you have to do your work. How to detect overlap? If you are looking at two ranges, what does it mean if the end one is greater than equal to the start one? Over lap. If there is overlap then how to merge? What will these two become together? First, its start will be one and second, its maximum will be one and end."
+    },
+    {
+      "start_time": 1892.88,
+      "end_time": 1925.35,
+      "text": "एंड टू। इस तरीके से सारा ओवरलैपिंग का क्वेश्चन हो जाएगा। इंसर्ट इंटरवल का क्वेश्चन हो जाएंगे। इंटरसेक्शन ऑफ़ टू रेंजेस में क्या किए थे? यही मर्ज टू सॉर्टेड एरे वाला अप्रोच किए थे। अ दो एरे को दो रेंज को दे के चलते थे। जो रेंज छोटा होता था जिसका स्टार्ट छोटा होता था उससे हम लोग ये वाला एल्गोरिदम लगाते थे और इसको मर्ज करके अपने आंसर में लिख लेते थे। जिसको आप छोटा समझ रहे हैं उसको आप बढ़ाते थे। यही है। जिसका एंड टाइम छोटा होता था उसको बढ़ा देते थे। वो अच्छा क्वेश्चन था। ठीक है? इस वाले क्वेश्चन में क्या किए? कभी भी आपको बोला जाए कि बहुत सारे एंट्री हैं। बहुत सारे एग्जिट",
+      "source": "caption",
+      "english_text": "And to. In this way the entire question of overlapping will be resolved. There will be questions about insert interval. What was done at the Intersection of Two Ranges? This was the merge to sorted array approach. A. Two arrays were given to two ranges. We used to apply this algorithm to the range which was small and had a small start and merged it and wrote it in our answer. You used to increase what you considered small. This is it. Whose end time was short, it was extended. That was a good question. Ok? What did you do in this question? Anytime you are told that there are too many entries. lots of exits"
+    },
+    {
+      "start_time": 1925.36,
+      "end_time": 1958.31,
+      "text": "हैं। बहुत सारे क्या है? एंट्री है। बहुत सारे एग्जिट हैं। आपको मिनिमम नंबर ऑफ़ मिनिमम नंबर ऑफ़ रिसोर्सेज पता करने हैं। रिसोर्सेज मतलब कुछ भी हो सकता है। रूम, स्टेशन, थ्रेड्स, सीपीू कुछ भी। तो क्या करना है? टाइम के हिसाब से चलना है। सबसे पहले तो सबसे पहले तो टाइम के हिसाब से चलना है। शुरू से अंत तक। अगर एंट्री है अपने रिसोर्स को बढ़ा देना है। अगर एग्जिट है अपने रिसोर्स को घटा देना है। अपने रिसोर्स को घटा देना है। बस हर क्वेश्चन बन जाएगा। तो ये छोटा सा क्वेश्चन था।",
+      "source": "caption",
+      "english_text": "Are. What is a lot of? There is entry. There are lots of exits. You have to find the minimum number of resources. Resources can mean anything. Rooms, stations, threads, CPUs, anything. So what to do? Have to move according to time. First of all, we have to move according to time. From beginning to end. If there is entry, you have to increase your resources. If there is an exit, you have to reduce your resources. We have to reduce our resources. Just about every question will be asked. So this was a small question."
+    },
+    {
+      "start_time": 1958.32,
+      "end_time": 1978.679,
+      "text": "बहुत अच्छा क्वेश्चन बहुतेंट क्वेश्चन था। छोटा सा रिवीजन भी था। कल से स्टैक शुरू होने जा रहा है। कल से स्टक शुरू होने वाला है। स्टैक और मोनोटोनिक स्टक भी अच्छा है। बहुत बहुत डीप टॉपिक है। डीप पैटर्न है। तो वो भी हम लोग कल से स्टार्ट कर देंगे। चलिए मिलते हैं कल। है ना? चलिए बाय-ब।",
+      "source": "caption",
+      "english_text": "Very good question, many questions. There was also a small revision. Stack is going to start from tomorrow. The strike is going to start from tomorrow. Stack and monotonic stack is also good. It is a very deep topic. There is a deep pattern. So we will start that also from tomorrow. Let's meet tomorrow. Isn't it? Let's go bye-bye."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

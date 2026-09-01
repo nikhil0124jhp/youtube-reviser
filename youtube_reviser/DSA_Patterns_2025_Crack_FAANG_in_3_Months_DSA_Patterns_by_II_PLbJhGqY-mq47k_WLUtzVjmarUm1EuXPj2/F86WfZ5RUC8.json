@@ -1,0 +1,534 @@
+{
+  "video_id": "F86WfZ5RUC8",
+  "video_title": "DSA PATTERNS Episode 26 | Prefix Sum Pattern Introduction | DSA ROADMAP 2025",
+  "video_number": 29,
+  "chunks": [
+    {
+      "start_time": 2.55,
+      "end_time": 36.47,
+      "text": "वेलकम है जी एपिसोड 26 में सबका किसके? प्रीफिक्स सम डीएसए पैटर्न। बहुत रिक्वेस्टेड पैटर्न था। इस वीडियो के अंत तक आप लोग सब सीख जाएंगे आप लोग पूरा फ्लो चार्ट सीख जाएंगे। कौन सा डेटा स्ट्रक्चर लगा के प्रीफिक्स सम सॉल्व किया जाता है? कैसे सॉल्व किया जाता है? चार पांच ही तरीके के उसमें पैटर्न होते हैं। और आप लोग उसका टेंप्लेट भी सीख जाएंगे कि ये ये काम करते हैं जैसे हम लोग स्लाइडिंग विंडो में सीखे थे। उससे पहले जिसकोजिसको शीट नहीं मिली है डिस्क्रिप्शन में है। पैटर्न अपडेटेड है, क्वेश्चन अपडेटेड है। जो लोग पहली बार आ रहे हैं, मेरा नाम प्रत्युष है। हम आकामाई में है। डीएसएफ पैटर्न सिखाते हैं। रटवाते नहीं है। चलिए प्रीफिक्स सम जो है ना बहुत पसंदीदा पैटर्न है इंटरव्यूअर्स का और बच्चों का भी। क्योंकि बहुत सारा इसमें क्वेश्चन",
+      "source": "caption",
+      "english_text": "Welcome Hai Ji Episode 26 Sabka Kiske? Prefix Sum DSA Pattern. Was a much requested pattern. By the end of this video you guys will learn everything, you guys will learn the complete flow chart. Which data structure is used to solve prefix sum? How is it solved? There are only four or five types of patterns in it. And you will also learn its template that it does the same work as we learned in sliding window. For those who have not received the sheet before that, it is in the description. Pattern is updated, question is updated. For those who are coming for the first time, my name is Pratyush. We are in Akamai. DSF teaches patterns. Don't make me memorize. Come, prefix 'sum' is a very favorite pattern of interviewers and children too. Because there are a lot of questions in this"
+    },
+    {
+      "start_time": 36.48,
+      "end_time": 71.429,
+      "text": "बनता है। कहने को कॉन्सेप्ट बहुत सिंपल होता है। लेकिन इस कांसेप्ट से कितना हार्ड-हार्ड क्वेश्चन बन जाएगा, आप खुद देखेंगे। चलिए, तो बिना टाइम वेस्ट किए। ये सब फ्लो चार्ट और टेंप्लेट का ज्ञान देने से पहले तो आपको समझाना जरूरी है कि प्रीफिक्स सम होता क्या है। है ना? सही बात है। देखिए प्रीफिक्स का मतलब होता है पहले। पहला मतलब पहले और सम का मतलब होता है सम। तो प्रीफिक्स सम मतलब पहला सम। एक तरीके से आप आप मान के चलिए कि ये जो पूरा टेंपलेट है ना ये सिर्फ एरे पे ही लगता है। ये सिर्फ एरे पे ही लगता है। बहुत आसान भाषा में अगर प्रीफिक्स सम आपको समझाया जाए तो अगर आपसे कोई अगर आपसे कोई",
+      "source": "caption",
+      "english_text": "Is made. The concept is very simple to say the least. But you will see for yourself how difficult a question this concept will pose. Come on, without wasting any time. Before giving the knowledge of all these flow charts and templates, it is important to explain to you what is Prefix Sum. Isn't it? That's correct. See, prefix means first. First means first and sam means even. So prefix even means first even. In a way, you can assume that this is the entire template and it appears only on the array. This happens only on the array. If the prefix sum is explained to you in very simple language then if someone from you if someone from you"
+    },
+    {
+      "start_time": 71.439,
+      "end_time": 103.27,
+      "text": "पूछता है कि हम अगर इंडेक्स टू पे खड़े हैं। हमको बताओ कि इंडेक्स टू के पहले इस एरे में क्या सम चल रहा था? अभी तक क्या सम मतलब? अभी तक इसमें एरे ऑफ़ 0 प्लस एरे ऑफ़ वन में क्या था? इसी को क्या कहते हैं? प्रीफिक्स सम। प्रीफिक्स मतलब पहले i = 2 के पहले क्या चल रहा था? इसको क्या बोलते हैं? प्रीफिक्स सम। हो सकता है i = 2 इसको यूज़ करके कुछ डिसीजन लेना चाहता हो। और जब आप यहां पे आएंगे, i = 3 पे आएंगे। आप फिर से ये सवाल पूछेंगे कि आप बताओ एरे ऑफ़ 0 + एरे ऑफ़ 1 + एरे ऑफ़ टू में क्या चल रहा था?",
+      "source": "caption",
+      "english_text": "Asks if we are standing to pay index. Tell us what was going on in this array before index two? What does even mean yet? So far, what was there in the array of 0 plus the array of one? What is this called? Prefix even. Prefix means what was going on before i = 2? What is this called? Prefix even. Maybe you want to take some decisions using i = 2. And when you come here, you will come to i = 3. You will again ask this question, tell me what was going on in Array of 0 + Array of 1 + Array of Two?"
+    },
+    {
+      "start_time": 103.28,
+      "end_time": 129.109,
+      "text": "हो सकता है एरे ऑफ़ थ्री इसको यूज़ करके कुछ डिसीजन लेना चाहता हो। इसी कांसेप्ट को कहते हैं प्रीफिक्स सम। तो ये तो ये कोई एल्गोरिदम नहीं है। ये क्या है? कॉन्सेप्ट है। ये कॉन्स इसको एल्गोरिदम नहीं कह सकते। ये कोई एल्गोरिदम नहीं है। कॉन्सेप्ट है या ये एक डीएसए पैटर्न है। पैटर्न है जिस पे कुछ तरीके के क्वेश्चन बनते हैं। बहुत स्पेशल क्वेश्चन बनते हैं जो इसी पैटर्न से सॉल्व होंगे और कभी सॉल्व नहीं होंगे। अच्छा। चलिए तो फ्लो चार्ट देख लेते हैं। तभी आप लोग को ज्यादा इंटरेस्ट आता है। फ्लो चार्ट देख लीजिए।",
+      "source": "caption",
+      "english_text": "It is possible that Array of Three wants to use this to take some decisions. This concept is called prefix sum. So this is not an algorithm. What is this? The concept is. These cons cannot be called algorithms. This is not an algorithm. Is it a concept or is it a DSA pattern. There is a pattern on which certain types of questions are made. Very special questions are created which will be solved by this pattern and will never be solved. Good. Let us see the flow chart. Only then do you people get more interest. Look at the flow chart."
+    },
+    {
+      "start_time": 129.119,
+      "end_time": 164.07,
+      "text": "फ्लो चार्ट में क्या है? सबसे पहली बात है कि ये एरे और सब एरे का क्वेश्चन है। ये एरे और सब एरे का क्वेश्चन होना चाहिए। पक्की होनी चाहिए। उसमें दो तरीके की चीजें हो सकती हैं। या तो आपको सम ऑफ सब एरेज पूछा हो किसी भी तरीके से सम ऑफ़ सब एरेज नंबर ऑफ़ सब एरेज़ विद सम काउंट ऑफ़ सब एरेज़ विद सम अ सब एरे हैविंग मैक्सिमम सम सब एरे हैविंग मिनिमम सम ऐसा कुछ पूछा हो या फिर आपको सम ऑफ़ लेफ्ट राइट पूछा हो। लेफ्ट राइट का क्या मतलब है? आपको बोला हो कि एरे भाई एरे के हर इंडेक्स पे जाओ और ज़ीरो से लेके उस इंडेक्स के पहले तक का सम को लेफ्ट बोल दिया। उस इंडेक्स के बाद से लेके अंत तक के सम को राइट बोल दिया। और",
+      "source": "caption",
+      "english_text": "What is in flow chart? The first thing is that this is a question of array and sub array. This should be a question of array and sub array. It should be solid. There can be two types of things in it. Either you have been asked sum of sub arrays in any way, number of sub arrays with sum count of sub arrays with sum a sub array having maximum sum sub array having minimum sum or you have been asked sum of left right. What does left right mean? You may have been told, 'Hey brother, go to each index of the array and write the sum from zero to the first of that index on the left. The sum from that index till the end was called right. and"
+    },
+    {
+      "start_time": 164.08,
+      "end_time": 197.67,
+      "text": "उन दोनों में कुछ ऐसा पिवट्ट या इक्विलिब्रियम या ऐसा कुछ फाइट करने की कोशिश करो। मतलब कि लेफ्ट और राइट के बीच में कुछ कंडीशन खोजने की कोशिश करो। इस तरीके का क्वेश्चन हो सकता है। अगर इस तरीके का क्वेश्चन है। अगर इस तरीके का क्वेश्चन है तो आप बहुत अच्छे लक में हैं। इसमें आपको बहुत कुछ नहीं करना है। कोई स्पेशल डेटा स्ट्रक्चर आपको नहीं चाहिए होता है। आप सिंपल इसको वेरिएबल से या तो एरे से कर सकते हैं। हम लोग सीखेंगे कैसे कर सकते हैं। तो आप बहुत लकी हैं। अगर ऐसा क्वेश्चन मिलता है तो वेरी गुड। ये प्रीफिक्स सम का क्वेश्चन है। बधाई हो। नहीं तो अगर सम ऑफ सब एरेस का क्वेश्चन है और और एक बहुत इंपॉर्टेंट बात एरे में नेगेटिव नंबर्स भी हैं। एरे में नेगेटिव क्योंकि आप देखिए याद करिए जो लोग शुरू से",
+      "source": "caption",
+      "english_text": "Try to fight some pivot or equilibrium or something like that between them. Meaning, try to find some condition between left and right. There may be questions like this. If there is a question like this. If you have this type of question then you are in very good luck. You don't have to do much in this. You do not need any special data structure. You can simply do this with a variable or an array. We will learn how to do it. So you are very lucky. If you get such a question then very good. This is a question of prefix sum. Congratulations. Otherwise, if there is a question of sum of sub arrays and one more important thing, there are negative numbers in the array also. Negative in the array because you see remember the people who from the beginning"
+    },
+    {
+      "start_time": 197.68,
+      "end_time": 230.149,
+      "text": "पढ़ रहे हैं। हम लोग ऑलरेडी ये सब एरे वगैरह का बात कर चुके हैं बहुत डीप में। किसमें? स्लाइडिंग विंडो में। स्लाइडिंग विंडो की पूरी चर्चा जो थी इसी पे तो थी कि सब एरे कैसे निकालते हैं? विंडो कैसे निकालते हैं? तो अब ये क्यों पढ़ना पड़ रहा है? जब स्लाइडिंग विंडो इतने अच्छे से पढ़े थे। तो ये क्या तुम बार-बार अलग-अलग चीज पढ़ा रहे हो एक ही चीज़ के लिए पांच चीज पढ़ा। नहीं। स्लाइडिंग विंडो नेगेटिव में काम नहीं करता है। स्लाइडिंग विंडो नेगेटिव में काम नहीं करता है। स्लाइडिंग विंडो का क्वेश्चन याद कीजिए। क्या किसी भी क्वेश्चन में आज तक आप कोई नेगेटिव वैल्यू देखे थे? नहीं देखे होंगे क्योंकि स्लाइडिंग विंडो नेगेटिव में काम ही नहीं करता है। बताएंगे क्यों नहीं करता है?",
+      "source": "caption",
+      "english_text": "Are studying. We have already talked about all this etc. in great depth. In what? In sliding window. The entire discussion about sliding window was on how to extract the sub-array? How to remove a window? So why do you have to read this now? When Sliding Windows Read So Well. So is this that you are teaching different things again and again, teaching five things for the same thing. No. Sliding windows don't work in negatives. Sliding windows don't work in negatives. Remember the question of sliding window. Have you seen any negative value in any question till date? Must not have seen because sliding window does not work in negative. Will you tell me why it doesn't?"
+    },
+    {
+      "start_time": 230.159,
+      "end_time": 263.11,
+      "text": "छोटा सा बता देंगे। तो एरे में नेगेटिव नंबर होना चाहिए। क्योंकि पॉज़िटिव है तो स्लाइडिंग विंडो आप लगा सकते हैं। स्लाइडिंग विंडो हर तरीके के क्वेश्चन कर लेता है अच्छे से। लेकिन ऐ नेगेटिव है। अच्छा। उसके बाद अगर आपसे कोई एग्जैक्ट चीज पूछी गई है। देखिए ये जो सम है ना सम ij इसका मतलब किसी एक सब एरे कोई दो इंडेक्स उनके बीच का सब एरे उनका बीच का सब एरे उसका सम तो अगर आपसे या तो इक्वल इक्वल टू k मतलब एग्जैक्ट पूछा गया है या फिर आपसे मॉड्यूलस k = 0 मतलब कि जो सम होगा या तो वो एग्जैक्ट किसी k हो ऐसा नंबर ऑफ़ सब एरे बताओ या तो कुछ ऐसा बताओ",
+      "source": "caption",
+      "english_text": "Let me tell you something small. So the array should contain negative numbers. Because if it is positive then you can install sliding windows. Sliding window handles all types of questions well. But A is negative. Good. After that if you have been asked any exact thing. See, this is even or not even ij, it means any one sub array, any two indexes, the sub array between them, the sub array between them, the sub array between them, its sum, then if you have been asked either equal equal to k means exact or else you have been asked that modulus k = 0 means that whatever will be even, either that exact should be some k, tell such number of sub arrays, or tell something like this."
+    },
+    {
+      "start_time": 263.12,
+      "end_time": 296.629,
+      "text": "जो जिसको हम k से मोड करें तो ज़ीरो आ जाए मतलब जो k का मल्टीपल हो वैसा बताओ। इस कंडीशन में आपको हैश मैप यूज़ करना पड़ता है। किसके लिए? एज ए प्रीफिक्स सम डेटा स्ट्रक्चर। देखिए प्रीफिक्स सम हम क्या बोल रहे हैं बार-बार? प्रीफिक्स सम एक कांसेप्ट है। प्रीफिक्स सम को यूज़ करने के लिए आपको कुछ डेटा स्ट्रक्चर चाहिए। आपको सम स्टोर करने के लिए कुछ चाहिए। आपको या तो एक वेरिएबल चाहिए या तो एक हैश मैप चाहिए या तो एक ट्री चाहिए या तो q चाहिए। कुछ भी चाहिए। तो डेटा स्ट्रक्चर तो आपको चाहिए। अगर ऐसी कंडीशन है कि आपको इक्वल ढूंढना है या तो मॉड्यूल के इक्वल इक्वल टू ज़ीरो ढूंढना है। आपको हैच मैप से काम बन जाएगा आपका। अभी भी बहुत अच्छी बात है।",
+      "source": "caption",
+      "english_text": "Whatever if we modify it by k, it becomes zero, that is, tell us which is the multiple of k. In this condition you have to use hash map. For whom? As a prefix sum data structure. Look at the prefix sum, what are we saying again and again? Prefix sum is a concept. To use prefix sum you need some data structures. You need something to store the sum. You need either a variable or a hash map or a tree or q. Want anything. So you need data structure. If the condition is that you have to find equal or find the module equal to zero. The hatch map will help you. Still a very good thing."
+    },
+    {
+      "start_time": 296.639,
+      "end_time": 329.909,
+      "text": "अगर आपको शॉर्टेस्ट विंडो विद सम ग्रेटर दैन इक्वल टू के यही ये हम बोल रहे थे। ये देखिए। ये एग्जैक्ट क्वेश्चन हम लोग स्लाइडिंग विंडो में पढ़ के आए हैं। ये एग्जैक्ट क्वेश्चन स्लाइडिंग विंडो में पढ़ के आए हैं। इसमें क्या है? इसमें नेगेटिव भी है। स्लाइडिंग विंडो नेगेटिव में नहीं चल सकता है। तो अगर ये क्वेश्चन आपको मिले विथ नेगेटिव आपको एक डीक्यू यूज़ करना पड़ेगा। घबराइएगा मत। अब हमको मालूम है आपको डीक्यू नहीं आता है। पढ़ा देंगे। जब समय तुरंत पढ़ा देंगे मतलब आजकल में ये क्वेश्चन होगा पढ़ा देंगे। और जो तीसरा कैटेगरी होता है ये बहुत हार्ड कैटेगरी है। बहुत कम चांस है कि ये आपसे इंटरव्यू में पूछा जाए। लेकिन अगर आप मान लीजिए Google वगैरह का इंटरव्यू देते हैं तो पूछ",
+      "source": "caption",
+      "english_text": "If you want to know about shortest window with some greater than equal to two, this is what we were talking about. Look at this. We have read these exact questions in the sliding window. These exact questions have been read in the sliding window. What's in it? There is also a negative in this. Sliding window cannot operate in negative. So if you get these questions with negative, you will have to use a DQ. Don't panic. Now we know you don't know DQ. Will teach. When the time comes, we will teach it immediately, that is, these questions will be taught these days. And the third category is a very hard category. There is very little chance that you will be asked this in an interview. But if you give an interview for say Google etc. then ask"
+    },
+    {
+      "start_time": 329.919,
+      "end_time": 361.189,
+      "text": "सकता है। बिल्कुल पूछ सकता है। रेंज सम रेंज सम आपको फाइंड करना है कि ए लेफ्ट और राइट एक रेंज दिया हुआ है उसके बीच का कुछ सम ऐसा ऐसा कुछ क्वेश्चन में वर्डिंग हो। उस समय आपको मर्ज सॉर्ट ऑन प्रीफिक्स एरे बहुत पेचीदा कॉन्सेप्ट है। इसको एक दिन टाइम लेके पढ़ाएंगे। इसको अभी आज या कल या परसों एक घंटे इसको टाइम लेके क्वेश्चन बताया जाएगा। बहरहाल ये बहुत हार्ड है। ये बहुत हार्ड है। ये तो बहुत ईजी है। आपको खुद पता चल जाएगा कितना ईजी है। ये भी इजी है। ये मीडियम है। ये हार्ड है। ऐसा करके इसका फ्लो चार्ट होता है। यही गिन चुन के",
+      "source": "caption",
+      "english_text": "Could. Can absolutely ask. Range Sum Range Sum You have to find that a range is given on the left and right and the wording in the question is something like this. At that time you have to understand that Merge Sort on Prefix Array is a very tricky concept. Will teach this one day in time. Now today or tomorrow or day after tomorrow it will be given a time taken question. However, this is very hard. This is very hard. This is very easy. You will know yourself how easy it is. This is also easy. This is medium. This is hard. By doing this its flow chart is created. by counting this"
+    },
+    {
+      "start_time": 361.199,
+      "end_time": 395.189,
+      "text": "कितने हैं? 1 2 3 4 फोर कैटेगरीज़ ऑफ क्वेश्चन होते हैं। इसके अलावा इसके बाहर से कोई क्वेश्चन नहीं आता है प्रीफिक्स सम पे। अ उसकी गारंटी मेरी है कि इसके बाहर नहीं आएगा। चलिए। टेंप्लेट पे बाद में बात करेंगे। पहले हम लोग कुछ इंपॉर्टेंट बातें कर लेते हैं। सबसे पहला स्लाइडिंग विंडो नेगेटिव पे काम क्यों नहीं करता है? स्लाइडिंग विंडो नेगेटिव पे काम क्यों नहीं करता है? क्योंकि स्लाइडिंग विंडो में हम लोग करते क्या थे? देखिए स्लाइडिंग विंडो में हम लोग करते क्या थे? 0 1 2 3 4 हम लोग हाई को इंक्लूड करते थे अपने रिजल्ट में। हाई",
+      "source": "caption",
+      "english_text": "How many are there? 1 2 3 4 There are four categories of questions. Apart from this, no question comes from outside Prefix Sum Pe. A, I guarantee it that it will not come out of it. Let go. We will talk about templates later. First let us talk about some important things. First of all why doesn't sliding window negative pay work? Why doesn't sliding window work on negative? Because what were we doing in sliding windows? See what we used to do in the sliding window? 0 1 2 3 4 We used to include high in our results. high"
+    },
+    {
+      "start_time": 395.199,
+      "end_time": 430.07,
+      "text": "को हम लोग रिजल्ट में इंक्लूड करते थे और लो को अपने रिजल्ट से बाहर निकालते थे। तो कभी भी हमारा जो सम होता था ना उसको अगर हमको कम करना होता था उसको अगर कम करना होता था तो हम लोग लो को श्रिंक करते थे लो को श्रिंक करते थे अगर हमको कम करना होता था कभी भी हमको सम को अगर बढ़ाना होता था बढ़ाना होता था तो हम लोग हाई को एक्सपेंड करते थे तभी तो बढ़ेगा लेकिन ये बस पॉजिटिव नंबर में पॉसिबल है फॉर एग्जांपल अगर नेगेटिव नंबर आने लगे मान लीजिए यहां -1 है और यहां पे लो है और यहां पे हाई है तो आप देखिए आप जब लो को श्रिंक करेंगे ना इसका मतलब आप अपने सम से",
+      "source": "caption",
+      "english_text": "We included Ko in our results and excluded Lo from our results. So anytime we had an even, if we had to reduce it, if we had to reduce it, we would shrink the low. If we had to reduce, we would shrink the low. Whenever we had to increase the even, if we had to increase it, we would expand the high. Only then will it increase. But this is only possible in positive numbers. For example, if negative numbers start coming, suppose here is -1 and here is low and here is high. So you see, when you shrink the lo, it means that you will"
+    },
+    {
+      "start_time": 430.08,
+      "end_time": 463.51,
+      "text": "-1 को हटा रहे हैं मतलब नेगेटिव नंबर हटा रहे हैं तो भी आपका सम बढ़ जाएगा तो भी आपका सम बढ़ जाएगा उसी तरीके से उसी तरीके से अगर अगर आपके पास एक नेगेटिव नंबर है और आप हाई को एक्सपेंड करके हाई को यहां लाने की कोशिश करते है ना तो आपका सम कम हो जाएगा आपका सम कम हो जाएगा तो पूरी डिसीजन मेकिंग पावर उलट गई आपकी कि हम लोग सम को बढ़ाने के लिए हाई को एक्सपैंड करते थे सम को घटाने के लिए लो को श्रिंक करते थे लेकिन नेगेटिव नंबर आने से लो को श्रिंक करेंगे हो सकता है आपका सम बढ़ जाए हाई को एक्सपैंड करेंगे हो सकता है सम कम हो जाए तो स्लाइडिंग विंडो पूरी तरीके से फेल कर जाता है किसमें? नेगेटिव केस में।",
+      "source": "caption",
+      "english_text": "Removing -1 means even if you are removing the negative numbers, your even will increase, even then your even will increase. In the same way, if you have a negative number and you try to bring the high here by expanding the high, then your even will get reduced. Your even will get reduced, then your entire decision making power is reversed. We used to expand the high to increase the even, we used to shrink the low to reduce the even, but due to the arrival of negative number, the low will be reduced. Shrink it may increase your sum. Expand the high may decrease the sum. Sliding window completely fails in what? In negative case."
+    },
+    {
+      "start_time": 463.52,
+      "end_time": 497.99,
+      "text": "बहुतेंट क्वेश्चन है। इंटरव्यू में पूछा जा सकता है आपसे। याद रखिएगा। चलिए अब आ जाइए। अब आ जाइए कि प्रीफिक्स सम होता क्या है? प्रीफिक्स सम होता क्या है? जैसा कि हम पहले ही बता चुके हैं। प्रीफिक्स सम मतलब एरे के पीछे वाले एलिमेंट का सम। इतना ही होता है। एरे के बाद वाले एलिमेंट को सम को क्या बोलेंगे? सफिक्स सम। सफिक्स मतलब होता है बाद में। सफिक्स सम। ठीक है? एरे में बहुत सिंपल होता है। फॉर एग्जांपल अगर हम आपको एक एरे दें आपको हम बोले कि एरे में ऐसा ऐसा एलिमेंट है वन है, टू है, थ्री है, फोर है और फाइव 0 1 2 3 4 तो",
+      "source": "caption",
+      "english_text": "There are many questions. You may be asked in the interview. Remember this. Come on, come now. Now let us understand what is Prefix Sum? What is prefix even? As we have already told. Prefix sum means the sum of the next element of the array. That's all that happens. What is the next element of the array called 'sum'? Suffix even. Suffix means later. Suffix even. Ok? Array is very simple. For example, if we give you an array, we say that the array has such elements, one, two, three, four and five, then 0 1 2 3 4."
+    },
+    {
+      "start_time": 498.0,
+      "end_time": 530.63,
+      "text": "किसी भी इंडेक्स का किसी भी इंडेक्स का प्रीफिक्स सम क्या होगा? किसी भी इंडेक्स का प्रीफिक्स सम क्या होगा? उस इंडेक्स के पहले तक का सम मतलब कि अगर हम i = 2 की बात करें, इसका प्रीफिक्स सम होगा एरे ऑफ़ 0 प्लस एरे ऑफ़ वन। सिंपल बात है। उस इंडेक्स के पीछे तक अगर हम i = 4 की बात करें तो इसका प्रीफिक्स सम होगा एरे ऑफ़ 0 प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ 2 + एरे ऑफ़ थ्री। सिंपल। लेकिन हमें अगर i = 0 की बात करें। इसका प्रीफिक्स सम क्या होगा? इसका प्रीफिक्स कुछ नहीं होगा। इसका प्रीफिक्स",
+      "source": "caption",
+      "english_text": "What will be the prefix sum of any index? What will be the prefix sum of any index? The sum till the first of that index means that if we talk about i = 2, its prefix sum will be array of 0 plus array of ones. It's a simple thing. Till the back of that index, if we talk about i = 4, its prefix sum will be array of 0 plus array of one plus array of 2 + array of three. Simple. But let us consider if i = 0. What will be its prefix sum? Its prefix will be nothing. its prefix"
+    },
+    {
+      "start_time": 530.64,
+      "end_time": 563.35,
+      "text": "सम 0 होगा। इसका प्रीफिक्स सम 0 होगा। क्योंकि i = 0 के आगे कुछ है ही नहीं। मतलब पीछे कुछ है ही नहीं। i = 0 स्टार्ट हो रहा है। उसी तरीके से i = 1 का प्रीफिक्स सम क्या होगा? सिर्फ a 0 होगा। और कुछ नहीं होगा ना। इंडेक्स के पहले वाले सम को प्रीफिक्स सम बोलते हैं। यही कांसेप्ट होता है। अब इसमें हम डेटा स्ट्रक्चर का बात क्यों किए? इतना बड़ा-बड़ा dq और pq ये सब क्यों किए? क्योंकि प्रीफिक्स सम तो एक कांसेप्ट है। इस सम को आप स्टोर कैसे करते हैं? इस सम को आप अभी तो जैसे मान लीजिए कि एरे में है तो पीछे वाले सम को आप वेरिएबल में स्टोर कर लिया या तो एरे में स्टोर कर लिया बहुत अच्छी बात है। लेकिन ऐसा जिंदगी",
+      "source": "caption",
+      "english_text": "The sum will be 0. Its prefix will be 0. Because there is nothing beyond i = 0. Meaning there is nothing behind. i=0 is starting. In the same way what will be the prefix sum of i = 1? Only a will be 0. Nothing else will happen, right? The sum before the index is called prefix sum. This is the concept. Now why did we talk about data structure in this? Why did such big DQ and PQ do all this? Because prefix sum is a concept. How do you store this amount? For example, if you assume that this sum is in the array then you can either store the previous sum in a variable or in an array, it is a very good thing. but such is life"
+    },
+    {
+      "start_time": 563.36,
+      "end_time": 588.47,
+      "text": "में आपके मौके आएंगे। जब सिर्फ एक वेरिएबल या एक एरे से बात नहीं बनेगी। आपको इस सम क्या है? ये पीछे का जो सम है ना ये जो पीछे का सम है ना ये एक इंफॉर्मेशन है। ये एक इंफॉर्मेशन है। आप इस इंफॉर्मेशन को कैसे स्टोर करेंगे कि आपको ज्यादा से ज्यादा फायदा हो सके। उस काम के लिए ये डेटा स्ट्रक्चर जो फ्लो चार्ट में लिखा हुआ है ना ये सब ये सब ये सब काम आता है। उसी काम के लिए ये सब काम आता है। ठीक है? चलिए।",
+      "source": "caption",
+      "english_text": "Your opportunities will come. When just one variable or one array won't suffice. What is it to you right now? This is an information. This is an information. How will you store this information so that you can get maximum benefit? For that work, this data structure which is written in the flow chart, all these are useful. All this is useful for the same purpose. Ok? Let go."
+    },
+    {
+      "start_time": 588.48,
+      "end_time": 616.71,
+      "text": "तो मान लीजिए मान लीजिए एक बहुत सिंपल प्रोग्राम कर लेते हैं। ये शीट में नहीं है लेकिन जरूरी है समझना इसको। इसको समझना जरूरी है। अगर हम बोलते हैं कि ये एक आपका एरे है। 1 2 3 4 5 0 1 2 3 4 हम आपसे क्वेश्चन पूछे हैं कि सारे लेफ्ट वैल्यूज़ प्रिंट करो। लेफ्ट वैल्यूज़ मतलब हर इंडेक्स का प्रीफिक्स सम प्रीफिक्स सम प्रिंट करो। ठीक है? i = 0 के लिए कुछ मत करो। i = 0 के लिए ज़ीरो प्रिंट कर दो।",
+      "source": "caption",
+      "english_text": "So, let's say we make a very simple program. This is not in the sheet but it is important to understand it. It is important to understand this. If we say this one is your array. 1 2 3 4 5 0 1 2 3 4 We have asked you to print all the left values. Left values ​​mean print the prefix sum of each index. Ok? Do nothing for i = 0. Print zero for i = 0."
+    },
+    {
+      "start_time": 616.72,
+      "end_time": 647.99,
+      "text": "बाकी के लिए तो उसके पीछे पीछे का सम प्रिंट करो। तो इसका सबसे बेसिक तरीका क्या है? [खांसने की आवाज़] सॉरी। सबसे बेसिक तरीका क्या है? आप एक और एरे बना लीजिए। क्या? एक और एरे बना लीजिए। उसी साइज का उसी साइज का जो आपका ओरिजिनल एरे है। 0 1 2 3 4 इसका हम नाम देंगे प्रीफिक्स। प्रीफिक्स। शुरुआत के लिए सब में ज़ीरो डाल दीजिए। शुरुआत के लिए सब में ज़ीरो डाल दीजिए। ठीक है? अब अब i = 0 के लिए तो कुछ करना ही नहीं है। i = 0 के लिए वो ज़ीरो ही रहेगा। i = 1 i = 1 में",
+      "source": "caption",
+      "english_text": "For the rest, print the number behind it. So what is the most basic method? [coughing sound] Sorry. What is the most basic method? You create another array. What? Create another array. Same size as your original array. 0 1 2 3 4 We will name it prefix. Prefix. To begin with, put a zero in all. To begin with, put a zero in all. Ok? Now there is nothing to be done for i = 0. For i = 0 it will remain zero. i = 1 in i = 1"
+    },
+    {
+      "start_time": 648.0,
+      "end_time": 682.15,
+      "text": "प्रीफिक्स एरे में क्या रहना चाहिए? a0 a0 रहना चाहिए। आप मानते हैं इस बात को। i = 2 के लिए क्या है? a0 + a1 ठीक है? i = 3 में क्या रहना चाहिए? a0 + a1 + a2 यही होना चाहिए। i = 4 के लिए क्या होना चाहिए? a0 + a1 + a2 + a3 यही होना चाहिए ना भैया? हां। कोई पैटर्न दिख रहा होगा आपको। a0 a0 + a1 a0 + a1 +",
+      "source": "caption",
+      "english_text": "What should remain in the prefix array? a0 should remain a0. You accept this. What is for i = 2? a0 + a1 is ok? What should remain in i = 3? This should be a0 + a1 + a2. What should happen for i = 4? a0 + a1 + a2 + a3 should be this, right? Yes. You must be seeing some pattern. a0 a0 + a1 a0 + a1 +"
+    },
+    {
+      "start_time": 682.16,
+      "end_time": 715.11,
+      "text": "a2 a0 + a1 + a2 + a3 कुछ पैटर्न दिख रहा होगा। आइए इसको हम प्रीफिक्स एरे के इंडेक्स में लिखते हैं तो और ज्यादा दिखने लगेगा। आइए प्रीफिक्स ये है ज़ीरो इक्वल टू एरे ऑफ़ ज़ीरो। ये है एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़ वन। सॉरी प्रीफिक्स अ ज़ीरो नहीं प्रीफिक्स वन। प्रीफिक्स वन। क्योंकि प्रीफिक्स ज़ीरो कुछ नहीं होगा। प्रीफिक्स जीरो मतलब प्रीफिक्स जीरो डिनोट करता है कि जीरो से पहले वाले सारे सम जीरो से पहले कोई इंडेक्स नहीं है तो वो जीरो होगा। अच्छा",
+      "source": "caption",
+      "english_text": "a2 a0 + a1 + a2 + a3 Some pattern might be visible. Let us write this in the index of the prefix array and it will become more visible. Let's prefix this is zero equal to two array of zero. This is array of zero plus array of one. Sorry prefix a zero not prefix one. Prefix one. Because prefix zero will mean nothing. Meaning of Prefix Zero Prefix zero denotes that all the sums before zero if there is no index before zero will be zero. good"
+    },
+    {
+      "start_time": 715.12,
+      "end_time": 746.629,
+      "text": "और ये हो जाएगा 0 प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ टू ये क्या हो जाएगा? एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ टू प्लस एरे ऑफ़ थ्री। ठीक है? यही होगा ना भाई। प्रीफिक्स आपको वही तो प्रीफिक्स बोलता है कि यही तो करना है। तो ये कर लीजिए। प्रीफिक्स थ्री और प्रीफिक्स फोर। तो एक तरीका तो ये है कि आप ऐसे करके अपना एरे बिल्कुल बना सकते हैं। आप ये एल्गोरिदम यूज़ करके अपना एरे बना सकते हैं। नेस्टेड लूप चलाइए और बनाते रहिए।",
+      "source": "caption",
+      "english_text": "And this will become 0 plus array of one plus array of two. What will this become? Array of zeros plus array of ones plus array of two plus array of three. Ok? This is what will happen brother. The prefix itself tells you that this is what you have to do. So do this. Prefix three and prefix four. So one way is that you can create your array exactly like this. You can create your array using this algorithm. Run nested loops and keep building."
+    },
+    {
+      "start_time": 746.639,
+      "end_time": 780.389,
+      "text": "लेकिन एक गौर करने की बात क्या है? प्रीफिक्स टू। प्रीफिक्स टू को हम लोग लिख सकते हैं। देखिए प्रीफिक्स टू को प्रीफिक्स टू क्या है? प्रीफिक्स टू है एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़ वन। एरे ऑफ़ ज़ीरो ऑलरेडी आपके प्रीफिक्स वन में स्ट है ना? एरे ऑफ़ जीरो की वैल्यू पुट कर दीजिए। एरे ऑफ़ जीरो की वैल्यू पुट कर दीजिए प्रीफिक्स के टर्म में। तो प्रीफिक्स टू क्या बन जाएगा आपका? आपका प्रीफिक्स टू क्या बन जाएगा? प्रीफिक्स वन यस प्लस प्लस बचा क्या? एरे ऑफ़ वन। एरे ऑफ़ वन। सिंपल बात है। ये प्रीफिक्स टू बन",
+      "source": "caption",
+      "english_text": "But what is one thing to pay attention to? Prefix to. We can write prefix to. See Prefix To What is Prefix To? Prefix two is array of zeros plus array of ones. Array of zeros already in your prefix one, right? Put the value of array of zero. Put the value of array of zero in the prefix term. So what will your prefix two become? What will your prefix two become? Prefix one yes plus plus what is left? Array of One. Array of One. It's a simple thing. This prefix to become"
+    },
+    {
+      "start_time": 780.399,
+      "end_time": 810.79,
+      "text": "गया। अच्छी बात है। प्रीफिक्स थ्री क्या बनेगा? प्रीफिक्स थ्री में सेम काम कीजिए। प्रीफिक्स थ्री देखिए। एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़ वन। एरे ऑफ़ 0 + एरे ऑफ़ वन प्लस एरे ऑफ़ टू। एरे ऑफ़ 0 + एरे ऑफ़ वन आपका प्रीफिक्स टू है। देखिए सेम है। सेम है दोनों। ये देखिए वैल्यू पुट कर दीजिए। वैल्यू पुट करके देख लीजिए। ये बन जाएगा प्रीफिक्स ऑफ़ टू प्लस एरे ऑफ़ टू। देखिए इसकी वैल्यू हम पुट कर दिए। प्रीफिक्स ऑफ़ टू। इसकी एरे होगी। प्रीफिक्स ऑफ़ टू। प्रीफिक्स थ्री।",
+      "source": "caption",
+      "english_text": "Gone. It's a good thing. प्रीफिक्स थ्री क्या बनेगा? प्रीफिक्स थ्री में सेम काम कीजिए। प्रीफिक्स थ्री देखिए। एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़ वन। एरे ऑफ़ 0 + एरे ऑफ़ वन प्लस एरे ऑफ़ टू। एरे ऑफ़ 0 + एरे ऑफ़ वन आपका प्रीफिक्स टू है। देखिए सेम है। सेम है दोनों। ये देखिए वैल्यू पुट कर दीजिए। वैल्यू पुट करके देख लीजिए। ये बन जाएगा प्रीफिक्स ऑफ़ टू प्लस एरे ऑफ़ टू। देखिए इसकी वैल्यू हम पुट कर दिए। प्रीफिक्स ऑफ़ टू। इसकी एरे होगी। प्रीफिक्स ऑफ़ टू। प्रीफिक्स थ्री।"
+    },
+    {
+      "start_time": 810.8,
+      "end_time": 836.069,
+      "text": "प्रीफिक्स फोर की वैल्यू लिखिए। आइए। प्रीफिक्स फोर। सेम काम करिए। सेम काम कीजिए। देखिए एरे ऑफ़ ज़ीरो, एरे ऑफ़ वन, एरे ऑफ़ टू, एरे ऑफ़ जीरो, एरे ऑफ़ वन, एरे ऑफ़ टू पूरा ये पूरा क्या है? प्रीफिक्स थ्री। बचा क्या? एरे ऑफ़ थ्री। लिख दीजिए। प्रीफिक्स प्रीफिक्स ऑफ़ थ्री प्लस एरे ऑफ़ थ्री। कोई पैटर्न लग रहा है? अब देखिए, अब पैटर्न पता चलेगा। प्रीफिक्स ऑफ़ टू क्या था?",
+      "source": "caption",
+      "english_text": "Write the value of prefix four. Come. Prefix four. Do the same work. Do the same work. See Array of Zero, Array of One, Array of Two, Array of Zero, Array of One, Array of Two, what is this whole? Prefix three. What is left? Array of three. Please write it down. Prefix Prefix of three plus array of three. Do you see any pattern? Now see, now the pattern will be known. What was the prefix of two?"
+    },
+    {
+      "start_time": 836.079,
+      "end_time": 869.75,
+      "text": "प्रीफिक्स ऑफ़ वन प्लस एरे ऑफ़ वन। प्रीफिक्स ऑफ़ थ्री क्या था? प्रीफिक्स ऑफ़ टू प्लस एरे ऑफ़ टू। प्रीफिक्स ऑफ़ फोर क्या था? प्रीफिक्स ऑफ़ थ्री प्लस एरे ऑफ़ थ्री। मतलब मतलब मतलब प्रीफिक्स ऑफ़ i = प्रीफिक्स ऑफ़ i - 1 + a - i - 1 ये देख लीजिए ये बन गया आपका ये बन गई इक्वेशन। यही इक्वेशन होती है प्रीफिक्स सम की। प्रीफिक्स ऑफ़ i = प्रीफिक्स ऑफ़ i - 1 + ai - 1 यही इक्वेशन है। सब में फिट बैठ जाएगा ये सब में। हां,",
+      "source": "caption",
+      "english_text": "Prefix of one plus array of one. What was the prefix of three? Prefix of two plus array of two. What was the prefix of four? Prefix of three plus array of three. Meaning means prefix of i = prefix of i - 1 + a - i - 1 see this is your equation. This is the equation of prefix sum. Prefix of i = Prefix of i - 1 + ai - 1 This is the equation. It will fit in everything. yes,"
+    },
+    {
+      "start_time": 869.76,
+      "end_time": 901.99,
+      "text": "प्रीफिक्स ऑफ़ वन कैसे निकालेंगे? निकाल लेंगे। प्रीफिक्स ऑफ़ वन है क्या? प्रीफिक्स ऑफ़ वन है एरे ऑफ़ जीरो। प्रीफिक्स ऑफ़ वन है एरे ऑफ़ ज़ीरो। प्रीफिक्स ऑफ़ जीरो क्या है? प्रीफिक्स ऑफ़ जीरो जीरो है। हम लोग बोले इसको ज़ीरो ही छोड़ देंगे। तो उसी तरीके से प्रीफिक्स ऑफ़ वन क्या हो जाएगा? प्रीफिक्स ऑफ़ वन इक्वल टू आप लिख सकते हैं 0 प्लस एरे ऑफ़ जो भी ज़ीरो इक्वल टू प्रीफिक्स ऑफ़ वन इक्वल टू प्रीफिक्स ऑफ़ 0 प्रीफिक्स ऑफ़ 0 प्लस एरे ऑफ़ ज़ीरो। देखिए सेम इक्वेशन आ गई ना?",
+      "source": "caption",
+      "english_text": "How to find prefix of one? Will take it out. What is the prefix of one? Prefix of one is array of zero. Prefix of one is array of zero. What is the prefix of zero? The prefix of zero is zero. We said we will leave it zero. So in the same way what will be the prefix of one? Prefix of one equal to two You can write 0 plus array of whatever zeros Equal to two Prefix of one equals two Prefix of 0 plus array of zeros. See, the same equation has come, right?"
+    },
+    {
+      "start_time": 902.0,
+      "end_time": 933.11,
+      "text": "प्रीफिक्स ऑफ़ i = प्रीफीस ऑफ़ i - 1 + ai - 1. बस आइए इसको कोड करके अगर हम लिखना चाहें, तो हम क्या करेंगे? सबसे पहले एक वेक्टर बनाएंगे। सबसे पहले एक वेक्टर बनाएंगे। वेक्टर इंट प्रीफिक्स हां अब देखिए जो महानुभाव उनको लग रहा होगा कि अरे सर ऐसे नहीं करते हैं। वो ऑप्टिमाइंस तरीका भी आपको नहीं आता है। हमको सब आता है। हम आपको बताने के लिए बता रहे हैं। ठीक है? तो मेरा चिंता मत करिए। हमको आता है। आप लोग को बताने के लिए हम बता रहे हैं। बस फॉर i = 1 क्योंकि वन से स्टार्ट",
+      "source": "caption",
+      "english_text": "Prefix of i = Prefix of i - 1 + ai - 1. Let's just code this and if we want to write it, what will we do? First of all we will create a vector. First of all we will create a vector. Vector Int Prefix Yes, now see the nobleman must be thinking that oh sir, we don't do it like this. You don't even know that optimization method. We know everything. We are telling you to tell us. Ok? So don't worry about me. We know. We are telling you to tell you. Just for i = 1 because start from one"
+    },
+    {
+      "start_time": 933.12,
+      "end_time": 961.99,
+      "text": "करना है। वन से लेना है। n i + प्रीफिक्स ऑफ़ i इक्वल टू इक्वल टू प्रीफिक्स ऑफ़ i - 1 + a ऑफ़ i - 1 सिंपल। और इसको रिटर्न कर दीजिए। रिटर्न अगर आप प्रीफिक्स करेंगे तो आपको वो एरे मिल जाएगा। बस इतना सा कोड में आपका प्रीफिक्स सम हो गया। किसी भी एरे का प्रीफिक्स सम कैसे निकालना है पता चल गया? क्यों निकालना है ऐसे? सही बात है।",
+      "source": "caption",
+      "english_text": "Have to do. Have to take it from the forest. n i + prefix of i equal to equal to prefix of i - 1 + a of i - 1 Simple. And return it. If you prefix return, you will get that array. In just this little code, your prefix became even. Got to know how to find the prefix sum of any array? Why do you have to take it out like this? That's correct."
+    },
+    {
+      "start_time": 962.0,
+      "end_time": 992.949,
+      "text": "अ इसी तरीके से इसी तरीके से इसी तरीके से सफिक्स सम भी निकाला जा सकता है। क्या? सफिक्स सम। सफिक्स सम। सफिक्स सम अलग से कोई कांसेप्ट नहीं है। इसको प्रीफिक्स सम के साथ ही पढ़ाते हैं क्योंकि प्रीफिक्स सफिक्स सेम है। मतलब एक ही कांसेप्ट पे काम करता है। सफिक्स सम क्या बोलता है ना? अगर आपका एक एरे है। अगर आपका एक एरे है। 0 1 2 3 4 और आपका एक सफिक्स एरे है ये 0 1 2 3 4 जस्ट उल्टा काम करेगा।",
+      "source": "caption",
+      "english_text": "A. Suffix sum can also be derived in the same manner in the same manner. What? Suffix even. Suffix even. Suffix even is not a separate concept. It is taught with prefix even because prefix and suffix are same. Meaning it works on the same concept. What does the suffix even say? If yours is an array. If yours is an array. 0 1 2 3 4 And you have a suffix array this 0 1 2 3 4 will work just the reverse."
+    },
+    {
+      "start_time": 992.959,
+      "end_time": 1027.11,
+      "text": "प्रीफिक्स एरे क्या बोलता था? i के पहले का सारा सम सफिक्स बोलता है i के बाद का सारा सम राइट का सारा सम इसको राइट राइट राइट का सारा सम ऑब्वियस सी बात है कि जो हमारा सफिक्स ऑफ़ फोर है उसमें जीरो रहेगा क्योंकि फोर के बाद और कोई इंडेक्स अवेलेबल नहीं है भैया। अच्छा सफिक्स ऑफ़ सफिक्स ऑफ़ थ्री क्या होगा? एरे ऑफ़ फोर। यही होगा ना? सफिक्स ऑफ़ थ्री एरे ऑफ़ फोर होगा। सफिक्स ऑफ़ टू क्या होगा? एरे ऑफ़ थ्री प्लस एरे ऑफ़ फोर। अच्छा सफिक्स ऑफ़ वन",
+      "source": "caption",
+      "english_text": "What did the prefix array say? The suffix says all the sums before i, all the sums after i, all the sums of the right, right this, all the sums of the right, it is obvious that our suffix of four will have zero in it because there is no other index available after four. What would be the good suffix of suffix of three? Array of four. This is what will happen, right? Suffix of three will be array of four. What will be the suffix of two? Array of three plus array of four. good suffix of one"
+    },
+    {
+      "start_time": 1027.12,
+      "end_time": 1055.19,
+      "text": "क्या होगा भाई? ये होगा एरे ऑफ़ टू प्लस एरे ऑफ़ थ्री प्लस एरे ऑफ़ फोर। वही पैटर्न आप लोग दिख रहा होगा। जो लोग तेज बच्चे हैं, जो लोग प्यारे बच्चे हैं, उनको पैटर्न दिख गया होगा। सारे प्यारे बच्चों को अच्छा सा एक पैटर्न अभी दिख गया होगा। दिख गया है तो पॉज करिए और खुद बनाइए। छापने में मत रहिए। ठीक है? जिनको पैटर्न पता चल गया है क्या होगा वो ये वाली इक्वेशन खुद से लिखिए। ये जो इक्वेशन थी ना ये खुद से लिखिए। वीडियो पॉज कर दीजिए।",
+      "source": "caption",
+      "english_text": "What will happen brother? This will be array of two plus array of three plus array of four. You guys must be seeing the same pattern. Those who are bright children, those who are lovely children, they must have seen the pattern. All the lovely children must have noticed a nice pattern by now. If you see it then pause and make it yourself. Don't stay in print. Ok? Those who know the pattern, what will happen, write this equation yourself. Write this equation yourself. Pause the video."
+    },
+    {
+      "start_time": 1055.2,
+      "end_time": 1085.75,
+      "text": "और जिनको पैटर्न नहीं समझ में आए तो आइए मिल के छपे। क्या हो रहा है यहां पे? सेम हो रहा है। सफिक्स 3 = a4 इसमें जो इक्वेशन बनेगी ना सफिक्स ऑफ़ i इक्वल टू इक्वल टू सफिक्स ऑफ़ i + 1 i + 1 + ai + 1 उल्टा प्रीफिक्स एकदम उल्टा। प्रीफिक्स क्या बोलता था? प्रीफिक्स I = प्रीफिक्स I - 1 + AI - 1 सफिक्स एकदम उल्टा बोलता है।",
+      "source": "caption",
+      "english_text": "And those who don't understand the pattern, let's get published together. What is happening here? The same is happening. Suffix 3 = a4 In this the equation formed is suffix of i equal to equal to suffix of i + 1 i + 1 + ai + 1 inverted prefix exactly the opposite. What did the prefix say? Prefix I = Prefix I - 1 + AI - 1 The suffix says the exact opposite."
+    },
+    {
+      "start_time": 1085.76,
+      "end_time": 1115.11,
+      "text": "सफिक्स I = सफिक्स i + 1 + AI + 1, एकदम उल्टा हो गया। ऐसे करके आप देखेंगे तो आपका सफिक्स अरे ही बन जाएगा। सिंपल बात है। तो आप प्रीफिक्स अरे बनाना सीख गए, सफिक्स अरे भी बनाना सीख गए। दोनों डिनोट क्या करते हैं? [गला साफ़ करने की आवाज़] कोई भी कोई भी प्रीफिक्स i क्या डिनोट करता है? 0 से लेके i - 1 तक का सम तक का सम। 0 इंडेक्स से i - 1 इंडेक्स तक का सम। कोई भी सफिक्स i क्या डिनोट करता है?",
+      "source": "caption",
+      "english_text": "Suffix I = Suffix i + 1 + AI + 1, just reversed. If you do this then your suffix will become 'Hey'. It's a simple thing. So you have learned to make the prefix 'are', you have also learned to make the suffix 'are'. What do both denote? [clearing throat] any any What does the prefix i denote? Even numbers from 0 to i - 1. The sum from 0 index to i - 1 index. What does any suffix i denote?"
+    },
+    {
+      "start_time": 1115.12,
+      "end_time": 1143.909,
+      "text": "i + 1 से लेके n - 1 इसका सम। इसका सम मतलब i पे है तो i + 1 से लास्ट तक राइट वाला सम। तो किसी भी एरे को अगर आप देखेंगे आप किसी भी एक इंडेक्स को देख लेंगे यहां पे आई है। इधर वाले को हम लोग बोलते हैं लेफ्ट पार्ट या फिर प्रीफिक्स सम या फिर प्रीफिक्स सम और इधर वाले पार्ट को हम लोग बोलते हैं राइट पार्ट और हम लोग बोलते हैं सफिक्स सम सफिक्स।",
+      "source": "caption",
+      "english_text": "Its sum from i + 1 to n - 1. Its even means if it is on i then it is the rightmost even from i + 1 to the last. So if you look at any array, you will see any one index which is here. The one here we call left part or prefix sum or prefix sum and the part here we call right part and we call suffix sum suffix."
+    },
+    {
+      "start_time": 1143.919,
+      "end_time": 1171.27,
+      "text": "सफिक्स सम ठीक बात है। इसी से इसी से हम लोग सेग्व सेग्व का मतलब समझते हैं क्या होता है? सेग्व। सेगवे का मतलब कि हम जो बात कर रहे थे वो बहुत ईली अब ट्रांजिशन होने वाला है। हमारे पहले सवाल में हमारा पहला सवाल जो कि है हमारा पहला सवाल हमारा पहला सवाल क्या है? फाइंड पवट इंडेक्स लीड कोड 724 फाइंड पवट इंडेक्स।",
+      "source": "caption",
+      "english_text": "Suffix sam is fine. From this, we understand the meaning of Segv Segv, what is it? segv. Segway means that what we were talking about is going to be a very easy transition now. In our first question our first question which is our first question what is our first question? Find Pivot Index Lead Code 724 Find Pivot Index."
+    },
+    {
+      "start_time": 1171.28,
+      "end_time": 1203.909,
+      "text": "फाइंड पवट इंडेक्स। बहुत ध्यान से देखिएगा। प्लीज बहुत ध्यान से देखिएगा। जो लोग यहां तक देख लिए हैं तो देखिए आप लोग ऑलरेडी 19 मिनट तो बर्बाद कर दिए। मतलब 19 मिनट बर्बाद कर दिए और 19 मिनट बर्बाद करके देख लीजिए। चलिए फाइंड पेवट इंडेक्स। क्वेश्चन आपको क्या बोलता है? आपको एक एरे दिया है। आपको एक एरे दिया है ऐसा करके। एरे दिया है। तो 1 7 3 6 5 6 0 1 2 आपको एक इंडेक्स बताना है। कोई भी ऐसा इंडेक्स बताना है जिसमें",
+      "source": "caption",
+      "english_text": "Find pivot index. Will look very carefully. Please look very carefully. Those who have watched till now, see that you have already wasted 19 minutes. Meaning, you have wasted 19 minutes and try wasting 19 minutes. Let's find pivot index. What does the question say to you? You are given an array. You're given an array by doing this. Array is given. So 1 7 3 6 5 6 0 1 2 You have to specify an index. Any index in which"
+    },
+    {
+      "start_time": 1203.919,
+      "end_time": 1237.11,
+      "text": "जो भी उसका लेफ्ट वाला सम है स्ट्रिक्टली इक्वल टू द राइट वाला सम हो। लेफ्ट मतलब प्रीफिक्स सम। राइट मतलब सफिक्स सम। आपको एक ऐसा इंडेक्स बताना है जिसमें प्रीफिक्स ऑफ i प्रीफिक्स ऑफ़ i इक्वल इक्वल टू सफिक्स ऑफ़ i हो। सफिक्स ऑफ़ i ये बताना है आपको। ये बताना है। और ऐसा ही एक इंडेक्स बताना है बस। तो हम लोग जो पढ़ के आए हैं उससे तो ये क्वेश्चन ऐसा चुटकी बजाते हो जाएगा। प्रीफिक्स एरे आप लोग बनाना जानते हैं। सफिक्स एरे बनाना जानते हैं। तो आइए एक बार देख लेते हैं कि उससे कैसे होगा? उससे होगा कैसे? आइए।",
+      "source": "caption",
+      "english_text": "Whatever is the even on its left is strictly equal to the even on the right. Left means prefix even. Right means suffix even. You have to specify an index in which prefix of i prefix of i is equal to suffix of i. You have to tell me the suffix of i. This has to be told. And one such index has to be mentioned. So, from what we have read, this question will seem like a pinch. Prefix array you guys know how to make. Know how to create suffix array. So let's take a look at how that will happen? How will that happen? Come."
+    },
+    {
+      "start_time": 1237.12,
+      "end_time": 1269.19,
+      "text": "तो ये हमारा एरे है। हमारा एरे 17373 और 656 656 0 1 2 3 4 5 जल्दी से प्रीफिक्स एरे बना लेते हैं। जल्दी से प्रीफिक्स एरे बना लेते हैं। सेम साइज का एरे बनाएं। ये हमारा प्रीफिक्स है। ये हमारा प्रीफिक्स। प्रीफिक्स ज़ीरो क्या होता है? ज़ीरो। उसके बाद क्या होता है? प्रीफिक्स i = प्रीफिक्स i - 1 पीछे का वैल्यू प्लस ai - 1 दोनों का सम। तो पीछे का वैल्यू + 1 1",
+      "source": "caption",
+      "english_text": "So this is our array. Our array 17373 and 656 656 0 1 2 3 4 5 quickly form a prefix array. Quickly create a prefix array. Create an array of the same size. This is our prefix. This is our prefix. What is prefix zero? Zero. What happens after that? Prefix i = Prefix i - 1 trailing value plus ai - 1 sum of both. So the value behind + 1 1"
+    },
+    {
+      "start_time": 1269.2,
+      "end_time": 1297.029,
+      "text": "और 7 8 और 3 11 11 + 3 17 अ 17 + 5 22 ये आपका प्रीफिक्स एरे बन गया। सफिक्स एरे बना लीजिए। सफिक्स एरे को उल्टा बनाना स्टार्ट करिए। 0 1 2 3 4 हां देखिए इसीलिए हम बोलते हैं वीडियो पूरा देखा करिए ना। जो लोग आधा देख के निकल गए उनका सफिक्स एरे गलत हो जाएगा। वो लोग कुछ नहीं कर पाएंगे जिंदगी में। जो लोग अभी तक देख के निकल गया है कि अब छोड़ो अब तो ये तो बोलते रहता है वो लोग कुछ नहीं कर पाएंगे जिंदगी में।",
+      "source": "caption",
+      "english_text": "And 7 8 and 3 11 11 + 3 17 and 17 + 5 22 This becomes your prefix array. Create suffix array. Start making the suffix array upside down. 0 1 2 3 4 Yes see, that's why we say, watch the full video. Those who left after seeing half, their suffix array will be wrong. Those people will not be able to do anything in life. Those people who have seen it till now and have given up, now they keep saying that they will not be able to do anything in life."
+    },
+    {
+      "start_time": 1297.039,
+      "end_time": 1330.549,
+      "text": "प्रीफिक्स एरे को हम लोग बनाना कोड कैसे लिखे थे? प्रीफिक्स एरे का कोड कैसे लिखे थे? i = 1 से i &lt; ni + क्यों? क्योंकि प्रीफिक्स i को प्रीफिक्स i - 1 पीछे की वैल्यू चाहिए थी। सफिक्स को क्या पीछे की वैल्यू चाहिए? नहीं। सफिक्स को आगे की वैल्यू चाहिए। तो सफिक्स आप बनाना कहां से शुरू करेंगे? आगे से कि पीछे से? पीछे से क्योंकि आगे से अगर बनाएंगे अगर इसमें देखिए बहुत बड़ी बहुत बड़ा है इसीलिए हम बोलते हैं वीडियो पूरा देखा करो क्योंकि हम स्क्रिप्ट नहीं लिख के पढ़ाते हैं दिमाग में अचानक आ गया प्रीफिक्स रे कैसे किस ऑर्डर में प्रीफिक्स एरे पॉपुलेट होता",
+      "source": "caption",
+      "english_text": "How did we write the code to create the prefix array? How was the code for prefix array written? Why i = 1 to i < ni + ? Because prefix i needed the value behind prefix i - 1. What trailing value does the suffix require? No. Suffix requires further value. So where do you start creating suffixes? From front or back? From the back because if we make it from the front, if you look at it, it is very big, that is why we say watch the entire video because we do not write the script and teach. Suddenly it came to mind that how is the prefix array populated, in which order?"
+    },
+    {
+      "start_time": 1330.559,
+      "end_time": 1357.83,
+      "text": "है पहले पी0 बनता है फिर p1 बनता है फिर पी टू बनता है और फिर p3 बनता है क्यों क्योंकि p3 को p2 चाहिए p2 को p1 चाहिए p1 को p0 चाहिए लेकिन सफिक्स ऐ में सफिक्स ऑफ n - 1 तो 0 होता है ये तो सब लोग जानते है। उसके बाद सफिक्स n - 2 बनेगा। क्यों? क्योंकि इसको आगे वाला वैल्यू चाहिए। n - 2 को अपने आगे वाला वैल्यू चाहिए। उसके बाद ये बनेगा। फिर सफिक्स n - 3 बनेगा।",
+      "source": "caption",
+      "english_text": "First p0 is formed, then p1 is formed, then p2 is formed and then p3 is formed. Because p3 needs p2, p2 needs p1, p1 needs p0, but in suffix a, suffix of n - 1 becomes 0. Everyone knows this. After that the suffix will become n – 2. Why? Because it needs the next value. n - 2 needs the value next to it. After that this will be made. Then the suffix will become n – 3."
+    },
+    {
+      "start_time": 1357.84,
+      "end_time": 1386.87,
+      "text": "मतलब कि अगर पांच लेंथ का एरे है तो सबसे पहले तो सब फोर हम लोग लिख देंगे कि ये तो ज़ीरो है। इसके आगे कुछ है नहीं। उसके बाद सफ ऑफ़ थ्री बनेगा। उसके बाद सब ऑफ़ टू बनेगा। उसके बाद जाके सफ ऑफ़ वन बनेगा। और लास्ट में सब ऑफ़ 0 बनेगा। उल्टा बन रहा है। तो ये कैसे बनेगा? i = n - 2 क्योंकि n - 1 ऑलरेडी ज़ीरो है। i &gt; = 0 i - अब आप यहां पे लिख सकते हैं su",
+      "source": "caption",
+      "english_text": "Meaning that if there is an array of length five then first of all we will write sub four that it is zero. There is nothing beyond this. After that a sequence of three will be formed. After that sub of two will be made. After that, the queue of one will be formed. And in the last sub of 0 will become. It is becoming the opposite. So how will this be made? i = n – 2 because n – 1 is already zero. i >= 0 i - now you can write su here"
+    },
+    {
+      "start_time": 1386.88,
+      "end_time": 1417.51,
+      "text": "= ऑफ i + 1 + एरे ऑफ़ i + 1 उल्टा लूप चलेगा सीधा लूप चलाएंगे क्रैश कर जाएंगे ऐसे क्योंकि आगे का वैल्यू पता हो तब तो बनाएंगे। अब ऑफ 0 के लिए यूज़ कर रहे हैं सब ऑफ वन लेकिन आप पहले बना रहे हैं सब ऑफ जीरो को तो यूज़ किसको करिएगा? यही बात है पूरा देखा करिए वीडियो। ठीक है? चलिए। हां। आपको अब क्वेश्चन क्या बोलता है कि कोई ऐसा इंडेक्स खोजो जिसमें प्रीफिक्स i इक्वल इक्वल टू सफिक्स ऑफ़ i हो। तो दोनों बना लीजिए। चलिए सफिक्स आ रहे पीछे से बनाइए। पहला तो ज़ीरो होगा। लास्ट वाला तो",
+      "source": "caption",
+      "english_text": "= of i + 1 + array of i + 1 The loop will run reversely, while the loop will run straight, it will crash because the next value will be created only if we know it. Now you are using sub of one for off 0, but first you are making sub of zero, then which one will you use? This is the thing, watch the full video. Ok? Let go. Yes. What the question tells you now is to find an index in which prefix i is equal to suffix of i. So make both. Let's make the suffix coming from behind. The first one will be zero. the last one"
+    },
+    {
+      "start_time": 1417.52,
+      "end_time": 1451.269,
+      "text": "ज़ीरो होगा। फिर 6 11 17 20 नहीं 6 5 6 आया पहले। फिर 5 11 आ गया। फिर 17 आ गया। फिर 20 आ गया। और फिर ओके। अब कुछ नहीं करना है। हर इंडेक्स पे देख लीजिए कि जिस पे प्रीफिक्स ऑफ़ आई और सफिक्स ऑफ़ आई इक्वल है कि नहीं। क्या ज़ीरो इंडेक्स पे इक्वल है? क्या ये जीरो इंडेक्स पे इक्वल है? ना वन इंडेक्स पे ना। टू इंडेक्स पे ना। हां। थ्री इंडेक्स पे इक्वल है। थ्री इंडेक्स पे इक्वल है। थ्री इंडेक्स पे इक्वल है। मिल गया। तो i = 3 रिटर्न कर",
+      "source": "caption",
+      "english_text": "Will be zero. Then 6 11 17 20 not 6 5 6 came first. Then 5 11 came. Then 17 came. Then 20 came. And then ok. Nothing to do now. Check every index on which prefix of i and suffix of i are equal or not. Is Zero Index Pay Equal? Is it equal to zero index? Not on one index. To index pe na. Yes. The three indexes are equal. The three indexes are equal. The three indexes are equal. Got it. so return i = 3"
+    },
+    {
+      "start_time": 1451.279,
+      "end_time": 1482.87,
+      "text": "दिया। i = 3 रिटर्न कर दीजिए। बड़ा सिंपल इसका कोड होगा। लेकिन लेकिन ये सही तरीका नहीं है। अच्छा तरीका है। सबमिट हो जाएगा। लीड कोड पे सबमिट हो जाएगा। अ लेकिन ये अच्छा तरीका नहीं है। ठीक है? सबसे पहली बात तो सबसे पहली बात तो सबसे पहली बात आपको प्रीफिक्स सम और सफिक्स सम के लिए अलग-अलग एरे बनाना पड़ा। आपको अलग-अलग दो एरे बनाना पड़ा ना। आपको दो एरे बनाना पड़ा। दो एरे बनाना पड़ा। ये बात याद रखिएगा। दो एरे बहुत सारे टीचर यहीं पढ़ा के छोड़ देते हैं। यहीं पढ़ा के छोड़ देते हैं। हम भी छोड़ सकते थे कि हां कर लो खत्म। लेकिन सही तरीका नहीं है। इंटरव्यू",
+      "source": "caption",
+      "english_text": "Gave. Return i = 3. Its code will be very simple. But but this is not the right way. Good way. Will be submitted. The lead code will be submitted. A But this is not a good way. Ok? First thing's first thing's first thing, you had to create separate arrays for prefix sum and suffix sum. You had to create two separate arrays, right? You had to create two arrays. Had to make two arrays. Remember this thing. Two, many teachers leave after studying here. Let's read it here and leave it. We could have also left and said yes, finish it. But not the right way. interview"
+    },
+    {
+      "start_time": 1482.88,
+      "end_time": 1516.71,
+      "text": "और ऐप को एक्सेप्ट नहीं करेगा। तो अ दो एरे बनाना पड़ा आपको। आपको दो एरे बनाना पड़ा है। ठीक है? तो दो एरे बनाना बहुत मुश्किल है। दो एरे क्यों बना रहे हैं? मतलब दो एरे बनाने का मजा नहीं आ रहा है दो एरे बनाने में। अच्छा देखिए आपको हर i पे आपको हर i पे चाहिए क्या? आपको बस चेक करना है ना कि जो मेरा प्रीफिक्स ऑफ़ i है इक्वल इक्वल टू मेरा सफिक्स ऑफ़ i है। सफिक्स ऑफ़ i है। ये चेक करना है ना। प्रीफिक्स ऑफ़ i इक्वल इक्वल टू सफिक्स ऑफ़ i है। ठीक है? देखिए",
+      "source": "caption",
+      "english_text": "And will not accept the app. So you had to make two arrays. You have to create two arrays. Ok? So creating two arrays is very difficult. Why creating two arrays? Meaning, creating two arrays is not fun. Well see, do you want every i? You just have to check that my prefix of i is equal to my suffix of i. The suffix is ​​i. This has to be checked, right? Prefix of i is equal to suffix of i. Ok? look at"
+    },
+    {
+      "start_time": 1516.72,
+      "end_time": 1549.029,
+      "text": "मान लीजिए ये आपका एरे होता। ये आपका एरे है। 0 1 2 3 4 5 तो ये है 1 7 3 6 5 और सिक्स। आपको हर i पे हर i पे सबसे पहले तो प्रीफिक्स ऑफ़ i चाहिए। प्रीफिक्स ऑफ़ i चाहिए। प्रीफिक्स ऑफ़ i क्या होता है? i = 0 पे प्रीफिक्स ऑफ़ i क्या होगा? ज़ीरो होगा। प्रीफिक्स ऑफ़ ज़ीरो ज़ीरो होगा। i = 1 पे प्रीफिक्स ऑफ़ i क्या होगा? एरे ऑफ़ 0",
+      "source": "caption",
+      "english_text": "Suppose this was your array. This is your array. 0 1 2 3 4 5 So this is 1 7 3 6 5 and six. The first thing you need is the prefix of i on every i. Prefix of i is required. What is the prefix of i? What will be the prefix of i when i = 0? Will be zero. The prefix of zero will be zero. What will be the prefix of i when i = 1? array of 0"
+    },
+    {
+      "start_time": 1549.039,
+      "end_time": 1581.75,
+      "text": "होगा। i = 2 पे ये एरे ऑफ़ 0 प्लस एरे ऑफ़ वन होगा। i = 3 पे ये चीज एरे ऑफ़ 0 प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ टू होगा। तो देखिए ये एक-एक एक-एक एलिमेंट से बढ़ता जा रहा है। एक-एक एलिमेंट से बढ़ता जा रहा है। तो पूरा एरे की जरूरत नहीं है। एरे तो हम लोग किए थे कि सहूलियत हो। पहले ही एरे बना के रख लिए ताकि क्या हो? कन्वीनियंस हो। लेकिन अ जरूरत नहीं है। जरूरत कैसे नहीं है? आप एक वेरिएबल असाइन कर सकते हैं। आप एक अगर वेरिएबल असाइन कर लीजिए लेफ्ट = 0",
+      "source": "caption",
+      "english_text": "Will happen. At i = 2 it will be array of 0 plus array of one. At i = 3 this thing will be array of 0 plus array of one plus array of two. So see it is increasing one by one element. It is increasing one by one element. So the complete array is not needed. Well, we did it just to make it convenient. Have already created the array so that what happens? Have convenience. But no need. How is it not needed? You can assign a variable. You assign an if variable left = 0"
+    },
+    {
+      "start_time": 1581.76,
+      "end_time": 1614.87,
+      "text": "फॉर एग्जांपल लेफ्ट इक्वल टू 0 हर आई पे ना आप लेफ्ट को अपडेट कर दीजिए। हर आई पे आप पहले आप क्या कर रहे थे? पहले आप पूरा प्रीफिक्स एरे तैयार कर रहे थे। हर i पे लेफ्ट को अपडेट कर दीजिए। कैसे करेंगे देखिए। जब आप i = 1 पे आते हैं। क्योंकि हमारा प्रोग्राम i = 1 से शुरू होना चाहिए। और i n - 2 तक खत्म हो जाना चाहिए। क्योंकि i = 0 पे लेफ्ट की कोई भूमिका नहीं रहती है। रख भी सकते हैं। कोई प्रॉब्लम नहीं है। छोड़ दीजिए। i = 1 जब आप i = 1 पे आते हैं ना जब आप i = 1 पे आते हैं ना तो क्या होता है? आपका लेफ्ट",
+      "source": "caption",
+      "english_text": "For example left equal to 0 every time you update left. What were you doing before you arrived? Earlier you were creating the entire prefix array. Update the left on every i. See how to do it. When you come to i = 1. Because our program should start from i = 1. And i should go over to n - 2. Because left has no role at i = 0. Can also keep. There is no problem. Leave it. i = 1 When you come to i = 1 What happens when you come to i = 1? your left"
+    },
+    {
+      "start_time": 1614.88,
+      "end_time": 1640.87,
+      "text": "आपका लेफ्ट ज़ीरो है। आपका लेफ्ट ज़ीरो है। आप क्या कीजिए? लेफ्ट में ना प्लस इक्वल टू एरे ऑफ़ 0 जोड़ दीजिए। बस इतना काम करिए। हम क्या बोल रहे हैं? जब आप i = 1 पे आए, आप अपने लेफ्ट में पहला वाला एलिमेंट जोड़ दिए। उससे पहला वाला एलिमेंट जोड़ दिए। अब आपका वन बन गया। लेफ्ट वन बन गया। कहां? i = 1 पे। प्रीफिक्स आरे में भी देख लीजिए। i = यही होगा। देखिए प्रीफिक्स एरे में भी वन था बन गया।",
+      "source": "caption",
+      "english_text": "Your left is zero. Your left is zero. What should you do? Add Na plus equal to array of 0 on the left. Just do this much work. What are we saying? When you get to i = 1, you add the first element to your left. Added the first element to it. Now your forest is complete. Became the left one. Where? At i = 1. Also look at the prefix aare. i = this will happen. See, one tha became one in the prefix array also."
+    },
+    {
+      "start_time": 1640.88,
+      "end_time": 1666.87,
+      "text": "अच्छा। इसको आप कुछ रख लीजिए। इसको राइट का बाद में बात करेंगे। लेफ्ट का देख लीजिए। पहले प्रीफिक्स एरे को कैसे हम लोग एक वेरिएबल में कर देंगे। पूरा एरे को कैसे एक वेरिएबल में फनल कर रहे हैं। जब भी आप i = 2 पे जाते हैं। क्या कीजिए? लेफ्ट में पुराना वाला एलिमेंट जोड़ दीजिए। यहां A1 जोड़ दीजिए। लेफ्ट प्लस इक्वल टू A1 कर दीजिए। क्या? लेफ्ट पहले ही वन था। वन में आप A1 जोड़ दिए। 1 + 7 कर दिए, एट हो गया। ये आपका प्रीफिक्स है। देख लीजिए।",
+      "source": "caption",
+      "english_text": "Okay. Keep some of this. We will talk about this right later. Look at the left. First how will we convert the prefix array into a variable. How to funnel the entire array into a variable. Whenever you go to i = 2. What to do? Add the old element to the left. Add A1 here. Make left plus equal to A1. What? Left was already one. In forest you added A1. Did 1 + 7, et is done. This is your prefix. Take a look."
+    },
+    {
+      "start_time": 1666.88,
+      "end_time": 1699.83,
+      "text": "प्रीफिक्स टू एट होगा देखिए प्रीफिक्स टू एट था। सिमिलरली सिमिलरली i = 3 पे जब आप जाएंगे ना लेफ्ट में क्या जोड़ दीजिए? एरे ऑफ़ टू जोड़ दीजिए। देखिए एरे ऑफ़ टू जोड़ेंगे थ्री। ये 11 बन गया होगा। प्रीफिक्स ऑफ़ थ्री भी 11 ही होगा। देख लीजिएगा। प्रीफिक्स ऑफ़ थ्री भी 11 होगा। देखिए। तो प्रीफिक्स ऑफ i की कोई जरूरत नहीं रही। हम लोग वेरिएबल बना के प्रीफिक्स निकाल सकते हैं। चलिए तो ये तो हो गई प्रीफिक्स की बात। सफिक्स कैसे निकालिएगा? सफिक्स सफिक्स के लिए तो एरे बनाना पड़ेगा क्योंकि वो तो पीछे से निकलता है। नहीं देखिए।",
+      "source": "caption",
+      "english_text": "Prefix to at would be See Prefix to at was. Similarly, when you go to i = 3, what should you add on the left? Add array of two. See array of two adds three. This would have become 11. Prefix of three will also be 11. Please take a look. Prefix of three will also be 11. See. So there was no need for prefix of i. We can remove the prefix by creating a variable. Well, this is the matter of prefix. How to remove suffix? Suffix: An array will have to be created for the suffix because it comes from the back. Don't look."
+    },
+    {
+      "start_time": 1699.84,
+      "end_time": 1733.35,
+      "text": "लेफ्ट अगर समझ में आ गया हो हम लोग क्या किए? पूरा जो प्रीफिक्स एरे था ना पूरा जो हम लोग पहले प्रीफिक्स एरे पूरा बना रहे थे। फिर उसको यूज़ कर रहे थे। यहां हम लोग साथ-साथ बनाते हुए चल रहे है। हर आई के लिए लेफ्ट को अपडेट करके लेफ्ट बना ले रहे हैं कि चलो लेफ्ट में तुम पूरा सम होता क्या अरे लेफ्ट मतलब सम ही होता है ना उसको हम एरे से पढ़े उसको हम हैश मैप से पढ़े उसको हम इसीलिए हम बोल रहे थे कि डेटा स्ट्रक्चर का महत्व है। प्रीफिक्स सम सेम का कॉन्सेप्ट है यहां भी आप सेम कॉन्सेप्ट कर रहे हैं। प्रीफिक्स एरे बनाने में भी सेम कांसेप्ट था। एरे यूज़ करना है कि वेरिएबल यूज़ करना है कि क्या यूज़ करना है उसपे फर्क पड़ता है। तो एक बात हम लोग को पता चल गई कि लेफ्ट तो हम लोग बना लेंगे।",
+      "source": "caption",
+      "english_text": "Left, if you understand what we did? Pura Jo Prefix Array Na Pura Jo Prefix Arre Pura We were making earlier. Then they were using it. Here we are building together. By updating the left for every i, we are making left, is it completely even in the left? Hey, left means even, right? We read it from the array, we read it from the hash map, that is why we were saying that the data structure is important. Prefix sum is the concept of same, here also you are using the same concept. Same concept was used in creating prefix array. Whether to use an array or a variable makes a difference as to what to use. So we knew one thing that we will make the left."
+    },
+    {
+      "start_time": 1733.36,
+      "end_time": 1758.87,
+      "text": "लेफ्ट तो हम लोग बना पा रहे हैं। हम लोग क्या कर रहे हैं? लेफ्ट प्लस इक्वल टू एरे ऑफ़ i - 1 ये हम लोग कर दे रहे हैं। तो हमारा क्या बन जा रहा है? बन जा रहा है। अच्छा चलिए। अब क्या करेंगे? अ देखिए, अब राइट की दरकार है। राइट पार्ट हमारा कहां से आता था? सफिक्स ऑफ आई से। लेफ्ट तो बना लिया। राइट कैसे आएगा? चलिए आइए दिखाते हैं कैसे आएगा।",
+      "source": "caption",
+      "english_text": "We are able to create a left. What are we doing? Left plus equal to array of i - 1 This is what we are doing. So what is becoming of us? Is being made. Ok let's go. What will you do now? Look, now there is a need for rights. Where did our right part come from? From suffix of i. Made the left. How will the right come? Come let's show how it will come."
+    },
+    {
+      "start_time": 1761.43,
+      "end_time": 1786.95,
+      "text": "173 अह 656 65 6 ठीक है। 0 1 2 3 4 5 इसका एक बार प्रीफिक्स और सफिक्स सारे लिख लेते हैं जल्दी से। जस्ट फॉर एक्सप्लेनिंग प्रीफिक्स को तो हम लोग लेफ्ट बना चुके हैं। लेकिन तब भी समझाने के लिए कि सफिक्स आरे कैसे निकाल सकते हैं। 0 1 2 3 4 5 इसका क्या था? ज़ीरो था, वन था, एट बना, 11 बना, 17 बना, 22 बना। ये प्रीफिक्स था।",
+      "source": "caption",
+      "english_text": "173 Ah 656 65 6 Okay. 0 1 2 3 4 5 Write down all the prefixes and suffixes quickly. Just for explaining, we have made the prefix on the left. But still to explain how to remove suffix aare. 0 1 2 3 4 5 What was it? There was zero, there was one, there were eight, there were 11, there were 17, there were 22. This was a prefix."
+    },
+    {
+      "start_time": 1786.96,
+      "end_time": 1821.51,
+      "text": "सफिक्स क्या बना था? सफिक्स क्या बना था? 0 1 2 3 4 5 सफिक्स यहां से बना था 0 फिर सिक्स। फिर 11 बना था। फिर ये 1 मिनट। 6 5 11 और 6 17 20 और 27 ऐसा ही बना था। अच्छा। अब एक आप गौर से चीज़ देखिए। सफिक्स अरे यही था ना जी? हां यही था। ठीक है? अब एक आप गौर से चीज़ देखिए। पूरे एरे का सम क्या है? पूरे एरे का सम क्या है? 7 + 1 3 11 17 22 28",
+      "source": "caption",
+      "english_text": "What was the suffix made of? What was the suffix made of? 0 1 2 3 4 5 The suffix was formed from here 0 then six. Then 11 was made. Then this 1 minute. 6 5 11 and 6 17 20 and 27 were formed like this. Good. Now look at one thing carefully. Suffix Hey, this was it, right? Yes that was it. Ok? Now look at one thing carefully. What is the sum of the entire array? What is the sum of the entire array? 7 + 1 3 11 17 22 28"
+    },
+    {
+      "start_time": 1821.52,
+      "end_time": 1848.47,
+      "text": "पूरे एरे का सम 28 है। अब देखिए ये आपका ओरिजिनल एरे है। ये आपका ओरिजिनल एरे है। ये आपका प्रीफिक्स एरे है। ये आपका सफिक्स एरे है। आप जब तीनों वैल्यू को एक इंडेक्स वाले को जोड़ेंगे ना हमेशा आपको एरे का सम मिलेगा। देखिए 1 + 0 1 + 27 28 सम है। हां। 7 + 1 7 + 1 + 20 28 3 + 8 11 + 17",
+      "source": "caption",
+      "english_text": "The sum of the entire array is 28. Now see this is your original array. This is your original array. This is your prefix array. This is your suffix array. When you add all three values ​​with one index, you will always get the sum of the array. See 1 + 0 1 + 27 28 is even. Yes. 7 + 1 7 + 1 + 20 28 3 + 8 11 + 17"
+    },
+    {
+      "start_time": 1848.48,
+      "end_time": 1883.35,
+      "text": "28 6 + 11 17 + 11 28 5 + 17 + 6 28 6 + 22 + 0 28 देखिए हर i पे तीनों जब हम लोग सम कर दे रहे हैं हमेशा हमको सम ऑफ़ एरे मिल रहा है। ऐसा क्यों मिल रहा है? जादू से नहीं मिल रहा है। जादू से नहीं मिल रहा है। किसी भी इंडेक्स आई पे किसी भी इंडेक्स i पे i पे किसी भी इंडेक्स i पे आपको हमेशा लेफ्ट क्या बताता था? एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़",
+      "source": "caption",
+      "english_text": "28 6 + 11 17 + 11 28 5 + 17 + 6 28 6 + 22 + 0 28 See, when we are summing all three on every i, we are always getting the sum of the array. Why is this happening? Can't get it by magic. Can't get it by magic. At any index i At any index i At any index i At any index i What did the left always tell you? Array of zero plus array of"
+    },
+    {
+      "start_time": 1883.36,
+      "end_time": 1917.43,
+      "text": "वन प्लस डॉट डॉट डॉट डॉट एरे ऑफ़ i - 1 उसके पहले रुक जाता था। और आपको राइट क्या बताता था? एरे ऑफ़ i + 1 + एरे ऑफ़ i + 2 डॉट डॉट डॉट डॉट एरे ऑफ़ n - 1 लास्ट तक। और इसके बीच में आप अगर एरे ऑफ़ i को जोड़ दें तो यही तो होता है एरे ऑफ़ सम। यही तो होता है एरे ऑफ़ सम। 0 1 2 से लास्ट तक। अब पूरा बना के इसका आपको क्या मिल गया? एरे का सम। तो इससे हम लोग को क्या चीज़ समझ आई? हम लोग पहले ही देख लिए थे कि लेफ्ट प्रीफिक्स एरे को लेफ्ट कैसे बनाना है?",
+      "source": "caption",
+      "english_text": "One plus dot dot dot array of i - 1 used to stop before that. And what did Wright tell you? Array of i + 1 + Array of i + 2 dot dot dot dot Array of n - 1 till last. And if you add array of i in between, then this is what becomes array of sum. This is what array of sum is. From 0 1 2 to last. Now what did you get after completing it? Sum of array. So what did we understand from this? We have already seen how to make left prefix array left?"
+    },
+    {
+      "start_time": 1917.44,
+      "end_time": 1944.389,
+      "text": "अगर आपके पास लेफ्ट है तो क्या आप राइट निकाल सकते हैं? हां, आप राइट निकाल सकते हैं। क्योंकि आप जैसे ही आपका क्या आपका इक्वेशन क्या आया? आपका इक्वेशन क्या आया? लेफ्ट प्लस एरे ऑफ i + राइट इक्व सम राइट की वैल्यू हमेशा क्या हो जाएगी? सम माइनस लेफ्ट माइनस एरे ऑफ़ ये देखिए।",
+      "source": "caption",
+      "english_text": "If you have left can you take out right? Yes, you can remove the right. Because as soon as you come up with what is your equation? What is your equation? What will always be the value of left plus array of i + right equal sum right? Sum minus left minus array of these."
+    },
+    {
+      "start_time": 1944.399,
+      "end_time": 1970.47,
+      "text": "ये आपका खेल खत्म हो गया। राइट भी मिल गया। लेफ्ट तो मिल ही जाएगा। दोनों एरे खत्म हो गया। आइए इसको कोड भी लिखेंगे। इसको ड्राई रन भी करेंगे। हमको बहुत लोग बोल रहे हैं कि आप ड्राई रन नहीं करते हैं। आप शायद कुछ गलतें बता के छोड़ देते हैं ना। आइए इसको अच्छे से ड्राई रन करेंगे। अभी 1 7 3 6 5 6 पूरा क्लियर हो जाएगा। एक ड्राई रन देखेंगे पूरा क्लियर हो जाएगा।",
+      "source": "caption",
+      "english_text": "This is your game over. Got the right also. You will definitely get the left. Both arrays are finished. Let us write code for this also. Will also dry run it. Many people are telling us that you do not do dry runs. You probably leave after pointing out some mistakes. Let's dry run it properly. Now 1 7 3 6 5 6 will be completely cleared. You will see a dry run and it will be completely clear."
+    },
+    {
+      "start_time": 1970.48,
+      "end_time": 2005.269,
+      "text": "हम लोग क्या बोले थे? लेफ्ट क्या डिनोट करता है? लेफ्ट आपका हमेशा प्रीफिक्स हम सम डिनोट करता है। लेफ्ट हमेशा प्रीफिक्स। लेफ्ट मतलब प्री, लेफ्ट मतलब पहले का, राइट मतलब बाद का। तो शुरुआत में हमेशा लेफ्ट को जीरो रख लीजिए। जीरो ही से शुरू होगा। अच्छा। एरे का सम निकाल लीजिए। एरे का सम निकाल लीजिए। कैसे निकालते हैं? लूप चला के एरे का सम तो सम इज़ इक्वल टू 28। हम लोग क्या बोल रहे हैं? हम लोग एक इंट राइट भी रखे हुए हैं। चलिए बाद में वो लूप में ही निकालेंगे। अब हमारा लूप कहां से शुरू होना चाहिए? हमारा लूप वन से ही शुरू होना चाहिए मेरे हिसाब से। क्योंकि एरे ऑफ़ ज़ीरो का कोई लेफ्ट पॉसिबल नहीं है। मतलब एरे ऑफ़ ज़ीरो का क्या",
+      "source": "caption",
+      "english_text": "What did we say? What does left denote? Left your always denotes the prefix we are even. Left always prefix. Left means pre, left means before, right means after. So always keep left at zero in the beginning. Will start from zero only. Good. Find the sum of the array. Find the sum of the array. How to remove it? Run the loop and check that the sum of the array is equal to 28. What are we saying? We are also keeping an int right. Let's take it out in the loop later. Now where should our loop start? According to me, ours should start from loop one. Because there is no possible left in the array of zeros. what does array of zero mean"
+    },
+    {
+      "start_time": 2005.279,
+      "end_time": 2036.549,
+      "text": "लेफ्ट होगा? वो कुछ नहीं है। तो हमारा लूप मेरे हिसाब से वन से चलना चाहिए। आइए। i &lt; n i प्लस प्लस ठीक है। अब एरे ऑफ़ i पे लेफ्ट कैसे बनेगा? एरे ऑफ़ आई पे लेफ्ट बनेगा पिछला वाला एरे का एलिमेंट जोड़ के। अभी लेफ्ट ज़ीरो है। जब आप यहां पे आए हैं तो आपका क्या होना चाहिए? लेफ्ट। आपका लेफ्ट होना चाहिए एरे ऑफ़ ज़ीरो की वैल्यू। तो लेफ्ट में जो भी एरे ऑफ़ ज़ीरो की वैल्यू जोड़ दीजिए। सबसे पहले हम लोग करेंगे लेफ्ट प्लस इक्वल टू एरे ऑफ़ i - 1 - 1 पिछले वाला इसको नहीं। अच्छा। लेफ्ट आ गया। आपके पास ऑलरेडी सम है। राइट का हम लोग",
+      "source": "caption",
+      "english_text": "Will it be left? That is nothing. So our loop should run through the forest according to me. Come. i < n i plus plus ok. Now how will the array of i be left? The left side of the array will be formed by adding the element of the previous array. Now there is zero left. What should happen to you when you come here? Left. Your left should be the array of values ​​of zero. So add the value of whatever array of zeros is on the left. First of all we will do left plus equal to array of i - 1 - 1, not the last one. Good. Left has arrived. You already have some. Right's we the people"
+    },
+    {
+      "start_time": 2036.559,
+      "end_time": 2062.869,
+      "text": "फार्मूला क्या देखे थे? सम माइनस एरे ऑफ आई माइनस लेफ्ट क्योंकि लेफ्ट, राइट और एरे ऑफ आई दोनों तीनों मिला के क्या बन जाता है? हमेशा एरे का सम बन जाता है। हमेशा एरे ऑफ़ सम बन जाता है। इस तरीके के क्वेश्चन में हमेशा इस पॉइंट को याद रखिए। लेफ्ट, एरे ऑफ़ आई और राइट सबको मिलाएंगे ना तो एरे का सम बन जाएगा। आ गया। आपको चेक क्या करना है? आपको लेफ्ट और राइट ही तो चेक करना है। प्रीफिक्स आई और सफिक्स आई। यही तो मिला रहे थे। बस मिला लीजिए।",
+      "source": "caption",
+      "english_text": "What formula did you see? Sum minus array of i minus left because what is left, right and array of i combined together? The array always becomes even. Always becomes array of sum. Always remember this point in this type of questions. If you combine left, array of i and right then neither array will become even. Has arrived. What do you need to check? You have to check left and right only. Prefix i and suffix i. This is what they were mixing. Just mix."
+    },
+    {
+      "start_time": 2062.879,
+      "end_time": 2095.589,
+      "text": "इफ सॉरी प्रीफिक्स लिख दे गलती से। इफ लेफ्ट इक्वल इक्वल टू राइट इक्वल इक्वल टू राइट रिटर्न क्या i ये वाला इंडेक्स रिटर्न करना है बंद कर दिए अगर कुछ नहीं मिला तो यहां पे रिटर्न -1 कर दिए सिंपल बात है आइए इसको ड्राइव करते हैं शुरुआत में लेफ्ट = 0 सम = 0 ठीक सॉरी सम = 28 सम एरे का पूरा पूरे एरे का सम है 28 ठीक है i = 0 पे तो है नहीं i = 0 पे तो कुछ होगा",
+      "source": "caption",
+      "english_text": "If you write sorry prefix by mistake. If left is equal to right is equal to right is return what i is to return this index. Stop if nothing is found then return -1 here. It is simple. Let's drive it. In the beginning left = 0 sum = 0 ok sorry sum = 28 sum of the entire array is 28 ok i = 0 pe then there is no i = 0 pe then there must be something."
+    },
+    {
+      "start_time": 2095.599,
+      "end_time": 2124.87,
+      "text": "नहीं I = 1 पे आइए। सबसे पहले लेफ्ट को अपडेट कीजिए। लेफ्ट इक्वल टू लेफ्ट प्लस एरे ऑफ़ जीरो वन। राइट क्या होगा? राइट होगा 28 माइनस एरे ऑफ़ i जो कि है 7 माइनस लेफ्ट जो कि है वन। तो 20। क्या लेफ्ट और राइट इक्वल है? ना। आगे बढ़ जाइए। आगे बढ़ जाइए। नो नो नो। अब लेफ्ट की वैल्यू बढ़ चुकी है। लेफ्ट की वैल्यू वन हो चुकी है। अच्छा। फिर से लेफ्ट में क्या जोड़िए? एरे ऑफ़ वन जोड़ दीजिए। एट जोड़ दिए।",
+      "source": "caption",
+      "english_text": "No, come at I = 1. Update the left first. Left equals two left plus array of zero ones. What will be right? Right will be 28 minus array of i which is 7 minus left which is one. So 20. Are left and right equal? No. Go ahead. Go ahead. No no no. Now the value of left has increased. The value of left has become one. Good. What to add to the left again? Add array of one. Added et."
+    },
+    {
+      "start_time": 2124.88,
+      "end_time": 2157.99,
+      "text": "राइट क्या होगा? राइट होगा 28 माइनस एरे ऑफ़ आई जो कि है थ्री - 8 17 क्या एट और 17 इक्वल है ना नो नो नो नो लेफ्ट को अपडेट कर दीजिए i = 3 पे आइए लेफ्ट में क्या करिए एरे ऑफ़ टू की वैल्यू जोड़ दीजिए पहले वाले की जोड़ दीजिए ना भाई 8 और 3 11 राइट इक्वल टू राइट इक्वल टू 28 माइनस माइनस एरे ऑफ़ थ्री क्या होता है सिक्स ठीक है - 6 माइनस माइनस लेफ्ट इसका आंसर क्या आएगा 22 - 11 यस लेफ्ट और राइट आपका इक्वल हो",
+      "source": "caption",
+      "english_text": "What will be right? Right will be 28 minus array of i which is three - 8 17 what is at and 17 equal to no no no no no update left i = 3 let's come to the left what to do add the value of array of two add the value of the first one no brother 8 and 3 11 right equal to right equal to two 28 minus minus what is array of three It is six, it is ok - 6 minus minus left, what will be its answer 22 - 11 yes, your left and right should be equal."
+    },
+    {
+      "start_time": 2158.0,
+      "end_time": 2188.71,
+      "text": "गया। इसका मतलब क्या है? कि ये जो इंडेक्स है ना इसका लेफ्ट मतलब पहले का सारा भाग और आगे का सारा भाग पूरा सेम है। खटाक से क्या रिटर्न कर दिए? थ्री रिटर्न कर दिए। ये आप लोग प्रीफिक्स एरे अब सीखे हैं। अब पूरा आप लोग प्रीफिक्स एरे का आप लोग क्या सीख गए? फ्लो चार्ट याद करिए। आप लोग कौन सा कैटेगरी सीख गए? कहां गया जी? अरे भुला गया क्या? फ्लो चार्ट एक तो बनाए थे ना शुरू में। हां आप लोग ये सीख चुके हैं। ये आप लोग सीख चुके हैं। इसमें क्या बोले थे?",
+      "source": "caption",
+      "english_text": "Gone. What does it mean? That this is the index, its left side means the whole part of the first and the whole part of the next part is the same. What returns did you make from Khatak? Returned three. These are the prefix arrays you guys have learned now. Now what have you guys learned about prefix array? Memorize the flow chart. Which category did you guys learn? Where did you go? Hey, have you forgotten? A flow chart was made in the beginning. Yes, you guys have learned this. You guys have learned this. What was said in this?"
+    },
+    {
+      "start_time": 2188.72,
+      "end_time": 2216.95,
+      "text": "सिंपल डाटा स्ट्रक्चर। सिंपल सिंपल मतलब या तो एरे या तो वेरिएबल। ये ये आप लोग सीख चुके हैं। बहुत-बहुत बधाई हो। आने वाले दिनों में आप लोग सब सीख जाएंगे। जितने तरीके के पैटर्न, जितने तरीके के टेंप्लेट पॉसिबल है सब सीख जाएंगे। अब इसका टेंप्लेट एक बार देख लेते हैं। टेंप्लेट एक बार देख लीजिए। टेंप्लेट यही होता है। सबसे पहले तो आपको जो प्रीफिक्स का डेटा स्ट्रक्चर है उसको इनिशियलाइज करना है। इस केस में हम हमारा वेरिएबल था लेफ्ट उसको इनिशलाइज किए थे।",
+      "source": "caption",
+      "english_text": "Simple Data Structure. Simple simple means either array or variable. You guys have learned this. Many many congratulations. You guys will learn everything in the coming days. You will learn all the types of patterns and templates that are possible. Now let's take a look at its template. Take a look at the template. This is what a template is. First of all, you have to initialize the data structure of the prefix. In this case we had initialized our variable left."
+    },
+    {
+      "start_time": 2216.96,
+      "end_time": 2249.75,
+      "text": "अगर आपका एरे है तो एरे बना लीजिए। अगर आपको एरे बनाने का मन है तो अपना प्रीफिक्स या सफिक्स एरे बना लीजिए। अगर आप हैशमैप यूज़ करेंगे तो हैशमैप को कर लीजिए। उसके बाद लूप ओवर एरे हम लोग सेम काम किए। लूप ओवर एरे किए। अपडेट प्रीफिक्स। अपडेट प्रीफिक्स मतलब लेफ्ट को अपडेट किए। हर आई पे आपको प्रीफिक्स बनाना पड़ेगा। हर आय पे आपको प्रीफिक्स बनाना पड़ेगा। अगर प्रीफिक्स एरे है तो आपको पहले से पूरा बनाना पड़ेगा। अगर आप लेफ्ट यूज़ करेंगे तो हर बार आपको लेफ्ट बनाना पड़ेगा। हम लोग अपडेट किए और हम लोग चेक कंडीशन किए। चेक कंडीशन अलग-अलग तरीके से हो सकता है। यहां पे हम लोग लेफ्ट निकाले लेफ्ट के बाद हम लोग को राइट भी निकालना पड़ा। फिर",
+      "source": "caption",
+      "english_text": "If yours is an array then create an array. If you want to create an array then create your own prefix or suffix array. If you want to use a hashmap, use a hashmap. After that we did the same work as loop over array. Performed loop over arrays. Update Prefix. Update prefix means updated left. You will have to create a prefix on every account. You will have to make a prefix on every income. If there is a prefix array, you will have to create it complete in advance. If you use left, you will have to make left every time. We updated and we checked conditions. Check condition can occur in different ways. Here we took the left and after the left, we also had to take the right. then again"
+    },
+    {
+      "start_time": 2249.76,
+      "end_time": 2283.75,
+      "text": "हम लोग को कंडिशन चेक करना पड़ा और हो गया। सारा प्रीफिक्स सम इसी टेंप्लेट पे काम करता है। सिंपल टेंप्लेट होता है चार स्टेप का। चलिए। तो अब आप लोग जाके प्रीफिक्स सम सीख चुके हैं। एटलीस्ट द पे पिवट एंड इक्विलिब्रियम क्वेश्चन। आने वाले दिनों में आने वाले दिनों में हम लोग पांच और क्वेश्चन करेंगे। हर क्वेश्चन से आप एक नया पैटर्न सीखेंगे। अभी आप लोग सिंपल वाला सीख गए। आप लोग सिंपल वाला सीख गए। आने वाले दो क्वेश्चन में आप लोग हैशमैप वाला सीख जाएंगे। उसके अगले क्वेश्चन में आप लोग डीक्यू सीख जाएंगे। उसके अगले क्वेश्चन में आप लोग सम ऑफ रेंज सीख जाएंगे। ये चार",
+      "source": "caption",
+      "english_text": "We had to check the condition and it was done. All prefix sums work on this template. The simple template consists of four steps. Let go. So now you guys have gone and learned the prefix sum. Atlist the Pay Pivot and Equilibrium Questions. We will ask five more questions in the coming days. You will learn a new pattern from every question. Now you guys have learned the simple one. You guys learned the simple one. In the coming two questions, you will learn about Hashmap. You guys will learn DQ in his next question. In the next question you will learn Sum of Range. these four"
+    },
+    {
+      "start_time": 2283.76,
+      "end_time": 2317.91,
+      "text": "क्वेश्चन आप सीख गए ना तो आपसे 400 क्वेश्चन होने लगेगा प्रीफिक्स सम का। ये मेरी पर्सनल गारंटी है। तो कंसिस्टेंट रहिएगा। प्रीफिक्स सम बहुत इंपॉर्टेंट कांसेप्ट है इंटरव्यू में। प्रीफिक्स सम, स्लाइडिंग, केडेंस ये सब ना इंटरमीडिएट कॉन्सेप्ट्स हैं। ये लोग एरे की तरह बहुत आसान नहीं है। ये लोग मतलब टू पॉइंटर की तरह उतने आसान नहीं है। ये लोग डायनामिक प्रोग्रामिंग ग्राफ्स की तरह डिफिकल्ट नहीं है। मिडिल में आते हैं और इनसे बहुत सारा क्वेश्चन बनता है। 60% ऑफ क्वेश्चन इन्हीं पैटर्न्स पे बनता है जो कि मिडिल वाले पैटर्न से हम लोग जो इंटरमीडिएट पैटर्न्स है ना इसपे बन रहा है। ये मिस मत करिएगा। अह टू पॉइंटर पढ़ लिए बहुत अच्छी बात है। इंतजार मत कीजिएगा। ये डायनेमिक",
+      "source": "caption",
+      "english_text": "Once you learn the questions, you will start getting 400 questions on prefix even. This is my personal guarantee. So stay consistent. Prefix sum is a very important concept in interview. Prefix sum, sliding, cadence are all non-intermediate concepts. These people are not very easy like array. These guys are not as easy going as the two pointers. These guys are not as difficult as dynamic programming graphs. They come in the middle and a lot of questions arise from them. 60% of the questions are made on these patterns which are intermediate patterns from the middle patterns. Don't miss this. Ahh, it's great to read Two Pointer. Don't wait. this dynamic"
+    },
+    {
+      "start_time": 2317.92,
+      "end_time": 2328.68,
+      "text": "प्रोग्रामिंग ही पढ़ेंगे सीधे। इस तरीके के पैटर्न्स को पढ़ना बहुत जरूरी है। अगर आपका गोल इंटरव्यू है तो सही है। चलिए फिर कल मिलते हैं। कल आइए टाइम से।",
+      "source": "caption",
+      "english_text": "Will study programming directly. It is very important to read the patterns of this type. If your goal is interview then it is correct. Let's meet again tomorrow. Come tomorrow on time."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

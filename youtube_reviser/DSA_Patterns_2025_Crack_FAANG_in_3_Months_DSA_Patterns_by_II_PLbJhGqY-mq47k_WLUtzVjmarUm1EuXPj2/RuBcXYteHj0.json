@@ -1,0 +1,303 @@
+{
+  "video_id": "RuBcXYteHj0",
+  "video_title": "Most Important Question in BINARY Search Algorithm | Find Mountain peak Leetcode",
+  "video_number": 53,
+  "chunks": [
+    {
+      "start_time": 1.51,
+      "end_time": 36.31,
+      "text": "आज वाला क्वेश्चन हमको बहुत अच्छा लगता है पढ़ाना। तो ये माउंटेन एरे है। तो ये कल से बहुत ज्यादा रिलेटेड है। कल वाला जो फर्स्ट ऑफेंस था जो लोग नहीं देखे हैं देख लीजिएगा। क्योंकि 90% वही क्वेश्चन है। थोड़ा सा इमेजिनेशन है। मतलब थोड़ा सा इसको बोलना है कि आपको पहाड़ पे ऐसा-ऐसा करके चल रहे हैं। तो आपको ऐसा दिखेगा फिर आप पीक पे आ जाएंगे और फिर आप ढलांग पे उतरने लगेंगे। तो थोड़ा सा इमेजिनेशन है। तो हमको बहुत अच्छा लगता है ये पढ़ाना भी। क्योंकि बहुत अच्छा क्वेश्चन है। मतलब बहुत अच्छा इमेजिनेशन, सोच-विचार करने का क्वेश्चन है। तो, पूरा देखिएगा और लास्ट में जो लोग पूरा उड़ा-उड़ा के भी देखते हैं ना, लास्ट में जाके एक-दो मिनट का है। वहां पे हम एच केस बताए हैं। एक एच केस या तो कैसे आपको एच केस हैंडल करना चाहिए या सोचना चाहिए उस बारे में। तो जो पूरा वीडियो नहीं भी",
+      "source": "caption",
+      "english_text": "Today's question: We like teaching very much. So this is the mountain array. So this is very much related to yesterday. If you haven't seen yesterday's first offense, please watch it. Because 90% are the same questions. There is a little imagination. It means to say a little that you are walking on the mountain in such and such a manner. So you will see this, then you will reach the peak and then you will start descending. So there is a little bit of imagination. So we like teaching this very much. Because it is a very good question. Meaning, it is a question of very good imagination and thinking. So, watch the whole thing and even those who watch the whole thing in the last breath, it is only for one or two minutes in the last part. There we have mentioned H case. An H case is either how you should handle an H case or think about it. So that's not the whole video"
+    },
+    {
+      "start_time": 36.32,
+      "end_time": 64.229,
+      "text": "देखते हैं तो कम से कम लास्ट का 3 मिनट जरूर देख लीजिएगा। ठीक है? मेरा वो बढ़ाने के लिए नहीं, व्यू और आवर बढ़ाने के लिए नहीं अपने लिए। तो आपको कुछ फायदा होगा उससे। हमको ज्यादा कुछ फायदा होगा नहीं। अगर आप 2 मिनट देखेंगे या 40 मिनट देखेंगे। वो व्यू में काउंट हो ही जाता है। ठीक है? तो आइए शुरू करते हैं जल्दी से। ठीक है? चलिए जो ये सवाल है ना इस सवाल का नाम है माउंटेन एरे। क्या नाम है इसका? माउंटेन एरे। ये लीड कोड 852 है। आपको शीट वीट में मिल जाएगा। लेकिन इसका नाम है माउंटेन एरे। अब ये बोलता क्या है? आपको एक एरे दिया हुआ है। वैसा कुछ खतरनाक सवाल नहीं है। आपको एक एरे दिया हुआ है।",
+      "source": "caption",
+      "english_text": "If you watch it, please watch at least the last 3 minutes. Ok? Not to increase my views, not to increase views and hours for myself. So you will get some benefit from it. We will not get much benefit. If you watch 2 minutes or 40 minutes. It definitely gets counted in the views. Ok? So let's get started quickly. Ok? Well, the name of this question is Mountain Array. What is its name? Mountain array. This lead code is 852. You will find it in Sheet Vet. But its name is Mountain Array. Now what does he say? You are given an array. It is not such a dangerous question. You are given an array."
+    },
+    {
+      "start_time": 64.239,
+      "end_time": 98.069,
+      "text": "अच्छा। वो एरे किस तरीके का होगा? वो बोला है कि वो एरे ना एक पहाड़ की तरह होगा। पहाड़ कैसा होता है? पहाड़ ऐसा आप चढ़ा चढ़ाई करते हैं। आप चढ़ाई करते जाते हैं। चढ़ाई करते जाते हैं। चढ़ाई करते जाते हैं। एक पीक आता है। पीक मतलब उस पहाड़ का सबसे ऊंचा पॉइंट। जहां पे लोग पिकनिक वगैरह मनाने जाता है वहीं एक पीक आता है। उसके बाद उसके बाद अब ढलान आता है। ढलान से आप उतर के नीचे आ जाते हैं। ठीक है? आपको क्या पता करना है? आपको इसमें ये पीक रिटर्न करना है। ये पीक का इंडेक्स रिटर्न करना है। और आपको बताया हुआ है कि हमेशा इस चीज़ की गारंटी है कि आपको जो एरे दिया हुआ होगा वो माउंटेन एरे ही दिया हुआ",
+      "source": "caption",
+      "english_text": "Okay. What type of array will that be? He has said that it will be like a mountain. What is a mountain like? This is how you climb mountains. You keep climbing. Keep climbing. Keep climbing. A peak comes. Peak means the highest point of that mountain. A peak occurs wherever people go for picnics etc. After that now comes the slope. From the slope you come down. Ok? What do you need to know? You have to make this peak return in this. This is to return the index of the peak. And you have been told that there is always a guarantee that the array given to you will be Mountain Array only."
+    },
+    {
+      "start_time": 98.079,
+      "end_time": 125.67,
+      "text": "होगा। ऐसा कोई एरे नहीं दिया होगा कि वो माउंटेन ना हो। मतलब कि इस तरीके का एरे दिया होगा। देखिए ये एरे क्या बोलता है आपको? 1 3 4 5 4 3 मतलब कि ऐसा पहले आएगा वन। अगर आप इसको ड्राइंग बनाएंगे और कॉपी में अपना ड्राइंग बनाएंगे तो कैसा लगेगा? वन थ्री फोर फाइव। उसके बाद फोर और थ्री। फोर थ्री। अगर आप ड्राइंग बनाएंगे तो कैसा लगेगा? देखिए। ये चढ़ाई है। चढ़ते जा रहे हैं। चढ़ते जा रहे हैं। चढ़ते जा रहे हैं।",
+      "source": "caption",
+      "english_text": "Will happen. There is no array given that is not a mountain. Meaning that an array of this type must have been given. See what this array tells you? 1 3 4 5 4 3 Meaning that such a forest will come first. How would it look if you make a drawing of this and make your drawing in the copy? One three four five. After that four and three. Four three. How would it look if you make a drawing? See. This is climbing. Are climbing. Are climbing. Are climbing."
+    },
+    {
+      "start_time": 125.68,
+      "end_time": 159.589,
+      "text": "एक पॉइंट आया जो कि पीक हुआ। उसके बाद हम लोग उतरने लगे। उसके बाद हम लोग उतरने लगे। तो इसका क्या इंडेक्स है? ये ज़ीरो है। ये वन है। ये टू है। ये थ्री है। ये फोर है। ये फाइव है। आपको क्या रिटर्न करना है? आपको इस पीक का इंडेक्स रिटर्न करना है। ठीक है? अच्छा। अब इस क्वेश्चन को देख के डरना नहीं है। इस क्वेश्चन को देख के कभी नहीं डरना है। अब जिनको इनको समझ में आ गया है, जिनको इनको समझ में आ गया है और हम एनकरेज करेंगे कि वीडियो पॉज कर दीजिए। थोड़ा सोचिए। थोड़ा खुद से सोचिए कि इसमें क्या करना चाहिए। जिनको नहीं है समझ में आया? आइए करते हैं। आइए देखते हैं क्या करना है। अब क्वेश्चन बोल रहा है कि माउंटेन तो है। माउंटेन तो पक्का है। ओके।",
+      "source": "caption",
+      "english_text": "A point came which was the peak. After that we started descending. After that we started descending. So what is its index? This is zero. This is a forest. This is two. This is three. This is four. This is five. What do you have to return? You have to return the index of this peak. Ok? Good. Now don't be afraid of seeing this question. Never be afraid of seeing this question. Now those who have understood this, those who have understood this and we will encourage them to pause the video. Think a little. Think for yourself what should be done in this. For those who haven't, did you understand? Let's do it. Let's see what to do. Now the question is saying that the mountain is there. Mountain is for sure. Ok."
+    },
+    {
+      "start_time": 159.599,
+      "end_time": 189.67,
+      "text": "लेकिन माउंटेन है तो अब ये बाइनरी सर्च का क्यों है क्वेश्चन? मतलब कैसे बाइनरी सर्च लाएंगे? तो देखिए हम आपको क्या समझाए थे? बाइनरी सर्च कब लगता है? बाइनरी सर्च तब लगता है सबसे पहले तो आपको जो भी फाइंड करना है। आपको जो भी फाइंड करना है वो अपने दिमाग में सोच लीजिए। आपको यहां पे क्या फाइंड करना है? आपको यहां पे इंडेक्स फाइंड करना है। यूजुअली कोई सिंगल चीज़ ही फाइंड करनी होती है। ऐसा नहीं होता है कि आपको पूरा एरे फाइंड करना रहेगा। नहीं, कोई सिंगल चीज़, या तो कोई इंडेक्स या तो कोई नंबर या तो कोई नंबर ऑफ़ थिंग्स या तो कोई स्पीड मतलब सिंगल एक सिंगल चीज़। Okay?",
+      "source": "caption",
+      "english_text": "But if there is a mountain then why is this a question of binary search? Meaning how to bring binary search? So see what we explained to you? When is binary search done? Binary search is the first thing you want to find. Whatever you want to find, think about it in your mind. What do you want to find here? You have to find the index here. Usually only a single thing has to be found. It does not happen that you have to find the entire array. No, a single thing, either an index or a number or a number of things or a speed means single a single thing. Okay?"
+    },
+    {
+      "start_time": 189.68,
+      "end_time": 217.11,
+      "text": "हम क्या बोले कि आपको जो भी फाइंड करना है आप उसको गेस कर सकते हैं। आप उसको गेस कर सकते हैं। यहां पे आपको अगर इंडेक्स फाइंड करना है तो आप इंडेक्स गेस कर लीजिए। गेस करने का मतलब कि पूरे एरे में से कोई भी इंडेक्स गेस कर लीजिए और देखिए कि ये मेरा आंसर हो सकता है कि नहीं। ये मेरा आंसर हो सकता है या नहीं। हो सकता है या नहीं। और आपका गेस का जो आंसर बनता है वो कैसा होना चाहिए था? वो मोनोटोनिक होना चाहिए था।",
+      "source": "caption",
+      "english_text": "What we said is that whatever you want to find, you can guess it. You can guess that. If you want to find the index here, then guess the index. To guess means to guess any index from the entire array and see whether it can be my answer or not. This may or may not be my answer. May be or not. And what should have been the answer to your guess? It should have been monotonic."
+    },
+    {
+      "start_time": 217.12,
+      "end_time": 250.47,
+      "text": "मतलब कि एक पॉइंट आएगा जहां तक आपको लगेगा कि नहीं नहीं ये मेरा आंसर नहीं बन सकता है। एक पॉइंट आएगा जहां से ये बनेगा कि हां अब ये मेरा आंसर हो सकता है और उसके बाद लगातार आपको बोलेगा कि हां मेरा आंसर ये हो सकता है। मेरा आंसर ये हो सकता है। जैसा कि हम लोग हर क्वेश्चन में देख रहे थे। लोअर बाउंड में देख रहे थे। सीलिंग वाले में देखे थे। फर्स्ट ऑकरेंस में देखे थे। लास्ट ऑकरेंस में देखे सब में देखे थे कि एक मोनोटोोनिसिटी है मतलब आंसर में पार्ट्स है आंसर में क्या है मतलब एक नो वाला पार्ट है और एक यस वाला पार्ट है अच्छा तो ऐसा कभी नहीं होगा कि नो और यस इंटरचेंज हो जाएगा ऐसा नहीं होगा हां अब किस में बाइनरी सर्च में लोग बोलेंगे कि",
+      "source": "caption",
+      "english_text": "Meaning that there will come a point where you will feel that no, this cannot be my answer. A point will come from where it will become clear that yes, now this can be my answer and after that it will continuously tell you that yes, this can be my answer. My answer could be this. As we were seeing in every question. Was looking at lower bound. Saw in the ceiling. Saw in the first occurrence. In the last occurrence, we saw that there is a monotonicity in everything, that is, there are parts in the answer. What is there in the answer, that is, there is a no part and a yes part. Well, it will never happen that no and yes will interchange, this will not happen. Yes, now in binary search people will say that in which question?"
+    },
+    {
+      "start_time": 250.48,
+      "end_time": 285.03,
+      "text": "अरे उसमें तो आप बोले थे कि नो था फिर एक बार बीच में यस आया था और फिर नो नहीं वो वैसा नहीं था वो क्या था वो था लेस लेस लेस लेस लेस इक्वल इक्वल इक्वल इक्वल इक्वल मोर मोर मोर मोर मोर तो वो भी देखिए मिक्स एंड मैच नहीं हो रहा था अलग-अलग पार्ट अलग-अलग पार्ट थे ताकि आप आपको एक लिमिट पता चले। आपको एक लिमिट एक टर्निंग पॉइंट पता चले कि हां इसके बाद ये वाला पार्ट खत्म हो गया है। इसके बाद अगला वाला पार्ट शुरू हो गया है। ठीक है? और अगर आपका ऐसा दिखता है मतलब आपका जो आंसर स्पेस है वो ऐसा मोनोटोनिक दिखता है। एक बात और आपको जो गेस किए हैं उसका आंसर तुरंत पता चल जाता है ऑर्डर ऑफ़ वन या",
+      "source": "caption",
+      "english_text": "Hey, in that you had said that it was no and then once in the middle yes came and then no no, it was not like that, what was it, it was less less less less less equal equal equal equal equal equal more more more more more more so see that also, mix and match was not happening, different parts were different parts so that you can know a limit. You should know one limit, one turning point, that yes, after this this part is over. After this the next part has started. Ok? And if yours looks like this, it means that your answer space looks monotonic. One more thing, the answer to the guess you have made is immediately known, order of one or"
+    },
+    {
+      "start_time": 285.04,
+      "end_time": 319.43,
+      "text": "ऑर्डर ऑफ़ n में। तो वहां पे बाइनरी सर्च लगेगा। तो वहां पे बाइनरी सर्च लगेगा। अब देखिए। आइए देखते हैं कि ये थोड़ा सोचिए। इस ये क्वेश्चन थोड़ा इमेजिनेशन का है। ठीक है? ये क्वेश्चन थोड़ा सा इमेजिनेशन का है कि माउंटेन एरे है। अच्छा तो एरे ऐसा है। माउंटेन ऐसा ही लगता है ना भाई। माउंटेन ऐसा ही लगता है। अच्छा। आइए इसमें कुछ ना कुछ पॉइंट बना देते हैं। इसमें कुछ ना कुछ पॉइंट। एक ये पॉइंट है। एक ये पॉइंट है। एक ये पॉइंट है। एक पीक वाला पॉइंट है। एक नीचे वाला है। एक इधर वाला है और एक ये वाला है। ठीक है? ये सारे पॉइंट है या इंडेक्सेस मान लीजिए। इनसे एक पहाड़ बना हुआ है। अब पहाड़ में देखिए हो क्या रहा",
+      "source": "caption",
+      "english_text": "In order of n. So binary search will be done there. So binary search will be done there. watch now. Let's think about this a little. This question is a bit of imagination. Ok? This question is a bit of imagination that there is a mountain array. Well, it is like this. That's what a mountain looks like, brother. This is what the mountain feels like. Good. Let us make some points in this. There are some points in this. This is one point. This is one point. This is one point. There is a peak point. The one below. One is here and one is this one. Ok? These are all points or let's say indexes. A mountain is made of these. Now see what is happening in the mountain"
+    },
+    {
+      "start_time": 319.44,
+      "end_time": 345.51,
+      "text": "है? पहाड़ में अब क्या हो रहा है? देखिए। मान लीजिए मान लीजिए आप नॉर्मल पहाड़ चढ़ रहे हैं। सब क्वेश्चन भूल जाइए। आप नॉर्मल एक पहाड़ चढ़ रहे हैं। आपको मालूम ही नहीं है कि पीक कहां है। आपको मालूम नहीं है कि पीक कहां है। है ना? आपको अगर मालूम नहीं है कि पीक कहां है। अच्छा। तो आप क्या करेंगे? आप पहाड़ को यहां से चढ़ना शुरू करेंगे। आप पहाड़ को यहां से चढ़ना शुरू करेंगे। ऐसा करके चढ़ते जाएंगे। चढ़ते जाएंगे। तो एक पॉइंट तक देखिए एक पॉइंट तक क्या हो रहा है ना कि आप चढ़ते जा रहे हैं। आप ऐसा-ऐसा करके चढ़ते जा रहे है।",
+      "source": "caption",
+      "english_text": "Is it? What is happening in the mountain now? See. Suppose you are climbing a normal mountain. Forget all questions. You are normally climbing a mountain. You don't even know where the peak is. You don't know where the peak is. Isn't it? If you don't know where the peak is. Good. So what will you do? You will start climbing the mountain from here. You will start climbing the mountain from here. By doing this we will keep climbing. Will keep climbing. So see what is happening till one point, not that you are climbing. You are climbing like this."
+    },
+    {
+      "start_time": 345.52,
+      "end_time": 379.909,
+      "text": "ऐसा-सा करके चढ़ते जा रहे है। तो आप चढ़ाई पे ऐसा-ऐसा करके चढ़ते जा रहे हैं। एक पॉइंट आएगा। एक पॉइंट आएगा जब आप इस पीक पे पहुंच जाएंगे। एक पॉइंट आएगा जब आप इस पीक पे पहुंच जाएंगे। एक पीक जब आप इस पीक पे पहुंच जाएंगे। उस समय आप सीधे खड़े होंगे। देखिए ध्यान से देखिए। क्वेश्चन को सोचिए, फील करिए क्वेश्चन को। एक पॉइंट आएगा मतलब आप पहाड़ चढ़ना शुरू करेंगे तो आप ऐसे करके चढ़ते हुए जा रहे हैं। इंक्रीसिंग पे इंक्रीजिंग पे चढ़ते जा रहे हैं। एक पॉइंट आएगा जब आप सीधे हो जाएंगे। वो होगा पीक, वो होगा पीक। उसके बाद जब आप पहाड़ पे उतरेंगे, उसके बाद जब पहाड़ पे उतरेंगे तो आप ऐसा-ऐसा ऐसा ऐसा ऐसा ऐसा करके उतरते जाएंगे तो आप नीचे हो जाएंगे। तो आप नीचे",
+      "source": "caption",
+      "english_text": "They are climbing like this. So you are climbing the mountain by doing this and that. One point will come. There will come a point when you will reach this peak. There will come a point when you will reach this peak. A peak when you reach this peak. At that time you will stand straight. Look look carefully. Think about the question, feel the question. A point will come, meaning you will start climbing the mountain, then you will keep climbing like this. The increasing levels are increasing. There will come a point when you will become straight. That will be the peak, that will be the peak. After that, when you will descend the mountain, after that, when you will descend the mountain, you will go down by doing such and such, such and such, then you will go down. so you down"
+    },
+    {
+      "start_time": 379.919,
+      "end_time": 414.79,
+      "text": "हो जाएंगे। पहाड़ ऐसे ही चढ़ जाता है ना? पहाड़ ऐसे ही चढ़ा जाता है ना भाई। आप ऐसे-ऐसे कर चढ़ते हैं। थोड़ा सीधा हो जाते हैं और फिर नीचे ऐसे करके उतरने लगते हैं तो ऐसे ही होता है। ओके। अब पीक कहां है? पीक कहां है? जब आप पहली बार सीधे हो गए थे। जब आप पहली बार सीधे हो गए थे। जब आप पहली बार सीधे हो गए थे। वही पिक है ना? वही पीक है ना? अगर आप आपको बोलता कि ये करो चलो चलो पहाड़ पे और हमको बताना। कोई आंख पे पट्टी बांध देता बोलता कि पहाड़ पे चढ़ो हमको बताना कि पीक कब है तो आप उसको कैसे बताते। अगर कोई आपके यहां पे आंख पे",
+      "source": "caption",
+      "english_text": "Will happen. Mountains climb like this, right? This is how mountains are climbed, isn't it brother? You rise in taxes like this. If we straighten up a little and then start going down like this, this is what happens. Ok. Where is Peak now? Where is the peak? When you became straight for the first time. When you became straight for the first time. When you became straight for the first time. Is it the same pick? That's the peak isn't it? If I told you to do this then go to the mountain and tell us. Someone would blindfold you and say climb the mountain and tell us when is the peak, then how would you tell him. If someone comes to your place"
+    },
+    {
+      "start_time": 414.8,
+      "end_time": 443.35,
+      "text": "पट्टी बांध देता और बोलता कि तुम पहाड़ पे चढ़ो और तुमको बताना होगा फील करके कि पीक कब आएगा। तो आप देखिए आप जब तक ऐसा करके चल रहे हैं जब तक ऐसा करके जब तक आप जब तक आप इस क्या जब तक आप इस चढ़ाई पे हैं जब तक आप इस चढ़ाई पे हैं तब तक तो आपको लगेगा कि हां अभी पीक नहीं आया होगा। अभी पीक नहीं आया होगा क्योंकि हम अभी चढ़ाई पे हैं। जैसे ही आप सीधे हो गए। जैसे ही आप सीधे हो गए तो आप बोलेंगे कि हां हां रुको रुको रुको रुको। फर्स्ट टाइम सीधे हुए ये पीक है। उसी समय आप चिल्ला के बोलेंगे कि ये पीक है। बस यही है इस क्वेश्चन का लॉजिक।",
+      "source": "caption",
+      "english_text": "He would tie a bandage and tell you to climb the mountain and he would have to tell by feeling when the peak will come. So you see, as long as you are doing this, as long as you are doing this, as long as you are on this climb, as long as you are on this climb, you will feel that yes, the peak may not have come yet. The peak may not have arrived yet because we are still climbing. As soon as you straightened up. As soon as you straighten up you will say yes yes wait wait wait wait. This is the first straight peak. At the same time you will shout that this is the peak. This is the only logic of this question."
+    },
+    {
+      "start_time": 443.36,
+      "end_time": 477.67,
+      "text": "अब अब ये तो डायग्राम और ये तो वो था कि ऐसा-ऐसा करके चल रहे हैं लेकिन क्वेश्चन तो ऐसा-ऐसा करके नहीं बनता है। देखिए। आपको क्या बोला हुआ है? पहाड़। हम लोग सारा देखिएगा सारा जो आप क्वेश्चन करते हुए आ रहे हैं ना इसीलिए बेसिक क्वेश्चन में हम बहुत ज्यादा टाइम स्पेंड किए ताकि ये सब क्वेश्चन आसान लगे आप लोग को। देखिए। ये पीक है। बात करते हैं चढ़ाई की। बात करते हैं चढ़ाई की। बात करते हैं चढ़ाई की। चढाई की आप चढाई को कैसे डिफाइन करते हैं? कोई चीज़ चढाई क्यों है? कोई चीज़ ऐसा चढाई पे क्यों है? क्या ऐसा नहीं है कि जब मान लीजिए ऐसा है आपका एरे ah ऐसा दिखता है। मान लीजिए",
+      "source": "caption",
+      "english_text": "Now this is a diagram and it was that we are going on doing this and that, but the question is not solved by doing this and that. See. What have you been told? Mountain. Sara, we will see all the questions that you are coming, that is why we have spent a lot of time in the basic questions so that all these questions seem easy to you. See. This is the peak. Let's talk climbing. Let's talk climbing. Let's talk climbing. How do you define climbing? Why is something uphill? Why is something so uphill? Isn't that when let's say your array ah looks like this. Suppose"
+    },
+    {
+      "start_time": 477.68,
+      "end_time": 502.95,
+      "text": "वो वन है, फिर टू है, फोर है, फाइव है, सेवन है। और सेवन के बाद फिर उतार है। सेवन के बाद फिर उतार है कि सिक्स है। और फिर फोर है और थ्री। तो 0 1 2 3 4 5 6 7 तो अगर आप इस पहाड़ को बनाएंगे तो आपको ऐसा दिखेगा कि ऐसा बनेगा ऐसा बनेगा। ये वन है ये टू है। ये फोर है। ये फाइव है। ये सेवन है। उसके बाद ये सिक्स है। ये फोर है। ये थ्री है। ऐसा करके पहाड़ दिखेगा।",
+      "source": "caption",
+      "english_text": "There is one, then there is two, there is four, there is five, there is seven. And after consumption it is down again. After seven, it is said that it is six. And then there's four and three. So 0 1 2 3 4 5 6 7 So if you make this mountain, it will look like this. This is one, this is two. This is four. This is five. This is intake. After that it's six. This is four. This is three. By doing this the mountain will be visible."
+    },
+    {
+      "start_time": 502.96,
+      "end_time": 531.03,
+      "text": "आपको पता चल रहा है कि पीक तो मेरा सेवन है। अब देखिए तो ये पार्ट क्या हो गया? ये आपका चढ़ाई है। चढ़ाई है। और ये आपका पीक है। और ये आपका क्या है? ये आपका ढलान है। ये आपका एक तरीके से ढलान है या जो आप ऐसे हो जाते हैं वो है। लेकिन एक बहुत इंटरेस्टिंग चीज़ ऑब्ज़र्व कीजिए। एक बहुत इंटरेस्टिंग चीज़ ऑब्ज़र्व कीजिए। जो चढ़ाई है वो चढ़ाई आप कैसे पता करते हैं कि ये पॉइंट चढ़ाई का है? अगर आप गेस करेंगे मान लीजिए हम आपको इस पॉइंट पे लाके छोड़ दिए।",
+      "source": "caption",
+      "english_text": "You are realizing that the peak is my intake. Now see what happened in this part? This is your climb. is the climb. And this is your peak. And what is this to you? This is your slope. This is your inclination in a way or what you become like this. But observe one very interesting thing. Observe a very interesting thing. The climb is the climb. How do you know that this point is worth climbing? If you would guess, suppose we brought you to this point and left you."
+    },
+    {
+      "start_time": 531.04,
+      "end_time": 564.389,
+      "text": "मान लीजिए हम आपको इस इंडेक्स टू पे ला के छोड़ दिए। वहीं पे बैठा दिए। अब आपसे हम पूछे कि ये बताओ चढ़ाई है कि नहीं? तो आप अभी तो ऐसा कर लेंगे। लेकिन आप ध्यान से देखिए एरे टू इज़ लेस दैन एरे थ्री। इसीलिए एरे टू चढ़ाई है। इसीलिए आदमी चढ़ाई है। यह आदमी चढ़ाई क्यों है? क्योंकि ये अपने आगे वाले से कम है। इसीलिए तो ये चढ़ाई है। नहीं तो ये ढलान हो जाता ना। देखिए अगर ये एरे ऑफ़ टू एरे ऑफ़ थ्री के इक्वल हो जाता। तब तो ये स्ट्रेट जमीन हो जाता। यही होता ना? ऐसा हो जाता। अगर एरे ऑफ़ टू इज़ ग्रेटर दैन एरे ऑफ़ थ्री होता, तब ये ढलान हो जाता। अगर एरे ऑफ़ टू इज़ लेस",
+      "source": "caption",
+      "english_text": "Suppose we left you with this index to pay la. Made me sit there. Now let us ask you to tell us whether it is climbing or not? So you will do this now. But if you look carefully, array two is less than array three. That's why there is array to climb. That's why man is climbing. Why is this guy climbing? Because it is less than the one before it. That's why this is a climb. Otherwise it would have gone downhill. See if this array of two became equal to array of three. Then this straight would have become land. This is what happens isn't it? This would have happened. If the array of two was greater than the array of three, then it would be sloping. If array of two is less"
+    },
+    {
+      "start_time": 564.399,
+      "end_time": 598.63,
+      "text": "देन एरे ऑफ़ थ्री है। तभी तो ये चढ़ाई है। तभी तो ये चढ़ाई है। आपको पता नहीं चल गया। देखिए गौर से देखिए। गौर से देखिए इस एरे में क्या हो रहा है। एरे ऑफ़ ज़ीरो इज़ लेस दैन एरे ऑफ़ वन। हर हर इंडेक्स को अपने आगे वाले से देख लीजिए। ओके? आपको एक पैटर्न दिख जाएगा कुछ देर में। एरे ऑफ़ वन इज़ लेस दैन एरे ऑफ़ टू। है भी। एरे ऑफ़ टू इज़ लेस दैन एरे ऑफ़ थ्री। ओके? एरे ऑफ़ थ्री इज़ लेस दैन एरे ऑफ़ फोर। हां, ये भी सही है। 5 इज़ लेस दैन से। लेकिन लेकिन जैसे ही आप पीक को छूते हैं, जैसे ही आप पीक को छूते हैं,",
+      "source": "caption",
+      "english_text": "Then there is an array of three. That's why this climb is there. That's why this climb is there. You didn't know. Look look carefully. Look carefully at what is happening in this array. Array of zeros is less than array of ones. Look at each index in front of you. Ok? You will see a pattern after some time. Array of one is less than array of two. It is also. Array of two is less than array of three. Ok? Array of three is less than array of four. Yes, this is also correct. 5 Is Less Than Say. But but as soon as you touch the peak, as soon as you touch the peak,"
+    },
+    {
+      "start_time": 598.64,
+      "end_time": 631.35,
+      "text": "जैसे ही आप पीक को छूते हैं इंडेक्स नंबर फोर को, क्या होने लगता है उसी समय? उसी समय क्या होने लगता है? देखिएगा। एरे ऑफ़ फोर ग्रेटर दैन एरे ऑफ़ फाइव। ध्यान से देखिए। सेवन इज़ ग्रेटर दैन सिक्स। ये रूल बदल गया। ये रूल ऐसा चेंज हो गया। ऐसा रिवर्स हो गया ये रूल। एरे ऑफ़ फाइव इज़ ग्रेटर दैन एरे ऑफ़ सिक्स। यस यस। एंड एरे ऑफ़ सिक्स इज़ ग्रेटर दैन एरे ऑफ़ सेवन। ये तीनों ये तीनों क्या था? पीक प्लस ढलान। पीक प्लस",
+      "source": "caption",
+      "english_text": "As soon as you touch the peak, index number four, what starts happening at that moment? What starts happening at that very moment? Will see. Array of four greater than array of five. Look carefully. Seven is greater than six. This rule changed. This rule has changed like this. This rule has been reversed. Array of five is greater than array of six. Yes yes. And array of six is ​​greater than array of seven. What were these three? Peak plus slope. Peak Plus"
+    },
+    {
+      "start_time": 631.36,
+      "end_time": 660.87,
+      "text": "ढलान। तो पीक जब आप पीक पे आए तो भी आप अपने आगे वाले से बड़े हैं। उसके बाद आप ढलान पे आए तो भी अपने आगे वाले से बड़े हैं। इस पे आए तो भी अपने आगे वाले से बड़े हैं। और जब तक ये रूल है। जब तक ऐसा है जब तक कोई इंडेक्स अपने आगे वाले से कम है तो ये क्या है आपका? चढ़ाई। तो ये क्या है आपका? चढ़ाई। बस खत्म हो गया। तो आप अपने एरे को दो भाग में तोड़ सकते हैं। आप अपने एरे को दो भाग में तोड़ सकते हैं। देखिए क्या भाग में तोड़ सकते हैं। 1 2 4 5 7 64 3 ध्यान से देखिएगा।",
+      "source": "caption",
+      "english_text": "Slope. So even when you reach the peak, you are bigger than the person in front of you. After that, even if you come on a slope, you are bigger than the person ahead of you. Even if he comes here, he is bigger than the one before him. And as long as this rule is there. As long as that is the case, as long as an index is lower than the one ahead of it, what is yours? Climbing. So what is this for you? Climbing. It's over. So you can break your array into two. You can break your array into two parts. See what parts you can break it into. 1 2 4 5 7 64 3 Look carefully."
+    },
+    {
+      "start_time": 660.88,
+      "end_time": 693.75,
+      "text": "बहुत ध्यान से देखिएगा। 1 2 4 5 7 6 4 3 0 1 2 3 4 5 6 7 देखिए वन क्या है? वन एक चढ़ाई है। वन एक चढ़ाई है। ये वाला इंडेक्स ये भी चढ़ाई है। क्यों? क्योंकि ये अपने आगे वाले से कम है। ये अपने आगे वाले से कम है। अगर कोई पॉइंट अपने आगे वाले से कम है तो आप उस पॉइंट पे आप फील कर रहे है ना कि ये चढ़ाई वाला पॉइंट है। और कोई पॉइंट अपने आगे वाले से बड़ा है तो आप बोलेंगे कि हां हम ऊपर है तो ये ढलान होगा। और देखिए",
+      "source": "caption",
+      "english_text": "Will look very carefully. 1 2 4 5 7 6 4 3 0 1 2 3 4 5 6 7 See what is forest? The forest is a climb. The forest is a climb. This index is also climbing. Why? Because it is less than the one before it. It is less than the one before it. If a point is lower than the one ahead of you, then you are feeling that you are at that point and not that it is a climbing point. And if any point is bigger than the one in front of you then you will say that yes we are above, then it must be a slope. see more"
+    },
+    {
+      "start_time": 693.76,
+      "end_time": 728.629,
+      "text": "ये वाला फोर चढ़ाई। ये वाला फाइव चढ़ाई। लेकिन ये वाला सेवन ये वाला सेवन आप इसको कुछ भी बोल दीजिए नॉन चढ़ाई है चलिए इसको ढलान बोल दीजिए उतार बोल दीजिए जो भी मन है ये वाला सिक्स ढलान ये वाला फोर ढलान ये वाला थ्री ढलान ध्यान से देखिए क्या ये मोनोटोनिक नहीं है चढ़ाई चढ़ाई चढ़ाई चढ़ाई चढ़ाई और लगातार ढलान ढलान ढलान ढलान और इसका जो टर्निंग पॉइंट है इसका जो टर्निंग पॉइंट है जो फर्स्ट",
+      "source": "caption",
+      "english_text": "This one climbs four. This one climbs five. But this one, this one, you call it anything, it is non-climb, let's call it slope, descent, call it whatever you want, this one six slope, this one four slope, this three slope, look carefully, isn't it monotonic, climb, climb, climb, climb, climb, and continuous slope, slope, slope, slope, and its turning point, its turning point, which is the first"
+    },
+    {
+      "start_time": 728.639,
+      "end_time": 759.35,
+      "text": "ढलान है यस फर्स्ट ढलान यही आपका पीक है। यही आपका पीक है। देखिए सेवन क्या था? सेवन वो पहला इंडेक्स था जहां पे आपको पता चला था कि एरे ऑफ़ i इज़ ग्रेटर देन एरे ऑफ़ i + 1 ये फर्स्ट था ये। फर्स्ट फर्स्ट ऐसा कुछ था। तो क्या ये फर्स्ट ऑकरेंस जैसा क्वेश्चन नहीं हो गया? आपको ढलान खोजना है। आपको ढलान खोजना है। लेकिन आपको ढलान का फर्स्ट ऑकरेंस खोजना है। आपको ढलान का फर्स्ट ऑकरेंस खोजना है। तो बस अब जिनको समझ में आ गया होगा आप लोग कोड कर लीजिए।",
+      "source": "caption",
+      "english_text": "The slope is yes, the first slope is your peak. This is your peak. See what the intake was? Seven was the first index where you came to know that array of i is greater than array of i + 1. This was the first. First first was something like this. So isn't this a question of first occurrence? You have to find the slope. You have to find the slope. But you have to find the first occurrence of the slope. You have to find the first occurrence of slope. So now only those who have understood can code."
+    },
+    {
+      "start_time": 759.36,
+      "end_time": 787.269,
+      "text": "जिनको नहीं समझ में आया देखिए। तो आप लोग क्या देखिए कि आप आप कोई भी इंडेक्स गेस करेंगे। आप कोई भी इंडेक्स गेस करेंगे। आप कोई भी इंडेक्स गेस करेंगे। तो या तो वो चढ़ाई होगा। या तो वो चढ़ाई होगा ऐसा इंक्रीसिंग वाला। या तो वो ढलान होगा। या तो वो ढलान होगा। चढ़ाई कैसे पता चलेगा? एरे ऑफ गैस वाला अपने आगे वाले से कम होगा। तभी तो वो कम होगा तो चढ़ के वहां तक जा रहे हैं। अब लोअर पॉइंट से हायर पॉइंट तक जाते हैं उसी को बोलते हैं ना चढ़ाई।",
+      "source": "caption",
+      "english_text": "Those who did not understand, see. So what do you guys see that you will guess any index. You will guess any index. You will guess any index. So either that would be climbing. Either that climb will be increasing. Either that or that slope. Either that or that slope. How to know the climb? The one with array of gas will be less than the one in front of it. Only then will it be less so we will climb up and reach there. Now we go from lower point to higher point, that is called climbing."
+    },
+    {
+      "start_time": 787.279,
+      "end_time": 821.43,
+      "text": "यस। ये अपने आगे वाले से कम होगा। ये एरे ऑफ़ गैस +1 से कम होगा। ढलान कैसे पता चलेगा? ये अपने आगे वाले से ज्यादा होगा। तभी तो इसको ढलान बोलते हैं। आप हायर पॉइंट से लोअर पॉइंट जाते हैं। उसी को ढलान बोला जाता है। तो ये ज़्यादा होगा। दोनों चीज़ें पता चल गई। और आपका जो आंसर का स्पेस है वो कैसा दिखता है? वैसा दिखता है। चढ़ाई चढ़ाई चढ़ाई चढ़ाई चढ़ाई अचानक ढलान फिर सारे ढलान फिर सारे ढलान। ऐसा तो नहीं होता। ऐसा नहीं होगा कि आपको ढलान मिलेगा और अचानक चढ़ाई मिल जाएगा। ये क्वेश्चन अलग है। ये क्वेश्चन थोड़ा",
+      "source": "caption",
+      "english_text": "Yes. It will be less than the one before it. This array of gas will be less than +1. How to know the slope? This will be more than the one before it. That's why it is called a slope. You go from higher point to lower point. That is called slope. So this will be more. Both things came to light. And what does your answer space look like? Looks like that. Climb, climb, climb, climb, suddenly slope, then all slope, then all slope. This does not happen. It won't happen that you get a slope and suddenly get uphill. This question is different. This question is a little"
+    },
+    {
+      "start_time": 821.44,
+      "end_time": 848.629,
+      "text": "कॉम्प्लेक्स है। ये कल करेंगे। ऐसा भी हो सकता है कल वाले क्वेश्चन में देखेंगे कि इसको कैसे हैंडल करें। लेकिन अभी के लिए तो आपको बोला है कि एक माउंटेन है। एक माउंटेन का मतलब चढ़ाई पीक ढलान। बस खत्म। अब अगर आपको यह चढ़ाई मिलती है। अगर आप कभी भी चढ़ाई पर आते हैं। आपका गेस यहां पर आता है तो आपको क्या पता चलता है? मेरे लेफ्ट का सारा चढ़ाई है। मेरे लेफ्ट का सारा चढाई है। हमको राइट जाना चाहिए। हमको राइट जाना चाहिए। हमको राइट जाना चाहिए।",
+      "source": "caption",
+      "english_text": "Is complex. Will do this tomorrow. This can also happen, we will see how to handle it in tomorrow's question. But for now we have told you that there is a mountain. A mountain means climbing the peak slope. that's over. Now if you get this climb. If you ever come to climb. What do you find out when your guess comes here? All to my left is uphill. Everything to my left is uphill. We should go right. We should go right. We should go right."
+    },
+    {
+      "start_time": 848.639,
+      "end_time": 878.629,
+      "text": "देख के पता चल रहा है। लेकिन अगर आपको ढलान मिलता है। अगर आपको ढलान मिलता है तो आप किस ढलान में इंटरेस्टेड हैं? आप फर्स्ट ऑकरेंस ऑफ़ ढलान में इंटरेस्टेड है। आप फर्स्ट ऑकरेंस कल क्वेश्चन में क्या किए थे? फर्स्ट ऑकरेंस। तो आपको क्या पता चलता है? ये मेरा आंसर हो सकता है। ये मेरा आंसर हो सकता है। अब जो लोग कल का लेक्चर नहीं देखे उनको बहुत दिक्कत हो रही होगी। कल का लेक्चर हम बहुत प्यार से समझाए थे। थोड़ा सा देख लीजिए थोड़ा सा मेरा भी ख्याल कीजिए आप लोग। तो अगर कल का नहीं देखेंगे तो फिर आप यहां पे कमेंट कर सकते हैं कि ये वाला आप नहीं बताएं ठीक से।",
+      "source": "caption",
+      "english_text": "You can tell by seeing. But if you get a slope. If you get a slope, which slope are you interested in? You are interested in First Occurrence of Slope. What did you do in the first occurrence question yesterday? First Occurrence. So what do you find out? This could be my answer. This could be my answer. Now those who did not watch yesterday's lecture must be facing a lot of trouble. We explained yesterday's lecture very lovingly. You guys, take a little care and take care of me too. So if you don't see it tomorrow then you can comment here and tell me this one properly."
+    },
+    {
+      "start_time": 878.639,
+      "end_time": 912.389,
+      "text": "लेकिन हम कल इस चीज़ को बहुत विस्तार से समझाएं। मतलब मेरा जितना ताकत था हम उतना विस्तार से कल इसको सब बताए थे। ठीक है? तो अब बहुत लोग को लग भी रहा होगा कि बार-बार हो रहा है। ठीक है? अब आया अगर यहां पे ये ढलान पे आप गेस आ गया तो ये आपका आंसर हो सकता है लेकिन आपको क्या चाहिए? फर्स्ट ऑकरेंस। फर्स्ट ऑकरेंस तो कल आप क्या किए थे? आप बोले थे राइट देखने से तो फायदा ही नहीं है लेकिन लेफ्ट देखना पड़ेगा। तो हम आप बोले थे इस दुकानदार को कि ये वाला मेरे लिए रख दो। मतलब मेरे आंसर में ये वाला गेस रख दो। लेकिन हम एक बार लेफ्ट देख के आते हैं। अगर हमको लेफ्ट में कोई और ढलान मिल गया जैसे कि ये वाला तो हम उसको ले लेंगे। अगर हमको कोई ढलान",
+      "source": "caption",
+      "english_text": "But let us explain this thing in great detail tomorrow. I mean, I had told him everything in detail yesterday as much as I had the strength. Ok? So now many people might be feeling that this is happening again and again. Ok? Now, if you get gas here on this slope, then this can be your answer, but what do you want? First Occurrence. First Occurrence So what did you do yesterday? You said that there is no benefit in looking right but you will have to look left. So you yourself told this shopkeeper to keep this one for me. Meaning, put this gas in my answer. But we come after looking left once. If we find another slope on the left like this one, we will take it. if we have any slope"
+    },
+    {
+      "start_time": 912.399,
+      "end_time": 938.389,
+      "text": "नहीं मिला तो हम इसी को ले लेंगे। इससे आपको क्या मिल जाता था? फर्स्ट ऑकर रेंज। तो बस खत्म हो गई बात। आइए इसका कोड दिखाते हैं। इसका कोड बहुत सिंपल है। आपको एक इंटीजर फन में एक एरे दिया रहेगा। आपको एक इंटीजर फन में एक एरे दिया रहेगा। इंट n = a डॉट साइज। क्या करना है? लो ले लीजिए।",
+      "source": "caption",
+      "english_text": "If we don't get it, we will take this one. What did you get from this? First Occur Range. So that's the end of the matter. Let's show its code. Its code is very simple. You will be given an array of integer functions. You will be given an array of integer functions. int n = a dot size. What is the plan? Take it."
+    },
+    {
+      "start_time": 944.55,
+      "end_time": 976.629,
+      "text": "हाई = n - 1 इंट रेस्ट = -1 आंसर रखने के लिए। आइए, बाइनरी सर्च कीजिए। लो लेस दैन इक्वल टु हाई इंट मिड = लो प्लस आइए, गेस ही करते हैं इसको। क्योंकि हम गेस से आप लोगों को शुरू से पढ़ा रहे हैं। तो, वही करते हैं। गेस इज़ इक्वल टू लो प्लस हाई बाय टू। उसके बाद आपको क्या चेक करना था? उसके बाद आपको क्या चेक करना था? इफ चढ़ाई चेक कर लीजिए। चढ़ाई कैसे चेक होता था? इफ एरे ऑफ़",
+      "source": "caption",
+      "english_text": "high = n - 1 int rest = -1 to hold the answer. Let's do a binary search. Low less than equal to high int mid = low plus Let's guess this. Because we are teaching you people from the beginning with Guess. So, let's do the same. Guess is equal to low plus high by two. What did you have to check after that? What did you have to check after that? Check if climbing. How was the climb checked? if array of"
+    },
+    {
+      "start_time": 976.639,
+      "end_time": 1004.47,
+      "text": "गेस इज़ लेस देन गेस + 1 मतलब ये क्या है? चढ़ाई है। तो लो इज़ इक्वल टू गेस + 1 राइट जाना है। चढ़ाई है। लेफ्ट का सारा चढ़ाई होगा। एल्स अगर ये ढालान है। इसको ले लीजिए। इसको रख लीजिए अभी के लिए। अब आपको राइट से कोई काम नहीं है। लेकिन आपको लेफ्ट में देख लेना चाहिए कि आपको फर्स्ट ऑकरेंस चाहिए। आपको लास्ट ऑकरेंस नहीं चाहिए। आपको फर्स्ट ऑकरेंस चाहिए। तो हाई इक्वल टू ये कल का जस्ट कल का क्वेश्चन नहीं है।",
+      "source": "caption",
+      "english_text": "What does Guess is less than Guess + 1 mean? is the climb. So low is equal to guess + 1 to go right. is the climb. The entire left will be uphill. Else if it's slope. Take this. Keep this for now. Now you have no business with Wright. But you should check on the left that you want first occurrence. You don't want the last occurrence. You need first occurrence. So high equal to this is not just yesterday's question."
+    },
+    {
+      "start_time": 1004.48,
+      "end_time": 1033.669,
+      "text": "कल का फर्स्ट अपोरेंस का ही क्वेश्चन है। ठीक है? बंद कर दिए। रिटर्न ठीक है? जस्ट ये कल का क्वेश्चन है। हां। अब किसीकिसी को यहां पे डाउट आना चाहिए कि यहां पे आप क्या चेक कर रहे हैं? यहां पे आप ये चेक कर रहे हैं। एरे ऑफ़ गेस इज़ लेस दैन। बहुत ध्यान से सुनिएगा मेरा बात। हो गया है। प्रोग्राम यही है। प्रोग्राम यही देख लीजिए। प्रोग्राम यही है। चल जाएगा। लेकिन ये बहुत समझना जरूरी है। आप यहां पे गेस और गेस + 1 को कंपेयर कर रहे हैं। तो आपके दिमाग में आना चाहिए कि अगर मान लीजिए कभी ना कभी जा के अब गेस क्या है?",
+      "source": "caption",
+      "english_text": "Tomorrow's question is of first appearance only. Ok? Shut it down. Returns ok? This is just tomorrow's question. Yes. Now someone must be in doubt as to what are you checking here? Here you are checking this. The array of guesses is less than that. Listen to me very carefully. It is done. This is the program. Watch the program right here. This is the program. will work. But it is very important to understand this. Here you are comparing Guess and Guess + 1. So it should come to your mind that if we assume that someday we will go, what is gas now?"
+    },
+    {
+      "start_time": 1033.679,
+      "end_time": 1067.11,
+      "text": "गेस इंडेक्स है। गेस अगर n - 1 हो गया तो। गेस अगर n - 1 हो गया मतलब गेस अगर लास्ट पे चला गया तो क्या होगा? गेस अगर लास्ट पे चला गया तो क्या होगा? तो आप तो ये करने लगेंगे। एरे ऑफ़ n - 1 इज़ ग्रेटर दैन एरे ऑफ़ n। अब ये तो बेकार है। यहां पे आपको सेगमेंटेशन या क्रैश जो भी मिलना चाहिए। लेकिन, ऐसा नहीं होगा। ऐसा कभी नहीं होगा। क्यों? क्योंकि आपको बोला हुआ है कि आपका जो एरे है ना वो माउंटेन पक्का है। वो माउंटेन पक्का है। अब देखिए गेस n - 1 कब बनता है? देखते हैं। मान लीजिए n = 6 है। मान लीजिए n = 6 है। आप शुरू कहां",
+      "source": "caption",
+      "english_text": "is the gas index. Guess if n becomes 1. If the guess becomes n - 1, what will happen if the guess goes to the last one? What will happen if the gas goes on the last pay? So you will start doing this. Array of n - 1 is greater than array of n. Now this is useless. This is where you should get segmentation or crashes. But, this will not happen. This will never happen. Why? Because you have been told that your array is definitely a mountain. That mountain is for sure. Now see when gas n – 1 is formed? Let's see. Let n = 6. Let n = 6. where do you start"
+    },
+    {
+      "start_time": 1067.12,
+      "end_time": 1097.029,
+      "text": "से करेंगे? लो = 0 से और हाई = 5 से। ठीक है? यहीं से शुरू करेंगे ना? लो 0 और हाई फाइव से। अब आप बोल रहे हैं कि मेरा गेस क्या बन जाएगा? n - 1 मतलब 5। n - 1 मतलब फाइव। ये तभी बनेगा। अब गेस है क्या? लो प्लस हाई बाय 2 लो + हाई बाय 2 मतलब जब लो = 5 और हाई = 5 तभी गेस इक्वल टू 5 बन सकता है। तभी गेस = 5 बन सकता है। ये कैसे पता चला? गेस की वैल्यू डाल के देख लीजिए।",
+      "source": "caption",
+      "english_text": "will do from? Low = 0 and High = 5. Ok? Will we start from here, right? From low 0's and high fives. Now you are saying what will my gas become? n - 1 means 5. n - 1 means five. This will be made only then. Is it gas now? Low plus high by 2 low + high by 2 means when low = 5 and high = 5 then only the guess can become equal to 5. Only then can gas = 5 be formed. How did you know this? Enter the guess value and see."
+    },
+    {
+      "start_time": 1097.039,
+      "end_time": 1130.549,
+      "text": "ऐसे तो लो आप ऐसे करके देख लीजिए। लो प्लस हाई बाय 2 = 5 लो प्लस हाई = 10 मतलब लो और हाई की वैल्यू 10 के बराबर होनी पड़ेगी। लोअर हाई कहां-कहां तक जा सकते हैं? शुरू होते हैं 0 से और एंड होते हैं फाइव से। तो जीरो और फाइव के बीच में आपको दो पेयर खोजना है जिनका सम एग्जैक्टली 10 आए। आपको बस फाइव ही मिलेगा। 5 + 5 = 10 होता है। 4 + 5 = 9 होता है। 4 + 4 = 8 होता है और कुछ आप ले नहीं सकते हैं। तो आपको दो ही तो आपको लो फाइव और हाई फाइव",
+      "source": "caption",
+      "english_text": "Just try it like this. Low plus high by 2 = 5 Low plus high = 10 meaning the value of low and high will have to be equal to 10. How far can Lower High go? Starts with 0 and ends with five. So between zero and five you have to find two pairs whose sum is exactly 10. You'll only get a five. 5 + 5 = 10. 4 + 5 = 9. 4 + 4 = 8 and that's something you can't take away. So just give me a low five and a high five."
+    },
+    {
+      "start_time": 1130.559,
+      "end_time": 1163.909,
+      "text": "लेना पड़ेगा। अच्छा। आप देखिए। आप यहां से शुरू किए थे। लो इज इक्वल टू 0, हाई इक्वल टू 5 और घिसक घिसक के आप बोल रहे हैं कि हम यहां पे आ गए। लो इज इक्वल टू 5, हाई इक्वल टू फाइव। मतलब देखिए हाई तो सेम हो गया। हाई पूरे में सेम रहा। अब क्या? हम लोग ये इमेजिन कर रहे है कि अगर गेस फाइव बन गया तो क्या होगा? गड़बड़ हो जाएगी। तो गेस अगर फाइव बनता है आपको ये लो आना पड़ेगा। हाई तो सेम रह गया। हाई फाइव से शुरू हुआ था। हाई बोल रहा है लास्ट तक फाइव था। लो ज़ीरो से शुरू हो के लो फाइव बन गया। लो फाइव बन गया। तो मतलब क्या हुआ है? लो इंक्रीज़ हुआ है। लो इंक्रीज़ हुआ है। लो इंक्रीज़ कब होता है? लो इंक्रीज़ कब",
+      "source": "caption",
+      "english_text": "Will have to take. Good. You see. You started from here. Low is equal to 0, high is equal to 5 and slowly you are saying that we have come here. Low is equal to 5, high is equal to five. Meaning, look, the high has become the same. The high remained the same throughout. what now? We are imagining what would happen if Guess Five is made? There will be a mess. So guess if five is made then you will have to come here. The high remained the same. Started with a high five. High speaking, it was five till the last. What started from low zero became low five. Made a low five. So what does it mean? Low has increased. Low has increased. When does low increase occur? low increase when"
+    },
+    {
+      "start_time": 1163.919,
+      "end_time": 1195.909,
+      "text": "होता है? जब आपको चढ़ाई मिलती है। जब आपको चढ़ाई मिलती है। तो इसका मतलब कि आपको पूरे माउंटेन में चढ़ाई मिली। आपको पूरे माउंटेन में ही चढ़ाई मिली। मतलब कि आपका एरे ऐसा होगा। आपका एरे ऐसा होगा। ये होगा आपका एरे। और आपके इंडेक्सेस ये होंगे। ऐसे होंगे। आपके इंडेक्सेस ऐसे होंगे। ऐसे होंगे। मतलब कि मान लीजिए ये ज़ीरो है। ये वन है, ये टू है, ये थ्री है, ये फोर है। मान लीजिए आपके इंडेक्सेस ऐसे होंगे। तभी एक और बना देते हैं। तभी एक और एक और बना देते हैं।",
+      "source": "caption",
+      "english_text": "Does it happen? When you get to climb. When you get to climb. So that means you got to climb the entire mountain. You got to climb the entire mountain. Meaning your array will be like this. Your array will be like this. This will be your array. And your indexes will be these. Will be like this. Your indexes will be like this. Will be like this. Meaning that suppose it is zero. This is one, this is two, this is three, this is four. Suppose your indexes will be like this. Then let's make another one. Then they make another one and another one."
+    },
+    {
+      "start_time": 1195.919,
+      "end_time": 1229.59,
+      "text": "और यहां पे ये हो गया इंडेक्स फाइव। आपका एरे ऐसा दिखता होगा तभी आपका वैसा हो सकता है। देखिए कैसा होगा। आप शुरू कहां से करेंगे? लो = 0 हाई = 5। आपका शुरुआती गेस क्या आएगा? 0 + 5 / 2। तो आप यहां पे आएंगे। आप यहां देखेंगे कि ये लेस है अपने आगे वाले से। मतलब चढ़ाई है। तो आप क्या करेंगे? लो = गैस + 1 3 हाई = 5 ओके फिर से आप क्या करेंगे? गैस इज़ इक्वल टू मिड वाला फोर। तो अब यहां इसको भी आप देखेंगे कि ये कम है ये चढ़ाई पे है तो आप फिर से लो को बढ़ा देंगे तो आप लो इक्वल टू फाइव",
+      "source": "caption",
+      "english_text": "And here it becomes index five. Your array can be like this only when it looks like this. See how it will be. Where do you start? Low = 0 High = 5. What will be your initial guess? 0 + 5 / 2. So you will come here. You will see here that this one is laced with the one in front of you. Means climbing. So what will you do? Low = Gas + 1 3 High = 5 OK Again what would you do? Gas is equal to the middle four. So now here also you will see that it is low, it is on the rise, so if you increase the low again, then you will make low equal to five."
+    },
+    {
+      "start_time": 1229.6,
+      "end_time": 1263.029,
+      "text": "और हाई इज़ इक्वल टू फाइव। यहां पे आ जाएंगे। यहां पे आ जाएंगे। अब अब आप अब देखिए अब आपका गेस सच में फाइव आएगा। अब आपका गेस फाइव आएगा। तो ये एक ही कंडीशन में हो सकता है कि आपका एरे ऐसा दिखे। आपका एरे कैसा दिखे? एक ही हो ये हो बस। इसमें इसमें कोई उतार हो ही ना। इसमें कोई उतार हो ही ना। और ये आपको क्वेश्चन में साफ-साफ बोला है कि ऐसा नहीं होगा। ऐसा नहीं होगा। मतलब साफ-साफ नहीं बोला है। आपको क्या बोला है? एरे विल एरे विल डेफिनेटली बी अ माउंटेन। डेफिनेटली बी ए माउंटेन। तो ये माउंटेन नहीं होता है। ये",
+      "source": "caption",
+      "english_text": "And high is equal to five. Will come here. Will come here. Now you see now your guess will actually be five. Now your guess five will come. So it is possible under only one condition that your array looks like this. What should your array look like? There should be only one and that's it. There must be some ups and downs in this. There must be some ups and downs in this. And it has been clearly told to you in the question that this will not happen. This will not happen. Meaning has not been stated clearly. What did he tell you? There will definitely be a mountain. Definitely Be A Mountain. So it is not a mountain. this"
+    },
+    {
+      "start_time": 1263.039,
+      "end_time": 1294.95,
+      "text": "तो एक लाइन हो गई। माउंटेन ये होता है। इसका बोलते है माउंटेन। माउंटेन मतलब ये ए। ये ए वाला शेप इसको बोलते हैं माउंटेन। ये होता है माउंटेन। ये माउंटेन नहीं है। तो ना आपका एरे एकदम ऐसा दिखेगा और ना ही आपका एरे एकदम ऐसा दिखेगा। ऐसा भी नहीं हो सकता है कि ज़ीरो यहां हो और फाइव आया हो। ये मतलब ये तो बस सारे ढलान हैं। ये क्या है? सारे ढलान हैं। ये सारे ढलान हैं। आपका एरे ऐसा भी नहीं और ऐसा भी नहीं। आपका एरे माउंटेन होगा मतलब चढ़ेगा और फिर उतरेगा। चढ़ेगा और उतरेगा। इसीलिए हम लोग कॉन्फिडेंट हो सकते हैं कि ऐसा कभी नहीं होगा कि आपका जो गेस है वो n - 1 आएगा।",
+      "source": "caption",
+      "english_text": "So there is one line. This is a mountain. It is called mountain. Mountain means this. This A shape is called mountain. This is mountain. This is not a mountain. So neither will your array look exactly like this nor will your array look exactly like this. It is also not possible that Zero is here and Five is here. This means these are all just slopes. What is this? All are slopes. These are all slopes. Your array is neither like this nor like this. Your array will be mountain meaning it will climb and then descend. Will ascend and descend. That is why we can be confident that it will never happen that your guess will be n - 1."
+    },
+    {
+      "start_time": 1294.96,
+      "end_time": 1319.039,
+      "text": "इसीलिए हम लोग ये कर इसीलिए हम लोग ये कर पाते हैं। आप चाहें तो इसको हैंडल भी कर सकते हैं। ठीक है? तो ये बहुत जरूरी था समझाना क्योंकि डाउट है ना या ऐसा हम छोड़ देते तो अच्छा नहीं होता। इसीलिए हम बता दिए। ठीक है? तो ये आपका थॉट प्रोसेस है। अगर आपको लग रहा है कि हमको हैंडल करना चाहिए तो आप हैंडल कर सकते हैं। उसमें कोई दो राय नहीं है। तो जाके इसको कोड करिए। काफी अच्छा क्वेश्चन है। थोड़ा सा इमेजिनेशन वाला क्वेश्चन है। कल इसका हार्ड पार्ट करेंगे तो कल जरूर आइएगा। चलिए।",
+      "source": "caption",
+      "english_text": "That's why we do this, that's why we are able to do this. If you want, you can handle it also. Ok? So it was very important to explain because there is doubt or it would not have been good if we had left it like this. That's why we told. Ok? So this is your thought process. If you feel that we should handle it, then you can handle it. There is no doubt about that. So go code it. It's a very good question. This is a question involving a little bit of imagination. Will definitely come tomorrow if we do the hard part of it. Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

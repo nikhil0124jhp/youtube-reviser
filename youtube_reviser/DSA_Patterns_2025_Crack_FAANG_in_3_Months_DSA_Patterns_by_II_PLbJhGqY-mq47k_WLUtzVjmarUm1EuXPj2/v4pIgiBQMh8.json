@@ -1,0 +1,835 @@
+{
+  "video_id": "v4pIgiBQMh8",
+  "video_title": "DSA PATTERNS Episode 12 Sliding Window Pattern: Core Interview Questions",
+  "video_number": 12,
+  "chunks": [
+    {
+      "start_time": 2.55,
+      "end_time": 36.229,
+      "text": "हां भाई स्वागत है। जो लोग नए बच्चे हैं यहां पर हम लोग क्वेश्चन रटवाते नहीं है। आपको पैटर्न सिखाते हैं डीएसए का। पैटर्न मतलब वो स्टार वाला पैटर्न नहीं क्वेश्चन सॉल्व करने का पैटर्न या टेंपलेट कि आप कोई भी नया क्वेश्चन बना सकिए। और जो लोग पुराने बच्चे हैं तो आ जाइए। स्लाइडिंग विंडो जो है ना आज डे थ्री है। आप लोग को मालूम है आप लोग को नोट्स क्वेश्चन कोड लिंक सब डिस्क्रिप्शन में मिल जाएगा। तो ठीक है। स्लाइडिंग विंडो आज जो हम लोग करने वाले हैं ना आज बहुत इंपॉर्टेंट सेशन है क्योंकि वेरिएबल साइज विंडो का जितना भी क्वेश्चन हो सकता है सबको एकदम खत्म कर देंगे सिरे से। ठीक है? मतलब आप लोग को लगने लगेगा कि चलो हर क्वेश्चन में यही",
+      "source": "caption",
+      "english_text": "Yes brother, welcome. Those who are new students, here we do not make them memorize questions. Teach you the pattern of DSA. Pattern does not mean the star pattern, it is a pattern or template for solving questions so that you can create any new question. And those who are old children, then come. Sliding window, today is day three. You guys know that you guys will get the notes question code link in the sub description. Well then. Sliding Window: What we are going to do today is a very important session because whatever questions there may be regarding variable size window, we will completely eliminate them all. Ok? Meaning, you people will start feeling that let's do the same in every question."
+    },
+    {
+      "start_time": 36.239,
+      "end_time": 62.229,
+      "text": "चीज हो रहा है। यही चीज लगाना है। इधर-उधर एक दो लाइन चेंज करें क्वेश्चन बन जाएगा। समझे? ठीक है? स्लाइडिंग विंडो इसलिए भी बहुत जरूरी है ना कि किसी भी इंटरव्यू में 50% प्रोबेबिलिटी है कि आपसे स्लाइडिंग विंडो पूछा जाएगा। डीपी ग्राफ पूछने का प्रोबेबिलिटी उतना नहीं है। बहुत कम कंपनी पूछती है। लेकिन स्लाइडिंग विंडो ऑलमोस्ट हर कंपनी पूछेगी। अगर मीडियम लेवल का क्वेश्चन उसको पूछना है तो स्लाइडिंग विंडो ही पूछेगी। ठीक है जी? आज जो तीन क्वेश्चन हम लोग करने वाले हैं। तीन तीन।",
+      "source": "caption",
+      "english_text": "Things are happening. This is the thing to be installed. Change one or two lines here and there and a question will be created. Got it? Ok? Sliding window is also very important because in any interview there is 50% probability that you will be asked about sliding window. The probability of asking DP graph is not that much. Very few companies ask. But almost every company will ask for sliding window. If he has to ask a medium level question, he will ask it only through the sliding window. ok sir? Today we are going to ask three questions. Three three."
+    },
+    {
+      "start_time": 62.239,
+      "end_time": 94.95,
+      "text": "आप लोग बोल रहे थे स्पीड नहीं बढ़ रहा है। तो आइए स्पीड बढ़ाते हैं। पहला है लॉन्गेस्ट सबस्ट्रिंग विद K डिस्टिंक्ट। पहला क्या है? लॉन्गेस्ट सबस्ट्रिंग विद K डिस्टिंक्ट। ठीक है? सब आपको पैटर्न शीट में मिल जाएगा। सही है। दूसरा है फ्रूट्स इनू बास्केट। फ्रूट्स इनू बास्केट और तीसरा है नो रिपीट सबस्टिंग। तीसरा है नो रिपीट सबस्ट्रिंग। तीन क्वेश्चन देख के घबराइए मत। पहला क्वेश्चन में ही आप लोग को इतना अच्छे से समझाएंगे ना कि बाकी",
+      "source": "caption",
+      "english_text": "You people were saying that the speed is not increasing. So let's increase the speed. The first is Longest Substring with K distinct. What is the first? Longest substring with K distinct. Ok? You will find everything in the pattern sheet. Correct. The second one is Fruits Inu Basket. Fruits in Basket and the third one is No Repeat Substring. The third is no repeat substring. Don't panic after seeing three questions. You will explain it to people so well in the first question only and not in the rest."
+    },
+    {
+      "start_time": 94.96,
+      "end_time": 125.83,
+      "text": "दोनों आप लोग से खुद बन जाएगा या बन जाना चाहिए। इतना मेरा यकीन है। ठीक है? कल जो हम लोग बात किए थे, कल वाला लेक्चर जो लोग नहीं देखे हैं, देख लीजिए या थोड़ा सा तो देख ही लीजिए उसका। कल हम लोग क्या-क्या बात किए थे? कल हम लोग दो क्वेश्चन सॉल्व किए थे। एक तो था फिक्स्ड साइज विंडो का और एक था वेरिएबल साइज विंडो का। ठीक है? स्लाइडिंग विंडो का चार स्टेप बताए थे। वो चारों स्टेप्स सबको याद होगा कि क्या-क्या क्या-क्या किया जाता है। उसमें सबसे इंपॉर्टेंट स्टेप था ये वाला। फिक्स्ड है कि वेरिएबल है? समझ में आई? अच्छा।",
+      "source": "caption",
+      "english_text": "Both will or should be made by you guys. This much I am sure of. Ok? If you haven't seen yesterday's lecture, what we talked about yesterday, please watch it or at least watch a little bit of it. What did we talk about yesterday? Yesterday we solved two questions. One was of fixed size window and one was of variable size window. Ok? Four steps of sliding window were explained. Everyone will remember those four steps and what all is done. This one was the most important step. Is it fixed or variable? Did you understand? Good."
+    },
+    {
+      "start_time": 125.84,
+      "end_time": 158.63,
+      "text": "फिक्स्ड के लिए एक सेट पैटर्न सेट टेंप्लेट होता है। क्या होता है? फिर से जरा रिवाइज करा दें जल्दी से। फिक्स्ड में क्या करते हैं? लो = 0 पर रखते हैं। हाई इक्व जो भी आप लोग को विंडो साइज दिया हुआ है। अगर k दिया हुआ है तो k - 1 पे रखते हैं। अगर टू दिया हुआ है तो वन पे रखिए। थ्री दिया हुआ है। टू पे रखिए। क्या करते थे उसके बाद? उसके बाद हाई को चलाते जाते थे। हाई कहां से कहां तक चलता था? जहां से भी है और n तक। इसके बाद इसका रिजल्ट से कुछ-कुछ काम करते थे। कुछ भी काम हो सकता है वो। उसके बाद क्या करते थे? लो को",
+      "source": "caption",
+      "english_text": "A set pattern is a set template for fixed. What happens? Please revise again quickly. What do you do in fixed? Keep it at Lo = 0. High eq is whatever window size you guys have given. If k is given then keep it at k - 1. If two is given then keep it at one. Three is given. Keep it on two. What did you do after that? After that he used to run the high school. From where to where did the high go? From wherever is and up to n. After this, we used to do some work based on its results. Anything can be done. What did you do after that? take it"
+    },
+    {
+      "start_time": 158.64,
+      "end_time": 192.869,
+      "text": "बढ़ाते थे और रिजल्ट से लो को हटा देते थे। रिजल्ट से लो को हटा देते थे। इसके बाद क्या करते थे? हाई को बढ़ाते थे। एक बार चेक कर लेते थे कि हाई n से बाहर तो नहीं गया है। अगर बाहर नहीं गया है तो क्या करते थे? रिजल्ट में जो भी आपका रिजल्ट या सम हो सकता है, फ्रीक्वेंसी हो सकता है, एवरेज हो सकता है। उसमें हाई को जोड़ देते थे। यही काम करते थे। ये करते-करते हम लोग को आंसर मिल जाता था। तो बहुत सिंपल है। फिक्स्ड का कोई भी क्वेश्चन आए आपको ऐसा ही करना है। वेरिएबल",
+      "source": "caption",
+      "english_text": "Used to increase and remove low from the result. Used to remove Lo from the result. What did you do after this? Used to increase the high. Used to check once that it has not gone out of high n. If he had not gone out, what would he have done? Whatever may be your result or sum, it may be frequency, it may be average. Used to add high to it. Used to do this work. By doing this we used to get the answer. So it is very simple. If any fixed question arises, you have to do the same. variable"
+    },
+    {
+      "start_time": 192.879,
+      "end_time": 227.75,
+      "text": "थोड़ा सा मुश्किल हो जाता है। वेरिएबल क्यों मुश्किल हो जाता है? पहला बात तो समझने में मुश्किल हो जाता है कि करना कैसे है और उसका टाइम कॉम्प्लेक्सिटी बहुत सारा कमेंट आया था कि टाइम कॉम्प्लेक्सिटी आप नहीं समझाए समझा देते हैं। वेरिएबल में क्या करना है ना? सबसे पहली बात कि वेरिएबल विंडो है ये समझ में कैसे आएगा। जब भी आप लोग को कोई के साइज़ नहीं दिया हुआ है। जब भी कोई केस साइज़ नहीं दिया नहीं बोला गया है कि सब एरे का साइज़ इतना होना चाहिए या सबस्ट्रिंग का साइज़ इतना होना चाहिए। जस्ट बोला गया है कि कोई भी सब एरे फाइंड करो, लॉन्गेस्ट फाइंड करो, शॉर्टेस्ट फाइंड करो, फलाना डीम का फाइंड करो तो वो वेरिएबल है। ये तो बहुत सिंपल बात है। ठीक है? अब अगर ये वेरिएबल है तो",
+      "source": "caption",
+      "english_text": "It becomes a little difficult. Why does the variable become difficult? First of all, it becomes difficult to understand how to do it and its time complexity. A lot of comments were received that you explain the time complexity instead of explaining it. What to do in variables right? First of all, how will we understand that this is a variable window? Whenever you guys have not been given any size. Whenever no case size is given, it is not said that the size of the sub array should be this much or the size of the substring should be this much. It is just said that if you find any sub array, find the longest, find the shortest, find such and such a value, then it is a variable. This is a very simple thing. Ok? Now if this is a variable then"
+    },
+    {
+      "start_time": 227.76,
+      "end_time": 253.35,
+      "text": "हम लोग वो तो कर नहीं सकते हैं कि लो को जीरो पे रखें, हाई को k - 1 पे क्योंकि k तो दिया ही हुआ नहीं है। तो इसमें हम लोग क्या करते हैं? इसको लो को भी ज़ीरो पे रखते हैं। हाई को भी ज़ीरो पे रखते हैं। इतना कल ही डिस्कस हो चुका था, याद होगा आप लोगों को। उसके बाद उसके बाद हाई को बढ़ाते जाते हैं। उसके बाद क्या करते हैं? हाई को बढ़ाते जाते हैं और फिर लो को भी श्रिंक कराते जाते हैं। ये सब समझाएंगे।",
+      "source": "caption",
+      "english_text": "We cannot do that by keeping low at zero and high at k - 1 because k is not given. So what do we do in this? This low is also kept at zero. The high is also kept at zero. This much was already discussed yesterday, you might remember. After that they keep increasing the high. What do you do after that? We keep increasing the highs and then shrinking the lows as well. Will explain all this."
+    },
+    {
+      "start_time": 253.36,
+      "end_time": 286.55,
+      "text": "अगर ऊपर से जा रहा है तो मुश्किल मत लीजिए। श्रिंक करते जाते हैं। कल हमसे एक गलती हो गया था कि कल हम हाई को बढ़ाने में ना वाइल लूप का यूज़ कर लिए थे। वाइल लूप का नहीं करना चाहिए। वाइल लूप अभी आप लोग को नहीं उतना स्ट्राइक करेगा। आज फॉर लूप से समझाएंगे। और जो आज पैटर्न बताएंगे वही टेंपलेट हर सिमिलर क्वेश्चन में लगेगा। कोई भी लॉन्गेस्ट सबस्ट्रिंग है, लॉन्गेस्ट सब एरे है, सेम पैटर्न लगता जाएगा। ठीक है? देखिए इसमें करते क्या हैं? इसमें हम लोग शुरू से टेंपलेट पहले हम लोग टेंप्लेट समझ लेते हैं। करते क्या हैं इसमें? आपका हाई कहां है? हाई आप लोग का ज़ीरो पे है। ठीक है? क्या करते हैं?",
+      "source": "caption",
+      "english_text": "If it is going from above then do not take it difficult. Keep shrinking. We made a mistake yesterday in that we used the Na while loop to increase the highs. Vile loop should not be used. The Vile Loop won't strike you as much right now. Today we will explain with for loop. And the pattern shown today will be used in every similar question. Be it the longest substring or the longest subarray, the same pattern will follow. Ok? See what they do in this? In this, we first understand the template from the beginning. What do you do in this? Where is your high? Hi, you guys are at zero. Ok? What do you do?"
+    },
+    {
+      "start_time": 286.56,
+      "end_time": 320.15,
+      "text": "फॉर हाई इक्व किसी भी क्वेश्चन में बता रहे हैं। किसी एक क्वेश्चन अभी क्वेश्चन शुरू भी नहीं हुआ है। क्वेश्चन हम पढ़े भी नहीं है। बता रहे हैं। i = 0 हाई &lt; n आपका स्ट्रिंग का साइज़ एरे का साइज़ और हाई प्लस प्लस। ठीक है? अब तो वाइल लूप का जरूरत ही खत्म हो गया। फॉर चल गया। सबसे पहला काम क्या करना है? किसी भी ऐसे सिमिलर क्वेश्चन में जिसमें आपको लॉन्गेस्ट सबस्ट्रिंग या लॉन्गेस्ट एरे खोजना है जिसमें K डिस्टिंक्ट हो या एग्जैक्टली K हो जो भी हो। सबसे पहले अभी आपका हाई जहां पे है ना अभी आपका हाई जीरो पे है उसको",
+      "source": "caption",
+      "english_text": "For high equ is telling in any question. Not a single question has even started yet. We have not even read the question. Are telling. i = 0 high < n The size of your string plus the size of the array plus high. Ok? Now the need for the weil loop is gone. Went ahead. What's the first thing to do? In any similar question in which you have to find the longest substring or longest array in which K is distinct or exactly K whatever. First of all, where is your high right now? Right now your high is at zero."
+    },
+    {
+      "start_time": 320.16,
+      "end_time": 353.749,
+      "text": "अपने रिजल्ट रिजल्ट मतलब वो विंडो आपको क्या इंफॉर्मेशनेशन दे रहा है हो सकता है वो सम दे रहा हो सकता है वो फ्रीक्वेंसी दे रहा हो सकता है वो एवरेज दे रहा हो कुछ भी दे रहा हो आपका जो भी इंफॉर्मेशन है उस विंडो का जो भी आपका इंफॉर्मेशन है उसमें आपको हाई को इंक्लूड कर लेना है हाई को इंक्लूड कर लेना है इंक्लूड से क्या मतलब है अगर सम है तो उसमें एरे ऑफ़ हाई जोड़ दीजिए एवरेज है तो एरे ऑफ़ हाई जोड़ के बाय कुछ भी कर दीजिए। अगर वो फ्रीक्वेंसी है तो#श मैप लेके हाई को उसमें प्लस प्लस करा दीजिए। समझ रहे हैं आप लोग? इनेशन में हाई",
+      "source": "caption",
+      "english_text": "Your result result means what information is that window giving you? It may be giving sum, it may be giving frequency, it may be giving average, it may be giving anything. Whatever information you have in that window, you have to include high. You have to include high. What is meant by include? If it is even, then add the array of high in it. If it is average, then do anything by adding the array of high. Give it. If it is a frequency then take the #sh map and make it a plus. Do you guys understand? high in ination"
+    },
+    {
+      "start_time": 353.759,
+      "end_time": 386.55,
+      "text": "को इंक्लूड कर देना है। अच्छी बात है। अब अब बहुत इंपॉर्टेंट स्टेप बहुत इंपॉर्टेंट स्टेप है। एक बार हाई इंक्लूड हो गया। ठीक है? अब आपको कुछ कंडीशन दिया होगा कि अगर ये इंफॉर्मेशन ऐसा है तो हमको ये चाहिए। अगर ये इनफार्मेशन ऐसा नहीं है तो हमको ये नहीं चाहिए। कुछ दिया होगा ना जी कि जो अभी आपका सबस्ट्रिंग है उसमें k ही डिस्टिंक्ट एलिमेंट होना चाहिए या उसमें k से कम डिस्टिंक्ट एलिमेंट होना चाहिए या तो k से ज्यादा कुछ तो कंडीशन दिया ही होगा कि अगर ये इंफॉर्मेशन इस तरीके का है तो हमको वो आंसर में चाहिए। ठीक है? तो दो",
+      "source": "caption",
+      "english_text": "Have to be included. It's a good thing. Now now very important step is very important step. Once the high is included. Ok? Now you must have been given some condition that if this information is like this then we want it. If this information is not like that then we do not want it. You must have given something that your substring should have only k distinct elements in it or it should have less than k distinct elements or something more than k. You must have given a condition that if this information is of this type then we want it in the answer. Ok? so give"
+    },
+    {
+      "start_time": 386.56,
+      "end_time": 416.79,
+      "text": "दो चीजें हो सकती है कि आपका इंफॉर्मेशन या तो उस तरीके का है परफेक्ट है मतलब आपको यह विंडो लेना है या फिर आपका इंफॉर्मेशनेशन उस तरीके का नहीं है दो ही केस हो सकता है तो यहां पे आता है सबसे इंपॉर्टेंट स्टेप अभी हम बॉक्स बना रहे हैं आप लोग को हम बताएंगे कि क्या इसमें करना है। ये जैसे ही आप लोग हाई को इंक्लूड किए ना हो सकता है कि इंफॉर्मेशन में वो चीज आ गया हो जो आपको नहीं चाहिए। तो यहां पे हम लोग जब तक जब तक इंफॉर्मेशन",
+      "source": "caption",
+      "english_text": "Two things can happen, either your information is of that type and is perfect, meaning you have to take this window or your information is not of that type, only two cases can happen, so here comes the most important step. Now we are making the box, we will tell you what to do in it. As soon as you have included the information, it is possible that the information may contain something that you do not want. So here we are until the information"
+    },
+    {
+      "start_time": 416.8,
+      "end_time": 442.55,
+      "text": "जब तक इंफॉर्मेशन गलत है। गलत है। गलत का सेंस क्या है? कि या तो वो उससे बढ़ गया है या तो कम हो गया हो। गलत है। बेसिकली फॉर एग्जांपल आपको बोला है कि ऐसा विंडो फाइंड कीजिए जिसका सम ऐसा विंडो फाइंड कीजिए जिसका सम 10 हो। ठीक है? हो सकता है कि जैसे ही आप इस हाई को इंक्लूड किए ना तो आपका सम 11 हो गया हो या आपका सम नौ हो गया हो। कुछ भी हो सकता है। तो गलत है ना।",
+      "source": "caption",
+      "english_text": "Unless the information is wrong. It is wrong. What is the sense of wrong? That either it has increased or it has decreased. It is wrong. Basically for example you are asked to find a window whose sum is 10. Ok? It is possible that as soon as you include this high, your sum becomes either 11 or your sum becomes nine. Anything can happen. So it is wrong isn't it?"
+    },
+    {
+      "start_time": 442.56,
+      "end_time": 476.95,
+      "text": "तो जब तक ये गलत है ये हुआ क्यों है? एक बार आपने हाई को बढ़ाया तो ये हुआ है। अब अब इसको ठीक करेंगे। यहां पे इसको ठीक करना है। उसको ठीक करेंगे। ठीक कैसे करेंगे? देखिए किसी भी वेरिएबल विंडो में ऐसा क्वेश्चन में हाई एक बार हो गया। हाई बस इस फॉर लूप से बढ़ेगा। हाई बस इस फॉर लूप से बढ़ेगा। आपको हाई के साथ छेड़छाड़ 90% ऑफ केसेस में नहीं करना चाहिए। छेड़छाड़ आप कहां कर सकते हैं? इसको वेरिएबल साइज विंडो क्यों बोलते हैं? क्योंकि ये वेरिएबल है। घटता बढ़ता रहता है। हाई जब बढ़ता है तो ये वेरिएबल बढ़ता है। विंडो बढ़ता है और विंडो को कम करने के लिए लो को पीछे से",
+      "source": "caption",
+      "english_text": "So as long as it is wrong why did it happen? This is what happens once you turn the high up. Now we will fix it. This has to be fixed here. Will fix it. How to fix it? See, in any variable window this question became high once. High will simply increase from this for loop. High will simply increase from this for loop. You shouldn't mess with HIGH in 90% of cases. Where can you tamper? Why is it called variable size window? Because it is variable. Keeps increasing and decreasing. This variable increases as the altitude increases. Press LOW to raise the window and BACK to lower the window."
+    },
+    {
+      "start_time": 476.96,
+      "end_time": 510.869,
+      "text": "लाते हैं। यही होता है ना जी? ये आपका विंडो है। हाई आपका इधर बढ़ता रहता है। और जैसे ही हम लोग को विंडो कम करना रहता है तो हम लोग लो को घटाना शुरू करते हैं यहां से। वही काम करना है। आपको इसको ठीक करना है। ठीक कैसे करेंगे? लो को श्रिंक करके लो को श्रिंक करके श्रिंक मतलब घटा के घटाने के साथ-साथ क्या करेंगे जब भी लो पहले तो लो को आपके इनेशन से हटाएंगे फिक्स साइज में भी यही होता था 100 200 300 था तो 100 200 अभी था उसके बाद जब हम लोग आगे बढ़ाते थे 100 को बोलते थे कि तुम",
+      "source": "caption",
+      "english_text": "Let's bring. This is what happens, right? This is your window. Your high keeps increasing here. And as soon as we have to reduce the window, we start reducing Lo from here. The same thing has to be done. You have to fix this. How to fix it? What will you do by shrinking lo by shrinking lo Shrink means subtraction along with subtraction, whenever lo first we will remove lo from your ination, the same thing happened in fixed size also, it was 100, 200, 300, then it was 100, 200 is now there, after that when we used to advance 100, we used to say that you"
+    },
+    {
+      "start_time": 510.879,
+      "end_time": 543.91,
+      "text": "जाओ तो आपका जो भी रिजल्ट या तो इंफॉर्मेशन है इंफॉर्मेशन है उसमें से लो को हटाओ हटाओ हटाओ हटाओ ठीक है मतलब अगर आपका सम है तो उस सम में से एरे ऑफ़ लॉ माइनस कर दीजिए लॉ को बढ़ा दीजिए और ये काम ये काम आपको कितनी बार करना है एक बार दो बार नहीं ये काम आपको करते रहना है एक लूप में करते रहना है कब तक करते रहना है जब तक कि आपका इंफॉर्मेशन सही ना हो जाए सही ना हो जाए ऐसे अब सही का बहुत सारा मतलब हो सकता है क्वेश्चन टू क्वेश्चन ये आगे पढ़ेंगे लेकिन जनरल रूल",
+      "source": "caption",
+      "english_text": "Go, whatever your result is either information or information, remove the low from it, remove it, remove it, okay, that means if you have an even, then subtract the array of laws from that sum, increase the law and this work, how many times do you have to do this, not once or twice, you have to keep doing this work, keep doing it in a loop, for how long do you have to keep doing it until your information becomes correct, it may not become correct, like this now right can have many meanings. Question to question you will read further but the general rule"
+    },
+    {
+      "start_time": 543.92,
+      "end_time": 578.87,
+      "text": "यही है कि जब तक आपका इंफॉर्मेशन सही ना हो जाए तब तक आपको करते रहना है ये काम। आपको क्या करते रहना है? लो को बढ़ाते रहना है और लो को हटाते भी रहना है। मतलब आप विंडो को छोटा कर रहे हैं। आपका हाई बढ़ रहा है। हाई एक जगह रुका। फिर आप लो को धीरे धीरे धीरे धीरे धीरे धीरे करके पास ला रहे हैं। जब तक कि इंफॉर्मेशन सही ना हो जाए। ठीक है? अच्छी बात है। अब अब एक बार आप कर लिए। यहां पे आपको अब आप कर अब ये करने का मतलब क्या हुआ कि अब आपका इंफॉर्मेशन ठीक हो गया होगा। ठीक? देखिए इतना सिंपल नहीं है। ये हम जैसे आपको बता रहे हैं उतना सिंपल नहीं है। क्वेश्चन वाइज़ क्वेश्चन एक दो लाइन चेंज होता है।",
+      "source": "caption",
+      "english_text": "This means that you have to keep doing this work until your information is correct. What do you have to keep doing? We have to keep increasing the low and also keep removing the low. Meaning you are minimizing the window. Your high is increasing. Hai stopped at one place. Then you are slowly bringing Lo closer. Unless the information is correct. Ok? It's a good thing. Now once you have done it. Here you can now do what it means to do this, now your information will be correct. Correct? See, it is not that simple. It is not as simple as we are telling you. Question wise there is a two line change."
+    },
+    {
+      "start_time": 578.88,
+      "end_time": 611.509,
+      "text": "लेकिन थिंकिंग यही है। लॉजिक यही है। अब आपका इनेशन सही हो गया होगा। अब आपको यहां पे अब आपको यहां पे लेंथ कैलकुलेट कर लेना है। लेंथ कैसे करते हैं? हाई माइनस लो + 1 और इस लेंथ को अपने रिजल्ट में कर लेना है। मिन या मैक्स जो भी आपसे पूछा हो, लॉन्गेस्ट पूछा हो, शॉर्टेस्ट पूछा हो, कुछ भी पूछा हो। तो, अगर मान लो लॉन्गेस्ट पूछा है, तो हम लोग क्या करेंगे? मैक्स रिजल्ट एंड लेंथ और ये फॉर लूप यहां बंद कर देंगे। फॉर लूप कौन सा? हाई वाला। हाई वाला फॉर लूप यहां बंद कर देंगे। तो ये एक",
+      "source": "caption",
+      "english_text": "But this is the thinking. This is the logic. Now your ination will be correct. Now you have to calculate the length here. How to do length? High minus low + 1 and this length has to be used in your result. Whatever min or max is asked from you, longest is asked, shortest is asked, anything is asked. So, if let's say Longest has asked, what should we do? Max Result End Length and this will stop the for loop here. Which for loop? The high one. The high one will close the for loop here. so this one"
+    },
+    {
+      "start_time": 611.519,
+      "end_time": 645.43,
+      "text": "जनरल पैटर्न है वेरिएबल साइज स्लाइडिंग विंडो का। जब भी आपसे ऐसा क्वेश्चन हो कि लॉन्गेस्ट सबस्ट्रिंग उसमें k होना चाहिए। उसमें एटमोस्ट k होना चाहिए। एटलीस्ट k होना चाहिए। एग्जैक्टली K होना चाहिए। कुछ भी। ठीक है? ये एक बार देख लीजिए। ये एक बार देख लीजिए। यहां से यहां तक ये दिख रहा होगा आप लोग को। ये जनरल फॉर्मेट है। क्या फॉर्मेट है? फिर से एक बार पढ़ा देते हैं। हाई को बढ़ाते रहिए। हाई ज़ीरो से n तक बढ़ाते रहिए। प्लस प्लस हाई को बहुत कम ऐसा होगा कि आपको अंदर छेड़ना पड़ेगा। हाई आपका फॉर लूप से बढ़ता रहेगा। सबसे पहले",
+      "source": "caption",
+      "english_text": "The general pattern is that of variable size sliding windows. Whenever you have a question that the longest substring should be k. It should have atmost k. atlist should be k. Must be exactly K. Anything. Ok? Take a look at this once. Take a look at this once. You guys must be seeing this from here to here. This is the general format. What is the format? Let us read it once again. Keep increasing the high. Keep increasing from high zero to n. There will be very little plus plus high that you will have to tease inside. HIGH will continue to increase through your for loop. first of all"
+    },
+    {
+      "start_time": 645.44,
+      "end_time": 679.03,
+      "text": "इनफार्मेशन में हाई को इंक्लूड कर लो। जब तक आपका इनफार्मेशन गलत है तब तक उस लो को आगे बढ़ाते रहो। एक बार आपका इंफॉर्मेशनेशन सही हो गया तो उसको अपने रिजल्ट में लिख लीजिए और फॉर लूप बंद करके रिजल्ट को रिटर्न कर दीजिए। ये याद रखिए। इसको कॉपी में लिख लीजिए। अभी लिख लीजिए इसको कॉपी में देख के। कॉपी में लिख लिए अच्छी बात है। अब आ जाइए। ठीक है? अब आते हैं इसके क्वेश्चन पे। टाइम कॉम्प्लेक्सिटी एक बार क्वेश्चन करेंगे बता देंगे। ठीक है? सबसे पहला क्वेश्चन क्या है? लॉन्गेस्ट सबस्ट्रिंग विद k डिस्टिंक्ट कररेक्टर्स। मतलब मतलब क्वेश्चन में क्या दिया हुआ है? आपको एक",
+      "source": "caption",
+      "english_text": "Include high in the information. Keep pushing that low as long as your information is wrong. Once your information is correct, write it down in your result and close the for loop and return the result. Remember this. Write this down in your notebook. Write it down now after seeing it in your notebook. It is a good thing to write down in your copy. Come now. Ok? Now coming to its question. Time complexity will be explained once you do the question. Ok? What is the first question? Longest substring with k distinct characters. Meaning: What is given in the question? you a"
+    },
+    {
+      "start_time": 679.04,
+      "end_time": 713.67,
+      "text": "स्ट्रिंग दिया हुआ है। क्या दिया हुआ है? स्ट्रिंग। अच्छा। स्ट्रिंग में कुछ कैरेक्टर्स हैं। सारा लोअर केस ही कैरेक्टर्स हैं। मतलब स्मॉल लेटर्स वाला। अच्छा, अच्छी बात है। और आपको एक के दिया हुआ है। k एक इंटीजर है। ठीक है? हमको क्या फाइंड करना है? लॉन्गेस्ट, लॉन्गेस्ट सबस्ट्रिंग। सबस्ट्रिंग लॉन्गेस्ट सबस्ट्रिंग क्या होना चाहिए उसमें? इसमें एग्जैक्टली एग्जैक्टली के ये वाला के डिस्टिंक्ट मतलब यूनिक अल्फाबेट्स",
+      "source": "caption",
+      "english_text": "String is given. What is given? string. Good. There are some characters in the string. All lower case characters are. Meaning the one with small letters. Okay, that's a good thing. And you have been given one. k is an integer. Ok? What do we need to find? Longest, longest substring. Substring What should be the longest substring in it? In this, these words have distinct meaning, unique alphabets."
+    },
+    {
+      "start_time": 713.68,
+      "end_time": 744.629,
+      "text": "अल्फाबेट्स ये हिंदी में इस क्वेश्चन का मतलब है। पूरा क्वेश्चन क्या है? स्ट्रिंग दिया हुआ है। K स्ट्रिंग में लॉन्गेस्ट सबस्ट्रिंग फाइंड कीजिए जिसमें K डिस्टिंक्ट कररेक्टर्स हो। मतलब K यूनिक कैरेक्टर्स हो। समझ में आया? ये क्वेश्चन है? स्लाइडिंग विंडो वाला स्टेप बाय स्टेप फॉलो करते हैं। फ्लो चार्ट। फ्लो चार्ट क्या था भाई? फ्लो चार्ट क्या था? स्टेप वन, स्लाइडिंग विंडो पैटर्न लगेगा कि नहीं? क्या ये एरे या तो स्ट्रिंग का क्वेश्चन है? हां, स्ट्रिंग का क्वेश्चन है। क्या इसमें कहीं भी लॉन्गेस्ट सबस्ट्रिंग या सब एरे लिखा हुआ है?",
+      "source": "caption",
+      "english_text": "Alphabets is the meaning of this question in Hindi. What is the full question? String is given. Find the longest substring in K string that contains K distinct characters. Meaning there are K unique characters. Did you understand? Is this a question? Let's follow the step by step with sliding window. Flow chart. What was the flow chart brother? What was flow chart? Step one, will the sliding window pattern be applied or not? Is this a query of array or string? Yes, there is a question of string. Is Longest Substring or Sub Array written anywhere in it?"
+    },
+    {
+      "start_time": 744.639,
+      "end_time": 770.15,
+      "text": "लॉन्गेस्ट सबस्ट्रिंग या सब एरे लिखा हुआ है? ये वही फाइंड करना है? यस। क्या इसमें कहीं भी एग्जैक्टली K या तो लेस दैन K या तो एटमोस्ट K वैसा कुछ भी लिखा हुआ है? हां, लिखा हुआ है। क्या लिखा हुआ है? एग्जैक्टली के अगर जिसको लग रहा हो कि ये कहां से आया है तो ये डे वन के फ्लो चार्ट में था। कोई भी पैटर्न शुरू करने से पहले उसका फ्लो चार्ट हैंडी रखा कीजिए कि ये फ्लो चार्ट है। तभी पता चलता है कि ये स्लाइडिंग विंडो का है।",
+      "source": "caption",
+      "english_text": "Longest substring or sub array is written? Is this what you want to find? Yes. Is there anything written like 'Exactly K' or 'Less than K' or 'Atmost K' anywhere in it? Yes, it is written. What is written? Exactly, if anyone is wondering where it came from, it was in the flow chart of Day One. Before starting any pattern, keep its flow chart handy. Only then we realize that it is a sliding window."
+    },
+    {
+      "start_time": 770.16,
+      "end_time": 797.35,
+      "text": "तो देखिए इसमें तीनों अड़ गया। तीनों इसमें पॉजिटिव है। ये तो पक्का चलो पक्का नहीं। लेकिन ये तो 90% स्लाइडिंग विंडो का क्वेश्चन है। अच्छा इसमें हम 90% क्यों बोलते हैं? 100% क्यों नहीं बोलते हैं? हो सकता है कुछ क्वेश्चन आपको ऐसा लगे कि स्लाइडिंग विंडो का है लेकिन थोड़ा सा ऑफ चांस है कि वो इसका ना हो। हो सकता है वो ग्रीडी का हो। हो सकता है वो डीपी का हो। तो आपको इंटरव्यू में अप्रोच कैसे करना है? आपको इंटरव्यू में शुरू कैसे कहां से करना है?",
+      "source": "caption",
+      "english_text": "So see, all three were adamant in this. All three are positive in this. This is definitely not true. But this is 90% a question of sliding window. Well why do we say 90% in this? Why not speak 100%? It may be possible that some questions may seem to you that they are from Sliding Window but there is a slight chance that they may not be from this. It could be Greedy's. May be it is from DP. So how should you approach the interview? Where should you start in an interview?"
+    },
+    {
+      "start_time": 797.36,
+      "end_time": 825.35,
+      "text": "आपको शुरू करना है स्लाइडिंग विंडो से। ठीक है? क्योंकि यही तो प्रॉब्लम है ना। आप 20 30 तरीके का एल्गोरिदम पढ़ लेते हैं। आपको पता नहीं चलता है कि कहां से शुरू करना है। हो सकता है आप बाइनरी सर्च से शुरू कर दिए। फिर उसमें 15 मिनट वेस्ट कर दिए। फिर आपको पता चला कि अरे ये तो बाइनरी सर्च का नहीं था। तो ये आपकी प्रोबेबिलिटी बढ़ाता है सही एल्गोरिदम चुनने की। समझ में आ रही है बात? ठीक है? पहला स्टेप हो गया कि ये स्लाइडिंग विंडो का क्वेश्चन है। समझ में आ रहा है। दूसरा स्टेप क्या था? फिक्स्ड है कि वेरिएबल है?",
+      "source": "caption",
+      "english_text": "You have to start with the sliding window. Ok? Because that's the problem isn't it? You read the algorithm of 20-30 methods. You don't know where to start. Maybe you started with binary search. Then wasted 15 minutes in that. Then you realized that it was not about binary search. So this increases your probability of choosing the right algorithm. Are you understanding the point? Ok? The first step is that this is a question of sliding window. Make sense. What was the second step? Is it fixed or variable?"
+    },
+    {
+      "start_time": 825.36,
+      "end_time": 859.269,
+      "text": "फिक्स्ड है कि वेरिएबल है। क्वेश्चन में कहीं भी दिया हुआ है कि सबस्ट्रिंग फाइंड करना है तो सबस्ट्रिंग का लेंथ इतना होना चाहिए। नहीं। क्वेश्चन आपको बोला है लॉन्गेस्ट सबस्ट्रिंग उसका लेंथ कितना भी हो सकता है। जब भी ऐसा आए कि उसका लेंथ कितना भी हो सकता है तो आंख बंद करके मान लेना है कि ये वेरिएबल का क्वेश्चन है। फिक्स्ड में हमेशा आपको बोला रहेगा कि k साइज का सब एरे फाइंड करो या तो थ्री साइज का सब विंडो फाइंड ऐसा फाइंड करो। ठीक है? तो समझ में आ गया कि ये वेरिएबल है। ठीक है? अगला स्टेप क्या था? देखिए जिसको ये स्टेप भी नहीं समझ में आ रहा है तो इसीलिए हम बोलते हैं कि रोज देखा कीजिए। जो लोग",
+      "source": "caption",
+      "english_text": "Fixed is that variable. It is given somewhere in the question that if you want to find the substring then the length of the substring should be this much. No. The question tells you that the length of the longest substring can be whatever. Whenever it comes up that its length can be whatever, then close your eyes and assume that it is a question of variables. In fixed, you will always be told to find a sub array of size k or find a sub window of size three. Ok? So it was understood that this is a variable. Ok? What was the next step? See, if someone is not able to understand even this step, that is why we say that he should try it every day. people who"
+    },
+    {
+      "start_time": 859.279,
+      "end_time": 884.389,
+      "text": "नए बच्चे हैं कल के लेक्चर में ये बताया गया था किसी भी स्लाइडिंग विंडो क्वेश्चन में चार तरीके का स्टेप होता है। ठीक है? उसको आपको समझना जरूरी है। तो इसीलिए कंसिस्टेंटली देखा कीजिए नहीं तो मत देखा कीजिए। ये कोई वेब सीरीज अब वेब सीरीज भी देखते हैं तो शुरू से ना देखते हैं। डायरेक्ट जाके पांचवा एपिसोड देखिएगा तो आपको समझ में नहीं आएगा कि मुन्ना भैया कौन है? गुड्डू भैया कौन है। है ना? ठीक है। अगला क्या था? इंफॉर्मेशन। इंफॉर्मेशन।",
+      "source": "caption",
+      "english_text": "There are new kids. It was told in yesterday's lecture that there are four types of steps in any sliding window question. Ok? It is important for you to understand that. So that's why watch it consistently, otherwise don't watch it. Now even if we watch any web series, we do not watch them from the beginning. If you go and watch the fifth episode directly, you will not understand who Munna Bhaiya is? Who is Guddu Bhaiya? Isn't it? Ok. What was next? information. information."
+    },
+    {
+      "start_time": 884.399,
+      "end_time": 917.03,
+      "text": "इंफॉर्मेशन इसका क्या है? आपको लॉन्गेस्ट सबस्ट्रिंग में क्या फाइंड करना है? मतलब वो सबस्ट्रिंग देख के आपको क्या समझ में आता है? इसमें आपको क्वेश्चन में दिया हुआ था के डिस्टिंक्ट कररेक्टर्स। K मतलब मतलब इसका क्या मतलब है? कोई भी आपके पास विंडो है ना इसमें कुछ कररेक्टर्स होगा। मान लीजिए ये आपका सबस्ट्रिंग है या विंडो है जिसमें आपका लो यहां है और हाई यहां है। तो ये आपका विंडो हो गया। इसमें आपको क्या फाइंड करने के लिए बोला गया है? कि आपको बोला गया है कि अगर इसमें के डिस्टिंक्ट कररेक्टर्स है,",
+      "source": "caption",
+      "english_text": "What is this information? What do you want to find in the longest substring? Meaning, what do you understand by looking at that substring? In this you were given distinct characters in the question. K means what does it mean? Whatever window you have, there will be some characters in it. Let's say this is your substring or window in which your low is here and high is here. So this is your window. What are you asked to find in this? That you have been told that if it contains distinct characters,"
+    },
+    {
+      "start_time": 917.04,
+      "end_time": 945.509,
+      "text": "तो यह सही है, नहीं तो यह गलत है। मतलब हो सकता है यहां पे A हो, A हो, B हो, C हो, D हो। हो सकता है हो सकता है यहां पे A हो, A हो, B हो, B हो और C हो। इसमें देखना देख के आपको क्या लग रहा है? इसमें कितना डिस्टिंक्ट कररेक्टर्स है? एक तो A है, एक B है, एक C है। तीन है। तो इस विंडो का इनेशन क्या हुआ? इसमें कितना यूनिक कररेक्टर्स है? उसका इनफार्मेशन वही इसका इनफार्मेशन है। ठीक है, समझ में आ गई?",
+      "source": "caption",
+      "english_text": "Then it is right, otherwise it is wrong. Meaning, there could be A, A, B, C, D. It is possible that there may be A, there may be A, there may be B, there may be B and there may be C. What do you feel after looking at it? How many distinct characters are there in it? One is A, one is B, one is C. There are three. So what happened to this window? How many unique characters are there in it? Its information is its information. Okay, did you understand?"
+    },
+    {
+      "start_time": 945.519,
+      "end_time": 979.269,
+      "text": "अच्छा, इसको कैलकुलेट कैसे करेंगे? इसको कैलकुलेट हैश मैप से करेंगे। अगर आप एक हैश मैप रख लीजिए। हैश मैप रख लीजिए और कभी भी आप अह जाते हैं किसी भी करैक्टर पे तो उसका फ्रीक्वेंसी बढ़ा दीजिए। तो इसमें क्या होगा कि अगर आप ये पूरा विंडो कवर कर लेते तो आपका हैश मैप ऐसा लगता। ए का अह फ्रीक्वेंसी होता है दो। बी का फ्रीक्वेंसी होता दो। सी का होता वन। देखिए टोटल कैरेक्टर्स इसमें पांच हैं। टोटल कैरेक्टर्स तो पांच है। लेकिन हैशप का साइज कितना है? साइज तीन है। समझ में आ रही है? हैश मैप क्या है? कैरेक्टर्स उसका फ्रीक्वेंसी। तो आप लिख रहे हैं ए का",
+      "source": "caption",
+      "english_text": "Okay, how to calculate this? This will be calculated from hash map. If you keep a hash map. Keep a hash map and whenever you come across any character, increase its frequency. So what would happen is that if you had covered this entire window, your hash map would have looked like this. The frequency of A is two. Let B be the frequency. The forest would be of C. See, the total characters in this are five. Total characters are five. But what is the size of the hashmap? Size is three. Do you understand? What is hash map? Characters and its frequency. So you are writing A's"
+    },
+    {
+      "start_time": 979.279,
+      "end_time": 1011.67,
+      "text": "फ्रीक्वेंसी ए दो बार आया है। बी दो बार आया है। सी एक बार आया है। तो टोटल कैरेक्टर्स तो पांच है। वो तो लेंथ है विंडो का। लेकिन साइज क्या है? हैशप में कितना यूनिक एलिमेंट है? हैश मैप में तीन ही यूनिक एलिमेंट रहेगा। ऐसे करके आप इनफार्मेशन फाइंड कर सकते हैं। वेरी गुड। अगला स्टेप क्या था? अगला स्टेप क्या था? जब आप विंडो को मूव करेंगे या तो हाई को मूव करेंगे या तो लो को मूव करेंगे तो आप इस इंफॉर्मेशनेशन को बदलेंगे कैसे? क्या बार-बार लो से हाई तक ही ट्रेड करके निकालेंगे? नहीं ये फिक्स्ड में ऑलरेडी कवर हो चुका है। क्या करते हैं? अगर अगर अभी अभी के हिसाब से अभी के हिसाब से आपका",
+      "source": "caption",
+      "english_text": "Frequency A appears twice. B has come twice. C has come once. So the total characters are five. That is the length of the window. But what is the size? How many unique elements are there in hashmap? There will be only three unique elements in the hash map. By doing this you can find information. very good. What was the next step? What was the next step? How will you change this information when you move the window, either high or low? Will you make money by trading from low to high again and again? No, this is already covered in Fixed. What do you do? If if now according to now according to now your"
+    },
+    {
+      "start_time": 1011.68,
+      "end_time": 1046.47,
+      "text": "लो यहां है। हाई यहां है। अगर हाई मूव करता है तो क्या करते हैं? कुछ नहीं करते हैं एरे ऑफ़ हाई वाला या तो स्ट्रिंग ऑफ हाई वाले को इसको प्लस प्लस कर देते हैं मतलब हाई जही भी मूव करेगा तो उसका फ्रीक्वेंसी ऐड कर लेंगे लो को मूव करने के लिए क्या करेंगे मतलब लो को श्रिंक करने के लिए क्या करेंगे लो का कम कर देंगे यही तो करेंगे ना यही कल भी कर रहे थे माइनस माइनस कर देंगे और लो को प्लस प्लस कर देंगे सिंपल बात है इसमें एक वो है कंफ्यूजन है मान लीजिए ऐसा आपका एरे होता ये आपका अभी का हैश मैप है। ठीक है?",
+      "source": "caption",
+      "english_text": "Here it is. High is here. What to do if it moves high? Don't do anything with the array of high, either make it plus plus to the string of high, meaning wherever the high moves, we will add its frequency. What will we do to move the low, that is, what will we do to shrink the low, we will reduce the low, we will do the same yesterday also, we will make it minus minus and we will make the low plus plus, it is a simple thing, there is one confusion in this, suppose this is your array, this is your current one. is a hash map. Ok?"
+    },
+    {
+      "start_time": 1046.48,
+      "end_time": 1078.95,
+      "text": "हैश मैप है। A का वन है, B का टू है, C का टू है। आपका जो लो है ना, अभी आपका जो लो है वो A को पॉइंट कर रहा है। फॉर एग्जांपल आपका ऐसा है। अरे अब आपको A को हटाना है। मतलब लो को इस लो को हटाना है। तो अब हटाने के लिए हम क्या बोले? कल क्या किए थे? अगर सम होता तो सम से क्या करते? सम से उसको माइनस कर देते तो वो हट जाता। हैश मैप में कैसे करेंगे? हैश मैप में हम बोल रहे हैं कि उसका वो फ्रीक्वेंसी हैश मैप में फ्रीक्वेंसी है तो उसका फ्रीक्वेंसी घटा देना भाई। तो हैश मैप में इसका फ्रीक्वेंसी आप घटा देंगे। इसका फ्रीक्वेंसी घटाएंगे ना तो ये जीरो बन जाएगा। बनेगा ना वन को घटाएंगे जीरो। अब",
+      "source": "caption",
+      "english_text": "is a hash map. A is one, B is two, C is two. Your low is right now, your low is pointing to A. For example yours is like this. Hey, now you have to remove A. Means Lo has to remove this Lo. So what should we say now to remove it? What did you do yesterday? If it was even, what would you do with it? If you had subtracted it from the sum, it would have gone away. How to do it in hash map? In hash map we are saying that if that frequency is the frequency in the hash map then reduce its frequency. So you will reduce its frequency in the hash map. If we reduce its frequency it will become zero. Will it be possible to reduce forests to zero? now"
+    },
+    {
+      "start_time": 1078.96,
+      "end_time": 1111.43,
+      "text": "अब हैश मैप में किसी भी लैंग्वेज में अगर आप उसको जीरो कर देते हैं ना तो वो हैश मैप से रिमूव नहीं होता है। आप ध्यान दीजिए। ये ए अभी तक हैश मैप में है। ये हैश मैप से रिमूव नहीं हुआ है। इसका बस फ्रीक्वेंसी ज़ीरो हो गया है। अगर कोई आदमी पूछे कि कितना कैरेक्टर यूनिक है? तो आप बोल रहे थे कि जितना मेरा हैश मैप का साइज है उतना कररेक्टर्स यूनिक है। लेकिन A का फ्रीक्वेंसी जीरो है। ये हैश मैप हमको क्या बोल रहा है कि हमारे पास एक ऐसा विंडो है जिसमें A एक भी बार नहीं है। B दो बार है C दो बार है। तो क्या इसका साइज़ तीन होना चाहिए? इसका साइज़ दो होना चाहिए।",
+      "source": "caption",
+      "english_text": "Now if you make it zero in the hash map in any language, it does not get removed from the hash map. You pay attention. This A is still in the hash map. It has not been removed from the hash map. Its bus frequency has become zero. If a person asks how much of the character is unique? So you were saying that the number of characters is unique as is the size of my hash map. But the frequency of A is zero. What this hash map is telling us is that we have a window in which A does not occur even once. B is twice C is twice. So should it be size three? Its size should be two."
+    },
+    {
+      "start_time": 1111.44,
+      "end_time": 1138.95,
+      "text": "दो होना चाहिए ना? क्योंकि A का तो ज़ीरो है। इसके लिए इसके लिए इस चीज़ के लिए देखिए सम में से कोई दिक्कत नहीं होता है। सम में आप माइनस किए तो गया। लेकिन ये A अभी तक गया नहीं है। इसका बस फ्रीक्वेंसी जीरो हुआ है। इस चीज़ के लिए इस चीज़ के लिए इसके बाद चेक करना पड़ेगा कि इफ एफ ऑफ ए लो एलो इज़ इक्वल इक्वल टू 0 देन इरेज़ f डॉट इरेज़। ये सीपीपी का सिंटेक्स है। java पाइथन में हैशमैप से रिमूव कैसे करते हैं?",
+      "source": "caption",
+      "english_text": "There should be two, right? Because A's is zero. For this for this for this thing, see that there is no problem out of even. You are minus in the sum. But this A has not gone yet. Its bus frequency is zero. For this thing, after this we have to check that if f of a low allo is equal to 0 then erase f dot erase. This is the syntax of cpp. java How to remove from hashmap in Python?"
+    },
+    {
+      "start_time": 1138.96,
+      "end_time": 1172.87,
+      "text": "वो देख लीजिएगा। एलो इसका मतलब क्या हुआ? कि किसी भी कैरेक्टर का फ्रीक्वेंसी अगर ज़ीरो हो गया, तो उसको हैश मैप में रखने का फायदा नहीं है। वो गलत हो जाएगा। उसको हटा दो। उसको इरेज़ कर दो। है ना? मतलब आपके पास बहुत सारा आदमी है। आप एक आदमी से सारा पैसा ले लिए। वो आदमी एकदम कंगाल हो गया। तो उसको रख के फायदा नहीं है। वो आदमी को बोले कि अब तुम जाओ इरेज़ कर देना है। तो ये एक छोटा सा स्टेप है। ठीक है? उतना हार्ड नहीं है मतलब बताने के लिए बता दिए। नहीं तो आप लोग को ये डायरेक्ट हम कोड में लिख देते तो समझ में नहीं आता। है ना? तो लोग यही करते हैं कि अभी नहीं बताते हैं कोड में जा के अब देखते हैं कि अरे ये तो f डॉट",
+      "source": "caption",
+      "english_text": "Will see that. Hello what does this mean? That if the frequency of any character becomes zero, then there is no use of keeping it in the hash map. That will be wrong. Remove that. Erase it. Isn't it? Meaning you have a lot of men. You took all the money from one man. That man became completely poor. So there is no use keeping it. He told the man that now he has to go and erase it. So this is a small step. Ok? It is not that hard, I told you the meaning. Otherwise, if we had written this directly in the code, you people would not have been able to understand. Isn't it? So what people do is that they don't tell right now, they go into the code and see that this is f dot."
+    },
+    {
+      "start_time": 1172.88,
+      "end_time": 1203.83,
+      "text": "इरेज लिखे हुए हैं तो ये क्यों लिखा हुआ है इसलिए लिखा हुआ है क्योंकि जीरो हो गया हटा दो ठीक है इतना आपको समझ में आ गया चारों स्टेप क्लियर हो गया ठीक है अब अब अब ध्यान से देखिएगा जो हम लोग टेंप्लेट ऊपर सीखे थे ऊपर वाला फॉर लूप वाला वो सीखे थे ना फॉर लूप वाला इतना बड़ा ब्लॉक उसको कैसे यूज़ करना है ठीक है अब क्या कीजिए क्या करना है सबसे पहले हम क्या बोले थे लो को जीरो पे रखो हाई को भी जीरो पे रखो। ठीक है? अब चलिए एक एरे बना लेते",
+      "source": "caption",
+      "english_text": "If erase is written, then why is it written, because it is written because it is zero, remove it, okay, this much you have understood, all four steps have been cleared, okay, now look carefully at the template that we had learned above, the one with for loop, we had learned how to use that big block with for loop, okay, now what to do, what to do, first of all, what we said was, keep the low at zero, keep the high at zero also. Ok? Now let's create an array"
+    },
+    {
+      "start_time": 1203.84,
+      "end_time": 1235.75,
+      "text": "हैं। एक इनपुट एरे बना लिया जाए। a ए और चलिए b कर दीजिए। 0 1 2 3 4 5 ये आपका स्ट्रिंग है। आपका K थ्री है। ये क्वेश्चन में दिया हुआ है। चलिए K3 मत रखिए। थ्री में तो पूरा ही आ जाएगा ना जी। आपका K 2 है। समझ में आई बात? ठीक है? अब ये आपका क्वेश्चन है। अब आप क्या करेंगे?",
+      "source": "caption",
+      "english_text": "Are. An input array should be created. a a and let's do b. 0 1 2 3 4 5 This is your string. Your K is three. This is given in the question. Let's not keep K3. It will be complete in three, no sir. Your K is 2. Did you understand? Ok? Now this is your question. What will you do now?"
+    },
+    {
+      "start_time": 1235.76,
+      "end_time": 1270.71,
+      "text": "सबसे पहली बात हम क्या बोले थे? लो को जीरो रखना है। हाई को ज़ीरो रखना है। सबसे पहला क्या करना है? फॉर लूप चलाना है। फॉर लूप चलाएंगे तभी तो हाई बढ़ेगा। हाई एक-एक करके बढ़ा रहे हैं। चलाइए। फॉर i = 0 i &lt; n मतलब जो भी साइज है इसका सिक्स है। सिक्स है। हां सिक्स है। ठीक है। सबसे पहला बात क्या बोले थे जो कि होगा ही होगा। हाई को अपने इंफॉर्मेशन में इंक्लूड कर लीजिए। इंक्लूड कर लीजिए। तो हमारा इंफॉर्मेशनेशन कहां पे स्टोर होता है? हैश मैप में स्टोर होता है। तो एक हैश मैप बना लेते हैं। यहां पे छोटा सा अपना प्यारा",
+      "source": "caption",
+      "english_text": "What was the first thing we said? Lo has to be kept at zero. High has to be kept at zero. What is the first thing to do? To run the for loop. The high will increase only if we run the for loop. Increasing the highs one by one. Play it. For i = 0 i < n means whatever the size is, it is six. It's six. Yes it is six. Ok. What was the first thing you said that will definitely happen? Include the high in your information. Please include. So where is our information stored? Stored in a hash map. So let's create a hash map. my little darling here"
+    },
+    {
+      "start_time": 1270.72,
+      "end_time": 1303.75,
+      "text": "हैश मैप यहां बना लेते हैं। ये क्या है हमारा? हैशप फ्रीक्वेंसी वाला। ठीक है? अब हैश मैप में#श मैप शुरू में तो खाली ही रहेगा। शुरू में खाली इसका साइज जीरो रहेगा। साइज जीरो रहेगा ना? ठीक है? अब देखिए। सबसे पहला काम क्या था कि अपने इंफॉर्मेशन में हाई को इंक्लूड कर लो। इंक्लूड कर लो। इंक्लूड कैसे करते हैं? इंक्लूड कर एफ एस हाई एस आपका स्ट्रिंग है और ऐसे प्लस प्लस ये क्या करता है कि अभी तो आपके हैशच मैप में कुछ नहीं है ना? जी।",
+      "source": "caption",
+      "english_text": "Let's create a hash map here. What is this of ours? The one with hashrate frequency. Ok? Now #sh map in the hash map will initially remain empty. Initially its size will be zero. The size will be zero, right? Ok? watch now. The first thing to do was to include Hai in your information. Include it. How to include? Include f s high s is your string and so plus plus what this does is that right now there is nothing in your hash map, right? Yes."
+    },
+    {
+      "start_time": 1303.76,
+      "end_time": 1337.669,
+      "text": "अभी आपका हाई कहां है? अभी आपका हाई यहां बना लेते हैं। ये आपका अभी लो यहां है और हाई भी यहीं है। ज़ीरो पे है ना? तो देखिए अभी आपका कैरेक्टर है ए। A अभी तो#श मैप में नहीं है। A अभी हैश मैप में नहीं ना है। नहीं है। लेकिन जब आप ये करते हैं ना जब आप ये वाला काम करते हैं तो ये अगर नहीं है तो उसको डाल देता है और उसका ज़ीरो से स्टार्ट करके वन बना देता है। आप ऐसा कर सकते हैं। ठीक है? अगर आपको ऐसा नहीं समझ में आता है तो पहले इंसर्ट कर लीजिए ज़ीरो के साथ और फिर उसको वन बना दीजिए। मिलाजुला के काम वही होता है कि उसका फ्रीक्वेंसी बढ़ जाता है। अगर वो नहीं है तो उसको इंसर्ट कर",
+      "source": "caption",
+      "english_text": "Where is your high right now? Now let's make your high here. Your current low is here and your high is also here. Is it at zero? So look now your character is A. A is not in the map yet. A is not in the hash map yet. Not there. But when you do this, when you do this work, if it is not there then it inserts it and starts it from zero and turns it into one. You can do this. Ok? If you don't understand this then first insert it with zero and then make it one. The same thing that mixing does is that its frequency increases. If it is not there then insert it."
+    },
+    {
+      "start_time": 1337.679,
+      "end_time": 1371.11,
+      "text": "दिया जाता है विथ अ फ्रीक्वेंसी वन। नॉट ज़ीरो। ज़ीरो नहीं वन के साथ। ठीक है? अब आपके हैश मैप में आ गया A वन सही बात है। हम अब अब अगला स्टेप देखिए। ये हो गया वेरी गुड। यहां तक पहुंच गए। अब अगला स्टेप क्या था? अगला स्टेप में आपको सोचना है कि क्या मेरा इंफॉर्मेशन सही है? इंफॉर्मेशन सही होने का क्या मतलब है? इंफॉर्मेशन सही होने का कि आपका जो सबस्ट्रिंग मांगा गया है वो सबस्ट्रिंग किस कंडीशन पे मांगा गया है? किस कंडीशन पे मांगा गया है? आपका क्वेश्चन में क्या लिखा हुआ है? जिसमें एग्जेक्टली K कैरेक्टर्स हो। K यूनिक कैरेक्टर्स हो।",
+      "source": "caption",
+      "english_text": "Is given with a frequency one. Not zero. Not zero but one. Ok? Now the A one in your hash map is correct. Now let us see the next step. This turned out very good. Reached here. Now what was the next step? In the next step you have to think whether my information is correct? What does it mean for the information to be correct? To ensure that the information is correct, on what condition is the substring sought by you? On what condition has it been asked? What is written in your question? Which contains exactly K characters. K are unique characters."
+    },
+    {
+      "start_time": 1371.12,
+      "end_time": 1396.71,
+      "text": "इसका क्या मतलब है? कि आपके विंडो में कितना भी कररेक्टर हो सकता है। आपके विंडो का लेंथ कुछ भी हो सकता है। 100 हो सकता है। लेकिन लेकिन लेकिन यूनिक कैरेक्टर उसमें के ही होना चाहिए। मतलब A अगर 100 बार भी रिपीट हो रहा है तो ठीक है वो एक गिना जाएगा। B 50 बार रिपीट हो रहा है तो वो दो गिना जाएगा। C 10 बार रिपीट हो रहा है तो तीन गिना जाएगा। लेंथ कुछ भी हो। ये हम लोग कैसे सीखे थे? इनफेशन हम लोग क्या बोले थे? हैशमैप का साइज। हैशमैप का साइज।",
+      "source": "caption",
+      "english_text": "What does it mean? That your window can contain any number of characters. The length of your window can be anything. Could be 100. But but but there should be unique character in it only. Meaning, if A is repeated even 100 times then it is okay, it will be counted as one. If B is repeating 50 times then it will be counted as two. If C is repeating 10 times then it will be counted as three. Whatever the length. How did we learn this? Infection What did we say? Size of hashmap. Size of hashmap."
+    },
+    {
+      "start_time": 1396.72,
+      "end_time": 1430.549,
+      "text": "अभी आपका हैशप का साइज क्या है? वन। वन है ना? ठीक है? इसको कैसे अनडू छ हैश मैप का साइज आपका वन है तो मतलब मतलब इंफॉर्मेशन सही होने का क्या मतलब है कि अगर हैशमैप का साइज एग्जैक्टली K हो जाए तो इनफेशन सही है यही है ना अगर अगर हैशमैप का साइज एग्जैक्टली K हो जाए तो सही हो जाएगा ये इसी का तो मतलब है अगर ए बी सी ये विंडो है आपका तो हैशमैप का साइज़ क्या होगा तीन इसमें कितने डिस्टिंक्ट करैक्टर्स हैं तीन ये तो सिंपल",
+      "source": "caption",
+      "english_text": "What is your hashmap size now? Forest. Is it a forest? Ok? How to undo this? If the size of your hashmap is one, then what does it mean for the information to be correct? If the size of the hashmap becomes exactly K, then the inference is correct. That is, if the size of the hashmap becomes exactly K, then it will be correct. This means that if ABC is your window, then what will be the size of the hashmap? Three, how many distinct characters are there in it? Three, this is simple."
+    },
+    {
+      "start_time": 1430.559,
+      "end_time": 1459.99,
+      "text": "बात है अभी अभी हैश मैप का साइज क्या है? वन। ये हमको क्या बताता है कि मेरे विंडो में एक ही डिस्टिंक्ट करैक्टर है। एक ही डिस्टिंक्ट कररेक्टर है। ठीक है? अब हम क्या बोले थे? इंफॉर्मेशनेशन या तो सही हो सकता है या तो गलत हो सकता है। अच्छी बात है। आइए इंफॉर्मेशन दो ही केस है ना? दो ही दुनिया में केस है। सही या गलत। लेकिन लेकिन अब सही का तो एक केस है। देखिए यहां पे हम छोटा सा लिख रहे हैं बनाने के लिए। सही का तो एक केस है। f डॉट साइज इक्वल इक्वल टू k हो जाए। सही का तो यह",
+      "source": "caption",
+      "english_text": "The question is what is the size of the hash map? Forest. What this tells us is that there is only one distinct character in my window. There is only one distinct character. Ok? Now what did we say? The information may either be correct or incorrect. It's a good thing. Let's give information, this is the case only, right? There is a case in only two worlds. Right or wrong. But but now there is a case for right. See here we are writing a little to make it. There is a case for right. Let f dot size be equal to k. this is right"
+    },
+    {
+      "start_time": 1460.0,
+      "end_time": 1494.31,
+      "text": "पैमाना है। गलत क्या है? गलत या तो f. &gt; k हो जाए या तो f डॉट साइज स्मॉलर देन k हो जाए। दुनिया में यही तीन तरीके का केस हो सकता है। यही हो सकता है। तो नॉर्मल बात है। ये तो आपका सही केस है। अब जो हम बोले थे कि जब तक इनेशन गलत है तब तक आप विंडो को श्रिंक करिए। वो हर में नहीं होता है। हम बोले थे ना थोड़ा बहुत चेंज होता है लेकिन जनरल लॉजिक वो है। अब देखिए इस वाले केस पे आइए आपको ज्यादा अच्छा समझ में आएगा। हम क्या बोले कि जब तक हमारा",
+      "source": "caption",
+      "english_text": "Is the scale. what is wrong? Wrong either f. > becomes k or f becomes dot size smaller than k. There can be three types of cases in this world. This is what can happen. So it is a normal thing. This is your true case. Now what we said is that as long as the ination is wrong, you should shrink the window. It is not in everyone. We had said that there is some slight change but the general logic is the same. Now look at this case, you will understand better. What can we say that until our"
+    },
+    {
+      "start_time": 1494.32,
+      "end_time": 1527.43,
+      "text": "इनफार्मेशन गलत है तब तक हमको लो को श्रिंक करते जाना है। अब ये वाले केस पे आइए। फॉर एग्जांपल आपका अभी F का साइज़ K से कम है। जैसा कि यहां पे है। आपका हैशमैप का साइज़ वन है। K का लेंथ दो है। तो आपका तो कम है। तो ये तो गलत इनफेशन है। तो क्या इस केस में भी हमको श्रिंक करना चाहिए? नहीं। क्यों? जब आप विंडो श्रिंक करने का क्या मतलब है? विंडो श्रिंक करने का मतलब है कि आप लो को विंडो श्रिंक करने का मतलब है कि आप लो को इधर हाई की ओर लेके आएंगे। यही मतलब है मतलब अगर आपका विंडो ऐसा है तो आप विंडो छोटा करते हुए आएंगे। और विंडो को जब आप",
+      "source": "caption",
+      "english_text": "Till then we have to keep shrinking the information if the information is wrong. Now come to this case. For example, your size F is less than K. As it is here. The size of your hashmap is one. The length of K is two. So yours is less. So this is a wrong infection. So should we shrink in this case also? No. Why? What does it mean when you say shrink window? Shrinking the window means that you will bring the low to the low. Shrinking the window means that you will bring the low here to the high. This means that if your window is like this then you will come by making the window smaller. And when you open the window"
+    },
+    {
+      "start_time": 1527.44,
+      "end_time": 1562.23,
+      "text": "छोटा करते हुए आएंगे ना तो आप एक-एक करके उसको उड़ाते रहेंगे हैश मैप से। यही करते यही तो बोला गया था कि पहले उस लो का फ्रीक्वेंसी कम करो। अगर लो का फ्रीक्वेंसी कभी ज़ीरो हो गया तो उसको उड़ा दो। तो मतलब अगर f का साइज के से कम है तो एक बात तो हम लोग को समझ में आता है कि हम लोग को अगर लो को श्रिंक करेंगे ना तो f का साइज कम होगा कम होगा या सेम रहेगा बढ़ेगा तो नहीं बढ़ेगा तो नहीं बहुत ध्यान से सुनिए यही यही नहीं समझ में आता है और यही टीचर नहीं समझाता है। अगर हम लोग लो को श्रिंक कर रहे हैं तो हैशमैप का साइज",
+      "source": "caption",
+      "english_text": "If you keep reducing them, you will keep blowing them out of the hash map one by one. While doing this, it was said that first reduce the frequency of that low. If Lo's frequency ever goes to zero, blow him up. So that means if the size of f is less than k then one thing we understand is that if we shrink lo then the size of f will either decrease or remain the same, if it will increase or if it will not increase then listen very carefully, this is not what we understand and this is what the teacher does not explain. If we are shrinking the size of the hashmap then"
+    },
+    {
+      "start_time": 1562.24,
+      "end_time": 1595.83,
+      "text": "या तो सेम रहेगा मतलब साइज़ सेम रहेगा हो सकता है उसका फ्रीक्वेंसी घटे लेकिन साइज वो a रहे उसमें या तो उसका साइज ही कम हो जाएगा मतलब a का कभी जीरो हो गया तो a उड़ जाएगा यही दो चीज हो सकता है ना तो आप देखिए आपका f का साइज ऑलरेडी जब k से कम हो तो क्यों आपको लो को और बढ़ाना है ताकि वो और कम हो जाए कम तो नहीं चाहिए हम लोग को एग्जैक्टली चाहिए एग्जैक्टली चाहिए इसीलिए इसीलिए अगर f का साइज साइज ऑलरेडी K से कम है तो श्रिंक करके तो कोई फायदा नहीं है। अगर अब देखिए हाई को बढ़ाने से क्या होता है? हाई को बढ़ाने से F का साइज",
+      "source": "caption",
+      "english_text": "Either it will remain the same, meaning the size will remain the same, maybe its frequency may decrease but its size may remain the same as a. Either its size itself will decrease, meaning if a ever becomes zero, then a will fly away. These two things can happen. Then you see, when the size of f is already less than k, then why do you have to increase lo further so that it becomes less? It is not necessary to reduce it. We want it exactly. That's why if the size of f is already K. If it is less than then there is no benefit in shrinking it. Now if we see what happens by increasing the high? Size of F by increasing high"
+    },
+    {
+      "start_time": 1595.84,
+      "end_time": 1623.909,
+      "text": "बढ़ता है। यही होता है। अभी हम लोग हाई को बढ़ाए तो हैश मैप में एक घुस गया तो बढ़ गया। और लो को श्रिंक करने से उसका साइज घटता है। मतलब जब भी आप लो को मूव करेंगे ना तो साइज घटेगा। और जब भी आप हाई को मूव करते हैं तो साइज बढ़ता है। इसीलिए हम लोग हाई को मूव करते हैं कि साइज थोड़ा बढ़े। ठीक है? तो जब भी आपका एफ का साइज के से कम है तो हमको नहीं लगता है कि लो को श्रिंक करने से कोई फायदा है। अभी अभी तो आपको हाई को बढ़ाने का जरूरत है। है ना?",
+      "source": "caption",
+      "english_text": "Increases. Same thing happens. Now if we increase the height, if one enters the hash map, it increases. And shrinking the dough reduces its size. Meaning whenever you move the lo, the size will decrease. And whenever you move higher the size increases. That's why we move the high so that the size increases a little. Ok? So whenever your F size is less than K then we do not think there is any benefit in shrinking the LO. Right now you just need to increase the high. Isn't it?"
+    },
+    {
+      "start_time": 1623.919,
+      "end_time": 1651.43,
+      "text": "कि ऑलरेडी कम है कोई चीज आपको आपको टू तक जाना है। आप अभी वन पे बैठे हुए हैं। तो आप वन पे बैठे हुए हैं तो इसको बढ़ाएंगे कि और कम करके इसको ज़ीरो पे ले आएंगे? बढ़ाएंगे ना। आपका गोल क्या है कि हमको टू को छूना है। समझ में आया? इसीलिए इसीलिए इस वाले केस को हैंडल करने का लो वाले पार्ट में ज़रूरत नहीं है। इसका दो पार्ट होता है ना? एक पार्ट में तो हाई का फॉर लूप चलता है और हाई के अंदर एक वाइल लूप चलता है जो कि होता है लो का।",
+      "source": "caption",
+      "english_text": "That something is already lacking, you have to go till now. You are sitting on the forest right now. So if you are sitting on one, will you increase it or reduce it further and bring it to zero? Will increase, right? What is your goal that we have to touch the two. Did you understand? That is why there is no need to handle this case in the lower part. It has two parts, right? In one part there is a for loop of high and inside the high there is a while loop which is of low."
+    },
+    {
+      "start_time": 1651.44,
+      "end_time": 1684.71,
+      "text": "यही टेंपलेट था तो एफ का साइज अगर के से कम है तो आपको हाई को बढ़ाने की जरूरत है तो वो अगले बार बढ़ेगा कभी ना कभी। लो को श्रिंक करने से फायदा नहीं है तब तो और गलत हो जाएगा। आप ऑलरेडी वन पे हैं। आपको टू पे जाना है तो आप लो को बढ़ाएंगे तो आप चले जाएंगे -1 पे या -2 पे तो और आप पीछे जा रहे हैं। आपको नहीं जाना है। इसीलिए अरे यार ये बहुत दिक्कत होता है। हां। तो एफ का साइज जब के से कम हो तो लो वाले पार्ट में जाने की जरूरत नहीं है। नहीं है। लेकिन अब देखिए एफ का साइज के से अगर बड़ा हो ये भी तो हो सकता है बड़ा हो जाए।",
+      "source": "caption",
+      "english_text": "This was the template so if the size of F is less than K then you need to increase the high so it will increase next time sooner or later. There is no benefit in shrinking the lo, then it will become even more wrong. You are already on one. If you want to go to 2P, then you increase the low, then you will go to -1P or -2P and you are going backward. You don't have to go. That's why man, this is a big problem. Yes. So when the size of F is less than K then there is no need to go to the lower part. Not there. But now see, if the size of F is bigger than K then it is possible that it may become bigger."
+    },
+    {
+      "start_time": 1684.72,
+      "end_time": 1718.789,
+      "text": "अब अब आपका जाना था टू। अब बैठे हुए हैं थ्री पे। क्या हाई को बढ़ाएंगे? नहीं। तब तो आप फोर पे चले जाएंगे। इसमें लो को घटाना है। क्यों? लो को बढ़ाना है। क्यों? क्योंकि जब लो बढ़ता है ना तो#श मैप का साइज धीरे धीरे धीरे धीरे कम होता है। तो आपको ये है तो लो वो लो वाला पार्ट तो होगा जरूर। देखिए होगा जरूर लेकिन वो किस कंडीशन में होगा वो आपको करना है। वो आपको डिसाइड करना है। तो जब हम K से बढ़ चुके हैं तो हमको K पे थोड़ा घट के आना पड़ेगा। घटाने का एक ही रास्ता होता है लो को बढ़ाना। लो को बढ़ाएंगे तो साइज घटेगा और",
+      "source": "caption",
+      "english_text": "Now it was your turn to go. Now sitting on three. Will increase the high? No. Then you will go to four. Lo has to be subtracted from this. Why? Lo has to be increased. Why? Because when Lo increases, the size of the #sh map gradually decreases. So if you have this then that part will definitely be there. You will definitely see it, but you have to decide in what condition it will be. That's for you to decide. So when we have increased from K, we will have to come down to K a little. The only way to reduce is to increase Lo. If you increase Lo, the size will decrease and"
+    },
+    {
+      "start_time": 1718.799,
+      "end_time": 1750.549,
+      "text": "हाई को बढ़ाएंगे तो साइज बढ़ेगा। यही दो चीज याद रखना है। उस हिसाब से इसको डिसाइड कर लेना है। आइए अब इसको डिसाइड करवाते हैं। ये इतना समझ में आया? नहीं समझ में आया तो कमेंट करिएगा। समझाएंगे। इसको मिटा देते हैं। अब आप लोग को समझ में आएगा धीरे-धीरे। चलिए क्या हम बोले? अब अब इंफॉर्मेशन गलत हो सकता है। मतलब के से अगर बड़ा है तो उसमें श्रिंक करवाना है। और हम ऊपर क्या बोले थे? जब तक इंफॉर्मेशन गलत है तब तक लो को घटाओ। जब तक इंफॉर्मेशन गलत है तब तक लो को घटाओ। मतलब",
+      "source": "caption",
+      "english_text": "If you increase the height, the size will increase. These are two things to remember. It has to be decided accordingly. Let us get it disassembled now. Did you understand this much? If you don't understand then comment. Will explain. Let's erase it. Now you people will understand gradually. Come on, shall we say? Now the information may be wrong. Meaning if it is bigger than K then it has to be shrunk. And what did we say above? Lower the low as long as the information is incorrect. Lower the low as long as the information is incorrect. meaning"
+    },
+    {
+      "start_time": 1750.559,
+      "end_time": 1776.47,
+      "text": "व्हाइल वाइल f डॉट साइज f डॉट साइज इज़ ग्रेटर दैन k। इसका क्या मतलब है? जब तक f का साइज के से बड़ा है तब तक लॉ को घटाते जाओ। लॉ को घटाने का क्या तरीका होता है? सबसे पहले तो s लो माइनस माइनस हट गया। उसके बाद हम क्या बोले थे? उसके बाद हम क्या बोले थे? अगर उसका फ्रीक्वेंसी ज़ीरो हो गया तो उसको इरेज़ कर दो क्योंकि वो खुद से नहीं होगा।",
+      "source": "caption",
+      "english_text": "While f dot size f dot size is greater than k. What does it mean? Keep reducing the law as long as the size of f is larger than k. What is the method of reducing the law? First of all, s lo minus minus was removed. What did we say after that? What did we say after that? If its frequency becomes zero then erase it because it will not happen on its own."
+    },
+    {
+      "start_time": 1776.48,
+      "end_time": 1808.95,
+      "text": "तो इफ f डॉट अ fa s लो इक्वल इक्वल टू 0 हो सकता है कि किसी को घटाते-घटाते उसका फ्रीक्वेंसी ज़ीरो हो जाए। अगर ऐसा हुआ उड़ा दो उसको इरेज़ कर दो हैश मैप से तभी तो साइज कम होगा। अगर आप इस ऐसा नहीं करेंगे तो आपका साइज़ कभी कम नहीं होगा। वो सबका फ्रीक्वेंसी ज़ीरो करता जाएगा। लेकिन वो कैरेक्टर तब भी रहेगा। साइज़ कम करने के लिए जरूरी है। काम हो गया। लो को उड़ा दिए। अब क्या है? लो को बढ़ा दो। लो को बढ़ा दिए और ये वाइल लूप बंद",
+      "source": "caption",
+      "english_text": "So if f dot a fa s lo equals equal to 0 it's possible that by subtracting one its frequency becomes zero. If this happens, blow it up and erase it from the hash map, only then the size will be reduced. If you don't do this then your size will never reduce. He will keep reducing everyone's frequency to zero. But that character will still be there. Necessary to reduce size. The work is over. Blown Lo. what now? Increase Lo. Raised the low and closed this vicious loop."
+    },
+    {
+      "start_time": 1808.96,
+      "end_time": 1843.43,
+      "text": "कर दो। ये देखिए क्या हो रहा है इस पार्ट में। जब तक मेरा इंफॉर्मेशन मेरा इंफॉर्मेशन जब तक गलत है मेरा इंफॉर्मेशन जब तक गलत है और कौन वाला गलत है कम वाला गलत नहीं ज्यादा वाला गलत मतलब ज्यादा है तो वो गलत है। कम वाले में तुम लोग देख लिए कि ये करने का जरूरत नहीं है भाई और गलत होते जाओगे। तो ये इसको ठीक कर रहा है। ये इसको ठीक कर देगा। ये इसको ठीक कर देगा। जब तक इंफॉर्मेशन गलत है तब तक लो को बढ़ाते जाइए। काम हो गया। अब अब आइए अब बहुत इंपॉर्टेंट है। ठीक? आप लोग सोचते होंगे कि हर चीज में बोलता है कि बहुत इंपॉर्टेंट है। लेकिन है भी शुरू-शुर में",
+      "source": "caption",
+      "english_text": "Do it. See what's happening in this part. As long as my information is wrong, as long as my information is wrong, and which one is wrong, the less one is not wrong, the more one is wrong, if it means more, then it is wrong. In the lower ones, you people will see that there is no need to do this, brother, and you will keep going wrong. So this is fixing it. This will fix it. This will fix it. Keep increasing the low as long as the information is wrong. The work is over. Now come now, this is very important. Correct? You people might be thinking that he says everything is very important. But it is also in the beginning"
+    },
+    {
+      "start_time": 1843.44,
+      "end_time": 1877.11,
+      "text": "है। अब देखिए अब क्या किए? यहां पे आप कुछ किए थे साइज में। साइज में बढ़ोतरी हुई थी। यहां पे आप साइज में घटोतरी किए थे। अब दो तरीके का केस हो सकता है। ठीक है? हम लोग क्या देखे थे? शुरू में तीन तरीके का केस था। f का साइज एग्जैक्टली K होता, f का साइज कम होता, f का साइज ज्यादा होता। तो f का साइज ज्यादा वाला तो ये हैंडल कर लिया। अगर ये वाइल लूप टूटेगा तो कब टूटेगा? या तो f का साइज k से इक्वल हो जाए तब टूटेगा। क्या हम बोल रहे हैं? फॉर एग्जांपल हम क्या बोल रहे हैं कि अगर f का",
+      "source": "caption",
+      "english_text": "Is. Now see what you did now? Here you did something in size. There was an increase in size. Here you had reduced the size. Now the case can be of two types. Ok? What did we see? Initially there were three types of cases. The size of f would have been exactly K, the size of f would have been less, the size of f would have been larger. So if the size of f is bigger then it has been handled. If this vicious loop breaks, when will it break? Either the size of f becomes equal to k then it will break. Are we speaking? For example, what we are saying is that if f's"
+    },
+    {
+      "start_time": 1877.12,
+      "end_time": 1906.23,
+      "text": "साइज मान लीजिए थ्री होता। और k = 2 होता। ठीक है? तो अब आप इसमें f का साइज कम कर रहे हैं एक-एक एक-एक करके। कभी ना कभी तो कम होगा ना। फ्रीक्वेंसी कम होता रहेगा। फिर ज़ीरो होगा। फिर साइज भी कम हो जाएगा। तो या तो वो थ्री घट के टू बन जाएगा तब ये वाइल लूप टूट जाएगा क्योंकि जब f का साइज इक्वल हो गया है केस से तभी टूटेगा ऐसे तो नहीं टूटेगा। अगर फोर है तो फोर पहले थ्री बनेगा थ्री जाके टू बनेगा। जब ये इक्वल हो जाएगा तब ये वाइल लूप ब्रेक कर जाएगा। एक तो ये कंडीशन है तो इक्वल हो सकता है अभी।",
+      "source": "caption",
+      "english_text": "Let's say the size was three. And k = 2. Ok? So now you are reducing the size of f in it one by one. Someday or the other it will be less. The frequency will keep decreasing. Then it will be zero. Then the size will also reduce. So either that three will be reduced to two, then this wild loop will break because when the size of f becomes equal to the case, it will break only then, so it will not break. If there are four then four will first become three and then three will become two. When it becomes equal then it will break the while loop. Firstly, if this is the condition then it can be equal now."
+    },
+    {
+      "start_time": 1906.24,
+      "end_time": 1939.43,
+      "text": "नहीं तो मान लीजिए f का साइज कभी k था ही नहीं। एफ का साइज के से कम था जो कि एक केस था जिसको हम लोग हैंडल नहीं किए हैं। f का साइज वन था। तो क्या ये वाइल लूप कभी चलेगा? नहीं चलेगा क्योंकि वन टू से ज्यादा थोड़ी है। तो ये वाइल लूप का भी नहीं चलेगा। आप यहां आ जाएंगे। इसका मतलब इसका मतलब कि जब आप इस वाइल लूप को ब्रेक करके यहां पे आए हैं। जब आप इस वाइल लूप को ब्रेक करके यहां पे आए हैं तो दो तरीके का केस हो सकता है। एफ का साइज के इक्वल हो सकता है। हो सकता है कि वो ज्यादा हो ज्यादा घट घट के इक्वल हुआ आ गए। या तो एफ का साइज कभी k से बड़ा था ही नहीं। वो तो छोटा ही था। तो आप ये कभी चलाए ही नहीं।",
+      "source": "caption",
+      "english_text": "Otherwise, suppose the size of f was never k. The size of F was less than that of K, which was a case which we have not handled. The size of f was one. So will this vicious loop ever stop? Will not work because one is more than two. So even this while loop will not work. You will come here. This means that you have come here after breaking this vicious loop. When you have come here after breaking this vicious loop, then two types of cases can happen. The size of F can be equal to K. It is possible that it may be more or it may become equal after decreasing. Either the size of F was never larger than k. He was only small. So you never drove it."
+    },
+    {
+      "start_time": 1939.44,
+      "end_time": 1973.75,
+      "text": "ठीक है? तो दो कंडीशन हो सकता है। इसके बाद का स्टेप क्या था? वो टेंपलेट में क्या था? कि इंफॉर्मेशन सही है तो उसको रिजल्ट में जोड़ लो। लेकिन दो तरीके का इनफार्मेशन हो सकता है। k से इक्वल हो सकता है या तो k से कम हो सकता है। आपको कौन सा चाहिए? आपको k का इक्वल चाहिए। एग्जैक्टली k लिखा हुआ है। एग्जैक्टली k लिखा हुआ है। अगर लिखा होता एट लीस्ट k तो क्या करते? वो भी जोड़ लेते। तो एग्जैक्टली लिखा हुआ है। एग्जैक्टली लिखा हुआ है। तो एक इफ लगाइए। इफ f डॉट साइज इक्वल इक्वल टू k। देन अब आपको अपने फाइनल",
+      "source": "caption",
+      "english_text": "ok? So two conditions can happen. What was the next step? What was that in the template? If the information is correct then add it to the result. But there can be two types of information. Can be equal to k or less than k. Which one do you want? You want k equals. Exactly k is written. Exactly k is written. What would you have done if it had been written at least k? He would have added it too. So it is written exactly. It is written exactly. So put an if. If f dot size equal to k. Now you have to complete your final"
+    },
+    {
+      "start_time": 1973.76,
+      "end_time": 2001.19,
+      "text": "आंसर में इसको इंक्लूड करना है। कैसे करते हैं? वेरी सिंपल है। ये तो याद किए हुए होंगे अभी तक। हाई माइनस लो + 1 और रिजल्ट इज़ इक्वल टू क्या? मैक्स लॉन्गेस्ट है। तो मैक्स लेंथ एंड रिजल्ट। ये इफ बंद कीजिए। ये फॉर लूप बंद हो गया। फॉर लूप किसका? हाई वाला। और नीचे आके रिटर्न रिजल्ट कर दीजिए।",
+      "source": "caption",
+      "english_text": "This has to be included in the answer. How to do? Very simple. You must have remembered these by now. High minus low + 1 and the result is equal to what? Max is tallest. So Max Length and Result. Stop this if. This for loop is closed. Whose for loop? The high one. And come down and return the results."
+    },
+    {
+      "start_time": 2001.2,
+      "end_time": 2033.35,
+      "text": "सिंपल बात है। कंफर्टेबल हो गए। देखिए ये क्या हुआ? तीन पार्ट यहां पर दो तरीके का केस पॉसिबल था। f का साइज के से कम इक्वल। यहां पर आप चेक किए कि अच्छा क्वेश्चन में जो बोला गया है उस हिसाब से अब क्वेश्चन में बोला इसीलिए ये चेक किए हैं। अगला क्वेश्चन जो दिखाएंगे ना फ्रूट इंटू बास्केट उसको यहां पे फ्रूट इंटू बास्केट का सम कोड सेम है। एक चीज़ बदलेंगे पूरा कोड हो जाएगा। ठीक है? तो क्वेश्चन के हिसाब से हम लोग क्वेश्चन क्या बोला भाई तुमको इक्वल चाहिए। तो यहां पे हम लोग देखे कि या तो लेस हो सकता है या इक्वल हो सकता है। जब हम लोग यहां पहुंचे हमको इक्वल लेना है तो",
+      "source": "caption",
+      "english_text": "It's a simple thing. Became comfortable. See what happened? Three parts: Two types of cases were possible here. Size of f less than equal to k. Here you have checked that what is said in the question is as per what is said in the question, that is why you have checked this. The next question which will be shown is 'Fruit into Basket' here, the sum code of 'Fruit into Basket' is the same. If you change one thing the entire code will be changed. Ok? So according to the question, we said the question, brother, you want equal. So here we see that it can either be less or equal. When we reach here we have to get equal."
+    },
+    {
+      "start_time": 2033.36,
+      "end_time": 2058.389,
+      "text": "हम इक्वल ले लिए इफ करके। ठीक? देख लीजिए। तीन स्टेप आपको तीन तीन चीज बताए थे। तीन ही चीज किए हैं। झूठ नहीं बोलते हैं हम। देखिए तीन चीज बताए थे ना? सबसे पहले हाई को सबसे पहले क्या बोले थे हम? हाई को इंफॉर्मेशन में इंक्लूड करो। जब तक गलत है तब तक लो को डिक्रीज करो। जब तक गलत है तब तक लो को डिक्रीज करो। और जो इंफॉर्मेशन सही है उसको रिजल्ट में इंक्लूड कर लो।",
+      "source": "caption",
+      "english_text": "We take equal by doing if. Correct? Take a look. Three steps were told to you three things. Have done only three things. We don't lie. Look, I told you three things, right? What was the first thing we said to Hai? Include high in the information. Decrement lo until false. Decrement lo until false. And include the correct information in the result."
+    },
+    {
+      "start_time": 2058.399,
+      "end_time": 2092.069,
+      "text": "थ्री स्टेप प्रोसेस है किसी भी स्लाइडिंग विंडो का। समझ में आई? ठीक। अब हो गया। ये कोड हो गया। इतना ही कोड था। ठीक है? कोड आपको मिल जाएगा लिंक में लेकिन इतना ही था सर। बस हो गया। इसका टाइम कॉम्प्लेक्सिटी क्या है? बहुत लोग बोल रहे हैं इसका टाइम कॉम्प्लेक्सिटी तो सर ऑर्डर ऑफ़ n² है। क्यों? क्योंकि एक फॉर लूप आगे चल रहा है। मतलब वाइल लूप भी चल रहा है। लूप तो चल रहा है। हाई का चल रहा है। एक लूप आप लो का चला रहे हैं तो n * n² नहीं। देखिए हाई का लूप कहां तक चल रहा है? हाई तो जीरो से n चल रहा है। तो सिंपल है। n टाइम्स चल रहा है। हर बार जब हाई चल रहा है तो क्या",
+      "source": "caption",
+      "english_text": "There is a three step process for any sliding window. Did you understand? Correct. Now its done. This code is done. That was all the code. Ok? You will get the code in the link but that was all sir. That's it. What is its time complexity? Many people are saying that its time complexity is of the order of n². Why? Because a for loop is going on. Meaning, a while loop is also going on. The loop is going on. High is going on. If you are running a loop then n*n². See how far the loop of Hai continues? High is going from zero to n. So it is simple. n times is going on. What about every time the high is going on?"
+    },
+    {
+      "start_time": 2092.079,
+      "end_time": 2126.87,
+      "text": "हो रहा है? हर बार जब हाई चल रहा है तो क्या हो रहा है? आप लो को या तो बढ़ा सकते हैं। आप लो को या तो बढ़ा रहे हैं। या फिर कुछ नहीं करा रहे हैं। कुछ नहीं करा रहे हैं। यही हो रहा है ना? जी। अगर f का साइज के से बड़ा है तभी तो आप लोग को छेड़छाड़ कर रहे हैं। नहीं तो आप लोगों को नहीं ना छू रहे हैं। नहीं छू रहे हैं। ठीक है? n² कब होता है? n² तब होता है जब i 0 से n चले और हर i के लिए j भी ज़ीरो से n चले। तो इसको बोलते हैं कि n * n² लेकिन यहां पे देखिए क्या हो रहा है?",
+      "source": "caption",
+      "english_text": "is happening? What's happening every time the high goes on? You can increase lo or so. You are increasing Lo or so. Or not getting anything done. Nothing is getting done. This is what is happening isn't it? Yes. If the size of f is bigger than k then only you are manipulating people. Otherwise you are not touching people. Not touching. Ok? When does n² happen? n² occurs when i goes from 0 to n and for every i j also goes from zero to n. So this is called n * n² but see what is happening here?"
+    },
+    {
+      "start_time": 2126.88,
+      "end_time": 2152.15,
+      "text": "मान लीजिए हाई ज़ीरो था। मान लीजिए एक एग्जांपल देके समझाते हैं। यहां पे मान लीजिए लो नहीं चला। तो यहां पे कुछ नहीं हुआ। ठीक? हाई इज़ = 1 चला। यहां पे भी मान लीजिए लो नहीं चला कुछ नहीं हुआ। अच्छा। हाई इज इक्वल टू टू हुआ। यहां पे मान लीजिए आपको लो को श्रिंक करना पड़ा। अब लो को आप कहां से कहां तक श्रिंक कर रहे हैं? लो तो ज़ीरो पे था। लो क्या कभी हाई को क्रॉस करेगा? नहीं। नहीं करेगा। क्यों?",
+      "source": "caption",
+      "english_text": "Suppose the high was zero. Let us explain by giving an example. Let's just say it didn't work here. So nothing happened here. Correct? High Is = 1 Run. Here too, accept that it did not work, nothing happened. Good. High is equal to two. Here suppose you had to shrink the lo. Now from where to where are you shrinking the lo? Look, it was at zero. Will the low ever cross the high? No. Will not do. Why?"
+    },
+    {
+      "start_time": 2152.16,
+      "end_time": 2185.51,
+      "text": "क्योंकि K का जो वैल्यू है ना K का आपको क्वेश्चन में वैल्यू दिया हो वन। जनरली दिया होगा। K के K डिस्टिंक्ट मतलब एग्जैक्टली -1 डिस्टिंक्ट करैक्टर का तो कोई नहीं है। एग्ज़ैक्टली ज़ीरो डिस्टिंक्ट करैक्टर ये तो कुछ क्वेश्चन नहीं होता है। एटलीस्ट वन तो हो। एटलीस्ट वन तो हो। तो लो कहां तक जाकर रुक जाएगा? लो हाई तक जाकर रुक जाएगा या तो हाई से कम जाकर रुक जाएगा। ऐसा नहीं होगा कि लो हाई को क्रॉस कर जाए। क्यों? क्योंकि वो वाइल लूप कब तक चल रहा है? वाइल लूप कब चल रहा है? जब आपके एफ का साइज के से बड़ा हो। एफ का साइज के से बड़ा होने के लिए कुछ ना कुछ विंडो तो होना चाहिए। कुछ ना कुछ विंडो का साइज होगा तभी ना हैशमैप में रहेगा। कम से",
+      "source": "caption",
+      "english_text": "Because the value of K is given to you in the question. Must have been given in general. K's K distinct means there are no exactly-1 distinct characters. Exactly zero distinct characters is not a question. Must be the athlete one. Must be the athlete one. So how far will it stop? It will stop after reaching low high or it will stop after going below high. It will not happen that the low crosses the high. Why? Because how long will that vicious loop continue? When is the while loop running? When the size of your F is larger than K. There must be some window for the size of F to be larger than K. The window will be of some size only then it will be in the hashmap. at least"
+    },
+    {
+      "start_time": 2185.52,
+      "end_time": 2218.31,
+      "text": "कम एक तो होना चाहिए। तभी तो है मैप का साइज वन भी होगा। तो लो ना आपका हाई तक जा रहा है या तो हाई से पहले ही रुक जा रहा है। तो आपका लो क्या चलेगा कि लो इज इक्वल टू 0 होगा। लो = 1 होगा और मान लीजिए लो = 2 वर्स्ट केस में लो = 2 भी चला जाएगा। ठीक है? फिर आप हाई = थ्री किए। मान लीजिए यहां भी कुछ नहीं चला। फिर आप हाई इक्वल टू फोर किए। मान लीजिए यहां पे लो अभी टू था। यहां से टू था। यहां पे थ्री हो गया और रुक गया। फिर आप हाई इक्वल टू फाइव पे आ गया। यहां पे",
+      "source": "caption",
+      "english_text": "There must be at least one. That's why the size of the map will also be one. So, either yours is going till high or it is stopping before high. So your Lo will be equal to 0. Lo = 1 and let's say Lo = 2. In the worst case Lo = 2 will also go away. Ok? Then you did high = three. Let's say nothing worked here either. Then you did high equal to four. Suppose the pay here was two now. It was two from here. Here it turned three and stopped. Then you came to high equal to five. here on"
+    },
+    {
+      "start_time": 2218.32,
+      "end_time": 2252.87,
+      "text": "मान लीजिए लो = थ्री से चलके फोर हो गया। मान लीजिए। अब आप i = 6 पे आए। आपका प्रोग्राम हो गया खत्म क्योंकि आप n तक पहुंच गए। अब देखिए क्या हो रहा है? क्या हो रहा है यहां पे? देखिए क्या ऐसा हो रहा है कि हर हाई पे हर हाई पे ऐसा हो रहा है कि हर हाई पे लो ज़ीरो से n चल रहा है। नहीं चल रहा है। क्यों? क्योंकि लो हाई तक जाएगा। हाई से कम जाएगा। ऐसा नहीं होगा कि हर हाई पे हर हाई पे चल भी नहीं रहा है वो। हर हाई पे चल भी नहीं रहा है। चल भी रहा है तो बस हाई तक जा रहा है। समझे? ऐसा कभी नहीं हो रहा है",
+      "source": "caption",
+      "english_text": "Suppose lo = three becomes four. Suppose. Now you come to i = 6. Your program is finished because you reached n. Now see what is happening? What is happening here? See, what is happening is that at every high, every high is going from zero to low. It is not working. Why? Because low will go to high. Will go from high to low. It will not be that he is not even walking on every high pay. Har is not even working on high pay. Even if it is moving, it is just going higher. Got it? this is never happening"
+    },
+    {
+      "start_time": 2252.88,
+      "end_time": 2280.79,
+      "text": "कि मेरे हर हाई पे हम n ऑपरेशन लो के लिए कर रहे हो। समझे? एटमोस्ट हम कितना ऑपरेशन कर रहे हैं? जो हाई का वैल्यू है। एटमोस्ट हम कितना ऑपरेशन कर रहे हैं? जो हाई का वैल्यू है। इसीलिए हर हाई पे n टाइम्स नहीं चल रहे हैं। जनरली स्पीकिंग जनरली स्पीकिंग आपका जो हाई है ज़ीरो से n जाएगा। वर्स्ट केस में आपका जो लो है वो भी ज़ीरो से n तक पहुंच जाएगा।",
+      "source": "caption",
+      "english_text": "That on every high of mine we are doing n operation for low. Got it? At most how much operation are we doing? Which is the value of high. At most how much operation are we doing? Which is the value of high. That is why every high pay n times is not going on. Generally speaking, your high will go from zero to n. In the worst case, your low will also go from zero to n."
+    },
+    {
+      "start_time": 2280.8,
+      "end_time": 2308.63,
+      "text": "वर्स्ट केस में पहुंच जाएगा 0 से n तक चलते-चलते। तो इसका जो टाइम कॉम्प्लेक्सिटी है ना वो n * n नहीं है। n + n है। हाई ज़ीरो से n जा रहा है ये तो हर बार जा ही रहा है। पक्की बात है। हो सकता है कि हर लूप में लो थोड़ा-थोड़ा मूव करे। एक साथ नहीं मूव नहीं करेगा। बहुत बार नहीं। लो थोड़ा-थोड़ा मूव कर रहा है। ये ऐसे हो रहा है। देखिए हो सकता है ना कि हाई हाई तो हर बार जीरो से वन वन से टू टू से थ्री थ्री से फोर फोर से फाइव जा रहा है।",
+      "source": "caption",
+      "english_text": "In the worst case it will reach from 0 to n. So its time complexity is not n * n. is n + n. It is going from high zero to n, it is going every time. It's a sure thing. It is possible that the lo may move a little in each loop. Will not move together. Not very often. Lo is moving a little. This is how it is happening. See, it may be that high is high, so every time it is going from zero to one, to two, to three, to four, to five."
+    },
+    {
+      "start_time": 2308.64,
+      "end_time": 2333.829,
+      "text": "हर बार क्या हो रहा है ना कि लो जो है थोड़ा-थोड़ा मूव कर जा रहा है। हो सकता है यहां पे वो जीरो से वन चला जाए। फिर वन से टू चला जाए। फिर टू से थ्री चला जाए। ऐसे करके चलता जाए। तो इन टोटल हाई ज़ीरो से n जा रहा है और लो उसी बीच में धीरे-धीरे करके ज़ीरो से n चला जा रहा है। एक बार बहुत बार नहीं। इसीलिए इसका कॉम्प्लेक्सिटी ऑर्डर ऑफ़ n होता है। n² नहीं होता है। ठीक है? समझ में आई? नहीं समझ में आया तो फिर बताइएगा। फिर बताएंगे।",
+      "source": "caption",
+      "english_text": "What is happening every time is that whatever is there is moving a little bit. It is possible that here he may go from zero to one. Then go from one to two. Then go from two to three. Keep doing it like this. So these total highs are going from zero to n and in between the lows are gradually going from zero to n. Not once very often. That is why its complexity order is n. n² does not exist. Ok? Did you understand? If you don't understand then please tell me. Will tell you again."
+    },
+    {
+      "start_time": 2333.839,
+      "end_time": 2361.349,
+      "text": "तो ये आपका पहला क्वेश्चन हो गया खत्म। खत्म हो गया? ठीक है? कोड समझ में आया? टाइम कॉम्प्लेक्सिटी समझ में आया? टेंपलेट समझ में आया? टेंपलेट को प्लीज याद रखिएगा। कॉपी में लिख लीजिएगा। अगला क्वेश्चन पे आ जाइए। फ्रूट्स इन टू बास्केट्स। देखिए हम कितना सिंपल करके आपको बता देंगे। फ्रूट्स इनू बास्केट। 10 मिनट में खत्म हो जाएगा क्वेश्चन। 10 मिनट में खत्म हो जाएगा। 10 मिनट भी नहीं लगेगा। ठीक है?",
+      "source": "caption",
+      "english_text": "So this is your first question over. Is it over? Ok? Got the code? Do you understand time complexity? Got the template? Please remember the template. Write it down in your notebook. Come to the next question. Fruits in two baskets. See how simple we will tell you. Fruits in Basket. Questions will end in 10 minutes. It will be over in 10 minutes. It won't even take 10 minutes. Ok?"
+    },
+    {
+      "start_time": 2361.359,
+      "end_time": 2395.19,
+      "text": "आइए। आपको ये क्या बोल रहा है? अब देखिए यही आपको समझना है। अब इस क्वेश्चन में आपको कोई सबस्ट्रिंग सब एरे नहीं लिखा हुआ है। ये एक रियल वर्ल्ड क्वेश्चन है। रियल वर्ल्ड मतलब कहानी बताया हुआ है आपको। आपको क्या कहानी बताएं हम बता देते हैं। और ये तो मेरे सामने Amazon में पूछा गया है। ये तो क्वेश्चन मेरे सामने Amazon इंटरव्यू में पूछा गया है कुछ दिन पहले किसी बच्चे से। ठीक है? तो बहुत इंपॉर्टेंट है। बोला गया है कि आपको एक फार्म है जहां पे फ्रूट ट्रीज अरेंज्ड है लेफ्ट टू राइट। अच्छा आपको बोलता है कि वो फ्रूट्स आई टाइप का है। हिंदी में हम बता देते हैं क्यों इतना इंग्लिश आपको बताएं।",
+      "source": "caption",
+      "english_text": "Come. What is this telling you? Now see, this is what you have to understand. Now in this question you do not see any substring sub array written. This is a real world question. Real world means the story has been told to you. We will tell you what story to tell. And this has been asked in front of me in Amazon. This question was asked to me by a child in an Amazon interview a few days ago. Ok? So it is very important. It has been said that you have a farm where fruit trees are arranged left to right. Well, he tells you that he is of Fruits Eye type. We tell you in Hindi why so much English is required."
+    },
+    {
+      "start_time": 2395.2,
+      "end_time": 2426.23,
+      "text": "आपको क्या बोला गया है? आप ये आपका फार्म है। ये आपका क्या है? 0 1 2 3 4 ये आपका फार्म है। एरिद है। एक इसमें फ्रूट्स रखा हुआ है। ठीक है? फ्रूट्स का एक टाइप है जैसे आम, संतरा, अनार जो भी है तो उसको नंबर से रिप्रेजेंट करते हैं। तो आपका फ्रूट्स ये है 0 1 2 और मान लीजिए ज़ीरो। ये आपका फ्रूट टाइप है। ज़ीरो फ्रूट टाइप है। वन फ्रूट टाइप है। टू फ्रूट टाइप है। ऐसे रखा हुआ है। आपके पास एक बास्केट है। आपके पास एक बास्केट है।",
+      "source": "caption",
+      "english_text": "What have you been told? You, this is your form. What is this to you? 0 1 2 3 4 This is your form. Is arid. One of them has fruits in it. Ok? There is a type of fruits like mango, orange, pomegranate etc. then it is represented by a number. So your fruits are 0 1 2 and let's say zero. This is your fruit type. Zero is fruit type. One is fruit type. Two fruit type. It is kept like this. You have a basket. You have a basket."
+    },
+    {
+      "start_time": 2426.24,
+      "end_time": 2457.109,
+      "text": "आपको फ्रूट कलेक्ट करना है लेफ्ट से राइट। अच्छा। इस बास्केट का एक लिमिटेशन है ना कि इसमें एटमोस्ट टू डिस्टिंक्ट टाइप ही आप हटा सकते हैं। टाइप्स ऑफ क्या? फ्रूट इस बास्केट का ये लिमिटेशन है। लिखा हुआ है क्वेश्चन में। क्वेश्चन पढ़ के आपको समझ में आएगा। अब आपको बताना है कि मैक्सिमम मैक्सिमम नंबर ऑफ फ्रूट्स कितना कलेक्ट कर सकते हो?",
+      "source": "caption",
+      "english_text": "You have to collect fruits from left to right. Good. There is a limitation in this basket that you can remove only the most two distinct types in it. Types of what? This is the limitation of this fruit basket. It is written in the question. You will understand after reading the questions. Now you have to tell what is the maximum number of fruits you can collect?"
+    },
+    {
+      "start_time": 2457.119,
+      "end_time": 2491.109,
+      "text": "कितना कलेक्ट कर सकते हो? मैक्सिमम नंबर ऑफ फ्रूट्स। मैक्सिमम नंबर डिस्टिंक्ट फ्रूट नहीं डिस्टिंक्ट तो दो ही है। लेकिन हो सकता है आप तीन सेब ले लिए या चार अनार ले लिए तो आप सात फ्रूट ले लिए। ये क्वेश्चन कहने का मतलब है बताओ। क्वेश्चन सेम पिछला वाला क्वेश्चन है। सेम क्वेश्चन है। सेम एग्जैक्टली सेम क्वेश्चन है। क्या बोल रहा है क्वेश्चन? क्वेश्चन क्या बोलता है? जी? 0 1 2 है ना? 0 1 2 0 1 2 3 बोला है बास्केट है। बास्केट में एटमोस्ट दो",
+      "source": "caption",
+      "english_text": "How much can you collect? Maximum number of fruits. The maximum number of distinct fruits is not distinct but only two. But maybe if you take three apples or four pomegranates, you get seven fruits. Tell me what you mean by saying this question. The question is the same as the previous question. Same question. Same exactly same question. What is the question saying? What does the question say? Yes? 0 1 2 right? 0 1 2 0 1 2 3 Said it was a basket. Give atmost to the basket"
+    },
+    {
+      "start_time": 2491.119,
+      "end_time": 2524.79,
+      "text": "तरीके का डिस्टिंक्ट कुछ याद आ रहा है पिछला वाला क्वेश्चन से पिछला वाला क्वेश्चन क्या बोला था? ऐसा सबस्टिंग खोजो जिसमें एग्जैक्टली K डिस्टिंक्ट हो। ये क्या बोलता है? अब अब देखिए फ्रूट आपको लेफ्ट से राइट लेना है। तो मतलब लेफ्ट से राइट लेना है ना। तो मतलब कि ऐसा नहीं कर सकते कि आप एक फ्रूट लिए और जाके चौथा वाला ले लिए। नहीं लाइन से चलना है। आप लाइन से कितना फ्रूट ले सकते हैं कि उसमें एग्जैक्टली दो ही तरीके का डिस्टिंक्ट हो। ये क्वेश्चन में बोल रहा है। आप लाइन से कितना फ्रूट ले सकते हैं कि उसमें डिस्टिंक्ट फ्रूट दो हो या दो से कम हो। दो से कम भी है। ठीक है? दो से कम",
+      "source": "caption",
+      "english_text": "Distinct in manner, I remember something, what was said in the previous question compared to the previous one? Find a substring that has exactly K distinct. What does this say? Now see, you have to take the fruit from left to right. So it means taking right from left, right? So that means you can't buy one fruit and then go and get the fourth one. No, we have to walk in line. How much fruit can you take from the line so that it has exactly two types of distinct? He is speaking in questions. How much fruit can you take from the line whether it has two or less than two distinct fruits. Is also less than two. Ok? less than two"
+    },
+    {
+      "start_time": 2524.8,
+      "end_time": 2559.109,
+      "text": "भी चलेगा। दो से ज्यादा नहीं होना चाहिए। या तो वन हो या तो टू हो। दो ही केस हो सकता है ना? तो अगर आप ये वाला लेते हैं। अगर आप अगर आप ये वाला विंडो लेंगे ज़ीरो और वन। इसमें नंबर ऑफ़ डिस्टिंक्ट फ्रूट कितना है? दो। नंबर ऑफ़ फ्रूट कितना है? टू। अगर आप ये वाला लेते हैं तो इसमें नंबर ऑफ डिस्टिंक्ट फ्रूट कितना है? वन और टू। लेकिन इसमें फ्रूट आपको तीन मिलता है। तीन मिलता है। तो इसका आंसर हो जाएगा तीन। सेम क्वेश्चन है। देखिए क्वेश्चन को हम स्लाइडिंग विंडो में लिख देते हैं। फाइंड लॉन्गेस्ट फाइंड लॉन्गेस्ट सब एरे",
+      "source": "caption",
+      "english_text": "Will also do. There should not be more than two. Either it is one or it is two. There can be only two cases, right? So if you take this one. If you take this window, zero and one. What is the number of distinct fruits in it? Two. What is the number of fruit? To. If you take this one, what is the number of distinct fruits in it? One and two. But in this you get three fruits. Get three. So the answer will be three. Same question. See, we write the question in the sliding window. Find Longest Find Longest Sub Array"
+    },
+    {
+      "start_time": 2559.119,
+      "end_time": 2591.99,
+      "text": "व्हिच हैज़ एट मोस्ट एट मोस्ट टू डिस्टिंक्ट नंबर्स। ये लीजिए ये क्वेश्चन आपका बन गया। स्लाइडिंग विंडो क्वेश्चन। ये देखिए। ये बन गया। सेम क्वेश्चन है ना? फाइंड लॉन्गेस्ट सब एरे जिसमें कि एटमोस्ट दो तरीके का डिस्टिंक्ट एलिमेंट हो। यही तो बता रहा है मेरे पास एक झोली है, थैला है वो सब बेकार का बात है। क्वेश्चन आपको ये बोल रहा है। तो जब क्वेश्चन को हिंदी में समझते हैं तो ये है और रिटर्न द मैक्सिमम नंबर ऑफ फ्रूट्स यू कैन पिक मतलब मैक्सिमम",
+      "source": "caption",
+      "english_text": "Which has at most two distinct numbers. Here, this question has become yours. Sliding Window Question. Look at this. it became. Same question isn't it? Find the longest subarray that contains at least two distinct elements. This is what he is saying, I have a bag, a bag, all this is useless talk. The question is telling you this. So when we understand the question in Hindi, it is and returns the maximum number of fruits you can pick means maximum."
+    },
+    {
+      "start_time": 2592.0,
+      "end_time": 2625.03,
+      "text": "जो एरे है मतलब कितना एक एक बार में कितना ले सकते हो? एक बार में कितना ले सकते हो एक लाइन में। ऐसा नहीं करना है कि ज़ीरो ले लिए और टू ले लिए और टू ले लिए। नहीं अगर इसको लेना है तो ऐसे लेंगे। ये तो गलत हो गया। इसमें तीन है। तो ये आंसर है इसका। आंसर है। आइए। अब इसमें तो सेम क्वेश्चन हो गया पिछले वाला। पिछले वाला सेम क्वेश्चन हो गया ना? एक ट्विस्ट है। एक ट्विस्ट है। अब इसमें हम स्टेप टैप नहीं बताएंगे। सेम स्टेप है। स्लाइडिंग विंडो पहचानिए वेरिएबल है। विंडो वेरिएबल है कि फिक्स्ड है? वेरिएबल है क्योंकि कोई ऐसा लेंथ नहीं दिया हुआ है विंडो का। बोला गया है जितना उठाना है उठाओ। उसमें डिस्टिंक्ट",
+      "source": "caption",
+      "english_text": "Which is array means how much can you take at one time? How much can you take in one line at a time? Do not do this by taking zeros and taking twos and taking twos. No, if you want to take it, you will take it like this. This has gone wrong. There are three in it. So this is the answer. The answer is. Come. Now this has the same question as the previous one. Same question as the previous one, right? There is a twist. There is a twist. Now we will not tell about step tap in this. Same step. Identify the sliding window variable. Is the window variable that fixed? It is variable because no length is given for the window. It has been said that you can lift as much as you want. distinct in that"
+    },
+    {
+      "start_time": 2625.04,
+      "end_time": 2656.47,
+      "text": "एट एट मोस्ट टू होना चाहिए। तो एक एक डिफरेंस है यहां पे एटमोस्ट टू लिखा हुआ है। पिछले वाले में क्या था? एग्जैक्टली अह K जो यहां पे K था ना वो K यहां का टू है। यही तो है। अब तो कुछ नहीं बदला है। एग्जैक्टली K के जगह एटमोस्ट लिखा हुआ है। ठीक? सेम पिछला वाला कोड याद कर लीजिए। सेम पिछला वाला कोड याद कर लीजिए। सब कुछ सेम चलेगा। सब कुछ सेम चलेगा। जब आप लो को घटा के यहां पे आए थे। यहां पे लो को घटाए थे।",
+      "source": "caption",
+      "english_text": "At should be at most two. So there is a difference, 'atmost two' is written here. What was in the last one? Exactly, the K which was K here, is the K here. This is it. Now nothing has changed. Atmost is written exactly in place of K. Correct? Remember the same previous code. Remember the same previous code. Everything will remain the same. Everything will remain the same. When you came here after losing your life. Here the pay was reduced."
+    },
+    {
+      "start_time": 2656.48,
+      "end_time": 2688.79,
+      "text": "कब घटाए थे? f डॉट साइज &gt; k यही तो किए थे क्योंकि आपको क्या करना है एटमोस्ट k तक जाना है तो मतलब आपका इनफेशन सही कब होगा या तो वो k से कम हो या तो k से इक्वल हो अगर k से बड़ा है तो हाई को बढ़ाने का मतलब आपको लो को घटाना है तो आप लोगों को घटा दिए अब हम लोग क्या बोले थे पिछले बार यहीं पे तो पिछले बार का ट्विस्ट था कि यहां पे जब आप आए हैं यहां पे जब आप आए हैं तो आपका जो f का साइज है या तो वो इक्वल टू k है और आपका जो जो f का साइज है",
+      "source": "caption",
+      "english_text": "When were they reduced? f dot size > k This is what we did because what you have to do is to go up to atmost k, so when will your inference be correct, either it is less than k or equal to k, if it is greater than k, then increasing the high means you have to decrease the low, so you have to reduce it. Now what we had said last time here, the twist of the last time was that when you have come here, when you have come here, the size of your f is either equal to k. is and the size of your f is"
+    },
+    {
+      "start_time": 2688.8,
+      "end_time": 2722.95,
+      "text": "वो लेस दैन k है। दो ही केस हो सकता है क्योंकि ज्यादा वाले को तो हम लोग लो को घटा के हैंडल कर लिए। अब पिछले बार कौन सा इनफार्मेशन सही था? पिछले बार ये वाला इनफार्मेशन सही था। इसीलिए हम लोग इफ लगा के ये वाला कैलकुलेट किए थे। इस बार दोनों इनफेशन सही है। इस बार ये तो और सिंपल क्वेश्चन है। ये क्वेश्चन पहले कराना चाहिए था। वो क्वेश्चन बाद में कराना चाहिए था। ये दोनों है। ये भी तो सही है। एटमोस्ट के का मतलब क्या होता है? k से कम या k से इक्वल। ज्यादा नहीं। तो यह वाला भी तो सही है। यह वाला भी तो सही है। यह वाला भी तो सही है। तो इसमें कोई इफ का",
+      "source": "caption",
+      "english_text": "That's less than k. There can be only two cases because we handled the higher one by reducing the lower one. Now which information was correct last time? Last time this information was correct. That's why we calculated this one by assuming if. This time both the inferences are correct. This time it is a simpler question. This question should have been asked earlier. That question should have been asked later. It is both. This is also correct. What does Atmost K mean? Less than k or equal to k. Not much. So this one is also correct. This one is also correct. This one is also correct. So there is no if in this"
+    },
+    {
+      "start_time": 2722.96,
+      "end_time": 2756.87,
+      "text": "जरूरत नहीं है। सिंपल कर लीजिए। सिंपल कर लीजिए। सिंपल कर लीजिए। i - लो + 1 कर लीजिए। रेस इक्वल टू मैक्स रेस लेन कर लीजिए। फॉर लूप बंद कर दीजिए। रिटर्न रेस कर दीजिए। खत्म हो गया प्रोग्राम। सेम प्रोग्राम सेम वो जो फ्रीक्वेंसी आप बनाएंगे ना हैश मैप जो बनाएंगे उसको पिछले बार हम लोग कैरेक्टर का फ्रीक्वेंसी लिख रहे थे इस बार इंटीजर नंबर है कैरेक्टर नहीं है तो इंटीजर का इंटीजर लिखेंगे बाकी सब कुछ सेम चलेगा लाइन बाय लाइन सेम चलेगा",
+      "source": "caption",
+      "english_text": "No need. Keep it simple. Keep it simple. Keep it simple. i - take it + 1. Make race equal to max race lane. Close the for loop. Do a return race. The program is over. Same program, same frequency, you will make it, no hash map, you will make it, last time we were writing the frequency of character, this time it is integer number, there is no character, then we will write integer of integer, everything else will work same, line by line same will work."
+    },
+    {
+      "start_time": 2756.88,
+      "end_time": 2782.71,
+      "text": "यहां पे स्ट्रिंग के जगह एरे दिया हुआ है और कैरेक्टर की जगह नंबर दिया हुआ है और एग्जैक्टली के जगह एटमोस्ट के दिया हुआ है तो और अच्छा ही है हम लोगों का कोड छोटा हो गया वो इफ लगाने का जरूरत नहीं पड़ा बाकी पूरा कोड सेम है पूरा कोड सेम है आप ट्राई करके के देख लीजिए। दोनों कोड एक बार लिख लीजिए साइड बाय साइड या तो मेरा समिशन देख लीजिएगा। दोनों कोड एग्जैक्टली एग्जैक्टली सिमिलर कोड है। सही बात है? ठीक?",
+      "source": "caption",
+      "english_text": "Here, instead of string, array is given, instead of character, number is given, and instead of exactly, 'atmost' is given, so it is better that our code became smaller, there was no need to put if, rest of the whole code is the same, you try it and see. Write both the codes once, side by side or see my submission. Both codes are exactly similar codes. That's correct? Correct?"
+    },
+    {
+      "start_time": 2782.72,
+      "end_time": 2810.309,
+      "text": "इसका भी सब कुछ सेम टाइम कॉम्प्लेक्सिटी एंड स्पेस कॉम्प्लेक्सिटी वन। ये हो गया टाइम। ये हो गया स्पेस। देखिए कितना आसानी से बन गया ये क्वेश्चन। इसमें कितना टाइम लगा होगा। 5 10 मिनट लगा होगा। वो भी हम इतना भाषण दिए तब लगा है। तो ऐसा क्वेश्चन है। मतलब तुरंत बनने वाला क्वेश्चन है। ठीक है? अब आते हैं तीसरे क्वेश्चन पे। अब आते हैं तीसरे क्वेश्चन पे। तीसरा क्वेश्चन भी 70% सेम ही समझिए।",
+      "source": "caption",
+      "english_text": "Its all same time complexity and space complexity one. It's time. This is space. See how easily this question became. How much time would it have taken? It might have taken 5-10 minutes. That too after we gave so much speech. So such is the question. Meaning, it is an immediate question. Ok? Now coming to the third question. Now coming to the third question. Consider the third question also as 70% same."
+    },
+    {
+      "start_time": 2810.319,
+      "end_time": 2844.63,
+      "text": "तीसरा क्वेश्चन क्या है? लॉन्गेस्ट सबस्ट्रिंग विदाउट डुप्लीकेट कररेक्टर्स। ये क्वेश्चन में बोला हुआ है। विदाउट। देखिए हम कितना आसान बना देंगे ना। यह भी आप लोग कर लीजिएगा। यह है आपका क्वेश्चन नंबर थ्री। ठीक। क्या है? क्वेश्चन को पढ़ते हैं। स्ट्रिंग दिया हुआ है। अच्छा स्ट्रिंग में आपको लॉन्गेस्ट सबस्ट्रिंग फाइंड करना है। अच्छा लॉन्गेस्ट सबस्ट्रिंग फाइंड करना है। वेरी गुड।",
+      "source": "caption",
+      "english_text": "What is the third question? Longest substring without duplicate characters. This is said in the question. Without. See how easy we will make it. You guys can do this also. This is your question number three. Correct. What is? Let's read the question. String is given. Well, you have to find the longest substring in the string. Well, we have to find the longest substring. very good."
+    },
+    {
+      "start_time": 2844.64,
+      "end_time": 2878.39,
+      "text": "कंडीशन क्या है? पिछले दो बार का कंडीशन कुछ K से रिलेटेड था। एग्जैक्टली K डिस्टिंक्ट या तो एग्जैक्टली एटमोस्ट K डिस्टिंक्ट। यही था। इसका कंडीशन में K नहीं है। इसमें क्या लिखा हुआ है? विदाउट डुप्लीकेट कररेक्टर्स। मतलब कि जो भी आप सबस्टिंग लेंगे ना जो भी आप सबस्टिंग लेंगे उसमें सारा कैरेक्टर यूनिक होना चाहिए। ये सारा कैरेक्टर यूनिक होना चाहिए। ये इसका कंडीशन है। तो ये तो फंस गया। हम बार-बार बोल रहे हैं कि ये क्वेश्चन सेम क्वेश्चन में है। सेम फॉर्मेट में है लेकिन इसमें तो के नहीं है। तो के नहीं है तो पूरा",
+      "source": "caption",
+      "english_text": "What is the condition? Last two times the condition was related to some K. Exactly K distinct or Exactly K distinct. This was it. There is no K in its condition. What is written in it? Without duplicate characters. Meaning that whatever substring you take, all the characters in it should be unique. This entire character should be unique. This is its condition. So he got stuck. We are saying again and again that this question is in the same question. It is in the same format but there is no K in it. So if it is not then it is complete"
+    },
+    {
+      "start_time": 2878.4,
+      "end_time": 2903.51,
+      "text": "लॉजिक गड़बड़ आ जाएगा। k से हम लोग चलते हुए आ रहे हैं पिछले बार। अच्छा। अब थोड़ा सोच के देखिए। थोड़ा इसमें दिमाग खोलिए। आइए। आइए दिमाग खोलें। देखते हैं कुछ ना कुछ तो मिलेगा ही। थोड़ा सोचने पर तो बहुत कुछ हो जाता है। आइए ए बी सी ए बी मान लीजिए आपका वो है। अच्छा इस विंडो में मान लीजिए एक विंडो बनाइए।",
+      "source": "caption",
+      "english_text": "The logic will get messed up. From k we are coming walking for the last time. Good. Now think a little and see. Open your mind a little about this. Come. Let's open our minds. Let's see, we will definitely get something. A lot can happen with a little thinking. Let's say A B C A B is yours. Well, let's say create a window in this window."
+    },
+    {
+      "start_time": 2903.52,
+      "end_time": 2929.829,
+      "text": "इस विंडो में कितना डिस्टिंक्टिंग कररेक्टर्स है? इस वाले विंडो में तीन। 1 2 3 तीन है। अच्छा। इस वाले विंडो में कितना डिस्टिंक्ट कररेक्टर्स हैं? 1 2 3 अच्छा एक और बना लेते हैं। ये बना लीजिए। इस वाले विंडो में कितना डिस्टिंक्ट कररेक्टर है? इसमें दो ही है। देख रहे हैं? A और B है। A नहीं है। लेकिन ये पता कैसे चल रहा है? पता कैसे चलेगा?",
+      "source": "caption",
+      "english_text": "How many distinguishing characters are there in this window? Three in this window. 1 2 3 is three. Good. How many distinct characters are there in this window? 1 2 3 Okay, let's make another one. Make this. How many distinct characters are there in this window? There are only two in it. are looking? There is A and B. A is not there. But how is this happening? How will you know?"
+    },
+    {
+      "start_time": 2929.839,
+      "end_time": 2964.069,
+      "text": "ये तो देख के हम लोग को मालूम चल रहा है ना कि चलिए ये तो हम लोग को देख के मालूम चल गया कि चलिए इसमें दो ही है। तीन नहीं है। अच्छा कैसे पता चल रहा है कि इसमें डिस्टिंक्ट करैक्टर है। सारा डिस्टिंक्ट है कि कुछ डुप्लीकेट भी है? आइए। मान लीजिए आपको एक सब एरे दिया हुआ है। मान लीजिए क्वेश्चन बस यही है आपका। आपका क्वेश्चन एक बहुत सिंपल क्वेश्चन है। ये आपका एक एरे है। इसमें आपको बोला है a ए आपको बोला है कि इसमें बताओ कि सारा यूनिक है कि नहीं? सारा",
+      "source": "caption",
+      "english_text": "Seeing this, we know that there are only two of them. There is no three. Well, how do you know that it has a distinct character? Is everything distinct or is there some duplicate? Come. Suppose you are given a sub array. Suppose this is your only question. Your question is a very simple question. This is your array. In this you have been asked to tell me whether the whole is unique or not? Sara"
+    },
+    {
+      "start_time": 2964.079,
+      "end_time": 2998.95,
+      "text": "यूनिक है कि नहीं? है कि नहीं? सारा यूनिक है कि नहीं? अच्छा कैसे बताएंगे? एक तो हो सकता है इसको तुरंत बताना। एक तो हो सकता है कि आप शुरू से अंत तक जाइए और#श मैप बनाते रहिए।#श मैप बनाते रहिए। मतलब A का टू कर दीजिए। B का वन कर दीजिए। C का वन कर दीजिए। फिर आप देख लीजिए कि किसी का फ्रीक्वेंसी अगर एक से ज्यादा है तो वो डुप्लीकेट नहीं है तो आप फॉल्स रिटर्न कर देंगे। अच्छा। क्या कोई और तरीका है? देखिए मान लीजिए आपके पास हैश मैप है। ऐसा आपके पास हैश मैप है इस एरे",
+      "source": "caption",
+      "english_text": "Is it unique or not? Is it or not? Is everything unique or not? Well, how will you tell? One possibility is to tell it immediately. One could be that you go from beginning to end and keep making #sh maps.#sh keep making maps. Meaning turn A into two. Make B one. Make C one. Then you check that if any frequency is more than one, then it is not a duplicate, then you will return false. Good. Is there any other way? See, suppose you have a hash map. So you have a hash map of this array"
+    },
+    {
+      "start_time": 2998.96,
+      "end_time": 3032.309,
+      "text": "का। पूरे#श मैप को ट्रेवर्स करने का मेरा मन नहीं है। तो क्या कोई और तरीका है बताने का? हां, है देखिए। एरे का साइज कितना है? बहुत ध्यान से सुनिए। एरे का साइज फोर है। ए ए बी सी फोर है। मैप का साइज कितना है? मैप का साइज तो तीन है। अच्छा। हैश मैप का साइज तीन क्यों है? मैप का साइज चार क्यों नहीं है? क्योंकि एलिमेंट रिपीट हो गया है। हैश मैप के इस तरफ हम लोग का साइज जब निकालते हैं तो वहां पे होता है नंबर ऑफ यूनिक कैरेक्टर्स। इसी का तब से हम लोग",
+      "source": "caption",
+      "english_text": "Of. I don't feel like traversing the entire #sh map. So is there any other way to tell? Yes, see. What is the size of the array? Listen very carefully. The size of the array is four. A A B C is four. What is the size of the map? The size of the map is three. Good. Why is the size of hash map three? Why is the map size not four? Because the element is repeated. When we calculate the size of the logs on this side of the hash map, there is the number of unique characters. Since then we are"
+    },
+    {
+      "start_time": 3032.319,
+      "end_time": 3067.03,
+      "text": "यही तो करते आ रहे हैं। हैशमैप का साइज़ हमेशा हम लोग को नंबर ऑफ़ यूनिक कैरेक्टर देता है। तो आपको कोई पूछ रहा है कि पूरे एरे में हर करैक्टर यूनिक है कि नहीं? तो इसका तो एक ही टेस्ट है ना कि नंबर ऑफ़ यूनिक कैरेक्टर्स मतलब कि हैश मैप का साइज़ इक्वल टू एरे ऑफ़ साइज़ है अगर तो मेरा यूनिक है। अगर ये लेस है तो यूनिक नहीं है। समझ में आया कि नहीं आया? आ गया होगा। हैशमैप का साइज़ एरे का साइज़ के इक्वल है तो यूनिक है। मतलब हर आदमी का फ्रीक्वेंसी वन है। अगर कोई आदमी रिपीट हुआ है तो नेचुरल सी बात है कि हैशमैप का साइज कम होगा एरे के साइज़ से तो यूनिक नहीं है। तो लीजिए पता चल गया। पता चल गया ना? के का",
+      "source": "caption",
+      "english_text": "This is what we have been doing. The size of a hashmap always gives us the number of unique characters. So someone is asking you whether every character in the entire array is unique or not? So it has only one test, not the number of unique characters, meaning the size of the hash map is equal to the size of the array, if mine is unique. If it is lace then it is not unique. Did you understand or not? Must have arrived. Hashmap is unique if its size is equal to the size of the array. Meaning every person has one frequency. If any element is repeated then it is natural that the size of the hashmap will be less than the size of the array as it is not unique. So here we come to know. Did you find out? of's"
+    },
+    {
+      "start_time": 3067.04,
+      "end_time": 3099.43,
+      "text": "जरुरत नहीं ना पड़ा। अब देखिए हम बताते हैं के का जरूरत कहां कैसे नहीं पड़ेगा। अच्छा। सेम टेंप्लेट पे आ जाइए। सेम टेंप्लेट पे आ जाइए। अब ये आपको समझ में आया? सेम आ जाइए। लो = 0 लिख लीजिए। I = 0 लिख लीजिए। रेस्ट इक्व लॉन्गेस्ट फाइंड करना है। आई एनt मीन लिख लीजिए। आइए आइए चलाएं। i = 0 हाई आइए इसको चला के देखें। i अ क्या है? लेस &lt; ni",
+      "source": "caption",
+      "english_text": "There was no need. Now see, we will tell you where and how it will not be needed. Good. Come to the same template. Come to the same template. Now do you understand this? Sam, come here. Write Lo = 0. Write I = 0. Rest is to find longest. Write down i n t mean. Let's let's run. i = 0 high Let's try this. What is i a? les < ni"
+    },
+    {
+      "start_time": 3099.44,
+      "end_time": 3133.99,
+      "text": "+ आइए। सबसे पहला काम क्या था? सबसे पहले ये आपका हैशमैप। सबसे पहला काम क्या था? इंफॉर्मेशन जोड़ो। तो हाई का इनेशन जोड़ो जोड़िए f si प्लस प्लस जुड़ गया खत्म हो गई बात अच्छा अब अब अगला स्टेप क्या था यहां पे तो जुड़ गया मान लीजिए a = 1 जुड़ गया अगला स्टेप इंफॉर्मेशन सही है या गलत है इंफॉर्मेशन सही है या गलत है अगर गलत है तो लो को श्रिंक करो लेकिन अब देखिए कैसे पता चलेगा कि सही है या गलत है के तो",
+      "source": "caption",
+      "english_text": "+ Come. What was the first task? First of all, this is your hashmap. What was the first task? Add information. So add ination of high, add f si plus plus is added, the matter is over, now what was the next step, here it is added, suppose a = 1, the next step is added, is the information true or false, if the information is true or false, then shrink the low, but now let's see how to know whether it is true or false."
+    },
+    {
+      "start_time": 3134.0,
+      "end_time": 3161.829,
+      "text": "नहीं है के तो नहीं है लेकिन हम लोग अभी क्या देख के आए हैं कि अगर हैशप का साइज उस विंडो का साइज या उस एरे के साइज जहां तक ये हैशमैप है उससे अगर कम है तो उसमें यूनिक नहीं है तो वो गलत है। गलत ही हुआ ना? ठीक है। गलत हुआ। ठीक है। किस विंडो का साइज हैशमैप में है? मतलब हैशमैप में अभी जो चीज है a = 1 या कुछ भी होगा तो वो कहां से कहां तक है? हाई से लो से हाई तक है। यही तो कर रहे हैं ना। लो एक जगह था।",
+      "source": "caption",
+      "english_text": "No, it is not, but what we have seen so far is that if the size of the hashmap is less than the size of that window or the size of the array in which this hashmap is, then if it is not unique then it is wrong. What was wrong, right? Ok. gone wrong. Ok. What window size is in the hashmap? Meaning, if the thing that is currently in the hashmap is a = 1 or whatever, then where is it from where to where? From high to low to high. This is what we are doing, isn't it? There was a place."
+    },
+    {
+      "start_time": 3161.839,
+      "end_time": 3195.67,
+      "text": "हम लोग हाई को चला रहे हैं ज़ीरो से n। हाई का इनफार्मेशन जोड़ रहे हैं। तो हैशमैप अभी जो हैशमैप में डेटा है वो लो से हाई तक का डेटा है। यही तो इनफार्मेशन है। यही तो होता है कि विंडो का इनफार्मेशन हैशमैप में है। तो विंडो का विंडो का कहां से कहां तक है? लो से हाई तक है। तो क्या साइज है उस विंडो का जिसका इनफार्मेशन हैशमैप में है। उसका साइज तुम लोग को निकालना आता है ना? जी इसको चलिए। इसको k कर लीजिए। आइए। इंट के हाई माइनस लो + 1 यही साइज है ना देखिए",
+      "source": "caption",
+      "english_text": "We're going from high to zero. Adding high information. So the hashmap currently contains data from low to high. This is information. What happens is that the window information is in a hashmap. So where is the window from where to where? Ranging from low to high. So what is the size of the window whose information is in the hashmap? Do you know how to calculate its size? Yes, let's do this. K it. Come. Int's high minus low + 1 is the size, see?"
+    },
+    {
+      "start_time": 3195.68,
+      "end_time": 3229.27,
+      "text": "मान लीजिए आपका ऐसा एरे है क्या एरे है a एरो 1 2 आपका लो यहां है आपका हाई यहां है आपके हैश मैप में कुछ है तो इसका साइज है ना इसका साइज है तो यहीं से तो पता चलेगा कि इस विंडो में सब डुप्लीकेट है कि नहीं इसका साइज क्या होता है हाई माइनस लो + 1 यही होता है ठीक है के पता चल गया ठीक है। अब अब देखिए इनेशन गलत हो सकता है, सही भी हो सकता है। केस लिख लीजिए कैसे गलत? सही कैसे हो सकता है? सही तो हो सकता है कि f डॉट साइज इक्वल इक्वल टू k हो जाए। तो ये सही है।",
+      "source": "caption",
+      "english_text": "Suppose you have such an array, what is the array a Arrow 1 2 Your low is here Your high is here If there is something in your hash map then its size is its size So from here we will know whether everything in this window is duplicate or not What is its size High minus low + 1 This is what happens, okay, it is found out, okay. Now see, the ination may be wrong, it may also be right. Write the case, how is it wrong? How can that be right? True, it is possible that f dot size becomes equal to k. So this is correct."
+    },
+    {
+      "start_time": 3229.28,
+      "end_time": 3260.549,
+      "text": "ये गुड इनेशन है। यही तो कर रहे थे कि k के इक्वल है। एरे का साइज के इक्वल है तो सही है। अच्छा f डॉट साइज लेस &lt; kk f डॉट साइज लेस &lt; k है। ये गलत है। ठीक है? क्या कभी ऐसा हो सकता है कि f डॉट साइज ग्रेटर देन k हो जाए? सोच के देखिए। k क्या है? k इस विंडो का साइज है। आप बोल रहे हैं क्या ये कभी पॉसिबल है? ये कभी पॉसिबल नहीं है। क्यों?",
+      "source": "caption",
+      "english_text": "This is good news. That's what they were saying is equal to k. If the size of the array is equal to k then it is correct. Well f dot size less < kk f dot size less < k. This is wrong. Ok? Can it ever happen that the f dot size becomes greater than k? Think about it. What is k? k is the size of this window. You are saying is this ever possible? This is never possible. Why?"
+    },
+    {
+      "start_time": 3260.559,
+      "end_time": 3295.51,
+      "text": "हैश मैप में क्या है? उस विंडो में जितना भी कैरेक्टर है उसका फ्रीक्वेंसी है। तो अगर मान लीजिए विंडो में कैरेक्टर ही अ पांच है। मान लीजिए ऐसा है ए बी सी ए बी। ये आपका विंडो है। तो आप बोल रहे हैं कि क्या हैश मैप का साइज इससे भी ज्यादा हो सकता है। छह कररेक्टर हो सकता है। कभी नहीं हो सकता है। क्यों? यहां पे तो ऑलरेडी कम है। ये तो ऑलरेडी डुप्लीकेट वाला है। तो यहां पे तो हैशमैप का साइज हो जाएगा तीन। अगर सब कुछ यूनिक भी होता, ऐसा भी होता, ऐसा भी होता। इस केस में भी हैश मैप का साइज होता है सिक्स और विंडो का साइज भी है सिक्स। तो ऐसा तो कभी नहीं होगा कि हैश मैप का साइज सात हो जाएगा और",
+      "source": "caption",
+      "english_text": "What is in hash map? The number of characters in that window is its frequency. So if let's say the only character in the window is a five. Suppose it is A B C A B. This is your window. So you are saying whether the size of the hash map can be more than this. Can be six characters. Can never happen. Why? There is already less here. This is already a duplicate. So here the size of the hashmap will be three. Even if everything was unique, it would be like this, it would be like this too. In this case also the size of the hash map is six and the size of the window is also six. So it will never happen that the size of the hash map will become seven and"
+    },
+    {
+      "start_time": 3295.52,
+      "end_time": 3327.03,
+      "text": "आपके लेंथी अरे जब कैरेक्टर पांच हैशमैप में छह कहां से वो छठा आएगा कहां से? तो ये तो फालतू चीज है। ये तो सोचना ही नहीं है तो वेरी गुड इजी हो गया क्वेश्चन। ठीक है। अब ये सही है। ये गलत है। अब हम लोग देखे थे कि गलत वाले में लोग को श्रिंक करते हैं। अच्छा। अब इसको पिछले वाले क्वेश्चन में क्या कर रहे थे कि ग्रेटर वाले जो ग्रेटर का केस था उसमें लो को श्रिंक कर रहे थे कि हम लोग बोलते थे कि जब लो आएगा ना लो मतलब",
+      "source": "caption",
+      "english_text": "When there are six characters in your hashmap, where does the sixth one come from? So this is useless thing. If you don't have to think about this then the question has become very good and easy. Ok. Now this is correct. This is wrong. Now we had seen that people shrink in the wrong one. Good. Now what were they doing in the previous question that in the case of grater, they were shrinking the lo, that we used to say that when the lo comes, it means lo."
+    },
+    {
+      "start_time": 3327.04,
+      "end_time": 3360.069,
+      "text": "जाएगा तो लो जब बढ़ेगा तो हैशमप का साइज कम होता है तो यहां तो ऑलरेडी कम है यहां तो ऑलरेडी कम है तो क्या लो को श्रिंक करना चाहिए क्योंकि और कम हो जाएगा हां श्रिंक करना चाहिए और यही क्वेश्चन में थोड़ा सा ट्विस्ट है यही आपको सोचना पड़ेगा कि करना चाहिए कि नहीं याद मत कीजिए कि ज्यादा में करते हैं कम में नहीं हर में हो सकता है लेकिन देखिए K क्या है? पिछले वाले क्वेश्चन में K हुआ था। K फिक्स वैल्यू था। मतलब K यहां पे तीन था। तो आपका जब वन होता था ना साइज़ हैश मैप का तो इसको हम लोग लो को नहीं",
+      "source": "caption",
+      "english_text": "If Lo increases, then the size of the hashmap decreases, so here it is already less. So, should Lo shrink because it will become less? Yes, it should shrink and this is a little twist in the question. You will have to think whether it should be done or not. Don't remember that we do it in more, not in less, it can happen in denominator, but see what is K? In the previous question there was K. K was fixed value. Meaning K was three here. So when your forest was the size of a hash map, then we would not take it as"
+    },
+    {
+      "start_time": 3360.079,
+      "end_time": 3393.349,
+      "text": "बढ़ाते थे क्योंकि वन तो और घट के ज़ीरो हो जाएगा। हमको वन से थ्री जाना है तो वन तो और ज़ीरो हो जाएगा। तो नहीं करते थे। लेकिन यहां पे K गिवेन नहीं है। K क्या है? आपके विंडो का साइज़। आपके विंडो का साइज़ कैसे निकल रहा है? हाई माइनस लो + 1 यही k है ना तो तो कहने का क्या मतलब है आपका f का साइज अभी कम है मान लीजिए ये टू है और आपका हाई माइनस लो + 1 ये थ्री है। ये आपका विंडो",
+      "source": "caption",
+      "english_text": "Used to increase because the forest will further decrease to zero. If we have to go from one to three then one will become more zero. So didn't do it. But here K is not given. What is K? The size of your window. How is your window size coming out? High minus low + 1 is k, so what does it mean to say that the size of your f is still less, suppose it is two and your high minus low + 1 is three. This is your window"
+    },
+    {
+      "start_time": 3393.359,
+      "end_time": 3427.75,
+      "text": "साइज है। यही तो k है। यही k है। तो जब हम लोग लो को बढ़ाएंगे, जब हम लोग को बढ़ाएंगे, जब हम लोग लो को बढ़ाएंगे तो आपका एफ का साइज़ या तो सेम रहेगा या तो कम हो जाएगा। यही देख रहे थे। लेकिन लेकिन लेकिन जब आप लो को बढ़ाएंगे ना तो K का साइज भी कम हो जाएगा। क्यों? हाई माइनस लो + 1 K का साइज है। आपका मान लो जब टू था तो K का साइज कुछ बढ़ाया था। जब आप लो का साइज बढ़ा रहे हैं मतलब आप लो का साइज बढ़ा रहे हैं जब आप लो का साइज बढ़ा रहे हैं तो विंडो का",
+      "source": "caption",
+      "english_text": "The size is. This is k. This is k. So when we increase Lo, when we increase Lo, when we increase Lo, the size of your F will either remain the same or will decrease. This is what we were seeing. But but but when you increase Lo, the size of K will also reduce. Why? High minus low + 1 is the size of K. Suppose you increased the size of K a bit when I was two. When you are increasing the size of the window, it means that you are increasing the size of the window. When you are increasing the size of the window, then the size of the window is increasing."
+    },
+    {
+      "start_time": 3427.76,
+      "end_time": 3455.67,
+      "text": "साइज भी तो कम हो रहा है देखिए ना विंडो का साइज अब इतना रह गया और लो को बढ़ाएंगे तो इतना ही रह जाएगा और लो को बढ़ाएंगे तो इतना रह जाएगा तो जब आप लो को बढ़ा रहे हैं ना लो को बढ़ा रहे हैं ना तो k पक्का पक्का कम हो रहा है सेम नहीं रहेगा कभी कम ही होता जाएगा कम ही होता जाएगा इसीलिए हो सकता है कि मान लीजिए अभी एफ का साइज है थ्री और विंडो का साइज है फोर अब एक कम किए, तो मान लीजिए f का साइज़ हो गया टू।",
+      "source": "caption",
+      "english_text": "See, the size of the window is now reduced to this and if you increase Lo, it will remain the same and if you increase Lo, this much will remain, so when you are increasing Lo or increasing Lo, neither k is definitely decreasing, it will not remain the same, it will reduce, it will keep decreasing, that is why it is possible that suppose the size of f is three and the size of the window is four, now if you reduce one, then suppose the size of f becomes two."
+    },
+    {
+      "start_time": 3455.68,
+      "end_time": 3482.23,
+      "text": "और इसका साइज़ होगा थ्री। एक और कम किए, तो हो सकता है कि यह सेम रहे। एफ का साइज़ सेम भी रह सकता है क्योंकि नहीं हो रहा है। इसका हो गया टू। यह तो लेकिन पक्का कम होगा। यह तो पक्का कम होगा। अब देखिए ये दोनों मिल गया। यही तो आपका सही वाला वो है। इसीलिए यहां पे जब f का साइज एफ का साइज के से ज्यादा तो हो ही नहीं सकता है। ये तो हम लोग प्रूव कर दिए हैं। एफ का साइज जब के से कम है तो लो को श्रिंक करना चाहिए। क्योंकि हो सकता है कि कभी ना कभी दोनों मिल जाए।",
+      "source": "caption",
+      "english_text": "And its size will be three. If you do one more less, it may remain the same. The size of F may also remain the same because it is not happening. Its done two. But this will definitely be less. This will definitely be less. Now look, both of them have been found. This is your right one. That is why here when the size of f cannot be more than the size of k. We have proved this. When the size of F is less than K then LO should be shrunk. Because it is possible that someday both will meet."
+    },
+    {
+      "start_time": 3482.24,
+      "end_time": 3508.23,
+      "text": "अब ये कैसे समझ में आएगा? सोचने से हर केस में सोचा कीजिए कि लो को बढ़ाने से कुछ फायदा हो सकता है कि नहीं हो सकता है। हो सकता है तो बढ़ाइए। अगर लग रहा है कि कभी फायदा नहीं हो सकता है। अगर के फिक्स है तब तो कभी फायदा नहीं है तब तो एफ का साइज और कम होता जाएगा और के वहीं रहेगा। यहां पे चेंज क्या हो रहा है कि f का साइज या तो सेम रह रहा है या तो घट रहा है। के का साइज लगातार बढ़ेगा। लगातार घटेगा जब लो को ले आएंगे। तो हो सकता है कि कभी ना कभी दोनों मिल जाए और वही हम लोग को चाहिए।",
+      "source": "caption",
+      "english_text": "Now how will this be understood? In every case, think carefully whether there may be some benefit from increasing the LO or not. If possible, increase it. If you feel that there may never be any benefit. If K is fixed then there is no benefit, then the size of F will keep decreasing and K will remain the same. What is changing here is that the size of f is either remaining the same or decreasing. The size of K will continuously increase. Will decrease continuously when low will be brought. So it is possible that someday both will be found and that is what we need."
+    },
+    {
+      "start_time": 3508.24,
+      "end_time": 3538.95,
+      "text": "ठीक है? वही हम लोग को चाहिए। तो आ जाइए। यहां कहां तक लिखे थे? K कैलकुलेट किए थे। ठीक है? आगे का कोड लिखिए। तो वाइल वाइल f डॉट साइज लेस दैन k जब तक ये कम है तब तक करो। तब तक करो। ज्यादा तो हो ही नहीं सकता है। इक्वल पे लाना है। ठीक है? सबसे पहले क्या कीजिए? सबसे पहले क्या कीजिए? f s लो माइनस माइनस कर दीजिए। और इफ इफ इफ इफ एफ",
+      "source": "caption",
+      "english_text": "ok? That's what we need. So come. How far were you written here? K was calculated. Ok? Write the following code. So while f dot size is less than k do it as long as it is less. do until. It can't be more. Have to bring on equal pay. Ok? What to do first? What to do first? Make f s low minus minus. and if if if if f"
+    },
+    {
+      "start_time": 3538.96,
+      "end_time": 3572.789,
+      "text": "एस और इसका क्या है? लो ये अगर ज़ीरो हो गया इसको इरेज़ कर दो भाई। हटा दो। साइज़ कम कर दो। साइज़ कम कर दो। ठीक है? और लो प्लस प्लस कर दो। इतना तो पिछले बार भी कर रहे हैं। लेकिन अब यहां पे देखिए। पिछले क्वेश्चन में ये K क्या था? फिक्स था। यहां पे K क्या है? हाई माइनस लो +1। तो जब आप यहां पे लो को बढ़ा रहे हैं, जब आप यहां लो को बढ़ा रहे हैं तो आपको ये K फिर से कैलकुलेट करना पड़ेगा। k आप पिछला वाला",
+      "source": "caption",
+      "english_text": "S and what is it? Take this, if it becomes zero then erase it brother. Remove it. Reduce the size. Reduce the size. Ok? And take plus plus. They are doing this last time also. But now look here. What was this K in the previous question? Was fixed. What is K here? High minus low +1. So when you are increasing the Pe Lo here, when you are increasing the Lo here, you will have to calculate this K again. k you previous one"
+    },
+    {
+      "start_time": 3572.799,
+      "end_time": 3607.589,
+      "text": "नहीं कर सकते हैं। इसीलिए तो K बार-बार कम हो रहा है। जब लो बढ़ रहा है तो K क्यों कम हो रहा है? क्योंकि k लो पे डिपेंडेंट है। इसीलिए आपको यहां पे फिर से हाई माइनस लो + 1 कैलकुलेट करना पड़ेगा। और ये वाइल लूप बंद हो गया यहां पे। देख लीजिए। तो एक लाइन का चेंज ऐड हुआ। क्या ऐड हुआ? K का वैल्यू हम लोग कैलकुलेट कर रहे हैं। पिछले बार K हुआ था। इस बार K नहीं दिया हुआ है तो कर रहे हैं। ठीक है? आ जाइए। अब ये वाइल कब टूटेगा? ये वाइल कब टूटेगा? कब टूटेगा? दो ही केस पॉसिबल था। या तो कम था या तो इक्वल था। कम वाला को हम लोग वाइल पे जब तक कम है इस वाइल का मतलब ही होता",
+      "source": "caption",
+      "english_text": "Can't. That is why K is decreasing again and again. Why is K decreasing when Lo is increasing? Because k is dependent on lo. That's why you have to calculate High Minus Low + 1 here again. And this vicious loop stops here. Take a look. So a change of one line was added. What was added? We are calculating the value of K. Last time it was K. This time K is not given so we are doing it. Ok? Come over. Now when will this vile break? When will this vile break? When will it break? Only two cases were possible. Either it was less or it was equal. We are dependent on the lesser one, as long as there is less, there is only meaning in the vice."
+    },
+    {
+      "start_time": 3607.599,
+      "end_time": 3640.95,
+      "text": "है जब तक। जब तक है जान तो जब तक इसमें बदमाशी बचा हुआ है तब तक कम करो। जब तक है इसमें बदमाशी तब तक कम करो। यहां पे आया है मतलब। यहां पे आया मतलब क्या हुआ है? है इक्वल है। इक्वल है। तभी आए हैं। नहीं तो नहीं आते। बस अब आप जो करते हैं यहां पर आपका इन सही है तो करिए हाई माइनस लो + 1 और रेस इक्वल टू मैक्स ऑफ़ रेस लेंथ बस रिटर्न रेस कर दीजिए खत्म हो गया खेल खत्म हो गया",
+      "source": "caption",
+      "english_text": "Unless. As long as you have life, do it as long as there is mischief left in it. As long as there is bullying in it, reduce it. Here comes the meaning. What does it mean to come here? is equal. Is equal. That's why we have come. Otherwise he would not have come. Now what you do is here if your in is correct then do high minus low + 1 and race equal to max of race length just return race is over game is over"
+    },
+    {
+      "start_time": 3640.96,
+      "end_time": 3674.309,
+      "text": "खेल खत्म हो गया खेल देख लीजिए क्या इसमें चेंज हुआ क्या इसमें चेंज हुआ ऑलमोस्ट कुछ नहीं चेंज हुआ ये के चेंज हो गया हम लोग कैसे कैसे जान रहे थे कि हमारा इनफार्मेशन सही है या गलत है वो चेंज हो गया। K पहले दिया रहता था। अभी K नहीं दिया है। K कैलकुलेट कर ली। उसी हिसाब से थोड़ा श्रिंकिंग में डिसीजन चेंज हो गया कि पहले ज्यादा था तो श्रिंक कर रहे थे। अब कम है तो श्रिंक कर रहे हैं। कभी भी याद मत कीजिए कि ज्यादा में श्रिंक होता है, कम में नहीं होता है। नहीं नहीं सबमें हो सकता है। हम दिखा दिए ना सब में हो सकता है। सोचिए। लॉजिक से सोचिए कि हो सकता है कि नहीं हो सकता है। अगर कोई फायदा है तो श्रिंक करिए। फायदा नहीं हो सकता है कभी",
+      "source": "caption",
+      "english_text": "The game is over. Look at the game. Has it changed? Has it changed? Almost nothing has changed. It has changed. How did we know whether our information is right or wrong? It has changed. K was given earlier. K has not been given yet. Calculated K. Accordingly, the decision was changed regarding shrinking a little that earlier it was more so they were shrinking. Now if it is less then they are shrinking. Never remember that more shrinks, less does not. No no, it can happen in everyone. We have shown that everything is possible. Think about it. Think logically that it may or may not happen. If there is any benefit then shrink. may never be beneficial"
+    },
+    {
+      "start_time": 3674.319,
+      "end_time": 3706.23,
+      "text": "तो मत करिए। तो ये हो गया। सेम आर्डर ऑफ़ n टाइम हो गया। ऑर्डर ऑफ वन स्पेस। ऑर्डर ऑफ वन स्पेस नहीं हुआ। बेसिकली चलिए ऑर्डर ऑफ वन स्पेस ही है। क्यों ऑर्डर ऑफ वन स्पेस है? क्योंकि हैश मैप तो यूज़ कर रहे हैं ना। आपको लगता होगा ऑर्डर ऑफ़ वन क्यों? लेकिन हैशप का मैक्सिमम साइज़ क्या हो सकता है? 26 क्योंकि दिया हुआ है कि लोअर केस है। लोअर केस कररेक्टर्स ही है ना। तो कभी भी आप लिखेंगे तो मैक्सिमम आपका हैशप ऐसा दिखने लगेगा। ये Z तक दिखने लगेगा और इसका मैक्सिमम साइज़ 26 होगा। इसको कांस्टेंट ही समझते हैं। इसीलिए ऑर्डर ऑफ़ वन होता है।",
+      "source": "caption",
+      "english_text": "So don't do it. So this is done. Same order done n times. Order of One Space. Order of one space did not happen. Basically let's have order of one space only. Why is there an order of one space? Because you are using hash map. You might be wondering why Order of One? But what can be the maximum size of a hashmap? 26 because it is given that it is lower case. It's lower case characters only, right? So whenever you write, maximum your hashmap will look like this. It will appear till Z and its maximum size will be 26. This is considered a constant only. That's why there is order of one."
+    },
+    {
+      "start_time": 3706.24,
+      "end_time": 3722.359,
+      "text": "तो ये हो गया आज का तीसरा क्वेश्चन। कोड लिंक आपको मिल जाएगा डिस्क्रिप्शन में। जाइए सबमिट कीजिए तीनों क्वेश्चन और अब से थोड़ा हम लोग स्पीड पकड़ने का कोशिश कर रहे हैं। तो आप लोग भी अब थोड़ा बढ़ाइए अपनी गति को। है ना? कल मिलते हैं और कंसिस्टेंट रहिए।",
+      "source": "caption",
+      "english_text": "So this is today's third question. You will find the code link in the description. Go submit all three questions and from now on we are trying to pick up the speed. So now you guys also increase your speed a little. Isn't it? See you tomorrow and stay consistent."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

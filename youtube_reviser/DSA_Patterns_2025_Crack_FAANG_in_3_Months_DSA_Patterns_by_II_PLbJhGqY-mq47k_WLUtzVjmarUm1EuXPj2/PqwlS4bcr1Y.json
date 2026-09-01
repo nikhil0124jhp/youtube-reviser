@@ -1,0 +1,443 @@
+{
+  "video_id": "PqwlS4bcr1Y",
+  "video_title": "Start Learning Recursion Backtracking With This Question | Best Recursion Explanation",
+  "video_number": 75,
+  "chunks": [
+    {
+      "start_time": 2.23,
+      "end_time": 36.069,
+      "text": "तो बेटा अभी तक तो हम लोग ईजी-इजी रिकशन कर रहे थे। मतलब ईजी का मतलब कि पहला वाला कर रहे थे कि सब प्रॉब्लम को सॉल्व करके आंसर मिला के आंसर दे दिया जाए। उसमें ज्यादा हार्ड क्वेश्चन नहीं बनता है। अनलेस कि उसमें डीपी आ जाए। आज जो क्वेश्चन है ना आज हम लोग बैक ट्रैकिंग का क्वेश्चन बनाना शुरू करने वाले हैं। शीट में सारा अपडेट हो चुका है। शीट में लिंक देख लीजिएगा। क्वेश्चन देख लीजिएगा रिकर्शन बैक ट्रैकिंग पैटर्न में। इस क्वेश्चन में आपको हम एक एग्जांपल दे के समझाएंगे। यूजी डिग्री और पीजी डिग्री का और आपके पापा का जोकि एग्जांपल बिल्कुल सही से समझ में आ जाएगा। कोड लिखते समय मेरे से गलती हो गया कि पहले हम कोड लिख दिए उसके बाद उसका ड्राई रन किए तो इंपेशेंट मत होइएगा कि कोड लिखते समय हमको नहीं समझ में आ रहा है। ड्राई रन देखिएगा",
+      "source": "caption",
+      "english_text": "So son, till now we were doing easy-easy resection. Easy means that the first thing we were doing was to solve all the problems, find the answer and then give the answer. There is not much hard question in it. Unless it comes with DP. Today's question is, today we are going to start making the question of back tracking. Everything has been updated in the sheet. Please see the link in the sheet. See the question in recursion back tracking pattern. In this question we will explain it to you by giving an example. The example of UG degree and PG degree and your father's will be understood clearly. While writing the code, I made a mistake that first we write the code and then dry run it, so do not be impatient that we are not understanding while writing the code. will see dry run"
+    },
+    {
+      "start_time": 36.079,
+      "end_time": 70.55,
+      "text": "ड्राई रन कोड के बाद है। वो ड्राई रन जो हम बताते हैं ना वो समझ में आ जाएगा और उसको अपनी कॉपी में जरूर कीजिएगा। जब तक आप ड्राई रन अपनी कॉपी में नहीं करेंगे ना तब तक आपको उतने ही अच्छे से समझ में नहीं आएगा। दुनिया का कोई भी टीचर आपको रिकर्शन पढ़ाएगा। तो उतना समझ में नहीं आएगा जितना आपको खुद से कॉपी में घिस घिस के समझ में आएगा। ये हमको बोलना नहीं चाहिए क्योंकि मेरा चैनल है। हमको बोलना चाहिए कि मेरा वीडियो देख लो। तुम एकदम मास्टर हो जाओगे सब चीज़ के। नहीं, ऐसा नहीं होता है, जो रियलिटी है वही बोलते हैं हम। तो किसी भी वीडियो से आपको उतना समझ में नहीं आएगा जितना आपको खुद करके समझ में आएगा। हमको जितना भी रिकर्ज़न आता है ना, वो इसलिए आता है क्योंकि हम कॉपी में रिकर्ज़न लिखते हैं और ड्राई रन करते हैं। हार्ड नहीं है टीडीएस है। टीडीएस इसीलिए लोग करते नहीं",
+      "source": "caption",
+      "english_text": "Dry run is after code. You will understand the dry run that we tell you and will definitely do it in your copy. Unless you do a dry run in your copy, you will not understand it that well. Any teacher in the world will teach you recursion. So you will not be able to understand as much as you would by scribbling in the copy yourself. We should not say this because it is my channel. We should say watch my video. You will become a master of everything. No, it does not happen, we speak only what is reality. So you will not understand as much from any video as you will by doing it yourself. Whatever recursion we know, it comes because we write recursion in the copy and do dry run. It is not hard, it is TDS. This is why people don't pay TDS"
+    },
+    {
+      "start_time": 70.56,
+      "end_time": 99.99,
+      "text": "है। लोगों को लगता है कि हां ठीक है, कोड तो छोटा ही है, पढ़ लेंगे, याद कर लेंगे, नहीं वैसा मत किया करिए। तो, अंत तक देखिएगा, पेशेंट होकर देखिएगा। अंत तक सब कुछ समझ में आ जाएगा और अपनी कॉपी में करेंगे तो आपको 110% समझ में आएगा। ठीक है? तो जल्दी शुरू करते हैं। चलिए। तो ये जो सवाल है ना सबसे पहले हम आपको सवाल समझाते हैं कि आपको लीड को 22 सवाल का नाम है। आपको n पेयर्स ऑफ पैरथेसिस दिए हुए हैं। n पेयर्स पेयर्स का क्या मतलब होता है? जोड़ा। ठीक है? जोड़ा। एक नहीं n पेयर्स। ठीक है? पैरथेसिस का क्या मतलब होता है आपको? ऐसा और ऐसा। एक होता है ये।",
+      "source": "caption",
+      "english_text": "Is. People think that yes, the code is small, we will read it and remember it, no, don't do that. So, watch till the end, watch with patience. By the end you will understand everything and if you do it in your notebook, you will understand it 110%. Ok? So let's start quickly. Let go. So this is the question, first of all let us explain to you the question that you have to lead, it is named 22 questions. You have been given n pairs of paratheses. n Pairs What does Pairs mean? couple. Ok? couple. Not one n pairs. Ok? What does parthesis mean to you? Such and such. This is one."
+    },
+    {
+      "start_time": 100.0,
+      "end_time": 134.15,
+      "text": "इसको हम लोग बोलते हैं ओपन। और एक होता है ये आदमी जिसको हम लोग बोलते हैं क्लो। एक ही तरीके का है। नॉर्मल तरीके का कोई कर्ली कोई स्क्वायर नहीं है तो बहुत इजी है। आपको क्या करना है? आपको n पेयर्स हैं। ठीक है? मान लो कि आपको अगर दो पेअर बोला हुआ है ना? तो मतलब कि आपको दो ओपन ब्रैकेट मिले हुए हैं यूज करने के लिए और दो क्लोज ब्रैकेट भी मिले हुए हैं यूज करने के लिए। सही बात है? चार टोटल मिले हुए हैं। आपको चारों को यूज़ करना है। चारों को यूज़ करके मतलब दो ओपन और दो क्लोज़ करते हुए आपको जनरेट ऑल कॉम्बिनेशंस, जनरेट ऑल कॉम्बिनेशंस इसका क्या मतलब होता है? पहली बात तो ये आपका साइन है कि यहां पे आपको बैक ट्रैकिंग यूज़",
+      "source": "caption",
+      "english_text": "We call this open. And there is this man whom we call Chloe. It is of the same type. If the normal type is neither curly nor square, it is very easy. What do you have to do? You have n pairs. Ok? Suppose you have been told two pairs, right? So that means you have got two open brackets to use and two closed brackets to use. That's correct? Four totals have been found. You have to use all four. Using all four, meaning two open and two closed, you generate all combinations, generate all combinations. What does this mean? First of all, this is your sign that here you have to use back tracking."
+    },
+    {
+      "start_time": 134.16,
+      "end_time": 160.79,
+      "text": "करना है। कभी भी किसी क्वेश्चन में ऐसा हो ना कि आपको कुछ चीजें दी हुई हैं। कुछ आइटम्स दिए हुए हैं और आपको उनको कंबाइन करके ऑल कॉम्बिनेशंस, ऑल सबसेट्स ऑल पॉसिबल कुछ भी जनरेट करना हो ना तो हमेशा आपको बैक ट्रैकिंग की तरफ जाना चाहिए। आगे चलके ये डीपी बन जाता है। वो अलग बात है। तो जनरेट ऑल कॉम्बिनेशन। सो सबसे पहले आपको दिमाग में आना चाहिए कि ये बैक ट्रैकिंग का क्वेश्चन है। अच्छा। लेकिन इसमें एक और ट्विस्ट है कि ये जो आप जो भी जनरेट करेंगे ना वो वेल फॉर्म्ड होना चाहिए।",
+      "source": "caption",
+      "english_text": "Have to do. Should it ever happen in a question that you are given some things. Some items are given and you want to generate all combinations, all subsets, all possible anything by combining them, otherwise you should always go towards back tracking. Later on he becomes DP. That's a different thing. So generate all combinations. So first of all it should come to your mind that this is a question of back tracking. Good. But there is another twist in this that whatever you generate should be well formed."
+    },
+    {
+      "start_time": 160.8,
+      "end_time": 194.63,
+      "text": "क्या वेल फॉर्म्ड? अब इस वेल फॉर्म्ड का क्या मतलब है? आइए हम ऐसे ही आपको जनरेट करके दिखाते हैं। तो आपके पास क्या है? आपके पास चार टोटल ब्रैकेट्स हैं यूज़ करने के लिए। आपको इनको अरेंज करना है परम्यूटेशन कॉम्बिनेशन कहीं किसी को भी कहीं भी रख दीजिए। तो आपके पास क्या है? दो ओपन है और दो क्लोज है। तो हम इसको कहीं भी रख देते हैं। हम क्या करते हैं यहां पे क्लोज को रख देते हैं। यहां पे ओपन को रख देते हैं। यहां पे क्लोज को रख देते हैं और यहां पे वापिस ओपन को रख देते हैं। तो ये एक कॉम्बिनेशन है। ये क्यों कॉम्बिनेशन है? क्योंकि आप अगर गौर से देखिएगा तो इसमें कितना क्लोज है। एक क्लोज यहां दिख रहा होगा और एक क्लोज यहां दिख रहा होगा। कितना ओपन है? एक ओपन यहां दिख रहा होगा और एक ओपन यहां दिख रहा",
+      "source": "caption",
+      "english_text": "What well formed? Now what does this well formed mean? Let us generate it and show it to you. So what do you have? You have four total brackets to use. You have to arrange them, permutation combinations, put them anywhere. So what do you have? Two are open and two are closed. So we keep it anywhere. What we do is put the close here. Let's keep the open here. Here we put the close and here again we put the open. So it's a combination. Why is this combination? Because if you look carefully, it is so close. One close will be visible here and one close will be visible here. How open is it? One open will be visible here and one open will be visible here"
+    },
+    {
+      "start_time": 194.64,
+      "end_time": 228.149,
+      "text": "होगा। तो दो ओपन यूज़ कर लिए। दो क्लोज यूज़ कर लिए। चार लेंथ का स्ट्रिंग बना लिए। अच्छा तो ये कॉम्बिनेशन है। लेकिन क्या ये एक वेल फॉर्म पैरेंथेसिस है? मतलब क्या ये एक वैलिड पैरेंथेसिस है? नहीं, ये वैलिड पैरथेसिस नहीं है क्योंकि आप इसको गौर से देखिए। क्या आपको ये वैलिड लग रहा है? आप एक क्लोज खोलते हैं। फिर आप एक ओपन फिर एक क्लोज और फिर एक ओपन। तो क्या ये वैलिड पैरेंथेसिस है? देखने में लग रहा है वैलिड? नहीं लग रहा है। वैलिड पैरेंथेसिस किसको बोलते? अगर हम ऐसा कॉम्बिनेशन जनरेट करते हैं ना मान लीजिए कि हम ऐसा ओपन किए क्लोज किए। ओपन किए क्लोज किए। ये एक वैलिड कॉम्बिनेशन है। ये एक वैलिड",
+      "source": "caption",
+      "english_text": "Will happen. So used two open ones. Used two closes. Make a string of four lengths. Well, this is a combination. But is this a well-formed parenthesis? Meaning, is this a valid parenthesis? No, this is not a valid parathesis because you look at it carefully. Do you find this valid? You open a close. Then you do an open, then a close, and then an open. So is this a valid parenthesis? Looks valid? Unable to do. What is valid parenthesis? If we generate such a combination, don't assume that we opened and closed it like this. Opened and closed. This is a valid combination. This is a valid"
+    },
+    {
+      "start_time": 228.159,
+      "end_time": 260.629,
+      "text": "कॉम्बिनेशन है या फिर हम ये भी कर सकते थे। ऐसे किए, दो ओपन कर दिए। लगातार दो ओपन कर दिए और दो क्लोज़ कर दिए। ये भी एक वैलिड पैरेंथेसिस है। लेकिन अगर आप ऐसा करते हैं कि दो क्लोज़ कर दिए और दो ओपन कर दिए। ये एक नॉट वैलिड है। तो आपको वो कॉम्बिनेशनंस जनरेट करते हैं जो कि वैलिड हों। नॉन वैलिड वाले जनरेट नहीं करने हैं। ठीक है? तो ये इस क्वेश्चन को हार्ड बनाता है। अगर इसमें वेल फॉर्म्ड का नहीं होता ना ऑप्शन तो हम आपको दिखाएंगे कि कितना ईजी हो जाता। आप कुछ भी कर सकते थे। बहुत छोटा सा कोड कुछ भी कर सकते थे। लेकिन क्योंकि आपको बोला हुआ है कि जनरेट ऑल कॉम्बिनेशन करो भैया। मतलब टोटल मिला के",
+      "source": "caption",
+      "english_text": "Is there a combination or we could have done this also. Did it like this, opened two. Opened two consecutively and closed two. This is also a valid parenthesis. But if you do this, you close two and open two. This one is not valid. So you generate combinations that are valid. Non valid ones are not to be generated. Ok? So this makes this question hard. If there was no well formed option in this, then we will show you how easy it would have been. You could do anything. Very little code could do anything. But because you have been told to generate all the combinations. means after getting the total"
+    },
+    {
+      "start_time": 260.639,
+      "end_time": 295.35,
+      "text": "दो ओपन और दो क्लोज यूज़ कर लो क्योंकि n2 है यूज़ कर सकते हो कॉम्बिनेशन बनाना है तुमको लेकिन वो जो तुम बनाओगे ना वो वैलिड होना चाहिए वो इनवैलिड नहीं होना चाहिए अच्छा इसको समझने के लिए आइए एक आपको हम एग्जांपल के थ्रू समझाएंगे अब देखिए लॉजिक के हिसाब से क्या होता है कि ओपन ब्रैकेट पहले आता है क्लोज ब्रैकेट बाद में आता है यही रहता है ना ऐसा ही होता है ना वैलिड इसी को हम लोग समझते हैं कि ओपन पहले आता है क्लोज बाद में आता है अच्छा इसको हम डिग्री के एक एग्जांपल से आपको समझाते हैं। मान लीजिए आपके पापा आपको बोले ना कि हम तुमको डिग्री करने का पैसा देंगे। 12 आप कर चुके हैं। अब आपको एक तरीके की डिग्री होती है अंडर ग्रेजुएट। जो भी",
+      "source": "caption",
+      "english_text": "Use two open and two close because n is 2, you can use it, you have to make a combination, but the one you make should be valid, it should not be invalid. Well, to understand this, let us explain it to you through an example. Now see what happens according to the logic, the open bracket comes first, the closed bracket comes later, it remains the same, neither is it like this nor is it valid, this is what we understand as open. Close comes first and close comes later. Well, let us explain this to you with an example from degree. Suppose your father tells you that we will give you money to do your degree. 12 You are done. Now you have one type of degree, Under Graduate. whatever"
+    },
+    {
+      "start_time": 295.36,
+      "end_time": 329.83,
+      "text": "डिग्री बी से स्टार्ट होता है ना बैचलर ऑफ़ बी टेक आता है उसमें बीसीए आता है। बीए आता है सब ये सब होता है यूजी डिग्री जो आप 12 के बाद कर सकते हैं। यूजी के बाद आप पीजी कर सकते हैं। पोस्ट ग्रेजुएशन इसका मतलब जो भी डिग्री एम से स्टार्ट होता है जैसे एमटेक हो गया, एमसीए हो गया, एमए हो गया। इसको हम पोस्ट ग्रेजुएशन डिग्री बोलते हैं। अच्छा। तो जो भी बैचलर ऑफ समथिंग होता है ना उसको अंडर ग्रेजुएट बोलते हैं। वो आप 12 के बाद कर सकते हैं। मान के चलिए कि आप पोस्ट ग्रेजुएशन अंडर ग्रेजुएट के बाद ही कर सकते हैं। आप ऐसे 12 के बाद डायरेक्ट नहीं कर सकते हैं। ठीक है? तो मान के हम लोग ऐसा चलेंगे। तो मान लीजिए कि ओपन ब्रैकेट को ना हम लोग बोलेंगे कि ये यूजी डिग्री के तरह है।",
+      "source": "caption",
+      "english_text": "Degree starts from B, Bachelor of B Tech and then BCA. BA comes and all these are UG degrees which you can do after 12th. After UG you can do PG. Post graduation means whatever degree starts with M like MTech, MCA, MA. We call this post graduation degree. Good. So whoever is a bachelor of something is called an undergraduate. You can do that after 12. Let us assume that you can do post graduation only after undergraduate. You cannot direct after 12 like this. Ok? So, we will behave like this. So suppose we will not call open bracket as it is like UG degree."
+    },
+    {
+      "start_time": 329.84,
+      "end_time": 363.189,
+      "text": "मतलब पहले यूजी होता है फिर पीजी होता है तो ओपन हो गया। क्लोज किसकी तरह होगा? पीजी की तरह होगा। अच्छा। अब इस क्वेश्चन के लिए आपके पापा आपको बोले ना कि हम जी तुमको चलो n पेयर्स मतलब n पेयर्स का मतलब कि मान लीजिए कि दो पेयर हम तुमको दो पेयर ऑफ डिग्री करने का पैसा देंगे। मतलब कि हम तुमको दो यूजी का पैसा दे सकते हैं और दो पीजी का पैसा दे सकते हैं। इससे ज्यादा पैसा मेरे पास नहीं है। जब तुम हमसे पैसा मांगोगे तो हम तुमको उस डिग्री का पैसा दे देंगे। लेकिन लेकिन आप देखिए कि क्या होगा? आपके पापा अब इसमें वैलिड और इनवैलिड कैसे पकड़ेंगे? कहे कि आप हो सकता है कि चाउमीन खाने के लिए पैसा मांग रहे हो। फीस के लिए पैसा नहीं मांग रहे हो। तो",
+      "source": "caption",
+      "english_text": "Meaning first there is UG then there is PG then it is opened. What will the close be like? Will be like PG. Good. Now for this question, your father told you that we will let you do n pairs, n pairs means let's say two pairs, we will give you money to do two pairs of degrees. Meaning that we can give you money for two UG and two PG. I don't have more money than this. When you ask us for money, we will give you the money for that degree. But but you see what will happen? Now how will your father distinguish between valid and invalid? Say that you may be asking for money to eat chow mein. You are not asking for money for fees. so"
+    },
+    {
+      "start_time": 363.199,
+      "end_time": 392.87,
+      "text": "आपके पापा इसको पकड़ेंगे कैसे? देखिए शुरुआत में शुरुआत में देखिए शुरुआत में आपके पापा कितना पैसा वादा किए हैं? 2 यूजी का, दो पीजी का। ठीक है? इसको आपके पापा आपको याद रखे हुए हैं कि दो यूजी का देना है, दो पीजी का देना है। बस चार डिग्री टोटल में हमको करवाना है लड़के को। शुरू में आप कितना यूजी किए होंगे। शुरू में आप यूजी = 0 किए होंगे और पीजी = 0। जब आप 12 से निकले होंगे तब आप यही किए होंगे। अच्छा। आइए देखते हैं कि अब आपके पास आपको लग रहा होगा कि मेरे पास तो दो चॉइस है। हम यूजी का भी पैसा मांग सकते हैं और पीजी का भी पैसा मांग सकते हैं।",
+      "source": "caption",
+      "english_text": "How will your father catch this? Look at the beginning. Look at the beginning. How much money has your father promised? 2 of UG, two of PG. Ok? Your father is reminding you that you have to pay two UG and two PG. We just have to get the boy done in four degrees total. How much UG must you have done initially? Initially you would have made UG = 0 and PG = 0. This is what you would have done when you were 12. Good. Let us see, now you must be feeling that I have two choices. We can ask for money for UG and also for PG."
+    },
+    {
+      "start_time": 392.88,
+      "end_time": 427.35,
+      "text": "लेकिन आपके पापा आपसे ज्यादा चालाक है। देखिए क्या होगा। मान लीजिए कि आप शुरू में आप यूजी का पैसा मांगते हैं कि पापा हमको ना एक यूजी डिग्री मान लीजिए बीटेक करने का डिग्री चाहिए। बीटेक करने का पैसा चाहिए। तो देखिए आपके पापा इसमें ज्यादा कुछ चेक नहीं करेंगे क्योंकि आपके पापा आपको वादा किए थे कि हम तुमको दो यूजी कराएंगे। तो आपके पापा बस इतना देखेंगे ना कि अभी जितना आप यूजी किए हुए हैं। अभी आप जीरो यूजी किए हुए हैं। तो जीरो अगर दो से कम है तो आपके पापा पैसा दे देंगे कि चलो कर दे तो ठीक है। इसमें कोई ज्यादा चेक नहीं होगा। नेचुरल बात है 12 के बाद 12 के बाद अगर आपके पापा बोल रहे हैं कि हम तुमको 2 यूजी का पैसा देंगे। तो 2 यूजी का पैसा देंगे जब तक आप दो ना कर लें तब तक",
+      "source": "caption",
+      "english_text": "But your father is smarter than you. See what will happen. Suppose initially you ask for money for UG, saying, Papa, we do not want a UG degree but let's say we want a B.Tech degree. Need money to do B.Tech. So see, your father will not check much in this because your father had promised you that we will get you two UG. So your father will only see as much as you have done in UG. Right now you have zero UG. So if zero is less than two then your father will give the money or if he does then it is okay. There won't be much checking in this. It is a natural thing that after 12th, if your father is saying that we will give you money for 2 UG. So you will pay for 2 UG until you do two."
+    },
+    {
+      "start_time": 427.36,
+      "end_time": 457.67,
+      "text": "आपको पैसा मिलता रहेगा। तो अगर ज़ीरो लेस &lt; 2 तो आपके पापा आपको दे देंगे। आपके पापा आपको पैसा दे देंगे। और जब आप उसमें आगे जाएंगे तो आपके पास UG = 1 हो जाएगा। मतलब आप एक कर लिए हैं। PG ज़ीरो ही रहेगा। पीजी नहीं किए हैं तो ठीक है। इसमें दे देंगे पैसा। वेरी गुड है। तो यूजी का पैसा देने के लिए क्या चेक करना है कि बस नंबर ऑफ़ यूजी लेस दैन टू होना चाहिए। तो आपके पापा आपको पैसा दे देंगे। ज्यादा नहीं डांटेंगे। अच्छा। लेकिन मान लीजिए इसी समय जब आप जब आप शुरू में थे ना ज़ीरो ज़ीरो था दोनों में। आप बोलते हैं कि पापा हमको पीजी का पैसा दे दीजिए। हमको एक पीजी पोस्ट ग्रेजुएट डिग्री का पैसा दे दीजिए।",
+      "source": "caption",
+      "english_text": "You will keep getting money. So if zero less < 2 then your father will give it to you. Your father will give you money. And when you go further into it you will have UG = 1. Meaning you have done one. PG will remain zero. If you have not done PG then it is okay. Will give money for this. Very good. So what to check to pay UG money is that the number of UG should be less than two. Then your father will give you money. Will not scold much. Good. But suppose at this very moment, when you were in the beginning, there was zero zero in both. You say, Papa, give us the money for PG. Give us the money for a PG post graduate degree."
+    },
+    {
+      "start_time": 457.68,
+      "end_time": 491.27,
+      "text": "यहां पे आपके पापा आपको पकड़ लेंगे। काहे पकड़ लेंगे? आपके पापा बोलेंगे कि अच्छा पीजी का पैसा मांग रहे हो? अभी तक कितना यूजी हुआ है? अभी तक तुम्हारा कितना यूजी तो आप बोलेंगे की अभी तक मेरा यूजी तो ज़ीरो है। 0° है। अभी तुम्हारे पास कोई यूजी का डिग्री नहीं है। तो जब भी तुम पीजी का पैसा मांग रहा है, तो पीजी किस यूजी के लिए मांग रहा है? अभी तक यूजी नहीं ना किए हो तुम? बोला हम तो नहीं किए हुए हैं। तो अभी तक जब यूजी नहीं किए हुए हो तो पीजी का पैसा काहे मांग रहा है? कहां करेगा? मतलब आप ऐसा समझिए कि आप 12 के बाद अभी तक कुछ नहीं किए। आप अपने पापा से डायरेक्टली पैसा मांग रहे हैं एमटेक करने के लिए। आपके पापा बोलेंगे बीटेक कब किया है? बीटेक तो नहीं तो मैथ नहीं हो",
+      "source": "caption",
+      "english_text": "Your father will catch you here. Why will you catch it? Your father will say, are you asking for PG money? How much UG has happened so far? How much UG is yours till now? You will say that till now my UG is zero. is 0°. Right now you don't have any UG degree. So whenever you are asking for PG money, for which UG is the PG asking? You haven't done UG yet? He said, we have not done it. So when you have not done UG yet then why are you asking for PG money? Where will he do it? Meaning, you should consider that you have not done anything till now after 12th. You are asking money directly from your father to do MTech. Your father will say when did you do B.Tech? If you don't have B.Tech then you don't have Maths."
+    },
+    {
+      "start_time": 491.28,
+      "end_time": 524.149,
+      "text": "रहा है। हर पीजी के लिए एक यूजी का डिग्री चाहिए। तुम्हारे पास यूजी का डिग्री है ज़ीरो। तो तुम मांग रहे हो पीजी का पैसा तो ये हम नहीं दे पाएंगे तो तुम लड़ाई करता है तो आपके पापा यहां पे आपको रोक देंगे। यहां पे आपको रोक देंगे। क्यों रोक देंगे? क्योंकि आपके पास अभी तक कितना डिग्री है? यूजी का 0° है। ठीक है? आप मांग रहे हैं पीजी का। तो जब आप ऐसा मांगेंगे तो ऐसा हो जाएगा। आप यूजी = 0 और pg = 1 ये कोई राइट स्टेट नहीं है। ये इनवैलिड स्टेट है। ये जस्ट वैसा है कि आप एक क्लोजिंग ब्रैकेट लगा दिए। ये जो आप पीजी कर लिए एक ठो ये किसके लिए पीजी है? इसके पहले यूजी कब हुआ था तुम्हारा? कहां एडमिशन वाला पूछेगा ना",
+      "source": "caption",
+      "english_text": "Has been. For every PG, a UG degree is required. You have zero UG degree. So you are asking for PG money, we will not be able to give it, if you fight then your father will stop you here. Will stop you here. Why would you stop? Because how much degree do you have so far? UG is 0°. Ok? You are asking for PG. So when you ask for it, it will happen. You ug = 0 and pg = 1 this is not a right state. This is an invalid state. It's just like you put a closing bracket. This PG you have done is a PG, for whom is this PG? Before this, when did you have UG? Where will the admission person ask?"
+    },
+    {
+      "start_time": 524.159,
+      "end_time": 557.43,
+      "text": "कि डिग्री लाओ यूजी का। यूजी का तो डिग्री है नहीं तुम्हारे पास। तो ये इनवैलिड है तो ये आप नहीं कर सकते हैं। ये आप नहीं कर सकते। पापा आपको रोक देंगे। ये चॉइस आप नहीं ले सकते हैं इस समय। आइए आगे चलते हैं। आगे आपको क्लियर हो जाएगा कि कैसे हम बोल रहे हैं कि नहीं ले सकते हैं। मान लीजिए आप यहां पे आ गए। एक यूजी कर लिए, एक पीजी कर लिया। पीजी अभी तक ज़ीरो है। यहां पे अगर आप पीजी का पैसा मांगेंगे। यहां पे अगर आप पीजी का पैसा मांगेंगे कि पापा जी हमको पीजी का पैसा दे दीजिए। तो आपके पापा बोलेंगे कि अभी तक तुम कितना यूजी किए हो? आप बोलेंगे कि हम एक ठो यूजी किए हैं। ठीक है? कोई भी बीटेक, बीसीए जो भी बैचलर किए हुए हैं। अच्छा पीजी कितना",
+      "source": "caption",
+      "english_text": "Bring that degree of UG. You don't have a UG degree. So if it is invalid then you cannot do it. You can't do this. Papa will stop you. You cannot take this choice at this time. Let's move ahead. Further it will become clear to you that how we are saying that it cannot be taken. Suppose you have come here. One did UG, one did PG. PG is still zero. If you ask for PG money here. Here, if you ask for PG money, Papa ji, please give us the PG money. So your father will ask how much UG have you done till now? You will say that we have done one thing. Ok? Any B.Tech, BCA or any bachelor. ok how much is PG"
+    },
+    {
+      "start_time": 557.44,
+      "end_time": 589.43,
+      "text": "किए हुए हो? पीजी अभी तक ज़ीरो किए हुए हैं। पीजी अभी तक ज़ीरो किए हुए हैं। तो अगर आपके पापा आपको पैसा दे देते हैं इसमें तो आप क्या हो जाएगा? यूजी वन रह जाएगा और पीजी वन हो जाएगा। तो क्या ये वैलिड है? हां, ये बिल्कुल वैलिड है। ये बिल्कुल वैलिड है। आपके पापा इसमें पैसा दे देंगे। तो आप पीजी कर सकते हैं। जब आपके पापा आपको पैसा दे देंगे तो आप UG = 1 और PG = 1 पे आ गए। अब इमेजिन करके देखिए यहां पे फिर आप बोलते हैं कि हमको एक और पेजी का पैसा दे दीजिए ना। फिर आपके पापा आपको पकड़ लेंगे। क्यों? क्यों पकड़ लेंगे? क्योंकि यूजी कितना किए हुए हो?",
+      "source": "caption",
+      "english_text": "Are you done? PG is still zero. PG is still zero. So if your father gives you money, what will you do with it? UG will remain one and PG will become one. So is this valid? Yes, this is absolutely valid. This is absolutely valid. Your father will give money for this. So you can do PG. When your father gives you money, you come to UG = 1 and PG = 1. Now imagine, here again you say give us money for one more page. Then your father will catch you. Why? Why would you catch it? Because how much UG have you done?"
+    },
+    {
+      "start_time": 589.44,
+      "end_time": 623.509,
+      "text": "एक। एक यूजी हो गया। पीजी कितना किए हुए हो? एक ऑलरेडी किए हुए हो। मतलब एक पीजी भी हो गया। तो ये दोनों मिलके खत्म हो गया ना। एक यूजी के लिए एक पीजी आप किए। अब आप बोल रहे हैं एक और बार हमको पीजी करवा दीजिए। मतलब एक और पीजी यहां करोगे। इस पीजी का यूजी कहां है भाई? इस पीजी का तो यहां मिल गया था। ठीक है? उसमें तो मिल गया था। इस पीजी का यूजी कहां है? है ये जो पीजी का पैसा मांग रहे हो आप बोल रहे हैं कि हमको एमबीए करवा दीजिए ना एमबीए का बीबीए कब हुआ था हां तुम्हारे पास तो एक ही डिग्री है तुम्हारे पास दो यूजी होना चाहिए था कम से कम मतलब तुम्हारे पास कहीं पे बीटेक होना चाहिए था कहीं पे बीबीए होना चाहिए था उसके बाद तुम एमटेक कर सकते",
+      "source": "caption",
+      "english_text": "One. One UG is done. How much PG have you done? One is already done. Meaning it became a PG also. So together these two ended, right? You did a PG for a UG. Now you are saying, get us done PG one more time. Meaning you will do another PG here. Brother, where is the UG of this PG? This PG was available here. Ok? It was found in it. Where is the UG of this PG? You are asking for money for PG, you are saying that you should get us done MBA, when did MBA become BBA? Yes, you have only one degree, you should have two UG, at least that means you should have B.Tech somewhere, BBA should be done somewhere, after that you can do M.Tech."
+    },
+    {
+      "start_time": 623.519,
+      "end_time": 650.069,
+      "text": "हो और एमबीए कर सकते हो तो यहां पे आपके पापा आपको फिर पकड़ लेंगे क्यों पकड़ लेंगे क्योंकि एक यूजी है एक पीजी है ठीक अभी है। आप बोल रहे हैं एक और पीजी हमको करवा दीजिए। तो ऐसा करने पे तो यूजी एक हो जाएगा। पीजी दो हो जाएगा। फिर पकड़ लेंगे कि पीजी जो नया वाला करने जा रहे हो जिसके लिए फी मांग रहे हो इसका यूजी कब हुआ था? बोलेंगे इसका यूजी तो नहीं हुआ था कभी फिर आपके पापा को पकड़ लेंगे। इस समय अगर आप यूजी का पैसा मांगेंगे यूजी का पैसा मिल सकता है। यूजी का पैसा तुरंत मिल सकता है।",
+      "source": "caption",
+      "english_text": "And if you can do MBA then here your father will catch you again, why will he catch you because there is a UG and a PG, right now. You are saying get us another PG. So by doing this UG will become one. PG will be two. Then we will find out that when was the UG for the new PG you are going to do for which you are asking fees? They will say that he did not pass UG, they will catch your father some other time. At this time, if you ask for UG money, you can get UG money. UG money can be received immediately."
+    },
+    {
+      "start_time": 650.079,
+      "end_time": 677.59,
+      "text": "उसमें हम बोले हैं एक ही चेक है। एक ही चेक क्या है? कि ठीक है। हम दो कराने का वादा किए थे। अभी तक एक हुआ है। 1 लेस दैन टू है। दे सकते हैं। तो जब आप ये करेंगे तो आप यूजी आपके पास 2 डिग्री हो जाएगी। पीजी की 1 डिग्री हो जाएगी। अब अगर आप यहां पे यूजी का पैसा मांगेंगे क्या आपको यूजी का पैसा मिलेगा? नहीं। नहीं नहीं। क्योंकि पापा क्या बोले थे? दो यूजी कराएंगे। दो कर चुके हो। टू नॉट लेस दैन टू नहीं मिलेगा पैसा। ना नहीं मिलेगा। पीजी का पैसा मिलेगा? हां, मिल जाएगा।",
+      "source": "caption",
+      "english_text": "In that we have said that there is only one cheque. What is a single cheque? That's okay. We had promised to get two done. Only one has happened so far. 1 is less than two. can give. So when you do this, you will have 2 degrees in UG. PG will become one degree. Now if you ask for UG money here, will you get the UG money? No. No. No. Because what did Papa say? Will get two UG done. Have done two. Two not less than two will not get money. No will not be found. पीजी का पैसा मिलेगा? Yes, you will get it."
+    },
+    {
+      "start_time": 677.6,
+      "end_time": 708.15,
+      "text": "क्यों? क्यों? क्योंकि आप दो यूजी कर चुके हैं। मतलब दो यूजी यहां पे कहीं पे तो है। एक पीजी भी कर चुके हैं। एक पीजी भी कर चुके हैं। मतलब ये दोनों खत्म हो गया है। अब अगर आपको पीजी का पैसा मिलता है तो हां बिल्कुल ये मैच करता है। मतलब 2 यूजी का डिग्री था। एक पीजी का डिग्री था तो अभी आपको पैसा मिल सकता है। तो यस यस ये मिल जाएगा। अब आपके पास 2 यूजी और दो पीजी मिल जाएगा। जैसे ही आप इस स्टेट पे आते हैं कि जैसे ही आपको कितना वादा करा गया था? एन कराने का। एन यूजी एन पीजी। तो आप देखते हैं कि ये भी एन हो गया। ये भी n हो गया।",
+      "source": "caption",
+      "english_text": "Why? Why? क्योंकि आप दो यूजी कर चुके हैं। मतलब दो यूजी यहां पे कहीं पे तो है। एक पीजी भी कर चुके हैं। एक पीजी भी कर चुके हैं। मतलब ये दोनों खत्म हो गया है। अब अगर आपको पीजी का पैसा मिलता है तो हां बिल्कुल ये मैच करता है। मतलब 2 यूजी का डिग्री था। एक पीजी का डिग्री था तो अभी आपको पैसा मिल सकता है। तो यस यस ये मिल जाएगा। अब आपके पास 2 यूजी और दो पीजी मिल जाएगा। जैसे ही आप इस स्टेट पे आते हैं कि जैसे ही आपको कितना वादा करा गया था? एन कराने का। एन यूजी एन पीजी। तो आप देखते हैं कि ये भी एन हो गया। ये भी n हो गया।"
+    },
+    {
+      "start_time": 708.16,
+      "end_time": 742.629,
+      "text": "इस कॉम्बिनेशन को आप प्रिंट कर सकते हैं। इस कॉम्बिनेशन को आप बिल्कुल प्रिंट कर सकते हैं। तो आपको समझ में आया कि हर हर स्टेज पे ना दोनों चॉइससेस अवेलेबल नहीं है। मतलब ऐसा नहीं है कि आप कुछ भी कर सकते हैं। नहीं आपके पापा आपको कुछ भी नहीं करने देंगे। यही उस वेल फाउंड का मतलब है। वेल फाउंड आपके पापा हैं। नहीं करने देगा कुछ भी आपको। अगर आप गलत करने का कोशिश करेंगे ना कि यूजी का डिग्री नहीं है उतना और पीजी का डिग्री बढ़ाना चाह रहे हैं आपके पापा आपको नहीं करने देंगे। नहीं करने देंगे। मतलब कि आइए इसको हम ट्रेस करके समझाते हैं। फिर से एक बार ट्रेस करिए। आपके पापा कितना? दो का। शुरू में 0।",
+      "source": "caption",
+      "english_text": "इस कॉम्बिनेशन को आप प्रिंट कर सकते हैं। इस कॉम्बिनेशन को आप बिल्कुल प्रिंट कर सकते हैं। तो आपको समझ में आया कि हर हर स्टेज पे ना दोनों चॉइससेस अवेलेबल नहीं है। मतलब ऐसा नहीं है कि आप कुछ भी कर सकते हैं। नहीं आपके पापा आपको कुछ भी नहीं करने देंगे। यही उस वेल फाउंड का मतलब है। वेल फाउंड आपके पापा हैं। नहीं करने देगा कुछ भी आपको। अगर आप गलत करने का कोशिश करेंगे ना कि यूजी का डिग्री नहीं है उतना और पीजी का डिग्री बढ़ाना चाह रहे हैं आपके पापा आपको नहीं करने देंगे। Won't let you do it. मतलब कि आइए इसको हम ट्रेस करके समझाते हैं। फिर से एक बार ट्रेस करिए। आपके पापा कितना? Of two. शुरू में 0।"
+    },
+    {
+      "start_time": 742.639,
+      "end_time": 774.15,
+      "text": "ठीक है? इसका एक मतलब ये भी है ना कि किसी भी समय आपके पापा ऐसा नहीं होने देंगे कि नंबर ऑफ पीजी डिग्री बढ़ जाए। नंबर ऑफ यूजी डिग्रीज। ऐसा कभी नहीं होने देंगे आपके पापा। नंबर ऑफ यूजी पीजी डिग्री नंबर ऑफ यूजी डिग्री से ज्यादा कभी नहीं होने देंगे। इसका क्या मतलब हो जाएगा? कि आप एक किए बीटेक और फिर कर लिए एमटेक और फिर कर लिए एमसीए। ऐसा आपके पापा नहीं होने देंगे क्योंकि यूजी है एक पीजी कर लिए दो। ये एमसीए का यूजी कहां है जी नहीं मालूम। ऐसा आपके पापा कभी नहीं होने देंगे। आइए हर बार देखिए आपको क्या-क्या मिल सकता है।",
+      "source": "caption",
+      "english_text": "ok? इसका एक मतलब ये भी है ना कि किसी भी समय आपके पापा ऐसा नहीं होने देंगे कि नंबर ऑफ पीजी डिग्री बढ़ जाए। नंबर ऑफ यूजी डिग्रीज। ऐसा कभी नहीं होने देंगे आपके पापा। नंबर ऑफ यूजी पीजी डिग्री नंबर ऑफ यूजी डिग्री से ज्यादा कभी नहीं होने देंगे। इसका क्या मतलब हो जाएगा? कि आप एक किए बीटेक और फिर कर लिए एमटेक और फिर कर लिए एमसीए। ऐसा आपके पापा नहीं होने देंगे क्योंकि यूजी है एक पीजी कर लिए दो। ये एमसीए का यूजी कहां है जी नहीं मालूम। ऐसा आपके पापा कभी नहीं होने देंगे। आइए हर बार देखिए आपको क्या-क्या मिल सकता है।"
+    },
+    {
+      "start_time": 774.16,
+      "end_time": 801.03,
+      "text": "इसमें अगेन अब दो चॉइससेस हमेशा आपके पास दो चॉइससेस है। आप मांग जरूर सकते हैं लेकिन मिलेगा कि नहीं मिलेगा? सबसे पहले आप बोलिए कि हमको यूजी का पैसा दे दीजिए। यूजी में आपके पापा क्या चेक करते हैं कि अभी ज़ीरो है। ज़ीरो लेस दैन टू है कि नहीं? हम दो का वादा किए हैं। दो हम तुमको करा देंगे किसी भी तरीके से। UG मिल जाएगा। तो आप आ जाते हैं UG = 0 और P UG = 1 और PG = 0 फिर से इसमें आप आइए। इसमें आप UG मांगिए। आप इसमें UG मांगते हैं। तो आपके बाबा आपको देंगे कि नहीं? दे देंगे।",
+      "source": "caption",
+      "english_text": "इसमें अगेन अब दो चॉइससेस हमेशा आपके पास दो चॉइससेस है। आप मांग जरूर सकते हैं लेकिन मिलेगा कि नहीं मिलेगा? सबसे पहले आप बोलिए कि हमको यूजी का पैसा दे दीजिए। यूजी में आपके पापा क्या चेक करते हैं कि अभी ज़ीरो है। ज़ीरो लेस दैन टू है कि नहीं? हम दो का वादा किए हैं। दो हम तुमको करा देंगे किसी भी तरीके से। UG मिल जाएगा। तो आप आ जाते हैं UG = 0 और P UG = 1 और PG = 0 फिर से इसमें आप आइए। इसमें आप UG मांगिए। आप इसमें UG मांगते हैं। तो आपके बाबा आपको देंगे कि नहीं? Will give."
+    },
+    {
+      "start_time": 801.04,
+      "end_time": 835.11,
+      "text": "क्योंकि UG कितना कराने का वादा हुआ था? दो। एक हुआ है। तो आप आ जाएंगे UG = 2 पे। PG = 0 पे। अब अगर आप UG मांगते हैं। क्या आप यहां UG मांग सकते हैं? नहीं। नहीं मान सकते हैं। दो कराने का वादा हुआ था। दो कर लिए ना। ना नहीं मांग सकते हैं। मतलब अगर यूजी लेस देन n है, तो ही आप यूजी अंडर ग्रेजुएट कोर्स मांग सकते हैं। ठीक है? अब यहां पे आप मांगे पीजी। क्या यहां पीजी मांग सकते हैं? देखिए आपके पापा क्या नहीं चाहते हैं कि नंबर ऑफ़ पीजी कभी भी यूजी से ज्यादा ना हो जाए। कभी भी यूजी से ज्यादा ना हो जाए। तो यहां पे अगर आपके पापा आपको पैसा दे देते हैं तो आप कहां पे आ जाएंगे?",
+      "source": "caption",
+      "english_text": "Because how much UG was promised? Two. One has happened. So you will arrive at UG = 2. On PG = 0. Now if you ask for UG. Can you ask for UG here? No. Can't accept. There was a promise to get two done. You did two, right? Can't ask for no. Meaning if UG is less than n, then only you can ask for UG Under Graduate course. Ok? Now here you ask for PG. Can I ask for PG here? See what your father does not want is that the number of PG should never exceed that of UG. Never exceed UG. So here if your father gives you money then where will you come?"
+    },
+    {
+      "start_time": 835.12,
+      "end_time": 869.59,
+      "text": "यूजी टू पे और पीजी वन पे। ये चलता है। ये चलता है। ये चलता है। ये इनवैलिड नहीं हुआ है। ये वैसा हुआ है कि आप दो बीटेक किए, बीबीए किए, एमटेक किए। तो आगे एमबीए करने का ऑप्शन है। मतलब कुछ गलत नहीं किए हैं आप। आज किसी को चीट नहीं किए हैं कि यूजी एक ही किए और पीजी दो कर लिए तो आपके पापा दे देंगे। ये क्या लॉजिक लग रहा है यहां पे? आपके पापा हर बार गिनती केस का कर रहे हैं। अगर पीजी लेस दैन यूजी है, तो आपके पापा आपको पैसा दे देंगे। अगर पीजी लेस दैन यूजी है, तो आपके पापा आपको पैसा दे देंगे। pg इक्वल टू यूजी है तो नहीं देंगे? नहीं देंगे। मतलब मान लीजिए UG ज़ीरो है और PG भी ज़ीरो है। नहीं मिलेगा",
+      "source": "caption",
+      "english_text": "UG two pay and PG one pay. This goes on. This goes on. This goes on. It has not become invalid. It so happened that you did two B.Tech, BBA and M.Tech. So there is an option to do MBA further. Meaning you have not done anything wrong. Today you have not cheated anyone that if you have done only one UG and two PG, your father will give it to you. What seems to be the logic here? Your father is counting the cases every time. If PG is less than UG, your father will give you money. If PG is less than UG, your father will give you money. If pg is equal to ug then will you not give it? Will not give. Meaning, suppose UG is zero and PG is also zero. will not get"
+    },
+    {
+      "start_time": 869.6,
+      "end_time": 898.389,
+      "text": "पैसा क्योंकि अगर पैसा मिल गया तो आप क्या कर लीजिएगा? यूजीरो रह जाएगा और PG साला वन हो जाएगा ये तो गलत हो जाएगा गलत नहीं करने देंगे। PG हमेशा UG से लेस रहना चाहिए तभी उसका पैसा मिलेगा। तो क्या यहां पे पैसा मिलेगा? मिल जाएगा। क्यों? क्योंकि यूजी दो है। PG ज़ीरो है। तो यहां पे आप आ जाएंगे UG = 2 पे और PG आप कर लेंगे एक। अगेन यहां पे अगर आप Uजी मांगेंगे मिलेगा? नहीं। नहीं यूजी मिल चुका है। यूजी यूजी का एक ही चेक है कि भैया दो ही कराने देंगे। दो से ज्यादा नहीं कर सकते हैं। दो आप कर चुके हैं।",
+      "source": "caption",
+      "english_text": "Money because what will you do if you get money? U will remain zero and PG will become one, this will be wrong, we will not let them do wrong. PG should always be equipped with UG only then it will get its money. So will you get money here? Will get it. Why? Because UG is two. PG is zero. So here you will come to UG = 2 and PG you will do one. Again, if you ask for UG here, will you get it? No. No, UG has been found. UG UG has only one check and Bhaiya will allow only two checks. Can't do more than two. Two you are done."
+    },
+    {
+      "start_time": 898.399,
+      "end_time": 932.15,
+      "text": "नहीं मिलेगा ना। पीजी मिलेगा? हां जी बिल्कुल मिलेगा। क्यों? पीजी इज़ लेस दैन यूजी। तो अगर आप करवा देते हैं आपके पापा तो यूजी दो। पीजी दो हो जाएगा। बिल्कुल बढ़िया चलेगा। आप आ जाते हैं यूजी दो पे। पीजी दो पे। ये आपका आ गया। अब इसके बाद आपके पास कोई चॉइस नहीं बची। ये आप कहां पे आ गए? ये आप लास्ट पे आ गए। आपका यूजी इक्वल इक्वल टू n हो चुका है। pg इक्वल इक्वल टू n हो चुका है। मतलब टोटल मिला के आप चार डिग्री कर चुके हैं जिसमें दो यूजी है और दो pजी है। यहां पे आप अपना प्रिंट करिए उसको स्टोर करिए अपने वेक्टर में कुछ भी करिए और खेल खत्म कर दीजिए। खेल खत्म कर दीजिए। ये क्या बना? देखिए सबसे पहले",
+      "source": "caption",
+      "english_text": "Will not get it. Will you get PG? Yes, you will definitely get it. Why? PG is less than UG. So if your father gets it done then give him UG. PG will be two. Will work absolutely fine. You come on UG two. PG on two. This is yours. Now after this you have no choice left. Where have you come? You have come last. Your UG is equal to n. pg is equal to n. Meaning, after getting the total, you have completed four degrees in which two are UG and two are PG. Here you print it, store it, do anything in your vector and end the game. End the game. What became of this? see first"
+    },
+    {
+      "start_time": 932.16,
+      "end_time": 966.31,
+      "text": "आप यूजी किए थे। सबसे पहले यूजी किए थे। तो एक तो हो गया यूजी। उसके बाद आप पीजी किए। एक हो गया पीजी। उसके बाद आप फिर से क्या किए? कुछ छूट गया क्या? अच्छा दो यूजी किए थे। अब दो यूजी किए थे। 2 यूजी और फिर दो पीजी। क्या यह सही है? इसको ब्रैकेट में डाल के देखिए। ऐसा ऐसा ऐसा ऐसा क्या ये वैलिड लग रहा है? हां जी बिल्कुल वैलिड लग रहा है। तो ये आपका एक आंसर हो गया। अब सारा खत्म। ऊपर जाइए। ऊपर जाइए। यहां पे यहां पे आइए। क्या आपके पापा आपको पीजी का पैसा देंगे? हां, देंगे। क्योंकि पीजी इज़ लेस दैन यूजी। तो",
+      "source": "caption",
+      "english_text": "You did UG. First of all did UG. So one thing is done, UG. After that you did PG. One done PG. What did you do again after that? Is something missing? Well, I did two UGs. Now had done two UG. 2 UG and then two PG. Is this correct? Put it in the bracket and see. Like this, like this, does this look valid? Yes, it looks absolutely valid. So this is your answer. Now it's all over. Go up. Go up. Come here come here. Will your father give you money for PG? Yes, will give. Because PG is less than UG. so"
+    },
+    {
+      "start_time": 966.32,
+      "end_time": 1000.23,
+      "text": "अगर आपके पापा पैसा दे देते हैं, तो आप एक यूजी किए हुए हैं। एक पीजी हो जाएगा। बिल्कुल देंगे। तो, आप यहां पे आ गए। UG = 1, PG = 1 फिर से मांगिए। यूजी का पैसा मांग के देखिए। देंगे? हां, देंगे क्योंकि आप एक ही यूजी की है ना? दो करवा सकते थे आपके पापा आपको देंगे। बिल्कुल देंगे। यहां पे आइए। क्या यूजी का पैसा मिलेगा? ना? यूजी दो हो गया। खत्म। उसका खेल खत्म। पीजी का पैसा मिलेगा? हां जी बिल्कुल मिलेगा। क्योंकि पीजी लेस है यूजी से। आप यूजी = 2 पे हो। PG = 2 पे हो। ठीक है? हो गया। दोनों डिग्री दो-दो बार हो गया। बस यही आपका खत्म हो गया खेल। अब इसके बाद तो",
+      "source": "caption",
+      "english_text": "If your father gives the money, you are a UG. There will be a PG. Will definitely give. So, you are here. UG = 1, PG = 1 Ask again. Ask for UG's money. Will you give? Yes, will give because you belong to the same UG, right? You could have got two done, your father will give them to you. Will definitely give. Come here. Will I get UG money? No? UG turned two. End. His game is over. Will I get money for PG? Yes, you will definitely get it. Because PG is less than UG. You are on UG=2. Be on PG = 2. Ok? Done. Both degrees were completed twice. That's it, your game is over. now after this"
+    },
+    {
+      "start_time": 1000.24,
+      "end_time": 1027.909,
+      "text": "कुछ होना ही नहीं है। आंसर प्रिंट करिए। ये क्या आंसर आएगा? सबसे पहले देखिए। सबसे पहले आप सबसे पहले यहां पे आए यूजी पे। फिर पीजी पे, फिर यूजी पे, फिर पीजी पे, तो एक आंसर हो गया, क्या हो गया? यूजी पीजी, यूजी पीजी। इसको ब्रैकेट के अंदर लिख के देखिए, ओपन क्लोज। ओपन क्लोज। क्या ये वैलिड है? हां जी बिल्कुल वैलिड है। आइए और देख लेते हैं पैसा मिलेगा कि नहीं? ये हो गया, ये हो गया। हां। यहां पे आइए। पीजी का पैसा मांग के देखिए। मिलेगा? नहीं मिलेगा। पीजी, यूजी से कम नहीं है भैया।",
+      "source": "caption",
+      "english_text": "Nothing has to happen. Print the answer. What answer will come? Look first. First of all you came here on UG. Then on PG, then on UG, then on PG, then one answer was given, what happened? UG PG, UG PG. Try writing this inside the brackets, open close. Open Close. Is this valid? Yes, it is absolutely valid. Come and let's see whether we will get the money or not? It's done, it's done. Yes. Come here. Ask for PG money. will get? Will not get it. PG is not less than UG, brother."
+    },
+    {
+      "start_time": 1027.919,
+      "end_time": 1053.11,
+      "text": "अगर आपके पापा आपको दे दिए तो आपका एक यूजी और दो पीजी हो जाएगा। वो दूसरा पीजी किसके लिए हुआ है मालूम नहीं ना मिलेगा कुछ नहीं हो पाएगा। ऊपर चलिए ये तो ऑलरेडी कम था। सारा खेल खत्म हो गया है। लास्ट मिलाके आपके पास कितना आंसर बचा है? दो आंसर। एक ये आंसर एक ये आंसर। तो ये हम यूजी पीजी क्यों कर रहे हैं? क्योंकि जस्ट लाइक ओपन और क्लोज है। जब आप बोलते हैं ना कि वैलिड पैरेंथेसिस वैलिड पैरथेसिस। तो आपके पापा आपको क्या देख रहे हैं? देखिए।",
+      "source": "caption",
+      "english_text": "If your father gives it to you, you will have one UG and two PG. Don't know for whom that second PG is made, nothing will be possible if it is not available. Come on, this was already less. The whole game is over. How much answer do you have left after adding the last one? Two answers. One answer is this answer. So why are we doing UG PG? Because just like is open and closed. When you say not valid paranthesis, valid paranthesis. So what is your dad looking at you? See."
+    },
+    {
+      "start_time": 1053.12,
+      "end_time": 1087.27,
+      "text": "आपके पापा आपको यूजी में क्या चेक लगा रहे थे कि यूजी ना लेस दैन n होना चाहिए। मतलब ये जो ओपन है वो लेस दैन n होना चाहिए। आप कहीं भी ओपन लगा सकते हैं। पीजी में क्या चेक लगा रहे थे? पीजी यूजी से कम होना चाहिए। पीजी यूजी से कम होना चाहिए। तभी वो चॉइस मिलेगा। मतलब क्लोजिंग हमेशा ओपन से कम होना चाहिए। तभी वो चॉइस आप ले पाएंगे। तभी वो चॉइस आप ले पाएंगे। अगर क्लोजिंग इक्वल टू ओपन भी है तो आप क्लोजिंग ब्रैकेट नहीं लगा सकते हैं अपने चॉइस में। कैसे? हम आपको बताते हैं। मान लीजिए आप ऐड किए। यहां की अभी तक सही चल रहा है। तीसरा क्या आप यहां पर क्लोजिंग लगा सकते हैं? नहीं लगा सकते हैं। ये",
+      "source": "caption",
+      "english_text": "What was your father checking you in UG that UG should be no less than n. Meaning the number that is open should be less than n. You can put open anywhere. What checks were you doing in PG? PG should be lower than UG. PG should be lower than UG. Only then will you get that choice. Meaning closing should always be lower than open. Only then will you be able to take that choice. Only then will you be able to take that choice. If closing is equal to open then you cannot put closing bracket in your choice. How? We tell you. Suppose you added. Things are going well here so far. Third, can you apply closing here? Cannot be installed. this"
+    },
+    {
+      "start_time": 1087.28,
+      "end_time": 1119.35,
+      "text": "इनवैलिड हो गया। क्यों? ओपन एक है। क्लोजिंग दो लगा दिए दाएं-धाएं करके खत्म हो गया। ये क्या हुआ? एक किए बीटेक। एक एमटेक। यहां तक तो सही था। आगे जाके क्या कर दिए? एमबीए। पूरा खेल खराब हो गया। ये ये क्यों किए? ये एमबीए का बीबीए कहां है भाई? अभी तक तो नहीं है। तो ये खेल खत्म हो गया। तो आइए अब इसका कोड लिखते हैं। एक ड्राई रन करके आपको हम बताते हैं। आपको इसमें करना क्या है? आपको सारा कॉम्बिनेशन जनरेट करना है और उसका प्रिंट करना है या वेक्टर स्ट्रिंग में स्टोर करना है। तो इसके लिए सबसे पहले तो एक फंक्शन लिखिए।",
+      "source": "caption",
+      "english_text": "Became invalid. Why? Open one. The closing ended with two right-rights. What happened? Did a B.Tech. An M.Tech. Till now it was correct. What did you do going forward? MBA. The whole game is ruined. Why did they do this? Where is this MBA's BBA, brother? Not there yet. So this game is over. So now let's write its code. Let us tell you by doing a dry run. What do you have to do in this? You have to generate all the combinations and print them or store them in a vector string. So first of all write a function for this."
+    },
+    {
+      "start_time": 1119.36,
+      "end_time": 1153.83,
+      "text": "सबसे पहले एक फंक्शन लिखिए वोइड वन। इसमें हम दो तीन चीजें पास करेंगे। आपको दिया हुआ क्या रहेगा? n। बस n। अगर आपको n पेयर्स दिया हुआ है ना तो शुरू में आपके पास शुरू आपके पास n ओपन का जगह है और n क्लोज का जगह है। तो शुरू में ना हम लोग एक ओपन ले के चलेंगे कि अभी तक हम कितना ओपन लिख चुके हैं। अभी तक हम कितना यूजी डिग्री कर चुके हैं वो है। अभी तक हम कितना पीजी डिग्री कर लिया हूं। शुरू में ज़ीरो रहेगा। एक होगा n जो कि आपका लिमिट है। और एक होगा आपका अब क्योंकि ये डिग्री का बात नहीं है क्योंकि ये ब्रैकेट का बात है और आपको ब्रैकेट का आंसर स्टोर करना",
+      "source": "caption",
+      "english_text": "First write a function void one. In this we will pass two or three things. What will remain of what is given to you? n. Just n. If you are given n pairs, then initially you have n open spaces and n close spaces. So in the beginning we will start with an idea of ​​how much open we have written so far. That is how many UG degrees we have completed so far. How many PG degrees have we completed so far? It will be zero initially. One will be n which is your limit. And now you will have one because it is not a matter of degree because it is a matter of bracket and you have to store the answer of the bracket."
+    },
+    {
+      "start_time": 1153.84,
+      "end_time": 1187.35,
+      "text": "है। तो आप एक टेंपरेरी स्ट्रिंग स्टोर करके चलेंगे। एक टेंपरेरी स्ट्रिंग और एक वेक्टर स्ट्रिंग ये आपका आंसर के लिए वेक्टर स्ट्रिंग रिजल्ट। ठीक है? इतना बड़ा फंक्शन है। सबसे पहले वो केस लिख लिया करिए जब आपका सारा चॉइस खत्म हो गया हो और उसके आगे जाने की आपको जरूरत नहीं हो। तो उसके आगे जाने की जरूरत कब नहीं थी? जब आप दो यूजी डिग्री कर लिए थे, दो पीजी डिग्री कर लिए थे। मतलब जब ओपन भी एन हो जाए एंड क्लोज भी एन हो जाए। अब इसके आगे तो कोई चॉइस ही नहीं है। यही करना था। यही इसी पे रुक जाना था। यहां का कॉम्बिनेशन प्रिंट",
+      "source": "caption",
+      "english_text": "Is. So you will be able to store a temporary string. A temporary string and a vector string. This is your answer to the vector string result. Ok? This is such a big function. First of all, write down that case when all your choices have been exhausted and you do not need to go further. So when was there no need to go ahead of him? When you had done two UG degrees, two PG degrees. Meaning when open also becomes n and close also becomes n. Now there is no choice beyond this. This was what had to be done. Had to stop here. combination print here"
+    },
+    {
+      "start_time": 1187.36,
+      "end_time": 1220.87,
+      "text": "कर लेना था। तो क्या कीजिए? रेस्ट डॉट पुश बैक टीम। ये जो टेंपरेरी स्ट्रिंग था और रिटर्न कर दीजिए। रिटर्न कर दीजिए। खेल खत्म हो गया। अब आइए अब अपने चॉइससेस को मेक कीजिए। ओपन का चॉइस लेने की ट्राई कीजिए। ओपन का चॉइस लेते हुए क्या एक कंडीशन है जो आपके पापा चेक करते थे कि अभी तक जो इतना आप ओपन कर चुके हैं ना ये n से कम होना चाहिए। अगर ये n से कम था आपके पापा मान जाते थे। आपके पापा क्या होते थे? मान जाते थे। बिल्कुल। आइए मनवा दीजिए। इफ ओपन लेस देन n मान जाएंगे दे",
+      "source": "caption",
+      "english_text": "Had to do it. So what to do? Rest Dot Push Back Team. This was a temporary string and return it. Please return it. The game was over. Now let's make our choices. Try to choose open option. While choosing to open, is there a condition that your father used to check that the number of opens so far should be less than n. If it was less than n, your father would agree. Who was your father? Used to agree. Absolutely. Come let's get it done. If open less then n will agree"
+    },
+    {
+      "start_time": 1220.88,
+      "end_time": 1253.11,
+      "text": "देंगे पैसा। कैसे चॉइस होता है? हम क्या बोले थे? जहां भी आप चॉइस ले रहे हैं तो पहले वो चॉइस लिख लीजिए। ये चॉइस के लिए हम लोग क्या लेके चल रहे हैं? ये टेंपरेरी वाला स्ट्रिंग। तो इसमें डाल दीजिए। tmp डॉट पुश बैक किसको? ओपन ब्रैकेट। ये ओपन ब्रैकेट डाल दिए। डाल दिए। आगे जाइए। आगे जाइए। जब आप आगे जाएंगे, जब आप आगे मतलब नेक्स्ट टाइम पे जाएंगे, तो आपका ओपन क्या हो जाएगा? ओपन + 1 हो गया ना? ओपन अभी था। ओपन ज़ीरो था। जब आप ओपन चूज़ करके उसको डाल दिए टीएमपी में। ओपन प्लस वन हो",
+      "source": "caption",
+      "english_text": "Will give money. How is the choice made? What did we say? Wherever you are taking a choice, first write down that choice. What are we carrying with us for this choice? This is a temporary string. So put it in this. tmp dot push back to whom? Open bracket. Put these open brackets. Put it. Go ahead. Go ahead. When you go ahead, when you go to the next time, what will be your opening? Open + 1 is done, right? It was open now. Open was zero. When you choose open and put it in TMP. be open plus one"
+    },
+    {
+      "start_time": 1253.12,
+      "end_time": 1285.83,
+      "text": "गया। बाकी चीजें तो सेम ही रहेंगी। बाकी चीजें तो सेम ही रहेंगी। टीएमपी रेस्ट। जब इसके आप बाहर आएंगे तो अपनी चॉइस को आपको रिवर्स करना पड़ेगा। रिवर्स करना पड़ेगा। मतलब टीएमटी डॉट पॉप बैक मतलब जो आप इसको पुश किए थे ना जो आप ये पुश किए थे ये यहां पे रिवर्स हो गया मतलब ये वैसा है ये हम क्यों करते हैं देखिए ये वैसा है आप मान लीजिए यहां पे थे यूजी पीजी आपके पास यहां पे दो पाथ थे एक पाथ था यूजी चूस करने का तो आप इस पाथ पे",
+      "source": "caption",
+      "english_text": "Gone. Rest of the things will remain the same. Rest of the things will remain the same. TMP Rest. When you come out of it, you will have to reverse your choice. Will have to reverse. Meaning TMT dot pop back means whatever you pushed it or whatever you pushed it got reversed here meaning it is like that why do we do this see it is like that you suppose you were here UG PG you had two paths here one was to suck UG so you are on this path"
+    },
+    {
+      "start_time": 1285.84,
+      "end_time": 1318.63,
+      "text": "आगे गए जब आपका यूजी वन हो गया और पीजी हो गया लेकिन इस पाथ पे भी तो आपको जाना पड़ेगा इस पाथ को भी तो ट्राई करके देखना पड़ेगा तो अब जब यहां वापस आएंगे ना वापस जब आएंगे तो आपको ये रिवर्स करना पड़ेगा। आप इस पाथ पे दोबारा हैं। आप एक मान लीजिए 2000 ये हम 10 12 वाले एग्जांपल में भी समझाए थे। 2015 में आपके पास दो ऑप्शन है कि हमको 10थ करना है या 10थ नहीं करना है। तो एक मान लीजिए 10थ करने वाला ऑप्शन आप एक्सप्लोर कर लीजिए। पूरा अपना जिंदगी देख लिए। आपके पास एक और ऑप्शन है ना कि 10थ नहीं भी करना है। नहीं भी करना है। तो इसके लिए आपको ये रिवर्स करना पड़ेगा। आप आप पिछले टाइम का ये सब अल्टरनेट टाइमलाइन",
+      "source": "caption",
+      "english_text": "When you went ahead, you got UG and PG, but you will have to go on this path, you will have to try this path also, so now when you come back here, you will have to reverse it. You are on this path again. Let us assume a value of 2000. We had also explained this in examples 10-12. In 2015 you have two options whether to do 10th or not to do 10th. So suppose you explore the option of doing 10th. See your whole life. You have another option not to do 10th. Don't even have to do it. So for this you will have to reverse this. Aap Aap, all these alternate timelines of past times."
+    },
+    {
+      "start_time": 1318.64,
+      "end_time": 1352.39,
+      "text": "है। ऐसा समझिए अल्टरनेट यूनिवर्स है। एक समय पे एक यूनिवर्स में आप जा के देख लीजिए। जब आप वापस आएंगे तो सारा रिवर्स हो जाना चाहिए। आप वहीं पे होने चाहिए जहां आप सबसे पहले थे। तो यहां पे आप फिर नील बटा सन्नाटा पे होने चाहिए। इसीलिए हम लोग ये रिवर्स करते हैं। आगे जाते हुए चॉइस बना लीजिए। चॉइस को अपने टीम पे मेरी टीएम है ही चॉइस के लिए। लेकिन जब आप ये आप इसका मतलब है कि आप आगे के सारे यूनिवर्स देख लिए। उस उस चॉइस से जो कुछ भी हो सकता था सब देख लिए। इस एक चॉइस से ना इस एक चॉइस से हो सकता है यहां पे 50 नए यूनिवर्स के दरवाजे खुलते हो सब देख लिए हैं। सब देख के जब आप वापस आए हैं",
+      "source": "caption",
+      "english_text": "Is. Understand that this is an alternate universe. You go and see one universe at a time. When you come back everything should be reversed. You should be where you were in the beginning. So here you should be on Neel Bata Sannata again. That's why we do this reverse. Make a choice going forward. Choice is my TM on my team. But when you see this, it means that you have seen all the future universes. Whatever was possible with that choice, we saw it. With this one choice, it is possible that the doors of 50 new universes open here, you have seen them all. after seeing everything when you came back"
+    },
+    {
+      "start_time": 1352.4,
+      "end_time": 1387.029,
+      "text": "यहां पे तो आप टीएमपी से उसको हटा देंगे। आप टीएमपी से उसको रिवर्स कर देंगे। बस ये तो हो गया ओपन का। अब क्लोज का शुरुआत कीजिए। क्लोज चुनने का कोशिश कीजिए। क्लोज चुनते समय आपके पापा क्या देखते थे? इफ क्लोज इज लेस देन ओपन तभी पैसा मिलेगा बुआ। तभी पैसा मिलेगा। नहीं तो पैसा नहीं मिलेगा। अगर ऐसा होता है तो आपको पैसा मिल सकता है चॉइस करने का। सेम काम कीजिए। टीएमटी डॉट पुश बैक इसको क्लोज को क्लोज को पुश किए। आगे जाइए। आगे जाएंगे जब आप ये दोनों चॉइससेस हैं। आगे जाएंगे तो क्या होगा?",
+      "source": "caption",
+      "english_text": "Here you will delete it from TMP. You will reverse it with TMP. That's it for the Open. Now start the close. Try to choose close. What did your father look for while choosing a close? If close is less than open then only you will get money bua. Only then will you get the money. Otherwise you will not get the money. If this happens then you can get money for choosing. Do the same work. TMT dot push back push it close. Go ahead. You will go further when you have both these choices. What will happen if we go further?"
+    },
+    {
+      "start_time": 1387.039,
+      "end_time": 1420.71,
+      "text": "ओपन तो सेम रहेगा। क्लोज एक बढ़ जाएगा भाई। क्लोज एक बढ़ जाएगा और बाकी चीजें सेम रहेंगी। एन और एफ। अगेन आप ये चॉइस किए। आप एक क्लोज चुनने से 100 तरीके के यूनिवर्स है। सब खत्म होने के बाद रिवर्स करो भाई। इसको रिवर्स करो। इसको रिवर्स करो और इसको बंद कर दो। और लास्ट में क्या करिए? रिटर्न कर दीजिए। फंक्शन खत्म हो गया आपका। ये देखिए ये आपका प्रोग्राम है बैक ट्रैकिंग का जो कि यहां से शुरू होता है। ये क्या है? जब आपके सारे ये बेस केस की तरह समझिए। ये सारे खत्म हो गए। बेस",
+      "source": "caption",
+      "english_text": "Open will remain the same. Close one will increase brother. Close one will increase and everything else will remain the same. N and F. Again you made this choice. You have a universe of 100 ways to choose a cloze. After everything is over, reverse it brother. Reverse it. Reverse it and turn it off. And what to do in the end? Please return it. Your function is over. See, this is your program of back tracking which starts from here. What is this? When you consider all these as base cases. All these are over. base"
+    },
+    {
+      "start_time": 1420.72,
+      "end_time": 1454.47,
+      "text": "केस या लास्ट आप लास्ट पे पहुंच गए। इसके बाद कुछ करने को बचा ही नहीं है। ये आपकी फर्स्ट चॉइस है। ये आपकी फर्स्ट चॉइस है। जब आप ओपन लेना चाह रहे हैं। अगर ओपन नहीं लिए दिया जाएगा कुछ नहीं। आप ये चॉइस नहीं ले पाएंगे। ये आपकी सेकंड चॉइस है। ये आपकी सेकंड जब आप क्लोज लेना चाह रहे हैं। तो हर हर टाइम से हर टाइम से ना दो पाथ निकलेंगे। एक ओपन का पाथ निकलेगा। एक क्लोज का पाथ निकलेगा। ओपन का पाथ बहुत चीज़ करके आपको लास्ट में आंसर पहुंचाएगा जब आप जब आप यहां पे आ जाएंगे। फिर वो वापस आएगा। वापस आते हुए हर आदमी अपने डिसीजन को रिवर्स करेगा। फिर उसी में से आप क्लोज के पाथ में जाएंगे। क्लोज का पाथ",
+      "source": "caption",
+      "english_text": "Case or last, you have reached the last. There is nothing left to do after this. This is your first choice. This is your first choice. When you want to take open. If it is not opened, nothing will be given. You will not be able to take this choice. This is your second choice. This is your second when you want to take a close. So no two paths will emerge from every time. An open path will emerge. A closed path will emerge. The open path will do many things and ultimately lead you to the answer when you reach here. Then he will come back. Coming back, every person will reverse his decision. Then from there you will go to the path of close. path to close"
+    },
+    {
+      "start_time": 1454.48,
+      "end_time": 1487.99,
+      "text": "और 50 तरीके के दरवाजे खुलेगा। वो आपको यहां पे ले जाएगा और बहुत सारे आंसर आपको मिलेंगे। तो अगर हम आपको रिकमेंड कर रहे हैं ना तो आप n = 3 के लिए एक बार ट्रेस करके देखिए। n = 3 करके ये ट्रेस करके एक बार देख लीजिए। आपको अच्छा लगेगा। n = 2 पे उतना मजा नहीं आएगा। लेकिन कॉपी निकालिए। n = 3 पे ये ट्रेस करके देखिए। और हर बार देखिए कि क्या होता है। कहां-कहां पाथ बनता है। तो वो आपको ज्यादा समझ में आएगा। और इसका टाइम कॉम्प्लेक्सिटी कैसे निकालना है वो हम आपको सिखाएंगे धीरे-धीरे। वो अभी टाइम कॉम्प्लेक्सिटी के लिए एक और वीडियो ही हमको बनाना पड़ेगा। लेकिन हम उम्मीद करते",
+      "source": "caption",
+      "english_text": "And 50 more doors will open. It will take you here and you will get lots of answers. So if we are recommending you then try tracing once for n = 3. Try this trace by making n = 3. You will like it. It won't be that much fun at n = 2. But take out a copy. Try tracing this on n = 3. And see what happens each time. Where is the path made? Then you will understand it better. And we will gradually teach you how to solve its time complexity. Due to time complexity, we will have to make another video. but we hope"
+    },
+    {
+      "start_time": 1488.0,
+      "end_time": 1520.549,
+      "text": "हैं कि ये आपको समझ में आया होगा। एक बार अब हम आपको दिखाते हैं कि ड्राई रन करके कि क्यों वो जो हम पॉप बैक और पुश बैक करते हैं ना वो काम कैसे करता है एक्चुअल में। तो मान लीजिए शुरू में एक फंक्शन लीजिए f जिसमें ughजी ज़ीरो है और pg ज़ीरो है। इसका नाम हम देते हैं f1। ठीक है? वो टीएमपी ना टीएमपी एक डायरी है। टीएमपी एक डायरी है यहां पे। टीएमपी एक डायरी है। ये आपका टीएमपी है। ठीक है? आइए तो सबसे पहले तो क्या ये बेस केस में आ चुका है? F1 नहीं। बेस केस क्या होता है कि दोनों दो-दो हो जाए? नहीं हुआ है। ठीक है? यहां से आपके दो चॉइससेस निकलती हैं। यहां से",
+      "source": "caption",
+      "english_text": "Hope you have understood this. Now let us show you through a dry run why what we do with pop back and push back works in reality. So suppose initially take a function f in which ughg is zero and pg is zero. We name it f1. Ok? That TMP Na TMP is a diary. TMP is a diary here. TMP is a diary. This is your TMP. Ok? Well, first of all, does it come in base case? Not F1. What is the base case that both become two? Has not happened. Ok? From here you have two choices. from here"
+    },
+    {
+      "start_time": 1520.559,
+      "end_time": 1555.19,
+      "text": "आपके लिए दो चॉइससेस निकलती हैं। सबसे पहले तो आप पीजी ले ही नहीं सकते। सबसे पहले तो आप पीजी ले ही नहीं सकते हो। तो सबसे पहले आप यूजी का चॉइस बनाने का ट्राई कीजिए। क्या आपके पापा आपको यूजी का पैसा देंगे? हां जी देंगे। अगर आपके पापा पैसा देंगे तो आप सबसे पहला काम क्या करते हैं यूजी के चॉइस देखिए सबसे पहला काम क्या करते हैं देखिए कहां क्या कहां गया जी सबसे पहले टीएनपी में पुश बैक करते हैं एक ओपन ब्रैकेट मतलब जो भी आप चॉइस बना रहे हैं आगे जाते हैं और फिर जब ये फंक्शन खत्म हो जाएगा तब आके पॉप बैक करेंगे तो देखिए सबसे पहले तो यूजी पुश कर दीजिए मतलब यूजी यहां पे लिख दीजिए यूजी लिख दिए वेरी गुड आगे जाइए आप आगे जाएंगे तो आपको",
+      "source": "caption",
+      "english_text": "Two choices are available for you. First of all you cannot take PG. First of all you cannot take PG. So first of all try to make choice of UG. Will your father give you UG money? Yes, I will. If your father gives money then what is the first thing you do? Look at the choices of UG. What is the first thing you do? Look where what went where. First of all push back in TNP. An open bracket means whatever choice you are making, go ahead and then when this function is over, they will come and pop back. So see, first of all push UG, meaning write UG here, write UG very good. Go ahead, if you go ahead then you will get"
+    },
+    {
+      "start_time": 1555.2,
+      "end_time": 1588.549,
+      "text": "पता चलेगा कि यूजी वन हो चुका है pg ज़ीरो ही है इसको हम नाम देंगे f2 ठीक है अब जब f2 खत्म हो जाएगा ना तब ये f1 पॉप बैक करेगा याद रखिएगा इसको ठीक है? इसको आप कॉपी में बनाइए समझ में आएगा। उतना कोई रॉकेट साइंस नहीं है। सुनने में लगता है कि क्या बोल रहा है इधर-उधर इधर-उधर। समझ में आ जाएगा तो आ जाएगा। ठीक है? आइए F2 अगेन F2 भी दो काम कर सकता है। ये तो या तो PG यूजी कर सकता है या तो PG कर सकता है। यहां पे आप दोनों कर सकते हैं। यहां पे आप यहां पे आप UG लेके F ये बना सकते हैं। जहां पे UG दो हो जाए और PG ज़ीरो हो",
+      "source": "caption",
+      "english_text": "You will know that UG has become one, pg is zero, we will name it f2, okay now when f2 is over then it will pop back as f1, remember this, okay? Make a copy of this and you will understand. It's not that much rocket science. It seems that what is being said is heard here and there. If he understands, he will come. Ok? Let's F2 Again F2 can also do two things. He can either do PG or UG. Here you can do both. Here you can make F by taking UG. Where UG becomes two and PG becomes zero."
+    },
+    {
+      "start_time": 1588.559,
+      "end_time": 1620.87,
+      "text": "जाए। ठीक है? इसको हम नाम देंगे F3। इसको हम नाम देंगे F3 और एक PG भी इसका एक पीजी बच रहा है। याद रखिएगा इसका PG भी पॉसिबल है क्योंकि PG लेस दैन यूजी तो इसका पीजी बच रहा है लेकिन F3 के मार्ग पे चलते हैं UG लेके तो सबसे पहले तो Uजी पुश करो और F3 चलो F3 जब बंद होगा तो ये UG हटाएंगे। ठीक है? तो ये वाला किसके लिए आया है? ये वाला थ्री के लिए आया है। ये वाला टू के लिए आया है। ठीक है? याद रखेंगे। F3 जब बंद होगा तो उसको हटाएंगे। F3 F3 में आप Uजी नहीं ले सकते क्योंकि यूजी का पॉसिबल नहीं है। हो गया ना दो। आइए F3 बस PG ही",
+      "source": "caption",
+      "english_text": "Go. Ok? We will name it F3. We will name it F3 and one PG is also left. Remember, its PG is also possible because PG is less than UG, so its PG is saved but if we follow the path of F3, then first push UG and go for F3. When F3 closes, it will remove UG. Ok? So who has this one come for? This one has come for three. This one is for two. Ok? Will remember. When F3 closes, it will be removed. F3 F3 में आप Uजी नहीं ले सकते क्योंकि यूजी का पॉसिबल नहीं है। हो गया ना दो। आइए F3 बस PG ही"
+    },
+    {
+      "start_time": 1620.88,
+      "end_time": 1655.11,
+      "text": "ले सकता है। F3 बस PG ले सकता है। और ये F UG = 2 और PG = 1 ये F4 बना सकता है। लेकिन ये करने से पहले एक PG पुश कर दीजिएगा। जब F4 बंद होगा तो हम इसको हटा देंगे। जब F4 बंद होगा तो हम इसको हटा देंगे। F4 अगेन Uजी नहीं ले सकता है क्योंकि UG दो कर लिए हैं। PG ले सकता है। PG ले सकता है। तो ये PG लेके क्या बन जाएगा? f ugg = 2 pg = 2 और ये f5 जब f5 बंद होगा तो हम ये पीजी हटा देंगे तो पीजी लिख लीजिए और जब f5 बंद होगा तो हम ये",
+      "source": "caption",
+      "english_text": "Can take. F3 can just take PG. And this F UG = 2 and PG = 1 can make F4. But before doing this please push a PG. When F4 is closed we will remove it. When F4 is closed we will remove it. F4 again cannot take UG because UG has been taken two. Can take PG. Can take PG. So what will become of this PG? f ugg = 2 pg = 2 and this f5 when f5 is closed then we will remove this pg so write pg and when f5 is closed then we will remove this"
+    },
+    {
+      "start_time": 1655.12,
+      "end_time": 1688.549,
+      "text": "पीजी हटाएंगे देखिएगा कैसे हटेगा एक-एक करके f5 f5 आपका बेस केस है दोनों दो-दो हो गया ना बस तो आप प्रिंट आप अपने रिजल्ट में स्टोर कर लीजिए क्या यूजी यूजी पीजी पीजी तो एक तो आपका रिजल्ट ये हो गया देखिए यूजी यूजी पीजी पीजी जो भी टीएमपी में था स्टोर कर लेते थे वेरी गुड कर लिए अब आइए अब देखिए बंद करेंगे F5 रिजल्ट स्टोर करने के बाद F5 क्या करता है? रिटर्न कर देता है पीछे वाले। तो F5 बंद हो गया। F5 बंद हो गया। लेकिन हम क्या बोले थे? जब F5 बंद होगा तो हम क्या पैक करेंगे? पीजी को हटाइए। ठीक।",
+      "source": "caption",
+      "english_text": "PG will be removed and we will see how it will be removed one by one. f5 f5 is your base case, both are reduced to two. So you print it and store it in your result. What is UG UG PG PG? So one, your result is done. Look, UG UG PG PG used to store whatever was in TMP very well. Now let's see, we will close F5. What does F5 do after storing the result? The one behind returns. So F5 stopped. F5 shut down. But what did we say? What will we pack when F5 closes? Remove PG. Correct."
+    },
+    {
+      "start_time": 1688.559,
+      "end_time": 1722.63,
+      "text": "F4, F4 के पास और कोई चॉइस है नहीं करने के लिए। यूजी का चॉइस खत्म था। पीजी का चॉइस खत्म हो गया। F4 बंद होगा। लेकिन F4 बंद होगा तो क्या होगा? पॉप बैक करो इसको। बाहर आ जाइए। F3, F3 के पास और कुछ करने के लिए बचा नहीं है। वो यूजी का ले नहीं सकता था। पीजी का हो चुका है। F3 भी बंद हो गया। लेकिन F3 बंद हुआ तो क्या पॉप बैक हुआ? ये। ठीक है? देख रहे हैं कैसे-कैसे एक-एक करके पॉप बैक हो रहा है। अब आप आए हैं F2 पे। F2 को भी बंद मत कीजिए। F2 का एक और बचा हुआ है PG वाला। याद कीजिए पीजी का पाथ बचा हुआ है। आइए। याद कीजिए। F2 का पीजी का पाथ बचा हुआ है। ठीक है? अब आपका",
+      "source": "caption",
+      "english_text": "F4, F4 has no other choice but to do it. UG's choice was over. The choice of PG is over. F4 will close. But what will happen if F4 is turned off? Pop it back. Come out. F3, F3 has nothing else left to do. He couldn't take UG's. PG is done. F3 also shut down. But what pops back when F3 is closed? These. Ok? We are seeing how they are popping back one by one. Now you have come to F2. Don't turn off F2 either. Another survivor of F2 is the PG one. Remember, the PG path is still there. Come. Remember. The PG path of F2 is left. Ok? now yours"
+    },
+    {
+      "start_time": 1722.64,
+      "end_time": 1753.99,
+      "text": "TMP में क्या है? सिर्फ एक यूजी है। बाकी सब पॉप बैक बैकक हो गया। F2 अभी तक बंद नहीं हुआ है इसीलिए Uजी बचा हुआ है। बाकी सारे पॉप बैक हो गए। अब F2 से आइए और एक Pजी का डिसीजन लेके एक एफ ये बनाइए। UG जहां वन है और PG वन है इसको हम बोलेंगे F6 और ये करने के दौरान एक पीजी पुश करिए। जो कि हम लोग सिक्स को बंद करते हुए पॉप बैक करेंगे। सिक्स को जब बंद करेंगे तो उसको पॉप बैक उड़ाएंगे। ठीक है? अब देखिए F6 में आप PG ले नहीं सकते क्योंकि पीजी इज़ नॉट लेस दैन Uजी। केवल uजी ले सकते हैं। केवल uजी ले सकते हैं। तो एक uजी",
+      "source": "caption",
+      "english_text": "What is in TMP? There is only one UG. Everything else popped back up. F2 is not closed yet so UG is left. All the others popped back. Now come from F2 and take the decision of one PG and make an F. Where UG is one and PG is one, we will call it F6 and while doing this push one PG. Which we will pop back by closing the six. When you close the six, you will pop it back. Ok? Now see, you cannot take PG in F6 because PG is not less than UG. Can take only uzi. Can take only uzi. so a uzi"
+    },
+    {
+      "start_time": 1754.0,
+      "end_time": 1780.47,
+      "text": "लीजिए और ये बनाइए u = 2 और pg = 1 अगेन इसको हम लोग नाम देंगे f7 और एक यूजी पुश बैक करेंगे जो कि जब सेवन बंद होगा तो पॉप बैकक होगा। वेरी गुड। सेवन में आइए। सेवन में uजी ले नहीं सकते हैं। सिर्फ पीजी ले सकते हैं। सिर्फ पीजी ले सकते हैं। और एक ऐसा बनाएगा। uजी दो हो जाएगा। पीजी दो हो जाएगा। और इसको हम लोग नाम देंगे F8। एक और पीजी पुश कीजिए।",
+      "source": "caption",
+      "english_text": "Take this and make it u = 2 and pg = 1. Again we will name it f7 and make a UG push back which will pop back when the intake closes. very good. Come to intake. Uzi cannot be taken by mouth. Can take only PG. Can take only PG. And will make one like this. uji will be two. PG will be two. And we will name it F8. Push another PG."
+    },
+    {
+      "start_time": 1780.48,
+      "end_time": 1811.029,
+      "text": "जब एट पॉप बैक होगा तो हम लोग उसको हटाएंगे। जब एट पॉप बैक होगा तो हम लोग उसको हटा देंगे। वेरी गुड। अगेन अब ये बेस केस में आ चुका है। अभी इसको कुछ करने के लिए है नहीं। रिजल्ट लिखना है आपको। क्या रिजल्ट आया? यूजी देखिए ये तो पॉप बैकक हो चुका है। यूजी पीजी यूजी पीजी लिख लीजिए। यूजी पीजी यूजी पीजी लिख लिए। एफ8 का काम खत्म हो गया। एफ एट को खत्म करिए। लेकिन हम लोग क्या बोले थे? जब एफ एट खत्म होगा तो क्या होगा? ये पीजी पॉप बैक होगा हो गया। F7 F7 के पास और कुछ चॉइस है? नहीं।",
+      "source": "caption",
+      "english_text": "When it pops back, we will remove it. When it pops back, we will remove it. very good. Again now it has come in base case. There is nothing to do with it right now. You have to write the result. What was the result? UG, look, it has popped back. Write UG PG UG PG. Wrote UG PG UG PG. F8 is finished. Eliminate F et. But what did we say? What will happen when F et ends? This PG pop back will be done. F7 F7 has some other choice? No."
+    },
+    {
+      "start_time": 1811.039,
+      "end_time": 1836.07,
+      "text": "यूजी ले नहीं सकता है। पीजी का खत्म। F7 खत्म कीजिए। लेकिन जब F7 खत्म होगा तो यूजी पॉप बैकक हो जाएगा। F6 F6 के बाद और कुछ बचा हुआ है। F6 के पास कुछ नहीं बचा हुआ है। क्योंकि यूजी लेना था ले लिए। पीजी इसके पापा लेने नहीं देंगे क्योंकि यूजी इज़ नॉट PG इज़ नॉट लेस दैन Uजी। F6 भी अपना काम कर चुका है। F6 खत्म होगा तो ये PG भी उड़ जाएगा। अब वापस आइए। F2 क्या F2 के पास और कुछ बचा है करने के लिए? नहीं।",
+      "source": "caption",
+      "english_text": "Can't take UG. End of PG. Finish F7. But when F7 is over, UG will pop back up. F6 There is nothing left after F6. F6 has nothing left. Because I had to take UG, I took it. PG His father will not let him take it because UG is not PG is not less than UG. F6 has also done its job. If F6 ends then this PG will also fly. Come back now. F2 Is there anything else left for F2 to do? No."
+    },
+    {
+      "start_time": 1836.08,
+      "end_time": 1869.43,
+      "text": "यूजी का भी एक्सप्लोर कर लिया। देखिए बहुत बड़ा सा ट्री बना। टीजी का भी एक्सप्लोर कर लिए। अब F2 के पास और कुछ नहीं है। तो F2 भी खत्म हो गया। F2 खत्म होगा तो क्या होगा? ये यूजी पॉप बैकक होगा। ये यूजी पॉप बैकक होगा। अब आप आ गए F1 में। F1 के पास कुछ करने के लिए है नहीं। F1 दोनों काम कर लिया ना। F1 के पास कुछ नहीं है। F1 रिटर्न टू मेन हो जाएगा। रिटर्न टू मेन आपका रिकरिज़न खत्म हो जाएगा। तो देखिए आप एक टीएमपी से शुरू किए। हर बार जब हम कोई फंक्शन कॉल करते थे तो मतलब कोई चॉइस बनाते थे। फंक्शन कब कॉल होता है? जब आप कुछ चॉइस बनाते हैं। जब आप कुछ चॉइस बनाते हैं तो आप पुश बैक करते हैं तो यूजी। जब",
+      "source": "caption",
+      "english_text": "Also explored UG. See, a very big tree has been formed. Also explored TG. Now F2 has nothing else. So F2 also ended. What will happen if F2 ends? This will be UG Pop Backc. This will be UG Pop Backc. Now you have come to F1. F1 has nothing to do. F1 did both. F1 has nothing. F1 will return to main. Return to main Your recursion will end. So see you started with a TMP. Every time we called a function, we made a choice. When is the function called? When you make some choices. When you make some choices you push back so ugh. when"
+    },
+    {
+      "start_time": 1869.44,
+      "end_time": 1902.87,
+      "text": "वो फंक्शन खत्म होता है तो आप उसको पॉप बैक कर देते हैं। तो इसीलिए हम लोग करते हैं क्योंकि आप आप जहां से स्टार्ट किए थे आप कहां से स्टार्ट किए थे यहां से। आपके पास कुछ नहीं था। जब आप मेन में आए तो भी आपके पास देखिए कुछ नहीं है। टेम टेम्प पूरा खाली है। टीएमपी में बहुत सारा पुश हुआ। बहुत सारा पॉप हुआ। लेकिन एट द एंड टीएमपी खाली है। तो आप जहां से स्टार्ट किए थे आप जब चॉइस बनाते हैं तो आप उसको पुश करते हैं। जब आपका वो चॉइस खत्म हो जाता है तो आप उसको पॉप कर देते हैं। तो जहां से स्टार्ट वहीं से खत्म। मतलब पूरा नील बटा सन्नाटा होना चाहिए। ऐसा नहीं होना चाहिए कि आप कुछ पुश कर रहे हैं और फिर उसको पॉप नहीं कर रहे हैं तो फिर वो चॉइस आगे प्रोपगेट हो रहा है। नहीं। अगर",
+      "source": "caption",
+      "english_text": "When that function ends, you pop it back. So that's why we do it because where you started from where you started from here. You had nothing. Look, even when you came to Maine, you had nothing. Temp is completely empty. There was a lot of push in TMP. There was a lot of pop. But at the end tmp is empty. So from where you started, when you make a choice, you push it. When you run out of that choice, you pop it. So end from where it started. Meaning there should be complete blue and silence. It should not happen that you are pushing something and then not popping it, then that choice is getting propagated further. No. if"
+    },
+    {
+      "start_time": 1902.88,
+      "end_time": 1936.87,
+      "text": "एट अ पॉइंट आपके पास दो डिसीजन है ना तो एक यूनिवर्स का डिसीजन दूसरे यूनिवर्स के डिसीजन को फर्क नहीं पड़ना चाहिए। उससे दोनों अलग-अलग डिसीजन है। आप एक डिसीजन ले लीजिए। पूरा एक्सप्लोर करिए। अगला डिसीजन के लिए उसको पूरा क्लीन स्लेट करके अगला डिसीजन लीजिए। ठीक है? तो ये इसका लॉजिक इसको देखिए छोटा करके दिखाएंगे तो ये कितना ये लगेगा देखिए। ये हम एक बार और समझाने की कोशिश किए थे लेकिन उसमें कुछ गलती हो गया था। देखिए कहीं तो कुछ किए होंगे। हां देखिए यहां भी कुछ-कुछ काट पीट किए थे। ये अपने कॉपी में बनाइए। हम आपको बहुत सलाह देंगे फ्रेंडली कि अपने कॉपी में खुद से करिए। ये खुद से पुश बैक पॉप बैक सीखिए। खुद से जितना समझ में आएगा उतना किसी टीचर को समझ में नहीं आ सकता",
+      "source": "caption",
+      "english_text": "At a point you have two decisions, neither the decision of one universe nor the decision of the other universe should make any difference. These are two different decisions. You take a decision. Explore fully. Make a completely clean slate for the next decision and take the next decision. Ok? So look at its logic, if you shorten it, see how much it will look like. We tried to explain this once more but there was some mistake in it. Look, something must have been done somewhere. Yes, see, there was some hacking here too. Make this in your notebook. We would highly recommend you to do it yourself in your own copy. Learn this push back pop back by yourself. No teacher can understand more than you can understand yourself."
+    },
+    {
+      "start_time": 1936.88,
+      "end_time": 1966.71,
+      "text": "है। ठीक है? ये सुनने में कॉम्प्लेक्स लगता है लेकिन कॉम्प्लेक्स है नहीं। कॉपी निकालिए, ऐसा स्टेट बनाइए और लिखिए कि हर फंक्शन में क्या कोड चल चूका है, क्या कोड बाकी है चलना। चलाइए और देखिए जैसा हम लोग रिकर्शन में किए थे ना कि f4, f5 सेम है। हर फंक्शन में देखिए क्या-क्या चल गया, क्या-क्या चलना बाकी है। जो लिखा हुआ है वो कर दीजिए। इसको बोलते हैं ड्राई रन। रिकर्शन में बहुत जरूरी है ड्राई रन। क्योंकि देख के नहीं समझ में आता है। कोड देख के मतलब उतना समझना मुश्किल है कि आप कर क्या रहे हैं। लेकिन जब आप ये डायग्राम बनाएंगे, तो आपको असली चीज़ समझ में आएगा।",
+      "source": "caption",
+      "english_text": "Is. Ok? It sounds complex but it is not. Take out the copy, make such a state and write down what code has been run in each function and what code is left to run. Run it and see as we did in the recursion that f4 and f5 are the same. See what has happened in every function and what is yet to happen. Do what is written. This is called dry run. Dry run is very important in recursion. Because we cannot understand by seeing. It's hard to understand what you're doing just by looking at the code. But when you make this diagram, you will understand the real thing."
+    },
+    {
+      "start_time": 1966.72,
+      "end_time": 1978.2,
+      "text": "तो ये प्लीज करिएगा ये एक्सरसाइज अभी से करना शुरू कर दीजिए। इसका आदत अगर नहीं लगेगा बहुत ज्यादा प्रॉब्लम हो जाएगी आगे। ठीक है? तो यह कॉपी में ड्राई रन वाला एक्सरसाइज प्लेस करिएगा। चलिए।",
+      "source": "caption",
+      "english_text": "So please do this, start doing this exercise from now on. If you don't get used to this, you will face a lot of problems in the future. Ok? So place the dry run exercise in this copy. Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

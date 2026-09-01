@@ -1,0 +1,443 @@
+{
+  "video_id": "-AEEZEWOA-E",
+  "video_title": "Master Bellman-Ford: Cheapest Flights Within K Stops",
+  "video_number": 107,
+  "chunks": [
+    {
+      "start_time": 1.91,
+      "end_time": 35.19,
+      "text": "हेलो बच्चों, बहुत-बहुत स्वागत है। आज मेरा आवाज थोड़ा खड़खाया खड़खाया हुआ लगेगा। तबीयत थोड़ा मेरा खराब है। देखिए आज का जो क्वेश्चन है ना हम लोग काफी कुछ पढ़ चुके हैं ग्राफ में। काफी कुछ का मतलब कि काफी एल्गोरिदम पढ़ चुके हैं और तरह-तरह का चीज पढ़ चुके हैं। आज का जो क्वेश्चन है बहुत फेमस क्वेश्चन है। मतलब बहुत सारे इंटरव्यू में हमको आया है और मेरे बहुत सारे जानने वाले हैं उनको भी पूछा गया है। ग्राफ में वन ऑफ द मोस्ट फेमस क्वेश्चन है ये। चीपेस्ट फ्लाइट विद इन केस स्टॉप्स। ठीक है? इसको भी सॉल्व करने का बहुत सारा तरीका है। लेकिन आज हम लोग सबसे इंट्यूटिव और जो तरीका आपको सबसे ज्यादा समय तक याद रहे वो देखेंगे। आपको",
+      "source": "caption",
+      "english_text": "Hello children, most welcome. Today my voice will sound a little hoarse. I am not feeling well. See today's question, we have read a lot in the graph. A lot means that you have read a lot of algorithms and read different types of things. Today's question is a very famous question. Meaning, we have been asked in many interviews and many of my acquaintances have also been asked. This is one of the most famous questions in graph. Cheapest flight with in case stops. Ok? There are many ways to solve this also. But today we will look at the most intuitive method and the one that you will remember the longest. to you"
+    },
+    {
+      "start_time": 35.2,
+      "end_time": 69.99,
+      "text": "समझ में आएगा क्यों ऐसा कर रहे हैं? काहे कर रहे हैं और बहुत कनेक्टेड होगा जो हम लोग जो भी हम लोग पढ़े हैं ना वही है। वैसा कुछ बहुत आउट ऑफ द वर्ल्ड क्वेश्चन नहीं है। जो पढ़ के आए हैं आप लोग वही हो रहा है यहां पे। बहुत अलग कुछ नहीं हो रहा है। ठीक है? देखिए आपको क्या करना है? चीपेस्ट फ्लाइट इन केस स्टॉप्स। इसका क्या मतलब है? आपको बताते हैं। सबसे पहले तो आपको दिया हुआ क्या रहेगा? आपको बहुत सारा फ्लाइट स्टेशन है। फ्लाइट स्टेशन का क्या मतलब होता है? मान लीजिए जीरो एक आपका स्टेशन हो गया। एयरपोर्ट हो गया। एक एयरपोर्ट आपका वन हो गया। एक एयरपोर्ट आपका टू हो गया और एक एयरपोर्ट आपका थ्री हो गया। चार तरीके के एयरपोर्ट्स हैं। ठीक है? आपको इनमें से एजेस भी दिया रहेगा।",
+      "source": "caption",
+      "english_text": "Will you understand why they are doing this? What are we doing and it will be very connected to whatever we have read. That's not a very out-of-the-world question. Whatever you people have read here, the same thing is happening here. Nothing much different is happening. Ok? See what you have to do? Cheapest flight in case stops. What does it mean? Let us tell you. First of all, what will be given to you? You have a lot of flight stations. What does flight station mean? Suppose zero one becomes your station. The airport is done. An airport becomes your forest. One airport became your two and one airport became your three. There are four types of airports. Ok? You will also be given some of these edges."
+    },
+    {
+      "start_time": 70.0,
+      "end_time": 98.23,
+      "text": "आपको बेसिकली एजेस ही दिया रहेगा। अगर मान लीजिए कि एक एज ज़ीरो से वन जाता है और ये आपको डायरेक्टेड ग्राफ दिया रहेगा। डायरेक्टेड वेटेड ग्राफ। ऑब्वियस सी बात है कि कभी भी आपको डिस्टेंस वगैरह निकालना रहेगा तो उसमें वेट तो होगा ही। और आपको डायरेक्टेड ग्राफ दिया रहेगा। मतलब जीरो से वन अगर एज है ना तो जीरो से वन है। वन से जीरो नहीं है। अच्छी बात है। अच्छा मान लेते हैं एक और एज आपका जीरो से टू भी है। एक एज आपका जीरो से थ्री है। और थ्री से वन भी एक एज है और टू से वन भी एक एज है।",
+      "source": "caption",
+      "english_text": "You will basically be given only edges. If we assume that an edge goes from zero to one, you will be given a directed graph. Directed Weighted Graph. It is obvious that whenever you have to calculate distance etc., there will be weight in it. And you will be given a directed graph. Meaning if the edge is from zero to one then it is from zero to one. One is not zero. It's a good thing. Well, let's assume that you also have another edge from zero to two. An edge is your zero to three. And three to one is also an edge and two to one is also an edge."
+    },
+    {
+      "start_time": 98.24,
+      "end_time": 132.79,
+      "text": "ये आपका एयरपोर्ट है। समझ में आ गई बात? चलिए मान लेते हैं थोड़ी देर के लिए कि ज़ीरो से वन तक का ना वेट 100 है। मतलब ज़ीरो से वन 100 कि.मी. दूर है। अच्छी बात है। ज़ीरो से टू 20 कि.मी. दूर है। अच्छा। 0 से 3 20 कि.मी. दूर है। समझ में आती है बात? ठीक है? थ्री से वन 50 कि.मी. दूर है। अच्छा। टू से वन कितना दूर है? चलिए मान लेते हैं 30 कि.मी. दूर है। ठीक है? ये आपका ग्राफ है। आपको दो चीजें और दी रहेंगी। पहला बात तो आपको एक सोर्स दिया रहेगा। सोर्स एयरपोर्ट कौन सा है? मान लेते हैं कि आपको सोर्स एयरपोर्ट जीरो दिया हुआ है। ठीक है? मतलब आप स्टार्ट",
+      "source": "caption",
+      "english_text": "This is your airport. Have you understood the point? Let us assume for a moment that the weight from zero to one is 100. Meaning zero to one 100 km. is far away. It's a good thing. Zero to 20 km. is far away. Good. 0 to 3 20 km. is far away. Do you understand? Ok? Three to one 50 km. is far away. Good. How far is one from two? Let us assume 30 km. is far away. Ok? This is your graph. You will be given two more things. First of all, you will be given a source. Which is the source airport? Let us assume that you are given source airport zero. Ok? meaning you start"
+    },
+    {
+      "start_time": 132.8,
+      "end_time": 166.229,
+      "text": "करेंगे कहां से? जीरो वाले एयरपोर्ट से। आपको एक डेस्टिनेशन एयरपोर्ट भी दिया रहेगा। डेस्टिनेशन मतलब कहां आपको पहुंचना है? मान लेते हैं कि आपको डेस्टिनेशन वन दिया है कि आपको वन तक पहुंचना है। और एक एडिशनल चीज जो अभी तक हम लोग नहीं देखे हैं ना ये जो K स्टॉप्स है ना ये दिया रहेगा। K की वैल्यू दिया रहेगा। मतलब कि मान लेते हैं आपको K की वैल्यू वन दी हुई है। K की वैल्यू कितना दिया हुआ है? वन दिया हुआ है। ठीक बात है? चलिए तो अब आपको हम समझाते हैं कि इन चीजों का मतलब क्या है? K का क्या मतलब है? है ना? चलिए तो देखिए ये जो K स्टॉप्स है ना स्टॉप्स का मतलब सेम है। जैसे आप प्लेन से ट्रेवल",
+      "source": "caption",
+      "english_text": "Where will we do it from? From zero airport. You will also be given a destination airport. Destination means where do you want to reach? Let us assume that you are given destination one and you have to reach one. And one additional thing which we have not seen till now, neither is it the K stops nor it will be given. The value of K will remain given. Meaning, let us assume that the value of K has been given to you. What is the given value of K? Forest is given. Is that correct? So now let us explain to you what these things mean? What does K mean? Isn't it? Let's see, these K stops mean the same thing. Like you travel by plane"
+    },
+    {
+      "start_time": 166.239,
+      "end_time": 199.75,
+      "text": "करते हैं तो स्टॉप होता है ना बीच में मान लीजिए अगर आप दिल्ली से रांची जाना चाहते हैं तो बहुत बार ऐसा होता है कि आप दिल्ली से वाया पहले जयपुर जाते हैं। जयपुर में एक स्टॉप होता है। जयपुर से वापस रांची जाते हैं तो उसको हम लोग क्या कहते हैं? वन स्टॉप प्लेन है। यही कहते हैं ना कभी भी आप जब प्लेन से सफर करते हैं। मान लीजिए आपको दिल्ली से रांची जाना है। ठीक है? ऐसा होगा। अगर मान लो कि दिल्ली से रांची आप डायरेक्ट फ्लाइट चले जाते हैं। दिल्ली से रांची डायरेक्ट फ्लाइट है। उसको क्या बोला जाता है? उसको नॉनस्टॉप बोला जाता है। उसको बोला जाता है कि नॉनस्टॉप फ्लाइट है। मतलब डायरेक्ट डायरेक्ट जा रहे हैं। कोई स्टॉप नहीं है बीच में। बीच में कोई स्टॉक नहीं है। लेकिन अगर मान लीजिए",
+      "source": "caption",
+      "english_text": "If you do, there is a stop in between. Suppose if you want to go from Delhi to Ranchi, then many times it happens that you first go to Jaipur via Delhi. There is a stop at Jaipur. What do we call it when we go back to Ranchi from Jaipur? It is a one stop plane. This is what they say whenever you travel by plane. Suppose you have to go from Delhi to Ranchi. Ok? This will happen. Suppose you go by direct flight from Delhi to Ranchi. There is a direct flight from Delhi to Ranchi. What is it called? It is called nonstop. He is told that it is a nonstop flight. Means going directly. There is no stop in between. There is no stock in between. But suppose"
+    },
+    {
+      "start_time": 199.76,
+      "end_time": 234.149,
+      "text": "आप पहले दिल्ली से बॉम्बे जाते हैं। बॉम्बे में आप थोड़ा हल्ट करते हैं। मतलब आपकी प्लेन रुकती है और फिर बॉम्बे से वापस आप रांची जाते हैं। इसको हम लोग क्या कहते हैं? वन स्टॉप प्लेन है। क्यों? बॉम्बे में आप एक तरीके का वो लिए हैं। स्टॉप लिए हैं। अगर मान लीजिए ऐसा भी हो सकता है कि आप दिल्ली से पहले बेंगलुरु जाते हैं। बेंगलुरु से वापस बॉम्बे आते हैं। बॉम्बे से आप रांची जाते हैं। इसको हम लोग क्या कहते हैं? इसको हम लोग टू स्टॉप प्लेन बोलते हैं। मतलब आपको जाना तो दिल्ली से रांची था। आप बीच में दो जगह रुक गए। आप बोर में भी रुक गए और बॉम्बे में भी रुक गए। इसको हम लोग दो स्टॉप प्लेन बोलते हैं। आपको ना यही स्टॉप भी",
+      "source": "caption",
+      "english_text": "You first go to Bombay from Delhi. In Bombay you hult a little. Meaning your plane stops and then you go back to Ranchi from Bombay. What do we call this? It is a one stop plane. Why? In Bombay you have got a kind of that. Have taken a stop. Suppose it may also happen that you go to Bangalore before Delhi. Come back to Bombay from Bangalore. From Bombay you go to Ranchi. What do we call this? We call this a two-stop plane. Meaning you had to go from Delhi to Ranchi. You stopped at two places in between. You stayed in Bor and also in Bombay. We call this a two stop plane. You don't even have to stop here"
+    },
+    {
+      "start_time": 234.159,
+      "end_time": 262.31,
+      "text": "दिया हुआ है यहां पे। आपको यहां पे ये k का वैल्यू दिया हुआ है। K का क्या मतलब है ना? अगर आपका K वन दिया हुआ है। फॉर एग्जांपल आप एट मैक्स एट मैक्स वन स्टॉप ले सकते हैं अपने जर्नी में। एट मैक्स जरूरी नहीं है वन स्टॉप लेना। लेकिन अगर आप चाहे ना तो वन स्टॉप ले सकते हैं। वन स्टॉप का क्या मतलब है? मान लीजिए आप देखिए जीरो से आपको वन जाना है ना। अगर आप 0 से वन डायरेक्ट जाना चाहते हैं आप डायरेक्ट जा सकते हैं। कोई दिक्कत नहीं है। ये क्या हुआ? ये तो नॉनस्टॉप रूट है।",
+      "source": "caption",
+      "english_text": "It is given here. You are given the value of k here. What does K stand for? If your K is given one. For example, you can take at most one stop in your journey. At max it is not necessary to take one stop. But if you want, you can take one stop. What does one stop mean? Suppose you see, you have to go from zero to one. If you want to go from 0 to one directly, you can go directly. There is no problem. What happened? This is a nonstop route."
+    },
+    {
+      "start_time": 262.32,
+      "end_time": 296.07,
+      "text": "k = 0 लेकिन अगर k वन दिया हुआ है ना तो आप चाहे तो ऐसा कर सकते हैं कि आप 0 से टू जा सकते हैं, टू से वन जा सकते हैं। या फिर आप ज़ीरो से थ्री, थ्री से वन दोनों ही रूट वन स्टॉप रूट है। अब ये सारे चीजें यूज़ करके कि आप चाहें तो आप जीरो स्टॉप में आप डायरेक्टली चले जाइए। आप टू से वाया हो के वन स्टॉप चले जाइए। या तो आप थ्री से चले जो मन है करिए विद इन केस। आपको शॉर्टेस्ट डिस्टेंस बताना है कि ज़ीरो से वन का शॉर्टेस्ट डिस्टेंस पॉसिबल क्या होगा? बशर्ते कि आप एट मैक्स K स्टॉप्स ले सकते हैं। एट मैक्स कितना स्टॉप ले सकते",
+      "source": "caption",
+      "english_text": "k = 0, but if k is given as one, then if you want, you can do this that you can go from 0 to two, from two to one. Or you can go from zero to three, three to one, both routes are one stop routes. Now using all these things, if you want, you can go directly to zero stop. You go via two to one stop. Either you go with three, do whatever you want with this case. You have to tell the shortest distance, what would be the shortest distance possible from zero to one? Provided you can take at max K stops. How many stops can you take at max?"
+    },
+    {
+      "start_time": 296.08,
+      "end_time": 329.189,
+      "text": "हैं? K स्टॉप ले सकते हैं। मतलब कि मान लीजिए अगर आपको k = 0 दिया रहता। K क्या रहता? ज़ीरो। ज़ीरो का क्या मतलब है? नॉन स्टॉप। मतलब डायरेक्ट ही जाना है। कहीं और नहीं रोक सकते हैं। तो आपका आंसर ऑब्वियसली 100 हो जाता। क्यों? क्योंकि जब आप कोई स्टॉप ले ही नहीं सकते हैं। तो आपको जीरो से वन डायरेक्ट ही जाना पड़ेगा। मतलब और कोई ऑप्शन ही नहीं है ना कि आप उधर-उधर एक्सप्लोर कुछ नहीं कर सकते हैं। ज़ीरो से वन आपको चले जाना है। ठीक है? अच्छा मान लीजिए अगर k = 1 दिया हुआ है तो आपका आंसर क्या होता? देखिए 0 से 1 पॉसिबिलिटी है। आप 0 से 1 कहीं पर ऐसा लिखा हुआ नहीं है कि लेना ही लेना है।",
+      "source": "caption",
+      "english_text": "are? Can take K stop. That means, suppose you were given k = 0. What remains? Zero. What does zero mean? Nonstop. That means you have to go directly. Can't stop anywhere else. So your answer would obviously be 100. Why? Because when you can't take any stops. So you will have to go directly from zero to one. This means that there is no other option and you cannot explore anything here and there. You have to go from zero to one. Ok? Well suppose if k = 1 is given then what would be your answer? See, there is 0 to 1 possibility. It is not written anywhere that you have to take 0 to 1."
+    },
+    {
+      "start_time": 329.199,
+      "end_time": 360.71,
+      "text": "नहीं एट मैक्स आपकी अपनी सुविधा के हिसाब से आप ले सकते हैं। आप चाहे तो ज़ीरो से वन चल सकते थे जिसमें 100 कि.मी. लगता। एक रूट और है कि आप ज़ीरो से टू और फिर टू से वन। इसमें 20 + 30 50 कि.मी. एक और रूट है कि ज़ीरो से थ्री, थ्री से वन इसमें 70 कि.मी. तो आपका आंसर क्या होता? 50 कि.मी. क्यों? क्योंकि आप ये वाला रूट लेके 50 कि.मी. में ही अपनी दूरी तय कर सकते हैं। कब? जब आपका k = 1 हो। अब k 2 3 4 भी हो सकता है लेकिन उससे कुछ होगा नहीं। अगर k टू भी होगा तो भी आपका आंसर यही रहेगा।",
+      "source": "caption",
+      "english_text": "No at max, you can take it as per your convenience. If you wanted, you could walk from zero to one which would cover 100 kms. It seems. There is another route that you go from zero to two and then from two to one. In this 20 + 30 50 km. There is another route that is zero to three, three to one, it is 70 km. So what would have been your answer? 50 km Why? Because by taking this route you will travel 50 kms. Only I can determine my distance. When? When your k = 1. Now k can also be 2 3 4 but that will not do anything. Even if k is two, your answer will remain the same."
+    },
+    {
+      "start_time": 360.72,
+      "end_time": 393.909,
+      "text": "थ्री होगा तो भी आपका आंसर यही रहेगा। तो यही आपका सवाल है भैया कि आपको सोर्स और डेस्टिनेशन दिया हुआ है। आपके सामने ग्राफ मौजूद है। आपको सोर्स से डेस्टिनेशन तक का शॉर्टेस्ट पाथ निकालना है। मतलब शॉर्टेस्ट डिस्टेंस निकालना है। लेकिन आपके पास एक और चीज है कि आपके पास K दिया हुआ है। मतलब एट मैक्स आप K स्टॉप्स ले सकते हैं। कितने स्टॉप ले सकते हैं? एट मैक्स K स्टॉप्स आप ले सकते हैं। एक चीज़ और यहां नोटिस कीजिएगा। चलिए हम लोग अब इसको समझना शुरू करेंगे। तो हम धीरे-धीरे अब इसको खोलेंगे। लेकिन ऊपर ऊपर से मोटा-मोटा क्वेश्चन आपको ये बोलता है कि भैया एट मैक्स के स्टॉप्स ले सकते हो। अब बताओ",
+      "source": "caption",
+      "english_text": "Even if it is three, your answer will remain the same. So this is your question brother that you have been given the source and destination. The graph is present in front of you. You have to find the shortest path from source to destination. Meaning we have to find the shortest distance. But you have one more thing that you have given K. Meaning at max you can take K stops. How many stops can I take? At Max K Stops You Can Take. Notice one more thing here. Let us now start understanding this. So now we will slowly open it. But on the surface the broad question tells you that you can take stops at max. now tell me"
+    },
+    {
+      "start_time": 393.919,
+      "end_time": 426.55,
+      "text": "शॉर्टेस्ट डिस्टेंस क्या है? अब आइए आपको हम ये क्वेश्चन थोड़ा समझाना शुरू करते हैं और बताते हैं कि जो हम लोग पढ़ चुके हैं उससे ये क्वेश्चन कैसे बनता है? चलिए अब [गला साफ़ करने की आवाज़] ये वाला डायग्राम याद कीजिए। ये डायग्राम आप लोग पहले भी देख चुके हैं। इसी ग्राफ सीरीज में। किस लेक्चर में देख चुके हैं? बेलमेनफोर्ड के लेक्चर में। बेलमेनफोर्ड के लेक्चर में आप लोग को समझाने के लिए कि क्यों बेलमेनफोर्ड यूज़ होता है और कैसे बेलमेनफोर्ड काम करता है। हम इसी का यूज़ किए इसी एग्जैक्ट रूट का यूज़ किए थे। मान लीजिए कि आपको इसी यही रूट ना इस क्वेश्चन में दिया हुआ है। तो हम आपको बेलमिनफोर्ड समझाना कैसे शुरू किए थे? हम आपको बोले थे",
+      "source": "caption",
+      "english_text": "What is the shortest distance? Now let us start explaining this question to you a little and tell how this question is formed from what we have read? Now [clearing throat] remember this diagram. You guys have seen this diagram before too. In this graph series. In which lecture have you seen it? In Belmanford's lectures. In Belmenford's lecture to explain to you why Belmenford is used and how Belmenford works. We used this exact route. Suppose you have been given the same route in this question. So how did we begin to explain Belminford to you? we told you"
+    },
+    {
+      "start_time": 426.56,
+      "end_time": 455.67,
+      "text": "कि बेलमिनफोर्ड क्या देखा ना कि इस ग्राफ में ये जो ग्राफ है पूरा मान लीजिए यही आपका एयरपोर्ट का रूट भी है। सबसे कॉम्प्लेक्स शहर कौन सा है? कॉम्प्लेक्स शहर का क्या मतलब था? किस शहर तक जाने के लिए सबसे ज्यादा रास्ते हैं। मतलब किस शहर में पहुंचने के लिए सबसे ज्यादा आपके पास ऑप्शन है? हम लोग को पता चला था कि दिल्ली अगर आपको बेंगलुरु से दिल्ली जाना है ना तो आपके पास बहुत सारा ऑप्शन है। कौन-कौन सा ऑप्शन है? एक तो आप बेंगलुरु से दिल्ली डायरेक्ट जा सकते हैं। उसको हम यहां लिख दिए। आप बेंगलुरु से रांची और रांची से दिल्ली जा सकते हैं। उसको यहां लिख दिए।",
+      "source": "caption",
+      "english_text": "Belminford, what did you see, this graph in this graph is complete, assume that this is also the route to your airport. Which is the most complex city? What did the complex city mean? Which city has the maximum number of routes to reach it? Meaning, which city do you have the most options to reach? We came to know that if you want to go from Bengaluru to Delhi, you have many options. Which are the options? Firstly, you can go directly from Bangalore to Delhi. We wrote it here. You can go from Bengaluru to Ranchi and from Ranchi to Delhi. Wrote it here."
+    },
+    {
+      "start_time": 455.68,
+      "end_time": 489.67,
+      "text": "आप बेंगलुरु से रांची, रांची से कोलकाता और कोलकाता से दिल्ली आ सकते हैं। उसको हम यहां लिख दिए। एक और आपके पास ऑप्शन था कि आप बेंगलुरु से रांची, रांची से कोलकाता, कोलकाता से बॉम्बे और बॉम्बे से दिल्ली आ सकते हैं। ये भी एक ऑप्शन था। कौन सा ऑप्शन था ये? ये वाला ऑप्शन था ये। इसको भी हम लिख दिए। तो दिल्ली आने के लिए आपके पास कितने मैक्सिमम चीजें हो सकती हैं? चार तरीके के रूट हो सकते हैं। और क्योंकि हम ये भी बोले थे कि इसमें टोटल नंबर ऑफ शहर कितने हैं भाई? 1 2 3 4 5 पांच शहर है ना? तो दिल्ली आने का जो सबसे बड़ा रूट",
+      "source": "caption",
+      "english_text": "You can come from Bengaluru to Ranchi, Ranchi to Kolkata and Kolkata to Delhi. We wrote it here. Another option you had was that you could come from Bengaluru to Ranchi, Ranchi to Kolkata, Kolkata to Bombay and Bombay to Delhi. This was also an option. Which option was this? This was the option. We wrote this also. So what is the maximum number of things you can have for coming to Delhi? There can be four types of routes. And because we had also said that what is the total number of cities in this, brother? 1 2 3 4 5 There are five cities, right? So the biggest route to reach Delhi"
+    },
+    {
+      "start_time": 489.68,
+      "end_time": 516.55,
+      "text": "पॉसिबल हो सकता है ना सबसे बड़ा रूट कौन सा आपको दिख रहा है? ये वाला रूट उसमें कितने एजेस होंगे? मैक्सिमम चार एजेस होंगे। कितने एजेस होंगे? चार एजेस। क्यों? क्योंकि देखिए मैक्सिमम रूट क्या हो सकता है कि आप सारे शहर घूम लीजिए। आप आपके पास जितने शहर हैं आप सब घूम लीजिए। बेंगलुरु में चले जाइए, रांची चले जाइए, कोलकाता, बॉम्बे, दिल्ली सब में घूम लीजिए। अगर आप सब भी घूमेंगे ना तो कितना एज आएगा? चार एज आएगा। क्योंकि अगर आप पांच शहर घूमेंगे तो उसमें चार एज आएगा।",
+      "source": "caption",
+      "english_text": "It may be possible, which is the biggest route you can see? How many edges will there be in this route? There will be a maximum of four edges. How many edges will there be? Four Ages. Why? Because see what is the maximum route that can be taken if you visit the entire city. Visit all the cities you have. Go to Bangalore, go to Ranchi, visit Kolkata, Bombay, Delhi. How much age will come if you all also roam around? Four edges will come. Because if you visit five cities, there will be four edges in it."
+    },
+    {
+      "start_time": 516.56,
+      "end_time": 549.11,
+      "text": "इससे ज्यादा कॉम्प्लेक्स मतलब इससे भी कोई बड़ा रूट हो सकता है क्या? बिल्कुल नहीं हो सकता है। नहीं हो सकता है ना? कोई ऐसा बोले कि दिल्ली जाने के लिए हमको छह एज की जरूरत पड़ेगी। नहीं हो सकता है। छह एज का मतलब कि आप कोई ना कोई शहर रिपीट कर रहे हैं। मतलब आप ऐसा कर रहे होंगे कि बेंगलुरु से रांची गए, रांची से कोलकाता गए, कोलकाता से वापस रांची आ गए। तो कोलकाता से वापस रांची काहे आ गए? आप ठीक से जाइए ना। आप जितना वापस इधर-उधर करेंगे, उतना आपका डिस्टेंस बढ़ेगा। उतना आपका स्टॉपेज बढ़ेगा। तो उसका कोई पॉइंट नहीं है। जब आपको डिस्टेंस के बारे में पता करना है तो आप ऐसा कर ही नहीं सकते हैं कि आप आप चार से ज्यादा एज लेके इस",
+      "source": "caption",
+      "english_text": "More complex than this, meaning can there be a bigger route than this? Absolutely not possible. It can't be possible, right? Someone said that we would need six az to go to Delhi. Can't happen. Six edges means that you are repeating some city or the other. Meaning, you must be doing this that you went from Bengaluru to Ranchi, from Ranchi to Kolkata, from Kolkata you came back to Ranchi. So why did you come back to Ranchi from Kolkata? You go properly. The more you move back and forth, the more your distance will increase. That much your stoppage will increase. So it has no point. When you have to find out the distance, you cannot do this by taking more than four edges."
+    },
+    {
+      "start_time": 549.12,
+      "end_time": 582.23,
+      "text": "दिल्ली पे आ सकें। जब नंबर ऑफ शहर पांच है तो मैक्सिमम रूट आपका कितना हो सकता है? चार एज। इससे बड़ा रूट नहीं हो सकता। कुछ भी कर लीजिए नहीं हो पाएगा। ठीक बात है। अच्छा। इसके बाद हम लोग क्या करना शुरू किए थे? कि चलो भैया चार रूट है। हम लोग उसके बाद रिलैक्सेशन करना शुरू किए थे। क्या करना शुरू किए थे? रिलैक्सेशन शुरू करना शुरू किए थे। और कितनी बार रिलैक्सेशन करना किए थे? चार बार। चार बार। क्यों? क्योंकि n फाइव था। तो n - 5 बार हम लोग एजेस को रिलैक्स किए थे। और हम",
+      "source": "caption",
+      "english_text": "Can come to Delhi. What is the maximum route you can take when the number of cities is five? Four Edges. There cannot be a bigger route than this. No matter what you do, it won't work. That's right. Good. What did we start doing after this? Come on brother, there are four routes. We started doing relaxation after that. What did you start doing? Started doing relaxation. And how many times did you do relaxation? Four times. Four times. Why? Because n was five. So we relaxed the edges n – 5 times. and we"
+    },
+    {
+      "start_time": 582.24,
+      "end_time": 616.15,
+      "text": "लोग देखे थे कि जब आप चार बार अपना रिलैक्सेशन करेंगे ना तो आपको इसका भी आंसर मिल जाएगा। सबसे पहले इसका मिलेगा, फिर इसका मिलेगा, फिर इसका मिलेगा और लास्ट में इसका भी मिल जाएगा। अब इसको इस क्वेश्चन से कनेक्ट करके देखिए। अगर आप बेंगलुरु से दिल्ली डायरेक्ट जाते हैं तो आपको कितना स्टॉप लेना पड़ता है? k = 0 इसका मतलब जीरो स्टॉप है। मतलब कि जब आपका दिल्ली आपके सोर्स से केवल एक एज दूर है तो आप जीरो स्टॉप ले रहे हैं। आप नॉनस्टॉप फ्लाइट ले रहे हैं। बेंगलुरु से दिल्ली डायरेक्ट आने का मतलब कि आप नॉनस्टॉप",
+      "source": "caption",
+      "english_text": "People had seen that if you do your relaxation four times, you will get the answer to this also. First you will get this, then you will get this, then you will get this and lastly you will get this too. Now try connecting it with this question. If you go directly from Bengaluru to Delhi, how many stops do you have to take? k = 0 means zero stop. Meaning that when your Delhi is only one edge away from your source, you are taking zero stops. You are taking a nonstop flight. Coming directly from Bengaluru to Delhi means that you can nonstop"
+    },
+    {
+      "start_time": 616.16,
+      "end_time": 649.75,
+      "text": "फ्लाइट कर रहे हैं। आपका के ज़ीरो है। आप अगर बोर से रांची और रांची से दिल्ली जा रहे हैं तो आपको कितना स्टॉप लग रहा है? K = 1 स्टॉप लग रहा है। दो H मतलब एक स्टॉप। बोर, रांची, कोलकाता, दिल्ली कितना स्टॉप लगेगा? K = टू स्टॉप। बोर, रांची, कोलकाता, बॉम्बे, दिल्ली कितना स्टॉप लगेगा? K = थ्री स्टॉप। अब K = 4 स्टॉप में सेम ही रहेगा। कुछ आपका चेंज नहीं होगा। क्या समझ में आ रहा है? बेलमेनफोर्ड में बेलमेनफोर्ड में जब आप एक बार",
+      "source": "caption",
+      "english_text": "Are flying. Your K is zero. If you are going from Bor to Ranchi and Ranchi to Delhi, how many stops are you facing? K = 1 Stopping is taking place. Two H's mean one stop. How many stops will it take for Bor, Ranchi, Kolkata, Delhi? K=to stop. How many stops will it take for Bor, Ranchi, Kolkata, Bombay, Delhi? K = Three Stop. Now the same will remain in K = 4 stops. Nothing will change for you. What do you understand? In Belmenford In Belmenford When Once You"
+    },
+    {
+      "start_time": 649.76,
+      "end_time": 684.15,
+      "text": "रिलैक्सेशन किए थे आपको किसका आंसर मिला था? इस आदमी का। दो रिलैक्सेशन में किसका आंसर मिला था? इस आदमी का। तीन रिलैक्सेशन मतलब थर्ड रिलैक्सेशन में किसका आंसर मिला था? इस आदमी का। फोर रिलैक्सेशन में किसका आंसर मिल गया था, भाई? इसका आंसर मिल गया था। मतलब कि मान लीजिए इस क्वेश्चन में आपको k = 0 दिया रहता। आपको k = 0 दिया रहता तो उसका क्या मतलब है? अगर k = 0 दिया है ना आपको ये सारे रूट है कि नहीं है? उसका क्या वेट है? उससे मतलब ही नहीं",
+      "source": "caption",
+      "english_text": "Did relaxation? Whose answer did you get? Of this man. Whose answer was found in two relaxations? Of this man. Three relaxations means whose answer was found in the third relaxation? Of this man. Whose answer was found in Four Relaxations, brother? The answer was found. Meaning that suppose in this question you were given k = 0. What does it mean if you are given k = 0? If k = 0 is given, do you have all these roots or not? What is his weight? it doesn't make any sense"
+    },
+    {
+      "start_time": 684.16,
+      "end_time": 718.389,
+      "text": "होना चाहिए। k = 0 मतलब नॉनस्टॉप फ्लाइट मतलब आपको मैक्सिमम एक ही एज चाहिए। उसका आंसर आपको कैसे मिल जाएगा? जैसे ही आप एक बार रिलैक्सेशन करेंगे ना आपको वो आंसर ऐसे ही मिल जाएगा। बॉम्बे टू दिल्ली k = 0 स्टॉप में आपको उसका आंसर पहली बार रिलैक्सेशन करते ही मिल जाएगा। तो आपको कितनी बार रिलैक्सेशन करना चाहिए? एक रिलैक्सेशन करिए और आपका काम हो गया। आपका काम क्या हो गया? हो गया। अगर मान लीजिए आपको k = 1 दिया रहे मतलब आप एक स्टॉप ले सकते हैं। आप कितना स्टॉप ले सकते हैं? एक स्टॉप। तो आपको इसका भी आंसर चाहिए। कितनी",
+      "source": "caption",
+      "english_text": "Should be. k = 0 means nonstop flight, meaning you need only one edge at most. How will you get its answer? As soon as you relax, you will get that answer. In Bombay to Delhi k = 0 stop, you will get the answer as soon as you relax for the first time. So how often should you relax? Do a relaxation and you are done. What is your work done? Done. Suppose you are given k = 1 which means you can take a stop. How many stops can you take? One stop. So you need the answer to this also. how much"
+    },
+    {
+      "start_time": 718.399,
+      "end_time": 748.069,
+      "text": "बार रिलैक्स करेंगे तो आपको इसका आंसर मिल जाएगा। दो बार अगर आप रिलैक्स कर दिए आपको इसका आंसर मिल जाएगा। अगर आप k = 3 दिया टू दिया हुआ है। आपको ये चाहिए। इसका भी आंसर चाहिए। कितनी बार रिलैक्स करने पे इसका आंसर मिल जाता था? तीन रिलैक्स करेंगे आपको k = 2 का आंसर मिल जाएगा। k = 3 दिया हुआ है। कितने रिलैक्सेशन पे उसका आंसर मिलता था? चार रिलैक्स करेंगे आपको k = 3 का आंसर मिल जाएगा। तो कोई पैटर्न दिखा कि नहीं दिखा? जो भी k दिया हुआ है",
+      "source": "caption",
+      "english_text": "If you relax a few times, you will get the answer. If you relax twice you will get the answer. If you k = 3 given to given. This is what you want. This also needs an answer. How many times did I relax and get the answer? Relax three times and you will get the answer of k = 2. Given k = 3. After how many relaxations was the answer given? If you relax four times you will get the answer of k = 3. So is any pattern visible or not? whatever k is given"
+    },
+    {
+      "start_time": 748.079,
+      "end_time": 782.71,
+      "text": "जो भी k दिया हुआ है k + 1 टाइम्स k + 1 टाइम्स रिलैक्सेशन कर दीजिए बेलm फोर्ड में। k + 1 टाइम्स बेलm फोर्ड का रिलैक्सेशन कर दीजिए। आपको आंसर मिल जाएगा। यूजुअली यूजुअली बेलमिनफोर्ड में क्या अगेन हम बोल रहे हैं कि अगर आप बेलनफोर्ड का वीडियो नहीं देखे हैं आपको कुछ समझ में नहीं आएगा प्लीज जाके बेलमेनफोर्ड एक बार देख लीजिए भूल गए हैं तो रिवाइज कर लीजिए यूजुअली बेलमिनफोर्ड कितने बार रिलैक्स करता था n - 1 टाइम्स और एक बार करता था वो चेकिंग करने के लिए लास्ट में एक और चीज़ के बारे में वो नेगेटिव साइकिल वो अलग बात है लेकिन",
+      "source": "caption",
+      "english_text": "Whatever k is given, relax it k + 1 times in Belm Ford. Relax the Belm Ford k + 1 times. You will get the answer. Usually Usually Belminford What again we are saying that if you have not seen Belminford's video, you will not understand anything. Please go and watch Belminford once. If you have forgotten then revise it. Usually Belminford used to relax how many times n - 1 times and did that once to check. One more thing about the last thing, that negative cycle, that is a different thing but."
+    },
+    {
+      "start_time": 782.72,
+      "end_time": 817.19,
+      "text": "यूजुअली बेलमैनफोर्ड कितनी बार रिलैक्स करता था n - 1 टाइम्स क्योंकि इसको इन चारों का आंसर चाहिए होता था क्योंकि हो सकता है इतना कॉम्प्लेक्स आपको कितनी कितनी बार रिलैक्स करना है? k + 1 टाइम्स। k + 1 टाइम्स आपको रिलैक्स करना है। क्यों? क्योंकि अगर आपको मान लीजिए k = 1 दिया हुआ है तो आपको बस इन दोनों से मतलब है। नीचे वाले से आपको मतलब ही नहीं है। होगा वो रूट होगा उसमें बहुत शॉर्ट डिस्टेंस। चाहिए ही नहीं। अलाउड ही नहीं है। अगर k1 दिया हुआ है ना तो ये दोनों आदमी अलाउड ही नहीं है। इसमें कितना भी कम डिस्टेंस लगे जा ही नहीं सकते हैं। K1 मतलब एक स्टॉप में जाना है आपको। या तो आप डायरेक्ट जाइए या तो आप एक स्टॉप में",
+      "source": "caption",
+      "english_text": "Usually how many times did Belmanford relax? n - 1 times because it required the answer to all four because it could be so complex. How many times do you have to relax? k + 1 times. k + 1 times you have to relax. Why? Because if you assume k = 1, then you are only concerned with these two. You don't care about the one below. That route will be of very short distance. Not needed at all. It is not loud at all. If k1 is given then both these men are not allowed. No matter how short the distance, it cannot be covered. K1 means you have to go in one stop. Either you go direct or you go in one stop"
+    },
+    {
+      "start_time": 817.2,
+      "end_time": 850.949,
+      "text": "जाइए। एक से ज्यादा नहीं लेना है। अगर आप बेलm फोर्ड चला दिए कितनी बार वो जो रिलैक्सेशन कितनी बार? K + 1 टाइम्स क्या आपको आंसर मिल जाएगा? यस आपको आंसर मिल जाएगा। बिल्कुल आपको आंसर मिल जाएगा। बात समझ में आ रही है या नहीं आ रही है? जो आप बेलनफोर्ड पढ़े थे। बेलमेनफोर्ड एग्जैक्टली यही तो करता था। एक रिलैक्सेशन में आपको डायरेक्ट वाले का आंसर मिल जाता था। मतलब जब दिल्ली आपसे एक एज दूर हो। जब आप सोर्स से डेस्टिनेशन जाने के लिए एक एज का इस्तेमाल करना चाहते हैं और उसका शॉर्टेस्ट निकालना चाहते हैं तो आपको वो काम एक रिलैक्सेशन में मिल जाता था। जब आप बेंगलुरु से दिल्ली दो एज में जाना चाहते हैं उसका शॉर्टेस्ट निकालना चाहते हैं",
+      "source": "caption",
+      "english_text": "Go. Do not take more than one. If you drive the Bell Ford, how many times does that relaxation occur? K + 1 Times Will You Get the Answer? Yes you will get the answer. You will definitely get the answer. Are you understanding the point or not? Which you read Belenford. That's exactly what Belmanford did. In one relaxation you could get the answer to the direct question. Meaning when Delhi is one edge away from you. When you wanted to use an edge to go from source to destination and find its shortest path, you could get that task done in one relaxation. When you want to go from Bengaluru to Delhi in two directions, you want to find the shortest route."
+    },
+    {
+      "start_time": 850.959,
+      "end_time": 878.069,
+      "text": "आपको वो दो रिलैक्स करके मिल जाता था। सेम काम को हम कुछ नहीं किए हैं। इस वाले को अपने k से जोड़ दिए हैं कि भैया इस वाले में k कितना है? इसमें k1 है। मतलब [गला साफ़ करने की आवाज़] कि k1 निकालने के लिए आपको दो रिलैक्सेशन करना है। तो जो भी आपको k दिया रहे k + 1 टाइम्स अगर आप एज रिलैक्स करेंगे आपको आपके डेस्टिनेशन का आंसर मिल जाएगा। वो आंसर रिटर्न कर दीजिए। सिंपल सी बात है। एक और इसमें छोटा सा छोटा सा ट्विस्ट है। यह तो बहुत अच्छा है। ये तो आपको उम्मीद करते हैं कि समझ में आ रहा होगा। छोटा सा ट्विस्ट और है।",
+      "source": "caption",
+      "english_text": "You could get that by relaxing twice. We have not done anything about the same work. We have added this one to our k that brother, how much k is there in this one? It has k1. Meaning [clearing throat] that to get k1 you have to do two relaxations. So whatever k is given to you, if you relax the edge k + 1 times you will get the answer of your destination. Please return that answer. It's a simple thing. Another small twist in this. it so good. I hope you understand this. There is one more small twist."
+    },
+    {
+      "start_time": 878.079,
+      "end_time": 905.43,
+      "text": "वो अभी आपको हम बताते हैं। तो जो हम छोटा सा ट्विस्ट का बात कर रहे हैं ना ये वाला एग्जांपल देखिए। आपको मान लीजिए ये एयरपोर्ट दिया हुआ है। आपका सोर्स ज़ीरो है। डेस्टिनेशन वन है और आपका K कितना है? एक है। मतलब आपको ज़ीरो से वन पहुंचना है। और आप कितना स्टॉप यूज़ कर सकते हैं? एक स्टॉप मतलब कितना एज हो सकता है ज़ीरो और वन के रास्ते में? एट मैक्स दो एज। K + 1 याद रखिएगा। K स्टॉप्स मतलब K + 1 एज होता है। स्टॉप एक होगा लेकिन उसमें एज दो लग जाएगा ना। तो आपके पास दो एज होना चाहिए।",
+      "source": "caption",
+      "english_text": "We will tell you that right now. So we are talking about a small twist, see this example. Suppose this airport is given to you. Your source is zero. Destination one and what is your K? There is one. Meaning you have to go from zero to one. And how many stops can you use? One stop means how much edge can there be on the way to zero and one? At max two ages. Remember K + 1. K stops means K + 1 edges. There will be one stop but two edges will be attached to it. So you should have two edges."
+    },
+    {
+      "start_time": 905.44,
+      "end_time": 938.629,
+      "text": "हम लोग जो बेंडन फोर्ड देखें आपको कितनी बार रिलैक्स करना चाहिए उस केस में? आपको दो बार रिलैक्स करना चाहिए कि क्योंकि k + 1 टाइम्स आपको रिलैक्स करना है। ठीक है? अच्छा इसको आपको समझाने के लिए क्या करते हैं? हम K को ज़ीरो कर देते हैं। हम K को ज़ीरो कर देते हैं। आपको ज़ीरो स्टॉप में पहुंचना है। अब आपको पता चल गया होगा कि भैया ज़ीरो स्टॉप में पहुंचना है। मतलब ज़ीरो से डायरेक्ट जाना पड़ेगा। तो 100 इसका आंसर होगा। बेलमिन फोर चला के देख लेते हैं। देखिए कि 100 आंसर सच में आ रहा है कि नहीं आ रहा है। k = 0 मतलब कितनी रिलैक्सेशन करनी है? एक रिलैक्सेशन। 0 + 1 टाइम्स आपको रिलैक्स करना है। तो देखिए ये आपका एजेस है। ये आपके एजेस हैं। तो",
+      "source": "caption",
+      "english_text": "We guys see Joe Bandon Ford How often should you relax in that case? You should relax twice because that is k + 1 times you have to relax. Ok? Well, what do we do to explain this to you? We make K zero. We make K zero. You have to reach zero stop. Now you must have come to know that you have to reach zero stop. Meaning we will have to go direct from zero. So the answer will be 100. Let's run Belmin Four and see. See whether the 100 answer is really coming or not. k = 0 means how much relaxation is to be done? A relaxation. 0 + 1 Times You Have to Relax. So see, this is your edge. These are your edges. so"
+    },
+    {
+      "start_time": 938.639,
+      "end_time": 971.269,
+      "text": "रिलैक्स का क्या मतलब होता था? हम लोग जब बिलममेन फोर्ट सीख रहे थे तो रिलैक्स का क्या मतलब होता था? कि ये तो आपका हो जाता था जो भी आपका रिजल्ट आ रहे हैं। तो शुरू में ज़ीरो का मतलब ज़ीरो हो जाता था। मतलब ज़ीरो से ज़ीरो पहुंचना है तो ज़ीरो है। और बाकी सब इनफिनिटी होता था। आपका रिलैक्स का लॉजिक क्या होता था कि अगर इफ रिजल्ट ऑफ अ रिजल्ट ऑफ जो भी है कर लीजिए क्या करिएगा d इज ग्रेटर देन रिजल्ट ऑफ s + वेट तो",
+      "source": "caption",
+      "english_text": "What did relax mean? When we were learning Billemman Fort, what did relax mean? That it becomes yours, whatever your results are. So initially zero meant zero. Meaning if we have to go from zero to zero then it is zero. And everything else was infinity. What was your relaxed logic that if the result of a is whatever, what will you do if d is greater than the result of s + weight then"
+    },
+    {
+      "start_time": 971.279,
+      "end_time": 1000.47,
+      "text": "रिजल्ट ऑफ़ d = रिजल्ट ऑफ़ s + वेट मतलब अगर सोर्स से डेस्टिनेशन कोई एज है और आपको पता चलता है कि जो अभी का रिजल्ट है डेस्टिनेशन का अभी वाला जो रिजल्ट है वो अभी के सोर्स के रिजल्ट और उसके वेट के सम से बड़ा है। तो हम लोग इसको रिलैक्स इसी को रिलैक्स बोला जाता था। चलिए हम लोग देखते हैं कि अगर एक ही बार हम लोग रिलैक्स करें तो आंसर आता है कि नहीं आता है। तो देखिए सबसे पहले तो इस एज को रिलैक्स करिए। इसको हम वन वाला बोलते हैं।",
+      "source": "caption",
+      "english_text": "Result of d = Result of s + Weight Meaning if the source to destination is any edge and you find that the current result of the destination is greater than the sum of the current result of the source and its weight. So we used to call it relaxed. Let us see whether the answer comes or not if we relax just once. So see, first of all relax this edge. We call him the one from the forest."
+    },
+    {
+      "start_time": 1000.48,
+      "end_time": 1034.069,
+      "text": "1 2 3 इस एज को रिलैक्स करिए। तो क्या बोलेगा कि अगर रिजल्ट ऑफ वन इज ग्रेटर देन रिजल्ट ऑफ 0 + 100 रिजल्ट ऑफ़ वन अभी क्या है? इंफिनिटी है। तो ये है बड़ा बिल्कुल है। तो इसको हम क्या बोलेंगे? रिजल्ट ऑफ़ ज़ीरो तो ज़ीरो है। 0 + 100 तो इसको हम लोग बदल के 100 कर देंगे। इसको हम लोग बदल के 100 कर देंगे। रिलैक्स हो गया। अगला देखिए। ज़ीरो से टू इसको भी बदल के हम लोग 50 कर देंगे। इसको भी उसी लॉजिक से बदल के हम लोग 50 कर देंगे। ठीक है? अब अब टू से वन टू से वन देखिए बहुत ध्यान से देखिए",
+      "source": "caption",
+      "english_text": "1 2 3 Relax this edge. So what will we say if the result of one is greater than the result of 0 + 100, what is the result of one now? There is infinity. So this is absolutely big. So what will we call this? Result of zero is zero. 0 + 100 then we will change it to 100. We will change it to 100. Relaxed. See next. We will change this from zero to 50. We will change this to 50 using the same logic. Ok? Now now look two to one two to one look very carefully"
+    },
+    {
+      "start_time": 1034.079,
+      "end_time": 1066.15,
+      "text": "इसी को हम बताना चाह रहे हैं। इसी को हम बताना चाह रहे हैं। बहुत ध्यान से देखिएगा। दो एज रिलैक्स हो चुका है। लेकिन सारा एज रिलैक्स करना है ना। टू से वन एक एज है जिसका वेट 20 है। तो ये क्या बोलेगा? इस केस में s = 2 होगा। d = 1 होगा और वेट इज़ इक्वल टू 20 होगा। ये क्या देखेगा? अगर रिजल्ट ऑफ़ 1 इज़ ग्रेटर दैन रिजल्ट ऑफ़ 2 + 20 तो रिजल्ट ऑफ़ टू अभी क्या है? है। अभी अभी क्या है? 50 हो चुका है। ओरिजिनली इंफिनिटी था। लेकिन आप इसको जस्ट अभी थोड़ी देर पहले इसको 50 कर दिए",
+      "source": "caption",
+      "english_text": "This is what we want to tell. This is what we want to tell. Will look very carefully. Two edges have been relaxed. But the whole edge has to be relaxed, right? Two to One is an edge whose weight is 20. So what will he say? In this case s = 2. d = 1 and weight is equal to 20. What will he see? If result of 1 is greater than result of 2 + 20 then what is the result of 2 now? Is. What is it now? It's already 50. Originally it was Infinity. But you just made it 50 a while back."
+    },
+    {
+      "start_time": 1066.16,
+      "end_time": 1096.71,
+      "text": "थे। तो ये बोलेगा 50 + 20 और रिजल्ट ऑफ़ वन। वन में भी क्या लिखा हुआ है? 100 जो भी अभी हुआ है। 100 इज ग्रेटर दैन 50 + 20। यस 100 इज़ ग्रेटर दैन 70। तो ये क्या कर देगा? रिजल्ट वन को मिटा के 70 लिख देगा। देखिए रिजल्ट वन को मिटा के 70 लिख देगा। ये देखिए। और एक रिलैक्सेशन आपका खत्म हो जाएगा क्योंकि तीनों एज आप रिलैक्स कर दिए हैं। अब देखिए। अब जब आप आंसर रिटर्न करेंगे ना आंसर में क्या रिटर्न करेंगे? रिजल्ट ऑफ डेस्टिनेशन जो कि वन है। आपके आंसर में 70 रिटर्न हो रहा है। आपके आंसर में क्या रिटर्न हो रहा है?",
+      "source": "caption",
+      "english_text": "Were. So it will say 50 + 20 and result of one. What is written in the forest also? 100 whatever just happened. 100 is greater than 50 + 20. Yes 100 is greater than 70. So what will this do? Result will erase one and write 70. See the result will erase one and write 70. Look at this. And your relaxation will end because you have relaxed all three edges. watch now. Now when you return the answer, what will you return in the answer? Result of destination which is one. Your answer is returning 70. What is being returned in your answer?"
+    },
+    {
+      "start_time": 1096.72,
+      "end_time": 1124.23,
+      "text": "70 रिटर्न हो रहा है। लेकिन क्वेश्चन आपका k = 0 स्टॉप था। k = 0 स्टॉप का क्या मतलब होता है? नॉनस्टॉप। अगर आप नॉनस्टॉप इसका आंसर देखेंगे, आपको लगेगा कि 100 होना चाहिए आंसर। लेकिन आप कौन सा आंसर रिटर्न कर रहे हैं? आप ये वाला आंसर रिटर्न कर रहे हैं। 50 + 20 ये अलाउड ही नहीं है। तो फिर आप इसको कैसे रिटर्न कर रहे हैं? क्या इसका मतलब बेलमिन फोर्ड नहीं चलेगा? चलेगा। बेलमिन फोर्ड में एक छोटा सा बग नहीं होता है। ये इसका बिहेवियर होता है।",
+      "source": "caption",
+      "english_text": "70 returns are being made. But the question was your k=0 stop. What does k = 0 stop mean? Nonstop. If you look at the answer nonstop, you will think that the answer should be 100. But what answer are you returning? You are returning this answer. 50 + 20 is not allowed at all. Then how are you returning it? Does this mean Belmin Ford will not run? Will work. The Bellmin Ford doesn't have one little bug. This is his behaviour."
+    },
+    {
+      "start_time": 1124.24,
+      "end_time": 1157.19,
+      "text": "देखिए जब आप एक बार रिलैक्सेशन किए ना जब आप एक बार रिलैक्सेशन किए तो अब क्या हुआ? सबसे पहले तो आप जीरो टू 1 वाला रिलैक्स किए जो कि बढ़िया रिलैक्सेशन था। अच्छा रिलैक्सेशन था। उसके बाद आप ज़ीरो से टू को रिलैक्स किए। तो टू इसके कारण 50 बन गया। टू इसके कारण 50 बन गया। ठीक है? उसके बाद आप टू से वन वाले एज को रिलैक्स किए तो आपका वन 70 बन गया। आपका वन क्या बन गया? 70 बन गया। लेकिन ये थोड़ा गलत है इस क्वेश्चन में। जब आप इसको ऐसा किए ना तो आप एक ही रिलैक्सेशन में आप एक ही रिलैक्सेशन में ज़ीरो टू वन का भी वैल्यू",
+      "source": "caption",
+      "english_text": "See, once you relaxed, once you relaxed, what happened now? First of all you relaxed the zero to 1 which was a good relaxation. It was good relaxation. After that you relaxed from zero to two. So two became 50 because of this. Two became 50 because of this. Ok? After that you relaxed the edge from two to one and your one became 70. What has become of your forest? Became 70. But this is a bit wrong in this question. When you do this, you can also change the value of zero to one in a single relaxation."
+    },
+    {
+      "start_time": 1157.2,
+      "end_time": 1184.15,
+      "text": "निकाल लिए जो कि 100 था और आप एक ही रिलैक्सेशन में ज़ीरो टू टू का टू और वन का भी वैल्यू निकाल लिए जो कि गलत बात है। आपका पूरा लॉजिक किस बारे में था कि जब हम एक बार रिलैक्स करेंगे ना तो हमको इसका वैल्यू मिलेगा। एक और बार रिलैक्स करेंगे तब जाके इसका सही वैल्यू मिलेगा। लेकिन यहां तो आप फर्स्ट रिलैक्सेशन में ही फर्स्ट रिलैक्सेशन में ही ये दोनों का वैल्यू निकाल लिए और आप दोनों का वैल्यू को मिला के अच्छा वाला रिटर्न कर रहे हैं।",
+      "source": "caption",
+      "english_text": "You took out the value which was 100 and in one relaxation you also took out the value of zero, two, two and one which is wrong. What your whole logic was about was that once we relax, we will get its value. Only when you relax one more time will you get its true value. But here, in the first relaxation itself, you have extracted the value of both and by combining the values ​​of both, you are making good returns."
+    },
+    {
+      "start_time": 1184.16,
+      "end_time": 1210.07,
+      "text": "ये क्यों हुआ? क्योंकि एक तरीके का चेन रिएक्शन है। एक तरीके का क्या है? चेन रिएक्शन। चेन रिएक्शन क्यों है? पहले आप 0 टू टू वाला एच से टू का सही वैल्यू निकालते हैं। उसी बार में आप टू से वन वाले को यूज़ करके वन का सही वैल्यू निकाल देते हैं। ये चेन रिएक्शन है। क्यों? सबसे पहले तो आप इसका इसका यूज़ करके टू को सही वैल्यू देते हैं। उसी में टू और वन को यूज़ करके आप वन को असली वैल्यू दे देते हैं। तो ये तो गलत बात है। ऐसे तो नहीं चलेगा।",
+      "source": "caption",
+      "english_text": "Why did this happen? Because there is a kind of chain reaction. What is one way? Chain reaction. Why is there a chain reaction? First you find the correct value of h to to which is 0 to to. At the same time, you use the one from two and calculate the correct value of one. This is a chain reaction. Why? First of all, you use this to give the correct value to to. In that, by using two and one, you give real value to one. So this is wrong. It won't work like this."
+    },
+    {
+      "start_time": 1210.08,
+      "end_time": 1244.63,
+      "text": "आपको आपको एक रिलैक्सेशन में ये मेक श्योर करना पड़ेगा कि भैया सिर्फ इसी का वैल्यू निकले। इसका वैल्यू उस रिलैक्सेशन में नहीं निकलना चाहिए। इस आदमी का वैल्यू अगले रिलैक्सेशन में निकलना चाहिए। तभी ये चीज़ काम करेगा। इसको सॉल्व करने के लिए हम लोग एक टेंपरेरी एरे यूज़ करेंगे। क्या यूज़ करेंगे? टेंपरेरी एरे। कैसे यूज़ करेंगे? हम अभी आपको समझाते हैं। चलिए इस प्रॉब्लम को सॉल्व करने के लिए कि भाई जब एक एक बार रिलैक्सेशन करते हैं ना तो उससे चेन रिएक्शन नहीं होना चाहिए। ऐसा नहीं होना चाहिए कि आपको दोनों का आंसर एक ही बार में मिल जाए। वो गलत बात है इस क्वेश्चन के लिए। आप लोग क्या करिए? हर बार रिलैक्स",
+      "source": "caption",
+      "english_text": "You will have to make sure that you get only this value out of the relaxation. Its value should not be lost in that relaxation. The value of this guy should come out in the next relaxation. Only then will this thing work. To solve this we will use a temporary array. What will you use? Temporary array. How will you use it? Let us explain to you right now. Let's solve this problem that when brother does relaxation once in a while, it should not cause a chain reaction. It should not happen that you get the answer to both at once. That is wrong for this question. What should you guys do? Relax every time"
+    },
+    {
+      "start_time": 1244.64,
+      "end_time": 1277.51,
+      "text": "करने से पहले मान लीजिए आपका इनिशियल कॉन्फ़िगरेशन ये है। तो अभी हम कुछ रिलैक्स नहीं किए हैं। सारा दोनों इनफिनिटी है। ज़ीरो ज़ीरो है। हम क्या करेंगे ना? इस रेस्ट का एक कॉपी बना लेंगे। इस रेस्ट का एक कॉपी बना लेंगे। क्या कॉपी बनाएंगे? सिंपल कॉपी। हम एक टेंपरेरी एरे में 0 1 2 और इसका कॉपी बना लिए। कॉपी बन गया शुरू में। रिलैक्स के पहले अब रिलैक्स करना शुरू कीजिए। अब रिलैक्स करना शुरू कीजिए। रिलैक्स करते समय देखिए सबसे पहले ये एज रिलैक्स कीजिए। 0 टू वन तो आपका s क्या होगा? 0 d 1 वेट इक्वल टू 100। अब कंपेयर",
+      "source": "caption",
+      "english_text": "Before doing this, suppose your initial configuration is this. So we have not relaxed anything yet. Both of them are infinite. Zero is zero. What shall we do? Will make a copy of this rest. Will make a copy of this rest. Will you make a copy? Simple copy. We put 0 1 2 and make a copy of it in a temporary array. A copy was made in the beginning. Before relaxing, start relaxing now. Now start relaxing. While relaxing, first relax this edge. 0 to one then what will be your s? 0 d 1 weight equal to 100. compare now"
+    },
+    {
+      "start_time": 1277.52,
+      "end_time": 1311.029,
+      "text": "का लॉजिक में हम लोग ये लिख देंगे। इफ इफ क्या लिखेंगे? इफ t ऑफ़ d t ऑफ़ d ये क्या है आपका? टीएमपी यह वाला टीएमपी आरे है। t ऑफ इज ग्रेटर देन रेस्ट ऑफ S + वेट देन T ऑफ़ D = रेस्ट ऑफ़ S + वेट। यहां पे क्या हो रहा है? बहुत ध्यान से समझिएगा। आप इस रिलैक्सेशन में जो हम लोग फर्स्ट रिलैक्सेशन कर रहे हैं ना इसमें आप जो भी चेंज करेंगे इसमें आप जो भी चेंज किसी भी",
+      "source": "caption",
+      "english_text": "We will write this in logic. What will you write if if? If t of d t of d what is this yours? TMP This one is TMP Aarey. t of is greater than rest of S + weight than T of D = rest of S + weight. What is happening here? Please understand very carefully. Whatever change you make in this relaxation which we are doing first relaxation, whatever change you make in it will be in any"
+    },
+    {
+      "start_time": 1311.039,
+      "end_time": 1337.909,
+      "text": "वर्टेक्स को चेंज करके जब हम लोग रिलैक्स करेंगे ना उसको चेंज हम लोग टेंपरेरी एरे में करेंगे लेकिन जो कंपैरिजन होगा जो कंपैरिजन होगा इस आदमी से रिजल्ट ऑफ सोर्स प्लस वेट वो पुराने एरे से होगा वो पुराने एरे से होगा इसका क्या मतलब है आपको ये तीनों एज रिलैक्स होते ही समझ में आ जाएगा देखिए सबसे पहले तो इस एज को हम लोग रिलैक्स कर रहे ये क्या देखता है? t ऑफ़ D. T ऑफ़ D मतलब T ऑफ़ 1 T ऑफ़ 1 क्या है?",
+      "source": "caption",
+      "english_text": "When we relax the vertex by changing it, we will change it in the temporary array, but the comparison that will be done, the result of source plus weight from this person will be from the old array, that will be from the old array, what does it mean, you will understand as soon as these three edges are relaxed, see, first of all, we are relaxing this edge, what does he see? t of D. T of D means T of 1 What is T of 1?"
+    },
+    {
+      "start_time": 1337.919,
+      "end_time": 1363.59,
+      "text": "इंफिनिटी। इंफिनिटी। ओके? अच्छी बात है। इज ग्रेटर देन रिजल्ट ऑफ़ सोर्स प्लस वेट। मतलब रिजल्ट ऑफ़ ज़ीरो जो कि ज़ीरो है। प्लस वेट + 100 हां, बड़ा है तो रिलैक्स होना चाहिए। लेकिन जो असली रिलैक्स आप कर रहे हैं ना, वो t ऑफ़ D में करिए। रिजल्ट को मत छुइए। तो इससे क्या होगा? t ऑफ़ D क्या बन गया आपका? 100 बन गया। t ऑफ़ रिजल्ट ऑफ वन सेम है। रिजल्ट ऑफ़ वन में चेंज नहीं है।",
+      "source": "caption",
+      "english_text": "Infinity. Infinity. Ok? It's a good thing. Is greater than result of source plus weight. Meaning result of zero which is zero. Plus Weight + 100 Yes, if it is big then it should be relaxed. But the real relaxation you are doing should be done in t of D. Don't touch the result. So what will happen from this? t of D What has become of you? Became 100. t of result of one is same. There is no change in Result One."
+    },
+    {
+      "start_time": 1363.6,
+      "end_time": 1393.75,
+      "text": "रिजल्ट ऑफ़ वन अभी भी इनफिनिटी है। t ऑफ़ वन आपका 100 बन गया। इसका फायदा आपको अभी समझ में नहीं आया होगा। अब आपको लगेगा कि ऐसा क्यों किए? आएगा समझ में आएगा। देखिए ये एज हो गया। अगले एज पे चलिए। अगले एज पे चलिए। अगला एज क्या है? 0 टू 2 वाला। तो इसका s क्या होगा? s = 0 d = 2 वेट = 50। सेम काम कीजिए। t ऑफ़ d मतलब t ऑफ़ 2 इंफिनिटी। ओके? इज ग्रेटर देन रिजल्ट ऑफ सोर्स। रिजल्ट ऑफ सोर्स जो कि ज़ीरो है।",
+      "source": "caption",
+      "english_text": "Result of one is still infinity. t of one becomes your 100. You might not have understood its benefit yet. Now you will think why did this? Will come and understand. Look, it's aged. Go to the next edge. Go to the next edge. What is the next edge? The one from 0 to 2. So what will be its s? s = 0 d = 2 weight = 50. Do the same work. t of d means t of 2 infinity. Ok? Is greater than the result of the source. Result of source which is zero."
+    },
+    {
+      "start_time": 1393.76,
+      "end_time": 1423.909,
+      "text": "प्लस वेट प्लस वेट जो कि 50 है। तो 50 0 इनफिनिटी हां बड़ा है। रिलैक्स करना चाहिए। लेकिन वो जो रिलैक्स करना है ना किस में रिलैक्स करना है? t ऑफ़ D में। रिजल्ट ऑफ़ d में नहीं। तो T ऑफ़ D मतलब T ऑफ़ टू को क्या कर दीजिए? आप मिटा के 50 कर दीजिए। T ऑफ़ 2 को 50 कर दीजिए। ये देखिए। t ऑफ़ 2 को 50 कर दीजिए। वेरी गुड। अब अब तीसरा एज पे आइए। तीसरे एज में ही हम लोग को बग मिला था। तीसरे एज में ही बग मिला था ना। तीसरे एज में ही बग मिला था ना। अब देखिए वो बग नहीं मिलेगा। क्यों नहीं मिलेगा? बताते",
+      "source": "caption",
+      "english_text": "Plus weight plus weight which is 50. So 50 0 infinity yes is big. Must relax. But what is to be relaxed and in what is to be relaxed? In t of D. Not in result of d. So T of D means what to do with T of Two? You erase it and make it 50. Change T of 2 to 50. Look at this. Change t of 2 to 50. very good. Now come to the third edge. It was in the third age itself that we found the bug. The bug was found in the third age only. The bug was found in the third age only. Now see, that bug will not be found. Why will it not be available? tells"
+    },
+    {
+      "start_time": 1423.919,
+      "end_time": 1458.789,
+      "text": "हैं। तीसरे एज पे आइए। 2 टू 1 s = 2 d = 1 वेट = 20 देखिए इफ t ऑफ़ d t ऑफ़ d मतलब जो कि 100 t ऑफ़ d जो कि 100 t ऑफ़ वन जो कि 100 इज़ ग्रेटर दैन किससे? रिजल्ट ऑफ़ सोर्स प्लस वेट। रिजल्ट ऑफ़ सोर्स प्लस वेट मतलब रिजल्ट ऑफ़ टू प्लस वेट और रिजल्ट ऑफ़ टू अभी भी इंफिनिटी है। रिजल्ट ऑफ़ टू अभी भी इंफिनिटी है। इस केस में कोई भी रिलैक्सेशन नहीं किया जाएगा। पिछले बार जब हम लोग ये टेंपरेरी नहीं यूज़ किए थे तो",
+      "source": "caption",
+      "english_text": "Are. Come to the third edge. 2 to 1 s = 2 d = 1 weight = 20 See if t of d t of d means which is 100 t of d which is 100 t of one which is 100 is greater than what? Result of source plus weight. Result of source plus weight means result of two plus weight and result of two is still infinity. Result of two is still infinity. No relaxation will be done in this case. Last time we did not use this temporary"
+    },
+    {
+      "start_time": 1458.799,
+      "end_time": 1493.75,
+      "text": "दिक्कत कहां हुई थी? क्योंकि रिजल्ट ऑफ़ टू खुद 50 बन गया था इस एज के कारण। तो अब जब तीसरे एज में आए ना, तो आपको लगा कि अच्छा रिजल्ट ऑफ़ टू तो 50 है। 50 + 20 70 मेरे से बड़ा कम ही है तो रिलैक्स कर देते हैं। लेकिन इस केस में अभी तक रिजल्ट ऑफ टू में कुछ भी चेंज नहीं हुआ है। जो रिजल्ट एरे था ना उस पूरे एरे में कुछ भी चेंज नहीं हुआ है। जो भी चेंज हुआ है जो भी चेंज हुआ है वो टेंपरेरी एरे में हुआ है। वो किस में हुआ है? टेंपरेरी एरे में हुआ है। तो वन जब आप इसको रिलैक्स करने आते हैं ना तो",
+      "source": "caption",
+      "english_text": "Where did the problem occur? Because the result of two itself became 50 due to this age. So now when you came to the third age, you felt that a good result of two is 50. 50 + 20 70 If less is bigger than me then let's relax. But in this case there has been no change in the result of 2 till now. Nothing has changed in the entire result array. Whatever change has happened, whatever change has happened has happened in the temporary array. Where did that happen? Happened in temporary array. So one when you come to relax it na"
+    },
+    {
+      "start_time": 1493.76,
+      "end_time": 1528.549,
+      "text": "ये टू का पिछला वाला वैल्यू देखता है। ये टू का नया वैल्यू नहीं देखता है। नया वैल्यू 50 है। माफ़ कीजिएगा। ये टू का पिछला वाला वैल्यू देखता है जो कि इंफिनिटी था। टू का अभी वाला वैल्यू नहीं देखता है जो कि अभी तुरंत बदल के आया है। उसको यूज़ नहीं करना है। एक रिलैक्सेशन होने के बाद जब ये पूरा रिलैक्सेशन चल गया आपके पास ये टीएमपी में किसका वैल्यू आया है? जो इस रिलैक्सेशन के कारण आया है। इसी रिलैक्सेशन कोई चेन रिएक्शन नहीं हुआ है कि ज़ीरो से टू के कारण टू बदल गया। टू से वन के कारण वन बदल गया। वो तो आप दो रिलैक्सेशन का काम एक में कर रहे थे। इसके",
+      "source": "caption",
+      "english_text": "It looks at the previous value of two. It does not look at the new value of two. The new value is 50. Excuse me. It looks at the previous value of two which was infinity. Does not see the current value of two which has just changed. Don't use it. After a relaxation, when the complete relaxation is over, what value do you have in TMP? Which has come due to this relaxation. There is no chain reaction from zero to two due to this relaxation. The forest changed because of two to one. You were doing two relaxation tasks in one. its"
+    },
+    {
+      "start_time": 1528.559,
+      "end_time": 1556.47,
+      "text": "कारण एक रिलैक्सेशन का काम एक में हुआ है। अब जब ये हो गया ये तीनों एक चल गया। ये हो गया। लास्ट में क्या कीजिए? रिजल्ट इज इक्वल टू टीएमपी। रिजल्ट में टीएमपी का वैल्यू लिख दीजिए। रिजल्ट में टीएमपी का वैल्यू लिख दीजिए। रिजल्ट में क्या लिख दीजिए? 100 और 50। रिजल्ट में क्या लिख दीजिए? 100 और 50। अब देखिए अब आप जब रिटर्न करेंगे। अब क्योंकि आपका के ज़ीरो था, तो आप एक रिलैक्सेशन किए। एक रिलैक्सेशन के बाद आपका रिजल्ट ये रहा।",
+      "source": "caption",
+      "english_text": "The reason is that one relaxation work has been done in one. Now when this was done, all three went away. that'll be. What to do in the last place? Result is equal to TMP. Write the value of TMP in the result. Write the value of TMP in the result. What to write in the result? 100 and 50. What to write in the result? 100 and 50. Now see when you return. Now because your K was zero, you did a relaxation. After a relaxation, this is your result."
+    },
+    {
+      "start_time": 1556.48,
+      "end_time": 1591.19,
+      "text": "क्या रिटर्न करिएगा? रिजल्ट ऑफ डेस्टिनेशन जो कि 100 है। 100 क्या 100 सही आंसर है? बिल्कुल सही आंसर है। क्योंकि आपका k जीरो दिया हुआ है। आपको बस इस वाले रूट का आंसर रिटर्न करना था। ये वाला जो रूट है इसका आंसर देखिए कंप्यूट नहीं हुआ है अभी तक। क्यों? क्योंकि हम लोग एक टेंपरेरी एरे यूज़ किए हैं। टेंपरेरी एरे यूज़ करने का पूरा मतलब यही है ना? कि भैया आपको जो चेंज करना है, आपको जो चेंज करना है ना वो आप एक नए एरे में करिए। जो भी आप रीडिंग कर रहे हैं, जो भी आप सोर्स का रीडिंग कर रहे हैं कि सोर्स क्या था, वो आप रिजल्ट से पढ़िए, वो आप रिजल्ट से पढ़िए। इसको मिटा के टी ऑफ़ एस मत कर दीजिएगा। तो फिर सेम",
+      "source": "caption",
+      "english_text": "What will you return? Result of destination which is 100. 100 Is 100 the correct answer? This is absolutely the correct answer. Because your k is given zero. All you had to do was return the answer for this route. Look at the answer to this route, it has not been computed yet. Why? Because we have used a temporary array. That's the whole point of using a temporary array, isn't it? That brother, whatever change you want to make, whatever change you want to make, you should do it in a new array. Whatever reading you are doing, whatever reading you are doing from the source, whatever the source was, you should read it from the result, you should read it from the result. Don't erase it and turn it into t of s. then beans"
+    },
+    {
+      "start_time": 1591.2,
+      "end_time": 1619.11,
+      "text": "प्रॉब्लम होने लगेगा ना कि आप अभी T ऑफ़ एस एडिट किए थे फिर उसी को पढ़ रहे हैं। इसका पूरा मतलब यही है कि जो भी आप सोर्स का वैल्यू रीड कर रहे हैं। आप सोर्स तक का वैल्यू जो भी रीड कर रहे हैं प्लस वेट जो भी कर रहे हैं ना वो पिछले रिलैक्सेशन का रीड कीजिए। वो पिछले रिलैक्सेशन मतलब रिजल्ट का रीड कीजिए। जो भी आप राइट कर रहे हैं, जो भी आप रिलैक्स करके नई वैल्यू लिख रहे हैं, वो रिजल्ट पे मत लिखिए। अभी वो अभी टेंपरेरी में लिख दीजिए। जब पूरा रिलैक्सेशन हो जाए, तो बस रिजल्ट इज़ इक्वल टू टेंपरेरी कर दीजिए, तो वो हो जाएगा।",
+      "source": "caption",
+      "english_text": "The problem would be that you had just edited T of S and are now reading the same. What this all means is that whatever you are reading is the value of the source. Whatever value you are reading up to the source plus whatever weight you are reading, read the previous relaxation. Read that previous relaxation meaning result. Whatever you are writing, whatever new value you are writing after relaxing, do not write that on the result. Just write it in temporary. When complete relaxation is achieved, just make the result equal to temporary, then it will be done."
+    },
+    {
+      "start_time": 1619.12,
+      "end_time": 1651.83,
+      "text": "इसका यही पर्पस है। ठीक बात है? ये उम्मीद करते हैं कि ये बात आपको बहुत क्रूशियल पार्ट है। ये अगर नहीं समझ में आएगा तो ये पूरा आपका क्वेश्चन गलत हो जाएगा। ठीक बात है? तो इसको एक दो बार घुमा के देखिए। समझ में आएगा उतना कुछ हार्ड नहीं है। जस्ट दैट कि चेन रिएक्शन नहीं होना चाहिए। ज़ीरो टू टू अच्छी बात है। लेकिन उसी रिलैक्सेशन में ज़ीरो टू टू में टू बदले, टू से वन में वन बदले, वन से थ्री में थ्री बदल दिए तो फिर पूरा रिलैक्सेशन का लॉजिक खराब हो जाएगा ना। इस क्वेश्चन में ये लॉजिक जरूरी है। आमतौर पे बेलमेनफोर्ड में ये नहीं जरूरी था क्योंकि बेलमेन फोर्ड में आपका गोल था डिस्टेंस निकालना। बाय हुक और क्रुक डिस्टेंस निकालना है। लेकिन इसमें",
+      "source": "caption",
+      "english_text": "This is its purpose. Is that correct? We hope that this is a very important part for you. If you do not understand this then your entire question will be wrong. Is that correct? So try rotating it a couple of times. As you will understand, it is not that difficult. Just that chain reaction should not happen. Zero two two is a good thing. But in the same relaxation, if zero is changed to two, two is changed to one, one is changed to one, three is changed from one, then the entire logic of relaxation will get spoiled, right? This logic is important in this question. Generally this was not necessary in Belmanford because in Belmanford your goal was to get distance. Bye hook and crook distance has to be determined. but in this"
+    },
+    {
+      "start_time": 1651.84,
+      "end_time": 1685.51,
+      "text": "क्योंकि ये केस स्टॉप्स वाला है ना तो ये जरूरी बात है। अब आइए इसका हम आपको कोड दिखाते हैं और बहुत सिंपल सा इसका कोड है। पूरा बेलमेन फोर्ड का ही कोड है। सेम कॉपी पेस्ट कोड है। चलिए तो देखिए इसका कोड अगर लिखना चाहें तो इसका कोड सेम टू सेम बेलmैन फोर्ड का कॉपी हो जाएगा। उसमें कुछ ज्यादा चेंज नहीं है। आपको क्या दिया रहेगा? आपको इंट व फन ये आपको लीड कोड पे दिया रहेगा। सबसे पहले तो आपको इंट n दिया रहेगा जो कि नंबर ऑफ एयरपोर्ट्स है। उसके बाद आपको वेक्टर ऑफ वेक्टर ऑफ इंट हां ठीक है इसमें क्या दिया रहेगा एजेस",
+      "source": "caption",
+      "english_text": "Since this case has stops, this is not an important thing. Now let us show you its code and its code is very simple. The whole Bellman is Ford code. Same copy paste code. Let's see, if you want to write its code, its code will be a same-to-same copy of Bellman Ford. There is not much change in it. What will you be given? Int and Fun will be given to you on lead code. First of all, you will be given int n which is the number of airports. After that you will get vector of vector of int yes ok what will be given in this Edges"
+    },
+    {
+      "start_time": 1685.52,
+      "end_time": 1716.23,
+      "text": "ठीक है उसके बाद आपको तीन और चीजें दिया रहेगा सोर्स डेस्टिनेशन और इंट के ठीक बात है चलिए सबसे पहला काम क्या है एक रिजल्ट एरे बना लीजिए वेक्टर इंट रिजल्ट इसमें हम क्या करेंगे n साइज का और सबको 18 वन8 का मतलब हम उसमें भी समझा सके 10 टू दी पावर 8 ठीक है उसके उसके बाद रिजल्ट ऑफ सोर्स इक्वल टू 0 क्योंकि सोर्स से सोर्स पहुंचने में जीरो लगता है। ठीक है? उसके बाद क्या करेंगे?",
+      "source": "caption",
+      "english_text": "Okay, after that you will be given three more things, source destination and int, okay, let's do the first thing, create a result array, vector int result, what will we do in it, of n size and make everyone 18 one 8, we can explain the meaning of 10 to the power 8 in that too. Okay, after that, the result of source is equal to 0 because it takes zero to reach from source to source. Ok? What will you do after that?"
+    },
+    {
+      "start_time": 1716.24,
+      "end_time": 1748.789,
+      "text": "इंट i अब जो भी k दिया हुआ है आपको कितनी बार रिलैक्स करना है? k + 1 टाइम्स। तो फॉर i = 0 i &lt; = k i + ठीक है? इसका क्या हुआ? k + 1 टाइम्स रिलैक्स। ठीक है? सबसे पहले रिलैक्स शुरू होने से पहले एक टेंपरेरी वेक्टर बना लीजिए। वेक्टर इंट = रेस। ठीक है? सेम एज रेस बना लीजिए क्योंकि राइट करना है इसमें आपको। अब आपको सारे एजेस को रिलैक्स करना है। तो सारे",
+      "source": "caption",
+      "english_text": "Int i Now, given k, how many times do you have to relax? k + 1 times. So for i = 0 i < = k i + ok? What happened to this? k + 1 times relaxed. Ok? First of all, before starting the relaxation, create a temporary vector. vector int = res. Ok? Make a same age race because you have to do right in it. Now you have to relax all the edges. so all"
+    },
+    {
+      "start_time": 1748.799,
+      "end_time": 1783.11,
+      "text": "एजेस को कैसे रिलैक्स करते हैं? फॉर आई एन टी j = 0 j &lt; &lt;ज़ डॉट साइज और j + ठीक है? एक-एक करके चीजें निकालिए। s = hs j 0 डेस्टिनेशन कहां पे आएगा आपका? एज एस j वन वेट कैसे आएगा? टू से आएगा। वेट इज़ इक्वल टू एज j टू। ठीक है? रिलैक्स करिए। रिलैक्स",
+      "source": "caption",
+      "english_text": "How to relax the edges? For i n t j = 0 j < < z dot size and j + ok? Take things out one by one. s = hs j 0 Where will your destination be? How will the edge s j one weight come? Will come from two. Weight is equal to age j to. Ok? Relax. Relax"
+    },
+    {
+      "start_time": 1783.12,
+      "end_time": 1816.63,
+      "text": "करिए। तो सबसे पहले तो ये देख लीजिए कि अगर इफ रिजल्ट ऑफ़ S नॉट इक्वल टू वन8 मतलब क्यों ऐसा हम बोल रहे हैं? क्यों ऐसा बोल रहे हैं? क्योंकि अगर मान लीजिए रिजल्ट ए वन8 का मतलब इंफिनिटी समझिए। तो अगर आपका सोर्स ही इंफिनिटी पे है तो उससे क्या किसी को रिलैक्स करिएगा? मतलब आप बोल रहे हैं कि वन से यहां यहां यहां यहां एच जा रहा है। अब वन खुद ही इनफिनिटी पे है तो इनफिनिटी से क्या रिलैक्स करना है? कुछ नहीं करना। छोड़ दीजिए। अगर ये नहीं है इनफिनिटी तो कुछ बात बन सकती है। एंड एंड क्या करना है? t ऑफ़ d इज़ ग्रेटर दन रिजल्ट",
+      "source": "caption",
+      "english_text": "Do it. So first of all see that if the result of S is not equal to one8 then why are we saying this? Why are you saying this? Because if we assume that the result is one, then 8 means infinity. So if your source is on Infinity Pay, will you relax anyone with it? Meaning you are saying that H is going from one to here to here to here. Now the forest itself is at infinity, so why relax from infinity? Do nothing. Leave it. If this is not infinity then something can happen. End End What to do? t of d is greater than result"
+    },
+    {
+      "start_time": 1816.64,
+      "end_time": 1850.95,
+      "text": "ऑफ़ S + वेट + वेट। t ऑफ़ d इज ग्रेटर दैन रिजल्ट ऑफ़ S + में। अब आप पूछेंगे कि रिजल्ट ऑफ D ही क्यों? तो फिर t बनाने का मतलब क्या है? t डेस्टिनेशन को आप बार-बार रिलैक्स कर सकते हैं। मान लीजिए इसका ये मतलब है मान लीजिए कि अगर ज़ीरो से वन जाता है कुछ और टू से वन जाता है कुछ। ठीक है? मान लीजिए ज़ीरो का अभी का वैल्यू 50 है। इसका वैल्यू 20 है। टू का अभी का वैल्यू 10 है और इसका वैल्यू 10 है। इसका क्या मतलब है? मान लीजिए एक एज आपको मिला ज़ीरो टू वन। और जिसका 50 है और एक एज मिला है जीरो टू से वन जिसका 10 है। क्यों हम बोल",
+      "source": "caption",
+      "english_text": "Off S + Wait + Wait. t of d is greater than that resulting in S+. Now you will ask why only result of D? Then what is the meaning of making t? t Destination you can relax again and again. Suppose this means that if zero goes to one, something goes and if two goes to one, then something goes. Ok? Suppose the current value of zero is 50. Its value is 20. The current value of two is 10 and its value is 10. What does it mean? Suppose you got an edge zero to one. And which is 50 and got an edge from zero to one which is 10. why should we speak"
+    },
+    {
+      "start_time": 1850.96,
+      "end_time": 1885.51,
+      "text": "रहे हैं? मान लीजिए जब आप इस एज को रिलैक्स करेंगे ना तो आपका वन का वैल्यू क्या बन जाएगा? 70। जब आप इस एज को रिलैक्स करेंगे तो आपका वन का वैल्यू 10 + 10 20 बन जाएगा। आपको 70 से 20 कंपेयर करना है। ठीक बात है। इसीलिए हम इसको यहां पे लिखे हैं। अगर ऐसा है तो t ऑफ़ d = रिजल्ट ऑफ़ s + वेट। यह समझ में आ रहा है ना कि क्यों यहां पर टी यूज़ हो रहा है। यहां पर रेल्ट यूज़ हो रहा है। जब आप अपडेट कर रहे हैं तो आप बी को बार-बार बार-बार उसी रिलैक्सेशन में अपडेट कर सकते हैं। अब वन तक पहुंचने का बहुत सारा रास्ता है जहां पे एक एज लगता है। ऊपर वाले एग्जांपल",
+      "source": "caption",
+      "english_text": "Are you? Suppose, when you relax this edge, what will become the value of your forest? 70. When you relax this edge, the value of your one will become 10 + 10 20. You have to compare 70 to 20. That's right. That is why we have written it here. If so then t of d = result of s + weight. It is understandable why T is being used here. Railt is being used here. When you are updating you can update B again and again in the same relaxation. Now there is a wide path to reach the forest where there is an edge. above example"
+    },
+    {
+      "start_time": 1885.52,
+      "end_time": 1920.23,
+      "text": "में वन तक पहुंचने का दो रास्ता है जहां पे एक एज लगता है। तो आप दोनों को देख के वन में जो अच्छा आंसर आता है अपडेट कर दीजिए। लेकिन रिजल्ट ऑफ़ S ये लिखना जरूरी है क्योंकि सोर्स का जो वैल्यू है ना वो पिछले रिलैक्सेशन के हिसाब से लीजिए। इस रिलैक्सेशन से नहीं। ऐसा नहीं होना चाहिए कि सोर्स अभी तुरंत अपडेट हुआ हो। उसी को यूज़ कर रहे हैं। नहीं वो अगले रिलैक्सेशन में अपडेट होगा। ठीक बात है? हो गया। बस इससे ज्यादा कुछ यहां पे करने के लिए है नहीं। सब कुछ खत्म हो गया। अब यहां पे कंफर्टेबल हो के सबसे पहले तो देख लीजिए कि अगर रिजल्ट ऑफ डेस्टिनेशन इक्वल इक्वल टू 18 मतलब कि इसका कुछ मिला नहीं। तो",
+      "source": "caption",
+      "english_text": "There are two ways to reach the forest where there is an edge. So after seeing both of you, please update the good answer that comes in the forest. But it is important to write the result of S because the value of the source should be taken according to the previous relaxation. Not with this relaxation. It should not be that the source has just been updated immediately. Using the same one. No, it will be updated in the next relaxation. Is that correct? Done. There is nothing more to do here. Everything is over. Now, once you are comfortable here, first of all check that if Result of Destination is equal to 18, it means that nothing was found. so"
+    },
+    {
+      "start_time": 1920.24,
+      "end_time": 1951.35,
+      "text": "इसमें बोला है कि -1 रिटर्न कर दो। मतलब आप के स्टॉप्स में नहीं जा सकते। यहां पे के स्टॉप्स में इस तक नहीं पहुंच सकते हैं। अगर कुछ मिल गया है तो मिल गया होगा। रिटर्न रिजल्ट ऑफ डिस्टिनेशन। ये देखिए ये आपका पूरा बेलमेन फोर्ड का कोड हो गया। इसमें बेलमेनफोर्ड ही था। सबसे इंपॉर्टेंट बात इसका ये वाला पार्ट था। ये वाला पार्ट कि क्यों टेंपरेरी एरे यूज़ करना पड़ा है। मेरे हिसाब से बहुत अच्छे से समझा दिए हैं। नहीं समझ में आया तो कमेंट में पूछिएगा। हम आपको हो सके तो कमेंट में फिर से बता देंगे। ठीक बात है। चलिए इसको बनाइए और बहुतेंट क्वेश्चन है। इसको जरूर जरूर बनाइए। मिलते हैं अगले लेक्चर में।",
+      "source": "caption",
+      "english_text": "It says return -1. Meaning, you cannot go to your stops. It is not accessible at pay stops here. If something has been found, it must have been found. Return result of destination. Look, this is your complete Bellman Ford code. Belmanford was the only one in it. The most important thing was this part. This part is why we had to use temporary array. According to me, it has been explained very well. If you don't understand then ask in the comments. If possible, we will tell you again in the comments. That's right. Let's make this and there are many questions. Definitely make this. See you in the next lecture."
+    },
+    {
+      "start_time": 1951.36,
+      "end_time": 1954.6,
+      "text": "चलिए बाय-ब।",
+      "source": "caption",
+      "english_text": "Let's go bye-bye."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

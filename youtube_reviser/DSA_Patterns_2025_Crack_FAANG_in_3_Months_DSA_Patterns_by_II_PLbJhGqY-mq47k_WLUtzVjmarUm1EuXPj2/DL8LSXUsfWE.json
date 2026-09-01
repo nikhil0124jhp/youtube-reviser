@@ -1,0 +1,933 @@
+{
+  "video_id": "DL8LSXUsfWE",
+  "video_title": "DSA PATTERNS Episode 11 Sliding Window Pattern: Easy & Medium Questions",
+  "video_number": 11,
+  "chunks": [
+    {
+      "start_time": 1.829,
+      "end_time": 35.59,
+      "text": "आज का जो दोनों क्वेश्चन है ना भाई वो मेरी समझ से स्लाइडिंग विंडो पढ़ने के लिए ओनली टू क्वेश्चंस हैं। मतलब अगर हमको दो क्वेश्चन किसी को पढ़ाना होता जिंदगी में और बोलना होता कि स्लाइडिंग विंडो समझाओ तो हम यही दोनों क्वेश्चन बताते और जिस एग्जांपल से हम बताए हैं हायरिंग और फायरिंग के एग्जांपल से कि कैसे कंपनी हायर करती जाती है। काम होने लगता है। फायर करती जाती है। सेम कांसेप्ट यूज़ होता है स्लाइडिंग विंडो में। इंटरनेट पे आपको कहीं ऐसा एग्जांपल और ऐसा इंट्यूशन नहीं मिलेगा। कोड मिल जाएगा। कोड हर जगह मिल जाएगा। वो आप कॉपी करते रहिए। लेकिन इंट्यूशन समझना है तो दोनों क्वेश्चन देखिएगा। अगर आप वीडियो देख रहे हैं, नए बच्चे भी हैं जो भी हैं। एक क्वेश्चन देख",
+      "source": "caption",
+      "english_text": "Today's two questions, according to me, are only two questions for reading the sliding window. Meaning, if we had to teach two questions to someone in life and asked them to explain the sliding window, then we would have told these two questions and the example with which we have told how the company keeps hiring is the example of hiring and firing. Work starts getting done. Keeps firing. The same concept is used in sliding windows. You will not find such an example and such intuition anywhere on the Internet. You will get the code. The code will be found everywhere. You keep copying that. But if you want to understand intuition then you will have to look at both the questions. If you're watching the video, there are new kids who are also there. see a question"
+    },
+    {
+      "start_time": 35.6,
+      "end_time": 67.99,
+      "text": "के दूसरा मत छोड़िएगा। या तो दोनों मत देखिए। अभी बंद कर दीजिए। अभी तो 30 सेकंड हुआ है। बंद कर दीजिए। देख रहे हैं दोनों देखिएगा। नहीं देख रहे हैं दोनों मत देखिए। एक देख के अगर इंटरव्यू में जाएंगे तो दूसरा नहीं बनेगा। ये इनका लिंक है। ठीक है? तो सिंपल सा था और शुरू करते हैं। बहुत अच्छा वीडियो होने वाला है। डिटेल्ड वीडियो होने वाला है। प्लीज देखिएगा। हां भाई बहुत दिन का ब्रेक हो गया है। आज से एकदम प्रॉपर चलेगा। आज से वीडियो भी ऑन रहेगा और आपको कट कट कट कट के आवाज भी नहीं आएगा। ठीक है? जो लोग पहली बार चैनल पे आ रहे हैं आज डे टू है स्लाइडिंग विंडो पैटर्न का। शीट आपको डिस्क्रिप्शन से मिल",
+      "source": "caption",
+      "english_text": "Don't leave the second opinion. Don't watch either or both. Stop it now. It's only been 30 seconds. Turn it off. Both are watching, will see. Don't see both, don't see. If you go to an interview after seeing one, you will not be able to make the other one. This is their link. Ok? So it was simple and let's start. This is going to be a very good video. Detailed video is going to happen. Please see. Yes brother, it's been a long break. It will work perfectly from today onwards. From today the video will also remain on and you will not even hear the sound of cut cut cut cut. Ok? For those who are coming to the channel for the first time, today is Day 2 of Sliding Window Pattern. You can get the sheet from the description"
+    },
+    {
+      "start_time": 68.0,
+      "end_time": 102.149,
+      "text": "जाएगी। और आज जो क्वेश्चन करने वाले हैं वो है दो क्वेश्चन। अभी थोड़ी देर में बताते हैं। आईपैड के नोट्स आपको डिस्क्रिप्शन में मिल जाएंगे। Insta और Lindin का लिंक भी आपको डिस्क्रिप्शन में मिल जाएगा। और कोड लिंक भी सीपीपी जावा और Python में आपको डिस्क्रिप्शन में मिल जाएगा। ये सारी बातें हो गई। आज जो दो क्वेश्चन करने वाले हैं ना सबसे पहले पहला क्वेश्चन जो है पहला क्वेश्चन क्या है कि गिवेन एन एरे ये मेरा शब्द नहीं है। ये क्वेश्चन में एज़ इट इज़ लिखा हुआ है। ठीक है? पहले क्वेश्चन का देख लेते हैं वर्ड और उसके बाद देखेंगे कि इसमें पैटर्न लगता",
+      "source": "caption",
+      "english_text": "Will go. And the questions we are going to ask today are two questions. Will tell you in a little while. You will find the iPad notes in the description. You will also find the link of Insta and Lindin in the description. And you will also find the code link in the description of CPP Java and Python. All these things happened. The two questions that we are going to ask today, first of all, the first question is, given an array, this is not my word. This question is written as it is. Ok? First let us look at the word of the question and then see if there is a pattern in it."
+    },
+    {
+      "start_time": 102.159,
+      "end_time": 127.91,
+      "text": "कैसे है? क्यों लगता है? क्या करके लगाना है? कैसे लगाना है? आपको क्या करना है? आपको एक एरे दिया हुआ है। आपको क्या करना है? मैक्सिमम सम ऑफ एनी सब एरे एनी सब एरे सब सीक्वेंस नहीं सब एरे ऑफ साइज के साइज के ये आपका क्वेश्चन है। पिछले दिन क्या हुआ था? उसका जल्दी से रिककैप कर लेते हैं क्योंकि बहुत लोग भूल गए हैं।",
+      "source": "caption",
+      "english_text": "how is it? Why do you think so? What should I do? How to apply? What do you have to do? You are given an array. What do you have to do? Maximum sum of any sub array, any sub array, not sub sequence, size of sub array, this is your question. What happened last day? Let's recap it quickly because many people have forgotten."
+    },
+    {
+      "start_time": 127.92,
+      "end_time": 160.71,
+      "text": "पैटर्न स्लाइडिंग विंडो पैटर्न कब लगता है? सबसे पहले तो एरे का क्वेश्चन होना चाहिए। एरे या तो लिस्ट का क्वेश्चन या तो लिंक लिस्ट का क्वेश्चन होना चाहिए। क्वेश्चन में सब एरे या तो सबस्ट्रिंग लिखा होना चाहिए। ये एरे लिस्ट में स्ट्रिंग भी आ गया। स्ट्रिंग भी एक तरीके का एरे होता है। ठीक है? सब एरे या तो सबस्ट्रिंग का क्वेश्चन होना चाहिए। और अगर ये दोनों ट्रू हो गया। अगर ये दोनों ट्रू हो गया उसके बाद क्या हम लोग जो रिटर्न करने का कोशिश कर रहे हैं। मतलब यहां आपको बोला गया है ना कि ये ये फाइंड करो। ये चीज़ करो। तो ये हम लोग क्या फाइंड? ये या तो हम लोग मैक्स फाइंड करने",
+      "source": "caption",
+      "english_text": "When does the sliding window pattern occur? First of all there should be a question of array. Array should be either a list query or a linked list query. Sub array or substring should be written in the question. This string also appeared in the array list. String is also a type of array. Ok? The sub array must be a query of either substring. And if both of these become true. If both of these become true, then what are the returns we are trying to make? Meaning here you have been told to find this. Do this thing. So what do we find? Either we try to find Max"
+    },
+    {
+      "start_time": 160.72,
+      "end_time": 195.43,
+      "text": "का कोशिश कर रहे हैं। मीन किसी चीज़ का हम लोग या तो लॉन्गेस्ट या तो शॉर्टेस्ट कुछ भी ऐसा या तो हम लोग सम काउंट या तो हम लोग एवरेज ये कर रहे हैं या फिर एटमोस्ट K एटमोस्ट K या फिर एट लीस्ट K एट लीस्ट K एग्जैक्टली K ठीक है? ये सारी चीज़ का कॉम्बिनेशन हम लोग कोशिश कर रहे हैं फाइंड करने का। अगर ये दोनों ट्रू नहीं हुआ इस स्टेप तक नहीं आना है। अगर ये दोनों ट्रू हो गया तो इस लिस्ट",
+      "source": "caption",
+      "english_text": "Trying to. Meaning of something, we are either longest or shortest, anything like this, either we are sum count, or we are doing average, or at most K, at least K, exactly K, okay? We are trying to find a combination of all these things. If both of these are not true then do not come to this step. If both of these become true then this list"
+    },
+    {
+      "start_time": 195.44,
+      "end_time": 223.83,
+      "text": "में झांक के देखना है कि क्या इन सबका कॉम्बिनेशन हम लोग कुछ-कुछ करने का कोशिश कर रहे हैं। तो इस क्वेश्चन में देख लेते हैं। क्या एरे का क्वेश्चन है? हां एरे का क्वेश्चन है। तो ये तो ट्रू हो गया। क्या इसमें सब एरे या सबस्ट्रिंग से रिलेटेड काम करना है? हां जी। आपको किसी सब एरे का ही कुछ करना है। ये भी ट्रू हो गया। अब दूसरे लिस्ट में देखेंगे। फाइंड क्या करना है? मैक्सिमम सम मैक्सिमम सम मतलब कि मैक्सिमम सम तो ये कॉम्बिनेशन भी बैठ गया।",
+      "source": "caption",
+      "english_text": "Let us take a look and see if we are trying to do some combination of all these. So let's see in this question. Is there a question about array? Yes, there is a question of array. So this became true. Does it have to work related to sub array or substring? Yes sir. You have to do something with any sub array only. This also became true. Now we will see in the second list. Find what to do? Maximum Sum Maximum Sum means that this combination is also maximum sum."
+    },
+    {
+      "start_time": 223.84,
+      "end_time": 253.03,
+      "text": "अगर ये तीनों चीज बैठ गया तो दुनिया में ऐसा कभी होगा ही नहीं कि ये स्लाइडिंग विंडो का क्वेश्चन नहीं होगा। आप इसको किसी और तरीके से कर सकते हैं। लेकिन सबसे बेस्ट ऑप्टिमल तरीका इसका स्लाइडिंग विंडो ही होगा। तो आप देखिए कि कैसे क्वेश्चन में दो लाइन का क्वेश्चन पढ़ के समझ में आ गया कि स्लाइडिंग विंडो का लगना है। तो आपका 50% काम हो चुका है। इंटरव्यूअर आपसे 50% खुश इतनी देर में ही हो चुका है कि आपको समझ में आता है कि ये किस तरीके का क्वेश्चन है। अब इसमें ग्राफ का और ट्री का, डीपी का कुछ लोग डीपी लगाने लगते हैं।",
+      "source": "caption",
+      "english_text": "If all these three things are in place then there will never be a question of sliding windows in the world. You can do it some other way. But the best and optimal option would be its sliding window. So you see how after reading the two line question in the question, it was understood that sliding window has to be installed. So 50% of your work is done. The interviewer has become 50% happy with you within such a short time that you understand what kind of question this is. Now some people start using DP of graph, tree and DP."
+    },
+    {
+      "start_time": 253.04,
+      "end_time": 285.11,
+      "text": "कुछ लोग और कुछ कुछ करने लगते हैं। नहीं। हम लोग वो सब नहीं करें क्योंकि क्या हम लोग पैटर्न पढ़ते हैं। तो क्वेश्चन पढ़ के ही हम लोग को समझ में आ गया कि ये स्लाइडिंग विंडो का पैटर्न है। ठीक है? अच्छी बात है। अब अब स्लाइडिंग विंडो का पैटर्न सबसे पहले कि स्लाइडिंग विंडो क्या होता है? ये इंट्रोडक्शन वीडियो में है। प्लेलिस्ट में जाके देखिए। उसमें थोड़ा एडिशन क्या है? स्लाइडिंग विंडो का कोई भी क्वेश्चन होता है ना। स्लाइडिंग विंडो का कोई भी क्वेश्चन होता है उसमें तीन स्टेप होता है। उसमें क्या होता है? तीन स्टेप होता है। ठीक है? पहला स्टेप होता है आइडेंटिफाई पैटर्न। पहला स्टेप होता है",
+      "source": "caption",
+      "english_text": "Some people start doing something else. No. We don't do all that because we read patterns. So after reading the question we understood that this is the pattern of sliding window. Ok? It's a good thing. Now now the pattern of sliding window: First of all, what is a sliding window? This is in the introduction video. Go to the playlist and see. What's the little addition to that? Is there any question regarding sliding window? Any question of sliding window has three steps. What happens in it? There are three steps. Ok? The first step is identify pattern. the first step is"
+    },
+    {
+      "start_time": 285.12,
+      "end_time": 320.07,
+      "text": "आइडेंटिफाई पैटर्न। मतलब कि क्या ये स्लाइडिंग का क्वेश्चन है कि नहीं? तो ये काम हम लोग ऑलरेडी कर चुके हैं। वेरी गुड। दूसरा स्टेप होता है विंडो टाइप। विंडो टाइप फाइंड आउट करिए। विंडो टाइप का क्या मतलब है? क्या ये फिक्स विंडो है या वेरिएबल विंडो है? क्या ये फिक्स्ड विंडो है या वेरिएबल विंडो है? मतलब आपको याद होगा पहले वाले इंट्रो में हम लोग क्या बोले थे? हम बोले थे किसी भी एरे या किसी भी लिस्ट में विंडो मतलब क्या होता है? विंडो मतलब ये एक विंडो है। अब ये विंडो मूव करता है मतलब स्लाइड करता है। स्लाइडिंग डोर देखे होंगे ना हाथ से",
+      "source": "caption",
+      "english_text": "Identify patterns. Meaning, is it a question of sliding or not? So we have already done this work. very good. The second step is window type. Find out the window type. What does window type mean? Is this a fixed window or a variable window? Is this a fixed window or a variable window? I mean, do you remember what we said in the earlier intro? We said, what does window mean in any array or any list? Window means this is a window. Now this window moves i.e. slides. You must have seen the sliding door with your own hands."
+    },
+    {
+      "start_time": 320.08,
+      "end_time": 353.51,
+      "text": "स्लाइड करते हैं। तो ऐसे ही पहले ये विंडो यहां रहता है। फिर ये विंडो यहां आ जाता है। फिर ये विंडो यहां आ जाता है तो स्लाइड करता रहता है। ठीक है? अब ये जो स्लाइड करता है ना तो क्या सेम ही साइज का विंडो हर बार स्लाइड कर रहा है मतलब कि अगर ये विंडो तीन साइज का है तो क्या ऐसा कर रहे हैं कि हर बार इसी विंडो को उठा के बस एक स्टेप या दो स्टेप स्लाइड कर रहे हैं मतलब पहले ये विंडो यहां था सेम साइज का तीन साइज का तीन को यहां रख दिए फिर ये तीन वाले को उठा के यहां रख दिए फिर यहां रख दिए तो ये फिक्स विंडो होगा मतलब विंडो का साइज नहीं बदल रहा है अगर विंडो तीन साइज का है तो वो विंडो तीन ही साइज का है",
+      "source": "caption",
+      "english_text": "Let's slide. So this window remains here first. Then this window comes here. Then this window comes here and keeps sliding. Ok? Now when it slides, is the window of the same size sliding every time, meaning that if this window is of three sizes, then what is being done is that every time it is lifting the same window and sliding just one step or two steps, meaning earlier this window was of the same size here, three of the same size were placed here, then these three were lifted and placed here and then placed here, then this will be a fixed window, meaning the size of the window is not changing. If the window is of three sizes, then that window is of three sizes only."
+    },
+    {
+      "start_time": 353.52,
+      "end_time": 381.909,
+      "text": "बस स्लाइड आप करा रहे हैं इधर से उधर तक उसको बोलते है फिक्स वेरिएबल विंडो विंडो क्या होता है? मतलब कि अगर ये विंडो ऐसा है तो वेरिएबल मतलब कि वो विंडो का साइज भी बदल रहा है। विंडो का पोजीशन तो बदलता है। विंडो तो स्लाइड हो ही रहा है। इधर से उधर ये उधर से इधर कि इधर भी। विंडो का साइज भी मतलब पीछे से कम हो रहा है। आगे से बढ़ रहा है। कभी पीछे से कम हो जा रहा है तो विंडो छोटा हो जा रहा है। कभी आगे से बढ़ जा रहा है तो विंडो लंबा हो जा रहा है। मतलब पहले विंडो ऐसा था। फिर हम लोग इसको काट दिए तो अब विंडो ऐसा लगने लगा।",
+      "source": "caption",
+      "english_text": "You are just making the slide move from here to there, it is called fixed variable window. What is a window? Meaning that if this window is like this, then the variable means that the size of that window is also changing. The position of the window changes. The window is sliding. From here to there, from there to here and here too. The size of the window also means it is decreasing from the rear. Moving forward. Sometimes it is getting smaller from the back and the window is getting smaller. Sometimes it is moving forward and the window is getting longer. Meaning earlier the window was like this. Then we cut it and now the window started looking like this."
+    },
+    {
+      "start_time": 381.919,
+      "end_time": 408.15,
+      "text": "फिर इसको बढ़ा दिए तो फिर विंडो ऐसा लगने लगा। उसको कहते हैं वेरिएबल विंडो। दूसरा स्टेप है कि आप फाइंड आउट करिए कि क्या इस क्वेश्चन में फिक्स विंडो का काम है या वेरिएबल विंडो का काम है। ठीक है? वो आप कैसे करेंगे? वो भी बताएंगे कैसे करेंगे। तीसरा स्टेप क्या है? तीसरा स्टेप है तीसरा स्टेप है आपको कहां गया? अरे कहां चला गया भाई? अच्छा। तीसरा स्टेप क्या है? एक बार जब आप फिक्स्ड और वेरिएबल विंडो का काम कर दिए।",
+      "source": "caption",
+      "english_text": "Then when we increased it, the window started looking like this. It is called variable window. The second step is to find out whether the question involves fixed window or variable window. Ok? How will you do that? He will also tell how to do it. What is the third step? The third step is the third step, where have you gone? Hey brother, where have you gone? Good. What is the third step? Once you are done with the fixed and variable windows."
+    },
+    {
+      "start_time": 408.16,
+      "end_time": 442.79,
+      "text": "एक बार आपको समझ में आ गया कि वो फिक्स्ड है कि वेरिएबल है। आप जो भी विंडो से शुरुआत कर रहे हैं, किसी भी विंडो से शुरुआत कर रहे हैं। शुरुआत करेंगे तो उसका एक साइज होगा। उसका एक पोजीशन होगा। फॉर एग्जांपल आप बोलते हैं कि मेरा विंडो स्टार्ट से शुरू होता है और वो तीन साइज का है। तो ये आपका स्टार्टिंग पॉइंट हो गया प्रोग्राम का। तो अगला स्टेप क्या होता है? उसका डेटा फाइंड आउट करिए। उसका डेटा या उसका इंफॉर्मेशन। ये जो विंडो होता है ना कोई भी विंडो किसी चीज को रिप्रेजेंट करता है। किसी भी इंफॉर्मेशनेशन को रिप्रेजेंट करता है। हो सकता है वो विंडो रिप्रेजेंट कर रहा हो कि मेरे अंदर जो एलिमेंट्स हैं अगर अगर ये",
+      "source": "caption",
+      "english_text": "Once you understand whether it is fixed or variable. Whatever window you're starting from, any window. If we start then it will have one size. He will have a position. For example, you say that my window starts from the start and it is of three sizes. So this is your starting point of the program. So what's the next step? Find out its data. Its data or its information. This window, nor any other window, represents anything. Represents any information. Maybe that window is representing the elements that are inside me if if this"
+    },
+    {
+      "start_time": 442.8,
+      "end_time": 475.589,
+      "text": "विंडो तीन एलिमेंट का है। हो सकता है ये विंडो बता रहा हो कि इसका सम क्या है? या फिर ये बता रहा हो कि इसमें मैक्स कौन है? या फिर ये बता रहा हो कि इसमें मिन कौन है? इस चीज को कहते हैं विंडो का इनेशन। वो विंडो का मतलब क्या है? जब कंप्यूटर वो विंडो देखता है तब उसको तो जीरो वन समझ में आता है। आप जब वो विंडो देखते हैं तो आपको क्या समझ में आता है? उसको कहते हैं इंफॉर्मेशन। मीनिंगफुल डेटा इज कॉल्ड इनफेशन। विंडो में तीन एलिमेंट है। 10 20 30 ये डेटा है। ये बस डेटा है कि विंडो तीन साइज का है। उसमें 10, 20, 30। लेकिन इससे इंफॉर्मेशन क्या मिल रहा है? हो सकता",
+      "source": "caption",
+      "english_text": "The window is of three elements. Maybe this window is telling what is its sum? Or are you telling who is Max in this? Or are you telling who is Min in this? This thing is called window ination. What does that window mean? When the computer sees that window, it understands zero and one. What do you understand when you look at that window? That is called information. Meaningful data is called inference. There are three elements in the window. 10 20 30 This is the data. It's just data that the window is of three sizes. 10, 20, 30 in that. But what information is getting from this? may be"
+    },
+    {
+      "start_time": 475.599,
+      "end_time": 510.23,
+      "text": "है आपको इंफॉर्मेशन मिल रहा हो कि ये 10, 20 और 30 का सम 60 है। ये उस विंडो का इंफॉर्मेशन है। ठीक है? सबसे पहले उस विंडो का इंफॉर्मेशन फाइंड आउट कर लीजिए। किसी भी तरीके से आप अब शुरू करिए किसी भी तरीके से। आगे इन सब पे चर्चा करेंगे। ये बस अप्रोच है किसी भी स्लाइडिंग विंडो पैटर्न को सॉल्व करने का ये चार स्टेप होता है। इससे हटके कोई स्टेप कोई क्वेश्चन नहीं पूछा जाता है कहीं। ठीक है? अब चौथा स्टेप क्या होता है? एक विंडो को तो आप फाइंड आउट कर लिए स्टार्टिंग का। वो कहीं से स्टार्ट हो रहा होगा उसका कुछ साइज़ होगा बहुत अच्छी बात है। अब विंडो को स्लाइड करवाइए। स्लाइड करवाइए या उसका",
+      "source": "caption",
+      "english_text": "You are getting information that the sum of 10, 20 and 30 is 60. This is the information in that window. Ok? First of all, find out the information of that window. Either way, you can start now. We will discuss all this further. This is just the four-step approach to solving any sliding window pattern. Apart from this, no step or question is asked anywhere. Ok? Now what is the fourth step? You have found out a window for starting. He must be starting from somewhere and must have some size, which is a very good thing. Now slide the window. get it slide or its"
+    },
+    {
+      "start_time": 510.24,
+      "end_time": 541.99,
+      "text": "साइज़ बदल दीजिए। जैसा भी क्वेश्चन पूछे जैसा आपको दरकार पड़े विंडो को स्लाइड करवा दीजिए उसका साइज फेरबदल कर दीजिए जैसा भी हो अब जो नई विंडो बनी है आप स्लाइड करवाए पहले आपका विंडो ये था अब आपका विंडो ये है अब न्यू विंडो का डेटा फाइंड आउट करिए हो सकता है पहले विंडो का इंफॉर्मेशन हो कि उसका सम 60 था न्यू विंडो जो बना न्यू विंडो जो बना उसमें एक और एलिमेंट ऐड हो गया हो तो उसका सम या तो बढ़ गया होगा या घट गया होगा या तो चेंज हो गया होगा या तो सेम रहा होगा उस नए विंडो का इनेशन फाइंड आउट कर लीजिए न्यू",
+      "source": "caption",
+      "english_text": "Change the size. Whatever question is asked, slide the window as per your requirement, resize it as per your requirement, now you slide the new window that has been created, earlier your window was this, now your window is this, now find out the data of the new window, maybe the information of the first window was that its sum was 60, the new window that was created, if another element has been added to it, then its sum must have either increased or decreased, or it must have changed or So it must have been the same, find out the entry of that new window."
+    },
+    {
+      "start_time": 542.0,
+      "end_time": 570.31,
+      "text": "विंडो का इंफॉर्मेशनेशन फाइंड आउट कर लीजिए। फाइंड आउट कर लीजिए। ठीक है? इस काम को रिपीट करते रहिए जब तक कि आप एरे के एंड तक ना पहुंच जाए या जब तक आपको आपका आंसर ना मिल जाए या जब तक आपका विंडो ही खत्म ना हो जाए। कोई भी एंड कंडीशन हो सकता है। मिलाजुला के कहने का मतलब है चार स्टेप है। किसी भी स्लाइडिंग विंडो के पैटर्न में चार ही स्टेप होते हैं। फिर से देख लीजिए। सबसे पहले तो स्लाइडिंग विंडो है कि नहीं आईडेंटिफाई कर लो भाई। हो गया।",
+      "source": "caption",
+      "english_text": "Find out the information in the window. Find it out. Ok? Keep repeating this until you reach the end of the array or find your answer or until your window runs out. There can be any end condition. To say mixed means there are four steps. There are only four steps in the pattern of any sliding window. Take a look again. First of all, brother, identify whether it is a sliding window or not. Done."
+    },
+    {
+      "start_time": 570.32,
+      "end_time": 604.389,
+      "text": "फिक्स है कि वेरिएबल है? फिक्स विंडो है कि वेरिएबल विंडो है? विंडो का साइज़ क्या बदलता घटता रहेगा या विंडो का साइज़ एक ही रहेगा वो पता कर लो। जिस भी विंडो से स्टार्ट कर रहे हो उसका इंफॉर्मेशन फाइंड कर लो। उसका इंफॉर्मेशन खोज के रख लो किसी भी तरीके से। तीसरा हो गया। चौथा स्टेप है कि अब जब विंडो स्लाइड होगा जब नया विंडो बनेगा अगले बार। उसका इंफॉर्मेशन भी आपको फाइंड आउट कर के रखना है। तभी तो कंपैरिज़न होगा। तभी तो स्लाइड करने का मतलब क्या है? कि स्लाइड करते जा रहे हैं और एरे का डिफरेंट पार्ट्स को देखते जा रहे हैं, है ना? यही तो मतलब है ना? कि 10 घर है। आप आप एक बार में दो घर देख सकते हैं। तो आप",
+      "source": "caption",
+      "english_text": "Is it fixed or variable? Fixed window or variable window? Find out whether the size of the window will keep changing or the size of the window will remain the same. Find the information for whatever window you are starting from. Find out his information and keep it by any means. The third one is done. The fourth step is that now when the window slides, a new window will be created next time. You also have to find out its information and keep it. Only then will there be comparison. Then what does it mean to slide? So you're sliding around and looking at different parts of the array, right? That's what it means isn't it? That's 10 houses. You can see two houses at once. so you"
+    },
+    {
+      "start_time": 604.399,
+      "end_time": 631.829,
+      "text": "एक बार में दो घर देख लिए। आपको पता चल गया कि दोनों घर में सुंदर कौन सा है? बहुत अच्छी बात है। अब आप अगला अगला दो घर देख रहे हैं। उसका भी तो इंफॉर्मेशन पता करना पड़ेगा। ऐसे ही तो आप 10ों घर देख के कंपेयर कर पाएंगे कि दसों घर में सबसे सुंदर घर कौन सा है भाई? तो ये होता है। तो आप ये कर लीजिए। चार स्टेप में आपका प्रोग्राम सॉल्व हो जाएगा। ठीक है? अब अपने क्वेश्चन को हम लोग इसी चार स्टेप से सॉल्व करेंगे। आपका क्वेश्चन क्या है? आपको एक एरे दिया हुआ है। अच्छा आपको हिंदी में क्या होता है क्वेश्चन?",
+      "source": "caption",
+      "english_text": "Saw two houses at once. Have you found out which of the two houses is more beautiful? very good thing. Now you're looking at the next next two houses. We will have to find out information about that also. In this way, you will be able to compare after seeing 10 houses, which is the most beautiful house among the 10 houses? So this happens. So you do this. Your program will be solved in four steps. Ok? Now we will solve our question with these four steps. What is your question? You are given an array. Well, what is question in Hindi?"
+    },
+    {
+      "start_time": 631.839,
+      "end_time": 666.23,
+      "text": "हिंदी में क्या क्वेश्चन आपको बोलने की कोशिश कर रहा है? एरे में सब एरे होता है। ठीक है? सब एरे क्या होता है? कि अगर एक एरे है ना उसका कोई भी कंटीन्यूअस पार्ट उसका कोई भी कंटीन्यूअस पार्ट को सब एरे कहते हैं। फॉर एग्जांपल ये इसका सब एरे है। सब एरे एरे खुद का भी सब एरे होता है। सबसेट पढ़े थे ना कि एक सेट होता था। उसका सबसेट क्या होता था? उसका एक छोटा सा भाग वही होता है। अब आपको क्वेश्चन क्या बोल रहा है कि K साइज़ का आपको एक इनपुट दिया रहेगा K, K के K के K के K के K के K के K के K के K के K के K के K साइज़ का जितना भी सब एरे है जितना भी सब एरे है उस एरे में ठीक है उनका आपको सम फाइंड करना है।",
+      "source": "caption",
+      "english_text": "What question in Hindi is the question trying to convey to you? Everything in an array is an array. Ok? What is sub array? That if there is an array and any continuous part of it is called a sub array. For example this is its sub array. The sub array itself is also a sub array. Subsets were read, not a set. What was its subset? A small part of it is the same. Now what the question is saying to you is that you will be given an input of size K."
+    },
+    {
+      "start_time": 666.24,
+      "end_time": 697.67,
+      "text": "सबका सम फाइंड करना है। उसमें से मैक्सिमम सम आपको रिटर्न करना है। आपको रिटर्न करना है। ये हिंदी में क्वेश्चन का मतलब है। ठीक है? यही क्वेश्चन बोल रहा है कि एरे है एक नंबर k आपको हम दे रहे हैं। आप उस k साइज का अगर k दो है तो दो साइज का सारा सब एरे अपने पास रखिए। सबका सम फाइंड कीजिए। उस सम में जो भी सम मैक्सिमम है वो रिटर्न कर दीजिए। फॉर एग्जांपल अगर हम लोग इसका एग्जांपल देखने की कोशिश करें तो इसमें 100 200",
+      "source": "caption",
+      "english_text": "Have to find the sum of everything. You have to return the maximum amount out of that. You have to return. This is the meaning of question in Hindi. Ok? This question is saying that we are giving you an array with a number k. If k of that size k is two then keep the entire sub array of size two with you. Find the sum of all. Whatever sum is maximum in that sum, return it. For example, if we try to see its example then 100 200"
+    },
+    {
+      "start_time": 697.68,
+      "end_time": 727.269,
+      "text": "300 और 400 ठीक है? 0 1 2 3 आपको क्या बोला है? इसका K2 है। K2 है। अब आपको बोलता है आंसर दो। तो टू साइज का टू साइज का जितना भी सब एरे एक सब एरे ये हो गया टू साइज का 100 और 200। दूसरा सब एरे हो गया। दूसरा सब एरे 200 और 300 हो गया। तीसरा क्या हुआ? 300 और 400। तीन सब एरे बने आपके पास। है ना? एक ये एक ये और एक ये। तीनों सब एरे का आपको सम निकालना है।",
+      "source": "caption",
+      "english_text": "300 and 400 ok? 0 1 2 3 What did you say? Its K2. Is K2. Now it asks you to answer. So whatever sub array of two sizes is one sub array, it becomes 100 and 200 of two sizes. Second everything is arrayed. The second sub-series became 200 and 300. What happened third? 300 and 400. You have three sub arrays. Isn't it? One this, one this and one this. You have to find the sum of all three sub-arrays."
+    },
+    {
+      "start_time": 727.279,
+      "end_time": 758.79,
+      "text": "मतलब उस सब एरे में जितने एलिमेंट्स हैं उनका सम निकाल लीजिए। तो हो सकता है वो s1 हो, s2 हो, s3 हो। इनमें जो भी मैक्सिमम है उसको रिटर्न कर दीजिए। तो अगर इस क्वेश्चन के हिसाब से हम लोग देखें तो पहले सब एरे का सम क्या होगा? 100 + 200 दूसरे का 200 + 300 तीसरे का 300 + 400। इसका सम आएगा 300। इसका सम आएगा 500। इसका सम आएगा 700। तीनों में सबसे ज्यादा कौन है? 700। आपका आंसर आना चाहिए 700। सही",
+      "source": "caption",
+      "english_text": "Meaning, find the sum of all the elements in that array. So it could be s1, s2, s3. Whatever is maximum among these, return it. So if we look at this question, what will be the sum of the first sub array? 100 + 200, 2nd 200 + 300, 3rd 300 + 400. Its sum will be 300. Its sum will be 500. Its sum will be 700. Who is the tallest among the three? 700. Your answer should be 700. right"
+    },
+    {
+      "start_time": 758.8,
+      "end_time": 791.43,
+      "text": "बात है? समझ गए? ओके। अब इसमें स्लाइडिंग विंडो क्यों लगता है? इसमें अब पैटर्न देख तो पैटर्न तो आप लोग याद कर लिए हैं कि क्वेश्चन में ये ये लिखा होगा तो स्लाइडिंग विंडो होता है तो वो तो अच्छी बात है। लेकिन अगर आपको पैटर्न नहीं भी पता होता अगर आपको क्वेश्चन पढ़ के नहीं भी समझ में आता कि इसमें क्यों तो ये क्या हो रहा है? हम लोग क्या कर रहे हैं? हम लोग दो-दो साइज का सब एरा देख रहे हैं। मतलब हम लोग पहले इसको देखें। अच्छा। फिर हम लोग इसको देखें। इसको देखने में क्या हुआ? इसको देखने में क्या हुआ? हम लोग पहले वाले सब एरे में 100 और 200 देखे थे।",
+      "source": "caption",
+      "english_text": "what is the matter? Understand? Ok. Now why does it have sliding windows? Now seeing the pattern in this, you people have remembered that if it is written in the question that there is a sliding window then that is a good thing. But even if you did not know the pattern, even if you did not read the question, you would understand why and what is happening in this? What are we doing? We are seeing sub eras of two sizes each. Meaning let us see this first. Good. Then let us see this. What happened after seeing this? What happened after seeing this? We had seen 100 and 200 in the earlier sub array."
+    },
+    {
+      "start_time": 791.44,
+      "end_time": 824.87,
+      "text": "उसके बाद हम लोग 100 को निकाल दिए। 200 अभी भी है और 300 को जोड़ दिए मतलब दो का ले रहे थे। दो का कुछ-कुछ हम लोग किए उसका आंसर आया। उसके बाद पिछले वाले को छोड़ दिए। पिछले वाले को 100 को यहां पे छोड़ दिए और आगे वाले 300 को अंदर ले लिए। आगे वाले 300 को अपने एरे में ले लिए। इसका सम निकाल लिए। फिर सेम काम जो 100 के साथ हुआ था अब 200 के साथ हुआ। पहले हम लोग ये देख रहे थे। उसके बाद क्या किए कि 200 को भी क्रॉस कर दिए कि तुम भी जाओ। और 400 को अंदर ले लिए तो आप 300 और 400 को देख रहे हैं। अब अगर आप कोशिश करेंगे कि जो काम 100 और 200 के साथ हुआ वो 300 के साथ भी",
+      "source": "caption",
+      "english_text": "After that we fired 100 people. 200 is still there and adding 300 means taking two. We did something about two and the answer came. After that left the previous one. The previous one left 100 here and the next one took 300 inside. Took the next 300 in our array. Find out its sum. Then the same thing which happened with 100 now happened with 200. Earlier we were watching this. After that, what did you do that you crossed 200 and you also go? And if you take 400 in, you are looking at 300 and 400. Now if you try to do the work that happened with 100 and 200 with 300 also."
+    },
+    {
+      "start_time": 824.88,
+      "end_time": 858.389,
+      "text": "हो तो 300 को भी निकाल दीजिए। अब 400 लेकिन अब कोई अंदर लेने के लिए है नहीं एरे में। एरे खत्म हो गया है। तो इसीलिए हम लोग तीन ही सब एरे बना पा रहे हैं। समझ गए आप? समझ गए क्या बोल रहे है? हर बार हम लोग क्या कर रहे है? पीछे वाले एक आदमी को निकाल दे रहे हैं। आगे वाले एक आदमी को ले ले रहे हैं। तो वो सब एरे का साइज मेंटेन रह रहा है। मेंटेन रह रहा है ना? क्योंकि आपको क्वेश्चन में क्या बोला गया है? K साइज का ही सब एरे है। आपको ये नहीं बोला गया है कि किसी भी साइज का सब एरे निकाल दो भाई। नहीं। K = 2। आपको टू साइज का सब एरे ही देखना है। हर बार आपको दो-दो साइज का सब एरे देखना है और उसमें से सम बताना",
+      "source": "caption",
+      "english_text": "If yes then remove 300 also. Now 400 but now there is no one to take inside the array. The array is over. So that's why we are able to make only three sub arrays. Did you understand? Do you understand what he is saying? What are we doing every time? The people behind are throwing out a man. The ones in front are taking a man. So all that is maintaining the size of the array. Is it being maintained? Because what has been said to you in the question? The sub array is of size K only. You have not been told to take out a sub array of any size, brother. No. K = 2. You have to see only two size sub arrays. Every time you have to see the sub array of two sizes and tell the sum from them."
+    },
+    {
+      "start_time": 858.399,
+      "end_time": 892.15,
+      "text": "है। तो हमारा जो स्टेप टू था क्या हमारा विंडो फिक्स है कि हमारा विंडो वेरिएबल है? हमारा विंडो फिक्स है। हमारा विंडो फिक्स है। क्यों? क्योंकि क्वेश्चन आपको बोल रहा है कि k साइज़ वाला फाइंड करो। अपने मन से मत फाइंड करो। k अगर दो है। कोई भी सब एरे दो का ही होना चाहिए। कहने को तो 400 भी अकेले एक सब एरे हैं। कहने को तो 200, 300, 400 भी एक सब एरे हैं। लेकिन इसको क्यों नहीं कर रहे हैं? क्यों? क्योंकि ये इसका साइज अलग हो जाएगा। अगर ये तीन ले लेंगे तो इसका साइज तीन हो जाएगा। 400 का अकेले लेंगे तो इसका साइज वन ही रहेगा। हम लोग को चाहिए दो। इसीलिए हम लोग हर बार दो ही साइज का सब एरे ले",
+      "source": "caption",
+      "english_text": "Is. So our step two was is our window fixed or is our window variable? Our window is fixed. Our window is fixed. Why? Because the question is asking you to find the one of size k. Don't find it with your mind. If k is two. Any sub array must be of two only. So to speak, even 400 alone is a sub array. So to say, 200, 300, 400 are also a sub array. But why are you not doing it? Why? Because its size will be different. If you take three of these, its size will become three. If you buy 400 alone then its size will remain only one. We need two. That's why we take sub arrays of only two sizes every time."
+    },
+    {
+      "start_time": 892.16,
+      "end_time": 926.23,
+      "text": "रहे हैं। दो ही साइज का विंडो ले रहे हैं विंडो। विंडो मतलब स्लाइडिंग स्लाइडिंग। पहले हम लोग अपना ये विंडो लिए थे। अब ये विंडो लिए हैं। अब ये विंडो लिए हैं। तो विंडो स्लाइड तो हो रहा है। स्लाइड होने का क्या मतलब है? पीछे वाले को छोड़ दो। आगे वाले को ले लो। फिर पीछे वाले को छोड़ दो। आगे वाले को ले लो। स्लाइड तो विंडो बराबर हो रहा है। लेकिन हर बार उसका साइज़ सेम रह रहा है। साइज़ सेम रह रहा है। साइज़ नहीं बदल रहे हैं। ऐसा नहीं कर रहे है कि पीछे एक को छोड़े तो पता चला कि दो को ले लिए। तो उससे तो साइज़ बढ़ जाएगा। ऐसा भी नहीं कर रहे हैं कि पीछे वाले को छोड़े नहीं, आगे वाले को ले लिए। उससे विंडो घट जाएगा। है ना? तो कभी भी हम लोग साइज",
+      "source": "caption",
+      "english_text": "Have been. We are taking only two sizes of windows. Window means sliding. Earlier we had taken this window of ours. Now these are the windows. Now these are the windows. So the window is sliding. What does it mean to slide? Leave the one behind. Take the next one. Then leave the one behind. Take the next one. Slide so the window is level. But every time its size remains the same. The size is remaining the same. The size is not changing. They are not doing this such that if they leave one behind, it turns out that they have taken two. So that will increase the size. They are not even doing this in such a way that they don't leave the one behind, they take the one in front. That will shrink the window. Isn't it? So anytime we size"
+    },
+    {
+      "start_time": 926.24,
+      "end_time": 958.069,
+      "text": "फेरबदल नहीं कर रहे हैं। साइज दो ही है। तो इससे हम लोग को पता चलता है कि विंडो फिक्स है। विंडो फिक्स्ड है। स्टेप टू का काम हो गया। स्टेप वन था पैटर्न आइडेंटिफाई करो। पता चल गया स्लाइडिंग का है। स्टेप टू था फिक्स है कि वेरिएबल है पता चल गया। अब आइए स्टेप थ्री पे। अब आइए स्टेप थ्री पे। स्टेप थ्री क्या बोलता था? स्टेप थ्री बोलता था विंडो जब भी शुरू करोगे जो भी आपका स्टार्टिंग पॉइंट है उसका इंफॉर्मेशनेशन निकाल लो। उसका इंफॉर्मेशन निकाल लो। ठीक है? अब स्टार्टिंग पॉइंट क्या होता है भाई?",
+      "source": "caption",
+      "english_text": "Not making any changes. There is only size two. So this tells us that the window is fixed. The window is fixed. Step two is done. Step one was identify the pattern. Found out it was due to sliding. Step two was to find out whether the variable is fixed. Now let's move on to step three. Now let's move on to step three. What did step three say? Step three: Whenever you start the window, take out the information of whatever is your starting point. Get his information. Ok? Now what is the starting point brother?"
+    },
+    {
+      "start_time": 958.079,
+      "end_time": 991.67,
+      "text": "स्टार्टिंग पॉइंट तो नहीं लिखा हुआ है क्वेश्चन में कि स्टार्टिंग आपको कहां से करना है? तो देखिए स्टार्टिंग पॉइंट लिखा हुआ नहीं क्योंकि स्टार्टिंग पॉइंट बहुत सिंपल है। आपको बोल रहा है कि एरे का सब एरे आपको कुछ करना है काम। तो एरे का सब एरे स्टार्ट कहां से होगा? शुरू से ही होगा एरे ऐसा तो नहीं होगा कि बीच से स्टार्ट बीच से स्टार्ट करिएगा तो कहां जाइएगा? बीच से स्टार्ट करके या तो लेफ्ट जाइएगा राइट जाइएगा। कहीं भी जाइएगा तो उधर वाला छूट जाएगा। तो ये तो इंट्यूशन का ये तो नेचुरल बात है कि आप स्टार्ट तो यहीं से करेंगे। तो ये आपका स्टार्टिंग पॉइंट हो गया। अब स्टार्ट पॉइंट ये हो गया। विंडो का साइज क्या होगा? विंडो का साइज तो पहले ही से पता है टू होगा। तो आपका स्टार्टिंग का विंडो क्या है? आपका",
+      "source": "caption",
+      "english_text": "Starting point is not written in the question from where do you have to start? So see the starting point is not written because the starting point is very simple. Everyone is telling you that you have to do some work. So where will the sub-array of the array start? It will happen from the beginning itself. It won't happen that it starts from the middle. If you start from the middle, then where will you go? Starting from the middle, either go left or right. If you go anywhere, that person will be left behind. So this is a natural thing of intuition that you will start from here. So this is your starting point. Now this is the starting point. What will be the size of the window? The size of the window is already known to be 2. So what is your starting window? yours"
+    },
+    {
+      "start_time": 991.68,
+      "end_time": 1024.47,
+      "text": "स्टार्टिंग का विंडो 100 और 200 है। तो आपको आपका स्टार्टिंग पॉइंट पता चल गया? गुड। स्टार्टिंग पॉइंट पता चल गया? गुड। इसका इनफार्मेशन क्या है? हम क्या बोले इनफार्मेशन मतलब? उस विंडो से हम लोग क्या समझने का कोशिश कर रहे हैं? या तो हम लोग हम लोग क्या करने का कोशिश कर रहे हैं क्वेश्चन में? हम लोग सब एरे का किसी भी सब एरे का अब किसी भी सब एरे का नाम निकालने की कोशिश तो नहीं कर रहे हैं कि ये सब एरे का नाम क्या है इसका पता नहीं हम लोग उसका सम निकालने की कोशिश कर रहे हैं तभी तो 700 आया हम लोग अरे यार बार-बार हम लोग इसका क्या करने का कोशिश कर रहे हैं हम लोग इसका सम निकालने का कोशिश कर",
+      "source": "caption",
+      "english_text": "The starting window is 100 and 200. So you found your starting point? Good. Got the starting point? Good. What is its information? What do we mean by information? What are we trying to understand from that window? Either what are we trying to do in the question? Now we are not trying to find the name of any sub array of any sub array, we don't know what is the name of this sub array, we are trying to find its sum, that is why 700 came, oh man again and again what are we trying to do with it, we are trying to find its sum."
+    },
+    {
+      "start_time": 1024.48,
+      "end_time": 1055.35,
+      "text": "रहे हैं तभी तो मैक्सिमम सम फाइंड करेंगे तो इसका इंफॉर्मेशन क्या हुआ उस विंडो का सम उस विंडो में जो जो है उसका सम तो उस विंडो का इंफॉर्मेशन निकालने का मतलब है कि उस विंडो का हम हम लोग सम निकाल लेंगे। ये उसका इनेशन हुआ। ठीक है? अब आप सम कैसे निकालेंगे? किसी भी अब सब एरे क्या होता है? सब एरे भी तो एक एरे ही है। सब एरे भी तो एक छोटा सा एरे है ना उस एरे में। इसका सम कैसे निकालेंगे? इसका सम अच्छे से निकालेंगे कि अ क्या 1 मिनट।",
+      "source": "caption",
+      "english_text": "Only if we find the maximum sum, then what is its information, the sum of that window, the sum of whatever is in that window, so finding the information of that window means that we will find the sum of that window. This was his birth. Ok? Now how will you find the sum? What happens to any sub array any longer? All arrays are also an array. The entire array is also a small array in that array. How to calculate its sum? We will calculate it properly in 1 minute."
+    },
+    {
+      "start_time": 1055.36,
+      "end_time": 1090.15,
+      "text": "हां। तो इसका सम कैसे निकालेंगे? इसका सम निकालने के लिए आइट्रेट करेंगे आप। एरे का सम कैसे निकालते हैं? एरे में आप ज़ीरो से लेके n - 1 तक जाते हैं। सब एरे का सम आप कैसे निकालेंगे आप? अब ज़ीरो से लेके जहां तक वो सब एरे खत्म हो जाए उसका सम निकाल लेंगे। ठीक है? उसका सम हम लोग 300 निकाल लिए जो कि है 100 + 200। स्टेप थ्री पूरा हो गया। अभी अभी कोर्ट में नहीं सोच रहे। अभी सोच रहे हैं कि ये स्टेप करेंगे कैसा? बहुत जरूरी बात है ना कि कभी भी आप डीएसए का प्रोग्राम सॉल्व करिए। डीएसए प्रॉब्लम सॉल्व करिए ना तो कंप्यूटर की तरह मत सोचिए। आप ह्यूमन की तरह सोचिए। इससे बहुत आसान हो जाता है। क्यों? क्योंकि बहुत लोग",
+      "source": "caption",
+      "english_text": "Yes. So how will we calculate its sum? You will iterate to find its sum. How to find the sum of an array? In an array you go from zero to n - 1. How will you find the sum of all the arrays? Now we will calculate the sum from zero till the end of the array. Ok? We calculated its sum as 300 which is 100 + 200. Step three is complete. Not thinking about going to court right now. Now wondering how to do this step? It is very important that you never solve the DSA program. Solve DSA problems and don't think like a computer. You think like a human. This makes it much easier. Why? because many people"
+    },
+    {
+      "start_time": 1090.16,
+      "end_time": 1124.549,
+      "text": "क्या करता है कि क्वेश्चन पढ़ते ही सोचने लगता है कि इसमें कौन सा लूप चलेगा? इसमें कौन सा एल्गोरिदम कर देंगे? इसमें कौन सा ग्राफ? अरे वैसे नहीं सोचना है। वो सब कंप्यूटर को सोचने दीजिए। आप इंसान है ना? आप इंसान की तरह सोचिए। जितना भी एआई वगैरह बन रहा है आज वो उसका गोल क्या है? उसका गोल है कंप्यूटर को इंसान की तरह सोचवाना। जितना भी इमेज प्रोसेसिंग वो क्या है कि कंप्यूटर अगर आंख से देखता है तो क्या? आप वो तो कंप्यूटर इंसान की तरह सोच रहा है। और आप इंसान होके उस कोशिश कर रहे हैं कि हम लूप सोच लें और वैसा नहीं करना है। लूप वूप बाद में लिख लेंगे। आप ह्यूमन की तरह सोचिए। आपको इन दोनों का सम निकालना है ना तो आप कैसे निकालेंगे? 100",
+      "source": "caption",
+      "english_text": "What happens that as soon as you read the question, you start wondering which loop will run in it? Which algorithm will do this? Which graph in this? Hey, don't think like that. Let the computer think of all that. You are human right? Think like a human being. Whatever AI etc. is being created today, what is its goal? Its goal is to make computers think like humans. Whatever image processing is done, what if the computer sees with the eyes? You, that computer is thinking like a human. And you, being a human being, are trying to make us think in a loop and not do that. Will write Loop Whoop later. You think like a human. You have to find the sum of these two, otherwise how will you do it? 100"
+    },
+    {
+      "start_time": 1124.559,
+      "end_time": 1159.27,
+      "text": "+ 200 करेंगे देख के। बस वही करना है। 300 लिख लीजिए। अच्छा। स्टेप फोर पे आ जाइए। स्टेप फोर क्या था? जभी भी अभी एक विंडो है आपका 100 और 200 पे अगला विंडो क्या होने वाला है? अगला विंडो आपका 200 और 300 होने वाला है। क्योंकि विंडो स्लाइड कर रहा है। 100 हटने वाला है। 300 आने वाला है। ठीक है? अब आपको उसका भी इंफॉर्मेशन निकालना है। उसका भी आपको इंफॉर्मेशन निकालना है। ठीक है? उसका इंफॉर्मेशन भी सम होगा। अगर इसका इनेशन ये तो हम लोग एस्टैब्लिश कर चुके हैं ना कि किसी भी सब एरे का इनेशन उसका सम है। उस एलिमेंट्स का सम है। ठीक है? अब उसका सम कैसे निकालेंगे? उसका सम एक तो बहुत अच्छा",
+      "source": "caption",
+      "english_text": "Will do + 200 after seeing. That's all to do. Write 300. Good. Come to step four. What was step four? Whenever there is a window now, what is going to be your next window at 100 and 200? The next window is going to be your 200 and 300. Because the window is sliding. 100 is about to be removed. 300 are coming. Ok? Now you have to extract information about that also. You have to extract information about that also. Ok? Its information will also be the same. If its ination is this, then we have established that the ination of any sub array is its sum. The sum of that elements is. Ok? Now how will we calculate its sum? its one is very good"
+    },
+    {
+      "start_time": 1159.28,
+      "end_time": 1187.669,
+      "text": "तरीका है कि जैसे 100 200 का सम निकला था। जैसे 100 200 का सम निकला था वैसे ही 200 और 300 का भी सम निकल जाए। अच्छी बात है। तो आप आप यहां से आइट्रेट करिए। यहां से आप I चलाते और यहां तक जाते और आपको 500 मिल जाता। वेरी गुड। 300 और 400 का सम कैसे निकलेगा? जैसे 200 और 300 का निकला था। यहां से चलाते और यहां तक जाते और सब निकल जाता। लेकिन ये बेहूदा तरीका है। ये बेहूदा तरीका क्यों है? क्यों है? हम बता रहे हैं।",
+      "source": "caption",
+      "english_text": "The method is as if 100 and 200 were even. Just as 100 and 200 turned out to be even, similarly 200 and 300 should also turn out to be even. It's a good thing. So you iterate from here. From here you would drive I and go till here and you would get 500. very good. How will the sum of 300 and 400 be found? Like 200 and 300 were released. We would have driven from here to here and everything would have been over. But this is a ridiculous method. Why is this a ridiculous method? Why is it? We are telling."
+    },
+    {
+      "start_time": 1187.679,
+      "end_time": 1220.71,
+      "text": "अब आप लोग अभी क्या बोल रहे हैं कि नए विंडो का सम कैसे निकालेंगे? जैसे पुराने विंडो का निकाले थे। पुराने विंडो का 100 + 200 करके निकाले थे। इक्वल टू 300 करके निकाले थे। नए विंडो का तो हम लोग 200 + 300 को जोड़ देंगे। तो हमको 500 मिल जाएगा। अगले विंडो का 300 और 400 को भी जोड़ देंगे तो 700 मिल जाएगा। ऐसे ही निकालेंगे। अच्छा तो ये इसमें कुछ गलत नहीं है। लेकिन ये अच्छा तरीका नहीं है। क्यों? आप इमेजिन कीजिए यहां वो ह्यूमन वाला एलिमेंट आएगा। हम बोल रहे हैं ना बार-बार कि इंसान की तरह सोचिए। फॉर यहां पे क्योंकि दो का विंडो है ना आपको समझ",
+      "source": "caption",
+      "english_text": "Now what are you people saying right now that how will we calculate the sum of the new window? Like old windows were removed. The old window was removed by doing 100 + 200. It was equal to 300. For the new window we will add Rs 200 + Rs 300. So we will get 500. If you add 300 and 400 of the next window, you will get 700. Will take it out like this. Well, there is nothing wrong in this. But this is not a good way. Why? Just imagine, that human element will come here. We are telling you again and again to think like a human being. For here because there are two windows, don't you understand?"
+    },
+    {
+      "start_time": 1220.72,
+      "end_time": 1253.669,
+      "text": "में नहीं आ रहा है। फॉर एग्जांपल आपके पास पांच लोग हैं। ठीक है? आपके पास पांच लोग हैं। आपके घर पे आए हुए हैं। ठीक है? अच्छी बात है। हर आदमी आपको पैसे दे रहा है। हर आदमी आपको कुछ कुछ पैसा अपने हिसाब से दे रहा है। यह ₹5 दे रहा है। यह ₹4 दे रहा है। यह ₹2 दे रहा है। यह ₹10 दे रहा है। यह भी ₹5 दे रहा है। आपके पास अभी टोटल रुपया आप पांचों का रुपया लेके गिन लिए। आपके पास 5 4 9 11 21 26 आपके पास ₹26 हुआ। आप गिन लिए बैठ गए। कंफर्टेबल हो",
+      "source": "caption",
+      "english_text": "I am not coming. For example you have five people. Ok? You have five people. Have come to your house. Ok? It's a good thing. Every man is giving you money. Every person is giving you some money according to his own. It is giving ₹5. It is giving ₹4. It is giving ₹2. It is giving ₹10. This one is also giving ₹5. Now take the total rupees of all five and count them. You have 5 4 9 11 21 26 You have ₹26. You sat down to count. be comfortable"
+    },
+    {
+      "start_time": 1253.679,
+      "end_time": 1288.47,
+      "text": "के बैठ गए सीट पे। अब अब अब ये वाला जो आदमी है ना ये वाला जो आदमी है बीच वाला ये बोलता है कि साहब हम ना हम नहीं दे पाएंगे पैसा हम घर जा रहे हैं पैसा लेके अपना हमारा पैसा हमको दे दीजिए ₹2 हमारे जगह मेरा भाई आएगा वो आपको दो के जगह एक ही रुपया देगा क्या हुआ आपके पास पांच लोग आए पैसे दिया आप पैसा गिन के रख लीजिए 26 एक बार गुड बीच वाला क्या बोलता है कि साहब हम घर जा रहे हैं हम अपना पैसा लेके जाएंगे हम पैसा नहीं दे पाएंगे हम अपने भाई को भेज देते हैं वो ₹2 नहीं देगा वो एक ही रुपया देगा ठीक ठीक है? इसके जगह इसका भाई आएगा। इसके जगह इसका भाई आएगा।",
+      "source": "caption",
+      "english_text": "Sat on the seat. Now now this man is neither this man nor this man, the one in the middle says, sir, we are not going to be able to give the money, we are going home, take your money, give us our money, ₹ 2, my brother will come in our place, he will give you only one rupee instead of two, what happened to you, five people came to you, gave money, you count the money and keep it. 26 Once good, what does the middle man say, sir, we are going home, we will take our money and go, we will not be able to give the money, we will send it to our brother. He will not give ₹2, he will give only one rupee, right? His brother will come in his place. His brother will come in his place."
+    },
+    {
+      "start_time": 1288.48,
+      "end_time": 1322.71,
+      "text": "भाई कितना रुपया देगा? भाई ₹1 देगा। और ये आदमी अपने घर चला जाएगा अपना ₹2 लेके। अब आपको अब आप इसका ₹2 रिटर्न करिएगा। इसके भाई का ₹1 ले लीजिएगा। तो अब आप अब आपके पास कितना रुपया हुआ? अब पहले आपके पास ₹26 था लेकिन एक आदमी गया तो उसका ₹2 आप दे दिए। इसका आप ₹2 दे दिए। और इसके भाई का ₹1 रख लिए। अब आपके पास कितना रुपया है? अब इसको करने का एक तरीका तो यह है कि आप जिसका जिसका पैसा था सबको वापस दे दीजिए। आप खाली हो जाइए। ठीक है? और फिर बोलिए कि फिर हमको पैसा दो फिर हम गिनेंगे। फिर उसमें टाइम लगाएंगे और फिर आपको पता चलेगा कि मेरे पास कितना भी",
+      "source": "caption",
+      "english_text": "Brother, how much money will I give? Brother will give ₹1. And this man will go home with his ₹2. Now you will return ₹ 2 for it. Take ₹1 from his brother. So how much money do you have now? Now earlier you had ₹26 but when a man went, you gave his ₹2. You gave ₹2 for this. And kept his brother's ₹1. How much money do you have now? Now one way to do this is to give it back to everyone whose money it was. You become free. Ok? And then say give us the money then we will count. Then you will invest time in it and then you will know that no matter how much I have"
+    },
+    {
+      "start_time": 1322.72,
+      "end_time": 1353.83,
+      "text": "रुपया है। लेकिन आप ऑलरेडी ये इसका पैसा गिन चुके हैं। ये चारों का पैसा तो गिन चुके हैं। हां। ये चारों कहीं जा रहा है? नहीं। ये चारों आपसे पैसा मांग रहा है? नहीं मांग रहा है। चेंज क्या हो रहा है? चेंज क्या हो रहा है? चेंज क्या हो रहा है? आपको यह ₹2 वापस करना है तो आप ₹2 वापस किए और यह आदमी का ₹1 ले लिए। आदमी आया ₹1 दिया। आपके पास पहले ₹26 था। अब आपके पास 26 - 2 24 + 1 ₹25 बचेगा। इंसान तो यही करता है कि अगर आपके पास पहले से है कोई बोल रहा है कि हमको अपना दे दो।",
+      "source": "caption",
+      "english_text": "It is rupees. But you have already counted its money. These four have already counted their money. Yes. Where are these four going? No. These four are asking you for money? Not asking. What is changing? What is changing? What is changing? You have to return this ₹2, so you return ₹2 and take this man's ₹1. The man came and gave ₹1. Earlier you had ₹26. Now you will be left with 26 - 2 24 + 1 ₹ 25. The only thing a human being does is that if you already have it, someone is asking you to give it to us."
+    },
+    {
+      "start_time": 1353.84,
+      "end_time": 1388.63,
+      "text": "हमको अपना पैसा वापस दे दो। तो आप वापस दे दिए। लो भाई कोई और आदमी दिया कि मेरा पैसा रख लो। वो आप ले लिए और चेंज कैलकुलेट कर लिए और आपको पता चल गया मेरे पास अब ₹25 पहले 26 था अब 25 है। तो कहने का मतलब कि ये जो 26 का कैलकुलेशन था इसके लिए ज़रूरी था कि आप पांचों आदमी से बात करिए कि कितना-कितना दे रहे हो क्योंकि ये आप स्टार्ट कर रहे थे। इसके बाद इसके पहले आपके पास कुछ नहीं था। कोई रेफरेंस नहीं था। लेकिन अब जब आपको पता है कि मेरे पास ₹26 है। तो आप जिसको पैसा देना है उसका दे दीजिए। उसको माइनस कर दीजिए। जिसका लेना है उसका ले लीजिए। बैंक अकाउंट में भी तो यह होता है ना। अगर आपके पास ₹1 लाख है,",
+      "source": "caption",
+      "english_text": "Give us your money back. So you gave it back. Take it brother, let me find someone else to keep my money. You took it and calculated the change and you came to know that now I have ₹25, earlier it was ₹26 and now I have ₹25. So that is to say, for this calculation of Rs 26, it was necessary that you should talk to the five people as to how much they were giving because you were starting this. After this you had nothing before this. There was no reference. But now that you know I have ₹26. So give the money to whomever you want. Minus that. Take it from whoever you want. This happens in bank accounts also. If you have ₹1 lakh,"
+    },
+    {
+      "start_time": 1388.64,
+      "end_time": 1421.35,
+      "text": "आप ₹100 का कोल्ड ड्रिंक पी गए और आपको कोई ₹50 दे दिया तो बैंक क्या बोलता है कि पूरा बैंक अकाउंट खाली करिए और फिर से आप कम गिनेंगे नहीं। बैंक क्या करता है? आपको 1 लाख - 100 करता है। प्लस 50 करता है और आपका बैंक का बैलेंस अपडेट कर देता है। बैंक भी यही करता है। इंसान भी यही करता है। तो हम लोग क्यों वहां पे वो बेकार का काम कर रहे हैं कि बार-बार गिन रहे हैं? हम लोग क्या करेंगे? हम लोग क्या करेंगे? फिरसे फिरसे देखिए। एरे बनाइए 100 200 300 400 ये हमारा एरे यही है ना एरे अब हम लोग",
+      "source": "caption",
+      "english_text": "You drank a cold drink worth ₹ 100 and someone gave you ₹ 50, then what the bank says is to empty the entire bank account and you will not be counted less again. What does a bank do? Makes you 1 lakh - 100. Plus 50 and updates your bank balance. The bank also does the same. Human beings also do the same. So why are we there doing that useless work or counting again and again? What will we do? What will we do? Look again again. Make an array 100 200 300 400 This is our array, this is it isn't it, now we are"
+    },
+    {
+      "start_time": 1421.36,
+      "end_time": 1454.47,
+      "text": "इंसान की तरह काम करेंगे बंदर की तरह काम नहीं करेंगे पहला विंडो पहला विंडो पहला विंडो पहला विंडो जो कि ये विंडो है इसका सम तो आपको निकालना ही पड़ेगा ये क्यों क्योंकि आपके पास ₹ था आपके पास जो पांच आदमी था आपके पास कोई रेफरेंस ही नहीं है आपको मालूम ही नहीं है कि हो क्या रहा है इसका सम तो आपको निकालना ही पड़ेगा तो s1 हमारा होगा 100 + 200 = 300 वेरी गुड इसका इनफार्मेशन मिल गया। अब जो अगला विंडो है अगला विंडो में हो क्या रहा है? अगला विंडो में 100 को हम लोग बाहर निकालने की कोशिश कर रहे है। 100 को हम लोग बोल रहे",
+      "source": "caption",
+      "english_text": "Will work like a human, will not work like a monkey. First window, first window, first window, first window, which is this window, you will have to find its sum, why is this because you had ₹, you had five men, you have no reference, you don't even know what is happening, so you will have to find its sum, so s1 will be ours, 100 + 200 = 300. Very good, got the information. Now what is happening in the next window? We are trying to take out 100 in the next window. We are talking about 100"
+    },
+    {
+      "start_time": 1454.48,
+      "end_time": 1488.39,
+      "text": "हैं कि तुम जाओ और अब उसके बाद क्या कर रहे है? उसके बाद क्या कर रहे हैं? विंडो स्लाइड हो रहा है ना। अगला विंडो क्या है? आपका अगला विंडो ये है। 200 और 300 उसमें हम लोग क्या करके आ रहे है? 100 को बाहर निकाल रहे हैं। 300 को अंदर ले रहे हैं। सेम काम हो रहा है जो पहले हो रहा था। एक आदमी बोला कि हम घर जा रहे हैं, गांव जा रहे हैं और मेरा भाई आ रहा है। तो 100 अपने गांव जा रहा है, 300 वापस आ रहा है। अब जो S2 आएगा, अब जो S2 आएगा, हम लोग क्यों कैलकुलेट कर रहे हैं कि फिर से 200 और 300 को हमको जोड़ना ही नहीं है। आपके पास क्या हो रहा है? आपका पहले था सम 300। पहले वाला सम 300 था इसमें हो क्या रहा है? इसमें हो क्या रहा",
+      "source": "caption",
+      "english_text": "What are you doing now and then? What are you doing after that? The window is sliding, isn't it? What is the next window? Your next window is this. What are we doing with 200 and 300 rupees? Taking out 100. Taking 300 inside. Same work is being done as was happening earlier. A man said that we are going home, to the village and my brother is coming. So 100 are going to their village, 300 are coming back. Now that S2 will come, now that S2 will come, why are we calculating that we will not have to add 200 and 300 again. What do you have going on? Your first even was 300. The previous one was 300, what is happening in this? what is happening in this"
+    },
+    {
+      "start_time": 1488.4,
+      "end_time": 1518.71,
+      "text": "है? - 100 100 बाहर जा रहा है। आ कौन रहा है? प्लस + 300 + 300 यही हो रहा है ना? अब इसका आंसर क्या आएगा? 200 + 300 500 देख लीजिए मैच कर लीजिए। 200 और 300 का सम 500 होता है। यही हो रहा है? वेरी गुड। आपका S2 बन गया। आपका S2 कितने कम टाइम में बन गया? आपको S2 के लिए क्या करना पड़ा? पहले आपको S2 के लिए पूरा सब एरे देखना पड़ता की 200 है, 300 है दोनों का सम इतना काम कर रहे थे। अब आप क्या कर रहे हैं? 100 हटा रहे हैं, 300 जोड़ रहे हैं।",
+      "source": "caption",
+      "english_text": "Is it? - 100 100 going out. Who is coming? Plus + 300 + 300 That's what's happening, isn't it? Now what will be the answer? 200 + 300 500, see and match. The sum of 200 and 300 is 500. Is this what is happening? very good. Your S2 is done. In how short time was your S2 made? What did you have to do for S2? Earlier you had to see the entire sub array for S2 whether it is 200, 300, the sum of both were doing so much work. What are you doing now? 100 are being removed, 300 are being added."
+    },
+    {
+      "start_time": 1518.72,
+      "end_time": 1553.029,
+      "text": "सेम काम कीजिए। सेम काम कीजिए। S3 किसका था? S3 मतलब? S3 मतलब ये विंडो। ये विंडो। इसमें क्या हो रहा है? 200 बोल रहा है कि हम घर जाएंगे। 400 बोल रहा है कि हम आएंगे। तो आ जाओ। आ जाओ 500 लिखिए। इसके बाद 200 बोल रहा है कि हम घर जाएंगे। जाओ और 400 बोल रहा है कि हम आएंगे। ये कितना हुआ इसका आंसर? 700। मैच कर लीजिए। 300 और 400 का सम 700 होता है। अब समझ गए कि विंडो कैसे हो रहा है? आप कैसे कम टाइम में कम काम कर रहे हैं। वेरी गुड। अब ऐसे आपको सारा इनफार्मेशन मिल गया। फिर से एक बार रिवाइज करा दे रहे हैं। क्या-क्या हम",
+      "source": "caption",
+      "english_text": "Do the same work. Do the same work. Whose S3 was it? S3 meaning? S3 means this window. This window. What is happening in this? 200 is saying that we will go home. 400 is saying that we will come. So come. Come, write 500. After this 200 is saying that we will go home. Go and 400 are saying that we will come. What is the answer to this? 700. Make a match. The sum of 300 and 400 is 700. Now do you understand how the window is created? How are you doing less work in less time? very good. Now this way you got all the information. Getting it revised once again. what-what we"
+    },
+    {
+      "start_time": 1553.039,
+      "end_time": 1587.19,
+      "text": "लोग किए। फिक्स विंडो वेरिएबल विंडो किए। पहला इंफॉर्मेशन निकालने के लिए तो आपको करना ही पड़ेगा जो काम करते हैं। 100 और 200 को देख के 300। उसके बाद वाला इनफार्मेशन निकालने के लिए काम करने का जरूरत यही ब्यूटी है स्लाइडिंग विंडो का। इसीलिए तो हम लोग स्लाइडिंग विंडो पढ़ रहे हैं। बार-बार ऐसे ही करना पड़ता। अगर बार-बार यही हमारा सोच होता कि हम बार-बार सबको देख लेंगे। तो सारा सब एरे को सारा सब एरे ले लीजिए। सारा सब एरे निकालने आता है ना रे का। सबको लेके अलग-अलग जगह रख लीजिए और फिर सबका आप बना दीजिए। तो वैसे कर सकते थे। लेकिन इतना पैटर्न वटन क्यों पढ़ रहे हैं? यही करने के लिए पढ़ रहे हैं? यही सोचने के लिए पढ़ रहे हैं। ठीक है? आपको समझ में आ गया? अब इसको लिखते",
+      "source": "caption",
+      "english_text": "People did. Fixed window variable windows. To extract the first information, you will have to do what works. 300 after looking at 100 and 200. After that, you need to work to get the information, this is the beauty of sliding window. That's why we are reading Sliding Windows. Had to do it again and again. If this was our thinking again and again, we would see everyone again and again. So take all sub array to all sub array. Ray comes to take out everything. Take everyone, put them in different places and then make everyone yours. So we could have done it that way. But why are you reading so much about patterns? Is this what you are studying to do? This is what you are reading to think. Ok? Did you understand? अब इसको लिखते"
+    },
+    {
+      "start_time": 1587.2,
+      "end_time": 1620.549,
+      "text": "कैसे हैं? अब आएंगे कंप्यूटर वाले पे। एक बार आपने सोच लिया ना इंसान की तरह। तो अब अब आइए कि अब इसको कंप्यूटर के भाषा में उतारते कैसे हैं? ठीक है? अब अब इसको करेंगे कैसे? ठीक है? 100 200 300 और 400 0 1 2 3 स्लाइडिंग विंडो में स्लाइडिंग विंडो में कोई भी स्लाइडिंग विंडो प्रोग्राम लिखते हैं ना इसमें दो पॉइंटर होता है विंडो विंडो कैसे विंडो मतलब क्या है विंडो मतलब एक भाग मतलब एक सब एरे सब एरे के लिए कम से कम दो चीज तो चाहिए ना भाई स्टार्ट और एंड तो चाहिए अरे कोई भी लाइन है या कोई भी विंडो है कोई",
+      "source": "caption",
+      "english_text": "How are you? अब आएंगे कंप्यूटर वाले पे। एक बार आपने सोच लिया ना इंसान की तरह। तो अब अब आइए कि अब इसको कंप्यूटर के भाषा में उतारते कैसे हैं? Ok? अब अब इसको करेंगे कैसे? Ok? 100 200 300 और 400 0 1 2 3 स्लाइडिंग विंडो में स्लाइडिंग विंडो में कोई भी स्लाइडिंग विंडो प्रोग्राम लिखते हैं ना इसमें दो पॉइंटर होता है विंडो विंडो कैसे विंडो मतलब क्या है विंडो मतलब एक भाग मतलब एक सब एरे सब एरे के लिए कम से कम दो चीज तो चाहिए ना भाई स्टार्ट और एंड तो चाहिए अरे कोई भी लाइन है या कोई भी विंडो है कोई"
+    },
+    {
+      "start_time": 1620.559,
+      "end_time": 1649.99,
+      "text": "बोलता है कि ये एक टुकड़ा है टुकड़ा का स्टार्ट और एंड होगा तभी तो टुकड़ा बनेगा नहीं तो फैल जाएगा तो हमेशा दो पॉइंटर होता है। इस पॉइंटर का नाम अलग-अलग टीचर अलग-अलग फॉर्मेट से बताते हैं लेकिन मेरे हिसाब से लो और हाई। ये स्टैंडर्ड नाम है दोनों का। लो मतलब जहां से शुरू हो रहा है हाई मतलब जहां पे खत्म हो रहा है। वैरी गुड। तो जब हम लोग स्टार्ट कर रहे हैं जब हम लोग स्टार्ट कर रहे हैं। जब हम लोग स्टार्ट कर रहे हैं तो कहां से स्टार्ट कर रहे हैं? एरे के शुरू से हम लोग को दो साइज का सब एरे लेना है।",
+      "source": "caption",
+      "english_text": "It says that this is a piece, the piece will have a start and an end, only then will the piece be formed, otherwise it will spread, so there is always a two pointer. Different teachers name this pointer in different formats but according to me, it is Low and High. This is the standard name of both. Low means where it is starting from, High means where it is ending. Very good. So when we're starting when we're starting. When we are starting, where are we starting from? From the beginning of the array we have to take sub arrays of two sizes."
+    },
+    {
+      "start_time": 1650.0,
+      "end_time": 1682.95,
+      "text": "मतलब पहला विंडो तो ये है। ठीक है? तो लो जो है ना एरे का क्वेश्चन में लो हमेशा उस इंडेक्स पे रहता है जहां से आपका विंडो शुरू हो रहा है। तो लो आपका जीरो पे रहेगा क्योंकि विंडो शुरू हो रहा है जीरो विथ इंडेक्स से। विंडो खत्म कहां हो रहा है? विंडो खत्म हो रहा है फर्स्ट इंडेक्स पे क्योंकि दो साइज का लेना है ना ज़ीरो और वन ले लेंगे दो साइज का हो जाएगा। अगर तीन का लेते तो खत्म कहां पे होता है? इंडेक्स नंबर टू पे। इससे हम लोग को क्या फॉर्मेट समझ में आ रहा है? कि जब k = 2 है और आपका k विंडो का साइज है तो आपका हाई हमेशा k -",
+      "source": "caption",
+      "english_text": "Meaning this is the first window. Ok? So what is there in the array question is always at the index from where your window is starting. So yours will be at zero because the window is starting from zero with index. Where does the window end? The window is ending on the first index because two sizes have to be taken, zero and one will be taken, it will become two sizes. If you take three, where does it end? Index number to pay. What format do we understand from this? That when k = 2 and k is your window size then your high is always k -"
+    },
+    {
+      "start_time": 1682.96,
+      "end_time": 1716.23,
+      "text": "1 पे होगा। वन ये नहीं समझे। k = 2 है मतलब टू साइज का लेना है। आपका शुरू हो रहा है ज़ीरो से। तो आपका हाई कहां तक जाएगा? हाई हमेशा उस ब्लॉक के उस चीज पे रहता है जहां विंडो खत्म हो रहा हो। तो हाई वन पे रहेगा। हाई जनरली स्पीकिंग k - 1 पे रहेगा 90% ऑफ़ द केसेस पे। ठीक है? जब K आपका साइज़ हो के कुछ और हो गया तो नहीं ऐसा मत करिएगा। ठीक है? अब अब अब क्या बोले थे? पहला सम निकालने के लिए तो आपको वो कारीगरी करना पड़ेगा कि देखना पड़ेगा। कैसे देखेंगे? कैसे देखेंगे? सिंपल फॉर i इक्वल टू लो कर",
+      "source": "caption",
+      "english_text": "Will be on 1st. One did not understand this. k = 2 means two sizes have to be taken. Yours is starting from zero. So how far will your high go? The high is always on the block where the window ends. So will remain on high one. Generally speaking k - 1 will be on 90% of the cases. Ok? When K is your size and becomes something else, then no, don't do this. Ok? Now what did you say now? To get the first sum, you will have to do that work or you will have to look. How to see? How to see? Simple for i equal to lo kar"
+    },
+    {
+      "start_time": 1716.24,
+      "end_time": 1748.07,
+      "text": "लीजिए। i हाई तक चला दीजिए। लेस दैन हाई नहीं। लेस दैन हाई नहीं। एरे का साइज में लेस दैन n चलता है। क्यों? क्योंकि इंडेक्स ही होता है n - 1 पे। हाई को हम लोग उस इंडेक्स पे रख रहे हैं जहां खत्म हो रहा है। तो लेस दैन या इक्वल और i + एक सम वेरिएबल ले लीजिए। सम इज़ इक्वल टू 0 कर लीजिए। और सम = सम प्लस एरे ऑफ़ i ये आप अगर कर देंगे ये आप अगर एक बार कर देंगे तो आपको 100 और 200 का सम मिल जाएगा। इस समय आपके सम में 300 रजिस्टर हो चुका है।",
+      "source": "caption",
+      "english_text": "Take it. Turn i to high. Not less than high. Not less than high. The size of the array is less than n. Why? Because the index itself is at n - 1. We are keeping the high on the index where it is ending. So take less than or equal and i + an even variable. Sum is equal to 0. And sum = sum plus array of i. If you do this once, you will get the sum of 100 and 200. At present 300 people have registered in your account."
+    },
+    {
+      "start_time": 1748.08,
+      "end_time": 1782.87,
+      "text": "ठीक है? आपका लो = 0 है। हाई = वन है। ठीक है? किसी भी स्लाइडिंग विंडो में ये जनरल या तो स्टैंडर्ड प्रोसेस होता है। ठीक है? यहां हम लोग सम कर रहे हैं। अगर ये एवरेज का क्वेश्चन होता तो एवरेज करते। सम फ्रीक्वेंसी का होता कुछ भी करते। लेकिन ये होता है कि फर्स्ट विंडो का इनफेशन निकालने के लिए आपको लो से लेके हाई तक हाइड्रेट करना पड़ेगा। कर दिए। वेरी गुड। अब अब विंडो को शिफ्ट भी करना है। विंडो को स्लाइड करना है। हर बार स्लाइड करते हुए उसका इनेशन भी अंदर लेते रहना है। ठीक है? विंडो को स्लाइड कैसे करते हैं? विंडो",
+      "source": "caption",
+      "english_text": "ok? Your lo=0. High = one. Ok? This is a general or standard process in any sliding window. Ok? Here we are doing even. If this was a question of average then we would have done average. Anything of even frequency would do. But it happens that to remove the infection of the first window, you will have to hydrate from low to high. Did it. very good. Now the window also has to be shifted. The window has to slide. Keep inhaling the inhalation every time you slide. Ok? How to slide a window? window"
+    },
+    {
+      "start_time": 1782.88,
+      "end_time": 1817.83,
+      "text": "को स्लाइड कैसे करते हैं? उसके लिए सबसे पहली बात विंडो को कब तक स्लाइड करेंगे? अभी आपका लो यहां है, हाई यहां है। विंडो के स्लाइड होने का मतलब क्या है? कि जो विंडो यहां था वो विंडो यहां आ जाएगा। यही होता है। तो अभी आपका लो यहां है, हाई यहां है। जब ये विंडो स्लाइड हो जाएगा तो आपका लो यहां आ जाएगा और हाई यहां आ जाएगा। यही होगा ना? लो और हाई। लो जहां से स्टार्ट हाई जहां पे खत्म। स्लाइड करेंगे तो आपको लो को बढ़ाना पड़ेगा। हाई को बढ़ाना पड़ेगा। एक और बार स्लाइड करेंगे तो आपका लो यहां आ जाएगा। हाई यहां आ जाएगा। यही होता है। अब एक और बार",
+      "source": "caption",
+      "english_text": "How to slide? The first thing for him is how long will you slide the window? Right now your low is here, high is here. What does it mean for a window to slide? That the window which was here will come here. Same thing happens. So right now your low is here, high is here. When this window slides, your low will come here and high will come here. This is what will happen, right? Low and high. Start from where it is low and end where it is high. If you slide, you will have to increase the low. The high will have to be increased. If you slide one more time, your lo will come here. Hai will come here. Same thing happens. now one more time"
+    },
+    {
+      "start_time": 1817.84,
+      "end_time": 1851.43,
+      "text": "स्लाइड करेंगे तो आपका लो यहां आएगा। लेकिन आपका हाई एरे से बाहर निकल चुका है। तब आपको समझ में आता है कि अब मेरा काम हो चुका है। हाई हाई क्या है? हाई उस इंडेक्स को पॉइंट करता है। एक बार आपका हाई एरे से ही बाहर आ गया तो एरे के बाहर तो कोई इंडेक्स नहीं है। लास्ट हाई यहां तक जा सकता है। हाई अगर एरे से बाहर निकला आपका विंडो हो गया खत्म। आपका प्रोग्राम ही हो गया खत्म। ठीक है? तो तो इस विंडो को स्लाइड करने के लिए क्या करेंगे? स्लाइड करने के लिए स्टैंडर्ड तरीका है वाइल लूप यूज करते हैं। वाइल वाइल और हाई कहां तक",
+      "source": "caption",
+      "english_text": "If you slide then your lo will come here. But your high has gone out of the array. Then you understand that now my work is done. What is high high? High points to that index. Once your high comes out of the array, there is no index outside the array. Last High can go up to here. If High comes out of the array, your window is finished. Your program is over. Ok? So what do you need to do to slide this window? The standard way to slide is to use a while loop. vile vile and high kahan kath"
+    },
+    {
+      "start_time": 1851.44,
+      "end_time": 1884.47,
+      "text": "जा सकता है? हम लोग हमेशा देखते हैं कि एंड कहां तक होता है? स्टार्ट देख लेंगे। स्टार्ट देखो स्टार्ट कहीं भी होगा ना स्टार्ट अगर फिक्स्ड है तो तब तो स्टार्ट हाई से पीछे ही रहेगा। कहने का मतलब अगर ये विंडो फिक्स है। किसी भी हाल में लो तो हाई से पीछे है। किसी स्टार्ट एंड तो पीछे ही होगा ना भाई। वन साइज का भी लोगे तो एक रहेगा। अगर वन साइज का भी सब एरे लेंगे तो लो भी यहीं रहेगा और हाई भी यहीं रहेगा। तो या तो लो हाई से हमेशा कम रहेगा या तो इक्वल रहेगा। ठीक है? तो हम लोग हाई पे करते हैं कि हाई जब एरे से बाहर निकल जाएगा हम लोग खत्म कर देंगे। तो व्हाइल",
+      "source": "caption",
+      "english_text": "can go? We always see where the end is? Will see the start. Look at the start, the start will happen anywhere, if the start is fixed then the start will remain behind the high. That is to say, if this window is fixed. In any case the low is behind the high. There must be some start and end, brother. Even if you buy one size, there will be only one. If we take a sub array of one size then the low will also remain here and the high will also remain here. So either low will always be less than high or it will be equal. Ok? So we pay the high that when the high goes out of the array we will finish it. so while"
+    },
+    {
+      "start_time": 1884.48,
+      "end_time": 1915.669,
+      "text": "हाई इज़ लेस दैन n क्या है? आपके एरे का साइज़। n यहां पे क्या है? इस केस में n = 4 है। तो हाई थ्री तक जा सकता है। हाई लास्ट यहां तक आ सकता है। जैसे ही हाई फोर गया खत्म। प्रोग्राम खत्म। ठीक है? वेरी गुड। यहां आ जाइए। अब अभी आप किस विंडो पे हैं? इस इस दौरान जब कंप्यूटर यहां आया है, आप किस विंडो पे हैं? आप फर्स्ट विंडो पे हैं। लो हाई इक्वल टू वन। आप फर्स्ट विंडो पे हैं। अभी आपको क्या अभी का रिजल्ट पता है? इसका इंफॉर्मेशन पता है?",
+      "source": "caption",
+      "english_text": "What is hi less than n? The size of your array. n What's here? In this case n = 4. So can go up to high three. High last can come till here. As soon as the high four went, it ended. Program over. Ok? very good. come in here. Now which window are you on now? During this time when the computer has come here, which window are you on? You are on the first window. Low high equals two. You are on the first window. Do you know the current result yet? Do you know its information?"
+    },
+    {
+      "start_time": 1915.679,
+      "end_time": 1941.59,
+      "text": "हां, पता है। क्यों पता है? हम लोग पहले ही से निकाल के इसको बैठे हुए हैं कंफर्टेबल हो के। इसीलिए पता है। अब यहां पर आपको जो भी करना है, उस रिजल्ट के साथ आपको करना क्या है? इस रिजल्ट का हमको मैक्सिमम फाइंड करना है। मैक्सिमम सम फाइंड करना है हर सब एरे का। तो आपका जो इनफार्मेशन है, आपका इंफॉर्मेशन सम है, आपको उसका मैक्सिमम फाइंड करना है। तो कैसे फाइंड करेंगे? कर लेंगे। जैसे एरे का मैक्सिमम कैसे निकालते हो? वैसे ही निकालेंगे। तो एक और वेरिएबल ले लेंगे।",
+      "source": "caption",
+      "english_text": "Yes, I know. Do you know why? We have already taken it out and are sitting comfortably. That's why I know. Now whatever you have to do here, what do you have to do with that result? We have to find the maximum of this result. Have to find the maximum sum of each sub array. So whatever information you have, your information is even, you have to find its maximum. So how will you find it? will that do. Like how do you find the maximum of an array? Will take it out the same way. So let's take another variable."
+    },
+    {
+      "start_time": 1941.6,
+      "end_time": 1974.71,
+      "text": "रिजल्ट जो भी हमारा फाइनल रिजल्ट देना है। और अब रिजल्ट को क्या चाहिए? रिजल्ट को मैक्सिमम सम चाहिए। तो जैसे एरे का मैक्सिमम फाइंड करते हैं वैसे ही इसका भी करेंगे। तो रेस इक्वल टू मैक्सिमम ऑफ रेस्ट और सम। ठीक है? इसका क्या मतलब होता है कि अगर अगर अभी का रिजल्ट अभी सम से कम है सम में क्या है? सम में इस विंडो का सम है। तो अभी हमारा रिजल्ट अगर इस विंडो के सम से कम है तो रिजल्ट कर दो। रिजल्ट को इस विंडो का सम के इक्वल कर दो। वेरी गुड। तो आपके रिजल्ट में भी क्या आ गया है? आपके रिजल्ट में भी 300 आ गया है। क्यों?",
+      "source": "caption",
+      "english_text": "Whatever the result, we have to give the final result. And now what does the result require? The result should be maximum even. So just as we find the maximum of an array, we will do the same for this also. So race equal to maximum of rest and sum. Ok? What does it mean that if the current result is less than even, what is even? The sum is the sum of this window. So now if our result is less than the sum of this window then make the result. Make the result equal to the sum of this window. very good. So what has come in your result also? 300 has come in your result also. Why?"
+    },
+    {
+      "start_time": 1974.72,
+      "end_time": 2002.07,
+      "text": "क्योंकि रिजल्ट आप कुछ ज़ीरो वग़ैरह ले लीजिएगा अपने हिसाब से। ठीक है? ये काम हो गया। अब अब अब विंडो स्लाइड करेंगे। विंडो स्लाइड करेंगे। स्लाइड कैसे करेंगे विंडो? अगर फिक्स साइज है। अगर फिक्स साइज है। अभी आपका फिक्स साइज है ना? दो ही साइज का विंडो है। स्लाइड कैसे करेंगे? स्लाइड करने के लिए सबसे पहले तो ये क्या है? लो प्लस प्लस। ठीक है? लो प्लस प्लस कर दिए। वेरी गुड।",
+      "source": "caption",
+      "english_text": "Because you will take some zeros etc. as per your choice. Ok? This work is done. Now now we will slide the window. The window will slide. How to slide the window? If fixed size. If fixed size. Do you have a fixed size right now? There are only two sizes of windows. How to slide? To slide, first of all, what is it? Take plus plus. Ok? Low plus turned into plus. very good."
+    },
+    {
+      "start_time": 2002.08,
+      "end_time": 2036.149,
+      "text": "और हाई प्लस प्लस। ये करते ही आपका विंडो स्लाइड हो गया। विंडो आपका स्लाइड हो गया ना? जी देखिए कहां था एरे? ये करते ही आपका लो यहां था, हाई यहां था। जैसे ही आप लो प्लस प्लस और हाई प्लस प्लस किए आपका लो यहां आ गया। हाई यहां आ गया। ऑटोमेटिकली आपका विंडो देखिए स्लाइड हो गया। आपका विंडो स्लाइड हो गया। ठीक है? वेरी गुड। अगला स्टेप क्या था? इस विंडो का इस विंडो का सम चाहिए। क्यों? क्योंकि जब हम लोग यहां आ रहे हैं, जब हम लोग यहां पे आ रहे हैं, जब हम लोग वाइल लूप के",
+      "source": "caption",
+      "english_text": "And high plus plus. As soon as you did this, your window slid. Did your window slide? Look where he was? As soon as you did this, your low was here, your high was here. As soon as you do low plus plus and high plus plus your low comes here. Hai came here. See your window automatically slides. Your window slides. Ok? very good. What was the next step? This window needs the sum of this window. Why? Because when we're coming here, when we're coming here, when we're coming to the Vile Loop"
+    },
+    {
+      "start_time": 2036.159,
+      "end_time": 2070.23,
+      "text": "शुरुआत में आ रहे हैं, तो हम लोग ऑलरेडी सम यूज़ करना है। हम लोग को चाहिए कि वो रिजल्ट रहे। क्यों? क्योंकि हर विंडो का सम तुरंत ही यूज़ हो रहा है। पहले ही यूज़ हो रहा है। ठीक है? तो इस विंडो का रिजल्ट आपको फाइंड करना है। मतलब इस विंडो का सम, इस विंडो का सम आपको फाइंड आउट करना है। कैसे करेंगे? जैसे पिछले बार किए थे, जैसे पिछले बार किए थे। हुआ क्या है? यहां पे हुआ क्या है? यहां पे लो प्लस प्लस हो गया है। तो मतलब लो पहले जहां था लो पहले कहां था? लो एक जगह पीछे होगा। यहां आया है। तो लो -1 वाला अपने घर निकल गया है। गांव चला गया है। और अभी जहां पे हाई है। अभी जहां",
+      "source": "caption",
+      "english_text": "We are coming in the beginning, so we have to use already some. We want that result. Why? Because the sum of every window is being used immediately. Already in use. Ok? So you have to find the result in this window. Meaning, you have to find out the sum of this window. How to do? Just like you did last time, just like you did last time. What happened? What happened here? Here, low plus has become plus. So that means where you were before, where you were before? Lo will be one place behind. Has come here. So the one from Lo-1 has left for his home. The village is gone. And now where it is high. where now"
+    },
+    {
+      "start_time": 2070.24,
+      "end_time": 2095.829,
+      "text": "पे हाई है। हाई पहले मान लो टू पे था। हाई अब थ्री पे आया है। तो ये वाला आदमी ऐड हुआ है। देखिए बहुत सल चीजें हैं ये सब। बहुत सल चीजें हैं। ध्यान से समझिएगा। ये प्लस प्लस माइनस माइनस में डिफिकल्ट होता है। बोल रहे होंगे लो माइनस में लिख दिए। हाई - 1 नहीं लिखे। क्यों? एक बार सोचिएगा आ जाएगा समझ में। लो यहां था, हाई यहां था। ठीक है? इसमें कोई कंफ्यूजन नहीं है। इसका रिजल्ट हमको मालूम था तो स्टार्टिंग।",
+      "source": "caption",
+      "english_text": "Pay is high. The high was earlier let's say two. High has now come on three. So this guy has been added. Look, all these are many things. There are many things. Please understand carefully. This is difficult in plus plus minus minus. You must be saying that you have written it in minus. High - 1 is not written. Why? Think once and you will understand. Low was here, high was here. Ok? There is no confusion in this. When we knew its result, we started."
+    },
+    {
+      "start_time": 2095.839,
+      "end_time": 2130.71,
+      "text": "अब लो यहां आया और हाई यहां आया। हुआ क्या? हुआ क्या? हुआ क्या? इंसानी शब्दों में क्या हुआ? अब लो यहां है। तो लो -1 ये चाचा अपने घर चला गया। यही हुआ ना? यही हुआ ना? और हाई अभी जहां है। हाई अभी जहां है। तो 300 जुड़ गया विंडो में। पहले 300 नहीं था, पहले 100 और 200 था। अब 100 निकला और 300 जुड़ गया। इससे हम लोग को समझ में आता है कि लो यहां है तो लो -1 को हटाना है और हाई अभी जहां है इसको यहां पे जोड़ना है। यही समझ में आया? 100 को हटाना",
+      "source": "caption",
+      "english_text": "Now low came here and high came here. What happened? What happened? What happened? What happened in human words? Now here it is. So take-1 this uncle went to his home. This is what happened right? This is what happened right? And where the high is right now. Where is the high right now? So 300 was added to the window. Earlier it was not 300, earlier it was 100 and 200. Now 100 came out and 300 was added. From this we understand that if Low is here then Low-1 has to be removed and where High is now, it has to be added here. Is this what you understood? remove 100"
+    },
+    {
+      "start_time": 2130.72,
+      "end_time": 2165.67,
+      "text": "है 300 को जोड़ना है। इंडेक्स के टर्म में ऐसे लिखेंगे। तो सबसे पहले तो लो माइनस वन वाले को हटा दो। सबसे पहले तो सम = सम माइनस एरे ऑफ लो - 1 हट गया। 100 आपका हट गया। आपके 300 से 100 हट चुका है। वेरी गुड। अब क्या है? हाई वाले को जोड़ना है। लेकिन लेकिन लेकिन हो सकता है। हो सकता है कि कभी कभी-कभी किसी दुनिया के केस में आपका हाई यहां पे हो। आपका हाई यहां पे हो। थ्री हो। आप लो प्लस प्लस किए तो लो भी आगे बढ़ गया। उसका कोई दिक्कत नहीं है।",
+      "source": "caption",
+      "english_text": "300 have to be added. This is how we will write in terms of index. So first of all remove the low minus one. First of all, sum = sum minus array of low - 1 is removed. Your 100 has been removed. 100 has been removed from your 300. very good. what now? The higher one has to be added. But but but but maybe. It is possible that sometimes your high point in some world's case may be here. May your high be here. There are three. If you do Lo Plus Plus, Lo also moves ahead. He has no problem."
+    },
+    {
+      "start_time": 2165.68,
+      "end_time": 2198.15,
+      "text": "लो माइनस वन हट गया। हाई प्लस प्लस आती है तो हाई इक्वल टू 4 हो गया। हो सकता है ना? वाइल में हम लोग क्या चेक किए थे कि वाइल हाई &lt; n तो हाई जब चेक हुआ था तो हाई थ्री था। तो हम लोग वाइल में आ गए उसका काम कर दिए। लेकिन लेकिन अब हाई प्लस प्लस किए हाई यहां पे आ गया। अब अगर आप कोशिश करेंगे कि सम = सम + a हाई हाई तो फोर है। एरे में तो कोई फोर इंडेक्स है नहीं। तो आपका प्रोग्राम गड़बड़ा जाएगा आपका सेगमेंटेशन एरर आएगा। तो ऐड करने से पहले चेक करने के लिए कि अभी भी हम लोग",
+      "source": "caption",
+      "english_text": "Low minus one removed. If high is plus plus then high is equal to 4. Is it possible? What we checked in the vile was that vile high < n so high when it was checked then high was three. So we came to Vile and did his work. But but now high plus plus high has come here. Now if you try that sum = sum + a high high then four. There is no fore index in the array. So your program will get messed up and you will get segmentation error. So before adding, to check that we are still"
+    },
+    {
+      "start_time": 2198.16,
+      "end_time": 2227.43,
+      "text": "हैं कि नहीं एरे में। इफ हाई इक्वल इक्वल टू n ब्रेक कर दो। समझ में आया? क्यों चेक किए? क्योंकि जब हाई चेक हुआ था तो थ्री था, बहुत अच्छी बात थी। उसका कर दिए काम। हाई प्लस प्लस होते ही हाई फोर बन जाएगा। तो अब आपका कोई विंडो है ही नहीं। अब लो है और हाई एरे से बाहर है तो चेक करना है कि हाई n हो गया है अगर प्लस करने के बाद ब्रेक कर दो। ब्रेक किसको? वाइल लूप को ब्रेक कर दो। प्रोग्राम एंड कर देंगे। ठीक है? ऐसा अगर नहीं हुआ है तो आपका विंडो है तो आप करिए।",
+      "source": "caption",
+      "english_text": "Are they in the array or not? If high equals equal to n then break. Did you understand? Why did you check? Because when the high was checked it was three, it was a very good thing. His work was done. As soon as high plus becomes plus, it will become high four. So now you don't have any window. Now low is there and high is out of the array so check whether it is high n and then break after doing plus. Break to whom? Break the while loop. Will end the program. Ok? If this has not happened then do it if it is your window."
+    },
+    {
+      "start_time": 2227.44,
+      "end_time": 2255.349,
+      "text": "तो आपको जो समझ में आता है आप करिए। वेरी गुड। अब करिए। a हाई करिए। अब क्या हुआ? 300 - 100 हुआ था। प्लस 300 हो गया। प्लस a ऑफ़ हाई जो कि हाई टू पे आ चुका होगा। अब ठीक है? अभी आपके प्रोग्राम की स्थिति क्या है? आपका लो = 1 हो चुका है। हाई = 2 हो चुका है। और सम = 500 हो चुका है। किसके बाद? इस स्टेटमेंट के बाद ये आपके प्रोग्राम की कंडीशन है।",
+      "source": "caption",
+      "english_text": "So do whatever feels right to you. very good. Do it now. Make a high. Now what happened? 300 - 100 happened. Plus 300. Plus a of high which will have come to pay high. It's fine now? What is the status of your program right now? Your Lo=1 is done. Hi=2 is done. And the sum = 500. after what? After this statement this is the condition of your program."
+    },
+    {
+      "start_time": 2255.359,
+      "end_time": 2289.589,
+      "text": "बस वाइल लूप बंद कर दीजिए। देख लीजिए एक बार छोटा-छोटा करके। क्या किए हम लोग? क्या किए? सबसे पहले स्टार्टिंग का स्टार्टिंग का सम फाइंड किए। इटरेट करके। इटरेट करके ही करना पड़ेगा आपको हर बार। कोई उसका रास्ता नहीं है। उसके बाद क्या किए? i लेस &lt; n का लूप चलाए। वेरी गुड। जैसे ही आए इस विंडो में इस विंडो का काम कर दिए। इस विंडो में सम था उसको मैक्सिमम मिनिमम जो भी आपको करना है उसका रिजल्ट में स्टोर करा के उसका काम कर दिए। फिर विंडो को शिफ्ट कर दिए। ये पार्ट है शिफ्ट",
+      "source": "caption",
+      "english_text": "Just close the while loop. Try doing it in a small way. What did we do? What did you do? First of all find the starting sum. By iterating. You will have to do it every time by iterating. There is no way for him. What did you do after that? Run a loop of i less < n. very good. Worked on this window as soon as it arrived. In this window, whatever was the sum, maximum or minimum, whatever you have to do, store it in the result and do the work. Then shifted the window. This part is shift"
+    },
+    {
+      "start_time": 2289.599,
+      "end_time": 2322.47,
+      "text": "का। ये जो दो लाइन है ना ये शिफ्ट पार्ट है। लो को भी बढ़ा दिए। हाई को भी बढ़ा दिए। तो स्टार्टिंग भी बढ़ गया। एंडिंग स्टार्टिंग एक से बढ़ गया और एंडिंग भी एक से बढ़ गया। तो साइज़ सेम रहा। ठीक है? अब यहां पे न्यू विंडो का न्यू विंडो का इंफॉर्मेशन फाइंड कर लिए। और ये कंटिन्यू होता रहेगा। अब न्यू विंडो का इनफार्मेशन ये 500 कब काम आएगा? 500 अब काम आएगा। अगले बार जब ये चलेगा तो 500 यहां पे अपडेट हो जाएगा। तो आपका रेस्ट कट के 500 बन जाएगा। नेक्स्ट टाइम आपका सम फिर से आप कुछ-कुछ करेंगे तो 700 बन जाएगा। रेस्ट कट",
+      "source": "caption",
+      "english_text": "Of. These two lines are the shift part. Also increased Lo. Also increased the highs. So the starting also increased. Starting starting increased by one and ending also increased by one. So the size remained the same. Ok? Now find the information about the new window here. And this will continue. Now when will the new window information Ye 500 be useful? 500 will be useful now. Next time it runs, 500 will be updated here. So your rest will become Rs 500 after deduction. Next time your total will become 700 if you do something again. rest cut"
+    },
+    {
+      "start_time": 2322.48,
+      "end_time": 2357.03,
+      "text": "के 700 बन जाएगा। अब उसके बाद आपका हाई इज इक्वल टू 4 हो जाएगा। प्रोग्राम हो जाएगा ब्रेक। उसके बाद आप बाहर आ जाइए। उसके बाद आप बाहर आ जाइए। मेरी समझ से मेरी समझ से एक एच केस हो सकता है कि अगर a1 हो ना मेरी समझ से ये वाला जो कंडीशन है ना ये वाला जो कंडीशन है ये वाला जो कंडीशन है ये आप इस लाइन के पहले लिखिए ये आप इस यहां पे लिख दीजिए ठीक है ये वाला जो कंडीशन है आप यहां पे लिख दीजिए ठीक है इस वाले लाइन को इस वाले लाइन को इसके नीचे ले आइए इसका फेरबदल कर दीजिए क्यों क्योंकि k = 1 होगा तो ये टूट जाएगा अब अब ये प्रोग्राम कैसे ब्रेक कर जाएगा k = 1",
+      "source": "caption",
+      "english_text": "K will become 700. Now after that your high will be equal to 4. The program will break. After that you come out. After that you come out. In my understanding, there can be an H case that if a is 1, I think this is this condition, this is this condition, this is this condition, you write this before this line, you write this here, okay, this is this condition, you write this here, okay, bring this line below this one, change it, why because if k = 1, then it will break, now how will this program break k = 1"
+    },
+    {
+      "start_time": 2357.04,
+      "end_time": 2388.79,
+      "text": "पे चला के देख लीजिएगा ये फ़ौल्ट कर जाएगा ठीक है? वो एक गलती हो गया। तो आप इसको ऊपर कर लीजिए। सम को नीचे कर लीजिए ताकि हम लोग एकदम से सेफ रहें। एकदम सेफ रहना है ना? कोई रिस्क नहीं लेना है। ये हो गया। अब जब आप ये सब काम कर लिए तो आपका रिजल्ट ऑटोमेटिकली अपडेट हो गया होगा कुछ-कुछ करके। है ना? क्योंकि देख लिए ना 100, 200, 200, 300, 300, 400 सारा का सम देख लिए। उसका मैक्सिमम रिजल्ट में स्टोर है। बस अब तो खत्म। अब तो अब तो रिजल्ट को रिटर्न कर दीजिए। रिजल्ट को रिटर्न कर दीजिए। ठीक है? रिजल्ट को रिटर्न कर दिए।",
+      "source": "caption",
+      "english_text": "Try it and see if it will make a mistake, okay? That was a mistake. So you turn it up. Lower the number so that we are completely safe. Want to be absolutely safe, right? Don't take any risks. that'll be. Now when you have done all this, your result will be updated automatically one by one. Isn't it? Because you have seen the sum of Rs 100, 200, 200, 300, 300, 400. Its maximum result is stored in it. It's over now. Now please return the result. Return the result. Ok? The results were returned."
+    },
+    {
+      "start_time": 2388.8,
+      "end_time": 2420.069,
+      "text": "ये ये समझ में आया सबको कि ये होता है किसी भी स्लाइडिंग विंडो का। अभी तो बहुत सिंपल है लेकिन फॉर्मेट यही रहेगा। ये फॉर्मेट होता है। फॉर्मेट इस पैटर्न जो भी कहना है इसको टेंपलेट इसको देख लीजिए। ये इसका टेंप्लेट होता है। ठीक है? अब तो रिजल्ट रिटर्न कर दिया। इसका टाइम कॉम्प्लेक्सिटी क्या हुआ? इसका टाइम कॉम्प्लेक्सिटी ऑर्डर ऑफ़ n। क्यों? क्या आप एरे को एक ही बार कर रहे हैं ना? एरे को आप एक ही बार ट्रेवर्स कर रहे हैं। हर बार क्या हो रहा है? लो = 0 था और हाई = 1",
+      "source": "caption",
+      "english_text": "Everyone understood that this happens with any sliding window. Now it is very simple but the format will remain the same. This is the format. Whatever you want to say about the format, this pattern, this template, look at it. This is its template. Ok? Now the result has been returned. What is its time complexity? Its time complexity is of order n. Why? You are doing the array once right? You are traversing the array once. What's happening every time? Low = 0 and High = 1"
+    },
+    {
+      "start_time": 2420.079,
+      "end_time": 2453.51,
+      "text": "था। अगले बार आप लो = 1 कर दिए। हाई = 2 कर दिए। फिर आप लो = 2 किए। हाई = 3 किए। ये कब तक चलेगा? जब तक हाई इक्वल टू n ना हो जाए। तो ये कितनी बार चला? वन से लेके n तक। n टाइम्स चला। टाइम कॉम्प्लेक्सिटी वाला वीडियो अगर नहीं देखे हैं तो जाके अभी देख लीजिए। बहुत इंपॉर्टेंट वीडियो है फिर ये सब आपको नहीं समझ में आएगा। फिर कमेंट में झाल बजाइएगा कि हमको तो समझ में नहीं आया। वो जा के देखिए। एन टाइम्स ये चला। हर एन टाइम्स में ये लूप का बात हो रहा है इस लूप का वाइल लूप का वाइल लूप एन टाइम्स चला। हर",
+      "source": "caption",
+      "english_text": "Was. Next time you make Lo = 1. Made high = 2. Then you did Lo = 2. High = 3 done. How long will this last? Until high equals two n. So how many times did this happen? From one to n. Run n times. If you have not seen the video on time complexity, then go and watch it now. This is a very important video, otherwise you will not understand it all. Then shout in the comments that we did not understand. Go and see that. N times this went on. This loop is being run every N times. The while loop of this loop runs N times. every"
+    },
+    {
+      "start_time": 2453.52,
+      "end_time": 2487.67,
+      "text": "बार क्या कर रहे हैं आप? कोई भी काम आप ऐसा नहीं कर रहे जो इनपुट पे डिपेंडेंट हो। हर काम इनपुट से इंडिपेंडेंट हो मतलब एक-एक काम है। प्लस माइनस ही कर रहे हैं ना। तो इसको कहा जा सकता है कि कांस्टेंट है। तो ओवरऑल टाइम कॉम्प्लेक्सिटी हो गया ऑर्डर ऑफ़ n। ओवरऑल स्पेस कितना हुआ? कोई भी स्पेस ले रहे हैं। कोई भी आप इनपुट पे डिपेंडेंट स्पेस लें नहीं। आर्डर ऑफ़ वन। ये हो गया आपका स्पेस और ये हो गया आपका टाइम। सही बात है। तो फिक्स विंडो का फिक्स्ड विंडो प्रॉब्लम का आप सॉल्यूशन सीख चुके हैं। वेरी गुड। तो ये आप सीख लिए",
+      "source": "caption",
+      "english_text": "What time are you doing? You are not doing any work which is dependent on input. Every work should be independent from the input, meaning each work is one. You are just doing plus and minus. So it can be said that it is constant. So the overall time complexity becomes order of n. How much is the overall space? Taking up any space. Do not take any space dependent on the input. Order of One. This is your space and this is your time. That's correct. So you have learned the solution to the fixed window problem. very good. So you learned this"
+    },
+    {
+      "start_time": 2487.68,
+      "end_time": 2521.589,
+      "text": "हैं। कोड लिंक मिल जाएगा। अभी एक और क्वेश्चन करेंगे। वीडियो खत्म नहीं हुआ है। अभी कोड लिंक मिलेगा। जाके उसको कोड करिए। ठीक है? चलिए। ठीक है? अगला क्वेश्चन पे आ जाइए। फिक्स वाला कर लीजिएगा। या दोनों देख ही लो। फिक्स वेरिएबल दोनों देख लो। यह दो क्वेश्चन समझ में आ जाएगा तो 70% स्लाइडिंग विंडो खत्म ही है भाई। ठीक है? अगला क्वेश्चन क्या है? मिनिमम साइज सब एरे सम। अच्छा क्वेश्चन का नाम है। क्वेश्चन में लिखा हुआ क्या है? क्वेश्चन में बताया क्या है कि आपको एक एरे दिया हुआ है जिसमें पॉजिटिव इंटीजर्स हैं। बहुत अच्छी बात है। और आपको एक टारगेट दिया हुआ",
+      "source": "caption",
+      "english_text": "Are. You will get the code link. Will ask one more question now. The video is not finished. You will get the code link now. Go code that. Ok? Let go. Ok? Come to the next question. Do the fixed one. Or see both. Look at both fixed variables. If you understand these two questions then 70% of the sliding window is over. Ok? What is the next question? Minimum size sub array is even. Well the name of the question is. What is written in the question? What is said in the question is that you are given an array which contains positive integers. very good thing. And you have been given a target"
+    },
+    {
+      "start_time": 2521.599,
+      "end_time": 2555.99,
+      "text": "है। आपको एक टारगेट वेरिएबल दिया हुआ है। है ना? आपको एक टारगेट वेरिएबल। अच्छा। आपको क्या फाइंड करना है? आपको क्या रिटर्न करना है? मिनिमम लेंथ ऑफ सब एरे मिनिमम लेंथ ऑफ एनी सब एरे सब एरे हर तरीके के साइज का हो सकता है 2 3 4 5 किसी का मिनिमम लेंथ सब एरे फाइंड करना है जिसका जिसका सम टारगेट के या तो इक्वल हो या तो उससे थोड़ा बड़ा हो ठीक है ये फाइंड करना है मतलब एरे में बहुत सारा सब एरे हो सकता है हो सकता है कुछ सब एरे दो का हो कुछ सब एरे तीन का हो कुछ सब एरे चार का",
+      "source": "caption",
+      "english_text": "Is. You are given a target variable. Isn't it? You need a target variable. Good. What do you want to find? What do you have to return? Minimum length of sub array Minimum length of any sub array Sub array can be of all types of sizes 2 3 4 5 The minimum length of any sub array is to be found whose sum is either equal to the target or is slightly larger than it. Okay, this has to be found, meaning there can be a lot of sub arrays in the array, some sub arrays may be of two, some sub arrays may be of three, some sub arrays may be of four."
+    },
+    {
+      "start_time": 2556.0,
+      "end_time": 2586.23,
+      "text": "भी हो सकता है किसी भी लेंथ का इसका इन सारे सब एरे का लेंथ दो है इसका तीन तीन है। इसमें चार है। इसमें भी इसमें भी बहुत सारे ऐसे सब एरे हो सकते हैं जिनका लेंथ टू है। अच्छा जिस लेंथ के सब एरे का किसी भी एक सब एरे का अगर सम टारगेट से ज्यादा है या तो इक्वल है उस लेंथ को रिटर्न करना है। मतलब अगर किसी भी एक टू साइज्ड सब एरे या तो टू साइज्ड विंडो का सम अगर टारगेट से बड़ा है वो आपको टू रिटर्न करना है। ये आपका क्वेश्चन है। सबसे पहले फ्लो चार्ट पे आ जाइए। क्या एरे का क्वेश्चन है? हां।",
+      "source": "caption",
+      "english_text": "It can also be of any length, the length of all these sub-arrays is two, its three is three. It has four. In this also there can be many such sub-arrays whose length is two. Well, if the sum of any one sub array of the length of which is greater than or equal to the target, that length has to be returned. Meaning, if the sum of any one two-sized sub array or two-sized window is greater than the target, you have to return two. This is your question. First of all come to the flow chart. Is there a question about array? Yes."
+    },
+    {
+      "start_time": 2586.24,
+      "end_time": 2620.87,
+      "text": "क्या सब एरे या तो सबस्ट्रिंग की बात की गई है? यस बिल्कुल की गई है। क्या आपको इनका कॉम्बिनेशन फाइंड करना है? मिनिमम मैक्सिमम एंड सम या तो ग्रेटर दैन इक्वल टू समथिंग हां फाइंड करना है। सारे कीवर्ड्स मिला के कह रहा है कि 80% तो चांस है कि ये स्लाइडिंग विंडो का क्वेश्चन है। ठीक है? ग्राफ का क्वेश्चन तो नहीं है। ट्री का नहीं है और किसी डीपी वगैरह का नहीं है। ग्रीडी नहीं है। अभी तक जितना हमने पढ़ा है, हां, हो सकता है स्लाइडिंग विंडो है। ठीक है? तो इस पे मान के चलते हैं कि हो सकता है। स्टेप वन अगर",
+      "source": "caption",
+      "english_text": "Are all arrays or substrings talked about? Yes it has definitely been done. Do you want to find their combination? To find minimum maximum and sum or greater than equal to something yes. By combining all the keywords it is saying that there is an 80% chance that this is a sliding window question. Ok? There is no question of graph. It does not belong to Tree and does not belong to any DP etc. Not greedy. From what we've read so far, yes, there may be a sliding window. Ok? So, going by this, it is possible. Step one if"
+    },
+    {
+      "start_time": 2620.88,
+      "end_time": 2652.55,
+      "text": "आप वीडियो यहां से देख रहे हैं तो बिल्कुल मत देखिए। शुरू से जाके देखिए। और जो लोग यहां तक नहीं पहुंचे हो तो बहुत अच्छी बात है। स्टेप वन क्या था? आइडेंटिफाई पैटर्न। आइडेंटिफाई आइडेंटिफाई हो चुका है। आइडेंटिफाई हो चुका है। क्वेश्चन पढ़ के हो चुका है। ठीक है? स्टेप टू। ये बहुत देखिए ये जो दो क्वेश्चन इसी वीडियो में है ना आपको लग रहा होगा कि दो क्वेश्चन है तो दोनों सेम ही है। एक कर देते हैं। एक छूट नहीं। ये क्वेश्चन एक दूसरे से बहुत अलग है। एक क्वेश्चन ईजी है, एक क्वेश्चन मीडियम है। तो एक पूरा लेवल ज्यादा है। ये क्वेश्चन डिफिकल्ट है फॉर रियली स्पीकिंग।",
+      "source": "caption",
+      "english_text": "If you are watching the video from here then do not watch it at all. Go and see from the beginning. And for those who have not reached this far, it is a very good thing. What was step one? Identify patterns. Identify has been identified. Has been identified. Finished reading the questions. Ok? Step two. Watch these two questions carefully in this video and you might be feeling that if there are two questions then both are the same. Let's do one. Not a discount. These questions are very different from each other. One question is easy, one question is medium. So one whole level higher. This question is difficult for really speaking."
+    },
+    {
+      "start_time": 2652.56,
+      "end_time": 2686.55,
+      "text": "अगर आप नए बच्चे हैं, अगर आप नया-नया डीए कर रहे हैं तो अगर आप सिर्फ वो वाला क्वेश्चन पढ़ेंगे तो आपसे ये पूछा जाएगा आपको ये बिल्कुल नहीं आएगा। ठीक है? क्यों? उसका एक ही कारण है कि ये वेरिएबल साइज का विंडो है। ये वेरिएबल साइज का विंडो है। ये हमको कैसे समझ में आया? क्वेश्चन में तो कहीं नहीं लिखा है कि वेरिएबल साइज विंडो है। नहीं लिखा है ना? हां। क्वेश्चन में यह भी नहीं लिखा है कि K साइज का कोई सब एरे है। K साइज का सब एरे आप ढूंढ के देख लीजिए। हम झूठ नहीं बोल रहे हैं। क्वेश्चन में लिखा नहीं है कि K साइज का सब एरे है। क्वेश्चन में ये भी नहीं लिखा है कि टू साइज़ का सब एरे है या तो थ्री साइज़ का है, फोर साइज़ का है।",
+      "source": "caption",
+      "english_text": "If you are a new kid, if you are doing DA, then if you read only that question, then you will be asked this, you will not know it at all. Ok? Why? The only reason for that is that it is a variable size window. This is a variable size window. How did we understand this? It is not written anywhere in the question that there is a variable size window. It is not written, right? Yes. It is not even written in the question that there is any sub array of size K. You can find a sub array of K size and see. We are not lying. It is not written in the question that there is a sub array of size K. It is not even written in the question whether the sub array is of two size, or of three size, or of four size."
+    },
+    {
+      "start_time": 2686.56,
+      "end_time": 2712.87,
+      "text": "नहीं, कुछ नहीं लिखा है। बस लिखा है सब एरे। मिनिमम लेंथ सब एरे। तो जभी भी क्वेश्चन में ना लिखा हो कि किस साइज का सब एरे है। या तो आपको पता ना चल रहा हो कि किस आपको लग रहा है ना किसी भी लेंथ का आंसर हो सकता है। हो सकता है टू लेंथ का आंसर आ जाए। थ्री लेंथ का आंसर में आ जाए, फोर लेंथ का आ जाए। कभी भी ऐसा है। वो वेरिएबल साइज विंडो का क्वेश्चन है। वो फिक्स नहीं है। वो वेरिएबल है। ठीक है? यही इस क्वेश्चन को डिफिकल्ट बनाता है। और इसीलिए इस क्वेश्चन को करना जरूरी है।",
+      "source": "caption",
+      "english_text": "No, nothing has been written. Everything is just written. Minimum Length Sub Array. So whenever it is not written in the question what size is the sub array. Either you are not able to know what kind of kiss you are feeling, nor can there be any answer of any length. It is possible that the answer may be of two lengths. The answer is of three length, or of four length. Anytime it's like that. That is the question of variable size window. That is not fixed. That's the variable. Ok? This is what makes this question difficult. And that is why it is important to ask this question."
+    },
+    {
+      "start_time": 2712.88,
+      "end_time": 2747.51,
+      "text": "इसीलिए क्वेश्चन को समझना जरूरी है अलग तरीके से। ठीक है? ओके। अब क्वेश्चन पे आ जाते हैं। क्वेश्चन में क्या बोल रहा है आपको? क्वेश्चन में क्या बोल रहा है? आपको एक एरे मान लो दिया है 1 2 4 एंड 4 0 1 2 3 गुड। आपको टारगेट दिया हुआ है फोर। टारगेट दिया हुआ है फोर। आपको सारे सब एरे को देखना है। मिनिमम लेंथ सब एरे को ऐसा बताना है कि जिसका सम जिसके एलिमेंट्स का सम टारगेट से ज्यादा हो। तो एक बात तो है कि सब एरे का जो इंफॉर्मेशन है स्टेप थ्री",
+      "source": "caption",
+      "english_text": "That is why it is important to understand the question in a different way. Ok? Ok. Now coming to the question. What is being said to you in the question? What is being said in the question? Suppose you are given an array 1 2 4 and 4 0 1 2 3 Good. You have been given target four. The target given is four. You have to look at the entire sub array. The minimum length subarray is to be defined as one whose sum of elements is greater than the target. So one thing is that the information of sub array is step three."
+    },
+    {
+      "start_time": 2747.52,
+      "end_time": 2780.39,
+      "text": "क्या था? सब एरे का इनफेशन वो क्या है? सम उसके एलिमेंट्स का सम वेरी गुड। अब देखिए एक इसका नाइव सॉल्यूशन क्या है? पिछले क्वेश्चन में हम लोग क्या कर रहे थे? पिछले क्वेश्चन में हम लोग के पास फिक्स था कि k लेंथ का सब एरे है। तो हम लोग यहां से शुरू करते थे और उसको स्लाइड करते हुए ले जाते थे। हर बार उसका सम इधर-उधर कर देते थे। प्लस माइनस करके सम निकाल लेते। ये क्वेश्चन वैसा नहीं है। ये क्वेश्चन क्या बोलता है? आप लीजिए आप अपने मन से सारा सब एरे देख लीजिए सारा वन लेंथ का सब एरे देख लीजिए टू का देख लीजिए थ्री का फोर किसी का भी देख लो किसी भी एक",
+      "source": "caption",
+      "english_text": "what was it? What is sub array infection? Some of its elements are very good. Now see what is its naive solution? What were we doing in the previous question? In the previous question we had fixed that there is a sub array of length k. So we used to start from here and take it sliding. Every time his score would be changed here and there. Find out the sum by doing plus and minus. This question is not like that. What does this question say? You take it, see the whole sub-array in your mind, see the whole one-length sub-array, see the two's, three's, four's, see any one's"
+    },
+    {
+      "start_time": 2780.4,
+      "end_time": 2807.349,
+      "text": "कैटेगरी का जो सब एरे हो जिसका सम टारगेट फोर से ज्यादा हो वो आंसर वो नंबर रिटर्न करो वो लेंथ रिटर्न करो ठीक है तो ये वेरिएबल है अब कभी भी कभी भी इसका एक अलग फॉर्मेट है कभी भी वेरिएबल लेंथ के सब एरे में आप ऐसा नहीं कर सकते हैं कि लो को ज़ीरो कर दिए और हाई को कुछ और मतलब जैसे टू या थ्री या कहीं कहीं और रख दिए। क्यों? पिछले बार हम लोग हाई को कहां रखे थे? आपको याद होगा अगर k - 1 पे रखे थे।",
+      "source": "caption",
+      "english_text": "Whatever is the sub array of the category whose sum target is more than four, that answer is return that number, return that length. Okay, so this is a variable, now it has a different format, anytime in a variable length sub array, you cannot do this by making low zero and high something else like two or three or somewhere else. Why? Where did we put Hai last time? You remember if k was placed at - 1."
+    },
+    {
+      "start_time": 2807.359,
+      "end_time": 2836.15,
+      "text": "क्योंकि अगर टू लेंथ का सब एरे है तो ज़ीरो और वन मिलके एक सब एरे बनता है। वन और टू मिलके बनता है। टू और थ्री मिलके ही बनता है। इसीलिए कभी भी वेरिएबल साइज का क्वेश्चन हो, वेरिएबल स्लाइडिंग विंडो का क्वेश्चन हो। आपको हमेशा लो = 0 और हाई = 0 से शुरुआत करना पड़ेगा। क्यों? क्योंकि कोई भी सब एरे कितना भी छोटा हो जाए वन लेंथ का तो होगा ही। एम्प्टी सब एरे तो नहीं होता है कि एम्प्टी सेट होता है लेकिन यहां नहीं होता है। ऐसा नहीं होता है कि सब एरे में एक भी एलिमेंट नहीं है।",
+      "source": "caption",
+      "english_text": "Because if there is a sub array of two lengths then zero and one together form a sub array. One and two come together. It is formed by combining two and three. That is why whenever there is a question of variable size, there is a question of variable sliding window. You always have to start with low = 0 and high = 0. Why? Because no matter how small any sub-array is, it will always be of one length. Empty sub array does not mean that empty is set but not here. It does not happen that there is not a single element in the sub array."
+    },
+    {
+      "start_time": 2836.16,
+      "end_time": 2871.03,
+      "text": "सब एरे में एक एलिमेंट तो है। एक तो होना चाहिए ना तभी तो बनेगा सब एरे। इसीलिए इसीलिए हम लोग छोटे से स्टार्ट करते हैं और फिर देखते हैं कि आगे क्या करना है। कभी भी कभी भी वेरिएबल में वेरिएबल में हम लोग लो को भी जीरो पे रखेंगे। हाई को भी जीरो पे ही रखेंगे। इससे हमारा जो लेंथ ऑफ करंट सब एरे है वो आ जाएगा वन। तो ये आपका स्टार्टिंग पोजीशन और स्टार्टिंग इंडेक्स आपको मिल गया। आपका विंडो भी ये है। आपका विंडो एक ही साइज का है। आपका लो भी यहीं है। हाई भी यहीं है। ये विंडो स्टार्ट भी",
+      "source": "caption",
+      "english_text": "There is at least one element in the sub array. There must be one, only then everything will be complete. That's why we start small and then see what to do next. At any time in any variable, we will keep Lo also at zero. Will also keep the high at zero. With this our length of current sub array will come to one. So this is your starting position and starting index. This is your window also. Your window is the same size. Yours is also here. The high is also here. This window also starts"
+    },
+    {
+      "start_time": 2871.04,
+      "end_time": 2898.63,
+      "text": "यहीं से होता है। खत्म भी यहीं से होता है। वेरी गुड। ठीक है? अब क्या करें? अब क्वेश्चन में है क्या? अब फिर से ह्यूमन की तरह सोचिए। कंप्यूटर की तरह मत सोचिए। ह्यूमन की तरह सोचते हैं। अरे देखिए। एरे में आपको क्या बोला कि फाइंड करो और जिस भी सब एरे का सम आ जाए उसका मिनिमम लेंथ फाइंड करो। तो ये वैसा क्वेश्चन है पता है आपके पास ना एक कंपनी है। कंपनी है।",
+      "source": "caption",
+      "english_text": "It happens from here. It ends here also. very good. Ok? What do we do now? Now what is in question? Now think like a human again. Don't think like a computer. Think like a human. Hey look. Find what you are told in the array and find the minimum length of any sub-array whose sum comes. So this is such a question, you know whether you have a company or not. Is a company."
+    },
+    {
+      "start_time": 2898.64,
+      "end_time": 2924.71,
+      "text": "कंपनी है। लॉजिक कैसे बिल्ड होता है? ये बता दें। कंपनी है Amazon। अब Amazon को काम करवाना है। Amazon क्या करती है? आप सुने होंगे अभी दो-ती दिन पहले Amazon में फायरिंग हुआ। फायरिंग क्यों हुआ? फायरिंग इसलिए हुआ। Amazon को काम करवाना है। तो Amazon ना आदमी हायर करती गए। Amazon को पता नहीं है कि कितना आदमी मिलके वो काम कर सकता है। कोई आईडिया नहीं है। ठीक है? Amazon आदमी हायर की। एक आदमी हायर की। उसका काम नहीं हुआ। एक आदमी नहीं कर पा रहा था। बहुत बड़ी कंपनी है।",
+      "source": "caption",
+      "english_text": "Is a company. How is logic built? Please tell me this. The company is Amazon. Now Amazon has to get the work done. What does Amazon do? You must have heard that just two-three days ago there was firing in Amazon. Why did the firing happen? That's why the firing happened. Amazon has to get the job done. So Amazon kept hiring people. Amazon does not know how many people together can do that work. There is no idea. Ok? Amazon hired the guy. Hired a man. His work was not done. One man was not able to do it. It is a very big company."
+    },
+    {
+      "start_time": 2924.72,
+      "end_time": 2959.19,
+      "text": "एक और आदमी हायर की। ऐसे हायर करती चली गई। ठीक है? इसका बॉस ध्यान नहीं दिया। एचआर अपना आदमी हायर करती चली गई। ऐसे करके छह आदमी हायर हो गया। ठीक? अब काम होने लगा। जैसे ही या छह आदमी को हायर किया ना तो अब काम होने लगा। वेरी गुड। तो Amazon एक काम कर सकती थी कि बोलती कि हमको काम कराने के लिए छह आदमी का जरूरत है। हमको काम कराने के लिए सिक्स लोगों की जरूरत है। लेकिन अब जो छह आदमी हायर हुए हैं हो सकता है कि कोई आदमी उसमें से बहुत तेज हो और कोई आदमी बहुत बुड़बक हो। हो सकता है ना? सब आदमी एक तरह का काम नहीं।",
+      "source": "caption",
+      "english_text": "Hired another person. She kept hiring like this. Ok? His boss did not pay attention. HR kept hiring its own man. By doing this six people got hired. Correct? Now the work started. As soon as six people were hired, work started getting done. very good. So one thing Amazon could have done was to say that we need six people to get the work done. We need six people to get the job done. But now among the six people who have been hired, it is possible that some of them may be very bright and some may be very grumpy. Is it possible? Not all men do the same job."
+    },
+    {
+      "start_time": 2959.2,
+      "end_time": 2985.27,
+      "text": "हो सकता है कि ये आदमी तीन आदमी का काम करता हो अकेले। इतना तेज हो। ये बुड़बक है। ये किसी का काम नहीं करता। ये और काम घटा बढ़ा देता है कि और आदमी को हायर करना पड़े। ठीक है? अब Amazon छांटेगी कैसे? कि अब हायर तो हो गया है। अब फॉर एग्जांपल एक और पॉलिसी है कि जैसे आपने हायर किया है वैसे ही आपको फायर करना पड़ेगा। कहने का मतलब कि पहले आपने इसको हायर किया। फिर इसको हायर किया। फिर इसको हायर किया। ऐसे करके हायर किए। फायर भी आपको ऐसे ही करना है।",
+      "source": "caption",
+      "english_text": "It is possible that this man does the work of three men alone. Be so fast. This is nonsense. This doesn't work for anyone. This increases the work and requires hiring more people. Ok? Now how will Amazon sort? That now he has been hired. Now for example, there is another policy that you will have to fire as soon as you are hired. That means you hired him first. Then he was hired. Then he was hired. Got hired like this. You have to fire in the same way."
+    },
+    {
+      "start_time": 2985.28,
+      "end_time": 3017.99,
+      "text": "फायर भी आप ऐसा नहीं कि बीच से उठा के फायर करें। नहीं। आपको इसको फायर करना पड़ेगा। फिर इसको फायर फिर इसको फायर। ऐसे करना पड़ेगा। अब Amazon को लग रहा है ना कि काम तो हो रहा है लेकिन हो सकता है कि जो छह आदमी है हो सकता है छह का जरूरत ना हो सकता है चार का जरूरत हो सकता है ना हो सकता है ये जो लास्ट वाला आदमी आया है ये अकेले छह का काम करने का ताकत रखता हो तो पता कैसे चलेगा फायर करेंगे तभी तो पता चलेगा फॉर एग्जांपल छह आदमी हायर हो गया हो सकता है ये काम छह आदमी का ना हो सकता है ये काम चार में भी हो सकता हो तीन में भी हो सकता हो पता कैसे चलेगा जब आप आदमी",
+      "source": "caption",
+      "english_text": "You can't even fire by picking it up from the middle. No. You have to fire it. Then fire this, fire this again. It will have to be done like this. Now Amazon is feeling that the work is being done, but it is possible that there are six people, maybe six may not be needed, maybe four are needed, maybe this last person who has come, he alone has the power to do the work of six, so how will you know if you fire, only then will you know, for example, six people have been hired, maybe this work cannot be done by six people, this work can be done by four, can be done by three, how will you know when you man"
+    },
+    {
+      "start_time": 3018.0,
+      "end_time": 3046.63,
+      "text": "को फायर करेंगे तभी तो पता चलेगा Amazon क्या करेगी Amazon करती भी क्या है? Amazon ये आदमी को हटा देगी। बोलेगी तुम जाओ फायर हो जाओ। फायर हो गया। अब कंपनी में चार पांच ही आदमी है। अब Amazon देखिए कि अभी भी काम हो रहा है। अभी भी काम हो रहा है। पहले छह में हो रहा था। पांच में हो रहा है। Amazon और लालची बन जाएगा। Amazon को लगेगा कि अच्छा पांच में भी हो रहा है। हो सकता है चार में हो रहा हो तो एक आदमी को और सैलरी बचाओ। क्या बोलेगी? तुम भी निकलो। तुम निकलो। अब चार में हो रहा है काम। अब चार में हो रहा है काम।",
+      "source": "caption",
+      "english_text": "Only when we fire it will we know what Amazon will do. What does Amazon even do? Amazon will remove this man. She will say you go and get fired. There was fire. Now there are only four-five people in the company. Now see Amazon that work is still being done. Work is still going on. It was happening in the first six. It's happening in five. Amazon will become more greedy. Amazon will feel that good is happening even in five. It may be happening in four, so save one person's salary. What will you say? You also leave. You leave. Now work is being done in four. Now work is being done in four."
+    },
+    {
+      "start_time": 3046.64,
+      "end_time": 3080.23,
+      "text": "वेरी गुड। Amazon को लगेगा अच्छा। एक काम करो तुम भी निकलो। अब तीन में होने लगा काम। अभी भी काम हो रहा है। अभी भी काम हो रहा है। पहले छह में तीन में भी हो रहा था। लेकिन जैसे ही Amazon इस आदमी को फायर करती है। इस आदमी को फायर करती है तो टोटल बच जाते हैं दो। अब इसको पता चल अच्छा अब काम नहीं हो रहा है। अब काम नहीं हो रहा है। अब अब काम फंसने लगा। अब नहीं हो रहा है। लेकिन अब आप जिसको फायर कर चुके हैं उसको हायर नहीं कर सकते हैं। तो अब Amazon क्या करेगा? अब Amazon वही करेगा। फिर से कॉलेज जाएगा। फिर से आदमी हायर करेगा। एक आदमी हायर किया काम नहीं हुआ। एक और हायर",
+      "source": "caption",
+      "english_text": "Very good. Amazon will like it. Do one thing and leave too. Now work started in three hours. Work is still going on. Work is still going on. It was also happening in three of the first six. But as soon as Amazon fires this guy. If she fires this man, the total number of survivors will be two. Now he realizes that it is no longer working. Now it is not working. Now the work started getting stuck. It's not happening now. But now you can't hire someone you've fired. So what will Amazon do now? Now Amazon will do the same. Will go to college again. Will hire the man again. Hired a man and did not get the job done. another hire"
+    },
+    {
+      "start_time": 3080.24,
+      "end_time": 3114.39,
+      "text": "किया। अभी भी काम नहीं हो रहा है। एक और आदमी हायर कर लिया। अब काम होने लगा। अब अब Amazon एकदम कंफर्टेबल हो के बैठ गया। अब Amazon कंफर्टेबल हो के बैठ गया। अभी कितना आदमी काम कर रहा है कंपनी में? अभी कंपनी में बस पांच आदमी काम कर रहा है। समझे क्या हो रहा है? विंडो है ना? विंडो ऐसा नहीं लग रहा है। छह आदमी हायर हुआ। फिर धीरे-धीरे धीरे-धीरे फायर किया। जब तक कि काम बंद ना हो गया। काम जैसे ही बंद हुआ और हायर हुआ। फिर काम होने लगा। फिर क्या करेगी? अब जाओ। तुम भी निकलो। तुम भी जाओ। अभी भी काम हो रहा है। जाओ तुम भी निकलो। जैसे ही इसको फायर की काम फिर रुक गया। काम फिर रुक गया। काम फिर रुक गया।",
+      "source": "caption",
+      "english_text": "Did it. Still not working. Hired another man. Now the work started. Now Amazon has become very comfortable. Now Amazon sat comfortably. How many people are working in the company right now? Currently only five people are working in the company. Do you understand what is happening? Is it a window? The window doesn't look like that. Six men were hired. Then fired slowly and slowly. Until the work stopped. As soon as the work stopped, he got hired. Then the work started. What will she do then? Go now. You also leave. You also go. Work is still going on. Go, you too leave. As soon as it was fired, the work stopped again. The work stopped again. The work stopped again."
+    },
+    {
+      "start_time": 3114.4,
+      "end_time": 3146.63,
+      "text": "क्या करेगी? फिर हायर करेगी जा के। ये Amazon करती है। यही हमको करना है। हमको यही काम, सेम काम करना है। सेम काम Amazon जैसा हमको करना है। समझ में आ रहा है कि नहीं आ रहा है? नहीं आ रहा है तो अभी समझाते हैं। अब आप लोग समझ गए? क्या लॉजिक है, क्या इंट्यूशन है? अब देखिए क्या एरे था? क्या था जी? 1 2 4 4 2 4 4 0 1 सब भूल जाइए। फॉर लूप वाइल लूप सब भूल जाइए। हाथ से करेंगे। देखेंगे क्या होता है। टारगेट फोर है। टारगेट क्या है? फोर है। गुड।",
+      "source": "caption",
+      "english_text": "What will she do? Then she will go and hire. This is done by Amazon. This is what we have to do. We have to do the same work, the same work. We have to do the same work as Amazon. Are you understanding or not? If it is not coming then let us explain now. Now do you guys understand? What is logic, what is intuition? Now see what happened? What was it sir? 1 2 4 4 2 4 4 0 1 Forget everything. Forget the for loop while loop. Will do it by hand. We will see what happens. The target is four. What is the target? Is four. Good."
+    },
+    {
+      "start_time": 3146.64,
+      "end_time": 3180.549,
+      "text": "सबसे पहले चलिए अभी तो आपके कंपनी में कोई आदमी नहीं है। अभी आपका लो = 0 है। हाई = 0 है। अभी कोई आदमी नहीं काम कर रहा है। चलिए तो हायर करते हैं धीरे-धीरे। इस आदमी को हायर कर लीजिए। आपका सम क्या हुआ? इसको जोड़ लीजिए। पहले तो जीरो था। पहले तो नील बटा सन्नाटा काम था। इसको जोड़ लीजिए। वन हो गया। क्या वन आपके टारगेट से बड़ा है? मतलब क्या अभी काम हो रहा है? काम नहीं हो रहा है। और हायर करेंगे। और हायर कीजिए। इस आदमी को हायर कर लीजिए। सम = 1 + 2 = 3 क्या थ्री फोर",
+      "source": "caption",
+      "english_text": "First of all, there is no man in your company right now. Now your Lo = 0. High = 0. No man is working right now. Let us hire slowly. Hire this guy. What happened to you? Add this. Earlier it was zero. At first it was blue and silent work. Add this. It became a forest. Is the forest bigger than your target? Meaning, is the work being done right now? no working. Will hire more. Hire more. Hire this guy. Sum = 1 + 2 = 3 Is Three Four"
+    },
+    {
+      "start_time": 3180.559,
+      "end_time": 3212.47,
+      "text": "से बड़ा है? नहीं है। कोई बात नहीं। फिर हायर कीजिए। आइए। सम = 3 + 4 7 आपके फोर से बड़ा है। काम होने लगा। काम कब हुआ? जब आप तीन लोग को हायर किए तो कोई भी दुनिया में भूचाल आ जाए, भूकंप आ जाए, दुनिया टूट जाए, तीन तो आंसर होगा ही। हो सकता है आंसर दो भी हो, वन भी हो लेकिन तीन तो होगा। चार, पांच, छह तक तो जाने का जरूरत है ही नहीं। तीन मिल गया ना। मान लो अगर कोई चार का भी आंसर होता तो तीन है ना उससे उससे छोटा तो तीन है। आपको मिनिमम लेना है। मिनिमल लेंथ। याद रखिए मिनिमल।",
+      "source": "caption",
+      "english_text": "Is greater than? Not there. No problem. Then hire. Come. Sum = 3 + 4 7 is greater than your four. Work started getting done. When was the work done? When you hire three people, if there is an earthquake in the world, if there is an earthquake, if the world collapses, there will be three answers. The answer may be two or one, but it will definitely be three. There is no need to go till four, five, six. Got three, right? Suppose if there was an answer of four then it would be three, if it is smaller than that then it would be three. You have to take the minimum. Minimal length. Remember minimal."
+    },
+    {
+      "start_time": 3212.48,
+      "end_time": 3239.589,
+      "text": "तीन तो मेरा आंसर है। तीन को एक जगह कंफर्टेबल हो के लिख लीजिए। गुड। Amazon क्या करती थी? याद करिए। जैसे ही काम होने लगता था वैसे ही साला फायर करने लगता था कि हो सकता है कि एक ही आदमी पूरा काम कर दे तो हम सबको फायर कर देंगे। हो सकता है वो बुड़बक आ गया हो। गुड फायर करिए ना। फायर करिए ना। इसको फायर कर दीजिए। इसको फायर कर दीजिए। आइए सम अपडेट कर दीजिए अपना। फायर किया तो क्या हुआ? गया अपना काम लेके वो अपना कंप्यूटर लेके गया बेटा।",
+      "source": "caption",
+      "english_text": "My answer is three. Write down all three in a comfortable place. Good. What did Amazon do? Remember. As soon as the work started getting done, he used to fire us saying that if only one person does the entire work then we will fire everyone. It is possible that he may have come murmuring. Have good fire. Fire it. Fire it up. Fire it up. Come, please update yours. What happened if it was fired? He went with his work and went with his computer, son."
+    },
+    {
+      "start_time": 3239.599,
+      "end_time": 3268.15,
+      "text": "सिक्स सिक्स। सिक्स अभी भी ज्यादा है फोर्स। हां ज्यादा है। वही तो हो रहा था। फायर करके भी काम हो रहा था। छह में भी काम हो रहा था। पांच में भी हो रहा था। चार में भी, तीन में भी। तो जैसे-जैसे काम होते रहेगा। अब देखिए अब काम कितने में हो रहा है? अब कंपनी में कौन है? कंपनी में खाली ये है। क्या हुआ? पहले कंपनी में इतना लोग थे तो काम होना शुरू हुआ। काम होना शुरू हुआ। अब फायर करना शुरू किए। आ जाइए। काम होना जैसे ही शुरू हुआ। अब फायर करना शुरू कर दिए। आइए। यहां आ जाइए।",
+      "source": "caption",
+      "english_text": "Six six. Six is ​​still more force. Yes it is more. That's what was happening. The work was being done even after firing. Work was going on in six also. It was happening in five also. Even in four, even in three. So the work will continue as it happens. Now see how much the work is getting done now? Who is in the company now? This is vacant in the company. What happened? Earlier there were so many people in the company so work started happening. Work started. Now started firing. Come over. As soon as the work started. Now started firing. Come. come in here."
+    },
+    {
+      "start_time": 3268.16,
+      "end_time": 3299.27,
+      "text": "कितना लेंथ का विंडो है? टू लेंथ का। टू लेंथ का। टू थ्री से छोटा है ना? अब दुनिया में कुछ भी टूट जाए। टू तो आंसर होगा पहले आपका थ्री आंसर था। टू से तो छोटा ही है। थ्री से तो छोटा ही है टू। टू को यहां लिख लीजिए। टू को यहां पे लिख लीजिए। गुड। अभी भी काम हो रहा है। और फायर करो और फायर करो और फायर करो साले को। इसको फायर करो। हटाओ इसको। सम अपडेट कर दो। 6 - 2 = 4। क्या 4 &gt; = आपका टारगेट = 4 है। हां है, है अभी भी काम हो रहा है।",
+      "source": "caption",
+      "english_text": "What length is the window? Of two length. Of two length. Two is less than three, right? Now anything can break in the world. Two will be the answer, earlier your answer was three. It is smaller than two. Two is smaller than three. Write two here. Write two here. Good. Work is still going on. And fire and fire and fire the fucker. Fire it. Remove this. Please update it. 6 – 2 = 4. Is 4 >= your target = 4. Yes, it is still a work in progress."
+    },
+    {
+      "start_time": 3299.28,
+      "end_time": 3328.549,
+      "text": "क्यों? क्योंकि ये साला फोर जो है ना अकेले काम कर दे रहा था। वहां भी यही हो रहा था कि एक ही आदमी छह लोग का काम कर रहा था। वेरी गुड। अब आपका लेंथ क्या है? अब आपका विंडो क्या है? इसको निकाल दिए। इसको निकाल दिए। आपका यही तो बच गया। यही तो बेटा एक तो बच गया। इसको भी कर दो। अब आपका लेंथ क्या है? वन वन। दुनिया में कुछ भी टूट जाए। वन आंसर मेरा होगा। वन यहां लिख दीजिए। कंफर्टेबल हो गया। वेरी गुड। अब अब क्या करता था? अब Amazon तो बुड़बक है। अब उसको पता नहीं चल रहा है कि यहां पे एक ही आदमी है। इसको भी फायर कर दो।",
+      "source": "caption",
+      "english_text": "Why? Because this foursome was working alone. The same thing was happening there too that one man was doing the work of six people. very good. What is your height now? Now what is your window? Removed it. Removed it. This is what is left for you. This is the only son who survived. Do this also. What is your height now? One one. Anything can break in the world. One answer will be mine. Write one here. Became comfortable. very good. What did he do now? Now Amazon is a blabbermouth. Now he is not able to realize that there is only one person here. Fire this too."
+    },
+    {
+      "start_time": 3328.559,
+      "end_time": 3361.349,
+      "text": "इसको भी फायर कर दो। तो कर दो। इसको भी फायर कर दो। आ जाओ। सम = 4 - 4 = 0 फायर कर दिया। अब ज़ीरो हुआ। अब जाके ज़ीरो हो गया। 0 4 से बड़ा है ना। अब काम फंस गया। काम फंस गया। क्या करेंगे? हायर करेंगे। काम फंस गया। आ जाइए। इसको हायर कर लिए। इसको हायर कीजिए। सम = 0 + 4 = 4 फोर। फोर से बड़ा हां है। आपका विंडो कहां है? कितना आदमी हायर है अभी? खाली ये हायर है। खाली",
+      "source": "caption",
+      "english_text": "Fire this too. So do it. Fire this too. Come on. Sum = 4 – 4 = 0 fired. Now it is zero. Now it has become zero. 0 is greater than 4 isn't it? Now the work got stuck. The work got stuck. What to do? Will hire. The work got stuck. Come over. Hired him. Hire him. Sum = 0 + 4 = 4 four. Yes is greater than four. Where is your window? How many people are hired now? This is empty. empty"
+    },
+    {
+      "start_time": 3361.359,
+      "end_time": 3389.109,
+      "text": "ये हायर है। वन वन तो ऑलरेडी लिखा हुआ है। ठीक है? कोई बात नहीं। वन पहले भी था। अभी भी है। अब काम होने लगा। फायर कर दो। फायर करिए। इसको फायर करिए साले को। हटाइए। फायर करिए। फायर करिए। 4 - 4 = 0 काम है ना? काम ना हो रहा है। हायर करना पड़ेगा। लेकिन हायर किसको करोगे? जी। अब तो खत्म हो गया। वो कॉलेज में जितना बच्चा सब खत्म हो गया। एरे खत्म हो गया। खत्म आपका प्रोग्राम। ये आपका था। इसमें क्या है?",
+      "source": "caption",
+      "english_text": "This is higher. One one is already written. Ok? No problem. The forest was there earlier also. Still there. Now the work started. Fire it. Fire away. Fire this guy. Remove. Fire away. Fire away. 4 - 4 = 0 work right? Work is not getting done. Will have to hire. But who will you hire? Yes. Now it is over. As a child in college, everything is over. The array is over. Your program is over. This was yours. What's in it?"
+    },
+    {
+      "start_time": 3389.119,
+      "end_time": 3416.39,
+      "text": "सबसे छोटा नंबर वन। वन रिटर्न कर दीजिए। इसका आंसर वन है। क्यों इसका आंसर वन है? क्योंकि एक ही आदमी काम कर रहा था। Amazon के एग्जांपल से हमको नहीं लगता है कि और कुछ भी आपको समझने का जरूरत है। शुरू में आपके पास कुछ नहीं है। हायर करते जाना है। फायर करते जाना है। हायर कब तक करना है? एक बार आप हायर कीजिए। काम हो रहा है तब तक हायर करिए। काम नहीं हो रहा है जब तक हायर कीजिए। काम होने लगा उसको लिख लीजिए और फायर करना शुरू कीजिए एक छोर से। ठीक है?",
+      "source": "caption",
+      "english_text": "Smallest number one. Please return one. The answer is one. Why is the answer one? Because only one man was working. From Amazon's example, we don't think you need to understand anything else. In the beginning you have nothing. Have to keep hiring. Have to keep firing. When to hire? You hire once. Hire while the work is getting done. Hire until the work is not getting done. Write down the work being done and start firing from one end. Ok?"
+    },
+    {
+      "start_time": 3416.4,
+      "end_time": 3443.99,
+      "text": "वेरी गुड। अब आइए। अब आप सोच लिए अब इसको कंप्यूटर के भाषा में सोचना शुरू करते हैं कि होगा क्या? गुड। लो इज़ इक्वल टू ज़ीरो हाई इज़ इक्वल टू हां ये भी लिखा हुआ है कि अगर मान लो कोई भी ऐसा सवेरे नहीं है जिसका सम ग्रेटर दैन इक्वल टारगेट। ये भी हो सकता है ना कि आपका टारगेट 1 लाख हो। आपका आपका कोई आपका कोई आदमी काम ना कर पा रहा है। आप पूरा कॉलेज को हायर किए हो वो काम नहीं हो पाया। तो उस केस में जीरो रिटर्न करना है।",
+      "source": "caption",
+      "english_text": "Very good. Come now. Now you have thought about it, now start thinking about it in computer language, what will happen? Good. Low is equal to zero High is equal to yes It is also written that if we assume that there is no such morning whose sum is greater than equal to the target. It is also possible that your target is Rs 1 lakh. One of your people is not able to work. You have hired the entire college but the work could not be done. So in that case zero return has to be made."
+    },
+    {
+      "start_time": 3444.0,
+      "end_time": 3478.309,
+      "text": "उस केस में जीरो रिटर्न करना है तो हो जाएगा आपका रिजल्ट। रिजल्ट में आप कुछ ले लीजिए। ए आई एन टी मैक्स ले लीजिए। एक और बात जभी भी आपको मिनिमम रिटर्न करना है ना किसी भी चीज का किसी भी सिर्फ स्लाइडिंग विंडो में नहीं कहीं भी प्रोग्रामिंग में। आपको अगर मिनिमम चीज रिटर्न करनी है ना तो आपका जो रिजल्ट का स्टार्टिंग वैल्यू होता है वो आई एनt मैक्स होता है। मतलब इंफिनिटी। अगर आपको मैक्सिमम कुछ रिटर्न करना है कभी भी जिंदगी में तो आपके रिजल्ट का वैल्यू होता है वो होता है आई एन टी मीन उल्टा होता है। ठीक है? अगर आपको मिनिमम करना है रिजल्ट आप शुरू कीजिए इनफिनिटी",
+      "source": "caption",
+      "english_text": "In that case if you have to return zero then your result will be done. You take something as a result. Take AINT Max. One more thing, whenever you have to make minimum return of anything, not just in sliding window, anywhere in programming. If you want to return minimum value then the starting value of your result is i n max. Means infinity. If you want to make maximum return at any time in your life then the value of your result is INT and it is mean inverted. Ok? If you want to minimize results then start Infinity."
+    },
+    {
+      "start_time": 3478.319,
+      "end_time": 3512.15,
+      "text": "से। अगर आपको मैक्सिमम रिटर्न करना है रिजल्ट आप शुरू कीजिए माइनस इनफिनिटी से। क्यों? क्योंकि कोई भी आपका फर्स्ट वैल्यू आएगा। मान लीजिए आपका फर्स्ट वैल्यू आ गया 10। तो आप क्या करिएगा? जब आपको मिनिमम रिटर्न करना है। अब यही तो करिएगा ना। मीन आपका अभी वाला जो आंसर आया है 10 आया है और रेस। तो इससे क्या होगा कि जब आपका रिजल्ट पहले ही से इनफिनिटी हो कोई भी चीज आएगा इनफिनिटी से तो अच्छा ही होगा तो उसको आप ले लेंगे। सिमिलर काम जब आपको मैक्सिमम करना होता है तो आप ये करते हैं ना आप ये करते हैं आंसर रेस। तो कोई भी चीज़ आया 10 आया तो 10 कुछ भी हो तो माइनस इनफिनिटी से तो अच्छा ही होता है तो 10 आ",
+      "source": "caption",
+      "english_text": "From. If you want to return maximum result, you start from minus infinity. Why? Because no matter what your first value will come. Suppose your first value is 10. So what will you do? When you have to make minimum returns. Now you will do this only. Means your current answer is 10 and race. So what will happen is that when your result is already infinite, if anything comes from infinity then it will be better then you will take it. Similar work: When you have to do maximum, you do this, you do this, Answer Race. So if anything comes to 10 then it is 10. If anything then it is better than minus infinity. So if it comes to 10 then it is 10."
+    },
+    {
+      "start_time": 3512.16,
+      "end_time": 3544.47,
+      "text": "जाएगा। इसके लिए ऐसा करते हैं। ठीक है? याद रखिए। ठीक है? तो फिर से आ जाते हैं। लो = 0 हाई = 0 रेस = क्योंकि मिनिमम रिटर्न करना है तो आई एन टी मैक्स जो कि आप समझ सकते हैं इंफिनिटी होता है कंप्यूटर लैंग्वेज में। ठीक है? आई एनt मैक्स मतलब इंटीजर्स जो मैक्सिमम वैल्यू ले सकता है। ठीक है? अब हर विंडो का इनेशन क्या है? इनफार्मेशन क्या है विंडो का? सम। शुरू में आपके पास कितना है? मतलब कितना सम है या तो कितना आदमी है या तो कितना चीज? ज़ीरो है। कुछ नहीं है। नील बेटा सनार किसी को हायर नहीं किया है। ठीक है? चलिए",
+      "source": "caption",
+      "english_text": "Will go. Let's do this for this. Ok? Remember this. Ok? Then they come again. Low = 0 High = 0 Res = Because minimum has to be returned then INT MAX which as you can understand is infinity in computer language. Ok? I n max means integers which can take maximum value. Ok? Now what is the ination of each window? What is the information of the window? Even. How much do you have to begin with? Meaning, how much is equal, or how much is man, or how much is thing? Is zero. Nothing is there Neel son Sanar has not hired anyone. Ok? let's go"
+    },
+    {
+      "start_time": 3544.48,
+      "end_time": 3578.95,
+      "text": "अब अब जो हम लोग हायर फायर का बात कर रहे थे। अब ये हायरिंग और फायरिंग होगा कैसे? हायरिंग किस दिशा में होता था? हायरिंग किस डायरेक्शन में है? हायरिंग इस डायरेक्शन में हो रहा था। हो रहा था ना? एक-एक करके राइट साइड तक हायर कर रहे थे। फायर कैसे होता था? फायर भी इसी डायरेक्शन में होता था। मतलब पहले विंडो ये है। ये विंडो जब बढ़ता था। विंडो बढ़ाने का मतलब हायर कंपनी बड़ा कर रहे हैं। तो विंडो ऐसे करके बढ़ता था, बढ़ता रहता था, बढ़ता रहता था। विंडो जब घटता था ना विंडो जब घटता था इधर से घटना शुरू करता था जिसको पहले हायर उसको पहले फायर ठीक है इधर से घटना शुरू",
+      "source": "caption",
+      "english_text": "Now what we were talking about is Higher Fire. Now how will this hiring and firing happen? In which direction did the hiring take place? In which direction is the hiring? Hiring was taking place in this direction. Was it happening? One by one they were hiring till the right side. How did the fire happen? The fire also took place in this direction. Meaning, this is the first window. When this window grew. Increasing the window means the higher company is making it bigger. So the window kept growing, kept growing, kept growing. When the window was decreasing, when the window was decreasing, the incident would start from here, whoever gets hired first, he should be fired first, okay, the incident starts from here."
+    },
+    {
+      "start_time": 3578.96,
+      "end_time": 3609.829,
+      "text": "करता था ऐसेसे करके मतलब मतलब मतलब हायर करने का मतलब क्या है किसी एलिमेंट को हायर करने का मतलब क्या है सम में उस एलिमेंट का वैल्यू जोड़ना किसी एलिमेंट को हायर करने का मतलब क्या है सम में से एलिमेंट का कम करना मतलब और जोड़ेंगे किसको जोड़ेंगे नए एलिमेंट को जो नया नया एलिमेंट विंडो में आएगा उसको जोड़ेंगे। जो पुराना एलिमेंट है उसको बढ़ाएंगे और विंडो हटा देंगे उसके तरफ। पिछले क्वेश्चन में किए थे। पिछले क्वेश्चन में 100 हटाते थे 300 घुसाते थे।",
+      "source": "caption",
+      "english_text": "What does it mean to hire an element? What does it mean to hire an element? What does it mean to hire an element? What does it mean to subtract an element from a sum? What does it mean to add more? What does it mean to add a new element? The new element that comes in the window will be added. We will expand the old element and remove the window on its side. Did in the previous question. In the previous question, 100 were removed and 300 were inserted."
+    },
+    {
+      "start_time": 3609.839,
+      "end_time": 3643.75,
+      "text": "200 हटाते थे 400 घुसाते थे। तो कभी भी जो घुसाने का काम है कभी भी जो हायर हायरिंग का काम है या तो जो इंक्रीस करने का काम है वो हाई से होता है। हाई बढ़ेगा तभी तो आएगा। और जो भी फायरिंग का काम होता है जो भी फायरिंग या तो जो भी डिक्रीज करने का काम होता है जिस एलिमेंट को अपने गांव रवाना करना है वो लो के तरफ से होता है। पिछले में भी यही हुआ था। इसमें इसमें क्या ऑर्डर होता था इसमें हाई प्लस प्लस होता था और इसको हम लोग कुछ एरे ऑफ़ हाई से कुछ करते थे। सम करते थे या कुछ भी",
+      "source": "caption",
+      "english_text": "200 were removed and 400 were inserted. So, whenever there is work of entry or work of higher hiring or increase, it is done from higher level. It will come only when the high increases. And whatever firing work is done, whatever firing is done or whatever decree is done, the element which has to be sent to its village, is done by Lo. Same thing happened in the past also. What was the order in this, it had high plus plus and we used to do something with some array of high. used to do or anything"
+    },
+    {
+      "start_time": 3643.76,
+      "end_time": 3670.789,
+      "text": "उसको लेते थे अंदर अपने विंडो में। इसमें पहले एरे ऑफ़ लो को भगा दिए और फिर लो प्लस प्लस कर दिए। यह दोनों उल्टा है एक दूसरे से। यही हो रहा है। यह हायरिंग का प्रोसेस है। यह फायरिंग का प्रोसेस है। ऐसे ही करेंगे ना भाई। किसी आदमी को हायर करने के लिए हाई को बढ़ाएंगे। उसको हायर करेंगे। फायर करना है तो पहले इस वाले को फायर करेंगे। उसके बाद लो बढ़ा देंगे कि कंपनी में हो ही नहीं। कंपनी कम हो गई। ठीक है? अब तो क्या कर सकते हैं इसमें? कोड कैसे लिखेंगे?",
+      "source": "caption",
+      "english_text": "He used to take it inside his window. In this, first the array of low was removed and then low plus plus. These two are opposite to each other. This is what is happening. This is the process of hiring. This is the process of firing. You will do it like this, brother. Will raise the bar to hire someone. Will hire him. If we have to fire, we will fire this one first. After that they will increase it to the extent that they are not in the company. The company went down. Ok? Now what can be done in this? How to write code?"
+    },
+    {
+      "start_time": 3670.799,
+      "end_time": 3705.67,
+      "text": "इसका कोड लिखना थोड़ा ट्रिकी है। इसका कोड बहुत ब्यूटीफुल है। कोड इसका पहले बार में आप लोगों को नहीं समझ हो सकता है लॉजिक आ गया हो समझ में। अभी भी लेकिन अगर हम बोल दें कि आप इसका कोड लिखो जी कोड नहीं आएगा लिखना ठीक है हमको भी नहीं आता था तो लो ज़ीरो हाई ज़ीरो है एरे एक बार बना लेते हैं 1 2 4 4 सेम काम जो पिछले बार किए थे हाई हाई पे हम लोग चलते हैं जैसे ही हाई बाहर प्रोग्राम खत्म हाई लेस &lt; n ठीक है अभी तो आपका सम ज़ीरो है",
+      "source": "caption",
+      "english_text": "Writing its code is a bit tricky. Its code is very beautiful. You may not understand the code the first time, but you may have understood the logic. Even now, but if we say that you write its code, the code will not come, it is okay to write, we also did not know, so low zero is high zero, let's make it once 1 2 4 4 Same work as we did last time, high high, we leave as soon as high is out, program ends high less < n Okay, now your sum is zero."
+    },
+    {
+      "start_time": 3705.68,
+      "end_time": 3739.43,
+      "text": "कुछ नहीं है आपके पास और आपका जो टारगेट का कंस्ट्रेंट दिया है ना वो वन से है। तो शुरुआत में शुरुआत में तो कुछ है ही नहीं। वो तो फायर कर ही नहीं सकते हैं। तो हायर ही करना पड़ेगा। हायर कर लीजिए। सम = प्लस एरे ऑफ़ आई। ठीक है? अब अब क्या हो रहा है? अब एक बार आपने हायर कर लिया। अभी क्या प्रोसेस था कि चेक करो कि अगर काम हो रहा है, अगर काम हो रहा है, काम नहीं हो रहा है, तब तो बात ही नहीं है। काम नहीं हो रहा है, तब तो फायरिंग का कोई चांस ही नहीं है। अभी तो कंपनी स्टेबल",
+      "source": "caption",
+      "english_text": "You don't have anything and the target constraint given by you is from one. So in the beginning there is nothing in the beginning. They can't even fire. So you will have to hire. Get hired. Sum = plus array of i. Ok? Now what is happening now? Now once you're hired. What was the process now to check that if the work is being done, if the work is being done, if the work is not being done, then it is not a matter. If the work is not being done then there is no chance of firing. Right now the company is stable"
+    },
+    {
+      "start_time": 3739.44,
+      "end_time": 3771.349,
+      "text": "नहीं है। काम नहीं हो रहा है, तो आपको और हायर करना है तो हाई को और बढ़ाना है और सब काम करना है। लेकिन, अगर काम हो रहा है तो कंपनी को कम करते-करते मिनिमम फाइंड करो, जहां काम हो रहा है। छह में काम हो रहा है, बहुत अच्छा। छह को आंसर में लिख लो। हो सकता है पांच में भी होता है, तो पांच में ट्राई करो। पांच में भी होता है पांच को लिख लो। चार में होता है चार को लिख लो। तीन में नहीं होता है तो वहां रुक जाओ। अब हायर करेंगे। यही होता है ना? इसको ऐसे लिख सकते हैं। वाइल वाइल एक और वाइल वाइल के अंदर वाइल जो सम है काम का मतलब क्या है? सम इज़",
+      "source": "caption",
+      "english_text": "It is not. If the work is not getting done then you have to hire more, increase the level further and do all the work. But, if work is being done then find the minimum by reducing the company where the work is being done. Work is underway in six, very good. Write six in the answer. Maybe it happens in five too, so try it in five. It also happens in five, write down five. Write down four. If it doesn't happen in three, then stop there. Will hire now. This is what happens right? It can be written like this. Vile Vile Another Vile within Vile Vile which is even What is the meaning of Kama? even is"
+    },
+    {
+      "start_time": 3771.359,
+      "end_time": 3797.349,
+      "text": "ये देखिए। काम होने का मतलब क्या है कि आपका सम टारगेट से इक्वल हो या बड़ा हो। अगर ऐसा हुआ अगर आप यहां आए मतलब कि काम हो रहा है। कहीं तो कुछ काम हो रहा है। कितना भी आदमी 100 आदमियों का काम तो हो रहा है। तो कितना आदमी मिलके अभी काम कर रहा है? अभी इस पॉइंट पे इस पॉइंट पे कितने आदमी मिलके काम कर रहे हैं? अभी इस पॉइंट पे कितने आदमी मिलके काम कर रहे हैं? आपका हाई कहां है? आपका हाई यहां है।",
+      "source": "caption",
+      "english_text": "Look at this. What it means to have work is that your sum is equal to or greater than the target. If this happens, if you come here it means that work is being done. Some work is happening somewhere. No matter how many people, the work of 100 people is being done. So how many people are working together right now? Right now how many people are working together at this point? How many people are working together at this point? Where is your high? Your high is here."
+    },
+    {
+      "start_time": 3797.359,
+      "end_time": 3831.91,
+      "text": "तभी तो इसको जोड़े। हर बार हाई वाले को जोड़ रहे हैं, हायर कर रहे हैं। आपका लो भी यहीं पे है। लो भी यहीं पे है ना? लो ज़ीरो पे है। तो लो = 0, हाई = 0 मतलब आपको कोई बोल रहा है कि मेरा स्टार्ट = 0 मेरा एंड भी ज़ीरो पे ही है। इसका लेंथ बताओ। और इसका लेंथ कैसे निकलेगा? इसका लेंथ निकलेगा एंड माइनस स्टार्ट + 1 करके। नहीं समझ में आया? कोई सब एरे है 0 से टू तक। इसका लेंथ बताओ। तो इसमें कौन-कौन सा एलिमेंट है? 0 1 और टू। आपको देख के लगेगा कि 2 - 0 कर देंगे। 2 - 0 2 होता है। इसका",
+      "source": "caption",
+      "english_text": "Only then add it. Every time the higher ones are being added and hired. Yours is also here. Lo, he is here too, isn't he? It is at zero. So low = 0, high = 0 means someone is telling you that my start = 0, my end is also at zero. Tell me its length. And how will its length be determined? Its length will be determined by adding end minus start + 1. Didn't you understand? Any sub array is from 0 to two. Tell me its length. So which elements are there in it? 0 1 and two. You will see that we will make it 2-0. 2 - 0 is 2. its"
+    },
+    {
+      "start_time": 3831.92,
+      "end_time": 3861.829,
+      "text": "लेंथ थ्री है। इसका क्या होता है? 2 - 0 + 1 = 3। ये सिंपल मैथ्स है। इसमें कोई हम हम इसको अभी नहीं सोचे। हमको सिंपल मैथ्स है ना? तो सबसे पहले तो इसका निकाल लीजिए। कितना आदमी है जी कंपनी में? हाई माइनस लो प्लस वन है। वेरी गुड। जितना भी आदमी है इतना तो काम कर रहा है। रेस्ट इक्वल टू मिनिमम ऑफ़ रेस्ट एंड लेंथ। तो रेस्ट पहले इनफिनिटी था। अभी इसको पता चला होगा कि इतना आदमी से तो काम हो रहा है। वेरी गुड।",
+      "source": "caption",
+      "english_text": "The length is three. What happens to this? 2 – 0 + 1 = 3. This is simple maths. We have not thought about this yet. We have simple maths, right? So first of all take it out. How many people are there in the company? High minus low is plus one. very good. Every person is working so much. Rest equal to minimum of rest and length. So Rest was previously Infinity. Now he must have realized that the work is being done with so many people. very good."
+    },
+    {
+      "start_time": 3861.839,
+      "end_time": 3890.15,
+      "text": "ये हो गया। ये हो गया। आपने देख लिए। Amazon देख लिया कि छह आदमी से काम हो रहा है। छह को अपने डायरी में लिख लिया। अब फायर करो। फायर कैसे करते हैं? फायर कैसे करते हैं? फायर कैसे करते हैं? फायर कैसे? फायर करते हैं। लो को घटा लो पहले। सम इक्वल टू सम माइनस एरे ऑफ़ लो। घटाने के बाद क्या करते हैं? लो को बढ़ा देते हैं। जिसको फायर किए उससे अब कोई दारोकार नहीं है। ठीक है? ठीक है? ठीक है? इतना हो गया।",
+      "source": "caption",
+      "english_text": "This is done. that'll be. You have seen it. Amazon saw that the work was being done by six people. Wrote six in my diary. Now fire. How to fire? How to fire? How to fire? How to fire? Let's fire. Subtract Lo first. Sum equal to sum minus array of low. What do you do after subtraction? Let's increase Lo. Now no one cares about the person who is fired. Ok? Ok? Ok? That much is done."
+    },
+    {
+      "start_time": 3890.16,
+      "end_time": 3924.71,
+      "text": "इतना समझ में आया? क्या किया? फिर से समझाएंगे। चिंता मत कीजिए। कोड थोड़ा हो गया है। फाइल को बंद कर दीजिए। वाइल को बंद कर दीजिए। क्या हुआ इस फाइल में? सबसे पहले तो हम लोग हाई पे आए। यहां से समझाएंगे। यहां पर आए। यहां पर हम लोग के पास कुछ नहीं था। अभी अभी कंपनी चल रहा है तो कैसा अभी हम लोग को मालूम नहीं है। हाई को जोड़ दिए। हाई वाले को हायर कर लिए। अगर काम हो रहा है। ये ये जो सेक्शन है ये इसका मतलब है जब तक जब तक काम हो रहा है। काम हो रहा है। वाइल",
+      "source": "caption",
+      "english_text": "Did you understand this much? What did you do? Will explain again. Don't worry. There is little code. Close the file. Close the vial. What happened in this file? First of all we came to High Pay. Will explain from here. Came here. We had nothing here. The company is still running, so we don't know how it is. Added high. Hired the higher ones. If work is being done. This section means as long as the work is being done. Work is being done. vile"
+    },
+    {
+      "start_time": 3924.72,
+      "end_time": 3953.75,
+      "text": "लूप है ये। एक बार नहीं लूप है। ये इफ नहीं है। लूप है जब तक काम हो रहा है। व्हाइल सम इज़ ग्रेटर दैन इक्वल टू टारगेट। तब तक तब तक क्या करेंगे? एक-एक करके वो लेंथ निकालेंगे। आंसर में लिखते जाएंगे। आंसर में लिख लो। एंड फायर भी करते जाएंगे। एक-एक करके। ये फायरिंग ये फायरिंग यहां हुआ। ये फायरिंग कब रुकेगा? हो सकता है आप जब एक आदमी को फायर किए तो तब भी सम ग्रेटर दैन इक्वल टारगेट हो। यही तो हो रहा था। विंडो आपका यहां तक बना था।",
+      "source": "caption",
+      "english_text": "This is a loop. There is a loop not once. This is not an if. The loop is there as long as the work is getting done. While some is greater than equal to target. What will you do till then? One by one they will take out the length. Will keep writing in the answer. Write it in the answer. Will also continue to end fire. One by one. This firing, this firing happened here. When will this firing stop? Even when you fire a person, there may still be a greater than equal target. This is what was happening. Your window was made till here."
+    },
+    {
+      "start_time": 3953.76,
+      "end_time": 3987.829,
+      "text": "याद है एग्जांपल में? विंडो यहां तक बन गया, तो आप थ्री आपने आंसर में लिख लिए थे। वेरी गुड। वन को आप फायर किए। आप देखे कि टू और फोर अभी भी काम कर रहा है। तो ठीक है ना? तो और फायर करो ना तो बार-बार क्यों करना है? एक ही बार पूरा पूरा मास फायरिंग करो। आप देखे कि टू और फोर भी कर रहा है। टू अपने आंसर में लिख लो। और करो फायर। टू को भी निकालो। ये भी करो। ये भी कर रहा है। अच्छा। तो ये भी कर दो। वन अपने आंसर में लिख लो। इसको भी फायर करो। अब आपका लो यहां पे आ जाएगा। लो यहां पे आ जाएगा। अब आपके पास कुछ नहीं है। सब में से जितना आप जितना हायर किया सबको फायर कर दिए। अब आपको पता चला कि अरे अब तो कुछ है",
+      "source": "caption",
+      "english_text": "Remember in the example? When the window was made till now, you had written three in the answer. very good. You fired the forest. You see two and four are still working. So is it ok? So fire more, why do you have to do it again and again? Fire the entire mass at once. You see he is doing two and four also. Write two in your answer. And fire. Take out the two also. Do this also. He is doing this also. Good. So do this also. Write one in your answer. Fire this too. Now your loan will arrive here. Here he will come here. Now you have nothing. You fired everyone out of everyone you hired. Now you realize that there is something"
+    },
+    {
+      "start_time": 3987.839,
+      "end_time": 4019.75,
+      "text": "या नहीं है। ठीक है? जब कुछ नहीं है जब कुछ है ये नहीं है तो ये वाइल आपका टूट जाएगा। ऑटोमेटिक टूट जाएगा। जैसे ही काम होना बंद हो जाएगा आप फायरिंग नहीं कर सकते हैं। फायरिंग करने का पावर जहां तक है काम हो रहा है जब तक फायर करो। जब तक श्रिंक करो श्रिंक श्रिंक करो विंडो को। जैसे ही काम बंद फायरिंग बंद। और उसका सारा आंसर यहां पे हम लोग कर दिए इधर-उधर। अब यहां पे आप आए अब क्या हुआ? एक एक हाई तक एक हाई तक आप इसको हायर किए थे। किसी एक हाई तक आप हायर किए थे। अब किसको हायर करना है? अगले हाई को। अगले हाई को या",
+      "source": "caption",
+      "english_text": "Or not. Ok? When there is nothing, when there is something, it is not there, then your will will be broken. The automatic will break. As soon as the work stops, you cannot fire. As far as you have the power to fire, fire as long as the work is being done. Shrink, shrink, shrink the window until it shrinks. The firing stopped as soon as the work stopped. And we have given all the answers here and there. Now you came here, what happened now? You hired him one by one till one high. You were hired till a certain level. Who to hire now? To the next high. to the next high or"
+    },
+    {
+      "start_time": 4019.76,
+      "end_time": 4051.27,
+      "text": "ध्यान दीजिए। हाई यहां था। लो यहां था। मान लीजिए आपका कभी हाई यहां आए। इसके आने का मतलब और यहां तक आने का मतलब क्या है? उस हाई को हायर किया जा चुका है। हो सकता है उसको फायर भी किया जा चुका हो। हमको नहीं मालूम। आप यहां तक हाई को लेके आए थे। हाई को लेके आए थे। इस हाई को हायर तो पक्का किया जा चुका है। हो सकता है उसको फायर भी किया जा चुका हो। कोई मतलब नहीं है। वो सब वो ये ये वाला चीज देख लेगा उसको। फायरिंग मैनेजर देख लेगा। अब",
+      "source": "caption",
+      "english_text": "Pay attention. Hai was here. Lo was here. Suppose you ever come here. What does it mean to come here and what does it mean to come here? That high has been hired. It is possible that he may have been fired. We don't know. You came here with high. Had brought high. This high has been confirmed higher. It is possible that he may have been fired. Makes no sense. He will see all that and this and that thing. The firing manager will take care. now"
+    },
+    {
+      "start_time": 4051.28,
+      "end_time": 4079.829,
+      "text": "हाई प्लस प्लस क्यों? अगले बार अगले हाई को ना हायर कीजिएगा। एक हाई को तो कर लिया हायर। उसके साथ अपना काम कर लिए। अब हायर किसको करना है? कॉलेज का अगला बच्चा को। कॉलेज का अगला बच्चा हाई प्लस प्लस तो हाई को बढ़ा दिए। ये देख लीजिए। ये सिंपल सा प्रोग्राम है। ये सिंपल सा बहुत छोटा है लेकिन बहुत ब्यूटीफुल बहुत ट्रिकी है। ध्यान से सुनिएगा। ध्यान से इसको रिपीट करके देखिएगा। हो सके तो थोड़ा स्पीड स्लो कर लीजिए। एक दो बार फिर सुनिए। कोड कैसे लिखा जाता है और कोड का मतलब क्या है?",
+      "source": "caption",
+      "english_text": "Why High Plus Plus? Next time don't hire the next guy. At least one person has been hired. Done your work with him. Who needs to be hired now? To the next kid in college. The next kid in college is high plus plus so increases the high. Take a look at this. This is a simple program. It is simple, very small but very beautiful and very tricky. Listen carefully. Repeat this carefully. If possible, slow down the speed a bit. Listen again a couple of times. How is code written and what does code mean?"
+    },
+    {
+      "start_time": 4079.839,
+      "end_time": 4113.51,
+      "text": "जितना पॉसिबल था हम समझाए हैं। लेकिन फिर भी हो सकता है कुछ डाउट हो कमेंट में पूछिएगा। है ना? और इसको अलग तरीके से भी लिख के देखिएगा। सिंपल लॉजिक यही है। हायर करो। काम देख लो। काम जब तक हो रहा है, काम जब तक हो रहा है, फायर करो और हायर वाले पॉइंटर को एक बढ़ा दो कि अगले बार हायरिंग हो सके। ठीक है? यहां पे जब आप आ गए बस कुछ नहीं करना है। रिटर्न रिजल्ट रिटर्न रिजल्ट जो कि हम लोग यहां पे कैलकुलेट करते आ रहे थे। ये वाला इसको",
+      "source": "caption",
+      "english_text": "We have explained as much as was possible. But still there may be some doubt, ask in comment. Isn't it? And try writing it in a different way also. This is the simple logic. Hire. Look after the work. As long as the work is being done, fire it and increase the hired pointer by one so that hiring can happen next time. Ok? Once you come here, there is nothing to do. Return result is the return result that we have been calculating here. this one this one"
+    },
+    {
+      "start_time": 4113.52,
+      "end_time": 4144.39,
+      "text": "रिटर्न कर देंगे। कब रिटर्न करेंगे? जब ये वाला वाइल लूप टूट जाएगा। ये वाला वाइल लूप कब टूटेगा? जब हाई इक्वल इक्वल टू n हो जाएगा। हाई इक्वल इक्वल टू n मतलब कोई बच्चा नहीं बचा हायर करने के लिए। हाई आपका यहां पे हाई आपका घुस गया। जैसे ही आपका हाई अलग चला गया एरे से आपका विंडो ही टूट गया ना। विंडो में स्टार्ट एंड चाहिए एंड हट गया। एंड टूट गया तब क्या विंडो कुछ नहीं है विंडो। बस इसको रिटर्न कर दीजिए। बस ये था। इसका भी टाइम कॉम्प्लेक्सिटी जस्ट लाइक प्रीवियस क्वेश्चन। ऑर्डर ऑफ़ एंड टाइम।",
+      "source": "caption",
+      "english_text": "Will return. When will you return? When this wild loop breaks. When will this vicious loop break? When high equals equal to n. High equals two n means no children left to hire. Hi aapka pe hi here hi aapka entered. As soon as your high moved away from the array, your window itself broke. The start and end of the window are gone. End broken then what window is nothing window. Just return it. That was it. Its time complexity is also just like previous question. Order of end time."
+    },
+    {
+      "start_time": 4144.4,
+      "end_time": 4179.189,
+      "text": "कोई स्पेस लिए नहीं है। ऑर्डर ऑफ़ वन स्पेस। यह ब्यूटी होता है स्लाइडिंग विंडो का। दो क्वेश्चन बहुतेंट क्वेश्चन मेरे हिसाब से बहुत तगड़ा क्वेश्चन मेरे हिसाब से और बहुत टाइम ले बनाया गया है दोनों क्वेश्चन। जाइए कोड सबमिट कीजिए। डिस्क्रिप्शन में मेरे सबमिशन का लिंक है। पहले तो खुद से देखिए। पहले तो कि सूडो कोड पढ़ के पूरा कोड करने की कोशिश कीजिए। ना समझ में आए तो मेरा देखिए। मेरा देखने से ज्यादा फायदा नहीं है। उससे हमको समझ में आए। आपको कुछ नहीं आएगा। ठीक है? दो क्वेश्चन। सफा चट हो गया स्लाइडिंग विंडो का। ऐसे ही स्पीड बढ़ा के अब चलेंगे और पढ़ते रहेंगे। रोज कंसिस्टेंसी बनाए रखिए और रोज पढ़ते रहिए। डाउट हो तो पूछिए।",
+      "source": "caption",
+      "english_text": "No space is taken. Order of One Space. This is the beauty of sliding windows. Two questions, very many questions according to me, very tough questions according to me and very time consuming, both the questions. Go submit the code. There is a link to my submission in the description. First see for yourself. First of all, read the pseudo code and try to complete the code. If you don't understand then see mine. There's not much use in looking at me. We can understand from that. You will get nothing. Ok? Two questions. The sliding window has been cleaned. Now we will move like this and keep reading. Maintain consistency and keep studying daily. If in doubt, ask."
+    },
+    {
+      "start_time": 4179.199,
+      "end_time": 4183.199,
+      "text": "कोशिश करेंगे हम रिप्लाई देने का। ठीक है?",
+      "source": "caption",
+      "english_text": "We will try to reply. Ok?"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

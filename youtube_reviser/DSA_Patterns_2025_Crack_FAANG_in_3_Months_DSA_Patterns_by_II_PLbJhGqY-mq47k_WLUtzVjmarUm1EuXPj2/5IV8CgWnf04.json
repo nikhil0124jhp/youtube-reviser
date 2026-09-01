@@ -1,0 +1,534 @@
+{
+  "video_id": "5IV8CgWnf04",
+  "video_title": "Rotate A Linked List | Master DSA in 2026 With DSA Patterns",
+  "video_number": 50,
+  "chunks": [
+    {
+      "start_time": 1.51,
+      "end_time": 35.03,
+      "text": "वैसे तो यह क्वेश्चन काफी हार्ड है क्योंकि यह Microsoft ब्लूबग वगैरह में पूछा गया है। वहां पे इज़ी क्वेश्चन नहीं पूछा जाता है। लेकिन आप लोग क्योंकि मेरे से पढ़ रहे हैं आप लोग को यह लगेगा कि यह क्वेश्चन इज़ी ऑफ़ द ईजी मतलब ईजी से भी ज्यादा इज़ी है। तो जो लोग पहली बार आ रहे हैं प्लेलिस्ट को शुरू से देखिए बीच से मत देखिए। कोड वगैरह आपको सब कमेंट में मिल जाएगा और आज का क्वेश्चन है रोटेट ए लिंक लिस्ट। साथ ही साथ लिंक लिस्ट रिवर्सल का जो चल रहा था बहुत दिनों से उसका ये लास्ट वीडियो होने वाला है। चलिए आगे बढ़ते हैं। हां अब दोनों एप्रोचेस। इसके दो एप्रोचेस हैं। एक एप्रोच है जिसमें आप रिवर्स यूज़ करते हैं एक्चुअल में। वो भी देखेंगे बाद में क्योंकि वो भी देख लेना जरूरी है। और एक एप्रोच है जो बहुत सिंपल है वो हम अभी",
+      "source": "caption",
+      "english_text": "Although this question is quite hard because it has been asked in Microsoft Bluebug etc. Easy questions are not asked there. But because you people are reading from me, you will feel that this question is the easiest of the easy, that is, it is easier than easy. So those who are coming for the first time, watch the playlist from the beginning and not from the middle. You will get all the code etc. in the comments and today's question is rotate a link list. Also, this is going to be the last video of Link List Reversal which was going on for a long time. Let's move ahead. Yes now both approaches. There are two approaches to this. There is an approach in which you actually use reverse. We will see that later because it is important to see that also. And there is an approach which is very simple, we"
+    },
+    {
+      "start_time": 35.04,
+      "end_time": 62.549,
+      "text": "बना रहे थे तो हमको आया दिमाग में कि चलो ऐसे भी बना सकते हैं। क्योंकि हम इसको पहले आपको रिवर्स करके पढ़ाने वाले थे। इसमें रिवर्सल यूज़ होता है। लेकिन हमको लगा वो बहुत ज्यादा कॉम्प्लिकेटेड हो जाएगा। मतलब बहुत सारा एज केसेस है। आप अगर वो एप्रोच देखना चाहते हैं तो लास्ट तक देखिएगा। वो भी डिस्कस करेंगे। लेकिन इसका जो बनाने का सही एप्रोच है। बहुत ईजी है। वो बहुत मतलब इजी है। बहुत इंट्यूटिव है। बहुत समझना आसान है। ठीक है? चलिए। तो क्वेश्चन आपको बोलता क्या है? क्वेश्चन आपको कुछ नहीं बोलता है। क्वेश्चन आपको बोलता है कि आपके पास एक लिंक लिस्ट है।",
+      "source": "caption",
+      "english_text": "While we were making it, it came to our mind that we can make it like this also. Because we were going to teach it to you in reverse first. There is reversal use in this. But we thought it would be too complicated. That means there are a lot of edge cases. If you want to see that approach then watch till the end. They will also discuss. But this is the right approach to make it. It is very easy. He is very mean and easy. Very intuitive. Very easy to understand. Ok? Let go. So what does the question tell you? The question doesn't tell you anything. The question tells you that you have a link list."
+    },
+    {
+      "start_time": 62.559,
+      "end_time": 96.39,
+      "text": "ठीक है? तो ऑब्वियस सी बात है कि अगर रिवर्सल लिंक लिस्ट है तो आपके पास एक लिंक लिस्ट होना ही पड़ेगा। आपका बोलता है क्वेश्चन कि ये है। एक और बना दीजिए। चलिए। आपको इस लिंक लिस्ट का साथ-साथ एक k = 2 दिया हुआ है। इस के का क्या मतलब है? आपको इस लिंक लिस्ट को राइट में रोटेट करना है। कैसे? रोटेट करना है। रोटेट करने का क्या मतलब होता है? रोटेट टू द राइट, रोटेट टू द राइट। इसका क्या मतलब होता है हम आपको हम बताते हैं। k = 2 दिया हुआ है ना? हां k = 2 दिया हुआ है। तो आपको दो प्लेसेस रोटेट करने हैं। तो सबसे पहले ना हर नोड को हर नोड को उठा के एक राइट में",
+      "source": "caption",
+      "english_text": "ok? So it is obvious that if there is a reversal link list then you will have to have a link list. Your question says that this is. Make another one. Let go. You are given this link list as well as a k = 2. What does this mean? You have to rotate this link list to the right. How? Have to rotate. What does it mean to rotate? Rotate to the right, rotate to the right. We will tell you what it means. k = 2 is given, right? Yes k = 2 is given. So you have to rotate two places. So first of all, pick every node and write it in one go."
+    },
+    {
+      "start_time": 96.4,
+      "end_time": 130.07,
+      "text": "अपने रोटेट कर दीजिए। फॉर एग्जांपल जो ये वाला वन नोड है ना ये सेकंड प्लेस पे आ जाएगा। ये कौन सा प्लेस था? ये फर्स्ट प्लेस था। अब ये सेकंड प्लेस पे आ गया। क्यों? क्योंकि आप राइट में रोटेट किए। तो राइट में अब जब आप रोटेट करेंगे हर बच्चे को तो जो बच्चा फर्स्ट पे खड़ा होगा वो सेकंड पे आ जाएगा। सिमिलरली जो बच्चा सेकंड पे खड़ा होगा वो थर्ड आ जाएगा। जो बच्चा थर्ड पे खड़ा होगा वो फोर्थ आ जाएगा। जो बच्चा फोर्थ पे खड़ा होगा वो फिफ्थ आ जाएगा। और जो बच्चा फिफ्थ में खड़ा होगा वो सिक्स्थ आ जाएगा। लेकिन लेकिन लेकिन जो बच्चा सिक्स्थ प्लेस पे खड़ा था वो कहां जाएगा? सेवंथ प्लेस आप नहीं बना सकते क्योंकि छह बच्चे है ना छह बच्चे के लिए",
+      "source": "caption",
+      "english_text": "Rotate yours. For example, this one is one node and will come at the second place. Which place was this? This was first place. Now it has come to second place. Why? Because you rotated to the right. So now when you rotate each child to the right, the child standing first will come second. Similarly, the child who stands second will come third. The child who stands third will come fourth. The child who stands fourth will come fifth. And the child who stands fifth will come sixth. But but but where will the child who was standing at sixth place go? You cannot make a seventh place because there are six children and not for six children."
+    },
+    {
+      "start_time": 130.08,
+      "end_time": 163.43,
+      "text": "सेवंथ प्लेस क्यों बनाना है? तो जो बच्चा लास्ट प्लेस पे है वो बच्चा कहां आ जाएगा? फर्स्ट प्लेस पे। फर्स्ट प्लेस पे। जो बच्चा लास्ट में है, वो कहां आ जाएगा? फर्स्ट प्लेस पे। ये कितने बार रोटेट किया आप? एक बार। एक बार इस चीज़ को फिर से करिए क्योंकि आपको दो बार रोटेट करना है इस चीज़ को फिर से करिए। जो बच्चा फर्स्ट प्लेस पे है जो कि अब सिक्स हो चुका है वो सेकंड प्लेस पे आ जाएगा। सेकंड वाला थर्ड पे आ जाएगा। थर्ड वाला फोर्थ पे आ जाएगा। फोर्थ वाला फिफ्थ पे आ जाएगा। फिफ्थ वाला सिक्स्थ पे आ जाएगा और और सॉरी यहां पे",
+      "source": "caption",
+      "english_text": "Why create Seventh Place? So where will the child who is in last place come? On first place. On first place. Where will the child who is last come? On first place. How many times did you rotate this? Once. Do this again once because you have to rotate twice. The child who is in first place, who is now six years old, will come to second place. The second one will come on third. The third one will come on the fourth. The fourth one will come on the fifth. The fifth one will come on the sixth and and sorry here"
+    },
+    {
+      "start_time": 163.44,
+      "end_time": 197.99,
+      "text": "फाइव था। यहां पे फाइव था। फाइव वहां से आया था। हां। अब देखिए ये बच्चा जो सिक्स्थ प्लेस पे है वो कहां जाएगा? वो फर्स्ट प्लेस पे चला जाएगा। क्योंकि देखिए फर्स्ट प्लेस खाली हो गया है। तो फिफ्थ वाला बच्चा कहां चला जाएगा? ये वाला। बस ये एक बार ये लिंक लिस्ट बनने के बाद एरो जोड़ दीजिए। एरो जोड़ दीजिए और और इसका जो नया वाला हेड है न्यू हेड जो कि आपको अभी लग रहा है कि फाइव है। इसको रिटर्न कर दीजिए। तो ये क्वेश्चन है कि रोटेट कर दो लिंक लिस्ट के उसको। अच्छा। सिमिलर क्वेश्चन एरे में भी होता है। सिमिलर क्वेश्चन रोटेट एन एरे भी होता है। रोटेट",
+      "source": "caption",
+      "english_text": "It was five. There was five here. Five came from there. Yes. Now see where will this child who is in sixth place go? He will go to first place. Because see the first place has become vacant. So where will the fifth child go? This one. Once this link list is created, simply add arrows. Add arrows and and its new head is the new head which you think right now is five. Return it. So the question is to rotate it in the link list. Good. Similar question also occurs in array. There is also a similar question rotate an array. rotate"
+    },
+    {
+      "start_time": 198.0,
+      "end_time": 231.99,
+      "text": "एन एरे टू द राइट बाय के। लेकिन ये क्वेश्चन थोड़ा हार्ड होता है। लेकिन जब आपको बोला जाए कि रोटेट ए लिंक लिस्ट ये क्वेश्चन बड़ा इजी है। ये क्वेश्चन लिंक लिस्ट का बड़ा इजी है। क्यों? क्योंकि लिंक लिस्ट का प्रॉपर्टी है। लिंक लिस्ट का प्रॉपर्टी है ना आप उसको कहीं से भी तोड़ सकते हैं और उस पार्ट को कहीं भी जोड़ सकते हैं। लिंक लिस्ट का क्या प्रॉपर्टी है? फॉर एग्जांपल, अगर आप एरे की बात करें। अगर आप एरे की बात करें ऐसा करके कोई एरे या वेक्टर है, कुछ भी है। तो आप इसको ऐसा नहीं कर सकते हैं कि आप ना इसको यहां से तोड़ दिए। मतलब एक हिस्सा तोड़ दिए और इस हिस्से को शुरू में ला के जोड़ दिए। ये करना एरे में मुश्किल है। ये करना मुश्किल ही नहीं इंपॉसिबल है। लेकिन लेकिन लिंक",
+      "source": "caption",
+      "english_text": "An array to the right by k. But this question is a bit hard. But when you are asked to rotate a link list, this question is very easy. This question is very easy in the link list. Why? Because link is a property of list. Link is a property of list, so you can break it anywhere and add that part anywhere. What is the property of linked list? For example, if you talk about array. If you talk about array, it can be any array or vector, anything. So you can't do this without breaking it from here. Meaning, one part was broken and this part was joined back to the beginning. This is difficult to do in array. Doing this is not only difficult but impossible. but but link"
+    },
+    {
+      "start_time": 232.0,
+      "end_time": 265.59,
+      "text": "लिस्ट में लिंक लिस्ट में ये करना बहुत आसान है। फॉर एग्जांपल ऐसा करके आपको एक लिंक लिस्ट मिला। ऐसा करके आपको एक लिंक लिस्ट मिला। आपको मन करता है हम लास्ट के दो नोड को तोड़ दें। लास्ट के दो नोड को तोड़ के अलग कर दें। तो आप तोड़ सकते हैं। बस इसको नल कर दीजिए। टूट गया। उसके बाद आपको मन करता है कि हम इन दोनों नोड को शुरू में ला के खड़ा कर दें। शुरू में ला के खड़ा कर दें। तो आप कर सकते हैं। आप कर सकते हैं। क्या कर सकते हैं? इसके नेक्स्ट को इसके नेक्स्ट को इस पे पॉइंट कर दीजिए और इसको हेड बना दीजिए। एक तरीके से क्या किया आप? आप अब लिंक लिस्ट के एक हिस्से को तोड़े लास्ट वाले हिस्से को उसको उठा के",
+      "source": "caption",
+      "english_text": "Link to list: This is very easy to do in the list. For example, by doing this you got a link list. By doing this you got a link list. Do you feel like breaking the last two nodes? Break the last two nodes and separate them. So you can break. Just tap it. broke down. After that you feel like bringing these two nodes to the beginning. Make it stand in the beginning. so you can. You can do it. What can be done? Point its next to this and make it the head. In a way what did you do? Now you break one part of the link list and pick up the last part."
+    },
+    {
+      "start_time": 265.6,
+      "end_time": 299.59,
+      "text": "वापस रख दिए। ये करना बहुत आसान होता है। किसमें? लिंक लिस्ट में। एरे में करना आसान नहीं है। इंपॉसिबल है। एरे में आप इन दोनों ब्लॉक को नहीं तोड़ सकते और उनको लास्ट में ऐसा पॉसिबल नहीं है। लेकिन क्योंकि लिंक लिस्ट में हर ब्लॉक ऐसा बन चेन टाइप का बना रहता है। तो आप आसानी से कर सकते हैं। फॉर एग्जांपल आप लोग अगर ट्रेन देखे होंगे। ट्रेन से सफर करते होंगे तो ट्रेन जाता है तो कभी-कभी आप सुनते होंगे डिले हो रहा है। क्यों? इंजन बदला रहा है। इंजन उधर से उधर हो रहा है। तो क्या करता है ट्रेन? देखिए। शुरू में इंजन यहां रहता है। शुरू में मान लीजिए इंजन यहां है और इसके सारे बोगी है ऐसे करके कनेक्टेड है इसके बोगी। इसके सारे बोगी कनेक्टेड हैं। तो अभी तो ट्रेन इधर",
+      "source": "caption",
+      "english_text": "Kept it back. This is very easy to do. In what? In the link list. This is not easy to do in an array. It is impossible. You cannot break these two blocks in the array and it is not possible to make them last. But because every block in the link list remains of chain type. So you can do it easily. For example, if you guys have seen the train. If you travel by train, when the train goes, sometimes you might hear that it is getting delayed. Why? The engine is being changed. The engine is moving from here to there. So what does the train do? See. Initially the engine resides here. Initially, suppose the engine is here and all its bogies are connected like this. All its bogies are connected. So now the train is here"
+    },
+    {
+      "start_time": 299.6,
+      "end_time": 332.79,
+      "text": "जा रहा था। लेकिन मान लीजिए ट्रेन को अब उधर जाना पड़ेगा। उल्टा तो क्या करता है ये लोग? ये लोग इंजन को तोड़ देता है। ये लोग इंजन को यहां से तोड़ देता है। ये वाला चेन हटा देता है। ट्रेन भी चेन से जुड़ा रहता है। और इंजन को उठा के इंजन को उठा के कहां डाल देता है? फर्स्ट में। इंजन को उठा के यहां पे यहां पे डाल देता है। और ये ऐसे करके कुछ जोड़ देता है। अब ट्रेन इधर जाने लगता है। तो ट्रेन में करना बड़ा आसान है। ट्रेन में करना क्यों आसान है? क्योंकि ट्रेन क्या है? एक लिंक लिस्ट है। ट्रेन हर रोगी जुड़ा हुआ है। तो लिंक लिस्ट है। अब आइए अब देखते हैं कि इस क्वेश्चन को क्या सॉल्व करते हैं। तो इस क्वेश्चन में हो क्या रहा है। के रोटेट से आप समझते क्या है? हम लोग देखे कि जब हमारा लिंक",
+      "source": "caption",
+      "english_text": "Was going. But suppose the train will now have to go there. What do these people do instead? These people break the engine. These people break the engine from here. This one removes the chain. The train is also connected to the chain. And where does one lift the engine and put it? In the first. Picks up the engine and puts it here and there. And by doing this it adds something. Now the train starts going here. So it is very easy to do in the train. Why is it easier to do it on the train? Because what is a train? There is a link list. Train Every patient is connected. So there is the link list. Now let us see what solves this question. So what is happening in this question? What do you understand by rotate? We will see that when our link"
+    },
+    {
+      "start_time": 332.8,
+      "end_time": 365.189,
+      "text": "लिस्ट ऐसा लगता था 1 2 3 4 5 6 ये आपका ओरिजिनल लिंक लिस्ट था। ये आपका ओरिजिनल लिंक लिस्ट था। तो कभी भी कोई भी आप लिंक लिस्ट का सवाल करेंगे ना तो लिंक लिस्ट के सवाल में मेन चीज होती है कनेक्शंस। कनेक्शंस मतलब ये जो तार जुड़ा हुआ है ना इसी तार जोड़ने को आपको मॉडिफाई करना रहता है। इसी को बदलना रहता है। इसी पे जो मन करे आपको करना रहता है। आइए देखते हैं कि जब आप इसको टू बार k = 2 मतलब टू बार रोटेट करेंगे तो क्या होगा? ऊपर क्या हुआ था? ऊपर क्या हुआ था? फाइव और सिक्स सामने आ गया था और 1 2 3 4 एज इट इज़ रह गया था।",
+      "source": "caption",
+      "english_text": "The list looked like this: 1 2 3 4 5 6 This was your original link list. This was your original link list. So whenever you ask any question about link list, the main thing in the question about link list is connections. Connections means the wire which is connected, you have to modify it to connect this wire. This has to be changed. You have to do whatever you feel like on this. Let us see what will happen when you rotate it twice i.e. k = 2? What happened above? What happened above? Five and Six were revealed and 1 2 3 4 was left as it is."
+    },
+    {
+      "start_time": 365.199,
+      "end_time": 399.59,
+      "text": "तो आइए इसको एक आंसर इसका आंसर लिख लीजिए। मान लीजिए 5 6 1 2 3 4 एरो जोड़ दीजिए। एरो जोड़ दीजिए। अब देखिए किसी भी लिंक लिस्ट को आप सॉल्व कर रहे हैं ना। किसी भी लिंक लिस्ट के क्वेश्चन को सॉल्व करें तो आपको देखना पड़ेगा कि जो लिंक लिस्ट है जो लिंक लिस्ट है और जो लिंक लिस्ट हमको चाहिए जो हमको चाहिए आंसर में उसके बीच में क्या डिफरेंस है? उसके बीच में कौन से कनेक्शन के डिफरेंस है? कौन सा कनेक्शन है और कौन सा कनेक्शन हमको बनाने की ज़रूरत है? तो आइए देखते हैं। क्या ये वाला कनेक्शन क्या ये वाला एरो एरो एरो वन जो कि फाइव से",
+      "source": "caption",
+      "english_text": "So let's write an answer to this. Let's say 5 6 1 2 3 4 add arrows. Add arrow. Now see whether you are solving any link list. If you solve any link list question, you will have to see what is the difference between the link list which is a link list and the link list which we need in the answer. What are the connection differences between them? Which connection is there and which connection do we need to make? So let's see. Is this one connection is this one arrow arrow arrow one which is from five"
+    },
+    {
+      "start_time": 399.6,
+      "end_time": 430.07,
+      "text": "सिक्स है जोकि ये आपका आंसर है। ये आपका आंसर है फाइनल आंसर है और ये आपका इनपुट है। तो क्या फाइव से सिक्स वाला एरो चेंज हुआ है? नहीं फाइव से सिक्स वाला एरो चेंज नहीं हुआ है। देख सकते हैं फाइव से सिक्स ओरिजिनल में भी था आपके आंसर में भी है। तो इसमें कुछ करने की ज़रूरत नहीं है। लेकिन क्या सिक्स से वन वाला चेंज हुआ है? हां, क्योंकि ओरिजिनल में सिक्स के पास कोई एरो नहीं था। सिक्स तो नल को पॉइंट करता था। लेकिन चेंज वाले में सिक्स वन को पॉइंट करने लगा। सिक्स किसको करने लगा? वन को। तो ठीक है इसको देखेंगे। इसको देखेंगे कि क्या पता तो चला कि चेंज करना है?",
+      "source": "caption",
+      "english_text": "Six is your answer. This is your answer, the final answer and this is your input. So has the arrow changed from five to six? No, the arrow from five to six has not changed. You can see that Five to Six was there in the original and is there in your answer also. So there is no need to do anything about it. But has there been a change from six to one? Yes, because Six had no arrows in the original. Six used to point the tap. But in the change lane the six started pointing to one. Who started doing six? To the forest. Okay then, we will see about it. Let's see if we find out that changes need to be made?"
+    },
+    {
+      "start_time": 430.08,
+      "end_time": 462.469,
+      "text": "Okay। क्या वन से टू वाला एरो चेंज हुआ है? नहीं, नहीं, नहीं। वन से टू वाला एरो नहीं चेंज हुआ है क्योंकि ये आंसर में भी है। यहां पे भी था तो वेरी गुड। क्या टू से थ्री चेंज हुआ है? ना, ना, ना, टू से थ्री भी चेंज नहीं हुआ है। टू से थ्री वहां भी था, यहां भी था। Okay? क्या थ्री से फोर चेंज हुआ है? नहीं, नहीं, नहीं। थ्री से फोर चेंज नहीं हुआ है। आंसर में भी है, इनपुट में भी था। लेकिन क्या फोर का ऐरो चेंज हुआ है? हां, फोर का एरो आंसर इनपुट में फाइव को पॉइंट करता था। लेकिन आंसर में फोर का एरो नल को पॉइंट करता है।",
+      "source": "caption",
+      "english_text": "Okay. Has the arrow changed from one to two? No, no, no. The arrow from one to two has not changed because it is also in the answer. It was very good here also. Has there been a change from two to three? Na, na, na, even two to three have not changed. Two to Three was there and here too. Okay? Has there been a change from three to four? No, no, no. There has been no change from three to four. It is in the answer and also in the input. But has the arrow of four changed? Yes, the arrow of four used to point to five in the answer input. But the arrow of four in the answer points to null."
+    },
+    {
+      "start_time": 462.479,
+      "end_time": 497.43,
+      "text": "तो, आपको कितना एरो पता चला? आपको कितना कनेक्शन बदलने की जरूरत है? एक कनेक्शन तो आपको बदलने की जरूरत है सिक्स से वन। ये आपको बनाना पड़ेगा। ये आपको बनाना पड़ेगा क्योंकि ध्यान से गौर से देखिए। आंसर में आंसर में सिक्स से वन का है इनपुट में था नहीं इनपुट में था नहीं और और आपको फोर का कनेक्शन हटाना पड़ेगा किसी से भी हो हटाना पड़ेगा हटाना पड़ेगा क्योंकि इनपुट में फोर किसी को पॉइंट कर रहा था फाइव को कर रहा था लेकिन आंसर में फोर किसी को पॉइंट नहीं करता आंसर में फोर किसी को पॉइंट नहीं करता है। अगर आप ये दो",
+      "source": "caption",
+      "english_text": "So, how much arrow did you find out? How much connection do you need to change? One connection you need to change is six to one. You will have to make this. You will have to make this because look carefully. In the answer, there is six to one in the answer, there was no connection of six in the input, there was no connection of four in the input, and you have to remove the connection of four, you have to remove it, you have to remove it because in the input, four was pointing to someone, it was pointing to five, but in the answer, four does not point to anyone. In the answer, four does not point to anyone. if you give this"
+    },
+    {
+      "start_time": 497.44,
+      "end_time": 530.87,
+      "text": "काम कर दें तो आपके सारे कनेक्शन सही हो जाएंगे। आपके सारे कनेक्शन सही हो जाएंगे। सारे कनेक्शन सही हो जाएंगे ना। आपके आंसर और आपके इनपुट में क्या डिफरेंस था? दो ही एरो का डिफरेंस था ना। अब दोनों एरो अगर सही कर दिए तो आपका आंसर और आपका इनपुट मैच कर जाएगा। हां, बात आती है कि हेड क्या होगा? हेड क्या होगा? हेड क्या होगा? तो देखते हैं हेड क्या होगा? आगे जा के देखते हैं। चलिए। इतनी बात समझ में आई? अब आइए आइए। अब क्या करना है आपको? देखिए करना क्या है? अगर आपके पास ऐसा लिंक लिस्ट था। अब तो हम लोग नंबर पे बात करने लगे। अब हम लोग बात करने लगेंगे k पे कि k भी हो सकता है। k तो ऐसा नहीं है कि टू ही",
+      "source": "caption",
+      "english_text": "If you do this then all your connections will be correct. All your connections will be correct. All the connections will be correct. What was the difference between your answer and your input? There was a difference of only two arrows. Now if you correct both the arrows then your answer and your input will match. Yes, the question comes, what will be the head? What will be the head? What will be the head? So let's see what will be the head? Let's go ahead and see. Let go. Did you understand this much? Now come come. What do you have to do now? See what needs to be done? If you had such a link list. Now we started talking about numbers. Now we will start talking about whether k can also be k. k so it's not like that too"
+    },
+    {
+      "start_time": 530.88,
+      "end_time": 564.15,
+      "text": "होगा हमेशा। के कुछ भी हो सकता है। अच्छा। आपको पता चला कि K2 है। K2 में आप क्या किए? K2 में आप क्या किए? आपका आंसर क्या होगा? आपका आंसर क्या होगा? आपका आंसर ये होगा 5 6 1 2 3 4 ये आपका आंसर है। ये आपका आंसर है। अच्छा। अब देखते हैं कि ये आंसर कैसे बना। अब ये के पे कैसे डिपेंडेंट है? के पे कैसे डिपेंडेंट है? देखिए। इस लिंक लिस्ट में आप किए क्या? इस लिंक लिस्ट में आप किए क्या? अगर आप गौर से देखिए आप क्या किए आप लास्ट के दो नोड को एक तोड़ दिए लास्ट के",
+      "source": "caption",
+      "english_text": "Will always be. Anything can happen. Good. You found out that K2 is there. What did you do in K2? What did you do in K2? What will be your answer? What will be your answer? Your answer will be 5 6 1 2 3 4 This is your answer. This is your answer. Good. Now let us see how this answer was created. Now how dependent is it? How dependent is it on pay? See. What did you do in this link list? What did you do in this link list? If you look carefully what you did, you broke the last two nodes and one of the last ones."
+    },
+    {
+      "start_time": 564.16,
+      "end_time": 589.99,
+      "text": "दो नोड वाले पार्ट को तोड़ दिए और उसको शुरू में जोड़ दिए उसको शुरू में जोड़ दिए ओके ये किए हैं ये किए हैं ओके और आप क्या किए जो शुरू का चार नोट था शुरू का चार नोट था उसको उठा के सेकंड में कर दिए फर्स्ट पार्ट को सेकंड में कर दिए सेकंड पार्ट को फर्स्ट में कर दिए ये आपको कैसे पता चला कि हमको शुरू के चार को उधर लाना है और लास्ट के दो को फर्स्ट पे लाना है।",
+      "source": "caption",
+      "english_text": "Broke the part with two nodes and joined it at the beginning, joined it at the beginning, OK, this is done, this is done, OK, and what did you do, pick up the first four notes, put the first four notes in the second, put the first part in the second, put the second part in the first, how did you know that we have to bring the first four there and the last two have to be brought to the first."
+    },
+    {
+      "start_time": 590.0,
+      "end_time": 623.269,
+      "text": "के से के से पता चला के से पता चला। अगर हम इसमें सात नोट भी लेते। अगर हम इसमें सात नोट भी लेते तो देखिए क्या होता 1 2 3 4 5 6 7 और यहां पे k = 2 रहता। अगर = k = 2 रहता। हम टू ले रहे हैं क्योंकि टू समझना आसान है। तो आप अगर रोटेट करते आप इसको राइट-राइट रोटेट करते दो बार तो आपका क्या बनता आंसर? आपका आंसर ऐसा बनता 7 6 1 2 3 4 5 देखिए क्या हुआ? देखिए गौर से देखिए क्या हुआ? गौर से देखिए क्या हुआ?",
+      "source": "caption",
+      "english_text": "Came to know from K came to know from K came to know. Even if we took seven notes in it. If we had taken seven notes in this then see what would have happened 1 2 3 4 5 6 7 and here k = 2. If = k = 2. We are taking two because two is easier to understand. So if you rotate it right-to-right twice, what would be your answer? Your answer becomes like this 7 6 1 2 3 4 5 See what happened? Look carefully what happened? Look carefully what happened?"
+    },
+    {
+      "start_time": 623.279,
+      "end_time": 658.15,
+      "text": "लास्ट के दो नोड को उठा के आप शुरू में कर दिए और शुरू के पांच नोड को उठा के आप सेकंड में कर दिए तो क्या हो रहा है? हमको लास्ट के नोड्स के नोड्स इस पे करना है अपना काम। और शुरू के n - k नोड्स। ये आपका फर्स्ट पार्ट है जिसको आप सेकंड में भेजना चाहते हैं। तो एक तो बात पता चली अच्छा के का मतलब है कि लास्ट वाले के नोट्स पे आपको कुछ ना कुछ कारीगरी करनी है। चलिए अब आपका क्वेश्चन धीरे-धीरे क्लियर हो जाएगा। अब जो हम लोग देखे थे कि कौन सा कनेक्शन बनाना है कौन सा कनेक्शन नहीं बनाना है।",
+      "source": "caption",
+      "english_text": "What is happening if you lift the last two nodes and move them to the beginning and after lifting the first five nodes you move them to the beginning in a second? We have to do our work on the nodes of the last nodes. and initial n – k nodes. This is your first part which you want to send within seconds. So one thing I understood is that 'K' means that you have to do some work on the last one's notes. Now your question will gradually get cleared. Now what we saw was which connection should be made and which connection should not be made."
+    },
+    {
+      "start_time": 658.16,
+      "end_time": 692.389,
+      "text": "आइए देखते हैं कि आप कौन-कौन से कनेक्शन बनाते हैं। चलिए एक बड़ा सा लिंक लिस्ट बनाइए ताकि कोई किसी तरीके का कंफ्यूजन ना रहे। किसी तरीके का कंफ्यूजन ना रहे। हम नहीं चाहते हैं कि किसी भी तरीके का कोई भी डाउट रहे। ठीक है? आठ साइज का लिंक लिस्ट बना लिए हम लोग। ओके? ओके? k = 2 है। k = 2 है। आइए देखते हैं आपको क्या करना है? आपको सबसे पहले क्या करना है? शुरू के दो लास्ट के दो नोड को उठा के शुरू में डालना है। मतलब कि से और 8 और फिर शुरू के छह नोड को बाद में करना है।",
+      "source": "caption",
+      "english_text": "Let's see what connections you make. Let us make a big link list so that there is no confusion. There should not be any kind of confusion. We do not want there to be any doubt of any kind. Ok? We have created a link list of eight sizes. Ok? Ok? k = 2. k = 2. Let's see what you have to do? What's the first thing you need to do? The last two nodes of the beginning have to be picked up and inserted into the beginning. Meaning that from and 8 and then the first six nodes have to be done later."
+    },
+    {
+      "start_time": 692.399,
+      "end_time": 720.87,
+      "text": "ओके। ठीक है? ठीक है? आइए देखते हैं कि हम लोग को क्या-क्या चाहिए और क्या-क्या बनाना पड़ेगा। तो सबसे पहला चीज सबसे पहला चीज जो कि डिफरेंट है आपके इनपुट और आपके आंसर में वो क्या है? एट 8 डॉट नेक्स्ट = 1 ये आपको करने की जरूरत है क्योंकि ये वाला एरो आपके आंसर में है। वो वाला एरो आपके इनपुट में नहीं है। तो एक बात तो ये है। और और क्या करना है? और क्या करना है?",
+      "source": "caption",
+      "english_text": "OK. Ok? Ok? Let us see what we need and what we will have to make. So first of all, what is the first thing that is different between your input and your answer? At 8 dot next = 1 This is what you need to do because this arrow is in your answer. That arrow is not in your input. So this is one thing. And what else is there to do? What else to do?"
+    },
+    {
+      "start_time": 720.88,
+      "end_time": 750.79,
+      "text": "आपको 6 डॉट नेक्स्ट इक्वल टू नल करना है। क्यों? सिक्स के पास इनपुट में कुछ ना कुछ था लेकिन सिक्स के पास आंसर में कुछ नहीं है। तो आपको सिक्स डॉट नेक्स्ट इज़ इक्वल टू नल करना है। ओके? आपका नया हेड कौन सा होना चाहिए? आपका नया हेड क्या होना चाहिए? आपका नया हेड होना चाहिए सेवन। सेवन। सेवन मतलब क्या है? सेवन जो लास्ट का दो भाग आप हटाए थे। लास्ट का दो भाग आप हटाए थे उसका पहला नो। तो सेवन यहां कौन सा है?",
+      "source": "caption",
+      "english_text": "You have to tap 6 dot next equal to null. Why? Six had something in the input but Six had nothing in the answer. So you have to do six dot next is equal to null. Ok? What should be your new head? What should be your new head? Your new head should be seven. Seven. What does intake mean? You removed the last two parts of Seven. You removed the last two parts and the first no. So which is the intake here?"
+    },
+    {
+      "start_time": 750.8,
+      "end_time": 785.35,
+      "text": "सेवंथ नोड सेवंथ नोड आपका हेड होना चाहिए। सेवंथ नोड आपका हेड होना चाहिए। तो देखिए गौर से देखिए हुआ क्या? आपके नंबर ऑफ नोड्स कितने थे? आठ। आपके k = 2 था। आइए इसको n और k में लिखें। अभी तो हम लोग ले देख के बना दिए कि अच्छा आठवां नोड का ये करना है। छठा नोड का ऐसा करना है। सातवां नोड आपका ये करना है। लेकिन अगर हम देख के नहीं बनाते हैं तो आइए उसको कोशिश करते हैं किसी फार्मूला में लिखने की। देखने की कि क्या होता है। हर बार क्या होता है? आप उसको देखेंगे और एग्जांपल्स लेके एन अलग ले लेंगे के अलग ले लेंगे और देखेंगे कि ये मैच करता है कि नहीं। तो देखिए आपका",
+      "source": "caption",
+      "english_text": "Seventh Node The seventh node should be your head. The seventh node should be your head. So look carefully what happened? What was your number of nodes? Eight. Your k = 2. Let's write this in n and k. Right now we have seen and decided that this is what the eighth node has to do. The sixth node has to do this. The seventh node is yours to do this. But if we cannot make it after seeing, then let us try to write it in some formula. Let's see what happens. What happens every time? You will look at it and take examples and take different ones and see whether it matches or not. तो देखिए आपका"
+    },
+    {
+      "start_time": 785.36,
+      "end_time": 817.99,
+      "text": "नंबर ऑफ नोट्स है एट। आपका k है टू। सबसे पहले आप बोलते हैं कि 8 डॉट नेक्स्ट इक्वल टू वन। 8 डॉट नेक्स्ट इक्वल टू नल सॉरी वन। 8 डॉट नेक्स्ट इक्वल टू वन। तो देखिए आठ क्या है? आठ इसका लास्ट नोड है। आठ इसका लास्ट नोड है। और वन क्या है? वन इसका फर्स्ट नोड है। वन इसका फर्स्ट नोड है। तो क्या हम ये बोल सकते हैं कि पहला चीज जो आपको करना है वो ये करना है कि लास्ट डॉट नेक्स्ट इज़ इक्वल टू हेड हेड लास्ट डॉट नेक्स्ट इज़ इक्वल टू हेड।",
+      "source": "caption",
+      "english_text": "नंबर ऑफ नोट्स है एट। आपका k है टू। सबसे पहले आप बोलते हैं कि 8 डॉट नेक्स्ट इक्वल टू वन। 8 डॉट नेक्स्ट इक्वल टू नल सॉरी वन। 8 डॉट नेक्स्ट इक्वल टू वन। तो देखिए आठ क्या है? आठ इसका लास्ट नोड है। आठ इसका लास्ट नोड है। और वन क्या है? वन इसका फर्स्ट नोड है। वन इसका फर्स्ट नोड है। तो क्या हम ये बोल सकते हैं कि पहला चीज जो आपको करना है वो ये करना है कि लास्ट डॉट नेक्स्ट इज़ इक्वल टू हेड हेड लास्ट डॉट नेक्स्ट इज़ इक्वल टू हेड।"
+    },
+    {
+      "start_time": 818.0,
+      "end_time": 850.55,
+      "text": "ध्यान से देखिए। जब छह नोड था जब सॉरी सात नड था तो क्या था? जब सॉरी छह नोड था तो क्या था? सिक्स डॉट नेक्स्ट इज़ इक्वल टू वन। यहां भी देखिए नंबर ऑफ नोड छह था। मतलब लास्ट नोड जो कि छह होगा। डॉट नेक्स्ट इज़ इक्वल टू वन डॉट नेक्स्ट इज़ इक्वल टू वन हेड। तो एक बात तो समझ में आई कि लास्ट डॉट नेक्स्ट हमेशा हेड पे हो रहा है। पहली बात हो गई पहला कनेक्शन जुड़ गया। और देखिए 6 डॉट नेक्स्ट इज़ इक्वल टू नल। अब सिक्स यहां पे छठा नोड है। ये कैसे पता चला? 6 डॉट नेक्स्ट इक्वल",
+      "source": "caption",
+      "english_text": "Look carefully. When there was six nodes, what was there when sorry was seven nodes? What was sorry when it was six nodes? Six dot next is equal to one. See here also the number of nodes was six. Meaning the last node which will be six. Dot next is equal to one dot next is equal to one head. So one thing I understood is that last dot next is always happening on the head. The first thing is done, the first connection is made. And see 6 dot next is equal to null. Now six is ​​the sixth node here. How did you know this? 6 dot next equal"
+    },
+    {
+      "start_time": 850.56,
+      "end_time": 885.189,
+      "text": "टू नल। ये वाला 6 डॉट नेक्स्ट इज़ इक्वल टू नल क्यों हुआ? ये सिक्स क्या था? ये सिक्स देखिए इस पार्ट का लास्ट नोड था। ये पार्ट में कितने नोट्स थे? n - k नोड्स। इसका लास्ट नोड इसका लास्ट नोड। मतलब इसका कौन सा नंबर वाला नोड होगा ये? n - k नोड डॉट नेक्स्ट इज़ इक्वल टू नल। 8 - 2 सिक्स्थ नोड नेक्स्ट इक्वल टू नल। आपका ये काम भी हो गया। तीसरा काम क्या बचा? सेवंथ नोड को हेड बनाना। सेवंथ कैसे आया देखिए।",
+      "source": "caption",
+      "english_text": "To tap. Why is this 6 dot next is equal to null? What was this six? See, this six was the last node of this part. How many notes were there in this part? n - k nodes. Its last node its last node. Meaning, which node number will this be? n - k node dot next is equal to null. 8 - 2 Sixth node next equal to null. This work of yours is also done. What is left for the third task? Making the seventh node the head. See how seventh came."
+    },
+    {
+      "start_time": 885.199,
+      "end_time": 919.75,
+      "text": "जो भी नोड इसका लास्ट अब हेड कौन बनेगा? लास्ट के नोड्स का पहला वाला, लास्ट के नोट्स का पहला वाला। तो, क्या हम इसको ऐसा बोल सकते हैं क्या? n - k + 1 नोड। आपका क्या होगा? आपका हेड होगा। आपका हेड होगा। तो, मेरे हिसाब से तीन फॉर्मूला ऐसा होता है। आइए, इसको टेस्ट और कर लेते हैं और कोई एग्जांपल लेके देख लेते हैं कि ये चलता है कि नहीं चलता है। आइए, एक सेवन का लिंक लिस्ट बनाइए। 1 2 3 4 5 6 7 ठीक है?",
+      "source": "caption",
+      "english_text": "Whichever node is the last, now who will become its head? The first one of the last nodes, the first one of the last notes. So, can we call it like this? n – k + 1 nodes. What will happen to you? Will be your head. Will be your head. So, according to me there are three formulas. Come, let's test it further and take an example to see whether it works or not. Let's make a link list of seven. 1 2 3 4 5 6 7 ok?"
+    },
+    {
+      "start_time": 919.76,
+      "end_time": 953.67,
+      "text": "ये आपका इनपुट लिंक लिस्ट है। हम बस देख रहे हैं कि हम जो सोचे हैं जो हम फॉर्मूला सोचे हैं वो सही है कि नहीं और यही तरीका है। किसी को याद नहीं है। ये सब हमको याद नहीं है कि ऐसा करना है वैसा करना है नहीं है। आपको सोच लीजिए ना कॉपी पे बना के सोच लीजिए कि एरो ऐसा है। एरो ऐसा बनाना है तो क्या बनाएंगे उसके लिए? आइए सोचते हैं। ओके ये है। आपका नंबर ऑफ नोट्स है सेवन। मान लीजिए k = 3 है। चलिए टू नहीं लेंगे थ्री ले लिए। थ्री ले लिए रैंडम हम ले रहे हैं। ये भी पहले से प्लानिंग नहीं था। आइए। सबसे पहले हम बोलते हैं कि लास्ट का नेक्स्ट को हेड कर दो। तो लास्ट नोड कौन सा है इसका? सेवंथ नोड सेवन वाला। ये बोलता है कि उसके नेक्स्ट को क्या कर दो?",
+      "source": "caption",
+      "english_text": "This is your input link list. We are just seeing whether what we have thought or the formula we have thought is correct or not and this is the way. Nobody remembers. We don't remember all this that we have to do this, we have to do that, we don't have to do that. Just think about it, draw it on the copy and imagine that the arrow is like this. If you want to make Arrow like this then what will you make for it? Let's think. Ok this is it. Your number of notes is seven. Let k = 3. Let's not take two, let's take three. We are taking three at random. This too was not planned in advance. Come. First of all we say that the last one should head the next one. So which is its last node? Seventh node with seven. It says what to do with his next one?"
+    },
+    {
+      "start_time": 953.68,
+      "end_time": 983.749,
+      "text": "हेड कर दो। इसके नेक्स्ट को हेड बना देते हैं। हम लोग देखते हैं कि हमको आंसर मिलता है कि नहीं मिलता है। ठीक है? काम हो गया। उसके बाद ये बोलता है n - केथ नोड डॉट नेक्स्ट इज़ इक्वल टू नल कर दो। n - केथ नोड का नेक्स्ट को नल कर दो। n - केथ नोड क्या होगा? 7 - 3 फोर्थ नोड बोलता है फोर्थ नोड के नेक्स्ट को क्या कर दो नल नल कर दो नल कर दिए खत्म हो गया उसके बाद ये क्या बोलता है n - k + 1 नोड मतलब n - k +",
+      "source": "caption",
+      "english_text": "Give it head. Let's make its next head. We will see whether we get the answer or not. Ok? The work is over. After that it says n - keth node dot next is equal to null. n - Nullify the next node of kth node. n - What will be the kth node? 7 - 3 Fourth node says what to do next to the fourth node, two taps, two taps, two taps, it is finished, what does it say after that n - k + 1 node means n - k +"
+    },
+    {
+      "start_time": 983.759,
+      "end_time": 1015.43,
+      "text": "1 7 - 3 + 1 मतलब कि फिफ्थ नोड फिफ्थ नोड के नेक्स्ट को फिफ्थ नोड को अपना हेड बना दो फिफ्थ नोड को अपना हेड बना दो नया तो फिफ्थ नोड क्या है ये आपका हेड बन गया ये आपका हेड बन गया और इसको रिटर्न कर दो देखते हैं कि होता है कि नहीं। देखिए लिंक लिस्ट कैसा दिखेगा। सबसे पहले आता है फाइव फिर सिक्स फिर से। सेवन के बाद डायरेक्टली वन। सेवन के बाद डायरेक्टली वन फिर टू फिर थ्री फिर फोर। क्या ये नहीं हो गया? क्या ये रोटेट बाय थ्री प्लेसेस नहीं हो गया?",
+      "source": "caption",
+      "english_text": "1 7 - 3 + 1 means that the fifth node is next to the fifth node, make the fifth node your head, make the fifth node your head, new, what is the fifth node, this has become your head, this has become your head and return it, let's see whether it happens or not. See how the link list will look. First comes five, then six again. Directly one after intake. After intake, directly one then two then three then four. Is this not done? Isn't it rotated by three places?"
+    },
+    {
+      "start_time": 1015.44,
+      "end_time": 1047.909,
+      "text": "लास्ट के तीन नोड पहले आ गए। बा शुरू के चार नोड बाद में आ गए तो हो गया ना? रोटेट बाय थ्री प्लेसेस। रोटेट बाय थ्री प्लेसेस। यस? यस। रोटेट बाय थ्री प्लेसेस। तो मतलब सब सही है। मतलब कि आपको क्या करना है? आपको तीन स्टेप करने हैं। सबसे पहले तो आपको करना है लास्ट डॉट नेक्स्ट इज़ इक्वल टू हेड। ये पहला स्टेप आपको करना है। उसके बाद आपको ये n - kथ नोड चाहिए। n - kथ नोड चाहिए ताकि आप इसके नेक्स्ट को नल कर सकें। आप इसके नेक्स्ट को नल कर",
+      "source": "caption",
+      "english_text": "The last three nodes come first. If the first four nodes come later then it is done, right? Rotate by three places. Rotate by three places. Yes? Yes. Rotate by three places. So that means everything is correct. Meaning what do you have to do? You have to do three steps. First of all you have to do last dot next is equal to head. You have to do this first step. After that you need these n - kth nodes. n - Want the kth node so you can null its next. You tap next to it"
+    },
+    {
+      "start_time": 1047.919,
+      "end_time": 1078.549,
+      "text": "सकें। और आपको n - k + 1थ नोड भी चाहिए। क्यों? इसको हेड बनाना है। इसको हेड बनाना है इसीलिए, इसको हेड बनाना है इसीलिए। और ये सब करने के लिए आपको क्या चाहिए? आपको n चाहिए कि नंबर ऑफ नोट्स कितने हैं भाई? नंबर ऑफ नोट्स पता चलेगा। तभी तो आप n - k निकालेंगे फिर n - k + 1 निकालेंगे। तो नंबर ऑफ नोड्स भी चाहिए। आपको लास्ट भी चाहिए। लास्ट मतलब लास्ट नोड। लास्ट मतलब कौन सा नोड? लास्ट नोड। लास्ट नोड, लास्ट नोड। तो ये सब आपको निकालना पड़ेगा। एक बारी आप ये सब निकाल लिए तो आप तीन स्टेप प्रोसेस से अपना आंसर आप कर सकते हैं।",
+      "source": "caption",
+      "english_text": "Can. And you also need n - k + 1th nodes. Why? This has to be made the head. That's why he has to be made the head, that's why he has to be made the head. And what do you need to do all this? What is the number of notes you want, brother? The number of notes will be known. Only then you will find n - k and then n - k + 1. So number of nodes is also required. You also want the last one. Last means last node. Last means which node? Last node. Last node, last node. So you will have to remove all this. Once you have figured out all this, you can solve your answer through a three step process."
+    },
+    {
+      "start_time": 1078.559,
+      "end_time": 1107.51,
+      "text": "लेकिन इसमें एक और अभी डाउट है। डाउट है या कह सकते हैं इसमें एक ट्रिक है। एक बात बताइए अगर मान लीजिए मेरे पास तीन नोड रहता। मेरे पास तीन नोड रहता। अच्छा तो आप लोग अस्यूम कर रहे हैं कि मेरा k n से कम होगा। ऐसा नहीं है आपका k कुछ भी हो सकता है। मान लीजिए आपका k बोलता कि k = 4 है। अब आप क्या करते? अब k = 4 हो गया है। तो पहले हम लोग क्या बोले थे कि अच्छा कोई भी लिंक लिस्ट रहेगा तो शुरू में n - k पार्ट्स है और लास्ट में k पार्ट्स है।",
+      "source": "caption",
+      "english_text": "But there is still another doubt in this. There is doubt or we can say there is a trick in it. Tell me one thing, if suppose I had three nodes. I would have three nodes. Well, you guys are assuming that my k will be less than n. It is not that your k can be anything. Suppose your k says that k = 4. What would you do now? Now k = 4. So what we said earlier was that if any link list is there then it has n - k parts in the beginning and k parts in the last."
+    },
+    {
+      "start_time": 1107.52,
+      "end_time": 1134.47,
+      "text": "इसमें ऐसा-सा करना है। लेकिन अब अगर आप देखेंगे आपका n = 3 है और k = 4 है। तो शुरू का n - k पार्ट्स क्या बनेगा? 3 - 4 - 1 पार्ट। - 1 पार्ट तो सेंस बनाता नहीं है। तो इसमें तो वो फार्मूला बेकार हो जाएगा। आइए देखते हैं कि इसमें क्या करेंगे? आइए इसको मैनुअली सॉल्व कर लेते हैं। k = 4 है ना? खुद से आपको रोटेट करना तो आता है ना। हर हर नोड को राइट में घिसका दीजिए। लास्ट वाले नोट को फर्स्ट पे लिख दीजिए। आइए एक बार करते हैं। एक बार रोटेट करेंगे तो ऐसा दिखेगा।",
+      "source": "caption",
+      "english_text": "Something like this has to be done in this. But now if you see your n = 3 and k = 4. So what will be the initial n - k parts? 3 - 4 - 1 part. - Part 1 doesn't make sense. So in this case that formula will become useless. Let's see what we will do in this? Let's solve this manually. k = 4 right? You know how to rotate yourself, don't you? Slide every node to the right. Write the last note on the first note. Let's do it once. Once you rotate it, it will look like this."
+    },
+    {
+      "start_time": 1134.48,
+      "end_time": 1169.35,
+      "text": "ये एक बार हो गया। ठीक है? चार बार करना है ना? कर देते हैं। एक और बार करिए तो ये बन जाएगा थ्री। ये आ जाएगा वन। ये आ जाएगा टू। Okay? दो बार हो गया। दो बार और करिए। टू यहां ले आइए। थ्री यहां ले आइए। वन यहां ले आइए। कैसे किए? ऐसे। और वन उधर। ठीक है? तीन बार हो गया। एक और बार करिए। वन टू थ्री। ये कैसे हुआ? यहां। यहां थ्री उधर। हां। हां तो ये आपका आंसर आता है। ये आपका आंसर आता है कितनी बार? चार बार रोटेट करने पे। चार बार रोटेट करने पे। तो अब चार बार कैसे करें? देखिए गौर से सोचिए। सोचिए थोड़ा दिमाग खोलिए। ये आपका",
+      "source": "caption",
+      "english_text": "This happened once. Ok? Have to do it four times, right? Let's do it. If you do it one more time it will become three. This will come forest. He will come here. Okay? It happened twice. Do it twice more. To bring it here. Get three here. Bring the forest here. How did you do it? This way. And the forest there. Ok? It happened three times. Do it one more time. One two three. How did this happen? Here. Three here and there. Yes. Yes then this is your answer. How many times does this answer come to you? After rotating four times. After rotating four times. So now how to do it four times? Look, think carefully. Think, open your mind a little. this is yours"
+    },
+    {
+      "start_time": 1169.36,
+      "end_time": 1194.549,
+      "text": "ओरिजिनल था। ये आपका ऑरिजिनल था। ये वाला एक बार रोटेट करने पे था। Okay? ये वाला ये वाला दो बार रोटेट करने पे था। और ये वाला देखिए 1 2 3 ये वापस अपना ओरिजिनल बन गया। वापस अपना ओरिजिनल बन गया। तीन बार रोटेट किए तो वापस अपना ओरिजिनल बन गया। ये वापस ओरिजिनल बन गया।",
+      "source": "caption",
+      "english_text": "Was original. This was your original. This one was about to rotate once. Okay? This one was about to be rotated twice. And look at this one 1 2 3 It went back to its original. Became back to its original form. When it was rotated three times, it returned to its original form. It went back to original."
+    },
+    {
+      "start_time": 1194.559,
+      "end_time": 1227.43,
+      "text": "और इसके बाद इसके बाद आया 3 1 2 देखिए 3 1 2 3 1 2 ये वापस एक बार जैसा बन गया। ये वापस एक बार जैसा बन गया। मतलब कि मतलब कि अगर आपके पास लिंक लिस्ट है। अगर आपके पास लिंक लिस्ट है 1 2 3 ये है k = 0 ये तो ओरिजिनल है ये तो ओरिजिनल है। जब आप इसको k = 1 पे किए तो ये बन गया 3 1 2 अच्छा है। k = 2 पे किए तो क्या बन गया? 3 1 2k",
+      "source": "caption",
+      "english_text": "And then after this came 3 1 2 See 3 1 2 3 1 2 It went back to the way it once was. It became like it once was. Meaning that means if you have a link list. If you have a linked list 1 2 3 this is k = 0 this is original this is original. When you do it at k = 1 it becomes 3 1 2 which is good. What happens if we do k = 2? 3 1 2k"
+    },
+    {
+      "start_time": 1227.44,
+      "end_time": 1255.909,
+      "text": "लेकिन जैसे ही आप k = 3 पे पहुंचे ये वापस ये लिस्ट ओरिजिनल बन गया। 1 2 3 बन गया। वापस रिसेट हो गया। ये रिसेट हो गया। और जब आप k = 4 करेंगे तो क्या बनेगा? वापस से 3 1 2 वापस से 3 1 2 मतलब कि k = 4 टाइम्स रोटेट करना इज़ सेम एज k = 1 टाइम्स रोटेट करना। k क्यों? क्योंकि k = 3 पे तो ये रिसेट हो गया था। ये रिसेट हो गया था।",
+      "source": "caption",
+      "english_text": "But as soon as you reach k = 3, this list becomes the original. 1 2 became 3. Got reset again. It has been reset. And what will happen when you do k = 4? Back to 3 1 2 Back to 3 1 2 Meaning that rotating k = 4 times is the same as rotating k = 1 times. k why? Because it was reset at k = 3. It was reset."
+    },
+    {
+      "start_time": 1255.919,
+      "end_time": 1286.07,
+      "text": "इससे आपको क्या समझ में आता है कि k = 0 टाइम्स मतलब जीरो बार रोटेट करना और k = 3 टाइम्स रोटेट करना सेम बात है। सेम बात है और k = 1 टाइम रोटेट करना और k = 4 टाइम रोटेट करना भी सेम बात है। k = 2 टाइम रोटेट करना और k = 5 टाइम रोटेट करना भी सेम बात है। मतलब कि अगर आपके पास कोई भी k हो तो आप k = k मॉड्यूलस n कर सकते हैं।",
+      "source": "caption",
+      "english_text": "What do you understand from this that k = 0 times means rotating zero times and rotating k = 3 times is the same thing. It is the same thing and rotating k = 1 time and rotating k = 4 time is also the same thing. Rotating k = 2 times and rotating k = 5 times are the same thing. Meaning if you have any k you can do k = k modulus n."
+    },
+    {
+      "start_time": 1286.08,
+      "end_time": 1314.47,
+      "text": "इससे क्या होगा? मान लीजिए आपके पास कभी k = 4 और n = 3 मिलता है। आप k को क्या बना दीजिए? 4 मॉड्यूलस 3 = 1। तो आप k = 1 टाइम रोटेट कीजिए क्योंकि वो थ्री से कम आएगा। ये आपको करना आता है। आपको फोर टाइम रोटेट करना नहीं आता है। क्योंकि हम लोग का पूरा लॉजिक किस पे बेस्ड है? n - k और k पे। तो n अगर k n से बड़ा हो जाएगा। तो कैसे करेंगे? तो ये ट्रिक इस्तेमाल कर सकते हैं हम लोग कि k = 4 टाइम्स रोटेट करना इज़ सेम एज़ k = 1 टाइम रोटेट करना।",
+      "source": "caption",
+      "english_text": "What will happen from this? Suppose you ever have k = 4 and n = 3. What do you make of k? 4 modulus 3 = 1. So you rotate k = 1 time because it will come less than three. You know how to do this. You don't know how to rotate four times. Because on what is our entire logic based? On n - k and k. So n will be greater than n if k. So how to do? So we can use this trick that rotating k = 4 times is the same as rotating k = 1 time."
+    },
+    {
+      "start_time": 1314.48,
+      "end_time": 1349.029,
+      "text": "क्यों? क्योंकि जब आप k = k मॉड्यूलस n करते हैं तो वो छोटा हो जाता है। और हम लोग देख चुके हैं कि देखिए k = 0 टाइम्स इज़ सेम एज़ K = 3, k = 4 इज़ सेम एज़ K = 1 एंड k = 5 इज़ सेम एज़ K = 2। तो ये बात आप कर सकते हैं। तो जैसे ही हम लोग n निकालेंगे तो हम लोग क्या कर देंगे? k = k मॉड्यूलस n। किसको हैंडल करने के लिए? जब k n से बड़ा हो, kn से बड़ा हो जो कि हो सकता है। बिल्कुल हो सकता है। है ना? चलिए तो आपको ये चीज़ चाहिए। आइए अब देखते हैं कि अब ये चीजें निकलेंगी कैसे? अब ये चीजें निकलेंगी कैसे? तो हम एक लिंक लिस्ट बना लेते हैं। हम एक लिंक लिस्ट बना लेते",
+      "source": "caption",
+      "english_text": "Why? Because when you do k = k modulus n it becomes smaller. And we have seen that k = 0 times is the same as K = 3, k = 4 is the same as K = 1 and k = 5 is the same as K = 2. So you can do this. So what will we do as soon as we find out n? k = k modulus n. To handle whom? When k is greater than n, greater than kn which can happen. Absolutely possible. Isn't it? Come on, you want this thing. Let us now see how these things will turn out? Now how will these things come out? So we create a link list. we create a link list"
+    },
+    {
+      "start_time": 1349.039,
+      "end_time": 1381.59,
+      "text": "हैं। अब रियल वाला लिंक लिस्ट बनाएंगे। सिर्फ वन टू वाला नहीं। तो पांच साइज का लिंक लिस्ट बना लेते हैं। ये हो गया 100 200 300 400 और 500 तो ये हो गया 1 2 3 4 5 आपको ऐसा लिंक लिस्ट दिया हुआ है। तो इसमें एड्रेस भी हम लिख देते हैं। ठीक है? आइए देखते हैं। अब बाकी अब सारी चीजें कैलकुलेशन है। अब सारी चीजें क्या है? सिंपल कैलकुलेशन है कि t को कहां से स्टार्ट करना है? t को कहां तक रोकना है? बस सारा कांसेप्ट हो चुका है।",
+      "source": "caption",
+      "english_text": "Are. Now we will create the real link list. Not just the one-to-one. So let's make a link list of five sizes. This is 100 200 300 400 and 500 so this is 1 2 3 4 5 You have been given such a link list. So we also write the address in it. Ok? let's watch. Now all the remaining things are calculations. What is all this now? Simple calculation is where to start t? How far should t be stopped? The entire concept is done."
+    },
+    {
+      "start_time": 1381.6,
+      "end_time": 1409.11,
+      "text": "तो वही हम लोग करने की कोशिश करेंगे। ओके? हम लोग क्या देखे थे? कौन सी तीन चीजें चाहिए थी हम लोग को? कहां गया? बोला गया क्या? हां। ये तीन चीजें चाहिए थी। सबसे पहले आपको क्या चाहिए था? n और सबसे [हंसी] पहले आपको चाहिए था लास्ट। लास्ट नोट भी चाहिए, n भी चाहिए। तो, इसको निकालने का एक बड़ा अच्छा तरीका है। आप दोनों एक ही बार में निकाल सकते हैं। देखिए, आप कर सकते हैं कि पहले एक बार ट्रेवर्स करके n निकाल दीजिए। फिर एक बार ट्रेवर्स करके लास्ट नोड निकाल लीजिए। लेकिन दोनों को करने का एक बड़ा अच्छा तरीका है। Okay?",
+      "source": "caption",
+      "english_text": "So that's what we will try to do. Ok? What did we see? What three things did we need? where did he go? What was said? Yes. These three things were needed. What did you want in the first place? n And most of all [laughter] first you wanted last. Last note is also needed, n is also needed. So, there's a great way to figure this out. You can remove both at once. See, what you can do is first traverse it once and remove n. Then traverse once and remove the last node. But there's a much better way to do both. Okay?"
+    },
+    {
+      "start_time": 1409.12,
+      "end_time": 1441.43,
+      "text": "सबसे पहले तो हम लोग देख लेंगे कि इफ हेड इज़ इक्वल टू नल देन रिटर्न हेड। मतलब उसमें क्या है? मतलब उसमें क्या करना है? उसमें तो कुछ करना नहीं है। ओके? इफ हेड इज़ इक्वल टू है नल देन रिटर्न नल। तो हेड में एक तो है। हेड में एक तो है। मान लीजिए कि हेड में एक नोड तो है लिंक लिस्ट में। तो हम लोग क्या करेंगे? हम लोग एक n = वन ले लेंगे। एक नोड तो है ना भैया, हेड नल नहीं है मतलब एक नोड तो है कम से कम। और शुरुआत के लिए लास्ट इज इक्वल टू हेड ले लेंगे। कि अभी शुरुआत के लिए लास्ट कौन सा है? लास्ट हमारा पहला नोड है। मान के चल रहे हैं एक नोड है। तो जब एक नोड है तो हमारा लास्ट हेड है। उसके बाद अगर हम ये",
+      "source": "caption",
+      "english_text": "First of all we will see that if head is equal to null then return head. I mean, what's in it? Meaning, what is to be done in it? There is nothing to be done in that. Ok? If head is equal to null then return null. So there is one in the head. There is one in the head. Suppose there is a node in the head link list. So what will we do? We will take n = one. There is one node, brother, there is no head tap, which means there is at least one node. And for a start we will take Last is Equal to Head. Which is the last one to start with? Last is our first node. The value of running is a node. So when there is a node then we have the last head. After that if we"
+    },
+    {
+      "start_time": 1441.44,
+      "end_time": 1468.39,
+      "text": "कर दें वाइल वाइल लास्ट नॉट इक्वल टू नल है। देखिए आपको लास्ट नोड चाहिए। मतलब जब आप ट्रेवर्स करते थे ना तो आप ट्रेवर्स में क्या करते थे? वाइल t नॉट इक्वल टू नल। उसमें आप चाहते थे कि टी नल हो जाए तब हम रुकेंगे। लेकिन यहां जैसे ही आपका लास्ट 500 हो जाए तो आपको रुकना है। और लास्ट नोड की क्या प्रॉपर्टी होती है? लास्ट नोड की क्या प्रॉपर्टी होती है? लास्ट डॉट नेक्स्ट हमेशा नल होता है। हमेशा नल होता है लिंक लिस्ट में। तभी तो वो लास्ट नोड है ना।",
+      "source": "caption",
+      "english_text": "Do while while last is not equal to null. Look, you need the last node. Meaning, when you traversed, what did you do while traversing? While t is not equal to null. In that you wanted that we will stop only when the tee becomes tap. But here as soon as your last 500 is reached then you have to stop. And what is the property of the last node? What is the property of last node? Last dot next is always NULL. There is always a tap in the link list. That's why it is the last node."
+    },
+    {
+      "start_time": 1468.4,
+      "end_time": 1502.95,
+      "text": "अगर वो नल नहीं होगा तो लास्ट क्यों है? तो सेकंड लास्ट होता। लास्ट नोड की क्या प्रॉपर्टी होती है? वो नल होता है। हम लोग लिखेंगे वाइल लास्ट डॉट नेक्स्ट नॉट इक्वल टू नल। मतलब कि जब तक ये नॉट नॉट नल है तब तक ये लास्ट नोड है। और क्या करेंगे? n + और लास्ट इज़ इक्वल टू लास्ट डॉट नेक्स्ट। ये चलेगा कि नहीं चलेगा? सबसे सिंपल है। कॉपी में चला लो भाई। कॉपी में चला लो। ये किसी को याद नहीं है। ये दुनिया में किसी को ये याद नहीं है। ये हर बार आदमी सोचता है तो कॉपी में हम भी अभी सोचे तो कॉपी में लिख के ही सोचे हैं। हमको भी याद नहीं है। हो सकता है गलत हो। आइए चला के देख",
+      "source": "caption",
+      "english_text": "If it is not the tap then why is it the last one? So the second would have been last. What is the property of last node? That is a tap. We will write while last dot next is not equal to null. Meaning that as long as it is NOT NOT NULL, it is the last node. What else will you do? n + and last is equal to last dot next. Will this work or not? It is the simplest. Put it in your copy, brother. Keep it in your copy. Nobody remembers this. No one in this world remembers this. Every time a person thinks, we also think in the copy, then we think only after writing it in the copy. We don't even remember. May be wrong. let's go and see"
+    },
+    {
+      "start_time": 1502.96,
+      "end_time": 1529.43,
+      "text": "लें। शुरुआत में n = 1, लास्ट इक्वल टू n। मतलब कि n = 1 एंड लास्ट इज़ इक्वल टू 100। आइए चलाइए। क्या लास्ट का नेक्स्ट नल है? क्या 100 का नेक्स्ट नल है? नहीं, नहीं, नहीं। अंदर घुसेगा। n को क्या कर देगा? टू। लास्ट को क्या कर देगा? लास्ट का नेक्स्ट, 200, वेरी गुड। फिर से चेक होगा। क्या लास्ट का नेक्स्टल है? क्या 200 का नेक्शनल है? नहीं, नहीं है। n को क्या कर देगा? बढ़ा देगा। 200 को क्या कर देगा?",
+      "source": "caption",
+      "english_text": "Take it. Initially n = 1, Last equal to n. Meaning that n = 1 and last is equal to 100. Let's play. Is Next Null of Last? Is there a next tap of 100? No, no, no. Will enter inside. What will it do to n? To. What will do to the last one? Next to last, 200, very good. Will check again. Is Last Ka Nextel? Is 200 national? No, it is not. What will it do to n? Will increase. What will it do to 200?"
+    },
+    {
+      "start_time": 1529.44,
+      "end_time": 1564.39,
+      "text": "300। यस। फिर से चेक करो। क्या लास्ट कनेक्शनल है? क्या 300 कनेक्शनल है? नहीं। n को बढ़ा दो, लास्ट को बढ़ा दो। फिर से चेक करो। क्या लास्ट का नेक्स्ट नल है? क्या 400 का नेक्स्ट नल है क्या? नहीं। 400 का नेक्स्ट नल नहीं है। 500 है। n को बढ़ा दो। इसको बढ़ा दो। अब क्या लास्ट का नेक्स्ट नल है? यस यस यस। 500 का नेक्स्ट नल है। रुक जाओ। वाइल लूप टूट गया। देखिए आपको क्या मिल गया? n = 5 एंड लास्ट इज़ इक्वल टू 500। मिल गया। दोनों चीज़ एक ही बार में मिल गया। दोनों चीज़ एक ही बार में मिल गया। आपको अगर मन है तो आप अलग-अलग भी कर",
+      "source": "caption",
+      "english_text": "300. Yes. Check again. Is last connectional? Is 300 connectional? No. Increase n, increase last. Check again. Is Next Null of Last? Is there a next tap of 400? No. There is no next tap of 400. Is 500. Increase n. Increase it. Now is the next tap of the last? Yes yes yes. Next tap is 500. Stop. The while loop broke. See what you got? n = 5 and last is equal to 500. Got it. Got both things at once. Got both things at once. If you want, you can do it differently."
+    },
+    {
+      "start_time": 1564.4,
+      "end_time": 1595.75,
+      "text": "सकते हैं। लेकिन दोनों चीज़ एक में मिल गया तो एक में कर दिए। चलिए। लास्ट मिल गया, n मिल गया। आपको क्या मिल गया? लास्ट मिल गया और n मिल गया। अब आपको क्या चाहिए? अब आपको क्या चाहिए? अब आपको क्या चाहिए? n- kथ नोड, n और n- k + 1थ नोड। यस, ये दोनों चाहिए। ये दोनों चाहिए। ये दोनों कैसे मिलेगा? देखिए। n - kथ मतलब, n - k मतलब क्या चाहिए? आपको पता चल गया कि n = 5 है। 5 - 2, k = 2 है। k = 2 है। तो",
+      "source": "caption",
+      "english_text": "Can. But if both the things are combined into one then they are made into one. Let go. Got the last, got the n. What did you get? Got last and got n. What do you want now? What do you want now? What do you want now? n- kth node, n and n- k + 1th node. Yes, we need both of these. Need both of these. How to get both of these? See. n - kth meaning, what should n - k mean? You learned that n = 5. 5 – 2, k = 2. k = 2. So"
+    },
+    {
+      "start_time": 1595.76,
+      "end_time": 1629.11,
+      "text": "आपको चाहिए थर्ड नोड और n - k + 1 मतलब कि 5 - 2 + 1, फोर्थ नोड। एक बात बताइए, जब हम थर्ड नोड निकाल लेंगे, जब हम थर्ड नोड निकाल लेंगे और हम जो भी नोड आएगा उसका डॉट नेक्स्ट कर देंगे। तो, क्या हमको ऑटोमेटिकली फोर्थ नोड नहीं मिल जाएगा? तो, फोर्थ नोड के लिए अलग से करने की ज़रूरत तो है नहीं। जब हमको थर्ड नोड मिल जाएगा, तो फोर्थ नोड क्या होगा? फोर्थ नोट उसका वो होगा मतलब आगे वाला होगा बस निकाल लेंगे और एक बात और एक बात करने से पहले ये करने से पहले क्या करेंगे k = k मॉड्यूलस n",
+      "source": "caption",
+      "english_text": "You need the third node and n - k + 1 means 5 - 2 + 1, the fourth node. Tell me one thing, when we will take out the third node, when we will take out the third node and we will dot next to whatever node comes. So, won't we automatically get the fourth node? So, there is no need to do it separately for the fourth node. When we get the third node, what will be the fourth node? Fourth note, it will be that means the next one will be just take out and before doing one thing and one more thing, what will we do before doing this k = k modulus n"
+    },
+    {
+      "start_time": 1629.12,
+      "end_time": 1659.269,
+      "text": "क्यों अगर k बड़ा हो गया और इसके बाद चेक कर लेंगे कि अगर हमारा k = 0 आ गया हो सकता है ना कि k फाइव होता तो k 0 बन जाता 5 मॉड्यूलस फाइव तो क्या कर देंगे कुछ नहीं कुछ मत उससे कोई फर्क नहीं पड़ेगा अगर आप ज़ीरो बार किसी चीज को रोटेट कर रहे हैं तो क्या होगा कुछ नहीं होगा रिटर्न हेड तो इतना करने की जरुरत ही नहीं पड़ेगी। इतना करने की जरूरत ही नहीं पड़ेगी। लेकिन अब ऐसा नहीं है तो आपको n - k निकालना पड़ेगा। आइए देखते हैं n - k कैसे निकलता है। आइए अब देखते हैं कि n - k कैसे निकलता है। फिर से लिंक बना लीजिए।",
+      "source": "caption",
+      "english_text": "Why if k becomes bigger and after that we will check that if our k = 0 then maybe if k was five then k would have become 0. 5 modulus five then what will we do, nothing, nothing, it will not make any difference, if you are rotating something zero times, then what will happen, nothing will happen, return head, so there will be no need to do so much. There will be no need to do so much. But now it is not so, so you will have to find n - k. Let's see how n - k turns out. Let us now see how n - k comes out. Create the link again."
+    },
+    {
+      "start_time": 1659.279,
+      "end_time": 1693.99,
+      "text": "हमको लिंक पे लिस्ट बनाने में कोई वो नहीं होता है कि बार-बार अच्छा है। बना लीजिए। कॉपी पे घिस घिस के देखेंगे कि क्या करना है। ये है 100 200 300 400 500 1 2 3 4 5 ये है 200 ये है 300 ये है 400 ये है 500 और ये है नल। याद कीजिए हम लोग क्या-क्या निकाल चुके हैं? n की वैल्यू फाइव। लास्ट की वैल्यू 500 और k की वैल्यू टू है तो 2 मॉड्यूलस 5 टू ही रह जाएगी। हम लोग को",
+      "source": "caption",
+      "english_text": "There is no one who makes us list on links that is good again and again. Make it. We will scribble on the copy and see what needs to be done. This is 100 200 300 400 500 1 2 3 4 5 This is 200 This is 300 This is 400 This is 500 And this is tap. Remember what we have come up with? The value of n is five. If the value of last is 500 and the value of k is two then the modulus of 2 will remain only 5. to us"
+    },
+    {
+      "start_time": 1694.0,
+      "end_time": 1726.31,
+      "text": "क्या चाहिए? हम लोग को क्या चाहिए? इंट c = क्या? n - k n - k n - k ओके? ओके। n - k मतलब थर्ड नोड। थर्ड नोड ये कैसे निकालते हैं? देखिए। नोड स्टार t = हेड। पूरा कोड भी लिखेंगे। ये तो हम बस लिख रहे हैं कि आपको पता चले। ओके? इंट काउंट इज इक्वल टू वन तो मतलब हेड है और काउंट इज इक्वल टू वन है। ओके आइए वाइल t",
+      "source": "caption",
+      "english_text": "What do you want? What do we need? int c = what? n-k n-k n-k ok? Ok. n - k means third node. How to remove third node? See. Node star t = head. Will also write the complete code. We are just writing this so that you know. Ok? Int count is equal to one so means head and count is equal to one. ok come while"
+    },
+    {
+      "start_time": 1726.32,
+      "end_time": 1754.71,
+      "text": "मतलब वाइल t नॉट इक्वल टू नल अगर अगर काउंट इक्वल इक्वल टू c मतलब काउंट इक्वल इक्वल टू n - k तुरंत ब्रेक कर जाइए। तो फॉर एग्जांपल अगर आपको फर्स्ट नोड चाहिए होता तो आप हेड पे ब्रेक कर जाते। अगर आपको फर्स्ट नोड चाहिए होता आप हेड पे ब्रेक कर जाते। लेकिन अब आपको क्या नोट चाहिए? आपको चाहिए n - k मतलब थर्ड नोड तो अभी तो ऐसा नहीं हुआ है। कोई बात नहीं। काउंट प्लस प्लस और t = t डॉट नेक्स्ट।",
+      "source": "caption",
+      "english_text": "Meaning while t is not equal to null if if count is equal to c means count is equal to n - k Break immediately. So for example, if you wanted the first node, you would have broken at the head. If you wanted the first node, you would have broken at the head. But what note do you want now? You need n - k meaning third node so this has not happened yet. No problem. Count plus plus and t = t dot next."
+    },
+    {
+      "start_time": 1754.72,
+      "end_time": 1786.789,
+      "text": "ऐसे आप किसी भी एनथ नोड को निकाल सकते हैं। किसी भी एथन नोड को निकाल सकते हैं। आइए देखते हैं। इसको भी ट्राई रन कीजिए। तो शुरूआत में काउंट क्या होगा? वन। शुरुआत में t होगा 100। चेक करिए। काउंट इज इक्वल टू सी। सी c का मतलब c = 3 है। आपको थर्ड नोड चाहिए। उसको आप कुछ और नाम भी दे सकते हैं फर्क नहीं पड़ता है। तो क्या सी थ्री है? है ना? C थ्री नहीं है। थर्ड नोड नहीं है। बढ़ा दीजिए काउंट को। टी को 200 कर दीजिए। क्या 2 = 3 है? नहीं, नहीं, नहीं है। थ्री कर दीजिए, 300 कर दीजिए। क्या 3 = 3 है? यस, यस, यस, ब्रेक ब्रेक ब्रेक। देखिए आपको क्या मिल गया? t",
+      "source": "caption",
+      "english_text": "In this way you can remove any nth node. Can remove any eth node. let's watch. Try running this also. So what will be the initial count? Forest. Initially t will be 100. Please check. Count is equal to si. C means c = 3. You need a third node. You can give it some other name also, it doesn't matter. So what is C Three? Isn't it? C is not three. There is no third node. Increase the count. Make T 200. Is 2 = 3? No, no, no. Make it three, make it 300. Is 3 = 3? Yes, yes, yes, break break break. See what you got? t"
+    },
+    {
+      "start_time": 1786.799,
+      "end_time": 1820.71,
+      "text": "= 300 आपका t यहां बैठ गया आ के। t = 300 t = 300, बस, आपको कौन सा नोट मिल गया? n - kh नोट मिल चुका है। क्या है इसकी वैल्यू? 300, आपको और क्या चाहिए था? n - k + 1 क्यों हेड बनाने के लिए हेड बनाने के लिए हेड बनाने के लिए अब हेड बनाने के लिए चाहिए ना तो ऐसा हम क्या कर सकते हैं क्या नोड रिजल्ट इक्वल टू t डॉट नेक्स्ट t डॉट नेक्स्ट t डॉट नेक्स्ट ही वो नोड था ना n - k + 1 वो क्यों चाहिए था हेड बनाने के लिए लो बना दिए रेस्ट में कौन सी वैल्यू आ गई स्टोर",
+      "source": "caption",
+      "english_text": "= 300 Your t came and sat here. t = 300 t = 300 That's it, which note did you get? n-kh note has been received. What is its value? 300, what more did you want? Why is n - k + 1 needed to make a head? Now is it needed to make a head? What can we do like this? Is the node result equal to t dot next t dot next t dot next? Why was n - k + 1 needed to make a head? Lo made what value is stored in the rest?"
+    },
+    {
+      "start_time": 1820.72,
+      "end_time": 1855.51,
+      "text": "हो गई 400 400 ओके अब आइए अपना काम कर देते हैं एक काम हो गया दो काम और बचा है क्या दो काम बचा है लास्ट डॉट नेक्स्ट नेक्स्ट इक्वल टू हेड लास्ट क्या है? 500 500 डॉट नेक्स्ट इक्वल टू 100 आइए तार जोड़िए। तार जोड़िए जुड़ गया। जुड़ गया। वेरी गुड। और n - kथ का क्या करना था? n - kथ को क्या बनाना था? नल। नल नल मतलब कि ये जो भी नोट है। तो जो भी इसका नाम आप देना चाहें दे सकते हैं। लेकिन 300 डॉट नेक्स्ट इक्वल टू नल। आइए 300 डॉट नेक्स्ट को नल",
+      "source": "caption",
+      "english_text": "Done 400 400 Okay now let's do our work One work is done Two more work left What is two work left Last Dot Next Next Equals Two Head Last? 500 500 dot next equal to 100 let's connect the strings. Connect the wire. Got connected. very good. And what to do with n-kth? What was n - kth to be made? Tap. Nal Nal means whatever note it is. So you can name it whatever you want. But 300 dot next equal to null. Let's tap 300 dot next"
+    },
+    {
+      "start_time": 1855.52,
+      "end_time": 1882.149,
+      "text": "बनाते हैं तो ये टूट जाएगा। नल और रेस क्या है आपका? रेस है 400 तो आपका आपका कौन सा हेड बन गया? 400 और रिटर्न रेस्ट। अब देखिए क्या होगा? आप रिटर्न करेंगे तो क्या लिंक बन गया आपका? सबसे पहले फोर फिर फाइव फिर वन फिर टू फिर थ्री। क्या ये रोटेट हो गया टू टाइम्स? यस हो गया। लास्ट का दो यहां आ गया। पहले का तीन यहां आ गया। तो सिंपल प्रोग्राम है। सिंपल प्रोग्राम है। आइए प्रोग्राम करें।",
+      "source": "caption",
+      "english_text": "If you make it, it will break. What is your tap and race? The race is 400, so which one has become your head? 400 and return rest. Now see what will happen? If you return, will your link be created? First four then five then one then two then three. Has it rotated two times? Yes its done. The last two are here. The first three are here. So it is a simple program. It is a simple program. Let's program."
+    },
+    {
+      "start_time": 1882.159,
+      "end_time": 1917.11,
+      "text": "आइए प्रोग्राम करें। आइए प्रोग्राम लिखें। तो शुरू करते हैं। आपको क्या दिया रहेगा? नोट स्टार कोई भी फंक्शन दिया रहेगा और आपको एक हेड दिया रहेगा। और आपको एक इंट के दिया रहेगा। कोड हम दे देंगे। आप लोग मानते नहीं है। आप लोग बोलते हैं नहीं कॉपी पेस्ट करिए तो ठीक है। ये भी पूरा कोड है वैसे ही। इसमें भी कोई ऐसा चीज़ हम नहीं लिखेंगे जो आप नहीं चला पाएंगे जाके असली में। सबसे पहले तो इफ हेड इक्वल इक्वल टू नल रिटर्न नल। अगर कुछ है ही नहीं, तो क्या",
+      "source": "caption",
+      "english_text": "Let's program. Let's write a program. So let's start. What will you be given? Note star will be given any function and you will be given a head. And you will be given one brick. We will give the code. You people don't believe. You people say no, copy paste is fine. This is also the complete code. In this also we will not write anything that you will not be able to run in real life. First of all if head is equal to null return null. If there is nothing, then what?"
+    },
+    {
+      "start_time": 1917.12,
+      "end_time": 1950.71,
+      "text": "रोटेट करोगे उसको? तो कोई फायदा नहीं है रोटेट करने का। लेकिन अब सबसे पहले क्या करना है? लास्ट इज़ इक्वल टू हेड। लास्ट निकालना है और इंट n = 1। क्योंकि एक नोड तो है अब क्योंकि हेड नल नहीं है तो एक नोड तो है ना भैया। वाइल क्या था लास्ट का कंडीशन? लास्ट का नेक्स्ट हमेशा नल होता है। तो ये जब तक नल नहीं हुआ है। जब तक ये नल नहीं हो तब तक क्या करना है? n + एंड लास्ट इज़ इक्वल टू लास्ट डॉट सॉरी लास्ट डॉट नेक्स्ट",
+      "source": "caption",
+      "english_text": "Will you rotate it? So there is no use in rotating. But what is the first thing to do now? Last is equal to head. Last is to be removed and int n = 1. Because there is a node, now because there is no head tap, then there is a node, isn't it? By the way, what was the last condition? Next to last is always null. So this has not happened till now. What is there to do until this tap is available? n + and last is equal to last dot sorry last dot next"
+    },
+    {
+      "start_time": 1950.72,
+      "end_time": 1979.75,
+      "text": "लास्ट डॉट नेक्स्ट। देखिए हम इतना मेहनत यहां पे क्यों कर रहे हैं कि आईपैड पे ऐसा नोट्स ऐसा कोड लिखने का तुमको जरूरत नहीं है ना। हम चाहते हैं आप लोग को ये आदत पड़े ये आदत बहुत जरूरी है। कॉपी पे कोड लिखना या कहीं और कोड लिखना टाइपिंग से पहले। ये आदत बहुत ज़रूरी है। हमको ऐसा मतलब थोड़ी था हम लिख देते कि अच्छा चलो लास्ट निकाल दो। नहीं। यह आदत जब तक नहीं लगेगा ना जब तक वो रहेगा कि नहीं कोड तो वहीं लिखा जाता है। कोई दे देता तो वहां से कॉपी कट के यहां पे। नहीं गलत आदत है। कॉपी-कॉपी भरा हुआ है मेरा। मेरा रजिस्टर भरा हुआ है बहुत सारा जिसमें हम हाथ से कोड लिखे हैं।",
+      "source": "caption",
+      "english_text": "Last dot next. See why we are working so hard here that you don't need to write such notes and such code on iPad, right? We want you people to develop this habit, this habit is very important. Writing code on copy or writing code somewhere else before typing. This habit is very important. We had a feeling that we would have written that okay, let's take it out last. No. As long as this habit does not develop or remains there, the code is written there. If someone had given it, it would have been copied and cut here. No, it is a bad habit. Mine is full of copies. My register is full of lots of code we've written by hand."
+    },
+    {
+      "start_time": 1979.76,
+      "end_time": 2012.789,
+      "text": "जब तक ये हाथ से लिखने का आदत नहीं आएगा ना तब तक नहीं सीख पाएंगे आप लोग। मेरा कोड कॉपी करके क्या होगा? मतलब मेरा कोड कॉपी करिएगा तो उससे आपका क्या फायदा हो जाएगा? हमको समझ में नहीं आता है। आप लोग कोड हमेशा कोड दे दीजिए। कोड में प्रॉब्लम होता है। वो दे देंगे तो जा। यही कोड सबमिट होगा। ये एग्जा अगर ये नहीं होगा सबमिट तो आप लोग बोलेगा कि नहीं यहां पे आप गलत लिख दिए नहीं हुआ सबमिट यही कोड सबमिट करना है तो हाथ से लिखने का आदत डालिए खुद से चलिए अब आपको लास्ट मिल गया है ओके अब क्या चाहिए आपको अब क्या चाहिए अब अब आपको n - k चाहिए तो सबसे पहले तो इंट",
+      "source": "caption",
+      "english_text": "You will not be able to learn until you get into the habit of writing by hand. What will happen by copying my code? Meaning, if you copy my code, what benefit will you get from it? We don't understand. You guys always give the code. There is a problem with the code. If he gives it then go. This code will be submitted. This exam, if it is not submitted, then you people will say that no, you have written it wrong here, it is not submitted, if you want to submit this code, then make a habit of writing it by hand, go on yourself, now you have got the last one, okay, what do you want now, what do you want now, now you want n - k, so first of all, int."
+    },
+    {
+      "start_time": 2012.799,
+      "end_time": 2045.909,
+      "text": "काउंट = 1 काउंट = 1 लिए थे ज़ीरो लिए थे ऊपर वन वन वन से शुरू किए थे और आपको एक n - k चाहिए तो वो कर लीजिए नो स्टार t = हेड ये t आपका बताएगा कि आपको n - k मिल गया है कि नहीं मिल गया है। आइए लिखिए व्हाइल t नॉट इक्वल टू नल इफ क्या हां एक चीज छूट गया एक चीज छूट गया आपको अब n मिल चुका है। आपको अब n मिल चुका है। आपको अब n मिल चुका है। यस आपको",
+      "source": "caption",
+      "english_text": "Count = 1 Count = 1 For zero, we started from one one one above and if you want an n - k then do that No star t = head This t will tell you whether you have got the n - k or not. Let's write while t not equal to null if yes one thing is missing one thing is missing you now have n. You have now got n. You have now got n. yes you"
+    },
+    {
+      "start_time": 2045.919,
+      "end_time": 2080.629,
+      "text": "क्या करना पड़ेगा? k = k मॉड्यूलस n देखिए एक चीज छूट गया था। आपको क्या करना पड़ेगा? k = और k मॉड्यूलस n k मॉड्यूलस m इसके बाद इफ k = 0 अगर k आ जाता है तो क्या कुछ करने का जरूरत नहीं है रिटर्न हेड कर दीजिए रिटर्न हेड कर दीजिए कुछ खास करने का जरूरत है नहीं कुछ खास करने का ज़रूरत है नहीं तो कुछ लोग बोलेंगे कि k = 0 ऊपर ही क्यों नहीं चेक कर लिए क्योंकि क्योंकि ऐसा हो सकता है n = 5 हो और k = 5 हो तो यहां k ज़ीरो नहीं है लेकिन जब आप इसको फाइव मॉड्यूलस फाइव करेंगे तो ये ज़ीरो बन जाएगा तो है नहीं ज़ीरो बन गया ज़ीरो मतलब इफेक्टिवली इट इज़ ज़ीरो इसीलिए",
+      "source": "caption",
+      "english_text": "What will have to be done? k = k modulus n See one thing was missing. What will you have to do? k = else k modulus n k modulus m After this if k = 0 if k comes then is there no need to do anything return head make return head there is a need to do something special no there is a need to do something special otherwise some people will say that k = 0 why not check it above because it is possible that n = 5 and k = 5 so here k is not zero but when you make it five modulus five then this If it becomes zero then it is not. Zero has become zero, meaning effectively it is zero, that is why."
+    },
+    {
+      "start_time": 2080.639,
+      "end_time": 2110.23,
+      "text": "लास्ट में करना जरूरी है। अब हो गया रिटर्न हेड अब आइए न स्टार t = हेड किसके लिए n - k वाला नड निकालने के लिए और इंट काउंट इक्वल टू वन आइए निकालते हैं व्हाइल t नॉट इक्वल टू नल क्या चेक करना है आपको इफ काउंट इक्वल इक्वल टू n - k ब्रेक ब्रेक तभी n - k मिलेगा नहीं तो कोई बात नहीं",
+      "source": "caption",
+      "english_text": "It is important to do it last. Now return head is done, now let's star t = head for which n - k to get nud and int count equal to one let's get while t not equal to null what to check you have to check if count equal to n - k break break only then n - k will be found otherwise no problem"
+    },
+    {
+      "start_time": 2110.24,
+      "end_time": 2142.63,
+      "text": "काउंट प्लस प्लस t = t डॉट नेक्स्ट बस अब आपको दो सारी चीजें मिल गई। अब आप तैयार हैं। तीन स्टेप आपको करने हैं। क्या तीन स्टेप करने हैं? आइए करें। तीन स्टेप करने हैं गिन के। सबसे पहले लास्ट डॉट नेक्स्ट इक्वल टू हेड। पहला स्टेप खत्म। नोट स्टार रिजल्ट = t डॉट नेक्स्ट। t डॉट नेक्स्ट क्योंकि t किसको रिप्रेजेंट करता है? n - k को। आपको हेड किसको बनाना है",
+      "source": "caption",
+      "english_text": "Count plus plus t = t dot next That's it, now you've got two things. Now you are ready. You have to do three steps. Are there three steps to do? Let's do it. Three steps have to be done by counting. First last dot next equal to head. First step finished. Note star result = t dot next. t dot next because what does t represent? To n-k. Who do you want to make head?"
+    },
+    {
+      "start_time": 2142.64,
+      "end_time": 2173.99,
+      "text": "नया? n - k + 1 को फोर्थ वाले को। तो रेस्ट बन गया। और उसके बाद n - k न का क्या करना था आपको? उसको नल बना देना था। उसके नेक्स्ट को t डॉट नेक्स्ट इक्वल टू नल और रिटर्न। बस ये आपका छोटा सा प्रोग्राम हो गया। देख लीजिए। ये छोटा सा प्रोग्राम है। यही प्रोग्राम सबमिट होगा। हम दे देंगे। दे देंगे कमेंट में। ये दे देंगे। मालूम नहीं आप लोग करेंगे क्या उससे लेकिन हम दे देंगे। कोई बात नहीं दे देंगे तो ये सबमिट हो जाएगा। तो ये आप लोग रोटेट लिंक लिस्ट",
+      "source": "caption",
+      "english_text": "new? n - k + 1 to the fourth one. So rest was done. And after that what did you have to do with n-k-n? He had to make a tap. Its next to t dot next equal to null and return. This is just your small program. Take a look. This is a small program. This program will be submitted. We will give. Will give in comment. Will give this. Don't know what you guys will do with it but we will give it. If you don't provide anything then it will be submitted. So this is you guys rotate link list"
+    },
+    {
+      "start_time": 2174.0,
+      "end_time": 2207.829,
+      "text": "सीख गए। ये सबसे आसान तरीका है। रोटेट ए लिंक लिस्ट सीख गए। हां हम बोले थे हम रिवर्स वाला भी बताएंगे। तो रिवर्स वाला में क्या है ना देखिए रिवर्स वाला ऐसे काम करता है। लेकिन उसमें बहुत सारा एज केस है। मतलब ऑनेस्टली बताए थे उसमें बहुत सारा एज केस है। लेकिन उसमें करना क्या था? देखिए 1 2 3 4 5 हम उसको क्या किए थे? कैसे सोचे ऐसे सोचे थे कि मान लीजिए इसमें आपको n तो निकालना पड़ेगा n = 5 और आपको k = k मॉड्यूलस n करना पड़ेगा। लेकिन उसके बाद आप क्या करिए? आप एक बार ना पूरे लिंक लिस्ट को रिवर्स कर दीजिए। पूरे लिंक",
+      "source": "caption",
+      "english_text": "Learned. This is the easiest method. Learned to rotate a linked list. Yes, we had said that we will also tell the reverse one. So what is there in the reverse one, see this is how the reverse one works. But there's a lot of edge case in there. Meaning honestly, there is a lot of edge case in it. But what was there to do? Look 1 2 3 4 5 What did we do to him? How to think: We thought that suppose in this you have to find n = 5 and you have to do k = k modulus n. But what do you do after that? You reverse the entire link list at least once. full link"
+    },
+    {
+      "start_time": 2207.839,
+      "end_time": 2239.43,
+      "text": "लिस्ट को रिवर्स कर दीजिए। तो ऐसा लगने लगेगा। 5 4 3 2 1 अब बोलेंगे तो आंसर नहीं है। नहीं आंसर नहीं है। रिवर्स कर दीजिए। उसके बाद एक ट्रिक है। शुरू के k टाइम्स को आप कर्व को हेड पे रखिए और k टाइम्स रिवर्स कीजिए। बस k टाइम्स रिवर्स कीजिए। तो ये कैसा लगने लगेगा? ये ऐसा लगने लगेगा। फाइव फोर ये ऐसा लगने लगेगा। ओके? इस फोर को इस फोर को जो आपके पहले बार रिवर्स करने का आता है ये हम बता नहीं रहे हैं। आपको होमवर्क दे रहे हैं। खुद करना है। उसको आंसर उसको अपना हेड स्टोर कर",
+      "source": "caption",
+      "english_text": "Reverse the list. So it would seem like this. 5 4 3 2 1 If we say now, there is no answer. No, the answer is not. Reverse it. After that there is a trick. For the first k times you place the curve on the head and reverse it k times. Just reverse k times. So what will this look like? It will start looking like this. Five four it will start looking like this. Ok? We are not telling you how to reverse this four for the first time. Giving you homework. Have to do it yourself. Answer him and store your head."
+    },
+    {
+      "start_time": 2239.44,
+      "end_time": 2274.31,
+      "text": "लीजिए। आपका नया हेड है। ओके? अब अब आपको क्या करना है? आगे वाले, आगे वाले तीन को भी रिवर्स कर दीजिए। आगे वाले तीन को भी रिवर्स कर दीजिए। आगे वाले तीन को रिवर्स कर दीजिए। और जो सबसे पहला नड आया था इसको भी आपको स्टोर करके रखना पड़ेगा। इसको यहां पे जोड़ दीजिए। इसको यहां पे जोड़ दीजिए और इसको रिटर्न कर दीजिए। तो इफेक्टिवली यही होता है। 4 5 1 2 3 लेकिन ये थोड़ा कॉम्प्लेक्स है। ऑब्वियस सी बात है कि सॉरी यहां मत जोड़िए। फाइव को थ्री पे मत जोड़िए। फाइव को जो दूसरा रिवर्स किए हैं उसका प्रेफ जो आया है उस पे जोड़िए। उस पे जोड़िए।",
+      "source": "caption",
+      "english_text": "Take it. You have a new head. Ok? Now what do you have to do now? Reverse the front three as well. Reverse the next three also. Reverse the next three. And the first nud that came will also have to be stored. Add this here. Add it here and return it. So this is effectively what happens. 4 5 1 2 3 But this is a bit complex. Obviously don't add sorry here. Don't add five to three. Add the five that has been reversed to the pref of the second one that has been reversed. Add on that."
+    },
+    {
+      "start_time": 2274.32,
+      "end_time": 2303.51,
+      "text": "यहां जोड़िए। ये भी आप इफेक्टिवली करेंगे तो सबसे पहले आएगा फाइव। फिर 4 5 1 2 3 दो तीन बार आपको रिवर्स करना पड़ेगा लेकिन ऐसे हो जाएगा। थोड़ा कॉम्प्लेक्स थोड़ा कॉम्प्लेक्स हम मानते हैं थोड़ा कॉम्प्लेक्स है। अं लेकिन ये आता कहां से है? ये आता है एरे से। जब हम इसको जब हम इसको एरे में सॉल्व कर रहे थे तो हम इसको किए थे। मान लीजिए आपका एरे ऐसा था। आपका एरे ऐसा दिखता मान लो 1 2 ये एरे में बड़ा अच्छा काम करता है। 0 1 2 3 4 n = 5 था। आपका k = 2 था।",
+      "source": "caption",
+      "english_text": "Add here. If you do this effectively then the first five will come. Then you will have to reverse 4 5 1 2 3 two or three times but it will be done like this. A little complex A little complex We believe it is a little complex. But where does this come from? This comes from the array. We did this when we were solving this in the array. Suppose your array was like this. Your array would look like this. Suppose 1 2 works very well in this array. 0 1 2 3 4 n = 5. Your k=2."
+    },
+    {
+      "start_time": 2303.52,
+      "end_time": 2335.829,
+      "text": "तो हम क्या करते थे? पूरे एरे को पहले रिवर्स कर देते थे। 5 4 3 2 1 पहला स्टेप। उसके बाद शुरू के दो एलिमेंट्स शुरू के k एलिमेंट्स। शुरू के k एलिमेंट्स को रिवर्स करते थे। 4 5 बाकी ऐसे ही रह जाते थे। बाकी ऐसे ही रह जाते थे। उसके बाद लास्ट के n - k मतलब लास्ट के तीन को रिवर्स कर देते थे। लास्ट के तीन को रिवर्स कर देते थे। 4 5 1 2 3 तो तीन बार रिवर्स करने के बाद तीन बार रिवर्स करने के बाद हमको आंसर मिल जाता है। पहला पहला रिवर्स फुल।",
+      "source": "caption",
+      "english_text": "So what did we do? The entire array was first reversed. 5 4 3 2 1 First step. After that the first two elements and the first k elements. Used to reverse the first k elements. 4 5 The rest remained like this. The rest remained like this. After that the last n - k means the last three were reversed. Used to reverse the last three. 4 5 1 2 3 So after reversing it three times, we get the answer. First first reverse full."
+    },
+    {
+      "start_time": 2335.839,
+      "end_time": 2367.75,
+      "text": "दूसरा रिवर्स शुरू के शुरू के तीसरा रिवर्स लास्ट के n - k ये तीन रिवर्स करेंगे आपको आंसर मिल जाएगा। यही चीज़ आपको यहां भी करनी है। लेकिन ये लिंक ये एप्रोच एरे में आसान था। लिंक लिस्ट में हार्ड हो गया। क्यों? क्योंकि आपको वो लिंक थिंग जोड़ना पड़ा। तो लिंक लिस्ट में ये एप्रोच थोड़ा हार्ड हो गया। लिंक लिस्ट में ऊपर वाला एप्रोच बड़ा अच्छा था। ऊपर वाला एप्रोच एरे में बहुत हार्ड पड़ेगा कि आप कैसे जोड़ेंगे? लास्ट को उठा के ऐड नहीं कर सकते हैं। ऊपर वाला एप्रोच लिंक लिस्ट में बहुत अच्छा था। नीचे वाला एप्रोच रिवर्स वाला एरे में बड़ा अच्छा काम करता है। लेकिन आप इसको लिंक लिस्ट में कर सकते हैं। हम किए हैं।",
+      "source": "caption",
+      "english_text": "Second reverse from the beginning, third reverse from the last n - k. Do these three reverses and you will get the answer. You have to do the same thing here also. But this link was easy in this approach array. The link became hard in the list. Why? Because you had to add that link thing. So this approach became a bit difficult in the link list. The approach above in the link list was very good. The above approach will be very difficult in the array, how will you add it? Cannot add by selecting the last one. The above approach was very good in link list. The approach below works well in a reverse array. But you can do it in link list. We have done it."
+    },
+    {
+      "start_time": 2367.76,
+      "end_time": 2375.76,
+      "text": "अ आप ट्राई करिए। थोड़ा एज केस है। थोड़ा दिमाग लगाइए। ऐसे करके आप कर सकते हैं। चलिए मिलते हैं कल। है ना?",
+      "source": "caption",
+      "english_text": "Oh you try. Has a little edge case. Use your brain a little. You can do it like this. Let's meet tomorrow. Isn't it?"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

@@ -1,0 +1,702 @@
+{
+  "video_id": "93copdtW4ZQ",
+  "video_title": "No one Has Explained Dijkstra's Algorithm Like This On The Internet!",
+  "video_number": 102,
+  "chunks": [
+    {
+      "start_time": 1.91,
+      "end_time": 33.395,
+      "text": "हां जी भाई स्वागत है आप सभी का पढ़ो वि प्रत्युष में। मेरा नाम प्रत्युष नारायण। आज का जो टॉपिक है ना बड़ा कंट्रोवर्शियल टॉपिक है। डिस्ट्रॉय एल्गोरिदम हम लोग सीखेंगे शुरू से लेकर अंत तक। लेकिन पढ़ाने से पहले हम दो तीन बातें बता देते हैं बहुत जल्दी-जल्दी। पहला कि ये ग्राफ में थोड़ा हार्ड टॉपिक है। हार्ड नहीं है। हार्ड इसलिए है क्योंकि एक अलग ही एल्गोरिदम है। अ तो अगर आपको एल्गोरिदम नहीं आएगा ना तो आप इसका क्वेश्चन नहीं बना पाएंगे। वो सत्य बात है। ये ऐसा नहीं है कि आप सोच लेंगे। नहीं दिस इस तरह एक आदमी थे। वो सोचे थे। आपको वो सीखना पड़ेगा। ठीक बात है। पहली बात तो ये है कि थोड़ा हार्ड टॉपिक है।",
+      "source": "caption",
+      "english_text": "Yes brother, welcome to all of you in Pratyush. My name is Pratyush Narayan. Today's topic is a very controversial topic. We will learn Destroy Algorithm from beginning to end. But before teaching, let us tell you two or three things very quickly. Firstly, this is a bit hard topic in graph. Not hard. Hard because there is a different algorithm. So, if you do not know the algorithm then you will not be able to make questions from it. That is the true thing. It's not like you would think. No this was the kind of man he was. He thought. You have to learn that. That's right. The first thing is that it is a bit hard topic."
+    },
+    {
+      "start_time": 33.405,
+      "end_time": 59.75,
+      "text": "[खांसने की आवाज़] सॉरी इंटरव्यू में इसके आने का चांस 2/5 है। मतलब कितना? 40% चांस है। मतलब हम जितना भी इंटरव्यू दिए हमसे आज तक DTRA का क्वेश्चन नहीं पूछा गया है। तो देखिए आप चाहे अगर मतलब अगर ऐसा तो नहीं करना चाहिए लेकिन हम आपको चॉइस दे देते हैं। आप चाहें तो इसको स्किप कर सकते हैं। पूरे Dra को स्किप कर सकते हैं। लेकिन इससे दिक्कत क्या होगा कि सिर्फ Dra में एक क्वेश्चन नहीं है या एक लेक्चर नहीं जिसको आप स्किप कर देंगे। आगे हम लोग तीन से चार ग्राफ का क्वेश्चन देखेंगे।",
+      "source": "caption",
+      "english_text": "[coughing sound] Sorry, the chances of this coming up in the interview are 2/5. I mean how much? There is a 40% chance. Meaning, no matter how many interviews we have given, we have not been asked the question of DTRA till date. So see, if you want, it means you should not do this, but we give you the choice. You can skip it if you want. Can skip the entire draw. But what would be the problem if there is not a question in Dra or there is not a lecture which you will skip. Next we will see questions of three to four graphs."
+    },
+    {
+      "start_time": 59.76,
+      "end_time": 88.95,
+      "text": "जैसे बहुत सारा चीज है। जीपीएस रूट ऑफ फ्लाइट और बहुत सारा क्वेश्चन है। स्टैंडर्ड क्वेश्चन है। वो डिक्शरा को सीधा-सीधा यूज़ करता है। ठीक बात है। तो छोड़ना तो नहीं चाहिए लेकिन इंटरव्यू में आने का चांस कितना है? 40% लेकिन अब आप बहुत रिस्क ले रहे हैं। अगर आपको इंटरव्यू में आ गया और आप ये पढ़े हुए थे तो बहुत अच्छा। आप इसको तुरंत बना लेंगे। इसमें कुछ सोचने की जरूरत नहीं पड़ेगी। अगर ये आ गया और आप इसको नहीं पढ़े बाय चांस स्किप कर दिए। आपसे ये कभी किसी जन्म में नहीं बनेगा। किसी जन्म में आप खुद से सोच नहीं सकते हैं कि दिस एल्गोरिदम यह होता है।",
+      "source": "caption",
+      "english_text": "Like a lot of things. There is GPS route of flight and many questions. Is a standard question. He uses Dixra directly. That's right. So you should not leave but what are the chances of appearing in the interview? 40% But now you are taking a lot of risk. If you got into the interview and you were reading this, then great. You will make it in no time. There will be no need to think anything about this. If it came and you did not read it, by chance you skipped it. You will never be able to do this in any other birth. In any lifetime you cannot think to yourself that this algorithm is this."
+    },
+    {
+      "start_time": 88.96,
+      "end_time": 122.789,
+      "text": "नहीं नहीं सोचा जा सकता है। तो आप अपने हिसाब से रिस्क ले लीजिए और इस लेक्चर में आगे बढ़ने से पहले आपको दो-तीन चीजें आनी चाहिए। आज से पहले हम कभी ये बात नहीं बोले थे कि आपको ये ये आना चाहिए। लेकिन डिक्शरा पढ़ने से पहले आपको दो-तीन बहुत पर्टिकुलर चीजें आनी चाहिए। सबसे पहले तो आप अगर ग्राफ सीरीज देख रहे हैं। तो पहला या दूसरा लेक्चर में दूसरा लेक्चर में हम लोग बात किए थे कि एडजेसेंसी लिस्ट कैसे बनता है? एडजेसेंसी लिस्ट कैसे बनता है? किससे? किसी एजेस से। एजेस का एरे दिया रहता था। तो एडजेसेंसी लिस्ट कैसे बनता है? लेकिन अभी तक हम लोग ना अनवेटेड ग्राफ पे या नॉनवेटेड ग्राफ पे लिस्ट बना रहे थे। ध्यान दीजिएगा। अभी तक हम लोग जितना",
+      "source": "caption",
+      "english_text": "No, it cannot be thought. So take the risk as per your convenience and before proceeding further in this lecture you should know two-three things. Before today we had never said that you should know this. But before reading Dictionra, you should know two-three very particular things. First of all, if you are looking at the graph series. So in the first or second lecture, in the second lecture we talked about how the adjacency list is made? How is the adjacency list made? With whom? From some age. An array of aegis was given. So how is the adjacency list made? But till now we were making lists neither on unweighted graphs nor on non-weighted graphs. Please pay attention. As far as we are"
+    },
+    {
+      "start_time": 122.799,
+      "end_time": 155.91,
+      "text": "भी क्वेश्चन किए थे 9 10 एपिसोड में करीब 12 15 क्वेश्चन हुआ है ना सब में नॉनवेटेड चीजें चल रही थी। सब में नॉन वेटेड ग्राफ बन रहा था। dx्रा एल्गोरिदम नॉन वेटेड के लिए नहीं है। नॉन वेटेड के लिए नहीं है। dx्रा वेटेड ग्राफ के लिए है। dx्रा वेटेड dx्रा का पूरा एप्लीकेशन ही है कि वेटेड ग्राफ पे होता है। तो ये वेटेड ग्राफ पे है। तो सबसे पहले तो आपको ग्राफ सीरीज का एपिसोड टू देखा होना चाहिए और आपको एडजेसेंसी लिस्ट कैसे बनाता है ये ऑलमोस्ट ऑलमोस्ट रटा होना चाहिए आपके मन में। पहली बात ये। दूसरी बात आपको पिछला वाला ग्राफ सीरीज का ग्राफ प्लेलिस्ट का पिछला वाला",
+      "source": "caption",
+      "english_text": "Questions were also asked. There were about 12-15 questions in 9-10 episodes. Non-weighted things were going on in all of them. Non-weighted graph was being created in everything. dxra algorithm is not for non weighted. Not for non-vetted. dxra stands for weighted graph. The entire application of weighted dxra is on weighted graphs. So this is on the weighted graph. So, first of all, you should have seen episode two of the graph series and you should almost have memorized in your mind how to make an adjacency list. The first thing is this. Secondly, you will find the previous graph of the series and the previous graph of the playlist."
+    },
+    {
+      "start_time": 155.92,
+      "end_time": 189.83,
+      "text": "लेक्चर शॉर्टेस्ट पाथ शॉर्टेस्ट पाथ इन शॉर्टेस्ट पाथ इन नॉन वेटेड ग्राफ शॉर्टेस्ट पाथ इन नॉन वेटेड ग्राफ ये वाला लेक्चर आपको देखना पड़ेगा ताकि आपको एक इंट्यूशन आए कि होता क्या है शॉर्टेस्ट डिस्टेंस और क्या होता है दूसरी बात ये तीसरी बात आपको प्रायोरिटी क्यू प्रायोरिटी क्यू या तो हीप खास करके मिन हीप मिन हीप अगर आप ये पैटर्न सीरीज देखते हुए आ रहे हैं आपको ये सब आता है अगर आप बाय बाय चांस नए बच्चे हैं आपको मीन हिप क्या होता है और मीन हिप ऑफ पेयर्स क्या होता है ये समझ में आना चाहिए क्योंकि ये तीनों क्वेश्चन इसमें यूज़ होगा तीनों",
+      "source": "caption",
+      "english_text": "Lecture Shortest Path Shortest Path in Shortest Path in Non Weighted Graph Shortest Path in Non Weighted Graph You will have to watch this lecture so that you can get an intuition about what is shortest distance and what is the second thing, this is the third thing, you should know about priority queue, priority queue, either heap, especially min heap, min heap. If you are coming watching this pattern series, you know all this if you are a new kid by the way, by chance, you know what is mean hip. And it should be understood what is the meaning of hip pairs because these three questions will be used in this."
+    },
+    {
+      "start_time": 189.84,
+      "end_time": 215.83,
+      "text": "कांसेप्ट इसमें यूज़ होगा इसीलिए हम बोल रहे हैं कि थोड़ा हार्ड टॉपिक है तो आप ये तीनों चीज सबका लिंक आपको डिस्क्रिप्शन में मिल जाएगा तीनों पॉइंट का लिंक वो देख के आ जाइए उसके बाद ये कंटिन्यू कीजिए अगर आपको ये तीनों चीजें नहीं आती है तो ये देखने का उतना फायदा नहीं होगा आपको ज्यादा कुछ समझ में नहीं आएगा ठीक है आगे बढ़ते हैं चलिए अगर आप यहां तक बने हुए हैं बहुत अच्छे आगे पानी वानी पी लीजिए थोड़ा लंबा लेक्चर होने वाला है चलिए अब बात करते हैं कि दिक्श्रा एल्गोरिदम होता क्या है? दिक्ra एल्गोरिदम वन ऑफ़ द मोस्ट फेमस एल्गोरिदम ऑन दिस प्लनेट है।",
+      "source": "caption",
+      "english_text": "Concepts will be used in this, that is why we are saying that it is a bit of a hard topic, so you will get the link of all these three things in the description, the link of all the three points, come after seeing them, after that continue like this, if you do not know these three things, then there will be not much benefit in watching this, you will not understand much, okay, let's move ahead, if you have remained till here, then very good, drink water, it is going to be a long lecture, let's talk about that. What is Dikshra algorithm? The Dikra algorithm is one of the most famous algorithms on this planet."
+    },
+    {
+      "start_time": 215.84,
+      "end_time": 243.19,
+      "text": "अगर कोई कंप्यूटर साइंस का बच्चा है तो ऐसा हो नहीं सकता है कि वो दिक्रा नहीं सुना हो अपने कॉलेज में। ठीक है? दिक्ra यूज़ क्या होता है? इमेजिन कीजिए आपको एक ग्राफ दिया हो। आपको एक ग्राफ मिला हो। ग्राफ किस प्रकार का होता है? ग्राफ वेटेड। वेटेड ग्राफ। अनवेटेड में नहीं। अनवेटेड में जरूरत नहीं है। कर सकते हैं। अनवेटेड का मतलब होता है कि हर एज का वेट वन है। तो वही है। कर सकते हैं। लेकिन खास तौर पे वेटेड ग्राफ होता है। अनडायरेक्टेड भी हो सकता है, डायरेक्टेड भी हो सकता है। उसमें कोई दिक्कत नहीं है।",
+      "source": "caption",
+      "english_text": "If someone is a computer science student then it is not possible that he has not heard Dikra in his college. Ok? What is Dikra used for? Imagine you are given a graph. You got a graph. What type of graph is it? Graph weighted. Weighted graph. Not in unweighted. Not needed in unweighted. Can do. Unweighted means that the weight of each edge is one. So that's it. Can do. But it is especially a weighted graph. Can be undirected, can also be directed. There is no problem in that."
+    },
+    {
+      "start_time": 243.2,
+      "end_time": 276.31,
+      "text": "डिक्शन एल्गोरिदम करता क्या है? ग्राफ में मान लीजिए n नोड्स हैं। कितने न्स हैं? n नोड्स। मतलब n सर्कल हैं। उनके बीच में कुछ एज होगा और हर एज का कुछ वेट होगा। मतलब आपका ग्राफ कुछ ऐसा दिखेगा। 0 1 2 3 आपका ग्राफ कुछ-कुछ ऐसा दिखेगा। ये आपका मान लीजिए ग्राफ है। मान लेते हैं कि इसका वेट टू है, थ्री है, फोर है। ये तीन वेट है। आपको एक सोर्स दिया रहेगा। सोर्स दिया रहेगा। सोर्स नोड। सोर्स नोड कुछ भी कुछ भी हो सकता है। यह 0 1 2 3 इसमें से कुछ भी हो सकता है। इस एक सोर्स से इस एक",
+      "source": "caption",
+      "english_text": "What does the diction algorithm do? Suppose there are n nodes in the graph. How many ns are there? n nodes. Meaning there are n circles. There will be some edge between them and each edge will have some weight. Meaning your graph will look something like this. 0 1 2 3 Your graph will look something like this. Suppose this is your graph. Let us assume that its weight is two, three, four. These are three weights. You will be given a source. Source will be given. Source node. The source node can be anything. It could be anything from 0 1 2 3. From this one source"
+    },
+    {
+      "start_time": 276.32,
+      "end_time": 309.909,
+      "text": "सिंगल सोर्स से इस एक सोर्स से सारे बाकी नोड्स सारे नोड्स का शॉर्टेस्ट डिस्टेंस निकालना है। सारे नड्स का शॉर्टेस्ट डिस्टेंस निकालना है। मतलब कि अगर आपको सोर्स जीरो देता है तो जीरो से बाकी नोड्स तक पहुंचने में क्या शॉर्टेस्ट पाथ है या शॉर्टेस्ट डिस्टेंस है जिसमें आपको कम से कम दूरी तय करनी पड़े वो आपको डिक्शन एल्गोरिदम से पता चलता है अगर आप लास्ट लेक्चर देख के आए हैं तो उसमें हम लोग क्या किए थे सेम चीज हुआ था शॉर्टेस्ट पाथ है फलाना फलाना ग्राफ लेकिन उसमें नॉन वेटेड था उसमें नॉनवेटेड था उसमें भी यही",
+      "source": "caption",
+      "english_text": "The shortest distance from a single source to all the remaining nodes is to be found. Have to find the shortest distance of all the nodes. Meaning, if the source gives you zero, then what is the shortest path to reach from zero to the rest of the nodes or the shortest distance in which you have to cover the minimum distance, that can be known to you from the dictionary algorithm. If you have come after watching the last lecture, then what we did in it was that the same thing happened, the shortest path is such and such graph but in that it was non weighted, in that also it was non weighted."
+    },
+    {
+      "start_time": 309.919,
+      "end_time": 338.55,
+      "text": "था कि आपको एक सोर्स मिलेगा सोर्स से बाकी नोट्स तक का शॉर्टेस्ट डिस्टेंस निकालना है लेकिन वो नॉन वेटेड था मतलब कि हर हर एक एज का वेट वन है। हर एक एज का वेट वन है। उसमें भी दिक्कत्राफ लगा सकते हैं। ऐसा नहीं कि उसमें नहीं लगा सकते। दिक्कत नॉन वेटेड का मतलब हर एक वेज का वेट वन है। सिंपल। लेकिन जब यहां पे वेटेड ग्राफ आ जाता है ना तो हम लोग पिछले लेक्चर में जो भी सीख के आए थे ना जो बीएफएस का सीखे थे कि याद कीजिए जीरो है तो जीरो के नेबर को पुश कर दो। फिर उसके नेबर को ऐसे-ऐसे करके उसमें ये बीएफएस काम नहीं करेगा।",
+      "source": "caption",
+      "english_text": "It was said that you will get a source and have to find the shortest distance from the source to the rest of the notes, but it was non-weighted, meaning that the weight of each edge is one. The weight of each edge is one. There can be problems in that too. It's not that it can't be used. The problem is non-weighted means each wedge has one weight. Simple. But when the weighted graph comes here, remember whatever we learned in the previous lecture or what we learned about BFS, if there is zero then push the neighbor of zero. Then by doing this to his neighbor this BFS will not work."
+    },
+    {
+      "start_time": 338.56,
+      "end_time": 372.87,
+      "text": "उसमें ये बीएफएस काम नहीं करेगा। उसमें ये बीएफएस क्यों काम नहीं करेगा? आगे बताएंगे। लेकिन dx मेनली ये करता है अगर आपको वेटेड ग्राफ मिलता है डायरेक्टेड हो अनडायरेक्टेड हो फर्क नहीं पड़ता है और आपको एक सिंगल सोर्स से बाकी सारे नड्स तक का शॉर्टेस्ट डिस्टेंस निकालना है मतलब एक एरे बनाना है एक क्या बनाना है 0 1 2 3 मतलब ज़ीरो से ज़ीरो जाने में कितना ज़ीरो से वन जाने में कितना ज़ीरो से टू जाने में कितना ज़ीरो से थ्री जाने में कितना तो आपको क्या यूज़ करना पड़ेगा Dra एल्गोरिदम dx एल्गोरिदम इसी प्रॉब्लम को सॉल्व करता है सिंगल सोर्स शॉर्टेस्ट पाथ इन वेटेड",
+      "source": "caption",
+      "english_text": "This BFS will not work in that. Why won't this BFS work in that? Will tell further. But dx mainly does this, if you get a weighted graph, it is directed or undirected, it does not matter and you have to find the shortest distance from a single source to all the other nodes, meaning to make an array, what to make of one, 0 1 2 3 meaning, how much to go from zero to zero, how much to go from zero to one, how much to go from zero to two, how much to go from zero to three, then what will you have to use Dra algorithm dx algorithm solves this problem Single Source Shortest Path in Weighted"
+    },
+    {
+      "start_time": 372.88,
+      "end_time": 406.39,
+      "text": "अनडायरेक्टेड और डायरेक्टेड ग्राफ ये होता है dra का यूज़ केस। आगे बढ़ते हैं और इसको खुल के समझते हैं। खुल के समझाते हैं। चलिए आगे बढ़िए तुरंत। तो आइए अब आपको हम क्या बोल रहे थे? Dstra क्या होता है? सिंगल सोर्स से शॉर्टेस्ट पाथ टू हर नो। ठीक है? मान लीजिए कि आप Google मैप्स में इंजीनियर हैं। आपको ये मैप दिया हुआ है इंडिया का। ठीक है? इंडिया के पांच शहर को हम लोग कनेक्ट किए हैं। कौन-कौन से? रांची, पटना, बेंगलुरु, दिल्ली, कोलकाता। अच्छी बात है। अब आपको रोड्स भी बताया हुआ है। यह यह जो एजेस है ना, यह क्या है? यह डायरेक्ट रोड्स हैं। रांची से पटना एक रोड है। पटना से बेंगलुरु एक रोड है। दिल्ली",
+      "source": "caption",
+      "english_text": "Undirected and directed graphs are the use cases of dra. Let's move ahead and understand this openly. Let us explain openly. Let's move ahead immediately. So now what were we telling you? What is Dstra? Shortest path from single source to every node. Ok? Let's say you're an engineer at Google Maps. You have been given this map of India. Ok? We have connected five cities of India. Which ones? Ranchi, Patna, Bengaluru, Delhi, Kolkata. It's a good thing. Now you have also been told the roads. What is this? These are direct roads. There is a road from Ranchi to Patna. There is a road from Patna to Bangalore. Delhi"
+    },
+    {
+      "start_time": 406.4,
+      "end_time": 438.23,
+      "text": "से बेंगलुरु एक रोड है। दिल्ली से कोलकाता एक रोड है। कोलकाता से बोर कोई रोड नहीं है। तो ठीक है। जैसा रोड है वैसा ही डिजाइन होगा। वेरी गुड। आपको इन रोड्स का डिस्टेंस भी बताया हुआ है। कितने किलोमीटर का हर रोड है। अब अनवेटेड तो है नहीं कि हर रोड 1 कि.मी. का है। नहीं। कोई रोड 2 कि.मी. का है। कोई रोड 10 कि.मी. का है। हो सकता है। बिल्कुल। अब आपको सोर्स के तौर पे क्या दिया हुआ है? रांची। आपको क्या करना है? रांची से रांची से हर एक नोट जाने का शॉर्टेस्ट डिस्टेंस फाइंड करना है। रांची से हर एक शहर तक पहुंचने का शॉर्टेस्ट डिस्टेंस कैलकुलेट करना है।",
+      "source": "caption",
+      "english_text": "There is a road from Bengaluru. There is a road from Delhi to Kolkata. There is no road beyond Kolkata. Well then. The design will be as the road is. very good. You have also been told the distance of these roads. How many kilometers is each road? Now it is not unweighted that every road is 1 km. Is of. No. Any road 2 km. Is of. Any road 10 km. Is of. It is possible Absolutely. Now what is given to you as a source? Ranchi. What do you have to do? We have to find the shortest distance for each note to go from Ranchi to Ranchi. The shortest distance to reach each city from Ranchi has to be calculated."
+    },
+    {
+      "start_time": 438.24,
+      "end_time": 472.71,
+      "text": "बहुत ध्यान से सुनिएगा कि ये जो दिक्कत एल्गोरिदम है ना आपको बस रांची से बाकी शहरों का रूट बताता है। अच्छा वाला। अगर कोई पूछे कि पटना से बेंगलुरु कैसे जाया जाता है? नहीं मालूम है। रांची से हर शहर कैसे पहुंचना है शॉर्टेस्ट में? ये आता है। अब पटना से बेंगलुरु कैसे पहुंचते और बोर से कोलकाता कैसे पहुंचते हैं? ये सब इसका काम नहीं है। दिक्रा का। ये सब दिक्करा का काम नहीं है। सिंगल सोर्स से बाकी नोट्स तक। अब अब आप कोई बोलेगा कि दिल्ली से पटना कैसे जाते हैं? नहीं। उसके लिए फिर दिल्ली से दशरा लगाओ। रांची से लगाए हो तो सिर्फ रांची से आंसर मिलेगा अच्छा वाला। दिल्ली से पटना हो सकता है आंसर मिले। हो सकता है नहीं भी मिले। ठीक",
+      "source": "caption",
+      "english_text": "Listen very carefully, the problem is that this algorithm just tells you the routes from Ranchi to other cities. fair one. If someone asks how to go from Patna to Bangalore? Don't know. How to reach every city from Ranchi in the shortest way? Here comes. Now how to reach Bengaluru from Patna and Kolkata from Bor? All this is not his job. Of Dikra. All this is not the work of Dikkara. From single source to remaining notes. Now can anyone tell you how to go from Delhi to Patna? No. For that, celebrate Dussehra again from Delhi. If you have applied from Ranchi then you will get good answer only from Ranchi. The answer may be found from Delhi to Patna. May not be found. okay"
+    },
+    {
+      "start_time": 472.72,
+      "end_time": 506.55,
+      "text": "बात है। चलिए। अब देखिए अब इसको शुरू कैसे करेंगे? अब सोचना पड़ेगा कि क्या अधिकारा क्या सोचा होगा? कैसे शुरू किया होगा? क्या उसका थॉट प्रोसेस रहा होगा? देखिए। सबसे पहले तो आपको सोर्स मिला हुआ है रांची। तो उम् शुरू में तो आपको कुछ नहीं मालूम है। शुरू में तो आप एक इंजीनियर आपको आपको कुछ आईडिया नहीं है। तो शुरू में हम लोग एक काम करते हैं। हर एक शहर का डिस्टेंस ना इंफिनिटी मान लेते हैं। शुरू में आपको कुछ नहीं मालूम है ना। स्टार्ट कर रहे हैं तो कुछ नहीं मालूम है। तो हर एक शहर अभी अभी कितना दूरी पे है? नहीं मालूम है। जब नहीं मालूम है और आपको मिनिमम निकालना है ना। इनफिनिटी मान लीजिए। अभी इनफिनिटी का मतलब कि हमको नहीं मालूम है। तो क्या करते हैं? पटना के ऊपर",
+      "source": "caption",
+      "english_text": "It's a matter. Let go. Now see how will we start it? Now we have to think, what would the officers have thought? How would you have started? What might have been his thought process? See. First of all, you have got the source, Ranchi. So um in the beginning you don't know anything. Initially, you are an engineer and you do not have any idea. So in the beginning we do one thing. The distance of every city is not considered to be infinity. In the beginning you don't know anything, right? If you are starting then you don't know anything. So how far away is each city right now? Don't know. When you don't know and you have to find the minimum. Assume infinity. Right now we don't know the meaning of infinity. So what to do? over Patna"
+    },
+    {
+      "start_time": 506.56,
+      "end_time": 540.87,
+      "text": "इंफिनिटी, इंफिनिटी, इंफिनिटी और इंफिनिटी मतलब कि इन चारों का अभी हमको नहीं मालूम है। अभी हम शुरू नहीं किए हैं तो हमको नहीं मालूम है। रांची का कितना डिस्टेंस है? क्या रांची का भी डिस्टेंस इंफिनिटी है क्या? नहीं। जब सोर्स रांची है ना तो सोर्स से सोर्स पहुंचने का रांची से रांची जाने का कितना डिस्टेंस है? ज़ीरो। रांची से रांची जाने का डिस्टेंस ज़ीरो है। तो हम लोग क्या करेंगे? ये लीजिए ज़ीरो। ये आपका शुरू का स्टेट हो गया। तो हर एक शहर पे आप डिस्टेंस लिख लिए कि भैया रांची से रांची जाने का मालूम है ज़ीरो। बाकी अभी किसी शहर का नहीं मालूम है तो बाकी सारे शहरों का इंफिनिटी है। वेरी गुड है। अब हम लोग ना",
+      "source": "caption",
+      "english_text": "Infinity, Infinity, Infinity and Infinity means that we do not know about these four yet. We haven't started yet so we don't know. What is the distance to Ranchi? Is the distance of Ranchi also infinite? No. When the source is Ranchi, then what is the distance from Ranchi to Ranchi? Zero. The distance from Ranchi to Ranchi is zero. So what will we do? Here's zero. This is your initial state. So on each city you wrote the distance, brother, the distance known to go from Ranchi to Ranchi is zero. The rest is not known for any city yet, so it is infinite for all the other cities. Very good. Now we all"
+    },
+    {
+      "start_time": 540.88,
+      "end_time": 567.11,
+      "text": "एक काम करेंगे। अब हम लोग एक काम करेंगे। देखिए अब हम लोग एक ट्रिक करेंगे जिसको हम लोग बोलते हैं रिलैक्सेशन। क्या रिलैक्सेशन? रिलैक्सेशन। रिलैक्सेशन क्या होता है? आप कोई एक शहर उठाते हैं। आप कोई एक शहर उठाते हैं जिसका अभी का डिस्टेंस, जिसका अभी का डिस्टेंस मिनिमम हो। जिसका अभी का डिस्टेंस मिनिमम हो। कौन सा शहर उठाते हैं जिसका प्रेजेंट का डिस्टेंस मिनिमम हो।",
+      "source": "caption",
+      "english_text": "Will do one thing. Now we will do one thing. See, now we will do a trick which we call relaxation. What relaxation? Relaxation. What is relaxation? You pick a city. You pick a city whose current distance is minimum. Whose current distance is minimum. Which city should we choose whose distance to the present is minimum?"
+    },
+    {
+      "start_time": 567.12,
+      "end_time": 598.87,
+      "text": "क्यों मिनिमम हो वो आगे पता चलेगा। अभी मान लीजिए थोड़े 5 मिनट के लिए अस्यूम कर लीजिए विश्वास कर लीजिए कि हम लोग ना सारे शहरों में से सारे शहरों में से ऐसा वाला शहर उठाते हैं जिसका डिस्टेंस मिनिमम हो। तो अभी किस शहर का डिस्टेंस मिनिमम है? शुरुआत में किस शहर का डिस्टेंस मिनिमम लग रहा है। ऑब्वियस सी बात है कि रांची का ही मिनिमम लगेगा क्योंकि बाकी सारे तो इनफिनिटी है। बाकी सारे इंफिनिटी है ना? तो शुरू में ऑब्वियस सी बात है कि सिर्फ आपको सोर्स का ही मिलेगा जो कि मिनिमम होगा। देखिए उठाइए सोर्स को। आपको आप क्या उठाए? देखिए आपको इसमें क्या पता चला?",
+      "source": "caption",
+      "english_text": "Why it should be minimum will be known later. Now assume for a few minutes, believe me, that out of all the cities, we choose the city whose distance is minimum. So which city's distance is minimum right now? In the beginning the distance of which city seems to be minimum. It is obvious that only Ranchi will have the minimum because all the rest are infinite. The rest is all infinity, right? So in the beginning it is obvious that you will get only the source which will be minimal. Look, pick the source. What did you pick up? See what you found out in this?"
+    },
+    {
+      "start_time": 598.88,
+      "end_time": 633.269,
+      "text": "आपको ये नोट देख के क्या पता चला? आपको एक बात पता चली कि रांची जाने का डिस्टेंस इसको हम यहां पे लिखते हैं कि आपको पता चला रांची। रांची से रांची जाने का डिस्टेंस कितना है? ज़ीरो। रांची से रांची जाने का डिस्टेंस जीरो है क्योंकि उसके ऊपर जीरो लिखा हुआ है। ठीक बात है। अब अगर आपको पता चल गया कि रांची जाने का डिस्टेंस जीरो है तो एक बात बताइए पटना और दिल्ली जो कि रांची के डायरेक्ट नेबर्स हैं। पटना और दिल्ली रांची के डायरेक्ट नेबर्स हैं। क्या आप उनका भी डिस्टेंस कैलकुलेट कर सकते हैं? बिल्कुल कर सकते",
+      "source": "caption",
+      "english_text": "What did you find out after seeing this note? You came to know one thing that the distance to go to Ranchi, we write here that you came to know Ranchi. What is the distance from Ranchi to Ranchi? Zero. The distance from Ranchi to Ranchi is zero because zero is written on it. That's right. Now if you know that the distance to go to Ranchi is zero, then tell me one thing that Patna and Delhi are the direct neighbors of Ranchi. Patna and Delhi are direct neighbors of Ranchi. Can you calculate their distance too? absolutely can"
+    },
+    {
+      "start_time": 633.279,
+      "end_time": 666.47,
+      "text": "हैं। बिल्कुल कर सकते हैं। क्यों? आपको पता चला आपका टारगेट क्या है? कि सोर्स से सारे शहरों का डिस्टेंस निकालना है। फेयर इनफ। आपको पता चला कि रांची से रांची जाने तक का डिस्टेंस जीरो है। मतलब आप रांची से रांची 0 कि.मी. में आ सकते हैं। वेरी गुड। आपको ये भी पता है क्योंकि पटना और दिल्ली रांची के डायरेक्ट नेबर्स हैं। रांची से रोड निकलता है। एक रोड पटना जाता है एक रोड दिल्ली जाता है। तो क्या आप पटना का डिस्टेंस और दिल्ली का डिस्टेंस कैलकुलेट कर सकते हैं? बिल्कुल कर सकते हैं। क्या आप रांची से बेंगलुरु का डिस्टेंस अभी कर सकते हैं? नहीं। क्योंकि रांची से बेंगलुरु डायरेक्ट रोड नहीं है। रांची से",
+      "source": "caption",
+      "english_text": "Are. Absolutely can. Why? Did you know what your target is? That the distance of all the cities from the source has to be calculated. Fair enough. You came to know that the distance from Ranchi to Ranchi is zero. Meaning you are 0 km from Ranchi to Ranchi. Can come in. very good. You also know this because Patna and Delhi are direct neighbors of Ranchi. The road starts from Ranchi. One road goes to Patna and one road goes to Delhi. So can you calculate the distance of Patna and distance of Delhi? Absolutely can. Can you do the distance from Ranchi to Bangalore now? No. Because there is no direct road from Ranchi to Bangalore. from Ranchi"
+    },
+    {
+      "start_time": 666.48,
+      "end_time": 701.19,
+      "text": "बेंगलुरु डायरेक्ट रोड कहां-कहां का है? दो रोड है। एक रोड पटना जाता है, एक रोड दिल्ली जाता है। तो क्या आप पटना और दिल्ली का डिस्टेंस कैलकुलेट कर सकते हैं? बिल्कुल कर सकते हैं। इसी चीज को हम लोग क्या बोलते हैं? रिलैक्सेशन। जभी भी आप किसी शहर को पकड़ते हैं जैसे अभी हम लोग रांची को पकड़ के बैठे हुए हैं। उसके डायरेक्ट नेबर्स का डिस्टेंस भी हम लोग कैलकुलेट कर सकते हैं ना? क्योंकि आपको ये डिस्टेंस मिलता है। ये डिस्टेंस क्या बोलता है? कि सोर्स से इस नोड तक मतलब रांची। तो सोर्स रांची है तो रांची से रांची तक डिस्टेंस ज़ीरो है। तो क्या हम लोग इसके सारे नेबर्स सारे इमीडिएट नेबर्स का डिस्टेंस कम से कम कैलकुलेट कर सकते",
+      "source": "caption",
+      "english_text": "Where is Bengaluru Direct Road? There are two roads. One road goes to Patna, one road goes to Delhi. So can you calculate the distance between Patna and Delhi? Absolutely can. What do we call this thing? Relaxation. Whenever you hold a city, like right now we are holding Ranchi. We can also calculate the distance of its direct neighbors, right? Because you get this distance. What does this distance say? That from source to this node means Ranchi. So if the source is Ranchi then the distance from Ranchi to Ranchi is zero. So can we at least calculate the distance of all its neighbors and all its immediate neighbors?"
+    },
+    {
+      "start_time": 701.2,
+      "end_time": 730.389,
+      "text": "हैं कि नहीं कर सकते हैं? बिल्कुल कर सकते हैं। तो देखिए हम लोग क्या करेंगे? रांची का पहला नेबर कौन है? पटना। रांची का पहला नेबर है पटना। अगर रांची से रांची जाने में जीरो डिस्टेंस लगता है जो कि लगना भी चाहिए और रांची से पटना का रोड 2 कि.मी. लॉन्ग है तो पटना तो सोर्स से पटना आने में कितना समय लगेगा? जितना भी रांची का डिस्टेंस है, ज़ीरो प्लस रांची से पटना वाला रोड का डिस्टेंस जो की 2 = 2. कैलकुलेट कर लिए?",
+      "source": "caption",
+      "english_text": "Are they or can't they? Absolutely can. So see what we will do? Who is the first neighbor of Ranchi? Patna. Ranchi's first neighbor is Patna. If it takes zero distance to go from Ranchi to Ranchi, which it should and the road from Ranchi to Patna is 2 km. If Patna is long then how much time will it take to reach Patna from the source? Whatever is the distance of Ranchi, zero plus the distance of Ranchi to Patna road which is 2 = 2. Have you calculated?"
+    },
+    {
+      "start_time": 730.399,
+      "end_time": 763.59,
+      "text": "वेरी गुड। दूसरे का भी करके रख लेते हैं। दूसरा क्या है? दिल्ली। दिल्ली में सेम टेक्निक अप्लाई कीजिए। दिल्ली में अगर रांची से रांची जाने में ज़ीरो लगता है और रांची से दिल्ली तक का डायरेक्ट रोड 10 कि.मी. लंबा है तो दिल्ली जाने में कितना समय लगेगा? जो भी यहां पे 0 + 10 कितना? 0 + 10 = 10। ठीक है? दोनों कर लिए। रांची से और तो कोई डायरेक्ट रोड नहीं जाता है। नहीं जाता है। वेरी गुड। इतना समझ में आया हो? बहुत अच्छी बात है। आगे बढ़ते हैं। अब अब देखिए पहले पहले जब आप शुरुआत किए थे पटना में",
+      "source": "caption",
+      "english_text": "Very good. Let's take care of others also. What is the second one? Delhi. Apply same technique in Delhi. दिल्ली में अगर रांची से रांची जाने में ज़ीरो लगता है और रांची से दिल्ली तक का डायरेक्ट रोड 10 कि.मी. लंबा है तो दिल्ली जाने में कितना समय लगेगा? जो भी यहां पे 0 + 10 कितना? 0 + 10 = 10। Ok? दोनों कर लिए। रांची से और तो कोई डायरेक्ट रोड नहीं जाता है। Doesn't go. very good. इतना समझ में आया हो? very good thing. Let's move ahead. अब अब देखिए पहले पहले जब आप शुरुआत किए थे पटना में"
+    },
+    {
+      "start_time": 763.6,
+      "end_time": 790.949,
+      "text": "कितना डिस्टेंस लिखा हुआ है? इंफिनिटी। आप जब कैलकुलेट किए तो आपको कितना डिस्टेंस मिला? 2 कि.मी. दिल्ली में कितना डिस्टेंस लिखा हुआ था? इंफिनिटी। जब आप कैलकुलेशन किए तो दिल्ली में कितना डिस्टेंस मिला? 10 कि.मी. अब अब रिलैक्स आप उस नोड को करेंगे। अभी वाले आंसर से अभी जो आंसर लिखा हुआ है अभी इनफिनिटी लिखा हुआ है दोनों में अगर उससे बढ़िया आंसर मिल जाता है। अगर उससे बढ़िया आंसर मिल जाता है।",
+      "source": "caption",
+      "english_text": "कितना डिस्टेंस लिखा हुआ है? Infinity. आप जब कैलकुलेट किए तो आपको कितना डिस्टेंस मिला? 2 कि.मी. दिल्ली में कितना डिस्टेंस लिखा हुआ था? Infinity. जब आप कैलकुलेशन किए तो दिल्ली में कितना डिस्टेंस मिला? 10 km अब अब रिलैक्स आप उस नोड को करेंगे। अभी वाले आंसर से अभी जो आंसर लिखा हुआ है अभी इनफिनिटी लिखा हुआ है दोनों में अगर उससे बढ़िया आंसर मिल जाता है। अगर उससे बढ़िया आंसर मिल जाता है।"
+    },
+    {
+      "start_time": 790.959,
+      "end_time": 825.59,
+      "text": "उसको हम लोग रिलैक्स कर देते हैं और आंसर को अपडेट कर देते हैं। कहने का क्या मतलब है? आपको पहले लगता था कि पटना जाने तक इंफिनिटी कि.मी. लगता है। अब आपको पता चला है आफ्टर यू रिलैक्स्ड रांची कि पटना जाने में इंफिनिटी नहीं लगता है। पटना जाने में दो लगता है व्हिच इज लेस देन इंफिनिटी। तो आप क्या करेंगे? पटना के डिस्टेंस को अपडेट कर देंगे। पटना के डिस्टेंस को अपडेट कर देंगे। किससे अपडेट कर देंगे? दो से। क्योंकि आपको एक नई इंफॉर्मेशन मिली है। आप इसको अपडेट कर दिए। सिमिलरली आप पहले सोचते थे कि भैया दिल्ली जाने में",
+      "source": "caption",
+      "english_text": "We relax it and update the answer. What does it mean to say? Earlier you used to think that till the time you reach Patna, Infinity Km. Seems like Now you have come to know after you relaxed Ranchi that it does not take infinity to go to Patna. It takes two to go to Patna, which is less than infinity. So what will you do? Will update the distance of Patna. Will update the distance of Patna. From whom will you update? By two. Because you have received new information. You updated it. Similarly, earlier you used to think that brother, in going to Delhi,"
+    },
+    {
+      "start_time": 825.6,
+      "end_time": 851.75,
+      "text": "इंफिनिटी कि.मी. लगता है। अब आपको पता चला कि ऐसा नहीं है। दिल्ली जाने में 10 ही कि.मी. लगता है व्हिच इज लेस देन द करंट आंसर। तो आपको क्या कर देना चाहिए? आपको अपडेट कर देना चाहिए दिल्ली को भी। दिल्ली के डिस्टेंस को भी आपको अपडेट करके क्या लिख देना चाहिए? 10 लिख देना चाहिए। वेरी गुड है। इतना भी समझ में आया होगा। ये तो बहुत सिंपल बात। अभी तो बहुत सिंपल जा रहा है ना? डिस्टेंस निकाले अ उसका कैलकुलेशन किए और अगर अभी का डिस्टेंस से वो डिस्टेंस कम है तो आंसर में उसका लिख दिए।",
+      "source": "caption",
+      "english_text": "Infinity Km. Seems like Now you know that it is not so. Only 10 kms to go to Delhi. Which seems to be less than the current answer. So what should you do? You should update Delhi also. What should you write after updating the distance of Delhi also? 10 should be written. Very good. You must have understood this much also. This is a very simple thing. It's going very simple right now? Find out the distance and calculate it and if that distance is less than the current distance then write it in the answer."
+    },
+    {
+      "start_time": 851.76,
+      "end_time": 879.75,
+      "text": "वेरी गुड। अभी तक समझ में आ रहा है? अब आगे चलते हैं। अब थोड़ा कॉम्प्लेक्स पार्ट आ रहा है। अभी तक समझ में आ रहा है? वेरी गुड। वेरी गुड। बहुत अच्छा जा रहा है। 60% हो चुका है काम। ठीक है? ठीक है? तो अभी तक आपको समझ में आया था कि हम लोग किसको प्रोसेस किए थे? रांची जीरो को प्रोसेस करके पटना और दिल्ली का अपडेट कर दिए थे रिजल्ट। यहां तक सबको समझ में आया है। चलिए अब देखते हैं। अब ये प्रोसेसिंग रुकना नहीं चाहिए। प्रोसेसिंग चलता रहेगा। एक-एक शहर को उठाने का जो प्रक्रिया है वो चलता रहेगा। तो देखिए अब अब आपके पास कितने शहर हैं? शहर मान लीजिए अभी भी पांच ही है। अभी हम हिप में नहीं घुस रहे हैं।",
+      "source": "caption",
+      "english_text": "Very good. Do you understand yet? Now let's move ahead. Now a slightly complex part is coming. Do you understand yet? very good. very good. It's going very well. 60% work has been done. Ok? Ok? So till now have you understood what we processed? The results of Patna and Delhi were updated after processing Ranchi Zero. Till now everyone has understood. Let us see now. Now this processing should not stop. Processing will continue. The process of lifting each city will continue. So look how many cities do you have now? Let's say the city is still only five. We're not getting into the hip yet."
+    },
+    {
+      "start_time": 879.76,
+      "end_time": 908.47,
+      "text": "किसी में नहीं घुस रहे हैं। शहर पांच है। अच्छा रांची को तो कर दिए प्रोग्रे प्रोसेस। अब रांची को तो बार-बार नहीं करिएगा ना। अब फिर से आप रांची को उठा के फिर से करिएगा तो फिर से वही काम हो जाएगा। अब अब रांची को एक बार कर दिए ना भाई। अब बार-बार रांची को थोड़ी करते रहे। बेवकूफ थोड़ी है। रांची को अलग करिए। कितने शहर बचे हैं? ये दोनों इंफिनिटी है। इनको भी अलग करिए। इंफिनिटी से प्रोसेस करके इंफिनिटी का मतलब है कि उसका कोई खोज खबर नहीं है। इन दोनों को भी अलग करिए। क्या दो शहर बचे हैं? अभी जिसको अपडेट किए थे पटना जिसका हमको पता चला है कि पटना तक जाने का आंसर कितना है? 2 कि.मी. दिल्ली।",
+      "source": "caption",
+      "english_text": "Not entering into anyone. The city is five. Well, Ranchi has progressed the process. Now you will not visit Ranchi again and again. Now if you pick up Ranchi again and do it again, the same thing will happen again. Now you have visited Ranchi once, brother. Now keep visiting Ranchi again and again. She is a bit stupid. Isolate Ranchi. How many cities are left? Both of these are infinity. Separate these also. Processing from Infinity to Infinity means that it has no search news. Separate these two also. Are there two cities left? The one which was recently updated about Patna, we came to know that what is the cost to reach Patna? 2 km Delhi."
+    },
+    {
+      "start_time": 908.48,
+      "end_time": 937.269,
+      "text": "दिल्ली तक जाने का हमको आंसर पता अभी तक पता चला है कि 10 कि.मी. ठीक है? ध्यान दीजिएगा कि ये फाइनल आंसर नहीं है। अभी तक अभी तक रांची को देख के एक आईडिया लगा है। वेरी गुड है। इन दोनों में से किसको प्रोसेस करें? पहले इन दोनों में से किसको? आप दोनों को कर सकते हैं। पटना को भी कर सकते हैं और दिल्ली को भी कर सकते हैं। इसीलिए याद कीजिए 10 मिनट पहले हम क्या बोले थे कि सबसे छोटा वाला शहर लेके उसको प्रोसेस करते हैं। ये हम क्यों बोले थे? इसका क्या मतलब है? देखिए आपके पास अब दो शहर का ऑप्शन है प्रोसेस करने के लिए।",
+      "source": "caption",
+      "english_text": "We have found out the answer to reach Delhi so far that it is 10 km. Ok? Please note that this is not the final answer. Till now, after seeing Ranchi, I have got an idea. Very good. Which of the two should I process? Which of these two should go first? You can do both. Can do it to Patna and also to Delhi. That's why remember what we said 10 minutes ago that we take the smallest city and process it. Why did we say this? What does it mean? See, now you have the option of two cities to process."
+    },
+    {
+      "start_time": 937.279,
+      "end_time": 968.55,
+      "text": "प्रोसेस करने का क्या मतलब है? यही रिलैक्सेशन जो काम आप रांची में किए थे ना कि रांची को लिए और रांची के इमीडिएट नेबर जहां-जहां डायरेक्ट रोड जाता है उसका कैलकुलेशन करके देख लिए। अगर वो अभी के आंसर से कम है तो आंसर को अपडेट कर दिए। यही काम था। ये काम सेम काम आप पटना से भी अब कर सकते हैं और दिल्ली से भी कर सकते हैं। लेकिन हम लोग ऐसा क्यों बोल रहे हैं कि जिस शहर का आंसर छोटा है जिस शहर में ये जो ग्रीन कलर का वैल्यू लिखा है ना वो छोटा वैल्यू है उसको पहले प्रोसेस करो। ये हम क्यों बोल रहे हैं? इसका लॉजिक क्या है? देखिए।",
+      "source": "caption",
+      "english_text": "What does it mean to process? The same relaxation work that you did in Ranchi, instead of taking Ranchi into consideration, you calculated the direct road going to the immediate neighbors of Ranchi. If it is less than the current answer then update the answer. This was the job. Now you can do the same work from Patna as well as from Delhi. But why are we saying that the city whose answer is small, the value of green color written in it is a small value, process it first. Why are we saying this? What is the logic of this? See."
+    },
+    {
+      "start_time": 968.56,
+      "end_time": 1003.269,
+      "text": "मान लेते हैं। मान लेते हैं कि आप बोले कि हम ऐसा बात नहीं मानते हैं। हम यह नहीं मानता हूं। हम पहले दिल्ली को प्रोसेस करेंगे। हम रैंडम ऑर्डर में प्रोसेस करेंगे। करिए करिए। देखिए इससे दिक्कत क्या होगा? आप आइए बोर पे थोड़ी देर के लिए कंसंट्रेट कीजिए। अगर आप पटना को पहले प्रोसेस करते जिसका अभी का डिस्टेंस 2 कि.मी. है तो आप बोर का कैलकुलेशन करते क्योंकि पटना और बेंगलुरु के बीच में डायरेक्ट रोड है। तो बेंगलुरु तक जाने का डिस्टेंस कितना मिलता आपको? देखिए पटना बोलता है कि दो आंसर है। इस दो का क्या मतलब है कि रांची टू पटना जाने का डिस्टेंस दो है और पटना टू बेंगलुरु के बीच में एक 4 कि.मी. का रोड है। तो रांची",
+      "source": "caption",
+      "english_text": "Let's accept it. Let us assume that you say that we do not believe that. We do not believe this. We will process Delhi first. We will process in random order. Do it, do it. See what problem this will cause? Come, concentrate on the bore for a while. If you had processed Patna first whose current distance was 2 km. If so, then you would have calculated the bore because there is a direct road between Patna and Bangalore. So how much distance would you have got to reach Bangalore? See Patna says there are two answers. What these two mean is that the distance to go from Ranchi to Patna is 2 km and there is a distance of 4 km between Patna to Bangalore. It is a road. so Ranchi"
+    },
+    {
+      "start_time": 1003.279,
+      "end_time": 1035.669,
+      "text": "टू बेंगलुरु जाने का डिस्टेंस कितना होगा? जो भी पटना तक आने का डिस्टेंस है प्लस ये वाला बोर तक का रोड। तो बोर का डिस्टेंस आप बोलते कि 6 कि.मी. है। अगर आप पटना को प्रोसेस करते तो अगर आप नहीं मानते हैं बात आप दिल्ली को प्रोसेस करने लगे तो सेम चीज करिए। दिल्ली से भी बोर का डायरेक्ट रोड है जिसका लेंथ है 5 कि.मी. रांची से दिल्ली आने में आपको 10 कि.मी. लग रहा है। दिल्ली से बोर तक 5 कि.मी. का रोड है। तो रांची से बोर जाने में कितना इस रूट से टाइम लगेगा? 15 कि.मी. यही होगा ना? 10 + 5 15 कि.मी. तो आप लिख दीजिए बोर 15",
+      "source": "caption",
+      "english_text": "What will be the distance to go to Bangalore? Whatever is the distance to reach Patna plus the road till this bore. So you say the distance of the bore is 6 km. Is. If you were processing Patna, then if you don't agree, if you start processing Delhi then do the same thing. There is also a direct road from Delhi to Bor whose length is 5 km. To reach Delhi from Ranchi you will have to travel 10 km. It seems. 5 km from Delhi to Bor. It is a road. So how much time will it take to get from Ranchi to Bor via this route? 15 km This is what will happen, right? 10 + 5 15 km So you write Bor 15"
+    },
+    {
+      "start_time": 1035.679,
+      "end_time": 1070.07,
+      "text": "कि.मी. क्या बोर का आंसर सच में 15 कि.मी. है? नहीं। बेंगलुरु तक जाने का सबसे छोटा रोड ना ये है। ये आप पहले रांची से पटना जाइए 2 कि.मी. पटना से बोर जाइए और 6 कि.मी. पहुंच जाइए। बेंगलुरु तक जाने का सबसे छोटा रूट ये वाला नहीं है जो आप अभी कर रहे हैं। इसीलिए पहली बात तो कि आप अब लार्जर वाले को प्रोसेस कर रहे हैं ना तो आप बेकार का काम कर रहे हैं। आप देखिए उससे आंसर आ जाएगा। आप बोर को पहले 15 कीजिएगा फिर आप और काम कीजिएगा। फिर आप पटना को प्रोसेस करके फिर देखिएगा कि नहीं छह तो 15 से छोटा है तो उसको फिर से बेकार का प्रोसेसिंग हो रहा है। दूसरी बात क्या",
+      "source": "caption",
+      "english_text": "km. Is the answer to bore really 15 km? Is? No. This is the shortest road to reach Bangalore. You first go to Patna from Ranchi, 2 km. From Patna go to Bor and 6 km. Reach out. The shortest route to Bangalore is not the one you are doing now. That's why first of all, if you are now processing the larger one, you are doing useless work. You see, the answer will come from that. You will first make the bore 15 and then you will do more work. Then you will process Patna again and see if six is ​​less than 15 then again it is being processed unnecessarily. what is the second thing"
+    },
+    {
+      "start_time": 1070.08,
+      "end_time": 1097.35,
+      "text": "दिल्ली तक पहुंचने के लिए 10 आपका ऑप्टिमल आंसर है? नहीं। दिल्ली का आंसर भी अभी आपका गलत है। अभी तो आपको बस एक आईडिया लगा है। अब देखिए ग्राफ को देख के अगर हम आपको बोले कि भैया रांची से दिल्ली जाने का क्या है शॉर्टेस्ट रूट? तो क्या आप इस रूट से जाएंगे जिसमें 10 कि.मी. लग रहा है? नहीं। आप क्या करिएगा? आप पहले रांची से पटना जाइएगा 2 कि.मी. पटना से दिल्ली जाइएगा और 3 कि.मी. तो इसका डिस्टेंस ना दिल्ली का असली डिस्टेंस 10 है ही नहीं।",
+      "source": "caption",
+      "english_text": "10 is your optimal answer to reach Delhi? No. Your answer of Delhi is also wrong now. Right now you just have an idea. Now look at the graph, if we tell you, brother, what is the shortest route to go from Ranchi to Delhi? So will you go through this route which involves 10 Km. It seems? No. What will you do? You will first go from Ranchi to Patna, 2 km. From Patna go to Delhi and 3 km. So its distance is not the real distance of Delhi 10."
+    },
+    {
+      "start_time": 1097.36,
+      "end_time": 1131.19,
+      "text": "दिल्ली का असली डिस्टेंस 5 कि.मी. है। इसीलिए भी अगर आप दिल्ली को अभी प्रोसेस करेंगे ना तो पहले तो आप गलत डिस्टेंस पे प्रोसेस कर रहे हैं जो कि अभी आपको मालूम नहीं है। आपको ये काम आपको ये दिल्ली का डिस्टेंस कब पता चलेगा? जब आप पटना को प्रोसेस करेंगे। जब आप पटना को प्रोसेस करेंगे ना तो क्या होगा? पटना से दिल्ली तक का रोड है। पटना का डिस्टेंस टू है। तो पटना दिल्ली का क्या कैलकुलेशन निकालेगा? कि भैया रांची से पटना जाने तक दो लग रहा है। 2 + 3 दिल्ली जाने का पांच। क्या पांच अभी वाले से कम है? हां अभी वाले से कम है तो एक काम करो 10 को काट के पांच को अपडेट कर दो तो ये दिल्ली का असली डिस्टेंस ना",
+      "source": "caption",
+      "english_text": "The actual distance of Delhi is 5 km. Is. That's why if you process Delhi now then first of all you are processing the wrong distance which you are not aware of yet. When will you know this work and the distance to Delhi? When you process Patna. What will happen when you process Patna? There is a road from Patna to Delhi. The distance to Patna is 2. So what calculation will Patna and Delhi calculate? That brother, it is taking two hours to go from Ranchi to Patna. 2 + 3 Five to go to Delhi. Is five less than the current one? Yes, if it is less than the present one then do one thing, cut off 10 and update five, then this will be the real distance of Delhi."
+    },
+    {
+      "start_time": 1131.2,
+      "end_time": 1164.63,
+      "text": "आपको पटना के बाद पता चलता लेकिन आप बात नहीं माने आप बोले कि हम पटना को नहीं करेंगे प्रोसेस हम पहले ही दिल्ली को कर लेंगे तो इससे दो गलती हो रहा है पहले तो आप इसका गलत आंसर ले लिए आप इसका 10 पे प्रोसेस कर रहे हैं और इसके कारण आप बेंगलुरु और कोलकाता का भी गलत आंसर निकाल दिए गलत आंसर निकलेगा ना अब क्या निकलेंगे बेंगलुरु के लिए 15 लिख दीजिएगा और इसके लिए 11 लिख दीजिएगा इसका नहीं है 11 ये सब डिपेंडेंट है आपके दिल्ली के सही नॉलेज लेकिन आप ये गलती कर दिए। इसीलिए बेकार बार-बार बार-बार बार-बार काम नहीं करना पड़े। इसीलिए आप सबसे छोटे वाले को प्रोसेस करते हैं। इसको एक लॉजिकल ढंग से",
+      "source": "caption",
+      "english_text": "You would have come to know after Patna but you did not agree, you said that we will not process Patna, we will already process Delhi, so two mistakes are being made by this, first, you have taken the wrong answer for it, you are processing it at 10 and due to this, you have also given the wrong answer for Bengaluru and Kolkata, the wrong answer will come out, now what will come out, write 15 for Bengaluru and write 11 for this, it is not. 11 All this depends on your correct knowledge of Delhi but you made this mistake. That's why you don't have to do useless work again and again. That's why you process the smallest one. do it in a logical way"
+    },
+    {
+      "start_time": 1164.64,
+      "end_time": 1198.87,
+      "text": "भी सोच के देखिए। अगर आपको दो चॉइस दिया जाए अगर आपको दो चॉइस दिया जाए कि देखो दो शहर है। पटना 2 कि.मी. दूर है और दिल्ली 10 कि.मी. दूर है। अब तुम देख लो एक्सप्लोर करके। तो लॉजिकली सोचिए कि इंसान पहले कहां जाएगा? आपको बोला जा रहा है कि भैया रांची पे तो हो गया। पटना 2 कि.मी. दूर है और दिल्ली 10 कि.मी. दूर है। आगे का प्रोसेसिंग करो। तो कोई भी इंसान ऐसा बोलेगा कि ठीक है हम पहले 10 कि.मी. दूर चले जाते हैं। वहां का नहीं धीरे-धीरे चलते हैं लोग। स्टेप बाय स्टेप चलते हैं। आप पहले पटना जाएंगे। पटना से प्रोसेसिंग करेंगे। उसके बाद जो पटना से और दूरी पे होगा वहां जाएंगे। कोई ऐसा",
+      "source": "caption",
+      "english_text": "Also think about it. If you are given two choices, if you are given two choices, look, there are two cities. Patna 2 km. Far away and Delhi is 10 km. is far away. Now you see by exploring. So think logically where will the person go first? You are being told that it has happened in Ranchi. Patna 2 km. Far away and Delhi is 10 km. is far away. Do further processing. So any person will say that okay we will cover the first 10 kms. Go away. Not from there, people walk slowly. Let's go step by step. You will go to Patna first. Will process from Patna. After that we will go to places which are further away from Patna. someone like that"
+    },
+    {
+      "start_time": 1198.88,
+      "end_time": 1233.83,
+      "text": "नहीं करेगा कि नहीं हम पहले 10 कि.मी. वाला करेंगे फिर दो। ऐसा तो कोई नहीं करता है। इसीलिए इसको ना ग्रीडी एल्गोरिदम बोला जाता है। आप ग्रीडी हो रहे हैं। आप ग्रीडी किसके लिए हो रहे हैं? जिस भी शहर का डिस्टेंस सबसे कम रहेगा ना उसको प्रोसेस करेंगे। उसको प्रोसेस करेंगे। तो आप किसको प्रोसेस करना चाहिए और क्यों करेंगे ये हम आपको समझा चुके हैं कि दो गलती ये पूछा जाएगा इंटरव्यू में क्यों कर रहे हो? हो सकता है पूछा जाए। ऐसे इतना डीप नहीं पूछता है लेकिन ठीक है हम आपको बता दिए बताने के लिए क्योंकि हम नहीं चाहते कि आप इसको याद करने लगे। इसको याद करने से कोई ज्यादा फायदा होगा नहीं आपको। याद मत कभी कीजिएगा। इसलिए करते हैं क्योंकि आपको दिल्ली का सही इनफार्मेशन नहीं है। आप",
+      "source": "caption",
+      "english_text": "Will we not do it or not? We will cover the first 10 km. Will do that, then give it. No one does this. That is why it is called non-greedy algorithm. You are being greedy. Who are you getting greedy for? Whichever city has the shortest distance will be processed. Will process it. So what should you process and why should you do this? We have already explained to you that why are you doing this in the interview? Might be asked. It doesn't ask so deeply but it's okay for us to tell you because we don't want you to start remembering it. You will not get much benefit by remembering this. Don't ever remember. You do this because you do not have correct information about Delhi. you"
+    },
+    {
+      "start_time": 1233.84,
+      "end_time": 1267.35,
+      "text": "दिल्ली को प्रोसेस कर रहे हैं जबरदस्ती। दिल्ली का सही इनफार्मेशन आने दीजिए ना भाई। पटना को कर लीजिए। हो सकता है कि पटना का भी सही इनफेशन नहीं हो। देखिए हो कुछ भी सकता है लेकिन अब अगर पटना दो और दिल्ली 10 है तो प्रोबेबिलिटी किसका ज्यादा है सही होने की? पटना के ज्यादा सही होने की। अब दो से कम क्या होगा? दो से कम एक हो जाएगा क्या? उसकी कम प्रोबेबिलिटी है। लेकिन 10 से ये पांच होने की प्रोबेबिलिटी बहुत ज्यादा है। इसीलिए हम लोग किसको प्रोसेस करेंगे? पटना को। दिल्ली, दिल्ली है। दिल्ली पाइप लाइन में है। दिल्ली पाइप लाइन में बैठा हुआ है। ठीक है? आइए। किसको प्रोसेस किए? पटना को। पटना के ऊपर क्या लिखा हुआ है? दो।",
+      "source": "caption",
+      "english_text": "They are processing Delhi forcefully. Please let the correct information about Delhi come brother. Do it to Patna. It is possible that even Patna may not have the correct infection. Look, anything can happen, but now if Patna is 2 and Delhi is 10, then whose probability is more to be right? Patna being more correct. Now what will be less than two? Will two be less than one? It has low probability. But the probability of it being five out of 10 is very high. So who will we process? To Patna. Delhi is Delhi. Delhi is in the pipeline. Delhi is sitting in the pipeline. Ok? Come. Processed whom? To Patna. What is written on Patna? Two."
+    },
+    {
+      "start_time": 1267.36,
+      "end_time": 1300.95,
+      "text": "इसका क्या मतलब है? कि कि इसका एक ही मतलब है कि रांची से पटना जाने में रांची से पटना जाने में 2 कि.मी. लगता है। सेम रिलैक्सेशन कीजिए। सेम रिलैक्सेशन कीजिए। रिलैक्सेशन का क्या मतलब है? पटना से डायरेक्ट रोड कहां-कहां जाता है? तो देखिए पटना से पहला डायरेक्ट रोड तो रांची जाता है। करके देख लीजिए। अब देख लीजिए पटना से रांची जाके। पटना तक आप दो में पहुंचते हैं। पटना से रांची 2 कि.मी. का रोड है। तो वापस रांची जाने में आपको रांची का आंसर चार करना पड़ेगा। क्या",
+      "source": "caption",
+      "english_text": "What does it mean? That means only one thing, that in going from Ranchi to Patna, there is a distance of 2 km in going from Ranchi to Patna. Seems like Do the same relaxation. Do the same relaxation. What does relaxation mean? Where does the direct road go from Patna? So see, the first direct road from Patna goes to Ranchi. Try it and see. Now try going from Patna to Ranchi. You reach Patna in two. Ranchi 2 km from Patna. It is a road. So to go back to Ranchi you will have to return to Ranchi. what"
+    },
+    {
+      "start_time": 1300.96,
+      "end_time": 1335.51,
+      "text": "आपको रांची का आंसर जीरो से चार कर देना चाहिए क्या? नहीं। क्या हम लोग मैक्सिमम पार्ट ढूंढ रहे हैं क्या? नहीं। रांची का आंसर ऑलरेडी सबसे मिनिमम जीरो है। जीरो से कम आंसर नहीं हो सकता है। तो कोई फायदा नहीं है। ये वाला कुछ नहीं। ये रिलैक्सेशन फेल हो गया। अगला कीजिए। पटना से बेंगलुरु जाने का 4 कि.मी. का रोड है। ठीक है? रांची से पटना आने में 2 कि.मी. लगता है। पटना से बेंगलुरु जाने में कितना किलोमीटर लगता है? 4 कि.मी. तो ओवरऑल रांची से बोर जाने में कितना किलोमीटर लगेगा? 2 + 4 व्हिच इज़ सिक्स। क्या ये जो सिक्स है ये बोर के आंसर से कम है? क्या ये इंफिनिटी से कम है? बिल्कुल कम है। तो क्या हुआ",
+      "source": "caption",
+      "english_text": "Should you change the answer of Ranchi from zero to four? No. Are we looking for the maximum part? No. Ranchi's answer is already the minimum zero. There cannot be an answer less than zero. So there is no use. This one is nothing. This relaxation failed. Do the next one. 4 km from Patna to Bangalore. It is a road. Ok? 2 km to reach Patna from Ranchi. Seems like How many kilometers does it take to go from Patna to Bangalore? 4 km So overall how many kilometers will it take to go from Ranchi to Bor? 2 + 4 Which is Six. Is this six less than Bore's answer? Is it less than infinity? Absolutely less. so what happened"
+    },
+    {
+      "start_time": 1335.52,
+      "end_time": 1362.31,
+      "text": "पहला रिलैक्सेशन? पहला रिलैक्सेशन। पहला रिलैक्सेशन क्या हो गया? आप बोर को अपडेट करके क्या लिख दिए? सिक्स। क्यों लिख दिए? पटना तक जाने में दो लगता है। पटना से बोर चार लगता है। रांची से बोर इस रूट से जाएंगे तो कितना कि.मी. लगेगा? 2 + 4 व्हिच इज 6 कि.मी. वेरी गुड। एक और रिलैक्सेशन हो गया। एक और जो हम पिछले में बात किए थे दिल्ली। दिल्ली भी तो है इसका। दिल्ली भी तो इसका दोस्त है। सेम काम कीजिए। रांची से पटना जाने में 2 कि.मी.",
+      "source": "caption",
+      "english_text": "First relaxation? First relaxation. What was the first relaxation? What did you write after updating the bore? Six. Why did you write? It takes two to reach Patna. It takes four hours to get bored from Patna. If you go from Ranchi to Bor by this route, how many kilometers will it cover? Will it take? 2 + 4 which is 6 km. very good. Another relaxation took place. Another one which we talked about in the past is Delhi. Delhi also belongs to him. Delhi is also its friend. Do the same work. 2 km to go from Ranchi to Patna."
+    },
+    {
+      "start_time": 1362.32,
+      "end_time": 1397.11,
+      "text": "लगता है जो कि इसके आंसर में लिखा हुआ है जो कि आपको यहां पता चल रहा है। पटना से दिल्ली 3 कि.मी. का रोड है। तो रांची से दिल्ली इस रूट से जाएंगे तो कितना कि.मी. लगेगा? दो और तीन, दो और तीन, 5 कि.मी. क्या ये पांच दिल्ली के अभी के आंसर से कम है? यस अभी के आंसर से कम है। दिल्ली को अपडेट कर दो भाई। दिल्ली को अपडेट कर दो। दिल्ली को अपडेट कर दो। क्या लिख दो? 5 कि.मी. देखिए अब दिल्ली सही हो गया। अब दिल्ली सही हो गया। पहले दिल्ली 10 था। आप उसको यूज़ कर रहे हैं जबरदस्ती। अब दिल्ली सही हो गया। ठीक है? क्या पटना का काम हो चुका है? हां, पटना काम हो चुका है। ठीक है? पटना काम हो चुका है। तो नहीं करेंगे।",
+      "source": "caption",
+      "english_text": "It seems that what is written in its answer is what you are getting to know here. Patna to Delhi 3 km. It is a road. So if we go from Ranchi to Delhi by this route then how many kms? Will it take? Two and three, two and three, 5 km. Are these five less than Delhi's current answer? Yes is less than the current answer. Please update Delhi brother. Please update Delhi. Please update Delhi. What to write? 5 km See, now Delhi has become alright. Now Delhi is right. Earlier it was Delhi 10. You are using him forcefully. Now Delhi is right. Ok? Is the work of Patna done? Yes, Patna work has been done. Ok? Patna work has been done. So won't do it."
+    },
+    {
+      "start_time": 1397.12,
+      "end_time": 1430.39,
+      "text": "ठीक है? अब देखिए। अब देखिए फिर से आइए। फिर से आइए। रांची। रांची को बार-बार प्रोसेस करने की जरूरत नहीं है। रांची रांची रिलैक्स नहीं हुआ था ना। मतलब देखिए हम लोग किसको कब प्रोसेस करेंगे? रांची का ओरिजिनल ओरिजिनल डिस्टेंस जीरो था। अब अगर रांची मान लीजिए -2 हो जाता तो उसको करते नहीं हुआ। अच्छा अगला कौन सा शहर आपको दिख रहा है जिसको आपको प्रोसेस कर देना चाहिए? देखिए पटना टू अभी करके आए हैं। पटना बार-बार नहीं करेंगे। दिल्ली फाइव बेंगलुरु सिक्स। ये तो बेचारा इंफिनिटी है। इसको तो कोई है नहीं खोज खबर। नहीं करेंगे। किसको प्रोसेस करना चाहिए? मिनिमम वाले को। किसको प्रोसेस करना चाहिए?",
+      "source": "caption",
+      "english_text": "ok? watch now. Now see come again. Come again. Ranchi. There is no need to process Ranchi again and again. Ranchi Ranchi Wasn't relaxed? Meaning, see whom will we process and when? The original distance of Ranchi was zero. Now suppose Ranchi had become -2 then it would not have happened. Okay, what's the next city you see that you should process? Look, we have just completed Patna 2. Will not visit Patna again and again. Delhi Five Bengaluru Six. This is poor Infinity. There is no search news for this. Will not do. Who should process? To the minimum one. Who should process?"
+    },
+    {
+      "start_time": 1430.4,
+      "end_time": 1458.23,
+      "text": "मिनिमम वाले को। क्यों? बता चुके हैं। कौन है मिनिमम? दिल्ली पांच। दिल्ली पांच आपको क्या बताता है? दिल्ली पांच आपको बताता है कि भैया रांची से दिल्ली रांची से दिल्ली आने में 5 कि.मी. लगता है। अब रांची से दिल्ली आने में पांच कैसे लगता है नहीं मालूम। हो सकता है रांची से डायरेक्ट आए हो सकता है घूम के आए हो हमको नहीं मालूम लेकिन रांची से दिल्ली तक का शॉर्टेस्ट पाथ 5 कि.मी. है। वेरी गुड। अब रिलैक्स करिए। आइए। दिल्ली से चार रोड निकलता है।",
+      "source": "caption",
+      "english_text": "To the minimum one. Why? Have told. Who is Minimum? Delhi five. What does Delhi Five tell you? Delhi Five tells you that it takes 5 kms to travel from Ranchi to Delhi. Seems like Now I don't know how it takes five days to come from Ranchi to Delhi. Maybe he came directly from Ranchi or maybe he came after travelling, we don't know but the shortest path from Ranchi to Delhi is 5 km. Is. very good. Now relax. Come. There are four roads leading from Delhi."
+    },
+    {
+      "start_time": 1458.24,
+      "end_time": 1490.87,
+      "text": "आइए एक-एक करके देखें। रांची को रिलैक्स करके कोशिश कीजिए। दिल्ली बोल रहा है कि मेरे तक आने में पांच लगता है और रांची तक का रोड 10 कि.मी. है तो हम इसको 15 कर दें क्या? नहीं। रांची ऑलरेडी जीरो है। अगर 15 इससे कम होता तो अपडेट करते। नहीं करना है रिलैक्स। नहीं करना है रिलैक्स। कोई बात नहीं मत कीजिए। दिल्ली से पटना एक रोड है 3 कि.मी. का। ये बोलता है कि मेरे तक आने में पांच लगता है और पटना जाने में तीन लगता है। तो हम पटना को 5 + 3 8 कर दें क्या? नहीं। नहीं नहीं जरूरत है। पटना ऑलरेडी दो पे बैठा हुआ है भाई। दो से ज्यादा नहीं बढ़ाना है। दो से कम वैल्यू मिलेगा तो बढ़ाएंगे। दो से ज्यादा नहीं।",
+      "source": "caption",
+      "english_text": "Let's see one by one. Try relaxing Ranchi. Delhi is saying that it takes five kilometers to reach me and the road to Ranchi is 10 kilometers. So should we make it 15? No. Ranchi is already zero. If it was less than 15, we would have updated. Don't relax. Don't relax. Don't say anything. Delhi to Patna is a road distance of 3 km. Of. It says that it takes five to reach me and three to go to Patna. So should we make Patna 5 + 3 8? No. No no need. Patna is already sitting on two, brother. Do not increase more than two. If we get less than two values, we will increase it. Not more than two."
+    },
+    {
+      "start_time": 1490.88,
+      "end_time": 1523.11,
+      "text": "ये रिलैक्सेशन भी फेल हो गया। बोर पे आइए। दिल्ली बोलता है कि भैया मेरे तक आने में 5 कि.मी. लगता है और दिल्ली से बोर 5 कि.मी. का रोड और है। तो टोटल लगेगा 5 + 5 10। क्या बोर को अपडेट कर दें क्या? नहीं 10 बड़ा है छह से। अपडेट करने की जरूरत नहीं है। रिलैक्सेशन फेल हो गया। बिल्कुल मत कीजिए। ये भी फेल। कोलकाता पे आइए। दिल्ली बोलता है कि भैया मेरे तक आने में 5 कि.मी. लगता है। कोलकाता और मेरे बीच में 1 कि.मी. का डायरेक्ट रोड है। तो कोलकाता जाने में कितना समय लगेगा मेरे थ्रू? 5 + 1 6 क्या सिक्स इससे कम है?",
+      "source": "caption",
+      "english_text": "This relaxation also failed. Come on the bore. Delhi says that brother it will take 5 km to reach me. It is located and bore 5 km from Delhi. There is another road. So total will be 5 + 5 10. Should we update the bore? No, 10 is bigger than six. No need to update. Relaxation failed. Don't do it at all. This also failed. Come to Kolkata. Delhi says that brother it will take 5 km to reach me. Seems like There is 1 km between Kolkata and me. Has a direct road. So how much time will it take to reach Kolkata through me? 5 + 1 6 Is six less than this?"
+    },
+    {
+      "start_time": 1523.12,
+      "end_time": 1552.549,
+      "text": "बिल्कुल कम है। किसको अपडेट कीजिए? कोलकाता को। किसको अपडेट कीजिए? कोलकाता को। कोलकाता को रिलैक्स कर दिए। वेरी गुड। खत्म हो गया दिल्ली का काम। वेरी खत्म हो गया। फिर देखिए क्या-क्या चेंज हुआ? क्या-क्या चेंज हुआ? देखिए। अब चेंज ये भी हुआ था। ये भी हुआ। ये हुआ नहीं था। ये पिछले बार हुआ था। अब एक-एक करके इनको भी कर लेते हैं। ये भी सिक्स है। ये भी सिक्स है। किसको करेंगे? आपकी मर्जी। आपकी मर्जी जिसको भी करिए। बोर करके देख लीजिए। बोर से कितने लोग कनेक्टेड हैं? दो लोग। बोर बोलता है भैया मेरे तक आने में 6 कि.मी.",
+      "source": "caption",
+      "english_text": "Absolutely less. Update whom? To Kolkata. Update whom? To Kolkata. Relaxed Kolkata. very good. Delhi work is over. Very finished. Then see what changed? What changed? See. Now this change also happened. This also happened. This did not happen. This happened last time. Now let's do these one by one. This is also six. This is also six. To whom will you do it? As you wish. Do whatever you want with anyone. Try boring. बोर से कितने लोग कनेक्टेड हैं? Two people. बोर बोलता है भैया मेरे तक आने में 6 कि.मी."
+    },
+    {
+      "start_time": 1552.559,
+      "end_time": 1585.909,
+      "text": "लगता है। पटना मेरे पटना और मेरे बीच में 4 कि.मी. का रोड है। 6 + 4 10 क्या पटना को अपडेट करें? ना पटना ऑलरेडी दो है। फेल हो गया। सेम काम है। 6 + 5 ये बोलेगा 11 कर दें क्या दिल्ली को? बोले दिल्ली बोले हमको जरूरत नहीं 11 का। ये भी फेल हो गया। बोर खत्म हो गया। कोलकाता पे आइए। कोलकाता बोलता है मेरे तक आने में सिक्स लगता है। मेरा एक ही डायरेक्ट नेबर है दिल्ली। तो ये बोलेगा हम दिल्ली को 6 + 1 से 7 कर दें क्या? दिल्ली बोलता है हमको उसका जरूरत नहीं है। हम ऑलरेडी पांच पे कंफर्टेबली बैठे हुए हैं। ये भी रिलैक्सेशन फेल हो गया। अब देखिए सब खत्म हो गया। अब आप कुछ नहीं। अब आप जितनी बार इसको रिपीट करेंगे",
+      "source": "caption",
+      "english_text": "It seems. पटना मेरे पटना और मेरे बीच में 4 कि.मी. का रोड है। 6 + 4 10 क्या पटना को अपडेट करें? ना पटना ऑलरेडी दो है। Failed. सेम काम है। 6 + 5 ये बोलेगा 11 कर दें क्या दिल्ली को? बोले दिल्ली बोले हमको जरूरत नहीं 11 का। ये भी फेल हो गया। बोर खत्म हो गया। कोलकाता पे आइए। कोलकाता बोलता है मेरे तक आने में सिक्स लगता है। मेरा एक ही डायरेक्ट नेबर है दिल्ली। तो ये बोलेगा हम दिल्ली को 6 + 1 से 7 कर दें क्या? दिल्ली बोलता है हमको उसका जरूरत नहीं है। हम ऑलरेडी पांच पे कंफर्टेबली बैठे हुए हैं। ये भी रिलैक्सेशन फेल हो गया। अब देखिए सब खत्म हो गया। अब आप कुछ नहीं। अब आप जितनी बार इसको रिपीट करेंगे"
+    },
+    {
+      "start_time": 1585.919,
+      "end_time": 1618.789,
+      "text": "ना सेम अब कुछ नहीं बदलेगा। ये हम कोड में बताएंगे और आगे चल के बताएंगे कि हीप वगैरह में क्या यूज़ है। लेकिन हम आपको बहुत सिंपली बता रहे हैं कि अब आप कुछ भी करिएगा ना। किसी को उठा के रिलैक्स करते रहिए। कुछ नहीं बदलने वाला है। देखिए क्या निकल के आया। रांची टू रांची जाने का कितना डिस्टेंस है? 0 कि.मी. जो कि होना चाहिए। रांची से पटना जाने का कितना है शॉर्टेस्ट पाथ? 2 कि.मी. कौन सा पाथ है वो? ये वाला पाथ है। वेरी गुड। रांची से दिल्ली पहुंचने का पाथ 5 कि.मी. कैसे? 2 3 रांची से पटना। पटना से दिल्ली 2 + 3 5 अच्छा लग रहा है। रांची से बेंगलुरु",
+      "source": "caption",
+      "english_text": "No, nothing will change now. We will explain this in the code and later on we will explain what is the use of heap etc. But we are telling you very simply that now you can do anything. Keep someone up and relax. Nothing is going to change. Look what came out. What is the distance to go from Ranchi to Ranchi? 0 km Which should happen. What is the shortest path to go from Ranchi to Patna? 2 km Which path is that? This is the path. very good. The path to reach Delhi from Ranchi is 5 km. How? 2 3 Ranchi to Patna. Patna to Delhi 2 + 3 5 looks good. Ranchi to Bengaluru"
+    },
+    {
+      "start_time": 1618.799,
+      "end_time": 1649.75,
+      "text": "पहुंचने का डिस्टेंस 6 कि.मी. कौन सा रोड जाने पे? रांची से पटना जाइए। पटना से बेंगलुरु जाइए। वेरी गुड। रांची से कोलकाता पहुंचने का डिस्टेंस 6 कि.मी. कौन सा रोड लेके? रांची से दिल्ली पहुंचिए। दिल्ली से कोलकाता पहुंचिए। ये वाला रोड सारा डिस्टेंस सेट हो चुका है और यही आपका आंसर है। यही आपका फाइनल आंसर है। इसी एल्गोरिदम को डिक्शरा एल्गोरिदम बोला जाता है हिंदी में। इसी एल्गोरिदम को क्या बोला जाता है? डिक्श्रा एल्गोरिदम। अब आइए आगे बढ़ते हैं। अब कोड और हिप और फीप जो भी है।",
+      "source": "caption",
+      "english_text": "Reaching distance 6 km. Which road to go on? Go from Ranchi to Patna. Go from Patna to Bangalore. very good. The distance to reach Kolkata from Ranchi is 6 km. Which road to take? Reach Delhi from Ranchi. Reach Kolkata from Delhi. The entire distance of this road has been set and this is your answer. This is your final answer. This algorithm is called Dikshara algorithm in Hindi. What is this algorithm called? DIXRA algorithm. Now let us proceed further. Now the code and hip and feap whatever."
+    },
+    {
+      "start_time": 1649.76,
+      "end_time": 1683.59,
+      "text": "अब अब उस पे चलते हैं। वो अगर हम पहले बता देते तो आप लोग बस रट लेते हैं। उसको फायदा नहीं करता। अब आपको एक अंडरस्टैंडिंग है कि क्या करते हैं। चलिए आगे बढ़िए। चलिए भाई तो हम लोग वापस रिसेट कर चुके हैं सबको। देख लीजिए। सेम ग्राफ है। रिसेट मतलब कि सारा हम आंसर मिटा दिए हैं। सबसे पहले तो हम एक एरे बना लिए हैं। अब हम लोग कोड की तरफ बढ़ रहे हैं। धीरे-धीरे हम लोग ड्राई रन की तरफ बढ़ रहे हैं। क्योंकि ऊपर तो हम बात बनाए थे ना। बात बनाने से इंटरव्यू नहीं निकलता है। कोड भी दिखाएंगे। अभी ड्राई रन देख लीजिए। ये आपका एरे है। क्या एरे है? रांची, पटना, बेंगलुरु, दिल्ली, कोलकाता। अब हम लोग को मालूम है कि क्योंकि हम लोग का सोर्स रांची है तो रांची से रांची का डिस्टेंस ज़ीरो लिख लिए। बाकी सारे को",
+      "source": "caption",
+      "english_text": "Now let's move on to that. If we had told that earlier, you people would have just memorized it. Does not benefit him. Now you have an understanding of what to do. Let's move ahead. Come on brother, we have reset everyone. Take a look. is a bean graph. Reset means that all our answers have been erased. First of all, we have created an array. Now we are moving towards the code. Gradually we are moving towards dry run. Because we talked about it above. An interview does not happen by talking. Will also show the code. Just watch the dry run. This is your array. What is an array? Ranchi, Patna, Bengaluru, Delhi, Kolkata. Now we know that since our source is Ranchi, we should write the distance from Ranchi to Ranchi as zero. to everyone else"
+    },
+    {
+      "start_time": 1683.6,
+      "end_time": 1712.23,
+      "text": "इनफिनिटी कर दिए। पिछले बार की तरह। वेरी गुड। अब हम क्या बोले थे? हर बार हम लोग किस शहर को प्रोसेस कर रहे हैं? जिसका अभी का डिस्टेंस जिसका अपडेटेड डिस्टेंस या उसको कुछ भी बोल लीजिए अभी का जो आंसर है वो सबसे मिनिमम हो वो सबसे मिनिमम हो। ठीक है? तो देखिए किसका मिनिमम है? रांची का आंसर अभी अभी के लिए ज़ीरो है। बाकी सबका इनफिनिटी है। हम लोग एक क्या करेंगे? हम लोग एक मीन हिप बनाएंगे। इसीलिए हम बोले थे हिप पढ़ना जरूरी है। इसीलिए क्योंकि इसमें हिप लगता है। एक मीन हिप बनाएंगे।",
+      "source": "caption",
+      "english_text": "Made it to infinity. Like last time. very good. Now what did we say? Which city are we processing each time? Whose current distance is, whose updated distance or call it whatever, the current answer should be the minimum, it should be the minimum. Ok? So see whose is the minimum? Ranchi's answer is zero for now. Everything else has infinity. What will we do? We'll make a mean hip. That's why we said it is important to read HIP. That's because it looks hip. Will create a mean hip."
+    },
+    {
+      "start_time": 1712.24,
+      "end_time": 1746.07,
+      "text": "मीन हिप किस तरीके का बनाएंगे? पेयर टाइप का। पेयर मतलब उसमें दो चीजें रहेंगी। उसमें क्या दो चीजें रहेंगी? सबसे पहले तो उसमें ये डिस्टेंस रहेगा। डिस्टेंस मतलब कि आपका जो आंसर जो आंसर असली में अभी लिखा हुआ है ना ये वाला रिजल्ट वाला ये ये देखिए ये वाला डिस्टेंस ये डिस्टेंस और सिटी का नाम सिटी का नाम मतलब आपका इंटीजर का नाम हम आपको सिटी समझाने के लिए कर रहे हैं। इस तरीके का एंट्री हम लोग पुश करेंगे। कभी भी कभी भी किसी शहर का हम लोग जब अपडेट करेंगे ना डिस्टेंस मतलब उसको रिलैक्स करेंगे उसका अच्छा वाला डिस्टेंस मिलेगा। कम डिस्टेंस मिल जाएगा तो हम लोग इसको हिप में पुश कर देंगे ताकि वो",
+      "source": "caption",
+      "english_text": "How to make Mean Hip? Pair type. Pair means there will be two things in it. What two things will be there in it? First of all there will be this distance in it. Distance means that your answer, which is the actual answer written right now, this one, the one with the result, this one, see this distance, this distance and the name of the city, the name of the city means the name of your integer, we are doing this to explain the city to you. We will push this type of entry. Whenever we update the distance of any city, it means we will relax it, we will get the good distance. If we get less distance then we will push it in the hip so that it"
+    },
+    {
+      "start_time": 1746.08,
+      "end_time": 1772.549,
+      "text": "प्रोसेस होने की कगार पे आ सके। कभी ना कभी और मीन हीप क्या गारंटी करता है क्योंकि आप यहां पे एक पेयर पुश कर रहे हैं। क्या पेयर पुश कर रहे हैं? पहला इसका क्या है? डिस्टेंस मतलब अभी क्या लिखा हुआ है? वो पुश कर रहे हैं। और सिटी मत सिटी मतलब आपका नोड। वो नोड कुछ भी हो सकता है। इंटीजर करैक्टर एरे कुछ भी उससे फर्क नहीं पड़ता है। तो मिन हीप आपको सबसे ऊपर में क्या देगा? टॉप पे क्या रख के देगा? जिसका अभी का डिस्टेंस सबसे कम है। तो शुरू करने के लिए शुरू करने के लिए तो अब देखिए इनफिनिटी को पुश करके आप क्या करिएगा?",
+      "source": "caption",
+      "english_text": "Could be on the verge of being processed. What does a mean heap guarantee sooner or later because you are pushing a pair here. Is Pair Pushing? First what is it? Distance means what is written now? They are pushing. And city not city means your node. That node can be anything. Integer character array doesn't matter anything. So what will Min Heep give you at the top? What will you put on top? Whose current distance is the shortest. So to begin with, let's see what you will do by pushing to infinity?"
+    },
+    {
+      "start_time": 1772.559,
+      "end_time": 1804.63,
+      "text": "इंफिनिटी को पुश करने का कोई फायदा है नहीं। रांची को पुश कर दीजिए। तो हम लोग अपने हिप में क्या पुश कर देंगे? मान लीजिए ये आपका हिप है। हम एक हिप बना देते हैं छोटा सा यहां पे। ये आपका हिप है। ठीक है? ये आपका क्या है? आपका मिन हीप है। ये आपका मिन हीप है। इसमें आप क्या कुछ किए? जीरो और रांची। जीरो और रांची। क्योंकि शुरू में वही है। वेरी गुड। प्रोसेस करना शुरू कीजिए। जब तक ये हिप खाली नहीं हो जाएगा ना तब तक इसको प्रोसेस करेंगे। और आप देखिएगा कैसे आपको फाइनल रिजल्ट मिल जाता है। देखिए सबसे पहले आप प्रोसेस किए तो आप क्या निकाले? जीरो और रांची।",
+      "source": "caption",
+      "english_text": "There is no point in pushing infinity. Push Ranchi. So what will we push into our hips? Let's say this is your hip. We make a little hip here. This is your hip. Ok? What is this to you? There's your min heap. This is your min heap. What did you do in this? Zero and Ranchi. Zero and Ranchi. Because that is what it is in the beginning. very good. Start processing. We will process it until this hip is empty. And you will see how you get the final result. Look, when you first processed, what did you get out? Zero and Ranchi."
+    },
+    {
+      "start_time": 1804.64,
+      "end_time": 1838.71,
+      "text": "क्योंकि टॉप पे अब टॉप पे एक ही एलिमेंट है तो यही निकलेगा। इसको हिप से पॉप कर दीजिए क्योंकि अब इसका हो चुका है काम। ठीक है? इस वाले आदमी को रिलैक्स कीजिए। इस वाले आदमी को क्या कीजिए? रिलैक्स। रिलैक्स का क्या मतलब होता है? इसके सारे नेबर्स को देखिए। इसके सारे नेबर्स को देखिए। ठीक है? हर एक नेबर के लिए हर एक नेबर के लिए क्या देखना है? इसमें हम क्या लिखते हैं? सबसे पहले तो इसका d = 0 लिख दिए। हर एक नेबर के लिए क्या देखना है? कि अगर d + वेट वेट का मतलब उस नेबर का वेट कितना है? है रांची से पटना तक का वेट टू है ना तो अगर ये d जो यहां पे आपको हिप से मिला है रांची तक जांची आ जाने का",
+      "source": "caption",
+      "english_text": "Because now there is only one element at the top, so this will come out. Pop it from the hip because now its work is done. Ok? Relax this guy. What to do with this guy? Relax. What does relax mean? Look at all its neighbors. Look at all its neighbors. Ok? What to look for in each neighbor? What do we write in this? First of all, write its d = 0. What to look for in each neighbor? That if d + weight weight means what is the weight of that neighbor? There is wait time from Ranchi to Patna, so if this d which you have got here from hip then check to reach Ranchi."
+    },
+    {
+      "start_time": 1838.72,
+      "end_time": 1866.389,
+      "text": "डिस्टेंस ज़ीरो मिला है प्लस वेट प्लस ये वेट इज़ लेस देन जो भी आपका डिस्टेंस एरे में लिखा हुआ है डिस्टेंस ऑफ नेबर डिस्टेंस ऑफ नेबर मतलब अगर हम पटना की बात करें मान लीजिए कि आपका अभी का नेबर अगर पटना है अभी का नेबर अगर पटना है तो इफ 0 + रांची टू पटना का वेट कितना वेट है टू 0 + 2 व्हिच इज़ टू लेस देन डिस्टेंस ऑफ़ पटना। डिस्टेंस ऑफ़ पटना क्या लिखा हुआ है?",
+      "source": "caption",
+      "english_text": "Distance is zero plus weight plus this weight is less than whatever is written in your distance array Distance of Neighbor Distance of Neighbor means if we talk about Patna, suppose your current neighbor is Patna If current neighbor is Patna then if 0 + Ranchi to Patna ka kitna weight hai to 0 + 2 Which is less than the distance of Patna. What is written as distance of Patna?"
+    },
+    {
+      "start_time": 1866.399,
+      "end_time": 1900.95,
+      "text": "इंफिनिटी। इसका मतलब कि आपको एक बेहतर डिस्टेंस मिल गया है। एक शॉर्ट डिस्टेंस मिल गया है। इसी चीज को रिलैक्सेशन बोलते हैं। इसमें आपको दो चीज करना है। क्या-क्या चीज करना है इसमें? डिस्टेंस ऑफ नेबर। सबसे पहले तो डिस्टेंस ऑफ़ नेबर = d + वेट। मतलब पटना का आंसर मिटा के क्या कर दीजिए? 0 + 2 यहां पे क्या लिख दीजिए? 0 + 2 लिख दीजिए। यहां पे टू लिख दिए। अपडेट हो गया। और हिप में इसको पुश कर दीजिए ताकि अगले बार प्रोसेसिंग में हम लोग पटना को उठा सकें। हम लोग प्रोसेसिंग कहां से उठाते हैं? हिप में से उठाते हैं। इसको",
+      "source": "caption",
+      "english_text": "Infinity. This means you have got a better distance. Got a short distance. This thing is called relaxation. In this you have to do two things. What all needs to be done in this? Distance of neighbor. First of all, Distance of Neighbor = d + weight. Meaning, what should we do by deleting the answer of Patna? 0 + 2 What should we write here? Write 0 + 2. Wrote pay two here. Updated. And push it in the hip so that we can pick up Patna in the next processing. Where do we get the processing from? Lifts from the hip. to this"
+    },
+    {
+      "start_time": 1900.96,
+      "end_time": 1933.99,
+      "text": "पुश कर दीजिए। क्या पुश करेंगे इसमें? क्या पुश करेंगे? हम लोग इसमें पटना का कितना डिस्टेंस अपडेट किए थे? d + वेट व्हिच इज़ टू। टू और पटना पुश कर दीजिए। टी और पटना इसमें पुश कर दीजिए। हिट में। क्या पुश हो गया? टू और पटना। हो गया। रांची अभी खत्म नहीं हुआ है। रांची का एक और नेबर है। कौन? दिल्ली सेम काम होगा दिल्ली में। सबसे पहले तो क्या होगा? इफ डी प्लस वेट रांची और दिल्ली का वेट कितना है? 10 टू 0 + 10 व्हिच इज 10 अगर ये लेस है दिल्ली के अभी के डिस्टेंस से दिल्ली का अभी का डिस्टेंस क्या है?",
+      "source": "caption",
+      "english_text": "Push it. What will you push in it? What will you push? How much distance of Patna did we update in this? d + wait which is two. Push two more Patna. Push T and Patna in it. In hit. What pushed? To and Patna. Done. Ranchi is not over yet. There is another neighbor of Ranchi. Who? Same work as Delhi will be done in Delhi. What will happen first of all? If D plus weight, what is the weight of Ranchi and Delhi? 10 to 0 + 10 which is 10 if it is less What is the present distance of Delhi from the present distance of Delhi?"
+    },
+    {
+      "start_time": 1934.0,
+      "end_time": 1968.549,
+      "text": "इंफिनिटी सबसे पहले काम क्या कीजिए? सेम काम कर रहे हैं और कुछ जो पहले समझाए थे वही कर रहे हैं। कोई अंतर नहीं है। 10 पुश भी कर दीजिए ताकि दिल्ली अगले बार प्रोसेसिंग में आए। कभी ना कभी तो करेंगे ना तो आए। क्या पुश कर दिए? 10 और दिल्ली रांची का काम तमाम हो चुका है। रांची का दो नेबर था। देखिए दोनों नेबर को प्रोसेस किए। अगर वह रिलैक्सेशन सक्सेसफुल हुआ मतलब कि ये डी प्लस वेट अगर उसके अभी के आंसर से कम है तो दो चीज करते हैं। उसका आंसर भी अपडेट कर देते हैं और उसको हिट में घुसा भी देते हैं ताकि वो प्रोसेस हो पाए। अब देखिए पटना प्रोसेस हुआ तभी तो पटना और लोगों को भी प्रोसेस",
+      "source": "caption",
+      "english_text": "Infinity What should you do first? The beans are working and some are doing what was explained earlier. No difference is there. Also give 10 pushes so that Delhi comes in processing next time. Will do it someday or the other. What did you push? 10 And the work of Delhi Ranchi has been completed. Had two neighbors from Ranchi. See both neighbors processed. If that relaxation is successful i.e. if this D plus weight is less than its current answer then do two things. We also update its answer and enter it in HIT so that it can be processed. Now see, Patna process happened, only then Patna and people also got process."
+    },
+    {
+      "start_time": 1968.559,
+      "end_time": 2001.99,
+      "text": "किया ना। इसीलिए रांची का काम हो चुका। मिटा दीजिए। मतलब आगे चलिए। ठीक है? मिटा तो हम रहे हैं। आगे चलते हैं। चलिए रांची का काम प्रोसेस हो गया। देखिए अब हिप में पहले एक था। अब दो एलिमेंट आ गए। दोनों आ गए। अब किसको उठाएंगे? मिनिमम डिस्टेंस वाले को। क्यों? समझा चुके हैं। आप किसको उठाइए? पटना को उठाइए। पटना को बाहर लेके आइए। पटना को बाहर लेके आइए भैया। ये क्या बताता है? d = 2 मतलब पटना तक पहुंचने का डिस्टेंस 2 कि.मी. है। पटना को पॉप कर दीजिए। पटना को हटा दीजिए। अब जो काम",
+      "source": "caption",
+      "english_text": "Did it right? That's why the work of Ranchi is done. Erase it. Meaning move ahead. Ok? We are being erased. Let's move ahead. Well, the work of Ranchi has been processed. See now there was one in the hip before. Now two elements have arrived. Both have arrived. Whom will we pick now? To the one with minimum distance. Why? Have explained. Who do you pick? Pick up Patna. Bring out Patna. Brother, bring Patna out. What does this tell? d = 2 means the distance to reach Patna is 2 km. Is. Pop Patna. Remove Patna. the work now"
+    },
+    {
+      "start_time": 2002.0,
+      "end_time": 2035.43,
+      "text": "रांची के साथ हुआ था सेम काम पटना के साथ कीजिए। पटना के कितने नेबर हैं? पटना के कितने डायरेक्ट नेबर हैं? पहला नेबर तो रांची है। रांची को क्या रिलैक्स करेंगे? नहीं करेंगे। क्यों? क्योंकि रिलैक्स करने का लॉजिक क्या है? d प्लस वेट शुड बी लेस दैन डिस्टेंस ऑफ़ नेबर। लेस दैन डिस्टेंस ऑफ़ नेबर। तो अगर आपका नेबर मान लीजिए कि रांची है तो रांची का अभी का डिस्टेंस ज़ीरो है। अब आप बोल रहे हैं कि d मतलब कि टू और प्लस ये वेट टू क्या फोर ज़ीरो से लेस है क्या? नहीं रांची रिलैक्स नहीं हुआ है। अगर रांची रिलैक्स नहीं हुआ है रांची हिट में भी नहीं जाएगा। खत्म हो गया रांची",
+      "source": "caption",
+      "english_text": "The same thing that happened with Ranchi should be done with Patna. How many neighbors does Patna have? How many direct neighbors does Patna have? The first neighbor is Ranchi. What will you relax Ranchi? Will not do. Why? Because what is the logic of relaxing? d plus weight should be less than distance of neighbor. Less than distance of neighbor. So if your neighbor is, say, Ranchi, then the current distance to Ranchi is zero. Now you are saying that d means two and plus is this weight two less than four zero? No, Ranchi has not relaxed. If Ranchi is not relaxed, Ranchi will not go into HIT either. Ranchi is over"
+    },
+    {
+      "start_time": 2035.44,
+      "end_time": 2066.95,
+      "text": "का काम। पटना का अगला नेबर देखिए। दिल्ली, यस, यह होगा रिलैक्स। ये होगा रिलैक्स। क्या है इसका? डी। पटना तक आने का डिस्टेंस कितना है? टू। पटना और दिल्ली के बीच का वेट कितना है? तीन। तो क्या 2 + 3 इज़ लेस दैन इज़ लेस दैन दिल्ली का अभी का आंसर। डिस्टेंस ऑफ़ दिल्ली। कितना है डिस्टेंस ऑफ़ दिल्ली? 10। यस, यस, यस। तो क्या होगा? दो चीजें होंगी। दिल्ली का आंसर भी अपडेट हो जाएगा। दिल्ली का आंसर अपडेट हो के क्या हो जाएगा? पांच। और हिप में पुश हो जाएगा। हिप में क्या पुश हो",
+      "source": "caption",
+      "english_text": "The work of. See Patna's next neighbour. Delhi, yes, it will be relaxing. This will be relaxing. What is it? D. What is the distance to reach Patna? To. What is the weight between Patna and Delhi? Three. So is 2 + 3 is less than Delhi's current answer. Distance of Delhi. What is the distance of Delhi? 10. Yes, yes, yes. So what will happen? Two things will happen. The answer of Delhi will also be updated. What will happen after Delhi's answer is updated? Five. And there will be a push in the hip. What is the push in the hip?"
+    },
+    {
+      "start_time": 2066.96,
+      "end_time": 2098.39,
+      "text": "जाएगा? पांच और दिल्ली। पांच और दिल्ली। पांच और दिल्ली। देखिए हिप में ऑलरेडी 10 दिल्ली था जो कि पिछले बार हुआ था। पटना एक और पुश कर दिया। क्या पुश कर दिया? पांच दिल्ली। पांच दिल्ली पुश कर दिया। ये क्या मेक श्योर करेगा? जब आप अगले बार प्रोसेसिंग के लिए उठाइएगा ना तो आप 10 दिल्ली नहीं उठा पाएंगे। आप पहले पांच दिल्ली उठाएंगे। आप दिल्ली के शॉर्टर करेक्ट आंसर से आगे बढ़ेंगे। 10 दिल्ली को नहीं करेंगे आप पहले प्रोसेस क्योंकि ये मिनी हिप है। इसीलिए हम बोलते हैं कि हमेशा शॉर्टेस्ट वाले को प्रोसेस करिए।",
+      "source": "caption",
+      "english_text": "will go? Five more Delhi. Five more Delhi. Five more Delhi. See, there was Already 10 Delhi in the hip which happened last time. Patna made another push. What did you push? Five Delhi. Pushed five Delhi. What will this make sure? Next time you pick it up for processing, you will not be able to pick up 10 Delhi. You will pick up the first five Delhis. You will proceed from the shorter correct answer of Delhi. 10 You will not process Delhi first because it is mini hip. That's why we say always process the shortest one."
+    },
+    {
+      "start_time": 2098.4,
+      "end_time": 2125.91,
+      "text": "दिल्ली का आंसर देखिए अपने आप ठीक कर दिया। ये अपने आप ठीक कर दिया। ठीक है? पटना का एक और नेबर बाकी है। कौन सा नेबर बाकी है? बेंगलुरु बाकी है। कितना वेट है? फोर। पटना का डी कितना था? टू। 2 + 4 कितना होता है? सिक्स। क्या? सिक्स। बैंगलोर के अभी के आंसर से छोटा है? यस छोटा है। क्या करते हैं? सबसे पहले बोर का अपडेट कीजिए। कितने? सिक्स। पुश करिए। किसमें? हिप में। सिक्स और बोर। पटना का काम हो चुका है। पटना के तीन ही नेबर थे।",
+      "source": "caption",
+      "english_text": "See Delhi's answer, it fixed it automatically. It fixed itself. Ok? Patna has one more neighbor left. Which neighbor is left? Bengaluru is left. How much weight is it? Four. What was the D of Patna? To. What is 2 + 4? Six. What? Six. Is it smaller than the current answer of Bangalore? Yes it is small. What do you do? First of all update the bore. How many? Six. Push. In what? In the hip. Six and bore. The work of Patna has been done. Patna had only three neighbours."
+    },
+    {
+      "start_time": 2125.92,
+      "end_time": 2159.03,
+      "text": "सबका काम हो चुका है। पटना को मिटा दीजिए। मतलब यहां से हम हटा रहे हैं। अगला अगला की तरफ बढ़ेंगे ना। चलिए। फिर से निकालिए। अब किसको निकलेंगे? मिनहिप। मतलब जिसका डिस्टेंस सबसे कम है। इन तीनों में से किसका डिस्टेंस है सबसे कम? पांच। पांच और दिल्ली। इसको बाहर निकालिए खींच के। इसको बाहर निकालिए खींच के। क्या निकलेगा? पांच और दिल्ली। मतलब दिल्ली जाने का डिस्टेंस कितना है? फाइव। दिल्ली के नेबर्स को रिलैक्स करना शुरू कीजिए। दिल्ली का पहला नेबर है रांची। क्या रांची को रिलैक्स करना सही रहेगा? नहीं, नहीं रहेगा। हम",
+      "source": "caption",
+      "english_text": "Everyone's work has been done. Eliminate Patna. Meaning we are removing it from here. We will move towards the next one. Let go. Take it out again. Who will leave now? minhip. Meaning whose distance is the shortest. Which of these three has the shortest distance? Five. Five more Delhi. Pull it out. Pull it out. What will come out? Five more Delhi. Meaning, what is the distance to go to Delhi? Five. Start relaxing Delhi neighbours. Ranchi is the first neighbor of Delhi. Would it be right to relax in Ranchi? No, it won't last. we"
+    },
+    {
+      "start_time": 2159.04,
+      "end_time": 2192.47,
+      "text": "पहले ही बता चुके हैं। पटना। क्या पटना को रिलैक्स करना सही रहेगा? फाइव और इसका वेट है तीन। आठ। पटना का अभी का आंसर कितना है? दो। कोई फायदा नहीं है। वेरी गुड। बेंगलुरु इसका क्या है? पांच। इसका क्या है? पांच। पांच और पांच 10। बोर का अभी का आंसर छह है। कोई फायदा नहीं है। कोलकाता यस कोलकाता यस कोलकाता में फायदा है। नेबर इज इक्वल टू कोलकाता। यस कोलकाता कितना होगा? इसका डी पांच है। मतलब दिल्ली तक आने का पांच है। इसका वेट है वन। तो 5 + 1 5 + 1 कोलकाता तक जाने का। क्या ये लेस है",
+      "source": "caption",
+      "english_text": "Have already told. Patna. Would it be right to relax Patna? Five and its weight is three. Eight. What is the present answer of Patna? Two. There is no point. very good. Bengaluru What is it? Five. What is it? Five. Five and five 10. Bor's current answer is six. There is no point. There is advantage in Kolkata Yes Kolkata Yes Kolkata. Neighbor is equal to Kolkata. Yes Kolkata, how much will it be? Its D is five. That means five to reach Delhi. Its weight is one. So 5 + 1 5 + 1 to reach Kolkata. is this lace"
+    },
+    {
+      "start_time": 2192.48,
+      "end_time": 2227.349,
+      "text": "कोलकाता के अभी के आंसर से जो कि इंफिनिटी है। बिल्कुल लेस है। क्या दो काम करेंगे? कोलकाता का आंसर अपडेट करके सिक्स लिख देंगे। और इसको पुश कर देंगे। किसमें ही में सिक्स और कोलकाता सिक्स और कोलकाता वेरी गुड खत्म हो गया काम दिल्ली का काम तमाम है दिल्ली में और कुछ नहीं हो पाएगा ठीक है हटा दीजिए दिल्ली में हटा दीजिए चलिए अगला निकालिए अगला निकालिए अभी तक खत्म नहीं हुआ है फिर निकालिए तीनों में से किसका डिस्टेंस सबसे कम है सिक्स सिक्स दो लोगों का कम है चलिए आपका मन कोलकाता आपके हिसाब से वो हिप के लॉजिक से है उससे कोई फर्क नहीं पड़ता है कोलकाता निकाल",
+      "source": "caption",
+      "english_text": "From the current answer of Kolkata which is Infinity. Absolutely lace. Will two work? Will update Kolkata's answer and write six. And will push it. In which one, six and Kolkata, six and Kolkata, very good, the work of Delhi is over, all the work is done in Delhi, nothing else will be done in Delhi, okay, remove it, remove it in Delhi, let's take out the next, take out the next, it is not finished yet, then take out, whose distance among the three is the shortest, six, six, two people are less, let's go to Kolkata, according to you, it is from hip's logic, it does not make any difference, take out Kolkata."
+    },
+    {
+      "start_time": 2227.359,
+      "end_time": 2257.43,
+      "text": "लीजिए कोलकाता निकाल लीजिए बाहर कोलकाता को बाहर निकालिए सिक्स और कोलकाता इसको यहां से हटा दीजिए। चलिए कोलकाता देख लीजिए बहुत जल्दी बता देते हैं। कोलकाता किसी को रिलैक्स कर पाएगा देख लेते हैं। इसका डी सिक्स है। कोलकाता का एक ही डायरेक्ट नंबर है दिल्ली। सिक्स और प्लस वन सात। दिल्ली का अभी का आंसर कितना है? पांच। कोई फायदा नहीं है। कोलकाता बेकार है। हटा दीजिए। कुछ फायदा नहीं किया। अगला निकालिए। क्या निकलेगा? क्या निकलेगा? सिक्स और बेंगलुरु। अगला निकालिए। सिक्स और बोर।",
+      "source": "caption",
+      "english_text": "Take Kolkata out, take Kolkata out, six more Kolkata, remove it from here. Let us see Kolkata and we will tell you very quickly. Let's see if Kolkata can relax anyone. Its D six. Kolkata has only one direct number for Delhi. Six and plus one seven. What is the present answer of Delhi? Five. There is no point. Kolkata sucks. Remove it. Didn't do any good. Take out the next one. What will come out? What will come out? Six and Bengaluru. Take out the next one. Six and bore."
+    },
+    {
+      "start_time": 2257.44,
+      "end_time": 2290.23,
+      "text": "अगला निकालिए। क्या है इसका डी? सिक्स। करके देख लीजिए रिलैक्स नहीं होगा कुछ देख लीजिए बेंगलुरु इसका कितना नेबर है दो पटना और ये पटना बोलेगा सिक्स और फोर पटना जाने में 10 लगना चाहिए पटना बोलेगा हमको 2 किलोमीटर लगता है हमको नहीं जरूरत है ये बोलेगा मेरा सिक्स है और ये जाने का पांच है दिल्ली जाने में 11 लगना चाहिए दिल्ली बोलेगा मेरा ऑलरेडी पांच है हमको भी नहीं चाहिए कुछ नहीं बेकार बेकार बेकार बेकार यस यस यस अगला निकालिए अगला निकालिए क्या निकलेगा एक ही बचा है तो वही निकलेगा 10 और दिल्ली अब यहां बहुत ध्यान से देखिएगा अब यहां बहुत ध्यान से देखिएगा बहुत ध्यान",
+      "source": "caption",
+      "english_text": "Take out the next one. What is its D? Six. Try it, you won't be relaxed, see Bengaluru, how many neighbors is it? Two Patna and this Patna will say six and four. It should take 10 to go to Patna. Patna will say that it takes 2 kilometers for us. We don't need it. It will say that mine is six and this is five to go. It should take 11 to go to Delhi. Delhi will say that it is already five for me. We also don't need anything. Useless, useless, useless. Yes, yes. Take out the next one, take out the next one, only one left. If it is then the same will come out 10 and Delhi Now look very carefully here Now look very carefully here"
+    },
+    {
+      "start_time": 2290.24,
+      "end_time": 2317.03,
+      "text": "से देखिएगा। अब अगर आप चाहे तो इसको प्रोसेस कर सकते हैं। कुछ फायदा नहीं होगा। इसका कोई फायदा नहीं होगा। अब करके देख लीजिएगा। हम यहां एक और इंपॉर्टेंट चीज आपको बताने का कोशिश कर रहे हैं। इसका डी कितना है? 10। अच्छा। क्या दिल्ली का अभी का आंसर 10 है? नहीं। ये 10 दिल्ली कब से आया है? ये 10 दिल्ली ना। याद कीजिए कब आया था? जब आप रांची को प्रोसेस करके दिल्ली लिखे थे ना तब का आंसर था ये।",
+      "source": "caption",
+      "english_text": "Will see from. Now if you want, you can process it. There will be no benefit. There will be no benefit from this. Now try it. We are trying to tell you one more important thing here. What is its D? 10. Good. Is the current answer of Delhi 10? No. Since when did these 10 come to Delhi? These 10 Delhi na. Remember when it came? This was the answer when you processed Ranchi and wrote Delhi."
+    },
+    {
+      "start_time": 2317.04,
+      "end_time": 2349.43,
+      "text": "दिल्ली उसके बाद सही हो चुका है। दिल्ली अभी पांच है। तो क्या आपको किसी भी जन्म में इसको प्रोसेस करना चाहिए? इसको मतलब इसका ट्राई भी करना चाहिए इसको कुछ करने का? नहीं क्योंकि ये गलत आंसर है। ये कुछ पहले का आंसर था। ये पहले का दिल्ली का हम लोग सोचे थे कि 10 कि.मी. है। अभी दिल्ली 10 कि.मी. नहीं है। अभी दिल्ली 5 कि.मी. है भाई। तो एक और छोटा सा कंडीशन ऐड कर दीजिए। अगर d ग्रेटर देन डिस्टेंस ऑफ जो भी है दिल्ली वाला नोड इसका मतलब क्या है",
+      "source": "caption",
+      "english_text": "Delhi has become better after that. Delhi is still five. So should you process this in any lifetime? Does this mean that we should try to do something with it? No because this is the wrong answer. This was an earlier answer. Earlier we in Delhi thought that 10 km. Is. Now Delhi is 10 km. Not there. Now Delhi 5 km. Yes brother. So add one more small condition. What does it mean if d is greater than the distance of Delhi node?"
+    },
+    {
+      "start_time": 2349.44,
+      "end_time": 2382.55,
+      "text": "कि ये एक पुराना वैल्यू है भाई ये पुराना वैल्यू है दिल्ली का दिल्ली का अभी का वैल्यू पांच है तो अगर यहां से पांच आता ना हिप से तो एक बार को ट्राई करते यहां से साला 10 निकल के आ रहा है तो मतलब कि इसको प्रोसेस करने का कोई लॉजिक ही नहीं है दिल्ली का सही आंसर पांच है जो कि बाद में बदल चुका था और हम लोग पांच दिल्ली दिल्ली को प्रोसेस भी कर चुके होंगे। क्यों? क्योंकि मिनी हिप है। 10 दिल्ली निकलने से पहले पांच दिल्ली निकल गया होगा। अब जाके 10 दिल्ली आया है। क्या आपको 10 दिल्ली को छूना भी चाहिए? मतलब",
+      "source": "caption",
+      "english_text": "That this is an old value brother, this is the old value of Delhi, the current value of Delhi is five, so if five is coming from here, then if we try it once, then it means that there is no logic in processing it, the correct answer of Delhi is five, which was changed later and we must have processed five Delhi Delhi. Why? Because Mini is hip. Before leaving 10 Delhi, 5 must have left Delhi. Now 10 have come to Delhi. Should you even touch 10 Delhi? Meaning"
+    },
+    {
+      "start_time": 2382.56,
+      "end_time": 2416.39,
+      "text": "इसके बारे में कुछ सोचना भी चाहिए। जब आप देख पा रहे हैं कि ये आंसर पुराना है? ये आंसर आपको कैसे पता चल रहा है कि पुराना है? क्योंकि डिस्टेंस ऑफ़ दिल्ली 10 से ज्यादा है। ऑब्वियस्ली ये 10 पुराना है। तो क्या आपको इसको प्रोसेस नहीं करना चाहिए? बिलकुल नहीं करना चाहिए। अगर ऐसा है अगर ऐसा है सीधा कंटिन्यू दिल्ली के नेबर को देखने की जरूरत ही नहीं है। इससे कोई फायदा नहीं होगा। ये पुराना स्टेल वैल्यू है। इसको निकालो और आगे बढ़ो। इसको खत्म कर दो। इसका कोई औचित्य नहीं है। अब उम्मीद करते हैं कि आपको समझ में आया होगा। दिल्ली का आंसर हम क्यों बोल रहे हैं कि 10 पुराना है क्योंकि दिल्ली का",
+      "source": "caption",
+      "english_text": "Something should also be thought about this. When are you able to see that this answer is old? How do you know that this answer is old? Because the distance of Delhi is more than 10. Obviously this is 10 years old. So shouldn't you process it? Shouldn't be done at all. If it is so, if it is so, then there is no need to see the direct continuation of Delhi's Neighbor. There will be no benefit from this. This is the old stale value. Take it out and move on. End this. There is no justification for this. Now hope you have understood. Why are we saying that Delhi's answer is 10 old because Delhi's answer is"
+    },
+    {
+      "start_time": 2416.4,
+      "end_time": 2445.19,
+      "text": "अभी का आंसर पांच है। मतलब कोई ना कोई दिल्ली को पांच कर दिया होगा। पटना दिल्ली को पांच कर दिया था। ये 10 बहुत पहले का है। बहुत पहले का कोई सड़ा हुआ वैल्यू उसको आप कोशिश कर रहे हैं कि हम 10 से कुछ कर लें क्या? नहीं। पांच और दिल्ली ऑलरेडी हो चुका है प्रोसेस। उसको जो जो करना था वो कर दिया है। उसको कोलकाता को करना था कर दिया है। अब आप इसको अगर प्रोसेस कर भी देंगे ना कोई फर्क नहीं पड़ने वाला। आप करके देख लीजिए। 10 इधर-उधर इससे क्या होगा? इससे टाइम वेस्ट होगा। इससे क्या होगा? टाइम वेस्ट होगा। बार-बार काहे कर रहे हैं? स्टेल वैल्यू मत करिए प्रोसेस।",
+      "source": "caption",
+      "english_text": "The current answer is five. Meaning, someone or the other must have reduced Delhi to five. Patna had reduced Delhi to five. This is 10 years ago. Are you trying to convert some rotten value from long ago into something? No. Five more Delhi processes are already done. Whatever he had to do, he has done it. It had to be done in Kolkata and has been done. Now even if you process it, it will not make any difference. You try it. 10 What will happen here and there? This will waste time. What will happen with this? Time will be wasted. Why are you doing it again and again? Do not process stale values."
+    },
+    {
+      "start_time": 2445.2,
+      "end_time": 2479.99,
+      "text": "ठीक है? चलिए इसको कर दीजिए। आपका हिप खाली हो चुका है। क्या आपको एक सही आंसर मिल चुका है? 0 2 656 यस सर आपको एक सही आंसर मिल चुका है। ऐसे करके दिक्श्रा काम करता है। चलिए अब कोड लिखें। कोड में आपको हम सारी चीजें बताएंगे। कोड कमेंट में हो सके तो दे भी देंगे। सबसे पहला पार्ट तो कोड का है कि एडजेसेंसी लिस्ट कैसे बनाते हैं भाई? वेट्स के लिए। एडजेसेंसी लिस्ट वेट्स के लिए कैसे बनाते हैं? और इस दिक्रा को लिखते कैसे हैं? जो हम अभी ड्राइवरन बताएं जो कहानी बताएं लिखते कैसे हैं? तो आइए मिलके छापे। तो देखिए सबसे पहले तो काम आता है कि भैया ये एडजेसेंसी लिस्ट कैसे बनाएं। अभी तक तो नॉन वेटेड",
+      "source": "caption",
+      "english_text": "ok? Let's do it. Your hip is empty. Have you found a correct answer? 0 2 656 Yes sir you have got a correct answer. This is how Dikshra works. Let's write the code now. We will tell you all the things in the code. If possible, we will give the code in the comments. The first part of the code is how to make the adjacency list? For Vets. How to make Adjacency List for Vets? And how to write this dikra? How do we write the stories that we tell right now? So let's print together. So see, the first thing that comes in handy is how to make this adjacency list. Still non weighted"
+    },
+    {
+      "start_time": 2480.0,
+      "end_time": 2512.309,
+      "text": "सीख रहे थे। वेटेड के लिए कैसे बनाएं? थोड़ा सा ट्विक है। ज्यादा कुछ ट्रिक नहीं है। देखिए एडजेसेंसी लिस्ट आप कैसे बनाते थे? मान लेते हैं कि ऐसा एक ग्राफ होता होगा। मान लेते हैं ऐसा एक ग्राफ होता होगा। ये आपका ग्राफ था। मान लीजिए ये आपका ग्राफ था। ठीक है? ये एक नॉन वेटेड ग्राफ था। तो आप क्या करते थे? आप एक वेक्टर ऑफ वेक्टर ऑफ एंड बनाते थे। इसमें तीन प्रकार के वो होते हैं। 0 1 2 हर एक चीज इसमें एक वेक्टर होती थी। हर एक चीज इसमें एक वेक्टर होती थी। उसमें आप क्या लिखते थे? ज़ीरो के वेक्टर में आप क्या लिखते थे? ज़ीरो के दो नेबर मतलब वन और टू।",
+      "source": "caption",
+      "english_text": "Were learning. How to make for weighted? There is a slight tweak. There is not much trick. See how you used to prepare the adjacency list? Let us assume that such a graph exists. Let us assume that there would be such a graph. This was your graph. Suppose this was your graph. Ok? This was a non-weighted graph. So what did you do? You used to create a vector of vector of ends. There are three types of them in this. 0 1 2 Everything was a vector. Everything had a vector in it. What did you write in it? What did you write in the vector of zeros? The two neighbors of zero mean one and two."
+    },
+    {
+      "start_time": 2512.319,
+      "end_time": 2545.589,
+      "text": "यही लिखते थे। अच्छा वन के नेबर में मान लीजिए क्या लिखते थे? वन का एक नेबर होगा टू। ये डायरेक्टेड का बता रहे हैं। अनडायरेक्टेड में भी सेम ही होगा। इसमें टू के नेबर में आप कुछ नहीं लिखते थे। ऐसे करके बनाते थे ना। अच्छा। अब वेट इनवॉल्व हो गया। अब आप बोल रहे हैं कि इसका वेट टू है, फाइव है और थ्री है। अब वेट इन्वॉल्व हो गया। अब जब आप यहां पर 1 2 लिख रहे हैं। अब 1 2 लिखने से काम नहीं बनेगा। अब जीरो का दो नेबर है 1 2 लेकिन अब आपको ना यहां पे पेयर लिखना पड़ेगा। अब आपको यहां पे पेयर लिखना पड़ेगा। मतलब कि आपको अब ऐसा करके एक एरे बनाना पड़ेगा। देखिए आपको ऐसा",
+      "source": "caption",
+      "english_text": "This is what he used to write. Well, guess what was written in Neighbor of the Forest? One will have a neighbor too. They are telling about directed. Same thing will happen in undirected also. In this, you did not write anything in Two's Neighbor. Used to make it like this, right? Good. Now vets got involved. Now you are saying that its weight is two, five and three. Now vets got involved. Now when you are writing 1 2 here. Now writing 1 2 will not work. Now zero has two neighbors 1 2 but now you have to write pair here. Now you have to write pair here. Meaning that now you will have to create an array by doing this. look at you like this"
+    },
+    {
+      "start_time": 2545.599,
+      "end_time": 2580.55,
+      "text": "बनाना पड़ेगा। सेम रहेगा। देखिए 0 1 2 ठीक है? अब आपको ना सिंगल सिंगल इंटीजर के तरह आप जो वन और टू लिखे थे ना, अब आपको यहां पे सिंगल इंटीजर के जगह पेअर लिखना पड़ेगा। पहला पेयर क्या लिखिए? वन वन तक जा रहा है और उसका वेट कितना है? दो। और दूसरा पेयर क्या है? टू। टू तक एच जा रहा है। टू का वेट कितना है? फाइव। ये हो गया। वन ना वन को एक पेयर से रिप्लेस कर दिए। टू को एक पेयर से रिप्लेस कर दिए। वन जहां था वन है। उसके साथ उसका वेट। टू को एक पेअर से रिप्लेस करना पड़ेगा। टू और उसका वेट। सिमिलर चीज़ वन में आप क्या लिखे थे?",
+      "source": "caption",
+      "english_text": "Will have to make. Same will remain. Look 0 1 2 okay? Now you will not have to write one and two like single integer, now you will have to write pair here instead of single integer. What should you write about the first pair? One is going to one and what is its weight? Two. And what is the second pair? To. Going to H. What is the weight of two? Five. that'll be. One Na One was replaced with a pair. Two were replaced with one pair. Where there was forest there is forest. His weight with him. Two will have to be replaced by one pair. Two and his weight. What did you write in Similar Cheese One?"
+    },
+    {
+      "start_time": 2580.56,
+      "end_time": 2614.87,
+      "text": "टू। ओके? टू को एक पेअर से रिप्लेस कर दीजिए। टू और वन से टू का वेट क्या है? थ्री। यह देखिए। और ये खाली रहेगा एज इट इज़। सेम काम करेंगे। तो हम आपको बताते हैं। देखिए कोड लिखते हैं जीएफजी पे। देखिए आपको एक वेक्टर ऑफ़ इंट रिटर्न करना है Dra का। Dstra ठीक है? आपको क्या दिया हुआ है? इंट n मतलब ये नोड और आपको वेक्टर ऑफ़ वेक्टर ऑफ़ इंट इंट एजेस दिया हुआ है। ओके? और आपको",
+      "source": "caption",
+      "english_text": "To. Ok? Replace two with one pair. What is the weight of two and one to two? Three. Look at this. And it will remain empty as it is. Beans will work. So let us tell you. See let's write the code on GFG. See, you have to return a vector of int called Dra. Dstra ok? What has been given to you? Int n means this node and you are given a vector of vector of int int edges. Ok? and you"
+    },
+    {
+      "start_time": 2614.88,
+      "end_time": 2643.03,
+      "text": "एक सोर्स दिया हुआ है। ठीक है? ये आपको दिया हुआ है। अब ध्यान रहे ध्यान रहे ये जो एजेस दिया हुआ है ये जो एजेस दिया हुआ है अभी तक आपको क्या एजेस दिया रहता था? ज़ीरो से वन एक एज है। ज़ीरो से टू एक एज है। ज़ीरो से थ्री एक एज है। ये दिया रहता था। ठीक है? अब क्योंकि ये वेटेड ग्राफ है। आपको क्या दिया रहेगा? ज़ीरो से वन एज है और उसका वेट टू है। ज़ीरो से टू एज है और उसका वेट फाइव है। ज़ीरो से थ्री एज है और उसका वेट सिक्स है। ये दिया रहेगा।",
+      "source": "caption",
+      "english_text": "A source is given. Ok? This is given to you. Now keep in mind that these ages have been given to you, what ages were you given till now? Zero to one is an edge. Zero to two is an edge. Zero to three is an edge. This was given. Ok? Now because this is a weighted graph. What will you be given? Zero to one is the edge and its weight is two. The age is zero to two and its weight is five. The edge is zero to three and its weight is six. This will remain given."
+    },
+    {
+      "start_time": 2643.04,
+      "end_time": 2674.87,
+      "text": "मतलब कि हर एक एज हर एक सिंगल एज अब तीन साइज का है। पहले हर एक एज कितना साइज का होता था? टू। उसमें आप क्या बोलते थे? इसका जो जीरो है वो सोर्स है। इसका जो वन है वो डेस्टिनेशन है। अब इसका जो टू है वो इसका वेट है। इस एज का वेट है। एक दो बार प्रैक्टिस करिएगा ना ग्राफ खुद बना के तुरंत समझ में आ जाएगा। जितना हार्ड आपको लग रहा है उतना हार्ड है नहीं। एक्सटेंशन है। कोड लिखेंगे आपको खुद समझ में आ जाएगा। देखिए आपको ये दिया है सबसे पहले अपना एडजेसेंसी लिस्ट बनाइए कैसे देखिए",
+      "source": "caption",
+      "english_text": "Meaning that every single edge, every single edge is now three sizes larger. Earlier, what was the size of each edge? To. What did you say in that? Its zero is the source. Its forest is the destination. Now its second is its weight. The weight of this edge is. Practice a couple of times and make the graph yourself and you will understand immediately. It is not as hard as you think. Is an extension. You will understand it yourself when you write the code. Look, we have given you this, first of all make your adjacency list, see how."
+    },
+    {
+      "start_time": 2674.88,
+      "end_time": 2706.39,
+      "text": "वेक्टर ऑफ़ वेक्टर ऑफ़ अब यहां पे क्या लिखते थे हम लोग इंट हम क्या बोले हर एक इंट को पेयर ऑफ़ इंट इंट से रिप्लेस कर दीजिए यहां पे क्या लिख दीजिए पेयर ऑफ़ इंट इंट पेयर ऑफ़ इंट इंट 1 2 3 ये देखिए सेम यहां पे यहां पे ना आपका इंट रहता था इस इंट को हम लोग क्या बना दिए पेयर क्योंकि हर एक नंबर एक पेयर बन जाएगा। हर एक नंबर एक जोड़ा बन जाएगा। पहले हर एक नंबर बोलता था कि यह डेस्टिनेशन है। अब यह डेस्टिनेशन है और इसका वेट भी है। तो अब पेयर बन गया।",
+      "source": "caption",
+      "english_text": "Vector of Vector of Now what did we write here as Int? What did we say? Replace each int with Pair of Int. What do we write here as Pair of Int Int Pair of Int Int 1 2 3 Look at this, your int used to be here. What did we make of this int as a pair because each number will become a pair. Each number will become a pair. Earlier every number used to say that it was a destination. Now it is a destination and it also has weight. So now a pair is formed."
+    },
+    {
+      "start_time": 2706.4,
+      "end_time": 2737.91,
+      "text": "अब देखिए अब देखिए ग्राफ कैसे बनेगा? अरे क्या हो गया? फॉर आई एन टी i = 0 i &lt; एजेस डॉट साइज एज डॉट साइज ये भी तो वहीं भी करते थे। ये तो नॉर्मल में भी करते थे। अब सबसे पहले सोर्स निकाल लीजिए। सोर्स इज़ इक्वल टू एजेस i0 वेरी गुड ये आपको आता है। डेस्टिनेशन इज़ इक्वल टू एजेस i वन ये भी आपको आता है। अब हम क्या बोले थे? अब आपको एक एज में तीन वैल्यू होगी।",
+      "source": "caption",
+      "english_text": "Now see how the graph will be made? Hey what's wrong? For i n t i = 0 i < edges dot size edges dot size they used to do this there too. Used to do this even in normal times. Now first of all take out the source. Source Is Equal To Ages i0 Very good you get it. Destination is equal to ages i one this also comes to you. Now what did we say? Now you will have three values ​​in one edge."
+    },
+    {
+      "start_time": 2737.92,
+      "end_time": 2763.67,
+      "text": "दो वैल्यू नहीं सोर्स डेस्टिनेशन और वेट। वेट क्या होगा? आई एन टीw = एज इज़ आई टू। ये आपका वेट। सोर्स डेस्टिनेशन वेट। अब क्योंकि आपको बताया गया है कि यह अनडायरेक्टेड ग्राफ़ है। क्या करिए? एरे ऑफ़ s डॉट पुशबैक। अब नॉन वेटेड में यहां क्या पुश बैक करते थे? सिर्फ डी। अब डी मतलब डेस्टिनेशन।",
+      "source": "caption",
+      "english_text": "Not two values source destination and weight. What will be the weight? i n t w = edge is i to. This is your weight. Source destination weight. Now since you have been told that it is an undirected graph. What to do? Array of s dot pushback. Now what was the push back here in non weighted? Only D. Now D means destination."
+    },
+    {
+      "start_time": 2763.68,
+      "end_time": 2792.069,
+      "text": "सिर्फ डेस्टिनेशन से काम नहीं बनेगा। पहले आप क्या पुश करते थे? सिर्फ वन जो कि डेस्टिनेशन था। वन के जगह क्या पुश करना है? एक पेयर जिसमें पहला हो डेस्टिनेशन और दूसरा हो वेट। तो इसके जगह एक पेयर पुश करिए। क्या पुश करिए? डेस्टिनेशन और वेट। यह देखिए अनडायरेक्टेड है। इसको रिवर्स में पुश कीजिए। AD डॉट पुश बैक क्या? पहले सिर्फ सोर्स पुश होता था। सोर्स और वेट एक साथ इंटीजर के जगह पेयर पुश कर रहे हैं।",
+      "source": "caption",
+      "english_text": "Destination alone will not suffice. What did you push before? The only one that was the destination. What to push instead of forest? A pair in which the first is destination and the second is wait. So push a pair instead. What to push? Destination and weight. See this is undirected. Push it into reverse. AD Dot Push Back What? Earlier there was only source push. The source and weight are pushed together in pairs instead of integers."
+    },
+    {
+      "start_time": 2792.079,
+      "end_time": 2825.109,
+      "text": "बन गया आपका एडजस्टेंसी। ये देख लीजिए। इसको एक दो बार रिवर्स करके देखिए। हम आपको सजेस्ट करेंगे कि इसको जाके खुद बनाइए कॉपी में और देखिए कि आपका ग्राफ कैसा लग रहा है। तो आपको ज्यादा अंडरस्टैंडिंग होगा। क्योंकि अब हम लोग जितना भी क्वेश्चन करने वाले हैं ना मेजॉरिटी ऑफ़ देम वेटेड ग्राफ पे करने वाले हैं। अनवेटेड का एरा खत्म हो गया है। अनवेटेड का दौर गया। अब हम लोग वेटेड पे आ चुके हैं। ठीक है? ये आपका बन गया। अब आपको क्या बनाना है? अब हम लोग इस तरह शुरू कर सकते हैं। तो सबसे पहले तो आप एक मिन हीप ऑफ पेयर्स बनाते हैं। बाप रे मिन हिप ऑफ पेयर्स का सिंटेक्स साला इतना खराब है। आइए मीन हिप ऑफ पेयर्स बनाएं। कैसा? अ",
+      "source": "caption",
+      "english_text": "Your adjacency is done. Take a look at this. Try reversing it a couple of times. We would suggest you to go and draw it yourself in a copy and see how your graph looks. So you will understand more. Because now whatever questions we are going to ask, majority of them are going to be asked on weighted graph. The era of unweighted is over. The era of unweighted is over. Now we have come to the waiting list. Ok? This became yours. What do you have to make now? Now we can start like this. So first of all you create a min heap of pairs. Oh my god, the syntax of Hip Off Pairs is so bad. Let's create mean hip pairs. How? A"
+    },
+    {
+      "start_time": 2825.119,
+      "end_time": 2853.67,
+      "text": "आपको एक पेयर आई एन टी आई एन टी। पेयर ऑफ आई एन टी आई एन टी वेक्टर ऑफ यह पता नहीं ऐसा सिंटेक्स क्यों है लेकिन अब C++ वाले यही है जावा Python वालों को हम ऑलरेडी सिखा चुके हैं कि कैसे बनता है तो आप लोग वैसे बनाइए पेयर ऑफ़ अब हम तीनों का कोड तो नहीं लिख सकते हैं ऑब्वियसली ये हो गया ये हो गया और हम भी सिंटेक्स देख ही के लिख रहे हैं। हमको भी इसका सिंटेक्स याद नहीं है। ठीक है? पेयर क्या करता है साला?",
+      "source": "caption",
+      "english_text": "You need a pair i n t i n t. Pair of I nt Vector of I don't know why the syntax is like this, but now C++ people have this same syntax. We have already taught Java Python people how to do it, so you guys make Pair of like that. Now we can't write the code of all three. Obviously this has happened, this has happened and we are also writing after seeing the syntax. We also don't remember its syntax. Ok? What does a pair do?"
+    },
+    {
+      "start_time": 2853.68,
+      "end_time": 2879.67,
+      "text": "1 2 3 PQ ये क्या बन गया? मिन हिप ऑफ पेयर्स। अब हम लोग एक डिस्टेंस एरे बना लीजिए। डिस्टेंस एरे मतलब वो जो ऊपर इंफिनिटी इंफिनिटी वाला एरे होता है ना वो वेक्टर ऑफ़ इंट डिस्टेंस क्या होगा? n और इंफिनिटी। इनफिनिटी का मतलब इंट मैक्स लिख दीजिए। आई एन टी मैक्स। ये बन गया। अब अपना गेम शुरू कीजिए। गेम शुरू करने का क्या मतलब है?",
+      "source": "caption",
+      "english_text": "1 2 3 PQ What has become of this? Min hip of pairs. Now let us make a distance array. Distance array means the array with infinity above, what will be the vector of int distance? n and infinity. Write int max meaning infinity. I n t max. it became. Now start your game. What does it mean to start the game?"
+    },
+    {
+      "start_time": 2879.68,
+      "end_time": 2910.87,
+      "text": "सबसे पहले तो सोर्स का डिस्टेंस ज़ीरो कर दीजिए। सोर्स से सोर्स जाने में कितना लगता है? ज़ीरो टाइम लगता है। 0 कि.मी. लगता है। हो गया। और इसको पुश कर दीजिए। किसमें? हिप में। हिप में क्या पुश कर रहे हैं? डिस्टेंस और नोड मतलब डिस्टेंस और सोर्स। पुश हो गया। अब अपना गेम शुरू करिए। आइए अपना गेम शुरू करें। अगले पेज पे चलिए। अपना गेम शुरू करिए। तो वाइल PQ डॉट नॉट एम्प्टी। जब तक ये खाली नहीं होता है तब तक हम लोग अपना गेम खेलेंगे।",
+      "source": "caption",
+      "english_text": "First of all make the distance of the source zero. How much does it take to go from source to source? Takes zero time. 0 km Seems like Done. And push it. In what? In the hip. What are you pushing into the hip? Distance and node means distance and source. Pushed. Now start your game. Let's start our game. Go to the next page. Start your game. So while PQ is not empty. We will play our game until it is empty."
+    },
+    {
+      "start_time": 2910.88,
+      "end_time": 2945.43,
+      "text": "इसको कर लीजिए। एक पेयर निकालिए। जो भी टॉप वाला है वो निकाल लीजिए। वो आपको मिनिमम डिस्टेंस ही देगा। उसका गारंटी है। ठीक है? PQ डॉट टॉप और PQ डॉट पॉप PQ डॉट पॉप। ठीक है? अब आपका P जो निकला है उसमें पहला चीज क्या है? उसका डिस्टेंस। तो आई एन D = P डॉट फर्स्ट। वेरी गुड। और नोड क्या है? उसका सेकंड वाला। नो इज़ = P डॉट सेकंड। मतलब ये क्या निकला है? डी होगा कि पटना जाने में 2 कि.मी. लगता है। तो d = टू नो मतलब पटना। ठीक है? सबसे पहले काम वो कर लीजिए।",
+      "source": "caption",
+      "english_text": "Do it. Pick out a pair. Take out whatever is on top. He will give you minimum distance only. It is guaranteed. Ok? PQ Dot Top and PQ Dot Pop PQ Dot Pop. Ok? Now what is the first thing in your P that has come out? Its distance. So I N D = P dot first. very good. And what is a node? His second one. No is = P dot sec. I mean, what has come out of this? D will be that it will take 2 km to go to Patna. Seems like So d = to no means Patna. Ok? Do that work first."
+    },
+    {
+      "start_time": 2945.44,
+      "end_time": 2978.15,
+      "text": "ये जो हम आपको ये सिखाए थे। क्या सिखाए थे? कहां गया? जी मिटा दिए क्या? अरे यार मिटाना नहीं था हमको। हां। ये वाला। अगर d इज ग्रेटर दैन डिस्टेंस ऑफ़ नोड। मतलब कि ये कौन सा है? पुराना। 10 दिल्ली मिल जाएगा तो उसको नहीं करेंगे प्रोसेस। आगे बढ़ जाएंगे। प्रोसेस करने का मतलब उसके नेबर तक को नहीं देखेंगे। कुछ नहीं करेंगे। इफ d इज ग्रेटर देन डिस्टेंस ऑफ नोड मतलब कि नोड का जो अभी का आंसर है ये d अगर उससे बड़ा है तो मतलब ये कोई पुरानी वैल्यू है ये कोई क्या है इसका मतलब पुराना वैल्यू है इसको इग्नोर करो",
+      "source": "caption",
+      "english_text": "This is what we taught you. What were you taught? where did he go? Did you erase it? Hey friend, we didn't mean to erase it. Yes. This one. If d is greater than the distance of nodes. Meaning which one is this? Old. If 10 Delhi is found then it will not be processed. Will move forward. Processing means that even his neighbors will not see him. Will not do anything. If d is greater than the distance of the node, it means that the current answer of the node is this. If d is greater than that, then it means it is an old value. What is this, it means it is an old value. Ignore it."
+    },
+    {
+      "start_time": 2978.16,
+      "end_time": 3011.27,
+      "text": "कंटिन्यू इग्नोर मतलब कंटिन्यू हां अब अब अगर ऐसा नहीं है तो आपको प्रोसेस करना पड़ेगा अब इसके सारे नेबर्स पे घूमिए नेबर्स पे कैसे घूमते हैं फॉर आई एन टी j = 0 j &lt; &lt; एरे ऑफ़ नोड डॉट साइज यस एंड J प्लस प्लस J प्लस प्लस अब उधर क्या करते थे? नेबर इंट नेबर इंट नेबर इज़ इक्वल टू एरे ऑफ़ नोड J एरे ऑफ़ नोड J क्या है? एक पेयर है। एक",
+      "source": "caption",
+      "english_text": "Continue Ignore means Continue Yes Now if it is not so then you will have to process it Now roam around all its neighbors How to roam around the neighbors for i n t j = 0 j < < Array of nodes dot size yes end J plus plus J plus plus Now what did you do there? Neighbor Int Neighbor Int Neighbor Is Equal To Array Of Node J What Is Array Of Node J? There is one pair. one"
+    },
+    {
+      "start_time": 3011.28,
+      "end_time": 3045.67,
+      "text": "पेयर है जिसका पहला आदमी वो नेबर है। दूसरा आदमी उसका वेट है। तो फर्स्ट फर्स्ट फर्स्ट इसका नेबर है। और आई एन टी वेट इज़ इक्वल टू एरे ऑफ़ नोड J डॉट सेकंड। समझ में आई बात? समझ में आई बात? ठीक है? अब देखिए, इफ D प्लस वेट इज लेस देन डिस्टेंस ऑफ़ नेबर। मतलब कि नेबर का जो अभी का आंसर है क्या? वो कम है इस डी प्लस वेट से। मतलब कि डी मतलब नोड पे अभी तक आए और",
+      "source": "caption",
+      "english_text": "There is a pair whose first person is the neighbour. The other man is his vet. So first first first is its neighbor. And i n t weight is equal to array of nodes J dot sec. Did you understand? Did you understand? Ok? Now see, if D plus weight is less than distance of neighbor. Meaning, what is the current answer to Neighbor? That is less than this D plus weight. Meaning that D means that the node has come so far and"
+    },
+    {
+      "start_time": 3045.68,
+      "end_time": 3076.79,
+      "text": "नोड से नेबर तक वेट है तो ऐसा करके वहां तक पहुंच गए। अगर ये लेस है तो हम लोग क्या करेंगे? रिलैक्सेशन। रिलैक्सेशन में कितने स्टेप हैं? दो स्टेप। सबसे पहले तो डिस्टेंस ऑफ नेबर को अपडेट कर दो। डिस्टेंस ऑफ नेबर को अपडेट कर दो। इज इक्वल टू वेट प्लस d और हिप में पुश कर दो। तो हिप में क्या पुश होता है? डिस्टेंस मतलब डी प्लस वेट और ये नेबर और ये नेबर ये पुश हो गया। ये देखिए बंद किए",
+      "source": "caption",
+      "english_text": "There is wait from node to neighbor so by doing this we reached there. If this is lace, what will we do? Relaxation. How many steps are there in relaxation? Two steps. First of all update the distance of neighbor. Update the distance of neighbor. Is equal to weight plus d and push into the hip. So what is a push in the hip? Distance means D plus weight and this neighbor and this neighbor this is pushed. look at this closed"
+    },
+    {
+      "start_time": 3076.8,
+      "end_time": 3110.069,
+      "text": "बंद किए बंद किए लास्ट में रिटर्न रेस्ट कर दिए। ये देखिए हो गया कोड। बहुत बड़ा कोड है। हमको मालूम है बहुत बड़ा कोड है। ठीक है? वो हमको मालूम है। हम कोशिश करेंगे इसको आज कमेंट में देने का। इसको तो पक्का देने का कोशिश करेंगे भाई। ये बहुत बड़ा कोड हो गया। तो ये देख लीजिए आपका शुरू से अंत तक कोड। ये कोड क्या बोलता है? यहां तक क्या बनाए? एडजेसेंसी लिस्ट बना। ये हम लोग कुछ-कुछ अपना हिप का किए। ये आपका क्या है? मेन लॉजिक। ये क्या है? रिलैक्सेशन। ऐसे करके दिखरा काम करता है। मेरा भी आज हालत डाउन हो गया। मालूम नहीं कितना देर है। लेकिन ठीक है। तो बहुत",
+      "source": "caption",
+      "english_text": "Closed closed and rested the return last. Look at the completed code. It is a very long code. We know it is a very big code. Ok? We know that. We will try to give it in the comments today. Will definitely try to give it, brother. This is a very big code. So look at your code from beginning to end. What does this code say? What to make till here? Adjacency list made. We did something about our hip. What is this to you? Main logic. What is this? Relaxation. By doing this it seems to work. My condition also went down today. Don't know how late it is. But okay. so much"
+    },
+    {
+      "start_time": 3110.079,
+      "end_time": 3118.64,
+      "text": "मेहनत लगा है। तो इसको करिए। इसका कोड करिए। इसका क्वेश्चन करिए। चलिए मिलते हैं अगले वीडियो में। है ना? चलिए।",
+      "source": "caption",
+      "english_text": "Hard work has been put in. So do this. Code it. Question it. Let's meet in the next video. Isn't it? Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

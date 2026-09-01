@@ -1,0 +1,849 @@
+{
+  "video_id": "YLLFHuStkW8",
+  "video_title": "Java Interfaces Deep Dive | Default Methods, Functional, Marker Interfaces | Java Full Course #24",
+  "video_number": 10,
+  "chunks": [
+    {
+      "start_time": 0.08,
+      "end_time": 33.84,
+      "text": "हां जी। तो करें स्टार्ट। वेलकम बैक कोडर आर्मी हमारे इस जावा की सीरीज में। और आज हम इंटरफेसेस को इन डेप्थ पढ़ने वाले हैं। अभी तक हमने इंटरफेस का थोड़ा इंट्रोडक्शन देखा था। पर अब उसके अंदर घुस के देखते हैं इंटरफेस में क्या-क्या हो सकता है। java 8 के बाद इंटरफेस में क्या नई चीजें इंट्रोड्यूस हुई। आपको बहुत मजा आएगा और आपको बहुत कुछ नया सीखने को जरूर मिलेगा। तो चलो फटाफट स्क्रीन पे और शुरू करते हैं। हां जी। तो देखो हमने ये समझा था कि जावा में ना एब्स्ट्रैक्शन को इंप्लीमेंट करने के दो तरीके होते हैं। ठीक है? क्या होते हैं वो दो तरीके? एक तो होती थी",
+      "source": "transcript_api",
+      "english_text": "Yes sir. So let's start. Welcome back Coder Army in our Java series. And today we are going to study interfaces in depth. Till now we have seen a little introduction of the interface. But now let's go inside it and see what can happen in the interface. What new things were introduced in the interface after Java 8? You will have a lot of fun and you will definitely learn a lot of new things. So let's quickly get started on the screen. Yes sir. So see, we had understood that there are two ways to implement abstraction in Java. Ok? What are those two methods? there used to be one"
+    },
+    {
+      "start_time": 30.96,
+      "end_time": 65.04,
+      "text": "हमारे पास एब्स्ट्रैक्ट क्लासेस। ठीक है? और दूसरी होती थी हमारे पास इंटरफसेस। ठीक है? आज हम इंटरफसेस के बारे में थोड़ा डेप्थ में समझने वाले हैं। तो इंटरफेससेस शुरू करते हैं। देखो, इंटरफसेस आपको क्या बताते हैं हम? ठीक है? सबसे पहले हम इंटरफ़ेस बनाते कैसे थे? वो देख लेते हैं। हमको कीवर्ड लिखना पड़ता है इंटरफ़ेस। ठीक है? और जो भी उसका नाम होता है, लेट्स से हम लिखते हैं कार। तो हमने एक इंटरफेस बना दिया कार। अब इसके अंदर क्या-क्या आ सकता है? इसके अंदर कोई भी मेथड आ सकते हैं जिसको हम बस डिक्लेअ करते हैं। डिफाइन",
+      "source": "transcript_api",
+      "english_text": "We have abstract classes. Ok? And secondly we had interfaces. Ok? Today we are going to understand about interfaces in some depth. So let's start with the interfaces. Look, what do we tell you about interfaces? Ok? How did we create interfaces in the first place? They take a look. We have to write the keyword interface. Ok? And whatever its name is, let's write car. So we made an interface car. Now what can come inside it? Any method can come inside it which we simply declare. define"
+    },
+    {
+      "start_time": 62.719,
+      "end_time": 93.439,
+      "text": "नहीं करते। तो लेट्स से मैं एक मेथड लिखता हूं वॉइड ड्राइव। ओके? तो मेरा एक ड्राइव नाम का मेथड है जिसको मैंने यहां पे सिर्फ डिक्लअ किया हुआ है। डिफाइन नहीं किया हुआ। ठीक है? तो ये जो एक इंटरफ़ेस हमने यहां बनाया है, ये हमें एक्चुअली बताता क्या है? बेसिकली अगर हम कॉनंसेप्चुअली इसकी डेफिनेशन देखना चाहें, तो इंटरफ़ेस हमें क्या मैसेज देना चाहता है? ठीक है? देखो इंटरफेस हमें ये बताता है कि कोई भी चीज क्या कर सकती है बिना ये बताए कि वो उसे कैसे करती है। राइट? तभी तो इसने ड्राइव का सिर्फ डिक्लेरेशन दिया है।",
+      "source": "transcript_api",
+      "english_text": "Don't do. So let me write a method void drive. Ok? So I have a method called drive which I have just declared here. Not defined. Ok? So what does this interface that we have created here actually tell us? Basically, if we want to see its definition conceptually, what message does the interface want to give us? Ok? Look, interfaces tell us what something can do without telling us how it does it. Right? That's why it has given only the declaration of the drive."
+    },
+    {
+      "start_time": 91.36,
+      "end_time": 125.119,
+      "text": "डेफिनेशन नहीं दिया। अब यही चीज तो हमारी एब्स्ट्रैक्ट क्लास की भी डेफिनेशन थी। है ना? कि कोई चीज क्या कर सकती है? बिना ये बताए कि वो कैसे करती है। और इंटरफेस का काम भी क्या होता था? एब्स्ट्रैक्शंस को इंप्लीमेंट करना। तो एक्चुअली वो एब्स्ट्रैक्शन को ही इंप्लीमेंट करता है इस डेफिनेशन से। तो एक बार मैं उसकी डेफिनेशन लिख देता हूं। तो यहां पर मैंने उसकी सेम डेफिनेशन लिख दी कि डिफाइन व्हाट एन ऑब्जेक्ट कैन डू विदाउट टेलिंग हाउ इट डस दैट। राइट? इसलिए हम इंटरफसेस में हमेशा ऐसे ही मेथड्स लिखते हैं जिसको हम सिर्फ डिक्लेअर करते हैं। अब हम ना जब भी इसको क्लास से लिंक करने की कोशिश करते हैं तो हम एक बहुत बड़ी गलती करते हैं।",
+      "source": "transcript_api",
+      "english_text": "Definition not given. Now this thing was also the definition of our abstract class. Isn't it? What can something do? Without explaining how she does it. And what was the work of the interface? Implementing abstractions. So actually it implements the abstraction only with this definition. So once I write its definition. So here I wrote the same definition that defines what an object can do without telling how it does that. Right? That's why we always write such methods in interfaces which we only declare. Now whenever we try to link it with class, we make a big mistake."
+    },
+    {
+      "start_time": 123.04,
+      "end_time": 157.519,
+      "text": "देखो लेट्स से मैंने एक नॉर्मल क्लास लिखी हुई है कार। ठीक है? इस क्लास के अंदर लेट्स से एक मेथड है ड्राइव। अब क्योंकि ये नॉर्मल क्लास है। एब्स्ट्रैक्ट क्लास नहीं है तो मुझे ड्राइव की इंप्लीमेंटेशन प्रोवाइड करनी पड़ेगी। तो लेट से यहां पे है डू समथिंग। ओके। बहुत बढ़िया। अब इसी के अगेंस्ट अगर मैं कार का इंटरफ़ेस लिखता हूं, तो मैं उसको कैसे लिखता हूं? मैं लिखता हूं हमारी इंटरफ़ेस। उसका भी नाम लेट्स से हम कार ही रख लेते हैं। कार। ठीक है? और क्योंकि ये इंटरफ़ेस है, तो मैं यहां पे सिर्फ इसकी डिक्लेरेशन प्रोवाइड कर देता हूं। वॉइड ड्राइव कुछ इस तरीके",
+      "source": "transcript_api",
+      "english_text": "Look, I have written a normal class car in Lets. Ok? Inside this class there is a method called drive from Lets. Now because this is a normal class. If there is no abstract class then I will have to provide an implementation of Drive. So let's do something here from late. Ok. very nice. Now against this, if I write the interface of the car, how do I write it? I write our interface. Let's name it Car instead. car. Ok? And since this is an interface, I just provide its declaration here. Void drive like this"
+    },
+    {
+      "start_time": 154.48,
+      "end_time": 180.08,
+      "text": "से। ठीक है? अब जब तक हमने अपनी क्लासेस के बारे में पढ़ा था, अब जब तक हमने अपनी सिर्फ क्लासेस के बारे में पढ़ा था, तो हमने क्या पढ़ा था? डेफिनेशन वाइज़ हमने ये पढ़ा था कि कोई भी जो क्लास होती है वो ब्लूप्रिंट होती है। किसका? एक ऑब्जेक्ट का। तो ब्लूप्रिंट ऑफ एन ऑब्जेक्ट ये तो हमने पढ़ा हुआ था। तो फिर इंटरफ़ेस क्या होते हैं? क्या ये भी ब्लूप्रिंट होते हैं क्या किसी ऑब्जेक्ट के? बिल्कुल नहीं।",
+      "source": "transcript_api",
+      "english_text": "From. Ok? Now, till we have read about our classes, till now till we have read only about our classes, what have we read? Definition wise, we had read that any class is a blueprint. Whose? of an object. So we had read Blueprint of an Object. Then what are interfaces? Are these also blueprints of some object? no way."
+    },
+    {
+      "start_time": 177.68,
+      "end_time": 209.519,
+      "text": "इनफैक्ट इंटरफेस का किसी ऑब्जेक्ट से कोई लेना देना ही नहीं होता। क्योंकि आप सोचो हम इंटरफेस का ऑब्जेक्ट नहीं बना सकते। है ना? इंटरफ़ेस को हम इंप्लीमेंट करते हैं किसी क्लास से। और इंटरफ़ेस हमें क्या बताता है कि वो कुछ मेथड्स बताता है जिसने उसको सिर्फ डिक्लेअर करके छोड़ा हुआ है। और उसको डिफाइन करने की जिम्मेदारी किसकी है? उस क्लास की जो भी इस इंटरफेस को इंप्लीमेंट करेगा। तो इंटरफेस एक्चुअली अगर देखा जाए तो ब्लूप्रिंट होता है बिहेवियर का। तो ब्लूप्रिंट ऑफ अब तो ब्लूप्रिंट ऑफ बिहेवियर।",
+      "source": "transcript_api",
+      "english_text": "In fact interface has nothing to do with any object. Because you think we cannot create an object of interface. Isn't it? We implement the interface from a class. And what the interface tells us is that it exposes some methods that have just been declared and left out. And whose responsibility is it to define it? Whichever class will implement this interface. So if we look at the interface actually, it is a blueprint of behavior. So blueprint of, now blueprint of behavior."
+    },
+    {
+      "start_time": 207.2,
+      "end_time": 241.12,
+      "text": "ठीक है? तो इंटरफेस हमें बताता है कि क्या-क्या बिहेवियर पॉसिबल है और कोई भी क्लास जो इस इंटरफेस को इंप्लीमेंट करेगी उसे उस हर बिहेवियर की डेफिनेशन देनी पड़ेगी। ठीक है? इसलिए जब भी हम इंटरफेस को डिफाइन भी करते हैं ना, हम उसे एक दूसरे नाम से भी जानते हैं। हम कहते हैं इंटरफेस इज अ कॉन्ट्रैक्ट। ये एक कॉन्ट्रैक्ट डिफाइन करता है। तो कॉन्ट्रैक्ट यहां पे ये होता है कि कोई भी क्लास जो मुझे इंप्लीमेंट करेगी उसकी ये जिम्मेदारी होगी कि मेरे हर मेथड की डेफिनेशन प्रोवाइड करे। इन केस कोई भी क्लास हर मेथड की डेफिनेशन प्रोवाइड नहीं",
+      "source": "transcript_api",
+      "english_text": "ok? So the interface tells us what behaviors are possible and any class that implements this interface will have to provide a definition for each behavior. Ok? Therefore, whenever we define an interface, we also know it by another name. We say interface is a contract. This defines a contract. So the contract here is that any class that implements me will have the responsibility to provide the definition of each of my methods. In this case no class provides definition of each method."
+    },
+    {
+      "start_time": 239.36,
+      "end_time": 274.16,
+      "text": "कर पाती। तो उसको हमें क्या बनाना पड़ता है? एब्स्ट्रैक्ट क्लास बनानी पड़ती है। ओके? अब इसको एक-एक करके देखते हैं। हां जी। तो देखो मैंने अपनी एक खाली फाइल दे रखी है यहां पे डेमो डॉट java करके। तो सबसे पहले मैं क्या करता हूं? यहां पे मैं अपना एक इंटरफेस बनाता हूं। तो लेट्स से मैंने यहां पे एक इंटरफेस बनाया कार। ठीक है? ओके। अब लेट्स से यहां पे मैंने एक और मेथड दे दिया इसके अंदर वॉइड ड्राइव। ओके? इसको मैंने सिर्फ डिक्लअर किया और मैंने इसको छोड़ दिया। अब अगर मान लो मुझे कोई क्लास बनानी है जो इस इंटरफेस को इंप्लीमेंट करे। तो ले लेट्स से मैं एक क्लास बनाता हूं और हम कोई स्पेसिफिक कार बनाते हैं। लेट्स से Thar। ठीक है? वो इंप्लीमेंट करती है इस कार इंटरफेस को।",
+      "source": "transcript_api",
+      "english_text": "Could do it. So what do we have to do with it? Abstract class has to be created. Ok? Now let's look at it one by one. Yes sir. So see, I have given a blank file of mine here with the name demo dot java. So what's the first thing I do? Here I create my interface. So with Lets I created an interface here, Car. Ok? Ok. Now let's say here I have given another method, void drive inside this. Ok? I just declared it and left it. Now suppose I have to create a class which implements this interface. So with Let's I create a class and we create a specific car. Thar from Letts. Ok? It implements this car interface."
+    },
+    {
+      "start_time": 272.08,
+      "end_time": 306.4,
+      "text": "उससे पहले मेरे को कार का नाम बड़ा कर देना चाहिए। कैपिटल लेटर में हां तो इंप्लीमेंट्स कार कुछ इस तरीके से करती है। है ना? अब ये Thar क्या है? ये क्लास का नाम है व्हिच इंप्लीमेंट्स आवर कार इंटरफ़ेस। ओके बहुत बढ़िया। अब इस Thar क्लास का काम क्या होगा? इस कार इंटरफ़ेस के जितने भी मेथड्स हैं उन सबको ओवराइड करना। तो हम यहां पे लिखेंगे वॉइड ड्राइव और हम इसको ओवराइड करवाएंगे। उससे पहले हम जनरली क्या पसंद करते हैं लिखना? @ ओवराइड। ये आपको पता है ये ऑप्शनल होता है। इसको लिखना जरूरी नहीं होता। बट इसको लिखने से हमें समझ आ जाता है कि ठीक है हम एक मेथड ओवराइड कर रहे हैं। बहुत बढ़िया।",
+      "source": "transcript_api",
+      "english_text": "Before that I should make the name of the car bigger. Yes in capital letter so implements car does something like this. Isn't it? Now what is this Thar? This is the name of the class which implements our car interface. Okay, great. Now what will be the function of this Thar class? Overriding all the methods of this car interface. So we will write void drive here and we will override it. Before that, what do we generally like to write? @Override. You know this is optional. It is not necessary to write this. But by writing this we understand that it is okay that we are overriding a method. very nice."
+    },
+    {
+      "start_time": 304.4,
+      "end_time": 337.759,
+      "text": "अभी देखो वैसे तो ये वॉइड मेथड है तो मुझे कुछ रिटर्न करने की जरूरत नहीं है। पर यहां पे कोई एरर आ रहा है। एक बार अगर हम उस एरर को पढ़ें तो क्या बोल रहा है वो? कैन नॉट रिड्यूस द विजिबिलिटी ऑफ दी इन्हहेरिटेड मेथड फ्रॉम कार। क्या मतलब इस लाइन का? देखो एक्चुअली होता क्या है ना कि इंटरफेस में हम जो भी मेथड लिखते हैं जो भी वो बाय डिफॉल्ट पब्लिक होते हैं। यानी कि अगर हम यहां पे पब्लिक कीवर्ड ना भी लिखें तो जावा उसे एक्सप्लसिटली लगा ही देगा। ठीक है? तो अगर ये पब्लिक है तो हमें जब इसको ओवराइड करना है तब भी इसे पब्लिक लिखना पड़ेगा। ऐसा क्यों? आप इमेजिन करो। मैंने कहा ना ये बाय डिफॉल्ट",
+      "source": "transcript_api",
+      "english_text": "Now look, this is a void method so I don't need to return anything. But there is an error coming here. Once we read that error, what is it saying? Cannot reduce the visibility of the inherited method from car. What does this line mean? Look, what actually happens is that whatever methods we write in the interface are public by default. That means even if we do not write the public keyword here, Java will include it explicitly. Ok? So if it is public, then when we want to override it, we will still have to write it as public. Why so? You imagine. I said this is by default"
+    },
+    {
+      "start_time": 336.08,
+      "end_time": 369.36,
+      "text": "है। इसको लिखने की जरूरत नहीं है। ठीक है? अगर मान लो यहां पे ये पब्लिक है और मैं यहां पे पब्लिक नहीं लिखता। ठीक है? और ये Thar इसकी चाइल्ड क्लास है। एक तरह से Thar क्या कर रही है? इंप्लीमेंट कर रही है कार को। है ना? तो अगर मैं Thar के फंक्शन ड्राइव के अंदर पब्लिक नहीं लिखता, तो बाय डिफ़ॉल्ट यहां पे कौन सा एक्सेस मॉडिफायर लग जाता है? डिफ़ॉल्ट मॉडिफायर लग जाता है। और आपको पता है पब्लिक एक्सेस मॉडिफायर ज्यादा लूज़ होता है डिफ़ॉल्ट मॉडिफायर से। डिफ़ॉल्ट ज्यादा स्ट्रिक्ट है। है ना? पब्लिक कहता है आप उसे कहीं से भी एक्सेस कर सकते हो। पर बट डिफॉल्ट कहता है कि आप उसे सेम पैकेज से ही एक्सेस कर पाओगे। तो बेसिकली इस ड्राइव मेथड को इस Thar के बाहर सिर्फ इस पैकेज के अंदर कोई",
+      "source": "transcript_api",
+      "english_text": "Is. There is no need to write this. Ok? Suppose this is public here and I do not write public here. Ok? And this Thar is its child class. In a way, what is Thar doing? The car is being implemented. Isn't it? So if I do not write public inside the function drive of Thar, then which access modifier is applied here by default? The default modifier is applied. And you know the public access modifier is looser than the default modifier. The default is more strict. Isn't it? Public says you can access it from anywhere. But the default says that you will be able to access it from the same package only. So basically this drive method is not available outside this Thar only inside this package."
+    },
+    {
+      "start_time": 367.759,
+      "end_time": 399.6,
+      "text": "भी एक्सेस कर सकता है। लेकिन ये जो कार इंटरफ़ेस है, इसका ड्राइव मेथड कहता है कि ये खुद पब्लिक है। यानी कि इसको कोई भी एक्सेस कर सकता है कहीं से भी। चाहे वो कोई भी पैकेज हो। और जावा का ये बहुत बेसिक रूल है कि जो बेस क्लास ने रूल डिफाइन किया है, एक्सेस मॉडिफाई डिफाइन किया है, आप उसको नैरो डाउन नहीं कर सकते। आप चाहे तो उसको एक्सटेंड कर सकते हो पर नैरो डाउन नहीं कर सकते। ओके? तो यहां पे मेरे को पब्लिक लिखना ही पड़ेगा। पब्लिक कुछ इस तरीके से। ओके? तो जैसे ही मैंने पब्लिक लिखा मेरा एरर चला गया। अब मैं एक काम करता हूं कुछ भी यहां पे प्रिंट कर",
+      "source": "transcript_api",
+      "english_text": "Can also access. But this car interface, its drive method says that it itself is public. That means anyone can access it from anywhere. No matter what package it is. And this is a very basic rule of Java that the base class which has defined rules, has defined access modifications, you cannot narrow it down. If you want, you can extend it but you cannot narrow it down. Ok? So here I will have to write public. Public something like this. Ok? So as soon as I wrote public my error went away. Now I do one thing, print anything here"
+    },
+    {
+      "start_time": 396.88,
+      "end_time": 431.68,
+      "text": "लेता हूं। सिस्टम डॉट आउट डॉट प्रिंट एलn और हम लिख देते हैं Thar इज़ ड्राइविंग कुछ इस तरीके से। ठीक है? अब मुझे क्या करना होता है? मैं जनरली क्या करता हूं? अपनी इस कार का ऑब्जेक्ट बनाता हूं। लेट्स से कार C = न्यू। अब यहां पे मैं कार तो लिख नहीं सकता क्योंकि कार तो एक इंटरफेस है। है ना? तो मुझे यहां पे ऑब्जेक्ट बनाना पड़ेगा किसी कंक्रीट क्लास का जैसे कि Thar और अब अगर मैं करूंगा C डॉट ड्राइव तो मेरा जो ये आउटपुट है ये स्क्रीन पे प्रिंट हो जाएगा कि Thar इज़ ड्राइविंग। बिल्कुल सही। ठीक है? तो ये पूरा का पूरा कांसेप्ट होता है इंटरफ़ेस का। अब इसके बारे में ना हम थोड़ी बहुत",
+      "source": "transcript_api",
+      "english_text": "I take it. System dot out dot print l n and we write Thar is driving something like this. Ok? What do I have to do now? What do I usually do? I create an object of this car of mine. Let's car C = new. Now here I cannot write car because car is an interface. Isn't it? So I have to create an object here of some concrete class like Thar and now if I do C dot drive then my output will be printed on the screen that Thar is driving. Correct. Ok? So this is the whole concept of interface. Now let's talk a little about this"
+    },
+    {
+      "start_time": 429.759,
+      "end_time": 460.639,
+      "text": "चीजें देखते हैं। देखो सबसे पहले हमने क्या कहा था कि जो भी क्लास इस कार को यानी कि इस इंटरफ़ेस को इंप्लीमेंट करेगी उसकी जिम्मेदारी होगी इस क्लास के सारे मेथड को ओवराइड करना। अब मान लो ये जो Thar क्लास है ये ओवराइड नहीं करना चाहती ड्राइव को तो ये इसको ऐसे ही छोड़ना चाहती है। ये भी इसको डिक्लेअ करके छोड़ना चाहती है। तो लेट्स से ये इसको ओवराइड नहीं करना चाहती किसी भी रीज़न से। तो उस केस में हमें क्या करना पड़ेगा? उस केस में हमें इस मेथड को एब्स्ट्रैक्ट बनाना पड़ेगा और इस क्लास को भी एब्स्ट्रैक्ट बोलना पड़ेगा।",
+      "source": "transcript_api",
+      "english_text": "Let's see things. Look, first of all what we said was that whichever class will implement this car i.e. this interface, it will be the responsibility to override all the methods of this class. Now consider that this is Thar class, it does not want to override the drive, it wants to leave it like this. She also wants to declare it and leave it. So lets not want to override it for any reason. So what do we have to do in that case? In that case we will have to make this method abstract and call this class also abstract."
+    },
+    {
+      "start_time": 458.72,
+      "end_time": 492.639,
+      "text": "कुछ इस तरीके से। ठीक है? अब हमने इस क्लास को एब्स्ट्रैक्ट बोल दिया। जैसे ही हमने इसको एब्स्ट्रैक्ट बोला, ऊपर एरर आ गया क्योंकि अब इस थार का ऑब्जेक्ट नहीं बना सकते क्योंकि ये खुद एब्स्ट्रैक्ट है। यानी कि अब मुझे एक तीसरी क्लास बनानी पड़ेगी। लेट्स से इसका मैं नाम रख देता हूं लेट्स से ब्लैक थार। ठीक है? और ये क्या करेगी? एक्सटेंड करेगी। आपको पता है हम क्लास को एक्सटेंड करते हैं। एक्सटेंड थार। अब इसकी जिम्मेदारी बन जाएगी इस मेथड को ओवराइड करने की। तो ये लिख देगी पब्लिक वॉइड ड्राइव। और अब ये इसे ओवराइड कर लेगी अपने तरीके से। है ना? तो बेसिकली या तो ये Thar क्लास खुद इस कार के ड्राइव मेथड",
+      "source": "transcript_api",
+      "english_text": "Something like this. Ok? Now we called this class abstract. As soon as we called it abstract, the above error occurred because now we cannot create an object of this object because it itself is abstract. This means that now I will have to create a third class. I named it Lately Black Thar. Ok? And what will she do? Will extend. You know we extend the class. Extend Thar. Now it will become its responsibility to override this method. So this will write to the public void drive. And now she will override it in her own way. Isn't it? So basically either this Thar class itself the drive method of this car"
+    },
+    {
+      "start_time": 490.879,
+      "end_time": 524.8,
+      "text": "को इंप्लीमेंट करे और अगर ये इंप्लीमेंट नहीं करना चाहती तो ये खुद एब्स्ट्रक्ट डिक्लअर हो जाए। ये कह दे कि मैं खुद एब्स्ट्रैक्ट हूं। मुझे कोई और इन्हहेरिट करेगा। जैसे कि ब्लैक था और वो इस ड्राइव मेथड को इंप्लीमेंट करेगा। ठीक है? तो एक तो आपको ये रूल समझ आ गया होगा। ओके? अब इंटरफेस ना पॉलीमॉर्फिज्म का बहुत अच्छा यूज़ करता है और हमें एक बहुत ही अच्छा बेनिफिट देता है जो कि होता है डायनेमिक डिस्पैच या जिसको हम डायनेमिक पॉलीमॉर्फिज्म भी बोलते हैं। अच्छा वो क्या होता है? देखो लेट्स सपोज़ हम अभी के लिए इस इंटरफ़ेस को हटाते हैं और हम यहां पे एक नया इंटरफ़ेस लेते हैं। लेट्स से पेमेंट। ठीक है? अब ये पेमेंट क्योंकि एक",
+      "source": "transcript_api",
+      "english_text": "Implement it and if it does not want to be implemented then it should declare itself abstract. Say that I myself am abstract. Someone else will inherit me. As if Black was there and he will implement this drive method. Ok? So first of all you must have understood this rule. Ok? Now the interface makes very good use of polymorphism and gives us a very good benefit which is dynamic dispatch or what we also call dynamic polymorphism. Well what is that? Look let's suppose we remove this interface for now and we get a new interface over here. Payment by lets. Ok? Now this payment because a"
+    },
+    {
+      "start_time": 523.2,
+      "end_time": 549.839,
+      "text": "इंटरफ़ेस है। तो इसमें एक मेथड रखते हैं जिसको हम लेट से लिखते हैं वॉइड पे। ठीक है? और हम इसको डिक्लेअ करके छोड़ देते हैं। अब मैं दो नई क्लासेस बनाता हूं। लेट्स से एक क्लास मैंने बनाई है क्रेडिट कार्ड जो इंप्लीमेंट्स करता है इंप्लीमेंट्स पेमेंट। ठीक है? ओके। अब इसका क्या काम हो जाएगा? इसका काम हो जाएगा इस क्रेडिट कार्ड नाम के मेथड को ओवराइड करना। तो इसको भी ऑब्वियसली पब्लिक लिखना पड़ेगा। लिखना पड़ेगा पब्लिक वॉइड पे। और पब्लिक क्यों? आपको पता ही है।",
+      "source": "transcript_api",
+      "english_text": "is the interface. So let us keep a method in it which we write later on void. Ok? And we declare it and leave it. Now I create two new classes. I have created a class from Lets that implements credit card payments. Ok? Ok. Now what will be the use of it? Its work will be to override this credit card name method. So this too will have to be written obviously public. Will have to write on public void. And why public? You already know."
+    },
+    {
+      "start_time": 547.92,
+      "end_time": 581.6,
+      "text": "क्योंकि बाय डिफ़ॉल्ट इंटरफेस में हर मेथड पब्लिक होता है। और लेट्स से यहां पे मैं बस प्रिंट कर दूंगा। मैं लिख दूंगा पेइंग वाया क्रेडिट कार्ड। ओके बहुत बढ़िया। अब मैं क्या करता हूं? मैं एक और क्लास बना लेता हूं। लेट्स से इसका मैं नाम रखता हूं डेबिट कार्ड। डेबिट कार्ड और ये भी पेमेंट को इंटरफेस को इंप्लीमेंट करती है। और यहां पे मैं लिख देता हूं पेइंग वाया डेबिट कार्ड। ओके। है ना? अब ये पॉलीमॉर्फिज्म का कैसे फायदा उठाता है? कुछ इस तरीके से कि अब हम मैं लिख सकता हूं पेमेंट का",
+      "source": "transcript_api",
+      "english_text": "Because by default every method in interface is public. And from Lets I will just print it here. I will write payment via credit card. Okay, great. What do I do now? I will create another class. Let's call it debit card. Debit card and it also implements the payment interface. And here I write paying via debit card. Ok. Isn't it? Now how does it take advantage of polymorphism? In such a way that now we can write about payment"
+    },
+    {
+      "start_time": 579.519,
+      "end_time": 608.16,
+      "text": "ऑब्जेक्ट लेट से पी जो रेफरेंस वेरिएबल हो गया इक्वल टू न्यू। अब आपको पता है यहां पे मैं क्रेडिट कार्ड भी लिख सकता हूं, डेबिट कार्ड भी लिख सकता हूं। अगर मैंने लिखा क्रेडिट कार्ड और अब मैंने पी डॉट पे कॉल किया तो आपको पता ही है पेइंग वी क्रेडिट कार्ड आ जाएगा। और अगर मैं लिखूंगा डेबिट कार्ड तो पेइंग वी डेबिट कार्ड आ जाएगा। तो अब एक बार इसको चला के देख लेते हैं। पेइंग वी अ क्रेडिट कार्ड। ओके, बहुत बढ़िया। अब अगर आप ध्यान से देखो तो इसका सबसे अच्छा बेनिफिट ये है कि हमें कोड में कुछ चेंज नहीं करना पड़ता।",
+      "source": "transcript_api",
+      "english_text": "The object let's reference variable become equal to new. Now you know here I can write credit card, debit card also. If I wrote credit card and now I call P dot pay then you know that Paying V credit card will come. And if I write debit card then paying v debit card will come. So now let's run it once and see. Paying with a credit card. Okay, great. Now if you look carefully, its best benefit is that we do not have to change anything in the code."
+    },
+    {
+      "start_time": 606.16,
+      "end_time": 639.2,
+      "text": "हम डायनेमिकली यहां पे क्रेडिट कार्ड लिख सकते हैं या डायनेमिकली ही इसको हम बाद में कभी चेंज करके डेबिट कार्ड कर सकते हैं। और जैसे ही हम इसको डेबिट कार्ड करेंगे हमारा कोड पूरा का पूरा रन हो जाएगा। पेइंग वी डेबिट कार्ड देखा हमें कोई कोड चेंज करने की जरूरत नहीं पड़ती। हम बस अपने डायनामिकली इस क्लास को अगर चेंज कर दें राइट किसी कंडीशन से कर दें लेट सपोज़ और हम उसको पी डॉट पे कॉल कर दें तो हमारा वही वाला पेमेंट वाला मेथड कॉल हो जाएगा। चाहे वो क्रेडिट कार्ड का हो चाहे वो डेबिट कार्ड का हो। है ना? तो ये बहुत अच्छा बेनिफिट है और ये अगर आप ध्यान से सोचो तो बेस प्रोवाइड करता है पूरे के पूरे स्प्रिंग बूट फ्रेमवर्क का। तो जब हम",
+      "source": "transcript_api",
+      "english_text": "We can dynamically write credit card here or we can dynamically change it to debit card later. And as soon as we debit it, our code will run completely. Paying We Debit Card saw that we do not need to change any code. If we just change this class dynamically, write it with some condition, let it suppose and we call it p.pay, then our same payment method will be called. Be it credit card or debit card. Isn't it? So this is a very nice benefit and if you think about it carefully, it provides the base for the entire Spring Boot framework. so when we"
+    },
+    {
+      "start_time": 637.36,
+      "end_time": 670.8,
+      "text": "स्प्रिंग में डिपेंडेंसी इंजेक्शन की बात करते हैं तो वो एक्चुअली यही तो होता है। इंटरफेससेस और एब्स्ट्रैक्ट क्लासेस हमें पूरा का पूरा वो फ्रेमवर्क प्रोवाइड करते हैं। पूरा बेस प्रोवाइड करते हैं। खैर जब हम स्प्रिंग बूट की सीरीज स्टार्ट करेंगे तो वो आपको बेटर समझ आएगा। और ये पूरा का पूरा बेस है क्लीन आर्किटेक्चर का। इसलिए जावा में हम ज्यादा क्लीन कोड लिख पाते हैं क्योंकि हम पॉलीमॉर्फिज्म का डायनामिक पॉलीमॉर्फिज्म का बहुत अच्छे से यूज़ करते हैं जो मेथड को ओवराइड करता है डायनामिकली। ओके बहुत बढ़िया। अब देखो अगेन मैंने यहां पे डेमो टू करके खाली फाइल बनाई है क्योंकि हमें एक सेकंड रूल की बात",
+      "source": "transcript_api",
+      "english_text": "When we talk about dependency injection in Spring, this is actually what happens. Interfaces and abstract classes provide us with a complete framework. Provide complete base. Well, when we start the series of Spring Boot, you will understand it better. And this is the entire basis of clean architecture. Therefore, in Java we are able to write much cleaner code because we use polymorphism very well, which is dynamic polymorphism which overrides methods dynamically. Okay, great. Now look again, I have created an empty file by doing the demo here because we need to talk about the one second rule."
+    },
+    {
+      "start_time": 666.64,
+      "end_time": 693.44,
+      "text": "करनी है व्हिच इज़ वेरिएबल्स इंसाइड इंटरफ़सेस। ओके? अब ये रूल क्या कहता है? अब देखो यह रूल कहता है कि जरूरी नहीं है कि आप इंटरफसेस में सिर्फ मेथड्स को डिक्लेअ करो। आप इंटरफसेस के अंदर वेरिएबल्स भी बना सकते हो। ओके? क्या मतलब? लेट्स से मेरे पास एक इंटरफ़ेस है मैथ कॉनंस्टेंट करके।",
+      "source": "transcript_api",
+      "english_text": "What are the variables inside interfaces? Ok? Now what does this rule say? Now see, this rule says that it is not necessary that you declare only methods in interfaces. You can also create variables inside interfaces. Ok? What do you mean? From Let's I have an interface by doing math constants."
+    },
+    {
+      "start_time": 691.92,
+      "end_time": 725.6,
+      "text": "ठीक है? तो लेट्स से मैं इसमें मैथ्स के कुछ वैल्यूज़ दूंगा। कुछ वेरिएबल्स दूंगा। तो मैं चाहूं तो इसमें एक वेरिएबल डिफाइन कर सकता हूं। अ लेट्स से मैंने लिखा डबल पाई वैल्यू। पाई वैल्यू और इसकी वैल्यू आपको पता ही क्या होगी? 3.14 ओके कुछ इस तरीके से अब मैंने यहां पे सब कुछ कैप्स में क्यों लिखा है? आपको पता है हम कैपिटल में तभी लिखते हैं अगर कोई वेरिएबल हमारा कॉन्स्टेंट होता है। कॉन्स्टेंट मतलब वो फाइनल डिक्लेअर होता है। पर मैंने यहां पे फाइनल तो लिखा ही नहीं है। तो जब भी हम किसी इंटरफेस में किसी वेरिएबल को डिक्लअ करेंगे तो बाय डिफ़ॉल्ट जब जावा उसे कंपाइल",
+      "source": "transcript_api",
+      "english_text": "ok? So let me give some values ​​of maths in it. I will give some variables. So if I want, I can define a variable in it. A Let's say double pi value. Do you know the value of Pi and its value? 3.14 Okay, now why have I written everything in caps here? You know we write in capitals only if a variable is our constant. Constant means it is declared final. पर मैंने यहां पे फाइनल तो लिखा ही नहीं है। तो जब भी हम किसी इंटरफेस में किसी वेरिएबल को डिक्लअ करेंगे तो बाय डिफ़ॉल्ट जब जावा उसे कंपाइल"
+    },
+    {
+      "start_time": 723.36,
+      "end_time": 757.519,
+      "text": "करेगा तो अपने आप यहां क्या लगा देगा? पब्लिक स्टैटिक फाइनल। तो ये अपने आप जावा उसको जोड़ देगा। हमें पता है पब्लिक तो जोड़ता ही है। हर मेथड के आगे जोड़ता है। हर वेरिएबल के आगे जोड़ता है। अब स्टैटिक क्यों? क्योंकि देखो अगर आप वेरिएबल्स डिक्लअर कर रहे हो और अगर आप इसे स्टैटिक नहीं बनाओगे तो आपको पता है ये किसी ऑब्जेक्ट से लिंक हो जाएंगे। पर हमें किसी इंटरफेस का तो ऑब्जेक्ट बना ही नहीं सकते। राइट? और इंटरफेस का ऑब्जेक्ट से कोई लेना देना भी नहीं है। अब इंटरफेस का क्योंकि ऑब्जेक्ट से कोई लेना देना ही नहीं है। तो यहां पे हम नॉन स्टैटिक मेंबर डिक्लेअर कर ही नहीं सकते। तो यानी कि हमें उसे स्टैटिक बोलना पड़ेगा। अब फाइनल क्यों?",
+      "source": "transcript_api",
+      "english_text": "करेगा तो अपने आप यहां क्या लगा देगा? पब्लिक स्टैटिक फाइनल। तो ये अपने आप जावा उसको जोड़ देगा। हमें पता है पब्लिक तो जोड़ता ही है। हर मेथड के आगे जोड़ता है। हर वेरिएबल के आगे जोड़ता है। अब स्टैटिक क्यों? क्योंकि देखो अगर आप वेरिएबल्स डिक्लअर कर रहे हो और अगर आप इसे स्टैटिक नहीं बनाओगे तो आपको पता है ये किसी ऑब्जेक्ट से लिंक हो जाएंगे। पर हमें किसी इंटरफेस का तो ऑब्जेक्ट बना ही नहीं सकते। Right? और इंटरफेस का ऑब्जेक्ट से कोई लेना देना भी नहीं है। अब इंटरफेस का क्योंकि ऑब्जेक्ट से कोई लेना देना ही नहीं है। तो यहां पे हम नॉन स्टैटिक मेंबर डिक्लेअर कर ही नहीं सकते। तो यानी कि हमें उसे स्टैटिक बोलना पड़ेगा। अब फाइनल क्यों?"
+    },
+    {
+      "start_time": 755.12,
+      "end_time": 789.2,
+      "text": "क्योंकि इंटरफेस की डेफिनेशन के हिसाब से आप कोई भी ऐसा वेरिएबल नहीं रख सकते इंटरफेस के अंदर जिसको आप बाद में चेंज कर सको। तो आप बेसिकली कांस्टेंट्स को ही रख सकते हो। और कांस्टेंट्स कैसे कांस्टेंट? स्टैटिक कांस्टेंट्स। तो जो भी अगर हम इंटरफेस पे डबल पाई वैल्यू भी लिखते हैं तो ये पब्लिक स्टैटिक फाइनल हमें लिखने की जरूरत ही नहीं है। ये हमारा जावा का कंपाइलर अपने आप डाल देगा। यानी कि हर वैल्यू यहां पे जो होगी वो एक कांस्टेंट ही डिक्लेअर होगी। ओके? बहुत बढ़िया। तो लेट्स से यहां पे मैं एक और कांस्टेंट कर सकता हूं। कुछ भी लेट्स से डबल लेट से नॉर्मल इंट रखते हैं। इंट वैल्यू इक्वल टू 10। तो मैं ऐसा कर सकता हूं। अगर आप इसको",
+      "source": "transcript_api",
+      "english_text": "Because according to the definition of the interface, you cannot keep any variable inside the interface which you can change later. So you can basically keep the constants only. And how are the constants constant? Static Constants. So whatever, if we write double pi value on the interface, then we do not need to write this public static final. Our Java compiler will automatically insert this. That means every value declared here will be a constant. Ok? very nice. So from the lets I can do one more constant here. Some keep anything from late to double late to normal int. Int value equal to 10. So I can do that. if you like this"
+    },
+    {
+      "start_time": 787.76,
+      "end_time": 822.24,
+      "text": "ध्यान से देखो। तो अगर कल को मैं कोई क्लास बनाऊं लेट्स से अ रैंडम और मैं इसको इंप्लीमेंट्स करा दूं इस मैथ कांस्टेंट से। ठीक है? तो आपको पता ही है मैं इस पाई वैल्यू की वैल्यू को चेंज नहीं कर सकता पर इसको एक्सेस जरूर कर सकता हूं। तो मान लो अगर यहां पे मेरा एक मेथड है वॉइड अ फन कुछ इस तरीके से। तो ये जो फन मेथड है ये इस पाई वैल्यू को एक्सेस जरूर कर सकता है। जैसे सिस्टम डॉट आउट डॉट प्रिंट एलn मैं यहां पे लिख सकता हूं पाई वैल्यू। तो यहां पे मेरी पाई वैल्यू",
+      "source": "transcript_api",
+      "english_text": "Look carefully. So if tomorrow I create a class called Let's Random and I implement it with this math constant. Ok? So you know I cannot change the value of this pie value but I can definitely access it. So let's say if I have a method here, void a fun something like this. So this fun method can definitely access this pi value. Like system dot out dot print l n I can write here pi value. So here's my pi value"
+    },
+    {
+      "start_time": 820.399,
+      "end_time": 854.079,
+      "text": "प्रिंट हो जाएगी। क्योंकि रैंडम जो है इंप्लीमेंट कर रहा है मैथ कांस्टेंट को और वहां से मेरी पाई वैल्यू आती है। अब अगर मान लो मैं रैंडम को एक ऑब्जेक्ट बना लूं। लेट्स से R1 = न्यू रैंडम। ओके? और अब मैं R1 डॉट फन कॉल करूं फन। तो मेरा स्क्रीन पे क्या प्रिंट हो जाएगा? मेरा स्क्रीन पे पाई वैल्यू यानी कि 3.14 प्रिंट हो जाएगा। ओके? पर क्या यहां पे मैं रैंडम की जगह मैथ कांस्टेंट लिख सकता हूं? हमें पता है ना एक पेरेंट क्लास का रेफरेंस वेरिएबल चाइल्ड क्लास के ऑब्जेक्ट को रेफर कर सकता है। पर देखो यहां पे मेरे",
+      "source": "transcript_api",
+      "english_text": "Will be printed. Because random is implementing the math constant and that's where my pi value comes from. Now suppose I make random an object. Let R1 = New Random. Ok? And now let me call R1 dot fun, fun. So what will be printed on my screen? Pi value i.e. 3.14 will be printed on my screen. Ok? But can I write math constant here instead of random? We know that a reference variable of a parent class can refer to the object of the child class. But look here at me"
+    },
+    {
+      "start_time": 852.24,
+      "end_time": 886.56,
+      "text": "को R1 डॉट फन में एरर आ गया। वो इसलिए आ गया क्योंकि मैंने मैथ कांस्टेंट के अंदर फन डिफाइन नहीं किया। राइट? फन फंक्शन तो रैंडम क्लास के अंदर आता है। अब R1 क्या है? R1 रेफरेंस वेरिएबल है मैथ कांस्टेंट टाइप का। तो R1 पे हम वही मेथड कॉल कर सकते हैं जो मैथ कांस्टेंट के अंदर आते होंगे। राइट? तो द मेथड फन इज़ अनडिफाइंड फॉर टाइप मैथ कांस्टेंट। उसके लिए मुझे क्या करना पड़ेगा? मुझे यहां पे वॉइड फन जाकर के डिक्लेअ करना पड़ेगा और ये इसको डिफाइन करेगा। तो यहां पे इसको पब्लिक होना पड़ेगा। राइट? और अगेन हम हर बार की तरह यहां पे ओवराइट भी लिख देते हैं। अब",
+      "source": "transcript_api",
+      "english_text": "There was an error in R1 dot fun. It came because I did not define fun inside the math constant. Right? Fun function comes under random class. Now what is R1? R1 reference variable is of math constant type. So on R1 we can call only those methods which come inside the math constant. Right? So the method fun is undefined for type math constant. What do I have to do for that? I have to go here and declare void fun and this will define it. So here it will have to be public. Right? And again, like every time, we also write overwrite here. now"
+    },
+    {
+      "start_time": 883.44,
+      "end_time": 918.0,
+      "text": "ये हमारा मैथ कांस्टेंट में R1.1 हमारा चल जाएगा और हमारा सेम 3.14 आउटपुट आ जाएगा। ओके? अब देखो जैसा कि हमने अभी बात की कि किसी भी इंटरफेस के अंदर हम जो भी वेरिएबल डिक्लअ करते हैं वो बाय डिफॉल्ट पब्लिक स्टैटिक और फाइनल होते हैं। तो जब भी हम किसी भी प्रोजेक्ट पे काम कर रहे होते हैं ना तो हमें ऐसी फाइल्स चाहिए होंगी जिसमें हम स्टैटिक एंड फाइनल वेरिएबल्स बनाना चाहेंगे या कुछ कांस्टेंट्स डिक्लअ करना चाहेंगे तो उस केस में हमें क्लास ना बना करके अगर एक इंटरफेस बनाएं तो हमारा काम बहुत आसान हो जाएगा। क्योंकि आपको पता है हम इन कांस्टेंट्स को कैसे कॉल कर सकते हैं? हम सीधा क्लास नेम के साथ थ्रू भी",
+      "source": "transcript_api",
+      "english_text": "This will be our R1.1 in our math constant and our output will be the same 3.14. Ok? Now see, as we just talked about, whatever variables we declare inside any interface are by default public, static and final. So whenever we are working on any project, we may need files in which we would like to create static and final variables or declare some constants. In that case, if we create an interface instead of creating a class, then our work will become much easier. Because you know how we can call these constants? We also go straight through with the class name"
+    },
+    {
+      "start_time": 916.32,
+      "end_time": 949.759,
+      "text": "कॉल कर सकते हैं। मतलब मुझे ये सब करने की भी जरूरत नहीं होती। मैं सिंपल ऐसे कर सकता था कि मैथ कास्टेंट डॉट पाई वैल्यू मैं ऐसे इसको कॉल कर सकता था। ठीक है? और इसको मैं चाहे तो स्क्रीन पे प्रिंट भी करा सकता था। तो मैं ऐसे भी लिख सकता था। तो मैं ऐसे भी लिख सकता था और मेरा मैथ कांस्टेंट स्क्रीन पे प्रिंट हो जाता। कोई दिक्कत ही नहीं होती। 3.14 3.14। ठीक है? एक बार R1 डॉट फन की वजह से कॉल हुआ और एक बार सिंपली ऐसे कॉल हो गया। तो इमेजिन करो मेरे पास एक इंटरफ़ेस है मैथ कांस्टेंट और उसके अंदर सारे कॉन्स्टेंट्स हैं और उसके अंदर कोई भी फंक्शन नहीं है। तो लेट्स से अभी के लिए मैं इसको कमेंट कर देता हूं और",
+      "source": "transcript_api",
+      "english_text": "Can call. Meaning I don't even need to do all this. I could have simply called it math constant dot pi value. Ok? And if I wanted, I could also get it printed on the screen. So I could write like this also. So I could have written like this and my math constant would have been printed on the screen. There is no problem at all. 3.14 3.14. Ok? Once the call was made because of R1.fun and once the call was made simply like this. So imagine, I have an interface called Math Constant and inside it are all the constants and there is no function inside it. So let me comment this for now and"
+    },
+    {
+      "start_time": 946.8,
+      "end_time": 980.24,
+      "text": "इसको भी। ठीक है? और इसको भी यहां से हटा देते हैं। तो लेट्स सपोज मेरे पास एक मैथ कांस्टेंट नाम का इंटरफेस है और मैंने बहुत सारे मैथमेटिकल कांस्टेंट्स डिक्लेअर किए हुए हैं। तो उसको मैं चाहूं तो कभी भी इंटरफेस का नाम मैथ कांस्टेंट डॉट उस कांस्टेंट का नाम ऐसे करके कॉल करवा सकता हूं। राइट? इनफैक्ट इस प्रिंसिपल को हम कई बार प्रोडक्शन पे यूज़ करते हैं। हम एक ऐसा इंटरफ़ेस बनाते हैं जिसके अंदर सिर्फ कांस्टेंट वेरिएबल्स डिफाइन हैं। और उन कांस्टेंट्स को हम अपने पूरे प्रोग्राम में कहीं भी यूज़ कर सकते हैं। आप चाहो तो इसको एक क्लास के थ्रू भी बना सकते हो। आप बना सकते हो क्लास, मैथ, कांस्टेंट्स। पर उसके लिए फिर आपको हर वेरिएबल को अपने आप",
+      "source": "transcript_api",
+      "english_text": "This too. Ok? And let's remove this from here. So let's suppose I have an interface called Math Constants and I have declared a lot of mathematical constants. So, if I want, I can call him at any time by naming the interface math constant dot and the name of that constant. Right? In fact, we use this principle many times in production. We create an interface within which only constant variables are defined. And we can use those constants anywhere in our program. If you want, you can also make it through a class. You can create classes, math, constants. But for that then you have to consider each variable automatically."
+    },
+    {
+      "start_time": 978.56,
+      "end_time": 1011.92,
+      "text": "ही स्टैटिक एंड फाइनल खुद से बोलना पड़ेगा। पब्लिक स्टैटिक फाइनल आपको लगाना पड़ेगा। इससे बेटर क्या है कि आप इंटरफेस बनाओ और उसमें नॉर्मल वैल्यूज़ लिखते रहो। वो अपने आप ही पब्लिक स्टैटिक फाइनल बन जाएंगे। राइट? अब दूसरा जो इंटरफ़ेस का सबसे इंपॉर्टेंट प्रिंसिपल है कि उसकी वजह से मल्टीपल इन्हहेरिटेंस जावा में सपोर्ट हो जाता है। राइट? तो एक बार वो देखते हैं। देखो यहां पे मैंने अगेन डेमो 3 डॉट जावा करके एक फाइल बना ली है। अब यहां पे हम देखने वाले हैं अबाउट मल्टीपल इनहेरिटेंस। अब ऑब्वियसली ये हमें पहले ही पता है कि जावा में नॉर्मली मल्टीपल इनहेरिटेंस सपोर्टेड नहीं है क्लासेस के",
+      "source": "transcript_api",
+      "english_text": "The static and final will have to speak for itself. You will have to set public static final. What is better than this is that you create an interface and keep writing normal values ​​in it. They will automatically become public static final. Right? Now the second most important principle of interface is that due to it, multiple inheritance is supported in Java. Right? So let's see it once. Look, here I have created a file by doing demo 3.java again. Now here we are going to see about multiple inheritance. Now obviously we already know that normally multiple inheritance of classes is not supported in Java."
+    },
+    {
+      "start_time": 1009.92,
+      "end_time": 1042.799,
+      "text": "थ्रू। कैसे? अगर लेट्स से मेरे पास एक क्लास है A और मेरे पास एक क्लास है B और अगर मान लो मेरे पास एक और मैंने क्लास बना ली C क्लास C तो उसमें मैं ऐसे नहीं लिख सकता। एक्सटेंड्स A B ये सपोर्टेड नहीं है। हमारे पास एरर आ जाएगा। ठीक है? सिंटेक्स एरर क्योंकि वो A B कुछ सपोर्ट ही नहीं करेगा। वो कहेगा एक ही लिखो या तो A लिखो या B लिखो। अब मल्टीपल इन्हहेरिटेंस जावा में सपोर्टेड क्यों नहीं है? इसके बारे में हमने बात की है क्योंकि उससे आती है डायमंड प्रॉब्लम। अब डायमंड प्रॉब्लम क्या है? हमने पहले भी देखा है। एक बार इसको इस वीडियो में भी",
+      "source": "transcript_api",
+      "english_text": "Through. How? If let's say I have a class A and I have a class B and if let's say I have another class and I have created a class C, then I cannot write in it like this. Extends A B This is not supported. We will get an error. Ok? Syntax error because that A B will not support anything. He will say write only one thing, either write A or write B. Why is multiple inheritance no longer supported in Java? We have talked about this because the diamond problem arises from it. Now what is the diamond problem? We have seen it before also. Once in this video also"
+    },
+    {
+      "start_time": 1040.48,
+      "end_time": 1075.36,
+      "text": "दोबारा देखेंगे। पर उससे पहले मल्टीपल इन्हहेरिटेंस हमारा इंटरफसेस के थ्रू सपोर्ट हो जाता है। तो इमेजिन करो अगर हमारी एक क्लास की जगह एक इंटरफ़ेस होता इंटरफ़ेस A और ये भी एक इंटरफ़ेस होता है इंटरफ़ेस B तो इस क्लास में हम सी लिख सकते थे क्लास C इंप्लीमेंट्स A B तो ये चल गया। ये कोड बिल्कुल फाइन है। यानी कि हम दो इंटरफसेस को एक साथ इंप्लीमेंट कर सकते हैं। दो क्या इनफैक्ट दो से कितने भी ज्यादा हो, हम एक क्लास को मल्टीपल इंटरफेससेस से इंप्लीमेंट करवा सकते हैं। लेकिन एक क्लास सिर्फ एक ही क्लास को एक्सटेंड कर सकती है। ये तो हमें",
+      "source": "transcript_api",
+      "english_text": "Will see again. But before that, multiple inheritance is supported through our interfaces. So imagine, if instead of a class we had an interface called Interface A and this is also an interface called Interface B, then in this class we could have written Class C implements A B. So it worked. This code is absolutely fine. That means we can implement two interfaces simultaneously. No matter how many are more than two, we can make a class implemented by multiple interfaces. But a class can extend only one class. this is us"
+    },
+    {
+      "start_time": 1073.679,
+      "end_time": 1106.72,
+      "text": "पता है। अब इसका फायदा क्या है? इसका फायदा ये है। लेट्स से इस इंटरफ़ेस में एक मेथड है वॉइड फन। ठीक है? और जिसको मैंने सिर्फ डिक्लअर किया हुआ है और इस इंटरफ़ेस में एक मेथड है वॉइड फन टू। यहां पे मैंने इसको डिक्लअर किया हुआ है। अब C की जिम्मेदारी हो जाएगी कि इस फन वाले मेथड और फन टू वाले मेथड दोनों को ओवराइड करना। और ये दोनों की फंक्शनैलिटीज को ले सकती है। तो लेट्स से ये करेगी पब्लिक वॉइड फन वन नॉट फन वन सिर्फ फन है उसका नाम। इसको भी डिक्लेअ कर दिया और @ ओवराइड अगला मेथड हो",
+      "source": "transcript_api",
+      "english_text": "Know. Now what is its benefit? Its advantage is this. One method in this interface from Lets is void fun. Ok? And which I have just declared and in this interface there is a method void fun two. I have declared it here. Now it will be the responsibility of C to override both this fun method and fun two method. And it can take the functionalities of both. So this will let's public void Fun One Not Fun One Just Fun is its name. Declare this also and @override should be the next method."
+    },
+    {
+      "start_time": 1103.039,
+      "end_time": 1137.76,
+      "text": "गया हमारा पब्लिक वॉइड फन टू कुछ इस तरीके से और इसने इसको भी ओवराइड कर लिया। अब देखो ये कोड बिल्कुल फाइन है। ओके। तो अब हम एक और चीज देखते हैं जिसके लिए मैंने अगेन डेमो फोर्ट jवा नाम की फाइल बना रखी है। इसमें हमें देखना है इंटरफ़ेस इनहेरिटेंस। आप जावा में एक इंटरफ़ेस को दूसरे इंटरफ़ेस से भी इनहेरिट कर सकते हो। तो लेट्स से अगर हमारे पास एक इंटरफ़ेस है लेट्स से एनिमल और इसके अंदर एक मेथड है लेट्स से वॉइड",
+      "source": "transcript_api",
+      "english_text": "Our public void went to fun something like this and it overrode this too. Now look, this code is absolutely fine. Ok. So now we see one more thing for which I have created a file named again demo fort jva. In this we have to see interface inheritance. You can also inherit one interface from another interface in Java. So from Lets if we have an interface Lets from Animal and inside it we have a method Lets from Void"
+    },
+    {
+      "start_time": 1133.6,
+      "end_time": 1162.88,
+      "text": "ईट। और हमारे पास एक दूसरा इंटरफ़ेस है इंटरफ़ेस डॉग। और यह जो डॉग इंटरफ़ेस है ये क्या करता है? ये इस एनिमल नाम के इंटरफेस को इन्हहेरिट करना चाहता है। तो यहां पे हमारा क्या कीवर्ड आएगा? अगेन कीवर्ड आएगा एक्सटेंड्स। एक इंटरफेस दूसरे इंटरफेस को एक्सटेंड करता है। ओके? तो यहां पे हम लिखेंगे एनिमल्ड और इसको हमने एक्सटेंड कर दिया। अच्छा एक इंटरफेस दूसरे इंटरफेस को एक्सटेंड क्यों करता है? क्योंकि वो उसे इंप्लीमेंट नहीं कर सकता। है ना? यहां पे हम इंप्लीमेंट कीवर्ड नहीं लिख सकते।",
+      "source": "transcript_api",
+      "english_text": "Brick. And we have a second interface called interface dog. And what does this dog interface do? It wants to inherit the interface of this animal name. So what will be our keyword here? Again keyword will come extends. One interface extends another interface. Ok? So here we will write animated and we have extended it. Well why does one interface extend another interface? Because he cannot implement it. Isn't it? Here we cannot write implement keyword."
+    },
+    {
+      "start_time": 1160.96,
+      "end_time": 1194.64,
+      "text": "इंप्लीमेंट करने का मतलब होता है कि उसे इस ईंट की फंक्शनैलिटी को प्रोवाइड करना पड़ेगा। पर एक इंटरफेस का काम ये नहीं होता ना कि वो किसी की फंक्शनैलिटी को प्रोवाइड करे। है ना? उसका काम होता है सिर्फ डिक्लेरेशन का। तो क्योंकि यह वाला डॉग इंटरफ़ेस इस एनिमल इंटरफ़ेस को इंप्लीमेंट नहीं कर रहा और उसको सिर्फ एक्सटेंड कर रहा है। मतलब और नई फंक्शनैलिटीज़ डाल रहा है। तो यहां पे हम कीवर्ड क्या लिखते हैं? एक्सटेंड्स लिखते हैं। अब यहां पे उसके पास खुद का कोई मेथड हो सकता है। लेट्स से बार्क तो वॉइड बार्क कुछ ऐसा। अब लेट्स से मैंने एक क्लास बनाई और क्लास का लेट्स से हम नाम रखते हैं स्ट्रीट डॉग। स्ट्रीट डॉग। ठीक है? और वो",
+      "source": "transcript_api",
+      "english_text": "To implement means that it has to provide the functionality of this brick. But the job of an interface is not to provide any functionality. Isn't it? His work is only for declaration. So because this dog interface is not implementing this animal interface and is just extending it. Meaning adding new functionalities. So what do we write as keywords here? Write extends. Now here he may have a method of his own. Let's bark, void bark, something like that. Now I created a class from Lets and we named the class Street Dog from Lets. Street dog. Ok? and that"
+    },
+    {
+      "start_time": 1193.039,
+      "end_time": 1227.2,
+      "text": "क्या करता है? वो इंप्लीमेंट्स करता है डॉग इंटरफ़ेस को। तो जैसे ही उसने डॉग को इंप्लीमेंट किया और डॉग ऑलरेडी एनिमल को एक्सटेंड कर रहा था। तो स्ट्रीट डॉग की जिम्मेदारी हो गई ईट और बार्क दोनों को ओवराइड करने की। तो देखो जब तक एरर नहीं जाएगा जब तक मैं दोनों को ओवराइड नहीं कर दूंगा। तो सबसे पहले लेट्स से मैं पब्लिक वॉइड ईंट को ओवराइड करता हूं। ईट को तो मैं यहां पर लिख देता हूं सिस्टम डॉट आउट डॉट प्रिंट एलn ईटिंग सिंपल ईटिंग लिख देते हैं ओके और अभी भी देखो एरर नहीं किया क्योंकि ये",
+      "source": "transcript_api",
+      "english_text": "What does it do? It implements the dog interface. So as soon as he implemented the dog and the dog was already expanding the animal. So it became the responsibility of the street dog to override both eat and bark. So see the error won't go away unless I override both. So first of all with lets I override the public void brick. I write here system dot out dot print l n eating simply eating ok and still see I did not make an error because this"
+    },
+    {
+      "start_time": 1225.919,
+      "end_time": 1252.0,
+      "text": "बोलेगा द टाइप स्ट्रीट डॉग मस्ट इंप्लीमेंट द इनहेरिटेड एब्स्ट्रैक्ट मेथड डॉग डॉट बार्क यानी कि इसको डॉग वाला मेथड भी ओवराइड करना पड़ेगा तो मैं इसको भी ओवराइड करा लेता हूं ओवराइड पब्लिक वॉइड लेट्स से बार्क कुछ इस तरीके से और यहां पर हम ईटिंग की जगह लिख देंगे लेट्स से बार्किंग। ठीक है? अब हमारे पास कोई एरर नहीं आ रहा।",
+      "source": "transcript_api",
+      "english_text": "It will say that the type street dog must implement the inherited abstract method dog.bark, that is, it will have to override the dog method as well, so I override this too, override public void lets bark, something like this and here we will write barking with lets instead of eating. Ok? Now we are not getting any error."
+    },
+    {
+      "start_time": 1250.4,
+      "end_time": 1283.919,
+      "text": "तो इसको हम बोलते हैं इंटरफ़ेस का इन्हहेरिटेंस। एक इंटरफ़ेस जैसे कि डॉग दूसरे इंटरफ़ेस को भी इन्हहेरिट कर सकता है। और कीवर्ड क्या लगता है? उस केस में एक्सटेंट्स लगता है। अब हम इंटरफ़सेस के बारे में ऑलरेडी बहुत कुछ जान रहे हैं। पर देखो Java 8 के बाद ना इंटरफसेस में बहुत कुछ चेंज हुआ। ठीक है? और वो क्यों चेंज हुआ? और वो क्या चेंजेस एक बार उसके बारे में डिस्कस करते हैं। तो देखो यहां पे मैंने डेमो 5. डॉट jवा करके एक फाइल बना रखी है। हम देखने वाले हैं कि इंटरफेससेस में java 8 के बाद कौन-कौन से चेंजज़ हुए और वो कितने इंटरेस्टिंग चेंजज़ हैं। ठीक है? तो अभी तक मैंने आपको बोला था अगर मैं",
+      "source": "transcript_api",
+      "english_text": "So we call this inheritance of interface. An interface such as Dog can also inherit another interface. And what do you think the keyword is? Extents are involved in that case. Now we are already learning a lot about interfaces. But see, not much has changed in the interfaces after Java 8. Ok? And why did it change? And what changes once they discuss about it. So look, here I have created a file by typing demo 5.jva. We are going to see what changes happened in interfaces after Java 8 and how interesting those changes are. Ok? So till now I told you if I"
+    },
+    {
+      "start_time": 1282.08,
+      "end_time": 1316.32,
+      "text": "एक इंटरफेस डिफाइन करता हूं। लेट्स से मैंने इसको बोला वेकल वेकल। ठीक है? तो उस इंटरफ़ेस के अंदर और मैं यहां पे पहले लिख देता हूं आफ्टर Java 8। ठीक है? उस इंटरफ़ेस के अंदर हम सिर्फ नॉर्मल डिक्लेरेशंस रख सकते हैं मेथड की। तो यहां पे मैं लिख सकता हूं वॉइड ड्राइव और मुझे इसे यहां पे खाली छोड़ना पड़ेगा। मैं इसे डिफाइन नहीं कर सकता। और उसको डिफाइन करने की जिम्मेदारी किसकी होती है? किसी क्लास की। लेट्स से क्लास कार जो इंप्लीमेंट्स करती है किसी इंटरफेस को। तो हमने यहां पे लिख दिया इंप्लीमेंट्स व्हीकल और यहां पे",
+      "source": "transcript_api",
+      "english_text": "Define an interface. Lately I called it Vekal Vekal. Ok? So inside that interface and I write here first after Java 8. Ok? Inside that interface we can keep only normal declarations of methods. So here I can write void drive and I have to leave it blank here. I can't define it. And whose responsibility is it to define it? Of some class. Let's say class car that implements some interface. So here we wrote implements vehicle and here"
+    },
+    {
+      "start_time": 1314.08,
+      "end_time": 1345.36,
+      "text": "वो क्या करेगी? वहां पे वो इसको ओवराइड कर लेगी। तो यहां पे ये लिख सकती है पब्लिक वॉइड वॉइड अ लेट्स से ड्राइव। कुछ ऐसे है ना? ये पॉसिबल है। लेकिन आप इस इंटरफेस के अंदर क्लास की डेफिनेशन नहीं दे सकते। मतलब मैं ये नहीं कर सकता। है ना? मेरे पास एरर आ जाएगा। एब्स्ट्रैक्ट मेथड डू नॉट स्पेसिफाई अ बॉडी। ओके? क्यों? क्यों नहीं दे सकते हम किसी भी मेथड की डिक्लेरेशन? क्योंकि हमें पता है कि इंटरफ़ेस के अंदर जो भी मेथड्स होते हैं वो बाय डिफ़ॉल्ट पब्लिक एब्स्ट्रैक्ट होते हैं। ये हमें लिखने की जरूरत नहीं पड़ती।",
+      "source": "transcript_api",
+      "english_text": "What will she do? There she will override it. So here she can write public void void a lets drive. Something like that, isn't it? This is possible. But you cannot give class definition inside this interface. Meaning I can't do this. Isn't it? I will get an error. Abstract method does not specify a body. Ok? Why? Why can't we give declaration of any method? Because we know that all the methods inside the interface are public abstract by default. We do not need to write this."
+    },
+    {
+      "start_time": 1343.6,
+      "end_time": 1377.28,
+      "text": "वो अपने आप अंदर से जावा का कंपाइलर लिख देता है। ठीक है? तो अगर हम लिख भी देंगे तो कोई दिक्कत नहीं है। और नहीं भी लिखेंगे तो जावा कंपाइलर अपने आप लिख देगा। तो बाय डिफॉल्ट सारे मेथड पब्लिक और एब्स्ट्रैक्ट होते हैं। तो हम उसको सिर्फ डिक्लेअ करके छोड़ देते हैं। लेकिन जावा 8 के बाद जावा ने इंट्रोड्यूस किया एक बहुत ही इंटरेस्टिंग कांसेप्ट जिसको हम बोलते हैं डिफॉल्ट मेथड्स। डिफॉल्ट मेथड्स यानी कि अगर मैं कीवर्ड लगाऊं डिफॉल्ट डिफॉल्ट कीवर्ड लगाऊं। अब जाके मैं इस मेथड को डिफाइन भी कर सकता हूं। देखो मुझे कोई एरर नहीं आया। और लेट्स से मैं यहां पे इसको ऐसे डिफाइन करता हूं। सिस्टम डॉट आउट डॉट",
+      "source": "transcript_api",
+      "english_text": "It automatically writes the Java compiler from within. Ok? So even if we write, there is no problem. And even if you don't write, the Java compiler will write it automatically. So by default all methods are public and abstract. So we just declare it and leave it. But after Java 8, Java introduced a very interesting concept which we call default methods. Default methods means if I put the keyword, default, I put the default keyword. Now I can also define this method. Look, I didn't get any error. And this is how I define it here with Let's. system dot out dot"
+    },
+    {
+      "start_time": 1374.08,
+      "end_time": 1408.24,
+      "text": "प्रिंट एलn और यहां पे मैं लिख देता हूं। लेट्स से व्हीकल इज ड्राइविंग। तो मैंने कुछ भी लिख दिया व्हीकल इज ड्राइविंग। और देखो मेरे पास कोई एरर नहीं आया। अब चाहे तो यह जो कार है इसको ओवराइड ना भी करे तो भी चलेगा। कोई एरर नहीं आएगा। क्योंकि ड्राइव मेथड ऑलरेडी व्हीकल क्लास ने ही लिख दिया। उसकी डेफिनेशन ऑलरेडी उसने वहां बता दी। कैसे? बाय अ कीवर्ड डिफॉल्ट। और ये डिफ़ॉल्ट कीवर्ड ये बताता है जावा के कंपाइलर को कि हम एक ऐसा मेथड देने वाले हैं जो हम खुद ही उसके इंटरफ़ेस में डिफाइन कर देंगे। अब आप देखो मैं इस ड्राइव मेथड",
+      "source": "transcript_api",
+      "english_text": "Print ln and here I write. Let's say the vehicle is driving. So I wrote anything like vehicle is driving. And look, I did not get any error. Now if you want, this car will still work even if you don't override it. No error will occur. Because the drive method is already written by the Vehicle class itself. He already told its definition there. How? By a keyword default. And this default keyword tells the Java compiler that we are going to provide a method that we ourselves will define in its interface. Now you see I use this drive method"
+    },
+    {
+      "start_time": 1406.24,
+      "end_time": 1439.6,
+      "text": "को कैसे कॉल कर सकता हूं। बहुत सिंपल। पहले मैं क्या करूंगा? इस व्हीकल का एक ऑब्जेक्ट बना लूंगा। लेट्स से मैंने बोला व्हीकल v = न्यू लेट्स से कार है ना? क्योंकि कंक्रीट क्लास तो हमारी कार है तो मैंने न्यू कार लिख दिया। अब जब मैं V डॉट ड्राइव करूंगा V डॉट ड्राइव। तो कौन सा ड्राइव कॉल होगा? ऑब्वियसली ये वाला क्योंकि कार ने ड्राइव को ओवराइड नहीं किया तो हमारा डिफ़ॉल्ट ड्राइव कॉल हो जाएगा। जैसे हमारा एब्स्ट्रैक्ट क्लास के केस में होता था। तो एक बार अगर मैं इसको रन करके देखूं तो व्हीकल इज ड्राइविंग बिल्कुल कॉल हो गया। ठीक है? और अगर आप चाहो तो इसको ओवराइड भी कर सकते हो। तो",
+      "source": "transcript_api",
+      "english_text": "How can I call? Very simple. What will I do first? I will create an object of this vehicle. From lets I said vehicle v = new From lets it is a car right? Since concrete class is our car, I wrote new car. Now when I drive V dot drive V dot. So which drive will be called? Obviously this one because if the car didn't override the drive our default would be called drive. Like it was in the case of our abstract class. So once I run it, the vehicle is driving is absolutely called. Ok? And if you want, you can also override it. so"
+    },
+    {
+      "start_time": 1437.84,
+      "end_time": 1463.6,
+      "text": "हमारा वो वाला ऊपर का मेथड ओवराइड हो जाएगा। लेट्स से वॉइड ड्राइव इसको मैंने ओवराइड कर दिया। और यहां पे ऑब्वियसली पब्लिक भी आएगा पब्लिक वॉइड ड्राइव। और मैंने यहां पे प्रिंट कर दिया लेट्स से कार इज़ ड्राइविंग। ठीक है? अब इस केस में कौन सा ड्राइव प्रिंट होना चाहिए? V डॉट ड्राइव में? कार इज़ ड्राइविंग या फिर व्हीकल इज़ ड्राइविंग। तो हमारा स्क्रीन पे क्या प्रिंट होगा? स्क्रीन पे प्रिंट होगा कार इज ड्राइविंग।",
+      "source": "transcript_api",
+      "english_text": "Our method above will be overridden. I overrode the void drive with lets. And here obviously public will also come as public void drive. And I printed here Let's say the car is driving. Ok? Now which drive should be printed in this case? V in dot drive? Car is driving or vehicle is driving. So what will be printed on our screen? Car is driving will be printed on the screen."
+    },
+    {
+      "start_time": 1461.919,
+      "end_time": 1494.64,
+      "text": "क्यों? क्योंकि हमें पता है जब भी कोई चाइल्ड क्लास इंप्लीमेंट करती है किसी पेरेंट क्लास के फंक्शन को तो हमेशा उसको प्रायोरिटी मिलती है। वो ऊपर के फंक्शन को शैडो कर देती है। ओके? बहुत बढ़िया। अब ना एक चीज समझते हैं पहले कि जावा को ऐसी क्या नीड पड़ गई कि उसने इंटरफेस के अंदर डिफॉल्ट मेथड्स को देना शुरू कर दिया। क्योंकि जब इंटरफेस को हमने डिफाइन किया था बाय प्रिंसिपल्स वो इसी तरीके से आए थे कि इंटरफेस बस ये बताएगा कि कोई चीज क्या कर सकती है। बेसिकली कॉन्ट्रैक्ट के बारे में बताएगा बिना ये बताए कि वो उसे कैसे कर सकती है। तो इंटरफेस में बाय डिफॉल्ट हम सिर्फ नॉर्मल मेथड्स लिख सकते होंगे।",
+      "source": "transcript_api",
+      "english_text": "Why? Because we know that whenever a child class implements the function of a parent class, it always gets priority. It shadows the function above. Ok? very nice. Now let us first understand what was the need in Java that it started giving default methods inside the interface. Because when we defined the interface by principles, they came in such a way that the interface will just tell what something can do. Basically she will tell about the contract without explaining how she can do it. So by default we can write only normal methods in the interface."
+    },
+    {
+      "start_time": 1492.4,
+      "end_time": 1527.12,
+      "text": "है ना? और वो क्लास की जिम्मेदारी होगी। उस कॉन्ट्रैक्ट को पूरा करना। कॉन्ट्रैक्ट मतलब उस सारे मेथड्स को डिफाइन करना। तो जावा एट के बाद जावा ने ऐसा क्या सोचा कि उसने सोचा कि मेरे को डिफॉल्ट मेथड्स को भी डाल देना चाहिए जावा के अंदर। अब ये कहानी ना बहुत इंटरेस्टिंग है। देखो आपको पता है जावा के अंदर एक लिस्ट इंटरफेस होता है। जो भी हम आगे पढ़ेंगे जब जावा का कलेक्शन फ्रेमवर्क पढ़ेंगे जिसमें जो हमारे लिस्ट टाइप के डेटा स्ट्रक्चर्स होते हैं जैसे कि एरे लिस्ट, लिंक लिस्ट वो सब डिफाइन होते हैं। अब इस लिस्ट इंटरफ़ेस में ना जावा को कुछ नए मेथड्स को इंट्रोड्यूस करना था। ठीक है? पर अगर जावा सीधा उस",
+      "source": "transcript_api",
+      "english_text": "isn't it? And that will be the responsibility of the class. उस कॉन्ट्रैक्ट को पूरा करना। कॉन्ट्रैक्ट मतलब उस सारे मेथड्स को डिफाइन करना। तो जावा एट के बाद जावा ने ऐसा क्या सोचा कि उसने सोचा कि मेरे को डिफॉल्ट मेथड्स को भी डाल देना चाहिए जावा के अंदर। अब ये कहानी ना बहुत इंटरेस्टिंग है। देखो आपको पता है जावा के अंदर एक लिस्ट इंटरफेस होता है। जो भी हम आगे पढ़ेंगे जब जावा का कलेक्शन फ्रेमवर्क पढ़ेंगे जिसमें जो हमारे लिस्ट टाइप के डेटा स्ट्रक्चर्स होते हैं जैसे कि एरे लिस्ट, लिंक लिस्ट वो सब डिफाइन होते हैं। अब इस लिस्ट इंटरफ़ेस में ना जावा को कुछ नए मेथड्स को इंट्रोड्यूस करना था। Ok? पर अगर जावा सीधा उस"
+    },
+    {
+      "start_time": 1525.2,
+      "end_time": 1558.159,
+      "text": "मेथड्स को इंट्रोड्यूस कर देता और मेथड को इंट्रोड्यूस करने का मतलब क्या हुआ? आप सपोज़ करो जावा के पास एक इंटरफ़ेस बना हुआ है लिस्ट कुछ इस तरीके से। ठीक है? और जावा को उसमें कुछ मेथड्स इंट्रोड्यूस करने हैं। लेट्स से उसको मान लो कोई एक नया मेथड इंट्रोड्यूस करना होगा। लेट्स से पुशबैक। मैं एग्जांपल दे रहा हूं। उसका कोई मेथड नहीं है। पर मान लो आप पुशबैक नाम का जावा को कोई मेथड इंट्रोड्यूस करना होगा। अब अगर वो पुशबैक को सिर्फ डिक्लेअर करके छोड़ देता। है ना? तो इस दुनिया में जितने भी आज तक हमने प्रोजेक्ट्स लिखे होंगे उसमें जिन-जिन क्लासेस ने भी इस लिस्ट इंटरफ़ेस को इंप्लीमेंट किया होगा वो",
+      "source": "transcript_api",
+      "english_text": "Introduces methods and what does it mean to introduce methods? Suppose Java has a built in interface List something like this. Ok? And Java has to introduce some methods in it. Let's accept that some new method will have to be introduced. Pushback from the lates. I am giving an example. There is no method for it. But suppose you have to introduce a method in Java called pushback. Now if he had just declared and left the pushback behind. Isn't it? So in all the projects we have written till date in this world, all the classes which have implemented this list interface will be there."
+    },
+    {
+      "start_time": 1556.32,
+      "end_time": 1590.4,
+      "text": "वहां पे क्लासेस फट जाएंगी। क्योंकि उनका काम होगा इस पुशबैक मेथड को ओवराइड करना। राइट? आप इमेजिन करो जावा ने सीधा एक पुश कर दिया कि ये जो लिस्ट इंटरफेस है मैंने नया मेथड डाला है पुशबैक और ये नया फीचर उसने जावा में डाल दिया। ठीक है? अब जब हम जावा का नया वर्जन लेंगे। ठीक है? तो हमारे साथ क्या होगा? हमने अगर लिस्ट इंटरफेस को यूज़ किया होगा तो जावा हमें मजबूर करेगा कि भ इस पुशबैक मेथड को ओवराइड करो। राइट? हमारे प्रोडक्शन का कोड फट जाएगा। कितनी क्लासेस में चेंजेस करने पड़ जाएंगे दुनिया भर में। है ना? तो जावा ने सोचा ऐसा ना करना पड़े। तो मैं एक नए तरीके का मेथड बना देता हूं जिसको मैं",
+      "source": "transcript_api",
+      "english_text": "Classes will explode there. Because their job will be to override this pushback method. Right? You imagine, Java directly made a push that in this list interface, I have added a new method called pushback and it added this new feature in Java. Ok? Now when we take new version of Java. Ok? So what will happen to us? If we had used the List interface, Java would force us to override this pushback method. Right? Our production code will explode. Changes will have to be made in how many classes across the world. Isn't it? So Java thought that this should not be done. So I create a new method which I call"
+    },
+    {
+      "start_time": 1587.44,
+      "end_time": 1622.159,
+      "text": "बोलता हूं डिफॉल्ट। डिफॉल्ट वॉइड पुशबैक और इसकी एक यहां पे डेफिनेशन दे देता हूं। अब इस दुनिया में जितनी भी क्लासेस हैं जो लिस्ट को इंप्लीमेंट करती हैं उसे इस पुशबैक का डेफिनेशन देने की कोई जरूरत नहीं है। वो चाहे तो इसका डिफॉल्ट मेथड यूज़ कर सकती हैं। अगर वो कल को चाहें कि उनको खुद का कोई इंप्लीमेंटेशन देना है तो वो उसको ओवराइड करवा सकती हैं। जैसे हमने यहां पे ड्राइव लिखा हुआ था बेस क्लास में लेकिन फिर भी हमने ओवराइड करवा दिया। पर उनको कोई नेसेसिटी नहीं है। राइट? ये कोई हार्ड एंड फास्ट रूल नहीं है कि आपको अब पुशबैक को ओवराइड करना ही पड़ेगा। वो ऑप्शनल हो गया। राइट? यही रीज़न था कि जावा",
+      "source": "transcript_api",
+      "english_text": "I say default. I give the default void pushback and its definition here. Now there is no need to define this pushback for all the classes in this world that implement List. If she wants, she can use its default method. If tomorrow she wants to provide her own implementation, she can get it overridden. Like we had written drive here in the base class but still we got it overridden. But they have no necessity. Right? This is not a hard and fast rule that you have to override pushback now. It became optional. Right? This was the reason why Java"
+    },
+    {
+      "start_time": 1619.279,
+      "end_time": 1652.64,
+      "text": "ने डिफॉल्ट मेथड्स को इंट्रोड्यूस किया। तो इसको अभी के लिए हम हटा देते हैं। पर आप समझ गए रीज़न क्या था। इनफैक्ट जावा 8 में सिर्फ डिफॉल्ट मेथड्स ही नहीं बल्कि हमारे स्टैटिक मेथड्स भी आ गए। स्टैटिक मेथड्स यानी कि अब हम कोई स्टैटिक मेथड भी डिक्लेअर कर सकते थे किसी इंटरफ़ेस के अंदर। तो यहां पे लेट्स से हम एक स्टैटिक मेथड बनाते हैं। स्टैटिक वॉइड ब्रेक तो हम कुछ ऐसा भी कर सकते हैं। देखो कोई एरर नहीं आया। और लेट्स से यहां पे मैं सिंपली प्रिंट कर देता हूं। तो यहां पे मैं लिख सकता हूं व्हीकल इज अपाइंग ब्रेक। राइट?",
+      "source": "transcript_api",
+      "english_text": "Introduced default methods. So let's remove this for now. But you understood what the reason was. In fact, in Java 8, not only the default methods but also our static methods came. Static methods means now we could declare any static method inside any interface. So here let's create a static method. Static Void Break So we can do something like this also. Look, no error occurred. And here I simply print from Lets. So here I can write vehicle is applying brake. Right?"
+    },
+    {
+      "start_time": 1651.039,
+      "end_time": 1684.799,
+      "text": "तो यहां पे मैंने लिख दिया वेकल इज अपाइंग ब्रेक। कुछ इस तरीके से। तो देखो मैं अपना एक डिफॉल्ट मेथड भी रख सकता हूं। मैं एक चाहे तो एक स्टैटिक मेथड भी रख सकता हूं। अब स्टैटिक मेथड को मैं कैसे कॉल कर सकता हूं? अब मुझे उसके लिए ऑब्जेक्ट की भी जरूरत नहीं है। मैं सीधा क्या कर सकता हूं? हमारे इंटरफ़ेस का नाम व्हिच इज़ व्हीकल सॉरी व्हीकल डॉट और सिंपली मैं क्या कॉल कर सकता हूं? ब्रेक। इस तरीके से अगर मैं इसको अभी के लिए कमेंट कर दूं और मैं व्हीकल डॉट ब्रेक कॉल करूं तो क्या मेरा डायरेक्टली आउटपुट आ जाएगा? और आंसर है बिल्कुल आ जाएगा। तो जैसे हम एक क्लास के स्टैटिक मेंबर को कॉल कर सकते हैं। कैसे कॉल करते हैं? क्लास का",
+      "source": "transcript_api",
+      "english_text": "So here I wrote vehicle is waiting brake. Something like this. So look, I can also keep my own default method. I can also have a static method if I want. Now how can I call the static method? Now I don't even need an object for that. What can I do directly? The name of our interface is what is vehicle sorry vehicle dot and simply what can I call? break. In this way, if I comment it for now and I call vehicle dot brake, will my direct output come? And the answer is that it will definitely come. So like we can call a static member of a class. How to call? of class"
+    },
+    {
+      "start_time": 1682.399,
+      "end_time": 1715.36,
+      "text": "नाम डॉट उस स्टैटिक मेथड का नाम उसी तरीके से हम इस इंटरफेस के भी स्टैटिक मेथड्स को कॉल कर सकते हैं। वैसे ही जैसे हमारे इंटरफेस का नाम डॉट हमारे मेथड्स का नाम व्हीकल डॉट ब्रेक। तो ये भी java 8 ने इंट्रोड्यूस किए। तो अब जावा 8 में हमने इंटरफसेस को ना बहुत हद तक बहुत हद तक एब्स्ट्रैक्ट क्लासेस की तरह बना दिया कि उसमें हमारे नॉर्मल मेथड्स भी आ सकते हैं। अब इंटरफेस में हम उसको डिफॉल्ट मेथड बोलते हैं। लेकिन एब्स्ट्रैक्ट क्लास में हम उसको नॉर्मल या कंक्रीट मेथड्स बोल लेते हैं। और इतना ही नहीं जावा नाइन के",
+      "source": "transcript_api",
+      "english_text": "Name dot is the name of that static method. In the same way we can call the static methods of this interface also. Just like the name of our interface is dot, the name of our methods is vehicle dot brake. So these were also introduced by java 8. So now in Java 8 we have made interfaces almost like abstract classes to such an extent that our normal methods can also come in them. Now in the interface we call it the default method. But in abstract class we call them normal or concrete methods. And not only this, Java Nine"
+    },
+    {
+      "start_time": 1711.6,
+      "end_time": 1745.279,
+      "text": "बाद से ये तो आफ्टर जावा एटथ है। फ्रॉम java 9 हमारे इंटरफेससेस के अंदर प्राइवेट मेथड्स भी आ सकते हैं। प्राइवेट मेथड्स। तो प्राइवेट मेथड कैसे? मान लो मैं सिंपली लिख सकता हूं प्राइवेट तो पहली बार मैं एक मेथड का एक्सेस मॉडिफायर भी डाल सकता था इंटरफेससेस के अंदर और लेट से यहां पे लिखता हूं प्राइवेट वॉइड ड्राइव हो गया ब्रेक हो गया लेट्स से एक्सीलरेट तो मैं कुछ इस तरीके का मेथड भी बना सकता हूं अब बस दिक्कत ये है क्योंकि ये मेथड प्राइवेट है इसको इस इंटरफेस के बाहर कोई कॉल नहीं",
+      "source": "transcript_api",
+      "english_text": "Since then this is after Java eth. From java 9 we can also have private methods inside our interfaces. Private Methods. So how about private method? Suppose I can simply write private, then for the first time I could also put the access modifier of a method inside the interfaces and let's write here private void drive is broken, accelerated with lets, then I can also create a method like this. Now the only problem is that because this method is private, there is no call to it outside this interface."
+    },
+    {
+      "start_time": 1743.12,
+      "end_time": 1777.279,
+      "text": "कर सकता तो इसको कॉल कौन कर सकता है इस क्लास के अंदर ही कोई और मेथड चाहे तो इसे कॉल कर सकता है तो लेट्स से मैंने यहां पे बस प्रिंट किया हुआ है सिस्टम डॉट आउट डॉट प्रिंट एलn और यहां पे मैं लिख देता हूं व्हीकल इज़ एक्सीलरेटिंग। कुछ इस तरीके से। अब मैंने क्या कहा? इसे कॉल कौन कर सकता है? लेट्स से ड्राइव। पहले व्हीकल इज़ ड्राइविंग कॉल करता है। उसके बाद हमारा एक्सलरेट मेथड कॉल कर सकता है। तो ये अंदर से ही इसे कॉल कर सकते हैं। बाहर से एक्सलरेट मेथड तो कोई कॉल ही नहीं कर सकता। तो अब अगर मैं V डॉट ड्राइव कॉल करूंगा तो आपको पता ही है क्या होगा? पहले कॉल होगा क्या? व्हीकल इज़ ड्राइविंग। उसके",
+      "source": "transcript_api",
+      "english_text": "If I can then who can call it? If there is any other method within this class itself then it can be called, then from Let's I have just printed here system dot out dot print ln and here I have written vehicle is accelerating. Something like this. Now what did I say? Who can call it? Drive with lets. Makes the first Vehicle Is Driving call. After that our accelerate method can be called. So they can call it from inside. No one can call Accelerate Method from outside. So now if I call V dot drive you know what will happen? Will you call first? The vehicle is driving. his"
+    },
+    {
+      "start_time": 1775.679,
+      "end_time": 1800.96,
+      "text": "बाद एक्सलरेट मेथड कॉल होगा और फिर व्हीकल इज़ एक्सीलरेटिंग। तो हमारे ये दो आउटपुट आ जाएंगे। तो एक बार देख लेते हैं। कार इज़ ड्राइविंग। ओके? वो इसलिए आया क्योंकि हमने अभी इस ड्राइव मेथड को ओवराइड किया हुआ है। तो इसकी मैं ओवराइड मेथड हटा देता हूं। ओके। अब देखते हैं हमारा वो आउटपुट आ जाना चाहिए। व्हीकल इज़ ड्राइविंग एंड व्हीकल इज़ एक्सीलरेटिंग। बिल्कुल सही। ठीक है? आई होप आपको बहुत सारी चीजें एकदम क्लियर हुई होंगी इंटरफसेस के बारे में।",
+      "source": "transcript_api",
+      "english_text": "After this the accelerate method will be called and then the vehicle is accelerating. So we will have these two outputs. So let's take a look once. The car is driving. Ok? That came because we have just overridden this drive method. So I remove its override method. Ok. Now let's see that our output should come. Vehicle is driving and vehicle is accelerating. Correct. Ok? I hope many things would have been clear to you regarding interfaces."
+    },
+    {
+      "start_time": 1799.12,
+      "end_time": 1826.88,
+      "text": "अब चलते हैं अपने सबसे इंपॉर्टेंट क्वेश्चन की तरफ कि जावा ने इनिशियली बोला था कि वो मल्टीपल इन्हहेरिटेंस को सपोर्ट नहीं करता। और फिर उसने कहा इंटरफेस के थ्रू मैं उसको सपोर्ट करवा दूंगा। ठीक है? तो वो देखते हैं कि जावा ने पहले क्यों सोचा कि वो मल्टीपल इनहेरिटर्स को सपोर्ट नहीं करेगा। फिर इंटरफसेस के थ्रू उसने कैसे सपोर्ट करवाया? इसको एक बार डेप्थ में जाके समझते हैं। तो देखो सबसे पहले डायमंड प्रॉब्लम को एक बार रिवजिट करते हैं। हमारी डायमंड प्रॉब्लम थी क्या?",
+      "source": "transcript_api",
+      "english_text": "Now let's move towards our most important question that Java initially said that it does not support multiple inheritance. And then he said that I will get him support through the interface. Ok? So let's look at why Java first thought it wouldn't support multiple inheritors. Then how did he get support through interfaces? Let us understand this once we go deeper. So look, first of all let's revisit the diamond problem. Did we have a diamond problem?"
+    },
+    {
+      "start_time": 1824.159,
+      "end_time": 1857.679,
+      "text": "डायमंड प्रॉब्लम ये कहती थी कि लेट्स से हमारे पास एक क्लास है ए। ठीक है? जिसे दो क्लासेस एक्सटेंड करती है बी और सी। ये सब क्लासेस हैं। तो ये सब क्लासेस हैं। ठीक है? तो अभी हम क्लासेस की बात कर रहे हैं ना कि इंटरफसेस की। अब अगर मान लो मेरे पास एक थर्ड क्लास है या सॉरी एक फोर्थ क्लास है डी और वो जो डी क्लास है ना वो दोनों से इन्हहेरिट करती है बी से भी और सी से भी पहली बात तो वो ऐसा कर ही नहीं सकती क्योंकि देखो यही तो है मल्टीपल इनहेरिटेंस कि एक डी क्लास दो क्लास को इन्हहेरिट करने की कोशिश कर रही है पर हमें समझना है वो क्यों नहीं कर सकती जावा",
+      "source": "transcript_api",
+      "english_text": "The diamond problem used to say that from Let's we have a class A. Ok? Which is extended by two classes B and C. These are all classes. So these are all the classes. Ok? So right now we are talking about classes and not interfaces. Now suppose I have a third class or sorry a fourth class D and that D class inherits from both B and C, first of all it cannot do this because see this is the multiple inheritance that one D class is trying to inherit two classes but we have to understand why it cannot do Java."
+    },
+    {
+      "start_time": 1855.44,
+      "end_time": 1889.76,
+      "text": "ने मना क्यों किया देखो जावा के जो इनिशियल डिजाइनर्स थे जैसे कि जेम्स गो कॉसलिंग हो गया या उसकी टीम हो गई जेम्स गोसलिंग ठीक है उन्होंने देखा कि इस मल्टीपल इन्हहेरिटेंस की वजह से ना एक डायमंड प्रॉब्लम इंट्रोड्यूस होती है। अब कई सारी लैंग्वेजज़ इस डायमंड प्रॉब्लम का सॉल्यूशन निकालती हैं अपने-अपने तरीके से। जैसे CC+ ने भी निकाला। पर जेम गोस्लिम और टीम ने सोचा कि इस डायमंड प्रॉब्लम का जो सॉल्यूशन है ना वो बहुत ही कॉम्प्लिकेटेड है और वो वर्थ इट ही नहीं है कि हम उसको सॉल्व करें। इससे अच्छा हम एक स्ट्रिक्ट रूल बना देते हैं कि जावा में जावा में मल्टीपल इनहेरिटेंस सपोर्ट नहीं होगा।",
+      "source": "transcript_api",
+      "english_text": "Why did they refuse? Look, the initial designers of Java, like James Go Cosling or his team, James Gosling, okay, they saw that because of this multiple inheritance, the diamond problem is not introduced. Now many languages ​​solve this diamond problem in their own ways. Like CC+ also removed. But Jem Goslim and the team thought that the solution to this diamond problem is very complicated and it is not worth it for us to solve it. Better than this, we make a strict rule that there will be no multiple inheritance support in Java."
+    },
+    {
+      "start_time": 1887.679,
+      "end_time": 1921.2,
+      "text": "ओके? अब डायमंड प्रॉब्लम कहता क्या है? वो यह कहता है कि लेट्स से इस पर्टिकुलर केस में जहां पे मैंने कहा था एक पेरेंट क्लास A है जिसको दो क्लास एक्सटेंड करती है B और C और हमारी एक क्लास है D जो इस B और C से फर्दर एक्सटेंड करती है। अगर ये अलाउड होता तो आप ऐसे मान लो अगर मान लो इस A के पास एक मेथड होता फन ठीक है फन जिसको इसने डिफाइन किया होता नॉट जस्ट डिक्लेअर बल्कि प्रॉपर डिफाइन किया होता। तो इन्हहेरिटेंस के थ्रू ये फन यहां पे भी आ जाता और यहां पे भी आ जाता। बिल्कुल सही। अब मान लो ये",
+      "source": "transcript_api",
+      "english_text": "ok? Now what is the diamond problem? It says that let's say in this particular case where I said there is a parent class A which extends two classes B and C and we have a class D which further extends this B and C. If it was allowed, then you can assume that if suppose this A had a method, OK, Fun, which it would have defined, not just declared but properly defined. So through inheritance this fun would have come here as well. Correct. Now accept this"
+    },
+    {
+      "start_time": 1917.84,
+      "end_time": 1952.24,
+      "text": "दोनों क्लासेस B और C इस फन को ओवराइड करती हैं तो ये फन का कुछ अपना इंप्लीमेंटेशन देगी और ये फन का कुछ अपना इंप्लीमेंटेशन देगी और दोनों का इंप्लीमेंटेशन अलग-अलग होगा। अब क्योंकि ये जो डी क्लास है वो B और C दोनों को एक्सटेंड करती है या दोनों को इन्हहेरिट करती है और लेट्स से जावा में वो सपोर्ट भी होता तो अगर मैं इस डी क्लास में फन मेथड कॉल करता यानी कि अगर मैं कुछ ऐसा लिखता पहले मैं d का ऑब्जेक्ट बनाता d = न्यू डी कुछ ऐसे करके और फिर मैं लिखता d",
+      "source": "transcript_api",
+      "english_text": "Both classes B and C override this fun, so this will give its own implementation of this fun and this will give its own implementation of this fun and the implementation of both will be different. Now because this D class extends both B and C or inherits both and since Let's also have that support in Java, then if I call a fun method in this D class, that is, if I write something like this, first I create an object of d by doing something like d = new D and then I write d."
+    },
+    {
+      "start_time": 1948.24,
+      "end_time": 1974.64,
+      "text": "डॉट फन तो कौन सा फन मेथड कॉल होता ये वाला फन मेथड या यहां से आने वाला फन मेथड राइट इसी को हम कहते हैं डायमंड प्रॉब्लम कि बेसिकली एक कंफ्यूज जन क्रिएट हो जाती है कि ये जो डी दो क्लास को एक्सटेंड कर रही है और दोनों में सेम मेथड है तो मैं कौन से मेथड को ओवराइड करूं। अब ये था इनिशियल डिज़ाइन। अब जैसे ही जावा ने इंटरफसेस का आविष्कार किया और जावा ने कहा इंटरफेससेस तो बहुत इंटरेस्टिंग चीज है।",
+      "source": "transcript_api",
+      "english_text": "Dot fun then which fun method is called, this fun method or the fun method coming from here right, this is what we call diamond problem that basically a confused people gets created that if this D is extending two classes and both have the same method then which method should I override. Now this was the initial design. Now as soon as Java invented interfaces and Java said interfaces, it is a very interesting thing."
+    },
+    {
+      "start_time": 1972.24,
+      "end_time": 2003.279,
+      "text": "इंटरफेस के अंदर हम डेफिनेशन प्रोवाइड ही नहीं करते थे इनिशियली। तो जावा ने कहा हम इंटरफ़ेस के थ्रू मल्टीपल इन्हहेरिट सपोर्ट कर सकते हैं। अच्छा कैसे कर सकते हैं? हमारे इंटरफेस में पहले सेम एरर की देखते हैं। एक बेस क्लास है A हमारे पास उसकी दो चाइल्ड क्लास हो गई B और C और दोनों की एक कॉमन चाइ एक कॉमन क्लास हो गई डी। ठीक है? अभी तक हम इस प्रॉब्लम की बात कर रहे थे और हम कह रहे थे कि लेट से A के पास एक मेथड है फन। B ने उसको ओवराइड किया हुआ है और C ने भी उसको ओवराइड किया हुआ है। तो D के पास कौन सा मेथड आना चाहिए? यही पूरी",
+      "source": "transcript_api",
+      "english_text": "Initially we did not provide any definition inside the interface. So Java said we can support multiple inheritance through interface. How can we do good? Let us first see the same error in our interface. There is a base class A, we have two child classes B and C and both of them have a common class D. Ok? Till now we were talking about this problem and we were saying that late A has a method which is fun. B has overridden it and C has also overridden it. So which method should D come up with? this is the whole"
+    },
+    {
+      "start_time": 2001.36,
+      "end_time": 2026.96,
+      "text": "हरार्की की बात हो रही थी। अब आप ऐसे मान लो इसमें A, B, C A, B एंड C तीनों के तीनों इंटरफसेस हैं। आर इंटरफेससेस। अगर ऐसा होता, तो क्या होता? ओल्ड जावा की पहले बात करते हैं जावा 8 से पहले जब डिफ़ॉल्ट मेथड नहीं होते थे। तो अगर ये तीनों के तीनों इंटरफेससेस हैं तो तीनों के अंदर क्या होना चाहिए? इस फंक्शन मेथड की सिर्फ डिक्लेरेशन होनी चाहिए। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "There was talk of hierarchy. Now assume that there are three interfaces of A, B, C, A, B and C. R Interfaces. If that were the case, what would happen? Let's first talk about Old Java, before Java 8 when there were no default methods. So if these are all three interfaces, what should be inside all three? There should be only one declaration of this function method. Ok?"
+    },
+    {
+      "start_time": 2024.48,
+      "end_time": 2055.919,
+      "text": "अब अगर ये सिर्फ डिक्लेरेशन है तो B और C खुद इंटरफ़ेससेस हैं। यानी कि B क्या कर रहा है? A को एक्सटेंड कर रहा है और C भी A को एक्सटेंड कर रहा है। और अगर क्योंकि ये दोनों सिर्फ इसको एक्सटेंड कर रहे हैं तो फंक्शन का ये भी इंप्लीमेंटेशन प्रोवाइड नहीं करेंगे। तो इनके पास भी फंक्शन का क्या होगा? सिर्फ डिक्लेरेशन ही तो होगा। डेफिनेशन तो होगा ही नहीं। इनफैक्ट यहां पे अगर हम चाहें तो यहां पे फन लिखने की भी जरूरत नहीं है। क्योंकि बाय डिफ़ॉल्ट वो B और C में A से फन मेथड आ ही रहा होगा। है ना? ये तो हम तब लिखते हैं जब ये इसको कुछ ओवराइड करने की कोशिश करता। पर C और B ओवराइड कर नहीं सकते।",
+      "source": "transcript_api",
+      "english_text": "Now if this is just a declaration then B and C themselves are interfaces. That is, what is B doing? A is extending and C is also extending A. And since these two are just extending it, they will also not provide implementation of the function. So what will be the function of these also? There will be only declaration. There will be no definition. In fact, if we want, there is no need to even write fun here. Because by default the fun method will be coming from A to B and C. Isn't it? We write this only when someone tries to override it. But C and B cannot override."
+    },
+    {
+      "start_time": 2054.079,
+      "end_time": 2080.0,
+      "text": "क्योंकि jaवा में हम इंप्लीमेंटेशन नहीं देते किसी भी इंटरफ़ेस का। ओल्ड जावा की अब मैं बात कर रहा हूं। तो अगर ऐसा है तो उस केस में ये जो हमारा डी है। अब डी क्या है? डी हमारी प्रॉपर क्लास है। ठीक है? डी एक क्लास है। अब तो हमारा जो क्लास है डी जो कि दो इंटरफसेस बी और सी दोनों को इंप्लीमेंट करती है। पर यहां पे कोई डायमंड प्रॉब्लम अराइज़ ही नहीं होगा। कोई कंफ्यूजन आएगी ही नहीं। क्यों? क्योंकि डी एक क्लास है और बी और सी इंटरफेससेस हैं।",
+      "source": "transcript_api",
+      "english_text": "Because in Java we do not provide implementation of any interface. Now I am talking about Old Java. So if it is so then in that case this is our D. Now what is D? D is our proper class. Ok? D is a class. Now our class is D which implements two interfaces B and C. But no diamond problem will arise here. There will be no confusion. Why? Because D is a class and B and C are interfaces."
+    },
+    {
+      "start_time": 2077.599,
+      "end_time": 2112.32,
+      "text": "तो डी की जिम्मेदारी है फन का इंप्लीमेंटेशन प्रोवाइड करना। राइट? क्योंकि यहां पे भी फन को सिर्फ डिक्लअ किया हुआ है। यहां पे भी फन को डिक्लअ किया हुआ है। तो d की जिम्मेदारी बनती है इस फंक्शन की डेफिनेशन को प्रोवाइड करना। और जैसे ही ये डेफिनेशन प्रोवाइड करेगा कंफ्यूजन दूर हो गई। अब जब भी मैं लिखूंगा dd = न्यू डी और अब मैं d डॉट फन कॉल करूंगा तो जावा के कंपाइलर को पता होगा यह वाला फन कॉल करना है जो भी डी ने ओवराइड किया हुआ है। हेंस हमारी डायमंड प्रॉब्लम बिल्कुल इरेज़ हो जाती है। इसी रीज़न से हम जावा में इंटरफेससेस के थ्रू डायमंड प्रॉब्लम को तोड़ देते हैं। इसलिए हमारी",
+      "source": "transcript_api",
+      "english_text": "So D's responsibility is to provide implementation of fun. Right? Because here also the fun has just been declared. The fun has been declared here also. So it is the responsibility of d to provide the definition of this function. And as soon as this definition is provided, the confusion goes away. Now whenever I will write dd = new d and now I will call d dot fun then the compiler of Java will know that this fun has to be called whatever d is overridden. Hence our diamond problem gets completely erased. This is why we break the diamond problem through interfaces in Java. Therefore our"
+    },
+    {
+      "start_time": 2110.16,
+      "end_time": 2138.0,
+      "text": "मल्टीपल इन्हहेरिटेंस सपोर्ट होता है। तो देखो अगेन डेमो 6. मैंने एक फाइल बना रखी है। अगर हम सेम चीज को कोड में देखें तो लेट्स से हमारे पास एक इंटरफेस है ए। ठीक है? उसमें एक मेथड है वॉइड फन जिसको इसने सिर्फ डिक्लेअ किया हुआ है। और हमारे पास एक इंटरफ़ेस है B जो क्या करती है? एक्सटेंड करती है A इंटरफ़ेस को। ठीक है? और सेम तरीके से हमारे पास एक इंटरफ़ेस है C जो एक्सटेंड करती है इस A इंटरफ़ेस को।",
+      "source": "transcript_api",
+      "english_text": "Multiple inheritance is supported. So look again Demo 6. I have created a file. If we look at the same thing in code, with Let's we have an interface A. Ok? There is a method in it, void fun, which it has just declared. And we have an interface B which does what? Extends A interface. Ok? And in the same way we have an interface C which extends this A interface."
+    },
+    {
+      "start_time": 2136.24,
+      "end_time": 2169.359,
+      "text": "ठीक है? तो ये जो हमने बात की थी एक A है। उसको दो इंटरफ़ेस B और C एक्सटेंड करते हैं। अब हमारे पास एक कंक्रीट क्लास है D जो क्या करेगी? इंप्लीमेंट्स करती है इंप्लीमेंट्स B C कुछ इस तरीके से ये हम जावा में कर सकते हैं। अब हमारी जिम्मेदारी है ओवराइड करना किसको? इस फन मेथड को तो पब्लिक वॉइड फन हम लिखते हैं और हम इसे ओवराइड कर देते हैं। अब आप बोलोगे यहां पे तो हमने भैया फन मेथड लिखा ही नहीं। कोई बात नहीं। वो तो ए से आ ही जाएगा। आप चाहो तो यहां पे आप ऐड भी कर सकते हो।",
+      "source": "transcript_api",
+      "english_text": "ok? So this is an A that we talked about. Two interfaces B and C extend it. Now we have a concrete class D which will do what? Implements B C. We can do this in Java in this way. Now it is our responsibility to override whom? We write this fun method as public void fun and we override it. Now you will say, brother, we have not written the fun method here. No problem. He will definitely come from A. If you want, you can also add it here."
+    },
+    {
+      "start_time": 2167.04,
+      "end_time": 2193.0,
+      "text": "लेट्स से यहां पर अपना खुद का फन मेथड है और यहां पर भी अपना खुद का फन मेथड है। कुछ इस तरीके से। ठीक है? तो दोनों में मैंने फन मेथड लिख दिया। पर यहां पे जैसे ही इसने फन को ओवराइड किया हमारा सारा एरर चला गया। है ना? अब इसने जैसे ही कुछ भी एक इंप्लीमेंटेशन प्रोवाइड कर दी। तो लेट्स से यहां से इसने लिख दिया डिफ़ॉल्ट इंप्लीमेंटेशन।",
+      "source": "transcript_api",
+      "english_text": "Let's have our own fun method here and here too there is our own fun method. Something like this. Ok? So in both I wrote fun method. But here as soon as it overrides the fun, all our errors are gone. Isn't it? Now it has provided an implementation of just about anything. So let's write the default implementation from here."
+    },
+    {
+      "start_time": 2194.64,
+      "end_time": 2227.28,
+      "text": "तो कुछ इस तरीके से। अब जब भी मैं इस d का ऑब्जेक्ट बनाऊंगा लेट से dd = न्यू d और अब मैं d डॉट फन कॉल करूंगा तो जावा को कोई कंफ्यूजन ही नहीं है। जावा सीधा ये वाला फंक्शन कॉल कर देगा। कैसे कॉल करेगा? अगर मैं इसको चला के देखूं तो हमारा मेथड आ गया डिफॉल्ट इंप्लीमेंटेशन। राइट? हमारी पूरी की पूरी जो डायमंड प्रॉब्लम थी वो इरेडिकेट हो जाती है इंटरफेस का यूज़ करते ही। पर अब बात आती है जावा एट के बाद क्या? Java 8 के बाद तो हम डिफॉल्ट मेथड लिख सकते हैं। तो मान लो मैंने क्या किया",
+      "source": "transcript_api",
+      "english_text": "So something like this. Now whenever I create an object of this d let dd = new d and now I will call d dot fun then there is no confusion in Java. Java will directly call this function. How to call? If I run this and see, our method is the default implementation. Right? Our entire diamond problem gets eradicated as soon as we use the interface. But now the question comes, what after Java AT? After Java 8 we can write default method. so guess what i did"
+    },
+    {
+      "start_time": 2224.64,
+      "end_time": 2255.76,
+      "text": "हुआ है? इस बी क्लास के अंदर एक डिफॉल्ट मेथड लिखा हुआ है फन। ठीक है? और उसका कुछ मैंने इंप्लीमेंटेशन प्रोवाइड की हुई है। लेट्स से सिस्टम डॉट आउट डॉट प्रिंट एलn। और यहां पे हम लेट्स से कॉल करते हैं बस ए। ठीक है? और वैसे ही मैंने यहां पे इंटरफ़ेस C के अंदर भी एक डिफ़ॉल्ट मेथड बना रखा है। फन के नाम से ही सेम मेथड। ठीक है? और इसमें मैं लेट्स से प्रिंट कर देता हूं क्लास का नाम व्हिच इज़ C। तो यहां पे सी। यहां पे मुझे A नहीं B प्रिंट करना चाहिए। तो यहां पे मैंने बी प्रिंट किया।",
+      "source": "transcript_api",
+      "english_text": "Has it happened? There is a default method written inside this B class called Fun. Ok? And I have provided some implementation of it. Let's print system dot out dot ln. And here we call it lets just a. Ok? And similarly I have created a default method here inside interface C also. Same method with the same name as fun. Ok? And in this I print the class name which is C. So here C. Here I should print B not A. So here I printed B."
+    },
+    {
+      "start_time": 2253.76,
+      "end_time": 2287.04,
+      "text": "यहां पे मैंने C प्रिंट किया। अब देखो जैसे ही मेरी ये जो क्लास है डी ये दो इंटरफेससेस को B और C को इंप्लीमेंट करती है अब क्या होगा? अब तो फन यहां से भी आ रहा है। यहां से भी आ रहा है। अब आप डायमंड प्रॉब्लम को कैसे ब्रेक करोगे? तो जावा ने बोला है ये तो बहुत सिंपल है। राइट? अगर मेरे को पता है मेरी जो क्लास है डी वो दो इंटरफेससेस को इंप्लीमेंट कर रही है B और C जिसमें सेम फंक्शन है। दोनों में फन नाम का फंक्शन है। तो मैं एक रूल बना दूंगी। रूल वो है कि अगर ऐसी कोई सिचुएशन आती है तो इस क्लास डी की जिम्मेदारी है कि वो इस फन मेथड को ओवराइड",
+      "source": "transcript_api",
+      "english_text": "Here I printed C. Now see, what will happen as soon as my class D implements two interfaces B and C? Now the fun is coming from here too. Coming from here also. Now how will you break the diamond problem? So Java has said that it is very simple. Right? If I know that my class D is implementing two interfaces B and C which have the same function. Both have a function called Fun. So I will make a rule. The rule is that if such a situation arises, it is the responsibility of this Class D to override this fun method."
+    },
+    {
+      "start_time": 2284.64,
+      "end_time": 2311.04,
+      "text": "करे। तो बेसिकली मुझे यहां पे अब इस फन मेथड को अब इस फन मेथड को ओवराइड करना ही पड़ेगा। तो मुझे लिखना पड़ेगा पब्लिक वॉइड फन तभी काम चलेगा वरना मुझे एरर आता रहेगा। देखो मेरा एरर चला गया। अब यहां पे मैं प्रिंट कर सकता हूं कुछ भी। लेट्स से मैंने प्रिंट कर दिया अपना d ठीक है? अब जैसे ही मैंने ये किया। अब मैंने देखो d का ऑब्जेक्ट बना रखा है। यहां पे d = न्यू d और d डॉ. फन करूंगा।",
+      "source": "transcript_api",
+      "english_text": "Do it. So basically I have to override this fun method here. So I will have to write public void fun only then it will work otherwise I will keep getting errors. Look, my error is gone. Now I can print anything here. I printed my d with lets, ok? Now as soon as I did this. Now I have created an object of look d. Here d = new d and d will be Dr. Fun."
+    },
+    {
+      "start_time": 2307.92,
+      "end_time": 2333.599,
+      "text": "तो मेरा आंसर आना चाहिए डी। तो मैं एक बार चेक कर सकता हूं। मेरा आ गया डी। बिल्कुल सही। है ना? तो जावा ने ये रूल बना दिया कि अगर दो इंटरफेससेस को आप इंप्लीमेंट कर रहे हो और दोनों के पास एक डिफॉल्ट मेथड है। तो कौन सा मेथड कॉल होना चाहिए? कोई सा भी नहीं। आपको ओवराइड करना पड़ेगा अपना खुद का इंप्लीमेंटेशन। अच्छा। पर मान लो मैं चाहता हूं कि मैं B का या C का मेथड कॉल करूं। मैं खुद का फंक्शन ना लिखूं।",
+      "source": "transcript_api",
+      "english_text": "So my answer should be D. So I can check once. My D has arrived. Correct. Isn't it? So Java made this rule that if you are implementing two interfaces and both have a default method. So which method should be called? Not at all. You will have to override your own implementation. Good. But let's say I want to call a method of B or C. I should not write my own function."
+    },
+    {
+      "start_time": 2331.92,
+      "end_time": 2365.2,
+      "text": "अभी के लिए मानते हैं मेरे को B का मेथड कॉल करना है। ठीक है? तो मेरे को स्क्रीन पे B प्रिंट करना है। तो बेसिकली मैं चाहता हूं ये वाला फंक्शन कॉल हो। राइट? ना तो C वाला हो ना मैं खुद का कुछ देना चाहता हूं। तो मैं क्या करूंगा? बहुत सिंपल है। मैं ओवराइड करूंगा और क्या करूंगा? इस B का फन कॉल कर दूंगा। और वो मैं कैसे कर सकता हूं? बहुत सिंपल है। मैं अपने इंटरफ़ेस का नाम लिखूंगा B डॉट। और फिर अगेन हमारा हमारे पास क्या कीवर्ड होता है? सुपर। तो B डॉट सुपर डॉट फन। कुछ इस तरीके से जैसे ही मैंने लिखा B डॉट सुपर डॉट फन। B का मतलब क्या है? इंटरफ़ेस का नाम। डॉट हमारा सुपर कीवर्ड और डॉट उसके फंक्शन का नाम। तो सीधा ये वाला",
+      "source": "transcript_api",
+      "english_text": "For now let's say I have to call B's method. Ok? So I have to print B on the screen. So basically I want this function call. Right? Neither is it C nor I want to give anything of my own. so what do i do? It is very simple. What else would I override? I will call this B fun. And how can I do that? It is very simple. I will write the name of my interface B dot. And then again what keyword do we have? Super. So B dot super dot fun. Something like this, as soon as I wrote B dot super dot fun. What does B stand for? Interface name. Dot is our super keyword and dot is the name of its function. so straight this one"
+    },
+    {
+      "start_time": 2363.44,
+      "end_time": 2388.72,
+      "text": "फंक्शन कॉल हो जाएगा और स्क्रीन पे बी प्रिंट हो जाएगा। तो अब अगर मैं इसको रन करूंगा तो मेरा स्क्रीन पे बी आ गया। राइट? तो बेसिकली मैंने ओवराइड तो किया पर ओवराइड के अंदर मैंने क्या कहा? अंदर से खुद को बोला कि भाई बी का ही मेथड कॉल करो। तो मैंने जावा के कंपाइलर को कोई कंफ्यूजन रह नहीं। जावा के कंपाइलर का काम क्या था? इस मेथड को एग्जीक्यूट करना। और जैसे ही वो एग्जीक्यूट करने गया। मैंने उसको बोला कि B का फन एग्जीक्यूट करो। तो वो B का फन एग्जीक्यूट करने चला गया।",
+      "source": "transcript_api",
+      "english_text": "The function will be called and B will be printed on the screen. So now if I run it, B appears on my screen. Right? So basically I did the override but what did I say inside the override? Internally I told myself to call Bhai B's method only. So I told the Java compiler that there was no confusion. What was the function of Java's compiler? Executing this method. And as soon as he went to execute. I told him to execute B's fun. So he went to execute B's plan."
+    },
+    {
+      "start_time": 2387.119,
+      "end_time": 2420.72,
+      "text": "मैंने उसको एक्सप्लसिटली ये बोला। मैंने कहा ही नहीं कि C की तरफ देखो। अब अगर मैं यहां पे लिखता C डॉट सुपर डॉट फन तो वो सिंपली C का मेथड कॉल करता तो मेरा आउटपुट C आ जाता। इनफैक्ट मैं चाहता तो मैं पहले B का सुपर फन कॉल करता और फिर मैं C का सुपर फन कॉल करता। कुछ इस तरीके से मेरी मर्जी। मैंने जावा को बेसिकली कोई कंफ्यूजन नहीं रहने दी। मैंने इसको स्पेसिफिकली बताया। पहले B का फन कॉल करो फिर C का फन कॉल करो। और जैसे ही मैं इसको रन करूंगा मेरा B और C दोनों प्रिंट हो जाएगा। तो बेसिकली अगेन अगर ऐसा कोई केस",
+      "source": "transcript_api",
+      "english_text": "I told him this explicitly. I didn't say look at C. Now if I had written here C dot super dot fun, then it would have simply called the method of C, then my output would have been C. In fact, if I wanted, I would first call B's super fun and then I would call C's super fun. Something like this is my wish. I basically left no confusion about Java. I told this specifically. First call B's fun and then C's fun call. And as soon as I run it, both my B and C will be printed. So basically again if such a case"
+    },
+    {
+      "start_time": 2418.72,
+      "end_time": 2451.839,
+      "text": "आएगा डायमंड प्रॉब्लम का तो इस क्लास डी की जिम्मेदारी हो जाएगी फन को ओवराइट करना ही करना है। राइट? क्योंकि देखो आपको पता है नॉर्मल केस में क्या होता है? अगर ये क्लास डी बस किसी एक ही इंटरफेस को इंप्लीमेंट करती है लेट्स से बी। तो अगर ये सिर्फ बी को इंप्लीमेंट करती और ये अगर इसको ओवराइड नहीं भी करती तो भी हमारा काम चल जाता। क्यों चल जाता? क्योंकि ये जो हमारा इंटरफेस है ना बी इसने खुद का फन मेथड हमें दे रखा है। तो इस डी को उसे इंप्लीमेंट करने की या ओवराइड करने की जरूरत नहीं पड़ेगी। है ना? पर क्योंकि ये दोनों को कर रही है, B को भी कर रही है और C को भी इंप्लीमेंट कर रही है। अब जावा के",
+      "source": "transcript_api",
+      "english_text": "If diamond problem comes, it will be the responsibility of this class D to overwrite the fun. Right? Because look, do you know what happens in the normal case? If this class D bus implements a single interface let's say B. So even if it only implemented B and did not override it, our work would be fine. Why would he leave? Because this is our interface, it has given us its own fun method. So there will be no need to implement or override this D. Isn't it? But because it is doing both, it is also implementing B and also implementing C. now in java"
+    },
+    {
+      "start_time": 2449.92,
+      "end_time": 2483.839,
+      "text": "कंपाइलर को कंफ्यूजन हो रही है कि अगर किसी ने इस डी का ऑब्जेक्ट बना के लेट से लेट्स से इस तरह D डॉट फन कॉल कर दिया तो मैं कौन सा फन कॉल करूं? क्या मैं ये वाला फन कॉल करूं या मैं ये वाला फन कॉल करूं? बस इसी कंफ्यूजन को दूर करने के लिए रूल बन गया। अब देखो जैसे आप इसे होवर करोगे बिल्कुल सेम एरर आएगा कि देखो डुप्लीट डिफ़ॉल्ट मेथड्स नेम फन विद द पैरामीटर एम्प्टी एंड एम्प्टी आर इनहेरिटेड फ्रॉम द टाइप सी एंड बी। तो वो सब कुछ बता देगा आपको कि भ दो मेथड्स आ रहे हैं। मुझे कंफ्यूजन हो रही है। फटाफट इसको इंप्लीमेंट इसको ओवराइड करो और कंफ्यूजन को दूर करो। अब देखो मैंने आगे अगेन एक डेमो सेवन करके एक फाइल बनाई हुई है",
+      "source": "transcript_api",
+      "english_text": "The compiler is getting confused that if someone creates an object of this D and calls D dot fun like this, then which fun should I call? Should I call this one fun or should I call this one fun? Just to remove this confusion, a rule was made. Now see as you hover it exactly the same error will come see Duplicate default methods name Fun with the parameter empty and empty are inherited from the type C and B. So that will tell you everything that two methods are coming. I am getting confused. Implement this immediately, override it and remove the confusion. Now look, I have created a file by taking a demo again."
+    },
+    {
+      "start_time": 2482.319,
+      "end_time": 2515.92,
+      "text": "क्योंकि मुझे आपको एक और चीज समझानी है जो कि बहुत इंटरेस्टिंग है। व्हिच इज़ java का रेज़ोल्यूशन प्रायोरिटी रूल। प्रायोरिटी रूल। अच्छा ये क्या है? जावा का रेज़ोल्यूशन प्रायोरिटी रूल। अब देखो जावा का रेज़ोल्यूशन प्रायोरिटी रूल क्या कहता है? ये बहुत इंटरेस्टिंग है। ये कहता है कि लेट्स से मेरे पास एक इंटरफेस है ए। ठीक है? एक इंटरफ़ेस है A. अब इसके अंदर मेथड डालते हैं। और मेरे पास लेट्स से एक क्लास है B कुछ इस तरीके से। और इमेजिन करो मेरे पास एक और क्लास है C जो क्या",
+      "source": "transcript_api",
+      "english_text": "Because I have to explain to you one more thing which is very interesting. What is resolution priority rule of java. Priority rule. ok what is this? Java's resolution priority rule. Now see what Java's resolution priority rule says? This is very interesting. It says let's say I have an interface A. Ok? There is an interface A. Now let's put methods inside it. And I have a class from Lets B something like this. And imagine I have another class C which"
+    },
+    {
+      "start_time": 2510.8,
+      "end_time": 2544.48,
+      "text": "करती है जो एक्सटेंड करती है हमारी B क्लास को और इंप्लीमेंट्स करती है हमारे A इंटरफ़ेस को। क्या मैं ऐसा कर सकता हूं? बिल्कुल कर सकता हूं। कोई एरर नहीं आएगा। जावा में मैं A क्लास को एक्सटेंड कर सकता हूं। पर इंप्लीमेंट तो कितने मर्जी इंटरफ़ेस को कर सकता हूं। तो मैंने ऐसा चूज़ किया कि मैं एक B क्लास को इंस्टटेंड कर लेता हूं और A क्लास को इंप्लीमेंट कर लेता हूं साथ में। ठीक है? अभी तक कोई दिक्कत नहीं है। पर मान लो मैंने क्या किया? इस इंटरफ़ेस A के अंदर एक डिफ़ॉल्ट मेथड दे दिया। तो डिफ़ॉल्ट वॉइड फन कुछ ऐसा जो क्या करता है? स्क्रीन पे बस कुछ",
+      "source": "transcript_api",
+      "english_text": "Which extends our B class and implements our A interface. Can I do this? Of course I can. No error will occur. In Java I can extend A class. But I can implement as many interfaces as I want. So I chose to instantiate a B class and implement an A class simultaneously. Ok? There is no problem yet. But guess what I did? Gave a default method inside this interface A. So what does the default void fun do? just something on the screen"
+    },
+    {
+      "start_time": 2542.72,
+      "end_time": 2574.72,
+      "text": "प्रिंट कर देता है। सिस्टम डॉट आउट डॉट प्रिंट LN और वो बस लिख देता है इंसाइड A इंटरफ़ेस। कुछ इस तरीके से है ना? अब देखो जैसे ही मैंने ये मेथड दिया डिफ़ॉल्ट मेथड। ये हमारा क्लास C के अंदर भी आ गया होगा। अब अगर मैं C का एक ऑब्जेक्ट बनाऊंगा तो अगर मैं ऐसा लिखूंगा C = न्यू T तो मैं इस C पे फन कॉल कर सकता हूं। और जैसे ही मैं फन कॉल करूंगा इंसाइड ए इंटरफ़ेस आ जाना चाहिए। बिल्कुल आ गया है ना? अब आप ऐसा मानो कि ये जो मेरी क्लास B है ना इसके",
+      "source": "transcript_api",
+      "english_text": "Prints it. System dot out dot print LN and that just writes inside A interface. Something like this, right? Now see as soon as I gave this method the default method. This might have come under our class C also. Now if I create an object of C then if I write like this C = new T then I can call fun on this C. And as soon as I call Fun, Inside A interface should come. Has he definitely arrived? Now you believe that this is my class B, isn't it?"
+    },
+    {
+      "start_time": 2572.56,
+      "end_time": 2604.96,
+      "text": "पास भी सेम मेथड है। तो लेट्स से इसके पास भी मेथड है पब्लिक वॉइड फन। कुछ इस तरीके से है ना? अब ऑब्वियसली इंटरफेस में तो बाय डिफॉल्ट मेथड पब्लिक होते हैं। तो वो तो लिखने की जरूरत ही नहीं है। तो यहां पे मैंने लिख दिया पब्लिक वॉइड फन और लेट्स से ये स्क्रीन पे प्रिंट करता है इंसाइड बी क्लास। इंसाइड बी क्लास कुछ इस तरीके से। अब आप सोचो क्या ये अगेन डायमंड प्रॉब्लम भी बन गई। अब इस C क्लास के ऑब्जेक्ट पे जब मैं C डॉट फन करूंगा तो हमारा java का कंपाइलर ये वाला फन कॉल करेगा या ये वाला फन कॉल करेगा? है ना?",
+      "source": "transcript_api",
+      "english_text": "Pass also has the same method. So from lets it also has method public void fun. Something like this, right? Now obviously in interfaces, methods are public by default. So there is no need to write that. So here I wrote public void fun and lets print it on the screen inside B class. Inside B class something like this. Now you think, has this again become a diamond problem? Now when I do C dot fun on the object of this C class, will our Java compiler call this fun or this fun? Isn't it?"
+    },
+    {
+      "start_time": 2603.04,
+      "end_time": 2637.28,
+      "text": "देखो पिछले फाइल में तो हमने देखा था कि हमें इसको ब्रेक करने के लिए फन को ओवराइड करना ही करना पड़ रहा था। तो उस केस में क्या था? हमारे पास एक इंटरफेस था बी, एक इंटरफेस था सी। दोनों में फन मेथड था। ठीक है? और अगर एक क्लास है डी जो दोनों इंटरफेस को इंप्लीमेंट करती है तो उसे इस फन मेथड को ओवराइट करना ही पड़ेगा। क्योंकि जावा को कंफ्यूजन रहेगी कि ये वाला फन कॉल करना है या ये वाला फन कॉल करना है। अगर किसी ने d का ऑब्जेक्ट बना दिया। लेट्स से इस तरह dd = न्यू d डॉट फन। तो जावा को क्लियर होना पड़ेगा कि कौन सा फंक्शन कॉल करना है। तो जावा ने रूल बना दिया कि अब डी को ओवराइड करना ही पड़ेगा फन को और डी ही बताएगा कि क्या कॉल",
+      "source": "transcript_api",
+      "english_text": "Look, in the previous file we saw that to break it we had to override the fun. So what was there in that case? We had an interface B, an interface C. Both had fun method. Ok? And if there is a class D which implements both the interfaces then it will have to overwrite this fun method. Because Java will be confused whether to call this fun call or this fun call. If someone made an object of d. From let's say dd = new d dot fun. So Java has to be clear about which function to call. So Java made a rule that now D will have to override fun and D will tell whether to call"
+    },
+    {
+      "start_time": 2635.119,
+      "end_time": 2668.16,
+      "text": "करना है। खुद का कोई इंप्लीमेंटेशन या फिर अब डी बोल सकता है कि बी का फन या सी का फन कॉल करो यूजिंग सुपर कीवर्ड है ना। लेकिन इस केस में तो हमें कोई एरर ही नहीं आ रहा। हमें तो एरर आया नहीं। यानी कि हमें कंपाइलर मजबूर नहीं कर रहा कि मैं इस फन को जानबूझ के ओवराइड करूं। अगर मुझे मजबूर नहीं कर रहा तो मेरा कुछ तो आउटपुट आना चाहिए। तो देखते हैं क्या आता है। और मेरा आउटपुट आया इंसाइड बी क्लास। यानी कि मेरा अपने आप यह क्लास वाला मेथड कॉल हो गया। क्यों? इसी को कहते हैं जावा रेज़ोल्यूशन प्रायोरिटी रूल। जावा कहता है कि अगर ऐसा कुछ केस होगा कि एक क्लास एक",
+      "source": "transcript_api",
+      "english_text": "Have to do. Any implementation of its own or now D can say call B's fun or C's fun using super keyword right. But in this case we are not getting any error. We did not get any error. That means the compiler is not forcing us to override this function intentionally. If I am not being forced then I should have some output. So let's see what comes. And my output came inside B class. That means this method of my class gets called automatically. Why? This is called Java Resolution Priority Rule. Java says that if there is some case that a class is a"
+    },
+    {
+      "start_time": 2666.319,
+      "end_time": 2699.68,
+      "text": "इंटरफेस को इंप्लीमेंट करती है और एक क्लास को एक्सटेंड करती है और दोनों में सेम मेथड है तो हम हमेशा क्लास वाले फंक्शन को प्रायोरिटी देंगे। हमेशा क्लास वाला फंक्शन अपने आप कॉल हो जाएगा। ठीक है? अगर आप चाहते हो ऐसा ना हो तो अगेन आप क्या कर सकते हो? तो आपको पता ही है आप खुद से एक ओवराइड इसको कर सकते हो। तो आपने लिख दिया पब्लिक वॉइड फन कुछ इस तरीके से और यहां पे खुद की कोई इंप्लीमेंटेशन प्रोवाइड कर दी। लेट्स से इंसाइड सी क्लास। अब जब मैं रन करूंगा तो मेरा आउटपुट आना चाहिए इंसाइड सी क्लास।",
+      "source": "transcript_api",
+      "english_text": "If a class implements an interface and extends a class and both have the same method then we will always give priority to the function of the class. Always the class function will be called automatically. Ok? If you want this not to happen then what can you do again? So you know you can override it yourself. So you wrote public void fun like this and provided your own implementation here. Inside C Class from Letts. Now when I run my output should be Inside C class."
+    },
+    {
+      "start_time": 2697.44,
+      "end_time": 2728.48,
+      "text": "ठीक है? आई होप आपको इंटरफेससेस की सारी चीजें अच्छे से क्लियर हुई होंगी। अब ना एक बहुत ही इंटरेस्टिंग क्वेश्चन को आंसर करते हैं जो कि इंटरव्यू स्पेसिफिक क्वेश्चन भी है कि देखो जावा 8 से पहले तक तो चीजें बहुत सिंपल थी कि इंटरफेस के अंदर कोई मेथड्स हो ही नहीं सकते डिफॉल्ट मेथड्स जिसको हम इंप्लीमेंट करते हैं। नॉर्मल मेथड हो सकते हैं। इसको हमसेप्ट डिक्लेअर करते हैं। बट जावा 8 के बाद हमारे पास इंटरफेस के अंदर डिफॉल्ट मेथड्स भी हो सकते हैं। है ना? इनफैक्ट हमारे पास स्टैटिक मेथड्स भी हो सकते हैं।",
+      "source": "transcript_api",
+      "english_text": "ok? I hope you have been clear about all the interfaces. Now let us answer a very interesting question which is also an interview specific question that see, till Java 8, things were very simple that there could not be any methods inside the interface, there were default methods which we implement. There can be normal methods. We solemnly declare this. But after Java 8 we can also have default methods inside interfaces. Isn't it? In fact we can also have static methods."
+    },
+    {
+      "start_time": 2725.119,
+      "end_time": 2759.839,
+      "text": "स्टैटिक मेथड्स इनफैक्ट jवा 9 तो अगर मैं यहां पे नाइन भी लिख दूं तो हमारे वो ले आया कि हमारे पास प्राइवेट मेथड्स भी हो सकते हैं। प्राइवेट मेथड्स और क्या-क्या हो सकता है इंटरफ़ेस के अंदर? उसके अंदर स्टैटिक फाइनल वेरिएबल भी हो सकते हैं। स्टैटिक एंड फाइनल वेरिएबल भी हो सकते हैं। अगर इतना कुछ हो सकता है किसके अंदर? एक इंटरफेस के अंदर तो हम इंटरफेस को एब्स्ट्रैक्ट क्लास से कैसे अलग बोलें? अब तो वो ऑलमोस्ट सेम नहीं हो गया एब्स्ट्रैक्ट क्लास से। क्योंकि उसके अंदर भी हमारे पास डिफॉल्ट मेथड की जगह कंक्रीट",
+      "source": "transcript_api",
+      "english_text": "Static methods infact jwa 9 So if I also write nine here, then we have that we can have private methods also. Private methods and what else can happen inside the interface? There may also be static final variables inside it. There can also be static and final variables. If so much can happen inside whom? Inside an interface, how do we distinguish the interface from the abstract class? Now it is almost not the same as the abstract class. Because inside that also we have concrete instead of default method."
+    },
+    {
+      "start_time": 2758.48,
+      "end_time": 2783.599,
+      "text": "मेथड हो सकते हैं। जिसे हम बोलते हैं कंक्रीट मेथड। है ना? उसके अंदर हमारे स्टैटिक मेथड भी हो सकते हैं। उसके अंदर हमारे प्राइवेट मेथड भी हो सकते हैं। और उसके अंदर हमारे एब्स्ट्रैक्ट मेथड भी हो सकते हैं। और जो यहां पे एब्स्ट्रैक्ट मेथड है वो यहां पे आपको पता ही है। वो तो नॉर्मल है। अगर हम उसको डिक्लअर करके छोड़ दें तो बाय डिफॉल्ट वो एब्स्ट्रैक्ट ही होते हैं। ठीक है? तो बेसिकली अब ना इन दोनों के बीच में इंटरफेस और एब्स्ट्रैक्ट क्लास के बीच में गैप बहुत कम हो गया था।",
+      "source": "transcript_api",
+      "english_text": "There may be methods. Which we call concrete method. Isn't it? We can also have static methods inside it. We can also have private methods inside it. And inside that we can also have abstract methods. And you already know the abstract method here. That is normal. If we declare them and leave them, then by default they remain abstract. Ok? So basically now the gap between interface and abstract class has reduced a lot."
+    },
+    {
+      "start_time": 2781.92,
+      "end_time": 2815.76,
+      "text": "है ना? तो एक बार हम देखते हैं कि इन दोनों में एक्चुअली अभी भी कुछ गैप बचा है क्या? देखो सबसे बड़ा गैप तो है इनके इंटेंशन का। इंटेंशन मतलब देखो एक जगह मैं लिखता हूं इंटरफेस एक जगह मैं लिखता हूं एब्स्ट्रैक्ट क्लास। ठीक है? अब आप ऐसे इमेजिन करो कि आप इंटरफसेस क्यों बनाते हो? हम इंटरफेस बनाते हैं किसी भी कॉन्ट्रैक्ट को दिखाने के लिए। राइट? हमेशा याद रखना कॉन्ट्रैक्ट को दिखाने के लिए। ये बताने के लिए कि कोई चीज क्या कर सकती है? उसके अंदर क्या फंक्शनैलिटीज़ हो सकती है? तो इसका मैं अलग दोबारा डेफिनेशन",
+      "source": "transcript_api",
+      "english_text": "isn't it? So once we see whether there is actually still some gap left between these two? Look, the biggest gap is in their intentions. Intention means look, at one place I write interface, at one place I write abstract class. Ok? Now imagine why you create interfaces? We create interfaces to display any contract. Right? Always remember to show the contract. To tell what something can do? What functionalities can there be inside it? So I have a different redefinition of this."
+    },
+    {
+      "start_time": 2813.44,
+      "end_time": 2847.119,
+      "text": "दूं तो रोल्स को दिखाने के लिए या फिर फंक्शनैलिटीज़ को दिखा दिखाने के लिए। तो कोई भी क्लास क्या कर सकती है? इसलिए आप देखना जनरली प्रैक्टिस होती है कि हम इंटरफेस का नाम ना एक वर्ब की तरह दें। तो हम एग्जांपल के लिए ऐसे लेते हैं कि रनेबल वकेबल जो चीज की जा सकती है। ठीक है? तो अगर मैं पेमेंट का इंटरफेस बनाऊंगा तो बेटर नाम होगा उसका पेएबल। राइट? समथिंग दैट कैन बी डन। तो अगर कोई क्लास रनेबल इंटरफेस को इंप्लीमेंट करती है तो मैं समझ जाऊंगा कि उस क्लास के अंदर रनेबल की फंक्शनैलिटीज हैं या वोकेबल को करती है तो",
+      "source": "transcript_api",
+      "english_text": "Either to show the roles or to show the functionalities. So what can any class do? Therefore, the general practice is that we should not name the interface as a verb. So let us take for example the thing that can be done as runnable. Ok? So if I create a payment interface then its better name would be Payable. Right? Something That Can Be Done. So if a class implements Runnable interface then I will understand that inside that class there are functionalities of Runnable or Vocabulary."
+    },
+    {
+      "start_time": 2845.2,
+      "end_time": 2873.119,
+      "text": "वोकेबल की फंक्शनैलिटीज़ हैं। वैसे पेएबल को करती है तो पेएबल की फंक्शनैलिटीज़ है। है ना? तो कोई भी क्लास क्या है? तो फॉर एग्जांपल मैं लिखूं क्लास ए और यहां पे मैं लिखूं इंप्लीमेंट्स और अगला मैं नाम लिख दूंगा रनेबल। तो क्लास ए रनेबल बन गई। अगर मैं यहां पे लिखूंगा वोकेबल तो वोकेबल बन गई। इस तरीके से। तो ये हमें बताता है रोल्स या रिस्पांसिबिलिटीज़ या फंक्शनैलिटीज़। लेकिन ऑन दी अदर हैंड एब्स्ट्रैक्ट क्लास आपको बताता है।",
+      "source": "transcript_api",
+      "english_text": "Vocabulary has functionalities. By the way, if it does Payable, it has the functionalities of Payable. Isn't it? So what is any class? So for example I will write class A and here I will write implements and next I will write the name runnable. So Class A became runnable. If I write 'vocable' here, it becomes 'vocable'. In this manner. So it tells us the roles or responsibilities or functionalities. But on the other hand the abstract class tells you."
+    },
+    {
+      "start_time": 2870.4,
+      "end_time": 2903.52,
+      "text": "एब्स्ट्रैक्ट क्लास आपको बताता है फैमिलीज ऑफ सिमिलर क्लास। फैमिलीज़ ऑफ सिमिलर क्लास। क्या मतलब? इसका मतलब बहुत सिंपल है कि अगर आपको पता है कि आपके पास मल्टीपल क्लासेस हैं और उन सब क्लासेस को आप एक फैमिली में रख सकते हो। एक कंबाइंड एक पेरेंट के अंदर रख सकते हो। तब आप एब्स्ट्रैक्ट क्लास यूज़ करते हो। तो लेट्स से ये आपके पास डॉग था। ये आपके पास स्टक था। ये आपके पास लेट्स से एलीफेंट था कुछ भी। ठीक है? तो आपने सोचा सब एनिमल ही तो हैं। तो एक काम करते हैं",
+      "source": "transcript_api",
+      "english_text": "Abstract Class tells you families of similar classes. Families of Similar Classes. What do you mean? This means very simply that if you know that you have multiple classes and you can keep all those classes in one family. You can put a combined inside a parent. Then you use abstract class. So you had this dog from Letts. You had this stuck. You had this elephant from Lettuce or whatever. Ok? So you thought everyone is just an animal. so let's do one thing"
+    },
+    {
+      "start_time": 2900.48,
+      "end_time": 2930.8,
+      "text": "एक रूट लेवल क्लास एनिमल बनाते हैं और इन सबको उसके अंदर रख देंगे। इससे हमें फायदा क्या मिलेगा कि अगर कोई सिमिलर मेथड्स हैं जो इन तीनों में कॉमन रहने वाले हैं जैसे कि ईंट वो मैं एनिमल में ही डिफाइन कर दूंगा। तो इनको अपना-अपना ईंट डिफाइन करने की जरूरत नहीं पड़ेगी। कुछ इस तरीके से। ठीक है? तो पहली बात तो इनके इंटेंशन का फर्क हो गया कि इंटरफेस का इंटेंशन है फंक्शनैलिटीज़ और एब्स्ट्रैक्ट क्लास का इंटेंशन क्या है? एब्स्ट्रैक्ट क्लास का इंटेंशन है फैमिलीज़ ऑफ़ सिमिलर क्लास।",
+      "source": "transcript_api",
+      "english_text": "Let's create a root level class Animal and put all these inside it. What benefit we will get from this is that if there are any similar methods which are going to be common in all three like brick, I will define them in Animal itself. So they will not need to define their own bricks. Something like this. Ok? So the first thing is the difference in their intentions that what is the intention of interface, functionalities and what is the intention of abstract class? Abstract classes are intended to contain families of similar classes."
+    },
+    {
+      "start_time": 2927.599,
+      "end_time": 2959.68,
+      "text": "इनफैक्ट इसीलिए हम इंटरफ़ेस को नॉर्मल क्या बोलते हैं? इज़ अ रिलेशनशिप। इज़ अ रिलेशनशिप। याद है? मैंने आपको बताया था इन्हहेरिटेंस को इन जनरल इज़ अ रिलेशनशिप बोलते हैं। जैसे अगर यहां पे हम इसको डॉग बोल रहे हैं तो हम बोलेंगे डॉग इज़ एनिमल। डक इज़ एनिमल। एलीिफेंट इज़ अ एनिमल। एक इज़ अ रिलेशनशिप दिखाता है। ठीक है? लेकिन इंटरफसेस में हम जनरली बोलते हैं कैन डू रिलेशनशिप। कैन डू रिलेशनशिप। फॉर एग्जांपल अगर मैं बोलता हूं कि कोई क्लास है ए लेट्स से उसने रनेबल इंटरफेस को",
+      "source": "transcript_api",
+      "english_text": "Infact that is why we call the interface normal? Is a relationship. Is a relationship. Remember? I told you that inheritance is generally called a relationship. For example, if we are calling it a dog here then we will say that dog is an animal. Duck is animal. Elephant is an animal. Shows one is a relationship. Ok? But in interfaces we generally talk about can do relationship. Can do relationship. For example, if I say there is a class A let's define the runnable interface."
+    },
+    {
+      "start_time": 2958.079,
+      "end_time": 2992.0,
+      "text": "इंप्लीमेंट किया हुआ है तो वो बिल्कुल सिमिलर है बोलना कि ए कैन डू रन। बेसिकली ए हैज़ रनेबल फंक्शनैलिटी। अगर उसने वोकेबल को किया हुआ है तो ए हैज़ वोकेबल फंक्शनैलिटी। तो उसके पास कौन सी फंक्शनैलिटीज़ आ जाती हैं? व्हाट इट कैन डू। है ना? वो बताता है हमारा इंटरफेस और फैमिलीज़ यानी कि कोई भी चीज क्या है या कहां से बिलोंग करती है वो बताता है हमारी एब्स्ट्रैक्ट क्लास। ठीक है? जैसे कि डॉग इज़ एनिमल। तो डॉग और एनिमल एक फैमिली के अंदर आ गए। ये तो हुआ इनका कंसेप्चुअल डिफरेंस। अब एग्जैक्टली सिंटेक्स वाइज़ या प्रैक्टिकली जावा में क्या डिफरेंसेस हैं?",
+      "source": "transcript_api",
+      "english_text": "When implemented, it is exactly similar to saying A can do run. Basically a has runnable functionality. If it is vocable then A has vocable functionality. So what functionalities does it have? What it can do. Isn't it? It tells us our interface and families, that is, what any thing is or where it belongs to, it tells our abstract class. Ok? Like dog is animal. So the dog and the animal came into one family. This is their conceptual difference. Now what are the differences in Java exactly syntax wise or practically?"
+    },
+    {
+      "start_time": 2990.16,
+      "end_time": 3019.92,
+      "text": "एक बार वो देख लेते हैं। तो यहां पे लेट्स से हमने ली अपने इंटरफ़ेसेस और यहां पे हमने ली अपनी एब्स्ट्रैक्ट क्लासेस। आपको पता है चाहे जावा ने इंटरफेससेस को कितना भी सिमिलर कर लिया हो अभी तक इंटरफेस के अंदर नॉर्मल फील्ड्स नहीं आ सकती। नॉर्मल फील्ड्स मतलब कोई भी ऐसा हम वेरिएबल डिफाइन नहीं कर सकते जो स्टैटिक एंड फाइनल ना हो। राइट? बेसिकली इंस्टेंस वेरिएबल हो। ऐसा हम वेरिएबल डिफाइन कर ही नहीं सकते। लेकिन एब्स्ट्रैक्ट क्लास के अंदर हमारे नॉर्मल फील्ड्स आ सकती हैं। है ना?",
+      "source": "transcript_api",
+      "english_text": "Once they see it. So here from Lets we took our interfaces and here we took our abstract classes. You know, no matter how similar Java has made interfaces, it still cannot have normal fields inside the interface. Normal fields means we cannot define any variable which is not static and final. Right? Basically instance variable. We cannot define such a variable. But our normal fields can come inside the abstract class. Isn't it?"
+    },
+    {
+      "start_time": 3018.48,
+      "end_time": 3052.559,
+      "text": "तो अगर हमारे पास एक एब्स्ट्रैक्ट क्लास है a। ठीक है? इसको मैंने एब्स्ट्रैक्ट डिक्लअ किया हुआ है। कुछ इस तरीके से उसमें मैं नॉर्मल इंट x डिक्लअर कर सकता हूं। कोई दिक्कत नहीं है। पर जो भी इंटरफ़ेस के अंदर अगर मेरे पास एक इंटरफ़ेस है A ठीक है? उसके अंदर अगर कोई भी मैंने वैल्यू डिक्लअर की लेट्स से मैंने यहां पे डिक्लअर किया इंट X तो आपको पता ही है जावा बाय डिफ़ॉल्ट उसमें पब्लिक स्टैटिक फाइनल लगा ही देता है। यानी कि ये मेरा X जो है वो फाइनल बन जाएगा। ठीक है? पर ये कोई कंपल्शन नहीं है एब्स्ट्रैक्ट क्लास के अंदर। तो ये तो हो गया आपका पहला डिफरेंस। ठीक है? दूसरा डिफरेंस क्या है?",
+      "source": "transcript_api",
+      "english_text": "So if we have an abstract class a. Ok? I have declared it abstract. In this way I can declare normal int x in it. There is no problem. But if I have an interface A inside whatever interface is ok? Inside that, if I declare any value, let's declare int X here, then you know that Java by default puts public static final in it. That means, this is my X which will become final. Ok? But this is not a compulsion inside the abstract class. So this is your first difference. Ok? What is the second difference?"
+    },
+    {
+      "start_time": 3050.24,
+      "end_time": 3083.359,
+      "text": "दूसरा डिफरेंस जो कि और इंटरेस्टिंग है कि हमारे इंटरफसेस के अंदर कंस्ट्रक्टर्स भी नहीं हो सकते। अभी भी नहीं हो सकते। राइट? अगेन क्यों नहीं हो सकते? क्योंकि आपको पता है कंस्ट्रक्टर का मतलब क्या होता है? कंस्ट्रक्टर मतलब जो एक ऑब्जेक्ट से लिंक हो। राइट? और इंटरफसेस का जैसे मैंने आपको बताया ऑब्जेक्ट से कोई लेना देना नहीं है। वो बताता है कि व्हाट अ क्लास कैन डू? उसका रिस्पांसिबिलिटी से लेना देना है। लेकिन ऑन दी अदर हैंड आपको पता है हमारे एब्स्ट्रैक्ट क्लासेस के अंदर हमारे एब्स्ट्रैक्ट क्लासेस के अंदर कंस्ट्रक्टर्स हो सकते हैं। राइट। अच्छा",
+      "source": "transcript_api",
+      "english_text": "The second difference which is more interesting is that we cannot have constructors inside our interfaces. Still can't. Right? Why can't it happen again? Because do you know what constructor means? Constructor means something that is linked to an object. Right? And interfaces, like I told you, have nothing to do with objects. He tells what a class can do? It has to do with responsibility. But on the other hand you know we can have constructors inside our abstract classes. Right. good"
+    },
+    {
+      "start_time": 3081.2,
+      "end_time": 3115.599,
+      "text": "और भी कुछ चेंज है। सबसे बड़े चेंज तो अभी तक हमने बात ही नहीं करी। इंटरफेस के साथ हम मल्टीपल इनहेरिटेंस को सपोर्ट कर सकते हैं। मल्टीपल इन्हहेरिटेंस हमारा क्या है? सपोर्टेड है। लेकिन यहां पे हमारा मल्टीपल इन्हहेरिटेंस सपोर्टेड नहीं है। हम कुछ भी कर ले एब्स्ट्रैक्ट क्लासेस को मल्टीपल इनहेरिटेंस से सपोर्ट नहीं करवा सकते। राइट? और एक और रूल हमारा आ सकता है जिसमें हम कह सकते हैं कि इंटरफसेस के अंदर हमारे पास जो भी मेथड्स होते हैं जो भी मेथड्स होते हैं वो बाय डिफॉल्ट क्या होते हैं? पब्लिक होते हैं। ठीक है? आप चाहो तो प्राइवेट मेथड आजकल बना सकते हो",
+      "source": "transcript_api",
+      "english_text": "There are some other changes also. We haven't even talked about the biggest changes yet. With interfaces we can support multiple inheritance. What is Multiple Inheritance? Is supported. But here our multiple inheritance is not supported. No matter what we do, we cannot make abstract classes support multiple inheritance. Right? And we can come up with another rule in which we can say that whatever methods we have inside the interface, what are they by default? Are public. Ok? If you want, you can create a private method these days."
+    },
+    {
+      "start_time": 3113.28,
+      "end_time": 3147.28,
+      "text": "आफ्टर jवा 9 पर जनरली बाय डिफॉल्ट वो पब्लिक होते हैं। लेकिन एब्स्ट्रैक्ट क्लास के अंदर आप कोई भी एक्सेस मॉडिफायर लगा सकते हो। आप प्राइवेट लगा लो, आप पब्लिक लगा लो, आप प्रोटेक्टेड लगा लो या कोई भी मत लगाओ। यानी कि जो हमारा डिफॉल्ट वाला होता है, आप वो यूज़ कर लो। सारे एक्सेस मॉडिफायर्स अलाउड है। राइट? अब हम एक दो बहुत ही स्पेशल तरह के इंटरफ़ेससेस देखने वाले हैं। एक को हम बोलते हैं फंक्शनल इंटरफ़सेस। फंक्शनल इंटरफ़सेस। ठीक है? सबसे पहले यह क्या होते हैं? यह वह इंटरफ़ेससेस होते हैं जिसके",
+      "source": "transcript_api",
+      "english_text": "After Java 9 they are generally public by default. But you can apply any access modifier inside the abstract class. You can set it as private, you can set it as public, you can set it as protected or you can set it as none. That means, you can use whatever is our default. All access modifiers are allowed. Right? Now we are going to see two very special types of interfaces. We call one functional interfaces. Functional Interfaces. Ok? First of all, what are these? These are the interfaces which"
+    },
+    {
+      "start_time": 3144.559,
+      "end_time": 3170.88,
+      "text": "अंदर बस एक ही मेथड हो। और वही मेथड सिर्फ डिक्लेअ हो। डिफाइन करने की जिम्मेदारी अगेन किसकी? जो इस इंटरफ़ेस को इंप्लीमेंट करेगा। फॉर एग्जांपल अगर मैं एक ऐसा इंटरफ़ेस बनाऊं नॉट क्लास। मैंने एक इंटरफ़ेस बनाया लेट्स से ए। ठीक है? और उसके अंदर एक ही मेथड डाल दिया वॉइड पन और डिक्लेअ करके छोड़ दिया। अब क्योंकि इसके अंदर देखो एक ही मेथड है तो इस तरह के इंटरफेस को मैं बोलूंगा फंक्शनल इंटरफेस।",
+      "source": "transcript_api",
+      "english_text": "There should be only one method inside. And that method should only be declared. Whose responsibility is it to define again? Which will implement this interface. For example if I create an interface not class. I created an interface from Let's A. Ok? And put only one method inside it called void pun and declared it and left it. Now because there is only one method inside it, I will call this type of interface as functional interface."
+    },
+    {
+      "start_time": 3168.8,
+      "end_time": 3203.44,
+      "text": "ठीक है? अब कोई भी क्लास लेट्स से मैंने क्लास बना रखी है B जो इसको इंप्लीमेंट करती है तो इंप्लीमेंट्स A। अब इस क्लास की जिम्मेदारी हो जाएगी इस फन को क्या करने की? ओवराइड करने की। कुछ इस तरीके से। ठीक है? अब आप बोलोगे कि भैया इसका स्पेशल नाम क्यों है? फंक्शनल इंटरफ़ेस। है ना? अब एक मेथड हो या अनेक मेथड हो। बात तो एक ही होनी चाहिए। पर इसका स्पेशल नाम इसलिए है क्योंकि ये जो फंक्शनल इंटरफेस होते हैं ना ये जावा में एक बहुत ही इंपॉर्टेंट कांसेप्ट को अनलॉक करते हैं जिसे हम बोलते हैं फंक्शनल",
+      "source": "transcript_api",
+      "english_text": "ok? Now with any class let's say I have created a class B which implements this then implements A. Now it will be the responsibility of this class to do this fun? To override. Something like this. Ok? Now you will ask why does it have a special name? Functional interface. Isn't it? Now there may be one method or many methods. There should be only one thing. But it has a special name because these functional interfaces unlock a very important concept in Java which we call functional."
+    },
+    {
+      "start_time": 3199.92,
+      "end_time": 3232.559,
+      "text": "प्रोग्रामिंग। फंक्शनल प्रोग्रामिंग और ये कैसे अनलॉक करते हैं यूजिंग लैम्ब्डा एक्सप्रेशनंस। इसको हम अलग से अच्छे से वीडियो में पढ़ेंगे कि लैम्ब्डा एक्सप्रेशनंस क्या होती है और फंक्शनल प्रोग्रामिंग इन जनरल क्या होती है। पर ये बहुत ही इंटरेस्टिंग टॉपिक है जो जावा में लेटेस्ट आया था। बेसिकली पहले एग्ज़िस्ट नहीं करता था। जावा 8 के बाद आया है जो कि बहुत इंटरेस्टिंग है। ठीक है? तो इसको हम अलग से एक वीडियो में देखेंगे। पर आप समझ गए एक ऐसा इंटरफ़ेस जिसमें एक ही मेथड डिक्लेअर हो उसको हम फंक्शनल इंटरफ़ेस बोलते हैं। इनफैक्ट हमारे जावा में ओरिजिनली बहुत सारे फंक्शनल",
+      "source": "transcript_api",
+      "english_text": "Programming. Functional Programming and How to Unlock It Using Lambda Expressions. We will study this in a separate video, what is lambda expression and what is functional programming in general. But this is a very interesting topic which came latest in Java. Basically did not exist before. It has come after Java 8 which is very interesting. Ok? So we will see this in a separate video. But you understood that an interface in which only one method is declared is called a functional interface. In fact, we have many functional natively in Java."
+    },
+    {
+      "start_time": 3230.48,
+      "end_time": 3264.64,
+      "text": "इंटरफ़ेससेस ऑलरेडी एक्सिस्ट करते हैं। अगर मैं उसको कुछ नाम दूं तो हमारे पास एक है कंपेयरबल इंटरफ़ेस। ये एक फंक्शनल इंटरफ़ेस है। ठीक है? एक है हमारा प्रेडिकेट इंटरफ़ेस। यह भी एक फंक्शनल इंटरफेस है। तो, हमारे पास जावा में ऑलरेडी बहुत सारे फंक्शनल इंटरफ़ेस एक्सिस्ट करते हैं। वो हम आराम से जब हम लैम्ब्डा एक्सप्रेशनंस और फंक्शनल प्रोग्रामिंग पढ़ेंगे, तो उस लेक्चर में अच्छे से समझेंगे। अब अदर दैन फंक्शनल इंटरफ़ेससेस हमारे पास जावा में एक और तरह के इंटरफ़ेससेस होते हैं जिसको हम बोलते हैं मार्कर इंटरफ़ेससेस। मार्कर इंटरफ़ेससेस। अब ये भी बहुत इंटरेस्टिंग",
+      "source": "transcript_api",
+      "english_text": "Interfaces already exist. If I call it something, we have a comparable interface. This is a functional interface. Ok? One is our predicate interface. This is also a functional interface. So, we already have a lot of functional interfaces in Java. We will understand that easily in that lecture when we read Lambda Expressions and Functional Programming. Now other than functional interfaces, we have another type of interfaces in Java which we call marker interfaces. Marker Interfaces. Now this is also very interesting"
+    },
+    {
+      "start_time": 3262.24,
+      "end_time": 3293.04,
+      "text": "है। ये क्या है? ये ऐसे इंटरफ़ेसेस हैं जिसके अंदर कोई मेथड नहीं होता। तो अगर आप लेट्स से कोई इंटरफेस बनाओ A और उसे खाली छोड़ दो। एज इट इज कोई मेथड की जरूरत नहीं है। नो मेथड है ना? इस इंटरफेस को हम जावा में क्या बोलेंगे? इसको हम बोलेंगे मार्कर इंटरफेससेस। तो ये हैं मार्कर इंटरफेस। ठीक है? जावा में तीन तरह के मार्कर",
+      "source": "transcript_api",
+      "english_text": "Is. What is this? These are interfaces which do not contain any methods. So if you create an interface from let's A and leave it empty. As it is no method is needed. No method, right? What will we call this interface in Java? We will call this marker interfaces. So these are the marker interfaces. Ok? Three types of markers in Java"
+    },
+    {
+      "start_time": 3290.8,
+      "end_time": 3316.88,
+      "text": "इंटरफेस एग्जिस्ट करते हैं। एक है हमारा इंटरफेस क्लोनेबल क्लोनेबल ये मार्कर है। ठीक है? इसमें कोई मेथड भी डिफाइन नहीं है। एक है हमारा इंटरफ़ेस सीरियलाइज़ेबल ये भी अगेन मार्कर है। इसमें भी कोई मेथड डिफाइन नहीं है। और एक तीसरा भी है हमारे पास इंटरफ़ेस रैंडम एक्सेस। रैंडम एक्सेस।",
+      "source": "transcript_api",
+      "english_text": "Interfaces exist. One is our interface cloneable cloneable these are markers. Ok? There is no method defined in this. One is our interface Serializable, this is again marker. There is no method defined in this also. And we also have a third one, interface random access. random access."
+    },
+    {
+      "start_time": 3314.24,
+      "end_time": 3347.119,
+      "text": "और अगेन ये भी हमारा मार्कर इंटरफेस है। यानी कि कोई भी मेथड डिफाइन नहीं है। अब आप सोचो मार्कर इंटरफेस होते ही क्यों हैं? ऐसा इंटरफेस क्यों एग्ज़िस्ट करता है कि जिसमें हमारा एक भी मेथड डिफाइन ना हो। बहुत सिंपल रूल है। कोई भी ऐसा इंटरफ़ेस जिसमें एक भी मेथड इंप्लीमेंट ना हो। उसका पता है हम फायदा कहां उठा सकते हैं? किसी भी चीज़ को मार्क करने के लिए। फॉर एग्ज़ांपल, क्लोएनेबल इंटरफ़ेस। इसको देखते हैं। तो हमें पता है कि हमारे पास जो पेरेंट क्लास होती है ऑब्जेक्ट क्लास व्हिच इज़ पेरेंट ऑफ़ एव्री क्लास इन java उसके अंदर एक मेथड होता है क्लोन। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "And again this is also our marker interface. That means no method is defined. Now you wonder why marker interfaces exist at all? Why does such an interface exist in which we do not have even a single method defined? It is a very simple rule. Any interface that does not implement a single method. Do you know where we can take advantage of? To mark anything. For example, cloneable interface. Let's see this. So we know that the parent class that we have, the Object class which is the parent of every class in java, has a method called clone. Ok?"
+    },
+    {
+      "start_time": 3344.64,
+      "end_time": 3373.2,
+      "text": "और हम कहते हैं कोई भी क्लास जिसको इस क्लोन मेथड को ओवराइड करना है उसको क्लोनबल इंटरफेस को इंप्लीमेंट करना पड़ेगा। तो मान लो अगर मैं इसको ऐसे बोलूं कि मेरे पास ऑब्जेक्ट क्लास है। ठीक है? ये रूट है हर एक पेरेंट क्लास का और उसके अंदर एक मेथड है क्लोन। ठीक है? क्लोन। और मैंने खुद की एक क्लास बनाई लेट्स से स्टूडेंट क्लास और मुझे स्टूडेंट क्लास के अंदर इस क्लोन मेथड को ओवराइड करना है।",
+      "source": "transcript_api",
+      "english_text": "And we say that any class which has to override this clone method will have to implement the Cloneable interface. So suppose if I say it like this I have an object class. Ok? This is the root of each parent class and inside it is a method called clone. Ok? Clone. And I created a class of my own called student class from lets and I have to override this clone method inside the student class."
+    },
+    {
+      "start_time": 3371.04,
+      "end_time": 3405.599,
+      "text": "कुछ ऐसे तो ये मैं तभी कर सकता हूं अगर मैं अपनी स्टूडेंट क्लास में लिखूं। अगर मैं अपनी स्टूडेंट क्लास में लिखूं इंप्लीमेंट्स क्लोनेबल कुछ ऐसा। तभी मुझे जावा ऐसा करने देगा। इसका रीज़न क्या है? बहुत सारे रीज़न हो सकते हैं क्योंकि जावा नहीं चाहता हर चीज को क्लोन किया जाए। क्योंकि ऐसे बहुत सारे क्रिटिकल रिसोर्सेज हैं जिसे क्लोन नहीं करना चाहिए। जैसे कि डेटाबेस का रिसोर्स वगैरह-वगैरह। ठीक है? या फिर थ्रेड्स का रिसोर्स। अब क्योंकि जावा को पता है कि सबको क्लोन नहीं किया जा सकता। तो क्लोन उन्हीं को किया जाना चाहिए जिसको आप एक्सप्लसिटली बताओगे कि मुझे इसे क्लोन करना है। तो आप लिटरली ऐसे",
+      "source": "transcript_api",
+      "english_text": "I can do something like this only if I write in my student class. If I write implements cloneable in my student class something like this. Only then will Java let me do this. What is its reason? There could be lots of reasons why Java doesn't want everything to be cloned. Because there are many critical resources that should not be cloned. Such as database resources etc. Ok? Or the resource of threads. Now because Java knows that not everything can be cloned. So cloning should be done only to those to whom you explicitly tell that I want to clone it. So you are literally like this"
+    },
+    {
+      "start_time": 3402.319,
+      "end_time": 3435.92,
+      "text": "लिखोगे कि क्लास स्टूडेंट इंप्लीमेंट्स क्लोनेबल। ये इंप्लीमेंट्स क्लोनेबल का मतलब क्या हुआ? आपने जावा को स्पेसिफिकली बता दिया कि इस क्लास को मैं क्लोन करना चाहता हूं या उसको क्लोन की फंक्शनैलिटी देना चाहता हूं ताकि मैं क्लोन मेथड को ओवराइड कर सकूं। कुछ इस तरीके से। अब क्लोनेबल में तो कोई मेथड ही नहीं है। तो यहां पे आपको कोई मेथड ओवराइड करने की जरूरत ही नहीं है क्लोनेबल का। आपको बस इंप्लीमेंट्स क्लोनेबल लिखना था ताकि जावा एक चेक कर सकें कि अगर तुमने इंप्लीमेंट्स क्लोनेबल लिखा है तो ही मैं तुम्हारी स्टूडेंट क्लास को क्लोनेबल बनाऊंगा या",
+      "source": "transcript_api",
+      "english_text": "You will write that class Student implements cloneable. What does it mean to implement cloneable? You specifically tell Java that I want to clone this class or give it clone functionality so that I can override the clone method. Something like this. Now there is no method in cloneable. So here you do not need to override any method of cloneable. You just had to write Implements Cloneable so that Java can do a check that only if you have written Implements Cloneable then I will make your Student class cloneable or"
+    },
+    {
+      "start_time": 3433.68,
+      "end_time": 3467.68,
+      "text": "उसमें क्लोन मेथड को ओवराइड होने दूंगा। अगर आप ऐसा नहीं लिखोगे तो आपको रन टाइम एरर आ जाएगा। ठीक है? आई होप आपको मार्कर इंटरफेससेस समझ आए होंगे। मैंने बोला जावा में तीन तरह के मार्कर इंटरफेससेस हैं। वो ही है हमारे क्लोनेबल, हमारे सीरियलाइजेबल और हमारा रैंडम एक्सेस। अब देखो क्या होता है जब आप जावा के अंदर किसी इंटरफेस को डिफाइन करते हो तो लेट्स से आपने जावा के अंदर एक इंटरफेस लिखा है एनिमल कुछ इस तरीके से ठीक है और अभी ऑब्वियसली आप उसमें कुछ मेथड लिख सकते हो तो मैं अभी एक मेथड लिख देता हूं वॉइड रन कुछ ऐसा और",
+      "source": "transcript_api",
+      "english_text": "In that I will let the clone method be overridden. If you do not write like this then you will get run time error. Ok? I hope you have understood marker interfaces. I said there are three types of marker interfaces in Java. That is our cloneable, our serializable and our random access. Now see what happens when you define an interface inside Java, then let's say you have written an interface inside Java Animal, something like this is fine and now obviously you can write some methods in it, so I will just write a method void run something like this."
+    },
+    {
+      "start_time": 3466.079,
+      "end_time": 3499.839,
+      "text": "उसको डिक्लेअर करके छोड़ देता हूं। ठीक है? तो ये क्या हो गया? हमारा एक इंटरफ़ेस हो गया। है ना? अब जब भी आप एक इंटरफ़ेस डिफाइन किया एनिमल। और अब आप जब जावा का कोड कंपाइल करोगे तो लेट से आप लिखोगे जावा सी और इस लेट से फाइल का नाम है एनिमल तो आप लिखोगे एनिमल डॉट जावा तो आपको पता है क्या होता है बाइट कोड बनता है तो ये क्लास कन्वर्ट हो जाएगी एनिमल डॉट क्लास फाइल में एनिमल डॉट क्लास फाइल में कुछ इस तरीके से अगर आप इस क्लास फाइल के अंदर जाके देखोगे तो जावा ने क्या किया होगा पता है जावा ने इस एनिमल को एज",
+      "source": "transcript_api",
+      "english_text": "I declare it and leave it. Ok? So what happened? We have an interface. Isn't it? Now whenever you define an interface Animal. And now when you compile the code of Java, you will write Java C from let and the name of the file from this let is animal, then you will write animal dot java, so you know what happens, when byte code is created, then this class will be converted into animal dot class file, into animal dot class file in something like this, if you go inside this class file and look, then what would have been done by Java. You know, Java has converted this animal as an edge."
+    },
+    {
+      "start_time": 3496.559,
+      "end_time": 3531.2,
+      "text": "अ क्लास ट्रीट किया होगा तो बेसिकली चाहे हमने इसको यहां इंटरफेस लिखा हो अंदर से जावा इस एनिमल क्लास क्लास को क्लास ही बोलता है। राइट? तो वो इन दोनों में फर्क कैसे करता है? अगर आप एनिमल क्लास फाइल के अंदर जाकर के देखोगे ना तो आपको एक स्पेशल टैग मिलेगा। तो जैसे कि कोई क्लास बनी होगी एनिमल जो ऑब्वियसली उसने खुद से बनाई होगी और उसके अंदर आपको एक टैग मिलेगा एसीसी इंटरफेस। कुछ ऐसे करके एसीसी अंडरस्कोर इंटरफेस। यह टैग अवस बताता है जावा को कि यह जो क्लास है यह नॉर्मल क्लास नहीं बल्कि एक इंटरफेस है। पर अंदर",
+      "source": "transcript_api",
+      "english_text": "If we have treated it as a class, then basically, even if we have written it as an interface here, internally Java calls this Animal class as a class. Right? So how does he differentiate between the two? If you look inside the Animal class file, you will find a special tag. So for example a class Animal would have been created which obviously it would have created itself and inside it you would find a tag ACC interface. ACC underscore interface by doing something like this. This tag tells Java that this class is not a normal class but an interface. but inside"
+    },
+    {
+      "start_time": 3528.96,
+      "end_time": 3563.599,
+      "text": "से जावा उसको इंटरफेस की तरह ही ट्रीट करता है। जैसे कि मैंने आपको पहले भी बोला था एनम भी अंदर जाकर के एक क्लास ही बन जाती है। बस जावा ने हमें एक स्पेशल कीवर्ड दे रखा है। वैसे ही इंटरफ़ेस भी जावा के अंदर कंपाइल हो के एक क्लास ही बन जाता है। उसने हमें बस एक इंटरफ़ेस नाम का एक स्पेशल कीवर्ड दे रखा है। अंदर सब कुछ क्लासेस की तरह ही एग्जीक्यूट होता है। बस मैंने आपको बोला एक छोटा सा फर्क आ जाता है। जो भी इंटरफ़ेस होगा लेट से एनिमल उसको जब उसकी वह क्लास बनाएगा तो अंदर ए सीसी डॉट इंटरफ़ेस नाम का एक टैग लगा देगा जिससे जावा को पता लग जाए कि ये एक इंटरफ़ेस है",
+      "source": "transcript_api",
+      "english_text": "Java treats it like an interface. As I told you earlier, Enum also becomes a class after going inside. Just Java has given us a special keyword. Similarly, interface also becomes a class when compiled inside Java. He has just given us a special keyword called interface. Everything inside executes just like classes. I just told you, there is a small difference. Whatever interface is created by Late Animal, when it creates its class, it will put a tag named A CC dot interface inside it so that Java knows that it is an interface."
+    },
+    {
+      "start_time": 3561.359,
+      "end_time": 3577.559,
+      "text": "ना कि एक क्लास। बाकी होता अंदर से सब कुछ क्लास की तरह ही इंप्लीमेंट है। राइट? आई होप आपको अच्छे से समझ आया होगा। आपको इंटरफेस के बारे में चीजें ज्यादा बेटर क्लियर हुई होंगी। इस वीडियो में इतना ही। आपसे मिलते हैं नेक्स्ट वीडियो में। तब तक के लिए थैंक यू सो मच।",
+      "source": "transcript_api",
+      "english_text": "Not a class. Rest everything is implemented from inside like in class. Right? I hope you have understood well. You must have got better clarity about the interface. That's all in this video. See you in the next video. Till then thank you so much."
+    }
+  ],
+  "playlist_id": "PLXZCnQTdmeaE",
+  "playlist_title": "OOPs in Java Full Course"
+}

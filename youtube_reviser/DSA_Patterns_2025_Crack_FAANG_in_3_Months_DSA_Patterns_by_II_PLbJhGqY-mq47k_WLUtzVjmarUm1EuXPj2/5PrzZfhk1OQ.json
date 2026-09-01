@@ -1,0 +1,562 @@
+{
+  "video_id": "5PrzZfhk1OQ",
+  "video_title": "The BST Validation Problem Everyone Gets Wrong",
+  "video_number": 90,
+  "chunks": [
+    {
+      "start_time": 1.829,
+      "end_time": 28.39,
+      "text": "आज बहुत कम टाइम है मेरे पास। तो आज हम सोच रहे थे तीन क्वेश्चन लेकिन दो ही क्वेश्चन करेंगे डीएसटी पे। दोनों बहुत अच्छा क्वेश्चन है। बहुत मीडियम टू हार्ड लेवल का क्वेश्चन है। तो पहला क्वेश्चन थोड़ा सा अजीब लगेगा। दूसरा क्वेश्चन रिलेटेड रहेगा। जल्दी शुरू करते हैं। आइए। पहला वाला क्वेश्चन है। आपको वैलिडेट करना है। वैलिडेट किसको करना है? आपको बीएसटी को वैलिडेट करना है। ठीक है? बीएसटी को वैलिडेट करना है। अच्छा बीएसटी क्या होता है? बाइनरी सर्च ट्री। वैलिडेट का मतलब क्या है? कि आपको एक रूट दिया रहेगा। आपको कोई भी एक बीएसटी दिया हो सकता है। ठीक है? ऐसा करके कोई भी एक बीएसटी दिया होगा।",
+      "source": "caption",
+      "english_text": "I have very little time today. So today we were thinking of three questions but will do only two questions on DST. Both are very good questions. This is a very medium to hard level question. So the first question will seem a bit strange. The second question will be related. Let's start quickly. Come. The first one is a question. You have to validate. Who has to validate? You have to validate BST. Ok? BST has to be validated. Well what is BST? Binary search tree. What does validate mean? That you will be given a route. You may have been given any one BST. Ok? By doing this anyone would have given a BST."
+    },
+    {
+      "start_time": 28.4,
+      "end_time": 61.59,
+      "text": "बना हुआ होगा। आपको बस ट्रू या फॉल्स बताना है। ट्रू या फॉल्स वैलिडेट का ही मतलब होता है ट्रू या फॉल्स बताना है। अगर अगर अगर ये जो बीएसटी है ना ये सही है। ये सही का मतलब क्या होता है? है जो बीएएसटी का रूल होता है ना कि उसका रूट होता है। लेफ्ट छोटा होता है, राइट बड़ा होता है। मतलब ये पूरा रूल पूरे ट्री में अगर फॉलो होता है तो आपको ट्रू रिटर्न करना है। कहीं भी ये रूल टूट जाता है तो आपको फॉल्स बताना है। एग्जांपल के तौर पे अगर आपको एक बीएसटी ऐसा दिया हो यहां पे 10 हो, अ यहां पे पांच हो, यहां पे 15 हो, अ यहां पे सात हो, यहां पे दो हो और यहां पे 12 हो और",
+      "source": "caption",
+      "english_text": "Must have been made. You just have to tell True or False. True or False Validate means to tell whether it is true or false. If if if this is BST, it is correct. What does this right mean? Which is the rule of BAST and not its root. Left is small, right is big. Meaning, if this rule is followed throughout the tree, then you have to return true. If this rule is broken anywhere, you have to report the mistake. For example, if you are given a BST like this, here is 10, here is five, here is 15, here is seven, here is two and here is 12 and"
+    },
+    {
+      "start_time": 61.6,
+      "end_time": 95.91,
+      "text": "यहां पे 18 हो। तो ध्यान से देखिए। क्या ये बीएसटी है? पीएसटी देखने का बहुत सारे तरीके होते हैं। एक तरीका तो ये होता है कि देखिए यहां पे 10 है। 10 का लेफ्ट वाला पांच है। ये 15 है तो ठीक-ठाक चल रहा है। उसका लेफ्ट, रूट और राइट ऐसे ऑर्डर में चलना चाहिए। अब पांच है। पांच का लेफ्ट टू है तो टू पांच से भी छोटा है और 10 से भी छोटा है। वेरी गुड। पांच के राइट में उससे बड़ा होना चाहिए। लेकिन ये राइट में इतना बड़ा नहीं होना चाहिए कि 10 से बड़ा हो जाए। 10 से छोटा रहना चाहिए। तो सात है। सात पांच से बड़ा है और 10 से छोटा है। तो वेरी गुड। तो 10 के लेफ्ट में जो भी हैं वो 10 से छोटे हैं। अभी तक थे ये। उसी तरीके से 10 के राइट में 15 लिखा हुआ है तो अच्छी बात है। राइट में बड़ा होना",
+      "source": "caption",
+      "english_text": "There are 18 here. So look carefully. Is this BST? There are many ways to watch PST. One way is to see that there are 10 here. The one to the left of 10 is five. It is 15 so it is going well. Its left, root and right should move in this order. Now it's five. If the left side of five is two, then two is less than five and less than 10. very good. The right side of five should be bigger than that. But it should not be so big on the right that it becomes bigger than 10. Should be less than 10. So that's seven. Seven is greater than five and less than 10. So very good. So whatever is to the left of 10 is less than 10. These were still there. In the same way, if 15 is written to the right of 10, then it is a good thing. growing up right"
+    },
+    {
+      "start_time": 95.92,
+      "end_time": 130.71,
+      "text": "चाहिए। 15 के लेफ्ट में 15 के लेफ्ट में 15 से छोटा होना चाहिए। लेकिन 10 से बड़ा होना चाहिए। 15 के लेफ्ट में जो भी होगा अब ये 12 है तो 10 के राइट में ना तो ये 10 से बड़ा होना चाहिए। लेकिन 15 के लेफ्ट में है तो 15 से छोटा होना चाहिए। तो ठीक है। ये भी ठीक है। 12 बीच में है। 18 15 के राइट में है तो 18 ऑब्वियस्ली सबसे बड़ा होना चाहिए। तो ये आपको लग रहा होगा कि वेरी गुड बीएसटी है। तो इसमें आप ट्रू रिटर्न करेंगे। अब इसको करने का बहुत सारा तरीका है। बहुत सारा मतलब सच में बहुत सारा तरीका है। लेकिन जो तरीका हमको सबसे अच्छा लगता है और जो सबसे बेस्ट तरीका है वो बताते हैं हम आपको। देखिए और दूसरा वाला ही बता देंगे। दूसरा वाला कोड नहीं करेंगे। अगर आपको वो कोड करना है तो आप खुद से एक बार कोड करके देख सकते हैं।",
+      "source": "caption",
+      "english_text": "Should. The left side of 15 must be less than 15. But must be greater than 10. Whatever is on the left of 15 is now 12, so whatever is on the right of 10 neither should it be greater than 10. But if it is to the left of 15 then it should be smaller than 15. Well then. This is also fine. 12 is in the middle. 18 is to the right of 15, so 18 should obviously be the largest. So you might be feeling that this is a very good BST. So in this you will return true. Now there are lots of ways to do it. A lot means really way a lot. But we will tell you the method which we like best and which is the best method. Take a look and we will tell you the second one. Will not code the second one. If you want to do that code then you can try coding once by yourself."
+    },
+    {
+      "start_time": 130.72,
+      "end_time": 157.75,
+      "text": "लेकिन जो सबसे तरीका हमको अच्छा लगता है ना वो ये है कि हम आपको बहुत दिन से बोल रहे हैं ना कि बीएसटी का बीएसटी का जो इनऑर्डर होता है क्या? बीएसटी का जो इनऑर्डर होता है वो इसको एक सॉर्टेड एरे में बदल देता है। वो इसको एक सॉर्टेड एरे में बदल देता है। अगर ये बीएसटी कहीं से भी खराब हुआ ना मतलब कहीं से भी खराब वीएसटी या गलत वीएसटी हुआ तो ये सॉर्टेड एरे आपको नहीं मिलेगा। इनऑर्डर कैसे लिखते हैं? आइए लिखते हैं। इनऑर्डर क्या होता है? लेफ्ट उसके बाद रूट उसके बाद राइट।",
+      "source": "caption",
+      "english_text": "But the method we like the most is that we have been telling you for a long time that what is in-order for BST? The inorder of BST turns it into a sorted array. It turns it into a sorted array. If this BST gets damaged from anywhere i.e. bad VST or wrong VST from anywhere then you will not get this sorted array. How to write inorder? Let's write. What is inorder? Left then root then right."
+    },
+    {
+      "start_time": 157.76,
+      "end_time": 190.55,
+      "text": "ऐसे ही लिखा जाता है ना इनऑर्डर। वेरी गुड। तो कैसे लिखा जाता है इनऑर्डर? ऐसे लिखते हैं तो लिखिए। सबसे पहले हम लोग 10 पे आएंगे। तो 10 खुद नहीं पहले अपने लेफ्ट को मौका देगा। फिर हम लोग फाइव पे आएंगे। फाइव पहले खुद नहीं होगा। पहले अपने लेफ्ट को मौका देगा। फिर टू पे आएंगे। टू के लेफ्ट में कोई है नहीं। तो टू खुद प्रिंट हो जाएगा। ओके? अब वापस गए हम लोग फाइव पे तो फाइव अपने लेफ्ट को मौका दे चुका है। खुद प्रिंट हो जाएगा। उसके बाद फाइव अपने राइट को मौका देगा। सेवन। अब सेवन का कोई लेफ्ट है नहीं तो सेवन खुद प्रिंट हो जाएगा। सेवन का कोई राइट भी नहीं है तो कुछ नहीं हो पाएगा। वापस फाइव पे। फाइव का काम हो चुका है। वापस 10 पे। अब 10 अपने लेफ्ट को मौका दे चुका है। तो 10 खुद",
+      "source": "caption",
+      "english_text": "This is how it is written in order. very good. So how is inorder written? If you write like this then write. First of all we will come at 10. So 10 will give a chance to his left first and not himself. Then we will come at five. Five will not be the first himself. Will give a chance to his left first. Then we will come again. There is no one to the left of two. So 2 itself will be printed. Ok? Now we went back to five and five has given a chance to its left. It will print itself. After that Five will give a chance to his right. Seven. Now there is no left of seven otherwise seven will be printed itself. If there is no right to consume then nothing will be possible. Back to five. Five's work is done. Back at 10. Now 10 has given a chance to his left. so 10 itself"
+    },
+    {
+      "start_time": 190.56,
+      "end_time": 223.75,
+      "text": "प्रिंट हो जाएगा। उसके बाद 10 अपने राइट को मौका देगा। 15 अब 15 खुद नहीं होगा। पहले लेफ्ट को मौका देना है तो पहले 12 पे आ जाएगा। 12 का कोई लेफ्ट राइट है नहीं तो 12 खुद प्रिंट हो जाएगा। 12 के बाद आएंगे 15 पे। अब 15 प्रिंट होगा। 15 खुद होने के बाद राइट चाइल्ड को मौका देगा तो ये 18 हो जाएगा। तो ध्यान से देखिए क्या ये सॉर्टेड एरे है? 2 5 7 10 12 15 18 हां जी ये सॉर्टेड एरे है। अगर ये बीएसटी कहीं से भी खराब होता ना कहीं से भी। मतलब मान लीजिए कि एक काम करते हैं कि इस 15 को हम क्या बना देते हैं? इस 15 को हम नौ बना देते हैं। इस 15 को हम नौ बना देते हैं। अब देखिए अब इसी ऑर्डर में जब इन ऑर्डर",
+      "source": "caption",
+      "english_text": "It will be printed. After that 10 will give a chance to his right. 15 will no longer be 15 itself. If you want to give a chance to the left first then it will come on 12th. There is no left or right for 12 otherwise 12 will be printed automatically. Will come after 12 at 15. Now 15 will be printed. After being 15 himself, if he gives a chance to the right child, he will become 18. So look carefully, is this a sorted array? 2 5 7 10 12 15 18 Yes, this is a sorted array. If this BST gets spoiled from anywhere, then from nowhere. Meaning, suppose we do one thing, what do we do with this 15? Let us reduce this 15 to nine. Let us reduce this 15 to nine. Now see now in this order when these orders"
+    },
+    {
+      "start_time": 223.76,
+      "end_time": 258.71,
+      "text": "प्रिंट करेंगे ना तो जहां 15 है वहां नौ आ जाएगा। तो जहां 15 है वहां पे नौ लिख दीजिए। अब देखिए क्या ये सॉर्टेड एरे है? नहीं है। सॉर्टेड एरे नहीं है। क्यों नहीं है? क्योंकि बीएसटी खराब था। बीएसटी खराब होगा तो ऑब्वियसली ये सॉर्टेड एरे नहीं बनेगा। कभी नहीं बनेगा। तो सबसे इजी तरीका तो क्या है ना कि एक वेक्टर ले लीजिए। एक वेक्टर इंट ले लीजिए। ठीक है? इनऑर्डर रन कीजिए। इनऑर्डर का प्रोग्राम रन कीजिए इस रूट पे। आपको क्या करना है? कुछ नहीं। सबसे पहले इन ऑर्डर क्या बोलता है कि मेरे लेफ्ट को मौका दो। ओके? उसके बाद इसमें हम इसको पुश कर देंगे। रेस्ट डॉट पुश बैक या जो भी आपका एरे लिस्ट है किसको? रूट के",
+      "source": "caption",
+      "english_text": "If you print it, there will be nine where there was 15. So where there is 15, write nine. Now see is this a sorted array? Not there. Not a sorted array. Why isn't it? Because BST was bad. If BST is bad then obviously this sorted array will not be formed. Will never be made. So what is the easiest way to take a vector? Take a vector int. Ok? Run in order. Run the inorder program on this route. What do you have to do? Nothing. First of all what these orders say is to give a chance to my left. Ok? After that we will push it into this. Rest dot push back or whatever your array list is to whom? of root"
+    },
+    {
+      "start_time": 258.72,
+      "end_time": 290.95,
+      "text": "डेटा को। यही होता है ना इनऑर्डर। इनऑर्डर होता है कि पहले सेम फंक्शन को लेफ्ट पे कॉल करो और सेम फंक्शन को राइट में कॉल करो। नीचे बीच में बीच में बीच का जो ये पार्ट है ना ये रूट वाला पार्ट है। तो यहां पे आपको जो भी काम करना है आप कर सकते हैं। ऐसे जब करेंगे ना तो ये क्या हो जाएगा? ये पूरा बीएसटी को इस वेक्टर में कन्वर्ट कर देगा। और ये वेक्टर क्या होल्ड करेगा इसका? इनऑर्डर। क्योंकि हम लोग इसी तरीके से कर रहे हैं। इसी तरीके से कर रहे हैं। उसके बाद आप इस वेक्टर पे चेक कर सकते हैं। उसके बाद आप इस वेक्टर पे चेक कर सकते हैं। कैसे चेक कर सकते हैं? अब कोई एरे अगर सॉर्टेड है कि नहीं है? पता कैसे चलता है? आपको कोई जो वेक्टर मिलेगा",
+      "source": "caption",
+      "english_text": "To the data. This is what happens inorder. The order is to first call the same function on the left and then call the same function on the right. This part below in the middle is the root part. So whatever work you want to do, you can do it here. What will happen when we do this? This will convert the entire BST into this vector. And what will this vector hold? Inorder. Because we are doing it this way. Doing it this way. After that you can check on this vector. After that you can check on this vector. How can I check? Now if an array is sorted or not? How to know? whatever vector you get"
+    },
+    {
+      "start_time": 290.96,
+      "end_time": 324.15,
+      "text": "मान लीजिए कि ऐसा वेक्टर मिल गया 2 5 और यहां पे फोर। और फिर यहां 10 और 12 तो आप देख सकते हैं कि ये सॉर्टेड एरे नहीं है। ये सॉर्टेड एरे नहीं है ना। तो इसको चेक कैसे करेंगे? इसको बहुत सिंपल है। फॉर i = 0 i &lt; रेस डॉट साइज - 1 i + q - 1 बताते हैं। तो किसको कैसे चेक करेंगे? देखिए सॉर्टेड एरे का पहचान क्या होता है कि हर एक ये वाला एलिमेंट हर एक एलिमेंट अपने आगे वाले से छोटा हो। हर एक एलिमेंट अपने आगे वाले से छोटा हो। बस अपने आगे वाले से छोटा हो। तो हम लोग करेंगे कि इफ रेस आई",
+      "source": "caption",
+      "english_text": "Suppose we got such a vector 2 5 and here pe four. And then here 10 and 12 so you can see this is not a sorted array. This is not a sorted array, right? So how to check this? It is very simple. For i = 0 i < res dot size - 1 i + q - 1 states. So how will we check whom? See, the identity of a sorted array is that each element is smaller than the one preceding it. Each element is smaller than the one before it. Just be smaller than the one in front of you. So we will do that if the race comes"
+    },
+    {
+      "start_time": 324.16,
+      "end_time": 358.31,
+      "text": "अगर अगर कोई एलिमेंट अगर कोई एलिमेंट अपने आगे वाले एलिमेंट से बड़ा है बड़ा है जैसे कि ये पांच चार से बड़ा है तो ये सॉर्टेड एरे नहीं है तो ये सॉर्टेड एरे नहीं है अगर ये बड़ा है बड़ा और यहां पे स्ट्रिक्टली बोला है स्ट्रिक्टली तो अगर इक्वल भी है तो भी ये सॉर्टेड एरे नहीं है यहां पे स्ट्रिक्ट है मतलब वैल्यूज़ रिपीट नहीं होनी है बड़ा होना चाहिए तो अगर ये अपने आगे वाले से कोई बड़ा हो गया तो आप तुरंत यहां पे रिटर्न फॉल्स कर सकते हैं रिटर्न फॉल्स कर सकते हैं इसको चलने दीजिए और अगर ऐसा कुछ नहीं होता है तो मतलब कि पूरा एरे सॉर्टेड है। ये एरे को सॉर्टेड है कि नहीं ये देखना हमको लगता है कि सबको आता होगा। हम इसको शायद रिकर्शन में भी",
+      "source": "caption",
+      "english_text": "If any element is bigger than the element before it is bigger like if it is bigger than five four then it is not a sorted array then it is not a sorted array if it is bigger bigger and here it is strictly said strictly then even if it is equal then also it is not a sorted array, here it is strict meaning values should not be repeated, it should be bigger so if it is bigger than the one ahead of it then you immediately return here. You can do false, you can do return false, let it run and if nothing happens then it means the entire array is sorted. We think everyone would know how to check whether an array is sorted or not. We can probably do this in recursion as well."
+    },
+    {
+      "start_time": 358.32,
+      "end_time": 391.43,
+      "text": "पढ़ा रहे हैं और ये ये तो आपको आना ही चाहिए अभी तक। ठीक है? ये बहुत बेसिक सा चीज है। तो ये एक काम कर सकते हैं कि आप पूरे ट्री को पहले वेक्टर रिजल्ट में रख लिए। उसके बाद रिजल्ट में चेक कर लिया कि सॉर्टेड है कि नहीं। लेकिन लेकिन ये एप्रोच इंटरव्यू में काम नहीं करेगा। ये एप्रोच इंटरव्यू में हो सकता है कर जाए। हम अगर इंटरव्यूअर होंगे तो नहीं करेगा। क्यों नहीं करेगा? क्योंकि आप ये एक्स्ट्रा चीज यूज कर रहे हैं। जो भी वेक्टर इंट रेस है ना ये आप यूज़ कर रहे हैं एक्स्ट्रा। आपको ऑलरेडी ट्री दिया हुआ है। तो आप ये क्यों एक्स्ट्रा यूज़ कर रहे हैं? इसको करने के लिए हम लोग क्या करेंगे? आइए सोचते हैं। अब आपको पूरे ट्री को वेक्टर में नहीं लिखना है। करना इनऑर्डर से ही है। करना इनऑर्डर से ही है।",
+      "source": "caption",
+      "english_text": "Are teaching and you should have come by now. Ok? This is a very basic thing. So one thing you can do is put the entire tree in the first vector result. After that check the result whether it is sorted or not. But but this approach will not work in the interview. This approach can be done in interview. If we are the interviewer then it will not happen. Why wouldn't he? Because you are using this extra thing. Whatever vector int res is, you are using extra. You have already been given a tree. So why are you using this extra? What will we do to make this happen? Let's think. You no longer have to write the entire tree into a vector. This has to be done in-order only. This has to be done in-order only."
+    },
+    {
+      "start_time": 391.44,
+      "end_time": 425.749,
+      "text": "लेकिन पूरे ट्री को नहीं लिखना है। देखिए पहले हम लोग क्या कर रहे थे? पहले हम लोग बहुत सारा काम किए। पहले हम लोग पूरे ट्री को एक वेक्टर में या एरे में बनाए। इसके लिए इन ऑर्डर रन किए। उसके बाद इस एरे में हम लोग चेक किए कि अगर कोई भी आदमी अपने आगे वाले से बड़ा है। अपने आगे वाले से बड़ा है तो तो क्या बोले हम लोग? फॉल्स। कुल मिला के यही किए ना। पहले ट्री को वेक्टर बनाए या एरे बनाए। एरे में चेक करने की मतलब कोई ऐसा गलत बात है अगर सॉर्टेड नहीं दिख रहा है तो हम लोग फॉल्स रिटर्न कर दिए। ये सेम चीज बिना वेक्टर बनाए भी आप कर सकते हैं। सेम चीज बिना वेक्टर बनाए भी आप कर सकते हैं। कैसे कर",
+      "source": "caption",
+      "english_text": "But the entire tree does not have to be written. See what we were doing earlier? First we did a lot of work. First we create the entire tree in a vector or array. Run these orders for this. After that, we checked whether any person in this array was bigger than the one in front of him. If he is bigger than the one in front of him, then what should we say? Falls. Overall this is what we did. First make the tree a vector or an array. Checking the array means there is something wrong, if it doesn't appear sorted then we return false. You can do the same thing without creating a vector. You can do the same thing without creating a vector. how to do"
+    },
+    {
+      "start_time": 425.759,
+      "end_time": 459.51,
+      "text": "सकते हैं? बताते हैं। देखिए मान लीजिए मान लीजिए एक बहुत हम क्या बोल रहे हैं जब भी आपको ट्री में कुछ ना समझ में आए ना सबसे छोटा ट्री होता है तीन नोड का वो बना के देख लीजिए। एक हम देखिए ट्री बनाते हैं। हम यहां पे लिखते हैं टू वन और अ क्या लिखते हैं? टू। इससे हो सकता है नहीं समझ में आएगा। थ्री और टू। ठीक है? ये ट्री है। क्या ये एक बीएसटी है? नहीं। ये बीएसटी नहीं है। क्यों नहीं है? देखिए 3 है। रूट तो कुछ भी हो सकता है। थ्री के लेफ्ट में थ्री से छोटा है। तो वेरी गुड। लेकिन थ्री के राइट में थ्री से बड़ा नहीं है। तो ये बीएसटी नहीं है। अगर आप इसका एरे भी बनाएंगे तो",
+      "source": "caption",
+      "english_text": "can? Let us tell. See, let's say, what we are saying is that whenever you do not understand anything about a tree, the smallest tree is a tree with three nodes. Let's see, let's make a tree. Here we write 'two one' and 'a'. What do we write? To. It is possible that this will not make sense. Three and two. Ok? This is a tree. Is this a BST? No. This is not BST. Why isn't it? Look there are 3. The route can be anything. To the left of three is smaller than three. So very good. But to the right of three is not greater than three. So this is not BST. If you also make an array of this then"
+    },
+    {
+      "start_time": 459.52,
+      "end_time": 493.589,
+      "text": "क्या आएगा? 1 3 2 क्या ये सॉर्टेड एरे है? ये सॉर्टेड एरे नहीं है तो ये ट्री नहीं है। तो सेम काम सेम काम जो आप कर रहे है ना कि यहां पे जो आप काम कर रहे थे उसको आप इनऑर्डर के दौरान भी कर सकते हैं। इनऑर्डर के दौरान भी कर सकते हैं। कैसे? बताते हैं देखिए। इसमें हो क्या रहा है? इसमें एक तरीके से यही हो रहा है कि हर हर टाइम हम लोग किसी दो एलिमेंट को चेक कर रहे हैं। i को i + 1 से चेक कर रहे हैं। ये करने की बजाय हम लोग इस एरे में एक काम और कर सकते थे। हम लोग इस एरे में एक काम और कर सकते थे कि ऐसा करते हम लोग कि फॉर को ना i = 1 से i &lt; रेस डॉट साइज तक जाते।",
+      "source": "caption",
+      "english_text": "What will come? 1 3 2 Is this a sorted array? If it is not a sorted array then it is not a tree. So, the same work that you are doing here, you can do it during in-order also. Can also do during in-order. How? Let's see. What is happening in this? In a way, what is happening is that every time we are checking some two elements. Checking i with i + 1. Instead of doing this, we could have done one more thing in this array. One more thing we could have done in this array is that we would go from i = 1 to i < res dot size."
+    },
+    {
+      "start_time": 493.599,
+      "end_time": 528.31,
+      "text": "अच्छा और क्या करते? कुछ नहीं करते। अगर अगर रेस का i अगर रेस का i छोटा है रेस i - 1 से i - 1 से अगर छोटा है तो हम लोग रिटर्न फॉल्स कर देते इसका क्या मतलब है देखिए टू पे आए टू पे तो आएंगे ही नहीं i वन से स्टार्ट है तो फाइव पे आए क्या फाइव अपने पहले वाले से छोटा है नहीं तो वेरी गुड है फोर पे आए क्या फोर अपने पहले वाले फाइव से छोटा है हां छोटा है ऐसा नहीं होना चाहिए सॉर्टेड एरे में सॉर्टेड एरे में हर एलिमेंट अपने बड़े वाले से बड़ा पहले वाले से बड़ा होना चाहिए चाहिए। पहले वाले से बड़ा होना चाहिए। अगर कोई सॉर्टेड",
+      "source": "caption",
+      "english_text": "Well, what else do you do? Don't do anything. If i of race i is less than i - 1 then we would have returned false. What does it mean? Look, if two come two, then two will not come. If i starts from one, then come five. Is five smaller than its previous one? No, is it very good? Is four come smaller than its previous five? Yes, it is small. This should not happen. In a sorted array, every The element must be greater than the one preceding it. Should be bigger than the first one. if any sorted"
+    },
+    {
+      "start_time": 528.32,
+      "end_time": 561.67,
+      "text": "एरे ऐसा है कि जिसमें फोर आ रहा है और फोर के पहले सिक्स लिखा हुआ है तो सॉर्टेड एरे नहीं है। तो ये ट्रिक यूज़ करके कर सकते हैं। एग्जैक्टली एग्जैक्टली यही चीज़ इन ऑर्डर में भी आप लोग कर सकते हो। बिना एरे बनाए कैसे? किसी भी समय किसी भी समय इनऑर्डर में ना आपको रूट तो पता ही होता है। रूट का डेटा तो पता ही होता है ना। इनऑर्डर में रूट तो पता ही होता है। अच्छा। इसको आपको क्या चेक करना है कि अगर अगर ये छोटा है ये छोटा है। किससे? अपने प्रीवियस वाले से। अपने प्रीवियस वाले से अपने प्रीवियस वाले नोड से प्रीवियस का क्या मतलब है कि इन ऑर्डर में इन ऑर्डर",
+      "source": "caption",
+      "english_text": "If the array is such that four is coming and six is written before four, then it is not a sorted array. So you can do it by using this trick. You guys can do exactly the same thing in these orders also. How without creating an array? At any time in order, you do not know the route. The route data is already known. The route is known in the in-order. Good. What you have to check is that if it is small, it is small. With whom? From your previous one. What does it mean to move from a node to a node that is previous to its previous one in this order?"
+    },
+    {
+      "start_time": 561.68,
+      "end_time": 595.03,
+      "text": "में इन इन ऑर्डर नहीं इन ऑर्डर में इस रूट के पहले कौन सा रूट विजिट हुआ था अगर ये उससे छोटा या इक्वल टू भी है इक्वल टू भी है तो आप डायरेक्टली एक आंसर में फॉल्स कर सकते हैं फिर से बता रहे हैं इन ऑर्डर में आप किसी रूट पे आए उस रूट के उस सर्कल के उस सर्कल के पहले भी कोई सर्कल विजिट हुआ होगा ना उसी को तो आप लोग एरे में स्टोर करते हैं एरे में क्या स्टोर करते हैं एरे में रूट बाय रूट स्टोर करते जाते हैं। तो मान लीजिए अभी आप किसी फलाने सर्कल पे हैं। मान लीजिए टू पे हैं। इसके पहले कौन सा सर्कल इनऑर्डर में आया होगा जिस पे हम लोग काम किए होंगे? अगर रूट का डेटा उससे",
+      "source": "caption",
+      "english_text": "Not in this order, in this order, which route was visited before this route, if it is smaller than that or equal to two, if it is equal to two, then you can directly fall into one answer. Again, in this order, you have visited a route, some circle of that circle of that route must have been visited before that circle, so you guys store in the array, what do you store in the array, you go on storing route by route in the array. So suppose right now you are on a certain circle. Suppose there are two. Which circle would have come in order before this on which we would have worked? If the route's data is from"
+    },
+    {
+      "start_time": 595.04,
+      "end_time": 628.23,
+      "text": "छोटा हो जाता है। उससे छोटा हो जाता है प्रीवियस वाले से तो ये फॉल्स हो जाएगा। तो यही ट्रिक हम लोग करेंगे। यही ट्रिक यूज़ करेंगे। कैसे? देखिए शुरुआत में शुरुआत में इनऑर्डर स्टार्ट होगा रूट से। तो शुरुआत में प्रीवियस क्या होगा? प्रीवियस कुछ नहीं होगा। प्रीवियस का मतलब है ना कि इन ऑर्डर में इनऑर्डर जब आप कर रहे हैं ना तो इस रूट के पहले कौन सा नोड आया था? तो जब इनऑर्डर स्टार्ट ही नहीं हुआ है अभी तक तो स्टार्ट ही नहीं किया तो प्रीवियस क्या होगा? नल होगा। तो देखिए हम क्या करेंगे? सबसे पहले इनऑर्डर कहां कॉल होगा? रूट से। ऑब्वियसली रूट से ही शुरू होता है। देखिए क्या करेंगे? देखिएगा। और देखिएगा प्रव कैसे बदलता है और कैसे पता",
+      "source": "caption",
+      "english_text": "Becomes smaller. If it becomes smaller than the previous one then it will fail. So we will do this trick. Will use this trick. How? See, initially the inorder will start from the root. So what will be the previous one in the beginning? There will be nothing previous. Previous means that when you are doing in-order, which node came before this root? So when the inorder has not started yet, then what will be the previous? There will be tap. So see what we will do? Where will the in order be called first? From the root. Obviously it starts from the root. See what we will do? Will see. And see how the pressure changes and how to know"
+    },
+    {
+      "start_time": 628.24,
+      "end_time": 659.829,
+      "text": "चल जाता है? तो सबसे पहले रूट = 3 के लिए कॉल होगा। इनऑर्डर कॉल हो गया। तो इन ऑर्डर क्या करता है? सबसे पहले अपने लेफ्ट चाइल्ड को मौका देता है। किसको मौका देगा? ये रूट इक्वल टू वन। उसके बाद ये खुद कुछ प्रोसेस करेगा। क्या प्रोसेस करेगा बाद में देखेंगे और उसके बाद अपने राइट चाइल्ड को भी मौका देगा। अच्छी बात है। ओके? इसको आइए करते हैं। अब फन रूट = 1 पे आ जाइए। रूट इक्वल टू वन पे आ जाइए। फन रूट इक्वल टू वन पे आ गया। ठीक है? ये नल तो नहीं है। नल नहीं है। तो सबसे पहले किसको मौका देगा? वन। अब आप लोग वन पे आ गए हैं।",
+      "source": "caption",
+      "english_text": "does it work? So the first call would be for root=3. Inorder call made. So what does these orders do? First of all he gives a chance to his left child. Whom will he give a chance? This root is equal to one. After that it will do some processing itself. We will see later what process he will do and after that he will give a chance to his right child also. It's a good thing. Ok? Let's do this. Now come to Fun Route = 1. Come to route equal to one. Fun route equal to one. Ok? This is not a tap. There is no tap. So who will he give a chance to first? Forest. Now you people have come to the forest."
+    },
+    {
+      "start_time": 659.839,
+      "end_time": 686.31,
+      "text": "किसको? अपने लेफ्ट चाइल्ड को। तो लेफ्ट चाइल्ड को मौका देगा। तो ये तो रूट इज़ इक्वल टू नल हो जाएगा। क्योंकि इसका लेफ्ट चाइल्ड है नहीं। नहीं अब नल में कुछ नहीं होता है। नल में रिटर्न ही होता है। तो ठीक है कुछ हो गया। अब ये खुद की प्रोसेसिंग करेगा। अब अब देखते हैं कि क्या प्रोसेसिंग करेगा। अब अब देखिए अगर यहां पे आपको पता चलता है कि प्रीवियस नल है। अगर आपको पता चलता है कि प्रीवियस नल है। तो इसका मतलब क्या है कि ये जो सर्कल है ना ये जो वन वाला सर्कल है ये फर्स्ट नोड है। ये फर्स्ट नोड है इनऑर्डर में।",
+      "source": "caption",
+      "english_text": "To whom? To your left child. So will give a chance to the left child. So this will be root is equal to null. Because he has no left child. No, now nothing happens in the tap. There is only return in the tap. So okay something happened. Now it will do its own processing. Now let's see what processing it will do. Now see if here you find that the previous is null. If you find that the previous is null. So what does it mean that this circle is the first node, this is the first node. This is the first node in order."
+    },
+    {
+      "start_time": 686.32,
+      "end_time": 719.67,
+      "text": "फर्स्ट नोड है इनऑर्डर में। मतलब कि ना ये वाला आदमी है ये। i = 0 वाला। i = 0 वाला आदमी। इसके पहले कोई नहीं। तभी प्रीवियस नल हो सकता है। प्रीवियस ऐसा नल नहीं हो सकता है। तो सबसे पहली बात तो ऐसी है ना कि अगर प्रीवियस नल है तो ये फर्स्ट नोड है। अब हम लोग क्या सोचे हैं कि रूट को अपने प्रीवियस से कंपेयर करके पता कर लेंगे। अब जो फर्स्ट नोड है फर्स्ट नोड का कोई प्रीवियस तो होता नहीं है। तो यहां आप कुछ नहीं करेंगे। यहां आप कुछ नहीं करेंगे। लेकिन लेकिन तो हम लोग एक काम कर सकते हैं कि इफ प्रीवियस इक्वल इक्वल टू नल। मतलब कि ये पहला नोड है। तो इसमें आप क्या करेंगे? अब जाते-जाते ना प्रीवियस को",
+      "source": "caption",
+      "english_text": "The first node is in order. That means he is not this guy. The one with i = 0. The man with i = 0. No one before this. Only then can there be a previous null. Previous such null cannot occur. So the first thing is that if the previous is null then it is the first node. Now what we think is that we will find out the route by comparing it with our previous ones. Now the first node has no predecessor. So you won't do anything here. You won't do anything here. But but then we can do one thing that if previous is equal to null. Meaning this is the first node. So what will you do in this? अब जाते-जाते ना प्रीवियस को"
+    },
+    {
+      "start_time": 719.68,
+      "end_time": 752.949,
+      "text": "रूट बना दीजिए। प्रीवियस को रूट बना दीजिए। क्या होगा बताएंगे क्या होगा? देखिएगा। तो जब आप ऐसा किए ना कि प्रीवियस रूट अभी रूट क्या है? वन वन वन। प्रीवियस क्या है? प्रीवियस एक ग्लोबल वेरिएबल है। ऊपर में लिखेंगे। तो प्रीवियस क्या हो गया? नल से। प्रीवियस हो गया वन। प्रीवियस हो गया वन। ठीक है? प्रीवियस नल है तो कुछ कंपैरिजन आप कर नहीं सकते हैं। ठीक है? उसके बाद अब ये हो गया। प्रोसेस हो गया। अब अपने राइट चाइल्ड को मौका देगा। तो ये भी नल ही है इसका टू वन का और कोई राइट चाइल्ड है भी नहीं। तो नल हो जाएगा ये। तो नल नहीं चलेगा। ये पूरा फंक्शन खत्म हो गया। अब आप कहां आए? अब आप यहां पे आ गए।",
+      "source": "caption",
+      "english_text": "रूट बना दीजिए। प्रीवियस को रूट बना दीजिए। क्या होगा बताएंगे क्या होगा? Will see. तो जब आप ऐसा किए ना कि प्रीवियस रूट अभी रूट क्या है? वन वन वन। प्रीवियस क्या है? प्रीवियस एक ग्लोबल वेरिएबल है। ऊपर में लिखेंगे। तो प्रीवियस क्या हो गया? नल से। प्रीवियस हो गया वन। प्रीवियस हो गया वन। Ok? प्रीवियस नल है तो कुछ कंपैरिजन आप कर नहीं सकते हैं। Ok? उसके बाद अब ये हो गया। प्रोसेस हो गया। अब अपने राइट चाइल्ड को मौका देगा। तो ये भी नल ही है इसका टू वन का और कोई राइट चाइल्ड है भी नहीं। तो नल हो जाएगा ये। तो नल नहीं चलेगा। ये पूरा फंक्शन खत्म हो गया। अब आप कहां आए? अब आप यहां पे आ गए।"
+    },
+    {
+      "start_time": 752.959,
+      "end_time": 779.35,
+      "text": "अब आप यहां पे आ गए। अब देखिए ध्यान से। ये रूट = 3 है। आप यहां से वन पे गए थे। वन खत्म हो गया। अब प्रीवियस क्या है? प्रीवियस एग्जैक्टली वही वैल्यू होल्ड करता है जो इसके पहले प्रोसेस हुआ है। इसके पहले वन होता है। इसके पहले वन आया था। अब प्रीवियस उसको होल्ड करता है। ठीक है? अब यहां पे जब आप चेक करेंगे कि अगर प्रीवियस नल है। प्रीवियस नल नहीं है क्योंकि थ्री फर्स्ट नोड नहीं है। अब थ्री सेकंड नोड है। इसके पहले ये हो चुका है एक सर्कल प्रोसेस। अब आप चेक कर सकते हैं।",
+      "source": "caption",
+      "english_text": "अब आप यहां पे आ गए। अब देखिए ध्यान से। ये रूट = 3 है। आप यहां से वन पे गए थे। वन खत्म हो गया। अब प्रीवियस क्या है? प्रीवियस एग्जैक्टली वही वैल्यू होल्ड करता है जो इसके पहले प्रोसेस हुआ है। इसके पहले वन होता है। इसके पहले वन आया था। अब प्रीवियस उसको होल्ड करता है। Ok? अब यहां पे जब आप चेक करेंगे कि अगर प्रीवियस नल है। प्रीवियस नल नहीं है क्योंकि थ्री फर्स्ट नोड नहीं है। अब थ्री सेकंड नोड है। इसके पहले ये हो चुका है एक सर्कल प्रोसेस। अब आप चेक कर सकते हैं।"
+    },
+    {
+      "start_time": 779.36,
+      "end_time": 811.99,
+      "text": "क्या चेक कर सकते हैं? इफ इफ रूट का डेटा अगर अब देखिए थ्री प्रीवियस के बाद आ रहा है तो पहले प्रीवियस नोड आया होगा। उसके बाद रूट आया होगा। तो सॉर्टेड एरे का क्या मतलब है? कि अगर रूट इससे बड़ा है तब तो ठीक है। लेकिन रूट अगर प्रीवियस से छोटा या उसके इक्वल टू है तो ये बीएसटी नहीं है। ये बीएसटी नहीं है। तो अगर छोटा या इक्वल टू प्रव का डेटा है तो हम लोग क्या करेंगे? आंसर इज इक्वल टू फॉल्स। आंसर इज इक्वल टू फॉल्स। और उसके बाद उसके बाद जो",
+      "source": "caption",
+      "english_text": "What can you check? इफ इफ रूट का डेटा अगर अब देखिए थ्री प्रीवियस के बाद आ रहा है तो पहले प्रीवियस नोड आया होगा। उसके बाद रूट आया होगा। तो सॉर्टेड एरे का क्या मतलब है? कि अगर रूट इससे बड़ा है तब तो ठीक है। लेकिन रूट अगर प्रीवियस से छोटा या उसके इक्वल टू है तो ये बीएसटी नहीं है। ये बीएसटी नहीं है। तो अगर छोटा या इक्वल टू प्रव का डेटा है तो हम लोग क्या करेंगे? आंसर इज इक्वल टू फॉल्स। आंसर इज इक्वल टू फॉल्स। और उसके बाद उसके बाद जो"
+    },
+    {
+      "start_time": 812.0,
+      "end_time": 838.71,
+      "text": "काम यहां किए थे प्रीवियस इक्वल टू रूट पे ये काम इसमें भी करना है। अगर प्रीवियस नल हो या ना हो प्रीवियस इज़ इक्वल टू रूट तो करना ही करना है। प्रीवियस इज़ इक्वल टू रूट तो करना ही करना है। तो ये करने के बाद देखिए अभी प्रीवियस क्या है? वन। यहां पे क्या था? अभी कोड ये पूरा नहीं है। आपको लग रहा होगा क्या लिख दिया? बस समझा रहे हैं आपको। हिंदी में समझा रहे हैं कि हम बोलना क्या चाहते हैं। ठीक है? अब प्रीवियस क्या था? वन। अभी आप थे थ्री में। तो क्या थ्री स्मॉलर है वन से? नहीं।",
+      "source": "caption",
+      "english_text": "The work was done here on the previous equal to route, this work has to be done here also. If previous is null or not previous is equal to root then it has to be done. Previous is equal to root so it has to be done. So after doing this, see what is the previous one? Forest. What was there here? This code is not complete yet. You must be wondering what I have written? Just explaining to you. Explaining in Hindi what we want to say. Ok? Now what was the previous? Forest. Now you were in three. So is three smaller than one? No."
+    },
+    {
+      "start_time": 838.72,
+      "end_time": 867.35,
+      "text": "थ्री स्मॉलर नहीं है वन से। तो अभी तक कुछ नहीं। और अभी तक आप देख भी सकते हैं कि यहां तक ठीक है। ये पार्ट इसका ठीक था तो अभी भी ठीक है। उसके बाद क्या हुआ? प्रीवियस इज़ इक्वल टू रूट। तो प्रीवियस बदल के क्या बन गया? थ्री। प्रीवियस बदल के क्या बन गया? थ्री। क्योंकि वन का काम हो चुका है। वन का काम हो चुका है। अब क्या कॉल होगा? 1 2। अब देखिए कैसा होगा। अब देखिए क्या होगा? जब आप यहां पे आएंगे रूट = 2। तो टू टू अपने लेफ्ट साइड को मौका देगा। लेकिन लेफ्ट साइड कुछ है नहीं तो नल हो जाएगा। अब ये क्या चेक करेगा?",
+      "source": "caption",
+      "english_text": "Three is not smaller than one. So nothing yet. And so far you can see that so far it is okay. If this part was fine then it is still fine. what happened after that? Previous is equal to root. So what has changed from the previous one? Three. What has changed from the previous one? Three. Because the forest work has been done. Forest work has been done. What call will happen now? 1 2. Now see how it will be. Now see what will happen? When you come here route=2. So Too Too will give a chance to his left side. But there is something on the left side otherwise it will be null. Now what will he check?"
+    },
+    {
+      "start_time": 867.36,
+      "end_time": 900.47,
+      "text": "अगर मेरे रूट का डेटा जो कि दो है स्मॉलर दैन इक्वल टू है प्रीवियस के डेटा से और अभी प्रीवियस क्या होल्ड करता है? जो सर्कल इसके पहले एग्जीक्यूट हुआ था। इसके पहले क्या एग्जीक्यूट हुआ था? रूट इज़ इक्वल टू थ्री। तो प्रीवियस क्या होल्ड करता है? थ्री। तो क्या टू थ्री से छोटा है? हां, टू थ्री से छोटा है। यहीं पे गलती हो गई। और यहां पे अगर गलती हो गई है तो आंसर इज़ इक्वल टू फॉल्स। यहां पे गलती हो भी गई है क्योंकि थ्री के राइट में बैठा हुआ है टू और थ्री के राइट में बैठा हुआ है तो इसको थ्री से बड़ा होना चाहिए था टू अपने प्रीवियस वाले से छोटा हो गया",
+      "source": "caption",
+      "english_text": "If my route's data which is two is smaller than equal to two than the previous's data and now what does the previous hold? The circle which was executed before this. What was executed before this? Root is equal to three. So what does Previous hold? Three. So is two less than three? Yes, two is smaller than three. This is where the mistake happened. And if a mistake has been made here then the answer is equal to false. A mistake has been made here because Two is sitting to the right of Three and Two is sitting to the right of Three, so it should have been bigger than Three. Two has become smaller than its previous one."
+    },
+    {
+      "start_time": 900.48,
+      "end_time": 933.829,
+      "text": "तो यहां पे खत्म हो गया खेल आंसर इक्वल टू फॉल्स यही काम अगर आप एरे बना के करते ना तो इसका एरे कैसा बनता इसका एरे यही बनता सबसे पहले वन आता फिर थ्री आता फिर टू आता यही काम आप एरे में भी करते 0 1 2 आप यहां से स्टार्ट करते आप देखते क्या ये अपने पीछे वाले से बड़ा है हां पीछे वाले से बड़ा है फिर यहां आते क्या ये पीछे वाले से बड़ा है नहीं पीछे वाले से बड़ा नहीं है लेकिन होना चाहिए था तो आप बोलते कि यहां पे फॉल्स तो यही काम जो आप एरे में करते हैं ना एक प्रीवियस की मदद से हम लोग यहां पे कर रहे हैं। इसका कोड बहुत सिंपल है। आइए कोड इसका देख लें। तो आपको दो चीजें चाहिए होंगी। शुरुआत में तो आपको",
+      "source": "caption",
+      "english_text": "So here the game is over. Answer: Equal to two falls. If you do the same thing by making an array, then how would its array be? This is what its array would be like. First comes one, then comes three, then comes two. You do the same thing in the array too. 0 1 2. You start from here, you see, is it bigger than the one behind it? Yes, it is bigger than the one behind it. Then coming here, is it bigger than the one behind it? No, it is not bigger than the one behind it, but it should have happened. You would have said that this is the one that falls here, it is bigger than the one behind it. Yes, it is bigger than the one behind it. The work which you do in an array, we are doing it here with the help of a previous person. Its code is very simple. Let's see its code. So you will need two things. In the beginning you"
+    },
+    {
+      "start_time": 933.839,
+      "end_time": 965.35,
+      "text": "क्या चाहिए होगा? एक प्रीवियस इज़ इक्वल टू नल। शुरुआत में जब इनऑर्डर स्टार्ट ही नहीं हुआ तो प्रीवियस नल होगा और आपको एक आंसर चाहिए होगा। तो हम लोग शुरू में मान लेंगे कि ये वैलिड है। अगर कहीं पे गलती दिखेगी तो इसको फॉल्स कर देंगे। नहीं दिखेगी तो नहीं करेंगे। तो ठीक है। अब आइए अपना इन ऑर्डर शुरू कीजिए। इनऑर्डर में क्या पास होगा? कुछ नहीं। बस केवल रूट प्रीवियस तो ऊपर ही लिख दिया ना। सॉरी ये नहीं देना था। हां। सबसे पहले तो सिंपल अगर रूट नल है। अगर रूट नल है तो कुछ करने की जरूरत नहीं है। आप कुछ कर भी नहीं सकते हैं। ठीक है? अब इनऑर्डर शुरू करिए।",
+      "source": "caption",
+      "english_text": "What would you need? A Previous Is Equal To NULL. In the beginning, when the inorder has not even started, the previous will be null and you will need an answer. So initially we will assume that it is valid. If we find any mistake anywhere, we will make it false. If you can't see it, you won't do it. Well then. Now let's start your in order. What will pass in order? Nothing. Just wrote the route previous above. Sorry, this was not to be given. Yes. First of all it's simple if the root is null. If the root is null then there is no need to do anything. You can't even do anything. Ok? Start in-ordering now."
+    },
+    {
+      "start_time": 965.36,
+      "end_time": 997.91,
+      "text": "इनऑर्डर मतलब सबसे पहले अपने लेफ्ट चाइल्ड को मौका दे दो। रूट के लेफ्ट को मौका दे दो। दे दिया मौका। अब आइए अपना खेल खेलते हैं। तो सबसे पहले तो अगर अगर प्रव इक्वल इक्वल टु नल तो क्या करना है? तो क्या करना है? प्रव इक्वल इक्वल टू नल मतलब ये पहला सर्कल है। तो ज्यादा कुछ करना नहीं है। बस प्रव को रूट में कर दो। प्रव इज़ इक्वल टू रूट ताकि अगले बार काम आए। एल्स एल्स अगर ऐसा नहीं है तो आपको कंपेयर करना पड़ेगा। तो कंपेयर में क्या लिखेंगे? कि अगर रूट का डाटा रूट का डाटा अपने",
+      "source": "caption",
+      "english_text": "In order means first give a chance to your left child. Give a chance to Root's left. Gave a chance. Now let's play our game. So first of all, if Prav is equal to Null then what to do? So what to do? Prav equal to null means this is the first circle. So there is nothing much to do. Just put prav in root. Prav is equal to root so that will be useful next time. Otherwise, if it is not so then you will have to compare. So what will you write in the comparison? That if the root's data is the root's data"
+    },
+    {
+      "start_time": 997.92,
+      "end_time": 1030.789,
+      "text": "प्रीवियस वाले से छोटा है या उसके इक्वल टू है। छोटा है या उसके इक्वल टू है तो इसका मतलब क्या होता है? आंसर इज़ इक्वल टू फॉल्स। हो गया। बड़ा है तो ठीक है। बड़ा है तो ठीक है। आंसर तो ट्रू था ही। बड़ा है तो अच्छी बात है। छोटा है तो आंसर इज़ इक्वल टू फॉल्स। और इस केस में भी आपको प्रेव इज़ इक्वल टू रूट कर देना चाहिए। ताकि अगले बार काम आए। प्रव = रूट तो करना ही करना है। नहीं तो प्रीवियस मेंटेन नहीं होगा ना। वो तो हर बार करना पड़ेगा। इसको बंद कर दीजिए। हो गया मेरे ख्याल से। तो आप लेफ्ट को मौका दे चुके थे। अब राइट को मौका दे दीजिए। अब राइट को मौका दे दीजिए। ठीक बात",
+      "source": "caption",
+      "english_text": "Is smaller than or equal to the previous one. What does it mean if it is smaller or equal to two? Answer is equal to false. Done. If it is big then it is okay. If it is big then it is okay. The answer was certainly true. If it is big then it is good. If it is small then the answer is equal to false. And in this case also you should make prev is equal to root. So that it comes in handy next time. Prav = Root has to be done. Otherwise the previous maintenance will not happen. That will have to be done every time. Turn it off. I think its done. So you had given a chance to the left. Now give Wright a chance. Now give Wright a chance. right thing"
+    },
+    {
+      "start_time": 1030.799,
+      "end_time": 1065.51,
+      "text": "है। और बंद कर दीजिए इसको। ठीक है? मेन अरे यार अरे क्या हो रहा है? चलिए कोई बात नहीं। मेन को मौका देना है तो मेन को मौका दे दीजिए। मेन को मेन मेन में कैसे करेंगे? फन या जो भी आपका जो भी आपका फंक्शन है इनऑर्डर फंक्शन नाम है और रिटर्न आंसर। बस इतना सा प्रोग्राम देख लीजिए। इतना सा प्रोग्राम है। देख लीजिए। तो ये आपका क्या है? ये आपका प्रोसेसिंग यूनिट है। यह आपका प्रोसेसिंग हो रहा है। सबसे पहले आप लेफ्ट को मौका दिए। फिर लास्ट में आप राइट को मौका दिए और बीच में यहां से यहां तक ये",
+      "source": "caption",
+      "english_text": "Is. And turn it off. Ok? Main Hey man hey what's going on? Never mind. If you want to give a chance to the main, then give a chance to the main. How to convert main into main? Fun or whatever your whatever your function is inorder function name and return answer. Just watch this program. This is such a small program. Take a look. So what is this to you? This is your processing unit. This is your processing. First of all you gave a chance to the left. Then in the last you gave a chance to the right and in between from here to here this"
+    },
+    {
+      "start_time": 1065.52,
+      "end_time": 1099.51,
+      "text": "आप रूट का प्रोसेसिंग कर रहे हैं। तो ऐसे आपको पता चल जाएगा कि वैलिडेट है कि नहीं। तो ये इसका बेस्ट एप्रोच है। एरे वाला एप्रोच अगर समझ में आता है कर सकते हैं। लेकिन ये ज्यादा अच्छा है। और ये इसलिए समझना है क्योंकि अगले क्वेश्चन में भी ये काम आएगा। अगले क्वेश्चन में भी ये काम आएगा। अगला क्वेश्चन क्या है? आइए समझाते हैं। चलिए अगला क्वेश्चन है रिकवर बाइनरी सर्च टी। पहला वाला था वैलिडेट। अब रिकवर तो अब रिकवर का मतलब क्या होता है ना कि कुछ गलत हो गया है। उस गलत को आपको सही करना है। तो देखिए बीएसटी से थोड़ा अलग चलते हैं। ठीक है? आपको एक बीएसटी चलिए बीएसटी एक मान लीजिए दिया हुआ है। बाइनरी सर्च टी दिया हुआ है। ऐसा करके इसमें कुछ",
+      "source": "caption",
+      "english_text": "You are processing the route. So this way you will know whether it is valid or not. So this is its best approach. You can do the array approach if it makes sense. But this is better. And this has to be understood because it will be useful in the next question also. This will be useful in the next question also. What is the next question? Let us explain. Let's next question is recover binary search t. The first one was Validate. Now recovered, now what does recovered mean and not that something has gone wrong. You have to right that wrong. So see, let's go a little differently from BST. Ok? You are given a BST, let's say BST one. Binary search t is given. By doing this something"
+    },
+    {
+      "start_time": 1099.52,
+      "end_time": 1131.99,
+      "text": "भी हो सकता है। एक हम एबीएसटी बना देते हैं कि 10 हो गया, 15 हो गया, पांच हो गया, दो हो गया, सात हो गया और यहां पे 20 हो गया। ठीक है? ये एक वैलिड बीएसटी है। अभी तक सही देख लीजिए। सब मिला मिला के सही चल रहा है। हां जी बिल्कुल। अब आपको क्या बोला है? ये वैलिड था। ये वैलिड था। इसमें कोई भी दो न्स दो नोड्स स्वाप कर दिए किसी ने। कोई चोर था साला उसको स्वाइप कर दिया है। कोई हेराफेरी कर दिया है। हेराफेरी क्या कर दिया है? मान लीजिए हम इनको उठा के स्वाप कर दें। इसको और इसको तो 15 यहां ले आए और पांच यहां ले आएं।",
+      "source": "caption",
+      "english_text": "Can also happen. First, we make ABS that it became 10, it became 15, it became five, it became two, it became seven and here it became 20. Ok? This is a valid BST. Look right till now. Everything is going well. Yes, absolutely. Now what did he tell you? This was valid. This was valid. In this, someone swapped any two nodes. There was some thief, he has been swiped. Some manipulation has been done. What manipulation has been done? Suppose we pick them up and swap them. 15 brought this and that and five brought here."
+    },
+    {
+      "start_time": 1132.0,
+      "end_time": 1158.07,
+      "text": "ठीक है? अब ये बीएसटी है? नहीं। बीएसटी नहीं है। कैसे पता लगेगा? वैलिडेट वाला लगा के देख लीजिए। पता चल जाएगा। इन ऑर्डर में पता चल जाएगा। अब आपका काम क्या है? और यह बोला है कि दो ही नोट स्वाप हुआ। ऐसा नहीं कि बहुत सारा बोल दो नोट गलती से स्वाप हो गया है। तो पांच और 15 वाला क्या हो गया है? ये हो गया है। फिक्स इधर-उधर हो गया। ठीक है? आपको इन दोनों को खोजना है। आपको इन दोनों को खोजना है। और इनका डेटा वापस से स्वाइप करके बीएसटी को ठीक कर देना है। बीएसटी को ठीक कर देना है।",
+      "source": "caption",
+      "english_text": "ok? Is this BST now? No. There is no BST. How will you know? Try using a valid one. Will come to know. Will be known in these orders. What is your work now? And it is said that only two notes were swapped. It is not that the note has been swapped by mistake. So what has happened to five and 15? This is done. The fix went around. Ok? You have to find both of these. You have to find both of these. And BST has to be corrected by swiping their data back. BST has to be fixed."
+    },
+    {
+      "start_time": 1158.08,
+      "end_time": 1183.75,
+      "text": "मतलब अगर आप इन दोनों को खोज लेते बाय चांस अगर खोज लेते कोई बता देता तो आप इन दोनों का डेटा वापस स्वाइप कर देते। तो वापस स्वाइप कर देते तो क्या बनता? ये वापिस पांच हो जाता और ये वापिस 15 हो जाता। अब ये बीएसटी ठीक हो जाता क्योंकि दो नोट शॉप हुआ है। आप उनको ढूंढ के वापस कर दीजिए तो वो खत्म हो जाएगा। बीएसटी सही हो जाएगा। ये क्वेश्चन का कहना है। इसको बीएसटी से सोचना थोड़ा मुश्किल है। थोड़ा क्या है? बहुत मुश्किल है। बीएसटी से समझाना ही मुश्किल है। हम क्या बोले?",
+      "source": "caption",
+      "english_text": "Meaning, if you had discovered these two, by chance, if someone had told you, you would have swiped back the data of these two. So what would have happened if you had swiped back? This would go back to five and this would go back to 15. Now this BST would have been fine because two note shops have happened. If you find them and return them, it will end. BST will be correct. This is what the question says. It is a bit difficult to think of this from BST. What is a little? It is very difficult. It is difficult to explain through BST. What should we say?"
+    },
+    {
+      "start_time": 1183.76,
+      "end_time": 1214.07,
+      "text": "बीएसटी बीएसटी और सॉर्टेड एरे सेम होता है। बीएसटी का इनऑर्डर को हम लोग सॉर्टेड एरे कहते हैं। सॉर्टेड एरे को बीएसटी बना सकते हैं। तो बीएसटी सोचने से अच्छा आइए सॉर्टेड एरे में सोचते हैं क्योंकि अब इसका मान लीजिए हम इनऑर्डर लिखेंगे अगर तो क्या आएगा? इसका इनऑर्डर लिखेंगे तो आएगा 2 5 7 10 15 और 20। यही एरे है ना? इसी एरे में सोच लेते हैं कि इस एरे में मान लीजिए आपको कोई बोलता कि बीएसटी नहीं दिया हुआ है। मान लो एरे दिया हुआ है। सिंपल एरे दिया हुआ है। एक काम करो इस एरे में हम दो इंडेक्स इधर-उधर स्वाइप कर दिए हैं।",
+      "source": "caption",
+      "english_text": "BST is the same as BST and sorted array. We call the inorder array of BST as sorted array. Sorted array can be made BST. So instead of thinking about BST, let us think in sorted array because now let us assume that we will write in order, if so what will come? If you write its inorder, it will come 2 5 7 10 15 and 20. This is the array isn't it? Let us imagine that in this array, suppose someone tells you that BST has not been given. Suppose the array is given. Simple array is given. Do one thing: We have swiped two indexes here and there in this array."
+    },
+    {
+      "start_time": 1214.08,
+      "end_time": 1248.63,
+      "text": "तो पहले ये सॉर्टेड एरे था। स्वाइप कर दिए तो अनसॉर्टेड हो गया। उनको ढूंढ के उनको सही कर दो। उनको ढूंढ के उसको सही कर दो। तो हम लोग आइए एरे में सोच लेते हैं। एरे में सोचेंगे। जो काम एरे में करना होगा वही ट्री में कर देंगे। वैलिडेट में भी यही किए थे। वैलिडेट में भी एरे में सोचे थे कि एरे बना के क्या करेंगे? उसमें पता चला था तो ट्री में हो गया था। यहां भी सेम फॉलो करेंगे। आइए। तो इस एरे को हम नीचे लिख लेते हैं। आइए। तो मान लीजिए आपको एक एरे दिया हुआ है। इस एरे को ऐसा करने के बजाय हम ऐसा एरे मान लीजिए ऐसा ट्री है। 1 2 3 4 5 6 और 7 ठीक है? ये अच्छा ट्री है। सॉर्टेड ट्री है। वेरी गुड है। चलिए",
+      "source": "caption",
+      "english_text": "So earlier this was a sorted array. When you swiped it became unsorted. Find them and fix them. Find them and correct them. So let us think in array. Will think in array. The work that needs to be done in an array will be done in a tree. Same thing was done in Validate also. Even in Validate, we thought about the array, what will we do after making the array? If it was detected then it was in the tree. Will follow the same here also. Come. So we write this array below. Come. So suppose you are given an array. Instead of calling this array like this, let us assume this array is a tree like this. 1 2 3 4 5 6 and 7 ok? This is a good tree. Is a sorted tree. Very good. let's go"
+    },
+    {
+      "start_time": 1248.64,
+      "end_time": 1282.95,
+      "text": "अब इस एरे में आपको बोला है कि कोई भी दो नोड ना स्वाइप हो जाएगा। कोई भी दो नोड स्वाप हो जाएगा। तो आपके समझने के लिए हम थ्री को और सिक्स को स्वाप कर देते हैं। थ्री और सिक्स को स्वाप कर देते। देखिए क्या होगा? बहुत ध्यान से देखिएगा। आंख खोल के देखिए। दिमाग खोल के। 1 2 6 4 5 3 और 7 ये आपका सॉर्टेड एरे है जो कि स्वैप हो चुका है। किसी भी दो को हम मिला के स्वैप कर दिए हैं। अब अब ऊपर वाले एरे में ऊपर वाले एरे में ना अब आप सॉर्टेड एरे कैसे चेक किए थे। अब सॉर्टेड एरे कैसे चेक किए",
+      "source": "caption",
+      "english_text": "Now in this array you are told that no two nodes will be swiped. Any two nodes will be swapped. So for your understanding we swap the three and six. Would have swapped threes and sixes. See what will happen? Will look very carefully. Look with your eyes open. With an open mind. 1 2 6 4 5 3 and 7 This is your sorted array that has been swapped. We have mixed and swapped any two. Now in the above array, how did you check the sorted array? Now how to check sorted array"
+    },
+    {
+      "start_time": 1282.96,
+      "end_time": 1317.75,
+      "text": "थे कि फॉर i = 0 i &lt; जो भी आपका एरे का साइज़ है और i + और इफ एरे ऑफ़ i एरे ऑफ़ i अ इसको -1 कर दीजिए। अगर एरे ऑफ़ i बड़ा है। बड़ा है अपने एरे i + 1 से तो इसको हम लोग बोलते थे कि ये नॉट सॉर्टेड है। नॉट सॉर्टेड है। मतलब ये गलत हो गया। कहने का मतलब कि अगर कोई आदमी अपने आगे वाले से बड़ा हो जाए तो वायरल सॉर्टेड नहीं रहता था। वो गलत हो जाता था। तो आइए देखते हैं कि इस एरे में जो कि स्वप्ड नहीं है जो कि नहीं है स्वप्ड सॉर्टेड है परफेक्ट सॉर्टेड है इसमें कोई हेराफेरी नहीं है इसमें अगर आपको कोई बोले ना कि इसमें",
+      "source": "caption",
+      "english_text": "That is for i = 0 i < whatever is the size of your array and i + and if array of i is array of i then make it -1. If the array of i is large. It is bigger than our array i + 1, so we used to say that it is not sorted. Not sorted. Meaning it went wrong. That is to say, if a person became bigger than the person in front of him, he would not remain virally sorted. He used to go wrong. So let us see that in this array which is not swapped, which is not swapped, is sorted, is perfectly sorted, there is no manipulation in it, if someone tells you that it"
+    },
+    {
+      "start_time": 1317.76,
+      "end_time": 1349.59,
+      "text": "कितना गलत वाला पॉइंट है तो ऑब्वियसली इसमें गलत वाला जो पॉइंट है वो जीरो है इसमें कोई पॉइंट गलत नहीं है आप किसी भी एलिमेंट को उठाएंगे तो अपने आगे वाले से छोटा ही मिलेगा आपको किसी को भी उठाएंगे अपने आगे वाले से छोटा मिलेगा इसीलिए तो एरे सॉर्टेड है ना कि इसमें कोई भी गलत काम नहीं हुआ है किसी को भी उठाइए आगे वाले से छोटा है तो ये चल जाएगा अगर आपको कोई इसमें बोले जिसमें हम दो को स्वाइप कर दिए हैं। इसमें कितना गलत काम है? आइए देखते हैं। चला कितना गलत काम है। यहां से शुरू करिए। क्या ये वन अपने आगे वाले से छोटा है? हां, अपने आगे वाले से छोटा है।",
+      "source": "caption",
+      "english_text": "How many wrong points are there? Obviously, the wrong point in this is zero. There is no wrong point in this. If you pick up any element, it will be smaller than the one in front of you. If you pick up any element, you will get smaller than the one in front of you. That is why the array is sorted, no wrong has been done in it. Pick up any element which is smaller than the one in front, then it will work. If someone tells you in this, in which we have swiped two. How much wrong is there in this? let's watch. Wow, what a wrong thing to do. Start here. Is this forest smaller than the one before it? Yes, smaller than the one before it."
+    },
+    {
+      "start_time": 1349.6,
+      "end_time": 1382.789,
+      "text": "क्या टू अपने आगे वाले से छोटा है? हां, अपने आगे वाले से छोटा है। लेकिन क्या सिक्स अपने आगे वाले से छोटा है? नहीं। नहीं नहीं। तो एक गलत हमको यहां मिल गया। क्या गलत हुआ वहां पे? सिक्स को अपने आगे वाले से छोटा होना चाहिए था। लेकिन सिक्स अपने आगे वाले से बड़ा है। तो एक गलत तो हम बोल सकते हैं कि कि गलत एक तो है। एक तो है। ठीक है? लेकिन लेकिन लेकिन और देख लेते हैं। हो सकता है और मिल जाए। फोर क्या फोर अपने आगे वाले से छोटा है? हां, छोटा है। बिल्कुल सही है। फाइव। फाइव क्या अपने आगे वाले से छोटा है? नहीं। फाइव अपने आगे वाले से बड़ा है। तो एक्चुअल में",
+      "source": "caption",
+      "english_text": "Is 2 smaller than the one in front of it? Yes, smaller than the one before it. But is the Six smaller than its predecessor? No. No. No. So we got a wrong one here. What went wrong there? The Six should have been smaller than the one ahead of it. But the Six is ​​bigger than its predecessor. So we can say that there is one wrong. There is one. Ok? But but but and let's see. It is possible that more may be found. Four Is four smaller than the one in front of it? Yes, it is small. That's absolutely correct. Five. Is five smaller than the one next to it? No. Five is bigger than the one ahead of it. so in actual"
+    },
+    {
+      "start_time": 1382.799,
+      "end_time": 1415.51,
+      "text": "एक गलत पॉइंट नहीं है। दो गलत पॉइंट क्रिएट हो गया। आप दो को स्वाइप किए ना तो ऐसा नहीं कि एरे बस एक जगह से बिगड़ा है। दो अलग-अलग पॉइंट पे एरे बिगड़ गया। उसके बाद थ्री थ्री अपने आगे वाला छोटा है। हां अपने आगे वाले छोटा है। तो यहां पे गलत वन एक एक गलत कहां मिला आपको? एक गलत आपको यहां मिला कि सिक्स फोर से बड़ा हो गया। और दूसरा गलत। दूसरा गलत। दूसरा गलत। गलत टू कहां मिला? गलत टू कहां मिला? आपको यहां मिला। जब फाइव भी थ्री से बड़ा हो गया। तो दो गलत मिल गए। दो गलत मिल गए।",
+      "source": "caption",
+      "english_text": "Not a false point. Two wrong points have been created. Even if you swiped two, it is not that the array is messed up at just one place. The array broke down at two different points. After that, three three is smaller than the one next to it. Yes, the one ahead of you is smaller. So where did you get the wrong one here? One mistake you got here is that six became greater than four. And the second one is wrong. Second wrong. Second wrong. Where did you get the wrong two? Where did you get the wrong two? Found you here. When five became bigger than three. So two got it wrong. Got two wrong."
+    },
+    {
+      "start_time": 1415.52,
+      "end_time": 1450.23,
+      "text": "आइए देखते हैं कैसे हमेशा आपको दो ही गलत मिलता है। अच्छा एक बार ऐसा आपको पता चल गया। एक बार ऐसा आपको पता चल गया तो मान लीजिए कि दो गलत मिला है। अब दो गलत कैसा है कि ये वाला एलिमेंट अपने आगे वाले से बड़ा है। तो अगर हम इन चारों को ये जो चार सर्कल हैं ये जो चार सर्कल हैं इसको हम ऐसे लिख दें कि जो गलत वन का फर्स्ट है जो गलत वन का फर्स्ट है वो क्या है? वो क्या है? सिक्स। वो क्या है? सिक्स। गलत वन का सेकंड क्या है? गलत वन का फर्स्ट सेकंड मतलब कि कहां वो मिला? और उसमें फर्स्ट सेकंड क्या थे? आप यही किए होंगे ना गलत निकालने के लिए कि एरे ऑफ़ i शुड बी ग्रेटर",
+      "source": "caption",
+      "english_text": "Let's see how you always get two wrong. Well once you know this. Once you find this out, consider that you have got two wrong ones. Now how are the two wrong that this element is bigger than the one before it? So if we write these four circles, these four circles, what is the first one, which is the first one? What is that? Six. What is that? Six. What is the wrong one's second? The first second of the wrong one means where was it found? And what were the first seconds in that? This is what you must have done to get it wrong that the array of i should be greater."
+    },
+    {
+      "start_time": 1450.24,
+      "end_time": 1482.23,
+      "text": "दैन एरे ऑफ़ i + 1 तो इसमें ये वाला हो गया फर्स्ट मतलब कि जो लेफ्ट साइड पे है लेफ्ट और राइट भी लिख सकते हैं फर्स्ट सेकंड भी लिख सकते हैं। ठीक है? मन है तो लेफ्ट राइट लिख दीजिए। नहीं तो फर्स्ट सेकंड लिख दीजिए। और ये हो गया सेकंड। इसी को हम बोल रहे हैं कि जो गलत वन हुआ है जो गलत वन हुआ है। देखिए पसीना गिर गया इस पे। बहुत गर्मी हो गया अचानक। जो गलत वन का फर्स्ट है वो क्या है? सिक्स। गलत वन का सेकंड क्या है? फोर। ओके? और गलत टू का गलत टू का फर्स्ट क्या है? गलत टू टू का फर्स्ट है फाइव। और गलत टू का सेकंड क्या है?",
+      "source": "caption",
+      "english_text": "Then in the array of i + 1, this one becomes first, which means that the one which is on the left side can be written as left and right and can also be written as first second. Ok? If you want then write left right. Otherwise write first second. And this is done in seconds. This is what we are saying that the wrong forest has happened, the wrong forest has happened. Look at the sweat that has fallen on it. It suddenly became very hot. What is the first of the wrong ones? Six. What is the wrong one's second? Four. Ok? And what is the first of wrong two? Wrong: The first of two is five. And what is the second of wrong two?"
+    },
+    {
+      "start_time": 1482.24,
+      "end_time": 1515.909,
+      "text": "सेकंड है थ्री। ये आया। अच्छा अब इसमें कौन सा दो नड स्वाइप हुआ था शुरू में? क्या हुआ था? सिक्स और थ्री। सिक्स और थ्री मतलब गलत वन फर्स्ट और गलत टू सेकंड। तो अगर आप इन दोनों को स्वाइप कर देते तो आपको एरे सही हो जाता। इसमें इस एग्जांपल में कम से कम। कम से कम इस एग्जांपल में वो एरे सही हो जाता। एक और एग्जांपल देख लेते हैं। एक और एग्जांपल देख लेते हैं कि क्या हमेशा ऐसा ही होता है क्या? आइए एक और एग्जांपल देख लेते हैं। एक बड़ा एरे थोड़ा बना है। 1 2 3 4 5 6 7 8 ठीक है? ये",
+      "source": "caption",
+      "english_text": "Second is three. here comes. Okay, now which two nudges were swiped in the beginning? What happened? Six and three. Six and three means wrong one first and wrong two second. So if you had swiped both of these, your array would have been correct. At least in this example. At least in this example that array would have been correct. Let us see another example. Let's see another example, does it always happen like this? Let us see another example. A larger array is formed slightly. 1 2 3 4 5 6 7 8 ok? this"
+    },
+    {
+      "start_time": 1515.919,
+      "end_time": 1545.909,
+      "text": "अच्छा एरे है। इसमें हम क्या करते हैं? वन और एट को स्वाइप कर देते हैं। किसको-किसको? वन और एट को स्वाइप कर देते हैं। इसमें क्या बनेगा एरे? सबसे पहले आ जाएगा एट। उसके बाद 2 3 4 5 6 7 और 1 हो गया। ये दोनों स्वाड्ड है। इसमें आपको कोई पूछे कि गलत कितना है? कितना गलत मिलेगा? एक गलत तो ये मिलेगा। आठ अपने आगे वाले से बड़ा हो गया। गलत बात है। सेवन अपने आगे वाले से बड़ा हो गया। तो यहां भी आपको दो गलत मिल गया। यहां भी दो गलत मिल गया।",
+      "source": "caption",
+      "english_text": "Okay, it's fine. What do we do in this? Swipes one and eight. To whom? To whom? Swipes one and eight. What will become of it? First to come is et. After that it became 2 3 4 5 6 7 and 1. Both of them are swaddled. Should anyone ask you how much is wrong in this? How much will it go wrong? If you get one wrong then you will get this. Eight became bigger than the one before it. It is wrong. Seven became bigger than the one before it. So here also you got two wrong. Here also two got it wrong."
+    },
+    {
+      "start_time": 1545.919,
+      "end_time": 1577.19,
+      "text": "यहां भी आइए लिखते हैं। गलत वन और गलत वन का फर्स्ट क्या है भैया? आठ। गलत वन का सेकंड क्या है भैया? टू। वेरी गुड। गलत टू का फर्स्ट क्या है? सात। और गलत टू का सेकंड क्या है? वन। अच्छा। कौन सा दो स्वाप हुआ था? वन और एट। मतलब कि गलत फर्स्ट और गलत वन का फर्स्ट और गलत टू का सेकंड। अगर आप इन दोनों को स्वाप कर दो, आपको आंसर मिल जाएगा। ऊपर भी यही हुआ था।",
+      "source": "caption",
+      "english_text": "Let us write here also. Brother, what is the wrong one and the first one? Eight. What is the wrong one's second brother? To. very good. What is the first of the wrong two? Seven. And what is the second of wrong two? Forest. Good. Which two swaps took place? One and at. Meaning that wrong first and wrong one's first and wrong two's second. If you swap these two, you will get the answer. The same thing happened above."
+    },
+    {
+      "start_time": 1577.2,
+      "end_time": 1610.47,
+      "text": "हां, ऊपर भी यही हुआ था। तो ये पता चल गया कि क्या करना है। अगर आप दोनों गलत खोज लिए गलत वन और गलत टू। गलत वन का फर्स्ट लिख लिया, गलत टू का। अब इसको लिखें कैसे? कुछ नहीं करेंगे अरे। गलत वन का फर्स्ट क्या हो जाएगा? जैसे ही आपको कोई गलत मिलता है, गलत कब मिलता है? अगर एरे ऑफ़ i बड़ा है एरे ऑफ़ i + 1 से तो यही हुआ ना? ये फर्स्ट है। ये सेकंड है। तो गलत वन का फर्स्ट क्या हो गया? एरे ऑफ़ i। और गलत वन का सेकंड क्या हो गया? एरे ऑफ़ इसका इस पे अभी बाद में डिस्कस करेंगे। ये सब ऐसे करेंगे। ये हम अपने मन से नहीं लिख रहे",
+      "source": "caption",
+      "english_text": "Yes, the same thing happened above. So it was known what to do. If you find both wrong, wrong one and wrong two. Wrote the wrong one's first, wrong two's. Now how to write this? Won't do anything hey. What will happen to the wrong one first? As soon as you get something wrong, when does it get wrong? If the array of i is larger than the array of i + 1 then this is what happens, right? This is a first. This is a second. So what happened to the wrong one first? Array of i. And what happened to the wrong one second? We will discuss the array of this later. Will do all this like this. We are not writing this from our heart"
+    },
+    {
+      "start_time": 1610.48,
+      "end_time": 1638.549,
+      "text": "हैं। लेकिन एक हमको पैटर्न दिख रहा है ना कि हमेशा कौन से दो लोग को स्वाइप करने से आपका आंसर आ जाएगा? गलत वन का फर्स्ट और गलत टू का सेकंड। यहां भी गलत वन का फर्स्ट और गलत टू का सेकंड। लेकिन एक छोटा सा ट्विस्ट है यहां पे। यहां तक समझ में आया? बहुत अच्छी बात है। ये डिफिकल्ट था। छोटा सा ट्विस्ट है। अभी तक हम लोग जो स्वपिंग कर रहे थे ना वो दूर-दूर के एलिमेंट का कर रहे थे। थोड़ा देखिए दूर-दूर के एलिमेंट का हम जानबूझ के कर रहे थे। दूर-दूर के एलिमेंट का कर रहे थे। दो एडजेसेंट एलिमेंट को स्वाइप करेंगे तो देखिए क्या होगा। देखिए क्या होगा।",
+      "source": "caption",
+      "english_text": "Are. But we are seeing a pattern that by swiping which two people will always get your answer? Wrong one's first and wrong two's second. Here also wrong one is first and wrong two is second. But there is a small twist here. Did you understand till now? very good thing. This was difficult. There is a small twist. Till now the swapping that we were doing was of distant elements. Look at the remote elements, we were doing it deliberately. Were dealing with distant elements. See what happens if you swipe two adjacent elements. See what will happen."
+    },
+    {
+      "start_time": 1638.559,
+      "end_time": 1670.95,
+      "text": "एडजेसेंट मतलब जो साथ-साथ था उनको स्वाप करने का मतलब अब स्वाप का तो कोई भी हो सकता है ना स्वाप ऐसा थोड़ी आता है कि एडजसेंट नहीं होगा। हो सकता है। आइए 1 2 3 4 5 6 इसमें हम क्या करते हैं? थ्री और फोर को स्वाइप कर देते हैं। थ्री और फोर को भी किया जा सकता है। ऑब्वियसली किया जा सकता है। आइए स्वाइप कर लीजिए। 1 2 4 3 5 6 इसमें देखिए क्या-क्या गलत है। वन वन क्या गलत है? नहीं। वन अपने आगे वाले से छोटा है। टू टू भी अपने आगे वाले से छोटा है। लेकिन फोर अपने आगे वाले से बड़ा है।",
+      "source": "caption",
+      "english_text": "Adjacent means to swap those who were together. Now swap can be anything, nor does swap come in such a way that it will not be adjacent. It is possible Let's 1 2 3 4 5 6 What do we do in this? Swipes three and four. Three and four can also be done. Can be done obviously. Let's swipe. 1 2 4 3 5 6 See what is wrong in this. One One What's wrong? No. The forest is smaller than the one ahead of it. Too Too is also smaller than its predecessor. But Four is bigger than the one in front of him."
+    },
+    {
+      "start_time": 1670.96,
+      "end_time": 1705.19,
+      "text": "तो 4 3 तो इसमें आपको क्या मिल गया? गलत वन का फर्स्ट क्या मिल गया आपको? फोर मिल गया। गलत वन का सेकंड क्या मिल गया आपको? थ्री मिल गया। वेरी गुड। अब आगे चलिए। गलत टू ढूंढ लें। थ्री क्या आपने आगे वाले से बड़ा है ना? फाइव क्या आपने आगे वाले से बड़ा है? ना। सिक्स का तो कोई आगे वाला है नहीं। तो देखिए बहुत इंपॉर्टेंट चीज हुआ। यहां पे आपको गलत टू का फर्स्ट और गलत टू का सेकंड ये तो मिला ही नहीं। ये तो मिला ही नहीं। क्यों नहीं मिला? क्योंकि जब आप",
+      "source": "caption",
+      "english_text": "So 4 3 So what do you get in this? Did you get the first one from the wrong one? Got four. What second of the wrong one did you get? Got three. very good. Now let's move ahead. Find the wrong two. Three Is it bigger than the one in front of you, right? Five Is it bigger than the one next to you? No. There is no one ahead of six. So see, a very important thing happened. Here you did not get the first wrong two and the second wrong two. This was not found at all. Why not found? because when you"
+    },
+    {
+      "start_time": 1705.2,
+      "end_time": 1738.71,
+      "text": "एडजेसेंट एलिमेंट को स्वाइप करते हैं ना उसमें आपको बस दो ही गलत गलत वन मिलता है। गलत वन का फर्स्ट और सेकंड। गलत वन तो मिलता ही मिलता है। स्वाइप करेंगे कुछ ना कुछ गलत तो होगा ही होगा। लेकिन यहां पे आपको दो गलत नहीं मिला। ऊपर में आपको दो दो पॉइंट ऐसा मिलता था जहां पे एरे टूटता था। तो उसमें आप फर्स्ट सेकंड फर्स्ट सेकंड तो चार चीजें मिल जाती थी। दो जोड़े मिल जाते थे। यहां पे आपको बस एक ही गलत पॉइंट मिल रहा है जो कि इन दोनों का है। गलत टू का मिल ही नहीं रहा है। तो अगर किसी केस में आपको गलत टू फर्स्ट और गलत टू सेकंड मिला ही नहीं। मिला ही नहीं तो आप क्या करेंगे? सिंपल इन दोनों को ही",
+      "source": "caption",
+      "english_text": "When you swipe the adjacent element, you get only two wrong wrong ones. First and second of the wrong one. Wrong forest is always found. If you swipe, something wrong will definitely happen. But here you did not get two wrongs. At the top you would find two points where the array broke. So in that you could get four things in the first second. Two couples used to meet. Here you are finding only one wrong point which is between these two. Can't find the wrong two. So if in any case you did not get wrong first and wrong second. What will you do if you don't get it? simple these two"
+    },
+    {
+      "start_time": 1738.72,
+      "end_time": 1771.19,
+      "text": "स्वाइप कर दीजिए। फोर और थ्री फोर और थ्री हुआ था ना स्वाप। इन दोनों को स्वाइप कर दीजिए। इन दोनों को स्वाप कर दीजिए। ये कैसे पता चलेगा? एक काउंटर ले लेंगे। गलत काउंटर ले लेंगे। गलत = 0 पे रहेगा। गलत = 0 पे रहेगा। जैसे ही आपको कोई गलत मिलता है, अगर गलत पहले से जीरो है तो गलत वन फर्स्ट और गलत वन सेकंड को अपडेट कर दीजिए और गलत को प्लस प्लस कर दीजिए। अगर आपको मिलता है और उसमें गलत वन है एक और गलत पॉइंट मिल जाता है मतलब ये दूसरा है। इन दोनों को अपडेट कर दीजिए और गलत को प्लस प्लस करके टू बना दीजिए। अब बाहर आके चेक कर लीजिए कि अगर आपको एक ही गलत मिला है।",
+      "source": "caption",
+      "english_text": "Swipe up. Four and three, four and three, there was a swap. Swipe both of these. Swap these two. How will this be known? Will take a counter. Will take the wrong counter. False = will remain at 0. False = will remain at 0. As soon as you find a wrong, if wrong is already zero then update wrong one first and wrong one second and change wrong to plus plus. If you get one and it has a wrong one, you get another wrong point, that means it is the second one. Update both of these and make the wrong one two by adding plus plus. Now come out and check if you get even one wrong."
+    },
+    {
+      "start_time": 1771.2,
+      "end_time": 1805.029,
+      "text": "एक तो मिलेगा ही मिलेगा। ऐसा हो ही नहीं सकता गलत ना मिले। तो अरे सॉर्टेड को आप इधर-उधर कर रहे हैं मिलेगा ही। अगर गलत वन मिल रहा है। किसको सॉल्व करना है? इन दोनों को। क्योंकि इसका मतलब है कि दूसरा गलत है ही नहीं। एडजेसेंट एलिमेंट को स्वाइप किया गया था। अगर गलत इज़ इक्वल इक्वल टू टू मिल रहा है तो दूर-दूर के एलिमेंट को स्वाइप किया गया था। तो क्या करना है? गलत वन के फर्स्ट और गलत टू के सेकंड को कर देना है। इसको अगर हम लिखें अब हम उम्मीद करते हैं कि आपको समझ में आ गया होगा कि करना क्या है? ये पूरा चीज किस पे हुआ है? एरे पे। आपके पास जब आप एरे है तो आप ये काम करते हैं। तो आइए उसी का पहले कोड लिख के देख लेते हैं कि कोड",
+      "source": "caption",
+      "english_text": "You will definitely get one. It is impossible not to get it wrong. So, if you are searching here and there for Sorted, you will definitely get it. If you are getting the wrong forest. Which one needs to be solved? To both of them. Because it means that the other person is not wrong. The adjacent element was swiped. If false is equal to two then the farthest element was swiped. So what to do? The wrong one has to be done first and the wrong two has to be done second. If we write this now, we hope that you would have understood what to do? Who has this whole thing happened to? Here on. This is what you do when you have an array. So let's first write the same code and see whether the code"
+    },
+    {
+      "start_time": 1805.039,
+      "end_time": 1832.87,
+      "text": "में क्या होता है? कोड में असली में होगा क्या? तो सबसे पहला काम हम क्या करेंगे कि हमारा जो बीएसटी है ना उसको एक सॉर्टेड एरे सॉर्टेड या जो भी उसका इनऑर्डर उसका बेसिकली इनऑर्डर इनऑर्डर वेक्टर बना लेंगे या एरे बना लेंगे। कैसे आता है आपको बनाने? आता है। बहुत बार बता चुके हैं। अभी-अभी तुरंत बताए हैं। उसका वेक्टर बना लिए। मान लीजिए आपके पास एक वेक्टर है। मान लीजिए आपके पास एक वेक्टर है तो क्या करेंगे? तो क्या करेंगे? आइए अब देखते हैं। आपके पास एक वेक्टर आ चुका है। सबसे पहले क्या करेंगे? इंट।",
+      "source": "caption",
+      "english_text": "What happens in? What will actually happen in the code? So the first thing we will do is make our BST a sorted array or whatever its inorder is, basically make it an inorder vector or make it an array. How do you know how to make it? Comes. Have told this many times. Just told immediately. Make its vector. Suppose you have a vector. Suppose you have a vector, what will you do? So what to do? Let us see now. You have a vector. What will you do first? Int."
+    },
+    {
+      "start_time": 1832.88,
+      "end_time": 1859.669,
+      "text": "अब ऑब्वियस सी बात है कि अगर बीएसटी में दो सर्कल स्वाप हुआ है तो इस एरे में भी सेम बात है। दोनों सेम बात है। सॉर्टेड एरे में दो स्वाप हो चुके हैं। हो सकता है एडजेसेंट वाले स्वप हुए हो जिसमें एक ही गलत मिले। हो सकता है दूर-दूर वाले स्वाप हुए हो जिसमें दो गलत मिले। तीन गलत नहीं मिलेगा। डिफरेंट परमटेशन कॉम्बिनेशन लगा लीजिए। तीन गलत नहीं मिलेगा। ठीक है? गलत = 0। अब आपको कितने चीज़ें चाहिए? आप चार चीज़ें ले लीजिए। आप चार चीज़ें ले लीजिए। इंट इसको हम लिख देते हैं G1 का फर्स्ट।",
+      "source": "caption",
+      "english_text": "Now it is obvious that if two circles have been swapped in BST then the same thing happens in this array also. Both are same thing. Two swaps have taken place in the sorted array. It is possible that there may have been a swap with the adjacent ones in which only one was found wrong. There may have been far-flung swaps in which two got wrong. Three won't go wrong. Use different permutation combinations. Three won't go wrong. Ok? False = 0. How many things do you need now? You take four things. You take four things. We write this as int first of G1."
+    },
+    {
+      "start_time": 1859.679,
+      "end_time": 1891.43,
+      "text": "मतलब गलत वन का फर्स्ट। इसको शुरू में आप कुछ मत दीजिए। कोई वैल्यू मत ही दीजिए। और इसमें हम क्या करते हैं? आपको चार चीजें चाहिए ना। तो G1 का फर्स्ट हो गया। G1 का सेकंड हो गया। अब गलत टू का फर्स्ट हो गया। इसको आप नाम अपने हिसाब से कर लीजिएगा। लेफ्ट राइट कर लीजिएगा। और गलत टू का सेकंड हो गया। वेरी गुड। अब आइए लूप करें। आप क्या चेक करना चाहते हैं? अगर एरे ऑफ़ i बड़ा हो गया अपने आगे वाले से, तो ये क्या होता है? ये गलत है। इसमें ये क्या होता है? इसका फर्स्ट और ये इसका",
+      "source": "caption",
+      "english_text": "Meaning wrong one's first. Don't give him anything in the beginning. Don't give any value. And what do we do in this? You need four things, right? So G1's first. G1's second. Now the wrong two has become the first. You can name it as per your choice. Do left and right. And the second of the wrong two happened. very good. Now let's loop. What do you want to check? If the array of i becomes larger than the one before it, what happens? This is wrong. What happens in this? its first and this its"
+    },
+    {
+      "start_time": 1891.44,
+      "end_time": 1920.549,
+      "text": "सेकंड। तो उसी हिसाब से लूप चलाइए। i = 0 i &lt; मान लेते हैं कि हमारा जो एरे है उसका नाम a है। a डॉट साइज a कहां से बना है? बीएएसटी से बना है। -1 लास्ट तक मत जाइए क्योंकि यहां पे आप i + 1 कर रहे हैं ना उधर क्रैश कर जाएगा आप लास्ट इंडेक्स पहले रुक जाइए। क्योंकि लास्ट इंडेक्स के आगे तो कोई है नहीं। तो क्या चेक करेंगे? I प्लस प्लस अब अब देखिए इफ एरे ऑफ़ i बड़ा हो जाए अपने आगे वाले से तो मतलब ये गलत है।",
+      "source": "caption",
+      "english_text": "sec. So run the loop accordingly. i = 0 i < Let's assume that the name of our array is a. Where is the dot size a derived from? Made of BAST. -1 Do not go till the last because here you are doing i + 1 and there it will crash. Stop at the last index first. Because there is no one before the last index. So what will you check? I plus plus Now see if the array of i becomes bigger than the one before it then it means it is wrong."
+    },
+    {
+      "start_time": 1920.559,
+      "end_time": 1955.509,
+      "text": "साफ-साफ मतलब है कि ये गलत है। लेकिन कौन सा गलत है? ये अंदर देखेंगे इसको। इफ अगर गलत इक्वल इक्वल टू ज़ीरो है। अगर गलत अभी तक ज़ीरो है जो कि ज़ीरो था। मतलब कि यह कौन सा? यह पहली गलती है। यह पहली गलती है। तो, क्या करेंगे हम लोग? G1 फर्स्ट = एरे ऑफ़ I ओके G1 सेकंड इक्वल टू एरे ऑफ़ i + 1 और गलत प्लस प्लस अब गलत हो चुका है। अब गलत वन हो जाना चाहिए। ठीक है? एल्स एल्स एल्स इसका क्या मतलब? इसका एक ही मतलब हो सकता है कि अगर",
+      "source": "caption",
+      "english_text": "It clearly means that this is wrong. But which one is wrong? Will see this inside. If if false is equal to zero. If wrong is still zero which was zero. Meaning which one is this? This is the first mistake. This is the first mistake. So, what should we do? G1 first = array of i OK G1 second equal to array of i + 1 and wrong plus plus is now wrong. Now it must be the wrong forest. Ok? Else Else Else What does this mean? This can only mean that if"
+    },
+    {
+      "start_time": 1955.519,
+      "end_time": 1989.909,
+      "text": "गलत ज़ीरो नहीं है तो गलत वन है। मतलब आपको दूसरी गलती मिल चुकी है। तो दूसरी गलती मिल चुकी है। तो g2 फर्स्ट इसका मतलब पहला वाला गलती हो चुकी है। उसका पेअर बन चुका है। दूसरी गलती को अपडेट कर दो। दूसरी गलती को अपडेट कर दो। और g2 सेकंड इक्वल टू एरे ऑफ़ i + 1 ठीक है? गलत प्लस प्लस कर भी सकते हैं? नहीं। हां, कर दीजिए। हां, कर दीजिए। क्योंकि लास्ट में हम लोग चेक करेंगे। गलत प्लस प्लस ये हो गया और ये हो गया। और ये फॉर लूप बंद हो गया। फॉर लूप बंद हो गया। इसके बाद इसके बाद अब चेक कीजिए हम क्या बोले एक गलती तो मिलेगी ही मिलेगी अगर अगर",
+      "source": "caption",
+      "english_text": "If it is not a wrong zero, it is a wrong one. Meaning you have found another mistake. So the second mistake has been found. So g2 first means the first one has been a mistake. Its pair has been made. Please update the second mistake. Please update the second mistake. And g2 second equal to array of i + 1 right? Can you also do wrong plus plus? No. Yes, do it. Yes, do it. Because we will check last. Wrong plus plus this happened and this happened. And this for loop stopped. The for loop stopped. After this, now check what we said, you will definitely get a mistake if if"
+    },
+    {
+      "start_time": 1989.919,
+      "end_time": 2016.95,
+      "text": "गलत अगर गलत वन सॉरी गलत गलत मतलब कितनी बार गलत हुआ है इज इक्वल इक्वल टू वन मतलब एक ही गलती हुई है एक ही गलती हुई है अभी इसको स्वाइप करना था ऑब्वियसली एक ही गलती में जी गलत टू तो होगा नहीं कुछ गलत वन ही होगा इन दोनों को स्वाइप करना था इन दोनों को स्वाइप करना था तो इसमें हम क्या करेंगे इसमें हम कुछ कर सकते हैं कि G1 फर्स्ट फर्स्ट और G1 का सेकंड। ठीक है ना?",
+      "source": "caption",
+      "english_text": "Wrong if wrong one sorry wrong wrong means how many times it has gone wrong is equal equal to one means only one mistake has been made only one mistake has been made now this one had to be swiped Obviously in one mistake only two is wrong then nothing wrong will happen only one will happen if both of them were to be swiped if these two were to be swiped then what will we do in this We can do something in this that G1 is first first and G1 is second. ok right?"
+    },
+    {
+      "start_time": 2016.96,
+      "end_time": 2051.43,
+      "text": "हो गया स्वाइप। एल्स एल्स अगर ऐसा नहीं है। दो गलती हुई है। दो गलती में किसमें किस में मिला था पैटर्न? कहां? हां। G1 का फर्स्ट और G2 का सेकंड। तो इनको स्वाइप कर दीजिए। इनको स्वाइप कर दीजिए। G1 का फर्स्ट और G2 का सेकंड। यस। G2 का सेकंड। वेरी गुड। और रिटर्न कर दीजिए। तो ये एरे के लिए तो सॉल्व हो गया। ये देख लीजिए कोड। ये बड़ा सिंपल कोड है। हम उम्मीद करते हैं कि इसमें तो कोई डाउट नहीं होगा कि ऐसा क्यों किए बड़ा सिंपल सा एक्सप्लेनेशन से हो जाएगा। अब अब वही बात आती है कि आप ऐसा कर सकते हैं। इसको कर सकते हैं। बीएसटी को ट्री बना लिए वैसा",
+      "source": "caption",
+      "english_text": "Swipe is done. Else else if it is not so. Two mistakes have been made. In which of the two mistakes was the pattern found? Where? Yes. G1's first and G2's second. So swipe them. Swipe them up. G1's first and G2's second. Yes. G2's sec. very good. And return it. So this is solved for the array. Look at this code. This is a very simple code. We hope that there will be no doubt as to why this was done with a very simple explanation. Now it comes to the fact that you can do this. Can do this. It's like turning BST into a tree."
+    },
+    {
+      "start_time": 2051.44,
+      "end_time": 2084.629,
+      "text": "वैसा कर दें। लेकिन इसमें सेम प्रॉब्लम आएगी। इंटरव्यूअर बोलेगा कि ये जो एरे बना रहे हो ना ये जो एरे आप बना रहे हैं ये बनाइए मत। कहीं और से कीजिए। मतलब बीएसटी में ही कीजिए। जो काम वैलिडेट में आया था ना वैलिडेट में जो प्रॉब्लम था कि एरे बनाइए मत। जो काम कर रहे हो ना एरे में वो बीएसटी में कर लो। प्रव लेके करो या कुछ भी लेके करो वो बीएसटी में ही करो इन ऑर्डर के दौरान करो आइए इन ऑर्डर के दौरान करते हैं आइए अब इन ऑर्डर के दौरान करने के लिए यहां पे तो सेम सेम फार्मूला अप्लाई करेंगे तो हम लोग क्या करेंगे ना ऊपर में देखिए हम क्या करेंगे कोड लिख",
+      "source": "caption",
+      "english_text": "Do that. But same problem will arise in this. The interviewer will say, don't make this array that you are making. Do it from somewhere else. Meaning do it in BST only. The problem that came in Validate was that do not create an array. Whatever work you are doing in Air, do it in BST. Do it by taking Prav or taking anything, do it in BST only. Let's do it during these orders. Let's do it during these orders. Now to do it during these orders, if we apply the same formula here, then what will we do? See above, what will we do? Write the code."
+    },
+    {
+      "start_time": 2084.639,
+      "end_time": 2117.75,
+      "text": "लेते हैं ड्राई रन कर देंगे सिमिलर सिमिलर जो एरे में कर रहे हैं वही इनऑर्डर का दौरान कर लेंगे सबसे पहले आप जानते हैं क्या चाहिए प्रीवियस चाहिए एक क्या चाहिए प्रीवियस चाहिए क्यों क्योंकि आप रूट और प्रीवियस को देखिएगा इसमें आप आई और i + 1 को देख रहे हैं तो उसमें आप रूट और प्रीवियस को देख लीजिएगा। तो एक प्रीवियस तो चाहिए। नोड स्टार प्रीवियस इज़ इक्वल टू नल। अब आपको चार चीजें चाहिए। ऊपर भी चार चीजें लिए थे ना g1 का g2 इधर-उधर। अब यहां पे तो इंटीजर लिए थे क्योंकि एरे में इंटीजर है लेकिन बाइनरी सर्च स्ट्रीम में इंटीजर नहीं है। उसमें बड़ा-बड़ा सर्कल",
+      "source": "caption",
+      "english_text": "Let's take a dry run, we will do similar similar in the array, we will do the same during in-order. First of all, you know what is required, the previous one, what is required is the previous one, why because you will look at the root and the previous, in this you are looking at i and i + 1, then in that you will look at the root and the previous. So a previous one is needed. Node Star Previous Is Equal To NULL. Now you need four things. Above also four things were taken, G1, G2 here and there. Now here we used integers because there are integers in the array but there are no integers in the binary search stream. big circle in it"
+    },
+    {
+      "start_time": 2117.76,
+      "end_time": 2149.75,
+      "text": "है। नोड है। नोड है। तो क्या कीजिए? वही चार चीजें ले लीजिए। नोड स्टार g1 फर्स्ट इज़ इक्वल टू नल। शुरू में नल रहने दीजिए। नोड स्टार G1 का सेकंड इक्वल टू नल। उम्मीद करते हैं कि नेमिंग कन्वेंशन आपको आ रहा होगा। हम मेरा हमको ये अच्छा लगता है ऐसा करने में। आप चाहते हो तो कुछ और भी दे सकते हैं अपनी मर्जी से। G2 का फर्स्ट मतलब गलत हुआ। एक और नल और G2 का सेकंड नल। वही काम है जो वहां था।",
+      "source": "caption",
+      "english_text": "Is. is node. is node. So what to do? Take the same four things. Node star g1 first is equal to null. Let it be tap initially. Node star G1's second equal to null. Hope you've got the naming convention coming. We, mine, we feel good doing this. If you want, you can give something else as per your wish. The first meaning of G2 went wrong. Another tap and a second tap of G2. It's the same work that was there."
+    },
+    {
+      "start_time": 2149.76,
+      "end_time": 2176.069,
+      "text": "ठीक है? ऊपर में ले लिए। वेरी गुड। ले लिए। आइए इन ऑर्डर स्टार्ट करते हैं और देखते हैं कि क्या कर सकते हैं। इन ऑर्डर स्टार्ट करिए वॉइड अपना नाम दे दीजिए इसका नाम फन दे देते हैं वॉइड का फन और नोड स्टार रूट। ठीक है? सबसे पहले तो अगर रूट नल है तो कुछ करना ही नहीं है भैया। रिटर्न।",
+      "source": "caption",
+      "english_text": "ok? Took in above. very good. Took it. Let's start these orders and see what we can do. In this order, start the void, give it your name, give it the name Fun, the fun of the void and node star root. Ok? First of all, if there is a root tap then there is nothing to be done. Return."
+    },
+    {
+      "start_time": 2176.079,
+      "end_time": 2202.79,
+      "text": "ठीक है? इन ऑर्डर का सबसे पहला काम क्या होता है? लेफ्ट वाले को दे दो मौका। लेफ्ट वाले को दे दो। दे दो। रूट के लेफ्ट को दे दो। हो गया लेफ्ट। अब आइए अब अपनी प्रोसेसिंग करते हैं। सबसे पहले तो सबसे पहले तो सेम चीज जो वैलिडेट में किए थे। अगर प्रीवियस नल है। अगर प्रीवियस नल है। अब देखिए इसमें हम लोग क्या चेक करेंगे? इसमें हम लोग क्या चेक करेंगे? सॉर्टेड ऑर्डर में हम लोग क्या चेक कर रहे थे? ऊपर एरे में i को i + 1 से चेक कर रहे थे।",
+      "source": "caption",
+      "english_text": "ok? What is the first task of these orders? Give a chance to the one on the left. Give it to the one on the left. Give it. Give to the left of the root. Done left. Now let's do our processing. First of all, the same thing that was done in Validate. If previous is null. If previous is null. Now see what will we check in this? What will we check in this? What were we checking in sorted order? In the above array i was checked with i + 1."
+    },
+    {
+      "start_time": 2202.8,
+      "end_time": 2235.51,
+      "text": "इसमें उल्टा कर लेंगे। इसमें उल्टा कर लेंगे। ऐसे मान लीजिए ये आपका है 0 1 अगर i ऐसा है ना तो ये गलत कब हो जाएगा? जब ये अपने पीछे वाले से सॉर्टेड एरे में i को i - 1 से बड़ा होना चाहिए था लेकिन अगर कोई एलिमेंट अपने पीछे वाले से छोटा हो जाए छोटा हो जाए तो वो गलत हो जाएगा तो वो क्या हो जाएगा गलत हो जाएगा मतलब अगर रूट अगर रूट वैलिडेट में सेम हुआ था सॉर्टेड एरे में गलती कैसे देखते हैं छोटा हो जाए प्रीवियस के डेटा से तो वो गलती में काउंट हो जाएगा तो वो क्या हो जाएगा गलती में",
+      "source": "caption",
+      "english_text": "Will reverse this. Will reverse this. Suppose this is yours 0 1 If i is like this then when will it go wrong? When in a sorted array, i should have been greater than i - 1 than the one behind it, but if any element becomes smaller than the one behind it, then it will become wrong, then what will happen, it will become wrong, meaning if the root, if the root was the same in the valid, how to see the mistake in the sorted array, if it becomes smaller than the previous data, then it will be counted as mistake, then what will happen in the mistake."
+    },
+    {
+      "start_time": 2235.52,
+      "end_time": 2267.91,
+      "text": "काउंट हो जाएगा तो अगर प्रीवियस नल है तब तो कोई काम ही नहीं है तब तब तो आप क्या कीजिए कि प्रीवियस इज़ इक्वल टू रूट बना लीजिए। आप कुछ नहीं कर सकते ना क्योंकि इसके पीछे कोई था ही नहीं। पहला नोड है सेम वैलिडेट। एल्स एल्स एल्स। Okay। अब अब कुछ ना कुछ है। आइए गलती पहचानते हैं। इफ रूट का डेटा रूट के डेटा को प्रीवियस और रूट रूट प्रीवियस के आगे है। तो रूट को इससे बड़ा होना चाहिए था सॉर्टेड के लिए। लेकिन अगर ये इससे छोटा पाया जाए। अगर ये इससे छोटा",
+      "source": "caption",
+      "english_text": "Once the count is done then if the previous is null then there is no work then what you should do is make the previous is equal to root. You can't do anything because there was no one behind it. The first node is Same Validate. Else Else Else. Okay. Now there is something. Let us recognize the mistake. If root's data is prior to root's data and if root is prior to root's data. So the root had to be bigger than this for sorted. But if it is found to be smaller than this. if it is smaller than"
+    },
+    {
+      "start_time": 2267.92,
+      "end_time": 2302.39,
+      "text": "पाया जाए। वेरी गुड। इसको हम लोग क्या बोलते हैं? गलती। गलती। यह गलती हो चुकी है। अब सेम काम कीजिए। ऊपर एक गलत का भी ये ले लीजिए। इंट हम इसको सिंपल बनाने के लिए एकदम सिंपल। गलत = 0 सेम काम कीजिए। इफ गलत = 0 मतलब कि क्या अपडेट होना चाहिए? g1 फर्स्ट और g1 सेकंड। मतलब पहली गलती है आपकी। आपकी पहली गलती है। अब बहुत ध्यान से देखिए। रूट यहां है मतलब रूट इन ऑर्डर में बाद में आया है और प्रीवियस इससे पहले",
+      "source": "caption",
+      "english_text": "To be found. very good. What do we call this? Mistake. Mistake. This mistake has been made. Now do the same work. Take this one of the wrong one above. Int we made it very simple to make it simple. Incorrect = 0 cm of work. If false = 0 means what should be updated? g1 first and g1 second. Meaning, the first mistake is yours. Your first mistake. Now look very carefully. Root is here means root comes later in this order and previous comes before it."
+    },
+    {
+      "start_time": 2302.4,
+      "end_time": 2335.03,
+      "text": "वाला नोड है तो प्रीवियस है फर्स्ट और रूट क्या है सेकंड रूट क्या है सेकंड गलती यही हुई है ना कि रूट को प्रीवियस से बड़ा होना चाहिए था लेकिन रूट प्रीवियस से छोटा हो गया तो क्या है ये गलती क्या है ये गलती फर्स्ट और सेकंड ये गलती क्या है प्रीवियस है आपका फर्स्ट और रूट है आपका सेकंड सेम गलती है ये देखिए सेम ये वाली गलती है। ये वाली गलती है। ये आपका रूट है और ये आपका प्रीवियस है। ठीक है? ये आपका यहां पे रूट है और ये आपका प्रीवियस है।",
+      "source": "caption",
+      "english_text": "If the first node is the previous one and what is the root second, what is the second root? The mistake that has happened is that the root should have been bigger than the previous one but the root has become smaller than the previous one. So what is this mistake? What is this mistake? First and second. What is this mistake? Previous is your first and root is your second. See, this is the same mistake. This one is a mistake. This is your route and this is your previous. Ok? This is your pay route here and this is your previous one."
+    },
+    {
+      "start_time": 2335.04,
+      "end_time": 2369.349,
+      "text": "तो रूट जो है ना वो प्रीवियस से छोटा हो गया। यहां पे गलती हो गई। तो फर्स्ट कौन होगा? प्रीवियस। सेकंड कौन होगा? रूट। तो अगर गलत इक्वल इक्वल टू ज़ीरो है। मतलब ये आपकी पहली गलती होने वाली है। तो G1 फर्स्ट इक्वल टू प्रव और g1 सेकंड इक्वल टू रूट। और क्या करेंगे? गलत प्लस प्लस अब हो गया ना ये गलती गलत प्लस प्लस वेरी गुड अब इसके नीचे इसके नीचे यहीं पे लिख दें क्या इसके नीचे लिखते हैं चलो एल्स एल्स एल्स का एक ही मतलब हो सकता है कि आपकी ये दूसरी गलती है सेम काम सेम काम",
+      "source": "caption",
+      "english_text": "So the root is shorter than the previous one. A mistake was made here. So who will be first? Previous. Who will be second? Root. So if wrong is equal to zero. Meaning this is going to be your first mistake. So G1 first equal to prow and g1 second equal to root. What else will you do? Wrong Plus Plus Now this mistake is done, Wrong Plus Plus Very Good Now below this, write here below this, what do we write below this, let's write else else else else can only mean one thing, this is your second mistake, same work, same work."
+    },
+    {
+      "start_time": 2369.359,
+      "end_time": 2403.67,
+      "text": "करना है लेकिन अब G2 के लिए करना है G2 फर्स्ट इक्वल टू प्रव और G2 सेकंड इक्वल टू रूट और गलत प्लस प्लस अब ये दूसरी गलती हो गई आपकी दूसरी गलती एल्स बंद कर दिए अब गल गलती वाला पार्ट बंद कर दीजिए और ये अपना एक और एल्स बंद कर दीजिए। ये वाला एल्स है। ब्रैकेट का देख लीजिएगा। हम कोड को छोटा करके दिखा देंगे। हो गया। पूरी प्रोसेसिंग हो गई। पूरी प्रोसेसिंग अभी नहीं हुई है। पूरी प्रोसेसिंग नहीं हुई है। ये काम करने से पहले अगले में जाने से पहले आपको एक और बार यहां पे प्रीवियस इज़ इक्वल टू रूट कर",
+      "source": "caption",
+      "english_text": "But now for G2 we have to do G2 first equal to prove and G2 second equal to root and wrong plus plus now this is the second mistake, your second mistake, close the others, now close the part with the wrong mistake and this is your another mistake, close the others. This one is Else. Take a look at the bracket. We will shorten the code and show it. Done. Complete processing is done. Complete processing has not been done yet. Complete processing has not been done. Before doing this, before going to the next one, you should go through the previous is equal to route one more time."
+    },
+    {
+      "start_time": 2403.68,
+      "end_time": 2438.47,
+      "text": "देना चाहिए। अब ये बंद हुआ। क्योंकि क्यों कर रहे हैं? वैलिडेट में भी किया था ना। प्रीवियस इक्वल टू रूट लास्ट में कर दीजिएगा। अगले बार काम आएगा। अब पूरी प्रोसेसिंग खत्म। अब अपने राइट चाइल्ड को मौका दीजिए। अब अपने राइट चाइल्ड को कोड थोड़ा लेंदी है। हार्ड नहीं है ना? ऊपर जो था वही कर रहे हैं। पूरा कोड छोटा करके दिखा देंगे कैसे? और ड्राई रन भी कर देंगे। और ये बंद कर दीजिए। अब मेन फंक्शन से कैसे कॉल करेंगे आप इसको? मेन फंक्शन से क्या कॉल करेंगे? अपना फन और रूट कॉल करेंगे। अब सेम काम सेम काम। अगर अब जब ये पूरा चलेगा तो गलत अपडेट हो जाएगा। सब अपडेट हो जाएगा। अगर आपको पता चलता है कि",
+      "source": "caption",
+      "english_text": "should give. Now it is closed. Because why are you doing it? Did it in Validate also, right? Make the previous equal to the root last. Will be useful next time. Now the entire processing is over. Now give a chance to your right child. Now add some code to your right child. Not hard, right? Doing the same as above. How will you shorten the entire code and show it? And will also do a dry run. And stop this. Now how will you call this from the main function? What will you call from main function? Will call our fun and route. Now same work, same work. If now when it runs completely then wrong update will happen. Everything will be updated. If you find out that"
+    },
+    {
+      "start_time": 2438.48,
+      "end_time": 2466.069,
+      "text": "एक ही बार गलती हुई है, एक ही बार गलती हुई है तो किसको स्वाइप करते हैं हम लोग? G1 फर्स्ट और G2 सेकंड। क्योंकि G2 तो G2 तो इसमें होगा ही नहीं क्योंकि एक ही गलती हुई है। इसमें डायरेक्ट हम लोग सॉरी इसको स्वाइप नहीं करना है। नोड के डेटा को स्वाइप करना है। नोड के ये याद रखिएगा कि दोनों नोड पॉइंटर्स हैं। दोनों चारों नोड पॉइंटर्स हैं। तो आपको G1 फर्स्ट के डेटा को इसका मतलब क्या होता है? हम बताते हैं। और G1 सेकंड के डेटा को स्वाइप कर देना चाहिए।",
+      "source": "caption",
+      "english_text": "If a mistake has been made only once, if a mistake has been made only once then whom do we swipe? G1 first and G2 second. Because G2 will not happen in this because only one mistake has been made. We are sorry, don't swipe it directly. The node's data is to be swiped. Remember that both nodes are pointers. Both four nodes are pointers. So what does this mean to you G1 First data? We tell. And the G1 seconds data should be swiped."
+    },
+    {
+      "start_time": 2466.079,
+      "end_time": 2498.95,
+      "text": "स्वप इसका मतलब कि दोनों सर्कल का जो नंबर लिखा हुआ है ना मिटा के इधर-उधर लिख दो हो गया स्वप एल्स एल्स एल्स इस एल्स का मतलब कि दो गलती हो गई है तो किसको-किसको स्वाइप करना पड़ेगा आपको G1 फर्स्ट के डेटा को और G2 सेकंड के डेटा को G2 जैसा कि हम लोग ऊपर देख चुके हैं कि वही करना होता है। बस ये होने के बाद आप रिटर्न कर सकते हैं। यह कोड छोटा करके देख लीजिए। ऐसा लग रहा है। ज्यादा बड़ा नहीं है। मतलब इतना बड़ा तो करना ही चाहिए भाई। यह देख लीजिए। ये आपका कोड लग रहा है। देखिए ये आपका कोड इसका कोड कमेंट में आपको मिल जाएगा दोनों का वैलिडेट और इसका दोनों का",
+      "source": "caption",
+      "english_text": "Swap means that the number written in both the circles is erased and written here and there. Swap is done. Else Else Else. This Else means that if two mistakes are made then who will have to swipe. You will have to swipe the data of G1 first and the data of G2 second as G2. As we have seen above, the same has to be done. Only after this is done you can return. Try shortening this code. It appears like that. Not very big. Meaning, it should be made this big, brother. Take a look at this. This looks like your code. See this is your code, you will get its code in the comment, both its valid and its"
+    },
+    {
+      "start_time": 2498.96,
+      "end_time": 2532.56,
+      "text": "भी। तो ये आपका प्रोग्राम है। इसको एक बार ड्राई रन कर लीजिएगा। ड्राई रन हमको करने का हमको लग नहीं रहा है कि कोई जरूरत है ड्राई रन करने का। सिमिलर है। मतलब अगर आप एरे से करना चाहते हैं तो आप ये कर सकते हैं। लेकिन ये मत सीखिएगा। ये नहीं चलेगा इंटरव्यू में। ऐसे करना पड़ेगा आपको इंटरव्यू में। और ये उतना हार्ड है। हमको नहीं लगता है कि है भी। ठीक है? तो ये दो क्वेश्चन था। ये बीएसटी का बहुत अच्छा क्वेश्चन है। बीएसटी में इसके बाद ज्यादा क्वेश्चन नहीं है। कल ट्री का लास्ट लेक्चर होने वाला है मेरे हिसाब से। उसमें हम कंस्ट्रक्शन पढ़ाएंगे आपको कि कंस्ट्रक्शन कैसे किया जाता है और उसके बाद हम लोग ग्राफ या डीपी पे मूव कर सकते हैं। ठीक है? चलिए।",
+      "source": "caption",
+      "english_text": "too. So this is your program. Dry run it once. We do not feel that there is any need to do a dry run. Is similar. Meaning if you want to do it with an array then you can do it. But don't learn this. This won't work in an interview. You will have to do this in the interview. And it is that hard. We don't think it exists. Ok? So these were two questions. This is a very good question of BST. There are not many questions after this in BST. According to me, Tree's last lecture is going to be held tomorrow. In that we will teach you how construction is done and after that we can move on to graph or DP. Ok? Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

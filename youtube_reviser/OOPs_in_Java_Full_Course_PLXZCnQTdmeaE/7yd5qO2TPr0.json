@@ -1,0 +1,632 @@
+{
+  "video_id": "7yd5qO2TPr0",
+  "video_title": "Objects Deep Dive | Size, Call by Value vs Reference | Shallow vs Deep Copy | Java Full Course #14",
+  "video_number": 3,
+  "chunks": [
+    {
+      "start_time": 0.08,
+      "end_time": 32.48,
+      "text": "हां जी। तो करें स्टार्ट। वेलकम बैक कोडर आर्मी हमारे इस जावा की सीरीज में। और आज हम ऑब्जेक्ट्स को थोड़ा और इन डेप्थ समझने वाले हैं। अभी तक हमने पढ़ लिया कि बेसिक ऑफ ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग क्या होती है? कंस्ट्रक्टर्स वगैरह क्या होते हैं। अब थोड़ा सा ना ऑब्जेक्ट्स के अंदर और घुसते हैं। देखते हैं कि ऑब्जेक्ट कितना साइज लेता है, रेफरेंसेस कितने साइज लेते हैं। तो वो सब हम देखेंगे इस वीडियो में। बहुत ज्यादा डेप्थ में जाएंगे। आपको बहुत मजा आएगा और बहुत अच्छे से इन सारी चीजों को समझेंगे। ठीक है? तो चलो फटाफट चलते हैं स्क्रीन पे और शुरू करते हैं।",
+      "source": "transcript_api",
+      "english_text": "Yes sir. So let's start. Welcome back Coder Army in our Java series. And today we are going to understand objects a little more in depth. Till now we have read what is Basic of Object Oriented Programming? What are constructors etc. Now let's go a little deeper into the objects. Let's see how much size the object takes, how much size the references take. So we will see all that in this video. Will go into great depth. You will have a lot of fun and will understand all these things very well. Ok? So let's quickly go to the screen and get started."
+    },
+    {
+      "start_time": 29.679,
+      "end_time": 63.92,
+      "text": "हां जी। तो देखो सबसे पहले ना हम मान के चलते हैं कि हमारे पास एक स्टूडेंट क्लास है। ठीक है? हमारे पास क्लास है स्टूडेंट्स और इसमें हमारी कुछ फील्ड्स हैं। ठीक है? अभी हम फील्ड्स के बारे में ज्यादा डिस्कस नहीं करते। हम देखते हैं कि हम इस स्टूडेंट क्लास का ऑब्जेक्ट कैसे बनाते थे। तो हम ऐसे बनाते थे। हम लिखते थे स्टूडेंट जो डेटा टाइप होता था। फिर एक रेफरेंस वेरिएबल इक्वल टू न्यू। स्टूडेंट यहां पे हम इस तरह से कुछ कंस्ट्रक्टर को कॉल करते थे। कुछ इस तरीके से और जब हम न्यू लिखते तो हमें पता होता था क्या होता था? डायनेमिकली मेमोरी एलोकेट होती थी।",
+      "source": "transcript_api",
+      "english_text": "Yes sir. So look, first of all we assume that we have a student class. Ok? We have a class Students and we have some fields in it. Ok? Right now we don't discuss much about fields. Let us see how we created the object of this Student class. So we used to make it like this. We used to write student which was data type. Then a reference variable equal to new. Student, here we used to call some constructors like this. Something like this and when we wrote new, we knew what would happen? Memory was allocated dynamically."
+    },
+    {
+      "start_time": 61.28,
+      "end_time": 88.4,
+      "text": "ठीक है? अब ये करने के बाद हमें पता था कि हमारी एक हीप मेमोरी होगी। ठीक है? जिसके अंदर एक ब्लॉक हमारे लिए असाइन हो जाएगा जो स्टोर करेगा किसको? इस स्टूडेंट ऑब्जेक्ट को। ठीक है? अब इस स्टूडेंट ऑब्जेक्ट के अंदर वो क्या-क्या चीजें स्टोर करेगा? जो भी हमने यहां पे डिक्लेअर की होंगी। तो लेट्स से हम यहां पे अ कुछ चीजें बताते हैं। जैसे हमने बोला स्ट्रिंग नेम। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "ok? Now after doing this we knew that we would have a heap memory. Ok? Inside which a block will be assigned to us, who will store it? To this student object. Ok? Now what things will he store inside this student object? Whatever we have declared here. So let us tell you some things here. Like we said string name. Ok?"
+    },
+    {
+      "start_time": 85.36,
+      "end_time": 118.0,
+      "text": "यह हो सकता है हमारा लेट्स से एज हम स्टोर करा रहे हैं। लेट्स से रोल नंबर हम स्टोर करा रहे हैं स्टूडेंट का और लेट्स से हम एक कॉलेज भी स्टोर करवा लेते हैं कुछ इस तरीके से। अब वही सब फील्ड्स जो हमने यहां पे स्टोर कराई है वो यहां पे आ जाएंगी। कैसे? यहां पे नेम आ जाएगा, एज आ जाएगा, रोल नंबर आ जाएगा और कॉलेज आ जाएगा। ये सब तो हमें पता है। ठीक है? और इस रेफरेंस ये जो ऑब्जेक्ट है हमारा ये जो मेमोरी में ऑब्जेक्ट हमने स्टोर किया है इसका रेफरेंस वेरिएबल हमारा कहां स्टोर होता था? स्टैक मेमोरी के अंदर। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "This could be our Let's Edge store. We are storing the roll number of the student through Lets and we are also storing the roll number of a college through Lets, something like this. Now all the fields which we have stored here will come here. How? Here name will come, age will come, roll number will come and college will come. We know all this. Ok? And this reference object is ours, this object we have stored in the memory, where was its reference variable stored? Inside the stack memory. Ok?"
+    },
+    {
+      "start_time": 115.84,
+      "end_time": 149.52,
+      "text": "तो यहां पे हमारा रेफरेंस वेरिएबल S1 स्टोर होता था जो पॉइंट करता था इस ऑब्जेक्ट को। ठीक है? इसको हम बोलते थे स्टक। इसको हम बोलते थे हीप। अब मेरा क्वेश्चन आपसे ये है कि जब हमने प्रिमिटिव डेटा टाइप्स पढ़े थे ना जैसे हमने इंट पढ़ा तो हमने पढ़ा था वो कितना साइज लेता है। तो हमने पढ़ा वो चार बाइट लेता है। ऐसे ही फिर अगर हमने डबल पढ़ा हमने कहा वो कितना बाइट्स लेता है। हमने पता करा कि वो 8 बाइट्स लेता है। तो अब हमें ये नॉन प्रिमिटिव्स के लिए भी समझना पड़ेगा। नॉन प्रिमिटिव्स में ये जो हमारा स्टूडेंट ऑब्जेक्ट है ये जो हमारा हीप मेमोरी में ऑब्जेक्ट बना है ये कितना साइज लेता है और",
+      "source": "transcript_api",
+      "english_text": "So here our reference variable S1 was stored which pointed to this object. Ok? We used to call this stuck. We used to call this heap. Now my question to you is that when we read primitive data types, like we read int, we read how much size it takes. So we read that he takes four bytes. Similarly again if we read double we said how many bytes does it take. We found out that it takes 8 bytes. So now we have to understand this for non-primitives also. In non-primitives, this is our student object, this is our object created in heap memory, how much size does it take and"
+    },
+    {
+      "start_time": 146.8,
+      "end_time": 179.68,
+      "text": "ये जो रेफरेंस हमारा वेरिएबल है ये कितना साइज लेता है तो एक बार हम इसके बारे में बात करते हैं तो सबसे पहले ना आई गेस हमने रेफरेंस वेरिएबल के बारे में ऑलरेडी बात की थी रेफरेंस वेरिएबल जो होता है हमारा वो हमारा स्टोर होता है स्टक मेमोरी के अंदर और वो लेता है या तो चार बाइट्स या तो 8 बाइट्स ठीक है और अब चार बाइट और 8 बाइट क्यों अब देखो जो हमारा जेवीएम है 64 बिट्स का जो कंप्रेशन यूज़ करता है अंदर से। ठीक है? वह हमारा लेता है चार बाइट्स।",
+      "source": "transcript_api",
+      "english_text": "This reference is our variable, how much size does it take, so once we talk about it, first of all, no guess, we had already talked about the reference variable, the reference variable is ours, it is stored inside the stuck memory and it takes either four bytes or 8 bytes, okay and now why four bytes and 8 bytes? Now see, this is our JVM which uses 64 bits of compression inside. From. Ok? That takes up our four bytes."
+    },
+    {
+      "start_time": 177.92,
+      "end_time": 211.76,
+      "text": "ये डिफ़ॉल्ट है। हमने इसको पहले ही पढ़ा था कि रेफ्रेंसेस चार बाइट लेते हैं। लेकिन कुछ ऐसे भी JVM है 64 बिट्स पे जो हमारे 8 बाइट्स लेते हैं। ठीक है? तो ये वेरीरी करता है JVM टू JVM कुछ चार बाइट्स लेंगे। कुछ 8 बाइट्स लेंगे। पर जनरली अगर हम इसका एक बोलना चाहेंगे तो हम हमेशा ज्यादातर चार बाइट्स यूज़ करते हैं। क्योंकि बाय डिफ़ॉल्ट Java में चार बाइट्स था। ठीक है? तो S1 हमने बोल दिया रेफरेंसेस चार बाइट्स लेते हैं। बहुत बढ़िया। इजी था ये तो। है ना? अब देखते हैं हमारा ये जो ऑब्जेक्ट है इसका साइज कितना होता होगा। अब इस ऑब्जेक्ट के अंदर स्टोर क्या-क्या हो रखा",
+      "source": "transcript_api",
+      "english_text": "This is the default. We have already read that references take four bytes. But there are some JVMs on 64 bits which take up 8 bytes. Ok? So it verry will take some four bytes from JVM to JVM. Will take some 8 bytes. But generally if we want to speak it, we always use mostly four bytes. Because by default in Java it was four bytes. Ok? So S1 we said references takes four bytes. very nice. This was easy. Isn't it? Now let us see what would be the size of our object. Now what is stored inside this object?"
+    },
+    {
+      "start_time": 209.2,
+      "end_time": 242.64,
+      "text": "है। सबसे पहले इस ऑब्जेक्ट के अंदर एक नेम है, ऐज है, रोल नंबर है और कॉलेज है। चारों चीजें हैं। तो अगर मैं इन चारों चीजों का साइज़ निकालूं। मुझे पता है कि ये जो मेरा नेम है, ये स्ट्रिंग टाइप का है। और स्ट्रिंग टाइप हमने पढ़ा है रेफरेंसेस होते हैं। तो अगेन ये चार बाइट लेता होगा। इंटीजर है एज वो है हमारा अगेन इंटीजर टाइप का वो कितने बाइट्स लेता होगा चार बाइट्स लेता होगा रोल नंबर भी इंटीजर है चार बाइट्स लेता होगा स्ट्रिंग भी हमारा जो स्ट्रिंग है वो अगेन चार बाइट्स लेता होगा क्योंकि वो एक रेफरेंस है तो 4 + 4 +",
+      "source": "transcript_api",
+      "english_text": "Is. First of all, inside this object there is a name, age, roll number and college. All four things are there. So if I find the size of these four things. I know that my name is of string type. And the string types we have learned are references. So again it would take four bytes. Age is an integer, that is ours again, integer type, how many bytes would it take, it would take four bytes, roll number is also an integer, it would take four bytes, string is also our string, again it would take four bytes, because it is a reference, so 4 + 4 +"
+    },
+    {
+      "start_time": 240.56,
+      "end_time": 274.56,
+      "text": "4 है ना तो ये हमारा कितना हो गया टोटल टोटल हो गए 16 बाइट्स हो गए तो क्या इस ऑब्जेक्ट का एग्जैक्ट साइज 16 बाइट्स हो जाएगा आंसर है नहीं इसमें 16 बाइट से ज्यादा और भी कुछ चीजें स्टोर होंगी अब वही हमें हमें देखना है तो चलो फटाफट उसको देखते हैं। हां जी। तो हमारे पास ये जो ऑब्जेक्ट होता है ना इसके अंदर सिर्फ ये चारों चीजें स्टोर नहीं होती। जो भी हमने इसके अंदर वेरिएबल स्टोर किए हैं जैसे कि नेम, एज, रोल नंबर और कॉलेज। यहां पे मैं छोटा सा लिख देता",
+      "source": "transcript_api",
+      "english_text": "If it is 4, then how much is our total? If the total becomes 16 bytes, then will the exact size of this object become 16 bytes? The answer is no, there will be some more things stored in it more than 16 bytes. Now that is what we want to see, so let's see it quickly. Yes sir. So the object we have does not store only these four things inside it. Whatever we have stored variables inside it like name, age, roll number and college. I would write a little here"
+    },
+    {
+      "start_time": 271.759,
+      "end_time": 305.52,
+      "text": "हूं कॉलेज। इसके अंदर इन चारों फील्ड्स के अलावा और भी इंफॉर्मेशन होगी। ठीक है? अब वो इंफॉर्मेशन क्या होगी? देखते हैं। तो अब हम देख रहे हैं कि जो हमारा ऑब्जेक्ट का साइज होता है वो कैसे-कैसे चीजों से मिलके बनता है। मतलब कौन-कौन सी चीजें कंट्रीब्यूट करती हैं हमारे साइज में। ठीक है? तो सबसे पहले हमारा होता है हेडर साइज। अब हेडर क्या होता है? अभी बताता हूं। पहले सारे हम नेम कर लेते हैं कौन-कौन से होते हैं। ठीक है? फिर हमारी है एग्जैक्ट फील्ड्स जो हमने बेसिकली एक ऑब्जेक्ट के अंदर स्टोर की हुई है। और",
+      "source": "transcript_api",
+      "english_text": "I am in college. Apart from these four fields, there will be more information inside it. Ok? Now what will that information be? Let's see. So now we are seeing how the size of our object is made up of different things. Meaning, which things contribute to our size? Ok? So first of all we have the header size. Now what is a header? I will tell you now. First of all let us name which ones they are. Ok? Then we have our exact fields which we have basically stored inside an object. and"
+    },
+    {
+      "start_time": 302.08,
+      "end_time": 334.88,
+      "text": "थर्ड जगह लेता है पैडिंग। ठीक है? तो एक-एक करके इनको देखते हैं। ठीक है? तो सबसे पहले हमने जो अपने ऊपर ऑब्जेक्ट कंसीडर किया था ना स्टूडेंट इसी ऑब्जेक्ट को आप मान के चलना जिसमें चार फील्ड थी नेम, एज, रोल नंबर, कॉलेज और जो हिप मेमरी है वो कुछ इस तरह से रिप्रेजेंटेड था। तो मैंने कहा ये जो हमारा ऑब्जेक्ट है ना स्टूडेंट ये जो हिप मेमोरी के अंदर हमारा ऑब्जेक्ट है। इसमें सबसे पहले कुछ मेमोरी यूज़ होती होगी हेडर साइज़ के लिए। जिसको हम ऑब्जेक्ट हेडर भी बोलते हैं। ठीक है? तो इसका दूसरा",
+      "source": "transcript_api",
+      "english_text": "Third place takes padding. Ok? So let's look at them one by one. Ok? So, first of all, we considered the object as student, which had four fields namely name, age, roll number, college and hip memory which was represented in this way. So I said, this is our object, student, this is our object inside the hip memory. First of all, some memory will be used in this for header size. Which we also call object header. Ok? so its second"
+    },
+    {
+      "start_time": 333.12,
+      "end_time": 367.759,
+      "text": "नाम क्या है? यहीं पे लिख देते हैं। दूसरा नाम है इसका थोड़ा सा नीचे। हां। ऑब्जेक्ट हेडर्स। ठीक है? ऑब्जेक्ट के हेडर्स। अब हम बात करते हैं सबसे पहले ये ऑब्जेक्ट हेडर्स होता क्या है? ये जो ऑब्जेक्ट हेडर्स होते हैं ना ये स्टोर करते हैं मेटाडेटा ऑफ़ एन ऑब्जेक्ट। ठीक है? क्या स्टोर करते हैं? मेटाडेटा। अब मेटाडेटा आपको पता ही होगा क्या होता है? मेटाडेटा का मतलब होता है डेटा अबाउट डेटा। अब इस स्टूडेंट ऑब्जेक्ट के बारे में भी हमें कुछ डेटा की इनेशन होती होगी। अब देखो यह जो हमारा स्टूडेंट ऑब्जेक्ट है ना इसका खुद का कुछ मेटाडेटा",
+      "source": "transcript_api",
+      "english_text": "What is the name? Let's write it here. Its second name is a little below. Yes. Object Headers. Ok? Object headers. Now let us talk, first of all, what are these object headers? These object headers store the metadata of an object. Ok? What do you store? Metadata. Now you must know what metadata is? Metadata means data about data. Now we will have some data generation about this student object also. Now look, this is our student object, it has some metadata of its own."
+    },
+    {
+      "start_time": 365.52,
+      "end_time": 400.24,
+      "text": "होता होगा जो जावा को बताता होगा कि हम इस ऑब्जेक्ट के बारे में क्या-क्या चीजें जानते हैं। अब इस मेटा डेटा में ना अगर हम इसके बहुत इंटरनली जाएं तो दो चीज आ जाती है। एक आपके आते हैं मार्क वर्ड्स। ठीक है? और एक आपका आता है क्लास पॉइंटर। ठीक है? अब मार्क वर्ड्स में क्या-क्या आता है? मार्क वर्ड्स कुछ ऐसे आइडेंटिफायर्स हैं जो ऑब्जेक्ट के बारे में कुछ डिटेल बताते हैं। फॉर एग्जांपल कैसी डिटेल? इसके लॉकिंग मैकेनिज्म की डिटेल। अब अभी तक हमने लॉक्स नहीं पढ़ा पर आगे हम जावा जब मल्टी थ्रेडिंग पढ़ेंगे तो हमें समझ आएगा कि हम जावा में लॉक्स लगा सकते हैं। वो हम बाद में देखेंगे। पर ये",
+      "source": "transcript_api",
+      "english_text": "Which would tell Java what things we know about this object. Now, if we go deep into this meta data, two things emerge. Here comes Mark Words. Ok? And one comes your class pointer. Ok? Now what comes in Mark Words? Mark words are identifiers that tell some details about the object. What kind of detail for example? Details of its locking mechanism. Now we have not read locks yet, but when we read multi-threading in Java, we will understand that we can apply locks in Java. We will see that later. but this"
+    },
+    {
+      "start_time": 398.0,
+      "end_time": 424.88,
+      "text": "ऑब्जेक्ट पे कौन-कौन से लॉक्स लगे हुए हैं इन सब की इंफॉर्मेशन। ठीक है? अब इसके अलावा आ सकती है हमारे पास सिंक्रोनाइजेशन की इंफॉर्मेशन। अभी तक हमने ये भी नहीं पढ़ा। सिंक्रोनाइज़्ड अगेन हम तब पढ़ेंगे जब हम थ्रेडिंग्स को पढ़ रहे होंगे। बेसिकली कुछ ऐसी इंफॉर्मेशन इस ऑब्जेक्ट के बारे में जो जावा को अंदर से स्टोर करनी पड़ेगी। कौन सा लॉक यूज़ हुआ है, कौन सा सिंक्रोनाइजेशन मैकेनिज्म यूज़ हुआ है? और इसके अलावा क्या आ सकता है? इसके अलावा आ सकता है गार्बेज कलेक्शन की इंफॉर्मेशन।",
+      "source": "transcript_api",
+      "english_text": "Information about which locks are installed on the object. Ok? Now apart from this we can also get information about synchronization. We haven't even read this yet. Synchronized again we will read when we are reading the threads. Basically, there is some information about this object that Java will have to store internally. Which lock is used, which synchronization mechanism is used? And what else can come? Apart from this, information about garbage collection can also come."
+    },
+    {
+      "start_time": 423.36,
+      "end_time": 450.8,
+      "text": "गार्बेज कलेक्शन भी अभी तक हमने नहीं पढ़ा है। वो हम बाद में पढ़ेंगे। पर खैर बहुत सारी चीजें अभी तक हमने इसमें नहीं पढ़ी हैं। वो हम आगे पढ़ेंगे। बट हमारे पास कुछ ऐसे मार्क वर्ड्स, ऐसी कुछ इंफॉर्मेशन जो इस ऑब्जेक्ट के बारे में जावा को स्टोर करनी है। ठीक है? तो ये सब कुछ इंफॉर्मेशनेशन आ सकती है। एसेट्रा लिख देता हूं मैं इसमें। इसमें और भी कुछ चीजें होती हैं। बस हमें ये मैटर करता है कि ये सब जो मार्क वर्ड्स की इनेशन है ना ये सब लेती है हमारी आठ बाइट्स।",
+      "source": "transcript_api",
+      "english_text": "We have not even read Garbage Collection yet. We will read that later. But well, we have not read many things in it yet. We will read that further. But we have some mark words, some information that Java has to store about this object. Ok? So all this information can be available. I will write etcetera in it. There are some other things also in this. All that matters to us is that all this creation of mark words takes up eight bytes of our space."
+    },
+    {
+      "start_time": 447.919,
+      "end_time": 479.84,
+      "text": "ठीक है? 8 बाइट्स ये यूज़ करता है मार्क वर्ड्स की इंफॉर्मेशनेशन को स्टोर करने के लिए किसी भी ऑब्जेक्ट के लिए। ओके? बहुत बढ़िया। अब अगला है हमारा क्लास पॉइंटर। अब क्लास पॉइंटर क्या होता है? अभी याद है हमने डिस्कस किया था अबाउट दिस कीवर्ड। कि हर क्लास अपने ही ऑब्जेक्ट का एक रेफरेंस स्टोर करती है। है ना? तो क्लास पॉइंटर बिल्कुल सेम इस रेफरेंस वेरिएबल की तरह है जो अभी हमने ऊपर s1 बनाया था जो क्या स्टोर कर रहा है जो एक रेफरेंस स्टोर करता है किसी भी ऑब्जेक्ट का जैसे इस केस में हमने s1 के साथ किया था ठीक है तो अगेन",
+      "source": "transcript_api",
+      "english_text": "ok? 8 bytes It is used to store the information of mark words for any object. Ok? very nice. Now next is our class pointer. Now what is a class pointer? Just remember we had discussed about this keyword. That every class stores a reference to its own object. Isn't it? So the class pointer is exactly the same as this reference variable that we just created above s1 which is storing what is storing a reference to any object like in this case we did with s1 okay so again"
+    },
+    {
+      "start_time": 477.599,
+      "end_time": 506.96,
+      "text": "अगर ये रेफरेंस है तो ये कितना लेता होगा ये भी लेता होगा हमारा चार बाइट्स या फिर 8 बाइट्स हमने देखा रेफरेंस या तो चार बाइट लेता है या 8 बाइट लेता है वो डिपेंड करता है jबीएम पे जनरली हम चार बाइट वाला प्रेफर करते हैं ओके तो हमने क्या बोला मार्क वर्ड्स लेता है 8 बाइट्स और क्लास पॉइंटर लेता है चार बाइट्स या आर्ट बाइट्स। ठीक है? तो ये तो हो गए हमारे ऑब्जेक्ट हेडर्स। ठीक है? ये हो गया हेडर साइज। इसके अलावा सेकंड चीज क्या थी हमारे पास? सेकंड चीज थी एग्जैक्ट डेटा।",
+      "source": "transcript_api",
+      "english_text": "If it is a reference, then how much would it take? It would also take four bytes or 8 bytes. We saw that reference either takes four bytes or 8 bytes, it depends on jBM, generally we prefer four bytes. Okay, so what we said, mark words takes 8 bytes and class pointer takes four bytes or art bytes. Ok? So these are our object headers. Ok? This is the header size. Apart from this, what other thing did we have? The second thing was exact data."
+    },
+    {
+      "start_time": 504.24,
+      "end_time": 538.56,
+      "text": "अच्छा अब ये क्या होता है भाई? ये वही होता है जो एक्चुअली हमने उस स्टूडेंट ऑब्जेक्ट के अंदर स्टोर किया हुआ है। फॉर एग्जांपल अगर हम अपनी इस क्लास की ही बात करें और इस क्लास को कट करके यहां नीचे ले आएं। ठीक है? तो हमें पता चलेगा कि एग्जैक्ट डेटा जो इसके अंदर स्टोर है नेम, एज, रोल नंबर और कॉलेज वो कितने-कितने बाइट ले रहे हैं। तो वो ले रहे हैं चार बाइट। 4 बाइट, चार बाइट और चार बाइट। ठीक है? तो एग्जैक्ट डेटा हो गया हमारा 16 बाइट्स। ठीक है? ये हो गया हमारा एग्जैक्ट डेटा। अब देखो लास्ट पार्ट था हमारा पैडिंग। ठीक है? लास्ट पार्ट था",
+      "source": "transcript_api",
+      "english_text": "Okay, what is this now brother? This is what we have actually stored inside that student object. For example, if we talk about this class of ours and cut this class and bring it down here. Ok? So we will know how many bytes the exact data stored inside it like name, age, roll number and college is taking. So he's taking four bytes. 4 bytes, four bytes and four bytes. Ok? So our exact data is 16 bytes. Ok? This is our exact data. Now look the last part was our padding. Ok? was the last part"
+    },
+    {
+      "start_time": 536.48,
+      "end_time": 570.8,
+      "text": "पैडिंग। अब पैडिंग कितने बाइट्स लेता है और होता क्या है? देखो एक्चुअली ना पैडिंग ऑप्शनल चीज होती है। ठीक है? पहले मैं आपको बताता हूं कि पैडिंग का यूज़ क्या होता है। जावा में ना हम कोशिश करते हैं कि हर ऑब्जेक्ट जितनी मेमोरी ले पूरा का पूरा स्टोर होने में वो 8 बाइट्स के मल्टीपल में ले। ठीक है? क्यों ऐसा हम मानते हैं? देखो, हम ऐसा इसलिए मानते हैं क्योंकि जो हमारा CPU होता है ना वो जब डाटा अपने पास लेके आता है प्रोसेसिंग के लिए वो एट बाइट्स ऑफ चंक में डेटा को लेके आता है। आजकल के जो मॉडर्न CPU हैं वो 8 बाइट्स ऑफ चंक में",
+      "source": "transcript_api",
+      "english_text": "Padding. Now how many bytes does padding take and what happens? Look, actually padding is an optional thing. Ok? First let me tell you what is the use of padding. In Java, we try to store the entire memory of each object in multiples of 8 bytes. Ok? Why do we believe this? Look, we believe this because when our CPU brings data to itself, it brings data in eight bytes of chunks for processing. Today's modern CPUs are in 8 bytes chunk."
+    },
+    {
+      "start_time": 568.32,
+      "end_time": 601.36,
+      "text": "काम करते हैं। तो हमेशा हम चाहेंगे कि जो हमारा ऑब्जेक्ट है वो जितना मेमोरी ले वो हमेशा एट बाइट्स के मल्टीपल में होनी चाहिए। ठीक है? मल्टीपल ऑफ़ एट बाइट्स या आठ हो 16 हो। राइट? कुछ इस तरीके से ताकि हम हमेशा एट एट बाइट्स करके एक कंप्लीट ऑब्जेक्ट को पूरा का पूरा प्रोसेस कर पाए CPU के अंदर। ठीक है? तो इसी प्रिंसिपल से हम कांसेप्ट लेके आते हैं पैडिंग का। तो पैडिंग क्या करता है? अभी तक जो ऑब्जेक्ट मैनेज डेटा है प्लस जो एग्जैक्ट साइज है उनको मिला करके अगर हम एट के मल्टीपल से जित अगर थोड़ा सा भी दूर हैं तो उतने",
+      "source": "transcript_api",
+      "english_text": "Let's work. So we would always like that the amount of memory that our object takes should always be in multiples of eight bytes. Ok? Multiple of eight bytes or eight is 16. Right? In such a way that we are always able to process a complete object at every eight bytes inside the CPU. Ok? So from this principle we come up with the concept of padding. So what does padding do? By combining the object managed data so far plus the exact size, if we are even a little away from the multiple of eight, then we will get that much."
+    },
+    {
+      "start_time": 599.44,
+      "end_time": 633.44,
+      "text": "बाइट्स ऑफ पैडिंग हम ऐड कर देते हैं। ठीक है? तो फॉर इस केस में अभी तक हमने कितना स्पेस लिया? हमने कहा कि हमारा जो ये रहा ऑब्जेक्ट साइज ये टोटल कितना लेगा? 8 बाइट्स प्लस 4 बाइट्स। इस बार हम चार वाला कंसीडर कर लेते हैं। तो 8 + 4 12 बाइट्स। ठीक है? तो इसको भी यहां लिख देते हैं। टोटल हो गया इसका 12 बाइट्स। ठीक है? और हमारा एग्जैक्ट डेटा कितना ले रहा है? 16 बाइट्स। ठीक है? तो हम यहां लिखते हैं ऑब्जेक्ट हेडर्स",
+      "source": "transcript_api",
+      "english_text": "We add bytes of padding. Ok? So how much space have we taken so far in this case? We said that given our object size, how much will this total take? 8 bytes plus 4 bytes. This time we consider the four. So 8 + 4 is 12 bytes. Ok? So let's write this here also. Its total is 12 bytes. Ok? And how much is our exact data taking? 16 bytes. Ok? So we write here object headers"
+    },
+    {
+      "start_time": 629.68,
+      "end_time": 659.6,
+      "text": "प्लस एग्जैक्ट डेटा। ये कितना लेते हैं टुगेदर? यह ले रहे हैं हमारे 12 बाइट्स + 16 बाइट्स। तो 12 + 16 ठीक है? तो यह हो गया हमारा 28 बाइट्स। ठीक है? ठीक है? अब देखो 28 तो क्योंकि हमारा मल्टीपल नहीं है एट का। इसके सबसे क्लोजेस्ट मल्टीपल क्या है? 32। है ना? 32 हमारा क्लोजेस्ट मल्टीपल है एट का। अब 28 से 32 जाने के लिए हमें कितने बाइट्स और लगेंगे? फोर बाइट्स। तो हम क्या करेंगे?",
+      "source": "transcript_api",
+      "english_text": "Plus exact data. How much do they charge together? This is taking our 12 bytes + 16 bytes. So 12 + 16 is ok? So this is our 28 bytes. Ok? Ok? Now see, 28 is because our multiple is not eight. What is its closest multiple? 32. Isn't it? 32 is our closest multiple of eight. Now how many more bytes will we need to go from 28 to 32? Four bytes. So what do we do?"
+    },
+    {
+      "start_time": 656.16,
+      "end_time": 688.0,
+      "text": "फोर बाइट्स ऑफ पैडिंग को ऐड कर देंगे। सिंपल। हमने कैसे निकाला? हमें 32 बाइट्स चाहिए। क्योंकि हमें पता है 8 * 4 = 32 और अभी तक हमारे 28 बाइट्स यूज़ हुए हैं। सॉरी 28 बाइट्स यूज़ हुए हैं। तो हमने क्या किया? सिंपल इसको सब्ट्रैक्ट किया इससे और हमने निकाल लिया भैया हमें चार बाइट्स ऑफ पैडिंग की जरूरत है यहां पे। तो हमने चार बाइट्स ऑफ पैडिंग ऐड कर दी। ठीक है? तो हमारा बेसिकली ये जो मेमोरी में ऑब्जेक्ट स्टोर किया था हमने यहां पे यहां पे। ये कितना ले रहा होगा? तो टोटल ये ले रहा",
+      "source": "transcript_api",
+      "english_text": "Will add four bytes of padding. Simple. How did we figure it out? We need 32 bytes. Because we know 8 * 4 = 32 and so far we have used 28 bytes. Sorry, 28 bytes have been used. So what did we do? Simply subtract this from this and we've got, brother, we need four bytes of padding here. So we added four bytes of padding. Ok? So basically this is the object we have stored in the memory here. How much will he be charging? So this is the total taking"
+    },
+    {
+      "start_time": 685.279,
+      "end_time": 718.56,
+      "text": "होगा हमारे ऑब्जेक्ट हेडर्स की इनेशन व्हिच वाज़ 12 बाइट्स। ठीक है? प्लस हमारे किसकी इनेशन? हमारे एग्जैक्ट डेटा की इनेशन जो कि था 16 बाइट्स और प्लस 4 बाइट्स ऑफ पैडिंग और टोटल कितना हो गया? टोटल हो गया ये 32 बाइट्स। तो एक इस ऑब्जेक्ट को स्टोर करने के लिए हमें चाहिए 32 बाइट्स। ठीक है? तो आई होप आपको ये समझ आ गया होगा कि हमारे ऑब्जेक्ट जो है मेमोरी में कितना साइज लेते हैं। अब आप खुद से निकाल सकते हो कि अगर लेट्स से हमारे पास एक और क्लास बनी",
+      "source": "transcript_api",
+      "english_text": "This will be the creation of our object headers which was 12 bytes. Ok? Plus our whose ination? The size of our exact data which was 16 bytes plus 4 bytes of padding and what is the total? This is 32 bytes in total. So to store this object we need 32 bytes. Ok? So I hope you have understood how much size our objects take up in memory. Now you can figure out for yourself that if lets create another class for us"
+    },
+    {
+      "start_time": 715.519,
+      "end_time": 748.959,
+      "text": "हुई है कुछ इस तरीके से। लेट्स से क्लास पर्सन। ठीक है? और उसमें एक ही चीज है लेट्स से उसकी ऐज और इस बार मैं ऐज को इंटीजर में स्टोर ना करके बाइट में स्टोर करता हूं। ठीक है? बाइट ऐज। ठीक है? तो हमें पता है ऑब्वियसली बाइट की रेंज -18 से + 127 होती है और ऐज उससे बाहर तो जा नहीं सकती इंसान की। तो मैं इस तरह से एक ऑब्जेक्ट को डिक्लअ करता हूं। तो आप खुद ही मुझे बता सकते हो कि सो पूरे के पूरे ऑब्जेक्ट का साइज क्या होगा? ठीक है? सबसे पहले हमारा क्या होगा? इस ऑब्जेक्ट का मेटा डेटा होगा। ठीक है? वो तो हमारा हमेशा फिक्स ही रहेगा 12 बाइट",
+      "source": "transcript_api",
+      "english_text": "Something has happened this way. Class person from late. Ok? And the only thing in it is its age from Lets and this time I do not store the age in integer but in bytes. Ok? Byte Edge. Ok? So we know that obviously the range of bytes is -18 to + 127 and the age of a human being cannot go beyond that. So I declare an object like this. So can you tell me yourself what will be the size of the entire object? Ok? What will happen to us first? This object will have meta data. Ok? That will always be our fix, 12 bytes."
+    },
+    {
+      "start_time": 746.959,
+      "end_time": 778.72,
+      "text": "का। क्यों? क्योंकि 4 बाइट्स का हमारा क्लास पॉइंटर और 8 बाइट का हमारा वो तो वो तो हमारा हो गया 12 बाइट्स फिक्स है। अब इसमें एग्जैक्ट सारा जो एग्जैक्ट डेटा है एग्जैक्ट डेटा वो कितने बाइट का स्टोर है? वो तो सिर्फ एक बाइट का स्टोर है। क्यों? क्योंकि हमारा जो बाइट है वो कितनी मेमोरी लेता है? एक बाइट। ओके? और अब 12 + 1 कितना हो गया? 13 बाइट्स। ठीक है? इसको भी लिख लेते हैं। तो 12 + 13 हो गया हमारा 13 बाइट्स। अब हम कितने दूर हैं एक आठ के मल्टीपल से? भाई अगला आठ का मल्टीपल 16 पे",
+      "source": "transcript_api",
+      "english_text": "Of. Why? Because our class pointer of 4 bytes and our that of 8 bytes, that is ours, 12 bytes are fixed. Now the exact data that is stored in it is how many bytes of exact data? That's just a byte store. Why? Because how much memory does our byte take? One byte. Ok? And now how much is 12 + 1? 13 bytes. Ok? Let's write this down too. So 12 + 13 becomes our 13 bytes. How far away are we now from a multiple of eight? Brother, next multiple of eight is 16."
+    },
+    {
+      "start_time": 776.72,
+      "end_time": 811.68,
+      "text": "आएगा। तो हम 3 बाइट्स दूर हैं। तो 3 बाइट्स का हमने ऐड कर दी पैडिंग। 3 बाइट्स की ऐड कर दी पैडिंग। तो इसने कितना लिया? 12 + 1 + 3 तो टोटल हो गया हमारा 18 बाइट्स। 18 बाइट्स ऑफ स्टोरेज हमें लगी इस पर्सन ऑब्जेक्ट को मेमोरी में स्टोर करने के लिए। ठीक है? आई होप आपको अच्छे से समझ आ गया होगा। ठीक है? तो अब आप खुद से निकाल सकते हो कि कोई भी ऑब्जेक्ट कितनी जगह लेता है मेमोरी के अंदर। है ना? तो जैसे हम वो इंटिजर, फ्लोट अ इन सब के बारे में जानते थे। अब वही चीजें हम ऑब्जेक्ट्स के बारे में भी जानते हैं। क्योंकि",
+      "source": "transcript_api",
+      "english_text": "Will come. So we're 3 bytes away. So we added padding of 3 bytes. Added padding of 3 bytes. So how much did it take? 12 + 1 + 3 so our total is 18 bytes. It took us 18 bytes of storage to store this Person object in memory. Ok? I hope you have understood well. Ok? So now you can calculate for yourself how much space any object takes inside the memory. Isn't it? So like we knew about integers, floats and all that. Now we know the same things about objects also. because"
+    },
+    {
+      "start_time": 810.16,
+      "end_time": 843.279,
+      "text": "ऑब्जेक्ट्स को भी जब हम डिक्लअर करते हैं, हम लिखते हैं स्टूडेंट s1 मान लो अगर हमारा स्टूडेंट एक क्लास है। ठीक है? स्टूडेंट हमारा क्या है? एक नॉन प्रिमिटिव डेटा टाइप है। जिसको हम यूजर डिफाइंड डेटा टाइप्स भी बोल रहे थे। है ना? तो अगर एक ये डेटा टाइप ही है। चाहे यूजर डिफाइंड हो। इसका भी तो एग्जैक्ट साइज होना चाहिए। तो हमने वो निकाल दिया कि हमने एग्जैक्ट साइज कितना लेते हैं। ठीक है? चलो अब बढ़ते हैं अगले टॉपिक की तरफ कि हमने ऑब्जेक्ट के साइजज़ तो निकाल दिए। पर हमें एक और चीज जावा में पता होनी चाहिए वो है कॉल बाय वैल्यू",
+      "source": "transcript_api",
+      "english_text": "Even when we declare objects, we write student s1. Suppose if our student is a class. Ok? Student, what is ours? Is a non-primitive data type. Which we were also calling user defined data types. Isn't it? So if one is this data type only. Even if user defined. It should also be of exact size. So we figured out what is the exact size. Ok? Let us move towards the next topic now that we have cleared the sizes of the object. But one more thing we should know in Java is call by value."
+    },
+    {
+      "start_time": 840.48,
+      "end_time": 868.16,
+      "text": "और कॉल बाय रेफरेंस। क्या होती हैं ये दोनों चीजें? ये हमें जावा में पता होनी चाहिए। ठीक है? अब इसको समझाने के लिए ना मैं पहले फटाफट आपको कोड में लेके चलता हूं। ठीक है? कुछ चीजें आपको समझाएगी वहां पे और फिर वापस हम यहां पे आएंगे और उसको और डेप्थ में समझेंगे। हां जी। तो देखो मैंने बिल्कुल खाली प्रोजेक्ट लिया हुआ है। ठीक है? यहां पे मैं आपको कॉल बाय वैल्यू समझाने वाला हूं। तो हमने अगेन अपनी एक क्लास डेमो बना रखी है और अपना वॉइड मेन फंक्शन लिखा हुआ है।",
+      "source": "transcript_api",
+      "english_text": "And call by reference. What are these two things? We should know this in Java. Ok? Now to explain this, let me first quickly take you through the code. Ok? Some things will be explained to you there and then we will come back here and understand it in more depth. Yes sir. So look, I have taken a completely empty project. Ok? Here I am going to explain you call by value. So again we have created a class demo and written our void main function."
+    },
+    {
+      "start_time": 866.32,
+      "end_time": 898.88,
+      "text": "इसके अंदर सबसे पहले देखो मैं क्या करता हूं। मैं दो वेरिएबल लेता हूं। लेट्स से x इसको मैं लेता हूं फोर और एक वेरिएबल ले लेता हूं लेट्स से y इंट y इसको मैं ले लेता हूं फाइव। ठीक है? अकेले ऐसे समझते हैं। अब मैं क्या करता हूं? अ एक ना फंक्शन बनाता हूं। नया फंक्शन। ठीक है? हमें पता है मेन के अंदर सॉरी डेमो क्लास के अंदर जो भी हम फंक्शन बनाते हैं, ए मेथड बनाते हैं, उसको हम स्टैटिक करके लिखते हैं। ठीक है? तो लेट्स से हम एक फंक्शन लिखते हैं ऐड 10 का जो क्या करेगा कुछ नहीं करेगा ये दो वेरिएबल ले लेगा इंट",
+      "source": "transcript_api",
+      "english_text": "First of all see what I do inside this. I take two variables. From Let's x I take this as four and a variable from Let's y as int y I take this as five. Ok? This is how I understand alone. What do I do now? Let me create a function. New function. Ok? We know that inside main, whatever function we create inside the sorry demo class, we create a method, we write it as static. Ok? So let's write a function add 10 which will do nothing, it will take two variables int"
+    },
+    {
+      "start_time": 895.36,
+      "end_time": 922.16,
+      "text": "x इंट y और उन दोनों में 10 ऐड कर देगा तो x को कर देगा x + 10 y को कर देगा y + 10 कुछ इस तरीके से कुछ रिटर्न नहीं करेगा बस x को 10 से बढ़ा देगा y को 10 से बढ़ा देगा ठीक है और मैं यहां पे क्या करता हूं पहले x और y की वैल्यू को प्रिंट कर लेता हूं x और y की वैल्यू को प्रिंट कर लेता हूं कॉमा सेपरेटेड कुछ इस तरीके से सॉरी यहां पे ज्यादा स्पेस हो गया + y ठीक है?",
+      "source": "transcript_api",
+      "english_text": "x int y and add 10 to both of them so x will be x + 10 y will be y + 10 Something like this will not return anything but will just increase"
+    },
+    {
+      "start_time": 919.839,
+      "end_time": 953.199,
+      "text": "तो पहले यहां 4 5 प्रिंट हो जाना चाहिए। फिर मैं अपने इस फंक्शन को कॉल कर लेता हूं। ऐड 10 xy देके तो मैंने इसको xy देके कॉल कर लिया। बहुत बढ़िया। और इसको दोबारा से x और y को प्रिंट कर लेता हूं। कुछ इस तरीके से स्पेस। ठीक है? तो हमारा आउटपुट क्या होना चाहिए? स्क्रीन पे। अगर हम बेसिकली एक फर्स्ट थॉट प्रिंसिपल से सोचें तो हमारे पास पहले फोर और फाइव प्रिंट हो जाएगा स्क्रीन पे। फिर हमने ऐड 10 का फंक्शन कॉल किया वो ये रहा। हमने x को 10 से बढ़ा दिया। y को 10 से बढ़ा दिया। तो ये होना चाहिए 14 और 15 और फिर हमने दोबारा से x और y को प्रिंट कर दिया तो",
+      "source": "transcript_api",
+      "english_text": "So first 4 5 should be printed here. Then I call this function. Add 10 xy so I called him by giving xy. very nice. And I print x and y again. Space like this. Ok? So what should be our output? On the screen. If we basically think from a first thought principle then we will have four and five printed on the screen first. Then we called the add10 function, here it is. We increased x by 10. y increased by 10. So this should be 14 and 15 and then we printed x and y again so"
+    },
+    {
+      "start_time": 951.04,
+      "end_time": 984.16,
+      "text": "हमारा 14 और 15 प्रिंट होना चाहिए। तो क्या ऐसे ही हो रहा है? देखो बिल्कुल नहीं। ये तो दोनों टाइम्स 4 5 4 5 प्रिंट हो रहा है। यानी कि ये जो फंक्शन था एट 10 इसने कुछ काम क्यों नहीं किया? इसने इस x और y की वैल्यू को 10 से बढ़ाया क्यों नहीं? है ना? तो एक चीज तो हमें ये समझनी है कि भाई ये वाली वैल्यू्यूज जो थी 4 5 ये बढ़ी क्यों नहीं? ठीक है? अब एक और कोड आपको दिखाना है मुझे। अभी देखो अगेन मैंने डेमो 2 डॉट जावा करके लिया हुआ है। खाली प्रोजेक्ट है जिसे हम कॉल बाय रेफरेंस समझेंगे। तो इसको पहले समझते हैं कि हम एक काम करते हैं। एक",
+      "source": "transcript_api",
+      "english_text": "Ours should be 14 and 15 printed. So is this what is happening? Look, not at all. This is being printed both the times 4 5 4 5. That is, why did this function which was there at 10 not do any work? Why didn't it increase the values ​​of this x and y by 10? Isn't it? So one thing we have to understand is that why did the values ​​which were 4 5 not increase? Ok? Now I have to show you one more code. Now look again, I have taken Demo 2.Java. There is a blank project which we will consider as call by reference. So first let us understand that we do one thing. one"
+    },
+    {
+      "start_time": 982.16,
+      "end_time": 1016.959,
+      "text": "पहले क्लास बना लेते हैं। ठीक है? तो पब्लिक नॉट पब्लिक सिंपल मेरे को लिखना है क्लास और उस क्लास का लेट्स से मैं नाम अभी के लिए रखता हूं रैंडम। ठीक है? रैंडम क्लास है। और इसमें मैं दो रिएबल डिक्लअर करता हूं। इंट x और इंट y सिंपल। अब मैं यहां पे क्या करता हूं? रेंडम का एक ऑब्जेक्ट बना लेता हूं। तो रैंडम लेट्स से r1 = न्यू रैंडम। और मैं इस x और y की वैल्यू को देना चाहता हूं। तो मैं अभी भी 4 5 दे देता हूं। कुछ इस तरीके से। अब ऑब्वियसली मैंने यहां पे कंस्ट्रक्टर नहीं बना रखा है। तो अपना कंस्ट्रक्टर भी बना लेते हैं रैंडम जो इंट x और इंट y ये दो",
+      "source": "transcript_api",
+      "english_text": "First let's create a class. Ok? So public not public is simple, I have to write class and for now I keep the name of that class as random. Ok? Is random class. And in this I declare two variables. Int x and int y Simple. What do I do here now? I create a random object. So from Random Lets r1 = New Random. And I want to give the value of this x and y. So I still give it 4 5. Something like this. Now obviously I have not created a constructor here. So let's also create our constructor Random which will take two int x and int y."
+    },
+    {
+      "start_time": 1013.759,
+      "end_time": 1046.4,
+      "text": "वैल्यूज़ लेता होगा और अपने दिस डॉट x को असाइन करता होगा। दिस x = x ये हमने समझा हुआ है। और दिस y = y कुछ इस तरीके से। है ना? अब ये वाली लाइन बिल्कुल सही है। तो मैंने यहां पे कुछ नहीं किया हुआ। देखो पहले मैंने x और y को अपना यहां पे लोकली डिक्लेअर किया हुआ था। है ना? और यहां पे मैंने क्या किया? एक क्लास बना ली रैंडम और उसके अंदर x और y की वैल्यू को डाल दिया और यहां पे R1 उसका एक ऑब्जेक्ट बना दिया जिसमें 4 5 वैल्यू पड़ी है। तो अगेन मैं सेम चीज़ करता हूं। सबसे पहले मैं अपना ये वाला फंक्शन दोबारा बनाता हूं। ऐड 10",
+      "source": "transcript_api",
+      "english_text": "Will be taking values and assigning it to our this dot x. We have understood that x = x. And this y = y something like this. Isn't it? Now this line is absolutely correct. So I haven't done anything here. Look, earlier I had declared x and y locally here. Isn't it? And what did I do here? Created a class Random and put the values ​​of x and y inside it and made an object of it called R1 which has 4 5 values. So again I do the same thing. First of all I create this function of mine again. add 10"
+    },
+    {
+      "start_time": 1044.4,
+      "end_time": 1079.12,
+      "text": "वाला फंक्शन ये मैं यहीं से कॉपी कर रहा हूं। ओके। पर इस फंक्शन में थोड़ा बहुत चेंज करना पड़ेगा मुझे। अब ये फंक्शन क्या करता है? ये दो इंटेक्स इंट ऐसे दो आर्गुमेंट नहीं लेता बल्कि एक रैंडम क्लास का एक ऑब्जेक्ट लेता है। लेट्स से R ठीक है? और क्या करता है? यह जो r.x है उसमें डाल देता है r.x + 10 अगेन 10 को बढ़ा देगा x और y दोनों में। अब क्योंकि ये खुद एक रैंडम का ऑब्जेक्ट लेता है तो उसके अंदर जाकर के x की वैल्यू बढ़ाता है और उसके अंदर जाकर के y की वैल्यू भी बढ़ाता",
+      "source": "transcript_api",
+      "english_text": "I am copying this function from here. Ok. But I will have to make some changes in this function. Now what does this function do? These two integer ints do not take two arguments but an object of a random class. Is R from Let's ok? What else does it do? This puts in whatever r.x is, r.x + 10 again will increase 10 in both x and y. Now because it itself takes a random object, then by going inside it, it increases the value of x and by going inside it, it also increases the value of y."
+    },
+    {
+      "start_time": 1075.84,
+      "end_time": 1108.08,
+      "text": "है। तो r डॉटy + 10 कुछ इस तरीके से। ठीक है? अभी भी ये कुछ रिटर्न नहीं कर रहा। बिल्कुल सेम है। और अगेन अब मैं वही करता हूं। पहले मैं प्रिंट करता हूं इसको अ अपने x और y की वैल्यू को विदाउट इंक्रीमेंट। तो मेरा x और y क्या होगा? R1.x R1.Y कुछ इस तरीके से R1.Y ठीक है। फिर मैं क्या करूंगा? अपने दोबारा ऐड 10 फंक्शन को कॉल कर दूंगा यूजिंग R1 और दोबारा मैं X और Y को प्रिंट करूंगा।",
+      "source": "transcript_api",
+      "english_text": "Is. So r dotty + 10 something like this. Ok? Still it is not returning anything. It's exactly the same. And again now I do the same. First I print the values ​​of my x and y without increment. So what will be my x and y? R1.x R1.Y Something like this R1.Y is fine. Then what will I do? I'll call my add 10 function again using R1 and again I'll print X and Y."
+    },
+    {
+      "start_time": 1105.6,
+      "end_time": 1131.44,
+      "text": "कुछ इस तरीके से। अच्छा अब क्या आउटपुट होगा? कुछ चेंज होगा क्या आउटपुट में? देख लेते हैं। पहले हमारा 4 5 हमने R1 में डाला। तो हमने उसको प्रिंट कर दिया। फिर हमने ऐड 10 कॉल कराया। अह रैंडम R वैल्यू को दे के। ये सब R1 का ऑब्जेक्ट यहां चला गया होगा। फिर मैंने R.x को R.x + 10 कर दिया। R.Y को R.Y + 10 कर दिया। और फिर मैंने R1X और R1Y को अपना प्रिंट करवा लिया। तो चलो एक बार देखते हैं।",
+      "source": "transcript_api",
+      "english_text": "Something like this. Well what will be the output now? Will there be any change in the output? Let's take a look. First our 4 5 we put into R1. So we printed it. Then we made add 10 calls. Ah by giving random R value. All these objects of R1 must have gone here. Then I changed R.x to R.x + 10. R.Y was changed to R.Y + 10. And then I got my prints of R1X and R1Y. So let's take a look."
+    },
+    {
+      "start_time": 1129.52,
+      "end_time": 1155.919,
+      "text": "अब देखो यहां तो वैल्यू इंक्रीमेंट हो गई। 4 5 से हमारी सीधा हो गई 1415। ठीक है? तो क्या फर्क है इसमें कि वैल्यू इंक्रीमेंट हो गई। और क्या हुआ इसमें कि वैल्यू इंक्रिमेंट नहीं हुई। तो हमें इसको देखना है। तो चलो फटाफट आईपैड पे चल के देखते हैं। तो देखो ये सब जो अभी हम चीजें देखी ना एक हमने एग्जांपल देखा कॉल बाय वैल्यू का और दूसरा एग्जांपल हमने देखा कॉल बाय रेफरेंस का। ठीक है? तो इसे एक-एक करके समझते हैं कि पहले होता क्या है। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "Now see here the value has been increased. From 4 5 our number became 1415. Ok? So what is the difference that the value has been increased? And what happened is that the value did not increase. So we have to see this. So let's quickly move on to the iPad and see. So look at all these things that we have just seen, one example is call by value and the other is call by reference. Ok? So let's understand it one by one, what happens first. Ok?"
+    },
+    {
+      "start_time": 1153.679,
+      "end_time": 1185.2,
+      "text": "और जावा में हम कैसे चीजों को फॉलो करते हैं। तो जो भी हमने एग्जांपल लिया, पहले मैं उसको एक बार थोड़ा सा रीड्रॉ कर लेता हूं कि हमारा एक मेन कोड था। पहले वाले एग्जांपल में हमारा int x = 4 था। इंट x इंट y = 5 था। कुछ इस तरीके से था। है ना? और हमने इस मेन के बाहर एक और फंक्शन लिखा हुआ था ऐड 10 और यहां पे हम क्या कर रहे थे? एक दो वेरिएबल एक्सपेक्ट करते थे x और y दो पैराटर्स बेसिकली और उन दोनों में x",
+      "source": "transcript_api",
+      "english_text": "And how do we follow things in Java. So whatever example we took, first I redraw it a little once so that we had a main code. In the earlier example our int was x = 4. int x was int y = 5. It was something like this. Isn't it? And we had written another function outside this main add 10 and what were we doing here? A two variables x and y are two parameters basically and in both of them x"
+    },
+    {
+      "start_time": 1182.559,
+      "end_time": 1215.84,
+      "text": "को उन दोनों में 10 को बढ़ाते थे। x = x + 10 y = y + 10 कुछ इस तरीके से है ना? ये पहले वाले कोड की मैं बात कर रहा हूं। और ये सारा का सारा कोड कहां लिखा हुआ था? हमारी मेन क्लास के अंदर यहां डेमो क्लास के अंदर सॉरी जिसको हम डेमो क्लास बोलते थे। कुछ इस तरीके से। तो यहां पे हुआ क्या होगा? इसको मैं एक बार साइड में रख के समझाता हूं। सबसे पहले मैंने क्या किया? मैंने यहां पे लोकल दो वेरिएबल्स डिक्लेअर किए फोर और फाइव। तो यहां पे क्या हुआ होगा? पहले एक कंटेनर बना होगा x नाम का और एक कंटेनर बना होगा y नाम का। x के",
+      "source": "transcript_api",
+      "english_text": "was increased by 10 in both of them. x = x + 10 y = y + 10 Something like this, right? This is the earlier code I am talking about. And where was all this code written? Inside our main class, here inside the demo class, sorry, we called it demo class. Something like this. So what would have happened here? Let me keep this aside and explain. What did I do first? Here I declared two local variables four and five. So what might have happened here? First a container named x and a container named y will be created. of x"
+    },
+    {
+      "start_time": 1214.0,
+      "end_time": 1248.96,
+      "text": "अंदर कौन सी वैल्यू पड़ी होगी? फोर। y के अंदर कौन सी वैल्यू पड़ी होगी? फाइव। ये सब कहां हुआ होगा? यहां पे मेन फंक्शन के अंदर। फिर मैंने क्या किया? मैंने इन दोनों को प्रिंट किया। यहां पे मैं लिखता हूं सिस्टम डॉट ऑर्डर प्रिंट लेन। x और y को मैंने प्रिंट किया। तो भैया स्क्रीन पे प्रिंट हो गया हमारा क्या? फोर और फाइव। आराम से प्रिंट हो गया क्योंकि यहां पे मैंने इन दोनों को प्रिंट कर दिया। ओके। फिर मैं क्या करता था? मैं यहां पे फंक्शन कॉल करता था ऐड 10। तो यहां पे लिखा होता था ऐड सॉरी हां। यहां पे लिखा होता था ऐड",
+      "source": "transcript_api",
+      "english_text": "What value would lie inside? Four. Which value would lie inside y? Five. Where would all this have happened? Here inside the pay main function. Then what did I do? I printed both of these. Here I write system dot order print lane. I printed x and y. So brother, what about us if it is printed on the screen? Four and five. It got printed easily because I printed both of them here. Ok. Then what did I do? I used to call function here add 10. So it was written here 'Ad Sorry Yes'. Ad was written here"
+    },
+    {
+      "start_time": 1245.44,
+      "end_time": 1280.32,
+      "text": "10 और उसमें मैं x और y दे के कॉल कर देता था। कुछ इस तरीके से। ठीक है? एक बार मैं थोड़ा सा स्पेस कर लेता हूं। उसके बाद मैं क्या करता था? अपना ऐड 10 नाम का फंक्शन कॉल करता था x y वैल्यू दे के। अब जब मैं ये x और y वैल्यू इस ऐड 10 फंक्शन को दे रहा हूं एज एन एट्रिब्यूट तो ये वैल्यूज जाती होंगी यहां पे। ठीक है? x और y वैल्यूज जाती होंगी यहां पे इस फंक्शन में। अब जावा क्या कहता है कि जब भी आप ऐसे एट्रिब्यूट से वैल्यू पास करोगे इन पैरामीटर्स में तो ये जो x और y हैं ये",
+      "source": "transcript_api",
+      "english_text": "10 and in that I used to give x and y and call. Something like this. Ok? Once I get a little space. What did I do after that? I used to call my function called add10 by giving x y value. Now when I am giving these x and y values ​​to this add 10 function as an attribute, these values ​​will go here. Ok? The x and y values ​​will go into this function here. Now what Java says is that whenever you pass a value from such an attribute, these parameters which are x and y are"
+    },
+    {
+      "start_time": 1277.28,
+      "end_time": 1311.28,
+      "text": "सेम x और y नहीं होंगे। मैं यहां पे दो नए x वेरिएबल्स बनाऊंगा x और y और उनमें इन वैल्यूज को कॉपी करूंगा। राइट? क्या मतलब? यहां पे भी मैं दो वेरिएबल डिक्लेअर करूंगा। एक x होगा एक y। बेसिकली मैं यहां पे दो वेरिएबल एक्सपेक्ट कर रहा हूं x और y। ये मेरे पैरामीटर्स हो गए जो कि एक अलग वेरिएबल्स हैं इन दोनों से। अब इन पैरामीटर्स में जब तुमने इस फंक्शन को कॉल किया होगा तो तुमने दो एट्रिब्यूट्स पास किए होंगे। और वो एट्रिब्यूट्स हैं x 5 व्हिच इज़ 4 5। अब जब ये तुमने यहां पास किए तो फोर की वैल्यू यहां पे कॉपी हो गई।",
+      "source": "transcript_api",
+      "english_text": "The beans will not be x and y. I will create two new x variables here x and y and copy these values ​​into them. Right? What do you mean? Here also I will declare two variables. An x will be a y. Basically I am expecting two variables here x and y. These become my parameters which are separate variables from both of them. Now in these parameters, when you called this function, you must have passed two attributes. And those attributes are x 5 which is 4 5. Now when you passed this here, the value of four got copied here."
+    },
+    {
+      "start_time": 1309.039,
+      "end_time": 1336.48,
+      "text": "यहां पे मतलब नया फोर बना। इसको मैं वाइट से लिख देता हूं। हां। यहां पे नया फोर ऐड हुआ और y की वैल्यू यहां पे कॉपी हो गई। तो यहां पे भी हमारा क्या बना? यहां पे आ गया हमारा फाइव। तो याद रखो ये फोर और ये फाइव बिल्कुल अलग है इन दोनों से। इन फोर और इस फाइव से। ठीक है? तो यहां पे हमारी वैल्यू कॉपी हुई है। राइट? ना कि यही वैल्यू उठ के यहां पे आई है। तो ये दोनों x अलग-अलग है। ये दोनों y भी अलग-अलग हैं।",
+      "source": "transcript_api",
+      "english_text": "Here it means a new four is created. I write this in white. Yes. A new four is added here and the value of y is copied here. So what became of us here also? Our five is here. So remember this four and this five are completely different from these two. From these four and this five. Ok? So here our value is copied. Right? Not that this value has come here. So these two x's are different. These two y's are also different."
+    },
+    {
+      "start_time": 1334.0,
+      "end_time": 1367.76,
+      "text": "ओके? अब क्या होगा? अब मैं इस फंक्शन के अंदर गया। इस फंक्शन के अंदर मैंने किया x को x + 10, y को y + 10 तो कौन सा x और y चेंज होगा? ऑब्वियसली ये वाला ये फोर को हो गया 14, ये फाइव का हो गया 15। और इसके बाद क्या हुआ? हमारा फंक्शन खत्म हो गया। जैसे ही फंक्शन खत्म होता है, हम क्या करते हैं? हम वापस से वहां चले जाते हैं जिसने फंक्शन को कॉल किया था। तो हम वापस से आ गए यहां पे इस वाली लाइन पे। और इस वाली लाइन के जस्ट अगली लाइन में क्या लिखा हुआ था? दोबारा से हमने प्रिंट करने की कोशिश की हुई थी x और y को। अब इस बार कौन से x और y प्रिंट",
+      "source": "transcript_api",
+      "english_text": "ok? What will happen now? Now I went inside this function. Inside this function I changed x to x + 10, y to y + 10 then which x and y will change? Obviously this one becomes 14 for four, this one for five becomes 15. And what happened after this? Our function is over. As soon as the function is over, what do we do? We go back to the one who called the function. So we came back here to this line. And what was written in the line just next to this line? Again we tried to print x and y. Now which x and y print this time"
+    },
+    {
+      "start_time": 1365.919,
+      "end_time": 1400.88,
+      "text": "होंगे? ये वाले x और y प्रिंट होंगे। क्यों? क्योंकि ये वाले x और y तो मेमोरी से जा चुके हैं। जैसे ही याद रखना ये फंक्शन कॉल खत्म हुआ हमारे ये वाले जो x और y थे ये मेमोरी से इरेज हो चुके हैं। इनका अब कोई रेलेवेंस नहीं है। अब जैसे ही हमने 4 5 प्रिंट किए सॉरी x y प्रिंट किया। दोबारा से हमारा 4 5 प्रिंट हो गया स्क्रीन पे। कौन सा? ये वाला। ठीक है? तो इसलिए हमारी वैल्यू में कोई चेंज ही नहीं हुआ। ठीक है? तो इसी को हम कहते हैं कॉल बाय वैल्यू। इसको हम क्या कहते हैं? कॉल",
+      "source": "transcript_api",
+      "english_text": "will happen? These will be printed x and y. Why? Because these x and y are gone from memory. Remember, as soon as this function call ends, our x and y are erased from the memory. They have no relevance now. Now as soon as we printed 4 5 sorry printed x y. Again our 4 5 is printed on the screen. Which one? This one. Ok? So that's why there was no change in our values. Ok? So this is what we call call by value. What do we call this? call"
+    },
+    {
+      "start_time": 1397.28,
+      "end_time": 1430.4,
+      "text": "बाय वैल्यू। बेसिकली जावा में आपने क्या किया? x और y को जब इस मेथड को कॉल किया है 10 को तो कॉल बाय वैल्यू किया। बेसिकली x और y यहां पे नए वेरिएबल्स थे। इनकी वैल्यू यहां पे सिर्फ कॉपी हुई। और क्योंकि यहां पे सिर्फ कॉपी हुई थी। तो जो भी इसने चेंज किया होगा वो इस नए वेरिएबल्स में किया होगा। और जैसे ये फंक्शन खत्म हुआ ये वेरिएबल्स अपने मेमोरी से निकल गए क्योंकि इनका कोई काम नहीं है। लोकल वेरिएबल थे। वापस से जब आप यहां गए आपने दोबारा प्रिंट किया तो आपने उन्हीं वेरिएबल को प्रिंट किया जो मेन फंक्शन के अपने वेरिएबल थे। ठीक है? ओके। अब भैया लेकिन सेकंड वाले कोड में क्या हुआ था?",
+      "source": "transcript_api",
+      "english_text": "Buy Value. Basically what did you do in Java? When this method is called on x and y, 10 is called by value. Basically x and y were new variables here. Their values ​​were just copied here. And because it was only copied here. So whatever change it might have made would have been done in this new variable. And as soon as this function ends, these variables go out of memory because they have no use. Were local variables. When you went back here and printed again, you printed the same variables which were the main function's own variables. Ok? Ok. Now brother, but what happened in the second code?"
+    },
+    {
+      "start_time": 1428.88,
+      "end_time": 1459.6,
+      "text": "उसमें तो हमारी वैल्यू्यूज चेंज हो गई थी। उसमें हमने क्या किया था? हमने ये जो x और y है डायरेक्टली यहां पे ना बना करके एक अलग ऑब्जेक्ट में बना दिया। एक अलग क्लास में बना दिया था। है ना? उसको समझने से पहले आप जरा एक बार इसको दोबारा देखो। क्या हो? क्या हो कि अगर हम किसी तरह से कुछ ऐसा कोड लिख पाएं कि जब हम यहां पर x और y पास कर रहे हैं ना तो यहां पर नए x और y वेरिएबल क्रिएट ना हो बल्कि किसी तरह ये x भी इसी को रेफर करे और ये y भी इसी को रेफर करे। राइट? उस केस में क्या होगा?",
+      "source": "transcript_api",
+      "english_text": "Our values had changed in that. What did we do in that? Instead of creating these x and y directly here, we created a separate object. Made it in a separate class. Isn't it? Before understanding it, just look at it once again. what are you? What if we can somehow write such code that when we are passing x and y here, neither new x and y variables are created here, but somehow this x also refers to this and this y also refers to this. Right? What will happen in that case?"
+    },
+    {
+      "start_time": 1457.279,
+      "end_time": 1488.559,
+      "text": "जब मैं x को x + 10 करूंगा तो ये +10 होगा। y को y + 10 करूंगा तो ये +10 होगा। है ना? और जब मैं दोबारा प्रिंट करने की कोशिश करूंगा तो इस बार 14 और 15 प्रिंट होगा। राइट? हम बस समझ रहे हैं कि ऐसा भी तो किया जा सकता था। राइट? कि यहां पे अगर मैं फोर डायरेक्टली इस x को यहां रेफर करा देता और इस y को डायरेक्टली यहां रेफर कराता। नए ऑब्जेक्ट ना बनाता या सॉरी नया वेरिएबल्स ना बनाता तो डायरेक्टली इनमें चेंज होता। राइट? ये हमने फर्स्ट थॉट प्रिंसिपल से सोचा। अब ऐसा किया जा सकता था पर जावा में हम ऐसा कर नहीं सकते।",
+      "source": "transcript_api",
+      "english_text": "When I make x x + 10, it will be +10. If I change y to y + 10 then it will be +10. Isn't it? And when I try to print again this time 14 and 15 will be printed. Right? We are just realizing that this could also be done. Right? That here if I four directly refer this x here and this y directly refer here. If you had not created new objects or, sorry, had not created new variables, there would have been a change in them directly. Right? We thought this from the first thought principle. Now this could be done but we cannot do this in Java."
+    },
+    {
+      "start_time": 1486.799,
+      "end_time": 1520.799,
+      "text": "क्योंकि ये जो कांसेप्ट मैंने अभी आपको बताया ये C++ में फिर भी पॉसिबल है कि आप इसको डायरेक्टली एज़ रेफरेंसेस पास कर दो। अगर आप C++ बिल्कुल नहीं जानते कोई बात नहीं। पर आप बस इतना समझ लो कि C++ में ये पॉसिबल था। जावा में कभी ऐसा पॉसिबल होता ही नहीं है। यानी कि जा जो हमने अभी समझा इस तरीके को हम कहते हैं कॉल बाय रेफरेंस। जो मैंने आपको बोला कि अगर मैं सीधा रेफरेंस पास कर देता कॉल बाय रेफरेंस। और जावा में कोई भी चीज कॉल बाय रेफरेंस हो ही नहीं सकती। देयर इज़ नो कॉल बाय रेफरेंस का कांसेप्ट इन जावा।",
+      "source": "transcript_api",
+      "english_text": "Because this concept that I just told you is still possible in C++ that you can pass it directly as references. It doesn't matter if you don't know C++ at all. But you just understand that this was possible in C++. This is never possible in Java. That is, what we have just understood, we call this method call by reference. What I told you is that if I had passed the reference directly, I would have called by reference. And in Java nothing can be called by reference. There is no concept of call by reference in Java."
+    },
+    {
+      "start_time": 1519.12,
+      "end_time": 1552.96,
+      "text": "जावा में सिर्फ कॉल बाय वैल्यू का कांसेप्ट है। इसका कांसेप्ट है जावा में। राइट? अगर कॉल बाय वैल्यू का ही कांसेप्ट है जावा में और कॉल बाय रेफरेंस का कोई कांसेप्ट नहीं है तो हमारा सेकंड कोड कैसे वर्क कर रहा था। मैं अभी उसके बारे में बताऊंगा कि वो कैसे वर्क कर रहा था। कैसे उसमें वैल्यू चेंज हो पा रही थी। आंसर अभी भी यही है कि वो भी हो कॉल बाय वैल्यू ही रहा था। पर वो थोड़े डिफरेंट तरीके से हो रहा था। ठीक है? तो एक बार अब उसको डिस्कस कर लेते हैं कि वो हो कैसे रहा था। तो पहले उस सिचुएशन में चलते हैं कि हमारी सिचुएशन क्या थी? हमने क्या हुआ था? हमारी यहां पे एक तो डेमो क्लास थी। ठीक है? और",
+      "source": "transcript_api",
+      "english_text": "Java has only the concept of call by value. Its concept is in Java. Right? If there is only the concept of call by value in Java and there is no concept of call by reference then how was our second code working. I will just tell you about how he was working. How was the value changing in it? The answer is still that that too was call by value. But it was happening in a slightly different way. Ok? So now let us discuss how it was happening. So first let's go into that situation, what was our situation? What happened to us? We had a demo class here. Ok? and"
+    },
+    {
+      "start_time": 1550.32,
+      "end_time": 1582.96,
+      "text": "हमारी थी एक मेन क्लास सॉरी एक रैंडम क्लास। हमने दो क्लास बनाई थी। एक रैंडम भी बनाई थी। इसको मैं थोड़ा और नीचे बना देता हूं। यहां पे एक थी रैंडम क्लास। ठीक है? अब इस रैंडम क्लास के अंदर क्या था? यहां पे हमने दो वेरिएबल x और y डिक्लअ किए हुए थे। कुछ इस तरीके से। और डेमो क्लास के अंदर जो हमारा मेन फंक्शन था, मैं पूरा कोड नहीं लिख रहा। ठीक है? तो थोड़ा बहुत ऑब्वियसली सिंटेक्स एरर होगा। अब मेन क्लास के अंदर क्या था? मेन क्लास में मैं इस रैंडम का एक ऑब्जेक्ट बनाता था। लेट्स से रेंडम R1 = न्यू रैंडम",
+      "source": "transcript_api",
+      "english_text": "We had a main class, sorry, a random class. We had created two classes. A random one was also made. Let me make this a little further down. There was a random class here. Ok? Now what was inside this random class? Here we had declared two variables x and y. Something like this. And inside the demo class which was our main function, I am not writing the complete code. Ok? So obviously there will be some syntax error. Now what was inside the main class? In the main class I created an object of this random. Let Random R1 = New Random"
+    },
+    {
+      "start_time": 1580.88,
+      "end_time": 1606.24,
+      "text": "कुछ ऐसे और यहां पे मैं वैल्यू दे देता था 4 5 ठीक है? अब मैंने यहां पे कंस्ट्रक्टर नहीं बनाया पर आप समझ लेना 4 5 का यहां पे कंस्ट्रक्टर बना होगा जो इस x और y को ये वाली वैल्यू असाइन कर देगा। ठीक है? तो इसको मैं थोड़ा सा ठीक से लिख देता हूं। मैं यहां पे वैल्यू दे देता था 4 5 ओके। फिर मैं क्या करता था? अगेन मैं पहले स्क्रीन पे प्रिंट करने की कोशिश करता था।",
+      "source": "transcript_api",
+      "english_text": "Something like this and here I used to give value 4 5 ok? Now I have not created a constructor here, but you can understand that there must be a constructor created here for 4 5 which will assign these values ​​to this x and y. Ok? So let me write it a little properly. I used to give value here 4 5 ok. Then what did I do? Again, I first tried to print on screen."
+    },
+    {
+      "start_time": 1602.48,
+      "end_time": 1636.799,
+      "text": "R1.x R1.Y तो हमारा स्क्रीन पे प्रिंट होता था फोर और फाइव वि इज नेचुरल। है ना? फिर मैं क्या करता था? अपना अगेन ऐड 10 नाम का फंक्शन कॉल करता था। अच्छा ऐड 10 का फंक्शन तो मैंने बनाया नहीं। तो उसको यहां बना लेते हैं। ऐड 10 का फंक्शन वो क्या करता था? वो एक रैंडम नाम का रेफरेंस वेरिएबल एक्सपेक्ट करता था। R कुछ ऐसे वो R.x में क्या कर देता था? R.x में जो भी पड़ा है +10 और R.Y में R.Y में ऑलरेडी जो पड़ा है उसमें भी +10 कुछ ऐसा ही काम होता",
+      "source": "transcript_api",
+      "english_text": "R1.x R1.Y So, four and five were printed on our screen which is natural. Isn't it? Then what did I do? Used to call its function called again add10. Well, I did not create the add 10 function. So let's make it here. What was the function of Ad 10? It expected a reference variable with a random name. R Like what he used to do in R.x? Whatever is already in R.X is +10 and whatever is already in R.Y is +10, a similar thing happens"
+    },
+    {
+      "start_time": 1634.48,
+      "end_time": 1661.6,
+      "text": "था। तो फिर हम अगेन ऐड 10 को कॉल करते थे। ये R1 रेफरेंस वेरिएबल देके। ठीक है? ओके? तो मैंने यहां पे R1 पास कर दिया और अगेन मैं सिस्टम डॉट आउट डॉट प्रिंट लाइन करता था। R1.x R1.Y अभी तक मैंने कुछ नहीं किया। पूरा का पूरा वही कोड लिखा है जो मैंने अपने अ एडिटर में लिखा हुआ था। ओके बहुत बढ़िया। अब एक-एक करके चलते हैं। बिल्कुल सेम प्रोसीजर फॉलो करेंगे। सबसे पहले देखो मैंने क्या किया? मैंने रैंडम नाम का एक ऑब्जेक्ट बनाया। अ R1 नाम से।",
+      "source": "transcript_api",
+      "english_text": "Was. So then we used to call again add 10. By giving this R1 reference variable. Ok? Ok? So I passed R1 here and again I used to print system dot out dot line. R1.x R1.Y I haven't done anything yet. The entire code is the same which I had written in my editor. Okay, great. Now let's go one by one. Will follow exactly the same procedure. First of all look what I did? I created an object named Random. A by the name R1."
+    },
+    {
+      "start_time": 1659.52,
+      "end_time": 1692.88,
+      "text": "R1 उसका एक रेफरेंस वेरिएबल है। ठीक है? तो इसको मैं थोड़ा-थोड़ा यहां करके दिखाता हूं कि हो क्या रहा होगा। अ सबसे पहले हमारे पास आपको पता है दो मेमोरी होती है। ये है हमारी स्टक मेमोरी। लेट्स से ये है हमारी हीप मेमोरी। ठीक है? अब इस हिप मेमोरी के अंदर हमारा एक ऑब्जेक्ट बना होगा। ठीक है? रैंडम और इसमें दो वेरिएबल होंगे x और y. X होगा हमारा फोर। Y होगा हमारा फाइव। और इसका रेफरेंस पॉइंटर कहां होगा? R1 यहां पे स्टक के अंदर बहुत बढ़िया। फिर देखो अगली लाइन में मैंने क्या किया? इन दोनों को प्रिंट कर दिया।",
+      "source": "transcript_api",
+      "english_text": "R1 is its reference variable. Ok? So let me show you here little by little what might be happening. A. First of all, you know we have two memories. This is our stuck memory. This is our heap memory from Lets. Ok? Now we will have an object created inside this hip memory. Ok? Random and will have two variables x and y. X will be our four. Y will be our five. And where will be its reference pointer? R1 Very nice inside the pe st here. Then look what I did in the next line? Printed both of these."
+    },
+    {
+      "start_time": 1689.919,
+      "end_time": 1721.36,
+      "text": "कोई बात नहीं। R1.x किया तो मैं कैसे आया? R1.x 4 R1.Y 5 तो मैंने 4 5 स्क्रीन पे प्रिंट कर दिया। फिर मैंने क्या किया? ऐड 10 कॉल किया। इस रेफरेंस वेरिएबल को देके। और ये R1 किसने रिसीव किया? ये इस नए फंक्शन ऐड 10 ने रिसीव किया। इसने क्या किया? एक पैरामीटर बना रखा था R और उसने कहा जो भी यहां पे रेफरेंस पॉइंटर आ रहा है वो इसमें डाल दो। अब होगा अभी भी वही जो पहले हुआ था। ये जो पैरामीटर R एक्सपेक्ट कर रहा है ये एक अलग रेफरेंस वेरिएबल है। तो बेसिकली अब क्या होगा?",
+      "source": "transcript_api",
+      "english_text": "No problem. Did R1.x so how did I come? R1.x 4 R1.Y 5 So I printed 4 5 on the screen. Then what did I do? Called Add 10. Given this reference variable. And who received this R1? This new function add 10 received. What did it do? A parameter R was created and he said whatever reference pointer is coming here, put it in it. Now the same thing that happened before will still happen. The parameter R it is expecting is a separate reference variable. So basically what will happen now?"
+    },
+    {
+      "start_time": 1718.559,
+      "end_time": 1744.72,
+      "text": "स्टक के अंदर ही इसी स्टक मेमोरी के अंदर एक और वेरिएबल बन जाएगा R के नाम से। वो कौन सा वेरिएबल है? वो ये वाला वेरिएबल है। ठीक है? अब ये क्या कह रहा है? R1 के अंदर जो भी है R1 के अंदर जो भी है वो R में कॉपी कर दो। बिल्कुल सेम। जैसे यहां पे X = 4 लिखा था। तो यहां पे एक वेरिएबल बनता था X। यहां पे ये खुद का एक वेरिएबल बनाता था X और कहता था X में जो भी है वो यहां कॉपी कर दो।",
+      "source": "transcript_api",
+      "english_text": "Another variable named R will be created inside the same stuck memory. Which variable is that? That's this variable. Ok? Now what is he saying? Whatever is inside R1, copy whatever is inside R1 to R. Exactly the same. Like it was written here that X = 4. So here a variable was created X. Here he used to create his own variable X and say whatever is in X, copy it here."
+    },
+    {
+      "start_time": 1743.2,
+      "end_time": 1776.399,
+      "text": "यहां अगर फोर होता था तो यहां पे फोर आ जाता था। सेम अभी भी ये कह रहा है R में जो भी R1 में जो भी है वो R में भी कॉपी कर दो। अब हमें पता है R1 के अंदर क्या होता है? क्योंकि R1 एक रेफरेंस वेरिएबल है। इसके अंदर एड्रेस होता है इस ऑब्जेक्ट का। इस रैंडम ऑब्जेक्ट का। तो R1 के अंदर इसका ऑब्जेक्ट है। तो R कह रहा है कि मेरे पास भी इसका ऑब्जेक्ट का एड्रेस होना चाहिए। तो R ने भी क्या किया? R1 से इसका ऑब्जेक्ट कॉपी कर लिया। यानी कि अब ये R भी तो इसी पे पॉइंट करेगा। राइट? तो अब क्या होगा? ये R भी किसी तरीके से इसी पे",
+      "source": "transcript_api",
+      "english_text": "If there was a four here, then a four would come here. The same is still saying that whatever is in R, whatever is in R1, copy it to R also. Now we know what happens inside R1? Because R1 is a reference variable. Inside it is the address of this object. of this random object. So inside R1 is its object. So R is saying that I should also have the address of its object. So what did R also do? Copied its object from R1. That means now this R will also point at this point. Right? So what will happen now? This R is also on this in some way"
+    },
+    {
+      "start_time": 1774.32,
+      "end_time": 1809.279,
+      "text": "पॉइंट करने लगेगा। क्यों? क्योंकि R के अंदर भी वही एड्रेस स्टोर है जो R1 के अंदर स्टोर है। अब दोनों अगर सेम एड्रेस को पॉइंट कर रहे हैं तो दोनों का एरो हम सेम तरीके से बना सकते हैं। है ना? तो हुआ ये कॉल बाय वैल्यू हुई कि R1 के अंदर जो भी स्टोर था वो R के अंदर आ गया। पर क्योंकि R1 के अंदर उसका एड्रेस स्टोर था तो R के अंदर भी उसका एड्रेस आ गया। तो यानी कि R भी इसी ऑब्जेक्ट को पॉइंट कर रहा है। अब जब मैंने इस मेथड के अंदर इस मेथड के अंदर RX को 10 से बढ़ाया। R.Y को 10 से बढ़ाया। अब मैंने क्या किया? इस R पे डॉट ऑपरेटर लगाया। R.X अब जैसे ही मैं डॉट",
+      "source": "transcript_api",
+      "english_text": "Will start pointing. Why? Because the same address is stored inside R which is stored inside R1. Now if both are pointing to the same address then we can make the arrows of both in the same way. Isn't it? So this call by value happened that whatever was stored inside R1 came inside R. But because its address was stored inside R1, its address came inside R also. So that means R is also pointing to this object. Now when I increased RX by 10 inside this method. R.Y increased by 10. what have I done now? Dot operator applied on this R. R.X now as soon as I dot"
+    },
+    {
+      "start_time": 1807.44,
+      "end_time": 1841.44,
+      "text": "X करूंगा मैं कहां जाऊंगा? मैं अगेन इस ऑब्जेक्ट के अंदर चला जाऊंगा। क्योंकि ये दोनों ऑब्जे ये दोनों रेफरेंसेस इसी ऑब्जेक्ट को पॉइंट कर रहे हैं। तो बेसिकली जो मैं वैल्यू चेंज करूंगा फोर की 14 वो इसी ऑब्जेक्ट के अंदर जाके करूंगा। तो मैं इस फोर को कर दूंगा 14। इस फाइव को कर दूंगा 15। अब देखो क्या हुआ? जैसे ही ये हमारा ऐड 10 नाम का फंक्शन खत्म हुआ होगा क्योंकि ये R जो वेरिएबल था वो एक लोकल वेरिएबल था। रेफरेंस वेरिएबल भी एक लोकल वेरिएबल होते हैं। तो इस R का रे R का जो सिग्निफिकेंस है वो खत्म हो गया। अब अगर R का सिग्निफिकेंस खत्म हुआ इसका मतलब क्या होता है? इसको मैं हटा देता हूं क्रॉस",
+      "source": "transcript_api",
+      "english_text": "Will I do X? Where will I go? I'll go inside this object again. Because both these objects and these two references are pointing to the same object. So basically whatever I change the value of four key 14 will do by going inside this object. So I'll make this four 14. I will make this five 15. Now see what happened? As soon as this, our function called add 10 would have ended because this variable R was a local variable. Reference variable is also a local variable. So the significance of this R has ended. Now what does it mean if R loses its significance? I remove this cross"
+    },
+    {
+      "start_time": 1839.12,
+      "end_time": 1872.24,
+      "text": "करके। जैसे ही R का सिग्निफिकेंस खत्म हुआ मतलब इस पॉइंटर का कोई मतलब नहीं है। ये जो पॉइंट कर रहा था इसका कोई मतलब नहीं है। ठीक है? अब यहां पे किसी को कोई पॉइंट नहीं कर रहा। ये कौन करता है? गार्बेज कलेक्शन करता है कि R का जो पॉइंटर्स वगैरह हटाता है। ठीक है? वो सब हम बाद में समझेंगे। पर अभी आप समझ लो कि ये पॉइंटर हट चुका है मेमोरी से। लेकिन उसकी वैल्यूज़ तो परमानेंटली चेंज हो गई क्योंकि वो हटने से पहले इसकी वैल्यूज़ चेंज करके चला गया था। यानी कि अब जब हम दोबारा R1.x R1.Y प्रिंट करेंगे तो स्क्रीन पे क्या प्रिंट होगा? स्क्रीन पे प्रिंट होगा 14 और 15।",
+      "source": "transcript_api",
+      "english_text": "By doing. As soon as R loses significance it means this pointer has no meaning. The point he was making made no sense. Ok? Now no one is pointing anyone here. Who does this? Garbage collection is what R does which removes pointers and so on. Ok? We will understand all that later. But now you understand that this pointer has been removed from the memory. But its values ​​were permanently changed because he had changed its values ​​before leaving. That means, now when we print R1.x R1.Y again, what will be printed on the screen? 14 and 15 will be printed on the screen."
+    },
+    {
+      "start_time": 1870.24,
+      "end_time": 1903.279,
+      "text": "ठीक है? तो ये है पूरी की पूरी कहानी। हमेशा होगा वही। सेम प्रोसीजर फॉलो होगा। ये जो R1 है और ये जो R है ये अलग-अलग वेरिएबल बनेंगे। लेकिन केस क्या है कि R1 जिसे पॉइंट कर रहा है R कहेगा मैं भी उसी को पॉइंट करूंगा। क्योंकि R1 के अंदर जो भी स्टोर है स्टोर क्या होगा? लेट्स से कोई एड्रेस 1001 तो R कहेगा मैं भी 10001 को स्टोर कर लूंगा। अब 1001 क्योंकि एक हिप का एड्रेस है। तो अगर आप इस हिप के एड्रेस पे जाओगे आपको मिलेगा तो एक ही ऑब्जेक्ट। राइट? ऐसा नहीं है कि एक दूसरा ऑब्जेक्ट क्रिएट हो जाएगा। राइट? यहां इस केस के लिए एक दूसरा ऑब्जेक्ट थोड़ी",
+      "source": "transcript_api",
+      "english_text": "ok? So this is the whole story. It will always be the same. Same procedure will be followed. This R1 and this R will become separate variables. But what is the case that R will say to whomever R1 is pointing, I will also point to him. Because whatever is stored inside R1, what will be the store? If someone says R with address 1001, I will also store 10001. Now 1001 because is the address of a hip. So if you go to this hip's address, you will get only one object. Right? It is not that another object will be created. Right? Here's a second object for this case"
+    },
+    {
+      "start_time": 1901.919,
+      "end_time": 1936.559,
+      "text": "क्रिएट हो जाएगा। क्योंकि मैंने आपको कहा था ये जो R और R1 होते हैं ये रेफरेंस वेरिएबल होते हैं। ये एक्चुअल ऑब्जेक्ट को रिप्रेजेंट नहीं करते। ये एक ऑब्जेक्ट को पॉइंट करते हैं। एक ऑब्जेक्ट को रेफर करते हैं या उसके एड्रेस को स्टोर करते हैं। तो ऐसा नहीं होगा कि इसी हिप मेमोरी के अंदर हम एक नया ऑब्जेक्ट क्रिएट करेंगे और R उसे पॉइंट करेगा। R1 उसे पॉइंट करेगा। ऐसा कुछ नहीं होगा। सिंपल क्या होगा? दोनों मिलके R1 और R दोनों मिलके एक ही ऑब्जेक्ट को पॉइंट कर रहे होंगे। और क्योंकि वो R उसमें कुछ चेंज कर देगा। वही चेंज हमारा R1 में रिप्रेजेंट हो जाएगा। ठीक है? आई होप आपको ये अच्छे से समझ आ गया होगा। अब",
+      "source": "transcript_api",
+      "english_text": "It will be created. Because I told you that these R and R1 are reference variables. These do not represent the actual object. These point to an object. Refers to an object or stores its address. So it will not happen that inside this hip memory we will create a new object and R will point to it. R1 will point to it. Nothing like this will happen. What would be simple? Both R1 and R together will be pointing to the same object. And because that R will change something in it. The same change will be represented in our R1. Ok? I hope you have understood this well. now"
+    },
+    {
+      "start_time": 1934.159,
+      "end_time": 1968.399,
+      "text": "कई लोग ना इसमें कंफ्यूज होते हैं जब उनसे पूछा जाता है कि जो जावा लैंग्वेज है वो कॉल बाय वैल्यू है। कॉल बाय वैल्यू या कॉल बाय रेफरेंस है? रेफरेंस है। ठीक है? अब इसका आंसर तो अभी आपको समझ आ ही गया होगा जो हमने ऊपर डिस्कस किया कि जावा बस कॉल बाय वैल्यू है। जावा और कुछ फॉलो नहीं करता। जावा में हर चीज कॉल बाय वैल्यू है। जावा से पहले जो लैंग्वेज थी जैसे कि C हो गई, C++ हो गई वो दोनों होती थी। कॉल बाय वैल्यू पे",
+      "source": "transcript_api",
+      "english_text": "Many people get confused when they are asked whether Java language is call by value. Is call by value or call by reference? There is reference. Ok? Now you must have understood the answer to this which we discussed above that Java is simply call by value. Java does not follow anything else. Everything in Java is call by value. The languages ​​that existed before Java, like C or C++, were both. call by value"
+    },
+    {
+      "start_time": 1966.64,
+      "end_time": 2000.96,
+      "text": "से भी आप वैल्यू पास कर सकते हो। कॉल बाय रेफरेंस से भी आप वैल्यूज़ पास कर सकते हो। ठीक है? कॉल बाय रेफरेंस मैंने आपको थोड़ा सा समझा दिया। उसमें क्या होगा? उसमें इसमें समझते हैं। हां। इसमें जो x और y वेरिएबल यहां बने थे और यहां पे जो अलग-अलग वेरिएबल बने थे वो अलग-अलग ना बन के क्या होगा? ये x भी इसी को पॉइंट कर देंगे हम। ये y भी इसी को पॉइंट कर देंगे। और ये भी इसी में चेंज करेगा। यह भी इसी में चेंज करेगा। 14 और 15 राइट जावा में ऐसा कुछ नहीं है। जावा में आप कुछ भी रेफरेंस से पास कर ही नहीं सकते। लेकिन जावा फिर भी कॉल बाय रेफरेंस वाला आपको एक टेस्ट देता है नॉन प्रिमिटिव्स के अंदर।",
+      "source": "transcript_api",
+      "english_text": "You can also pass value from. You can also pass values ​​by call by reference. Ok? Call by Reference I explained it to you a little bit. What will be there in it? Let's understand that in that. Yes. What will happen if the x and y variables that were created here and the different variables that were created here are not created separately? We will point to this x also. This y will also point to this. And this will also change in this. This will also change in this. 14 and 15 Write There is no such thing in Java. In Java you cannot pass anything by reference. But Java still gives you a test with call by reference inside non primitives."
+    },
+    {
+      "start_time": 1999.039,
+      "end_time": 2033.6,
+      "text": "तो जब भी हम नॉन प्रिमिटिव्स की बात करते हैं आपको इफेक्ट वही मिलता है जो कॉल बाय रेफरेंस का मिलेगा कि वैल्यूज़ जो चेंज होगी वो एक ही वैल्यू चेंज हो जाएगी। पर आपको इसका रीज़न पता है इंटरनली इफेक्ट क्यों मिलेगा? वो इसलिए मिलेगा क्योंकि ऑब्जेक्ट तो सेम है। मेमोरी के अंदर जो ऑब्जेक्ट बनेगा वो सेम बनेगा। लेकिन जो रेफरेंस वेरिएबल हैं वो अलग-अलग कॉपी हो जाएंगे। पर वो कॉपी हो के भी पॉइंट किसे करेंगे? एक ही ऑब्जेक्ट को। क्योंकि दोनों स्टोर क्या कर रहे हैं? एड्रेस ही तो स्टोर कर रहे हैं। वो कोई वैल्यू थोड़ी स्टोर कर रहे हैं। तो R1 अगर 1001 स्टोर करेगा RB 1001 स्टोर कर लेगा। और 1001 कुछ",
+      "source": "transcript_api",
+      "english_text": "So whenever we talk about non-primitives, you get the same effect as you get in call by reference, that is, the values that change will change only one value. But do you know the reason for this? Why will you get the internal effect? It will be available because the object is the same. The object created inside the memory will become a bean. But the reference variables will be copied separately. But even if it is a copy, who will it point to? To the same object. Because what are both stores doing? We are just storing the address. They are storing some value. So if R1 stores 1001 then RB will store 1001. and 1001 something"
+    },
+    {
+      "start_time": 2031.679,
+      "end_time": 2066.56,
+      "text": "नहीं है। दोनों हीप एड्रेस हैं इस ऑब्जेक्ट के। सिंपल। तो आपको कॉल बाय रेफरेंस का एक टेस्ट मिलता है। पर जावा कॉल बाय रेफरेंस नहीं है। और कई फ्रेशर्स इंटरव्यूज में ये गलती करते हैं कि वो बोल देते हैं कि जावा दोनों है। कॉल बाय वैल्यू है प्रिमिटिव्स के लिए। प्रिमिटिव्स और कॉल बाय रेफरेंस है नॉन प्रिमिटिव डेटा टाइप्स के लिए। नॉन प्रिमिटिव्स। पर ऐसा बिल्कुल गलत है। जावा इज़ जस्ट कॉल बाय वैल्यू। चाहे प्रिमिटिव हो चाहे नॉन प्रिमिटिव हो। पर क्योंकि आपको जो नॉन प्रिमिटिव्स होते हैं उसमें रेफरेंसेस अलग-अलग क्रिएट होते हैं, कॉपी होते हैं पर दोनों एट द एंड पॉइंट एक ही ऑब्जेक्ट को कर रहे होते हैं। इसलिए आपको",
+      "source": "transcript_api",
+      "english_text": "It is not. Both are heap addresses of this object. Simple. So you get a test of call by reference. But Java is not call by reference. And many freshers make this mistake in interviews that they say that Java is both. Call by value is for primitives. Primitives and call by reference are for non-primitive data types. Non primitives. But this is absolutely wrong. Java Is Just Call By Value. Be it primitive or non-primitive. But because in the non-primitives you have, the references are created separately and copied but at the end point both are referring to the same object. That's why you"
+    },
+    {
+      "start_time": 2065.2,
+      "end_time": 2090.32,
+      "text": "सेम इफेक्ट देखने को मिलता है जो रेफरेंसेस में मिलता है। कॉल बाय रेफरेंस में दिखता है। आई होप आपको अच्छे से चीजें क्लियर हुई होंगी। इसमें मुझे आपको एक और चीज बतानी है। उसके लिए फटाफट एक बार कोड पे चलते हैं। देखो हम वापस अपने उसी कोड पे हैं। कॉल बाय रेफरेंस सॉरी कॉल बाय रेफरेंस वाले कोड पे। अब इसको हमें करना कर देना चाहिए कि यहां पे लिख देता हूं ताकि कोई गलती ना हो। देयर इज नो कॉल बाय रेफरेंस इन जावा। ठीक है? सिंपल याद रखना।",
+      "source": "transcript_api",
+      "english_text": "Same effect is seen which is found in references. Appears in Call By Reference. I hope things are clear to you. In this I have to tell you one more thing. For that let's quickly go over the code. Look, we are back to our same code. Call by reference Sorry on the code with call by reference. Now we should do it by writing it here so that there is no mistake. There is no call by reference in Java. Ok? Remember simple."
+    },
+    {
+      "start_time": 2088.24,
+      "end_time": 2121.28,
+      "text": "तो है तो ये भी कॉल बाय वैल्यू ही पर मैंने इसको यूज किया है नॉन प्रिमिटिव्स में। ठीक है? ओके? अब देखो मैंने यहां पे क्या किया था? मैंने यहां पे ऐड 10 के नाम से एक मेथड बनाया था जो एक रेफरेंस वेरिएबल लेता है R। राइट? तो इससे हमें ये समझ आया कि हम ऐड 10 जो भी कोई फंक्शनंस होता है, मेथड्स होते हैं, उसके पैराटर्स में सिर्फ प्रिमिटिव्स ही नहीं बल्कि नॉन प्रिमिटिव डेटा टाइप भी ले सकते हैं। फर्स्ट चीज इनफैक्ट जो आपका रिटर्न टाइप होता है ना वो भी एक नॉन प्रिमिटिव हो सकता है। यानी कि मैं इस रैंडम के ऑब्जेक्ट को भी रिटर्न कर सकता हूं। बस मुझे यहां पे कुछ रिटर्न स्टेटमेंट लिखनी",
+      "source": "transcript_api",
+      "english_text": "So, this is also call by value but I have used it in non-primitives. Ok? Ok? Now see what I did here? I created a method here called pay add10 which takes a reference variable R. Right? So from this we understood that we can take not only primitives but also non-primitive data types in the parameters of any function or method. The first thing is that your return type can also be a non-primitive. That means I can also return this random object. Just write me some return statements here"
+    },
+    {
+      "start_time": 2119.599,
+      "end_time": 2153.52,
+      "text": "होगी। लेट्स से मैंने लिख दिया रिटर्न R तो ये भी वैलिड है। तो रिटर्न टाइप भी एक नॉन प्रिमिटिव हो सकता है। आप पैरामीटर में भी नॉन प्रिमिटिव ले सकते हो। ठीक है? इसको मैं एक बार वापस से वही कर देता हूं। ओके? और एक और चीज अभी तक जो हमने कंस्ट्रक्टर्स बनाए थे ना वो आपके नॉन सॉरी प्रिमिटिव डेटा टाइप्स लेते थे। पर मैं एक कंस्ट्रक्टर ऐसे भी बना सकता हूं जो क्या करे? एक रैंडम कंस्ट्रक्टर है जो अगेन एक रैंडम नाम का ही एक रेफरेंस वेरिएबल लेता है। लेट्स से R1 ठीक है? कुछ इस तरीके से या इसको भी मैं R कर देता हूं। एक रैंडम रेफरेंस लेता है R",
+      "source": "transcript_api",
+      "english_text": "Will happen. With lets I wrote return R so this is also valid. So the return type can also be a non-primitive. You can also take non-primitive parameters. Ok? I do it again and again. Ok? And one more thing till now the constructors that we created took your non-sorry primitive data types. But I can also create a constructor that does what? There is a Random constructor which again takes a reference variable with the same name as Random. Is R1 from Lets ok? Something like this or I will make this also R. R takes a random reference"
+    },
+    {
+      "start_time": 2150.72,
+      "end_time": 2183.119,
+      "text": "और हम क्या करते हैं? अगेन अपने दिस डॉटX में मतलब इस वाले X वेरिएबल में क्या साइन करते हैं? जो भी ये r डॉटx लेके आ रहा है। यानी कि ये जो r का रेफरेंस है इसके अंदर जो x की वैल्यू है सेम मैं क्या कर सकता हूं? दिस = r डॉटy कुछ इस तरीके से और ये भी वैलिड है। मैं एक ऐसा कंस्ट्रक्टर भी बना सकता हूं जो इस सेम टाइप के ऑब्जेक्ट को एज आर्गुमेंट लेगा और उससे अपने आप को एसोसिएट करेगा। यानी कि इसको मैं कॉल कैसे करूंगा? देखो ऐसे। अब देखो मैं क्या करूंगा? मैं एक नया ऑब्जेक्ट बनाऊंगा।",
+      "source": "transcript_api",
+      "english_text": "And what do we do? Again, what do you sign in this dotX in this X variable? Whoever is coming with this r dotx. That is, this is the reference of r which is the value of x inside it, what can I do? This = r Dotty Something like this and this is also valid. I can also create a constructor that will take an object of this same type as the edge argument and associate itself with it. That is, how will I call it? Look like this. Now see what I will do? I will create a new object."
+    },
+    {
+      "start_time": 2179.839,
+      "end_time": 2213.2,
+      "text": "लेट्स से R2 = न्यू रैंडम। अब यहां पे मैं क्या वैल्यू दूंगा? इदर मैं यहां पे डायरेक्टली वैल्यू दे सकता हूं। ठीक है? पर मान लो मैं चाहता हूं इस R2 में वही वैल्यू हो जो इस R1 के अंदर वैल्यूज़ हैं। तो मैं यहां पे अब डायरेक्टली R1 पास कर सकता हूं। क्यों? क्योंकि मेरा ये वाला कंस्ट्रक्टर कॉल हो जाएगा। क्योंकि ये क्या कर रहा है? एक रैंडम के एक रेफरेंस वेरिएबल को ही तो एक्सपेक्ट कर रहा है। वो मैंने यहां दे दिया। तो इससे क्या होगा? एक नया ऑब्जेक्ट क्रिएट होगा। एक नया ऑब्जेक्ट क्रिएट होगा जिसके अंदर सेम वैल्यू होगी जो इसके अंदर थी। R1 के थी R1 के अंदर ंदी 4 5 तो इसके",
+      "source": "transcript_api",
+      "english_text": "Let R2 = New Random. Now what value will I give here? Here I can give the value directly here. Ok? But suppose I want this R2 to have the same values ​​as the values ​​inside this R1. So I can now directly pass R1 here. Why? Because this constructor of mine will be called. Because what is he doing? One is only expecting a random reference variable. I gave it here. So what will happen from this? A new object will be created. A new object will be created with the same values ​​as it was inside. R1 had 4 5 inside R1 so its"
+    },
+    {
+      "start_time": 2210.48,
+      "end_time": 2244.72,
+      "text": "अंदर भी आ जाएगा 4 5। अब ये थोड़ा सा अलग है जो अभी हमने डिस्कस किया था। इस केस में क्या हुआ होगा एक बार वो आपको समझाता हूं। देखो बिल्कुल हमारा सेम कोड है। मैंने लिखा है। पहले मैंने एक रैंडम R1 असाइन किया था 4 5 और R2 के अंदर सीधा न्यू रैंडम और R1 को पास किया था। क्यों? क्योंकि मेरी क्लास में एक ऐसा कंस्ट्रक्टर एग्ज़िस्ट करता था जो सीधा इस ऑब्जेक्ट का रैंडम के ऑब्जेक्ट का रेफरेंस ले लेता था। ओके? तो अब हो क्या रहा होगा? सबसे पहले मैं क्या करता हूं? हमारी एक हीप मेमोरी बना लेता हूं। लेट्स से ये है हमारी एक हीप मेमोरी। ठीक है? अब हो क्या रहा होगा? सबसे पहले यहां पे एक R1 का ऑब्जेक्ट बनता होगा। एक रैंडम का एक",
+      "source": "transcript_api",
+      "english_text": "Will also come inside 4 5. Now this is a little different from what we just discussed. Let me explain to you what might have happened in this case. Look, our code is exactly the same. I have written. First I assigned a random R1 4 5 and passed new random directly inside R2 and R1. Why? Because in my class there existed a constructor which directly took the reference of this object as random object. Ok? So what might be happening now? What do I do first? Create a heap memory of ours. This is one of our heap memories from Lets. Ok? What might be happening now? First of all an object of R1 will be created here. one of random"
+    },
+    {
+      "start_time": 2242.64,
+      "end_time": 2269.76,
+      "text": "ऑब्जेक्ट बनता होगा सॉरी। ठीक है? जिसके अंदर दो वैल्यू होती होंगी। X की होती होगी फोर, Y की होती होगी फाइव। बिल्कुल सही। और हमारे पास एक स्टक मेमोरी होती होगी। ठीक है? जिसमें एक R1 नाम का रेफरेंस वेरिएबल होगा। R1 जो क्या करता होगा? इसको पॉइंट करता होगा। कुछ इस तरीके से काम हो रहा होगा। ये सब हुआ होगा तब हमने लिखी होगी ये वाली लाइन। ओके? फिर हमने लिखा एक और रैंडम वेरिएबल बनाओ R2।",
+      "source": "transcript_api",
+      "english_text": "Must have become an object, sorry. Ok? Inside which there will be two values. X would have been four, Y would have been five. Correct. And we would have a stuck memory. Ok? In which there will be a reference variable named R1. What would R1 do? Must be pointing to it. Something like this might be working. All this would have happened then we would have written this line. Ok? Then we wrote create another random variable R2."
+    },
+    {
+      "start_time": 2268.0,
+      "end_time": 2298.48,
+      "text": "ठीक है? तो यहां पे हमने क्या कहा? एक और रेफरेंस वेरिएबल R2 होना चाहिए जो किसे पॉइंट करे जो एक न्यू रैंडम जैसे हमने लिखा न्यू रैंडम मतलब एक नया स्पेस बनाओ। जब भी हम न्यू लिखेंगे जब भी आप कीवर्ड लिखोगे न्यू। आप समझ जाना आप एक नया स्पेस एलोकेट करने वाले हो हीप में एक नया स्पेस बनाओ। किसके लिए? रैंडम ऑब्जेक्ट के लिए। और उसमें कौन सी वैल्यू होंगी? वही वैल्यू जो R1 में होंगी। तो हमने देखो आर्गुमेंट में क्या पास किया? R1। R1 क्या है? एक रेफरेंस वेरिएबल है। और वो किसे पास किया?",
+      "source": "transcript_api",
+      "english_text": "ok? So what did we say here? There should be another reference variable R2 which points to a new random like we wrote new random means create a new space. Whenever we write new, whenever you write the keyword new. You understand that you are going to allocate a new space, create a new space in the heap. For whom? For random objects. And what values ​​will it contain? Same value as in R1. So look what we passed in the argument? R1. What is R1? is a reference variable. And who did he pass it to?"
+    },
+    {
+      "start_time": 2295.92,
+      "end_time": 2329.68,
+      "text": "हमने एक कंस्ट्रक्टर को पास किया। ठीक है? अब इसके कंस्ट्रक्टर ने क्या किया होगा? इस R1 की एक वैल्यू को यहां पे कॉपी किया होगा इस R में। है ना? तो ये वेरिएबल अलग है, ये वेरिएबल अलग है। पर अगेन मैंने क्या कहा था? दोनों पॉइंट किसे करेंगे? सेम वेरिएबल को। है ना? तो इसने क्या किया? दिस डॉट X मतलब इसके X के अंदर। इसका मतलब इसके X के अंदर वही डाल दो जो इसके X के अंदर पड़ा है। तो यहां पे भी आ गया फोर। इसको भी मैं सही से लिख देता हूं। फोर। और सेम इसके y के अंदर वही डाल दो जो इसके अंदर पड़ा है। तो यहां पे भी आ गया फाइव। पर ये फोर और फाइव और ये फोर और फाइव अब बिल्कुल अलग है। कल को अगर मैं",
+      "source": "transcript_api",
+      "english_text": "We passed a constructor. Ok? Now what would its constructor have done? A value of this R1 will be copied here in this R. Isn't it? So this variable is different, this variable is different. But what did I say again? Who will score both points? To the same variable. Isn't it? So what did it do? This dot X means inside this X. This means put inside its X only what is lying inside its X. So four has come here also. I write this also properly. Four. And put the same bean inside its y which is lying inside it. So here comes five. But this four and five and this four and five are completely different now. tomorrow if i"
+    },
+    {
+      "start_time": 2327.52,
+      "end_time": 2361.2,
+      "text": "जाकर के इसमें कुछ चेंज कर दूं, इसको 14 कर दूं, इसको 15 कर दूं तो बस मेरे ये चेंज होंगे। ये चेंज नहीं होंगे। क्यों? क्योंकि ये अलग ऑब्जेक्ट है। ये अलग ऑब्जेक्ट है। अलग क्यों है? क्योंकि दोनों को मैंने अलग-अलग न्यू कीवर्ड से बनाया है। ठीक है? तो ये आप खुद से टेस्ट कर सकते हो। आपको सारी चीजें समझ आ जाएंगी। तो ये मुझे एक चीज़ बतानी थी आपको कि आप ऐसे कंस्ट्रक्टर भी बना सकते हो जिसमें आप पूरा का पूरा एक ऑब्जेक्ट का रेफरेंस पास कर दो। अब उस ऑब्जेक्ट रेफरेंस से आप क्या कर सकते हो? तो डायरेक्टली कोई वैल्यू्यूज कॉपी कर सकते हो। है ना? तो एक तरह से क्या किया? आपने एक नया ऑब्जेक्ट बनाया जो कॉपी करता है पुराने ऑब्जेक्ट की वैल्यूस",
+      "source": "transcript_api",
+      "english_text": "If I go and make some changes in it, make it 14, make it 15, then these will be my only changes. These will not change. Why? Because this is a different object. This is a different object. Why is it different? Because I have created both with different new keywords. Ok? So you can test this yourself. You will understand everything. So one thing I wanted to tell you is that you can also create such constructors in which you pass the reference of an entire object. Now what can you do with that object reference? So you can copy any values ​​directly. Isn't it? So in a way what did you do? You created a new object that copies the values of the old object."
+    },
+    {
+      "start_time": 2359.2,
+      "end_time": 2392.8,
+      "text": "को। ठीक है? पर फिर भी ये दोनों बिल्कुल अलग-अलग ऑब्जेक्ट हैं। अगर मैं R2 में कुछ चेंज करूंगा तो उसका चेंज R1 में रिफ्लेक्ट नहीं होगा और R1 में करूंगा तो R2 में नहीं होगा। पर अगर मैं मान लो ऐसे लिखता इस पूरी स्टेटमेंट की जगह मैं बस ऐसे लिखता रैंडम लेट्स से R3 = R1 अगर मैं ऐसे लिखता तो मैं पता है क्या कहता मैं कहता मैं एक रेफरेंस वेरिएबल बना रहा हूं R3 जो कि यहां बनेगा R3 अब ये R3 क्या एक रेफरेंस वेरिएबल है इसमें मैं क्या असाइन कर रहा",
+      "source": "transcript_api",
+      "english_text": "To. Ok? But still these two are completely different objects. If I change something in R2, its change will not be reflected in R1 and if I change something in R1, it will not be reflected in R2. But let's say, instead of this entire statement, I would just write R3 = R1 with random letters. If I would write like this, I know what I would say, I would say I am creating a reference variable R3 which will become R3 here. Now this R3 is a reference variable, what am I assigning to it."
+    },
+    {
+      "start_time": 2390.079,
+      "end_time": 2416.0,
+      "text": "हूं जो भी R1 स्टोर करता है। अब R1 क्या स्टोर करता है? देखो R1 स्टोर कर रहा है इसका एड्रेस। तो मैं कह रहा हूं R3 भी स्टोर करेगा इसका एड्रेस। ठीक है? तो अब देखो क्या हुआ? R1 और R3 दोनों एक को ही पॉइंट कर रहे हैं। पर यहां पे जो R2 है वो हमारा इसको पॉइंट कर रहा है। तो ये दोनों अलग-अलग ऑब्जेक्ट हैं। तो R1 और R2 अलग-अलग ऑब्जेक्ट को पॉइंट करते हैं।",
+      "source": "transcript_api",
+      "english_text": "Whichever stores R1. Now what does R1 store? Look, R1 is storing its address. So I am saying R3 will also store its address. Ok? So now look what happened? Both R1 and R3 are pointing to the same thing. But the R2 here is pointing to it. So these are two different objects. So R1 and R2 point to different objects."
+    },
+    {
+      "start_time": 2413.359,
+      "end_time": 2447.359,
+      "text": "लेकिन R1 और R3 सेम ऑब्जेक्ट को पॉइंट करते हैं। ठीक है? तो अब क्या मतलब हुआ? अब अगर मैं R3 में कुछ चेंज करूंगा। अगर मैं लिखूंगा R3.x = 4 की जगह लेट्स से 14 कर दो। तो अगेन वो चेंज कहां आएगा? वो चेंज सीधा जाएगा यहां पे। सेम अगर मैं यहां पे कुछ चेंज करूंगा तो वो सीधा चेंज आएगा यहां पे। फिर अगर मैं R1 के थ्रू रीड करने की कोशिश करूंगा। अगर मैं मान लो सिस्टम डॉट आउट प्रिंट लाइन करता R1.x और R1.Y करता तो स्क्रीन पे दोबारा 14 और 15 ही प्रिंट होता। राइट? इसका मतलब आप समझ",
+      "source": "transcript_api",
+      "english_text": "But R1 and R3 point to the same object. Ok? So what does it mean now? Now if I change something in R3. If I write R3.x = 4 instead of let's make it 14. So where will that change come again? That change will go directly here. Same, if I change something here, that change will come directly here. Then if I try to read through R1. If I suppose the system had printed dot out lines R1.x and R1.Y, then again only 14 and 15 would have been printed on the screen. Right? you understand what this means"
+    },
+    {
+      "start_time": 2444.8,
+      "end_time": 2479.44,
+      "text": "गए होंगे। फर्क बस इतना पड़ता है कि अगर आपने एक नया ऑब्जेक्ट क्रिएट कर दिया तो यह दोनों इंडिपेंडेंट हो गए। है ना? इसका चेंज इसमें रिफ्लेक्ट नहीं होगा। पर अगर आपने सिर्फ ऐसे लिख दिया R3 = R1 इसका मतलब एक R1 रेफरेंस वेरिएबल है। एक R3 रेफरेंस वेरिएबल है। और दोनों मिलाकर के एक ही ऑब्जेक्ट को पॉइंट करते हैं। अब चाहे आप इसके थ्रू चेंज करो या इसके थ्रू चेंज करो। इसके थ्रू रीड करो या इसके थ्रू रीड करो। सेम ही वैल्यू रीड होगी या सेम ही वैल्यू चेंज होगी। ठीक है? पर R2 मैंने जिस तरह बनाया मैंने क्या कहा? न्यू मतलब",
+      "source": "transcript_api",
+      "english_text": "Must have gone. The only difference is that if you create a new object then both of them become independent. Isn't it? Its change will not be reflected in it. But if you just write R3 = R1, it means that R1 is a reference variable. An R3 is a reference variable. And both together point to the same object. Now whether you change through it or change through it. Read through this or read through this. The same value will be read or the same value will be changed. Ok? But what did I say about the way I built R2? new meaning"
+    },
+    {
+      "start_time": 2476.72,
+      "end_time": 2508.88,
+      "text": "एक नया स्पेस एलोकेट करो। हां मैंने क्या कहा? उस स्पेस में वैल्यूज़ वही डालो जो R1 में है। तो कॉपी मैंने सेम कर दिया। X = 4, Y = 5 वैल्यू सेम कॉपी की है मैंने। लेकिन क्योंकि ये पूरा का पूरा एक अलग ऑब्जेक्ट बन गया है। अब ये इसको इसमें मैं अगर कुछ चेंज करूंगा तो वो इसमें रिफ्लेक्ट नहीं होगा। इसमें कुछ चेंज करूंगा तो इसमें रिफ्लेक्ट नहीं होगा। सिंपल सी बात है। ठीक है? आई होप आपको ये भी समझ आया। अब इसका पता है हम जावा में क्या बोलते हैं? हम इनको नाम देते हैं। ये जो हमने ऊपर किया जिसमें हमने एक नया",
+      "source": "transcript_api",
+      "english_text": "Allocate a new space. yes what did i say? Put the same values ​​in that space as in R1. So I copied it. I have copied the same values ​​of X = 4, Y = 5. But because it has become a completely separate object. Now if I change anything in this, it will not be reflected in it. If I change anything in it, it will not be reflected in it. It's a simple thing. Ok? I hope you understood this also. Now let us know what we say in Java? We give them names. This is what we did above in which we added a new"
+    },
+    {
+      "start_time": 2507.119,
+      "end_time": 2541.599,
+      "text": "ऑब्जेक्ट बनाया था और उसमें वैल्यू कॉपी की थी। इसको हम बोलते हैं डीप कॉपी। ठीक है? और ये हमने जो नीचे किया यहां पे अ ग्रीन से इसको हम बोलते हैं शैलो कॉपी। ये किसकी कॉपी है? ये हम कॉपी करने की कोशिश कर रहे हैं एक ऑब्जेक्ट की। अगर आप ध्यान से देखो हमारे पास एक R1 नाम का ऑब्जेक्ट था। ठीक है? वो हमने बनाया ये रहा। हमने एक बार उसकी वैल्यू R2 में कॉपी करने की कोशिश की। एक बार R3 में। क्योंकि",
+      "source": "transcript_api",
+      "english_text": "Created an object and copied the values into it. We call this deep copy. Ok? And what we did below here with a green is what we call shallow copy. Whose copy is this? We are trying to copy this object. If you look carefully we had an object named R1. Ok? Here is what we made. We once tried to copy its value to R2. Once in R3. because"
+    },
+    {
+      "start_time": 2538.4,
+      "end_time": 2563.839,
+      "text": "R1, R2, R3 तीनों में सेम वैल्यूज़ ही हैं। पहले हमने R1 में 4 5 डाला। फिर हमने R2 में वही डाल दिया जो R1 में है। और R3 में भी वही डाल दिया जो R1 में है। अब चाहे आप R1.x करो, R2.X करो या R3.x करो। कुछ भी चेंज करने से पहले अगर आप इन दोनों का X प्रिंट करोगे तो आपको फोर मिलेगा। इन तीनों का Y प्रिंट करोगे आपको फाइव मिलेगा। क्योंकि तीनों में सेम वैल्यू है।",
+      "source": "transcript_api",
+      "english_text": "R1, R2, R3 all three have same values. First we put 4 5 in R1. Then we put in R2 the same thing as in R1. And put in R3 the same thing which is in R1. Now whether you do R1.x, R2.x or R3.x. Before changing anything, if you print X of these two, you will get four. If you print Y of these three, you will get five. Because all three have the same value."
+    },
+    {
+      "start_time": 2560.56,
+      "end_time": 2592.96,
+      "text": "पर क्योंकि R2 जो है वो R1 को कॉपी करता है एक नया ऑब्जेक्ट बना करके। पहले खुद का एक ऑब्जेक्ट बनाता है और फिर कहता है मुझ में हर वो वैल्यू डाल दो जो R1 में थी। फोर भी डाल दो, फाइव भी डाल दो। तो इसको हमने बोला डीप कॉपी। इसने इसकी डीप कॉपी करी है। डीप कॉपी का मतलब आप बस ये समझ लो ये अलग है। ये अलग है। ठीक है? इसमें कुछ चेंज इसमें नहीं आएगा और इसमें कुछ चेंज इसमें नहीं आएगा। R3 = R1 जब मैंने ये लिखा तो मैंने एक नया रेफरेंस वेरिएबल तो बना दिया। पर क्योंकि यहां पे न्यू कीवर्ड मिसिंग था तो मैंने कोई नया ऑब्जेक्ट नहीं",
+      "source": "transcript_api",
+      "english_text": "But because R2 copies R1 by creating a new object. First it creates its own object and then says put in me all the values ​​which were in R1. Put four, put five also. So we called it deep copy. It has deep copied it. You just understand the meaning of deep copy, it is different. it is different. Ok? There will be no change in this and there will be no change in this. R3 = R1 When I wrote this, I created a new reference variable. But because new keyword was missing here, I did not create a new object."
+    },
+    {
+      "start_time": 2590.88,
+      "end_time": 2623.44,
+      "text": "बनाया। मैंने डायरेक्टली क्या किया? R3 में वही डाल दिया जो R1 में था। R1 में क्या था? इसका एड्रेस। तो R3 में भी इसका एड्रेस डाल दिया। और जैसे ही R3 में इसका एड्रेस डाला इन दोनों ने सेम ऑब्जेक्ट को पॉइंट करना शुरू कर दिया। अब R3 इसमें कुछ चेंज करेगा तो R1 में भी रिफ्लेक्ट होगा। एंड सेम वाइस वर्सा। तो इसको मैंने बोल दिया शैलो कॉपी। सिंपल। तो आई होप आपको ये समझ आ गया होगा कांसेप्ट कि शैलो कॉपी और डीप कॉपी क्या होती है? ये भी काफी इंटरेस्टिंग है और काफी जगह हम इसको यूज़ करते हैं। कभी हम चाहते हैं कि दोनों रेफरेंसेस एक ही ऑब्जेक्ट को डिनोट करें।",
+      "source": "transcript_api",
+      "english_text": "Made. What did I do directly? Put in R3 the same thing which was in R1. What was in R1? Its address. So put its address in R3 also. And as soon as its address was entered in R3, both of them started pointing to the same object. Now if R3 changes something in it, it will be reflected in R1 also. And same vice versa. So I called it shallow copy. Simple. So I hope you have understood the concept of what is shallow copy and deep copy? This is also quite interesting and we use it at many places. Sometimes we want both references to denote the same object."
+    },
+    {
+      "start_time": 2621.599,
+      "end_time": 2643.319,
+      "text": "कभी कबभार हम चाहते हैं कि दो रेफरेंसेस अलग-अलग ऑब्जेक्ट को डिनोट करें। ठीक है? चलो। तो आई होप आपको अच्छे से कॉल बाय वैल्यू, कॉल बाय रेफरेंस, शैलो कॉपी, डीप कॉपी सब कुछ अच्छे से समझ आया होगा और आपको पता चला होगा कि जावा में सिर्फ कॉल बाय वैल्यू होता है और कॉल बाय रेफरेंस जावा में होता ही नहीं है। ठीक है? इस वीडियो में बस इतना ही। आपसे मिलते हैं नेक्स्ट लेक्चर में। तब तक के लिए थैंक यू सो मच।",
+      "source": "transcript_api",
+      "english_text": "Sometimes we want two references to denote different objects. Ok? Let us go. So I hope you must have understood everything well like call by value, call by reference, shallow copy, deep copy and you must have come to know that in Java there is only call by value and call by reference does not happen in Java. Ok? That's all in this video. See you in the next lecture. Till then thank you so much."
+    }
+  ],
+  "playlist_id": "PLXZCnQTdmeaE",
+  "playlist_title": "OOPs in Java Full Course"
+}

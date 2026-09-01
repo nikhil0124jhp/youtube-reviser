@@ -1,0 +1,562 @@
+{
+  "video_id": "u0SH8wO85m0",
+  "video_title": "Prim's Algorithm - Minimum Spanning Tree - C++ JAVA DSA Patterns Graph Series 2026",
+  "video_number": 106,
+  "chunks": [
+    {
+      "start_time": 1.91,
+      "end_time": 36.87,
+      "text": "हेलो बच्चों तो आज देखिए आज हम लोग शुरू करेंगे और खत्म भी कर देंगे मिनिमम स्पैनिंग ट्री। ठीक है? और ये देखिए बहुत इजी टॉपिक है। ये सब देख के डरिएगा मत कि प्रीम क्या होता है? क्रिस्टिकल क्या होता है? आपको एक बहुत स्टोरी मोड में समझाएंगे। आज के बाद आप प्रिम्स एल्गोरिदम नहीं भूलेंगे। कम से कम तीन-चार साल तक तो नहीं भूलेंगे। इतने अंदर तक घुसा देंगे दिमाग में। ग्राफ ना इकलौता ऐसा चीज है जो समय के साथ इजी होता जाता है। मतलब बाकी सारा जो हम लोग पैटर्न पढ़े थे ना स्लाइडिंग विंडो टू पॉइंटर वो लेक्चर बाय लेक्चर थोड़ा हार्ड होता जाता था कि आप थोड़ा कॉम्प्लेक्स चीज पढ़ रहे हैं। ग्राफ का सबसे हार्डेस्ट लेक्चर ना ग्राफ का फर्स्ट लेक्चर होता है क्योंकि वो जो हवा होता है ना कि अरे ग्राफ है नहीं आएगा नहीं समझ में आएगा बस वहीं तक होता है।",
+      "source": "caption",
+      "english_text": "Hello children, see today we will start and finish Minimum Spanning Tree. Ok? And see, this is a very easy topic. Don't be afraid after seeing all this that what is prem? What is crystalline? Will explain to you in a very story mode. After today you will not forget the Prims algorithm. Will not forget for at least three-four years. Will penetrate this deep into the mind. Graphs are not the only thing that gets easier with time. Meaning, the rest of the patterns that we had studied like Sliding Window to Pointer, it became a little difficult lecture by lecture because you are studying a little complex thing. The hardest lecture on graphs is the first lecture on graphs because it is just a matter of fact, it is a graph, it will not be understood, it will not be understood, it is limited to that only."
+    },
+    {
+      "start_time": 36.88,
+      "end_time": 71.03,
+      "text": "उसके बाद ना धीरे धीरे धीरे-धीरे ईजी होता जाता है। डिफिकल्ट नहीं होगा। आप अगर आज का आप लेक्चर देख के देखिएगा जो प्रिंस एल्गोरिदम है ना आपको लगेगा कि बहुत ईजी है। इससे हार्ड तो बहुत चीज़ था। इससे हार्ड तो कनेक्टेड कॉम्पोनेंट था। इससे हार्ड तो दिक्कत्रा था। ये तो बड़ा आसान है। तो एक बहुत स्टोरी मोड में आप लोगों को समझाएंगे और बहुत लॉजिकल है। लॉजिकल मतलब ऐसा है ना कि आप भी सोच सकते हैं कि हां यही करना चाहिए था। याद कभी मत करिएगा। हम देखें प्रिंस का हम बहुत सारा वीडियो देखे इंटरनेट पे। सब लोग इस पे फोकस करते हैं कि क्या एल्गोरिदम है? क्या करना है? क्या करना है? वो इंपॉर्टेंट नहीं है। क्या करना है? तो चैट जीबीटी बताता है। क्यों करना है? क्यों ऐसा हुआ?",
+      "source": "caption",
+      "english_text": "After that it gradually becomes easier. It won't be difficult. If you watch today's lecture on Prince Algorithm, you will feel that it is very easy. There was much harder than this. It was a hard connected component. It was more difficult than this. This is very easy. So you will explain to people in a very story mode and it is very logical. The logical meaning is that you can also think that yes, this is what should have been done. Never remember. We have seen many videos of Prince on the internet. Everyone focuses on what is the algorithm? What is the plan? What is the plan? He is not important. What is the plan? So the chat tells GBT. Why do you have to do it? Why did this happen?"
+    },
+    {
+      "start_time": 71.04,
+      "end_time": 103.99,
+      "text": "ये नहीं करेंगे तो क्या होगा? क्यों ये करने से आंसर आएगा? वो समझने पे ज्यादा फोकस करिए। एल्गोरिदम याद करने पे फोकस मत कीजिए कि इसको हम जल्दी से याद कर लेते हैं। नहीं नहीं नहीं तो वही हम मेरा फोकस आपको याद करवाना नहीं है। मेरा फोकस आपको समझाना है कि काहे ऐसा कर रहे हैं तो काहे कर रहे हैं? काहे कुछ ऐसा नहीं कर रहे हैं। ठीक है? तो चलिए शुरू करते हैं। आज आपको हम सब समझाएंगे। बहुत छोटा लेक्चर होगा जैसा कि हम बोल रहे हैं। बहुत इजी टॉपिक है। बहुत आसान से भी आसान टॉपिक है। शुरू करिए जल्दी से। चलिए। तो देखिए सबसे पहले ना आपको ये ग्राफ दिया रहेगा क्वेश्चन में। तो आपको बोला रहेगा कि ये तो एक ग्राफ है। ये आपको पक्का दिख रहा होगा कि ग्राफ है। क्यों? क्योंकि कुछ",
+      "source": "caption",
+      "english_text": "What will happen if you don't do this? Why will the answer come by doing this? Focus more on understanding that. Don't focus on memorizing algorithms as we memorize them quickly. No no no then we are the same. My focus is not to make you remember. My focus is to make you understand why they are doing this? Why are they not doing anything like this? Ok? So let's get started. Today we will explain everything to you. It will be a very short lecture as we speak. It is a very easy topic. This is a very easy topic. Start quickly. Let go. So see, first of all you will be given this graph in the question. So you will be told that this is a graph. You can definitely see that it is a graph. Why? because some"
+    },
+    {
+      "start_time": 104.0,
+      "end_time": 138.15,
+      "text": "वर्टेक्स है, एज है और ये वेटेड ग्राफ है। वेटेड अनडायरेक्टेड ग्राफ है। ये वाला। आप देख रहे होंगे वेटेड है ना? हर एज पे ऊपर वेट लिखा हुआ है और अनडायरेक्टेड ग्राफ है। मतलब ऐसा कुछ नहीं है कि ज़ीरो से वन ही जाना है। नहीं। ज़ीरो से वन मतलब वन से ज़ीरो भी। ठीक है? आपको बोला रहेगा इसको एमएसटी मिनिमम स्पैनिंग ट्री या तो आम बोलचाल की भाषा में उसको एमएसटी बोला जाता है। एमएसटी में कन्वर्ट करो और हमको सम ऑफ वेट बताओ। लेकिन साला ये एमएसटी है क्या? एमएसटी मतलब क्या होता है? देखिए एमएसटी क्या होता है? मिनिमम स्पैनिंग ट्री। जब आप लोग ट्री पढ़े थे तो ट्री और ग्राफ ना थोड़ा-थोड़ा एक ही जैसा दिखता था। मतलब ट्री",
+      "source": "caption",
+      "english_text": "There are vertexes, there are edges and this is a weighted graph. is a weighted undirected graph. This one. You must be watching Waited, right? The weight is written on each edge and it is an undirected graph. Meaning, it does not mean that one has to go from zero to one. No. Zero to one also means one to zero. Ok? You will call it MST Minimum Spanning Tree or in common parlance it is called MST. Convert to MST and tell us the sum of weights. But what the hell is this MST? What does MST mean? See what is MST? Minimum Spanning Tree. When you guys read the tree, the tree and the graph looked somewhat similar. meaning tree"
+    },
+    {
+      "start_time": 138.16,
+      "end_time": 171.03,
+      "text": "कैसा दिखता था? जब हम लोग ट्री पढ़ रहे हैं ना ट्री ऐसा दिखता था। ऐसा दिखता था ना? ऐसा करके ऐसा करके ट्री दिखता था। यही होता था ट्री। अच्छा कुछ-कुछ ये ग्राफ जैसा ही दिखता है। मतलब इसमें भी गोल-गोल है और डंडा है गोल के बीच में। ग्राफ में भी वही होता है, ट्री में भी वही होता है। लेकिन ट्री और ग्राफ के बीच में जो मेजर डिफरेंस होता है ना आपसे पूछा भी जाएगा। इंटरव्यू में आपसे पूछा जाएगा कि ट्री और ग्राफ के बीच में क्या डिफरेंस होता है? तो उस समय आप यह नहीं बोलेगा कि दोनों में वर्टेक्स और एज होता है। नहीं वो डिफरेंस नहीं है। वो सिमिलरिटी है। डिफरेंस क्या होता है ना ट्री में? इस ट्री में देखिए कितने वर्टेक्स हैं इसमें? 1 2 3 4 5",
+      "source": "caption",
+      "english_text": "What did it look like? When we are reading the tree, the tree looked like this. It looked like this, didn't it? By doing this the tree was visible. This was the tree. Well, it looks something like this graph. Meaning in this also there is a round and the stick is in the middle of the round. The same thing happens in a graph, the same thing happens in a tree. But you will also be asked about the major difference between tree and graph. In the interview you will be asked what is the difference between tree and graph? So at that time you will not say that both have vertex and edge. No, that is not the difference. That is similarity. What is the difference in a tree? See how many vertexes are there in this tree? 1 2 3 4 5"
+    },
+    {
+      "start_time": 171.04,
+      "end_time": 205.03,
+      "text": "इसमें कितने वर्टेक्स हैं? फाइव। इसका एज गिनिए। इसमें कितने डंडियां हैं? 1 एज, 2 एच, तीन एच, चार एज। एच हमेशा चार है। कोई भी ट्री बना लीजिए। एक और ट्री बना के देख लीजिए। 1 2 3 ये लीजिए कंप्लीट ट्री बना दिए। ठीक है? इसमें कितने वर्टेक्स हैं? 1 3 7 और इसमें एजेस कितने हैं? 1 2 3 4 5 6 एजेस हैं छह। एक पैटर्न दिख रहे हैं। कितना भी वर्टेक्स हो ना ट्री में एजेस हमेशा वर्टेक्स -1 है। यहां पे सात एज था तो यहां पे छह एज है। यहां पे पांच एज था तो यहां पे चार एज है। तो ट्री और ग्राफ",
+      "source": "caption",
+      "english_text": "How many vertexes does it have? Five. Count its edges. How many sticks are there in it? 1 edge, 2 h, three h, four edge. H is always four. Make any tree. Try making another tree. 1 2 3 Here is the complete tree. Ok? How many vertexes does it have? 1 3 7 And how many edges are there in it? 1 2 3 4 5 6 There are six edges. A pattern is visible. No matter how many vertices there are, the edges in the tree are always vertex-1. There were seven edges here and here there are six edges. There were five edges here and here there are four edges. So tree and graph"
+    },
+    {
+      "start_time": 205.04,
+      "end_time": 234.71,
+      "text": "में क्या डिफरेंस होता है कि ट्री में ना साइकिल नहीं होता है। ट्री में कोई भी साइकिल नहीं होता है। साइकिल का क्या मतलब है? ऐसा ऐसा ऐसा ऐसा ये क्या होता है? साइकिल किसी भी ट्री में आपको साइकिल नहीं मिल सकता है और किसी भी दो नोड के बीच में पहुंचने का सिर्फ एक रास्ता होगा। मतलब कि अगर कोई आदमी वन से फोर जाना चाहता है ना सिर्फ और सिर्फ एक रास्ता होगा। क्या रास्ता होगा? वन से टू जाओ, टू से फोर आओ।",
+      "source": "caption",
+      "english_text": "The difference is that there is no cycle in the tree. There is no bicycle in the tree. What does bicycle mean? Such, such, such, what is this? Cycles You cannot find cycles in any tree and there will be only one path between any two nodes. Meaning that if a person wants to go from one to four, there will be only one way. What would be the way? Go from one to two, come from two to four."
+    },
+    {
+      "start_time": 234.72,
+      "end_time": 267.83,
+      "text": "वन से फोर जाने का एक से ज्यादा रास्ता नहीं हो सकता है किस में? ट्री में। अगर आपको थ्री से फाइव जाना है ना तो आप थ्री से टू जाएंगे, टू से वन जाएंगे, वन से फाइव जाएंगे। थ्री और फाइव के बीच में और कोई रास्ता नहीं है। अगर कोई ऐसा एज बना देता थ्री और फाइव के बीच में एच बना देता ना तो ये अब एक ग्राफ बन चुका है। अब ये ट्री नहीं रहा। क्यों? क्योंकि देखिए एक से दो, दो से तीन, तीन से पांच, पांच से एक। क्या ये साइकिल बन गया? हां जी भाई ये साइकिल बन गया। तो ट्री में ना हमेशा",
+      "source": "caption",
+      "english_text": "In which way can there not be more than one way to go from one to four? In the tree. If you want to go from three to five, then you will go from three to two, from two to one, from one to five. There is no other way between three and five. If someone had made such an edge and made an H between three and five, then it would have now become a graph. Now this tree is no more. Why? Because see one to two, two to three, three to five, five to one. Has this become a bicycle? Yes brother, this bicycle has been made. so not always in the tree"
+    },
+    {
+      "start_time": 267.84,
+      "end_time": 293.189,
+      "text": "हमेशा किसी भी ट्री में मतलब बाइनरी ट्री में नंबर ऑफ एजेस नंबर ऑफ वर्टेक्स से एक कम होगा। क्यों? क्योंकि ट्री में साइकिल अलाउड नहीं होता है। और किसी भी दो सर्कल के बीच में सिर्फ एक रास्ता एक्सिस्ट करता है। इसको बोला जाता है ट्री। ग्राफ में ये लिमिटेशन नहीं होता। यही मेन डिफरेंस है ग्राफ और ट्री में। यहां अगर आप देखिएगा तो ये एक ग्राफ है। ये एक बहुत सुंदर ग्राफ है। लेकिन क्या ये एक ट्री है?",
+      "source": "caption",
+      "english_text": "Always in any tree means number of edges in binary tree will be one less than number of vertex. Why? Because there is no cycle allowance in the tree. And only one path exists between any two circles. This is called tree. This limitation does not exist in graphs. This is the main difference between graph and tree. If you look here, this is a graph. This is a very beautiful graph. But is it a tree?"
+    },
+    {
+      "start_time": 293.199,
+      "end_time": 327.67,
+      "text": "नहीं। क्यों? क्योंकि साफ पता चल रहा है भाई ये लो साइकिल बन गया। ट्री में साइकिल होता ही नहीं है। दूसरा टेस्ट जीरो और वन के बीच में कितना रास्ता है जाने का? बहुत सारा रास्ता है। कौन-कौन सा? आप जीरो से वन डायरेक्टली जा सकते हैं। आप जीरो से टू जा के टू से वन जा सकते हैं। आप जीरो से टू, टू से थ्री और थ्री से वन जा सकते हैं। आप जीरो से टू, टू से थ्री, थ्री से फोर और फोर से वन जा सकते हैं। तो ज़ीरो और वन के बीच में मल्टीपल वेज़ है। ज़ीरो और वन के बीच में कोई एक ही वे नहीं है। ये डिफरेंस किसके बीच में है? ग्राफ और ट्री के बीच में है। ए ट्री इज़ अ ग्राफ विद नो",
+      "source": "caption",
+      "english_text": "No. Why? Because it is clear that brother, this is a bicycle. There is no bicycle in the tree. How much way is there to go between zero and one in the second test? There is a lot of way. Which one? You can go from zero to one directly. You can go from zero to two and from two to one. You can go from zero to two, two to three and three to one. You can go from zero to two, two to three, three to four and four to one. So there are multiple ways between zero and one. There is no one way between zero and one. Between whom is this difference? is between a graph and a tree. A tree is a graph with no"
+    },
+    {
+      "start_time": 327.68,
+      "end_time": 361.35,
+      "text": "साइकिल्स एंड देयर इज़ ओनली वन एंड ओनली वन पाथ बिटवीन एनी टू वर्टेक्सेस। ठीक बात है? अच्छा। अब ये एमएसटी क्या होता है? देखिए एमएसटी का मतलब होता है ना कि ये जो ग्राफ है अच्छा ग्राफ है। आपको दिख रहा होगा बहुत सारा एज है। लेकिन इसमें कितने वर्टेक्स हैं? इसमें कितने वर्टेक्स हैं? 0 1 2 3 4 इसमें पांच वर्टेक्स हैं। और इसमें एजेस कितने हैं? देखिए एजेस गिनिए। 1 2 3 4 5 6 7 सात एजेस है। ट्री में क्या होता था? अगर ये ट्री होता तो कितना एज होना चाहिए था? चार एज होना चाहिए था।",
+      "source": "caption",
+      "english_text": "Cycles and There Is Only One and Only One Path Between Any Two Vertexes. Is that correct? Good. Now what is this MST? See, MST means that this graph is a good graph. You must be seeing a lot of edge. But how many vertexes does it have? How many vertexes does it have? 0 1 2 3 4 It has five vertexes. And how many edges are there in it? See Count the Ages. 1 2 3 4 5 6 7 There are seven edges. What was there in the tree? If it was a tree, how old should it be? There should have been four edges."
+    },
+    {
+      "start_time": 361.36,
+      "end_time": 394.15,
+      "text": "क्योंकि हम क्या बोल रहे हैं बार-बार? जितना वर्टेक्स है ना उससे एक कम होगा किसी भी ट्री में एज। तो होना चाहिए था चार एज। इसमें कितना है? सात एज। मतलब कि कुछ एज कुछ एज फालतू है। इसमें कुछ एज ना फालतू है मतलब जिसका जरूरत नहीं था। आपको ग्राफ को कनेक्टेड रखना है। आपको ऐसा नहीं करना है कि आप इन दोनों को मिटा दिए और फोर एकदम अलग हो गया। नहीं। आपको इस ग्राफ को ना एक ट्री में कन्वर्ट करना है। किस में कन्वर्ट करना है? ट्री में कन्वर्ट करना है। उस ट्री में आप कितने कैसे कन्वर्ट करेंगे? आप इस चार में से जो फालतू एजेस हैं होना कितना चाहिए था ट्री",
+      "source": "caption",
+      "english_text": "Because what are we saying again and again? Any tree will have one less edge than the number of vertices. So there should have been four edges. How much is there in it? Seven Edges. Meaning that some edges are useless. There is some edge in it which is unnecessary i.e. which was not needed. You have to keep the graph connected. What you don't have to do is that you erase these two and the four becomes completely different. No. You have to convert this graph into a tree. What to convert into? To convert into tree. How will you convert how many in that tree? How much should you have been among these four useless trees?"
+    },
+    {
+      "start_time": 394.16,
+      "end_time": 422.23,
+      "text": "के हिसाब से चार अगर ट्री होता तो चार होता है कितना सात मतलब कि तीन एज ना फालतू एज है आपको उस फालतू एज को रिमूव करना है अगर आप वो तीन फालतू एज रिमूव कर दिए और ये फिर भी कनेक्टेड है ना तो ये ग्राफ ट्री बन जाएगा कैसे ट्री बन जाएगा हम आपको दिखाते हैं फॉर एग्जांपल आप कौन-कौन सा रिमूव कर सकते हैं हम हम आपको दिखाते हैं कि तीन एज रिमूव करने से क्या होगा ये वाला एज रिमूव कर दीजिए यह वाला एज रिमूव कर दीजिए। ठीक है? रिमूव हो गया।",
+      "source": "caption",
+      "english_text": "According to this, if there is a tree, then four is equal to seven. It means that three edges are not redundant edges. You have to remove that redundant edge. If you remove those three redundant edges and it is still connected, then this graph will become a tree. How will it become a tree? We show you for example, which all you can remove. We show you what will happen by removing three edges. Remove this edge. Please remove this edge. Ok? Removed."
+    },
+    {
+      "start_time": 422.24,
+      "end_time": 455.909,
+      "text": "वेरी गुड। ये वाला एज हम रिमूव कर दिए। एक एज गया। तीन करना है। एक एज गया। और हम क्या करें? ये वाला एज भी रिमूव कर दीजिए। टू और वन का बीच का एज रिमूव कर दीजिए। दो गया। और क्या कर सकते हैं? ये वाला एज रिमूव कर दीजिए। वन और फोर के बीच का एज रिमूव कर दीजिए। अब देखिए। क्या अब ये एक ट्री है? हां भाई ये एक ट्री है। क्यों? क्योंकि अब इसका नंबर ऑफ़ एजेस हो चुका है 1 2 3 4 और इसका नंबर ऑफ वर्टेक्स है पांच। तो क्या एजेस = n - 1 है? बिल्कुल है। और दूसरा टेस्ट किसी भी वर्टेक्स पे जाने के लिए क्या एक ही रास्ता है? हां,",
+      "source": "caption",
+      "english_text": "Very good. We removed this edge. An edge is gone. Have to do three. An edge is gone. And what should we do? Remove this edge also. Remove the edge between two and one. Gave two. What else can we do? Remove this edge. Remove the edge between one and four. watch now. Is it a tree now? Yes brother, it is a tree. Why? Because now its number of edges is 1 2 3 4 and its number of vertex is five. So is edges = n - 1? Of course it is. And the second test is there only one path to reach any vertex? yes,"
+    },
+    {
+      "start_time": 455.919,
+      "end_time": 489.35,
+      "text": "देख लीजिए 0 से वन जाना है। एक रास्ता है। ज़ीरो से टू, टू से थ्री, थ्री से वन और कोई रास्ता एक्सिस्ट नहीं करता है। टू से थ्री जाना है। एक ही रास्ता है। टू से थ्री। और आप कहीं भी जाएंगे गलत हो जाएगा। क्या आपको कोई भी साइकिल दिख रहा है यहां पे? कोई साइकिल नहीं दिख रहा है। खुला ग्राफ है। और क्या सारे वर्टेक्स अभी भी कनेक्टेड हैं? मतलब कि सारे वर्टेक्स रीचेबल है ना? अगर आप जीरो से स्टार्ट करेंगे तो आप कहीं भी जा सकते हैं ना। आप ऐसा थोड़ी है कि ज़ीरो से स्टार्ट करेंगे तो वन नहीं मिलेगा। मिल जाएगा। आप अगर टू से स्टार्ट करेंगे तो सारे मिल जाएंगे। दिस",
+      "source": "caption",
+      "english_text": "Look, we have to go from 0 to one. There is a way. Zero to two, two to three, three to one and no other way exists. Have to go from two to three. There is only one way. Two to three. And wherever you go things will go wrong. Do you see any bicycles here? No bicycle is visible. is an open graph. And are all the vertexes still connected? Meaning that all vertexes are reachable, right? If you start from zero you can go anywhere. You are such that if you start from zero you will not get one. Will get it. If you start from two, you will get everything. this"
+    },
+    {
+      "start_time": 489.36,
+      "end_time": 519.11,
+      "text": "इज ए ट्री। आपने इस ग्राफ को एक ट्री में कन्वर्ट कर दिया है। लेकिन आप ऐसा नहीं कर सकते है। आप ये नहीं कर सकते हैं। जैसे कि यहां पे एच था। यही एज रिमूव किए थे ना। अब मान लीजिए आप बोलते हैं कि चलो तीन एज रिमूव करना है। हम इसको रिमूव कर देते हैं। बोले कर दो और इसको रिमूव कर देते हैं। अरे ये क्या हो गया? हां और इसको रिमूव कर देते हैं। रुकिए थोड़ा गलत हो गया क्या? हां। आप क्या बोले? आप क्या बोले? यहां से भी एच था। हां। अच्छा नहीं ये नहीं था।",
+      "source": "caption",
+      "english_text": "Is a tree. You have converted this graph into a tree. But you can't do that. You can't do this. As if there was an H here. These are the edges that were removed. Now suppose you say that we have to remove three edges. We remove it. Tell me and we will remove it. Hey, what happened? Yes and remove it. Wait, did something go wrong? Yes. What did you say? What did you say? H was from here also. Yes. No good it wasn't."
+    },
+    {
+      "start_time": 519.12,
+      "end_time": 552.15,
+      "text": "अ क्या है यार? क्या हो जाए? कुछ भी कुछ भी ट्री हो। ये वाला ट्री था ना आपका। ये वाला ट्री था कुछ। हां ये था। ऐसा ट्री था ना? आप बोले कि हमको तीन एज रिमूव करना है। तो हम क्या करेंगे? इसको रिमूव कर देंगे। अच्छा इसको रिमूव कर देंगे। अच्छा और इसको रिमूव कर देंगे। बोले ठीक है करके देख लो। लेकिन अब अभी भी देखिए अभी भी नंबर ऑफ़ H तो चार है। हां। लेकिन ये ट्री है। नहीं ट्री नहीं है। क्यों? सबसे पहली बात तो यहां पे साइकिल है। 0 3 4 वाला साइकिल नहीं हटा। और आपका ज़ीरो डिस्कनेक्टेड हो गया। आपका ज़ीरो कहीं और चला गया है। आप अब ज़ीरो से वन तक कैसे",
+      "source": "caption",
+      "english_text": "What is it, friend? What should happen? Anything can be a tree. This tree was yours, wasn't it? This one was a tree. Yes it was. Was it such a tree? You said that we have to remove three edges. So what do we do? Will remove it. Ok, we will remove it. Ok and will remove it. He said, okay, try it. But now see, the number of H is still four. Yes. But this is a tree. No, it is not a tree. Why? The first thing is that there are bicycles here. 0 3 4 cycle not removed. And your zero got disconnected. Your zero has gone somewhere else. How do you go from zero to one now?"
+    },
+    {
+      "start_time": 552.16,
+      "end_time": 585.67,
+      "text": "पहुंचिएगा? पहले पहुंच रहे थे ना। अब आपका ग्राफ डिस्कनेक्टेड हो गया। तो ये नहीं करना है। ग्राफ कनेक्टेड था मतलब कि हर वर्टेक्स रीचेबल होना चाहिए हर वर्टेक्स से। वो प्रॉपर्टी मेंटेन करते हुए आपको एजेस रिमूव करनी है। ऐसा नहीं करना है कि किसी एक को अलग ही छोड़ दिए। ये ट्री नहीं है। ये ट्री क्यों नहीं है? क्योंकि पहली बात तो साइकिल है और आप ज़ीरो को कट कर दिए। तो जो हम लोग पहले किए थे वो ग्राफ को ट्री में बनाए थे। अभी ये ग्राफ को ट्री में आप नहीं बनाए। अभी आप ये कुछ गलत ही कर दिए हैं। तो ये होता है कि आप ग्राफ को ट्री कैसे बनाते हैं। लेकिन एमएसटी का मतलब है मिनिमम स्पैनिंग ट्री। इस मिनिमम का क्या मतलब है? वो आइए समझा समझते हैं।",
+      "source": "caption",
+      "english_text": "Will you reach? You were arriving first, weren't you? Now your graph is disconnected. So this should not be done. The graph was connected meaning that every vertex should be reachable from every other vertex. While maintaining that property you have to remove the edges. It is not necessary to leave any one person aside. This is not a tree. Why is this not a tree? Because the first thing is a bicycle and you have cut out the zero. So what we did earlier was to make the graph a tree. You have not made this graph into a tree yet. Now you have done something wrong. So this is how you make a graph a tree. But MST means Minimum Spanning Tree. What does this minimum mean? Let us understand that."
+    },
+    {
+      "start_time": 585.68,
+      "end_time": 619.99,
+      "text": "आपको हम बता अब देखिए ये भी एक ग्राफ है। अच्छा क्या ये एक ट्री है? नहीं ट्री है। क्यों? क्योंकि इसमें नंबर ऑफ वर्टेक्स कितना है? तीन। नंबर ऑफ एज कितना है? तीन। ट्री में कितना होना चाहिए था? दो। मतलब कि और इसमें साइकिल भी है। तो आप समझ पा रहे होंगे ना कि किसी भी एक एज को अगर हम हटा दिए इसमें तीन डंडी है ना? ये ये किसी भी एक एज को हटा देंगे ना तो ये ट्री बन जाएगा। इसको हटाएंगे साइकिल टूट जाएगा। ट्री बन जाएगा। इसको हटाएंगे साइकिल टूट जाएगा। ट्री बन जाएगा। इसको हटाएंगे और ट्री बन जाएगा। तो किसी को भी हटा सकते हैं। अब मिनिमम स्पैनिंग ट्री का क्या मतलब होता है? देखिए आपके पास तीन ऑप्शन है। आप किसी भी एज को हटा सकते हैं तो ये",
+      "source": "caption",
+      "english_text": "Let us tell you, now see this is also a graph. Okay, is this a tree? No, it is a tree. Why? Because what is the number of vertex in it? Three. What is the number of age? Three. How much should have been in the tree? Two. Meaning that there is also a bicycle in it. So you must be able to understand that if we remove any one edge, it has three rods, right? If you remove any one edge, it will become a tree. If you remove it the bicycle will break. Will become a tree. If you remove it the bicycle will break. Will become a tree. Remove it and a tree will be created. So anyone can be removed. Now what does Minimum Spanning Tree mean? Look, you have three options. If you can remove any edge then this"
+    },
+    {
+      "start_time": 620.0,
+      "end_time": 651.91,
+      "text": "ट्री बन जाएगा। तीनों ऑप्शन हम लिख देते हैं। आप एक काम ये कर सकते हैं कि 0 1 2 ठीक है? ये दो है। ये चार है। मतलब आप ज़ीरो से टू वाले को हटा सकते हैं। आप एक काम और कर सकते हैं कि आप 0 2 1 ये कर सकते हैं। तीन और चार। मतलब कि आप ज़ीरो और वन वाले को हटा सकते हैं। आप एक काम और कर सकते हैं कि भैया ज़ीरो। अब किसको हटाना बाकी है? इसको हटा दिए। इसको हटा दिए। हां। 0 टू और वन। ठीक बात है। आप इसको और इसको मतलब आप वन और टू वाले को हटा सकते हैं। तो यही तीन ऑप्शन है ना आपके पास। ये",
+      "source": "caption",
+      "english_text": "Will become a tree. We write all three options. One thing you can do is 0 1 2 okay? These are two. This is four. Meaning you can remove two from zero. You can do one more thing that you can do 0 2 1 this. Three and four. Meaning that you can remove the zeros and ones. You can do one more thing, brother zero. Now who is left to be removed? Removed this. Removed this. Yes. 0 two and one. That's right. You can remove this and this meaning you can remove the one and two. So these are the three options you have. this"
+    },
+    {
+      "start_time": 651.92,
+      "end_time": 686.23,
+      "text": "ऑप्शन है। ये ऑप्शन है और ये ऑप्शन है। ये तीनों ट्री है। ये तीनों ट्री है। मतलब किसी में कोई साइकिल नहीं है। एज इज टू हो गया है। तो तीनों ट्री है। लेकिन मिनिमम स्पेलिंग ट्री क्या होता है? हर ट्री का हर ट्री का सम ऑफ वेट्स निकालिए। मतलब उस ट्री में जो भी एज बचा हुआ है ना उसका वेट का सम निकालिए। इसका क्या सम आएगा? 2 + 4 6 इसका 3 + 4 7 इसका 2 + 3 5 इन तीनों ऑप्शंस में से जो आप अभी एक कारवाई किए जो भी आप एक्टिविटी किए एक एज हटाने का वो हटा के सबसे कम वेट कहां आया? मिनिमम वेट",
+      "source": "caption",
+      "english_text": "There is option. This is an option and this is an option. These three are trees. These three are trees. Meaning there is no bicycle in any of them. Age Is Two is done. So all three are trees. But what is a minimal spelling tree? Find the sum of weights of each tree. Meaning, find the sum of the weights of whatever edges are left in that tree. What will come of this? 2 + 4 6 Its 3 + 4 7 Its 2 + 3 5 Out of these three options, which action you just took, which action you took to remove one edge, where did it get the least weight? minimum weight"
+    },
+    {
+      "start_time": 686.24,
+      "end_time": 716.79,
+      "text": "कहां आया? इस वाले आदमी का। इसका छह है, इसका सात है, इसका पांच है। ये आपका मिनिमम स्पैनिंग ट्री होता है। मिनिमम स्पैनिंग ट्री। क्यों? क्योंकि ग्राफ को ट्री में तो बदलना है। सारा रूल फॉलो करना है कि ऐसा-ऐसा होना चाहिए। लेकिन जो एज आप हटाएंगे ना उसके बाद जो वेट बचा हुआ है ग्राफ का अभी का वो मिनिमम होना चाहिए। इस कन्व इस कन्वर्शन को क्या बोला जाता है? कि आपने एक ग्राफ को एक एमएसटी में कन्वर्ट कर दिया और आपसे पूछा क्या जाएगा?",
+      "source": "caption",
+      "english_text": "Where did you come? Of this guy. Its six, its seven, its five. This is your minimum spanning tree. Minimum Spanning Tree. Why? Because the graph has to be converted into a tree. The whole rule has to be followed that it should be like this. But after removing the edge, the weight remaining in the graph should be the current minimum. What is this conversion called? That you converted a graph to an MST and you were asked what?"
+    },
+    {
+      "start_time": 716.8,
+      "end_time": 750.31,
+      "text": "ये जो सम है ना ये फाइनल सम पूछा जाएगा कि भैया कन्वर्ट कर दो एमएसटी में और उसका फाइनल सम बताओ। अगर आप सही सम बताते हैं, अगर आप पांच बताते हैं, वेरी गुड चल जाएगा। अगर आप छह और सात मतलब आपसे कुछ गलती हो जाता है, आप आप कुछ गलती कर दिया हटाने में, तो आपका नहीं चलेगा। इस चीज को क्या बोला जाता है? एक ग्राफ को एक एमएसटी में कन्वर्ट करना। एमएसटी में क्यों कन्वर्ट करना? क्योंकि ट्री का हम ऑलरेडी बता चुके हैं क्या-क्या होता है, कैसे-कैसे होता है और एमएसटी मतलब कि जो एज आप हटा रहे हैं ना, जो भी एक एज हटाना है, बहुत सारा एज हटाना पड़ेगा। उसके बाद जो सम आना चाहिए, जो सम बचना चाहिए वो मिनिमम होना चाहिए। इस चीज को क्या बोला",
+      "source": "caption",
+      "english_text": "Whatever sum is this, isn't this the final sum? It will be asked that brother, convert it into MST and tell its final sum. If you tell the right even, if you tell five, it will be very good. If you mean six and seven, you make some mistake, you have made some mistake in removing it, then yours will not work. What is this thing called? Converting a graph to an MST. Why convert to MST? Because we have already told what happens in the tree, how it happens and MST means that the edge you are removing, whichever edge you have to remove, a lot of edges will have to be removed. The sum that should come after that, the sum that should be left should be minimum. what do you call this thing"
+    },
+    {
+      "start_time": 750.32,
+      "end_time": 784.23,
+      "text": "जाता है? ग्राफ टू एमएसटी। अब आप लोग एमएसटी समझ चुके हैं। अब चलिए आपको हम प्रीलिम्स का समझाते हैं और अब आपको एग्जांपल देके समझाते हैं कि कैसे-कैसे करना है ये काम। तो देखिए अब आपको हम समझाते हैं कि कैसे करना है। अब आप देख रहे होंगे कि यहां पे ग्राफ है। इसमें भी बहुत सारा एज है। कितना एज है? सात एज है। होना कितना चाहिए था? चार। मतलब कि कोई तीन एज आपको हटाना पड़ेगा। लेकिन आप अपने मन से कोई भी तीन एज नहीं हटा सकते हैं ना? क्योंकि आप हटाएंगे गलत हो जाएगा तो आपको मिनिमम बनाना है उसमें से। तो आपको ध्यान देके वैसा हटाना पड़ेगा जिसका थोड़ा ज्यादा वैल्यू हो। मतलब कि जो बड़ा एज है जो ज्यादा वेट एज है उसको हटाना पड़ेगा।",
+      "source": "caption",
+      "english_text": "goes? Graph to MST. Now you guys have understood MST. Now let us explain to you about Prelims and now let us explain to you by giving examples how to do this work. So see, now we will explain to you how to do it. Now you must be seeing that there is a pay graph here. There's a lot of edge in this too. How old is it? There are seven edges. How much should it have been? Four. Meaning that you will have to remove some three edges. But you can't remove any three edges from your mind, right? Because if you remove it, it will go wrong, so you have to make minimum out of it. So you will have to carefully remove the one which has slightly higher value. Meaning that the bigger edge or the heavier edge will have to be removed."
+    },
+    {
+      "start_time": 784.24,
+      "end_time": 816.31,
+      "text": "लेकिन अब कोई सोचेगा कि हम एक काम करेंगे जो टॉप थ्री एज है मतलब टॉप थ्री वेट वाला एज है उसको हटा देंगे तो सिंपल बन जाएगा नहीं क्योंकि क्या होगा ना अगर आप इस दोनों को हटा दिए तो डिस्कनेक्टेड भी नहीं करना है ना आप ये नहीं कर सकते हैं कि जो टॉप थ्री है उसको हटा दो हो सकता है कि ये एज क्रूशियल हो उसमें से अगर आप मान लीजिए ये और ये हटा देंगे मान लीजिए कि ये टॉप थ्री में रहता आप ज़ीरो से टू और ज़ीरो से वन हटा दिए अगर तो ज़ीरो अकेला पड़ जाएगा अकेला नहीं छोड़ना है किसी को कनेक्टेड रहना चाहिए तो इसके लिए आपको कोई दूसरा तरकीब लगाना पड़ेगा उतना सिंपल नहीं है कि टॉप थ्री हटा दो और टॉप फोर हटा दो। ठीक",
+      "source": "caption",
+      "english_text": "लेकिन अब कोई सोचेगा कि हम एक काम करेंगे जो टॉप थ्री एज है मतलब टॉप थ्री वेट वाला एज है उसको हटा देंगे तो सिंपल बन जाएगा नहीं क्योंकि क्या होगा ना अगर आप इस दोनों को हटा दिए तो डिस्कनेक्टेड भी नहीं करना है ना आप ये नहीं कर सकते हैं कि जो टॉप थ्री है उसको हटा दो हो सकता है कि ये एज क्रूशियल हो उसमें से अगर आप मान लीजिए ये और ये हटा देंगे मान लीजिए कि ये टॉप थ्री में रहता आप ज़ीरो से टू और ज़ीरो से वन हटा दिए अगर तो ज़ीरो अकेला पड़ जाएगा अकेला नहीं छोड़ना है किसी को कनेक्टेड रहना चाहिए तो इसके लिए आपको कोई दूसरा तरकीब लगाना पड़ेगा उतना सिंपल नहीं है कि टॉप थ्री हटा दो और टॉप फोर हटा दो। Correct"
+    },
+    {
+      "start_time": 816.32,
+      "end_time": 850.79,
+      "text": "है? चलिए इसको समझने का सबसे अच्छा रास्ता क्या है ना? देखिए इसको एक गांव की तरह कंसीडर कीजिए। इसमें पांच घर है। कौन-कौन? 0 1 2 3 4 गांव में ये जो एजेस है ना ये आपके तार हैं। एक घर से दूसरे घर तार गया हुआ है और कितना मीटर लंबा तार है? ये आपको बताता है। अच्छा। आपका काम क्या है कि आपको पूरे गांव में बिजली पहुंचानी है। पूरे गांव में आपको इलेक्ट्रिसिटी का कनेक्टिविटी देना है। उसी का मतलब होता है ना कि कोई घर छूट ना जाए, कोई घर अलोन नहीं हो जाए। मतलब किसी घर में अंधेरा नहीं रहना चाहिए। अच्छी बात है। आपका काम क्या है कि जो आप ये बिजली फैलाएंगे जो आप ये बिजली जोड़ेंगे मतलब आप ज़ीरो से वन जोड़ें वन से फोर जोड़ें कुछ भी करें तो",
+      "source": "caption",
+      "english_text": "Is? Well, what is the best way to understand this? Look, consider it like a village. It has five houses. Who all? 0 1 2 3 4 These edges in the village are your wires. There is a wire running from one house to another and how many meters long is the wire? This tells you. Good. What is your job? You have to provide electricity to the entire village. You have to provide electricity connectivity to the entire village. That means that no house should be left behind, no house should be left alone. Meaning there should not be darkness in any house. It's a good thing. What is your job, that you will spread this electricity, that you will add this electricity, that is, you will add zero to one, add one to four, whatever you do."
+    },
+    {
+      "start_time": 850.8,
+      "end_time": 884.949,
+      "text": "सबसे पहली बात तो इसमें चार तरीके के वो हो चार तरीके के तार हो मतलब चार एजेस हो अच्छा और जो भी आप तार जोड़ते हैं उनका सम मिनिमम होना चाहिए। इसी का मतलब होता है ना मिनिमम स्पेनिंग ट्री। अच्छा। तो देखिए आप क्या कर सकते हैं? सबसे पहले तो अपना बोरिया बिस्तर उठाइए और किसी भी एक घर को पकड़ लीजिए। अपने मन से किसी भी एक घर को पकड़ लीजिए। वो आपका स्टार्टिंग पॉइंट है। आप एक इलेक्ट्रिशियन हैं। आप गांव में पहुंचे हैं। आपकी मर्जी से किसी भी एक घर में जाकर बैठ जाइए। देखिए हम क्या करेंगे यहां पे। हम ना इस गांव को दो पार्ट में डिवाइड कर देते हैं। एक पार्ट जिसमें बिजली नहीं है। एक पार्ट जिसमें बिजली",
+      "source": "caption",
+      "english_text": "First of all, there should be four types of wires in it, that means there should be four edges and whatever wire you connect, their sum should be minimum. This is what Minimum Spanning Tree means. Good. So see what you can do? First of all, pick up your sack and bed and hold any one house. Pick up any one house in your mind. That is your starting point. You are an electrician. You have reached the village. Go and sit in any house as per your wish. See what we will do here. Let us divide this village into two parts. A part which has no electricity. a part that contains electricity"
+    },
+    {
+      "start_time": 884.959,
+      "end_time": 912.87,
+      "text": "पहुंच चुकी है। मतलब जिसमें आप कनेक्टिविटी जोड़ चुके हैं। तो शुरू में तो कहीं पे बिजली नहीं है। शुरू में तो पूरा गांव अंधेरा है। अच्छा। आप अपने मन से एक गांव एक घर पकड़ लीजिए। तो आप जीरो पकड़ लीजिए। आप कुछ भी आप कुछ भी कर सकते हैं अपने मन से। देखिए तो आप ना यहां पर इलेक्ट्रिसिटी आ चुका है और यहां पर नो इलेक्ट्रिसिटी है। आप किस गांव किस घर को पकड़े हैं? जीरो को। आप जीरो को पकड़ लिए। किसमें-किस में नहीं है? बाकी गांव के घरों में नहीं है। तो 1 2 3 4 इसमें इलेक्ट्रिसिटी नहीं है। अच्छी बात है।",
+      "source": "caption",
+      "english_text": "Has arrived. Meaning in which you have added connectivity. So initially there is no electricity anywhere. In the beginning the entire village is dark. Good. You capture one village and one house in your mind. So you catch zero. You can do anything, you can do anything with your mind. Look, electricity has come here and there is no electricity here. Which village and which house are you holding? To zero. You caught zero. In which and which is it not? Not in the rest of the village houses. So 1 2 3 4 There is no electricity in it. It's a good thing."
+    },
+    {
+      "start_time": 912.88,
+      "end_time": 947.35,
+      "text": "इतना समझ में आता है कि आप दो बांट लिए? अच्छा। अब एक-एक करके इलेक्ट्रिसिटी वाले पार्ट को देखिए। इलेक्ट्रिसिटी वाले पार्ट में क्या है? आपके पास जीरो है। आपके पास जीरो है। जीरो से डायरेक्ट कहां-कहां तार निकल रहा है? जीरो वाले घर से डायरेक्ट किसमें-किस में तार निकल रहा है? तो आपको पता चला कि जीरो से ना जीरो से वन के बीच में एक तार है जो कि 5 मीटर लंबा है और जीरो से दो के बीच में एक तार है जो कि 1 मीटर लंबा है। ज़ीरो से दो ही निकल रहा है ना? जीरो से जिस घर में आप इलेक्ट्रिसिटी दे चुके हैं पहले आके उससे दो तारें निकल",
+      "source": "caption",
+      "english_text": "It makes so much sense that you two divided? Good. Now look at the electricity part one by one. What's in the electricity part? You have zero. You have zero. Where are the wires coming out directly from zero? In which direction is the wire coming out from the zero house? So you came to know that there is a wire between zero and zero to one which is 5 meters long and between zero and two there is a wire which is 1 meter long. Only two is coming out of zero, isn't it? From zero to the house where you have provided electricity, first two wires come out of it."
+    },
+    {
+      "start_time": 947.36,
+      "end_time": 980.79,
+      "text": "रही हैं। एक वन की तरफ, एक टू की तरफ। अच्छा। अब एक बात बताइए एक मिनट रुकिएगा। तो देखिए जीरो [गला साफ़ करने की आवाज़] से दो तारें जा रही है। एक एक के तरफ एक दो की तरफ। बाकी तो अभी पिक्चर में नहीं है ना। बाकी तो तीन चार तो पिक्चर में ही नहीं है। तो वन और टू के बारे में बात करते हैं। देखिए आपको टू के बारे में बात कर लेते हैं। क्यों? क्योंकि इसका वेट अभी सबसे कम है। इसमें सबसे आपको कम उसका तार दिख रहा है ना। अच्छा। अब देखिए ज़ीरो से टू आपको कनेक्ट तो करना ही है। क्योंकि हर घर कनेक्ट होना चाहिए। हर घर में कनेक्टिविटी होनी चाहिए। कनेक्ट का मतलब ये नहीं कि",
+      "source": "caption",
+      "english_text": "Has been. One towards one, one towards two. Good. Now tell me one thing, wait a minute. So see, two strings are going from zero [throat clearing sound]. One towards one, one towards two. The rest is not in the picture yet. The remaining three or four are not in the picture. So let's talk about one and two. Look let's talk about you two. Why? Because its weight is the lowest right now. In this, you can see its string least, isn't it? Good. Now see, you have to connect from zero to two. Because every home should be connected. There should be connectivity in every house. Connect does not mean that"
+    },
+    {
+      "start_time": 980.8,
+      "end_time": 1015.11,
+      "text": "डायरेक्टली तार जोड़ना है। नहीं किसी ना किसी तरीके से कनेक्ट तो करना ही है ज़ीरो और टू को। ये तो अटल सत्य है। अच्छा ऐसा तो हो नहीं सकता है ना कि ज़ीरो और टू अनरीचेबल हो जाए एक दूसरे से। ऐसा नहीं हो सकता। अच्छी बात है। अब बताइए कि ज़ीरो और टू कितने तरीके से कनेक्ट कर सकते हैं आप? दो मेन तरीका है कनेक्ट करने का। हम क्या बोल रहे हैं? दो मेन तरीका है ज़ीरो और टू के बीच में कनेक्शन बनाने का। क्या मेन तरीका है? या तो आप जीरो और टू को डायरेक्ट एक तार से जोड़ दीजिए। मतलब ये वाला तार से जोड़ दीजिए। अच्छा एक तरीका ये हुआ। या तो आप जीरो वाया किसी घर से आप टू",
+      "source": "caption",
+      "english_text": "Have to connect the wire directly. No, zero and two have to be connected in some way or the other. This is an unchangeable truth. Well, it is not possible that zero and two become unreachable from each other. This cannot be. It's a good thing. Now tell in how many ways can you connect zero and two? There are two main ways to connect. What are we saying? There are two main ways to make the connection between zero and two. What is the main method? Either you connect zero and two directly with a wire. Meaning, connect this one with a wire. Well, this is one way. Either you go from zero via some house to two"
+    },
+    {
+      "start_time": 1015.12,
+      "end_time": 1041.11,
+      "text": "को जोड़िए। ज़ीरो और टू के बीच में जरूरी नहीं है कि तार हो। कनेक्शन होना चाहिए। तार नहीं होना चाहिए। तो एक तरीका ये है कि आप ज़ीरो और टू के बीच में ये वाला तार जोड़ दीजिए। डायरेक्ट वाला। दूसरा तरीका है कि आप ज़ीरो से X जाइए, X से Y जाइए और वाया वाया वाया कुछ करके टू तक पहुंचिए। दो ही तरीका है ना? ऐसा और तीसरा तो कोई तरीका नहीं है। तीसरा तरीका है कि मत करो कनेक्ट। ऐसा नहीं हो सकता है। अच्छा। अब एक बात हमको बताइए।",
+      "source": "caption",
+      "english_text": "Connect. There is not necessarily a string between zero and two. There must be a connection. There should be no wires. So one way is that you add this wire between zero and two. The direct one. Another way is that you go from zero to There are only two ways, right? There is no other way like this. The third way is to not connect. This cannot happen. Good. Now tell us one thing."
+    },
+    {
+      "start_time": 1041.12,
+      "end_time": 1074.39,
+      "text": "0 से टू जाने का वेट आपको पता चला है कि वन है। मतलब ज़ीरो से टू के बीच आप डायरेक्ट तार जोड़ेंगे तो आपको 1 मीटर का तार लेना पड़ेगा। और आप अगर वाया वाले रूट पे जाएंगे कि वाया वाया वाया समथिंग हम जाएंगे। तो आप एक बात बताइए कि अगर आप वाया जाते हैं वाया मतलब कि क्या होता है ना कि ज़ीरो से कहीं और गए, कहीं और से टू आ गए। अगर आप जीरो से वन जाएंगे तो आपको पांच तो यहीं लग गया। वन से टू जाने में जो लगेगा वो अलग लगेगा। कहने का क्या मतलब है? अगर आप वाया वाला पाथ चुनते हैं कि हम जीरो से कहीं और जाएंगे। वहां से हम टू",
+      "source": "caption",
+      "english_text": "The weight of going from 0 to two, you have learned, is one. Meaning, if you connect a direct wire between zero and two, you will have to take a wire of 1 meter. And if you go on the Via route or Via Via Via Something, we will go. So tell me one thing that if you go via, what does it mean, not that you went from zero to somewhere else, you came to two from somewhere else. If you go from zero to one, you will get five here. What it will take to go from one to two will seem different. What does it mean to say? If you choose the via path we will go from zero to somewhere else. from there we"
+    },
+    {
+      "start_time": 1074.4,
+      "end_time": 1099.43,
+      "text": "आएंगे भैया आपको पांच तो यहीं लग गया है। आप वन से कम में तो किसी हालत में नहीं पहुंचिएगा। कुछ भी कर लेंगे। तो ज़ीरो से वन जाने में आपको 5 मीटर लगेगा। वन से टू जाने में पता नहीं कितना लगेगा। वो तो अभी मालूम नहीं है। तो आपके लिए ज़ीरो और टू के बीच के कने कनेक्टिविटी का बेस्ट ऑप्शन अभी क्या है? आप इसको रहने दीजिए। ये जो डायरेक्ट वाला तार है ना इसी से जोड़िए।",
+      "source": "caption",
+      "english_text": "Come brother, you have already got five here. You will not reach any condition less than one. Will do anything. So it will take you 5 meters to go from zero to one. Don't know how much it will take to go from one to two. That is not known yet. So what is the best option for you right now for connectivity between zero and two? You leave it be. Connect this to the direct wire."
+    },
+    {
+      "start_time": 1099.44,
+      "end_time": 1129.59,
+      "text": "क्यों? क्योंकि ये सबसे कम है। जीरो से टू वाला आपको जीरो से टू वाला तार सबसे कम निकल के आया है। मतलब कि जीरो से बाकी जो घरों में तार जाता है वो वन से तो ज्यादा ही बड़ा होगा। अच्छा। अब आपके पास 0 और टू के बीच को दो ऑप्शन है। या तो आप जीरो और टू को डायरेक्टली कनेक्ट कर दीजिए या तो आप जीरो से कहीं और जाके वहां से टू आइए। आप अगर सेकंड ऑप्शन की तरफ जाएंगे ना आपको पक्का इससे ज्यादा लगेगा। क्यों? क्योंकि ज़ीरो का हम लोग डायरेक्ट तार देख रहे हैं।",
+      "source": "caption",
+      "english_text": "Why? Because this is the lowest. From zero to two, you have got the shortest wire from zero to two. This means that the wires going to houses other than zero will be much bigger than the one in the forest. Good. Now you have two options between 0 and two. Either you connect zero and two directly or you go somewhere else from zero and come to two from there. If you go for the second option, it will definitely cost you more. Why? Because we are watching the direct wire of Zero."
+    },
+    {
+      "start_time": 1129.6,
+      "end_time": 1163.99,
+      "text": "एक तार सबसे छोटा तार कहां का आया है? टू का। मतलब कि 0 और टू जाने का एक ही तरीका है सबसे अच्छा वाला कि आप जीरो से ना डायरेक्टली टू तक चले जाइए। आप वाया समबडी जाएंगे ना तो वाया समबडी तो भैया जीरो से वन नहीं पांच लग जाएगा। वन से टू में मालूम नहीं कितना और लग जाएगा। इसका क्या मतलब है? आपके पास किस घर में इलेक्ट्रिसिटी थी अभी? जीरो से। आप जीरो के सारे तार को लिखें। मतलब इलेक्ट्रिसिटी वाले घरों को देखें कि कहां-कहां तार निकल रहा है इनमें से? आपको पता चला कि सबसे छोटा तार किससे जाता है? जीरो से टू जाता",
+      "source": "caption",
+      "english_text": "Where does a wire, the smallest wire, come from? Of two. Meaning that there is only one way to go from zero to two, the best one is to go from zero directly to two. If you go via someone, then brother, you will go from zero to not one but five. I don't know how much more it will take to go from one to two. What does it mean? Which house did you have electricity in now? From zero. You write all the strings of zeros. Meaning, look at the houses with electricity to see where the wires are coming out of them? Did you find out where the shortest wire goes? goes from zero to two"
+    },
+    {
+      "start_time": 1164.0,
+      "end_time": 1196.789,
+      "text": "है। क्या टू में अभी इलेक्ट्रिसिटी है। अभी इलेक्ट्रिसिटी नहीं है टू में। तो आप क्या करेंगे? ज़ीरो से टू के बीच में A वाले एज को रहने देंगे। वो आपके एमएसटी का पार्ट होगा। क्योंकि ज़ीरो और टू को तो कनेक्ट होना ही होना पड़ेगा। और सबसे छोटा रास्ता ज़ीरो से टू ही है। आप जीरो से कहीं और जाके टू तक जाने की कोशिश करेंगे ना गलत हो जाएगा। गड़बड़ झाला हो जाएगा। तो आप क्या करेंगे? जीरो से टू वाले को अपने ट्री में इंक्लूड कर लेंगे। इसको दिखाने के लिए हम क्या करते हैं? जीरो से टू वाले को ग्रीन मार्क कर देते हैं। जो जो अरे जो",
+      "source": "caption",
+      "english_text": "Is. Is there electricity in 2 yet? There is no electricity in 2 right now. So what will you do? Will leave the edge with A between zero and two. That will be part of your MST. Because zero and two will have to be connected. And the shortest route is from zero to two. If you try to go from zero to two somewhere else, you will go wrong. There will be a mess. So what will you do? We will include those from zero to two in our tree. What do we do to show this? Those from zero to two are marked green. jo jo hey jo"
+    },
+    {
+      "start_time": 1196.799,
+      "end_time": 1223.27,
+      "text": "जो एज ग्रीन मार्क है मतलब वो इंक्लूडेड है। और बस आपको समझाने के लिए ये असली कोड नहीं है। बस आपको हम कांसेप्ट समझा रहे हैं कि करना क्या है? टू को हम इलेक्ट्रिसिटी वाले अब टू में भी बिजली आ चुकी है। टू में भी अब क्या आ चुका है? बिजली आ चुका है। अच्छी बात है? वेरी गुड। सेम काम कीजिए। सेम काम कीजिए। अब फिर से सारे इलेक्ट्रिसिटी वाले घरों के तार लिखिए। मतलब जिन घरों में इलेक्ट्रिसिटी है, जिन घरों को आप कनेक्ट कर चुके हैं।",
+      "source": "caption",
+      "english_text": "The edge which is marked green means it is included. And just to make you understand, this is not real code. We are just explaining the concept to you, what to do? We used to have electricity in 2, now we have electricity in 2 also. What has come in 2 now? Electricity has arrived. It's a good thing? very good. Do the same work. Do the same work. Now again write the wires of all the houses with electricity. Meaning, the houses which have electricity, the houses which you have connected."
+    },
+    {
+      "start_time": 1223.28,
+      "end_time": 1253.99,
+      "text": "आप जीरो और टू को जोड़ चुके हैं। अब कहां-कहां जा सकते हैं? आप जीरो से कहां-कहां और जा सकते हैं और टू से कहां-कहां और जा सकते हैं? इसके बेसिस पर हम लोग नेक्स्ट चिन्ह लेंगे। तो क्या लिखेंगे हम लोग? देखिए सबसे पहले तो ज़ीरो से एक तार निकल के कहां जा रहा है? वन के तरफ। ये तो अभी भी है ना? पांच है। ये एक लिख लिए। ज़ीरो से और कोई नहीं जा रहा है। ज़ीरो से टू जाता था। टू हो चुका है। अच्छा टू से टू से देखिए। टू से एक H तो ज़ीरो की तरफ जा रहा है। लेकिन ज़ीरो पे ऑलरेडी इलेक्ट्रिसिटी है। जहां इलेक्ट्रिसिटी है उसको क्यों कनेक्ट करना है? जहां अंधेरा है वहां करेंगे ना। इसको इग्नोर करिए।",
+      "source": "caption",
+      "english_text": "You have added zero and two. Where can we go now? Where else can you go from zero and where else can you go from two? On the basis of this we will take the next symbol. So what will we write? Look, first of all, where is the wire coming out of zero and going? Towards the forest. This is still there isn't it? There are five. Write this one. No one else is going from zero. Used to go from zero to two. Two is done. Okay, let's see two by two. Two to one H is going towards zero. But there is already electricity at zero. Why connect to a place where there is electricity? Will do it where there is darkness. Ignore it."
+    },
+    {
+      "start_time": 1254.0,
+      "end_time": 1281.99,
+      "text": "बाकी लिखिए। टू से वन की तरफ एक तार जा रहा है जो कि 2 मीटर का है। और क्या है? और लिखिए। टू से थ्री की तरफ भी एक तार जा रहा है जो कि 3 मीटर का लंबा है। ठीक है? अभी अभी जिन घरों में उजाला है उनसे तीन ही तरीकों से आप बाहर जा सकते हैं। ठीक है? इनमें से सबसे छोटा कौन सा है? इनमें से सबसे छोटा कौन सा है? ये वाला। वेट। वेट की बात कर रहे हैं। सबसे कम दूरी किसकी है? टू से वन जाने के लिए। कितना?",
+      "source": "caption",
+      "english_text": "Write the rest. There is a wire going from two to one which is 2 meters long. What else is there? Write more. There is also a wire going from two to three which is 3 meters long. Ok? Right now, you can go out of the houses where there is light in only three ways. Ok? Which of these is the smallest? Which of these is the smallest? This one. Wet. Talking about weight. Who has the shortest distance? To go from two to one. How much?"
+    },
+    {
+      "start_time": 1282.0,
+      "end_time": 1314.47,
+      "text": "टू से वन जाने के लिए। सेम कॉन्सेप्ट अप्लाई कीजिए। टू से वन जाने का तार सबसे छोटा है। मतलब कि देखिए फिर से वही चीज़ अप्लाई कीजिए। आपको टू और वन को कनेक्ट तो करना ही करना है। टू और वन ऐसा तो हो नहीं सकता है कि नॉन कनेक्टेड हो जाए। नहीं हो सकता है। अब टू और वन को कनेक्ट करने का दो तरीका है अगेन। या तो आप टू और वन के बीच में डायरेक्ट वाला रहने दीजिए लाइन। या तो आप टू से कहीं x, y, z जा के वापस वन पे आइए। सेम प्रिंसिपल अप्लाई होगा। टू",
+      "source": "caption",
+      "english_text": "To go from two to one. Apply same concept. The wire to go from two to one is the shortest. Meaning, apply the same thing again. You have to connect two and one. It is not possible for two and one to become non-connected. Can't happen. Now there are two ways to connect two and one. Either you leave a straight line between two and one. Either you go from two to somewhere x, y, z and come back to one. Same principal will apply. to"
+    },
+    {
+      "start_time": 1314.48,
+      "end_time": 1348.07,
+      "text": "से अगर आप कहीं और जाएंगे वाया समथिंग समथिंग जाएंगे। तो आपको क्या करना पड़ेगा? आपको टू से थ्री जाना पड़ेगा जो कि तीन है। जो कि क्या है? तीन है। आपको टू से थ्री जाना पड़ेगा ना? जो कि तीन तो पक्का दो से बड़ा है। तो ये तो हो ही नहीं सकता है कि आप टू से वाया कहीं जाएं और वन पे आएं। ऐसा बिल्कुल नहीं हो सकता है। क्यों? क्योंकि टू से वन के बीच में आपको अभी सबसे छोटा एज मिल रहा है ना। तो टू से वन डायरेक्टली जाना ज्यादा फायदेमंद है। टू से आप कहीं और जाएंगे कूद-कूद के उसका ऑलरेडी इससे ज्यादा वेट हो जाएगा। उसके",
+      "source": "caption",
+      "english_text": "If you go somewhere else via something you will go somewhere. So what do you have to do? You have to go from two to three, which is three. Which is what? There are three. You have to go from two to three, right? Which is that three is definitely greater than two. So it is not possible that you go somewhere via two and come back via one. This cannot happen at all. Why? Because right now you are getting the smallest edge between two and one. So going from two to one directly is more beneficial. If you go somewhere else, he will already become heavier by jumping. his"
+    },
+    {
+      "start_time": 1348.08,
+      "end_time": 1381.59,
+      "text": "बाद कितना लगेगा मालूम नहीं। तो एक बात तो समझ में आती है ना कि टू से वन जाना ही सबसे बेनिफिशियल है अभी के डेट में। इसमें एक और क्वेश्चन ये भी आ सकता है कि आप आप टू को क्यों टू पे क्यों फोकस कर रहे हैं? आप जीरो से वन चले जाइए ना। जीरो से वन चले जाइए। जीरो से वन जाने में सेम प्रॉब्लम है। अगर आप जीरो से वन चुन लेते हैं। मान लीजिए आपके कहने पे हम जीरो से वन चुन लिए कि नहीं हम ये वाला एज रखेंगे। अगेन दो से एक जाने के लिए आप जानबूझ के गलत चीज क्यों चुन रहे हैं? देखिए आपको पूरा चीज तो पता नहीं है। जितना पता है उसके हिसाब से तो बढ़िया डिसिशन लेंगे ना।",
+      "source": "caption",
+      "english_text": "Don't know how much it will cost later. So one thing is clear that going from two to one is the most beneficial in the present times. Another question can also arise in this that why are you focusing on two? You go from zero to one. Go from zero to one. There is the same problem in going from zero to one. If you choose one from zero. Suppose on your request we choose one from zero or we will keep this edge. Again why are you deliberately choosing the wrong thing to go from two to one? Look, you don't know the whole thing. Based on what we know, we will take a good decision."
+    },
+    {
+      "start_time": 1381.6,
+      "end_time": 1407.43,
+      "text": "आप अगर जीरो से वन जोड़ेंगे तो फिर टू और वन के बीच में कितना डिस्टेंस हो जाएगा? आपको टू से यहां जाना पड़ेगा। यहां से यहां, टू के वन के बीच में छह का डिस्टेंस हो जाएगा। लेकिन अगर आप टू से वन को डायरेक्ट कनेक्ट कर देते हैं जो कि आपको मालूम है जो कि आपको मालूम है कि सबसे छोटा है तो आप टू और वन के बीच को ऑप्टिमाइज कर रहे हैं ना। जानबूझ के गलत डिसीजन मत लिया करिए। आप जानबूझ के टू से वन को बढ़ाएंगे अगर आप कुछ भी और चुनेंगे।",
+      "source": "caption",
+      "english_text": "If you add zero to one, then what will be the distance between two and one? You will have to go here by two. From here, there will be a distance of six between two and one. But if you directly connect two to one, which you know is the smallest, then you are optimizing between two and one, right. Do not deliberately take wrong decisions. You will knowingly increase the two to one if you choose anything else."
+    },
+    {
+      "start_time": 1407.44,
+      "end_time": 1441.43,
+      "text": "अगर आप ये वाला एज बोलेंगे कि हम ये रखना चाहते हैं। आप जानबूझ के नोइंगली टू और वन का डिस्टेंस बढ़ा रहे हैं। आपको मालूम है कि इस वक्त के हिसाब से जब मेरे जीरो और टू के बीच में है ना तो टू और वन के बीच का जो सबसे बढ़िया कनेक्शन है वो डायरेक्ट लाइन है। उससे उससे कुछ हो ही नहीं सकता है। उससे मतलब अच्छा वाला कुछ नहीं हो सकता है उससे अच्छा। इसीलिए जो चीज आपको मालूम है ना उस पे ऑप्टिमाइज कीजिए। हम लोग क्या करेंगे? सबसे छोटा वाला एज को उठाएंगे और वन को इधर ले आएंगे। अब वन के में भी रोशनी आ गई है। किस एज के कारण? वन",
+      "source": "caption",
+      "english_text": "If you say this edge, we want to keep it. You are deliberately increasing the distance between knowingly two and one. You know that as of now, when I am between zero and two, the best connection between two and one is a direct line. Nothing can happen to him. It means that nothing good can be better than that. Therefore, optimize on what you know. What will we do? The youngest one will pick up the edge and bring the forest here. Now there is light in the forest also. Due to which age? forest"
+    },
+    {
+      "start_time": 1441.44,
+      "end_time": 1470.149,
+      "text": "में किस एज के कारण रोशनी आई है? इस एज के कारण। इस एज के कारण इस एज के कारण वन में रोशनी आ चुकी है। वन को उठा के यहां लिख दिया वन को मिटा दीजिए। इसको भी अब मिटा दीजिए। इसको भी मिटा दीजिए। सेम चीज दोहराइए। जिन घरों में इलेक्ट्रिसिटी है। जिन घरों में इलेक्ट्रिसिटी है। इसमें से कौन सा एज अभी के लिए सबसे फायदेमंद रहेगा? आइए लिखते हैं। देखिए जीरो में दो एच जाता था। ज़ीरो में दो Hन और टू। वन और टू दोनों में इलेक्ट्रिसिटी आ चुका है।",
+      "source": "caption",
+      "english_text": "Due to which age has light come into existence? Because of this edge. Due to this edge, light has come in the forest due to this edge. Picked up the forest and wrote here, destroy the forest. Delete this also now. Delete this also. Repeat the same thing. Houses which have electricity. Houses which have electricity. Which of these edges will be most beneficial for now? Let's write. See, there used to be two H's in zero. Zero has two H's and two. Electricity has come in both one and two."
+    },
+    {
+      "start_time": 1470.159,
+      "end_time": 1499.11,
+      "text": "उतना कुछ खास फायदा है नहीं करने का। समझ गए? टू टू से कहां-कहां जाता है? एक जीरो एक वन। जीरो और वन दोनों में लाइट आ चुकी है। हां, टू से थ्री बचा हुआ है। तो एक आपका चॉइस हो गया कि भैया हम टू से थ्री जा सकते हैं तीन में। अच्छा है। वन वन कहां-कहां जाता है? वन भी बहुत जगह जाता है। देखिए सबसे पहले तो वन थ्री में जाता है। टू करके। अच्छा। और वन फोर में भी जाता है। क्या करके? सिक्स करके। सॉरी थ्री करके। वन फोर में थ्री करके जाता है।",
+      "source": "caption",
+      "english_text": "There is not much benefit in not doing that much. Understand? Where does one go from two to two? One zero one one. Lights have come on in both zero and one. Yes, two to three left. So your choice has been made that brother, we can go from two to three in three. Is good. Where does the forest go? Forest also goes to many places. Look, first of all one goes into three. By doing two. Good. And one goes into four as well. By doing what? By doing six. Sorry by doing three. One goes by making three in four."
+    },
+    {
+      "start_time": 1499.12,
+      "end_time": 1533.83,
+      "text": "1 4 में कितना करके जाता है? थ्री करके। और वन थ्री में टू करके जाता है। यही एज है अभी के लिए तो। अभी जिन घरों में बिजली है वहां से कहां-कहां जा सकता है? यहां यहां कर सकते हैं। सबसे छोटा कौन सा दिख रहा है? वन से थ्री। सेम कॉन्सेप्ट। वन से थ्री जाने के लिए सबसे बढ़िया कनेक्शन कौन सा है? डायरेक्ट लाइन। अगर आप वन से थ्री कुछ वाया वाया रूट करके जाएंगे ना तो आप जानबूझ के वन से थ्री को बर्बाद कर रहे हैं। आपको मिनिमाइज करना है। ऑप्टिमाइज करना है। कभी भी जानबूझ के अपने चीजों को बर्बाद मत किया करिए। क्या करेंगे हम लोग?",
+      "source": "caption",
+      "english_text": "How much does 1 go into 4? By doing three. And one becomes three in two. This is the edge for now. Where can one go from the houses where there is electricity now? Can do here here. Which one looks smallest? One to three. Same concept. What is the best connection to go from one to three? Direct Line. If you go from one to three by routing something via via, then you are deliberately wasting one to three. You have to minimize. Have to optimize. Never waste your things intentionally. What will we do?"
+    },
+    {
+      "start_time": 1533.84,
+      "end_time": 1561.269,
+      "text": "वन से थ्री को इंक्लूड कर लेंगे। तो वन से थ्री वाला एज भी आपके एमएसटी में इंक्लूड हो जाएगा। अरे क्या हो जाता है? अच्छी बात है। और और आपका थ्री भी अब थ्री में आपके बिजली आ चुकी है। आपके थ्री में अब बिजली आ चुकी है। अच्छी बात है। सेम काम कीजिए। और ये वाला एज का तो काम ही खत्म हो गया पूरा। ठीक है? सेम काम कर सकते हैं। देखिए टू से थ्री वाला एज का तो कोई काम नहीं है। जिस घर में बिजली आ चुकी है उसका कोई काम नहीं है। इसको कोई काम वैसा नहीं है।",
+      "source": "caption",
+      "english_text": "Will include one to three. So the edge from one to three will also be included in your MST. hey what happens? It's a good thing. And your three also now has electricity in your three. Your three now have electricity. It's a good thing. Do the same work. And this one's work is almost finished. Ok? Beans can work. Look, the age of two to three has no use. There is no work in the house where electricity has been restored. He has no such work."
+    },
+    {
+      "start_time": 1561.279,
+      "end_time": 1594.549,
+      "text": "वन से फोर वाला बचा हुआ है। अभी वन से फोर वाला बचा हुआ है। देखिए वन से फोर बचा हुआ है। कितने में? वन से फोर कितने में? थ्री में। और थ्री से फोर भी आप जा सकते हैं। थ्री से फोर भी आप जा सकते हैं। कितने में? सिक्स में। सबसे छोटा कौन सा है? वन से फोर। सेम कांसेप्ट। भाई वन से फोर जाने के लिए सबसे बढ़िया कनेक्शन यही वाला कनेक्शन है। अगर आप वन और फोर को वाया सम रूट करके ले जाएंगे ना तो आप जानबूझ के अपना आंसर गलत करेंगे। क्या चुनेंगे हम लोग? वन और फोर को चुन लेंगे। ये वाला एज",
+      "source": "caption",
+      "english_text": "Four is left from one. Now one to four is left. See, four is left from one. For how much? How much is one to four? In three. And you can go from three to four also. You can go three to four also. For how much? In six. Which is the smallest? One to four. Same concept. Brother, this is the best connection to go from one to four. If you take one and four via sum route then you will deliberately make your answer wrong. What will we choose? Will choose one and four. this one edge"
+    },
+    {
+      "start_time": 1594.559,
+      "end_time": 1619.909,
+      "text": "भी आपके शामिल हो गया। बस बस खत्म हो गया। अब देखिए सारे घरों में बिजली आ चुकी है ना। अब आप कुछ भी एज वेज निकालेंगे कोई फायदा नहीं होगा। सब में बिजली आ चुकी है। 1 2 3 0 1 2 3 4 क्या एमएसटी बना आपका? देखिएगा आपका क्या एमएसटी बना? देखिए सारे ग्रीन वाले एजेस इंक्लूडेड है। मतलब कि आप एक तो ज़ीरो से टू जाते हैं वन। ओके? टू से वन आप गए टू में। वन से थ्री गए टू में।",
+      "source": "caption",
+      "english_text": "Also joined you. It's just over. Now see, electricity has come to all the houses. Now if you remove any edge wedge, it will be of no use. Electricity has been restored to everything. 1 2 3 0 1 2 3 4 Is MST yours? Let's see what becomes of your MST? See all the green edges are included. Meaning that you go from zero to two. Ok? From two to one you went into two. One went from three to two."
+    },
+    {
+      "start_time": 1619.919,
+      "end_time": 1654.87,
+      "text": "और वन से फोर चले गए। कितने में? थ्री में। क्या ये एक ट्री है? बिल्कुल एट ट्री है। इसमें कोई साइकिल नहीं है। क्या सारे लोग कनेक्टेड हैं? सारे लोग एब्सोलुटली कनेक्टेड हैं। क्या इसमें चार एजेस है और और पांच वर्टेक्स है? यस सर। इसमें चार एजेस और पांच वर्टेक्स है। क्या ये मिनिमम वेट है? क्या वेट आया? 1 2 3 2 1 3 5 8 आप करके देख लीजिए। वैरायटी ऑफ़ परम्यूटेशन कॉम्बिनेशन कर लीजिए। आठ से कम वेट आप इस ट्री में अचीव नहीं कर पाएंगे। यह क्यों हुआ है? क्योंकि आप करने के लिए एक",
+      "source": "caption",
+      "english_text": "And went from one to four. For how much? In three. Is this a tree? Exactly at the tree. There is no bicycle in it. Is everyone connected? Everyone is absolutely connected. Does it have four edges and five vertices? Yes sir. It has four edges and five vertexes. Is this the minimum weight? Did the vet come? 1 2 3 2 1 3 5 8 You try it. Do variety of permutation combinations. You will not be able to achieve less than eight weights in this tree. Why has this happened? Because you have to one"
+    },
+    {
+      "start_time": 1654.88,
+      "end_time": 1686.149,
+      "text": "स्टार्टिंग का घर लेते हैं। ठीक है? उस घर में अभी बिजली है। आप फिर देखते हैं कि इस घर से कहां-कहां एच जा रहा है। आपको पता चलता है कि फलाना फलाना फलाना जगह एच जा रहा है। अभी के लिए सबसे बेस्ट चॉइस क्या है भाई कि अगर जीरो से वन और टू के बीच में एच जा रहा है। 0 से टू वाला सबसे कम है तो जीरो और टू के बीच में क्या ये सबसे बढ़िया कनेक्शन है कि नहीं? हां सबसे बढ़िया कनेक्शन है। क्योंकि आप अगर ज़ीरो से टू कहीं और से जाएंगे गलत हो जाएगा। तो जानबूझ के कभी अपना गलती मत कीजिए। समझ में आई? ये जो एल्गोरिदम है ना कि आप आप धीरे धीरे धीरे धीरे करके करते जाते हैं।",
+      "source": "caption",
+      "english_text": "Let's take the starting house. Ok? There is electricity in that house now. You then see where H is going from this house. You come to know that H is going to so and so place. What is the best choice for now brother, if H is going between zero to one and two. The one from 0 to two is the lowest, so is this the best connection between zero and two or not? Yes, it is the best connection. Because if you go from zero to two from anywhere else it will be wrong. So never make mistakes intentionally. Did you understand? This is an algorithm that you do slowly and gradually."
+    },
+    {
+      "start_time": 1686.159,
+      "end_time": 1720.87,
+      "text": "और ये जो मिनिमम निकालने का है कि सबसे कम वाला एज निकालो ये कैसे होगा? मिन हीप से होगा। और कैसे होगा? अभी उस पे जाएंगे तो उस पे दिखाएंगे। लेकिन इसी एल्गोरिदम को क्या कहा जाता है? प्रिंस एल्गोरिदम। इस एल्गोरिदम का नाम है प्रिंस एल्गोरिदम। स्टार्टिंग पॉइंट चुनिए। स्टार्टिंग पॉइंट चुन लिए। उसके बाद क्या करिए? उसके सारे नेबरिंग एजेस को हिप में डाल दीजिए। हर बार आपका काम क्या है? एक एज को हिप से निकालना है। सबसे मिनिमम वेट वाले को चेक करना है कि क्या उस नेबर में बिजली नहीं आई है। अगर उस नेबर में बिजली आ गई है इग्नोर कर दीजिए। अगर उस नेबर में बिजली नहीं आई है तो वो एज आपके में होना चाहिए।",
+      "source": "caption",
+      "english_text": "And to find the minimum, how will this be done? Will be from Min Heap. How else? If we go there now, we will show it there. But what is this algorithm called? Prince Algorithm. The name of this algorithm is Prince Algorithm. Choose starting point. Selected starting point. What to do after that? Put all its neighboring edges into the hip. What is your job every time? One edge has to be removed from the hip. The one with minimum weight has to check whether there is no electricity in that neighbour. If electricity has come to that neighbor, ignore it. If there is no electricity in that neighbor then that edge should be there in yours."
+    },
+    {
+      "start_time": 1720.88,
+      "end_time": 1753.59,
+      "text": "अब अपने सम में उस वेट को ऐड कर लेंगे। ऐसा जब आप करते करते करते करते पहुंचेंगे ना तो आप देखेंगे कि आपका मिनिमम स्पैनिंग ट्री तैयार हो गया है। क्योंकि हर एक स्टेज पे हर एक स्टेज पे आप सबसे बेस्ट डिसीजन ले रहे हैं। मिनिमम स्पैनिंग ट्री क्या होता है? देखिए हम लोग क्यों नहीं ऐसा करते? क्योंकि हमको मालूम नहीं था कि बेस्ट कॉम्बिनेशन क्या होगा? कौन सा तीन हटाना है। तो आप क्या किए ना हर एक पॉइंट ऑफ टाइम पे बेस्ट वाला एज पिक कर दिए कि ये इससे बेस्ट कुछ नहीं हो सकता अभी के हिसाब से। ये वैसा काम करता है कि अगर आप क्लास 10थ में हैं। आपको पता नहीं है कि आगे की जिंदगी क्या होने वाली है। लेकिन आप क्लास 10थ के हिसाब से बेस्ट परफॉर्म",
+      "source": "caption",
+      "english_text": "Now we will add that weight to our sum. When you do this, you will see that your minimum spanning tree is ready. Because you are taking the best decisions at every stage. What is minimum spanning tree? See why we don't do this? Because we did not know what would be the best combination? Which three to remove? So what did you do? You picked the best edge at each point of time and said that as of now nothing can be better than this. It works like if you are in class 10th. You don't know what life is going to hold next. But you perform best according to class 10th."
+    },
+    {
+      "start_time": 1753.6,
+      "end_time": 1782.549,
+      "text": "कर दिए। आप 90% ले आए। अच्छी बात है। आप 12th में गए। मालूम नहीं है आगे क्या-क्या होने वाला है। लेकिन 12th के हिसाब से बेस्ट परफॉर्मेंस ले लिए। यहां 90 आ गया। करते करते करते करते जब आप जाएंगे ना क्योंकि आप सब में बेस्ट बेस्ट बेस्ट बेस्ट चॉइस लेते गए हैं। ओवरऑल बेस्ट हो जाएगा। इसका यही मतलब होता है कि हर एक पॉइंट ऑफ टाइम पे हमको बेस्ट चॉइस लेना है। यहां पे गलती नहीं करनी है। तो जब आप सारा बेस्ट चॉइस ले लेंगे ना तो जुड़ते जुड़ते जुड़ते जुड़ते क्या होगा ये? बेस्ट बन जाएगा। क्या बन जाएगा? बेस्ट बन जाएगा।",
+      "source": "caption",
+      "english_text": "Did it. You got 90%. It's a good thing. You went to 12th. Don't know what is going to happen next. But according to 12th, I got the best performance. 90 is here. By doing it when you go because you have been choosing the best best best best choice among all. Overall it will be best. This means that at every point of time we have to take the best choice. Don't make any mistakes here. So when you take all the best choices, what will happen while joining? Will become the best. What will become? Will become the best."
+    },
+    {
+      "start_time": 1782.559,
+      "end_time": 1816.47,
+      "text": "समझ में आती है कि नहीं? अब आइए आपको इसका कोड और जो भी वगैरह-वगैरह चीजें होती हैं वो दिखाते हैं। एल्गोरिदम यही है। ठीक है? एल्गोरिदम में से ज्यादा कुछ। तो ठीक है? तो आपको क्या दिया रहेगा? आपको एक एजेस का लिस्ट दिया रहेगा। एजेस मतलब कि सोर्स, डेस्टिनेशन और वेट और आपको नंबर ऑफ़ नोड्स भी दिया रहेगा। और आपको लौटाना क्या है? वो जो एमएसटी आप बनाएंगे ना उसका सम तो सबसे मिनिमम वाला सम पॉसिबल है वो करना है। तो आपको इस तरीके का कोई फंक्शन मिलता है। इधर ही है ना? हां। इंट एमएसटी लिख दिए। आपको एक तो इंट n मिलता है और आपको वेक्टर ऑफ़ वेक्टर ऑफ़ इंट का क्या मिलता",
+      "source": "caption",
+      "english_text": "Do you understand or not? Now let us show you its code and whatever happens. That's the algorithm. Ok? More than just algorithms. Well then? So what will you be given? You will be given a list of agencies. Edges means source, destination and weight and you will also be given the number of nodes. And what do you have to pay back? Whatever MST you will make, its sum should be the lowest possible sum. So you get a function like this. Is it here only? Yes. Wrote int mst. What you get is an int n and you get a vector of vector of ints."
+    },
+    {
+      "start_time": 1816.48,
+      "end_time": 1847.029,
+      "text": "है? एजेस मिलता है। ठीक है? तो सबसे पहला काम तो क्या है कि क्योंकि एजेस से आप खेल रहे हैं। आपको एज इंसर्ट करना है, डिलीट करना है, कुछ भी करना है ना एडजेसेंसी लिस्ट बना लेते हैं। वेटेड अनडायरेक्टेड ग्राफ का कैसे बनता है एडजेसेंसी लिस्ट? बहुत बार बता चुके हैं। उसी को करेंगे। आइए इंट आई कैसा लिस्ट बनेगा? वेक्टर ऑफ़ वेक्टर ऑफ़ इंट नहीं। क्योंकि अब वेट भी है ना। तो वेक्टर ऑफ़ पेयर ऑफ़ इंट। इंट। इंट जगह पेयर ऑफ़ इंट आपको रखना पड़ेगा। एक डंडा, दो डंडा, तीन डंडा, A और साइज़ N। हर",
+      "source": "caption",
+      "english_text": "Is it? Edges are available. Ok? So what is the first thing to do because you are playing with Edges. If you have to insert, delete, do anything, we create an adjacency list. How to create adjacency list of weighted undirected graph? Have told this many times. Will do the same. Come on, what kind of list will be made? Vector of vector of int. Because now there is weight too. So vector of pair of int. Int. You will have to place pair of int in place of int. One stick, two stick, three stick, size A and size N. every"
+    },
+    {
+      "start_time": 1847.039,
+      "end_time": 1879.269,
+      "text": "एक एज पे आइए i = 0 i &lt; hs डॉट साइज यस और i++ हर एक चीज निकालिए एक एज में क्या होता है सोर्स से डेस्टिनेशन और उसका वेट तो इंट s = एजेस i का ज़ीरो फर्स्ट वाला डेस्टिनेशन इक्वल टू एज i का वन और इसका क्या वेट है wt t = एजेस",
+      "source": "caption",
+      "english_text": "Come to an edge i = 0 i < hs dot size yes and i++ take out each thing what is in an edge source to destination and its weight then int s = zero first destination of edge i equal to one of edge i and what is its weight wt t = edges"
+    },
+    {
+      "start_time": 1879.279,
+      "end_time": 1913.43,
+      "text": "i और टू ठीक है टू हो गया क्या करना है पुश कर दीजिए एडजेंसी में एरे ऑफ़ एस डॉट पुश बैकक पुश बैक क्या पुश बैक करना है इंट नहीं एक पेयर पुश बैक करना है क्या डी और वेट मतलब सोर्स से डेस्टिनेशन है और वेट और क्योंकि ये अनडायरेक्टेड ग्राफ है तो उल्टा भी पुश कर दीजिए मतलब अगर सोर्स से डेस्टिनेशन एच जाता है तो सोर्स से डेस्टिनेशन से सोर्स भी एच जाएगा आपका एडजेसेंसी लिस्ट बनके तैयार है। अब आपको क्या चाहिए? अब आपको एक मिन हीप चाहिए। अब आपको एक मिन हीप चाहिए। मीन हिप चाहिए।",
+      "source": "caption",
+      "english_text": "i and two are ok, two is done, what has to be done, push it in the adjacency, array of s dot push back, push back, what to push back, int, no, a pair, whether d and weight means source to destination and weights, and because this is an undirected graph, then push it in the reverse way, meaning if H goes from source to destination, then H goes from source to destination. Your adjacency list is ready. Is. What do you want now? Now you need a min heap. Now you need a min heap. Want mean hip."
+    },
+    {
+      "start_time": 1913.44,
+      "end_time": 1947.11,
+      "text": "इसका ड्राई रन नहीं करेंगे। चिंता मत कीजिए। एक मिन हीप चाहिए। क्यों चाहिए? मीन हिप में आप दो चीजें रखेंगे। वेट और ये नोड। वेट और ये नोड। ये आपको क्या बताएगा? मान लीजिए आपको कोई नोड इज़ इक्वल टू 0 मिला है। नोड इक्वल टू 0 मिला है। अब ज़ीरो से दो एजेस जाती हैं। ज़ीरो से वन के बीच में एज जाता है टू वेट और ज़ीरो से टू के बीच में एज जाता है फाइव वेट। आप हिप में क्या पुश करेंगे? आप हिप में पुश करेंगे वेट = 2 और इसका नोड इज इक्वल टू वन। दूसरा क्या पुश करेंगे? वेट इज इक्वल टू फाइव और नोड इज इक्वल टू टू। इससे",
+      "source": "caption",
+      "english_text": "Will not dry run it. Don't worry. Need a min heap. Why is it needed? In Pisces Hip you will place two things. Wait and this node. Wait and this node. What will this tell you? Suppose you have found a node is equal to 0. Node equal to 0 is found. Now two edges go from zero. Between zero and one the edge goes to two weight and between zero and two the edge goes to five weight. What will you push into the hip? You will push into the hip, weight = 2 and its node is equal to one. What else will you push? Weight is equal to five and node is equal to two. from this"
+    },
+    {
+      "start_time": 1947.12,
+      "end_time": 1972.63,
+      "text": "फायदा क्या होगा? क्योंकि ये मिनहिप है। तो आपको सबसे पहले ना ये वाला निकलेगा। क्योंकि इसका वेट सबसे कम है। जैसे ही आपका ये वाला निकलेगा तो इसका क्या मतलब होता है? कि ये वाला एज आपको इंक्लूड करना है। अब कहां से कहां इंक्लूड करना है उसका जरूरत नहीं है क्योंकि आपको बस सम चाहिए ना। आपको सम चाहिए। आपको बस ये चेक करना होगा कि ये जो नोड है अब इसका क्या मतलब है कि ये किसी से इस पे एज आया है। किसी एक्स से वन पे एज आया है जिसका वेट टू है।",
+      "source": "caption",
+      "english_text": "What will be the benefit? Because it's minihip. So you will get this one first. Because its weight is the least. What does it mean as soon as this one comes out? That you have to include this edge. Now there is no need to specify where to include because you just want the sum. You need even. You just have to check that this is the node, now what does it mean that this edge has come from someone. One pay edge has come from some ex whose weight is two."
+    },
+    {
+      "start_time": 1972.64,
+      "end_time": 2006.07,
+      "text": "अगर वन के यहां अभी बिजली नहीं है। अगर मतलब वन के यहां अभी बिजली नहीं है जो कि हम लोग विजिटेड से देख सकते हैं कि वन को अभी तक नहीं देखा गया है। तो आप क्या करेंगे? वन को देख लेंगे। मतलब वन के यहां बिजली पहुंच गई और सम में इस वेट को ऐड कर देंगे। और वन से अब जहां-जहां एच जाता है उसको हिट में पुश कर देंगे। यही कर रहे हैं ना? यही करेंगे। आइए तो इसके लिए हम लोग क्या करेंगे? सबसे पहले तो एक मीन हिप बनाएंगे। प्रायोरिटी मीन हिप ऑफ पेयर्स प्रायोरिटी q सबसे पहले पेयर ऑफ इंट इंट",
+      "source": "caption",
+      "english_text": "If there is no electricity in the forest right now. If it means that there is no electricity in the forest right now, which we can see from the visited, that the forest has not been visited yet. So what will you do? Will see the forest. Meaning electricity has reached the forest and this weight will be added to the sum. And now wherever H goes from One, we will push it into Hit. This is what you are doing right? Will do this. So what should we do for this? First of all we will make a mean hip. Priority mean hip of pairs priority q earliest pair of int int"
+    },
+    {
+      "start_time": 2006.08,
+      "end_time": 2038.549,
+      "text": "पेयर ऑफ इंटिट हो गया। हां। इसी चीज को वेक्टर के अंदर डाल दीजिए। पेयर ऑफ़ इंट इंट एक दो। हां। ठीक है। पेयर ऑफ़ इंट इंट ऐसा कैसे हो गया? हां, ठीक है। और ग्रेटर इंट क्योंकि हम लोग मिन ही बनाना चाहते हैं। ग्रेटर ऐसा ऐसा ऐसा PQ बन गया। एक क्या कीजिए? विजिटेड का वेक्टर बना लीजिए। एक विजिटेड का वेक्टर बना लीजिए। n और शुरू में कोई विजिटेड नहीं है। विजिटेड का क्या मतलब है? किस घर में बिजली पहुंची है? किस घर में नहीं पहुंची है। तो शुरू में कहीं नहीं पहुंची है।",
+      "source": "caption",
+      "english_text": "Pair of intent is done. Yes. Put this thing inside the vector. Pair of int int one two. Yes. Ok. Pair of Int Int How did this happen? Yes, ok. And Greater Int because we want to make Min only. Greater such and such became PQ. What should one do? Create a vector of visited. Create a vector of visits. n and there is no visited initially. What does visited mean? Which house has electricity? Which house has it not reached? So it hasn't reached anywhere in the beginning."
+    },
+    {
+      "start_time": 2038.559,
+      "end_time": 2070.47,
+      "text": "अच्छा। अब क्या कीजिए? किसी भी एक नोट को सेलेक्ट कर लीजिए। pq डॉट पुश 0 0 इसका क्या मतलब है? हम ज़ीरो को शुरू किए। अब जीरो तक तो जीरो में तो आप स्टार्ट कर रहे हैं ना। तो हम इसमें बोले कि इसका वेट जीरो है। इसका वेट जीरो है। मतलब ये किसी एच से नहीं आया। ऐसे ही आ गया है। और ये नोड नंबर ज़ीरो है। और आप अपना खेल शुरू कर दीजिए। क्या खेल शुरू कीजिए? वाइल PQ डॉट नॉट एम्प्टी। मतलब जब तक हम सारे एजेस को खत्म नहीं कर लेते हैं। सारे एजेस को खत्म नहीं कर लेते हैं।",
+      "source": "caption",
+      "english_text": "Okay. What to do now? Select any one note. pq dot push 0 0 what does it mean? We started zero. Now till zero, you are starting from zero, right? So we said in this that its weight is zero. Its weight is zero. Meaning it did not come from any H. He has come just like that. And this node number is zero. And you start your game. What game should I start? While PQ is not empty. Meaning until we eliminate all the edges. Do not eliminate all the edges."
+    },
+    {
+      "start_time": 2070.48,
+      "end_time": 2103.829,
+      "text": "एक एज को निकालिए। एक एज को निकालिए। पेयर इंट इंट P = PQ डॉट टॉप। टॉप में कौन सा निकलेगा? जिस एज का वेट सबसे कम है अभी। तो अभी ऑब्वियसली एक ही आप घुसाएं जीरो वाला जीरो वाला निकलेगा वेट और pq डॉट पॉप इनको अलग-अलग कीजिए। इंट w = p डॉट फर्स्ट और इंट नोड कौन सा नोड है ये? p डॉट सेकंड। ठीक बात है। सबसे पहले एक चीज़ चेक कर लीजिए कि इफ विजिटेड ऑफ़ नोड इज़ इक्वल इक्वल टू वन।",
+      "source": "caption",
+      "english_text": "Remove one edge. Remove one edge. Pair Int Int P = PQ Dot Top. Which one will come out on top? The age which has the least weight right now. So now obviously you enter only one zero and zero one will come out weight and pq dot pop, separate them. int w = p dot first and int node Which node is this? p dot sec. That's right. First of all check one thing that if visited node is equal to one."
+    },
+    {
+      "start_time": 2103.839,
+      "end_time": 2133.75,
+      "text": "मतलब इस घर में ऑलरेडी बिजली आ चुकी है। इस घर में ऑलरेडी बिजली आ चुकी है। कंटिन्यू कंटिन्यू कुछ नहीं करना है। कंटिन्यू इस एज को इग्नोर कर दीजिए। ध्यान रहिए हम यहां पे हम यहां पे विजिटेड ऑफ़ 0 = 1 नहीं किए हैं। हम विजिटेड ऑफ़ ज़ीरो इक्वल टू 1 नहीं किए हैं। मतलब ज़ीरो में भी नहीं आई है बिजली। अभी बिजली नहीं आई है ज़ीरो में। अब आएगी बिजली। ज़ीरो में बिजली अब आएगी। देखिए अब अगर ऐसा नहीं है तो मतलब सबसे पहले तो विजिटेड ऑफ नोड इक्वल टू वन। इस घर में बिजली आ गई और सम",
+      "source": "caption",
+      "english_text": "Meaning, electricity is already available in this house. There is already electricity in this house. Continue Continue Nothing to be done. Continue Ignore this edge. Keep in mind that here we have not visited off 0 = 1. We haven't made visited of zero equal to 1. Meaning there is no electricity even at ground zero. There is no electricity in Zero yet. Now electricity will come. There will be electricity in Zero now. See now if it is not so then it means first of all the number of visited nodes is equal to one. Electricity came to this house and"
+    },
+    {
+      "start_time": 2133.76,
+      "end_time": 2168.47,
+      "text": "= सम + वेट। सम + वेट। सम + वेट। ये हो गया आपका वेट। सम क्या है? एक सम ले लीजिए। ये आपको रिटर्न करना है लास्ट में। सम = 0 अभी इसमें ज़ीरो जुड़ेगा। अब ज़ीरो में अभी-अभी बिजली आई है। ज़ीरो से जुड़े हुए सारे एजेस को हिप में पुश कर दीजिए ताकि अगले बार आप काम कर सकें। कैसे करते हैं? फॉर आई एन टी j = 0 j &lt; &lt; एरे ऑफ़ नोड डॉट साइज़ ये सब ऑलरेडी आप लोग बहुत बार कर चुके हैं। तो हम उम्मीद करते हैं कि इसमें आपको कोई शक नहीं होगा। कोई इसमें शक नहीं",
+      "source": "caption",
+      "english_text": "= Sum + Weight. Sum + weight. Sum + weight. This is your weight. What is even? Take an even. You have to return this at the end. Sum = 0 Now zero will be added to it. Now power has just returned to Zero. Push all the edges attached to the zero into the hip so you can work next time. How to do? For i n t j = 0 j < < array of nodes dot size you guys have already done all this many times. So we hope you will not have any doubt about this. there is no doubt about it"
+    },
+    {
+      "start_time": 2168.48,
+      "end_time": 2202.55,
+      "text": "है। ठीक है? क्या है इसका नेबर भाई? इसका नेबर क्या है? एरे ऑफ़ नोड का जे का फर्स्ट। क्या है इस आदमी का वेट? w = एरे ऑफ़ नोड का जे का सेकंड इस एज को हिप में पुश कर दो। लेकिन एक चीज और ध्यान दीजिए। अगर इस नेबर में ऑलरेडी बिजली आ चुकी है तो इस एज को आप इग्नोर कर सकते हैं। मतलब कि मान लीजिए आपको एक आपका अभी का नोड ये है। ठीक है? वन से टू तक में बिजली वन से टू तक में एच जाता है। इसका कुछ वेट इज़",
+      "source": "caption",
+      "english_text": "Is. Ok? What is his neighbor brother? Who is its neighbor? First of j of array of nodes. What is this man's weight? w = second of j of array node Push this edge to hip. But pay attention to one more thing. If electricity is already available in this neighbour, then you can ignore this edge. Meaning that suppose your current node is this. Ok? From one to two, electricity travels from one to two. it has some weight"
+    },
+    {
+      "start_time": 2202.56,
+      "end_time": 2232.47,
+      "text": "इक्वल टू 10 होगा। लेकिन मान लीजिए टू में ऑलरेडी बिजली आई हुई है। तो आप वन से टू काहे कर रहे हैं? टू में ऑलरेडी बिजली का आने का क्या मतलब है? कि जीरो से टू आप ऑलरेडी ले चुके होंगे। तो मत कीजिए। बार-बार साइकिल नहीं बनाना है। टू में एक बार अगर बिजली आ गई है ना बार-बार उस पे ध्यान नहीं देना। एक बार बिजली आई मतलब अच्छे से ही आई होगी। अब उस पे ध्यान मत दीजिए। तो यहां भी हम लोग क्या करेंगे कि अगर विजिटेड ऑफ नेबर इज इक्वल टू ज़ीरो। मतलब कि अगर नेबर में ज़ीरो बिजली नहीं आई है तो ही आप पुश करिए। नहीं तो पुश मत कीजिए।",
+      "source": "caption",
+      "english_text": "Will be equal to 10. But suppose we already have electricity. So why are you doing one to two? What does it mean when electricity is already on? That you would have already taken from zero to two. So don't do it. Do not make cycles again and again. If electricity has come once in a while, do not pay attention to it again and again. Once electricity came, it must have come well. Don't pay attention to that now. So here also what we will do is if visited neighbor is equal to zero. Meaning that you should push only if there is zero electricity in the neighbor. Otherwise don't push."
+    },
+    {
+      "start_time": 2232.48,
+      "end_time": 2264.23,
+      "text": "अगर बिजली नहीं आई है तो क्या पुश करेंगे? पहले डब्ल्यू और नेबर और नेबर बंद कीजिए, बंद कीजिए। रिटर्न सम रिटर्न सम। यह देखिए। यह आपका पूरा कोड है। यह आपका पूरा कोड है। इसका ड्राई रन भी कर लेते हैं। थोड़ा कंफ्यूजिंग हो सकता है कि हो गया हो। उसमें कोई गलत बात नहीं है। आइए एक ड्राई रन। छोटा सा एग्जांपल पे ड्राई रन। बहुत बड़े पे नहीं करेंगे। छोटे से एग्जांपल में जो एग्जांपल हम लोग सबसे पहले देखे थे। 0 1 2 ठीक है? आइए इस पे ड्राई रन करके",
+      "source": "caption",
+      "english_text": "What will you push if there is no electricity? First W and Neighbor and Neighbor turn off, turn off. Return Sum Return Sum. Look at this. This is your complete code. This is your complete code. Let's do its dry run also. It may be a little confusing. There is nothing wrong in that. Let's have a dry run. Dry run on a small example. Will not make a very big salary. The example we saw first in the small example. 0 1 2 ok? Let's do a dry run on this."
+    },
+    {
+      "start_time": 2264.24,
+      "end_time": 2298.47,
+      "text": "देखते हैं। अ 0 से वन का वेट है कितना? थ्री। और इसका वेट है टू और इसका वेट है फोर। ठीक बात है? इसको आइए ड्राई रन करते हैं। तो सबसे पहले सबसे पहले तो एक विजिटेड एरे बना लीजिए। ठीक है? विजिटेड चलिए हम यही मार्क कर देंगे कि बिजली आई कि नहीं आई। ठीक है? एक मिनिमम हिप बना लीजिए। सबसे पहले हिप में क्या पुश हुआ था? सबसे पहले वेट इज़ = 0, नोड = 0। यही पुश हुआ था हिप में। आइए निकालिए। सबसे पहले जब आप हिप से निकालेंगे तो आपको क्या मिलेगा? वेट = 0 और नोड = 0। क्या ज़ीरो के यहां बिजली आई हुई है पहले से? अभी तक नहीं आई है। ठीक है? अभी तक नहीं आई है तो",
+      "source": "caption",
+      "english_text": "Let's see. What is the weight of A from 0 to 1? Three. And its weight is two and its weight is four. Is that correct? Let's dry run this. So first things first, create a visited array. Ok? Visited: Let us mark whether electricity has come or not. Ok? Make a minimal hip. What was the first push to the hip? First of all weight is = 0, node = 0. This was the push in the hip. Let's take it out. What do you get when you first extract it from the hip? Weight = 0 and node = 0. Does Zero already have electricity? Has not come yet. Ok? If it hasn't come yet"
+    },
+    {
+      "start_time": 2298.48,
+      "end_time": 2333.27,
+      "text": "अब आ गई होगी। अब आ गई। देखिए ज़ीरो में बिजली आ गई। बिजली आ गई। अच्छा। सम में सम में क्या ऐड कर दीजिए? जो भी आपका वेट निकल के आया है। तो अब ये वेट ज़ीरो निकल के आया तो सम आपका ज़ीरो ही होगा। अब क्या कीजिए? ज़ीरो से कहां-कहां जा सकते हैं? ज़ीरो के एजेस को हिप में पुश कर दीजिए। ज़ीरो के एजेस को हिप में पुश कर दीजिए। ये तो निकल गया। ज़ीरो के एजेस को हिप में पुश कर दीजिए। ज़ीरो का पहला एज कौन सा है? वन तक जाता है। क्या वन तक बिजली आई है? नहीं आई है। पुश करिए। w = 3 नोड = 1 0 से टू तक भी एज जाता है। w = 2 और नो इक्वल टू",
+      "source": "caption",
+      "english_text": "She must have come now. Now she has come. Look, electricity has come to ground zero. Electricity came. Good. What should be added to the sum? Whatever your weight has come out. So now if this weight comes out to be zero then your total will be zero. What to do now? Where can we go from zero? Push the edges of the zero into the hips. Push the edges of the zero into the hips. This is out. Push the edges of the zero into the hips. What is the first edge of zero? Goes to the forest. Has electricity reached the forest? Has not come. Push. w = 3 nodes = 1 The edge also goes from 0 to 2. w = 2 and no equal to"
+    },
+    {
+      "start_time": 2333.28,
+      "end_time": 2366.31,
+      "text": "क्या है? टू। ठीक है? पुश हो गया। चलिए पहला आइट्रेशन आपका खत्म हो गया। फिर से एज निकालिए। कौन सा एज निकलेगा? ये वाला। इसका वेट सबसे कम है। वेट इज़ इक्वल टू टू। नोड इज़ = 2। और ये आदमी निकल चुका है हिप से। अच्छी बात है। सबसे पहले देखिए। क्या नोड टू तक बिजली आई हुई थी? नहीं। नोड टू तक बिजली नहीं आई हुई थी। ठीक है? अब आ गई। अब आ गई। अब याद रखिएगा। अब याद रखिए। अब याद रखिए। ठीक बात है। क्या है? अ इसका वेट टू। अपने सम में टू ऐड कर दीजिए। सम में टू ऐड कर दीजिए। मतलब याद रखिएगा ये",
+      "source": "caption",
+      "english_text": "What is it? To. Ok? Pushed. Well, your first iteration is over. Take out the edge again. Which edge will emerge? This one. Its weight is the lowest. Weight is equal to two. Node is = 2. And this guy is out of the hip. It's a good thing. Look first. Was there electricity till node two? No. There was no electricity till node two. Ok? Now she has come. Now she has come. Now remember. Now remember. Now remember. That's right. What is? A its weight to. Add two to your sum. Add two to the sum. I mean, remember this"
+    },
+    {
+      "start_time": 2366.32,
+      "end_time": 2393.51,
+      "text": "वाला आप ले लिए। ये वाला ले लिए। ये वाला ले लिए। अच्छी। टू से जहां-जहां जा सकते हैं उनको हिप में पुश कर दीजिए। सबसे पहले तो टू से 0 तक जा सकते हैं। तो ज़ीरो तक जाने का जरूरत है। ज़ीरो में ऑलरेडी बिजली आ चुकी है और उसमें कुछ करतब नहीं दिखाना है। कुछ मत कीजिए। टू से वन तक जा सकते हैं। कितने वेट में? फोर वेट में। वो डाल दीजिए। वो इंपॉर्टेंट है। वेट = 4 नोड = 1 अच्छी बात है। इसका इटरेशन खत्म हो गया। इसका इटरेशन खत्म हो गया। फिर से निकालिए।",
+      "source": "caption",
+      "english_text": "You took that one. Took this one. Took this one. Good. Push them in the hip wherever you can. First of all we can go from 2 to 0. So there is a need to go to zero. Zero already has electricity and there is no need to show any tricks in it. Don't do anything. Can go from two to one. In how much weight? In four weight. Put that in. That is important. Weight = 4 Node = 1 Good thing. Its iteration is over. Its iteration is over. Take it out again."
+    },
+    {
+      "start_time": 2393.52,
+      "end_time": 2426.63,
+      "text": "कौन सा निकलेगा? कौन सा निकलेगा? ये वाला। इसका वेट कम है। w = 3 नोड इक्वल टू वन। सबसे पहले चेक कीजिए। क्या वन तक बिजली आई है? नहीं आई है। ठीक है? अब आ गई। अब आ गई। अब याद रखेंगे। अब आ गई। सम इज़ इक्वल टू थ्री ऐड करना पड़ेगा। थ्री ऐड करना पड़ेगा। ये वाला ले लिए। ये वाला एज ले लिए। वेरी गुड है। अब क्या करेंगे? वन से सारे एजेस को हिप में डाल दीजिए। लेकिन वन से एक एज तो ज़ीरो तक जाता है। ज़ीरो में ऑलरेडी बिजली आई हुई है। वन से टू तक भी जाता है। टू तक भी ऑलरेडी बिजली आई हुई है। तो इसमें ज्यादा आपको मेहनत करने की जरूरत है नहीं। कुछ मत कीजिए। कुछ मत",
+      "source": "caption",
+      "english_text": "Which one will come out? Which one will come out? This one. Its weight is less. w = 3 nodes equal to one. Check first. Has electricity reached the forest? Has not come. Ok? Now she has come. Now she has come. Will remember now. Now she has come. If sum is equal to two three will have to be added. Will have to add three. Took this one. Took this one edge. Very good. What will you do now? Put all the edges from the forest into the hip. But one edge goes from one to zero. There is already electricity in ground zero. Also goes from one to two. Electricity is already available till 2.00 pm. So you don't need to work hard in this. Don't do anything. don't think anything"
+    },
+    {
+      "start_time": 2426.64,
+      "end_time": 2452.71,
+      "text": "कीजिए। हो गया इसका काम। हो गया इसका काम। ठीक है? और ये तो निकल चुका है हिप से। हिप में अभी भी एक एज बाकी है। उसी को निकालिए। अब एक ही एज है तो ऑलरेडी। ऑब्वियसली यही निकलेगा। w = 2 नोड इज़ इक्वल टू वन। क्या वन तक ऑलरेडी बिजली आई हुई है? हां भाई ऑलरेडी बिजली आई हुई है। बार-बार मत करो। हो गया खत्म। कुछ नहीं करेंगे। एकदम एकदम इग्नोर। एकदम इग्नोर ना सम बदलेगा ना कुछ बदलेगा। आपका हिप खाली हो गया। आपका हिप खाली हो गया। आ जाइए। क्या रिटर्न किए? क्या रिटर्न कीजिए?",
+      "source": "caption",
+      "english_text": "Do it. Its work is done. Its work is done. Ok? And this is already out of the hip. Still has an edge left in the hip. Take that one out. Now there is only one edge, so ready. Obviously this will come out. w = 2 nodes is equal to one. Is electricity already available in the forest? Yes brother, electricity is already there. Don't do it again and again. It's over. Will not do anything. Completely ignored. Ignore it completely, neither things will change nor anything will change. Your hips vacated. Your hips vacated. Come over. What returns did you make? What to return?"
+    },
+    {
+      "start_time": 2452.72,
+      "end_time": 2482.63,
+      "text": "फाइव। क्या आपका आंसर फाइव था? याद कीजिए शुरू वाले में। बिल्कुल फाइव था। कौन सा दो एज लिए? एक ये वाला एज। एक ये वाला एज। क्या एक एमएसटी है? बिल्कुल एमएसटी है। इग्नोर कौन सा हुआ? ये वाला एज। तो ऑब्वियसली आप देखिए ना कि आप सबसे मैक्सिमम वाले को इग्नोर कर दिए। क्यों? क्योंकि हर स्टेप में बेस्ट डिसीजन लिए। पहले स्टेप में बेस्ट डिसीजन क्या था? टू को लेना। ले लिए। दूसरे में बेस्ट क्या था? थ्री को लेना। ले लिए। समझ में आ रही है बात कि नहीं आ रही है? ये क्या होता है? प्रिंस एल्गोरिदम। इससे ईजी कोई एल्गोरिदम है ही नहीं कंप्यूटर साइंस में।",
+      "source": "caption",
+      "english_text": "Five. Was your answer five? Remember the one in the beginning? It was exactly five. Which two edges to take? This one Edge. This one Edge. What is an MST? Of course it's MST. Which one was ignored? This one Edge. So obviously you see that you have ignored the maximum one. Why? Because the best decisions were taken at every step. What was the best decision in the first step? Take two. Took it. What was the best in the second one? Take three. Took it. Are you understanding what is being said or not? What is this? Prince Algorithm. There is no algorithm easier than this in computer science."
+    },
+    {
+      "start_time": 2482.64,
+      "end_time": 2493.92,
+      "text": "ठीक है? इसको कोड कीजिए, ड्राई रन कीजिए, समझिए। अगले लेक्चर में क्रूसल पे ध्यान देंगे और या फिर देखते हैं। प्रिं का एक दो क्वेश्चन करेंगे। अभी प्लान नहीं किए। ठीक है? चलिए",
+      "source": "caption",
+      "english_text": "ok? Code it, dry run it, understand it. We will focus on Crusal in the next lecture and let's see. Will ask one or two questions of Prin. Haven't made plans yet. Ok? Let go"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

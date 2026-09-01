@@ -1,0 +1,303 @@
+{
+  "video_id": "XLtRoHIDGs0",
+  "video_title": "DSA Patterns Episode 27 | Master DSA Patterns With Prefix Sum | Leetcode Patterns",
+  "video_number": 30,
+  "chunks": [
+    {
+      "start_time": 2.23,
+      "end_time": 36.47,
+      "text": "जो लोग नए हैं नए चैनल पर आ जाइए। एपिसोड 27 प्रीफिक्स सम डीएसए पैटर्न्स। मेरा नाम प्रत्युष नारायण है। आकामाई में काम करते हैं। आपके पास अगर पैटर्न शीट नहीं है डिस्क्रिप्शन में मिल जाएगा। डिस्क्रिप्शन में सब मिल जाएगा। प्लेलिस्ट पैटर्न सब। अच्छा इस लेक्चर के अंत तक आप क्या सीख जाएंगे? कल जो फ्लो चार्ट की बात हुई थी जिसमें चार कैटेगरी थे। कितने कैटेगरी थे? चार कैटेगरी। चार कैटेगरी क्यों थे प्रीफिक्स सम के? हर चीज़ में अलग-अलग डेटा स्ट्रक्चर यूज़ हो रहा था। एक में नॉर्मल वेरिएबल या नॉर्मल एरे यूज़ होता था। एक में हैशमैप यूज़ होता था। एक में डीक्यू यूज़ होता था। एक में कोई मर्ज शॉर्ट वाला चीज यूज़ होता था। हम लोग पहली कैटेगरी ऑलरेडी कल कर लिए हैं। किसमें? एपिसोड 26 में। आज आप सेकंड कैटेगरी सीख जाएंगे।",
+      "source": "caption",
+      "english_text": "Those who are new, come to the new channel. Episode 27 Prefix Some DSA Patterns. My name is Pratyush Narayan. Work at Akamai. If you don't have the pattern sheet, you can find it in the description. Everything will be found in the description. Playlist Pattern All. So what will you learn by the end of this lecture? The flow chart that was discussed yesterday had four categories. How many categories were there? Four categories. Why were the four categories prefixed with the same? Different data structures were being used in everything. One used normal variables or normal arrays. Hashmap was used in one. DQ was used in one. In one of them, a cheese made with marjoram was used. We have already completed the first category yesterday. In what? In episode 26. Today you will learn second category."
+    },
+    {
+      "start_time": 36.48,
+      "end_time": 70.63,
+      "text": "सेकंड कैटेगरी में आपको कोई भी डाउट नहीं रहेगा। अगर आपने ये वीडियो देख ली तो आपके जुबान पे चढ़ जाएगा सेकंड कैटेगरी होती क्या है? चलिए। तो सेकंड कैटेगरी होता क्या है? सेकंड कैटेगरी को पहचाने कैसे? अगर आपसे कभी भी पूछा जाता है ना कि किसी सब एरे का सम नंबर ऑफ़ खास करके नंबर ऑफ़। है ना? नंबर या काउंट ऑफ। है ना? नंबर या काउंट ऑफ सब एरे सब एरे मतलब कोई भी कोई भी i और जे एरे में कोई बहुत बड़ा सा एरे है उसमें कोई भी सब एरे है ना जिसका सम जिसका सम या तो एग्जैक्टली कोई k हो या तो एग्जैक्टली",
+      "source": "caption",
+      "english_text": "You will not have any doubt in the second category. If you watch this video, you will wonder what is second category? Let go. So what is second category? How to recognize second category? If you are ever asked what is the even number of any sub array, especially the number off. Isn't it? Number or count off. Isn't it? Number or count of sub array Sub array means any any i and j array, there is a very big array in it, there is any sub array in it whose sum is either exactly or k or exactly"
+    },
+    {
+      "start_time": 70.64,
+      "end_time": 103.99,
+      "text": "बहुत इंपॉर्टेंट कंडीशन है ध्यान से सुनिए या तो एग्जैक्टली k हो या तो अगर उसको आप k से मॉड्यूलस करेंगे तो उसका आंसर आंसर ज़ीरो आना चाहिए। इसका मतलब क्या है? कि अगर मान लीजिए k = 6 है तो आपसे पूछा गया कि या तो कोई नंबर ऑफ़ सब एरर ऐसे बताओ जिनका सम जिनका सम एग्जैक्टली सिक्स हो। क्या हो? एग्जैक्टली सिक्स हो। या तो जब उस सम को हम सिक्स से डिवाइड करें ना तो रिमाइंडर जीरो आए। फॉर एग्जांपल अगर सम 12 है तो आप जब 12 मॉड्यूलस 6 करते हैं तो इसका आंसर ज़ीरो आता है। क्यों? क्योंकि 12 को सिक्स से डिवाइड करने पे रिमाइंडर ज़ीरो आता है। तो ये भी एक वैलिड आंसर है। 18 /",
+      "source": "caption",
+      "english_text": "This is a very important condition, listen carefully, either it is exactly k or if you modulus it by k then its answer should be zero. What does it mean? Suppose k = 6, then you were asked to either tell the number of sub errors whose sum is exactly six. what are you? Be exactly six. Either when we divide that sum by six then the reminder zero comes. For example, if the sum is 12, then when you do 12 modulus 6, the answer is zero. Why? Because when dividing 12 by six, the reminder is zero. So this is also a valid answer. 18/"
+    },
+    {
+      "start_time": 104.0,
+      "end_time": 129.83,
+      "text": "6 = 3 रिमाइंडर ज़ीरो। ये भी एक वैलिड आंसर है। 24 मॉड्यूलस 6 भी ज़ीरो होता है। ये भी एक वैलिड आंसर है। तो ऐसे सारे सवा का अकाउंट खोजो। तो दो ही केस है मिला के। इन दोनों केसेस में आपको क्या यूज़ करना है? हैश मैप। क्या? हैश मैप। सिंपल एरे से काम नहीं बनेगा। अभी हम बताएंगे कि ये काम क्यों नहीं बनेगा और क्यों हैश मैप से बड़ा ईज़ली काम बन जाएगा। चलिए तो पहला क्वेश्चन पे आते हैं। क्या पहला पहला जो हमारा क्वेश्चन है वो है अ सब एरे सम्स इक्वल K।",
+      "source": "caption",
+      "english_text": "6 = 3 reminders zero. This is also a valid answer. 24 Modulus 6 is also zero. This is also a valid answer. So find all such accounts of 1.25. So there are only two cases altogether. What should you use in both these cases? hash map. What? hash map. Simple array will not do. Now we will explain why this work will not be done and why it will be a much easier task than Hash Map. Let us come to the first question. Is the first first question that we have is a sub array sums equal to K."
+    },
+    {
+      "start_time": 129.84,
+      "end_time": 163.27,
+      "text": "क्या? सब एरे बहुत इंपॉर्टेंट, बहुत फेमस इंटरव्यू क्वेश्चन है। मतलब अगर आप 100 इंटरव्यू देंगे ना, तो उसमें से 30 इंटरव्यू में ये पूछा ही पूछा जाएगा। ठीक है? तो सब एरे सम्स इक्वल K। ये क्वेश्चन बोलता क्या है? ये क्वेश्चन क्या बोलता है? ये क्वेश्चन है लीड कोड 56। ठीक है? चलिए तो ये क्वेश्चन बोलता क्या है कि आपको एक एरे दिया है। वेरी गुड। एरे दिया है। अ एरे में पॉजिटिव नंबर भी है, नेगेटिव नंबर भी है। एरे में पॉजिटिव भी है और नेगेटिव भी है। अच्छी बात है। आपको खोजना क्या है? आपको काउंट ऑफ़ सब एरे खोजना है। क्या? काउंट ऑफ़ सब एरे खोजना है। ठीक है? अच्छी बात है। खोज लेंगे।",
+      "source": "caption",
+      "english_text": "what? These are very important, very famous interview questions. Meaning, if you give 100 interviews, then this question will be asked in 30 of them. Ok? So all array sums equal K. What does this question say? What does this question say? This question is lead code 56. Ok? Well, what does this question say that you have been given an array. very good. Array is given. An array contains positive numbers as well as negative numbers. There is positive as well as negative in the array. It's a good thing. What are you looking for? You have to find the Count of Sub array. What? To find the count of sub array. Ok? It's a good thing. Will find out."
+    },
+    {
+      "start_time": 163.28,
+      "end_time": 195.99,
+      "text": "लेकिन कंडीशन क्या है? जिनका जिनका जिनका सम इज़ इक्वल इक्वल टू K हो। एग्जैक्टली K हो। अब देखिए पूरा टेंपलेट पूरा फ्लो चार्ट पर फिट बैठ रहा है। क्या ये एरे का क्वेश्चन है? यस सर। क्या ये सब एरे का क्वेश्चन है? यस सर। क्या आपको नंबर ऑफ़ सब एरे निकालना है? यस सर। क्या आपको कोई ऐसी कंडीशन दी है जिसमें सम इक्वल इक्वल टू k या सम मॉड्यूलस k = 0? यस सर। क्या इसमें नेगेटिव एलिमेंट्स भी हैं? यस सर। पांच के पांचों मिल रहे हैं 100%। ये किसका सवाल है? प्रीफिक्स सम पैटर्न का सवाल है।",
+      "source": "caption",
+      "english_text": "But what is the condition? Whose whose whose sum is equal is equal to K. Be exactly K. Now see the entire template fitting the entire flow chart. Is this an array question? Yes sir. Is this a question of sub-array? Yes sir. Do you need to extract the number of sub arrays? Yes sir. Are you given any condition in which sum is equal to k or sum modulus k = 0? Yes sir. Does it also have negative elements? Yes sir. All five are getting 100%. Whose question is this? There is a question of prefix even pattern."
+    },
+    {
+      "start_time": 196.0,
+      "end_time": 227.509,
+      "text": "स्लाइडिंग विंडो का नहीं है। क्यों? स्लाइडिंग विंडो फेल हो जाता है। किसमें फेल हो जाता है? नेगेटिव्स में। स्लाइडिंग विंडो नेगेटिव में फेल हो जाता है। इसीलिए किसका सवाल बन गया? प्रीफिक्स सम का सवाल बन गया। प्रीफिक्स सम में भी किस कैटेगरी का सवाल बना? सेकंड कैटेगरी का। सेकंड कैटेगरी। सेकंड कैटेगरी में कौन सा यूज़ होता था? हैशमैप। हैशमैप। चलिए। अब हम लोग जानते हैं। कि हैशमैप क्यों यूज़ करना है? और मतलब इसको सॉल्व करेंगे कैसे? मतलब क्या करेंगे कि सॉल्व हो जाए? चलिए। ब्रूट फ़ोर्स तो क्या होगा? ब्रूट फोर्स तो क्या",
+      "source": "caption",
+      "english_text": "Not of sliding window. Why? Sliding window fails. What does it fail in? In the negatives. The sliding window fails in the negative. Therefore the question became whose? Prefix became a question of sum. Which category question is also asked in prefix sum? Of second category. Second category. Which was used in second category? hash map. hash map. Let go. Now we know. Why use hashmap? And I mean, how will we solve this? Meaning, what will we do to solve it? Let go. What about brute force? what about brute force"
+    },
+    {
+      "start_time": 227.519,
+      "end_time": 261.349,
+      "text": "है कि आप सारा सब एरे देख लीजिए क्या सारा सब एरे देख लीजिए और हर सब एरे का सम निकाल लीजिए उसको इक्वल इक्वल टू k करके देख लीजिए आपको काउंट मिल जाएगा ये तो बड़ा बेहूदा एप्रोच है ये हमको नहीं लगता कि समझाने की जरूरत भी है प्रीफिक्स सम इसमें कैसे काम करता है चलिए फॉर एग्जांपल आप एक एरे आप एक एरे है आपका बनना प्रीफिक्स सम क्या करता है प्रीफिक्स सम हां देखिए कल के वीडियो में बहुत लोगों को डाउट था बहुत लोग कंप्लेंट कर रहे थे कि आप गलत बता बता दिए। अह प्रीफिक्स सम में वो पीछे का सम नहीं होता है। उसमें एरे ऑफ़ आई भी इंक्लूडेड होता है। तो आप गलत",
+      "source": "caption",
+      "english_text": "Do you look at the entire sub array? Do you look at the entire sub array and find out the sum of each sub array? Make it equal to k and see, you will get the count. This is a very absurd approach. We do not think there is a need to explain how prefix sum works in this. Let's take an example. You are an array. You are an array. Your becoming. What does prefix sum do? Yes, see in yesterday's video, many people had doubts. Many people. They were complaining that you told me wrongly. Ah Prefix Sum does not have that backwards Sum. Array of eyes is also included in it. so you are wrong"
+    },
+    {
+      "start_time": 261.359,
+      "end_time": 295.189,
+      "text": "देखिए, गलत सही कुछ नहीं होता है। क्वेश्चन में आपको जो बोला हुआ है ना आपको वैसे करना है। कल के पिवॉर्ट क्वेश्चन में आपको स्पेसिफिकली बोला गया था कि i के पीछे वाला सम और i के आगे वाला सम। तो उसमें आप एरे ऑफ़ आई जोड़ेंगे तो गलत हो जाएगा। तो ऐसा रटिए मत। आपको हो सकता है कोई और पढ़ा दिया हो कि प्रीफिक्स सम का मतलब होता है कि एरे ऑफ़ i को इंक्लूड करके उसके पीछे का सम। ऐसा नहीं होता है। प्रीफिक्स मतलब क्या होता है? प्रीफिक्स मतलब पीछे। अब कोई बोल सकता है कि इंक्लूड करो। कोई बोल सकता है नहीं इंक्लूड करो। जो क्वेश्चन बना रहे हैं उस हिसाब से होगा। ऐसा नहीं होगा कि याद कर लिए कि अच्छा ये तो एरे ऑफ़ आई हो गई। ये तो मास्टर गलत बता दिया ना। वैसा कुछ नहीं होता है। चलिए मान लीजिए मान लीजिए ये",
+      "source": "caption",
+      "english_text": "Look, there is no right or wrong. You have to do whatever is said in the question. In yesterday's pivot question you were specifically told that the even after i and the even before i. So if you add array of eyes to it then it will be wrong. So don't memorize like this. Someone else might have taught you that prefix sum means including the array of i and the sum behind it. This does not happen. What does prefix mean? Prefix meaning behind. Now someone can say include. No one can say include. It will be according to the question you are making. It will not happen that you will remember that, well, this is an array of eyes. Master, this is wrong. Nothing like that happens. Let's assume, let's assume this"
+    },
+    {
+      "start_time": 295.199,
+      "end_time": 327.59,
+      "text": "आपका एरे है। ये आपका एरे है। आप प्रीफिक्स में एक वेरिएबल ले लिए जिसका नाम है प्रीफिक्स। शुरू में ये ज़ीरो है। ये प्रीफिक्स क्या रखेगा? आपका सम रखेगा। जैसे-जैसे आप i को बढ़ाते जाएंगे उसका ये सम रखेगा। तो मान लीजिए आपका i कभी ना कभी आपका i कभी ना कभी फोर पे है। आपका i कहां पे है? फोर पे है। आपका टोटल सम क्या होगा? अभी तक। अभी तक। i को मिला के। चलिए इस क्वेश्चन में i को मिला के क्योंकि आप सब एरे की बात कर रहे हैं ना। तो टोटल सम क्या होगा? जब आप i तक पहुंचेंगे i = 4 तक तो टोटल सम होगा क्या? टोटल सम यही होगा।",
+      "source": "caption",
+      "english_text": "is your array. This is your array. You have taken a variable in the prefix named prefix. Initially it is zero. What will this prefix hold? Will keep your level. It will remain the same as you increase i. So let's say your i is always four. Where is your i? It's on four. What will be your total sum? As yet. As yet. By combining i. Let's add i to this question because you are all talking about arrays. So what will be the total sum? Will the total be even when you reach i = 4? This will be the total sum."
+    },
+    {
+      "start_time": 327.6,
+      "end_time": 360.95,
+      "text": "एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ टू प्लस एरे ऑफ़ थ्री प्लस एरे ऑफ़ फोर। यही होगा। इसमें हम एरे ऑफ़ आई इंक्लूड कर लिए क्योंकि यही होगा। उस सब एरे का सम जो शुरू से अभी तक का सम। अच्छा। मान लीजिए मान लीजिए ये कोई सम है। ये कोई सम है। अच्छा। लेकिन आपको खोजना क्या था? आपको नंबर ऑफ सब एरेज खोजने थे। क्या? नंबर ऑफ सब एरेज जिनका सम क्या हो? एग्जजेक्टली k हो। तो अब ये तो जो सब एरे है ये तो ज़ीरो से फोर तक का सब एरे है। हो सकता है ये सम इक्वल इक्वल टू k हो। हो सकता है ये सम इक्वल इक्वल टू k ना हो। कुछ भी हो सकता",
+      "source": "caption",
+      "english_text": "Array of zeros plus array of ones plus array of two plus array of three plus array of four. This is what will happen. We included the array of I in this because this is what will happen. The sum of that entire array from the beginning till now. Good. Let's say it's even. This is some even. Good. But what were you looking for? You had to find the number of sub arrays. What? What is the number of sub arrays whose sum is? Be exactly k. So now this is the sub array, this is the sub array from zero to four. This may be even equal to k. This sum may not be exactly equal to k. anything can happen"
+    },
+    {
+      "start_time": 360.96,
+      "end_time": 392.95,
+      "text": "है। लेकिन लेकिन मान लीजिए एक और सब एरे है। कोई भी कोई भी किसी भी साइज़ का सब एरे ले लीजिए। मान लीजिए यहां से ज़ीरो से लेके टू तक सम। ये मान लीजिए। इसका सम। हम बस आपको इक्वेशन मैथ्स सिखा रहे हैं। इसका मैथ्स क्या होता है? कोई आपको बोलता है कि इसका सम ना इसका सम क्या है? जो [गला साफ़ करने की आवाज़] आपका ये वाला सम है ना इसका सम एग्जेक्टली एग्ज़ैक्ट्ली सम - k है। इस पार्ट का 0 1 2 का पार्ट का सम आपको कोई बता दिया कि इसका सम एक्जेक्ट्ली सम - k है। अब देखिए अब देखिए। इस पार्ट का सम क्या होगा? इस",
+      "source": "caption",
+      "english_text": "Is. But but let's say there's another sub array. Take any sub array of any size. Suppose from here it is even from zero to two. assume that. even of. We are just teaching you equation maths. What is its maths? Someone asks you, what is its equal or what is its equal? Which [throat clearing sound] Your this one is even, isn't this one exactly exactly even - k. The sum of this part is the sum of the part of 0 1 2. Someone told you that its sum is exactly sum - k. Now look now look. What will be the sum of this part? this"
+    },
+    {
+      "start_time": 392.96,
+      "end_time": 425.909,
+      "text": "पार्ट का सम क्या होगा? टोटल का सम है। हम लोग मान लिए। आपको कोई पता है कि भाई 0 1 2 का सम - k है। इस पार्ट का सम इसका x है। व्हाट इज x? व्हाट इज x? x इज इसको उधर भेज दीजिए। सम जो कि ये वाला सम है। माइनस इस पूरे पार्ट को उधर भेज दिए। माइनस कर दिए। सम - k ये क्या होगा? सम माइनस सम + k सम कट जाएगा k। ये देखिए x का सम k है। मतलब कि",
+      "source": "caption",
+      "english_text": "What will be the sum of the parts? The total is even. We agreed. Do you have any idea brother 0 1 2 is equal to - k. The sum of this part is its x. What is x? What is x? x is this, send it there. Even which this one is even. Minus sent this entire part there. Made it minus. Even - k What will this be? Sum minus sum + k sum will be cut by k. See, x is equal to k. means that"
+    },
+    {
+      "start_time": 425.919,
+      "end_time": 458.469,
+      "text": "3 टू 4 इस वाले सब एरे का किसका इस वाले सब एरे का सम एग्जैक्टली k है। ये कब पॉसिबल हुआ? जब हम लोग मान लिए कि ज़ीरो से टू वाले का सम - k है। यही हुआ ना? मैथ्स तो यही कहता है कि उसका सम k है। तो आपको एक सब एरे तो मिल गया। आपको एक सब एरे तो पक्का पक्का मिल गया 3 टू 4। चलिए इसी में रहिए। इसी में रहिए। आपका सम क्या था? आपका सम क्या था? एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ टू प्लस एरे ऑफ़ थ्री प्लस एरे ऑफ़ 4। हम लोग अभी क्या माने थे कि",
+      "source": "caption",
+      "english_text": "3 to 4 The sum of which sub-array of this sub-array is exactly k. When did this become possible? When we assume that the sum of zero to two is - k. This is what happened right? Maths says that its sum is k. So you got a sub array. You got one sub array for sure, 3 to 4. Let's stay in this. Stay in this. What was your even? What was your even? Array of zeros plus array of ones plus array of two plus array of three plus array of 4. What did we just believe?"
+    },
+    {
+      "start_time": 458.479,
+      "end_time": 491.749,
+      "text": "ज़ीरो से टू तक का सम माइनस k है। लेकिन ऐसा जरूरी नहीं है ना कि एक ही ज़ीरो से टू का सम - k हो। मान लीजिए 0 से 1 तक का भी सम माइनस k ही है। हो सकता है r ऑफ़ टू 0 होगा। तो इसीलिए हो गया। चलिए मान लेते हैं हम लोग कि 0 और 1 इस पार्ट का सम भी क्या है? सम - k। फिर से वही काम कीजिए। इस वाले पार्ट का सम निकालिए। इसको x बोल देंगे। व्हाट इज x? x = अगेन सम - सम - k जो कि k मतलब मतलब इस पार्ट का सम भी एग्जैक्टली k है। मतलब",
+      "source": "caption",
+      "english_text": "The sum from zero to two is minus k. But it is not necessary that the sum of the same zero to two be - k. Suppose the sum from 0 to 1 is also minus k. Maybe r will be off to 0. So that's why it happened. Let us assume that what is the sum of this part 0 and 1? Even - k. Do the same thing again. Find the sum of this part. Let's call it x. What is x? x = again sum - sum - k which means k means the sum of this part is also exactly k. meaning"
+    },
+    {
+      "start_time": 491.759,
+      "end_time": 524.71,
+      "text": "आपको एक और सब एरे मिल गया ना। आपको एक और सब एरे टू से फोर वाले का सम भी k है। तो ये भी तो एक अच्छा सब एरे है। ऊपर आपको थ्री टू 4 का मिला था कि ये अच्छा सब एरे इसका सम k है। इसको काउंट कर लेना चाहिए। टू टू 4 का भी k है। अब ये हो कैसे रहा है? ये हो कैसे रहा है? हम लोग कभी भी हम लोग कभी भी जब एरे को ट्रेवर्स करते हैं। हम लोग कभी भी क्या करते हैं? हम हम लोग कभी भी एक मिनट हम लोग कभी भी जब एरे को ट्रेवर्स करते हैं ना हम लोग कभी भी जब एरे को ट्रेवर्स करते हैं। तो हम लोग के पास एक तो उसका रनिंग सम है। रनिंग सम मतलब कि अभी तक का सम एरे ऑफ़ i को मिला के ज़ीरो से एरे ऑफ़ i का सम वो तो हमेशा",
+      "source": "caption",
+      "english_text": "You got another sub array, right? You also get k, the sum of another sub array two to four. So this is also a good sub array. Above you got three to four that this good sub array is equal to k. This should be counted. Two two is also k of 4. Now how is this happening? How is this happening? We guys whenever we guys whenever we traverse the array. What do we ever do? We we ever a minute we ever whenever we traverse the array na we ever whenever we traverse the array. So we have one, its running sum. Running sum means that the sum of array of i till now is equal to the sum of array of i starting from zero."
+    },
+    {
+      "start_time": 524.72,
+      "end_time": 559.43,
+      "text": "रहेगा। वो तो हमेशा रहेगा। मान लीजिए आप i = 3 पे आए हैं। तो आपके पास एरे ऑफ़ 0 + एरे ऑफ़ वन प्लस एरे ऑफ़ टू प्लस एरे ऑफ़ थ्री। ये तो हमेशा ही रहेगा। इसको हम लोग बोलेंगे कि ये सम है। ये निकालना तो आसान है। आप निकालते जाइए। अच्छा। अगर कोई हमको बता दे कि भाई सुनो एरे ऑफ़ ज़ीरो बस एरे ऑफ़ ज़ीरो। इसका सम भी सम - k है। और एरे ऑफ़ 0 + एरे ऑफ़ वन प्लस एरे ऑफ़ टू। इसका सम भी सम - k है। हो गया होगा। और नेगेटिव भी था पॉजिटिव भी है। हो सकता है। हो सकता है।",
+      "source": "caption",
+      "english_text": "Will remain. He will always be there. Suppose you have come to i = 3. So you have array of 0 + array of one plus array of two plus array of three. This will always be there. We will call this even. This is easy to remove. You keep taking it out. Good. If someone tells us that brother, listen, array of zero is just array of zero. Its sum is also even – k. And array of 0 + array of one plus array of two. Its sum is also even – k. It must have happened. And it was negative as well as positive. It is possible It is possible"
+    },
+    {
+      "start_time": 559.44,
+      "end_time": 594.389,
+      "text": "तो इससे हम लोग को क्या दो बातें पता चली? हम लोग को ये दो बातें किसी ने बताई। इससे हम लोग को दो बातें क्या पता चली कि अगर ये सम - k है तो हम लोग देख चुके थे कि बाकी पार्ट का सम ऑटोमेटिकली k हो जाता था। हम लोग को एक बात तो पता चली कि एरे ऑफ़ वन प्लस एरे ऑफ़ टू प्लस एरे ऑफ़ थ्री। इसका सम तो पक्का पक्का k है। इसको हम लोग ये गिन सकते हैं कि ये एक सब एरे मिल गया। रिजल्ट में वन प्लस कर दिए। और हम लोग को ये भी बोला है कि 0 1 2 का सम भी सम - k है। अच्छा। इसका मतलब होता है कि जो बचा हुआ पार्ट है एरे ऑफ़ थ्री इसका मतलब कि एरे ऑफ़ थ्री का सम भी K होगा। ये भी तो एक सब एरे है ना जो थ्री से स्टार्ट हो के थ्री पे खत्म हो गया। वन लेंथ का सब एरे",
+      "source": "caption",
+      "english_text": "So what two things did we learn from this? Someone told us these two things. We learned two things from this that if this sum is - k then we had seen that the sum of the remaining parts automatically becomes k. We came to know one thing that array of one plus array of two plus array of three. Its sum is definitely k. We can count this as a sub-array. Made one plus in the result. And we are also told that the sum of 0 1 2 is also even - k. Good. This means that the remaining part is an array of three. This means that the sum of the array of three will also be K. This is also a sub-array which starts with three and ends with three. One Length Sub Array"
+    },
+    {
+      "start_time": 594.399,
+      "end_time": 629.03,
+      "text": "है। हम लोग अपने रिजल्ट में एक और जोड़ के इसको टू तो जोड़ सकते हैं। कम से कम। कम से कम तो इतना जोड़ सकते हैं। तो देखिए आपको जैसे ही कोई ये दो बातें बताया ना कि ज़ीरो से स्टार्ट हो के कहां-कहां तक का सम माइनस k है? मतलब कितने? आपको कोई बोला कि 0 का भी सम - k है और 0 1 2 इस सब एरे का सम भी सम - k है। ऑटोमेटिकली आपको पता चल गया कि और दो सब एरे होगा जिसका सम क्या होगा? एग्जैक्टली k होगा। एग्जैक्टली k होगा। एग्जैक्टली k होगा। अब यही यही गहन लॉजिक है। ये बातें आपको बताएगा कौन? ये ये बातें आप पूछेंगे किससे? ये बातें आप",
+      "source": "caption",
+      "english_text": "Is. We can make it two by adding one more to our result. at least. At least we can add this much. So see, as soon as someone told you these two things, starting from zero, the sum till where is minus k? I mean how many? Someone told you that the sum of 0 is also - k and the sum of all this array 0 1 2 is also even - k. Automatically you came to know that there will be two more sub-arrays, what will be their sum? Will be exactly k. Will be exactly k. Will be exactly k. Now this is deep logic. Who will tell you these things? To whom will you ask these things? these things you"
+    },
+    {
+      "start_time": 629.04,
+      "end_time": 657.509,
+      "text": "पूछेंगे किससे? ये आप पूछेंगे#श मैथ्स। हैश मैथ्स। कैसे पूछेंगे बताते हैं। यही प्रीफिक्स सम का ब्यूटी है। चलिए एक एरे ले लीजिए। एक एरे बना लीजिए। मान लीजिए वन वन और वन जो कि एग्जांपल में दिया हुआ है। ठीक है? चलिए 1 2 3 बना लीजिए। 1 2 3 पता नहीं इतना गंदा एग्जांपल ये लोग क्यों देता है हमको समझ में एकदम नहीं आता अजीत का। मतलब इतना गंदा एग्जांपल देता है कि आदमी खुद से सोच ही ना पाए। 1 2 3 दे दिए।",
+      "source": "caption",
+      "english_text": "Whom will you ask? You will ask this #sh maths. Hash Maths. Let me tell you how to ask. That's the beauty of the prefix sum. Let's take an array. Create an array. Suppose one one and one which is given in the example. Ok? Let's make 1 2 3. 1 2 3 I don't know why these people give such dirty examples, we don't understand Ajit at all. Meaning, it gives such a bad example that a person cannot think on his own. Gave 1 2 3."
+    },
+    {
+      "start_time": 657.519,
+      "end_time": 691.829,
+      "text": "1 2 और एक क्या है? चलिए 0 1 2 आपका के है थ्री। आपको इतने नंबर ऑफ सब एरे खोजने हैं जिनका लेंथ तीन हो। अभी ये हम लोग मैनुअली करेंगे। हम लोग मैनुअली पूरा चेक कर लेंगे कि किसी किसी का सम माइनस के है कि नहीं। चलिए एक वेरिएबल बनाइए। सम = 0 सम = 0 ओके? i = 0 सम में एरे ऑफ़ i जोड़ दीजिए सबसे पहले। सम = 1 अच्छा। हम लोग क्या चेक करते थे कि 0 से लेके i तक कितने सारे ऐसे सब एरे हैं जिनका सम - k है। तो सम - k क्या होगा? सम - k।",
+      "source": "caption",
+      "english_text": "1 2 What's another one? Let 0 1 2 be your k is three. You have to find the number of sub-arrays whose length is three. Now we will do this manually. We will manually check whether anyone's sum is minus or not. Let's create a variable. Even = 0 Even = 0 OK? First add the array of i in the sum i = 0. Even = 1 good. What we used to check is how many sub-arrays there are from 0 to i whose sum is - k. So what will be the sum - k? Even - k."
+    },
+    {
+      "start_time": 691.839,
+      "end_time": 718.63,
+      "text": "यहां पे सम - k क्या होगा? -2 1 - 3 -2 क्या आप देखिए 0 से स्टार्ट हो के 0 तक i तो ज़ीरो है। i के आगे नहीं जाना है। i के आगे तो तुम्हें मालूम ही नहीं है। क्या किसी भी सब एरे का सम आपको दिख रहा है कि -2 है ना? नहीं दिख रहा है क्योंकि पॉजिटिव है। दिख रहा है ना? चलिए कुछ मत करिए। वेरी गुड। आइए। i = 1 पे आ जाइए। i = 1 पे आ जाइए। सम क्या होगा? अह ऑलरेडी वन था। टू जोड़ देंगे। थ्री हो जाएगा। सम - k क्या होगा?",
+      "source": "caption",
+      "english_text": "What will be the sum - k here? -2 1 - 3 -2 Do you see, starting from 0 till 0 i is zero. Do not go beyond i. You don't even know about i. Do you see the sum of any sub array being -2, right? It is not visible because it is positive. Is it visible? Let's do nothing. very good. Come. Come to i = 1. Come to i = 1. What will be even? Ah was already one. Will add two. It will be three. What will be even - k?"
+    },
+    {
+      "start_time": 718.64,
+      "end_time": 753.35,
+      "text": "बहुत ध्यान से देखिएगा। सम - k क्या होगा? ज़ीरो ज़ीरो। ज़ीरो से शुरू हो के किसी का ऐसा सब एरे दिख रहा है जिसका सम एग्जैक्टली ज़ीरो हो। हां, दिख रहा है। ऐसा मत बोलिए कि नहीं दिख रहा है। एम्प्टी सब एरे भी तो है। एम्प्टी सब एरे भी तो है। कोई सब एरे नहीं लेंगे। एम्प्टी सब एरे उसका सम क्या होगा? ज़ीरो। कोई अगर एम्प्टी सब एरे है, इसका कोई बोले कि सम बताओ, तो इसका सम जीरो होगा ना? एक तो दिख रहा है। चलिए, एक दिख रहा है। अपने आंसर में एक जोड़ दीजिए। इसका मतलब क्या होगा? इसका मतलब क्या होगा? देखिए, यहां पे सम का क्या मतलब था? एरे ऑफ़ ज़ीरो। प्लस एरे ऑफ़ वन। आपको कहीं से पता चला कि चलो एक सब",
+      "source": "caption",
+      "english_text": "Will look very carefully. What will be even - k? Zero zero. Starting from zero, a sub-array is visible whose sum is exactly zero. Yes, it is visible. Don't say that it is not visible. There is also an empty sub array. There is also an empty sub array. Will not take any sub array. What will be the sum of empty sub array? Zero. If someone says tell the sum of an empty sub array, then its sum will be zero, right? One is visible. Come on, one is visible. Add one to your answer. What would this mean? What would this mean? See, what did Pe Sam mean here? Array of zeros. Plus array of one. You learned from somewhere that let's all"
+    },
+    {
+      "start_time": 753.36,
+      "end_time": 786.15,
+      "text": "एरे जो जीरो से स्टार्ट होता है, उसका सम ज़ीरो है। किसका? एम्प्टी सब एरे का। एम्प्टी सब एरे का। मतलब कि कुछ नहीं है उसमें। बाकी बचा क्या है इसमें? बाकी बचा क्या? ये बचा। मतलब हम लोग देख के आए थे इसका सम एग्ज़ैक्टली K होगा। होगा ही होगा। और देख लीजिए है भी। सम = 3, k = 3 एग्जैक्टली K है। अपने रिजल्ट में हम लोग एक जोड़ सकते हैं। चलिए, अब और क्लियर होगा। आगे वाले एग्जांपल में और क्लियर होगा। ये तो ज़ीरो था। ठीक है? आइए। I = 2 सम को बढ़ाइए। सम ऑलरेडी थ्री था। 3 + 3 6 सम माइनस K क्या है? थ्री। क्या 0 से",
+      "source": "caption",
+      "english_text": "The array which starts from zero, its sum is zero. Whose? Of empty sub array. Of empty sub array. Meaning there is nothing in it. What is left in it? What is left? This left. Meaning we had seen that its sum would be exactly K. It will definitely happen. And see, it is there too. Sum = 3, k = 3 is exactly K. We can add one to our result. Come on, it will be clearer now. It will become more clear in the next example. This was zero. Ok? Come. I = 2 Increase the sum. There was already three. What is 3 + 3 6 even minus K? Three. what from 0"
+    },
+    {
+      "start_time": 786.16,
+      "end_time": 819.829,
+      "text": "स्टार्ट हो के टू तक किसी भी सब एरे कितने भी सब एरे इसका सम थ्री है क्या? हां है। है यस यस यस। ये देखिए। इसका सम थ्री है। मतलब मतलब मतलब सेम काम सेम काम करना है। यहां पे आपका सम आपको क्या बोलता था? एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ टू। इसका सम क्या मिल गया हमको? सिक्स जो कि अभी का सम है। आपको देख के पता चल रहा है। आपको देख के पता चल रहा है कि एरे ऑफ़ 0 + एरे ऑफ़ वन ये वाला। इसका सम क्या है? सम - k जो कि है तीन। ऑटोमेटिकली इसका सम क्या बन जाएगा? k जो कि है तीन। देख लीजिए एरे",
+      "source": "caption",
+      "english_text": "From start to two, any sub array, how many sub arrays is its sum three? Yes it is. Yes yes yes yes. Look at this. Its sum is three. Meaning, meaning, same work, same work. What did your peers say to you here? Array of zeros plus array of ones plus array of two. What did we get for this? Six which is the current even. You can tell by looking at it. By looking at you, you can see that this one is Array of 0 + Array of One. What is its sum? Even - k which is three. What will its sum automatically become? k which is three. take a look here"
+    },
+    {
+      "start_time": 819.839,
+      "end_time": 847.91,
+      "text": "ऑफ़ टू है भी तीन। अपने रिजल्ट में आप एक और जोड़ सकते हैं। और सब खत्म हो जाए, तो आंसर में टू रिटर्न कर सकते हैं। यही इसका लॉजिक है। ये क्या है इसका लॉजिक? अब इसका लॉजिक हम लोग एरे में लिख के देख लेते हैं कि क्या होता है। आपका कोई भी सम किसी भी इंडेक्स i तक का सम ऐसा दिखेगा। एरे ऑफ़ ज़ीरो प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ टू प्लस एरे ऑफ़ थ्री प्लस एरे ऑफ़ 4 + एरे ऑफ़ 5 + एरे ऑफ़ सिक्स। मान लीजिए i = 6 पे आप देख रहे हैं। आपको बहुत सारी बातें पता चली।",
+      "source": "caption",
+      "english_text": "Off two is also three. You can add one more to your result. And when everything is over, you can return 2 in the answer. This is its logic. What is its logic? Now we write its logic in an array and see what happens. Any of your sums up to any index i will look like this. Array of zeros plus array of ones plus array of two plus array of three plus array of 4 + array of 5 + array of six. Suppose you are looking at i = 6. You got to know a lot of things."
+    },
+    {
+      "start_time": 847.92,
+      "end_time": 875.91,
+      "text": "आपको पता चला कि भाई ऐसा है। एरे ऑफ़ 0 का सम - k है। एक बात ये पता चली। एरे ऑफ़ 0 प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ टू का सम भी सम माइनस के है। अच्छा अच्छी बात है। और एरे ऑफ़ 0 प्लस एरे ऑफ़ वन प्लस एरे ऑफ़ टू प्लस एरे ऑफ़ थ्री प्लस एरे ऑफ़ फोर का भी सम माइनस के है। हर हर बात से हर बार जो आपको पता चल रहा है ना कि ज़ीरो से लेके इस भाग का सम भी सम माइनस के है। आपको एक आंसर पता चल रहा है। कैसे? सबसे पहले आइए।",
+      "source": "caption",
+      "english_text": "You found out that brother is like this. The array of 0's is sum - k. One thing came to light. The sum of the array of 0 plus the array of one plus the array of two is also even minus. Okay, that's a good thing. And the array of 0 plus array of one plus array of two plus array of three plus array of four is also even minus k. What you are getting to know every time from every thing is that the sum of this part is also of zero and even minus. You are getting to know an answer. How? Come first."
+    },
+    {
+      "start_time": 875.92,
+      "end_time": 909.99,
+      "text": "a0 सम माइनस k है। ऑटोमेटिकली a1 टू a6 भी सम माइनस के होगा। तो एक आंसर आपका हो गया 1 2 6 आंसर में एक जोड़ दिए। 0 1 2 का सम - K है। मतलब यह वाला ऑटोमेटिकली इस पार्ट का 3 2 6 3 2 6 का सम k होगा ही होगा क्योंकि मैथ्स है ना भाई होना ही पड़ेगा उसको। आंसर में आपके एक और जुड़ गया। 0 1 2 3 4 का सम माइनस K है। मतलब इस पूरे भाग का सम माइनस K है। ऑटोमेटिकली इस पार्ट का सम k होना पड़ेगा। ऑटो होना ही पड़ेगा। इसका सम - k आपका टोटल सम है सम तो इस x का आप",
+      "source": "caption",
+      "english_text": "a0 is even minus k. Automatically a1 to a6 will also be even minus. So one answer is yours, 1 2 6 add one to the answer. The sum of 0 1 2 is – K. This means that automatically this part of 3 2 6 3 2 6 will be equal to k because he is a maths person, he will have to be a brother. One more addition to your answer. The sum of 0 1 2 3 4 is minus K. Meaning the sum of this entire part is minus K. Automatically this part will have to be equal to k. There will have to be an auto. Its sum - k is your total sum is sum so this x's you"
+    },
+    {
+      "start_time": 910.0,
+      "end_time": 943.509,
+      "text": "वैल्यू निकालेंगे तो आपको आएगा ही k ऑटोमेटिकली आपका 5 और सिक्स का ये आपका एक आंसर बनेगा होना ही पड़ेगा इसको आंसर तो देखिए हो क्या रहा है आप हर i तक जा रहे हैं आप हर i तक जा रहे हैं अगर आपको कोई ये बता दे कि आप हर i पे जा रहे हैं तो आपके पास एक सम निकल के आता है सम निकल के आता है अगर आपको कोई ये बता दे कि ज़ीरो से स्टार्ट हो के अभी तक आप जितना भी देखें अभी तक आप ये हो क्या रहा है हर चीज देखिए ज़ीरो से स्टार्ट हो रहा है हर चीज ज़ीरो से स्टार्ट हो रहा है ऐसा नहीं के बीच में बीच का कुछ नहीं करना है। 0 से अभी तक जो हम लोग करते हुए आ रहे हैं। कितना सारा सम माइनस k हम लोग देख चुके हैं। पीछे पीछे",
+      "source": "caption",
+      "english_text": "If you find out the value then you will get k automatically, this will become your answer of 5 and six, this will have to be the answer, so see what is happening, you are going to every i, you are going to every i, if someone tells you that you are going to every i, then you will get an even number. If someone tells you that you have started from zero, till now, whatever you have seen, this is what is happening, see everything. Everything is starting from zero, it is not that everything is starting from zero and nothing has to be done in between. What we have been doing from 0 till now. We have seen so many sum minus k. behind behind"
+    },
+    {
+      "start_time": 943.519,
+      "end_time": 978.069,
+      "text": "जब हम लोग i = 6 पे आए थे। यही तो हम लोग कर रहे हैं कि अभी हम लोग i = 6 पे हैं। तो ज़ीरो से ही आए होंगे ना। 0 1 2 3 4 5 6 कितनी बार? कितनी बार आप सम - k देख चुके हैं। कितनी बार देख चुके हैं। तो आपको पता चलेगा कि देखो एक बार तो a 0 आए थे वहीं देख लिए थे। एक बार 0 1 2 पे आए थे तो वहां देखे थे। एक बार 0 1 2 3 पे आए थे तो वहां देखे थे। तो आपको कोई बोलता है कि तीन बार हम सम - k देख चुके हैं। इसका मतलब ही है। इसका मतलब ही है। इसका मतलब ही है कि आपके आंसर में आपको जितने बार भी इसको देखें इसको मान लो फ्रीक्वेंसी कुछ भी कुछ भी बार देखे होंगे। आपके आंसर में ये आपको",
+      "source": "caption",
+      "english_text": "When we came to i = 6. This is what we are doing now that we are at i = 6. So it must have come from zero, right? 0 1 2 3 4 5 6 How many times? How many times have you seen the sum - k. How many times have you seen it? So you will know that look once a 0 had come and saw it there. Had come to 0 1 2 once and saw there. Had come to 0 1 2 3 once and saw there. So someone tells you that we have seen the even - k three times. That's what it means. That's what it means. This only means that whatever number of times you see it in your answer, assume that the frequency may be whatever. You will get this in your answer"
+    },
+    {
+      "start_time": 978.079,
+      "end_time": 1011.35,
+      "text": "प्लस प्लस करना पड़ेगा। क्यों? क्योंकि हम लोग देख चुके हैं। अगर आप तीन बार देखे हैं ना, अगर आप a 0 देखे, 0 1 2 देखें और 0 1 2 3 4 देखें पक्का पक्का इस ज़ीरो से सिक्स तक में तीन सब एरे ऐसा होगा जिसका सम एग्ज़ैक्टली K होगा। देख लीजिए ज़ीरो एक इस सब एरे का होगा। टू से इस सब एरे का भी होगा। फोर के बाद इस सब एरे का भी होगा। तो ये तो पक्की बात है। अब ये चीज़ आपको बताएगा क्या कि हम लोग हम लोग कोई चीज़ कितनी बार देखे हैं पहले? यही तो हैशमैप की खासियत होती है। मैप याद रख सकता है क्या? हैशमैप याद रख सकता है कि कोई चीज़",
+      "source": "caption",
+      "english_text": "Will have to do plus plus. Why? Because we have seen it. If you look three times, if you look at a 0, look at 0 1 2 and look at 0 1 2 3 4, then there will be three sub-arrays in this zero to six whose sum will be exactly K. See, zero will be one of this entire array. Two to this sub array will also be there. After four this sub array will also be there. So this is a sure thing. Now will this thing tell you how many times we have seen something before? This is the specialty of hashmap. Can you remember the map? Hashmap can remember that something"
+    },
+    {
+      "start_time": 1011.36,
+      "end_time": 1046.15,
+      "text": "हम कितनी बार देखे हैं पहले। याद रखिए। आइए। बहुत सिंपल कोड हो जाएगा इसका। अब देखिए सबसे पहले आपको करना क्या है? सबसे पहले तो मान लीजिए आपको एक एरे मिला। आपको एक K मिला। वेरी गुड। सबसे पहले तो एक इंट सम = 0 बना लिए। अच्छा एक हैश मैप बना लिए। एक हैश मैप बना लिए। अनऑर्डर्ड मैप जो कि है इंटेंट f बहुत इंपॉर्टेंट चीज। बहुत इंपॉर्टेंट चीज। हम लोग क्या बोले थे यहां पे? इस एग्जांपल में देखिए। इस एग्जांपल में देखिए। जब हम लोग का सम थ्री आया था। हम लोग इससे क्या पूछे थे कि सम - k जो कि ज़ीरो। ज़ीरो एक भी बार देखे हो कि नहीं? अब",
+      "source": "caption",
+      "english_text": "How many times have we seen before. Remember this. Come. This will be a very simple code. Now see what you have to do first? First of all, suppose you got an array. You got a K. very good. First of all make an int sum = 0. Okay, let's create a hash map. Create a hash map. Unordered map which is intent f very important thing. Very important thing. What did we say here? Look at this example. Look at this example. When our number came to three. What we asked him was that even - k which is zero. Have you seen Zero even once or not? now"
+    },
+    {
+      "start_time": 1046.16,
+      "end_time": 1073.27,
+      "text": "आपका हैशमैप शुरू में खाली होगा। हुआ तो आपको बोलेगा कि ज़ीरो एक भी बार हम नहीं देखे हैं। लेकिन ये ज़ीरो देख चुका है। ज़ीरो के कब देख चुका है? एम्प्टी सब एरे में। एम्प्टी सब एरे में। वो ज़ीरो से स्टार्ट हुआ। ज़ीरो तक भी नहीं आया। वो एम्प्टी हो गया। तो वहां पे एक ज़ीरो देख चुका है ये। तो ये आपको हैशमैप को बताना पड़ेगा कि बिना कुछ किए भी तुम ज़ीरो सम तो देख चुके हो। तो आपको हैश मैप को बताना पड़ेगा। क्या बताना पड़ेगा? f0 = 1 इसका मतलब कि सम = 0 एक बार तुम देख चुके हो।",
+      "source": "caption",
+      "english_text": "Your hashmap will be empty initially. If it happens then he will tell you that he has not seen zero even once. But this Zero has seen. When have you seen zero? In empty sub array. In empty sub array. He started from zero. Didn't even reach zero. It became empty. So he has seen a zero there. So you have to tell the hashmap that you have already seen the zero sum without doing anything. So you have to tell the hash map. What needs to be told? f0 = 1 means that sum = 0 once you have seen."
+    },
+    {
+      "start_time": 1073.28,
+      "end_time": 1106.47,
+      "text": "बिना कुछ किए। किस में देखेगे? एम्प्टी सा एर में देखेगे। बस फॉर i = 0 i &lt; n i + सबसे पहले सम को अपडेट कर दिए इसमें r जोड़ दिए हम लोग को पूछना क्या है कि क्या पहले देखे हो क्या पूछना है हम लोग का हम लोग को क्वेश्चन क्या है क्वेश्चन है कि सम - k आज तक देखे हो कि नहीं जिंदगी में अब इंट फ्रीक्वेंसी = f ऑफ क्वेश्चन f ऑफ क्वेश्चन तो हैश मैप आपको बताएगा कि आपसे पहले हम सम माइनस के",
+      "source": "caption",
+      "english_text": "Without doing anything. In which will you see it? Will see in empty sa er. Just for i = 0 i < n i + first of all update the even and add r to it. What is the question for us to ask, have we seen before? What is the question for us? The question is whether we have seen the even - k till date or not. Now int frequency in life = f of question f of question. So the hash map will tell you that before you we have seen even - k."
+    },
+    {
+      "start_time": 1106.48,
+      "end_time": 1140.549,
+      "text": "कितनी कितनी बार देखे हैं? बस इसको अपने रिजल्ट में जोड़ दो। इसको अपने रिजल्ट में जोड़ दो। बंद कर दो। रिटर्न रिजल्ट कर दो। यही होता है। आइए इसको ट्राई रन करते हैं। बहुत लोग बोलते हैं कि आप ड्राई रन नहीं करवाते हैं। आप झूठ-ठ लिख देते हैं क्या? नहीं झूठ नहीं लिखते हैं। आइए जो एग्जांपल है उसी में करिए। अ वन चलिए एक नया एग्जांपल ले लीजिए। वन वन और वन। ठीक? 0 1 2 आपका k है टू। शुरुआत में हमारा हैश मैप एक बनता है और हम उसको बता देते हैं कि तुम जीरो एक बार देख चुके हो। एक बार देख चुके हो। हां देखिए एक चीज छूट गया। अब",
+      "source": "caption",
+      "english_text": "How many times have you seen it? Just add this to your result. Add this to your result. Turn it off. Please return results. Same thing happens. Let's try this. Many people say that you should not do dry runs. Do you write lies? No, do not write lies. Let us do it as per the example. Well, let's take a new example. Forest forest and forest. Correct? 0 1 2 Your k is two. Initially our hash map is created as one and we tell it that you have seen zero once. Have seen it once. Yes see one thing is missing. now"
+    },
+    {
+      "start_time": 1140.559,
+      "end_time": 1169.909,
+      "text": "यहां पे तो हम लोग कर लिए रेस्ट प्लस इक्वल टू फॉर्म। लेकिन लेकिन लेकिन अभी आप जो आई पे आए हैं तो आपका सम अपडेट हुआ है। आपका सम अपडेट हुआ है। तो हैशमैप को बताना पड़ेगा ना कि इसको तुम देख लिए। तभी तो ये आगे काम आएगा। कहने का क्या मतलब है? आप जब यहां पे आए आप जब i = 0 पे आए थे तो हैशप का कुछ नहीं था। आप i = 0 पे आए तो आपका सम इज़ प्लस = 0 हुआ होगा। अब आगे जाने से पहले आपको हैशमैप को बताना पड़ेगा कि तुम ये वाला सम अभी वाला सम देख चुके हो। तभी तो आगे आगे हम लोग को काम क्या पड़ता है कि तुम पीछे कितना देखे हो।",
+      "source": "caption",
+      "english_text": "Here we have done rest plus equal to form. But but but if you have just come to your account, your account has been updated. Your account has been updated. So the hashmap will have to be told that you have seen it. Only then will it be useful further. What does it mean to say? When you came here, when you came to i = 0, there was nothing about the hashmap. When you come to i = 0, your sum is plus = 0. Now before going further you have to tell the hashmap that you have already seen this one and this one. That's why it doesn't matter to us going forward how much you have seen behind."
+    },
+    {
+      "start_time": 1169.919,
+      "end_time": 1204.31,
+      "text": "हैशमैप को बताना तो पड़ेगा ना। तो हैशमैप को बताना तो पड़ेगा f ऑफ सम प्लस प्लस कि अभी वाला सम तुम एक बार देख लिए। आगे जब हम पूछेंगे तो तुम हमको बता देना। बस ये था एक चीज। चलिए। आइए, ड्राइव ऑन करते हैं। शुरुआत में हमारा हैश मैप सिर्फ ज़ीरो जानता है कि हम जीरो सम एक बार देखें। कहां? एम्प्टी अरे में। चलिए। आपका सम इज़ इक्वल टू 0। शुरुआत में। i = 0 सम क्या बन जाएगा? 0 + 1। सम - k क्या बनेगा? जो हमारा क्वेश्चन है। जो हमारा क्वेश्चन है वो क्या बनेगा? 1 - 2 - 1। ठीक है? क्या",
+      "source": "caption",
+      "english_text": "You will have to tell the hashmap. So the hashmap will have to be told f of sum plus plus that the current sum you have seen once. When we ask further, please tell us. It was just this one thing. Let go. Come, let's drive on. Initially our hash map only knows zero so that we see zero once. Where? In empty space. Let go. Your sum is equal to 0. In the beginning. What will i = 0 even become? 0 + 1. What will become even-k? Which is our question. Our question is, what will it become? 1 - 2 - 1. Ok? what"
+    },
+    {
+      "start_time": 1204.32,
+      "end_time": 1238.07,
+      "text": "है इसमें -1 एक भी बार देखा है? ना? नहीं देखा है। कोई फायदा नहीं है। हां, आगे बढ़ने से पहले। अब हमारा सम वन है तो हम लोग बोलेंगे कि तुम वन एक बार देख चुके हो। कहां से कहां? यहां पे। ये देख चुके हो ना? चलिए। वन को वन कर दिए। वेरी गुड। i = 1 पे आइए। सम = 2 हो गया। सम इक्वल टू हो गया। क्वेश्चन क्या बना आपका? सम - k 2 - 2 0 यस यस। अब पूछिए#श मैप से। आज तक आज तक 0 कितनी बार देखे हो भाई? बोलेगा हम वन बार देखे हैं भाई। अपने रिजल्ट में वन जोड़ दिए। अपने रिजल्ट में वन जोड़ दिए। और जाने से पहले आगे बढ़ने से पहले इसको बता दिया",
+      "source": "caption",
+      "english_text": "Have you seen -1 even once? No? Haven't seen. There is no point. Yes, before proceeding further. Now we have a forest so we will say that you have seen the forest once. From where to where? On here. Have you seen this? Let go. Turned the forest into a forest. very good. Come to i = 1. Sum = 2. The sum became equal to two. What became your question? Even - k 2 - 2 0 yes yes. Now ask #sh from the map. How many times have you seen 0 till date brother? He will say that we have seen him once, brother. Added one to your result. Added one to your result. And before leaving, before moving forward, told this"
+    },
+    {
+      "start_time": 1238.08,
+      "end_time": 1270.789,
+      "text": "कि तुम अब टू भी देख चुके हो। एक बार टू देख चुके हो। टू को वन कर दिया। चलिए, i = 2 पे आ जाइए। सम इक्वल टू हो जाएगा कितना? 2 + 1 3 क्वेश्चन क्या बनेगा आपका? कि सम - k कितनी बार देखे हो भाई? 3 - 2 1 1 कितनी बार देखे हो? बोलेगा वन एक बार देखे हैं। कहां देखा था? ये वाला ये वाला। देख लिया था ना पहले ही? देख लिया था ना? चलिए। तो कितनी बार देखा था? एक बार देखा था। अच्छा तो आंसर में एक जोड़ दीजिए। और आंसर आपका टू हो गया। जाने से पहले जाने से पहले फर्क नहीं पड़ता है लेकिन फिर भी इसको बोल दीजिए कि तुम लोग थ्री भी एक बार",
+      "source": "caption",
+      "english_text": "That you have seen two now too. Have you seen it once? Two became one. Let us come to i = 2. How much will the sum equal to two? 2 + 1 3 Question What will become of you? How many times have you seen that, brother? 3 - 2 1 1 How many times have you seen it? Will say that he has seen the forest once. Where did you see it? This one, this one. Had you seen it already? You saw it, right? Let go. So how many times did you see it? Saw it once. Well then add one to the answer. And your answer became two. Before leaving, it doesn't matter before leaving, but still tell him that you guys should meet once."
+    },
+    {
+      "start_time": 1270.799,
+      "end_time": 1304.95,
+      "text": "देख चुके हो और आपका लूप खत्म हो जाएगा आपका एरे खत्म हो गया। अब क्या रिटर्न करेंगे? टू। कौन सा दो सब एरे हैं जिसका सम एक्जेक्टली टू है? एरे ऑफ़ ज़ीरो और एरे ऑफ़ वन का सम एक्जेक्टली टू है। एरे ऑफ़ वन और एरे ऑफ़ टू इस दोनों का सम भी एग्जैक्टली टू है। देख लीजिए पूरे एरे में दो ही सब एरे पॉसिबल थे। आपका क्वेश्चन बन गया। तो ये प्रीफिक्स सम था। ये प्रीफिक्स सम क्यों है? लेकिन ये प्रीफिक्स सम क्यों है? क्योंकि अब एक तरीके से कर क्या रहे हैं आप? हर आई इंडेक्स पे जा के सम निकाल रहे हैं वो तो बहुत अच्छी बात है निकालते रहिए। लेकिन आप पूछ क्या रहे हैं कि पीछे के किसी सम में ऐसा कुछ बात था क्या? पीछे हम जितना भी छोड़ के आए हैं उसमें कुछ ऐसा",
+      "source": "caption",
+      "english_text": "You have seen and your loop will end, your array will end. What will you return now? To. Which two sub arrays have their sum exactly two? The sum of the array of zeros and the array of ones is exactly two. The sum of both Array of One and Array of Two is exactly two. See, only two sub-arrays were possible in the entire array. Your question has been asked. So this prefix was even. Why is this prefix even? But why is this prefix even? Because in a way, what are you doing now? Going to every I index and finding the numbers is a very good thing, keep on finding them. But what you are asking is whether something like this existed in the past? Whatever we have left behind, there is something like this"
+    },
+    {
+      "start_time": 1304.96,
+      "end_time": 1339.35,
+      "text": "बात था क्या? इसीलिए इस तरीके के क्वेश्चन में हैश मैप यूज़ होता है। क्यों? क्योंकि एक लॉजिक होता है कि अगर मान लीजिए इतना एरे का पार्ट है। इस पूरे पार्ट का सम है। और किसी एक पहले वाले पार्ट, किसी एक पहले वाले पार्ट, इस लाल वाले पार्ट का सम - k है। ऑटोमेटिकली जो एक बचा हुआ पार्ट है ना इसका सम के आ जाएगा। तो ये हमारे आंसर में होना चाहिए। और ऐसा कि जितना लाल पार्ट होगा उतना हरा-हरा पार्ट होगा। आप लाल पार्ट को श्रिंक कर देंगे तो हरा पार्ट बढ़ जाएगा। मतलब जितने तरीके का लाल पार्ट है उतने तरीके का हरा पार्ट आएगा। इसीलिए हैश मैप यूज़ हुआ। और इसीलिए ये प्रीफिक्स सम का सवाल है। पहले के सम से यूज़ करके अभी",
+      "source": "caption",
+      "english_text": "What was the matter? That is why hash map is used in this type of questions. Why? Because there is a logic that if suppose this is a part of an array. This entire part is even. And the sum of one of the earlier parts, one of the earlier parts, this red part is - k. The remaining part will be matched automatically. So this should be in our answer. And such that the more red part there is, the more green part there will be. If you shrink the red part, the green part will increase. Meaning, there will be green parts of the same type as there is red part. That's why hash map was used. And that's why it's a question of prefix sum. Now using the same as before"
+    },
+    {
+      "start_time": 1339.36,
+      "end_time": 1357.679,
+      "text": "का आंसर निकाल रहे हैं। ये भी एग्ज़ैक्टली उसी टेंप्लेट में फिट करता है। सबसे पहले अपना रनिंग सम बढ़ाइए। कंडीशन कंपेयर कर लीजिए। उस सम को अपने प्रीफिक्स में जोड़ दिए। हैश मैप में जोड़ दिए। तो ये एग्ज़ैक्टली उस पे काम करता है। तो इसको सबमिट ज़रूर कीजिएगा। का बड़ा प्यारा क्वेश्चन है, बड़ा फेमस क्वेश्चन है, बड़ा फेवरेट क्वेश्चन है सबका।",
+      "source": "caption",
+      "english_text": "Finding the answer. This also fits exactly into the same template. First of all increase your running sum. Compare the conditions. Added that sum to your prefix. Added to hash map. So this works exactly on that. So please submit it. This is a very lovely question, a very famous question, a very favorite question of everyone."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

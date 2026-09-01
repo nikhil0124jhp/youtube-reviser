@@ -1,0 +1,814 @@
+{
+  "video_id": "RADpqk79IzQ",
+  "video_title": "Constructors in Java | Constructor Chaining, Overloading & this | Java Full Course #13",
+  "video_number": 2,
+  "chunks": [
+    {
+      "start_time": 0.08,
+      "end_time": 34.16,
+      "text": "हां जी। तो करें स्टार्ट। वेलकम बैक कोडर आर्मी हमारी इस Java की सीरीज़ में। और आज हम अपने ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग को कंटिन्यू करने वाले हैं। और आज हम देखेंगे कंस्ट्रक्टर्स क्या होते हैं? दिस कीवर्ड क्या होता है? और भी बहुत सारी चीजें तो बहुत मजा आएगा। तो चलो फटाफट स्क्रीन पे चलते हैं और शुरू करते हैं। हां जी। तो देखो मैंने यहां पे क्या किया हुआ है? अपना डेमो डॉट java करके खाली प्रोजेक्ट लिया हुआ है। और ये अपना बॉईलर प्लेट कोड जो हमेशा से लिखा हुआ है वो तो अब हम समझ ही गए हैं कि बॉईलर प्लेट कोड का मतलब क्या होता है। अब हम अपनी सबसे पहले क्या करते हैं? एक स्टूडेंट क्लास बना लेते हैं। ठीक है? तो हमने क्या किया?",
+      "source": "transcript_api",
+      "english_text": "Yes sir. So let's start. Welcome back Coder Army to our Java series. And today we are going to continue our object oriented programming. And today we will see what are constructors? What is this keyword? Many more things will be a lot of fun. So let's quickly go to the screen and get started. Yes sir. So look what I have done here? Have taken an empty project by doing your demo dot java. And this is our boiler plate code which has always been written, now we have understood what the boiler plate code means. Now what's the first thing we do? Let's create a student class. Ok? So what did we do?"
+    },
+    {
+      "start_time": 31.84,
+      "end_time": 66.159,
+      "text": "एक स्टूडेंट क्लास बना ली। और लेट्स से स्टूडेंट में हमने क्या-क्या चीजें रखते हैं? हम एक नाम रखते हैं स्टूडेंट का। ठीक है? उसकी ऐज रख लेते हैं। उसका रोल नंबर रख लेते हैं। ठीक है? और वो किस कॉलेज में है उसका नाम रख लेते हैं। कॉलेज। हां जी। तो हमने नाम, ऐज, रोल नंबर और कॉलेज ये सब रख लिया। फिर हमें पता है कि हमें अगर इस ऑब्जेक्ट इस क्लास के ऑब्जेक्ट बनाने पड़ते थे तो हम क्या करते थे? हम लिखते थे स्टूडेंट उस ऑब्जेक्ट का और रेफरेंस वेरिएबल का नाम S1 और फिर न्यू कीवर्ड लिखते थे और स्टूडेंट। ठीक है? इससे क्या",
+      "source": "transcript_api",
+      "english_text": "Created a student class. And what things have we kept in Let's Student? We keep a name for the student. Ok? Let's keep its age. Let's keep his roll number. Ok? And we keep the name of which college he is in. College. Yes sir. So we kept the name, age, roll number and college. Then we know that if we had to create an object of this class, what would we do? We used to write student and the name of that object was S1 and then we used to write new keyword and student. Ok? what is this"
+    },
+    {
+      "start_time": 63.76,
+      "end_time": 96.56,
+      "text": "होता था? इसका एक ऑब्जेक्ट बन जाता था। राइट? बहुत बढ़िया। अब इस ऑब्जेक्ट में अगर हमें वैल्यूज़ ऐड करनी होती थी तो हम ऐसे ऐड करते थे कि भ S1 डॉट नेम हो गया। लेट्स से आदित्य है ना? S1 डॉट ऐज हो गया। लेट्स से 28 हम कुछ इस तरह करते थे। अच्छा अब क्या हो? अगर मैं ये सब ना करूं। ये सब करना भूल जाऊं और सीधा सिस्टम डॉट आउट [नाक से की जाने वाली आवाज़] डॉट प्रिंट एलn और मैं s1 का नेम प्रिंट करने की कोशिश करूं। क्या आएगा? S1 डॉट नेम को",
+      "source": "transcript_api",
+      "english_text": "used to happen? It became an object. Right? very nice. Now if we had to add values ​​in this object, we used to add it in such a way that it became S1 dot name. Is Aditya from late? S1 Dot Aged. From Let's 28 we used to do something like this. ok what happens now? If I don't do all this. Forget about doing all this and just go to system dot out [nasal sound] dot print l n and I try to print the name of s1. What will come? S1 dot name co"
+    },
+    {
+      "start_time": 94.159,
+      "end_time": 127.68,
+      "text": "प्रिंट करने की कोशिश करूं। और सेम तरीके से मैं क्या करूं? मैं ऐज को प्रिंट करने की कोशिश करूं। सेम तरीके से मैं रोल नंबर और कॉलेज सबको प्रिंट करूंगा। तो ऐज यहां पे आ गया हमारा रोल नंबर और यहां पे आ गया हमारा कॉलेज। ठीक है? क्या लगता है? अभी तक मैंने S1 के रेफरेंस वेरिएबल में कोई वैल्यू नहीं डाली है। मैंने S1 डॉट नेम, S1 डॉट एज इस तरह करके कुछ भी डाला ही नहीं है। मैंने सीधा क्लास बनाई और इसको प्रिंट करने की कोशिश की। तो क्या होगा? कोई एरर आएगा? चलो इसको एक बार रन करके देखते हैं। नहीं देखो एरर",
+      "source": "transcript_api",
+      "english_text": "Let me try to print. And what should I do in the same way? Let me try to print Edge. In the same way I will print the roll number and college. So here is our roll number and here is our college. Ok? What do you think? So far I have not put any value in the reference variable of S1. I have not entered anything like S1 dot name, S1 dot age. I simply created the class and tried to print it. So what will happen? Will any error occur? Let's run it once and see. don't look error"
+    },
+    {
+      "start_time": 125.84,
+      "end_time": 160.8,
+      "text": "तो नहीं आया। हमारा कुछ आउटपुट आया। आउटपुट क्या आया? देखो S1 डॉट नेम की जगह प्रिंट हुआ नल। ऐज और रोल नंबर की जगह ज़ीरो ज़ीरो और कॉलेज की जगह दोबारा से नल। अब इसका क्या मतलब है? देखो, इसी को हम कहते हैं डिफॉल्ट वैल्यूज़। ठीक है? क्या होता है डिफॉल्ट वैल्यूज़? इसके बारे में थोड़ा सा डिस्कस करते हैं। सबसे पहले ना अपनी क्लास में वापस चलते हैं। मैंने कहा था हमारी क्लास में ये जितने भी हम वेरिएबल्स डिक्लेअ करते हैं, ये क्या रिप्रेजेंट करता है? ये रिप्रेजेंट करता है किसी रियल लाइफ ऑब्जेक्ट के इंफॉर्मेशनेशन को या उसके डेटा को या उसके",
+      "source": "transcript_api",
+      "english_text": "So he did not come. Some of our output came. What was the output? See null printed instead of S1 dot name. In place of age and roll number, zero is zero and in place of college, tap again. Now what does this mean? See, this is what we call default values. Ok? What are the default values? Let's discuss a little about this. First of all let's go back to our class. I said that all the variables we declare in our class, what do they represent? It represents the information or data of a real life object or its"
+    },
+    {
+      "start_time": 159.04,
+      "end_time": 193.36,
+      "text": "कैरेक्टरिस्टिक्स को। हम कुछ भी बोल सकते हैं। है ना? अगर हम यहां पे कुछ फंक्शनंस बनाएं। ठीक है? फॉर एग्जांपल वॉइड मार्क अटेंडेंस मैंने एक फंक्शन बनाया वॉइड मार्क अटेंडेंस जो किसी स्टूडेंट की अटेंडेंस को मार्क करता होगा और लेट्स से यहां कुछ नहीं होता होगा सिंपल सिस्टम डॉट आउट डॉट प्रिंट एलr हम करते होंगे अटेंडेंस मार्क्ड फॉर स्टूडेंट और जो भी स्टूडेंट का नाम है कहेगा लेट्स से नेम कुछ इस तरीके से है ना ये होता होगा अब ये जो हम फंक्शनंस एक क्लास के अंदर लिखते हैं इसको हम क्या कहते हैं कि रियल लाइफ",
+      "source": "transcript_api",
+      "english_text": "To the characteristics. We can say anything. Isn't it? If we create some functions here. Ok? For example void mark attendance, I created a function void mark attendance which would mark the attendance of a student and let's would do nothing here. Simple system dot out dot print lr. We would do attendance marked for student and whatever is the name of the student would say let's say name. Is it something like this? Now this is what we write in the functions inside a class, what do we call it in real life."
+    },
+    {
+      "start_time": 192.0,
+      "end_time": 225.519,
+      "text": "ऑब्जेक्ट में ये रिप्रेजेंट करते हैं किसी के बिहेवियर्स ये सब तो हमने पिछले लेक्चर में पढ़ा ही था। अब मैं एक चीज बोलता हूं। किसी भी क्लास में ये जो हमारे इंस्ट ये जो हमारे वेरिएबल्स होते हैं जो इंफॉर्मेशनेशन या कैरेक्टरिस्टिक्स को रिप्रेजेंट करते हैं इनको हम एक दूसरे नाम से जानते हैं जिसको हम बोलते हैं इंस्टेंस वेरिएबल्स। और ये जो मेथड्स होते हैं जो बिहेवियर्स होते हैं जो फंक्शनंस को रिप्रेजेंट करते हैं। फंक्शनंस को रिप्रेजेंट करते हैं। इनको हम बोलते हैं इंस्टेंस मेथड्स। ठीक है? तो बेसिकली जो",
+      "source": "transcript_api",
+      "english_text": "These represent someone's behavior in the object, we had already read all this in the last lecture. Now let me say one thing. In any class, these are our instances, these are our variables which represent information or characteristics, we know them by another name which we call instance variables. And these are methods which are behaviors which represent functions. Represent functions. We call these instance methods. Ok? so basically which"
+    },
+    {
+      "start_time": 222.56,
+      "end_time": 257.12,
+      "text": "भी फंक्शन हम एक क्लास के अंदर लिखेंगे उसको हम इंस्टेंस मेथड्स या फिर सिर्फ मेथड्स भी कह सकते हैं। हमने ये इसलिए पढ़ा क्योंकि याद करो 1 मिनट मैं क्या करता हूं? इन सबको एक बार के लिए कमेंट कर देता हूं। मान लो हमने कोई स्टूडेंट नाम का ऑब्जेक्ट बनाया ही नहीं। हमारा मेन अभी तक खाली पड़ा है। ठीक है? और अभी तक जैसे हम कोड लिखते थे। हम यहां पे कुछ वेरिएबल डिक्लअर करते थे। जैसे इंट x = 4 मान लो मैंने ये वेरिएबल डिक्लेअर किया। अब आपको क्या लगता है ये जो x है ये कौन सा वेरिएबल है? इस केस में हम इसको बोलते हैं एक लोकल वेरिएबल। यहां पे हमने इसको बोला",
+      "source": "transcript_api",
+      "english_text": "We will write any function inside a class, we can call it instance methods or just methods. We read this because remember what do I do in 1 minute? Let me comment on all these once. Suppose we have not created any object named Student. Our main is still empty. Ok? And yet just like we used to write code. We used to declare some variables here. Like int x = 4. Suppose I declared this variable. Now what do you think is this variable which is x? In this case we call it a local variable. Here we called it"
+    },
+    {
+      "start_time": 255.439,
+      "end_time": 282.08,
+      "text": "था इंस्टेंस वेरिएबल। यहां पे हम इसको बोल रहे हैं एक लोकल वेरिएबल। अच्छा लोकल क्यों? हमने याद है इसकी बात की थी कि ये जो वेरिएबल है ना x इसका स्कोप कब तक है? जब तक इस मेन फंक्शन का स्कोप है। राइट? जैसे ही ये मेन फंक्शन खत्म हुआ हमारे x का स्कोप खत्म हो गया। है ना? अब एक और चीज ये जो हमारा x है ये क्या है? ये प्रिमिटिव डेटा टाइप है क्योंकि एक इंटीजर है। ठीक है? तो ये जो हमारा x है ना ये कौन सी मेमोरी में जाकर के स्टोर होगा?",
+      "source": "transcript_api",
+      "english_text": "Was instance variable. Here we are calling it a local variable. Well why local? Remember we talked about how long is the scope of this variable x? As long as this main function has scope. Right? As soon as this main function ends, the scope of our x ends. Isn't it? Now one more thing, what is our x? It is a primitive data type because it is an integer. Ok? So, in which memory will this x of ours be stored?"
+    },
+    {
+      "start_time": 280.479,
+      "end_time": 313.52,
+      "text": "हमारी स्टक मेमोरी में जाकर के स्टोर होगा। और इसका स्कोप कब खत्म हो जाएगा? जैसे ही हमारे इस अ मेन का स्कोप खत्म हो जाएगा। ठीक है? तो हमने बोला x हमारा एक है लोकल वेरिएबल। अब होता क्या है कि जब भी आप इंस्टेंस वेरिएबल्स बनाते हो मतलब कोई भी एक ऐसी क्लास बनाते हो जिसके अंदर वेरिएबल्स हैं। जब आप ऑब्जेक्ट बनाओगे हमारे स्टूडेंट क्लास का यूजिंग न्यू कीवर्ड तो आपको पता है कि हमारा ऑब्जेक्ट कहां बनेगा? हिप मेमोरी के अंदर। यानी कि इस ऑब्जेक्ट के अंदर जितने भी हमारे इंस्टेंस वेरिएबल्स हैं ये सब भी कहां होंगे? हिपप मेमोरी के अंदर। राइट? तो",
+      "source": "transcript_api",
+      "english_text": "It will be stored in our stock memory. And when will its scope end? As soon as the scope of this main of ours ends. Ok? So we said x is our local variable. Now what happens is that whenever you create instance variables, that is, you create any class which has variables inside it. When you create an object using the new keyword of our Student class, do you know where our object will be created? Inside Hip Memory. That means, where will all our instance variables be inside this object? Inside hipp memory. Right? so"
+    },
+    {
+      "start_time": 311.52,
+      "end_time": 342.32,
+      "text": "क्योंकि ये सब हीप मेमोरी के अंदर हैं। और एक ऑब्जेक्ट का पार्ट हैं। इनको हम बोलते हैं इंस्टेंस वेरिएबल्स। और दूसरी चीज इनके पास होती है डिफॉल्ट वैल्यूज़। क्या होती हैं? डिफॉल्ट वैल्यूज़। अच्छा डिफॉल्ट वैल्यूज़ ये होती हैं कि बेसिकली अगर हमने इस तरह से कोई इनको वैल्यूज़ असाइन नहीं की। जैसे मैंने यहां पे S1 नेम, एज, रोल नंबर और कॉलेज सीधा प्रिंट करने की कोशिश की। कोई वैल्यूज़ असाइन नहीं की। तो ऐसी क्या वैल्यूज़ इनको बाय डिफ़ॉल्ट मिल जाएं?",
+      "source": "transcript_api",
+      "english_text": "Because all these are inside heap memory. And are part of an object. We call these instance variables. And the second thing is that they have default values. What are they? Default Values. Well the default values ​​are that basically if we have not assigned any values ​​to them like this. Like I tried to print S1 Name, Age, Roll Number and College directly here. No values ​​assigned. So what values ​​should they get by default?"
+    },
+    {
+      "start_time": 338.8,
+      "end_time": 370.96,
+      "text": "वो होती है डिफ़ॉल्ट वैल्यूज़। अब हर डेटा टाइप के लिए डिफ़ॉल्ट वैल्यू अलग होती है। तो अगर आपका डेटा टाइप इंटीजर है, इसको मैं यहां ना लिख करके एक काम करते हैं। इसको यहां लिखते हैं। ठीक है? तो अगर देखो आपका डेटा टाइप है इंटीजर, तो आपकी डिफ़ॉल्ट वैल्यू हमेशा होगी ज़ीरो। ठीक है? ऐसे ही अगर आपका डेटा टाइप है फ्लोटिंग पॉइंट नंबर्स, तो आपकी डिफ़ॉल्ट वैल्यू होगी 0.0। और उसी तरीके से अगर आपका डेटा टाइप है एक बुलियन। ठीक है? तो, आपकी डिफ़ॉल्ट वैल्यूज़ हो जाएगी फॉल्स। और जो",
+      "source": "transcript_api",
+      "english_text": "Those are the default values. Now the default value is different for each data type. So if your data type is integer, let me do one thing by not writing it here. Let's write this here. Ok? So if your data type is integer, then your default value will always be zero. Ok? Similarly, if your data type is floating point numbers, then your default value will be 0.0. And in the same way if your data type is a boolean. Ok? So, your default values ​​will be false. and which"
+    },
+    {
+      "start_time": 368.24,
+      "end_time": 401.039,
+      "text": "हमारे स्ट्रिंग होते हैं उस केस में हमने इनको दे दिया नल। अब कई लोगों ने पहली बार सुना होगा नल क्या होता है? क्योंकि अभी तक हमने नल को इंट्रोड्यूस नहीं किया। नल कुछ नहीं होता। जब भी आप एक ऑब्जेक्ट को एक अ डिफॉल्ट वैल्यू देते हो तो आप उसे देते हो नल। नल का मतलब होता है नथिंग। अगर आप इसको सिंपल इंग्लिश में समझो। तो नल का मतलब क्या होता है? नथिंग। कोई वैल्यू नहीं। नथिंग। ठीक है? अब हम इसको ज़ीरो नहीं बोल सकते क्योंकि एक स्ट्रिंग है। स्ट्रिंग को आप ज़ीरो वैल्यू तो दे नहीं सकते। ठीक है? हम इसको एक एम्प्टी स्ट्रिंग जरूर दे सकते थे खाली। पर हम",
+      "source": "transcript_api",
+      "english_text": "We have strings, in that case we have given them null. Now many people might have heard for the first time what is a tap? Because we have not introduced the tap yet. Tap does nothing. Whenever you give an object a default value, you give it null. Nal means nothing. If you understand it in simple English. So what does tap mean? nothing. No value. nothing. Ok? Now we can't call it zero because it's a string. You cannot give zero value to a string. Ok? We could definitely give it an empty string. but we"
+    },
+    {
+      "start_time": 398.96,
+      "end_time": 433.52,
+      "text": "जावा में इसको क्या प्रेफर करते हैं? देना नल वैल्यूज़। तो जावा में जब भी आप कोई ऑब्जेक्ट डिक्लेअ करते हो और उस ऑब्जेक्ट का जो रेफरेंस वेरिएबल होता है ना उसकी वैल्यूज़ हम देते हैं नल। तो इसका मतलब हमने पहले भी पढ़ा था जो हमारा स्ट्रिंग है वो एक नॉर्मल डेटा टाइप नहीं है। वो प्रिमिटिव नहीं है। वो एक नॉन प्रिमिटिव डेटा टाइप है। और अगर नॉन प्रिमिटिव है तो इसका मतलब क्या हुआ? ये क्लासेस एंड ऑब्जेक्ट्स का पार्ट है। है ना? स्ट्रिंग एक क्लास होगी। उसके हम ऑब्जेक्ट्स बनाते होंगे। ठीक है? तो जैसे हमने लिखा स्ट्रिंग कॉलेज। तो कॉलेज क्या होगा? एक रेफरेंस वेरिएबल होगा। अब क्योंकि ये जो कॉलेज है ये स्ट्रिंग का एक रेफरेंस वेरिएबल होगा। और इस रेफरेंस वेरिएबल में",
+      "source": "transcript_api",
+      "english_text": "What is this preferred in Java? Give null values. So in Java, whenever you declare an object and the reference variable of that object, we give its value as NULL. So this means that we read earlier that our string is not a normal data type. That is not primitive. It is a non-primitive data type. And if it is non-primitive then what does it mean? This is part of Classes and Objects. Isn't it? String will be a class. We will be making objects out of it. Ok? So like we wrote string college. So what about college? There will be a reference variable. Now because this is college, it will be a reference variable of the string. And in this reference variable"
+    },
+    {
+      "start_time": 431.84,
+      "end_time": 465.68,
+      "text": "हमने कुछ नहीं डाला। हमने ऊपर लिखा ही नहीं। s1 डॉट कॉलेज इक्वल टू सम वैल्यू। राइट? तो इसका मतलब उसमें बाय डिफॉल्ट क्या स्टोर हो गया? नल स्टोर हो गया। ठीक है? तो आपको याद रखना है जितने भी हमारे नॉन प्रिमिटिव डेटा टाइप्स हैं जो रेफरेंस वेरिएबल्स होते हैं उसमें हमारी डिफॉल्ट वैल्यू नल होती है। और अगर बाकी आप प्रिमिटिव्स की बात करो तो इंटीजर के केस में है वो ज़ीरो, फ्लोटिंग 0.0, बुलियन, फॉल्स एंड सो ऑन। ठीक है? ओके। अच्छा ये तो भैया समझ गए। इसके बाद आता है एक इंपॉर्टेंट क्वेश्चन। व्हाट इफ मैं इस लोकल वेरिएबल को सिर्फ डिक्लेअ करूं। ठीक",
+      "source": "transcript_api",
+      "english_text": "We didn't put anything. We did not write above. s1 dot col equal to sum value. Right? So what does this mean, what is stored in it by default? The tap is stored. Ok? So you have to remember that in all our non-primitive data types which are reference variables, our default value is null. And if you talk about primitives then in case of integers they are zero, floating 0.0, boolean, false and so on. Ok? Ok. Okay brother, I understood this. After this comes an important question. What if I just declare this local variable. okay"
+    },
+    {
+      "start_time": 463.12,
+      "end_time": 495.759,
+      "text": "है? और फिर कोशिश करूं इसको प्रिंट करने की। सिस्टम डॉट आउट डॉट प्रिंट एलn और मैं प्रिंट करने की कोशिश करूं x। तो मेरा क्या होगा? देखो मेरे को सीधा कंपाइलर एरर आ गया जो कहता है द लोकल वेरिएबल x मे नॉट हैव बीन इनिशियलाइज़्ड। इसका मतलब ये कि जो लोकल वेरिएबल होता है उसकी डिफॉल्ट वैल्यूस नहीं होती। नो डिफॉल्ट वैल्यूज़। ठीक है? पर ऐसा क्यों भैया? कि लोकल वेरिएबल के पास डिफॉल्ट वैल्यूज़ नहीं है। लेकिन जो हमारे इंस्टेंस वेरिएबल है इनके पास डिफ़ॉल्ट वैल्यू है।",
+      "source": "transcript_api",
+      "english_text": "Is it? And then try to print it. System dot out dot print l n and I try to print x. So what will happen to me? Look, I just got a compiler error that says the local variable x may not have been initialized. This means that the local variable does not have a default value. No default values. Ok? But why so brother? That local variables do not have default values. But our instance variables have default values."
+    },
+    {
+      "start_time": 493.919,
+      "end_time": 528.0,
+      "text": "हमें तो बस यही फर्क पता है कि जो इंस्टेंस वेरिएबल है हिप्स में डिक्लेअर होते हैं। और ये जो लोकल वेरिएबल है ये आपकी स्टक मेमोरी में आते हैं। तो क्यों ऐसा कि ये भेदभाव क्यों? देखो सिंपल सी बात है। Java कोई भी चीज़ करता है तो इसीलिए करेगा ना कि वह अपनी लैंग्वेज को कैसे ऑप्टिमाइज़्ड रख सकता है। अब क्योंकि जो वेरिएबल आप हिप में डिक्लेअर करते हो देयर इज़ अ वेरी हाई चांस वो ज्यादा टाइम तक वहां पड़ा रहे। राइट? क्योंकि आपने एक ऑब्जेक्ट बनाया तो बहुत हाई चांस है कि आप उस ऑब्जेक्ट को बार-बार यूज़ करो। पर ये जो लोकल वेरिएबल्स होते हैं जैसे कि x इसका स्कोप तो तभी खत्म हो जाएगा जब हमारे इस",
+      "source": "transcript_api",
+      "english_text": "The only difference we know is that the instance variables are declared in HIPS. And these local variables come in your stuck memory. So why this discrimination? Look, it's a simple thing. If Java does anything, it will do it not because of how it can keep its language optimized. Now because the variable you declare in hip there is a very high chance that it will remain there for a long time. Right? Because you have created an object, there is a very high chance that you will use that object again and again. But these local variables like x will lose their scope only when our"
+    },
+    {
+      "start_time": 526.24,
+      "end_time": 560.8,
+      "text": "फंक्शन का स्कोप खत्म हो जाएगा। पर आप बोलोगे भैया ये तो मेन फंक्शन है। मेन फंक्शन तो हर चीज तो मेन में ही लिखते हैं। तो मेन का स्कोप तो बहुत टाइम तक चलेगा। बिल्कुल। पर मेन भी तो है तो एक फंक्शन ही ना। उसने मेन के लिए एक अलग रूल नहीं बनाया। पर लेट्स से यहां पे आपको एक अलग फंक्शन बनाते। लेट्स से वॉइड अ फन मैंने फंक्शन के नाम फन नाम से एक फंक्शन बना दिया। और यहां पे मैं एक वेरिएबल डिक्लेअर करता इंट x। तो इसका स्कोप तो सिर्फ तभी खत्म हो जाता जब ये फन का स्कोप खत्म हो जाता। तो जावा ऐसा मानता है क्योंकि ये एक लोकल वेरिएबल है। एक फंक्शन के अंदर होने वाला वेरिएबल है और इसका स्कोप बहुत लिमिटेड है। तो मुझे इसे डिफॉल्ट वैल्यूज़ देने की जरूरत नहीं है।",
+      "source": "transcript_api",
+      "english_text": "The scope of the function will be lost. But you will say brother, this is the main function. Main Function: Everything is written in main only. So the main scope will last for a long time. Absolutely. But main is also a function after all. He did not make a separate rule for Main. But let us create a different function here. Let's Void a Fun I created a function called fun. And here I declare a variable int x. So its scope ends only when the scope of fun ends. So Java believes this because it is a local variable. It is a variable inside a function and its scope is very limited. So I don't need to give it default values."
+    },
+    {
+      "start_time": 559.04,
+      "end_time": 586.959,
+      "text": "अपनी जावा की लैंग्वेज को फर्दर ऑप्टिमाइज्ड रखने के लिए। मैं इसमें कोई डिफ़ॉल्ट वैल्यू नहीं देता और मैं ये मैंडेटरी कर देता हूं कि अगर आप इस वेरिएबल को यूज़ करना चाहते हो तो पहले उसमें खुद से कोई वैल्यू दो। राइट? देखो तभी हमारे को ये एरर आता है। द लोकल वेरिएबल x मे नॉट हैव बीन इनिशियलाइज़्ड। ठीक है? तो आई होप आपको समझ आया होगा कि भ हमारे पास जो इंस्टेंस वेरिएबल होते हैं उनकी एक डिफॉल्ट वैल्यू्यूज होती हैं और हमारे लोकल वेरिएबल्स की डिफॉल्ट वैल्यू्यूज नहीं होती। ओके बहुत बढ़िया।",
+      "source": "transcript_api",
+      "english_text": "To keep your Java language further optimized. I do not give any default value in it and I make it mandatory that if you want to use this variable, then first give a value to it yourself. Right? Look, that's why we get this error. The local variable x may not have been initialized. Ok? So I hope you have understood that the instance variables that we have have default values ​​and our local variables do not have default values. Okay, great."
+    },
+    {
+      "start_time": 584.72,
+      "end_time": 618.399,
+      "text": "तो मैं क्या करता हूं इन सबको अभी के लिए कमेंट कर देता हूं। इसके सॉरी हां कमेंट करता हूं। इसकी हमें जरूरत नहीं है। पर हमें इसकी जरूरत है। ठीक है? और इसकी भी जरूरत है। ओके? तो मैंने आपको बोल दिया कि भई डिफॉल्ट वैल्यू्यूज क्या होती है? पर अभी डिफॉल्ट वैल्यू्यूज को थोड़े टाइम के लिए साइड रखते हैं। इसको हम हटाते हैं। और मैं लेट से सच में इसमें वैल्यू्यूज देना चाहता हूं। तो मैं कैसे देता? मैं कुछ ऐसे देता। s1 डॉट नेम इक्वल टू आदित्य। ठीक है? एक वैल्यू हो गई। s1 ऐज = 28 दूसरी",
+      "source": "transcript_api",
+      "english_text": "So what I do is comment all this for now. Sorry, yes I comment. We don't need this. But we need it. Ok? And this is also needed. Ok? So I told you, what are the default values? But let's keep the default values ​​aside for a while. We remove this. And I really want to put values ​​into it as of late. So how do I give? I would have given something like this. s1 dot name equal to aditya. Ok? A value is created. s1 edge = 28 second"
+    },
+    {
+      "start_time": 614.399,
+      "end_time": 648.399,
+      "text": "वैल्यू हो गई। s1 डॉट कंट्रोल नंबर = 1001 लेट्स से और s1 डॉट कॉलेज कॉलेज रह गया था। तो ये भी देते हैं आईआईटी गुवाहाटी। ठीक है? बहुत बढ़िया। तो मैंने इनकी वैल्यू्यूज दे दी। अब अगर मैं इनको प्रिंट करूंगा तो मेरी देखो सही वैल्यू्यूज प्रिंट हो जानी चाहिए जो कि हो भी रही है। मैंने पहले भी देखा था। अब मेरा क्वेश्चन ये है कि जब भी मैं एक ऑब्जेक्ट डिक्लेअ करता हूं और उनकी अगर मैं डिफॉल्ट वैल्यू्यूज नहीं चाहता, मैं सच में कुछ वैल्यू्यूज देना चाहता हूं तो मुझे ये प्रोसीजर करना पड़ता है फॉलो। है ना? S1 के अंदर जाकर के जो भी वेरिएबल्स हैं उन",
+      "source": "transcript_api",
+      "english_text": "Value is done. s1 dot control number = 1001 from lets and s1 dot college was left as college. So these are also given by IIT Guwahati. Ok? very nice. So I gave their values. Now if I print these, then I see the correct values ​​should be printed, which is happening. I had seen it before also. Now my question is that whenever I declare an object and if I don't want their default values, I actually want to give some values ​​then I have to follow this procedure. Isn't it? Whatever variables are inside S1"
+    },
+    {
+      "start_time": 646.24,
+      "end_time": 680.8,
+      "text": "सबको एक वैल्यू देनी पड़ती है। बट तुम्हें लगता है ये बहुत टीडीियस प्रोसेस है। ठीक है? मैं एक-एक करके हर वेरिएबल को एक वैल्यू असाइन कर रहा हूं। क्या हो मैं एक वेरिएबल के बारे में भूल जाऊं? अब ये तो मैंने खुद बनाया था। तो मुझे पता था नेम, एज, रोल नंबर, कॉलेज चार चीजें हैं। पर लेट्स से किसी ने और ने बना के मुझे दिया होता और मैं भूल जाता कि इसमें नेम, एज, रोल नंबर, कॉलेज के अलावा सॉरी कॉलेज के अलावा लेट्स से एक और चीज़ है ग्रेड्स। मैं उसको असाइन करना भूल जाता। अगर मैं भूल जाता उसमें डिफ़ॉल्ट वैल्यू चली जाती पर मैं वो चाहता नहीं था। है ना? तो मुझे बार-बार एक स्टूडेंट को जैसे ही मैंने डिक्लेअ किया, मुझे उसकी सारी वैल्यूज़ को एक-एक करके देना पड़ा। है ना? क्या हो? अगर",
+      "source": "transcript_api",
+      "english_text": "Everyone has to give a value. But you think this is a very tedious process. Ok? I am assigning a value to each variable one by one. What if I forget about a variable? Now I made this myself. So I knew there are four things: Name, Age, Roll Number, College. But someone else would have prepared and given it to me from LETS and I would have forgotten that apart from name, age, roll number, college, sorry college, there is one more thing from LETS, grades. I would forget to assign it. If I had forgotten, it would have gone to its default value but I didn't want that. Isn't it? So again and again as soon as I declared a student, I had to give all his values ​​one by one. Isn't it? what are you? if"
+    },
+    {
+      "start_time": 678.8,
+      "end_time": 712.959,
+      "text": "जब ये ऑब्जेक्ट क्रिएट हो रहा है, जब ये ऑब्जेक्ट अपने आप क्रिएट हो रहा है, यूजिंग दिस लाइन, अपने आप मैं उसमें कुछ वैल्यूज़ डाल सकूं। है ना? इसी टॉपिक को हम कहते हैं कंस्ट्रक्टर्स जो हमारे आज के टॉपिक का भी नाम है। कंस्ट्रक्टर्स का मतलब कुछ नहीं होता। इसका मतलब होता है टू क्रिएट एन ऑब्जेक्ट। ठीक है? आप एक ऑब्जेक्ट को कंस्ट्रक्ट करते हो और जब आप उसे कंस्ट्रक्ट कर रहे होते हो, आप उसमें कुछ वैल्यूज़ डाल देते हो। अच्छा वो हम कैसे डालते हैं? चलो अब वो देखते हैं। तो सबसे पहले इसको आईपैड पे जा के देखते हैं और फिर इसको यहां पे समझेंगे कोड में। हां जी। तो हम बात करने वाले हैं जावा में",
+      "source": "transcript_api",
+      "english_text": "When this object is being created, when this object is being created automatically, using this line, I can automatically put some values in it. Isn't it? We call this topic Constructors which is also the name of our today's topic. Constructors mean nothing. It means to create an object. Ok? You construct an object and when you're constructing it, you put some values ​​into it. Well, how do we put that? Let's see that now. So first of all let's see it on iPad and then we will understand it here in code. Yes sir. So we are going to talk in Java"
+    },
+    {
+      "start_time": 710.8,
+      "end_time": 745.12,
+      "text": "कंस्ट्रक्टर्स की। ठीक है? तो सबसे पहले मैं क्या करता हूं? मैं अपनी एक क्लास स्टूडेंट जो थी उसी को दोबारा से बना लेता हूं। ठीक है? उसमें मेरे पास क्या-क्या था? बेसिक-बेसिक चीजें रख लेते हैं। हमारे पास था नेम, हमारे पास थी ऐज, हमारे पास था रोल नंबर और हमारे पास था कॉलेज और फिर हमारे पास ये क्लास खत्म हो जाती थी। ठीक है? मैंने थोड़ी सी जगह छोड़ी है। अभी उसमें हम चीजें भरेंगे। मैं बताऊंगा क्या। ठीक है? तो ये हमारे पास हमारी क्लास होती थी। ठीक है? अब मैंने आपको कहा कि जब भी मैं इस क्लास का ऑब्जेक्ट बनाने लगता था ना जब भी मैं इस क्लास का",
+      "source": "transcript_api",
+      "english_text": "Of constructors. Ok? So what's the first thing I do? I recreate one of my class students. Ok? What did I have in it? Keep the basic things. We had the name, we had the age, we had the roll number and we had the college and then this class used to end. Ok? I have left a little space. Now we will fill things in it. What will I tell you? Ok? So we had this as our class. Ok? Now I told you that whenever I started creating an object of this class, whenever I started creating an object of this class,"
+    },
+    {
+      "start_time": 742.959,
+      "end_time": 776.88,
+      "text": "ऑब्जेक्ट बनाता था मुझे ये लाइन लिखनी पड़ती थी स्टूडेंट s1 = न्यू स्टूडेंट बहुत बढ़िया अब फिर अगर मुझे इन वैल्यूस को बेसिकली इन वेरिएबल्स को कुछ वैल्यू्यूज देनी है तो मेरे को क्या करना पड़ता था s1 डॉट नेम s1 डॉट एज है ना कुछ इस तरीके से सिंटेक्स लिखना पड़ता था और मैंने कहा यहां पे काम आते हैं हमारे कंस्ट्रक्टर्स जो क्या करते हैं एक ऑब्जेक्ट के क्रिएशन के टाइम पे ही उसको कुछ वैल्यू्यूज दे देते हैं। अब वो कैसे करते होंगे? देखो सबसे पहले इसका सिंटेक्स समझो। हम सबसे पहले कंस्ट्रक्टर कहां",
+      "source": "transcript_api",
+      "english_text": "ऑब्जेक्ट बनाता था मुझे ये लाइन लिखनी पड़ती थी स्टूडेंट s1 = न्यू स्टूडेंट बहुत बढ़िया अब फिर अगर मुझे इन वैल्यूस को बेसिकली इन वेरिएबल्स को कुछ वैल्यू्यूज देनी है तो मेरे को क्या करना पड़ता था s1 डॉट नेम s1 डॉट एज है ना कुछ इस तरीके से सिंटेक्स लिखना पड़ता था और मैंने कहा यहां पे काम आते हैं हमारे कंस्ट्रक्टर्स जो क्या करते हैं एक ऑब्जेक्ट के क्रिएशन के टाइम पे ही उसको कुछ वैल्यू्यूज दे देते हैं। अब वो कैसे करते होंगे? देखो सबसे पहले इसका सिंटेक्स समझो। हम सबसे पहले कंस्ट्रक्टर कहां"
+    },
+    {
+      "start_time": 775.12,
+      "end_time": 808.48,
+      "text": "बनाएंगे? हम यहीं पे बनाएंगे। ठीक है? कंस्ट्रक्टर ना आपको बिल्कुल एक फंक्शन की तरह दिखेगा। एक मेथड की तरह दिखेगा। पर उसके कुछ रूल्स हैं। ठीक है? कंस्ट्रक्टर के रूल्स क्या हैं? चलो पहले वो भी डिस्कस कर लेते हैं ताकि आपको कंस्ट्रक्टर बनाने में बहुत आसानी हो। ठीक है? रूल्स ऑफ कंस्ट्रक्टर। ठीक है? ये इसके बेसिक-बेसिक रूल्स हैं जो मैं यहां लिख रहा हूं। ठीक है? सबसे पहला कंस्ट्रक्टर का जो नाम है जो भी हम कंस्ट्रक्टर का नाम रखेंगे वो एकदम सेम होगा जो हमारी क्लास का नाम है। ठीक है? तो सेम नेम",
+      "source": "transcript_api",
+      "english_text": "Will you make it? We will make it here. Ok? The constructor will look exactly like a function. Will look like a method. But it has some rules. Ok? What are the rules of the constructor? Let us discuss that first so that it becomes easier for you to create the constructor. Ok? Rules of Constructor. Ok? These are its basic-basic rules which I am writing here. Ok? First of all, the name of the constructor, whatever we name the constructor, it will be exactly the same as the name of our class. Ok? so same name"
+    },
+    {
+      "start_time": 805.92,
+      "end_time": 836.399,
+      "text": "एस क्लास ये आपको याद रखना है। ठीक है? मैं बताऊंगा अभी वो सब क्यों। ठीक है? दूसरा कंस्ट्रक्टर का क्योंकि मैंने कहा था ना वो एक मेथड है। तो वो है तो मेथड पर वो एक स्पेशल तरह का मेथड है। स्पेशल तरह का फंक्शन है। तो उसका कुछ रिटर्न टाइप नहीं होता। नो रिटर्न टाइप। अब कोई रिटर्न टाइप नहीं होता। इसका मतलब वॉइड होता होगा। नहीं नॉट इवन वॉइड। ठीक है? इसका रिटन टाइप वॉइड भी नहीं होता। हम इसको बस खाली छोड़ देते हैं। अगेन वो भी मैं बताऊंगा क्यों? ठीक है? तीसरा ये जो कंस्ट्रक्टर है ना ये ऑटोमेटिकली कॉल हो",
+      "source": "transcript_api",
+      "english_text": "You have to remember this S Class. Ok? Now I will tell you why all that. Ok? Second is the constructor because as I said it is a method. So that is a method but it is a special kind of method. It is a special kind of function. So there is no return type. No return type. Now there is no return type. This must mean void. No not even void. Ok? Its return type is also not void. We just leave it blank. Again I will tell you why? Ok? Third, this constructor is called automatically."
+    },
+    {
+      "start_time": 834.72,
+      "end_time": 868.48,
+      "text": "जाता है। जैसे ही हम एक ऑब्जेक्ट को डिक्लेअ करते हैं तो ऑटोमेटिकली कॉल्ड ड्यूरिंग ऑब्जेक्ट क्रिएशन। जब हम उस ऑब्जेक्ट को क्रिएट करते हैं। चौथा अब ये बेसिकली हमारे किस काम आता है? ये हमारे काम आता है किसी एक नए ऑब्जेक्ट को इनिशियलाइज करने में। है ना? यूज्ड टू इनिशियलाइज एन ऑब्जेक्ट। राइट? यही तो हम इसके साथ कर रहे थे। और इसका एक पांचवा रूल भी है। अब क्योंकि ये एक मेथड की तरह है।",
+      "source": "transcript_api",
+      "english_text": "Goes. Automatically called during object creation as soon as we declare an object. When we create that object. Fourth, now basically what is this use for us? This is useful for initializing a new object. Isn't it? Used to initialize an object. Right? That's what we were doing with it. And there is also a fifth rule. Now because it is like a method."
+    },
+    {
+      "start_time": 866.0,
+      "end_time": 894.639,
+      "text": "कंस्ट्रक्टर एक मेथड की तरह है। तो इट कैन आल्सो बी ओवरलोडेड। हमने मेथड ओवरलोड की फंक्शन ओवरलोड की बात की हुई है। ठीक है? तो इट कैन आल्सो बी ओवरलोडेड। इसके बारे में भी हम अभी देखेंगे। राइट? तो ये कुछ रूल्स हैं एक कंस्ट्रक्टर के। ठीक है? हम इन सारे रूल्स को फॉलो करते हैं। मैं आपको रूल्स का रीज़न भी दूंगा कि ऐसा क्यों है? इंटरनली हम ऐसा क्यों फॉलो करते हैं। ठीक है? तो सबसे पहले चलते हैं अपनी क्लास की तरफ और अपना एक कंस्ट्रक्टर बना लेते हैं।",
+      "source": "transcript_api",
+      "english_text": "Constructor is like a method. So it can also be overloaded. We have talked about method overloading and function overloading. Ok? So it can also be overloaded. We will see about this also now. Right? So these are some rules of a constructor. Ok? We follow all these rules. I will also give you the reason behind the rules as to why this is so? Why do we follow this internally? Ok? So first of all let's go to our class and create a constructor."
+    },
+    {
+      "start_time": 892.48,
+      "end_time": 926.0,
+      "text": "ओके? तो मैं क्या करूंगा? मैंने क्या कहा था? यहां पे मैं कंस्ट्रक्टर बनाऊंगा। तो सबसे पहले मैंने क्या कहा था कि हमारा जो कंस्ट्रक्टर है वो एक मेथड की तरह है। पर उसका नाम सेम होगा जो हमारी क्लास का नाम है। हमारी क्लास का नाम है स्टूडेंट। तो मैं कंस्ट्रक्टर बनाऊंगा स्टूडेंट। ठीक है? अब मैंने क्योंकि बताया था मेथड की तरह तो ऑब्वियसली इसमें पैरामीटर आते होंगे और इसमें कर्ली ब्रैकेट आता होगा कुछ इस तरीके से है ना अब यहां पे हम कंस्ट किसी भी मेथड का लिखते हैं रिटर्न टाइप पर इसका तो कोई रिटर्न टाइप होता ही नहीं है वॉइड भी नहीं होता तो मैं इसको खाली छोड़ दूंगा तो इसका सिंटेक्स हुआ कुछ ऐसा स्टूडेंट ब्रैकेट और मेरे कर्ली",
+      "source": "transcript_api",
+      "english_text": "ok? so what do i do? What did I say? Here I will create the constructor. So first of all what I said is that our constructor is like a method. But its name will be Same which is the name of our class. The name of our class is Student. So I will create the constructor Student. Ok? Now, because I had told that like a method, it would obviously come with parameters and it would come with curly brackets. Is it something like this? Now here we write the const of any method on the return type. It does not have any return type at all. It is not even void, so I will leave it blank, so its syntax is something like this student bracket and my curly"
+    },
+    {
+      "start_time": 924.16,
+      "end_time": 957.199,
+      "text": "ब्रैकेट स्टार्ट कर्ली ब्रैकेट एंड बीच में आएगा कुछ समथिंग ठीक है डू समथिंग वो मैं अभी बताता हूं क्या ठीक है तो हमने यहां पे कुछ रूल्स फॉलो कर लिए सेम नेम ऐज़ क्लास नो रिटर्न टाइप नॉट इवन वॉइड ठीक है अब आगे चलते हैं ठीक है? अब इसके अंदर आता क्या होगा? ये बहुत इंटरेस्टिंग है। इसके अंदर मैं अपने जितने भी वेरिएबल्स हैं उनको एक वैल्यू प्रोवाइड कर सकता हूं। वो वैल्यूस जो उनको अपने आप मिल जाएगी जब भी एक नया ऑब्जेक्ट क्रिएट होगा। फॉर एग्जांपल मैं लिख सकता हूं जो भी मेरा नेम है उसमें बाय डिफॉल्ट डाल देना आदित्य।",
+      "source": "transcript_api",
+      "english_text": "bracket start curly bracket end something will come in between ok do something I will tell you now ok so we have followed some rules here same name as class no return type not even void ok now let's move ahead ok? Now what will come inside it? This is very interesting. Inside this I can provide a value to all my variables. The values ​​that they will get automatically whenever a new object is created. For example, I can write whatever my name is, by default put it as Aditya."
+    },
+    {
+      "start_time": 955.279,
+      "end_time": 989.44,
+      "text": "क्योंकि अगर मैं कुछ नहीं करूंगा तो उसको ज़ीरो वैल्यू मिलेगी। सॉरी नल वैल्यू मिलेगी। मैं नहीं चाहता नल मिले। मैं चाहता हूं उसको नेम की जगह मिल जाए आदित्य। वैसे ही मैं चाहता हूं ऐज की जगह अपने आप 28 मिल जाए। रोल नंबर अपने आप 1001 हो जाए और लेट्स से कॉलेज अपने आप आईआईटी गुआरटी हो जाए। कुछ मैं ऐसा चाहता हूं। अब जैसे ही मैंने ये कर लिया। जैसे ही मैंने ये बनाया। अब जब मैं इस क्लास का एक ऑब्जेक्ट बनाऊंगा स्टूडेंट s1 = न्यू स्टूडेंट करके और मैं सिस्टम डॉट आउट डॉट प्रिंट एलn s1 डॉट नेम s1 डॉट एज s1 डॉट",
+      "source": "transcript_api",
+      "english_text": "Because if I don't do anything then it will get zero value. Sorry will get null value. I don't want to get taps. I want him to get Aditya in place of Neem. Similarly, I want to get 28 automatically instead of age. The roll number should automatically become 1001 and with LETS the college should automatically become IIT Gurt. Something I want. Now as soon as I did this. As soon as I made this. Now when I create an object of this class Student by doing s1 = new Student and I say system dot out dot print ln s1 dot name s1 dot age s1 dot"
+    },
+    {
+      "start_time": 986.72,
+      "end_time": 1020.959,
+      "text": "रोल नंबर करूंगा तो मुझे ये सारी वैल्यूज़ मिलेंगी। राइट? मुझे क्या मिलेंगी? आदित्य 281 आईआईटी गुवाहाटी यही है हमारा कंस्ट्रक्टर का पूरा का पूरा कांसेप्ट। इसे अभी हम कोड में करके देख लेंगे। पर सबसे इंटरेस्टिंग बात अभी हमें समझनी पड़ेगी कि हमने कहा यहां पे हमारा एक रूल भी लिखा है अ कहां लिखा है? हां ऑटोमेटिकली कॉल्ड ड्यूरिंग ऑब्जेक्ट क्रिएशन। कि जब आप एक ऑब्जेक्ट को क्रिएट कर रहे होगे यूजिंग दिस लाइन स्टूडेंट s1 = न्यू स्टूडेंट। तो मैंने कहा ये जो हमारा कंस्ट्रक्टर है ना ये अपने आप कॉल",
+      "source": "transcript_api",
+      "english_text": "If I do roll number, I will get all these values. Right? What will I get? Aditya 281 IIT Guwahati This is the entire concept of our constructor. We will try this in code now. But the most interesting thing we have to understand now is that we said that one of our rules is also written here, a where is it written? Yes called automatically during object creation. That when you are creating an object using this line Student s1 = New Student. So I said, this is our constructor, it calls itself automatically."
+    },
+    {
+      "start_time": 1019.12,
+      "end_time": 1052.799,
+      "text": "हो जाता है। अपने आप हमें इसे मतलब आप किसी मेथड को कॉल कैसे करते हो? आप उसका नाम लिखते हो जैसे स्टूडेंट। ठीक है? और फिर उसको कॉल करते हो कुछ इस तरीके से। पर हमने तो ऐसा कॉल किया ही नहीं। अरे बिल्कुल किया है। ये तो किया। ये देखो हमने यहां पे देखो क्या लिखा हुआ था? स्टूडेंट और हमारे पैरेंथेसिस और सेमी कॉललन। इसी तरीके से तो हम किसी मेथड को कॉल करते हैं। तो ये जो लाइन है ना कहने वाली ऑटोमेटिकली कॉल्ड ड्यूरिंग ऑब्जेक्ट क्रिएशन। एक्चुअली ये ऑटोमेटिकली कॉल नहीं हो रहा। इसको हम कॉल कर रहे हैं। बस हमें पता नहीं लगता क्योंकि ये हमारे सिंटेक्स",
+      "source": "transcript_api",
+      "english_text": "It gets done. By itself we mean how do you call a method? You write his name like student. Ok? And then you call him in this way. But we did not make such a call. Oh of course I did. Did this. Look what we have written here? Student and our parentheses and semi colons. This is how we call a method. So this is the line that says automatically called during object creation. Actually this call is not happening automatically. We are calling this. We just don't realize it because it's our syntax."
+    },
+    {
+      "start_time": 1049.84,
+      "end_time": 1084.4,
+      "text": "का पार्ट है। हम हमेशा सिंटेक्स में अगर मैं इसको थोड़ा अलग कलर से लिखूं हमेशा सिंटेक्स में ये तो लिखेंगे ही न्यू स्टूडेंट और यहां पे कर्ली ब्रैकेट। है ना? तो अब आपको समझ आ रहा होगा कि भ ठीक है न्यू का काम तो मैं लास्ट लेक्चर में समझ गया था कि डायनेमिकली मेमोरी को एलोकेट करता है हीप मेमोरी में। है ना? अब लेकिन ये हम आगे स्टूडेंट क्यों लिखते हैं? तो अब आपको समझ गया होगा कि हम इसको लिखते हैं अपने कंस्ट्रक्टर को कॉल करने के लिए। तो हमारी क्लास में जो भी कंस्ट्रक्टर बना होगा हम इसे कॉल कर रहे हैं यूजिंग दिस कीवर्ड स्टूडेंट और फिर जो",
+      "source": "transcript_api",
+      "english_text": "Is part of. We will always write this in the syntax, if I write it in a slightly different color, we will always write this in the syntax: new student and curly brackets here. Isn't it? So now you must be understanding that the work of new is fine, I had understood in the last lecture that it dynamically allocates memory in heap memory. Isn't it? Now but why do we write student further? So now you must have understood that we write this to call our constructor. So whatever constructor is created in our class, we are calling it using this keyword student and then which"
+    },
+    {
+      "start_time": 1082.559,
+      "end_time": 1115.84,
+      "text": "भी हमारी क्लास का नाम है और हमारे कर्ली ब्रैकेट। है ना? तो आई होप आपको अब पूरी की पूरी इस लाइन का मतलब अच्छे से समझ आया होगा कि S1 तो हमारा रेफरेंस वेरिएबल है। स्टूडेंट हमारा डेटा टाइप है। हमारा यूजर डिफाइंड डेटा टाइप है और हमारी क्लास का नाम है। न्यू क्या करता है? है मेमोरी एलोकेट करता है डायनेमिकली तो हो क्या रहा होगा कि जैसे आपने लिखा न्यू सबसे पहले जो हमारी हीप मेमोरी है उसमें एक ऑब्जेक्ट की मेमोरी एलोकेट होती है और जब आपने लिखा स्टूडेंट को कॉल किया कंस्ट्रक्टर कॉल किया तो बेसिकली क्या होगा नेम एज रोल नंबर को डिफॉल्ट वैल्यू मिल जाएगी तो लेट्स से यहां पे आ गया आदित्य नेम की जगह",
+      "source": "transcript_api",
+      "english_text": "Also is the name of our class and our curly brackets. Isn't it? So I hope you have now understood the complete meaning of this line that S1 is our reference variable. Student is our data type. is our user defined data type and is the name of our class. What does New do? It allocates memory dynamically, so what might be happening is that as you wrote new, first of all, the memory of an object is allocated in our heap memory and when you wrote, called student, called the constructor, then basically what will happen is name as roll number will get the default value, so let's come here Aditya in place of name."
+    },
+    {
+      "start_time": 1113.28,
+      "end_time": 1146.96,
+      "text": "यहां पे आ गया 28 रोल नंबर की जगह यहां पे आ गया 1001 सॉरी ऐज की जगह 28 आ गया रोल नंबर की जगह 1001 आ गया यहां पे आईआईटी गुवाहाटी आ गया तो इनको डिफॉल्ट वैल्यूज़ मिल गई उसके बाद जब ये वाली लाइन एग्जीक्यूट हो गई फिर हम इसको असाइन किसको कर रहे हैं? S1 को। और S1 आपका होता है स्टक मेमोरी के अंदर। ये हमारी स्टक है। तो यहां पे एक होगा S1 जिसको ये रेफरेंस मिल जाएगा इस पूरे के पूरे ऑब्जेक्ट का। रेफरेंस मतलब इसके स्टार्टिंग का एड्रेस मिल जाएगा। तो अगर 1001 एड्रेस है तो S1 क्या स्टोर करेगा? 1001 और ये हमारी एक मेमोरी थी हीप मेमोरी। ठीक है? तो ये सब",
+      "source": "transcript_api",
+      "english_text": "Here 28 came here instead of roll number. Sorry, 1001 came here instead of age. 28 came here instead of roll number. 1001 came here. IIT Guwahati came here, so they got the default values. After that, when this line is executed, then to whom are we assigning it? To S1. And S1 is your stuck memory. This is our stock. So here there will be one S1 which will get this reference of this entire object. Reference means its starting address will be found. So what will S1 store if address 1001? 1001 And this was one of our memories, heap memory. Ok? so all this"
+    },
+    {
+      "start_time": 1144.88,
+      "end_time": 1179.6,
+      "text": "हमने पहले पढ़ा है। अब आपको अच्छे से इस पूरी लाइन का मतलब समझ आया होगा कि क्या होता है? जब हम लिखते हैं S1 = न्यू स्टूडेंट। ठीक है? चलो बहुत बढ़िया। पर अब यहां पे एक क्वेश्चन आना चाहिए आप लोगों का कि ठीक है भैया यहां पे तो हमने कंस्ट्रक्टर को बनाया है इसलिए हमने ये लाइन लिखी पर अभी तक तो हम इस कंस्ट्रक्टर को क्रिएट ही नहीं कर रहे थे। हम अभी तक की जो हमारी क्लास होती थी अगर मैं इसको दोबारा से कॉपी करूं। ठीक है? तो अभी तक तो जो हमारी क्लास थी उसमें ये वाला कोड तो हम लिखते ही नहीं थे। हम तो बस ये वाला पार्ट लिखते थे। राइट? हमने यहां पे कोई कंस्ट्रक्टर तो बनाया ही नहीं। पर तब भी",
+      "source": "transcript_api",
+      "english_text": "We have read before. Now you must have understood the meaning of this entire line very well, what happens? When we write S1 = New Student. Ok? Okay, that's great. But now a question should come here from you guys that okay brother, here we have created the constructor, that is why we wrote this line but till now we were not creating this constructor. If I copy this again, the class we had till now. Ok? So till now, we did not write this code in our class. We just used to write this part. Right? We have not created any constructor here. but still"
+    },
+    {
+      "start_time": 1177.2,
+      "end_time": 1205.36,
+      "text": "जब हम इस ऑब्जे इसका इस क्लास का एक ऑब्जेक्ट बनाते थे तो हमारा सिंटेक्स क्या होता था? हम तो यही लिखते थे स्टूडेंट s1 = न्यू और यहां पे भी हमारा अगेन यही सिंटेक्स आता था स्टूडेंट और फिर ये पैरेंथेसिस तो इस केस में हम कौन से कंस्ट्रक्टर को कॉल कर रहे हैं? यहां पे तो कंस्ट्रक्टर ही नहीं है। यहां पे कांसेप्ट आता है डिफॉल्ट कंस्ट्रक्टर का।",
+      "source": "transcript_api",
+      "english_text": "What was our syntax when we created an object of this class? We used to write student s1 = new and here again we used to have the same syntax student and then this paranthesis. So which constructor are we calling in this case? There is no constructor here. Here comes the concept of default constructor."
+    },
+    {
+      "start_time": 1203.52,
+      "end_time": 1232.159,
+      "text": "डिफॉल्ट कंस्ट्रक्टर का। डिफॉल्ट कंस्ट्रक्टर क्या होता है भैया? देखो जावा कहती है कि कंस्ट्रक्टर ना मैंडेटरी है। ठीक है? तो जावा क्या कहती है? कंस्ट्रक्टर इज मैंडेटरी। तो या तो तुम खुद बना लो जो कि हमने यहां पे ऊपर बनाया था। ये देखो हमने खुद से कंस्ट्रक्टर बना लिया। पर अगर आप खुद से कंस्ट्रक्टर नहीं बना रहे जो भी अभी तक हमने नहीं बनाया था। तो जावा इनबिल्ट खुद से अपना एक कंस्ट्रक्टर बना देगी जिसको वो बोलेगी डिफॉल्ट कंस्ट्रक्टर। क्या बोलेगी उसको?",
+      "source": "transcript_api",
+      "english_text": "Of default constructor. What is default constructor? Look, Java says that constructor is not mandatory. Ok? So what does Java say? Constructor is mandatory. So either you make it yourself which we have made here above. Look, we have created a constructor by ourselves. But if you are not creating the constructor yourself, which we have not created yet. So Java inbuilt will automatically create its own constructor which it will call default constructor. What will you say to him?"
+    },
+    {
+      "start_time": 1230.0,
+      "end_time": 1263.36,
+      "text": "डिफॉल्ट कंस्ट्रक्टर। वो खुद से बना लेगी डिफॉल्ट कंस्ट्रक्टर। ओके। अच्छा अब डिफॉल्ट कंस्ट्रक्टर कैसा दिखता होगा? तो जैसे ही ये कोड कंपाइल होने जाता होगा जावा पीछे से क्या करती होगी इस क्लास में खुद का एक डिफॉल्ट कंस्ट्रक्टर ऐड कर देती होगी तो वो कुछ ऐसा दिखता होगा कि वो क्या कंस्ट्रक्टर का नाम क्या होगा सबसे पहले जो हमारी क्लास का नाम है फिर पैरेंथेसिस फिर हम इसके ब्रैकेट्स को खोलेंगे ठीक है अब देखो इसके अंदर इसको वैल्यू्यूज क्या दे दी है अब जावा को तो पता नहीं ना कि नेम एज रोल",
+      "source": "transcript_api",
+      "english_text": "Default constructor. It will create its own default constructor. Ok. Well now what would the default constructor look like? So as soon as this code gets compiled, what will Java do from behind, it will add its own default constructor to this class, then it will look something like this, what will be the name of the constructor, first of all which is the name of our class, then the parenthesis, then we will open its brackets. Okay, now see what values have been given to it inside it. Now Java does not know that the name as role."
+    },
+    {
+      "start_time": 1261.039,
+      "end_time": 1293.12,
+      "text": "नंबर और कॉलेज कि आपको नेम में अगर मान लो आदित्य स्टोर करवाना है ऐज में लेट्स से आपको 28 स्टोर कराना है ये तो जावा को नहीं पता या तो या तो खुद से दो है ना जो कि हमने यहां पे देने की कोशिश की। खुद से हमने वैल्यू्यूज दी तो जावा ने कहा ठीक है मुझे समझ आ गया वैल्यूज़ क्या है। अब तुम अगर S1 डॉट नेम प्रिंट करोगे तो मैं आदित्य प्रिंट कर दूंगी। S1 डॉट एज प्रिंट करोगे तो मैं 28 प्रिंट कर दूंगी। अब जावा को पता है। पर यहां पे क्योंकि हमने सीधा स्टूडेंट S1 = न्यू स्टूडेंट लिखा और हमने कोई कंस्ट्रक्टर नहीं बनाया तो जावा ने इनबिल्ट खुद का ये वाला कंस्ट्रक्टर बना दिया। अब जावा इसके अंदर क्या लिखेगा? कुछ",
+      "source": "transcript_api",
+      "english_text": "Suppose you have to store the number and college in your name as Aditya, in Age you have to store 28 in Lets, Java does not know this, either you have to give it yourself, which we have tried to give here. When we gave the values ​​ourselves, Java said, \"Okay, I understand what the values ​​are.\" Now if you print S1 dot name then I will print Aditya. If you print S1 dot edge then I will print 28. Now Java knows. But here, because we directly wrote Student S1 = New Student and we did not create any constructor, Java created its own inbuilt constructor. Now what will Java write inside it? some"
+    },
+    {
+      "start_time": 1290.88,
+      "end_time": 1321.84,
+      "text": "भी नहीं लिखेगा। ये रहेगा एम्प्टी। ठीक है? ये यहां पे एम्प्टी है। यही है हमारा पूरा का पूरा डिफॉल्ट कंस्ट्रक्टर। पर अब भैया क्या होगा? जब मैं s1 डॉट नेम या s1 डॉट एज प्रिंट करने की कोशिश करूंगा। कुछ नहीं होगा। इसके बारे में अभी हमने ऊपर बात की थी। आपकी कौन सी वैल्यू्यूज प्रिंट होगी? डिफॉल्ट वैल्यूज़। डिफॉल्ट वैल्यूज़ प्रिंट होगी इंस्टेंस वेरिएबल्स की। और हमें पता है इंस्टेंस वेरिएबल की डिफ़ॉल्ट वैल्यू क्या होती है? है ना? अगर स्ट्रिंग है तो नल होगी। इंटीजर है तो ज़ीरो होगी।",
+      "source": "transcript_api",
+      "english_text": "Will not even write. This will remain empty. Ok? It is empty here. This is our entire default constructor. But what will happen now brother? When I try to print s1 dot name or s1 dot age. Nothing will happen. We just talked about this above. Which of your values ​​will be printed? Default Values. Default values ​​of instance variables will be printed. And we know what is the default value of instance variable? Isn't it? If string then will be null. If it is an integer then it will be zero."
+    },
+    {
+      "start_time": 1320.24,
+      "end_time": 1345.679,
+      "text": "स्ट्रिंग दोबारा नल होगी। अगर फ्लोटिंग पॉइंट होता तो 0.0 होती। बुलियन होता तो फॉल्स होती। वगैरह-वगैरह। तो हमें सबकी डिफॉल्ट वैल्यू्यूज पता हैं। तो बाय डिफॉल्ट डिफॉल्ट वैल्यू्यूज प्रिंट होंगी। तो ये कंस्ट्रक्टर खुद से बनाता है जावा। जब आप खुद नहीं बनाते। राइट? ओके बहुत बढ़िया। चलो अब थोड़ा सा आगे बढ़ते हैं और अपने कंस्ट्रक्टर में ही एक स्टेप और आगे मूव करते हैं। मैं अगेन क्या करता हूं?",
+      "source": "transcript_api",
+      "english_text": "The string will be null again. If it was floating point it would be 0.0. Had it been bullion it would have been false. And so on. So we know everyone's default values. So by default default values ​​will be printed. So Java creates this constructor by itself. When you don't make it yourself. Right? Okay, great. Now let's go a little further and take it one step further in our constructor itself. What do I do again?"
+    },
+    {
+      "start_time": 1343.039,
+      "end_time": 1377.2,
+      "text": "अपनी इस ही क्लास को कॉपी कर लेता हूं। तो मैंने अगेन सेम क्लास कॉपी कर ली। अभी के लिए मैं क्या करता हूं? मैं इस कंस्ट्रक्टर को हटा देता हूं क्योंकि इसको मैं दोबारा लिखूंगा। ठीक है? ओके। तो मैंने कहा कि भ हम कंस्ट्रक्टर बना सकते हैं और उसमें खुद की कोई डिफॉल्ट वैल्यू्यूज डाल सकते हैं। नेम, एज, रोल नंबर और कॉलेज। पर अभी तक हम जो कर रहे थे ना, हम क्या कर रहे थे? हम यहां पे कंस्ट्रक्टर लिखते थे स्टूडेंट और यहां इसके अंदर डिफॉल्ट वैल्यू डालते थे कि भाई नेम के अंदर डाल दो आदित्य। पर ये तो मैं हार्ड कोड कर रहा हूं ना। मतलब जैसे ही मैंने क्लास बनाई तभी मैंने बता दिया",
+      "source": "transcript_api",
+      "english_text": "I copy this class of mine. So I copied the same class again. What do I do for now? I remove this constructor because I will be rewriting it. Ok? Ok. So I said that we can create a constructor and put our own default values ​​in it. Name, Age, Roll Number and College. But what were we doing till now? Here we used to write the constructor Student and put the default value inside it that brother, put Aditya inside the name. But I am hard coding this. Meaning, as soon as I created the class, I told"
+    },
+    {
+      "start_time": 1375.6,
+      "end_time": 1409.12,
+      "text": "डिफॉल्ट वैल्यू क्या है। है ना? कि नेम में आदित्य डालो। ऐज में 28 डालो वगैरह-वगैरह। पर व्हाट इफ मैं चाहता हूं डायनेमिकली मैं डिसाइड करूं कि इसकी वैल्यू क्या होगी? तो बेसिकली जब मैं इस ऑब्जेक्ट को क्रिएट कर रहा हऊंगा जब मैं ऐसी लाइन लिख रहा होगा स्टूडेंट s1 = न्यू स्टूडेंट यहां पे मैं कहीं किसी तरह बता सकूं कि भ मुझे इन सबकी वैल्यू्यूज को क्या रखना है और एक-एक करके नहीं s1 डॉट एज s1 डॉट नेम ऐसे-ऐसे करके नहीं क्योंकि इसमें तो क्या दिक्कत थी एक तो बहुत ही टीडीएस प्रोसेस था और दूसरा हो",
+      "source": "transcript_api",
+      "english_text": "What is the default value? Isn't it? Put Aditya in the name. Put 28 in age etc. But what if I want to dynamically decide what its value will be? So basically when I am creating this object, when I am writing such a line, student s1 = new student, here I can tell somehow that what should I keep the values of all these and not one by one s1 dot age s1 dot name not like this because what was the problem in this, one was a lot of TDS process and second is"
+    },
+    {
+      "start_time": 1407.2,
+      "end_time": 1439.52,
+      "text": "सकता है मैं कुछ भूल जाऊं है ना तो वो मुझे ना मैंडेटरी भी कर दे कि नहीं जब तक मैं ऑब्जेक्ट को क्रिएट करने ही नहीं दूंगा जब जब तक तुम इन सबकी वैल्यूस को डाल नहीं दोगे। है ना? तो यहां पे हमारे पास एक नया तरह का कंस्ट्रक्टर आता है जिसको हम बोलते हैं पैरामीटराइज्ड कंस्ट्रक्टर। पैरामीटराइज्ड कंस्ट्रक्टर ये वाला कंस्ट्रक्टर। ठीक है? ये जो हमने ऊपर पढ़ा था, ये था आपका डिफॉल्ट कंस्ट्रक्टर जो जावा खुद से बनाता है। यहां पे मैंने लिखा हुआ है। और अब हम जो यहां पे पढ़ रहे हैं, ये है हमारा",
+      "source": "transcript_api",
+      "english_text": "It's possible that I might forget something, so it might make it mandatory for me or not, unless I allow you to create the object unless you enter the values of all these. Isn't it? So here we have a new type of constructor which we call parameterized constructor. Parameterized Constructor This constructor. Ok? What we read above was your default constructor which Java creates itself. I have written here. And now what we are reading here is our"
+    },
+    {
+      "start_time": 1436.88,
+      "end_time": 1470.559,
+      "text": "पैरामीटराइज्ड कंस्ट्रक्टर। ठीक है? ओके? बहुत बढ़िया। तो एक बार पैरामीटराइज कंस्ट्रक्टर को भी देखते हैं। तो मैंने क्या कहा? मैंने सबसे पहले अपनी एक क्लास बना रखी है स्टूडेंट। ठीक है? यहां पर मेरा अभी कोई कंस्ट्रक्टर नहीं है। मैं चाहता हूं कि मैं जब एक ऑब्जेक्ट को डिक्लेअ कर रहा हूं, एक ऑब्जेक्ट को बना रहा हूं, तभी मैं इन सबकी वैल्यूज़ डाल दूं और मुझे सबकी वैल्यूज़ डालना मैंडेटरी हो। जब तक मैं सबकी वैल्यूज़ को असाइन ना करूं, मैं आगे ना बढ़ पाऊं ताकि ऐसा ना हो कि मैं किसी की वैल्यू डालना भूल गया। तो वहां पे आता है पैरामीटराइज़ कंस्ट्रक्टर। कुछ नहीं होता। आप अगेन अपना इसको मैं दोबारा उससे",
+      "source": "transcript_api",
+      "english_text": "Parameterized constructor. Ok? Ok? very nice. So let's also take a look at the parameterized constructor. So what did I say? First of all, I have created a class of mine, Student. Ok? I don't have any constructor here yet. I want that when I am declaring an object or creating an object, then only I should enter the values ​​of all these and it should be mandatory for me to enter the values ​​of all these. I can't move forward unless I assign everyone's values ​​so that I don't forget to assign someone's value. So there comes the parameterized constructor. Nothing happens. You again my this I again her"
+    },
+    {
+      "start_time": 1467.84,
+      "end_time": 1499.12,
+      "text": "बनाता हूं। हां। आप अगेन अपना नॉर्मल कंस्ट्रक्टर बनाते हो। स्टूडेंट जो कि कंस्ट्रक्टर का नाम होगा। ब्रैकेट खोलते हो। अब क्योंकि ये एक फंक्शन है तो आप यहां पे पैराटर्स भी तो ले सकते हो। राइट? जैसे हम नॉर्मल फंक्शनंस में लेते हैं। तो मैं क्या करता हूं? यहां पे कुछ पैराटर्स एक्सपेक्ट करता हूं कि भ आप मुझे दो कुछ स्ट्रिंग। कोई नाम दो। ठीक है? अब मैं इसका नाम का वेरिएबल का नाम अलग रख रहा हूं। ठीक है? क्योंकि यहां पे ऑलरेडी नेम रखा हुआ है। जहां पे मैं स्ट्रिंग n कर रहा हूं सिंपल। ठीक है? यहां इसके अलावा मुझे आप कोई इंट एज दो। a रख लेता हूं।",
+      "source": "transcript_api",
+      "english_text": "I make it. Yes. You again create your normal constructor. Student which will be the name of the constructor. Open the bracket. Now since this is a function, you can also take parameters here. Right? Like we take in normal functions. So what do I do? Here are some parameters I expect you to give me some string. Give a name. Ok? Now I am keeping its name as a separate variable. Ok? Because the name is already there. Where I am doing string n simple. Ok? Apart from this, please give me any int age. I keep a."
+    },
+    {
+      "start_time": 1497.12,
+      "end_time": 1522.88,
+      "text": "मुझे आप कोई इंट लेट्स से रोल नंबर आर एन दो और ऐसे ही आप मुझे इंट कोई कॉलेज सी दो। जब आप यह सब वैल्यू्यूज मुझे दोगे तो मैं क्या करूंगा? मैं कुछ नहीं करूंगा। हमारा जो ये नेम है उसमें एन डाल दूंगा। एज है उसमें ये वाला ए डाल दूंगा। ये वाला और हमारा रोल नंबर है उसमें मैं अपना आर एन डाल दूंगा। ये रोल नंबर को हमने आर एन ओ किया हुआ है ना?",
+      "source": "transcript_api",
+      "english_text": "You give me roll number RN from any int lets and similarly you give me roll number from int any college. What will I do when you give me all these values? I won't do anything. I will put N in this name of ours. There is edge, I will put this 'A' in it. This one is our roll number and I will put my RN in it. We have RNO this roll number, right?"
+    },
+    {
+      "start_time": 1520.48,
+      "end_time": 1554.32,
+      "text": "हां रोल नंबर है तो उसमें आर एन डाल दूंगा। और कॉलेज है उसमें मैं सी डाल दूंगा। कुछ इस तरीके से। तो उसने क्या किया? नेम मतलब ये वाला नेम। इस पे मैं कौन सी वैल्यू डालूंगा? n मतलब ये वाली जो आ रही है। सेम इस तरीके से इसने पूरा कंस्ट्रक्टर डिफाइन कर दिया। अब जब आप इसका ऑब्जेक्ट बनाओगे तो क्या होगा? आप इसका ऑब्जेक्ट ऐसे नहीं बनाओगे। ठीक है? क्योंकि अब आप इसको पैराटर्स पास करने पड़ेंगे। तो मैं इसको दोबारा बना के दिखाता हूं कि अब हम इसका ऑब्जेक्ट कैसे बनाएंगे? देखो, अब हम इसका ऑब्जेक्ट बनाएंगे कुछ इस तरीके से। हम लिखेंगे स्टूडेंट",
+      "source": "transcript_api",
+      "english_text": "Yes, if there is a roll number, I will put RN in it. And if it is college, I will put C in it. Something like this. So what did he do? Name means this name. What value should I put on this? n means this one which is coming. In this manner it defined the entire constructor. Now what will happen when you create its object? You will not make its object like this. Ok? Because now you will have to pass parameters to it. So let me recreate this and show how we will now create its object? Look, now we will create its object like this. we will write student"
+    },
+    {
+      "start_time": 1550.24,
+      "end_time": 1584.88,
+      "text": "s1 = न्यू। यहां मैं अगले लाइन में लिख लेता हूं। स्टूडेंट ये तो हम लिखते हैं। अब हम ब्रैकेट खोलेंगे और यहां पे हम एट्रिब्यूट्स पास करेंगे इस पैरामीटर के। बेसिकली जैसे हम नॉर्मल मेथड कॉल करते थे पैरामीटर्स दे के वैसे हम नॉर्मल मेथड कॉल कर रहे हैं यहां पे कंस्ट्रक्टर कॉल कर रहे हैं पैरामीटर्स अपने एट्रिब्यूट्स दे के। तो मैं लेट्स से पास कर दूंगा यहां से कि भैया मुझे वैल्यू देनी है आदित्य नेम की जगह व लेट्स से 28 ऐज की जगह 1001 रोल नंबर की जगह और आईआईटी गुवाहाटी कॉलेज की जगह। मुझे ये कुछ वैल्यू्यूज देनी है और",
+      "source": "transcript_api",
+      "english_text": "s1 = new. Here I write in the next line. Student, we write this. Now we will open the bracket and here we will pass the attributes of this parameter. Basically like we used to call normal method by giving parameters, similarly we are calling normal method, here we are calling the constructor by giving parameters by giving its attributes. So I will pass from LETS, from here brother, I have to give value in place of Aditya name and in LETS, instead of 28 age, instead of 1001 roll number and IIT Guwahati College. I have to give these values and"
+    },
+    {
+      "start_time": 1582.88,
+      "end_time": 1617.039,
+      "text": "मैंने इसे कॉल कर दिया। तो अब मेरा सिंटेक्स हो गया ये। ठीक है? मैंने क्या किया? मैंने अपने कंस्ट्रक्टर को अपने पैरामीटराइज्ड कंस्ट्रक्टर को उसकी कुछ वैल्यू्यूज दे के कॉल कर दिया। ठीक है? बहुत बढ़िया। ये तो मैंने कर दिया। चलो। अच्छा क्या हो? अगर मैं नहीं चाहता ये सारी वैल्यूज़ देना। मतलब इसी फंक्शन में मैं चाहता हूं। या तो यूजर ये सारी वैल्यूज़ दे भी पाए। जैसे यहां पे नेम, एज, रोल नंबर या कॉलेज या फिर वह नॉर्मली जैसे अभी तक हम अह एक ऑब्जेक्ट क्रिएट कर रहे खाली ऑब्जेक्ट वो भी बना पाए। तो अगर",
+      "source": "transcript_api",
+      "english_text": "I called it. So now this is my syntax. Ok? What did I do? I called my parameterized constructor by giving it some values. Ok? very nice. I did this. Let us go. ok what happen? If I don't want to give all these values. Meaning, this is the function I want. Either the user can give all these values. Like here name, age, roll number or college or normally like till now we are creating an object, we can also create that empty object. so if"
+    },
+    {
+      "start_time": 1614.24,
+      "end_time": 1646.88,
+      "text": "मैंने ऐसे लिखा दोबारा से इसको वाइट से ही लिखते हैं। हां अगली लाइन में लिखा स्टूडेंट। अब मैं एक और ऑब्जेक्ट बनाता हूं। S2 = न्यू स्टूडेंट और इसे खाली छोड़ देता हूं। तो आप देखना आपको यहां पे आ जाएगा कंपाइलर एरर। और वो कंपाइलर एरर इसलिए आएगा वो कहेगा कि भाई आपको यहां पे पैराटर्स देने पड़ेंगे क्योंकि हमारे पास जो अब कंस्ट्रक्टर है उसमें ये सारी वैल्यू्यूज वो एक्सपेक्ट करता है। तो आप यहां पे खाली कॉल ही नहीं कर सकते। पर भैया अभी तो हमने कहा था डिफॉल्ट कंस्ट्रक्टर भी होता है जो जावा खुद से",
+      "source": "transcript_api",
+      "english_text": "I wrote it like this, again let's write it in white. Yes, student is written in the next line. Now I create another object. S2 = New Student and leave it blank. So you see you will get compiler error here. And that compiler error will come because it will say that brother, you will have to give parameters here because the constructor we have now expects all these values. So you cannot make empty calls here. But brother, we just said that there is a default constructor which is created by Java itself."
+    },
+    {
+      "start_time": 1644.32,
+      "end_time": 1673.2,
+      "text": "बना देता है वो तो हमेशा खाली होता है। पर यहां पे रूल ये है कि डिफॉल्ट कंस्ट्रक्टर सिर्फ तभी बनता है जब आप खुद का कोई कंस्ट्रक्टर ना बनाओ। एक बार आपने खुद का कोई भी कंस्ट्रक्टर बना दिया। चाहे खुद डिफॉल्ट बनाया हो चाहे पैरामीटराइज्ड बनाया हो। जावा अपना अंदर से डिफॉल्ट कंस्ट्रक्टर नहीं बनाता। तो अब एक ही कंस्ट्रक्टर है वो है ये वाला पैरामीटराइज्ड कंस्ट्रक्टर। और वो चारों वैल्यू एक्सपेक्ट करता है। पर आप तो देना नहीं चाहते। तो उस केस में आप क्या करोगे?",
+      "source": "transcript_api",
+      "english_text": "It is always empty. But the rule here is that the default constructor is created only when you do not create any constructor of your own. Once you have created your own constructor. Whether it is made default or parameterized. Java does not create its own default constructor internally. So now there is only one constructor and that is this parameterized constructor. And it expects all four values. But you don't want to give. So what will you do in that case?"
+    },
+    {
+      "start_time": 1670.96,
+      "end_time": 1705.76,
+      "text": "उस केस में हम करते हैं कंस्ट्रक्टर को ओवरलोड। ठीक है? कंस्ट्रक्टर को ओवरलोड मतलब अच्छा ओवरलोड का मतलब हमने पहले पढ़ा हुआ है। क्या हो? आप खुद सोचो क्या हो कि मैं यहां पे एक और कंस्ट्रक्टर बना दूं। लेट्स से स्टूडेंट और इसे खाली छोड़ दूं। ये लो मैंने इसको खाली छोड़ दिया। अब ये हमारा क्या हो गया? डिफॉल्ट कंस्ट्रक्टर भी हो गया। एक पैरामीटराइज कंस्ट्रक्टर भी हो गया। अब ये कोई आर्गुमेंट नहीं लेता। सॉरी ये कोई पैरामीटर नहीं लेता। और ये पैरामीटर्स लेता है। तो ये हमारे क्या हो गए? हमारे मेथड ओवरलोड का एग्जांपल हो गया। हमने यहां पे कंस्ट्रक्टर्स को ओवरलोड कर दिया।",
+      "source": "transcript_api",
+      "english_text": "In that case we overload the constructor. Ok? Meaning of overloading a constructor: Well, we have read the meaning of overloading earlier. what are you? Think for yourself, what if I create another constructor here. Let's say student and leave it blank. Here, I left it blank. Now what has happened to us? Default constructor is also done. Also got a parameterized constructor. Now it doesn't take any arguments. Sorry it doesn't take any parameters. And it takes parameters. So what has become of us? Our method overload is exampled. We overloaded the constructors here."
+    },
+    {
+      "start_time": 1703.039,
+      "end_time": 1732.0,
+      "text": "तो अब मेरा ये वाला एरर भी दूर हो जाएगा। मैं इस तरह से भी ऑब्जेक्ट बना सकता हूं। राइट? इसको भी मैं एक बार मार्क कर देता हूं। ये तो मैं इस तरीके से भी ऑब्जेक्ट बना सकता हूं। मैं इस तरीके से भी ऑब्जेक्ट बना सकता हूं। क्योंकि मेरी सारी चीजें मेरे पास डिफॉल्ट कंस्ट्रक्टर भी एग्ज़िस्ट करता है यहां पे। और मेरे पास पैरामीटराइज़्ड कंस्ट्रक्टर भी एक्सिस्ट करता है यहां पे। राइट? तो एक बार अभी तक हमने ये जो किया है ना फटाफट चलते हैं और इसको एग्जीक्यूट करते हैं और इसके बाद मूव करते हैं अपने नेक्स्ट कीवर्ड दिस की तरफ।",
+      "source": "transcript_api",
+      "english_text": "So now this error of mine will also be removed. I can create objects this way too. Right? I mark this also once. I can create objects in this way also. I can create objects in this way also. Because for all my things, I also have a default constructor present here. And I also have a parameterized constructor present here. Right? So once we have done what we have done so far, let's quickly go and execute it and then move to our next keyword this."
+    },
+    {
+      "start_time": 1730.48,
+      "end_time": 1764.799,
+      "text": "ठीक है? तो देखो मैंने यहां क्या किया? डेमो टू करके एक फाइल बना ली ताकि हम उसमें सारी चीजें ना करते रहे। है ना? उसको ऐसे ही रहने देते हैं और यहां पे दोबारा अपना स्टूडेंट क्लास बना लेते हैं। तो मैं इसको यहीं से कॉपी कर लेता हूं। ये मेरी स्टूडेंट सॉरी ये मेरी स्टूडेंट क्लास है। कुछ यहां। ठीक है? और मैं इन सबको हटा देता हूं। ये सब तो वहां लिखा ही हुआ है। ठीक है? चलो मैं इस बिहेवियर को भी रहने देता हूं। इस मेथड को मार्क अटेंडेंस को मैंने क्या कहा था कि सबसे पहले अगर मैं यहां पे एक ऑब्जेक्ट बनाता हूं स्टूडेंट s1 = न्यू सॉरी न्यू स्टूडेंट देखो तो",
+      "source": "transcript_api",
+      "english_text": "ok? So see what I did here? After doing the demo, we created a file so that we don't have to keep doing all the things in it. Isn't it? Let's leave it like this and create our student class here again. So I copy it from here. This is my student, sorry, this is my student class. some here. Ok? And I delete all of these. All this is written there. Ok? Well, I will let this behavior continue as well. What I told this method to mark attendance is that first of all if I create an object here student s1 = new sorry new student see then"
+    },
+    {
+      "start_time": 1763.279,
+      "end_time": 1795.279,
+      "text": "यहां पे हमने इस तरह से कॉल किया था स्टूडेंट यहां पे हमने कंस्ट्रक्टर ही कॉल किया होगा। कौन सा कंस्ट्रक्टर कॉल किया होगा? डिफॉल्ट कंस्ट्रक्टर क्योंकि यहां पे तो कुछ है ही नहीं। है ना? पर और ये यहां पे अलाउड भी है ऑब्वियसली। है ना? क्योंकि जावा ने खुद से कंस्ट्रक्टर बना दिया होगा। पर अगर मैं चाहता हूं कि मैं खुद का एक डिफ़ॉल्ट कंस्ट्रक्टर बनाऊं तो मैं कैसे बना सकता हूं? कुछ इस तरीके से स्टूडेंट और ऐसे और मैं यहां पे वैल्यू्यूज दे सकता हूं। लेट्स से नेम मैंने दे दिया आदित्य। ठीक है? ऐज मैंने दिया 28 रोल नंबर मैंने दिया। सॉरी रोल नंबर मैंने दिया। लेट्स से 1001 और कॉलेज",
+      "source": "transcript_api",
+      "english_text": "Here we would have called it like this, student, here we would have called it constructor. Which constructor would have been called? Default constructor because there is nothing here. Isn't it? But and this is also said here obviously. Isn't it? Because Java must have created the constructor by itself. But if I want to create my own default constructor, how can I create one? Something like this, student and like this and I can give values ​​here. I gave him the name Aditya later. Ok? The age I gave was 28. I gave the roll number. Sorry, I gave the roll number. 1001 more colleges from Lets"
+    },
+    {
+      "start_time": 1793.279,
+      "end_time": 1820.399,
+      "text": "मैंने दिया। आईडी को आरटी कुछ इस तरीके से है ना? ठीक है। अब देखो अब अगर मैं इसकी सारी चीजों को प्रिंट करने की कोशिश करूंगा। उसको भी मैं यहीं से कॉपी कर लेता हूं। कुछ इस तरीके से कुछ ऐसे। तो अब आपको पता ही है हमारा क्या प्रिंट होना चाहिए। हमारा जो भी इस डिफॉल्ट कंस्ट्रक्टर में ये सब वैल्यू्यूज रखी हुई हैं ये प्रिंट होनी चाहिए। तो एक बार ये भी देख लेते हैं। बिल्कुल। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "I gave. RT to ID is something like this, isn't it? Ok. Now see if I try to print all this stuff. I copy that also from here. Some like this, some like this. So now you know what our print should be. Whatever values ​​we have kept in this default constructor, these should be printed. So let's see this once. Absolutely. Ok?"
+    },
+    {
+      "start_time": 1818.24,
+      "end_time": 1852.96,
+      "text": "हमारी सही वैल्यू्यूज प्रिंट हुई। अच्छा मैं यहां पे अगर सब कुछ खाली छोड़ देता। यहां पे मैं कुछ लिखता ही नहीं। सब कुछ खाली छोड़ देता। तो मैंने इसको कमेंट कर दिया अभी के लिए। या इसको हटा ही देते हैं। चलो मैंने सब कुछ खाली छोड़ देता। तो ये हमारा वही डिफॉल्ट कंस्ट्रक्टर बनाता जो जावा खुद से बना देता है। तो ये मुझे लिखने की जरूरत नहीं है। ऑप्शनल है। ठीक है? ये है डिफॉल्ट कंस्ट्रक्टर। ये तो जावा खुद से ही बना देता है। तो मुझे इसको लिखने की जरूरत ही नहीं होती। है ना? तो मेरा क्या प्रिंट होता? मेरी अगेन सारी डिफॉल्ट वैल्यूज़ प्रिंट हो जाती। नल 0 नल है ना? अब बनाते हैं पैरामीटराइज़्ड कंस्ट्रक्टर। तो मैं एक काम करता हूं। मैं",
+      "source": "transcript_api",
+      "english_text": "Our correct values were printed. Well, if I had left everything blank here. I don't write anything here. Leaves everything blank. So I commented it for now. Or just remove it. Well I would have left everything blank. So this creates our same default constructor which Java creates automatically. So I don't need to write this. Is optional. Ok? This is the default constructor. Java creates this by itself. So I don't need to write this. Isn't it? So what would my print be? Again all my default values ​​would be printed. Tap 0 is tap right? Now let's create the parameterized constructor. So I do one thing. i"
+    },
+    {
+      "start_time": 1851.44,
+      "end_time": 1884.559,
+      "text": "यहां पे एक और स्टूडेंट नाम का कंस्ट्रक्टर बनाता हूं क्योंकि मैं ओवरलोड कर सकता हूं। और मैं यहां पे कुछ वैल्यूज़ देता हूं। लेट्स से इंट n नेम चाहिए। ओ सॉरी नेम इंंट नहीं है स्ट्रिंग है। मुझे एक नेम एक्सपेक्टेड है। एंड एक ऐज एक्सपेक्टेड है। एक रोल नंबर एक्सपेक्टेड है। और मुझे एक्सपेक्टेड है एक कॉलेज। और मैं क्या करता हूं? मैं नेम में एन डाल देता हूं। ये कौन सा नेम है? ये मेरा ये वाला नेम वेरिएबल है। है ना? एज में मैं ए डाल देता हूं जो भी आई है। रोल नंबर में मैं आर एन डाल देता हूं जो भी आया है। और",
+      "source": "transcript_api",
+      "english_text": "Here I create another constructor named Student because I can overload. And I give some values ​​here. Need int n name from lets. o Sorry name is not int but string. I am expecting a name. And as expected. A roll number is expected. And I expect a college. And what do I do? I put N in the name. What name is this? This is my variable name. Isn't it? In the edge I put a whatever came. I put RN in the roll number, whoever has come. and"
+    },
+    {
+      "start_time": 1882.559,
+      "end_time": 1911.919,
+      "text": "कॉलेज का जो नाम है उसमें मैं सी डाल देता हूं जो भी आया है। ठीक है? अब मैं अपना वेरिएबल ऐसे बना सकता हूं। तो लेट्स से यहां पे मैंने इस बार दिया रोहित। ठीक है? और हमने ऐज के लिए वही 28 दे दिया। 102 दे दिया रोल नंबर के लिए और कॉलेज के लिए भी दे दिया आईआईटी गुवाहाटी। ठीक है? कुछ इस तरीके से। तो देखो अब ये मेरा पैरामीटराइज कंस्ट्रक्टर बन गया। क्योंकि मैंने देखो कंस्ट्रक्टर कैसे कॉल किया? सारी वैल्यू्यूज को दे के। अब जब मैं इन्हें प्रिंट करने की कोशिश करूंगा तो देखो मेरे को रोहित की डिटेल्स प्रिंट हो जाएंगी।",
+      "source": "transcript_api",
+      "english_text": "Whatever is the name of the college, I put 'C' in it. Ok? Now I can create my variable like this. So this time I have given Rohit here from Let's. Ok? And we gave the same 28 for Edge. Gave 102 for roll number and also gave for college, IIT Guwahati. Ok? Something like this. So look, now this has become my parameterized constructor. Because look how I called the constructor? By giving all the values. Now when I try to print them, see my Rohit's details will be printed."
+    },
+    {
+      "start_time": 1909.84,
+      "end_time": 1943.279,
+      "text": "राइट? अब मैंने आपको क्या कहा था? अगर यहां से अब मैं डिफ़ॉल्ट कंस्ट्रक्टर को थोड़ी देर के लिए हटा दूं। तो मैं अब कुछ इस तरह का वेरिएबल नहीं बना सकता। स्टूडेंट S2 = न्यू स्टूडेंट। मैं सिंपल ऐसे नहीं लिख सकता। देखो मुझे कंपाइलर एरर आ गया। क्या कह रहा है? द कंस्ट्रक्टर स्टूडेंट इज़ अनडिफाइंड। क्योंकि ये वाला कंस्ट्रक्टर एग्ज़िस्ट ही नहीं करता। क्योंकि हमारे पास सिर्फ पैरामीटराइज़्ड एग्ज़िस्ट करता है। क्योंकि डिफ़ॉल्ट तो एक्सज़िस्ट ही नहीं करता क्योंकि जावा ने अब खुद से बनाया ही नहीं क्योंकि तुमने खुद का दिया हुआ था। तो हमें ये भी अब खुद से ही बनाना पड़ेगा अगर हम चाहते हैं कि ऐसे भी हम ऑब्जेक्ट को क्रिएट कर सकें।",
+      "source": "transcript_api",
+      "english_text": "Right? Now what did I tell you? If from here now I remove the default constructor for a while. So I can't create a variable like this anymore. Student S2 = New Student. I can't write simple like that. Look I got a compiler error. What are you saying? The constructor Student is undefined. Because this constructor does not exist. Because we only have parameterized exists. Because the default does not exist because Java did not create it by itself because you gave it yourself. So now we will have to create this ourselves if we want to be able to create objects like this."
+    },
+    {
+      "start_time": 1941.12,
+      "end_time": 1967.6,
+      "text": "ठीक है? चलो अब वापस से चलते हैं अपने आईपैड पे और देखते हैं दिस कीवर्ड क्या होता है और उसका कितना अच्छा यूज़ है यहां पे। तो देखो दिस कीवर्ड क्या होता है? सबसे पहले ऑब्वियसली यहां पे मैंने लिखा ही हुआ है दिस एक कीवर्ड है जावा में। ठीक है? जो क्या करता है जो डिनोट करता है करंट ऑब्जेक्ट को जो डिक्लेअ हो रहा होता है। क्या मतलब? ओके। इसको सीधा एग्जांपल से समझते हैं। तो देखो अगेन मैंने क्या किया? मैंने यहां पे अपनी एक क्लास ले ली।",
+      "source": "transcript_api",
+      "english_text": "ok? Now let's go back to our iPad and see what this keyword is and how well it is used here. So see what is this keyword? First of all, obviously here I have written that this is a keyword in Java. Ok? What it does is denote the current object that is being declared. What do you mean? Ok. Let us understand this directly from the example. So look again what I did? I took one of my classes here."
+    },
+    {
+      "start_time": 1965.76,
+      "end_time": 1999.2,
+      "text": "अपनी स्टूडेंट क्लास जैसे अभी तक हमने ली थी। उसमें नेम, एज, रोल नंबर और कॉलेज हमारा लिखा हुआ है। ठीक है? तो अब हम देखते हैं यहां पे दिस कीवर्ड क्या होता है। सबसे पहले दिस कीवर्ड क्या करता है? मैंने क्या बोला? हमारे करंट ऑब्जेक्ट को रेफर करता है। तो लेट्स से अगर मैं यहां पे एक कंस्ट्रक्टर बनाऊं स्टूडेंट और मैं इसको पैरामीटराइज्ड बनाऊं। तो यहां पे एक स्ट्रिंग एक्सपेक्ट करूं। अ नेम इस बार मैं वेरिएबल का नाम देखो सेम रख रहा हूं जो वहां पे है। एक ऐज एक्सपेक्ट करूं। एक रोल नंबर एक्सपेक्ट करूं। मैं सबका नाम सेम रखता हूं। ठीक है? और एक कॉलेज",
+      "source": "transcript_api",
+      "english_text": "Just like we had taken our student classes till now. Our name, age, roll number and college are written in it. Ok? So now let us see what is this keyword here. First of all, what does this keyword do? What did I say? Refers to our current object. So let's say if I create a constructor here, Student and I make it parameterized. So expect a string here. A Name This time I'm keeping the name of the variable look at the bean which is there. Expect an age. Expect a roll number. I name everyone Same. Ok? and a college"
+    },
+    {
+      "start_time": 1995.679,
+      "end_time": 2028.08,
+      "text": "एक्सपेक्ट करूं। स्ट्रिंग कॉलेज कुछ इस तरीके से तो क्या होगा? ठीक है? आप इसको ऐसे समझना। ठीक है? मुझे यहां पे नेम में नेम को असाइन करना है। तो इस वाले नेम में मुझे ये वाला नेम असाइन करना है। तो मैं या तो लिख सकता हूं कुछ ऐसे नेम इक्वल टू नेम। कुछ ऐसे लिख सकता हूं। पर ये कंफ्यूजिंग है। राइट? अब जावा के लिए भी ये कंफ्यूजिंग है। क्योंकि जब मैं यहां पे नेम लिख रहा हूं। मैं कौन से नेम की बात कर रहा हूं? इस वाले की या इस वाले की।",
+      "source": "transcript_api",
+      "english_text": "Expect. What if String College is something like this? Ok? You understand it like this. Ok? I have to assign the name in pay name here. So in this name I have to assign this name. So I can either write something like name is equal to name. I can write something like this. But this is confusing. Right? Now this is confusing even for Java. Because when I am writing the name here. What names am I talking about? Of this one or that one."
+    },
+    {
+      "start_time": 2026.48,
+      "end_time": 2058.8,
+      "text": "सेम इसमें मैं किसकी बात कर रहा हूं? इस वाले की या इस वाले की? ये कंफ्यूजिंग है। है ना? तो मैं यहां पे क्या लिख सकता हूं? मैं सबसे पहले यूज़ करता हूं अपना दिस कीवर्ड को और मैं कुछ ऐसे लिखता हूं दिस डॉट नेम इक्वल टू नेम। अब जब भी मैं लिखता हूं दिस और फिर अपना डॉट ऑपरेटर लगाता हूं। तो जावा समझ जाती है कि मैं किसकी बात कर रहा हूं? मैं अपने इंस्टेंस वेरिएबल की बात कर रहा हूं। तो आई होप आपको दिस का मतलब अब एग्जांपल से अच्छे से समझ आया होगा कि दिस कहता है जो भी करंट ऑब्जेक्ट है मैं उसके",
+      "source": "transcript_api",
+      "english_text": "Same, what am I talking about? This one or this one? This is confusing. Isn't it? So what can I write here? First of all I use my this keyword and I write something like this dot name is equal to name. Now whenever I write this and then I put my dot operator. So Java knows what I'm talking about? I'm talking about my instance variables. So I hope you have understood the meaning of this clearly from the example that this says that whatever is the current object, I am using it."
+    },
+    {
+      "start_time": 2056.56,
+      "end_time": 2088.879,
+      "text": "रेफरेंस को स्टोर करूंगा। ठीक है? जैसे हम ऑब्जेक्ट बनाते थे ना स्टूडेंट s1 = न्यू स्टूडेंट तो यहां पे जो s1 था ये भी एक रेफरेंस वेरिएबल था जो किसको स्टोर करता था इस स्टूडेंट रेफरेंस को। इस स्टूडेंट ऑब्जेक्ट को के रेफरेंस को स्टोर करता था। राइट? यहां पे ये जो दिस है ये भी एक रेफरेंस को स्टोर करता है। पर किस रेफरेंस को? जो भी करंट ऑब्जेक्ट चल रहा है जो हम बनाने की कोशिश कर रहे हैं उसको स्टोर करता है। ठीक है? तो यह जब भी हम लिखते हैं दिस अंदर से क्या होता है? वह एक इस",
+      "source": "transcript_api",
+      "english_text": "Will store the reference. Ok? Like we used to create an object Student s1 = New Student, so the s1 here was also a reference variable which stored this student reference. Used to store a reference to this Student object. Right? This thing here also stores a reference. But which reference? Whatever current object is running stores what we're trying to create. Ok? So what happens inside whenever we write this? that one this"
+    },
+    {
+      "start_time": 2087.28,
+      "end_time": 2113.359,
+      "text": "स्टूडेंट रेफरेंस का ऑब्जेक्ट स्टोर कर रखा होता है उसने। और डॉट नेम मतलब उसका नेम। जैसे कि हम लिखते हैं s1 डॉट नेम। बिल्कुल सेम चीज़। अब वैसे ही मैं यहां पे लिख सकता हूं दिस डॉट एज इक्वल टू ऐज। अब जावा को कोई कंफ्यूजन ही नहीं है क्योंकि दिस डॉट एज हम इसकी बात कर रहे हैं और सिंपल एज लिखा है तो हम इसकी बात कर रहे हैं और ऐसे ही मैं हर चीज लिख सकता हूं।",
+      "source": "transcript_api",
+      "english_text": "He has stored the object of student reference. And dot name means its name. Like we write s1 dot name. Exactly the same thing. Now similarly I can write here this dot age is equal to age. Now there is no confusion with Java because this dot edge we are talking about it and simple edge is written so we are talking about it and like this I can write everything."
+    },
+    {
+      "start_time": 2110.4,
+      "end_time": 2144.32,
+      "text": "मैं लिख सकता हूं दिस डॉट आपका रोल नंबर दिस डॉट कॉलेज एंड सो ऑन। मैं सारी चीजें एज़ इट इज़ लिख सकता हूं। 1001 और आईआईटीजी लेट्स से ये कोई दिक्कत नहीं है। जावा को अब कोई कंफ्यूजन नहीं हुई। क्यों? क्योंकि मैंने दिस कीवर्ड का यूज़ किया। अब ये कीवर्ड तब ऑप्शनल हो जाता है जैसे हमने पहले नहीं लिखा था। अगर ये वेरिएबल और ये वेरिएबल अलग है क्योंकि जावा कंफ्यूज नहीं होती। अगर मैं यहां पे n लिखता, यहां पे a लिखता, यहां पे r n लिखता, यहां पे c लिखता। तो जावा ये अलग वेरिएबल है। ये अलग वेरिएबल है। वो कंफ्यूज ही नहीं होता। पर क्योंकि यहां पे भी वेरिएबल के नाम सेम है",
+      "source": "transcript_api",
+      "english_text": "I can write this dot your roll number this dot college and so on. I can write the whole thing as it is. This is not a problem with 1001 and IITG lets. Java no longer had any confusion. Why? Because I used this keyword. Now this keyword becomes optional as we had not written earlier. If this variable and this variable are different because Java does not get confused. If I write n here, write a here, write r n here, write c here. So Java these are separate variables. This is a different variable. He doesn't get confused at all. But because here also the names of the variables are same."
+    },
+    {
+      "start_time": 2142.4,
+      "end_time": 2176.24,
+      "text": "और यहां पे भी सेम है। तो हमें दिस कीवर्ड लगाना पड़ता है। पर आप बोलोगे भैया सिर्फ इस चीज के लिए दिस कीवर्ड बना। नहीं। अभी दिस के कीवर्ड के और भी बहुत सारे यूज़ केस हैं। इनफैक्ट अभी हम उसकी ही बात करेंगे धीरे-धीरे। लेकिन बस एक बात याद रखना। हम हमेशा प्रेफर करते हैं ये नाम और ये नाम। सेम हो। वेरिएबल नेम्स एकदम सेम हो। क्यों प्रेफर करते हैं? अगेन एक जावा का कन्वेंशन है कि हम हमेशा दिस डॉट नेम इक्वल टू नेम, दिस डॉट एज इक्वल टू एज इस तरह लिखना प्रेफर करते हैं। क्योंकि ये पढ़ने में बहुत आसान होता है। समझने में बहुत आसान होता है कि हमने इन चारों वेरिएबल्स को कौन सी चार वैल्यूज़ असाइन की है। सिंपल देख के ही पता लग जाता है। ठीक",
+      "source": "transcript_api",
+      "english_text": "And here too it is the same. So we have to put this keyword. But you will say brother, this keyword was created only for this thing. No. There are many more use cases for this keyword. In fact, for now we will talk about that only gradually. But just remember one thing. We always prefer this name and this name. Be the same. Variable names must be exactly the same. Why prefer? Again, there is a Java convention that we always prefer to write this dot name is equal to name, this dot age is equal to age. Because it is very easy to read. It is very easy to understand what four values ​​we have assigned to these four variables. It can be known just by looking at it. okay"
+    },
+    {
+      "start_time": 2173.44,
+      "end_time": 2207.28,
+      "text": "है? अब अगला यूज़ इस डिस्क का पता है क्या है? ये जब हम कंस्ट्रक्टर को ओवरलोड करते हैं ना तो उसमें एक बहुत अच्छी चीज करता है व्हिच इज़ कॉल्ड एज चेनिंग। अब ये चेनिंग क्या होता ये देखते हैं। ये बहुत इंटरेस्टिंग है। चलो देखो हम बात करने वाले हैं चेनिंग इन कंस्ट्रक्टर की। ठीक है? अब चेनिंग समझने से पहले ना हमें क्या करना पड़ेगा? हमें एक कंस्ट्रक्टर को पहले ओवरलोड करना सीखना पड़ेगा। कंस्ट्रक्टर ओवरलोड। ठीक है? जो कि हमने ऑलरेडी किया भी हुआ है। इसको हम एक बार दोबारा करके देखेंगे। उसके बाद हम देखेंगे कि ओवरलोड",
+      "source": "transcript_api",
+      "english_text": "Is it? Now what is the next use of this disk? When we overload the constructor, it does a very nice thing which is called edge chaining. Now let us see what this chaining is. This is very interesting. Well see, we are going to talk about chaining in constructor. Ok? Now what do we have to do before understanding chaining? We need to learn how to overload a constructor first. Constructor overload. Ok? Which we have already done. We will try this once again. After that we will see that overload"
+    },
+    {
+      "start_time": 2204.64,
+      "end_time": 2236.48,
+      "text": "करके चेनिंग हमारे को ओवरलोड में क्या फायदा दे पाती है। एक बार हम कंस्ट्रक्टर ओवरलोड करेंगे। हमारा लंबा लेंथी कोड लिखा जाएगा और फिर हम चेनिंग का यूज़ करेंगे उस कोड को थोड़ा सा कम करने के लिए। अभी आपको सारी चीज़ समझ आ जाएंगी। अब इसको फटाफट ना हम सीधा कोड में जाके देखते हैं ताकि ज्यादा चीजें क्लियर हो। तो देखो अगेन मैंने यहां पे एक डेमो 3 डॉट जावा करके नई फाइल बनाई है और अपनी स्टूडेंट क्लास बना रखी है जिसमें अभी कोई कंस्ट्रक्टर नहीं है। तो व्हाट इफ मैं चाहता हूं कि मैं यहां पे कंस्ट्रक्टर को ओवरलोड करूं। तो सबसे पहले तो मैं लिख लेता हूं अपना डिफॉल्ट कंस्ट्रक्टर स्टूडेंट कुछ ऐसे।",
+      "source": "transcript_api",
+      "english_text": "What benefit can chaining give us in overload? Once we overload the constructor. Our longer length code will be written and then we will use chaining to shorten that code a bit. Now you will understand everything. Now let's look at it directly in the code so that more things are clear. So look again, I have created a new file by doing a demo 3.java here and have created my student class which does not have any constructor yet. So what if I want to overload the constructor here. So first of all I write my default constructor Student like this."
+    },
+    {
+      "start_time": 2235.119,
+      "end_time": 2268.96,
+      "text": "ठीक है? मैं इसको अगली लाइन में भी लिख सकता हूं ऐसे। पर सबसे छोटा सिंटेक्स होता है। मैं सीधा ऐसे लिख दूं। ठीक है? कि इन केस मैं चाहता हूं कोई ऐसा ऑब्जेक्ट क्रिएट करना जिसमें नेम, एज, रोल नंबर और कॉलेज की कोई डिफ़ॉल्ट वैल्यू ना हो, कोई भी वैल्यू ना हो। अपने आप इनको जो नॉर्मल डिफॉल्ट मिलता है वो मिल जाए। नल, इंट और की जगह ज़ीरो और कॉलेज में अगेन नल। इसके बाद मैं क्या करता हूं? एक और कंस्ट्रक्टर बनाता हूं। जिसमें मैं क्या करूंगा? इस नेम की एक वैल्यू दे दूंगा। तो मैं यहां पे क्या करता हूं? स्ट्रिंग नेम एक्सपेक्ट करता हूं यूजर से और यहां पे लिखता हूं दिस डॉट नेम। यहां पे अगेन मैंने दिस",
+      "source": "transcript_api",
+      "english_text": "ok? I can also write it in the next line like this. But it has the shortest syntax. Let me write directly like this. Ok? That in this case I want to create such an object which does not have any default value of name, age, roll number and college. They automatically get the normal default. Null, int and replace zero and college again null. What do I do after this? Let me create another constructor. In which what will I do? I will give a value to this name. So what do I do here? स्ट्रिंग नेम एक्सपेक्ट करता हूं यूजर से और यहां पे लिखता हूं दिस डॉट नेम। यहां पे अगेन मैंने दिस"
+    },
+    {
+      "start_time": 2267.599,
+      "end_time": 2302.0,
+      "text": "क्यों लिखा है? आपको पता ही है क्योंकि मैं रेफर करना चाहता हूं इस वाले नेम को इक्वल टू नेम। ठीक है? अब देखो मैं आपको एक और चीज़ बताता हूं। मैंने क्या कहा था? अगर मैं यहां पे दिस ना लिखता तो देखो क्या होता? कोई हमें एरर नहीं आया। तो इसका येलो लाइन का मतलब क्या है? एक वार्निंग है। और ये वार्निंग देखो क्या कह रही है? द असाइनमेंट टू वेरिएबल नेम हैज़ नो इफेक्ट। क्यों? इफेक्ट क्यों नहीं होगा? क्योंकि देखो जावा क्योंकि उसको नहीं पता यहां पे हम कौन से नेम की बात करते। तो जावा ने मान लिया दोनों बार हम इस नेम की बात कर रहे हैं कि नेम इक्वल टू नेम भाई जो नेम में है वो",
+      "source": "transcript_api",
+      "english_text": "Why is it written? You know because I want to refer this name as equal to name. Ok? Now look let me tell you one more thing. What did I say? If I had not written this here, see what would have happened? We did not find any error. So what does the yellow line mean? There is a warning. And see what this warning is saying? The assignment to variable name has no effect. Why? Why will there be no effect? Because look Java because he doesn't know what names we talk about here. So Java accepted that both the times we are talking about the name that name is equal to name brother, whatever is in the name is"
+    },
+    {
+      "start_time": 2300.0,
+      "end_time": 2329.2,
+      "text": "नेम में वापस से डाल दो। है ना? तो यहां पे वो क्या कर रहा है? इस नेम में जो भी है वो उठा के वापस से इसमें डाल देता है। तो कोई इफेक्ट नहीं होगा। है ना? तो यहां पे हम ये लिखेंगे ना तो कभी भी इस नेम में ये वाले नेम की वैल्यू वैसे भी नहीं जाएगी। हां अगर यहां पे n लिखा होता और हम यहां पे n लिखते तो अलग बात होती कि इस नेम के अंदर इस n की वैल्यू डाल दो। पर अगर हमने यहां पे नेम लिखा हुआ है और हम यहां पे भी नेम लिख देते। तो यहां पे इसका कोई इफेक्ट नहीं होगा। तो हम क्या करते हैं? यहां पे हम लिखते हैं दिस कीवर्ड।",
+      "source": "transcript_api",
+      "english_text": "Put it back in the name. Isn't it? So what is he doing here? Whatever is in this name, he picks it up and puts it back in it. So there will be no effect. Isn't it? So here we will write this, otherwise the value of this name will never go into this name anyway. Yes, if n had been written here and we had written n here, then it would have been a different thing to put the value of this n inside this name. But if we have written the name here and we would have written the name here also. So it will not have any effect here. So what do we do? Here we write this keyword."
+    },
+    {
+      "start_time": 2327.04,
+      "end_time": 2360.96,
+      "text": "ठीक है? दिस का मतलब क्या हुआ? हम इस वाले नेम की बात कर रहे हैं। और दिस आपको पता है स्पेशल कीवर्ड है जो पॉइंट करता है जो रेफर करता है करंट ऑब्जेक्ट को। ओके? तो अभी देखो ये हमने बहुत ही स्पेशल तरीके का कंस्ट्रक्टर बनाया। मैंने कहा कि मुझे बस किसी अगर किसी इंसान को सिर्फ एक नेम की वैल्यू डायनेमिकली देनी हो तो वो इस कंस्ट्रक्टर को कॉल करेगा। है ना? पर अगर किसी को नेम और ऐज दोनों की वैल्यू देनी हो तो एक काम करते हैं। उसके लिए एक और कंस्ट्रक्ट बना देते हैं। यहां पे हम स्ट्रिंग नेम लिखते हैं और इंट एज लिखते हैं।",
+      "source": "transcript_api",
+      "english_text": "ok? What does this mean? We are talking about this name. And this, you know, is a special keyword that points to the current object. Ok? So look now, we have created a very special kind of constructor. I said that if I just want to give the value of a name dynamically to someone then he will call this constructor. Isn't it? But if someone wants to give value of both name and age then let's do one thing. Let's make another construct for that. Here we write string name and int age."
+    },
+    {
+      "start_time": 2359.119,
+      "end_time": 2393.92,
+      "text": "और कुछ ऐसे कर लेते हैं। दिस डॉट नेम इक्वल टू नेम नेम और दिस डॉट एज इक्वल टू ऐज। कुछ ऐसे तो इस कंस्ट्रक्टर को अगर आपने कॉल किया तो आप नेम और ऐज दोनों की डिफ़ॉल्ट वैल्यू दे पाओगे। अच्छा इसे कॉल कैसे करेंगे? कुछ नहीं। हम क्या करेंगे? स्टूडेंट s1 का एक ऑब्जेक्ट बनाते होंगे। एक सॉरी स्टूडेंट एस वन नाम का एक रेफरेंस वेरिएबल बनाते होंगे न्यू स्टूडेंट। अब देखो या तो मैं यहां पे खाली दे सकता हूं या तो मैं यहां पे एक नाम पास कर सकता हूं तो ये वाला कंस्ट्रक्टर कॉल हो जाएगा या फिर मैं नाम के साथ अपनी ऐज भी पास कर सकता हूं तो ये वाला कंस्ट्रक्टर कॉल हो जाएगा। बेसिकली जैसे हम फंक्शन ओवरलोड",
+      "source": "transcript_api",
+      "english_text": "And some do it like this. This dot name is equal to name name and this dot age is equal to age. If you call this constructor like this, you will be able to give the default value of both name and age. Well how to call it? Nothing. What will we do? Students will be creating an object of type s1. New students will create a reference variable named Sorry Student S One. Now see, either I can give a blank here, or I can pass a name here, then this constructor will be called, or I can also pass my age along with the name, then this constructor will be called. Basically like we overload function"
+    },
+    {
+      "start_time": 2392.32,
+      "end_time": 2418.16,
+      "text": "करते थे वैसे ही हमने कंस्ट्रक्टर ओवरलोड किया हुआ है। राइट? चलो इसको हम बाद में करेंगे। अभी हम इसको आगे बढ़ते हैं। सेम तरीके से मैंने क्या बोला? मैं एक और कंस्ट्रक्ट बनाता हूं जिसमें इंसान नेम, एज और साथ में रोल नंबर भी दे सकता हो। रोल नंबर। ठीक है? तो उस केस में मैं क्या करूंगा? दिस डॉट रोल नंबर इक्वल टू रोल नंबर। नॉट रोहित रोल नंबर कुछ ऐसे साइन कर दूंगा। है ना? ओके बहुत बढ़िया।",
+      "source": "transcript_api",
+      "english_text": "We have overloaded the constructor just like we used to do. Right? Let's do this later. Now let's move forward with this. What did I say in the same manner? I create another construct in which a person can give name, age and also roll number. Roll number. Ok? So what should I do in that case? This Dot Roll Number Equal to Roll Number. Not Rohit, I will sign the roll number like this. Isn't it? Okay, great."
+    },
+    {
+      "start_time": 2416.24,
+      "end_time": 2450.64,
+      "text": "अब मैं एक और कंस्ट्रक्ट बना देता हूं जिसमें आप चारों की वैल्यू दे सकते हो। किसी को अगर चारों की कुछ वैल्यू्यूज डायनेमिकली देनी हो। तो यहां पे मैं एक और स्ट्रिंग पास कर दूंगा जिसका नाम होगा कॉलेज। ये स्ट्रिंग के स्पेलिंग गलत है। स्ट्रिंग। ठीक है? और यहां पे मैं क्या करता हूं? दिस डॉट कॉलेज = कॉलेज ओके कॉलेज बहुत बढ़िया तो मैंने देखो अपने चारों कांसेप्ट बना दिए सारी वैल्यूज लेने वाला तीन वैल्यूज़ दो वैल्यूज़ एक वैल्यूज़ और ज़ीरो वैल्यूज़ तो अब मैं यहां पे कैसे",
+      "source": "transcript_api",
+      "english_text": "Now let me create another construct in which you can give the values of all four. If someone wants to give some values ​​of all four dynamically. So here I will pass another string named college. This string is misspelled. string. Ok? And what do I do here? this dot college = college ok college very good so look I have made my four concepts taking all the values three values two values one values and zero values so now how am I here"
+    },
+    {
+      "start_time": 2449.2,
+      "end_time": 2482.56,
+      "text": "भी तरह के ऑब्जेक्ट बना सकता हूं। तो लेट्स से मैंने एक s1 बनाया जो कोई वैल्यू नहीं लेता। ठीक है? ये भी वैलिड है। मैं एक s2 बना सकता हूं। ठीक है? मैं यहां पे एक S2 भी बना सकता हूं जो लेट्स से सिर्फ एक नेम लेता है। लेट्स से आदित्य यहां पे सॉरी आदित्य। ठीक है? मैं ऐसे ही एक S3 बना सकता हूं। अब आप समझ गए होंगे कि मैं क्या कर रहा हूं। है ना? सबको एक-एक वैल्यू दे रहा हूं। एज के साथ आदित्य के साथ वो एक वो भी ले सकता है। लेट्स से रोल नंबर 1001 है ना? चलो एक काम करते हैं। यहां पे एक नया नाम दे देते हैं। रोहित और रोल नंबर भी नया देते हैं।",
+      "source": "transcript_api",
+      "english_text": "Can create any type of object. So with lets I created a s1 which doesn't take any values. Ok? This is also valid. I can make a s2. Ok? I can also create an S2 here that just takes a name from Lets. Let's Aditya here, sorry Aditya. Ok? I can create an S3 just like that. Now you understand what I am talking about. Isn't it? I am giving one value to everyone. He can also take that one with Aditya along with Edge. Roll number from LETS is 1001 right? Let's do one thing. Let's give a new name here. Rohit and roll number also give new."
+    },
+    {
+      "start_time": 2480.96,
+      "end_time": 2515.76,
+      "text": "100 है ना? एक और नया ऑब्जेक्ट बना देता हूं S4 के नाम से जो क्या करता है नेम भी ले सकता है नेम इस बार लगते हैं रोहन एज एज 102 नहीं है सॉरी एज तो 28 ही होनी चाहिए यहां पे लेट्स से ऐज है 30 और इस बार रोल नंबर आ जाता है 103 है ना रोल नंबर भी ले लिया और एक और ऑब्जेक्ट बनाता हूं S5 जो सारी वैल्यू लेगा इसका रोहन का हम ओ छोटा कर देते हैं लेट्स इसको हम बोलते हैं मोहन",
+      "source": "transcript_api",
+      "english_text": "100 right? Let's create another new object with the name of S4, what does it do? Name can also be taken. This time Rohan's age is not 102, sorry age should be 28. Here let's say age is 30 and this time the roll number is 103, right? I have taken the roll number also and I create another object S5 which will take all the values. Let's shorten it to Rohan. Let's call it Mohan."
+    },
+    {
+      "start_time": 2513.359,
+      "end_time": 2545.2,
+      "text": "ठीक है? यह भी लेट्स से यह 31 साल का है। रोल नंबर है 104 और कॉलेज है लेट्स से आईआईटी बॉम्बे कुछ भी। ठीक है? तो हमने देखो पांच ऑर्डर बनाए s1, s2, s3, s4, s5 और अलग-अलग कंस्ट्रक्टर कॉल किया ज़ीरो पैरामीटर्स के साथ, ज़ीरो आर्गुमेंट के साथ वन आर्गुमेंट 2, 3 और फोर आर्गुमेंट्स के साथ। तो हम ये कर सकते हैं। अब आपको पता ही होगा कि अगर इस वाले कंस्ट्रक्टर में S1 डॉट नेम मैं प्रिंट करूं तो नल प्रिंट होगा क्योंकि डिफॉल्ट वैल्यू प्रिंट होगी क्योंकि यहां पे कोई भी वैल्यू नहीं है।",
+      "source": "transcript_api",
+      "english_text": "ok? Also from Letts he is 31 years old. Roll number is 104 and college is anything from Letts to IIT Bombay. Ok? So look we created five orders s1, s2, s3, s4, s5 and called different constructors with zero parameters, one argument with zero arguments, 2, 3 with four arguments. So we can do this. Now you must be aware that if I print S1 dot name in this constructor, then null will be printed because the default value will be printed because there is no value here."
+    },
+    {
+      "start_time": 2543.2,
+      "end_time": 2576.8,
+      "text": "इनफैक्ट नेम एज रोल नंबर या कॉलेज मैं इसमें S1 डॉट कुछ भी प्रिंट करने की कोशिश करूं सारी नल सारी डिफॉल्ट वैल्यूज़ प्रिंट होगी। नेम और कॉलेज नल होगा। एज रोल नंबर ज़ीरो होगा। हमने पता है। इसमें क्या होगा? S2 डॉट नेम तो आदित्य प्रिंट हो जाएगा। लेकिन बाकी सारी चीजें ऐज, रोल नंबर और कॉलेज ये सब क्या जाएगा? ये सब आपका डिफॉल्ट जाएगा। है ना? एज आपका हो जाएगा जीरो, रोल नंबर ज़ीरो और कॉलेज अगेन नल। इस केस में S3 में आपको पता है नेम भी है, एज भी है। बस रोल नंबर और कॉलेज डिफॉल्ट जाएगा। S4 में सिर्फ सिर्फ कॉलेज डिफॉल्ट जाएगा और S5 में कोई भी वैल्यू डिफ़ॉल्ट",
+      "source": "transcript_api",
+      "english_text": "In fact, if I try to print anything like name, roll number or college in it, S1 dot, all the null and default values will be printed. Name and college will be taped. Age roll number will be zero. We know. What will happen in this? S2 dot name will be printed as Aditya. But what about all the other things like age, roll number and college? All this will be your default. Isn't it? Your age will become zero, roll number will become zero and college again will be null. In this case, S3 has, you know, the name as well as the edge. Just roll number and college will go by default. In S4 only college will be default and in S5 any value will be default."
+    },
+    {
+      "start_time": 2574.88,
+      "end_time": 2607.68,
+      "text": "नहीं जाएगी। सबकी वैल्यू हमने यहां ऊपर दे रखी है। ठीक है? तो इसको हम बोलते हैं कंस्ट्रक्टर ओवरलोडिंग। सिंपल। ये तो हमने देखा है। अब देखो कंस्ट्रक्टर चेनिंग में मैं क्या कर सकता हूं? मैं ना इस कोड को थोड़ा सा रिड्यूस कर सकता हूं। मुझे पता है कि यहां पे नेम असाइन हो जाएगा और बाकी सारी डिफॉल्ट वैल्यूज़ रह जाएंगी। राइट? यहां पे नेम और एज असाइन हो जाएगा। बाकी सारी डिफ़ॉल्ट वैल्यूज़ रह जाएंगी। यहां पे नेम, एज रोल नंबर असाइन हो जाएगा। बाकी सारी बाकी क्या ही बचा? कॉलेज बचा वो डिफ़ॉल्ट जाएगा। और यहां पे कोई भी डिफ़ॉल्ट नहीं रहेगा। तो अगर हमारे पास चारों पांचों तरह के कंस्ट्रक्टर्स एक्सिस्ट",
+      "source": "transcript_api",
+      "english_text": "Will not go. We have given the value of everything above here. Ok? So we call this constructor overloading. Simple. We have seen this. Now see what can I do in constructor chaining? I can reduce this code a bit. I know that here the pay name will be assigned and all other default values ​​will remain. Right? Here name and age will be assigned. All other default values ​​will remain. Here name, age roll number will be assigned. What else is left? He will default except the college. And there will be no default here. So if we have all the five types of constructors existing"
+    },
+    {
+      "start_time": 2604.88,
+      "end_time": 2632.079,
+      "text": "करते हैं। और फाइनल कंस्ट्रक्टर ये है जो सब कुछ अ सब कुछ बेसिकली असाइन करता है। तो मैं एक कंस्ट्रक्टर से दूसरे कंस्ट्रक्टर को भी कॉल कर सकता हूं। कैसे? यूजिंग दिस कीवर्ड। देखो मैं क्या करूं? मैं एक सिंटेक्स लिखूं। दिस पैरथेसिस अभी मैं बताऊंगा मैं क्या करना चाहता हूं। और यहां पे मैं पास करूं नेम। ठीक है? क्योंकि यह तो हमारा नेम यहां पे है ही।",
+      "source": "transcript_api",
+      "english_text": "Let's do it. And the final constructor is this which basically assigns everything. So I can also call another constructor from one constructor. How? Using this keyword. Look what should I do? Let me write a syntax. This parathesis, now I will tell you what I want to do. And here I pass the name. Ok? Because this is our name here."
+    },
+    {
+      "start_time": 2629.839,
+      "end_time": 2664.24,
+      "text": "ऐज की जगह मैं पास कर दूं ज़ीरो जो डिफ़ॉल्ट वैल्यू होती है। रोल नंबर ज़ीरो जो डिफ़ॉल्ट वैल्यू होती है और नल जो कि हमारा कॉलेज की डिफ़ॉल्ट वैल्यू होती है। तो देखो यहां पे मैंने पता है क्या किया? मैंने इस कंस्ट्रक्टर से अपने सबसे बड़े वाले कंस्ट्रक्टर को कॉल कर दिया। सारी वैल्यूज़ देके नेम, एज, रोल नंबर और कॉलेज। और कैसे क्या कैसे मैंने कॉल किया यूजिंग दिस कीवर्ड। तो दिस का दूसरा यूज़ क्या है? वो एक कंस्ट्रक्टर से दूसरे कंस्ट्रक्टर को कॉल कर सकता है। और उसका सिंटेक्स क्या होता है? आप कीवर्ड लिखते हो दिस और उसके बाद पैरेंसिस बनाते हो। जैसे आप एक फंक्शन को कॉल कर रहे हो। तो अगेन ये मैंने कहा",
+      "source": "transcript_api",
+      "english_text": "Instead of age, I pass zero which is the default value. Roll number is zero which is the default value and NULL which is the default value of our college. So look, do you know what I did here? I called my biggest one from this constructor. Give all the values ​​namely name, age, roll number and college. And how what how I called using this keyword. So what is the second use of this? He can call from one constructor to another. And what is its syntax? You write the keyword this and then make parentheses. Like you are calling a function. So again I said this"
+    },
+    {
+      "start_time": 2662.4,
+      "end_time": 2696.56,
+      "text": "था ना स्पेशल कीवर्ड है। इसके मल्टीपल यूज़ज़ हैं। तो देखो अगर मैं यहां पे जाऊंगा तो मैं सीधा यहां पहुंच जाऊंगा। ये मैं गया कैसे? कुछ नहीं किया मैंने। यहां पे अगर देखो मैंने दिस पे होमवर्वर किया और मैंने अपने मैक में कमांड पकड़ा तो यहां पे मेरे को उसको क्लिक करने का आइकॉन आ गया। सिंपल ये हर आईडी में होता है। आप जा करके इस पे सीधा देख सकते हो। ठीक है? कि मैं कौन से वाले पे रेफर कर रहा हूं। ठीक है? ओके। बहुत बढ़िया। अब यहां पे भी मैं सेम कर सकता हूं। नेम एज को ऐसे ना असाइन करके मैं सीधा क्या करूं? दिस कॉल करूं। नेम की जगह नेम एज की जगह एज। मतलब सबसे बड़ा कंस्ट्रक्टर कॉल कर रहा हूं मैं। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "Tha na is special keyword. It has multiple uses. So see, if I go here, I will reach here directly. How did I go here? I didn't do anything. If you see here, I went to this page and I caught the command in my Mac, then here I got the icon to click on it. Simple, it happens in every ID. You can go and see it directly. Ok? Which one am I referring to? Ok? Ok. very nice. Now I can do the same here too. What do I do directly by not assigning the name age like this? Should I call this? Name instead of name edge instead of edge. Meaning I am calling the biggest constructor. Ok?"
+    },
+    {
+      "start_time": 2694.16,
+      "end_time": 2729.119,
+      "text": "अब रोल नंबर है नहीं तो ज़ीरो और कॉलेज है नहीं तो नल। जो डिफ़ॉल्ट वैल्यूज़ होती हैं, हमने वो पास कर दी। इसको हमने अगेन सेमी कॉललन लगा दिया। ठीक है? सेम यहां पे मैं इतनी बड़ी तीन-तीन लाइन लिखता। इससे अच्छा मैं क्या करता? सीधा दिस कीवर्ड यूज़ करता। नेम की जगह नेम जाता। एज की जगह एज जाती। रोल नंबर की जगह रोल नंबर जाता। और यहां पे चला जाता नल। कुछ इस तरीके से यहां पे नेम जाएगा। ओके? है ना? और यहां पे तो हमने कर ही रखा है। यहां पे एक बार तो लिखना ही पड़ेगा सबको एक-एक बार करके असाइन। है ना? राइट? अब क्या होगा? अब देखो इससे कुछ नहीं होगा। बिल्कुल सेम",
+      "source": "transcript_api",
+      "english_text": "Now if there is a roll number then it is zero and if there is a college then it is null. We have passed the default values. We put it again in semi colon. Ok? Same here I would write such long three lines. What could I do better? Would have used this keyword directly. Name goes in place of name. Edge would go instead of Edge. Roll number would go instead of roll number. And the tap goes here. The name will go here in this manner. Ok? Isn't it? And here we have already done it. Here you will have to write once and assign everyone one by one. Isn't it? Right? What will happen now? Now look, nothing will happen with this. absolutely beans"
+    },
+    {
+      "start_time": 2727.119,
+      "end_time": 2759.839,
+      "text": "आउटपुट आएगा जो पहले आया था। बस हमने सारे कंस्ट्रक्टर को चेंज कर दिया। अब ये वाला कंस्ट्रक्टर, ये वाला कंस्ट्रक्टर और ये वाला कंस्ट्रक्टर तीनों मिला के इसको कॉल कर रहे हैं। तो फाइनली आंसर इसी कंस्ट्रक्टर से आ रहा है। है ना? जैसे ही आपको नेम मिला इसने क्या कहा? मैं बड़े वाले कंस्ट्रक्टर को इसको कॉल कर रहा हूं। नेम की जगह मैं नेम दे दूंगा। बाकी देखो एज, रोल नंबर और अपने कॉलेज की जगह मैं डिफॉल्ट वैल्यूज़ दे दूंगा। यहां पे डिफ़ॉल्ट वैल्यूज़ आ गई। इनफैक्ट अगर आप अब चाहो तो इस डिफॉल्ट कंस्ट्रक्टर को भी आगे यूज़ कर सकते हो। आप क्या करो? ये जो दिस",
+      "source": "transcript_api",
+      "english_text": "The output will come which came earlier. We just changed the entire constructor. Now this one's constructor, this one's constructor and this one's constructor all three together are calling it. So finally the answer is coming from this constructor. Isn't it? What did he say as soon as you got his name? I'm calling the big one's constructor this. I will give name instead of name. Rest see, instead of age, roll number and your college, I will give the default values. Here are the default values. In fact, if you want now, you can use this default constructor further. what do you do? this jo dis"
+    },
+    {
+      "start_time": 2757.68,
+      "end_time": 2788.72,
+      "text": "डॉट नेम है इसकी जगह आपने कोई लेट से डिफॉल्ट वैल्यू ले दी अननोन आप नहीं चाहते नल आए आप चाहते हो कुछ अननोन आ जाए स्क्रीन पे कि भ अभी तक ये ह्यूमन अननोन है। है ना? दिस डॉट एज को आप लेट से ज़ीरो ही बोलना चाहते हो क्योंकि नल वैल्यूज़ हमेशा अच्छी नहीं होती। हम आगे देखेंगे कि नल कितना नल पॉइंटर एक्सेप्शन कितनी बड़ी चीज़ है जावा में। तो हम नल को अवॉइड करते हैं। ज़ीरो और लेट्स से अगेन कॉलेज की जगह मैंने कर दिया अननोन। ठीक है? मैं नल की जगह अननोन देना चाहता हूं। तो मैं इसको भी",
+      "source": "transcript_api",
+      "english_text": "Dot name is there, instead of that you have taken the default value Unknown, you don't want the tap to come, you want something unknown to come on the screen, whether this human is still unknown. Isn't it? You want to call this dot edge as late as zero because null values ​​are not always good. We will see further how big a thing Null Pointer Exception is in Java. So we avoid taps. With zero and lets again, instead of college, I went to unknown. Ok? I want to give unknown instead of tap. so i also"
+    },
+    {
+      "start_time": 2786.4,
+      "end_time": 2813.76,
+      "text": "इस तरह कॉल ना करके मैं सिंपल लिख सकता था। दिस अ नेम की जगह मैं पास करता अननोन अननोन। और आपको पता ही है मैं क्या कर रहा हूं। मैं बड़े वाले का कंस्ट्रक्टर कॉल कर रहा हूं। यहां पे ज़ीरो पास करता। यहां पे ज़ीरो पास करता और यहां पे दोबारा अननोन पास कर देता। कुछ ऐसे। तो मैं इस लाइन की जरूरत नहीं पड़ती। मैं सीधा इस लाइन को लिख के अपना काम चला सकता था। और यहां पे सेमी कॉललन। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "By not calling like this, I could have written simply. Instead of This A Name I would have passed Unknown Unknown. And you know what I'm doing. I'm calling the constructor of the bigger one. Would have passed zero here. Here he would pass zero and here again he would pass unknown. Something like this. So I don't need this line. I could have gone about my business by simply writing this line. And semi colonel here. Ok?"
+    },
+    {
+      "start_time": 2811.76,
+      "end_time": 2844.88,
+      "text": "और सेम प्रोसीजर मैं यहां पे यूज़ करता। मैं इस कॉलेज की जगह यहां पे दे सकता था अननोन कुछ ऐसे। राइट? तो अभी भी मैं क्या कर रहा हूं? मैं अपने आखिरी वाले कंस्ट्रक्टर को ही कॉल कर रहा हूं। अब सेम मैं यहां पे दे देता अननोन। सेम मैं यहां पे दे देता अननोन। अब देखो मेरे पास कोई नल वैल्यूज़ नहीं आई। जहां पे भी नल वैल्यू आ सकती थी नेम और कॉलेज की जगह वहां पे मैंने एक अननोन वेरिएबल पास कर दिया। तो इसको कहते हैं कंस्ट्रक्टर चेनिंग। अगर आप देखना कुछ भी प्रिंट करके सेम ही आउटपुट आएगा। जैसे S1 डॉट नेम करोगे इस बार इसमें तो अननोन आएगा। कॉलेज करोगे तो अननोन आएगा। बाकी",
+      "source": "transcript_api",
+      "english_text": "And I use the same procedure here. I could have given something like this here instead of this college. Right? So what am I still doing? I am calling my last constructor only. Now I would have given the same here to an unknown person. I would have given the same here to an unknown person. Now look, I did not get any null values. Wherever NULL value could have come, I passed an unknown variable in place of name and college. So this is called constructor chaining. If you print anything, you will get the same output. Like if you name S1 dot, this time unknown will come in it. If you go to college, you will become unknown. the rest"
+    },
+    {
+      "start_time": 2843.28,
+      "end_time": 2876.319,
+      "text": "दोनों एज और रोल नंबर ज़ीरो ज़ीरो होंगे। सेम S2 डॉट नेम करोगे तो आदित्य आएगा। बाकी ऐज और रोल नंबर ज़ीरो होगा। कॉलेज अननोन होगा। इसमें रोहित और ऐज नेम और ऐज तो आ जाएगा सही। बाकी सारी डिफ़ॉल्ट वैल्यूज़। इसमें तीनों सही आ जाएगा। कॉलेज डिफ़ॉल्ट और इसमें कुछ भी डिफ़ॉल्ट नहीं रहेगा। ठीक है? तो एक काम करते हैं। बस एक कोई रैंडम वैल्यू प्रिंट करके देख लेते हैं। आउट डॉट प्रिंट LN मैं क्या करता हूं? चलो S3 का S3 का रोल नंबर प्रिंट करने की कोशिश करता हूं। ठीक है? S3 का रोल नंबर तो मुझे ज़ीरो मिलना चाहिए।",
+      "source": "transcript_api",
+      "english_text": "Both age and roll number will be zero zero. If you call the same S2 dot, Aditya will come. Rest age and roll number will be zero. College will be unknown. Rohit and Age's name and age will be included in it. All remaining default values. All three will fit in this. College default and nothing will be default in it. Ok? So let's do one thing. Let's just print some random value and see. Out Dot Print LN What do I do? Let's try to print the roll number of S3. Ok? I should get zero roll number of S3."
+    },
+    {
+      "start_time": 2873.92,
+      "end_time": 2903.839,
+      "text": "बिल्कुल। है ना? और वैसे ही S3 का अगर मैं कॉलेज प्रिंट करने की कोशिश करूं तो मुझे क्या मिलना चाहिए? अननोन मिलना चाहिए। अननोन। है ना? बिल्कुल सही। अब यहां पे मैं एक और चीज आपको बताता हूं। हमने कंस्ट्रक्टर चेनिंग कैसे की थी? कि इन सारे चारों कंस्ट्रक्टर को हमने इस बड़े वाले कंस्ट्रक्टर से जोड़ दिया। एक और तरीका होता है कंस्ट्रक्टर चेनिंग का। वो कैसे? मैं इस सबसे छोटे कंस्ट्रक्टर को उससे बड़े कंस्ट्रक्टर से जोडूं। उससे बड़े को इससे बड़े से जोड़ूं। इससे बड़े को इससे जोडूं और इससे बड़े को इससे जोड़ूं। कैसे?",
+      "source": "transcript_api",
+      "english_text": "Of course. Isn't it? And also what should I get if I try to do a college print of S3? Must be found unknown. Unknown. Isn't it? Correct. Now here let me tell you one more thing. How did we do constructor chaining? That we connected all these four constructors to this big one. Another method is constructor chaining. How is that? Let me connect this smallest constructor to a larger constructor. Let me connect the bigger one with the bigger one. Let me connect the bigger one to this and the bigger one to this. How?"
+    },
+    {
+      "start_time": 2901.359,
+      "end_time": 2935.68,
+      "text": "बहुत सिंपल है। देखो देखो मुझे पता है कि ये जो सबसे बड़ा कंस्ट्रक्टर है ना सबसे छोटा कंस्ट्रक्टर जो कोई आर्गुमेंट नहीं लेता उसमें कुछ भी ना दूं। सिर्फ एक नेम दूं। यानी कि मैं अब इस वाले कंस्ट्रक्टर को कॉल कर रहा हूं। क्योंकि देखो मैंने दिस नेम यानी कि ये एक कंस्ट्रक्टर कॉल करता होगा। कौन सा कंस्ट्रक्टर कॉल करेगा? जिसका सिग्नेचर इससे मिलता होगा। बेसिकली जिसका नाम और एक ही आर्गुमेंट लेता होगा। वो है ये वाला कंस्ट्रक्टर। देखो अगर मैं जाऊंगा तो इस पे आ जाऊंगा। अब ये कंस्ट्रक्टर क्या करेगा? यह कंस्ट्रक्टर कॉल करेगा एक नए कंस्ट्रक्टर को। सिर्फ यह जो नेम है जो इसको नेम मिला यह उसको पास करेगा और एक नई एज पास करेगा ज़ीरो और बड़े",
+      "source": "transcript_api",
+      "english_text": "It is very simple. Look, I know that neither this is the biggest constructor nor the smallest constructor which does not take any argument, so I should not give anything in it. Let me give just one name. That means I am now calling this constructor. Because look I have given this name which means it must be calling a constructor. Which constructor will call? Whose signature would be similar to this. Basically it has a name and takes only one argument. That's this constructor. Look, if I go, I will come here. Now what will this constructor do? This constructor will call a new constructor. Only this name, whatever name it got, it will pass that and will pass a new age, zero and big."
+    },
+    {
+      "start_time": 2934.0,
+      "end_time": 2967.04,
+      "text": "अपने से बड़े कंस्ट्रक्टर को पास कर देगा इस वाले। क्योंकि ये दो आर्गुमेंट वाले कंस्ट्रक्टर को कॉल करता है। और दो आर्गुमेंट वाला कंस्ट्रक्टर कौन है? ये। अब ये क्या करे? नेम, एज और रोल नंबर पास करे अपने से बड़े कंस्ट्रक्टर को। इसको भी डाटा देता हूं कुछ इस तरीके से। तो सबसे पहले देखो क्या हुआ? इस कंस्ट्रक्टर ने कॉल किया इससे बड़े कंस्ट्रक्टर को। तो अननोन दे के कॉल किया। तो इसको नेम में अननोन मिल गया। इस कंस्ट्रक्टर ने क्या किया? इस अननोन को तो लिया यहां पे और ऐज की जगह ज़ीरो पास किया अपने से बड़े कंस्ट्रक्टर को। इस कंस्ट्रक्टर ने क्या किया? नेम और एज सूथ को मिल गया। ये नेम और ऐज है ना? रोल नंबर की जगह अगेन ज़ीरो",
+      "source": "transcript_api",
+      "english_text": "This one will pass to a bigger constructor than himself. Because it calls a constructor with two arguments. And what is a constructor with two arguments? These. What should he do now? Pass name, age and roll number to your senior constructor. I give data to this also in this manner. So first of all see what happened? This constructor called a bigger constructor. So he called anonymously. So it got unknown in the name. What did this constructor do? This unknown person was taken here and instead of age, he passed zero to his senior constructor. What did this constructor do? Name and age soothed. This is name and age, right? Again zero instead of roll number"
+    },
+    {
+      "start_time": 2965.119,
+      "end_time": 2996.96,
+      "text": "पास किया अपने से बड़े कंस्ट्रक्टर को। तो इसको नेम, एज रोल नंबर मिल गया। इसको कॉलेज नेम नहीं मिला। तो इसने कॉलेज नेम पास किया एज़ अननोन अपने से बड़े कंस्ट्रक्टर को जो कि है ये। तो अब देखो मैंने चेनिंग कैसे की? इससे जोड़ा इसको, इससे जोड़ा इसको और फाइनली इस बड़े वाले को जोड़ा। उससे भी बड़े वाले को, सबसे बड़े वाले को। राइट? तो ये भी एक तरीका है कंस्ट्रक्टर चेनिंग का। अभी भी क्या हो रहा होगा? जब भी मैं एक ऑब्जेक्ट बनाताऊंगा ऐसे न्यू स्टूडेंट खाली तो सबसे पहले ये वाला कंस्ट्रक्टर कॉल होगा। जैसे ही ये कॉल हुआ इसने कॉल किया इस कंस्ट्रक्टर को। इसने कॉल किया इस",
+      "source": "transcript_api",
+      "english_text": "Passed it to a bigger constructor. So he got his name and roll number. It did not get the name of college. So it passed the college name as unknown to its bigger constructor which is this. So now see how I did the chaining? Connected this to this, connected this to this and finally connected this big one. To the one even bigger than that, to the biggest one. Right? So this is also a method of constructor chaining. What could still be happening? Whenever I create an object like New Student Empty, this constructor will be called first. As soon as this call is made it calls this constructor. He called this"
+    },
+    {
+      "start_time": 2998.4,
+      "end_time": 3024.48,
+      "text": "कंस्ट्रक्टर को। और फाइनली वैल्यू्यूज वही मिली कि यहां पे क्या हुआ होगा? इसने अननोन कॉल किया इसके साथ। इसने अननोन और ज़ीरो कॉल किया इसको। इसने अननोन ज़ीरो ज़ीरो कॉल किया इसके साथ। इसने अननोन ज़ीरो ज़ीरो अननोन कॉल किया इसके साथ। और फाइनली यहां पे वैल्यू्यूज क्या आ गई? अननोन 0 अननोन। तो अगर आपको भरोसा नहीं होता तो एक काम करो s1 की डिटेल्स को प्रिंट कर लो। ठीक है? एक बार ये प्रिंट करके देख लेते हैं।",
+      "source": "transcript_api",
+      "english_text": "To the constructor. And finally the values ​​found were the same as what would have happened here? He made an unknown call with this. He called him unknown and zero. It called Unknown Zero Zero with it. It called unknown zero zero unknown with it. And finally what are the values ​​here? Unknown 0 Unknown. So if you don't believe then do one thing print the details of s1. Ok? Let's print it once and see."
+    },
+    {
+      "start_time": 3022.24,
+      "end_time": 3053.76,
+      "text": "बिल्कुल अननोन जीरो ज़ीरो अननोन जो हमने एक्सपेक्ट किया था। और अगर आप देखना चाहते हो कि सारी कॉल ऐसी हुई है क्या? इससे ये कॉल हुआ, इससे ये कॉल हुआ, इससे ये कॉल हुआ। तो एक काम करते हैं। हर कंस्ट्रक्टर में प्रिंट करा लेते हैं कुछ। सिस्टम डॉट आउट डॉट प्रिंट एलn। ठीक है? आई एम इन फर्स्ट कंस्ट्रक्टर ऐसे लिख लेते हैं। ठीक है? सिर्फ ये देखने के लिए कि हम क्या उसी तरीके से चल रहे हैं। पहले ये आना चाहिए फिर आना चाहिए। ये का कॉल करेंगे।",
+      "source": "transcript_api",
+      "english_text": "Exactly unknown zero zero unknown which we expected. And if you want to see whether all the calls happened like this? This caused this call, this caused this call, this caused this call. So let's do one thing. Let's print something in every constructor. system dot out dot print ln. Ok? I am in the first constructor is written like this. Ok? Just to see if we're going the same way. This should come first and then this should come. Will call this."
+    },
+    {
+      "start_time": 3052.079,
+      "end_time": 3085.68,
+      "text": "ओके? मैं बताता हूं अब इसमें एरर क्यों आ रहा है। इस लाइन को हम यहां नहीं लिख सकते। हमें इस लाइन को दिस के बाद लिखना पड़ेगा। ठीक है? मैं बता दूंगा क्यों आपको अभी। ठीक है? इसको भी हम दिस के बाद ही लिखते हैं। ओके? चलो साथ ही बता देता हूं। देखो, जब भी आप कोई कीवर्ड लिखते हो ना दिस, यह हमेशा पहली लाइन होनी चाहिए कंस्ट्रक्टर के अंदर की। अगर यह लाइन पहली नहीं है या इससे ऊपर भी कुछ है, तो एरर आएगा। तो, ये लाइन हमेशा पहली लाइन होनी चाहिए। बस इतना आपको याद रखना है। ठीक है? ये अलाउ ही नहीं करेगा जावा कि इसके ऊपर कोई लाइन हो। ठीक",
+      "source": "transcript_api",
+      "english_text": "ok? Now let me tell you why this error is coming. We cannot write this line here. We will have to write this line after this. Ok? I'll tell you why right now. Ok? We write this also only after December. Ok? Let me tell you at the same time. Look, whenever you write any keyword this, it should always be the first line inside the constructor. If this line is not the first or there is anything above it, an error will occur. So, this line should always be the first line. That's all you have to remember. Ok? Java will not allow any lines above it. okay"
+    },
+    {
+      "start_time": 3083.359,
+      "end_time": 3116.24,
+      "text": "है? तो इसलिए हमारा एरर आ रहा था। अब इसमें अगेन मैं यहां पे लिख लूंगा आई एम इन लेट्स से थर्ड कंस्ट्रक्टर। यहां पे लिख लूंगा आई एम इन फोर्थ कंस्ट्रक्टर। और यहां पे लिख लूंगा आई एम इन फिफ्थ कंस्ट्रक्टर कुछ इस तरीके से। तो देखो मेरी स्क्रीन पे जब मैं ये चारों प्रिंट करने की कोशिश करूंगा तो ये चार प्रिंट होने के लिए ये सब वैल्यू्यूज भी साथ-साथ प्रिंट होंगी। तो सबसे पहले देखो मैं हम एक्सपेक्ट करते हैं एरर आउटपुट क्या आएगा।",
+      "source": "transcript_api",
+      "english_text": "Is it? So that's why our error was coming. Now again I will write here I am in let's say third constructor. Here I will write I am in fourth constructor. And here I will write I am in the fifth constructor in something like this. So see on my screen, when I try to print these four, all these values ​​will be printed simultaneously to get these four printed. So first of all see what error output we expect."
+    },
+    {
+      "start_time": 3113.359,
+      "end_time": 3147.68,
+      "text": "ठीक है? चलो खुद से देखते हैं। सबसे पहले हमने इसका ऑब्जेक्ट बनाया s1 स्टूडेंट s1 = न्यू स्टूडेंट। ठीक है? जैसे ही हमने इसका ऑब्जेक्ट बनाया सबसे पहले हमारा ये वाला कंस्ट्रक्टर कॉल हुआ उसी टाइम जैसे ही हमने ये न्यू स्टूडेंट कीवर्ड लिखा हमारा ये वाला कंस्ट्रक्टर कॉल हुआ और इसने क्या किया इस बड़े वाले कंस्ट्रक्टर को कॉल किया तो ये कॉल हुआ फिर इसने बड़े वाले को कॉल किया ये कॉल हुआ इसने बड़े वाले को कॉल किया फाइनली ये वाला कॉल हुआ ठीक है फिर इसने इन सबको वैल्यू्यूज असाइन की नेम एज रोल नंबर कॉलेज नेम को अननोन मिला ऐज को रोल नंबर को ज़ीरो मिला कॉलेज को दोबारा अननोन मिला ये वैल्यू असाइन हो",
+      "source": "transcript_api",
+      "english_text": "ok? Let's see for ourselves. First of all we created its object s1 Student s1 = New Student. Ok? As soon as we created its object, first of all, this one of our constructor got called. At the same time, as soon as we wrote this new student keyword, this one of our constructor got called and what did it do? Called this big one, then this one got called, then this one called the big one, this one called this big one, finally this one got called, okay, then it assigned values to all of them. Name age, roll number, college name, got unknown, age, roll number got zero, college again unknown. got this value assigned"
+    },
+    {
+      "start_time": 3145.68,
+      "end_time": 3179.359,
+      "text": "के सबसे पहले हमारा स्क्रीन पे आ जाएगा आई एम इन फिफ्थ कंस्ट्रक्टर राइट क्यों आएगा सबसे वाला ये क्योंकि देखो हमने रिकर्शन की भी बात की थी। है ना? उसी तरीके से कुछ आप देखो इसने कॉल किया इसको। ये लाइन तो अभी तक एग्जीक्यूट ही नहीं हुई। क्योंकि इस कॉल की वजह से ये सीधा कहां पहुंच गया? इस वाले पे। अब इसकी पहली लाइन क्या है? ये जैसे ही कॉल हुआ ये पहुंच गया हमारे इस वाले कंस्ट्रक्टर में। ये लाइन तो एग्जीक्यूट ही नहीं हुई। सेम ये पहुंच गया इस वाले कंस्ट्रक्टर में। ये पहुंच गया इस वाले कंस्ट्रक्टर में। और इसने ये सारा काम पहले किया और फिर प्रिंट किया। आई एम इन फिफ्थ कंस्ट्रक्टर। अब ये कंस्ट्रक्टर खत्म हो गया। ये कॉल वापस कहां जाएगी?",
+      "source": "transcript_api",
+      "english_text": "First of all, I am in the fifth constructor will come on our screen. Why will this one come on the right because look, we also talked about recursion. Isn't it? You see, he called her in the same manner. This line has not been executed yet. Because because of this call, where did he reach directly? On this one. Now what is the first line of this? As soon as this call is made, it reaches our constructor. This line was not executed at all. This bean reached this constructor. It reached this constructor. And it did all this work first and then printed it. I'm in the Fifth Constructor. Now this constructor is finished. Where will this call return?"
+    },
+    {
+      "start_time": 3177.68,
+      "end_time": 3211.839,
+      "text": "जिसने इस बड़े वाले कंस्ट्रक्टर को कॉल किया होगा। इसको कॉल किया था इस वाले कंस्ट्रक्टर ने। है ना? फिर स्क्रीन पे प्रिंट होगा आई एम इन फोर्थ कंस्ट्रक्टर। अब यह भी खत्म हो गया। अब कॉल वापस कहां जाएगी? इसने जिसको कॉल किया था। इसने कॉल किया था इसको। अब फिर प्रिंट होगा आई एम इन थर्ड कंस्ट्रक्टर। फिर वापस जाएगी इस पे। आई एम इन सेकंड। फिर वापस जाएगी इस पे। आई एम इन फर्स्ट। और हम इन सब से बाहर आ जाएंगे। राइट? उसके बाद जब हम ये वाली चीजें प्रिंट करने की कोशिश करेंगे तो हमारा अननोन ज़ीरो ज़ीरो अननोन कॉल हो जाएगा। ठीक है? तो पहले आना चाहिए आई एम इन फिफ्थ कंस्ट्रक्टर। फिर फोर्थ, थर्ड, सेकंड, फर्स्ट। पहले ये सब आना चाहिए।",
+      "source": "transcript_api",
+      "english_text": "Which would have called the constructor of this big one. This one was called by this constructor. Isn't it? Then I am in the fourth constructor will be printed on the screen. Now this too is over. Now where will the call go back? The one whom he had called. He had called him. Now again I am in third constructor will be printed. Will go back to this again. I'm in second. Will go back to this again. I'm in first. And we will come out of all this. Right? After that, when we try to print these things, our unknown will be called zero zero unknown. Ok? So first should come I am in fifth constructor. Then fourth, third, second, first. All this should come first."
+    },
+    {
+      "start_time": 3210.079,
+      "end_time": 3244.96,
+      "text": "उसके बाद इन सब की वैल्यूज़ आनी चाहिए। अननोन 0 अननोन। ठीक है? ओके। देखते हैं ऐसा ही हो रहा है क्या? बिल्कुल। ये देखो। आई एम इन फिफ्थ कंस्ट्रक्टर फोर्थ, थर्ड, सेकंड, फर्स्ट। अच्छा ये दोबारा क्यों प्रिंट हो रहे हैं? ये इसलिए प्रिंट हो रहे हैं क्योंकि हमने बहुत सारे ऑब्जेक्ट बना रखे हैं। इनको एक बार कट कर देते हैं। कमेंट कर देते हैं। सॉरी। अब एक बार देखते हैं। ये देखो। आई एम इन फिफ्थ, फोर्थ, थर्ड, सेकंड, फर्स्ट कंस्ट्रक्टर। और उसके बाद सारी वैल्यूज़ प्रिंट हो गई। अननोन, ज़ीरो अननोन। ठीक है? तो इससे आप फ्लो ऑफ कंट्रोल देख सकते हो कैसा जा रहा है कि पहले यहां से यहां, यहां से यहां, यहां से",
+      "source": "transcript_api",
+      "english_text": "After that the values of all these should come. Unknown 0 Unknown. Ok? Ok. Let's see if this is what is happening? Absolutely. Look at this. I'm in Fifth Constructor Fourth, Third, Second, First. Well why are these being printed again? These are being printed because we have created too many objects. Let's cut them once. Let's comment. Sorry. Now let's see once. Look at this. I'm in fifth, fourth, third, second, first constructor. And after that all the values ​​were printed. Unknown, zero unknown. Ok? So from this you can see the flow of control, how it is going from here to here, from here to here, from here"
+    },
+    {
+      "start_time": 3243.2,
+      "end_time": 3277.04,
+      "text": "यहां और फिर वापस से वो सब कुछ प्रिंट करता हुआ ऊपर तक गया और फिर ये सारी वैल्यू्यूज प्रिंट कर दी। ठीक है? तो यही है कंस्ट्रक्टर चेनिंग। आप इसके साथ और खेल सकते हो। आप चाहो तो डायरेक्टली इससे पहले ये वाला कॉल करो जो हमने पहले किया था। और फिर क्या प्रिंट होगा? फिर प्रिंट होगा आई एम इन फिफ्थ कंस्ट्रक्टर। और उसके तुरंत बाद प्रिंट होगा आई एम इन फर्स्ट कंस्ट्रक्टर। है ना? सेम आप हर चीज़ के साथ खेल के देख सकते हो। आपको समझ आ जाएगा कंस्ट्रक्टर चेनिंग कैसे काम करती है और ये बहुत इंपॉर्टेंट हो जाती है जब आपको कुछ ऐसा करना हो कि आपको बहुत सारा लंबा-लंबा कोड नहीं लिखना क्योंकि यहां तो अभी सिर्फ चार वेरिएबल है ना आप चाहते हो",
+      "source": "transcript_api",
+      "english_text": "Here and then back again he went up to the top printing everything and then printed all these values. Ok? So this is constructor chaining. You can play more with it. If you want, make this call directly before this which we had made earlier. And then what will be printed? Then it will print I am in fifth constructor. And immediately after that it will print I am in first constructor. Isn't it? You can see it playing with everything. You will understand how constructor chaining works and it becomes very important when you have to do something that you do not want to write a lot of long code because there are only four variables here, don't you want?"
+    },
+    {
+      "start_time": 3274.88,
+      "end_time": 3307.44,
+      "text": "ये इसको कॉल करके अपनी वैल्यू मिल मिल जाए इसको इसको इससे कॉल करके वैल्यू मिल जाए तो अपने सारे कंस्ट्रक्टर्स को आपस में हमने क्या किया चेंज कर दिया यूजिंग दिस कीवर्ड तो दिस एक बहुतेंट कीवर्ड है आपको याद रखना पड़ेगा दिस हमेशा क्या करता है एक करंट ऑब्जेक्ट के रेफरेंस को स्टोर करता है तो आप दिस डॉट नेम ऐसे भी लिख सकते हो या फिर एक कंस्ट्रक्टर भी कॉल कर सकते हो यूजिंग दिस कीवर्ड। ठीक है? चलो आई होप आपको ये सारी चीजें समझ आई होंगी। अब इस लेक्चर को बस कंक्लूड करते हैं। उससे पहले मुझे आपको बस एक और चीज बतानी है कि ना अ",
+      "source": "transcript_api",
+      "english_text": "This should get its value by calling this. This should get its value by calling this. So what have we changed in all our constructors? Using this keyword. This is a very important keyword. You have to remember that what this always does is store the reference of a current object. So you can also write this dot name like this or you can also call a constructor using this keyword. Ok? Well, I hope you have understood all these things. Now let's just conclude this lecture. Before that I just have to tell you one more thing"
+    },
+    {
+      "start_time": 3305.92,
+      "end_time": 3340.16,
+      "text": "ये ना इंटरव्यू में बहुत इंपॉर्टेंट क्वेश्चन आता है कि क्या हम कंस्ट्रक्टर को मैनुअली कॉल कर सकते हैं? मैनुअली। जैसे हम बाकी फंक्शंस को कॉल करते हैं। और इसका आंसर होता है नो। हम बस कंस्ट्रक्टर को मैनुअली खुद से कॉल नहीं कर सकते। कंस्ट्रक्टर कब कॉल होगा? जब या तो उसका ऑब्जेक्ट बनाया जाए जैसे स्टूडेंट s1 = न्यू स्टूडेंट यहां पे पहली बार हमने कंस्ट्रक्टर को कॉल करते हैं या फिर यूजिंग दिस कीवर्ड जो हमने ऊपर जो हमने कंस्ट्रक्टर्स के अंदर लिखा हुआ था हमने क्या किया था कुछ ऐसे",
+      "source": "transcript_api",
+      "english_text": "This very important question comes in the interview that can we call the constructor manually? Manually. Like we call the rest of the functions. And the answer is no. We simply cannot call the constructor manually. When will the constructor be called? When either its object is created like student s1 = new student, here for the first time we call the constructor or using this keyword which we have written above inside the constructors, what we did was something like this"
+    },
+    {
+      "start_time": 3337.119,
+      "end_time": 3368.559,
+      "text": "नहीं लिख था दिस नेम और लेट्स से यहां पे हम कॉमा एज और हमने कहा था इस वाले कंस्ट्रक्टर को कॉल कर दो तो हम इस तरीके से भी कर सकते हैं पर हम एक नॉर्मल फंक्शन की तरह कहीं भी कोड के बीच में ऐसे नहीं लिख सकते कि भैया मुझे एक स्टूडेंट का कंस्ट्रक्टर कॉल करना है या फिर अगर मुझे कुछ आर्गुमेंट भी देनी है तो आर्गुमेंट देके कॉल करना है। यह लिखना अलाउड नहीं है। आप कंस्ट्रक्टर को खुद से मैनुअली कॉल नहीं कर सकते। इट कैन ओनली बी कॉल्ड या तो जब आप ऑब्जेक्ट क्रिएट कर रहे हो फर्स्ट टाइम या फिर यूजिंग दिस कीवर्ड जो हमने अभी देखा था।",
+      "source": "transcript_api",
+      "english_text": "We did not write this name and let's say, here we have comma as and we had said call this constructor, then we can do it in this way also, but like a normal function, we cannot write anywhere in the middle of the code like, brother, I have to call the constructor of a student or if I have to give some arguments, then I have to call it by giving arguments. This is not written aloud. You cannot call the constructor manually. It can only be called either when you are creating the object for the first time or using the this keyword which we just saw."
+    },
+    {
+      "start_time": 3366.88,
+      "end_time": 3400.24,
+      "text": "ठीक है? तो ये इंटरव्यू का बहुतेंट क्वेश्चन है। आपको एक चीज याद रखनी पड़ेगी। दूसरा एक और इंटरव्यू स्पेसिफिक क्वेश्चन है जो बहुतेंट रहता है कि भैया हमने कहा था हां यहीं पे देखते हैं कि जब भी हम ये लाइन लिखते हैं स्टूडेंट s1 = न्यू स्टूडेंट तो ये जो न्यू कीवर्ड है ये डायनेमिकली मेमोरी को एलोकेट करता है। डायनेमिकली मतलब रन टाइम पे है ना तो ऐसा भी तो हो सकता है कि हम रन टाइम पे ये मान ले हीप मेमोरी है। ठीक है? हिप इसको रन टाइम पे यहां पे इतना स्पेस ही नहीं मिला इस ऑब्जेक्ट को एलोकेट करने का। बिल्कुल",
+      "source": "transcript_api",
+      "english_text": "ok? So this is a common interview question. You have to remember one thing. Second, there is another interview specific question which is often asked that brother, we had said yes, here we see that whenever we write this line student s1 = new student, then this new keyword, it allocates the memory dynamically. Dynamically means at run time, otherwise it is also possible that we assume that it is heap memory at run time. Ok? However, at run time it did not get enough space to allocate this object. absolutely"
+    },
+    {
+      "start_time": 3398.319,
+      "end_time": 3430.079,
+      "text": "हो सकता है क्योंकि ये एक रन टाइम पे कर रहा है। हो सकता है हमारी हीप मेमोरी पहले से ही पूरी फुल हो, भरी हुई हो। हमें वो स्पेस ही नहीं मिले इस ऑब्जेक्ट को एलोकेट करने का। तो ऐसा बिल्कुल हो सकता है। उस केस में क्या होगा? हमें एक रन टाइम एक्सेप्शन मिलेगी। रन टाइम एक्सेप्शन। ठीक है? इसको मैं ढंग से लिख लेता हूं कि हमारे को क्या होगा? एक रन टाइम एक्सेप्शन मिलेगी। कब? जब हमारे पास इनफ स्पेस अवेलेबल नहीं होगा हीप मेमोरी के अंदर।",
+      "source": "transcript_api",
+      "english_text": "Maybe because it is doing it at a run time. It may be possible that our heap memory is already full. We did not get the space to allocate this object. So this can definitely happen. What will happen in that case? We will get a run time exception. Run Time Exception. Ok? Let me write this down in a manner that what will happen to us? A runtime exception will be thrown. When? When we do not have enough space available inside the heap memory."
+    },
+    {
+      "start_time": 3427.2,
+      "end_time": 3459.839,
+      "text": "अगर यह पूरी हिप मेमोरी भरी होगी नॉट इनफ स्पेस अवेलेबल नॉट इनफ स्पेस इन हिप कुछ इस तरीके से ठीक है तो ये बहुतेंट क्वेश्चन है कई बार इंटरव्यू में पूछ लेते हैं लोगों को लगता है हर बार मेमोरी मिल जाएगी जरूरी नहीं है हाई चांस है हर बार मिल ही जाती है पर कभी कबभार इन मेमोरी इनसफिशिएंट मेमोरी हो सकती है आपका अगर हीप फुल हो जाए दूसरा जो मैंने आपको कहा कंस्ट्रक्टर आप डायरेक्टली खुद से कॉल नहीं कर सकते दो ही तरीके से कॉल कर सकते हो या तो आप पहली बार जब आप ऑब्जेक्ट बना रहे हो या यूजिंग दिस कीवर्ड जो हमने पहले देखा था तो आई होप आपको मजा आया होगा सारी चीजें अच्छे समझ आई होंगी। इस वीडियो में",
+      "source": "transcript_api",
+      "english_text": "If this whole heap memory will be filled, not enough space available, not enough space in heap, is it ok in this way, then these are many questions which are asked many times in interviews, people think that memory will be available every time, it is not necessary that there is a high chance every time, but at times, memory in memory may be insufficient. If the heap becomes full, secondly, what I told you, you cannot directly call the constructor by yourself, you can call in only two ways, either you When you are creating an object for the first time or using this keyword which we saw earlier, I hope you would have enjoyed and understood everything well. in this video"
+    },
+    {
+      "start_time": 3458.24,
+      "end_time": 3464.44,
+      "text": "इतना ही। आपसे मिलते हैं नेक्स्ट वीडियो में। तब तक के लिए थैंक यू सो मच।",
+      "source": "transcript_api",
+      "english_text": "That's all. See you in the next video. Till then thank you so much."
+    }
+  ],
+  "playlist_id": "PLXZCnQTdmeaE",
+  "playlist_title": "OOPs in Java Full Course"
+}

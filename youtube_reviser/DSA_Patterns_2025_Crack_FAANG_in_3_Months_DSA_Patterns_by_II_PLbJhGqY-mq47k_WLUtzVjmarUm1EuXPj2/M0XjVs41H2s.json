@@ -1,0 +1,450 @@
+{
+  "video_id": "M0XjVs41H2s",
+  "video_title": "DP in 15 Days Episode 08 | Subset Sum Equals to Target",
+  "video_number": 116,
+  "chunks": [
+    {
+      "start_time": 2.149,
+      "end_time": 36.79,
+      "text": "अगर आप ये डीपी शुरू शुरू से देख रहे हैं ना मतलब शुरू का पांच छह एपिसोड देख चुके हैं तो इस प्रॉब्लम में आपको 5 मिनट से ज्यादा नहीं लगेगा। अगर आप शुरू से नहीं देख रहे हैं तो आप कुछ भी कर लीजिए। आप हनुमान चालीसा भी पढ़ लेंगे तो आपको ये समझ में नहीं आएगा। कहने का मतलब कि आप अगर पहली बार वीडियो पे आए हैं तो पहले का देख के आइए। मतलब पहले का चार पांच एपिसोड तो देख लीजिए डीपी का अच्छे से समझ में आ जाएगा। चलिए। तो देखो सबसेट सम प्रॉब्लम नैप्सक प्रॉब्लम से भी आसान प्रॉब्लम है। नैप्सक जितना आसान था उससे भी आसान। मतलब नैपक का 50% प्रॉब्लम है। ठीक है? कहता क्या है प्रॉब्लम कि आपको एक एरे दिया हुआ है। क्या दिया हुआ है? एक एरे दिया हुआ है। अच्छा एरे में क्या है? एरे में आपको एक पॉजिटिव इंटीजर्स है। क्या? पॉजिटिव।",
+      "source": "caption",
+      "english_text": "If you are watching this DP from the beginning, meaning you have watched the first five-six episodes, then this problem will not take you more than 5 minutes. If you are not watching from the beginning then you can do anything. Even if you read Hanuman Chalisa, you will not understand this. That is to say, if you have come to the video for the first time, then come and watch the first one. Meaning, watch the first four-five episodes and you will understand DP clearly. Let go. So see, the subset sum problem is an easier problem than the knapsack problem. Even easier than the knapsack. Meaning there is 50% problem of Nappy. Ok? What the problem says is that you are given an array. What is given? An array is given. Well what's in the array? In the array you have positive integers. What? Positive."
+    },
+    {
+      "start_time": 36.8,
+      "end_time": 71.19,
+      "text": "बहुत ध्यान से देखिएगा। पॉजिटिव नेगेटिव इंटीजर नहीं है। केवल पॉजिटिव नंबर है। अच्छा। और आपको एक सम दिया हुआ है। मान लीजिए आपको सम कुछ सिक्स करके दिया हुआ है। मतलब आपको एक एरे दिया है जिसमें पॉजिटिव नंबर है। एक आपको सम दिया है। सम भी आपका पॉजिटिव है। सम भी नेगेटिव नहीं है। तो सम सब पॉजिटिव है। अच्छा वेरी गुड। आपको क्या बताना है? आपको बस क्या बताना है? दो चीजें। ट्रू या फॉल्स। ट्रू या फॉल्स कब? जब इस एरे में कोई भी ऐसा सबसेट हो। सबसेट का मतलब कि एरे का एक पार्ट कंटीन्यूअस पार्ट नहीं। कोई भी पार्ट मतलब एरे में अगर 10 एलिमेंट है। सबसेट का मतलब",
+      "source": "caption",
+      "english_text": "Will look very carefully. Positive is not a negative integer. There are only positive numbers. Good. And you have been given a sum. Suppose you have been given some number of sixes. Meaning you are given an array which contains positive numbers. One has been given to you. Even yours is positive. Even is not negative. So all is positive. Okay very good. What do you have to say? What do you just want to tell me? Two things. True or False. When is true or false? When this array contains any such subset. Subset means a part of the array and not a continuous part. Any part means if there are 10 elements in the array. meaning of subset"
+    },
+    {
+      "start_time": 71.2,
+      "end_time": 103.99,
+      "text": "क्या? आप चार एलिमेंट ले लिए वो भी सबसेट हो गया। पांच एलिमेंट ले लिए वो भी सबसेट हो गया। सारा 10 एलिमेंट ले लिए वो भी सबसेट हो गया। सबसेट मतलब एरे का कोई भी पार्ट कंटीन्यूअस नहीं। एरे में कोई भी अपने मनपसंद से नंबर कोई भी कॉम्बिनेशन ले लीजिए। अगर कोई ऐसा सबसेट है जिसका सम जिसका सम इक्वल इक्वल टू आपका ये वाला सम है तो इस केस में आपको क्या बोलना है कि हां भैया ट्रू है। अगर कोई सबसेट नहीं है एरे में मतलब एरे का कोई ऐसा कॉम्बिनेशन पॉसिबल नहीं है जिसको जोड़ के आप ये सम बना सके उस केस में आपको फॉल्स रिटर्न",
+      "source": "caption",
+      "english_text": "what? You took four elements and that too became a subset. By taking five elements, that too becomes a subset. All 10 elements were taken and that too became a subset. Subset means no part of the array is continuous. Take any combination of numbers of your choice in the array. If there is a subset whose sum is equal to your sum, then what you have to say in this case is that yes brother, it is true. If there is no subset in the array, it means that no such combination of the array is possible by adding which you can make this sum, in that case you will get false return."
+    },
+    {
+      "start_time": 104.0,
+      "end_time": 135.91,
+      "text": "करना है। फॉर एग्जांपल फॉर एग्जांपल अगर एरे ऐसा दिया हुआ है 1 2 और 4 0 1 2 ठीक है? मान लीजिए आपका सम इज इक्वल टू 3 दिया हुआ है तो आपका आंसर क्या होना चाहिए? आपका आंसर होना चाहिए ट्रू। क्यों? क्योंकि आप चाहें ना तो ये वन और टू ले सकते हैं जिसका सम हो जाएगा थ्री। समझ में आती है? अगर सम आपका दिया हुआ है छह तो भी आपका आंसर ट्रू होना चाहिए। क्यों? क्योंकि आप टू और फोर लेके उसको सिक्स बना सकते हैं। अगर आपका सम है पांच तो भी आपका आंसर सही होना चाहिए। क्यों? क्योंकि आप वन और फोर लेके उसको पांच बना सकते हैं।",
+      "source": "caption",
+      "english_text": "Have to do. For example, if the array is given by 1 2 and 4 0 1 2, okay? Suppose your sum is equal to 3, then what should be your answer? Your answer should be true. Why? Because if you want, you can take one and two which will amount to three. Do you understand? Even if the number given by you is six, your answer should still be true. Why? Because you can take two and four and make it six. Even if your even is five, your answer should be correct. Why? Because you can take one and four and make it five."
+    },
+    {
+      "start_time": 135.92,
+      "end_time": 169.75,
+      "text": "लेकिन अगर आपका सम है मान लीजिए 10 तो क्या आप कोई भी सबसेट ले सकते हैं जिससे सम 10 हो जाए? नहीं ले सकते हैं करके देख लीजिए। कोई भी एरा ऐसा एरे का पार्ट आप नहीं ले सकते हैं जिससे कि सम 10 आ जाए। इस केस में आपका आंसर क्या होना चाहिए? आपका आंसर होना चाहिए फॉल्स। तो ये आपका कुल मिला के क्वेश्चन है। आइए अब इस क्वेश्चन को समझा जाए, खोला जाए, देखा जाए कि क्यों ये डीपी का प्रॉब्लम है? अगर डीपी का प्रॉब्लम है तो रिकर्शन कैसे लिखेंगे? अगर रिकर्शन लिख लेंगे टैबुलेशन कैसे लिखेंगे सब चीज देखेंगे बहुत जल्दी-जल्दी से चलिए तो सबसे पहली बात कि हम आपको क्या बोल रहे हैं कि कोई भी चीज",
+      "source": "caption",
+      "english_text": "But if your sum is, say, 10, can you take any subset that makes the sum 10? If you can't take it, try it. You cannot take a part of any array such that the sum is 10. What should be your answer in this case? Your answer should be Falls. So this is your overall question. Now let us understand this question, let us see why this is a problem of DP? If there is a problem of DP then how to write recursion? If we write recursion, how will we write tabulation, we will see everything very quickly, so first of all, what are we telling you that any thing"
+    },
+    {
+      "start_time": 169.76,
+      "end_time": 202.949,
+      "text": "डीपी का प्रॉब्लम कब होता है या फिर कोई भी चीज रिक्शन का प्रॉब्लम कब होता है कभी भी ना जब आपको चॉइस दे दिया जाए चॉइस बेस्ड क्वेश्चन क्या चॉइस बेस्ड क्वेश्चन चॉइस बेस्ड क्वेश्चन का क्या मतलब होता है कि आपको ना हर पॉइंट पे चॉइस लेना पड़ेगा आप कोई एल्गोरिदम डिजाइन नहीं कर सकते हैं कि चलो इस नंबर को हम लेंगे या इस नंबर को हम नहीं लेंगे। जैसा कि हम बार-बार बोलते हुए आ रहे हैं कि आप कोई पुख्ता फैसला नहीं ले सकते हैं कि चलो हम इस नंबर को नहीं लेंगे या चलो इस नंबर को तो हम ले ही लेंगे। इसका क्या मतलब होता है? देखिए मान",
+      "source": "caption",
+      "english_text": "When does the problem of DP or any other thing occur? When does the problem of reaction occur? Never, when you are given a choice. What is a choice based question? What does a choice based question mean that you will not have to take a choice at every point? You cannot design an algorithm that we will take this number or we will not take this number. As we have been saying again and again that you cannot take any firm decision that we will not take this number or we will definitely take this number. What does this mean? look at the value"
+    },
+    {
+      "start_time": 202.959,
+      "end_time": 236.149,
+      "text": "लीजिए आपका एरे ऐसा है वन टू और 5 1 2 और फाइव। ठीक है? 0 1 2 अब देखिए मान लीजिए आपका सम जो है ना वो फोर है। आपका सम फोर। मतलब आपको चार वाला सम निकालना है। अब आप आए पहले एलिमेंट पे। किस पहले एलिमेंट पे? इस वाले एलिमेंट पे। क्या नंबर है ये? वन। अब क्या आप कोई ऐसा डिसीजन ले सकते हैं पुख्ता मन से कि चलो हम वन को लेंगे या तो हम वन को नहीं लेंगे। अगर आप ऐसा डिसीजन लेते हैं। आप बोलते हैं कि चलो जो भी सबसेट बनेगा ना उसमें वन को तो हम रखेंगे ही रखेंगे। अब देखिए अगर आप वन को रख लिए",
+      "source": "caption",
+      "english_text": "Take your array like this one two and 5 1 2 and five. Ok? 0 1 2 Now see, suppose your sum is four. Your even four. Meaning you have to find the sum of four. Now you come to the first element. On which first element? On this element. What number is this? Forest. Now can you take a decision with a strong mind that either we will take the forest or we will not take the forest. If you take such a decision. You say that whatever subset is formed, we will definitely keep the forest in it. Now see if you keep the forest"
+    },
+    {
+      "start_time": 236.159,
+      "end_time": 269.51,
+      "text": "सारा पॉजिटिव इंटीजर है। आपको सम चाहिए था फोर। आप अपने सबसेट में जो भी आप सबसेट बनाना चाहते हैं उसमें आप बोले कि वन तो रहेगा ही रहेगा या आप पुख्ता डिसीजन ले लिए। अब अगर वन रहेगा ही रहेगा तो आपको और तीन चाहिए आगे मतलब आगे के एरे से बाकी जो बचा हुआ एरे है आपको उसमें से थ्री सम कहीं से निकालना पड़ेगा तभी तो थ्री और ये वन बन के चार बनेगा तो देखिए क्या आगे के एरे में तीन बन सकता है दो और पांच से क्या आप तीन का सम अचीव कर सकते हैं नहीं कर सकते हैं नहीं कर सकते हैं मतलब आप ऐसा डिसीजन तो ले नहीं सकते हैं कि वन को हम",
+      "source": "caption",
+      "english_text": "is all positive integers. You wanted even, four. In whatever subset you want to create, you either say that forest will always remain or you take a firm decision. Now if there will be one, then you will need more three, that means from the remaining array, you will have to find the sum of three from somewhere in it, only then three and this one will become four, so see if three can be made in the next array, can you achieve the sum of three from two and five, no, no, cannot, that is, you cannot take such a decision that we will make one."
+    },
+    {
+      "start_time": 269.52,
+      "end_time": 304.469,
+      "text": "लेंगे क्योंकि अगर आप वन को ले लेंगे तो आगे के एरे में आपको तीन खोजना पड़ेगा अब आगे के एरे में तीन है कि नहीं है कैसे पता चलेगा जब तक कि आप एरे को देखेंगे नहीं तो लेना क्या है डिसीजन तो नहीं ले सकते हैं लेकिन अगर आप ये डिसीजन ले लें कि चलो हम किसी नंबर को बिल्कुल नहीं लेंगे बिल्कुल छोड़ देंगे अब मान लीजिए आप बोले कि वन जो है ना इसको तो हम कभी नहीं लेंगे कुछ भी हो जाए दुनिया में हम वन को नहीं लेंगे अगर आप वन को नहीं लेंगे मान लीजिए आगे जो सम आपको बनाना है ना वो आपको आठ बनाना है क्या आठ आठ वाला सम बनाने के लिए ना आपको पूरा एरे लेना पड़ेगा 1 + 2 + 5 1 + 2 + 5 कितना होता है आठ अगर आप ये",
+      "source": "caption",
+      "english_text": "Because if you take one then you will have to search for three in the next array. Now how will you know whether there is three in the next array or not? Unless you look at the array, you cannot take a decision as to what to take. But if you take this decision that we will not take any number at all, we will leave it. Now suppose you say that whatever is one, we will never take it. No matter what happens in the world, we will not take one. If you do not take one, let's say whatever you decide to make in the future. Right, you have to make eight. To make an even number of eight, you have to take the whole array. 1 + 2 + 5 1 + 2 + 5, how much is eight, if you"
+    },
+    {
+      "start_time": 304.479,
+      "end_time": 334.23,
+      "text": "डिसीजन ले ले कि हम वन को नहीं लेंगे तो आप आंसर तक नहीं पहुंच पाएंगे। अब दो और पांच मिलके कितना सम बना सकता है? सात। आपको चाहिए कितना था? आठ। तो अगर आप वन को ले लेते तो फायदा होता लेकिन आप तो अड़ गए कि नहीं हम वन को नहीं लेंगे। तो आप ये डिसीजन भी नहीं ले सकते हैं। तो कभी भी किसी प्रॉब्लम में अगर आप कोई एल्गोरिदमिक डिसीजन नहीं ले पाए ना कि इसको लेना है या नहीं लेना है तो वो क्वेश्चन हमेशा चॉइस बेस्ड होता है इसमें आपको दो तरीके से खेलना पड़ता है। आपको एक तरीके का चॉइस लेना होता है कि चलो ले के देख लेते हैं।",
+      "source": "caption",
+      "english_text": "Take the decision that if we do not take the forest then you will not be able to reach the answer. Now how much can two and five together make? Seven. How much did you want? Eight. So, if you had taken the forest, it would have been beneficial but you are adamant that we will not take the forest. So you can't even take this decision. So in any problem, if you are not able to take any algorithmic decision whether to take it or not, then that question is always choice based, in this you have to play in two ways. You have to make a choice, let's take it and see."
+    },
+    {
+      "start_time": 334.24,
+      "end_time": 369.11,
+      "text": "फिर आपको पीछे आना पड़ता है। फिर आप क्या बोलते हैं? चलो इसको छोड़ के देख लेते हैं। मतलब हर एक पॉइंट पे हर एक पॉइंट पे आप दो तीन चीजें जितनी भी आपके पास चॉइस है वो करते हैं कि चलो भाई इस नंबर को लेके देख लेते हैं आंसर आता है कि नहीं। अगर आ गया अच्छी बात है। इस नंबर को नहीं ले के भी देख लेते हैं कि आंसर आता है कि नहीं। उससे आ गया तो अच्छी बात है। अब दोनों में से किसी में आंसर नहीं आया तो आंसर नहीं आएगा। इस तरीके के क्वेश्चन को हमेशा हम लोग चॉइस बेस्ड प्रॉब्लम कहते हैं। इसीलिए इन क्वेश्चंस में डीपी लगता है क्योंकि आप पहले से कुछ सोच नहीं सकते हैं कि हम कुछ ऐसा डिजाइन करें जिससे ऐसा-ऐसा हो जाए। जब हम लोग हाउस रॉबर पढ़",
+      "source": "caption",
+      "english_text": "Then you have to come back. Then what do you say? Let's leave this aside and see. That is, on every point, you do two or three things as per your choice, let's take this number and see whether the answer comes or not. If it has come then it is good. Even without taking this number, let us see whether the answer comes or not. It's a good thing if it comes from him. Now if the answer is not available in either of the two then the answer will not come. We always call this type of question as choice based problem. That is why DP is used in these questions because you cannot think in advance that we should design something that will make such and such happen. When we read House Robber"
+    },
+    {
+      "start_time": 369.12,
+      "end_time": 402.629,
+      "text": "रहे थे तो इसको बहुत बारीकी से समझाए थे। हाउस रॉबर में भी चोर ये डिसीजन नहीं ले सकता था कि इस घर को लूटना है कि नहीं लूटना है। वो बाद में पता चलेगा। आपका अभी का डिसीजन जो अच्छा है कि बुरा है ये फ्यूचर देखने के बाद पता चलता है लास्ट में। इसीलिए इस तरीके का प्रॉब्लम क्या होता है? डीपी का प्रॉब्लम होता है जिसमें हम लोग चॉइस बेस्ड चीजें करते हैं और जहां चॉइस बेस्ड चीजें आती हैं वहां पे क्या होता है? वहां पे नेचुरली रिकर्शन होता है। रिकर्शन का यही मतलब तो होता है। एक चॉइस ले लिए उसके अंदर घुस गए। वापस आए उस चॉइस को रिवर्स कर दिए। एक और चॉइस ले लिए उसके अंदर घुस गए। इसीलिए इन क्वेश्चंस",
+      "source": "caption",
+      "english_text": "When we were there, we explained it in detail. Even in house robbery, the thief could not take the decision whether to rob the house or not. That will be known later. Whether your current decision is good or bad will be known in the end after seeing the future. So what is the problem with this method? There is a problem of DP in which we do choice based things and what happens where choice based things come? Natural recursion happens there. This is the meaning of recursion. Took a choice and entered inside it. Came back and reversed that choice. Took another choice and entered inside her. That's why these questions"
+    },
+    {
+      "start_time": 402.639,
+      "end_time": 433.749,
+      "text": "में रिकर्शन लगता है। अगर रिकशन में आपका अ ओवरलैपिंग सब प्रॉब्लम्स मतलब आप बार-बार एक ही चीज को सॉल्व कर रहे हैं तो आप उस रिकर्शन के प्रॉब्लम को मेमोराइज करके डीपी बना सकते हैं। मेमोराइज हो गया उसके बाद आप टैबुलेशन करके उसको फाइनल फॉर्म में लिख सकते हैं। तो चलिए क्वेश्चन बड़ा आसान है। क्वेश्चन में आपको देखिए क्या करना है? मान लेते हैं कि आपका एरे ये है। मान लेते हैं आपका एरे क्या है? 1 3 और 4 ठीक है? 0 1 2 अच्छी बात है। आपका जो सम है वो क्या है? आपका सम मान लीजिए कि पांच है। आपका सम क्या है? पांच है।",
+      "source": "caption",
+      "english_text": "Seems like recursion. If you have overlapping sub-problems in recursion, meaning you are solving the same thing again and again, then you can create a DP by memorizing the problem of that recursion. After it is memorized, you can do tabulation and write it in the final form. So the question is very easy. You see in the question what to do? Let's assume that your array is this. Let's say what is your array? 1 3 and 4 ok? 0 1 2 That's good. What is your equal? Let's say your sum is five. What is your sum? There are five."
+    },
+    {
+      "start_time": 433.759,
+      "end_time": 466.71,
+      "text": "अच्छा सम पांच है। आप हमेशा कहां से शुरू करते हैं? पहले नंबर से। पहले नंबर से लेके लास्ट तक शुरू करते हैं। हर एक नंबर के लिए आपके पास कितने चॉइससेस अवेलेबल हैं। या तो आप उस नंबर को ले सकते हैं। मतलब आपका जो सबसेट बनने वाला है या तो आप उस नंबर को इंक्लूड कर सकते हैं या फिर आप उस नंबर को छोड़ सकते हैं कि चलो इस नंबर को हम नहीं लेंगे। इस नंबर को हम क्या करेंगे? नहीं लेंगे। तो जब मान लीजिए कि आप i = 0 पे आए। i = 0 पे आए। जब आप i = 0 पे आए तो आपको कितना सम बनाना है? आपका टारगेट सम कितना है? पांच। ठीक है? आप",
+      "source": "caption",
+      "english_text": "Well, even is five. Where do you always start? From number one. Let's start from the first number till the last. How many choices do you have available for each number? Either you can take that number. Meaning, you can either include that number in your subset or you can leave that number and say that we will not take this number. What will we do with this number? will not have. So when let's say you come to i = 0. Come to i = 0. How much do you have to make when you get to i = 0? What is your target sum? Five. Ok? you"
+    },
+    {
+      "start_time": 466.72,
+      "end_time": 499.589,
+      "text": "यहां पे आ गए। अब आपके पास i = 0 मतलब इस आदमी के लिए इस वन के लिए कितना चॉइस है? आप इसको ले सकते हैं। पहली बात तो आप इसको ले सकते हैं। बोले आप यस हम वन को लेंगे। एक चॉइस होगी कि हम वन को नहीं लेंगे। अगर आप इस वन को ले लेते हैं तो आप कहां जाएंगे? i = 1 पे। लेकिन अब आप वन को ले चुके हैं। अब आप इस चॉइस में वन को ले चुके हैं। बाकी एरे से आपको कितना सम चाहिए? अगर आपको पूरे एरे से पांच का सम चाहिए था। आप बोले कि हम इसको लेंगे। इस वन को ले लेंगे। इस वन को हम ले लेंगे।",
+      "source": "caption",
+      "english_text": "Came here. Now you have i = 0 meaning how much choice does this man have for this forest? You can take it. First of all, you can take it. You said yes, we will take the forest. There will be a choice that we will not take the forest. If you take over this forest, where will you go? At i = 1. But now you have taken the forest. Now you have taken one in this choice. How much do you need from the rest of the array? If you wanted an even sum of five from the entire array. You said we will take it. Will take this forest. We will take this forest."
+    },
+    {
+      "start_time": 499.599,
+      "end_time": 532.55,
+      "text": "बाकी बचा हुआ एरे से कितना सम का जरूरत है। अगर बाकी बचा हुआ एरे से चार का सम आप निकाल पाएं तो वो चार और ये वन मिलके पांच बन जाएगा और आपको आंसर मिल जाएगा। तो अगर आप इसको लेते हैं जब आप आगे जाते हैं आगे से ना आपकी रिक्वायरमेंट चार का सम से ढूंढने की है। अगर आप i इज इक्वल टू वन से लास्ट तक चार सम निकाल पाए कहीं से चार कुछ भी करके चार निकाल लिए ऊपर तो आप वन ले के आए थे वन और फोर मिलके पांच बन जाएगा। अगर आप डिसाइड करते हैं कि हम इसको नहीं लेंगे। हम इसको नहीं लेंगे i = 0",
+      "source": "caption",
+      "english_text": "How much sum is required from the remaining array? If you can find the sum of four from the remaining array, then that four and this one together will become five and you will get the answer. So if you take this, when you go ahead, your requirement is to find the sum of four. If you were able to find four sums from i is equal to one till the last, four from anywhere, by doing anything, you came up with one, one and four together will become five. If you decide that we will not take it. We will not take i = 0"
+    },
+    {
+      "start_time": 532.56,
+      "end_time": 566.87,
+      "text": "मतलब हम वन को नहीं लेंगे तो इस केस में भी आप नहीं लेंगे तो आगे तो बढ़ेंगे ही। देखिए आगे तो पढ़ना ही है वो तो नियम है लेकिन अब अगर आप इस वन को नहीं लिए तो आगे के एरे से आपको कितना सम चाहिए? पांच ही चाहिए। क्योंकि आप इसको नहीं ना लिए तो ये तो वेस्ट हो गया आपका। अब आगे के एरे में आपको खोजना है कि चलो वन नहीं लिए। बाकी एरे में अगर पांच मिलता है तो मेरा आंसर आ जाएगा। तो बाकी के एरे में अगर हमको सम इज़ इक्वल टू पांच मिलता है तो मेरा आंसर आ जाएगा। अब इन दोनों में से मान लीजिए इसका आंसर आया ट्रू और इसका आंसर आया फॉल्स। अब अगर एक भी चॉइस से आपको सही आंसर मिलता",
+      "source": "caption",
+      "english_text": "Meaning, if we don't take the forest, then in this case too, if you don't take it, then we will definitely move ahead. Look, you have to study further, that is the rule, but now if you do not take this one, then how much do you need from the next one? Only five are needed. Because if you don't take it, it becomes your waste. Now in the next array you have to search that let's not take one. If I get five in the remaining array then my answer will come. So in the remaining array if we get sum is equal to five then my answer will come. Now, out of these two, suppose the answer to this is true and the answer to this is false. Now if you get the correct answer from even one choice"
+    },
+    {
+      "start_time": 566.88,
+      "end_time": 600.389,
+      "text": "है, लेने से सही आंसर मिल रहा है, नहीं लेने से सही आंसर मिल रहा है। दोनों से सही आंसर मिल रहा है। मतलब कोई भी एक आंसर आपको मिल जाता है कि हां भाई ये पॉसिबल है तो आप उसको क्या करेंगे? आप बोलेंगे कि हां भाई ऐसा करना पॉसिबल है। अगर किसी चॉइस से आंसर नहीं मिल रहा है मतलब ना वन को लेने से काम बन रहा है। ना वन को नहीं लेने से काम बन रहा है। तो आप बोलेंगे कि भैया अगर दोनों फॉल्स है तो हम इसको फॉल्स रिटर्न कर देंगे। फॉर एग्जांपल मान लीजिए आप अभी 10थ क्लास में हैं। आपके पास दो ऑप्शन है। आप 10थ में पास कर जाइए या तो आप 10थ में फेल कर जाइए। और आपका फाइनल",
+      "source": "caption",
+      "english_text": "Yes, by taking it you are getting the right answer, by not taking it you are getting the right answer. Getting correct answer from both. Meaning, if you get any one answer that yes brother, this is possible, then what will you do with it? You will say that yes brother, it is possible to do this. If you are not getting the answer from any choice, it means that the work is not getting done by choosing the wrong one. No work is being done by not taking the forest. So you will say that brother, if both are false then we will return it as false. For example, suppose you are currently in 10th class. You have two options. You can pass in 10th or you can fail in 10th. and your final"
+    },
+    {
+      "start_time": 600.399,
+      "end_time": 635.19,
+      "text": "गोल है कि क्या हम सक्सेसफुल बनेंगे कि नहीं? मान लीजिए आपको पता चलता है कि 10थ पास करने से तो आप सक्सेसफुल नहीं बन पाएंगे। लेकिन आप 10थ फेल करने से सक्सेसफुल बन जाएंगे। तो आपकी जिंदगी का आंसर क्या हुआ? हम सक्सेसफुल बन जाएंगे। क्योंकि दो ही तो चॉइस है। मान लीजिए कि पास करने से आप सक्सेसफुल बन जाएंगे। फेल करने से सक्सेसफुल नहीं बनेंगे। तो भी आपकी जिंदगी का आंसर हो गया कि हम सक्सेसफुल बन गए। अब मान लीजिए ऐसा हो गया कि ना 10थ पास करने से सक्सेसफुल मिला और ना 10थ फेल करने से सक्सेस मिला। तो आपकी जिंदगी की कहानी क्या हो जाएगी कि भैया हम तो फेल हो गए। हम 10थ पास करके भी देख लिए। 10 फेल करके भी देख लिए। दोनों से",
+      "source": "caption",
+      "english_text": "The goal is whether we will become successful or not? Suppose you realize that you will not be able to become successful by passing 10th. But you will become successful by failing 10th. So what was the answer to your life? We will become successful. Because there are only two choices. Assume that passing will make you successful. You will not become successful by failing. Still, the answer to your life was that we became successful. Now suppose it happens that neither you get success by passing 10th nor you get success by failing 10th. So what will be the story of your life that brother, we have failed. We even tried passing 10th. Tried even after failing 10. from both"
+    },
+    {
+      "start_time": 635.2,
+      "end_time": 667.67,
+      "text": "सक्सेस नहीं मिला। तो मेरी जिंदगी का आंसर क्या हो गया? फेलियर हो गया। तो यही इसमें करना है। अब ये तो आपको समझ में आता है। अब एक छोटी सी बात और है। एक छोटी सी बात और है। मान लीजिए ये आपका एरे है। मान लीजिए ये आपका एरे है 10 3 और 2 0 1 2 ये आपका एरे है। आपका जो सम है वो आपको पांच बनाना है। आपका सम पांच बनाना है। तो आपका आंसर पता चल रहा होगा कि अगर हम थ्री और टू को ले लेंगे तो मेरा पांच आ जाएगा। तो इसका आंसर ट्रू है। ठीक है? लेकिन यहां भी आप सेम चीज करेंगे। यहां भी आप पहले में आप i = 0 पे आएंगे और आपको शुरुआत में कितना सम बनाना है? पांच का सम बनाना है।",
+      "source": "caption",
+      "english_text": "Did not get success. So what is the answer to my life? There was a failure. So this is what has to be done in this. Now you understand this. Now there is one more small thing. There is one more small thing. Suppose this is your array. Suppose this is your array 10 3 and 2 0 1 2 this is your array. Whatever your sum is, you have to make it five. Your sum has to be five. So your answer would be that if we take three and two then I will get five. So its answer is true. Ok? But here also you will do the same thing. Here also in the beginning you come to i = 0 and how much do you have to make in the beginning? Have to make an even number of five."
+    },
+    {
+      "start_time": 667.68,
+      "end_time": 702.47,
+      "text": "वेरी गुड। समझ में आ रहा है? अब एक बात बताइए। i = 0 पे जो नंबर है ना वो 10 है। i = 0 पे जो नंबर है वो 10 है। मतलब कि ये जो 10 है ना ये आपके सम से ही बड़ा है। ये आपको सम से ही बड़ा है। और इसीलिए हम आपको जोड़ देके बता रहे थे कि एरे में सब चीज पॉजिटिव है। अब एक बात बताइए क्या इस 10 को लेने का कोई तुक बनता है? अगर आप इसमें दो ऑप्शन ले लिए कि चलो हम यस और नो दोनों से देख लेंगे। अब यस वाले पाथ का आप बताइए कोई सेंस बन रहा है क्या? आप ये बोल रहे हैं कि हमको टोटल सम तो बनाना है पांच। और आप बोल रहे हैं कि चलो हम एक चीज ट्राई",
+      "source": "caption",
+      "english_text": "Very good. Do you understand? Now tell me one thing. The number at i = 0 is 10. The number at i = 0 is 10. Meaning that this 10 is bigger than your number. This is bigger than you. And that's why we were telling you by adding that everything in the array is positive. Now tell me one thing, is there any point in taking this 10? If you take two options in this, let us see from both Yes and No. Now tell me, does the yes path make any sense? You are saying that we have to make the total even five. And you are saying let's try something"
+    },
+    {
+      "start_time": 702.48,
+      "end_time": 735.99,
+      "text": "करके देख लेते हैं कि हम ना 10 को ले लेते हैं। अगर आप 10 को अपने सबसेट में ले लेंगे और एरे का पूरा इंटीजर पॉजिटिव है। आपका जो भी सम आएगा ना वो 10 से तो बड़ा आएगा ना भाई। अगर आप 10 को ऑलरेडी ले लिए आगे कुछ भी हो आगे का सम कुछ भी आए 10 से तो बड़ा आएगा ना या तो 10 के इक्वल आएगा। क्या ये किसी भी सूरत में पांच बन पाएगा? नहीं बन पाएगा। अगर नेगेटिव इंटीजर रहता तो बन जाता। मान लीजिए नेगेटिव इंटीजर रहता तो हो सकता है बन जाता। लेकिन जब सब पॉजिटिव है आप एक 10 का नंबर ले लिए। आपको गोल था पांच बनाना तो आप ये काहे कर रहे",
+      "source": "caption",
+      "english_text": "Let's see if we can take 10. If you take 10 as your subset and the entire integer in the array is positive. Whatever number you get, it must be greater than 10, brother. If you take 10 already, whatever happens next, whatever the next sum comes, it will either be greater than 10 or equal to 10. Will he be able to make five under any circumstances? Will not be able to make it. If there was a negative integer then it would have been made. Suppose if there was a negative integer then it might have been possible. But when everything is positive then you take a number of 10. Your goal was to score five, so why are you doing this?"
+    },
+    {
+      "start_time": 736.0,
+      "end_time": 770.389,
+      "text": "हैं? एक और चीज इसमें किया जा सकता है कि अगर जो आपका नंबर है जिस भी नंबर पे आप फैसला ले रहे हैं वो आपके उस समय के सम से ही बड़ा हो जा रहा है। उसमें तो आपको कुछ दिमाग लगाना ही नहीं है। सिंपल-सिंपल आपको बोलना है कि भैया इसको हम नहीं लेंगे। इसको हम तो पक्का स्किप कर देंगे। उस केस में यस वाला पाथ को एक्सप्लोर करने का कोई जरूरत ही नहीं है। फॉर एग्जांपल अगेन आप 10थ वाले एग्जांपल से आ जाइए। मान लीजिए आप 10थ में हैं। आपके पास दो ऑप्शन है कि आप पास कर सकते हैं 10थ या तो फेल कर सकते हैं। आपका फाइनल गोल मान लीजिए कि एक नौकरी लेना है। फाइनल गोल एक इंजीनियरिंग का नौकरी लेना है। अब मान लीजिए कभी आपको",
+      "source": "caption",
+      "english_text": "are? One more thing that can be done in this is that if whatever number is your number on which you are taking decision, it is becoming bigger than your current sum. You don't have to put any mind into it. Simply, you have to say that brother, we will not take this. We will definitely skip this. In that case there is no need to explore the yes path. For example again you come from 10th exam. Suppose you are in 10th. You have two options that you can pass 10th or you can fail. Let's say your final goal is to get a job. The final goal is to get an engineering job. Now suppose you ever"
+    },
+    {
+      "start_time": 770.399,
+      "end_time": 801.91,
+      "text": "पता चलता है कि जो आप नौकरी लेने जा रहे हैं ना उसमें मिनिमम रिक्वायरमेंट ही है कि आपको 10थ पास होना चाहिए। क्या? जिस जॉब के लिए आप अप्लाई कर रहे हैं, उसमें साला मिनिमम रिक्वायरमेंट है कि आपको 10थ पास करना है। इस केस में क्या आपको 10th फेल वाला एक्सप्लोर करने का कोई जरूरत है? अगर आप 10थ फेल कर जाएंगे ऑब्वियस बात है कि आप जॉब नहीं ले पाएंगे तो वो तो आप मालूम है कि नहीं ले पाएंगे। तो उसको काहे के लिए एक्सप्लोर करेंगे। सेम लॉजिक यहां भी है। जब आपको मालूम है कि भैया हमको ये वाला सम बनाना है। कुछ भी सम पांच छह सात कुछ भी बनाना है। अभी ये वाला जो नंबर है ये सम से ही बड़ा हो गया। इक्वल ठीक है।",
+      "source": "caption",
+      "english_text": "It turns out that the minimum requirement for the job you are going to take is that you should have passed 10th. What? The minimum requirement for the job you are applying for is that you have to pass 10th. In this case is there any need to explore 10th failed? अगर आप 10थ फेल कर जाएंगे ऑब्वियस बात है कि आप जॉब नहीं ले पाएंगे तो वो तो आप मालूम है कि नहीं ले पाएंगे। तो उसको काहे के लिए एक्सप्लोर करेंगे। सेम लॉजिक यहां भी है। जब आपको मालूम है कि भैया हमको ये वाला सम बनाना है। कुछ भी सम पांच छह सात कुछ भी बनाना है। अभी ये वाला जो नंबर है ये सम से ही बड़ा हो गया। इक्वल ठीक है।"
+    },
+    {
+      "start_time": 801.92,
+      "end_time": 836.389,
+      "text": "सम से बड़ा हो गया। इसका तो पक्का यही मतलब है कि अगर आप इसको लीजिएगा भी ना आपको कोई फायदा नहीं होने वाला है। आपका रिजल्ट हमेशा नो आएगा। तो जब रिजल्ट हमेशा नो आएगा तो उसका एक्सप्लोर काहे करना है? जब मालूम है जो नहीं मालूम है वो करेंगे। तो इस केस में कभी भी आपको अगर पता चलता है कि मेरा एरे ऑफ़ i ग्रेटर दैन सम हो गया है। इस केस में आपको क्या करना है? सीधा नो करके i + 1 और सम पे आगे बढ़ जाना है। इसमें ज्यादा दिमाग नहीं लगाना है। अगर आपको पता चलता है कि चलो एरे ऑफ़ i लेस दैन इक्वल टू सम है तब आपको दो तरीके के चॉइससेस एक्सप्लोर करने हैं। तो ये इस क्वेश्चन का पूरा चिट्ठा कट्ठा हम खोल दिए। अब इसका रिकर्शन लिखना हमको नहीं",
+      "source": "caption",
+      "english_text": "सम से बड़ा हो गया। इसका तो पक्का यही मतलब है कि अगर आप इसको लीजिएगा भी ना आपको कोई फायदा नहीं होने वाला है। आपका रिजल्ट हमेशा नो आएगा। तो जब रिजल्ट हमेशा नो आएगा तो उसका एक्सप्लोर काहे करना है? जब मालूम है जो नहीं मालूम है वो करेंगे। तो इस केस में कभी भी आपको अगर पता चलता है कि मेरा एरे ऑफ़ i ग्रेटर दैन सम हो गया है। What do you have to do in this case? सीधा नो करके i + 1 और सम पे आगे बढ़ जाना है। इसमें ज्यादा दिमाग नहीं लगाना है। अगर आपको पता चलता है कि चलो एरे ऑफ़ i लेस दैन इक्वल टू सम है तब आपको दो तरीके के चॉइससेस एक्सप्लोर करने हैं। तो ये इस क्वेश्चन का पूरा चिट्ठा कट्ठा हम खोल दिए। अब इसका रिकर्शन लिखना हमको नहीं"
+    },
+    {
+      "start_time": 836.399,
+      "end_time": 869.189,
+      "text": "लगता है कि किसी को कोई भी तरीके का दिक्कत आएगा। आइए हम आपको बता देते हैं। आइए हम आपको बता देते हैं। रिकर्शन के लिए क्या लिखेंगे? रिकर्शन के लिए एक पहले फंक्शन लिखेंगे। इंट फन। उसमें क्या पास होगा? सबसे पहले तो आपका जो एरे है वो पास हो जाएगा। अच्छा एरे में कितने एलिमेंट हैं ये पास हो जाएगा। वेरी गुड। इंट आई मतलब अभी किस नंबर पे आपको फैसला लेना है वो पास हो जाएगा। अब इंट सम जो आपको सम बनाना है। अच्छा बेस केस बेस केस का मतलब बेस केस क्या होता है? मान लीजिए आप एरे के लास्ट में पहुंच गए। सारे एलिमेंट खत्म",
+      "source": "caption",
+      "english_text": "It seems that someone will face some kind of problem. Let us tell you. Let us tell you. What will you write for recursion? First we will write a function for recursion. Int Fun. What will pass in that? First of all, your array will be passed. Well, how many elements are there in the array, this will be passed. very good. Int i means which number you have to decide now, it will pass. Now enter the sum that you have to make. Good Base Case Base Case Meaning What is Base Case? Suppose you have reached the last of the array. all elements are gone"
+    },
+    {
+      "start_time": 869.199,
+      "end_time": 901.35,
+      "text": "हो गए। अच्छा अब एक बात बताइए। सारे एलिमेंट खत्म हो गए। सारे एलिमेंट खत्म होने का क्या मतलब है? कि आप कुछ ना कुछ करके तो आए हैं। कुछ एलिमेंट्स को लिए होंगे। कुछ एलिमेंट्स को छोड़ दिए होंगे। मतलब कुछ ना कुछ रामायण महाभारत करके आप यहां तक पहुंचे। अब अब अगर आपका सम अगर आपका सम ज़ीरो हो गया है। अगर आपका सम जीरो हो गया है। कहने का क्या मतलब है? सम क्या होता है? देखिए जब आप किसी एलिमेंट को लेते हैं तो आपका सम कम हो जाता है। सम मतलब अब [हंसी] आपको कितना चाहिए? वो धीरे-धीरे कम होता रहता है। मान लीजिए मान",
+      "source": "caption",
+      "english_text": "Done. Okay now tell me one thing. All the elements are gone. What does it mean when all the elements are gone? That you have come here after doing something or the other. Must have taken some elements. Some elements may have been left out. Meaning, you reached here by doing something like Ramayana and Mahabharata. Now now if your sum if your sum has become zero. If your sum becomes zero. What does it mean to say? What is even? See, when you take any element your sum gets reduced. Even means now [laughter] how much do you want? It keeps decreasing gradually. let's say let's say"
+    },
+    {
+      "start_time": 901.36,
+      "end_time": 935.99,
+      "text": "लीजिए एक नंबर था वन और आपका सम था पांच। अगर आप वन को लेते हैं, अगर आप वन को लेते हैं, अगले [गला साफ़ करने की आवाज़] नंबर पे जाते हैं वो जो कि है थ्री तो सम आपका क्या बन जाता है? पांच था। आप वन को ले लिए पांच में से वन हट गया आपका फोर हो गया। सम कम हो गया। मान लीजिए आप थ्री को नहीं लिए। थ्री को नहीं लिए। आप अगले नंबर पे आ गए। आपका नंबर हो गया फोर। अगर आप नहीं लिए आपका सम सेम रह गया। सम में कोई चेंज नहीं हुआ। अब मान लीजिए आप फोर को ले लिए। आप फोर को ले लिए और आप एरे के एंड पे पहुंच गए। अब आप फोर को ले लिए और आपका सम था फोर। सम क्या हो गया आपका? सम क्या",
+      "source": "caption",
+      "english_text": "Take one number was one and your even was five. If you take one, if you take one, go to the next [clearing throat] number which is three, what does your even become? It was five. You took one, one out of five is removed, yours becomes four. Even reduced. Suppose you don't take three. Didn't take three. You have come next. Your number is four. If you don't take it, it remains the same. There was no change in the sum. Now suppose you take four. You took four and you reached the end of the array. Now you took four and your sum was four. What happened to you? what is even"
+    },
+    {
+      "start_time": 936.0,
+      "end_time": 969.59,
+      "text": "हो गया? जीरो बन गया। अब इस एंड पे देखिए आप कैसे पहुंचे हैं? आप दो नंबर को लेके पहुंचे हैं। सबसे पहले तो आप वन को लेके पहुंचे हैं और आप फोर को लेके पहुंचे हैं। वन और फोर का सम कितना होता है? पांच। आपका शुरू का सम कितना था? पांच। यस यस। मतलब कि अगर एंड पे पहुंच के आपका सम जीरो हो जाता है। मतलब आप कुछ ना कुछ ऐसा नंबर तो लिए होंगे जिससे सम धीरे धीरे धीरे धीरे धीरे धीरे करके ज़ीरो हो गया। मतलब आपका आंसर मिल गया वन और फोर आपका आंसर है। मान लीजिए अगर सम जीरो नहीं होता। मान",
+      "source": "caption",
+      "english_text": "Is it done? Became zero. Now see how you have reached this end? You have arrived with number two. First of all, you have arrived with one and you have arrived with four. What is the sum of one and four? Five. What was your starting sum? Five. Yes yes. Meaning that if your sum becomes zero after reaching the end. Meaning, you must have taken some such number due to which the sum gradually became zero. Meaning your answer has been found, one and four is your answer. Suppose if the sum is not zero. value"
+    },
+    {
+      "start_time": 969.6,
+      "end_time": 1004.31,
+      "text": "लीजिए आपको जो नंबर निकालना होता ना शुरू में जो सम दिया रहता मान लीजिए वो सिक्स होता। अब सिक्स है आप वन लिए आपका सम क्या हो गया? आपका सम पांच हो गया। थ्री नहीं लिए तो सम अगेन पांच हो गया। फोर लिए तो सम पांच था। फोर को ले लिए आपका सम वन हो गया। आपका सम वन बच गया। अब इस केस में भी आप देखिए कौन सा नंबर लेके आए हैं? वन और फोर। इसका सम क्या होता है? पांच। आपको चाहिए कितना था? छह। आपका सम एंड में आपका सम लास्ट में ज़ीरो नहीं। आपका सम कुछ ना कुछ रह गया। अगर एंड में पहुंच के आपका कुछ ना कुछ सम बचा रह जाता है ना। उसका",
+      "source": "caption",
+      "english_text": "Take the number you had to find and the number given at the beginning, let's say it was six. Now you are six, what is your number for one? Your sum becomes five. If three is not taken then the even becomes five again. If you take four it is even five. By taking four your even becomes one. Even your forest was saved. Now in this case also see which number you have brought? One and four. What is its sum? Five. How much did you want? Six. Your sum at the end is not zero at the end. Something or the other is left behind you. If you have something left after reaching the end, isn't it? his"
+    },
+    {
+      "start_time": 1004.32,
+      "end_time": 1039.27,
+      "text": "मतलब कि आपका ये वाला जो पाथ है ये वाला आपका जो डिसीजन है ना सक्सेसफुल नहीं रहा। आपको यहां से फॉल्स रिटर्न करना पड़ेगा। अगर आपका सम जीरो बन जाता है। इसका मतलब है कि आप जो भी डिसीजन लिए हो, जो भी नंबर लिए हो, वो सक्सेसफुल हो गया और आप ट्रू रिटर्न कर सकते हैं। इसी को हम रिकर्शन में बेस केस में लिख रहे हैं कि भैया अगर आप एंड में पहुंच गए और आपका सम ज़ीरो हो गया मतलब कि वेरी गुड। यस यस मतलब कि आपका डिसीजन सही था। आप ट्रू रिटर्न कर सकते हैं। अगर ऐसा नहीं हुआ, अगर आपका सम नॉन ज़ीरो हो गया, तो आप क्या रिटर्न कर सकते हैं? आप आप सीधा-सीधा जाके फॉल्स रिटर्न",
+      "source": "caption",
+      "english_text": "Meaning that this path of yours, this decision of yours has not been successful. You will have to return false from here. If your sum becomes zero. This means that whatever decision you have taken, whatever number you have taken, it has been successful and you can make true returns. This is what we are writing in the base case in recursion, that if you reach the end and your sum becomes zero, it means very good. Yes yes means your decision was right. You can return true. If that doesn't happen, if your sum becomes non-zero, what return can you make? Aap aap false return by going straight"
+    },
+    {
+      "start_time": 1039.28,
+      "end_time": 1071.909,
+      "text": "कर सकते हैं। ये हो गया आपका ये क्या हो गया टोटल? ये आपका बेस केस। यस ये आपका बेस केस। अब अपना आप रिकर्शन लिखना शुरू कर सकते हैं। सबसे पहली बात हम क्या बोले थे कि एक लॉजिक चेक कर लीजिए। क्या लॉजिक चेक कर लीजिए? इफ एरे ऑफ़ i इज़ ग्रेटर दैन सम। मतलब कि जिस नंबर पे आप चेक करने की कोशिश कर रहे हैं वो सम से बड़ा है। इस केस में हम लोग क्या बोले थे? ज्यादा दिमाग मत लगाइए। आगे बढ़ जाइए। मतलब कि आगे बढ़ने का क्या मतलब है? नो वाला पाथ। नहीं लेंगे इसको। नहीं लेने का मतलब आगे बढ़िए। एरे n",
+      "source": "caption",
+      "english_text": "Can do. This is done to you, what has become of this total? This is your base case. Yes this is your base case. Now you can start writing your own recursion. The first thing we said was to do a logic check. Should you check the logic? If array of i is greater than sum. Meaning that the number you are trying to check is greater than even. What did we say in this case? Don't worry too much. Go ahead. I mean, what does it mean to move forward? The path of no. Will not take it. Not taking means move ahead. array n"
+    },
+    {
+      "start_time": 1071.919,
+      "end_time": 1106.31,
+      "text": "i + 1 जब आप नहीं लेते हैं तो सम में कोई परिवर्तन नहीं होता है। तो आगे में आप सम ले लेंगे। सम आ जाएगा। अब अगर ऐसा नहीं है तो आपके पास दो चॉइसेस है। अब आपके पास चॉइस लेने की शक्ति है। पहला क्या होगा? इंट c1 इक्वल टू ले लीजिए इस नंबर को। लेने का मतलब कि एरे n i + 1। अब जब आप इस नंबर को ले लिए आगे के लिए क्या सम बचा? सम माइनस एरे ऑफ़ i। अगर सम टोटल पांच था आप वन को ले लिए। आगे के लिए कितना सम बचा? चार। आगे के एरे से आपको चार ढूंढना है। तो क्या हो जाएगा ये? सम माइनस एरे ऑफ़",
+      "source": "caption",
+      "english_text": "There is no change in the sum when you do not take i + 1. So in future you will get even. It will be even. Now if it is not so then you have two choices. Now you have the power to choose. What will be the first? Int c1 equal to two Take this number. Taking means that the array n i + 1. Now that you have taken this number, what is left to do next? Sum minus array of i. If the even total was five you took one. How much is left for the future? Four. You have to find four from the next array. So what will happen? sum minus array of"
+    },
+    {
+      "start_time": 1106.32,
+      "end_time": 1139.27,
+      "text": "i। वेरी गुड। अब दूसरा चॉइस क्या है? ये तो था कि लेने का चॉइस। दूसरा चॉइस नहीं लेंगे। बिल्कुल नहीं लेंगे। नहीं लेंगे तो आगे बढ़ जाइए। एरे n i + 1 और अगर नहीं लेंगे तो सम में कोई परिवर्तन नहीं होगा। सम ही रह जाएगा। वेरी गुड। अब हम क्या बोले थे? ये क्या है? 10थ फेल कर गए और पास कर गए। दोनों में से किसी भी पाथ में आपको सक्सेस मिल जाता है तो आपकी जिंदगी सक्सेसफुल हो गई। मतलब कि C1 और C2 C1 और C2 C1 और C2 ये फंक्शन इन टाइप का नहीं है। ये फंक्शन आपका बुलियन टाइप का है।",
+      "source": "caption",
+      "english_text": "i. very good. Now what is the second choice? It was a choice to take. Will not take another choice. Will not take it at all. If you don't take it then move ahead. Array n i + 1 and if not taken then there will be no change in the sum. It will remain even. very good. Now what did we say? What is this? Failed 10th and passed. If you get success in either of the two paths then your life has become successful. Meaning that C1 and C2 C1 and C2 C1 and C2 are not of these function types. This function is of Boolean type."
+    },
+    {
+      "start_time": 1139.28,
+      "end_time": 1172.71,
+      "text": "क्योंकि अंत में तो आपको वही रिटर्न करना है ना ट्रू फॉल्स। तो ये फंक्शन बुलियन है। अगर C1 या C2 में से कोई एक भी सक्सेसफुल हो गया तो आपका फंक्शन सक्सेसफुल। आपकी जिंदगी सक्सेसफुल हो गई और इसको बंद कर दीजिए। ये देखिए छोटा सा रिकर्शन है। इसमें ज्यादा टाइम तो नहीं लगा। ज्यादा मेहनत भी नहीं लगा। अब इस रिक्शन को डीपी कैसे बनाया जाता है? कैसे इसको मेमोराइज किया जाता है? आपको देखा जाता है क्या वेरिएबल बदल रहा है? इस फंक्शन में क्या एरे बदल रहा है? नहीं। क्या n बदल रहा है? नहीं। क्या बदल रहा है? एक चीज तो बदल रहा है। i और दूसरा चीज सम। I कभी जीरो होता है, फिर वन होता है,",
+      "source": "caption",
+      "english_text": "Because in the end you have to return the same, true false. So this function is boolean. If either C1 or C2 becomes successful then your function is successful. Your life has become successful and stop this. Look, this is a small recursion. It didn't take much time. It didn't take much effort. Now how to make this reaction a DP? How is it memorized? You see is the variable changing? What array is changing in this function? No. Is n changing? No. What is changing? One thing is changing. i and the second thing is even. I is sometimes zero, then it is one,"
+    },
+    {
+      "start_time": 1172.72,
+      "end_time": 1206.71,
+      "text": "फिर टू होता है। सम नहीं बदलता है। सम अगर आप लेते हैं तो सम कम होता है। नहीं लेते हैं तो सेम रहता है। फिर ले लेते हैं तो और कम हो जाता है। तो कौन सा दो वेरिएबल बदल रहा है? i और सम। तो आपका डीपी एरे क्या होना चाहिए? आपका डीपी एरे एक टू डी एरे होना चाहिए। कितने साइज का टू डी एरे होना चाहिए? i i का वैल्यू कहां तक जा सकता है? ज़ीरो से लेके n तक। मतलब n + 1 और सम क्या हो सकता है? सम शुरू होता है सम से। और धीरे धीरे धीरे धीरे धीरे करके जीरो तक चला जाता है। क्या हम लोग का सम कभी भी नेगेटिव होता है? क्या हम सम को कभी नेगेटिव होने देते हैं? नहीं होने",
+      "source": "caption",
+      "english_text": "Then there is two. Even does not change. If you take even then the even is less. If you don't take it, it remains the same. If you take it again, it becomes less. So which two variables are changing? i and even. So what should your DP array be? Your DP array should be a two D array. What size should be the 2D array? How far can the value of i go? From zero to n. What can mean n + 1 and even? Even starts with even. And slowly and gradually it goes down to zero. Is our sum ever negative? Do we ever allow the sum to become negative? not happening"
+    },
+    {
+      "start_time": 1206.72,
+      "end_time": 1241.669,
+      "text": "देते हैं। क्यों? क्योंकि सम नेगेटिव कब होगा? सम नेगेटिव तभी ना होगा जी। जब आपको सम था पांच और आप ले लिए 10 तो आपका आगे का सम -5 हो गया। ऐसा तो हम लोग अलाउ ही नहीं करते हैं। अगर सम पांच है और आपको मिलता है कोई नंबर 10 तो उस नंबर को हम लोग कभी नहीं लेते हैं। तो हम लोग कभी भी सम को नेगेटिव नहीं होने देते हैं। तो आपके एरे का ये साइज कितना होगा? सम + 1 इस साइज का अगर हम लोग डीपीआर बना दें जो वेरिएबल बदल रहा है उसका आंसर स्टोर कर लें और उसको आंसर में चेक कर लें कि भैया अगर इसका आंसर मालूम है तो ऐसे ही रिटर्न कर दो अगर नहीं मालूम है तो रिकर्शन चला के देख लो आगे के लिए स्टोर कर देना तो ये",
+      "source": "caption",
+      "english_text": "Let's give. Why? Because when will the sum be negative? Only then the sum will not be negative. When you had an even number of five and you took 10, your next even number became -5. We don't allow this at all. If the number is five and you get a number 10, then we never take that number. So we never allow the sum to become negative. So what will be the size of your array? Sum + 1 If we make a DPR of this size, store the answer of the variable which is changing and check it in the answer that brother, if you know the answer then return it like this, if you don't know then run the recursion and check and store it for further use."
+    },
+    {
+      "start_time": 1241.679,
+      "end_time": 1271.75,
+      "text": "पूरा रिकर्शन क्या बन जाएगा ये पूरा रिकर्शन मेमोराइजेशन बन जाएगा कैसे करते हैं मेमोराइजेशन मेमोराइजेशन में कुछ नहीं किया जाता है मेमोराइजेशन में केवल एक काम आपको करना है कि सबसे पहले तो जो आपका मेन फंक्शन है उसमें क्या उसमें क्या बनाना है उसमें उसमें हमारा डीपी वाला ये एरे बना देना है। चलिए इसको अलग से ही लिख लेते हैं। मिनिमाइजेशन भी लिख लेते हैं शुरू से। चलिए तो सबसे पहले तो आपका जो अ मेन फंक्शन है जो आपका जीएफजी का फंक्शन है उसमें क्या बनेगा? वो आपको कुछ ऐसा दिया रहेगा कि इंट GFG gfg आपको दो चीजें देगा।",
+      "source": "caption",
+      "english_text": "What will become of the entire recursion? This entire recursion will become of memorization. How to do memorization? Nothing is done in memorization. In memorization, you have to do only one thing, first of all, what is to be created in your main function, in it you have to create this array of our DP in it. Let us write this separately. Minimization is also written from the beginning. Well, first of all, what will be made of your main function which is the function of your GFG? It will give you something like int GFG gfg will give you two things."
+    },
+    {
+      "start_time": 1271.76,
+      "end_time": 1297.029,
+      "text": "जीएफजी आपको एक तो ये एरे देगा और आपको एरे का साइज नहीं देगा। बस सम देगा। इस एरे से ये सम निकालना है। सबसे पहले क्या काम है? इंट n = एरे डॉट साइज़। साइज़ निकल गया। उसके बाद एक इंट I ले लीजिए। अब अपना डीपीआर बनाइए। कैसे? वेक्टर ऑफ़ वेक्टर ऑफ़ इंट 1 2 DP कितने साइज का? n + 1 साइज़ का।",
+      "source": "caption",
+      "english_text": "GFG will give you this array but will not give you the size of the array. Will just give even. This sum has to be extracted from this array. What is the first task? Int n = array dot size. Size gone. After that take an int I. Now prepare your DPR. How? What size is vector of vector of int 1 2 DP? Of n + 1 size."
+    },
+    {
+      "start_time": 1297.039,
+      "end_time": 1331.669,
+      "text": "अब इसमें कॉलम भरिए। फॉर i = 0 i &lt; = n i + इसके बाद कॉलम वाला एरे बनाइए। कितने साइज का? सम + 1 साइज का। वेक्टर इंट t कितने साइज का? सम + 1 साइज का और सब में -1 भर देंगे। उसके बाद dp ऑफ़ i = t ये क्या बन गया? ये एक 2D एरे बन गया ऑफ साइज n * n + 1 और सम + 1 का जिसमें सारा -1 भरा हुआ है। उसके बाद अपने हम फंक्शन को कॉल कर देंगे। अच्छा जब फंक्शन कॉल करेंगे",
+      "source": "caption",
+      "english_text": "Now fill the columns in it. For i = 0 i < = n i + After this create an array with columns. What size? Of even + 1 size. What size is vector int t? Sum + 1 will be of size and we will fill -1 in all. After that what became dp of i = t? This becomes a 2D array of size n * n + 1 and sum + 1 filled with all -1. After that we will call our function. ok when we call the function"
+    },
+    {
+      "start_time": 1331.679,
+      "end_time": 1357.75,
+      "text": "तो रिकर्शन फंक्शन कहां से शुरू होगा? ज़ीरो से शुरू होगा। i = 0 से। सम शुरू में आपको कितना सम निकालना है? जो आपको सम दिया हुआ है सम और ये डीपी भी पास कर देंगे। ये आपका हो गया। अब इस रिकज़न में थोड़ा बहुत चेंज करना है। तो इस रिक्शन में थोड़ा बहुत चेंज कर लेते हैं। देखिए सबसे पहला चेंज तो करेंगे कि इस क्योंकि आप dp पास कर रहे हैं तो यहां हम dp लिख भी लेंगे। क्या लिखेंगे? वेक्टर ऑफ़ माफ़ कीजिए थोड़ा हैंडराइटिंग आज ये हो गया है।",
+      "source": "caption",
+      "english_text": "So where will the recursion function start? Will start from zero. From i = 0. How much do you have to settle in the beginning? Whatever is given to you is even and this DP will also pass. This is yours. Now a little change has to be made in this review. So let's make a few changes in this recipe. See, the first change we will make is that since you are passing DP, we will also write DP here. What will you write? Vector of Sorry, a little handwriting today, it's done."
+    },
+    {
+      "start_time": 1357.76,
+      "end_time": 1385.43,
+      "text": "थोड़ा मेरा गंदा हो गया है। थोड़ा दिक्कत हो जाएगा। ये लीजिए। इसको मिटा देते हैं। ये लीजिए। इस फंक्शन में हो गया। बेस केस को नहीं छेड़ना है। रिकर्शन मेमोराइजेशन बनाने में। बेस केस को नहीं छेड़ना है। अब यहां पे क्या लिखना है? यहां पे इफ इफ dp ऑफ़ i सम नॉट इक्वल टू -1 नॉट इक्वल टू -1 क्या करना है? यहीं से रिटर्न कर देना है।",
+      "source": "caption",
+      "english_text": "A little of mine has become dirty. There will be some trouble. Take this. Let's erase it. Take this. Done in this function. Do not disturb the base case. In making recursion memorization. Do not disturb the base case. Now what to write here? Here if dp of i is not equal to -1 what to do? Returns have to be made from here."
+    },
+    {
+      "start_time": 1385.44,
+      "end_time": 1420.07,
+      "text": "क्या? dp ऑफ़ आई एन सम अपना दिमाग नहीं लगाना है। इसका ऑलरेडी हो चुका है। अगर ऐसा नहीं है। अगर ऐसा नहीं है। अब आपको निकालना पड़ेगा। लेकिन जभी भी आप रिटर्न लिखें तो इसके बाद आपको क्या लिखना है? इसके बाद आपको इसको हम थोड़ा मिटाएं। रिटर्न स्टेटमेंट के पहले क्या लिखेंगे? रिटर्न स्टेटमेंट के पहले अ रिटर्न स्टेटमेंट के पहले ये लिखना है। रिटर्न जो भी आंसर रिटर्न कर रहे हैं उसको बस इसमें स्टोर करवा दीजिए। जाते-जाते सम इक्वल टू क्या आंसर लिख रहे थे? फन एरे n i + 1 और",
+      "source": "caption",
+      "english_text": "what? dp of i n sum don't use your mind. It has already been done. If it is not so. If it is not so. Now you have to take it out. But whenever you write a return, what do you have to write after this? After this, let us erase it a little. What will you write before the return statement? Before the return statement: This has to be written before the return statement. Whatever answer you are returning, just store it in it. While leaving, were you writing the answer 'Same equal to two'? fun array n i + 1 and"
+    },
+    {
+      "start_time": 1420.08,
+      "end_time": 1454.149,
+      "text": "सम। एक ये हो गया। एक तो ये पाथ हो गया। एक और बात है जब आपके पास चॉइस है ये वाला भी तो रिटर्न है। ये वाला भी तो रिटर्न है। यहां भी आपको सेम चीज करनी है। क्या करनी है? dp I सम = C1 और C2। ये देखिए ये आपका रिकर्शन क्या बन गया? मेमोराइजेशन। क्या बन गया? मेमोराइजेशन बिना किसी कचड़े के पड़े हुए। उम्मीद करते हैं कि आपको समझ में आया होगा। अब अगला स्टेज है मेमोराइजेशन से टैबुलेशन कैसे बनाते हैं भाई? टैबुलेशन कैसे बनाते हैं भाई? आज",
+      "source": "caption",
+      "english_text": "Even. One this is done. Firstly, this path is done. There is one more thing when you have a choice, this one is also a return. This one is also a return. Here also you have to do the same thing. What to do? dp I sum = C1 and C2. Look at what your recursion has become? Memorization. What has happened? Memorization without any garbage lying around. Hope you have understood. Now the next stage is how to make tabulation from memorization, brother? How to make tabulation brother? today"
+    },
+    {
+      "start_time": 1454.159,
+      "end_time": 1485.19,
+      "text": "हमको लग रहा है कि हम थोड़ा फास्ट चल रहे हैं। लेकिन अब अब आप लोग सीख चुके हैं। देखिए अब आप लोग बच्चे नहीं हैं। अब आप लोग बहुत हद तक सीख चुके हैं। ठीक है? अब आप लोग झेल सकते हैं। क्योंकि एक ही बात को बार-बार बार-बार हम 1 डेढ़ घंटे करके समझाएंगे। मजा नहीं आएगा। ठीक है? मेमोराइजेशन को टैबुलेशन कैसे बनाते हैं? ये अगर आप नप्सक का वीडियो देखे हैं तो आपको सेम चीज करना है। क्या करना है? आपको देखना है कि रिकर्शन किस तरीके से भरता है चीजों को। उसी ऑर्डर में आपको उसको लूप लिख के भर देना है। तो देखिए रिकर्शन कर क्या रहा है? सबसे पहले तो इस रिकर्शन का हम लोग बेस केस को एनालाइज करते हैं कि क्या है। ठीक है?",
+      "source": "caption",
+      "english_text": "We feel like we are moving a little fast. But now you guys have learned. Look, you guys are not children anymore. Now you guys have learned a lot. Ok? Now you guys can bear it. Because we will explain the same thing again and again for one and a half hours. It won't be fun. Ok? How to make memorization tabulation? If you have seen this Napsak video then you have to do the same thing. What is the plan? You have to see how recursion fills things out. In the same order you have to fill it by writing a loop. So see what recursion is doing? First of all, let us analyze the base case of this recursion. Ok?"
+    },
+    {
+      "start_time": 1485.2,
+      "end_time": 1518.71,
+      "text": "टैबुलेशन में भी अब देखिए जो चीज आप उसमें बनाए हैं, जो एरे आप उसमें बनाए हैं मेमोराइजेशन में उसी आपको एरे यहां भी बनाना है। एक एरे तो आपको बनाना ही पड़ेगा। किस साइज का? वेक्टर ऑफ़ वेक्टर ऑफ़ इंट dp और n + 1 और सम + 1 का जो भी जो भी बनता है। ठीक है? अच्छा बेस केस देखिए। बेस केस क्या बोलता है? अगर i n है। अगर i n है। अच्छा उसका क्या मतलब है? और सम जीरो है। बहुत स्पेसिफिक कंडीशन है। अगर i n है और सम ज़ीरो है तो ही आपको टू रिटर्न",
+      "source": "caption",
+      "english_text": "Now see in tabulation also, whatever you have created in it, whatever array you have created in it, in memorization you have to create the same array here also. You will have to create an array. What size? The vector of vector of int dp and n + 1 and sum + 1 is whatever is formed. Ok? Look for a nice base case. What does the base case say? If i is n. If i is n. Well what does that mean? And the sum is zero. It is a very specific condition. You should return to only if i is n and the sum is zero."
+    },
+    {
+      "start_time": 1518.72,
+      "end_time": 1550.95,
+      "text": "करना है। अगर आपका i n हो गया और सम कुछ भी हो कोई ज़ीरो को छोड़ के कोई भी नंबर हो तो आपको फॉल्स रिटर्न करना है। मतलब कि आपका जो डीपीआर बनेगा उसका जो n वाला रो है उसका क्या है? n वाला रो है। उसमें सब फॉल्स होगा। फॉर एग्जांपल आपका अगर आपका अगर n = 3 है और सम = 2 है तो आपका डीपीआरए किस कितने साइज का बनेगा? 3 + 1 और 2 + 1 मतलब कि 4 और थ्री का। तो आपका डीपीआरए कुछ-कुछ ऐसा दिखेगा। आपका डीपीआरए",
+      "source": "caption",
+      "english_text": "Have to do. If your i is n and it is even or any number except zero then you have to return false. Meaning, what is the meaning of the n row of your DPR? The one with n is ro. Everything will fall into that. For example, if your n = 3 and sum = 2, then what size will your DPRA be made? 3 + 1 and 2 + 1 means 4 and three. So your DPRA will look something like this. Your DPRA"
+    },
+    {
+      "start_time": 1550.96,
+      "end_time": 1585.669,
+      "text": "ऐसा दिखेगा। 1 2 3 और 4 और 1 2 3 0 1 2 3 0 1 2 बेस केस क्या बोलता है? अगर n है मतलब कि ये वाला रो और सम जीरो है सम जीरो ये वाला तो ही यहां पे आप लिखेंगे वन वन का मतलब ट्रू बाकी सारे में ज़ीरो और ज़ीरो अगर i n है और सम नॉन ज़ीरो है आपका आंसर ज़ीरो आना चाहिए और बाकी सब शुरू में -1 रहेगा बाकी सब शुरू में -1 रहेगा बाकी सब शुरू में -1 ये आपका बनेगा डीपीआरे बेस",
+      "source": "caption",
+      "english_text": "It will look like this. 1 2 3 and 4 and 1 2 3 0 1 2 3 0 1 2 What does the base case say? If n means this one is row and even zero is even zero, then only here you will write one one means true, rest all are zero and zero, if i is n and even is non-zero, your answer should be zero and all the rest will be -1 at the beginning, all the rest will be -1 at the beginning, all the rest will be -1 at the beginning, this will become your DPRE base."
+    },
+    {
+      "start_time": 1585.679,
+      "end_time": 1616.71,
+      "text": "केस को देखते हुए हम लोग अपना डीपीआर में पहला वैल्यू भर लिए इनिशियल वैल्यू जैसे जैसा कि कल मैप्स एक्ट में भी भरे थे। अच्छा बेस केस का काम हो गया। आगे अब आपको देखना पड़ेगा कि यहां पे हो क्या रहा है। यहां पे हो क्या रहा है। तो सबसे पहली बात सबसे पहली बात कि अगर अगर ai इज ग्रेटर दैन सम ai इज़ ग्रेटर दैन सम तो क्या होता है? dp ऑफ़ i सम dp ऑफ़ i सम किसके बराबर होता है? i + 1 और सम i + 1 और सम मतलब कि",
+      "source": "caption",
+      "english_text": "Looking at the case, we filled the first value in our DPR, the initial value like we had filled in the Maps Act yesterday. Nice base case job done. Now you will have to see what is happening here. What is happening here? So first things first, what happens if ai is greater than sum? What is dp of i sum dp of i sum equal to? i + 1 and even i + 1 and even means that"
+    },
+    {
+      "start_time": 1616.72,
+      "end_time": 1650.63,
+      "text": "dp ऑफ़ i सम = dp + i + 1 और सम अगर एल्स एल्स एल्स क्या होता है? dp ऑफ i सम dp ऑफ i सम इक्वल टू दो चॉइससेस पहला तो i + 1 और सम - ai मतलब dp i + 1 और सम - ai यस सम - ai या फिर i + 1 और सम मतलब dp i + 1 और सम इन दोनों का क्या करना है इन दोनों",
+      "source": "caption",
+      "english_text": "dp of i sum = dp + i + 1 else sum if else else what is else else? dp of i sum dp of i sum equal to two choices first i + 1 and sum - ai means dp i + 1 and sum - ai yes sum - ai or i + 1 and sum means dp i + 1 and sum what to do with these two"
+    },
+    {
+      "start_time": 1650.64,
+      "end_time": 1684.71,
+      "text": "का और करना है। मतलब कि जभी भी आप डीपी एरे भरेंगे अगर एरे ऑफ i आपके सम से बड़ा है तब तो डीपी आई सम इज इक्वल टू डीपी आई + 1 सम अगर ऐसा नहीं है तो आपको दो चीजें निकालनी है डीपी आई सम इज इक्वल टू i + 1 सम - ai और का मतलब ऑर एंड और वाला ऑर डीपी आई + 1 और सम ये समझ में आता है रिकर्शन आपका यही कर रहा है। अब हम जो कल यह काम किए थे कि रिकर्शन को देखें, कैसे डीपीआरए भरा जा रहा है, वह हम अभी नहीं कर रहे हैं क्योंकि उसमें बेकार का हम बोले थे ना, वह आपको शुरुआत में करना चाहिए।",
+      "source": "caption",
+      "english_text": "More to be done. Meaning that whenever you fill the dp array, if the array of i is bigger than your sum then dp i sum is equal to dp i + 1 sum. If it is not so, then you have to figure out two things - dp i sum is equal to i + 1 sum - ai and means or and and and or dp i + 1 and sum. This makes sense that this is what your recursion is doing. Now, the work that we did yesterday to look at the recursion and how the DPRA is being filled, we are not doing that now because it was useless. We had said that you should do that in the beginning."
+    },
+    {
+      "start_time": 1684.72,
+      "end_time": 1717.43,
+      "text": "जैसे-जैसे टाइम बढ़ेगा आपको करने की जरूरत नहीं पड़ेगी। आपको खुद से समझ में आने लगेगा। अब ये तो पता चल गया कि फार्मूला क्या है या भरना कैसे है टैबुलेशन को। लेकिन किस ऑर्डर में भरना है? वो कैसे पता चलता है? देखिए आपको किसी भी डीपीआई सम के लिए क्या चाहिए? आपको हमेशा डीपीआई + 1 चाहिए। ये देखिए आपको हमेशा डीपीआई प्लस वन चाहिए। मतलब अगर आप अगर आप किसी भी एक रो को भरना चाहते हैं। अगर आप रो वन को भरना चाहते हैं तो आपको रो टू की वैल्यूज़ की जरूरत पड़ेगी। अगर आप रो टू की वैल्यूज़",
+      "source": "caption",
+      "english_text": "As time progresses you will not need to do this. You will start understanding yourself. Now we know what the formula is or how to fill the tabulation. But in which order to fill? How is that known? See what you need for any DPI sum? You should always have DPI+1. See, you should always have DPI plus one. Meaning if you if you want to fill any one row. If you want to populate row one, you will need the values ​​for row two. If you row to key values"
+    },
+    {
+      "start_time": 1717.44,
+      "end_time": 1743.11,
+      "text": "को भरना चाहते हैं तो आपको रो थ्री की वैल्यूज़ की जरूरत पड़ेगी। मतलब कि डीपी एरे को कैसे भरना है? उल्टा भरना है। पहले रो नंबर तीन तो आप भर लेंगे। मतलब n वाला रो तो भर लेंगे। अब आपको कैसे भरना है? आपको n - 1 से ले 0 तक भरना है। [खांसने की आवाज़] आपको n - 1 से लेके 0 तक भरना है। n - 1 से लेके 0 तक भरना है।",
+      "source": "caption",
+      "english_text": "If you want to fill in, you will need the values of row three. Meaning how to fill the DP array? Have to fill it upside down. You will fill row number three first. Meaning the row with n will be filled. Now how do you fill it? You have to fill n from - 1 to 0. [coughing sound] You have to fill in n - from 1 to 0. n – To be filled from 1 to 0."
+    },
+    {
+      "start_time": 1743.12,
+      "end_time": 1777.11,
+      "text": "सम कॉलम वाले को कैसे भरना है? उसको आप किसी भी तरीके से भर सकते हैं। कल नैप्सक में यही बात हुई थी ना। अगर आप आपको देखिए चाहिए क्या? आपको डीपीआई सम के लिए या तो आपको सेम चीज चाहिए या तो आपको सम - ai चाहिए। लेकिन नेक्स्ट वाले रो की चाहिए। तो जब आप किसी भी nथ रो को भरने आएंगे अगर n + 1 रो भरा जा चुका है तो आप सम को किसी भी तरीके से भर सकते हैं। आप चाहे तो इसको 0 से लेके सम भर सकते हैं या तो आप इसको सम से 0 में भी भर सकते हैं। लेकिन रो कैसे भरना है? n - 1 से 0 से n - 1 भरने",
+      "source": "caption",
+      "english_text": "How to fill the even column? You can fill it in any way. This is what happened in the knapsack yesterday. If you want to see what? You either need the same thing for the DPI sum or you need the sum - ai. But the next row should be done. So when you come to fill any nth row if n + 1 row is already filled then you can fill the even in any way. If you want, you can fill it from 0 to even or you can also fill it from even to 0. But how to fill the row? n - 1 filling from 0 to n - 1"
+    },
+    {
+      "start_time": 1777.12,
+      "end_time": 1810.71,
+      "text": "जाएंगे गलत हो जाएगा। अगर आप ज़ीरो को भरने चले गए। ज़ीरो रो को भरने के लिए वन रो की वैल्यू चाहिए। वन रो को भरने के लिए टू रो की वैल्यू चाहिए। वो गलत हो जाएगा। तो रो में इस ऑर्डर से भरना है। कॉलम में आप अपने हिसाब से भर सकते हैं। सब कुछ करने के बाद आपका फाइनल आंसर कैसे पता चलता है आपको? आपका जो रिकर्शन है आपका मेन फंक्शन रिकर्शन को कॉल कैसे किया था? आपका मेन फंक्शन रिकर्शन को किस नंबर के साथ कॉल किया था? ये देखिए। ये क्या है आपका? i और ये क्या है आपका? सम मतलब कि dp ऑफ़ ज़ीरो",
+      "source": "caption",
+      "english_text": "Will go wrong. If you went to fill the zero. To fill zero row, the value of one row is required. To fill one row, the value of two rows is required. That will be wrong. So the row has to be filled with this order. You can fill the columns as per your convenience. How do you know your final answer after doing everything? Your recursion, how did you call your main function recursion? With which number did you call your main function recursion? Look at this. What is this of yours? i And what is this of yours? even means dp of zero"
+    },
+    {
+      "start_time": 1810.72,
+      "end_time": 1841.83,
+      "text": "एंड सम। ये क्या है आपका? ये आपका फाइनल आंसर है। ये आपका फाइनल आंसर है और यही आपको रिटर्न भी करना पड़ेगा। इन तरीकों के साथ आप अपना टैबुलेशन लिख सकते हैं। कैसे? आइए लिखते हैं टैबुलेशन। देखिए कितना आसान हो जाएगा। सबसे पहले तो वही आप जीएफजी वाले फंक्शन में आएंगे। आपको क्या दिया रहेगा? इंट gfg वेक्टर ऑफ़ इंट a इंट सम। ये आपको दिया रहेगा। चलिए सबसे पहले तो एरे का लेंथ निकालिए। n =",
+      "source": "caption",
+      "english_text": "And some. What is this of yours? This is your final answer. This is your final answer and you will have to return it also. With these methods you can write your tabulation. How? Let's write the tabulation. See how easy it will be. First of all you will come across the GFG function. What will you be given? int gfg vector of int a int sum. This will be given to you. Let us first find the length of the array. n ="
+    },
+    {
+      "start_time": 1841.84,
+      "end_time": 1872.47,
+      "text": "एरे ऑफ़ साइज़। ओके? इंट i और J. ठीक है? अपना DP का एरे बना लीजिए सेम तरीके से। वेक्टर ऑफ़ वेक्टर ऑफ़ इंट DP कितने साइज़ का? जितना रिकर्ज़ में बना था उतना ही साइज़ का। अब इसमें कॉलम भरिए। i = 0 i &lt; = n i + अब कॉलम वाला एरे बनेगा। वेक्टर ऑफ़ इंट T कितने साइज़ का? सम + 1 साइज़ का। और",
+      "source": "caption",
+      "english_text": "Array of sizes. Ok? Int i and J. Okay? Create your DP array in the same manner. What size is vector of vector of int DP? Of the same size as the one made in Rickshaw. Now fill the columns in it. i = 0 i < = n i + Now an array with columns will be created. What size is the vector of int T? Of even + 1 size. and"
+    },
+    {
+      "start_time": 1872.48,
+      "end_time": 1906.31,
+      "text": "सब में -1 भर दीजिए। dp ऑफ़ i = t एरे बन के तैयार हो गया। बेस केस वाली वैल्यू को भर दीजिए। मतलब nथ रो में सबसे पहले तो j = 0 j &lt; &lt; = सम j प्लस प्लस और क्या करेंगे? dp ऑफ़ n j मतलब nथ रो में जो भी है सबको ज़ीरो कर दीजिए। सबको ज़ीरो कर दीजिए। अच्छा। अब एक वैल्यू को वन करना है। किस वैल्यू को? dp ऑफ़ n और 0 मतलब जब n पे आ गए थे आप और आपका सम जीरो था। वहां पे ट्रू रिटर्न होता था। एक वैल्यू को उठा",
+      "source": "caption",
+      "english_text": "Fill everything with -1. The dp of i = t array is ready. Fill in the base case value. Meaning in the nth row first of all j = 0 j < < = even j plus plus what else will we do? dp of n j means whatever is in the nth row, make everything zero. Make everything zero. Good. Now one value has to be unified. To which value? dp of n and 0 means when you reached n and your sum was zero. There was true return on pay. pick a value"
+    },
+    {
+      "start_time": 1906.32,
+      "end_time": 1941.269,
+      "text": "के वन कर दिए। आपका बेस केस का काम खत्म हो गया। अब इस डीपीआर को भरना शुरू कीजिए। कैसे भरना है? रो कैसे भरना बताए हैं। i = n - 1 i &gt; = 0 i + ओके? कॉलम कैसे? आपकी मर्जी। तो हम सीधा ही भर देते हैं। j = 0 j &lt; &lt; = सम आप चाहे तो उल्टा भी भर सकते हैं। आपकी मर्जी है। चलिए सबसे पहले तो देख लीजिए क्या देखना है? क्या देखते थे रिकर्शन में? अगर एरे ऑफ़ i सम से बड़ा हो जाता था। मतलब इफ एरे ऑफ़ i इज़ ग्रेटर दैन सम नहीं लिखना है j। अब आपके सम को कौन",
+      "source": "caption",
+      "english_text": "Forested. Your base case work is finished. Now start filling this DPR. How to fill? Tell me how to fill the row. i = n - 1 i >= 0 i + OK? How column? As you wish. So we fill it directly. j = 0 j < < = even If you want, you can fill the reverse also. It's your choice. Let's first see what we want to see? What did you see in recursion? If the array of i became larger than sum. Meaning if array of i is greater than sum do not write j. Now who is equal to you?"
+    },
+    {
+      "start_time": 1941.279,
+      "end_time": 1975.99,
+      "text": "रिप्रेजेंट करता है? j और आपके i को कौन रिप्रेजेंट करता है? i अगर ये बड़ा है। क्या था उसका फार्मूला? dp i j = सीधा-सीधा i + 1 और j खत्म हो गया। एल्स एल्स एल्स में क्या होता था? अब आपके पास दो तरीके की चीजें थी। dpij = सबसे पहले तो dp i + 1 और j - j - एरे ऑफ़ i और dp ऑफ़ i + 1 और j इसको क्या करना",
+      "source": "caption",
+      "english_text": "represents? What does j and your i represent? i If it is big. What was his formula? dp i j = straightforward i + 1 and j is over. What happened in Else Else Else? Now you had two types of things. dpij = First of all dp i + 1 and j - j - array of i and dp of i + 1 and j what to do with it"
+    },
+    {
+      "start_time": 1976.0,
+      "end_time": 2009.509,
+      "text": "है आपको? इसको और कर दीजिए। इसको और कर दीजिए। यह देखिए। यह J का लूप बंद, आई का लूप बंद। फाइनली कहां से आंसर रिटर्न करना है? क्या था रिकर्सन का कॉलर? डीp ऑफ़ ज़ीरो एंड सम। ये देखिए। ये आपका मेमोराइजेशन किसमें बदल चुका है आपका? टैबुलेशन में। टैबुलेशन में बदलने के लिए ज्यादा काम नहीं करना है। जो काम रिकर्शन में हुआ था उसको एनालाइज़ कीजिए। सेम काम लूप की मदद से यहां पे कर दीजिए। दो-तीन चीजों का ख्याल रखिएगा। सबसे पहले तो बेस केस के अनुसार",
+      "source": "caption",
+      "english_text": "Do you have it? Do more of this. Do more of this. Look at this. This J's loop closed, I's loop closed. Finally, where to return the answer? What was Recursion's collar? Dip of zero and sum. Look at this. What has this memorization of yours turned into? In tabulation. Don't have to do much work to convert to tabulation. Analyze the work that was done in recursion. Do the same work here with the help of loop. Take care of two-three things. First of all, according to the base case"
+    },
+    {
+      "start_time": 2009.519,
+      "end_time": 2035.35,
+      "text": "बेस केस के अनुसार क्या वैल्यू भरनी है? और डीपीआर में वैल्यू भरना है तो किस तरीके से भरना है? सीधा से उल्टा, उल्टा से सीधा, रो में कैसे भरना है, कॉलम में कैसे भरना है? ये किस पे डिपेंड करता है? कि भैया, dp ऑफ़ ij का वैल्यू कहां से आ रहा है? dp ऑफ़ ij अगर dp ऑफ़ i + 1 j यूज़ कर रहा है, तो ऑब्वियसली आपको रो उल्टा भरना पड़ेगा। अब अगर जे वैसा जे में ऐसी दिक्कत नहीं है तो जे को आप जैसे चाहे वैसे कर सकते हैं। तो यह क्या हो गया?",
+      "source": "caption",
+      "english_text": "What value is to be filled as per base case? And if value has to be filled in DPR, then how should it be filled? From straight to upside down, from upside down to straight, how to fill in a row, how to fill in a column? What does it depend on? That brother, where is the value of dp of ij coming from? If dp of ij is using dp of i + 1 j, then obviously you have to fill the row in reverse. Now, if there is no such problem with J, then you can make J as you want. So what happened?"
+    },
+    {
+      "start_time": 2035.36,
+      "end_time": 2048.72,
+      "text": "टैबुलेशन और इस प्रॉब्लम का नाम क्या है? सबसेट सम। सबसेट सम बहुत इंपॉर्टेंट प्रॉब्लम है। बहुत फंडामेंटल प्रॉब्लम है। इसको प्लीज बनाइए, ड्राई रन कीजिए। नहीं समझ में आए तो कमेंट में पूछिए। मिलते हैं अगले लेक्चर में। चलिए",
+      "source": "caption",
+      "english_text": "What is tabulation and the name of this problem? Subset even. Subset sum is a very important problem. There is a very fundamental problem. Please make it, dry run it. If you don't understand then ask in the comments. See you in the next lecture. Let go"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

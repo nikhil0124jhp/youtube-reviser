@@ -1,0 +1,954 @@
+{
+  "video_id": "541Zpv6sOKo",
+  "video_title": "Most Important Class in Java | Object Class (equals, hashCode, toString) | Java Full Course #22",
+  "video_number": 9,
+  "chunks": [
+    {
+      "start_time": 0.0,
+      "end_time": 30.72,
+      "text": "हां जी तो करें स्टार्ट। वेलकम बैक कोडर आर्मी हमारे इस जावा की सीरीज़ में और आज हम अगेन एक बहुत ही इंटरेस्टिंग और बहुत ही इंपॉर्टेंट क्लास के बारे में देखने वाले हैं जिसको हम बोलते हैं ऑब्जेक्ट क्लास। हां जी हमारे जावा में एक ऑब्जेक्ट नाम की भी एक क्लास होती है। अब ये बहुत जरूरी क्लास तो है ही जब हम इसके बारे में समझेंगे आपको पता लग जाएगा वो क्यों। पर ये ना बहुत इंटरेस्टिंग भी है। तो चलो फटाफट स्क्रीन पे चलते हैं और इस क्लास को एक्सप्लोर करते हैं। हां जी। तो देखो हम देखने वाले हैं अपनी ऑब्जेक्ट क्लास को।",
+      "source": "transcript_api",
+      "english_text": "Yes, let's start. Welcome back Coder Army in our Java series and today again we are going to see about a very interesting and very important class which we call Object Class. Yes, in our Java there is also a class named Object. Now this is a very important class, when we understand about it you will know why. But this is also very interesting. So let's quickly go to the screen and explore this class. Yes sir. So look, we are going to look at our object class."
+    },
+    {
+      "start_time": 28.8,
+      "end_time": 63.28,
+      "text": "ठीक है? कितना इंटरेस्टिंग है। राइट? अभी तक हम बात कर रहे थे कि हम जावा में ऑब्जेक्ट बना सकते हैं। पर जावा में एक ऑब्जेक्ट नाम की भी एक क्लास होती है। ठीक है? तो देखते हैं ये क्लास क्या कहती है? क्यों जरूरी है? वगैरह-वगैरह। ठीक है? देखो सबसे पहले तो ये ऑब्जेक्ट क्लास होती कहां है? ये होती है हमारी java डॉट लैंग पैकेज के अंदर। java डॉट लैंग्वेज पैकेज के अंदर। ठीक है? एक और चीज हमने पढ़ी थी जो java डॉट लैंग्वेज पैकेज के अंदर होती थी। याद है वह कौन सी क्लास थी? वो थी हमारी सिस्टम क्लास। है ना? सिस्टम क्लास क्योंकि java डॉट लैंग्वेज पैकेज हमेशा",
+      "source": "transcript_api",
+      "english_text": "ok? How interesting. Right? Till now we were talking that we can create objects in Java. But in Java there is also a class named object. Ok? So let's see what this class says? Why is it necessary? And so on. Ok? Look, first of all, where is this object class? This happens inside our java.lang package. java inside dot language package. Ok? Another thing we read was what was inside the java dot language package. Do you remember which class it was? That was our system class. Isn't it? System class because java dot language package always"
+    },
+    {
+      "start_time": 61.44,
+      "end_time": 93.92,
+      "text": "अपने आप ही इंपोर्टेड होता है। आपको खुद से इसको इंपोर्ट करने की जरूरत नहीं होती। तो हमें सिस्टम क्लास का एक्सेस मिलता है। उसी तरह से हमें ऑब्जेक्ट क्लास का भी एक्सेस मिलता है क्योंकि ये पहले से ही इंपोर्टेड होती है। ठीक है? ये तो समझ गए भैया पहले से हमें ऑब्जेक्ट क्लास मिलती है। पर ये क्लास है क्या? देखो इसको ना ऐसे समझो कि हमारी ये जो ऑब्जेक्ट क्लास होती है ना ये पेरेंट क्लास होती है हमारी सारी क्लासेस की जो भी हम जावा में बनाते हैं। मतलब सबका बाप है ये। कैसे? देखो हमारी जावा की जो भी क्लास है जो हम चाहे खुद से बनाएं या जावा ने खुद से पहले बना",
+      "source": "transcript_api",
+      "english_text": "Is imported automatically. You do not need to import it yourself. So we get access to the System class. Similarly, we also get access to the object class because it is already imported. Ok? Have you understood this, brother, we already get the object class. But what is this class? Look, do not understand this as our object class, nor is it the parent class of all our classes which we create in Java. Meaning he is everyone's father. How? Look, whatever class we have in Java, whether we create it ourselves or Java created it before itself."
+    },
+    {
+      "start_time": 90.08,
+      "end_time": 124.88,
+      "text": "रखी है उन सबका पेरेंट क्या होता है हमारी ऑब्जेक्ट क्लास मतलब मैं ऐसे लिख सकता हूं कि एव्री क्लास इन जावा इनहेरिट्स फ्रॉम ऑब्जेक्ट क्लास ठीक है क्या मतलब इसका मतलब ये कि लेट्स से अगर हमने खुद की कोई क्लास बनाई हुई थी लेट्स से स्टूडेंट तो हम हमेशा ऐसे कोड लिखते थे क्लास स्टूडेंट और इसके अंदर हमें जो भी करना होता था पर अंदर से जब भी जावा इसे कंपाइल करता होगा ना तो वो यहां पे लिख देता होगा एक्सटेंड्स ऑब्जेक्ट यानी कि हमारी ये स्टूडेंट क्लास भी ऑब्जेक्ट क्लास को इन्हहेरिट करती",
+      "source": "transcript_api",
+      "english_text": "What is the parent of all of them? What is our object class, meaning I can write like this that every class in Java inherits from object class, okay, what does it mean that if we had created any class of our own from Let's, Student from Let's, then we always used to write code like this class Student and inside it, whatever we had to do, but from inside whenever Java would compile it, it would write here as extends object i.e. our student class also extends the object class. inherits"
+    },
+    {
+      "start_time": 122.88,
+      "end_time": 156.48,
+      "text": "होगी। अच्छा इनफैक्ट जो एकिस्टिंग क्लास भी है जावा की जैसे कोई इंटीजर क्लास हो गई या सिस्टम क्लास हो गई या कोई भी क्लास जो जावा में एक्सिस्ट करती है सब के सब ऑब्जेक्ट क्लास को अंदर से इन्हहेरिट करते हैं। ओके चाहे डायरेक्टली करें चाहे इनडायरेक्टली करें। ओके? अच्छा आप बोलोगे कि मान लो भैया मैंने स्टूडेंट क्लास को किसी और से इन्हहेरिट किया हुआ है। लेट्स से मैंने ऐसा लिखा हुआ है क्लास स्टूडेंट और ये एक्सटेंड करती है हमारी किसी और लेट्स से ह्यूमन क्लास को क्योंकि स्टूडेंट एक ह्यूमन होता है तो वो ह्यूमन को एक्सटेंड करती है और जावा में हम क्या",
+      "source": "transcript_api",
+      "english_text": "Will happen. Well, in fact, it is also an existing class of Java, like any integer class or system class or any class that exists in Java, all of them inherit the object class from within. OK, whether you do it directly or indirectly. Ok? Well, you will say that brother, I have inherited the student class from someone else. From Let's I have written class Student and it extends our Human class from any other Let's because Student is a human so it extends Human and what we do in Java"
+    },
+    {
+      "start_time": 154.8,
+      "end_time": 187.44,
+      "text": "कर सकते हैं? एक ही क्लास को एक्सटेंड कर सकते हैं? मल्टीपल इनहेरिटेंस तो पॉसिबल नहीं है। फिर यहां पे हम ऑब्जेक्ट क्लास कैसे डाल देंगे? या जे जावा खुद से कैसे डाल देगा? कोई बात नहीं। स्टूडेंट ह्यूमन को करती है। तो हमारी एक ह्यूमन क्लास भी रही होगी क्लास ह्यूमन है ना? अब अगर ह्यूमन किसी को नहीं करती तो वो ऑब्जेक्ट को एक्सटेंड करेगी। एक्सटेंड्स ऑब्जेक्ट। ठीक है? यानी कि इनडायरेक्टली हमारी स्टूडेंट क्लास भी ऑब्जेक्ट को एक्सटेंड कर रही है। अब आप बोलोगे अगर ह्यूमन भी किसी और से एक्सटेंडेड है। लेट्स से एनिमल क्योंकि ह्यूमन भी एक एनिमल है तो हमारी क्लास एनिमल ऑब्जेक्ट को एक्सटेंड करेगी।",
+      "source": "transcript_api",
+      "english_text": "Can do? Can extend the same class? Multiple inheritance is not possible. Then how will we put the object class here? Or how will J Java insert it by itself? No problem. Does to student human. So we must have had a human class too. Class is human, right? Now if the human does not do it to anyone then it will extend the object. Extends Object. Ok? That means indirectly our Student class is also extending the object. Now you will say if human is also extended from someone else. Let's say Animal because human is also an animal so our class will extend the Animal object."
+    },
+    {
+      "start_time": 185.04,
+      "end_time": 219.76,
+      "text": "एनिमल एक्सटेंड ऑब्जेक्ट। कहने का मतलब ये कि कोई तो एक ऐसी पेरेंट क्लास रहेगी हायरार्की में जो इस ऑब्जेक्ट क्लास को एक्सटेंड करेगी। तो डायरेक्टली इनडायरेक्टली आपकी स्टूडेंट क्लास ऑब्जेक्ट क्लास को इन्हहेरिट करेगी ही करेगी। ठीक है? तो ठीक है? एक तो ये मेन पॉइंट हो गया। अब क्वेश्चन आता है कि जावा को एक ऐसी पेरेंट क्लास, एक रूट लेवल क्लास चाहिए ही क्यों? इसके ना बहुत अच्छा रीज़न है। एक कि देखो आप ऐसे सोचो कि जावा में इन्हहेरिटेंस और पॉलीमॉर्फिज्म मिलके बहुत कमाल काम कर सकते हैं। हमें पता है कि कुछ ऐसे फंक्शनैलिटीज़ होंगी जो हर क्लासेस में चाहिए ही चाहिए होंगी। उन",
+      "source": "transcript_api",
+      "english_text": "Animal extends object. This means that there will be a parent class in the hierarchy which will extend this object class. So directly and indirectly your student class will inherit the object class. Ok? Well then? Firstly, it has become the main point. Now the question arises that why does Java need such a parent class and a root level class? There is a very good reason for this. First of all, think that inheritance and polymorphism together can do amazing work in Java. We know that there will be some functionalities that are required in every classes. those"
+    },
+    {
+      "start_time": 217.84,
+      "end_time": 249.599,
+      "text": "फंक्शनैलिटीज़ को हम सीधा ऑब्जेक्ट क्लास में डाल सकते हैं। है ना? तो बेसिकली मैंने क्या बोला? ऐसे कॉमन बिहेवियर्स जो हर क्लास के लिए कॉमन है। कॉमन बिहेवियर्स वह एग्जिस्ट कर सकते हैं हमारी ऑब्जेक्ट क्लास के अंदर। ऐसे कौन से बिहेवियर होते हैं वो भी हम देख लेंगे। पर आप इमेजिन कर सकते हो ना कोई भी कॉमन बिहेवियर जो ऑब्जेक्ट क्लास में है वो चाइल्ड क्लास में आ ही जाएगा। क्यों आ जाएगा? बिकॉज़ ऑफ़ इन्हहेरिटेंस। हमारे पास इन्हहेरिटेंस होता है। है ना? तो अगर हमारे पास एक क्लास रहेगी क्लास ऑब्जेक्ट।",
+      "source": "transcript_api",
+      "english_text": "We can put the functionalities directly in the object class. Isn't it? So basically what did I say? Such common behaviors which are common for every class. Common behaviors can exist inside our object class. We will also see what such behaviors are. But you can imagine, any common behavior which is in the object class will definitely come in the child class. Why will he come? Because of inheritance. We have inheritance. Isn't it? So if we have one class we will have class object."
+    },
+    {
+      "start_time": 246.4,
+      "end_time": 280.4,
+      "text": "कुछ इस तरीके से क्लास ऑब्जेक्ट। उसके अंदर जो भी मेथड्स लिखे होंगे राइट जो भी उसके अंदर मेथड्स लिखे होंगे और हमें पता है अगर हम एक खुद की क्लास बनाते हैं स्टूडेंट तो वो डायरेक्टली इनडायरेक्टली इस ऑब्जेक्ट क्लास को इन्हहेरिट करती ही करती है तो हमारा कोड अंदर से ऐसे दिखता होगा एक्सटेंड्स स्टूडेंट ठीक है तो इसके अंदर जो फंक्शनैलिटीज़ होती होंगी वो इसके अंदर भी आ जाएंगी मतलब अगर मैं स्टूडेंट का ऑब्जेक्ट बनाऊंगा लेट्स से s1 = न्यू स्टूडेंट न्यू स्टूडेंट तो",
+      "source": "transcript_api",
+      "english_text": "Class object something like this. Whatever methods will be written inside it, right, whatever methods will be written inside it and we know that if we create our own class Student, then it directly and indirectly inherits this object class, so our code will look like this from inside extends Student. Okay, so all the functionalities inside it will also come inside it, meaning if I create an object of Student, let's say s1 = New Student New Student."
+    },
+    {
+      "start_time": 277.12,
+      "end_time": 310.56,
+      "text": "मैं इस s1 पे डॉट लगा के वो फंक्शनैलिटीज़ भी एक्सेस कर सकता हूं जो मेरी इस ऑब्जेक्ट क्लास के अंदर आती है। है ना? क्योंकि मैं इसको इन्हहेरिट कर रहा हूं। तो ठीक है। एक तो रीज़न हो गया कि भैया कॉमन बिहेवियर लाने की वजह से मैं कुछ फंक्शनैलिटीज़ को सीधा ऑब्जेक्ट क्लास में रख सकता हूं ताकि वो सारी क्लासेस में जावा की जितनी भी क्लासेस एक्सिस्ट करती हैं सब में वो कॉमन बिहेवियर आ जाए। अब दूसरा इसका सबसे इंपॉर्टेंट रीज़न क्या हो सकता है? देखो, दूसरा इसका इंपॉर्टेंट रीज़न ये हो सकता है क्योंकि हमारी ऑब्जेक्ट क्लास रूट लेवल क्लास है। ठीक है? हमारी पेरेंट क्लास है। तो हमारी ऑब्जेक्ट क्लास का रेफरेंस किसी भी क्लास को पॉइंट कर सकता है। हमने पढ़ा",
+      "source": "transcript_api",
+      "english_text": "By putting a dot on this s1, I can also access the functionalities which come inside this object class of mine. Isn't it? Because I'm inheriting it. Well then. One reason was that due to bringing common behavior, I can put some functionalities directly in the object class so that that common behavior comes in all the classes of Java that exist. Now what could be the second most important reason for this? Look, the second important reason for this could be because our object class is the root level class. Ok? We have a parent class. So the reference of our object class can point to any class. we read"
+    },
+    {
+      "start_time": 308.8,
+      "end_time": 342.24,
+      "text": "इन्हहेरिटेंस में कि पेरेंट क्लास का रेफरेंस वेरिएबल चाइल्ड क्लास के ऑब्जेक्ट को रेफर कर सकता है। ठीक है? तो हम कभी भी ऐसा लिख सकते हैं। लेट्स से ऑब्जेक्ट ओबी जे लेट्स से एक रेफरेंस वेरिएबल है ओबीj इक्वल टू न्यू स्टूडेंट। हम ये कर सकते हैं। और स्टूडेंट क्या है? हमारी खुद की क्लास है। लेट्स से स्टूडेंट हमने खुद की एक क्लास बना रखी है। हम उसको ओबीj से पॉइंट करवा सकते हैं। हम ये कर सकते हैं। ठीक है? इसका फायदा देखो ये होगा कि कहीं भी अगर आप स्टूडेंट क्लास को एक्सपेक्ट कर रहे हो वहां पे अगर आप ओबी जे नाम का रेफरेंस वेरिएबल भी दे दोगे जो ऑब्जेक्ट क्लास का रेफरेंस वेरिएबल है वो भी उसे",
+      "source": "transcript_api",
+      "english_text": "In inheritance the reference variable of the parent class can refer to the object of the child class. Ok? So we can write like this anytime. Object obj from Lets is a reference variable from Lets obj equal to new Student. We can do this. And what is a student? We have our own class. We have created a class of our own from Let's Student. We can get it pointed by OBJ. We can do this. Ok? Look, the advantage of this would be that if you are expecting the Student class anywhere, then you will also give a reference variable named obj which is the reference variable of the Object class, that too."
+    },
+    {
+      "start_time": 340.16,
+      "end_time": 373.919,
+      "text": "पॉइंट कर लेगा। ठीक है? तो कभी आपको सोचना नहीं पड़ेगा। ये न्यू स्टूडेंट जो भी पॉइंट कर रहा है इसको मैं कौन से रेफरेंस वेरिएबल में स्टोर करूं? कम से कम आप ओबी जे में तो कर ही सकते हो। ठीक है? इसके फायदे क्या है वो अभी हम थोड़ी देर में देख लेंगे। पर आई होप आपको समझ आ गया होगा। बिकॉज़ ऑफ़ पॉलीमॉर्फिज्म। पॉलीमॉर्फिज्म हमारी ऑब्जेक्ट क्लास का रेफरेंस वेरिएबल किसी भी क्लास को पॉइंट कर सकता है। अब उस ओबीj पे हम मेथड कॉल कर सकते हैं। कौन से मेथड कॉल कर सकते हैं? ऑब्वियसली स्टूडेंट के तो नहीं कर सकते क्योंकि ओबीजे रेफरेंस पॉइंटर तो ऑब्जेक्ट का है ना। तो हम ऑब्जेक्ट के सारे मेथड तो इस पे कॉल कर ही सकते हैं एटलीस्ट। ठीक है? ये तो हमने",
+      "source": "transcript_api",
+      "english_text": "Will do the point. Ok? So you will never have to think. In which reference variable should I store whatever point this new student is making? At least you can do it in OBJ. Ok? We will see in a little while what are its benefits. But I hope you have understood. Because of polymorphism. Polymorphism The reference variable of our object class can point to any class. Now we can call method on that obj. Which methods can be called? Obviously we cannot do this because OBJ is a reference pointer to an object. So we can call all the methods of the object on this atList. Ok? this is what we did"
+    },
+    {
+      "start_time": 371.36,
+      "end_time": 403.12,
+      "text": "पहले ही पढ़ा हुआ है। ओके? अब आगे बढ़ते हैं और अपनी इस स्टूडेंट क्लास सॉरी इस ऑब्जेक्ट क्लास को थोड़ा ध्यान से देखते हैं। ठीक है? तो हमने कहा जावा में हमारी एक क्लास होती है ऑब्जेक्ट और हमें समझना है कि उस क्लास के अंदर कौन-कौन से बिहेवियर्स होते हैं जो हर क्लास के लिए कॉमन है। ऑब्वियसली जावा ने वही सब रखे होंगे जो सब में कॉमन है। ठीक है? तो एक बार ना से पहले सारे बिहेवियर्स को हम लिस्ट डाउन कर लेते हैं। फिर हम उनको एक-एक करके स्टडी करेंगे। सबसे पहले हमारे आते हैं ऑब्जेक्ट के कोर मेथड्स।",
+      "source": "transcript_api",
+      "english_text": "Already read. Ok? Now let's go ahead and look a little carefully at this student class, sorry, this object class. Ok? So we said that in Java we have a class called Object and we have to understand what are the behaviors inside that class which are common for every class. Obviously Java would have kept only those things which are common in all. Ok? So once we list down all the behaviors before saying no. Then we will study them one by one. First come our core methods of the object."
+    },
+    {
+      "start_time": 400.88,
+      "end_time": 435.039,
+      "text": "ठीक है? हमारे पास ऑब्जेक्ट क्लास में मेनली चार कोर मेथड्स हैं। एक मेथड का नाम है टू स्ट्रिंग। एक मेथड का नाम है इक्वल्स, एक मेथड का नाम हैश कोड और एक मेथड का नाम है गेट क्लास। ये चार हमारे कोर मेथड्स हैं। ठीक है? जो हमारी ऑब्जेक्ट क्लास के अंदर होते हैं। इसके अलावा हमारे पास मेथड होते हैं क्लोनिंग के लिए। तो मैं लिख लेता हूं यहां पे क्लोनिंग। उसके लिए हमारे पास एक मेथड है जिसका मतलब जिसका नाम है क्लोन।",
+      "source": "transcript_api",
+      "english_text": "ok? We have mainly four core methods in Object class. One method is called ToString. One method name is equals, one method name is hash code and one method name is get class. These four are our core methods. Ok? Which are inside our object class. Apart from this we have methods for cloning. So I write cloning here. For that we have a method called clone."
+    },
+    {
+      "start_time": 432.72,
+      "end_time": 466.319,
+      "text": "ठीक है? उसके अलावा इसको मैं थोड़ा सा छोटा कर देता हूं। उसके अलावा हमारे पास मेथड है गार्बेज कलेक्शन के लिए। गार्बेज कलेक्शन के लिए। यहां पर एक मेथड आता है हमारे पास फाइनलाइज। ओके? और हमारे पास कुछ मेथड हैं थ्रेड्स के लिए भी। जब हम थ्रेड्स पढ़ेंगे तो वो ज्यादा हमें समझ आएंगे। पर यहां पे कुछ मेथड्स आते हैं। जैसे वेट आता है, नोटिफाई आता है और नोटिफाई ऑल आता है। ठीक है? ये तीन मेथड्स। तो ये",
+      "source": "transcript_api",
+      "english_text": "ok? Apart from that I make it a little smaller. Apart from that we have method for garbage collection. For garbage collection. Here we have a method finalized. Ok? And we have some methods for threads also. When we read the threads we will understand them better. But here are some methods. Like wait comes, notify comes and notify all comes. Ok? These three methods. so this"
+    },
+    {
+      "start_time": 464.24,
+      "end_time": 497.759,
+      "text": "सारे मेथड्स हैं जो हमारी ऑब्जेक्ट क्लास के अंदर होते हैं। ठीक है? जो बेसिकली हमें ज्यादातर यूज करने होते हैं। ठीक है? इस बार इस लेक्चर में हम इसके कोर मेथड्स को और क्लोन पे फोकस करेंगे। फाइनलाइज बहुत ज्यादा डेप्लिकेट हो चुका है। अब इसको ज्यादातर हम यूज़ करते ही नहीं हैं। वो भी मैं आपको बताऊंगा क्यों नहीं करते। और थ्रेड्स के जितने भी मेथड हैं वो हम तब पढ़ेंगे जब हम थ्रेडिंग पढ़ेंगे जावा में मल्टी थ्रेडिंग पढ़ेंगे। तब हमें ज्यादा समझ आएगा। पर अभी ना पहले हम इन कोर मेथड्स पे फोकस करते हैं कि ये कोर मेथड्स क्या कहते हैं। तो सबसे पहले आता है हमारा टू स्ट्रिंग मेथड। ठीक है? है टू स्ट्रिंग। अब नाम से समझ आ रहा होगा इस",
+      "source": "transcript_api",
+      "english_text": "There are all the methods which are inside our object class. Ok? Which basically we have to use mostly. Ok? This time in this lecture we will focus on its core methods and clones. Finalize is heavily duplicated. Now we mostly don't use it. I will tell you why not do that too. And we will read all the methods of threads when we read threading and multi threading in Java. Then we will understand more. But first let us focus on what these core methods say. So first comes our two string method. Ok? Is to string. Now you can understand this from the name"
+    },
+    {
+      "start_time": 495.44,
+      "end_time": 529.36,
+      "text": "मेथड का मेन मोटिव क्या होता है? किसी भी चीज को स्ट्रिंग में कन्वर्ट कर देना। कन्वर्ट एनीथिंग टू स्ट्रिंग। ठीक है? बहुत बढ़िया। इस मेथड का सिग्नेचर कैसा दिखता होगा? हमारी ऑब्जेक्ट क्लास के अंदर वो कुछ ऐसा होता होगा पब्लिक स्ट्रिंग। क्योंकि ये स्ट्रिंग में कन्वर्ट कर देगी। और मेथड का नाम है टू स्ट्रिंग। और इसके अंदर इसका कोई डिफॉल्ट एग्जीक्यूशन होगा जो ऑब्जेक्ट क्लास ने खुद से लिखा होगा। ठीक है? अब मैंने क्या कहा? यह जो टू स्ट्रिंग का मेथड है जो ऑब्जेक्ट क्लास ने खुद से लिखा",
+      "source": "transcript_api",
+      "english_text": "What is the main motive of the method? Convert anything to a string. Convert Anything to String. Ok? very nice. What would the signature of this method look like? Inside our object class it would be something like this: public string. Because it will convert to string. And the name of the method is to string. And inside this there will be a default execution which the object class will write on its own. Ok? Now what did I say? This is the toString method written by the Object class itself."
+    },
+    {
+      "start_time": 527.04,
+      "end_time": 562.0,
+      "text": "हुआ है, यह हमें क्या ला के देता होगा? यह ला के देता होगा एक स्ट्रिंग रिप्रेजेंटेशन। स्ट्रिंग रिप्रेजेंटेशन ऑफ एनी ऑब्जेक्ट। किसी भी ऑब्जेक्ट का एक स्ट्रिंग रिप्रेजेंटेशन ला कर के देता है हमारी टू स्ट्रिंग मेथड। ठीक है? जो कहां पे है? ऑब्जेक्ट क्लास के अंदर है। हम एक बार इसको अपनी खुद की क्लास में यूज़ करके देखेंगे। पर पहले समझते हैं कि टू स्ट्रिंग मेथड कर क्या रहा है। ठीक है? तो जैसे कि मैंने अभी यहां पर बोला होगा यह ना कुछ कि हमारे पास जो ऑब्जेक्ट क्लास होती होगी क्लास ऑब्जेक्ट",
+      "source": "transcript_api",
+      "english_text": "If this happens, what will it bring us? This would give LA a string representation. String representation of any object. Our To String method returns a string representation of any object. Ok? Who is where? The object is inside the class. We will try using it once in our own class. But first let us understand what the two string method is doing. Ok? So as I have just said here, the object class that we have must be class object."
+    },
+    {
+      "start_time": 557.279,
+      "end_time": 591.2,
+      "text": "उसके अंदर मैंने क्या बोला एक पब्लिक स्ट्रिंग नाम का मेथड होता होगा टू स्ट्रिंग जो क्या करता है हमें हमें स्ट्रिंग रिप्रेजेंटेशन देता है किसी क्लास का। ठीक है? तो ये होगा इसका डिफॉल्ट रिप्रेजेंटेशन। अब मैंने बोला कि हमारी हर क्लास जावा की इस ऑब्जेक्ट क्लास को इन्हहेरिट करती है। तो अगर मैं अपनी खुद की एक स्टूडेंट क्लास भी बनाता हूं। तो अगर मैं यहां पे लिखता हूं लेट्स से क्लास स्टूडेंट और मैं उसको एक्सटेंड करा लेता हूं",
+      "source": "transcript_api",
+      "english_text": "Inside what I said, there would be a method called public string called toString which does what it does - it gives us the string representation of a class. Ok? So this will be its default representation. Now I said that every class of ours inherits this object class of Java. So if I create my own Student class as well. So if I write here let's class student and I extend it"
+    },
+    {
+      "start_time": 589.76,
+      "end_time": 624.72,
+      "text": "ऑब्जेक्ट क्लास को। वैसे मुझे लिखने की जरूरत नहीं है क्योंकि जावा एक खुद से इंटरनली करवा लेगा। पर लेट्स से मैंने यहां पे लिखा हुआ है एक्सटेंड स्टूडेंट। अब जाकर के मैं इस टू स्ट्रिंग नाम के मेथड को ओवराइड भी तो कर सकता हूं अपने तरीके से कि मैं कैसे चाहता हूं अपनी स्ट्रिंग रिप्रेजेंटेशन। तो मैं यहां पे लिख दूंगा @ ओवराइड जो कि हम लिखते हैं और इस टू स्ट्रिंग नाम के मेथड को मैं अपने हिसाब से ओवराइड कर लूंगा। है ना? पर ऑब्वियसली मैं इसको ओवराइड तो बाद में करूंगा पर पहले देखते हैं जावा ने खुद का क्या इंप्लीमेंटेशन दिया है। यानी कि अगर मैं किसी भी क्लास में जैसे कि अपनी स्टूडेंट क्लास में अगर मैं इसका एक ऑब्जेक्ट बनाऊं अगर मैं इसको थोड़ा सा",
+      "source": "transcript_api",
+      "english_text": "To object class. Well, I don't need to write it because Java will do it internally on its own. But here I have written 'Extend Student' from Let's. Now I can override this method named 'To String' to customize my string representation as per my requirement. So I will write here @override which we write and I will override this method named to string as per my requirement. Isn't it? But obviously I will override it later, but first let's see what implementation Java has given. That is, if I create an object of it in any class, like in my student class, if I change it a little bit"
+    },
+    {
+      "start_time": 621.6,
+      "end_time": 652.32,
+      "text": "छोटा कर देता हूं। ठीक है? तो आप इमेजिन करो यहां पे मैंने स्टूडेंट का एक ऑब्जेक्ट बना रखा होगा। लेट्स से स्टूडेंट s1 = न्यू स्टूडेंट ऐसे मैं ऑब्जेक्ट बनाता हूं। ठीक है? तो मैं s1.2 स्ट्रिंग करूंगा अगर तो क्या होगा? तो पहले ऑब्वियसली कुछ तो डिफ़ॉल्ट इंप्लीमेंटेशन रहा होगा। अगर मैं s12 स्ट्रिंग करूंगा और मैंने इसको खुद से ओवराइड नहीं किया। मान लो मैंने ये नहीं लिखा तब भी मैं टू स्ट्रिंग तो कर ही सकता हूं क्योंकि मेरी ऑब्जेक्ट क्लास के अंदर वो हो रखा है। तो इसका डिफॉल्ट इंप्लीमेंटेशन रन होता होगा।",
+      "source": "transcript_api",
+      "english_text": "I make it smaller. Ok? So you imagine, here I would have created an object of student. Let Student s1 = New Student This is how I create an object. Ok? So what if I string s1.2? So earlier obviously there must have been some default implementation. If I string s12 and I don't override it myself. Even if I don't write this, I can still use the string because it is already inside my object class. So its default implementation would be run."
+    },
+    {
+      "start_time": 650.64,
+      "end_time": 685.04,
+      "text": "तो इसका डिफॉल्ट इंप्लीमेंटेशन क्या करता है? एक बार वो देखते हैं। देखो तो इसका डिफॉल्ट इंप्लीमेंटेशन देखो कुछ नहीं करता। देखो प्रिंट करेगा वो क्लास का नाम @ कोई हेक्साडेेसिमल कोड हेक्स कोड। ठीक है? अब हेक्साडेसिमल कोड क्या होता है? देखो हमने पढ़ा था ना हेक्साडेसिमल बेस 16 होता है किसी का। तो कोई भी एक ऐसा रैंडम नंबर जो इस क्लास के लिए यूनिक होगा। तो वो भी हम थोड़ी देर में देख लेंगे। तो ये होगा इसका डिफ़ॉल्ट इंप्लीमेंटेशन। पर मैं चाहूं तो खुद का एक डिफ़ॉल्ट इंप्लीमेंटेशन भी दे सकता हूं। अब टू स्ट्रिंग नाम के मेथड को मैं ओवराइड कब करूंगा? मैं तब करूंगा अगर मैं चाहता हूं कि अगर मेरी",
+      "source": "transcript_api",
+      "english_text": "So what does its default implementation do? Let's see it once. Look, its default implementation does nothing. Look it will print class name @ any hexadecimal code hex code. Ok? Now what is hexadecimal code? Look, we had read that hexadecimal base is 16. So any random number which will be unique for this class. So we will see that also in a little while. So this will be its default implementation. But if I want, I can also provide my own default implementation. Now when will I override the method named toString? I will do it if I want if my"
+    },
+    {
+      "start_time": 683.2,
+      "end_time": 717.68,
+      "text": "क्लास को मेरे कोई ऑब्जेक्ट को लेट्स से s1.2 स्ट्रिंग अगर लिखे तो स्क्रीन पे क्या प्रिंट होना चाहिए ये मैं खुद से कंट्रोल करना चाहता हूं तो मैं उसको ओवराइड करूंगा। ठीक है? एक बार पहले कोड में चल के देखते हैं इसका यूज़ कैसे होता है। ठीक है? और फिर उसके बाद आगे बढ़ते हैं। तो देखो अगेन मैंने अपना खाली प्रोजेक्ट बना रखा है डेमो डॉट java के नाम से। तो लेट से सबसे पहले ना मैं अपनी एक क्लास बनाता हूं स्टूडेंट। ठीक है? तो स्टूडेंट क्लास बनाता हूं। और उसमें दो ही चीज रखता हूं। लेट्स से एक रखता हूं स्ट्रिंग नेम स्ट्रिंग नेम और एक लेट से इंट एज रख लेता हूं। सिंपल",
+      "source": "transcript_api",
+      "english_text": "If I write s1.2 string to any of my objects in the class, then I want to control what should be printed on the screen, then I will override it. Ok? Let's first go through the code and see how it is used. Ok? And then move forward after that. So look again, I have created my empty project with the name of demo.java. So, first of all, I create my own class, Student. Ok? So I create a student class. And I keep only two things in it. I keep one from let's string name string name and one from let's keep int age. simple"
+    },
+    {
+      "start_time": 715.92,
+      "end_time": 750.56,
+      "text": "अभी मैं कोई कंस्ट्रक्टर गेटर सेटर कुछ नहीं बना रहा। ठीक है? तो अभी मैं काम करता हूं इस स्टूडेंट का एक ऑब्जेक्ट बना के देखता हूं। स्टूडेंट s1 इक्वल टू न्यू स्टूडेंट। अब क्योंकि मैंने कोई एक्सेस मॉडिफायर नहीं लगाया तो मैं इसमें s1 डॉट नेम सेट कर सकता हूं। लेट्स से आदित्य और s1 डॉट एज भी सेट कर सकता हूं। लेट्स से ऐज ठीक है हां ऐज लेट्स से 28 तो मैंने ये दोनों वेरिएबल सेट कर दिए और इसको मैं चाहूं तो प्रिंट भी कर सकता हूं अगर मैं लिखता हूं सिस्टम डॉट आउट डॉट प्रिंट एलn और मैं s1 डॉट नेम लिखूं तो मेरा आदित्य प्रिंट हो जाएगा s1 डॉट एज",
+      "source": "transcript_api",
+      "english_text": "Right now I am not creating any constructor getter setter. Ok? So right now I am working on creating an object of this student. Student s1 Equals New Student. Now since I didn't put any access modifier I can set s1 dot name in it. Can also set Aditya and s1 dot edge with lets. लेट्स से ऐज ठीक है हां ऐज लेट्स से 28 तो मैंने ये दोनों वेरिएबल सेट कर दिए और इसको मैं चाहूं तो प्रिंट भी कर सकता हूं अगर मैं लिखता हूं सिस्टम डॉट आउट डॉट प्रिंट एलn और मैं s1 डॉट नेम लिखूं तो मेरा आदित्य प्रिंट हो जाएगा s1 डॉट एज"
+    },
+    {
+      "start_time": 748.32,
+      "end_time": 778.48,
+      "text": "लिखूं तो मेरा 28 प्रिंट हो जाएगा पर मैं सिर्फ s12 स्ट्रिंग कर दूं तो टू स्ट्रिंग ये देखो ये मेथड है कोई एरर नहीं आया मतलब टू स्ट्रिंग का मेरे पास एक्सेस है कैसे होगा ये स्टूडेंट क्लास इंटरनली ऑब्जेक्ट क्लास को एक्सटेंड कर रही होगी मतलब यह अंदर से कुछ ऐसा कोड लिखती होगी एक्सटेंड्स सॉरी एक्सटेंड्स ऑब्जेक्ट कुछ इस तरीके से कोड लिखती होगी। तो अगर मैं नहीं भी लिखूंगा तो भी चलेगा। ठीक है? तो अब इसको हटा देते हैं। अब मैंने लिखा s1.2 स्ट्रिंग। देखते हैं स्क्रीन पे क्या प्रिंट होता है।",
+      "source": "transcript_api",
+      "english_text": "लिखूं तो मेरा 28 प्रिंट हो जाएगा पर मैं सिर्फ s12 स्ट्रिंग कर दूं तो टू स्ट्रिंग ये देखो ये मेथड है कोई एरर नहीं आया मतलब टू स्ट्रिंग का मेरे पास एक्सेस है कैसे होगा ये स्टूडेंट क्लास इंटरनली ऑब्जेक्ट क्लास को एक्सटेंड कर रही होगी मतलब यह अंदर से कुछ ऐसा कोड लिखती होगी एक्सटेंड्स सॉरी एक्सटेंड्स ऑब्जेक्ट कुछ इस तरीके से कोड लिखती होगी। तो अगर मैं नहीं भी लिखूंगा तो भी चलेगा। Ok? तो अब इसको हटा देते हैं। अब मैंने लिखा s1.2 स्ट्रिंग। देखते हैं स्क्रीन पे क्या प्रिंट होता है।"
+    },
+    {
+      "start_time": 775.44,
+      "end_time": 804.24,
+      "text": "ये देखो स्टूडेंट @ और कोई हेक्साडेसिमल वैल्यू। ठीक है? अब जरूरी नहीं है हर बार यही नंबर प्रिंट हो। वो कोई भी रैंडम वेरिएबल रैंडम नंबर हो सकता है आपके लिए। पर हर बार वो सेम ही होगा। इस स्टूडेंट क्लास के लिए जो नंबर एक बार हेक्साडेेसिमल कोड प्रिंट हो गया वही होगा क्योंकि उसकी आइडेंटिटी है। ठीक है? क्योंकि मैंने यहां पे इसको ओवराइड नहीं किया। चलो अब मैं एक काम करता हूं। मैं इस टू स्ट्रिंग नाम के मेथड को ना ओवराइड करने की कोशिश करता हूं। तो मैं लिखता हूं @ ओवराइड और पब्लिक स्ट्रिंग टू स्ट्रिंग।",
+      "source": "transcript_api",
+      "english_text": "Look at this student @ and any hexadecimal value. Ok? Now it is not necessary to print the same number every time. That random variable can be any random number for you. But it will be the same every time. The number once the hexadecimal code is printed will be the same for this student class because it is his identity. Ok? Because I did not override it here. Now let me do one thing. I try not to override this method named string. So I write @Override and public String to String."
+    },
+    {
+      "start_time": 802.32,
+      "end_time": 836.0,
+      "text": "तो मैं टू स्ट्रिंग को ओवराइड कर रहा हूं। देखो मैं बिल्कुल कर सकता हूं। ओके तो मैं चाहता हूं जब भी कोई मेरे s1 को डॉट टू स्ट्रिंग करे ना तो स्क्रीन पे मेरा यूजर का नाम और उसका ऐज एक साथ प्रिंट हो जाए। तो बेसिकली मैं खुद से क्या करता? कभी वॉइड प्रिंट नाम का फंक्शन बनाता। कुछ ऐसे करके और उसमें सिस्टम डॉट डॉट डॉट प्रिंट नेम और ऐज प्रिंट करता। इससे अच्छा मैं क्या करता हूं? जावा मुझे एक टू स्ट्रिंग नाम का फंक्शन तो देती है जो ऑब्जेक्ट क्लास में होता है। तो मैं इसमें लिख लेता हूं लेट्स से सिस्टम डॉट आउट डॉट प्रिंट एलn प्रिंट ln और यहां पे मैं पहले प्रिंट",
+      "source": "transcript_api",
+      "english_text": "So I'm overriding to string. Look I can definitely do it. Ok, so I want that whenever someone strings my s1 to dot, my user's name and his age should be printed together on the screen. So basically what do I do with myself? Sometimes he would create a function called void print. By doing something like this and printing system dot dot dot name and age in it. What do I do better than this? Java gives me a function named 'To String' which is in the Object class. So I write in it let's system dot out dot print ln print ln and here I first print"
+    },
+    {
+      "start_time": 832.959,
+      "end_time": 860.56,
+      "text": "करता हूं नेम और प्लस थोड़ा सा गैप देता हूं। लेट्स से कॉमा देता हूं और प्लस एज प्रिंट करता हूं। तो मैं चाहता हूं ये हो। अब देखो यहां पे एरर आ रहा है क्योंकि ना यहां मैं यहां पे स्क्रीन पे प्रिंट कर रहा हूं। बल्कि मुझे एक स्ट्रिंग रिटर्न करनी है। तो मैं इसको प्रिंट ना करके एक काम कर सकता हूं। मैं कर दूंगा रिटर्न। रिटर्न क्या? यह सब रिटर्न कर दो। इसको एक ब्लॉक में डाल देता हूं। ठीक है? तो रिटर्न दिस स्ट्रिंग। ठीक है? अब मैं चाहूं तो इस स्ट्रिंग को कहीं भी प्रिंट करवा सकता हूं। ठीक है? कैसे देखते हैं।",
+      "source": "transcript_api",
+      "english_text": "I do the name and plus a little gap. Let's give comma and print plus edge. So I want this to happen. Now see here the error is coming because here I am printing on the screen. Rather I want to return a string. So I can do one thing by not printing it. I will return. What is the return? Return all this. I put it in a block. Ok? So return this string. Ok? Now I can print this string anywhere if I want. Ok? Let's see how."
+    },
+    {
+      "start_time": 858.88,
+      "end_time": 893.199,
+      "text": "अब मैंने यहां पे क्या किया? S1.2 स्ट्रिंग। अब कौन सा मेथड कॉल होगा? अब मेरा ये वाला मेथड कॉल होगा। क्योंकि मैंने टू स्ट्रिंग नाम के मेथड को ओवराइड कर दिया। तो देखते हैं मेरे स्क्रीन पे क्या आएगा। देखो अब आ गया मेरा Aitya {कॉमा} 28 जो मैं चाहता था। अब मैं इस हिसाब से टू स्ट्रिंग नाम के मेथड को अपने हिसाब से ओवराइड कर सकता हूं। बहुत बढ़िया। अब एक और इंटरेस्टिंग चीज आपको ना जब आप प्रिंट ln यूज़ करते हो तो टू स्ट्रिंग लिखने की भी जरूरत नहीं है। देखो आप सिर्फ s1 लिख दोगे और इसको रन कर दोगे तो भी आपका सेम आउटपुट आएगा। क्यों? क्योंकि प्रिंट एलन फंक्शन",
+      "source": "transcript_api",
+      "english_text": "Now what did I do here? S1.2 string. Which method will be called now? Now this will be my method call. Because I overrode the method named toString. So let's see what comes on my screen. Look, now my Aitya {comma} 28 which I wanted has arrived. Now I can override this method named ToString as per my requirement. very nice. Now another interesting thing is that when you use print ln, you do not even need to write two strings. Look, even if you just write s1 and run it, you will get the same output. Why? because print allen function"
+    },
+    {
+      "start_time": 891.04,
+      "end_time": 924.32,
+      "text": "अंदर से टू स्ट्रिंग खुद से इंप्लीमेंट करता है। तो अगर आप प्रिंट एलn की फंक्शनैलिटी को देखोगे तो वो अंदर से जो भी आप उसको स्क्रीन पे प्रिंट करने को देते हो वो उसको स्ट्रिंग फॉर्मेट में ही प्रिंट करता है। तो वो बाय डिफ़ॉल्ट डॉट टू स्ट्रिंग अंदर से कॉल कर ही रहा होता है। तो ये आपको लिखने की जरूरत नहीं है। अगर वो खुद से टू स्ट्रिंग कॉल कर रहा है तो ये वाला टू स्ट्रिंग कॉल हो जाएगा। और जो भी मैं चाहता था वो स्क्रीन पे प्रिंट हो जाएगा। ठीक है? बहुत बढ़िया। अब अगर मैं यहां पे लिख भी दूं एक्सटेंड्स ऑब्जेक्ट तो भी कोई चेंज नहीं आएगा क्योंकि ये तो हमारा क्या है? ऑप्शनल है। तो अभी भी अगर मैं इसको रन करूंगा तो मेरा बिल्कुल सेम आउटपुट आना चाहिए। बिल्कुल है ना? ठीक है?",
+      "source": "transcript_api",
+      "english_text": "Internally the to string implements itself. So if you look at the functionality of Println, whatever you give it to print on the screen, it prints it in string format only. So by default he is calling dot to string from inside. So you don't need to write this. If he is making a two string call by himself then this one will be a two string call. And whatever I wanted would be printed on the screen. Ok? very nice. Now even if I write extends object here, there will be no change because what is this for us? Is optional. So now if I run it, I should get exactly the same output. Absolutely right? Ok?"
+    },
+    {
+      "start_time": 922.56,
+      "end_time": 948.88,
+      "text": "तो टू स्ट्रिंग तो भैया हमें अच्छे से समझ आ गया। अब एक और मेथड है जिसका नाम है इक्वल्स। ठीक है? अब यह क्या करता होगा? देखो ऑब्वियसली नाम से समझ आ रहा है। यह किसी दो ऑब्जेक्ट को आपस में कंपेयर करता होगा। है ना? तो बेसिकली कंपेयर टू ऑब्जेक्ट्स और रिटर्न क्या करेगा? एंड रिटर्न्स ट्रू या फॉल्स कि वेदर दे आर इक्वल ऑ नॉट।",
+      "source": "transcript_api",
+      "english_text": "So brother, we understood the two strings very well. Now there is another method called Equals. Ok? Now what would it do? Look, obviously the name makes sense. It must be comparing any two objects with each other. Isn't it? So basically what will compare to objects and return? And returns true or false if they are equal or not."
+    },
+    {
+      "start_time": 947.279,
+      "end_time": 980.639,
+      "text": "ठीक है? एक बुलियन वेरिएबल रिटर्न करता होगा। ओके? इसका सिग्नेचर कैसा होता होगा? सिग्नेचर मतलब ऑब्जेक्ट क्लास के अंदर ये दिखता कैसा होगा? तो ये कुछ ऐसा दिखता होगा कि हमारे पास एक क्लास होगी जो ऑब्जेक्ट है। ठीक है? टू स्ट्रिंग देख ही लिया था हमने। अब यहां पे हम बात करते हैं इक्वल्स की। तो मैंने बोला कि ये होगा पब्लिक। ऑब्वियसली बुलियन रिटर्न कर रहा है तो इसका रिटर्न टाइप होगा बुलियन हां फंक्शन का नाम आ जाएगा हमारा इक्वल्स और ये कुछ पैरामीटर में लेगा ठीक है और यहां पे उसकी कोई बॉडी होगी अच्छा अब ये पैरामीटर पे क्या लेगा ये बहुत इंटरेस्टिंग है देखो ये पैरामीटर में लेगा",
+      "source": "transcript_api",
+      "english_text": "ok? Will return a boolean variable. Ok? What would its signature be like? Signature means how will it look inside the object class? So it would look something like this: We will have a class which is Object. Ok? We had already seen the two strings. Now here we talk about equals. So I said that this will be public. Obviously if it is returning Boolean then its return type will be Boolean. Yes, the name of the function will be our equals and it will take some parameters. Okay, and here it will have a body. Okay, now what will it take as parameters, this is very interesting. Look, it will take some parameters."
+    },
+    {
+      "start_time": 978.32,
+      "end_time": 1012.079,
+      "text": "अगेन एक ऑब्जेक्ट क्लास के ऑब्जेक्ट को ओ बी जे कुछ ऐसे क्यों ऑब्जेक्ट क्लास के ऑब्जेक्ट को क्यों ले रहा है क्योंकि देखो इक्वल्स कहां पे है इक्वल्स हमारे ऑब्जेक्ट क्लास के अंदर है देखो हमने ऑब्जेक्ट क्लास के अंदर इक्वल्स बनाया है ना अब ये अगेन किसका इक्वल्स कंपेयर करेगा दो ऑब्जेक्ट के बीच में कंपेयर करेगा करेगा। तो बेसिकली अगर ये ऑब्जेक्ट क्लास के अंदर आता है तो इसको तो हायरार्की में नहीं पता ना। इसको कौन-कौन एक्सटेंड करने वाला है? ऑब्वियसली जावा की हर क्लास इसको एक्सटेंड करेगी। पर इसको खुद से भी तो पर इसको खुद से तो नहीं पता कौन-कौन इसको एक्सटेंड करने वाला है। अब देखते हैं कि इसका डिफॉल्ट इंप्लीमेंटेशन यहां पे ये जो डिफॉल्ट इंप्लीमेंटेशन है ये क्या होता",
+      "source": "transcript_api",
+      "english_text": "Again OBJ is taking the object of an object class like this, why is it taking the object of object class because look where the equals is, the equals is inside our object class, see we have created equals inside the object class, now again whose equals will it compare, will it compare between the two objects. So basically if this object comes inside the class then it is not known in the hierarchy. Who is going to extend this? Obviously every class in Java will extend it. But even from himself, he does not know who is going to extend him. Now let us see what is its default implementation here."
+    },
+    {
+      "start_time": 1009.68,
+      "end_time": 1038.199,
+      "text": "होगा। तो देखो इसका ये जो डिफॉल्ट इंप्लीमेंटेशन है ये कंपेयर करता है रेफरेंसेस को। दो रेफरेंसेस को कंपेयर करता है। ओके? कैसे? क्या मतलब इसका? देखो यह कुछ ऐसा करता होगा कि लेट्स से हमने एक स्टूडेंट नाम का ऑब्जेक्ट बनाया। तो हमारी एक क्लास है स्टूडेंट है ना? और उसमें हम अपनी वही दो फील्ड रख लेते हैं। नेम और ऐज।",
+      "source": "transcript_api",
+      "english_text": "Will happen. So look, this is its default implementation, it compares the references. Compares two references. Ok? How? What does this mean? Look, it would do something like this: From Lets we created an object named Student. So we have a class, students, right? And we keep our same two fields in it. Name and age."
+    },
+    {
+      "start_time": 1039.039,
+      "end_time": 1071.919,
+      "text": "ठीक है? अब मान लो मैंने इसके दो ऑब्जेक्ट बनाए। एक बनाया मैंने स्टूडेंट S1 = न्यू स्टूडेंट। अब आप मान लो इसके पास कंस्ट्रक्टर है। तो मैंने यहां पे दो वैल्यू्यूज दे रखी हैं। एक में दिया आदित्य। और लेट्स से 28 और दूसरा मैंने एक और ऑब्जेक्ट बनाया स्टूडेंट S2 और यहां पर भी मैंने अगेन लिखा न्यू स्टूडेंट और मैंने माल मान लो मैंने सेम वैल्यू दे दी आदित्य 28 अच्छा क्या होता होगा जब मैंने ये दो लाइन लिखी होगी हमें पता है हमारी हीप",
+      "source": "transcript_api",
+      "english_text": "ok? Now suppose I created two objects of this. I created one Student S1 = New Student. Now assume it has a constructor. So I have given two values ​​here. Gave Aditya in one. And let's say 28 and secondly I created another object student S2 and here also I wrote again new student and I assumed the value I gave the same value Aditya 28 Well, what would have happened when I would have written these two lines, we know our heap."
+    },
+    {
+      "start_time": 1070.08,
+      "end_time": 1104.32,
+      "text": "मेमोरी स्टक मेमोरी कैसे काम करती है तो कुछ ऐसा होगा कि लेट्स से ये हमारी है स्टक हीप मेमोरी और यहां है हमारी स्टक मेमोरी तो सबसे पहले जैसे मैंने लिखा न्यू स्टूडेंट एक स्टूडेंट नाम का ऑब्जेक्ट क्रिएट होगा हमारी हीप मेमोरी के अंदर और S1 नाम का रेफरेंस वेरिएबल यहां और ये इसे पॉइंट करेगा। इसमें दो वैल्यू होगी। एक होगी आदित्य। इसमें दो वैल्यू होगी। एक होगी नाम के लिए आदित्य और ऐज के लिए 28। अब जब मैंने अगली लाइन लिखी न्यू स्टूडेंट तो जब भी मैंने न्यू लिखता हूं क्या होता है? दोबारा एक ऑब्जेक्ट क्रिएट होता है। उसका रेफरेंस वेरिएबल s2 वो यहां होगा। वो इसको पॉइंट",
+      "source": "transcript_api",
+      "english_text": "How memory stuck memory works So it would be something like this Let's say this is our stuck heap memory and here is our stuck memory So first of all as I wrote new student an object named student will be created inside our heap memory and a reference variable named S1 here and this will point to it. It will have two values. Aditya will be one. It will have two values. There will be one for name Aditya and 28 for age. Now when I write the next line New Student, what happens whenever I write New? Again an object is created. His reference variable s2 will be here. he points to it"
+    },
+    {
+      "start_time": 1102.16,
+      "end_time": 1135.84,
+      "text": "करेगा। और इसके अंदर भी दो वैल्यू होंगी। एक होगी आदित्य और एक होगी 28। है ना? अब अगर मैं अपने कोड में ऐसा लिखूं s1 डॉट इक्वल्स। अब ऑब्वियसली s1 पे मैं इक्वल्स कॉल कर सकता हूं क्योंकि इक्वल्स कहां है? ऑब्जेक्ट क्लास के अंदर है। और s1 क्योंकि ऑब्जेक्ट को इन्हहेरिट करता ही है तो इक्वल्स चल जाएगा। अब अगेन मुझे पैरामीटर में क्या पास करना है? एक और ऑब्जेक्ट पास करना है। तो मैं यहां पे आर्गुमेंट में s2 दे सकता हूं। है ना? अब s2 क्या है? एक रेफरेंस है स्टूडेंट का। है ना? और ऑब्जेक्ट क्लास इस स्टूडेंट क्लास के ऊपर आती है। पेरेंट क्लास है। है ना? अब यहां पे इक्वल्स का जो सिग्नेचर था वो ऑब्जेक्ट",
+      "source": "transcript_api",
+      "english_text": "Will do. And there will be two values ​​inside this also. One will be Aditya and one will be 28. Isn't it? Now if I write like this in my code s1 dot equals. Now obviously on s1 I can call equals because where is equals? The object is inside the class. And since s1 inherits the object then equals will work. Now again what do I have to pass in the parameters? One more object to pass. So I can pass s2 in the argument here. Isn't it? Now what is s2? One reference is the student. Isn't it? And the object class comes above this student class. Is the parent class. Isn't it? Now the object that had the signature of Equals here"
+    },
+    {
+      "start_time": 1134.32,
+      "end_time": 1161.44,
+      "text": "एक्सपेक्ट कर रहा था। आपने दे दिया स्टूडेंट का। कोई दिक्कत नहीं है। OBJ इस स्टूडेंट को पॉइंट कर सकता है। तो मैं ये लिख सकता हूं। अब S1 = S2 क्या करता होगा? वो कंपेयर करता होगा इनके रेफरेंसेस को। वो देखेगा क्या S1 और S2 सेम ऑब्जेक्ट को पॉइंट कर रहे हैं? आंसर है नहीं। S1 पॉइंट कर रहा है इस ऑब्जेक्ट को। S2 पॉइंट कर रहा है इस ऑब्जेक्ट को। चाहे उनके अंदर की देखो वैल्यू बिल्कुल सेम है। पर फिर भी इसका आंसर हमें हमेशा फॉल्स मिलेगा।",
+      "source": "transcript_api",
+      "english_text": "Was expecting. You gave it to the student. There is no problem. OBJ can point to this student. So I can write this. Now what does S1 = S2 do? He must be comparing their references. He will see whether S1 and S2 are pointing to the same object? The answer is no. S1 is pointing to this object. S2 is pointing to this object. Regardless, their intrinsic value is exactly the same. But still the answer will always be false."
+    },
+    {
+      "start_time": 1158.88,
+      "end_time": 1192.88,
+      "text": "क्योंकि इनके रेफरेंसेस अलग-अलग हैं। तो बाय डिफॉल्ट इक्वल्स मेथड क्या करता है? अंदर से रेफरेंसेस को कंपेयर करता है। ठीक है? तो यहां पे जो इसका जो डिफॉल्ट इंप्लीमेंटेशन होगा वो क्या होगा? कंपेयर रेफरेंसेस। ठीक है? तो ऑब्वियसली मैं इसे अपनी स्टूडेंट क्लास में यूज़ कर सकता हूं। बट मुझे मानना पड़ेगा कि अगर दोनों स्टूडेंट मैंने सेम भी बना दिए। दोनों की वैल्यू सेम है। पर अगर दोनों अलग-अलग ऑब्जेक्ट हैं तो आंसर इसका फॉल्स ही आएगा। ऑब्वियसली इसको भी मैं खुद से ओवराइड कर सकता हूं अपने बिहेवियर के लिए। अगर मैं चाहूं कि ये जो इक्वल्स मेथड है ना ये एग्जैक्टली वैल्यू कंपेयर करें। अगर दो ऑब्जेक्ट की सारी वैल्यू सेम है तो मैं",
+      "source": "transcript_api",
+      "english_text": "Because their references are different. So what does the By Default Equals method do? Compares references internally. Ok? So what will be its default implementation here? Compare References. Ok? So obviously I can use it in my student class. But I have to admit that even if both the students were equal to me. The value of both is same. But if both are different objects then the answer will be false. Obviously I can override this for my own behavior. If I want this equals method to compare exactly the values. If all the values of two objects are same then I"
+    },
+    {
+      "start_time": 1190.96,
+      "end_time": 1225.039,
+      "text": "इसको बोलूं ट्रू तो मैं अपने हिसाब से इसको ओवराइड कर सकता हूं। ठीक है? अभी करेंटली जो इसका बिहेवियर है ना वो बिल्कुल सेम है हमारे इक्वल इक्वल ऑपरेटर के। अगर मैं यहां पे s1 इक्वल इक्वल s2 लिखता। इसके बारे में हमने पहले भी बात की है। अगर मैं s1 इक्वल इक्वल s2 लिखता तो भी ये क्या करता? रेफरेंस को ही तो कंपेयर करता। है ना? यहां पे इक्वल्स मेथड भी वही तो कर रहा है। इनफैक्ट अगर आप इस इक्वल्स मेथड का कोड देखोगे जा के जो ऑब्जेक्ट क्लास के अंदर डिफाइन है यहां पे इसका कोड देखोगे ना तो ये अंदर से इस इक्वल इक्वल ऑपरेटर को ही यूज़ करता है। तो वो कुछ ऐसा",
+      "source": "transcript_api",
+      "english_text": "If I call it true then I can override it as per my wish. Ok? Currently its behavior is exactly the same as that of our Equal Operator. If I had written here s1 equals s2. We have talked about this earlier also. Even if I wrote s1 equals s2, what would it do? Would compare the reference only. Isn't it? Here the Equals Method is also doing the same. In fact, if you look at the code of this equals method which is defined inside the object class, here you will see its code, then it uses this equals operator from within. so it's something like this"
+    },
+    {
+      "start_time": 1222.96,
+      "end_time": 1249.52,
+      "text": "ही करता है। दिस ये जो करंट रेफरेंस है क्या वो इक्वल इक्वल है इस ओबीj के। अगर है तो रिटर्न ट्रू कर दो नहीं तो रिटर्न फॉल्स कर दो। तो अंदर से वो इक्वल इक्वल ही यूज़ कर रहा है। तो अभी इस इक्वल्स का और इस इक्वल इक्वल का जो मीनिंग है वो बिल्कुल सेम है। क्योंकि अभी तक हमने इसको ओवराइड किया ही नहीं है। ठीक है? तो एक बार फटाफट इसको भी कोड में देखते हैं। तो देखो अगेन मैं अपनी डेमो डॉट jवा वाली क्लास में ही हूं। मैंने यहां पे स्टूडेंट को एक्सटेंड कराया था ऑब्जेक्ट से और यहां पे सिर्फ टू स्ट्रिंग को ओवराइड किया था।",
+      "source": "transcript_api",
+      "english_text": "Only does it. Is this current reference exactly equal to this OBJ? If yes then return true otherwise return false. So from inside he is using exactly the same. So now the meaning of this equals and this equal is exactly the same. Because we have not yet overriden it. Ok? So let's take a quick look at this in the code. So look again I am in my demo dot jva class. Here I had extended Student from object and overridden only the to string."
+    },
+    {
+      "start_time": 1247.679,
+      "end_time": 1279.36,
+      "text": "पर लेट्स से मैं अभी टू स्ट्रिंग मैं अभी इक्वल्स को ओवराइड नहीं करता। मैं एक नया ऑब्जेक्ट बनाता हूं। स्टूडेंट s2 s2 = न्यू स्टूडेंट और क्योंकि मेरे पास कंस्ट्रक्टर नहीं है तो मैं एक काम करता हूं। S2 के नेम में भी सेम चीज डाल देता हूं। आदित्य जो मैंने पहले डाली थी आदित्य और S2 के एज में भी मैं सेम चीज डाल देता हूं 28। ठीक है? देखो बिल्कुल सेम है आदित्य और 28 अब मैं अगर ऐसे लिखूं लेट्स",
+      "source": "transcript_api",
+      "english_text": "But let's just string I don't override equals right now. I create a new object. Student s2 s2 = New Student And since I don't have a constructor I make one. I put the same thing in the name of S2 also. Aditya which I had put earlier, I put the same thing in Aditya and S2 edge also 28. Ok? Look, Aditya and 28 are exactly the same, now if I write like this then let's"
+    },
+    {
+      "start_time": 1273.84,
+      "end_time": 1306.88,
+      "text": "से सिस्टम डॉट आउट डॉट प्रिंट एलn और मैं प्रिंट करूं s1 डॉट इक्व s2 तो देखो ऐसे मैं कर सकता हूं कोई दिक्कत नहीं है। अब क्या प्रिंट होगा स्क्रीन पे? मैंने आपको कहा था फॉल्स प्रिंट होगा क्योंकि ऑलदो दोनों s1 में और s2 में वैल्यू सेम पड़ी है। अभी मैं इस प्रिंट को बंद कर देता हूं। ठीक है? वैल्यू सेम पड़ी है पर वो रेफरेंसेस कंपेयर करेगा। तो अगर हमने इस कोड को चलाया तो आंसर आया फॉल्स। कोई दिक्कत नहीं है क्योंकि हमारा ये ऑपरेटर ऐसे ही काम करता है। इनफैक्ट अगर मैं इसको ऐसे भी",
+      "source": "transcript_api",
+      "english_text": "From system dot out dot print l n and I print s1 dot equ s2 So look, I can do it like this, no problem. Now what will be printed on the screen? I told you that false print will happen because both the values ​​in s1 and s2 are same. Now let me close this print. Ok? The value is the same but it will compare the references. So if we ran this code the answer came false. There is no problem because our operator works like this. In fact if I say it like this"
+    },
+    {
+      "start_time": 1303.84,
+      "end_time": 1335.28,
+      "text": "लिखता क्या s1 इज़ इक्वल इक्वल है s2 के? अगर मैं ऐसे भी लिखता तब भी मेरा फॉल्स आता। ठीक है? क्योंकि मेरा इक्वल इक्वल भी वही काम करता है जो डॉट इक्वल्स करता है। ठीक है? ओके। अब इसको दिखाने के लिए ना मैंने आपको क्या कहा था? अगर हम इस इक्वल्स नाम के मेथड के अंदर जाएं। ये देखो ये ऑब्जेक्ट डॉट जावा क्लास है। और ये रहा इसका इक्वल्स मेथड। देखो ये वही तो कर रहा है। ऑब्जेक्ट ले रहा है ओबीj और और देखो क्या कंपेयर कर रहा है? रिटर्न दिस इक्वल इक्वल ओबीj जो मैंने आपको बोला था अंदर से ये भी इक्वल इक्वल ऑपरेटर ही यूज़ कर रहा है। तो अब आपको क्या करना पड़ेगा?",
+      "source": "transcript_api",
+      "english_text": "Write: Is s1 equal to s2? Even if I had written like this, I would have failed. Ok? Because my equals equals does the same thing as dot equals. Ok? Ok. Now what did I tell you to show this? If we go inside this method called Equals. Look, this is Object Dot Java class. And here's the equals method. Look, he is doing the same thing. Taking object obj and see what it is comparing? Return this equal equal obj which I told you about is also using the equal equal operator internally. So what do you have to do now?"
+    },
+    {
+      "start_time": 1332.72,
+      "end_time": 1366.559,
+      "text": "आपको करना पड़ेगा इसको ओवराइड। तो आप लिखोगे @ ओवराइड। मैं नहीं चाहता जो इसका डिफ़ॉल्ट बिहेवियर है वो आए। तो मैं एक काम करता हूं पब्लिक बुलियन इक्वल्स मेथड को ओवराइड कर लेता हूं। इक्वल्स कुछ ऐसे ऑब्वियसली ये क्या लेगा? अगेन एक ऑब्जेक्ट नाम का रेफरेंस लेगा। ओबीj ऑब्जेक्ट ओबीj अब देखो यहां पे ना मैंने एक ऑब्जेक्ट नाम का रेफरेंस लिया है। अभी के लिए देखो ये एक्सपेक्ट कर रहा होगा कि मैंने बुलियन लिया तो कुछ रिटर्न करे। तो अभी के लिए लेट्स से मैंने सिंपली लिख दिया रिटर्न फॉल्स अभी आपको समझाने के लिए। ठीक है? अब ये चल जाएगा। पर मान लो क्या मैं यहां पे",
+      "source": "transcript_api",
+      "english_text": "You will have to override it. So you would write @override. I don't want its default behavior to come. So one thing I do is override the public boolean equals method. Equals something like this Obviously what will it take? Again will take a reference to an object name. Obj Object Obj Now look here, I have taken a reference named object. Look for now he might be expecting some return if I take the bullion. So for now, I simply wrote Return Falls to make you understand. Ok? Now this will work. But suppose I am here?"
+    },
+    {
+      "start_time": 1365.039,
+      "end_time": 1396.799,
+      "text": "एक स्टूडेंट नाम का रेफरेंस ले सकता हूं? बिल्कुल नहीं ले सकता। मेरे पास एरर आ जाएगा। एरर क्या है? देखो द मेथड इक्वल्स ऑफ टाइप स्टूडेंट मस्ट ओवराइट और इंप्लीमेंट अ सुपर टाइप मेथड। क्योंकि इसको लग रहा है अभी मैं इसको ओवराइड कर ही नहीं रहा। क्योंकि यहां पे ये जो रेफरेंस है ये ऑब्जेक्ट का होना चाहिए ना कि स्टूडेंट का। ये मैंने आपको बताया था। क्यों? क्यों? क्योंकि हमारी जो असली इक्वल्स क्लास है अगर मैं इस इक्वल्स के अंदर जाऊंगा सॉरी इसको अगर मैं हटा दूं अभी के लिए और मैं इस वाले ऑब्जेक्ट के इक्वल्स के अंदर जाऊं तो वो देखो एक ऑब्जेक्ट नाम का रेफरेंस पॉइंटर एक्सपेक्ट कर रहा है। तो मुझे इसे ऑब्जेक्ट का रेफरेंस पॉइंटर ही देना पड़ेगा। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "Can I take reference of a student name? Can't take it at all. I will get an error. What is the error? See The Method Equals Type Student Must Overwrite and Implement a Super Type Method. Because it feels like I am not overriding it right now. Because the reference here should be of the object and not of the student. I told you this. Why? Why? Because our real Equals class, if I go inside this Equals, sorry, if I remove it for now and I go inside the Equals of this object, then look, it is expecting a reference pointer named object. So I have to give it a reference pointer to the object. Ok?"
+    },
+    {
+      "start_time": 1394.96,
+      "end_time": 1429.36,
+      "text": "अंदर से मैं उसे टाइप कास्ट कर सकता हूं किसी में भी। पर अभी तो मुझे यहां पे ऑब्जेक्ट पास करना पड़ेगा। ठीक है? ओके। तो इसको ओवराइड करने की कोशिश करते हैं। तो देखो मुझे कुछ क्या करना है? मैं चाहता हूं अगर किसी स्टूडेंट का नाम और ऐज दोनों अगर बराबर है तो मैं उसको बोलूं कि हां भाई दो ऑब्जेक्ट इक्वल है। तो यहां पे मैं कंपेयर कर रहा हूं एक इस ऑब्जेक्ट को जो करंट ऑब्जेक्ट है जिसको मैं दिस से रेफर कर सकता हूं दिस और एक मेरे पास ये ओबीj आया है। ठीक है? बहुत बढ़िया। तो मैं कुछ ऐसा कर सकता हूं। राइट? तो सबसे पहले काम करता हूं। मैं टाइप कास्ट करता हूं एक स्टूडेंट को एस इक्वल टू ये जो ओबीj है इसको स्टूडेंट में टाइप कास्ट करता हूं।",
+      "source": "transcript_api",
+      "english_text": "From inside I can typecast him into anyone. But right now I have to pass the object here. Ok? Ok. So let's try to override it. So look what do I have to do? I want that if a student's name and age both are equal, then I should tell him that yes brother, the two objects are equal. So here I am comparing one this object which is the current object which I can refer to this and one I have this obj. Ok? very nice. So I can do something like this. Right? So I work first. I type cast a student to s equal to this which is obj."
+    },
+    {
+      "start_time": 1427.919,
+      "end_time": 1459.76,
+      "text": "तो टाइप कास्ट आपको पता है मैं कैसे करता हूं? मैं यहां पे लिख दूंगा स्टूडेंट। ये देखो अब ये टाइप कास्ट हो गया। S के अंदर। ठीक है? अब मैं इसको S से कंपेयर कर सकता हूं। मैं ऐसे लिख सकता हूं रिटर्न दिस डॉट नेम इक्वल इक्वल S डॉट नेम मतलब जो करंट का जो नाम है जो इस करंट ऑब्जेक्ट का नाम है जो भी इस करंट ऑब्जेक्ट का नाम है ये वाला नेम ये इक्वल होना चाहिए। जो इस S के पास नेम है। और ये S क्या है? है ये ओबीj नाम का ही ऑब्जेक्ट है। इसको मैंने टाइप कास्ट",
+      "source": "transcript_api",
+      "english_text": "So type cast you know how I do? I will write here student. Look, now this type has been cast. Inside S. Ok? Now I can compare it with S. I can write like this return this dot name equal equal S dot name meaning whatever is the name of current whatever is the name of this current object whatever is the name of this current object this name should be equal. Which is the name near this S. And what is this S? This is an object named obj. I type cast this"
+    },
+    {
+      "start_time": 1455.919,
+      "end_time": 1490.24,
+      "text": "किया हुआ है। s डॉट नेम एंड दिस डॉट एज शुड बी इक्वल इक्वल s डॉट एज अगर ये है तो मैं रिटर्न कर दूंगा ट्रू नहीं तो मैं रिटर्न कर दूंगा फॉल्स। ठीक है? तो मैं ऐसा कुछ कर सकता हूं। ठीक है? अब देखते हैं क्या अब इसकी वैल्यू ट्रू आएगी क्या? ओके? अब इसको रन करके देखते हैं। बिल्कुल। अब आंसर आ गया ट्रू। यानी कि अब मेरा s1 डॉट = s2 एग्जैक्टली मेरे वैल्यूज़ को कंपेयर कर रहा है ना कि रेफरेंसेस को। ठीक है? अब देखो इसमें ना कुछ गलतियां है कि मैंने यहां पे सीधा ऑब्जेक्ट नाम का ओबीj पास किया। उसको स्टूडेंट में टाइप कास्ट",
+      "source": "transcript_api",
+      "english_text": "Has been done. s dot name and this dot age should be equal equal s dot age If this is then I will return true otherwise I will return false. Ok? So I can do something like this. Ok? Now let's see whether its value will come true now? Ok? Now let's run it and see. Absolutely. Now the answer is true. That means now my s1 dot = s2 is exactly comparing my values ​​and not the references. Ok? Now see, there are some mistakes in this that here I directly passed the object name obj. type cast him in student"
+    },
+    {
+      "start_time": 1487.84,
+      "end_time": 1515.6,
+      "text": "किया और कंपेयर कर लिया। अब देखो गलती ये है कि यहां पे इस वाले प्रिंट एलन फंक्शन में मैंने s2 पास किया जो कि एक स्टूडेंट नाम का ही ऑब्जेक्ट था तो कोई दिक्कत नहीं थी। पर मान लो अगर मैंने यहां पे एक स्टूडेंट s3 पास कर दिया इसको और उसको मैंने अभी डिक्लेअर नहीं किया। इक्वल टू न्यू स्टूडेंट किया ही नहीं। और मैंने यहां पे s1.3 पास कर दिया। तो s3 तो अभी बाय डिफॉल्ट नल होगा। तो देखो यहां पे अभी एरर आ रहा है। द लोकल वेरिएबल s3 में नॉट हैव बीन इनिशलाइज। एक काम करते हैं। S3 = नल कर देते हैं। ठीक है? अब तो ये नल है।",
+      "source": "transcript_api",
+      "english_text": "Did it and compared it. Now see the mistake is that here in this print all function I passed s2 which was an object named student so there was no problem. पर मान लो अगर मैंने यहां पे एक स्टूडेंट s3 पास कर दिया इसको और उसको मैंने अभी डिक्लेअर नहीं किया। इक्वल टू न्यू स्टूडेंट किया ही नहीं। और मैंने यहां पे s1.3 पास कर दिया। तो s3 तो अभी बाय डिफॉल्ट नल होगा। तो देखो यहां पे अभी एरर आ रहा है। द लोकल वेरिएबल s3 में नॉट हैव बीन इनिशलाइज। Let's do one thing. S3 = नल कर देते हैं। Ok? अब तो ये नल है।"
+    },
+    {
+      "start_time": 1514.0,
+      "end_time": 1541.679,
+      "text": "पर देखो मेरे को कोई एरर नहीं आया। मेरा कोड चल जाना चाहिए। पर जैसे ही मेरा कोड चलेगा मुझे आ जाएगी एक एक्सेप्शन जो कि है मेरी नल पॉइंटर एक्सेप्शन। नल पॉइंटर एक्सेप्शन। क्यों? क्योंकि यहां पे मेरा कोड आएगा। इस ओबीजे को एस स्टूडेंट में टाइप कास्ट करने की कोशिश करेगा और उस स्टूडेंट के s डॉट नेम और s डॉट एज को निकालने की कोशिश करेगा। पर आप नल में नेम और नल में एज तो निकाल ही नहीं सकते। है ना? तो मेरा कोड अभी थोड़ा सा गलत है। ठीक है? इसको मैं वापस से s2 ही कर देता हूं।",
+      "source": "transcript_api",
+      "english_text": "But look, I did not find any error. My code should run. But as soon as my code runs, I will get an exception which is my null pointer exception. Null pointer exception. Why? Because my code will come here. Will try to type cast this obj to s Student and try to extract the s dot name and s dot age of that student. But you cannot extract name from tap and edge from tap. Isn't it? So my code is a little bit wrong right now. Ok? I revert it back to s2 only."
+    },
+    {
+      "start_time": 1538.88,
+      "end_time": 1570.72,
+      "text": "और इसको मैं अभी के लिए हटा देता हूं। ओके। तो गलत यह है कि ना मैंने कुछ चीजें चेक ही नहीं करी। मुझे सबसे पहले चेक करना चाहिए कि इफ OBJ इक्वल इक्वल नल है तो मैं सीधा रिटर्न कर दूं फॉल्स। ठीक है? रिटर्न कर दूं फॉल्स। कुछ इस तरह से। अब देखो मेरा ये वाला एरर तो दूर हो गया। अब अगर मैं यहां पे स्टूडेंट S3 = नल भी पास कर दूं और यहां पे S3 पास कर दूं तो मेरे को नल पॉइंटर एक्सेप्शन नहीं आएगी। मुझे फॉल्स आएगा।",
+      "source": "transcript_api",
+      "english_text": "And I remove this for now. Ok. So what is wrong is that I did not check some things. I should first check if OBJ is equal to null then I should simply return false. Ok? Should I return the falls? Something a bit like this. Now see, this error of mine has been removed. Now if I pass Student S3 = Null here and also pass S3 here, then I will not get Null pointer exception. I will fall."
+    },
+    {
+      "start_time": 1568.799,
+      "end_time": 1595.679,
+      "text": "फॉल्स। ठीक है? ओके। तो मैंने अपनी एक एक्सेप्शन रोक दी। ओके। एक और दिक्कत ये है कि यहां पे मैं ऑब्जेक्ट नाम का रेफरेंस ले रहा हूं ना। और ऑब्जेक्ट तो कुछ भी हो सकता है। बेसिकली ऑब्जेक्ट तो पेरेंट क्लास है। तो जरूरी थोड़ी है मैं स्टूडेंट नाम का ऑब्जेक्ट ही पास करूं। लेट्स से यहां पे मैं कोई इंटीजर क्लास का ऑब्जेक्ट आई पास कर रहा हूं। इक्वल टू 28 कुछ ऐसे और मैंने यहां पे आई पास कर दिया। ठीक है? ये रैपर क्लास है। आपको पता ही है। अभी भी देखो मेरा कोड चल रहा है। कोई दिक्कत नहीं है। कोई एरर नहीं आ रहा मुझे।",
+      "source": "transcript_api",
+      "english_text": "Falls. Ok? Ok. So I stopped one of my exceptions. Ok. Another problem is that here I am taking reference of the object name. And the object can be anything. Basically object is parent class. So it is important that I pass only an object named Student. Here I am passing an integer class object from Lets. Equal to 28 something like that and I passed here. Ok? This is rapper class. You already know. Still see my code is running. There is no problem. I am not getting any error."
+    },
+    {
+      "start_time": 1593.279,
+      "end_time": 1627.44,
+      "text": "पर अगर मैं इसको रन करूंगा तो मुझे एक और एक्सेप्शन आएगी जिसका नाम होता है क्लास कास्ट एक्सेप्शन। क्योंकि मैं इस पर्टिकुलर आई क्लास को जब इस ओबीजे में लूंगा और उसको टाइप कास्ट करने की कोशिश करूंगा स्टूडेंट में तो वो टाइप कास्ट हो ही नहीं पाएगा। क्योंकि ये जो ओबीजे है वो क्या है यहां पे? वो इंटीजर है। है ना? यहां पे मैंने पास किया है। सॉरी देखो यहां पे मैंने पास किया है इंटीजर और कलेक्ट कर रहा हूं ओबीजे में। कलेक्ट तो मैं कर ही सकता हूं क्योंकि ये पेरेंट क्लास है। पर जब मैं इसको स्टूडेंट में टाइप का करूंगा तो इशू हो जाएगा। तो मुझे एक और चीज चेक करनी पड़ेगी कि इस ओबीजे में जो आ रहा है क्या वो स्टूडेंट टाइप का ही ऑब्जेक्ट है या नहीं है। अच्छा इसको",
+      "source": "transcript_api",
+      "english_text": "But if I run it, I will get another exception called Class Cast Exception. Because when I take this particular I class in this OBJ and try to type cast it in Student, it will not be able to be type cast. Because what is this OBJ here? That's an integer. Isn't it? I have passed here. Sorry look here I have passed integer and collecting it in obj. I can only collect because this is the parent class. But when I type it in student, there will be an issue. So I have to check one more thing whether what is coming in this OBJ is the object of student type or not. okay this"
+    },
+    {
+      "start_time": 1625.84,
+      "end_time": 1654.64,
+      "text": "मैं कैसे चेक कर सकता हूं? इसके लिए मेरे पास मेरे ऑब्जेक्ट क्लास में एक और मेथड होता है जो कि अभी आगे भी पढ़ेंगे। उसका नाम होता है गेट क्लास। तो मैं चेक करूंगा इफ अ oबीj डॉट गेट क्लास इज़ इक्वल इक्वल दिस डॉट गेट क्लास अगर ऐसा है सॉरी अगर ऐसा नहीं है तो लेट्स से अगर मैं लिखता हूं अगर ऐसा नहीं है तो सीधा रिटर्न कर दो फॉल्स।",
+      "source": "transcript_api",
+      "english_text": "How can I check? For this I have another method in my object class which we will read further. Its name is gate class. So I will check if an obj dot get class is equal equal this dot get class if it is so then sorry if it is not so then let's if I write if it is not so then just return false."
+    },
+    {
+      "start_time": 1651.039,
+      "end_time": 1678.24,
+      "text": "ठीक है? अब देखो ये चेक करता है। चेक इफ बोथ क्लासेस आर ऑफ टाइप स्टूडेंट कि दोनों क्लासेस भाई स्टूडेंट के टाइप की होनी चाहिए। अगर हम इसे टाइप कास्ट नहीं करते तो हमें कौन सी एक्सेप्शन आती है? इफ नॉट चेक्ड हमें मिलेगी क्लास कास्ट एक्सेप्शन। ये भी एक एक्सेप्शन टाइप है। अगेन अभी तक हमने एक्सेप्शनंस नहीं पढ़े हैं। पर जब हम पढ़ेंगे तो आपको समझ आएगा कि कौन-कौन सी तरह की एक्सेप्शनंस होती हैं।",
+      "source": "transcript_api",
+      "english_text": "ok? Now see it checks. Check if both classes are of type Student that both the classes should be of type Student. What exception do we get if we don't type cast it? If not checked we will get class cast exception. This is also an exception type. Again we have not read Exceptions yet. But when we read, you will understand what types of exceptions are there."
+    },
+    {
+      "start_time": 1676.96,
+      "end_time": 1708.24,
+      "text": "पर अभी आप मान सकते हो क्लास कास्ट एक्सेप्शन आएगी। अगर मैं ये चेक नहीं करूंगा। ठीक है? अब देखो मेरा ये वाला कोड चल जाना चाहिए। मैंने पास कर रहा हूं इंटीजर और उसको कास्ट करने की कोशिश कर रहा हूं। तो मेरा आंसर आ जाएगा फॉल्स। ठीक है? तो मैं ये भी नहीं कर सकता। तो अब देखो मैंने इसको थोड़ा सा ऑप्टिमाइज कर दिया कि पहले चेक करा ऑब्जेक्ट नल नहीं होना चाहिए। चेक किया कि वो दोनों की क्लास सेम होनी चाहिए। तो डॉट गेट क्लास। अभी गेट क्लास के बारे में हम आगे देखेंगे। इसके अलावा एक थोड़ी सी ऑप्टिमाइजेशन और कर सकता हूं। वो मैं ऐसे कर सकता हूं। इफ दिस इज़ इक्वल इक्वल ओबीj रिटर्न ट्रू।",
+      "source": "transcript_api",
+      "english_text": "But now you can assume that class cast exception will come. If I don't check this. Ok? Now look, this code of mine should work. I am passing an integer and trying to cast it. So my answer will be Falls. Ok? So I can't do this either. So now see, I have optimized it a bit by first checking that the object should not be null. Checked that both of them should be in the same class. So don't get class. Now we will see further about GATE class. Apart from this, I can do a little more optimization. I can do that like this. If this is equal then equal obj returns true."
+    },
+    {
+      "start_time": 1706.24,
+      "end_time": 1740.399,
+      "text": "अब इस लाइन का क्या मतलब? इस लाइन का मतलब ये है कि ये जो OBJ है अगर ये एग्जैक्टली दिस के इक्वल ही है मतलब दोनों का रेफरेंस ही सेम है। मान लो S1 = S1 ही अगर मैं पास कर दूं है ना तो अगर मैं S1 = S1 पास कर रहा हूं इसका मतलब क्या हुआ? दोनों S1 सेम ही ऑब्जेक्ट को पॉइंट कर रहे होंगे ना। इनके रेफरेंसेस ही सेम है। अगर रेफरेंस सेम है तो ऑब्जेक्ट तो सेम होगा ही होगा। तो मैं क्यों फालतू की इतनी मेहनत करूं कि मैं उसकी गेट क्लास चेक करूं। उसको टाइप कास्ट करूं। फिर उन दोनों का नेम और ऐज को मैच करने की कोशिश करूं। क्योंकि वो सब तो सेम ही होंगे। तो मैं सीधा रिटर्न कर दूंगा ट्रू। तो ये मिलाकर के मैंने पूरे के पूरे इक्वल्स को अच्छे से ओवराइड कर",
+      "source": "transcript_api",
+      "english_text": "Now what does this line mean? The meaning of this line is that if this OBJ is exactly equal to this, then the reference of both is the same. Suppose S1 = S1 only if I pass then what does it mean if I pass S1 = S1? Both S1 beans must be pointing to the same object. Their references are the same. If the reference is the same then the object must be the same. So why should I put in so much unnecessary effort to check his gate class. Type cast him. Then I will try to match the names and ages of both of them. Because they will all be the same. So I will simply return true. So by combining this, I have completely overridden all the equals."
+    },
+    {
+      "start_time": 1738.32,
+      "end_time": 1763.919,
+      "text": "दिया सारी ऑप्टिमाइजेशन के साथ। अब मेरा एक कोड चल जाएगा। अब मैं इसको हटा सकता हूं इस लाइन को और इस स्टूडेंट S3 को भी और इसको ऐसे रहने दे सकता हूं। ठीक है? ओके। आई होप आपको समझ आया होगा अच्छे से कि हमने इक्वल्स क्लास को कैसे ओवराइड किया। अब देखो चलते हैं हम अपने अगले मेथड की तरफ जो कि हमारा बहुत इंपॉर्टेंट मेथड आता है वो हैश कोड।",
+      "source": "transcript_api",
+      "english_text": "Provided with all optimizations. Now one of my codes will run. Now I can delete this line and this student S3 and leave it as it is. Ok? Ok. I hope you have understood well how we overrode the Equals class. Now look, let us move towards our next method which is our very important method which is hash code."
+    },
+    {
+      "start_time": 1762.0,
+      "end_time": 1788.559,
+      "text": "ठीक है? अब अगेन ये भी एक हमारा ऑब्जेक्ट क्लास में आता है। ठीक है? हैश कोड। अब ये क्या करता है? अब देखो सबसे पहले ये रिटर्न करता है हमें एन इंटीजर। रिटर्न एन इंटीजर ऑफ एन ऑब्जेक्ट। किसी भी ऑब्जेक्ट की एक इंटीजर वैल्यू रिटर्न करता है। ठीक है? अब ये जो इंटीजर रिटर्न करता है ये रिटर्न करता है हेक्साडेसिमल में। हेक्साडेेसिमल फॉर्मेट में।",
+      "source": "transcript_api",
+      "english_text": "ok? Now again this also comes in our object class. Ok? hash code. Now what does it do? Now see, first of all it returns us n integer. Returns an integer of an object. Returns an integer value of any object. Ok? Now the integer it returns, it returns in hexadecimal. In hexadecimal format."
+    },
+    {
+      "start_time": 1785.919,
+      "end_time": 1814.64,
+      "text": "ठीक है? अब एक हैश कोड होता क्या है कि यार इंटीजर कैसे रिटर्न करते हैं? आप इसको ऐसे मानो इमेजिन करो आपके पास एक स्ट्रिंग है आदित्य। मैं कह रहा हूं कि एक ऐसा कोड लिखो। ठीक है? जो इस आदित्य का ना मुझे एक नंबर रिप्रेजेंटेशन दे दे। जैसे कि मान लो 234 पर वो हमेशा ऐसा होना चाहिए कि जब भी मैं इसको आदित्य पास करूं मुझे हमेशा 234 मिले। पर मान लो मैं कोई और स्ट्रिंग पास करूं रोहित तो मुझे कुछ और नंबर मिले।",
+      "source": "transcript_api",
+      "english_text": "ok? Now what is a hash code and how does it return an integer? Imagine it like this, you have a string, Aditya. I am saying write such a code. Ok? Who can give me a number representation of this Aditya? For example, let's say 234 but it should always be such that whenever I pass it to Aditya, I always get 234. But suppose I pass some other string to Rohit, then I get some more numbers."
+    },
+    {
+      "start_time": 1811.44,
+      "end_time": 1845.36,
+      "text": "लेट्स से 345 कोई भी रैंडम नंबर है ना? पर फिर अगेन जब मैं हमेशा रोहित पास करूं मुझे 345 ही मिले। इस तरीके के फंक्शनंस को हम कहते हैं हैश फंक्शनंस। हैश फंक्शनंस। इनफैक्ट जावा में ये बहुत यूज़ होते हैं। हमारे आगे हम कलेक्शन फ्रेमवर्क्स पढ़ेंगे तो उसमें हैश मैप, हैश सेट वो सब हैश फंक्शनंस ही यूज़ कर रहे होते हैं अंदर से। तो बेसिकली कहने का मतलब ये है कि किसी भी टाइप के ऑब्जेक्ट को एक नंबर में कन्वर्ट कर देना। एक यूनिक नंबर में हमेशा उसको कहते हैं हैश कोड जनरेट कर देना। अब ये सिर्फ स्ट्रिंग्स के लिए नहीं होता। मान लो मैंने एक स्टूडेंट टाइप का ऑब्जेक्ट स्टूडेंट टाइप का",
+      "source": "transcript_api",
+      "english_text": "Let's say 345 is any random number right? But then again when I always pass Rohit, I get only 345. We call functions of this type hash functions. Hash functions. In fact these are used a lot in Java. Further, when we read about collection frameworks, hash map, hash set, all those hash functions are used internally. So basically it means converting any type of object into a number. It is always called generating a hash code into a unique number. Now this is not just for strings. Suppose I have created an object of type student"
+    },
+    {
+      "start_time": 1843.36,
+      "end_time": 1874.48,
+      "text": "रेफरेंस S1 भी यहां अगर पास कर दिया तो मुझे उसका भी कोई नंबर ला के दे देगा। लेट्स से 7 35 कोई नंबर ला के दे दिया। ठीक है? अब ऑब्वियसली ये जो नंबर्स हैं मैं इसको नॉर्मल डेसिमल्स में लिख रहा हूं। पर ये हेक्साडेसिमल फॉर्मेट में होते हैं। ठीक है? ये 10 बेस पे नहीं होते। 16 बेस पे होते हैं। पर अगेन आप कांसेप्ट समझ गए कि हेक्साडेसिमल कांसेप्ट होता क्या है? मुझे किसी भी ऑब्जेक्ट का एक इंटीजर रेफरेंस चाहिए। राइट? ताकि मैं उसे यूनिकली आइडेंटिफाई कर सकूं। उसको मैं आगे से कंपेयर कर सकूं। ओके? अब देखते हैं इसका सिग्नेचर कैसा दिखता होगा। अगेन हमारी क्लास है ऑब्जेक्ट।",
+      "source": "transcript_api",
+      "english_text": "If I pass the reference S1 here, then someone will bring me its number also. Let's bring some number 7 35 and gave it. Ok? Now obviously I am writing these numbers in normal decimals. But these are in hexadecimal format. Ok? These are not on base 10. There are 16 bases. But again did you understand the concept of what is hexadecimal concept? I need an integer reference to any object. Right? So that I can identify it uniquely. I can compare it further. Ok? Now let's see what its signature would look like. Again our class is Object."
+    },
+    {
+      "start_time": 1872.399,
+      "end_time": 1906.88,
+      "text": "ठीक है? उसमें हमारा ये हैश कोड नाम का फंक्शन होता होगा। तो ये होगा हमारा पब्लिक फंक्शन और ये हमें रिटर्न क्या कर रहा है? इंटीजर वैल्यू और नाम है इसका हैश कोड। पब्लिक इंट#श कोड और यहां पे इसकी कुछ इंप्लीमेंटेशन होती होगी डिफॉल्ट। राइट? अब अगेन जैसे कि मैंने आपको बताया ये यूज़ कहां होता है? हमारे ऐसे कलेक्शन फ्रेमवर्क्स में जैसे हैश मैप, हैश सेट जो अब आगे हम पढ़ेंगे उसमें हैश कोड बहुत यूज़ होता है। ठीक है? अब अगेन अगर हम इसको ओवराइड नहीं करते तो ऑब्वियसली हमारा डिफ़ॉल्ट इंप्लीमेंटेशन चला जाता है। और डिफॉल्ट इंप्लीमेंटेशन क्या करता है? हैश",
+      "source": "transcript_api",
+      "english_text": "ok? There must be a function called hash code in it. So this will be our public function and what return is it giving us? The integer value and name is its hash code. Public int#sh code and some of its implementations here will be default. Right? Now again, as I told you, where is this used? Hash code is used a lot in our collection frameworks like Hash Map, Hash Set which we will study further. Ok? Now again if we do not override this then obviously our default implementation goes away. And what does the default implementation do? hash"
+    },
+    {
+      "start_time": 1904.24,
+      "end_time": 1933.399,
+      "text": "कोड का? ठीक है? वो हमारे ऑब्जेक्ट को लेट से हमने स्टूडेंट S1 का हैश कोड निकालने की कोशिश की तो वो उसका एक हैश वैल्यू हमें ला करके दे देगा। ठीक है? बहुत बढ़िया। पर यहां पे ना हमारे पास जावा में एक बहुत ही इंपॉर्टेंट रूल आता है। ठीक है? हमारे पास जावा में एक बहुत ही इंपॉर्टेंट रूल आता है। ठीक है? इस रूल को समझते हैं क्योंकि इस रूल से काफी चीजें आपको क्लियर होंगी। यह कहता है इफ टू ऑब्जेक्ट्स आर इक्वल",
+      "source": "transcript_api",
+      "english_text": "of code? Ok? If we try to extract the hash code of student S1 from our object, it will fetch its hash value and give it to us. Ok? very nice. But here we have a very important rule in Java. Ok? We have a very important rule in Java. Ok? Let us understand this rule because many things will become clear to you with this rule. It says if two objects are equal"
+    },
+    {
+      "start_time": 1934.96,
+      "end_time": 1967.88,
+      "text": "देन देयर हैशेस मस्ट बी इक्वल तो बेसिकली देयर ठीक है क्या मतलब इसका लेट्स से मेरे पास एक स्टूडेंट है S1 और एक स्टूडेंट है S2 ठीक है इसमें कुछ वैल्यू थी इसमें कुछ वैल्यू थी तो मैंने इसको डिक्लेअर किया हुआ था लेट्स से न्यू स्टूडेंट और यहां पे मैंने कुछ दिया हुआ था लेट्स से आदित्य 28 एज और मतलब मेरा नाम और एज और यहां पर भी न्यू स्टूडेंट और सेम दिया हुआ था आदित्य 28।",
+      "source": "transcript_api",
+      "english_text": "Then their hashes must be equal so basically there is ok what it means from LETS I have one student S1 and one student S2 ok there was some value in this there was some value in this so I had declared it as new student from LETS and here I had given something Aditya 28 age from LETS and meaning my name and age and here also new student and same was given Aditya 28."
+    },
+    {
+      "start_time": 1967.919,
+      "end_time": 1999.039,
+      "text": "ठीक है? अब यह कहता है क्योंकि अगर S1 डॉट इक्व S2 ट्रू होगा तो S1 का हैश कोड भी इक्वल होना चाहिए S2 के हैश कोड से। ये जावा का एक बेसिक रूल है। ये कभी टूटना नहीं चाहिए। ठीक है? ये कभी टूटना नहीं चाहिए। ओके? आगे ये रूल क्या कहता है? इसको मैं थोड़ा सा छोटा कर देता हूं। ठीक है? इसके अलावा ये एक और पॉइंट कहता है कि रिवर्स माइट नॉट बी ट्रू। तो मैं इसे लिख",
+      "source": "transcript_api",
+      "english_text": "ok? Now it says because if S1 dot equal S2 will be true then the hash code of S1 should also be equal to the hash code of S2. This is a basic rule of Java. This should never break. Ok? This should never break. Ok? What does this rule say next? Let me make it a little smaller. Ok? Apart from this, another point says that the reverse may not be true. so i write this"
+    },
+    {
+      "start_time": 1995.6,
+      "end_time": 2022.64,
+      "text": "देता हूं बट द रिवर्स माइट नॉट बी ट्रू। माइट नॉट बी ट्रू। रिवर्स क्या हुआ कि अगर इनके हैशेस इक्वल हैं तो जरूरी नहीं है कि वो ऑब्जेक्ट भी इक्वल है। ठीक है? अब ये ना जावा का बहुत ही इंपॉर्टेंट रूल है। इस ऑब्जेक्ट को समझते हैं कि ऐसा क्यों कह रहा है और क्या कह रहा है। ठीक है? मैं कहता हूं कि लेट्स से मेरे पास ये एक हीप मेमोरी है। ठीक है?",
+      "source": "transcript_api",
+      "english_text": "But the reverse may not be true. Might Not Be True. What happened in reverse is that if their hashes are equal then it is not necessary that that object is also equal. Ok? Now this is a very important rule of Java. Understand why the object is saying this and what it is saying. Ok? I say this is a heap memory I have from Letts. Ok?"
+    },
+    {
+      "start_time": 2020.48,
+      "end_time": 2054.159,
+      "text": "और ये एक स्टक मेमोरी है। मेरे पास इसमें दो ऑब्जेक्ट हैं। एक है स्टूडेंट s एक स्टूडेंट ऑब्जेक्ट ये, एक स्टूडेंट ऑब्जेक्ट ये, s1 है ये और ये है s2। ठीक है? मान लेते हैं दोनों बिल्कुल अलग-अलग ऑब्जेक्ट हैं। तो मेरा जो रूल है वो ये कहता है कि अगर s1 इक्वल है s2 के। इक्वल मतलब डॉट इक्वल से अगर हम कंपेयर करें और वो इक्वल आता है। यहां पे s2 लिखा है। यहां पे s1 लिखा है। s1 = s2 अगर ट्रू है और ये हमने अभी ट्रू कैसे किया था? हमने ओवराइड किया था इक्वल को। है ना? तो मैंने क्या किया था? मैंने यहां पे भी सेम नेम डाल दिया आदित्य",
+      "source": "transcript_api",
+      "english_text": "And this is a stuck memory. I have two objects in it. One is student s, one is student object this, one is student object this, s1 is this and this is s2. Ok? Let us assume that both are completely different objects. So my rule says that if s1 is equal to s2. Equal means if we compare with dot equal and it comes equal. S2 is written here. S1 is written here. If s1 = s2 is true and how did we just make it true? We overrode equal. Isn't it? So what did I do? I have put the same name here also Aditya"
+    },
+    {
+      "start_time": 2051.28,
+      "end_time": 2076.879,
+      "text": "और एज डाल दी 28। यहां पे भी नाम डाल दिया आदित्य और ऐज डाल दी 28। और मैंने कंपेयर करने के लिए क्या किया? इन दोनों को इन दोनों से कंपेयर कर दिया। ठीक है? तो ये रूल कहता है अगर क्योंकि s1 और s2 आपस में इक्वल हैं तो इनका हैश कोड भी इक्वल होना चाहिए। तो अगर मैं इस ऑब्जेक्ट का हैश कोड निकालूं और इसका हैश कोड 1 2 3 आता है तो इसका भी 1 2 3 आना चाहिए। ऐसा नहीं होगा कि इसका 3 4 5 या कुछ और नंबर आ जाएगा।",
+      "source": "transcript_api",
+      "english_text": "And put the age 28. Here also the name was Aditya and the age was 28. And what did I do to compare? These two were compared with these two. Ok? So this rule says that if s1 and s2 are equal then their hash code should also be equal. So if I find out the hash code of this object and its hash code comes 1 2 3 then this should also come 1 2 3. It will not happen that its number will be 3, 4, 5 or something else."
+    },
+    {
+      "start_time": 2074.72,
+      "end_time": 2109.28,
+      "text": "ठीक है? हां। पर रिवर्स ट्रू नहीं है। रिवर्स का मतलब क्या हुआ? हो सकता है कभी ऐसा भी हो। कभी ऐसा सिनेरियो आ जाए कि आपकी इस हीप मेमोरी के अंदर लेट्स से एक और ऑब्जेक्ट मैं बना देता हूं। आपकी इस हीप मेमोरी के अंदर लेट्स से एक और ऑब्जेक्ट है S3। ठीक है? तो यहां पे उसको मैं S3 बोल लेता हूं। है 3 और इसका नेम कुछ अलग है। लेट्स से रोहित और ऐज मान लो सेम है 28 तो हो सकता है कि इसका हैश आए 1 2 3 इसका तो 1 2 3 आना ही चाहिए क्योंकि ऑब्वियसली ये तो पहले रूल में ही आ जाता है कि इन इन दोनों का क्या नाम है? s1.2",
+      "source": "transcript_api",
+      "english_text": "ok? Yes. But the reverse is not true. What does reverse mean? It is possible that this may happen someday. Sometimes such a scenario arises that inside your heap memory I create another object with lets. Inside this heap memory of yours is another object from Let's S3. Ok? So here I call it S3. Is 3 and its name is something different. Let's say Rohit and Age are same, 28 then it is possible that its hash may be 1 2 3. It should definitely be 1 2 3 because obviously it comes in the first rule itself, what are the names of these two? s1.2"
+    },
+    {
+      "start_time": 2107.359,
+      "end_time": 2140.64,
+      "text": "सेम है। इक्वल सेम है दोनों का तो इनका हैश कोड भी सेम होना चाहिए। पर हो सकता है इसका भी हैश कोड 1 2 3 आ जाए। हो सकता है। क्योंकि हैशेस क्या करते हैं? मैंने आपको बताया था ना हैशेस क्या होते हैं? आप मान के चलो एक ऐसा फंक्शन होता है जो इस s1 को एक यूनिक नंबर देगा। ऐसे यहां पे भी लगा होगा जो S2 को एक यूनिक नंबर देगा। ऐसे यहां पे भी लगा होगा जो S3 को एक यूनिक नंबर देगा। पर हो सकता है ना S1 का जो नंबर जनरेट हो और S3 का जो नंबर जनरेट हो वो सेम हो जाए किसी रीज़न से। जरूरी थोड़ी इनकी वैल्यू भी सेम हो। है ना? वो नंबर कैसे निकालता होगा? वो कोई फार्मूला बनाता होगा। राइट? अंदर से कुछ एक रैंडम नंबर",
+      "source": "transcript_api",
+      "english_text": "It is beans. Both are equal, so their hash code should also be the same. But it is possible that its hash code may also be 1 2 3. It is possible Because what do hashes do? I told you what hashes are? Let us assume that there is a function that will give a unique number to this s1. There will be a number installed here too which will give a unique number to S2. There will be a number installed here too which will give a unique number to S3. But it is possible that the number generated in S1 and the number generated in S3 may be the same due to some reason. It is important that their value should also be the same. Isn't it? How would he calculate that number? He must be making some formula. Right? some random number inside"
+    },
+    {
+      "start_time": 2138.16,
+      "end_time": 2172.4,
+      "text": "देने की कोशिश करता होगा S1 को। एक रैंडम नंबर देने की कोशिश करता होगा S3 को। पर हो सकता है ना इसने यहां पे जो रैंडम नंबर निकाला और यहां पे जो रैंडम निकाल नंबर निकाला वो दोनों सेम निकल गए। बिल्कुल हो सकता है। तो यह भी हो सकता है कि इसका हैश कोड 1 2 3 हो। तो इवन दो इसका हैश कोड और इसका हैश कोड इक्वल है। पर इसका मतलब यह नहीं है कि ऑब्जेक्ट भी इक्वल है। ठीक है? तो अगर हम वापस अपनी डेफिनेशन पे जाएं इफ टू ऑब्जेक्ट्स आर इक्वल देन देयर हैश कोड मस्ट बी इक्वल बट द रिवर्स माइट नॉट बी ट्रू। ठीक है? हो सकता है ट्रू हो। हो सकता है ट्रू ना हो। इसके बारे में मैं गारंटी नहीं ले सकता। पर इसके बारे में",
+      "source": "transcript_api",
+      "english_text": "Must be trying to give it to S1. Will try to give a random number to S3. But it is possible that the random number he picked here and the random number he picked here both turned out to be the same. Absolutely possible. So it is also possible that its hash code is 1 2 3. So even two its hash code and its hash code is equal. But this does not mean that the objects are also equal. Ok? So if we go back to our definition if two objects are equal then their hash codes must be equal but the reverse might not be true. Ok? May be true. May not be true. I cannot guarantee about this. but about this"
+    },
+    {
+      "start_time": 2169.359,
+      "end_time": 2203.76,
+      "text": "हमें गारंटी लेनी पड़ेगी। क्यों गारंटी लेनी पड़ेगी? अगेन इसका आंसर आपको तब मिलेगा जब हम जावा में पढ़ेंगे अपने कलेक्शन फ्रेमवर्क्स को। इसको मैं और छोटा करता हूं ताकि सब कुछ आपको सही से दिख जाए। हां, जब हम जावा में अपने कलेक्शन फ्रेमवर्क्स को पढ़ेंगे तो आपको समझ आएगा कि जावा में जो हमारे पास हमारे हैश सेट्स होते हैं, हैश सेट या फिर हैश मैप होते हैं या फिर हैश टेबल होते हैं। बेसिकली जितने भी ऐसे डेटा टाइप्स होते हैं, बेसिकली जितने भी आपसे करेक्शंस होते हैं जो हैशेस पे काम करते हैं। अगर आपने इस",
+      "source": "transcript_api",
+      "english_text": "We will have to take guarantee. Why will guarantee be required? Again you will get the answer to this when we will study our collection frameworks in Java. I make it smaller so that you can see everything clearly. Yes, when we read our collection frameworks in Java, you will understand that in Java we have our hash sets, hash sets or hash maps or hash tables. Basically, there are as many data types as there are, basically as many corrections as there are that work on hashes. If you have this"
+    },
+    {
+      "start_time": 2200.64,
+      "end_time": 2234.24,
+      "text": "रूल को फॉलो नहीं किया। मान लो कि s1 डॉट इक्वल्स अगर मैं s2 लिखता हूं तो ये तो ट्रू आ रहा है लेकिन s1 डॉट#श कोड ट्रू नहीं है। s इक्वल नहीं है s2 डॉट#श कोड के तो बहुत दिक्कत हो जाएगी। क्यों? क्योंकि उस केस में अगर मान लो ये मैं स्टूडेंट ऑब्जेक्ट के लिए कर रहा होता अपने एक स्टूडेंट ऑब्जेक्ट के लिए और मेरे दो ऑब्जेक्ट होते s1 और एक s2। ठीक है? तो उस केस में मेरे जो हैश मैप हैश सेट हैश टेबल है ना ये ढंग से काम ही नहीं करेंगे",
+      "source": "transcript_api",
+      "english_text": "Didn't follow the rules. Suppose s1 dot equals if I write s2 then it is coming true but s1 dot#sh code is not true. s is not equal to s2 dot#sh code will cause a lot of problems. Why? Because in that case, suppose I was doing this for the student object, for one of my student objects and I would have two objects, s1 and one s2. Ok? So in that case my hash map hash set hash table will not work properly."
+    },
+    {
+      "start_time": 2232.56,
+      "end_time": 2265.2,
+      "text": "क्योंकि इनको पता ही नहीं होगा मुझे इन s1 और s2 को सेम जगह रखना है या अलग-अलग जगह रखना है वो उनको अच्छे से कंपेयर नहीं कर पाएगा अगेन इसके बारे में हम डीप स्टडी करेंगे जब हम हैश सेट हैश मैप हैश टेबल के इंटरनल्स को जानेंगे पर अभी के लिए आप इस रूल को मानो कि ये रूल हमेशा फॉलो होना चाहिए ठीक है मैंने आपको बता भी दिया कैसे अगर s1 s2 s3 तीन रेफरेंस पॉइंटर हैं तीनों के पास अपने-अपने खुद के ऑब्जेक्ट्स हैं और मैंने क्या लिखा है अगर s1 S1 इक्वल है। अगर S1 इक्वल है S2 के तो उनके",
+      "source": "transcript_api",
+      "english_text": "Because he will not know whether I have to keep these s1 and s2 in the same place or in different places, he will not be able to compare them properly. Again we will do a deep study about this when we will know the internals of hash set hash map hash table but for now you should follow this rule that this rule should always be followed. Okay, I have also told you how if s1 s2 s3 have three reference pointers, all three have them. Have their own objects and what I have written is if s1 is equal to S1. If S1 is equal to S2 then their"
+    },
+    {
+      "start_time": 2262.96,
+      "end_time": 2297.92,
+      "text": "हैश कोड्स भी इक्वल होने चाहिए और रिवर्स माइट नॉट बी ट्रू। ठीक है? ओके? अब ना अगर हम अपने इक्वल्स को ओवराइड नहीं करते तो ये बाय डिफॉल्ट ट्रू ही होता। क्योंकि देखो हमने अगर इस इक्वल्स मेथड को ओवराइड नहीं किया होता। है ना? तो हमारा बाय डिफॉल्ट जो इक्वल्स है वही चलता। और बाय डिफ़ॉल्ट क्या होता? रेफरेंसेस कंपेयर करते। तो हम हमेशा S1 और S2 के रेफरेंसेस कंपेयर करते। अब इस केस में देखो इस पर्टिकुलर केस में S1 और S2 के रेफरेंसेस अलग-अलग हैं। चाहे इनकी",
+      "source": "transcript_api",
+      "english_text": "The hash codes must also be equal and the reverse may not be true. Ok? Ok? Now if we didn't override our equals then it would be true by default. Because look, if we had not overridden this equals method. Isn't it? So by default our equals will work. And what would be the by default? Compare references. So we would always compare the references of S1 and S2. Now look in this case, in this particular case the references of S1 and S2 are different. whether theirs"
+    },
+    {
+      "start_time": 2293.44,
+      "end_time": 2326.8,
+      "text": "वैल्यू सेम है। है ना? तो S1 डॉट = S2 का आंसर फॉल्स आता। है ना? अगर इसी का आंसर फॉल्स है तो इसके हैश कोड के इक्वल होने की बात तो हमें करनी ही नहीं है। s2 डॉट हैश कोड। ठीक है? इसका आंसर ट्रू भी आ सकता है, फॉल्स भी आ सकता है। हमें नहीं पता। है ना? मैंने कहा है ना कि हो सकता है इनके#श कोड इक्वल हो। हमें नहीं पता। पर क्योंकि ये दोनों ही आपस में इक्वल नहीं है तो मैं इनके#श कोड की बात ही नहीं करूंगा। पर अगर s1 डॉट इक्वल्स s2 ट्रू आता। ठीक है? अगर ट्रू आता हमारे डिफॉल्ट बिहेवियर में तो वो एक ही रीज़न हो सकता",
+      "source": "transcript_api",
+      "english_text": "The value is the same. Isn't it? So the answer would be S1 dot = S2. Isn't it? If the answer to this is false then we do not have to talk about its hash code being equal. s2 dot hash code. Ok? Its answer can be true or false. We don't know. Isn't it? I have said that it is possible that their #sh codes may be equal. We don't know. But since both of them are not equal, I will not talk about their #sh code. But if s1 dot equals s2 returns true. Ok? If true comes in our default behavior then there can be only one reason."
+    },
+    {
+      "start_time": 2325.04,
+      "end_time": 2358.32,
+      "text": "था। वो तभी हो सकता था। अगर s2 भी इसी को पॉइंट करता, s1 भी इसी को पॉइंट करता। दोनों अगर सेम ही ऑब्जेक्ट को पॉइंट करते तो ही हमारा s1 डॉट = s2 ट्रू आता। और उस केस में ऑब्वियसली इनका हैश कोड भी ट्रू होता। क्योंकि दोनों ऑब्जेक्ट तो सेम ही हैं। अगर ऑब्जेक्ट सेम है तो इसका ऑब्जेक्ट अगर हैश कोड 1 2 3 निकलता है तो चाहे वो आप s1 डॉट हैश कोड कर लो या s2 डॉट हैश कोड कर लो आपका आंसर तो 1 2 3 ही आएगा। राइट? तो अगर आप इक्वल्स को ओवराइड ना करते तो ये वाले रूल की कंडीशन हमेशा ट्रू होती। पर क्योंकि हमने इक्वल्स को ओवराइड किया तो अब हमारी जिम्मेदारी बन गई",
+      "source": "transcript_api",
+      "english_text": "Was. That could have happened only then. If s2 also points to this, s1 also points to this. Our s1 dot = s2 would be true only if both were pointing to the same object. And in that case, obviously their hash code would also be true. Because both the objects are same. If the object is the same, then if the hash code of its object comes out to be 1 2 3, then whether you do s1 dot hash code or s2 dot hash code, your answer will be 1 2 3 only. Right? So if you did not override the equals, the condition of this rule would always be true. But because we overrode equals it is now our responsibility to"
+    },
+    {
+      "start_time": 2355.839,
+      "end_time": 2389.44,
+      "text": "कि हम हैश कोड को भी ओवराइड करें। और अगर s1 और s2 इक्वल हैं तो उनके हैश कोड को भी इक्वल करें हमेशा। ठीक है? तो फटाफट कोड पे चलते हैं और देखते हैं हम उन्हें कैसे इक्वल कर सकते हैं। हां जी। तो देखो मैं आ गया अपनी स्क्रीन पे वापस से। अभी के लिए देखो अभी मैंने सिर्फ इक्वल्स को ओवराइड किया हुआ है। मैंने हैश को ओवराइड नहीं किया हुआ। पर मान लो मैं फिर भी इस पे कॉल करूं कुछ ऐसे मैं चेक करूं s1 डॉट#श कोड क्या इक्वल इक्वल है? s2 डॉट#श कोड के। अब यहां पे मैं इक्वल इक्वल लिख सकता हूं क्योंकि मैं#श कोड्स कंपेयर कर रहा हूं।",
+      "source": "transcript_api",
+      "english_text": "That we override the hash code also. And if s1 and s2 are equal then always make their hash codes equal. Ok? So let's quickly go over the code and see how we can equalize them. Yes sir. So look, I am back on your screen. Look, for now I have just overridden the equals. I haven't overridden the hash. But suppose I still call on this, I check something like this: Is the s1 dot#sh code equal equal? s2 dot#sh code. Now here I can write equal equal because I am comparing #sh codes."
+    },
+    {
+      "start_time": 2388.079,
+      "end_time": 2420.96,
+      "text": "और हैश कोड क्या देता है मुझे? इंट टाइप का ऑब्जेक्ट। प्रिमिटिव है वो तो। तो मैं प्रिमिटिव्स को तो इक्वल इक्वल से कंपेयर कर ही सकता हूं। तो क्या मेरा आंसर ट्रू आएगा? आना ट्रू चाहिए क्योंकि ऊपर का आंसर ट्रू है। देखो मेरा आंसर फॉल्स आ रहा है। ये जो ट्रू आ रहा है ये तो आ रहा है इसका। क्या s1 = s1 है? तो अगर s ये तो मैंने s1 लिखा हुआ है। इसको वापस से s2 करना पड़ेगा। ठीक है? अब इस कोड को रन करते हैं। हां। तो पहला आंसर आ रहा है ट्रू कि s1 और s2 इक्वल है। पर दूसरा आंसर आ रहा है फॉल्स। कि इन दोनों के हैश कोड इक्वल नहीं है। ये बहुत गलत है। ठीक है? ये जावा में कभी होना ही नहीं चाहिए। तो इनके#श",
+      "source": "transcript_api",
+      "english_text": "And what does the hash code give me? Object of type int. He is primitive. So I can compare primitives equally. So will my answer be true? Ana should be true because the above answer is true. Look my answer is coming. This is what is coming true, this is what is coming. Is s1 = s1? So if s is this then I have written s1. Will have to go back to s2. Ok? Now let's run this code. Yes. So the first answer coming true is that s1 and s2 are equal. But the second answer is coming. That the hash codes of these two are not equal. This is very wrong. Ok? This should never happen in Java. So their#sh"
+    },
+    {
+      "start_time": 2419.359,
+      "end_time": 2454.16,
+      "text": "कोड हमें इक्वल करने पड़ेंगे। उसके लिए हमें क्या करना पड़ेगा? हमें पब्लिक इंट#श कोड नाम के मेथड को ओवराइड करना पड़ेगा। और अगर मैं इसको ओवराइड कर रहा हूं तो यहां पे मैं लिख देता हूं @ ओवराइड और यहां पे मैं इसको ओवराइड करूंगा। अच्छा अब मैं इसे ओवराइड कैसे करूं? इसको थोड़ा सा समझते हैं। मैंने क्या बोला था? हैश कोड क्या होता है? किसी भी ऑब्जेक्ट का मुझे एक हेक्साडेेसिमल वैल्यू देनी है और वो यूनिक होनी चाहिए। है ना? अब देखो इसको इंप्लीमेंट करने का ना सबसे सिंपल तरीका क्या होता है? देखो मुझे पता है कि मुझे हैश कोड को सेम करना है उन दोनों ऑब्जेक्ट के लिए जिनका इक्वल सेम है। राइट? मतलब",
+      "source": "transcript_api",
+      "english_text": "We will have to equalize the codes. What will we have to do for that? We have to override the method named public int#sh code. And if I am overriding it, then here I write @override and here I will override it. Ok now how do I override this? Let's understand this a little. What did I say? What is hash code? I have to give a hexadecimal value for any object and it should be unique. Isn't it? Now see what is the simplest way to implement this? Look I know that I have to match the hash code for both the objects which have equal number. Right? meaning"
+    },
+    {
+      "start_time": 2452.32,
+      "end_time": 2485.2,
+      "text": "दोनों का ऑब्जेक्ट पूरा का पूरा सेम है। तो दो ऑब्जेक्ट कब सेम होंगे? अगर उन स्टूडेंट का नाम भी सेम होगा और ऐज भी सेम होगा। मतलब मुझे किसी तरह से ये नेम और ये किस तरह से ऐज दोनों को फैक्टर इन करना पड़ेगा। अब असली में हैश निकालने का तरीका होता है कि हम ना प्राइम नंबर्स को पकड़े ताकि ज्यादा यूनिक नंबर्स हमारे निकले। क्योंकि आपको पता है प्राइम नंबर्स क्या होगा? ज्यादा चांसेस होगा कि वो सेम ना हो। तो हम क्या करते हैं? हम स्टार्ट करते हैं एक रिजल्ट से इंट रिजल्ट और इसको ना हम नॉन ज़ीरो रखते हैं। ज़ीरो से ग्रेटर रखने की कोशिश करते हैं। तो जनरली वो नंबर होता है 17। ठीक है? ये मैं आपको बता रहा हूं जो इंटरनली इंप्लीमेंटेड होता है। हैश",
+      "source": "transcript_api",
+      "english_text": "The object of both is completely the same. So when will two objects be equal? If the name and age of those students will also be the same. Meaning I have to somehow factor in both this name and this age. Now the actual method of extracting hash is that we do not capture prime numbers so that we get more unique numbers. Because do you know what the prime numbers will be? There will be more chances that it may not be the same. So what do we do? We start with one result, int result and we keep it non-zero. Let's try to keep it greater than zero. So generally that number is 17. Ok? I am telling you this which is implemented internally. hash"
+    },
+    {
+      "start_time": 2483.599,
+      "end_time": 2517.52,
+      "text": "कोड कैसे होता है। तो हमने एक प्राइम नंबर लिया 17। ठीक है? अब इस प्राइम नंबर को हम क्या करते हैं? रिजल्ट को आगे बढ़ाते रहते हैं। अगले प्राइम से मल्टीप्लाई करके और एक बार फैक्टर करेंगे नेम को। मतलब नेम को ऐड करेंगे। फिर दोबारा से उसमें प्राइम मल्टीप्लाई करेंगे। फिर ऐज को फैक्टर करेंगे। देखो मैं क्या कह रहा हूं मैं आपको बताता हूं। फिर मैं लिखता हूं इंट दोबारा से रिजल्ट में ही डालता हूं। जो भी अभी तक रिजल्ट में है जो भी अभी तक रिजल्ट में है * 31 अगेन इससे एक बड़ा प्राइम ले लिया मैंने अगला 31 प्राइम ले लिया बड़ा ठीक है प्लस मैं",
+      "source": "transcript_api",
+      "english_text": "How does the code work? So we took a prime number 17. Ok? Now what do we do with this prime number? Keep taking the results forward. Multiply the name by multiplying it by the next prime and factor it once. Meaning will add the name. Then we will multiply the prime in it again. Then we will factor the age. See what I'm saying let me tell you. Then I write int and put it in the result again. Whatever is in the result till now Whatever is in the result till now * 31 Again I took a bigger prime than this I took the next 31 prime Big okay plus I"
+    },
+    {
+      "start_time": 2514.48,
+      "end_time": 2544.319,
+      "text": "यहां पे ऐड कर देता हूं अपने ऐज की वैल्यू को ठीक है अब देखो मेरा 17 कॉमन रहेगा 17 * 31 भी कॉमन रहेगा यहां पे 17 था रिजल्ट में तो यहां रिजल्ट की वैल्यू होगी 17 * 31 भी कॉमन रहेगा प्लस जो भी नंबर आएगा 17 * 31 करके तो देखते हैं 17 * 31 करके मेरे पास क्या आया 527 आया। उस 527 में मैंने ऐज को प्लस कर लिया। अच्छा अगेन दोबारा मैं क्या करूंगा? दोबारा मैं इस रिजल्ट में करूंगा।",
+      "source": "transcript_api",
+      "english_text": "Here I add the value of my age, okay now look, my 17 will remain common, 17 * 31 will also remain common, here there was 17 in the result, so the value of the result here will be 17 * 31 will also be common plus whatever number comes, after doing 17 * 31, let's see what I got after doing 17 * 31, I got 527. I took the edge plus in that 527. Okay, what will I do again? I will do it again in this result."
+    },
+    {
+      "start_time": 2542.16,
+      "end_time": 2575.04,
+      "text": "जो भी मेरे पास अभी तक रिजल्ट में आया उसको दोबारा 31 से मल्टीप्लाई करूंगा और इस बार नेम को ले लूंगा। अब नेम तो मेरा स्ट्रिंग है। है ना? अब नेम को मैं कैसे ले सकता हूं? बहुत आसान तरीका है। मैं सीधा नेम डॉट हैश कोड कर लूंगा। है ना? यहां पे मैं इंट नहीं लिख सकता। इंट एक ही बार ऊपर हो चुका है। हां। अब इसमें देखो मैं इसका भी खुद से हैश कोड निकाल सकता था। पर मैंने सीधा नेम डॉट हैश कोड कर दिया। पता है क्यों? क्योंकि देखो नेम एक स्ट्रिंग है और जो स्ट्रिंग है वो खुद से हैश कोड को ओवराइड करती है। तो अगर मैं इस वाले हैश कोड में जाऊंगा तो देखो स्ट्रिंग डॉट जावा के हैश कोड नाम के मेथड में मैं",
+      "source": "transcript_api",
+      "english_text": "Whatever I have got in the result till now, I will multiply it again by 31 and this time I will take the name. Now name is my string. Isn't it? Now how can I take the name? It is a very easy method. I'll just do the name dot hash code. Isn't it? I cannot write int here. The item has been up only once. Yes. Now look at this, I could have extracted its hash code myself. But I simply did the name dot hash code. know why? Because see, name is a string and the string itself overrides the hash code. So if I go to this hash code, look in the method called hash code of string dot java I"
+    },
+    {
+      "start_time": 2572.72,
+      "end_time": 2604.64,
+      "text": "आ जाऊंगा। यानी कि इसने हैश कोड को ओवराइड किया हुआ है। तो मैं सीधा उसी का हैश कोड यूज़ कर लूंगा और मैं फाइनली रिटर्न क्या कर दूंगा? रिजल्ट। अब मुझे पता है हमेशा यूनिक वैल्यू निकलेगी। है ना? पहले रिजल्ट होगा 17। 17 को 31 से मल्टीप्लाई करूंगा प्लस एज। फिर जो भी उसको आएगा प्लस ऐज करके उसको मैं प्लस कर दूंगा किस में? नेम से। तो मैंने नेम को भी ले लिया। ऐज को भी ऐज के भी एक नंबर को ले लिया। नेम के भी एक नंबर को ले लिया और फाइनल दे दिया रिजल्ट। तो ऐसा कोई भी स्टूडेंट जिसका नेम और ऐज सेम है उसकी ये वैल्यू भी सेम आएगी।",
+      "source": "transcript_api",
+      "english_text": "I will come. That means it has overridden the hash code. So I will simply use its hash code and what will I finally return? result. Now I know there will always be unique value. Isn't it? First result will be 17. I will multiply 17 by 31 plus edge. Then whoever comes to him, I will make him plus by giving him plus age, in what? By name. So I took the name also. Edge also took one of Edge's numbers. One number of the name was also taken and the final result was given. So, for any student whose name and age are the same, this value will also be the same."
+    },
+    {
+      "start_time": 2602.72,
+      "end_time": 2637.599,
+      "text": "और मैंने यहां पे 17 और 31 ये क्यों लिए हैं? ये मैंने प्राइम नंबर्स लिए हैं ताकि मैं हमेशा कोशिश करूं कि दो ऑब्जेक्ट्स की जो अलग-अलग है जो इक्वल नहीं है उनके हैशेस सेम ना आए। अब जब प्राइम नंबर्स आपस में मल्टीप्लाई हो के उसमें एज या नेम ऐड होंगे तो दोनों नंबर्स के यूनिक होने के चांसेस ज्यादा हो जाएंगे। ठीक है? बहुत बढ़िया। अब अगर मैं इसको रन करूं तो ये मेरा ट्रू होना चाहिए। देखो ट्रू ट्रू है ना? क्यों? क्योंकि s1 भी सेम है, s2 भी सेम है। दोनों में नाम आदित्य है और ऐज 28 है। तो ये मेथड दोनों की सेम वैल्यू को रिटर्न करता है। ठीक है? ओके? बहुत बढ़िया। अब यहां पे एक दिक्कत है। नेम",
+      "source": "transcript_api",
+      "english_text": "And why have I taken 17 and 31 here? I have taken these prime numbers so that I always try that the hashes of two objects which are different and which are not equal should not be the same. Now when prime numbers are multiplied with each other and edges or names are added to them, the chances of both the numbers being unique will increase. Ok? very nice. Now if I run it then it should be my true. Look, it's true, isn't it? Why? Because s1 is also a bean, s2 is also a bean. In both, the name is Aditya and the age is 28. So this method returns the same value for both. Ok? Ok? very nice. Now there is a problem here. name"
+    },
+    {
+      "start_time": 2634.96,
+      "end_time": 2668.0,
+      "text": "डॉट#श कोड तभी वर्क करेगा अगर हमारे नेम में हमेशा एक नॉन नल वैल्यू होगी। पर अगर मैंने यहां पे किसी में भी डाल दिया नल देखो कोई दिक्कत नहीं है ये चल जाएगा अब उस केस में मेरा एक्सेप्शन आ जाएगी नल पॉइंटर एक्सेप्शन और वो एक्सेप्शन किस वजह से आई मैंने सीधा यहां पे नेम डॉट हैश कोड निकाल दिया तो यहां पे मैं क्या कर सकता हूं मैं टर्नरी ऑपरेटर लगा सकता हूं मैं चेक कर लूंगा नेम इक्वल इक्वल नल है क्या अगर है तो आप सीधा ज़ीरो ले लो नहीं तो नेम",
+      "source": "transcript_api",
+      "english_text": "The dot#sh code will work only if our name always contains a non-null value. But if I put null in anything here, see, there is no problem, it will work, now in that case my exception will come Null Pointer Exception and why that exception came, I directly removed the name dot hash code here, so what can I do here, I can apply ternary operator, I will check whether name is equal equal null, if it is then you directly take zero, otherwise name."
+    },
+    {
+      "start_time": 2663.839,
+      "end_time": 2691.119,
+      "text": "डॉट हैश कोड ले लो कुछ इस तरीके से इसको भी मैं एक ब्रैकेट में रख लेता हूं ऐसे। ओके। ठीक है। अब मेरी एक्सेप्शन नहीं आएगी। अब मेरा आंसर आ जाएगा फॉल्स। फॉल्स। ठीक है? फॉल्स। क्यों? अब देखो मेरा s1 नल है। अब यहां पे s1 डॉट इक्वल s2 करूंगा तो इक्वल्स तो नल को संभाल ही रहा है। यहां पे वो नल को संभाल लेगा तो रिटर्न कर देगा फॉल्स। और ये हैश कोड भी दोनों अनकल हो जाएंगे। ठीक है? क्यों इक्वल हो जाएंगे?",
+      "source": "transcript_api",
+      "english_text": "Take the dot hash code, like this, I also put it in a bracket like this. Ok. Ok. Now my exception will not come. Now my answer will come Falls. Falls. Ok? Falls. Why? Now look my s1 is tap. Now here if I do s1 dot equal s2 then equals is handling the null. If he handles the tap here then he will return the falls. And both these hash codes will also become uncle. Ok? Why will it become equal?"
+    },
+    {
+      "start_time": 2688.88,
+      "end_time": 2716.0,
+      "text": "क्योंकि एक का हैश कोड निकलेगा आदित्य और 28 पे और एक का हैश कोड निकलेगा नल और 28 पे। और नल के केसेस में मैं यहां पे ज़ीरो ले रहा हूं। ठीक है? तो दोनों का हैश कोड अलग-अलग निकलेगा। तो ये मेरा सही मेथड हो जाएगा। ठीक है? तो इसको मैं वापस से नल से आदित्य ही कर देता हूं। ठीक है? अब ये जो मैंने अंदर से कोड लिखा है ना ये जावा इंटरनली खुद से करता है। वो हमें एक फंक्शन देता है। हम सीधा कर सकते हैं रिटर्न। अब देखो मैंने क्या किया?",
+      "source": "transcript_api",
+      "english_text": "Because the hash code of one will be Aditya and 28 and the hash code of the other will be Nal and 28. And in tap cases, I am taking zero here. Ok? So the hash code of both will be different. So this will be my correct method. Ok? So I turn it back to Aditya with tap. Ok? Now, whatever code I have written internally, Java does it internally on its own. That gives us a function. We can make returns directly. Now see what I did?"
+    },
+    {
+      "start_time": 2714.0,
+      "end_time": 2748.319,
+      "text": "मैंने एक ऑब्जेक्ट क्लास ली। ऑब्जेक्ट्स। ये देखो ये ऑब्जेक्ट क्लास अलग है और ऑब्जेक्ट्स क्लास अलग है। ये ऑब्जेक्ट क्लास देखो कहां से आती है? मैं इसको होवर करूंगा। तो java डॉट यूटिल पैकेज से आती है। जहां से हमारी स्कैनर क्लास भी आती थी। तो यहां पे सारी यूटिलिटी क्लासेस होती हैं। तो ऑब्जेक्ट्स भी एक यूटिलिटी क्लास है जिसमें एक हैश फंक्शन है। उसमें मैंने नेम और ऐज दिया। तो वो भी अंदर से इसका हैश ही निकाल लेगा। उसी तरीके से जो मैंने अभी यहां पे पहले किया था। ठीक है? तो देखो ये मेरा पहले का तरीका था। मैं इसको यहां पे कमेंट कर रहा हूं और मैं कह रहा हूं निकालने का सिंपल तरीका है रिटर्न ऑब्जेक्ट्स डॉट#श।",
+      "source": "transcript_api",
+      "english_text": "I took an object class. Objects. Look, this object class is different and objects class is different. Look where this object class comes from? I will hover this. So java comes from dot util package. From where our scanner class also came. So here are all the utility classes. So Objects is also a utility class that has a hash function. I gave name and age in it. So he will also extract its hash from inside. In the same way that I did it here earlier. Ok? So see, this was my earlier method. I am commenting on this here and I am saying that the simple way to remove it is return objects dot#sh."
+    },
+    {
+      "start_time": 2746.079,
+      "end_time": 2780.48,
+      "text": "यहां पे मैं नेम और एज पास कर दूं। अब अगेन इसके लिए जरूरी है कि आप इंपोर्ट करो java डॉट यूutil पैकेज। तो इंपोर्ट java डॉट यूutil डॉट ऑब्जेक्ट्स क्लास सॉरी हां अगर आपने इंपोर्ट किया तो कोई दिक्कत नहीं आपका कोड चल जाएगा और अभी भी हमारा सेम आउटपुट आएगा ट्रू ट्रू बिल्कुल सही ठीक है आई होप आपको ये अच्छे से समझ आ गया होगा अब आगे बढ़ते हैं अब बढ़ते हैं अपने अगले क्लास की तरफ जो हमारे ऑब्जेक्ट क्लास के अंदर आती है जिसका नाम है कैट क्लास",
+      "source": "transcript_api",
+      "english_text": "Here I pass the name and age. Now again for this it is necessary that you import java dot util package. So import java dot util dot objects class Sorry yes if you import then no problem your code will run and we will still get the same output True True Absolutely correct Okay I hope you have understood this well Now let's move ahead Now let's move towards our next class which comes inside our object class which is named Cat class"
+    },
+    {
+      "start_time": 2778.24,
+      "end_time": 2812.72,
+      "text": "ओके ये भी बहुत इंटरेस्टिंग है। अब देखो ये क्या करती है? यह रिटर्न करती है रिटर्न रन टाइम क्लास ऑफ एन ऑब्जेक्ट। क्या मतलब इसका? रन टाइम क्लास ऑफ़ एन ऑब्जेक्ट। ठीक है? देखो इसका मतलब ये कि सपोज़ करो मेरे पास एक स्टूडेंट का ऑब्जेक्ट है। लेट्स से मैंने लिखा स्टूडेंट S1 = न्यू स्टूडेंट। कुछ ऐसे अगर मैं लिखूंगा S1 डॉट गेट क्लास तो पता है मुझे ये क्या ला के देगा? ये ला के देगा मुझे स्टूडेंट s1 डॉट गेट क्लास मतलब मैं कौन",
+      "source": "transcript_api",
+      "english_text": "Ok this is also very interesting. Now see what she does? Returns the run time class of an object. What does this mean? Run time class of an object. Ok? See, this means that suppose I have a student object. From Lets I wrote Student S1 = New Student. If I write something like S1 dot get class then do you know what it will bring me? This will give me student s1 dot get class meaning who am I"
+    },
+    {
+      "start_time": 2810.96,
+      "end_time": 2845.839,
+      "text": "सी क्लास के ऊपर काम कर रहा हूं बेसिकली रन टाइम क्लास मेरी कौन सी है अब ये जो s1 है ये किसे पॉइंट कर रहा है एक स्टूडेंट क्लास के ऑब्जेक्ट को पॉइंट कर रहा है तो s1 डॉट गेट क्लास मुझे स्टूडेंट ला के देगा एक्चुअली s1 डॉट गेट क्लास मुझे स्टूडेंट ला के नहीं देगा एक्चुअली होगा क्या अंदर से ये मुझे ला कर के देगा एक क्लास टाइप का ऑब्जेक्ट जी हां जावा में क्लास नाम की भी एक क्लास होती है। कैपिटल क्लास टाइप की एक क्लास होती है जावा के अंदर। जैसे ऑब्जेक्ट नाम की क्लास होती है, वैसे ही क्लास नाम की भी एक ऑब्जे क्लास होती है जावा के अंदर। इसको हम तब पढ़ेंगे जब हम जावा में रिफ्लेक्शंस को पढ़ेंगे क्योंकि वो थोड़ा सा एडवांस टॉपिक",
+      "source": "transcript_api",
+      "english_text": "I am working on C class, basically, which run time class is mine? Now this s1 is pointing to whom? If it is pointing to the object of a student class, then s1 dot get class will give me student class. Actually, s1 dot get class will not give me student class. Actually, will it bring me a class type object from inside? Yes, there is a class named class in Java. Capital class is a class of type inside Java. Just like there is a class named Object, similarly there is a class named Object in Java. We will read this when we read Reflections in Java because it is a slightly advanced topic."
+    },
+    {
+      "start_time": 2844.0,
+      "end_time": 2877.76,
+      "text": "है। पर आप मान लो ये मुझे क्लास टाइप का ऑब्जेक्ट ला के देगा। अब अगर मुझे क्लास का नाम ही चाहिए तो मैं इसमें लिख दूंगा एक और डॉट गेट नेम। अब मुझे एग्जैक्टली प्रिंट हो जाएगा यहां पे स्टूडेंट। ठीक है? अब ये क्लास टाइप का ऑब्जेक्ट क्या होता है? वो हम बाद में देखेंगे जब हम रिफ्लेक्शंस पढ़ेंगे। पर आई होप आपको समझ आ गया होगा। अगर मैं किसी पे भी s1 डॉट गेट क्लास करता हूं तो वो मुझे क्लास नाम का ऑब्जेक्ट ला के देता है। उस पे डॉट गेट नेम करता हूं तो फिर मुझे उस क्लास का नाम मिल जाता है जो कि है स्टूडेंट। ठीक है? अब एक बार ना इसका सिग्नेचर देखते हैं। अगेन दोबारा से मैं मान रहा हूं मेरे",
+      "source": "transcript_api",
+      "english_text": "Is. But suppose it will give me a class type object. Now if I want the name of the class itself, I will write another dot get name in it. Now I will get exactly printed student here. Ok? Now what is this class type object? We will see that later when we read Reflections. But I hope you have understood. If I do s1 dot get class on anyone then it gives me an object named class. If I do dot get name on that then I get the name of that class which is Student. Ok? Now let's see its signature once. Again I am agreeing with you"
+    },
+    {
+      "start_time": 2874.96,
+      "end_time": 2907.68,
+      "text": "पास क्लास है ऑब्जेक्ट। उसके अंदर ये हमारी गेट क्लास नाम का मेथड होता होगा। अब वो कैसे दिखता होगा? सबसे पहले इंटरेस्टिंग चीज है। ये है हमारा फाइनल मेथड। मतलब इसको मैं ओवराइड कर ही नहीं सकता क्योंकि ये हमें क्लास का नाम ला के दे रहा है। मैं उस क्लास का नाम चेंज नहीं कर सकता। तो ये है पब्लिक फाइनल। इसका रिटर्न टाइप है क्लास। मैंने कहा था ना क्लास नाम का भी एक क्लास होती है जावा में। ठीक है? और इसका सिर्फ रिटर्न है क्लास नहीं है। इसके आगे मैंने देखो एक स्पेशल करैक्टर लगा रखा है। इसको वाइल्ड गार्ड्स कहते हैं। ये भी हम आगे जावा में पढ़ेंगे। और फिर इस क्लास का नाम जो कि है",
+      "source": "transcript_api",
+      "english_text": "Have class Object. Inside that there would be a method called our Get class. How would it look now? The first thing is interesting. This is our final method. That means I can't override it because it is giving us the class name. I can't change the name of that class. So this is the public final. Its return type is Class. I told you that there is a class called Class in Java. Ok? And it has only returns, not class. Look, I have put a special character in front of this. This is called Wild Guards. We will also study this further in Java. And then the name of this class which is"
+    },
+    {
+      "start_time": 2904.319,
+      "end_time": 2937.44,
+      "text": "गेट क्लास। और यहां पे आता होगा इसका डिफॉल्ट इंप्लीमेंटेशन। ठीक है? तो ये है हमारा पूरा का पूरा मेथड गेट क्लास जो हमें क्लास नाम का एक ऑब्जेक्ट ला के देता है। उस पे अगर हम डॉट गेट नेम करते हैं तो हमें क्लास का नाम मिल जाता है। अब अगेन इंटरेस्टिंग चीज ये है कि ये फाइनल है तो आप इसको ओवराइड नहीं कर सकते जो कि हमने अभी देखा। अब इसका भी एक बार फटाफट प्रोग्राम में देख लेते हैं। तो देखो अगेन मैं अपने डेमो डॉट jवा वापस आ गया। ये मेरी स्टूडेंट क्लास थी। इसके अंदर टू स्ट्रिंग ओवराइड कर लिया। इक्वल्स ओवराइड कर लिया और मैंने#श कोड भी ओवराइड कर लिया। अब एक काम करते हैं। अब क्लास को तो",
+      "source": "transcript_api",
+      "english_text": "Gate Class. And here would be its default implementation. Ok? So this is our complete method get class which gives us an object named class. If we do dot get name on it then we get the name of the class. Now again the interesting thing is that this is final so you cannot override it which we just saw. Now let's take a quick look at this in the program. So look again I'm back to my demo dot jwa. This was my student class. Overrode two strings inside it. Overrode the equals and I also overrode the #sh code. Now let's do one thing. now to class"
+    },
+    {
+      "start_time": 2935.599,
+      "end_time": 2968.319,
+      "text": "हम ओवराइड कर नहीं सकते। वो तो फाइनल है। तो सीधा सिस्टम डॉट आउट डॉट प्रिंट एलn करके देखते हैं। s1 डॉट गेट क्लास डॉट गेट नेम कुछ ऐसे। तो यहां पे क्या प्रिंट होगा। ठीक है? इन सबको मैं अभी के लिए कमेंट कर देता हूं इस प्रिंट्स को। ठीक है? तो देखते हैं मेरा क्या नाम प्रिंट होता है। बहुत बढ़िया। मेरा नाम हो गया स्टूडेंट प्रिंट। और सेम अगर मैं यहां पे s2 डॉट गेट क्लास डॉट गेट नेम करूं तो भी मेरा स्टूडेंट प्रिंट होगा क्योंकि दोनों स्टूडेंट क्लास का ऑब्जेक्ट हैं। बिल्कुल",
+      "source": "transcript_api",
+      "english_text": "We cannot override. That is final. So let's directly print system dot out dot l n. s1 dot get class dot get name something like this. So what will be printed here? Ok? Let me comment on all these prints for now. Ok? So let's see what my name gets printed. very nice. My name became Student Print. And same if I name here s2 dot get class dot get then also my student will be printed because both are objects of student class. absolutely"
+    },
+    {
+      "start_time": 2964.72,
+      "end_time": 2998.4,
+      "text": "सही। ठीक है? ओके। अब इसके अलावा ना मेरे पास एक और ऑपरेटर होता है जावा में जिसको मैं बोलता हूं इंस्टेंस ऑफ ऑपरेटर। अभी तक हमने इसके बारे में नहीं पढ़ा था। पर अब यहां पे हम पढ़ रहे हैं। इंस्टेंस ऑफ ऑपरेटर भी ऑलमोस्ट सेम चीज करता है। मैं पहले बता देता हूं वो करता क्या है एग्जैक्टली। अब देखो यह चेक करता है कि इफ एन ऑब्जेक्ट इज इंस्टेंस ऑफ अ क्लास और एनी ऑफ इट्स सब क्लास और एनी ऑफ इट्स",
+      "source": "transcript_api",
+      "english_text": "Right. Ok? Ok. Now apart from this, I have another operator in Java which I call instance of operator. We had not read about it yet. But now here we are studying. The instance of operator also does almost the same thing. Let me first tell you what he does exactly. Now see it checks if an object is instance of a class and any of its sub class and any of its"
+    },
+    {
+      "start_time": 2995.68,
+      "end_time": 3028.88,
+      "text": "सब क्लास एक बेसिकली एक ऑपरेटर है इंस्टेंस ऑफ़ ऑपरेटर जो चेक करता है कि कोई भी ऑब्जेक्ट जैसे कि S1 वो किसी पर्टिकुलर क्लास का इंस्टेंस है या नहीं। तो बेसिकली मैं क्या कह रहा हूं? व्हाट इफ मैं यहां पे लिखूं सिस्टम डॉट आउट डॉट प्रिंट ln और लिखूं s1 इंस्टेंस ऑफ स्टूडेंट तो मैं कुछ ऐसे लिखता हूं कि क्या स्पेलिंग गलत हो गए? तो मैं ऐसे लिखता हूं s1 इंस्टेंस ऑफ स्टूडेंट। अब इंस्टेंस ऑफ़ क्योंकि एक ऑपरेटर है तो s1 और स्टूडेंट के बीच में आएगा। ये चेक करेगा क्या ये जो s1 रेफरेंस",
+      "source": "transcript_api",
+      "english_text": "A subclass is basically an instance of an operator that checks whether an object such as S1 is an instance of a particular class or not. So basically what am I saying? What if I write here system dot out dot print ln and write s1 instance of student then I write something like this, what is the spelling wrong? So I write like this s1 instance of student. Now the instance of because there is an operator will come between s1 and student. Will this check that s1 reference"
+    },
+    {
+      "start_time": 3027.04,
+      "end_time": 3060.96,
+      "text": "वेरिएबल है ये स्टूडेंट का ऑब्जेक्ट है तो ये रिटर्न करेगा ट्रू इस केस में। तो इन दोनों को मैं अभी कमेंट कर देता हूं। मेरा आंसर आना चाहिए ट्रू। बिल्कुल सही। अब अगर मैं चेक करूं क्या S1 इंस्टेंस ऑफ है ऑब्जेक्ट का? अब देखो ऑब्जेक्ट तो पेरेंट क्लास होती है सबकी। अब देखो ये इंस्टेंस ऑफ ये भी चेक करता है कि ये जो S1 है क्या ये इस ऑब्जेक्ट का इंस्टेंस है या फिर इसकी किसी सब क्लास का इंस्टेंस है। अब ऑब्जेक्ट की सब क्लास स्टूडेंट तो है ही। तो यहां पे भी आंसर ट्रू होना चाहिए। क्योंकि S1 ऑब्जेक्ट का इंस्टेंस तो नहीं है पर S1 स्टूडेंट का इंस्टेंस है। लेकिन स्टूडेंट क्या है?",
+      "source": "transcript_api",
+      "english_text": "This variable is the object of student so it will return true in this case. So let me comment on both of these now. My answer should be true. Correct. Now if I check is the S1 instance of the object turned off? Now see, object is the parent class of all. Now see, this instance of also checks whether this S1 is an instance of this object or an instance of any of its subclasses. Now the object's subclass is Student. So here also the answer should be true. Because S1 is not an instance of the object but S1 is an instance of the student. But what is a student?"
+    },
+    {
+      "start_time": 3059.04,
+      "end_time": 3092.64,
+      "text": "ऑब्जेक्ट की सब क्लास है। तो यहां पे भी होना चाहिए ट्रू। देखो बिल्कुल ट्रू। ठीक है? तो हमें ये ये बताता है और हमें हमने ये भी समझ लिया कि हमें एक डॉट क्लास क्या बताता है? ये बताता है कि रन टाइम पे अभी कौन सी क्लास चल रही है। अब इन दोनों को ना मैं आपको थोड़ा सा एक एग्जांपल के थ्रू समझाता हूं जो आपको ज्यादा मजा आएगा। तो देखो यहां पे मैंने अपनी एक नई फाइल बना ली डेमो 2 डॉट जावा। आपको दोनों इंस्टेंस ऑफ और गेट क्लास समझाने के लिए। तो लेट्स से यहां पे मेरी एक क्लास है एनिमल। अभी इसको मैं खाली छोड़ रहा हूं। ठीक है? अब मान लो मेरे पास एक और क्लास है नीचे क्लास। लेट्स से डॉग जो एक्सटेंड करता है",
+      "source": "transcript_api",
+      "english_text": "Is a subclass of Object. So it should be true here also. Look absolutely true. Ok? So this tells us this and we also understand what a dot class tells us? This tells which class is currently running at run time. Now let me explain both of these to you through an example which you will enjoy more. So look here, I have created a new file of mine, demo 2.java. To explain you both instance of off and get class. So from Lets here I have a class called Animal. I am leaving this blank for now. Ok? Now suppose I have another class below the class. Dog that extends from the lats"
+    },
+    {
+      "start_time": 3089.52,
+      "end_time": 3121.52,
+      "text": "एक्सटेंड्स एनिमल। कुछ ऐसे। अभी इसको भी मैं खाली छोड़ देता हूं। ठीक है? ओके। व्हाट इफ अगर मैं यहां पे ऑब्जेक्ट बनाऊं एनिमल ए = न्यू एनिमल। एक बार एनिमल को ही रेफर कराऊं और एक और एनिमल का ऑब्जेक्ट बनाऊं। लेट्स से B = न्यू डॉग। इस बार डॉग को रेफर कराऊं। ठीक है? या फिर B की जगह यहां पर डी लिख देता हूं। ठीक है? एनिमल A = न्यू एनिमल। एनिमल D = न्यू डॉग। क्या होगा? अगर मैं प्रिंट करूंगा सिस्टम डॉट आउट डॉट प्रिंट एलn",
+      "source": "transcript_api",
+      "english_text": "Extends Animal. Something like this. Right now I leave this also blank. Ok? Ok. What if I create an object here Animal a = new Animal. Let me refer to Animal only once and create another Animal object. Let's say B = New Dog. This time I should get the dog referred. Ok? Or I write D here instead of B. Ok? Animal A = New Animal. Animal D = New Dog. What will happen? If I print system dot out dot print ln"
+    },
+    {
+      "start_time": 3116.8,
+      "end_time": 3147.119,
+      "text": "a डॉट गेट क्लास डॉट गेट नेम और सेम प्रिंट करूंगा b डॉट गेट क्लास डॉट गेट नेम ठीक है तो अगर मैं दोनों की क्लासेस प्रिंट करूंगा तो क्या होगा बी नहीं यहां पे सॉरी डी आएगा हां डी डॉट गेट क्लास डॉट गेट नेम तो दोनों की क्लासेस प्रिंट करूंगा रन टाइम पे तो एक की क्लास आई एनिमल एक की क्लास आई डॉग ठीक है माना कि दोनों एनिमल के रेफरेंसेस हैं पर असली रन टाइम पे ऑब्जेक्ट कौन सा क्रिएट हो रहा है? ए के लिए एनिमल का ऑब्जेक्ट क्रिएट हो रहा है।",
+      "source": "transcript_api",
+      "english_text": "a I will print dot get class dot get name and same b dot get class dot get name ok so if I print the classes of both then what will happen b no here sorry d will come yes d dot get class dot get name then I will print the classes of both, at run time one has class i animal a key class i dog ok i assume that both are references to animals but which object is actually being created at run time? Animal object is being created for A."
+    },
+    {
+      "start_time": 3145.92,
+      "end_time": 3179.839,
+      "text": "डी के लिए डॉग का ऑब्जेक्ट क्रिएट हो रहा है। तो जब मैं A डॉट गेट क्लास गेट नेम किया तो एनिमल आया और डी डॉट गेट क्लास डॉट गेट नेम किया तो डॉग आया। लेकिन अगर मैं पूछूंगा कि सिस्टम डॉट आउट डॉट प्रिंट एलn क्या ए इंस्टेंस ऑफ है? इंस्टेंस ऑफ है एनिमल का तो वो भी आंसर ट्रू आएगा। और मैं अगर इसे पूछूंगा बी सॉरी बी नहीं डी इंस्टेंस ऑफ हेड एनिमल का तो भी आंसर ट्रू आएगा क्योंकि डी चाहे डॉग को पॉइंट कर रहा हो पर उसकी पेरेंट क्लास तो एनिमल है ही",
+      "source": "transcript_api",
+      "english_text": "Dog object is being created for D. So when I did A dot get class get name then Animal came and when I did D dot get class dot get name then Dog came. But if I ask system dot out dot print l n is an instance of? If the instance is of Animal then that answer will also be true. And if I ask this B Sorry B No D Instance of Head Animal then the answer will still be true because D may be pointing to Dog but its parent class is Animal."
+    },
+    {
+      "start_time": 3177.599,
+      "end_time": 3212.4,
+      "text": "राइट तो इस केस में भी हमारा आंसर ट्रू आएगा ट्रू ट्रू ठीक है बहुत बढ़िया पर अगर मैं ए से पूछता क्या तो इंस्टेंस ऑफ है डॉग का अब आंसर आना चाहिए फॉल्स ए के लिए फॉल्स क्यों क्योंकि एनिमल को पॉइंट कर रहा है और डॉग उसकी सब क्लास है पेरेंट क्लास तो है नहीं तो ए डॉग का इंस्टेंस नहीं है। वो एक एनिमल का इंस्टेंस है। ठीक है? आई होप आपको समझ आ गया होगा इंस्टेंस ऑफ में और गेट क्लास में क्या फर्क है और किसको हमें कहां यूज़ करना चाहिए। अब इंस्टेंस ऑफ़ आपको बताता है कि कोई ऑब्जेक्ट इंस्टेंस है किसी क्लास का या उसकी सब क्लासेस का। ठीक है? और गेट क्लास",
+      "source": "transcript_api",
+      "english_text": "Right, in this case also our answer will be true. True, it is very good, but if I ask A, is it an instance of Dog? Now the answer should be false, why false for A, because it is pointing to Animal and Dog is its subclass, it is the parent class, otherwise A is not an instance of Dog. That is an instance of an animal. Ok? I hope you have understood what is the difference between Instance Off and Get class and which one should we use where. Now instanceof tells you whether an object is an instance of a class or one of its subclasses. Ok? and get class"
+    },
+    {
+      "start_time": 3210.24,
+      "end_time": 3245.04,
+      "text": "हमें क्या बताता है? रन टाइम पे अभी वो कौन सी क्लास को पॉइंट कर रहा है। कौन सा ऑब्जेक्ट क्रिएट हुआ है मेमोरी में उसका नाम हमें ला के देता है। ठीक है? अब हम आगे बढ़ते हैं अपने नए ऑब्जेक्ट की तरफ। सॉरी नए मेथड की तरफ जिसको हम बोलते हैं क्लोन मेथड जो कि अगेन हमारे ऑब्जेक्ट क्लास के अंदर आता है। ठीक है? क्या करता है भैया क्लोन? भाई बहुत सिंपल काम करता है। ये क्रिएट करता है कॉपी ऑफ़ एन ऑब्जेक्ट। एक ऑब्जेक्ट की कॉपी को क्रिएट करता है। ओके? तो बेसिकली हमारे पास जो क्लास है ना ऑब्जेक्ट उसके अंदर यह होता होगा। उसका सिग्नेचर देखो ऐसा कुछ दिखता",
+      "source": "transcript_api",
+      "english_text": "What does that tell us? Which class is it pointing to at run time? It gives us the name of which object has been created in the memory. Ok? Now we move forward towards our new object. Sorry, on to the new method which we call clone method which again comes inside our object class. Ok? What does a clone do? Brother does very simple work. It creates a copy of an object. Creates a copy of an object. Ok? So basically this would be inside the class object that we have. Look at his signature, it looks something like this"
+    },
+    {
+      "start_time": 3243.28,
+      "end_time": 3276.24,
+      "text": "है। सबसे पहले तो यह है प्रोटेक्टेड नाम का मेथड। यह पब्लिक नहीं है। बहुत इंटरेस्टिंग है यह भी। और यह रिटर्न करता है हमें एक ऑब्जेक्ट क्योंकि अगेन कॉपी रिटर्न करेगा किसकी? इस ऑब्जेक्ट की ही रिटर्न करेगा क्योंकि यह खुद ऑब्जेक्ट टाइप का है और मेथड का नाम है क्लोन। ठीक है? तो ये हमारा मेथड होता है। अब ये जो मेथड है ना ये थ्रो करता है एक एक्सेप्शन। तो यहां पे हम लिखते हैं थ्रोस। अब यहां पे एक एक्सेप्शन का नाम आता है जिसको हम बोलते हैं क्लास नॉट सपोर्टेड एक्सेप्शन।",
+      "source": "transcript_api",
+      "english_text": "Is. First of all, this is the method called protected. This is not public. This is also very interesting. And it returns us an object because again a copy of what? Will return only this object because it itself is of object type and the name of the method is clone. Ok? So this is our method. Now this method throws an exception. So here we write throws. Now here comes the name of an exception which we call Class Not Supported Exception."
+    },
+    {
+      "start_time": 3274.24,
+      "end_time": 3304.0,
+      "text": "ठीक है? ये क्लास नॉट सपोर्टेड एक्सेप्शन को थ्रो करता है। तो वो भी हमें यहां लिखना पड़ेगा। तो ऑब्जेक्ट का सिग्नेचर क्या हुआ? प्रोटेक्टेड ऑब्जेक्ट क्लोन थ्रोस क्लास क्लास नॉट सपोर्टेड एक्सेप्शन। और यहां पे हमारा क्या आ गया? इसका डिफॉल्ट बिहेवियर। अब देखो ये क्लोन मेथड ना थोड़ा सा यूनिक है। जावा कहती है कि तुम इस क्लोन मेथड को यूज़ कर सकते हो अपने किसी ऑब्जेक्ट की कॉपी बनाने के लिए। ठीक है? आप चाहे तो इसको ओवराइड भी कर सकते हो या फिर डिफॉल्ट बिहेवियर को भी कॉल कर सकते हो। डिफॉल्ट अभी बताता हूं क्या बिहेवियर है। पर आप कॉल कर सकते हो।",
+      "source": "transcript_api",
+      "english_text": "ok? This throws Class Not Supported exception. So we will have to write that also here. So what is the signature of the object? Protected object clone throws Class Not Supported exception. And what has happened to us here? Its default behavior. Now see, this clone method is a bit unique. Java says that you can use this clone method to make a copy of any of your objects. Ok? If you want, you can also override it or call the default behavior. Let me just tell you what the default behavior is. But you can call."
+    },
+    {
+      "start_time": 3302.0,
+      "end_time": 3334.24,
+      "text": "अब पर आप इसको ना डायरेक्टली कॉल नहीं कर सकते। अगर आपने अपनी एक क्लास लिखी है स्टूडेंट। ठीक है? तो उसके अंदर आप क्लोन मेथड को डायरेक्टली ओवराइड नहीं कर सकते। आप ये कर ही नहीं सकते। एरर आ जाएगा। और वो एरर क्या आएगा वो भी हम देखेंगे और क्यों आएगा वो भी हम देखेंगे। सबसे पहले एरर क्या है? देखो एरर वो यह है कि कोई भी क्लास इस क्लोन मेथड को तभी ओवराइड कर सकती है अगर वह क्लोनेबल नाम का इंटरफ़ेस को इंप्लीमेंट करती है। हम एक क्लोनेबल नाम का इंटरफ़ेस होता है हमारे पास जावा में इंटरफ़ेस है",
+      "source": "transcript_api",
+      "english_text": "Now you cannot call it directly. If you have written a class of your own, Student. Ok? So inside that you cannot directly override the clone method. You can't do this. Error will come. And we will see what error occurs and why it occurs. First of all what is the error? See, the error is that any class can override this clone method only if it implements an interface named Cloneable. we have an interface named cloneable we have interface in java"
+    },
+    {
+      "start_time": 3331.599,
+      "end_time": 3366.559,
+      "text": "ये। अगर आप इसको इंप्लीमेंट करोगे मतलब अगर आपकी स्टूडेंट क्लास क्लास स्टूडेंट इंप्लीमेंट्स हम एक इंटरफेस को इंप्लीमेंट करते हैं क्लोनेबल अगर आपकी स्टूडेंट क्लास ये करती है तो ही आप क्लोन मेथड को ओवराइड कर पाओगे। ठीक है? अब ये रूल क्यों? इसको अभी हम थोड़ी देर में देखेंगे। पहले फटाफट कोड पे चलते हैं और देखते हैं क्लोरेबल कैसे इंप्लीमेंट होता है। तो मैंने आपको कहा था लेट्स से मैंने यहां पे इक्वल्स डैश कोड सब कुछ ओवराइड तो कर ही रखा है। हम कोशिश करते हैं क्लोन मेथड को भी ओवराइड करने की। अब क्योंकि वो",
+      "source": "transcript_api",
+      "english_text": "This. If you implement this, that is, if your Student class class Student implements we implement an interface Cloneable, only if your Student class does this, then you will be able to override the clone method. Ok? Now why this rule? We will see this in a little while. First let's quickly go over the code and see how chlorable is implemented. So I told you that I have overridden everything here with the equals dash code. We try to override the clone method also. now because he"
+    },
+    {
+      "start_time": 3365.28,
+      "end_time": 3393.28,
+      "text": "मेथड प्रोटेक्टेड है तो यहां पे मुझे लिखना पड़ेगा प्रोटेक्टेड। ठीक है? अब प्रोटेक्टेड को आप ओवराइड कर सकते हो। राइट? क्योंकि आप चाइल्ड क्लास में हो और चाइल्ड क्लास एक्सेस कर सकती है प्रोवाइड प्रोटेक्टेड मेंबर्स को। ओके? अब उसका रिटर्न टाइप है ऑब्जेक्ट और मेथड का नाम है क्लोन। यहां पे एक गैप ज्यादा हो गया। ओके? प्रोटेक्टेड ऑब्जेक्ट क्लोन हम यहां पे थ्रोस करते हैं क्लोन नॉट सपोर्टेड एक्सेप्शन। ठीक है? ओके। यहां पे हमने एक्सेप्ट पब्लिक ऑब्जेक्ट क्लोन लिखा।",
+      "source": "transcript_api",
+      "english_text": "If the method is protected then here I have to write protected. Ok? Now you can override protected. Right? Because you are in the child class and the child class can access the provided protected members. Ok? Now its return type is Object and method name is Clone. There is too much of a gap here. Ok? Protected Object Clone Here we throw CloneNotSupportedException. Ok? Ok. Here we wrote Accept Public Object Clone."
+    },
+    {
+      "start_time": 3391.28,
+      "end_time": 3417.119,
+      "text": "थ्रोस क्लोन नॉट सपोर्टेड एक्सेप्शन। तो अब मैं यहां पे क्या करता हूं? यहां पे मैं इस मेथड की बॉडी लिखना चाहता हूं। अब मुझे पता है जो भी ऑब्जेक्ट क्लोन करता होगा वैसे ही वो क्लोन करे। मैं खुद से क्लोन नहीं करना चाहता। तो मैं लिख देता हूं रिटर्न सुपर डॉट क्लोन। ठीक है? तो मैंने क्या कहा? ऑब्जेक्ट में जो भी क्लोन की फंक्शनैलिटी होगी वही इंप्लीमेंट हो जाएगी सुपर डॉट क्लोन से। अब देखो अभी तक तो मुझे कोई एरर नहीं आया। तो इस मेथड से मैं अपने ऑब्जेक्ट को क्लोन कर सकता हूं।",
+      "source": "transcript_api",
+      "english_text": "Throws CloneNotSupportedException. So what do I do here now? Here I want to write the body of this method. Now I know that whatever object is being cloned, it should be cloned in the same way. I don't want to clone myself. So I write return super dot clone. Ok? So what did I say? Whatever functionality the clone has in the object will be implemented by Super Dot Clone. Now look, till now I have not got any error. So with this method I can clone my object."
+    },
+    {
+      "start_time": 3415.04,
+      "end_time": 3442.88,
+      "text": "ठीक है? अब मैं क्लोन करता कैसे हूं? पहले मैं सारे प्रिंट फंक्शनंस हटाता हूं। मैं कहता हूं मैं एक नया टाइप का स्टूडेंट बना रहा हूं। लेट्स से स्टूडेंट S3 और उसको मैं खुद से नहीं बनाना चाहता। मैं कहता हूं मैं कहता हूं जो भी S1 में है उसको क्लोन कर दो। तो S1 डॉट क्लोन। अब S1 डॉट क्लोन मुझे क्या रिटर्न करता है? मुझे रिटर्न करता है एक ऑब्जेक्ट टाइप का रेफरेंस। ठीक है? हमने देखा होगा s1 डॉट क्लोन का रिटर्न टाइप क्या है? ऑब्जेक्ट।",
+      "source": "transcript_api",
+      "english_text": "ok? Now how do I clone? First I remove all print functions. I say I am creating a new type of student. Student S3 from Let's and I don't want to make it myself. I say, I say, clone whatever is in S1. So S1 Dot Clone. Now what does S1 dot clone return me? Returns me a reference to an object type. Ok? We may have seen what is the return type of s1 dot clone? Object."
+    },
+    {
+      "start_time": 3441.04,
+      "end_time": 3475.04,
+      "text": "मुझे इसे टाइप कास्ट करना पड़ेगा स्टूडेंट में। तो मैं यहां पे लिखता हूं स्टूडेंट स्टूडेंट। ओके? अब क्या एरर आ रहा है? अ अनह हैंडल्ड एक्सेप्शन। हां। S1 डॉट क्लोन आपको पता है थ्रो करता है क्लोन नोट सपोर्टेड एक्सेप्शन। ठीक है? तो यहां पे इस मेन फंक्शन को भी वो एक्सेप्शन हैंडल करनी पड़ेगी। वो बाद में हम देखेंगे एक्सेप्शन हैंडलिंग में। अभी के लिए मान लो हमें यहां पे भी हमें लगा लेना है थ्रोस क्लोन क्लोन नोट सपोर्टेड एक्सेप्शन। ठीक है? अब देखो कोड में कोई एरर नहीं है। तो जनरली मैं एक्सपेक्ट कर रहा हूं S3 में भी वो सब आ जाए जो S1 में है। ठीक है? अब मैं चाहता तो S3 की चीजें",
+      "source": "transcript_api",
+      "english_text": "I have to type cast it to Student. So I write here student student. Ok? What error is coming now? An unhandled exception. Yes. S1 dot clone you know throws clone not supported exception. Ok? So here this main function will also have to handle that exception. We will see that later in exception handling. For now, let's say here also we have to put throws clone clone not supported exception. Ok? Now see there is no error in the code. So generally I am expecting that everything that is there in S1 should come in S3 also. Ok? Now I wish S3 stuff"
+    },
+    {
+      "start_time": 3473.76,
+      "end_time": 3508.48,
+      "text": "प्रिंट करके देख सकता हूं। पर पहले मैं कोड को रन करके देखता हूं कि क्या मुझे कोई एरर तो नहीं आ रहा। और एरर बिल्कुल आ रहा है। क्लोन नोट सपोर्टेड एक्सेप्शन। क्यों? क्योंकि जावा चाहती है कि ये जो मेरी ये जो मेरी क्लास है जिसका नाम है स्टूडेंट। यह ऑब्जेक्ट को तो एक्सटेंड कर ही रही है पर यह इंप्लीमेंट्स करे एक क्लोनेबल इंटरफेस को। अब जब मैंने ये कर दिया अब मुझे कोई एरर नहीं आएगा। ये देखो कोई एरर नहीं आया। अब मैं चाहूं तो मैं यहां पे S3 की डिटेल्स को प्रिंट कर सकता हूं। कुछ इस तरीके से S3 की डिटेल्स को प्रिंट कर सकता हूं। मैं",
+      "source": "transcript_api",
+      "english_text": "I can print it and see. But first let me run the code and see if I am getting any errors. And the error is coming at all. Clone Note Supported Exceptions. Why? Because Java wants that this is my class whose name is Student. It extends the object but implements a cloneable interface. Now that I have done this, I will no longer get any errors. Look, no error occurred. Now if I want, I can print the details of S3 here. In this way I can print the details of S3. i"
+    },
+    {
+      "start_time": 3506.079,
+      "end_time": 3540.72,
+      "text": "लिख सकता हूं सिस्टम डॉट आउट डॉट प्रिंट ln s3 डॉट नेम एंड ऐसे ही मैं s3 भी प्रिंट कर सकता हूं s3 अब यहां पे कौन सा नेम और कौन सी ऐज आएगी जो s1 में थी यानी कि आदित्य और 28 हम इसे रन करके देखते हैं आदित्य और 28 आ गया ठीक है तो मेरा क्लोनेबल भी ठीक से काम कर रहा है s1 डॉट क्लोन जैसे ही मैं लिखता हूं क्या होता है वो क्लोन कर देता है एक नया ऑब्जेक्ट क्रिएट करता है मेमोरी में और s3 उसे पॉइंट करता है फिर मैं उसकी चीजों और स्क्रीन पे प्रिंट करने की कोशिश कर रहा हूं। ठीक है? तो ये है हमारा पूरा का पूरा",
+      "source": "transcript_api",
+      "english_text": "I can write system dot out dot print ln s3 dot name and similarly I can print s3 also s3 Now here which name and which age will come which was in s1 i.e. Aditya and 28 we run it and see Aditya and 28 come ok so my cloneable is also working properly s1 dot clone As soon as I write what happens, it clones it creates a new object in the memory and s3 it Points then I am trying to print on his things and screen. Ok? So this is our complete"
+    },
+    {
+      "start_time": 3538.799,
+      "end_time": 3572.96,
+      "text": "क्लोन मेथड। अब देखते हैं कि हमें क्लोनेबल इंटरफेस को क्यों इंप्लीमेंट करना होता है। अब देखो हमें क्लोन मेथड को सॉरी क्लोनेबल इंटरफेस को इसलिए इंप्लीमेंट करना होता है। उससे पहले यहां पे एक गलती की थी मैंने। मैंने यहां पे क्लास नॉट सपोर्टेड एक्सेप्शन लिखा था। यहां पे होगा क्लास की जगह क्लोन नॉट सपोर्टेड एक्सेप्शन। ठीक है? ओके। हां। तो वापस चलते हैं कि हमें क्यों क्लोनेबल इंटरफ़ेस को इंप्लीमेंट करना ही होता है। देखो जावा कहती है हर चीज़ क्लोरेनेबल नहीं होनी चाहिए। आप किसी भी चीज को किसी भी ऑब्जेक्ट को क्लोन नहीं कर सकते हो। तो बेसिकली नॉट एव्री ऑब्जेक्ट",
+      "source": "transcript_api",
+      "english_text": "Clone Method. Now let us see why we have to implement cloneable interface. Now see, we have to implement the clone method, sorry cloneable interface. Before that I had made a mistake here. I wrote Class Not Supported Exception here. Here Clone Not Supported exception will be thrown instead of class. Ok? Ok. Yes. So going back to why we need to implement a cloneable interface. Look, Java says not everything should be chlorinable. You cannot clone any object. So basically not every object"
+    },
+    {
+      "start_time": 3570.88,
+      "end_time": 3599.359,
+      "text": "शुड बी क्लोनेबल। राइट? ऐसे कौन से ऑब्जेक्ट हैं भाई? आप मान लो आपने डेटाबेस का कोई ऑब्जेक्ट बना रखा है या थ्रेड्स का कोई ऑब्जेक्ट बना रखा है। आप इन्हें क्लोन नहीं कर सकते क्योंकि अनडिजायर्ड आउटपुट आएगा। है ना? तो जावा आपको ये मैंडेटरी करता है कि कोई भी क्लास जो आप डिक्लेअ करते हो लेट्स से स्टूडेंट। अगर आप चाहते हो उसे क्लोन करना है तो एक नया इंटरफ़ेस को इंप्लीमेंट करो। इंप्लीमेंट्स क्लोनेबल। एक क्लोनेबल नाम के इंटरफेस को इंप्लीमेंट करना ही पड़ेगा।",
+      "source": "transcript_api",
+      "english_text": "Should be cloneable. Right? What are such objects brother? Suppose you have created a database object or an object of threads. You cannot clone these as it will produce undesired output. Isn't it? So Java makes it mandatory for you to declare any class as let's student. If you want to clone it, implement a new interface. Implements cloneable. A cloneable named interface must be implemented."
+    },
+    {
+      "start_time": 3597.52,
+      "end_time": 3630.4,
+      "text": "ये रूल है। तो इसका मतलब ये हो गया कि जावा इसको ऐसे रीड करेगा। एनी क्लास जो इंप्लीमेंट करती है क्लोनेबल इंटरफेस को उसको मैं क्लोन कर सकती हूं। ठीक है? तो आपने एक्सप्लसिटली जावा को बोला कि मैं चाहता हूं क्लोन होना। तो इंप्लीमेंट करो क्लोनेबल इंटरफेस को। अब आप इस क्लोन मेथड को ओवराइड करके लिख सकते हो सुपर डॉट क्लोन। राइट? आप वगैरह-वगैरह इसमें कुछ भी लिख सकते हो। ठीक है? तो अब हमने ये भी पढ़ा था कि अगर आप एक इंटरफेस को इंप्लीमेंट करते हो तो आपको उसके सारे मेथड को ओवराइड करना पड़ेगा। पर हमने क्लोनेबल का तो कोई मेथड ओवराइड नहीं किया। क्यों नहीं किया पता है? क्योंकि",
+      "source": "transcript_api",
+      "english_text": "This is the rule. So this means that Java will read it like this. I can clone any class which implements cloneable interface. Ok? So you explicitly told Java that I want to be cloned. So implement cloneable interface. Now you can override this clone method and write super dot clone. Right? You can write anything in it etc. Ok? So now we also read that if you implement an interface then you will have to override all its methods. But we did not override any method of cloneable. Do you know why it was not done? because"
+    },
+    {
+      "start_time": 3628.559,
+      "end_time": 3662.24,
+      "text": "क्लोनेबल के अंदर कोई मेथड ही नहीं है। तो ये जो हमारा इंटरफेस है ना इंटरफेस क्लोनेबल ये कुछ ऐसा दिखता है। ये खुलता है और बंद हो जाता है। इसके अंदर कोई कोड नहीं लिखा होता। यह एंप्टी होता है। एंप्टी। इनफैक्ट हमारे पास जावा में ऐसे बहुत सारे इंटरफसेस होते हैं जो एंप्टी इंटरफसेस होते हैं उसके अंदर कुछ भी नहीं लिखा होता और इन तरह के इंटरफसेस को हम बोलते हैं मार्कर इंटरफेस मार्कर इंटरफेससेस ये किस काम आते हैं? ये",
+      "source": "transcript_api",
+      "english_text": "There is no method inside cloneable. So this is our interface, the interface is cloneable, it looks something like this. It opens and closes. There is no code written inside it. It is empty. Amputee. In fact, we have many such interfaces in Java which are empty interfaces, nothing is written inside them and we call such interfaces marker interfaces. What are these useful for? this"
+    },
+    {
+      "start_time": 3660.079,
+      "end_time": 3693.119,
+      "text": "बस एक मार्क करने के काम आते हैं कि अगर आपने इसको इंप्लीमेंट किया तो अब आप कोई फंक्शनैलिटी को अनलॉक कर लोगे। जैसे अगर आपने क्लोनेबल को इंप्लीमेंट किया तो ही आप क्लोन कर पाओगे। अगर आप क्लोनेबल को इंप्लीमेंट नहीं करोगे तो क्लोन नहीं कर पाओगे। तो उसने आपको एक मार्क दे दिया। ठीक है? तो अंदर से जावा ने कैसा कोड लिखा होगा खुद के क्लोन का। तो जो जावा की खुद की क्लोन की क्लास है कहां? हमने यहां बनाई थी। हां। तो जावा की जो खुद की क्लोन की क्लास है उसका डिफॉल्ट बिहेवियर कुछ ऐसा रहा होगा कि तो उसमें कुछ ऐसा कोड लिखा होगा। अगर मैं सूडो कोड की बात करूं कि इफ जो भी हमारा ऑब्जेक्ट है इफ दिस",
+      "source": "transcript_api",
+      "english_text": "It is just used to mark that if you implement it, you will now unlock some functionality. Like, you will be able to clone only if you implement Cloneable. If you do not implement Cloneable then you will not be able to clone. So he gave you a mark. Ok? So what kind of code would Java have written internally for its own clone? So where is Java's own clone class? We made it here. Yes. So the default behavior of Java's own clone class must have been such that some code would have been written in it. If I talk about pseudo code that if whatever our object is then if this"
+    },
+    {
+      "start_time": 3691.52,
+      "end_time": 3725.52,
+      "text": "ऑब्जेक्ट इंप्लीमेंट्स क्लोनेबल तो अलाउ इट एल्स थ्रो कर दो क्लोन नॉट सपोर्टेड एक्सेप्शन ठीक है तो यहां पे मैंने लिख दिया एल्स थ्रो हमारी वही वाली एक्सेप्शन क्लोन नॉट सपोर्टेड एक्सेप्शन ये वाली बेसिकली ठीक है तो कुछ इस तरह का अंदर से कोड लिखा होगा तो जावा अलाउ ही नहीं करेगा वो चेक कर लेगा पहले ही कि आपने क्लोनेबल नाम का इंटरफ़ेस आपने इंप्लीमेंट किया है या नहीं किया। इन तरह के इंटरफ़ेससेस को हम क्या",
+      "source": "transcript_api",
+      "english_text": "Object implements cloneable then allow it else throw Clone Not Supported exception. Okay, so here I have written else throw our same exception Clone Not Supported Exception. This one is basically okay, so if some code like this is written from inside, then Java will not only allow it, it will already check whether you have implemented the interface named Cloneable or not. What do we call these types of interfaces?"
+    },
+    {
+      "start_time": 3723.92,
+      "end_time": 3758.4,
+      "text": "बोलते हैं? मार्कर इंटरफ़ेससेस। अब जैसे-जैसे हमारे पास ऐसे इंटरफ़ेससेस आएंगे, हम उनको देखेंगे। पर इनको हम क्या बोलते हैं? मार्कर इंटरफ़ेससेस। ठीक है? ओके। एक और चीज ये जो जावा का इनबिल्ट क्लोनेबल फंक्शन है जो डिफॉल्ट क्लोनेबल फंक्शन है ये वाला। हां। तो जावा का जो इनबिल्ट क्लोनेबल फंक्शन है ना वो हमेशा पता है कैसी कॉपी करता है? वो करता है शैलो कॉपी सॉरी शैलो कॉपी। याद रखना वो डीप कॉपी नहीं करता। अब आपको अच्छे से पता है शैलो कॉपी क्या होती है? डीप कॉपी क्या होती है? तो आपको समझ आ जाएगा। अगर आपको डीप कॉपी करनी है तो आपको इसे ओवराइड करना",
+      "source": "transcript_api",
+      "english_text": "speak? Marker Interfaces. Now as we get such interfaces, we will see them. But what do we call them? Marker Interfaces. Ok? Ok. One more thing is the inbuilt cloneable function of Java which is the default cloneable function. Yes. So the inbuilt cloneable function of Java always knows how it copies? He does shallow copy, sorry shallow copy. Remember it doesn't do deep copies. Now you know very well what is shallow copy? What is deep copy? Then you will understand. If you want to do deep copy then you have to override it."
+    },
+    {
+      "start_time": 3756.16,
+      "end_time": 3788.319,
+      "text": "पड़ेगा। यहां पे आप इसे ओवराइड करोगे। ओवराइड अपने तरीके से टू गेट योर डीप कॉपी। पर अगर आप जावा का यूज़ करोगे तो जावा तो भाई आपको क्या देगा? शैलो कॉपी ही ला के देगा। ठीक है? अब हम बढ़ते हैं अपने अगले मेथड की तरफ जो कि है जावा में फाइनलाइज। अब देखो यह जो फाइनलाइज मेथड है ना यह पहले यूज़ होता था और पहले इसको कौन यूज़ करता था? पहले इसको यूज़ करता था गार्बेज",
+      "source": "transcript_api",
+      "english_text": "Will have to. Here you will override it. Override your way to get your deep copy. But if you use Java then what will Java give you? Will bring only shallow copy. Ok? Now let us move towards our next method which is Finalize in Java. Now look, this finalized method was used earlier and who used it earlier? Garbage used to use it earlier"
+    },
+    {
+      "start_time": 3784.799,
+      "end_time": 3817.68,
+      "text": "कलेक्शन। गार्बेज कलेक्शन। अब यह हो चुका है डेप्लिकेटेड। ठीक है? अब जावा इसको पहले क्यों यूज़ करता था गार्बेज कलेक्शन? मेमोरी को फाइनलाइज़ करने के लिए। अगर आपने कोई चीजें स्टोर करके रखी हुई हैं अपनी हीप मेमोरी में और अब वो यूज़ नहीं हो रही तो गार्बेज कलेक्शन रन होने से पहले फाइनलाइज़ मेथड अपने आप में एग्जीक्यूट करता था। ठीक है? आप फाइनलाइज़ खुद से भी कॉल कर सकते थे। पर जावा ने कहा ये मेथड है बहुत ही ज्यादा अनप्रिडिक्टेबल। हमें पता लगा यह बहुत ही ज्यादा अनप्रिडिक्टेबल है। बहुत ही ज्यादा",
+      "source": "transcript_api",
+      "english_text": "Collection. Garbage collection. Now it has been deprecated. Ok? Now why did Java use garbage collection earlier? To finalize the memory. If you have stored something in your heap memory and are no longer in use, the finalize method automatically executes before garbage collection runs. Ok? You could also call Finalize yourself. But Java said this method is very unpredictable. We found out that it is very unpredictable. very much"
+    },
+    {
+      "start_time": 3815.44,
+      "end_time": 3842.24,
+      "text": "अनसेफ है। इनफैक्ट बहुत ही ज्यादा अनरिलायबल है। क्यों है? अनप्रिडिक्टेबल अनसेफ अनरिलायबल। रीज़न यह है। बट इवन दो आप खुद से गार्बेज कलेक्शन कॉल भी कर लो। जरूरी नहीं है कि वो फाइनलाइज़ मेथड कॉल होगा या नहीं होगा। वो गार्बेज कलेक्शन पे डिपेंड करता है। जब हम गार्बेज कलेक्शन को स्टडी करेंगे फ़दर तो आपको अच्छे से समझ आएगा कि ये वाला मेथड हमारे हाथ में ही नहीं होता। गार्बेज कलेक्शन जीसी डिसाइड करता है कि ये कॉल होगा या नहीं होगा। तो कई बार ये कॉल होता है। कई बार नहीं होता।",
+      "source": "transcript_api",
+      "english_text": "Is unsafe. Infact it is very unreliable. Why is it? Unpredictable unsafe unreliable. The reason is this. But even if you call garbage collection yourself. It is not necessary that the finalize method will be called or not. He depends on garbage collection. When we study garbage collection, you will understand well that this method is not in our hands. Garbage collection GC decides whether this call will happen or not. So many times this call happens. Many times it doesn't happen."
+    },
+    {
+      "start_time": 3840.48,
+      "end_time": 3874.319,
+      "text": "इसलिए अनप्रिडिक्टेबल होता है, अनसेफ है, अनरिलायबल है। तो बहुत सारे रीज़न है। तो ये डेप्लिकेट हो चुका है। अब इसको कोई यूज़ नहीं करता। तो इसको हम छोड़ सकते हैं। अभी भी लेगेसी के लिए हमारी ऑब्जेक्ट क्लास में पड़ा है। पर इसका यूज़ धीरे-धीरे बिल्कुल खत्म हो चुका है। ठीक है? और इसके अलावा जो हमारे बाकी तीन मेथड्स थे जो थ्रेड्स के थे वो थे वेट, नोटिफाई और नोटिफाई ऑल। अब ये सारे जो मेथड्स हैं वो हमारे थ्रेड ओरिएंटेड मेथड्स हैं। और ये हम तब पढ़ेंगे जब हम जावा में मल्टी थ्रेडिंग को डेप्थ में समझेंगे कि अभी आपको ये समझ नहीं आएंगे। ये थ्रेड्स के",
+      "source": "transcript_api",
+      "english_text": "Therefore it is unpredictable, unsafe and unreliable. So there are many reasons. So this has been duplicated. Now no one uses it. So we can leave this. Still lying in our object class for legacy. But its use has gradually ended completely. Ok? And apart from this, our remaining three methods which were of threads were wait, notify and notify all. Now all these methods are our thread oriented methods. And we will read this when we understand multi-threading in Java in depth, but you will not understand this right now. of these threads"
+    },
+    {
+      "start_time": 3871.839,
+      "end_time": 3906.16,
+      "text": "साथ ही समझ आएंगे। हमने वो सारे मेथड्स कवर किए जो ऑब्जेक्ट क्लास के अंदर आते हैं। टू स्ट्रिंग इक्वल्स हैश कोड गेट क्लास। हमने क्लोन भी देखा। हमने देखा फाइनलाइज़ अब डेप्लिकेटेड है और थ्रेड्स को तो हम बाद में पढ़ेंगे ही। तब हम उसको अच्छे से देख लेंगे। ठीक है? अब इसके अलावा ना मुझे आपको एक और चीज बतानी है। जावा में हमारे पास जो एरेज होते हैं वो भी अंदर से नॉन प्रिमिटिव डेटा टाइप है। ये तो आपको पता ही होगा। नॉन प्रिमिटिव है ना? तभी हम उनको न्यू कीवर्ड से डिक्लअर करते हैं। हम ऐसे लिखते हैं इंट लेट्स से एआर = न्यू इंट फाइव। कि भ एक पांच साइज",
+      "source": "transcript_api",
+      "english_text": "You will also understand. We covered all the methods that come inside the Object class. To String Equals Hash Code Get Class. We also saw clones. We see that Finalize is now deprecated and we will read the threads later. Then we will take a good look at him. Ok? Now apart from this I have to tell you one more thing. The arrays we have in Java are also non-primitive data types internally. You must know this. Non primitive right? Only then we declare them with new keyword. We write like this int lets se ar = new int five. what a five size"
+    },
+    {
+      "start_time": 3903.839,
+      "end_time": 3938.24,
+      "text": "का एरे बना दो। तो हमें पता है एआरआर हमारा स्टक मेमोरी में बनता है और ये जो न्यू इंट फाइव है ये पांच साइज का जो एरे बनता है ये हमारा हिप मेमोरी बनता है और एआरआर उसे पॉइंट करता है। तो इंटरनली अगर एरेज नॉन प्रिमिटिव हैं तो इनके भी ऊपर आती होगी हमारी ऑब्जेक्ट क्लास। राइट? यानी कि जो जो चीजें हम ऑब्जेक्ट में कर सकते हैं वो चीजें हम एरेज में भी कर सकते हैं। और एक और चीज यहां पर मैंने एरेज लिखा है। पर जावा में एरे अलग है जो कि एक डेटा टाइप है और एरेज क्लास एक अलग क्लास है जो एरेज पे ऑपरेशंस के लिए बनी है। वो जैसे हम यूज़ करेंगे वो हम",
+      "source": "transcript_api",
+      "english_text": "Make an array of. So we know that ARR is formed in our stack memory and this new int five, this array of size five is formed, this is our hip memory and ARR points to it. So internally if the arrays are non-primitive then our object class would be above them also. Right? That means, whatever things we can do in objects, we can also do them in arrays. And one more thing here I have written array. But in Java, array is different which is a data type and Array class is a separate class which is made for operations on arrays. We will use it as we use it."
+    },
+    {
+      "start_time": 3936.48,
+      "end_time": 3969.76,
+      "text": "धीरे-धीरे देखते रहेंगे। पर आप याद रखना जावा में कई जगह ना सेम नाम यूज़ होते हैं। जैसे कि मैंने बोला एक है हमारे पास ऑब्जेक्ट क्लास और एक है हमारे पास ऑब्जेक्ट्स क्लास। यह ऑब्जेक्ट जो है वो जावा डॉट lang पैकेज में जो सबसे पेरेंट है सबका और ऑब्जेक्ट्स एक यूटिलिटी क्लास है। राइट? ऐसे आगे आप बहुत देखने वाले हो जावा में। ठीक? एक एस लगा के क्लास का नाम बदल जाता है। पर जैसे-जैसे वो यूज़ होगी उसको हम तब देख लेंगे। पर बस आपको पता होना चाहिए कि एरेस भी एक नॉन प्रिमिटिव डेटा टाइप है। जो ऑब्जेक्ट क्लास उसके भी ऊपर आती है। ठीक है? तो बेसिकली ऑब्जेक्ट क्लास हर क्लास का पेरेंट है। राइट? सबके",
+      "source": "transcript_api",
+      "english_text": "Will keep watching slowly. But remember that same names are used at many places in Java. As I said, we have one object class and one we have objects class. This object is the parent of all in the java.lang package and objects are a utility class. Right? You are going to see a lot like this in Java. Correct? The name of the class changes by adding an S. But we will see as it gets used. But just you should know that Array is also a non-primitive data type. The object class which comes above that also. Ok? So basically Object class is the parent of every class. Right? everyone's"
+    },
+    {
+      "start_time": 3967.599,
+      "end_time": 4000.24,
+      "text": "ऊपर आती है। सबके रूट लेवल पे आती है। तो क्या ये हमारे प्रिमिटिव डेटा टाइप्स जैसे कि हमारे इंट, कैर, प्लोट इन सबके भी ऊपर आती है क्या? आंसर है नो। क्यों? क्योंकि ये हमारे प्रिमिटिव्स हैं। ये ही मेमोरी में स्टोर नहीं होते। ये ऑब्जेक्ट्स थोड़ी हैं। तो इनके ऊपर कोई ऑब्जेक्ट क्लास नहीं आती। इसलिए इनके ऊपर कोई डॉट टू स्ट्रिंग डॉट इक्वल्स वगैरह हम नहीं करते। हम इनको कंपेयर करना होता है। दो इंटिजर हैं। इंट a इंट b अगर मुझे इनको कंपेयर करना है तो मैं a इक्वल इक्वल b लिखूंगा। मैं a डॉट इक्वल्स b थोड़ी लिखता हूं। राइट? वैसे ही इस पे ना तो मैं टू स्ट्रिंग लगा सकता हूं",
+      "source": "transcript_api",
+      "english_text": "Comes up. Comes at everyone's root level. So does this also extend to our primitive data types like int, char, plot etc? The answer is no. Why? Because these are our primitives. These are not stored in memory. These objects are few. So there is no object class above them. Therefore, we do not do any dot to string dot equals etc. on these. We have to compare them. There are two integers. int a int b If I want to compare these, I would write a equals equal b. I write a dot equals b little. Right? Similarly, I can't put two strings on it either."
+    },
+    {
+      "start_time": 3998.72,
+      "end_time": 4029.68,
+      "text": "और वगैरह-वगैरह ऑब्जेक्ट का कोई भी मेथड नहीं लगा सकता। पर हमारे पास जो इनके रैपर क्लासेस हैं इंट के लिए इंटीजर है, हमारे पास कैरेक्टर है वो सब फ्लोट है वो सब ऑब्वियसली क्योंकि नॉन प्रिमिटिव्स हैं तो अगेन इनके ऊपर क्या आती है? हमारी ऑब्जेक्ट क्लास। कुछ ऐसे। ठीक है? तो आई होप आपको ये समझ आ गया होगा अच्छे से। ऑब्जेक्ट क्लास क्या होती है? क्यों होती है? कौन-कौन से उसमें मेथड्स होते हैं? ठीक है? और उनकी पूरी की पूरी हायरार्की। इस वीडियो में इतना ही।",
+      "source": "transcript_api",
+      "english_text": "And so on. No method of the object can be applied. But we have their wrapper classes, we have integer for int, we have character, all of that is float, all of that obviously because they are non primitives, so again what comes over them? Our object class. Something like this. Ok? So I hope you have understood this well. What is object class? Why does it happen? Which methods are there in it? Ok? And their entire hierarchy. That's all in this video."
+    },
+    {
+      "start_time": 4027.92,
+      "end_time": 4033.64,
+      "text": "आपसे मिलते हैं नेक्स्ट वीडियो में। तब तक के लिए थैंक यू सो मच।",
+      "source": "transcript_api",
+      "english_text": "See you in the next video. Till then thank you so much."
+    }
+  ],
+  "playlist_id": "PLXZCnQTdmeaE",
+  "playlist_title": "OOPs in Java Full Course"
+}

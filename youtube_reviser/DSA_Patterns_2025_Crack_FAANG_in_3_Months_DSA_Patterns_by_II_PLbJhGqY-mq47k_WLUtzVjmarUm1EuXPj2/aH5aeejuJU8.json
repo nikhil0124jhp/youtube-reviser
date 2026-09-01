@@ -1,0 +1,646 @@
+{
+  "video_id": "aH5aeejuJU8",
+  "video_title": "DSA Patterns L31 | Master Merge Interval DSA Patterns | MERGE INTERVALS LEETCODE",
+  "video_number": 34,
+  "chunks": [
+    {
+      "start_time": 2.389,
+      "end_time": 35.83,
+      "text": "आ जाइए भाई एपिसोड 31 में आज का ये जो पैटर्न है ना जो शुरू होने वाला है मर्ज इंटरवल बड़ा अच्छा पैटर्न है बड़ा इनोसेंट सा पैटर्न बहुत छोटा सा पैटर्न है इसमें गिन के शायद चार या पांच तरीके के क्वेश्चन बनते हैं अगर चार पांच तरीके के क्वेश्चन आप लोग सीख लेंगे पूरा हो जाएगा इसमें कोई एक्स्ट्रा दिमाग लगाने की जरुरत नहीं होती है कोई एक्स्ट्रा हार्ड क्वेश्चन नहीं होता सारे क्वेश्चन इसमें ईजी टू मीडियम होते हैं। अगर आप कोर आईडिया समझ जाते हैं अगर आपको तीन चार क्वेश्चन कर लेते हैं आपको पूरा पैटर्न समझ में आ जाएगा बहुत छोटा सा पैटर्न है इसको जल्दी से खत्म करेंगे शायद दो से तीन क्लास में इसको खत्म करने की कोशिश करेंगे चलिए सबसे पहले आते हैं कि मर्ज इंटरवल का फ्लो चार्ट देख लेते हैं कि यूज़ करना",
+      "source": "caption",
+      "english_text": "Come brother, this is today's pattern in episode 31, which is going to start, merge interval is a very good pattern, very innocent pattern, it is a very small pattern, in this there are probably four or five types of questions made by counting, if you guys learn four or five types of questions, it will be completed, there is no need to put any extra brain in it, there is no extra hard question, all the questions are easy to medium in it. If you understand the core idea, if you do three-four questions, you will understand the entire pattern. It is a very small pattern. We will finish it quickly. Maybe we will try to finish it in two to three classes. Let us first see the flow chart of merge interval and how to use it."
+    },
+    {
+      "start_time": 35.84,
+      "end_time": 66.87,
+      "text": "क्या है क्या होता है तो देखिए अभी तक हम लोग जितना भी पैटर्न पढ़े थे ना तो आप जनरली पढ़ रहे थे कि वहां पे या तो आपको ऐरे दिया रहता था या तो आपको लिंक लिस्ट दिया रहता था या तो आपको नंबर दिया रहता था लेकिन ये पैटर्न थोड़ा-थोड़ा अलग है ये थोड़ा अलग कैसे है। इसमें आपको एरे तो दिया रहेगा लेकिन वो टू डी एरे दिया रहेगा। अब टू डी एरे का क्या मतलब है ना? बेसिकली बेसिकली कभी भी आपको कोई क्वेश्चन में रेंजेस दिए रहें। क्या दिए रहें रेंजेस या फिर रेंजेस को इंटरवल्स भी बोलते हैं। क्या बोलते हैं इंटर्वल्स।",
+      "source": "caption",
+      "english_text": "What is it, what happens, so see till now, whatever patterns we have read, you were reading in general that there either you were given an array, or you were given a link list, or you were given a number, but this pattern is a little different, how is it a little different. In this you will be given an array but it will be given to D array. Now what does to d array mean right? Basically, you should always be given ranges in any question. What are the ranges given or ranges are also called intervals. What do intervals say?"
+    },
+    {
+      "start_time": 66.88,
+      "end_time": 100.95,
+      "text": "रेंज का क्या मतलब होता है? रेंज का मतलब होता है स्टार्ट। और एक एंड। इस दो इस पेयर को इस पेयर को रेंज बोलते हैं। इस पेयर को रेंज बोलते हैं। रेंज मतलब हिंदी में क्या होता है कि आप जब कपड़ा लेने जाते हैं तो बताते हैं ना कि भाई इस तरह का इस रेंज में हमको कपड़े दिखाओ। मतलब हमको 1000 से ऊपर की शर्ट दिखाओ और 10,000 से नीचे की शर्ट दिखाओ। तो वो एक रेंज होता है। आपको बोलता है ना शॉपकीपर कि इसका प्राइस रेंज ये है। इसका प्राइस रेंज 20,000 से 30,000 है। इसका प्राइस रेंज 1 लाख से 2 लाख है। गाड़ी का प्राइस रेंज 1 करोड़ से 1.5 करोड़ है। तो वो रेंज होता है। तो कभी भी आपको क्वेश्चन",
+      "source": "caption",
+      "english_text": "What does range mean? Range means start. And one more. This pair is called range. This pair is called range. What does range mean in Hindi, when you go to buy clothes, you say, brother, show us clothes in this range. Meaning, show us shirts above Rs 1000 and shirts below Rs 10,000. So that's a range. The shopkeeper tells you that its price range is this. Its price range is 20,000 to 30,000. Its price range is 1 lakh to 2 lakh. The price range of the car is 1 crore to 1.5 crore. So that is the range. So anytime you have questions"
+    },
+    {
+      "start_time": 100.96,
+      "end_time": 135.35,
+      "text": "में रेंज दिया रहे या इंटरवल्स दिया रहे उसको इंटरवल्स भी आप बोल सकते हैं कि रेंज दिया रहे ना एरे में। एरे में ही दिया रहेगा। हमेशा आपको एरे में ही रेंज दिया रहेगा। एरे में कैसे दिया रहेगा बताएंगे। लेकिन कभी भी रेंज दिया रहे। तो पहली बात तो ये हो गई कि रेंज जरूरी है बिना रेंज के। मर्ज इंटरवल का कोई औचित्य नहीं है। ठीक है? उसके बाद उसके बाद ये देखिए आपसे पूछा क्या? कुछ कीवर्ड्स होते हैं। क्या कीवर्ड्स होते हैं? ओवरलैप ओवरलैप कॉन्फ्लिक्ट कॉन्फ्लिक्ट। मर्ज रेंजेस के साथ मर्ज। ऐसे ही मर्ज नहीं रेंजेस को",
+      "source": "caption",
+      "english_text": "Range is given in or intervals are given, you can also call it intervals or range is given in the array. Will remain given in the array only. You will always be given range in the array. Will tell how the lamps will be placed in the array. But always give range. So the first thing is that range is necessary without any range. There is no justification for the merge interval. Ok? After that, see what he asked you? There are some keywords. What are keywords? Overlap Overlap Conflict Conflict. Merge with merge ranges. Ranges don't merge just like that"
+    },
+    {
+      "start_time": 135.36,
+      "end_time": 160.949,
+      "text": "मर्ज करना है। फ्री टाइम फ्री टाइम। यस फ्री टाइम। साइमलटेनियस यूसेज। साइमलटेनियस यूसेज। ये सब कीवर्ड है। याद रखिएगा ये सब कीवर्ड। ये सब कीवर्ड लीड कोड के क्वेश्चन में दिया रहेगा। या फिर अ रूम्स या तो लोड या तो सीपीयू या तो मीटिंग्स ऐसा-सा करके ये सारे क्या हैं? ये सारे हैं कीवर्ड्स। आपके क्या हैं?",
+      "source": "caption",
+      "english_text": "Have to merge. Free time free time. Yes free time. Simultaneous Use. Simultaneous Use. These are all keywords. Remember all these keywords. All these keywords will be given in the question of lead code. Or rooms, either load, or CPU, or meetings, what are these? These are all keywords. What are yours?"
+    },
+    {
+      "start_time": 160.959,
+      "end_time": 192.39,
+      "text": "कीवर्ड्स क्वेश्चन में होंगे। क्वेश्चन में होंगे तो उनको आंख खोल के देखिएगा। भूल मत जाइएगा। दो ही चीजें हैं। पहला की जो इनपुट दिया रहेगा ना वो रेंज या इंटरवल के फॉर्म में दिया रहेगा। स्टार्ट और स्टॉप बताया रहेगा। बहुत सारा। बहुत सारा स्टार्ट और स्टॉप बताया रहेगा। और इन सब में से कोई ना कोई कीवर्ड मैच करेगा तो ये क्वेश्चन किसका क्वेश्चन बन जाएगा? मर्ज इंटरवल का। अगर ये दोनों में से एक भी चीज़ नहीं है तो क्वेश्चन मर्ज इंटरवल का बिल्कुल नहीं रहेगा। तो इसीलिए हम बोले कि बड़ा डिटरमिनिस्टिक सा बड़ा छोटा सा पैटर्न है। इसमें कोई एक्स्ट्रा दिमाग नहीं लगाना है। कीवर्ड याद रखिए और रेंज दिया है।",
+      "source": "caption",
+      "english_text": "Keywords will be in the question. If there are questions, look at them with open eyes. Don't forget. There are only two things. Firstly, the input given will be given in the form of range or interval. Start and stop will be indicated. A lot. A lot of starts and stops will be mentioned. And if one or the other keyword matches among all these, then whose question will this question become? Of merge interval. If either of these things is missing then there will be no query merge interval at all. So that is why we said that there is a very small pattern that is very deterministic. There is no need to put any extra mind into this. Remember the keywords and range given."
+    },
+    {
+      "start_time": 192.4,
+      "end_time": 219.27,
+      "text": "आपको मर्ज इंटरवल लगाना है। ठीक है? आइए। तो अब आज के इस लेक्चर में ना इसका एक बेसिक कोर आईडिया देख लेते हैं कि होता क्या है पैटर्न और अब उसके ऊपर कैसे हर क्वेश्चन देखिए ये जो भी कीवर्ड है ना ये सारे कीवर्ड एक-एक एक-एक क्वेश्चन होंगे। थोड़ा-थोड़ा तरीका बदल जाएगा क्वेश्चन वाइज़ करने का कि जैसे प्रीफिक्स सम में थोड़ा-थोड़ा टेक्निक बदल रहा था ना। पहले वेरिएबल से कर रहे थे फिर हैशमैप से कर रहे थे फिर किसी और चीज से कर रहे थे। तो इसमें भी थोड़ा सा तरीका बदलेगा लेकिन जो कोर आईडिया है कोर आईडिया वो सेम रहता है।",
+      "source": "caption",
+      "english_text": "You have to set the merge interval. Ok? Come. So now in today's lecture, let us see a basic core idea of ​​what is a pattern and now see how each question on it, whatever keywords it is, all these keywords will be one question each. The method of doing question wise will change little by little, just as the technique in prefix sum was changing little by little. First we were doing it with variables, then we were doing it with hashmap and then we were doing it with something else. So in this also the method will change a little but the core idea remains the same."
+    },
+    {
+      "start_time": 219.28,
+      "end_time": 248.869,
+      "text": "आज कोर आईडिया समझ लीजिए। कोर आईडिया आप समझ जाएंगे तो आपको कोई दिक्कत नहीं रहेगी। तो देखिए हम सबसे पहले क्या बोले कि आपको रेंजेस दिए रहेंगे। मतलब कि आपको क्या दिया रहेगा? रेंजेस दिया रहेगा। फॉर एग्जांपल ऐसा स्टार्ट और एंड स्टार्ट और एंड बहुत सारा स्टार्ट एंड दिया रहेगा। फॉर एग्जांपल अगर आपको ऐसा कुछ दिया रहता है वन और फोर अ टू और फाइव। हां एक बात और स्टार्ट हमेशा एंड से छोटा रहेगा। ये तो जाहिर सी बात है कि कपड़े का स्टार्टिंग रेंज है 10,000 और एंडिंग रेंज है 20 लाख।",
+      "source": "caption",
+      "english_text": "Understand the core idea today. If you understand the core idea then you will not have any problem. So see what we said first of all that you will be given ranges. Meaning, what will be given to you? Ranges will be given. For example, start and end, start and end, many start and ends will be given. For example, if you are given something like one and four and two and five. Yes, one more thing, the start will always be smaller than the end. It is obvious that the starting range of clothes is Rs 10,000 and the ending range is Rs 20 lakh."
+    },
+    {
+      "start_time": 248.879,
+      "end_time": 281.67,
+      "text": "तो 10,000 ऑब्वियसली 20 लाख से छोटा है। ऐसा तो और कोई नहीं बोलता है ना कि स्टार्टिंग प्राइस 1000 बताओ और एंडिंग रेंज 200 बताओ। ये तो बेकार बात है। हमेशा स्टार्ट एंड से या तो छोटा रहेगा या तो उसके इक्वल रहेगा और बहुत सारे ऐसे-से करके रेंजज़ दिए रहेंगे। ऐसा करके अ रेंजेस आपको दे सकता है। ऐसा करके मान लीजिए ये आपके रेंजेस हैं। ऐसा आपको दिया रहेगा। ठीक है? तो सबसे पहली बात सबसे पहली बात जो हमेशा याद रखिए किसी भी ऐसे क्वेश्चन में किसी भी ऐसे क्वेश्चन मर्ज इंटरवल वाले क्वेश्चन में आपको ये स्टार्ट से सॉर्ट करना है। स्टार्ट से आपको ये सॉर्ट",
+      "source": "caption",
+      "english_text": "So 10,000 is obviously smaller than 20 lakhs. No one else says that the starting price is Rs 1000 and the ending range is Rs 200. This is useless talk. It will always be either smaller than the start end or equal to it and ranges will be given in many similar ways. By doing this a ranges can be given to you. By doing this, assume that these are your ranges. This will be given to you. Ok? So first of all, always remember that in any such question, in any such question with merge interval, you have to sort it from the beginning. From start you get this sort"
+    },
+    {
+      "start_time": 281.68,
+      "end_time": 316.469,
+      "text": "कर लेना है। सॉर्ट कर लेना है। क्यों हम बोल रहे हैं स्टार्ट से सॉर्ट कर लेना है क्योंकि जो इसका सबसे बेसिक क्वेश्चन होता है ना वो होता है मर्ज। पैटर्न का नाम क्या है? मर्ज इंटरवल्स। मर्ज इंटरवल्स मतलब बहुत सारे इंटरवल को मर्ज करना है। मर्ज करने का क्या मतलब होता है? हम बताते हैं। हम आपको बताते हैं कि मर्ज इंटरवल का मतलब क्या होता है और क्यों हम बोल रहे हैं कि हमेशा आपको स्टार्ट से उसको सॉर्ट करना पड़ेगा। क्यों? देखिए फॉर एग्जांपल आप एक कपड़े की दुकान चलाते हैं। पूरा देखिएगा वीडियो बीच में मत भागिएगा। आप एक क्या चलाते हैं? दुकान चलाते हैं, दुकान चलाते हैं। आपके पास बहुत सारे शर्ट्स",
+      "source": "caption",
+      "english_text": "Have to do it. Have to sort it. Why are we saying that we have to sort from the beginning because the most basic question is merge. What is the name of the pattern? Merge Intervals. Merge Intervals means merging multiple intervals. What does it mean to merge? We tell. We tell you what the merge interval means and why we are saying that you will always have to sort it from the beginning. Why? See for example you run a clothes shop. Watch the entire video, don't run away midway. What do you drive one? Run a shop, run a shop. you have a lot of shirts"
+    },
+    {
+      "start_time": 316.479,
+      "end_time": 342.87,
+      "text": "हैं। आपके बहुत सारे शर्ट बेचते हैं। आपके पास एक तरीके का शर्ट है जो कि स्टार्ट होता है ₹10 से और ₹15 तक जाता है। इसके कुछ आपके पास शर्ट है। एक आपके पास शर्ट है जो कि ₹12 से स्टार्ट होता है और ₹16 तक जाता है। यह भी एक तरीके का शर्ट हो सकता है। अच्छा। एक आपके पास शर्ट है जो कि ₹20 से स्टार्ट हो के ₹30 तक जाता है। तीन तरीके का आपके पास शर्ट है। यह आपकी कैटेगरी वन हो गई। ये कैटेगरी टू हो गई।",
+      "source": "caption",
+      "english_text": "Are. You sell a lot of shirts. You have a variety of shirts which start at ₹10 and go up to ₹15. You have some shirts. One you have shirts which starts at ₹12 and goes up to ₹16. This can also be a type of shirt. Good. You have a shirt which starts from ₹20 and goes up to ₹30. There are three ways you can have a shirt. This is your category one. This has become category two."
+    },
+    {
+      "start_time": 342.88,
+      "end_time": 375.83,
+      "text": "कैटेगरी थ्री हो गया। अच्छा। तो देखिए आपको इसमें कुछ अजीब चीज दिख रही होगी। क्या अजीब चीज दिख रही होगी? मान लीजिए कैटेगरी वन के जो शर्ट है वो क्या बोलता है शर्ट कि मेरी स्टार्ट हो सकता है 10 से और हम 15 तक जा सकते हैं। तो ये शर्ट किन-किन रुपयों में ये शर्ट आ सकता है? ये शर्ट आ सकता है देखिए 10, 11, 12, 13, 14 और 15। इस यही इसी रेंज में आएगा ना ये वाला कैटेगरी वन का शर्ट। कैटेगरी टू का शर्ट किसमें आएगा? कैटेगरी टू का शर्ट बोलता है कि हम स्टार्ट होते हैं 12 से और ₹16 तक हम बेचते हैं। तो ये स्टार्ट होगा 12 से। ₹13 का भी हो सकता है, 14 का",
+      "source": "caption",
+      "english_text": "Category three done. Good. So see, you might be seeing something strange in it. What strange thing might be visible? Suppose the shirt which is of category one, what does the shirt say that I can start from 10 and we can go till 15. So for what price can this shirt be bought? This shirt can come in numbers 10, 11, 12, 13, 14 and 15. This Category One shirt will fall in this range. Who will wear a Category 2 shirt? The category two shirt says that we start at Rs 12 and sell till Rs 16. So it will start from 12. Can be of ₹13, ₹14"
+    },
+    {
+      "start_time": 375.84,
+      "end_time": 407.59,
+      "text": "भी, 15 का भी और 16 का भी। कैटेगरी थ्री क्या बोलता है? हम स्टार्ट होते हैं 20 से और चलिए एग्जांपल को छोटा करने के लिए इसको 25 कर लीजिए। और हम ₹25 तक जाते हैं। तो ये क्या हो सकता है? ₹20, ₹21, ₹22, ₹3, ₹24 और ₹25। यही तीन तरीके की आपकी कैटेगरी बन सकती है आपके शर्ट के दुकान में। लेकिन देखिए जरा गौर से एक चीज नोटिस कीजिए। 12 13 14 15 और 12 13 14 15 ये कॉमन है। ये क्या है? कॉमन है। ये हरा वाला एरिया कॉमन दिख रहा है ना दोनों में।",
+      "source": "caption",
+      "english_text": "Also, at 15 and at 16 too. What does category three say? We start with 20 and let's make it 25 to shorten the example. And we go up to ₹25. So what could this be? ₹20, ₹21, ₹22, ₹3, ₹24 and ₹25. These are the three types of categories that can be created in your shirt shop. But look, notice one thing carefully. 12 13 14 15 and 12 13 14 15 are common. What is this? Is common. This green area appears to be common in both."
+    },
+    {
+      "start_time": 407.6,
+      "end_time": 440.39,
+      "text": "मतलब तो आप जब दुकान चलाएंगे फॉर एग्जांपल आपके पास एक नया शर्ट आया। आपके पास एक नया शर्ट फैक्ट्री से आया और आपको सोचना है कि हम इसको किस कैटेगरी में डालें। किस शेलफ में अरेंज करें ताकि कस्टमर को दिखाने में आसान हो। आपके पास मान लीजिए एक अगर शर्ट आता है जो कि ₹13 का है जो कि ₹13 का है। ₹13 का है। आप उसको किस कैटेगरी किस शेलफ में डालेंगे? आपके पास शेलफ होगा ना भाई आप आप बड़ा सा दुकान बनाएंगे तो आपके पास तीन तरीके का शेलफ होगा। आप बोलेंगे कि सर कोई अगर कस्टमर आएगा तो उसको बोलेंगे कि सर कैटेगरी वन वाली शर्ट 10 से 15 वाली उधर है, टू वाली उधर है, थ्री वाली उधर है। तीन शेलफ है",
+      "source": "caption",
+      "english_text": "Meaning, when you run the shop, for example, you get a new shirt. You have a new shirt from the factory and you have to think in which category we should put it. Arrange in which shelf so that it is easy to show to the customer. Suppose you get a shirt which is priced at ₹ 13, which is priced at ₹ 13. It is worth ₹13. In which category and which shelf will you put it? You will have shelves, right? Brother, if you build a big shop, you will have three types of shelves. You will say, Sir, if a customer comes, then you will tell him that Sir, the category one shirt is 10 to 15 over there, the two one is over there, the three one is over there. has three shelves"
+    },
+    {
+      "start_time": 440.4,
+      "end_time": 466.79,
+      "text": "आपके पास। लेकिन अगर कोई ₹13 का शर्ट आया तो उसको आप किस शेलफ में डालना पसंद करेंगे? क्योंकि 13 तो कैटेगरी वन की भी शर्ट हो सकती है ₹13 क्योंकि कैटेगरी वन वही बोलता है। कैटेगरी टू की शर्ट भी ₹13 की हो सकती है। कैटेगरी थ्री की नहीं हो सकती। कैटेगरी थ्री बोलता है कि हम स्टार्ट होते हैं ₹20 से और ₹25 तक एंड हो जाते हैं। तो ये थोड़ा प्रीमियम क्वालिटी है। लेकिन ₹13 वाला शर्ट दोनों कैटेगरी में जा सकता है। दोनों कैटेगरी में जा सकता है। तो ये तो प्रॉब्लम है ना भाई।",
+      "source": "caption",
+      "english_text": "Near you. But if a shirt costing ₹13 came, which shelf would you like to put it in? Because 13 can be a Category One shirt also ₹13 because that is what Category One says. Category two shirts can also be priced at ₹13. Cannot be of category three. Category three says that we start at ₹20 and end at ₹25. So this is a little premium quality. But a ₹13 shirt can go into both categories. Can go in both categories. So this is the problem, isn't it brother?"
+    },
+    {
+      "start_time": 466.8,
+      "end_time": 501.029,
+      "text": "शर्ट एक ही आई है। किस कैटेगरी में रखेंगे? दोनों में नहीं रख सकते। एक ही शर्ट है। उसको एक कैटेगरी में रखना है। कहां रखेंगे? तो यहां आप फंस गए। यहां आप फंस गए। आप क्यों फंस गए? आप एक बुद्धिमान दुकानदार होते हुए क्यों फंस गए? क्योंकि आपने जो रेंजेजिस तय किए हैं ना, वो रेंजेज तय किए हैं वो ओवरलैपिंग है। क्या है? ओवरलैप, ओवरलैप हो रहा है उसमें। ओवरलैप कैसे हो रहा है? आप बोल रहे हैं मेरा एक कैटेगरी है जो कि 10 से ₹15 की है। तो इसी को रखते हैं ना। फिर आप अगला कैटेगरी जब बनाते हैं, तो अगला कैटेगरी आपको ₹16 से बनाना चाहिए था। अगला कैटेगरी आपको बोलना चाहिए था कि मेरा 16 से 20 वाला अलग कैटेगरी है। 20 तक बना लिए तो",
+      "source": "caption",
+      "english_text": "Only one shirt has arrived. In which category will you keep it? Can't keep it in both. There is only one shirt. It has to be kept in one category. Where will you keep it? So here you are stuck. Here you are stuck. Why did you get stuck? Why did you get stuck being a wise shopper? Because the ranges you have fixed are overlapping. What is? Overlap, overlap is happening in it. How is the overlap happening? You are saying that I have a category which ranges from ₹10 to ₹15. So let's keep this one. Then when you create the next category, you should have created the next category with ₹16. Next category you should have said that mine is a separate category from 16 to 20. if you make it till 20"
+    },
+    {
+      "start_time": 501.039,
+      "end_time": 526.23,
+      "text": "उससे अगला कैटेगरी आपको बोलना चाहिए था कि 21 से 30 तक अलग कैटेगरी है। लेकिन आप बोल रहे हैं कि 10 से 15 तक ये कैटेगरी है और उसी के बीच से आप दूसरा कैटेगरी बोल दिया कि 12 से 16 भी अलग कैटेगरी है। अरे ₹12 तो इसी में कवर हो गया ना। 10 से 15 का मतलब क्या होता है? 12 कवर हो गया। 13 कवर हो गया। 14 15 भी कवर हो गया। आपको 16 से बनाना चाहिए था वो कैटेगरी। तो अब आप फंस गए क्योंकि अब आपके पास तीन शेल्फ है। एक शर्ट आया। आपको मालूम ही नहीं चल रहा है कि ₹13 वाला शर्ट जाएगा किधर? किधर डालें?",
+      "source": "caption",
+      "english_text": "Next category, you should have said that there is a separate category from 21 to 30. But you are saying that 10 to 15 are this category and in the middle of that you have said another category that 12 to 16 is also a separate category. Hey, ₹12 is covered in this, isn't it? What does 10 to 15 mean? 12 covered. 13 covered. 14 15 also covered. You should have made that category from 16. So now you're stuck because you now have three shelves. A shirt arrived. You don't know where the ₹13 shirt will go? Where to put it?"
+    },
+    {
+      "start_time": 526.24,
+      "end_time": 557.829,
+      "text": "क्या करें समझ में नहीं आ रहा है। इसीलिए आपको क्या करना पड़ेगा? आपको अपने दुकान में कुछ रिनोवेशन करना पड़ेगा। रनोवेशन क्या करना पड़ेगा? आपको अपने रेंजेस को मर्ज करना पड़ेगा ताकि वो कैसे दिखें? नॉन ओवरलैपिंग दिखे मतलब किसी एक रेंज में जो नंबर है वो उसी रेंज में होना चाहिए। वो नंबर किसी और रेंज का पार्ट नहीं होना चाहिए। इसके लिए आप क्या करेंगे? देखिए इसके लिए आप क्या करेंगे? अब अब आपको तीनों कैटेगरी को मर्ज करना है। इस तरीके से मर्ज करना है कि जो भी कैटेगरीज बने ना वो एकदम अलग-अलग बने। नॉन ओवरलैपिंग।",
+      "source": "caption",
+      "english_text": "Can't understand what to do. So what do you have to do? You will have to do some renovation in your shop. What renovation will have to be done? You'll need to merge your ranges to see what they look like. Appearing non-overlapping means that the numbers in one range should be in the same range. That number should not be part of any other range. What will you do for this? See what you will do for this? Now you have to merge all three categories. The merger has to be done in such a way that whatever categories are created, they are completely different. Non overlapping."
+    },
+    {
+      "start_time": 557.839,
+      "end_time": 591.35,
+      "text": "ओवरलैपिंग नहीं। अभी ये ओवरलैप कर रहे हैं एक दूसरे से। देखिए अभी ये वाला पार्ट और ये वाला पार्ट ओवरलैप कर रहा है। कैटेगरी थ्री ठीक है? तीसरा कैटेगरी ठीक है। वो ओवरलैप नहीं कर रहा है। लेकिन दो कैटेगरी का कुछ-कुछ भाग पूरा भाग नहीं। कुछ-कुछ भाग ओवरलैप कर जा रहा है। आपको ये नहीं चाहिए ना दुकान में? क्योंकि शर्ट कैसे रखेंगे? शर्ट रखने के लिए तो आपके पास डिसीजन मेकिंग होनी चाहिए। पूरा पावर खत्म हो गया है। आइए आपके दुकान को सही करते हैं। आपके दुकान को सही करते हैं। ठीक है? आप एक कैटेगरी क्या बोले थे? आप एक कैटेगरी बोले थे कि 10 से 15 है। मतलब कि 10 है, 11 है, 12 है, 13 है, 14 है और 15",
+      "source": "caption",
+      "english_text": "Not overlapping. Right now they are overlapping each other. See, right now this part and this part are overlapping. Category three ok? The third category is fine. It's not overlapping. But some part of two categories is not the whole part. Some parts are overlapping. You don't want this in the shop, right? Because how will you keep the shirt? To keep the shirt, you must have decision making. All power is gone. Let's fix your shop. Let's fix your shop. Ok? What did you say a category? You said one category is 10 to 15. That means there is 10, 11, 12, 13, 14 and 15."
+    },
+    {
+      "start_time": 591.36,
+      "end_time": 617.829,
+      "text": "है। अगली कैटेगरी आप बना दिए थे गलती से ही बना दिए होंगे, लेकिन आप 12 से 16 बना लिए थे। तो अगली कैटेगरी आप ऐसे ही बना दी, 12, 13, 14, 15, 16। एक जाहिर सी बात है कि किसी भी दो कैटेगरी में अगर ओवरलैप है तो इनको आपको मर्ज करना पड़ेगा। इनको आपको एक कैटेगरी बनाना पड़ेगा। लेकिन एक कैटेगरी बनाएंगे कैसे? वो एक कैटेगरी जो बनाएंगे उसका भी तो आपको एक रेंज तय करना पड़ेगा ना। अगर आप चाह रहे हैं कि हम दो कैटेगरी को मर्ज कर दें। उसका भी तो आपको रेंज तय करना पड़ेगा ना।",
+      "source": "caption",
+      "english_text": "Is. You might have made the next category by mistake, but you had made 12 to 16. So you made the next category like this, 12, 13, 14, 15, 16. One obvious thing is that if there is overlap in any two categories then you will have to merge them. You will have to create a category for these. But how to create a category? Whatever category they create, you will have to decide a range for it. If you want us to merge two categories. You will have to decide the range for that also."
+    },
+    {
+      "start_time": 617.839,
+      "end_time": 650.31,
+      "text": "कस्टमर पूछेगा क्या रेंज है? तो उसके लिए भी आपको एक स्टार्ट तो चाहिए। एक एंड भी चाहिए। तो स्टार्ट और एंड होगा क्या? स्टार्ट और एंड होगा क्या? देखिए सबको मिला लीजिए। दोनों कैटेगरी के सारे प्राइस पॉइंट्स को मिला लीजिए। लॉजिकली भी सोचा जाए ना, क्या मिनिमम प्राइस है इसकी? मिनिमम प्राइस क्या है? दोनों कैटेगरीज़ को मिलाके मिनिमम प्राइस आप ऑब्वियस्ली देख सकते हैं कि 10 है। क्या है? 10 है। ठीक है? मैक्सिमम प्राइस क्या है? मैक्सिमम प्राइस क्या है? मैक्सिमम प्राइस आप ऑब्वियस्ली देख सकते हैं कि 16 है। दोनों कैटेगरी मिला के मैक्सिमम 16 है। तो,",
+      "source": "caption",
+      "english_text": "The customer will ask what is the range? So for that also you need a start. An end is also needed. So what will be the start and end? Will there be a start and end? Look, get everyone together. Combine all the price points of both categories. Let us think logically, is there a minimum price for this? What is the minimum price? You can obviously see that the minimum price by combining both the categories is Rs.10. What is? Is 10. Ok? What is the maximum price? What is the maximum price? The maximum price you can obviously see is 16. The maximum for both categories combined is 16. So,"
+    },
+    {
+      "start_time": 650.32,
+      "end_time": 683.75,
+      "text": "क्यों ना अगर हम एक ही कैटेगरी रखें जिसका रेंज हो 10 से 16, 10 से 16, तो सारे शर्ट्स इसमें कवर हो जाएंगे। अब देख लीजिए कैसे हो जाएंगे। 10 11 12 13 14 15 और 16 ये आपकी एक कैटेगरी बन गई। ये आपकी एक कैटेगरी बन गई। ये आपका एक रेंज बन गया। ये आपका एक रेंज बन गया। या आपका एक इंटरवल बन गया। अब देखिए जो जो इसमें है इस इस दोनों कैटेगरी में मिला के जो भी नंबर थे सारे नंबर यहां कवर हो गए। सारे नंबर कवर हो गए। देखिए 10 11 12 13 14 15",
+      "source": "caption",
+      "english_text": "Why not if we have only one category whose range is 10 to 16, 10 to 16, then all the shirts will be covered in it. Now let's see how it will happen. 10 11 12 13 14 15 and 16 this became your category. This became your category. This becomes your range. This becomes your range. Or you got an interval. Now see whatever is there, all the numbers which were found in both the categories are covered here. All the numbers were covered. See 10 11 12 13 14 15"
+    },
+    {
+      "start_time": 683.76,
+      "end_time": 717.43,
+      "text": "यहां तक तो कवर है ही। 12 13 14 15 ऑलरेडी कवर था। बचा क्या था एक दूसरे कैटेगरी में? 16 16 भी यहां पे कवर हो गया। तो आप कवर कर लिए। अगले कैटेगरी मतलब अगली जो कैटेगरी है जो कि 20 से 30 थी उसको आप एज़ इट इज़ छोड़ दीजिए। वो अपनी एक अलग कैटेगरी है। वो 20 से 30 का रेंज है। अब आपके पास देखिए अब आपके पास एक डिसीजन मेकिंग है कि जब आपके पास 13 वाला शर्ट आएगा आप उसको किस कैटेगरी में डालेंगे? आप उसको इस कैटेगरी में डालेंगे। 20 से 30 वाले में नहीं डालेंगे। अगर आपके पास ₹ 22 वाला शर्ट आता है तो इसको आप इसमें नहीं डालेंगे। इसको आप अगले वाले में 20 से 30 वाले में डालेंगे। तो इसीलिए ये पावर होता है क्या करने का? इंटरवल मर्ज करने का",
+      "source": "caption",
+      "english_text": "Even there is cover. 12 13 14 15 Was already covered. What was left in another category? 16 16 also covered here. So you're covered. Next category means the next category which was 20 to 30, leave it as it is. That is a separate category of its own. That's the 20 to 30 range. Now look, now you have a decision making that when you get a shirt with number 13, in which category will you put it? You will put him in this category. Will not be included in the 20 to 30 category. If you get a shirt worth ₹ 22, you will not put it in this. You will put this in the next 20 to 30 category. So that's why there is this power, what to do? to merge interval"
+    },
+    {
+      "start_time": 717.44,
+      "end_time": 750.79,
+      "text": "ताकि वो नॉन ओवरलैपिंग हो जाए ताकि आपके एज़ अ दुकानदार आपका काम आसान हो जाए। तो ये तो हुई कि कोर आईडिया। तो ये क्वेश्चन आया कहां से? ये पैटर्न आया कहां से और पैटर्न इस प्रॉब्लम को सॉल्व करने के लिए आया था कि अगर आप गलती से ऐसे रेंजिस बना देंगे जो ओवरलैप करेंगे तो आप डिसीजन नहीं ले पाएंगे कि कौन सा आइटम किस रेंज में जाना चाहिए। वो किसी में भी जा सकता है। ठीक है? तो एक बात तो हम लोग को पता चल गई कि मर्ज करते क्यों हैं? अब मर्ज करते कैसे हैं? तो लॉजिकली तो आप लोग को दिख रहा है कि दो कैटेगरी मिलाए सारे वैल्यू में से मिनिमम वैल्यू ले लिए। सारे वैल्यू में से मैक्सिमम वैल्यू ले लिए उसका रेंज बना दिए। फॉर एग्जांपल आपका दो कैटेगरी",
+      "source": "caption",
+      "english_text": "So that it becomes non-overlapping so that your work as a shopkeeper becomes easier. So this is the core idea. So where did this question come from? Where did this pattern come from and the pattern was created to solve the problem that if you accidentally create ranges that overlap then you will not be able to decide which item should go in which range. He can go to any place. Ok? So one thing we came to know is why do they merge? Now how to merge? So logically you can see that by combining the two categories, the minimum value has been taken out of all the values. Take the maximum value from all the values ​​and make its range. For example your two categories"
+    },
+    {
+      "start_time": 750.8,
+      "end_time": 784.389,
+      "text": "ऐसा भी दिख सकता था। मान लीजिए आप जो बताए थे आप एक रेंज बनाते कि 10 से 12 10 से ₹15 अच्छा। अगला रेंज में बनाया था 12 से ₹14। बना सकते हैं? कोई गलती से बना दिया, कोई इंटेंट बना दिया होगा। अब आइए अब इन दोनों को मर्ज करते हैं क्योंकि अभी भी ओवरलैप तो है। अभी भी आपको अगर ₹ 13 का शर्ट आएगा तो आप कहां भेजेंगे? आप उसको यहां भी भेज सकते हैं। आप उसको यहां भी भेज सकते हैं। तो डिसीजन तो नहीं बन पाएगा। चलिए इसको भी सॉल्व करने का कोशिश करते हैं। 10 से 15 मतलब 10 11 12 13 14 15 12 से 14 मतलब 12 13 14 दो। लास्ट बार",
+      "source": "caption",
+      "english_text": "It could also look like this. Suppose, as per your advice, you would have made a range that 10 to 12, 10 to ₹15 would be good. The next one was made in the range of ₹12 to ₹14. Can make? Someone might have made it by mistake, someone might have made an intention. अब आइए अब इन दोनों को मर्ज करते हैं क्योंकि अभी भी ओवरलैप तो है। अभी भी आपको अगर ₹ 13 का शर्ट आएगा तो आप कहां भेजेंगे? आप उसको यहां भी भेज सकते हैं। आप उसको यहां भी भेज सकते हैं। तो डिसीजन तो नहीं बन पाएगा। चलिए इसको भी सॉल्व करने का कोशिश करते हैं। 10 से 15 मतलब 10 11 12 13 14 15 12 से 14 मतलब 12 13 14 दो। last time"
+    },
+    {
+      "start_time": 784.399,
+      "end_time": 817.43,
+      "text": "हम लोग क्या किए थे? मिनिमम प्राइस। मिनिमम प्राइस आपको क्या दिख रहा है? टोटल मिला के ₹10 दिख रहा है। तो ₹10 लिख देंगे। मैक्सिमम प्राइस क्या दिख रहा है? मैक्सिमम प्राइस क्या दिख रहा है? क्या दिख रहा है? मैक्सिमम प्राइस 15 यस 15 14 नहीं 14 नहीं है मैक्सिमम 15 आप ना अब इसका एक रेंज बना सकते हैं जो कि 10 टू 15 होगा। अब देखिए आप क्या किए आप इसको पूरा गायब ही कर दिए। क्यों? क्योंकि ये जो पार्ट था ना ये पार्ट यहां बीच वाला पार्ट था। यहां बीच वाला पार्ट था तो अननेसेसरी पार्ट था। मतलब 10 से 15 ऑलरेडी है एक रेंज। तो क्यों 12 से 14 और 12 से 13 और 11 से वो सब क्यों करना है? बेकार काम है।",
+      "source": "caption",
+      "english_text": "What had we done? Minimum price. What is the minimum price you see? The total appears to be ₹10. So we will write ₹10. What is the maximum price visible? What is the maximum price visible? What is visible? Maximum Price 15 Yes 15 14 No 14 No Maximum 15 No Now you can make a range of this which will be 10 to 15. Now look what you did, you made it disappear completely. Why? Because this part was the middle part here. Here there was the middle part and there was the unnecessary part. Meaning 10 to 15 is already a range. So why do all that from 12 to 14 and 12 to 13 and 11? It is useless work."
+    },
+    {
+      "start_time": 817.44,
+      "end_time": 851.43,
+      "text": "तो वो सब हम नहीं करेंगे। हम एक नया रेंज बनाएंगे जिसमें 10 से 15 होगा। मतलब कि उसमें 10 11 12 13 14 और ₹15 के शर्ट आ जाएंगे। अब आपका जितने भी वैल्यू इस सर्कल में थे वो इसमें आ चुके हैं। आपका एक कैटेगरी ये आपका कैटेगरी बन के तैयार हो चुका है। अब जब ₹13 की शर्ट आएगी तो आप उसको यहां डाल सकते हैं बिना किसी झालमेल के। अच्छा। तो एक बड़ी इंटरेस्टिंग बात हम लोग देख रहे हैं कि मैक्सिमम और मिनिमम ऐसा करके हम लोग मर्ज करते जा रहे हैं। अच्छा ठीक है। मान लीजिए अब इसको। अब अब आ जाइए। अब आ जाइए थोड़ा कोड में। अब तो बहुत दुकानदारी के एग्जांपल सीख लिए। अब आ जाइए थोड़ा कि प्रोग्रामिंग में कैसे करेंगे?",
+      "source": "caption",
+      "english_text": "So we will not do all that. We will create a new range that will be 10 to 15. Meaning that it will contain shirts worth ₹ 10, 11, 12, 13, 14 and ₹ 15. Now all your values ​​which were in this circle have come in it. One of your categories, this is ready as your category. Now when a shirt worth ₹13 arrives, you can put it here without any hassle. Good. So one very interesting thing we are seeing is that by doing this we are merging maximum and minimum. Ok, good. Now consider this. Now come now. Now let's get into some code. Now I have learned many examples of shoplifting. Now come, how will we do it in programming?"
+    },
+    {
+      "start_time": 851.44,
+      "end_time": 883.99,
+      "text": "फॉर एग्जांपल आपको दो तरीके के रेंजज़ मर्ज करना है। मान लीजिए ये 10 है और ये 15 है। अगला जो आपको रेंज मर्ज करना है वो है 12 से और 16 तक। ठीक है? तो आप क्या करेंगे? तो आप क्या करेंगे कि सबसे पहले तो सबसे पहले तो मालूम कैसे चलेगा कि मर्ज करना है कि नहीं करना है? दो आपके पास दो तरीके की प्रॉब्लम है। एक तो मालूम कैसे चलेगा कि मर्ज करना है कि नहीं? मर्ज क्यों करना है? मर्ज इसीलिए करना है क्योंकि",
+      "source": "caption",
+      "english_text": "For example, you have to merge two types of ranges. Let's say this is 10 and this is 15. Next you need to merge the ranges from 12 to 16. Ok? So what will you do? So what will you do, first of all, how will you know whether to merge or not? Two, you have two types of problems. Firstly, how will one know whether to merge or not? Why merge? Merger has to be done because"
+    },
+    {
+      "start_time": 884.0,
+      "end_time": 916.87,
+      "text": "ओवरलैपिंग है। हम लोग जब 10 से 15 होता था और अगर अगला रेंज आपका 20 से 30 होता तो इसको मर्ज क्यों करना है? इसको मर्ज करेंगे तो आपका एक कैटेगरी बेकार हो जाएगा ना। ये तो अलग-अलग कैटेगरी है ही। ये तो 10 से 15 की अलग है, 20 से 30 अलग है। इसको आप लॉजिकली देखेंगे तो आपको लगेगा कि नहीं इसको तो मर्ज नहीं करना है। ऐसा नहीं ना करना है इसको मर्ज तो मत करिए। लेकिन जब आप ये ऊपर वाला कैटेगरी देख रहे हैं तो आपको लॉजिकली देखने में लगता है कि हां यार 10 से 15 ऑलरेडी है और 12 से 16 भी है तो थोड़ा ओवरलैपिंग हो जाएगा। ₹13 का शर्ट कहां डालेंगे? तो मर्ज कर देते हैं। तो सबसे पहले तो मालूम कैसे कि मर्ज कहां करना है? वो बात हो गई। फिर आएगा कि मर्ज",
+      "source": "caption",
+      "english_text": "There is overlapping. When ours was 10 to 15 and if your next range was 20 to 30, then why merge it? If you merge this, one of your categories will become useless. These are different categories after all. This is 10 to 15 different, 20 to 30 different. If you look at it logically, you will feel that no, it does not have to be merged. If you don't want to do this then don't merge it. But when you are looking at the above categories, then logically you feel that yes, 10 to 15 are already there and 12 to 16 are also there, so there will be a little overlapping. Where will you put a shirt worth ₹13? So let's merge. So first of all how do we know where to merge? That thing happened. Will the merger come again?"
+    },
+    {
+      "start_time": 916.88,
+      "end_time": 948.79,
+      "text": "कैसे करना है? मर्ज कैसे करना है? कैसे करना है? कैसे करना है? दो प्रॉब्लम है कि मर्ज करना है कि नहीं और करना है तो कैसे करना है। अच्छा तो चलिए पहले इस प्रॉब्लम को टैकल कर देते हैं कि मालूम कैसे चलेगा कि दो इंटरवल को मर्ज करना है कि नहीं जरूरत है कि नहीं। अच्छा देखिए इसीलिए इसीलिए हम बोले थे कि वो जो सॉर्टिंग वाला बात है उसको याद रखिएगा। उसको भूलने मत दीजिएगा कि आपको स्टार्ट टाइम से स्टार्ट जो भी आपका स्टार्ट है स्टार्ट प्राइस हो सकता है टाइम हो सकता है जो भी है आपको स्टार्ट से सॉर्ट रखना है लेकिन हम आपके लिए बहुत सारे रेंजज़ लिख",
+      "source": "caption",
+      "english_text": "How to do? How to merge? How to do? How to do? There are two problems whether to merge or not and if so how to do it. Well, let us first tackle this problem of how to know whether merging two intervals is necessary or not. Well see, that's why we said that you should remember the sorting thing. Don't let him forget that you have to start from start time, whatever is your start, it can be start price, it can be time, it can be whatever, you have to keep it sorted from start but we have written many ranges for you."
+    },
+    {
+      "start_time": 948.8,
+      "end_time": 982.87,
+      "text": "देते हैं वन से थ्री अभी मान के चलिए कि ये स्टार्ट से सॉर्टेड है स्टार्ट से सॉर्टेड है तो वन से थ्री लिख दीजिए और एक और रेंज हम लोग बना लेते हैं जो कि होगा टू से फाइव एक और रेंज हम लोग बना लेते हैं जो कि होगा थ्री से थ्री से सिक्स एक और रेंज हम लोग बनाते हैं जो कि फाइव से सॉरी फाइव नहीं करिए इसको हम लोग बना लीजिए जो कि होगा 9 से 12 और एक और रेंज बना लेते हैं जो कि होगा अपना 11 से 15 ठीक है आप एक दुकान चलाते हैं आपको इतने सारे रेंजेस आपको कोई",
+      "source": "caption",
+      "english_text": "Let's give one to three. Now let's assume that it is sorted from the start. If it is sorted from the start then write one to three and we make another range which will be two to five. We make another range which will be three to three. Six. We make another range which will be five to six. Sorry, don't write five. Let us make this which will be 9 to 12 and we make another range which will be ours. 11 to 15 Okay, you run a shop, you have so many ranges, you don't have any"
+    },
+    {
+      "start_time": 982.88,
+      "end_time": 1016.31,
+      "text": "इंटर्न करके दे दिया है ठीक है इतने सारे रेंजज़ आपके पास है अब आपको अपनी दुकान सही करनी है। मर्ज इंटरवल का पूरा आईडिया ही है कि आपको अपनी दुकान सही करनी है। आपको अपनी दुकान सही करनी है क्योंकि अभी प्रॉब्लम है। अभी आपको ऊपर से नहीं देखने में पता चल रहा है। हमें हम एक बहुत सिंपल सा एग्जांपल रुपीस अ टू का रुपी थ्री का रूपी थ्री का शर्ट आएगा तो किस किस कैटेगरी में डालोगे देखिए थ्री का शर्ट ये बोलता है हम वन से थ्री हैं आप इसको यहां डाल सकते हैं फर्स्ट वाले शेलफ पे ये बोलता है हम टू से फाइव है मतलब 2 3 4 5 आप यहां भी डाल सकते हैं ये बोलता है 3 4",
+      "source": "caption",
+      "english_text": "You have done the internship, okay, you have so many ranges, now you have to set up your shop. The whole idea of ​​merge interval is to get your shop right. You have to fix your shop because there is a problem right now. Right now you can't tell by looking at it from above. Let us give a very simple example: Rupees one to two, Rupees three to rupees three, then see in which category you will put the shirt. The shirt of three says, We are one to three, you can put it here. On the first shelf, it says, We are two to five, meaning 2 3 4 5. You can also put it here, it says 3 4."
+    },
+    {
+      "start_time": 1016.32,
+      "end_time": 1051.27,
+      "text": "5 6 आप यहां भी डाल सकते हैं तो अभी एक शर्ट के लिए आपके पास तीन चॉइस है ये नहीं होना चाहिए कभी भी आपको देखने में ऐसा लगे ना कि एक शर्ट के लिए एक ही चॉइस है तो बिल्कुल सही है अगर कोई भी शर्ट के की अलग-अलग चॉइससेस है तो कुछ ना कुछ गड़बड़ तो आपकी दुकान में है। वो क्या गड़बड़ है वो देखेंगे लेकिन गड़बड़ तो है। गड़बड़ तो आपकी दुकान बेकार है। अभी अभी आपकी दुकान सही नहीं लग रही है। कस्टमर के लिए बहुत कंफ्यूजिंग है। चलिए तो आइए एक-एक करके देखते हैं। रेंजेस और मर्ज करते हैं। आपका पहला रेंज क्या है? आपका पहला रेंज बोलता है कि हम वन, टू और थ्री है। आपका अगला रेंज, आपका अगला रेंज। देखिए पहला रेंज तो ठीक है। पहला रेंज तो वो सबसे पहला रेंज",
+      "source": "caption",
+      "english_text": "5. 6 You can also put it here, so now you have three choices for one shirt, this should not happen if you ever feel that there is only one choice for one shirt, then it is absolutely right. If there are different choices for any shirt, then there is something wrong in your shop. They will see what is wrong but it is definitely wrong. If there is a problem then your shop is useless. Your shop is not looking good right now. Very confusing for the customer. Come on, let's see one by one. Ranges and merge. What is your first range? Your first range says we are one, two and three. Your next range, your next range. Look, the first range is fine. The first range is the first range"
+    },
+    {
+      "start_time": 1051.28,
+      "end_time": 1080.549,
+      "text": "है तो उसको चलिए छोड़ दीजिए। अगले रेंज पे आइए। ये बोलता है टू से फाइव है। टू से फाइव है। मतलब टू थ्री फोर फाइव। ओवरलैपिंग आपको दिख रहा होगा। ओवरलैपिंग किसका दिख रहा है? इसका दिख रहा है। टू और थ्री का। ओवरलैपिंग दिख रहा है। तो अगर हम सिर्फ इन दोनों को मर्ज करते सिर्फ इन दोनों को मर्ज करते तो क्या बन जाता? मिनिमम वैल्यू क्या है इसकी? वन। वन। मैक्सिमम प्राइस क्या है? फाइव। तो अगर हम सिर्फ इन दोनों को मर्ज करते तो मेरा आंसर आता 1 फाइव। वन फाइव आया। ओके? ठीक है?",
+      "source": "caption",
+      "english_text": "If so, then leave it. Come to the next range. It says two is five. Two is five. Meaning two three four five. You might be seeing overlapping. Whose overlapping is visible? Its visible. Of two and three. Overlapping is visible. So what would have happened if we had just merged these two? What is its minimum value? Forest. Forest. What is the maximum price? Five. So if we had just merged these two, my answer would have been 1 five. One five came. Ok? Ok?"
+    },
+    {
+      "start_time": 1080.559,
+      "end_time": 1114.71,
+      "text": "मान लीजिए कि आप इन दोनों को मर्ज कर दिए वन फाइव। अभी हम कुछ एल्गोरिदम नहीं बता रहे हैं, कुछ नहीं बता रहे हैं, लेकिन मान लीजिए कर दिए। चलिए, 1 फाइव। अगला क्या है? थ्री और सिक्स। आइए इसको देखते हैं। इसमें अब इसमें है कि नहीं? अब दो कैटेगरी को मिला के कैटेगरी बना दिए लेकिन और भी दुकान में कैटेगरी है ना? सबको देखना पड़ेगा। आइए। 1 2 3 4 5 ये ये प्राइस रेंज बोलता है। ये क्या बोलता है? 3 4 5 6 ये बोलता है। इन दोनों को मर्ज करिए। मिनिमम वैल्यू क्या है? वन। मैक्सिमम प्राइस आपको क्या दिख रहा है? 6 तो अगर आप इन दोनों को मर्ज करते हैं मतलब पहले जो हो चुका था और",
+      "source": "caption",
+      "english_text": "Suppose you merge these two and make one five. Right now we are not telling any algorithm, we are not telling anything, but suppose we have done it. Come on, 1 five. what is next? Three and six. Let's look at this. Is it in it now or not? Now two categories have been merged to form one category, but there are other categories in the shop too, right? Everyone will have to see. Come. 1 2 3 4 5 This tells the price range. What does this say? 3 4 5 6 He speaks. Merge these two. What is the minimum value? Forest. What is the maximum price you see? 6 So if you merge these two, meaning what happened before and"
+    },
+    {
+      "start_time": 1114.72,
+      "end_time": 1149.029,
+      "text": "नए वाले को मर्ज करते हैं तो आपको 1 6 मिल गया 1 6 मिल गया 1 6 मिल गया अच्छा अगला क्या है 9 12 9 12 9 और 12 देखने से आपको पता चल जाएगा कि इन दोनों में कोई ओवरलैपिंग नहीं है। मतलब ये वन टू सिक्स है और वो 9 टू 12 है। मतलब सिक्स से ज्यादा बड़ा है। वो अगला प्राइस रेंज में आ गया है। इन दोनों को मर्ज करने की जरूरत नहीं है। अब इन दोनों को मर्ज करने की जरूरत अगर नहीं है तो तो आपके पास और भी रेंजज़ है। आपके पास एक और रेंज बचा हुआ है ना 11 टू 15 11 टू 15 11 टू 15 देखिए वन टू सिक्स अगर इससे करने की जरूरत नहीं है तो वन टू सिक्स इससे भी करने का जरूरत",
+      "source": "caption",
+      "english_text": "If you merge the new one you get 1 6 Got 1 6 Got 1 6 Okay what's next 9 12 9 12 Looking at 9 and 12 you will know that there is no overlapping between these two. Meaning this is one to six and that is 9 to 12. Meaning greater than six. He has come in the next price range. There is no need to merge these two. Now if there is no need to merge these two, then you have more ranges. You have one more range left, right? 11 to 15, 11 to 15, 11 to 15. Look, one to six. If there is no need to do this, then one to six needs to be done to this also."
+    },
+    {
+      "start_time": 1149.039,
+      "end_time": 1177.75,
+      "text": "नहीं है। वो आपको देख के पता चल रहा है। अभी आपको नहीं अगर कोड नहीं समझ में कोई दिक्कत नहीं। अभी हम कोड बता ही नहीं रहे हैं। अभी आपको बस हम बता रहे हैं कि लॉजिकली सोचा कैसे जाता है। इससे आपको नहीं पता चल रहा है। मतलब इससे आपको मर्ज करने की जरूरत नहीं लग रही है। वेरी गुड। इस 16 को इससे भी मर्ज करने की जरूरत नहीं लग रही। अच्छा लेकिन इन दोनों को देखिए 9 12 और 11 15 9 12 11 टू 15 देखिए 9 10 11 12 11 12 13 14 15 देखिए ओवरलैपिंग है।",
+      "source": "caption",
+      "english_text": "It is not. He can tell by looking at you. If you don't understand the code now, no problem. We are not telling the code right now. Right now we are just telling you how to think logically. You are not getting any idea from this. This means you don't feel the need to merge. very good. There is no need to merge this 16 even further. Okay but look at these two 9 12 and 11 15 9 12 11 to 15 see 9 10 11 12 11 12 13 14 15 see there is overlapping."
+    },
+    {
+      "start_time": 1177.76,
+      "end_time": 1209.35,
+      "text": "₹11 की शर्ट आएगी। कहां डालेंगे मालूम नहीं। तो आइए इसको इन दोनों को मर्ज कर दें। मिनिमम वैल्यू क्या आ गई? नाइन। मैक्सिमम वैल्यू क्या आ गई? 15। तो ये दोनों मिलके 9 टू 15 बना। आगे और आपके पास कैटेगरी है नहीं। तो मोटा-मोटा हम लोग को पता क्या चला? अगर आप दुकान सही करते ना तो आपको एक रेंज तो ये वाला मिला 16 जो कि जो कि इन तीनों को मर्ज करने से आया। इन तीनों को मर्ज करेंगे तो आपको 1 सिक्स मिल गया। तो आप एक एक कैटेगरी तो 1 सिक्स की बना सकते हैं। उसके अगले बार इन दोनों को आप जब मर्ज किए तो आपको क्या मिला था नीचे? नाइन और 15। तो आप एक कैटेगरी नाइन",
+      "source": "caption",
+      "english_text": "Shirt will cost ₹11. Don't know where to put it. So let's merge these two. What is the minimum value? Nine. What has been the maximum value? 15. So these two together made 9 to 15. Further and you have category no. So what did we know roughly? If you had done the shop right, you would have got a range, so this one is 16, which is the result of merging these three. If you merge these three, you get 1 six. So you can make each category of 1 six. Next time you merged these two, what did you get below? Nine and 15. So you are a category nine"
+    },
+    {
+      "start_time": 1209.36,
+      "end_time": 1243.669,
+      "text": "और 15 की बना सकते हैं। ये देखिए। ये दो ही कैटेगरी सारे रेंजज़ कवर करेंगे जो पहले उसके लिए आप पांच रेंज बना रहे थे। कोई भी शर्ट आएगा बड़े नॉन डिटरमिनिस्टिक है। कोई ओवरलैपिंग नहीं है और सारे रेंजज़ कवर हो गए हैं। सारे रेंजज़ कवर हो गए हैं। ऐसा कोई प्राइस पॉइंट छूट नहीं गया है जो पहले था और अब नहीं है। देख मिला के देख सकते हैं आप लोग देख लीजिएगा। तो ये तो हो गई कि आप अपनी दुकान ऐसे सही करेंगे। अच्छा। लेकिन अब इसको लिखते कैसे हैं? तो देखिए सबसे पहले पॉइंट पे आते हैं कि पता कैसे चलेगा कि मर्ज करना है कि नहीं? किसी दो इंटरवल को देख के पता कैसे चलेगा कि मर्ज करना है कि नहीं? सबसे सिंपल बात है। दो",
+      "source": "caption",
+      "english_text": "Can make another 15. Look at this. These two categories will cover all the ranges for which earlier you were making five ranges. Which shirt will come is very non-deterministic. There is no overlapping and all ranges are covered. All ranges are covered. There is no price point left that was there before and is no longer there. You guys can see by looking at it. So it is clear that you will fix your shop like this. Good. But how to write this now? So let us come to the first point that how will we know whether to merge or not? How to look at two intervals and know whether to merge them or not? It's the simplest thing. two"
+    },
+    {
+      "start_time": 1243.679,
+      "end_time": 1274.71,
+      "text": "इंटरवल होंगे तो किसी का स्टार्ट वन होगा। एंड वन होगा। ये आपका पहला इंटरवल होगा। अगर दूसरा इंटरवल ऐसा है स्टार्ट टू एंड टू ये आपका इंटरवल है। कैसे पता चलेगा कि मर्ज करना है कि नहीं? बड़ा एक सिंपल अभी तक आप लोग जो दिमाग में सोच रहे थे, दिमाग में लॉजिक लगा रहे थे ना वो बस थोड़ा सा मैथमेटिक्स करेंगे आ जाएगा। अगर ये एंड वन अगर अभी का पहले वाले का एंड वन छोटा हो स्टार्ट टू से। किससे? स्टार्ट टू से। देखिए एक चीज़ हम आप लोगों को बताएं।",
+      "source": "caption",
+      "english_text": "If there is an interval then someone will start first. There will be an end one. This will be your first interval. If the second interval is like this start to end to this is your interval. How to know whether to merge or not? It is very simple, till now all you people were thinking in your mind, applying logic in your mind, just do a little mathematics and it will come. If this and one if the current one and the first one is small then start from. With whom? From start to. Look, let us tell you one thing."
+    },
+    {
+      "start_time": 1274.72,
+      "end_time": 1307.029,
+      "text": "स्टार्ट तो हमेशा एंड से छोटा रहेगा। ये स्टार्ट वन तो हमेशा एंड वन से छोटा ही रहेगा। स्टार्ट टू एंड टू से भी छोटा रहेगा। अगर एंड वन इज़ लेस दैन स्टार्ट टू। मतलब ये वाला वैल्यू अगर इस वैल्यू से कम है तो दोनों ओवरलैप नहीं करेंगे। सिंपल बात है ना भाई। एक मान लीजिए वन टू सिक्स है और एक रेंज है 10 टू 20। अब देखिए दोनों ओवरलैप नहीं कर रहे हैं। दोनों ओवरलैप क्यों नहीं कर रहे हैं? क्योंकि ये जो सिक्स है ना सिक्स इज़ स्मॉलर देन ये इसका स्टार्ट वैल्यू 10। मतलब एक प्राइस रेंज जहां खत्म होता है, अगला उसके बाद शुरू होता है कहीं पे। तो कोई ओवरलैप नहीं है। बिल्कुल सही बात है। लेकिन लेकिन",
+      "source": "caption",
+      "english_text": "The start will always be smaller than the end. This start one will always be smaller than the end one. Start 2 will be smaller than End 2. If end one is less than start two. Meaning, if this value is less than this value then both will not overlap. It's a simple thing, isn't it brother? Let's say one is one to six and the other is a range of 10 to 20. Now see both are not overlapping. Why are the two not overlapping? Because this six is ​​smaller than six, its start value is 10. Meaning, where one price range ends, the next one starts somewhere after that. So there is no overlap. That is absolutely correct. but but"
+    },
+    {
+      "start_time": 1307.039,
+      "end_time": 1340.87,
+      "text": "लेकिन अगर कोई वन सिक्स बोले और अगला प्राइस पॉइंट बना दे फाइव और सेवन। ये ओवरलैप करेंगे। ओवरलैप क्यों करेंगे? क्योंकि ये वन टू सिक्स आता है। ये फाइव सिक्स इसमें ओवरलैप। ये क्यों हुआ? क्योंकि ये जो सिक्स है ना ये ग्रेटर दैन इक्वल टू आपका फाइव हो गया। मतलब ये सिक्स जहां खत्म होता है अगला रेंज उससे थोड़ा पहले से शुरू हो जाता है। तो ये इस तरीके का लगेगा। ये वन टू सिक्स ऐसे जाएगा। वन टू सिक्स और अगला वाला रेंज यहां से यहां तक फाइव टू 7 ये वाला जो पार्ट है ना ये ओवरलैपिंग पार्ट है। क्यों ओवरलैपिंग पार्ट है? क्योंकि आपका जो एंड है पहले वाले का एंड है अगले वाले स्टार्ट से बड़ा",
+      "source": "caption",
+      "english_text": "But if someone says one six and makes the next price point five and seven. These will overlap. Why overlap? Because it comes one to six. These five six overlap in this. Why did this happen? Because this six which is greater than equal to two becomes your five. Meaning, where this six ends, the next range starts a little before that. So it will look like this. This one to six will go like this. One to six and the next one ranges from here to here, five to 7. This part is the overlapping part. Why is there overlapping part? Because the end of your first one is bigger than the start of the next one."
+    },
+    {
+      "start_time": 1340.88,
+      "end_time": 1368.23,
+      "text": "है। तो एक तो आपको पता चल गया कि ओवरलैप दो रेंजज़ ओवरलैप कैसे करेंगे मालूम चल गया? अगर पहले वाले का एंड वन इज़ लेस देन अगले वाले का स्टार्ट तो दोनों क्या है? नॉन ओवरलैप। नॉन नॉन नॉन नॉन ओवरलैप। लेकिन ऐसा नहीं है। एल्स एंड वन एंड वन अगर इक्वल भी है तो ओवरलैप करेगा। एंड वन अगर इक्वल भी है तो ओवरलैप करेगा। देख लीजिए वन और फाइव फाइव और सेवन। तो ये क्या करता है? 1 2 3 4 5 ये क्या करता है?",
+      "source": "caption",
+      "english_text": "Is. So first of all, you have figured out how to overlap two ranges. Have you figured out how to overlap? If the end of the first one is less than the start of the next one then what are both? Non overlap. Non non non non overlap. but it's not like that. Else and one and one if also equal then will overlap. Even if the end one is equal, it will overlap. Look at one and five, five and seven. So what does it do? 1 2 3 4 5 What does it do?"
+    },
+    {
+      "start_time": 1368.24,
+      "end_time": 1399.669,
+      "text": "5 6 7 देख लीजिए। ₹5 की शर्ट आएगी तो कहां घुसाएंगे? नहीं मालूम चलेगा। ऐसा क्यों हुआ? क्योंकि इसका एंड फाइव इज़ ग्रेटर दैन और इक्वल टू अगले वाले का स्टार्ट। तो ये ओवरलैप करता है नहीं तो नहीं करता है। अच्छा। अब यह चीज तो बहुत अच्छी पता चल गई कि कब मर्ज करना है, कब नहीं करना है। कब मर्ज करना है और कब नहीं करना है। कब नहीं करना है। अच्छा लेकिन अब ये तो पता चल गया कि करना है तो नहीं करना है। क्या करना है? उसमें फाइनल रिजल्ट मतलब इन दोनों को जब आप मर्ज करेंगे तो आंसर क्या आएगा?",
+      "source": "caption",
+      "english_text": "5 6 7 Take a look. If you get a shirt worth ₹5, where will you put it? Don't know if it will work. Why did this happen? Because its end five is greater than and equal to the start of the next one. So it overlaps or it doesn't. Good. Now we know very well that when to merge and when not to do so. When to merge and when not to. When not to do it. Okay, but now I know that if I have to do it, I don't have to do it. What is the plan? The final result means when you merge these two, what will be the answer?"
+    },
+    {
+      "start_time": 1399.679,
+      "end_time": 1425.669,
+      "text": "आपके पास ये तो सुविधा नहीं है ना कि आप अब जो अभी बॉक्स बना के देख रहे थे कि मिनिमम क्या है और मैक्सिमम क्या है? नहीं। अच्छा। जो काम हम लोग वो सर्कल बना के देखते थे ना कि मिनिमम क्या है और मैक्सिमम क्या है? उसी काम को थोड़ा मैथ मैथ्स करके सोचिए। एक चीज क्या बोले? जब भी आपको मर्ज का क्वेश्चन आएगा मतलब जब भी आप दुकान खोलेंगे तो आपके लिए अच्छा यही रहेगा कि जो भी स्टार्ट है जो भी स्टार्ट है उसके हिसाब से सॉर्टेड एरर रहे। उसके हिसाब से सॉर्ट कर लीजिए अपने रेंजेस को।",
+      "source": "caption",
+      "english_text": "You do not have this facility, right now, you were just making a box and checking what is the minimum and what is the maximum? No. Good. The work that we used to do in a circle, what is the minimum and what is the maximum? Think about the same task by doing some maths. What can I say one thing? Whenever you get the question of merge, i.e. whenever you open a shop, it would be better for you to have the errors sorted according to whatever start you have. Sort your ranges accordingly."
+    },
+    {
+      "start_time": 1425.679,
+      "end_time": 1459.35,
+      "text": "उसके हिसाब से सॉर्ट कर लीजिए। क्योंकि आम तौर पे लॉजिकली दुकान में होता भी ऐसा है कि सारे रेंजेस अगर सॉर्टेड रहेंगे, तो आपको ज्यादा आसानी रहेगी ना। वन से फाइव पहले होगा फिर उसके बाद स्टार्ट टाइम पे सॉर्टे होंगे। एंड टाइम पे नहीं, स्टार्ट टाइम पे मतलब फॉर एग्जांपल इसका वन से अगर फाइव है और अगले वाले मान लीजिए टू से थ्री भी है। तो ये स्टार्ट टाइम पे सॉर्टेड है। स्टार्ट टाइम पे सॉर्टेड है। एंड टाइम पे नहीं एंड टाइम पे फर्क नहीं पड़ता है। स्टार्ट टाइम पे सॉर्टेड है। तभी आप ये कर पाएंगे ना। ये जो आप जो भी देख रहे थे कि मेरा ये एंड उसके स्टार्ट से बड़ा है कि नहीं। ये आप क्यों देख पाए? आप यहां पे क्यों पता कर पा रहे हैं कि मेरा",
+      "source": "caption",
+      "english_text": "Sort accordingly. Because generally what happens logically in the shop is that if all the ranges are sorted, it will be more convenient for you. One to five will happen first and then there will be a sortie at the start time. Not at the end time, but at the start time, meaning for example it is one to five and the next one, let's say two to three. So this is sorted on start time. Sorted by start time. Not on the end time, but on the end time it does not matter. Sorted by start time. Only then will you be able to do this. Whatever you were seeing, whether this end of mine is bigger than the beginning or not. Why were you able to see this? Why are you able to find out here that my"
+    },
+    {
+      "start_time": 1459.36,
+      "end_time": 1493.35,
+      "text": "ओवरलैपिंग इंटरवल है। क्योंकि ये फाइव आपके टू से बड़ा है। लेकिन अगर सॉर्टेड नहीं होता है। सॉर्टेड नहीं होता। मान लीजिए ये टू थ्री कहीं और होता बीच में बहुत सारे रेंज लिखे होते और 1 फाइव कहीं और होता तो आपको कैसे पता चलता है? आप आप हर समय याद रखिए हर समय किसी दो रेंजेज को ही कंपेयर कर सकते हैं एक बार। दो रेंजेस को ही कंपेयर कर सकते हैं। क्या कर सकते हैं? कंपेयर कर सकते हैं। दो ही करेंगे ना भाई। अरे एक बार में आपको मान लीजिए 100 कैटेगरी भी है। लेकिन आप कैटेगरी बाय कैटेगरी कम करते हैं ना। आप देखते हैं कि अच्छा ये दोनों कैटेगरी मिलके एक कैटेगरी होता है तो इसको मिला दो। अगले कैटेगरी के साथ इसके रिजल्ट को देखो इसको भी मिला दो।",
+      "source": "caption",
+      "english_text": "is the overlapping interval. Because this five is bigger than your two. But if not sorted. Is not sorted. Suppose it would have been two three somewhere else, there would have been many ranges written in between and one five would have been somewhere else, then how would you know? Always remember that you can compare only two ranges once. Only two ranges can be compared. What can be done? Can compare. Will do only two, brother? Hey, let's say there are 100 categories at a time. But you reduce category by category, right? You see that ok these two categories together form one category, so combine it. Look at its results with the next category and combine it also."
+    },
+    {
+      "start_time": 1493.36,
+      "end_time": 1527.59,
+      "text": "अच्छा इसको मत मिलाओ, इसको छोड़ दो। एक समय में आप कितना आदमी देख सकते हैं? एक समय में आप दो रेंजज़ देख सकते हैं। ये देखने के लिए जरूरी है कि ये सॉर्टेड रहे। क्योंकि अगर ये सॉर्टेड नहीं होगा तो आपको मालूम नहीं चलेगा ना टू और थ्री वन और फाइव कैसे पता चलेगा? मतलब आप जब वन फाइव पे जाएंगे तो आपको कैसे याद रहेगा कि कोई टू थ्री भी था। ये आपको तभी याद रहेगा ना जब वन फाइव के तुरंत बाद इसके अगले वाला टू और थ्री लिखा हो। तभी तो आप ये काम कर पाएंगे कि मर्ज करना है कि नहीं। इसीलिए बोलते हैं कि स्टार्ट से सॉर्ट करना पड़ता है। अच्छा। लेकिन अगर स्टार्ट से सॉर्टेड है भी तो पता तो चल जाएगा कि मर्ज करना है कि नहीं। लेकिन क्या करना है? मर्ज करके उसको बनाना क्या है। देखिए मान लीजिए वन",
+      "source": "caption",
+      "english_text": "Well don't mix it, leave it. How many people can you see at one time? You can view two ranges at a time. It is important to see that it remains sorted. Because if it is not sorted then you will not know how to know two and three, one and five? Meaning, when you go to one five, how will you remember that there was also a two three. You will remember this only if immediately after one five, two and three are written. Only then will you be able to decide whether to merge or not. That is why it is said that sorting has to be done from the beginning. Good. But even if it is sorted from the start, you will know whether to merge or not. but what to do? What is the meaning of merging it? look let's say one"
+    },
+    {
+      "start_time": 1527.6,
+      "end_time": 1556.95,
+      "text": "और फाइव हो और एक हो टू और सेवन। ऐसा हो सकता है? बिल्कुल हो सकता है रेंज कोई बना के चला गया होगा। तो ये स्टार्ट टाइम पे सॉर्टेड भी है। स्टार्ट टाइम पे सॉर्टेड भी है। अच्छा। अब इन दोनों को आपको ये तो पता चल गया कि मर्ज करना है। क्यों मर्ज करना है? ये जो एंड है ये इस टू से ग्रेटर दैन इक्वल टू है। ग्रेटर दैन इक्वल टू मतलब मर्ज करना ही पड़ेगा। मतलब वो जहां से खत्म हो रहा है वो बीच में ही कहीं से शुरू हो जा रहा है। तो मर्ज तो करना पड़ेगा। मर्ज करना पड़ेगा। ठीक?",
+      "source": "caption",
+      "english_text": "And there are five and one, there are two and seven. could be possible? It is absolutely possible that someone might have made the range and gone away. So it is also sorted on start time. Start time is also sorted. Good. Now you know that both of them have to merge. Why merge? This is what and is this is greater than equal to. Greater than equal to two means we will have to merge. Meaning, where it is ending, it is starting somewhere in the middle. So we will have to merge. Will have to merge. Correct?"
+    },
+    {
+      "start_time": 1556.96,
+      "end_time": 1590.87,
+      "text": "मिनिमम वैल्यू और मैक्सिमम वैल्यू के बारे में सोच लेते हैं। हम लोग यही कर रहे थे ना कि उसका मिनिमम निकालते थे और मैक्सिमम निकालते थे। एक गौर कीजिए। आपको हम क्या बोले हैं? इसमें देखिए चारों वैल्यू लिख लीजिए। चारों वैल्यू अपने अंडरस्टैंडिंग के लिए लिख लीजिए। एक समय आएगा जब आपको ये सब करने की जरूरत नहीं पड़ेगी। आप ऑटोमेटिकली कर पाएंगे। स्टार्ट वन क्या है? वन। एंड वन क्या है? फाइव। अच्छा। स्टार्ट टू क्या है? स्टार्ट टू है टू। एंड टू क्या है? सेवन। ठीक है? मान लीजिए आपको वैल्यू नहीं पता। आप चारों वैल्यू लिख लीजिए। अच्छा। रेंज की खासियत ही क्या होती है कि हर स्टार्ट अपने एंड से तो छोटा ही रहेगा। अरे स्टार्ट और स्टार्ट का",
+      "source": "caption",
+      "english_text": "मिनिमम वैल्यू और मैक्सिमम वैल्यू के बारे में सोच लेते हैं। हम लोग यही कर रहे थे ना कि उसका मिनिमम निकालते थे और मैक्सिमम निकालते थे। एक गौर कीजिए। आपको हम क्या बोले हैं? इसमें देखिए चारों वैल्यू लिख लीजिए। चारों वैल्यू अपने अंडरस्टैंडिंग के लिए लिख लीजिए। एक समय आएगा जब आपको ये सब करने की जरूरत नहीं पड़ेगी। आप ऑटोमेटिकली कर पाएंगे। स्टार्ट वन क्या है? Forest. एंड वन क्या है? Five. Good. स्टार्ट टू क्या है? स्टार्ट टू है टू। एंड टू क्या है? Seven. Ok? मान लीजिए आपको वैल्यू नहीं पता। आप चारों वैल्यू लिख लीजिए। Good. रेंज की खासियत ही क्या होती है कि हर स्टार्ट अपने एंड से तो छोटा ही रहेगा। अरे स्टार्ट और स्टार्ट का"
+    },
+    {
+      "start_time": 1590.88,
+      "end_time": 1625.75,
+      "text": "मतलब ही है स्टार्ट। एंड का मतलब एंड। तो स्टार्ट तो एंड से बड़ा होगा नहीं। आपको क्या आपको करना क्या है? आपको मिनिमम और मैक्सिमम वैल्यू ढूंढनी है ना। इन पूरे ब्रैकेट पूरे पूरा जो महाभारत है जो 10 से 15 था और अगले में 12 से 14 था। आप क्या किए थे? सर्कल लिखे थे। नंबर लिख के मिनिमम ढूंढे थे। मैक्सिमम ढूंढे थे। नया रेंज वही बन जाता था। तो आपको इन चारों में से मैक्सिमम और मिनिमम ढूंढना है। तो देखिए एक बात तो तय है। एक बात तो तय है। स्टार्ट वन इज़ स्मॉलर दैन एंड वन। ये बात तो पता है। ठीक है? स्टार्ट टू स्टार्ट टू इज़ स्मॉलर दैन एंड टू। अच्छा। इसका एक जाहिर साहिर मतलब है। एंड वन और एंड टू तो",
+      "source": "caption",
+      "english_text": "It means start. End means end. So the beginning will not be bigger than the end. What do you have to do? You have to find the minimum and maximum values, right? These whole brackets are complete which is Mahabharata which was 10 to 15 and the next one was 12 to 14. What did you do? Wrote circles. The minimum was found by writing the numbers. Had searched for maximum. The new range would become the same. So you have to find the maximum and minimum among these four. So look, one thing is certain. One thing is certain. Start one is smaller than end one. This is known. Ok? To begin with is smaller than to end. Good. It has an obvious meaning. And one and end two"
+    },
+    {
+      "start_time": 1625.76,
+      "end_time": 1659.43,
+      "text": "मिनिमम नहीं हो सकता है। एंड वन और एंड टू तो मिनिमम नहीं हो सकता है। क्यों नहीं हो सकता है? क्योंकि चारों में मिनिमम ग्रेन है। एंड वन किसी से बड़ा हो ना हो स्टार्ट वन से तो बड़ा होगा। एंड टू किसी से बड़ा हो ना हो स्टार्ट टू से तो बड़ा होगा। तो ये दोनों तो खार-ख़ खारिज हो गए। अब बात आती है स्टार्ट वन और स्टार्ट टू इन दोनों में से एक मिनिमम हो सकता है। लेकिन हम लोग पूरा गेम ही किस पे कर रहे हैं? स्टार्ट के अनुसार सॉर्ट कर रहे हैं। स्टार्ट से सॉर्ट कर रहे हैं। तभी तो पूरा गेम खेल रहे हैं मैच पैटर्न का। तो इसका क्या मतलब है? अगर सॉर्टेड एरे है तो पक्का पक्का स्टार्ट वन जो है वो लेस दैन इक्वल टू होगा स्टार्ट टू के। होगा ना भाई सॉर्ट",
+      "source": "caption",
+      "english_text": "Cannot be minimum. End one and end two cannot be minimum. Why can't it happen? Because there is minimum grain in all four. Whether the end one is bigger than anyone or not, it will be bigger than the start one. Whether the end is bigger than the other or not, it will be bigger than the start. So both of them were completely rejected. Now it comes to start one and start two, one of these can be minimum. But what are we playing the whole game on? Sorting by start. Sorting from start. That's why we are playing the whole game of match pattern. So what does this mean? If it is a sorted array then it is certain that the start one will be less than equal to the start two. won't it happen brother sort"
+    },
+    {
+      "start_time": 1659.44,
+      "end_time": 1691.669,
+      "text": "सॉर्ट करेंगे तो यही यही तो सॉर्ट कर रहे हैं। स्टार्ट से ही तो सॉर्ट कर रहे हैं। तो आपको क्या पता चला? देखिए स्टार्ट वन एंड वन से तो छोटा है ही। स्टार्ट टू एंड टू से छोटा है। ठीक है? और स्टार्ट वन स्टार्ट टू से भी छोटा है। इसका जाहिर वाहिर मतलब है कि ये एंड टू से भी छोटा होगा। ये देखिए। स्टार्ट टू एंड टू से छोटा है। स्टार्ट वन स्टार्ट टू से भी छोटा है। मतलब ये ऐसा है कि B इज़ लेस &lt; c एंड A इज़ लेस &lt; B ऑब्वियसली A इज़ आल्सो लेस दैन C इन चारों में से मिनिमम क्या हो गया? मिनिमम हमेशा स्टार्ट वन रहेगा।",
+      "source": "caption",
+      "english_text": "If we sort, this is what we are sorting. Sorting since the beginning. So what did you find out? See, Start is smaller than One and One. Start to is shorter than end to. Ok? And Start One is even smaller than Start Two. This obviously means that it will be smaller than End2. Look at this. Start to is shorter than end to. Start One is even smaller than Start Two. It means that B is less < c and A is less < B. Obviously A is also less than C. What is the minimum among these four? Minimum will always be start one."
+    },
+    {
+      "start_time": 1691.679,
+      "end_time": 1725.669,
+      "text": "क्या? स्टार्ट वन। तो मिनिमम तो पता चल गया। मिनिमम पता चल गया। लेकिन लेकिन लेकिन मैक्सिमम क्या है? मैक्सिमम में भी सेम लॉजिक लगाते हैं। मैक्सिमम में भी सेम लॉजिक लगाते हैं। अपना इक्वेशन हम यहां पे लिखते हैं कि हमको एक बात पता है कि स्टार्ट वन इज लेस दैन एंड वन। जो जो आपको मालूम है सब लिख लीजिए। अच्छा स्टार्ट टू स्टार्ट टू इज़ लेस दैन एंड टू। ठीक है? और क्योंकि हम लोग सॉर्ट कर चुके हैं। तो हमको ये भी मालूम है कि स्टार्ट वन इज़ लेस दैन स्टार्ट टू। ठीक है? आपको मैक्सिमम खोजना है। जाहिर सी बात है स्टार्ट वन तो",
+      "source": "caption",
+      "english_text": "what? Start one. So the minimum is known. The minimum was found out. But but but what is the maximum? Same logic is applied in maximum also. Same logic is applied in maximum also. We write our equation here knowing one thing that start one is less than end one. Write down everything you know. Well to begin with is less than to end. Ok? And because we are sorted. So we also know that start one is less than start two. Ok? You have to find the maximum. Obviously start one"
+    },
+    {
+      "start_time": 1725.679,
+      "end_time": 1759.11,
+      "text": "मैक्सिमम नहीं हो सकता क्योंकि ये किसी से छोटा हो ना हो एंड वन से छोटा है। मैक्सिमम तो नहीं है। अच्छा स्टार्ट टू भी मैक्सिमम नहीं हो सकता क्योंकि ये किसी से छोटा हो ना हो एंड टू से छोटा है। लेकिन लेकिन लेकिन लेकिन एंड वन और एंड टू में से बड़ा कौन है? इन दोनों में से कौन बड़ा है? ये आपको मालूम नहीं है। ये देखिए आपको इस तीनों इक्वेशन आपको तीनों इक्वेशन सामने अगर कोई दे दे। एंड वन और एंड टू से बड़ा कौन है? आपको नहीं मालूम है। क्यों नहीं मालूम है? आपको एक चीज मालूम है कि स्टार्ट वन और स्टार्ट टू ये दोनों ऑर्डर में है। तो मान लीजिए स्टार्ट वन वन होता और स्टार्ट टू टू होता। आपको मालूम है एंड",
+      "source": "caption",
+      "english_text": "It cannot be maximum because it may be smaller than any and and is smaller than one. There is no maximum. Well, start two also cannot be maximum because it may be smaller than any other but it is smaller than end two. But but but but which is bigger between and one and and two? Which of these two is bigger? You don't know this. See this, if someone gives you these three equations in front of you. Which is greater than end one and end two? You don't know. Why don't you know? You know one thing that Start One and Start Two are in the same order. So suppose start one was one and start two was two. you know and"
+    },
+    {
+      "start_time": 1759.12,
+      "end_time": 1793.99,
+      "text": "वन वन से बड़ा है। ठीक है? अच्छी बात है। होने दीजिए। एंड टू टू से बड़ा है। लेकिन इन दोनों में से कौन सा बड़ा है? कोई भी बड़ा हो सकता है। मान लीजिए ये 10 होता तो भी ये अच्छा होता। ये 15 होता तो ये इक्वेशन अभी भी है। लेकिन अगर ये 10 होता और अगर ये एट होता तो भी अभी भी सही है। 10 वन से बड़ा है। ये टू से बड़ा है। आपस में दोनों के कौन सा बड़ा है मालूम नहीं। इसीलिए मैक्सिमम वैल्यू एंड वन और एंड टू में से कोई भी हो सकता है। मैक्स ऑफ़ एंड वन एंड टू हो सकता है। यस। क्यों? क्योंकि आपको मालूम नहीं है एंड वन और एंड टू में कोई रिलेशन नहीं है। एंड वन स्टार्ट वन से",
+      "source": "caption",
+      "english_text": "Forest is bigger than forest. Ok? It's a good thing. Let it happen. And two is greater than two. But which of these two is bigger? Anyone can grow up. Even if it was 10, it would have been good. If it was 15, this equation still exists. But if it was 10 and if it was eight it is still correct. 10 is bigger than one. This is bigger than two. It is not known which of the two is greater. That is why the maximum value can be either end one or end two. Max of end can be one and two. Yes. Why? Because you don't know that there is no relation between end one and end two. And one starts from one"
+    },
+    {
+      "start_time": 1794.0,
+      "end_time": 1828.07,
+      "text": "बड़ा है। अच्छी बात है। एंड टू स्टार्ट टू से बड़ा है वेरी गुड है। स्टार्ट वन स्टार्ट टू से छोटा है। वेरी गुड है। लेकिन एंड वन और एंड टू के बीच में कोई रिलेशन नहीं है। तो मैक्सिमम ऑफ़ एंड वन एंड टू आपका मैक्स हो जाएगा। इसीलिए इसीलिए कभी भी अगर आपको ऐसी ऐसी सिचुएशन पढ़े कि एक स्टार्ट वन है। एक एंड वन है। ये एक रेंज हो गया। अगला रेंज क्या हो गया आपका? स्टार्ट वन हो। स्टार्ट टू हो गया और एंड टू हो गया। स्टार्ट के हिसाब से सॉर्टेड है। तो इनका जो कंबाइंड रेंज आएगा वो ये आएगा। सबसे पहले तो मिनिमम वैल्यू हम लोग देख चुके हैं कि स्टार्ट वन को मिनिमम होना ही पड़ेगा। ये तीनों से छोटा है चारों में से। और व्हाटएवर इज़ मैक्सिमम",
+      "source": "caption",
+      "english_text": "Is big. It's a good thing. End to start is bigger than start to is very good. Start One is smaller than Start Two. Very good. But there is no relation between end one and end two. So the maximum of and one and two will be your max. That's why if you ever read such a situation, start one. There is one and one. This became a range. What happened to your next range? Start one. The start is done and the end is done. Sorted by start. So their combined range will come. First of all, we have seen that the start one will have to be minimum. This is the smallest of the three. And whatever is maximum"
+    },
+    {
+      "start_time": 1828.08,
+      "end_time": 1862.789,
+      "text": "बिटवीन एंड वन एंड एंड टू। ये आपका अगला रेंज हो गया। अगला रेंज हो गया। एग्जांपल से समझ लीजिए। अगर मान लीजिए पहला रेंज था वन से फाइव। अगला रेंज होता टू से सेवन। आप लॉजिकली देखिए ये दोनों का कंबाइंड रेंज बनेगा क्या? वन और सेवन। ऐसा क्यों हुआ? स्टार्ट वन को तो यहीं ले आए। व्हाट इज द मैक्सिमम बिटवीन एंड वन एंड एंड टू? सेवन तो सेवन ले आए। लेकिन अगर ऐसा रेंज होता वन से फाइव और थ्री से फोर। अब इसका रेंज क्या होता देखिए वन से फाइव पूरा थ्री फोर सबको कवर कर लेता। इसका कंबाइंड रेंज होता वन से फाइव। देख लीजिए 1 2 3 4",
+      "source": "caption",
+      "english_text": "Between and one and and two. This is your next range. Next range done. Understand from example. Suppose the first range was one to five. The next range would be two to seven. If you look logically, will this become a combined range of both? One and seven. Why did this happen? We brought Start One here. What is the maximum between and one and and two? Seven brought seven. But if the range was one to five and three to four. Now see what its range is, one to five, three four would cover everyone. Its combined range would be one to five. take a look 1 2 3 4"
+    },
+    {
+      "start_time": 1862.799,
+      "end_time": 1895.269,
+      "text": "5 इसमें है। थ्री फोर उसमें है तो थ्री फोर इसी में घुस जाएगा बीच में। अच्छा। ऐसा क्यों हुआ? क्योंकि स्टार्ट वन तो मिनिमम है। ये तो बहुत अच्छी बात है। लेकिन एंड वन और एंड टू में से मैक्सिमम कौन है? एंड वन मैक्सिमम है। इसीलिए वन फाइव हो गया। तो देखिए दोनों तरीके के आंसर हो सकते हैं। एंड वन एंड टू में आप नहीं बता पाएंगे कि कौन सा मैक्सिमम है। इसीलिए आपको ये काम करना पड़ता है। ठीक है। इतना कहानी समझ गए? इतना कहानी समझ गए? चलिए अब क्वेश्चन पे आते हैं। अब क्वेश्चन पे आते हैं तो अब आपको पूरा समझ में आएगा। सिर्फ क्वेश्चन याद नहीं करना है कि अच्छा इसमें ऐसा करना है वैसा नहीं है। वैसा वैसा कुछ नहीं करना है। चलिए। तो जो सबसे पहला क्वेश्चन है सबसे पहला क्वेश्चन यही आपको एक दुकान दी हुई है।",
+      "source": "caption",
+      "english_text": "5 is in it. If Three Four is in it then Three Four will enter into it in the middle. Good. Why did this happen? Because start one is minimum. This is a very good thing. But which is maximum between end one and end two? And one is maximum. That's why one became five. So see, there can be both types of answers. In And One and Two you will not be able to tell which is the maximum. That's why you have to do this work. Ok. Have you understood this much of the story? Have you understood this much of the story? Let us now come to the question. Now coming to the question, you will understand completely. Don't just remember the question that it is okay to do this, not like that. Don't do anything like that. Let go. So the first question is that you have been given a shop."
+    },
+    {
+      "start_time": 1895.279,
+      "end_time": 1929.11,
+      "text": "आपको दुकान सही करना है। ठीक है? आपको एक दुकान ऐसे दी हुई है। अथ ये आपकी पहली शर्ट की रेंज है। अच्छा 26 ठीक है? 8 10 ठीक है? 15 और 18 ठीक है। सबसे पहला काम क्या करेंगे? स्टार्ट के अनुसार सॉर्ट कर लेंगे। स्टार्ट के अनुसार सॉर्ट कर लेंगे। क्योंकि तभी आप अपना दुकान सही कर पाएंगे। अपना दुकान आप रैंडम ऑर्डर में कैटेगरी देखने से कुछ नहीं होगा। आप टू और फाइव अभी देख रहे हैं। वन और 10 कभी बाद में देख रहे हैं। फिर थ्री और सेवन कभी और देख रहे हैं तो आप कुछ नहीं कर पाएंगे। आपको एक ऑर्डर से चलना",
+      "source": "caption",
+      "english_text": "You have to fix the shop. Ok? You have been given a shop like this. Meaning this is your first shirt range. ok 26 ok? 8 10 ok? 15 and 18 are fine. What will you do first? Will sort according to start. Will sort according to start. Because only then you will be able to fix your shop. Nothing will happen if you see the categories in your shop in random order. You're watching Two and Five right now. Looking at One and 10 sometime later. Then if Three and Seven are watching any other time then you will not be able to do anything. walk you through an order"
+    },
+    {
+      "start_time": 1929.12,
+      "end_time": 1963.35,
+      "text": "पड़ेगा। इसीलिए हमको स्टार्ट टाइम के अनुसार सॉर्ट कर लेना है। कोड भी लिखेंगे कोड दिखाएंगे लेकिन अभी ड्राई रन देखते हैं। तो ये जो आपको दिया हुआ है ना ये ऑलरेडी सॉर्टेड है लेकिन इसको कर लेंगे सॉर्ट। कैसे करेंगे हम बताएंगे। तो देखिए 1 2 8 और 15 ऑलरेडी सॉर्टेड है। ठीक है? आपको आपका टास्क क्या है? वही जो आपका दुकान में टास्क था। आपको एक और ये ये एक एरे है। ये एक टूD एरे है। ये आपको एक वेक्टर ऑफ वेक्टर ऑफ इंट है। टू डी एरे। हर इसमें ये वेक्टर ऑफ वेक्टर्स है जिसमें हर वेक्टर का साइज टू है। ये आपको ऐसे दिया रहता है। तो वो कोड के लिए छोड़ दीजिए। अभी के लिए आप मानिए कि आपको इसी तरीके का एक और बड़ा सा बॉक्स बनाना है",
+      "source": "caption",
+      "english_text": "Will have to. That's why we have to sort according to the start time. Will also write the code and show the code but for now let's see the dry run. So what is given to you is already sorted but we will sort it. We will tell you how to do it. So see 1 2 8 and 15 are already sorted. Ok? What is your task? Same as your task in the shop. You get one and this is an array. This is a 2D array. This gives you a vector of vectors of ints. To d array. Each of these is a vector of vectors in which the size of each vector is two. It is given to you like this. So leave that for the code. For now, assume that you have to make another big box of the same type."
+    },
+    {
+      "start_time": 1963.36,
+      "end_time": 1996.87,
+      "text": "जिसमें आपको फिर से रेंजज़ भरना है और वो नॉन ओवरलैपिंग होने चाहिए। मतलब जो भी ओवरलैपिंग है उनको मर्ज कर दीजिए और उनको ऐसा बना दीजिए कि वो नो नो नो नो नो नो नो नो नो नॉन ओवरलैपिंग रहे। ठीक है? इसके लिए इसके लिए क्या करें? सेम जो हम लोग दुकान में अभी तक कर रहे थे वही करते हैं। देखिए कैसे करेंगे। सबसे पहला रेंज है 1 3 दूसरा रेंज है 26। तीसरा रेंज क्या है? एट और 10 अगला रेंज क्या है? 15 और 18। ठीक है? अब इसमें क्या करेंगे? सबसे पहले तो जो पहला रेंज है जो पहला रेंज है वो तो ठीक है। जो पहला रेंज है वो तो ठीक है। तो सबसे पहले",
+      "source": "caption",
+      "english_text": "In which you have to fill the ranges again and they should be non-overlapping. Meaning, whatever is overlapping, merge them and make them such that they are no no no no no no no no no non overlapping. Ok? What to do for this? Same thing we were doing in the shop till now. See how to do it. The first range is 1 3 the second range is 26. What is the third range? At and 10 What is the next range? 15 and 18. Ok? What will we do with this now? First of all, the first range which is the first range is fine. The first range is fine. so first of all"
+    },
+    {
+      "start_time": 1996.88,
+      "end_time": 2030.95,
+      "text": "क्या करेंगे ना कि एक स्टार्ट बना लेंगे। एक स्टार्ट हम लोग बना लेंगे। कभी भी आप दो रेंज को क्वालीफाई कर सकते हैं। दो अलग-अलग रेंजज़ को क्वालीफाई कर सकते हैं बगल-बगल वाले को। तो एक आप स्टार्ट इक्वल टू वन और एंड इज इक्वल टू थ्री। इस वाले रेंज को हम मान लिए कि हमारा फर्स्ट रेंज है। अब हम लोग आगे बढ़ेंगे। अब हम लोग आगे बढ़ेंगे और अब हम लोग आगे बढ़ के इन तीनों रेंजज़ को लाइन बाय लाइन देखेंगे। हर रेंज को जब हम लोग देखेंगे ना तो हम लोग उसको स्टार्ट और एंड से कंपेयर करेंगे। अगर वो मर्ज होता है। अगर वो मर्ज होता है तो उसको हम लोग मर्ज कर देंगे। अगर वो मर्ज नहीं होता है अगर वो होता है कि वो नॉन ओवरलैपिंग है वो मर्ज नहीं होगा तो वो",
+      "source": "caption",
+      "english_text": "What will we do? We will make a start. We will make a start. At any time you can qualify two ranges. Two different ranges can qualify side by side. So one you start is equal to one and end is equal to three. We consider this range as our first range. Now we will move ahead. Now we will go ahead and now we will go ahead and look at these three ranges line by line. When we look at each range, we will compare it from start and end. If that merge happens. If it is merged then we will merge it. If it does not merge, if it happens that it is non-overlapping, it will not merge, then it"
+    },
+    {
+      "start_time": 2030.96,
+      "end_time": 2058.47,
+      "text": "आपका एक अच्छा रेंज है तो उसको हम लोग अपने रिजल्ट में डाल देंगे कैसे करेंगे देखते हैं। सबसे पहले आप इधर आइए। इस वाले कैटेगरी पे अपनी निगाह डालिए। इसको तो आप स्टार्ट और एंड में स्टोर कर चुके हैं। हम स्टार्ट और एन्ड को लेके चलेंगे। हर क्वेश्चन ऐसे ही होगा। ठीक है? आइए। हां इन दोनों को समझने के लिए आप स्टार्ट वन और एंड वन बोलिए। स्टार्ट वन एंड वन। हमारा हमेशा स्टार्ट वन एंड वन हम लोग मेंटेन करके चलेंगे कि ये हमारा पहला रेंज है। अगला रेंज हम जो भी देखेंगे उसको देख लेंगे। चलिए इस पे आइए। टू सिक्स।",
+      "source": "caption",
+      "english_text": "If you have a good range then we will include it in our result, let's see how. First of all you come here. Take a look at this category. You have stored this in start and end. We will go with the start and the end. Every question will be like this. Ok? Come. Yes, to understand these two, say start one and end one. Start one and one. We always start one and one and we will maintain that this is our first range. Next range we will look at whatever we see. Let's get to this. Two six."
+    },
+    {
+      "start_time": 2058.48,
+      "end_time": 2089.109,
+      "text": "स्टार्ट 2 = 2 एंड 2 = 6 सबसे पहला मर्ज होगा कि नहीं होगा? मर्ज होगा कि नहीं होगा? इसका क्या था? इफ एंड वन इज ग्रेटर दैन इक्वल टू स्टार्ट टू ये बोलता था कि मर्ज होगा। मर्ज मर्ज मर्ज देख लीजिए। एंड वन है थ्री स्टार्ट टू है थ्री इज़ थ्री ग्रेटर दैन इक्वल टू टू यस यस यस। अगर ऐसा है तो अलग कैटेगरी अभी बनाने की जरूरत नहीं है। वो बाद में इसको स्टोर करेंगे।",
+      "source": "caption",
+      "english_text": "Start 2 = 2 and 2 = 6 will the first merge happen or not? Will it merge or not? What was it? If and one is greater than equal to start with it used to say that there will be a merge. Merge merge merge see. And one is three starts two is three is three greater than equal to two yes yes yes. If so, then there is no need to create a separate category. They will store it for later."
+    },
+    {
+      "start_time": 2089.119,
+      "end_time": 2123.99,
+      "text": "जब हम लोग पूरा निश्चिंत संतुष्ट हो जाएंगे ना कि ये कैटेगरी और किसी कैटेगरी से नहीं मिल सकता है। तब इसको रिजल्ट में डालेंगे। अभी तो बस मर्ज करिए। मर्ज कैसे करते थे? नया मर्ज बनेगा क्या? नया मर्ज बनेगा क्या? मिनिमम वैल्यू का क्या होता था? स्टार्ट वन। और मैक्सिमम वैल्यू क्या होता था? मैक्सिमम ऑफ़ एंड वन एंड एंड टू जो कि है सिक्स। अब अब देखिए अब अब एक तरीके से हुआ क्या? आप पहले यहां थे। आप इसको देखें। इन दोनों को मर्ज करके आप ये बना दिए। इन दोनों को मर्ज करके आप ये बना दिए। तो इफेक्टिवली क्या हुआ है ना कि ये दोनों कैटेगरी मिलके एक नई कैटेगरी बन गई",
+      "source": "caption",
+      "english_text": "When we are completely satisfied that this category cannot be found in any other category. Then we will put it in the result. Now just merge. How did you merge? Will there be a new merger? Will there be a new merger? What happened to the minimum value? Start one. And what was the maximum value? Maximum of and one and and two which is six. Now let's see what happened in a different way? You were here first. You see this. By merging these two you made this. By merging these two you made this. So what has effectively happened is that these two categories have combined to form a new category."
+    },
+    {
+      "start_time": 2124.0,
+      "end_time": 2157.51,
+      "text": "यहां पे। अब इसको आपको अगले वाले कैटेगरी के साथ देखना पड़ेगा। इसीलिए इसीलिए इस नए वाले इंटरवल को आपको अगले रेंजेज़ के साथ देखना पड़ेगा। तो हम लोग अपना स्टार्ट और एंड अपडेट कर देंगे। क्योंकि अब आप देखिए। इन दोनों को मिलाके आप ये वाला रेंज बनाए हैं। अब ये रेंज को आप अगले रेंज से देखेंगे और करेंगे। अब अब सिर्फ इसको नहीं देखेंगे या तो इसको नहीं देखेंगे। नहीं ये दोनों कैटेगरी एक तरीके से आप मर्ज कर दिए और एक कैटेगरी बड़ी सी कैटेगरी बना दिए हैं। अब उसको आगे देखेंगे कि आगे भी तो नहीं कोई मर्ज होता है वो भी तो देखना जरूरी है। ठीक है? इसके लिए हम लोग क्या करेंगे? स्टार्ट वन और एंड वन को अपडेट करेंगे। कब? जब हम लोग मर्ज करेंगे तो",
+      "source": "caption",
+      "english_text": "On here. Now you will have to see this with the next category. That is why you will have to look at this new interval with the next ranges. So we will update our start and end. Because now you see. By combining these two you have created this range. Now you will see and do this range from the next range. Now we just won't watch this or we won't watch this. No, you have somehow merged these two categories and made one category a big category. Now we will look at it further to see if there is any merger in the future, that too is important to see. Ok? What will we do for this? Will update start one and end one. When? when we merge"
+    },
+    {
+      "start_time": 2157.52,
+      "end_time": 2184.79,
+      "text": "अपडेट कर देंगे। चलिए कर दीजिए। वन कर दीजिए। एंड 1 = 6 कर दीजिए। ठीक है? अगली कैटेगरी पे आइए। अगली कैटेगरी पे आइए जो अगला है। ये 8 और 10 आइए इसको लिख लें। स्टार्ट टू क्या बन जाएगा? एट। एंड टू क्या बन जाएगा? 10। सबसे पहला काम मर्ज होगा कि नहीं होगा? इज माय एंड वन ग्रेटर दैन इक्वल टू स्टार्ट टू? नो नो नो नो नो नहीं होगा मर्ज। देख के भी आपको मालूम चल जाएगा। 1 6 8 10 नहीं होगा मर्ज।",
+      "source": "caption",
+      "english_text": "Will update. Let's do it. Make it one. Make end 1 = 6. Ok? Come to the next category. Let's move on to the next category. These 8 and 10 let's write it down. What will Start Too become? et. What will become of End2? 10. The first task will be to merge or not? Is my end one greater than equal to begin with? No no no no no there will be no merger. You will know even after seeing it. 1 6 8 10 will not merge."
+    },
+    {
+      "start_time": 2184.8,
+      "end_time": 2213.589,
+      "text": "अगर मर्ज नहीं होगा। अगर मर्ज नहीं होगा तो इसका क्या मतलब है? आप पहले इन दोनों कैटेगरी को मिला के एक कैटेगरी बनाए थे। ये कैटेगरी इसके साथ मर्ज नहीं होगी, नहीं होगी। इसका मतलब है कि जो इन दोनों के साथ अभी तक जो भी आपका कैटेगरी चल रहा था ना वो आपका एक आंसर होना चाहिए। वो आपके आंसर में होना चाहिए कि वो एक इंडिपेंडेंट कैटेगरी है। वो एक इंडिपेंडेंट कैटेगरी है। मतलब ये जो 16 है 16 है ये वाला ये आपके आंसर में होना चाहिए। तो इसको आप अपने आंसर में लिख लेंगे। कैसे लिखेंगे?",
+      "source": "caption",
+      "english_text": "If the merge will not happen. What does it mean if the merge will not happen? Earlier you had created one category by combining these two categories. This category will not, will not, be merged with this one. This means that whatever category you were talking about till now with these two should be one of your answers. It should be in your answer that it is an independent category. That is an independent category. Meaning this 16 is 16, this one should be in your answer. So you will write this in your answer. How to write?"
+    },
+    {
+      "start_time": 2213.599,
+      "end_time": 2247.91,
+      "text": "कोड में हम बताएंगे कैसे लिखेंगे? टेंशन मत लीजिए। अब अब लिखने के बाद लिखने के बाद क्या करना है? अब देखिए ये वाले कैटेगरी को तो आपने आंसर में लिख लिए। ये जो बड़ा वाला कैटेगरी था वन सिक्स उसको आंसर में लिख लिए। ये कैटेगरी पे आप अभी थे। आई अभी यहां था लूप चल रहा है ना? यहां पे थे। आपको मालूम चला कि ये इंडिपेंडेंट कैटेगरी है। ये इंडिपेंडेंट कैटेगरी है। पीछे वालों के साथ मर्ज नहीं है नई कैटेगरी है। मतलब ये अपनी इंडिपेंडेंट कैटेगरी है। तो अब इसको अगले से कंपेयर करना पड़ेगा। इन दोनों का काम हो गया। इन दोनों का काम अब समझिए खत्म हो गया। अब क्या है आपके पास? अब आपके पास निगाह में ये है ए 10। अब इसको आगे देखना",
+      "source": "caption",
+      "english_text": "Will we tell you how to write in the code? Don't take tension. Now what to do after writing? Now see, you have written this category in the answer. This was the biggest category, one six, and wrote it in the answer. You were in this category just now. I was here just now, the loop is going on right? Were here. You came to know that this is an independent category. This is an independent category. There is no merger with those behind, it is a new category. Meaning this is its own independent category. So now this will have to be compared with the next one. The work of both of them was done. Now consider that the work of these two is finished. What do you have now? Now there you have it, the A10. now look forward to it"
+    },
+    {
+      "start_time": 2247.92,
+      "end_time": 2281.109,
+      "text": "पड़ेगा कि अब ये एक इंडिपेंडेंट कैटेगरी है। जैसे हम लोग शुरू किए थे तो शुरू में हम लोग बोले थे कि चलो तुम फर्स्ट कैटेगरी हो। जब हम लोग इसको आंसर में डाल दिए। अब ये अगली कैटेगरी है जो फर्स्ट कैटेगरी है आपको अब यहां से शुरू करके बाकी दुकान देखना है। इसीलिए इसीलिए हम लोग अपने जब मर्ज नहीं होगा जब मर्ज नहीं होगा सबसे पहले तो स्टार्ट और एन्ड को आंसर में डालिए और स्टार्ट वन और एंड वन को अपडेट कर दीजिए। किससे अपडेट कर दीजिए? जो कैटेगरी आप अभी देखे थे जिसमें आपको पता चल रहा था कि ये मर्ज नहीं होगा। अब और इंडिपेंडेंट है। अब यहां से इंडिपेंडेंट कुछ शुरू करेगा अपना। एट और 10 कर दीजिए।",
+      "source": "caption",
+      "english_text": "Now this is an independent category. When we started, initially we said that you are the first category. When we put it in the answer. Now this is the next category which is the first category, now you have to start from here and see the rest of the shops. That's why when we won't merge, when the merge won't happen, first of all put start and end in the answer and update start one and end one. Update from whom? The categories that you had just seen in which you knew that this would not be merged. Now more independent. Now the independent will start something from here. Eight and make it 10."
+    },
+    {
+      "start_time": 2281.119,
+      "end_time": 2315.589,
+      "text": "एट और 10 कर दीजिए। ठीक है? अगले पे आइए। अब ये कंपेयर होगा। अब स्टार्ट एंड अपडेट हो गया। अब वो स्टार्ट एंड कंपेयर होगा आगे से। यहां पे आइए 15 और 18। स्टार्ट टू ले लीजिए। और एंड टू ले लीजिए। कोड लिखेंगे पूरा क्लियर हो जाएगा। ठीक है? 15 18। ठीक है? क्या ये मर्ज होगा? ना? नहीं होगा। क्यों? एंड वन इज़ नॉट ग्रेटर दैन इक्वल टू स्टार्ट टू। सेम काम करना है। मतलब कि अभी तक आप जो भी स्टार्ट ले के आ रहे थे वो आगे तो नहीं जाएगा। वो आगे किसी से मर्ज नहीं होने वाला है। 810 को अपने आंसर में लिख दीजिए। 810 को अपने आंसर में लिख दीजिए। और आपको क्या पता चला कि अभी",
+      "source": "caption",
+      "english_text": "Eight and make it 10. Ok? Come to the next one. Now this will be compared. Now the start and update is done. Now it will start and compare from now on. Come here 15 and 18. Take Start Two. And take the end. Write the code and everything will be cleared. Ok? 15 18. Ok? Will this merge? No? Will not done. Why? And One Is Not Greater Than Equal to Start With. Same work has to be done. Meaning that whatever start you were bringing till now will not go ahead. He is not going to merge with anyone in future. Write 810 in your answer. Write 810 in your answer. And what did you know that now"
+    },
+    {
+      "start_time": 2315.599,
+      "end_time": 2341.27,
+      "text": "आप जिस कैटेगरी को चेक किए वो किसी के साथ पीछे वाले के साथ मर्ज नहीं होगा। वो अपना इंडिपेंडेंट कुछ बनाएगा। तो अब इसको आगे लेके जाएंगे। अब इसको चेक करेंगे। तो अपने स्टार्ट और एंड को अपडेट कर दीजिए। अपने स्टार्ट वन को अपडेट कर दीजिए। किस से? अभी जो स्टार्ट था 15 एंड वन को भी अपडेट कर दीजिए। अभी जो आया था 18 और आगे बढ़िए। लेकिन आप आगे बढ़ेंगे तो आपका लूप खत्म हो जाएगा। आगे कोई रेंज है नहीं। आगे कोई रेंज है नहीं। आपकी दुकान खत्म हो गई।",
+      "source": "caption",
+      "english_text": "The category you checked will not be merged with the previous one. He will create something independent. So now we will take it forward. Will check it now. So update your start and end. Update your Start One. With whom? Please also update the 15 and one which was started now. The one who just came 18 and move ahead. But if you move forward, your loop will end. There is no further range. There is no further range. Your shop is gone."
+    },
+    {
+      "start_time": 2341.28,
+      "end_time": 2367.03,
+      "text": "दुकान खत्म हो गई तो वेरी गुड। आप पूरा काम कर दिए। लेकिन आपके पास अभी भी एक स्टार्ट वन और एंड वन है। अभी भी एक स्टार्ट वन एंड वन है। जो कि हो सकता है की लास्ट कैटेगरी होगा। हो सकता है की बहुत देर से मर्ज होते होते होते आप लास्ट पहुंच गए। तो आपके पास कैटेगरी बची नहीं है। कैटेगरी बची नहीं है तो जो अभी तक आया है इसको भी आंसर में डाल दीजिए। मतलब कि आप बहुत कुछ किया बहुत कुछ कभी मिलाए कभी तोड़े कभी मिलाए कभी तोड़े। करते करते एक स्टार्ट एंड लेके आप लास्ट में पहुंच गए।",
+      "source": "caption",
+      "english_text": "Very good if the shop is finished. You have done all the work. But you still have a start one and end one. There is still a start one and one. Which may be the last category. It is possible that you may have reached last as the merger took a long time. तो आपके पास कैटेगरी बची नहीं है। कैटेगरी बची नहीं है तो जो अभी तक आया है इसको भी आंसर में डाल दीजिए। मतलब कि आप बहुत कुछ किया बहुत कुछ कभी मिलाए कभी तोड़े कभी मिलाए कभी तोड़े। करते करते एक स्टार्ट एंड लेके आप लास्ट में पहुंच गए।"
+    },
+    {
+      "start_time": 2367.04,
+      "end_time": 2400.31,
+      "text": "अब दुकान में और कोई कैटेगरी नहीं है। तो जो भी आप स्टार्ट एंड है तो उसको डाल दीजिए अपने आंसर में। तो 15 18 को आंसर में डाल देंगे। 15 और 18 को भी आंसर में डाल देंगे। तो देखिए ये आपका आंसर बन गया। क्या गायब हो गया? ये वाला पार्ट गायब हो गया। 26 पूरा गायब हो गया। 26 और 1 3 मर्ज करके क्या बन गया? 1 6 810 कोई इंडिपेंडेंट था तो 810 एज़ इट इज़ आ गया। 15 18 पहले से ही इंडिपेंडेंट था तो 15 18 ऐसे आ गया। तो ये आपका मर्ज इंटरवल हो गया। ये आपको रिटर्न करना है। चलिए अब देखेंगे कि इसको कोड कैसे करते हैं और लिखते कैसे हैं? सेम लॉजिक यही है। कोड",
+      "source": "caption",
+      "english_text": "अब दुकान में और कोई कैटेगरी नहीं है। तो जो भी आप स्टार्ट एंड है तो उसको डाल दीजिए अपने आंसर में। तो 15 18 को आंसर में डाल देंगे। 15 और 18 को भी आंसर में डाल देंगे। तो देखिए ये आपका आंसर बन गया। What went missing? ये वाला पार्ट गायब हो गया। 26 पूरा गायब हो गया। 26 और 1 3 मर्ज करके क्या बन गया? 1 6 810 कोई इंडिपेंडेंट था तो 810 एज़ इट इज़ आ गया। 15 18 पहले से ही इंडिपेंडेंट था तो 15 18 ऐसे आ गया। तो ये आपका मर्ज इंटरवल हो गया। ये आपको रिटर्न करना है। चलिए अब देखेंगे कि इसको कोड कैसे करते हैं और लिखते कैसे हैं? सेम लॉजिक यही है। code"
+    },
+    {
+      "start_time": 2400.32,
+      "end_time": 2434.95,
+      "text": "कैसे करेंगे? ठीक है? तो सबसे पहले तो आपको दिया क्या रहेगा? आपको दिया क्या रहेगा? आपको एक वेक्टर ऑफ़ वेक्टर ऑफ़ इंट दिया रहेगा। रेंज देने का यही मेथड होता है। मतलब कि आपको एक ऐसा दिया रहेगा वेक्टर ऑफ़ इसका हम कोड दे देंगे। डोंट वरी। वेक्टर ऑफ़ ऐसा। ये इसका क्या मतलब है? ये एक वेक्टर ऑफ़ वेक्टर्स है। वेक्टर ऑफ़ वेक्टर्स है। मतलब ये वेक्टर ऐसा दिखेगा। तो जब आप इसको करेंगे तो ये वेक्टर ऐसा दिखेगा। ये एक बहुत बड़ा सा वेक्टर है। बहुत बड़ा सा वेक्टर है। और इसमें छोटे-छोटे वेक्टर्स हैं। छोटे-छोटे वेक्टर्स का साइज क्या है?",
+      "source": "caption",
+      "english_text": "How to do? Ok? So first of all, what will be given to you? What will be given to you? You will be given a vector of vectors of int. This is the method of giving range. Meaning that you will be given such a vector of and we will give its code. Don't worry. Vector of such. What does this mean? This is a vector of vectors. is a vector of vectors. Meaning this vector will look like this. So when you do this, this vector will look like this. This is a very big vector. It's a very big vector. And it has small vectors. What is the size of small vectors?"
+    },
+    {
+      "start_time": 2434.96,
+      "end_time": 2462.309,
+      "text": "टू। क्योंकि वो एक रेंज रिप्रेजेंट करते हैं। हर वेक्टर एक रेंज रिप्रेजेंट करता है। तो इसमें क्या है? छोटे-छोटे वेक्टर हैं यहां पे। सबसे पहला रेंज है आपका वन और थ्री। ये अगला रेंज आपका क्या डिपेक्ट करता है? टू और सिक्स। छोटे-छोटे वेक्टर। हां। अगला में क्या? एट और 10। उसके अगले वाले क्या डिपेक्ट करता है? 15 और 18। 0 1 2 3 ये आपका पूरा वेक्टर A है। वेक्टर के हर इंडेक्स पे छोटे-छोटे वेक्टर हैं।",
+      "source": "caption",
+      "english_text": "To. Because they represent a range. Each vector represents a range. So what's in it? There are small vectors here. The first range is your one and three. What does this next range say to you? Two and six. Small vectors. Yes. What's next? At and 10. What does the next one depend on? 15 and 18. 0 1 2 3 This is your entire vector A. There are smaller vectors at each index of the vector."
+    },
+    {
+      "start_time": 2462.319,
+      "end_time": 2496.069,
+      "text": "दो-दो साइज़ के वेक्टर हैं जो कि रेंज रिप्रेजेंट करते हैं। तो ठीक है? ये आपको ऐसा दिखेगा। तो सबसे पहले तो आप रिजल्ट देने के लिए एक अपना वेक्टर बना लीजिए। ऐसा ही वेक्टर ऑफ़ वेक्टर ऑफ़ इंट ऐसा करके रिजल्ट। इसी में डालेंगे। क्या बोले? शुरुआत करने के लिए इंट स्टार्ट वन इक्वल टू स्टार्ट वन क्या होना चाहिए? दुकान का पहला कैटेगरी पहला कैटेगरी का उसमें हम स्टोर करेंगे। तो a ऑफ़ ज़ीरो A0 से आप इस वेक्टर तक पहुंचे हैं। इसका भी ज़ीरो ये आपको स्टार्ट देता",
+      "source": "caption",
+      "english_text": "There are two vectors of size each that represent the range. Well then? It will look like this to you. So first of all you create your own vector to give the result. Result of vector of vector of int by doing this. Will put it in this. What did they say? What should be int start one equal to start one? We will store the first category of the shop in it. So from a of zero A0 you have reached this vector. Zero of this also gives you a start"
+    },
+    {
+      "start_time": 2496.079,
+      "end_time": 2530.87,
+      "text": "है। A 0 मतलब आप यहां पहुंचे। लेकिन इसका भी तो इंडेक्स है। अंदर वाला भी तो वेक्टर है ना दो-दो साइज़ का। 0 1 0 1 0 1 0 1 A 0 आपको क्या देता है? वन ये वाली वैल्यू। इंट एंड वन एंड वन इक्वल टू a0 a0 फर्स्ट कैटेगरी फर्स्ट कैटेगरी का एंडिंग प्राइस एंडिंग प्राइस मतलब वन ये आपको क्या देगा तीन देगा स्टार्ट वन एंड वन निकालना आ गया ठीक है अब हम लोग क्या बोले थे वन तो हो गया पहला तो हो गया पहला तो कैटेगरी हम लोग ले लिए अगले कैटेगरी से देखना स्टार्ट करेंगे जहां मर्ज करने की ज़रूरत पड़ेगी मर्ज करेंगे जहां मर्ज नहीं होगा वहां",
+      "source": "caption",
+      "english_text": "Is. A 0 means you reached here. But this also has an index. The one inside is also a vector of two sizes. 0 1 0 1 0 1 0 1 A 0 What does it give you? One this value. Int and one and one equal to a0 a0 first category ending price of first category ending price meaning one what will it give you three will give start one and one extracting has come Okay now what we said is one is done so the first category is done we have taken the first category we will start looking from the next category where there is a need to merge we will merge where there is no need to merge"
+    },
+    {
+      "start_time": 2530.88,
+      "end_time": 2560.39,
+      "text": "उसको आंसर में स्टोर करके स्टार्ट और एंड को अपडेट कर देंगे इतना ही करेंगे आइए इसको करते हैं। फॉर i = 1 ज़ीरो नहीं वन क्योंकि ज़ीरो को आप हैंडल कर चुके हैं। n क्या है? n नंबर इसका साइज़ है। ये n = 4 है। मतलब जितने कैटेगरीज़ हैं। अच्छा। सबसे पहले क्या काम करना है आपको? स्टार्ट टू और एंड टू निकाल दीजिए जिससे आप कंपेयर करेंगे। चार चीज़ चाहिए ना? स्टार्ट वन एंड वन ऑलरेडी है। स्टार्ट टू एंड टू निकाल दीजिए जिसप आप अभी हैं। आइए निकालते हैं।",
+      "source": "caption",
+      "english_text": "We will store it in the answer and update the start and end, that's all, let's do it. For i = 1, not zero, one because you have already handled zero. What is n? The number n is its size. This is n = 4. Meaning the number of categories. Good. What work do you have to do first? Remove the start to and end to which you will compare. Want four things, right? Start one and one is already. Take out the start to end where you are right now. Let's take it out."
+    },
+    {
+      "start_time": 2560.4,
+      "end_time": 2587.99,
+      "text": "स्टार्ट टू इक्वल टू सेम। एरे ऑफ़ i आपको वो कैटेगरी देगा। उसका जीरोथ इंडेक्स आपको उसकी स्टार्ट वैल्यू देगा। अच्छा एंड टू इज़ इक्वल टू सेम एरे ऑफ़ i आपको उस कैटेगरी तक ले जाएगा। वन वन आपको वो एंड देगा। ठीक है? सबसे पहले चेक कर लेना है कि मर्ज होगा कि नहीं? आइए इफ एंड वन इज़ ग्रेटर दैन इक्वल टू स्टार्ट टू। इसका क्या मतलब है? मर्ज मर्ज होगा।",
+      "source": "caption",
+      "english_text": "To start is equal to same. The array of i will give you that category. Its zeroth index will give you its start value. Well and two is equal to same array of i will get you to that category. One One will give you that ending. Ok? First of all you have to check whether it will merge or not? Let's start with If And One Is Greater Than Equal. What does it mean? Merge will merge."
+    },
+    {
+      "start_time": 2588.0,
+      "end_time": 2619.03,
+      "text": "होगा होगा पड़ेगा। कैसे मर्ज करते थे? और एक बात अब जब आप मर्ज करेंगे ना तो मर्ज करके आपको स्टार्ट और स्टार्ट वन और एंड वन क्या है कि आप अभी तक जो देख चुके हैं उस हिसाब से आपका स्टार्ट वन और एंड वन क्या है उसको आप एक में रिप्रेजेंट करते हैं। तो जो भी आप नया रेंज बनाते थे नया इंटरवल बनाते थे तो आप क्या करते थे कि स्टार्ट वन लेते थे और मैक्स ऑफ़ एंड वन एंड टू लेते थे तो स्टार्ट वन ऐसे ही अपडेट होगा। कहने का ये मतलब है कि ये होगा स्टार्ट वन इक्वल टू स्टार्ट वन।",
+      "source": "caption",
+      "english_text": "It will happen, it will happen. How did you merge? And one more thing, now when you merge, by merging you represent what is your start and start one and what is end one, according to what you have seen till now, what is your start one and end one. So whatever you used to create a new range or create a new interval, what you used to do was take start one and max of end one and two, then start one will be updated like this. What it means to say is that it will be start one equal to start one."
+    },
+    {
+      "start_time": 2619.04,
+      "end_time": 2653.109,
+      "text": "क्यों? स्टार्ट वन और एंड वन को आप आगे लेके जाएंगे ना, आगे भी तो कंपेयर करेंगे अगले वाले से। इसीलिए, तो स्टार्ट वन, एंड वन हमेशा अपडेट होता है। और एंड वन क्या हो जाएगा? इज इक्वल टू मैक्स ऑफ एंड वन एंड एंड टू। ये यहां पे क्या काम हो रहा है? यहां पे हम नया रेंज बना रहे हैं। ये नया रेंज पे हम लोग बोले थे कि मिनिमम वैल्यू हमेशा स्टार्ट वन होगी और मैक्सिमम वैल्यू मैक्सिमम ऑफ़ एंड वन, एंड टू होगी। लेकिन जो नया रेंज बना उसको भी तो आपको स्टोर करना पड़ेगा ना। आपके स्टार्ट वन और एंड वन में उसको आपको स्टोर करना पड़ेगा। क्योंकि आप इसी को आगे ले के जाते थे और यही आपका बनता था कि अभी तक का रेंज ये है और एंड एंड टू और स्टार्ट टू",
+      "source": "caption",
+      "english_text": "Why? You will take Start One and End One forward and compare them with the next one. That's why, start one, end one is always updated. And what will be the end one? Is equal to max of and one and and two. What is going on here? Here we are creating a new range. On this new range, we had said that the minimum value will always be start one and the maximum value will be maximum of end one, end two. But the new range created will also have to be stored. You will have to store it in your start one and end one. Because you used to take this forward and this became yours that till now the range is this and end to end and start to."
+    },
+    {
+      "start_time": 2653.119,
+      "end_time": 2687.829,
+      "text": "से कंपेयर करके देख लेंगे। तो इसको हम लोग कर लिए। हो गया इतना काम हो गया। अब कुछ करने की ज़रूरत नहीं है। अभी इसको आंसर में डालने की ज़रुरत नहीं है क्यों? आगे हो सकता है आगे कोई और इससे मर्ज हो जाए तो सबको एक साथ मर्ज कर लेंगे जितना हो पाए। उसके बाद आंसर में डालेंगे। कंटिन्यू कर दीजिए। कुछ नहीं करेंगे। ये कब का था? जब मर्ज होना है। लेकिन जब मर्ज नहीं होना है। जब मर्ज नहीं होना है तो क्या करेंगे? सबसे पहले तो अभी का स्टार्ट वन और एंड वन को आंसर में डालेंगे। तो रेस्ट डॉट पुशबैक हां अब रेस्ट में क्या पुशबैक होगा? रेस्ट क्या है? रेस्ट भी एक वेक्टर ऑफ़ वेक्टर्स है। तो इसको ऐसे करते हैं। एक कर्ली",
+      "source": "caption",
+      "english_text": "Will compare with and see. So we did it. So much work is done. There is no need to do anything now. Why is there no need to put this in the answer now? It is possible that someone else may merge with it in the future, so we will merge everyone together as much as possible. After that we will put it in the answer. Please continue. Will not do anything. When was this? When the merger is to happen. But when the merge is not to happen. What to do when the merger is not to happen? First of all, we will put the current start one and end one in the answer. So rest dot pushback yes now what will be the pushback in rest? What is rest? Rest is also a vector of vectors. So let's do it like this. a curly"
+    },
+    {
+      "start_time": 2687.839,
+      "end_time": 2719.27,
+      "text": "ब्रैकेट डाल दिया करिए। एक आप अपना स्टार्ट वन लिख सकते हैं। एक आप एंड वन लिख सकते हैं। ऐसा करके डाल दिया करिए। डाल दिए। डाल दिए। अब अब स्टार्ट वन और एंड वन को आपको अपडेट करना पड़ेगा। अपडेट करना पड़ेगा। किससे? जो स्टार्ट टू और एंड टू था जो मर्ज नहीं हुआ। क्यों आप यहां तक आए? क्योंकि मर्ज नहीं हुआ। तो स्टार्ट टू और एंड टू आप अपना नया इंडिपेंडेंट। तो उसको स्टार्ट वन और एंड वन में डाल दीजिए। ऐसा करके स्टार्ट टू इज इक्वल टू सॉरी स्टार्ट वन इज इक्वल टू स्टार्ट टू। बस",
+      "source": "caption",
+      "english_text": "Put the bracket. One you can write your start one. One you can write and one. Do this and post it. Put it. Put it. Now you will have to update Start One and End One. Will have to update. With whom? Which was start to and end to which did not merge. Why did you come here? Because the merger did not happen. So from start to end you are your new independent. So put it in start one and end one. By doing this start two is equal to two sorry start one is equal to start two. bus"
+    },
+    {
+      "start_time": 2719.28,
+      "end_time": 2750.069,
+      "text": "एंड वन इक्वल टू एंड टू। और बंद कर दीजिए। अब ये कंपेयर होगा। अब स्टार्ट वन एंड वन की वैल्यू बदल गई। जो मर्ज नहीं हुआ जो 810 मर्ज नहीं हुआ था वो अब आपका बन जाता था। उससे अगला देखा जाएगा। पीछे का जो होना था हो गया। उसको हम लोग रिजल्ट में डाल दिए। बस। सब कुछ करने के बाद, सब कुछ करने के बाद यहां पे यहां पे ये लूप खत्म हो जाएगा। कौन सा? आई वाला लूप। सब कुछ करने के बाद आप रुकेंगे कब? जब आपकी कैटेगरी खत्म हो जाएगी जब आपकी पूरी कैटेगरी खत्म हो जाएगी। इस समय भी आपके पास एक स्टार्ट वन और एंड वन होगा। इस समय भी याद करिए एग्जांपल में 15 और 18 था। 15",
+      "source": "caption",
+      "english_text": "And one equals two and two. And turn it off. Now this will be compared. Now the value of Start One and One changed. The 810 that was not merged would now become yours. The next one will be seen from him. Whatever happened later happened. We put it in the result. Bus. After doing everything, after doing everything, this loop will end here. Which one? Eye loop. After doing everything, when will you stop? When your category is over, when your entire category is over. At this point you will also have a start one and an end one. Remember this time also there were 15 and 18 in the exam. 15"
+    },
+    {
+      "start_time": 2750.079,
+      "end_time": 2776.55,
+      "text": "और 18 था। एक और टाइम आपको रेस्ट डॉट पुश बैक रेस्ट डॉट पुशबैक जो वहां पे किए थे सेम। स्टार्ट वन एंड वन कर्ली ब्रैकेट वन ब्रैकेट वन और रिटर्न प्रेस बस ये इसका प्रोग्राम होता है। ये मर्ज इंटरवल का प्रोग्राम है। कोड लिंक आपको मिल जाएगा। थोड़ा थोड़ा हो सकता है कोडवड समझने में थोड़ा डिफिकल्टी हो कमेंट में बताइएगा।",
+      "source": "caption",
+      "english_text": "And was 18. One more time you have to do the same thing as rest dot push back rest dot pushback. Start one and one curly bracket one bracket one and press return, this is its program. This is a merge interval program. You will get the code link. There may be some difficulty in understanding the code, please tell in the comments."
+    },
+    {
+      "start_time": 2776.56,
+      "end_time": 2811.27,
+      "text": "अगले लेक्चर में इसको और अच्छे से समझा देंगे। अगर अगर कोई दिक्कत होती है तो ठीक है? होनी नहीं चाहिए। जो भी आप जो भी यहां तक सुन रहे हैं आप लोग जो भी शुरू से सुनते हुए आ रहे हैं। उतनी दिक्कत होनी नहीं चाहिए। लेकिन अगर फिर भी होती है तो बिल्कुल बताइएगा। उसमें कोई शर्माने की बात नहीं है। तो ये इसका छोटा सा कोड था। तो हम लोग किए क्या? हम लोग मतलब किए क्या? सबसे पहले स्टार्ट वन एंड वन ले लिए जो कि पहले का था फर्स्ट वाला। ये फर्स्ट वाला था। हर बार आई को जब चलाते थे तो हम लोग स्टार्ट टू और एंड टू निकालते थे। चेक करते थे कि जो अभी का रेंज है जो अभी का एक्सिस्टिंग रेंज है जो कि स्टार्ट वन और एंड वन है। वो इस नए रेंज के साथ मर्ज हो सकता है कि नहीं। अगर मर्ज हो सकता है तो",
+      "source": "caption",
+      "english_text": "We will explain this more clearly in the next lecture. If there is any problem then is it okay? Shouldn't happen. Whatever you have been hearing till now, whatever you have been hearing from the beginning. There shouldn't be that much problem. But if it still happens, please tell me. There is nothing to be ashamed of in that. So this was its small code. So what did we do? What do we mean? First of all took Start One and One which was the first one. This was the first one. Every time we used to run i, we used to select start to and end to. Used to check that which is the current range, which is the existing range, which is start one and end one. It may merge with this new range or not. if merge can happen"
+    },
+    {
+      "start_time": 2811.28,
+      "end_time": 2845.109,
+      "text": "मर्ज कर दीजिए। स्टार्ट वन और एंड वन को अपडेट कर दीजिए। किस से? जो नया मर्ज रेंज है जो कि आता है स्टार्ट वन उसका मिनिमम होता है। मैक्सिमम ऑफ़ एंड वन एंड टू उसका मैक्सिमम होता है और आगे बढ़ जाइए। लेकिन अगर मर्ज नहीं होता है लेकिन अगर मर्ज नहीं होता है तो उसका मतलब है कि अभी तक जो आप रेंज ले के आ रहे थे वो हो गया उसका काम हो गया। वो किसी के साथ मर्ज नहीं होगा। उसको आंसर में स्टोर कर दीजिए और जो नया वाला आया है जो नया वाला ये वाला आया है। अब ये आपका रेंज बनना चाहिए जिससे आप कंपेयर करेंगे। अब आप यहां से शुरू करेंगे। तो फिर से उसको अपडेट कर दिए। सब कुछ होने के बाद सब कुछ होने के बाद रेस्ट में वो स्टार्ट वन एंड वन फिर से डाल दिए क्योंकि पूरी कैटेगरी खत्म हो गई। अभी तक",
+      "source": "caption",
+      "english_text": "Merge it. Update start one and end one. With whom? The start one is the minimum of the new merge range that comes. Maximum of and one and two is its maximum and move ahead. But if the merge does not happen, it means that the range that you were bringing till now is done, its work is done. He will not merge with anyone. Store it in Answer and the new one that has come, this new one has come. This should now become your range against which you will compare. Now you will start from here. So updated it again. After everything was done, after everything was done, they put the start one and one again in the rest because the entire category was finished. till now"
+    },
+    {
+      "start_time": 2845.119,
+      "end_time": 2872.63,
+      "text": "आपके पास जो भी रेंज बचा है अब आगे कुछ बचा नहीं है कंपेयर करने के लिए तो वो अपने रिजल्ट में डाल दीजिए और रिजल्ट को रिटर्न कर दीजिए। तो ये इसका छोटा सा प्रोग्राम है। प्रोग्राम लिंक मिल जाएगा और आगे बहुत सारे क्वेश्चन देखेंगे। लेकिन जो कोर लॉजिक है कोर लॉजिक है वो यही रहेगा। कोर लॉजिक यही रहेगा। अगला क्वेश्चन तो ऐसे ही कर देंगे। अगला क्वेश्चन तो ये फंक्शन अगर आप लिख लेंगे ना तो अगला फंक्शन इसमें बस इसका इस्तेमाल करके अगला क्वेश्चन हो जाएगा। ठीक है? तो कहने का मतलब कि ये ये एक फंक्शन होगा।",
+      "source": "caption",
+      "english_text": "Whatever range you have left, now there is nothing left to compare, so put it in your result and return the result. So this is its small program. You will get the program link and see many questions ahead. But the core logic remains the same. The core logic will remain the same. We will ask the next question like this. If you write this function for the next question, then the next question will be created by simply using this function. Ok? So it means that this will be a function."
+    },
+    {
+      "start_time": 2872.64,
+      "end_time": 2889.92,
+      "text": "मर्ज इंटरवल जिसको आप एक एरे देंगे तो वो मर्ज करके आपको दे देगा। अगले क्वेश्चन में कुछ नहीं करना है। अगले क्वेश्चन में तीन चार लाइन खुद का लिखना है और इस फंक्शन को कॉल कर देना है तुरंत हो जाएगा। तो उससे आप देखेंगे कितना ज्यादा रिलेटेड है। क्या पैटर्न रिलेटेड है। चलिए आज के लिए इतना ही। मेरा भी हो गया। है ना?",
+      "source": "caption",
+      "english_text": "Merge interval: If you give an array to someone, it will merge it and give it to you. There is nothing to be done in the next question. In the next question, you have to write three to four lines yourself and call this function, it will be done immediately. So you will see how much it is related to that. Is the pattern related? Well, that's all for today. Mine is done too. Isn't it?"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

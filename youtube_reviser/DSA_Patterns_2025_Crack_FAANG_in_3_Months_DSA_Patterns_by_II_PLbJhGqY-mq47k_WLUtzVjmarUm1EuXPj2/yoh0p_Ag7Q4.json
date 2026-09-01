@@ -1,0 +1,492 @@
+{
+  "video_id": "yoh0p_Ag7Q4",
+  "video_title": "DSA Patterns L33 | Merge Intervals | Master DSA Patterns in 2025",
+  "video_number": 36,
+  "chunks": [
+    {
+      "start_time": 2.23,
+      "end_time": 27.509,
+      "text": "आ जाइए भाई लेक्चर 33 में आज का क्वेश्चन बहुत इंपॉर्टेंट है। प्लीज लास्ट तक देखिएगा क्योंकि ये क्वेश्चन अगर समझना आसान है खुद समझना आसान है खुद पढ़ के पढ़ाना मुश्किल है। इसीलिए हमको ये स्ट्राइवर के चैनल पे नहीं मिला और भी चैनल्स पे नहीं मिला। बहुत छोटे-छोटे चैनल्स पे है इक्का-दुक्का। बहुत इंपॉर्टेंट क्वेश्चन है। ये समझाना थोड़ा सा मुश्किल है। एक बार आपको लॉजिक समझ में आ जाएगा तो आ जाएगा। लेकिन आप समझाना इसको मुश्किल है। तो हम ट्राई करेंगे। जो मुश्किल है वो तो करना चाहिए। छोड़ तो देंगे नहीं। इंपॉर्टेंट क्वेश्चन है।",
+      "source": "caption",
+      "english_text": "Come brother, today's question in Lecture 33 is very important. Please watch till the end because if this question is easy to understand, it is easy to understand on your own but it is difficult to teach by studying it yourself. That's why we didn't find it on Striver's channel and on other channels too. There are a few on very small channels. This is a very important question. This is a little difficult to explain. Once you understand the logic it will come. But it is difficult for you to explain. So we will try. Whatever is difficult should be done. Will not leave you. It is an important question."
+    },
+    {
+      "start_time": 27.519,
+      "end_time": 62.31,
+      "text": "लास्ट तक देखिएगा। बने रहिएगा। चलिए। ये क्वेश्चन आपको बोलता क्या है? अभी तक हम लोग जो भी पढ़े थे ना हम उम्मीद कर रहे हैं कि आप लोग 31 32 देख के आ रहे होंगे। अ देख के आइएगा तो अच्छा रहेगा। तो अभी तक हम लोग क्या देखे थे कि हम लोग को एक रेंज मिलता था मर्ज इंटरवल में और हमको बोलता था कि रेंज को तुम ऐसा मर्ज कर दो कि उसमें नॉन ओवरलैपिंग ना रहे। उसके लिए हम लोग चेक करते थे कि कुछ ओवरलैप हो रहा है कि नहीं। एंड टू और स्टार्ट वन से उसको मर्ज कर देते थे। और फिर एक ऐसा क्वेश्चन आया था जिसमें एक रेंज खुद से इंसर्ट भी करना था और उसको करना था तो वो भी कर लिए थे। ये थोड़ा अलग है। ये क्वेश्चन में क्या बोलता है कि आपको दो तरीके की एरे दिया हुआ है। मतलब हर बार एक एरे मिलता था",
+      "source": "caption",
+      "english_text": "Will watch till the end. Will remain. Let go. What does this question tell you? Whatever we have read till now, we are hoping that you people will be coming after seeing 31 32. It would be good if you come and see. So what we had seen till now was that we used to get a range in the merge interval and we were asked to merge the range in such a way that there is no non-overlapping in it. For that we used to check whether anything was overlapping or not. They used to merge it from end two and start one. And then a question came in which one had to insert a range manually and if one had to do that, that too was done. This is a little different. What it says in the question is that you have been given two types of arrays. meaning an array was obtained every time"
+    },
+    {
+      "start_time": 62.32,
+      "end_time": 89.03,
+      "text": "जिसमें बहुत सारे रेंजज़ होते थे। यहां पे आपको दो एरे मिलेगा। क्या दो एरे मिलेगा? अरे बाप रे। दो बड़ा-बड़ा एरे मिलेगा जिसमें बहुत सारे रेंजज़ होंगे। अच्छा! आपको दोनों का इंटरसेक्शन बताना है। इंटरसेक्शन रेंजज़ बताने हैं। बाप रे। क्वेश्चन देख के ही हवा टाइट होने लगेगा लोगों का कि इंटरसेक्शन रेंजेस मतलब कि क्या बताना है, कैसे बताना है। इंटरसेक्शन सबसे पहले होता क्या है? इंटरसेक्शन माने क्या होता है?",
+      "source": "caption",
+      "english_text": "Which had many ranges. Here you will find two arrays. Will you get two arrays? Oh my god. You will get two big arrays which will have many ranges. Good! You have to tell the intersection of both. Intersection ranges have to be specified. Oh My God. As soon as one sees the question, people will start to feel uneasy about the intersection ranges of what to tell and how to tell. What is the first intersection? What is intersection?"
+    },
+    {
+      "start_time": 89.04,
+      "end_time": 123.27,
+      "text": "अगर मान लीजिए हम बोलते हैं कि हम 1:00 से 4:00 बजे तक फ्री रहते हैं। दोपहर के आप बोलते हैं कि हम इतना फ्री नहीं रह पाएंगे। मेरा कॉलेज है, मेरा एंड सेम है। हम 2:00 से 3:00 तक फ्री रहते हैं? ठीक है? हम दोनों कब फ्री रहते हैं? हम दोनों कब फ्री रहेंगे? लेकिन आप देख लीजिए। हम 1:00 बजे फ्री रहेंगे, 2:00 बजे फ्री रहेंगे, 3:00 बजे और 4:00 बजे भी फ्री रहेंगे। आप बोलते हैं कि हम बिजी हैं? हम 2:00 बजे फ्री रहेंगे और 3:00 बजे फ्री रहेंगे। दोनों किस-किस घंटे को फ्री रहेंगे? 2:00 बजे दोनों फ्री रहेंगे। वेरी गुड। 3:00 बजे दोनों फ्री रहेंगे। दोनों वेरी गुड। तो अगर कोई बोले कि टू टू थ्री",
+      "source": "caption",
+      "english_text": "If suppose we say that we are free from 1:00 to 4:00. In the afternoon you say that we will not be able to be so free. I have college, my end is same. We are free from 2:00 to 3:00? Ok? When are both of us free? When will we both be free? But you take a look. We will be free at 1:00, we will be free at 2:00, we will be free at 3:00 and 4:00 too. You say we are busy? We will be free at 2:00 and free at 3:00. At what hours will both be free? Both will be free at 2:00. very good. Both will be free at 3:00 pm. Both very good. So if someone says two two three"
+    },
+    {
+      "start_time": 123.28,
+      "end_time": 150.309,
+      "text": "टू टू थ्री में प्रत्युष और जो भी उसकी ऑडियंस है वो दोनों फ्री रहती है। तो इसमें कोई गलत बात नहीं होगी। टू टू थ्री दोनों लोग फ्री हैं। प्रत्युष वन से फोर फ्री है। ऑडियंस टू से थ्री फ्री है। लेकिन टू से थ्री दोनों फ्री हैं। इसी को इंटरसेक्शन बोलते हैं। इसी को क्या बोलते हैं? इंटरसेक्शन। इंटरसेक्शन मतलब कॉमन सेट में पढ़े थे ना ऐसा करके ये कॉमन एलिमेंट को इसको क्या बोलते थे? इंटरसेक्शन। कॉमन एलिमेंट। जब दोनों कब मिलते हैं? मतलब दोनों का कॉमन पार्ट क्या है? अच्छा। तो इसमें आपको यही करना है।",
+      "source": "caption",
+      "english_text": "In Two Two Three, both Pratyush and his audience remain free. So there would be nothing wrong in this. Two or three, both people are free. Pratyush is free for one. Audience two to three is free. But two to three both are free. This is called intersection. What is this called? Intersection. Intersection means we read it in a common set. By doing this, what was this common element called? Intersection. Common element. When do the two meet? Meaning, what is the common part of both? Good. So this is what you have to do in this."
+    },
+    {
+      "start_time": 150.319,
+      "end_time": 184.79,
+      "text": "इसमें आपको बहुत सारे रेंजज़ दिए हैं। लेकिन बस याद रहे इसमें आपको बहुत सारे ऐसे-ऐसे रेंजज़ दिए हैं। दो एरे हैं। मान लीजिए इसमें ऐसा रेंज है और अगला एरे भी ऐसा है। अगला एरे भी कुछ-कुछ ऐसा दिखता है। दोनों एरे खुद में सॉर्टेड है जो कि पूरा मर्ज इंटरवल इसी कांसेप्ट पे टिका हुआ है कि स्टार्ट टाइम से सॉर्टेड रहना चाहिए। ठीक है? ये भी अपने आप में सॉर्टेड है। सॉर्टेड सॉर्टेड आपस में रिलेशन नहीं है। अपने आप में सॉर्टेड है। मतलब ऐसा नहीं होगा कि ये वाले स्टार्ट और इस वाले स्टार्ट में कोई रिलेशन होगा। हो भी सकता है, नहीं भी हो सकता मालूम नहीं। लेकिन ये स्टार्ट टाइम से सॉर्टेड है। ऐसे-ऐसे करके सॉर्टेड है। ये भी अपने स्टार्ट टाइम से सॉर्टेड है। ऐसे करके ये भी सॉर्टेड है।",
+      "source": "caption",
+      "english_text": "You are given a lot of ranges in this. But just remember that you have been given many such ranges in this. There are two arrays. Suppose it has such a range and the next array is also like this. The next array also looks something like this. Both arrays are themselves sorted and the entire merge interval is based on the concept that they should remain sorted from start time. Ok? This is also sorted in itself. Sorted are not related to each other. Sorted in itself. It would not mean that there would be any relation between this start and that start. It may happen, it may not happen, I don't know. But it is sorted by start time. Sorted like this. This is also sorted by its start time. By doing this it is also sorted."
+    },
+    {
+      "start_time": 184.8,
+      "end_time": 218.71,
+      "text": "अच्छा। आपको दोनों को एक तरीके से मिला देना है और फिर उनका इंटरसेक्शन ढूंढना है। इंटरसेक्शन का मतलब क्या ढूंढना है? हम बताते हैं एग्जांपल से। मान लीजिए अ आपके पास ऐसे हैं कि एक जीरो से टू है एक एरे में और फिर फाइव से 10 है। अच्छा। यहां पे आपको वन से थ्री दिया हुआ है और सिक्स से नाइन दिया हुआ है। ऐसा दो रेंजेस दिए हुए हैं। इनका ड्राइंग बना के देखेंगे तो ज्यादा अच्छा रहेगा। ड्राइंग बना के अगर देखेंगे स्क्वायर स्क्वायर पे तो ज्यादा अच्छा रहेगा। देखिए पहला वाला क्या बोलता है? मेरा पहला रेंज है ज़ीरो से टू।",
+      "source": "caption",
+      "english_text": "Okay. You have to combine the two in some way and then find their intersection. What does intersection mean? We tell with examples. Let's say you have an array from zero to two and then five to 10. Good. Here you are given one to three and six to nine. Two such ranges are given. It would be better if we make their drawings and see them. It will be better if you make a drawing and see it square on square. See what the first one says? My first range is zero to two."
+    },
+    {
+      "start_time": 218.72,
+      "end_time": 251.27,
+      "text": "तो ज़ीरो से टू का एक अपने हिसाब से बॉक्स बना लीजिए कि ये ज़ीरो होगा ये टू होगा। अच्छा। दूसरा बोलता है वन से थ्री। तो वन कहां आएगा? वन कहीं यहां पे बीच में आएगा। थोड़ा आगे तक ये रहेगा। वन से थ्री। अच्छा। फिर ये बोलता है हम फाइव से 10। तो फाइव कहीं यहां पे स्टार्ट होगा और ये फाइव टू 10 जाएगा। ये बोलता है सिक्स से नाइन। तो सिक्स कहीं यहां पे स्टार्ट हो के यहीं पे रुक जाएगा। सॉरी। सिक्स थोड़ा फाइव से आगे से स्टार्ट होगा और 10 के थोड़ा पहले तक ही रुक जाएगा। तो कहीं ना कहीं ये ये होगा 6 टू न। अब आपको कॉमन कॉमन मतलब क्या है ना?",
+      "source": "caption",
+      "english_text": "So make a box from zero to two as per your choice, this will be zero and this will be two. Good. The second one says one to three. So where will the forest come from? The forest will come somewhere in between here. This will continue for some time. One to three. Good. Then he says we are five to 10. So five will start somewhere here and it will go five to 10. It says six to nine. So the six will start somewhere here and stop here. Sorry. The six will start a little before five and stop a little before 10. So somewhere this will be 6 to no. Now what does common mean to you?"
+    },
+    {
+      "start_time": 251.28,
+      "end_time": 277.909,
+      "text": "दोनों स्क्वायर जहां-जहां कवर हो रहा है वो आपका कॉमन पॉइंट है। फॉर एग्जांपल ये वाला पार्ट देखिए। ये वाला पार्ट और ये वाला पार्ट ये पार्ट देखिए। ये कॉमन पार्ट है। कॉमन पार्ट है देखिए। क्या है ये? इसका इसका रेंज क्या है? वन और टू वन से टू आपका कॉमन पार्ट है। उसी तरीके से यहां भी देखिए जहां पे दोनों दोनों स्क्वायर का जहां पे भी आ रहा है ना वो इंटरसेक्शन है।",
+      "source": "caption",
+      "english_text": "Wherever both the squares are covered is your common point. See this part for example. See this part and this part, this part. This is a common part. See, it is a common part. What is this? What is its range? One and two are your common part from one to two. In the same way, see here also, where both the squares are coming together, that is the intersection."
+    },
+    {
+      "start_time": 277.919,
+      "end_time": 312.71,
+      "text": "ड्राइंग बनाने से बहुत आसानी से समझ में आता है। ये देखिए इसका रेंज क्या होगा? 6 टू 9 6 टू 9 ये भी एक इंटरसेक्शन पॉइंट है। तो आपका आंसर में दोनों होना चाहिए। आपको एक एरे ही रिटर्न करना है रेंजेस का जिसमें दोनों रेंजज़ हो। 1 2 और 6 9 तो ये इस क्वेश्चन ये क्वेश्चन का मतलब है। तो समझ में आ गया ड्राइंग से? अच्छा। अब करें क्या? ड्राइंग बनाने से तो क्वेश्चन नहीं बनता है। ड्राइंग बना देंगे तो इंटरव्यू बोलेगा कि ठीक है ड्राइंग तो तुम बना दिए। अब करना क्या है? ठीक है? तो एक चीज देखिए हम लोग क्योंकि हम लोग बहुत दिनों से पैटर्न पढ़ रहे हैं। तो जब भी ऐसा कुछ क्वेश्चन आए ना तो आपके दिमाग में",
+      "source": "caption",
+      "english_text": "Making a drawing makes it very easy to understand. See what will be its range? 6 to 9 6 to 9 is also an intersection point. So your answer should have both. All you want to return is an array of ranges that contains both ranges. 1 2 and 6 9 So this is the meaning of this question. So did you understand the drawing? Good. What to do now? The question does not arise by making a drawing. If you make a drawing then the interviewer will say that it is okay, you have made the drawing. What to do now? Ok? So let us see one thing because we have been studying the patterns for a long time. So whenever such questions come to your mind"
+    },
+    {
+      "start_time": 312.72,
+      "end_time": 346.15,
+      "text": "कुछ चमकना चाहिए जो पहले पढ़े थे। पहले पढ़े थे उसको पूरा भूल नहीं जाना है। उसको पूरा सफाचट नीलमटा सन्नाटा नहीं करना है। उसको याद रखिए। एक कभी ये थोड़ा थोड़ा ऑलमोस्ट मतलब पूरा वैसा नहीं है लेकिन थोड़ा सा मर्ज टू सॉर्टेड एरे का क्वेश्चन लग रहा है। थोड़ा-थोड़ा मतलब वही है कि दो चीजें हैं। दोनों अपने आप में सॉर्टेड है। दोनों को थोड़ा मर्ज करना है और इंटरसे मतलब कुछ वैसा करना है। तो थोड़ा बहुत मर्ज टू सॉर्टेड आया क्वेश्चन है। एक बात याद रखिए कि कभी भी डीएसए में दो तरीके की चीजें होंगी और दोनों बोला जाएगा कि दोनों सॉर्टेड है। और दोनों से मिला के कुछ काम",
+      "source": "caption",
+      "english_text": "Something should shine through that was read earlier. Don't completely forget what you read earlier. He doesn't have to remain completely clear and blue. Remember that. Sometimes it is a little, almost, it does not mean completely the same, but it seems a little like a question of merge to sorted array. Little by little means two things. Both are sorted in themselves. Both have to be merged a bit and interse means something similar has to be done. So this is a bit of a merge to sorted question. Remember one thing that at any time there will be two types of things in DSA and both will be said to be sorted. And did some work with both of them"
+    },
+    {
+      "start_time": 346.16,
+      "end_time": 373.67,
+      "text": "करो। दोनों को या तो मर्ज कर दो, दोनों का यूनियन निकालो, दोनों का इंटरसेक्शन निकाल दो। दोनों का कॉम्प्लीमेंट निकाल दो, कुछ भी निकालो। हमेशा आपको टू पॉइंटर की तरफ सोचना चाहिए। कि टू पॉइंटर लग सकता है। अब टू पॉइंटर लगने का मतलब टू पॉइंटर कोई एल्गोरिदम नहीं होता है। टू पॉइंटर जस्ट होता है कि अगर आपके पास दो ऐसी चीजें हैं मतलब दो एरे हैं या दो लिंक लिस्ट है या कुछ भी है। एक यहां पे है और एक यहां पे है। टू पॉइंटर का क्या मतलब होता है कि आप एक आई यहां पे रखिए। एक j यहां पे रखिए।",
+      "source": "caption",
+      "english_text": "Do it. Either merge both, find the union of both, find the intersection of both. Take out the compliments of both of them, take out anything. You should always think about the two pointer. That may seem like a two pointer. Now, two pointer does not mean that two pointer is not an algorithm. Two pointer is just that if you have two such things i.e. two arrays or two linked lists or whatever. One is over here and one is over here. What does two pointer mean? You put an eye here. Put a j here."
+    },
+    {
+      "start_time": 373.68,
+      "end_time": 407.67,
+      "text": "दोनों को कंपेयर करिए। दोनों को कंपेयर करके कुछ करिए। रिजल्ट जो भी आपको बोला जाए वो करिए। उसके बाद या तो i + करिए या तो j + करिए। याद करिए मर्ज टू सॉर्टेड एरे का क्वेश्चन कैसे करते थे? दो एरे रहता था। i को जीरो पे रख थे। j को दूसरे से जीरो पे रखते थे। दोनों को कंपेयर करते थे। जो छोटा रहता था उसको रिजल्ट में डालते थे। i को बढ़ाते थे। बढ़ाते कैसे थे? जो भी छोटा होता था उसको बढ़ा देते थे। तो उसको डाल के उसको बढ़ा देते थे। यहां भी आपको कभी भी कभी भी दुनिया में ऐसा क्वेश्चन मिले ना कि दो चीजें हैं उनको और दोनों सॉर्टेड है। मोस्ट इंपॉर्टेंट बात कि दोनों सॉर्टेड है। मतलब ऐसा नहीं होना चाहिए कि दोनों अनसॉर्टेड है। फिर तो",
+      "source": "caption",
+      "english_text": "Compare both. Do something by comparing both. Whatever the result tells you, do it. After that either do i + or j +. Remember how we used to solve the question of Merge to Sorted Array? Lived in two areas. I was kept at zero. Used to keep j at zero from the second. Used to compare both. Whichever was smaller was included in the result. Used to increase i. How did you increase it? Whatever was small, they would increase it. So they used to increase it by putting it. Here also you may get such a question anytime in the world that there are two things and both are sorted. The most important thing is that both are sorted. It should not mean that both are unsorted. then then"
+    },
+    {
+      "start_time": 407.68,
+      "end_time": 436.55,
+      "text": "कोई फायदा ही नहीं है। सॉर्टेड है और दो चीजें हैं। तो आपको आई और जे की तरफ सोचना चाहिए टू पॉइंटर की तरफ। क्योंकि हम लोग पढ़े हैं। हम लोग इसीलिए 2 पॉइंटर इतना डीप में पढ़े थे कि आपको सोचना जरूर चाहिए। चलिए। तो आपको सोचना चाहिए। अच्छा सोचना तो सोचना अच्छी बात है। सोचना सबको चाहिए। लेकिन वो सोच भी लेंगे तो करेंगे क्या? मतलब हम क्या बोल रहे हैं कि मान लीजिए ऐसा बहुत सारा रेंजेस है। ऐसा बहुत सारा रेंजेस है। ये आपका एरे वन है। और आपका नीचे एरे टू भी होगा ऐसा करके।",
+      "source": "caption",
+      "english_text": "There is no benefit. Sorted and there are two things. So you should think towards I and J towards two pointer. Because we are educated people. That's why we read 2 pointers in such depth that you must think. Let go. So you should think. Thinking well is a good thing to think. Everyone needs to think. But even if they think about it, what will they do? Meaning what we are saying is that suppose there are so many ranges. There are so many ranges. This is your array one. And you will also have array two below by doing this."
+    },
+    {
+      "start_time": 436.56,
+      "end_time": 471.43,
+      "text": "ये आपका एरे टू है। तो आप बोले कि ठीक है हम सोच लेंगे कि हम अपना i को यहां पर रख दें और हमने j को यहां पर रख दें। उसके बाद क्या मतलब फिर क्या करेंगे? फिर क्या करते थे टू पॉइंटर में क्या? i वाले एलिमेंट मतलब इसको और इसको कंपेयर करके देखते थे। कंपेयर करके देखते थे कि इसमें कोई इंटरसेक्शन है कि नहीं। इसमें कोई इंटरसेक्शन है कि नहीं? तो चलिए अपना पूरा फोकस अभी पूरे क्वेश्चंस हटा दीजिए। भूल जाइए क्वेश्चन कितना भयानक लग रहा है देखने में भी। पूरा फोकस अपना इधर कर लीजिए कि अगर आप किसी आई पे हो और किसी जे पे हो मतलब आपके पास दो रेंजज़ हैं। एक और बात हम मर्ज इंटरवल में बताए थे ना कि पूरे मर्ज इंटरवल पैटर्न में आप दो ही",
+      "source": "caption",
+      "english_text": "This is your array two. So you said, okay, we will think that we will put our i here and we will put our j here. What do you mean what will you do after that? Then what did they do in two pointer? Elements with i means this and this were compared. Used to compare and see whether there is any intersection in it or not. Is there any intersection in it or not? So let's focus our attention on all the questions right now. Forget how scary the question looks. Put your full focus here that if you are on some I and some are on J, that means you have two ranges. One more thing we mentioned in the merge interval is that in the entire merge interval pattern you have only two"
+    },
+    {
+      "start_time": 471.44,
+      "end_time": 505.67,
+      "text": "रेंजज़ को कंपेयर कर सकते हो किसी टाइम में। एक टाइम पे दो रेंजज़ को कंपेयर कर सकते हैं। हम लोग पिछले क्वेश्चन में करते हुए आ रहे हैं मतलब एक स्टार्ट वन एंड वन स्टार्ट टू एंड टू। दो ही को कंपेयर कर सकते हो आप। अब दो से ज्यादा एक बार में नहीं कर सकते। एक बार में दो करेंगे फिर आगे चलेंगे। अच्छा। तो चलिए इसको थोड़ा बुद्धि लगाएं कि दो रेंजेस हैं। दो रेंजेस हैं। अच्छा। ये दोनों सॉर्टेड ऑर्डर में नहीं है। ये दोनों आपस में सॉर्टेड में नहीं है। अपने आ रहे है सॉर्टेड है। आपस में कोई रिलेशन नहीं है। अच्छा वो भी नहीं है। तो देखते हैं कि मर्ज मतलब इंटरसेक्शन मिलता है कि नहीं मिलता है। अब आपको हम तीन तरीके का केस दिखाएंगे ड्राइंग बना के। तो आप बताइएगा कि इंटरसेक्शन मिला कि",
+      "source": "caption",
+      "english_text": "You can compare ranges at any time. Can compare two ranges at one time. As we have been saying in the previous question, one starts one and one starts two and two. You can compare only two. Now you can't do more than two at a time. Do two at a time and then move on. Good. So let's put some intelligence into this that there are two ranges. There are two ranges. Good. These two are not in sorted order. These two are not sorted among themselves. Your coming is sorted. There is no relation with each other. Well, not that either. So let's see whether merge means intersection is obtained or not. Now we will show you three types of cases by making drawings. So can you tell whether the intersection was found?"
+    },
+    {
+      "start_time": 505.68,
+      "end_time": 539.91,
+      "text": "नहीं। अच्छा। मान लीजिए जो पहला है वो ऐसे होता है। पहला है ज़ीरो से टू। अच्छा। और दूसरा रेंज है फोर से फाइव। क्या कोई मर्ज दिख रहा है आपको? मतलब क्या कोई इंटरसेक्शन दिख रहा है? ना मतलब ऐसा कोई भी लाइन आप डॉ नहीं कर सकते जिसमें दोनों बॉक्सेस कवर हो जाए नहीं दिख रहा है। अच्छा अगर ये ऐसा रहे पहला रेंज पहला रेंज रहे कि मेरा पहला रेंज चलिए थ्री से फाइव ले लीजिए और मेरा जो दूसरा रेंज रहे वो ऐसा दिखे और मेरा दूसरा रेंज रहे कि ऐसा रहे",
+      "source": "caption",
+      "english_text": "No. Good. Suppose the first one is like this. The first is zero to two. Good. And the second range is four to five. Do you see any merger? Meaning, is any intersection visible? No, it means that you cannot draw any line in which both the boxes are covered. Well, if this is the first range, the first range should be like this: Let's take three to five, and my second range should be like this, and my second range should be like this."
+    },
+    {
+      "start_time": 539.92,
+      "end_time": 567.75,
+      "text": "वन से टू क्या कोई इंटरसेक्शन है ना दिख नहीं रहा है मतलब ऐसा कोई लाइन आप ड्रा नहीं कर सकते हैं जिसमें दोनों कवर हो जाए ना इसमें भी नहीं है अच्छा अब चलिए इसमें नहीं दिखा मतलब इसमें भी नहीं दिखा इसमें भी नहीं दिखा था अब देखिए अब शायद दिखेगा मान लीजिए ये ऐसा है। ये जीरो से फाइव तक है और ये ऐसा कुछ है। थ्री से सिक्स तक है। क्या कोई इंटरसेक्शन दिख रहा है? यस यस दिख रहा है। आप ऐसा एक लाइन बना सकते हैं जो दोनों को कवर करेगा।",
+      "source": "caption",
+      "english_text": "Is there any intersection from one to two? It is not visible, meaning you cannot draw such a line in which both are covered, it is not there in this too. Okay, now come on, it is not visible in this, meaning it is not visible in this too, it was not visible in this too, now see, now maybe it will be visible, let's assume it is like this. It's from zero to five and it's something like that. From three to six. Is there any intersection visible? Yes yes it is visible. You can create a line that covers both."
+    },
+    {
+      "start_time": 567.76,
+      "end_time": 600.07,
+      "text": "तो ये वाला पार्ट क्या इंटरसेक्शन है? 3 टू 5 बहुत इंटरेस्टिंग। 3 टू 5 दिखा। ठीक है? ड्राइंग से दिखा लेकिन दिखा तो चलिए कोई ऐसा ऐसा है अभी। ये आपका 3 2 6 है और ये ऐसा दिखता है। ये 1 2 चलिए फोर है। वन टू फोर है। क्या कोई इंटरसेक्शन है? हां दिख रहा है। दिख रहा है। एक आप लाइन ऐसा बना सकते हैं जो दोनों को कवर करेगा। ये देखिए कहां से कहां तक है ये? थ्री। यहां पे",
+      "source": "caption",
+      "english_text": "So what intersection is this part? 3 to 5 very interesting. 3 to 5 shown. Ok? It can be seen from the drawing but let's see that there is someone like this right now. This is your 3 2 6 and it looks like this. This is 1 2 let's four. One is two four. Is there an intersection? Yes it is visible. It is visible. One you can make a line that will cover both. See from where to where? Three. here on"
+    },
+    {
+      "start_time": 600.08,
+      "end_time": 633.19,
+      "text": "थ्री है और ये फोर है। बहुत इंटरेस्टिंग। ये 3 4 और ये 3 5 यहां तो बहुत जल्दी हम लोग देख ले रहे हैं क्योंकि ड्राइंग बना रहे हैं। लेकिन एक चीज ऑब्जर्व कीजिए। एक चीज ऑब्जर्व कीजिए। थ्री क्या है? इसका स्टार्ट टाइम जीरो है। इसका स्टार्ट टाइम थ्री है। यही है ना भाई? अच्छा। थ्री क्या है? थ्री दोनों का मैक्स है। दोनों का मैक्स है। अच्छा देखते हैं। फाइव क्या है? इसका स्टार्ट टाइम फाइव है। इसका स्टार्ट टाइम सिक्स है। ये दोनों का मीन है। कम से कम इस केस में तो ऐसा दिख रहा है। इस केस में तो दिख रहा",
+      "source": "caption",
+      "english_text": "There is three and this is four. Very interesting. These 3 4 and these 3 5 are being seen very quickly here because we are making the drawing. But observe one thing. Observe one thing. What is three? Its start time is zero. Its start time is three. This is it right brother? Good. What is three? Three is the max of both. Both have max. Ok let's see. What is five? Its start time is five. Its start time is six. This is the mean of both. At least it seems so in this case. It is visible in this case"
+    },
+    {
+      "start_time": 633.2,
+      "end_time": 667.19,
+      "text": "है। इस केस में भी देख लीजिए। थ्री। इसका स्टार्ट टाइम वन है। इसका स्टार्ट टाइम थ्री है। ये दोनों का मैक्स है। देखिए। अच्छा इसका एंड टाइम इसका मतलब इंटरसेक्शन का फोर है। सिक्स है। तो इंटरसेक्शन का आंसर फोर आता है। मतलब कि दोनों का मीन है। हां। यहां एक पैटर्न दिख रहा है। आप कोई भी इंटरसेक्शन बनाएंगे दुनिया में। चलिए एक और एक और बना लेते हैं इंटरसेक्शन। मान लीजिए बहुत बड़ा सा ऐसा है। और कहीं पे ये बीच में ऐसा आता है। ये 0 से 10 तक है। और ये मान लीजिए फोर टू सिक्स तक है। कहां",
+      "source": "caption",
+      "english_text": "Is. Look at this case also. Three. Its start time is one. Its start time is three. This is the max of both. See. Well, its end time means four of the intersection. It's six. So the answer of intersection is four. Meaning that both have Pisces. Yes. A pattern is visible here. You will make any intersection in the world. Let's make another and another and one more intersection. Suppose it is very big. And somewhere in the middle it comes like this. It ranges from 0 to 10. And let's say this is till four to six. where"
+    },
+    {
+      "start_time": 667.2,
+      "end_time": 700.47,
+      "text": "बनेगा इंटरसेक्शन? यहां बनेगा। देखिए ये वाला ये क्या आएगा इसका आंसर? फोर से सिक्स। फोर क्या है? मैक्स ऑफ़ स्टार्ट टाइम दोनों का 0 टू 4 मिन ऑफ़ 610। यस। मीन ऑफ़ 60। यस। पता चल गया ना? पता चल गया। अगर दो दो तरीके का रेंज दो तरीके का रेंज। अगर इंटरसेक्शन है तो इंटरसेक्शन पॉइंट यही होगा। इंटरसेक्शन पॉइंट यही होगा। क्या होगा? अगर आप लिखते हैं कि मेरा दो रेंजेज",
+      "source": "caption",
+      "english_text": "Will the intersection be built? Will be made here. Look at this one, what will be its answer? Four to six. What is four? Max start time of both 0 to 4 min of 610. Yes. Mean of 60. Yes. Did you find out? Came to know. If two two way range two way range. If there is an intersection then this will be the intersection point. This will be the intersection point. What will happen? If you write that I have two ranges"
+    },
+    {
+      "start_time": 700.48,
+      "end_time": 734.79,
+      "text": "हैं। कभी भी आप आई और जे को कंपेयर कर रहे थे ना तो ऑब्वियस सी बात है कि आपके पास एक स्टार्ट वन होगा। एक एंड वन होगा। एक स्टार्ट टू होगा। एक एंड टू होगा। अगर वो इंटरसेक्शन होगा। अगर वो इंटरसेक्शन होगा अभी तक हम लोग नहीं होगा तो बाद नहीं होगा तो नहीं होगा। देखेंगे क्या करेंगे। लेकिन अगर वो होगा तो वो ये होगा। मैक्स स्टार्ट वन एंड ऑफ स्टार्ट टू मीन सॉरी मीन ऑफ एंड वन एंड एंड टू यही होगा इंटरसेक्शन। अब ये क्यों होगा? देखिए बहुत लॉजिकल बात है। देखिए मर्ज इंटरवल रियल",
+      "source": "caption",
+      "english_text": "Are. Anytime you were comparing I and J, it is obvious that you would have a start one. There will be one and one. There will be a start. There will be one and two. If that intersection happens. If that intersection happens if we are not there yet, then if it doesn't happen later then it won't happen. We will see what we do. But if it happens, it will be this. Max start one end off start two mean sorry mean off end one end end two this will be the intersection. Now why would this happen? See, it is a very logical thing. see merge interval real"
+    },
+    {
+      "start_time": 734.8,
+      "end_time": 768.87,
+      "text": "लाइफ से बहुत ज्यादा कनेक्टेड है। हम वन से 6:00 बजे तक फ्री हैं। हम 1 से 6:00 बजे तक फ्री हैं। आप 2 से 7 तक फ्री हैं। तो हम दोनों कब तक फ्री रहेंगे? मतलब देखिए हम 1:00 बजे से फ्री हो जाते हैं लेकिन आप तो वन पे फ्री नहीं होते हैं नहीं। हम 2:00 बजे फ्री रहते हैं, आप 2:00 बजे फ्री रहते हैं। तो जो मैक्सिमम था, जो मैक्सिमम था वो बन गया एक कॉमन पॉइंट कि स्टार्ट टाइम ये है। अब हम 5:00 बजे 6:00 बजे तक फ्री रहते हैं। आप भी 6:00 बजे तक फ्री रहते हैं। आप 7:00 बजे भी फ्री है लेकिन हम 7:00 बजे नहीं हैं। तो जो भी पहले खत्म हुआ जो भी पहले खत्म हुआ वो उसका एंडिंग बन जाएगा। अरे ये बहुत बहुत",
+      "source": "caption",
+      "english_text": "Very connected to life. We are free from forest till 6:00. We are free from 1 to 6:00 pm. You are free from 2 to 7. So how long will we both be free? Meaning, see, we become free from 1:00 pm but you are not free on one day, no. We are free at 2:00, you are free at 2:00. So whatever was the maximum, whatever was the maximum became a common point that the start time is this. Now we are free from 5:00 pm to 6:00 pm. You are also free till 6:00 pm. You are free even at 7:00 but we are not at 7:00. So whatever ends first, whatever ends first will become its ending. oh this is very very"
+    },
+    {
+      "start_time": 768.88,
+      "end_time": 797.19,
+      "text": "रियल लाइफ है। हमको मालूम नहीं कि आप सोच पा रहे हैं कि नहीं। लेकिन बहुत ये बहुत सिंपल बात है कि मतलब एक आदमी 1:00 बजे से 6:00 बजे तक फ्री है। एक आदमी 2:00 बजे से 7:00 बजे तक फ्री है। तो दोनों कब फ्री है? मतलब आप तो दोस्त जो बाद में जो बाद में स्टार्ट करेगा जो बाद में फ्री होना स्टार्ट करेगा। ये बाद में फ्री होना स्टार्ट हुआ ना? तो इसके हिसाब से चलना पड़ेगा ना। वन आप 12:00 बजे से भी फ्री हो कोई फर्क नहीं पड़ता। लेकिन ये 2:00 बजे से फ्री है। अच्छा। और जो पहले जो पहले बिजी हो जाएगा उसके हिसाब से चलना पड़ेगा।",
+      "source": "caption",
+      "english_text": "This is real life. We don't know whether you are able to think or not. But it is a very simple thing that means a person is free from 1:00 pm to 6:00 pm. One man is free from 2:00 to 7:00. So when are both free? Meaning, you are the friend who will start being free later, who will start being free later. It started becoming free later, right? So we will have to act accordingly. It doesn't matter if you are free from 12:00 o'clock. But it is free from 2:00 pm. Good. And we will have to move according to whoever gets busy first."
+    },
+    {
+      "start_time": 797.2,
+      "end_time": 829.43,
+      "text": "अब ये पहले बिजी हो जाता है। वन से सिक्स वाला पहले बिजी हो गया। ये आदमी 7:00 बजे तक फ्री है। ये हो सकता है 10:00 बजे तक भी फ्री हो। कोई दिक्कत नहीं है। लेकिन दोनों कब फ्री रहेंगे? जो पहले चला जाएगा घर उसके हिसाब से चलना पड़ेगा। अच्छा आप इसको ऐसे भी समझिए। आप 1 pm में पार्टी में आए। किसी पार्टी में आप 1:00 pm में आए। आप 6:00 pm को अपने घर चले गए। आपका दोस्त 2:00 pm पे आया और वो 8:00 pm पे अपने घर गया। आप दोनों पार्टी में कब तक रहे थे? यहां से यहां तक। ये देखिए। तो जो बाद में आया, जो बाद में आया उसके हिसाब से क्या हुआ? स्टार्ट। और जो पहले घर चला",
+      "source": "caption",
+      "english_text": "Now he gets busy first. The one from one to six got busy first. This man is free till 7:00. It may be free even till 10:00 pm. There is no problem. But when will both be free? We will have to go home according to whoever goes home first. Well, you should understand it this way also. You came to the party at 1 pm. You came to a party at 1:00 pm. You went to your home at 6:00 pm. Your friend came at 2:00 pm and he went to his home at 8:00 pm. How long were you both in the party? From here to here. Look at this. So what happened next, according to what came later? Start. and whoever goes home first"
+    },
+    {
+      "start_time": 829.44,
+      "end_time": 857.67,
+      "text": "गया उसके हिसाब से एंड हुआ पार्टी। आप आप पहले आ गए थे कोई फर्क नहीं पड़ता। लेकिन दोनों कब आएंगे? दोनों दोनों आ जाएंगे तब ना तो जो बाद में आएगा उसके हिसाब से लेना पड़ेगा कि ये 2:00 pm पे आया तो 2:00 pm पे दोनों थे। अच्छा अब आप 6:00 बजे ही घर चले गए। वो हो सकता है 10:00 बजे तक रुका हुआ हो। कोई फर्क नहीं पड़ता। लेकिन आप तो 6:00 बजे चले गए ना। तो दोनों आदमी कब तक थे? जो पहले घर चला जाएगा वो ब्रेक कर देगा इसको कि नहीं अब दोनों नहीं है। इसीलिए इसीलिए इसको बोलते हैं कि ये मैक्स ऑफ़ स्टार्ट वन स्टार्ट टू और मेन ऑफ़ एंड वन एंड टू। तो ये तो हम लोग को पता चल गया कि इंटरसेक्शन निकालना कैसे है?",
+      "source": "caption",
+      "english_text": "The party ended accordingly. It doesn't matter if you came first. But when will both of them arrive? If both of them come then neither will have to be taken according to the one who comes later i.e. if he came at 2:00 pm then both of them were there at 2:00 pm. Well now you go home at 6:00. He might have stayed till 10:00. Doesn't matter. But you left at 6:00. So how long were the two men there? Whoever goes home first will break it or not, now both are not there. That's why it is called max of start one start two and main of end one and two. So now we know how to find the intersection?"
+    },
+    {
+      "start_time": 857.68,
+      "end_time": 884.71,
+      "text": "इंटरसेक्शन निकालना कैसे है? अगर हुआ तो अगर हुआ तो हर बार नहीं होगा। हर बार नहीं होगा। हर बार नहीं होगा। निकालना कैसे है? पहला पार्ट आप समझ गए। अच्छा इस क्वेश्चन में तीन पार्ट है। पहला पार्ट क्या था कि अगर इंटरसेक्शन है i और j में तो निकालना कैसे है? कैसे निकालना है? मैक्स ऑफ़ स्टार्ट वन स्टार्ट टू मीन ऑफ़ N1 N2। अच्छा। लेकिन अगर इंटरसेक्शन नहीं हुआ। सबसे पहली बात तो पता कैसे चलेगा? पता कैसे?",
+      "source": "caption",
+      "english_text": "How to find intersection? If it happens, if it happens, it will not happen every time. Will not happen every time. Will not happen every time. How to remove? You understood the first part. Well, this question has three parts. The first part was that if there is intersection between i and j then how to find it? How to remove? Max of Start One Start to Mean of N1 N2. Good. But if the intersection did not happen. First of all, how will we know? Know how?"
+    },
+    {
+      "start_time": 884.72,
+      "end_time": 917.11,
+      "text": "चलेगा। पता कैसे चलेगा कि इंटरसेक्शन है कि नहीं? अच्छा। इसमें यूज़ होगा हम जो अभी तक क्वेश्चन हम लोग करते हुए आ रहे हैं। मर्ज इंटरवल में क्या होता था? दो रेंज था। अ सॉरी ऐसा नहीं। दो रेंज होता था ना स्टार्ट मतलब लाइन बाय लाइन दो रेंज होता था जो कि स्टार्ट से सॉर्टेड होता था। हम लोग कैसे पता करते थे कि कोई चीज़ मर्ज होगा कि नहीं होगा? ये होता था 1 4 और ये होता था 25। कैसे पता चलता था कि ये दोनों मर्ज होगा कि नहीं? जो एंड टू है सॉरी एंड वन = 4 है। यहां पे स्टार्ट टू = 2 है।",
+      "source": "caption",
+      "english_text": "Will do. How to know whether there is an intersection or not? Good. The questions we have been asking till now will be used in this. What happened in the merge interval? There were two ranges. A sorry, not like that. There were two ranges, no start, meaning there were two ranges line by line, which were sorted from the start. How did we know whether something would be merged or not? This used to be 1 4 and this used to be 25. How was it known whether these two would merge or not? Which is end two, sorry end one = 4. Here start to = 2."
+    },
+    {
+      "start_time": 917.12,
+      "end_time": 947.67,
+      "text": "अगर एंड वन इज ग्रेटर दैन इक्वल टू स्टार्ट टू तो दोनों मर्ज होता था। दो दोनों मर्ज होता था। इसी का मतलब तो इंटरसेक्शन है। इसी का मतलब तो इंटरसेक्शन है। अगर आप इन दोनों को अगर आप इन दोनों को ड्राइंग बनाएंगे तो ये वन आएगा फोर आएगा। उसका ड्राइंग बनाइए तो 2a 5 आएगा। देखिए ना यही तो इंटरसेक्शन है। यही तो इंटरसेक्शन है। देखिए इसी का अगर दोनों ओवरलैप कर रहा है तभी तो इंटरसेक्शन होगा। इंटरसेक्शन कैसे होगा?",
+      "source": "caption",
+      "english_text": "If end one is greater than equal to start two then both were merged. The two would merge. This is what intersection means. This is what intersection means. If you draw these two, then one will come, four will come. If you make its drawing then you will get 2a 5. See, this is the intersection. This is the intersection. See, if both of them are overlapping then only there will be intersection. How will the intersection happen?"
+    },
+    {
+      "start_time": 947.68,
+      "end_time": 976.55,
+      "text": "एक स्क्वायर ऊपर है। x² थोड़ा-थोड़ा करके नीचे है तो यहां पे इंटरसेक्शन हो गया। अगर दोनों ओवरलैप ही नहीं करेगा। अगर दोनों ओवरलैप ही कभी जिंदगी में नहीं करेगा। अगर ये वन और फोर है और ये सेवन और 10 है तो अभी देखिए ये दोनों मर्ज नहीं हो सकता है क्योंकि फोर इज़ नॉट ग्रेटर दैन इक्वल टू से 7 तो 1 4 ऐसा बनेगा और 7 10 कहीं ऐसा बनेगा तो अभी कोई इंटरसेक्शन नहीं है। तो एक बात ओवरलैप इंटरसेक्शन बताता है। ओवरलैप अगर कर रहा है तो बोलेगा यस देयर इज़ इंटरसेक्शन।",
+      "source": "caption",
+      "english_text": "One square is up. x² is down little by little, so the intersection happened here. If both will not overlap. If both never overlap in life. If this is one and four and this is seven and 10, then see right now these two cannot merge because four is not greater than equal to two, then 7 will become 1 4 and if 7 10 will become like this, then there is no intersection yet. So one thing the overlap intersection tells us. If it is overlapping then it will say yes there is intersection."
+    },
+    {
+      "start_time": 976.56,
+      "end_time": 1010.31,
+      "text": "देयर इज़ इंटरसेक्शन। यस। दो रेंज अगर ओवरलैप कर रहा है। ओवरलैप वाला रूल हम लोग को मालूम है कि एंड वन इज़ ग्रेटर दैन इक्वल टू स्टार्ट वन। तो सॉरी एंड वन इज़ ग्रेटर दैन इक्वल टू स्टार्ट टू। तो ओवरलैप करेगा ही करेगा। मतलब इंटरसेक्शन करेगा ही करेगा। और इंटरसेक्शन का फार्मूला भी हमको मालूम है कि मीन और मैक्स करके इंटरसेक्शन निकाल देंगे। तो हम लोग को पता चल गया कि ठीक है वो ओवरलैप वाला लॉजिक से इंटरसेक्शन हम लोग पता कर सकते हैं। चलिए बहुत अच्छी बात है। लेकिन लेकिन एक अभी भी प्रॉब्लम है। पूरा ओवरलैप वाला लॉजिक किस बात पे टिका हुआ था कि स्टार्ट टाइम से सॉर्टेड हो। स्टार्ट टाइम",
+      "source": "caption",
+      "english_text": "There is an intersection. Yes. If two ranges are overlapping. Overlap rule: We know that end one is greater than equal to start one. So sorry and one is greater than equal to start with. So it will overlap. Meaning, intersection will definitely happen. And we also know the formula of intersection, we will find the intersection by taking mean and max. So we came to know that it is okay, we can find the intersection using overlap logic. Okay, this is a very good thing. But but there is still a problem. The entire overlap logic was based on sorting by start time. start time"
+    },
+    {
+      "start_time": 1010.32,
+      "end_time": 1044.789,
+      "text": "से सॉर्टेड हो। अगर आप इसको उल्टा कर दें अगर आप इसको 7 10 और 1 4 लिखें। तो अब देखिए अब आप अगर इसको वो वाला लॉजिक लगाएंगे तो अभी एंड वन 10 हो चुका है। 10 इज़ ग्रेटर दैन इक्वल टू स्टार्ट टू जो कि वन। तो अभी तो ये बोलेगा कि यस दे आर ओवरलैपिंग। लेकिन दोनों ओवरलैप नहीं करता है। 7 10 आगे होता है। ऐसा क्यों हुआ? क्योंकि ये अब स्टार्ट टाइम से सॉर्टेड नहीं रहा। उल्टा कर दिया आप इसको। तो स्टार्ट टाइम से सॉर्टेड होना बहुत जरूरी था ये रूल लगाने के लिए। लेकिन हम लोग को तो क्या पता है कि हम लोग के पास तो एक रेंज इस एरे का है जिस पे i है और एक रेंज दूसरे एरे का है जिस पे जे है। ये दोनों तो सॉर्टेड है नहीं मतलब गारंटी नहीं है। हो सकता है कि सॉर्टेड हो",
+      "source": "caption",
+      "english_text": "Be sorted by. If you reverse it, if you write it 7 10 and 1 4. So now see, if you apply that logic to it, now end one has become 10. 10 Is Greater Than Equal To Start Which Is One. So now it will say that yes they are overlapping. But the two do not overlap. 7 is ahead of 10. Why did this happen? Because it is no longer sorted by start time. You turned it upside down. So it was very important to be sorted from the start time to impose this rule. But what do we know that we have a range of this array which has i on it and a range of another array which has j on it. Both of these are sorted, which means they are not guaranteed. maybe sorted"
+    },
+    {
+      "start_time": 1044.799,
+      "end_time": 1077.909,
+      "text": "सकता है कि ना हो। तो हो सकता है कि ना हो। विजय तो हो सकता है ना। हो सकता है कि हो और हो सकता है कि ना हो। तो क्या-क्या हो सकता है? आई का अपना एक स्टार्ट वन होगा। स्टार्ट वन होगा, एंड वन होगा। होगा ना? रेंज है। जे का अपना एक स्टार्ट टू होगा। एंड टू होगा। हम लोग देख चुके हैं कि अगर ये सॉर्टेड रहता मतलब अगर स्टार्ट वन इज लेस दैन इक्वल टू स्टार्ट टू रहता तो हम लोग अपना फार्मूला लगा के देख लेते कि ओवरलैप करता है कि नहीं। अगर ओवरलैप करता है तो हम लोग को इंटरसेक्शन का फार्मूला ये पता है कि वैसा करके निकालना है। अच्छा। अगर ये ऐसा लेस है तब तो वेरी गुड है। लेकिन अगर ये लेस नहीं हुआ तो गलत",
+      "source": "caption",
+      "english_text": "It may not happen. So it may not happen. Victory is possible. It may happen and it may not happen. So what can happen? I will have my own start one. There will be one start and one end. Will it happen? Range is. Jay will have his own start. There will be an end to it. We have seen that if it was sorted i.e. if start one was less than equal to start two, then we would have applied our formula and seen whether it overlaps or not. If it overlaps, then we know the formula of intersection and we have to find it by doing so. Good. If it is such a lace then it is very good. But if it is not laced then it is wrong"
+    },
+    {
+      "start_time": 1077.919,
+      "end_time": 1112.31,
+      "text": "हो जाएगा। लेकिन अगर ये लेस नहीं हुआ अगर ये उल्टा भी हुआ तो क्या होगा? ज्यादा से ज्यादा क्या होगा? हम लोग क्या बोल रहे हैं? हम लोग का बेस्ट सिनेरियो क्या है? कि स्टार्ट वन इज़ लेस दैन इक्वल टू अगर स्टार्ट टू हुआ तो काम बन जाएगा। तो हम लोग अपना काम कर लेंगे। लेकिन अगर ऐसा नहीं भी होता है तो वर्स्ट केस सिनेरियो क्या है आपका? आपका स्टार टू छोटा होगा। स्टार टू छोटा होगा। यही हो सकता है ना? ज्यादा से ज्यादा क्या होगा? अरे आप बोल रहे हैं कि मेरा वन से फाइव यहां रहे और फोर से सिक्स यहां रहे तो हम अपना काम कर लेंगे। कैसे? कि वन और फोर ये दोनों सॉर्टेड हैं तो हम इसको ट्रीट कर सकते हैं कि ये दोनों एक एरे का दो रेंज है तो अपना",
+      "source": "caption",
+      "english_text": "It will be done. But what if it doesn't happen and if it happens the other way around? What is the maximum that will happen? What are we saying? What is our best scenario? That start one is less than equal to two, if start two then the work will be done. Then we will do our work. But even if this does not happen, what is your worst case scenario? Your star two will be small. Star Two will be smaller. This is what can happen, isn't it? What is the maximum that will happen? Hey, you are saying that if my one to five stays here and four to six stays here, then we will do our work. How? That one and four are both sorted, then we can treat it as two ranges of an array, so our"
+    },
+    {
+      "start_time": 1112.32,
+      "end_time": 1145.11,
+      "text": "कर लेंगे। अरे नहीं भी हुआ तो क्या होगा? नहीं भी हुआ। ज्यादा से ज्यादा आपकी ज़िंदगी में यही तो हो जाएगा। बहुत वर्स्ट केस में भी कि ये फोर से फाइव होगा और ये वन से थ्री होगा। यही होगा ना? अब ये सॉर्टेड नहीं है। लेकिन ये तो है सॉर्टेड। वन तो फोर से कम है। कुछ नहीं करना है। जो काम आप स्टार्ट वन एंड वन स्टार्ट टू एंड टू इन दोनों का बस अपना अपना अंडरस्टैंडिंग बदल दीजिए। कहने का क्या मतलब है कि अगर मान लीजिए आप स्टार्ट वन लिए और एंड वन लिए। आप स्टार्ट टू लिए और एंड टू लिए। यह आपका था। ठीक है? ध्यान से",
+      "source": "caption",
+      "english_text": "Will do it. Hey, what if it doesn't happen? It didn't happen either. At most this will happen in your life. Even in the worst case, it will be four to five and it will be one to three. This is what will happen, right? Now it is not sorted. But this is sorted. One is less than four. nothing to be done. Whatever work you start one and one start two and end two, just change your understanding of both. What does it mean to say that if suppose you take start one and end one. You took the start to and the end to. It was yours. Ok? carefully"
+    },
+    {
+      "start_time": 1145.12,
+      "end_time": 1170.87,
+      "text": "सुनिएगा। ये i से आता था। ये जे से आता था। अगर आप बोलते थे कि मेरा ये वाला और ये वाला सॉर्टेड ऑर्डर में है। स्टार्ट वन इज लेस दैन इक्वल टू स्टार्ट टू है। तो आप एंड वन इज ग्रेटर दैन इक्वल टू स्टार्ट टू वाला लॉजिक से चेक करते थे। अगर ऐसा नहीं हुआ अगर स्टार्ट टू छोटा है। मतलब स्टार्ट टू पहले आ रहा है। उल्टा कर दीजिए लॉजिक को। अगर ऐसा हो गया कभी कि स्टार्ट टू और एंड टू यहां रहे और स्टार्ट वन और एंड वन।",
+      "source": "caption",
+      "english_text": "Listen. It came from i. It came from J. If you said that this one and this one of mine are in sorted order. Start one is less than equal to start two. So you used to check and one is greater than equal to start with logic. If this does not happen if the start is small. Meaning start two is coming first. Turn the logic upside down. If it ever happens that Start Two and End Two remain here and Start One and End One remain here."
+    },
+    {
+      "start_time": 1170.88,
+      "end_time": 1204.31,
+      "text": "स्टार्ट टू अब छोटा है तो बस लॉजिक को उल्टा कर दीजिए। एंड टू इज ग्रेटर दैन इक्वल टू स्टार्ट वन लिख दीजिए। चेक कर लीजिए। ऐसा है ऐसा अगर है तो यस ओवरलैपिंग है। ओवरलैपिंग है। समझे? बस उल्टा कर दिया। अरे आपको बस आपको क्या चाहिए? आपको सॉर्टेड ऑर्डर में चाहिए ना। वो उससे फर्क तो नहीं पड़ता है कि हम i पहले आएगा कि j पहले आएगा। वो ij अलग-अलग रेंजज़ हैं। सॉर्टेड ऑर्डर में अगर है। अगर है स्टार्ट वन इज़ लेस दैन इक्वल टू स्टार्ट टू है। तब तो अपना नॉर्मल वाला लगाइए। नहीं तो, नहीं तो एल्स एल्स। अगर जे वाला ही छोटा है, जे वाला छोटा है, तो",
+      "source": "caption",
+      "english_text": "StartTo is now smaller so just reverse the logic. Write End Two is Greater than Equal to Start One. Please check. It's like that if it's like that then yes is overlapping. There is overlapping. Got it? Just turned it upside down. Hey you just want what you need? You want it in sorted order. It doesn't matter whether i comes first or j comes first. Those ij are different ranges. If in sorted order. If start one is less than equal to start two. Then use your normal one. Otherwise, otherwise else else. If J is the smallest, J is the smallest, then"
+    },
+    {
+      "start_time": 1204.32,
+      "end_time": 1238.71,
+      "text": "आई वाला बड़ा होगा। तो, आप ऐसा लगा दीजिए। एंड टू इक्वल टु स्टार्ट मतलब लेस दैन इक्वल टू स्टार्ट वन चेक कर लीजिए। आपको पता चल जाएगा। और इंटरसेक्शन का लॉजिक तो सेम रहेगा, इंटरसेक्शन तो क्या बोलता है कि मैक्स ऑफ दोनों स्टार्ट और मीन ऑफ़ दोनों एंड। ये तो सेम बोलता है। इसमें तो कोई फर्क पड़ेगा नहीं, तो ये कर लेंगे। तो ये हो गया आपका पार्ट टू। कि आई और चे पे। अब आपको बहुत पक्के तरीके से पता है कि चेक कैसे करना है। आपको देखना है कि कौन सा आई आई का स्टार्ट छोटा है कि जे का स्टार्ट छोटा है। उस हिसाब से अपना ओवरलैपिंग का लॉजिक लगा के ये वाला इंटरसेक्शन निकाल लेना है। अब सबसे इम्पोर्टेन्ट पार्ट पार्ट थ्री। इसीलिए हम बोल रहे हैं क्वेश्चन थोड़ा हार्ड है।",
+      "source": "caption",
+      "english_text": "The one coming will be bigger. So, you put it like this. End to equal to start means less than equal to start one check. you will find out. And the logic of intersection will remain the same, what the intersection says is max of both starts and mean of both ends. He speaks the same thing. It won't make any difference, so we will do it. So this is your part two. That came and on. Now you know for sure how to check. You have to see which Ii's start is smaller and which J's start is smaller. Accordingly, this intersection has to be found by applying our overlapping logic. Now the most important part, part three. That is why we are saying that the question is a bit hard."
+    },
+    {
+      "start_time": 1238.72,
+      "end_time": 1273.27,
+      "text": "क्वेश्चन थोड़ा समझाने में हार्ड है। थोड़ा है थोड़ा कॉम्प्लेक्स है। टू पॉइंटर में बड़ा एक रूल होता था कि आपको आई को बढ़ाना है या तो जे को बढ़ाना है। किसी एक को बढ़ाना पड़ेगा कि कोई किसी एक को बढ़ाए बिना कोई उपाय नहीं है। मतलब जब काम हो जाए तो या तो आई को बढ़ाइए या तो जे को बढ़ाइए। तभी तो क्वेश्चन खत्म होगा ना। अब इसमें आप इंटरसेक्शन निकाल दिए। मान लीजिए आप ओवरलैप वाला लॉजिक कर लिए। आपको पता चला कि कौन सा छोटा है, कौन सा बड़ा है? अह अब आप अब आप सब काम कर लिया। अपना आंसर भी लिख लिए। अब आप आई को बढ़ाएंगे कि जे को बढ़ाएंगे? ये कैसे पता चलेगा? किसको बढ़ाएंगे? किस एरे में बढ़ाएंगे? तो इसको समझने का भी ये देखिए पूरा, पूरा गेम ही",
+      "source": "caption",
+      "english_text": "The question is a bit difficult to explain. It's a little bit complex. There was a big rule in two pointer that you have to increase I or increase J. One has to be increased or there is no solution without increasing the other. Meaning, when the work is done, either increase I or increase J. Only then will the question end. Now you have removed the intersection in it. Suppose you have done overlap logic. Did you find out which one is smaller, which one is bigger? Ah now you now you are all done. Write down your answer also. Now will you increase I or J? How will this be known? Whom will you increase? In which array will you increase it? So to understand this, watch the entire game."
+    },
+    {
+      "start_time": 1273.28,
+      "end_time": 1298.71,
+      "text": "रियल लाइफ पे बेस्ड है। ठीक है? मान लीजिए आई वाला पार्ट ऐसा दिखता। वन और 10। ध्यान से देखिएगा सब समझ में आएगा। वन से 10 तक है। बहुत बड़ा पार्ट है। जे वाला पार्ट मान लीजिए कि ऐसा दिखता। ये वाला पार्ट मान लीजिए कि टू से फोर तक दिखता। ठीक है? और अगला अगला जो J का पार्ट है वो यहां से यहां तक है। सिक्स से 10 तक का पार्ट है। ठीक है? आपको पहला इंटरसेक्शन अभी पहला जे यहां रहेगा।",
+      "source": "caption",
+      "english_text": "Based on real life. Ok? Suppose the eye part looks like this. One and 10. If you look carefully you will understand everything. From one to 10. It's a very big part. Suppose the J part looks like this. Suppose this part was seen from two to four. Ok? And the next next part of J is from here to here. There are parts from six to 10. Ok? You'll get the first intersection right now, the first J will be here."
+    },
+    {
+      "start_time": 1298.72,
+      "end_time": 1331.909,
+      "text": "आई यहां रहेगा। तो पहला इंटरसेक्शन तो यहां मिल जाएगा आपको। ये वाला पार्ट में मिल जाएगा। ये वाला पार्ट में मिल जाएगा। इसका आंसर क्या होगा? मैक्सिमम ऑफ़ स्टार्ट टाइम्स टू। मिनिमम ऑफ़ एंड टाइम्स फोर और 10 का मिनिमम है फोर। टू फोर। एक आंसर मिल गया। अब आप किसको बढ़ाएंगे? जे यहां है और आई तो यहीं है ही। किसको बढ़ाएंगे आप? यहां आपको देख के बहुत ऑब्वियसली पता चल रहा है कि हम जे को यहां बढ़ाएंगे ताकि हम ये वाला भी चेक कर सकें। हर बार आप एरे ऑफ़ आई और बी ऑफ़ जे चेक कर रहे हैं ना। हर बार ए एक उधर का रेंज और एक इधर का रेंज दो ही रेंज चेक कर सकते हैं। तो आपको बहुत ऑब्वियस्ली नेचुरली पता चल रहा है ड्राइंग देख के कि",
+      "source": "caption",
+      "english_text": "I will stay here. So you will find the first intersection here. This one will be available in part. This one will be available in part. What will be the answer to this? Maximum of start times two. The minimum of and times four and the minimum of 10 is four. Two four. Found an answer. Who will you promote now? J is here and Ai is here. Who will you promote? It's very obvious to see here that we will increase J here so that we can check this one as well. Every time you are checking array of i and b of j right. Every time one can check only two ranges, one range there and one range here. So you are coming to know very obviously and naturally by looking at the drawing that"
+    },
+    {
+      "start_time": 1331.919,
+      "end_time": 1365.51,
+      "text": "इसको बढ़ाना चाहिए ताकि हमको ये भी मिले। अब ये इसका आंसर क्या आएगा? मैक्सिमम ऑफ़ वन एंड सिक्स सिक्स। मिनिमम ऑफ़ 10 एंड 10 व्हिच इज़ 10। तो इसका आंसर सिक्स टू 10 आएगा। तो ये यहां तो आपको नेचुरली पता चला कि हम J को बढ़ा के अगले पे ले जाएंगे और चेक करेंगे। लेकिन ये इसका मैथ्स क्या है? क्या लॉजिक है? इसका लॉजिक क्या है? इसका लॉजिक बहुत सिंपल है। देखिए इसका लॉजिक बहुत सिंपल है। मान लीजिए वही आदमी वाले एग्जांपल पे चलिए। हम अपना एक टाइम स्लॉट बताएं। हम बोले हैं कि हम 1:00 से 10 तक फ्री रहते हैं। 1:00 से 10:00 बजे तक फ्री रहते हैं।",
+      "source": "caption",
+      "english_text": "This should be increased so that we get this also. Now what will be the answer to this? Maximum of one and six six. Minimum of 10 and 10 which is 10. So the answer will be six to 10. So here you know naturally that we will increase J and take it to the next page and check. But what is its maths? What is the logic? What is the logic of this? Its logic is very simple. See its logic is very simple. Let us follow the example of the same man. Let us know your time slot. We have said that we are free from 1:00 to 10:00. Are free from 1:00 to 10:00."
+    },
+    {
+      "start_time": 1365.52,
+      "end_time": 1395.669,
+      "text": "आप अलग-अलग टाइम स्लॉट बताएं। आप बोले हैं कि हम टू से थ्री तक फ्री रहते हैं। फिर अपना फोर से सिक्स तक फ्री रहते हैं ऐसा। तो पहले आप अपना टू थ्री और मेरा 1 10 चेक करेंगे तो आपको मालूम चलेगा कि टू से थ्री तक तो दोनों फ्री रहते हैं वैरी गुड। उसके बाद आपको अपना नेक्स्ट टाइम स्लॉट चेक करना पड़ेगा। क्यों? क्यों आपको चेक करना पड़ेगा? क्योंकि आपका खत्म हो गया है। आपका जो एंड टाइम है आपका जो एंड टाइम है वो कम है मेरे से। कम है मेरे से।",
+      "source": "caption",
+      "english_text": "You tell different time slots. You have said that we are free from two to three. Then we remain free from four to six. So first you will check your 2, 3 and my 1, 10, then you will know that from 2 to 3, both are free, very good. After that you will have to check your next time slot. Why? Why do you have to check? Because yours is over. Your end time is less than mine. It is less than me."
+    },
+    {
+      "start_time": 1395.679,
+      "end_time": 1423.11,
+      "text": "आपका एंड टाइम क्या है? तीन मेरा इन अ टाइम 10 है। मेरा इन टाइम 10 है। तो अब आपको जरूरत है कि आप अपना नेक्स्ट टाइम स्लॉट चेक करके हमको बताएं क्योंकि हम तो फ्री हैं ही। हम तो मेरा तो अभी खत्म आया ही नहीं है। कहने का क्या मतलब है? हम तो बोल दिए हम वन से 10 फ्री हैं। आपका वो टाइम स्लॉट खत्म हो गया ना। आप बोले कि हम 2 से थ्री ही फ्री हैं तो ठीक है 2:00 से थ्री एक फ्री हैं आप और कब फ्री हैं? अब और हम आगे जाएंगे कि आप आगे जाएंगे? हम हो सकता है कि आगे 12:00 से 4:00 बजे तक भी फ्री हो एएम के। उससे फर्क नहीं पड़ता है।",
+      "source": "caption",
+      "english_text": "What is your end time? Three is my In a Time 10. My in time is 10. So now you need to check your next time slot and let us know because we are free. I am not finished yet. What does it mean to say? We said that we are 10 free from one. That time slot of yours is over, isn't it? You said that we are only free from 2:00 to 3:00, then it is okay, 2:00 to 3:00 is free, when else are you free? Now we will go further or will you go further? We may also be free from 12:00 to 4:00 AM. It doesn't matter."
+    },
+    {
+      "start_time": 1423.12,
+      "end_time": 1458.07,
+      "text": "आपका खत्म हुआ है ना? मेरा टाइम स्लॉट नहीं खत्म हुआ है। हम अभी फ्री ही बैठे हुए हैं। हम बोले हम 10:00 बजे तक फ्री हैं। भाई तुम बताओ अभी क्या है? तो आप बताएंगे कि हम 4:00 से 6:00 भी फ्री हैं। इसीलिए क्यों? क्योंकि आप मेरे से पहले खत्म हो गए हैं। जो एंड टाइम है ना आपका वो मेरे से छोटा है। तो जिसका भी एंड टाइम जिसका भी एंड टाइम छोटा हो आई और जे में से उसको बढ़ाना पड़ेगा। क्यों? समझिए। थोड़ा थोड़ा थोड़ा समझिए। थोड़ा लॉजिकल प्लीज समझिए। क्योंकि इसमें कोई उतना हार्ड मैथ्स नहीं है। ये सब ग्रेटर दैन लेस दैन का खेल है। लेकिन क्यों है? हम बोले कि हम वन सर्टेन फ्री हैं। आप बोले कि हम दो से तीन फ्री हैं। ठीक है? मान",
+      "source": "caption",
+      "english_text": "Is yours over? My time slot is not over. We are sitting free right now. We said we are free till 10:00. Brother, tell me what is happening now? So you will tell that we are free from 4:00 to 6:00 also. That's why why? Because you finished before me. Your end time is shorter than mine. So whichever end time is smaller, it will have to be increased from i and j. Why? Understand. Understand little by little. Understand a little logically please. Because there is no such hard maths in it. It's all a game of greater than less than. But why? We said that we are one certain free. You said that two to three of us are free. Ok? value"
+    },
+    {
+      "start_time": 1458.08,
+      "end_time": 1488.87,
+      "text": "लीजिए हम आपको कोचिंग पढ़ा रहे हैं। कोचिंग वाला एग्जांपल ले लीजिए। यस यस यस यस। कोचिंग वाला एग्जांपल ले लीजिए। हम कोचिंग में बैठ के पढ़ा रहे हैं। कब से? 1:00 बजे से 10:00 बजे तक। हम बैठ के अपना पढ़ाएंगे। आप तो हम पढ़ाना स्टार्ट किए 1:00 पी.m. पे। आप आए यहीं से घूमतेघमते 2:00 पी.m. ठीक है? आइए कोई बात नहीं है। आप पढ़े। 3:00 बजे आप चले गए। 3:00 बजे आप चले गए बोर हो के। ठीक है? हम पढ़ा रहे हैं। हम याद रखिए हम पढ़ा रहे हैं। हम तो 10:00 बजे तक पढ़ा रहे हैं। हम 10:00 बजे तक पढ़ा रहे हैं। हम यहां तक पढ़ाएंगे। हम",
+      "source": "caption",
+      "english_text": "Come, we are teaching you coaching. Take the example of coaching. Yes yes yes yes. Take the example of coaching. We are sitting and teaching in coaching. since when? From 1:00 pm to 10:00 pm. We will sit and teach ourselves. You and I will start teaching at 1:00 p.m. Pay. You came here wandering around 2:00 p.m. Ok? Come on, no problem. You read. At 3:00 you left. At 3:00 you left because you were bored. Ok? We are teaching. Remember we are teaching. We are teaching till 10:00. We are teaching till 10:00. We will teach till here. we"
+    },
+    {
+      "start_time": 1488.88,
+      "end_time": 1513.99,
+      "text": "10:00 pm तक पढ़ाएंगे। अब उसके बाद आपको आना पड़ेगा ना अगर पढ़ना है। आपको उस दिन पढ़ना है तो आप एक बार बाहर चले गए। अब आप पढ़ना स्टार्ट करेंगे ना फिर से 4:00 pm पे और फिर से 6:00 pm तक पढ़ेंगे। तो टीचर तो वही बैठा हुआ है। बच्चे अलग-अलग आ रहे हैं ना? तो आपको पढ़ना पड़ेगा। क्यों आपको पढ़ना पड़ेगा? क्योंकि आपका एंड टाइम कम था ना? हम तो फ्री हैं। हम तो बोल रहे हैं कि हम आगे तक भी फ्री हैं। मतलब ये जो ज़ीरो है, ये ज़ीरो यहां पे खत्म हो गया।",
+      "source": "caption",
+      "english_text": "Will teach till 10:00 pm. Now after that you will have to come if you want to study. If you have to study that day, you go out once. Now you will start reading again at 4:00 pm and will read again till 6:00 pm. So the teacher is sitting there. The children are coming separately, right? So you will have to read. Why do you have to study? Because your end time was less, right? We are free. We are saying that we are free till now also. Meaning, this zero has ended here."
+    },
+    {
+      "start_time": 1514.0,
+      "end_time": 1547.59,
+      "text": "ये यहां पे खत्म हो गया था। लेकिन ये पूरा रेंज खत्म नहीं हुआ है। रेंज आगे तक है। आपका रेंज खत्म हो गया। जे का रेंज खत्म हो गया तो जे को आगे जा के देखना पड़ेगा कि आगे कुछ होता है कि नहीं। क्योंकि आई तो चल रहा है। आई नहीं बोला था कि हम खत्म हो गए। आई क्यों ऐसा नहीं बोला था। इसका एंड टाइम और इसका एंड टाइम देखिए। 10 बड़ा है फोर्स है। तो ये बोल रहा है कि हम तो हैं अभी। हम तो बैठे हुए हैं भाई। तुम अपना अगला रेंज चेक कर लो मेरे से। हो सकता है तुम इसी में हो। मेरा बहुत बड़ा रेंज है तुमसे। तो हम हम आगे नहीं जाएंगे ये आगे चला जाएगा अगर आई को आगे कर देंगे तो इतना तो पूरा पार्ट छूट जाएगा ड्राइंग के अनुसार भी देखिए आप मान लीजिए ड्राइंग देखते हुए आ रहे हैं आप पहले ये बनाए फिर",
+      "source": "caption",
+      "english_text": "It ended here. But this entire range is not over. The range is further. Your range is over. When J's range is over, J will have to go ahead and see if anything happens next. Because it is going on. I didn't say that we were finished. Why didn't you say that? Look at its end time and its end time. 10 is big, it is force. So it is saying that we are here now. We are sitting brother. You check your next range with me. Maybe you are into this. I have a much bigger range than you. So we will not go ahead, this will go ahead, if we move I ahead, then the whole part will be missed. See also according to the drawing, suppose you are coming while looking at the drawing, first make this and then"
+    },
+    {
+      "start_time": 1547.6,
+      "end_time": 1582.149,
+      "text": "आप ये वाला बनाए ना फिर आप ये ग्रीन वाला पार्ट ये वाला ग्रीन पार्ट आप क्यों बना पाए ताकि क्योंकि आप आई को नहीं छोड़े थे आप जे को छोड़ के यहां से यहां गए थे तभी ये ग्रीन वाला पार्ट बन पाया आई को छोड़ देते तो ये ग्रीन वाला पार्ट नहीं बन पाता आई को आप यहीं से छोड़ देते अगर तो नहीं बन पाता इसीलिए इसीलिए तो ये था पार्ट थ्री की आगे कौन सा बढ़ेगा आई और जे में जिसका भी एन्ड टाइम कम होगा वो आगे आगे बढ़ेगा। चलिए अब बहुत सारा एग्जांपल हो गया। हमको मालूम है थोड़ा थोड़ा ओवरवेल्मिंग हो गया है। नहीं समझ में आया तो प्लीज बताइएगा। लेकिन हमको लगता है थोड़ा सा लॉजिकल है। थोड़ा सा रियल वर्ल्ड पे बेस्ड है कि थोड़ा आप सोचेंगे आपको समझ में आ जाएगा। इसमें कोई ऐसा हैवी",
+      "source": "caption",
+      "english_text": "You made this one, then you made this green part, why were you able to make this green part, because because you did not leave I, you left J and went from here, only then this green part was able to be made, if you had left I, this green part would not have been made, if I had left it from here, then it would not have been made, that is why this was part three: Who will move ahead, I and J, whoever has less end time will move ahead. चलिए अब बहुत सारा एग्जांपल हो गया। हमको मालूम है थोड़ा थोड़ा ओवरवेल्मिंग हो गया है। नहीं समझ में आया तो प्लीज बताइएगा। लेकिन हमको लगता है थोड़ा सा लॉजिकल है। थोड़ा सा रियल वर्ल्ड पे बेस्ड है कि थोड़ा आप सोचेंगे आपको समझ में आ जाएगा। इसमें कोई ऐसा हैवी"
+    },
+    {
+      "start_time": 1582.159,
+      "end_time": 1614.149,
+      "text": "एल्गोरिदम वैसा कुछ नहीं होता है। बड़ा सिंपल होता है। हम लोग को दो तीन चीजें समझ में आ गई। आपके पास होगा क्या? आपके पास दो चीजें होंगी। आइए इसका सूडो कोड और ड्राई रन देख लेते हैं जल्दी से। आपके पास दो चीजें होंगी। वेक्टर ऑफ़ वेक्टर ऑफ इंट a और वेक्टर वेक्टर इंट b ठीक है तो वेरी गुड तो इसके बाद आपको क्या करना है इसके बाद हम एक बार क्वेश्चन कर देते हैं आपको क्या",
+      "source": "caption",
+      "english_text": "एल्गोरिदम वैसा कुछ नहीं होता है। बड़ा सिंपल होता है। हम लोग को दो तीन चीजें समझ में आ गई। आपके पास होगा क्या? आपके पास दो चीजें होंगी। आइए इसका सूडो कोड और ड्राई रन देख लेते हैं जल्दी से। आपके पास दो चीजें होंगी। वेक्टर ऑफ़ वेक्टर ऑफ इंट a और वेक्टर वेक्टर इंट b ठीक है तो वेरी गुड तो इसके बाद आपको क्या करना है इसके बाद हम एक बार क्वेश्चन कर देते हैं आपको क्या"
+    },
+    {
+      "start_time": 1614.159,
+      "end_time": 1640.789,
+      "text": "करना है टू पॉइंटर में i = 0 इंट j = 0 वेरी गुड एक रिजल्ट स्टोर करने के लिए हम लोग बना लेंगे वेक्टर वेक्टर वेक्टर इंट रेस इसमें अपन रिजल्ट स्टोर करेंगे। अच्छा टू पॉइंटर में क्या करते थे? टू पॉइंटर में क्या करते थे? जब तक हां और इसको चेक कब तक करेंगे भाई? i a को चेक कर रहा है।",
+      "source": "caption",
+      "english_text": "करना है टू पॉइंटर में i = 0 इंट j = 0 वेरी गुड एक रिजल्ट स्टोर करने के लिए हम लोग बना लेंगे वेक्टर वेक्टर वेक्टर इंट रेस इसमें अपन रिजल्ट स्टोर करेंगे। अच्छा टू पॉइंटर में क्या करते थे? टू पॉइंटर में क्या करते थे? जब तक हां और इसको चेक कब तक करेंगे भाई? i a को चेक कर रहा है।"
+    },
+    {
+      "start_time": 1640.799,
+      "end_time": 1675.51,
+      "text": "j b को चेक कर रहा है। तो जब तक दोनों अंडर लिमिट्स रहेगा तभी तो चेक करेंगे ना। मान लीजिए एक पूरा एरे ही खत्म हो गया। एक पूरा एरे ही खत्म हो गया तो फिर क्या फर्क पड़ता है? मतलब एरे ही खत्म हो गया। मान लीजिए मान लीजिए हम कोचिंग टीचर हैं। मेरा एक फ्री वाला स्लॉट चल रहा था और बहुत सारे बच्चे थे जिनका नीचे स्लॉट चल रहा था। अब जब बच्चे ही खत्म हो गए तो हम पढ़ा के क्या करेंगे? मतलब उसमें तो कोई इंटरसेक्शन आएगा नहीं। नीचे वाला अगर खत्म हो गया तो एक बॉक्स ही खत्म हो गया तो इंटरसेक्शन तो दोनों से बनता है। तो एक बहुत लॉजिकल बात है कि वाइल दोनों अपने-अपने लिमिट्स में रहे। दोनों अपने-अपने लिमिट्स में ही रहे। अरे में ही रहे मतलब। ये सेम मर्ज टू सॉर्टेड अरे",
+      "source": "caption",
+      "english_text": "j b को चेक कर रहा है। तो जब तक दोनों अंडर लिमिट्स रहेगा तभी तो चेक करेंगे ना। मान लीजिए एक पूरा एरे ही खत्म हो गया। एक पूरा एरे ही खत्म हो गया तो फिर क्या फर्क पड़ता है? मतलब एरे ही खत्म हो गया। मान लीजिए मान लीजिए हम कोचिंग टीचर हैं। मेरा एक फ्री वाला स्लॉट चल रहा था और बहुत सारे बच्चे थे जिनका नीचे स्लॉट चल रहा था। अब जब बच्चे ही खत्म हो गए तो हम पढ़ा के क्या करेंगे? मतलब उसमें तो कोई इंटरसेक्शन आएगा नहीं। नीचे वाला अगर खत्म हो गया तो एक बॉक्स ही खत्म हो गया तो इंटरसेक्शन तो दोनों से बनता है। तो एक बहुत लॉजिकल बात है कि वाइल दोनों अपने-अपने लिमिट्स में रहे। दोनों अपने-अपने लिमिट्स में ही रहे। अरे में ही रहे मतलब। ये सेम मर्ज टू सॉर्टेड अरे"
+    },
+    {
+      "start_time": 1675.52,
+      "end_time": 1708.789,
+      "text": "वाला है। i &lt; j एंड j &lt; m अच्छा। सबसे पहला काम क्या करना था? सबसे पहला काम अभी दोनों को चेक करना है। तो सबसे पहला काम क्या करिए? स्टार्ट वन = एरे ऑफ़ आई ज़ीरो। एरे वाले को हम A वाले को स्टार्ट वन और एंड वन बोलेंगे। एंड वन इक्वल टू एरे ऑफ़ i वन। ठीक है? स्टार्ट टू J वाले को स्टार्ट टू बोल दीजिए अपने हिसाब से। B ऑफ़ J0 B वाला। एंड टू एंड टू = b ऑफ़ j ऑफ़ वन।",
+      "source": "caption",
+      "english_text": "वाला है। i &lt; j एंड j &lt; m अच्छा। सबसे पहला काम क्या करना था? सबसे पहला काम अभी दोनों को चेक करना है। तो सबसे पहला काम क्या करिए? स्टार्ट वन = एरे ऑफ़ आई ज़ीरो। एरे वाले को हम A वाले को स्टार्ट वन और एंड वन बोलेंगे। एंड वन इक्वल टू एरे ऑफ़ i वन। ठीक है? स्टार्ट टू J वाले को स्टार्ट टू बोल दीजिए अपने हिसाब से। B ऑफ़ J0 B वाला। एंड टू एंड टू = b ऑफ़ j ऑफ़ वन।"
+    },
+    {
+      "start_time": 1708.799,
+      "end_time": 1738.47,
+      "text": "ठीक? जो डिसाइड हुआ था वही करिए। क्या डिसाइड हुआ था? हम लोग को ओवरलैप चेक करना आता है। लेकिन ओवरलैप के लिए जरूरी क्या होता है? स्टार्ट वन इज़ लेस दैन इक्वल टू स्टार्ट टू। और इसका उल्टा केस भी हैंडल करना पड़ेगा। तो सबसे पहले एक चीज़ चेक कर लीजिए कि इफ स्टार्ट वन इज़ &lt; इक्वल टू स्टार्ट टू। चलिए, इसमें क्या करें? यह तो अच्छा केस है। यह तो अच्छा केस है ना? स्टार्ट वन इज़ लेस दैन इक्व स्टार्ट 2 ये तो अच्छा केस है। अच्छा अभी आपको चेक करना है। अभी आपको चेक करना है कि ओवरलैप हो रहा है कि नहीं।",
+      "source": "caption",
+      "english_text": "ठीक? जो डिसाइड हुआ था वही करिए। क्या डिसाइड हुआ था? हम लोग को ओवरलैप चेक करना आता है। लेकिन ओवरलैप के लिए जरूरी क्या होता है? स्टार्ट वन इज़ लेस दैन इक्वल टू स्टार्ट टू। और इसका उल्टा केस भी हैंडल करना पड़ेगा। तो सबसे पहले एक चीज़ चेक कर लीजिए कि इफ स्टार्ट वन इज़ &lt; इक्वल टू स्टार्ट टू। चलिए, इसमें क्या करें? यह तो अच्छा केस है। यह तो अच्छा केस है ना? स्टार्ट वन इज़ लेस दैन इक्व स्टार्ट 2 ये तो अच्छा केस है। अच्छा अभी आपको चेक करना है। अभी आपको चेक करना है कि ओवरलैप हो रहा है कि नहीं।"
+    },
+    {
+      "start_time": 1738.48,
+      "end_time": 1771.43,
+      "text": "ओवरलैप से ही आपको मालूम चलेगा कि इंटरसेक्शन होगा कि नहीं। ओवरलैप कैसे चेक करते थे? इफ एंड वन इज़ ग्रेटर दैन इक्वल टू स्टार्ट टू। यस। अगर ऐसा है तो ओवरलैप होगा। ओवरलैप होगा। ओवरलैप की क्या आएगी? ओवरलैप का क्या वैल्यू आएगा? मालूम था। मैक्स ऑफ़ स्टार्ट वन स्टार्ट टू। यस। अगली एंड वैल्यू क्या आएगी? ओवरलैप रीजन की सॉरी मिनिमम मिनिमम मिनिमम ऑफ एंड वन एंड टू रिजल्ट",
+      "source": "caption",
+      "english_text": "ओवरलैप से ही आपको मालूम चलेगा कि इंटरसेक्शन होगा कि नहीं। ओवरलैप कैसे चेक करते थे? इफ एंड वन इज़ ग्रेटर दैन इक्वल टू स्टार्ट टू। यस। अगर ऐसा है तो ओवरलैप होगा। ओवरलैप होगा। ओवरलैप की क्या आएगी? ओवरलैप का क्या वैल्यू आएगा? मालूम था। मैक्स ऑफ़ स्टार्ट वन स्टार्ट टू। यस। अगली एंड वैल्यू क्या आएगी? ओवरलैप रीजन की सॉरी मिनिमम मिनिमम मिनिमम ऑफ एंड वन एंड टू रिजल्ट"
+    },
+    {
+      "start_time": 1771.44,
+      "end_time": 1804.31,
+      "text": "में इसको क्या करेंगे? पुश बैक पुश बैक क्या? एस और ई को ये उसका इंटरसेक्शन आएगा। इसको बंद करेंगे। अब इसको बंद करेंगे। एल्स एल्स इसका एल्स लिखना पड़ेगा। इसका एल्स लिखना पड़ेगा। एल्स एल्स का इसका मतलब क्या होगा कि स्टार्ट टू इज &lt; इक्वल टू स्टार्ट वन आ गया है किसी तरीके से इसका वही हम लोग डिस्कस किए थे याद कीजिए i और j वाला j वाला पार्ट ही छोटा हो गया तो कोई बात नहीं पूरे लॉजिक को ही उल्टा कर देंगे मान लेंगे कि j वाला वन है और ये टू है कुछ नहीं करेंगे इफ",
+      "source": "caption",
+      "english_text": "में इसको क्या करेंगे? पुश बैक पुश बैक क्या? एस और ई को ये उसका इंटरसेक्शन आएगा। इसको बंद करेंगे। अब इसको बंद करेंगे। एल्स एल्स इसका एल्स लिखना पड़ेगा। इसका एल्स लिखना पड़ेगा। एल्स एल्स का इसका मतलब क्या होगा कि स्टार्ट टू इज &lt; इक्वल टू स्टार्ट वन आ गया है किसी तरीके से इसका वही हम लोग डिस्कस किए थे याद कीजिए i और j वाला j वाला पार्ट ही छोटा हो गया तो कोई बात नहीं पूरे लॉजिक को ही उल्टा कर देंगे मान लेंगे कि j वाला वन है और ये टू है कुछ नहीं करेंगे इफ"
+    },
+    {
+      "start_time": 1804.32,
+      "end_time": 1837.51,
+      "text": "यहां पे लिखे थे एंड वन इज़ &gt; इक्वल टार टू अब क्योंकि स्टार टू छोटा है इफ एंड टू इज़ &gt; इक्वल टू स्टार्ट वन जस्ट इसको उल्टा कर दिया मतलब अंडर अंडरस्टैंडिंग उल्टा कर दिए। जो लेफ्ट में रेंज था उसको राइट में कर दिया। राइट वाले को लेफ्ट में कर दिया और चेक कर लिए। वो कोई फर्क नहीं पड़ता। तो वेरिएबल है ना सब। चलिए अगर ऐसा है तो ओवरलैप हो रहा है। तो ये ये तो सेम रहेगा। ये तो सेम रहेगा। इसमें तो कोई दो राय है नहीं। मैक्स ऑफ़ स्टार्ट वन एंड स्टार्ट टू। E क्या आता था? मिन मीन। यस जो पहले खत्म होगा उसके हिसाब से करना",
+      "source": "caption",
+      "english_text": "यहां पे लिखे थे एंड वन इज़ &gt; इक्वल टार टू अब क्योंकि स्टार टू छोटा है इफ एंड टू इज़ &gt; इक्वल टू स्टार्ट वन जस्ट इसको उल्टा कर दिया मतलब अंडर अंडरस्टैंडिंग उल्टा कर दिए। जो लेफ्ट में रेंज था उसको राइट में कर दिया। राइट वाले को लेफ्ट में कर दिया और चेक कर लिए। वो कोई फर्क नहीं पड़ता। तो वेरिएबल है ना सब। चलिए अगर ऐसा है तो ओवरलैप हो रहा है। तो ये ये तो सेम रहेगा। ये तो सेम रहेगा। इसमें तो कोई दो राय है नहीं। मैक्स ऑफ़ स्टार्ट वन एंड स्टार्ट टू। E क्या आता था? मिन मीन। यस जो पहले खत्म होगा उसके हिसाब से करना"
+    },
+    {
+      "start_time": 1837.52,
+      "end_time": 1868.23,
+      "text": "पड़ेगा। एंड वन एंड टू और रेस्ट डॉट पुश बैक देखिए ये कॉपी में कोड लिखने का आदत डालिए। कॉपी में कोड लिखने का आदत डालिए। कंप्यूटर पे खटखट करने से नहीं होगा और इसको बंद कर दिए। सब हो गया। सब हो गया। आई और जे देख लिए। आई और जे को देख लिए कि कौन छोटा है। उसके हिसाब से ओवरलैपिंग निकाल लिए। अगर ओवरलैपिंग है तो रिजल्ट में पुश भी कर दिए। अब बात आती है आई को बढ़ाएं कि जे को बढ़ाएं। क्या डिसाइड हुआ था? जो पहले खत्म हो जाएगा। जो पहले खत्म हो जाएगा उसको बढ़ाना पड़ेगा। क्यों?",
+      "source": "caption",
+      "english_text": "पड़ेगा। एंड वन एंड टू और रेस्ट डॉट पुश बैक देखिए ये कॉपी में कोड लिखने का आदत डालिए। कॉपी में कोड लिखने का आदत डालिए। कंप्यूटर पे खटखट करने से नहीं होगा और इसको बंद कर दिए। सब हो गया। सब हो गया। आई और जे देख लिए। आई और जे को देख लिए कि कौन छोटा है। उसके हिसाब से ओवरलैपिंग निकाल लिए। अगर ओवरलैपिंग है तो रिजल्ट में पुश भी कर दिए। अब बात आती है आई को बढ़ाएं कि जे को बढ़ाएं। क्या डिसाइड हुआ था? जो पहले खत्म हो जाएगा। जो पहले खत्म हो जाएगा उसको बढ़ाना पड़ेगा। क्यों?"
+    },
+    {
+      "start_time": 1868.24,
+      "end_time": 1902.63,
+      "text": "क्योंकि वो पहले खत्म हो गया है। बाकी तो चल रहा है ना। वो तो बोल रहा है कि हम अभी भी फ्री हैं। आप बोले कि हम खत्म हो गए हैं। तो आपको आगे बढ़ना पड़ेगा। आपको कुछ करना पड़ेगा। क्या करते थे? इफ एंड वन इज ग्रेटर दैन इक्वल टू एंड टू। एंड टू एंड वन इज़ ग्रेटर दैन या चलिए लेस दैन करके लिखिएगा ज्यादा अच्छा लगेगा। जो पहले खत्म हुआ। जो पहले खत्म हुआ। इफ एंड वन इज़ लेस दैन इक्वल टू एंड टू। इसका मतलब कौन है? i वाला पहले खत्म हुआ होगा। i प्लस प्लस एल्स j + इसका मतलब जे खत्म हुआ",
+      "source": "caption",
+      "english_text": "क्योंकि वो पहले खत्म हो गया है। बाकी तो चल रहा है ना। वो तो बोल रहा है कि हम अभी भी फ्री हैं। आप बोले कि हम खत्म हो गए हैं। तो आपको आगे बढ़ना पड़ेगा। आपको कुछ करना पड़ेगा। क्या करते थे? इफ एंड वन इज ग्रेटर दैन इक्वल टू एंड टू। एंड टू एंड वन इज़ ग्रेटर दैन या चलिए लेस दैन करके लिखिएगा ज्यादा अच्छा लगेगा। जो पहले खत्म हुआ। जो पहले खत्म हुआ। इफ एंड वन इज़ लेस दैन इक्वल टू एंड टू। इसका मतलब कौन है? i वाला पहले खत्म हुआ होगा। i प्लस प्लस एल्स j + इसका मतलब जे खत्म हुआ"
+    },
+    {
+      "start_time": 1902.64,
+      "end_time": 1935.269,
+      "text": "होगा और वाइल लूप बंद कर देंगे लास्ट में जाके क्या? रिटर्न रेस ये इसका कोड है। देख लीजिए। कोड लिखने का आदत डालिए। बार-बार बोल रहा है कॉपी में। कॉपी में कोड लिखने का आदत डालिए। कॉपी में ड्राई रन करने का आदत डालिए। समझे? ये इसका छोटा सा कोड है। ऐसा करेंगे। आइए इसको जल्दी से ड्राई रन करें। जल्दी एकदम फटाक से इसको ड्राई रन कर देंगे। आइए। मान लीजिए ऐसा एरे है 0 टू 2 है, 5 टू 10 है और 13 टू 23 है। तीन ही रखिए। ये वन से",
+      "source": "caption",
+      "english_text": "होगा और वाइल लूप बंद कर देंगे लास्ट में जाके क्या? रिटर्न रेस ये इसका कोड है। देख लीजिए। कोड लिखने का आदत डालिए। बार-बार बोल रहा है कॉपी में। कॉपी में कोड लिखने का आदत डालिए। कॉपी में ड्राई रन करने का आदत डालिए। समझे? ये इसका छोटा सा कोड है। ऐसा करेंगे। आइए इसको जल्दी से ड्राई रन करें। जल्दी एकदम फटाक से इसको ड्राई रन कर देंगे। आइए। मान लीजिए ऐसा एरे है 0 टू 2 है, 5 टू 10 है और 13 टू 23 है। तीन ही रखिए। ये वन से"
+    },
+    {
+      "start_time": 1935.279,
+      "end_time": 1967.99,
+      "text": "टू है, फाइव से फाइव है, एट से 10 है। ठीक है? शुरुआत में शुरुआती दौर में आपका आई यहां पे है और जे यहां पे है। आइए। ठीक है? चलिए ड्राई रन करते हैं। i वहां पे है। तो इसको हम s1 स्टार्ट वन को s1 लिखेंगे और इसको n2 लिखेंगे। क्या आएगा? 0 2 s2 क्या आएगा? वन। E2 क्या आएगा? टू। कौन सा है? सबसे पहले डिसाइड करते हैं कि कौन सा छोटा है? देखिए ये छोटा है। s1 वाला छोटा है तो हम लोग नॉर्मल वाले से चेक करेंगे कि क्या? E1 इज़ ग्रेटर दैन",
+      "source": "caption",
+      "english_text": "टू है, फाइव से फाइव है, एट से 10 है। ठीक है? शुरुआत में शुरुआती दौर में आपका आई यहां पे है और जे यहां पे है। आइए। ठीक है? चलिए ड्राई रन करते हैं। i वहां पे है। तो इसको हम s1 स्टार्ट वन को s1 लिखेंगे और इसको n2 लिखेंगे। क्या आएगा? 0 2 s2 क्या आएगा? वन। E2 क्या आएगा? टू। कौन सा है? सबसे पहले डिसाइड करते हैं कि कौन सा छोटा है? देखिए ये छोटा है। s1 वाला छोटा है तो हम लोग नॉर्मल वाले से चेक करेंगे कि क्या? E1 इज़ ग्रेटर दैन"
+    },
+    {
+      "start_time": 1968.0,
+      "end_time": 2001.99,
+      "text": "इक्वल टू s2। यस यस इट इज़ इट इज़ इट इज़। तो मर्ज होगा। मर्ज होगा। पक्का मर्ज होगा। मर्ज का आंसर क्या आएगा? स्टार्ट दोनों स्टार्ट का मैक्सिमम। ज़ीरो और वन का मैक्सिमम क्या है? वन। दोनों एंड का मिनिमम टू और टू का मिनिमम टू। तो आपका एक आंसर हो गया वन टू। एक आंसर क्या हो गया आपका? 1 2 ये आपका आंसर। ठीक है? सब हो गया। हो गया? बढ़ाएंगे किसको? जो पहले खत्म हो जाएगा उसको बढ़ाएंगे। जो पहले खत्म हो जाएगा उसको बढ़ाएंगे। तो यहां देखिए यहां दोनों सेम टाइम पे खत्म हो रहा है। तो सेम टाइम पे खत्म होने को हैंडल कर लिया था। किसी को भी बढ़ा दीजिए। किसी को बढ़ा दीजिए। कोई फर्क नहीं पड़ेगा। I को बढ़ा लीजिए। I को",
+      "source": "caption",
+      "english_text": "इक्वल टू s2। यस यस इट इज़ इट इज़ इट इज़। तो मर्ज होगा। मर्ज होगा। पक्का मर्ज होगा। मर्ज का आंसर क्या आएगा? स्टार्ट दोनों स्टार्ट का मैक्सिमम। ज़ीरो और वन का मैक्सिमम क्या है? वन। दोनों एंड का मिनिमम टू और टू का मिनिमम टू। तो आपका एक आंसर हो गया वन टू। एक आंसर क्या हो गया आपका? 1 2 ये आपका आंसर। ठीक है? सब हो गया। हो गया? बढ़ाएंगे किसको? जो पहले खत्म हो जाएगा उसको बढ़ाएंगे। जो पहले खत्म हो जाएगा उसको बढ़ाएंगे। तो यहां देखिए यहां दोनों सेम टाइम पे खत्म हो रहा है। तो सेम टाइम पे खत्म होने को हैंडल कर लिया था। किसी को भी बढ़ा दीजिए। किसी को बढ़ा दीजिए। कोई फर्क नहीं पड़ेगा। I को बढ़ा लीजिए। I को"
+    },
+    {
+      "start_time": 2002.0,
+      "end_time": 2034.789,
+      "text": "क्या कीजिए? I को बढ़ा लीजिए। I को यहां से उठा के यहां कर दीजिए। इसको काटिए। i को यहां ले आइए। चलिए अगले वाला। मर्ज टू सॉर्टेड में भी यही करते हैं। दोनों इक्वल था तो किसी को भी बढ़ा दे। कोई फर्क नहीं पड़ता था। चलिए अब फिर से लिखिए। s1 = 5 e1 = 10 j तो सेम है। तो j तो वही रहेगा। s2 = 1 e2 = 2। अब देखिए s2 इज़ &lt;= s1 है। s2 इज़ &lt;= s1 है। तो आप उल्टा ओवरलैपिंग चेक करेंगे कि क्या e2 इज़ ग्रेटर दैन इक्वल टू - s1? क्या e2 इज ग्रेटर दैन",
+      "source": "caption",
+      "english_text": "क्या कीजिए? I को बढ़ा लीजिए। I को यहां से उठा के यहां कर दीजिए। इसको काटिए। i को यहां ले आइए। चलिए अगले वाला। मर्ज टू सॉर्टेड में भी यही करते हैं। दोनों इक्वल था तो किसी को भी बढ़ा दे। कोई फर्क नहीं पड़ता था। चलिए अब फिर से लिखिए। s1 = 5 e1 = 10 j तो सेम है। तो j तो वही रहेगा। s2 = 1 e2 = 2। अब देखिए s2 इज़ &lt;= s1 है। s2 इज़ &lt;= s1 है। तो आप उल्टा ओवरलैपिंग चेक करेंगे कि क्या e2 इज़ ग्रेटर दैन इक्वल टू - s1? क्या e2 इज ग्रेटर दैन"
+    },
+    {
+      "start_time": 2034.799,
+      "end_time": 2067.829,
+      "text": "इक्वल टू - s1? नो, नो, नो। ओवरलैप नहीं होगा। कोई ओवरलैप नहीं की जरुरत नहीं है। अब बढ़ाना किसको है? ये 10 पे खत्म होगा या टू पे खत्म होगा? जो पहले खत्म होगा उसको बढ़ाओ, जे को बढ़ाओ, J को बढ़ाओ, J को यहां कर दो। चलिए। अगले बार आइए। यहां पे आइए। क्या है? s1 = i तो सेम था। E1 = 10. S2 = 5, E2 = 5। दोनों सेम है। S1 S2 दोनों सेम हैं। तो मान लीजिए कि S1 &lt; = S2 ही है। और नॉर्मली अपना कर लीजिए। क्या मेरा E1 इज़ ग्रेटर दैन इक्वल टू S2? यस यस यस। क्या",
+      "source": "caption",
+      "english_text": "इक्वल टू - s1? नो, नो, नो। ओवरलैप नहीं होगा। कोई ओवरलैप नहीं की जरुरत नहीं है। अब बढ़ाना किसको है? ये 10 पे खत्म होगा या टू पे खत्म होगा? जो पहले खत्म होगा उसको बढ़ाओ, जे को बढ़ाओ, J को बढ़ाओ, J को यहां कर दो। चलिए। अगले बार आइए। यहां पे आइए। क्या है? s1 = i तो सेम था। E1 = 10. S2 = 5, E2 = 5। दोनों सेम है। S1 S2 दोनों सेम हैं। तो मान लीजिए कि S1 &lt; = S2 ही है। और नॉर्मली अपना कर लीजिए। क्या मेरा E1 इज़ ग्रेटर दैन इक्वल टू S2? यस यस यस। क्या"
+    },
+    {
+      "start_time": 2067.839,
+      "end_time": 2098.31,
+      "text": "आंसर में आएगा? आंसर में मर्ज इंटरवल होगा। मर्ज पक्का होगा लेकिन इंटरसेक्शन आएगा क्या? इन दोनों का मैक्सिमम 10 इन दोनों का मिनिमम सॉरी सॉरी। दोनों स्टार्ट का मैक्सिमम। दोनों स्टार्ट का मैक्सिमम फाइव। दोनों इसका मिनिमम फाइव, तो एक आंसर आपका हो गया 5 लिख दीजिए। 5, ठीक? अब बढ़ाने की बारी आती है। कौन सा पहले खत्म हो रहा है? E2, E2 पहले खत्म हो रहा है। जे को बढ़ाना पड़ेगा, जे को बढ़ाना पड़ेगा। J को बढ़ा के यहां ले आइए। जे यहां पे आ गया। देख लीजिए। अब ऐसा हो गया है। आइए फिर से करते",
+      "source": "caption",
+      "english_text": "आंसर में आएगा? आंसर में मर्ज इंटरवल होगा। मर्ज पक्का होगा लेकिन इंटरसेक्शन आएगा क्या? इन दोनों का मैक्सिमम 10 इन दोनों का मिनिमम सॉरी सॉरी। दोनों स्टार्ट का मैक्सिमम। दोनों स्टार्ट का मैक्सिमम फाइव। दोनों इसका मिनिमम फाइव, तो एक आंसर आपका हो गया 5 लिख दीजिए। 5, ठीक? अब बढ़ाने की बारी आती है। कौन सा पहले खत्म हो रहा है? E2, E2 पहले खत्म हो रहा है। जे को बढ़ाना पड़ेगा, जे को बढ़ाना पड़ेगा। J को बढ़ा के यहां ले आइए। जे यहां पे आ गया। देख लीजिए। अब ऐसा हो गया है। आइए फिर से करते"
+    },
+    {
+      "start_time": 2098.32,
+      "end_time": 2132.79,
+      "text": "हैं। I तो सेम था। S1 = 5, E1 = 10। J बड़ा था। S1 S2 = 8 E2 = 10। S1 इज़ छोटा दैन S2 तो नॉर्मली अपना चलाइए। क्या मेरा E1 इज़ ग्रेटर दैन इक्वल टू S2 है। यस यस। है। आंसर क्या आएगा? इन दोनों का मैक्सिमम इन दोनों का मिनिमम। 8 टू 10, 8 टू 10 आपका एक आंसर हो गया। लिख दीजिए। बढ़ाएंगे किसको? बढ़ाएंगे किसको? कौन सा पहले खत्म हो रहा है? कौन सा पहले? ये पहले खत्म हो रहा है। ये पहले खत्म हो रहा है। कोई बात नहीं। आई को बढ़ा दीजिए। I को बढ़ा दीजिए। I को बढ़ा के यहां ले आइए। I को बढ़ा के यहां",
+      "source": "caption",
+      "english_text": "हैं। I तो सेम था। S1 = 5, E1 = 10। J बड़ा था। S1 S2 = 8 E2 = 10। S1 इज़ छोटा दैन S2 तो नॉर्मली अपना चलाइए। क्या मेरा E1 इज़ ग्रेटर दैन इक्वल टू S2 है। यस यस। है। आंसर क्या आएगा? इन दोनों का मैक्सिमम इन दोनों का मिनिमम। 8 टू 10, 8 टू 10 आपका एक आंसर हो गया। लिख दीजिए। बढ़ाएंगे किसको? बढ़ाएंगे किसको? कौन सा पहले खत्म हो रहा है? कौन सा पहले? ये पहले खत्म हो रहा है। ये पहले खत्म हो रहा है। कोई बात नहीं। आई को बढ़ा दीजिए। I को बढ़ा दीजिए। I को बढ़ा के यहां ले आइए। I को बढ़ा के यहां"
+    },
+    {
+      "start_time": 2132.8,
+      "end_time": 2166.23,
+      "text": "ले आइए। चलिए फिर से आइए। फिर से करिए ये काम। S1 I बढ़ गया था 13 हो गया। E1 = 23 हो गया। J बढ़ा था तो J सेम रहेगा। एट और E2 = 10 S2 इज़ &lt;= S1 तो उल्टा चलाना पड़ेगा। क्या मेरा E2 इज़ ग्रेटर दैन इक्वल टू 13 है? ना नहीं है नहीं है तो कोई मर्ज नहीं होगा कोई मर्ज नहीं होगा कोई बात नहीं मर्ज नहीं होगा किसको बढ़ाना पड़ेगा जो पहले खत्म हुआ जो पहले खत्म हुआ उसको बढ़ाएंगे जे प्लस प्लस जे प्लस प्लस किए जे यहां आ गया जे एरे से खत्म हो गया एक पूरा एरे ही खत्म हो गया आगे जाके तो अब कोई फायदा नहीं है आपका आंसर क्या बन गया",
+      "source": "caption",
+      "english_text": "ले आइए। चलिए फिर से आइए। फिर से करिए ये काम। S1 I बढ़ गया था 13 हो गया। E1 = 23 हो गया। J बढ़ा था तो J सेम रहेगा। एट और E2 = 10 S2 इज़ &lt;= S1 तो उल्टा चलाना पड़ेगा। क्या मेरा E2 इज़ ग्रेटर दैन इक्वल टू 13 है? ना नहीं है नहीं है तो कोई मर्ज नहीं होगा कोई मर्ज नहीं होगा कोई बात नहीं मर्ज नहीं होगा किसको बढ़ाना पड़ेगा जो पहले खत्म हुआ जो पहले खत्म हुआ उसको बढ़ाएंगे जे प्लस प्लस जे प्लस प्लस किए जे यहां आ गया जे एरे से खत्म हो गया एक पूरा एरे ही खत्म हो गया आगे जाके तो अब कोई फायदा नहीं है आपका आंसर क्या बन गया"
+    },
+    {
+      "start_time": 2166.24,
+      "end_time": 2173.0,
+      "text": "आंसर आपका ये बन गया इसको आप रिटर्न कर दिए तो ये था",
+      "source": "caption",
+      "english_text": "आंसर आपका ये बन गया इसको आप रिटर्न कर दिए तो ये था"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

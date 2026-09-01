@@ -1,0 +1,702 @@
+{
+  "video_id": "7gOCx1vbx0k",
+  "video_title": "Linked List Reversal In the Easiest Way Possible | DSA Patterns Course 2026 CPP JAVA Python",
+  "video_number": 47,
+  "chunks": [
+    {
+      "start_time": 1.51,
+      "end_time": 35.43,
+      "text": "कैसे हैं आप लोग? आप लोग देख रहे हैं पढ़ो विद प्रत्युष। मेरा नाम है प्रत्युष नारायण और आज से पहले आप लोग लिंक लिस्ट के ये रिवर्सल वाला बहुत बार पढ़े होंगे। लेकिन काफी लोग क्या करते हैं कि याद करवा देते हैं कि ऐसा कर लो, वैसा कर लो, ऐसा कर लो। याद नहीं करना है ये रिवर्सल आपको समझने की बहुत अच्छे से जरूरत है। ऐसे एग्जांपल से समझाएंगे कि आप इसको जिंदगी में कभी नहीं भूलेंगे। चाह के भी आप लोग नहीं भूल पाएंगे। शुरू करने से पहले अगर जो लोग पहली बार आए हैं डिस्क्रिप्शन में देख लीजिए। अह आप लोग अगर देखते हैं वीडियो तो पूरा देखा करिए। आधा अधूरा वीडियो हम बार-बार बोलते हैं कि मत मेरा व्यू मत बढ़ाइए। मतलब मेरा व्यू बढ़ा के आपको क्या होगा? अगर आपको 2 मिनट देख के मेरा एक व्यू बढ़ जाता है तो उससे ज्यादा कुछ होगा नहीं। मतलब एक व्यू का उतना पैसा",
+      "source": "caption",
+      "english_text": "How are you guys? You guys are watching Padho with Pratyush. My name is Pratyush Narayan and before today you must have read this reversal of link list many times. But what many people do is that they remind people to do this, do that, do this. Not to be missed, you need to understand this reversal very well. We will explain it with such examples that you will never forget it in your life. You people won't be able to forget even if you want to. Before starting, for those who are visiting for the first time, please take a look at the description. Ah, if you guys watch the video then watch it completely. Half incomplete video, we repeatedly say, don't increase my views. Meaning, what will happen to you by increasing my view? If my views increase by watching you for 2 minutes then nothing more will happen than that. meaning that much money for one view"
+    },
+    {
+      "start_time": 35.44,
+      "end_time": 69.67,
+      "text": "हमको नहीं मिलता है कि आप आप 2 मिनट बर्बाद मत कीजिए ना। आप 2 मिनट में चार रील देख लीजिए आप। आप 5 मिनट में कोई अच्छा वेब सीरीज का कुछ ऐसा देख लीजिए। मतलब टाइम बर्बाद मत कीजिए क्योंकि इसका रीज़न हमको समझ में नहीं आता है। आधा देखने का रीज़न नहीं होना चाहिए ना। या तो हो सकता है कि आप बहुत बिजी हैं। आप बहुत बिजी तो ऐसा होता नहीं है कि बीटेक वाले बहुत बिजी होते हैं। क्योंकि हम भी बीटेक किए हैं। ऐसा तो नहीं है कि हम लोग डायरेक्टली जॉब पे आ गए। आप लोग भी बीटेक करके आए। आपको मालूम है कोई बिजी नहीं होता है। और अगर आपको लगता है कि दिन के दो-ती घंटे क्लास जाने में और ये नोट्सवोट्स बनाने में आप बहुत ज्यादा बिजी हो जा रहे हैं तो मत पढ़िए और आगे जाके एक",
+      "source": "caption",
+      "english_text": "We don't get it, don't waste your 2 minutes. You watch four reels in 2 minutes. You can watch a good web series like this in 5 minutes. Meaning, don't waste your time because we don't understand the reason for it. There should be no reason to see half, right? Or maybe you are very busy. You are very busy. It is not that B.Tech people are very busy. Because we have also done B.Tech. It is not that we have come directly to the job. You people also came after doing B.Tech. You know no one is busy. And if you feel that you are getting too busy in going to class for two-three hours a day and making these notes and notes, then don't read this and go ahead and read a"
+    },
+    {
+      "start_time": 69.68,
+      "end_time": 94.87,
+      "text": "साल बाद आपकी जॉब लगेगी कॉल सेंटर में। कॉल सेंटर में आपकी शिफ्ट होगी 15 घंटे पर दिन की और सैलरी मिलती है ₹12,000। तो हम दिन के 15 घंटे काम करते हैं। हमको महीने का ₹3 लाख मिलता है। आप जाके 15 घंटे काम करेंगे। आपको महीने का ₹12,000 मिलेगा। तो आप आपका बहुत सस्ता हो जाएगा। समय बहुत आपका एक रिक्शे वाले से समय सस्ता हो जाएगा। एक रिक्शे वाला अगर 15 घंटे रिक्शा चलाएगा तो 12,000 से ज्यादा ही कमाएगा। तो आप बहुत सस्ते इंसान बन जाएंगे। तो अगर आपको वैसा करना है तो वो भी कर सकते हैं।",
+      "source": "caption",
+      "english_text": "After a year you will get a job in a call center. Your shift in the call center will be 15 hours a day and your salary will be ₹ 12,000. So we work 15 hours a day. We get ₹3 lakh per month. You will go and work for 15 hours. You will get ₹12,000 per month. So you will get yours much cheaper. Your time will be much cheaper than a rickshaw puller. If a rickshaw puller drives a rickshaw for 15 hours, he will earn more than Rs 12,000. Then you will become a very cheap person. So if you want to do that then you can do that also."
+    },
+    {
+      "start_time": 94.88,
+      "end_time": 128.469,
+      "text": "वो भी एक वे ऑफ़ लाइफ है। बहुत लाखों लोग करते हैं। ऐसा नहीं है कि बीपीपीओ में जॉब नहीं होता है। लाखों लोग जॉब कर रहे हैं बीपीओ में। वो कॉल सेंटर वगैरह में क्रेडिट कार्ड बेचने में वो सब में। तो ठीक है वो सब कर सकते हैं। चलिए अब रिवर्सल अपना अलग से पैटर्न क्यों है? रिवर्सल अपना अलग से पैटर्न इसलिए है ना क्योंकि एक बार आपको रिवर्सल आ गया तो इससे मिलाजुला बहुत सारा क्वेश्चन होता है। मतलब सब में आपको रिवर्स ही करना पड़ेगा। लेकिन अलग-अलग चीजें बताई रहेंगी कि ऐसा रिवर्स कर दो, वैसा रिवर्स कर दो। यहां से तोड़ के इसको रिवर्स मतलब कॉम्प्लेक्स होगा। इसका क्वेश्चन कॉम्प्लेक्स हो सकता है। डिफिकल्ट नहीं होगा। आपको कभी भी ऐसा नहीं लगेगा कि हमको",
+      "source": "caption",
+      "english_text": "That is also a way of life. Many millions of people do. It is not that there are no jobs in BPPO. Lakhs of people are working in BPO. That in selling credit cards in call centers etc. So okay they can do all that. Now why is reversal its own separate pattern? Reversal has its own separate pattern because once you get a reversal, there are a lot of questions related to it. Meaning in everything you will have to do the reverse. But different things will be told to reverse this or reverse that. Breaking it from here means it will be reverse meaning complex. This question may be complex. It won't be difficult. You will never feel that we"
+    },
+    {
+      "start_time": 128.479,
+      "end_time": 162.47,
+      "text": "कुछ समझ में नहीं आ रहा है क्या करना है। आपको हमेशा ऐसा लगेगा ना कि हमको समझ में सब आ रहा है करना क्या है। कैसे करना है उसमें दिक्कत हो रही है। कोड लिखने में दिक्कत हो रही है। क्या करें? तो हमेशा इसका क्वेश्चन कॉम्प्लेक्स होगा। डिफिकल्ट नहीं होगा। कभी भी डिफिकल्ट नहीं होगा। हार्ड क्वेश्चन भी रीड कोड हार्ड क्वेश्चन भी कॉम्प्लेक्स है। वो डिफिकल्ट नहीं है। अगर आपको कोई बोले कि मुंह से बोल के हिंदी में बताओ क्या करोगे तो आप तुरंत बता देंगे। लेकिन इंप्लीमेंट कैसे करना है वो हार्ड हो जाता है। तो इसीलिए वो कॉम्प्लेक्स है। अच्छा। चलिए तो रिवर्सल का क्या मतलब होता है? देखिए लिंकलिस्टिक ट्रेन होता है। लिंकलिस्टिक ट्रेन होता है। तो पहले मान लीजिए इंजन शुरू में लगा हुआ है। उसके बाद आपका एसी बोगी है। फिर",
+      "source": "caption",
+      "english_text": "Can't understand what to do. You will always feel as if we understand everything and what needs to be done. Having trouble figuring out how to do it. Having trouble writing code. What to do? So its question will always be complex. It won't be difficult. It will never be difficult. Hard question also read code Hard question is also complex. That is not difficult. If someone asks you to tell by mouth in Hindi what you will do, then you will tell immediately. But how to implement it becomes difficult. So that's why it's complex. Good. So what does reversal mean? See, there is a linklist train. There is a linklist train. So first suppose the engine is initially engaged. After that you have AC bogie. then again"
+    },
+    {
+      "start_time": 162.48,
+      "end_time": 191.11,
+      "text": "स्लीपर है और लास्ट में जनरल है। आपको कोई बोलता है भाई इस ट्रेन को पूरा ही रिवर्स कर दो। इस ट्रेन को क्या कर दो? पूरा रिवर्स कर दो। मतलब कि इस वाले एरो को ऐसा कर दो। इस वाले एरो को ऐसा कर दो। इस वाले एरो को ऐसा कर दो और जनरल को सबसे आगे कर दो। मतलब पूरा इसको रिवर्स करके लिख दो। तो अब रिवर्स करने के लिए बहुत सिंपल एल्गोरिदम होता है। आप लोग याद भी कर सकते हैं। लेकिन याद करने की जरूरत नहीं है। इसको ऐसे समझ लीजिए। इसको क्या करिए समझ लीजिए। देखिए अब आपको हर जाके हर बोगी का एरो बदलना है।",
+      "source": "caption",
+      "english_text": "There is sleeper and last is general. Someone tells you, brother, reverse this train completely. What to do with this train? Do complete reverse. Meaning, make this arrow like this. Make this arrow like this. Make this arrow like this and put the general in the front. Meaning, write it completely in reverse. So now there is a very simple algorithm to do the reverse. You guys can also remember. But there is no need to remember. Understand it like this. Understand what to do with this. See, now you have to change the arrow of every bogie at every visit."
+    },
+    {
+      "start_time": 191.12,
+      "end_time": 221.99,
+      "text": "हर बोगी का एरो मतलब हर बोगी का कनेक्शन बदलना है। तो सबसे पहले तो एक आप आपको एक मैकेनिक चाहिए। आपको एक मैकेनिक चाहिए। आपको एक क्या चाहिए? मैकेनिक या मिस्त्री जो भी जिसको बोगी का तार असली में बदलना है। अच्छा। एक और आप हेल्पर रख लीजिए। एक इसका हेल्पर। हेल्पर। इसको ज्यादा कुछ आता नहीं है। इसको ज्यादा कुछ आता नहीं है। लेकिन इसका एक बहुत स्पेशल काम है। इसका क्या स्पेशल काम है? हम लोग देखते हैं। चलिए। सबसे पहले आपका क्या करेगा ना? आपका मैकेनिक जाके यहां पे खड़ा हो जाएगा। आपका मैकेनिक कहां जाके?",
+      "source": "caption",
+      "english_text": "Arrow of every bogie means changing the connection of every bogie. So first of all you need a mechanic. You need a mechanic. Why do you want one? Mechanic or mechanic who has to change the bogie wire to the original one. Good. You hire one more helper. One of his helpers. Helper. He doesn't know much. He doesn't know much. But it has a very special function. What is its special function? We people see. Let go. What will he do to you first? Your mechanic will go and stand here. Where should your mechanic go?"
+    },
+    {
+      "start_time": 222.0,
+      "end_time": 255.91,
+      "text": "इंजन पे फर्स्ट वाले पे खड़ा हो जाएगा। अच्छा। अब इसका काम है अब इसका काम ये जो एरो है ना ये जो एरो है इसको मोड़ के पीछे कर देना है। इसको मोड़ के पीछे कर देना है। पीछे किसके तरफ? हेल्पर के तरफ़। येस। तो हेल्पर का क्या काम है? हेल्पर हमेशा ना पीछे वाले बोगी पे खड़ा रहेगा। पीछे वाले बोगी पे खड़ा रहेगा। मैकेनिक का क्या काम है? ये जिस बोगी पे खड़ा है उसका एरो को उठा के मोड़ दे हेल्पर की तरफ। तो ये क्या करेगा आपका मैकेनिक? इस एरो को उठाएगा और इसको क्या करेगा? मोड़ देगा पीछे की तरफ।",
+      "source": "caption",
+      "english_text": "The engine will stop on the first one. Good. Now its job is now its job is to turn this arrow behind the curve. This has to be done behind the curve. Behind whom? Towards the helper. Yes. So what is the job of the helper? The helper will always stand on the rear bogie. Will stand on the rear bogie. What is the job of a mechanic? Lift the arrow of the bogie on which it is standing and turn it towards the helper. So what will your mechanic do? Who will pick up this arrow and what will he do with it? Will turn it backwards."
+    },
+    {
+      "start_time": 255.92,
+      "end_time": 289.35,
+      "text": "मोड़ देगा किसके तरफ? पीछे की तरफ। अब ठीक है? हो गया ये काम। अच्छा ये एरो मुड़ गया। वेरी गुड। हेल्पर को आगे कर दीजिए। हेल्पर को आगे कर दीजिए। हेल्पर को एसी बोगी पे ले आइए। सॉरी, हेल्पर को नहीं मैकेनिक को आगे कर दीजिए। अब क्योंकि मैकेनिक आगे गया है तो हेल्पर को भी हेल्पर क्या है? हेल्पर का काम है कि पीछे वाले बोगी पे रहना है। तो आपको हेल्पर को उठा के भी आपको हेल्पर को उठा के भी कहां ले आना होगा? इंजन पे ले आना होगा। देखिए अभी भी मैकेनिक कहां खड़ा है? मैकेनिक कहां खड़ा है? जिस बोगी का तार बदलना है, जिस बोगी का कनेक्शन बदलना है। हेल्पर कहां खड़ा है? हेल्पर पीछे वाले पे खड़ा है। हेल्पर",
+      "source": "caption",
+      "english_text": "To whom will he turn? On the back side. It's fine now? This work is done. Well this arrow turned. very good. Put the helper forward. Put the helper forward. Bring the helper to the AC bogie. Sorry, put the mechanic forward and not the helper. Now that the mechanic has gone ahead, what is a helper to the helper? The helper's job is to stay on the rear bogie. So even after picking up the helper, where will you have to bring the helper? Will have to be brought on the engine. See where the mechanic is still standing? Where is the mechanic standing? The bogie whose wire is to be changed, the bogie whose connection is to be changed. Where is the helper standing? The helper is standing at the back. helper"
+    },
+    {
+      "start_time": 289.36,
+      "end_time": 324.07,
+      "text": "पहले भी पीछे वाले पे खड़ा था। इसीलिए हम लोग इसको यहां पे घुमाए थे। इसको नल आप समझ सकते हैं क्योंकि इंजन के आगे तो कुछ नहीं था। तो ठीक है हम लोग पीछे कर दिए थे। अच्छा। सेम काम, सेम काम मैकेनिक फिर से सेम काम करेगा। क्या करेगा? ये जो एसी का तार यहां पे स्लीपर से जुड़ा हुआ था इसको मोड़ के किस पे कर देगा? इंजन पे कर देगा। क्यों? क्योंकि हेल्पर वहां पे खड़ा था। तो जहां पे हेल्पर खड़ा है उसको ये बोलेगा कि ये लो तुम अपना तार वहां पे जोड़ दो। अब क्या करना है मैकेनिक? मैकेनिक को आगे बढ़ जाना है। मैकेनिक को सिंपल आगे बढ़ जाना है। मैकेनिक को सिंपल आगे बढ़ जाना है। स्लीपर पे आके खड़े हो जाना है। लेकिन हेल्पर को भी आगे बढ़ जाना है। हेल्पर को भी आगे क्योंकि हेल्पर क्या",
+      "source": "caption",
+      "english_text": "Earlier too he was standing at the back. That's why we took it here. You can understand it as a tap because there was nothing in front of the engine. So it's okay, we had left it behind. Good. Same work, same work mechanic will do the same work again. What will he do? Where will you bend the AC wire which was connected to the sleeper here? Will pay for the engine. Why? Because the helper was standing there. So, where the helper is standing, he will say, \"Here, connect your wire there.\" What to do now mechanic? The mechanic has to move ahead. The mechanic simply has to move ahead. The mechanic simply has to move ahead. Have to come and stand on the sleeper. But the helper also has to move forward. The helper should also be ahead because what is the helper?"
+    },
+    {
+      "start_time": 324.08,
+      "end_time": 355.99,
+      "text": "पीछे वाले बोगी पे खड़ा है। हेल्पर पीछे वाले बोगी पे खड़ा है। तो हेल्पर अब कहां आ जाएगा? ए सी पे आ जाएगा। मैकेनिक क्या करेगा? मैकेनिक कुछ नहीं स्लीपर वाला तार हटाएगा। और इसको कहां जोड़ देगा? इसको एसी वाले पे जोड़ देगा क्योंकि हेल्पर वहां पे खड़ा है। अब मैकेनिक क्या करेगा? मैकेनिक कुछ नहीं आगे बढ़ जाएगा। मैकेनिक आगे बढ़ जाएगा। मैकेनिक से आगे बढ़ के जनरल पे आ जाएगा। ओके? हेल्पर क्या करेगा? हेल्पर भी आगे बढ़ जाएगा। हेल्पर भी आ गए क्योंकि हेल्पर का काम है कि आपको पीछे वाले बोगी पे रहना है। उसकी हेल्प करनी है हमेशा आपको। हमेशा उसकी हेल्प करते रहनी है।",
+      "source": "caption",
+      "english_text": "Standing on the rear bogie. The helper is standing on the rear bogie. So where will the helper come now? Will come on AC. What will the mechanic do? The mechanic will not remove the sleeper wire. And where will you connect it? Will connect it to the AC because the helper is standing there. What will the mechanic do now? The mechanic will proceed with nothing. The mechanic will proceed. He will progress from mechanic to general. Ok? What will the helper do? The helper will also move forward. Helpers also came because the helper's job is that you have to stay on the rear bogie. You always have to help him. Always keep helping him."
+    },
+    {
+      "start_time": 356.0,
+      "end_time": 389.59,
+      "text": "यहां पे आ जाइए। क्या करना है? अब देखिए जनरल का आगे तो कोई तार जुड़ा हुआ नहीं था। तो ठीक है आगे कोई चार तार जुड़ा हुआ नहीं था। लेकिन हमको तार जोड़ना है किसमें? पीछे वाले पीछे वाले स्लीपर पे। पीछे वाले स्लीपर पे। तो आइए जोड़ देते हैं। पीछे वाले स्लीपर पे। बस। अब मैकेनिक और आगे बढ़ेगा। मैकेनिक और आगे बढ़ेगा। लेकिन अब जैसे ही मैकेनिक आगे बढ़ता है तो ये ट्रेन से बाहर जा चुका है। अब कोई बोगी नहीं बचा है। और हेल्पर भी आगे बढ़ गया होगा। हेल्पर भी आगे बढ़ गया होगा। हेल्पर भी आगे बढ़ के किस पे आ गया होगा? जनरल पे आ गया होगा। अब खत्म हो गया मैकेनिक। अब कोई बोगी नहीं बचा तो मैकेनिक अकेला तो",
+      "source": "caption",
+      "english_text": "Come here. What is the plan? Now see, there was no wire attached to the General. So ok there was no further four wires connected. But to what do we have to connect the wires? On the rear sleeper. On the rear sleeper. So let's add. On the rear sleeper. Bus. Now the mechanic will move further. The mechanic will proceed further. But now as soon as the mechanic moves ahead, he has gone out of the train. Now there are no bogies left. And the helper would also have moved ahead. The helper might also have moved ahead. To whom would the helper have also moved forward? The general must have arrived. Now the mechanic is finished. Now there are no bogies left so the mechanic is alone."
+    },
+    {
+      "start_time": 389.6,
+      "end_time": 423.67,
+      "text": "कुछ करेगा नहीं। चलिए तो चीजें खत्म हो गई। लेकिन गौर से देखिए क्या हुआ इसमें। इस ट्रेन में क्या हुआ देखिए। इंजन घूम के पीछे अपना चला जा चुका है। जो कि पीछे नल था या जो भी था नल खाली जगह जो भी था। एसी एसी पहले स्लीपर को पॉइंट करता था लेकिन एसी अब किसको पॉइंट करता है? आपके इंजन को पॉइंट करता है। स्लीपर पहले जनरल को पॉइंट करता था लेकिन स्लीपर अब एसी को पॉइंट करने लगा है। जनरल किसी को पॉइंट नहीं मतलब जनरल नल पे था। जनरल लास्ट बुक की था लेकिन अब जनरल स्लीपर पे पॉइंट करने लगा है। अच्छा। अब अगर आपको ये लिंक लिस्ट कोई",
+      "source": "caption",
+      "english_text": "Will not do anything. Well, things are over now. But look carefully what happened in this. Look what happened in this train. The engine has turned around and left behind. Which was the tap behind or whatever it was, whatever the tap was in the empty space. AC used to point to the sleeper earlier, but to whom does the AC point now? Points your engine. Earlier the sleeper used to point to General but now the sleeper has started pointing to AC. General did not give any point, meaning General was on tap. General was booked last but now general has started focusing on sleeper. Good. Now if you find this link list"
+    },
+    {
+      "start_time": 423.68,
+      "end_time": 458.07,
+      "text": "बोले कि इसको ड्रॉ करो तो आप इसको ऐसे ड्रॉ कर सकते हैं। इस लिंक लिस्ट को आप कैसे ड्रॉ करेंगे? सबसे पहले सबसे पहले आपका जनरल आपका जनरल जनरल किसको पॉइंट करने लगा है अब? स्लीपर को। जनरल स्लीपर को पॉइंट करने लगा है। यस। स्लीपर किसको पॉइंट करने लगा है? एसी को। स्लीपर एसी को पॉइंट करने लगा है। वेरी गुड। एसी किसको पॉइंट करने लगा है? इंजन को। इंजन को। इंजन को। इंजन किसको पॉइंट करने लगा है? किसी को नहीं। पीछे मतलब खाली जगह पे। नल पे। नल पे। तो किसी को पॉइंट। अब देखिए घूम तो गया ये लिंक लिस्ट। पूरा रिवर्स हो गया ना? पहले कैसा",
+      "source": "caption",
+      "english_text": "If they say draw this then you can draw it like this. How would you draw this link list? First of all, your general, your general, whom has the general started pointing to now? To the sleeper. The general has started pointing to the sleeper. Yes. To whom is the sleeper pointing? To AC. The sleeper has started pointing to the AC. very good. Who has the AC started pointing to? To the engine. To the engine. To the engine. Who is the engine pointing at? Not to anyone. Behind means on empty space. On tap. On tap. So point to someone. Now look at this link list that has gone around. Complete reverse happened, right? how before"
+    },
+    {
+      "start_time": 458.08,
+      "end_time": 492.629,
+      "text": "लगता था? इंजन, एसी, स्लीपर, जनरल। अब कैसा लगता है? जनरल, स्लीपर, एसी, इंजन। अब पहले इस लिंक लिस्ट का हेड कौन था? हेड यहां पे था। इंजन इसका हेड था इसका। अब इसका हेड कौन होना चाहिए? जनरल इसका हेड होना चाहिए क्योंकि जनरल से स्टार्ट होने लगा ना लिंक लिस्ट। जाहिर सी बात है आप हेड से लेके बहुत सारा था। आप बोले पूरा रिवर्स कर दो तो सबसे लास्ट वाला जो बोगी था, जो सबसे लास्ट में पहले था वो आ जाएगा सबसे पहले तो वो हेड बन जाएगा। लेकिन ये हेड आपको मिलेगा कैसा? देखिए आपका मैकेनिक तो बोगी के बाहर जा चुका है। मतलब आपका",
+      "source": "caption",
+      "english_text": "Did you think? Engine, AC, Sleeper, General. How do you feel now? General, Sleeper, AC, Engine. Now who was the head of this link list earlier? The head was here. The engine was its head. Now who should be its head? General should be its head because the link list starts from General. Obviously there was a lot from you to the head. If you say that if you do complete reverse then the one who was last bogey, the one who was last first will come, the first one will become head. But how will you get this head? Look, your mechanic has gone out of the bogie. meaning yours"
+    },
+    {
+      "start_time": 492.639,
+      "end_time": 527.43,
+      "text": "मैकेनिक तो नल हो चुका है एक तरीके से। लेकिन आपका हेल्पर किस पे खड़ा है? जनरल पे खड़ा है। आपका हेल्पर किस पे खड़ा है? जनरल पे खड़ा है। इसीलिए इसीलिए अगर हम लोग ऐसा कर दें रिटर्न मेरा हेल्पर तो हमको क्या मिल जाता है? है जो कि नया हेड है जो कि नया हेड या नया बोगी जो भी हेड पे आया है देखिए क्योंकि हेल्पर एग्जैक्टली जनरल पे खड़ा है। आप इसको जितनी बार करेंगे जितना बड़ा ट्रेन लेंगे कोई मतलब नहीं है। लेकिन हेल्पर हमेशा कहां खड़ा रहेगा? जनरल पे और पूरा लिस्ट घूम चुका होगा। बस यही लॉजिक है रिवर्स करने का। बस यही लॉजिक है रिवर्स करने का।",
+      "source": "caption",
+      "english_text": "The mechanic has become a tap in a way. But where is your helper standing? Standing on General. Where is your helper standing? Standing on General. That's why if we do this, return my helper, then what do we get? Which is the new head, which is the new head or the new bogie, whatever head has come, see because the helper is standing exactly on the general. It doesn't matter how many times you do this or how big the train you take. But where will the Helper always stand? The entire list would have gone round on General Pay. This is the only logic to reverse. This is the only logic to reverse."
+    },
+    {
+      "start_time": 527.44,
+      "end_time": 561.11,
+      "text": "ये तो हुई ट्रेन की बात। लेकिन इन चीजों को मैकेनिक और हेल्पर नहीं बोलते हैं। इनको कुछ और बोलते हैं। तो हम आपको बताते हैं कि कैसे ये असली में काम करता है इंग्लिश में ये तो हम एग्जांपल देने के लिए समझाए थे। आइए एक लिंक लिस्ट बना लेते हैं। छोटा सा प्यारा सा अपना एक अ लिंक लिस्ट बना लिया। देखिए लिंक लिस्ट का हमको इसीलिए बहुत अच्छा लगता है सारा क्वेश्चन क्योंकि इसमें कोई भी क्वेश्चन हार्ड नहीं है। मतलब सब सिंपल ही है। इधर-उधर एड्रेस चेंज करना है। एड्रेस कितना ही उसमें कितना ही कोई कॉम्प्लेक्स कर लेगा। तो 1 2 3 4 लिंक लिस्ट याद होना चाहिए। अगर लिंक लिस्ट याद नहीं है तो",
+      "source": "caption",
+      "english_text": "This is about the train. But mechanics and helpers do not say these things. They are called something else. So let us tell you how it actually works, we explained this in English to give an example. Let's make a link list. Made a cute little link list of my own. See, that's why we like all the questions in the link list because none of the questions in it are hard. Meaning everything is simple. Have to change address here and there. No matter how much the address is, how many complexities can be created in it. So 1 2 3 4 link list should be remembered. If you don't remember the link list then"
+    },
+    {
+      "start_time": 561.12,
+      "end_time": 587.03,
+      "text": "पहले का जाके रिवाइज कीजिए। लिंक लिस्ट एक बार हम आपको पढ़ा चुके हैं कि क्या होता है और कैसे होता है। इंट्रोडक्शन। ठीक है? इसका मतलब नल होता है। चलिए क्या हमको लेना था? आपको इसको रिवर्स करना है और नया हेड को रिटर्न करना है। हमेशा आपको एक नया हेड मिलेगा। क्योंकि अभी तो हेड यहां पे है। अभी तो हेड यहां पे है वन पे। लेकिन जब आप रिवर्स करेंगे तो आपका हेड ये हो जाएगा। वही हो जाएगा ना? ऑब्वियसली 1 2 3 4 को रिवर्स करेंगे तो क्या 4 3 वन बन जाएगा? तो फोर हेड हो जाएगा। ठीक है? आपको क्या लेना था?",
+      "source": "caption",
+      "english_text": "Go and revise the previous one. Link List Once we have taught you what happens and how it happens. Introduction. Ok? It means tap. Come on, what did we have to take? You have to reverse it and return the new head. You will always get a new head. Because right now the head is here. Right now the head is here on one page. But when you reverse, your head will become like this. That's what will happen, right? Obviously if we reverse 1 2 3 4, will 4 3 become one? So there will be four heads. Ok? What did you have to take?"
+    },
+    {
+      "start_time": 587.04,
+      "end_time": 618.23,
+      "text": "मैकेनिक और हेल्पर। इसको इसको आप कुछ भी बोल सकते हैं। मैकेनिक या हेल्पर नाम दे सकते हैं। लेकिन इसका स्टैंडर्ड नाम स्टैंडर्ड नाम क्या है? आपको एक कर्व वेरिएबल लेना है। क्या? कर्व। कर्व मतलब करंट। करंट वेरिएबल। और एक वेरिएबल आपको लेना होता है जो कि होता है प्रीवियस। प्रीवियस। ठीक है? करंट में आपको क्या डालनी होती है? जो हेड। क्योंकि आप शुरू कहां से करेंगे? मैकेनिक शुरू किस बोगी से किया था? सबसे पहले वाले बोगी से। तो हेड। और प्रीवियस इनिशियली आपका हेल्पर कहां खड़ा था? इनिशियली आपका हेल्पर कहां खड़ा था? इनिशियली आपका हेल्पर कहां खड़ा था?",
+      "source": "caption",
+      "english_text": "Mechanic and Helper. You can call this anything. You can name mechanic or helper. But what is its standard name? You have to take a curve variable. What? Curve. Curve means current. Current variable. And you have to take one variable which is previous. Previous. Ok? What do you have to put in the current? Joe Head. Because where do you start? From which bogie did the mechanic start? From the first bogie. So head. And where was your helper initially standing? Where was your helper standing initially? Where was your helper standing initially?"
+    },
+    {
+      "start_time": 618.24,
+      "end_time": 651.19,
+      "text": "खाली जगह पे। तभी तो इंजन घूम के खाली जगह पे चला गया था। तो इनिशियली आपका प्रीवियस कहां होगा? नल पे। ठीक है? इतनी बात हो गई। चलिए अब आइए जैसे आप मैकेनिक को चलाए थे वैसे आप चलाइए। तो सबसे पहले कर्व इक्वल टू 100 होता है। ठीक है? अब देखिए दो चीजें हैं। कर्व मतलब आपका मैकेनिक है। प्रीवियस मतलब आपका हेल्पर है। तो इसमें आप किए क्या थे? इसमें आप करते क्या थे? ये मैकेनिक करता क्या था? सबसे पहले ये जिस भी बोगी पर मैकेनिक खड़ा रहता था उसका तार को मिटा के प्रीवियस वाले पे [गला साफ़ करने की आवाज़] हेल्पर वाले पे",
+      "source": "caption",
+      "english_text": "On empty space. Then the engine turned and went to the empty place. So where will your previous be initially? On tap. Ok? So much has happened. Come on, now let's drive like you drove the mechanic. So first of all the curve is equal to 100. Ok? Now see there are two things. Curve means your mechanic. Previous means your helper. So what did you do in this? What were you doing in this? What did this mechanic do? First of all, whichever bogie the mechanic used to stand on, he would wipe the wire from the previous one [clearing throat] to the helper one."
+    },
+    {
+      "start_time": 651.2,
+      "end_time": 685.509,
+      "text": "भेजता था। तो ये तो एक बात हो गई। उसके बाद उसके बाद मैकेनिक को आगे बढ़ना होता था। मैकेनिक को आगे बढ़ना होता था। अब आगे कैसे बढ़ा जाता है? नेक्स्ट से आगे नेक्स्ट से बढ़ा जाता है। लेकिन आप क्या कर रहे हैं? ये तो आप अब ये नेक्स्ट को तोड़ के क्या कर दे रहे हैं? आपको पीछे कर देना है। तो आप आगे कैसे बढ़ेंगे? आप आगे कैसे बढ़ेंगे? बोगी पे कैसे कूद के जाएंगे? इसके लिए इसके लिए आगे वाला जो भी बोगी है इस तार को इस नेक्स्ट वाले तार को छेड़ने से पहले छेड़ने से पहले उसको स्टोर करके रख लीजिए। क्योंकि पहले एसी स्लीपर पे जा रहा था तो आपको मालूम है कि अभी हम एसी पे हैं। हमको आगे कूद के फिर स्लीपर",
+      "source": "caption",
+      "english_text": "Used to send. So this is one thing. After that the mechanic had to proceed further. The mechanic had to move ahead. Now how to proceed further? The next one is increased by the next one. but what are you doing? What are you doing now by breaking Next? You have to turn it back. So how do you proceed? How will you proceed? How to jump on the bogie? For this, whatever wire is in the next bogie, before teasing the next wire, store it before teasing it. Because earlier we were going on AC sleeper, so you know that now we are on AC. Let us jump ahead and sleeper again."
+    },
+    {
+      "start_time": 685.519,
+      "end_time": 718.87,
+      "text": "पे जाना है ताकि हम स्लीपर को भी रिवर्स कर सकें। लेकिन आप तो एसी वाला तार को तोड़ने के फिराक में हैं। आप तो इसको एसी को इंजन में जोड़ने के फिराक में हैं। फिर आप कूदेंगे कैसे? ये जगह तो खाली हो जाएगी। ये जगह खाली हो जाएगी। इसीलिए आगे वाले बोगी का स्टोर कर लीजिए कि हमको आगे वहां पे जाना है। बस इसको कैसे स्टोर करते हैं सिंपल। एक हम वेरिएबल लीजिए न स्टार नेक्स्ट नेक्स्ट नहीं नेक्स्ट कुछ भी नाम दे सकते हैं आपकी मर्जी जो कि करंट डॉट नेक्स्ट ठीक मतलब कि करंट के आगे वाला जो भी नोड है उसको हम स्टोर कर लिए एक जगह पे ठीक अब",
+      "source": "caption",
+      "english_text": "So we can reverse the sleeper as well. But you are trying to break the AC wire. You are trying to connect this AC to the engine. Then how will you jump? This place will be vacant. This space will become vacant. Therefore, store the bogie ahead as we have to go there further. Just how to store it is simple. Let us take a variable, no star, no next, no next, we can name it anything as per our wish, that is, current dot next, that is, whatever node is next to the current, we have stored it at one place, right now."
+    },
+    {
+      "start_time": 718.88,
+      "end_time": 747.829,
+      "text": "अपना काम करिए क्या करिए सबसे पहले तो इस बोगी का तार को रिवर्स करके मोड़ के पीछे कर दीजिए कैसे करेंगे कर्व डॉट नेक्स्ट इक्वल टू प्रव मतलब जहां भी हेल्पर खड़ा है तो प्रव पूरा मोड़ के पीछे कर दिए तो इससे क्या हुआ? इससे क्या हुआ? इससे एक चीज़ हुई। देखिए आपका कर्व अभी यहां पे है 100 पे। आप क्या किए? कर्व डॉट नेक्स्ट को मोड़ के पीछे कर दिए। पीछे कहां पे है? नल पे। ये हो गया नल। अब अब दोनों को बढ़ाइए।",
+      "source": "caption",
+      "english_text": "अपना काम करिए क्या करिए सबसे पहले तो इस बोगी का तार को रिवर्स करके मोड़ के पीछे कर दीजिए कैसे करेंगे कर्व डॉट नेक्स्ट इक्वल टू प्रव मतलब जहां भी हेल्पर खड़ा है तो प्रव पूरा मोड़ के पीछे कर दिए तो इससे क्या हुआ? What happened from this? इससे एक चीज़ हुई। देखिए आपका कर्व अभी यहां पे है 100 पे। आप क्या किए? कर्व डॉट नेक्स्ट को मोड़ के पीछे कर दिए। पीछे कहां पे है? नल पे। ये हो गया नल। अब अब दोनों को बढ़ाइए।"
+    },
+    {
+      "start_time": 747.839,
+      "end_time": 781.75,
+      "text": "तो सबसे पहले हेल्पर को बढ़ा लीजिए। तो प्रव = कर। क्योंकि हेल्पर को कहां आना है? जिस बोगी पे मैकेनिक अभी खड़ा है, वहां पे आ जाइए और मैकेनिक को आगे बढ़ा दीजिए। तो सेम काम हो जाएगा। और कर = नेक्स्ट कर इक्वल टू नेक्स्ट क्यों? क्योंकि वो आगे वाले पे जाएगा। आगे वाले पे जाएगा। तो देखिए आपके कर्व पे अब आ चुका होगा 200। ये यही प्रोग्राम होता है। अगर आप लोग वंडर कर रहे ये प्रोग्राम होता है ये चार लाइन का 1 2 3 4 ठीक है। चलिए इसको एक बार चलाइए। है ना? अब आपका प्रफ पे आ चुका",
+      "source": "caption",
+      "english_text": "तो सबसे पहले हेल्पर को बढ़ा लीजिए। तो प्रव = कर। क्योंकि हेल्पर को कहां आना है? जिस बोगी पे मैकेनिक अभी खड़ा है, वहां पे आ जाइए और मैकेनिक को आगे बढ़ा दीजिए। तो सेम काम हो जाएगा। और कर = नेक्स्ट कर इक्वल टू नेक्स्ट क्यों? क्योंकि वो आगे वाले पे जाएगा। आगे वाले पे जाएगा। तो देखिए आपके कर्व पे अब आ चुका होगा 200। ये यही प्रोग्राम होता है। अगर आप लोग वंडर कर रहे ये प्रोग्राम होता है ये चार लाइन का 1 2 3 4 ठीक है। चलिए इसको एक बार चलाइए। Isn't it? अब आपका प्रफ पे आ चुका"
+    },
+    {
+      "start_time": 781.76,
+      "end_time": 808.15,
+      "text": "होगा क्या? अ 100 ठीक। अच्छा आइए सेम काम कीजिए। कर्व = 200 पे देखते हैं। कर्व = 200 सबसे पहले तो नेक्स्ट निकालिए। 200 का नेक्स्ट क्या है? 300 वेरी गुड। उसके बाद इसका तार को मिटा दीजिए। इसका तार को पीछे मतलब मोड़ दीजिए एकदम। कहां पे जाएगा ये? 200 का नेक्स्ट को क्या पॉइंट कराना है? 100 पे। मतलब ये ऐसा ऐसा बन जाएगा। हो गया। वेरी गुड। उसके बाद कर्व को आगे बढ़ा दीजिए। अह प्रीवियस को आगे बढ़ा दीजिए।",
+      "source": "caption",
+      "english_text": "होगा क्या? अ 100 ठीक। अच्छा आइए सेम काम कीजिए। कर्व = 200 पे देखते हैं। कर्व = 200 सबसे पहले तो नेक्स्ट निकालिए। 200 का नेक्स्ट क्या है? 300 वेरी गुड। उसके बाद इसका तार को मिटा दीजिए। इसका तार को पीछे मतलब मोड़ दीजिए एकदम। कहां पे जाएगा ये? 200 का नेक्स्ट को क्या पॉइंट कराना है? 100 पे। मतलब ये ऐसा ऐसा बन जाएगा। Done. very good. उसके बाद कर्व को आगे बढ़ा दीजिए। अह प्रीवियस को आगे बढ़ा दीजिए।"
+    },
+    {
+      "start_time": 808.16,
+      "end_time": 839.67,
+      "text": "कर्व को आगे बढ़ा दीजिए। तो प्रीवियस में क्या आ जाएगा? कर्व की वैल्यू 200। कर्व में क्या आ जाएगा? नेक्स्ट की वैल्यू। आगे वाला जो भी नोड है उस पे हम लोग कूद जाएंगे जाके। वेरी गुड। अब यहां पे फिर आइए फिर चलाइए। कर्व = 300। सबसे पहले तो नेक्स्ट निकाल के रख लीजिए क्योंकि आपको वहां पे जाना है 400। वेरी गुड। रख लिए। अब क्या करना है? कर्व के नेक्स्ट को प्रीवियस पे मोड़ देना है। तो मोड़ दीजिए। ये तार मिटा के कहां? 200 पे मोड़ दिए। हो गया। बस प्रीवियस को आगे बढ़ा दीजिए। मतलब प्रीवियस इक्वल टू कर्व। प्रीवियस को 300 कर दीजिए। कर्व को नेक्स्ट पे बढ़ा दीजिए।",
+      "source": "caption",
+      "english_text": "Move the curve forward. So what will come in the previous one? Value of curve 200. What will come in the curve? Next key value. Whatever node is next, we will jump on it. very good. Now come here again and run again. Curve = 300. First of all, select Next because you have to go there at Rs. 400. very good. Kept it. What to do now? The next curve has to be folded over the previous one. So turn it. Where to erase this string? Folded at 200. Done. Just move the previous one forward. Meaning previous equal to curve. Change the previous to 300. Extend the curve to the next page."
+    },
+    {
+      "start_time": 839.68,
+      "end_time": 873.75,
+      "text": "कर्व को नेक्स्ट पे बढ़ा दीजिए। फोर। ठीक है? आ गए 400 पे। कर = 400 नेक्स्ट इक्वल टू नल बहुतेंट है देखिएगा नेक्स्ट इक्वल ट कर्व डॉट नेक्स्ट अभी नल है ठीक है उसके बाद कर्व का नेक्स्ट को कहां पे मोड़ना है प्रीवियस को तो हालांकि इसके आगे तार नहीं है लेकिन हम लोग तार जोड़ देंगे कहां पे प्रीवियस वाले पे तो क्या हो जाएगा ये हो जाएगा यहां पे हां सॉरी इसको भी चेंज कर देते हैं हम इनके नेक्स्ट को भी ये 100 पे था ये 200 पे था अब ये तार यहां पे आ गया है तो ये हो गया है 300 हम चेंज नहीं किए थे एरो",
+      "source": "caption",
+      "english_text": "Extend the curve to the next page. Four. Ok? Came at 400. Kar = 400 Next equal to null is very much, see next equal to curve dot next is now null, okay after that where to bend the next part of the curve, the previous one, although there is no wire in front of it, but we will add the wire, where on the previous one, what will happen, this will happen here, yes, sorry, let us change this also to the next one, it was at 100. It was at 200, now this wire has come here, so it has become 300. We did not change it, arrow."
+    },
+    {
+      "start_time": 873.76,
+      "end_time": 908.55,
+      "text": "एरो बना दिए थे। चेंज नहीं कर पाए थे। अच्छा हो गया काम। अच्छा उसके बाद क्या करना है? हेल्पर को आगे बढ़ाना है। मतलब प्रीवियस को आगे बढ़ाना है। तो प्रीवियस में क्या लिख देंगे हम लोग? 400 और कर को आगे बढ़ाना है। लेकिन नेक्स्ट तो नल है तो कोई बात नहीं। कर इक्वल टू नेक्स्ट तो हम लोग लिखे हुए थे ना? तो कर नल हो गया। जैसे ही कर नल हो गया। मतलब आपका कर यहां पे आ गया। कर कौन था? मैकेनिक था जब मैकेनिक खाली जगह पे मतलब ट्रेन खत्म हो गई ना। अब आगे की ट्रेन खत्म हो गई भैया और कोई बोगी है नहीं। तो आप क्या तार जोड़ेंगे क्या हटाएंगे? बस। तो जैसे ही आपका कर्नल होता है मतलब आपका प्रोग्राम क्या हो चुका है पूरा तरीके से खत्म। जैसे ही कर्नल होता है आपका प्रोग्राम क्या हो",
+      "source": "caption",
+      "english_text": "Had made arrows. Couldn't change. Nice work done. Well, what to do after that? The helper has to be taken forward. Meaning the previous one has to be carried forward. So what will we write in the previous? 400 and the tax has to be carried forward. But next is tap so no problem. Tax is equal to next, so we had written it, right? So the tax was nullified. As soon as the tax is done. Meaning your tax has arrived here. Who was doing it? The mechanic was there when the mechanic was at a vacant place, which means the train has finished. Now the next train has ended, brother, there is no other bogie. So what wires will you add and remove? Bus. So as soon as your kernel is gone, it means your program is completely finished. What should be your program as soon as the colonel is born?"
+    },
+    {
+      "start_time": 908.56,
+      "end_time": 942.949,
+      "text": "चुका है? पूरे तरीके से खत्म। अब आपको हेड रिटर्न करना है न्यू लिस्ट का। लेकिन हेड कैसे रिटर्न करेंगे? इसका हेड है कहां पे? ये इसका हेड है। क्योंकि पहले था 1 2 3 4 इसको रिवर्स किए। 4 3 2 1 लास्ट नोड हेड हो गया। लास्ट नोड पे कौन सा आदमी खड़ा है? प्रीवियस खड़ा है। प्रीवियस खड़ा है। तो आप क्या करेंगे? रिटर्न रिटर्न। प्रीवियस कर नहीं कर तो नल हो गया कर नल हो गया तब आपको मालूम चला कि खत्म हो गया ट्रेन प्रीवियस हेल्पर हेल्पर कहां खड़ा था लास्ट बोगी पे तो उसको आप रिटर्न कर दिए",
+      "source": "caption",
+      "english_text": "Is it done? All the way over. Now you have to return the head of the new list. But how will the head return? Where is its head? This is its head. Because earlier it was 1 2 3 4 reversed it. 4 3 2 1 Last node becomes head. Which man is standing at the last node? Previous is standing. Previous is standing. So what will you do? Return return. If you don't pay the previous tax then it becomes null. When the tax becomes null then you know that the train has ended. Previous Helper Where was the helper standing on the last bogie, then you returned him."
+    },
+    {
+      "start_time": 942.959,
+      "end_time": 976.949,
+      "text": "तो इसका कोड यही होता है एक बार फॉर्मली इसका कोड देख लीजिए [नाक से की जाने वाली आवाज़] आपको एक न स्टार ऐसा होगा इस फंक्शन का नाम होगा रिवर्स आपको एक हेड दिया रहेगा ठीक है दो-तीन चीजें आपको चाहिए सबसे पहले आपको दो ही चीजें चाहिए चाहिए। सबसे पहले तो एक कर्व चाहिए जो कि हेड पे हो। वेरी गुड। उसके बाद आपको एक प्रीवियस चाहिए जो कि हमारा हेल्पर है। आप इसका नाम अपने हिसाब से भी दे सकते हैं जो भी आपको समझ में आए। शुरुआत में है तो नल होगा क्योंकि शुरुआत में कुछ है नहीं वहां पे। प्रीवियस में कुछ है नहीं। ओके? हम लोग को कब तक",
+      "source": "caption",
+      "english_text": "So its code is this. Once you formally see its code [nasal sound] you will get a star like this, the name of this function will be reverse, you will be given a head, okay two-three things you need, first of all you need only two things. First of all, there needs to be a curve on the head. very good. After that you need a previous one who is our helper. You can also name it as per your choice, whatever suits you. If it is in the beginning then it will be null because in the beginning there is nothing there. There is nothing in the previous. Ok? how long will we have to wait"
+    },
+    {
+      "start_time": 976.959,
+      "end_time": 1002.79,
+      "text": "चलाना है? जब तक कि कर में नल ना आ जाए। व्हाइल कर नॉट इक्वल टू नल। वेरी गुड। सबसे पहले तो कर का नेक्स्ट निकाल के रख लेना है। कर का नेक्स्ट निकाल के रख लीजिए। क्योंकि कर के का नेक्स्ट को आप चेंज करने वाले हैं तो आप आगे बोगी पे जाएंगे कैसा? आप चेंज करेंगे तो उसके बाद तार मोड़िए। तार मोड़िए। तार पकड़ के पीछे मोड़िए। कहां? पीछे कैसे मोड़ेंगे? प्रीवियस पे। अब प्रीवियस और कर्व दोनों को बढ़ा दीजिए। तो पहले प्रीवियस को बढ़ा दीजिए।",
+      "source": "caption",
+      "english_text": "want to drive? Until the tax comes on tap. While Kar Not Equal To Null. very good. First of all, you have to take out the next tax and keep it. Take out the tax next and keep it. Because after doing this you are going to change the car next, then how will you go on the next bogie? If you change then bend the wire. Bend the wire. Fold the wire behind the grip. Where? How to turn back? On previous pay. Now increase both the previous and the curve. So first increase the previous one."
+    },
+    {
+      "start_time": 1002.8,
+      "end_time": 1036.71,
+      "text": "कर्व पे ले आए और कर्व को नेक्स्ट पे ले आए। आपका वाइल लूप खत्म हुआ। लास्ट में आप क्या रिटर्न करेंगे? प्रीवियस। कर्व नहीं प्रीवियस। क्योंकि प्रीवियस आपके लास्ट नो पे खड़ा होगा। ये प्रोग्राम इतना छोटा सा होता है। किसका? रिवर्स का। ऑर्डर ऑफ़ n इसकी टाइम कॉम्प्लेक्सिटी होती है। ऑर्डर ऑफ़ वन इसकी स्पेस कॉम्प्लेक्सिटी होती है। आप लोग पैटर्न शीट का पहला क्वेश्चन कर चुके हैं। लिंक लिस्ट रिवर्सल का जो कि क्या है? अ इसका डिस्क्रिप्शन अगर हम देखें तो 206 206 आपको यही करने बोलता है रिवर्सल लिंक लिस्ट। तो ये आपका आप लोग कर",
+      "source": "caption",
+      "english_text": "Bring it to the curve and bring the curve to the next level. Your while loop is over. What will you return in the end? Previous. Curve not previous. Because the previous one will stand on your last no. This program is so small. Whose? Of reverse. Order of n is its time complexity. Order of one is its space complexity. You guys have done the first question of pattern sheet. What is Link List Reversal? If we look at its description, 206 206 tells you to do the same thing - Reversal Link List. So this is what you guys do"
+    },
+    {
+      "start_time": 1036.72,
+      "end_time": 1065.35,
+      "text": "चुके हैं। ठीक है? अगला क्वेश्चन थोड़ा सा हार्ड होने वाला है। तो दिमाग खोल के सुनिएगा। है ना? तो इस क्वेश्चन को बहुत ध्यान से सुनिएगा क्योंकि बहुत अलग टाइप का आपको क्वेश्चन हो सकता है। लगेगा। देखिए आपको एक लिस्ट ऐसा दिया हुआ है। हम पूरा लिस्ट नहीं बनाए लेकिन समझाने के लिए पहले क्वेश्चन समझ लीजिए कि आपको एग्जैक्टली करना क्या है और कैसे करना है। ठीक है? ये आपको लिंक लिस्ट दिया हुआ है। अच्छा 1 2 3 4 5 इसमें पांच नोड है। लेकिन आपको इसको रिवर्स करना है। लेकिन आपको पूरा रिवर्स नहीं करना है। अगर पूरा रिवर्स करते तब तो बहुत आसान था कि आप कर्व यहां ले लेते और प्रव यहां ले लेते।",
+      "source": "caption",
+      "english_text": "Have done. Ok? The next question is going to be a little hard. So listen with an open mind. Isn't it? So listen to this question very carefully because you may get very different types of questions. It will take. Look, we have given you a list like this. We will not make a complete list, but to understand, first understand the questions as to what exactly you have to do and how to do it. Ok? This link list has been given to you. Well 1 2 3 4 5 It has five nodes. But you have to reverse it. But you don't have to do the complete reverse. If you had done the complete reverse then it would have been very easy to take the curve here and the curve here."
+    },
+    {
+      "start_time": 1065.36,
+      "end_time": 1091.669,
+      "text": "जैसे हम लोग पिछले बार किए तो ऐसे-ऐसे करके घूम जाता ये लिंक लिस्ट और फाइव रिटर्न कर दे। वेरी गुड। लेकिन इसमें एक छोटा सा कैच है। इसमें क्या कैच है? आपको दो नंबर्स दिए हुए हैं। क्या? लेफ्ट = 2, राइट = 4 अच्छा ये नंबर है क्या? ये नंबर 1 2 3 4 5 इसको रिप्रेजेंट नहीं करता। ये नंबर क्या है? ये दोनों नंबर ना पोजीशन है। क्या? पोजीशंस। यस कंफ्यूजन। 1 2 3 4 5 को रिप्रेजेंट नहीं करता। ये दोनों नंबर क्या है? पोजीशंस है।",
+      "source": "caption",
+      "english_text": "Like we did last time, we would go around doing this list of links and return five. very good. But there is a small catch. What's the catch in this? You have been given two numbers. What? Left = 2, Right = 4 Okay, what is this number? This number does not represent 1 2 3 4 5. What is this number? Both these numbers are not in position. What? Positions. Yes confusion. Does not represent 1 2 3 4 5. What are these two numbers? There are positions."
+    },
+    {
+      "start_time": 1091.679,
+      "end_time": 1125.35,
+      "text": "पोजीशंस। आप लोग को अच्छे से समझाने के लिए हम इसको मिटा ही देते हैं। क्योंकि हम देखे थे कि बहुत सारे लोगों को प्रॉब्लम थी स्लीट कोड के डिस्क्रिप्शन में। मानिए आपका लिस्ट ऐसा है। 10 20 30, 40 और 50। ठीक है? अब नहीं होगी कंफ्यूजन। लेफ्ट है आपका टू और फोर। और पोजीशन पोजीशन बताया हुआ है वन से स्टार्ट होता है। वन से स्टार्ट होता है। मतलब कि अगर आप इसको वन से तो 1 2 3 4 5 ये आपका लेफ्ट है। ये आपका राइट है। आपको ये दोनों नंबर दिया हुआ है। नोड नहीं दिया",
+      "source": "caption",
+      "english_text": "Positions. To make you understand better, we will delete it. Because we saw that many people had problems with the description of the SLEET code. Suppose your list is like this. 10 20 30, 40 and 50. Ok? There will be no confusion now. Left is your two and four. And the position position is mentioned starts from one. Starts from one. Meaning that if you move it from one then 1 2 3 4 5 is your left. This is your right. You have been given both these numbers. nod not given"
+    },
+    {
+      "start_time": 1125.36,
+      "end_time": 1160.16,
+      "text": "हुआ। नंबर जस्ट इंटीजर नंबर दिया हुआ है। तो आपको लेफ्ट और राइट पता चल गया कि 20 मेरा 40। आपको क्या करना है? आपको इस भाग को यहां से लेके यहां तक लेफ्ट से राइट को रिवर्स करना है। बस लेफ्ट से राइट को पूरे लिंक लिस्ट को नहीं बीच वाले भाग को रिवर्स करना है और और बाकी का लिंक लिस्ट जैसा है वैसा ही रहेगा। तो इसका आंसर देखिए क्या बनेगा? सबसे पहले तो ये वाला बीच वाला भाग रिवर्स हो जाएगा। ये जब रिवर्स हो जाएगा तो कैसा लगेगा देखिए। 40 30 ये रिवर्स हो के ऐसा लगेगा। लेकिन बाकी का",
+      "source": "caption",
+      "english_text": "It happened. The number is given just integer number. So you know left and right that 20 is my 40. What do you have to do? You have to reverse this part from left to right from here to here. You just have to reverse the middle part, not the entire link list from left to right, and the rest of the link list will remain as it is. So see the answer, what will happen? First of all, this middle part will be reversed. See how it will look when it is reversed. 40 30 It will look like this in reverse. but the rest"
+    },
+    {
+      "start_time": 1160.16,
+      "end_time": 1193.99,
+      "text": "लिंक लिस्ट को नहीं छेड़ना है। बाकी जो 10 था वो 10 यहीं रहेगा। 50 था 50 यहीं रहेगा और एरो भी ऐसा होना चाहिए। ये है आपका। ये आपको रिटर्न करना है। मतलब बीच वाले को रिवर्स कर दो। बाकी का लिंक लिस्ट बाकी का लेफ्ट और राइट भाग वाला जो उधर वाला जो रिवर्स नहीं हुआ है वो सेम रहेगा। वो जैसा पॉइंट करता था वैसा ही पॉइंट करता रहेगा। आपका आंसर ये होना चाहिए। आपको रिटर्न क्या करना है? हेड। आपको रिटर्न हेड करना है। रिटर्न क्या करना है? हेड। तो ये आपका क्वेश्चन है। और ये अगर एक बिगिनर हैं आप तो फेयरली कॉम्प्लेक्स क्वेश्चन है। मतलब",
+      "source": "caption",
+      "english_text": "The link list is not to be tampered with. The remaining 10 will remain here. 50 was 50, it will remain here and Arrow should also be like this. This is yours. You have to return this. Meaning reverse the middle one. The rest of the link list, the left and right parts which have not been reversed, will remain the same. He will continue to point as he used to point. Your answer should be this. What do you have to return? Head. You have to head returns. What to do about returns? Head. So this is your question. And if you are a beginner then this is a fairly complex question. meaning"
+    },
+    {
+      "start_time": 1194.0,
+      "end_time": 1228.149,
+      "text": "उतना इजी क्वेश्चन नहीं है। इसलिए आप देख सकते हैं मीडियम लेवल का क्वेश्चन है। आइए इसको थोड़ा सोचते हैं कि इसमें इसमें क्या करें? मतलब ये क्या बात हुई कि लेफ्ट से राइट तक रिवर्स करें और ऐसा कुछ कर दें। वैसा तो हम लोग सीखे नहीं थे। हम लोग तो सीखे थे। पूरा लिंक लिस्ट कैसे रिवर्स हो जाता है? अ चलिए इसको थोड़ा सोचते हैं। इसको थोड़ा सोचते हैं। तो देखिए लेफ्ट से राइट रिवर्स करना कोई बड़ी बात नहीं है। लेफ्ट [गला साफ़ करने की आवाज़] से राइट रिवर्स करना कोई बड़ी बात नहीं है। क्यों बड़ी बात नहीं है? देखिए जब आपको पूरा रिवर्स करना होता था ना जब आपको पूरा रिवर्स करना होता था तो आप क्या करते थे कि कर्व को कर्व को हेड पे डालते थे।",
+      "source": "caption",
+      "english_text": "It is not that easy a question. Therefore you can see it is a medium level question. Let's think a little about what to do in this? Meaning, what is the point of reverse from left to right and do something like this. We did not learn that. We had learned. How does the entire link list get reversed? A: Let's think about this a little. Let's think about this a little. So see, reversing from left to right is not a big deal. Reversing right from left [clearing throat] is no big deal. Why is it not a big deal? See, when you had to do a complete reverse, what you used to do was put the curve on the head."
+    },
+    {
+      "start_time": 1228.159,
+      "end_time": 1261.51,
+      "text": "अच्छा और ये अपना वाइल लूप अब जब तक देखिए जब तक आप अपना वाइल लूप चलाएंगे तब तक आप रिवर्स रिवर्स मतलब है क्या वो तार को उठा के पीछे जोड़ना पीछे वाले को आगे आगे वाले को आगे यही होता है रिवर्स तो आप जितना बार वो वाइल लूप चलाते थे उतनी बार वो रिवर्स करता था तो हम लोग क्या वाइल लूप में लिखते थे वाइल कर्व नॉट इक्वल टू नल अच्छा ये होता था ठीक है मान लीजिए मान लीजिए आपके पास एक ऐसा लिंक लिस्ट होता आपके पास एक ऐसा लिंक लिस्ट होता मान लीजिए हम हम आपको बताने की कोशिश कर रहे हैं कि जो आपके दिमाग में प्रॉब्लम है वो असली प्रॉब्लम नहीं है इस क्वेश्चन",
+      "source": "caption",
+      "english_text": "Okay, and this is our Vail loop. Now, as long as you see, as long as you run your Vail loop, you will see reverse. Reverse means, is it to pick up the wire and connect it to the back, to the front, to the front, this is what happens reverse, so as many times as you ran that Vail loop, it used to do reverse, so what we used to write in Vail loop, Vail curve is not equal to null. Well, this used to be okay. Suppose, suppose you had such a link list. Suppose you had such a link list. Suppose we, we Trying to tell you that the problem in your mind is not the real problem, this question"
+    },
+    {
+      "start_time": 1261.52,
+      "end_time": 1295.19,
+      "text": "की। आपको लग रहा होगा कि लेफ्ट से राइट कैसे रिवर्स कर देगा कोई। देखिएगा 100 200 300 400 यहां पे मान लीजिए वन है। और ये इसको पॉइंट करता है। ये इसको ये इसको और ये किसी को नल नहीं पॉइंट करता है। ठीक है? ये आपका लिंक लिस्ट है। वेरी गुड। अब अगर आपको बोला जाए पूरा लिंक लिस्ट रिवर्स करो तो अब नॉर्मल अपना आपको आता है। अभी तुरंत सिखाए हैं 5 मिनट पहले कैसे होता है। लेकिन हम बोलते हैं कि एक काम करो तुम दो बार रिवर्स कर दो। दो बार",
+      "source": "caption",
+      "english_text": "Of. You might be wondering how someone will reverse the right from left. See, let's say 100 200 300 400 is one. And it points to this. It doesn't point to this, this to this and this to anyone. Ok? This is your link list. very good. Now if you are asked to reverse the entire link list, then it feels normal to you. Just taught me how it happened 5 minutes ago. But we say that if you do one thing, you reverse it twice. twice"
+    },
+    {
+      "start_time": 1295.2,
+      "end_time": 1330.149,
+      "text": "कर दो भाई। दो बार रिवर्स कर दो ना। तुम शुरू से रिवर्स करना शुरू करो। लेकिन दो बार हो जाए तो रुक जाना। दो बार हो जाए तो रुक जाना। आइए देखते हैं कि दो बार रिवर्स करने का क्या मतलब होता है? सबसे पहले आपका कर्व क्या रहेगा? 100। आपका प्रव क्या रहेगा? नल। दो बार आपको करना है। तो चलिए पहली बार करते हैं। सबसे पहले तो इसका नेक्स्ट निकाल के 200 रख लीजिए। कर के 100 वाले को ओ सॉरी कर के 100 वाले को 100 वाले 100 के नेक्स्ट को मोड़ दीजिए। कहां मोड़ दीजिए? नल पे मोड़ दीजिए। ये हो गया नल। ठीक? ये किसी",
+      "source": "caption",
+      "english_text": "Do it brother. Reverse it twice. You start reverse from the beginning. But if it happens twice, stop. If it happens twice, stop. Let's see what it means to reverse twice? First of all, what will your curve be? 100. What will be your love? Tap. You have to do it twice. So let's do it for the first time. First of all, take out its next number and keep it at 200. After doing 100, oh sorry, turn 100, 100, next 100. Where to turn? Turn on the tap. This is done tap. Correct? this someone"
+    },
+    {
+      "start_time": 1330.159,
+      "end_time": 1362.31,
+      "text": "को पॉइंट नहीं करता है। ओके? ये एक बार हो गया। एक बार याद रखिएगा। एक बार हो गया। अब कर्व को आगे बढ़ा दीजिए। 200 और प्रीवियस को भी कर्व पे हम लोग पढ़ा चुके होंगे 100 पे। वेरी गुड। एक और बार करिए। नेक्स्ट को 300। अब कर के नेक्स्ट को मोड़ दीजिए। कर्व के नेक्स्ट को मोड़ दीजिए। कहां पे मोड़ दीजिए? प्रीवियस पे। प्रीवियस पे प्रीवियस पे बस हो गया। उसके बाद कर्व और ब्रेवफ को आगे बढ़ा दीजिए। 300 पे कर दीजिए। इसको 200 पे। बस अब रुक जाइए क्योंकि आप दो बार कर दिए। दो तार को जोड़ने का मतलब ही है कि दो बार रिवर्स हो",
+      "source": "caption",
+      "english_text": "Does not point to. Ok? This happened once. Remember this once. Once done. Now move the curve forward. We would have taught 200 and the previous ones also on the curve at 100. very good. Do it one more time. 300 to next. Now do this and fold the next one. Bend the next part of the curve. Where should you turn? On previous pay. Enough with the previous one. After that move forward with Curve and Breff. Pay Rs 300. This at Rs 200. Just stop now because you did it twice. Connecting two wires means doing the reverse twice."
+    },
+    {
+      "start_time": 1362.32,
+      "end_time": 1397.11,
+      "text": "गया। रुक जाइए। तो देखिए रिवर्स हो तो गया। मतलब किसी तरीके से दो नोड आप रिवर्स कर दिए और अगर आपसे कोई पूछता अगर आपसे पूछता कि इसका हेड रिटर्न करो तो आप ये वाला रिटर्न कर देते। इसको रिटर्न कर देते क्योंकि प्रव आपका यहां बैठा हुआ है तो आप यहां कर देते। तो बाकी का लिंक लिस्ट टूट गया लेकिन आप दो बार रिवर्स किए ना दो नोड को आप रिवर्स करके ऐसा बना दिए। तो आप नंबर ऑफ टाइम्स रिवर्स कर [गला साफ़ करने की आवाज़] सकते हैं। नंबर ऑफ टाइम्स आपको जो मन करता है आप वहां तक रिवर्स कर सकते हैं। आपको जहां तक मन करता है या जितनी बार मन करता है आप उतनी बार भी रिवर्स ऐसा जरूरी नहीं है कि",
+      "source": "caption",
+      "english_text": "Gone. Stop. So see, the reverse happened. Meaning, somehow you reversed two nodes and if someone had asked you to return the head of this one, you would have returned this one. If you could have returned it because Prav is sitting here, you would have returned it here. So the rest of the link list was broken but you reversed it twice and made it like this by reversing two nodes. So you can reverse the number of times [throat clearing sound]. You can reverse the number of times as much as you want. It is not necessary that you reverse as much as you feel like or as many times as you feel like."
+    },
+    {
+      "start_time": 1397.12,
+      "end_time": 1431.35,
+      "text": "रिवर्स आपको आता है तो आपको पूरा रिवर्स करना है। नहीं हमको दो बार रिवर्स करना है तो दो नोड करेंगे। तीन बार करना है तीन बार करेंगे। चार बार करना है चार बार करेंगे। हमको माने किसी पर्टिकुलर नोड तक रिवर्स करना है। तो हम वाइल करंट नॉट इक्वल टू नल नहीं हम कुछ और लिख देंगे। हम ऐसा लिख देंगे व्हाइल करंट नॉट इक्वल टू 400 इससे क्या होगा 400 तक पूरा लिंक लिस्ट रिवर्स हो जाएगा यही इसका मतलब हुआ ना तो आप जहां तक आपका मन करे वहां तक आप रिवर्स कर सकते हैं कर सकते हैं कर सकते हैं ठीक है अब अब आते हैं कि हम लोग को इस क्वेश्चन में इस",
+      "source": "caption",
+      "english_text": "If you know reverse then you have to do complete reverse. No, if we have to reverse twice, we will do two nodes. Have to do it three times, will do it three times. Have to do it four times, will do it four times. Let us say we have to reverse till a particular node. So we will write something else while current is not equal to null. We will write like this, while current is not equal to 400, what will happen by this, till 400, the entire link list will be reversed, this means that you can reverse as far as you want, you can do, you can do, okay, now let us come to this question."
+    },
+    {
+      "start_time": 1431.36,
+      "end_time": 1464.63,
+      "text": "क्वेश्चन में अगर आपको लेफ्ट और राइट देता है तो आपको कितनी बार रिवर्स करना पड़ेगा देखते हैं कितनी बार करना पड़ेगा 10 20 30 40 50 फ बाय फ चल रहे हैं। ठीक है? ये आपका वन है, टू है, फोर है, फाइव। आपको क्या बोला गया है? लेफ्ट और राइट टू और फोर। इसका क्या मतलब है? आपको किसको? इसको इसको इसको। तीन नोड, तीन नोड का आपको तार बदलना पड़ेगा। तीन नोड का क्या बदलना पड़ेगा? तार बदलना पड़ेगा। तीन नोड का तार बदलना पड़ेगा।",
+      "source": "caption",
+      "english_text": "In the question, if you are given left and right, how many times will you have to reverse, let's see how many times you will have to do 10 20 30 40 50 f by f. Ok? This is your one, two, four, five. What have you been told? Left and right two and four. What does it mean? To whom? This this this this Three nodes, three nodes you will have to change the wire. What needs to be changed about the three nodes? The wire will have to be changed. The wire of three nodes will have to be changed."
+    },
+    {
+      "start_time": 1464.64,
+      "end_time": 1493.59,
+      "text": "यस। तो, कितना? राइट। माइनस लेफ्ट। यस +1 +1 इतने बार इतने बार आपको तारों से छेड़छाड़ करनी पड़ेगी। रिवर्स का मतलब है तार से छेड़छाड़ करनी है। बाकी बाद में देखेंगे। क्या हो जाएगा? 4 - 2 + 1 थ्री टाइम्स। देख सकते हैं तीन नोड पे आपको रिवर्स करना है। टू से फोर मतलब थ्री टाइम्स। बस तो ये एक बात तो ये हो गई कि आपको थ्री टाइम्स रिवर्स करना है। कहां से स्टार्ट करते हुए? लेफ्ट से स्टार्ट करते हुए और राइट तक जाना है।",
+      "source": "caption",
+      "english_text": "Yes. so how much? Right. Minus left. Yes +1 +1 So many times you will have to tamper with the wires. Reverse means the wire has to be tampered with. We will see the rest later. What will happen? 4 - 2 + 1 Three Times. You can see that you have to reverse at three nodes. Two to four means three times. The only thing is that you have to reverse it three times. Starting from where? Starting from the left and going to the right."
+    },
+    {
+      "start_time": 1493.6,
+      "end_time": 1522.31,
+      "text": "अच्छा। अब इसमें एक तो बहुत इजी केस है कि अगर लेफ्ट इक्वल इक्वल टू राइट हो गया। लेफ्ट इक्वल इक्वल टू राइट हो गया तो आपको क्या करना पड़ेगा? आपको कुछ नहीं करना पड़ेगा। देखिए 10 20 30 40 मान लीजिए चार का है। ये वन है, टू है, थ्री है, फोर है। आपको बोलता है लेफ्ट = 2 है भाई और राइट = 2 है। ऐसा करो। तो क्या है? मतलब इसको आपको रिवर्स करना है।",
+      "source": "caption",
+      "english_text": "Okay. Now there is a very easy case in this that if left is equal to right. What will you have to do if left is equal to right? You don't have to do anything. See 10 20 30 40 let's say four. This is one, this is two, this is three, this is four. Tells you, brother, left = 2 and right = 2. Do this. So what? Meaning you have to reverse it."
+    },
+    {
+      "start_time": 1522.32,
+      "end_time": 1548.07,
+      "text": "कितने टाइम्स? 2 - 2 + 1, वन टाइम, वन नोड को रिवर्स करना है। वन नोड को रिवर्स करने का क्या मतलब है? वन नोड को रिवर्स करने का कोई मतलब नहीं है। आप जब लिखेंगे तो ये अब एक ही नोड को रिवर्स करेंगे तो वो एक ही नोड बनेगा ना? और बाकी का लिंक लिस्ट को आपको एज़ इट इज़ छोड़ना है। इसको आपको एज़ इट इज़ लिखना है। तो ऐसा ऐसा ऐसा। ये सेम ही लिंक लिस्ट है ना? ये दोनों लिंक लिस्ट सेम है ना? कोई डिफरेंस तो नहीं है। तो एक तो आपको समझ में आया कि इफ लेफ्ट इक्वल इक्वल टू राइट।",
+      "source": "caption",
+      "english_text": "How many times? 2 - 2 + 1, one time, one node to reverse. What does it mean to reverse a forest node? There is no point in reversing a forest node. Now when you write, it will reverse the same node, so it will remain the same node, right? And you have to leave the rest of the link list as it is. You have to write it as it is. So like this like this. This is the same link list, isn't it? These two link lists are the same, right? There is no difference. So one thing you understood is that if left is equal to right."
+    },
+    {
+      "start_time": 1548.08,
+      "end_time": 1579.43,
+      "text": "तुरंत क्या करना है? रिटर्न हेड। रिटर्न हेड। कुछ करने की जरूरत नहीं है क्योंकि एक नोड को क्या आप रिवर्स कर रहे हैं? एक न बीच में एक नोड रिवर्स हो गया वो क्या है? कुछ नहीं होता है। चलिए ये तो हो गई एक इजी केस ईजी केस। अब आते हैं मेन प्रोग्राम में कि अब आप लोग को टाइम समझ में आ चुका है कि नंबर ऑफ़ टाइम्स कितना होता है और क्या होता है? कैसे होता है। हम लोग कर सकते हैं मन करे तो। अब आइए देखते हैं। अब आइए करके देखते हैं कि अगर अगर मतलब एक तो ये इसका आंसर हो सकता है कि आपको लेफ्ट का मालूम पता है। आपको पता",
+      "source": "caption",
+      "english_text": "What to do immediately? Return head. Return head. There is no need to do anything because you are reversing a node? What is a node reversed somewhere in the middle? Nothing happens. Well, this is an easy case, easy case. Now coming to the main program, now that you all have understood the time, what is the number of times and what is it? How does it happen? We can do it if we feel like it. Now let's see. Now let's try and see if it means one, then the answer could be that you know the left side. you know"
+    },
+    {
+      "start_time": 1579.44,
+      "end_time": 1613.99,
+      "text": "है लेफ्ट टू है। आपको पता है राइट फोर है। आपको टाइम्स इससे पता चल जाएगा। टाइम्स इससे पता चल जाएगा। क्या पता चल जाएगा कि थ्री टाइम्स करना है। तो आप एक बात तो ये कर सकते हैं कि जब जब आप आपको देखिए लेफ्ट इक्वल टू मतलब सेकंड नोड सेकंड नोड पे आके आपको रिवर्स करना है कितने? थ्री टाइम्स। थ्री टाइम्स। एक बात तो आप ये कर सकते हैं कि जब आप गिन लीजिए। आप आप रिवर्स कर दीजिए लिंक लिस्ट को। गिन लीजिए कि आप जब सेकंड नोड पे पहुंचे। जब आप सेकंड नोड पे पहुंच जाएं, पहुंच जाएं, पहुंच जाएं। आप रिवर्स करना शुरू कर दीजिए। कितने टाइम्स? थ्री",
+      "source": "caption",
+      "english_text": "Hai is left to hai. You know right four. You will come to know from this in time. Times will reveal this. How will you know that you have to do it three times? So one thing you can do is that whenever you see left equal to two i.e. second node coming to the second node you have to reverse how many? Three Times. Three Times. One thing you can do is when you count. You please reverse the link list. Count when you reach the second node. When you reach the second node, reach, reach. You start reversing. How many times? three"
+    },
+    {
+      "start_time": 1614.0,
+      "end_time": 1643.51,
+      "text": "टाइम्स। तो देखते हैं कि उससे क्या होगा। देखते हैं कि उससे होगा क्या? चलिए देखते हैं कि उससे होगा क्या। 10 20 30 40 50 ये आपका लिंक लिस्ट है। अच्छा। हम लोग क्या बोले कि 1 2 3 4 5 कि जब आप सेकंड नोड पे पहुंच जाएं तो आप अपना रिवर्स वाला प्रोग्राम लिख दीजिए। कितनी बार? थ्री टाइम्स। पूरा प्रोग्राम सेम। बस वो वाइल कर नॉट इक्वल टू नल की जगह। वाइल टाइम्स माइनस माइनस ऐसा कि वो तीन टाइम हो गया।",
+      "source": "caption",
+      "english_text": "Times. So let's see what happens with that. Let's see what happens with that? Let's see what happens with that. 10 20 30 40 50 This is your link list. Good. What did we say to 1 2 3 4 5 that when you reach the second node, you write your reverse program? how often? Three Times. Complete program same. Just replace that while not equal to null. Vile times minus minus such that it became three times."
+    },
+    {
+      "start_time": 1643.52,
+      "end_time": 1677.909,
+      "text": "देखते हैं। जब आप यहां पे पहुंचेंगे आपको मालूम चल जाएगा कि सेकंड नोड पे आए हैं। कैसे? एक वेरिएबल ले लेंगे। दिखा वो काउंट वेरिएबल ले लेंगे कि आप सेकंड नोड पे आ गए। तो चलिए अब हम लोग अपना रिवर्स प्रोग्राम शुरू करते हैं तीन बार। एग्जैक्टली तीन बार। तो देखिए सबसे पहले जब हम लोग आएंगे तो हम लोग कर्व क्या होगा? कर्व इज़ इक्वल टू होगा 200। Okay? और प्रीवियस इज़ इक्वल टू होगा नल। रिवर्स ऐसे ही लिखते हैं ना? रिवर्स प्रोग्राम ऐसे ही शुरू करते हैं। तो सबसे पहले तो ये मिट जाएगा। ओके? और ये नल पे पॉइंट करने लगेगा। अच्छा एक बार हुआ आगे वाला मिट के",
+      "source": "caption",
+      "english_text": "Let's see. When you reach here you will know that you have reached the second node. How? Will take one variable. They will take the count variable to show that you have reached the second node. So now let us start our reverse program three times. Exactly three times. So see, what will be the curve when we first come? The curve is equal to 200. Okay? And previous is equal to will be null. This is how reverses are written, isn't it? This is how the reverse program starts. So first of all it will disappear. Ok? And it will start pointing at the tap. Well, once the next one is erased"
+    },
+    {
+      "start_time": 1677.919,
+      "end_time": 1712.87,
+      "text": "यहां पॉइंट करने लगेगा। दो बार हो गया। उसके आगे वाला भी मिट के यहां पॉइंट करने लगेगा। तीन बार हो गया। तीन बार हो गया। अब अब जब आप ऐसा करेंगे जब आप तीन बार कर चुके होंगे। तो आपका कर्व इज़ इक्वल टू 500 पे होगा। इस पे 500 मतलब वो फिफ्थ नोड या जो भी उसका एड्रेस है। आपका प्रव इससे एक पीछे 400 पे होगा। यहां पे और देखिए आपका आपका रिवर्स हो चुका है। आपका रिवर्स हो चुका है। आपका रिवर्स हो चुका है। लेकिन आपका जो पूरा लिंक लिस्ट है आपका जो पूरा लिंक लिस्ट है वो कैसा दिख रहा है? देखते हैं। आपका पूरा लिंक लिस्ट कैसा दिख रहा है? देखते हैं।",
+      "source": "caption",
+      "english_text": "Will start pointing here. It happened twice. The person ahead of him will also start pointing here. It happened three times. It happened three times. Now now when you do this after you have done it three times. So your curve is equal to 500 pe. On this, 500 means the fifth node or whatever its address is. Your profit will be 400 pes one behind this. Look here and yours has been reversed. Yours has been reversed. Yours has been reversed. But what does your complete link list look like? Let's see. What does your complete link list look like? Let's see."
+    },
+    {
+      "start_time": 1712.88,
+      "end_time": 1746.95,
+      "text": "सबसे शुरुआत में तो 10 है। 10 को तो हम लोग टच नहीं किए थे। तो 10 20 को पॉइंट कर रहा है। 20 नल को पॉइंट कर रहा है। 20 नल को पॉइंट कर रहा है। 20 नल को पॉइंट कर रहा है तो कुछ नहीं। ओके। आगे देखते हैं। 30 30 20 को पॉइंट कर रहा है। कर रहा है ना? अच्छा 40 30 को पॉइंट कर रहा है। यस। ओके। और 50 अकेला है। 40 अब 50 को पॉइंट नहीं कर रहा है। तो आपका लिंक लिस्ट ऐसा बन गया है। आपका लिंक लिस्ट ऐसा बन गया। लेकिन ये आपको नहीं चाहिए था। ये बहुत बेतुका लिंक ये क्या बन गया ये? मतलब देखिए। यहां से",
+      "source": "caption",
+      "english_text": "In the beginning it is 10. We did not touch the 10th. So 10 is pointing to 20. 20 is pointing to the tap. 20 is pointing to the tap. If it is pointing to 20 taps then nothing. Ok. see you next. 30 30 is pointing to 20. Is he doing it? Well 40 is pointing to 30. Yes. Ok. And 50 is alone. The 40 is no longer pointing to the 50. So your link list has become like this. Your link list became like this. But you didn't want this. What has become of this very absurd link? See the meaning. from here"
+    },
+    {
+      "start_time": 1746.96,
+      "end_time": 1781.029,
+      "text": "यहां तक तो सही हो गया। 40 30 वेरी गुड। वेरी गुड वेरी गुड। लेकिन आपको ये चाहिए नहीं था। आपको क्या चाहिए था? आपको चाहिए था ये। आपको चाहिए क्या था? वो लिख देते हैं। आपको चाहिए था ये अगर याद नहीं है तो। ये चाहिए था। बीच में आपका रिवर्स वाला पोर्शन रहे। कोई उससे हमको दिक्कत नहीं है। बीच में क्या रहे? 40 30 20 उसके बाद बाकी का पोर्शन एज इट इज़ रहेगा। तो देखिए क्या चेंजज़ आप इन ऊपर वाला लिंक लिस्ट आपको मिलेगा कैसा? जब आप रिवर्स कर देंगे नॉर्मल तो क्या चेंजेस करने की जरूरत पड़ेगी आपको? देखिए 10 किस",
+      "source": "caption",
+      "english_text": "So far it has been correct. 40 30 Very good. Very good very good. But you didn't want this. What did you want? You wanted this. What did you want? They write. You wanted this if you don't remember. This was needed. Your reverse portion should be in the middle. We don't have any problem with that. What remains in between? 40 30 20 After that the remaining portion will remain as it is. So see what changes you will get in the above link list? What changes will you need to make when you reverse normal? see 10 kisses"
+    },
+    {
+      "start_time": 1781.039,
+      "end_time": 1815.35,
+      "text": "पे पॉइंट कर रहा है? 40 पे। 20 पे नहीं ऊपर वाले पे 20 पे ही पॉइंट करा था क्योंकि 10 को हम लोग चेंज नहीं किए थे। तो अब अगर आप 10 को मिटा के अगर आप 10 को मिटा के किस पे पॉइंट करा दें किसी तरीके से 40 पे कर दिए। ओके 40 30 पे पॉइंट कर रहा है। ऊपर भी 40-30 पे पॉइंट कर रहा है। 30 20 पे ऊपर भी 30 पे। लेकिन 20 50 पे पॉइंट कर रहा है। ऊपर वाले में 20 नल पे पॉइंट कर रहा है। क्योंकि आप रिवर्स किए थे तो आप उसको नल कर दिए थे। अगर हम 20 को मिटा के 20 के नेक्स्ट को 50 में पॉइंट कर दें। ओके? और हेड क्या है? हेड आपका 10 ही",
+      "source": "caption",
+      "english_text": "Paying points? 40 pe. The point was made not on 20 but on the top 20 only because we had not changed 10. So now if you erase 10 and point it at 40 somehow. Ok 40 is paying 30 points. Also doing 40-30 pay point above. 30 at 20, even above at 30. But 20 is paying 50 points. The one above is pointing at 20 taps. Because you had reversed it so you had nullified it. If we erase 20 and point the next 20 to 50. Ok? And what is head? head your 10 only"
+    },
+    {
+      "start_time": 1815.36,
+      "end_time": 1849.669,
+      "text": "होना चाहिए 10। अब देखते हैं लिंक लिस्ट कैसा बनता है। सबसे पहले आएगा 10, ओके? 10 के बाद आएगा 40, वेरी गुड। 40 के बाद आएगा 30, वेरी गुड। 30 के बाद 20, वेरी गुड, 20 के बाद 50। यस, एग्जैक्टली सेम लिंक लिस्ट। एक्जेक्टली सेम लिंक लिस्ट। तो आपको कुछ चीजें चेंज करनी पड़ेगी। कुछ चीजें चेंज करनी पड़ेंगी, क्या? आपको थोड़ा कनेक्शन इधर-उधर करना पड़ेगा। क्या करना पड़ेगा देखते हैं। क्या करना पड़ेगा? देखते हैं। तो ये इस क्वेश्चन को हार्ड बनाता है। ये इस क्वेश्चन को हार्ड बनाता है। आपको क्या करना है? देखिए। 10 20 30",
+      "source": "caption",
+      "english_text": "Should be 10. Now let's see how the link list is created. 10 will come first, okay? 40 will come after 10, very good. 30 will come after 40, very good. 20 after 30, very good, 50 after 20. Yes, exactly same link list. Exactly Same Link List. So you will have to change some things. Some things will have to be changed, right? You will have to make a little connection here and there. Let's see what needs to be done. what needs to be done? Let's see. So this makes this question hard. This makes this question hard. What do you have to do? See. 10 20 30"
+    },
+    {
+      "start_time": 1849.679,
+      "end_time": 1884.549,
+      "text": "40 50 ठीक है। जब आप रिवर्स करेंगे तो आपका ऐसा हो जाएगा। 20 सॉरी जब आप रिवर्स करेंगे तो आपका ऊपर वाला तो रिवर्स हो जाएगा। 40 30 20 अच्छा आपके 10 अभी भी यहां है और 50 यहां है। ये दोनों रिवर्स नहीं हुए थे। ये दोनों इन दोनों के मतलब बीच में रिवर्स हुआ था। 10 और 50 के बीच वाले सारी चीजें रिवर्स हो चुकी हैं। अब आपको एक कनेक्शन कहां करना है? एक और बात ऊपर जब आप रिवर्स किए होंगे रिवर्स करने के बाद आपका प्रीवियस इज़ इक्वल टू होगा फोर 40 पे।",
+      "source": "caption",
+      "english_text": "40 50 is ok. This will happen to you when you reverse. 20 Sorry, when you reverse, your upper one will reverse. 40 30 20 Well your 10 is still here and 50 is here. Both of these were not reversed. The meaning of both of these was reversed in the middle. Everything between 10 and 50 has been reversed. Now where do you have to make a connection? One more thing above when you have reversed, after reversing your previous is equal to four 40 pe."
+    },
+    {
+      "start_time": 1884.559,
+      "end_time": 1919.43,
+      "text": "क्योंकि 40 आपका नया हेड है क्योंकि 40 20 30 40 को रिवर्स करेंगे 40 नया हेड बन जाएगा। आपका कर्व आपका होगा 50 पे। आपका कर्व किस पे होगा? 50 पे। Okay? तो एक चीज़ तो हमको क्या करना है? ये 10, ये 10 क्या है? ये 10 क्या है? ये 10 पहले वाला नोड है। मतलब रिवर्स होने के जस्ट पहले वाला नोड है। अगर अगर आपको बोला जाता है कि टू टू से रिवर्स करना है। लेफ्ट = 2 है। तो ये 10 जो है ना लेफ्ट - 1 है। ये वन नोड है। मतलब यहां तक रिवर्स नहीं हुआ। इसके बाद रिवर्स हुआ होगा। इसको अगर हम लोग बिफोर बोल दें। इसको हम लोग",
+      "source": "caption",
+      "english_text": "Because 40 is your new head because 40 will reverse 20 30 40 40 will become the new head. Your curve will be yours at 50. Where will your curve be? 50 pe. Okay? So what do we have to do? These 10, what are these 10? What are these 10? This is the 10th node. Meaning, it is the node just before the reverse. If you are told to reverse from 2 to 2. Left = 2. So this is 10 which is left - 1. This is one node. Meaning the reverse has not happened till now. After this the reverse would have happened. If we say this before. we this"
+    },
+    {
+      "start_time": 1919.44,
+      "end_time": 1952.23,
+      "text": "बोल दें कि बिफोर निकाल मान लीजिए कि आपके पास है। ओके बस आपको क्या करना है? 10 से 140 तक जाना चाहिए। मतलब कि बिफोर बिफोर मतलब जिस नोड के पहले तक रिवर्स नहीं हुआ है। उसके बाद रिवर्स शुरू हुआ है। बिफोर डॉट नेक्स्ट इज़ इक्वल टू क्या? 40। 40 कहां है? प्रव प्रव। ये हो गया। ये बन जाएगा। बाकी सेम है और और 20 20 कौन सा नोड है? 20 कौन सा? 20 तो कहीं है नहीं। अभी तक तो 20 कहीं भी नहीं है।",
+      "source": "caption",
+      "english_text": "Say that before taking it out, assume that you have it. Ok just what do you have to do? Should go from 10 to 140. Meaning that before before means the node before which the reverse has not been done. After that the reverse has started. Before dot next is equal to what? 40. Where is 40? Prava Prava. that'll be. This will be made. The rest is same and and which node is 20 20? 20 which one? 20 is not there anywhere. There is still no 20 anywhere."
+    },
+    {
+      "start_time": 1952.24,
+      "end_time": 1978.63,
+      "text": "लेकिन 20 का जो जाना चाहिए वो कहां पे जाना चाहिए? 20 का जो चीजें जाना चाहिए वो कहां पे जाना चाहिए? 20 की चीजें जानी चाहिए 50 पे। 20 क्या था? 20 आपका ये लेफ्ट वाला नोड था। 20 आपका ये लेफ्ट वाला नोड था। जिस पे आप खड़े थे, जिसप आप रिवर्स करना शुरू किए थे। तो मान लीजिए इसको भी हम लोग कर लेते। इसको भी हम लोग कोई एक नाम दे देते कि इसको हम लोग बोल देते लास्ट है। ये लास्ट है।",
+      "source": "caption",
+      "english_text": "But where should that 20 rupees go? Where should the things worth 20 rupees go? Things worth Rs 20 should be sold for Rs 50. What was 20? 20 This was your left node. 20 This was your left node. The one on which you were standing, the one on which you started to reverse. So suppose we could have done this also. We could have given this also some name or we could have called it last. This is last."
+    },
+    {
+      "start_time": 1978.64,
+      "end_time": 2012.87,
+      "text": "क्योंकि निकाला जा सकता है लास्ट है। तो क्या होता? लास्ट डॉट नेक्स्ट इज़ इक्वल टू इसको कहां जाना है? 50 पे। 50 कहां पे है? करंट पे। अगर आप ये दोनों चीज़ें कर दें और उसके बाद रिटर्न हेड कर दें। रिटर्न हेड कर दें तो आपका आंसर मिल जाएगा। आपका लिंक लिस्ट देख के तैयार हो चुका है। क्योंकि आप लेफ्ट से शुरू करके रिवर्स किए कितनी बार? तीन टाइम उसके बाद आप बाकी के जो कनेक्शन टूट गए थे जो बिगड़ गए थे उनको ऐसा करके जोड़ दिए तो आपका लिंक लिस्ट बन सकता है आपका लिंक लिस्ट बन सकता है आइए देखते हैं अब कि कैसे करेंगे तो इसीलिए देखिए आपको समझ में तो आ गया होगा आपको",
+      "source": "caption",
+      "english_text": "Because it is the last one that can be removed. So what would have happened? Last dot next is equal to where does it go? 50 pe. Where is 50? On current. If you do both these things and then head back. If you head return, you will get your answer. Your link list is ready. Because how many times have you started from the left and reversed? After three times, if you connect the remaining connections that were broken or deteriorated, then your link list can be created. Your link list can be created. Let us now see how to do it, so see, you must have understood."
+    },
+    {
+      "start_time": 2012.88,
+      "end_time": 2040.71,
+      "text": "समझ में आया होगा करना क्या है कैसे करना है समझ में नहीं आया होगा कि चलो ये सब कहानी वाहानी तो ठीक है लेकिन अब बोले कि ये यहां रख लेंगे वो वहां रख लेंगे यहां पता चल जाएगा कैसे पता चल जाएगा आइए देखते हैं कैसे पता चल जाएगा ये बहुतेंट क्वेश्चन है ठीक है ठीक है सबसे पहले आपका लिंक लिस्ट ऐसा दिखेगा। 10 20 30 40 इसको चलिए प्रॉपर लिंक लिस्ट ही बना देते हैं। ऐसा मजा नहीं आएगा आपको। है ना?",
+      "source": "caption",
+      "english_text": "You must have understood what to do, how to do it, you must not have understood that okay, all this story telling is fine but now they say that we will keep this here, we will keep that there, here we will know how we will know, let's see how we will know, this is a lot of questions, okay, first of all your link list will look like this. 10 20 30 40 Let's make this a proper link list. You won't enjoy this. Isn't it?"
+    },
+    {
+      "start_time": 2040.72,
+      "end_time": 2068.55,
+      "text": "प्रॉपर लिंक लिस्ट बनाने में ज्यादा ही अच्छा लगता है। एक दो तीन चार पांच 20 30 40 50 यह 100 है, 200 है, 300 है, 400 है, 500 है। ये 200 को पॉइंट करता है।",
+      "source": "caption",
+      "english_text": "It feels better to create a proper link list. One two three four five 20 30 40 50 This is 100, 200, 300, 400, 500. It points to 200."
+    },
+    {
+      "start_time": 2068.56,
+      "end_time": 2103.43,
+      "text": "ये 300 को पॉइंट करता है। ये 400 को पॉइंट करता है। ये 500 को पॉइंट करता है। ये किसी को पॉइंट नहीं करता है। अच्छा। आपको लेफ्ट की वैल्यू दी हुई है वन सॉरी टू। राइट की वैल्यू दी हुई है फोर। वेरी गुड। ठीक है। अभी इसमें एक h कैसे उस पे हम बाद में आते हैं। ठीक है? बाकी आप पहले नॉर्मल केस देख लीजिए। एक एच केस है छोटा-छोटा सा। लेफ्ट है टू, राइट है फोर। मतलब कि आपको सेकंड नोड से शुरू करना है। सेकंड नोड से शुरू करना है।",
+      "source": "caption",
+      "english_text": "It points to 300. It points to 400. It points to 500. It doesn't point to anyone. Good. You are given the value of left one sorry two. The value of the right is given as four. very good. Ok. Now there is a h in it, we will come to that later. Ok? Rest, first see the normal case. An H case is a small one. Left is two, right is four. Meaning that you have to start from the second node. Starting from the second node."
+    },
+    {
+      "start_time": 2103.44,
+      "end_time": 2128.55,
+      "text": "थ्री टाइम्स रिवर्स करना है। थ्री टाइम्स रिवर्स करना है। थ्री टाइम्स कैसा आया? 4 - 2 + 1 ऐसा करके करना है। तो सेकंड नोड पे आप पहुंच गए हैं। सेकंड नोड पे आप पहुंच गए हैं। वो आपको कैसे पता चलेगा? सेकंड नोड पे आप पहुंच गए हैं। वो आपको कैसे पता चलेगा? वो आपको कैसे पता चलेगा? तो हम बताते हैं कैसे पता चलेगा। t = 100 एक टेंपरेरी वेरिएबल ट्रेवर्स करने के लिए क्योंकि ट्रेवर्स करेंगे तभी तो मालूम चलेगा। अच्छा।",
+      "source": "caption",
+      "english_text": "Have to reverse three times. Have to reverse three times. How was three times? 4 - 2 + 1 has to be done by doing this. So you have reached the second node. You have reached the second node. How will you know that? You have reached the second node. How will you know that? How will you know that? So let us tell you how to know. t = 100 to traverse a temporary variable because only when we traverse it will we know. Good."
+    },
+    {
+      "start_time": 2128.56,
+      "end_time": 2159.03,
+      "text": "और और एक चीज़ याद रखिए। सेकंड नोड से रिवर्स करना है वो तो ठीक है। लेकिन आपको इस नोड की भी जरूरत थी। आपको इस नोड की भी जरूरत थी। इस नोड की भी जरूरत थी ना। ये कौन था? ये फर्स्ट नोड था। आपको सेकंड नोड से रिवर्स करना है। सेकंड नोड से रिवर्स करना है। लेकिन आपको इस नोड की भी जरूरत है। क्यों? क्योंकि आपको ये बाद में कनेक्शन जोड़ना पड़ेगा। ये जो बिफोर है बिफोर डॉट नेक्स्ट इक्वल ट्रीस। ये आपको बाद में करना पड़ेगा। बिफोर की जरूरत है। बिफोर की ज़रूरत है। ओके? इसके लिए हम लोग मेरे दिमाग में जो आ रहा है आपके दिमाग में हो सकता है कोई अलग एल्गोरिदम आएगा।",
+      "source": "caption",
+      "english_text": "And remember one more thing. If you want to reverse from the second node, that is fine. But you also needed this node. You also needed this node. This node was also needed. Who was this? This was the first node. You have to reverse from the second node. To reverse from the second node. But you also need this node. Why? Because you will have to add this connection later. This is the before dot next equal trees. You will have to do this later. Before is needed. Before is needed. Ok? For this, whatever is coming in my mind, maybe a different algorithm will come in your mind."
+    },
+    {
+      "start_time": 2159.04,
+      "end_time": 2191.109,
+      "text": "तो देखिए। अगर आपको फर्स्ट नोड पता चल जाए। आपको अगर फर्स्ट आपको पता चल जाए कि इस समय हम फर्स्ट पे खड़े हैं। इस समय हम किस पे खड़े हैं? फर्स्ट नोड पे खड़े हैं। तो आपको पता चल जाएगा कि जो अगला वाला नोड है वो सेकंड नोड है। अगला वाला नोड क्या है? वो सेकंड नोड है। या तो आप उसको ऐसे भी कर सकते हैं कि आप पहले एक बिफोर ले लीजिए। आप पहले एक बिफोर ले लीजिए। बिफोर = नल। ठीक है? हर बार हर बार t आने पे हर बार t = 100 आने पे आप क्या कीजिए?",
+      "source": "caption",
+      "english_text": "So see. If you know the first node. If you first come to know that at this time we are standing on the first place. Where do we stand at this moment? Standing on the first node. So you will know that the next node is the second node. What is the next node? That is the second node. Or you can do it in such a way that you first take a before. You take a before. Before=null. Ok? What should you do every time t comes? Every time t = 100 comes?"
+    },
+    {
+      "start_time": 2191.119,
+      "end_time": 2222.87,
+      "text": "और एक पोजीशन वेरिएबल ले लीजिए। एक क्या ले लीजिए? पोजीशन। पोजीशन = 0 ठीक है। अच्छा आइए t = 100 पे चलिए इसको वन से ले लें क्योंकि पोजीशन तो वन से स्टार्ट होने वाला है। पोजीशन तो वन से स्टार्ट होने वाला है। चलिए इफ सॉरी t आया हम लोग क्या चेक करेंगे देखिएगा। इसको लिंक लिस्ट में पोजीशन ऐसे आप चेक कर सकते हैं। आपके दिमाग में जो भी आ रहा है आप ऐसे चेक कर सकते हैं। लेकिन चेक करना क्या है? इफ इक्वल इक्वल टू टू। क्योंकि लेफ्ट टू है।",
+      "source": "caption",
+      "english_text": "And take a position variable. Take one what? Position. Position=0 is ok. Okay, let's take it from one at t = 100 because the position is going to start from one. The position is going to start from one. Come on, if sorry t came, let's see what we will check. You can check its position in the link list like this. Whatever is coming in your mind, you can check it like this. But what is checking? If equals equals two. Because there is left two."
+    },
+    {
+      "start_time": 2222.88,
+      "end_time": 2256.79,
+      "text": "लेफ्ट टू है। पोजीशन टू का मतलब कि आपको यहां से स्टार्ट करना था। आपको यहां से स्टार्ट करना था। तो आप यहां से स्टार्ट कर दिए। लेकिन जब तक वो टू नहीं है। जब तक वो टू नहीं है। मान लीजिए ऐसा हम लोग नहीं लिख के जब तक वो टू नहीं है। लेस &lt; 2 लेस &lt; 2 मतलब कि आप टू तक कभी नहीं पहुंचे हैं। तो आप क्या करिए? बिफोर = t बिफोर = t = t डॉट नेक्स्ट और कंटिन्यू और कंटिन्यू इससे क्या होगा कि जब तक आप लेफ्ट तक नहीं पहुंचेंगे जब तक आप लेफ्ट तक नहीं",
+      "source": "caption",
+      "english_text": "Left is two. Position two means you had to start from here. You had to start from here. So you start from here. But unless it is two. Unless it's two. Let's say we don't write like this unless it's two. Less < 2 Less < 2 means you never reach two. So what should you do? before = t before = t = t dot next and continue and continue what will happen is that until you get to the left until you get to the left"
+    },
+    {
+      "start_time": 2256.8,
+      "end_time": 2291.67,
+      "text": "पहुंचेंगे तब तक आपका ये बिफोर = t होता रहेगा। इससे फायदा क्या होगा? अब मान लीजिए यहां पे आप लिखते हैं कि जब आपका पोजीशन टू हो चुका है। तो देखिए पहले में हम लोग देखते हैं कि जब नहीं है। अभी पोजीशन आपका क्या है? वन। क्या वन लेस दैन टू है? यस। लेस दैन टू है। तो आपका बिफोर क्या बन गया? t। तो आपका बिफोर क्या बन गया यहां से मिट के? 100। आपका बिफोर क्या बन गया? 100 ठीक। t = 200। हां सॉरी। एक चीज़ तो रह गया। अब पोजीशन आप यूज़ कर रहे हैं तो पोजीशन आप वो भी तो करेंगे। और पॉज प्लस प्लस। फिर कंटिन्यू। फिर क्या",
+      "source": "caption",
+      "english_text": "Till you reach, your 'before = t' will keep happening. What will be the benefit of this? Now suppose here you write that when your position has become two. So see in the first we see when it is not. What is your position now? Forest. Is one less than two? Yes. Less than two. So what became your before? t. So what became of you before you disappeared from here? 100. What became your before? 100 ok. t = 200. Yes sorry. One thing remains. Now you are using the position, so you will do that also. And pause plus plus. Then continue. then what"
+    },
+    {
+      "start_time": 2291.68,
+      "end_time": 2325.03,
+      "text": "करेंगे? कंटिन्यू। हां। अब देखिए क्या होगा। शुरू में पॉज वन था। क्या वन लेस दैन टू है? यस। वन लेस दैन टू है। मतलब आप अभी तक लेफ्ट तक नहीं पहुंचे हैं। आप पहले ही हैं अभी। तो पहले वाले को बिफोर = t पे रख लिए तो बिफोर = 100 हो गया। t = t {डॉट} नेक्स्ट तो t 200 अभी आ गया हो जाएगा वाइल लूप में। पॉज प्लस प्लस पॉज प्लस प्लस तो पॉज हो गया क्या? टू। अब अब अगले बार जब आप चेक करेंगे कि पॉज टू से लेस है क्या? नहीं। पॉज टू से लेस नहीं है। पॉज टू बन चुका है। अब आपको अपना रिवर्स शुरू करने की ज़रूरत है। अब आपको अपना रिवर्स शुरू करने की ज़रूरत है। और देखिए बहुत मैजिकली या बहुत इंपॉर्टेंटली",
+      "source": "caption",
+      "english_text": "will do? Continue. Yes. Now see what will happen. Initially there was pause one. Is one less than two? Yes. One is less than two. Meaning you have not reached the left yet. You are already there now. So if we keep the first one at before = t then it becomes before = 100. t = t {dot} Next, t 200 will now be in the while loop. Pause Plus Plus Pause Plus Plus So has it been paused? To. Now next time you check whether the pause to say is correct? No. Pause to say is not less. Pause 2 has been made. Now you need to start your reverse. Now you need to start your reverse. And see very magically or very insignificantly"
+    },
+    {
+      "start_time": 2325.04,
+      "end_time": 2358.31,
+      "text": "जब आपका t = 200 यहां पे हुआ। उस समय आप यहां पर हैं। उस समय आपको किसकी जरूरत थी? आपको इस 10 की जरूरत थी। लास्ट में अभी नहीं लेकिन पड़ेगी। और देखिए आपके बिफोर में 100 आ गया। आपके बिफोर में 100 आ गया। क्योंकि आप क्या कर रहे थे? जब तक लेफ्ट तक नहीं पहुंच रहे थे तब तक बिफोर इज इक्वल टू t करते जा रहे थे। मतलब बिफोर एक तरीके से आप जिस t पे खड़े होंगे आपको मालूम चलेगा कि यहां से हमको रिवर्स करना है ना। आपका t आपका बिफोर उसके पहले वाले नोड पे रहेगा क्योंकि आपको बाद में जरूरत पड़ेगी। तो चलिए अब आपको पता चलता है कि cos = 2 मतलब ये वाला फॉल्स हो गया। अच्छा ये वाला फॉल्स हो गया मतलब cos = 2 हो गया",
+      "source": "caption",
+      "english_text": "When your t = 200 here. At that time you are here. What did you need at that time? You needed this 10. Not yet in the end but it will happen. And see, 100 has come before you. 100 came before you. Because what were you doing? We kept doing before is equal to t until we reached left. Meaning, in a way, before you stand on the t, you will know that from here we have to reverse. Your t will be on the node before that because you will need it later. So now you know that cos = 2 means this one is false. Well, this one becomes false, meaning cos = 2."
+    },
+    {
+      "start_time": 2358.32,
+      "end_time": 2385.829,
+      "text": "होगा। अब आपको करना शुरू करना है। क्या करना है? रिवर्स करना शुरू करना है। रिवर्स कैसे करते हैं? आपको इस नोड से कितने बार रिवर्स करना है? तीन बार। तो सबसे पहले तो एक कर्व इक्वल टू कर्व किस पे रहता था? हेड पे। लेकिन हेड नहीं रखना है। इस नोड से रिवर्स करना है। ये आपका हेड है। कर्व = 200। मतलब कर्व = t प्रव = नल। और हम लोग क्या करेंगे? वाइल हां। एक हम लोग निकालेंगे इंट।",
+      "source": "caption",
+      "english_text": "Will happen. Now you have to start doing it. What is the plan? Have to start reverse. How to reverse? How many times do you have to reverse from this node? Three times. So first of all, on what was one curve equal to two curves? On head. But don't keep the head. Have to reverse from this node. This is your head. Curve = 200. Means curve = t Prav = null. And what will we do? Vile yes. One we will take out int."
+    },
+    {
+      "start_time": 2385.839,
+      "end_time": 2414.55,
+      "text": "टाइम्स इक्वल टू क्या? राइट - लेफ्ट + 1 इतने टाइम्स। तो वाइल टाइम्स माइनस माइनस यस उसके बाद जो हम लोग रिवर्स करते थे वही करना है। नेक्स्ट इक्वल टू कर्व डॉट नेक्स्ट अ कर डॉट नेक्स्ट = प्रव पीछे घुमाइए। प्रव को कर्व पे ले आइए और कर्व को आगे लेके चलिए।",
+      "source": "caption",
+      "english_text": "Times equal to what? Right - Left + 1 so many times. So Vile Times Minus Minus Yes, after that we have to do the same thing in reverse. Next equal to curve dot next a cur dot next = prv rotate back. Bring the prow to the curve and move the curve forward."
+    },
+    {
+      "start_time": 2414.56,
+      "end_time": 2446.87,
+      "text": "यह बंद कर दीजिए। इससे होगा क्या? देखिए इससे क्या होगा? सबसे पहले कर्व = 200। आपका कर्व यहां पर होगा। सबसे पहले तो यह घूमेगा। ये घूमेगा और ये क्या बन जाएगा? नल। तो ये कहीं नहीं होगा। अच्छा। उसके बाद एक बार हुआ। इसको एक बार याद रखिए। एक बार याद रखिए। अगले बार क्या होगा? 300 वाला घूमेगा। 300 वाला घूम के कहां पहुंच जाएगा? 200 पे। 200 पे। ये हो गया 200। ये दो बार हो गया याद रखिएगा। अगले बार क्या होगा? 400 वाला भी घूमेगा। 400 वाला भी घूम के कहां पहुंच जाएगा? 300 पे। किस",
+      "source": "caption",
+      "english_text": "Stop this. What will happen from this? See what will happen from this? First curve = 200. Your curve will be here. First of all it will rotate. Will it rotate and what will it become? Tap. So this will not happen anywhere. Good. It happened once after that. Remember this once. Remember this once. What will happen next time? The 300 one will rotate. Where will the 300 person roam and reach? 200 pe. 200 pe. This is 200. Remember this happened twice. What will happen next time? The 400 one will also rotate. Where will even a 400 person roam and reach? 300 pe. kiss"
+    },
+    {
+      "start_time": 2446.88,
+      "end_time": 2480.71,
+      "text": "पे? 300 पे। तो ये पहुंच गया यहां पे। थ्री टाइम्स हो गया। थ्री टाइम्स हो गया। थ्री टाइम्स हो गया। लेकिन जब आप थ्री टाइम्स के बाहर गए होंगे आपका कर्व कहां बैठा हुआ होगा? 500 पे। कर्व हमेशा आगे रहता है। आपका प्रव कहां बैठा हुआ होगा? 400। ठीक है? कर्व कहां बैठा होगा? अब आपका लिंक लिस्ट ऐसा दिखता है। आपका लिंक लिस्ट ऐसा दिखता है। अब आपको क्या जरूरत है? आपको कुछ तारे जोड़ने की जरूरत है। क्या तारे जोड़ने की जरूरत है? 10. 10 किस पे पॉइंट करना चाहिए? 40 पे। मतलब जो लिंक लिस्ट का नोड लास्ट में था वो रिवर्स वाले पार्ट में वो पहले आ गया होगा। तो 10 को",
+      "source": "caption",
+      "english_text": "on? 300 pe. So it reached here. It's been three times. It's been three times. It's been three times. But where would your curve sit when you went out three times? 500 pe. The curve is always ahead. Where will your beloved be sitting? 400. Ok? Where will the curve sit? Now your link list looks like this. Your link list looks like this. What do you need now? You need to add some stars. Do stars need to be added? 10. Where should 10 point? 40 pe. Meaning, the node which was last in the link list must have appeared first in the reverse part. so on 10"
+    },
+    {
+      "start_time": 2480.72,
+      "end_time": 2510.15,
+      "text": "उस पे पॉइंट करना चाहिए। वो कहां है? प्रव में है। 10 कहां है? बिफोर में है। तो सब कुछ होने के बाद बिफोर डॉट नेक्स्ट। अच्छा पहले हम लोग उधर वाला तार जोड़ लेते हैं। एक काम करते हैं। देखिए उधर वाला जोड़ लेते हैं। अभी टू अभी वाला टू ये नल पे पॉइंट कर रहा है। लेकिन इसको असली में पॉइंट कहां करना था? फाइव पे। इसको पॉइंट कहां करना था? 50 पे या 500 पे। जो बाद का नोड था जो बाद का नोड था। बाद का नोड मतलब जो रिवर्स नहीं हुआ। जो रिवर्स नहीं हुआ।",
+      "source": "caption",
+      "english_text": "Should point to that. Where is he? Is in progress. Where is 10? Is in before. So after everything is done before dot next. Okay, first let's connect the wire over there. Let's do one thing. Look, let's add the one over there. Abhi to abhi wala to is pointing at the tap. But where was it actually to be pointed? On five. Where was it to be pointed? 50 pe or 500 pe. Which was the later node which was the later node. Subsequent nodes mean that did not reverse. Which did not reverse."
+    },
+    {
+      "start_time": 2510.16,
+      "end_time": 2544.15,
+      "text": "देखिए एक बिफोर नोड है जिसके बाद रिवर्स हुआ। एक आफ्टर नोड है जिसके पहले तक तो इधर-उधर के नोड। तो क्या है? वो नोड कहां है? वो नोड कर में है। वो नोड कहां है? कर में है। 200 कहां है? 200 कहां है? 200 T में है। 200 T में है। अरे T 200 पे आया था तभी ना रिवर्स करना शुरू किए थे। तो T तो 200 पे ही रहेगा ना। तो क्या कर सकते हैं हम लोग? T डॉट नेक्स्ट इक्वल टू कर्व। मतलब T डॉट नेक्स्ट 200 का नेक्स्ट का कहां पे चला जाएगा वो? 500 पे।",
+      "source": "caption",
+      "english_text": "See there is a before node followed by a reverse. There is an after node before which there are nodes here and there. So what? Where is that node? That node is in tax. Where is that node? Is in tax. Where is 200? Where is 200? It is in 200 T. It is in 200 T. Hey, T came at 200 and that's why we started reversing. So T will remain at 200 only. So what can we do? T dot next equal to curve. Meaning where will T dot next 200 go next? 500 pe."
+    },
+    {
+      "start_time": 2544.16,
+      "end_time": 2577.75,
+      "text": "500 पे। कहां? 500 पे। 500 पे चला गया। एरो नहीं बना रहे क्योंकि घिच हो जाएगा बस। उसके बाद उसके बाद ये एक काम हो गया। एक काम हो गया। मतलब ये वाला जुड़ गया। ये वाला जुड़ गया। वेरी गुड। ये वाला जोड़ते हैं। 10 से 40 10 कहां मिलेगा आपको? बिफोर। बिफोर इसीलिए तो बिफोर को निकाले थे। इसीलिए बिफोर को निकाला गया था। बिफोर डॉट नेक्स्ट डॉट नेक्स्ट इज़ इक्वल टू कहां? प्रीवियस। यस। बिफोर डॉट नेक्स्ट इज़ इक्वल टू प्रीवियस। बिफोर डॉट नेक्स्ट इज़ इक्वल टू प्रीवियस। प्रीवियस क्या है? 400",
+      "source": "caption",
+      "english_text": "500 pe. Where? 500 pe. Went to 500. Arrows are not being made because it will get messed up. After that it became a task. One work is done. Meaning this one got added. This one got added. very good. Let's add this one. 10 to 40 Where will you get 10? Before. That's why Before was released. That's why Before was removed. Before dot next dot next is equal to where? Previous. Yes. Before dot next is equal to previous. Before dot next is equal to previous. What is previous? 400"
+    },
+    {
+      "start_time": 2577.76,
+      "end_time": 2602.79,
+      "text": "400 बस उसके बाद आपका काम हो चुका है। काम हो चुका है। देखिए रिवर्स हो गया। इधर-उधर का तार जुड़ गया। अब आगे लिंक लिस्ट कितना भी बड़ा हो कोई जरूरत नहीं है ना? हो गया। जितना रिवर्स करना था कर दिए। रिटर्न हेड। अब देखिए आपका लिंक लिस्ट कैसा बनता है। आपका लिंक लिस्ट देखिए कैसा है। सबसे पहले शुरुआत होती है 10 से। तो सबसे पहले है 10। 10 जाता है 400 पे तो ये बनता है 40।",
+      "source": "caption",
+      "english_text": "400 just after that your work is done. The work has been done. See, it has been reversed. Wires got connected here and there. Now, no matter how big the link list is, there is no need, right? Done. Reversed as much as I had to. Return head. Now see how your link list is formed. See how your link list is. First starts from 10. So the first one is 10. If 10 goes to 400 then it becomes 40."
+    },
+    {
+      "start_time": 2602.8,
+      "end_time": 2636.069,
+      "text": "40 जाता है 300 पे ये बनता है 30। 30 जाता है 200 पे बनता है 20 जाता है 500 पे बनता है 50 देखिए हो गया ना रिवर्स ये बीच वाला पार्ट रिवर्स हो गया वेरी गुड तो ये आप लिख सकते हैं तो ये आप कैसे लिख सकते हैं आइए इसका ये हुआ इसका ड्राई रन कोड भी देख लेते हैं कोड भी उतना खास है नहीं सबसे पहले तो आपको एक हेड मिलेगा और आपको एक हेड रिटर्न करना रहेगा तो आपको एक अगर आप लोग को नहीं समझ में आया तो कमेंट में प्लीज बताइएगा तो फिर से समझाएंगे बहुत अच्छा क्वेश्चन था तो न फ व फन आपको एक हेड मिला है",
+      "source": "caption",
+      "english_text": "40 goes to 300, it becomes 30. 30 goes to 200, 20 goes to 500, it becomes 50. See, it has been reversed. This middle part has been reversed. Very good, so you can write this, so how can you write this. Let's see what happened in its dry run code. The code is also not that special. First of all, you will get one head and you will have to return one head. So if you guys don't understand then please tell me in the comment, then we will explain again, very good. If there was a question, then no, you have got a head."
+    },
+    {
+      "start_time": 2636.079,
+      "end_time": 2662.95,
+      "text": "आपको एक हेड मिला है। अच्छा [नाक से की जाने वाली आवाज़] इसमें एक एच केस है। अभी हम बार-बार बोल रहे हैं एच केस है। बताएंगे अगर कुछ लोग सोच लिए होंगे तो बहुत अच्छी बात है। सबसे पहले तो इफ हेड इक्वल इक्वल टू नल मतलब लिंक लिस्ट खाली है तो रिटर्न नल कुछ आपको करने की जरूरत है नहीं। वेरी गुड। एक और हम लोग क्या ईजी केस देखे थे? इफ लेफ्ट इक्वल इक्वल टू राइट। तो क्या करेंगे? एक एक को रिवर्स करें। कुछ नहीं फर्क पड़ेगा उसको। रिटर्न हेड।",
+      "source": "caption",
+      "english_text": "You've got a head. Well [nasal noises] it has an H case. Right now we are saying again and again that it is H case. If some people have thought about it then it would be a very good thing. First of all, if head is equal to null means link list is empty then return null, you do not need to do anything. very good. Another one, what easy case did we see? If left is equal to right. So what to do? Reverse each one. Nothing will matter to him. Return head."
+    },
+    {
+      "start_time": 2662.96,
+      "end_time": 2689.19,
+      "text": "अब आपका मेन प्रोग्राम शुरू हो चुका है। तो नोड t = हेड एक हम लोग को बिफोर लेके रखना पड़ेगा। शुरू में बिफोर को नल ले लीजिए। एक हम लोग को पॉज भी लेके चलना पड़ेगा। क्या पोजीशन के लिए क्योंकि पता करना पड़ेगा कहां पे करना है। एक इंट ये बाद में बना लेंगे। चलिए हो गया इतना। आइए अपना लूप शुरू करते हैं।",
+      "source": "caption",
+      "english_text": "Now your main program has started. So node t = head one we have to take before. Take the tap before starting. One of us will have to move with pause also. For what position because you have to know where to do it. Will make a brick later. Well, that much is done. Let's start our loop."
+    },
+    {
+      "start_time": 2689.2,
+      "end_time": 2715.91,
+      "text": "अपना लूप शुरू करते हैं। व्हाइल t नॉट इक्व नल। सबसे पहले क्या चेक होता था? इफ माय पॉस इज़ लेस दैन लेफ्ट। मतलब आप उस लेफ्ट तक अभी पहुंचे नहीं है। उस लेफ्ट तक पहुंचे नहीं है। तो क्या करते थे? बिफोर = t = t डॉट नेक्स्ट पॉज प्लस प्लस मतलब आप वहां तक नहीं पहुंचे हैं। तो बिफोर को अपडेट करते जाइए।",
+      "source": "caption",
+      "english_text": "Let's start our loop. While not equal null. What was the first check? If my pose is less than left. Meaning you have not reached that left yet. Haven't reached that left. So what did you do? Before = t = t dot next pause plus plus means you haven't reached there yet. So keep updating before."
+    },
+    {
+      "start_time": 2715.92,
+      "end_time": 2749.19,
+      "text": "और वहां तक पहुंचने का इंतजार कीजिए। आप लेफ्ट तक पहुंचे ही नहीं है तो रिवर्स क्यों करेंगे? वेरी गुड। और कंटिन्यू और कंटिन्यू अगर ऐसा नहीं है। अगर ऐसा नहीं है तो वाइल लूप नीचे आइए। नीचे उसका कंटिन्यूएशन है। नीचे उसका क्या है? कंटिन्यूएशन है। अगर ऐसा नहीं है। अगर आपका पॉज टू हो चुका है। मतलब आप यहां तक आए हैं। मतलब आपका पॉज = 2 या पॉज इक्वल टू लेफ्ट हो चुका है। वेरी गुड। बिफोर में स्टोर है। ओके? तो अपना रिवर्स करिए। न स्टार कर्व = t ठीक है न स्टार",
+      "source": "caption",
+      "english_text": "And wait to reach there. You haven't even reached left so why reverse? very good. And continue and continue if it's not. If not then come down the wild loop. Below is its continuation. What's down there? There is continuation. If it is not so. If your pause has been done. Meaning you have come till here. Meaning your pause = 2 or pause is equal to left. very good. There is a store in before. Ok? So reverse yours. nor star curve = t ok nor star"
+    },
+    {
+      "start_time": 2749.2,
+      "end_time": 2782.87,
+      "text": "प्रवफ = नल सेम जैसे रिवर्स होता था और इंट कितने बार करेंगे टाइम्स इक्वल टू राइट - लेफ्ट + 1 राइट और लेफ्ट इनपुट में दिया है। ठीक है? वाइल टाइम्स माइनस माइनस क्या करते थे? न स्टार x = कर्व डॉट नेक्स्ट क्योंकि आपको आगे जाना था। कर्व डॉट नेक्स्ट इज़ इक्वल टू प्रव वेरी गुड।",
+      "source": "caption",
+      "english_text": "Pravf = Null Same as reverse and int how many times will it do Times equal to right - left + 1 Right and left are given in the input. Ok? What did the Vile Times Minus Minus do? Not star x = curve dot next because you had to go further. Curve dot next is equal to prove very good."
+    },
+    {
+      "start_time": 2782.88,
+      "end_time": 2809.589,
+      "text": "प्रव = कर्व वेरी गुड। ये वाइल लूप चल गया। रिवर्स हो गया। रिवर्स हो गया। अभी भी आप लोग उसी में हैं। रिवर्स हो गया। रिवर्स हो गया। लेकिन अब आपको क्या करना है? अब आपको कुछ नहीं करना है। कुछ तरीके की तारें जोड़नी है। क्या तार जोड़े थे? देखिए सबसे पहले तो t डॉट नेक्स्ट = कर्व। क्यों? क्योंकि t 200 पे खड़ा था। t 200 पे खड़ा था। ये इसको कहां जाना है? इसको कर पे जाना है। इसको 500 पे जाना है। तो हम लोग देख चुके थे कि इससे काम बन जाएगा।",
+      "source": "caption",
+      "english_text": "Prav = curve very good. This vicious loop went on. Reversed. Reversed. You guys are still in the same. Reversed. Reversed. But what do you have to do now? Now you don't have to do anything. Some kind of wires have to be connected. What wires were connected? Look, first of all t dot next = curve. Why? Because t stood at 200. t stood at 200. Where does he have to go? This has to be done. It has to go to 500. So we had seen that this would work."
+    },
+    {
+      "start_time": 2809.599,
+      "end_time": 2842.79,
+      "text": "तो t जहां भी खड़ा था तो सबसे पहले तो सबसे पहले तो t डॉट नेक्स्ट = कर्व। ठीक? उसके बाद बिफोर डॉट नेक्स्ट इक्वल टू प्रफ। बिफोर डॉट इक्व प्रफ और रिटर्न हेड वाइल लूप बंद और उसके बाद आप फंक्शन भी बंद कर दीजिएगा। कुछ वैसा रिटर्न करना नहीं है। तो ये हो गया। अच्छा",
+      "source": "caption",
+      "english_text": "So wherever t was standing then first of all then t dot next = curve. Correct? After that before dot next equal to prof. Before dot equ proof and return head while loop closed and after that you will also stop the function. There is no need to return anything like that. So this is done. good"
+    },
+    {
+      "start_time": 2842.8,
+      "end_time": 2874.71,
+      "text": "अब ये तो हो गया। ये चल जाएगा। वेरी गुड है। ये बिल्कुल सही प्रोग्राम है। t डॉट नेक्स्ट इक्वल ट कर। मतलब आप कर क्या रहे हैं? एक एक तरीके से आप कर क्या रहे हैं? ये आपका बिफोर नोड है या आफ्टर नोड है। बीच में रिवर्स हुआ था। अब ये तार जोड़ रहे हैं और फिर ये तार जोड़ रहे हैं। तो वही कर रहे हैं। अच्छा। लेकिन लेकिन लेकिन इसमें एच केस क्या है? अगर आपका गलती से लेफ्ट = 1 दे दिया तो अगर आपका गलती से लेफ्ट = 1 दे दिया तो। अब लेफ्ट = 1 का क्या मतलब है ना? मान लीजिए ऐसा है वन टू",
+      "source": "caption",
+      "english_text": "Now this is done. This will do. Very good. This is the perfect program. t dot next equal t. I mean what are you doing? One way or the other, what are you doing? This is your before node or after node. There was a reverse in the middle. Now they are connecting the wires and then they are connecting the wires. So that's what they are doing. Good. But but but what's the H case in? If you have given left = 1 by mistake then if you have given left = 1 by mistake. Now what does left = 1 mean? Suppose it is like this one two"
+    },
+    {
+      "start_time": 2874.72,
+      "end_time": 2908.23,
+      "text": "थ्री फोर। मान लीजिए इसमें लेफ्ट = 1 है। राइट इक्वल टू और ये ऐसा है कि वन यहां है 2 3 4 राइट इक्वल टू लेट्स से टू है राइट इक्व 2 वन से टू तक आपको रिवर्स करना है आपको वन से टू को रिवर्स करना है तो जब आप इसको रिवर्स करेंगे तो ऐसा दिखेगा जब आप इसको रिवर्स करेंगे तो ऐसा दिखने लगेगा टू ये वन पॉइंट करने लगेगा और बाकी तो सेम ही रहेगा अब अब अब [नाक से की जाने वाली आवाज़] इस समय ये तो ठीक है ये तो आपका t था तो आप t डॉट",
+      "source": "caption",
+      "english_text": "Three four. Suppose it has left = 1. Right equal to two and it's like that one is here 2 3 4 right equal to let's to two is right equal 2 from one to two you have to reverse you have to reverse one to two so when you reverse it it will look like this when you reverse it it will look like two it will start pointing to one and the rest will remain the same now now now [nasal noises] this time it's fine this was your t so you t dot"
+    },
+    {
+      "start_time": 2908.24,
+      "end_time": 2941.829,
+      "text": "नेक्स्ट इक्वल टू कर देंगे। आपका कर यहां पे रहेगा। तो ये तो तार जुड़ गया। लेकिन ये जो आप अगला तार जोड़ते थे बिफोर डॉट नेक्स्ट इक्वल टू प्रेव जब आप इसको रिवर्स करेंगे तो प्रेव इज़ इक्वल टू प्रेव इज़ इक्वल टू टू पे रहेगा। आप कोशिश करेंगे बिफोर डॉट नेक्स्ट इक्वल टू प्रेव। बिफोर कहां है? बिफोर कहां है? बिफोर किसको बोलते थे? लिंक लिस्ट के पहला वाला पार्ट जो रिवर्स नहीं होता था। लेकिन यहां पे कोई पार्ट है ही नहीं जो रिवर्स नहीं होता है। शुरू से रिवर्स हो गया। क्योंकि लेफ्ट वन दे दिया ना। लेफ्ट वन का मतलब कि शुरू का एक पार्ट रिवर्स हो गया। कायदे से यहां पे हेड होना क्या चाहिए था प्रेव प्रेव नए",
+      "source": "caption",
+      "english_text": "Will make next equal to two. Your taxes will be here. So this wire is connected. But this string which you used to add before dot next is equal to prev, when you reverse it then prev is equal to prev is equal to two. You would try before dot next equal to prev. Where is before? Where is before? Who was called before? The first part of the link list which was not reverseable. But there is no part here which is not reverse. It was reversed from the beginning. Because the left one was given. Left one means that one part of the beginning has been reversed. What should have been the head here by law? Prev Prev New"
+    },
+    {
+      "start_time": 2941.839,
+      "end_time": 2976.549,
+      "text": "लिंक लिस्ट का हेड क्या होना चाहिए था प्रेव क्योंकि शुरू से रिवर्स हो गया पहले हम लोग हेड क्यों रिटर्न करते थे क्योंकि शुरू का एक पार्ट नहीं हुआ था रिवर्स वन रिवर्स नहीं हुआ था बीच का कोई पार्ट रिवर्स हुआ था यहां पे शुरू का पार्ट रिवर्स हो गया तो हेड पे तो प्रेफ और ये जब आप करेंगे बिफोर डॉट नेक्स्ट इक्वल ट्रेव तो बिफोर है क्या बिफोर कुछ नहीं है बिफोर तो नल होगा भाई अरे बिफोर इसका नल होगा क्यों नल होगा क्योंकि आप बिफोर बनाते कैसे थे देखिए आप बिफोर चेक कैसे करते थे। इफ पॉस इज़ लेफ्ट देन लेस दैन लेफ्ट। पॉज स्टार्ट कैसे होता था? पॉज स्टार्ट कहां से होता था? वन से। तो आप जब",
+      "source": "caption",
+      "english_text": "What should have been the head of the link list? Prev because it was reversed from the beginning. Why did we return the head earlier? Because there was no part of the beginning. Reverse one was not reversed. Some part of the middle was reversed. Here, if the beginning part is reversed, then on the head, then pref. And when you do this, before dot next equal trav, then what is before? Is there nothing before? So it will be null. Brother, before it will be null, why will it be null because you used to make before. See, you How did you check before? If pos is less than left. How did the pause start? Where did the pause start? From the forest. so when you"
+    },
+    {
+      "start_time": 2976.559,
+      "end_time": 3010.79,
+      "text": "जैसे ही शुरू करेंगे प्रोग्राम क्या? वन इज़ लेस दैन वन। नहीं नहीं। सीधा आप यहां आ जाएंगे रिवर्स करने में। और बिफोर कहां से स्टार्ट करते थे? नल से। तो बिफोर तो नल है। आप बोल रहे हैं नल डॉट नेक्स्ट इज़ इक्वल टू प्रे। इसीलिए इसीलिए ऐसा आपको नहीं करना है। आपको t डॉट नेक्स्ट इक्वल टू कॉट। ठीक है? t डॉट नेक्स्ट ठीक है। t की t क्या था? t था जिस नोड से आप शुरू किए थे रिवर्स करना तो वो नोड ऑटोमेटिकली लास्ट में चला गया। वो नोड आगे वाले पे पॉइंट करना चाहिए जहां पे कर्व रहेगा। तो अगर कर्व नल भी है तो वो आगे नल को पॉइंट करेगा। ठीक है? अगर कर कोई नोड है तो वो उसको पॉइंट करेगा। ठीक है? लेकिन लेकिन लेकिन",
+      "source": "caption",
+      "english_text": "What program will we start as soon as we start it? One is less than one. No. No. You will come straight here to reverse. And where did you start from before? From the tap. So before is tap. You are saying null dot next is equal to pray. That's why you don't have to do this. You get t dot next equal to cot. Ok? t dot next ok. What was the t of t? If you reverse the node from which you started, that node automatically goes to the last. That node should point to the front where the curve will be. So if the curve is also a tap, it will point to the tap ahead. Ok? If there is any node then it will point to it. Ok? but but but"
+    },
+    {
+      "start_time": 3010.8,
+      "end_time": 3045.109,
+      "text": "लेकिन बिफोर पे आपको ख्याल रखना है। क्या ख्याल रखना है? देखिए आपको चेक करना पड़ेगा कि इफ बिफोर मतलब कि अगर बिफोर में कोई वैल्यू है मतलब ऐसा कोई पार्ट है जो रिवर्स नहीं हुआ है तब तो ठीक है तब तो ठीक है बिफोर डॉट नेक्स्ट इज़ इक्वल टू प्रेफ और जो हेड है वही हेड रहेगा क्योंकि एक पार्ट नहीं हुआ था रिवर्स तो उसका हेड तो नॉर्मल रहेगा तो आपको रिटर्न क्या करना था हेड लेकिन अगर ऐसा नहीं है अगर ऐसा नहीं है एल्स एल्स की जरूरत नहीं नहीं वो तो",
+      "source": "caption",
+      "english_text": "But before that you have to take care. What to take care of? See, you have to check that if before means if there is any value in before means there is any part which has not been reversed then it is okay then it is okay before dot next is equal to pref and the head which is there will remain the head because if a part was not reversed then its head will remain normal so what did you have to return head but if it is not so if it is not so then else else is not needed then that."
+    },
+    {
+      "start_time": 3045.119,
+      "end_time": 3076.23,
+      "text": "रिटर्न हो जाएगा। अगर ऐसा नहीं है तो ठीक है तो कुछ नहीं। रिटर्न प्रफ क्योंकि ये आपका नया हेड बन जाएगा। ये आपका नया हेड बन जाएगा। देखिए ये आपका नया हेड बन जाएगा। बहुत बड़ा सा लिंक लिस्ट भी ले लीजिए। 1 2 3 4 5 6 मान लीजिए आपको कोई बोलता है कि लेफ्ट इक्व 1 है। राइट = 4 है। मतलब ये आपका लेफ्ट है। 2 3 4 इनको रिवर्स करना है तो",
+      "source": "caption",
+      "english_text": "Returns will be made. If it is not so then ok then nothing. Return proof as this will become your new head. This will become your new head. See, this will become your new head. Get a very big link list also. 1 2 3 4 5 6 Suppose someone tells you that the left equation is 1. Right = 4. Meaning this is your left. 2 3 4 If you want to reverse these then"
+    },
+    {
+      "start_time": 3076.24,
+      "end_time": 3109.03,
+      "text": "इनको रिवर्स करेंगे तो ऐसा बन जाएगा 4 3 2 1 और इधर वाले तो ऐसे ही रहेंगे फाइव और सिक्स को ऐसे ही रखना है। अच्छा सबसे पहले आप क्या करेंगे? t आपका यहां होगा क्योंकि आप यहां से रिवर्स करना शुरू किए थे। तो t डॉट नेस्ट इज़ इक्वल टू कर्व तो ये तो सही बन जाएगा। लेकिन कोई भी फोर है नहीं। तो इस लिंक लिस्ट का हेड क्या है? इस लिंक लिस्ट का हेड फोर है। फोर कहां से मिला था? फोर प्रीवियस पे होगा ना भाई। फोर देख लिए थे फोर प्रीवियस पे था। आपको यहां पे प्रीवियस रिटर्न करना पड़ेगा कि जब बिफोर नहीं है तो प्रीवियस रिटर्न कर दो। तो ये इसमें छोटा सा एच केस था कब? जब लेफ्ट इज़",
+      "source": "caption",
+      "english_text": "If we reverse them then it will become 4 3 2 1 and the ones here will remain like this. Five and six have to be kept like this. Well, what will you do first? t will be here because you started reverse from here. So t dot nest is equal to curve so this will become correct. But there is no four. So what is the head of this link list? The head of this link list is four. Where did you get four from? It will be on four previous basis, won't it brother? Had seen four, four was on previous. You will have to return the previous here or when there is no before then return the previous. So when was this small H case in it? when left is"
+    },
+    {
+      "start_time": 3109.04,
+      "end_time": 3134.069,
+      "text": "इक्वल टू वन था। कैसे पता चला? अगर बिफोर है अगर बिफोर है कुछ। अगर बिफोर में नल नहीं है तो लेफ्ट वन नहीं होगा। क्योंकि आगे का कुछ तो होगा क्योंकि बिफोर हो जाता है अपडेट। अगर बिफोर नल है मतलब लेफ्ट वन होगा। तो ये आपका छोटा सा कोड है। अह इसको कोशिश करिए खुद से कोड करने का। अगर आपको कोई और एल्गोरििदम भी समझ में आता है वो भी कर सकते हैं। ऐसा कोई हार्ड एंड फ़ास्ट रूल नहीं कि यही करना है। लेकिन कोड जरूर कीजिएगा। बहुत अच्छा क्वेश्चन था।",
+      "source": "caption",
+      "english_text": "Was equal to one. How did you know? If there is before, if there is something before. If there is no null in before then there will be no left one. Because something will happen next because it gets updated before. If there is null before it means left one will be there. So this is your small code. Ah, try to code this yourself. If you understand any other algorithm, you can do that also. There is no hard and fast rule that this is what has to be done. But please code. It was a very good question."
+    },
+    {
+      "start_time": 3134.079,
+      "end_time": 3144.319,
+      "text": "कॉम्प्लेक्स क्वेश्चन था। हार्ड नहीं था। मतलब ठीक है। मतलब हार्ड तो नहीं कह सकते हैं। कॉम्प्लेक्स हो सकता है। है ना? तो चलिए बहुत-बहुत शुक्रिया आने के लिए। निकलते रहिए।",
+      "source": "caption",
+      "english_text": "It was a complex question. Wasn't hard. Means ok. Meaning it cannot be called hard. Can be complex. Isn't it? So thank you very much for coming. Keep leaving."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

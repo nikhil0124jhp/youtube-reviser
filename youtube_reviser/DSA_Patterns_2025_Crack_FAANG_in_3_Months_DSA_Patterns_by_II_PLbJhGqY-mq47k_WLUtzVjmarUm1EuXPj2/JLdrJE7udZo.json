@@ -1,0 +1,268 @@
+{
+  "video_id": "JLdrJE7udZo",
+  "video_title": "DP in 15 Days Episode 3: Climbing Stairs | Learn 1D Dynamic Programming",
+  "video_number": 111,
+  "chunks": [
+    {
+      "start_time": 1.91,
+      "end_time": 27.83,
+      "text": "हेलो बच्चों, स्वागत है आपका डीपी सीरीज डे 302 हीरो में। अगर आप यहां पहली बार आ रहे हैं चैनल पर तो आपको लेक्चर वन और टू इस डीपी प्लेलिस्ट का तो देखना ही चाहिए। आपको प्लेलिस्ट देखिए कहीं पर मिलेगा। मतलब प्लेलिस्ट जानते हैं कहां मिलता है ना? आज है डे तीन। तो एक डे वन में ज्यादा कुछ हुआ नहीं था। डे टू में आपको बताए थे कि कैसे पता करते हैं कि डीपी है और अगर पता चल जाए तो लगाते कैसे हैं कि वहां पे डीपी लगा दें। ठीक है? आज डे थ्री में एक हम लोग रियल क्वेश्चन सॉल्व करेंगे। सेम प्रिंसिपल फॉलो करेंगे। सबसे पहले तो देखेंगे कि डीपी का क्वेश्चन है कि नहीं?",
+      "source": "caption",
+      "english_text": "Hello children, welcome to DP series Day 302 Hero. If you are coming here for the first time on the channel then you must watch lecture one and two of this DP playlist. You will find the playlist somewhere. I mean, you know where to get the playlist, right? Today is day three. So not much happened in one day. In Day Two, we told you how to find out if there is a DP and if you find out, then how to put a DP there. Ok? Today in Day Three we will solve a real question. Same principal will follow. First of all we will see whether there is a question of DP or not?"
+    },
+    {
+      "start_time": 27.84,
+      "end_time": 59.75,
+      "text": "अगर है तो कैसे डीपी लगाया जाए? बड़ा शॉर्ट एंड स्वीट क्वेश्चन है। बड़ा ईजी टाइप का क्वेश्चन है। ठीक है? आज का जो क्वेश्चन है ना उसका नाम है एनथ स्टेयर। इसको क्लाइंबिंग स्टेयर भी बोला जाता है। जीएफजीपी इसका नाम है वेज़ टू रीड्स द एनथ स्टेयर। ठीक है? कुछ लोग देखिए कमेंट में ये भी बोल रहे हैं कि आप टैबुलेशन नहीं पढ़ाए। तो देखिए जानते हैं कि आप लोग कहीं-कहीं से सुन लिए हैं ये टर्म टैबुलेशन फैबुलेशन। लेकिन जिस स्ट्रक्चर में पढ़ा रहे हैं उस स्ट्रक्चर में पढ़ते रहिए। धीरे-धीरे धीरे-धीरे सब हो जाएगा। ठीक है? तो इसको भी रिकर्शन की तरह ही ट्रीट कीजिए। आज का लेक्चर समझने पे ध्यान दीजिए। इसका चिंता मत कीजिए कि ये नहीं हुआ, वो नहीं हुआ। सब हो जाएगा धीरे-धीरे।",
+      "source": "caption",
+      "english_text": "If yes then how to apply DP? It's a very short and sweet question. It is a very easy type question. Ok? Today's question is called Nth Stair. It is also called climbing staircase. GFGP It's called Ways to Read the Nth Stair. Ok? See, some people are also saying in the comments that you did not teach tabulation. So look, let us know that you people have heard this term tabulation fabulation from somewhere. But keep studying in the structure in which you are teaching. Slowly and gradually everything will happen. Ok? So treat this also like recursion. Focus on understanding today's lecture. Don't worry that this didn't happen, that didn't happen. Everything will happen gradually."
+    },
+    {
+      "start_time": 59.76,
+      "end_time": 91.99,
+      "text": "थोड़ा भरोसा रखिए। थोड़ा तो भरोसा रखिए। इतना दिन से पढ़ा रहे हैं। इतना तो करना चाहिए ना। देखिए आज का जो सवाल है ना वो सवाल क्या है? आपको बोला हुआ है कि आप ना एक प्लेटफार्म पे खड़े हैं। मतलब बेस प्लेटफार्म पे मान लीजिए आप जीरो लेवल पे खड़े हैं। ग्राउंड लेवल पे खड़े हैं। अब इस में बिल्डिंग में ना n लेवल्स हैं। कितना? n। आपको एक n दिया है। मतलब n फ्लोर है। तो मान लीजिए एक फ्लोर होगा वन, एक फ्लोर होगा दो, एक फ्लोर होगा तीन। मान लीजिए n = 3 को आपको दिया हुआ है। मतलब इस तरीके का आपको एक बिल्डिंग दिया होगा। आप इनिशियली कहां पे खड़े हैं? ग्राउंड फ्लोर",
+      "source": "caption",
+      "english_text": "Have some faith. Have some faith. Have been teaching for so long. This much should be done, right? Look, what is today's question? You have been told that you are standing on a platform. Meaning, suppose you are standing at zero level on the base platform. Standing at ground level. Now there are n levels in this building. How much? n. Gave you a n. Meaning there are n floors. So suppose one floor will be one, one floor will be two, one floor will be three. Suppose you are given n = 3. Meaning, this method would have given you a building. Where do you stand initially? ground floor"
+    },
+    {
+      "start_time": 92.0,
+      "end_time": 126.149,
+      "text": "पे। मतलब जीरो पे। ठीक है? आपका काम जीरो से कहां जाना है? एनथ [गला साफ़ करने की आवाज़] फ्लोर तक जाना है। कितना? थर्ड फ्लोर तक जाना है। अच्छा तो चले जाएंगे। नहीं ट्विस्ट है छोटा सा। हर एक सीढ़ी पे हर एक सीढ़ी पे। मान लीजिए आप सबसे पहले अगर ज़ीरो पे हैं ना आप या तो एक सीढ़ी चढ़ सकते हैं। मतलब आप जीरो पे अगर हैं तो आप जीरो से वन जा सकते हैं। एक काम ये कर सकते हैं। या फिर आप अगर जीरो पे हैं, आप जीरो से टू भी जा सकते हैं। दो से ज्यादा नहीं कूद सकते हैं। आप जीरो से डायरेक्टली तीन पे नहीं जा सकते हैं। नहीं नहीं अलाउड है। क्या कर सकते हैं आप? आप या तो जीरो से वन जा सकते हैं या तो जीरो",
+      "source": "caption",
+      "english_text": "On. Meaning at zero. Ok? Where does your work go from zero? Nth [clearing throat] Got to go to the floor. How much? Have to go up to the third floor. Okay then we will go. No, it's a small twist. On every staircase, on every staircase. Suppose first of all, if you are at zero, you can either climb one ladder. Meaning if you are at zero then you can go from zero to one. This is one thing they can do. Or if you are at zero, you can also go from zero to two. Can't jump more than two. You cannot go directly from zero to three. No no it is allowed. What can you do? You can either go from zero to one or zero"
+    },
+    {
+      "start_time": 126.159,
+      "end_time": 160.47,
+      "text": "से टू जा सकते हैं। ये है। अब आपके पास चॉइससेस हैं। दो चॉइससेस है ना? या तो हर बार आप एक सीढ़ी जंप कीजिए या दो सीढ़ी जंप कीजिए। आपको बताना है कितना यू कितना टोटल तरीका है क्या? कितना टोटल वेज़ टोटल वेज़ या टोटल तरीका टू रीच एंड स्टेयर क्या टू रीच एंड स्टेयर इसका हिंदी में क्या मतलब है मान लीजिए आप ये करते हैं आप ज़ीरो से वन जाते हैं वन से टू जाते हैं टू से थ्री जाते हैं ये क्या हुआ एक तरीका ये हो गया आप ये भी कर सकते हैं कि आप ज़ीरो से टू चले जाइए टू से थ्री चले जाइए पहुंच गए",
+      "source": "caption",
+      "english_text": "Can go from to. This is. Now you have choices. There are two choices, right? Either you jump one step or jump two steps each time. Do you want to tell me how much is the total method? Kitna total ways Total ways or total way to reach and stare What is the meaning of reach and stare in Hindi Suppose you do this, you go from zero to one, from one to two, from two to three, what happened, one way, this is done, you can also do this, you go from zero to two, go from two to three, you have reached."
+    },
+    {
+      "start_time": 160.48,
+      "end_time": 186.39,
+      "text": "ये हो गया तरीका दो आप ये भी कर सकते हैं कि आप ज़ीरो से वन जाइए वन से डायरेक्टली थ्री चले जाइए ये क्या हो गया तरीका नंबर तीन और कोई तरीका है क्या? ज़ीरो से वन टू हो गया। ज़ीरो से वन के बाद टू भी चले गए। ज़ीरो से टू के बाद थ्री चले गए। हां, बस इतना तीन ही तरीका है। आप करके देख लीजिए। परम्यूटेशन कॉम्बिनेशन लगा लीजिए। और कोई तरीका नहीं है। और कोई तरीका नहीं है। मतलब तीन तरीका है। तो आपको क्या लौटाना है? आपको तीन रिटर्न करना है। क्यों?",
+      "source": "caption",
+      "english_text": "This is method number two. You can also do this by going from zero to one and directly going from one to three. What is this, method number three? Is there any other method? Zero became one two. After zero to one, two also went away. After zero to two went three. Yes, there are only three ways. You try it. Apply permutation combination. There is no other way. There is no other way. Meaning there are three ways. So what do you have to give back? You have to make three returns. Why?"
+    },
+    {
+      "start_time": 186.4,
+      "end_time": 216.71,
+      "text": "क्योंकि नंबर ऑफ वेज़ आप ज़ीरो से n तक जीरो से थर्ड फ्लोर तक कितने तरीके से पहुंच सकते हैं? बसा शायद बशर्त के आप हर बार आपको दो चॉइस मिलता है या तो आप एक सीढ़ी कूदिए या दो सीढ़ी कूदिए। आपको ये लौटाना है कि भैया नंबर ऑफ यूनिक वेज़ कितना है? आइए अब इस क्वेश्चन को खोलते हैं। ये बहुत हार्ड लग रहा होगा कुछ हार्ड नहीं है। सबसे सिंपलेस्ट एकदम बेकार लुकचा सवाल है। आइए इसको तरीका से खोलें और तरीके से समझे इसको 10 मिनट में। चलिए। तो देखिए [गला साफ़ करने की आवाज़] ये क्वेश्चन ना सेम क्वेश्चन है कि मान लीजिए आपके पास चार शहर दिए हुए हैं। चारों शहर ऐसे लाइन से हैं। ठीक है? रांची, दिल्ली, कोलकाता।",
+      "source": "caption",
+      "english_text": "Because the number of ways is n, how many ways can you get from zero to the third floor? Well, maybe provided that every time you get two choices, either you jump one ladder or you jump two ladders. You have to return that brother, how much is the number of unique ways? Let us now open this question. This may seem very hard, there is nothing hard. The simplest is a completely useless question. Let us unpack it and understand it in 10 minutes. Let go. So see [throat clearing sound] this question is not the same question as if you have given four cities. All four cities are on such a line. Ok? Ranchi, Delhi, Kolkata."
+    },
+    {
+      "start_time": 216.72,
+      "end_time": 249.67,
+      "text": "हो सकता है कोलकाता के ऊपर भी कोई और शहर हो लास्ट में मतलब आपका टारगेट डेस्टिनेशन जो है ना वो बेंगलुरु जाना है। आप स्टार्ट कहां से कर रहे हैं? रांची से। तो सेम क्वेश्चन है कि आप स्टार्ट कहां से कर रहे हैं? ग्राउंड फ्लोर से आपको एंथ फ्लोर तक पहुंचना है। अब बीच में कितना फ्लोर है? कहां क्या है? नहीं मालूम। ठीक है? चलिए आपका काम क्या है? रांची से कितने तरीके हैं बेंगलुरु जाने के? प्रोवाइडेड कि आप एक शहर से या तो आप एक बार जंप करके रांची से दिल्ली जा सकते हैं या तो आप रांची से दो स्टेप का जंप करके कोलकाता जा सकते हैं। सेम दिल्ली से भी। दिल्ली से आपका एक स्टेप जंप करिए, दो स्टेप जंप करिए। तो ऐसे कितने तरीके होंगे कि आप बोर तक पहुंच",
+      "source": "caption",
+      "english_text": "There may be some other city above Kolkata, in the end, your target destination is to go to Bengaluru. Where are you starting from? From Ranchi. So the same question is where do you start? From the ground floor you have to reach the eighth floor. Now how many floors are there in between? What is where? Don't know. Ok? Come on, what's your job? How many ways are there to go to Bangalore from Ranchi? Provided that you can either go from Ranchi to Delhi by jumping once from a city or you can go to Kolkata by jumping two steps from Ranchi. Same from Delhi also. From Delhi, jump one step, jump two steps. So how many ways will there be that you can reach the bore?"
+    },
+    {
+      "start_time": 249.68,
+      "end_time": 282.71,
+      "text": "जाइए? यही क्वेश्चन है ना? ठीक है? सबसे पहले तो हम आपको क्या बोले थे? ये क्वेश्चन क्या है? कभी भी आपको चॉइससेस का क्वेश्चन मिले ना ये क्या है? आपको चॉइससेस है। एंड ऑल पॉसिबल कॉम्बिनेशन। ऑल पॉसिबल कॉम्बिनेशन। इस तरीके का क्वेश्चन हम लोग रिक्शन में बहुत सारा कर चुके हैं। क्या? आपको चॉइससेस मिलता है कि भैया आप ये कर सकते हैं या ये कर सकते हैं। आपको ऑल पॉसिबल कॉम्बिनेशंस का कुछ करना होता है। मान लो ऑल पॉसिबल कॉम्बिनेशंस को गिनना हो जैसा कि इस केस में है। ऑल पॉसिबल कॉम्बिनेशन में सबसे अच्छा तरीका कौन सा है? वो करना है वो भी इस केस में नहीं है। ठीक है? तो रिकर्शन में ऐसा हम",
+      "source": "caption",
+      "english_text": "go? This is the question isn't it? Ok? First of all, what did we tell you? What is this question? If you ever get a question about choices, what is this? You have choices. And all possible combinations. All possible combinations. We have asked this type of question a lot in the reaction. What? You get choices that brother, you can do this or you can do this. You have to do something out of all possible combinations. Suppose we have to enumerate all possible combinations as in this case. Which is the best method among all possible combinations? That has to be done and that too is not in this case. Ok? So in recursion we"
+    },
+    {
+      "start_time": 282.72,
+      "end_time": 316.55,
+      "text": "लोग क्वेश्चन बारंबार देख चुके हैं। सबसे पहले क्या करते थे? बेस केस लिख लिया जाता था। क्या? बेस केस मतलब कि क्वेश्चन का सबसे छोटा फॉर्म मतलब अगर आपको सबसे छोटा तरीका दिया जाए इस क्वेश्चन का सबसे छोटा इनपुट दिया जाए तो आपका आंसर क्या होगा वो आपको पता होना चाहिए। तो देखिए सबसे छोटा इनपुट क्या हो सकता है ना? मान लीजिए आप बेंगलुरु पे ही खड़े हैं। जहां जाना है वहीं पे आके खड़े हो गए हैं। अब बताइए बेंगलुरु से बेंगलुरु जाने का कितना रास्ता होगा? अभी देखिए क्वेश्चन तो ऐसा है कि आप रांची पर खड़े हैं। आपको रांची से बोर का बताना है। वो नहीं मालूम है। कोई दिक्कत नहीं है। अगर हम आपको बोलते कि",
+      "source": "caption",
+      "english_text": "People have seen the question again and again. What did you do first? The base case was written. What? Base case means that the shortest form of the question means that if you are given the shortest way and the shortest input of this question is given, then you should know what will be your answer. So see what can be the smallest input, right? Suppose you are standing in Bengaluru only. We have come and stood where we have to go. Now tell me how long will it take to go from Bangalore to Bangalore? Now see the question is such that you are standing at Ranchi. You have to tell about Bor from Ranchi. Don't know that. There is no problem. If we told you that"
+    },
+    {
+      "start_time": 316.56,
+      "end_time": 350.79,
+      "text": "भैया आप बोर में ही खड़े हैं और बोर ही जाना है। बोर में खड़े हो और बोर जाना है। कितना रास्ता होगा? एक रास्ता। एक ही रास्ता है ना भाई। बोर से बोर जाने का कितना रास्ता होता है? एक। आप खड़े हैं वहां पे। बहुत अच्छे। अगर अगर गलती से अगर गलती से मान लीजिए बेंगलुरु के आगे भी एक शहर है। बोर के आगे भी एक शहर है। मान लीजिए पटना। बेंगलुरु के आगे एक शहर है पटना। अब बताइए कि मान लीजिए आप किसी तरीके से पटना पे खड़े हो गए। कोई आपको बोला कि भैया आप पटना पे खड़े हो गए और आपको बेंगलुरु जाना है। अब आप पीछे तो जा नहीं सकते हैं। पटना से आगे जाया जा सकता",
+      "source": "caption",
+      "english_text": "Brother, you are standing bored and have to go. Stand in a bore and have to get bored. How much distance will it take? One way. There is only one way, brother. How many ways is there to go from bored to bored? One. You are standing there. Very good. If by mistake, if by mistake, believe that there is a city beyond Bengaluru. There is a city beyond the bore also. Suppose Patna. Patna is a city ahead of Bengaluru. Now tell me, suppose you somehow stood on Patna. Someone told you that brother, you are stuck in Patna and you have to go to Bangalore. Now you can't go back. Can go further from Patna"
+    },
+    {
+      "start_time": 350.8,
+      "end_time": 383.43,
+      "text": "है। पटना से आप एक एक शहर आगे या दो शहर आगे जा सकते हैं। बेंगलुरु है पटना से पीछे? तो एक बात बताइए कि अगर कोई आपको बोले कि भैया आप पटना पे हैं और बेंगलुरु जाने का कितना रास्ता है? कितना रास्ता है? कोई तरीका नहीं है। कोई रास्ता नहीं है। क्योंकि इस क्वेश्चन में आप पीछे मूव नहीं कर सकते हैं। आगे जाना है। कूदना है आगे। तो दो बेस केस तो यहां हमको दिख रहा है कि चलो बेंगलुरु तक जाना था। बेंगलुरु पे ही अभी खड़े हो। कितना रास्ता? एक रास्ता। बेंगलुरु जाना था और बेंगलुरु से आगे निकल गए। बेंगलुरु से आगे निकल पटना चले गए और उधर चले गए कहीं और। कितना",
+      "source": "caption",
+      "english_text": "Is. From Patna you can go one city ahead or two cities ahead. Is Bengaluru behind Patna? So tell me one thing, if someone tells you that brother, you are in Patna and how far is it to go to Bangalore? How much way is it? There is no way. there's no way. Because in this question you cannot move backward. Need to go ahead. Have to jump forward. So here we see two base cases, we had to go till Bengaluru. Right now you are standing in Bengaluru only. how much way? One way. Had to go to Bengaluru and went ahead of Bengaluru. Moved from Bengaluru to Patna and went somewhere else. how much"
+    },
+    {
+      "start_time": 383.44,
+      "end_time": 417.189,
+      "text": "रास्ता है? एक भी रास्ता नहीं है। ये दोनों आपका बेस केस हो गया। मतलब ये तो छोटा क्वेश्चन आपको समझ में आ रहा है कि बेस केस ये हो गया। अगर ऐसा हुआ तो हम अपना आंसर ये दे देंगे। वेरी गुड। उसके बाद रिक्शन क्या बोलता था? रांची पे फोकस कीजिए। आपका स्टार्टिंग शहर शुरू में तो रांची ही रहेगा। अच्छा। रांची से आप कहां-कहां जा सकते हैं? रांची से आप कहां-कहां जा सकते हैं? देखिए। रांची से आप कहां जा सकते हैं? रांची से आप या तो दिल्ली जा सकते हैं जो कि एक स्टेप दूर है। या तो आप कोलकाता जा सकते हैं जो कि दो स्टेप दूर है। रांची के पास दो ही रास्ता है। रांची के पास तीसरा रास्ता नहीं है। आप रांची पर रुक नहीं सकते हैं।",
+      "source": "caption",
+      "english_text": "is there a way? There is not a single way. These two become your base case. Meaning, this is a small question, you understand that the base case is this. If this happens then we will give our answer. very good. What did Richan say after that? Focus on Ranchi. Initially your starting city will remain Ranchi. Good. Where can you go from Ranchi? Where can you go from Ranchi? See. Where can you go from Ranchi? From Ranchi you can either go to Delhi which is one step away. Or you can go to Kolkata which is two steps away. There are only two routes to Ranchi. Ranchi does not have a third way. You cannot stop at Ranchi."
+    },
+    {
+      "start_time": 417.199,
+      "end_time": 451.51,
+      "text": "रांची से या तो आपको एक जंप करके वहां जाना होगा दो जंप करके वहां जाना होगा। अच्छा! अगर अगर कोई आपको बता दे कोई आपको जादू से बता दे कि भैया दिल्ली टू बेंगलुरु जाने का ना दो रास्ता है। दिल्ली टू बोर जाने का दो रास्ता है। कौन सा रास्ता है मालूम नहीं फर्क नहीं पड़ता है लेकिन दो है। हो सकता है दिल्ली टू बोर डायरेक्ट जाता हो। दिल्ली से गुवाहाटी जंप करके गुवाहा कुछ भी करें हमको फर्क नहीं पड़ता है। अच्छा कोई बता दे कि दो रास्ता है। कोई बोल दे कि कोलकाता से बोर जाने का तीन रास्ता है। कौन सा तीन रास्ता है? अरे",
+      "source": "caption",
+      "english_text": "From Ranchi you will either have to take one jump or two jumps to reach there. Good! If someone tells you, someone magically tells you that brother, there are no two ways to go from Delhi to Bangalore. There are two ways to go from Delhi to Bor. Don't know which way it is, it doesn't matter but there are two. Maybe he goes directly to Delhi to bore. Whatever Guwahati does by jumping from Delhi to Guwahati, it does not matter to us. Okay, someone please tell me there are two ways. Someone tell me that there are three ways to get bored from Kolkata. Which three ways? hey"
+    },
+    {
+      "start_time": 451.52,
+      "end_time": 483.749,
+      "text": "डोंट नो डोंट केयर। बिल्कुल हमको फर्क नहीं पड़ता है। लेकिन कोलकाता से बोर का तीन रास्ता है। अब वो कोलकाता से बैंगलोर डायरेक्ट जाए, कोलकाता से दो-दो जंप करते हुए जाए, एक जंप करते हुए रास्ते में गिर जाए, कुछ भी करे। कोलकाता टू बेंगलुरु जाने का तीन रास्ता है। ये आपको दो चीजें कहां पता चल गई? जब आप रांची में थे। अब बताइए कि अगर आपको ये दोनों चीज पता चल गई तो रांची टू बेंगलुरु का फाइनल वेज़ कितना होगा? एग्जैक्टली होगा वो 2 + 3 2 + 3 = 5",
+      "source": "caption",
+      "english_text": "Don't know don't care. It doesn't matter to us at all. But there are three ways from Kolkata to Bor. Now he should go directly from Kolkata to Bangalore, take two jumps from Kolkata, fall down on the way while taking one jump, do anything. There are three ways to go from Kolkata to Bangalore. How did you know these two things? When you were in Ranchi. Now tell me, if you know these two things then what will be the final wage of Ranchi to Bangalore? Exactly that will be 2 + 3 2 + 3 = 5"
+    },
+    {
+      "start_time": 483.759,
+      "end_time": 517.11,
+      "text": "क्यों? देखिए मान लीजिए मान लीजिए जो दिल्ली का दो रास्ता है ना दिल्ली का दो रास्ता है ये दिल्ली टू बेंगलुरु डायरेक्ट जाना है और दिल्ली टू कोलकाता टू बेंगलुरु ये दिल्ली का दो रास्ता हो गया ये दिल्ली आपको जो दो रास्ता मान लीजिए कि ये रास्ता बताया कोलकाता तीन रास्ता बताया है हो सकता है पहले कोलकाता से पटना जाना हो और वापस बेंगलुरु जाना हो सकता है ये हो सकता है कोलकाता से गुवाहाटी जाना हो वहां से बेंगलुरु जाना हो सकता है ये हो सकता है मान लीजिए मान लीजिए कोलकाता से कहीं और",
+      "source": "caption",
+      "english_text": "Why? See, let's say, there are two ways to Delhi, right, there are two ways to Delhi, this is to go directly from Delhi to Bangalore, and from Delhi to Kolkata, it is two ways to Delhi, this Delhi has given you two ways, let's say this is the way Kolkata has told you three ways, maybe first go from Kolkata to Patna and then go back to Bangalore, it is possible to go from Kolkata to Guwahati, it is possible to go from there to Bengaluru, it is possible, let's say somewhere else from Kolkata."
+    },
+    {
+      "start_time": 517.12,
+      "end_time": 549.91,
+      "text": "जाना हो मैसूर जाना हो और यहां से बेंगलुरु जाना हो। ठीक है? यहां पे एक दो मत देखिए। हम आपको समझाने के लिए बता रहे हैं। मान लीजिए कोलकाता से तीन रास्ता ये है। आपको ये पता चल गया कि भैया दो रास्ता दिल्ली से तीन रास्ता कोलकाता से। अब आपको रांची टू बेंगलुरु का निकालना है। आप रांची से दो ही चीज कर सकते थे। या तो दिल्ली जा सकते थे या तो कोलकाता जा सकते थे। तो देखिए आप क्या करिए? आप एक आपका रास्ता तो यह हो गया। एक दो तीन चार पांच रांची से बोर जाने का कितना",
+      "source": "caption",
+      "english_text": "You have to go to Mysore and from here to Bangalore. Ok? Don't look here. We are telling you to make you understand. Suppose there are three ways from Kolkata. You came to know that brother, two ways from Delhi and three ways from Kolkata. Now you have to travel from Ranchi to Bangalore. You could do only two things from Ranchi. You could either go to Delhi or Kolkata. So see what you do? You one your way so it's done. One, two, three, four, five, how long is it to get bored with Ranchi?"
+    },
+    {
+      "start_time": 549.92,
+      "end_time": 579.99,
+      "text": "रास्ता हुआ टोटल फाइव क्या रांची से बोर जाने का कोई छठा तरीका हो सकता है नहीं हो सकता है क्यों क्योंकि रांची से आप दो ही काम कर सकते थे या तो दिल्ली या तो कोलकाता ठीक है दिल्ली से बोर जाने का दो ऑप्शन है गिन लिए कोलकाता से बोर जाने का तीन कॉम्बिनेशन है उसको गिन लिए जोड़ दिए 2 + तीन तो रांची से बोर कितना हो गया पांच बस आपका खेल खत्म हो गया सारा रिकर्शन आपका खत्म खत्म हो चुका है। जो लोग रिकर्शन देखे हैं उनको इतना सुनने में बहुत बोर लग रहा होगा क्योंकि ये सब बहुत अच्छे से आपको आता है। तो मतलब क्या है?",
+      "source": "caption",
+      "english_text": "The way is total five. Can there be a sixth way to get bored of Ranchi? Not possible because because from Ranchi you could do only two things, either Delhi or Kolkata, it is fine, there are two options to get bored of Delhi, count them, there are three combinations of getting bored of Kolkata, count them and add 2 + three, then how much you get bored of Ranchi, five. That's it, your game is over, all the recursion is over, your end is over. People who have seen recursion must be feeling very bored hearing this because you know all this very well. So what does it mean?"
+    },
+    {
+      "start_time": 580.0,
+      "end_time": 612.79,
+      "text": "हम लोग को क्या करना है? हमारा रिकर्शन कैसा दिखेगा? सबसे पहले तो हम एक रिकर्शन फंक्शन लिखेंगे जिसमें हम ये करेंगे। इंट आई i का मतलब आप अभी कहां पे खड़े हैं? अभी आप रांची पे खड़े हैं कि दिल्ली में खड़े हैं? कोलकाता में खड़े हैं कि बोर पे खड़े हैं? कहां खड़े हैं? पहला बात तो ये और इंट n जाना कहां है? एन क्या है आपका? ये तो फ्लोर वाइज है ना भैया। i हमेशा जीरो से स्टार्ट होगा और आपको n तक पहुंचना है। तो ये हमारा वो हो गया। सबसे पहले क्या काम होता है? बेस केस को लिख लो। क्या बेस केस सोचे थे? दो बेस केस",
+      "source": "caption",
+      "english_text": "What are we to do? What will our recursion look like? First of all, we will write a recursion function in which we will do this. Int i means where are you standing now? Now are you standing in Ranchi or Delhi? Are you standing in Kolkata or on Bor? Where are you standing? First of all, where is this and int n going to go? N What is yours? This is floor wise, isn't it brother? i will always start from zero and you have to reach n. So this became ours. What is done first? Write down the base case. What base case had you thought of? two base cases"
+    },
+    {
+      "start_time": 612.8,
+      "end_time": 639.59,
+      "text": "सोचे थे। पहला बेस केस था कि अगर आप बोर पे ही खड़े हैं और आपको बोर जाना है तो कितना रास्ता होगा? एक रास्ता। मतलब अगर आपका अगर आपका i इक्वल इक्वल टू n हो गया। कितना रिटर्न कर दीजिए? वन। मतलब भैया बोर पे खड़े हैं। आपको बोर जाना है। एक रास्ता है। दूसरा बेस केस क्या था? अगर मान लीजिए आप बोर से आगे निकल गए। हो सकता है ना कि आप आगे निकल जाए। दो दो कूद रहे हैं ना?",
+      "source": "caption",
+      "english_text": "Had thought. The first base case was that if you are standing on the bore and you have to go to the bore, then how much distance will it have to go? One way. Meaning if your if your i becomes equal to n. How much should I return? Forest. Meaning brother is standing on the bore. You have to get bored. There is a way. What was the second base case? Suppose you have gone beyond the bore. It is possible that you may move ahead. You are jumping two by two, right?"
+    },
+    {
+      "start_time": 639.6,
+      "end_time": 673.35,
+      "text": "तो ऐसा हो सकता है ना कि भैया कि आप फिफ्थ फ्लोर पे हो। आपको सिक्स्थ जाना था। हो सकता है कि फिफ्थ से आप उत्साह उत्साह में सेवंथ पे कूद गए। आगे निकल गए। अगर आप आगे निकल गए हैं बेंगलुरु से तो कितना रास्ता था? एक भी रास्ता नहीं। नॉट पॉसिबल टू कम टू बोर। मतलब कि अगर आपका i इज &gt; n कितना रास्ता हो सकता है अब रिटर्न ज़ीरो खत्म हो गया बेस केस का काम अब आपका क्या काम है रांची रांची से कहां-कहां जाया जा सकता था दिल्ली और कोलकाता i से कहां-कहां जाया जा सकता है i + 1 और i + 2 तो हम लोग क्या",
+      "source": "caption",
+      "english_text": "So it is possible that you are on the fifth floor. You were supposed to go sixth. It is possible that from the fifth you jumped to the seventh in excitement. Went ahead. If you have moved ahead from Bengaluru then how much distance was there? Not a single way. Not Possible To Come To Bored. Meaning, if your i is > n, how many routes can there be? Now the work of return zero is over, now what is your work? Ranchi, where can we go from Ranchi, Delhi and Kolkata, where can we go from i, i + 1 and i + 2, then what do we do?"
+    },
+    {
+      "start_time": 673.36,
+      "end_time": 707.269,
+      "text": "बोले थे कोई हमको i + 1 का आंसर बता दे मतलब कोई हमको दिल्ली का आंसर बता दे कोई हमको i + 2 का आंसर बता दे मतलब कोई कोलकाता का आंसर बता दे आई का आंसर निकालने के लिए रांची का आंसर निकालने के लिए क्या करेंगे? दोनों को जोड़ के रिटर्न कर देंगे। तो कोई अच्छा आदमी हमको i + 1n का आंसर बता दे बता देगा। कोई अच्छा आदमी हमको i + 2 का आंसर बता दे बता देगा। क्या रिटर्न करना है भैया? रिटर्न रिटर्न a1 + a2 खत्म हो गया। ये लीजिए आपका रिक्शन",
+      "source": "caption",
+      "english_text": "They said, someone should tell us the answer of i + 1, that is, someone should tell us the answer of Delhi, someone should tell us the answer of i + 2, that is, someone should tell us the answer of Kolkata, what will we do to find the answer of Ranchi to find the answer of I? Will combine both and return. So some good person will tell us the answer of i + 1n. Some good person will tell us the answer of i + 2. What do you want to return, brother? Return return a1 + a2 over. Here's your reaction"
+    },
+    {
+      "start_time": 707.279,
+      "end_time": 737.67,
+      "text": "खत्म हो चुका है। रिक्शन का काम तमाम हो चुका है। यही इसका आंसर है। लेकिन लेकिन लेकिन लेकिन ये प्लेलिस्ट तो डीपी का है। ये प्लेलिस्ट तो डीपी का है। तो रिकन तो लिख लिए। कल हम क्या समझाए थे? क्या इस रिक्शन में डीपी लगाने का दरकार है? जरूरत है कि नहीं? वो कैसे पता चलता है? अगर अगर आपका रिकर्शन सेम प्रॉब्लम को बार-बार सॉल्व करने लगे। किसको? सेम प्रॉब्लम को सेम इनपुट को बार-बार सॉल्व करने लगे।",
+      "source": "caption",
+      "english_text": "It's over. The repair work has been completed. This is the answer. But but but but this playlist is of DP. This playlist is of DP. So I wrote Recon. What did we explain yesterday? Is there a need to use DP in this reaction? Is it needed or not? How is that known? If your recursion starts solving the same problem again and again. Whom? Started solving the same problem with the same input again and again."
+    },
+    {
+      "start_time": 737.68,
+      "end_time": 765.67,
+      "text": "जैसा कल फिबोनाकी में था। अगर आपका रिकर्शन बार-बार ओवरलैपिंग सब प्रॉब्लम्स मान लीजिए किसी देखिए इस रिकर्शन फंक्शन में ना n तो चेंज होना नहीं है। n तो n रहेगा बोर तो बोर रहेगा। चेंज क्या हो रहा है? i चेंज होगा। मतलब आप i = 0 से स्टार्ट करेंगे। कूद के i = 1 पे जाएंगे। ये कूद के i = i चेंज हो रहा है। अगर ड्राई रन में हम लोग को ये दिखा कि भाई i सेम i के लिए बार-बार रिकर्शन फंक्शन कॉल हो रहा है तो इसमें क्या लगाना होगा?",
+      "source": "caption",
+      "english_text": "As in Fibonacci yesterday. If your recursion repeatedly solves overlapping sub-problems, suppose if there is no n in this recursion function then there is no change. n will remain n and will remain bored. What is changing? i will change. Meaning you will start from i = 0. Will jump to i = 1. This is changing by jumping i = i. If in dry run we see that recursion function is being called again and again for brother i and same i, then what needs to be included in it?"
+    },
+    {
+      "start_time": 765.68,
+      "end_time": 799.99,
+      "text": "डायनेमिक प्रोग्रामिंग। कैसे लगाना होगा? वो बाद में देखेंगे। पहले तो देख लेते हैं कि लग रहा है कि नहीं लग रहा है। एक छोटा सा ड्राई रन करके देख लेते हैं। n = 3 के लिए ड्राई रन करके देख लेते हैं कि सेम प्रॉब्लम हो रहा है कि नहीं। तो देखिए, n = 3 में आपको जाना है। शुरुआत कहां से करेंगे? i = 0 से। अब क्या करेंगे? फन i = 0 n = 3 ठीक है? सबसे पहले चेक कीजिए। कोई हमसे पूछा था कि ड्राई रन कैसे करते हैं रिकर्शन को? ऐसे करते हैं बेटा। देख लीजिए। देखिए i = 0 सबसे पहले क्या ये बेस केस है? मतलब क्या i n बन चुका है या तो m",
+      "source": "caption",
+      "english_text": "Dynamic Programming. How to install it? They will see later. First let's see whether it is felt or not. Let's do a small dry run and see. Let's do a dry run for n = 3 and see if the same problem occurs or not. So see, you have to go for n = 3. Where do you start? From i = 0. What will you do now? Fun i = 0 n = 3 ok? Check first. Someone asked us how to dry run recursion? This is how we do it, son. Take a look. See i = 0 First of all is this the base case? Meaning has i n become either m"
+    },
+    {
+      "start_time": 800.0,
+      "end_time": 834.629,
+      "text": "से बड़ा हो चुका है? बिल्कुल नहीं हो चुका है। तो सबसे पहले तो a1 = फन ऑफ़ i = 1 n = 3 a2 = i = 2 n = 3 दो हो गया। एक-एक करके चलाना शुरू कीजिए। इसको चलाइए सबसे पहले। तो पहला क्या होगा? फन i = 1, n = 3 ये भी बेस केस नहीं है। तो क्या करेगा? a1 = फन i = 2 n = 3 और a2 = फन i = 3 n = 3 सिर्फ",
+      "source": "caption",
+      "english_text": "Is it bigger than? It's not done at all. So first of all a1 = fun of i = 1 n = 3 a2 = i = 2 n = 3 becomes two. Start moving one by one. Run this first. So what will be the first? Fun i = 1, n = 3, this is also not the base case. So what will you do? a1 = function i = 2 n = 3 and a2 = function i = 3 n = 3 only"
+    },
+    {
+      "start_time": 834.639,
+      "end_time": 866.55,
+      "text": "इतना करके [हंसी] सिर्फ इतना करके ना आपको समझ में आना चाहिए कि डीपी का प्रॉब्लम है। अभी तो हम आगे नहीं बढ़े हैं। लेकिन सिर्फ यही लिख के आपको समझ में आ जाना चाहिए कि डीपी का प्रॉब्लम है। क्यों? देखिए, ये क्या कर रहा है? i = 2 और n = 3 कॉल कर रहा है। क्या आपको ये कहीं और लिखा हुआ दिख रहा है? बिल्कुल दिख रहा है। ये देखिए। ये देखिए। मतलब कि अगर आप इसको अभी चला भी लेते हैं और पूरा खत्म करके आ जाते हैं। ये आदमी फिर से चलेगा। ये आदमी फिर से चलेगा। अगर आपको एक भी ऐसा इंस्टेंस",
+      "source": "caption",
+      "english_text": "[laughter] Just by doing this, you should understand that there is a problem of DP. We have not progressed yet. But just by writing this you should understand that there is a problem of DP. Why? Look, what is he doing? Is calling i = 2 and n = 3. Do you see this written anywhere else? Absolutely visible. Look at this. Look at this. Meaning that even if you start it now and come back after completing it. This man will walk again. This man will walk again. If you find even one such instance"
+    },
+    {
+      "start_time": 866.56,
+      "end_time": 898.47,
+      "text": "दिख रहा है ना कि भाई सेम इनपुट बार-बार कॉल हो रहा है। बार-बार कॉल हो रहा है। अगर वो बार-बार कॉल हो रहा है ना तो बार-बार चलेगा भी। जो कॉल हो जाता है उसको चलने से भगवान भी नहीं रोक सकते हैं। मतलब पूरा ड्राई रन करने की जरूरत नहीं है। जैसे कल हम लोग फिबोनाकी में अंत तक गए थे ना नहीं अंत तक जाने का जरूरत। अगर आपको दिख रहा है कि बार-बार कॉल हो रहा है ना ये क्या हुआ? देखिए हम लोग यहां से शुरू किए। A1 A2 ठीक है? अच्छी बात है। यहां आए A1 ये फिर कॉल कर रहा है। अगर आपको दिखता है कि बार-बार सेम चीज कॉल हो रही है।",
+      "source": "caption",
+      "english_text": "It appears that the same input is being called again and again. Calls are being made again and again. If that call is coming again and again then it will go on again and again. Even God cannot stop someone from following the call. Meaning there is no need to do a complete dry run. Like yesterday we went till the end in Fibonacci, no, there is a need to go till the end. If you see that calls are being made again and again, what is this? Look, we started from here. A1 A2 ok? It's a good thing. Come here A1 he is calling again. If you see that the same calls are being made again and again."
+    },
+    {
+      "start_time": 898.48,
+      "end_time": 931.829,
+      "text": "पक्का वो किसका क्वेश्चन है? डीपी का। डीपी कैसे लगाते हैं? जिस इनपुट को बार-बार जो भी इनपुट बदल रहा है ना उसको याद रख लीजिए। चलाने से पहले मतलब बेस केस तो रहने दीजिए। बाद में बाद में कुछ भी काम करने से पहले अपना डायरी खोल के पढ़ लीजिए कि भैया इस इनपुट का आंसर यहां लिखा हुआ है क्या? अगर आंसर लिखा हुआ है वही आंसर रिटर्न कर दीजिए। ज्यादा दिमाग चलाने का जरूरत नहीं है। यहां पे कौन सा इनपुट बदल रहा है? क्या n बदल रहा है? नहीं। n नहीं n नहीं बदलेगा। n तो टारगेट है। क्या बदल रहा है? I की वैल्यू बदल रही है। तो",
+      "source": "caption",
+      "english_text": "Whose question is that for sure? DP's. How to apply DP? Whatever input is changing repeatedly, remember it. Before running, leave the base case intact. Later, before doing any work, open your diary and read, brother, is the answer to this input written here? If the answer is written then return the same answer. There is no need to use your brain too much. Which input is changing here? Is n changing? No. n no n will not change. n is the target. What is changing? The value of I is changing. so"
+    },
+    {
+      "start_time": 931.839,
+      "end_time": 959.59,
+      "text": "अगर हम लोग अगर हम लोग अगर हम लोग i की वैल्यू को i की वैल्यू को मतलब i के आंसर को देखिए i = 1 n = 3 इसका कुछ तो आंसर आएगा ना। 2 3 4 5 10 कुछ तो आंसर आएगा। अगर हम लोग इसका आंसर को एक जगह पे लिख लें डायरी में और हर बार कुछ भी करने से पहले कुछ भी करने से पहले अपनी डायरी में खोल के पढ़ लें तो क्या काम आसान हो जाएगा? यस आपका काम बिल्कुल आसान हो जाएगा। तो यही चीज करिए। यही चीज करिए।",
+      "source": "caption",
+      "english_text": "If we look at the value of i i.e. i = 1 n = 3 then there will be some answer to this. 2 3 4 5 10 Some answer will come. If we write down the answer at one place in our diary and every time before doing anything, open it and read it in our diary, will the work become easier? Yes, your work will become absolutely easy. So do this thing. Do this same thing."
+    },
+    {
+      "start_time": 959.6,
+      "end_time": 994.31,
+      "text": "क्या बोले थे? इस रिक्शन में वापस आइए। सबसे पहले तो इसको हटाइए। इसको मिटाइए। मिटाइए। थोड़ी देर में लिखेंगे। इसको मिटाइए। ठीक है? इसको मिटा देंगे। इसको मिटा दीजिए। इसको मिटा दीजिए और आ जाइए। बेस केस को रहने दीजिए। बेस केस को एज़ इट इज़ रहने दीजिए। नहीं छेड़िए। एक काम क्या करना है? इफ DP डॉट फाइंड i नॉट इक्व DP. एंड रिटर्न dp ऑफ i बस ऊपर में क्या डिक्लेअ करना है",
+      "source": "caption",
+      "english_text": "What did you say? Come back to this reaction. First of all, remove it. Delete this. Delete. Will write shortly. Delete this. Ok? Will erase this. Delete this. Erase this and come. Leave the base case intact. Leave the base case as it is. Don't tease. What's one thing to do? If DP dot find i not equal DP. end return dp of i just what to declare in above"
+    },
+    {
+      "start_time": 994.32,
+      "end_time": 1027.75,
+      "text": "अनऑर्डर्ड मैप इंट इंट डीपी खत्म हो गई बात ये डीपी क्या हैश मैप किसका हर आई का आंसर को स्टोर करने के लिए इसलिए इंट इंट देखिए जरूरी नहीं है कि हैश मैप यूज़ कीजिए यहां पे आप एक वेक्टर भी यूज़ कर सकते हैं एक वेक्टर ऑफ़ इंट ऑफ़ DP जिसका का साइज n हो वो भी यूज़ कर सकते हैं। कुछ भी यूज़ करिए। वेक्टर हैशमैप कुछ भी यूज़ कीजिए। डायरी बनाने से मतलब है डायरी बनना चाहिए। दोनों का स्पेस कॉम्प्लेक्सिटी ऑर्डर ऑफ़ n होता है। ठीक है? और देखा जाए तो दोनों का टाइम",
+      "source": "caption",
+      "english_text": "Unordered Map Int Int DP, the matter is over, what is this DP? Hash Map to store the answer of whose denominator, so look at Int, it is not necessary to use hash map. Here you can also use a vector. A vector of int of DP whose size is n can also be used. Use anything. Use vector hashmap or anything. Making a diary means that a diary should be made. Both have space complexity of order n. Ok? And if we look at the time of both"
+    },
+    {
+      "start_time": 1027.76,
+      "end_time": 1062.63,
+      "text": "कॉम्प्लेक्सिटी वेक्टर में भी निकालने का ऑर्डर ऑफ़ वन। इसका भी ऑर्डर ऑफ़ वन होता है। तो कोई इसमें दिक्कत नहीं है। देख लिए। अब अगर नहीं मिला अपना कंटिन्यू कीजिए। इंट a1 = फन i + 1 n इंट सेम चीज लिख रहे हैं जो अभी लिखे थे। फन i + 2 n बस आंसर निकाल लीजिए। आंसर निकाल लीजिए बेटा। आंसर निकाल लीजिए। क्या होगा आंसर? a1 + a2 अब रिटर्न करने से पहले रिटर्न आंसर। लेकिन इसके पहले इसको अपनी डायरी में लिख लीजिए ताकि आगे काम आए। आगे काम",
+      "source": "caption",
+      "english_text": "Order of one for extraction even in complexity vector. This also has the order of one. So there is no problem in this. Have seen. Now if you don't get it then continue. int a1 = fun i + 1 n int Writing the same thing as just written. Fun i + 2 n just find the answer. Find out the answer, son. Find out the answer. What will be the answer? a1 + a2 now returns answer before returning. But before this, write it in your diary so that it will be useful in future. work ahead"
+    },
+    {
+      "start_time": 1062.64,
+      "end_time": 1097.029,
+      "text": "आए। dp ऑफ़ i इक्वल टू आंसर। बस ये लो बन गया dp। ये लो बन गया। बन गया dp। इसकी टाइम कॉम्प्लेक्सिटी ऑर्डर ऑफ n इसकी स्पेस कॉम्प्लेक्सिटी स्पेस यूज़ होता है डीपी में हम बार-बार बोल रहे हैं डीपी आपका टाइम बचाता है लेकिन आपसे स्पेस लेता है क्यों ये जो डायरी मेंटेन कर रहे हो उसमें स्पेस लगेगा ना बेटा डायरी कहां मेंटेन होगा ये जो हैश मैप हैशमैप जो इतना बड़ा मेंटेन कर रहे हैं इसमें स्पेस लगेगा ना कितना स्पेस लगेगा ऑर्डर ऑफ़ n स्पेस लगेगा क्योंकि सारे लेवल का आंसर आप लास्ट में इसमें लिख लेंगे ना i = 0 का आंसर वन का आंसर टू का आंसर थ्री का आंसर फोर का",
+      "source": "caption",
+      "english_text": "Came. dp of i equal to answer. Just take this, the DP is done. Here it is done. Become dp. Its time complexity is order of n. Its space complexity is the space used. In DP, we are saying again and again that DP saves your time but takes space from you. Why will the diary that they are maintaining take up space? Son, where will the diary be maintained? The hash map that they are maintaining is so big. How much space will it take? Order of n will take up space because you will write the answers of all the levels in it in the last. Answer of i = 0 and answer of one. Answer of two, answer of three, answer of four"
+    },
+    {
+      "start_time": 1097.039,
+      "end_time": 1126.15,
+      "text": "आंसर टिल i = n सबका आंसर इसमें लिखेंगे ेंगे तो उसका स्पेस कितना हो जाएगा? ऑर्डर ऑफ़ n टाइम कॉम्प्लेक्सिटी कितना हो जाएगा? ऑर्डर ऑफ़ n क्योंकि हर एक रिकर्शन हर एक रिकर्शन वाला फंक्शन मैक्सिमम एक बार चलेगा। मैक्सिमम कितने बार चलेगा? एक बार चलेगा। अगर वो दोबारा कॉल होता है। अगर वो दोबारा कॉल होता है ना तो वो चलेगा नहीं। वो बीच में ही यहां पे देखिए हम लोग डीपी के कारण वापस आ जाएंगे तो उसमें टाइम नहीं लगेगा ज्यादा। कॉल तो होगा। टाइम नहीं लगेगा। क्या नहीं लगेगा? टाइम नहीं लगेगा।",
+      "source": "caption",
+      "english_text": "If we write all the answers till i = n in it, how much space will it take? What will be the order of n time complexity? Order of n because each recursion function will run at most once. How many times will the maximum run? Once will do. If he calls again. If he calls again then it will not work. See, we will come back here midway due to DP, so it will not take much time. There will be a call. It won't take time. What will not happen? It won't take time."
+    },
+    {
+      "start_time": 1126.16,
+      "end_time": 1155.83,
+      "text": "बिल्कुल टाइम नहीं लगेगा। तो इसको हम लोग क्या कन्वर्ट कर दिए? रिकर्शन से डीपी में। क्यों पता चला कि डीपी का क्वेश्चन है? सेम कॉल हो रहा है बार-बार। सेम कॉल हो रहा है बार-बार। इसीलिए डीपी का क्वेश्चन है। सेम कॉल अगर हो रहा है ना तो जो भी इनपुट बदल रहा है, जो भी इनपुट बदल रहा है, इसमें हम dp ऑफ़ n नहीं लिख रहे। n तो बदल ही नहीं रहा है। n तो सेम है। जो इनपुट बदल रहा है, उसको याद रख लो। चेक कर लो चलाने से पहले कि भैया वो लिखा हुआ है, लिखा हो तो दे दो, नहीं तो मत दो। तो ये आप लोग ये क्वेश्चन सॉल्व कर चुके हैं।",
+      "source": "caption",
+      "english_text": "It won't take any time at all. So what did we convert it into? From recursion to DP. Why did it come to light that there is a question of DP? Same call is happening again and again. Same call is happening again and again. That's why there is a question of DP. If the same call is happening then whatever input is changing, whatever input is changing, in this we are not writing dp of n. n is not changing at all. n is the same. Remember the input that is changing. Before driving, check that it is written, if it is written then give it, otherwise don't give it. So you guys have solved this question."
+    },
+    {
+      "start_time": 1155.84,
+      "end_time": 1168.0,
+      "text": "जाइए इसको सबमिट कीजिए। बड़ा बेसिक लेकिन बड़ा फंडामेंटल क्वेश्चन है डीपी का। मेरा भी थोड़ा गला दर्द हो गया बोलते बोलते। ठीक है? इसको सॉल्व करिए और कल आइए।",
+      "source": "caption",
+      "english_text": "Go submit it. It is a very basic but very fundamental question of DP. I also got a little throat pain while speaking. Ok? Solve this and come tomorrow."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

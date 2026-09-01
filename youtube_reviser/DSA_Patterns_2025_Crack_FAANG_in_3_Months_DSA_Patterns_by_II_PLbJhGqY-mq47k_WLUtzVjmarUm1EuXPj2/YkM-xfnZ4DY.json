@@ -1,0 +1,331 @@
+{
+  "video_id": "YkM-xfnZ4DY",
+  "video_title": "DP in 15 Days Episode 12 : LCS In 20 Minutes",
+  "video_number": 120,
+  "chunks": [
+    {
+      "start_time": 2.79,
+      "end_time": 37.35,
+      "text": "बच्चों देखिए आज का जो क्वेश्चन है पिछले एपिसोड में हम लोग एल आई एस कर चुके हैं। मतलब लॉन्गेस्ट इंक्रीजिंग सब सीसीक्वेंस। आज वही है लॉन्गेस्ट कॉमन सब सीसीक्वेंस। क्या है? कॉमन। अब देखिए लॉन्गेस्ट कॉमन सब सीसीक्वेंस बहुत ही इजी सवाल है। अगर आप लोग अभी तक डीपी सीरीज देख रहे हैं तो ज्यादा टाइम नहीं लगेगा। अ 10 मिनट से 15 मिनट में सब हो जाएगा। रिकर्शन से लेके टैबुलेशन सब। तो देखो सबसे पहले क्वेश्चन समझा देते हैं। मतलब क्या होता है? एलसीएस मतलब लॉन्गेस्ट कॉमन सबसीक्वेंस। इसका मतलब क्या है? कि आपको दो स्ट्रिंग दिया रहेगा। जब भी कॉमन का बात आएगा तो कॉमन दो या ज्यादा चीजों में होगा ना। कॉमन क्या है? एक चीज में तो कॉमन होता नहीं है। तो आपको दो स्ट्रिंग दिया रहेगा। फॉर एग्जांपल एक स्ट्रिंग है ए बी सी डी और ई।",
+      "source": "caption",
+      "english_text": "Children, see today's question, we have done LIS in the last episode. Meaning longest increasing sub sequence. Today that is the longest common sub sequence. What is? Common. Now see Longest Common Sub Sequence is a very easy question. If you guys are watching DP series till now then it will not take much time. A: Everything will be done in 10 to 15 minutes. Everything from recursion to tabulation. So look, first let us explain the question. What does it mean? LCS means Longest Common Subsequence. What does it mean? That will give you two strings. Whenever it comes to common, there will be common in two or more things. What is common? One thing is not common. So you will be given two strings. For example there is a string A B C D and E."
+    },
+    {
+      "start_time": 37.36,
+      "end_time": 70.87,
+      "text": "ये आपका एक स्ट्रिंग है। ओके? 1 2 3 4 5 0 1 2 3 4 दूसरा स्ट्रिंग जो दिया हुआ है वो है फॉर एग्जांपल ए सी ई। ठीक है? ए सी ई 0 1 2 अब एलसीएस का मतलब क्या है? सबसे पहले तो सब सीसीक्वेंस। सब सीक्वेंस क्या होता पता है हम पिछले वीडियो में समझा चुके हैं। सब सीसीक्वेंस का मतलब होता है कि आपको कैरेक्टर्स ले लेने हैं। मतलब स्ट्रिंग या किसी एरे में सब सीक्वेंस का क्या मतलब होता है? मान लीजिए आपका स्ट्रिंग है हेल हेलो। ठीक है? ये है। अब सब सीक्वेंस क्या होता है कि आप चाहें तो एच ले लीजिए। आपका मन करे तो ई को छोड़ दीजिए। फिर आपका मन करे तो आप एक एल को ले",
+      "source": "caption",
+      "english_text": "This is your string. Ok? 1 2 3 4 5 0 1 2 3 4 The second string given is for example ACE. Ok? ACE 0 1 2 Now what does LCS mean? First of all, all the sequences. You know what the sub sequence is, we have explained it in the previous video. Sub sequence means you have to take characters. What does a sub sequence in a string or an array mean? Let's say your string is hello hello. Ok? This is. Now what is the sub sequence that if you want, take H. If you feel like it, leave the e. Then if you feel like it, take an L."
+    },
+    {
+      "start_time": 70.88,
+      "end_time": 98.31,
+      "text": "लीजिए। आपका मन करे तो अगले एल को छोड़ दीजिए। फिर आपका मन करे तो एक ओ को ले लीजिए। तो एच एल ओ क्या हुआ? एक सब सीक्वेंस। क्या हुआ? सब सीसीक्वेंस। आप ये भी कर सकते हैं कि एच को छोड़ दिए। ई ले लिए और दोनों एल को छोड़ दिए और ओ ले लिए। ये भी क्या हुआ? एक सब सीक्वेंस। सब सीक्वेंस में ऑर्डर मेंटेन रहना चाहिए। सब सीक्वेंस में हम बार-बार बोल रहे हैं कि ऑर्डर इधर-उधर नहीं करना है। मतलब मान लो आप ऐसा लिख दें कि ओ और ई ये नहीं है सब सीक्वेंस। इसमें ऑर्डर वो हो गया ना? ऑर्डर मेंटेन रखना है। किसी को आप ले भी सकते हैं, किसी को नहीं भी ले सकते हैं।",
+      "source": "caption",
+      "english_text": "Take it. If you feel like it, skip the next L. Then if you feel like it, take an O. So what happened to HLO? A sub sequence. What happened? All sequence. You can also leave out the H. Took e and dropped both l's and took o. What also happened? A sub sequence. Order must be maintained in all sequences. In all the sequences we are repeatedly saying that orders should not be placed here and there. Meaning, suppose you write such that O and E are not all sequences. The order has been placed in this, isn't it? Order has to be maintained. You may take some, you may not take others."
+    },
+    {
+      "start_time": 98.32,
+      "end_time": 132.39,
+      "text": "उसको सब सीसीक्वेंस बोला जाता है। ठीक है? अब लॉन्गेस्ट कॉमन सब सीसीक्वेंस का क्या मतलब है? कि आपके पास दो स्ट्रिंग है। ठीक है? दोनों में आपको एक कॉमन सब सीक्वेंस ढूंढना है। फॉर एग्जांपल मान लो इसका कोई सबसीक्वेंस बना के लिखा कि इसका सब सीसीक्वेंस a b c क्या बी सी सबसीक्वेंस है? बिल्कुल है। ए बी सी इसका एक सब सीसीक्वेंस है। मान लो इसका कोई सबसीक्वेंस लिखा कि c ओके ये भी एक सबसीक्वेंस है। लेकिन क्या ये दोनों एक सबसीक्वेंस है क्या? नहीं एक सबसीक्वेंस नहीं है। कोई आदमी लिखा a ई। क्या ये इसका सब सीसीक्वेंस है? बिल्कुल है। कोई आदमी लिखा इसका भी a इ। क्या ये इसका",
+      "source": "caption",
+      "english_text": "It is called sub sequence. Ok? Now what does Longest Common Sub Sequence mean? That you have two strings. Ok? You have to find a common sub sequence in both. For example, suppose there is a subsequence of this and write that its subsequence is a b c. Is B c a subsequence? Of course it is. A B C is a sub sequence of this. Suppose any subsequence of this is written as c Okay, this is also a subsequence. But are these two a sequel? No there is not a subsequence. Some man wrote a e. Is this all its sequence? Of course it is. Some man also wrote this. is this its"
+    },
+    {
+      "start_time": 132.4,
+      "end_time": 166.39,
+      "text": "सबसीक्वेंस है? बिल्कुल है। इसमें आप ए को ले इको ले लिए। इसमें इको ले लिए। इको ले लिए। क्या ये दोनों सेम है? यस। ये दोनों सेम है। तो ये क्या हुआ? कॉमन सब सीसीक्वेंस दोनों स्ट्रिंग का। क्या हुआ? कॉमन सब सीसीक्वेंस। अब इसका लेंथ कितना है? ये जो आप AE बनाए इसका लेंथ कितना है? इसका लेंथ है टू। इसका लेंथ है टू। तो एक तो आप बोल सकते हैं कि टू लेंथ का एक कॉमन सबक्वेंस बन सकता है। लेकिन क्या टू से ज्यादा भी बन सकता है क्या? या तो टू मैक्सिमम है? नहीं। आप ये भी कर सकते हैं ना इस एरे में आप ये कर लिए कि आप क्या किए? ए सी और ई को लेके क्या बना दिए? अरे",
+      "source": "caption",
+      "english_text": "Is there a subsequence? Of course it is. In this you take A and take Echo. Took Echo in it. Took Echo. Are these two beans? Yes. Both of these are beans. So what happened? Common sub sequence of both strings. What happened? Common sub sequence. Now what is its length? What is the length of this AE you have created? Its length is two. Its length is two. So one thing you can say is that a common sequence of two lengths can be formed. But can it be more than two? Is that too maximum? No. You can also do this, in this array you did this, what did you do? What did you do with AC and E? hey"
+    },
+    {
+      "start_time": 166.4,
+      "end_time": 191.589,
+      "text": "सॉरी ए सी और ए को लेके क्या बना दिए? ए सी ई और इसका पूरा स्ट्रिंग को ले लिए। इसको भी ले लिए इसको भी ले लिए। इसको भी ले लिए तो क्या बन गया? ए सी ई यहां भी बन गया एस। क्या ये दोनों सब सीसीक्वेंस एक है? यस। मतलब कि ये कॉमन सब सीक्वेंस है और इसका लेंथ क्या है? इसका लेंथ है थ्री। तो इन दोनों स्ट्रिंग में जब आपसे पूछा जाए कि लॉन्गेस्ट कॉमन सब सीसीक्वेंस का लेंथ बताओ, तो आपको क्या लौटाना पड़ेगा?",
+      "source": "caption",
+      "english_text": "Sorry, what did you make of C and A? ACE and its entire string. Took this too, took this too. What would happen if we took this also? ACE became S here also. Are both these sequences the same? Yes. Meaning that this is a common sub sequence and what is its length? Its length is three. So in these two strings, when you are asked to provide the length of the longest common subsequence, what will you have to return?"
+    },
+    {
+      "start_time": 191.599,
+      "end_time": 217.99,
+      "text": "थ्री लौटा आना पड़ेगा। होने को तो कॉमन सब सीसीक्वेंस बहुत सारा है। होने को तो आप ये भी कर सकते हैं कि इससे a बना लिए। इससे भी a बना लिए। लेकिन इसका लेंथ कितना आया? वन। आप ये भी कह सकते हैं कि इससे ए सी बना लिए। इससे ए सी बना लिए। इसका लेंथ कितना आया? टू। लेकिन आपको क्या लौटाना है? लॉन्गेस्ट पॉसिबल का सम क्या? लॉन्गेस्ट पॉसिबल का सम आपको थ्री लौटाना है। आपको कितना लौटाना है? थ्री। तो यही क्वेश्चन है कि आपको लेंथ ऑफ लॉन्गेस्ट सबसीक्वेंस रिटर्न करना है। ठीक बात है?",
+      "source": "caption",
+      "english_text": "Three will have to come back. There are a lot of common sub sequences to be had. You can also do this by making a out of it. Make a from this also. But what was its length? Forest. You can also say that AC can be made from it. Made AC from it. What was its length? To. But what do you have to give back? What is the sum of longest possible? The longest possible sum returns you three. How much do you have to pay back? Three. So the question is that you have to return the length of longest sequence. Is that correct?"
+    },
+    {
+      "start_time": 218.0,
+      "end_time": 251.75,
+      "text": "समझ में आ गया? चलिए आगे चलते हैं। अब देखो इसको सॉल्व करना कैसे है? क्वेश्चन तो समझ में आ गया लेकिन इसको सॉल्व करने का सोचना कैसे है? उसकी सोच कहां से आई? देखिए। मान लीजिए ये दोनों स्ट्रिंग है एस बी और ए बी बी। आपको देख के पता चल रहा होगा कि क्या है इसमें एलसीएस। इसमें एलसीएस नहीं ये बनेगा। अगर आप ए अरे क्या हो जा रहा है? हां सॉरी। तो अगर आप ऐसा कर लीजिए। मान लीजिए ये वाला हम स्ट्रिंग ले लें। और अगर हम ये चीज कर दें कि ab बना दें दोनों में। दोनों में ab आ सकता है। कैसे आ सकता है? इसमें से ये और ये ले लेंगे और इसमें से क्या ले लेंगे? ये और ये ले लेंगे। तो दोनों में ab बन जाएगा। तो टू इसका आंसर",
+      "source": "caption",
+      "english_text": "Did you understand? Let's move ahead. Now see how to solve it? I understood the question but how do I think about solving it? Where did his thinking come from? See. Suppose these two strings are S B and A B B. By looking at it you will be able to know what is LCS in it. It will not be made into LCS. If you're a hey what's up? Yes sorry. So if you do this. Suppose we take this string. And if we do this thing that we make ab in both. Ab can come in both. How can it come? Will they take this and this from this and what will they take from this? Will take this and this. So ab will be formed in both. so to is the answer"
+    },
+    {
+      "start_time": 251.76,
+      "end_time": 284.469,
+      "text": "होगा। लेकिन वो टू कैसे आएगा? क्या करना पड़ेगा? देखिए इसमें आप ऐसे सोच सकते हैं ना कि ये दोनों स्ट्रिंग है। मान लीजिए ये दोनों स्ट्रिंग अलग-अलग रखा हुआ है। दो आदमी दो अलग-अलग आदमी जाके दोनों स्ट्रिंग के शुरुआत में खड़ा हो गया। फॉर एग्जांपल एक आदमी यहां पे खड़ा हो गया। इस आदमी का नाम है आई। एक आदमी यहां पे खड़ा हो गया। इस आदमी का नाम है जे। समझ में आया? इतना बात तो समझ में आता है? ठीक है? अब आई और जे क्या करेगा? आई और जे ना अपना-अपना लेटर का नाम चिल्लाएगा जोर से। यहां पे आई चिल्लाएगा कि सुनो मेरे पास ए है। जे भी चिल्लाएगा कि सुनो मेरे पास भी ए है। अगर",
+      "source": "caption",
+      "english_text": "Will happen. But how will that come? what needs to be done? See, in this you can think that both of them are strings. Suppose these two strings are kept separately. Two different men went and stood at the beginning of each string. For example, a man stood here. This man's name is I. A man stood here. This man's name is J. Did you understand? Do you understand this much? Ok? What will I and J do now? I and J will shout their respective letter names loudly. Here I will shout, listen, I have a. J will also shout that listen, I also have A. if"
+    },
+    {
+      "start_time": 284.479,
+      "end_time": 318.31,
+      "text": "आप एक बात बताइए ए और ए कॉमन है तो इसको अपने आंसर में तो इंक्लूड कर लेना चाहिए ना। आपको क्या बनाना है? आपको कॉमन सब सीक्वेंस बनाना है ना। तो अगर आई भी चिल्ला रहा है कि हम जहां पे खड़े हैं वहां से हमको ए दिख रहा है। जे भी चिल्ला रहा है कि हम जहां से खड़े हैं वहां हमको ए दिख रहा है। तो क्या हमको ए को इंक्लूड नहीं कर देना चाहिए? बिल्कुल कर देना चाहिए। मतलब जो भी सबसीक्वेंस बनेगा उसमें a तो होगा ही। इसका मतलब ये है कि इस वाले में भी हम a रख लेंगे और इस वाले में भी a रख लेंगे। इससे होगा क्या कि फायदा क्या होगा ना। मान लीजिए आप यहां भी a रख लिए और यहां भी a रख लिए। अब आगे कुछ भी आए ए",
+      "source": "caption",
+      "english_text": "You tell me one thing, A and A are common, so you should include it in your answer. What do you want to make? You have to create a common sub sequence, right? So even if I is shouting that we can see A from where we are standing. J is also yelling that we can see A from where we are standing. So shouldn't we include A? It should definitely be done. Meaning, whatever subsequence is formed, there will be a in it. This means that in this one also we will keep a and in this one also we will keep a. What will be the benefit of this? Suppose you keep a here and a here also. Now whatever comes next"
+    },
+    {
+      "start_time": 318.32,
+      "end_time": 350.07,
+      "text": "तो मिल गया ना। आपको सेम कॉमन सबक्वेंस चाहिए ना। तो हम सेम लेटर वाले को रख लेंगे। तो मिल जाएगा सेम आगे। आगे जो होगा वो देखेंगे। अभी के लिए तो रख लेते हैं। तो अभी आई और जे क्या करेगा कि सुनो ए को रखना है मतलब आंसर में वन जोड़ देते हैं। आंसर में वन जोड़ देते हैं। मतलब a को रख लिए। हम लोग को लेंथ लौटाना है ना? तो एक जोड़ लिए और अब आई का भी काम हो चुका है यहां पे और जे का भी काम हो चुका है। तो अब आई और जे दोनों आगे बढ़ जाएंगे। क्या होगा? दोनों आगे बढ़ जाएंगे। तो अब आपका आई जो है ना कहां आ जाएगा? अब जो आपका आई",
+      "source": "caption",
+      "english_text": "So got it, right? You want the same common sequence, right? So we will keep the one with the same letter. So you will get the beans further. We will see what happens next. Let's keep it for now. So now what I and J will do is that listen, A has to be kept, meaning let's add one to the answer. Let's add forest to the answer. Meaning keep a. We have to return the length, right? So we have added one and now the work of I has also been done, here the work of Pe and J has also been done. So now both I and J will move forward. What will happen? Both will move forward. So now where will your Aai come? Now whatever comes to you"
+    },
+    {
+      "start_time": 350.08,
+      "end_time": 376.79,
+      "text": "है वो आ जाएगा यहां पे और आपका जे भी आगे बढ़ जाएगा। वो होगा यहां पे। तो जब लेटर सेम है तब तो बहुत सिंपल है कि ठीक है उस लेटर को इंक्लूड करके आंसर में एक जोड़ के आई भी एक आगे बढ़ जाए और जे भी आगे बढ़ जाए तो बहुत सिंपल बात है। लेकिन डिफरेंस कहां आएगा यार दिक्कत कहां आएगी ना? जब साला अलग-अलग लेटर होगा। अब देखो अब आई चिल्ला रहा है कि मेरे पास सी है और जे चिल्ला रहा है कि मेरे पास बी है। अब ऐसा तो आप कर नहीं सकते हैं कि सी और बी को रख लें।",
+      "source": "caption",
+      "english_text": "Yes, he will come here and your J will also move ahead. He will be here. So when the letter is the same then it is very simple that it is okay to include that letter and add one to the answer, if I also goes ahead and if J also goes ahead then it is very simple. But where will the difference come from, where will the problem come from? When there will be different letters. Now look now I is shouting that I have C and J is shouting that I have B. Now you cannot do this by keeping C and B."
+    },
+    {
+      "start_time": 376.8,
+      "end_time": 411.51,
+      "text": "सी और बी सेम तो नहीं है तो कैसे रखेंगे? नहीं रख सकते हैं। तो सी और बी का तो कोई मेल ही नहीं है। नहीं है। अच्छा। अब एक को आगे बढ़ना पड़ेगा। कम से कम एक को तो आगे बढ़ना पड़ेगा ना। फॉर एग्जांपल अगर आई आगे बढ़ जाएगा तब यहां पे बी बी मिल जाएगा। अगर जे आगे बढ़ जाएगा तो हो सकता है कुछ और हो। लेकिन कौन आगे बढ़ेगा? इसमें तो लड़ाई हो जाएगा ना इसमें। अगर आई चिल्ला रहा है कि मेरे पास सी है और जे चिल्ला रहा है मेरे पास बी है। तो एक बात तो साफ है कि यहां तो बात नहीं बनेगा। अब आई बोल रहा है जे को कि तुम आगे बढ़ जाओ। आगे हो सकता है तुमको सी मिल जाए। हो सकता है यहां पे सी होता। तो आई क्या बोल रहा है",
+      "source": "caption",
+      "english_text": "If C and B beans are not there then how will you keep them? can not keep up. So there is no match between C and B. Not there. Good. Now one has to move forward. At least one will have to move forward. For example, if I moves forward then BB will be found here. If Jay moves on, something else may happen. But who will move forward? There will be a fight in this, won't there? If I is yelling I have C and J is yelling I have B. So one thing is clear that it will not work here. Now Aai is telling J to move ahead. Maybe you might get a C in the future. It is possible that it would have happened here. so what are you saying"
+    },
+    {
+      "start_time": 411.52,
+      "end_time": 444.71,
+      "text": "जे को कि भाई तुम आगे बढ़ जाओ। जे भी आई को बोल रहा है कि हम क्यों आगे बढ़े? तुम आगे बढ़ जाओ। तुम्हारे आगे हो सकता है बी आएगा तो हो जाएगा। तो अब क्या होगा? दोनों ना लड़ जाएगा कि दोनों डिसाइड नहीं कर पाएगा कि किसको आगे बढ़ाना है। आई को आगे बढ़ाना है कि जे को आगे बढ़ाना है? किसको आगे बढ़ाना है। तो अब क्या होगा ना? अब क्योंकि यहां पे डिसीजन नहीं हो सकता है क्योंकि आप एक डिसाइड नहीं कर सकते हैं कि चलो हमेशा हम आई को बढ़ा देंगे या हमेशा हम जे को बढ़ा देंगे। वो आप नहीं कर सकते। वो आप करेंगे आंसर गलत हो जाएगा। क्योंकि आगे क्या होने वाला है ये आपको पता नहीं है। ये पता नहीं ना है। इसीलिए ये डिसाइड करना बड़ा मुश्किल है कि आप आई को आगे",
+      "source": "caption",
+      "english_text": "To Jay, brother, you go ahead. J is also asking I why should we move ahead? You go ahead. It is possible that if B comes ahead of you, it will happen. So what will happen now? Both will fight or both will not be able to decide whom to take forward. Should I be promoted or J should be promoted? Whom to take forward? So what will happen now? Now because here there cannot be a decision because you cannot make a decision that let's always increase I or always we will increase J. You can't do that. If you do that, the answer will be wrong. Because you don't know what's going to happen next. Don't know this. That is why it is very difficult to decide whether you should move ahead."
+    },
+    {
+      "start_time": 444.72,
+      "end_time": 479.67,
+      "text": "बढ़ाएं कि जे को आगे बढ़ाएं। दोनों को नहीं बढ़ा सकते हैं। दोनों को नहीं बढ़ा सकते हैं। दोनों को क्यों नहीं बढ़ा सकते? हम आपको बताते हैं। अब कुछ लोगों के मन में आएगा कि दोनों को बढ़ा दो लड़ाई सॉल्व करने के लिए। नहीं। दोनों को क्यों नहीं बढ़ा सकते? देखो। अ मान लो यहां पे a है। और यहां पे बी ए है। ठीक है? अलग-अलग लेंथ का स्ट्रिंग है। है ना? ए बी ए। इसका आंसर क्या होना चाहिए? इसका आंसर होना चाहिए दोनों में से एक को निकाल के इसका आंसर वन दे दो। अब जो आर्गुमेंट है ना कि जब लड़ाई होगा तो हम दोनों को बढ़ा देंगे। देखिए दोनों को बढ़ाने से क्या होगा? आपका आई यहां पे खड़ा रहेगा। आपका जे यहां पे खड़ा रहेगा। तो यहां पे लड़ाई हो जाएगी क्योंकि आई चिल्लाएगा कि हमको ए दिख रहा है। जे",
+      "source": "caption",
+      "english_text": "Increase that to advance J. Cannot increase both. Cannot increase both. Why can't both be increased? We tell you. Now some people will think that both should be escalated to resolve the fight. No. Why can't both be increased? See. Let us assume that a is here. And here Pe B.A. Ok? There are strings of different lengths. Isn't it? A B A. What should be the answer to this? There should be an answer to this, take out one of the two and give it as answer one. Now the argument is that when there is a fight, we will escalate both of them. See what will happen if you increase both? Your Aai will be standing here. Your J will be standing here. So there will be a fight here because A will shout that we are seeing A. J"
+    },
+    {
+      "start_time": 479.68,
+      "end_time": 507.51,
+      "text": "चिल्लाएगा कि हमको भैया बी दिख रहा है। ठीक है? तो दोनों लड़ गया। अब आपका क्या है? सोचना आपके दिमाग में क्या आना चाहिए कि ठीक है दोनों लड़ गया है। अब आई चाहता है कि जे आगे बढ़ जाए। जे चाहता है कि आई आगे बढ़ जाए। तो हम लड़ाई सुलटाने के लिए दोनों को आगे बढ़वा देंगे। तो दोनों को आगे बढ़वा के देख लो। जब दोनों को आगे बढ़वाओगे ना तो आपका आई यहां पहुंच जाएगा। मतलब ये स्ट्रिंग हो जाएगा खत्म और आपका जे हो जाएगा यहां पे। अब एक बात बताओ आई तो बोलेगा आई को क्या दिख रहा है? आई को अब कुछ नहीं दिख रहा है। आई बोलेगा मेरा स्ट्रिंग हो गया खत्म। हम जा रहे हैं घर।",
+      "source": "caption",
+      "english_text": "Will shout that we can see Bhaiya B. Ok? So both of them fought. What about you now? What should come to your mind that it is okay that both of them have fought. Now Ai wants Jay to move on. J wants Ai to move on. So we will take both forward to resolve the fight. So take both of them forward and see. When you get both of them moving forward, your Aai will reach here. Meaning this string will end and your J will be here. Now tell me one thing, Aai will ask, what is he seeing? I can't see anything now. I will say, my string is finished. We are going home."
+    },
+    {
+      "start_time": 507.52,
+      "end_time": 541.75,
+      "text": "जे बोलेगा कि हमको ए दिख रहा है। तो देखिए क्या हुआ? दोनों को बढ़ाने से क्या हुआ? आपको आंसर मिलना चाहिए था। आपको एक ए मिलना चाहिए था ना? ए है ना लॉन्गेस्ट कॉमन सब सीसीक्वेंस लेकिन आपको आंसर नहीं मिला। क्यों? क्योंकि आप दोनों को बढ़ा दिए। दोनों को बढ़ा दिए। अब जे अगर आगे बढ़ता इस केस में अगर आई अपने जगह पे कायम रहता आई बोलता कि नहीं हम नहीं बढ़ेंगे तुम आगे बढ़ो और जे आगे बढ़ता तो अब बोलता कि आई बोलता कि हां हमको अभी भी ए दिख रहा है जे बोलता कि हमको भी ए दिख रहा है तो दोनों ए बना के एक जोड़ देता आंसर में और उसके बाद दोनों आगे बढ़ जाता उसके बाद दोनों आगे बढ़ जाता तो इसीलिए दोनों को नहीं बढ़ाया जा सकता है दोनों को बढ़ाएंगे",
+      "source": "caption",
+      "english_text": "J will say that we are seeing A. So see what happened? What happened by increasing both? You should have got the answer. You should have got an A, right? A is the longest common sub sequence but you did not find the answer. Why? Because you increased both of them. Both were increased. Now, if J had moved ahead, in this case, if I had remained at my place, I would have said, no, we will not move, you move ahead, and J would have moved ahead, now I would have said, yes, we are still seeing A. If J had said, we are also seeing A, then both would have made A and added one in the answer and after that, both would have moved ahead. After that, both would have moved ahead, so that is why both cannot be increased, both will be increased."
+    },
+    {
+      "start_time": 541.76,
+      "end_time": 572.389,
+      "text": "हो सकता है कुछ छूट जाए तो अब बात आ गई है कि दोनों में लड़ाई हो गया है कि कौन आगे बढ़ेगा इस लड़ाई के लिए आपको क्या करना पड़ेगा इस लड़ाई के लिए आपको रिकर्शन करना पड़ेगा। इस लड़ाई के लिए आपको मल्टीपल यूनिवर्स बनाना पड़ेगा। कौन सा मल्टीपल यूनिवर्स बनाना पड़ेगा? एक यून अरे क्या हो जा रहा है आज? हां। एक यूनिवर्स वो है जहां पे आई आगे बढ़ेगा। जहां पे आई आगे बढ़ेगा और जे सेम रहेगा। जे आगे नहीं बढ़ेगा। और एक और यूनिवर्स भी है जहां पे",
+      "source": "caption",
+      "english_text": "It is possible that something may be left out, so now it has come to a point that there is a fight between the two as to who will move forward, what will you have to do for this fight, you will have to do recursion for this fight. For this fight you will have to create multiple universes. Which multiple universe will have to be created? Hey there, what's going on today? Yes. A universe is one where I will move forward. Where I will move forward and J will remain the same. J will not move forward. And there is another universe where"
+    },
+    {
+      "start_time": 572.399,
+      "end_time": 606.389,
+      "text": "आई अपने जगह पे कायम रहेगा और जे को आगे बढ़ना पड़ेगा। ये कब होगा? जब दोनों अलग-अलग लेटर रिपोर्ट करता है और उसको पता चल जाता है कि अभी तो काम नहीं बन पा रहा है। तो लड़ाई क्या होती है कि कौन सा आदमी आगे जाएगा। अब कौन सा आदमी आगे जाएगा इसका डिसीजन लेने का कोई तरीका नहीं है। तो आपको दोनों करके देखना पड़ेगा। आपको एक यूनिवर्स में i को आगे बढ़ाना पड़ेगा और आपको एक यूनिवर्स में जे को आगे बढ़ाना पड़ेगा। तो बात समझ में आ रही है हम आपको क्या बोलना चाह रहे हैं? ये बात वही है कि",
+      "source": "caption",
+      "english_text": "I will remain in place and J will have to move forward. When will this happen? When both of them report in separate letters and he realizes that the work is not being done right now. So what happens is the fight about which man will go next. Now there is no way to decide which person will go next. So you will have to try both. You have to move i in one universe and you have to move j in one universe. So do you understand what we are trying to tell you? This is the same thing"
+    },
+    {
+      "start_time": 606.399,
+      "end_time": 635.99,
+      "text": "आपको एक रिकर्शन फंक्शन लिखना पड़ेगा। किस तरीके का रिकर्शन फंक्शन लिखना पड़ेगा इसमें? सबसे पहले तो आपको दो तरीके के स्ट्रिंग मिलेंगे। स्ट्रिंग s1 और स्ट्रिंग s2। इतना हम लंबा भाषण इसीलिए दिए हैं क्योंकि ये बात समझ में आनी चाहिए कि क्यों ऐसा हो रहा है। याद करने की जरूरत नहीं है कि ऐसा होगा जैसा कर देंगे। वैसा होगा वैसा कर देंगे। नहीं। कोई तीसरा केस आ जाएगा फंस जाओगे। ये बात समझनी बहुत जरूरी है कि दोनों को क्यों नहीं बढ़ा रहे हैं। दोनों को क्यों नहीं बढ़ा रहे। समझ रहे हैं ना कि दोनों को क्यों नहीं बढ़ा रहे हैं। क्योंकि कुछ ना कुछ आंसर छूट जाएगा। किसी एक को भी नहीं बढ़ा सकते हैं।",
+      "source": "caption",
+      "english_text": "You will have to write a recursion function. What type of recursion function will have to be written in this? First of all, you will get two types of strings. String s1 and string s2. We have given such a long speech because it is necessary to understand why this is happening. There is no need to remember that it will happen as you will. It will happen, we will do it. No. If a third case comes you will get trapped. It is very important to understand why both are not being promoted. Why not increasing both? Do you understand why both are not being promoted? Because some answer will be missed. Cannot increase even one."
+    },
+    {
+      "start_time": 636.0,
+      "end_time": 668.63,
+      "text": "आपको दोनों को चांस देना पड़ेगा। एक बार आई को चांस देना पड़ेगा कि भैया तुम सेम रहो जे बढ़ जाएगा। एक बार जे को चांस देना पड़ेगा कि एक काम करो तुम सेम रहो आई बढ़ जाएगा। तब जाके आपको आंसर मिलेगा और उन दोनों में से जिसमें भी मैक्सिमम आंसर मिलता है वो आपका आंसर हो जाएगा। तो स्ट्रिंग s1 s2 हो गया। मान लीजिए कि s1 का लेंथ n है और s2 का लेंथ जो है वो एम है। और आपको दो चीज चाहिए आई और क्या चाहिए? j चाहिए। आई और j क्या है? आई और j वो दो आदमी है। आई कहां खड़ा रहता है? S1 पे, S1 के किसी लेटर पे। J कहां खड़ा रहता",
+      "source": "caption",
+      "english_text": "You have to give both of them a chance. Once I will have to give a chance that brother, if you remain the same, it will increase. Once you have to give a chance to J, do one thing, stay the same and I will improve. Then you will get the answer and whichever of the two gives the maximum answer will be your answer. So string s1 becomes s2. Suppose the length of s1 is n and the length of s2 is m. And you want two things, what else do you want? j is needed. What is i and j? I and J are two men. Where does Aai stand? On S1, on any letter of S1. Where does J stand?"
+    },
+    {
+      "start_time": 668.64,
+      "end_time": 702.87,
+      "text": "है? S2 के किसी लेटर पे। तो सबसे पहले तो बेस केस अगर i इक्वल इक्वल टू N हो गया या तो J इक्वल इक्वल टू M हो गया। मतलब या तो i का स्ट्रिंग खत्म हो गया। i इसमें था ना जी एग्जांपल में कहां गया एग्जांपल? इसमें i खत्म हो गया था तो खत्म हो गया। अगर एक स्ट्रिंग खत्म हो गया है तो फिर क्या बचता है? कुछ नहीं। कुछ नहीं आएगा। अब खत्म हो गया खेल एक स्ट्रिंग का। तो अगर आई खत्म हो गया मतलब S1 खत्म हो गया या तो J खत्म हो गया। मतलब s2 खत्म हो गया तो कुछ आपको दिमाग नहीं लगाते हुए क्या रिटर्न करना है? ज़ीरो रिटर्न करना है। ये मेरा वो हो गया। जी कहने का मतलब कि अगर दोनों स्ट्रिंग खत्म",
+      "source": "caption",
+      "english_text": "Is it? On some letter of S2. So first of all the base case if i becomes equal to N or J becomes equal to M. Meaning either the string of i is over. i It was in this, where did the example go in the example? If i is finished in this then it is finished. If a string is finished then what is left? Nothing. Nothing will come. Now the game of one string is over. So if I is over then S1 is over or J is over. Meaning if s2 is over then what do you have to return if you don't mind? Have to make zero returns. This has become my that. That means if both strings end"
+    },
+    {
+      "start_time": 702.88,
+      "end_time": 733.43,
+      "text": "हो गया मतलब दोनों में से एक भी खत्म हो गया तो रिटर्न ज़ीरो। सही बात। अब अब अगर अगर S1 का i इक्वल इक्वल टू S2 ऑफ़ J मतलब कि i और J क्या चिल्ला रहा है कि मेरे पास भी ये है और मेरे पास भी ये है। तो जब ऐसा चिल्ला रहा है तब तो कोई बात ही नहीं है। तब तो बहुत खुश हो जाएंगे दोनों। सिंपली क्या रिटर्न कर देना है भाई? रिटर्न वन प्लस फन ऑफ और दोनों को बढ़ा देना है। मतलब दोनों अगर a पे है तो a का काम हो गया। a आ गया आंसर में। अब अगला अगला देखेगा दोनों। अब तो कोई लड़ाई नहीं है ना कि तुम बढ़ो और तुम बढ़ो। कोई लड़ाई नहीं है सब सही",
+      "source": "caption",
+      "english_text": "It means if one of the two ends then the return is zero. correct. Now now if if S1 of i is equal to S2 of J means that i and J is screaming that I also have this and I also have this. So when he is shouting like this then there is nothing wrong. Then both will be very happy. Simply what do you want to return brother? Return one plus fun off and increase both. Meaning if both are on a then the work of a is done. a came in the answer. Now the next one will see both. Now there is no fight, you grow and you grow. no fight everything is right"
+    },
+    {
+      "start_time": 733.44,
+      "end_time": 763.509,
+      "text": "चल रहा है। तो क्या होगा? S1 S2 N Mi + 1 एंड j + 1) खत्म हो गई बात। नहीं तो, नहीं तो, अब जाके लड़ाई होगी। अब जाके क्या होगा? लड़ाई होगी। किस बात की लड़ाई? कि बोलेगा कि भाई तुम बढ़ो। ये बोलेगा तुम बढ़ो। तो आपको दोनों को चांस देना पड़ेगा। क्या चांस देना पड़ेगा? सबसे पहले आई को चांस दीजिए। आई को चांस देने का मतलब क्या है? कि भाई एक काम करो आई तुम अपने जगह पे ही रहो। मतलब तुम सेम रहो और जे बढ़ जाएगा।",
+      "source": "caption",
+      "english_text": "It is going on. So what will happen? S1 S2 N Mi + 1 and j + 1) The matter is over. Otherwise, otherwise, there will be a fight now. What will happen now? There will be a fight. Fighting about what? He will say that brother, you move forward. He will say, you go ahead. So you have to give a chance to both. Will we have to take a chance? First of all give Aai a chance. What does it mean to give eyes a chance? That brother, do one thing, you stay at your place. Meaning you remain the same and J will increase."
+    },
+    {
+      "start_time": 763.519,
+      "end_time": 798.31,
+      "text": "जे बढ़ जाएगा। तुम्हारी बात मान लेते हैं। अगले चांस में आपको क्या देना पड़ेगा? अगले चांस में आपको आपको जे को चांस देना पड़ेगा कि भाई जे एक काम करो। तुम अपनी जगह पे रहो और तुम्हारे लिए आई को मेहनत करवा देंगे। आई को आगे बढ़ जाएगा। इन दोनों में से इन दोनों में से जिसका भी मैक्स आंसर आता है वो आपका आंसर हो जाएगा। ये रिकर्शन बंद कीजिए और आप इसका रिकर्शन सीख चुके हैं। इस रिक्शन में ज्यादा कुछ करने के लिए है नहीं। अब बात आती है कि ये तो हो गया रिकर्शन। डीपी का क्वेश्चन है तो रिकर्शन को क्या किया जाता है? मेमोराइज किया जाता है। मेमोराइज कैसे किया जाता",
+      "source": "caption",
+      "english_text": "J will increase. तुम्हारी बात मान लेते हैं। अगले चांस में आपको क्या देना पड़ेगा? अगले चांस में आपको आपको जे को चांस देना पड़ेगा कि भाई जे एक काम करो। तुम अपनी जगह पे रहो और तुम्हारे लिए आई को मेहनत करवा देंगे। आई को आगे बढ़ जाएगा। इन दोनों में से इन दोनों में से जिसका भी मैक्स आंसर आता है वो आपका आंसर हो जाएगा। ये रिकर्शन बंद कीजिए और आप इसका रिकर्शन सीख चुके हैं। इस रिक्शन में ज्यादा कुछ करने के लिए है नहीं। अब बात आती है कि ये तो हो गया रिकर्शन। डीपी का क्वेश्चन है तो रिकर्शन को क्या किया जाता है? मेमोराइज किया जाता है। मेमोराइज कैसे किया जाता"
+    },
+    {
+      "start_time": 798.32,
+      "end_time": 832.79,
+      "text": "है? रिकर्शन में क्या बदल रहा है? कौन सा वेरिएबल बदल रहा है? तो भैया i और j बदल रहा है। ठीक है? i की वैल्यू कहां से कहां तक जा सकती है? I की वैल्यू ज़ीरो से लेके N तक जा सकती है। J की वैल्यू कहां से कहां तक जा सकती है? J की भी वैल्यू ज़ीरो से लेके M तक जा सकती है। जो कि S2 का लेंथ है। तो आपको डीपी एरे में क्या बनाना पड़ेगा? आपको डीपी एरे ऐसा बनाना पड़ेगा। वेक्टर ऑफ़ वेक्टर ऑफ़ इंट ऐसा ऐसा करके dp n + 1 और इसमें आपको मतलब एक 2D एरे बनाना पड़ेगा। आपको एक 2D एरे ऐसा करके बनाना",
+      "source": "caption",
+      "english_text": "Is? What is changing in recursion? Which variable is changing? So brother i and j are changing. Ok? From where to where can the value of i go? The value of I can go from zero to N. From where to where can the value of J go? The value of J can also go from zero to M. Which is the length of S2. So what do you need to build in the DP array? You will have to make a DP array like this. Vector of vector of int By doing this dp n + 1 and in this you will have to create a 2D array. You can create a 2D array by doing this"
+    },
+    {
+      "start_time": 832.8,
+      "end_time": 863.91,
+      "text": "पड़ेगा। कितने का? आपको n + 1 क्रॉस m + 1 साइज का। उसके बाद क्या है? उसके बाद तो बहुत सिंपल है। उसके बाद अगर कोई भी रिकर्शन फंक्शन होता है उसमें आंसर निकालने से पहले देख लीजिए। क्या देख लीजिए कि अगर dp ऑफ़ i और j नॉट इक्वल टू -1 देन सिंपली रिटर्न dp ऑफ़ i और j ये तो 1000 बार बता चुके हैं। यही करना होता है। और अगर ये -1 है तो आपको रिकर्शन निकालना पड़ेगा। लेकिन रिटर्न करने से पहले यहां",
+      "source": "caption",
+      "english_text": "Will have to. How much? You get n + 1 crosses of size m + 1. What's after that? After that it is very simple. After that, if there is any recursion function, check it before finding the answer. What to see if dp of i and j is not equal to -1 then simply return dp of i and j. This has been told 1000 times. This is what has to be done. And if it is -1 then you will have to remove recursion. But before returning here"
+    },
+    {
+      "start_time": 863.92,
+      "end_time": 888.949,
+      "text": "पे ये कर दीजिए dp ऑफ़ ij इक्वल टू ये और एक जगह रिटर्न है तो यहां पे भी लिख दीजिए क्या लिख दीजिए dp ऑफ़ ij = मैक्स ऑफ़ फलाना फलाना चीज। ठीक है? ये मेरे पेन में कुछ ना कुछ तो हो जा रहा है। समझ में नहीं आ रहा है। एकदम तंग कर दिया है। हां। तो यहां भी लिख दीजिए। ये क्या बन गया आपका? मेमोराइजेशन का कोड बन गया है। टैबुलेशन पे आ जाओ भाई।",
+      "source": "caption",
+      "english_text": "Make it dp of ij equal to this and there is a return at one place, so here also write what, write dp of ij = max of such and such thing. Ok? Something or the other is happening in my pen. Can't understand. It has completely troubled me. Yes. So write here also. What has become of you? The code for memorization has been created. Come on tabulation brother."
+    },
+    {
+      "start_time": 888.959,
+      "end_time": 920.389,
+      "text": "टैबुलेशन में हम क्या बताए हैं? रिकर्शन वाला कोड देखो। देखो क्या हो रहा है। तो टैबुलेशन में सबसे पहले तो अब मान लो टैबुलेशन लिखने का मन कर गया किसी का तो आइए लिखें। टैबुलेशन में मान लीजिए ये आपका फंक्शन है। ये आपका लीड कोड का फंक्शन है। यहां पे आपको क्या मिलेगा? यहां पे आपको दो स्ट्रिंग मिलेंगे। s1 और स्ट्रिंग s2। वेरी गुड। सबसे पहला काम क्या करना है? लेंथ निकाल लीजिए दोनों की। n = s1 डॉट साइज। ओके? इंट m = s2 डॉट",
+      "source": "caption",
+      "english_text": "What have we mentioned in the tabulation? Look at the recursion code. Look what's happening. So first of all in tabulation, now suppose someone feels like writing tabulation, then let's write. Suppose this is your function in tabulation. This is the function of your lead code. What will you get here? Here you will find two strings. s1 and string s2. very good. What's the first thing to do? Find out the length of both. n = s1 dot size. Ok? int m = s2 dot"
+    },
+    {
+      "start_time": 920.399,
+      "end_time": 954.389,
+      "text": "साइज वेरी गुड उसके बाद इंट ij उसके बाद क्या करना है वो डीपी अरे बना लो जैसा रिकर्शन में बनाए थे वैसा ही यहां भी बना लो रिकर्शन में कितना साइज का बनाए थे n + 1 m + 1 साइज का तो यहां भी बना लो भाई यहां भी बना लो चलो यहां भी बनाएं वेक्टर अब हम इसीलिए इतना फास्ट इसमें चल रहे हैं क्योंकि अब आप लोग ये बहुत बार कर चुके हैं ये ये जो एक्सरसाइज ये जो एक्टिविटी है कि पहले रिकर्शन लिखो फिर मेरा करो फिर टैब लिखो ये बहुत बार हो चुका है एक्टिविटी इसलिए हम बहुत फ़ास्ट-फास्ट चल रहे हैं। अगर आप लोग को कभी भी लगे कि बहुत ज्यादा फास्ट हो रहा है तो प्लीज कमेंट कर दीजिए। हम कमेंट पढ़ते हैं। ठीक है? रिप्लाई नहीं करते हैं। कमेंट पढ़ के हम आपको अगले में आपको पता चल जाएगा कि हम",
+      "source": "caption",
+      "english_text": "Size is very good, after that int ij, what to do after that is that DP, make it here as you made it in recursion, make it here too, what size was made in recursion, n + 1 m + 1, of size, make it here too, brother, make it here too, let's make vector here, now that is why we are moving so fast in this, because now you guys have done this exercise many times, this activity is that first write the recursion, then do mine, then write tab. There has been a lot of activity so we are moving very fast. If you guys ever feel that things are going too fast, please comment. We read the comments. Ok? Don't reply. By reading the comments you will come to know that we"
+    },
+    {
+      "start_time": 954.399,
+      "end_time": 980.389,
+      "text": "स्लो हो जाएंगे। बन गया। उसके बाद फॉर i = 0 i &lt; = n i + उसके बाद वेक्टर इंट क्या बनेगा? t कितना साइज का? m + 1 ओके। उसके बाद dpi = t बंद हो गया। dp बन के तैयार। अब क्या करना है? है डीपीआरए में वैल्यू भरना है तो सबसे पहले रिकर्शन का बेस केस पढ़ो और पहले वो वैल्यू भर दो।",
+      "source": "caption",
+      "english_text": "Will become slow. became. After that for i = 0 i < = n i + after that what will become vector int? What size is t? m + 1 ok. After that dpi=t stopped. DP is ready. What to do now? If you want to fill the value in DPRA, then first read the base case of recursion and fill that value first."
+    },
+    {
+      "start_time": 980.399,
+      "end_time": 1014.47,
+      "text": "रिकर्शन का बेस केस आपको क्या बोलता है भाई? अगर अगर i है अगर i है या फिर या फिर j अगर i n है और j m है तो उसका आंसर क्या होना चाहिए? ज़ीरो। कहने का क्या मतलब है? कहने का कोशिश कर रहा है। मान लीजिए आपका n थ्री है और m जो है वो टू है। तो आपका डीपीआरए कितने साइज का बनेगा? 3 + 1 4 और 2 + 1 3 ये आपका डीपी एरे बनेगा। तो आपका डीपी एरे कुछ ऐसा दिखेगा। 1 2 3 4 0 1 2 3 1 2 3 0 1 2 क्या बोलता है आपका बेस केस?",
+      "source": "caption",
+      "english_text": "What does the base case of recursion tell you brother? If if i is if i is or else or j if i is n and j is m then what should be the answer? Zero. What does it mean to say? Trying to say. Suppose your n is three and m is two. So what size will your DPRA be? 3 + 1 4 and 2 + 1 3 will become your DP array. So your DP array will look like this. 1 2 3 4 0 1 2 3 1 2 3 0 1 2 What does your base case say?"
+    },
+    {
+      "start_time": 1014.48,
+      "end_time": 1049.029,
+      "text": "अगर i n है मतलब कि अगर ये वाला है ये वाला रो है। ये वाला रो है तो नो मैटर क्या है j में? सबका आंसर क्या होना चाहिए? 0 0 या फिर अगर j है मतलब j = 2 हो गया। ये वाला कॉलम ये भी पूरा ज़ीरो होना चाहिए। 0 0 बेस केस का ये मतलब है ना भाई? कि अगर i = 3 है मतलब ये वाला रो ये वाला रो पूरा रो ज़ीरो होना चाहिए। अगर j = m है मतलब ये वाला कॉलम पूरा कॉलम ज़ीरो होना चाहिए। तो ये तो पहले ही भर लिए। इसको आइए भर लें। इसको कैसे भरेंगे? इसमें हम क्या",
+      "source": "caption",
+      "english_text": "If i is n means if this one is this one is row. This one is ro so no matter what is in j? What should be everyone's answer? 0 0 or if j means j = 2. This column should also be completely zero. 0 0 This is what base case means, right? That if i = 3 means this row and this row and the entire row should be zero. If j = m, it means that the entire column in this column should be zero. So these are already filled. Let's fill this up. How to fill it? what do we do in this"
+    },
+    {
+      "start_time": 1049.039,
+      "end_time": 1075.909,
+      "text": "करेंगे? फॉर i = 0 i &lt; = n i + और क्या करेंगे? dp ऑफ़ i m = 0 मतलब पूरा mथ कॉलम को ज़ीरो कर दिए। अब क्या करेंगे? फॉर j = 0 j &lt; &lt; = m j + dp nj मतलब पूरा nथ रो को हॉरिजॉन्टल को क्या कर दिए? ज़ीरो कर दिए।",
+      "source": "caption",
+      "english_text": "will do? For i = 0 i < = n i + what else to do? dp of i m = 0 means the entire mth column is zeroed out. What will you do now? For j = 0 j < < = m j + dp nj means what is the entire nth row made horizontal? Made it zero."
+    },
+    {
+      "start_time": 1075.919,
+      "end_time": 1107.75,
+      "text": "बेस केस का काम तमाम। अब आपको बस रिकर्शन में फार्मूला देखना है। सबसे पहले तो रिकर्शन बोलता है कि इसमें दो कंडीशन है। रिकर्शन में दो कंडीशन है ना। सबसे पहले तो बोलता है कि अगर s1i इक्वल इक्वल टू सॉरी s1i इक्वल इक्वल टू किसके? s2j तो ये एक सेपरेट कंडीशन है। इस केस में इस केस में जो dpij है वो क्या होता है? dp ij क्या होता है? i + 1 j + 1 मतलब dpi + 1 और j + 1 कंडीशन सफाचट हो",
+      "source": "caption",
+      "english_text": "All the base case work. Now you just have to see the formula in recursion. First of all, recursion says that there are two conditions in it. There are two conditions in recursion. First of all it says if s1i is equal to sorry s1i is equal to which? s2j so this is a separate condition. In this case, what is the dpij in this case? What is dp ij? i + 1 j + 1 means dpi + 1 and j + 1 condition is cleared"
+    },
+    {
+      "start_time": 1107.76,
+      "end_time": 1140.789,
+      "text": "गया। नहीं तो नहीं तो dpij क्या होता है? नहीं तो dpij क्या होता है? मैक्सिमम ऑफ़ मैक्सिमम ऑफ़ ओ सॉरी 1 प्लस है यहां पे। 1 प्लस है। वन मत भूलिएगा। यहां पे 1 प्लस है। ठीक है? 1 + dpi + 1 j + 1 ठीक है? नहीं तो ये किसका मैक्सिमम है? इन दोनों का मैक्सिमम है ij + 1 एंड i + 1 मतलब कि dp i j + 1 और dp i + 1 j फन का ही मतलब है ना फन ij + 1 का क्या मतलब हुआ dpij +",
+      "source": "caption",
+      "english_text": "Gone. If not then what is dpij? Otherwise what is dpij? Maximum of maximum of oh sorry 1 plus here. 1 is plus. Don't forget the forest. There is 1 plus here. Ok? 1 + dpi + 1 j + 1 ok? Otherwise whose maximum is this? The maximum of these two is ij + 1 and i + 1, which means that dp i j + 1 and dp i + 1 j are the same as fun, what is the meaning of fun ij + 1, dpij +"
+    },
+    {
+      "start_time": 1140.799,
+      "end_time": 1173.11,
+      "text": "1 और फन i + 1 का मतलब dpi + 1 बस इसका मैक्स ये आपका दो फार्मूला है। अब बात आती है कि dp को कहां से भरना शुरू करेंगे? तो कहां से भरना शुरू करेंगे? इसका हिंट आपको मिलेगा। dpij को क्या चाहिए? इसको dpi + 1 चाहिए। हो सकता है। चाहिए हो सकता है। dpi + 1 चाहिए हो सकता है। मतलब कि अगर आप dp 0 भरने की कोशिश कर रहे हैं। इसके लिए आपको dp ऑफ़ वन समथिंग लग सकता है। जरूरत पड़ सकती है। हो सकता है डीपीआई भी हो",
+      "source": "caption",
+      "english_text": "1 and fun i + 1 means dpi + 1 just its max these are your two formulas. Now the question comes that from where will we start filling the DP? So where do you start filling? You will get a hint of this. What does dpij need? It needs dpi + 1. It is possible May be needed. dpi + 1 may be needed. Meaning that if you are trying to fill dp 0. For this you may get DP of one something. may need. Maybe also DPI"
+    },
+    {
+      "start_time": 1173.12,
+      "end_time": 1201.83,
+      "text": "जाए। लेकिन जरूरत पड़ सकती है। किसकी? i + 1 वाले रो की। मतलब किसी भी रो को भरने की कोशिश करोगे तो नेक्स्ट वाले रो की जरूरत पड़ सकती है। तो एक बात तो हो गया कि अगर रो को आपको उल्टा भरना पड़ेगा। कैसे भरना पड़ेगा? उल्टा भरना पड़ेगा। n - 1 से 0 तक भरना पड़ेगा। ज़ीरो से n - 1 नहीं भर सकते हैं। क्यों? क्योंकि ज़ीरोथ रो को भरने के लिए फर्स्ट रो की वैल्यू चाहिए। तो नहीं भर सकते हैं। वैसे आपको कैसे भरना पड़ेगा?",
+      "source": "caption",
+      "english_text": "Go. But it may be necessary. Whose? Of rows i + 1. Meaning, if you try to fill any row, the next row may be required. So one thing has happened that if you have to fill the row in reverse. How will it have to be filled? Will have to be filled in reverse. n - has to be filled from 1 to 0. Cannot fill n – 1 with zeros. Why? Because to fill the zeroth row the value of the first row is required. So can't fill. By the way, how will you have to fill it?"
+    },
+    {
+      "start_time": 1201.84,
+      "end_time": 1234.63,
+      "text": "n - 1 रो से 0 रो तक। समझ में आता है? वेरी गुड। j का देखो। आपको J के लिए भी J + 1 की जरूरत पड़ सकती है। मतलब कि मान लीजिए आप अगर 0 और टू भरना चाह रहे हैं ना तो इसके लिए आपको हो सकता है कि वन और थ्री की जरूरत पड़े। क्यों? i भी +1 और j भी +1 मतलब कि आप जिस कॉलम को भरना चाहते हैं आपको अगले कॉलम की जरूरत पड़ सकती है। कितना? अगले कॉलम की जरूरत पड़ सकती है। ये भी, ये भी हो सकता",
+      "source": "caption",
+      "english_text": "n – from 1 row to 0 row. Do you understand? very good. Look at j. You may also need J + 1 for J. Meaning that suppose you want to fill 0 and two, then for this you may need one and three. Why? i is also +1 and j is also +1 meaning that the column you want to fill may require the next column. How much? The next column may be needed. This too, this too can happen"
+    },
+    {
+      "start_time": 1234.64,
+      "end_time": 1268.63,
+      "text": "है, ये भी हो सकता है कि आपको इसकी जरूरत पड़े। सेम रो में अगले कॉलम की जरूरत पड़े। मतलब कि अगर आप मान लीजिए dp ऑफ़ 0 2 भर रहे हैं। हो सकता है कि आपको इसके लिए 0 3 की जरूरत भी पड़ जाए। 0 3 की जरूरत पड़ जाए। मतलब कॉलम में आपको अगले वाले कॉलम की जरूरत पड़े। तो इसमें आपको कॉलम को भी उल्टा भरना पड़ेगा। कॉलम को भी उल्टा भरना पड़ेगा। आज से पहले वाले क्वेश्चन में जितना भी क्वेश्चन हुआ है, नैप्सक हुआ है, एलआईएस हुआ है, उसमें हम आपको बताते थे कि देखो रो तो उल्टा भरना पड़ेगा। कॉलम अपने हिसाब से भर लो। मन करे",
+      "source": "caption",
+      "english_text": "Yes, it is also possible that you may need it. The next column in the same row is required. Meaning that if you suppose you are filling dp of 0 2. You may also need 0 3 for this. 0 3 may be needed. Meaning you need the next column in the column. So in this you will have to fill the columns in reverse also. The column will also have to be filled in reverse. In all the questions that were asked before today, in knapsack, in LIS, we used to tell you that if you cry, you will have to fill it in the wrong way. Fill the columns as per your convenience. feel like"
+    },
+    {
+      "start_time": 1268.64,
+      "end_time": 1301.669,
+      "text": "तो सीधा भर लो। मन करे तो उल्टा भर लो। लेकिन इस क्वेश्चन में अगर आप कॉलम को सीधा भरेंगे मतलब 0 टू m का लूप चला देंगे j में गलत हो जाएगा। क्यों? क्योंकि जब j = 0 है, हो सकता है इसको j = 1 का जरूरत पड़े। आपको मालूम नहीं है। इसीलिए आपको कॉलम को भी उल्टा करके भरना पड़ेगा। तो दोनों लूप कैसा चलेगा? रिवर्स ऑर्डर में लूप चलेगा। आइए रिवर्स ऑर्डर में लूप चला के फार्मूला डाल देते हैं उसमें। सबसे पहले तो i का लूप कैसे चलेगा? n - 1 &gt; 0 i माइनस माइनस यस। उसके बाद j का लूप भी",
+      "source": "caption",
+      "english_text": "So fill it directly. If you feel like filling it upside down. But in this question, if you fill the column directly, that is, you will run a loop from 0 to m, it will be wrong in j. Why? Because when j = 0, it may need j = 1. You don't know. That is why you will have to fill the columns in reverse also. So how will both loops work? The loop will run in reverse order. Let's run the loop in reverse order and put the formula in it. First of all, how will the loop of i run? n - 1 > 0 i minus minus yes. After that the loop of j also"
+    },
+    {
+      "start_time": 1301.679,
+      "end_time": 1332.39,
+      "text": "उल्टा चलाना पड़ेगा। मतलब कि j = m - 1 j &gt; 0 j - यस। अब अपना कंडीशन अप्लाई कीजिए। इफ इफ S1i = S2J देन dp ऑफ़ ij = 1 + dp ऑफ़ अगले वाले का i + 1 j + 1 एल्स एल्स अगर ऐसा नहीं है। अगर ऐसा नहीं है तो क्या होगा dpij? अगर ऐसा नहीं है तो क्या होगा?",
+      "source": "caption",
+      "english_text": "Will have to drive in reverse. Meaning that j = m - 1 j > 0 j - yes. Now apply your condition. If S1i = S2J then dp of ij = 1 + dp of next i + 1 j + 1 else if it is not so. If it is not so then what will happen dpij? What if it is not so?"
+    },
+    {
+      "start_time": 1332.4,
+      "end_time": 1360.39,
+      "text": "dp ऑफ़ आई j = मैक्स ऑफ़ सबसे पहले i को बढ़ाओ। J को मौका दो। नहीं तो i को मत बढ़ाओ। आई को मौका दे दो और J को बढ़ने पे मजबूर कर दो। ये खत्म हो गया। J का लूप बंद, आई का लूप बंद। रिटर्न क्या करें भाई? रिटर्न क्या करें? तो अपना रिकर्शन देखिए। आपका रिकर्शन स्टार्ट कहां से होता था? आपका रिकर्शन जिस i और J के वैल्यू से स्टार्ट होगा वही आपको रिटर्न करना पड़ेगा।",
+      "source": "caption",
+      "english_text": "dp of i j = max of i First increase i. Give J a chance. Otherwise don't increase i. Give opportunity to I and force J to grow. It's over. J's loop closed, I's loop closed. What to do in return brother? What to do about return? So look at your recursion. Where did your recursion start from? You will have to return the value of i and J from which your recursion will start."
+    },
+    {
+      "start_time": 1360.4,
+      "end_time": 1395.029,
+      "text": "तो एक बात बताइए कि जब हम आपको बोले थे कि आई कहां खड़ा रहेगा? आई जो आदमी है वो s1 के शुरुआत में खड़ा रहेगा और जे कहां खड़ा रहेगा? S2 के शुरुआत में खड़ा रहेगा। तो जब आप रिकर्शन स्टार्ट करेंगे तो i की वैल्यू भी ज़ीरो रहेगी और j की वैल्यू भी ज़ीरो रहेगी। मतलब कि आपको dp मैट्रिक्स या डीपी एरे में से क्या रिटर्न कर देना चाहिए? आपको रिटर्न यस डीपी ऑफ़ 0 ये लीजिए ये टैबुलेशन समाप्त होता है अध्याय ठीक है तो कुछ इसमें ऐसा रॉकेट साइंस नहीं है आज के पहले जो भी पढ़ाए हैं",
+      "source": "caption",
+      "english_text": "So tell me one thing that when we told you where will Aai stand? Where will the guy Ai be standing at the beginning of s1 and where will J be standing? Will stand at the beginning of S2. So when you start the recursion, the value of i will also be zero and the value of j will also be zero. Meaning what should you return from dp matrix or dp array? You get the return Yes DP of 0. Here, this tabulation ends. The chapter is ok, so there is nothing like rocket science in this, whatever has been taught before today."
+    },
+    {
+      "start_time": 1395.039,
+      "end_time": 1420.47,
+      "text": "वही है थोड़ा सा थोड़ा सा क्या कुछ चेंज नहीं है ठीक है अ मतलब ठीक है अच्छा क्वेश्चन था तो इसको जा के बनाइए इस एलसीएस हो चुका है एलआईएस हो चुका है तो यही दोनों मेनमेन स्ट्रिंग के पैटर्न्स है इसके कुछ कॉम्प्लेक्स क्वेश्चन भी बनते हैं उसको आने वाले दिन में देखेंगे हो सके मतलब कुल मिला के यही था। मतलब कुल मिला के जो पैटर्न होता है एलआईएस का या एलसीएस का इतना ही होता है। इससे इससे बाहर नहीं आना चाहिए कोई भी इंटरव्यू में। ठीक है?",
+      "source": "caption",
+      "english_text": "It is the same, a little, a little, is there no change, okay, A means okay, it was a good question, so go and make it, LCS has been done, LIS has been done, so these two are the patterns of the main string, some complex questions are also made from it, we can see it in the coming days, meaning overall this was the same. Meaning, overall the pattern of LIS or LCS is the same. No one should come out of this in any interview. Ok?"
+    },
+    {
+      "start_time": 1420.48,
+      "end_time": 1425.84,
+      "text": "चलिए ठीक है। तो इसको बनाओ और और सबमिट करो। ठीक है? चलो।",
+      "source": "caption",
+      "english_text": "Okay, okay. So create this and submit. Ok? Let us go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

@@ -1,0 +1,345 @@
+{
+  "video_id": "lyZp-49pdzQ",
+  "video_title": "DSA PATTERNS Episode 14 Sliding Window Pattern Revision (Part 1)",
+  "video_number": 14,
+  "chunks": [
+    {
+      "start_time": 2.389,
+      "end_time": 35.11,
+      "text": "हां भाई। तो आज स्लाइडिंग विंडो का रिवीजन पैटर्न चल रहा है। ठीक है? कुछ लोग बोलेगा कि भैया रोज एक ही टीशर्ट पहन के आते हैं। तो बात सही है कि दो-ती दिन से नहीं नहाए हैं। लेकिन खैर आज ये क्या है? रिवीजन वीडियो है। रिवीजन वीडियो या जो लोग पहली बार चैनल पे आ रहे हैं तो आपके लिए क्या है? समरी वीडियो है। 10 से 20 मिनट में स्लाइडिंग विंडो को पूरा स्लाइड करा देंगे आपके अंदर। और हम तो यही बोलेंगे कि अगर आप पहली बार आ रहे हैं चैनल पे, तो पहले बाकी का वीडियो देख लीजिए। ज्यादा नहीं है। तीन-चार वीडियो है वो देख के यहां आइए तो और समझ में आएगा। अगर नहीं भी देखना है तो यही देख लीजिए 50 60 70% तो समझ में आ जाएगा। ठीक है? आइए स्लाइडिंग विंडो",
+      "source": "caption",
+      "english_text": "Yes dear. So today the revision pattern of sliding window is going on. Ok? Some people will say that brother comes wearing the same t-shirt every day. So it is true that I have not bathed for the past two days. But anyway, what is this today? Revision video. What is the revision video for you or those who are coming to the channel for the first time? This is a summary video. Will slide the sliding window completely inside you in 10 to 20 minutes. And we would like to say that if you are coming to the channel for the first time, then watch the rest of the video first. Not much. There are three-four videos and you will understand better if you watch them here. Even if you don't want to see it, just see 50 60 70% and you will understand. Ok? ia sliding window"
+    },
+    {
+      "start_time": 35.12,
+      "end_time": 68.55,
+      "text": "पैटर्न जब हम शुरू किए थे तो हम आप लोग को एक फ्लो चार्ट बताए थे वो फ्लो चार्ट जल्दी से देख लेते हैं। फ्लो चार्ट क्या होता है? क्वेश्चन एरे का होना चाहिए या स्ट्रिंग का होना चाहिए। लिंक लिस्ट का भी नहीं होता है। लिंक लिस्ट का हम बहुत बहुत एक या दो क्वेश्चन ही देखें जिसमें स्लाइडिंग लगता है। लेकिन चलो मेनली एरे या स्ट्रिंग का क्वेश्चन होना चाहिए। ये पहला कंडीशन है। अगर ये नहीं हुआ तो स्लाइडिंग विंडो नहीं लगेगा। अच्छा अगला क्वेश्चन अगला कंडीशन क्या है? सब एरे या सबस्ट्रिंग सबस्ट्रिंग",
+      "source": "caption",
+      "english_text": "When we started the pattern, we showed you a flow chart, you can see that flow chart quickly. What is flow chart? The query should be of array or string. The link is not even in the list. We see only one or two questions in the link list in which sliding seems to occur. But let's mainly have a question of array or string. This is the first condition. If this does not happen then the sliding window will not be installed. Okay next question what is the next condition? sub array or substring substring"
+    },
+    {
+      "start_time": 68.56,
+      "end_time": 94.469,
+      "text": "या तो विंडो इसका बात होना चाहिए क्वेश्चन में। आपको ये खोजना रहे। मतलब इसमें से कुछ खोजना रहे। ये खोजना रहे। अगर ये नहीं खोजना है फिर स्लाइडिंग विंडो नहीं लगेगा। ठीक है? अब इसमें क्या खोजना है? सब एरे में उस सब एरे का ऐसा तो नहीं होगा कि सब एरे प्रिंट करना रहेगा। ऐसा क्वेश्चन नहीं आता है। सब एरे का कुछ खोजना होता है। जैसे कि आपको लॉन्गेस्ट ऐसा लिखा हो लॉन्गेस्ट लिखा हो। शॉर्टेस्ट लिखा हो।",
+      "source": "caption",
+      "english_text": "Either window should be the thing in question. You have to search for this. Meaning, keep finding something out of it. Keep searching for this. If this is not to be found then the sliding window will not appear. Ok? Now what is there to find in it? In the sub array, it will not happen that the sub array will have to be printed. Such question does not arise. Something has to be found in all the array. As if you have written 'longest', 'longest' has been written like this. Shortest is written."
+    },
+    {
+      "start_time": 94.479,
+      "end_time": 128.71,
+      "text": "ठीक है? और इसमें आपको सम खोजना हो। ये प्लस में है। ठीक है? ये एक पार्ट है लॉन्गेस्ट शॉर्टेस्ट। उसका सम खोजना हो। फ्रीक्वेंसी खोजना हो। अह एट लीस्ट के ऐसा कुछ करके खोजना हो। एट मोस्ट K ऐसा करके कुछ खोजना हो। या तो एग्जैक्टली K ऐसा कुछ कंडीशन दिया हो एवरेज खोजना हो इसका मैक्सिमम खोजना हो या मिनिमम खोजना हो मतलब कि सब एरे लीजिए और सब एरे या तो लॉन्गेस्ट सब एरे का लेंथ बताइए या तो ऐसा सब एरे का कोई सम बताइए या तो उसमें एटलीस्ट के ये चीज होना चाहिए",
+      "source": "caption",
+      "english_text": "ok? And in this you have to find the sum. This is in plus. Ok? This is a part longest shortest. Its equal has to be found. Have to find the frequency. Ah at least you have to find something like this. At most K is to find something by doing this. Either you have given some condition like exactly"
+    },
+    {
+      "start_time": 128.72,
+      "end_time": 161.91,
+      "text": "एग्जैक्टली के फलाना चीज होना चाहिए एटमोस्ट के ढिपम का चीज होना चाहिए तो आपका लगेगा क्या लगेगा स्लाइडिंग विंडो 90% चांस है कि लगेगा तो क्वेश्चन पढ़ के तो ऐसे समझ में आता मतलब हो सकता है कि ये वर्ड ना लिखा हो। लेकिन जब आप क्वेश्चन को हिंदी में सोचिएगा तो यही खोजना रहेगा। तो किसी भी क्वेश्चन को ना हिंदी में सोचा कीजिए कि पूछ क्या रहा है क्वेश्चन? लिखा तो अपना नाम हो लेकिन क्वेश्चन पूछना क्या चाह रहा है? जैसे फ्रूट्स इंटू बास्केट उसमें तो कुछ नहीं लिखा था। सबर एरे का बात उसमें तो बोला था कि एक बागान है ऐसा-ऐसा चीज है। लेकिन खोजना क्या था? मतलब आपको करना क्या था? वो आपको ध्यान रखना है। ये फ्लो",
+      "source": "caption",
+      "english_text": "Exactly, it should be such and such thing. Atmost, it should be like Dhipam, then what will you think? There is a 90% chance that it will be like sliding window. If you read the question, then it would be understood that it may mean that this word is not written. But when you think of the question in Hindi, this is what you will have to search for. So while answering any question in Hindi, think about what is the question asking? Your name may be written but what question are you trying to ask? Like there was nothing written in Fruits into Basket. Regarding Sabar Aire, it was said that there is a garden, such and such thing. But what was there to find? I mean, what did you have to do? You have to take care of that. this flow"
+    },
+    {
+      "start_time": 161.92,
+      "end_time": 194.869,
+      "text": "चार्ट है। ठीक है? अब स्लाइडिंग विंडो में चार स्टेप होता है। किसी भी क्वेश्चन को सॉल्व करने के लिए चार स्टेप होता है। स्टेप वन तो होता है कि पहचानना है कि स्लाइडिंग विंडो है कि नहीं कि स्लाइडिंग है कि नहीं। तो ये तो फ्लो चार्ट से आप पहचान लिए। वेरी गुड। स्टेप टू क्या है? फिक्स है कि वेरिएबल विंडो है? फिक्स है कि वेरिएबल विंडो है। तो अगर क्वेश्चन में लिखा हुआ हो कि K साइज का विंडो फाइंड करना है या तो K साइज का सब एरे फाइंड करना है। K साइज़ का सबस्ट्रिंग फाइंड करना है तो बेटा फिक्स है वो। कुछ भी आपको दिया",
+      "source": "caption",
+      "english_text": "There is a chart. Ok? Now the sliding window has four steps. There are four steps to solve any question. Step one is to identify whether it is a sliding window or not. So you recognized this from the flow chart. very good. What is step two? Fix that variable window? The fix is ​​that variable window. So if it is written in the question that a window of K size has to be found or a sub array of K size has to be found. If you want to find substring of size K, then it is fixed. gave you anything"
+    },
+    {
+      "start_time": 194.879,
+      "end_time": 226.869,
+      "text": "हो के K ना दिया हो बुलाओ। ऐसा सब एरे फाइंड करो जिसका साइज़ तीन ही हो। फिक्स का मतलब क्या होता है ना कि विंडो का साइज सेम रहता है। साइज़ सेम रहता है और उसी विंडो को हम लोग घसाते जाते हैं तो फिक्स है। अगर ऐसा कुछ नहीं लिखा है। अगर बोला है कि कुछ लॉन्गेस्ट फाइंड करना है या तो शॉर्टेस्ट फाइंड करना है या तो ऐसा कुछ करना है तो वो वेरिएबल है। बहुत सिंपल है आपको देख के समझ में आ जाएगा कि क्या बोल रहा है कि विंडो का साइज़ यही होना चाहिए या तो सब एरे का इतना होना चाहिए। नहीं बोल रहा है तो वेरिएबल होगा। उसमें और दिमाग लगाने की ज़रूरत नहीं है। स्टेप थ्री क्या है? स्टेप थ्री क्या है? विंडो का",
+      "source": "caption",
+      "english_text": "Ho ke K na diya ho call. Find such an array whose size is only three. What is meant by fixed is that the size of the window remains the same. The size remains the same and if we keep dragging the same window, it is fixed. If nothing like this is written. If it is said that something has to be found longest or shortest has to be found or something like that has to be done then it is a variable. It is very simple, after seeing it you will understand what is being said that the size of the window should be this or the size of the sub array should be this much. If he is not saying then it must be a variable. There is no need to put any more brain into it. What is step three? What is step three? of window"
+    },
+    {
+      "start_time": 226.879,
+      "end_time": 260.469,
+      "text": "इंफॉर्मेशन क्या है? विंडो का इंफॉर्मेशन इसमें क्या मतलब है मेरा जो लोग वीडियो देखे हैं उनको समझ में आ रहा होगा जो लोग नहीं देखे हैं। मान लीजिए आप एरे में हैं और कोई विंडो बनाएं विंडो मतलब कोई सब एरे में अभी आप हैं। ठीक है? तो किसी आप सब एरे में हैं। अच्छा आप सब एरे में हैं। आपका लो यहां है और हाई यहां है। तो आपका विंडो ये हो गया। ये आपका विंडो है। हां। इस विंडो से आप क्या समझते हैं? ये विंडो जब हम लोग बनाते हैं तो क्या कर रहे हैं इस विंडो में? हो सकता है इस विंडो में 1 2 3 4 हो सकता है आप इस विंडो का सम",
+      "source": "caption",
+      "english_text": "What is information? What do I mean by the information window, those who have seen the video will be able to understand it, those who have not seen it will understand. Suppose you are in an array and create a window. Window means any sub array that you are in right now. Ok? So somehow you all are in the array. Okay, you all are in the array. Your low is here and your high is here. So this is your window. This is your window. Yes. What do you understand by this window? When we create this window, what are we doing in this window? This window may contain 1 2 3 4. You may find the number in this window."
+    },
+    {
+      "start_time": 260.479,
+      "end_time": 295.03,
+      "text": "निकालना चाहते हो क्योंकि क्वेश्चन आपको बोल रहा है। हो सकता है आप इस विंडो का मैक्स निकालना चाहते हो। हो सकता है इस विंडो का मिन निकालना चाहते हो। हो सकता है इस विंडो का आप एवरेज निकालना चाहते हो। कुछ भी हो सकता है। क्वेश्चन के हिसाब से हो सकता है। हो सकता है ये स्ट्रिंग हो और आप कैरेक्टर का फ्रीक्वेंसी करना चाहते हैं। कैरेक्टर का क्या करना चाहते हैं? फ्रीक्वेंसी करना चाहते हैं। आप हो सकता है नंबर ऑफ यूनिक कैरेक्टर फाइंड करना चाहते हैं। क्वेश्चन आपको बोल रहा है फाइंड करने के लिए। ये सब चीज ना विंडो का इनफार्मेशन है तो आपको समझना है कि पूछ क्या रहा है भाई फाइंड अ लॉन्गेस्ट सबस्ट्रिंग ओके बट फाइंड अ लॉन्गेस्ट सबस्ट्रिंग में क्या मतलब उसमें सबस्ट्रिंग में क्या होना चाहिए उस",
+      "source": "caption",
+      "english_text": "You want to remove it because the question is speaking to you. You may want to find the max of this window. You may want to remove the min of this window. You may want to calculate the average for this window. Anything can happen. It may depend on the question. Maybe it's a string and you want to frequency the character. What do you want to do with the character? Want to frequency. You may want to find the number of unique characters. The question is asking you to find. All this is the information of the window, so you have to understand what brother is asking, find a longest substring, OK but what does find a longest substring mean, what should be there in that substring?"
+    },
+    {
+      "start_time": 295.04,
+      "end_time": 329.67,
+      "text": "सबस्टिंग में सारा लेटर यूनिक होना चाहिए उस सबस्ट्रिंग में सारा नंबर नेगेटिव होना चाहिए सारा नंबर इवन होना चाहिए ये उस विंडो का इनेशन होता है तो ये आपको समझना पड़ेगा और इसको निकालेंगे कैसे ये भी आपको समझना पड़ेगा ठीक है स्टेप फोर स्टेप फोर स्टेप फोर जब आप उस विंडो को सरकाएंगे, जब आप इस विंडो को स्लाइड करेंगे, स्लाइडिंग का मतलब ऐसे ऐसे विंडो जा रहा है, ऐसे जा रहा है या तो ये आ रहा है या तो ये बाहर जा रहा है। तो आप इंफॉर्मेशनेशन को पास कैसे करेंगे? चेंज कैसे करेंगे? इंफॉर्मेशन को चेंज कैसे करेंगे? विंडो बदलेगा तो फॉर",
+      "source": "caption",
+      "english_text": "All the letters in the substring should be unique. All the numbers in that substring should be negative. All the numbers should be even. This is the creation of that window, so you will have to understand this and how to remove it, you will also have to understand this. Okay, Step Four, Step Four, Step Four, when you slide that window, when you slide this window, sliding means the window is going like this, it is going like this, either it is coming or it is going out. So how do you pass the information on? How to make change? How to change the information? If the window is changed then for"
+    },
+    {
+      "start_time": 329.68,
+      "end_time": 364.629,
+      "text": "एग्जांपल आपका एक एरे है 100, 200 और 300। अभी आपका विंडो यहां पे है। अभी आपका विंडो ये है। अभी मान लीजिए आपका इंफॉर्मेशनेशन था सम तो आप इसका सम लिख दीजिएगा 300। लेकिन जब ये विंडो 100 से घसक के इधर जाएगा आपका विंडो जब ये बन जाएगा 200 और 300 बन जाएगा तो इसका सम आएगा 500। यह आप कैसे निकालेंगे? ये आप निकालेंगे जो एक्ज़िस्टिंग सम है जो कि 300 था। जो की 300 था। उससे आप 100 घटा देंगे जो कि लो का वैल्यू था। और उसमे आप नया वाला जो 300 आ रहा है वह जोड़ देंगे। तो ये 300 - 100",
+      "source": "caption",
+      "english_text": "Example: You have an array of numbers 100, 200 and 300. Right now your window is here. This is your window right now. Now suppose your information was even, then you will write its sum as 300. But when this window will be shifted from 100, your window will become 200 and 300, then its sum will be 500. How do you figure this out? This you will find out which is the existing sum which was 300. Which was 300. From that you will subtract 100 which was the value of Lo. And to that you will add the new Rs 300 that is coming. So this is 300 - 100"
+    },
+    {
+      "start_time": 364.639,
+      "end_time": 393.189,
+      "text": "200 500। ऐसे करके आपको देखना होगा कि जब विंडो सड़कता है तो उसका इनफार्मेशन कैसे निकाला जाता है? नए विंडो का। ऐसा तो नहीं करेंगे कि बार-बार ट्रेवर्स करके इनफार्मेशन निकालेंगे। ठीक है? मान लीजिए कैरेक्टर का फ्रीक्वेंसी है तो कैसे करेंगे? तो कैरेक्टर मान लो आप हैश में आपने स्टोर किए हुए हैं। A1 है तो जिस कैरेक्टर से आप सरक रहे हैं, जिस पे लो है वो सरक रहे हैं उसको हटा दीजिए। उसका या तो फ्रीक्वेंसी कम कर दीजिए। जीरो हो के तो हटा दीजिए। नया फ्रीक्वेंसी जो हाई आ रहा है उसको हैश मैप में जोड़ दीजिए। अगर उसका फ्रीक्वेंसी नहीं है तो बढ़ा दीजिए।",
+      "source": "caption",
+      "english_text": "200 500. By doing this you will have to see how the information is extracted when the window is closed? Of new window. We will not do this by repeatedly traversing and extracting information. Ok? Suppose the frequency of the character is then how to do it? So suppose you have stored the character in the hash. If A1 is there, then remove the character from which you are moving, the character on which you are moving is Lo. Either reduce its frequency. If it is zero then remove it. Add the new frequency that is coming high to the hash map. If its frequency is not there then increase it."
+    },
+    {
+      "start_time": 393.199,
+      "end_time": 427.67,
+      "text": "अगर वो हैश मैप में ही नहीं है तो उसको वन से लिख दीजिए। तो ये आपको समझना है कि इंफॉर्मेशन कैसे चेंज होगा। ठीक है? अब जो दो तरीके का क्वेश्चन है फिक्स और वेरिएबल। फिक्स में हमको नहीं लगता है कि किसी को किसी भी तरीके का डाउट होगा लेकिन बता देते हैं जल्दी से। फिक्स फिक्स का एक पैटर्न होता है। फिक्स विंडो क्वेश्चन का एक पैटर्न होता है। अब फिक्स विंडो का मतलब क्या है? हम क्या बोले कि जब भी आपको बोला गया है कि पर्टिकुलर साइज का विंडो है मतलब k साइज का विंडो है। फॉर एग्जांपल k = 3 है जस्ट फॉर एग्जांपल। तो आपका विंडो कहां से कहां तक बनेगा? आप ऑब्वियस",
+      "source": "caption",
+      "english_text": "If it is not in the hash map then write it from one. So you have to understand how the information will change. Ok? Now the two types of questions are fixed and variable. We do not think that anyone will have any doubt about the fix, but let us tell you quickly. Fix Fixes have a pattern. There is a pattern to fixed window questions. Now what does fixed window mean? What can we say that whenever you are told that there is a window of particular size, it means that there is a window of size k. For example k = 3 is just for example. So from where to where will your window be made? you obvious"
+    },
+    {
+      "start_time": 427.68,
+      "end_time": 460.629,
+      "text": "सी बात है कि अगर ये एरे है अगर ये एरे है ऐसा करके एरे है तो ये ज़ीरो है, वन है, टू है, थ्री है, फोर है और फाइव है। आपका अगर K तीन है, तो आपका विंडो कभी भी शुरू होगा ना, तो स्टार्ट से शुरू होगा। स्टार्ट से शुरू हो के कहां जाएगा? तीन साइज़ का ही बनाना है तो यहां तक जाएगा। तो ये आप क्या देख पा रहे हैं कि अब विंडो में ना क्या होता है कि लो इसका स्टार्टिंग होता है। मतलब विंडो शुरू कहां से हो रहा है और हाई इसका एंड होता है। ये होता है। अब आपको स्टार्ट तो स्टार्ट से ही करना है ऐसा तो नहीं बोला गया होगा कि एरे के बीच से स्टार्ट करो उसका तो कोई और छोड़ नहीं है।",
+      "source": "caption",
+      "english_text": "The simple thing is that if this is an array, if this is an array, then this is zero, one, two, three, four and five. If your K is three, your window will start anytime, so it will start from start. Where will it go after starting from the beginning? If you want to make it three sizes only then you will go this far. So what you are able to see is that now what happens in the window is that it starts. Meaning, where does the window start and where does it end? This happens. Now you have to start from the beginning itself, it must not have been said that start from the middle of the array, there is no other option."
+    },
+    {
+      "start_time": 460.639,
+      "end_time": 494.629,
+      "text": "तो हमेशा लो इज इक्वल टू 0 तो होगा। हाई कहां पे होगा? अगर लो ज़ीरो है और विंडो का साइज तीन है तो हाई को कहां होना पड़ेगा? हाई को k - 1 पे होना पड़ेगा। जहां पे दो दो देखिए अगर हाई यहां रहता है और आपका लो यहां रहता है तो आपके विंडो का साइज ऑटोमेटिकली तीन हो गया। हुआ ना? हमेशा हमेशा फिक्स विंडो में ये आपका स्टार्टिंग पॉइंट रहेगा। ठीक है? उसके बाद फिक्स में आप स्टार्टिंग वाला जो विंडो है मतलब लो = 0 और हाई = k - 1 इसका इंफॉर्मेशन निकाल",
+      "source": "caption",
+      "english_text": "So it will always be low is equal to 0. Where will it be high? If low is zero and window size is three then where will high have to be? The high has to be at k - 1. Where you see two, if your high remains here and your low remains here, then the size of your window automatically becomes three. What happened? This will always be your starting point in the fixed window. Ok? After that, in the fix, you can extract information about the starting window, i.e. low = 0 and high = k - 1."
+    },
+    {
+      "start_time": 494.639,
+      "end_time": 529.35,
+      "text": "लीजिए। इसका इंफॉर्मेशन निकालने का मतलब कि इंफॉर्मेशन के पे भी डिपेंड करता है कि अगर इसका सम है तो आप आई को लो से हाई तक चलाइए चलाइए आई को प्लस प्लस कर दीजिए फॉर्म में लिखिए और जो भी इसका इनफार्मेशन आपको बोलता है मान लीजिए इसका इनफार्मेशन सम है तो एक सम में इक्वल टू सम प्लस ai कर दिए अगर अगर ये बोल रहा है कि हमको इसका मैक्सिमम निकालना है तो एक मैक्स वेरिएबल ले लिए और इसमें मैक्स कैलकुलेट कर लिए मैक्स किसका मैक्सी और AI तो ये सिंपल है कि आप एरे को ट्रेवर्स करिए।",
+      "source": "caption",
+      "english_text": "Take it. The meaning of extracting its information is that it also depends on the information that if it is even then you move ai from low to high, move ai to plus plus, write it in the form and whatever its information tells you, suppose its information is even, then in a sum, make equal to sum plus ai. If it is saying that we have to find its maximum, then take a max variable and calculate max in it. Max is whose maxi and AI, so it is simple that you traverse the array."
+    },
+    {
+      "start_time": 529.36,
+      "end_time": 559.59,
+      "text": "मतलब पूरे एरे में अगर वो बात करना रहता तो क्या करते? आप एरे को ट्रेवर्स करते। वो कर लेते। तो इन उसका इनेशन स्टोर कर लीजिए। किसका? पहले विंडो का। पहले विंडो का। उसके बाद उसके बाद अब शुरू करेंगे काम। अब हम लोग हाई को सरकाएंगे। देखिए वाइल हाई लेस दैन n लिखेंगे। क्यों लिखेंगे? क्योंकि हर बार ना विंडो को सरकाना है। हर स्टेप में विंडो को सरकाना है। और क्या केवल एक को सरकाना? नहीं। दोनों को सरकाना है। देखते हैं हम क्या करेंगे। सबसे पहले सबसे पहले अभी आपके पास इस वाले विंडो का तो आंसर है पहले वाले",
+      "source": "caption",
+      "english_text": "Meaning, what would he have done if he had been talking in the entire array? You traverse the array. He would have done it. So store its information in these. Whose? First window. First window. After that we will start the work. Now we will move the high. See while will write higher less than n. Why would you write? Because the window has to be moved every time. The window has to be moved in every step. And just slide one? No. Both have to be moved. Let's see what we will do. First things first, you now have the answer to this window."
+    },
+    {
+      "start_time": 559.6,
+      "end_time": 593.509,
+      "text": "विंडो का जब लो = 0 और हाई = k - 1 है। उसका तो हम बता दिए वो तो निकालना ही है। अभी इसको आंसर में लिख लीजिए। अब ये भी डिपेंड करता है कि आंसर क्या मांग रहा है? आंसर आपसे बोल रहा है कि सारे विंडो के इनेशन में जो मैक्सिमम है वो हमको दे दो। या तो सारे विंडो के इनेशन में जो मिनिमम है वो हमको दे दो। तो उसके हिसाब से मान लीजिए आपको बोल रहा है कि सारे विंडो का सम निकालना है। उस सम से कोई मैक्सिमम हमको दे दो। तो मैक्स कर लीजिए। और इस विंडो का आंसर कहां है आपके पास? इस विंडो का आंसर सम में है। तो सबसे पहला तो ये काम कर लीजिए। सबसे पहला तो ये काम आपको",
+      "source": "caption",
+      "english_text": "When low = 0 and high = k - 1 of the window. We told about it, it has to be removed. Now write this in the answer. Now it also depends what the answer is asking for? Answer is asking you to give us the maximum that is available in all the windows. Either give us the minimum that is there in all the window inations. So according to that, suppose it is telling you that you have to find the sum of all the windows. Give us a maximum from that point. So do it max. And where do you have the answer to this window? The answer in this window is even. So first of all do this work. First of all you have to do this"
+    },
+    {
+      "start_time": 593.519,
+      "end_time": 627.43,
+      "text": "कर लेना है। उसके बाद उसके बाद अब विंडो को सरकाते हैं और इंफॉर्मेशन पास करते हैं जो हमने सिखाए थे। सबसे पहले क्या कीजिए? लो तो अभी जीरो पे है तो अब आप लो को सरकाएंगे जब लो पहले यहां था। अब आप लो को +1 पे ले जाना चाहते हैं तो पहले लो वाले को इनफार्मेशन से हटा दीजिए। कैसे हटाएंगे? अगेन डिपेंड करेगा कि आपका इनफार्मेशन क्या है? फॉर एग्जांपल आपका इनफार्मेशन सम है। तो सम इज़ इक्वल टू सम माइनस एरे ऑफ़ लो। क्लियर हो गया? सिंपल बात है। और लो प्लस प्लस। वेरी गुड। हो",
+      "source": "caption",
+      "english_text": "Have to do it. After that, now let's move the window and pass the information that we taught. What to do first? Lo is now at zero so now you will move Lo when Lo was here earlier. Now if you want to take the low to +1 then first remove the low from the information. How to remove? Again it will depend on what your information is. For example, your information is some. So sum is equal to sum minus array of low. Is it cleared? It's a simple thing. And lo plus plus. very good. yes"
+    },
+    {
+      "start_time": 627.44,
+      "end_time": 661.59,
+      "text": "गया ना? कि लो को हटाए लो बढ़ा दिए। तो ठीक है। अब हाई को बढ़ाना है। हाई को बढ़ा के उसका इनफार्मेशन लेना है। ऐसे ही तो इनफार्मेशन पास होगा। तो हाई को बढ़ा दीजिए और और उसका इंफॉर्मेशन ले लीजिए। ये सम याद नहीं करिएगा। सम एक क्वेश्चन हो सकता है। हो सकता है वो एवरेज हो। हो सकता है वो कुछ और हो। प्रोडक्ट हो। तो अपने हिसाब से सम प्लस एरे ऑफ़ हाइट। लेकिन लेकिन लेकिन इसके बीच में इस स्टेप के बीच में और इस स्टेप के बीच में एक एच केस है। हो सकता है कि आप जब इस लूप के अंदर आए थे,",
+      "source": "caption",
+      "english_text": "went, right? That removed the low and increased the low. Well then. Now the high has to be increased. We have to increase the height and get its information. This is how information will be passed. So increase the height and get more information. Don't remember this. Even can be a question. Maybe he is average. It may be something else. Be a product. So according to you sum plus array of height. But but but there's an H case in the middle of this step and between this step. Maybe when you came inside this loop,"
+    },
+    {
+      "start_time": 661.6,
+      "end_time": 689.59,
+      "text": "जब वाइल लूप के अंदर आए थे ना, तो i = n - 1 हो। हो सकता है लास्ट में हो हाई जैसे ही आप हाई को बढ़ाए हाई प्लस प्लस किए ना तो i = n हो गया। एरे में n इंडेक्स तो नहीं होता है। एरे में तो n - 1 तक होता है। तो ये तो आपका गलत हो जाएगा। ये जो आप काम कर रहे हैं ये तो गलत हो जाएगा। इसीलिए यहां पे चेक कर लीजिए। ये करने से पहले इफ हाई इक्वल इक्व n ब्रेक ब्रेक चेक कर लीजिए और इसको बंद कर दीजिए।",
+      "source": "caption",
+      "english_text": "When we enter the while loop, then i = n - 1. There may be a high in the last, as soon as you increase the high and do high plus plus n then it becomes i = n. There is no n index in the array. The array contains up to n - 1. Then this will be your mistake. This work you are doing will go wrong. That's why check here. Before doing this, check if high equal equal n break break and turn it off."
+    },
+    {
+      "start_time": 689.6,
+      "end_time": 722.389,
+      "text": "यहां पे सब पोथी पुरान करने के बाद आपको आंसर मिल गया होगा। आंसर रिटर्न कर दीजिए। एक बार देख लीजिए। यही टेंपलेट होता है। किसी भी फिक्स स्लाइडिंग विंडो का क्वेश्चन करना है दुनिया में। यही होता है। देखिए सबसे पहले क्या किए? सबसे पहले स्टार्ट वाले विंडो का आंसर निकाल लिए। आंसर निकाल लिए। उसके बाद कैलकुलेट कर रहे हैं। सबसे पहले क्या किए? उसको आंसर में अपना लिख लिए। जो स्टार्ट वाले विंडो का था। लो को बढ़ा दिए। मतलब हटा के उसको बढ़ा दिए। फिर",
+      "source": "caption",
+      "english_text": "After reading all the books here, you would have got the answer. Please return the answer. Take a look once. This is the template. Question any fixed sliding window in the world. Same thing happens. See what you did first? First of all get the answer from the start window. Got the answers. After that calculating. What did you do first? Write it as your own in the answer. Which was from the start window. Increase the low. The meaning was removed and increased. then again"
+    },
+    {
+      "start_time": 722.399,
+      "end_time": 756.629,
+      "text": "हाई को बढ़ाए और उसको आंसर में इंक्लूड कर लिए। यहां पर यही किसी भी फिक्स विंडो का यही टेंपलेट होता है। वेरी गुड। तो इसमें हमको नहीं लगता कोई डाउट होगा। बहुत सिंपल है। यही हर क्वेश्चन में होता है यार। बस वो इनेशन बदल जाता है। अब आइए। अब आइए वेरिएबल में। यही हार्ड है। अब आइए। हार्ड नहीं है। मतलब थोड़ा हार्ड लगता है। हार्ड है नहीं। जो लोग वीडियो देखें उनके लिए हार्ड नहीं है। ठीक है? वेरिएबल में आ जाइए। अब वेरिएबल में स्लाइडिंग जो फिक्स्ड था उसमें क्या कर रहे थे कि लो = 0 रख रहे थे और हाई = k - 1 रख रहे थे।",
+      "source": "caption",
+      "english_text": "Increase the value and include it in the answer. This is the template for any fixed window here. very good. So we don't think there will be any doubt in this. It is very simple. This happens in every question, friend. Only that ination changes. Come now. Now let's get into the variables. This is hard. Come now. Not hard. Meaning, it seems a bit hard. It is not hard. It is not difficult for those who watch the video. Ok? Come into the variables. Now what we were doing in the sliding variable which was fixed was that we were keeping low = 0 and high = k - 1."
+    },
+    {
+      "start_time": 756.639,
+      "end_time": 790.71,
+      "text": "लेकिन वेरिएबल क्यों है? क्योंकि आपको k तो नहीं दिया है कि इस साइज का है। तो आप कैसे ये करिएगा? ये तो नहीं कर पाइएगा। इसीलिए इसमें कुछ नहीं करना है। लो को भी ज़ीरो पे रखना है क्योंकि स्टार्ट तो ज़ीरो से होगा भाई। और हाई को भी ज़ीरो पे रखना है। हाई को ज़ीरो पे रखिए। स्टार्ट हम लोग ज़ीरो से करेंगे। धीरे-धीरे बढ़ाएंगे, घटाएंगे, देखेंगे। वेरिएबल का मतलब ही होता है कि विंडो फिक्स साइज का नहीं है। विंडो बढ़ भी सकता है, घट भी सकता है। विंडो का साइज घटेगा कैसे? जब आप लो को बढ़ाएंगे। और विंडो का साइज बढ़ेगा कैसे? जब आप हाई को बढ़ाएंगे। ठीक है? मतलब अभी आपका विंडो ये है। आप यहां पे लो है। यहां पे",
+      "source": "caption",
+      "english_text": "But why is there a variable? Because it has not been given to you that it is of this size. So how do you do it? Will not be able to do this. That's why there is nothing to be done about it. Low also has to be kept at zero because the start will be from zero. And the high also has to be kept at zero. Keep high at zero. We will start from zero. Will gradually increase, decrease, see. Variable means that the window is not of fixed size. The window can increase or decrease. How will the window size be reduced? When you increase Lo. And how will the window size increase? When you increase the high. Ok? Meaning this is your window right now. You are here. here on"
+    },
+    {
+      "start_time": 790.72,
+      "end_time": 822.31,
+      "text": "हाई है। हो सकता है आप लो को बढ़ा के यहां पे ले आए। तो इतना विंडो कम हो गया। तो विंडो का साइज़ कम हो गया। हो सकता है आपका हाई यहां है। और आप हाई को बढ़ा के यहां ले आए तो आपका विंडो का साइज़ बढ़ गया। ऐसे बढ़ता है। ठीक? सिंपल कुछ नहीं करना है। हम लोग का अभी हाई कहां है? i = 0 पे है। हाई को 0 से ले n तक ले जाएंगे। बढ़ाते रहेंगे हाई को। कैसे बढ़ाएंगे? लूप से बढ़ाएंगे। तो वाइल लूप मत लिखिए। नहीं समझ में आता है तो सिंपल ये लिख लीजिए। फॉर लूप की मदद से हाई को हम लोग हर बार बढ़ाएंगे ही बढ़ाएंगे।",
+      "source": "caption",
+      "english_text": "Is high. Maybe you can increase the load and bring it here. So this much window got reduced. So the size of the window is reduced. Maybe your high is here. And if you increase the High and bring it here, your window size increases. This is how it grows. Correct? Simple nothing to do. Where is our high now? is at i = 0. Will take high from 0 to n. Will keep increasing the high. How to increase? Will increase with loop. So don't write a while loop. If you don't understand then simply write this. With the help of for loop we will increase the high every time."
+    },
+    {
+      "start_time": 822.32,
+      "end_time": 856.31,
+      "text": "हाई के पास कोई चारा नहीं है। बढ़ेगा ही बढ़ेगा। ठीक है? ये सब करने से पहले आप इनफार्मेशन वगैरह सोच लेंगे। है ना? चलिए। सबसे पहला काम क्या कीजिए? आंसर में हाई को इंक्लूड कर लीजिए। आंसर में हाई को आप बढ़ा रहे हैं ना? तो बढ़ाते हैं तो इंक्लूड करते हैं। सबसे पहले आंसर में सॉरी आंसर में नहीं जो भी आपका इंफॉर्मेशन है। है ना? इंफॉर्मेशन है। इंफॉर्मेशन मतलब सम हो सकता है विंडो का। इंफॉर्मेशन में में हाई को इंक्लूड कर लीजिए। हाई को इंक्लूड कर लो। सबसे पहला काम करना है बिना कुछ सोचे। हाई को इंक्लूड कर लें।",
+      "source": "caption",
+      "english_text": "Hai has no choice. It will only increase. Ok? Before doing all this, you will think about information etc. Isn't it? Let go. What's the first thing to do? Include high in the answer. You are increasing the 'high' in the answer, right? So if we increase then we include. First of all, whatever your information is, sorry, it is not in the answer. Isn't it? There is information. Information may be the same as the window. Please include high in the information. Include the high. The first thing to do is to do it without thinking. Include the high."
+    },
+    {
+      "start_time": 856.32,
+      "end_time": 886.629,
+      "text": "मतलब अगर सम है तो सम में ai जोड़ दिए। प्रोडक्ट है तो प्रोडक्ट में ai को वो कर लिए मतलब इंटू कर लिए। फ्रीक्वेंसी है तो#श मैप में उस लेटर को जोड़ लिए जिसमें हाई है। सबसे पहला समझ में आया? वेरी गुड। अब अब देखिए अब आपको क्या करना है? अब आपको डिसाइड करना है। अब आपको क्या डिसाइड करना है? इंफॉर्मेशन ये जो आप कर रहे हैं अभी कैलकुलेट इंफॉर्मेशन सही है या गलत है? सही है या गलत है?",
+      "source": "caption",
+      "english_text": "Meaning if it is even then add ai to the even number. If there is a product, then AI has been incorporated into the product. If there is frequency then add that letter in the #sh map which has high. First of all, did you understand? very good. Now see what you have to do now? Now you have to decide. What do you have to decide now? Is the information you are calculating now correct or incorrect? Is it right or wrong?"
+    },
+    {
+      "start_time": 886.639,
+      "end_time": 913.829,
+      "text": "गलत है। इसका क्या मतलब होता है? यह कैसे डिसाइड होगा? यह सबसे इंपॉर्टेंट पार्ट है क्वेश्चन का। इंफॉर्मेशन सही है या गलत है? इंफॉर्मेशन सही है या गलत? कैसे पता चलेगा? आपको क्वेश्चन पढ़ के समझ में आएगा। फॉर एग्जांपल आपको बोला गया है कि कोई ऐसा विंडो खोजो जिसमें आदमी खड़ा है। ठीक है? आपको क्या बोला गया है कि यहां पे बहुत सारा आदमी खड़ा है। लाइन से। ठीक है? बहुत सारा आदमी खड़ा है।",
+      "source": "caption",
+      "english_text": "Is wrong. What does this mean? How will this be decided? This is the most important part of the question. Is the information correct or incorrect? Is the information correct or incorrect? How to know? You will understand after reading the question. For example, you have been asked to find a window in which a man is standing. Ok? What have you been told that there are a lot of people standing here? From the line. Ok? A lot of people are standing."
+    },
+    {
+      "start_time": 913.839,
+      "end_time": 946.389,
+      "text": "आपको बोला है ये आदमी का वो है एरे है। है ना? ऐसे ही होता है। आपको बोला है ऐसा लॉन्गेस्ट सब एरे खोजो मतलब लॉन्गेस्ट सब एरे जितना हो सकता है जिसमें जो आदमी लोग का टोटल वेट हो टोटल वेट हो वो 100 kg हो। हर आदमी का कुछ वेट है। मान लीजिए इसका 20 है, इसका 50 है, इसका अभी 50 है। ऐसे करके बोला है हर ऐसा कोई लॉन्गेस्ट विंडो खोजो जिसमें वेट एग्जजेक्टली 100 हो। ये जो हम बोले थे ना एग्जैक्टली k एटमोस्ट k। तो वो ये ऐसे हो सकता है कि वेट 100 हो। ठीक है?",
+      "source": "caption",
+      "english_text": "Told you that this man's that is here. Isn't it? This is how it happens. You have been told to find the longest sub array, meaning the longest sub array can be as long as the total weight of the people in which the total weight is 100 kg. Every person has some weight. Let's say its 20, its 50, its now 50. Having said this, it is said that find the longest window in which the weight is exactly 100. What we said was exactly and at the most. So it could be that the weight is 100. Ok?"
+    },
+    {
+      "start_time": 946.399,
+      "end_time": 980.389,
+      "text": "अब आपका इनफार्मेशन क्या होगा इसमें? इनफार्मेशन आपको निकालना क्या है? वेट टोटल वेट ऑफ द विंडो। तो आपका जो इनफार्मेशन है इस केस में क्या होगा? टोटल वेट ऑफ विंडो विंडो या सब एरे कहां से कहां तक लो से हाई तक लो हाई जहां भी है उसको इंक्लूड करके वेट हम इंफॉर्मेशनेशन निकाल लिए आपका इंफॉर्मेशनेशन सही कब है आपका इनफेशन सही मतलब क्वेश्चन के हिसाब से कब है जब भी आपका जो इनफार्मेशन मतलब आप जो वेट निकाले हैं इक्वल इक्वल टू 100 है तो ये सही है ये ये सही है यही तो",
+      "source": "caption",
+      "english_text": "Now what will be your information in it? What information do you need to remove? Weight Total weight of the window. So what will happen in this case given your information? Total weight of window window or sub array from where to where from low to high to low high including wherever it is, we have calculated the weight information. When is your information correct? Meaning is according to the question. Whenever your information means the weight you have calculated is equal to 100, then it is correct, this is correct, this is it."
+    },
+    {
+      "start_time": 980.399,
+      "end_time": 1014.47,
+      "text": "खोजना है ठीक है आपका इनफार्मेशन गलत कब है आपका इनफार्मेशन दो केसेस में गलत है। आपका इनेशन दो ही केसेस में गलत है। अगर आपका 100 से कम है जो आपका वेट है या तो आपका इनफो 100 से ज्यादा बड़ा है। ये दोनों तो गलत इंफॉर्मेशन है। सॉरी ये दोनों तो गलत इनफेशन है। ये सही इनफेशन है। ठीक है? तो सबसे पहले तो ये आप समझ लिए कि इनफेशन सही कब? गलत कब। ठीक है? अब अब एक पार्ट होता है। अब एक पार्ट होता है। अभी हम लोग कहां पे हैं? अभी हम लोग यहीं पे हैं। इसी लाइन में अभी हम लोग इसी लाइन में हैं। ये",
+      "source": "caption",
+      "english_text": "Have to search OK, when is your information wrong? Your information is wrong in two cases. Your inference is wrong in only two cases. If your is less than 100 which is your weight or your info is bigger than 100. Both of these are wrong information. Sorry, both of these are wrong interpretations. This is the correct infection. Ok? So first of all you should understand that when is the right time for infection? Wrong when. Ok? Now there is a part. Now there is a part. Where are we now? We are here right now. Right now we are in the same line. this"
+    },
+    {
+      "start_time": 1014.48,
+      "end_time": 1041.59,
+      "text": "सब ड्राइंग पोथी आपको हम समझाने के लिए बना रहे हैं। इंफॉर्मेशन अगर गलत है ना जनरल लॉजिक क्या होता है? जनरल लॉजिक क्या होता है? इसके बाद एक पार्ट लिखते हैं यहां पे कि जब तक जब तक इंफॉर्मेशन गलत है। गलत है। तब तक तब तक लो को बढ़ाओ। लो को बढ़ाओ। मतलब विंडो श्रिंक करो। श्रिंक करो।",
+      "source": "caption",
+      "english_text": "We are making all the drawing books to make you understand. What is general logic if the information is wrong? What is general logic? After this, let's write a part here that as long as the information is wrong. It is wrong. Till then increase Lo. Increase Lo. Meaning shrink the window. Shrink."
+    },
+    {
+      "start_time": 1041.6,
+      "end_time": 1076.07,
+      "text": "श्रिंक करो। ठीक है? यहां भी एक इतना सिंपल नहीं है। सिंपल है। क्या बोले? जब तक इंफॉर्मेशन आपका गलत है तब तक आप लो को बढ़ाते रहिए। क्या उसका मतलब है? अब यहां लेकिन इंफॉर्मेशन गलत कब है? इनफार्मेशन दो केसेस में गलत है। लेकिन इसके साथ आपको ये भी सोचना है कि लो को बढ़ाने से क्या हम वो इंफॉर्मेशन कभी सही कर पाएंगे या नहीं कर पाएंगे? मतलब लॉ को बढ़ाने का मकसद ये है ना कि इनफेशन गलत है तो उसको हम सही करना चाहते हैं। अब देखिए लो को बढ़ाने का मतलब क्या है? कि आप सबसे पहले तो आप क्या बोलें कि लो को जब भी आप बढ़ाएंगे ना तो इंफॉर्मेशन से लो हटाएंगे और फिर लो को",
+      "source": "caption",
+      "english_text": "Shrink. Ok? Here too it is not so simple. It is simple. What did they say? As long as your information is wrong, keep increasing the LO. What does he mean? Now here but when is the information wrong? The information is wrong in two cases. But along with this you also have to think that by increasing the LO, will we ever be able to correct that information or not? Meaning, the purpose of increasing the law is not that if the infection is wrong then we want to correct it. Now see what is meant by increasing Lo? That first of all, what do you say that whenever you increase Lo, you will remove Lo from the information and then Lo"
+    },
+    {
+      "start_time": 1076.08,
+      "end_time": 1110.15,
+      "text": "बढ़ाएंगे। तो अगर यह आदमी खड़ा है। मान लीजिए ये आदमी है। यहां पे लो है। इसका वेट है 20 किलो। और ये एक और आदमी इसका वेट है 50 किलो और यहां पे हाई है। ठीक है? अभी आपके इंफॉर्मेशन में क्या होगा? अभी आपकी इंफॉर्मेशन में क्या आएगा? 20 + 50 हम बोले ना इनफार्मेशन मतलब सबका वेट का सम। तो इसका आंसर हो जाएगा 70। यही होगा इनफार्मेशन का आंसर। ठीक है? अब हम क्या बोल रहे हैं? क्या ये इंफॉर्मेशन सही है? नहीं सही नहीं है। सही नहीं है ना। 70 100 से कम है। 100 बोला गया है। 100 सही है। अच्छा। तो क्या इस केस में हम लोग को लो को बढ़ाना चाहिए? लो को बढ़ाने का मकसद",
+      "source": "caption",
+      "english_text": "Will increase. So if this man is standing. Suppose this is a man. Take it here. Its weight is 20 kg. And this is another man, his weight is 50 kg and here it is high. Ok? What will happen to your information now? What will come in your information now? We said 20 + 50 information means the sum of everyone's weight. So its answer will be 70. This will be the answer to the information. Ok? What are we saying now? Is this information correct? No that is not correct. That is not right. 70 is less than 100. 100 have been spoken. 100 is correct. Good. So should we increase LO in this case? purpose of increasing lo"
+    },
+    {
+      "start_time": 1110.16,
+      "end_time": 1136.07,
+      "text": "है कि हमको इंफॉर्मेशन सही करना है। क्योंकि जब तक इनफार्मेशन गलत है तब तक लो को बढ़ाएंगे। लेकिन एक बात सोचिए। लो को बढ़ाने का मतलब कि आपको इस वाले 20 को अपने 70 से कम करना पड़ेगा। और तब जा के आप लो को बढ़ा पाएंगे। यहां पे आ पाएंगे। तो एक बात सोच के देखिए। 70 ऑलरेडी 100 से कम है। आप बोल रहे हैं कि हम लो को बढ़ाते जाएंगे। लो को बढ़ाने से होगा क्या? लो को बढ़ाने से इंफॉर्मेशन में क्या फर्क आएगा? इंफॉर्मेशन और कम होता जाएगा इस केस में।",
+      "source": "caption",
+      "english_text": "That we have to correct the information. Because as long as the information is wrong the level will increase. But think about one thing. Increasing Lo means you have to subtract this 20 from your 70. And then you will be able to increase the Lo. Will be able to come here. So think about one thing. 70 is already less than 100. You are saying that we will keep increasing the Lo. What will happen if I increase Lo? What difference will increasing Lo make to the information? Information will become less and less in this case."
+    },
+    {
+      "start_time": 1136.08,
+      "end_time": 1170.47,
+      "text": "है ना? लो को बढ़ाने से आपका जो 70 है और कम ना होता जाएगा जी। तो 70 अगर और कम हो के 50 हो जाएगा तो ये भी 100 से कम रहेगा। अगर ये घट के 30 हो जाएगा तो ये भी 100 से कम रहेगा। तो यहां तो इनफार्मेशन सही होता दिख ही नहीं रहा है। नहीं ना दिख रहा है। कोई चीज ऑलरेडी कम है। उसको सही करने के लिए बढ़ाने का जरूरत है ना? घटाने का जरूरत थोड़ी है। अगर आप घटाते जाएंगे तो कभी सही नहीं होगा। इसीलिए इस वाले रॉन्ग केस में लो को घटाने से कोई फायदा नहीं है। और जहां कोई फायदा नहीं है वो हम काम नहीं करते हैं। ठीक है? समझ गए कि नहीं? ये सिंपलेस्ट वे पॉसिबल में हम बताए हैं कि",
+      "source": "caption",
+      "english_text": "isn't it? By increasing Lo, your 70 will not reduce further. So if 70 is further reduced to 50 then this will also be less than 100. If it decreases to 30 then it will also be less than 100. So here the information does not seem to be correct. No, it is not visible. Something is already lacking. There is a need to increase it to correct it, right? There is little need to reduce. If you keep reducing it will never be right. That is why there is no benefit in reducing Lo in this wrong case. And where there is no benefit, we do not work. Ok? Did you understand or not? In this simplest way possible we have told that"
+    },
+    {
+      "start_time": 1170.48,
+      "end_time": 1201.909,
+      "text": "लो को बढ़ाने से होगा क्या? लो को बढ़ाने से वेट और कम होगा। आपका वेट आप बोल रहे है कि ऑलरेडी 100 से कम है तो और क्यों लो को बढ़ा रहे हैं। अब तो आपको और आदमी ना जोड़ना चाहिए कि 100 हो जाए। 70 को 100 करना है। तो आप इसमें कुछ जोड़ना चाहेंगे कि घटाना चाहेंगे? जोड़ना चाहेंगे। लेकिन लो को बढ़ाने से तो आपका कम हो रहा है। इस केस में तो ये वाला लॉजिक फेल हो गया। तो ये करने का जरूरत नहीं है। ये करने का जरूरत कब है? कब है? मान लीजिए मान लीजिए मान लीजिए आपका ये एरे है। ठीक है? ये है",
+      "source": "caption",
+      "english_text": "What will happen if I increase Lo? By increasing Lo the weight will be further reduced. You are saying that your weight is already less than 100, so why are you increasing it? Now you should not add more people so that it becomes 100. 70 has to be made 100. So would you like to add something to it or subtract something from it? Would like to add. But increasing Lo is reducing yours. In this case this logic failed. So there is no need to do this. When does this need to be done? when is it? Suppose, let's say you have this array. Ok? this is"
+    },
+    {
+      "start_time": 1201.919,
+      "end_time": 1236.71,
+      "text": "आपका 70 और ये आपका 50 है। मान लीजिए। है ना? तो अब आपका लो कहां है? अब आपका लो यहां है और आपका हाई यहां है। ठीक है? अब देखिए अब इस विंडो का इंफॉर्मेशन क्या होगा? इस विंडो का इंफॉर्मेशन होगा 120 हां क्या ये गलत है? हां गलत है। क्यों? क्योंकि ये 100 से बड़ा है। दो केस देखे थे गलत वाला। अब क्या लो को बढ़ाने से फायदा हो सकता है। हां क्यों? क्योंकि 120 को 100 करना है। तो इसमें कुछ सब्ट्रैक्ट करना पड़ेगा तभी तो होगा। हमको नहीं मालूम कितना है। तो कुछ ना कुछ तो सब्ट्रैक्ट करेंगे तभी तो 100 के करीब पहुंचेंगे।",
+      "source": "caption",
+      "english_text": "Your 70 and this is your 50. Suppose. Isn't it? So where is your take now? Now your low is here and your high is here. Ok? Now see what will be the information of this window? The information in this window will be 120 Yes Is this wrong? Yes it is wrong. Why? Because it is bigger than 100. Had seen two cases, the wrong one. Now can there be any benefit in increasing the LO? yes why? Because 120 has to be converted to 100. So something has to be subtracted from it, only then it will happen. We don't know how much. So we will subtract something only then we will reach closer to 100."
+    },
+    {
+      "start_time": 1236.72,
+      "end_time": 1269.27,
+      "text": "इंफॉर्मेशन सही कैसे करेंगे। आपको 120 है। आपको चाहिए 100 तो आप थोड़ा हटाइएगा ना जी। इसीलिए और लो को बढ़ाने से क्या होता है? सेम चीज होता है, सब्ट्रैक्ट होता है। इस वाले केस में लो को करते रहेंगे। अब आइए इसको लिखते कैसे हैं? हम क्या बोले थे? जब तक गलत तब तक लोको बढ़ाएंगे। लोको बढ़ाएंगे। इस उम्मीद में इस उम्मीद में इसमें एक और लाइन मिसिंग था। इस उम्मीद में कि इंफॉर्मेशन",
+      "source": "caption",
+      "english_text": "How to correct the information? You have 120. If you want 100 then you can remove a little, no sir. Therefore, what happens by increasing Lo? The same thing happens, there is a subtraction. In this case, we will keep doing Lo. Now let's see how to write this? What did we say? Will increase the loco as long as it is wrong. Will increase the loco. There was one more line missing in this hope. In the hope that the information"
+    },
+    {
+      "start_time": 1269.28,
+      "end_time": 1294.63,
+      "text": "इंफॉर्मेशन सही हो जाए। सही हो जाए। इसीलिए कम में नहीं बढ़ाए थे और ज्यादा में बढ़ा रहे हैं। तो इसको कैसे लिखते हैं? इसको लिखिए। कब तक बढ़ाना है? जब तक इनफार्मेशन सही ना हो जाए। है ना? तो व्हाइल या जब तक इनफार्मेशन गलत रहे तब तक बढ़ाएंगे। ये ज्यादा अच्छा समझ में आएगा। वाइल जो भी आपका इनफार्मेशन है जो भी आपका इनफार्मेशन वाइल इंफॉर्मेशन गलत है। गलत।",
+      "source": "caption",
+      "english_text": "The information should be correct. Let it be right. That is why it was not increased in less and is being increased in more. So how do you write this? Write this. For how long should it be extended? Until the information is correct. Isn't it? So while or as long as the information remains wrong, it will increase. This would make better sense. Whatever your information is, whatever your information is, the information is wrong. Wrong."
+    },
+    {
+      "start_time": 1294.64,
+      "end_time": 1326.07,
+      "text": "ये जब तक गलत है। अब इसको कोड में जब आप लिखेंगे तो हो सकता है कि आपका सम ग्रेटर दैन 100 ये हो सकता है क्योंकि इस क्वेश्चन के हिसाब से तीन केसेस था। सम इक्वल टू 100 वेरी गुड। सम लेस दैन 100 तो ये करने का जरूरत नहीं है। लेकिन सम ग्रेटर दैन 100 तो जब तक सम ग्रेटर दैन 100 है तब तक तब तक क्या करेंगे? सबसे पहले सम इक्वल टू सम माइनस एरे ऑफ़ लो। इंफॉर्मेशन से लो निकाले। लो प्लस प्लस बस हो गया। ये कब तक चलेगा? ये कब तक चलेगा?",
+      "source": "caption",
+      "english_text": "As long as this is wrong. Now when you write this in code, it is possible that your sum may be greater than 100 because according to this question there were three cases. Some equal to 100 very good. If the sum is less than 100 then there is no need to do this. But if the sum is greater than 100, what will we do as long as the sum is greater than 100? First sum equal to sum minus array of low. Take out information. Low plus plus that's it. How long will this last? How long will this last?"
+    },
+    {
+      "start_time": 1326.08,
+      "end_time": 1352.47,
+      "text": "ये जब तक आपका सम ग्रेटर दैन 100 रहेगा तब तक चलेगा। तब तक सम को थोड़ा-थोड़ा कम करते रहेंगे और लो को बढ़ाते रहेंगे। अब जैसे ही ये टूटा जैसे ही ये टूटा तब आ जाता है थर्ड और लास्ट स्टेप। थर्ड और लास्ट स्टेप। अब यहां पे इस वाले पार्ट में अगर अगर इंफॉर्मेशन अगर इंफॉर्मेशन सही है, सही हो गया है। सही हो गया है या पहले से था उससे फर्क।",
+      "source": "caption",
+      "english_text": "This will continue as long as your sum is greater than 100. Till then we will keep reducing the sum little by little and increasing the low. Now as soon as it breaks, as soon as it breaks, comes the third and last step. Third and last step. Now here in this part, if the information is correct, it has been correct. Has it been corrected or is it different from what it was before?"
+    },
+    {
+      "start_time": 1352.48,
+      "end_time": 1386.07,
+      "text": "सही है तो तो लेंथ निकाल लीजिए विंडो का। लेंथ कैसे निकालते हैं? हाई माइनस लो + 1, लो और हाई का लेंथ नहीं। इसमें कुछ हम मैथ नहीं कर रहे हैं। आपका 0 1 2 अगर लो यहां है और हाई यहां है तो इसका लेंथ आएगा 2 - 0 + 1 3, ठीक है? लेंथ निकाल लीजिए और इस लेंथ को अपने आंसर में जोड़ लीजिए अपने सुविधा अनुसार। अगर मैक्सिमम मांगा है तो मैक्सिमम कर दीजिए, मिनिमम मांगा है तो मिनिमम कर कुछ भी। वो तो आपको क्वेश्चन पे क्वेश्चन डिपेंड करता है। और वाइल लूप बंद कर दीजिए। वाइल लूप बंद कर दीजिए। वाइल",
+      "source": "caption",
+      "english_text": "If it is correct then find out the length of the window. How to find length? High minus low + 1, not the length of the low and high. We are not doing any math in this. Your 0 1 2 if low is here and high is here then its length will be 2 - 0 + 1 3, okay? Find out the length and add this length to your answer as per your convenience. If maximum is asked then do maximum, if minimum is asked then do minimum. It depends on question after question. And close the while loop. Close the while loop. vile"
+    },
+    {
+      "start_time": 1386.08,
+      "end_time": 1413.27,
+      "text": "बंद कर दो और बस आ जाइए। कंफर्टेबल होके आंसर रिटर्न कर दीजिए। फिर से एक बार रिवाइज करा दें। हाई को बढ़ाते रहना है। हाई को एक-एक करके बढ़ाते रहना है। वाइल लूप से। इंफॉर्मेशन में हाई को इंक्लूड कर लेना है। हाई को इंक्लूड कर लेना है। उसके बाद जब तक जब तक इंफॉर्मेशन गलत है, गलत है।",
+      "source": "caption",
+      "english_text": "Turn it off and just come. Please return the answer as per your convenience. Get it revised once again. Have to keep increasing the high. Have to keep increasing the height one by one. From the while loop. High has to be included in the information. High has to be included. After that, as long as the information is wrong, it is wrong."
+    },
+    {
+      "start_time": 1413.28,
+      "end_time": 1446.71,
+      "text": "गलत है। और मतलब लो को बढ़ाने से सही हो सकता है। उम्मीद है। सही हो सकता है कि नहीं हो सकता है? ये तो बाद का बात है। लेकिन लो से उम्मीद है थोड़ा कि लो बढ़ाने से हो सकता है। उम्मीद है। तब तक ये वाले पार्ट में तब तक लो को बढ़ाओ। लो को मतलब पहले हटाओ फिर बढ़ाओ। तो करो। चलिए इसके बाद नेक्स्ट पार्ट। अगर इंफॉर्मेशन सही हो गया है सही हो सकता है ना हुआ हो सकता है ना हुआ हो मतलब लोग कोई भगवान तो",
+      "source": "caption",
+      "english_text": "Is wrong. And increasing the mean lo can be correct. hopefully. Could it be true or not? This is a matter for later. But there is some hope that it can be done by increasing the level. hopefully. Till then increase the Lo in this part. Lo means first remove then increase. So do it. Let's go to the next part after this. If the information is correct, it may or may not have happened, it means people believe there is no God."
+    },
+    {
+      "start_time": 1446.72,
+      "end_time": 1479.269,
+      "text": "नहीं है हम कोई भगवान तो नहीं है हो सकता है इंफॉर्मेशन सही ना हुआ हो अगर हो गया है अगर हो गया है हो गया है उसको रिजल्ट में इंक्लूड कर लो रिजल्ट मतलब उसका लेंथ ले लो उसका जो अपना कटते हो रिजल्ट में इंक्लूड कर लो और वाइल लूप बंद कर दो और आंसर को रिटर्न कर दो। कोई भी दुनिया का स्लाइडिंग विंडो का वेरिएबल प्रॉब्लम इसी फ्लो चार्ट से होता है। इसी टेंप्लेट से होता है। ये एक टेंप्लेट है। जो भी हम क्वेश्चन कराए हैं ना हमें लगता है कितना",
+      "source": "caption",
+      "english_text": "No, we are not God. It is possible that the information may not be correct. If it has happened, if it has happened, include it in the result. Result means take the length of that which you cut, include it in the result and close the while loop and return the answer. Any sliding window variable problem in the world is solved with this flow chart. It is done from this template. This is a template. Whatever questions we have asked, how much do we think?"
+    },
+    {
+      "start_time": 1479.279,
+      "end_time": 1509.75,
+      "text": "1 2 3 4 5 6 7 आठ आठ क्वेश्चन कराए ना। एक लाइन या दो लाइन बदल के सिमिलर ही है। एक लाइन या मैक्सिमम दो या तीन लाइन। तभी हो सकता है ऊपर कुछ लिख दिए, नीचे कुछ लिख दिए। क्वेश्चन बाय क्वेश्चन इनफार्मेशन का थोड़ा बदल लिए। इंफॉर्मेशन सही है या गलत है ये डिसाइड करने में थोड़ा दो लाइन ज़्यादा लिखना पड़ गया लेकिन 70% यही टेंपलेट रहेगा अब चाहे 70 भी नहीं जी 80% 80% टेंपलेट यही रहेगा तो अगर आप ये वीडियो यहां तक देख रहे हैं बहुत-बहुत बधाई हो फिक्स और वेरिएबल आप सीख गए हैं।",
+      "source": "caption",
+      "english_text": "1 2 3 4 5 6 7 Get eight questions asked. It is similar except for one or two lines changed. One line or maximum two or three lines. Only then it is possible to write something above and something below. Changed the information slightly question by question. To decide whether the information is right or wrong, I had to write a little more than two lines, but 70% will remain the same template, even if not 70, 80%, 80% of the template will remain the same, so if you are watching this video till now, then many congratulations, you have learned fix and variable."
+    },
+    {
+      "start_time": 1509.76,
+      "end_time": 1531.159,
+      "text": "एक से दो क्वेश्चन प्रैक्टिस करेंगे वो पैटर्न वाला शीट से जो डिस्क्रिप्शन में मिल जाएगा। आपको स्लाइडिंग विंडो आ जाएगा। स्लाइडिंग विंडो अब आप ऐसा किसी इंटरव्यूअर को समझाएंगे तो वो खुश हो जाएगा कि हां चलो बच्चा है तो तेज। है ना? तो चलिए ये था एक रिवीजन और कल से लिंक लिस्ट शुरू होने वाला है। लिंक लिस्ट का पैटर्न मतलब लिंक लिस्ट टॉपिक नहीं और तो कल से रेगुलर आइएगा कंसिस्टेंट रहिएगा।",
+      "source": "caption",
+      "english_text": "You will practice one to two questions from the pattern sheet which will be found in the description. You will see a sliding window. Sliding Window: Now if you explain this to an interviewer, he will be happy that yes, if the child is there then it is fast. Isn't it? So this was a revision and the link list is going to start from tomorrow. Pattern of link list does not mean link list topic and hence come regularly from tomorrow and remain consistent."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

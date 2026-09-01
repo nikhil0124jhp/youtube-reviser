@@ -1,0 +1,695 @@
+{
+  "video_id": "I1-0ALAJxZI",
+  "video_title": "HEAP On Pairs Explained in One Shot | CPP JAVA PYTHON | DSA Patterns",
+  "video_number": 63,
+  "chunks": [
+    {
+      "start_time": 2.71,
+      "end_time": 35.83,
+      "text": "99% लोग इस तरीके के कांसेप्ट को ऐसा स्किप ही कर देते हैं। मतलब पढ़ना भी पढ़ाना भी क्योंकि उनको खुद नहीं आता है। तो बहुत सारे लोगों को हम देखें कि हिप ऑन पेयर्स इस वाले पूरे क्वेश्चन को छोड़ ही देते हैं कि चलो छोड़ो ये क्या है? सिंपल हिप पढ़ लेते हैं। नहीं देखिए आज हम दो क्वेश्चन कराने वाले थे। लेकिन हमको एक चीज स्ट्राइक किया कि आप लोगों को ये तो अभी आता नहीं है। हिप ऑन पेयर्स आता नहीं है। और ये जितना सिंपल लगता है उतना सिंपल है नहीं। क्योंकि लैंग्वेज स्पेसिफिक है और बहुत कॉम्प्लेक्स है। पता नहीं क्यों। तो आज इस वीडियो में ये वीडियो बहुत बड़ा आपको लग रहा होगा देखने में। लेकिन इस वीडियो में तीन सेक्शन हैं। चार सेक्शन है बल्कि। पहला ये वाला इंट्रो सेक्शन है। तो ये हम आपको अह वो एनकरेज करेंगे कि आप ये",
+      "source": "caption",
+      "english_text": "99% people skip this type of concept. That means teaching as well as reading because they don't know how to do it themselves. So we see many people who are hip-on couples leave the whole question aside, what is this? Let's read Simply Hip. No see, today we were going to ask two questions. But one thing struck us that you people don't know this yet. Hip on pairs do not come. And it is not as simple as it seems. Because the language is specific and very complex. Dont know why. So today in this video, this video may seem very big to you. But there are three sections in this video. There are four sections rather. The first one is the intro section. So we will encourage you that you"
+    },
+    {
+      "start_time": 35.84,
+      "end_time": 61.99,
+      "text": "पूरा देखिए। 2 3 4 मिनट का आपको हम इंट्रो दे देंगे कि होने क्या वाला है। उसके बाद आप अपने-अपने लैंग्वेज पे बढ़ सकते हैं। आपको कहीं ना कहीं टाइम स्टैंप दिख रहा होगा C++, Java, Python उस टाइम स्टैंप पे जाके अपना सिंटेक्स देख सकते हैं क्योंकि ये पूरा, आपको समझाना है कि वो लिखा कैसे जाता है। तो देखिए। इंट्रो में क्या है ना कि प्रॉब्लम कहां पे आती है? देखिए अभी तक हम लोग क्या पढ़े थे हिप में? अभी तक हम लोग दो क्वेश्चन कर चुके हैं। के मोस्ट लार्जेस्ट और के स्मालेस्ट उसमें आप हिप बनाए थे। हिप बनाए थे बहुत अच्छी बात है।",
+      "source": "caption",
+      "english_text": "See it completely. We will give you a 2 3 4 minute intro of what is going to happen. After that you can proceed in your own language. You must be seeing a time stamp somewhere. C++, Java, Python can go to that time stamp and see your syntax because this is complete, you have to explain how it is written. So see. What is there in the intro and where does the problem come from? See what we have read till now in HIP? Till now we have asked two questions. You had made hip in K's largest and K's smallest. It is a very good thing that you made hips."
+    },
+    {
+      "start_time": 62.0,
+      "end_time": 91.91,
+      "text": "तो उसमें दिक्कत कहां हुई थी? हिप बनाए थे किस तरीके का? दो तरीके का हम आपको बोले थे कि हिप होता है एक होता है मिन हीप। जिसमें सबसे छोटा एलिमेंट ऊपर चला जाता है। एक होता है मैक्स हिप जिसमें सबसे बड़ा एलिमेंट ऊपर चला जाता है तो बहुत अच्छी बात है। लेकिन वो सब हिप में ना क्या स्टोर कर रहे थे आप? इंटीजर। एक आइटम, इंटीजर स्टोर कर रहे थे। तो वो ऐसा आपका हिप ऐसा दिखता था कि सेवन सबसे ऊपर रहता था 3 2 5 ऐसा मैक्स हिप में। लेकिन बहुत हिप के जो क्वेश्चन होते हैं ना मीडियम लेवल के या हार्ड लेवल के उसमें आपको कभी-कभी पेअर स्टोर करना पड़ सकता है।",
+      "source": "caption",
+      "english_text": "So where was the problem in that? What kind of hip were you made? We told you that there are two types of hip, one is min hip. In which the smallest element goes on top. One is Max Hip in which the biggest element goes up, so it is a very good thing. But what were you storing all that in your hip? Integer. Were storing one item, integer. So that's how your hip looked like that seven was at the top 3 2 5 like this in Max's hip. But sometimes you may have to store pairs in the questions which are of very high level, be it medium level or hard level."
+    },
+    {
+      "start_time": 91.92,
+      "end_time": 121.51,
+      "text": "पेअर का क्या मतलब है? फॉर एग्जांपल आप एक ऐसा डेटा स्टोर कर रहे हैं फॉर एग्जांपल नेम का डेटा स्टोर कर रहे हैं। फॉर एग्जांपल आप ऐसा कर रहे हैं कि अमन अमन कितने बच्चों का नाम है? तो अमन चार बच्चों का नाम है। तो ये एक जोड़ा हो गया। एक पेअर हो गया। C++ वाले पेयर जावा वाले हम आपको समझाएंगे क्लास कैसे बनाया जाता है। तो थोड़ा पेशेंस रखिए पाइthन वालों को भी। मान लो दूसरा नाम है नमिता। नमिता कितने लड़कियों का नाम है? तो ये बोलेगी तीन लड़कियों का नाम है। फिर आता है कि एक प्रत्युष प्रत्युष कितने बच्चों का नाम है? तो प्रत्युष पांच बच्चों का नाम है।",
+      "source": "caption",
+      "english_text": "What does pair mean? For Example: You are storing a data named For Example. For example, you are saying that how many children have the name Aman Aman? So Aman is the name of four children. So it became a couple. One pair is done. Paired with C++ and Java, we will explain to you how a class is created. So have some patience for Python people also. Suppose the other name is Namita. How many girls name Namita? So it will say the names of three girls. Then comes how many children are named after one Pratyush Pratyush? So Pratyush is the name of five children."
+    },
+    {
+      "start_time": 121.52,
+      "end_time": 146.869,
+      "text": "तो ये अगर डाटा है। आपसे कोई पूछता है कि एक बात बताओ भाई। दो ऐसे नाम बताओ जो सबसे फ्रीक्वेंट हो। कितने? दो ऐसे नाम बताओ जो सबसे ज्यादा फ्रीक्वेंट हो। सबसे ज्यादा बच्चों के नाम हो। तो आप क्या बताएंगे कि एक तो हो गया सर प्रत्युष जो पांच बच्चों का और अमन जो कि चार बच्चों का ये क्या बोलता है? चिल्ला चिल्ला के क्या बोलता है? हिप। आपको कितने एलिमेंट चाहिए? टॉप के एलिमेंट्स चाहिए। टॉप के नाम चाहिए टॉप के। तो ये चिल्ला के क्या बोलता है? हिप।",
+      "source": "caption",
+      "english_text": "So if this is data. Someone asks you, brother, tell me one thing. Name two names which are most frequent. How many? Name two names which are most frequent. Most of the names should be of children. So what can you tell us, Sir Pratyush who has five children and Aman who has four children, what does he say? What does he say by shouting? Hip. How many elements do you need? Top elements are required. Top names are needed. So what does he say by shouting? Hip."
+    },
+    {
+      "start_time": 146.879,
+      "end_time": 181.35,
+      "text": "लेकिन प्रॉब्लम कहां आती है? ये तो हिप है बहुत अच्छी बात है। ये डाटा हिप में स्टोर कैसा करें? मतलब क्या स्टोर कर दें? फॉर एग्जांपल आप हिप में कैसे ये डेटा स्टोर करेंगे? हिप क्या बोलता था? मिनिमम वाला ऊपर चला जाएगा और मिनिप की बात कर रहे हैं कि मैक्सिमम अगर बोलता था मैक्सिमम ऊपर चला जाएगा। लेकिन जब आप ये पेअर स्टोर करने लगे अब इसमें तो दो वैल्यू है। एक इसमें स्ट्रिंग है। पहला इसमें स्ट्रिंग है और फिर इसमें एक इंटीजर है। तो हिप कैसे डिसाइड करेगा किससे हमको सॉर्ट करना है? मतलब किस आदमी को ऊपर भेजना है? हिप इसका क्या देखेगा? हिप इसका फर्स्ट देखेगा, हिप इसका सेकंड देखेगा। मान लीजिए आप बोलते हैं कि अरे सर इसमें तो क्या है?",
+      "source": "caption",
+      "english_text": "But where does the problem come from? This is hip, it's a good thing. How to store this data in hip? Meaning, what should we store? For example, how will you store this data in HIP? What did hip say? The one with minimum will go up and we are talking about Minip that if the maximum was said then the maximum will go up. But when you start storing this pair, now it has two values. One is string in it. First it contains a string and then it contains an integer. So how will HIP decide whom to sort with? Meaning, which person should be sent up? What will Hip see of it? Hip will see its first, Hip will see its second. Suppose you say, Hey Sir, what is there in this?"
+    },
+    {
+      "start_time": 181.36,
+      "end_time": 214.229,
+      "text": "स्ट्रिंग में तो कौन ही है? हम इसका सेकंड देखेंगे और वैसा कर देंगे। तो ठीक है आप सेकंड देखेंगे लेकिन मान लीजिए एक आदमी का नाम अमन है वो चार बच्चो का नाम है और एक और नाम प्रत्युष है वो भी चार बच्चों का नाम है वो भी चार बच्चों का नाम है अब आप इसमें क्या बोले कि हम तो सेकंड के हिसाब से डिसीजन लेने वाले थे लेकिन सेकंड तो दोनों का चार है अब हिप के टॉप में कौन सा पेयर रहेगा अमन फोर रहेगा कि प्रत्युष चार रहेगा ये कौन रहेगा ये कौन बताएगा इसी के लिए हम लोग ये डिसाइड करते हैं ना कि जब भी हम लोग हिप ऑफ पेयर्स बनाएं सबसे पहले तो हिप ऑफ पेयर्स बनाना ही हार्ड है सिंटेक्स वाइज उसके बाद हम लोग ये डिसाइड",
+      "source": "caption",
+      "english_text": "Who is there in the string? We will see its second and do the same. So okay you will see the seconds but suppose one person's name is Aman, that is the name of four children and another name is Pratyush, that is also the name of four children, that too is the name of four children. Now what do you say in this that we were going to take the decision according to the seconds but the seconds are four of both, now which pair will remain at the top of the hip, will Aman be four or Pratyush will be four? Who will tell this, that is why we decide this, not whenever we hip off. Make Pairs: First of all making hip off pairs is difficult syntax wise, after that we decide this."
+    },
+    {
+      "start_time": 214.239,
+      "end_time": 246.149,
+      "text": "करते हैं कि देखो भाई ऐसा हम हिप बनाएंगे। ये सब हम लोग रूल डिसाइड करते हैं और इन रूल का प्रोग्राम कैसे लिखना है सब बताएंगे आगे। लेकिन हम लोग ये मन में सोचते हैं कि देखो हम एक हिप ऑफ पेयर्स बनाने वाले हैं। ठीक बात है। हिप में क्या स्टोर होगा? पेअर स्टोर होगा पूरा-पूरा पेअर। अब उसमें कैसे डिसाइड होगा कि कौन सा ऊपर है, कौन सा नीचे है, कौन सा मिनिमम है? हम लोग इसको ये बोल सकते हैं कि देखो अगर मान लो दो पेयर, दो पेयर के बीच का सेकंड इक्वल नहीं है। मान लो एक यहां पे नमन है। एक यहां पे नमन है और तीन है। तब तो ठीक है कि इन दोनों के बीच में अगर तुम",
+      "source": "caption",
+      "english_text": "Let's say look brother, we will make it hip. We decide all these rules and we will tell you further how to write a program based on these rules. But we think in our mind that look, we are going to make a hip pair of pairs. That's right. What will be stored in the hip? The pair will be stored in full. Now how will one decide which is above, which is below, which is minimum? We can say this by saying that if suppose there are two pairs, the second between the two pairs is not equal. Consider this as a tribute. One is a bow here and there are three. Then it is okay if you are in between these two"
+    },
+    {
+      "start_time": 246.159,
+      "end_time": 274.79,
+      "text": "कंपेयर करोगे तो इनका सेकंड मतलब सिमिलर नहीं है। इनका सेकंड अलग-अलग है। मतलब एक फोर है, एक थ्री है। इसमें एक काम करो कि जिसका मैक्सिमम सेकंड है उसको ऊपर भेज दो। तो ये क्या बोलेगा कि ठीक है? प्रत्युष फोर ऊपर चला गया। प्रत्युष फोर ऊपर चला गया और नमन तीन नीचे आ गया। नमन तीन नीचे आ गया आपके हिप में। लेकिन अब मान लो ऐसा कोई एली एंट्री आ गया जिसका फोर और इसका फोर सेम है। तो ये क्या होगा? अब हम लोग बोल सकते हैं कि एक काम करो भाई। अब तुम फर्स्ट को देखने लग जाओ और जिसका अल्फाबेटिकली छोटा नाम है उसको ऊपर रख दो।",
+      "source": "caption",
+      "english_text": "If you compare, their second meaning is not similar. Their seconds are different. Meaning one is four, one is three. Do one thing in this, send the person who has maximum seconds to the top. So what will he say that is okay? Pratyush four went up. Pratyush went up four and Naman went down three. Naman three came down to your hip. But now suppose an alley entry comes whose four and its four are the same. What would it be then? Now we can say, do one thing brother. Now you start looking at the first one and put the one whose name is alphabetically shorter on top."
+    },
+    {
+      "start_time": 274.8,
+      "end_time": 299.909,
+      "text": "अब ये क्या करेगा कि अल्फाबेटिकली इसका छोटा नाम है। अमन का नाम अल्फाबेटिकली छोटा है। तो ये क्या करेगा? अमन को ऊपर रख देगा। तो आपका ही पैसा दिखेगा। अब आप इसमें से टॉप क्वेरी करेंगे तो आपको क्या मिलेगा? अमन फोर मिलेगा। क्यों? क्योंकि एक बात तो ये फोर और फोर इससे बड़ा है। और जब दोनों फोर का टाई हो गया तो आप लोग एक रूल बनाएं कि अल्फाबेटिकली जो छोटा है उसको ऊपर रखो। तो ये सब रूल बनता कैसे है? ये सोचना तो आसान है कि ऐसा बनाएंगे। लेकिन ये रूल बनेगा कैसा?",
+      "source": "caption",
+      "english_text": "Now what it will do is alphabetically its short name. The name Aman is alphabetically short. So what will he do? Will put peace on top. Then only your money will be visible. Now if you do top query from this, what will you get? Will get Aman Four. Why? Because one thing is this four and four is bigger than this. And when there is a tie of four, then you all make a rule that the one which is alphabetically smaller should be placed on top. So how are all these rules made? It is easy to think that this will be done. But how will this rule be made?"
+    },
+    {
+      "start_time": 299.919,
+      "end_time": 333.43,
+      "text": "अब अब आप फर्स्ट को कैसे सॉर्ट करते हैं? आप बोलते हैं कि जब फर्स्ट इक्वल नहीं हो जब पेयर का फर्स्ट इक्वल नहीं हो तब तुम फर्स्ट पे करो। उस फर्स्ट में भी उसको मिन हीप बनाना है कि मैक्स हिप बनाना है? हो सकता है ना? अगर दो पेयर का फर्स्ट इक्वल नहीं है तो आप उसको क्या करना चाहते हैं? आप उसमें मिन हीप का बिहेवियर लाना चाहते हैं कि मैक्स हिप का लाना चाहते हैं। अगर दोनों का फर्स्ट सेम है तो बात आ जाती है दोनों के सेकंड पे। उन दोनों के सेकंड पे कैसा बिहेवियर चाहिए? मीन चाहिए कि मैक्स चाहिए? ऐसा हो सकता है कि आप बोलें कि भई जब फर्स्ट इक्वल नहीं हो तो ये मीन हीप की तरह बिहेव करे और जब फर्स्ट इक्वल हो तो",
+      "source": "caption",
+      "english_text": "Now how do you sort first? You say that when first is not equal, when first of the pair is not equal then you pay first. In that first one too, should it be made min or max hip? Is it possible? If the first of two pairs is not equal, what do you want to do with it? Do you want to bring Min Heap's behavior in it or Max Heap's behavior? If both of them are first sem, then the matter comes to both of them second. What kind of behavior should be expected on the second day of both of them? Do you want mean or max? It may happen that you say that when the first is not equal then it will behave like a mean heap and when the first is equal then it will behave like a mean heap."
+    },
+    {
+      "start_time": 333.44,
+      "end_time": 361.27,
+      "text": "सेकंड को देखो और मैक्स हिप की तरह बिहेव करने लग जाओ। क्वेश्चन बाई क्वेश्चन ही डिपेंड करता है। बहुत सारे कॉम्बिनेशन है। तो आइए हम आप लोग को दिखाते हैं कि हर लैंग्वेज में ऐसा हिप बनाया कैसे जाता है? क्योंकि बहुत जरूरी है कि आपको पता हो कि ये हिप हम बनाएंगे कैसा? इसके लिए लिखेंगे कैसा? तो आइए अब आप लोग अपने-अपने सेक्शन पे स्किप कर सकते हैं। अगला सेक्शन C++ का है फिर जावा का है फिर पाइथन का है। तो अपने-अपने सेक्शन पे चले जाइए और पूरा वेलकम टू द C++ पार्ट। तो चलिए अब आप लोग इंट्रोडक्शन सुन चुके हैं तो थोड़ा बहुत आईडिया है लेकिन बहुत ध्यान से सुनिएगा।",
+      "source": "caption",
+      "english_text": "Watch the seconds and start behaving like Max Hip. It depends question by question. There are many combinations. So let us show you how such hip is made in every language? Because it is very important that you know how we will make this hip? How will you write for this? So now you guys can skip to your respective sections. The next section is of C++ then Java then Python. So go to your respective sections and complete the Welcome to the C++ part. So, now that you guys have heard the introduction, you have a little idea but listen very carefully."
+    },
+    {
+      "start_time": 361.28,
+      "end_time": 394.629,
+      "text": "थोड़ा कॉम्प्लेक्स हो जाएगा। अगर लास्ट तक हो सकता है कि ना भी समझ में आए ना 10% तो ठीक है। सिंटेक्स हम आपको दे देंगे। उस सिंटेक्स से आपको हिप हमेशा बनाना है पेयर जब की बात आए। ठीक है? नॉर्मल हिप तो आप लोग जानते हैं मैक्स कैसे बनता है। मीन कैसे बनता है? अ पेअर वाले में थोड़ा सा डिफिकल्टी होती है। तो चलिए सिंपलीसिटी के लिए हम लोग क्या करेंगे कि आपको कभी भी कुछ भी करना पड़ सकता है। आपको इंटीजर स्ट्रिंग का स्ट्रिंग ट्रिंग का इंटीजर कुछ भी बनाना पड़ सकता है ना हम लोग एक पैर लेंगे जिसमें हम लोग चाहते हैं कि फर्स्ट आदमी हमेशा इंटीजर रहे और सेकंड आदमी हमेशा स्ट्रिंग रहे। ठीक है? हम लोग ये करेंगे कि जब फर्स्ट इक्वल ना हो। जब",
+      "source": "caption",
+      "english_text": "It will get a little complicated. Even if you don't understand even 10% till the end, that's okay. We will give you the syntax. With that syntax you always have to make a pair when it comes to. Ok? Normal Hip: You guys know how Max is made. How is Pisces formed? There is a little difficulty in the A pair one. So, what will we do for simplicity that you may have to do anything at any time. You may have to make integer string string string integer anything. We will take one step in which we want the first one to always be an integer and the second one to always be a string. Ok? We will do this when the first is not equal. when"
+    },
+    {
+      "start_time": 394.639,
+      "end_time": 421.35,
+      "text": "फर्स्ट इक्वल ना हो तब क्या हो? मतलब तब फर्स्ट पे डिसीजन होगा। और जब फर्स्ट इक्वल हो जाए तो सेकंड पे डिसीजन होगा। तब इसमें देखिए बहुत सारी पॉसिबिलिटी आ सकती है। फॉर एग्जांपल अगर आपका दो पेयर ऐसा दिखता है वन और एप्पल। ठीक बात है। दो पेयर ऐसा है और एक और पेअर है टू और लीची। ठीक बात है। अब देखिए यहां इस पे इसके दोनों का फर्स्ट में डिफरेंट है। इसमें वन है इसमें टू है। इसमें डिसीजन किस पे होना चाहिए? फर्स्ट पे होना चाहिए।",
+      "source": "caption",
+      "english_text": "What happens if first is not equal? Meaning then the first pay decision will be taken. And when the first becomes equal, the decision will be taken on the second. Then see, there are many possibilities in this. For example, if your two pairs look like this, One and Apple. That's right. Two pairs are like this and another pair is two and litchi. That's right. Now see here is the difference between both of them in the first place. There is one in this, there is two in this. On what should the decision be taken in this? Should be on first pay."
+    },
+    {
+      "start_time": 421.36,
+      "end_time": 454.39,
+      "text": "अब ये फर्स्ट पे कैसे होना चाहिए? फर्स्ट पे ये मिन हीप की तरह बिहेव करे या मैक्स हिप की तरह बिहेव करे। मतलब कि मान लीजिए वन और एप्पल ऑलरेडी है। जब आप टू और लीची को पुश करते हैं तो टू और लीची क्या टॉप पे चला जाना चाहिए या टू और लीची इससे नीचे रहना चाहिए मतलब कि मैक्स शीट में क्या होता है? मैक्स शीट में आप जब किसी को पुश करते हैं तो सबसे मैक्स वाला आदमी टॉप पे बैठा रहता है। मीन में जब आप पुश करते हैं सबसे मिन वाला टॉप पे बैठा रहता है। तो यहां भी वो बिहेवियर होगा। वो बिहेवियर कैसा होना चाहिए? वो बिहेवियर या तो मीन टाइप का हो सकता है या तो मैक्स टाइप का हो सकता है। तो मतलब कि हमारे जब फर्स्ट से डिसीजन हो रहा हो मतलब जब हमारा",
+      "source": "caption",
+      "english_text": "Now how should this first pay be done? At first it should behave like min heap or max heap. Meaning that suppose One and Apple are already ready. When you push the two and litchi, should the two and litchi go to the top or should the two and litchi remain below it, meaning what happens in the max sheet? When you push someone in the max sheet, the person with the highest max sits on top. When you push in a mean, the one with the meanest remains on top. So that behavior will happen here also. What should that behavior be like? That behavior can either be of mean type or of max type. So it means that when our decision is being taken from the first, it means when our"
+    },
+    {
+      "start_time": 454.4,
+      "end_time": 487.83,
+      "text": "फर्स्ट इक्वल ना हो तो बिहेवियर मीन हो सकता है या मैक्स हो सकता है। सिमिलरली मान लीजिए एक और पेअर है जोकि वन और बनाना है। अब गौर से देखेंगे तो ये वन और ये वन सिमिलर है। तो फर्स्ट तो सेम है तो फर्स्ट पे तो डिसीजन ले नहीं सकते हैं। दो एलिमेंट्स सेम हैं तो कैसे डिसीजन लेंगे? कौन सा छोटा कौन सा बड़ा? अब डिसीजन होगा सेकंड से। अब डिसीजन होगा एप्पल और बनाना से। अगेन ये डिसीजन कैसा होना चाहिए? ये मीन टाइप का डिसीजन है कि ये मैक्स टाइप का डिसीजन है। ये कैसा डिसीजन है? तो अगेन सेकंड में भी दो चीजें हो सकती है। मतलब कि हमारे पास टोटल चार तरीके के हिप बन",
+      "source": "caption",
+      "english_text": "If the first is not equal then the behavior can be mean or max. Similarly, suppose there is another pair which is one more banana. Now if you look carefully, this one and this one are similar. So the first is the same, so the decision cannot be taken on the first. How to take decision if two elements are same? Which is small and which is big? Now the decision will be taken within seconds. Now the decision will be taken by Apple and Banana. Again what should this decision be like? Is this a mean type decision or a max type decision? What kind of decision is this? So even in the next second two things can happen. Meaning that we have a total of four types of hip buns."
+    },
+    {
+      "start_time": 487.84,
+      "end_time": 521.67,
+      "text": "सकते हैं पेयर में। पहला तो कि दोनों मिन हीप की तरह बिहेव करें। मतलब जब डिसीजन फर्स्ट पे लिया जा रहा है तो भी वो मिन हीप की तरह बिहेव करे। और जब डिसीजन सेकंड पे लिया जा रहा है तो भी वो मिन हीप की तरह बिहेव करे। अब ये हो सकता है कि यहां पे मिन हो और ये मैक्स हो। मतलब कि जब दो पेयर का फर्स्ट डिफरेंट हो तब तो ये मिन हीप की तरह बिहेव करे लेकिन जैसे ही दो पेयर का मीन आ से फर्स्ट सेम हो जाए तो ये मैक्सिप की तरह बिहेव करने लगे मतलब कि वन और एप्पल वन और बनाना वन वन सेम है। अब ये बनाना वाले को ऊपर भेज देगा क्योंकि ये मैक्स हिप की तरह बिहेव कर रहा है तो ये हो सकता है। सिमिलरली फर्स्ट ये मैक्स",
+      "source": "caption",
+      "english_text": "Can be in pairs. First of all, both of them should behave like Min Heep. Meaning, even when the decision is being taken first, he should behave like Min Heep. And even when the decision is being taken on a split second, he should still behave like Min Heep. Now it may be possible that here the pay is min and this is max. Meaning that when the first difference of two pairs is different, then it behaves like a min heap, but as soon as the mean of two pairs becomes the first same, then they start behaving like a maxip, meaning that one and apple one and banana one are one same. Now this will send the banana guy up because he is behaving like Max Hip so this can happen. Similarly First Ye Max"
+    },
+    {
+      "start_time": 521.68,
+      "end_time": 554.63,
+      "text": "बिहेव करे और ये मीन करे या तो दोनों को मैक्स मैक्स करा दे। तो आप देख सकते हैं चार केसेस पॉसिबल हैं। हम चारों केसेस क्वेश्चन बाय क्वेश्चन आपको आते रहेंगे। आपको इसका हिप बनाने आना चाहिए कि मेरा हिप का रूल्स ये है कि जब फर्स्ट इक्वल नहीं है तो ये करो भाई। फर्स्ट इक्वल है तो सेकंड पे डिसाइड करके ये करो भाई। तो आपको ये चारों चीजें बनानी आनी चाहिए। देखिए। अब हम आपको समझाते हैं कि ये होता कैसा है। तो सबसे पहले तो आपको एक हिप बनाना पड़ेगा और मेरी मेरी राय से अब हम जानते हैं कि आपको चैट जीपीटी बोलेगा कि मीन हिप के लिए तो इतना कुछ करने की जरूरत नहीं है जब आपको। लेकिन आप हमेशा इसी",
+      "source": "caption",
+      "english_text": "Either he behaves and this means it or makes both of them max max. So you can see four cases are possible. We will keep coming to you the four cases question by question. You should know how to make it hip, the rules of my hip are that when the first is not equal then do this brother. If first is equal then decide on second and do this brother. So you should know how to make these four things. See. Now let us explain to you how this happens. So first of all you have to make a hip and from my my opinion now we know that you chat GPT will say that for mean hip there is no need to do so much when you. but you always"
+    },
+    {
+      "start_time": 554.64,
+      "end_time": 589.03,
+      "text": "तरीके से बनाया कीजिए। हमेशा जब आपको पेअर ऑफ हिप्स बनाना रहे तो आप इसी को फॉलो करिएगा। सबसे पहले लिखिएगा प्रायोरिटी q प्रायोरिटी q अब पहले हम लोग किसका हिट बनाते थे इंटीजर का अभी तक बनाते थे अब आप लोग किसका बनाते हैं पेअर का तो लिखिए पेअर इंट स्ट्रिंग जैसा भी आपको पेअर चाहिए इंट इंट का चाहिए तो वैसा बना लीजिए पेयर स्ट्रिंग हो गया कॉमा वेक्टर ऑफ जो भी यहां पे लिखे हैं यहां पे लिख दीजिए पेअर ऑफ इंट पेयर ऑफ इंट एंड ये इतना बड़ा होता है है।",
+      "source": "caption",
+      "english_text": "Make it properly. Always follow this when you want to make a pair of hips. First of all, write priority q, priority q, now earlier we used to make whose hit was of integer, till now whose hit you guys are making of pair, then write pair int string, whatever pair you want of int, if you want of int, then make that pair string, comma vector of whatever is written here, write here pair of int, pair of int and it is so big."
+    },
+    {
+      "start_time": 589.04,
+      "end_time": 615.03,
+      "text": "हम जानते हैं बहुत बड़ा है। दो कॉलन बंद कर दीजिए। एक पेयर का, एक वेक्टर का। कॉमा देके लिखिए CMP इसको बंद करके PQ का नाम दे दीजिए। ये लाइन याद रखिए। ये लाइन याद रखिए। ये लाइन क्यों याद रखिए? हम बताते हैं। ये लाइन सिंटेक्स है कि कोई भी आपको जब पेयर का ही बनाना हो इसको फॉलो करिए। हां। अब इसमें सीएमपी क्या है? बताते हैं। सीएमपी मतलब कंपेरेटर। हम लोग का कंपैरेटर। सीएमपी हम लोग ऊपर में लिखने वाले हैं अपना खुद का।",
+      "source": "caption",
+      "english_text": "We know it is very big. Leave off two colons. One of pair, one of vector. Write CMP after giving comma and name it PQ. Remember this line. Remember this line. Why remember this line? We tell. This line is the syntax that whenever you want to make a pair, follow it. Yes. Now what is CMP in this? Let us tell. CMP means Comparator. Our Comparator. CMP We are going to write our own above."
+    },
+    {
+      "start_time": 615.04,
+      "end_time": 648.069,
+      "text": "तो कोई भी अगर आपको दो पेयर का बना अगर आपको पेयर का ही बनाना रहे नो मैटर कि दोनों में मीन चाहिए दोनों में मैक्स चाहिए क्या चाहिए इन्हीं चारों में से कुछ चाहिए होगा ना भाई कुछ भी चाहिए होगा तो इन्हीं चारों में से इन चारों के अलावा तो कुछ हो नहीं सकता है आप ये बनाइए सीएमपी लिखिए अब बात करते हैं सीएमपी क्या होता है देखिए सीएमपी ना सी+ आपके सीएमपी को यूज करेगा ये डिसाइड करने के लिए कि कौन सा एलिमेंट टॉप पे जाना चाहिए और कौन सा एलिमेंट टॉप पे नहीं जाना चाहिए इसका क्या मतलब होता है देखिए सीएमपी ना हमेशा दो चीजों को कंपेयर करता है। मान लीजिए आपके दो जो जो पेयर है ना वो वन और एप्पल है।",
+      "source": "caption",
+      "english_text": "So any one, if you want to make it of two pairs, if you want to make only of pairs, no matter whether you want the mean of both, what is needed of the max of both, what is needed, you will need something out of these four, no brother, if anything else is needed, then apart from these four, nothing can be done, you make this, write CMP, now let's talk about what is CMP, see CMP or C+ will use your CMP to decide which element should go on top and which one. Element should not go on top, what does it mean? See, CMP always compares two things. Suppose your two pairs are One and Apple."
+    },
+    {
+      "start_time": 648.079,
+      "end_time": 673.75,
+      "text": "वन और एप्पल है। एक ये है और ये है टू और बनाना। एक समय में हम मान लीजिए इन दोनों पे डिसीजन लेने की कोशिश कर रहे हैं कि दोनों में से कौन सा टॉप पे जाएगा? C++ आपके CM से एक क्वेश्चन पूछता है। ये आपका A है। ये आपका B है। मतलब ये आपका पहला है। ये आपका दूसरा है। C++ एक सवाल पूछता है। इज़ A वर्स देन B?",
+      "source": "caption",
+      "english_text": "One and Apple. One is this and this is two and make. Suppose at one time we are trying to decide between these two, which of the two will come out on top? C++ asks your CM a question. This is your A. This is your B. Meaning this is your first. This is your second one. C++ asks a question. Is A worse than B?"
+    },
+    {
+      "start_time": 673.76,
+      "end_time": 707.75,
+      "text": "वर्स बेटर नहीं वर्स वर्स वर्स देन बी वर्स देन बी मतलब ए या बी से खराब है एक अब वो खराब मतलब कुछ भी हो सकता है वो खराब मतलब खराब c++ को मतलब है खराब है अगर वो मीन की बात करेगा तो ज्यादा वाला खराब होगा मैक्सिप की बात करेगा तो कम वाला खराब होगा तो खराब है क्या अगर इसका आंसर आपका कंपेरेटर फंक्शन यस देता है कंपेरेटर फंक्शन हम लोग लिखेंगे अभी बताएंगे कैसे लिखेंगे लेकिन अगर वहां से इसका आंसर यस आता है बी गोज़ ऑन टॉप। B गोज़ ऑन टॉप। अगर इसका आंसर नो",
+      "source": "caption",
+      "english_text": "Worse is not better, Worse is worse than B, Worse than B means A is worse than A or B. Now that bad can mean anything, that bad means bad. To c++ it means bad. If we talk about mean, then the higher one will be bad. If we talk about maxip, then the lower one will be bad, then it is bad. If the answer to this is your Comparator function gives yes, we will write the Comparator function, we will tell you now how to write it, but if the answer from there is yes then B goes. On top. B goes on top. If the answer is no"
+    },
+    {
+      "start_time": 707.76,
+      "end_time": 741.269,
+      "text": "आता है, A गोज़ ऑन टॉप। गोज़ ऑन टॉप। C प्लस प्लस का ये काम है करना। मतलब दो पेयर लिया वो A और B, वन एप्पल टू बनाना। वो पूछेगा कि क्या A B से खराब है? ए इज़ वर्स दैन B. अगर इसका आंसर यस आता है, तो बी टॉप पे जाएगा क्योंकि ए वर्स हो गया। अगर इसका आंसर नो आता है, मतलब ए इज़ नॉट वर्स दैन बी, ए टॉप पे जाएगा। अब हम आपको दिखाते हैं कि ये कैसे होगा मिनीप और मैक्सिमम में ये क्या करेंगे कि ऐसा हो जाए। चलिए अगेन थोड़ा सा सिंटेक्स ओवरलोड है। आपको एक बनाना है स्ट्रक्ट। हम जानते हैं आप लोग को स्ट्रक्ट नहीं आता है। सीख",
+      "source": "caption",
+      "english_text": "Here comes A Goes on Top. Farts on top. This is the work of C plus plus. Meaning, two pairs were taken, A and B, making one apple two. He will ask whether A is worse than B? A is worse than B. If the answer is yes, then B will go on top because A is worse. अगर इसका आंसर नो आता है, मतलब ए इज़ नॉट वर्स दैन बी, ए टॉप पे जाएगा। अब हम आपको दिखाते हैं कि ये कैसे होगा मिनीप और मैक्सिमम में ये क्या करेंगे कि ऐसा हो जाए। चलिए अगेन थोड़ा सा सिंटेक्स ओवरलोड है। आपको एक बनाना है स्ट्रक्ट। हम जानते हैं आप लोग को स्ट्रक्ट नहीं आता है। learning"
+    },
+    {
+      "start_time": 741.279,
+      "end_time": 775.19,
+      "text": "लीजिए सीख लीजिए याद कर लीजिए कोई बात नहीं। स्ट्रक्ट सीएमपी ऐसा खोलिए। बुल हम बोले ना सीएमपी क्या भेजता है? यस या नो तो एक बुल फंक्शन बुल ऑपरेटर ये सब सिंटेक्स है। ये सब आपको याद रखना पड़ेगा। कॉपी में लिख लीजिए। बार-बार टाइप करेंगे याद हो जाएगा। कॉन्स्ट पेयर कॉन्स्ट पेयर A कॉन्स्ट पेयर B ठीक है? कॉन्स्ट पेयर A और कॉन्स्ट",
+      "source": "caption",
+      "english_text": "लीजिए सीख लीजिए याद कर लीजिए कोई बात नहीं। स्ट्रक्ट सीएमपी ऐसा खोलिए। बुल हम बोले ना सीएमपी क्या भेजता है? यस या नो तो एक बुल फंक्शन बुल ऑपरेटर ये सब सिंटेक्स है। ये सब आपको याद रखना पड़ेगा। कॉपी में लिख लीजिए। बार-बार टाइप करेंगे याद हो जाएगा। कॉन्स्ट पेयर कॉन्स्ट पेयर A कॉन्स्ट पेयर B ठीक है? कॉन्स्ट पेयर A और कॉन्स्ट"
+    },
+    {
+      "start_time": 775.2,
+      "end_time": 809.11,
+      "text": "पेयर B इसको ऐसे भी कर सकते हैं। इसको इतना करने की जरूरत नहीं है। इसको इतना करने की जरूरत है नहीं। इसको आप ऐसे भी लिख सकते हैं कि बुल ऑपरेटर तो लिखना ही पड़ेगा। भूल ये एक जगह लिख के रख लीजिएगा। जिंदगी भर के लिए काम आएगा। हमको भी याद नहीं है। हम भी अभी जो तुरंत कोड लिखे हैं उसी से देख के बोल रहे हैं। आपका कैसा पेयर है? आपका कैसा पेयर है? तो आपका पेयर कैसा है? आपका पेयर ऐसा है ना? पेअर ऑफ़ इंट एंड स्ट्रिंग। आप यही पेयर इंसर्ट करना चाहते थे ना? हां। तो ये कर दीजिए। और पेअर इंट",
+      "source": "caption",
+      "english_text": "Pair B can do it like this also. There is no need to do this much. There is no need to do this much. You can also write it in such a way that you will have to write the bull operator. Don't forget to write this down in one place. Will be useful for whole life. We don't even remember. We are also speaking based on the code we have just written. What kind of pair is yours? What kind of pair is yours? So how is your pairing? Is your pair like this? Pair of int and string. This is the pair you wanted to insert, right? Yes. So do this. and pair int"
+    },
+    {
+      "start_time": 809.12,
+      "end_time": 842.23,
+      "text": "स्ट्रिंग बी। ठीक है? इसको बंद कर दीजिए इसको। अब इस फंक्शन को लिखते हैं। आइए, इस फंक्शन को लिखते हैं। सबसे पहले, सबसे पहले तो आपको देखना पड़ेगा कि अगर a डॉट फर्स्ट इज़ नॉट इक्वल टु B डॉट फर्स्ट। अगर a डॉट फर्स्ट इज़ नॉट इक्वल टू B डॉट फर्स्ट। अगर a डॉट फर्स्ट इज़ नॉट इक्वल टू B डॉट फर्स्ट। मतलब कि डिसीजन किस पे होना है? डिसीजन फर्स्ट पे होना है। डिसीजन फर्स्ट पे होना है। अब देखते हैं कि इसमें क्या लिखेंगे? देखिए। अब आइए, ये क्या? C++ क्या क्वेश्चन पूछ रहा है और किसका आंसर एक्सपेक्ट कर रहा है? इज़ A वर्ड्स देन B?",
+      "source": "caption",
+      "english_text": "String B. Ok? Turn this off. Now let's write this function. Let us write this function. First things first, you have to check if a dot first is not equal to b dot first. If a dot first is not equal to b dot first. If a dot first is not equal to b dot first. Meaning, on whom is the decision to be taken? The decision has to be taken first. The decision has to be taken first. Now let's see what will be written in it? See. Come now, what is this? What question is C++ asking and whose answer is it expecting? Is A words more than B?"
+    },
+    {
+      "start_time": 842.24,
+      "end_time": 867.59,
+      "text": "मान लेते हैं थोड़ी देर के लिए कि ये आपके दोनों A और B हैं। ओके? आप पहले वाले में मिन हीप बिहेवियर करना चाहते हैं। मतलब कि आप क्या चाहते हैं? इन दोनों में से टॉप पे कौन रहे? जो मिनिमम हो जो छोटा हो। मतलब देखिए सबसे पहली बात तो वन और टू इक्वल नहीं है तो ठीक है। इन दोनों पेयर में से टॉप पे कौन सा रहना चाहिए? हिप में मिन वाला। क्योंकि हम लोग मिन ही बना रहे हैं। तो टॉप पे वन और एप्पल रहना चाहिए।",
+      "source": "caption",
+      "english_text": "Let's assume for a moment that these are your two A and B. Ok? You want to have min heap behavior in the first one. I mean, what do you want? Who among these two will be on top? Whichever is minimum or which is small. I mean, first of all it is okay if one and two are not equal. Which of these two pairs should remain on top? The one with the min in the hip. Because we are just making min. So One and Apple should remain on top."
+    },
+    {
+      "start_time": 867.6,
+      "end_time": 900.389,
+      "text": "वन और एप्पल रहना चाहिए। अच्छा। इज ए वर्स देन B? ये कैसे पूछा जाता है? अगर आप मिन हीप बनाना चाहते हैं तो इसमें वर्स का क्या मतलब है? कौन सा आदमी वर्स होगा? जो आदमी ग्रेटर होगा वो आदमी वर्स होगा। वो आदमी खराब होगा ज्यादा। खराब या वर्स होगा? अगर आप मीन आपकी एक्सपेक्टेशन है कि मेरा मीन ही बने। वर्स क्या होगा? जो आदमी बड़ा है वो वर्स होगा। अच्छा। आप इसमें क्या चाहते हैं? आप इसमें क्या चाहते हैं कि छोटा वाला वहां जाए। यहां पे आप देखिए यहां पे आप क्या लिखिएगा यहां पे आप क्या",
+      "source": "caption",
+      "english_text": "Forest and Apple should remain. Good. Is A worse than B? How is this asked? What does vars mean if you want to create a min heap? Which man will be Versus? The man who is greater will be worse. That man will be worse. Will it be bad or worse? If you are a Pisces, your expectation is that I should also be a Pisces. What will be the verse? The man who is elder will inherit. Good. What do you want in it? What do you want the little one to go there? Here you see, here what you write, here you what"
+    },
+    {
+      "start_time": 900.399,
+      "end_time": 933.43,
+      "text": "लिखिएगा रिटर्न रिटर्न a डॉट फर्स्ट ग्रेटर दैन b डॉट फर्स्ट a डॉट फर्स्ट &gt; b डॉट फर्स्ट अब देखिए इसमें होगा क्या आप यहां पे क्या रिटर्न कर रहे हैं अगर a डॉट फर्स्ट इज़ ग्रेटर दैन b डॉट फर्स्ट तो आप ट्रू रिटर्न कर रहे हैं अगर आप ट्रू रिटर्न कर रहे हैं देखिए इस केस में आ जाइए a डॉट फर्स्ट क्या है वन b डॉट फर्स्ट क्या है टू इज़ वन लेस देन ग्रेटर दैन टू इसका आंसर क्या आएगा नो नो नो। हम क्या बोले थे? C++ को नो मिलता है तो क्या बोलता है? ए गोज़ ऑन टॉप। ए गोज़ ऑन टॉप। तो कौन जाएगा टॉप पे?",
+      "source": "caption",
+      "english_text": "Write return return a dot first greater than b dot first a dot first > b dot first Now see what will happen in this What are you returning here if a dot first is greater than b dot first then you are returning true if you are returning true see come in this case a dot first what is one b dot first what is two is one less than greater than two What will be the answer to this no no no. What did we say? What does it mean when C++ gets a no? A fart on top. A fart on top. So who will go on top?"
+    },
+    {
+      "start_time": 933.44,
+      "end_time": 964.79,
+      "text": "वन और एप्पल टॉप पे चला जाएगा। अगर मान लीजिए यहां पे क्या होता यहां पे ये क्या होता यहां पे मान लीजिए ए होता थ्री और एप्पल होता। अब आप क्या क्वेश्चन पूछते? इज़ थ्री ग्रेटर देन वन? इसका आंसर आता यस। वर्स वर्स यस पे क्या होता? बी गोज ऑन टॉप। मतलब टू और बनाना टॉप पे चला जाता। तो ऑटोमेटिकली ये मीन ही बिहेवियर इनफोर्स करता है। ऑटोमेटिकली ये मीन ही बिहेवियर इनफोर्स करता है। तो ये क्या है? ये मीन ही बिहेवियर है। a डॉट फर्स्ट इज़ ग्रेटर दैन B डॉट फर्स्ट। अगर इसका आंसर यस आएगा।",
+      "source": "caption",
+      "english_text": "One and Apple will go on top. If suppose what would have happened here, what would have happened here, suppose A would have been three and Apple would have been. Now what question do you ask? Is Three Greater Than One? The answer is yes. What would have happened on verse verse yes? B Goes on Top. Meaning two more bananas would have gone on top. So automatically this mean behavior is enforced. It automatically enforces this mean behavior. So what is this? This is mean behaviour. a dot first is greater than b dot first. If the answer is yes."
+    },
+    {
+      "start_time": 964.8,
+      "end_time": 999.509,
+      "text": "देखिए अगर इसका आंसर यस आ गया। अगर इसका आंसर यस आ गया। आप मान के चलिए कि ए और बी को भेजते हैं ना याद कर लीजिए कि यस में बी गोज ऑन टॉप। उल्टा होता है। यस आता है तो बी गोज ऑन टॉप। अगर मान लीजिए अगर मान लीजिए a डॉट फर्स्ट इज ग्रेटर दैन b डॉट फर्स्ट इसका आंसर यस आ गया अगर इसका आंसर यस आ गया तो मतलब ए वाला बड़ा है बी वाला छोटा है मीन हिट में किसको ऊपर जाना चाहिए बी वाले को ऑटोमेटिकली यस में ये बी को ऊपर भेजता है अगर इसका आंसर नो आ गया मतलब कि a डॉट फर्स्ट इज नॉट ग्रेटर दैन बी डॉट फर्स्ट मतलब a डॉट फर्स्ट ही एक्चुअल में छोटा है जाना किसको चाहिए ए को या ये",
+      "source": "caption",
+      "english_text": "See if the answer is yes. If the answer is yes. Let us assume that you send A and B. Remember that in yes, B goes on top. The opposite happens. If yes comes then B goes on top. If let's say a dot first is greater than b dot first then the answer is yes. If the answer is yes then it means A is bigger and B is smaller. In the mean hit, who should go up to B? It automatically sends B up in yes. If the answer is no it means a dot first is not greater than B dot first. That means a dot first is actually smaller. Who should go up A or this?"
+    },
+    {
+      "start_time": 999.519,
+      "end_time": 1034.39,
+      "text": "किसको भेज देता है ऑटोमेटिकली ये नो में ए को ऊपर भेज देता है ये मिनहिप का बिहेवियर नहीं समझ में आ रहा है याद कर लीजिए। कोई इसमें दिक्कत नहीं है। हम जानते हैं बहुत कॉम्प्लेक्स है। हमको ही मालूम नहीं है इतना कॉम्प्लेक्स क्यों बना दिया गया इसको। इसको सिंपलीफाई किया जा सकता था लेकिन नहीं किया कोई रीज़न ही होगा। हां। अब आपको क्या लिखना है? अब ये तो हुआ कि जब a डॉट फर्स्ट इज़ नॉट इक्वल टू B डॉट फर्स्ट। तब ये हो गया। अगर वो नहीं है तो आपको सेकंड पे डिसीजन लेना है। मान लेते हैं कि हमको सेकंड पे मीन चाहिए। सेम चीज लिख दीजिए। रिटर्न A. सेकंड &gt; B. सेकंड।",
+      "source": "caption",
+      "english_text": "Whom does he send automatically? He sends A in No. This is Minhip's behavior. I don't understand it. Remember this. There is no problem in this. We know it is very complex. We don't know why it was made so complex. This could have been simplified but there must be some reason why it was not done. Yes. What do you have to write now? Now this is what happens when a dot first is not equal to b dot first. Then it happened. If he is not there then you have to take a second decision. Let us assume that we want the mean per second. Write the same thing. Returns A. seconds > B. seconds."
+    },
+    {
+      "start_time": 1034.4,
+      "end_time": 1068.07,
+      "text": "ये क्या है? मिन हीप ऑन सेकंड। सेम लॉजिक मीन हिप ऑन सेकंड। ये क्या कीजिए? अपने ऑपरेटर को बंद कर दीजिए। स्ट्रक्ट को बंद करके सेमी कॉललन लगाना मत भूलिएगा। ये देखिए ये आपको सीएमपी ऊपर लिखना पड़ेगा। नहीं समझ में आ रहा है याद कर लीजिए। जब आप A डॉट फर्स्ट ग्रेटर दैन B डॉट फर्स्ट लिखेंगे मीन हिप बन जाएगा उल्टा। a डॉट सेकंड ग्रेटर दैन B डॉट सेकंड। सेकंड वाले का मीन हिप बन जाएगा। अगर आपको फर्स्ट वाले को मैक्स हिप बनाना है। अगर आपको फर्स्ट वाले को मैक्स हिप बनाना है आप क्या करेंगे? जस्ट यहां पे ये लिख देंगे रिटर्न a डॉट फर्स्ट लेस",
+      "source": "caption",
+      "english_text": "What is this? Min heap on second. Same logic means hip on second. What should I do? Switch off your operator. Don't forget to close the structure and put a semi colon. See this, you will have to write CMP above. Don't understand, remember it. When you write A dot first greater than B dot first, Mean Hip will become inverted. a dot second greater than b dot second. The second one will become the mean hip. If you want to make the first one max hip. If you had to make the first one Max Hip, what would you do? Just write here return a dot first less"
+    },
+    {
+      "start_time": 1068.08,
+      "end_time": 1101.75,
+      "text": "दैन b डॉट फर्स्ट ये क्या बन गया ये बन गया मैक्स ये बन गया मैक्स उस लॉजिक से देख लीजिएगा आपको समझ में आ जाएगा ड्राई डन करके देखेंगे आ जाएगा आपको सेकंड वाले को मैक्स बनाना है बस उल्टा कर दीजिए साइन रिटर्न a सेकंड ग्रेटर दैन सॉरी ग्रेटर दैन नहीं लेस देन लेस देन b सेकंड b सेकंड यह आपसे इंटरव्यू में नहीं पूछा जाएगा क्योंकि 99% लोगों को यह लॉजिक खुद नहीं आता है। तो यह अब करना पड़ेगा। आपको क्या कर नहीं कुछ कर सकते हैं। आपको अगर",
+      "source": "caption",
+      "english_text": "Than b dot first, what has become of this, this has become max, this has become max, see with that logic, you will understand, dry done and see, you will get it, you have to make the second one max, just reverse the sign return a second greater than, sorry greater than, not less than, less than b second b second This will not be asked to you in the interview because 99% people do not know this logic themselves. So this will have to be done now. You can't do anything. if you"
+    },
+    {
+      "start_time": 1101.76,
+      "end_time": 1136.31,
+      "text": "हिप ऑफ पेयर चाहिए तो ये आपको करना पड़ेगा। डिपेंडिंग ऑन द यूज़ केस कि आपको फर्स्ट में मिन चाहिए सेकंड में मैक्स चाहिए आपको ये करना पड़ेगा। ये एक टेंपलेट याद रखिए। मिन हीप है। अगर आपको मैक्स चाहिए इस वाले साइन को बदल दीजिएगा। इस वाले साइन को बदल दीजिएगा। ये हम आपको कमेंट में दे देंगे या डॉक में लिख देंगे। अपने पास भी रखिए इसका स्क्रीनशॉट ले आपको सीएमपी फंक्शन ऊपर लिखना है आपके मेन फंक्शन मतलब जो भी आप फंक्शन है उसके अलग से उसके अलग से और ये सीएमपी कहां यूज़ होता है सॉरी ये सीएमपी यूज़ कहां होता है ये सीएम यूज़ होता है आपके प्रायोरिटी क्यू में यहां पे देखिए ये सीएमपी से आपका C++ को पता चलेगा कि आपका हिप किस टाइप का है",
+      "source": "caption",
+      "english_text": "If you want a pair of hip offs, you will have to do this. Depending on the use case that you want min in the first and max in the second, you will have to do this. Remember this is a template. Min is heap. If you want max then change this sign. Change this sign. We will give this to you in the comments or write it in the doc. Keep it with you also, take a screenshot of it, you have to write the CMP function above, your main function means whatever function you have, separately from it, and where is this CMP used, sorry, where is this CMP used, this CM is used, see here in your priority queue, from this CMP, your C++ will know what type of hip you have."
+    },
+    {
+      "start_time": 1136.32,
+      "end_time": 1170.23,
+      "text": "आपका हिप किस टाइप का है तो ये C++ का सिंटेक्स ये सिंैक्स सीखना जरूरी था क्योंकि बहुत सारे क्वेश्चन आएंगे जब आपको ये करना पड़ेगा अ हां मतलब कि देखिए क्या होता है ना कि आपको अगर दोनों मैक्स बनाना होता अगर आपको ये दोनों केसेस चाहिए कि दोनों मैक्स चाहिए चाहिए या दोनों मीन चाहिए तो इतना करने की जरूरत नहीं है लेकिन करना चाहिए कर लीजिए जस्ट टू बी सेफ जस्ट कि याद रहे कि आप कभी भी आदत बना के चलिए कि हमको एक सीएमपी लिखना ही है जब भी हमको हिप ऑफ पेयर बनाना है तो हमको ये सीएमपी लिखना है पहले से डिसाइड कर लीजिए कि आपको मीन चाहिए मैक्स चाहिए ये सीएमपी अपना उस हिसाब से लिख लीजिए और सीएमपी को यूज़ कीजिए ठीक बात है हां अब इसको ये भी",
+      "source": "caption",
+      "english_text": "What type of hip is yours, then it was necessary to learn this syntax of C++, because a lot of questions will come when you have to do this. Yes, I mean, see what happens, if you have to make both the max, if you want both the cases, whether you want both the max or both the mean, then there is no need to do so much, but you should do it just to be safe. Just remember that you should always make it a habit that we have to write a CMP whenever we have to. If we want to make hip off pair then we have to write this CMP. Decide in advance whether you want mean or max. Write your CMP accordingly and use CMP. It is correct. Yes, now this also"
+    },
+    {
+      "start_time": 1170.24,
+      "end_time": 1203.43,
+      "text": "कर सकते हैं देखिए यहां हम क्या लिखे कि a डॉट फर्स्ट नॉट इक्वल टू B डॉट फर्स्ट मतलब कि हम अस्यूम कर रहे हैं कि मेरा जो डिसीजन मेकिंग है ना वो फर्स्ट पे होगा पहले मतलब अगर फर्स्ट पे फर्स्ट अगर नहीं है इक्वल तो फर्स्ट पे डिसीजन होगा। नहीं तो सेकंड पे होगा। आप ये भी अस्यूम कर सकते हैं कि अच्छा अगर मेरा सेकंड इक्वल नहीं है तो पहले हम सेकंड पे डिसीजन ले लेंगे। उसके बाद हम फर्स्ट पे लेंगे। तो यहां पे आपको a डॉट सेकंड नॉट इक्वल टू b डॉट सेकंड और ये वाला चीज आपको पहले लिखना है। तो ये सब आप इसको कस्टमाइज कर सकते हैं। इसको कस्टमाइज्ड ऑपरेटर कंपेरेटर फंक्शन बोलते हैं आपके कस्टम कंपेरेटर ऑपरेशन होता है ये। तो ये आप अभी के लिए तो कहीं पे लिख लीजिए। टाइप करते-करते एक",
+      "source": "caption",
+      "english_text": "You can see what we write here that a dot first is not equal to B dot first means that we are assuming that my decision making will be on first pay, meaning if first pay is not equal then first pay decision will be made. Otherwise it will be on second. You can also assume that if my second is not equal then first we will take a decision on the second. After that we will take first pay. So here you have to write a dot second not equal to b dot second and this thing first. So you can customize all this. This is called customized operator-comparator function. This is your custom-comparator operation. So for now, write this down somewhere. one while typing"
+    },
+    {
+      "start_time": 1203.44,
+      "end_time": 1238.39,
+      "text": "ना एक दिन ये याद हो जाएगा। प्रायोरिटी क्यू का ये लाइन कहीं पे लिख लीजिए। ये पूरा लाइन आपको लिखना पड़ेगा। जब भी आपको हिप ऑफ पेयर चाहिए आपको ये लिखना लिखना ही पड़ेगा। ठीक बात है? तो ये छोटा सा सिंटेक्स हो गया। इसको जाके एक बार करिएगा। एक बार जाके कंपाइल में एग्जीक्यूट जरूर कीजिएगा। कोई डाउट है तो पूछिएगा। आगे बढ़ते हैं जावा वाले सेक्शन में। राइट? तो अब आप लोग आ जाते हैं जावा वाले सेक्शन में। तो हमको उम्मीद है कि आप लोग C++ स्किप कर दिए। Python स्किप कर दिए। यहां आ चुके हैं। एज़ डिस्कस्ड पहले। तो हम लोग को एक हिप चाहिए। हम लोग को अ हीप चाहिए जिसमें दो चीजें हों जिसमें एक पेअर हो। तो जस्ट फॉर कि ये सारा केस कवर करें। हम चाहते तो ऐसा इंटीजर इंटीजर का भी पेअर बना सकते थे। लेकिन कभी-कभी आपको",
+      "source": "caption",
+      "english_text": "One day this will be remembered. Write this line of priority queue somewhere. You will have to write this entire line. Whenever you want a pair of hips, you will have to write this. Is that correct? So this is the small syntax. Go and do it once. Please compile it once and execute it. If you have any doubt then ask. Let us move ahead to the Java section. Right? So now you guys come to the Java section. So we hope you guys skipped C++. Skipped Python. Have come here. As discussed earlier. So we need a hip. We need a heap that contains two objects, one of which is a pair. So just to cover this entire case. If we wanted, we could have made such a pair of integers also. but sometimes you"
+    },
+    {
+      "start_time": 1238.4,
+      "end_time": 1271.59,
+      "text": "इंटीजर और स्ट्रिंग स्ट्रिंग और एक और स्ट्रिंग स्ट्रिंग और एक इंटीजर ऐसा बनाना पड़ता है। तो हम लोग एकदम मिक्स ले के चलेंगे। हम चाहते हैं कि एक ऐसा ही बने जिसमें लेट्स से कि मेरा पहला आइटम पैर का जो पहला आइटम है वो एक इंटीजर हो। वो एक इंटीजर हो और मेरे पैर का दूसरा आइटम मेरे पैर का दूसरा आइटम क्या हो? स्ट्रिंग हो। तो ये हम चाहते हैं कि मेरा ऐसा एक जोड़ा बने जिसमें पहला इंटीजर रहे और दूसरा स्ट्रिंग रहे। तो ऐसा आपको एक हिप बनाना है। अब इसमें केसेस हो सकता है इसमें केसेस क्या हो सकता है? जब आप हिप बनाते थे जब आप पहला एक का हिप बनाते थे तो आप देखते थे कि मेरा हिप मिनिमम होना चाहिए या मैक्सिमम होना चाहिए वो तो आसान था",
+      "source": "caption",
+      "english_text": "Integer and String String and another String String and an Integer have to be made like this. So we will just take the mix and go. We want to create one where let's say my first item, the first item of the leg, is an integer. That's an integer and the second item on my foot is what's the second item on my foot? be a string. So we want a pair of I to be formed in which the first is an integer and the second is a string. So this is how you have to make a hip. Now there can be cases in this. What can be the cases in this? When you were making the hip, when you were making the hip of the first one, you used to see whether my hip should be minimum or maximum, that was easy."
+    },
+    {
+      "start_time": 1271.6,
+      "end_time": 1304.549,
+      "text": "क्योंकि उसमे एक था। लेकिन अब देखिए अब यहां पे चार केसेस बन जाएगा। हो सकता है कि आप चाहते हो कि जो मेरा पहला आइटम हो उसके हिसाब से मिनिमम सॉर्टिंग हो। मतलब कि अगर पहला आइटम अलग-अलग है उसमें टॉप पे कौन जाए जो मिनिमम आइटम हो वो जाए। और अगर ये दोनों है तो मेरा जो दूसरा है अगर मान लीजिए दोनों का इंटीजर वैल्यू सेम हो गया किसी दो पेयर का। अब स्ट्रिंग पे बात आ जाएगी। अब स्ट्रिंग पे कौन ऊपर जाना चाहिए जो स्ट्रिंग में भी मिनिमम हो तो हो सकता है यहां भी आपको मिनिमम चाहिए। हो सकता है आपको पहला वाला मिनिमम हिप चाहिए लेकिन दूसरे के हिसाब से आपको मैक्सिमम हिप चाहिए। हो सकता है आपको पहले का मैक्सिमम",
+      "source": "caption",
+      "english_text": "Because there was one. But now see, now four cases will be created here. You may want minimal sorting by what's my first item. Meaning that if the first item is different, then the one who is the minimum item should go on top. And if these two are there then mine is the second one. Suppose the integer value of both of them becomes the same of any two pairs. Now the matter will come to the string. Now who should go on top of the string which is minimum in the string also then maybe here also you need minimum. You may want minimum hip according to the first one but you may want maximum hip according to the second one. You may have the previous maximum"
+    },
+    {
+      "start_time": 1304.559,
+      "end_time": 1339.27,
+      "text": "और दूसरे का मिनिमम चाहिए या तो आपको पहले का भी मैक्सिमम और दूसरे का भी मैक्सिमम। तो चार केसेस हो सकते हैं। दो पेयर में चार ही केसेस होंगे। इस हिसाब से आपको हिप चाहिए वो तो क्वेश्चन के अनुसार डिपेंड करेगा कि आपको क्या चाहिए। अगर पहला देखिए अगर पहला इक्वल नहीं है। पहला दो पेयर है। इसमें वन है और इसमें कुछ एप्पल है। और यहां पे टू है और इसमें कुछ बनाना है। तो देखिए जब इक्वल नहीं है तो पहले के हिसाब से होगा। अगर ये दोनों इक्वल हो गया। मान लीजिए यहां पे वन और यहां पे गु्वावा हो गया। तो अब ये और ये वन इक्वल है। अब डिपेंड करेगा कि एप्पल और गु्वावा में से कौन ऊपर जाना चाहिए। इसीलिए आपको दोनों का रूल सोचना पड़ता है कि मेरा पहला मिनीहिप",
+      "source": "caption",
+      "english_text": "And you need minimum of second one or you need maximum of first one and maximum of second one also. So there can be four cases. There will be only four cases in two pairs. According to this, the hip you want will depend on the question as to what you want. If the first see if the first is not equal. The first is two pairs. There is a forest in it and there are some apples in it. And here's Pay Two and there's something to be made of it. So see, when it is not equal, it will be as per earlier. If these two become equal. Suppose here there is a forest and here there is a guava. So now this and this one are equal. Now it will depend on who should go higher among Apple and Guava. That's why you have to think about the rule of both My first minihip"
+    },
+    {
+      "start_time": 1339.28,
+      "end_time": 1373.59,
+      "text": "हो और अगर पहला वाला सेम हो गया इंटीजर सेम तो दूसरे वाले के हिसाब से वो मैक्स ही बने या मिनी बने। तो चार तरीके की कैटेगरी बनेगी। देखिए सबसे पहले तो आपको एक पेयर क्लास बनाना पड़ेगा ये कॉमन है तो ये हम आपको दे देंगे कोड में। सबसे पहले आपको एक क्लास बनाना पड़ेगा क्या? क्लास का नाम रख दीजिए पेयर। क्लास का नाम क्या रख दिए हम लोग? पेयर। क्लास को खोलें। अब आपको इस पेयर में क्या चाहिए? आपको दो चीजें चाहिए। किस ऑर्डर में चाहिए? आपको पहला क्या चाहिए? इंट फर्स्ट। पहला इंट फर्स्ट। पहला फर्स्ट चाहिए क्या? इंट टाइप का। दूसरा क्या चाहिए आपको? स्ट्रिंग टाइप का चाहिए। तो स्ट्रिंग और सेकंड। इसको आप अपने हिसाब से बदल सकते हैं। अगर आपको",
+      "source": "caption",
+      "english_text": "And if the first one is an integer bean, then according to the second one it should either be max or mini. So four types of categories will be formed. See, first of all you will have to create a pair class, this is common, so we will give it to you in the code. First of all do you have to create a class? Name the class Pair. What should we name the class? Pair. Open the class. Now what do you want in this pair? You need two things. In which order do you want it? What do you want first? Int First. First int first. Do you want a first first? Of type int. What else do you want? Must be of string type. So string and sec. You can change this as per your choice. if you"
+    },
+    {
+      "start_time": 1373.6,
+      "end_time": 1405.83,
+      "text": "पहला स्ट्रिंग चाहिए तो स्ट्रिंग सेकंड वहां रख दीजिए। मतलब स्ट्रिंग फर्स्ट लिख दीजिए। इंट सेकंड लिख दीजिए। दोनों इंटीजर चाहिए तो इंट फर्स्ट, इंट सेकंड कुछ भी कर सकते हैं इसमें। इसीलिए हम दोनों का एग्जांपल लेके बता रहे हैं। अब आपको यहां पे इसका कंस्ट्रक्टर बनाना है। कंस्ट्रक्टर में आपको एक इंट पास होगा। और एक स्ट्रिंग एस पास होगा। जभी भी आपको मन करे कि हमको पेअर बनाना है और आप क्या करेंगे? फर्स्ट इज इक्वल टू एफ कर देंगे और सेकंड इज इक्वल टू एस कर देंगे। इससे आपका पेअर बन जाएगा। कैसे यूज़ करेंगे वो भी हम आपको बता देंगे। ये आपका क्लास बन गया। ये कॉमन रहेगा। ये कॉमन रहेगा।",
+      "source": "caption",
+      "english_text": "If you want the first string then put the second string there. Meaning write the string first. Write int seconds. If you want both integers then you can do anything like int first, int second. That is why we are telling examples of both. Now you have to create its constructor here. In the constructor you will pass an int. And a string s will be passed. Whenever you feel like making a pair, what will you do? First is equal to F and second is equal to S. This will make your pair. We will also tell you how to use it. This has become your class. This will remain common. This will remain common."
+    },
+    {
+      "start_time": 1405.84,
+      "end_time": 1440.549,
+      "text": "डिपेंड क्या करेगा कि आपको पेयर में दोनों चीज़ों में क्या चाहिए? आपको इंटीजर इंटीजर चाहिए, इंटीजर करैक्टर चाहिए, कुछ भी जो आपको मन करता है वो चाहिए। Okay? अब आ जाते हैं हम लोग केस पे। अब हम लोग प्रायोरिटी को लिखेंगे कैसा? तो देखिए प्रायोरिटी को लिखने के लिए ना अब इसमें कुछ रूल्स होता है। आपको एक कंपेरेटर लिखना पड़ता है। ये तो आप एक पेयर बनाए हैं ना। ये तो आप एक पेयर बनाए लेकिन आप याद कीजिए प्रायोरिटी q कैसे बनाते थे नॉर्मल में प्रायोरिटी q इंटीजर pq = न्यू प्रायोरिटी q ऐसा ऐसा करके लेकिन अब आपको इसमें कंपेरेटर चाहिए कंपेरेटर क्या होता है ना कंपैरिटर आपको रूल्स डिफाइन करने देता है क्या डिफाइन करने देता है आपको",
+      "source": "caption",
+      "english_text": "What will depend on what you need from both the things in the pair? You want integers, integer characters, anything you want. Okay? Now let us come to the case. Now how will we write priority? So see, there are some rules for writing the priority. You have to write a Comparator. You have made a pair, right? You create a pair but remember how you used to create priority q in normal. Priority q integer pq = new priority q by doing like this but now you need a Comparator in it. What is a Comparator? Comparator allows you to define rules. What does it allow you to define?"
+    },
+    {
+      "start_time": 1440.559,
+      "end_time": 1472.149,
+      "text": "रूल्स डिफाइन करने देता है मतलब कि आपको मैक्स चाहिए मीन चाहिए तो ये दोनों चाहिए अच्छा अब देखिए कंपैरिटर क्या करता है कंपेरेटर हमेशा दो चीजों पे काम करता है मान लीजिए आपके पास दो आइटम्स हैं किसी भी समय आपके पास दो आइटम्स हैं हिप कैसे काम करता है? हिप में ऑलरेडी कुछ आइटम्स होते हैं। एक और आइटम आप पुश करते हैं तो उसके हिसाब से डिसाइड होता है ना कि ये आइटम ये आइटम का क्या है प्रायोरिटी? ये आइटम कितना ऊपर जाएगा? हो सकता है ये सबसे ऊपर जाए या सबसे क्या होगा इसका? तो आपके पास दो आइटम्स हैं। मान लीजिए अभी के हिसाब से आपके पास दो आइटम एक वन और एक एप्पल।",
+      "source": "caption",
+      "english_text": "Allows you to define rules, meaning if you want Max, you want Mean, then you want both. Okay, now let's see what the Comparator does. Comparator always works on two things. Suppose you have two items. At any time, you have two items. How does it work? There are already some items in the hip. If you push another item, it is decided accordingly and not this item. What is the priority of this item? How high will this item go? Maybe it will go to the top or what will happen to it? So you have two items. Suppose as of now you have two items, one and one apple."
+    },
+    {
+      "start_time": 1472.159,
+      "end_time": 1505.59,
+      "text": "एक एप्पल। एक और आइटम है आपके पास जो कि है टू और ये है बनाना। ठीक है? दो आइटम्स हैं मतलब दो पेयर हैं। अच्छा। हिप कैसे डिसाइड करेगा कि कौन सा चीज ऊपर जाएगा और कौन सा ऊपर नहीं जाएगा? देखिए आपको एक क्वेश्चन पूछना रहेगा। आपको एक क्वेश्चन पूछना रहेगा। रूल्स रूल्स रूल्स डिफाइन करने रहेंगे। अच्छा, अगर उसका आंसर, अगर उसका आंसर नेगेटिव आता है। अगर उसका आंसर नेगेटिव आता है। आप जो भी अभी बताएंगे कैसे रूल डिफाइन करना है। लेकिन अगर आप उसका आंसर नेगेटिव आता है ना तो इसका ये मतलब होगा कि A ये पूरा आइटम का नाम A है",
+      "source": "caption",
+      "english_text": "An apple. There is one more item that you have to and that is making. Ok? There are two items which means there are two pairs. Good. How do hips decide what goes up and what doesn't? Look, you have to ask a question. You will have to ask a question. Rules rules rules will remain to be defined. Well, if its answer, if its answer comes negative. If its answer comes negative. Whatever you tell us now, how to define the rule. But if the answer is negative then it would mean that the full name of the item is A."
+    },
+    {
+      "start_time": 1505.6,
+      "end_time": 1538.95,
+      "text": "और इस पूरे आइटम का नाम B है। ये पेयर का नाम B है। अगर उसका आंसर नेगेटिव आता है तो मतलब कि A कम्स बिफोर B बिफोर B बिफोर B मतलब A की प्रायोरिटी B से ज्यादा है तो A बिफोर B मतलब A B के ऊपर आएगा। A B के ऊपर आएगा। अगर इसका आंसर पॉजिटिव आता है। अगर इसका आंसर पॉजिटिव आता है तो इसका मतलब होता है बी कम्स बिफोर A. ये दोनों रूल होते हैं। रूल के आंसर के हिसाब से ही डिसाइड करता है कि अच्छा ये जो रूल लिखा है ना इसका आंसर पॉजिटिव आ गया है। पॉजिटिव का मतलब कि बी",
+      "source": "caption",
+      "english_text": "And the name of this entire item is B. The name of this pair is B. If its answer is negative, it means that A comes before B, before B means A has more priority than B, then A comes before B, which means A will come above B. A will come over B. अगर इसका आंसर पॉजिटिव आता है। अगर इसका आंसर पॉजिटिव आता है तो इसका मतलब होता है बी कम्स बिफोर A. ये दोनों रूल होते हैं। रूल के आंसर के हिसाब से ही डिसाइड करता है कि अच्छा ये जो रूल लिखा है ना इसका आंसर पॉजिटिव आ गया है। पॉजिटिव का मतलब कि बी"
+    },
+    {
+      "start_time": 1538.96,
+      "end_time": 1571.669,
+      "text": "कम्स बिफोर A। नेगेटिव का मतलब A कम्स बिफोर B। अब आपको याद ही करना पड़ेगा। ये सिंटेक्स है। इसमें कोई कुछ नहीं कर सकता। ये आपको समझना पड़ेगा, याद करना पड़ेगा। अच्छा। अब हम आपको दिखाते हैं कि कैसे रूल लिखा जाता है। देखिए याद रखिएगा ये आपका एक एप्पल है और ये दो बनाना है। ये आपके दो पेयर्स हैं। दो पेयर्स हैं। तो जब ये दोनों पेयर आपस में मिलेंगे तो किसकी प्रायोरिटी ज्यादा होनी चाहिए। अच्छा आइए हम आपको लिख के बताते हैं आपको कैसे डिक्लेअर करना है। ये पेयर वाला तो आप समझ गए पेयर ऐसे हो गया। ओके आइए। अब आपको जब प्रायोरिटी q डिक्लेअर करना है। जब आप ऊपर बनाते हैं प्रायोरिटी q तो आपको क्या देखिए प्रायोरिटी",
+      "source": "caption",
+      "english_text": "कम्स बिफोर A। नेगेटिव का मतलब A कम्स बिफोर B। अब आपको याद ही करना पड़ेगा। ये सिंटेक्स है। No one can do anything about this. ये आपको समझना पड़ेगा, याद करना पड़ेगा। Good. अब हम आपको दिखाते हैं कि कैसे रूल लिखा जाता है। देखिए याद रखिएगा ये आपका एक एप्पल है और ये दो बनाना है। ये आपके दो पेयर्स हैं। दो पेयर्स हैं। तो जब ये दोनों पेयर आपस में मिलेंगे तो किसकी प्रायोरिटी ज्यादा होनी चाहिए। अच्छा आइए हम आपको लिख के बताते हैं आपको कैसे डिक्लेअर करना है। ये पेयर वाला तो आप समझ गए पेयर ऐसे हो गया। ओके आइए। अब आपको जब प्रायोरिटी q डिक्लेअर करना है। जब आप ऊपर बनाते हैं प्रायोरिटी q तो आपको क्या देखिए प्रायोरिटी"
+    },
+    {
+      "start_time": 1571.679,
+      "end_time": 1600.23,
+      "text": "प्रायोरिटी q q ओके? उसके बाद यहां पे पेयर ये पेयर कौन सा वाला है? ये क्लास वाला पेयर है। ये वाला पेयर है। देखिए ये वाला पेयर। ठीक है? यही स्पेलिंग यहां भी लिखिएगा। पेयर हो गया। ओके? बंद कर दिए। पेयर हो गया। वो एक इंटीजर और स्ट्रिंग का पेयर है। इसका नाम PQ इज़ इक्वल टू न्यू प्रायोरिटी Q। ठीक है? इसका कॉलन बंद कर दें। यहां तक सब सही है। यहां तक सब सही है। अब क्या करिए?",
+      "source": "caption",
+      "english_text": "प्रायोरिटी q q ओके? उसके बाद यहां पे पेयर ये पेयर कौन सा वाला है? ये क्लास वाला पेयर है। ये वाला पेयर है। देखिए ये वाला पेयर। Ok? यही स्पेलिंग यहां भी लिखिएगा। Pairing is done. Ok? बंद कर दिए। Pairing is done. वो एक इंटीजर और स्ट्रिंग का पेयर है। इसका नाम PQ इज़ इक्वल टू न्यू प्रायोरिटी Q। Ok? इसका कॉलन बंद कर दें। यहां तक सब सही है। यहां तक सब सही है। What to do now?"
+    },
+    {
+      "start_time": 1600.24,
+      "end_time": 1635.19,
+      "text": "अब आपको रूल डिफाइन करने की जरूरत है। हम आपको बताते हैं। देखिए। यहां पे एक ब्रैकेट खोलिए। यहां पे एक ब्रैकेट खोलिए। एक ब्रैकेट खोलिए। उसके बाद करिए। ए बी ये ab क्या है? ये सब ब्रैकेट के अंदर लिख रहे हैं। ab क्या है? ab आपका पेयर्स है। ए ये वाला पेयर है। b ये वाला पेयर है। ab लिखे। उसके बाद एक एरो दिए। ये सब सिंटेक्स है। देखिए ये सब सिंटेक्स है। आपको याद ही करना पड़ेगा। हमको भी लगता है इतना क्यों है बैकबास्ट सिंटेक्स। लेकिन अब कर सक जब ये लैंग्वेज लिखे गए थे ना तो उस समय किसी को आईडिया नहीं था कि इनका यूज़ ऐसा होने लगेगा। इतना डीएसए आगे बढ़ जाएगा। इनका इतना यूज़ होने लगेगा। तो ये सब सोचा गया था कि ये सब बहुत कॉम्प्लेक्स चीज़ हैं ये सब कौन यूज़ करेगा।",
+      "source": "caption",
+      "english_text": "Now you need to define rules. We tell you. See. Open a bracket here. Open a bracket here. Open a bracket. Do it after that. What is ab? All these are written inside the brackets. What is ab? ab is your pair. A, this one is a pair. b This one is a pair. Write ab. After that gave an arrow. This is all syntax. Look, this is all syntax. You will have to remember. We also wonder why there is so much backward syntax. But now when these languages ​​were written, no one had any idea that they would be used like this. This much DSA will move forward. They will start getting used so much. So it was thought that all these are very complex things, who will use all this?"
+    },
+    {
+      "start_time": 1635.2,
+      "end_time": 1667.59,
+      "text": "लेकिन अब होने लगा डीएसए क्वेश्चन ऐसे बनने लगे तो ठीक है अब आपको करना ही पड़ेगा। उसके बाद एक कर्ली ब्रैकेट खोलते हैं। कर्ली ब्रैकेट खोल दिए। अब देखिए हम आपको क्या बताए थे शुरू में शुरू वाले इंट्रोड इंट्रोडक्शन में? कि अगर मान लीजिए दोनों का पहला आइटम, दोनों का फर्स्ट आइटम अगर डिफर करता है। अगर दोनों का फर्स्ट आइटम डिफर करता है तो डिसीजन किस पे होगा? फर्स्ट आइटम पे। अगर दोनों का फर्स्ट आइटम सेम हो जाता है। मान लीजिए यहां भी हो वन और बनाना तो डिसीजन किस पे होगा? सेकंड आइटम पे। तो पहले हम लोग उसका रूल लिख लेते हैं कि दोनों का फर्स्ट आइटम सेम है। दोनों का फर्स्ट आइटम सेम नहीं है। सेम नहीं है। तो हम लोग बस फर्स्ट पे",
+      "source": "caption",
+      "english_text": "But now DSA questions are becoming like this, then it is okay, now you will have to do it. After that let's open a curly bracket. Opened the curly brackets. Now see what we told you in the initial introduction? That if let's say the first item of both, if the first item of both differs. If the first item of both differs, then who will be decided? On first item. If the first item of both is same. Suppose there are forests here too and then on whom will the decision be taken? On second item. So first we write down the rule that the first item of both is the same. The first item of both is not the same. There are no beans. So we are just on first"
+    },
+    {
+      "start_time": 1667.6,
+      "end_time": 1701.43,
+      "text": "कंसंट्रेट करेंगे। तो हम लोग क्या लिखें? इफ a डॉट फर्स्ट a डॉट फर्स्ट क्योंकि a क्या है? एक पेयर है। a डॉट फर्स्ट मतलब वो इंट फर्स्ट वाला। नॉट इक्वल टू b डॉट फर्स्ट। b डॉट फर्स्ट। अब आपको इसका रूल लिखना है। अब आपको किसका रूल लिखना है? आप क्या चाहते हैं? फर्स्ट आइटम पेयर का फर्स्ट आइटम को आप मिन ही बनाना चाहते हैं कि मैक्स ही बनाना चाहते हैं? आइए हम लोग फर्स्ट केस कवर करते हैं ये वाला। हम लोग दोनों को मीन बनाना चाहते हैं मतलब फर्स्ट पे भी मीन और सेकंड पे भी मीन। तो हम लोग फर्स्ट को देखिए फर्स्ट को मीन बनाना चाहते हैं। हम लोग फर्स्ट को मीन बनाना",
+      "source": "caption",
+      "english_text": "Will concentrate. So what should we write? If a dot first a dot first because what is a? There is one pair. a dot first means the int first one. Not equal to b dot first. b dot first. Now you have to write its rule. Now whose rule do you have to write? what do you want? Do you want to make the first item of the first item pair min or max? Let us cover the first case, this one. We want to make both of them mean, meaning mean on the first and mean on the second also. So we look at the first and want to make the first mean. we make first mean"
+    },
+    {
+      "start_time": 1701.44,
+      "end_time": 1731.51,
+      "text": "चाहते हैं। मतलब कि अगर दो आइटम है वन और एप्पल एप्पल और टू और एप्पल। अब इन दोनों का फर्स्ट तो इक्वल नहीं है। वन और टू इक्वल नहीं है। अच्छा हम लोग इसपे क्या चाहते हैं? मीन बनाना चाहते हैं। मतलब कि जब ये दोनों हिप में एंटर होगा ना तो कौन सा हिप कौन सा चीज टॉप पे रहना चाहिए? मिन हीप के हिसाब से वन और एप्पल टॉप पे रहना चाहिए। क्यों? क्योंकि वन वन के अभी फर्स्ट पे हो रहा है डिसीजन। वन टू से छोटा है। आप चाहते हैं कि मिन हीप बने मतलब वन टॉप पे रहना चाहिए। वन टॉप पे रहना चाहिए। अच्छा।",
+      "source": "caption",
+      "english_text": "want. Meaning that if two items are One and Apple Apple and Two and Apple. Now the first of these two is not equal. One and two are not equal. Well, what do we want from this? Want to make Pisces. Meaning that when it enters both the hips, which hip should remain on top? According to Min Heap, Forest and Apple should be on top. Why? Because the decision is being taken on one person first. One is smaller than two. You want a min heap to be formed, meaning one should be on top. One should stay on top. Good."
+    },
+    {
+      "start_time": 1731.52,
+      "end_time": 1757.51,
+      "text": "तो वन टू से छोटा है इसीलिए वन को टॉप पे रहना चाहिए। और हम आपको क्या बोले थे? रूल का आंसर अगर नेगेटिव आएगा तो फिर ए कम्स बिफोर बी आएगा। ए क्या है आपका अभी। अभी के हिसाब से ए क्या है? वन और एप्पल। ये ए है। बी क्या है? टू और बनाना। यह भी है। आप किसको चाहते हैं टॉप पे? ए को चाहते हैं टॉप पे। क्यों? क्योंकि a इससे छोटा है। तो यहां पे आपको क्या लिखना है? यहां पे आपको क्या लिखना रहेगा? अब आपको रूल डिफाइन करना है जिसका आंसर क्या है?",
+      "source": "caption",
+      "english_text": "So one is smaller than two, that is why one should remain on top. And what did we tell you? If the answer to the rule is negative then A comes before B. A, what is yours now? What is A as of now? Forest and Apple. This is A. What is B? To and make. This is also. Who do you want on top? Want A on top. Why? Because a is smaller than this. So what do you have to write here? What should you write here? Now you have to define the rule, what is the answer?"
+    },
+    {
+      "start_time": 1757.52,
+      "end_time": 1789.51,
+      "text": "नेगेटिव आए। तभी ए कम्स बिफोर बी हो पाएगा। तभी आप उसको मिन ही बना पाएंगे। तभी वन और एप्पल टू बनाना से ऊपर आ जाएगा। आपको लिखना है रिटर्न रिटर्न a ड. फर्स्ट a ड. फर्स्ट - b ड. फर्स्ट सॉरी b डॉट यस b ड. फर्स्ट इससे क्या होगा? देखिए a डॉट फर्स्ट क्या है? a {डॉट} फर्स्ट क्या है? वन। हम लोग इसमें क्या रिटर्न कर रहे हैं? इस रूल में जब a डॉट फर्स्ट और B डॉट फर्स्ट इक्वल नहीं है, हम लोग चाहते हैं कि डिसिजन फर्स्ट से हो और जो आदमी छोटा है, जिसका फर्स्ट छोटा है वो टॉप पे जाए क्योंकि हम लोग मिन ही बनाना चाहते हैं।",
+      "source": "caption",
+      "english_text": "Came negative. Only then will A come before B. Only then will you be able to make it min only. Only then will Apple One and Apple Two come out ahead of Banana. You have to write Return Return a D. First a D. First - b D. First Sorry b Dot Yes b D. First What will happen with this? See what is a dot first? What is a {dot} first? Forest. What return are we making in this? In this rule, when A dot first and B dot first are not equal, we want the decision to be taken by the first and the person who is smaller, whose first is smaller, should go on top because we want to make min only."
+    },
+    {
+      "start_time": 1789.52,
+      "end_time": 1815.43,
+      "text": "हम लोग क्या करेंगे? रिटर्न a . - b डॉट फर्स्ट उससे क्या होगा देखिए। 1 - 2 1 - 2 का क्या आंसर आता है? -1 ये क्या है? नेगेटिव आंसर है। मतलब कि a कम्स बिफोर b ऑटोमेटिकली a b पे चला गया। तो आपका मिनट बन गया। जब a फर्स्ट और b फर्स्ट इक्वल नहीं है तो देखिए आपका मिनप बन गया इससे। a .1st - b .1st। मान लीजिए a कुछ और रहता। मान लीजिए a रहता वन और मान लीजिए a रहता 10 और एप्पल हो सकता है a ऐसा रहता।",
+      "source": "caption",
+      "english_text": "What will we do? Return a. - b dot first see what will happen with that. 1 - 2 What is the answer to 1 - 2? -1 What is this? The answer is negative. Meaning that a comes before b automatically goes to a b. So your minute is done. When a first and b first are not equal then see your minimap is formed by this. a.1st - b.1st. Suppose a had been something else. Suppose a remains one and suppose a remains 10 and Apple may be a remains like this."
+    },
+    {
+      "start_time": 1815.44,
+      "end_time": 1849.029,
+      "text": "और b क्या है? B सिक्स और बनाना रहता। b सिक्स और बनाना रहता। तो इस केस में किसको ऊपर रहना चाहिए था जब आप मिन ही बनाने की कोशिश कर रहे हैं तो। इस केस में b को ऊपर रहना चाहिए क्योंकि b का फर्स्ट छोटा है। इस केस में देखिए क्या रिटर्न होता? a डॉट फर्स्ट। - b डॉट फर्स्ट। क्या आंसर आएगा? 10 - 6 फोर। फोर पॉजिटिव है। पॉजिटिव का क्या मतलब था? B कम्स बिफोर A देखिए B कम्स बिफोर A ऑटोमेटिकली सिक्स ऊपर चला जाएगा 10 से तो मिनी बन गया। तो जो छोटा रहेगा वो ऊपर चला जाएगा। अब आप एक तरीके से कर क्या रहे हैं? A डॉट फर्स्ट माइनस B डॉट फर्स्ट। तो अगर A डॉट फर्स्ट छोटा है",
+      "source": "caption",
+      "english_text": "And what is b? B remains to make six more. b Six more remain to be made. So in this case who should be on top when you are trying to make min hee. In this case b should remain on top because b's first is smaller. See what would have been the return in this case? a dot first. - b dot first. What answer will come? 10 - 6 fours. Four is positive. What did positive mean? B comes before A. See B comes before A. It will automatically go up by six. By 10, it has become mini. So the one who remains small will go on top. What are you doing now in a way? A dot first minus B dot first. So if A dot first is small"
+    },
+    {
+      "start_time": 1849.039,
+      "end_time": 1883.83,
+      "text": "तो आप B डॉट फर्स्ट को सब्ट्रैक्ट करेंगे तो आंसर नेगेटिव आएगा तो A ऊपर चला जाएगा। अगर A डॉट फर्स्ट बड़ा है और आप भी नहीं बनाना चाहते हैं तो आप चाहते हैं कि B डॉट फर्स्ट ऊपर आए तो A डॉट फर्स्ट माइनस B डॉट फर्स्ट अगर a डॉ. फर्स्ट बड़ा है उसका आंसर पॉजिटिव आएगा। B ऊपर चला जाएगा। तो ऐसे ये काम करता है। ये तो किस केस में हुआ? जब a डॉट फर्स्ट इज नॉट इक्वल टू B डॉट फर्स्ट। मतलब आप डिसीजन फर्स्ट पे लेना चाहते हैं। लेकिन अब मान लीजिए ऐसा नहीं है। अब अगर ये नहीं हुआ तो आप यहां पे आ जाएंगे। अब आपको एक और रूल लिखना पड़ेगा। एक और रूल लिखना पड़ेगा। एक और रूल लिखने के लिए। अब आप चाहते हैं कि आपका डिसीज़न इस स्ट्रिंग से हो मतलब सेकंड वाले से हो कब? जब फर्स्ट वाला इक्वल नहीं हो",
+      "source": "caption",
+      "english_text": "So if you subtract B dot first then the answer will be negative then A will go up. If A dot first is big and you don't want to make also then you want B dot first to come up then A dot first minus B dot first if a dot first is big then the answer will be positive. B will move up. So that's how it works. In which case did this happen? When a dot first is not equal to b dot first. Meaning you want to take the decision first. But now suppose it is not so. Now if this does not happen then you will come here. Now you have to write one more rule. One more rule will have to be written. To write another rule. Now you want your decision to be from this string, meaning when will it be from the second one? When the first one is not equal"
+    },
+    {
+      "start_time": 1883.84,
+      "end_time": 1917.029,
+      "text": "तब। अच्छा। तो आप क्या चाहते हैं? अब आप चाहते हैं कि इसमें भी मिनिमम काम करे। इसमें भी मतलब मिनिमम का क्या मतलब होता है? लेक्सिकोग्राफिकली मिनिमम। अल्फाबेटिकली मिनिमम एप्पल और बनाना। इन दोनों में लेक्सिकोग्राफिकली मिनिमम का मतलब होता है अल्फाबेटिकली कौन सा छोटा है? एप्पल छोटा है तो आप चाहते हैं एप्पल ऊपर आए। इसके लिए आपको एक स्ट्रिंग का फंक्शन यूज़ करना पड़ेगा। रिटर्न रिटर्न A डॉट सेकंड A डॉट सेकंड मतलब A के पास जो स्ट्रिंग है जो कि एप्पल है डॉट कंपेयर टू ये एक जावा का फंक्शन है।",
+      "source": "caption",
+      "english_text": "Then. Good. So what do you want? Now you want minimal work to be done in this also. What does minimum mean in this also? Lexicographically minimal. Alphabetically minimal apple and banana. Of these two, lexicographically minimum means alphabetically which is smaller? Apple is small so you want Apple to come up. For this you will have to use a string function. Return Return A dot second A dot second means the string that A has which is apple dot compare to This is a Java function."
+    },
+    {
+      "start_time": 1917.039,
+      "end_time": 1950.389,
+      "text": "कंपेयर टू B डॉट सेकंड B डॉट सेकंड। अब ये क्या करता है? यह कंपेयर टू क्या होता है? देखिए कंपेयर टू क्या करता है? अगर आप दो चीजें कंपेयर करते हैं एप्पल और बनाना। बनाना। ठीक है? अब इसमें दो दो स्ट्रिंग लिखा जाता है। कंपेयर टू आपको समझाते हैं। कंपेयर टू क्या होता है? स्ट्रिंग वन डॉट कंपेयर टू कंपेयर टू स्ट्रिंग टू। ये काम कैसे करता है? अगर अगर स्ट्रिंग वन इज छोटा देन स्ट्रिंग टू। अगर ये छोटा है, इसका आंसर आता है नेगेटिव या माइनस वन।",
+      "source": "caption",
+      "english_text": "Compare to B dot sec B dot sec. Now what does it do? What is it compared to? See what compare to does? If you compare two things Apple and Banana. Make Ok? Now two strings are written in it. Let us explain to you the comparison. What is compare to? String one dot compare to string two. How does this work? If string one is shorter than string two. If it is small, its answer is negative or minus one."
+    },
+    {
+      "start_time": 1950.399,
+      "end_time": 1978.389,
+      "text": "इसका आंसर नेगेटिव आता है। अगर स्ट्रिंग वन इक्वल इक्वल टू स्ट्रिंग टू होता है, इसका आंसर ज़ीरो आता है। अगर स्ट्रिंग वन ग्रेटर दैन स्ट्रिंग टू होता है, इसका आंसर पॉजिटिव आता है। इस कंपेयर टू का फंक्शन। अब ध्यान से देखिए। एग्जैक्टली आपके रिक्वायरमेंट को मैच करता है। देखिए यहां हम क्या लिखे हैं? ध्यान से देखिए। a डॉट सेकंड डॉट कंपेयर टू B डॉट सेकंड। मतलब एसटीआर वन के जगह क्या है? ये आपका एसटीआर वन है। ये आपका एसटीआर टू है।",
+      "source": "caption",
+      "english_text": "Its answer comes negative. If string one is equal to string two, the answer is zero. If string one is greater than string two, the answer is positive. Function of this compare to. Now look carefully. Exactly matches your requirements. See what we have written here? Look carefully. a dot second dot compare to B dot second. Meaning what is in place of STR one? This is your STR One. This is your STR Two."
+    },
+    {
+      "start_time": 1978.399,
+      "end_time": 2011.269,
+      "text": "एसटीआर वन की जगह हम A डॉट सेकंड लिख दिए। एसटीआर2 की जगह हम B डॉट सेकंड लिख दिए। अब क्या होगा? अगर एसटीआर वन इज़ छोटा देन एसटीआर टू तो आंसर नेगेटिव आएगा। मतलब अगर A डॉट सेकंड छोटा है B डॉ. सेकंड से तो आंसर नेगेटिव आएगा। नेगेटिव का क्या मतलब है? ए कम्स बिफोर B तो ऑटोमेटिकली A कम बिफोर B मतलब यह मिन ही बन गया। अगर A डॉट सेकंड बड़ा है B डॉट सेकंड से तो आंसर क्या आएगा? पॉज़िटिव आएगा। पॉजिटिव का मतलब B कम्स बिफोर A तो B ऑटोमेटिकली ऊपर चला जाएगा। तो अगेन ये आपकी रिक्वायरमेंट को सेटिस्फाई करता है। दोनों रूल लिखने के बाद आप इसको बंद कर सकते हैं। किसको? इस",
+      "source": "caption",
+      "english_text": "Instead of STR one we wrote A dot second. Instead of STR2 we wrote B dot second. What will happen now? If STR one is smaller than STR two then the answer will be negative. Meaning if A dot second is smaller than B dot second then the answer will be negative. What does negative mean? A comes before B so automatically A comes before B meaning it becomes min only. If A dot second is bigger than B dot second then what will be the answer? Will come back positive. Positive means B comes before A so B will automatically move up. So again this satisfies your requirement. After writing both the rules you can close it. Whom? this"
+    },
+    {
+      "start_time": 2011.279,
+      "end_time": 2037.11,
+      "text": "कर्ली ब्रैकेट को बंद करके इस ब्रैकेट को बंद कर सकते हैं। ये आपका सिंटेक्स है। ये क्या है? मीन हिप ऑन फर्स्ट। मीन हिप ऑन फर्स्ट मीन हिप ऑन सेकंड। मीन हिप ऑन सेकंड। ये फर्स्ट केस कवर हो गया कि आपको दोनों में मेनमेन चाहिए। तो दोनों आपको रूल लिखने पड़ेंगे कि अगर फर्स्ट इक्वल नहीं है तब तो फर्स्ट पे रूल बनाओ भाई। फर्स्ट इक्वल है तब सेकंड पे रूल बनाओ।",
+      "source": "caption",
+      "english_text": "You can close this bracket by closing the curly bracket. This is your syntax. What is this? Mean hip on first. Mean hip on first mean hip on second. Mean hip on second. This first case has been covered that you need mainmen in both. So both of you will have to write a rule that if first is not equal then make a rule on first. First is equal then make rule on second."
+    },
+    {
+      "start_time": 2037.12,
+      "end_time": 2066.149,
+      "text": "सेकंड पे कैसे? कंपेयर टू का यूज़ करके। ये हो गया फर्स्ट केस। ये बस फर्स्ट केस हुआ है। लेकिन अगर आपको चाहिए अगर आपको क्या चाहिए? आपको क्या चाहिए? मान लीजिए आपको मिन ऑन फर्स्ट चाहिए। मिन ऑन फर्स्ट चाहिए। मतलब फर्स्ट वाले इंटीजर का आपको मिन हिप चाहिए। लेकिन अगर फर्स्ट वाला इंटीजर सेम हुआ तो आपको मैक्सिमम हिप चाहिए सेकंड पे। आपको मैक्स हिप चाहिए। मैक्स हिप ऑन सेकंड मतलब कि मान लीजिए अगर वन और एप्पल है और वन और बनाना है।",
+      "source": "caption",
+      "english_text": "How to pay second? By using compare to. This is the first case. This is just the first case. But if you want what if you want? What do you want? Let's say you want min on first. Want min on first. Meaning you need the min hip of the first integer. But if the first integer is the same then you want the maximum value on the second. You need max hip. Max hip on second means that let's say if there is one more apple and one more banana."
+    },
+    {
+      "start_time": 2066.159,
+      "end_time": 2093.829,
+      "text": "ये दो है। अब इसका तो फर्स्ट सेम है। डिसीजन किस पे होगा? सेकंड से होगा। आपको सेकंड में क्या चाहिए? मैक्सिप मतलब जो अल्फाबेटिकली बड़ा वर्ड है वो ज्यादा टॉप पे आए। मतलब कि ये आदमी ये बनाना वाला आदमी टॉप पे आ जाए। वन और बनाना टॉप पे आए और फिर वन और एप्पल आए। तो मतलब आपको मैक्स शीप चाहिए। पहले आपको चाहिए था कि वन और एप्पल ही आ जाए भाई। इसको कैसे लिखेंगे? आइए। ये सेम सेम रूल लिखना है। सेम रूल देखिए। पिछले वाले पे भी फर्स्ट पे मिन था। इस बार भी फर्स्ट पे मिन था। हम लोग क्या करेंगे? लिखते हैं।",
+      "source": "caption",
+      "english_text": "These are two. Now this is its first semester. On what will the decision be taken? It will happen in seconds. What do you need in seconds? Maxip means that the alphabetically bigger word should come on top. Meaning that this person who makes this should come on top. One and Banana came on top and then came One and Apple. So that means you need Max Sheep. Earlier you should have wanted One and Apple to come, brother. How to write this? Come. This is the same rule to be written. See the same rule. There was a min on first pay on the previous one also. This time also the first pay was min. What will we do? Let's write."
+    },
+    {
+      "start_time": 2093.839,
+      "end_time": 2126.87,
+      "text": "प्रायोरिटी Q पेयर PQ = प्रायोरिटी Q ऐसा-ऐसा किए और ब्रैकेट खोल दिए और ये वाला ब्रैकेट खोल दिए। उसके बाद सेम AB एरो दिए और कर्ली ब्रैकेट खोल दिए। इफ A {डॉट} फर्स्ट नॉट इक्वल टू B डॉट फर्स्ट a {डॉट} फर्स्ट नॉट इक्वल मतलब किस पे होने वाला है डिसीजन फर्स्ट पे। तो आपको",
+      "source": "caption",
+      "english_text": "Priority Q Pair PQ = Priority Q Opened this bracket and opened this bracket. After that given the same AB arrows and opened the curly brackets. If A {dot} first not equal to B dot first a {dot} first not equal means on whom the decision is going to be taken first. so you"
+    },
+    {
+      "start_time": 2126.88,
+      "end_time": 2161.75,
+      "text": "क्या करना है? आपको चाहिए मिन हीप मतलब सेम जो यहां ऊपर लिखे थे ऊपर क्या लिखे थे? रिटर्न A. - B.1 तो अगर A1 फर्स्ट छोटा होगा तो ऑटोमेटिकली नेगेटिव नेगेटिव आएगा। नेगेटिव आएगा तो ये ऊपर चला जाएगा। तो यहां भी आपको सेम लिखना है। रिटर्न a डॉट फर्स्ट माइनस b डॉट फर्स्ट खत्म हो गई। लेकिन अब आपको मैक्स पे चाहिए। अब आपको सेकंड वाला मैक्स पे चाहिए। आपको सेकंड वाला मैक्स पे चाहिए तो आप क्या करेंगे देखिएगा। रिटर्न b डॉट सेकंड b डॉट सेकंड डॉट कंपेयर टू a",
+      "source": "caption",
+      "english_text": "What to do? You need min heap meaning beans which were written here above, what was written above? Returns A. - B.1 So if A1 is first small then automatically negative will come. If it comes negative it will go up. So here also you have to write same. Returns a dot first minus b dot first finished. But now you want max pay. Now you want the second max pay. If you want second max pay then see what you do. return b dot sec b dot sec dot compare to a"
+    },
+    {
+      "start_time": 2161.76,
+      "end_time": 2195.99,
+      "text": "डॉट सेकंड। यहां पर क्या किया? रिवर्स कर दिए। जहां पर स्ट्रिंग वन लिखा हुआ था, स्ट्रिंग टू लिख दिया और जहां पर स्ट्रिंग टू लिखा था, वहां पर स्ट्रिंग वन। देखिए, ऊपर में हम लोग क्या किए थे? जहां पे हम लोग मैक्सिप पे a डॉट सेकंड कंपेयर टू b डॉट सेकंड। यहां पे हम लोग क्या किए? B डॉट सेकंड कंपेयर टू A डॉट सेकंड। अब देखिए क्या होगा? अब देखिए क्या होगा? और यहां पे एक बार इसको हम बंद ही कर देते हैं। कर्ली ब्रैकेट और ये बंद। यहां पे देखिए क्या होगा? हम यहां पे B डॉट सेकंड तो अगर B डॉट सेकंड B डॉट सेकंड इज़ लेस दैन A डॉट सेकंड आंसर आएगा इसका आंसर आएगा नेगेटिव। अगर B",
+      "source": "caption",
+      "english_text": "Dot second. What did you do here? Reversed it. Where string one was written, string two was written and where string two was written, string one was written. See, what we did up there? Where we maxip a dot second compare to b dot second. What did we do here? B Dot Second Compare to A Dot Second. Now see what will happen? Now see what will happen? And once here we close it. Curly brackets and this off. See what will happen here? Here we have B dot second, so if B dot second B dot second is less than A dot second then the answer will be negative. If B"
+    },
+    {
+      "start_time": 2196.0,
+      "end_time": 2223.99,
+      "text": "डॉट सेकंड ग्रेटर दैन A डॉट सेकंड इसका आंसर आएगा पॉजिटिव। अच्छा क्या होगा इससे? इससे क्या होगा? देखिए अगर B डॉट सेकंड इज़ लेस दैन A. सेकंड तो आंसर क्या आएगा? नेगेटिव। नेगेटिव आंसर आने का क्या मतलब है? ए विल गो फर्स्ट। ए विल गो फर्स्ट। तो इस केस में इस केस में ए विल गो फर्स्ट। तो मान लीजिए ए वाला ये हुआ वन और एप्पल।",
+      "source": "caption",
+      "english_text": "Dot second greater than A dot second, the answer will be positive. What good will happen from this? What will happen with this? See if B dot second is less than A dot second then what will be the answer? Negative. What does it mean to get a negative answer? A will go first. A will go first. So in this case in this case A will go first. So let's say the one with A is One and Apple."
+    },
+    {
+      "start_time": 2224.0,
+      "end_time": 2253.75,
+      "text": "और बी क्या हुआ? वन और बनाना। अगर आप ये करेंगे तो देखिए B डॉट सेकंड इज़ ग्रेटर दैन A. सेकंड। तो आंसर क्या आएगा? पॉजिटिव आएगा आंसर। आंसर पॉजिटिव आएगा। पॉजिटिव का मतलब B ऊपर चला जाएगा तो बनाना ऊपर चला जाएगा। यही तो है मैक्स ही। लेकिन अगर A ए होता, A होता ग्वावा। तो अब a डॉट सेकंड इज़ ग्रेटर दैन B डॉट सेकंड। तो क्या आंसर आएगा? नेगेटिव मतलब a ऊपर जाएगा तो ऊपर वाला गु्वावा पहले चला जाएगा। तो अब क्या होगा कि जो भी स्ट्रिंग अल्फाबेटिकली लार्जर होगा वो ऊपर चला जाएगा तो ऑटोमेटिकली आप क्या बना दिए यहां पे?",
+      "source": "caption",
+      "english_text": "And B what happened? Forest and banana. If you do this, you will see that B dot second is greater than A. second. So what will be the answer? The answer will be positive. The answer will come positive. Positive means if B goes up then Banana will go up. This is what Max is all about. But if A were A, A would be guava. So now a dot second is greater than B dot second. So what will be the answer? Negative means if a goes up then the top guava will go up first. So now what will happen is that whichever string is alphabetically larger will go on top, so automatically what have you created here?"
+    },
+    {
+      "start_time": 2253.76,
+      "end_time": 2286.47,
+      "text": "मैक्स हिप ऑन सेकंड और इसपे तो अभी भी मिन हीप है। इसपे तो अभी भी मिन हीप है। अब आप सेकंड पे दोनों चीज़ सीख गए। सेकंड पे अगर मिनिमम हिप बनाना है। ऊपर में यहां पे A {डॉट सेकंड था यहां पे B डॉट सेकंड। सेकंड पे अगर मैक्सिमम हिप बनाना है। यहां पे A B डॉट सेकंड यहां पे A डॉट सेकंड। क्यों? हम आपको लॉजिक समझा दिए हैं। अब क्या है? अगर आपको मैक्सिमम ऑन फर्स्ट बनाना है तो अब कुछ लोग गेस कर लिए होंगे। आपको मैक्सिमम ऑन फर्स्ट बनाना है। देखिए आपको क्या करना है? आपको फर्स्ट पे मैक्सिमम बनाना है कि मतलब कि अगर a डॉट फर्स्ट इज़ ग्रेटर दैन B डॉट फर्स्ट हो। ऐसा हो तो",
+      "source": "caption",
+      "english_text": "Max hip on second and on top of that there is still min hip. Min Heap is still on it. Now you have learned both things in seconds. If you want to make minimum hip per second. In the above here A {dot second was here B dot second. If you want to build maximum hip on second. Here A B dot second Here A dot second. Why? We have explained the logic to you. what now? If you have to make maximum on first then some people might have guessed by now. You have to make maximum on first. See what you have to do? You have to maximize the first pay that means if a dot first is greater than b dot first. if it happens"
+    },
+    {
+      "start_time": 2286.48,
+      "end_time": 2313.03,
+      "text": "ऊपर कौन सा जाए? a डॉट फर्स्ट चला जाए। अच्छा? और अगर A डॉट फर्स्ट लेस दैन B डॉट फर्स्ट हो। लेस दैन B डॉट फर्स्ट हो तो क्या? B डॉट फर्स्ट ऊपर चला जाए। मतलब मैक्स ही बनाना है एक तरीके से। हमको फर्स्ट पे ही मैक्स चाहिए। अभी तक हम लोग दोनों केसेस में फर्स्ट पे मीन देखे थे। अब हमको फर्स्ट पे मैक्स चाहिए। तो क्या करेंगे? सिंपल है। रिवर्स कर दीजिए। जो वो कंडीशन था ना रिटर्न B डॉट फर्स्ट - A डॉट फर्स्ट कर दीजिए।",
+      "source": "caption",
+      "english_text": "Which one goes on top? a dot should go first. Good? And if A dot first is less than B dot first. What if it is less than B dot first? B dot should go up first. Meaning, Max only has to be made in one way. We want max on first pay only. Till now we had seen the first pay mean in both the cases. Now we want first pay max. So what to do? It is simple. Reverse it. Whatever that condition was, please return B dot first - A dot first."
+    },
+    {
+      "start_time": 2313.04,
+      "end_time": 2347.829,
+      "text": "रिवर्स कर दो B . डॉट फर्स्ट - A. आइए दिखाते हैं क्या होगा। मान लीजिए आपका वन और एप्पल है। और टू और बनाना है। ये आपका क्या है? A और ये आपका B है। अब क्या किए? B डॉट फर्स्ट - A. कर दिए। मतलब रिटर्न 2 - 1 = A तो पॉजिटिव है। पॉजिटिव का मतलब b ऊपर जाएगा। क्या आ गया? टू ऊपर चला गया। अगर मान लीजिए यहां पे 10 और एप्पल और टू और बनाना रहता। अब क्या किए? 2 - 10 - 8 नेगेटिव कौन सा ऊपर जाएगा? 10 ऊपर चला जाएगा। तो इससे आपकी प्रॉब्लम सॉल्व हो जाएगी। तो ये दो चीज़ याद रखिए इंटीजर के लिए और स्ट्रिंग के लिए। अब यहां तो है कि फर्स्ट और सेकंड में हम आपको बता रहे हैं।",
+      "source": "caption",
+      "english_text": "Reverse B. Dot First - A. Let's show what will happen. Suppose you have One and Apple. And two more have to be made. What is this to you? A and this is your B. What did you do now? B dot first - A. did it. Meaning return 2 – 1 = A is positive. Positive means b will go up. What has come? Two went up. Suppose there are 10 more apples and two more bananas here. What did you do now? 2 - 10 - 8 Which negative will go on top? Will go up by 10. So this will solve your problem. So remember these two things for integer and for string. Now here is what we are telling you in first and second."
+    },
+    {
+      "start_time": 2347.839,
+      "end_time": 2377.589,
+      "text": "इंटीजर फर्स्ट पे भी हो सकता है, इंटीजर सेकंड पे हो सकता है। लेकिन जब आपको इंटीजर पे जब आपको इंटीजर पे मिन हीट चाहिए तो आप क्या करते हैं? a डॉटर् - b डॉट फर्स्ट। जब आपको इंटीजर पे मैक्स हिप चाहिए तो आप क्या करते हैं? B डॉट फर्स्ट - A . जब आपको स्ट्रिंग पे मिन हीप चाहिए होता था तो आप क्या करते थे? A सेकंड डॉट कंपेयर टू B डॉट सेकंड। जब आपको स्ट्रिंग पे मैक्स हिप चाहिए तो आप क्या करेंगे? B डॉट सेकंड और A डॉट सेकंड। तो ऐसे आप अपना हिप डिक्लेअर करेंगे। हमको मालूम है बहुत बहुत बड़ा सिंटेक्स है। बहुत कॉम्प्लेक्स है। हम आपको एक डॉक में लिख के दे देंगे।",
+      "source": "caption",
+      "english_text": "Integer can be on first, integer can be on second. But what do you do when you need min heat on an integer? a dot - b dot first. What do you do when you need an integer pay max hip? B Dot First - A. What did you do when you wanted a min heap on a string? A second dot compare to B dot second. What do you do when you need Max Hip on the string? B dot second and A dot second. So this is how you will declare your hip. We know it is a very big syntax. It is very complex. We will write it down in a doc and give it to you."
+    },
+    {
+      "start_time": 2377.599,
+      "end_time": 2406.23,
+      "text": "दो-तीन चार बार टाइप करेंगे हम लोग क्वेश्चन सॉल्व करेंगे। आपको ये सब याद हो जाएगा। ठीक है? तो अगर याद नहीं भी होता है नो इशूज़। आप इसका सिंटेक्स कभी भी देख सकते हैं तो आपको समझ में आ जाएगा। अब इसको यूज़ कैसे करते हैं? ये तो इसको बनाना हो गया। ये तो इसको बनाना हो गया। इसको यूज़ कैसे करते हैं? अगर आपको पुश करना है तो आप कर सकते हैं PQ डॉट ऐड इसके बाद न्यू पेयर खोल के जो भी आपको पेअर बनाना है। पेयर मतलब एक इंटीजर, एक स्ट्रिंग। तो आपको बनाना है टू और एप्पल।",
+      "source": "caption",
+      "english_text": "We will type two-three-four times and solve the question. You will remember all this. Ok? So even if you don't remember, no issues. You can see its syntax anytime and you will understand. Now how to use it? This has been made. This has been made. How to use it? If you want to push then you can add PQ dot and then open a new pair and create whatever pair you want. Pair means an integer, a string. So you have to make two more apples."
+    },
+    {
+      "start_time": 2406.24,
+      "end_time": 2441.19,
+      "text": "ऐसे करके आप इंसर्ट करते रहिए और इंसर्ट करिए। PQ डॉट ऐड न्यू पेयर थ्री और बनाना। ऐसे करके दूसरा इंसर्ट कर दिया। ये सब हिट में इंसर्ट हो रहा है। ये सब हिट में इंसर्ट हो रहा है। ऐड में इंसर्ट हो रहा है। पहले आप एक ही चीज़ ऐड करते हैं। अब दो चीज़ ऐड करिए। निकालेंगे कैसा? निकालेंगे कैसा? मान लीजिए सब निकालना है वाइल। सेम PQ डॉट नॉट एम्प्टी। कैसे निकालेंगे? एक आप वो वाला पेअर P = PQ डॉट पोल। इससे निकल गया। और इसको आप शायद प्रिंट कर लीजिए। एस ओ पी एल एन। एस",
+      "source": "caption",
+      "english_text": "By doing this you keep inserting and inserting. PQ dot add new pair three more. By doing this the second insert was done. All this is being inserted in the hit. All this is being inserted in the hit. Inserting into add. First you add just one thing. Now add two things. How will you remove it? How will you remove it? Suppose we have to remove everything. Same PQ do not empty. How to get it out? One you that pair P = PQ dot pole. Got through this. And maybe you can print it. S O P L N. s"
+    },
+    {
+      "start_time": 2441.2,
+      "end_time": 2474.71,
+      "text": "ओपी एलएन पी डॉट फर्स्ट इससे आप इंटीजर प्रिंट कर सकते हैं। एस ओपी एसओ पी एल एन मतलब सिस्टम अबाउट प्रिंट एलन पी डॉट सेकंड ऐसे आप इसको प्रिंट कर सकते हैं यूज कर सकते हैं कंप्यूटर कुछ भी कर सकते हैं। लेकिन मेन काम क्या है यार यही बनेगा कैसा? जब आप डिसाइड कर लेंगे कि मेरा फर्स्ट इंटीजर है, सेकंड स्ट्रिंग है। फर्स्ट पे मीन चाहिए, सेकंड में मैक्स चाहिए तो बनेगा कैसा? बनेगा इन रूल से। ये रूल हम आपको समझा चुके हैं। चारों कॉम्बिनेशन नहीं समझा क्योंकि आप समझ चुके हैं ना। अ स्ट्रिंग का मैक्सिमम मिनिमम समझा दिए। इंटीजर का मैक्सिमम मिनिमम समझा दिए। कम करके बना लीजिए। ट्राई कीजिए बनाने का और ड्राई रन करिए इसको। ये पूरा",
+      "source": "caption",
+      "english_text": "OP LN P Dot First With this you can print integers. S O P S O P L N means System About Print Allen P Dot Second, like this you can print it, use it, computer can do anything. But what is the main work, how will this be done? Once you decide that my first is integer, second is string. If you want mean on first and max on second then how will it be? It will be done by these rules. We have explained these rules to you. Didn't understand all four combinations because you have understood, right? Explain the maximum and minimum of a string. Explain the maximum and minimum of integers. Reduce it and make it. Try making it and dry run it. this is complete"
+    },
+    {
+      "start_time": 2474.72,
+      "end_time": 2508.069,
+      "text": "कोड आपको हम कमेंट में आज दे देंगे। हां, इसका कोड दे देंगे। ये सिंटेक्स है। इसका कोड हम बिल्कुल देंगे। हमको अच्छा नहीं लगता कि हम आपको लॉजिक की कोड दे दें। उसका कोई मतलब नहीं है। इसका कोड जरूरी है। हम आपको आज ये कोड दे देंगे। ठीक है? तो अगर कुछ एक बार एक-दो बार चलाएंगे आपको समझ में आ जाएगा। ये सिंटेक्स हम मानते हैं बहुत गंदा सिंटेक्स है। ठीक है? चलिए। वेलकम टू द पाइथन वाला सेक्शन। तो आप लोग स्किप कर चुके होंगे Java C++। ठीक है? तो जस्ट फॉर एग्जांपल जो कि हम लोग इंट्रो में बात किए थे तो हम लोग देखेंगे कि कैसे आपको हिप बनाना है पेयर का उस पर आप अपना रूल डिफाइन कर सकते हैं कि मेरा पहला मिनिमम हो दूसरा मैक्सिमम हो कुछ हो ऐसा",
+      "source": "caption",
+      "english_text": "We will give you the code in the comments today. Yes, will give its code. This is the syntax. We will definitely give its code. We don't like to give you the logic code. that made no sense. Its code is necessary. We will give you this code today. Ok? So if you run it once or twice you will understand. We consider this syntax to be a very dirty syntax. Ok? Let go. Welcome to the Python section. So you guys might have skipped Java C++. Ok? So just for example, which we talked about in the intro, then we will see how to make hip pair, on that you can define your rule that my first should be minimum, second should be maximum, something like this."
+    },
+    {
+      "start_time": 2508.079,
+      "end_time": 2541.829,
+      "text": "ऐसा कुछ भी कर सकते हैं। ठीक है? तो चलिए एक पेअर हम आपको बना के दिखाते हैं कि हम लोग एक पेयर ऑफ हिप्स हिप ऑफ पेयर्स बनाएंगे। हम लोग एक हिप बनाएंगे जो कि पेअर होल्ड करेगा। पेयर में क्या रहता है? पेयर में फर्स्ट और सेकंड रहता है। पेयर में फर्स्ट और सेकंड रहता है। अब फर्स्ट और सेकंड कुछ भी हो सकता है। फर्स्ट इंटीजर हो सकता है, सेकंड स्ट्रिंग कुछ भी हो सकता है ना? पाइथन में तो डेटा टाइप होता नहीं है। तो ठीक है। पास देने के बाद लूज टाइप लैंग्वेज है तो वो सब के लिए ठीक है। लेकिन अब आप डिसीजन ले सकते हैं ना कि मेरा जो हिप है उसमें मान लो अगर फर्स्ट इक्वल नहीं है दो चीज़ का। दो आइटम है मान लीजिए मेरे पास वन और एप्पल है। ये मेरा",
+      "source": "caption",
+      "english_text": "Can do anything like this. Ok? So let us make a pair and show you that we will make a pair of hips hip off pairs. We will make a hip that will hold the pair. What remains in the pair? There is first and second in the pair. There is first and second in the pair. Now first and second can be anything. First can be integer, second can be string anything right? There is no data type in Python. Well then. After giving pass, if there is loose type language then it is fine for everyone. But now you can take the decision, not in my opinion, if the first is not equal then two things. There are two items, let's say I have One and Apple. this is mine"
+    },
+    {
+      "start_time": 2541.839,
+      "end_time": 2571.75,
+      "text": "पहला पेअर है और मेरे पास टू और बनाना है। तो अगर मान लो दोनों का फर्स्ट इक्वल नहीं है तो हम फर्स्ट पे डिसीजन लेंगे। फर्स्ट पे कैसा डिसीजन लेंगे? फर्स्ट पे वो मिनी हिप भी बन सकता है। मैक्सिव भी बन सकता है। मतलब कि मान लो कि वन और टू नहीं है इक्वल। तो इन दोनों में से किसका ज्यादा प्रायोरिटी होना चाहिए? अगर हम मिनी बनाएंगे तो वन और एप्पल ऊपर आएगा क्योंकि वन छोटा है टू से। अगर हम मैक्सिम बनाएंगे टू ऊपर रहेगा टू और बनाना ऊपर आएगा क्योंकि टू बड़ा है वन से। तो उस हिसाब से आप डिसाइड कर सकते हैं। तो उस हिसाब से देखिए नॉर्मल हीट में तो ये दो ही चीज़ था कि या तो मिनी ही बनाओ या मैक्सिम बनाओ।",
+      "source": "caption",
+      "english_text": "First pair and I have two more to make. So if we assume that the first pay of both is not equal then we will take the decision on first pay. What kind of decision will you take on first pay? It can also become a mini hip on the first pay. Can also become maxiv. Meaning that assume that one and two are not equal. So which of these two should have more priority? If we make mini then One and Apple will come out on top because One is smaller than Two. If we make a maxim, two will remain above two and banana will come above because two is bigger than one. So you can decide accordingly. So according to that, in normal heat there were only two options, either make Mini or Maxim."
+    },
+    {
+      "start_time": 2571.76,
+      "end_time": 2605.67,
+      "text": "यहां पे दो चार चीज़ है। क्यों? आप चाहते हैं कि ये फर्स्ट मेरा मीन के हिसाब से चले और मेरा सेकंड भी मिन के हिसाब से चले। मतलब कि अगर फर्स्ट इक्वल नहीं है तो फर्स्ट पे रूल लगे कि मिन हीप का वैसा हो जाए। अगर फर्स्ट इक्वल है तो सेकंड पे रूल लगे और वो मिन हीप बन जाए। लेकिन क्या हो मेरा ये मीन हो और ये मैक्स हो मतलब अगर फर्स्ट इक्वल नहीं है तो मीन हीप की तरह बिहेव करे लेकिन अगर फर्स्ट इक्वल हो गया तो वो मैक्स हिप की तरह बिहेव करने लग जाए बेस्ड ऑन द सेकंड अगर मेरा ये मैक्स हो और ये मीन हो सिमिलरली मेरा ये भी मैक्स हो और ये भी मैक्स हो। तो चार तरीके के केसेस बन सकते हैं। चार तरीके की हिप आपको बनानी",
+      "source": "caption",
+      "english_text": "There are two or four things here. Why? You want this first mine to move according to the mean and my second also to move according to the mean. Meaning that if the first one is not equal then the first pay rule should be applied so that the min heap becomes the same. If the first is equal then the rule on the second applies and it becomes a min heap. But what if this is my mean and this is max, meaning if the first is not equal then it should behave like a mean heap but if the first is equal then it starts behaving like a max heap. Based on the second, if this is my max and this is mean, similarly my this is also max and this is also max. So four types of cases can be made. Four ways to make you hip"
+    },
+    {
+      "start_time": 2605.68,
+      "end_time": 2637.51,
+      "text": "पड़ सकती है। बहुत जल्दी हम आपको समझा देते हैं कि कैसे बनाना है। इसका सिंटेक्स थोड़ा थोड़ा क्या बहुत ही गंदा है मतलब ठीक है? ये सिंटेक्स क्या इसीलिए Python तो बिल्कुल डीएसए पढ़ने का लैंग्वेज है नहीं। तो देखिए शुरुआत में सबसे पहले आपको क्या बनाना पड़ेगा? एक पेयर बनाना पड़ेगा। क्लास पेयर ठीक है? इसको ऐसा कर दीजिए। आपको एक इसको डिफ करना पड़ेगा। मतलब डबल अंडरस्कोर इन इट। एक बार फिर डबल अंडरस्कोर और आपको इसको करना पड़ेगा सेल्फ फर्स्ट सेकंड।",
+      "source": "caption",
+      "english_text": "May fall. Very quickly we will explain to you how to make it. Its syntax is a bit dirty, what does it mean, right? This syntax is why Python is not a language to read DSA at all. So see, what will you have to make first in the beginning? Will have to make a pair. class pair ok? Make it like this. You have to def this one. Meaning double underscore in it. Once again double underscore and you have to do this self first second."
+    },
+    {
+      "start_time": 2637.52,
+      "end_time": 2671.349,
+      "text": "सब बताएंगे इसका यूसेज कैसे होता है और कॉलन देके सेल्फ डॉट फर्स्ट इक्व फर्स्ट और सेल्फ डॉट सेकंड इक्वल टू सेकंड तो ये अब तो आपका पेयर बनाने के लिए हो गया कि ये पेयर ऐसे बन जाएगा। ठीक है जी। चलिए। अब आपको एक फंक्शन डिफाइन करना पड़ेगा जिसको हम लोग कहते हैं लेस दैन। लेस दैन इसी नाम का रखिएगा। डेफ डबल अंडरस्कोर एलटी ऐसा अंडरस्कोर। इसमें ये दो चीजें पास करेगा। सेल्फ और अदर मतलब हमेशा ये दो पेयर में कंपेयर करेगा। जब भी कंपेयर होता है ना हिप में तो दो चीजों में वन और",
+      "source": "caption",
+      "english_text": "Everyone will tell how it is used and by giving colon, self dot first equals first and self dot second equal to second, so now it is done to make your pair, this pair will be formed like this. ok sir. Let go. Now you will have to define a function which we call less than. Less then keep the same name. def double underscore lt so underscore. In this it will pass two things. Self and other means it will always compare in two pairs. Whenever there is a comparison between the hips, two things are one and"
+    },
+    {
+      "start_time": 2671.359,
+      "end_time": 2704.39,
+      "text": "एप्पल। ये आपका एक पेयर हो गया। ये आपका P1 हो गया या A हो गया। दूसरा P2 हो सकता है कि ये टू हो और बनाना हो। तो ये दूसरा पेयर। इन दोनों पेयर के बीच में डिसीजन होगा कि दोनों में से किसको ऊपर भेजना है। तो दोनों में से अगर मिन हीप है तो वन एप्पल वाले को ऊपर भेजना है जी। मैक्स हिप है तो टू बनाना। ये डिसीजन तो यहां आपको ना रूल्स लिखना पड़ेगा। रूल्स लिखना पड़ेगा। अच्छा। तो यहां पे रूल्स कैसे होता है? देखिए सबसे पहले तो आपको लिखना पड़ेगा ना इफ सेल्फ डॉट फर्स्ट सेल्फ डॉट फर्स्ट नॉट इक्वल टू अदर डॉट फर्स्ट। नॉट",
+      "source": "caption",
+      "english_text": "Apple. This is your pair. This becomes your P1 or A. Second P2 may be it is to be and has to be made. So this second pair. There will be a decision between these two pairs as to whom to send up. So if there is a min heap among the two, then the one with one apple has to be sent to the top. If max is hip then make it two. This is a decision so here you will not have to write any rules. Rules will have to be written. Good. So how are the pay rules here? See, first of all you have to write if self dot first self dot first not equal to other dot first. Not"
+    },
+    {
+      "start_time": 2704.4,
+      "end_time": 2739.349,
+      "text": "इक्वल टू अदर डॉट फर्स्ट मतलब कि अगर सॉरी इफ ऐसा नहीं लिखा जाता पython में थोड़ा आदत हो गया है इफ सेल्फ डॉट फर्स्ट हां मतलब कि अगर दोनों का फर्स्ट सेम नहीं है। अगर दोनों का फर्स्ट सेम है तो डिसिशन किस पे होना है? फर्स्ट पे होना है। तो अभी आप लोग क्या करते हैं ना देखिए लेस दैन क्या पूछता है? लेस दैन हमेशा क्या पूछता है? लेस देन हमेशा एक क्वेश्चन पूछता है सेल्फ और अदर में कि क्या मेरा सेल्फ इज लेस देन अदर",
+      "source": "caption",
+      "english_text": "Equal to other dot first means that if sorry if it is not written like this, it has become a bit of a habit in python. If self dot first yes means that if the first of both is not the same. If both have first semester then who will be decided? Have to be on first pay. So what do you guys do now, don't see what Less Than asks? What does Les Dan always ask? Less than always asks a question between self and others whether my self is less than others"
+    },
+    {
+      "start_time": 2739.359,
+      "end_time": 2765.589,
+      "text": "लेस देन अदर इसका इसको दो आंसर मिल सकता है या तो आंसर मिल सकता है यस या तो आंसर मिल सकता है नो अगर आंसर मिला यस देन सेल्फ बिफोर अदर ये डिफॉल्ट बिहेवियर है अदरवाइज बिफोर बिफोर सॉरी अदर बिफोर सेल्फ अदर बिफोर सेल्फ। मतलब कि इसका क्या मतलब है? आपको बताते हैं। जब भी प्रायोरिटी क्यू ऐसा देखता है ना कि दो है। एक सेल्फ और अदर।",
+      "source": "caption",
+      "english_text": "Less than other can get two answers for this, either the answer can be yes, either the answer can be no, if the answer is yes then self before other, this is the default behavior, else before sorry, other before self, other before self. I mean what does it mean? Let us tell you. Whenever the priority queue sees that there are two. One self and other."
+    },
+    {
+      "start_time": 2765.599,
+      "end_time": 2797.67,
+      "text": "सेल्फ और अदर बस दो पेयर का नाम है। P1 P2। ठीक है? ये पूछता है कि क्या P1 इज़ लेस दैन P2? P1 इज़ लेस दैन P2। ये यही क्वेश्चन पूछता है एलटी को। आप वहां पे क्या लिखते हैं? उसका मतलब नहीं है। ये पूछता है कि क्या P1 इज़ लेस दैन P2? अगर आंसर आता है यस देन P1 विल गो बिफोर P2। अगर आंसर आता है नो तो P2 विल गो बिफोर P1। इसीलिए पाइthन बाय डिफॉल्ट मीन ही इम्प्लीमेंट करता है। तो देखिए, पहला केस है कि आपको दोनों में मीन रखना है। फर्स्ट में भी मीन, सेकंड में भी मीन। तो यहां तो आप बहुत सिंपल आप बस लेस दैन लिख सकते हैं कि अगर ऐसा है तो रिटर्न",
+      "source": "caption",
+      "english_text": "Self and Other are just the names of two pairs. P1 P2. Ok? This asks whether P1 is less than P2? P1 is less than P2. This is the question the LT asks. What do you write there? That doesn't make sense. This asks whether P1 is less than P2? If the answer is yes then P1 will go before P2. If the answer is no then P2 will go before P1. That's why Python implements mean by default. So see, the first case is that you have to keep Pisces in both. Meaning in the first, meaning in the second also. So here it is very simple you can just write less than that if so then return"
+    },
+    {
+      "start_time": 2797.68,
+      "end_time": 2829.27,
+      "text": "इज़ सेल्फ डॉट फर्स्ट लेस दैन अदर डॉट फर्स्ट। अदर डॉट फर्स्ट। अगर देखिए अगर इसका आंसर यस आएगा मतलब कि सेल्फ डॉट फर्स्ट सच में अदर डॉट फर्स्ट से अच्छा है। छोटा है तो सेल्फ ऊपर चला जाएगा। तो मिन हीप। अगर सेल्फ डॉट फर्स्ट इज़ ग्रेटर दैन अदर डॉट फर्स्ट हुआ तो इसका आंसर फॉल्स आएगा। तो मतलब कि अदर डॉट फर्स्ट छोटा है वो ऊपर चला जाएगा। तो ये मीन में ऐसे लिखते हैं। अगर अगर फर्स्ट इक्वल हो गया तो रिटर्न सेम सेल्फ डॉट सेकंड",
+      "source": "caption",
+      "english_text": "Is self dot first less than others dot first. Others dot first. If you see, if the answer is yes, it means that Self Dot First is really better than Others Dot First. If it is small then the self will go up. So min heep. If self dot first is greater than other dot first then the answer will be false. So that means that the other dot first is smaller, it will go on top. So this is how it is written in Pisces. If if first equals then return same self dot second"
+    },
+    {
+      "start_time": 2829.28,
+      "end_time": 2855.349,
+      "text": "लेस देन अदर डॉट सेकंड। बस इतना करना है। ये आपका क्या है? ये आपका मिन ऑन फर्स्ट है। मतलब मिनिमम हिप ऑन फर्स्ट मिनिमम ऑन सेकंड। क्यों? क्योंकि देखिए एलटी का नाम होता है लेस दैन। लेस दैन पूछता है इज़ लेस दैन। हम लोग बस वही लिख दिए। हम लोग एग्जैक्टली वही लिख दिए कि सेल्फ डॉट फर्स्ट इज़ लेस दैन अदर डॉट फर्स्ट। हां। सेल्फ डॉट सेकंड लेस दैन अदर डॉट सेकंड।",
+      "source": "caption",
+      "english_text": "Less than another dot second. That's all I have to do. What is this to you? This is your min on first. Meaning minimum hip on first minimum on second. Why? Because see, the name of LT is Less Than. Less than asks is less than. We just wrote that. We wrote exactly the same thing that self dot first is less than others dot first. Yes. Self dot second less than other dot second."
+    },
+    {
+      "start_time": 2855.359,
+      "end_time": 2883.51,
+      "text": "हां। तो जो ये पूछ रहा है वही हम लोग यहां पे लिख दिए। इसीलिए दोनों मीन मीन बन गया। अब अगर आपको दोनों को मैक्स बनाना है। किसी एक को भी मैक्स बनाना है ना। बस इस लेस दैन को ग्रेटर दैन लिख दीजिए। इस लेस दैन को ग्रेटर दैन लिख दीजिए। अगर आपको मन करता है कि हमको दोनों को मैक्स बनाना है, कुछ नहीं कीजिए। इस लाइन के जगह क्या लिखिए? रिटर्न सेल्फ डॉट फर्स्ट ग्रेटर दैन अदर डॉट फर्स्ट। बस ये मैक्स शीट बन गया। अब ये मैक्स वन बन गया।",
+      "source": "caption",
+      "english_text": "Yes. So whatever the person is asking, we have written it here. That's why both Pisces became Pisces. Now if you want to make both max. No one has to be made Max. Just write this LESS THAN as GREATER THAN. Write this LESS THAN as GREATER THAN. If you feel like making both of us max, don't do anything. What to write in place of this line? Return self dot first greater than others dot first. This just became Max Sheet. Now it became Max One."
+    },
+    {
+      "start_time": 2883.52,
+      "end_time": 2912.47,
+      "text": "क्यों? क्योंकि ये लेस दैन पाइthन जो क्वेश्चन पूछ रहा है। पाइthन जो क्वेश्चन सोचा है ना कि लेस दैन हम लोग उसका उल्टा लिख दिए कि सेल्फ बड़ा है कि आदर्श है। अब इसका आंसर उल्टा आएगा। तो मान लीजिए अगर सेल्फ छोटा हुआ। सेल्फ वाला छोटा हुआ मतलब कि वन और एप्पल दो हैं वन और एप्पल। टू और बनाना। पाइthन क्या क्वेश्चन पूछेगा? पाइthन के लिए ये सेल्फ है और ये अदर है। तो पाइthन उससे क्वेश्चन पूछेगा हमारे एलटी से कि एक बात बताओ क्या सेल्फ इज़ छोटा दैन छोटा दैन अदर? हम लोग क्या रिटर्न कर रहे हैं?",
+      "source": "caption",
+      "english_text": "Why? Because this is less than Python which is asking the question. The question which Python has thought is not less than, we have written the opposite of that whether the self is big or ideal. Now the answer will be the opposite. So suppose if the self becomes smaller. Self is shortened to mean that One and Apple are two, One and Apple. To and make. What questions will Python ask? For Python this is self and this is other. So Python will ask a question to our LT that tell me one thing, is self smaller than others? What are we returning?"
+    },
+    {
+      "start_time": 2912.48,
+      "end_time": 2944.069,
+      "text": "सेल्फ डॉट फर्स्ट अगर बड़ा है, हम लोग रिटर्न कर रहे हैं इफ सेल्फ डॉट फर्स्ट ग्रेटर दैन अदर डॉट फर्स्ट रिटर्न ट्रू। तो देखिए यहां पे सेल्फ डॉट फर्स्ट क्या बड़ा है? नहीं तो हम लोग क्या रिटर्न करेंगे उसको? फॉल्स। लेकिन पाइथन क्या क्वेश्चन पूछा था? इफ सेल्फ इज लेस देन अदर? उसका आंसर आ गया फॉल्स। फॉल्स में क्या? अदर विल गो बिफोर सेल्फ। अदर विल गो बिफोर सेल्फ। मतलब टू बनाना बिफोर चला जाएगा। तो ये क्या बन गया? मैक्स हीप बन गया। तो जो पाइthन पूछ रहा है हम लोग उसका उल्टा आंसर दे रहे हैं। हम लोग उसको झूठ बोल रहे हैं। तो पाइthन को लग रहा है अच्छा अच्छा ठीक है। तो इसीलिए मैक्स ही बन जाता है। डिफॉल्ट बिहेवियर क्या है?",
+      "source": "caption",
+      "english_text": "If self dot first is greater, we are returning true. So see what is big about self.first here? Otherwise how will we return it? Falls. But what questions did Python ask? If Self is Less Than Others? His answer came Falls. What's in the Falls? Others Will Go Before Self. Others Will Go Before Self. Meaning it will go away before making it. So what has become of this? Became Max Heap. So we are giving the opposite answer to what Python is asking. We are telling him lies. So Python is feeling ok, ok. So that's why it becomes Max. What is default behavior?"
+    },
+    {
+      "start_time": 2944.079,
+      "end_time": 2976.309,
+      "text": "मिन हीप। तो इसीलिए अगर आप ये लेस दैन को लेस दैन ही लिखते हैं। दोनों लेस दैन मीन रहेगा। इस लेस दैन को घुमा के ग्रेटर दैन कर दीजिए। ये मैक्स बन जाएगा। ऐसे आपको चारों कॉम्बिनेशन समझ में आ जाएगा। चारों का मतलब ये क्या हुआ? मीन ऑन फर्स्ट मिन ऑन सेकंड। मान लीजिए आपको मैक्स ऑन फर्स्ट और मिन ऑन सेकंड चाहिए। इसको एज इट इज छोड़ दीजिएगा। इसको ग्रेटर दैन कर दीजिएगा जैसे हम लोग यहां किए हैं। आपको दोनों में मैक्स चाहिए दोनों को ग्रेटर दैन कर दीजिएगा दोनों मिल जाएगा। तो ये चार तरीके का एक जगह पे लिख के रख लीजिए। इसी इसी तरी कॉम्बिनेशन से आपको बस ग्रेटर दैन इक्वल टू हटाना है। मतलब ग्रेटर दैन लेस दैन इधर-उधर करिएगा मैक्स मीन बन जाएगा।",
+      "source": "caption",
+      "english_text": "Min Heap. So that's why if you write 'less than' then it is 'less than'. Both will be less than mean. Turn this less than and make it greater than. This will become Max. In this way you will understand all four combinations. What do all four mean? Mean on first Min on second. Let's say you want Max on first and Min on second. Leave it as it is. Make it greater than what we have done here. You want max in both, make both greater than that and you will get both. So write down these four methods at one place. By using this same combination you just have to remove greater than equal to. Meaning, if you move it around, Greater than Less than, Max will become Mean."
+    },
+    {
+      "start_time": 2976.319,
+      "end_time": 3010.23,
+      "text": "याद रखिए पाइthन में सिंपल याद रखिए। नहीं भी समझ में आ रहा है। जब आप लिखते हैं लेस दैन फंक्शन का नाम भी लेस दैन अब भी लेस दैन मीन बनेगा। आप ग्रेटर करेंगे मैक्स बन जाएगा। बस धीरे-धीरे ये सिंटेक्स है। इसमें कुछ समझने की बात नहीं है। इसमें कोई लॉजिक नहीं है। ये सिंटेक्स है। अब इतना कॉम्प्लेक्स इसको कर दिया गया है। हमको नहीं मालूम क्यों कर दिया गया है लेकिन क्या कर सकते हैं। इसका यूसेज, इसका यूसेज कैसा? सिमिलर जैसा आप बाकी यूज़ हीप इज इक्वल टू ये हो गया। फॉर आपको कुछ पुश करना है हिप में। मान लीजिए कोई पेयर पुश करना है तो आप क्या करेंगे? हिप q",
+      "source": "caption",
+      "english_text": "Remember, remember simple in Python. Can't even understand. When you write less than the name of the function also less than will still become less than mean. You will grater and become max. Just slowly this is the syntax. There is nothing to be understood in this. There is no logic in this. This is the syntax. Now it has become so complex. We don't know why this has been done but what can we do. Its usage, how is its usage? Similar to the rest of you use heap is equal to this done. For you have to push something in the hip. Suppose you have to push a pair, what will you do? hip q"
+    },
+    {
+      "start_time": 3010.24,
+      "end_time": 3041.51,
+      "text": "डॉट हिप पुश इसका नाम हीप और जो आप पेअर बनाए थे पेअर ऑफ मान लीजिए हम वन और एप्पल वन और एप्पल ऐसा करके पेअर बना दिए। हो गया पुश। आपको निकालना है कैसे निकालेंगे? वाइल हिप P = हिप Q डॉट हिप पॉप हिप और इसको प्रिंट कैसे करेंगे? ये P क्या है? ये P एक पेयर है। याद रखिएगा",
+      "source": "caption",
+      "english_text": "Dot hip push, its name is heap and the pair you made is pair off. Suppose we made one and apple one and apple a pair by doing this. Push done. You have to get it out, how will you get it out? Vile Hip P = Hip Q Dot Hip Pop Hip And how to print it? What is this P? This P is a pair. please remember"
+    },
+    {
+      "start_time": 3041.52,
+      "end_time": 3072.15,
+      "text": "पेयर है P डॉट फर्स्ट। ये हो गया P डॉट सेकंड। तो जो भी आप करते हैं सब में बस आपको P फर्स्ट P सेकंड। तो इसका सिंटेक्स हम आपको कोड में कमेंट में दे देंगे। वो देख लीजिए। इसका सिंटेक्स यही है। इसका सिंटेक्स आपको ये ये लिखना पड़ेगा देखिए। ये आपको पहले लिखना पड़ेगा। ये जो पूरा पार्ट है। ये वाला तो बिल्कुल सेम रहेगा। आप पेअर बनाते हैं लेकिन अगर आप यहां पे लेस दैन देते हैं तो वो मीन बनेगा। अगर यहां पे आप ग्रेटर दैन दे देते हैं वो मैक्स बन जाएगा। याद रखिएगा। तो आप डिसाइड कर सकते हैं हमको फर्स्ट को मैक्स करना है। सेकंड को मैक्स करना है क्या करना है। ठीक है?",
+      "source": "caption",
+      "english_text": "Pair is P dot first. This becomes P dot second. So whatever you do, you just have to do P first P second. So we will give you its syntax in the comments in the code. Take a look at that. This is its syntax. You will have to write its syntax like this. You will have to write this first. This is the complete part. This one will be exactly the same. You make a pair but if you give less than here then it will become a mean. If you give greater than here it will become max. Remember this. So you can decide, we have to max first. What to do is to max the seconds. Ok?"
+    },
+    {
+      "start_time": 3072.16,
+      "end_time": 3092.24,
+      "text": "इसका कोड ये सिंटेक्स है। जस्ट सिंटेक्स है। कॉम्प्लेक्स है हम जानते हैं। ठीक है? अब क्या कर सकते हैं? पाइथन हम इसीलिए बोल रहे हैं कि ये डीएसए पढ़ने के लिए लैंग्वेज नहीं बनाया गया था। इसीलिए इतना अजीब सा लैंग्वेज है। ठीक है? तो चलिए इसको जरूर ट्राई करके देखिएगा। यह पूरा कोड है। ट्राई करके देखिए। हो सके तो चैट जीपीटी का हेल्प ले लीजिए। कोई दिक्कत नहीं है।",
+      "source": "caption",
+      "english_text": "Its code is this syntax. Just syntax. It's complex, we know. Ok? What can be done now? We are saying Python because this language was not made for reading DSA. That's why it's such a strange language. Ok? So let's definitely try it. This is the complete code. Try it. If possible, take help of Chat GPT. There is no problem."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

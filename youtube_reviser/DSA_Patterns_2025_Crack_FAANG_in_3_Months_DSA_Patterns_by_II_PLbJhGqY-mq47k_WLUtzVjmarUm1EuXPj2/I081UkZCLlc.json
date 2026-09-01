@@ -1,0 +1,352 @@
+{
+  "video_id": "I081UkZCLlc",
+  "video_title": "Recursion & Backtracking Explained Once and For All | DSA for Beginners",
+  "video_number": 72,
+  "chunks": [
+    {
+      "start_time": 1.829,
+      "end_time": 35.27,
+      "text": "आप लोग सब इंफिनिटी वॉर देखे थे ना, उसमें, डॉ. स्ट्रेंज एक काम किया था कि 1-14 मिलियन पॉसिबिलिटी में देखके बता दिया था कि कौन से जीतेंगे। वह कैसे किया था? वह किया था रिकर्ज़ से। क्योंकि डॉ. स्ट्रेंज को रिकर्शन और बैक ट्रैकिंग आता था। हो सकता है कोई डीएसए का कोर्स किया होगा। तो, देखिए, आज उसी बैकट्रैकिंग के बारे में बात करेंगे। पहले हम आपको एक एग्जांपल से समझाएंगे कि बैकट्रैकिंग होता क्या है। तो, ऊपर ऊपर से इंट्रो देने के लिए बता देते हैं कि इसके होने क्या वाला है। सबसे पहले आपको हम एक 10 12 बीटेक के एग्जांपल से समझाएंगे। उसके बाद आपको हम एक रियल एरे पे वो ड्राई रन करके दिखाएंगे। उसके बाद आपको हम कोड टेंपलेट देंगे। यह टेंपलेट आपको रिकर्ज़न बैक ट्रैकिंग में यूज़ होगा। ग्राफ में, डीपी",
+      "source": "caption",
+      "english_text": "You guys all watched Infinity War, in that, Dr. Strange did one thing that by looking at 1-14 million possibilities, he told who would win. How did he do it? That was done with recurse. Because Dr. Strange knew recursion and back tracking. Might have done some DSA course. So, see, today we will talk about the same backtracking. First we will explain to you with an example what backtracking is. So, to give a basic intro, let us tell you what is going to happen. First of all we will explain to you with an example of 10-12 B.Tech. After that we will show you that dry run on a real array. After that we will give you the code template. You will use this template for recursion back tracking. In the graph, DP"
+    },
+    {
+      "start_time": 35.28,
+      "end_time": 69.429,
+      "text": "में सब में। रिकर्ज़न का सबसे ब्यूटीफुल चीज़ यह है ना कि कोड बहुत छोटा होता है। कोड का दो ही टेंप्लेट होता है। एक जो हम लोग शुरू वाला देखे थे कि बेस केस सब प्रॉब्लम आंसर को बना दो। एक वो होता है। एक बैक ट्रैकिंग का टेंप्लेट होता है। क्वेश्चन बहुत इजी हो, क्वेश्चन Google लेवल का कॉम्प्लेक्स हो। यही टेंप्लेट से हर क्वेश्चन बनता है। इसके अलावा कुछ नहीं होता है। ठीक है? तो 10 12 बीटेक से मेरा मतलब है कि आप लोग क्या करते हैं कि 10 12 बीटेक लाइन से सब किए हुए होंगे। लेकिन क्या होता आपके पास एक टाइम मशीन होता अगर आप 2000 मान लो 2015 में आप अगर 10 करना चाहते हैं आपके पास टाइम मशीन होता कि चलो 2017 में चले जाते हैं कर लेते हैं 10 अगर नहीं जमेगा तो वापस आ जाएंगे टाइम को",
+      "source": "caption",
+      "english_text": "In all. The most beautiful thing about recursion is that the code is very small. There are only two templates of code. One thing that we saw in the beginning was to make all the problem answers as base cases. There is one. There is a backtracking template. The question should be very easy, the question should be Google level complex. Every question is made from this template. Apart from this nothing happens. Ok? So by 10 12 B.Tech I mean what you guys do is that you will have done everything from 10 12 B.Tech line. But what would have happened if you had a time machine, if you were in 2000. Suppose in 2015, if you wanted to do 10, you would have a time machine that let's go to 2017 and do 10. If you are not able to do 10, then you will come back to time."
+    },
+    {
+      "start_time": 69.439,
+      "end_time": 97.91,
+      "text": "रिवर्स कर देंगे और वापस हो सकता है कि 10 ना करके आगे बढ़ के देख ले कुछ होगा उसी चीज को बैक ट्रैकिंग कहते हैं यही डॉक्टर स्ट्रेंज किया था यही आज डॉक्टर प्रत्युष भी करने वाले हैं तो एंड तक देखिएगा और फ्लो में देखिएगा इसको ब्रेक मत कीजिएगा कि अगर आपके पास अभी नहीं है 30 मिनट तो अभी मत देखिए बाद में देखिएगा लेकिन फ्लो नहीं टूटना चाहिए इसको अगर आप 5 मिनट अभी 10 मिनट कल और 20 मिनट बाद में देखेंगे ना कुछ नहीं समझ में आएगा। एक फ्लो में बैठ के देखिए तभी सेंस बनेगा बातों का। चलिए शुरू करते हैं जल्दी। अब देखिए इमेजिन करिए कि हम प्रत्युष हैं। ठीक है?",
+      "source": "caption",
+      "english_text": "We will reverse it and maybe go back, instead of doing 10, go ahead and see if something happens, the same thing is called back tracking, this is what Doctor Strange did, this is what Doctor Pratyush is also going to do today, so watch till the end and watch in the flow, don't break it, if you don't have 30 minutes right now, don't watch it now, watch it later, but the flow should not be broken, if you watch it for 5 minutes now, 10 minutes tomorrow and 20 minutes later, you will not understand anything. Sit and watch in a flow, only then things will make sense. Let's start quickly. Now see, imagine that we are Pratyush. Ok?"
+    },
+    {
+      "start_time": 97.92,
+      "end_time": 131.029,
+      "text": "ऑब्वियसली हम 2015 में खड़े हैं। 2015 साल चल रहा है। और इस समय मेरे पास अब हम क्लास 10 की उम्र तक आ गए हैं। अब मेरी उम्र कितनी हो गई है? 10थ का बोर्ड्स करने की। आगे लोग नॉर्मली क्या करते हैं कि 10th करते हैं, फिर 12th करते हैं। फिर बीटेक कर लेते हैं। जैसा इसके पापा बताते हैं वैसा सब लोग 10, 12 और बीटेक कर लेता है। अब मेरा ये मन नहीं है। मेरा ये मन नहीं है कि हम 10, 12 बीटेक कर लें और इसमें कितना हो जाएगा? इसमें 2 साल लगेंगे। 12 में 2 साल और इसमें चार साल तो टोटल आठ साल लगेंगे। अब ये बहुत बड़ा इन्वेस्टमेंट है कि हमको एक साथ सारा नहीं देखना है। मेरा मन है ना कि हम हम सारे",
+      "source": "caption",
+      "english_text": "Obviously we are standing in 2015. 2015 year is going on. And at this time I have now reached the age of class 10. How old am I now? To do 10th boards. What people normally do next is to do 10th and then 12th. Then do B.Tech. As his father tells, everyone does 10, 12 and B.Tech. Now I don't feel like this. I don't feel like doing 10, 12 B.Tech and how much will it cost? This will take 2 years. 2 years in 12th and 4 years in this, it will take a total of 8 years. Now this is a huge investment that we don't have to see it all at once. I feel like all of us"
+    },
+    {
+      "start_time": 131.039,
+      "end_time": 163.91,
+      "text": "चॉइससेस एक्सप्लोर करें। थोड़ी देर के लिए मान लीजिए कि ऐसे दुनिया में है हम लोग कि अगर आप 10 नहीं भी करते हैं तो आप 10 की जगह कुछ और कर सकते हैं और फिर बाद में आप 12 कर सकते हैं। या फिर आप अगर 10 कर लिए हैं तो आप चाहें तो 12 को स्किप कर लें और 12 दो साल में कुछ और करके डायरेक्ट बीटेक भी कर सकते हैं। तो ऐसा बहुत सारा चॉइस है। ये भी हो सकता है कि आप कुछ ना करें। आप आठ साल कुछ ना करें। ये भी हो सकता है कि आप आठ साल में सब कर लें या आप कुछ सबसेट या कुछ कॉम्बिनेशन तीनों का करके देखें। तो मेरा मन है ना कि अपना जिंदगी वेस्ट करने से पहले हम हम सारा चीजें एक्सप्लोर करना चाहते हैं। हर चॉइस को हर हर हर पॉसिबिलिटी को एक्सप्लोर करने का",
+      "source": "caption",
+      "english_text": "Explore choices. Let's assume for a moment that we are in such a world that even if you don't do 10, you can do something else instead of 10 and then later you can do 12. Or if you have done 10th, then if you want, you can skip 12th and after 12th, you can do something else and do direct B.Tech. So there is a lot of choice. It is also possible that you may not do anything. You don't do anything for eight years. It is also possible that you can do it all in eight years or you can try some subset or some combination of all three. So I feel that before wasting our life we ​​want to explore all the things. To explore every choice and every possibility"
+    },
+    {
+      "start_time": 163.92,
+      "end_time": 196.949,
+      "text": "मेरा मन है। हम क्या करेंगे? फॉर एग्जांपल मेरे पास एक टाइम ट्रेवल मशीन है। वो हमको अलऊ करती है कि आप 10 कर लो। अगर आपको लगता है कि 10 नहीं करना है तो फिर आप वापस भी आ सकते हो टाइम में। तो ये टाइम ट्रेवल मशीन मेरे पास है। अब देखिए हम क्या करेंगे। अभी हम कहां खड़े हैं? 2015 में। ठीक है? अभी मेरे पास कुछ नहीं है। मेरे पास कोई डिग्री नहीं है। ना 10 की है ना 12th की है ना बीटे की है। तो हम ट्राई करते हैं। अब देखिए 2015 में मेरी उम्र किसकी है? 10th की उम्र है। तो मेरे पास दो ही ऑप्शन है ना? या तो हम 10थ कर सकते हैं। 10थ करके आगे चले जाएं या तो हम 10थ ना करके आगे चले जाएं। मतलब की मेरे पास",
+      "source": "caption",
+      "english_text": "I feel like it. What will we do? For example I have a time travel machine. She asks us to do 10. If you feel that you don't want to do 10, then you can come back in time. So I have this time travel machine. Now see what we will do. Where do we stand now? In 2015. Ok? I don't have anything right now. I don't have any degree. Neither is it from 10th, nor from 12th, nor from the past. So we try. Now see what is my age in 2015? Is 10th age. So I have only two options, right? Either we can do 10th. Either we should do 10th and move ahead or we should not do 10th and move ahead. meaning i have"
+    },
+    {
+      "start_time": 196.959,
+      "end_time": 231.27,
+      "text": "कितने ऑप्शन है। या तो हम 2015 से 2017 में चले जाएं जिसपमें कि हम 10 कर चुके हैं। जिसमें कि हम 10 कर चुके हैं। ये एक ऑप्शन है। अच्छा। एक ऑप्शन ये भी था कि 2015 से हम डायरेक्ट 2017 में कूद जाते जिसमें हम 10 नहीं किए हैं। उसको बाद में देखेंगे। पहले यहां पे आइए। मान लिया कि हम 2017 में अपनी टाइम मशीन से आ गए और इसमें हम 10थ कर चुके हैं। वेरी गुड। अब मेरी उम्र किसकी है? 12 करने की। अगेन मेरे पास दो चॉइससेस हैं। दो ही ऑप्शन है ना कि आप अब 2017 वाला प्रत्युष 12 कर सकता है और 12 नहीं कर सकता है। मान लिया थोड़ी देर के लिए कि 2017 वाला प्रत्युष 2019 में कूद जाता है। और ये 12 भी कर",
+      "source": "caption",
+      "english_text": "How many options are there? Either we go from 2015 to 2017 in which we have done 10. Of which we have done 10. This is an option. Good. There was also an option that from 2015 we would have jumped directly to 2017 in which we have not done 10. Will see him later. Come here first. Let's say that we have come to 2017 in our time machine and we have done 10th in this. very good. What age am I now? To do 12. Again I have two choices. There are only two options, now Pratyush of 2017 can do 12 or not 12. Let's assume for a while that Pratyush of 2017 jumps to 2019. And do these 12 also"
+    },
+    {
+      "start_time": 231.28,
+      "end_time": 265.43,
+      "text": "लिया है। अब ये अब इस प्रत्युष के पास कितनी डिग्री है? 2° क्योंकि यह वाला प्रत्युष 10 करके आया था। 12 भी कर लिया तो इसके पास अब 10 और 12 दोनों की डिग्री है। 2019 में इसकी उम्र क्या हो गई है? बीटेक करने की उम्र हो गई है। अगेन आपके पास दो चॉइससेस हैं या तो आप बीटेक कर सकते हैं। या तो आप बीटेक नहीं कर सकते हैं। तो हम अपना पहला वाला चॉइस लेके 2023 में चले जाते हैं। जहां पे अब मेरे पास तीन डिग्री है। और बीटेक भी है। तीनों डिग्री है। अब इसके बाद खत्म हो गया। अब इसके बाद तीनों डिग्री आप एक्सप्लोर कर लिए। 2023 में जा के हमको पता चला 2023 में जब ये प्रत्युष गया तो ये 10 कर चुका",
+      "source": "caption",
+      "english_text": "Have taken. Now how many degrees does this Pratyush have? 2° because this one had come with Pratyusha 10. If he has also completed 12th then he now has degrees of both 10th and 12th. What is its age in 2019? It is the age to do B.Tech. Again you have two choices either you can do B.Tech. Either you cannot do B.Tech. So we take our first choice and go to 2023. Where now I have three degrees. And also B.Tech. There are all three degrees. Now after this it is over. Now after this you have explored all three degrees. After going to 2023, we came to know that when this Pratyush went in 2023, he had done 10."
+    },
+    {
+      "start_time": 265.44,
+      "end_time": 292.71,
+      "text": "था 12 कर चुका था बीटेक भी कर चुका था तो ये कुछ देखा होगा कि इससे इतने की जॉब लगती है मान लो 5 लाख की जॉब लगती है ठीक है पता चल गया लेकिन अब ये वाला जो प्रत्युष है अब ये वापस आना चाहता है अब ये वापस आना चाहता है कहां पे अब ये वापस कहां इसमें आना चाहता है 2019 में 2019 में वापस आने के लिए इसको बीटेक वाले को रिवर्स करना पड़ेगा जब आप टाइम में वापस आएंगे तो जो आप डिसीजन वहां पे लिए थे वो रिवर्स हो जाएगा तो ये प्रत्युष क्या करता है ये प्रत्युष यहां पे वापस आ जाता है।",
+      "source": "caption",
+      "english_text": "I had done 12 and had also done B.Tech, so you must have seen something that it takes a job of this much, let's say it takes a job of 5 lakhs. Okay, I got to know, but now this one Pratyush, now he wants to come back, now where does he want to come back, where does he want to come back in 2019, in order to come back in 2019, this B.Tech guy will have to reverse it. When you come back in time, the decision you had taken there will be reversed. What does this Pratyush do? This Pratyush comes back here."
+    },
+    {
+      "start_time": 292.72,
+      "end_time": 326.23,
+      "text": "अब ये बीटेक हट चुका है इसके डिग्री में। वापस ये 2019 में खड़ा है। अब 2019 में आपके पास दो चॉइससेस थे। याद रखिएगा। बीटेक करने का चॉइस था या बीटेक नहीं करने का चॉइस था। आप एक चॉइस लेके चले गए 2023 में। आपको बीटेक कर लिया आपने। आपने देख लिया कि आपको 5 लाख 7 लाख जिसका भी जॉब लगता है। लेकिन अब आप ये भी देखना चाहते हैं कि अच्छा अगर हम बीटेक नहीं करते तो क्या होता? आप क्या करिए? अब यहां से अगेन अपने टाइम मशीन से एक और 2023 में चले जाइए। यहां पर आपके पास 10 और 12 दोनों की डिग्री है। बीटेक की नहीं है। क्योंकि इस टाइम मशीन से आप किस में गए थे? आप उस टाइम में चले गए थे जब आप बीटेक नहीं किए हुए हैं। जब आप बीटेक नहीं किए हुए हैं।",
+      "source": "caption",
+      "english_text": "Now this B.Tech has been removed from its degree. Back as it stands in 2019. Now in 2019 you had two choices. Remember this. There was a choice to do B.Tech or not to do B.Tech. You took a choice and went to 2023. You have done B.Tech. You have seen that you can get a job from anyone worth Rs 5 lakh or 7 lakh. But now you also want to see, what would have happened if we had not done B.Tech? What should you do? Now from here again go to another year 2023 in your time machine. Here you have both 10 and 12 degree. Not from B.Tech. Because what did you go into with this time machine? You have gone to that time when you have not done B.Tech. When you are not a B.Tech."
+    },
+    {
+      "start_time": 326.24,
+      "end_time": 359.59,
+      "text": "अब आपके पास दो डिग्री है। इसमें आपको कुछ पता चला होगा कि इसमें 2 लाख की ही जॉब लगती है। कुछ भी कुछ भी। ठीक है? अब हो गया। अब इसके बाद तो कुछ अचारा है नहीं आपके पास। वापस आ जाइए। वापस आ जाइए। अगेन ये वाला प्रत्युष भी वापस आ गया। क्या 2019 में ये वाला आदमी जो 10 और 12 किया हुआ था। ये अपना सारा चीजें एक्सप्लोर कर चुका है। इसके पास दो ऑप्शन थे ना बीटेक करने का हो चुका। बीटेक नहीं करने का हो चुका देख लिया। अब ये क्या करेगा? वापस पीछे आएगा। ये वापस पीछे आएगा। 2019 वाला प्रत्युष वापस पीछे आएगा। और जब ये पीछे आएगा तो ये वापस 2017 में खड़ा होगा जहां ये 10 कर चुका है। अब 2017 में कितना",
+      "source": "caption",
+      "english_text": "Now you have two degrees. You might have learned something from this that it only takes a job worth Rs 2 lakh. anything anything. Ok? Now its done. Now after this you don't have any choice. Come back. Come back. This again Pratyush is also back. Is this the guy who was in 10th and 12th in 2019? He has explored everything. He had two options, he was done with B.Tech. Seen enough of not doing B.Tech. What will he do now? Will come back. It will come back. Pratyush of 2019 will come back. And when it comes back, it will stand back in 2017 where it has done 10. how much now in 2017"
+    },
+    {
+      "start_time": 359.6,
+      "end_time": 392.79,
+      "text": "ऑप्शन था? या तो 12 करने का ऑप्शन था। ये आप देख लिए। ये आप जा के देख लिए और उसके बाद भी जितना चीजें पॉसिबल थी सब देख लिए। उसके बाद बी टेक करना है एमटेक करना है। सब देख लिए। अब आपके पास क्या ऑप्शन है 2017 में एक और। 12 नहीं करने का ऑप्शन है। क्या ऑप्शन है? 12 नहीं करने का। तो क्या करिए? टाइम मशीन से 12 नहीं करने का ऑप्शन में आ जाइए। 2019 में जहां पे आपके पास डिग्री में बस 10 है क्योंकि ये वाला कौन सा पाथ है? जब आप 12 नहीं किए हुए हैं। जब आप 12 नहीं किए हुए हैं। अगेन ऊपर वाले 2019 के पास दो ऑप्शन थे। बीटेक करना है या नहीं करना है। आपके पास भी दो ऑप्शन होंगे। बीटेक करना है या नहीं करना है।",
+      "source": "caption",
+      "english_text": "Was there an option? There was an option to either do 12. You saw this. You went and saw this and even after that you saw all the things that were possible. After that you have to do B.Tech or M.Tech. Saw everything. What option do you have now? Another one in 2017. There is an option not to do 12. What is the option? 12 of not doing. So what to do? Come to the option of not doing 12 with the time machine. In 2019 where you have just 10 in your degree because which path is this one? When you are not yet 12. When you are not yet 12. Again in 2019 there were two options. To do B.Tech or not. You will also have two options. To do B.Tech or not."
+    },
+    {
+      "start_time": 392.8,
+      "end_time": 427.029,
+      "text": "दोनों ऑप्शन एक्सरसाइज कीजिए। एक ऑप्शन से 2023 में आइए। आपके पास कौन सी डिग्री होगी? 10 की और बीटेक की। 12 की नहीं होगी। क्योंकि ये वाला पाथ जो है इसमें तो आप 12 किए ही नहीं है कभी। इसमें तो आप कभी 12 किए ही नहीं है। आपके पास कितनी डिग्री है? 2°। अब इन दोनों से देख ले कि भैया इसमें क्या होता है? वापस आए। वापस कहां से आए? 2023 से। वापस 2019 में आए। आपके पास एक और क्या ऑप्शन है? बीटेक नहीं करने का भी ऑप्शन है। बीटेक नहीं करने का भी ऑप्शन है। आप एक और 2023 में गए अल्टरनेट यूनिवर्स में। जब आप बीटेक भी नहीं किए तो अब आप इस इस पाथ में 12 भी नहीं हुआ था। बीटेक भी नहीं हुआ। मतलब आपके पास सिर्फ 10 की डिग्री है। अब आप",
+      "source": "caption",
+      "english_text": "Exercise both options. Come in 2023 with one option. What degree do you have? 10th and B.Tech. Will not be 12. Because in this path you have never done 12. You have never done 12 in this. How many degrees do you have? 2°. Now let's see with these two, brother, what happens in this? Came back. Where did you come back from? From 2023. Came back in 2019. What other option do you have? There is also an option of not doing B.Tech. There is also an option of not doing B.Tech. You went to another 2023 Alternate Universe. When you did not even do B.Tech, you were not even 12th in this path. Didn't even do B.Tech. Meaning you have only 10 degrees. now you"
+    },
+    {
+      "start_time": 427.039,
+      "end_time": 459.51,
+      "text": "यहां पे देख लीजिए कि 10 सिर्फ 10 से क्या होता है? आपको लगा कि अच्छा खाली 20,000 का जॉब लगता है। ठीक है? अब आपके पास सब खत्म हो गया। वापस आइए 2023 में वापस आइए 2019 में। क्या 2019 वाला प्रत्युष ये वाला ये वाला जो प्रत्युष था सारा कुछ करके देख चुका है? हां, सारा कुछ करके देख चुका है। तो वापस आइए 2017 में। क्या 2017 वाला प्रत्युष भी सारा कुछ करके देख चुका है। हां। क्योंकि 2017 वाला प्रत्युष के पास पहला डिसीजन था कि 12 करना है कि नहीं। 12 किया। उसके बाद देखा कि बीटेक करना है, बीटेक नहीं करना है। ये देखा कि 12 नहीं किया। उसके बाद 12 नहीं करने के बाद बीटेक करना है। बीटेक नहीं करना है।",
+      "source": "caption",
+      "english_text": "Let's see here what 10 is just from 10? You thought that sounds like a good vacant job of Rs 20,000. Ok? Now you have it all finished. Come back in 2023. Come back in 2019. Has the Pratyush of 2019 tried everything? Yes, Sara has tried everything. So let's come back to 2017. Has the Pratyush of 2017 also tried everything? Yes. Because in 2017, Pratyush had the first decision whether to do 12 or not. 12 done. After that I saw that I have to do B.Tech, not B.Tech. Saw that 12 was not done. After that, after completing 12th, you have to do B.Tech. Don't want to do B.Tech."
+    },
+    {
+      "start_time": 459.52,
+      "end_time": 492.629,
+      "text": "सब देख लिया। तो 2017 वाले प्रत्युज का भी सारा लाइफ का खत्म हो चुका है। 2017 वाला प्रत्युष कहां आ जाएगा? 2015 में। वापस कहां आ गया? 2015 में। अब ये 2015 का एक डिसीजन कंप्लीट हुआ है। 2015 में आपके पास कितने डिसीजन थे? 10 करना है या 10 नहीं करना है। ये तो एक डिसीजन हुआ कि हां 10 करना है। अगला एक और डिसीजन भी तो होगा कि 10 नहीं करना है। तो आइए सेम चीज रिपीट कीजिए। ये 2017 में ये प्रत्युष है जिसके पास कोई डिग्री नहीं है। ये 10 नहीं किया है। ये 10 नहीं किया है। सेम चीज रिपीट कीजिए। 2017 के प्रत्युष के पास कितना",
+      "source": "caption",
+      "english_text": "Saw everything. So the entire life of Pratyuj of 2017 is also over. Where will Pratyush of 2017 be? In 2015. Where did you come back? In 2015. Now this decision of 2015 has been completed. How many decisions did you have in 2015? 10 to do or 10 not to do. It was decided that yes, 10 have to be done. Next, there will be another decision that not to do 10. So let's repeat the same thing. This is Pratyush in 2017 who doesn't have a degree. This 10 is not done. This 10 is not done. Repeat the same thing. How much does Pratyush have in 2017?"
+    },
+    {
+      "start_time": 492.639,
+      "end_time": 526.47,
+      "text": "डिसीजन है? दो डिसीजन है। 12 करना है नहीं करना है। आओ करते हैं। ये 2019 में आएगा। तो ये मान लीजिए कि 12 कर लिया है। तो इसके पास केवल 12 की डिग्री होगी। क्योंकि 10 तो आप किए नहीं। 2019 के पास कितना ऑप्शन है? दो ऑप्शन। बीटेक करना है, नहीं करना है? पहला ऑप्शन 2023 में आइए। कितनी डिग्री होगी? 12 और बीटेक की। 12 और बीटेक की। खत्म हो गया। वापस आइए। आपके पास एक और ऑप्शन है कि आप बीटेक नहीं कर सकते हैं। आपके पास कितनी डिग्री होगी? केवल 12 की। सारा खत्म। 2019 का काम खत्म। 2019 खत्म हो गया। अब 2017 में तो ये ऑप्शन हुआ है कि जिसप आप 12 कर रहे हैं। आप एक और",
+      "source": "caption",
+      "english_text": "Is there a decision? There are two decisions. 12 To do, not to do. Yes, let's. It will come in 2019. So assume that you have done 12. So it will only have degrees of 12. Because you didn't do 10. How many options does 2019 have? Two options. Do you want to do B.Tech or not? The first option will come in 2023. How many degrees will it be? 12 and B.Tech. 12 and B.Tech. It's over. Come back. You have another option that you cannot do B.Tech. How many degrees do you have? Only 12's. Everything is over. The work of 2019 is over. 2019 is over. Now in 2017, there is this option in which you are doing 12. you another"
+    },
+    {
+      "start_time": 526.48,
+      "end_time": 559.19,
+      "text": "अल्टरनेट यूनिवर्स है जिसमें आप 12 नहीं कर रहे हैं। अभी तक आपके पास देखिए कोई डिग्री नहीं है। अगेन 2019 के पास कितनी पॉसिबिलिटी है? दो पॉसिबिलिटी है। आप बीटेक कर सकते हैं। आप बीटेक नहीं कर सकते हैं। अगर आप बीटेक करेंगे तो आपके पास सिर्फ बीटेक की डिग्री रहेगी। अगर आप बीटेक नहीं करेंगे तो आपके पास कोई डिग्री नहीं बचेगी। इसका काम खत्म। इसका काम खत्म। वापस आएगा वापस आएगा। अब देखिए ये हम इतना बड़ा सा ग्राफ आपको क्यों समझाए प्रत्युष का? क्योंकि ये ना एग्जैक्टली बैक ट्रैकिंग इसी को कहते हैं। बैक ट्रैकिंग क्या होता है? आप एक स्टार्टिंग पॉइंट से स्टार्ट करते हैं। आप एक स्टार्टिंग पॉइंट से स्टार्ट कर रहे हैं।",
+      "source": "caption",
+      "english_text": "There's an alternate universe in which you're not 12. Look, you don't have any degree yet. How many possibilities does Again 2019 have? There are two possibilities. You can do B.Tech. You cannot do B.Tech. If you do B.Tech then you will have only B.Tech degree. If you do not do B.Tech, you will not have any degree left. Its work is finished. Its work is finished. Will come back will come back. Now see, why should we explain to you such a big graph of Pratyush? Because this is exactly what is called back tracking. What is back tracking? You start from a starting point. You are starting from a starting point."
+    },
+    {
+      "start_time": 559.2,
+      "end_time": 592.79,
+      "text": "आपके पास कुछ नहीं होता है। देखिए शुरू में 2015 में इसके पास कुछ नहीं था। ना 10थ था ना 12th था बीटे था कुछ नहीं था। सबसे पहले ये 2015 में क्लास 10 पे चॉइस बनाता है। अपना बस दिमाग कहां लगाता है 2015 में? 10 करना है कि नहीं करना है। अब अगर 10 करना है तो ये 2017 में चला जाता है टाइम मशीन लेके जहां पे ये 10 कर चुका है। अब इसकी डिग्री में देखिए 10 आ चुका है। ये 10 हमेशा रहेगा इस पाथ में। 2017 में इसको बस एक ही फैसला लेना है कि 12 करना है कि नहीं करना है। 2017 में ये दो फैसले करता है। 12 करना है और 12 नहीं करना है। अगेन जब ये 12 करने का डिसाइड करता है 2019 में चला जाता है तो इसकी",
+      "source": "caption",
+      "english_text": "You don't have anything. See, initially in 2015 it had nothing. Neither was it 10th nor 12th, it was nothing. First of all it makes class 10th choice in 2015. Where do you put your mind in 2015? 10 To do or not to do. Now if he has to do 10 then he goes to 2017 with a time machine where he has already done 10. Now see that 10 has come in its degree. These 10 will always be in this path. In 2017, it has to take only one decision whether to do 12 or not. It takes two decisions in 2017. 12 to do and 12 not to do. Again when he decides to do 12 and goes to 2019, his"
+    },
+    {
+      "start_time": 592.8,
+      "end_time": 627.67,
+      "text": "डिग्री में 10 और 12 ऐड हो जाते हैं। इसकी डिग्री में 10 और 12 ऐड हो गए थे। 2019 में हर 2019 में इसको एक ही दो ही फैसला ले रहे हैं कि या तो बी टेक करना है या नहीं करना है। 2019 में 10 का फैसला नहीं होगा। 10 का फैसला हो चुका होगा। 2019 में जब आप आए हैं तो आप बीटेक का फैसला लीजिए। तो 2019 में ये एक फैसला लेता है कि बीटेक करना है। तो इसकी डिग्री में 10-12 बीटेक ऐड हो जाते हैं। अब 2023 में आ गया ये। 2023 मतलब खत्म हो गया। अब आप जितना पढ़ना था पढ़ चुके हैं। अब जब ये पीछे आता है अब जब ये पीछे आता है तो आपको इस बीटेक को निकालना पड़ेगा इस डिग्री से ताकि जब आप 2019 से बीटेक ना करने का डिसीजन लें तो",
+      "source": "caption",
+      "english_text": "10 and 12 are added to the degree. 10 and 12 were added to its degree. Every year in 2019, only one or two people are taking the decision whether to do B.Tech or not. 10 will not be decided in 2019. 10 must have been decided. When you have come in 2019, then take the decision of B.Tech. So in 2019 he takes a decision to do B.Tech. So 10-12 B.Tech are added to its degree. Now it has come in 2023. 2023 means its over. Now you have read as much as you could. Now when it comes back, now when it comes back, you will have to remove this B.Tech from this degree so that when you decide not to do B.Tech from 2019."
+    },
+    {
+      "start_time": 627.68,
+      "end_time": 661.99,
+      "text": "आपके पास केवल 10 और 12 रहे। अगर आप इस बीटेक को ले के आ जाएंगे इस टाइम मशीन से तो यह भी बन जाएगा 10 12 बीटेक वो नहीं करना है। जब आप पीछे आते हैं जब आप टाइम मशीन से पीछे आते हैं मतलब आप अपना डिसीजन को रिवर्स कर रहे हैं रिवर्स मतलब अपने डिग्री में से वो डिग्री फाड़ के फेंक दीजिए अपने डिग्री में से जब पीछे आ रहे हैं तो वो डिग्री फाड़ के फेंक दीजिए। फॉर एग्जांपल जब आप 2019 में आए थे तो आपके पास 10 था। आप 2023 में गए तो आपके पास 10 और बीटेक आ गया। लेकिन जब आप वापस आए अल्टरनेट पॉसिबिलिटी एक्सप्लोर करने के लिए तो आप ये बीटेक को फाड़ के फेंक दीजिए क्योंकि अब हो गया इसका काम। जब आप वापस आते हैं तो आप बीटेक को फाड़ के फेंक देते",
+      "source": "caption",
+      "english_text": "You are left with only 10 and 12. If you bring this B.Tech with this time machine then it will also become 10 12 B.Tech, you don't have to do that. When you come back, when you come back from the time machine, it means you are reversing your decision. Reverse means tear that degree from your degree and throw it away. When you are coming back from your degree, tear that degree and throw it away. For example, when you came in 2019, you had 10. If you go in 2023, you get 10 more B.Tech. But when you come back to explore alternate possibilities, you tear this B.Tech and throw it away because now its work is done. When you come back you tear up the B.Tech and throw it away"
+    },
+    {
+      "start_time": 662.0,
+      "end_time": 695.75,
+      "text": "हैं। ये पूरे चीज को क्या कहते हैं? बैक ट्रैकिंग। क्या? बैक ट्रैकिंग। आपके पास कुछ आइटम्स होते हैं। जैसे मेरे पास कितने आइटम्स थे? तीन आइटम्स। 10 करना है, 12 करना है, बीटेक करना है। हर आइटम के लिए आपके पास कितने चॉइस होते हैं? दो चॉइस। लेना है मतलब उसको करना है डिग्री को या तो नहीं लेना है। और कुछ नहीं होता है। लेना है नहीं लेना है। बस आप ये चॉइस करते जाइए। आप ये चॉइस शुरू से करते जाइए। अब जब लास्ट में पहुंचेंगे तो आपके पास एक कॉम्बिनेशन आएगा। आपके पास या तो सारे चॉइसेस होंगे। जैसे एक चॉइस था जिसमें हम सारा कर लिए थे। या तो 10 12 होगा, 10",
+      "source": "caption",
+      "english_text": "Are. What's this whole thing called? Back tracking. What? Back tracking. You have some items. Like how many items did I have? Three items. Have to do 10, have to do 12, have to do B.Tech. How many choices do you have for each item? Two choices. If you have to take it, it means you have to do it, you can either take the degree or not. Nothing else happens. Have to take or not have to take. Just keep making this choice. You keep making this choice from the beginning. Now when you reach the end, you will get a combination. You will either have all the choices. As if there was a choice in which we had done everything. Either 10 will be 12, 10"
+    },
+    {
+      "start_time": 695.76,
+      "end_time": 730.15,
+      "text": "बीटेक होगा, 10 होगा, 12 हर तरीके का उस सारा पॉसिबिलिटी आपके पास मौजूद होगा। जब आप लास्ट में पहुंच जाते हैं, जब आपके पास चॉइस करने के लिए कुछ बचता ही नहीं है। तो, आप उस चॉइसेस को प्रिंट कर सकते हैं। उस चॉइस से कुछ डिसीजन कुछ भी कर सकते हैं। जो आपका करंट स्टेट है ना कि ये वाला प्रत्युष क्या करके आया था अपनी जिंदगी में। तो उससे आप डिसीजन ले सकते हैं। तो ये होता है बैक ट्रैकिंग एग्जजेक्टली जिसको कहते हैं। अब देखते हैं कि इसका कोड का टेंपलेट क्या होता है। देखिए रिकर्शन में टेंप्लेट बहुत सिंपल होता है। अगर आप टेंप्लेट सीख जाते हैं कोई भी क्वेश्चन इसी को फॉलो करता है। जैसे हम आप लोग को फर्स्ट पार्ट का टेंप्लेट बताए थे। वो फर्स्ट पार्ट का टेंप्लेट सब में लगता है।",
+      "source": "caption",
+      "english_text": "Be it B.Tech, 10th, 12th, all the possibilities of every type will be available to you. When you reach the end, when you have nothing left to choose. So, you can print that choices. With that choice one can make some decisions and do anything. Which is your current state and not what this Pratyush had done in his life. So you can take decisions from that. So this is exactly what is called back tracking. Now let us see what is its code template. See, the template in recursion is very simple. If you learn the template, any question follows it. Like we told you the template of the first part. That template of the first part applies to everything."
+    },
+    {
+      "start_time": 730.16,
+      "end_time": 763.35,
+      "text": "बेस केस लिखो। छोटे पार्ट का आंसर ले लो। अपने एन और आंसर को मिला के आंसर रिटर्न कर दो। दुनिया का कोई क्वेश्चन उसी से बनता है। उससे कोई अलग चीज नहीं बनी आज तक। बैक ट्रैकिंग में भी सेम टेंप्लेट होता है। चाहे वो बैक ट्रैकिंग हो, चाहे वो ग्राफ हो, चाहे वो डायनेमिक प्रोग्रामिंग हो। इसी से बनता है। ठीक है? आइए अब ये क्वेश्चन है। ये क्वेश्चन क्या है? ये क्वेश्चन में आपको बोलता है कि ये एरे है 1 2 3 इसका सारा जनरेट सबसेट्स करो भाई। मतलब इसके सारे सबसेट जनरेट करो। सबसेट क्या होता है? सबसेट माने जो हम लोग ऊपर किए ना कि 10, 12, बीटेक, तीन डिग्री थी। इन तीनों का पॉसिबिलिटी इन कचोड़-मचोड़ के बताओ क्या-क्या पॉसिबिलिटी है? उसी को सबसेट कहते हैं। मतलब मान लीजिए एक सबसेट",
+      "source": "caption",
+      "english_text": "Write the base case. Take the answer of small part. Combine your N and the answer and return the answer. दुनिया का कोई क्वेश्चन उसी से बनता है। उससे कोई अलग चीज नहीं बनी आज तक। बैक ट्रैकिंग में भी सेम टेंप्लेट होता है। चाहे वो बैक ट्रैकिंग हो, चाहे वो ग्राफ हो, चाहे वो डायनेमिक प्रोग्रामिंग हो। इसी से बनता है। Ok? आइए अब ये क्वेश्चन है। ये क्वेश्चन क्या है? ये क्वेश्चन में आपको बोलता है कि ये एरे है 1 2 3 इसका सारा जनरेट सबसेट्स करो भाई। मतलब इसके सारे सबसेट जनरेट करो। What is a subset? सबसेट माने जो हम लोग ऊपर किए ना कि 10, 12, बीटेक, तीन डिग्री थी। इन तीनों का पॉसिबिलिटी इन कचोड़-मचोड़ के बताओ क्या-क्या पॉसिबिलिटी है? उसी को सबसेट कहते हैं। मतलब मान लीजिए एक सबसेट"
+    },
+    {
+      "start_time": 763.36,
+      "end_time": 796.629,
+      "text": "में केवल वन होगा। ये एक सबसेट है। एक सबसेट में वन 2 3 तीनों होगा। ये भी एक सबसेट है। एक सबसेट में कुछ नहीं होगा। ये भी एक सबसेट है। एक सबसेट में टू थ्री होगा। ये भी एक सबसेट है। तो ऐसे करके बहुत सारे सबसेट बनते हैं। इसमें आपको समझना पड़ेगा कि ये सबसेट कैसे बनता है? ये सबसेट बन कैसे रहा है? देखिए। सबसे पहली बात तो हर एलिमेंट के लिए आपके पास दो चॉइससेस हैं। जैसे हम लोग के हर हर डिग्री के लिए चॉइस था ना। हर एलिमेंट के लिए दो चॉइससेस हैं। मान लीजिए कि आप कोई सबसेट बना रहे हैं। तो उस एलिमेंट क्या कर सकता है? या तो एलिमेंट को आप सबसेट में रख सकते हैं। हम एक एलिमेंट की बात कर रहे हैं वन की। कोई भी सबसेट आप बनाए कितने भी बनाएं उस सबसेट में या तो आप वन को रख",
+      "source": "caption",
+      "english_text": "में केवल वन होगा। ये एक सबसेट है। एक सबसेट में वन 2 3 तीनों होगा। ये भी एक सबसेट है। एक सबसेट में कुछ नहीं होगा। ये भी एक सबसेट है। एक सबसेट में टू थ्री होगा। ये भी एक सबसेट है। तो ऐसे करके बहुत सारे सबसेट बनते हैं। इसमें आपको समझना पड़ेगा कि ये सबसेट कैसे बनता है? ये सबसेट बन कैसे रहा है? See. सबसे पहली बात तो हर एलिमेंट के लिए आपके पास दो चॉइससेस हैं। जैसे हम लोग के हर हर डिग्री के लिए चॉइस था ना। हर एलिमेंट के लिए दो चॉइससेस हैं। मान लीजिए कि आप कोई सबसेट बना रहे हैं। तो उस एलिमेंट क्या कर सकता है? या तो एलिमेंट को आप सबसेट में रख सकते हैं। हम एक एलिमेंट की बात कर रहे हैं वन की। कोई भी सबसेट आप बनाए कितने भी बनाएं उस सबसेट में या तो आप वन को रख"
+    },
+    {
+      "start_time": 796.639,
+      "end_time": 830.949,
+      "text": "सकते हैं या तो आप उस वन को नहीं रख सकते हैं। यही होता है ना? अच्छा टू के लिए क्या है? किसी सबसेट में टू हो सकता है या किसी सबसेट में टू नहीं हो सकता है। थ्री क्या है? थ्री किसी सबसेट में हो सकता है। थ्री किसी सबसेट में नहीं हो सकता है। यही होता है ना सबसेट। अच्छा। तो इसी को बैक ट्रैकिंग से करते हैं। इसी को बैक ट्रैकिंग से करते हैं। तो हर हम लोग क्या करेंगे? हर बार केवल एक एलिमेंट पे फोकस करेंगे। जैसे हम लोग हर साल में केवल एक डिग्री पे फोकस करते थे। 2015 था 10 पे फोकस करेंगे 10 पे डिसीजन लेंगे। 2023 आ गया सिर्फ बीटेक पे डिसीजन लेंगे। और क्या रखते थे? एक डिग्री का वो रखते थे। याद कीजिए। डिग्री रखते थे ना? ये देखिए क्या",
+      "source": "caption",
+      "english_text": "सकते हैं या तो आप उस वन को नहीं रख सकते हैं। This is what happens right? अच्छा टू के लिए क्या है? किसी सबसेट में टू हो सकता है या किसी सबसेट में टू नहीं हो सकता है। थ्री क्या है? थ्री किसी सबसेट में हो सकता है। थ्री किसी सबसेट में नहीं हो सकता है। यही होता है ना सबसेट। Good. तो इसी को बैक ट्रैकिंग से करते हैं। इसी को बैक ट्रैकिंग से करते हैं। तो हर हम लोग क्या करेंगे? हर बार केवल एक एलिमेंट पे फोकस करेंगे। जैसे हम लोग हर साल में केवल एक डिग्री पे फोकस करते थे। 2015 था 10 पे फोकस करेंगे 10 पे डिसीजन लेंगे। 2023 आ गया सिर्फ बीटेक पे डिसीजन लेंगे। और क्या रखते थे? एक डिग्री का वो रखते थे। Remember. डिग्री रखते थे ना? ये देखिए क्या"
+    },
+    {
+      "start_time": 830.959,
+      "end_time": 863.829,
+      "text": "है? यह डिग्री तो है कि हर हर टाइम ट्रेवल में आपके पास कौन-कौन सी डिग्री है। तो, क्या करते थे? जब आप कोई चॉइस करते थे ना, तो उसमें डिग्री में ऐड कर देते थे। जब आप पीछे आते थे, तो वो डिग्री फाड़ के फेंक देते थे क्योंकि अब वो चॉइस खत्म हो गया है। सेम काम यहां भी करेंगे। हम क्या बोले? हर बार किसी एक आइटम को लेना है। अब ये एरे है, तो एरे में आइटम कैसे लेते हैं? इंडेक्स से लेते हैं। तो शुरू में तो हम लोग एक हम लोग एक डिग्री का वो बना लेंगे। टेम्पट इज़ इक्वल टू कुछ एरे टाइप का बना लिए। मान लीजिए बना लिए। ये हमारा वो है कि डिग्री रखने का काम है। आइए डिसीजन लेना शुरू करते हैं। i = 0 i = 0",
+      "source": "caption",
+      "english_text": "Is? This degree is about what degrees you have in each and every time you travel. So, what did you do? Whenever you made a choice, you used to add it to your degree. When you came back, they would tear the degree and throw it away because now that choice is over. Same work will be done here also. What should we say? Have to take one item each time. Now this is an array, so how to take the items in the array? Take it from the index. So in the beginning we will make one of each degree. The temptation is equal to create some array type. Suppose you have made it. This is our job to have a degree. Let's start taking decisions. i = 0 i = 0"
+    },
+    {
+      "start_time": 863.839,
+      "end_time": 894.47,
+      "text": "क्या है? वन। वन पे डिसीजन लीजिए। वन पे कितना डिसीजन हो सकता है? दो डिसीजन। या तो आप वन को नहीं लीजिए या तो आप वन को ले लीजिए। तो आइए वन को नहीं लीजिए। वन को नहीं लेंगे तो आप i = 1 में पहुंच जाएंगे। आपका टेम्प यही होगा। आपका टप यही रह जाएगा। चलिए वन को लेने वाला बाद में करेंगे। ये क्या है? वन को नहीं लिए। वन को नहीं लिए। i = 1 पे आ गए। अब किसी से मतलब नहीं है। सिर्फ इस टू से मतलब है। टू पे डिसीजन लो भाई। तो एक डिसीजन ले लेते हैं कि चलिए टू को नहीं लेंगे। टू को नहीं लेंगे। i = 2 पे आ गए। टू को नहीं लिए।",
+      "source": "caption",
+      "english_text": "What is it? Forest. Take decision on one. How much decision can be taken on one payment? Two decisions. Either you don't take the forest or you take the forest. So let's not take the forest. If you don't take forest, you will reach i = 1. This will be your temp. Your drop will remain here. Let's do the forest taker later. What is this? Didn't take the forest. Didn't take the forest. Arrived at i = 1. It doesn't matter to anyone now. Means only this two. Take a decision on two, brother. So let's take a decision that we will not take two. Will not take two. Arrived at i = 2. Didn't take two."
+    },
+    {
+      "start_time": 894.48,
+      "end_time": 920.47,
+      "text": "डिग्री में कुछ ऐड नहीं करना पड़ा। डिग्री में कुछ ऐड नहीं करना पड़ा। ठीक है? i = 2 आ गए। सिर्फ थ्री पे फैसला लीजिए। सिर्फ थ्री पे फैसला लीजिए कि क्या करना है भाई? थ्री को चलिए मान लीजिए कि नहीं लो। नहीं लेंगे। आप कहां आ गए? i = 3 पे। जब आप i = 3 पे आ गए तो देखिए एरे खत्म हो गया। अब कोई एलिमेंट बचा नहीं है। ये सेम स्टेट है। 2023 में आ गए सब खत्म हो गया। 2023 में आ गए तो जो जो आपको करना था आप कर लिए होंगे। आठ साल हो चुका है। आगे की कोई डिग्री नहीं है। अब आपको खत्म कर देना है।",
+      "source": "caption",
+      "english_text": "Nothing had to be added to the degree. Nothing had to be added to the degree. Ok? i = 2 arrived. Just decide on three. Just decide on three days what to do, brother? Let's accept three or not. will not have. Where have you come? At i = 3. When you reach i = 3, the array is finished. Now there is no element left. This is the same state. Come 2023, everything is over. If you come in 2023, you will have done whatever you had to do. It's been eight years. There is no further degree. Now you have to finish it."
+    },
+    {
+      "start_time": 920.48,
+      "end_time": 947.829,
+      "text": "i = 3 पे आपका टेम्प क्या है? ये जो टेम्परे हम लोग बनाए थे जो डिग्री का एरे था ये क्या है? खाली है। इसमें कुछ नहीं है क्योंकि अब कुछ लिया ही नहीं ना। अब इस इस टाइम ट्रेवल के पाथ में इस यूनिवर्स में कुछ लिए ही नहीं। तो क्या प्रिंट होगा? कुछ नहीं। एम्प्टी तो एक एम्प्टी तो प्रिंट हो गया। एम्प्टी प्रिंट हो गया। ठीक है? अब हम क्या बोले थे? वापस जाओ। वापस जाओ। वापस जाओ मतलब वापस i = 2 पे आ जाओ। अब देखिए i = 3 से आप टू पे वापस गए तो क्या कुछ चेंज करने की जरूरत है? क्या कुछ रिवर्स करने की ज़रूरत है? नहीं।",
+      "source": "caption",
+      "english_text": "What is your temp at i=3? What is this temperature that we had made which was an array of degrees? Is empty. There is nothing in it because nothing has been taken now. Now, in this path of time travel, there is nothing in this universe. So what will be printed? Nothing. If empty then one empty has been printed. Empty printed. Ok? Now what did we say? Go back. Go back. Go back means come back to i = 2. Now see if you go back to 2 from i = 3, is there a need to change anything? Does anything need to be reversed? No."
+    },
+    {
+      "start_time": 947.839,
+      "end_time": 976.71,
+      "text": "क्योंकि इसमें हम टीएमपी में कुछ ऐड ही नहीं किए थे तो रिवर्स क्या करेंगे? तो कुछ रिवर्स करने की ज़रूरत अभी नहीं है। लेकिन i = 2 पे आ गए। तो अब हम लोग किस पे हैं? थ्री पे। थ्री पे। तो अब थ्री पे डिसीजन लेना है। तो एक डिसीजन तो ले लिए कि थ्री को नहीं लेंगे। वो करके देख लिए। थ्री को ले भी लेके देख लेते हैं। थ्री को लेके भी देख लेते हैं। तो ये एक पाथ है जिसमें हम थ्री को लेके देख लिए। जैसे ही आप लेते हैं लेने का क्या मतलब है? अपने डिग्री वाले में उसको ऐड कर दो भाई। ऐड कर दो। ऐड कर दिए। ऐड कर दिए। आप आ गए i = 3 पे और आपका टीएमटी लग रहा है थ्री जैसा।",
+      "source": "caption",
+      "english_text": "Because we did not add anything to TMP, then what will we do in reverse? So there is no need to reverse anything right now. But came to i = 2. So where are we now? On three. On three. So now a decision has to be taken on three. So we took a decision that we will not take three. Tried that. Let's take three and see. Let's take three and see. So this is a path in which we have seen three. What does take as soon as you take mean? Add him to your degree list brother. Add it. Added it. Added it. You have come to i = 3 and your TMT looks like three."
+    },
+    {
+      "start_time": 976.72,
+      "end_time": 1009.91,
+      "text": "अब i = 3 पे आ गए तो खत्म हो गया। अब कुछ नहीं कर सकते हैं। तो क्या करना है? टीएमटी में जो भी है प्रिंट कर दो। टीएमटी में क्या है? केवल थ्री। तो केवल थ्री प्रिंट हो गया होगा। ठीक है? अब अब ध्यान दीजिएगा। I = 3 से आपको वापस I = 2 पे जाना है। लेकिन लेकिन I जब आप I = 2 पे आएंगे तो आपका डिसीजन अब रिवर्स हो जाना चाहिए। आपका डिसीजन अब रिवर्स हो जाना। मतलब जो आप यहां पे थ्री लिए थे ना वो रिवर्स कर दीजिए। अब उसका काम हो चुका है। उसका काम हो चुका है। खत्म हो गई बात। काम हो चुका है। वेरी गुड। अब i = 2 पे कुछ करने के लिए तो बचा नहीं है। इस वाले आदमी पे तो अब कुछ करने के लिए बचा नहीं है।",
+      "source": "caption",
+      "english_text": "Now when i = 3 it is over. Can't do anything now. So what to do? Print whatever is in TMT. What is in TMT? Only three. So only three must have been printed. Ok? Now pay attention now. From I = 3 you have to go back to I = 2. But when you come to I = 2 your decision should now be reversed. Your decision should now be reversed. Meaning, reverse the three that you took here. Now his work is done. His work is done. The matter is over. The work has been done. very good. Now there is nothing left to do at i = 2. There is nothing left for this guy to do now."
+    },
+    {
+      "start_time": 1009.92,
+      "end_time": 1044.309,
+      "text": "उसको दो ही डिसीजन लेना था कि इस स्त्री को लेना है कि नहीं लेना है। ये दोनों करके देख लिया। लेके भी देख लिया नहीं लेके भी देख लिया। अब क्या करेगा? पीछे जाएगा। पीछे आइए। I = 1 पे आ गए। आपका एलिमेंट है टू। क्या टू के लिए आप दोनों डिसीजन ले चुके हैं? नहीं। टू को नहीं लेने का डिसीजन ले चुके थे। टू को लेने का भी ले लीजिए। टू को लेने का भी ले लीजिए। हम बोले कि यस। अब जैसे ही आप ये यस करते हैं ना तो आपके डिग्री में क्या ऐड हो जाता है? i = 1 के डिग्री में क्या ऐड हो जाता है? टू। ठीक है? i = 3 पे आ गए। आपका सॉरी वो टू पे आ गए। आपके डिग्री में टू ऐडेड है। सेम काम जो अब इस i = 2 के लिए जो हुआ था वो यहां भी होगा। एक डिसीजन",
+      "source": "caption",
+      "english_text": "He had to take only two decisions, whether to take this woman or not. Tried doing both of these. Didn't take it and saw it, took it and saw it. What will he do now? Will go backward. Come back. Arrived at I = 1. Your element is two. Have both of you taken the decision for 2? No. Had decided not to take 2. Also take the option of taking two. Also take the option of taking two. We said yes. Now as soon as you say yes, what gets added to your degree? What is added to the degree of i = 1? To. Ok? Arrived at i = 3. Your sorry, they came on two. Two is added to your degree. Now the same thing that happened for this i = 2 will happen here also. a decision"
+    },
+    {
+      "start_time": 1044.319,
+      "end_time": 1079.19,
+      "text": "होगा नो का। एक डिसीजन होगा यस का। किस पे? थ्री पे नो वाले पे जब आप i = 3 पे आए तो आपका टीएमपी क्या है? टू केवल टू है उसमें। तो आप टू प्रिंट कर दीजिए। पीछे जाइए। अभी कुछ रिवर्स करने का जरूरत नहीं है। लेकिन जब आप इस वाले यस पे आए i = 3 पे तो आपकी डिग्री में एक टू और थ्री भी ऐड हो जाएगा। क्योंकि आप टू भी कर लिए थ्री भी कर लिए। प्रिंट कर दीजिए। टू और थ्री हो गया। इससे जब आप पीछे जाएंगे तो थ्री को रिमूव कर दीजिए। थ्री को रिमूव कर दीजिए। हम ये हम समझ के मान के चल रहे हैं कि बहुत इंट्यूटिव है। क्यों? क्योंकि जब आप बीटेक करके आए आप कुछ प्रिंट किए। अब आप वापस जा रहे हैं टाइम में तो अपनी डिग्री में से बीटेक निकाल के फेंक दो।",
+      "source": "caption",
+      "english_text": "It will be no. There will be a decision of yes. On what? What is your TMP when you come to i = 3 on three pay no wale? There is only two in it. So you print it. Go back. There is no need to reverse anything right now. But when you come to this one i = 3 then one two and three will also be added to your degree. Because you have done two and also three. Print it. Two and three happened. When you go back from this, remove the three. Remove three. We are going by the assumption that this is very intuitive. Why? Because when you completed B.Tech, you printed something. Now you are going back in time, then throw away B.Tech from your degree."
+    },
+    {
+      "start_time": 1079.2,
+      "end_time": 1113.99,
+      "text": "अपनी डिग्री में से बीटेक निकाल के फेंक दो। क्योंकि उसका काम नहीं है। वो काम इतना तक हो चुका है। अगर आप कुछ नहीं लिए हैं तो कुछ करने की ज़रूरत नहीं है। अगर आप कुछ नहीं लिए हैं नो तो कुछ ऐड नहीं हुआ होगा तो कुछ रिमूव की जरुरत नहीं है। लेकिन आप अगर आप कुछ ऐड कर रहे हैं। अगर आप कुछ छेड़छाड़ कर रहे हैं अपनी डिग्री वाली में तो आपको उसको रिवर्स करना जरूरी है। चलिए i = 2 का काम हो गया। i = 2 जब इधर जाएगा। i = 2 जब इधर जाएगा तो आपको अपनी डिग्री में से ये भी निकालना पड़ेगा। ये भी निकाल देना पड़ेगा। आप i = 1 पे आ गए। i = 1 दोनों काम कर चुका है। ये टू लेके देख चुका। टू नहीं लेके देख चुका। सब खत्म हो गया। पीछे चले जाओ। अब वापस कहां",
+      "source": "caption",
+      "english_text": "Throw away B.Tech from your degree. Because that's not his job. That work has been done till now. If you have not taken anything then there is no need to do anything. If you have not taken anything then nothing must have been added so there is no need to remove anything. But if you are adding something. If you are tampering with your degree, then you need to reverse it. Let the work of i = 2 be done. When i = 2 it will go here. When i = 2 goes here, you will have to find this also from your degree. This will also have to be removed. You have come to i = 1. i = 1 has done both. Have seen this by taking two. Have not taken two and have seen it. It's all over. Go back. where to go back now"
+    },
+    {
+      "start_time": 1114.0,
+      "end_time": 1146.39,
+      "text": "पे आ गए? i = 0 पे। अब वापस जहां पे नंबर क्या है? वन। आपका टीएमपी देखिए पूरी तरीके से खाली हो चुका है। आपका टीएमपी पूरी तरीके से खाली हो चुका है। लेकिन आप चार सबसेट भी प्रिंट कर चुके हैं। चार सबसेट भी प्रिंट कर चुके हैं। अब i = 0 एक डिसीजन लिया था। i = 0 वन नहीं लेने का डिसीजन लेके देख लिया। बहुत बड़ा सा पेड बन गया। वन लेने का भी डिसीजन करके देख लो। वन लेने का भी डिसीजन करके देख लो। तो जब ये वन लेने का डिसीजन लेगा तो टीएमपी में ऑब्वियसली वन आ जाएगा। ओके? i = 1, i = 1 पे सेम चीज होगा। i = 1 पे सेम चीज होगा। अब इसको टू के लिए डिसाइड करना है।",
+      "source": "caption",
+      "english_text": "Have you arrived? At i = 0. Now back to where the number is? Forest. Look, your TMP is completely empty. Your TMP is completely empty. But you've also printed four subsets. Four subsets have also been printed. Now i = 0 a decision was taken. Tried and decided not to take i = 0 one. It became a very big tree. Try deciding to buy a forest also. Try deciding to buy a forest also. So when it takes the decision to buy one, then obviously one will come in TMP. Ok? i = 1, the same thing will happen at i = 1. Same thing will happen at i = 1. Now it has to be decided for two."
+    },
+    {
+      "start_time": 1146.4,
+      "end_time": 1179.27,
+      "text": "तो एक तो है कि ये टू के लिए नहीं डिसाइड करे। तो आप i = 2 पे आ जाइए। अगेन i = 2 पे एक ऑप्शन है कि आप नहीं लीजिए। तो आप i = 3 पे आ जाइए। i = 3 पे क्या करिए? प्रिंट कर दीजिए। टीएमपी। क्या है? वन। सिर्फ वन है तो वन प्रिंट हो जाएगा। अब i = 2 पे आप चाहे तो थ्री लेके भी देख सकते हैं। जैसे ही आप लेंगे तो इसमें थ्री आ जाएगा। आप 1 3 प्रिंट कर दीजिए और यहां भी आप आए। अब यहां से आप जब वापस जाएंगे थ्री को रिवर्स करना पड़ेगा आपको। वापस जाएंगे ऐड किए हैं तो रिवर्स करना पड़ेगा। ऐड किए हैं तो रिवर्स करना पड़ेगा। i = 2 पे आ",
+      "source": "caption",
+      "english_text": "So one thing is that he should not decide for two. So you come to i = 2. Again at i = 2 there is an option not to take it. So you come to i = 3. What to do at i = 3? Print it. TMP. What is? Forest. If there is only one, then one will be printed. Now at i = 2 you can also check taking three if you want. As soon as you take it, three will appear in it. You print 1 3 and you come here too. Now when you go back from here, you will have to reverse the three. If you go back if you have added it, you will have to reverse it. If you have added then you will have to reverse it. come to i = 2"
+    },
+    {
+      "start_time": 1179.28,
+      "end_time": 1212.23,
+      "text": "जाइए। i = 2 का काम खत्म हो गया है। अब अब आप i = 1 पे आ गए। i = 1 पे अब टू ले के भी देख लो। टू लेके देख लो। तो बोलो यस हम लेंगे। अगर लेंगे तो टू को ऐड करना पड़ेगा। अगेन यहां पे दो चॉइस है। i = 2 मतलब थ्री पे डिसीजन लेना है। थ्री को नहीं ले के देख लो। i = 3 पे आ जाएंगे। 1 2 प्रिंट कर दीजिए। 1 2 प्रिंट कर दीजिए और वापस चले जाइए। कुछ नहीं। यस। मतलब थ्री को भी लेके देख लेंगे। तो थ्री को ऐड कर दीजिए और 1 2 3 प्रिंट कर दीजिए। अब वापस जाइए। अब वापस",
+      "source": "caption",
+      "english_text": "Go. The work for i = 2 is finished. Now you have come to i = 1. Now try taking two at i = 1. Take two and see. So say yes we will take it. If you take it, you will have to add two. Again there are two choices here. i = 2 means decision has to be taken on three. Try not taking three. Will come to i = 3. Print 1 2. Print 1 2 and go back. Nothing. Yes. Meaning we will take three also and see. So add three and print 1 2 3. Now go back. back now"
+    },
+    {
+      "start_time": 1212.24,
+      "end_time": 1246.789,
+      "text": "जाएंगे थ्री को निकाल दीजिए। अब इसका काम हो चुका है। वापस जाएंगे टू को निकाल दीजिए। इसका भी काम हो चुका है। वापस अपने प्रोग्राम को एग्जिट कर देंगे। इसको भी निकाल दीजिए। तो देखिए आप शुरू किए थे खाली टेम्प से। आप आए खाली टेम्प से लेकिन इन द प्रोसेस आप सारा चीजें प्रिंट कर चुके हैं। ये इस सारे के सबसेट है। खाली है, थ्री है, टू है, 2 3 है, वन है, 1 3 है, 1 2 है, 2 3 है, सब है। सब है, सब है। ठीक है? तो हर एक सबसेट प्रिंट हो चुका है। सेम काम कहां हुआ था? डिग्री में। आप 2015 में शुरू किए थे खाली हाथ से। अब आप बढ़ते गए, बढ़ सॉरी। आप बढ़ते गए, बढ़ते गए।",
+      "source": "caption",
+      "english_text": "Take out Jaenge Three. Now its work is done. Will go back, remove the two. This work has also been done. Will exit your program back. Remove this also. So see, you started with empty temp. You came with an empty template but in the process you have printed everything. This is a subset of all this. Empty is, three is, two is, 2 is 3, one is, 1 is 3, 1 is 2, 2 is 3, all is. Everything is there, everything is there. Ok? So every subset has been printed. Where was this work done? In degrees. You started in 2015 with empty hands. Now you keep moving forward, move forward, sorry. You kept growing, growing."
+    },
+    {
+      "start_time": 1246.799,
+      "end_time": 1280.789,
+      "text": "बहुत-बहुत कुछ किए, बहुत कुछ किए, सारा डिग्री देख लिए। जब आप निकले तो आपके पास वापस ये खाली डिग्री था। उसके अलावा कुछ नहीं था। क्यों? क्योंकि जब हम लोग कुछ नहीं लेते हैं तो कुछ नहीं लेते हैं। आगे बढ़ जाते हैं। लेकिन जब हम लोग कुछ लेते हैं, हम लोग डिग्री में ऐड कर लेते हैं। लेके देख लेते हैं और जब वो चीज खत्म हो जाती है तो उसको वापस आने से पहले उसको रिवर्स कर देते हैं। उस डिग्री में से उसको फाड़ के फेंक देते हैं। फाड़ के फेंक देते हैं। आइए, इसका कोड लिखें। आइए, इसका कोड लिखें। तो हमेशा ये 10 12 बीटे का एग्जांपल याद रखिएगा। हमेशा ये 10 12 बीटेक का एग्जांपल याद रखिएगा। ठीक है? तो आइए मान लीजिए आपके पास एक एरे है जो है",
+      "source": "caption",
+      "english_text": "Did a lot of things, did a lot of things, completed the entire degree. When you left, you had this empty degree back. There was nothing else. Why? Because when we don't take anything, we don't take anything. Let's move ahead. But when we take something, we add to the degree. Take a look and when that thing is finished, reverse it before coming back. They tear it out of that degree and throw it away. Tear and throw away. Let's write its code. Let's write its code. So always remember this 10 12 beta example. Always remember these 10-12 B.Tech examples. Ok? So let's say you have an array that is"
+    },
+    {
+      "start_time": 1280.799,
+      "end_time": 1309.029,
+      "text": "वन टू और थ्री। तो हम लोग क्या बोले थे? हमेशा शुरू से शुरू कीजिए। कुछ लोग लास्ट से भी शुरू करते हैं। हम हमेशा शुरू से शुरू करते हैं। आपका काम क्या है? सारा सेट सेट प्रिंट करना। अगर आप कोई ऐसा फंक्शन लिखें। सबसे पहले तो इसमें एरे पास कीजिए। सबसे पहले तो इसमें एक एरे पास होगा। ये हम किसी का भी आपको जनरल बता रहे हैं। ठीक है? एरे या स्ट्रिंग जो भी है। एक इसका लेंथ पास होगा। अब एक इसका इंडेक्स पास होगा। आप अभी किस इंडेक्स पे डिसीजन लेना चाहते हैं? किस साल में हैं?",
+      "source": "caption",
+      "english_text": "One two and three. So what did we say? Always start from the beginning. Some people also start from last. We always start from the beginning. What is your job? Printing the entire set set. If you write such a function. First of all pass the array in it. First of all, there will be an array passed in it. We are telling you that we are general of anyone. Ok? Array or string whatever. One will pass its length. Now its index will be passed. On which index do you want to take a decision now? What year are you in?"
+    },
+    {
+      "start_time": 1309.039,
+      "end_time": 1336.149,
+      "text": "आप 2015 में हैं, 17 में, 19 में है। मतलब आप i = 0 पे हैं कि i = 1 पे हैं कि i = 2 पे हैं। जिस i पे आप होंगे उसी पे डिसीजन लेना है। बाकी से मतलब नहीं रखना है। इंडेक्स हो गया। और एक वेक्टर इंट ये क्या है? डिग्री वाला। डिग्री वाला शुरू में ये खाली रहेगा। शुरू में आप कुछ नहीं चूज़ किए हैं। चलिए। तो अगर सबसे पहले तो बेस केस लिख लिया करिए कि i इक्वल इक्वल टू n हो गया है। मतलब आपके सारे चॉइससेस खत्म। आप सब देख के आ चुके हैं।",
+      "source": "caption",
+      "english_text": "You are in 2015, 17, 19. Meaning whether you are at i = 0 or i = 1 or i = 2. The decision has to be taken on the i on which you are. Don't care about the rest. Indexed. And what is a vector int? The one with degree. Initially this will remain empty for degree holders. In the beginning you have not chosen anything. Let go. So first of all write down the base case that i is equal to n. Meaning all your choices are over. You have come after seeing everything."
+    },
+    {
+      "start_time": 1336.159,
+      "end_time": 1369.99,
+      "text": "आप उसमें कुछ लिए होंगे, कुछ नहीं लिए होंगे। ठीक है? क्या करिए? सिंपल यहां पे प्रिंट टीएमपी कर दीजिए। और रिटर्न कर दीजिए। मतलब ये फंक्शन खत्म हो चुका। खत्म हो गया। अब कोई चॉइस है नहीं। लेकिन अब आप यहां पे आए हैं तो अब आपके पास दो चॉइसेस हैं। एक चॉइस तो है कि आप इस आई पे आप इस एरे ऑफ आई पे डिसीजन लेना चाहते हैं। एक चॉइस है की आप इसको नहीं लीजिए। एक चॉइस है नहीं लेंगे। इसको नहीं लेंगे मतलब क्लास 10 नहीं करेंगे या क्लास 12 नहीं करेंगे। अगर नहीं लेंगे तो क्या करते थे जब 10 हम लोग को नहीं करने का मन होता था तो 2015 से डायरेक्ट 2017 में चले आते थे। कुछ ऐड सब्ट्रैक्ट नहीं",
+      "source": "caption",
+      "english_text": "You may have taken something in it, you may not have taken something. Ok? What to do? Simply print TMP here. And return it. Meaning this function is over. It's over. There is no choice now. But now that you have come here, you have two choices. There is a choice whether you want to take a decision on this eye or this array of eyes. There is a choice not to take it. There is a choice, we will not take it. Not taking it means not doing class 10 or class 12. If we did not take it, what would we do? When 10 of us did not feel like taking it, we would go directly from 2015 to 2017. some add not subtract"
+    },
+    {
+      "start_time": 1370.0,
+      "end_time": 1404.47,
+      "text": "करते थे अपनी डिग्री से। सेम काम कीजिए। डायरेक्ट आगे वाले साल में चले जाइए। फन आगे वाले साल में जाने का मतलब a n आईडीx + 1 और tmp idx + 1 मतलब अगले आइटम पे अगले साल पे चले गए अगले साल पे चले गए खत्म हो गया वो खत्म हो गया अब जब आप वापस आएंगे अब जब आप वापस आएंगे इस साल में इमेजिन करके चलिए की ये आपका 2015 का साल था आप यहां से डायरेक्ट 2017 में गए कुछ किए होंगे अब आप लौट के 2015 में आ गए हैं अब आपके पास एक और चॉइस बचा है की अब आप इसको लेना है अब इसको लेना है तो लेने के लिए क्या करते",
+      "source": "caption",
+      "english_text": "Used to do it with my degree. Do the same work. Go directly to the next year. Fun going to the next year means a n idx + 1 and tmp idx + 1 means go to the next item, go to the next year, go to the next year, that is over, now when you come back, now when you come back in this year, let's imagine that this was your year of 2015, you must have done something from here, you went directly to 2017, now you have come back to 2015, now you have one more choice left that now you Now you have to take it, now you have to take it, so what do you do to take it?"
+    },
+    {
+      "start_time": 1404.48,
+      "end_time": 1438.95,
+      "text": "थे। डिग्री में वो 12 ऐड करते थे और आगे जाते थे। नहीं लेने में डायरेक्ट आगे चले गए। लेने के समय डिग्री में वो 12 ऐड करके 2017 में कूदे। तो क्या करिए? अपनी डिग्री में उसको ऐड कर लीजिए। किसको? जिसको आप लेना चाह रहे हैं। आप किसको लेना चाह रहे हैं? एरे ऑफ़ आईडीx इसको ले लिए। टीएमपी में ऐड हो गया। एक और बात ये जो टीएमटी है ना ये सेम रहेगा अक्रॉस फंक्शनंस। मतलब जो चेंज आप इधर करेंगे, जो चेंज आप 2015 में करेंगे वो 2017 में रिफ्लेक्ट करेगा। जो आप अभी करते हैं वो आपके कल को अफेक्ट करता है ना। जो जो गलती आप आज करेंगे वो कल को अफेक्ट करेगा। तो आप अगर आज कुछ लिए",
+      "source": "caption",
+      "english_text": "Were. He used to add 12 in the degree and move ahead. Didn't take it and went straight ahead. At the time of taking the degree, he added 12 and jumped to 2017. So what to do? Add it to your degree. Whom? Which you want to take. Who do you want to take? Array of idsx took this. Added to TMP. One more thing is that in TMT it will remain the same across functions. Meaning, whatever change you make here, whatever change you make in 2015 will reflect in 2017. What you do now affects your tomorrow. Whatever mistake you make today will affect tomorrow. So if you want something today"
+    },
+    {
+      "start_time": 1438.96,
+      "end_time": 1473.51,
+      "text": "हैं तो वो अफेक्ट करेगा। तो हम लोग 10 का डिग्री ले लिए और आगे चले गए। अब जाइए अगेन a एन आईडीx + 1 टीnm अगेन हम लोग 2017 में गए। अगेन हम लोग 2017 में गए। लेकिन इस टाइम उसको 10 को लेके गए। तो फिर कुछ कुछ होगा प्रिंट होगा जो भी होना है। अब आप वापस आए हैं। अब आप वापस आए हैं। ठीक है? अब आप वापस आए हैं। अब अपने डिसीजन को रिवर्स कर लीजिए। आप अपने डिसीजन को रिवर्स कर लीजिए। मतलब टीएमपी डॉट पॉप बैकक पॉप बैकक और रिटर्न कर जाइए और रिटर्न कर जाइए।",
+      "source": "caption",
+      "english_text": "If it is then it will affect. So we took the 10th degree and moved ahead. Now go again a n idx + 1 tnm Again we go to 2017. Again we went in 2017. But this time he was taken to 10. Then something will happen, whatever has to happen will be printed. Now you are back. Now you are back. Ok? Now you are back. Now reverse your decision. You reverse your decision. Meaning tmp dot pop backk pop backk and return and return."
+    },
+    {
+      "start_time": 1473.52,
+      "end_time": 1505.83,
+      "text": "इसमें क्या हो रहा है? फिर से हम आपको समझा देते हैं। हर बार आपको एक इंडेक्स पे डिसीजन लेना है। ये तो हो गया बेस केस कि जब आप लास्ट में चले गए। लास्ट में पहुंच गए। खत्म हो गया। जितना लेना था, देना था सब हो गया। अपने अपने जिंदगी के रिजल्ट को प्रिंट कर दो। उसके बाद आपके पास अब आपको एरे ऑफ़ आई पे चॉइस करना है। एरे ऑफ़ आईडीएक्स पे चॉइस करना है। एक ऑप्शन है कि आप नहीं लीजिए। नहीं लीजिए का मतलब डायरेक्ट आगे चले जाइए। डायरेक्ट आईडीx + 1 में कूद जाइए। कोई चेंज मत करिए टीएमपी में। लेकिन आपके पास एक और चॉइस है कि आपको लेना है। तो ये तीन स्टेप का काम है।",
+      "source": "caption",
+      "english_text": "What is happening in this? Let us explain it to you again. Every time you have to take a decision on an index. This is the base case when you go last. Reached last. It's over. Whatever had to be taken, whatever had to be given, everything was done. Print the results of your life. After that you now have to choose the array of eyes. Choice has to be made on array of IDX. There is an option not to take it. No means go ahead directly. Jump into Direct IDx + 1. Do not make any changes in TMP. But you have another choice to take. So this is a three step process."
+    },
+    {
+      "start_time": 1505.84,
+      "end_time": 1538.87,
+      "text": "ये तीन स्टेप का काम है। सबसे पहले तो उसको ले लीजिए। अपनी डिग्री में क्लास 10 को ऐड कर दीजिए। आगे चले जाइए 2017 में। तो 2017 में जब आप जाएंगे तो आपकी डिग्री में क्लास 10 एडेड होगा। आगे के सारे डिसीजन इस क्लास 10 से अफेक्ट होंगे कुछ ना कुछ होगा। जब आप वापस आते हैं अब आप क्लास 10 को अपनी डिग्री से निकाल के पीछे चले जाइए। अब आप डिग्री से निकाल के पीछे चले जाइए। यही करना होता है। यही इसी का नाम रिकर्ज़न होता है। हम चाहते तो एक कोड भी पहले दे सकते थे। लेकिन ये कोड चलता कैसे है? ये कोड ऐसे चलता है। ये कोड एग्जैक्टली ऐसे चलता है। अपने कॉपी में इसको लिखिए। इस इस टेंपलेट को लिख लीजिए।",
+      "source": "caption",
+      "english_text": "This is a three step work. First of all, take him. Add class 10 to your degree. Fast forward to 2017. So when you go in 2017, class 10 will be added to your degree. All future decisions will be affected by this class 10, something or the other will happen. When you come back, now remove class 10 from your degree and go back. Now you take out the degree and go back. This is what has to be done. This is called recursion. If we wanted, we could have given a code earlier also. But how does this code work? This code works like this. This code runs exactly like this. Write this in your notebook. Write down this template."
+    },
+    {
+      "start_time": 1538.88,
+      "end_time": 1573.35,
+      "text": "कोई भी चीज इसी टेंपलेट से होती है। ठीक है? कोई भी चीज़ इसी टेंप्लेट से होती है। और अब इसका क्वेश्चन करना कल से स्टार्ट करेंगे तो आपको और क्लेरिटी आएगी। लेकिन हम हाइली रिकमेंड करते हैं कि इसको एक बार ड्राई रन करके देखिए। एक एक वीएस कोड में एक एरे बनाइए वन टू थ्री। हर हर बार देखिए हर बार देखिए कौन सा फंक्शन कॉल हो रहा है। यहां पे कोई प्रिंट स्टेटमेंट लिख दीजिए और देखिए कि यहां पे कॉल हो रहा है। इस समय टीएमपी में क्या है और लास्ट में प्रिंट क्या-क्या हो रहा है। तो आपको उससे जितना समझ में आएगा उतना किसी कोर से समझ में नहीं आएगा। ठीक है? तो ये ये 10 12 हमको कोई पढ़ाया नहीं है। ये हम खुद समझ में आया हमको। तो जो आपको खुद से कॉपी में ड्राई रन से समझ में आएगा ना वो आपको कोई भी टीचर नहीं सिखा सकता उस लेवल का। ठीक",
+      "source": "caption",
+      "english_text": "Anything happens with this template. Ok? Anything happens with this template. And now if you start questioning it from tomorrow, you will get more clarity. But we highly recommend that you try it out on a dry run. Create an array one to three in VS Code. See every time, every time see which function is being called. Write any print statement here and see that the call is being made here. What is there in TMP at this time and what is being printed in the last one. So what you will understand from him will not be understood from any other source. Ok? So these 10 12 no one has taught us. We ourselves understood this. So, what you can understand on your own through dry run in your notebook, no teacher can teach you at that level. okay"
+    },
+    {
+      "start_time": 1573.36,
+      "end_time": 1585.12,
+      "text": "है? हम अपना बेस्ट दिए हैं। अगर ये नहीं समझ में आता है तो प्लीज कमेंट करिएगा। कल फिर बताएंगे। बार-बार बताएंगे। जब तक यह समझ में नहीं आएगा आगे नहीं बढ़ेंगे। ठीक बात है। चलिए।",
+      "source": "caption",
+      "english_text": "Is it? We have given our best. If you don't understand this then please comment. Will tell you again tomorrow. Will tell again and again. We will not move forward until this is understood. That's right. Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

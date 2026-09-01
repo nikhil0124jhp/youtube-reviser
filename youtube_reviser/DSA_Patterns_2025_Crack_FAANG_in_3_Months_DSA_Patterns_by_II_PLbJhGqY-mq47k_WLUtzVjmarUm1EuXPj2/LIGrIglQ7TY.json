@@ -1,0 +1,324 @@
+{
+  "video_id": "LIGrIglQ7TY",
+  "video_title": "The Graph Algorithm Used In Amazon! Bipartite graph/ Graph Coloring| CPP JAVA Python",
+  "video_number": 99,
+  "chunks": [
+    {
+      "start_time": 1.75,
+      "end_time": 36.47,
+      "text": "हां भाई। तो बहुत दिन के बाद हम लोग मिल रहे हैं ग्राफ सीरीज में। तो आज का जो टॉपिक है ना क्या है? बाईपाटाइट ग्राफ। जैसा आप लोग टाइटल में देखे होंगे। बाइपटाइट ग्राफ सीधा-सीधा अगर हम आपको एग्जांपल देके बताएं ना तो Amazon में यूज़ होता है। कोई भी बताएंगे कि कैसे यूज़ होता है, क्या होता है? वगैरह-वगैरह। इसके साथ ही आप लोग ग्राफ कलरिंग भी सीख जाएंगे। आज क्या? ग्राफ कलरिंग। ग्राफ कलरिंग एक अलग टाइप का चीज होता है। लेकिन बायपाटाइट सॉल्व करने के लिए आपको ग्राफ कलरिंग भी आना चाहिए। तो दोनों चीज़ इसी में आप लोग सीख जाएंगे। ठीक है? तो क्वेश्चन क्या रहेगा? क्वेश्चन से पहले तो देखेंगे कि बाईपाटाइट होता क्या है भाई? बाईपार्ट देखिए बाई का हमेशा मतलब होता है दो। बाई का कभी भी बाय लिखा हो ना तो बाई का मतलब",
+      "source": "caption",
+      "english_text": "Yes dear. So after a long time we are meeting in the graph series. So what is today's topic? Bipartite graph. As you might have seen in the title. Byte graph is simply used in Amazon if we give you an example. Can anyone tell me how to use it, what happens? And so on. Along with this, you will also learn graph coloring. what today? Graph coloring. Graph coloring is a different type of thing. But to solve Bypatite you should also know graph coloring. So you people will learn both things in this. Ok? So what will be the question? Before the question, let us see what is Bipatite, brother? See Bipart. Bai always means two. Whenever Bai is written as Bai then it means Bai."
+    },
+    {
+      "start_time": 36.48,
+      "end_time": 67.19,
+      "text": "क्या होता है? दो होता है। अच्छा और पार्टाइट का मतलब होता है पार्टीशन। बाइपटाइट का मतलब होता है दो पार्टीशंस। दो तरीके के ग्रुप। मतलब कि आपसे पूछा जाएगा ना कि अगर एक ग्राफ दिया है। अगर एक ग्राफ मतलब कि बहुत सारे सर्कल दिए हैं और बहुत सारे लाइन है। उनमें एजेस हैं बीच में। क्या आप उस ग्राफ को दो भाग में डिवाइड कर सकते हैं? दो भाग में डिवाइड कर सकते हैं। जिससे कि आपका ग्राफ कुछ-कुछ ऐसा दिखने लगेगा। पहला एक यहां पे ये भाग होगा और दूसरा ये होगा। जो लोग मैथ्स मैथ्स पढ़े होंगे ना बीटेक वगैरह में भी पढ़ाया जाता है। यही यूज़ करके पढ़ाया जाता",
+      "source": "caption",
+      "english_text": "What happens? There are two. Good and partite means partition. Bipartite means two partitions. Two types of groups. Meaning that you will be asked if a graph is given. If a graph means that there are many circles and many lines. Edges are in the middle. Can you divide that graph into two parts? Can divide into two parts. So that your graph starts looking something like this. The first one will be this part here and the second one will be this. Those who have studied Maths, Maths is also taught in B.Tech etc. this is what is taught using"
+    },
+    {
+      "start_time": 67.2,
+      "end_time": 101.749,
+      "text": "है। मान लीजिए यहां पे एक है। इसका नाम है ज़ीरो। ठीक है? और यहां पे एक और नोड है। दूसरे भाग में भी दो नोड हैं। दूसरे भाग में भी कितने नोड हैं? दो नोड हैं। तो 0 1 2 और थ्री। तो ये आपका ग्राफ ये आपका ग्राफ है। ठीक है? दो भाग में डिवाइड करने का क्या मतलब होता है ना? एक भाग के सारे नोड्स मतलब एक भाग इसको हम लोग अगर बोल ये पार्ट ए है और ये पार्ट B है। दो पार्ट डिस्टिंक्टली दिख रहा है ना? किसी भी एक पार्ट के नोड्स आपस में कनेक्टेड नहीं होने चाहिए। किसी भी एक पार्ट के नोड्स में कोई एज नहीं होना चाहिए आपस में। मतलब",
+      "source": "caption",
+      "english_text": "Is. Let's say there is one here. Its name is zero. Ok? And here's another node. The second part also has two nodes. How many nodes are there in the second part also? There are two nodes. So 0 1 2 and three. So this is your graph, this is your graph. Ok? What does it mean to divide into two parts? All the nodes of one part means one part, if we call it this is Part A and this is Part B. The two parts are clearly visible, right? The nodes of any one part should not be connected to each other. The nodes of any one part should not have any edge among themselves. meaning"
+    },
+    {
+      "start_time": 101.759,
+      "end_time": 132.55,
+      "text": "कि ज़ीरो और वन के बीच में कोई एज नहीं होना चाहिए। ना टू और थ्री के बीच में कोई एज नहीं होना चाहिए। नहीं। दूसरे भाग के नोट्स में हो सकता है। मतलब एक ए पार्ट से B पार्ट तक एजेस हो सकते हैं। उसमें कोई दिक्कत नहीं है। फॉर एग्जांपल ऐसे एजेस हो सकते हैं कि जीरो टू से कनेक्टेड हो और ज़ीरो थ्री से कनेक्टेड हो। उसी तरीके से वन भी थ्री से कनेक्टेड हो। ये आपका ग्राफ हो सकता है। इसमें कहां-कहां एज है? ज़ीरो से टू तक एज है। क्या ये सही है? हां। क्योंकि ज़ीरो पार्ट A में है और टू जो है वो पार्ट B में है। इतना चलता है। ज़ीरो और थ्री के बीच में एज है। ये भी चलता है।",
+      "source": "caption",
+      "english_text": "That there should be no edge between zero and one. There should not be any edge between numbers two and three. No. Might be in the notes for the second part. Meaning there can be edges from an A part to a B part. There is no problem in that. For example, there could be edges such that zero is connected to two and zero is connected to three. One should also be connected to three in the same manner. This can be your graph. Where is the edge in this? Ages are from zero to two. Is this correct? Yes. Because zero is in part A and two is in part B. This much goes on. Edge is between zero and three. This also works."
+    },
+    {
+      "start_time": 132.56,
+      "end_time": 161.35,
+      "text": "क्यों? क्योंकि ज़ीरो इस पार्ट का है। थ्री उस पार्ट का है। लेकिन ज़ीरो और वन के बीच में कोई एज नहीं होना चाहिए। एक पार्ट में जितने भी नोड्स हैं, जरूरी नहीं है कि दो ही हो। बहुत सारे नोड हो सकते हैं। लेकिन एक पार्ट के नोड्स के बीच में कोई एज नहीं होना चाहिए। इसीलिए इसको बोलते हैं बाईपार्टाइट। आप इसको दो पार्टीशन में ऐसा तोड़े ना कि सेम ग्रुप के नोड्स आपस में बिल्कुल भी कनेक्टेड नहीं है। सेम ग्रुप के नोड्स आपस में बिल्कुल कनेक्टेड नहीं है। टू और थ्री अगर कनेक्टेड हो जाएगा तो ये बाइप्ट्राइड ग्राफ नहीं रह जाएगा।",
+      "source": "caption",
+      "english_text": "Why? Because zero belongs to this part. Three is from that part. But there should be no edge between zero and one. The number of nodes in a part is not necessarily two. There may be many nodes. But there should not be any edge between the nodes of a part. That is why it is called bipartite. You break it into two partitions such that the nodes of the same group are not connected to each other at all. The nodes of the same group are not connected to each other at all. If two and three are connected then it will no longer be a bipartite graph."
+    },
+    {
+      "start_time": 161.36,
+      "end_time": 189.11,
+      "text": "क्यों? क्यों? क्योंकि टू और थ्री एक ही भाग में है। तो आपको ऐसा कोई करके ग्राफ दिया रहेगा और आपसे पूछेगा कि क्या वो बायपाटाइट है? अगर आपको एग्जैक्टली ये ड्राइंग नहीं दिया रहेगा। आपको जो ड्राइंग दिया रहेगा ना वो ऐसा दिया रहेगा। देखिए ज़ीरो यहां रहेगा। ज़ीरो से टू के बीच में एक एज है। ज़ीरो से थ्री के बीच में भी एक एज है। ओके? और वन से थ्री के बीच में भी एक एज है। वन से थ्री के बीच में। ये आपका ग्राफ दिया रहेगा। इसमें देखिए चार एज है ना? आपसे पूछेगा क्या ये ग्राफ बाईपाटाइट है। क्या ये ग्राफ बाईपाटाइट है कि नहीं?",
+      "source": "caption",
+      "english_text": "Why? Why? Because two and three are in the same part. So someone will give you a graph like this and ask you whether it is Biapatite? If you are not given this drawing exactly. The drawing given to you will be like this. Look, zero will be here. There is an edge between zero and two. There is also an edge between zero and three. Ok? And there is an edge between one and three. Between one and three. This will be your graph. Look, there are four edges to this, isn't it? Will ask you whether this graph is bipartite. Is this graph bipartite or not?"
+    },
+    {
+      "start_time": 189.12,
+      "end_time": 221.75,
+      "text": "तो हां ये ग्राफ बाईपाटाइट है। क्यों? क्योंकि आप इसको पार्ट में तोड़ सकते हैं। आप एक काम करिए कि जीरो को पार्ट ए में ले लीजिए। वन को पार्ट ए में ले लीजिए। तो जीरो और वन दोनों अलग-अलग हो गए। थ्री को पार्ट बी में ले लीजिए और टू को पार्ट बी में ले लीजिए। तो थ्री और टू के बीच में भी कोई एर नहीं है। तो इसको क्या बोलते हैं? बाईपाटाइट ग्राफ। चलिए आगे बढ़े। लेकिन अब सवाल आता है कि हम जो बोले ना कि Amazon में भी यूज़ होता है। बड़ा-बड़ा बेसिक डेटा स्ट्रक्चर है। इसको आप बोल सकते हैं। कैसे यूज़ होता है? देखिए Amazon में क्यों यूज़ होता है? हम बताते हैं। Amazon में दो तरीके की चीजें होती हैं। प्राइमरीली। जब आप लोग शॉपिंग ओपन करते हैं ना ऐप तो आप एक कस्टमर होते हैं।",
+      "source": "caption",
+      "english_text": "So yes this graph is bipartite. Why? Because you can break it into parts. You do one thing, take zero in Part A. Take the forest in Part A. So both zero and one became separate. Take the three in Part B and the two in Part B. So there is no er between three and two. So what is this called? Bipartite graph. Let's move ahead. But now the question comes that what we said is also used in Amazon. There are many basic data structures. You can say this. How is it used? See why it is used in Amazon? We tell. There are two types of things in Amazon. Primarily. When you open the shopping app, you are a customer."
+    },
+    {
+      "start_time": 221.76,
+      "end_time": 254.47,
+      "text": "आप एक कस्टमर है। हर आदमी एक कस्टमर है ना और Amazon पे चीजें बिकती हैं। प्रोडक्ट्स भी होंगे। Amazon पे प्रोडक्ट है। तो कस्टमर जाके किसको खरीदता है? प्रोडक्ट को खरीदता है। ठीक है? देखिए कस्टमर को ना आप पार्ट ए समझिए। आप पार्ट ए मतलब Amazon सारे कस्टमर को ना पार्ट ए में रखती होगी और सारे प्रोडक्ट को पार्ट बी में रखती होगी। क्यों? क्योंकि Amazon में आप एज ए कस्टमर मतलब हम जैसे अगर प्रत्युष यहां पे है तो प्रत्युष किसी भी प्रोडक्ट को देख सकता है। प्रत्युष को सारे प्रोडक्ट दिखने चाहिए। प्रत्युष को फैन, एसी, टीवी सारे प्रोडक्ट दिखने चाहिए। तो प्रत्युष से एक-एक के सब में",
+      "source": "caption",
+      "english_text": "You are a customer. Every person is a customer and things are sold on Amazon. There will also be products. This is a product on Amazon. So which one does the customer buy? Buys the product. Ok? Look, don't consider the customer as Part A. Part A means Amazon will keep all the customers in Part A and all the products in Part B. Why? Because in Amazon you as a customer means like us, if Pratyush is here then Pratyush can see any product. Pratyush should see all the products. Pratyush should see all the products like fan, AC, TV. So from Pratyush to each one in all"
+    },
+    {
+      "start_time": 254.48,
+      "end_time": 285.99,
+      "text": "जाएगा जा सकता है। दिखने चाहिए। लेकिन अगर एक और आदमी है सुमित तो Amazon पे क्या ऐसा कभी होता है कि आप किसी को फ्रेंड रिक्वेस्ट भेज सकते हैं? नहीं। Amazon कोई सोशल मीडिया प्लेटफार्म नहीं है कि अगर हम दोनों लोग शॉपिंग कर रहे हैं तो हम उनको फ्रेंड रिक्वेस्ट भेज दिया या वो मेरा नंबर नहीं। प्रत्युष और सुमित के बीच में भूल के भी कोई कनेक्शन नहीं होना चाहिए। प्रत्युष और सुमित के बीच में कोई सुमित भी फैन देख सकता है। सुमित का भी ऐसा हो सकता है। बिल्कुल चलेगा। लेकिन कोई भी कस्टमर एक दूसरे से कोई रिलेशनशिप नहीं बना सकता है। कोई ऐसा फ्रेंड रिक्वेस्ट फॉलो रिक्वेस्ट। Amazon इज नॉट अ सोशल",
+      "source": "caption",
+      "english_text": "Will go. Can go. Should be visible. But if there is another person Sumit then does it ever happen on Amazon that you can send a friend request to someone? No. Amazon is not a social media platform that if both of us are shopping then we send him a friend request or he does not have my number. There should not be any connection between Pratyush and Sumit even by mistake. A fan can also see Sumit between Pratyush and Sumit. This may also happen to Sumit. It will definitely work. But no customer can form any relationship with each other. Something like friend request follow request. Amazon is not a social"
+    },
+    {
+      "start_time": 286.0,
+      "end_time": 317.83,
+      "text": "मीडिया प्लेटफार्म। अब देखिए सिम सेम वही बात प्रोडक्ट में भी आती है। ये अगर फैन बिक रहा है और एसी बिक रहा है तो फैन और एसी को एक दूसरे से कोई मतलब नहीं है। ऐसा ऐसा नहीं होता ना कि फैन से एसी में क्या रिलेशन है? कुछ रिलेशन नहीं है। फैन का कस्टमर के साथ रिलेशन होगा। फैन एसी टीवी का आपस में कोई रिलेशन नहीं है। इसीलिए Amazon में कस्टमर और प्रोडक्ट दोनों दो चीजें हैं। दो भाग में डिवाइडेड है। कोई भी एक पार्ट का इंसान या एक पार्ट का आइटम अपने पार्ट के लोगों से कनेक्शन नहीं बना सकता है। ये क्या है? बाइपटाइट ग्राफ है।",
+      "source": "caption",
+      "english_text": "Media Platform. Now see, the same thing happens in the SIM product also. If fan is being sold and AC is being sold then fan and AC have nothing to do with each other. It is not like this, what is the relation between fan and AC? There is no relation. The fan will have a relationship with the customer. Fan AC TV has no relation with each other. That is why in Amazon, customer and product are two things. Divided into two parts. Any person of one part or item of one part cannot make a connection with the people of its own part. What is this? is a bipartite graph."
+    },
+    {
+      "start_time": 317.84,
+      "end_time": 351.51,
+      "text": "बाइपटाइट ग्राफ है। तो ये हम इसलिए बता रहे हैं इससे कोई लेना देना नहीं लीड कोड से। लेकिन इसलिए बता रहे हैं क्योंकि लोगों को लगता है कि डीएसए तो बेकार होता है। डीएसए तो ऐसे ही बस पता नहीं क्यों पढ़ाया जाता है। इसीलिए पढ़ाया जाता है। अगर आप किसी अच्छी कंपनी में जाएंगे ना तो आप जो जो पढ़े हैं सब यूज़ होगा। एक-एक चीज यूज़ होगा। लिंक लिस्ट बहुत हैवीली यूज़ होगा। ग्राफ बहुत हैवीली यूज़ होगा। बशर्त कि आप किसी अच्छी कंपनी में जाए। आप अगर TCS Infosys में जाके बोलते हैं ना कि जो डीएसएफ पढ़े थे वो काम ही नहीं आ रहा है। वहां कुछ काम नहीं आता है। वहां आपको वही बटन लाल करना होता है। ठीक है? अच्छी कंपनी में जाएंगे तो काम आएगा। गंदी कंपनी में जाएंगे बिल्कुल काम नहीं आएगा। वहां",
+      "source": "caption",
+      "english_text": "is a bipartite graph. So we are telling this because it has nothing to do with lead code. But we are telling this because people think that DSA is useless. Don't know why DSA is taught like this. That is why it is taught. If you go to a good company then whatever you have studied will be useful. Every single thing will be used. The link list will be used very heavily. The graph will be used very heavily. Provided that you go to a good company. If you go to TCS Infosys and tell them that the DSF you have read is of no use. Nothing works there. There you have to press the same red button. Ok? It will be useful if you go to a good company. Going to a dirty company will be of no use at all. there"
+    },
+    {
+      "start_time": 351.52,
+      "end_time": 384.39,
+      "text": "तो कंप्यूटर साइंस भी काम नहीं आता है बोले तो। ठीक है? तो ये बाइपटाइट ग्राफ होता है। आपका क्वेश्चन क्या रहेगा? आपको एक ऐसा करके ग्राफ दिया रहेगा। पूछेगा कि क्या ये बायपाटाइट है कि नहीं? उसको आपको यस या नो बताना पड़ेगा। तो ठीक है चलिए। अब इसको सॉल्व कैसे करते हैं? देखिए हम बताते हैं इसको सॉल्व कैसे करते हैं। एक ग्राफ बना लेते हैं। मान लीजिए कोई इस तरीके का ग्राफ है। कोई इस तरीके का ग्राफ है। ठीक है? अ देखिए 0 वन टू और थ्री। ठीक है? इस तरीके का कोई आपको ग्राफ दिया है। बड़ा सिंपल सा ग्राफ है।",
+      "source": "caption",
+      "english_text": "So even computer science is of no use. Ok? So this is a bipartite graph. What will be your question? You will be given a graph like this. Will ask whether it is biapatite or not? You will have to tell him yes or no. Okay then let's go. Now how to solve this? See, we will tell you how to solve it. Let's make a graph. Suppose there is a graph like this. There is a graph like this. Ok? A See 0 one two and three. Ok? Someone has given you a graph of this method. It is a very simple graph."
+    },
+    {
+      "start_time": 384.4,
+      "end_time": 410.55,
+      "text": "आपसे पूछा है कि बाईपाटाइट है कि नहीं? मतलब क्या इस ग्राफ को आप दो हिस्सों में बांट सकते हैं। सो दैट कि कोई सेम हिस्से वाला एक दूसरे से कनेक्टेड ना हो। इस पे ध्यान दीजिएगा कि जरूरी नहीं है कि आप इसको इक्वली बांटें। ऐसा बिल्कुल जरूरी नहीं है कि पार्ट ए में दो हो और पार्ट बी में दो। नहीं पार्ट ए में एक हो सकता है। पार्ट बी में तीन हो सकते हैं। कुछ भी लेकिन जो डिवीजन होगा ना वो इस तरीके से होगा कि आपस में एक डिवीजन के लोग एक दूसरे से कनेक्ट नहीं होने चाहिए। ठीक है?",
+      "source": "caption",
+      "english_text": "Have you asked whether it is bipatite or not? Meaning, can you divide this graph into two parts? So that no part of the same is connected to each other. Please note that it is not necessary that you distribute it equally. It is not at all necessary that there should be two in Part A and two in Part B. No, there can be one in Part A. Part B can have three. Whatever, but the division that will happen will be in such a way that people of one division should not connect with each other. Ok?"
+    },
+    {
+      "start_time": 410.56,
+      "end_time": 444.95,
+      "text": "इसको सॉल्व कैसे करते हैं? देखिए आपको कितने पार्ट में डिवाइड करना है? सबसे पहले तो आपको टू पार्ट्स में डिवाइड करना है। बायपाटाइट का मतलब ही होता है टू पार्ट्स। टू पार्ट्स में डिवाइड करना है। ठीक है? इसके लिए ना कलरिंग यूज़ होता है। इसके लिए क्या यूज़ होता है? कलरिंग यूज़ होता है। हम लोग ऐसा अस्यूम करते हैं कि जो भी हम लोग जो भी डिवीजन करेंगे तो ऐसा लगेगा ये आपका पार्ट ए होगा और ये आपका पार्ट बी होगा। तो ऐसा अस्यूम किया जाता है ना कि चलो एक काम करते हैं। दोनों पार्ट को कलर दे देते हैं। दोनों पार्ट को क्या दे देते हैं? कलर दे देते हैं। मान लिया जाए कि हम ना पार्ट ए को रेड कलर देना चाहते हैं और पार्ट बी को ग्रीन कलर देना चाहते हैं। ठीक बात है? लॉजिकल बात",
+      "source": "caption",
+      "english_text": "How to solve this? See how many parts you have to divide it into? First of all you have to divide it into two parts. Biapatite itself means two parts. To divide into two parts. Ok? No coloring is used for this. What is it used for? Coloring is used. We assume that whatever division we do, it will be like this will be your Part A and this will be your Part B. So it is assumed that let's do one thing. Give color to both the parts. What do both the parts give? Gives color. Suppose we want to give red color to Part A and green color to Part B. Is that correct? logical thing"
+    },
+    {
+      "start_time": 444.96,
+      "end_time": 470.87,
+      "text": "है कि आप एक आप एक डिवीजन करने वाले हैं। तो एक काम करिए ना कि पार्ट ए में जो जो नोट्स कोई भी नोट्स जा सकता है पार्ट ए में और कोई भी नोट जा सकता है पार्ट बी में। तो पार्ट ए में जो होगा ना उसको रेड कलर दे देंगे और पार्ट बी में जो होगा उसको ग्रीन कलर दे देंगे। तो इससे होगा क्या कि पार्ट ए में जो भी जाएगा वो ऐसे रेड लोग दिखेंगे आपको और पार्ट बी में जो जाएंगे वो आपको हरे-हरे दिखेंगे। तो वेरी गुड हो जाएगा डिवीजन। तो वेरी गुड। हम लोग क्या करते हैं? किसी भी नोट से शुरू करिए।",
+      "source": "caption",
+      "english_text": "That's you're gonna do a you're gonna do a division. So do one thing, any note can go in Part A and any note can go in Part B. So whatever is in Part A will be given red color and whatever is in Part B will be given green color. So what will happen with this is that whoever goes to Part A will look like red people to you and whoever goes to Part B will look green to you. So the division will be very good. So very good. What do we do? Start from any note."
+    },
+    {
+      "start_time": 470.88,
+      "end_time": 505.27,
+      "text": "किसी भी नोट से शुरू कर दीजिए। और मान लीजिए हम जीरो से शुरू करते हैं और इसको अपने मन से कोई भी रेड से शुरू करना चाहते हैं, ग्रीन से शुरू करना चाहते हैं। आपकी मर्जी। हम क्या करते हैं ना कि इसको रेड कलर दे देते हैं। इसको रेड कलर दे देते हैं। ये रेड हो गया। मतलब कि हम डिसाइड कर लिए। अब कहीं ना कहीं से शुरू करना है ना। तो जीरो को हम पार्ट ए में डालना चाहते हैं। ये मेरी ये मेरा मेरा चॉइस है। आप बी में भी डाल सकते हैं। कुछ भी कर सकते हैं। जरूरी भी नहीं है कि आप जीरो से शुरू करें। आप किसी से भी शुरू कर सकते हैं। ठीक है? लेकिन जैसे ही आप जीरो को रेड कलर से रंगते हैं। जैसे ही आप जीरो को रेड कलर से रंगते हैं मतलब कि आपका जीरो यहां पे आ गया। आपका जीरो रेड वाले में आ गया। वेरी",
+      "source": "caption",
+      "english_text": "Start from any note. And suppose we start from zero and we want to start it from red or green as per our wish. As you wish. What we do is we give it red colour. Let's give it red color. It turned red. Meaning we decided. Now we have to start somewhere, right? So we want to put zero in Part A. This is my this is my my choice. You can also put in B. Can do anything. It is not necessary that you start from zero. You can start with anything. Ok? But as soon as you color zero with red color. As soon as you color zero with red color, it means that your zero has come here. Your zero came in the red one. Very"
+    },
+    {
+      "start_time": 505.28,
+      "end_time": 539.75,
+      "text": "गुड। अब बाइपटाइट ग्राफ क्या बोलता है? ज़ीरो जिससे जिससे कनेक्टेड है। ज़ीरो जिससे जिससे भी कनेक्टेड है वो दोनों। अभी ज़ीरो किससे कनेक्टेड है? वन से। और टू से ध्यान दीजिएगा कि आपको एक अनडायरेक्टेड ग्राफ दिया है। डायरेक्टेड में भी वही होगा। लेकिन यहां पे आपको अनडायरेक्टेड ग्राफ बोला गया है। तो ज़ीरो जो दो लोगों से कनेक्टेड है क्या ये दो लोग रेड कलर के हो सकते हैं? फिर से सुनिए मेरी बात। अगर आप जीरो को रेड कलर से रख दिए हैं, ज़ीरो को आप ऐसा करके रेड कर दिए। तो क्या ज़ीरो जिन दो लोगों से कनेक्टेड है या ज़ीरो जिससे जिससे भी कनेक्टेड है, ज़ीरो के जो नेबर्स",
+      "source": "caption",
+      "english_text": "Good. Now what does the bipartite graph say? Zero to which it is connected. Zero to whomever is connected, both of them. Who is Xero connected to now? From the forest. And notice that you have been given an undirected graph. Same thing will happen in directed also. But here you are called undirected graph. So the zero which is connected to two people, can these two people be red in color? Listen to me again. If you have placed zero in red colour, you have turned zero red by doing so. So are the two people to whom Zero is connected or Zero to whomever is connected, the neighbors of Zero?"
+    },
+    {
+      "start_time": 539.76,
+      "end_time": 574.23,
+      "text": "है, क्या वो रेड कलर के हो सकते हैं? नहीं हो सकते हैं। क्यों? क्योंकि अगर आप बोलेंगे कि वन को भी हम रेड कलर करेंगे तो वन यहां आ जाएगा। लेकिन जीरो और वन के बीच में एज है। ये नहीं अलाउड है। कोई भी दो रेड कलर के लोग आपस में कनेक्टेड नहीं हो सकते हैं। रेड का अगर कहीं कनेक्शन होगा तो वो ग्रीन से होगा। तो इसके लिए आप क्या करेंगे? जीरो के सारे नेबर को देखेंगे। अगर अगर वो नेबर अनकलर्ड है। अगर वो नेबर अनकलर्ड है। मतलब आप अभी तक उसको नहीं रंगे हैं। उसको आपको किससे कलर करना पड़ेगा? ग्रीन कलर से करना पड़ेगा। किससे?",
+      "source": "caption",
+      "english_text": "Yes, can they be red in color? Can't be. Why? Because if you say that we will color the forest red then the forest will come here. But there is edge between zero and one. This is not allowed. No two red colored people can be connected to each other. If red has a connection anywhere, it will be with green. So what will you do about this? Will see all the neighbors of zero. If that neighbor is uncoloured. If that neighbor is uncoloured. Meaning you have not painted it yet. What will you have to color it with? Will have to be done in green color. With whom?"
+    },
+    {
+      "start_time": 574.24,
+      "end_time": 603.906,
+      "text": "ग्रीन कलर से। क्योंकि बाईपाट यही बोलता है रेड लोग आपस में कनेक्ट नहीं हो सकते हैं। ग्रीन लोग आपस में कनेक्ट नहीं हो सकते हैं। रेड और ग्रीन आपस में रेड और ग्रीन का कनेक्शन हो सकता है। तो जीरो के जितने भी अनकलर्ड नेबर्स हैं उनको आपको ग्रीन कलर से रंगना पड़ेगा। इसके लिए हम लोग क्या यूज़ करेंगे? डीएफएस यूज़ करेंगे। तो मान लीजिए कि ज़ीरो में आप पहले आप वन को देखते हैं और वन को आप किस कलर से करेंगे? ग्रीन से। वन को आप ग्रीन से कर दिए तो वन ग्रीन हो गया।",
+      "source": "caption",
+      "english_text": "With green colour. Because Bipat says that red people cannot connect with each other. Green people can't connect with each other. Red and Green There can be a connection between Red and Green. So you will have to color all the uncolored neighbors of zero with green color. What will we use for this? Will use DFS. So suppose in zero you first look at one and what color will you do with one? From Green. If you turn the forest green then the forest becomes green."
+    },
+    {
+      "start_time": 603.916,
+      "end_time": 632.15,
+      "text": "[खांसने की आवाज़] सेम यही बात सेम यही बात वन के लिए लागू होगी। अब वन ग्रीन हो गया है। वन ग्रीन हो गया है। वन के कौन-कौन है नेबर? वन के दो नेबर हैं। ज़ीरो और थ्री। अब ज़ीरो तो ऑलरेडी कलर्ड है। ज़ीरो तो अनकलर्ड नहीं है। ज़ीरो का नेबर वन था तो वन अनकलर्ड था। लेकिन अब जब आप वन पे आए हैं तो वन का नेबर जीरो है। जीरो अनकलर्ड नहीं है। तो आपको चेक करना पड़ेगा कि अगर मेरा नेबर अनकलर्ड नहीं है तो क्या वो मेरे से दूसरे कलर में है? क्या जीरो रेड कलर में है?",
+      "source": "caption",
+      "english_text": "[sound of coughing] Same thing, same thing applies to the forest. Now the forest has become green. The forest has become green. Who are the neighbors of the forest? The forest has two neighbours. Zero and three. Now zero is already colored. Zero is not uncoloured. Zero's neighbor was one and one was uncoloured. But now when you have come to the forest, the neighbor of the forest is zero. Zero is not uncoloured. So you have to check that if my neighbor is not uncoloured then is he of a different color than me? Is zero in red color?"
+    },
+    {
+      "start_time": 632.16,
+      "end_time": 665.35,
+      "text": "अगर जीरो रेड कलर में है तो ठीक है। अगर वन का कोई ऐसा अनकलर्ड नेबर होता जो कि ग्रीन में होता तो ये ग्राफ बायपाट नहीं हो सकता था। वो आगे वाले एग्जांपल में आपको और क्लियर हो जाएगा। लेकिन वन के दो नेबर हैं। एक नेबर ऑलरेडी कलर्ड है। किस कलर में? रेड कलर में। तो क्या ये अलाउड है? हां बिल्कुल अलाउड है। क्योंकि वन खुद ग्रीन कलर में कलर्ड है। इसका एक नेबर है जो कि रेड कलर में है। अच्छी बात है। ग्रीन और रेड का हो सकता है। वन का एक अनकलर्ड नेबर है कौन? थ्री। थ्री को आपको किस रंग में रंगना पड़ेगा? क्या आप थ्री को ग्रीन कलर से रंग सकते हैं? नहीं।",
+      "source": "caption",
+      "english_text": "If zero is in red color then it is okay. If the forest had any uncolored neighbor that was in green, then this graph could not be bipartite. It will become more clear to you in the next example. But the forest has two neighbours. One neighbor is already colored. In which colour? In red colour. So is it loud? Yes, it is absolutely loud. Because the forest itself is colored green. It has a neighbor which is in red colour. It's a good thing. Can be of green or red. Who is the uncoloured neighbor of the forest? Three. What color will you have to paint Three? Can you paint three green? No."
+    },
+    {
+      "start_time": 665.36,
+      "end_time": 698.71,
+      "text": "ग्रीन का उल्टा रेड रेड में रंगना होगा। तो आप किस में आ जाएंगे? थ्री में। और थ्री को रेड कलर से कलर कर देंगे। वेरी गुड। सेम चीज थ्री पे करिए। थ्री के दो नेबर वन और टू। एक नेबर वन है जो कि ऑलरेडी कलर्ड है। क्या वो थ्री से उल्टे कलर्ड में कलर्ड है? यस। अगर थ्री रेड है तो वो ग्रीन है। बिल्कुल सही बात है। थ्री का एक अनकलर्ड नेबर है। कौन? टू। क्या टू अनकलर्ड है? हां, टू अनकलर्ड है। तो टू में आपको किस कलर से करना पड़ेगा? क्या आपके पास रेड कलर से करने का ऑप्शन है?",
+      "source": "caption",
+      "english_text": "The opposite of green will be colored red. So which one will you fall into? In three. And color three with red color. very good. Do the same thing three times. Two neighbors of Three are One and Two. There is a neighbor one who is already colored. Is it colored in the opposite color to three? Yes. If three is red then it is green. That is absolutely correct. Three has an uncoloured neighbour. Who? To. Is to uncoloured? Yes, too is uncoloured. So which color will you have to do in two? Do you have the option to do it with red color?"
+    },
+    {
+      "start_time": 698.72,
+      "end_time": 733.19,
+      "text": "बिल्कुल नहीं है। क्यों? क्योंकि थ्री रेड है। किस कलर से आपको टू को रखना पड़ेगा? ग्रीन कलर से। टू को आपको ग्रीन कलर से रंगना पड़ेगा। ओके? आप टू में आए। अब टू में आप सेम चीज करेंगे। तो टू के दो नेबर हैं जो कि ऑलरेडी कलर्ड हैं। लेकिन क्या ये टू से ऑपोजिट कलर है? हां दोनों रेड कलर हैं। तो ये देखिए ये जो ग्राफ है ना ये बाइपटाइटल ग्राफ है। आपको कहीं भी कोई कंट्राडिक्शन नहीं मिला। कंट्राडिक्शन का क्या मतलब होता है? कि मेरा एक ऑलरेडी कलर्ड नेबर हो। मेरा एक ऑलरेडी कलर्ड नेबर हो। ओके? ऑलरेडी कलर्ड नेबर हो। और वो सेम",
+      "source": "caption",
+      "english_text": "Not at all. Why? Because three is red. Which color will you have to keep the two? With green colour. You will have to color it green. Ok? You came in two. Now in two you will do the same thing. So two have two neighbors who are already colored. But is it the opposite color to two? Yes both are red colour. So look at this graph, it is a bipartite graph. You did not find any contradiction anywhere. What does contradiction mean? That I have an already colored neighbor. I have an already colored neighbor. Ok? Already have a colored neighbor. and those beans"
+    },
+    {
+      "start_time": 733.2,
+      "end_time": 766.069,
+      "text": "कलर का हो। मेरे से सेम कलर का हो। जैसे ही ये आया ये क्या हो जाएगा? कंट्राडिक्शन। इसका मतलब कि आपका जो ग्राफ है ना वो बाय पार्ट नहीं है। आप उसको कुछ भी कर लीजिएगा ना तो आप उसको डिवाइड नहीं कर पाइएगा। इस ग्राफ में आपको इस तरीके का कंट्राडिक्शन कभी नहीं मिला। कैसे नहीं मिला? क्योंकि ये ग्राफ बाईपाटाइट है। ये ग्राफ कैसे है बाईपाटाइट? अगर हम दो पार्ट इसमें डिवाइड करें ना तो हम एक पार्ट में क्या-क्या रख सकते हैं? जीरो और थ्री। एक पार्ट में हम जीरो और थ्री। और दूसरे पार्ट में हम क्या रख सकते हैं? वन और टू।",
+      "source": "caption",
+      "english_text": "Be of colour. Must be of the same color as me. What will happen as soon as it arrives? Contradiction. This means that your graph is not a by-part. Whatever you do to it, you will not be able to divide it. You never found this kind of contradiction in this graph. How come it was not found? Because this graph is bipartite. How is this graph bipatite? अगर हम दो पार्ट इसमें डिवाइड करें ना तो हम एक पार्ट में क्या-क्या रख सकते हैं? जीरो और थ्री। एक पार्ट में हम जीरो और थ्री। और दूसरे पार्ट में हम क्या रख सकते हैं? One and two."
+    },
+    {
+      "start_time": 766.079,
+      "end_time": 799.35,
+      "text": "वन और टू। इसको हम हरे कलर से कर देते हैं। वन और टू। एजेस कहां-कहां है? जीरो से वन के बीच में एज है। ज़ीरो से वन के बीच में एज है। और ज़ीरो से थ्री के बीच में भी एज है। तो वेरी गुड। नहीं सॉरी ज़ीरो से थ्री के बीच में कोई एज नहीं है। ज़ीरो से टू के बीच में एज है। यस। ज़ीरो से टू के बीच में एज है। हो गया। और वन से ज़ीरो के बीच में एज है। हो गया। और किसके-किसके? वन से थ्री के बीच में एज है। वन से थ्री के बीच में एज है और थ्री से टू के बीच में एज है। ये देखिए जितने भी एजेस हैं वो एक रेड से एक ग्रीन में है। रेड और रेड के बीच में कोई एज नहीं है। ग्रीन और ग्रीन के बीच में कोई एज",
+      "source": "caption",
+      "english_text": "One and two. इसको हम हरे कलर से कर देते हैं। One and two. एजेस कहां-कहां है? जीरो से वन के बीच में एज है। ज़ीरो से वन के बीच में एज है। और ज़ीरो से थ्री के बीच में भी एज है। So very good. नहीं सॉरी ज़ीरो से थ्री के बीच में कोई एज नहीं है। Edge is between zero and two. Yes. Edge is between zero and two. Done. और वन से ज़ीरो के बीच में एज है। Done. और किसके-किसके? वन से थ्री के बीच में एज है। वन से थ्री के बीच में एज है और थ्री से टू के बीच में एज है। ये देखिए जितने भी एजेस हैं वो एक रेड से एक ग्रीन में है। रेड और रेड के बीच में कोई एज नहीं है। ग्रीन और ग्रीन के बीच में कोई एज"
+    },
+    {
+      "start_time": 799.36,
+      "end_time": 832.87,
+      "text": "नहीं है। तो ये ग्राफ क्या है? दिस इज़ अ बाईपाटाइट ग्राफ। अब हम आपको दिखाते हैं कि अगर वो ग्राफ बाईपाटाइट नहीं होता ना तो आपको ये कंट्राडिक्शन कैसे मिल जाता है। देखिए वो भी आपको हम दिखा देते हैं। वो भी आपको हम जल्दी से दिखा देते हैं। हम एक ग्राफ बनाते हैं। सेम ग्राफ बनाएंगे। 0 1 2 3 एक स्क्वायर बना देते हैं ऐसे-से करके। ये लीजिए एक स्क्वायर और एक और एज दे देते हैं। ये एक एज हो गया। ठीक है? सेम काम करना शुरू करिए। जीरो को रेड कलर से कर दिए। ये हो गया रेड। जीरो के कितने नेबर हैं? जीरो के तीन नेबर हैं। तो चलिए वन पे चलते हैं जो अनकलर्ड है। क्या जीरो का कोई ऑलरेडी कलर्ड नेबर है? नहीं। अभी",
+      "source": "caption",
+      "english_text": "Not there. So what is this graph? This is a bipartite graph. Now let us show you how you get this contradiction if the graph is not bipartite. See, we will show you that also. We will show you that also quickly. We make a graph. Will make the same graph. 0 1 2 3 Let's make a square by doing this. Take one square and give it another edge. This has become an age. Ok? Start doing the same thing. Zero was colored red. This is red. How many neighbors does Zero have? Zero has three neighbours. So let's go to the one which is uncoloured. Does Zero Already Have a Colored Neighbor? No. right now"
+    },
+    {
+      "start_time": 832.88,
+      "end_time": 858.15,
+      "text": "कोई कलर्ड नेबर नहीं है। ठीक है? अनकलर्ड वाले पे चलिए। वन पे आइए और वन को किस कलर से करिए? रेड के ऑोजिट कलर से। ग्रीन से कर दीजिए। इसको ग्रीन से कर दीजिए। ठीक है? क्या वन का कोई ऑलरेडी कलर्ड नेबर है? यस। कौन सा? जीरो। तो क्या जीरो इससे ऑोजिट है? हां, जीरो इससे ऑोजिट है। अभी तक आप सही चल रहे हैं। वन का एक नॉन कलर्ड नेबर भी है। तो उसको जाके कलर कर दीजिए। उसको जाके क्या कर दीजिए? कलर कर दीजिए। ओके? तो वन का नॉन कलर्ड नेबर है थ्री।",
+      "source": "caption",
+      "english_text": "There are no colored neighbors. Ok? Go to the uncoloured one. Come to the forest and what color should you paint the forest with? From the ooze color of red. Do it with green. Do it with green. Ok? Does One Already Have a Colored Neighbor? Yes. Which one? Zero. So is zero the opposite of this? Yes, zero is positive from this. So far you are doing well. One also has a non-coloured neighbour. So go and color it. What should I do with him? Color it. Ok? So the non colored neighbor of one is three."
+    },
+    {
+      "start_time": 858.16,
+      "end_time": 892.069,
+      "text": "थ्री को हम लोग रेड कलर से रंग देंगे। थ्री को हम लोग रेड कलर से कर देंगे। अब देखिए यहां पे हो गया गलती। यहां पे क्या हो गया गलती? क्या? थ्री का कोई ऑलरेडी कलर्ड नेबर है? हां, थ्री का ऑलरेडी एक कलर्ड नेबर है। कौन? जीरो। क्या जीरो थ्री के ऑपोजिट कलर का है क्या? नहीं। जीरो थ्री के सेम कलर का है। इसका मतलब क्या हो गया? नॉट ए बाय पार्टाइट ग्राफ। नॉट ए बाय कुछ नहीं हो सकता है। इस ग्राफ को आपको जो मन है करते रहिए। आप इसको कभी भी नहीं कर पाएंगे। क्यों नहीं कर पाएंगे? देखिए।",
+      "source": "caption",
+      "english_text": "We will color three with red colour. We will color three in red. Now see what went wrong here. What went wrong here? What? Three already has a colored neighbor? Yes, Three's Already a Colored Neighbor. Who? Zero. Is zero the opposite color of three? No. Zero is of the same color as three. What does this mean? Not a bipartite graph. Not a buy can be nothing. Do whatever you want with this graph. You will never be able to do it. Why can't you do it? See."
+    },
+    {
+      "start_time": 892.079,
+      "end_time": 923.43,
+      "text": "बहुत सिंपल से आपको बताते हैं। कभी भी आप इसको दो पार्ट में नहीं कर पाइएगा। देखिए पार्ट ए, पार्ट बी। ठीक है? कभी भी नहीं कर पाइएगा। देखिए सबसे पहले तो ज़ीरो ज़ीरो तीनों लोगों से कनेक्टेड है। ज़ीरो तीनों लोगों से कनेक्टेड है। तो आपको एक चीज तो यही करना पड़ेगा ना कि ज़ीरो को यहां डालना पड़ेगा और इन दो तीनों को यहां डालना पड़ेगा। क्योंकि ज़ीरो तीनों से कनेक्टेड है। तो पहला चॉइस तो आपको यही लेना पड़ेगा कि ज़ीरो को पार्ट ए में रखिए। बाकी तीनों को पार्ट B में रखिए। ये मिनिमम रिक्वायरमेंट है। तो मान लीजिए कि ज़ीरो इससे कनेक्टेड है। अभी तक सही चल रहे हैं आप। अभी तक आप बिल्कुल सही चल रहे हैं।",
+      "source": "caption",
+      "english_text": "Let us tell you very simply. You will never be able to do it in two parts. See Part A, Part B. Ok? Will never be able to. See, first of all, Zero Zero is connected to all three people. Zero is connected to all three people. So one thing you will have to do is that you will have to put zero here and these two and three here. Because zero is connected to all three. So the first choice you will have to take is to keep zero in Part A. Keep the remaining three in Part B. This is the minimum requirement. So let's say zero is connected to it. So far you are doing well. So far you are doing just fine."
+    },
+    {
+      "start_time": 923.44,
+      "end_time": 952.31,
+      "text": "लेकिन अब देखिए वन और थ्री के बीच में भी तो एज है। वन और थ्री के बीच में ये देखिए वन और थ्री के बीच में एज है। थ्री और टू के बीच में भी तो एज है। ये लीजिए क्या ये ग्राफ है बार-बार पार्ट राइट? नहीं है। नहीं है ना? पार्ट बी देखिए पार्ट बी पूरा गलत हो गया है। पार्ट बी को सही करने के लिए आपको एक चीज को यहां लाना पड़ेगा। जैसे ही आप किसी ना किसी को यहां लाएंगे ज़ीरो उससे एज बना देगा। तो ये ग्राफ इंपॉसिबल है। आप इसको बाइपटाइट नहीं कर सकते पार्टीशन। इसीलिए क्या है? नॉट ए बायपाटाईट ग्राफ। तो ये जो भी चीज हम समझाए हैं ना इसको क्या बोला जाता है?",
+      "source": "caption",
+      "english_text": "But now see, there is an edge between one and three. Look at this between one and three. There is an edge between one and three. There is an edge between three and two also. Here, is this graph repeated parts right? Not there. Is it not? Watch Part B. Part B has gone completely wrong. To get Part B right, you need to bring one thing here. As soon as you bring someone here, Zero will make him an edge. So this graph is impossible. You cannot double-tighten this partition. That's why? Not a bipartite graph. So whatever we have explained, what is it called?"
+    },
+    {
+      "start_time": 952.32,
+      "end_time": 986.629,
+      "text": "ग्राफ कलरिंग। क्या? ग्राफ कलरिंग। कलरिंग के मदद से हम आइडेंटिफाई करते हैं कि ठीक है? एक को कलर कर दो, दूसरे को देख लेंगे। इसका कोड कैसे होगा? सिंपल कोड होगा। जो भी रेड और ग्रीन हम यूज़ किए हैं। रेड और ग्रीन की जगह हम क्या यूज़ करेंगे? कलर इज़ इक्वल टू 0, एक कलर है मेरे पास जीरो और एक कलर है वन। जीरो और वन। अगर आप किसी नड को जीरो से कलर करते हैं, तो उसके सारे नॉन कलर्ड नेबर को आपको वन से कलर करना पड़ेगा। अगर आपको कोई ऐसा नेबर मिल जाता है जिसका सेम कलर है जो कलर्ड हो चुका है और आप दोनों का कलर सेम हो गया है तुरंत वहीं से बायपाटाइट ग्राफ नहीं हो पाएगा। तो ठीक",
+      "source": "caption",
+      "english_text": "Graph coloring. What? Graph coloring. With the help of colouring, we identify, right? Color one and we will see the other. How will it be coded? Will be simple code. Whatever red and green we have used. What will we use instead of red and green? Color is equal to 0, I have one color zero and one color I have one. Zero and one. If you color a node with zero, then you have to color all its non-colored neighbors with one. If you find a neighbor who has the same color which has been colored and both of you have the same color then you will not be able to make a bipartite graph immediately. so ok"
+    },
+    {
+      "start_time": 986.639,
+      "end_time": 1017.99,
+      "text": "है। इसमें हम लोग क्या करेंगे? कोड बड़ा आसान है। एक डीएफएस करेंगे। डीएफएस करेंगे। इसमें एक चीज और अच्छी है कि इसमें जो लीड कोड का क्वेश्चन है उसमें ग्राफ का एडजेसेंसी लिस्ट आपको ऑलरेडी बना के दिया हुआ है। तो वो आपको नहीं करना पड़ेगा। ठीक है? तो ये वाला एडजेसेंसी आपको ऑलरेडी दिया हुआ है। अगर नहीं भी दिया होता तो आप लोग बना लेते। इंट नोड अभी आप किस नोड को कलर करने वाले हैं? अभी आप किस नोड को कलर करने वाले हैं? इंट सी किस कलर से करने वाले हैं? सी या तो ज़ीरो होगा या तो वन होगा। ज़ीरो है तो ज़ीरो का अपोजिट वन। वन है तो वन का अपोजिट ज़ीरो।",
+      "source": "caption",
+      "english_text": "Is. What will we do in this? The code is very simple. Will do a DFS. Will do DFS. Another good thing in this is that in the lead code question, the adjacency list of the graph is already prepared and given to you. So you won't have to do that. Ok? So this adjacency has already been given to you. Even if it had not been given, you people would have made it. Int Node Which node are you going to color now? Which node are you going to color now? What color are you going to do int c? C will either be zero or one. If there is zero then the opposite of zero is one. If one is one then the opposite of one is zero."
+    },
+    {
+      "start_time": 1018.0,
+      "end_time": 1052.47,
+      "text": "और एक विजिटेड की जगह ना हम एक वेक्टर इंट कलर्स कर देंगे। कलर्स मतलब कौन सा नोड किस कलर का है? कौन सा नोड किस कलर का है? डीएफएस में आमतौर पे हम लोग एक विजिटेड एरे करते हैं। लेकिन इसमें हम लोग क्या करेंगे ना? एक कलर्ड कर लेंगे। तो कलर्ड सेम काम कर रहा है। अगर कोई नोड नॉन कलर है तभी आप उसको कलर करने के लिए जाएंगे ना। अगर वो कलर्ड है तो बस एक बार चेक करके उसको छोड़ देंगे। तो विजिटेड का काम कलर्स करेगा। कैसे करेगा? देखिए शुरू में सारे नोड का कलर क्या कर देंगे हम लोग? -1 -1 मतलब नॉट कलर्ड। ओके? तो जब आप किसी नोड पे आए हैं। आप इस नोड पे आए हैं। हम क्या बोले थे? शुरू किससे करिए? ज़ीरो से",
+      "source": "caption",
+      "english_text": "And instead of a visited, we will make a vector int colors. Colors mean which node is of which color? Which node is which color? In DFS we usually use a visited array. But what will we do in this, right? Will make one coloured. So colored beans are working. Only if a node is non-coloured will you go to color it. If it is colored then we will just check it once and leave it. So colors will do the work of visited. How to do? See, what will we do with the color of all the nodes in the beginning? -1 -1 means not colored. Ok? So when you have come to a node. You have come to this node. What did we say? What to start with? from zero"
+    },
+    {
+      "start_time": 1052.48,
+      "end_time": 1085.43,
+      "text": "जी किसी से भी कर लीजिए। सबसे पहले तो इस नोड का कलर्स ऑफ नोड इक्वल टू C कर दीजिए। कलर्स ऑफ नोट इज़ इक्वल टू C कोई भी कलर हो सकता है ज़ीरो या वन। ओके? अब इसके नेबर देखना शुरू करिए। अब इसके नेबर देखना शुरू करिए। नेबर कैसे देखते हैं? अभी तक आप लोग को याद होना चाहिए सिंटेक्स। एकदम एकदम याद होना जाना चाहिए। ठीक है? अभी इसमें कोई कंफ्यूजन नहीं रहना चाहिए। इंट नेबर इंट नेबर इज़ इक्वल टू एरे ऑफ़ नोड एंड जे। ओके? सबसे पहले कंट्राडिक्शन देख",
+      "source": "caption",
+      "english_text": "Yes, you can do it with anyone. First of all, make the colors of this node equal to C. Colors of note is equal to C. Can be any color, zero or one. Ok? Now start watching its neighbors. Now start watching its neighbors. How do neighbors see? By now you guys should remember the syntax. Must be remembered immediately. Ok? There should be no confusion in this right now. Int Neighbor Int Neighbor is equal to array of nodes and j. Ok? first look at the contradiction"
+    },
+    {
+      "start_time": 1085.44,
+      "end_time": 1118.15,
+      "text": "लीजिए। इफ कलर्स ऑफ नेबर कलर्स ऑफ नेबर नॉट इक्वल टू -1 मतलब कि ऑलरेडी कलर्ड हो चुका है। कभी ना कभी हो चुका है। एंड एंड कलर्स ऑफ नेबर इक्वल इक्वल टू C इक्वल इक्वल टू C मतलब कि C क्या था? इस नोड को आप कौन सा कलर दिए हैं? यहां पे अगर इक्वल इक्वल टू C है। रेस इज़ इक्वल टू फॉल्स। रेस इज़ इक्वल टू फॉल्स। रेस क्या है? एक ग्लोबल वेरिएबल। यहां पे बुलियन शुरू में हम लोग",
+      "source": "caption",
+      "english_text": "Take it. If Colors of Neighbor Colors of Neighbor not equal to -1 means it is already colored. It has happened at some point. End End Colors of Neighbor Equal Equal to C Equal Equal to C Means what was C? What color have you given to this node? Here if is equal to C. Race Is Equal to Falls. Race Is Equal to Falls. What is race? A global variable. Here at Bullion we started"
+    },
+    {
+      "start_time": 1118.16,
+      "end_time": 1151.27,
+      "text": "अस्यूम करेंगे कि आपका बायपाटाइट है। शुरू में अस्यूम कर लेंगे कि बेनिफिट ऑफ़ डाउट से कि चलो है। अगर मिल गया तो इसको ये क्या है आपका? ये आपका क्या है? कंट्राडिक्शन जो हम बोले थे कंट्राडिक्शन। अगर कंट्राडिक्शन है रेस्ट इज़ इक्वल टू फॉल्स। अगर ऐसा नहीं है। अगर ऐसा नहीं है। अगर ऐसा नहीं है तो मतलब कि या तो वो सेम कलर का होगा। अब देख लीजिए कि अगर कलर्स ऑफ नेबर मतलब कि अगर नेबर आपका नॉन कलर्ड है इक्वल इक्वल टू -1 अगर वो नॉन कलर्ड है तो आपको उसको कलर करना पड़ेगा। किस कलर से कलर करेंगे? जो भी C है ना अगर C यहां पे",
+      "source": "caption",
+      "english_text": "Let's assume yours is biapatite. Initially we will assume that it is okay with the benefit of doubt. If you get it then what is this to you? What is this to you? Contradiction: What we said is contradiction. If the contradiction is rest is equal to false. If it is not so. If it is not so. If it is not so then it means that it will either be of the same colour. Now see that if the colors of neighbor means that if your neighbor is non-coloured, it is equal to -1, if he is non-coloured then you will have to color him. Which color will you color it with? Whatever C is, if C is here"
+    },
+    {
+      "start_time": 1151.28,
+      "end_time": 1186.07,
+      "text": "ज़ीरो है तो आपको उसको वन से कलर करना पड़ेगा। अगर C यहां पे वन है तो आपको उसको ज़ीरो से कलर करना पड़ेगा। मतलब जस्ट उल्टा। इसके लिए एक ट्रिक होता है। इसके लिए एक ट्रिक होता है। अगर आप c = आपको चा 0 है तो आप वहां पे वन भेजना चाहते हैं। अगर c वन है तो आप वहां पे 0 भेजना चाहिए। यही है आपका मतलब उल्टा करना चाहते हैं। आप वहां पे ना 1 - c भेज दीजिए। 1 - c भेज दीजिए। इससे क्या होगा? देखिए। अगर इस नोड का c 0 होगा। आप वहां पे क्या भेजेंगे? 1 - c 1 - 0 1 भेजेंगे। हो गया उल्टा। अगर इस नोड का c वन होगा। आप वहां पे क्या",
+      "source": "caption",
+      "english_text": "If it is zero then you will have to color it with one. If C is one here then you have to color it with zero. Meaning just the opposite. There is a trick for this. There is a trick for this. If you c = you want cha 0 then you want to send pe one there. If c is one then you should send 0 there. That's what you mean want to reverse. You send 1-c there. 1 - send c. What will happen with this? See. If c of this node will be 0. What will you send there? Will send 1 - c 1 - 0 1. It happened the other way around. If c of this node will be one. why are you there"
+    },
+    {
+      "start_time": 1186.08,
+      "end_time": 1213.19,
+      "text": "भेजेंगे? 1 - 1 0 तो ये ऑलरेडी देखिए उल्टा हो गया। उल्टा कर दिया ना ये ट्रिक है। छोटा सा प्रोग्रामिंग ट्रिक है। आपको मन है तो आप ऐसे भी कर सकते हैं कि अगर c 0 है तो वन भेजो वन है तो जीरो आपका जो मन करे लेकिन अगर वो नॉन कलर्ड है तो आपको उसको कलर करना पड़ेगा। कैसे कलर करना पड़ेगा? डीएफएस कॉल करके ए नोड के जगह नेबर। अब आप नेबर को कलर करना चाहते हैं। किस कलर से? 1 - c 1 - c ब्रैकेट की जरूरत नहीं है। 1 - c नोड को कलर किए थे सी से।",
+      "source": "caption",
+      "english_text": "Will you send? 1 - 1 0 So see it's already turned upside down. Inverted, this is a trick. There's a little programming trick. If you want, you can do it like this, if c is 0 then send one, if c is one then send zero, whatever you want, but if it is non-coloured then you will have to color it. How will I have to color? By calling DFS a neighbor instead of a node. Now you want to color the neighbor. With which colour? 1 - c 1 - c No brackets needed. 1 - c Node was colored with c."
+    },
+    {
+      "start_time": 1213.2,
+      "end_time": 1239.19,
+      "text": "नेबर को किससे करेंगे? 1 - C और कलर्स और कलर्स हो गया। इसको बंद कर दीजिए और रिटर्न कर जाइए। इसको रिटर्न कर जाइए। ये आपका डीएफएस खत्म हो गया। ये डीएफएस सारे नोट्स को देखेगा। अगर कहीं भी आपको कंट्राडिक्शन मिलेगा तो आपका ये रिजल्ट इज़ इक्वल टू फॉल्स हो जाएगा। रिजल्ट इज़ इक्वल टू फॉल्स हो जाएगा। इसको कॉल कैसे करना है मेन मेथड से? बड़ा सिंपल है। आपको एक बुलियन ये आपका ये है लीड कोड वाला फंक्शन बाय पार्टाइट।",
+      "source": "caption",
+      "english_text": "Who will you kill your neighbor? 1 - C and colors and colors done. Close it and return. Return it. This is your DFS over. This DFS will look at all the notes. If you find contradiction anywhere then your result will be equal to false. Result is equal to false. How to call it from main method? It is very simple. You get a bullion, this is your lead code function by partite."
+    },
+    {
+      "start_time": 1239.2,
+      "end_time": 1272.47,
+      "text": "इसमें आपको ऑलरेडी वो एडजेसेंसी बना के दिया हुआ है। ऑलरेडी वो एडजेसेंसी बना के दिया हुआ है। वेक्टर इंट ऐसा ऐसा a ठीक है? सबसे पहले तो नंबर ऑफ नोड्स निकाल लीजिए। a डॉट साइज। a डॉट साइज से आप नंबर ऑफ नोड्स निकाल सकते हैं। मेरा पेंसिल थोड़ा खराब हो गया क्या? a डॉट साइज से आप नंबर ऑफ नोट्स निकाल सकते हैं। खैर उसके बाद है कलर्स का वेक्टर बना लीजिए। कलर्स का वेक्टर बना लीजिए। कितने साइज का? n साइज़ का और सबको -1 से इनिशलाइज़ कर लिए। सब -1 ओके। अब आपको दिया",
+      "source": "caption",
+      "english_text": "In this, you have already been given that adjacency. That adjacency has already been made and given. vector int such so a ok? First of all, find out the number of nodes. a Dot size. a You can calculate the number of nodes from the dot size. Is my pencil a little damaged? a You can calculate the number of notes from the dot size. Well, after that create a vector of colors. Create a vector of colors. What size? Of size n and initialize all with -1. Sub-1 OK. now given to you"
+    },
+    {
+      "start_time": 1272.48,
+      "end_time": 1307.11,
+      "text": "है ना कि ग्राफ मे बी पूरा ग्राफ में ना मल्टीपल कॉम्पोनेंट हो सकते हैं। मल्टीपल कॉम्पोनेंट का मतलब कि पूरा ग्राफ हो सकता है कि कनेक्टेड ना हो। ऐसा नहीं हो सकता है कि आप अगर ज़ीरो से शुरू किया तो आप पूरा ग्राफ कवर कर लेंगे। इसमें मल्टीपल कॉम्पोनेंट हो सकते हैं। जो लोग पहले की वीडियो देख रहे हैं वो समझ रहे होंगे कि हम क्या बोल रहे हैं। मल्टीपल कॉम्पोनेंट का मतलब कि आपका ग्राफ ऐसा हो सकता है। आपको ऐसा कोई ग्राफ दिया रहेगा। मान लीजिए ज़ीरो वन और टू। ये ग्राफ हो 3 4 ये पूरा ग्राफ हो इसमें आपको एक बार आप ज़ीरो से अगर शुरू करेंगे डीएफएस ज़ीरो को ज़ीरो देके शुरू करेंगे आपको फिर थ्री से भी शुरू करना पड़ेगा आपको थ्री से भी शुरू करना",
+      "source": "caption",
+      "english_text": "That is, a graph can have multiple components. Multiple components means that the entire graph may not be connected. It is not possible that you will cover the entire graph if you start from zero. It may contain multiple components. Those who are watching the earlier video must be understanding what we are saying. Multiple components means your graph can look like this. You will be given such a graph. Let's say zero one and two. Let this be the graph 3 4 Let this be the complete graph, in this you will have to start from zero once, DFS will start by giving zero to zero, then you will have to start from three also, you will have to start from three also."
+    },
+    {
+      "start_time": 1307.12,
+      "end_time": 1337.43,
+      "text": "पड़ेगा क्यों क्योंकि आप ज़ीरो से शुरू करके आप ये पूरा कवर कर लिए डीएफएस से हो जाएगा कवर लेकिन इसको भी तो चेक करना पड़ेगा ये भी ग्राफ का हिस्सा है ना तो मल्टीपल कॉम्पोनेंट है हम लोग क्या करेंगे ज़ीरो से शुरू करने के बजाय कोई भी कोई भी अनकलर्ड वर्टेक्स दिखेगा तो उससे डीएफएस शुरू कर देंगे ये जस्ट डीएफएस ऑन मल्टीपल कॉम्पोनेंट वाला जो क्वेश्चन है ना? जस्ट वही है। आपको अगर डीएफएस करना है ग्राफ के मल्टीपल कॉम्पोनेंट्स हैं तो आप क्या करते थे? जो भी विजिटेड जिसका भी विजिटेड ज़ीरो रहता था उस पे डीएफएस कॉल कर देते थे। सेम काम करेंगे। एक लूप चला लेंगे।",
+      "source": "caption",
+      "english_text": "Why will it be necessary because by starting from zero you have covered it all, it will be covered by DFS but this too will have to be checked, this is also a part of the graph, neither is it a multiple component. What will we do? Instead of starting from zero, if we see any uncolored vertex, then we will start DFS from it. This is just a question of DFS on multiple components, isn't it? It's just that. If you have to do DFS if the graph has multiple components, then what did you do? DFS would be called on any visitor whose visitation was zero. Beans will work. Will run a loop."
+    },
+    {
+      "start_time": 1337.44,
+      "end_time": 1369.51,
+      "text": "i = 0 i &lt; n i + जैसे ही कोई अनकलर्ड ग्राफ है। अनकलर्ड का क्या मतलब है? कलर्स i इक्वल इक्वल टू -1 मतलब ये अनकलर्ड है। इस पे डीएफएस कॉल कर दीजिए। कैसे? डीएफएस ए आई इसको आप किस कलर से रंगना चाहते हैं? आपकी मर्जी किस कलर से? आप इसमें वन भी पास कर सकते हैं, जीरो भी। वन और ज़ीरो है क्या? वन और ज़ीरो आपका रेड और ग्रीन है। आपकी मर्जी। आप शुरू रेड से करना चाहते हैं या शुरू ग्रीन से? कोई फर्क नहीं पड़ेगा। हम यहां पे ज़ीरो पास कर देते हैं और कलर्स पास कर देते हैं। ठीक बात है।",
+      "source": "caption",
+      "english_text": "There is an uncolored graph as soon as i = 0 i < n i + . What does uncoloured mean? Colors i equal to -1 means it is uncoloured. Call DFS on this. How? DFS AI What color do you want to paint it? Which color do you want? You can pass one or zero in this. What is one and zero? Ones and zeros are your reds and greens. As you wish. Do you want to start with red or green? It won't make any difference. Here we pass zero and pass colors. That's right."
+    },
+    {
+      "start_time": 1369.52,
+      "end_time": 1395.83,
+      "text": "इसको बंद कर दीजिए। लास्ट में रिटर्न रेस्ट कर दीजिए। रिटर्न रेस्ट। अगर कहीं भी कंट्राडिक्शन होगा, तो यह जो आपका डीएफएस है ना, यह जो आपका डीएफएस है ना, यह उसको पकड़ लेगा। यह उसको जल्दी से पकड़ लेगा किसी भी कंट्राडिक्शन को। इस वीडियो में आप लोग यह आपका कोड है। यह देख लीजिए। यह आपका मेन कोड है और यह आपका छोटा सा डीएफएस कोड है। आप लोग बाइपटाइट ग्राफ के मास्टर बन चुके हैं। बाइपटाइट ग्राफ में इससे ज्यादा कुछ नहीं होता है। यही होता है। और ग्राफ कलरिंग भी यही चीज होती है।",
+      "source": "caption",
+      "english_text": "Turn it off. Rest the return last. Return Rest. If there is a contradiction anywhere, this DFS of yours will catch it. This will quickly catch any contradictions. You guys, this is your code in this video. Take a look at this. This is your main code and this is your little DFS code. You guys have become masters of bipartite graphs. There is nothing more than that in a bipartite graph. Same thing happens. And graph coloring is also the same thing."
+    },
+    {
+      "start_time": 1395.84,
+      "end_time": 1419.919,
+      "text": "ग्राफ कलरिंग या बाइपटाइट कोई भी चीज होती है वो यही चीज होती है। तो ये लोग आप लोग सीख चुके हैं। अब मेरे हिसाब से आप लोग सारे बेसिक कांसेप्ट सीख चुके हैं ग्राफ के। अब हम लोग थोड़े हार्ड कांसेप्ट शुरू करेंगे। शायद डिस्टेंस या तो दिक्कत्रा उन सब चीजों की तरफ। अब धीरे-धीरे धीरे-धीरे जाएंगे। आप लोग जनरली स्पीकिंग सारे बेसिक ग्राफ का्सप्ट्स सीख चुके हैं। तो मिलिए अगले लेक्चर में। इसको कोड करना ना भूलें।",
+      "source": "caption",
+      "english_text": "Whatever graph coloring or bitype is, it is this thing. So you guys have learned this. Now according to me you guys have learned all the basic concepts of graphs. Now we will start some hard concepts. Maybe distance or dikkatra towards all those things. Now we will go slowly. Generally speaking, you guys have learned all the basic graph concepts. So see you in the next lecture. Don't forget to code it."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

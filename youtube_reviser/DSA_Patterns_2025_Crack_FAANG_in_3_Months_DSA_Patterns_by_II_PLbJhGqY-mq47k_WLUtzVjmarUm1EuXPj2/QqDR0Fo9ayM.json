@@ -1,0 +1,436 @@
+{
+  "video_id": "QqDR0Fo9ayM",
+  "video_title": "Epiosde 09 of DP in 15 Days | 3 Problems in 30 Minutes",
+  "video_number": 117,
+  "chunks": [
+    {
+      "start_time": 2.609,
+      "end_time": 35.83,
+      "text": "हां भाई तो कैसे हैं सब? एपिसोड [गला साफ़ करने की आवाज़] आठ में हम लोग क्या देखे थे? देखिए एपिसोड आठ में हम लोग देखे थे सबसेट सम। याद है ना? अभी कल या परसों हुआ होगा। तो सबसेट सम में क्या था कि आपको एक एरे दिया रहता था जिसमें पॉजिटिव इंटीजर था और आपको एक टारगेट सम दिया रहता था कि भैया ये टारगेट आपको अचीव करना है। आपका काम क्या था कि उस एरे के किसी एक पार्ट को आपको अलग करना था जिससे कि वो टारगेट सम बन जाए। अगर वो टारगेट सम बन सकता है तो आप क्या बोलते थे कि ट्रू है या फॉल्स है। अगर किसी एरे के पार्ट से या किसी एरे के सबसेट से वो टारगेट सम नहीं बन सकता है तो आप बोल देते थे कि फॉल्स है। तो ये हम लोग देख चुके थे। इसका पूरा एक्सप्लेनेशन इसका रिकर्शन इसका",
+      "source": "caption",
+      "english_text": "Yes brother, how is everyone? [sound of throat clearing] What did we see in episode eight? See, we saw Subset Some in episode eight. Remember or not? It might have happened just yesterday or the day after. So what was in Subset Sum was that you were given an array which had positive integers and you were given a target sum that brother, you have to achieve this target. Your task was to separate one part of that array so that it becomes the target. If that target can become even then what did you say whether it is true or false. If the target sum cannot be formed from a part of an array or a subset of an array, then you would say that it is false. So we had seen this. Its full explanation, its recursion, its"
+    },
+    {
+      "start_time": 35.84,
+      "end_time": 69.59,
+      "text": "टैबुलेशन सब खत्म हो चुका था। आज जो एपिसोड नाइन है ना इसी फॉर्मेट पे मतलब इसी कोड में इसी फंक्शन में एक-एक वर्ड चेंज करके आप तीन क्वेश्चन सॉल्व कर सकते हैं। कितना? तीन क्वेश्चन। इन तीन क्वेश्चन को सॉल्व करने के लिए आपको बस ये एपिसोड आठ देखना जरूरी है। अगर आप ये एपिसोड आठ देख के आए हैं 5 से 10 मिनट में आप ये तीनों क्वेश्चन सॉल्व कर लेंगे एक-एक लाइन या एक-एक वर्ड चेंज करके सारा क्वेश्चन ये सारा चारों क्वेश्चन ना एक ही क्वेश्चन पे बेस्ड है या एक ही पैटर्न पे बेस्ड आप कह लीजिए जो कि है ये सबसेट सम मतलब अगर आपको ये समझ में आता है तो बधाई",
+      "source": "caption",
+      "english_text": "The tabulation was all over. Today's episode nine is on the same format, meaning in the same code, you can solve three questions by changing one word in this function. How much? Three questions. To solve these three questions, you just need to watch episode eight. If you have watched this episode 8, then in 5 to 10 minutes you will solve all these three questions by changing one line or one word in the entire question. All these four questions are neither based on the same question nor based on the same pattern, you can say that this is a subset, meaning if you understand this, then congratulations."
+    },
+    {
+      "start_time": 69.6,
+      "end_time": 97.51,
+      "text": "हो आपको ये तीनों आज समझ में आ जाएगा 5 से 10 मिनट में और इस तरीके के क्वेश्चन में इससे ज्यादा नहीं पूछा जाता है इससे ज्यादा कॉम्प्लेक्स नहीं कोई कंपनी पूछती है तो चलिए जल्दी शुरू करते हैं तो देखिए कल के सबसेट सम का कोड क्या था कल के सबसेट सम का कोड ये था। ये याद है ना? ये लिखे थे हम लोग। क्या किए थे? सबसे पहले तो इसमें एक एरे पास होता था और इसमें एक सम पास होता था। ये सम क्या था? ये सम आपका टारगेट था जो आपको टारगेट बनाना है। अच्छा उसके बाद हम लोग क्या करते थे? उसके बाद हम लोग वही डीपी का एरे बनाते थे।",
+      "source": "caption",
+      "english_text": "Yes, you will understand all these three today in 5 to 10 minutes and in this type of questions, nothing more than this is asked, no company asks more complex than this, so let's start quickly, then see what was the code of yesterday's Subset Sum. This was the code of yesterday's Subset Sum. Remember this, right? We wrote this. What did you do? Firstly, it had one array pass and one sum pass. What was this even? This was your target and you have to make it a target. Well, what did we do after that? After that we used to make the same DP array."
+    },
+    {
+      "start_time": 97.52,
+      "end_time": 129.669,
+      "text": "कितने साइज का? वो n + 1 साइज का और सम + 1 साइज का। अच्छा। उसके बाद क्या करते थे? बेस केस इनिशियलाइज़ करते थे। मतलब कि अब देखिए dpn मतलब कि रिकर्शन का बेस केस देखते हुए हम लोग बोलते थे कि अगर dpn 0 = 1 मतलब कि जो भी सम है आपका लास्ट तक पहुंचते-पहुंचते अगर सम अगर जीरो हो जाता था सम धीरे-धीरे घटते-घटते जैसे ही आप एक एलिमेंट को लेते थे अपने सबसेट में तो आपका सम थोड़ा कम हो जाता था। आप अगर सारा एरे पार कर दिए और आपका सम ज़ीरो बन गया।",
+      "source": "caption",
+      "english_text": "What size? That of n + 1 size and even + 1 size. Good. What did you do after that? Used to initialize the base case. Meaning, now look at dpn, meaning that looking at the base case of recursion, we used to say that if dpn 0 = 1, it means that whatever your sum is, by the time you reach the last, if the sum becomes zero, the sum gradually decreases, as soon as you take one element in your subset, your sum reduces a little. If you cross the entire array and your sum becomes zero."
+    },
+    {
+      "start_time": 129.679,
+      "end_time": 164.15,
+      "text": "मतलब कि आप जो भी सबसेट बनाए हैं ना उसमें वो सम आ गया होगा। तो हम लोग बोलते थे कि इसका आंसर वन है। बाकी का आंसर ज़ीरो है। इसके बाद हम लोग टैबुलेशन किए थे मतलब लूप चलाए थे और ऐसे-ऐसे करके dpij का वैल्यू निकाले थे। क्या निकाले थे? अगर ai j बड़ा होता था मतलब कि एरे ऑफ़ i अगर सम से बड़ा होता था उसको नहीं लेते थे। नहीं लेने का मतलब कि आप आगे चले जाइए और सम सेम रह जाएगा। नहीं तो अगर आप उसको लेना चाहते हैं तो आपके पास दो तरीके का चॉइस था। आप उसको ले सकते हैं। लेने का मतलब था कि i + 1 में चले जाइए और अगर आप किसी एलिमेंट को लेंगे तो आपका सम उतने से कम हो जाएगा।",
+      "source": "caption",
+      "english_text": "Meaning that whatever subset you have created, that sum must have appeared in it. So we used to say that the answer is one. The remaining answer is zero. After this, we did tabulation, that is, we ran loops and calculated the value of dpij by doing this and that. What did you take out? If ai j was larger, it means that if the array of i was larger than even, it was not taken. Not taking it means that you move ahead and the same will remain the same. Otherwise, if you wanted to take it, you had two choices. You can take that. Taking meant that you go to i + 1 and if you take any element then your sum will be reduced by that much."
+    },
+    {
+      "start_time": 164.16,
+      "end_time": 198.869,
+      "text": "फॉर एग्जांपल अगर आपको सम = 20 चाहिए और आप 10 को लेने का ट्राई करते हैं तो आपका सम 20 से घट के क्या बन जाएगा? 20 - 10 बन जाएगा। तो वही हम लोग यहां लिखे थे। या फिर आप उसको नहीं भी ले सकते हैं। तो नहीं लेने का मतलब कि आप आगे चले जाइए और आपका सम एज़ इट इज़ सेम रह जाएगा। इन दोनों को हम लोग क्या करते थे? और इसका क्या मतलब होता था कि अगर दोनों चॉइस में से एक भी चॉइस से आंसर आ रहा है तो मेरा आंसर आ जाएगा। मतलब आपको तो बस ट्रू एंड फॉल्स रिटर्न करना था ना कि हो सकता है कि नहीं हो सकता है। तो वैसा था कि अगर 10थ पास करने से और 10थ फेल करने से अगर पास करने से जॉब लग",
+      "source": "caption",
+      "english_text": "For example, if you want sum = 20 and you try to take 10, then what will your sum become by subtracting 20? 20 will become 10. So that is what we wrote here. Or you may not take it. So not taking it means that you move ahead and your sum will remain the same as it is. What did we do with these two? And what it meant was that if the answer is coming from even one of the two choices, then my answer will come. Meaning you just had to return True and False and not whether it may or may not happen. So it was like if you get a job by passing 10th and if you fail 10th then you get a job."
+    },
+    {
+      "start_time": 198.879,
+      "end_time": 229.43,
+      "text": "जाए या फेल करने से जॉब लग जाए। अगर किसी एक पाथ में भी जॉब लग जाए तो आप बोलेंगे कि हां भैया मेरा जॉब लग जाएगा। तो उसका क्या मतलब था कि हम लोग इसको और करते थे। लास्ट में क्या रिटर्न करते थे? डीपी ज़ीरो एंड सम। तो ये हमको हमको उम्मीद है कि आपको याद होगा। आपको बहुत अच्छे से क्लियर हो गया होगा। अच्छा अब इसी कोड से इसी क्वेश्चन से हम लोग को तीन और क्वेश्चन सॉल्व करना है। तो देखिए पहला तो क्वेश्चन क्या है? पहला क्वेश्चन ना ये है। पहला क्वेश्चन है काउंट सबसेट्स। काउंट सबसेट्स विद गिवन सम। काउंट सबसेट्स विद गिवन सम।",
+      "source": "caption",
+      "english_text": "If you go or fail, you may get a job. If you get a job in even one path, you will say, yes brother, I will get a job. So what did that mean that we used to do this more? What did you return in the end? DP Zero and Sum. So we hope you remember this. You must have been cleared very well. Well, now we have to solve three more questions with the same question using the same code. So see, first of all what is the question? The first question is this. The first question is count subsets. Count Subsets with Given Sum. Count Subsets with Given Sum."
+    },
+    {
+      "start_time": 229.44,
+      "end_time": 263.909,
+      "text": "इसका क्या मतलब है? ये क्वेश्चन आपको क्या बोलता है? कि पिछले क्वेश्चन में तो आप बता रहे थे कि हो सकता है कि नहीं हो सकता है। यही बता रहे थे ना भाई कि हो सकता है कि नहीं हो सकता है। इसमें आपको बताना है कि अगर हो सकता है तो कितने तरीके से हो सकता है? क्या मतलब है इसका? देखिए मान लीजिए आपका एरे ये है। 1 3 4 और चलिए फाइव है। ठीक है? 1 4 इसको टू बना देते हैं। चलिए आपके आपके सहूलियत के लिए इसको टू बना देते हैं। ठीक है? 0 1 2 3 1 2 4 5 का एरे है। मान लीजिए आपका सम जो है ना वो छह है। आपका सम वो छह है। अब पिछले क्वेश्चन में तो आपको बताना था कि भाई किसी सबसेट",
+      "source": "caption",
+      "english_text": "What does it mean? What does this question tell you? That in the previous question you were telling that it may or may not happen. This is what you were telling me brother that it may or may not happen. In this you have to tell that if it is possible then in how many ways can it happen? What does this mean? See, suppose your array is this. 1 3 4 And let's have five. Ok? 1 4 makes it two. Let us make it two for your convenience. Ok? is an array of 0 1 2 3 1 2 4 5 . Suppose your sum is six. Your sum is six. Now in the previous question you had to tell that brother in some subset"
+    },
+    {
+      "start_time": 263.919,
+      "end_time": 290.629,
+      "text": "से हो सकता है कि नहीं हो सकता है। इसमें आपको बताना है कितने तरीके से हो सकता है। मतलब कि अगर आप एक सबसेट ऐसा बना लें वन और फाइव इसका सम भी छह है। हो सकता है। लेकिन अगर आप ये सबसेट बना लें फोर और टू तो भी छह हो सकता है। तो इस क्वेश्चन का आंसर जो क्या क्वेश्चन है काउंट करो कितने पॉसिबिलिटी होंगे? इसका आंसर क्या आएगा? इसका आंसर आएगा दो। इसका आंसर ट्रू या फॉल्स नहीं आएगा। ट्रू या फॉल्स तो वो क्वेश्चन था। इसका आंसर कितना आएगा? दो।",
+      "source": "caption",
+      "english_text": "It may or may not happen. In this we have to tell you how many ways this can happen. Meaning that if you make a subset like one and five, its sum is also six. It is possible But if you make these subsets of four and two, it can still be six. So what is the answer to this question, count the number of possibilities? What will be the answer to this? The answer will come. Its answer will not be true or false. True or false, that was the question. What will be the answer to this? Two."
+    },
+    {
+      "start_time": 290.639,
+      "end_time": 324.15,
+      "text": "मतलब कि कितना कॉम्बिनेशन से हो सकता है भाई? मतलब कि इसको कहने मेरा स्टोरेज खत्म हो गया था। हां चलिए तो हम क्या बोल रहे थे कि वो क्वेश्चन था कि हो सकता है कि नहीं? ये क्वेश्चन कि कितने तरीके से हो सकता है। मतलब कि ये क्वेश्चन कुछ ऐसा है कि मान लीजिए आप 10थ किए। आप 10थ में हैं अभी। ठीक है? आप शुरू में 10थ में हैं। मान लीजिए आपके पास तीन चॉइससेस हैं। मान लीजिए आपके पास तीन चॉइससेस हैं। एक दो तीन। एक क्वेश्चन एक चॉइस है कि आप डायरेक्ट 12 कर लीजिए। एक चॉइस है कि आप अपने पापा के दुकान में बैठ जाइए। एक चॉइस है कि आप अपना स्टार्टअप अपना शुरू कर लीजिए। मान लीजिए तीन चॉइस। जस्ट फॉर",
+      "source": "caption",
+      "english_text": "I mean, how many combinations can be done brother? Which means that my storage was exhausted. Yes, what we were saying was that the question was whether it was possible or not? The question is how many ways this can happen. Meaning, this question is such that suppose you have done 10th. You are in 10th now. Ok? You are initially in 10th. Suppose you have three choices. Suppose you have three choices. One two three. One question is one choice whether you do direct 12. One option is to sit in your father's shop. One option is to start your own startup. Let's say three choices. just for"
+    },
+    {
+      "start_time": 324.16,
+      "end_time": 358.31,
+      "text": "एक्सप्लेनेशन। मान लीजिए तीन चॉइस है। मान लीजिए कि जो 12th वाला है ना इसमें आप जाके फेल हो जाते हैं अपनी जिंदगी में। मतलब 12th पढ़ने से कोई तरीका नहीं होगा। दुकान वाले में आप पास हो जाते हैं। या तो आप सक्सेस हो जाते हैं अपने। मतलब आप दुकान में बैठेंगे तो बढ़िया हो जाएगा कहीं ना कहीं जाके। स्टार्टअप वाले में भी आप मान लीजिए कि आप पास हो जाते हैं या सक्सेस हो जाते हैं। आप अगर बैठेंगे तो आप बहुत अमीर हो जाएंगे। अब देखिए पिछले वाले क्वेश्चन में ना इस सिनेरियो का आंसर आता ट्रू। क्यों आता? क्योंकि तीनों में से कम से कम एक भी सक्सेस है क्या? हां एक सक्सेस है। दो सक्सेस है एक्चुअली। लेकिन कम से कम एक है क्या? आपका आंसर आता ट्रू।",
+      "source": "caption",
+      "english_text": "Explanation. Suppose there are three choices. Suppose you go to 12th and fail in your life. Meaning there will be no way by studying 12th. You pass the shopkeeper. Either you become successful. Meaning, if you sit in the shop, it will be better if you go somewhere. Even in startup, let us assume that you pass or become successful. If you sit, you will become very rich. Now see that in the previous question the answer to this scenario is true. Why come? Because is at least one of the three successful? Yes there is a success. There are two successes actually. But is there at least one? Your answer is true."
+    },
+    {
+      "start_time": 358.32,
+      "end_time": 388.629,
+      "text": "इस क्वेश्चन में आपका है कि भाई कितने तरीके से सक्सेस हो सकते हो? इस क्वेश्चन में आपका आंसर आएगा दो। क्योंकि आप दो तरीकों से सक्सेस हो सकते हैं। आप कितने तरीकों से? दो तरीकों से सक्सेस हो सकते हैं। तो यही एक छोटा सा चेंज करना है आपको। इसमें चेंज क्या करना है? देखिए जो आप यहां पे ये और लिखे हुए हैं ना और और का मतलब क्या होता है कि अगर ये ट्रू हो या फिर ये ट्रू हो तो डीपी और आई जे में क्या स्टोर हो जाएगा? ट्रू स्टोर हो जाएगा। लेकिन अब तो आपको ट्रू फॉल्स नहीं।",
+      "source": "caption",
+      "english_text": "Your question in this question is, brother, in how many ways can you become successful? Your answer will come in this question. Because you can be successful in two ways. In how many ways can you? Success can be achieved in two ways. So this is one small change you have to make. What changes need to be made in this? See what is written here, what is the meaning of 'and', if this is true or if this is true then what will be stored in DP and IJ? True will be stored. But now you don't have true falls."
+    },
+    {
+      "start_time": 388.639,
+      "end_time": 420.87,
+      "text": "आपको बताना है कितने तरीकों से हो सकता है? बस इस और को मिटा के यहां पे क्या कर दीजिए? प्लस कर दीजिए। क्या कर दीजिए? प्लस कर दीजिए। अब मानिए अब मानिए कि मान लीजिए इसका वैल्यू भी ट्रू आता है। मतलब इससे इस कॉम्बिनेशन से भी बन सकता है और इस कॉम्बिनेशन से भी बन सकता है। इस केस में आपके डीपी आई जे में जो वैल्यू स्टोर होगा ना वो दो स्टोर हो जाएगा। पिछले बार जब हम लोग को बस ट्रू फॉल्स करना रहता था तो हम लोग और कर दिए कि भैया एक भी अगर ट्रू है यहां ट्रू दे दो। अब आपको वैल्यू",
+      "source": "caption",
+      "english_text": "Can you tell me how many ways this can happen? What to do here by just erasing this one? Please do plus. What should I do? Please do plus. Now assume that its value also comes true. Meaning, it can be formed by this combination and can also be formed by this combination. In this case, the value stored in your DP IJ will be stored twice. Last time, when we had to do only true false, we did more by saying, brother, if even one is true, give it here. Now you get the value"
+    },
+    {
+      "start_time": 420.88,
+      "end_time": 454.55,
+      "text": "गिनवाना है तो जस्ट इस और को हटा के यहां पे प्लस कर दीजिए। अगर आप प्लस कर देंगे ना तो ट्रू फॉल्स होने के बजाय वो वैल्यू जुड़ने लगेगा। एक-एक एक-एक एक-एक एक-एक करके वैल्यू जुड़ने लगेगा। मतलब कि जो 10थ वाला एग्जांपल है ना मान लीजिए आप 10थ के बाद किए कि 12th और एक आपका था कि हम अपना स्टार्टअप करेंगे। 12th नहीं करेंगे। मान लीजिए 12th में 12th के बाद अब 12th के बाद भी और पाथ होगा कि 12th के बाद बीटेक करना है कि एमबीए करना है। 12th के बाद ना दो तरीका है सक्सेस होने का और स्टार्टअप",
+      "source": "caption",
+      "english_text": "If you want to count, just remove this and put a plus on it. If you add plus then that value will start getting added instead of being true false. One by one the value will start getting added. Meaning, in the 10th exam, suppose you did 12th after 10th and one of yours was that we will start our own startup. Will not do 12th. Suppose after 12th, there will be another path after 12th whether to do B.Tech or to do MBA after 12th. After 12th, there are only two ways to become successful and start a startup."
+    },
+    {
+      "start_time": 454.56,
+      "end_time": 484.309,
+      "text": "के बाद तीन तरीका है सक्सेस होने का। अगर हम इन दोनों को जोड़ दें क्या करें? इन दोनों को जोड़ दें तो 10थ के बाद कितना तरीका है सक्सेस होने का? टोटल पांच तरीका है। यही तो आपका आंसर है। यही तो आपसे पूछा है कि कितना तरीका है। ये नहीं पूछा है कि तरीका है कि नहीं? वो तो पिछले में था। उस केस में आप बोलते कि हां 12th के बाद भी ट्रू है और इसके बाद भी ट्रू है तो 10थ के बाद भी ट्रू होगा। नहीं। अब 12th के बाद दो तरीका है। स्टार्टअप के बाद तीन तरीका है। 10थ के बाद कितना तरीका होगा?",
+      "source": "caption",
+      "english_text": "After this there are three ways to become successful. What if we combine these two? If we add these two, how many ways are there to become successful after 10th? There are total five methods. This is your answer. This is what I have asked you, how many ways are there? It has not been asked whether there is a way or not? That was in the past. In that case you would have said that yes it is true even after 12th and if it is true after this then it will be true even after 10th. No. Now there are two ways after 12th. There are three ways after startup. How much will it cost after 10th?"
+    },
+    {
+      "start_time": 484.319,
+      "end_time": 517.269,
+      "text": "पांच तरीका। तो बस एक चीज चेंज करने से आपका सेम कोड एग्जैक्टली सेम कोड किस में कन्वर्ट हो जाएगा? काउंट सबसेट में। किसमें? काउंट सबसेट्स में। यस यस। काउंट सबसेट्स में। तो ये क्वेश्चन आपको समझ में आ गया। क्या करना है? पिछला वाला कोड कंट्रोल सी कंट्रोल वी क्या बदलना है यहां पे जाके बस क्या बदलना है और को क्या करना है प्लस क्योंकि हम लोग वैल्यू को जोड़ने में इंटरेस्टेड हैं एक लीन बदलेंगे आपका काउंट सबसेट्स का पूरा काम हो चुका है तमाम समझ में आया कि नहीं आया नहीं आया तो",
+      "source": "caption",
+      "english_text": "Five ways. So by changing just one thing your same code will be converted into exactly the same code? In count subset. In what? Count in subsets. Yes yes. Count in subsets. So you understood this question. What is the plan? Previous code Control C Control V What to change? Just go here, what to change and what to do. Plus because we are interested in adding value, we will change a lean. Your count of subsets is all done. Have you understood it or not? If not, then"
+    },
+    {
+      "start_time": 517.279,
+      "end_time": 549.03,
+      "text": "प्लीज बताइएगा चलिए आगे आइए आगे आइए अगला क्वेश्चन क्या है पार्टीशन इक्वल सम क्या है पार्टीशन इक्वल सम ये क्वेश्चन क्या बोलता है आपको हम बताते हैं आपको एक एरे दिया हुआ है। आपको एक एरे दिया हुआ रहेगा। अच्छा वेरी गुड। एरे दिया रहेगा। अच्छा देखते हैं क्या होगा। पॉजिटिव इंटीजर्स का। पॉजिटिव इंटीजर्स पॉजिटिव है ना? जी एक बार हम देख लेते हैं। पॉजिटिव है कि क्या है? हां पॉजिटिव इंटीजर्स का है। ठीक है? पॉजिटिव इंटीजर्स का है। ओके। आपको क्या बताना है? आपको ट्रू या फॉल्स बताना है। अच्छा वेरी गुड। ट्रू एंड फॉल्स बताना",
+      "source": "caption",
+      "english_text": "Please tell, let's move ahead, move ahead, what is the next question, Partition Equal Sum, what is Partition Equal Sum, what does this question tell you? Let us tell you that an array has been given to you. You will be given an array. Okay very good. Hey, it will be given. Well let's see what will happen. Of positive integers. Positive integers are positive right? Yes, let us see once. What is positive? Yes it is of positive integers. Ok? is of positive integers. Ok. What do you have to say? You have to tell True or False. Okay very good. telling true and false"
+    },
+    {
+      "start_time": 549.04,
+      "end_time": 581.509,
+      "text": "है। अच्छा। क्या बताना है? लेकिन क्या आप क्या आप इस एरे को दो भागों में तोड़ सकते हैं क्या? दो भागों में तोड़ सकते हैं क्या? कितने भाग में? दो भागों में तोड़ सकते हैं क्या? फॉर एग्जांपल अगर आपका एरे है 1 2 3 और फोर। मान लीजिए आप एक पार्ट बनाएं वन और फोर का। एक पार्ट बनाएं टू और थ्री का। अब इन दोनों का सम निकालिए। इन दोनों इसका सम क्या है? पांच। इसका सम क्या है? पांच। बस यही बताना है। अगर आप इस एरे को दो भाग में तोड़ सकते हैं। और",
+      "source": "caption",
+      "english_text": "Is. Good. What to tell? But can you can you break this array into two parts? Can it be broken into two parts? In how many parts? Can it be broken into two parts? For example if your array is 1 2 3 and four. Suppose you make a part of one and four. Make a part of two and three. Now find the sum of these two. What is the sum of these two? Five. What is its sum? Five. That's all I have to say. If you can break this array into two parts. and"
+    },
+    {
+      "start_time": 581.519,
+      "end_time": 607.59,
+      "text": "दोनों भाग के सम इक्वल हो। तो दोनों भाग का सम इक्वल हो। इस केस में आपको क्या रिटर्न करना है? ट्रू रिटर्न करना है। बस यही है क्वेश्चन। एक और एग्जांपल समझिए। आपका एरे है 1 2 3 क्या आप इस एरे को दो भागों में तोड़ सकते हैं? मतलब कि ऐसा कर सकते हैं क्या? वन और टू एक जगह ले लिए। थ्री को एक जगह ले लिए। इसका सम क्या आया बेटा? थ्री। इसका सम क्या है बेटा? थ्री।",
+      "source": "caption",
+      "english_text": "The sum of both the parts should be equal. So the sum of both the parts should be equal. What do you have to return in this case? Have to return true. That's the only question. Consider another example. Your array is 1 2 3 Can you break this array into two parts? Meaning can we do this? One and two took one place. Took three in one place. What is the meaning of this, son? Three. What is its equivalent son? Three."
+    },
+    {
+      "start_time": 607.6,
+      "end_time": 640.31,
+      "text": "क्या ये दोनों इक्वल है? यस। इक्वल है। इसका आंसर क्या आएगा? ट्रू। मतलब कि क्या एरे को दो भाग में तोड़ना पॉसिबल है जिससे कि दोनों भाग का सम इक्वल आ जाए। अगर ऐसा पॉसिबल है तो आपको ट्रू रिटर्न करना है। अगर ऐसा पॉसिबल नहीं है तो आपको फॉल्स रिटर्न करना है। फॉर एग्जांपल अगर यहां पे थ्री नहीं होता। यहां पे 10 होता। यहां पे क्या होता? 10 होता। अब क्या इस एरे को आप दो भाग में तोड़ सकते हैं जिससे दोनों का सम इक्वल हो? नहीं तोड़ सकते हैं। तोड़ के देख लीजिए। कोई कॉम्बिनेशन कर लीजिए नहीं हो सकता है। मतलब कि आप इस एरे को दो भागों में डिस्ट्रीब्यूट नहीं कर सकते हैं",
+      "source": "caption",
+      "english_text": "Are these two equal? Yes. Is equal. What will be the answer to this? True. Meaning, is it possible to break the array into two parts so that the sum of both parts is equal? If this is possible then you have to return true. If this is not possible then you have to return false. For example, if there is no pay three here. There would have been 10 here. What would have happened here? Would have been 10. Now can you break this array into two parts so that the sum of both is equal? Can't break. Break it and see. Make any combination, it is not possible. Meaning that you cannot distribute this array into two parts."
+    },
+    {
+      "start_time": 640.32,
+      "end_time": 674.47,
+      "text": "जिससे कि दोनों का सम इक्वल आ जाए। अगर ऐसा नहीं कर सकते हैं तो इसका आंसर क्या होगा? फॉल्स। यही है क्वेश्चन क्या? पार्टीशन इक्वल सबसेट सम। अच्छा। अब ये क्वेश्चन लेकिन ये क्वेश्चन कैसे कनेक्टेड हुआ सबसेट सम से? बताते हैं कैसे कनेक्टेड हुआ? देखिए आपका काम क्या है? आपका काम क्या है? दो भाग में तोड़ना। अच्छा। मान लीजिए यह एक एरे है। मान लीजिए एक एरे है। 1 0 1 2 3 1 2 3 4 आपका भाग आपका काम क्या है? दो भागों में इसको तोड़ना। दोनों का सम सेम होना चाहिए। तो मान लेते हैं कि इसका सम जो है ना वो s1 है। इसका सम s2",
+      "source": "caption",
+      "english_text": "So that the sum of both becomes equal. If this cannot be done then what will be the answer? Falls. What is this question? Partition Equal Subset Sum. Good. Now this question but how is this question connected to Subset Sum? Let me tell you how it got connected? Look, what is your job? What is your job? To break into two parts. Good. Let's say it's an array. Suppose there is an array. 1 0 1 2 3 1 2 3 4 Your Part What is your job? Breaking it into two parts. Both should be equal. So let's assume that its sum is s1. its sum s2"
+    },
+    {
+      "start_time": 674.48,
+      "end_time": 700.71,
+      "text": "है। दोनों में क्या नंबर है? नहीं फर्क पड़ता है। कुछ भी हो कुछ भी हो। इसमें दो हो, उसमें पांच हो, इसमें कुछ भी हो। कोई भी कॉम्बिनेशन हो। लेकिन इसका सम मान लेते हैं कि s1 होगा। इसका सम मान लेते हैं कि s2 होगा। कब ट्रू रिटर्न करना है? जब s1 = s2 हो जाए। s1 = s2 हो जाए। अच्छा टोटल एरे का कोई सम होगा? टोटल एरे का भी कोई सम होगा ना? पूरे एरे का सम। पूरे एरे का सम क्या है? 1 + 2 + 3 + 4 क्या आता है?",
+      "source": "caption",
+      "english_text": "Is. What is the number in both? It doesn't matter. Whatever happens, whatever happens. There may be two in this, there may be five in this, there may be anything in this. Any combination. But let us assume that s1 will be equal to this. Let us assume that s2 will be equal to this. When to return true? When s1 = s2. Let s1 = s2. Well, will the total array be even? Total array will also have some sum, right? Sum of entire array. What is the sum of the entire array? What comes 1 + 2 + 3 + 4?"
+    },
+    {
+      "start_time": 700.72,
+      "end_time": 733.11,
+      "text": "10 यही आता है ना? हां। 10 आता है। मतलब कि s1 का वैल्यू क्या होना पड़ेगा? s1 का वैल्यू क्या होना पड़ेगा? s1 का वैल्यू भी पांच होना पड़ेगा और s2 का वैल्यू भी पांच होना पड़ेगा। s2 का वैल्यू भी पांच होना पड़ेगा। अच्छा ये तो अच्छी बात है। मतलब कि हम लोग ऐसा नहीं कर सकते हैं क्या कि सबसे पहले पूरे एरे का सम निकाल लिए। सम = 10 मान लीजिए कि आप निकाल लिए तो जोड़ के निकाल लिए। s1 को कर दिए सम बाय टू। सम बाय टू s1 कितना बन गया? पांच। अच्छा।",
+      "source": "caption",
+      "english_text": "10 This is what it comes to, isn't it? Yes. 10 comes. Meaning, what will be the value of s1? What should be the value of s1? The value of s1 will also have to be five and the value of s2 will also have to be five. The value of s2 will also have to be five. Well, this is a good thing. Meaning, can't we do this by first finding the sum of the entire array? Sum = 10 Suppose if you find out then add it. Made s1 even by two. How much did sum by two s1 become? Five. Good."
+    },
+    {
+      "start_time": 733.12,
+      "end_time": 767.59,
+      "text": "उसके बाद जो सबसेट सम वाला प्रॉब्लम था, सबसेट सम का प्रॉब्लम क्या था? कि आपको एक एरे मिलेगा और एक सम मिलेगा। आपको बताना है ट्रू या फॉल्स कि इसको आप कर सकते हैं कि नहीं कर सकते हैं। अगर इस सम के जगह इस सम के जगह हम ये एस s1 पास कर दें। हम ये क्या पास कर दें? S1 यानी कि जो एरे का सम बाय टू है और ट्रू और फॉल्स निकाल लें तो क्या हमको पता नहीं चल जाएगा क्या कि ट्रू एंड फॉल्स है। कहने का क्या मतलब है? अगर आप इसका सम 10 निकाले और जो सबसेट सम वाला कोड था उसमें इस सम के जगह ये सम बाय टू",
+      "source": "caption",
+      "english_text": "After that, the problem of subset sum, what was the problem of subset sum? That you will get an array and an even. You have to tell True or False whether you can do it or not. If instead of this sum, instead of this sum, we pass this s s1. What should we pass? S1 means the array which is sum by two and if we take out true and false, won't we know whether it is true or false. What does it mean to say? If you find its sum as 10 and in the subset sum code, instead of this sum, this sum is written by two."
+    },
+    {
+      "start_time": 767.6,
+      "end_time": 801.11,
+      "text": "पास कर दिए। मतलब कि पांच पास कर दिए। इसका क्या मतलब है कि देख के बताओ कि क्या इस एरे का कोई ऐसा सबसेट है जिसका सम पांच आए? अगर ऐसा पॉसिबल हो गया मतलब कि इस एरे का कोई एक सबसेट है जिसका सम क्या आ जाए? पांच ऑटोमेटिकली ऑटोमेटिकली ऑटोमेटिकली जो अगला पार्ट होगा इसका सम क्या आएगा? इसका सम क्या आएगा? जो भी सम है और -5 क्योंकि इसका तो पांच है। इसका ऑटोमेटिकली सम पांच आ जाएगा। इसका ऑटोमेटिकली सम पांच आ जाएगा। कहने का मतलब",
+      "source": "caption",
+      "english_text": "Passed it. That means five passes. What does it mean to see if there is any subset of this array whose sum is five? If this becomes possible, it means that there is some subset of this array whose sum will be? Five automatically automatically automatically what will be the sum of the next part? What will be its equivalent? Whichever is even and -5 because it's five. It will automatically sum to five. It will automatically sum to five. meant to say"
+    },
+    {
+      "start_time": 801.12,
+      "end_time": 832.87,
+      "text": "आप समझ रहे हैं? अगर हम सबसेट सम में इस एरे के सम बाय टू को पास कर दें और सबसेट सम हमको बता दिया कि हां सम बाय टू करना पॉसिबल है। तो अगर सम बाय टू करना पॉसिबल है तो अगला पार्ट जो बनेगा उसका ऑटोमेटिकली सम बाय टू हो जाएगा। क्योंकि आप इस एरे को दो भाग में तोड़ रहे हैं। टोटल एरे का सम 10 है। एक पार्ट का सम आपको पता चल गया कि पांच करना पॉसिबल है। मान लीजिए वन और फोर करना पॉसिबल है। ऑटोमेटिकली जो नंबर बचेंगे उनका सम क्या आएगा? सम -5 मतलब कि 10 - 5 जो कि क्या",
+      "source": "caption",
+      "english_text": "are you understand? If we pass sum by two of this array in Subset Sum and Subset Sum tells us that yes it is possible to do sum by two. So if it is possible to sum by two, then the next part made will automatically be sum by two. Because you are breaking this array into two parts. The sum of the total array is 10. After summing one part, you realized that it is possible to make five. Suppose it is possible to do one and four. What will be the sum of the numbers that will be saved automatically? Even -5 means 10 - 5 which is"
+    },
+    {
+      "start_time": 832.88,
+      "end_time": 866.629,
+      "text": "होगा? पांच। ऑटोमेटिकली ये 5 इक्वल टू ये पांच आएगा और आप ट्रू रिटर्न कर सकते हैं। तो बस यही हो गया। क्या करना है आपको? उस कोड को कंट्रोल सी कंट्रोल वी करना है। उस कोड में क्या पास होता था? एरे। एरे तो यही वाला पास हो जाएगा। और क्या पास होता था? सम। उस सम के जगह आपको क्या पास करना है? इस एरे का जो टोटल सम है क्या? टोटल सम है बाय टू पास कर दीजिए। अगर वहां से आंसर ट्रू आया ट्रू कर दीजिए। अगर वहां से आंसर फॉल्स आया फॉल्स कर दीजिए। लेकिन एक इसमें कैच है। एक इसमें कैच है। मान लीजिए",
+      "source": "caption",
+      "english_text": "Will it happen? Five. Automatically this 5 will be equal to this five and you can return true. So that's it. What do you have to do? That code has to be Control C Control V. What was passed in that code? Hey. Hey, this one will pass. What else passed? Even. What do you have to pass in place of that sum? What is the total sum of this array? Total is even, pass by. If the answer from there is true then make it true. If the answer comes from there, then do so. But there is a catch in this. There is a catch in this. Suppose"
+    },
+    {
+      "start_time": 866.639,
+      "end_time": 901.59,
+      "text": "आपको ये एरे दिया हुआ है। 1 2 3 और 6 0 1 2 3 इसका सम निकालिए। 1 + 2 + 3 + 6 क्या आता है? इसको पांच कर दीजिए। इसको सहूलियत के लिए पांच कर दीजिए। क्या कर दीजिए? पांच कर दीजिए। 5 क्या आएगा? 3 6 और एक 11 अच्छा। 11 / 2 क्या होता है? 11 / 2 क्या होता है? अगर हम पूरा सेंस में देखें। 11/2 होता है 5.5 क्या आपको लगता है कि आप इस एरे में आप किसी भी भाग को ऐसा तोड़ पाएंगे जिसका सम 5.5 आ जाए? नहीं आ सकता है। क्योंकि इस",
+      "source": "caption",
+      "english_text": "You are given this array. Find the sum of 1 2 3 and 6 0 1 2 3. What comes 1 + 2 + 3 + 6? Make it five. For convenience, make it five. What should I do? Make it five. 5 What will come? 3 6's and a 11's good. What is 11 / 2? What is 11 / 2? If we look at it in full sense. 11/2 is 5.5 Do you think you will be able to break down any of the parts in this array that will sum to 5.5? Can't come. because this"
+    },
+    {
+      "start_time": 901.6,
+      "end_time": 934.47,
+      "text": "एरे में सब इंटीजर है ना भाई। इंटीजर का सम कभी भी 5.5 कैसे हो सकता है? इंटीजर का सम तो ऐसे होगा ना कि अगर टोटल 11 है तो हो सकता है कि एक भाग का सम होगा पांच और दूसरे भाग का सम होगा छ। ये आ सकता है। या तो एक भाग का सम होगा छ और एक भाग का सम होगा पांच। ये किया जा सकता है। ऐसा थोड़ी किया जा सकता है कि एक भाग का सम हो जाए 5.5 और दूसरे भाग का सम हो जाए 5.5 ऐसा तो पॉसिबल नहीं है। मतलब कि अगर टोटल एरे का टोटल सम जो आप ये टोटल सम निकाल रहे हैं",
+      "source": "caption",
+      "english_text": "The array contains all integers, isn't it brother? How can an integer ever sum to 5.5? The sum of the integer will be like this, if the total is 11 then it is possible that the sum of one part will be five and the sum of the other part will be six. This may come. Either one part will be equal to six and one part will be equal to five. This can be done. It can be done in such a way that one part becomes equal to 5.5 and the other part becomes equal to 5.5, this is not possible. Meaning that if the total sum of the total array is the total sum that you are extracting"
+    },
+    {
+      "start_time": 934.48,
+      "end_time": 961.91,
+      "text": "ये ओड नंबर है। ये क्या नंबर है? ओड नंबर है। तो आपको लगता है कि जिंदगी में कभी भी आप इसको बाय टू बाय टू करने में संभव होंगे? बिल्कुल नहीं होंगे। ये पॉसिबल ही नहीं है कि इंटीजर का सम डेसिमल में आ जाए। बिल्कुल नहीं है। अगर ये इवन नंबर है तो आपको ट्राई करना चाहिए कि हां इसका बाय टू भेज के ट्राई कर लो। लेकिन अगर ये टोटल सम ओड नंबर है दुनिया में कुछ भी आप कर लेंगे पॉसिबल नहीं हो सकता है ये करना।",
+      "source": "caption",
+      "english_text": "This is an odd number. What number is this? Is an odd number. So do you think that you will be able to do this bye-bye anytime in your life? Absolutely not. It is not possible that the sum of an integer comes in decimal. Not at all. If it is an even number then you should try to send yes to it. But if this total is an odd number, you can do anything in the world, it is not possible to do it."
+    },
+    {
+      "start_time": 961.92,
+      "end_time": 996.31,
+      "text": "क्यों? क्योंकि ओड नंबर है ना ऑड नंबर को आप दो भाग में कैसे तोड़ सकते हैं? नहीं तोड़ा जा सकता है। कुछ ना कुछ बच जाएगा। दो भाग में किसको तोड़ना पॉसिबल है? इवन नंबर को। ऑड नंबर को दो भाग में नहीं तोड़ा जा सकता है दुनिया का कुछ भी करके। तो आपको एक चीज और करना पड़ेगा कि आप टोटल सम निकालिए। अगर आपका टोटल सम अगर आपका टोटल सम ओड है। क्या है? ऑड नंबर है। आंख बंद करके बिना कुछ सबसेट सम यूज़ किए रिटर्न फॉल्स कर दीजिए। ये दुनिया में पॉसिबल नहीं है। अगर ऐसा नहीं है तो आप कर सकते हैं। तो आप क्या कर सकते हैं? अपना",
+      "source": "caption",
+      "english_text": "Why? Because it is an odd number, how can you break an odd number into two parts? Cannot be broken. Something will be saved. What is possible to break into two parts? To even number. An odd number cannot be broken into two parts by doing anything in the world. So one more thing you have to do is to calculate the total sum. If your total is even. If your total is odd. What is? Is an odd number. Close your eyes and return false without using any subset sum. This is not possible in this world. If it is not then you can. So what can you do? my own"
+    },
+    {
+      "start_time": 996.32,
+      "end_time": 1025.51,
+      "text": "सबसेट सम वाले फंक्शन को कॉल कर सकते हैं। किसके साथ? एरे और ये भी जो भी आपका टोटल सम बाय टू आता है आप ट्राई करके देख सकते हैं। तो बस ये करिए और आपका ये क्वेश्चन भी सॉल्व हो गया चुटकी बजाते ही। अगले क्वेश्चन पे आइए चलिए। ये वाला क्वेश्चन थोड़ा इंटरेस्टिंग है। क्या है? इस क्वेश्चन का नाम है टारगेट सम। इंटरेस्टिंग नहीं है। मतलब इसमें थोड़ा आपको 10थ क्लास का मैथ का यूज़ करना पड़ेगा। हम बताते हैं। देखिए। ये आपका एरे। आपको एक एरे दिया है। और आपको एक टारगेट भी दिया है। आपको एक टारगेट भी दिया है। आपका टारगेट यहां पे तीन दिया हुआ है आपको।",
+      "source": "caption",
+      "english_text": "Can call function containing subset sum. With whom? Hey and also whatever your total sum comes to, you can try and see. So just do this and your question will also be solved in a jiffy. Let's move on to the next question. This question is a bit interesting. What is? The name of this question is Target Sum. Not interesting. Meaning, you will have to use some of the 10th class math in this. We tell. See. This is your array. You are given an array. And you have also been given a target. You have also been given a target. Your target is given here three times."
+    },
+    {
+      "start_time": 1025.52,
+      "end_time": 1059.27,
+      "text": "अच्छा, इसमें क्या करना है? क्या आपको बताना है कि कुछ यूज़ करके तीन बन जाएगा क्या? नहीं, ऐसा नहीं करना है। बड़ा इंटरेस्टिंग कांसेप्ट है क्वेश्चन का। क्वेश्चन आपको क्या बोलता है ना कि अच्छा इस एरे में पांच एलिमेंट है। आपको पांच वन दिख रहा है। अच्छा क्वेश्चन आपको बोलता है हर नंबर के आगे ना आप दो साइन लगा सकते हैं। या तो पॉजिटिव या तो नेगेटिव। हर नंबर के आगे आप दो साइन लगा लीजिए अपने मन से। पॉजिटिव या नेगेटिव। अच्छा करने के बाद करने के बाद आपका ना एक इक्वेशन जैसा बन जाएगा। फॉर एग्जांपल आप आप एक मान लीजिए पहला वाला आप करते हैं ना कि आप ऐसा करते हैं वन इसके आगे पॉजिटिव लगा हुआ है।",
+      "source": "caption",
+      "english_text": "Well, what to do about it? Do you want to tell me whether by using something it will become three? No, don't do this. Question is a very interesting concept. What does the question tell you? Well, this array has five elements. You are seeing five forests. A good question tells you that you can put two signs in front of every number. Either positive or negative. Put two signs in front of every number in your mind. Positive or negative. After doing something good, your no will become like an equation. For example, you a, let's say you do the first one, not you do this, one is positive in front of it."
+    },
+    {
+      "start_time": 1059.28,
+      "end_time": 1092.63,
+      "text": "दूसरे वन के आगे नेगेटिव लगा दीजिए। इसके बाद के तीनों वन के आगे पॉजिटिव लगा दीजिए। ऐसे करके ये इसमें हम क्या किए? पहले वन के आगे पॉजिटिव। ऑब्वियस सी बात है कुछ नहीं है तो पॉजिटिव है। दूसरे वन के आगे नेगेटिव। तीसरे वन के आगे पॉजिटिव। चौथे वन के आगे पॉजिटिव। पांचव वन के आगे पॉजिटिव। अच्छा इसका इसको कंप्यूट कीजिए। ये क्या आएगा आंसर आपका? 1 - 1 0 हो गया। + 3 इसका आंसर तीन आ गया। अच्छा आप एक चीज और कर सकते हैं। पहले वन के आगे नेगेटिव बाकी सब के आगे पॉजिटिव। ये भी एक कॉम्बिनेशन है। हर नंबर के आगे आपको एक साइन लगाना है अपने मन से। पॉजिटिव या",
+      "source": "caption",
+      "english_text": "Put negative in front of the second one. After this, put positive in front of the next three words. What have we done by doing this? Positive ahead of first one. It is obvious that if there is nothing then it is positive. Negative next to the second one. Positive ahead of third one. Positive ahead of fourth forest. Positive ahead of fifth one. Well, compute this. What will be your answer? 1 - 1 becomes 0. + 3 Its answer is three. Well, you can do one more thing. Negative before the first one, positive before the rest. This is also a combination. You have to put a sign in front of each number in your mind. positive or"
+    },
+    {
+      "start_time": 1092.64,
+      "end_time": 1125.59,
+      "text": "नेगेटिव। बहुत सारा बनेगा कॉम्बिनेशन। हम आपको कुछ-कुछ दिखा रहे हैं। अच्छा इसका आंसर भी तीन आएगा। इसका आंसर भी तीन आएगा। आप एक काम और कर सकते हैं। 1 + 1 -1 + 1 + 1 इसका आंसर भी तीन आएगा। ऐसे करके आप आपको जितना मन करे उतना आप कर सकते हैं। वैरायटी ऑफ कॉम्बिनेशन आप ट्राई कर सकते हैं। जिस कॉम्बिनेशन के आगे जिस कॉम्बिनेशन का आंसर ये तीन आता है उसको आपको काउंट करना है। उसको आपको काउंट करना है। मतलब कि आप सारा कॉम्बिनेशन बना लीजिए। सारा परम्यूटेशन कॉम्बिनेशन हर",
+      "source": "caption",
+      "english_text": "Negative. Many combinations will be made. We are showing you a few things. Well, the answer will also be three. Its answer will also be three. You can do one more thing. 1 + 1 -1 + 1 + 1, its answer will also be three. By doing this you can do as much as you want. Variety of combinations you can try. You have to count the combination in front of which the answer is three. You have to count it. That means you make all the combinations. Sara Permutation Combination Har"
+    },
+    {
+      "start_time": 1125.6,
+      "end_time": 1160.39,
+      "text": "नंबर के आगे प्लस लगाइए। हर नंबर के आगे माइनस लगाइए। सब ट्राई करिए। जिस भी इक्वेशन का आंसर आपका ये टारगेट के इक्वल आता है। कितने इक्वेशंस का आंसर आपका टारगेट के इक्वल आता है? वो नंबर आपको रिटर्न करना है। ट्रू फॉल्स नहीं। अगेन हम बोल रहे हैं ट्रू फॉल्स नहीं। वो नंबर ऐसा कितना कॉम्बिनेशन पॉसिबल है जिसको कंप्यूट करेंगे हम तो आपका आंसर इस टारगेट के इक्वल आएगा। ये आपका क्वेश्चन है। अब ये क्वेश्चन देखने में बहुत खतरनाक लगता है। मतलब बहुत अलग टाइप का क्वेश्चन है कि साला ये तो नहीं पढ़े थे अभी तक। लेकिन अगर थोड़ा सा अंदर घुसेंगे ना तो सेम ही टाइप का चीज हो रहा है इसमें भी। हम आपको दिखाते हैं। देखिए। आपका काम क्या है?",
+      "source": "caption",
+      "english_text": "Put a plus in front of the number. Put a minus in front of each number. Try everything. The answer of whichever equation is equal to your target. The answer to how many equations is equal to your target? You have to return that number. Not true false. Again we are saying true not false. If we calculate how many combinations are possible with that number, your answer will be equal to this target. This is your question. Now this question looks very dangerous. Meaning, this is a very different type of question that you have not read till now. But if we go inside a little, the same type of thing is happening here too. Let us show you. See. What is your job?"
+    },
+    {
+      "start_time": 1160.4,
+      "end_time": 1195.029,
+      "text": "आपका काम हर नंबर के आगे पॉजिटिव या तो नेगेटिव लगाना है। तो हम लोग ऐसा कर सकते हैं कि देखिए अब ये आपका एरे था। ये आपका एरे था। यही था ना एरे। 1 2 3 4 और पांच। यही आपका एरे है। अच्छा। अब हर नंबर के आगे या तो पॉजिटिव का साइन लगेगा। या तो हर नंबर के आगे नेगेटिव का साइन लगेगा। अच्छा। तो क्यों ना दो ग्रुप बना लिया जाए। एक ग्रुप बना लिया जाए जिसमें वो नंबर रहेंगे जिसके आगे हम पॉजिटिव का साइन लगाएंगे। जैसे कि ये वाला इक्वेशन है। ये वाला इक्वेशन पकड़िए। तो ये वाले इक्वेशन में ना 1 2 3 4 चार नंबर थे जिनके आगे",
+      "source": "caption",
+      "english_text": "Your job is to put either positive or negative in front of each number. So we can do this, see now this was your array. This was your array. This was it, isn't it? 1 2 3 4 and five. This is your array. Good. Now every number will have a positive sign in front of it. Either there will be a negative sign in front of every number. Good. So why not form two groups. A group should be formed which will contain those numbers in front of which we will put positive sign. Like this equation. Hold this equation. So in this equation there were four numbers 1 2 3 4 in front of which"
+    },
+    {
+      "start_time": 1195.039,
+      "end_time": 1223.75,
+      "text": "पॉजिटिव का साइन। तो इन चारों को हम इसमें घुसा देंगे। एक और ग्रुप होगा जिसके आगे हम नेगेटिव का साइन लगा देंगे। जिसके आगे हम क्या साइन लगा देंगे? नेगेटिव का साइन लगा देंगे। तो ये आपका पॉजिटिव का ग्रुप बन जाएगा। और ये आपका नेगेटिव का ग्रुप बन जाएगा। अच्छा। नेगेटिव का ग्रुप बनने का ये मतलब नहीं है कि ये सारा नंबर नेगेटिव हो गया है। इसमें वो नंबर जा रहा है जिसका साइन आप नेगेटिव चुने हैं। तो इस इस वाले में ना ये रहेगा 1 2 तीन और चार। हम इस इक्वेशन के बारे में बात कर रहे हैं।",
+      "source": "caption",
+      "english_text": "Sign of positive. So we will include these four in it. There will be another group in front of which we will put a negative sign. What sign will we put in front of it? Will put negative sign. So this will become your positive group. And this will become your group of negatives. Good. Formation of a group of negatives does not mean that the entire number has become negative. In this the number is going whose sign you have chosen as negative. So in this one it will be 1, 2, three and four. We are talking about this equation."
+    },
+    {
+      "start_time": 1223.76,
+      "end_time": 1249.19,
+      "text": "इक्वेशन नंबर दो के बारे में बात कर रहे हैं। नेगेटिव वाले में कौन सा? सिर्फ एक। एक नंबर जाएगा जिसके आगे हम लोग नेगेटिव चुनेंगे। इसमें बस एक जाएगा। इसमें बस एक जाएगा। अच्छी बात है। ओके। वेरी गुड। अब देखिए अब आपका काम क्या है? है। कभी भी आप कोई इक्वेशन लिखते हैं, कभी भी आप कोई इक्वेशन कंप्यूट करते हैं। तो इस इक्वेशन में होगा क्या? इस इक्वेशन में होगा क्या? इस इक्वेशन को अगर हम लोग थोड़ा सॉल्व करने लेंगे में तो सबसे पहले तो जितने भी पॉजिटिव एलिमेंट है उनको जोड़ लीजिए।",
+      "source": "caption",
+      "english_text": "Talking about equation number two. Which one is negative? Only one. There will be a number next to which we will choose negative. Only one will go in it. Only one will go in it. It's a good thing. Ok. very good. Now see, what is your job now? Is. Anytime you write an equation, anytime you compute an equation. So what will happen in this equation? What will happen in this equation? If we try to solve this equation, then first of all add all the positive elements."
+    },
+    {
+      "start_time": 1249.2,
+      "end_time": 1283.029,
+      "text": "जितने भी पॉजिटिव एलिमेंट है उनको जोड़ लीजिए। मतलब चारों वन को जोड़ लीजिए तो चार आ जाएगा। चार आएगा। अच्छा। उसके बाद एक माइनस का साइन लगाइए। माइनस का साइन लगाइए और जिन भी नंबरों के आगे नेगेटिव का साइन लगा हुआ है उनको जोड़ लीजिए। तो यहां पे सिर्फ एक नंबर है जिसके आगे नेगेटिव का साइन लगा है। एक कर देंगे। इस इक्वेशन को सॉल्व करते थे जब क्लास टू थ्री में तो ऐसे ही करते थे ना भाई। अगर मान लीजिए कोई इक्वेशन आपको ऐसा मिलेगा कि 100 - 200 + 500 - 50 इस इक्वेशन को कैसे सॉल्व करते थे? जितना भी पॉजिटिव वाले हैं, जितना भी पॉजिटिव वाले हैं उनको जोड़ लेते थे। 100",
+      "source": "caption",
+      "english_text": "Add all the positive elements. Meaning, if you add all four forests together, you will get four. Four will come. Good. After that put a minus sign. Put a minus sign and add all the numbers which have a negative sign in front of them. So here there is only one number with a negative sign in front of it. Will do one. This is how we used to solve this equation when we were in class 2-3, brother. Suppose you get an equation like this: 100 - 200 + 500 - 50. How to solve this equation? All the positive people were included. 100"
+    },
+    {
+      "start_time": 1283.039,
+      "end_time": 1316.87,
+      "text": "+ 500 इनका एक ग्रुप बना लेते थे। एक माइनस का साइन लगाते थे और जितने भी नेगेटिव वाले हैं उनको जोड़ लेते थे। क्या होता था? 200 + 50 तो ये क्या बन जाता था आपका? यह बन जाता था 600 माइनस का साइन और ये बन जाता था 250। ऐसे ही सॉल्व करते थे ना भाई। यही होता है ना सॉल्व करने का। मैथ तो सब लोग पढ़ के आए यहां तक। वैसे ही यहां भी सॉल्व होगा। मतलब कि पॉजिटिव वाले ग्रुप का एक सम बनेगा। पॉजिटिव वाले ग्रुप का एक सम बनेगा। इसको हम लोग बोलेंगे कि पॉजिटिव = 4। नेगेटिव वाले ग्रुप का भी एक सम बनेगा। नेगेटिव वाले ग्रुप का भी एक सम",
+      "source": "caption",
+      "english_text": "+ 500 of them used to form a group. Used to put a minus sign and add all the negative ones. What used to happen? 200 + 50 then what would become of you? This would become 600 minus sign and this would become 250. This is how we used to solve it, brother. This is what happens when you solve it. Everyone has come here after studying Maths. Similarly, it will be solved here also. Meaning that there will be an even number of positive groups. There will be an even number of positive groups. We will call this positive = 4. The negative group will also be equal. The negative group also has the same number."
+    },
+    {
+      "start_time": 1316.88,
+      "end_time": 1350.95,
+      "text": "बनेगा। अब आपका काम क्या है? अब आपका काम यह करना है, चेक करना है। पॉजिटिव माइनस नेगेटिव इक्वल क्या होना चाहिए? आपका टारगेट होना चाहिए। जो भी आपको टारगेट दिया हुआ है जो यहां पे तीन दिया हुआ है। बात समझ में आती है सबको? यही होना चाहिए ना? यही आपसे पूछ रहा है। ये बताना है। अच्छा। लेकिन पॉजिटिव यहां पे चार है। नेगेटिव यहां पे एक है। अब ये जो दो पार्ट हैं ये एरे से ही निकले हैं ना। एरे का कुछ पार्ट पॉजिटिव में चला गया। कुछ पार्ट नेगेटिव में चला गया। एरे का कोई ऐसा एलिमेंट बचा नहीं है ना कि जो आइदर ऑफ",
+      "source": "caption",
+      "english_text": "Will be made. What is your work now? Now your job is to do this and check. What should positive minus negative equal? This should be your target. Whatever target is given to you, which is given here. Does everyone understand? This is what should happen, right? This is what it is asking of you. This has to be told. Good. But there are four positives here. There is one negative here. Now these two parts have emerged from the array itself, right? Some part of the array went positive. Some part went into negative. There is no element left in the array that is further off."
+    },
+    {
+      "start_time": 1350.96,
+      "end_time": 1383.669,
+      "text": "ग्रुप में भी नहीं गया। एरे का हर एक एलिमेंट या तो पॉजिटिव में जाएगा या तो नेगेटिव में जाएगा। यही होगा ना? एरे में टोटल कितना था? पांच वन था। चार वन इसमें एक वन इसमें। मतलब एरे का हर एक एलिमेंट या तो पॉजिटिव में गया या तो नेगेटिव में गया। तो क्या हम लोग ऐसा बोल सकते हैं कि अगर हम लोग अगर हम लोग पॉजिटिव प्लस नेगेटिव कर दें। इसका आंसर आएगा आपके एरे का टोटल सम। टोटल सम। आप देख भी लीजिए आपके एरे का टोटल सम क्या आएगा? इसका एरे का टोटल सम क्या आएगा? पांच। अगर आप इसको",
+      "source": "caption",
+      "english_text": "Didn't even go to the group. Each element of the array will either go positive or negative. This is what will happen, right? What was the total in the array? There was five forest. Four forests in this, one forest in this. Meaning every element of the array either went positive or negative. So can we say that if we make positive plus negative. The answer will be the total sum of your array. Total even. You can also check, what will be the total sum of your array? What will be the total sum of its array? Five. if you like this"
+    },
+    {
+      "start_time": 1383.679,
+      "end_time": 1415.83,
+      "text": "जोड़े चार और एक को आप अगर जोड़ देंगे साइन का बात नहीं कर रहे हैं। जस्ट उसका सम को जोड़ दीजिए। क्या आपको पांच मिलेगा? ऑब्वियसली मिलेगा। क्योंकि एरे का हर एक एलिमेंट या तो इधर है या तो उधर है। सबको जोड़ दो। क्या आएगा? टोटल सम। क्या ये दो इक्वेशन आ गया? सेवंथ क्लास में एक चीज़ पढ़े थे दो लीनियर इक्वेशन को सॉल्व करने का। आइए इन दोनों इक्वेशन को जोड़ दीजिए। ये क्या बन जाएगा? 2 * cos ये कट जाएगा। नेगेटिव नेगेटिव माइनस नेगेटिव प्लस नेगेटिव कट गया। इक्वल टू टारगेट प्लस",
+      "source": "caption",
+      "english_text": "Add four and one if you are not talking about the sign. Just add its sum. Will you get five? Will get it obviously. Because every element of the array is either here or there. Add everyone. What will come? Total even. Have these two equations arrived? In seventh class, we studied one thing about solving two linear equations. Let's connect these two equations. What will this become? 2 * cos This will be cut off. Negative negative minus negative plus negative crossed. Equal to Target Plus"
+    },
+    {
+      "start_time": 1415.84,
+      "end_time": 1449.27,
+      "text": "टोटल सम। ये इक्वेशन आई। ये इक्वेशन आई। पॉस को देख लीजिए। पॉस इज़ इक्वल टू टारगेट प्लस टोटल सम बाय 2। यह देखो। यह देखिए। इसमें हम कोई रॉकेट साइंस नहीं किए हैं। क्लास टू से ले क्लास सेवन का मैथ्स उपयोग किए हैं। फिर से एक बार आप अब सुनिए। एरे में नंबर है। अच्छी बात है। होने दीजिए। कुछ नंबर को पॉजिटिव वाले ग्रुप में डालेंगे। कुछ नंबर को नेगेटिव वाले ग्रुप में डालेंगे। पॉजिटिव वाले ग्रुप का सम आएगा पॉज। नेगेटिव वाले ग्रुप का सम आएगा नेगेटिव। आपसे बोला है कि आपका आंसर आना",
+      "source": "caption",
+      "english_text": "Total even. This equation came. This equation came. Look at the post. Pos is equal to target plus total sum by 2. Look at this. Look at this. We have not done any rocket science in this. Maths from class two to class seven have been used. Now listen once again. The array contains numbers. It's a good thing. Let it happen. Some numbers will be put in the positive group. Some numbers will be put in the negative group. There will be a pause for the positive group. The sum of the negative group will be negative. Told you that your answer will come"
+    },
+    {
+      "start_time": 1449.28,
+      "end_time": 1481.029,
+      "text": "चाहिए टारगेट। वो कैसे आता है? पॉजिटिव माइनस नेगेटिव करेंगे तो आपका आंसर टारगेट आना चाहिए। उसको हम लिखे इक्वेशन वन। पॉजिटिव और नेगेटिव को जोड़ देंगे तो एरे का टोटल सम आ जाएगा। इसको हम लिखे इक्वेशन टू। दोनों इक्वेशन को जोड़ दिए। दोनों इक्वेशन को जोड़ने से हुआ क्या? 2 * cos आ गया। पॉस प्लस जुड़ गया। नेगेटिव यहां माइनस था। यहां प्लस था नेगेटिव कट गया। ये दोनों भी जुड़ गया। आपका लास्ट में पॉस पॉस का वैल्यू क्या आया? टारगेट प्लस टोटल सम बाय टू। क्या? टारगेट प्लस टोटल सम बाय टू। कुछ-कुछ क्लिक कर रहा है। अगर आप इस",
+      "source": "caption",
+      "english_text": "Need target. How does he come? If you do positive minus negative then your answer target should come. Let us write that as equation one. If we add positive and negative then the total sum of the array will come. Let us write this as equation two. Added both the equations. What happened by adding both the equations? 2 * cos arrived. POS Plus added. The negative was minus here. Here the plus was cut off. These two also joined. What was the value of your POS POS in the end? Target plus total sum by two. What? Target plus total sum by two. Something is clicking. If you like this"
+    },
+    {
+      "start_time": 1481.039,
+      "end_time": 1514.23,
+      "text": "एरे का आप इस एरे का टोटल सम निकाल लेते हैं। कैसे? सारे नंबर को जोड़ के आपको इसका टारगेट ऑलरेडी दिया हुआ है। अच्छा आप एक सम बनाते हैं जिसका वैल्यू आएगा टोटल सम प्लस टारगेट बाय टू। अगर आप ये सम अपने सबसेट सम को पास कर देते हैं। सबसेट सम कौन सा वाला? ट्रू एंड फॉल्स वाला नहीं काउंट सबसेट वाला। काउंट सबसेट वाला फंक्शन जिसमें हम लोग और नहीं कर रहे थे जिसमें हम लोग प्लस कर रहे थे। वहां से",
+      "source": "caption",
+      "english_text": "You take the total sum of this array. How? By adding all the numbers, your target is already given. Well, you create a sum whose value will be total sum plus target buy two. If you pass this sum to your subset sum. Subset even which one? Not the one with True and False but the one with count subsets. The count subset function in which we were not doing plus, in which we were doing plus. from there"
+    },
+    {
+      "start_time": 1514.24,
+      "end_time": 1546.47,
+      "text": "आपको कोई आंसर आता है कि इसमें चार तरीके का है। क्या यही आपका आंसर नहीं हो जाएगा? यही तो आपसे पूछा जा रहा है भाई कि एरे को दो भाग में तोड़ो। दो भाग में तोड़ने ही तो बोल रहा है। दो ग्रुप में तोड़ने बोल रहा है। एक पॉजिटिव ग्रुप एक नेगेटिव ग्रुप। आप एक इसका पॉजिटिव का वैल्यू निकाल लिए। टारगेट प्लस टोटल सम बाय टू। उसको पास कर दिए अपने सबसेट सम में। सबसेट सम आपको बताया। कुछ ना कुछ वैल्यू बताएगा। 0 1 2 3 4 कितने तरीके से पॉसिबल है? क्या वही आपका आंसर नहीं हो जाएगा? बिल्कुल आपका आंसर वही हो जाएगा। बिल्कुल आपका आंसर वही हो जाएगा। सेम सवाल है ये। इसमें",
+      "source": "caption",
+      "english_text": "Do you get any answer that there are four ways in this? Wouldn't this be your answer? This is what is being asked of you brother, break the array into two parts. He is just saying to break it into two parts. Asking to be divided into two groups. One positive group, one negative group. You find out its positive value. Target plus total sum by two. Passed that into your subset sum. Subset sum told you. Will show some value. 0 1 2 3 4 How many ways are possible? Wouldn't that be your answer? Your answer will be exactly the same. Your answer will be exactly the same. This is the same question. in this"
+    },
+    {
+      "start_time": 1546.48,
+      "end_time": 1577.51,
+      "text": "बस आपको थोड़ा मैथमेटिक्स करके वैल्यू निकालना था कि क्या वैल्यू है? वो जो सम का वैल्यू क्या है? जब हम लोग काउंट सबसेट्स पढ़े थे उसमें हम लोग क्या किए थे? जो सम आया था वो पास किए थे। पार्टीशन सबसेट में क्या किए थे? टोटल सम बाय टू पास किए थे। यहां पे क्या पास करना है? हमारा इक्वेशन आपको बताता है कि आपको टोटल सम प्लस टारगेट बाय टू पास करना है। ये पास कर दीजिए। वहां से आंसर आ जाएगा। आपका खेल हो जाएगा पूरी तरीके से खत्म। एक और चीज इसमें करनी है। सेम चीज जो हम लोग",
+      "source": "caption",
+      "english_text": "You just had to do a little mathematics to find out what the value is? What is the value of that sum? What did we do when we read Count Subsets? Whatever was required was passed. What was done in partition subset? Total sum by two was passed. What needs to be passed here? Our equation tells you that you have to pass Total Sum plus Target Buy. Pass this. The answer will come from there. Your game will be completely over. One more thing has to be done in this. Same thing that we"
+    },
+    {
+      "start_time": 1577.52,
+      "end_time": 1612.149,
+      "text": "पहले पढ़े थे। अगर टोटल सम प्लस टारगेट अगर टोटल सम प्लस टारगेट ऑड नंबर है तो क्या आपको लगता है अगर ये ऑड नंबर है तो ये बाय टू भी ऑड नंबर हो जाएगा। बाय टू भी ऑड नंबर हो जाएगा। तो ये पॉसिबल नहीं है। क्योंकि जब आप ऑड नंबर को बाय टू करेंगे तो आपका आंसर कुछ 5.5 आने लगेगा। क्या आपको लगता है कि इंटीजर एरे को ऐसा डिवाइड करना पॉसिबल है कि सम 5.5 बन जाए? बिल्कुल पॉसिबल नहीं है। तो अगर ऑड आता है, क्या रिटर्न करना है आंख बंद करके? जीरो। ऐसा पॉसिबल नहीं है। अगर इवन नंबर आता है तो",
+      "source": "caption",
+      "english_text": "Had read before. If total sum plus target If total sum plus target is an odd number then do you think if it is an odd number then this buy two will also be an odd number. Buy Two will also be an odd number. So this is not possible. Because when you buy the odd number, your answer will be something like 5.5. Do you think it is possible to divide the integer array such that the sum becomes 5.5? Not possible at all. So if the odds come, what to return blindly? Zero. This is not possible. If even number comes"
+    },
+    {
+      "start_time": 1612.159,
+      "end_time": 1645.909,
+      "text": "आपको सबसेट सम में इसको भेज देना है। किस वैल्यू को? सम के जगह इस वैल्यू को। जो भी वैल्यू वहां से आएगा उसको रिटर्न कर दीजिएगा। खत्म हो गया खेल। बस। एक छोटी सी बात और है। अभी मेरे दिमाग से निकल ही गया था। मान लीजिए कोई ऐसा एरे दिया हुआ है जिसका टोटल सम पांच है और टारगेट इसका चलिए सात कर दीजिए फिर आप बोलिएगा कि ऑड नंबर हो गया है तो सात कर दीजिए ये सबसे पहले आप क्या चेक करते थे कि क्या टोटल सम प्लस टारगेट ऑड तो नहीं है नहीं ऑड नहीं है 12 है तो इसमें तो आप अपना रन कर देंगे नहीं रन करना है क्यों नहीं रन करना आपको समझाते हैं देखिए टोटल सम पांच है मतलब एरे का टोटल सम ही पांच",
+      "source": "caption",
+      "english_text": "You have to send it in subset sum. To which value? This value instead of even. Whatever value comes from there, return it. The game is over. Bus. There is one more small thing. It had just slipped my mind. Suppose an array is given whose total sum is five and the target is let's make it seven, then you will say that if there is an odd number then make it seven. First of all, what did you check whether the total sum plus the target is not odd? No, it is not odd. If it is 12, then you will do your run in this. No, why not run? Let me explain to you. See, the total sum is five, which means the total even of the array is five."
+    },
+    {
+      "start_time": 1645.919,
+      "end_time": 1674.31,
+      "text": "है अब इसको आपको दो ग्रुप में डिवाइड करना है किसमें पॉजिटिव और नेगेटिव में पॉजिटिव और नेगेटिव में आप कोई भी कॉम्बिनेशन ट्राई करेंगे ना तो देखिए इसमें क्या-क्या कॉम्बिनेशन ेशन है। भूल जाइए क्या नंबर है। मान लीजिए सारा नंबर वन है। वन ये वन है। ये आपका एरे है। तो देखिए या तो आप पॉजिटिव में ज़ीरो दीजिए, नेगेटिव में पांच दीजिए। ये हो सकता है। वन और फोर हो सकता है। टू और थ्री हो सकता है। थ्री और टू हो सकता है। फोर और वन हो सकता है। और फाइव और ज़ीरो हो सकता है। यही हो सकता है ना?",
+      "source": "caption",
+      "english_text": "Now you have to divide it into two groups, positive and negative, positive and negative. You can try any combination, see what all the combinations are there. Forget what the number is. Suppose Sara is number one. Forest is this forest. This is your array. So see, either you give zero in positive, five in negative. This can happen. Could be one or four. Could be two or three. Could be three or two. There could be four or one. And there could be five and zero. This is what can happen, isn't it?"
+    },
+    {
+      "start_time": 1674.32,
+      "end_time": 1704.389,
+      "text": "और कोई पॉजिटिव नेगेटिव का कॉम्बिनेशन तो नहीं हो सकता है? नहीं हो सकता है। अच्छा। अब इसमें निकालिए। पॉजिटिव माइनस नेगेटिव निकालिए। क्या आंसर आएगा? पांच। सॉरी -5 क्या आएगा? -5 यस -5 1 - 4 1 - 4 क्या आता है? जी -3 ओके -3 -1 1 3 5 ये आपके वैल्यूज़ आएंगे। आप कोई भी इक्वेशन कंप्यूट करेंगे ना तो ये आपका वैल्यूज़ आएगा। -5 से पांच के बीच में।",
+      "source": "caption",
+      "english_text": "And there can't be any combination of positive and negative? Can't happen. Good. Now take it out in this. Find the positive minus the negative. What answer will come? Five. Sorry-5 what will come? -5 Yes -5 1 - 4 1 - 4 What comes? G -3 OK -3 -1 1 3 5 These will be your values. If you calculate any equation, these values ​​will come to you. Between -5 and five."
+    },
+    {
+      "start_time": 1704.399,
+      "end_time": 1732.95,
+      "text": "आपका टारगेट क्या है? जी सात। आपका टारगेट क्या है? सात। आप एक बात पे गौर कीजिए कि साला मेरा टोटल सम पांच है। टोटल सम तो पांच है। पॉजिटिव नेगेटिव कुछ भी होगा तो सम से तो कम ही होगा ना। टोटल सम से तो कम होगा ना। कम या इक्वल होगा। ऐसा तो नहीं हो सकता है ना कि आपका टोटल सम जो है वो पांच है और आपका पॉजिटिव आ जाए सात और आपका नेगेटिव आ जाए 10। ये तो पॉसिबल नहीं है। क्यों? क्योंकि एनी केस में पॉजिटिव प्लस नेगेटिव वाला ग्रुप को पांच बनना है।",
+      "source": "caption",
+      "english_text": "What is your target? Yes seven. What is your target? Seven. Please note one thing that my total is five. The total sum is five. If there is anything positive or negative, it will be less than even. The total will be less than the sum. Will be less or equal. It cannot be that your total sum is five and your positive comes to seven and your negative comes to 10. This is not possible. Why? Because in any case the group with positive plus negative has to become five."
+    },
+    {
+      "start_time": 1732.96,
+      "end_time": 1766.71,
+      "text": "ये कर देंगे तो ये तो 17 बन जाएगा। ये तो पॉसिबल है ही नहीं। अच्छा। तो कहने का मतलब ना आप टोटल सम को जब डिवाइड करेंगे पॉजिटिव और नेगेटिव में तो आपका जो वैल्यूस का रेंज आएगा इस वैल्यू का रेंज बहुत ध्यान से देखिए क्या आया -5 से +5 क्या -5 से +5 -5 से +5 आपका टारगेट क्या है सात आपको लगता है ये टारगेट कभी भी अचीवेबल है नहीं है अचीवेबल आप इसको किसी भी परम्यूटेशन कॉम्बिनेशन से देख लीजिए ऐसा हो ही नहीं सकता है कि आपका टोटल सम",
+      "source": "caption",
+      "english_text": "If you do this then it will become 17. This is not possible at all. Good. So what is meant to say is that when you divide the total sum into positive and negative, then the range of your values will come. Look very carefully at the range of this value, what is -5 to +5, what is -5 to +5, -5 to +5, what is your target, do you think this target is ever achievable, it is not achievable, you look at it with any permutation combination, it is not possible that your total sum is"
+    },
+    {
+      "start_time": 1766.72,
+      "end_time": 1800.71,
+      "text": "आपका टोटल सम अगर पांच है ना तो आपका जो इक्वेशन का रेंज आएगा वो हमेशा किसके-किस के बीच में आएगा? माइनस ऑफ़ सम से प्लस ऑफ़ सम के बीच में आएगा। ये आपकी रेंज होगी इक्वेशन की। अगर आपका टारगेट सम इससे बाहर है। इस रेंज के बाहर है। दैट इज़ इंपॉसिबल। दैट इज़ इंपॉसिबल टू कैलकुलेट एन आंसर। कहने का क्या मतलब है? अगर आपका एब्सोल्यूट ऑफ टारगेट एब्सोल्यूट ऑफ टारगेट ग्रेटर देन आपका सम है क्या ग्रेटर",
+      "source": "caption",
+      "english_text": "If your total sum is five, then the range of your equation will always fall between what? Will fall between minus of sum and plus of sum. This will be your range of equation. If your target sum is outside this. Is outside this range. That is impossible. That is impossible to calculate an answer. What does it mean to say? If your absolute off target is greater than your sum, what is greater?"
+    },
+    {
+      "start_time": 1800.72,
+      "end_time": 1832.789,
+      "text": "देन सम है इस केस में आपको आंख बंद करके जीरो रिटर्न कर देना चाहिए क्यों क्योंकि अगर ऐसा है ना इसका मतलब कि आपका सम तो कुछ है सम कुछ भी हो सकता है सम नेगेटिव हो सकता है सम पॉजिटिव हो सकता है सम अगर पॉजिटिव है मान लीजिए आपका सम जो है ना वो 10 है टोटल एरे का सम आपके जो भी इक्वेशन निकलेगी आप पॉजिटिव नेगेटिव में जो मन चाहे कर लीजिए कॉम्बिनेशन बैठा बैठा-बठा के आपका जो इक्वेशन का रेंज आएगा ना वो -10 से +10 के बीच में आएगा। अगर आपके टारगेट का एब्सोल्यूट वैल्यू मतलब कि मान",
+      "source": "caption",
+      "english_text": "In this case, you should close your eyes and return zero because if it is so, it means that your sum is something, the sum can be anything, the sum can be negative, the sum can be positive, even if it is positive, suppose your sum is 10, the sum of the total array, whatever equation you get, you can do whatever combination you want in positive negative. The range will come between -10 to +10. If the absolute value of your target means that"
+    },
+    {
+      "start_time": 1832.799,
+      "end_time": 1867.269,
+      "text": "लीजिए आपका टारगेट अगर -20 है ये भी इससे बाहर है। आपका टारगेट अगर 20 है ये भी इससे बाहर है। अगर ऐसा केस होता है आंसर निकालना इंपॉसिबल है। इस केस में आपको सीधा-सीधा रिटर्न ज़ीरो कर देना है। तो ये एक और बात है जिसका आपको ख्याल रखना पड़ेगा। तो इस क्वेश्चन में दो चीजों का ख्याल रखना है। सबसे पहले तो ये जो सम है सम प्लस टारगेट ऑड नहीं होना चाहिए। और आपका टारगेट मतलब कि आपके टारगेट का एब्सोल्यूट वैल्यू अगर बड़ा हो जा रहा है आपके सम से तो आपका टारगेट ना क्या है?",
+      "source": "caption",
+      "english_text": "Take, if your target is -20, this is also outside this. If your target is 20, this is also out of this. If such a case happens then it is impossible to find the answer. In this case you have to simply reduce the return to zero. So this is another thing that you have to take care of. So two things have to be kept in mind in this question. First of all, the even should not be even plus target odd. And your target means that if the absolute value of your target is becoming bigger than your sum then what is your target?"
+    },
+    {
+      "start_time": 1867.279,
+      "end_time": 1899.509,
+      "text": "रेंज से ही बाहर है बेटा। रेंज से बाहर है। ज्यादा दिमाग इसमें लगाने की जरूरत नहीं है। और रिटर्न ड्रॉ कर देने में ही आपकी भलाई है। तो ये ये क्वेश्चन भी खत्म हुआ। तो तीनों क्वेश्चन एक बार हम फिर करवा दे रहे हैं। फिर रिवाइज करवा दे रहे हैं। इसका फाउंडेशन क्या था? सबसेट सम। सबसे पहले क्या आया? काउंट सबसेट सम। इसमें हम लोग क्या किए? और को प्लस कर दिए सेम कोड में। खत्म हो गई बात। दूसरा क्या था? पार्टीशन करना था इक्वल सम में। इसमें हम लोग क्या पास किए? सम बाय टू पास कर दिए। आपके सबसेट सम के फंक्शन में। खत्म",
+      "source": "caption",
+      "english_text": "Son, he is out of range. Is out of range. There is no need to put much mind into it. And it is in your best interest to draw the return. So this question also ended. So we are getting all three questions done once again. Then getting it revised. What was its foundation? Subset even. What came first? Count Subset Sum. What did we do in this? And plus in the same code. The matter is over. What was the second one? Partition was to be done in equal amount. What did we pass in this? Passed the sum by two. In the function of your subset sum. finished"
+    },
+    {
+      "start_time": 1899.519,
+      "end_time": 1931.269,
+      "text": "हो गई बात। तीसरा क्या था? टारगेट सम। टारगेट सम में हम लोग क्या किए? टोटल सम प्लस टारगेट बाय टू पास कर दिए उसमें। उससे आपका आंसर आ गया। थोड़ा-थोड़ा चेक करना है। इसमें क्या चेक करना था? ऑड नंबर तो नहीं है कहीं। अगर है तो रिटर्न ज़ीरो। इसमें दो चेक करने थे। ऑड नंबर और आपका टारगेट कहीं रेंज से बाहर तो नहीं है आपके सम के। अगर ऐसा है तो रिटर्न ज़ीरो। ये दोनों चेक करके सबसेट सम में पास कर दीजिए। आपका आंसर आ जाएगा। तो ये तीनों क्वेश्चन सेम फार्मूला आपको क्या करना है?",
+      "source": "caption",
+      "english_text": "The matter is done. What was the third one? Target even. What did we do at Target Sum? Total sum plus target by two passed in that. Your answer came from him. Have to check little by little. What was to be checked in this? There is no odd number anywhere. If yes then return is zero. Two checks had to be done in this. Odd number and your target is not out of range of your even. If so then return is zero. Check both these and pass them in Subset Sum. Your answer will come. So what do you have to do with these three questions and the same formula?"
+    },
+    {
+      "start_time": 1931.279,
+      "end_time": 1954.0,
+      "text": "कंट्रोल सी कंट्रोल वी एक-एक लाइन हम बोले थे ना वादा किए थे ना एक-एक लाइन एक-एक लाइन से ज्यादा नहीं ना बदलवाए इसमें एक लाइन ये बदला था इसमें तो कुछ नहीं बदला था इसमें तो बस वो पैरामीटर जो आप पास कर रहे हैं वो बदला था एक लाइन से ज्यादा किसी में नहीं बदला है तीनों क्वेश्चन प्लीज ट्राई कीजिए और ये तीनों क्वेश्चन करके आप मान सकते हैं कि ये जो एरे सबसेट साइड का प्रॉब्लम है डीपी में उसके आप मास्टरी कर चुके हैं मिलते मिलता है",
+      "source": "caption",
+      "english_text": "Control C Control V One by one line We did not say nor promised nor did we promise each and every line Not more than one line Neither got changed in this One line was changed in this Nothing was changed in this Only the parameter which you are passing was changed Nothing has changed more than one line All three questions please try and by doing these three questions you can assume that this is the problem of array subset side, you have mastered it in DP."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

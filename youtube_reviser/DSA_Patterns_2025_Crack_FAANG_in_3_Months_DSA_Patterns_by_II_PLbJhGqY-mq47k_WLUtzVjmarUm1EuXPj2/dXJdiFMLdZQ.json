@@ -1,0 +1,534 @@
+{
+  "video_id": "dXJdiFMLdZQ",
+  "video_title": "Tree Series Ep-05: Check for Symmetrical Binary Trees | C++ | Java",
+  "video_number": 83,
+  "chunks": [
+    {
+      "start_time": 2.07,
+      "end_time": 37.03,
+      "text": "हेलो भाई। तो ये जो तीन क्वेश्चन है ना जो सेम ट्री कल हुआ था और सिमेट्रिक ट्री इनवर्ट ट्री आज होने वाला है। ये तीनों मिलके इन सारी कंपनीज में पूछा जा चुका है। तीनों मिलके इन सारी कंपनीज़ में पूछा जा चुका है। झूठ नहीं बोल रहे हैं। मेरे पास लीट कोड का एक्सटेंशन है। देखिए जो लोग भी सेम ट्री नहीं देखे हैं तो आप सेम ट्री देखने के पहले ये दोनों मत देखिए। देख सकते हैं लेकिन समझ में नहीं आएगा। मजा नहीं आएगा। प्लीज जाके सेम ट्री जल्दी से देख के आ जाइए। कल ही हुआ होगा। तो सेम ट्री तुरंत देख लीजिए। उसके बाद ये देखिए ज्यादा मजा आएगा। और ये तीनों क्वेश्चन बहुतेंट है क्योंकि देखिए तीनों क्वेश्चन इजी लेवल का है लेकिन ईजी है नहीं और ना इनको ठीक से पढ़ाया गया है। हम ये पढ़ाने से पहले स्ट्राइवर का वीडियो देख रहे थे।",
+      "source": "caption",
+      "english_text": "Hello, brother. So these are the three questions - Same Tree which happened yesterday and Symmetric Tree and Invert Tree which is going to happen today. These three together have been asked in all these companies. All three together have been asked in all these companies. Not lying. I have the Leet Code extension. Look, even those who have not seen Same Tree, then do not watch these two before watching Same Tree. Can see but will not understand. It won't be fun. Please go and see the bean tree quickly. It must have happened yesterday. So see the bean tree immediately. After that see this, it will be more fun. And these three questions are very important because see, all three questions are of easy level but they are not easy and neither have they been taught properly. We were watching Striver's video before teaching this."
+    },
+    {
+      "start_time": 37.04,
+      "end_time": 70.63,
+      "text": "तो ऑनेस्टली स्पीकिंग उनका वीडियो बहुत अच्छा लगता है। लेकिन उनके वीडियो में कुछ नहीं बताया गया। उनके वीडियो में जस्ट ये है कि ओके वी गेट टू रूट्स वी विल कंपेयर द लेफ्ट एंड द राइट राइट। नहीं वो पढ़ाने का तरीका नहीं है। वो रटवाने का तरीका है। ठीक है? तो आप वो हम भी कोड ऐसा दे सकते हैं कि लो ये कोड है। इसको रट लो। ये लो वो तरीका नहीं होता है। ठीक है? सेम ट्री पढ़ो, सिमेट्रिक ट्री पढ़ो, इनवरर्ट ट्री पढ़ो। ये तीन क्वेश्चन पढ़ने से कोई भी मिरर वाला क्वेश्चन होगा ना? कोई भी सेम ट्री या सब ट्री वाला क्वेश्चन आप सॉल्व कर पाएंगे। तो मेरी आपसे दिली ख्वाहिश है कि सेम ट्री पढ़ लीजिए। सेम ट्री एक बार देख लीजिए। फास्ट करके देख लीजिए। लेकिन सेम ट्री एक बार देख लीजिए। क्योंकि एक बार ये",
+      "source": "caption",
+      "english_text": "So honestly speaking his video looks very good. But nothing was mentioned in his video. In his video it's just that OK we get to the roots we will compare the left and the right. No, that is not the way to teach. That is the way to memorize it. Ok? So you can also give us the code like this: Here is the code. Memorize this. Well, that's not the way. Ok? Read Same Tree, Read Symmetric Tree, Read Invert Tree. After reading these three questions, there will be any mirror question, right? You will be able to solve any question involving same tree or sub tree. So I sincerely request you to read Same Tree. Take a look at the bean tree. Try it fast. But take a look at the bean tree. because once this"
+    },
+    {
+      "start_time": 70.64,
+      "end_time": 105.59,
+      "text": "समझ में आ जाएगा ना ये 10% चेंज करेंगे सिमेट्रिक बन जाएगा। उसमें 10% चेंज इनवरर्ट ट्रीट्री तो कुछ है नहीं। इनवरर्ट ट्री तो बड़ा नकली क्वेश्चन है। तो फालतू क्वेश्चन है। पता नहीं इसमें क्यों पूछा गया था। लेकिन ये तीनों बहुत बेसिक-बेसिक क्वेश्चन है। बहुत फंडामेंटल क्वेश्चन है। शुरू करते हैं जल्दी और पानी-वानी पी के बैठ जाइए। चलिए। सबसे पहले अगर हम क्वेश्चन पे आए ना, तो सबसे पहले उसी अ रूट से फॉलो करेंगे। सबसे पहले आपको हम क्वेश्चन समझाएंगे। क्या बोलना चाहता है हिंदी में वो बताएंगे। उसके बाद इंसान की तरह सोचेंगे। मतलब जब हम ड्राइंग बना के सोचते हैं तो आप कैसे सोचते हैं वैसे सोचेंगे। फिर उसका कोड लिखने का कोशिश करेंगे। फिर उसको ड्राई रन करके देखेंगे कि चल रहा है कि नहीं। किसी भी ट्री प्रॉब्लम में सेम चीज आप सोचा करिए।",
+      "source": "caption",
+      "english_text": "You will understand that if you change it by 10% it will become symmetric. There is no 10% change invert behavior in it. Invert tree is a very fake question. So it is a useless question. Don't know why this was asked. But these three are very basic questions. This is a very fundamental question. Let's start quickly and sit down after drinking water. Let go. First of all, if we come to the question, then first of all we will follow the same route. First of all we will explain the question to you. He will tell in Hindi what he wants to say. After that you will think like a human being. Meaning, when we think by drawing, we will think the way you think. Then we will try to write its code. Then we will dry run it and see whether it is working or not. Think the same thing in any tree problem."
+    },
+    {
+      "start_time": 105.6,
+      "end_time": 137.43,
+      "text": "क्वेश्चन समझो। छोटा सा ट्री बना के उस पे देख लो कि छोटा सा ट्री में क्या करना पड़ता है। जो भी करना पड़ता है उसका कोड लिख लो। ज्यादा लंबा कोड नहीं है। पांच छह लाइन का कोड होता है। और उसके बाद उस कोड को ड्राई रन करके देख लीजिए कि चल रहा है कि नहीं चल रहा है। कुछ एरर तो नहीं आ जाता है। समझे? चलिए तो जो क्वेश्चन है ना उसका नाम है सिमेट्रिक ट्री। अब सिमेट्रिक ट्री क्या होता है? हम आपको बताते हैं। आपको बोला है कि आपको एक ट्री दिया रहेगा। ऐसा करके ऐसा करके आपको एक ट्री दिया रहेगा। ठीक बात है। यहां पे है थ्री और फोर और फोर और थ्री। मान लीजिए ये आपको क्या दिया हुआ है? पेड़ एक दिया हुआ है।",
+      "source": "caption",
+      "english_text": "Understand the question. Make a small tree and see what needs to be done in the small tree. Whatever needs to be done, write code for it. Not a very long code. There is a code of five to six lines. And after that dry run that code and see whether it is working or not. Some error does not occur. Got it? Well, the name of the question is Symmetric Tree. Now what is a symmetric tree? We tell you. Told you that you will be given a tree. By doing this you will be given a tree. That's right. Here's three and four and four and three. Suppose this is what has been given to you? The tree is a given."
+    },
+    {
+      "start_time": 137.44,
+      "end_time": 170.949,
+      "text": "अच्छा। इसका रूट क्या है? इसका रूट ये है। अच्छा। अब आपको क्या बोला हुआ है कि अगर इसमें हम थोड़ा सा गलती कर दिए। इसको हम थोड़ा अच्छे से बना। हां। आपको क्या बोला हुआ है कि अगर पहले रुकिए हमको इसको हां बोला है ना ट्री के बीच से एक लाइन खींचो ट्री के वर्टिकल बीच से एक लाइन खींचो बीच से एक लाइन खींचने का मतलब यहां से इसको रूट को एकदम हाफ में चीरते हुए एक लाइन खींची यहां पे ये देखो एक लाइन खींचे ना यहां पे एक लाइन खींच दी मतलब बीच से एकदम एकदम खटाक से जो ट्री का रूट है ना उसको बीच में से काटते हुए एक",
+      "source": "caption",
+      "english_text": "Okay. What is its route? Its route is this. Good. Now what have you been told that if we make a little mistake in this? Let us make it a little better. Yes. What has been said to you that if first wait, we have been told yes or no, draw a line from the middle of the tree, draw a line from the vertical middle of the tree, draw a line from the middle, it means that from here, slicing its root in half, draw a line here, look here, draw a line here, that is, draw a line from the middle, which is the root of the tree, from the middle, or cut it from the middle."
+    },
+    {
+      "start_time": 170.959,
+      "end_time": 202.229,
+      "text": "लाइन खींचो अच्छा ये जो लाइन है ना ये जो ब्लू लाइन है ये क्या है आपका मिरर ये क्या है आपका मिरर मतलब आईना ये मिरर मिरर है। अब आपको बताना है अब क्योंकि आप ट्री को बीच में से काट दिए तो ट्री का दो हाफ बन गया। अच्छा तो दो हाफ कौन सा बन गया? एक हाफ ये बन गया है। ये क्या बन गया? ये पार्ट वन बन गया है। और एक और हाफ बन गया है जो कि राइट पार्ट में भी है। जो कि ये वाला पार्ट है। पार्ट टू। तो दो हाफ। आपको बताना है ये दोनों हाफ एक दूसरे का मिरर इमेज है कि नहीं?",
+      "source": "caption",
+      "english_text": "Draw the line, okay, this is the line, this is the blue line, this is your mirror, this is your mirror, meaning mirror, this is mirror mirror. Now you have to tell me, because if you cut the tree from the middle, the tree becomes two halves. Okay, so which two halves have become? One half has been made. What has become of this? This has become part one. And another half has been formed which is also in the right part. Which is this part. Part two. So two halves. You want to tell whether these two halves are mirror images of each other or not?"
+    },
+    {
+      "start_time": 202.239,
+      "end_time": 229.43,
+      "text": "क्या मिरर इमेज है कि नहीं? पार्ट वन और पार्ट टू एक दूसरे का मिरर इमेज है कि नहीं? यही क्वेश्चन को बोला हुआ है कि बताओ ट्री सिमिट्रिक है कि नहीं? ट्री इज अ मिरर ऑफ इटसेल्फ। मतलब कि जब आप बीच में से एक लाइन खींचते हैं। जब आप देखिए रूट तो एक ही था। रूट को तो आप आधा-आधा करके काट दिए। मतलब रूट तो इधर एक कट गया। इधर एक कट गया। तो ठीक है। अब क्योंकि ट्री का दो पार्ट बन जाएगा। एक राइट पार्ट बन जाएगा। एक लेफ्ट पार्ट बन जाएगा। आपको बताना है दोनों एक दूसरे का मिरर इमेज है कि नहीं? क्या है? मिरर इमेज है कि नहीं?",
+      "source": "caption",
+      "english_text": "Is it a mirror image or not? Are Part One and Part Two mirror images of each other or not? This question is asked to tell whether the tree is symmetric or not? Tree is a mirror of itself. Meaning that when you draw a line through the middle. When you see, there was only one route. You cut the root in half. Meaning the route got cut here and there. Here one got cut. Well then. Now because the tree will be made into two parts. A right part will be formed. A left part will be formed. You want to tell whether both are mirror images of each other or not? What is? Is it a mirror image or not?"
+    },
+    {
+      "start_time": 229.44,
+      "end_time": 261.909,
+      "text": "अब मिरर इमेज कैसे निकाला जाता है? वो भी आपको बताते हैं। तो देखिए मिरर क्या होता है ना? मिरर में क्या होता है कि मान लीजिए अ ट्री को जब आप मिरर में देखते हैं ना तो बहुत इंटरेस्टिंग चीज होता है। क्या इंटरेस्टिंग चीज है? हम बताते हैं। मान लीजिए ये मिरर है। क्या है? ये एक मिरर है। मिरर में क्या होता है? अगर अगर आप यहां पे खड़े होंगे अगर आप खड़े होंगे मान लीजिए 10 मीटर की दूरी पे। तो आपका जो मिरर का रिफ्लेक्शन होगा ना आपका जो मिरर वाला अप्रत्युष होगा वो भी 10 मीटर पे ही खड़ा होगा। वो भी मिरर से 10 मीटर की ही दूरी पे होगा। ये पढ़े होंगे। उम्मीद कर रहे हैं कि फिजिक्स सब लोग पढ़ के आए हैं",
+      "source": "caption",
+      "english_text": "Now how is the mirror image extracted? They also tell you. So see what a mirror is? What happens in the mirror? Suppose, when you look at a tree in the mirror, it is a very interesting thing. What is interesting thing? We tell. Suppose this is a mirror. What is? This is a mirror. What happens in the mirror? If you stand here, if you stand, let's say at a distance of 10 meters. So neither the reflection of your mirror nor the mirror of yours will also stand at 10 meters only. That too will be at a distance of only 10 meters from the mirror. Must have read these. I hope everyone has studied physics."
+    },
+    {
+      "start_time": 261.919,
+      "end_time": 290.469,
+      "text": "क्लास एट नाइंथ का। तो अगर ये रियल वाला प्रत्युष यहां पे 10 मीटर की दूरी से खड़ा है मिरर से तो प्रत्युष का जो रिफ्लेक्शन होगा ना वो भी 10 मीटर की दूरी पे ही होगा। अगर प्रत्युष 2 मीटर की दूरी पे खड़ा होता यहां पे तो इसका जो रिफ्लेक्शन था वो भी 2 मीटर की दूरी पे ही होता। ऐसा नहीं होगा कि आप मिरर से 2 मीटर दूर है। आपका परछाई मिरर से 20 मीटर दूर है। ये नहीं होता। ये फिजिक्स होता है। ठीक है? इसीलिए जब आप ट्री पे मिरर का यूज़ करते हैं ना तो बड़ा इंटरेस्टिंग चीज होता है। बताते हैं क्या होता है। देखिए मान लीजिए एक छोटा सा ट्री है। एक छोटा सा ट्री है।",
+      "source": "caption",
+      "english_text": "Of class eight. So if this real Pratyush is standing here at a distance of 10 meters from the mirror, then the reflection of Pratyush will also be at a distance of 10 meters. If Pratyush had stood at a distance of 2 meters here, then its reflection would also have been at a distance of 2 meters only. It will not happen that you are 2 meters away from the mirror. Your reflection is 20 meters away from the mirror. This doesn't happen. This is physics. Ok? That's why when you use a mirror on a tree, it is a very interesting thing. Let us tell you what happens. Look, suppose there is a small tree. There is a small tree."
+    },
+    {
+      "start_time": 290.479,
+      "end_time": 324.87,
+      "text": "ये है। एक छोटा सा ट्री है। ये एक छोटा सा ट्री है। बीच में हम एक मिरर रख देते हैं। बीच में क्या रखते हैं? एक मिरर। यहां पे एक मिरर रख दिए। लीजिए यहां पे एक मिरर हो गया। अब आपको इस ट्री का रिफ्लेक्शन बनाना है। तो देखिए अब मान लीजिए इसमें हम नंबरिंग कर देते हैं। इसमें क्या? वन टू थ्री ये वाला ट्री है। बीच का मिरर है। आपको इसका मिरर इमेज मतलब इसका परछाई बनाना है। तो हम क्या बोले? ट्री में मिरर में क्या फिजिक्स होता है? प्रत्युष जहां पे खड़ा होगा ना प्रत्युष का परछाई उतनी ही दूर पे खड़ा होगा। मिरर से उतनी ही दूर पे खड़ा होगा। आइए बनाते हैं। मान लेते",
+      "source": "caption",
+      "english_text": "This is. There is a small tree. This is a small tree. We place a mirror in the middle. What do you put in the middle? A mirror. Placed a mirror here. Look, there is a mirror here. Now you have to create a reflection of this tree. So see, now suppose we number it. into what? One Two Three This one is a tree. There is a mirror in the middle. You have to make its mirror image i.e. its shadow. So what should we say? What physics happens in the mirror in the tree? Wherever Pratyush stands, Pratyush's shadow will stand at the same distance. Will stand at the same distance from the mirror. Let's make it. accept it"
+    },
+    {
+      "start_time": 324.88,
+      "end_time": 352.23,
+      "text": "हैं कि ये जो वन है ना ये कितनी दूरी पे खड़ा है? मान लेते हैं कि ये 10 मीटर की दूरी पे खड़ा है। तो वन का जो परछाई होगा वो भी 10 मीटर की दूरी पे होगा। तो इसको 10 मीटर की दूरी पे बना देते हैं। इसको इतना हो जाए। हां, ठीक है। इसको बना देते हैं। ये क्या है? वन। ये भी क्या है? 10 मीटर की दूरी पे। वेरी गुड। अब मानिए मानिए कि ये जो टू है ये टू वन से थोड़ी दूरी पे है। टू वन 10 मीटर है तो टू 10 से थोड़ा ज्यादा ही लग रहा है। मान लेते हैं।",
+      "source": "caption",
+      "english_text": "At what distance does this forest stand? Let us assume that he is standing at a distance of 10 meters. So the shadow of the forest will also be at a distance of 10 meters. So let's make it at a distance of 10 meters. Let this happen. Yes, ok. Let's make this. What is this? Forest. What is this also? At a distance of 10 meters. very good. Now believe that this two is at a short distance from two one. Two one is 10 meters so two seems to be a little more than 10. Let's accept it."
+    },
+    {
+      "start_time": 352.24,
+      "end_time": 381.35,
+      "text": "मान लेते हैं। मान लेते हैं कि टू जो है ना टू जो है वो कितनी दूरी पे है? टू। मान लीजिए कि 12 मीटर की दूरी पे है। टू का परछाई भी जो होगा वो 12 मीटर की दूरी पे ही होगा। टू का परछाई भी कहां होगा? 12 मीटर की दूरी पे ही होगा मिरर से। तो 12 का परछाई बना लीजिए 2 मीटर की दूरी पे। इसको 12 बोल दीजिए। और यहां पे हम लोग अपना क्या बना लेते हैं? टू। यहां पे क्या बना लिए? टू। ठीक बात है। थ्री के लिए सेम काम करिए। मान लेते हैं अब थ्री। देखिए। थ्री मान लेते हैं कि 5 मीटर की दूरी पे है।",
+      "source": "caption",
+      "english_text": "Let's accept it. Let us assume that the two are at what distance? To. Suppose it is at a distance of 12 meters. The shadow of 2 will also be at a distance of 12 meters only. Where will Too's shadow be? It will be at a distance of 12 meters from the mirror only. So create a shadow of 12 at a distance of 2 meters. Call it 12. And what do we do here? To. What did you make here? To. That's right. Do the same thing for three. Now let's say three. See. Let's say three are at a distance of 5 meters."
+    },
+    {
+      "start_time": 381.36,
+      "end_time": 415.11,
+      "text": "मान लेते हैं कि थ्री 5 मीटर की दूरी पे है। थ्री का परछाई भी 5 मीटर की दूरी पे होगा। थ्री का परछाई भी 5 मीटर की दूरी पे ही होगा। 5 मीटर की दूरी पे ही होगा। यह क्या बन गया? थ्री कनेक्ट कर दीजिए क्योंकि यह ट्री है क्योंकि यह ट्री है तो डंडे तो कनेक्ट आपको करने पड़ेंगे। डंडे कनेक्ट करने पड़ेंगे। बस बस बना दिए। इसमें हम कुछ रॉकेट साइंस नहीं किया ना। इसमें हम वही बताएं कि वन अगर 10 मीटर है तो दूसरा वन भी 10 मीटर होगा। टू अगर 12 मीटर है दूसरा टू भी 12 मीटर होगा। और थ्री अगर पांच है तो दूसरा थ्री भी 5 ही मीटर का होगा। अब बहुत गौर से देखिए। बहुत गौर से देखिए। वन तो रूट था। वन तो रूट",
+      "source": "caption",
+      "english_text": "Let us assume that the three are at a distance of 5 meters. The shadow of Three will also be at a distance of 5 meters. The shadow of Three will also be at a distance of 5 meters only. Will be at a distance of 5 meters only. What has it become? Connect the three because it is a tree. Because it is a tree, you will have to connect the poles. The poles will have to be connected. Just made it. We didn't do any rocket science in this, right? In this we tell that if the forest is 10 meters then the other forest will also be 10 meters. If two is 12 meters then the second two will also be 12 meters. And if three is five then the second three will also be of 5 metres. Now look very carefully. Look very carefully. One was the route. one to root"
+    },
+    {
+      "start_time": 415.12,
+      "end_time": 449.749,
+      "text": "था। वन यहां भी रूट है। वन यहां भी रूट है। तो कोई चेंज नहीं हुआ। कोई चेंज नहीं हुआ। वेरी गुड। लेकिन टू देखिए टू वन का क्या था? टू वन का लेफ्ट चाइल्ड था। मिरर में टू क्या हो गया है? मिरर में साला राइट चाइल्ड बन गया है। मिरर में टू राइट चाइल्ड बन गया है। थ्री थ्री असली दुनिया में राइट चाइल्ड था। लेकिन मिरर की वर्ल्ड में थ्री वन का लेफ्ट चाइल्ड बन गया है। ये क्यों हुआ? ये इसीलिए हुआ क्योंकि थ्री अरे क्या हो गया?",
+      "source": "caption",
+      "english_text": "Was. Forest is the route here also. Forest is the route here also. So there was no change. There was no change. very good. But see what happened to two one? Was the left child of two and one. What has happened to the mirror? The bastard in the mirror has become the right child. The right child has become in the mirror. Three Three was the right child in the real world. But in the world of Mirror, Three has become the left child of One. Why did this happen? This happened because three hey what happened?"
+    },
+    {
+      "start_time": 449.759,
+      "end_time": 484.309,
+      "text": "हां ये इसीलिए हुआ क्योंकि ना 3 5 मीटर था मिरर वाला 3 5 मीटर और टू बहुत दूर था 12 मीटर तो मिरर वाला टू भी बहुत दूर चला गया 12 मीटर पे और वन 10 मीटर था तो वन अपनी ओरिजिनल पोजीशन पे रहा तो क्या हुआ कि पोजीशन फ्लिप हो गया रूट तो ऐसा ही था रूट तो ये था मतलब ये तो यहां था ये भी यहीं है लेकिन जो लेफ्ट चाइल्ड है वो राइट में चला गया और जो राइट चाइल्ड है वो लेफ्ट में आ गया ये आम दुनिया में भी होता है अगर आप अपना मिरर में देख रहे हैं आप अपना राइट हैंड ऊपर करेंगे तो आपका मिरर वाला अपना लेफ्ट हैंड ऊपर करेगा। अगर आप अपना लेफ्ट हैंड ऊपर करेंगे तो आपका मिरर का",
+      "source": "caption",
+      "english_text": "Yes, this happened because the one with the mirror was 3.5 meters, the one with the mirror was 3.5 meters and the two were too far away, the two with the mirror were 12 meters too, the two with the mirror also went too far, at 12 meters and the one was 10 meters, so the one remained in its original position, then what happened that the position was flipped, the root was like this, the root was this, meaning this was here, this is also here but the one which is left child went to the right and the one which is right child. He turned to the left. This also happens in the common world. If you are looking at yourself in the mirror, you will raise your right hand and the person in the mirror will raise his left hand. If you raise your left hand, your mirror"
+    },
+    {
+      "start_time": 484.319,
+      "end_time": 516.469,
+      "text": "इमेज अपना क्या है? राइट हैंड ऊपर करेगा। तो ये रियल दुनिया में भी होता है। ट्री में भी होता है। तो ये हम आपको मिरर का समझा दिए छोटा सा कि मिरर ऐसे काम करता है ट्री में। मतलब कि अगर आप पूछना चाहते है ना कि दो ट्री एक दूसरे का मिरर इमेज है कि नहीं? तो आपको क्या कंपेयर करना है? आपको इसके लेफ्ट चाइल्ड को मिरर इमेज के राइट चाइल्ड से कंपेयर करना पड़ेगा। किस से? राइट चाइल्ड से कंपेयर करना पड़ेगा। तो ये समझ में आता है कि अगर हम पूछते हैं कि क्या ये दोनों ट्री एक दूसरे का मिरर इमेज है? तो आप सबसे पहले तो वन को कंपेयर करेंगे। सबसे पहले तो आप वन को कंपेयर करेंगे। आपको लगेगा कि हां ठीक है। उसके",
+      "source": "caption",
+      "english_text": "What is your image? Will raise the right hand. So this happens in the real world too. It also happens in trees. So let us explain to you a little bit about the mirror and this is how the mirror works in the tree. Meaning that if you want to ask whether two trees are mirror images of each other or not? So what do you have to compare? You have to compare its left child with the right child of the mirror image. With whom? Will have to compare with the right child. So it makes sense that if we ask whether these two trees are mirror images of each other? So first of all you will compare one. First of all you will compare one. You will feel that yes, it is okay. his"
+    },
+    {
+      "start_time": 516.479,
+      "end_time": 551.43,
+      "text": "बाद आप वन के लेफ्ट चाइल्ड को इस मिरर इमेज के राइट चाइल्ड से कंपेयर करेंगे और रियल वन के लेफ्ट राइट चाइल्ड को मिरर वन के लेफ्ट चाइल्ड से कंपेयर करेंगे। तो ये बात समझ में सबको आती है या नहीं आती है? फिर चलिए। अब क्वेश्चन में वापस चलते हैं। अब आपको क्वेश्चन में दिया हुआ क्या है? ये समझाना इसीलिए बहुत जरूरी था ना क्योंकि नहीं समझाया हुआ कहीं पे। अ हर वीडियो जो हम सिमिट्रिक ट्रिक देखे उसमें यही बोल दिया गया कि हां मिरर इमेज में ऐसा होता है लेफ्ट को राइट से अगर नहीं वैसा नहीं होता है ना समझना पड़े क्यों कर रहे हो? ये पूछेगा इंटरव्यू कि क्यों कर रहे हो भाई? तो ये आपको समझाना पड़ सकता है एग्जाम में। चलो अब आते हैं क्वेश्चन पे। अब आपको क्या दिया हुआ है? एक ट्री",
+      "source": "caption",
+      "english_text": "Then you will compare the left child of one with the right child of this mirror image and the left right child of the real one with the left child of the mirror one. So does everyone understand this or not? Then let's go. Now let's go back to the question. Now what is given to you in the question? It was very important to explain this because it was not explained anywhere. In every video that we watched on symmetrical trick, it was said that yes, it happens in mirror image, left is better than right, if not then it is not the same, you have to understand why are you doing it? He will ask why are you doing the interview, brother? So you may have to explain this in the exam. Let us now come to the question. What has been given to you now? a tree"
+    },
+    {
+      "start_time": 551.44,
+      "end_time": 585.509,
+      "text": "दिया हुआ है। ये ऐसा ट्री है। ये कैसा ट्री है? ऐसा और यहां पे थ्री है। यहां पे फोर है। और यहां पे थ्री है। ये आपको ट्री दिया हुआ है। आपको क्या बोला हुआ है? अगर हम इस ट्री को बीच से काटें बीच से काटें और बीच में मिरर हो जाए। ग्रीन वाला मिरर हो जाए तो क्या ये दूसरे दोनों क्या ये दोनों पार्ट मिरर इमेज है एक दूसरे का? क्या ये दोनों पार्ट सिमिट्रिक है या मिरर इमेज है? आपको ट्रू या फॉल्स बताना है। तो ये तो वैसा ही क्वेश्चन हो गया ना कि सबसे पहले तो आप एक आपके पास एक ट्री था। ये रूट था। आप इसको बीच से काटे तो ट्री का",
+      "source": "caption",
+      "english_text": "Is given. This is such a tree. What kind of tree is this? So and here's three. There is pay four here. And here's three. This tree has been given to you. What have you been told? If we cut this tree in the middle and we get a mirror in the middle. If the green one becomes a mirror, are these two parts mirror images of each other? Are these two parts symmetric or mirror images? You have to tell True or False. So this is the same question, first of all you had a tree. This was the route. If you cut it from the middle then the tree will"
+    },
+    {
+      "start_time": 585.519,
+      "end_time": 619.67,
+      "text": "दो पार्ट बन गया। एक में इसका लेफ्ट वाला आ गया होगा और एक पार्ट का रूट इसका राइट वाला आ गया होगा। ये सिमिलर वैसा क्वेश्चन है कि आपको इन दोनों ट्री को देखना है। ये दोनों अलग-अलग ट्री बना लीजिए और इन दोनों ट्री को आपको चेक करना है कि क्या ये मिरर इमेज है कि नहीं? क्या ये मिरर इमेज है कि नहीं? सेम जो क्वेश्चन हम लोग ऊपर किए थे। सेम हम लोग क्या पूछे थे कि भैया ये एक ट्री ये रहा। एक ट्री ये रहा। बताओ ये दोनों मिरर इमेज है कि नहीं? ये भी क्वेश्चन वही है ना कि एक ट्री को बीच से काट दो। मेन वाले ट्री को तो बीच से काट दो। तो रूट तो बीच से कट गया। अब दो ट्री बन गया। एक राइट साइड पे जितने भी थे जितने भी लोग लेफ्ट साइड पे होंगे वो एक",
+      "source": "caption",
+      "english_text": "Made into two parts. In one part, its left part would have appeared and in one part, its right side would have appeared. This is such a similar question that you have to look at both these trees. Make these two separate trees and you have to check both these trees whether they are mirror images or not? Is this a mirror image or not? Same questions as we asked above. What did we ask, brother, this is a tree. Here is a tree. Tell me, are these two mirror images or not? This question is also the same, cut a tree from the middle. Cut the main tree from the middle. So the route got cut from the middle. Now two trees have been formed. Whatever number of people were on the right side, whatever number of people will be on the left side, that one"
+    },
+    {
+      "start_time": 619.68,
+      "end_time": 654.15,
+      "text": "पार्ट बन गया। जितने भी लोग रूट के राइट साइड पे थे वो एक पार्ट बन गए। आपसे पूछा है कि क्या ये दोनों एक दूसरे का मिरर इमेज है कि नहीं है? क्या ये दोनों एक दूसरे का मिरर इमेज है कि नहीं? यही क्वेश्चन बॉयल डाउन हो के आपको क्वेश्चन में यही करना है। तो अब चलिए आगे बढ़ते हैं। अब आ जाते हैं क्वेश्चन पे। तो आपको क्या करना है? आपको सबसे पहले तो जो ट्री दिया हुआ है ना उसका लेफ्ट रूट का आपको मान लीजिए रूट दिया हुआ है। आपको क्या दिया रहेगा? रूट। आपको दो ट्री बना लेना है। कैसा? पहला जो होगा वो रूट लेफ्ट मतलब कि अगर आपको वन दिया हो तो टू को आप एक रूट ले सकते हैं कि टू ना जो पार्ट लेफ्ट",
+      "source": "caption",
+      "english_text": "The part is done. All the people who were on the right side of the route became a part. Have you asked whether these two are mirror images of each other or not? Are these two mirror images of each other or not? This is the question you have to boil down and do this in the question. So now let's move ahead. Now let's come to the question. So what do you have to do? First of all, assume that the left root of the tree is given to you. What will you be given? Root. You have to make two trees. How? The first one will be the root left, meaning that if you are given one, then you can take one root of two or the part left."
+    },
+    {
+      "start_time": 654.16,
+      "end_time": 685.67,
+      "text": "वाले पूरा पार्ट है ना टू उसका रूट है। क्योंकि वन तो बीच से कट गया। बचा क्या? टू और टू। ये वाला टू और ये वाला टू। तो एक रूट का लेफ्ट बन गया और एक रूट का राइट। तो ये दोनों आपके पास ट्रू है। रूट है। तो आप ऐसा अस्यूम कर सकते हैं। ऐसा प्रिटेंड कर सकते हैं ना कि आपको एक ट्री नहीं दिया। आपको दो ट्री दिया हुआ है। कितना? आपको दो ट्री दिया हुआ है। समझे? अब अब अगर आपको दो ट्री दिया हुआ है तो अब हम लोग सोचना शुरू करते हैं कि जब आपको हम एक ड्राइंग बना के दिखाते हैं तो आप उसमें क्या करते हैं? फॉर एग्जांपल दो ट्री अगर आपको ऐसा दिया हो एक टू है एक थ्री है और",
+      "source": "caption",
+      "english_text": "The full part is na to its root. Because the forest was cut from the middle. What is left? Two and two. This one is two and this one is two. So one route became left and one route became right. So you have both of these true. Is the root. So you can assume so. You can pretend that you were not given a tree. You have been given two trees. How much? You have been given two trees. Got it? Now if you have been given two trees, then we start thinking that when we make a drawing and show it to you, what do you do in it? For example, if you are given two trees, one is two, one is three and"
+    },
+    {
+      "start_time": 685.68,
+      "end_time": 719.99,
+      "text": "एक फोर है और एक दूसरा ट्री आपका टू है यहां पे फोर है और यहां पे थ्री है आपको ये आपका 1 है और ये आपका 2 है। आपको यही दिया हुआ रहेगा ना। अब आपको बताना है कि दोनों एक दूसरे का मिरर इमेज है कि नहीं। तो इसमें आप क्या करेंगे? बहुत छोटा सा ट्री है। सबसे पहले तो सबसे पहले तो आप क्या करेंगे? सबसे पहले तो देखेंगे कि अगर अब अब याद कीजिए हम लोग सेम ट्री पढ़ चुके हैं। हम लोग सेम ट्री पढ़ चुके हैं। तो सबसे पहला तो आप क्या करेंगे ना अगर दोनों नल है। अगर दोनों नल है मतलब कि 1 भी नल है। 2 भी नल है। मतलब 1 में भी कुछ नहीं",
+      "source": "caption",
+      "english_text": "There is a four and another tree is your two, here is a four and here is a three, this is your 1 and this is your 2. This will be given to you, right? Now you have to tell whether both are mirror images of each other or not. So what will you do in this? It is a very small tree. First of all, what will you do? First of all we will see that if you remember now we have read the bean tree. We have read The Same Tree. So first of all what will you do if both are null. If both are null it means that 1 is also null. 2 is also a tap. meaning nothing even in 1"
+    },
+    {
+      "start_time": 720.0,
+      "end_time": 752.79,
+      "text": "है और 2 में भी कुछ नहीं है। तो ठीक है। दोनों मिरर इमेज है। खाली चीज एक दूसरे का मिरर इमेज है कि नहीं? हां बिल्कुल खाली चीज मिरर इमेज है। दोनों नल है। ओके? कुछ और करने की जरूरत नहीं है। दोनों नल का मतलब अरे 1 भी नल और 2 भी नल। तो क्या करना है? कुछ नहीं करना है। वेरी गुड। दूसरा अगर दोनों में से एक नल है। अगर दोनों में से एक नल है तो तो बिल्कुल नहीं है। तो बिल्कुल नहीं है। तो फॉल्स। क्यों? हम ये क्यों बोल रहे हैं? आपको पता करना है कि दोनों ट्री एक दूसरे का मिरर इमेज है कि नहीं। आपको कोई बोला कि भैया 1 नल है और 2 में कोई सर्कल है। तो सर्कल का मिरर इमेज कुछ नहीं तो हो नहीं सकता है।",
+      "source": "caption",
+      "english_text": "And there is nothing in 2 also. Well then. Both are mirror images. Are the empty objects mirror images of each other or not? Yes the absolutely empty thing is a mirror image. Both are taps. Ok? There is no need to do anything else. Both taps means 1 tap and 2 taps. So what to do? nothing to be done. very good. Second if one of the two is null. If one of the two is a tap then it is absolutely not. So not at all. So falls. Why? Why are we saying this? You have to find out whether both the trees are mirror images of each other or not. Someone told you that brother, 1 is a tap and 2 has a circle. तो सर्कल का मिरर इमेज कुछ नहीं तो हो नहीं सकता है।"
+    },
+    {
+      "start_time": 752.8,
+      "end_time": 786.15,
+      "text": "कुछ नहीं का मिरर इमेज कोई सर्कल तो हो नहीं सकता है। तो ये तो तो बहुत वाजिब बात है कि एक जगह कुछ है ही नहीं। और एक जगह कुछ ना कुछ तो है। तो आप बोल सकते हैं कि नहीं दोनों एक दूसरे का मिरर इमेज नहीं है। बिल्कुल नहीं हो सकता है। तो दोनों फॉल्स। तीसरा पॉइंट आप क्या करेंगे? तीसरा पॉइंट आप दोनों का वैल्यू पता करेंगे। अब मान लीजिए यहां पे 1 में टू है। 2 में 20 है। तो क्या टू वाला सर्कल 20 वाले का मिरर इमेज हो सकता है? नहीं। क्योंकि ऊपर देखिए याद कीजिए मिरर वाला ड्राइंग हम लोग बनाए थे। ये जो वन था ये ये बनता था। यही होता था ना मिरर इमेज। अब मान लीजिए यहां पे वन है और यहां पे 10 है। तो क्या आप",
+      "source": "caption",
+      "english_text": "कुछ नहीं का मिरर इमेज कोई सर्कल तो हो नहीं सकता है। तो ये तो तो बहुत वाजिब बात है कि एक जगह कुछ है ही नहीं। और एक जगह कुछ ना कुछ तो है। तो आप बोल सकते हैं कि नहीं दोनों एक दूसरे का मिरर इमेज नहीं है। बिल्कुल नहीं हो सकता है। तो दोनों फॉल्स। तीसरा पॉइंट आप क्या करेंगे? तीसरा पॉइंट आप दोनों का वैल्यू पता करेंगे। अब मान लीजिए यहां पे 1 में टू है। 2 में 20 है। तो क्या टू वाला सर्कल 20 वाले का मिरर इमेज हो सकता है? No. क्योंकि ऊपर देखिए याद कीजिए मिरर वाला ड्राइंग हम लोग बनाए थे। ये जो वन था ये ये बनता था। यही होता था ना मिरर इमेज। अब मान लीजिए यहां पे वन है और यहां पे 10 है। so are you"
+    },
+    {
+      "start_time": 786.16,
+      "end_time": 819.99,
+      "text": "बोल सकते हैं कि यही मिरर इमेज एक दूसरे का परफेक्ट बन जाएगा? नहीं। वैल्यू भी तो सेम होना चाहिए। वैल्यू भी तो सेम होना चाहिए। अगर यहां वन है और यहां वन है। जब आप मिरर में इसको करेंगे जब आप इस ट्री का मिरर इमेज निकालेंगे तो हां इधर-उधर पोजीशन सर्कल का हो सकता है। लेकिन सर्कल का वैल्यू थोड़ी बदल रहा है। ये वन था तो ये यहां जा के वन ही बन रहा है ना। ये जो टू था तो ये यहां जा के टू ही बन रहा है। ये थ्री था तो ये यहां जाके थ्री ही बन रहा है। ऐसा तो नहीं कि वैल्यू बदल जा रहा है। तो सबसे पहले तो हम लोग देखेंगे कि दोनों 1 और 2 का वैल्यू भी सेम होना चाहिए। तो अगर अगर वैल्यू सेम नहीं है।",
+      "source": "caption",
+      "english_text": "बोल सकते हैं कि यही मिरर इमेज एक दूसरे का परफेक्ट बन जाएगा? No. वैल्यू भी तो सेम होना चाहिए। वैल्यू भी तो सेम होना चाहिए। अगर यहां वन है और यहां वन है। जब आप मिरर में इसको करेंगे जब आप इस ट्री का मिरर इमेज निकालेंगे तो हां इधर-उधर पोजीशन सर्कल का हो सकता है। लेकिन सर्कल का वैल्यू थोड़ी बदल रहा है। ये वन था तो ये यहां जा के वन ही बन रहा है ना। ये जो टू था तो ये यहां जा के टू ही बन रहा है। ये थ्री था तो ये यहां जाके थ्री ही बन रहा है। ऐसा तो नहीं कि वैल्यू बदल जा रहा है। तो सबसे पहले तो हम लोग देखेंगे कि दोनों 1 और 2 का वैल्यू भी सेम होना चाहिए। तो अगर अगर वैल्यू सेम नहीं है।"
+    },
+    {
+      "start_time": 820.0,
+      "end_time": 853.99,
+      "text": "अगर दोनों का रूट दोनों अगर 1 और 2 2 का वैल्यू सेम नहीं है। वैल्यू सेम नहीं है। सेम नहीं है तो फॉल्स नहीं हो सकता है मिरर इमेज। आपको चेक करके बताना है कि ये दोनों ट्री मिरर इमेज है कि नहीं। मतलब कि एक तरीके से ये पूछा जा रहा है कि 1 वाले ट्री को जब आप मिरर में देखेंगे तो क्या आपको ये वाला ट्री मिलेगा? तो अगर वैल्यू डिफरेंट है यहां पे 20 है। यहां पे टू है तो बिल्कुल नहीं मिलेगा। तो वेरी गुड। अब एक बार जब आप तीनों चेक कर लेते हैं। एक बार आप तीनों चेक रूट पे कर लेते हैं। अब क्या चेक करेंगे आप? अब क्या आपको देखना",
+      "source": "caption",
+      "english_text": "If the root of both is if the value of 1 and 2 is not the same. The value is not the same. If it is not the same then it cannot be a false mirror image. You have to check and tell whether these two trees are mirror images or not. Meaning that in a way it is being asked that when you look at the 1st tree in the mirror, will you get this 1st tree? So if the value is different here it is 20. If there is pay here then you will not get it at all. So very good. Now once you have checked all three. Once you do all three checks on the route. What will you check now? now what do you want to see"
+    },
+    {
+      "start_time": 854.0,
+      "end_time": 879.99,
+      "text": "पड़ेगा? अब बहुत गौर से देखिए। ये वाला सर्कल का काम हो चुका है। ये आप इधर-उधर मिला के देख लीजिए कि दोनों नल नहीं है। एक भी नल नहीं है। वैल्यू भी सेम है। वेरी गुड। लेकिन इनके बच्चे भी तो हैं। इनके बच्चे भी तो हैं। अब याद कीजिए याद कीजिए मिरर में। इसीलिए हम आईना बनाए थे। ये सही हो गया। अब वन का जो रियल लाइफ में लेफ्ट चाइल्ड है वो मिरर वर्ल्ड में कौन सा चाइल्ड होने वाला है? राइट चाइल्ड। राइट चाइल्ड। सेम ट्री में हम लोग क्या किए थे?",
+      "source": "caption",
+      "english_text": "Will it cost? Now look very carefully. This circle is done. You mix it here and there and see that both are not taps. There is not a single tap. Value is also same. very good. But they also have children. They also have children. Now remember, remember in the mirror. That's why we made mirrors. This got it right. Now, which child is going to be the one's left child in real life in the mirror world? Right Child. Right Child. What did we do in the bean tree?"
+    },
+    {
+      "start_time": 880.0,
+      "end_time": 911.75,
+      "text": "एक बार रूट का सब कुछ हो जाता था ना। तो उसके बाद उसी फंक्शन को 1 के लेफ्ट और 2 के लेफ्ट के लिए कॉल कर देते थे। क्योंकि वहां तो सेम ट्री था। सेम होना चाहिए था। यहां पे सेम नहीं यहां पे मिरर इमेज होना चाहिए। तो जो रियल लाइफ में ये रूट वन है रियल लाइफ में जो इसका लेफ्ट चाइल्ड है वो मिरर वर्ल्ड में राइट चाइल्ड के बराबर होना चाहिए। और रियल लाइफ में जो इसका राइट चाइल्ड है वो मिरर वर्ल्ड के लेफ्ट चाइल्ड के बराबर होना चाहिए। तो बस उल्टा होना चाहिए। उल्टा सेम यहां पे देखिए अगर हम बोलें कि भैया 1 और 2 का काम हो चुका",
+      "source": "caption",
+      "english_text": "Once upon a time, everything was done for Root. So after that the same function was called for 1's left and 2's left. Because there was a bean tree there. Should have been beans. It should not be the same but it should be a mirror image. So, this is root one in real life and its left child in real life should be equal to the right child in the mirror world. And its right child in real life should be equal to the left child of the mirror world. So it should be just the opposite. On the contrary, see the same thing here if we say that brother, the work of 1 and 2 has been done."
+    },
+    {
+      "start_time": 911.76,
+      "end_time": 938.23,
+      "text": "है। ये तीनों पॉइंट वाजिब है। अब जो इसका लेफ्ट चाइल्ड है जो इसका लेफ्ट चाइल्ड जो कि थ्री है वो 2 के राइट चाइल्ड से मैच करना चाहिए। और जो 1 का राइट चाइल्ड है वो 2 के लेफ्ट चाइल्ड से मैच करना चाहिए। यही एक छोटा सा ट्विस्ट है। और यही एक छोटा सा डिफरेंस है सेम ट्री और सिमेट्रिक ट्री में। फिर से समझिए। सेम ट्री में सेम होता था। सेम ट्री में यहां तक तो सेम होता था।",
+      "source": "caption",
+      "english_text": "Is. All three points are valid. Now its left child, which is its left child, which is three, should match the right child of 2. And the right child of 1 must match the left child of 2. This is a little twist. And this is a small difference between same tree and symmetric tree. Understand again. There were beans in the bean tree. There were beans even in the bean tree."
+    },
+    {
+      "start_time": 938.24,
+      "end_time": 967.829,
+      "text": "नल नहीं होना चाहिए। एक नहीं होना चाहिए। वैल्यू सेम होना चाहिए। वेरी गुड। लेकिन आगे जाते हुए हम लोग क्या करते थे? 1 के लेफ्ट चाइल्ड और 2 का लेफ्ट चाइल्ड कंपेयर कर दिए। 1 का राइट चाइल्ड और 2 का राइट चाइल्ड कंपेयर कर दिए। लेकिन मिरर वर्ल्ड में 1 का लेफ्ट चाइल्ड 2 के राइट चाइल्ड से मैच करना चाहिए। और 1 का राइट चाइल्ड 2 के लेफ्ट चाइल्ड से मैच करना चाहिए। तो आप क्या करेंगे? तो आप क्या करेंगे? आप क्या करेंगे? आपको दो रिजल्ट निकालना पड़ेगा।",
+      "source": "caption",
+      "english_text": "There should be no tap. There shouldn't be one. Value should be same. very good. But what did we do while moving forward? Left child of 1 and left child of 2 are compared. The right child of 1 and the right child of 2 were compared. But in mirror world the left child of 1 must match the right child of 2. And the right child of 1 must match the left child of 2. So what will you do? So what will you do? What would you do? You will have to get two results."
+    },
+    {
+      "start_time": 967.839,
+      "end_time": 998.949,
+      "text": "तो हम लोग क्या करेंगे? एक रिजल्ट तो निकालेंगे जिसमें हम लोग 1 का लेफ्ट चाइल्ड ये किसके बराबर होना चाहिए? ये 2 के राइट के बराबर होना चाहिए। यस यस राइट के बराबर होना चाहिए। और r2 = फन अब 1 का राइट चाइल्ड ये किसके बराबर होना चाहिए? ये 2 के लेफ्ट के बराबर होना चाहिए। बस यही छोटा सा दिक्कत यही छोटा सा डिफरेंस है। सेम ट्री में क्या होता था?",
+      "source": "caption",
+      "english_text": "So what will we do? We will find a result in which the left child of 1 should be equal to what? This should be equal to the right of 2. Yes must be equal to yes right. And r2 = fun. Now what should this be equal to, the right child of 1? This should be equal to the left of 2. The only small problem is this small difference. What was there in the bean tree?"
+    },
+    {
+      "start_time": 998.959,
+      "end_time": 1026.39,
+      "text": "सेम ट्री में 1 का लेफ्ट 2 का लेफ्ट 1 का राइट 2 का राइट। यहां पे जस्ट उल्टा हो जाएगा। क्योंकि हम लोग अब मिरर वर्ल्ड में डील कर रहे हैं। मिरर वर्ल्ड में मिरर वर्ल्ड में लेफ्ट चाइल्ड इज़ राइट चाइल्ड मतलब लेफ्ट चाइल्ड मिरर इमेज में राइट बन जाता है। राइट वाला लेफ्ट बन जाता है। इसीलिए अब इन दोनों पे क्या होगा? इन दोनों पे सेम काम होगा जो यहां पे हुआ था। सेम काम होगा जो यहां पे हुआ था। तो ये अभी आपको हम करके भी दिखाते हैं। या अभी आपको हम करके भी दिखाते हैं। चलिए यहां तक समझ में आया होगा। हम उम्मीद कर रहे हैं।",
+      "source": "caption",
+      "english_text": "In the same tree, 1 is left, 2 is left, 1 is right, 2 is right. Here it will be just the opposite. Because we are now dealing in a mirror world. In the mirror world, the left child becomes the right child in the mirror world meaning the left child becomes the right child in the mirror image. The one on the right becomes the left. That's why what will happen to these two now? The same work will be done on both of them which was done here. The same work will happen which happened here. So now we will show you this also. Or we will show you by doing it now. Come on, you must have understood till now. we are expecting."
+    },
+    {
+      "start_time": 1026.4,
+      "end_time": 1055.83,
+      "text": "सबसे पहले क्या किए? सबसे पहले तो हम लोग को दो रूट मिला। तो दोनों रूट में तीन पॉइंट तो सैनिटी के लिए चेक कर लिए भैया कि देख लो दोनों नल नहीं है, वैल्यू सेम है। उसके बाद अब क्योंकि इनके बच्चे भी हैं तो इनके बच्चों को भी तो चेक करना पड़ेगा। लेकिन बच्चों को चेक करते हुए हम लोग थोड़ा घुमा दिए। हम लोग बोले कि 1 के लेफ्ट से और 2 का राइट चेक करो। 1 के राइट और 2 का लेफ्ट चेक करो। इनमें क्या होगा? इनमें भी सेम चेक होगा। इनमें भी सेम तरीका का चेक होगा कि दोनों सर्कल नल नहीं होना चाहिए। दोनों सर्कल में से एक नल नहीं होना चाहिए। दोनों नल है। वेरी गुड।",
+      "source": "caption",
+      "english_text": "What did you do first? First of all we found two routes. So, check three points in both the routes for sanity, see that both are not null, the value is same. After that, now that they have children, their children will also have to be checked. But while checking the children, we turned around a bit. We said check the left side of 1 and the right side of 2. Check the right of 1 and the left of 2. What will happen in these? Same check will be done in these also. In these too, the same method of checking will be done that both the circles should not be null. One of the two circles should not be null. Both are taps. very good."
+    },
+    {
+      "start_time": 1055.84,
+      "end_time": 1089.19,
+      "text": "और दोनों सर्कल का वैल्यू भी सेम होना चाहिए। आप देख सकते हैं कि 1 का लेफ्ट चाइल्ड का वैल्यू और 2 के राइट चाइल्ड का वैल्यू सेम है। अगर यहां पे मान लीजिए 30 होता तो क्या ये होता? नहीं होता। आपको इसको ऐसे चेक करना है कि अगर इस ट्री का हम मिरर इमेज निकालेंगे तो क्या एग्जैक्टली यही ट्री आएगा? हां अगर आएगा तो सही है। नहीं आएगा तो गलत है। तो इसका कोड सेम एज ओरिजिनल वाले क्वेश्चन का कोड है। तो पहले कोड लिख लेते हैं। उसके बाद इसको हम ड्राई रन भी कर देंगे। तो आपको क्या लिखना पड़ेगा कि एक बुल फन आपको उसमें क्या मिलेगा? दो रूट। वो दोनों रूट",
+      "source": "caption",
+      "english_text": "And the value of both the circles should also be same. You can see that the value of left child of 1 and the value of right child of 2 are the same. If there was say 30 here, would this have happened? Doesn't happen. You have to check it in such a way that if we take a mirror image of this tree, will it be exactly the same tree? Yes, if it comes then it is correct. If he doesn't come then it is wrong. So its code is the code of the same age original question. So let's write the code first. After that we will also dry run it. So what do you have to write that a bull fun and what will you get in it? Two routes. both those routes"
+    },
+    {
+      "start_time": 1089.2,
+      "end_time": 1120.549,
+      "text": "हम कैसे बनाएंगे? हां। अब ये 1 2 स्टार्ट कैसे करेंगे? जो आपको ओरिजिनल ट्री मिला है जो आपको ओरिजिनल क्वेश्चन में सेम ट्री में तो दो ट्री मिला था। इसमें एक ही मिला है। लेकिन आपको बोला है कि उसको बीच से काटना है। अब बीच से काटना है ना? तो 1 शुरुआत वाला 1 क्या बन जाएगा आपके रूट का लेफ्ट। शुरुआत का 2 आपके क्या बन जाएगा? रूट का राइट। तो बता देंगे वो। अभी तो फंक्शन लिख लेते हैं कि सबसे पहले तो आपको एक दो नोड मिलेंगे। एक होगा 1 और एक होगा 2। चलिए सबसे पहले सब चीजें कर लेते हैं।",
+      "source": "caption",
+      "english_text": "How will we make it? Yes. Now how will these 1 2 start? Which is the original tree you got? In the original question, you got two trees in the same tree. Only one is found in it. But you have been told that it has to be cut from the middle. Now you have to cut it from the middle, right? So the 1 starting with 1 will become what is left of your root. What will your debut 2 become? Right to root. Then he will tell. Now let's write the function that first of all you will get one or two nodes. One will be 1 and one will be 2. Let's do everything first."
+    },
+    {
+      "start_time": 1120.559,
+      "end_time": 1151.11,
+      "text": "अगर दोनों नल है तो ट्रू। दोनों नल है तो ट्रू। मतलब इफ जो लोग सेम ट्री देखे हैं उनको बहुत अच्छा लग रहा होगा। जो लोग सेम ट्री नहीं देखे हैं आप लोग को नहीं उतना अच्छा लग रहा होगा। तो अच्छा लगवाने के लिए हम आपको बोलेंगे कि सेम ट्री देख लिया करिए। देख मतलब देख के आ जाइए। अच्छा अच्छा क्वेश्चन है। ठीक है? ठीक है? पहला पॉइंट खत्म। पहला पॉइंट खत्म। दोनों में से एक नल है तो फॉल्स नहीं हो सकता है। तो हम कैसे बताए थे ट्रिक? 1 = नल और",
+      "source": "caption",
+      "english_text": "True if both are null. If both are null then true. Meaning if people who have seen the same tree must be feeling very good. Those who have not seen the bean tree, you may not be liking it that much. So to make it look good, we will tell you to look at the bean tree. See, I mean, come after seeing. Okay, that's a good question. Ok? Ok? First point over. First point over. If one of the two is tap then there cannot be a fall. So how did we tell the trick? 1 = tap and"
+    },
+    {
+      "start_time": 1151.12,
+      "end_time": 1180.23,
+      "text": "2 इक्वल इक्व नल। तो रिटर्न फॉल्स। ठीक बात है। दूसरा पॉइंट भी कंप्लीट। दोनों का अगर वैल्यू सेम नहीं है तो फॉल्स। तो आगे जाने की जरूरत नहीं है। कुछ चेक करने की जरूरत नहीं है। इफ 1 का डेटा नॉट इक्वल टू 2 का डेटा। अगर वैल्यू सेम नहीं है तो कैसे होगा? मिरर इमेज नहीं हो सकता है। रिटर्न फॉल्स।",
+      "source": "caption",
+      "english_text": "2 Equal Equal Null. So the return falls. That's right. Second point also complete. If the value of both is not the same then false. So there is no need to go further. There is no need to check anything. If data of 1 is not equal to data of 2. How if the value is not the same? Cannot be mirror image. Return Falls."
+    },
+    {
+      "start_time": 1180.24,
+      "end_time": 1211.59,
+      "text": "बस अब अब क्या करना है? अब अब दोनों का लेफ्ट चिल्ड्रन और राइट चिल्ड्रन का कर लेना है। तो बल R1 = फन रूट फन मतलब सेम फन देखिए सेम वाला फंक्शन यही यही फंक्शन ये फन क्या करता है फन का काम बस दो सर्कल लेना है इसको आप कौन सा दो सर्कल देते हैं यहां पे है तो पिछले सेम ट्री में इसको हम सेम लेफ्ट लेफ्ट चाइल्ड और लेफ्ट चाइल्ड दो सर्कल देते थे इसमें सर्कल देने में हम हेरफेर कर दिए तो वही है। इसमें आप इसका लेफ्ट चाइल्ड दे दीजिए और इसका राइट चाइल्ड दे दीजिए।",
+      "source": "caption",
+      "english_text": "Just what to do now? Now the tax of both left children and right children has to be done. So force R1 = fun root fun means same fun see the same function, this is the same function, what does this fun do, the work of fun is just to take two circles, which two circles do you give to it, it is here, so in the previous bean tree, we used to give it same, left, left child and left child two circles, if we manipulate it in giving circles then it is the same. In this you give its left child and its right child."
+    },
+    {
+      "start_time": 1211.6,
+      "end_time": 1244.23,
+      "text": "उल्टा भी कर सकते हैं। आपकी मर्जी है। और अभी क्योंकि और एक चाइल्ड है तो फन अब 1 का लेफ्ट चाइल्ड आप दे चुके हैं। तो 1 का राइट चाइल्ड दे दीजिए और 2 का लेफ्ट चाइल्ड दे दीजिए। वेरी गुड। अगर अगर R1 और R2 दोनों ट्रू है तो आप ट्रू रिटर्न करेंगे। अब मान लीजिए अगर ये ये सक्सेसफुल हो गया। ये आपको दे दिया ट्रू और ये दे दिया फॉल्स। तो क्या ये मिरर इमेज है? नहीं है। पूरा ट्री मिरर इमेज होना चाहिए। तो आप ऐसा कर सकते हैं रिटर्न",
+      "source": "caption",
+      "english_text": "Can do the reverse also. It's your choice. And now because there is one more child, now you have given the left child of 1. So give the right child of 1 and give the left child of 2. very good. If both R1 and R2 are true then you will return true. Now suppose if this becomes successful. This gave you true and this gave you false. So is this a mirror image? Not there. The entire tree should be a mirror image. so you can return"
+    },
+    {
+      "start_time": 1244.24,
+      "end_time": 1278.95,
+      "text": "R1 एंड R2 मतलब दोनों ट्रू होगा तो अगर ट्रू होगा तो वो दे देंगे बस अब जो आपका मेन फंक्शन है जो आपका लीड कोड में दिया हुआ है बुल इज सिमेट्रिक जो आपके लीड कोड में दिया हुआ है इसमें तो आपको एक ही एक ही नड दिया हुआ है ना इसमें आपको एक ही नड दिया हुआ है तो ठीक है हम क्या बोल रहे हैं आपको इस को बीच से काटना है बीच से काटेंगे तो दो रूट बन जाएगा तो हम लोग क्या करेंगे रिटर्न हमारा वाला फंक्शन इसमें एक पार्ट पार्ट हो जाएगा रूट का लेफ्ट जो कि हम 1 से डिनोट कर रहे हैं और एक पार्ट हो जाएगा रूट का राइट। वेरी गुड।",
+      "source": "caption",
+      "english_text": "R1 and R2 means both will be true, so if true then they will give. Now, which is your main function, which is given in your lead code, Bull is symmetric, which is given in your lead code, in this you are given only one node, no, in this you are given only one node, so okay, what we are saying is that you have to cut it from the middle, if you cut it from the middle, then two roots will be formed, so what will we do, return our function, one part of the root will become part of it. Left which we are denoting by 1 and one part will be the right of the root. very good."
+    },
+    {
+      "start_time": 1278.96,
+      "end_time": 1312.87,
+      "text": "बस ये देख लीजिए कोड छोटा सा। ये छोटा सा कोड है। छोटा सा कोड हो गया। ऑर्डर ऑफ़ n टाइम कॉम्प्लेक्सिटी। ऑर्डर ऑफ़ n स्पेस कॉम्प्लेक्सिटी। ये हम पढ़ाएंगे एक बार। टाइम कॉम्प्लेक्सिटी, स्पेस कॉम्प्लेक्सिटी एक बार पढ़ाएंगे ट्रीज़ के लिए। अभी के लिए। ठीक है? ये कोड है। आइए इसको देखते हैं। चलता कैसा है? अब मजा आएगा। अब अब बहुत मजा आने वाला है। चलता कैसे है? देखते हैं। तो एक ट्री बना लेते हैं। एक हम ट्री बना लेते हैं। अ आपको एक ऐसा ट्री मिला है। लीड कोड आपको ऐसा ट्री दिया है। ठीक है?",
+      "source": "caption",
+      "english_text": "Just look at this small code. This is a small code. A little code is done. Order of n time complexity. Order of n space complexity. We will teach this once. Time complexity, space complexity will be taught once for trees. For now. Ok? This is the code. Let's look at this. How's it going? Now it will be fun. Now this is going to be a lot of fun. How is it going? Let's see. So let's make a tree. First we make a tree. A You have found such a tree. The lead code has given you such a tree. Ok?"
+    },
+    {
+      "start_time": 1314.63,
+      "end_time": 1348.31,
+      "text": "ये आपको लीड कोड ट्री दिया है। सबसे पहले क्या करेंगे? इसको बीच से काटेंगे तो दो चीजें बन जाएंगी। ये आपका 1 बन जाएगा और ये आपका 2 बन जाएगा। तो इनको भी लिख लेते हैं। इनको भी कहीं लिख लेते हैं। तो एक तो ट्री आपका ये बन जाएगा और दूसरा वाला ट्री आपका ऐसा बन जाएगा। ठीक है? तो ये आपका क्या है? 1 और ये आपका क्या है? 2 वेरी गुड। आइए चलाते हैं। तो सबसे पहले फन में क्या पास होगा? 1 2 मतलब यही दोनों टू और टू। तो सबसे पहले फन में हम लोग पास करेंगे जहां पे 1 = होगा टू और 2 इक्वल टू",
+      "source": "caption",
+      "english_text": "This is the lead code tree given to you. What will you do first? If you cut it from the middle, two things will be formed. This will become your 1 and this will become your 2. So let's write these down too. Let's write these down somewhere. So one tree will become like this and the other tree will become like this. Ok? So what is this to you? 1 And what is this to you? 2 Very good. Let's run. So what will pass the fun first? 1 2 means both two and two. So first of all we will pass in fun where 1 = will be two and 2 will be equal to."
+    },
+    {
+      "start_time": 1348.32,
+      "end_time": 1373.75,
+      "text": "होगा। ये भी टू है। तो सबसे पहले क्या चेक होगा? अगर दोनों नल है तो ट्रू कर दो। क्या दोनों आपको नल दिख रहा है? नहीं दोनों नल नहीं दिख रहा है। दोनों में से एक भी नल नहीं दिख रहा है। और दोनों का वैल्यू भी सेम है। हम लोग अभी इसमें हैं। हम लोग अभी इसमें हैं। दोनों का वैल्यू भी हमको टू टू दिख रहा है। तो वेरी गुड। तीन पॉइंट पास हो गया। अब आपको क्या करना है? अब आपको दोनों के चिल्ड्रन को देखना है। तो सबसे पहले हम लोग क्या देखे थे? R1 इक्वल टू 1 का लेफ्ट चाइल्ड। 1 का लेफ्ट चाइल्ड। 1 का लेफ्ट चाइल्ड क्या है? अलास।",
+      "source": "caption",
+      "english_text": "Will happen. This is also two. So what will be checked first? If both are null then make it true. Do you both see the tap? No, both taps are not visible. Neither tap is visible. And the value of both is also same. We are in this right now. We are in this right now. We also see the value of both. So very good. Three points passed. What do you have to do now? Now you have to see the children of both. So what was the first thing we saw? Left child of R1 equal to 1. Left child of 1. What is the left child of 1? Alas."
+    },
+    {
+      "start_time": 1373.76,
+      "end_time": 1405.75,
+      "text": "1 का लेफ्ट चाइल्ड कोई नहीं है। 1 का लेफ्ट चाइल्ड कोई नहीं है। 1 का लेफ्ट चाइल्ड कोई नहीं है। तो नल और 2 का राइट चाइल्ड। 2 का राइट चाइल्ड। 2 का राइट चाइल्ड क्या है? थ्री। थ्री। और r2 क्या होगा? R2 होगा 1 का राइट चाइल्ड जो कि थ्री है। लेकिन 2 का लेफ्ट चाइल्ड जो कि कुछ नहीं है। अब देखिए आपको प्रॉब्लम दिखने लग गया होगा। आपको प्रॉब्लम दिखने लग गया होगा। आइए इसको कॉल करें। इसको कॉल करें। तो ये यहां आके कॉल होगा। फन। अब ये कॉल हुआ है 1 इक्वल टू इसका नल पास हुआ है",
+      "source": "caption",
+      "english_text": "There is no left child of 1. There is no left child of 1. There is no left child of 1. So right child of null and 2. Right child of 2. What is the right child of 2? Three. Three. And what will be r2? R2 will be the right child of 1 which is three. But the left child of 2 which is nothing. Now see, you must have started seeing the problem. You must have started seeing the problem. Let's call it. Call this. So he will come here and call. Fun. Now this call is 1 equal to two its null is passed"
+    },
+    {
+      "start_time": 1405.76,
+      "end_time": 1436.95,
+      "text": "और 2 में थ्री पास हो गया है। अच्छा अब देखिए क्या दोनों नल है? दोनों नल नहीं है। लेकिन दोनों में से एक नल है। ये बोल रहा है कि एक सर्कल नल है और एक सर्कल में कोई सर्कल है। तो क्या बोलेगा? फॉल्स। फॉल्स फॉल्स। ये फॉल्स कहां आ जाएगा? फॉल्स यहां आ जाएगा भाई। ये फॉल्स यहां आ जाएगा। सिमिलरली इससे भी फॉल्स आएगा। इससे भी फॉल्स आएगा। क्यों? क्योंकि एक थ्री है और एक नल है। फॉल्स आता है उसमें। अब आपको क्या करना था? अगर दोनों R1 R2 करेक्ट होता तो आप ट्रू देते। हां। तो दोनों फॉल्स है। आप क्या रिटर्न करेंगे? फॉल्स।",
+      "source": "caption",
+      "english_text": "And three in 2 have been passed. Okay, now see are both taps? Both are not taps. But one of the two is a tap. It is saying that a circle is null and any circle in a circle is null. So what will you say? Falls. Falls Falls. Where will these falls come? Falls will come here brother. This falls will come here. Similarly this will also lead to falls. Falls will also come from this. Why? Because there is a three and a null. Falls come in it. What were you supposed to do now? If both R1 R2 were correct then you would give True. Yes. So both are falls. What will you return? Falls."
+    },
+    {
+      "start_time": 1436.96,
+      "end_time": 1469.909,
+      "text": "तो आपके इस सर्कल का आंसर क्या आ जाएगा? फॉल्स। ये सिमिट्रिकल नहीं है। ये सिमिट्रिकल नहीं है। ये क्यों नहीं है? आइए आपको बताते हैं। आइए इसका हम आपको मिरर इमेज बता के दिखाते हैं। टू और थ्री का। टू और थ्री का आपको हम मिरर इमेज बना के दिखाते हैं। अभी आइए। तो टू यहां था और थ्री यहां था। बीच में मिरर बना देते हैं। ठीक है? बीच में मिरर बना दिए। लीजिए। अस्यूम कर लीजिए कि टू का डिस्टेंस टू का डिस्टेंस 10 मीटर है। अस्यूम कर लीजिए थ्री का डिस्टेंस 5 मीटर है। ठीक है? तो अब क्या होगा कि मिरर वाले टू का डिस्टेंस",
+      "source": "caption",
+      "english_text": "So what will be the answer of this circle of yours? Falls. This is not symmetrical. This is not symmetrical. Why isn't this? Let us tell you. Let us show you this by telling you its mirror image. Of two and three. Let us show you mirror images of two and three. Come now. So two was here and three was here. Make a mirror in the middle. Ok? Made a mirror in the middle. Take it. Assume that the distance of two is 10 meters. Assume the distance of three is 5 meters. Ok? So now what will happen is the distance between the mirrored two"
+    },
+    {
+      "start_time": 1469.919,
+      "end_time": 1504.789,
+      "text": "भी 10 मीटर ही होगा। मिरर और मिरर वाले इसका डिस्टेंस भी 5 मीटर ही होगा। अब लाइन बना दीजिए। ये देखिए। देखिए इसका कैसा मिरर इमेज बना। ये क्यों? देखिए टू तो सेम है। टू तो सेम है। लेकिन थ्री रियल वर्ल्ड में इसका राइट चाइल्ड था। मिरर वर्ल्ड में थ्री इसका लेफ्ट चाइल्ड है। लेकिन आपको क्या दिया हुआ था? आपको सेम ट्री दिया हुआ है। देखिए आपको आपको सेम ट्री दिया हुआ है। ये सेम ट्री नहीं देखना। सिमिट्रिक ट्री है कि नहीं? अगर ये थ्री यहां पे राइट था ना तो मिरर वर्ल्ड में थ्री यहां होना चाहिए था लेफ्ट में। तो ये दोनों ट्री सेम है। ये दोनों ट्री सिमिट्रिकल",
+      "source": "caption",
+      "english_text": "Will also be only 10 meters. Its distance between mirror and mirror will also be only 5 meters. Now make a line. Look at this. See what kind of mirror image it creates. Why this? Look, two are the same. Two are the same. But it was its right child in the Three Real Worlds. Three is its left child in the mirror world. But what was given to you? You have been given a bean tree. Look, we have given you a bean tree. Don't see this bean tree. Is it a symmetric tree or not? If this three here was on the right then in the mirror world the three here should have been on the left. So both of these trees are the same. Both these trees are symmetrical"
+    },
+    {
+      "start_time": 1504.799,
+      "end_time": 1534.87,
+      "text": "नहीं है। और इस तरीके से आप इसका कोड लिख सकते हैं। तो हम उम्मीद करते हैं कि आया होगा। अगर आपको ये सेम सिमिट्रिकल थोड़ा सा भी समझ में नहीं आ रहा है तो प्लीज हमको बता दीजिएगा। हम फिर से उसको पढ़ाएंगे। क्योंकि ये बहुत इजी क्वेश्चन है। बहुत अच्छा क्वेश्चन है। इंटरव्यू में पूछा भी जाता है। अगर आपको थोड़ी सी भी दिक्कत लग रही है तो प्लीज हमको बताइएगा कमेंट में। हम आपको फिर से पढ़ा देंगे। ये आपका कोड और ये आपका ड्राई रन। इसको एक बार कॉपी पेन में जरूर ट्राई कीजिएगा और बढ़ते हैं अगले क्वेश्चन की तरफ। बधाई हो। हार्ड पार्ट आपका कंप्लीट हो गया है। अब बहुत ही नकली एक क्वेश्चन है। बहुत ही ज्यादा नकली जिसका नाम है इनवर्ट ट्री।",
+      "source": "caption",
+      "english_text": "It is not. And in this way you can write its code. So we hope that it has come. If you are not able to understand even a little bit of this Same Symmetrical then please let us know. We will teach him again. Because this is a very easy question. It is a very good question. It is also asked in interviews. If you are facing even the slightest problem then please let us know in the comments. We will teach you again. This is your code and this is your dry run. Please try this once in the copy pen and move towards the next question. Congratulations. Your hard part is complete. Now this is a very fake question. A very fake one whose name is Invert Tree."
+    },
+    {
+      "start_time": 1534.88,
+      "end_time": 1566.87,
+      "text": "उसमें आप आ गए हैं। इसमें 5 6 मिनट से ज्यादा नहीं लगने वाला है। तो बेयर विद मी। बहुत नकली क्वेश्चन मतलब बहुत ही नकली क्वेश्चन है। क्या हो रहा है इसको? पगला गया क्या? अच्छा चलिए तो इनवर्ड ट्री क्या बोलता है? आपको हम बता देते हैं। एक आपको ट्री मिलेगा। एक आपको क्या मिलेगा? ट्री मिलेगा। है ना? ऐसा करके ट्री समझ लीजिए। फोर फाइव सिक्स एंड सेवन। आपको क्या बोला है? इस ट्री को इनवर्ट कर दो। इनवर्ट का क्या मतलब होता है? किसी भी रूट का किसी भी रूट के दो चिल्ड्रन होंगे। एट मैक्स",
+      "source": "caption",
+      "english_text": "You have come into it. This is not going to take more than 5-6 minutes. So bear with me. Very fake questions means very fake questions. What is happening to this? Have you gone mad? Okay, so what does the inward tree say? We will tell you. One you will get a tree. What will one get you? Tree will be found. Isn't it? By doing this, consider it as a tree. Four five six and seven. What did he tell you? Invert this tree. What does invert mean? Any root will have two children of any root. at max"
+    },
+    {
+      "start_time": 1566.88,
+      "end_time": 1601.669,
+      "text": "लेफ्ट या राइट। है ना? इसके लेफ्ट चाइल्ड को राइट चाइल्ड बना दो। राइट को लेफ्ट बना दो। मतलब इसको ऐसा कर दो। इसको इधर ले आओ। बस इसी का नाम होता है इनवर्ट। किसी भी सर्कल का किसी भी सर्कल का अगर दो चिल्ड्रन है ना तो उसको रिवर्स कर दो। लेफ्ट चिल्ड्रन को राइट चिल्ड्रन बना दो। राइट को लेफ्ट बना दो। तो आप देखिए ये देखने में लगेगा कि हां ये तो बहुत आसान है लेकिन ठीक है। थोड़ा कॉम्प्लेक्स भी है। इसमें आप क्या करेंगे? देखिए इसमें आप कहीं से भी शुरू कर सकते हैं। आइए ऊपर से शुरू करते हैं। रूट तो यही है। रूट ये है ना? तो अगर आप बोलेंगे कि ठीक है हम एक काम करेंगे ना रूट के चिल्ड्रन को स्वाइप",
+      "source": "caption",
+      "english_text": "Left or right. Isn't it? Make its left child the right child. Turn right into left. Meaning make it like this. Bring it here. This is just called invert. If any circle has two children then reverse it. Turn left children into right children. Turn right into left. So you see, it will seem that yes, it is very simple but it is okay. It is also a bit complex. What will you do in this? See, you can start from anywhere in this. Let's start from the top. This is the route. This is the route right? So if you say ok, we will do one thing, swipe the children of the root."
+    },
+    {
+      "start_time": 1601.679,
+      "end_time": 1634.47,
+      "text": "कर देंगे तो आप रूट के चिल्ड्रन को अगर स्वाइप करेंगे ना तो देखिए क्या हो जाएगा रूट का लेफ्ट चाइल्ड क्या था टू अब बोल रहे हैं टू को हम राइट में भेजेंगे और राइट चाइल्ड जो कि थ्री था इसको हम इधर ले आएंगे तो जब आप ऐसा करेंगे ना जब आप ऐसा करेंगे तो थ्री के साथ जो भी है ये पूरा पार्ट लेफ्ट में आ जाएगा। आप ऐसा नहीं कर सकते हैं कि थ्री को यहां ले आए और टू को यहां भेज दिए और बाकी ऐसे ही रह गया। नहीं जब आप थ्री को छेड़ेंगे ना यहां पे तो थ्री से जोज जुड़ा हुआ है ये पूरा पलटन आने वाला है लेफ्ट में तो जब आप थ्री को लेफ्ट में लाएंगे तो देखिए क्या होगा थ्री आएगा लेकिन थ्री अपने साथ इनको भी लेके",
+      "source": "caption",
+      "english_text": "If you do this, then if you swipe the children of the root, then see what will happen, what was the left child of the root, which was two, now we are saying that we will send two to the right and the right child which was three, we will bring it here, so when you do this, when you do this, whatever is there with three, this entire part will come to the left. You cannot do that by bringing three here and sending two here and the rest remains like this. No, when you tease three, here the yoke is attached to three, this entire platoon is going to come to the left, so when you bring three to the left, then see what will happen, three will come but three will take them along with them."
+    },
+    {
+      "start_time": 1634.48,
+      "end_time": 1667.909,
+      "text": "आएगा इनको भी लेके आएगा और टू जब राइट में जाएगा ना तो टू अपने साथ ये पूरा पलटन टू के अंडर जो भी है सबको उधर ले जाएगा सबको उधर ले जाएगा सबको उधर ले जाएगा इसको आप ऐसे समझिए इसको आप ऐसे समझिए मान लीजिए एक सीईओ है ठीक है एक सीईओ है ठीक ठीक है? इसके अंदर दो लोग काम करते हैं। एक सीओ काम करता है और एक सीएफओ काम करता है। ठीक बात है? अब मान लीजिए सीओ के अंदर इंजीनियर वन इसको डायरेक्टली रिपोर्ट करता है और इंजीनियर टू इसको डायरेक्टली रिपोर्ट करता है। सेम जो सीएफओ जो",
+      "source": "caption",
+      "english_text": "He will come with these also and when Two goes to the right, then Two will take with him this entire platoon of whoever is under Two, he will take everyone there, he will take everyone there, he will take everyone there, you understand it like this, you understand it like this, let's say there is one CEO, okay, there is one CEO, okay? Two people work inside it. One CO works and one CFO works. Is that correct? Now suppose within the CO, Engineer One reports directly to him and Engineer Two reports directly to him. Same Joe CFO Joe"
+    },
+    {
+      "start_time": 1667.919,
+      "end_time": 1694.549,
+      "text": "फाइनेंसियल ऑफिसर है ना इसको एक सीए वन है जो डायरेक्टली रिपोर्ट करता है और सीए टू इसको डायरेक्टली रिपोर्ट करता है। अब अगर आप बोले कि अब इसको इनवर्ट कर दो। कंपनी को इनवर्ट कर दो। सीईओ को मन किया कि चलो इधर-उधर करो। तो CEO क्या कर सकता है कि CO4 CFO अभी राइट में है और COO अभी लेफ्ट में है। तो इनको स्वाइप कर दो। इनको स्वाइप कर दो। लेकिन वो स्वाइप करने से होगा क्या ना कि स्वाप तो आप कर देंगे। स्वाप तो आप कर देंगे। स्वाप तो करना बहुत आसान है। स्वाप तो करना चुटकी का खेल है।",
+      "source": "caption",
+      "english_text": "There is a Financial Officer, there is a CA One who reports directly to him and a CA Two who reports directly to him. Now if you say invert it now. Invert the company. The CEO felt like moving around. So what the CEO can do is that the CO4 CFO is still on the right and the COO is still on the left. So swipe them. Swipe these. But that will happen by swiping or you will swipe. You will do the swap. It is very easy to swap. Swapping is a game of pints."
+    },
+    {
+      "start_time": 1694.559,
+      "end_time": 1729.029,
+      "text": "ये तो ऐसे हो गया। लीजिए स्वाइप हो गया। लेकिन ये जो दो इंजीनियर था ये सीओ को रिपोर्ट करता है ना। तो ये भी सीओ के साथ चला जाएगा। ऐसा नहीं होगा कि आप सीएफओ को इधर लाएंगे तो ये दोनों इंजीनियर इसी को नहीं वैसा नहीं हो सकता है। इंजीनियर सीओ को रिपोर्ट करेगा और सीए सीएफओ को रिपोर्ट करेगा। तो ये दोनों इंजीनियर भी यहीं पे एज इट इज़ आ जाएंगे। देखिए एज इट इज़ आ गए। और क्योंकि आप सीएफओ को उधर ले गए तो इसके साथ जो दो सीए था एज इट इज़ आ जाएगा। इधर एज इट इज़ आ जाएगा। एज़ इट इज़ आ जाएगा। तो देखिए एक लेवल पे आप इनवर्ट करने में सक्सेसफुल रहे। पहले Caf और CO इधर-उधर",
+      "source": "caption",
+      "english_text": "This is how it happened. Well, the swipe is done. But these two engineers report to the CO. So this will also go with CO. It will not happen that if you bring the CFO here, then these two engineers are not the same, it cannot be the same. The Engineer will report to the CO and the CA will report to the CFO. So these two engineers will also come here as it is. Look, As It Is has arrived. And because you took the CFO there, along with it will come the two CAs as it is. Here it will come as it is. It will come as it is. So see, you were successful in inverting at one level. First Caf and CO here and there"
+    },
+    {
+      "start_time": 1729.039,
+      "end_time": 1762.47,
+      "text": "था। एक लेवल पे इन्वर्ट हो गया। लेकिन इनवर्ट का मतलब क्या है? इनवर्ट का मतलब है हर एक रूट हर एक सर्कल हर एक सर्कल का जो दो चिल्ड्रन है ना उनको स्वाइप करना है। अब देखिए अब सीओ के चिल्ड्रन को तो स्वप कर दिए। सीओ और सीएफओ को इधर-उधर कर दिए। लेकिन सीएफओ का जो चिल्ड्रन है सीएन और सीए2 इनको भी आपको स्वाइप करना पड़ेगा। क्योंकि वही उसी का मतलब होता है इनवर्ट। मतलब हर एक सर्कल से जो लोग निकल रहे हैं ना जो बच्चे निकल रहे हैं उनको स्वाइप करो। इन दोनों को भी स्वाइप करिए। अब अगर इन दोनों को स्वाइप करेंगे तो आप कर सकते हैं इन दोनों को बड़ी आपको सेम चीज कहां",
+      "source": "caption",
+      "english_text": "Was. Inverted at one level. But what does invert mean? Invert means to swipe every root, every circle and the two children of every circle. Now see, now the CO's children have been swapped. The CO and CFO were shifted here and there. But you will also have to swipe the children of CFO, CN and CA2. Because that is what invert means. Meaning, swipe the people or children coming out of each circle. Swipe both of these also. Now if you swipe on both of them, you can see the same thing."
+    },
+    {
+      "start_time": 1762.48,
+      "end_time": 1797.19,
+      "text": "करना पड़ेगा? यहां भी करना पड़ेगा। तो आप इन दोनों को स्वाइप करके CA2 को यहां कर दीजिए और CA1 को यहां कर दीजिए। सिमिलरली आपको इन इंजीनियर्स को भी स्वाइप करना पड़ेगा क्योंकि वही होता है इनवरर्ट का मतलब आप छोड़ नहीं सकते हैं किसी को। जब आप इनको भी स्वाइप करेंगे इंजीनियर टू और इंजीनियर वन। यस इंजीनियर वन एंड इंजीनियर टू। अब क्या और कुछ बचा हुआ है करने के लिए? क्या सीए का कोई बच्चा था? नहीं। नहीं सीए वन का कोई बच्चा नहीं इंजीनियर टू का इंजीनियर वन का नहीं तो जिसकाजिसका देखिए ओरिजिनल पिक्चर देख लीजिए और ये देख लीजिए देखिए ओरिजिनल ओरिजिनल ऊपर है और ये डुप्लीकेट नीचे है जिसका जिसका भी बच्चे",
+      "source": "caption",
+      "english_text": "Will have to do? It will have to be done here also. So you swipe both of them and move CA2 here and CA1 here. Similarly, you will have to swipe these engineers also because the same thing happens, invert means you cannot leave anyone. When you swipe these also Engineer Two and Engineer One. Yes Engineer One and Engineer Two. Now what else is left to do? Did CA have any children? No. No, CA One has no children, Engineer Two has no children, Engineer One has no children, so whose children, see the original picture and see this, see the original, the original is above and this duplicate is below, whose children."
+    },
+    {
+      "start_time": 1797.2,
+      "end_time": 1830.63,
+      "text": "थे उनके बच्चे स्वाप हो गए हैं सबसे पहले देखिए सीओ सीओ का बच्चे थे हां बच्चे थे क्या बच्चे स्वाप हो गए हां जी स्वाप हो गए सीओ के बच्चे थे हां बच्चे थे क्या बच्चे स्वाप हो गए हां बच्चे स्वाप हो गए सीएफओ के बच्चे थे हां सीएफओ के बच्चे थे क्या सीएफओ के बच्चे प्लेसेस स्वाप कर चुके हैं हां जी कर चुके क्या और किसी का बच्चा बच्चा था नहीं और किसी का बच्चा नहीं था तो बस हो गया। आपको ये नया वाला रूट रिटर्न कर देना है। क्या नया वाला रूट रिटर्न कर देना है। तो बड़ा सिंपल प्रॉब्लम है। आप लोग ऑलरेडी समझ गए होंगे कि हम कर क्या रहे हैं। आप लोग ऑलरेडी समझ गए होंगे कि हम कर क्या रहे हैं। देखिए इसमें होगा क्या? ह्यूमन की तरह हम आपको",
+      "source": "caption",
+      "english_text": "Were their children swapped? First of all see were the CO the CO's children? Yes were the children? Were the children swapped? Yes were the children swapped? Were the CO's children? Yes were the children? Were the children swapped? Yes were the children swapped? Were the CFO's children? You have to return this new route. Is the new route to be returned? So it is a very simple problem. You guys must have already understood what we are doing. You guys must have already understood what we are doing. See what will happen in this? We love you like humans"
+    },
+    {
+      "start_time": 1830.64,
+      "end_time": 1859.909,
+      "text": "बताते हैं। सबसे पहले सीईओ यहां आ गया। अच्छा सीओ के अंदर क्या है? सीओ के अंदर दो लोग हैं। सीएफओ मान लीजिए और सीओ। अब हम एक चीज करते हैं। सीएफओ के अंदर एक सीएन है। और एक CA2 है। ठीक है? और सीओ के अंदर दो बातें हैं। एक इंजीनियर वन है और एक डायरेक्टर है। एक डायरेक्टर है और इस डायरेक्टर के अंदर भी एक इंजीनियर है। इस डायरेक्टर के अंदर एक दूसरा इंजीनियर है।",
+      "source": "caption",
+      "english_text": "Let us tell. The CEO came here first. Well what's inside CO? There are two people inside the CO. Let's say CFO and CO. Now let's do one thing. There is a CN inside CFO. And one is CA2. Ok? And there are two things inside CO. There is one engineer and one director. There is a director and inside this director there is also an engineer. There is another engineer inside this director."
+    },
+    {
+      "start_time": 1859.919,
+      "end_time": 1893.269,
+      "text": "तो ये थोड़ा कॉम्प्लेक्स कंपनी है। ये थोड़ी क्या है? कॉम्प्लेक्स कंपनी है। तो चलिए कुछ नहीं करना है। जो हम लोग अभी किए ना ऊपर से नीचे आते जाइए। ऊपर से नीचे आते जाइए। सबसे पहले सबसे पहले सीईओ बोलेगा अपने बच्चों को कि भैया स्वप कर लो। सीईओ क्या बोलेगा? सबसे पहले सीईओ अपने बच्चों को बोलेगा कि भैया स्वाप कर लो। स्वाप का मतलब क्या होता है? स्वाप का मतलब होता है जो भी रूट डॉट लेफ्ट एंड रूट डॉट राइट। सबसे पहले सीईओ क्या बोला? स्वाइप कर लो अपने बच्चों को। इससे क्या हुआ? इससे ये पूरा इधर-उधर हो गया। पूरा ट्री ही चेंज हो गया। इससे हुआ क्या कि अब यहां पे आ",
+      "source": "caption",
+      "english_text": "So this is a bit of a complex company. What is this bit? It is a complex company. So let's do nothing. Whatever we did just now, keep coming down from the top. Go from top to bottom. First of all, the CEO will tell his children to take a swap. What will the CEO say? First of all the CEO will tell his children to do the swap. What does swap mean? Swap means whatever root dot left and root dot right. What did the CEO say first? Swipe your kids. What happened from this? Due to this it became completely different. The entire tree has changed. What happened that you came here now?"
+    },
+    {
+      "start_time": 1893.279,
+      "end_time": 1925.99,
+      "text": "चुका है सीओ। यहां पे आ चुका है। सीओ यहां पे आ चुका है। सीएफओ। लेकिन बस इतना नहीं हुआ है। सीओ अपने साथ एक पूरा सेना को लेके आया है। अपना पूरा सेना लेके आ गया है। तो इसको हम नेक्स्ट पेज पे बना देते हैं। अब सीईओ के स्वाइप करने के बाद क्या हुआ है कि सीओ यहां आ चुका है और सीएफओ राइट में जा चुका है। लेकिन सीओ जो पूरा अपना सेना था ना उसको लेके आया है। तो एज़ इट इज़ ये अपना इंजीनियर वन को इधर लेके आएगा और इधर अपने डायरेक्टर को लेके आएगा और डायरेक्टर अपने अंदर एक इंजीनियर टू को",
+      "source": "caption",
+      "english_text": "It's done CO. Has arrived here. The CO has arrived here. CFO. But that's not all. The CO has brought an entire army with him. He has brought his entire army. So we make it on the next page. Now what has happened after the CEO swiped is that the CO has come here and the CFO has gone to the right. But the CO has brought his entire army. So as it is, he will bring his engineer one here and he will bring his director here and the director will bring engineer two inside himself."
+    },
+    {
+      "start_time": 1926.0,
+      "end_time": 1960.789,
+      "text": "लेके आएगा। सेम CA4 जो अपना पूरा पलटन था CA का उधर ले चला गया है। उस उस वाले ब्लॉक में ले चला गया है। CA1 और CA2। चलिए हो गया। सीईओ अपने बच्चों को स्वाइप करा दिया है। सीईओ अपने बच्चों को स्वाइप करा दिया है। लेकिन क्या इतना इनफ है? नहीं इतना इनफ नहीं है भाई। इतना इनफ नहीं है। क्योंकि अभी और भी लोग बचे हुए हैं ना। तो अब सीईओ सीईओ अपने दोनों बच्चों को बोलेगा कि अब अब जो हम किए ना तुम लोग के साथ तुम लोग अपने डिपार्टमेंट में सेम काम करो। जो हम तुम लोग के साथ किए तुम लोग सेम काम करो। अब किसकी बारी है स्वाइप करने की? सीओ की बारी है स्वाप",
+      "source": "caption",
+      "english_text": "Will bring. Same CA4 which was his entire platoon has gone there. He has been taken to that block. CA1 and CA2. Okay, it's done. The CEO has swiped his children. The CEO has swiped his children. But is that enough? No, it is not enough brother. This is not enough. Because there are still more people left. So now the CEO will tell both his children that now you guys should do the same work in your department as we did. You guys do the same thing that we did to you. Now whose turn is it to swipe? CO's turn to swap"
+    },
+    {
+      "start_time": 1960.799,
+      "end_time": 1993.909,
+      "text": "करने की। तो आइए करते हैं। सीओ अपने लोगों को स्वाइप करेगा। तो जैसे ही ये स्वाइप करेगा ना तो इसके दोनों बच्चे आपस में स्वाप हो जाएंगे। तो डायरेक्टर यहां आ जाएगा। इंजीनियर वन वहां चला जाएगा। इंजीनियर वन और डायरेक्टर। लेकिन डायरेक्टर जब आएगा ना तो डायरेक्टर अपने बच्चे को भी ले आएगा। अपने बच्चे को छोड़ के नहीं आएगा। अपने बच्चे को छोड़ के नहीं आएगा। तो डायरेक्टर अपने बच्चे को लेके आएगा। वेरी गुड। सीओ अपना स्वाप कर चुका है। अब क्योंकि सीओ देखेगा कि मेरे बच्चे भी तो हैं। मेरा एक बच्चा भी तो है डायरेक्टर। अब ये बोलेगा भाई डायरेक्टर जो हम काम किए ना तुम लोग के साथ। तुम अपने",
+      "source": "caption",
+      "english_text": "To do. So let's do it. CO will swipe his people. So as soon as it swipes, both its children will get swapped with each other. So the director will come here. Engineer One will go there. Engineer One and Director. But when the director comes, the director will also bring his child. Will not leave his child behind. Will not leave his child behind. So the director will bring his child. very good. The CO has done his swap. Now because the CO will see that I also have children. I also have a child who is a director. Now this brother director will say that we worked with you guys. you your"
+    },
+    {
+      "start_time": 1993.919,
+      "end_time": 2028.549,
+      "text": "साथ सेम करो। तुम अपने साथ सेम करो। अब स्वाइप करने की किसकी बारी है? डायरेक्टर की। आइए डायरेक्टर को देखें। अब डायरेक्टर का एक ही बच्चा है। एक बच्चा लेफ्ट में है। राइट वाला इसका नल है। कोई बात नहीं। स्वाइप कर दो। स्वाइप करने से क्या होगा? इंजीनियर टू लेफ्ट में था। इंजीनियर टू कहां चला जाएगा? राइट में। वेरी गुड। अब अब डायरेक्टर इंजीनियर टू को बोल सकता है लेकिन इंजीनियर टू का कोई बच्चा है ही नहीं। उससे फर्क नहीं पड़ेगा। बोलेगा थ्योरेटिकली डायरेक्टर टू भी इंजीनियर टू को बोलेगा कि भैया तुम्हारे अंडर जो जो है ना उसको करवा दो तो कुछ नहीं हो पाएगा। ठीक है? डायरेक्टर का हो गया। क्या इंजीनियर वन को कुछ करने का जरूरत है? नहीं। इंजीनियर वन के बच्चे हैं",
+      "source": "caption",
+      "english_text": "Do the same together. You take the beans with you. Whose turn is it to swipe now? Director's. Let's look at the director. Now the director has only one child. A child is on the left. The one on the right is its tap. No problem. Swipe up. What will happen if you swipe? The engineer was on the second left. Where will Engineer Two go? In right. very good. Now the director can call Engineer Two but Engineer Two does not have any children. It won't make any difference. He will say that theoretically Director 2 will also tell Engineer 2 that brother, whatever is under your control, get it done, otherwise nothing will be possible. Ok? The director is done. Does Engineer One need to do something? No. Engineers are children of the forest"
+    },
+    {
+      "start_time": 2028.559,
+      "end_time": 2063.51,
+      "text": "ही नहीं तो उसको करने का जरूरत नहीं है। अब देखिए क्या पूरा कंप्लीट हो चुका है सीईओ का ट्रांसफॉर्मेशन? हां। सीईओ के जो जो बच्चे थे स्वाप हो गए इधर-उधर सब हो गया। और अभी कंट्रोल किसके पास जाएगा? सीओ। सीईओ सीईओ को बोलेगा कि भैया हम कर दिए सर अब सीईओ बोलेगा सीएफओ को सेम काम करो तुम सेम काम करो तो अब किसका बारी है सीएफओ को अपने बच्चों को स्विच करने का बारी है तो जब सीएफओ अपने बच्चों को स्विच करेगा तो क्या होगा सीए2 यहां आ जाएगा सीए2 यहां और सीएन यहां आ जाएगा अब इन दोनों को कुछ करने का जरूरत है नहीं अब देखिए क्या ये पूरी कंपनी स्विच हो चुकी",
+      "source": "caption",
+      "english_text": "If not then there is no need to do it. Now see, is the CEO's transformation complete? Yes. All the children of the CEO got swapped and everything happened here and there. And who will take control now? CO. The CEO will tell the CEO that brother, we have done it sir. Now the CEO will tell the CFO to do the same work, you do the same work, now whose turn is it for the CFO to switch his children, then what will happen when the CFO switches his children, CA2 will come here, CA2 will come here and CN will come here, now both of them need to do something, no. Now see, has this entire company been switched?"
+    },
+    {
+      "start_time": 2063.52,
+      "end_time": 2097.829,
+      "text": "है हां पूरी कंपनी स्विच हो चुकी है शुरुआत में देखिए कंपनी कैसी लगती थी शुरुआत में कहां गया जी हां शुरुआत में देखिए कंपनी कैसी लगती थी और एंड में देखिए कंपनी कहां पे आ गई हर क्या हर एक सर्कल जिसका बच्चा था वो स्विच हो चुका है हां कोई भी सर्कल उठा के देखिए सीएफओ सीएफओ का बच्चा कैसे चला गया उधर ये अरे हम कुछ गलती कर दिए लेकिन बात बात वही है बात वही है बातों पे ध्यान दीजिए अच्छा ये तो वो था ये तो हम बीच में बनाए थे असली कंपनी ऐसी थी हां असली कंपनी कहीं ऊपर थी ठीक है असली कंपनी ऐसी नहीं थी हां असली कंपनी में ये दोनों इधर-उधर था तो आप समझ रहे हैं ना क्या बोल रहे हैं कि",
+      "source": "caption",
+      "english_text": "Yes, the whole company has been switched. Look at how the company looked in the beginning. Where did it go? Yes, look at how the company looked in the beginning and look at where the company has reached in the end. Every circle that had a child has been switched. Yes, pick any circle and see how the CFO, the CFO's child has gone there. Hey, we made some mistakes but the point is the same. The point is the same. Pay attention to the things. Okay, this was that, this was that, we had created the real company in the middle, it was like this, yes, the real company was somewhere at the top, right. Yes, the real company was not like this. Yes, both of them were here and there in the real company, so you understand what I am saying."
+    },
+    {
+      "start_time": 2097.839,
+      "end_time": 2123.67,
+      "text": "शुरुआत में कंपनी कैसी थी अब कैसी है तो क्या हुआ? शुरू में हम लोग सीईओ से शुरू किए कि भैया तुम करो। तो सी हर एक आदमी क्या करता है? अपने बच्चों को स्वाइप करता है। उसके बाद अपने बच्चों को बोलता है कि जो हम काम किए ना स्वाइप करने का तुम सेम काम करो। तुम सेम काम करो। तो आइए इसका कोड लिख लें। इसके कोड में कुछ नहीं है। इसके कोड में कुछ नहीं है। देखिए नोड नोड का भी वैसे जरूरत नहीं है।",
+      "source": "caption",
+      "english_text": "What was the company like in the beginning and how is it now? Initially we started telling the CEO that brother, you do it. So what does every man do? Swipes your kids. After that he tells his children to do the same work of swiping as he did. You do the same work. So let's write its code. There is nothing in its code. There is nothing in its code. See, there is no need for node node either."
+    },
+    {
+      "start_time": 2123.68,
+      "end_time": 2157.19,
+      "text": "क्योंकि देखिए जब आप किसी भी कंपनी को कितनी बार भी स्वाइप करिए, कितना भी कॉम्प्लेक्स स्वाइप कीजिए सीईओ नहीं बदलने वाला। सीईओ नहीं बदलने वाला है। क्योंकि सीईओ ही तो है जो शुरुआत करता है इनवर्सन करने का ना। सीईओ को कौन स्वाइप करेगा? सीईओ किसी का चाइल्ड है ही नहीं। तो सीईओ कुछ नहीं करेगा। तो आप इसको वॉइड भी बना सकते हैं। आप इसको वॉइड बना सकते हैं। इसका कोई ये बस एक एक्सरसाइज है जो आपको करनी है। देखिए वॉइड इसको हम फन दे देते हैं। और आपको एक शुरुआत में आपको रूट रूट मतलब शुरुआती वाला सीईओ। सबसे पहले क्या करना है? अगर तो मान लीजिए रूट नल है। अगर तो मान लीजिए",
+      "source": "caption",
+      "english_text": "Because see, no matter how many times you swipe any company, no matter how complex you swipe it, the CEO is not going to change. The CEO is not going to change. Because it is the CEO who initiates the inversion. Who will swipe the CEO? The CEO is not anyone's child. So the CEO will do nothing. So you can also make it void. You can make it void. This is just an exercise that you have to do. Look, we give it a fun. And in the beginning you have to be the root root meaning the beginning CEO. What to do first? If so then assume the root is null. if so then accept it"
+    },
+    {
+      "start_time": 2157.2,
+      "end_time": 2191.27,
+      "text": "कि रूट नल है। जस्ट इन केस कि कोई कंपनी है ही नहीं। कोई कंपनी है ही नहीं तो क्या करेंगे? कुछ नहीं। रिटर्न कर देंगे। और क्या कर सकते हैं? वेरी गुड। अब अब रूट नल नहीं है तो क्या होगा? सीईओ क्या करता था? अपने दोनों बच्चों को स्वाप कर देता था। क्या अपने दोनों बच्चों को जल्दी से स्वाप कर देता था। क्या? रूट का लेफ्ट एंड रूट राइट। जब आप स्वाप लिखेंगे तो कोई भी चीज आप स्वाप कर सकते हैं। आप नंबर स्वाइप कर सकते हैं। आप कुछ भी कुछ भी स्वाइप हो जाता है। ठीक है? तो सीईओ अपने दोनों बच्चों को स्वाइप कर चुका है। अब सीईओ क्या बोलता है? अपने बच्चों",
+      "source": "caption",
+      "english_text": "That's the root tap. Just in case there is no company. What to do if there is no company? Nothing. Will return. What else can we do? very good. Now what if there is no root tap anymore? What did the CEO do? He used to swap both his children. Would he swap his two children quickly? What? Root left and root right. When you write swap you can swap anything. You can swipe the number. Anything you do gets swiped. Ok? So the CEO has swiped both his kids. What does the CEO say now? your children"
+    },
+    {
+      "start_time": 2191.28,
+      "end_time": 2217.67,
+      "text": "को बोलता है कि तुम सेम चीज करो। तुम सेम चीज करो। सेम चीज करने का क्या मतलब है? सेम फंक्शन कॉल करो। सेम फंक्शन कॉल करो। फन रूट लेफ्ट। इसका क्या मतलब हुआ? कि भैया तुम सेम काम कर लो और फन रूट राइट। राइट चाइल्ड को क्या बोलेगा कि तुम सेम एक्सरसाइज करो और हो गया। जब ये दोनों काम हो जाएंगे तो रिटर्न कर दो। सिंपल कोड है। सबसे पहले क्या होगा? नल चेक है कि नहीं?",
+      "source": "caption",
+      "english_text": "Tells you to do the same thing. You do the same thing. What does it mean to do the same thing? Call the same function. Call the same function. Fun route left. What does this mean? That brother, you do the same work and do the fun route right. What will you tell the right child to do the same exercise and it is done? When both these tasks are done, return them. It is simple code. What will happen first? Is the tap checked or not?"
+    },
+    {
+      "start_time": 2217.68,
+      "end_time": 2251.589,
+      "text": "उसके बाद सीईओ अपने बच्चों को रिवर्स कर देगा। उसके बाद दोनों बच्चों को बोलेगा कि तुम अपना काम कर लो। जैसे हम तुम लोग के साथ किए। तुम लोग भी अपने काम करके हमको बताना और लास्ट में आके ये रिटर्न हो जाएगा। तो एक ड्राई रन भी कर देते हैं। एक ड्राई रन भी हम बोले ज्यादा टाइम इसमें नहीं लगेगा। ठीक है? तो सबसे पहले आइए ऐसा ड्रग रन कर लें। वन टू थ्री फोर फाइव। ये आपका ट्री है। तो सबसे पहले फन किसके लिए कॉल होगा? वन के लिए। ठीक है? तो क्या वन नल है? नहीं वन नल नहीं है। तो सबसे पहले क्या काम करेगा कि अपने दोनों बच्चों को रिवर्स कर देगा। जब ऐसा ये करेगा ना जब",
+      "source": "caption",
+      "english_text": "After that the CEO will reverse his children. After that he will tell both the children to do their work. Like we did with you guys. You guys also do your work and tell us and this return will be done when you come last. So let's do a dry run also. Even for a dry run, we said it will not take much time. Ok? So first of all let's do such a drug run. One two three four five. This is your tree. So who will be the first to call the fun? For the forest. Ok? So what is forest tap? No, there is no forest tap. So the first thing that will work is to reverse both of your children. When will he do this?"
+    },
+    {
+      "start_time": 2251.599,
+      "end_time": 2285.03,
+      "text": "ऐसा ये करेगा तो थ्री यहां पे आ जाएगा। टू यहां पे आ जाएगा। लेकिन थ्री अकेले नहीं आएगा। थ्री अपने दोनों लोगों को लेके आएगा। थ्री अपने दोनों लोगों को लेके आएगा। तो आपका ट्री ऐसा दिखने लगा है। आपका ट्री ऐसा दिखने लगा है। ओरिजिनल ट्री हम बना देते हैं। ओरिजिनल ट्री हम बना देते हैं ताकि आपको कंपैरिजन में आसानी रहे। ये ओरिजिनल ट्री है। ठीक है? इसको याद रखना है। ये क्या है? ओजी। अब ऐसा दिखने लगा। स्वप तो हो गया। स्वप करा दिया ना वन अपने दोनों बच्चों को। अब क्या करेगा? अपने दोनों बच्चों को बोलेगा कि तुम भी कर लो, तुम भी कर लो। तो सबसे पहले अपने लेफ्ट चाइल्ड को अब इसका लेफ्ट चाइल्ड थ्री बन चुका है। टू नहीं है। फन",
+      "source": "caption",
+      "english_text": "If he does this then three will come here. Two will come here. But Three will not come alone. Three will bring both his people. Three will bring both his people. So your tree starts looking like this. Your tree is starting to look like this. We make the original tree. We create the original tree so that you can make easy comparisons. This is the original tree. Ok? Have to remember this. What is this? OG. Now it started looking like this. The swap is done. He gave away both his children to the forest. What will he do now? He will tell both his children to do it, you too do it. So first of all its left child has now become its left child three. There is no two. Fun"
+    },
+    {
+      "start_time": 2285.04,
+      "end_time": 2315.27,
+      "text": "थ्री और फन टू। आइए फन थ्री चला लेते हैं। फन थ्री चला लेते हैं। फन थ्री क्या करेगा? सबसे पहले दोनों बच्चों को स्वाइप करेगा। सबसे पहले दोनों बच्चों को स्वाइप करेगा। तो इससे क्या होगा कि फाइव यहां आ जाएगा और फोर यहां आ जाएगा। तो स्वाइप कर दिया। उसके बाद दोनों बच्चों को बोलेगा कि तुम सेम चीज करो। दोनों बच्चों को क्या बोलेगा? कि तुम सेम चीज करो। सेम चीज करो। आइए फोर को करवाएं। फन फोर आया। अब फन फोर का कोई बच्चा है नहीं। सॉरी फन फोर नहीं।",
+      "source": "caption",
+      "english_text": "Three and fun two. Let's have fun three. Let's run the fun three. What will the Fun Three do? Will swipe both the children first. Will swipe both the children first. So what will happen is that five will come here and four will come here. So swiped. After that he will tell both the children to do the same thing. What will you say to both the children? That you do the same thing. Do the same thing. Let's get four done. The Fun Four arrived. Now the Fun Four have no children. Sorry no fun four."
+    },
+    {
+      "start_time": 2315.28,
+      "end_time": 2348.87,
+      "text": "पहले फन फाइव फिर फन फोर। तो पहले फन फाइव। फाइव आए। अब फाइव का कोई बच्चा है ही नहीं। तो स्वाप में क्या होगा? स्वाप में कुछ नहीं होगा। नल से नल हो जाएगा। तो ये स्वाइप करेगा। फाइव का कोई बच्चा है ही नहीं। फाइव के अंडर कोई है ही नहीं। तो किसको स्वाइप करो? किसी को नहीं। और अपने दोनों बच्चों को भी कर देगा। तो ठीक है। फन नल को कॉल कर देगा। और फन क्योंकि फाइव का कोई बच्चा है नहीं। अब नल से कुछ होता नहीं है। तो दोनों चल के दोनों खत्म हो जाएगा। तो ये आदमी खत्म हो चुका है। सिमिलरली फोर में होगा। फोर का कोई बच्चा है ही नहीं। तो कुछ करने का जरूरत है नहीं। सिमिलरली फोर भी खत्म और थ्री भी खत्म। अब आइए टू को चलवाइए। टू में सेम काम होगा। जब आप फन टू को चलवाएंगे तो टू",
+      "source": "caption",
+      "english_text": "First the Fun Five, then the Fun Four. So first the fun five. Came five. Now Five does not have any children. So what will happen in the swap? Nothing will happen in the swap. Tap will lead to tap. So it will swipe. Five does not have any children. There is no one under five. So who to swipe? Not to anyone. And will do the same to both his children. Well then. Fun will call the tap. And fun because Five doesn't have any children. Now nothing happens with the tap. So both will go and both will end. So this man is finished. Will be similar in four. Four does not have any children. So there is no need to do anything. Similarly four is over and three is also over. Now let's get 2 running. Same work will be done in two. When you get Fun Too running then Too"
+    },
+    {
+      "start_time": 2348.88,
+      "end_time": 2381.91,
+      "text": "का कोई बच्चा है ही नहीं तो कुछ होगा नहीं। तो ये भी स्वाप करेगा कुछ होगा नहीं। दो बार फन और फन ऑफ नल कॉल करेगा। खत्म हो जाएगा। वेरी गुड। वेरी गुड। ये दोनों खत्म। ये दोनों खत्म। लास्ट में आपका ट्रिक ऐसा दिख रहा है? ऐसा दिख रहा है। क्या पूरा स्वाप हो गया? देख लीजिए ऊपर से। क्या वन के दोनों बच्चे स्वाप हो गए? हां, थ्री टू हो गए। क्या थ्री के दोनों बच्चे स्वाप हो गए? हां जी, थ्री के दोनों बच्चे स्वाइप हो गए। तो ये आप रिटर्न कर देंगे। तो था ना बहुत नकली क्वेश्चन। हम जानते हैं। तो ये इसका छोटा सा कोड है। देख लीजिए। ये बहुत छोटा सा कोड है। दोनों क्वेश्चन अच्छा था। सेम ट्री भी अच्छा था। इनवरर्ट ट्री भी अच्छा था। ये तीनों क्वेश्चन करने के बाद आप",
+      "source": "caption",
+      "english_text": "If there is no child then nothing will happen. So this will also swap and nothing will happen. Tapping Fun and Fun Off twice will call. It will end. very good. very good. Both of these are over. Both of these are over. This is what your trick looks like in the end? It looks like this. Is the swap complete? Take a look from above. Were the two children of the forest swapped? Yes, three became two. Did both of Three's children get swapped? Yes, both the children of Three got swiped. So you will return this. So that was a very fake question. We know. So this is its small code. Take a look. ये बहुत छोटा सा कोड है। दोनों क्वेश्चन अच्छा था। सेम ट्री भी अच्छा था। इनवरर्ट ट्री भी अच्छा था। ये तीनों क्वेश्चन करने के बाद आप"
+    },
+    {
+      "start_time": 2381.92,
+      "end_time": 2393.28,
+      "text": "इनवर्ट और मिरर वाले चीजों को समझ गए होंगे। मेरी ऐसी उम्मीद है। और मिलते हैं कल। कल तो नहीं शायद मंडे को ही मिलेंगे। यह वीडियो सैटरडे को जाएगी। मंडे को मिलते हैं। चलिए।",
+      "source": "caption",
+      "english_text": "इनवर्ट और मिरर वाले चीजों को समझ गए होंगे। मेरी ऐसी उम्मीद है। और मिलते हैं कल। कल तो नहीं शायद मंडे को ही मिलेंगे। यह वीडियो सैटरडे को जाएगी। मंडे को मिलते हैं। Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

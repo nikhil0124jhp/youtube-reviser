@@ -1,0 +1,513 @@
+{
+  "video_id": "S0E1Ix67qbc",
+  "video_title": "Believe Me, You DON'T Know The Binary Search Algorithm | DSA Patterns Course 2026",
+  "video_number": 51,
+  "chunks": [
+    {
+      "start_time": 1.67,
+      "end_time": 28.39,
+      "text": "पढ़ाने से पहले हम जब भी लोगों से पूछते हैं ना कि क्या आपको बाइनरी सर्च आता है? 80-90% बोलते हैं कि हां भाई आता है बाइनरी सर्च। लो = 0, हाई = n - 1, मिड = लो + / 2 ऐसा करके देखते हैं। इधर-उधर हटा देते हैं। तो इससे ज्यादा बेहूदा बात एकदम पॉसिबल नहीं है। मतलब ये वैसा बात है कि हम आपसे पूछ रहे हैं कि आपको खाना बनाना आता है। आप बोल रहे हैं कि हां हां मेरे घर में इतना बड़ा सा डेची रखा हुआ है। वो क्वेश्चन नहीं था। आपके घर में कौन सा डेची रखा हुआ है? वो क्वेश्चन नहीं था। खाना बनाना आता है कि नहीं? फिर आप नहीं डेची रखा हुआ है ना तो हमको आता होगा।",
+      "source": "caption",
+      "english_text": "Before teaching, whenever we ask people, do you know binary search? 80-90% say that yes brother, binary search is available. Low = 0, High = n - 1, Mid = Low + / 2 Let's try this. Let's remove it here and there. So something more absurd than this is simply not possible. It means that we are asking you whether you know how to cook. You are saying that yes yes, such a big dachi is kept in my house. That was not a question. Which daichi is kept in your house? That was not a question. Do you know how to cook or not? Then it is not you who has kept the dachi, neither would we know."
+    },
+    {
+      "start_time": 28.4,
+      "end_time": 63.029,
+      "text": "नहीं। ये बाइनरी सर्च नहीं होता है। ये बाइनरी सर्च का एक सवाल होता है। ये बाइनरी सर्च का फर्स्ट क्वेश्चन है। आपको बाइनरी सर्च का फर्स्ट क्वेश्चन रटवा दिया गया है कि एरे सॉर्टेड है। ऐसे-ऐसे करना है। यही रीज़न है कि आपसे अग्रेसिव काउस, कोको ईटिंग, एलोकेशन, बुक्स, माउंटेन एरे जैसे ही आता है, आपका पूरा होश फकता हो जाता है कि अरे बाप रे इसमें लो हाई क्या है? तो सॉर्टेड भी नहीं लग रहा है देखने में। अब क्या करें इसमें? इस वीडियो में जितना भी कचरा आपके दिमाग में भरा हुआ है बाइनरी सर्च के उसको रिलेटेड, सब हटा दीजिए। आपको हम एक कहानी बताएंगे। कहानी के हिसाब से आपको शुरू से बाइनरी सर्च सिखाएंगे। जिनको आज से पहले नहीं सुने हैं",
+      "source": "caption",
+      "english_text": "No. This is not a binary search. This is a question of binary search. This is the first question of binary search. The first question of binary search has been memorized to you that the array is sorted. It has to be done like this. This is the reason that as soon as you come across aggressive cow, cocoa eating, allocation, books, mountain array, your entire senses gets shocked that oh my god, what is the low and high in this? So it doesn't even look sorted. What to do in this now? In this video, remove all the garbage that is filled in your mind related to binary search. We will tell you a story. According to the story, we will teach you binary search from the beginning. who have not heard before today"
+    },
+    {
+      "start_time": 63.039,
+      "end_time": 90.31,
+      "text": "बाइनरी सर्च के बारे में बहुत अच्छी बात है। वाह! आप एकदम सही पोजीशन पे हैं। जिनको थोड़ा सा भी पता है थोड़ी देर के लिए हम पे विश्वास करके वो सब चीज़े भूल जाइए। आपको पता चल जाएगा इस वीडियो के लास्ट तक कि क्या होता है बाइनरी सर्च? क्वेश्चन नहीं कॉन्सेप्ट क्या होता है। क्यों होता है? क्यों होता है? आपको ये भी रियलाइज़ हो जाएगा कि इसका सर्चिंग और सॉर्टिंग से कोई लेना देना नहीं है। वो सॉर्टेड एरे में लगता है। वो तो उस क्वेश्चन में लगा था ना? उसका रीज़न ये नहीं होता कि सॉर्टेड एरे में लगता है नहीं। और आपको पता चल जाएगा कि यह पूरी तरीके से गेस का गेम है।",
+      "source": "caption",
+      "english_text": "Very good point about binary search. Wow! You are in the perfect position. Those who know even a little, trust us for a while and forget all those things. By the end of this video you will know what binary search is? Not a question, what is a concept? Why does it happen? Why does it happen? You will also realize that this has nothing to do with searching and sorting. It appears to be in a sorted array. He was engaged in that question, wasn't he? Its reason is not that it is not included in the sorted array. And you will realize that it is completely a guessing game."
+    },
+    {
+      "start_time": 90.32,
+      "end_time": 124.789,
+      "text": "यह गेस करने का गेम है। ट्रायल एरर करने का गेम है। आपके नंबर ऑफ़ गेसेस को रिड्यूस करने का गेम है। तो आपको ये चारों आठों चीज़ें पता चल जाएंगी इस वीडियो में। थोड़ा दिमाग खोल के देखिएगा। आइए आपको हम कहानी सुनाते हैं। उससे पहले जो लोग पहली बार आए हैं आप डिस्क्रिप्शन देखेंगे आपको पूरा प्लेलिस्ट मिलेगा। और आपका अगर मन है तो आप इस वीडियो से भी शुरू कर सकते हैं क्योंकि एक इंडिपेंडेंट टॉपिक की तरह हम इसको ट्रीट करने वाले हैं तो आप यहां से भी शुरू कर सकते हैं कोई प्रॉब्लम नहीं है आइए कहानी सुनाते हैं आइए कहानी शुरू करते हैं अब हम ये कहानी से क्यों पढ़ा रहे हैं क्योंकि लोगों को कहानी याद रहती है ठीक है अ कहानी आप कभी भूलते नहीं है तो इसीलिए जरूरी है कि पहले आप कहानी सुनिए उसके बाद इसपे बात करेंगे कि इसपे क्या",
+      "source": "caption",
+      "english_text": "This is a guessing game. It's a game of trial and error. It's a game of reducing your number of guesses. So you will know these four eight things in this video. Open your mind a little and see. Let us tell you the story. Before that, for those who have come for the first time, you will see the description and you will get the complete playlist. And if you feel like it, you can also start from this video because we are going to treat it as an independent topic, so you can start from here also, there is no problem, let us tell the story, let us start the story, now why are we teaching this from the story, because people remember the story, okay, you never forget the story, so it is important that first you listen to the story, after that we will talk about what is in it."
+    },
+    {
+      "start_time": 124.799,
+      "end_time": 158.869,
+      "text": "होता है पंखा तो सबके घर में है ये तो बहुत इंपॉर्टेंट बात है कि पंखा तो आपके घर में होगा ah ख़राब ड्राइंग के लिए माफी चाहेंगे लेकिन हमको इतना ही आता है। तो आइए आपका पंखा है। आप यहां पे बेड पे आराम से सो रहे हैं और आपके पास एक रेगुलेटर है। पंखा का रेगुलेटर होता है जिसे एक नंबर, दो नंबर, तीन नंबर आप चला सकते हैं। ओके? अब अब मौसम है गर्मी का। अब मौसम किसका है? गर्मी का है। अच्छा। आपको गर्मी से प्रॉब्लम है। आपको चाहिए कि गर्मी ना लगे। आपकी एक रिक्वायरमेंट है कि गर्मी ना लगे। ऑब्वियस सी बात है। गर्मी के मौसम में गर्मी ना लगे। अच्छा। ठंड कितनी भी हो जाए। मतलब पंखा कितना भी तेज चल उससे आपको प्रॉब्लम नहीं है। क्योंकि क्या हम लोग",
+      "source": "caption",
+      "english_text": "There is a fan in everyone's house, it is very important that there is a fan in your house, ah, sorry for the bad drawing but this is all we know. So come here is your fan. You are sleeping comfortably on the bed here and you have a regulator. The fan has a regulator which you can operate on number one, number two or number three. Ok? Now it is summer season. Whose weather is it now? It's summer. Good. You have problem with heat. You don't want to feel hot. One of your requirements is that you should not feel hot. It's an obvious thing. Do not feel hot during summer season. Good. No matter how cold it gets. Meaning, no matter how fast the fan runs, you do not have a problem with it. because are we"
+    },
+    {
+      "start_time": 158.879,
+      "end_time": 184.55,
+      "text": "क्या करते हैं? जब गर्मी के मौसम में एक ही रिक्वायरमेंट होता है ना कि गर्मी ना लगे। अगर होता है कि नहीं नहीं बहुत ज्यादा ठंडा हो गया तो कंबल ओढ़ देते हैं तो आप मान के चलिए आपको बस गर्मी से दिक्कत है कि एक बार गर्मी ख़तम हो जाए बस ओके। लेकिन पंखा आप जितनी जोर से चलाएंगे पंखा आप जितने नंबर पे चलाएंगे फॉर एग्जांपल अगर आप पांच नंबर पे चला देते हैं तो पंखा तेजी से चलेगा। तो बिजली बिल आएगा। आप मान के चलिए कि पंखा आप जितनी तेज़ चलाएंगे उतना ज्यादा बिजली का बिल आएगा जो कि ऑब्वियसली आता भी है। है ना?",
+      "source": "caption",
+      "english_text": "What do you do? When there is only one requirement in the summer season, that is not to feel hot. If it doesn't get too cold and you cover yourself with a blanket, then let's assume that you only have a problem with the heat and once the heat is over, it's okay. But the louder you run the fan, the number of times you run the fan depends on it. For example, if you run the fan at number five, the fan will run faster. Then the electricity bill will come. Let us assume that the faster you run the fan, the higher the electricity bill will be, which is obvious. Isn't it?"
+    },
+    {
+      "start_time": 184.56,
+      "end_time": 211.19,
+      "text": "तो अब किसको चाहिए कि बिजली का बिल ज्यादा आए? सब लोग चाहता है कि बिजली का बिल कम से कम आए। तो आपको एक भी एक की रिक्वायरमेंट है कि मेरा बिल कम से कम आए। कम से कम आए। ओके? अब जब ये दोनों आपकी रिक्वायरमेंट है तो हम लोग क्या करते हैं? किसी आदमी को मालूम नहीं होता है कि पंखा का रेगुलेटर किस नंबर पे करना है। सब लोग गेस ही करते हैं। हम लोग भी गेस ही करते हैं कि आप एक नंबर पे बोलते हैं कि एक नंबर पे चलाओ। फिर बोलते हैं कि ना बहुत गर्मी बहुत धीरे चल रहा है। दो नंबर पे करो। फिर दो पे करता है। फिर बोलते हैं ना ना और करो ना जरा। तीन नंबर पे करता है।",
+      "source": "caption",
+      "english_text": "So who wants higher electricity bills now? Everyone wants the electricity bill to be as low as possible. So you have one requirement that my bill should be at least Rs. At least come. Ok? Now when both these are your requirements then what do we do? No person knows at what number the regulator of the fan should be set. Everyone guesses. We also guess that you say one number or run it on one number. Then they say that it is very hot and it is going very slowly. Do it on number two. Then does it on two. Then they say no no and just do it. Does it on number three."
+    },
+    {
+      "start_time": 211.2,
+      "end_time": 245.27,
+      "text": "फिर चार नंबर पे करता है। तो एक पॉइंट आता है मान लीजिए चार नंबर पे वो पॉइंट आता है कि आप बोलते हैं हां हां रुको रुको रुको रुको। अब हमको अच्छा लगने लगा। अब हम सो सकते हैं तो आप सो जाते हैं। Okay? तो यहां पे आप वही काम करेंगे क्योंकि पहले से मालूम करने का तो कोई तरीका है नहीं है। पता नहीं बहुत जादुई चीज़ है रेगुलेटर की। पहले से किसी को मालूम नहीं होता। सबको टेस्ट ही करना पड़ता है। तो आप भी रेगुलेटर का एक-एक एक-एक प्लग करके टेस्ट करते हैं। क्या टेस्ट करते हैं? कि एक ऐसा पॉइंट आए जिसमें गर्मी ना लगे। जिसमें पंखा इतना तेज़ तो चल रहा हो कि आपको गर्मी ना लगे, आप कंफर्टेबल हो के सो सकें। और बिजली बिल भी कम से कम आए। क्योंकि अगर ये बिजली बिल की दिक्कत नहीं होती ना तो आप पंखे को क्या करते मैक्सिमम पे कर देते।",
+      "source": "caption",
+      "english_text": "Then does it on number four. So a point comes, let's say at number four, that point comes that you say yes yes wait wait wait wait. Now we started feeling good. Now we can sleep so you sleep. Okay? So here you will do the same thing because there is no way to know in advance. I don't know, the regulator is a very magical thing. No one knows in advance. Everyone has to test. So you also test the regulators by plugging them one by one. What test do you do? That there comes a point in which there is no heat. In which the fan is running so fast that you do not feel hot, you can sleep comfortably. And the electricity bills also came to a minimum. Because if there was no problem of electricity bill then what would you have done to the fan, you would have turned it on to maximum."
+    },
+    {
+      "start_time": 245.28,
+      "end_time": 278.07,
+      "text": "मान लीजिए आप सातवें नंबर पे करके और सो जाते हैं। लेकिन सातवें नंबर पे करेंगे तो बिजली बिल बहुत ज़्यादा आएगा। क्योंकि सातवां मैक्सिमम है तो सातवें बहुत ज्यादा आएगा। हो सकता है आपका जो रिक्वायरमेंट है वो पांच नंबर पे करके भी सेटिस्फाई हो जा रहा हो। मतलब पांच पे भी आपको अच्छा खासा कम्फर्टेबल लग रहा हो। लेकिन, अगर आप डायरेक्ट सात पे कर देंगे तो आपको मालूम नहीं चलेगा। इसीलिए जरूरी है कि आपको ट्रायल एरर करना पड़ेगा। ट्रायल एरर या आपको गेस। एक तरीके से गेस या तो ट्रायल एरर ही होता है पंखा वाला। सब लोग पंखे में ट्रायल एरर ही करते हैं। Okay? तो आप ट्राई लेटर कैसे करेंगे? देखिए सबसे पहले आप क्या आप नॉर्मली हम लोग क्या करते हैं?",
+      "source": "caption",
+      "english_text": "Suppose you turn to number seven and go to sleep. But if you do it at number seven then the electricity bill will be very high. Because seventh is maximum then seventh will come too much. It is possible that your requirement is being satisfied even by paying five numbers. It means that even at five you are feeling quite comfortable. But, if you pay directly to Saat, you will not know. That is why it is important that you have to make trial and error. Trial error or you guess. In a way, the fan is either guessing or trial error. Everyone makes trial errors with the fan. Okay? So how do you do a try letter? Look, first of all, what do you normally do?"
+    },
+    {
+      "start_time": 278.08,
+      "end_time": 311.909,
+      "text": "सबसे पहले आप एक नंबर पे करेंगे पंखे को। सबसे पहले आप एक नंबर पे करेंगे। इसमें आपको मान लीजिए होता है कि इसमें गर्मी लग रहा है। अच्छा अब अगर गर्मी लग रहा है तो बिजली बिल का तो कोई पॉइंट ही नहीं है। मतलब अगर पंखा चला के भी गर्मी लग रहा है तो हम पंखा लगाए क्यों है। है ना? ओके। तो आप एक नंबर पे आपकी बात नहीं बनी। आप पंखे को दो नंबर पे कर दिए। दो नंबर पे ही मान के चलिए कि आपको गर्मी लग रहा है। दो नंबर पे ही मान के चलिए कि अभी भी गर्मी लग रहा है तो क्या करेंगे? कुछ नहीं कर सकते आगे बढ़ेंगे। तीन नंबर पे तीन नंबर पर भी गर्मी ही लग रहा है। आप बहुत गर्म आदमी है। आपको गर्म मिसाज के आदमी है। आपको अभी भी गर्मी लग रहा है। ओके आप चार नंबर पे करते हैं। आप",
+      "source": "caption",
+      "english_text": "First of all you will pay a number to the fan. First of all you will pay a number. In this you have to assume that it is feeling hot. Well, now if it is feeling hot then there is no point in electricity bill. Meaning, if we feel hot even after running the fan, then why do we have the fan installed? Isn't it? Ok. So you did not agree on one number. You turned the fan to number two. Let's assume on number two that you are feeling hot. Let's assume number two that you are still feeling hot, then what will you do? Can't do anything, will move ahead. It's hot even at number three. You are a very hot man. You are a hot-tempered man. You still feel hot. Okay you do it on number four. you"
+    },
+    {
+      "start_time": 311.919,
+      "end_time": 345.99,
+      "text": "चार टोटल मान लीजिए सात नंबर है पंखे में। टोटल कितने हैं? सात उसमें पॉइंट्स हैं। ओके? चार नंबर पे आप करते हैं तो अब आपको कंफर्टेबल लग रहा है। अब आपको जिंदगी में पहली बार कंफर्टेबल महसूस हुआ। ओके? अब एक बात बताइए। क्या आपको और पांच नंबर तक जाने की जरूरत है क्या? क्योंकि देखिए ये तो बहुत नेचुरल इसीलिए हम रियल लाइफ एग्जांपल ले रहे हैं क्योंकि आपको इंट्यूशन खुद ब खुद आए दिमाग में हमको कोई फोर्स ना करना पड़े कि नहीं नहीं ऐसे ही सोचिए ऐसा ही होता है। नहीं ये बहुत रियल लाइफ है कि अगर आपको चार नंबर पे करके कंफर्टेबल लग रहा है। कंफर्टेबल का मतलब",
+      "source": "caption",
+      "english_text": "Four total, let's say seven numbers are in the fan. What is the total? There are seven points in it. Ok? If you do it on number four then now you are feeling comfortable. Now you felt comfortable for the first time in your life. Ok? Now tell me one thing. Do you need to go to number five? Because see, this is very natural, that is why we are taking a real life example, because the intuition comes to your mind automatically, we don't have to put any force on it, think like this, this is what happens. No, this is very real life that if you are feeling comfortable by paying number four. meaning of comfortable"
+    },
+    {
+      "start_time": 346.0,
+      "end_time": 378.95,
+      "text": "है कि गर्मी नहीं लग रहा है। तो क्या पांच नंबर पे करके आपको गर्मी लगने लगेगा क्या? ऐसा पॉसिबल है कि चार नंबर पे गर्मी नहीं लग रहा है और पांच नंबर पे गर्मी लग जाएगा? नहीं। या बिल्कुल पॉसिबल नहीं है क्योंकि रियल लाइफ है। नहीं लग सकता है। आपको पांच नंबर पे भी कंफर्टेबल लगेगा। हो सकता है थोड़ा ज्यादा ठंडा लगे। हो सकता है थोड़ा ज्यादा ठंडा ना लगे लेकिन हम लोग को ठंड से प्रॉब्लम नहीं है। हम लोग के पास कमल रजाई है तो हम लोग ठंड को बर्दाश्त करने के कैपेबल हैं। अच्छा। सिमिलरली आप छह नंबर पे करेंगे तो ये भी पॉसिबल नहीं है कि छह नंबर पे गर्मी लगने लगे। छह नंबर पे भी आपको मजा ही आएगा और सात नंबर पे तो ऑब्वियस्ली मजा आएगा ही आएगा। तो इससे हमको पता चलता है कि एक बार",
+      "source": "caption",
+      "english_text": "It doesn't feel that hot. So will you feel hot after paying number five? Is it possible that there is no heat on number four and it will feel hot on number five? No. Or it is not possible at all because it is real life. It may not seem possible. You will feel comfortable even at number five. It may seem a little too cold. It may not seem very cold but we do not have a problem with the cold. We have a lotus quilt so we are capable of tolerating the cold. Good. Similarly, if you do it at number six then it is also not possible that you will start feeling hot at number six. You will have fun even at number six and obviously you will have fun at number seven. So from this we know that once"
+    },
+    {
+      "start_time": 378.96,
+      "end_time": 413.59,
+      "text": "आपको चार नंबर पे अच्छा लगने लगा तो आप क्या करते हैं? आप सो जाते हैं। आप सो जाते हैं। क्यों? क्यों ऐसा करते हैं? क्योंकि देखिए जब आपको चार नंबर पे ठंड लग रहा है, ऑब्वियस सी बात है कि आपको चार पे, पांच पे, छह पे, सात पे सब पे ठंड लगेगा। सब पे ठंड लगेगा। तो आप थ्योरिटिकली थियोटिकली आप इन चारों में से कोई भी नंबर पे अपना पंखा करके सो सकते थे। लेकिन आपका एक और रिक्वायरमेंट क्या था? बिजली बिल। क्या? बिजली बिल। बिजली बिल कम से कम। बिजली बिल तो कोई ज्यादा से ज्यादा नहीं चाहता ये तो बिल्कुल बेकार बात है कि बिजली बिल ज्यादा नहीं। बिजली बिल कम ही चाहिए ना। ओके। तो आपका बिजली बिल कम से कम। इन चारों में से सबसे कम",
+      "source": "caption",
+      "english_text": "What do you do if you start liking number four? You fall asleep. You fall asleep. Why? Why do this? Because see, when you are feeling cold on number four, it is obvious that you will feel cold on number four, on five, on six, on seven. Everyone will feel cold. So theoretically you could sleep on any of these four numbers with your fan on. But what was your other requirement? Electricity bill. What? Electricity bill. Minimize electricity bills. No one wants a high electricity bill. It is completely useless that the electricity bill is not high. The electricity bill should be low. Ok. So your electricity bill is minimal. lowest among these four"
+    },
+    {
+      "start_time": 413.6,
+      "end_time": 447.749,
+      "text": "बिजली बिल चार नंबर पे आएगा। ऑब्वियस सी बात है ना चार नंबर पे धीरे चलेगा तो सबसे कम पांच पे थोड़ा ज्यादा आएगा। छह पे उससे थोड़ा ज्यादा आएगा। सात पे सबसे ज्यादा आने लगेगा। तो आपकी दोनों रिक्वायरमेंट आपकी दोनों रिक्वायरमेंट कहां सेटिस्फाई हो रही है? चार नंबर पे। चार नंबर पे सेटिस्फाई हो रही है। ठीक है? आप कैसे पता किए? आपको कुछ पता नहीं था ना। आप गेस किए गेस। गेस या तो ट्राई एरर कर लिए। ट्राई एरर कर लिए। मतलब एक से शुरू किए गेस करना। एक पे बात नहीं बनी, दो पे बात नहीं बनी। तीन पे बात नहीं बनी। चार पे। चार पे पहली बार बात बनी। चार पे आप पहली बार गर्मी से कंफर्टेबल आए और आप चार पे रुक गए और आप चार पे कंफ़र्टेबल होके सो गए। यह",
+      "source": "caption",
+      "english_text": "Electricity bill will come at number four. It is obvious that if you move slowly on number four, you will at least get a little more on number five. A little more than that will come at six. Most of the people will start coming at seven. So where are both your requirements being satisfied? On number four. Being satisfied on number four. Ok? How did you find out? You didn't know anything, right? You guessed guessed. Guess or try and make an error. Tried and made an error. Means guessing starting from one. There was no agreement on one, there was no agreement on two. Things didn't work out on three. On four. For the first time we talked to four. At four o'clock you became comfortable with the heat for the first time and you stopped at four and after four you became comfortable and fell asleep. this"
+    },
+    {
+      "start_time": 447.759,
+      "end_time": 475.749,
+      "text": "एक तरीका हुआ इस प्रॉब्लम को सॉल्व करने का। क्या? यह एक तरीका हुआ। एक तरीका है कि आप इस प्रॉब्लम को ऐसे सॉल्व कर सकते हैं। नॉर्मली हम लोग ऐसे ही सॉल्व करते हैं। लेकिन और एक तरीका भी है और एक तरीका भी है। देखिए। अभी हम लोग कोई कोड, कोई एल्गोरिदम, किसी चीज़ का बात नहीं कर रहे। सब रियल लाइफ पे चल रहा है कि आपको पंखे का नंबर खोजना है ये आपकी प्रॉब्लम है। तो एक तरीका था कि आप एक नंबर, दो नंबर, तीन नंबर, चार नंबर पे आए और चार नंबर पे रुक गए। लेकिन एक और तरीका भी है। क्या है बताते हैं।",
+      "source": "caption",
+      "english_text": "There was a way to solve this problem. What? This was one way. There is a way that you can solve this problem. Normally we solve it like this. But there is another way and another way. See. Right now we are not talking about any code, any algorithm, anything. Everything is happening in real life that you have to find the fan's number, this is your problem. So one way was that you came to number one, number two, number three, number four and stopped at number four. But there is another way also. Tell me what it is."
+    },
+    {
+      "start_time": 475.759,
+      "end_time": 502.869,
+      "text": "इमेजिन कीजिए आपके पंखे में चार लेवल है। आपके पंखे में कितने लेवल है? 1 2 3 4 5 6 7 सॉरी सात लेवल है। सात लेवल या सात नंबर का आपका रेगुलेटर है। ठीक है? अब आपको इनमें से एक अपना लिए चुनना है। क्या चुनना है? जिसमें आपको गर्मी ना लगे, गर्मी ना लगे और बिल आपका कम से कम आए। कम से कम मतलब जितना कम हो सकता है उतना कम आए। ओके? तो आपको एक चुनना है।",
+      "source": "caption",
+      "english_text": "Imagine your fan has four levels. How many levels does your fan have? 1 2 3 4 5 6 7 Sorry there are seven levels. Level seven or number seven is your regulator. Ok? Now you have to choose one of these for yourself. What to choose? In which you do not feel hot, you do not feel hot and your bills are minimal. Minimal means as little as possible. Ok? So you have to choose one."
+    },
+    {
+      "start_time": 502.879,
+      "end_time": 536.55,
+      "text": "पहले वाले में आप क्या किए थे? पहले वाले में भी आप आपको मालूम नहीं था ना? तो आप गेस करना ही शुरू किए थे कहां से? वन से लेके गेस करना शुरू किए थे। 1 2 3 4 लाइन से गेस कर रहे थे। हम मेरा मन अभी लाइन से गेस करने का नहीं है। मेरा मन है ना हम कुछ भी कर सकते हैं। मेरा रूम है, मेरा घर है। हम कुछ भी करें। हमको लाइन से गेस करने का ज़रूरत नहीं है। हमको मन नहीं है। जरुरत क्या है? हमको मन नहीं है। हम कोई भी एक रैंडम नंबर अभी आपके पास क्या-क्या बचा हुआ है? एक से सात गेस करने के लिए बचा हुआ है। ओके? एक से सात के बीच में कोई भी एक रैंडम नंबर हम गेस करना चाहते हैं। कोई भी एक रैंडम नंबर मान लीजिए मान लीजिए आप नंबर थ्री गेस करते हैं। आप नंबर थ्री गेस कर लेते हैं। मान लीजिए जो हो",
+      "source": "caption",
+      "english_text": "What did you do in the first one? You didn't know about the first one too, right? So where did you start gassing from? Started gassing from the forest. Were guessing from 1 2 3 4 line. I don't feel like guessing the line right now. I feel like we can do anything. This is my room, this is my house. We can do anything. We don't need to gas the line. We don't feel like it. What is the need? We don't feel like it. We are any one random number. What do you have left now? One to seven left to guess. Ok? We want to guess any random number between one and seven. Take any random number. Suppose you guess the number three. You guess number three. let's say whatever happens"
+    },
+    {
+      "start_time": 536.56,
+      "end_time": 571.43,
+      "text": "सकता है ना? रेंडम में कुछ भी हो सकता है। ओके? अब जब आप नंबर थ्री गेस करते हैं तो आपको पता चलता है कि जब आप तीन नंबर गेस किए तो आपको गर्मी लग रही है। आपको गर्मी लग रही है। क्योंकि ऊपर हम लोग देखे थे मान लीजिए कि तीन नंबर पे आपको गर्मी लग रहा है। ओके? तो तीन नंबर पे तो आपको पंखा नहीं चलाना चाहिए। तीन नंबर पे तो पंखा नहीं चलाना चाहिए। क्यों? क्योंकि तीन नंबर पे तो गर्मी लग रहा है ना अब गर्मी में हम क्यों बिल का इसमें बिल का कोई चिंता नहीं है। गर्मी लगने पे हमको बिल से कोई लेना देना ही नहीं है। गर्मी लग रहा है तो इस पंखे का जो ऊपर पंखा है उसका पॉइंट ही चला चूका है। हमको गर्मी नहीं चाहिए। तो आपको ये समझ में आता है कि तीन तो आपका नंबर",
+      "source": "caption",
+      "english_text": "Can? Anything can happen at random. Ok? Now when you guess the number three you realize that when you guess the number three you are feeling hot. You are feeling hot. Because we saw above, suppose you are feeling hot at number three. Ok? So you should not run the fan on number three. The fan should not be used at number three. Why? Because it is getting hot on number three, now why are we in the heat, there is no worry about the bill. We have nothing to do with bills when it's hot. If it is feeling hot then the point of the fan at the top has already been used. We don't want heat. So you understand that three is your number."
+    },
+    {
+      "start_time": 571.44,
+      "end_time": 602.63,
+      "text": "नहीं हो सकता। आप तीन नंबर पे करके नहीं सो सकते हैं। लेकिन लेकिन लेकिन आपको एक बहुत और इंपॉर्टेंट बात पता चलती है। बहुत एक हिडन इंपॉर्टेंट बात पता चलती है। अगर आप बुद्धिमान है तो अगर आप बुद्धिमान है तो? एक बात बताइए आपको तीन नंबर पर पंखा करने से गर्मी लग रहा है? क्या दो नंबर पे आपको गर्मी लगेगा कि कंफर्टेबल लगने लगेगा? अगर आपको पंखा तीन नंबर से गर्मी लग रहा है तो दो नंबर पे गर्मी लगेगा कि कंफर्टेबल लगेगा? अरे दो नंबर पे भी तो गर्मी लगेगा। दो नंबर मतलब",
+      "source": "caption",
+      "english_text": "Can't happen. You can't sleep after paying number three. But but but you come to know something very important. A very hidden important thing comes to light. If you are intelligent then if you are intelligent? Tell me one thing, are you feeling hot by fanning number three? Will you feel hot or comfortable at number two? If the fan is getting heat from number three, will it feel comfortable at number two? Hey, it will be hot even on number two. two numbers mean"
+    },
+    {
+      "start_time": 602.64,
+      "end_time": 636.71,
+      "text": "धीरे चलेगा ना पंखा। यस। और क्या एक नंबर पे भी आपको गर्मी ही लगेगा? येस। एक नंबर पे भी गर्मी लगेगा। अगर हमको तीन नंबर पर गर्मी लग रहा है तो ऐसा कैसे हो सकता है कि दो नंबर पर कंफर्टेबल लगने लगेगा और ऐसा कैसे हो सकता है कि एक नंबर पे कंफर्टेबल लगे तो बेहूदा बात है नहीं। अगर तीन नंबर का पंखा धीरे चल रहा है तो दो नंबर का पंखा उससे भी धीरे चलेगा। एक नंबर का पंखा उससे ज्यादा धीरे चलेगा। इसका क्या मतलब है? आप गेस किए। आप तीन को क्या गेस किए रैंडमली गेस किए। आपको पता चलता है कि तीन नंबर रॉन्ग गेस है। तीन नंबर",
+      "source": "caption",
+      "english_text": "The fan will run slowly. Yes. And will you feel hot even on number one? Yes. There will be heat on number one also. If we are feeling hot at number three, then how can it be that we feel comfortable at number two and how can it be that we feel comfortable at number one, then it is not ridiculous. If fan number three is running slowly then fan number two will run even slower. Fan number one will run more slowly than that. What does it mean? You gasped. What guesses did you three guess randomly? You realize that the number three is the wrong guess. number three"
+    },
+    {
+      "start_time": 636.72,
+      "end_time": 669.67,
+      "text": "रॉन्ग गेस है। रॉन्ग गेस का क्या मतलब है कि उससे गर्मी लग रहा है तो सही गेस नहीं हुआ ना? सही गेस नहीं हुआ ना? रोंग गेस है। लेकिन इसके साथ-साथ आपको यह भी क्या पता चल रहा है कि वन और टू भी मेरे रोंग गेसेस होने वाले हैं। होने बिना गेस किए आपको पता चल गया कि वन और टू गलत हो सकता है। बिना गेस किए आपको पता चल गया कि वन और टू आपका आंसर नहीं हो सकता। वन और टू भी गलत होने वाला है। ये बात ऊपर वाले तरीके में नहीं हो रही थी। जब आप एक को गेस किए थे। आपको बस यही पता चला था कि एक से गर्मी लग रही है मतलब एक रोंग है। आपको किसी और नंबर के बारे में पता नहीं था।",
+      "source": "caption",
+      "english_text": "It's a wrong guess. What does wrong gas mean? If it feels hot then it is not the right gas, right? Didn't get the right gas, right? Wrong guess. But along with this, what do you also know that one and two are also going to be my wrong guesses. Without having to guess, you realize that one or two could be wrong. Without guessing you came to know that one and two cannot be your answer. One and two are also going to be wrong. This was not happening in the above manner. When you gassed one. All you got to know was that one is feeling hot, which means there is one color. You didn't know about any other number."
+    },
+    {
+      "start_time": 669.68,
+      "end_time": 704.47,
+      "text": "आपको किसी और नंबर के बारे में पता नहीं था। लेकिन जब आप रैंडमली तीन को गेस किए तो आपको पता चला कि अगर तीन रॉन्ग है। अगर तीन रॉन्ग है। राइट? कभी देखेंगे। लेकिन अभी तो तीन रॉन्ग है, तो आपको क्या पता चल गया? एक और दो पक्का पक्का रॉन्ग होगा। तो क्या आपको अब एक और दो गेस करने की ज़रूरत है? आपको पहले से पता है कि वह गेस करेंगे आप हार जाएंगे। आप जुआ खेल रहे हैं। एक तरीके से क्या है? जुआ खेल रहे हैं ना। आपको पहले से पता है कि आप कोई पत्ता फेकेंगे तो आप हारने वाले हैं तो क्या आप वो पत्ता फेकेंगे? क्यों फेकेंगे? आपका दिमाग थोड़ी खराब है। जल्दी-जल्दी सो रहा है ना भाई। तो हम लोग क्या करेंगे? अपने अपने दिमाग से मतलब जिसमें हम आपको गेस",
+      "source": "caption",
+      "english_text": "You didn't know about any other number. But when you guessed three randomly, you came to know that if three is wrong. If three are wrong. Right? Will see sometime. But there are still three mistakes, so what have you found out? Another two would definitely be wrong. So do you need to guess another two now? You already know that he will guess and you will lose. You are gambling. What is one way? You are gambling, right? You already know that if you throw a card, you are going to lose, so will you throw that card? Why would you throw it away? आपका दिमाग थोड़ी खराब है। जल्दी-जल्दी सो रहा है ना भाई। So what will we do? अपने अपने दिमाग से मतलब जिसमें हम आपको गेस"
+    },
+    {
+      "start_time": 704.48,
+      "end_time": 732.949,
+      "text": "करना है उससे थ्री को तो हटा ही देंगे। थ्री तो गया लेकिन वन और टू भी गया। वन और टू भी गया। बिना गेस किए आपको पता चलेगा कि वन और टू नहीं हो सकता है। वेरी गुड। ओके। आगे आ जाइए। अब बचा क्या? चार पांच छह सात। फिर से रैंडम गेस कीजिए और इस समय मान लीजिए आप छह गेस करते हैं। मान लीजिए आप ये वाला गेस करते हैं कि चलो छह गेस करने का क्या मतलब है? रेगुलेटर को उस नंबर पे कर दिए। बस बस यही मतलब है रेगुलेटर को उस नंबर पे छह नंबर पे। अब देखिए क्या होगा? अब देखिएगा क्या होगा।",
+      "source": "caption",
+      "english_text": "करना है उससे थ्री को तो हटा ही देंगे। थ्री तो गया लेकिन वन और टू भी गया। वन और टू भी गया। बिना गेस किए आपको पता चलेगा कि वन और टू नहीं हो सकता है। very good. Ok. Come forward. What is left now? चार पांच छह सात। फिर से रैंडम गेस कीजिए और इस समय मान लीजिए आप छह गेस करते हैं। मान लीजिए आप ये वाला गेस करते हैं कि चलो छह गेस करने का क्या मतलब है? रेगुलेटर को उस नंबर पे कर दिए। बस बस यही मतलब है रेगुलेटर को उस नंबर पे छह नंबर पे। Now see what will happen? अब देखिएगा क्या होगा।"
+    },
+    {
+      "start_time": 732.959,
+      "end_time": 764.87,
+      "text": "छह नंबर पे जब आप किए तो बड़ी इंटरेस्टिंग चीज़ हुई। बहुत इंटरेस्टिंग बहुत ध्यान से सुनिएगा अब। ये ज्यादा इंपॉर्टेंट है बल्कि गलत वाला तो सबको समझ में आता है कि चलो तीन पे गर्मी लग रहा है तो तीन तो आंसर नहीं है। एक और दो पे गर्मी ही लगेगा तो एक और दो भी नहीं। वो अच्छा आसान है। ये थोड़ा डिफिकल्ट है देखिए। छह नंबर पे आपको कंफर्टेबल लग रहा है। आपको कंफर्टेबल लग रहा है। क्यों? क्योंकि हम लोग अस्यूम किए हैं कि आपको चार के बाद से कंफर्टेबल लगने लगेगा। ऊपर वाले एग्जांपल से आप कुछ भी अस्यूम कर सकते हैं। लेकिन हमारे एग्जांपल के अनुसार हम अपने हिसाब से हमको चार नंबर पे अच्छा लगा था। छह नंबर पे आप मान के चलिए कि आपको कंफर्टेबल लग रहा है।",
+      "source": "caption",
+      "english_text": "छह नंबर पे जब आप किए तो बड़ी इंटरेस्टिंग चीज़ हुई। बहुत इंटरेस्टिंग बहुत ध्यान से सुनिएगा अब। ये ज्यादा इंपॉर्टेंट है बल्कि गलत वाला तो सबको समझ में आता है कि चलो तीन पे गर्मी लग रहा है तो तीन तो आंसर नहीं है। एक और दो पे गर्मी ही लगेगा तो एक और दो भी नहीं। वो अच्छा आसान है। ये थोड़ा डिफिकल्ट है देखिए। छह नंबर पे आपको कंफर्टेबल लग रहा है। आपको कंफर्टेबल लग रहा है। Why? क्योंकि हम लोग अस्यूम किए हैं कि आपको चार के बाद से कंफर्टेबल लगने लगेगा। ऊपर वाले एग्जांपल से आप कुछ भी अस्यूम कर सकते हैं। लेकिन हमारे एग्जांपल के अनुसार हम अपने हिसाब से हमको चार नंबर पे अच्छा लगा था। छह नंबर पे आप मान के चलिए कि आपको कंफर्टेबल लग रहा है।"
+    },
+    {
+      "start_time": 764.88,
+      "end_time": 799.19,
+      "text": "और आपको कुछ नहीं मालूम है। आपको बस इतना मालूम है कि छह पे पंखा किए हां अच्छा लगने लगा। अच्छा लगा। अचानक अच्छा लगने लगा। ओके। तो क्या आपको करना चाहिए कि देखो छह में तो अच्छा लग रहा है। तो क्या आपको छह नंबर पर करके सो जाना चाहिए? एक रास्ता ये भी है मतलब आपके दिमाग में आएगा कि हां भाई अच्छा लगने लगा तो सो जाओ ना। अच्छा लगने लगा तो सो जाओ। लेकिन देखिए एक बात आपको क्या है? छह नंबर पे आप करके सो सकते हैं। छह नंबर पे आप करके सो सकते हैं। आपकी एक प्रॉब्लम तो ये सॉल्व हो गई क्या? गर्मी वाली प्रॉब्लम सॉल्व हो गई। लेकिन लेकिन क्या छह नंबर पे सबसे कम बिजली का बिल आएगा क्या? सबसे कम बिजली का बिल आएगा",
+      "source": "caption",
+      "english_text": "और आपको कुछ नहीं मालूम है। आपको बस इतना मालूम है कि छह पे पंखा किए हां अच्छा लगने लगा। I liked it. अचानक अच्छा लगने लगा। Ok. तो क्या आपको करना चाहिए कि देखो छह में तो अच्छा लग रहा है। तो क्या आपको छह नंबर पर करके सो जाना चाहिए? एक रास्ता ये भी है मतलब आपके दिमाग में आएगा कि हां भाई अच्छा लगने लगा तो सो जाओ ना। अच्छा लगने लगा तो सो जाओ। लेकिन देखिए एक बात आपको क्या है? छह नंबर पे आप करके सो सकते हैं। छह नंबर पे आप करके सो सकते हैं। आपकी एक प्रॉब्लम तो ये सॉल्व हो गई क्या? गर्मी वाली प्रॉब्लम सॉल्व हो गई। लेकिन लेकिन क्या छह नंबर पे सबसे कम बिजली का बिल आएगा क्या? सबसे कम बिजली का बिल आएगा"
+    },
+    {
+      "start_time": 799.2,
+      "end_time": 833.509,
+      "text": "क्या? आएगा क्या? अब इस क्वेश्चन का आंसर कैसे करते हैं? मान लीजिए मान लीजिए। अब देखिए छह नंबर पे कंफर्टेबल तो है लेकिन क्या छह नंबर पे सबसे कम बिल आएगा? अगर अगर अगर एक ऐसा सिनेरियो हो अगर पांच नंबर पे करके भी आपको कंफर्टेबल लगता। आपको मालूम नहीं है। हम लोग बस सोच रहे हैं अगर मगर कर रहे हैं। अगर पांच पे लगता अगर मालूम अभी कुछ नहीं है। अभी तो आप एक्सपेरिमेंट कर रहे है ना। अभी तो आप गेस कर रहे हो तो मालूम कुछ नहीं है। लेकिन अगर पांच नंबर पे करके कंफ़र्टेबल लगता तो आपको पांच नंबर पे करके सोना चाहिए था।",
+      "source": "caption",
+      "english_text": "What? Will he come? Now how do we answer this question? Suppose, suppose. Now see, it is comfortable at number six, but will the bill be the lowest at number six? If there is such a scenario if you feel comfortable even after paying number five. You don't know. We are just thinking if buts and doing it. If it seems at five, if nothing is known yet. Right now you are experimenting, right? Right now you are guessing so you don't know anything. But if you felt comfortable sleeping after paying number five then you should have slept after paying number five."
+    },
+    {
+      "start_time": 833.519,
+      "end_time": 866.71,
+      "text": "पांच नंबर पे करके सोना चाहिए था। अगर चार नंबर पे कंफ़र्टेबल लगता मालूम कुछ नहीं है। सोच रहे हैं अपने दिमाग में सोच रहे हैं। अपने दिमाग में कहानी बना रहे हैं। अगर चार नंबर पे कंफ़र्टेबल लगता तो आपको कायदे से चार नंबर पे करके सोना चाहिए था। तो आपको कंफ़र्टेबल सिक्स पे मिला अच्छी बात है। बहुत-बहुत बधाई हो आपको। लेकिन आप छह पर सो नहीं सकते हैं। अगर आप सो जाएंगे ना तो आप वो मिस कर देंगे कि अगर चार नंबर पे भी कंफर्टेबल होगा अगर आप चार तो कभी ट्राई नहीं किए हैं। अभी तक आप चार ट्राई नहीं किए हैं ना? नहीं किए हैं। अभी तक आप क्या-क्या ट्राय किए थे? तीन ट्राई किए",
+      "source": "caption",
+      "english_text": "Should have slept on number five. If you feel comfortable at number four then it doesn't matter. Thinking, thinking in your mind. Creating a story in your mind. If you feel comfortable at number four then you should normally sleep at number four. So it's good that you got a comfortable six. Many congratulations to you. But you can't sleep at six. If you fall asleep, you will miss the fact that you would be comfortable even on the number four, if you have never tried it. You haven't tried four yet, right? Have not done. What have you tried so far? tried three"
+    },
+    {
+      "start_time": 866.72,
+      "end_time": 900.949,
+      "text": "थे। आपको पता चला था कि तीन पे कंफर्टेबल नहीं है। चार का तो कुछ चार पे हो सकता है क्योंकि तीन से स्पीड बढ़ेगी चार पे। चार पे हो सकता है। पांच पे हो सकता है पांच पे कुछ भी हो सकता है। तो आपको चार और पांच के बारे में मालूम नहीं है। अगर आप छह पे सो जाएंगे अगर आप छह पे अपना रूम बंद करके सो जाएंगे तो आप एक अपॉर्चुनिटी मिस कर देंगे। क्या अपॉर्चुनिटी? कि अगर चार और पांच पे भी आंसर मिलता तो। अगर चार और पांच पे भी कंफर्टेबल होता तो। ये अभी पता नहीं है। ये अभी पता नहीं है। पता नहीं है आपको। नहीं, पता नहीं है। ओके? तो छे आपका आंसर हो सकता है। हो सकता ये भी हो सकता है कि चार और पांच पे गर्मी लगे।",
+      "source": "caption",
+      "english_text": "Were. You came to know that three is not comfortable. Something about four can happen on four because the speed will increase from three to four. Maybe on four. Anything can happen at five, anything can happen at five. So you don't know about four and five. If you go to sleep at six: If you close your room and go to sleep at six, you will miss an opportunity. What opportunity? That if answer was given on questions 4 and 5 also. If it was comfortable even on four and five. This is not known yet. This is not known yet. You don't know. No, don't know. Ok? So six could be your answer. It is also possible that there will be heat on four and five."
+    },
+    {
+      "start_time": 900.959,
+      "end_time": 927.269,
+      "text": "कुछ भी हो सकता है दुनिया में। चार और पांच के लिए सारे ऑप्शन खुले हैं। हो सकता है गर्मी लगे, हो सकता है ठंडा लगे, हो सकता है एक में गर्मी लगे, एक में ठंडा कुछ भी हो सकता है। लेकिन वो ऑप्शन तो देखना पड़ेगा ना। वो ऑप्शन अभी देखना अभी आपका पूरा खत्म नहीं हुआ है। अभी गेम खत्म नहीं हुआ है। तो छह आपका आंसर हो सकता है। छह आपका आंसर हो सकता है। इसीलिए अपने पास अपने डायरी में अपने डायरी में सिक्स लिख लीजिए। अगर कुछ नहीं हुआ तो हम छह पे करके सो जाएंगे लास्ट में की अगर कुछ नहीं हुआ।",
+      "source": "caption",
+      "english_text": "Anything can happen in the world. All options are open for four and five. It may be hot, it may be cold, it may be hot in one, cold in the other, anything can happen. But that option will have to be seen. You are not finished looking at that option yet. The game is not over yet. So six can be your answer. Six could be your answer. That's why you have six in your diary. If nothing happens, we will go to sleep at six o'clock in the end if nothing happens."
+    },
+    {
+      "start_time": 927.279,
+      "end_time": 961.189,
+      "text": "अगर मान लीजिए चार और पांच पे भी हम उनको गर्मी ही लगती रही तो हम छह पे करके सो जाएंगे। ये बात तो ठीक है? और आपको ये भी पता चला कि अभी आप नहीं सो सकते हैं, डायरी में लिख लिए डायरी में छह लिख लिए। अभी सोया नहीं जा सकता है छह के साथ। ओके? लेकिन लेकिन आपको एक बहुत इंपॉर्टेंट बात पता चली है। आपको छह पे कंफर्टेबल लग रहा है। आपको छह पे कंफर्टेबल लग रहा है। अब अगर आप सात पे करेंगे तो आपको गर्मी लगनी शुरू हो जाएगी या स्टिल कंफर्टेबल रहेंगे आप। स्टिल कंफर्टेबल रहेंगे। अरे सात पे",
+      "source": "caption",
+      "english_text": "Suppose we continue to feel hot even at four and five, then we will go to sleep at six. Is this correct? And you also realized that you can't sleep right now, you wrote six in the diary. Can't sleep with six right now. Ok? But but you have come to know one very important thing. You feel comfortable at six. You feel comfortable at six. Now if you do seven pesos, will you start feeling hot or will you still be comfortable? Will still be comfortable. hey at seven"
+    },
+    {
+      "start_time": 961.199,
+      "end_time": 994.87,
+      "text": "भी कंफर्टेबल रहेंगे। क्यों? छह नंबर पे आपको कंफर्टेबल लग रहा है। सात नंबर पे पक्का कंफर्टेबल लगेगा। पक्का हो ही नहीं सकता कि सात नंबर पे आपको गर्मी लगने लगे। क्यों? सात नंबर पे स्पीड बढ़ेगी ना भाई। उल्टा हो रहा है देखिए। जब आपका गलत आंसर आया था तो आपको एक बात सर्टेनली से पता चली थी कि मेरे पीछे वाले नंबर तो पक्का पक्का गलत है तो उनको गेस करने की ज़रूरत नहीं है। अब आपको छह नंबर पे कंफ़र्टेबल आया है। तो आपको पता चली कि मेरे आगे वाले वो सात हो, आठ हो, नौ हो, 10 हो, 1000 लेवल हो फर्क नहीं पड़ता है। सारे में कंफ़र्टेबल लगेगा। सारे में कंफ़र्टेबल",
+      "source": "caption",
+      "english_text": "Will also be comfortable. Why? You are feeling comfortable at number six. You will definitely feel comfortable at number seven. It cannot be certain that you will start feeling hot at number seven. Why? Speed ​​will increase on number seven, brother? See the opposite is happening. When your wrong answer came, you knew one thing for sure that the numbers behind me are definitely wrong, so there is no need to guess them. Now you are comfortable at number six. So you came to know that it doesn't matter whether the person ahead of me is seven, eight, nine, 10 or 1000 levels. You will feel comfortable in everything. comfortable throughout"
+    },
+    {
+      "start_time": 994.88,
+      "end_time": 1029.829,
+      "text": "लगेगा। ओके? तो सात पे भी कंफ़र्टेबल। तो क्या सात आपका आंसर हो सकता है क्या? नहीं। सात आपका आंसर कभी भी नहीं हो सकता है। आपको कभी भी पंखा सात नंबर पे नहीं करना चाहिए। क्यों? सात नंबर पे बिल ज्यादा आएगा ना भाई। सात नंबर पे बिल ज्यादा आएगा ना? ये देखिए। बहुत ध्यान से सुनिएगा। इसीलिए हम इस पे ज्यादा स्ट्रेस कर रहे हैं। ये बाइनरी सर्च का कोर है। ये बाइनरी सर्च का कोर है। ठीक है? छह नंबर पे आपको पता चलता है कि हमको कंफर्टेबल लग रहा है। ओके? आप एक काम तो करते हैं कि अपनी डायरी में सिक्स लिख लेते हैं। लेकिन आप सिक्स के साथ सो नहीं सकते हैं क्योंकि",
+      "source": "caption",
+      "english_text": "It will take. Ok? So comfortable even at seven. So can seven be your answer? No. Seven can never be your answer. You should never fan yourself at number seven. Why? The bill will be higher at number seven, brother. The bill will be higher at number seven, right? Look at this. Listen very carefully. That is why we are putting more stress on this. This is the core of binary search. This is the core of binary search. Ok? At number six you realize that we are feeling comfortable. Ok? One thing you do is write a six in your diary. But you can't sleep with Six because"
+    },
+    {
+      "start_time": 1029.839,
+      "end_time": 1063.11,
+      "text": "आपको फोर और फाइव इसके बारे में कोई आईडिया नहीं है। हो सकता है आप अब धीरे कर रहे हैं ना पंखा। अब धीरे करेंगे तो हो सकता है गर्मी लगनी शुरू हो जाए। हो सकता है आप कंफर्टेबल है। कुछ भी हो सकता है। लेकिन आपको सात के बारे में पक्का आईडिया हो गया है कि ये कंफर्टेबल ही होगा। क्यों छह पे कंफर्टेबल है? सात पे भी कंफर्टेबल होगा। अच्छा। तो क्या सात आपका किसी भी यूनिवर्स में किसी भी परम्यूटेशन कॉम्बिनेशन से आंसर हो सकता है? नहीं। अगर आंसर सात होगा तो आप सात क्यों लेंगे? तो हम छह ही ना ले लें। अगर हमको पंखा सात पे करके सोने का मन करेगा तो हम सात पे क्यों",
+      "source": "caption",
+      "english_text": "You four and five have no idea about this. Maybe you are slowing down the fan now. Now if you slow down, you may start feeling hot. Maybe you are comfortable. Anything can happen. But you have a firm idea about seven that it will be comfortable. Why is it comfortable at six? Will be comfortable even at seven. Good. So can seven be your answer in any permutation combination in any universe? No. If the answer is seven then why would you take seven? So let's just take six. If we feel like sleeping with the fan on at seven then why should we sleep at seven?"
+    },
+    {
+      "start_time": 1063.12,
+      "end_time": 1097.83,
+      "text": "करेंगे? हम छह पे करके सो जाएंगे ना। छह पे कितना भी बड़ा बिल आए। छह पे कितना भी बड़ा बिल आए सात से तो कम आएगा। आठ से तो कम आएगा। तो किसी भी यूनिवर्स में सात मेरा आंसर नहीं हो सकता है। उसी तरीके से अगर आठ होता आठ भी नहीं हो सकता है। छह के बाद जितने भी लेवल हैं गिवेन दैट कि छह कंफर्टेबल आपको फील करा रहा है। छह के बाद पंखे में जितने लेवल्स हैं अब सब बेकार है। हम किसी को नहीं लेंगे। अगर हमको लेना होगा तो हम सिक्स ले लेंगे। और हम सिक्स हैं लोअर वाले को एक्सप्लोर करेंगे। लेकिन सिक्स के आगे वाले को तो बिलकुल भी एक्सप्लोर नहीं करेंगे। या तो बिलकुल भी गेस नहीं करेंगे। क्यों? फायदा नहीं है",
+      "source": "caption",
+      "english_text": "will do? We will sleep at six o'clock. No matter how big the bill is at six rupees. No matter how big the bill is at six, it will be less than seven. At least less than eight will come. So seven cannot be my answer in any universe. In the same way, if there is eight, there cannot be eight. There are all the levels after six, given that six is ​​making you feel comfortable. All the levels in the fan after six are now useless. We will not take anyone. If we have to take it, we will take six. And we six will explore the lower one. But the one ahead of six will not be explored at all. Will not gas at all either. Why? there is no use"
+    },
+    {
+      "start_time": 1097.84,
+      "end_time": 1131.909,
+      "text": "यार। अरे सात पे करोगे ज्यादा बिल आ जाएगा। तो, हम उम्मीद करते हैं कि ये बात आपको समझ में आ रही हो। अगर यह बात नहीं समझ में आती है, रिवाइंड करिए अह 2- 3 मिनट और फिरसे सुनिए। ये कोर है। ये कोर मतलब जिसको कहते हैं ना की रीड की हड्डी है पूरे एल्गोरिदम का। ठीक है? अब जैसे ही आपको पता चला कि आप छह पे कम्पेर्टेबल हो गए हैं। छह पे कम्पे्टेबल हो गए हैं तो आप क्या किए? एक तो अपने डायरी में सिक्स लिख लिए। लेवल सिक्स की कुछ नहीं हुआ। कुछ नहीं हुआ लास्ट में तो सिक्स पे सो जाएंगे। सिक्स पे जाके सो जाएंगे। और अब आपको सिक्स गेस करने की तो जरुरत नहीं है क्योंकि सिक्स हो चुका है गेस। सिक्स हो चुका है गेस और आपको सेवन भी गेस करने की",
+      "source": "caption",
+      "english_text": "Friend. Hey, if you pay seven, you will get a higher bill. So, we hope this makes sense to you. If you don't understand this, rewind 2-3 minutes and listen again. This is the core. This is what is called core, rather it is the backbone of the entire algorithm. Ok? Now as soon as you come to know that you have become compatible at six. If you have become compatible at six, what have you done? One, he wrote six in his diary. Nothing happened to level six. If nothing happens in the end, we will sleep at six. Will go to sleep at six o'clock. And now you don't need to guess six because six is ​​already guessed. Six has been guessed and you have to guess seven also."
+    },
+    {
+      "start_time": 1131.919,
+      "end_time": 1166.39,
+      "text": "जरूरत नहीं है। क्यों बता चुके हैं सेवन पे ज्यादा बिल आएगा। सेवन पे आप कंफर्टेबल रहेंगे लेकिन अब फायदा नहीं है उसप बिल ज्यादा आएगा। तो सेवन रखना होगा तो उससे बढ़िया सिक्स ही रख बढ़ाइए। चलिए अब क्या बचा आपके पास? फोर और फाइव। फोर और फाइव। मान लीजिए मान लीजिए। आप चलिए फोर मत गेस कीजिए। मान लीजिए आप फाइव गेस कर लिए। मान लीजिए आप फाइव गेस किए। मान लीजिए आप फाइव गेस किए। फाइव में भी, फाइव में भी आपको क्या पता चला? कंफर्टेबल लग रहा है। यस, कंफर्टेबल लग रहा है। वेरी गुड, वेरी गुड, वेरी गुड। फाइव पे कंफर्टेबल लग रहा है।",
+      "source": "caption",
+      "english_text": "No need. Why have you told that the bill will be higher on consumption? You will be comfortable on consumption but now there is no benefit and the bill will be higher. So if you have to keep the intake then keep it at six and increase it. Come on, what is left with you now? Four and five. Four and five. Suppose, suppose. Come on, don't guess. Suppose you have guessed five. Suppose you guessed five. Suppose you guessed five. Even in five, what did you find out even in five? Looks comfortable. Yes, looks comfortable. Very good, very good, very good. Looks comfortable on five."
+    },
+    {
+      "start_time": 1166.4,
+      "end_time": 1195.909,
+      "text": "वेरी गुड। सेम लॉजिक जो सिक्स के लिए अप्लाई हुआ था। फाइव पे आप सो नहीं सकते हैं। फाइव पे सोया जा सकता है। फाइव पे सोया जा सकता है। मतलब ठीक है। अभी फाइव के पहले फोर है। फाइव के पहले फोर है। इसका आंसर आपको नहीं पता है। अगर फोर पे गर्मी लगेगी तब तो आप फाइव पे सोते। लेकिन अगर फोर पे भी कंफर्टेबल लगने लगा हो तो आपको कायदे से फोर पे सोना चाहिए था तो दोनों चीज हो सकते हैं लेकिन फाइव के आगे वाले जो भी लेवल्स हैं सब बेकार हैं। फाइव के आगे 6 7 8 9 10 11000 सब बेकार है।",
+      "source": "caption",
+      "english_text": "Very good. Same logic that applied for the Six. You can't sleep at five. Can sleep at five. Can sleep at five. Means ok. Now there is four before five. There is four before five. You don't know the answer to this. If it is hot at four then you will sleep at five. But if you feel comfortable even on four, then as a rule you should have slept on four, then both things are possible but all the levels beyond five are useless. Next to five 6 7 8 9 10 11000 everything is useless."
+    },
+    {
+      "start_time": 1195.919,
+      "end_time": 1230.47,
+      "text": "क्यों? फाइव पे कंफर्टेबल लग रहा है। तो हमको अगर सोना होगा तो हम या तो फाइव पे सोएंगे या तो कुछ लेस देन फाइव पे सोएंगे। फाइव से आगे पे तो हम नहीं सोएंगे। क्योंकि इतना बुद्धि मेरे पास है की अगर फाइव पे कंफ़र्टेबल लग रहा है तो हम सिक्स पे क्यों सोएंगे? हम फाइव पे ही सोएंगे ना। ज्यादा बिल थोड़ी देना है तो। गौर से देखिए आपके डायरी में क्या लिखा हुआ था सिक्स आप डायरी में क्यों लिखे थे आपको लगा था कि चलो कुछ नहीं होगा तो सिक्स पे सो जाएंगे अब आप सिक्स पे कभी नहीं सोएंगे क्यों क्योंकि आपको फाइव पे कंफर्टेबल लग रहा है आप अपने डायरी से सिक्स लेवल को मिटा के फाइव लिख देंगे कि चलो कुछ नहीं हुआ तो फाइव पे सो जाएंगे और फाइव को अपने गेस से निकाल देंगे फाइव का हो गया गेस और",
+      "source": "caption",
+      "english_text": "Why? Looks comfortable on five. So if we have to sleep, we will either sleep at five or something less than five. We will not sleep beyond five. Because I have so much wisdom that if we feel comfortable at five then why would we sleep at six? We will sleep at five only. If you have to pay a little more bill. Look carefully at what was written in your diary, why did you write six in the diary, did you think that if nothing happens, you will sleep at six, now you will never sleep at six, because you are feeling comfortable at five, you will erase the six level from your diary and write five, if nothing happens, you will sleep at five and remove the five from your guess, the guess of five is done and"
+    },
+    {
+      "start_time": 1230.48,
+      "end_time": 1261.029,
+      "text": "फाइव के आगे कोई लेवल बचा नहीं था सेवन को सिक्स पहले ही हटा दिया था सिक्स खुद पहले ही हट गया था फाइव के आगे कुछ बचा नहीं है तो फाइव अपने गेस पे से हटा दिए अब आपके पास एक ही एलिमेंट बचा गेस करने का फोर तो ठीक है फोर को गेस करिए। फोर को गेस कर लीजिए। फोर को गेस करिए। गेस करने का मतलब चार नंबर पे रेगुलेटर घुमा दीजिए। चार नंबर पे घुमा दीजिए। क्या पता चला आपको? फोर पे भी कंफर्टेबल लग रहा है। येस, फोर पे भी कंफर्टेबल लग रहा है। फोर पे भी कंफर्टेबल लग रहा है। सेम लॉजिक। अब क्योंकि आपको फोर पे कंफर्टेबल लग रहा है।",
+      "source": "caption",
+      "english_text": "There was no level left in front of the five. The seven had already been removed by the six. The six itself had already been removed. There is nothing left in front of the five, so remove the five from your guess. Now you have only one element left to guess. Four is fine, guess the four. Gas the four. Guess the four. To gas means turn the regulator to number four. Turn to number four. What did you find out? Looks comfortable even on four. Yes, looks comfortable even on four. Looks comfortable even on four. Same logic. Now because you are feeling comfortable on four."
+    },
+    {
+      "start_time": 1261.039,
+      "end_time": 1295.83,
+      "text": "आपको 5 6 7 8 9 10 आगे जो हो आगे 1 लाख लेवल हो रेगुलेटर में। किसी का कोई काम नहीं है। किसी का कोई काम नहीं है। तो सबसे पहले अपना डायरी चेक कीजिए। उसमें फाइव लिखा हुआ है। अरे बेकार है। फाइव पे क्यों करेंगे? हम फोर पे कंफ़र्टेबल लग रहा है फोर पे सो जाएंगे। फाइव क्यों? फाइव फोर लिख लीजिए। क्यों? हो जाएगा अभी अभी तो एक ही लेवल है तो आप लिख सकते हैं अभी तो एक ही लेवल है। लेकिन मान लीजिए कि और पीछे का होता, आगे का होता कुछ भी होता। तो आपको डायरी में लिख लीजिए कि चलो कुछ नहीं हुआ तो फोर पे सो जाएंगे। और अब फोर के आगे कुछ नहीं है, फोर के पीछे कुछ नहीं है, तो फोर को भी मिटा दीजिए। फोर को मिटा दीजिए। अब देखिए आपके पास गेस करने के लिए",
+      "source": "caption",
+      "english_text": "You should get 5 6 7 8 9 10 whatever is next till 1 lakh level in the regulator. No one has any work. No one has any work. So first of all check your diary. Five is written in it. Hey, it's useless. Why would you pay five? We feel comfortable on four and will sleep on four. Why five? Write down five four. Why? It will be done right now, there is only one level, so you can write, there is only one level. But let's say whatever happened later, whatever happened ahead. So write in your diary that if nothing happens, you will sleep at four. And now there is nothing before four, there is nothing behind four, so erase four also. Delete four. Now let's see what you have to guess"
+    },
+    {
+      "start_time": 1295.84,
+      "end_time": 1330.39,
+      "text": "कुछ बचा ही नहीं है। अब आपके पास पहले आप शुरू किए किए थे वन से सेवन तक कुछ भी गेस कर लो। धीरे-धीरे धीरे-धीरे ये एलिमिनेट करते-करते आपके पास गेस करने के लिए कुछ बचा नहीं। मतलब एक तरीके से एक तरीके से आप हर लेवल गेस करके देख चुके हैं। हर लेवल सच में गेस नहीं किए। याद कीजिएगा। आप कभी भी पंखा टू पे नहीं किए। आप कभी भी पंखा वन पे नहीं किए। आप कभी भी पंखा सेवन पे नहीं किए। लेकिन एक तरीके से आपको पता चल गया कि उससे कोई फायदा नहीं होने वाला है। लास्ट में आपके आंसर में क्या लिखा हुआ है? लेवल फोर। और आप ये करके आराम से कम कॉन्फिडेंस से सो जाएंगे। ये वो लेवल",
+      "source": "caption",
+      "english_text": "There is nothing left. Now you have the ability to guess anything from one to seven. By gradually eliminating these, you will be left with nothing to gas. Meaning, in one way or another, you have guessed every level. Didn't really guess every level. Please remember. You never paid a fan. You never fan on one. You never used fan. But somehow you realized that it was not going to do any good. What is written in your answer in the last place? Level four. And by doing this you will sleep comfortably with less confidence. this is that level"
+    },
+    {
+      "start_time": 1330.4,
+      "end_time": 1356.07,
+      "text": "है, ये वो लेवल है जिसमें आपको गर्मी भी नहीं लगेगी और आपका बिल भी सबसे कम आएगा। सबसे कम आएगा। ये वो लेवल है। देख लीजिए ऊपर के एग्जांपल में भी यही था। तो कुछ ना कुछ करते-करते कुछ ना कुछ रेगुलेटर घुमाते घुमाते कसते- कसते लूस करते-करते गेस करते-करते, ट्रायल एरर करते-करते आप लेवल फोर तक पहुंच गए और आप लेवल फोर पे कंफर्टेबल होके सो गए।",
+      "source": "caption",
+      "english_text": "Yes, this is the level in which you will not feel hot and your bill will also be the lowest. The least will come. This is that level. See, this was the case in the above example also. So by doing something or the other, rotating the regulator, tightening it, loosening it, gassing, trial and error, you reached level four and you fell asleep comfortably at level four."
+    },
+    {
+      "start_time": 1356.08,
+      "end_time": 1389.83,
+      "text": "अब ये प्रॉब्लम हम आपको क्यों बताएं? ये कहानी तो पूछा नहीं सकता है। पूछा जा सकता है। एग्जैक्ट यही कहानी आपसे पूछा जा सकता है। आप जो भी फेमस फेमस क्वेश्चन देखते हैं एग्रेसिव कााउज़ कोको बनानाज़ वो यही कहानी पे बेस्ड है। वो इसी रियल लाइफ कहानी पे बेस्ड है। इसीलिए उसमें बाइनरी सर्च लगता है। अभी जो हम लोग जो काम किए हैं, जो हम लोग गेस करने का जो ये स्मार्ट वे खोजे थे, हम लोग जो गेस करने का ये स्मार्ट वे खोजे थे, उसी को बाइनरी सर्च बोला जाता है। उसी को बाइनरी सर्च बोला",
+      "source": "caption",
+      "english_text": "Now why should we tell you this problem? This story cannot be asked. may be asked. This is the exact story that can be asked from you. Whatever famous question you see - Aggressive Cows are Coco Bananas is based on this story. It is based on this real life story. That is why binary search is used in it. The work that we have done, the smart way of guessing that we have discovered, this smart way of guessing that we have discovered is called binary search. that is called binary search"
+    },
+    {
+      "start_time": 1389.84,
+      "end_time": 1423.59,
+      "text": "जाता है। एक डिफरेंस है कि अभी तो हम लोग रैंडम गेस करते थे। हम लोग रैंडम गेस मतलब कि वन से सेवन के बीच में थ्री गेस कर लिए, टू गेस कर लिए, सेवन कुछ भी कर लिए। बाइनरी सर्च में इस रैंडमनेस से पीछा छुड़ाने के लिए हम लोग हमेशा मिड वाला वैल्यू गेस करते हैं। मिड वाला वैल्यू गेस करते हैं। ये था इस कहानी का पर्पस था आपको दिमाग में घुसाना कि बाइनरी सर्च होता क्या है? अच्छा ये बात तो हो गई। अब अगर ये कहानी समझ में आ गई हो? अब देखिए ये सब कहानी में आप कुछ लोगों को लगेगा कि ये सब क्या पढ़ा रहे हैं? सीधा आप लो प्लस",
+      "source": "caption",
+      "english_text": "Goes. One difference is that till now we used to do random guesses. We random guess means that between one and seven, we can guess three, guess two, guess seven or do anything. To get rid of this randomness in binary search, we always guess the middle value. Let's guess the middle value. The purpose of this story was to make you understand what binary search is? Well, this thing is done. Now if you have understood this story? Now look at all this in the story, some people will wonder what all this is teaching? straight you take plus"
+    },
+    {
+      "start_time": 1423.6,
+      "end_time": 1453.19,
+      "text": "हाई मिड पढ़ा दीजिए ना। वो पढ़ेंगे तो आपसे कुछ नहीं बनेगा। अगर आप लो प्लस हाई बाय टू मिड ये सब पढ़ लेंगे फिर आपसे अग्रेसिव का कभी नहीं बनेगा। ये कहानी कभी नहीं बनता। ये कहानी एक्चुअल में पूछा जा सकता है। ये मजाक नहीं कर रहे हैं। ये कहानी हम खुद बनाए हैं लेकिन एक्चुअल में ये कहानी पूछा जा सकता है कि आपके पास ऐसा है तो करो। ओके। अब आइए अब हम लोग आते हैं बाइनरी। अब आप लोग तैयार हैं बाइनरी सर्च पढ़ने के लिए। अब आप लोग फाइनली तैयार हुए हैं। जो भी दिमाग में कचरा था वो हट चुका होगा। ये बातें घुस चुकी होंगी। अब आप लोग तैयार हैं बाइनरी रिसर्च पढ़ने के लिए।",
+      "source": "caption",
+      "english_text": "Please teach high mid. If they read, you will not be able to do anything. If you read all this from low plus high to mid then you will never be able to be aggressive. This story never gets made. This story can be asked in actual. They are not joking. We have created this story ourselves but in actual this story can be asked that if you have it then do it. Ok. Now let us now come to binary. Now you guys are ready to read Binary Search. Now you guys are finally ready. Whatever garbage was in your mind will have been removed. These things must have penetrated. Now you guys are ready to read Binary Research."
+    },
+    {
+      "start_time": 1453.2,
+      "end_time": 1479.19,
+      "text": "देखिए। अभी तक हम लोग जो भी पैटर्न पढ़े थे ना सब में हम लोग कुछ ना कुछ काम करते थे। कुछ ना कुछ लॉजिक से काम करते थे। किससे? लॉजिक से काम करते थे। ओके। यह पहला पैटर्न होने वाला है जो गेस पे बेस्ड है। गेस या तो ट्रायल एरर। ट्रायल एरर। यस। गेस या तो ट्रायल एरर पे बेस्ड है। आप पंखा में रेगुलेटर क्या कर रहे थे? गेस ही तो कर रहे थे। आप क्यों पहले तीन नंबर पे किए? क्यों नहीं पहले चार नंबर पे कर लिए।",
+      "source": "caption",
+      "english_text": "Look. Till now, we used to do some work in all the patterns that we had read. Used to work with some logic or the other. With whom? Used to work with logic. Ok. This is going to be the first pattern which is based on guess. Guess or trial error. Trial error. Yes. Guessing is either based on trial error. What was the regulator doing in the fan? They were just gasping. Why did you do number three first? Why not do it on number four first?"
+    },
+    {
+      "start_time": 1479.2,
+      "end_time": 1511.43,
+      "text": "कोई लॉजिक नहीं है। गेस। रैंडमनेस का कोई लॉजिक नहीं होता है। गेस करने का कोई लॉजिक नहीं होता है। तुक्का मार रहे हैं आप। तुक्का मारने का गेम है ये। पूरा पैटर्न ही तुक्का मारने पे है। क्यों आप लो से हाई में मिड को ले लिए? क्यों नहीं मिड - 1 को टेस्ट करते हैं? क्यों नहीं मिड + 1 को टेस्ट करते हैं? नहीं है लॉजिक। तुक्का मार रहे हैं। आपको क्या मालूम था कि मिड से आंसर आएगा? नहीं मालूम है। तुक्का मार रहे हैं मालूम करने के लिए। कुछ नहीं मालूम है हमको। हमको कुछ नहीं मालूम है। हम तुक्का मारते हैं इस पैटर्न में। ये पूरा पैटर्न तुक्का मारने का पैटर्न है। ओके? और एक बहुत इंटरेस्टिंग बात होती है इस पैटर्न में।",
+      "source": "caption",
+      "english_text": "There is no logic. Guess. There is no logic to randomness. There is no logic to guessing. You are punching. This is a game of punching. The entire pattern is based on punching. Why did you take the mid from low to high? Why not test mid-1? Why not test mid+1? There is no logic. Are punching. How did you know that the answer would come from mid? Don't know. Trying to find out. We don't know anything. We don't know anything. We hit tukka in this pattern. This entire pattern is a tukka pattern. Ok? And there is a very interesting thing in this pattern."
+    },
+    {
+      "start_time": 1511.44,
+      "end_time": 1544.47,
+      "text": "ओके? अब आप बोले तो कि गेस कर रहे हैं लेकिन आप गेस क्या करेंगे? आप गेस क्या करेंगे? मतलब गेस क्या अपना नाम गेस करेंगे क्या? नहीं। जो भी क्वेश्चन में पूछा जाता है जो भी क्वेश्चन में फाइंड आउट करना रहता है। जो भी क्वेश्चन में फाइंड आउट, चाहे वो इंडेक्स हो, चाहे वो नंबर हो, चाहे वो किसी तरीके का रेगुलेटर नंबर हो किसी कहानी में, चाहे वो नंबर ऑफ काऊस हो, चाहे वो किसी तरीके का स्पीड हो, चाहे वो नंबर ऑफ डेज हो, चाहे वो नंबर ऑफ",
+      "source": "caption",
+      "english_text": "ok? Now you said that you are guessing but what will you guess? What would you guess? Means guess, will you guess your name? No. Whatever question is asked, whatever question has to be found out. Find out in whatever question, whether it is an index, whether it is a number, whether it is some kind of regulator number in a story, whether it is the number of cows, whether it is some kind of speed, whether it is the number of days, whether it is the number of"
+    },
+    {
+      "start_time": 1544.48,
+      "end_time": 1575.35,
+      "text": "पेजेस हो, कुछ भी। डिपेंडिंग ऑन द क्वेश्चन, डिपेंडिंग ऑन द कहानी। आप उस चीज़ को गेस करते हैं। उस चीज़ को गेस करते हैं। जैसे कि आपसे पूछा गया था कि रेगुलेटर का कौन सा नंबर सेट करोगे? तो आपको पता था कि रेगुलेटर में नंबर तो वन से सेवन है। आप वन से सेवन को ही गेस करते थे। आप बोलते थे तीन नंबर पे पंखा चलाओ। ये तीन क्या था? गेस था। गेस था। गेस था। लेकिन लेकिन लेकिन एक बड़ी इंपॉर्टेंट बात नोटिस कीजिए। रेगुलेटर में कहां से कहां तक डिजिट थे? देखिए। रेगुलेटर में ये था।",
+      "source": "caption",
+      "english_text": "Pages, whatever. Depending on the question, depending on the story. You gas that thing. Let's gas that thing. Like you were asked which number of the regulator will you set? So you knew that the number in the regulator is seven to one. You used to gas only seven from one. You used to say to run the fan on number three. What were these three? Was gas. Was gas. Was gas. But but but notice one very important thing. Where were the digits in the regulator? See. This was in the regulator."
+    },
+    {
+      "start_time": 1575.36,
+      "end_time": 1608.39,
+      "text": "1 2 3 4 5 6 7 मान लीजिए कि आपको गर्मी ठंडे का डाटा ऐसा दिखा कि वन में आपको गर्मी लग रही थी। टू में गर्म लग रहा था। थ्री में गर्म लग रहा था। मान लीजिए फोर में भी गर्म लग रहा था। फाइव में भी गर्म लग रहा था। सिक्स पे आपको जा के ठंड लगी। सिक्स पे आपको ठंड लगी। ठंड मतलब अच्छा लगने लगा। अब अगर सिक्स पे आपको ठंड लगने लगी है तो क्या आगे जाके 7 8 9 10 11 12 सब पे ठंड लगेगी ना? येस सब पे ठंड लगेगी।",
+      "source": "caption",
+      "english_text": "1 2 3 4 5 6 7 Suppose you saw the heat and cold data as if you were feeling hot in the forest. Was feeling hot in two. Feeling hot in three. Let's just say it felt hot even in the four. It was feeling hot even in five. At six you felt cold. You felt cold at six. ठंड मतलब अच्छा लगने लगा। अब अगर सिक्स पे आपको ठंड लगने लगी है तो क्या आगे जाके 7 8 9 10 11 12 सब पे ठंड लगेगी ना? येस सब पे ठंड लगेगी।"
+    },
+    {
+      "start_time": 1608.4,
+      "end_time": 1642.47,
+      "text": "ऐसा हो ही नहीं सकता है कि सेवन पे गर्मी लगने लगे नहीं। तो ध्यान से देखिए डाटा कैसा लग रहा है? गर्मी, गर्मी, गर्मी, गर्मी, गर्मी, एक पॉइंट तक गर्मी, एक पॉइंट तक गर्मी। अचानक से एक पॉइंट आता है। अचानक से एक पॉइंट आता है जहां अचानक ठंड हो जाती है और उसके बाद ठंड ठंड ठंड ठंड ठंड। तो ये कैसा डाटा दिख रहा है? ये इस तरीके के डेटा को मोनोटोनिक डेटा बोलते हैं। मतलब कि आप जो भी गेस कर रहे हैं आप जो भी गेस कर रहे हैं उससे आपको एक यस नो",
+      "source": "caption",
+      "english_text": "It is not possible that the intake does not start feeling hot. So look carefully, how does the data look? Heat, heat, heat, heat, heat, heat up to a point, heat up to a point. Suddenly a point comes. Suddenly there comes a point where suddenly it becomes cold and then cold cold cold cold cold. So what does this data look like? This type of data is called monotonic data. Meaning that whatever you are guessing, whatever you are guessing, you will get a yes no."
+    },
+    {
+      "start_time": 1642.48,
+      "end_time": 1676.07,
+      "text": "टाइप का या तो एक ट्रू फॉल्स टाइप का या तो एक इस केस में गर्मी ठंड टाइप का कुछ भी कुछ भी। गर्मी ठंड टाइप का आंसर मिल रहा है। आंसर मिल रहा है कि ये आंसर सही है या गलत। सही गलत भी मिल सकता है। सही गलत। कुछ भी मिले कुछ भी मिले। वो तो डिपेंडिंग ऑन क्वेश्चन। आगे जाके हम लोग इस पे 15 20 क्वेश्चन करेंगे। हर क्वेश्चन में सेम फॉर्मेट है। आपको कुछ ना कुछ पता चलेगा। मतलब आप जुआ कैसे खेलते हैं? आप गेस गेस का क्या मतलब होता है? गेस ए नंबर। मान लीजिए हम लोग एक गेम खेल रहे हैं। हम बोले कि चलो हम ना एक नंबर सोच लिए हैं। हम हम एक नंबर सोच लिए हैं सात।",
+      "source": "caption",
+      "english_text": "Either a true false type or in this case a heat cold type, anything, anything. The answer is of heat and cold type. You are getting the answer whether this answer is right or wrong. Right and wrong can also be found. Right wrong. Get anything, get anything. That depends on the question. Going forward we will ask 15-20 questions on this. Every question has the same format. You will know something or the other. I mean, how do you gamble? You guess what does guess mean? Guess a number. Suppose we are playing a game. We said, let us think of a number. We have thought of a number, seven."
+    },
+    {
+      "start_time": 1676.08,
+      "end_time": 1710.23,
+      "text": "मान लीजिए हम आपको नहीं बताए। हम आपको बोले कि हम भाई एक से 10 के बीच में एक नंबर सोचे हैं। अच्छा। तुमको वो नंबर गेस करना है। तुमको वो नंबर गेस करना है। तब क्या करेंगे? आप बोलेंगे की अच्छा क्या वो नंबर दो है क्या? हम बोलेंगे नहीं नहीं दो नहीं है। नो। अच्छा क्या वो नंबर तीन है क्या? हम बोलेंगे नहीं नहीं तीन नहीं है वो नो है। क्या वो नंबर नो है क्या? तो बोलेंगे नहीं नहीं नो नो नहीं है। क्या वो नंबर सात है क्या? बोले हां यस है। तो ऐसा करके। तो आप गेस करेंगे तो आपको कुछ मालूम चलेगा कि वो गेस सही है कि गलत है? वो गेस अच्छा गेस है कि गंदा गेस है। अच्छा गेस है कि गंदा गेस है। फॉर एग्जांपल पंखे में आपको मालूम चला कि जब आप तीन नंबर पे पंखा चलाए तो आपको गर्मी लग रही है। जब आप छह",
+      "source": "caption",
+      "english_text": "Suppose we don't tell you. We told you that we brothers have thought of a number between 1 and 10. Good. You have to guess that number. You have to guess that number. What will you do then? You will say, okay, is that number two? We will not say no, no, no. No. Okay, is that number three? We will say no, no, there is no three, that is no. Is that number no? So they will say no no no no no. Is that number seven? He said yes it is. So by doing this. So if you guess, you will know whether that guess is right or wrong? Is that gas good gas or bad gas? Is it good gas or bad gas? For example, in the case of fan, you came to know that when you turn the fan on number three, you are feeling hot. when you six"
+    },
+    {
+      "start_time": 1710.24,
+      "end_time": 1743.19,
+      "text": "नंबर पे चलाए ठंडा लग रहा है। तो आपको कुछ ना कुछ मालूम चला। अच्छा। यह जो मालूम चलने का डाटा है, यह जो मालूम चलने का डाटा हमेशा इसी फॉर्म में होगा। गर्मी एक पॉइंट तक सब गर्म रहेंगे। एक पॉइंट तक सब गर्म रहेंगे या तो सब बैड रहेंगे। सब बैड रहेंगे। सब बैड या तो सब फॉल्स रहेंगे। सब फॉल्स रहेंगे। सब फॉल्स रहेंगे। सारे नो रहेंगे। सारे नो रहेंगे। और एक पॉइंट के बाद अचानक से वो ठंड में बदल जाएगा। ठंड",
+      "source": "caption",
+      "english_text": "It feels cold after running on the number. So you came to know something or the other. Good. This is the known running data, this known running data will always be in this form. Everyone will remain warm up to a point. Everyone will be hot up to a point or everyone will be bad. Everyone will be bad. All will be bad or all will be false. All will remain false. All will remain false. All will remain no. All will remain no. And after a point it will suddenly turn cold. cold"
+    },
+    {
+      "start_time": 1743.2,
+      "end_time": 1775.43,
+      "text": "में बदल जाएगा। ठंड में बदल जाएगा। गुड में बदल जाएगा। गुड में बदल जाएगा। गुड में बदल जाएगा। ट्रू में बदल जाएगा। ट्रू में बदल जाएगा। ट्रू में यस में बदल जाएगा। यस में बदल जाएगा। यस में बदल जाएगा। एक पॉइंट पे इस पॉइंट पे इस पॉइंट को बोलते हैं टर्निंग पॉइंट। इस पॉइंट को बोलते हैं टर्निंग पॉइंट। और 99% ऑफ बाइनरी सर्च क्वेश्चन में आपको ये टर्निंग पॉइंट बताना होता है। ध्यान से देखिए रेगुलेटर वाले में इस एग्जांपल में आपको",
+      "source": "caption",
+      "english_text": "Will change to. Will turn into cold. Will turn into jaggery. Will turn into jaggery. Will turn into jaggery. Will change to True. Will change to True. True will change to Yes. Will change to yes. Will change to yes. This point at one point is called turning point. This point is called turning point. And in 99% of binary search queries you have to specify this turning point. Look carefully at the regulator one, in this example you will see"
+    },
+    {
+      "start_time": 1775.44,
+      "end_time": 1810.23,
+      "text": "क्या बताना था? वो पंखे का नंबर जिसमें ठंड भी लगे जिसमें ठंड भी लगे और कम से कम बिल आए वो यही तो था छह नंबर। छह नंबर क्या था आपका? टर्निंग पॉइंट। टर्निंग पॉइंट मतलब आपका गेस का जो आंसर था आपका गेस करने का जो आंसर था वो एक तरीके से आ रहा था। वह मतलब लगातार ऐसा बैड बैड बैड बैड बैड बैड आ रहा था। एक पॉइंट आया वो अचानक से गुड होने लगा। वह अचानक से गुड होने लगा। वो अचानक से गुड होने लगा और उसके बाद वो कभी नहीं बदला। उसके बाद वो कभी नहीं बदला। ऐसा नहीं हुआ कि आपको गर्मी लग रही थी। एक बार आपको ठंड लगी फिर",
+      "source": "caption",
+      "english_text": "What did you want to tell? The number of the fan which felt cool and also brought minimum bills was number six. What was your number six? Turning point. Turning point means the answer to your guess was coming in a certain way. That means it was continuously coming like bad bad bad bad bad bad. There came a point when suddenly he started getting better. He suddenly started feeling better. He suddenly started getting better and after that he never changed. After that he never changed. It didn't happen that you were feeling hot. once you feel cold then"
+    },
+    {
+      "start_time": 1810.24,
+      "end_time": 1843.99,
+      "text": "एक बार और ठंड लगी और फिर अगला नंबर चलाया तो आपको फिर गर्म लगने लगा। ना, ना, पॉसिबल नहीं है, पॉसिबल नहीं है। और अगर ऐसा हो रहा है, अगर आपको लग रहा है कि ऐसा हो रहा है तो वो बाइनरी सर्च का क्वेश्चन नहीं है। वो बाइनरी सर्च का क्वेश्चन नहीं है। बाइनरी सर्च इसी लॉजिक पे काम करता है कि एक बार आपका गेस वाला, एक बार आपका गेस वाला डाटा, गेस का आंसर चेंज हो गया, चेंज हो गया तो वो आजीवन वैसा रहेगा, आजीवन ऐसा रहेगा। मतलब की अगर, इसका मतलब यही होता है कि अगर आप एक गेस किए, इसका आंसर आ गया गलत। इसका आंसर आ गया गलत। तो सारे लोअर",
+      "source": "caption",
+      "english_text": "You felt cold once more and when you played the next number you started feeling hot again. No, no, not possible, not possible. And if this is happening, if you feel that this is happening then it is not a question of binary search. That is not a binary search question. Binary search works on the same logic that once your guess is changed, once your guess data is changed, the answer of the guess is changed, if it is changed then it will remain the same for life, it will remain like this for life. Meaning if, it means that if you did a guess, the answer was wrong. The answer was wrong. so all lower"
+    },
+    {
+      "start_time": 1844.0,
+      "end_time": 1877.59,
+      "text": "गैसेस इससे सारे लोअर केसेस पे आंसर गलत आएगा। आंसर गलत आएगा। क्यों? क्योंकि वो ऐसा ही है। वो ऐसा है। गलत गलत गलत गलत गलत सही सही सही सही सही। तो इसका क्या मतलब है? इसका मतलब देखिए जी जी जी सही सही सही सही सही। अगर आपका कहीं पे यहां पे गलत आता है, तो आपको एक बात शत प्रतिशत मालूम है कि सारे लेफ्ट के वैल्यूज मेरे गलत होंगे। सारे लेफ्ट के वैल्यूज गलत होंगे। और ऑन द कॉन्ट्ररी अगर आपको यहां पे सही मिलता है तो आपको पता है कि सारे राइट के वैल्यू सही होंगे। सारे राइट के वैल्यू सही होंगे। यही हम लोग अगर",
+      "source": "caption",
+      "english_text": "Gases, this will make the answer wrong in all lower cases. The answer will be wrong. Why? Because that's just the way he is. He is like that. Wrong wrong wrong wrong wrong right right right right right. So what does this mean? Look at its meaning, yes, yes, right, right, right. If your values ​​are wrong here and there, then you know one thing 100% that all the values ​​on the left will be wrong. The values ​​on the left will all be wrong. And on the contrary, if you get it right here then you know that the values ​​of all the writes will be correct. The values ​​of all rights will be correct. If this is what we"
+    },
+    {
+      "start_time": 1877.6,
+      "end_time": 1911.83,
+      "text": "आपको तीन नंबर पे गर्मी लग रही है। वन और टू पे पक्का गर्मी लगेगी। ये पता है। फोर पे क्या होगा नहीं मालूम है। याद ध्यान दीजिएगा। फोर पे क्या होगा नहीं मालूम है। और अगर आपको सिक्स पे ठंड लग रही है। सेवन एट पे पक्का पक्का ठंड लगेगी। फाइव पे क्या होगा मालूम नहीं। फाइव पे क्या होगा मालूम नहीं। वो देखना है लेकिन सेवन पे पक्का ठंड लगेगी। तो कहने का मतलब कि आप जो भी गेस करेंगे आप जो भी गेस करेंगे किसी भी क्वेश्चन में चाहे वो इंडेक्स हो बाइनरी सर्च में बाइनरी सर्च में क्या होता है जो आप लोग क्वेश्चन रटे हुए हैं कि इस नंबर का इंडेक्स बताओ है तो इंडेक्स",
+      "source": "caption",
+      "english_text": "You are feeling hot on number three. It will definitely be hot on One and Two. This is known. Don't know what will happen on the fourth. Remember, pay attention. Don't know what will happen on the fourth. And if you are feeling cold at six. You will definitely feel cold at seven. Don't know what will happen on five. Don't know what will happen on five. That remains to be seen but you will definitely feel cold upon consumption. So it means to say that whatever guess you do, whatever guess you do in any question, whether it is an index, in binary search, what happens in binary search, the question that you people have memorized is that if you tell the index of this number, then index."
+    },
+    {
+      "start_time": 1911.84,
+      "end_time": 1945.35,
+      "text": "गेस ही तो करते हैं भाई आप इंडेक्स गेस ही तो करते हैं कुछ और थोड़ी करते हैं आप बोलते हैं कि अच्छा लो यहां ले लेंगे लो ज़ीरो पे लो ज़ीरो पे ले लेंगे जिनको मालूम है हाई n - 1 पे ले लेंगे और हम मिड = लो + हाई / 2 और ए मिड को चेक करेंगे। क्यों ए मिड को चेक करोगे आपको क्या लॉजिक है इसका एमिट को चेक करने में? अरे ट्राई एरर हो रहा है। ट्राई एरर कर रहे हैं भैया। ट्राई एरर कर रहे हैं। ट्राई एरर का कोई लॉजिक नहीं होता है। चेक कर रहे हैं क्या करेंगे? गेस कर रहे हैं। गेस। उसके बाद पेशेंस रखिए आगे सारे क्वेश्चन करेंगे।",
+      "source": "caption",
+      "english_text": "Brother, you only guess the index, you do index guesses, do some more, you say ok, take it here, take low at zero, take it at zero, those who know high will take it at n - 1 and we will check mid = low + high / 2 and A mid. Why would you check A mid? What logic do you have in checking Amit? Hey, try error is happening. Brother, you are making trial and error. Trying error. There is no logic to trial error. Are you checking? What will you do? Guessing. Guess. After that keep patience, we will answer all the questions further."
+    },
+    {
+      "start_time": 1945.36,
+      "end_time": 1978.71,
+      "text": "आपको नहीं आता है आज से पहले आप अगर बाइनरी सर्च का नाम नहीं सुने तो उतना अच्छा है। हम तो बोल रहे हैं कि आप कुछ नहीं आता है बाइनरी सर्च में तो आप सबसे बेस्ट पोजीशन में हैं ये पढ़ने के लिए। ठीक है? सबसे पहली बात जो भी चीज आता है जो भी चीज आपको पूछा जाता है क्वेश्चन में अब ये है कि बाइनरी सर्च कब लगेगा आप गिन के यही चीज करते हैं आप गेस आपको है कि जो भी पूछा जा रहा है मान लीजिए कुछ भी पूछा नंबर ऑफ डेज पूछा है कुछ भी आप उसको गेस करते हैं उस गेस से आपको एक आंसर आता है उस गेस से आपको एक आंसर मिलता है और वो आंसर किस फॉर्मेट में रहता है वो आंसर एक मोनोटोनिक फॉर्मेट में रहता है मतलब वो एक",
+      "source": "caption",
+      "english_text": "If you don't know the name of binary search then it is better if you have not heard the name of binary search before today. We are saying that if you do not know anything in binary search then you are in the best position to read this. Ok? First of all, whatever thing comes, whatever thing is asked to you, now in the question, when will the binary search be done, you do the same thing by counting, you guess whatever is being asked, let's say anything is asked, number of days it is asked, anything, you guess it, from that guess you get an answer, from that guess you get an answer and in what format is that answer, that answer is in a monotonic format, meaning. that one"
+    },
+    {
+      "start_time": 1978.72,
+      "end_time": 2010.31,
+      "text": "लिमिट तक एक लिमिट तक वो आंसर गलत होगा अचानक से आंसर सही बनेगा और वो वो आजीवन सही बनता रहेगा। ऐसा नहीं होगा कि एक गेस से आंसर सही आया फिर सही आया और फिर उससे बड़ा वाला गेस किए तो आंसर गलत हो गया। नहीं फिर वो बाइनरी सच का क्वेश्चन नहीं है। तो यही रिकॉग्निशन है और आप जो गेस करते हैं आप जो चीज़ गेस करते हैं उसका आंसर उसका आंसर मिलेगा कैसे? उसका आंसर कितनी देर में आपको मिल जाएगा? वो या तो आपको कांस्टेंट टाइम में पता चल जाना चाहिए या तो एट मैक्स एंड टाइम में पता चल जाना चाहिए। क्या मतलब है? फिर से सुनिए।",
+      "source": "caption",
+      "english_text": "Up to a limit, that answer will be wrong, suddenly the answer will become right and it will remain so throughout life. It will not happen that the answer was correct from one guess and then the answer was correct and then if a bigger guess was made then the answer became wrong. No then it is not a question of binary truth. So this is recognition and how will you get the answer to whatever you guess? How long will it take for you to get the answer? You should either know it in constant time or you should know it in at maximum end time. What does it mean? Listen again."
+    },
+    {
+      "start_time": 2010.32,
+      "end_time": 2043.11,
+      "text": "आप पंखे को तीन नंबर पर किए। अब उसमें आपको गर्मी लग रही है या ठंड लग रही है? यह आपको तुरंत पता चल गया था। या आपको तुरंत पता चल गया था या आपको तुरंत पता चल गया था। इसीलिए यहां पे बाइनरी सर्च काम हुआ। अगर आप तीन नंबर पे किए पंखा और आपको कोई बोलता कि अच्छा अब रुको ना एक दिन बाद बताएंगे। एक दिन बाद बताएंगे कि तुमको गर्मी लग रहा है कि ठंडा लग रहा है। तो यहां पे आप ये काम नहीं कर सकते थे। यहां पे काम नहीं कर सकते थे। इसका क्या मतलब है? कि ये गेस वाला काम उसी क्वेश्चंस में लग सकता है जहां उस गेस का आंसर आपको",
+      "source": "caption",
+      "english_text": "You turned the fan to number three. Now are you feeling hot or cold in it? You knew it immediately. Or you knew right away or you knew right away. That is why binary search was done here. If you fan at number three and someone tells you, ok wait now, we will tell you after a day. After a day you will tell whether you are feeling hot or cold. So you could not do this work here. Couldn't work here. What does it mean? That this guess work can be done only in those questions where you will get the answer to that guess."
+    },
+    {
+      "start_time": 2043.12,
+      "end_time": 2075.99,
+      "text": "तुरंत पता चल जाए या वर्स्ट केस में ऑर्डर ऑफ n टाइम में पता चल जाए अगर उसमें n² लग रहा है पता करने में ना नहीं होगा इसीलिए तो मान लीजिए कोई स्लाइडिंग विंडो का क्वेश्चन है आपको क्या बोला है मैक्स सब एरे जिसका सम लेस दैन इक्वल टू k हो मतलब लॉन्गेस्ट सब एरे तो आप दिमाग में आना चाहिए कि इसमें भी गेस क्यों ना कर दें गेस ही करना है ना तो इसमें भी गेस करते हैं चलो तो आप बोले कि अच्छा एक काम करो लो इक्वल टू वन और हाई इक्व = 3, ये वाला सब एरे हम गेस करते हैं। अच्छा, क्या ये सब एरे सही है? सही का मतलब क्या ये लॉन्गेस्ट है सच में? और या तो क्या ये",
+      "source": "caption",
+      "english_text": "It should be known immediately or in the worst case, it should be known in the order of n time, if it takes n², there will be no answer to find it, that is why suppose there is a question of sliding window, what have you said, max sub array whose sum is less than equal to k means longest sub array, then it should come to your mind that why not guess in this also, if you have to guess then let's guess in this also, let's say, ok do one thing, take equal. Two one and high equ = 3, this one is all we guess. Well, is all this correct? Sahi means is it really the longest? and either this"
+    },
+    {
+      "start_time": 2076.0,
+      "end_time": 2109.51,
+      "text": "गलत है? ये चेक करेंगे कैसे आप? ये कैसे चेक करें? ये आपको कौन बताएगा कि ये सही है कि गलत है? इसके लिए आपको ऑल सब एरेज निकालना पड़ेगा। इसके लिए आपको ऑल सब एरेज निकालना पड़ेगा। सबका सम देखना पड़ेगा और चेक करना पड़ेगा क्या उसमें से ये लॉन्गेस्ट है। तो, बहुत लें्थी प्रोसेस है। बहुत ये लेंथी प्रोसेस है। क्या एक गेस को चेक करने का। आपको ऐसे बहुत सारा गेस चेक करना पड़ेगा। ऐसा थोड़ी है कि तीन नंबर पे गेस सही होता है तो आप प्रोग्राम खत्म कर दें। नहीं, आपको और गेस करना पड़ेगा। तो, जब एक गेस का आंसर निकालने का प्रोसेस इतना लें्थी है, सारे गेस का कितना हो जाएगा? इसीलिए बहुत इंपॉर्टेंट है। बहुत इंपॉर्टेंट है बाइनरी सर्च में",
+      "source": "caption",
+      "english_text": "Is it wrong? How will you check this? How to check this? Who will tell you whether this is right or wrong? For this you will have to remove all sub arrays. For this you will have to remove all sub arrays. We will have to look at the sum of all and check whether this one is the longest. So, it is a very long process. This is a very lengthy process. What a gas check. You will have to do a lot of gas checks like this. It's like if the guess is correct on three numbers then you end the program. No, you will have to guess more. So, when the process of finding the answer to one guess is so long, how much will be done for all the guesses? That is why it is very important. It is very important in binary search."
+    },
+    {
+      "start_time": 2109.52,
+      "end_time": 2143.51,
+      "text": "कि आप जो आप जो भी गेस कर रहे हैं। सबसे पहले तो पैटर्न क्या है? सबसे पहले टेंपलेट क्या है? आपसे 90% ऑफ केसेस में सिंगल चीज़ पूछी जाएगी। सिंगल चीज़ पूछी जाएगी। मतलब अगर वो बाइनरी सर्च है, तो आपसे इंडेक्स पूछा जाएगा। अगर कोई स्टोरी बेस्ड का क्वेश्चन है तो भी उसमें सिंगल चीज मतलब रेगुलेटर का नंबर बता दो। नंबर ऑफ डेज बता दो। अ नंबर ऑफ पेजेस सिंगल एक और ये जनरली ऑप्टिमाइजेशन की प्रॉब्लम्स होती हैं। ऑप्टिमाइजेशन मतलब मिनिमम या मैक्सिमम जैसे ये रेगुलेटर का प्रॉब्लम क्या था? ये रेगुलेटर का प्रॉब्लम इसको ये",
+      "source": "caption",
+      "english_text": "That you're doing whatever you're doing. First of all, what is the pattern? First of all what is a template? You will be asked a single thing in 90% of the cases. Single thing will be asked. Meaning if it is a binary search, you will be asked for the index. Even if there is a story based question, tell a single thing in it i.e. the regulator's number. Tell me the number of days. A number of pages is a single one and these are generally optimization problems. What was the problem of this regulator like optimization means minimum or maximum? This is the regulator's problem."
+    },
+    {
+      "start_time": 2143.52,
+      "end_time": 2178.15,
+      "text": "था ना कि सबसे कम नंबर पे सेट करो। सबसे कम नंबर पे फैन को सेट करो। जिससे कि जिसके कि गर्मी ना लगे। जिससे कि गर्मी ना लगे। मतलब कि सबसे कम नंबर पॉसिबल जिससे गर्मी ना लगे और सबसे कम क्यों? क्योंकि उसमें बिजली का बिल सबसे कम आना है। तो आप बोलते थे कि चलो चार। चार नंबर पे सेट कर लो क्योंकि चार से अगर कम जाओगे, तीन पे जाओगे इस पे गर्मी लगेगी। और पांच पे जाने का फायदा नहीं है क्योंकि यहां भी अच्छा खासा ठंड लग रहा है, तो आप चार पे सेट करिए। तो, क्या है ये? ऑप्टिमाइजेशन प्रॉब्लम्स होती है। ऑप्टिमाइजेशन प्रॉब्लम्स होती है।",
+      "source": "caption",
+      "english_text": "Shouldn't it be set at the lowest number? Set the fan on the lowest number. So that one does not feel hot. So that there is no heat. That means the lowest number possible which does not cause heat and why the lowest? Because it has the lowest electricity bill. So you used to say let's go. Set it at number four because if you go less than four, it will heat up if you go to three. And there is no use of going at 5 pm because it is quite cold here too, so you set for 4 pm. So, what is this? Optimization problems occur. Optimization problems occur."
+    },
+    {
+      "start_time": 2178.16,
+      "end_time": 2206.31,
+      "text": "फाइंड द नंबर ऑफ़ मिनिमम नंबर ऑफ़ कााउस जिससे ऐसा-ऐसा काम हो जाए। फाइंड द मिनिमम नंबर ऑफ़ डज़ कोको कैन ईट ऑल बनानाज़। तो ये सारे क्वेश्चन जब हम लोग करेंगे सारे ऑप्टिमाइजेशन प्रॉब्लम होंगे और एक सिंगल चीज़ पूछी जाएगी। अच्छा जो भी सिंगल चीज़ पूछी जा रही है आप उसको गेस कर सकते हो। गेस कर सकते हैं। गेस कर सकते हैं। गेस कहां से कहां तक? एक आपका होगा कि इसके हाईएस्ट वैल्यू क्या हो सकती है? पंखा का लोएस्ट वैल्यू क्या हो सकता है? एक नंबर।",
+      "source": "caption",
+      "english_text": "Find the minimum number of reasons by which such and such work can be done. Find the minimum number of does Coco can eat all the bananas. So when we do all these questions, all will be optimization problems and one single thing will be asked. Well, you can guess whatever single thing is being asked. Can guess. Can guess. Guess from where to where? One of your questions would be what could be its highest value? What can be the lowest value of the fan? A number."
+    },
+    {
+      "start_time": 2206.32,
+      "end_time": 2237.99,
+      "text": "और पंखा का हाईएस्ट वैल्यू क्या हो सकता है? सात नंबर। ये सब क्वेश्चन में आपको दिया रहेगा। छुपा के दिया हो लेकिन दिया रहेगा। लेकिन दिया रहेगा। ओके? आप गेस कर सकते हैं। तीसरा, उस गेस का एक आंसर आपको आर्डर ऑफ़ वन या तो आर्डर ऑफ़ n में मिल जाना चाहिए। इससे देर नहीं लगनी चाहिए उसका आंसर ढूंढने में। मतलब की अगर आप तीन नंबर पिक किया है, तो गर्मी लगेगी कि ठंड लगेगी। इसका आंसर आपको तुरंत पता चलना चाहिए, तुरंत, उसमे टाइम ना लगे। ऑर्डर ऑफ एन टाइम लग सकता है और जो भी आपका आंसर आ रहा है ये मोनोटोोनिक होना चाहिए।",
+      "source": "caption",
+      "english_text": "And what can be the highest value of the fan? Number seven. All this will be given to you in the questions. It may have been given in a hidden manner but it will still be given. But it will be given. Ok? You can guess. Third, you should get an answer to that guess either in the order of one or in the order of n. It shouldn't take long to find the answer. Meaning if you have picked number three, will you feel hot or cold? You should know the answer to this immediately, immediately, it should not take time. Order of N time may be taken and whatever your answer is coming, it should be monotonic."
+    },
+    {
+      "start_time": 2238.0,
+      "end_time": 2271.109,
+      "text": "मोनोटोनिक होना चाहिए। मतलब कि ये ऐसा होना चाहिए बैड बैड बैड बैड अचानक से गुड हो जाए। अचानक से गुड हो जाए उसके बाद गुड ही रहे। उसके बाद ये कभी बैड ना बनने पाए उसके बाद ये कभी बैड ना बनने पाए। ये सारी चीजें मिलके एक बाइनरी सर्च के क्वेश्चन को बनाती हैं। ये सारी चीजें मिलके एक बाइनरी सर्च के क्वेश्चन को बनाती हैं। अगर इन चारों में से एक भी चीज नहीं है तो बाइनरी सर्च का क्वेश्चन नहीं है। तो बाइनरी सर्च ये होता है। इस चीज को बाइनरी सर्च कहते हैं। आप जो लो मिड हाई पढ़ रहे हैं वो तो इसका एक इंप्लीमेंटेशन है। वो",
+      "source": "caption",
+      "english_text": "Must be monotonic. Meaning that it should be like this, bad bad bad bad suddenly becomes good. Even if it suddenly becomes good, it remains good after that. After that he may never become bad. After that he may never become bad again. All these things together make up a binary search query. All these things together make up a binary search query. If even one of these four things is not there then there is no question of binary search. So this is binary search. This thing is called binary search. The Low Mid High you are reading is an implementation of this. that"
+    },
+    {
+      "start_time": 2271.119,
+      "end_time": 2304.39,
+      "text": "इसका छोटा सा इंप्लीमेंटेशन है। वो बाइनरी सर्च नहीं है। मतलब वो तो एरे में बाइनरी सर्च लगाना है इसीलिए आप लो मिड हाई कर रहे हैं। कहीं और लगाना होता तो आप कुछ और करते। अगर ट्री में लगाना बाइनरी सर्च कहीं भी लग सकता है और ये भी हमेशा जरूरी नहीं है कि कुछ लोग याद करा देते हैं कि एरे सॉर्टेड होना चाहिए। नहीं। ऐसा जरूरी नहीं है। एरे सॉर्टेड किसी और कारण से होना चाहिए। वो जब अगला क्वेश्चन करेंगे बाइनरी सर्च का तो आपको समझ में आ जाएगा। तो इस कारण से ऐसा कोई रूल नहीं है कि बाइनरी सर्च बोलता है कि हम तो सॉर्टेड एरे पे लगेंगे जी। नहीं। वो वो लॉजिक नहीं है उसका। उसका लॉजिक इस गेस और उसके आंसर से जुड़ा हुआ है। उसका लॉजिक गेस के आंसर से जुड़ा हुआ है। उसका लॉजिक सॉर्टिंग से",
+      "source": "caption",
+      "english_text": "This is a small implementation. That is not a binary search. Meaning, you have to do binary search in the array, that is why you are doing low mid high. If you had to put it somewhere else, you would have done something else. If binary search can be done anywhere in the tree and it is not always necessary, some people remind that the array should be sorted. No. This is not necessary. The array must be sorted for some other reason. When he asks the next question about binary search, you will understand. So for this reason there is no such rule that binary search says that we will look at sorted array. No. That is not his logic. His logic is linked to this guess and its answer. Its logic is linked to the answer of the guess. its logic from sorting"
+    },
+    {
+      "start_time": 2304.4,
+      "end_time": 2334.24,
+      "text": "और सर्चिंग से नहीं जुड़ा हुआ है। तो बाइनरी सर्च का क्वेश्चन और बाइनरी सर्च का पैटर्न अलग-अलग बात है। आज आप लोग पैटर्न सीख चुके हैं। क्वेश्चन इसपे कम से कम 12 से 15 करेंगे। धीरे-धीरे क्लियर हो जाएगा। ओके? तो, ठीक है? अह कुछ भी नहीं समझ में आया हो तो कमेंट कीजिए। बहुत ज़रूरी है कि आपको ये वीडियो पूरी समझ में आनी चाहिए। ये वीडियो आपको 100% समझ में आना चाहिए। थोड़ा सा भी अगर 99% भी आया है फिर से देखिए। फिर भी नहीं आता है कमेंट करिए फिर पढ़ाएंगे। ठीक है? चलिए।",
+      "source": "caption",
+      "english_text": "And not related to searching. So the question of binary search and the pattern of binary search are different things. Today you guys have learned the pattern. There will be at least 12 to 15 questions on this. Will gradually clear up. Ok? Well then? If you haven't understood anything then please comment. It is very important that you understand this video completely. You should understand this video 100%. Even if 99% has come even a little, look again. Still don't know, comment, we will teach again. Ok? Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

@@ -1,0 +1,324 @@
+{
+  "video_id": "V0wJuik3WSE",
+  "video_title": "Master STACK in DSA Patterns 2025 | Introduction to Stack | CPP JAVA PYTHON",
+  "video_number": 39,
+  "chunks": [
+    {
+      "start_time": 2.07,
+      "end_time": 36.229,
+      "text": "सबसे पहले तो 15,000 के लिए बहुत-बहुत शुक्रिया। 15,000 हो चुके हैं चैनल पे। डीपली डीपली ग्रेटफुल। जो लोग यहां पहली बार आए हैं आप लोग डिस्क्रिप्शन चेक कर लीजिए। पता चल जाएगा यहां हम लोग क्या करते हैं। मेरा नाम क्या है और ज्यादा टाइम ना वेस्ट करते हुए जल्दी से स्टार्ट करते हैं स्टैक। तो बहुत इंपॉर्टेंट पैटर्न है। बहुत बड़ा टॉपिक नहीं है लेकिन बहुत बड़ा पैटर्न है। इसमें बहुत सारे क्वेश्चन बनते हैं। अगर आप शीट भी देखेंगे पैटर्न वाली तो आपको लगेगा कि स्टैक में बहुत सारे क्वेश्चन है। व्हेन कंपेयर टू स्लाइडिंग विंडो या मर्जन इंटरवल या प्रीफिक्स कुछ भी। तो स्टैक में नंबर ऑफ क्वेश्चंस बहुत सारे हैं। इसीलिए इसको पढ़ना बहुत जरूरी है। है बहुत सिंपल सी चीज। बहुत छोटी सी चीज है। तो स्टैक का माने क्या होता है? मतलब स्टैक में अगर हिंदी में अगर आप इसका मतलब ढूंढना",
+      "source": "caption",
+      "english_text": "First of all, thank you very much for Rs 15,000. There have been 15,000 views on the channel. Deeply deeply grateful. Those who have come here for the first time, please check the description. You will know what we do here. What is my name and without wasting much time let's start the stack quickly. So this is a very important pattern. Not a big topic but a big pattern. Many questions arise in this. If you also look at the sheet with the pattern, you will feel that there are a lot of questions in the stack. When compared to sliding window or merge interval or prefix anything. So the number of questions in the stack is very high. That is why it is very important to read it. It is a very simple thing. It's a very small thing. So what does stack mean? Meaning of Stack in Hindi If you want to find its meaning in Hindi."
+    },
+    {
+      "start_time": 36.239,
+      "end_time": 69.19,
+      "text": "चाहेंगे तो क्या मिलेगा? हिंदी में स्टैक का मतलब होता है ढेर। मतलब स्टैक के मतलब एक के ऊपर, एक के ऊपर, एक के ऊपर एक। फॉर एग्जांपल अगर आप किताबें रख रहे हैं टेबल पे आप एक किताब रखिए। उसके ऊपर एक और किताब, उसके ऊपर एक और किताब, उसके ऊपर एक और किताब। तो इसको हम लोग स्टक बोलते हैं। स्टैक ऑफ़ पैनकेक्स, स्टैक ऑफ़ बुक्स। ऐसा करके। ठीक है? तो स्टैक की खासियत क्या होती है? ऐसा हम लोग क्यों कर रहे हैं? हम लोग तो हमारे पास पहले से एरे था। हमारे पास पहले से लिंक लिस्ट था। तो स्टैक क्यों आया? स्टैक इसलिए आया ना क्योंकि स्टैक को आप एक बक्सा समझिए। एक बॉक्स समझिए। क्या है? एक बॉक्स है। ओके? इसमें एक ही ओपनिंग है। इसमें अंदर घुसने का एक ही रास्ता है ये वाला ऊपर वाला। अब इसमें",
+      "source": "caption",
+      "english_text": "What will you get if you want? Stack means heap in Hindi. Meaning stack means one above the other, one above the other, one above the other. For example, if you are keeping books, keep one book on the table. Another book on top of that, another book on top of that, another book on top of that. So we call this stuck. Stack of pancakes, stack of books. By doing this. Ok? So what is the specialty of a stack? Why are we doing this? We already had array. We already had the link list. So why did the stack come about? Stack came about because you consider the stack as a box. Consider a box. What is? There is a box. Ok? It has only one opening. There is only one way to enter inside, this one at the top. now in this"
+    },
+    {
+      "start_time": 69.2,
+      "end_time": 99.51,
+      "text": "आप दो-तीन चीजें कर सकते हैं। जाहिर सी बात है कि अगर ये बॉक्स है तो आप इसमें चीजें स्टोर कर सकते हैं। मतलब चीजें इंसर्ट कर सकते हैं। आप इसमें इंसर्ट कर सकते हैं। ओके? इंसर्ट को हम लोग यहां पे पुश भी बोलते हैं। क्या? पुश मतलब बॉक्स में घुसा दो। आप यहां से चीजों को डिलीट कर सकते हैं। कहां? डिलीट। स्टैक की भाषा में इसको पॉप बोला जाता है। आप इसके ऊपर वाले को देख सकते हैं। उस पे बाद में आएंगे। तो मान के चलिए कि आप अभी के लिए दो ऑपरेशन कर सकते हैं। लेकिन आप ये दो ऑपरेशन कैसे करेंगे? फॉर एग्जांपल मान के चलिए कि शुरू में आपका पूरा बक्सा खाली है। शुरू में आपका पूरा बक्सा क्या है?",
+      "source": "caption",
+      "english_text": "You can do two-three things. Obviously, if it is a box then you can store things in it. Meaning things can be inserted. You can insert into it. Ok? Here we also call insert as push. What? Push means put it in the box. You can delete things from here. Where? Delete. In stack language it is called pop. You can see the one above it. Will come to that later. So let's assume you can do two operations for now. But how will you do these two operations? For example, let's assume that initially your entire box is empty. What is your complete box in the beginning?"
+    },
+    {
+      "start_time": 99.52,
+      "end_time": 132.47,
+      "text": "खाली। आपको मन करता है कि हम एक किताब इसके अंदर रखें। तो आप अपनी किताब ए वन। बुक वन यहां पे रख देते हैं। इसका नाम है बुक वन। ठीक है? रख दिए। आपके पास एक और किताब थी। लेकिन आप चाहते हैं कि एक और किताब रखें। अब देखिए बॉक्स में नीचे वाली जगह भर चुकी है। ये मत देखिएगा कि लेफ्ट राइट में जगह है नहीं। लेफ्ट राइट में जगह नहीं है। वो किताब उतना ही बड़ा है जितना बॉक्स है। अब आपको अगर दूसरी किताब रखनी है ना तो आपको इसकी किताब के ऊपर रखना पड़ेगा। तो आप इसे ऊपर रख दीजिए कोई बात नहीं। ऊपर रख दीजिए ऐसे करके। आप ऊपर क्या रखें? बुक टू। आपको एक और किताब अगर रखनी है तो आप करिए बुक थ्री। यहां पे रख दीजिए।",
+      "source": "caption",
+      "english_text": "Empty. Do you feel like putting a book inside it? So you make your book a one. Let's keep Book One here. Its name is Book One. Ok? Kept it. You had another book. But you want to have one more book. Now see that the space at the bottom of the box is filled. Don't see that there is no space left or right. There is no space left and right. That book is as big as the box. Now if you want to keep another book, you will have to keep it on top of this book. So you put it on top, no problem. Put it on top like this. What do you put on top? Book two. If you want to keep one more book, then do book three. Keep it here."
+    },
+    {
+      "start_time": 132.48,
+      "end_time": 157.91,
+      "text": "बुक थ्री। चलिए। अब अगर आपको किताबें निकालनी है। अब अगर आपको किताबें निकालनी है तो ध्यान से याद रखिएगा आप किताबें घुसाए किस ऑर्डर में थे। आप पहले बुक वन घुसाए थे। फिर आप बुक टू घुसाए थे। फिर आप बुक थ्री घुसाए थे। ऐसे लेकिन क्योंकि ये स्टक एक बक्से की तरह है। आप इमेजिन करके देखिए एक बक्से की तरह है। आप पहले बुक वन घुसाए वो सबसे नीचे रखे। उसके ऊपर बुक टू उसके ऊपर बुक थ्री। अब आपको अगर सारी किताबें कोई बोले कि सारी किताबें निकालो।",
+      "source": "caption",
+      "english_text": "Book Three. Let go. Now if you want to take out the books. Now if you have to take out the books, remember carefully the order in which you inserted the books. You entered Book One first. Then you entered book two. Then you entered book three. But because this stack is like a box. Imagine it is like a box. You insert book one first and keep it at the bottom. Book two on top of that, book three on top of that. Now if someone tells you to take out all the books."
+    },
+    {
+      "start_time": 157.92,
+      "end_time": 192.869,
+      "text": "एक-एक करके एक-एक करके निकालो। तो आप क्या करेंगे? आपको सबसे पहले आपको सबसे पहले कौन सा निकालना पड़ेगा? आपको सबसे पहले बुक थ्री निकालना पड़ेगा। आप सबसे पहले बुक वन नहीं निकाल सकते। आप अंदर हाथ डाल के बुक वन नहीं निकाल। नहीं। सबसे पहले आपको जो सबसे ऊपर रखा हुआ है ना वही निकालना पड़ेगा। तो सबसे पहले आपको बुक थ्री ही निकालना पड़ेगा। तो सबसे पहले आप निकालेंगे क्या? आप निकालेंगे बुक थ्री। ठीक है? मान के चलिए बुक थ्री निकल चुका है। बुक थ्री निकल चुका है। अब आप क्या निकालेंगे? अब आपको बोला है पूरा बॉक्स खाली करो। पूरा बॉक्स निकालो। अब आपको निकालना पड़ेगा बुक टू। बुक टू। अभी भी आप हाथ डाल के अंदर में बुक वन नहीं निकाल सकते। सबसे ऊपर जो है उसी को निकालना पड़ेगा। तो ठीक है निकालिए। बुक टू को",
+      "source": "caption",
+      "english_text": "Take them out one by one. So what will you do? Which one do you need to remove first? You have to get book three first. You can't get book one out first. You don't put your hand inside and take out Book One. No. First of all you will have to remove the one which is kept at the top. So first of all you will have to get book three. So what will you remove first? You will bring out book three. Ok? Let's say book three is out. Book three is out. What will you take out now? Now you have been told to empty the entire box. Take out the entire box. Now you will have to take out book two. Book two. Even now you can't put your hand inside and take out Book One. The one which is at the top will have to be removed. Okay then take it out. book to"
+    },
+    {
+      "start_time": 192.879,
+      "end_time": 219.75,
+      "text": "निकालिए। बुक टू निकालिए। मान के चलिए बुक टू आपने निकाल दिया तो बॉक्स और थोड़ा खाली हो गया। अब आपको अब आप बुक वन निकाल सकते हैं क्योंकि बुक वन सबसे ऊपर रखा हुआ है। आप एक समय में ना आप स्टक में एक ही काम कर सकते हैं। बक्से के ऊपर कुछ रख सकते हैं। बक्से के ऊपर से कुछ हटा सकते हैं। अंदर हाथ घुसा के या तो साइड से नहीं वो सब काम नहीं कर सकते हैं। इसमें बस एक ही ओपनिंग है एक ही रास्ता है। कुछ भी घुसाने का या कुछ भी निकालने का सबसे ऊपर में। सबसे ऊपर में उठाओ सबसे ऊपर में रखो बस। अब आप चाहें तो बुक वन निकाल सकते हैं। तो अब आप बुक वन निकाल के देख लीजिए।",
+      "source": "caption",
+      "english_text": "Take it out. Take out book two. Suppose you removed book two and the box became a little more empty. Now you can take out Book One because Book One is kept at the top. You can do only one thing at a time and you are stuck. You can put something on top of the box. You can remove something from the top of the box. You cannot do all that work by inserting your hand inside or from the side. There is only one opening and one way. At the top to insert or remove anything. Pick it at the top, put it at the top, that's it. Now you can take out Book One if you want. So now you take out book one and take a look."
+    },
+    {
+      "start_time": 219.76,
+      "end_time": 253.67,
+      "text": "बुक वन निकालिए और अब आपका स्टक खाली हो चुका है। जो भी आपका बक्सा था वो खाली हो चुका है। तो देखिए बहुत बहुत गौर से देखिए। आप घुसाए थे इस ऑर्डर में। बुक वन पहले, बुक टू बाद में, बुक थ्री लास्ट में। लेकिन जब आप निकालने लगे ना तो बुक थ्री पहले निकला, बुक टू पहले निकला, बुक वन पहले निकला। ऐसा क्यों हुआ? क्योंकि बुक वन सबसे पहले घुसा जरूर था लेकिन वो घुस के सबसे नीचे चला गया था। अगर पूरा बक्सा खाली होगा तो जाहिर सी बात है कि आप कुछ डालेंगे तो सबसे नीचे गिर जाएगा। उसके बाद आप जो डालेंगे वो उससे ऊपर होगा। अब जो सबसे लास्ट में जो चीज डालेंगे ना वो सबसे ऊपर आएगी। तो सबसे ऊपर जो चीज रहेगी वही सबसे पहले निकलेगी। इसीलिए इसीलिए स्टक एक ऐसा डेटा स्ट्रक्चर है। ऐसा डेटा",
+      "source": "caption",
+      "english_text": "Take out book one and your stash is now empty. Whatever box you had is now empty. So look very, very carefully. You entered this order. Book One first, Book Two later, Book Three last. But when you started publishing, book three came out first, book two came out first, book one came out first. Why did this happen? Because Book One had entered first but it had entered at the bottom. If the entire box is empty then it is obvious that if you put something in it, it will fall at the bottom. Whatever you put after that will be above that. Now whatever thing you put in the last place will come at the top. So the thing which is at the top will come out first. That's why stack is such a data structure. such data"
+    },
+    {
+      "start_time": 253.68,
+      "end_time": 287.03,
+      "text": "स्ट्रक्चर है जिसको हम लोग बोलते हैं लास्ट इन फर्स्ट आउट। इसका या फिर फर्स्ट इन लास्ट आउट। इसका क्या मतलब होता है? जो चीज सबसे पहले अंदर जाएगी वो सबसे बाद में निकलेगी। वो सबसे बाद में निकलेगी। जो चीज सबसे लास्ट में ऊपर जाएगी। जैसे बुक थ्री सबसे लास्ट में गया था वो सबसे पहले निकल जाएगा। ये स्टक की खासियत होती है। लेकिन ये चाहिए क्यों? मतलब ये तो बहुत बेहूदा टाइप का डेटा स्ट्रक्चर हुआ कि ऐसा उल्टा हो जाएगा। उल्टा क्यों चाहिए? चाहिए होता है। बहुत सारे क्वेश्चन बहुत सारे चीजों में आपको ये चाहिए होता है। अ फॉर एग्जांपल सबसे अच्छा क्वेश्चन तो यही है कि अगर आपको कोई स्ट्रिंग रिवर्स करना है।",
+      "source": "caption",
+      "english_text": "There is a structure which we call last in first out. This or first in last out. What does this mean? The thing that goes in first will come out last. She will come out last. The thing that will go up last. Just as Book Three was the last to go, it will be the first to go. This is the specialty of the stock. But why is this necessary? Meaning, this is a very absurd type of data structure that such a thing would be reversed. Why do you need the reverse? It is necessary. Lots of questions, lots of things, you need this. A For Example The best question is if you want to reverse a string."
+    },
+    {
+      "start_time": 287.04,
+      "end_time": 321.27,
+      "text": "अगर आपको स्ट्रिंग आप ध्यान से देख रहे होंगे ये पूरा रिवर्स हो चुका है। पहले वन था फिर टू था फिर थ्री था। जिस ऑर्डर में आप घुसाए थे। लेकिन जब आप निकालने लगे ना तो पहले आपको थ्री मिला, फिर टू मिला, फिर वन मिला। तो अगर बहुत बेसिक क्वेश्चन है ये कोई वैसे शायद क्वेश्चन है भी शीट में लेकिन बड़ा बेसिक क्वेश्चन है कि अगर आपके पास एक स्ट्रिंग है ए बी सी आपको कोई बोलता है इसको रिवर्स करो कोई बात नहीं आप एक स्टैग बना लीजिए एक बक्सा बना लीजिए और एक-एक करके सारे स्ट्रिंग के लेटर्स को घुसाइए तो घुसाइए सबसे पहले आप ए घुसाइए ए सबसे नीचे चला जाएगा बी घुसाइए बी उसके ऊपर आएगा सी घुसाइए सी उसके ऊपर आएगा स्ट्रिंग खत्म अब एक-एक करके लेटर्स को निकालिए और एक नया स्ट्रिंग बनाना सुरु",
+      "source": "caption",
+      "english_text": "If you are watching the string carefully, it has been completely reversed. First there was one, then there was two, then there was three. The order in which you entered. But when you started drawing, first you got three, then two, then one. So if this is a very basic question, maybe there is a question in the sheet as well but the very basic question is that if you have a string ABC then someone tells you to reverse it, no problem, you make a stag, make a box and enter all the letters of the string one by one, then first enter A, A will go at the bottom, B enter B, C will come above it, C will come above it, now the string is finished one by one. Remove the letters and start creating a new string."
+    },
+    {
+      "start_time": 321.28,
+      "end_time": 354.87,
+      "text": "करिए सबसे पहले सी को निकालिए सी फिर बी को निकालिए बी फिर ए को निकालिए ए देखिए स्ट्रिंग रिवर्स हो गया आपका। तो स्टक में जबभी भी आप कोई पूरी चीज स्टक में घुसा के और निकाल देते हैं ना वो पूरी चीज रिवर्स हो जाती है। क्या हो जाती है? रिवर्स। 1 2 3 4 घुसाओगे और निकालोगे वो 4 3 2 1 हो जाएगा। वो 1 2 3 4 नहीं रहेगा। पूरा रिवर्स हो जाएगा। एग्जैक्टली एग्जैक्टली रिवर्स कर देगा। तो एक तो यही यूज़ केस हो गया। तो इससे पता चलता है कि कुछ ना कुछ यूज़ केस तो है। तो इसी को स्टैक बोलते हैं। अब अब स्टैक में जैसा कि हम बताएं आप कुछ तमाम चीजें ही कर सकते हैं। बड़ी लिमिटेड चीजें कर सकते हैं। इसीलिए इसको",
+      "source": "caption",
+      "english_text": "Do this, first remove C, then remove C, then remove B, then remove A. A, see your string is reversed. So whenever you insert a whole thing into the stick and take it out, the whole thing reverses. What happens? Reverse. If you insert 1 2 3 4 and take it out, it will become 4 3 2 1. It will no longer be 1 2 3 4. There will be a complete reverse. Will reverse exactly. So this is one use case. So this shows that there is some use case. So this is called stack. Now, as we mentioned in the stack, you can do many things. Can do big limited things. That's why it"
+    },
+    {
+      "start_time": 354.88,
+      "end_time": 387.67,
+      "text": "समझना बड़ा आसान है। इम्प्लीमेंट करना बड़ा आसान है। लिखना बड़ा आसान है। C++ में स्टैक होता है। जावा में भी शायद स्टैक होता ही है। पाइप सब हर हर लैंग्वेज में आपको स्टैक मिल जाएगा बनाया। आप इसमें दो-तीन चीजें कर सकते हैं। आप इसमें पुश कर सकते हैं। पुश का मतलब वही ऊपर में कुछ रखना। ऊपर नहीं रखेंगे। कहीं और नहीं रख सकते हैं। आप पुश में ये नहीं बता सकते हैं कि चौथे पोजीशन में नहीं वैसे काम नहीं करता है। मान लीजिए आपका स्टैक जो भी है स्टैक जस्ट लाइक एरे होता है या लिंक लिस्ट होता है। इसका अपना एक डेटा टाइप होता है। आपको पहले से बताना पड़ेगा कि स्टैक किस तरीके के डेटा टाइप को स्टोर कर रहा है। मतलब ये जो पूरा बक्सा है ये सिर्फ इंटीजर रख सकता है या सिर्फ",
+      "source": "caption",
+      "english_text": "It is very easy to understand. It is very easy to implement. It is very easy to write. C++ has a stack. Java also probably has a stack. Pipe sub in every language you will get the stack created. You can do two-three things in this. You can push into it. Push means placing something on top. Will not keep it above. Can't keep it anywhere else. You can't tell in push that it doesn't work like that in fourth position. Suppose whatever your stack is, the stack is just like an array or a linked list. It has its own data type. You have to specify in advance what type of data the stack is storing. Meaning, this entire box can hold only integers or only"
+    },
+    {
+      "start_time": 387.68,
+      "end_time": 416.39,
+      "text": "कैरेक्टर रख सकता है या तो सिर्फ वेक्टर रख सकता कुछ भी। कोई भी एक चीज रख सकता है। किसी एक तरीके की चीजें। इंटीजर और कैरेक्टर एक साथ नहीं घुसा सकते। आप एक ही बक्से में कभी इंटीजर घुसा रहे हैं, कभी कैरेक्टर घुसा रहे हैं। ऐसा नहीं होता है। या तो इंटीजर घुसाइए या तो कैरेक्टर। मान लीजिए कि आप एक इंटीजर टाइप का स्टैक बनाना चाहें। तो आप पुश के समय कुछ वैल्यू दे सकते हैं। कोई भी वैल्यू। कोई भी इंटीजर वैल्यू आप पुश 10 दे सकते हैं। तो इससे क्या होगा? स्टैक के सबसे ऊपर में 10 आ जाएगा। सबसे ऊपर में बाकी क्या था मालूम नहीं। सबसे ऊपर में 10 आ जाएगा। तो ये तो हुआ पुश। इसको हम लोग बोलते हैं पुश।",
+      "source": "caption",
+      "english_text": "Can keep character or can keep only vector, anything. Anyone can keep one thing. One type of things. Integer and character cannot be entered together. Sometimes you are entering integers and sometimes characters in the same box. This does not happen. Enter either integer or character. Suppose you want to create a stack of integer type. So you can give some value at the time of push. Any value. You can give any integer value push 10. So what will happen from this? 10 will come on the top of the stack. Don't know what was left at the top. 10 will come at the top. So this is the push. We call this push."
+    },
+    {
+      "start_time": 416.4,
+      "end_time": 446.309,
+      "text": "स्टैक में इसको पुश। इंसर्ट नहीं बोलते हैं। पुश बोलते हैं। ठीक है? पॉप। पॉप का क्या मतलब है? जस्ट उल्टा। स्टैक के जो सबसे ऊपर जो चीज रखी हुई है वो हट जाएगी। डिलीट हो जाएगी। डिलीट हो जाएगी। वो आपको मिलेगी नहीं। डिलीट हो जाएगी मतलब कि अगर आपका स्टैक ऐसा दिखता था मान लीजिए 9 10 और फोर। अगर आपने बोला कभी भी पॉप कुछ नहीं होगा ये जो फोर है ना ये फोर डिलीट हो जाएगा। ठीक है? चलिए। अगला जो काम कर सकते हैं वो होता है टॉप। टॉप का क्या मतलब होता है? टॉप का मतलब होता है देखना। जावा में शायद इसको पीक बोलते हैं।",
+      "source": "caption",
+      "english_text": "Push it into the stack. Insert doesn't speak. Push speaks. Ok? Pop. What does pop mean? Just the opposite. The item placed at the top of the stack will be removed. Will be deleted. Will be deleted. You won't get that. It will be deleted, meaning if your stack looked like this, let's say 9, 10 and four. If you said that nothing will ever pop, this four will be deleted. Ok? Let go. The next thing you can do is the top. What does top mean? Top means to see. In Java it is probably called peak."
+    },
+    {
+      "start_time": 446.319,
+      "end_time": 473.83,
+      "text": "पीक मतलब देखना। टॉप मतलब देखना। पॉप का क्या मतलब हुआ था? पॉप का मतलब तो हुआ था कि वो उड़ ही गया। मतलब उसको हटा दिया गया। टॉप का मतलब होता है उसको हटाओ मत। बस झांक के देख लो कि टॉप में अभी है क्या? तो जब आप अभी करेंगे मान लीजिए फोर आप पॉप कर दिए तो कोई बात नहीं। अभी जब आप बोलेंगे हमको टॉप दिखाओ या तो पीक दिखाओ। तो ये आपको ये वाला 10 दिखा देगा। तो इस ये आपको आंसर देता है। ये आपको क्या देता है? एक आंसर देता है। आप कभी भी स्टैक का टॉप देखना चाहें तो ये आपको आंसर देता है। इसको आप प्रिंट कर सकते हैं। इसको आप यूज़ कर सकते हैं। इसको आप कुछ भी कर सकते हैं।",
+      "source": "caption",
+      "english_text": "Peak means seeing. Top means see. What did pop mean? Pop meant that it flew. Meaning he was removed. Top means don't remove it. Just take a peek and see what's still there in the top? So when you do now, let's say you pop four, then there is no problem. Now when you say show us the top or show us the peak. So this will show you this one 10. So this gives you the answer. What does it give you? Gives an answer. Whenever you want to see the top of the stack, it gives you the answer. You can print this. You can use this. You can do anything with it."
+    },
+    {
+      "start_time": 473.84,
+      "end_time": 502.469,
+      "text": "और कुछ जनरल चीजें होती हैं जैसे कि साइज। साइज आपको क्या बताता है? स्टैक में इस समय कितने एलिमेंट्स हैं? अगर स्टैक में कोई एलिमेंट नहीं होगा तो ये आपको ज़ीरो बताएगा। अगर इस समय जैसे एलिमेंट्स हैं तो इस समय आपको ये टू बता देगा। स्टैक में कितने एलिमेंट्स हैं? साइज़ आपको बता देता है। सेम लाइक वेक्टर का साइज़ या एरे का साइज़ या किसी और का साइज़। और क्या होता है? एम्प्टी एम्प्टी। एम्प्टी क्या होता है? एम्प्टी एक बुलियन वेरिएबल आपको देता है। क्या? बुलियन चीज़ देता है कि अ स्टैक एम्प्टी है या नहीं? एम्प्टी होगा तो ट्रू बोलेगा।",
+      "source": "caption",
+      "english_text": "And there are some general things like size. What does the size tell you? How many elements are there in the stack right now? If there is no element in the stack then it will tell you zero. If there are elements like this at this time then it will tell you this. How many elements are there in the stack? The size tells you. Same like size of vector or size of array or size of anything else. What else happens? Empty empty. What is empty? Empty gives you a boolean variable. What? Boolean Returns whether the stack is empty or not? If it is empty then it will say true."
+    },
+    {
+      "start_time": 502.479,
+      "end_time": 537.35,
+      "text": "एम्प्टी नहीं होगा तो फॉल्स बोलेगा। आप एम्प्टी को साइज से भी चेक कर सकते हैं। अगर उसका साइज जीरो है तो वो एम्प्टी है। अगर उसका साइज जीरो से बड़ा है तो वो एम्प्टी नहीं है। तो साइज या एम्प्टी एक चीज याद रखेंगे आपका काम बन जाएगा। लेकिन ये तीनों चीजें ये तीनों चीजें बड़ी इंपॉर्टेंट है। क्या पुश पॉप टॉप तीन ही होती हैं। ज्यादा इसमें ऑपरेशन होता ही नहीं है। ज्यादा इसमें ज्यादा खेल सॉर्टिंग और ये सब होता ही नहीं है इसमें। इसमें फर्स्ट बड़ा सिंपल सा इनोसेंट सा आदमी है। बोलता है तुम कुछ पुश करो। पुश करोगे तो मेरे ऊपर सबसे ऊपर रख देना। पॉप करना सबसे ऊपर वाला हटा देना। टॉप देखना तो सबसे ऊपर वाला देख ले। उसको अपने नोटबुक में लिख लेना और कुछ मत करना। बस यही होता है स्टेप। ठीक है? अब अब हम लोग",
+      "source": "caption",
+      "english_text": "If it is not empty then it will say false. You can also check the empty by size. If its size is zero then it is empty. If its size is greater than zero then it is not empty. So size or empty, remember one thing and your work will be done. But these three things are very important. Are there only three push pop tops? There is not much operation involved. There is not much game sorting and all this in this. The first one in this is a very simple and innocent man. Tells you to push something. If you push, then put me on top. Pop to remove the top one. If you want to see the top, then see the one at the top. Write it down in your notebook and do nothing. This is the only step. Ok? now now we"
+    },
+    {
+      "start_time": 537.36,
+      "end_time": 563.03,
+      "text": "इसको पढ़ रहे हैं डीएसए पैटर्न में तो हम लोग को जानना जरूरी है कि किस तरीके के क्वेश्चन में लगता है। किस तरीके के क्वेश्चन में लगता है? तो देखिए सबसे पहले तो जनरली एक बहुत इसका हम लोग फ्लो चार्ट और टेंप्लेट देख लेते हैं कि ये होता क्या है? किस तरीके के क्वेश्चन में आपको स्टक सोचना चाहिए, सोचना शुरू करना चाहिए। तो सबसे पहली बात तो होती है कि कुछ आपको आइटम्स दिए हो। कुछ आपको आइटम्स दिए हो।",
+      "source": "caption",
+      "english_text": "If we are reading this in DSA pattern then it is important for us to know which type of questions are asked. In which type of question is it applied? So see, first of all, generally we see a lot of flow charts and templates to see what this is? In which type of question should you get stuck and start thinking? So the first thing that happens is that some items are given to you. May have given you some items."
+    },
+    {
+      "start_time": 563.04,
+      "end_time": 595.99,
+      "text": "आइटम्स का क्या मतलब होता है? कुछ चीजें। अब आइटम्स एरे भी हो सकता है। एरे में भी आइटम्स हो सकते हैं। बोलेगा बहुत सारे आइटम्स एरे में है। वेरी गुड। स्ट्रिंग में भी हो सकता है। इन्हीं दोनों में होता है। मतलब आइटम्स इन्हीं दोनों में होता है। एरे और स्ट्रिंग में आइटम्स। अच्छा। आपका क्वेश्चन अगर इस चीज को इन्वॉल्व करता है ना कि आपको लेफ्ट टू राइट आइटम्स को देखना है। लेफ्ट टू राइट आइटम्स को देखना है। मतलब मान लीजिए आपका एरे है। आपको लेफ्ट टू राइट उसको देखना है। अगर क्वेश्चन में ऐसा है और और आपको इंट्यूशन आ रहा है। या तो क्वेश्चन में ये लिखा भी हुआ है ना कि आपको मोस्ट रीसेंट एलिमेंट से कुछ काम करना है। किससे? बहुत ध्यान से",
+      "source": "caption",
+      "english_text": "What do the items mean? Some things. Now items can also be an array. Arrays can also contain items. Will say there are too many items in the array. very good. Can also be in string. It happens in both of these. Meaning the items are in both of these. Items in arrays and strings. Good. If your question involves this thing then you have to look at the left to right items. Items have to be seen from left to right. Meaning, suppose your array is. You have to see it from left to right. If it is like this in the question and you are getting intuition. Either it is written in the question that you have to do some work from the most recent element. With whom? very carefully"
+    },
+    {
+      "start_time": 596.0,
+      "end_time": 629.35,
+      "text": "याद रखिएगा। यही स्टक का कांसेप्ट है। मोस्ट रीसेंट एलिमेंट। मोस्ट रीसेंट एलिमेंट से कुछ काम करके देखना है। इसी कोई तरह के क्वेश्चन में स्टक लगता है। मोस्ट रीसेंट से जरूरत मतलब मतलब क्या है? और स्टक ये मोस्ट रीसेंट में होता क्या है? आप बहुत गौर से देखिएगा। मोस्ट रीसेंट होता है। मतलब जब आप लेफ्ट टू राइट देख रहे हैं ना तो मोस्ट रीसेंट आप जो भी एलिमेंट देखें उसको हम लोग बोलते हैं कि सबसे रीसेंट और स्टक में ये चीज बहुत अच्छे से होती है। अ इस पे जब हम आगे बात करेंगे तो और डीप में बात करेंगे। लेकिन अभी आप मान के चलिए कि जब",
+      "source": "caption",
+      "english_text": "Remember this. This is the concept of Stuck. Most recent element. Have to try something with the most recent element. Feels stuck in some kind of question like this. What does most recent need mean? And what is the most recent stuck issue? You will look very carefully. Is most recent. Meaning, when you are looking from left to right, whatever element you see is the most recent, we call it the most recent and stuck. A. When we talk about this further, we will talk in more depth. But for now let us assume that when"
+    },
+    {
+      "start_time": 629.36,
+      "end_time": 663.99,
+      "text": "भी आपको ऐसा लगे कि मोस्ट रीसेंट मतलब कि नेक्स्ट ग्रेटर प्रीवियस वाला प्रीवियस वाला स्मालेस्ट कुछ भी ऐसा हो तो आपको स्टक लगना है। ठीक है? अगर अगर क्वेश्चन में ये तो एक टाइप हो गया। अगर क्वेश्चन में इस तरीके की चीजें हैं मैचिंग मैचिंग या फिर कैंसिलिंग कैंसिलिंग या फिर क्लीनिंग इस तरीके की चीजें लिखी हुई। मतलब कि अगर कोई आपको बोलता है कि मैच करके देखो कि सब कुछ मैच हो रहा है या नहीं। एक तरीके के आइटम्स को कैंसिल कर दो। अगर कोई आपको बोलता है कि एक तरीके के इवन इवन को ऐसा",
+      "source": "caption",
+      "english_text": "Also, if you feel that the most recent means the next greater previous, the previous smallest is anything like this, then you are going to get stuck. Ok? If in the question, it has become a type. If there are things like this in the question, matching, matching or canceling, canceling or cleaning then things like this are written. Meaning that if someone tells you to match, see whether everything is matching or not. Cancel one type of items. If someone tells you that there is a way of even"
+    },
+    {
+      "start_time": 664.0,
+      "end_time": 697.11,
+      "text": "कैंसिल कर दो। क्लीन अप कर दो। इस तरीके के क्वेश्चन में स्टैक लगता है। इसके एग्जांपल भी हम लोग बड़े गौर से देखेंगे आगे। तो बने रहिएगा। ठीक है? अ रिवर्स के क्वेश्चन में तो जनरली लग ही जाता है। किसी भी चीज को रिवर्स वाले इनवॉल्विंग मतलब रिवर्स के किसी भी टाइप के क्वेश्चन में स्टक लग सकता है। एक चीज तो हम लोग देख ली कि रिवर्स करने के लिए ही स्टैक आप यूज़ कर सकते हैं। जरूरत नहीं होती है इसको यूज़ करने का लेकिन कर सकते हैं। मन करे तो कर सकते हैं। अच्छा और स्टैक भी तीन तरीके के होते हैं। स्टैक भी तीन ही तरीके के होते हैं। ये तो हो गया कि किस तरीके के क्वेश्चन में लगेगा।",
+      "source": "caption",
+      "english_text": "Cancel it. Clean up. There is a stack in this type of questions. We will also look at its examples very carefully in the future. So stay tuned. Ok? A question about reverse is generally asked. Anything involving reverse means you can get stuck in any type of reverse question. एक चीज तो हम लोग देख ली कि रिवर्स करने के लिए ही स्टैक आप यूज़ कर सकते हैं। जरूरत नहीं होती है इसको यूज़ करने का लेकिन कर सकते हैं। मन करे तो कर सकते हैं। अच्छा और स्टैक भी तीन तरीके के होते हैं। स्टैक भी तीन ही तरीके के होते हैं। ये तो हो गया कि किस तरीके के क्वेश्चन में लगेगा।"
+    },
+    {
+      "start_time": 697.12,
+      "end_time": 729.75,
+      "text": "लेकिन स्टैक भी तीन तरीके के होते हैं। स्टैक। अब आप बोलेंगे कि नहीं स्टैक तो आप बोले स्टैक होता है। हां स्टैक होता है। लेकिन जनरली थ्री टाइप्स ऑफ स्टैक होता है। थ्री टाइप्स ऑफ स्टैक होता है। अभी अगर पूरा नहीं भी समझ में आ रहा है क्वेश्चन बाय क्वेश्चन सब समझ में आने लगेगा। ये तो बस इंट्रोडक्शन क्लास है कि होता क्या है। तीन टाइप के स्टैक हम जहां तक देखें। एक तो हो गया सिंपल। एक तो हो गया सिंपल मतलब पुश और पॉप में पुश करिए, पॉप करिए, जो भी करना है करिए, तो सिंपल, इसमें कोई ऐसा स्पेशलिटी नहीं होती है स्टैक में। सिंपल स्टक होता है। सिंपल बक्सा होता है। आप पुश करिए, पॉप करिए, टॉप करिए, जो भी करिए। दूसरा होता है",
+      "source": "caption",
+      "english_text": "लेकिन स्टैक भी तीन तरीके के होते हैं। स्टैक। अब आप बोलेंगे कि नहीं स्टैक तो आप बोले स्टैक होता है। हां स्टैक होता है। लेकिन जनरली थ्री टाइप्स ऑफ स्टैक होता है। थ्री टाइप्स ऑफ स्टैक होता है। अभी अगर पूरा नहीं भी समझ में आ रहा है क्वेश्चन बाय क्वेश्चन सब समझ में आने लगेगा। ये तो बस इंट्रोडक्शन क्लास है कि होता क्या है। तीन टाइप के स्टैक हम जहां तक देखें। एक तो हो गया सिंपल। एक तो हो गया सिंपल मतलब पुश और पॉप में पुश करिए, पॉप करिए, जो भी करना है करिए, तो सिंपल, इसमें कोई ऐसा स्पेशलिटी नहीं होती है स्टैक में। सिंपल स्टक होता है। सिंपल बक्सा होता है। आप पुश करिए, पॉप करिए, टॉप करिए, जो भी करिए। दूसरा होता है"
+    },
+    {
+      "start_time": 729.76,
+      "end_time": 756.31,
+      "text": "मोनोटोनिक। क्या? मोनोटोनिक। मोनोटोनिक का क्या मतलब होता है ना कि आप पुश करते हैं ना तो आप पुश करते रहेंगे तो आपका स्टक बनता रहेगा कि जैसे मान लीजिए ए आएगा फिर बी, फिर सी। ऐसा-सा आपको एक मोनोटोनसिटी मेंटेन करनी है। मोनोटोनिक का मतलब क्या होता है? मोनोटोनिक का मतलब क्या होता है? मोनोटोनिक का मतलब होता है इंक्रीजिंग और डिक्रीजिंग। इंक्रीजिंग और डिक्रीजिंग। कोई बोलता है ना कि मेरा लाइफ बहुत मोनोटोनस हो गया है।",
+      "source": "caption",
+      "english_text": "मोनोटोनिक। What? मोनोटोनिक। मोनोटोनिक का क्या मतलब होता है ना कि आप पुश करते हैं ना तो आप पुश करते रहेंगे तो आपका स्टक बनता रहेगा कि जैसे मान लीजिए ए आएगा फिर बी, फिर सी। ऐसा-सा आपको एक मोनोटोनसिटी मेंटेन करनी है। मोनोटोनिक का मतलब क्या होता है? मोनोटोनिक का मतलब क्या होता है? मोनोटोनिक का मतलब होता है इंक्रीजिंग और डिक्रीजिंग। इंक्रीजिंग और डिक्रीजिंग। कोई बोलता है ना कि मेरा लाइफ बहुत मोनोटोनस हो गया है।"
+    },
+    {
+      "start_time": 756.32,
+      "end_time": 785.829,
+      "text": "मोनोटोोनस मतलब या तो इंक्रीजिंग या तो डिक्रीजिंग। उल्टा नहीं एक तरीके से सॉर्टेड ऑर्डर। आपको स्टक में जब सॉर्टेड ऑर्डर मेंटेन करना पड़े। फॉर एग्जांपल अगर आप ऐसा स्टैक मेंटेन कर रहे हैं। स्टैक को ऐसे भी बना सकते हैं। आप वर्टिकल भी बना सकते हैं जैसे आपको सुविधा लगे बनाइए। फॉर एग्जांपल आप टू डालें। ठीक है? आप आपके पास फोर आया। आपके पास सिक्स आया। आपके पास एट आया। बड़ी गौर से देखिए इसके नंबर्स। 2 4 6 8 ये क्या है? ये मोनोटोनिकली इंक्रीजिंग है। इसको हम लोग बोलते हैं मोनोटोनिकली इंक्रीजिंग। ये इंक्रीज होता जा रहा है।",
+      "source": "caption",
+      "english_text": "मोनोटोोनस मतलब या तो इंक्रीजिंग या तो डिक्रीजिंग। उल्टा नहीं एक तरीके से सॉर्टेड ऑर्डर। आपको स्टक में जब सॉर्टेड ऑर्डर मेंटेन करना पड़े। फॉर एग्जांपल अगर आप ऐसा स्टैक मेंटेन कर रहे हैं। स्टैक को ऐसे भी बना सकते हैं। आप वर्टिकल भी बना सकते हैं जैसे आपको सुविधा लगे बनाइए। फॉर एग्जांपल आप टू डालें। Ok? आप आपके पास फोर आया। आपके पास सिक्स आया। आपके पास एट आया। बड़ी गौर से देखिए इसके नंबर्स। 2 4 6 8 ये क्या है? ये मोनोटोनिकली इंक्रीजिंग है। इसको हम लोग बोलते हैं मोनोटोनिकली इंक्रीजिंग। ये इंक्रीज होता जा रहा है।"
+    },
+    {
+      "start_time": 785.839,
+      "end_time": 819.99,
+      "text": "ऐसा नहीं हो रहा है कि टू आया, फोर आया फिर फाइव आ गया और फिर थ्री आ गया। तो वो ब्रेक हो गया ना। टू फोर फाइव और थ्री। तो ऐसा हो गया। नहीं। या तो इंक्रीजिंग या तो डिक्रीजिंग। तो इसको हम लोग बोलते हैं मोनोटोनिक स्टैक। ये एक तरीके का स्टैक होता है। तीसरे तरीके का स्टैक क्या होता है? तीसरे तरीके का होता है ग्रीडी। ग्रीडी। ग्रीडी स्टैक। ग्रीडी स्टैक जस्ट लाइक मोनोटोनिक ही होता है। लेकिन मोनोटोनिक में क्योंकि हम लोग नंबर्स पिक कर रहे हैं कि सॉर्टेड ऑर्डर होगा। ग्रीडी में हो सकता है कि ये इंक्रीजिंग डिक्रीजिंग तय करने के लिए आप नंबर्स का सहारा ना लेके क्वेश्चन में दिए हुए कंडीशन का सहारा ले लें। कंडीशन का सहारा",
+      "source": "caption",
+      "english_text": "It is not happening that two came, four came, then five came and then three came. So that break happened, right? Two four five and three. So it happened. No. Either increasing or decreasing. So we call this monotonic stack. This is a type of stack. What is the third type of stack? The third type is greedy. Greedy. Greedy Stack. Greedy stack is just like monotonic. But in monotonic because we are picking numbers there will be a sorted order. In Greedy, it is possible that to decide increasing or decreasing, you may take help of the conditions given in the question instead of taking help of numbers. condition support"
+    },
+    {
+      "start_time": 820.0,
+      "end_time": 852.79,
+      "text": "ले लें मतलब कि मतलब कि बताते हैं क्या होता है। मोनोटोनिक में तो ये हो जाएगा कि आप लोग नंबर पुश कर रहे हैं तो आप लोग देखेंगे कि नंबर या तो इंक्रीजिंग में होना चाहिए या डिक्रीजिंग में होना चाहिए। तो नंबर का तो पता चल जाएगा ना कि टू फोर से बड़ा है या छोटा है। ठीक है? ग्रीडी का मतलब क्या होता है? जस्ट लाइक मोनोटोनिक होता है। इसमें भी एक मोनोटोिनिसिटी मेंटेन होती है। लेकिन वो नंबर के हिसाब से ना हो सकती है। वो क्वेश्चन के कंडीशन के हिसाब से हो सकती है। मतलब क्वेश्चन के कंडीशन में आपको बोला होगा कि कोई चीज कोई आइटम हम बार-बार बोल रहे हैं ये आइटम्स का खेल है पूरा। बहुत सारे आइटम्स हैं जिनको आपको प्रोसेस करना है। तो हो सकता है क्वेश्चन में बोला होगा कि फलाने तरीके का आइटम उस तरीके के आइटम्स हैं। ज्यादा",
+      "source": "caption",
+      "english_text": "Take it as it is and let us tell you what happens. In monotonic, what will happen is that if you people are pushing the numbers, then you people will see that the numbers should be either increasing or decreasing. So you will know whether the number is greater or smaller than two or four. Ok? What does Greedy mean? Just like is monotonic. In this also monotonicity is maintained. But that may not be according to numbers. It can be according to the condition of the question. Meaning, in the condition of question, you must have said that we are saying some thing or item again and again, this is a complete game of items. There are a lot of items you need to process. So it may have been said in the question that items of such and such type are items of that type. more"
+    },
+    {
+      "start_time": 852.8,
+      "end_time": 880.15,
+      "text": "सुपीरियर है। है ना? मान लीजिए क्वेश्चन में होगा कि बहुत सारे ऑपरेटिंग सिस्टम के प्रोसेस हैं। मतलब बहुत सारे प्रोसेस हैं। P2 और P3। हो सकता है वो बोलेगा कि P2 की प्रायोरिटी ज्यादा है या P3 की प्रायोरिटी ज्यादा है या आपको चेक करना है। उस हिसाब से आपको मोनोटोनेसिटी मेंटेन करनी है। तो हो सकता है कि नॉर्मल सॉर्टिंग नहीं लेकिन इसको हम लोग ग्रीडी स्टक या ग्रीडी मोनोटोनिक बोल सकते हैं। तो ये तीसरे तरीके का स्टैक होता है। चलिए। अब अब एक यूनिवर्सल टेंप्लेट होता है किसी भी स्टैक के क्वेश्चन को सॉल्व करने के लिए।",
+      "source": "caption",
+      "english_text": "Is superior. Isn't it? Suppose there will be many processes in the question. Meaning there are a lot of processes. P2 and P3. Maybe he will say that P2 has higher priority or P3 has higher priority or you have to check. Accordingly, you have to maintain monotony. So maybe not normal sorting but we can call it greedy stuck or greedy monotonic. So this is the third type of stack. Let go. Now there is a universal template to solve questions of any stack."
+    },
+    {
+      "start_time": 880.16,
+      "end_time": 914.389,
+      "text": "अभी तक आप लोग क्या सीख लिए? किस तरीके के क्वेश्चन में लगेगा वो धीरे-धीरे क्लियर हो जाएगा। स्टैक के कितने टाइप्स होते हैं? ये तो क्लियर हो गया होगा। एक यूनिवर्सल टेंप्लेट होता है। क्या? यूनिवर्सल टेंपलेट होता है। यूनिवर्सल टेंपलेट होता है स्टक के लिए। स्टक के क्वेश्चंस के लिए क्या होता है यूनिवर्सल? अच्छा आपको स्टक में करना क्या है? आप स्टक में ये तो नहीं कर सकते हैं कि सारे आइटम्स हैं। आपको सबसे पहले तो आइटम्स को देखना है ना। आपको सबसे पहले तो आइटम्स को देखना है। अच्छा। तो आप ऐसा तो नहीं कर सकते ना कि सारे आइटम्स को पुश कर दिए। फिर सारे आइटम्स को पॉप कर दिए। उससे सारा आइटम्स रिवर्स हो जाएगा। ऐसा नहीं करना है। आपको",
+      "source": "caption",
+      "english_text": "What have you guys learned so far? Which type of questions will be asked will gradually become clear. How many types of stack are there? This must have been clear. There is a universal template. What? There is a universal template. There is a universal template for stuck. What is universal for stuck questions? Well, what do you have to do when you are stuck? You cannot ensure that all items are in stock. First of all you have to see the items. First of all you have to look at the items. Good. So you can't just push all the items. Then popped all the items. That will reverse all the items. This should not be done. to you"
+    },
+    {
+      "start_time": 914.399,
+      "end_time": 948.949,
+      "text": "कुछ ना कुछ कंडीशन दिया होगा। है ना? कुछ ना कुछ कंडीशन आपको दिया होगा। तो आपको क्या करना है? तो आपको अगर कंडीशन दिया है फॉर एग्जांपल ऐसा है आइटम वन आइटम टू आइटम थ्री आइटम फोर ऐसा करके मान लीजिए आप इसको इधर से इधर तक प्रोसेस कर रहे हैं। क्या लेफ्ट से राइट तक लेफ्ट से राइट तक प्रोसेस कर रहे हैं। आइटम वन आता है या कोई भी आइटम फॉर दैट मैटर आता है तो आपको एक डिसीजन लेना है। आपको क्या डिसीजन लेना है? कि व्हेन टू पॉप व्हेन टू पॉप व्हेन टू पॉप एंड व्हाट टू पॉप एंड व्हाट टू पॉप",
+      "source": "caption",
+      "english_text": "Some condition must have been given. Isn't it? Some condition must have been given to you. So what do you have to do? So if you have been given a condition for example, item one, item two, item three, item four, then suppose you are processing it from here to here. Are processing from left to right. When item one comes or any item for that matter comes, you have to take a decision. What decision do you have to take? That when to pop when to pop when to pop and what to pop and what to pop"
+    },
+    {
+      "start_time": 948.959,
+      "end_time": 978.47,
+      "text": "इसका क्या मतलब होता है? आपके पास कोई भी आइटम आएगा तो आपके पास ऑलरेडी एक स्टैक अवेलेबल होगा ऐसा करके। आपके पास ही स्टैक अवेलेबल होगा। इसमें मान लीजिए कोई आइटम्स होंगे कभी भी आप आगे जाएंगे तो। तो ये आपको डिसीजन लेना होता है कि इस आइटम के आने से पॉप क्या होगा और कब तक होगा? किसको-किसको पॉप करना है इस आइटम के आने से? क्योंकि पॉप होगा तो यहां से ही, पॉप होगा तो टॉप से ही। आपको डिसीजन लेना होगा कि इस आइटम के आने से क्या पॉप होगा और कब तक पॉप होगा। ये पहला डिसीजन आपको लेना पड़ता है। ये कोई याद रखने की बात नहीं है।",
+      "source": "caption",
+      "english_text": "What does this mean? By doing this, whenever any item comes to you, you will already have a stack available. The stack will be available only with you. Suppose there will be some items in it if you ever go ahead. So you have to decide what will be the pop with the arrival of this item and for how long? Who needs to pop with the arrival of this item? Because if it pops, it will pop from here only, if it pops, it will pop from the top only. You have to decide what will pop with the arrival of this item and for how long. You have to take this first decision. This is not something to remember."
+    },
+    {
+      "start_time": 978.48,
+      "end_time": 1012.55,
+      "text": "ये क्वेश्चन बाय क्वेश्चन समझ में आएगा। हर क्वेश्चन में अलग डिसीजन लेना पड़ेगा आपको। ठीक है? अगला डिसीजन होता है। अगला डिसीजन ये पॉप वाला कंडीशन सबसे महत्वपूर्ण होता है। ये आप समझ जाएंगे तो आप सब समझ जाएंगे। ठीक है? अगला डिसीजन क्या होता है? अगला डिसीजन क्या होता है? व्हेन टू पुश। व्हेन टू पुश। मान लीजिए किसी क्वेश्चन के हिसाब से i3 जब आया तो i3 कुछ कुछ कुछ पॉप कर लिया तो स्टक अभी एक पर्टिकुलर हालत में है। अब अब i3 को पुश करना है कि नहीं करना है i3 को कब पुश करना है पुश करना है कि नहीं करना है वो भी एक डिसीजन है और कितना पुश करना है और कब पुश करना है तो ये हो गया वेन टू",
+      "source": "caption",
+      "english_text": "This will be understood question by question. You will have to take a different decision in each question. Ok? Next decision is taken. Next decision: This pop condition is the most important. If you understand this then you will understand everything. Ok? What is the next decision? What is the next decision? When to push. When to push. Suppose, according to some question, when the i3 came, the i3 popped something or the other, then the stuck is still in a particular condition. Now whether to push i3 or not, when to push i3, whether to push or not is also a decision and how much to push and when to push, then this is the way to go."
+    },
+    {
+      "start_time": 1012.56,
+      "end_time": 1046.949,
+      "text": "पुश ठीक है इसके बाद इसके बाद आपको क्या करना रहेगा रिजल्ट को स्टोर कर लेना रहेगा क्वेश्चन के हिसाब से रिजल्ट को स्टोर कर लेना होगा हम जानते हैं अभी अपना सेंस नहीं बना रहा होगा अह कोई बात नहीं अभी क्योंकि हमने कोई भी क्वेश्चन नहीं देखे हैं बहुत लोग स्टैक भी जिंदगी में पहली बार सुने होंगे लेकिन यही तीन डिसीजन है क्योंकि यही तीन डिसेंट क्यों हो गया स्टैक में और कुछ होता ही नहीं है ना। स्टैक में पॉप होता है, पुश होता है। टॉप का मतलब तो बस देखना होता है टॉप को हटा ही दीजिए। तो स्टैक में मान के चलिए कि दो ही चीज होता है। या तो आप पुश करते हैं या तो आप पॉप करते हैं तो इन्हीं दोनों में आपको डिसीजन लेना पड़ेगा कि कोई भी आइटम को",
+      "source": "caption",
+      "english_text": "Push is okay, after this what you have to do is to store the result. You have to store the result according to the question. We know that you may not be making sense right now. Ah, no problem right now because we have not seen any questions. Many people may have heard about the stack for the first time in their life but these are the three decisions because why did these three differences happen in the stack, nothing else happens right? There is a pop in the stack, there is a push. The meaning of top is just to see, remove the top. So let's assume there are only two things in the stack. Either you push or you pop, so in both of these you will have to decide which item to move."
+    },
+    {
+      "start_time": 1046.959,
+      "end_time": 1081.75,
+      "text": "किसी आइटम के आने से क्या पॉप करना है? क्या पहले के आइटम्स पॉप करने है और कितने आइटम्स पॉप करने हैं? मतलब सारे पॉप कर देने हैं कि थोड़े से पॉप करने हैं कि एक करना है कि एकदम नहीं करना है सब। और इस नए आइटम को पुश करना है कि नहीं करना है? अब पुश क्यों करना है? मतलब पुश करके होगा क्या? और उसके हिसाब से आपको कुछ रिजल्ट स्टोर करना पड़ेगा। है ना? चलिए। तो ये किसी भी स्टैक के क्वेश्चन का टेंप्लेट आप इसको मान सकते हैं। क्वेश्चन हम लोग देखना शुरू करेंगे और क्लियर होता जाएगा। तो एक क्वेश्चन भी देखते हैं। तो देखिए एक तो सबसे सिंपल क्वेश्चन हो जाएगा कि स्ट्रिंग को रिवर्स कर दीजिए। वो तो हमको लगता है आप लोग को आता होगा। कैसे करेंगे देख लेते हैं। कोई बात नहीं है। उसको भी एक बार देख",
+      "source": "caption",
+      "english_text": "What to pop when an item arrives? What are the first items to pop and how many items to pop? Meaning whether to pop all of them or to pop a few or to do one or not to do all at all. And whether to push this new item or not? Why push now? Meaning, what will happen by pushing? And accordingly you will have to store some results. Isn't it? Let go. So you can consider this as the template for any stack question. We will start looking at the questions and it will become clear. So let us also look at a question. So see, the simplest question would be to reverse the string. We think you guys would know that. Let's see how to do it. No problem. take a look at that too"
+    },
+    {
+      "start_time": 1081.76,
+      "end_time": 1115.11,
+      "text": "लेते हैं। बड़ा सिंपल क्वेश्चन है। कि आपको एक स्ट्रिंग दी हुई है। क्या स्ट्रिंग दी हुई है? ab c आपको इसको रिवर्स करना है। अब इसको आप रिवर्स टू पॉइंटर से भी कर सकते हैं। आप रिवर्स का फंक्शन भी चला सकते हैं। क्योंकि हम लोग स्टक पढ़ रहे हैं तो वो भी हम लोग एक बार देख लेते हैं। हम लोग एक स्टैक बनाएंगे किसका? स्टैक किस टाइप का स्टैक बनेगा? कैरेक्टर का। क्योंकि देखिए पूरा स्टैक ना आइटम्स पे आधारित है। इंडिविजुअल चीजों पे नहीं आइटम्स बहुत सारे आइटम्स। तो आप ध्यान से देखेंगे ना। तो यहां पे आइटम्स हैं। ए एक आइटम है। बी एक आइटम है सी एक आइटम है। तो सारी चीजें आइटम्स होती हैं। अच्छा। तो आप",
+      "source": "caption",
+      "english_text": "Let's take. It is a very simple question. That you are given a string. What string is given? a b c You have to reverse it. Now you can also do this with reverse two pointer. You can also operate the reverse function. Because we are reading the story, we see that also once. What will we make a stack of? What type of stack will the stack become? Of character. Because see, the entire stack is based on items. Not individual items but lots of items. So you will look carefully. So here are the items. A is an item. B is an item. C is an item. So all things are items. Good. so you"
+    },
+    {
+      "start_time": 1115.12,
+      "end_time": 1150.07,
+      "text": "एक आइटम के लिए एक स्टैक बना लीजिए। ऐसे करके एक-एक करके हम क्या बोले थे? स्टैक में आप किसी भी चीज को पूरा डाल देंगे और फिर पूरा निकाल देंगे ना वो चीज रिवर्स बन जाएगी। मतलब 1 2 3 4 डालोगे तो वो 4 3 4 निकलेगी। मतलब आलू डालोगे सोना निकलेगा। ऐसा। अब डालिए। सबसे पहले ए को डालिए। तो ए अभी तो स्टैक में कुछ नहीं है। तो टॉप में जैसे ही आप चीजों को गिराएंगे ना इमेजिन करा करिए कि वो नीचे गिर जाएगी। ए नीचे आ गया। बी को डालिए। बी नीचे गिर गया। ए के ऊपर। सी को डालिए। सी भी थोड़ा नीचे गिरा बी के ऊपर। बस अब एक-एक करके निकालना शुरू करिए। एक-एक करके निकालना शुरू करिए। C बन गया, B बन गया, A बन गया।",
+      "source": "caption",
+      "english_text": "Make a stack for one item. What did we say by doing this one by one? If you put any thing completely in the stack and then remove it completely, that thing will become reverse. Meaning if you enter 1 2 3 4 it will come out 4 3 4. Meaning if you put potatoes, gold will come out. As such. Now put it. Put A first. So there is nothing in the stack right now. So as soon as you drop things on the top, imagine that they will fall down. A came down. Enter B. B fell down. Above A. Insert C. C also dropped a little above B. Now just start removing them one by one. Start removing one by one. C became, B became, A became."
+    },
+    {
+      "start_time": 1150.08,
+      "end_time": 1183.27,
+      "text": "बस इसका कोड कैसे लिखेंगे? इसका कोड बहुत सिंपल होता है। आपको एक फंक्शन दिया रहेगा फॉर एग्जांपल स्ट्रिंग अ फन और आपको एक स्ट्रिंग एसटीआर भी दिया हुआ है। एसटीआर भी दिया हुआ है। कुछ नहीं करना है। ऐसा करके स्टैक बनाना है। C++ में जावा Python वाले एक-एक लाइन देख लीजिएगा कि आपका स्टैक बनता कैसे है। स्टैक ऑफ़ कैर ऐसे बनाते हैं। इसका एक नाम दे देते हैं। एसटी इसका क्या मतलब होता ये एक स्टैक है। ये आपका ये एक कीवर्ड है। आप स्टक नाम का वेरिएबल नेम मत रखिएगा। स्टक मतलब एक कीवर्ड है। जैसे वेक्टर होता है ना वैसे ही स्टैक होता है। ये कैर आपको क्या बताता है? सेम जैसे वेक्टर इंट बनाते थे। वैसे",
+      "source": "caption",
+      "english_text": "Just how to write its code? Its code is very simple. You will be given a function for example string a fun and you will also be given a string STR. STR is also given. nothing to be done. By doing this a stack has to be made. In C++, Java and Python, see each line to see how your stack is formed. This is how to make a Stack of Care. Let's give it a name. What does ST mean? This is a stack. This is your keyword. You should not keep a variable named Stuck. Stuck means a keyword. Just like there is a vector, there is also a stack. What does this care tell you? Used to create vector ints like beans. by the way"
+    },
+    {
+      "start_time": 1183.28,
+      "end_time": 1217.75,
+      "text": "ही बनाते थे ना वेक्टर इंट a स्टक कैर एस टी बस एक इंट ले लीजिए और एक लूप चला दीजिए। हमेशा आपको आइटम्स को यूजुअली लेफ्ट टू राइट प्रोसेस करना पड़ेगा। अगर स्ट्रिंग है तो आपको लेटर्स प्रोसेस करने हैं। एरे है तो आपको एरे के इंडेक्सेस प्रोसेस करने हैं। लेफ्ट टू राइट। और हर चीज़ को एक आइटम के तौर पे कंसीडर करना है। ऐसा i &lt; n i++ और इसमें देखिए इसमें हम बोले थे कि दो डिसिजन आपको लेने हैं। पॉप करना है और पुश करना है। तो इसमें हमको कुछ पॉप करने की जरूरत नहीं है। मतलब इसमें आपको पूरे स्ट्रिंग का ही रिवर्स चाहिए। आपको कुछ निकालना नहीं है बीच में से तो कुछ पॉप नहीं करना है इस क्वेश्चन में। हर आइटम को बस बिना कुछ सोचे पुश कर",
+      "source": "caption",
+      "english_text": "Just take an int and run a loop. You will usually process items left to right. If it is a string then you have to process letters. If it is an array then you have to process the indices of the array. Left to right. And everything has to be considered as an item. Like i < n i++ and see in this we said that you have to take two decisions. Have to pop and push. So we don't need to pop anything in this. Meaning in this you need the reverse of the entire string. You don't have to remove anything from the middle or pop anything in this question. Just push every item without thinking"
+    },
+    {
+      "start_time": 1217.76,
+      "end_time": 1251.83,
+      "text": "देना है। इसीलिए बड़ा बेसिक क्वेश्चन है इस टाइप का। बिना सोचे एस टी डॉट एसआर। एस टी डॉट पुश। क्या पुश करना है आपको? वो लेटर एस आई को पुश कर दीजिए। पुश हो गया। बस अब आपका स्टक ऐसा दिख रहा है। अब आपका स्टक ऐसा दिख रहा है। लेकिन स्टक में से चीजों को निकालेंगे कैसे? पुश तो कर दिए। निकालेंगे कैसे? तो निकालने के लिए क्या पढ़ाए थे? टॉप टॉप। टॉप से निकलेगा। एक साथ पूरा स्टैक खाली नहीं हो सकता। टॉप से होता है। तो कभी भी आपको कोई ऐसा स्टैक मिले और आपको लगे कि एक-एक करके अब चीजों को निकालने की जरूरत है। तो आप ऐसा वाइल लूप लिख सकते हैं। वाइल। इसका मतलब होता है एसटी डॉट एम्प्टी। इसका मतलब स्टैक इज",
+      "source": "caption",
+      "english_text": "Have to give. That is why this type of question is very basic. Without thinking s t dot sr. S t dot push. What do you want to push? Push that letter SI. Pushed. Now your stick looks like this. Now your stack looks like this. But how to get things out of the stuck? Pushed it. How to take it out? So what were you taught to remove it? Top top. Will come out from the top. The entire stack cannot be emptied at once. It happens from the top. So anytime you find such a stack and feel that you need to remove things one by one. So you can write a while loop like this. Vile. It means ST dot empty. This means stack is"
+    },
+    {
+      "start_time": 1251.84,
+      "end_time": 1283.43,
+      "text": "नॉट एम्प्टी। मतलब कि जब स्टैक में कुछ होगा तभी तो निकालेंगे। स्टैक खाली हो जाएगा तो कैसे निकालेंगे बार-बार? नहीं निकाल सकते हैं। तो इसका मतलब होता है वाइल स्टैक इज़ नॉट एम्प्टी। नॉट करके एम्प्टी। ओके? और हम क्या बोले थे? ऊपर वाली चीज को आप हमेशा देख सकते हैं। कोई बीच वाली चीज को नहीं देख सकते हैं। और स्टैक में स्टोर क्या है? स्टैक कैरेक्टर टाइप का है। एक आप ऐसा ले लिया करिए। C = ST डॉट टॉप। इससे आप सबसे ऊपर वाले चीज को देख पाए हैं। वो चीज अभी भी वही है। लेकिन एक बार जब आप उसको देख लिए तो आप उसको पॉप कर सकते हैं। अब आप उसको पॉप कर सकते हैं।",
+      "source": "caption",
+      "english_text": "Not empty. Meaning that it will be removed only when there is something in the stack. If the stack becomes empty then how will it be removed again and again? Can't take it out. So it means while stack is not empty. Empty by noting. Ok? And what did we say? You can always see the thing above. Can't see anything in between. And what is stored in the stack? Stack is of character type. You take one like this. C = ST Dot Top. With this you have been able to see the thing at the top. That thing is still the same. But once you see it, you can pop it. Now you can pop it."
+    },
+    {
+      "start_time": 1283.44,
+      "end_time": 1316.87,
+      "text": "ध्यान दीजिएगा इसी ऑर्डर में करना है। पहले आप टॉप देखिए फिर आप उसको पॉप कीजिए। पहले पॉप कर लेंगे फिर टॉप देखेंगे तो फिर आप अगला वाला देखेंगे। उसको नहीं देख पाएंगे। पहले तो पहले देखेंगे फिर उसको वहां से हटा देंगे। देखिए आप उसको रख लिए। ओके? अब आप एक दूसरा स्ट्रिंग ले लीजिए। रेस्ट और क्या करिए? रेस्ट डॉट पुश बैक सी और इसको बंद कर दीजिए। ये क्या करेगा? धीरे-धीरे करके आपके स्टक को खाली कर रहा है। ये धीरे-धीरे करके आपके स्टैक को खाली कर रहा है। एक-एक करके ऊपर वाला टॉप देखता है। फिर टॉप को हटा देता है। आपके स्टैक का साइज एक कम हो जाता है। टॉप को देखता है। टॉप को हटा देता है। फिर उसका साइज एक",
+      "source": "caption",
+      "english_text": "Please note that it has to be done in this order. First you look at the top and then you pop it. You will pop first and then see the top, then you will see the next one. Will not be able to see him. First we will look at it and then remove it from there. Look, you kept it. Ok? Now you take another string. Rest, what else to do? Rest dot push back c and turn it off. What will this do? Slowly emptying your stash. It's slowly emptying your stack. One by one looks at the top. Then removes the top. Your stack size is reduced by one. Looks at the top. Removes the top. then its size one"
+    },
+    {
+      "start_time": 1316.88,
+      "end_time": 1346.71,
+      "text": "और कम हो जाता है। ऐसे करते-करते स्टक ये एम्प्टी कर देगा धीरे-धीरे। अब आप कुछ नहीं करिए। रिटर्न रेस्ट कर दीजिए। ये वन ऑफ़ द मोस्ट बेसिक क्वेश्चन है स्टक में। ये क्वेश्चन बहुत बेसिक है। ये क्वेश्चन जस्ट आपको इस काम के लिए बताया गया है ताकि आपको स्टक में थोड़ा कॉन्फिडेंस आ जाए। अ कल से सारे क्वेश्चन देखना शुरू करेंगे और स्टैक के इंट्यूशन देखेंगे। देखिए स्टैक में सबसे ज्यादा इंपॉर्टेंट क्या है ना कि आसान है। एक बार आपको पता चल जाए ना कि स्टैक का क्वेश्चन है तो फिर आसान हो जाता है क्योंकि ज्यादा क्या है?",
+      "source": "caption",
+      "english_text": "And it decreases. By doing this, it will empty the stuck gradually. Now don't do anything. Rest the return. This is one of the most basic question in stuck. This question is very basic. These questions are just given to you for this purpose so that you can get some confidence in the task. Will start looking at all the questions from tomorrow and see the stack intuition. See what is most important in the stack and not what is easy. Once you know that it is a question of stack then it becomes easier because what is more?"
+    },
+    {
+      "start_time": 1346.72,
+      "end_time": 1381.59,
+      "text": "है। पुश ऑफ ही तो है लेकिन पता ही नहीं चलता है। मतलब एकदम पता नहीं चलता है कि ये स्टैक का क्वेश्चन है। हमको अभी तक पता नहीं चलता है कि ये स्टैक का क्वेश्चन है। और सबसे ज्यादा दिक्कत इसी में होती है क्योंकि स्लाइडिंग विंडो का क्वेश्चन तुरंत पता चल गया था। किडेंस का भी क्वेश्चन पता चल ही जाता था। प्रीफिक्स सम का भी पता चल ही जाता था क्योंकि सब एरे पूछता था। टू पॉइंटर का भी कुछ ना कुछ करके हम लोग रूल बना लिए थे। सब सब मर्ज इंटरवल में पता चल जाता था। लेकिन स्टैक में पता ही नहीं चलता है कि स्टैक का क्वेश्चन है। जब तक आपको पता चलेगा बहुत लेट हो जाएगा। तो इसको और डीप जा के समझने की ज़रूरत है कि स्टैक लगता कब है? कब सोचना है स्टैक के बारे में? क्योंकि अगर पता ही नहीं रहेगा कि स्टैक लगाना है तो स्टैक लगाएंगे कैसे आप। स्टैक लगाना आसान",
+      "source": "caption",
+      "english_text": "Is. There is a push off but you don't even realize it. Meaning it is not immediately clear that this is a stack question. We don't know yet that this is a stack question. And this is where the biggest problem lies because the question of sliding window was immediately known. Kidance's question was also known. The prefix sum was also known because everyone asked for it. We had also made a rule for the two pointer by doing something or the other. Everything was known during the merge interval. But it is not known in the stack that there is a question of the stack. By the time you know it will be too late. So there is a need to go deeper to understand when a stack occurs? When to think about the stack? Because if you don't know that you have to stack, then how will you stack? easy to stack"
+    },
+    {
+      "start_time": 1381.6,
+      "end_time": 1415.43,
+      "text": "है। पता करना मुश्किल है। तो प्लीज इसको पूरा देखिएगा। इस पूरे कम से कम स्टैक वाले पैटर्न को बड़ी कंसिस्टेंसी बड़े गौर से बड़े ध्यान से देखिएगा। आज घर जा के स्टैक के ये बेसिक क्वेश्चन बनाइए। आपको कम से कम पुश, पॉप, टॉप इसका आईडिया हो जाना चाहिए। जावा वाले एक-एक लाइन का एक-एक लाइन का सिंटेक्स बदलेगा ज्यादा नहीं। डिक्लेअर कैसे करते हैं ये बदलेगा। हो सकता है पुश का सिंटेक्स बदलेगा। आप लोग इंसर्ट यूज़ करते होंगे। पॉप का सिंटेक्स बदलेगा। आप लोग डिलीट यूज़ करते होंगे। टॉप का बदलेगा। आप लोग पिकक यूज़ करते होंगे। बाकी चीजें सेम रहने वाली हैं। तो ऐसा करके करिएगा। ठीक है? और कल से इसमें और स्टक के अंदर हम लोग भी",
+      "source": "caption",
+      "english_text": "Is. Difficult to know. So please watch it completely. This whole minimal stack pattern will look very carefully with great consistency. Go home today and make these basic stack questions. You should at least have an idea of ​​push, pop, top. The syntax of each line of Java will not change much. How you declare will change. Maybe the syntax of push will change. You guys must be using insert. The syntax of pop will change. You guys must be using delete. The top will change. You guys must be using picks. Rest of the things are going to remain the same. So do it by doing this. Ok? And from tomorrow we too will be in this and stuck"
+    },
+    {
+      "start_time": 1415.44,
+      "end_time": 1422.88,
+      "text": "घुसेंगे लास्ट इन फर्स्ट आउट। तो हम लोग भी डीप ड्राइव करने वाले हैं स्टक में। तो चलिए मिलते हैं कल। हम्म",
+      "source": "caption",
+      "english_text": "Will enter last in first out. So we are also going to drive deep into the stuck. So let's meet tomorrow. Hmm"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

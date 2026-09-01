@@ -1,0 +1,758 @@
+{
+  "video_id": "Zr2z8DD6TuQ",
+  "video_title": "Definitely Better Than Striver.. Two Sum in Binary search Tree!",
+  "video_number": 87,
+  "chunks": [
+    {
+      "start_time": 7.749,
+      "end_time": 42.389,
+      "text": "हे आज ट्री नहीं होगा। आज दंगल ट्री होगा। चलो आज देखिए जो क्वेश्चन है ना ये सब छोड़िए। आज का जो क्वेश्चन है बड़ा इंपॉर्टेंट क्वेश्चन है। हम एकद घंटे बिताए हैं खुद समझने पे उसको। टू सम एक चीज आप लोग को याद होगा। टू सम पढ़ाए थे। शायद जब हम YouTube शुरू किए थे तो पहला ही क्वेश्चन पैटर्न सीरीज का क्या था? टू सम जिसमें टू पॉइंटर लगता था। जिसमें टू पॉइंटर लगता था। ठीक है? यह वीडियो आज जो भी लोग देख रहे हैं सब लोग वो वीडियो देखे होंगे। इतना हमको विश्वास है। बड़ा आसान क्वेश्चन था। यही फाउंडेशन क्वेश्चन था जहां से हम लोग डीएसए पैटर्न पढ़ना शुरू किए थे। आज भी जो क्वेश्चन करने जा रहे हैं ना वो टू सम का ही क्वेश्चन है। लेकिन",
+      "source": "caption",
+      "english_text": "Hey, there will be no tree today. There will be Dangal Tree today. Let's see the question today, leave it all. Today's question is a very important question. We have spent an hour trying to understand it ourselves. You guys will remember two things. Taught twosome. Perhaps when we started YouTube, the first question was what was the pattern series? To sum which used to have a two pointer. In which a two pointer was used. Ok? Everyone who is watching this video today must have seen that video. We believe this much. It was a very easy question. This was the foundation question from where we started studying the DSA pattern. Even today the question we are going to ask is a question of two only. but"
+    },
+    {
+      "start_time": 42.399,
+      "end_time": 67.59,
+      "text": "लेकिन लेकिन ये वाला जो टू सम आपको करना है ना। पहले आपको एरे में करना होता था तो बड़ा आसान था कि आई जे से कर देते थे। अब आपको एक बीएएसटी में हां जी बाइनरी सर्च ट्री दिया हुआ है। उसमें टू सम करना है। उसका मतलब क्या है? हम आपको बताते हैं। आपको एक एरे नहीं दिया हुआ है। जैसे एरे मिलता था या वेक्टर मिलता था या एरे लिस्ट कुछ नहीं दिया हुआ है। एक बीएसटी दिया हुआ है। बीएसटी मतलब एक बाइनरी सर्च ट्री।",
+      "source": "caption",
+      "english_text": "But but this one which is two-some, you have to do it, right? Earlier you had to do it in array, it was easier to do it with IJ. Now you are given a binary search tree in a BAST. Have to make two sum in it. What does that mean? We tell you. You are not given an array. Like we used to get array or vector or array list, nothing is given. A BST is given. BST means a binary search tree."
+    },
+    {
+      "start_time": 67.6,
+      "end_time": 101.51,
+      "text": "क्या? बाइनरी सर्च ट्री। जो लोग यहां आ गए हैं पहली बार तो पहले बाइनरी सर्च ट्री देख लो यार। तो बाइनरी सर्च ट्री अगर नहीं आता होगा तो फिर ये भी नहीं आएगा। जो बहुत अच्छे बच्चे हैं जो टू सम ही नहीं देखे हैं तो वो टू सम भी देख लें। तो आपको टू सम और बाइनरी सर्च ट्री आना चाहिए। इंट्रोडक्शन आना चाहिए। तब आप यह कर सकते हैं। अब यह क्वेश्चन लीड कोड से मत जाइएगा कि यह थोड़ा बहुत ईजी क्वेश्चन है। ईजी लिखा हुआ है। ईजी नहीं है। बहुत हार्ड क्वेश्चन है। मेरे हिसाब से आज तक जो हम लोग क्वेश्चन किए हैं ना उसमें ट्री में हार्डेस्ट क्वेश्चन ये होने वाला है। तो थोड़ा पेशेंस रखिएगा। हो सकता है कि आपको थोड़ा-थोड़ा ना समझ में आए लगे कि अरे",
+      "source": "caption",
+      "english_text": "what? Binary search tree. Those who have come here for the first time, first see the binary search tree. So if binary search tree is not available then this also will not be available. Those very good children who have not seen Two Some, should also watch Two Some. So you should know two sum and binary search tree. There should be an introduction. Then you can do this. Now do not go by the lead code of this question that it is a bit of an easy question. Easy is written. Not easy. It is a very hard question. According to me, this is going to be the hardest question in the tree among the questions we have asked till date. So have some patience. It is possible that you may not understand a little bit that hey"
+    },
+    {
+      "start_time": 101.52,
+      "end_time": 129.669,
+      "text": "क्या हो रहा है, क्या हो रहा है। लेकिन थोड़ा पेशेंस थोड़ा हौसला रखिएगा। सब समझ में आने लगेगा। क्वेश्चन क्या है ना कि एक बाइनरी सर्च ट्री आपको दिया हुआ है। ट्री में नंबर्स हैं। ट्री में बहुत सारे नंबर जैसे 5 4 जो भी कुछ भी ट्री होगा। उसमें से आपको क्या करना है? सेम जो टू सम में करना होता था। एरे के टू सम में क्या करना पड़ता था कि ऐसा दो नंबर खोज लो एरे में कोई भी एरे ऑफ़ i और एरे ऑफ़ j खोज लो जिसका सम इक्वल इक्वल टू गिवन के या गिवन टारगेट का हो। यही करना होता है टू सम में।",
+      "source": "caption",
+      "english_text": "What's happening, what's happening. But have some patience and some courage. Everything will start making sense. What is the question? A binary search tree is given to you. There are numbers in the tree. The tree will contain lots of numbers like 5 4 whatever. What do you have to do with that? Same which had to be done in two sum. What had to be done in array k to sum was to find two such numbers, find any array of i and array of j in the array whose sum is equal to the given k or the given target. This is what has to be done in two-sum."
+    },
+    {
+      "start_time": 129.679,
+      "end_time": 158.309,
+      "text": "एग्जैक्टली यही काम यहां करना है। यहां पे आपको दो नोड खोजना है। कोई भी दो नोड हो सकता है नोड ए हो प्लस नोड बी। नोड का मतलब सर्कल। कोई भी दो सर्कल ऐसा जिसके नंबर को हम जोड़ें तो K आ जाए। अगर ऐसा सर्कल आपको मिल जाता है। ऐसा दो सर्कल मिल जाता है। आपको ट्रू रिटर्न करना है। नहीं तो नहीं मिलता है तो फॉल्स रिटर्न करना है। ये आपका क्वेश्चन है। तो ये क्वेश्चन बहुत अच्छा लगता है देखने में। लेकिन ये बहुत हार्ड क्वेश्चन है। मेरे हिसाब से अच्छा खासा हार्ड क्वेश्चन है। ठीक है?",
+      "source": "caption",
+      "english_text": "Exactly this work has to be done here. Here you have to find two nodes. Can be any two nodes be node A plus node B. Node means circle. If we add any two circles whose numbers we get K. If you find such a circle. Two such circles are obtained. You have to return true. Otherwise, if it is not found then false has to be returned. This is your question. So this question looks very good. But this is a very hard question. According to me, it is a very hard question. Ok?"
+    },
+    {
+      "start_time": 158.319,
+      "end_time": 192.79,
+      "text": "इसलिए हार्ड नहीं है कि इसका इंप्लीमेंटेशन हार्ड है। इसका पहली बात तो इसका कोड भी हार्ड लेवल पर है और इसको कोड को समझना ही बहुत हार्ड लेवल पर है। तो इसीलिए हम बार-बार कह रहे हैं कि अच्छे से सुनिएगा। अब देखिए ये आपको जो बीएसटी सबको क्वेश्चन समझ में आ गया होगा। इसका दो एप्रोच है। क्या है? कितना? दो एप्रोच है। पहला एप्रोच बहुत अच्छा है। वो हम पहले पढ़ाएंगे। काहे कि आप लोग को इजी पढ़ने में मजा आता है। आप लोग भी बहुत मजा से पढ़ते हैं ईजी एप्रोच। दूसरा वाला एप्रोच हार्ड है। वो हम उसके बाद पढ़ाएंगे। तो पहला एप्रोच देख के भाग मत जाइएगा। पहला एप्रोच हम आपको बस समझाने के लिए पढ़ा रहे हैं कि ऐसा भी हो सकता है कि अगर मान",
+      "source": "caption",
+      "english_text": "That is why it is not hard because its implementation is hard. First of all, its code is also at a hard level and understanding its code is at a very hard level. So that is why we are saying again and again that you should listen carefully. Now see, you all must have understood this BST question. It has two approaches. What is? How much? There are two approaches. The first approach is very good. We will teach that first. Why do you guys enjoy reading Easy? You guys also read Easy Approach with great pleasure. The second approach is hard. We will teach that later. So don't run away after seeing the first approach. We are teaching the first approach just to make you understand that it can also happen that if"
+    },
+    {
+      "start_time": 192.8,
+      "end_time": 225.19,
+      "text": "लीजिए कि इंटरव्यू में एकदम ब्लैंक हो गए तो क्या करना है? ब्रूट फोर्स उसको आप मान सकते हैं। लेकिन जो पहला एप्रोच है जो कि इजी एप्रोच है वो इंटरव्यू में नहीं चलेगा। ना ना बिल्कुल नहीं चलेगा इंटरव्यू में। तो पहला एप्रोच पढ़ के भाग नहीं जाइएगा। उससे कोई फायदा नहीं होगा। इंटरव्यूअर रिजेक्ट कर देगा। इंटरव्यूअर आपसे दूसरा एप्रोच मांगेगा जो कि सही एप्रोच है। ठीक है? चलिए शुरू करते हैं। तो एक छोटा सा हम बीएसटी बना लेते हैं। तो बीएएसटी ऐसा एक बना लेते हैं। 10 बाइनरी सस्टी क्या होता है? कोई एक रूट होता है ना तो रूट का लेफ्ट चाइल्ड रूट का लेफ्ट",
+      "source": "caption",
+      "english_text": "Suppose you go completely blank in the interview, what to do? You can consider it as brute force. But the first approach which is easy approach will not work in the interview. No no, it will not work at all in the interview. So don't run away after reading the first approach. There will be no benefit from that. The interviewer will reject. The interviewer will ask you for another approach which is the correct approach. Ok? Let's get started. So we make a small BST. So let's make one like this. 10 What is binary strategy? There is only one root and neither is the left child of the root."
+    },
+    {
+      "start_time": 225.2,
+      "end_time": 251.35,
+      "text": "चाइल्ड उससे रूट का लेफ्ट चाइल्ड उससे छोटा होता है। राइट चाइल्ड उससे बड़ा होता है। तो उसी में हम एक बाइनरी सस्टी बना लेते हैं। छोटा सा 10 हो गया। 10 से बड़ा 15 हो गया। 10 से छोटा पांच हो गया। पांच का भी एक लेफ्ट चाइल्ड ले लेते हैं कि पांच से छोटा दो हो गया। पांच का राइट चाइल्ड पांच से बड़ा होना चाहिए। लेकिन 10 से छोटा होना चाहिए। याद करिए याद करिए बीएसटी पांच का राइट साइड पांच से बड़ा लेकिन 10 से बड़ा नहीं हो सकता है। 10 के लेफ्ट में जो भी है वो 10 से छोटा होगा।",
+      "source": "caption",
+      "english_text": "The child to the root's left child is smaller than that. The right child is older than him. So in that we create a binary solution. The little one became 10. 10 became bigger than 15. 10 became smaller than five. Even if we take one left child of five, the number smaller than five becomes two. The right child of five must be older than five. But should be smaller than 10. Remember, remember BST, the right side of five cannot be greater than five but not greater than 10. Whatever is to the left of 10 will be less than 10."
+    },
+    {
+      "start_time": 251.36,
+      "end_time": 277.59,
+      "text": "ठीक है? तो पांच के राइट में हम सात लिख देते हैं। सही चल रहा है। 15 के लेफ्ट वाला 15 से छोटा लेकिन 10 से बड़ा होगा। लेकिन 10 से बड़ा होगा। हम 12 लिख देते हैं। और 15 के राइट वाला 15 से भी बड़ा होगा और ऑब्वियस्ली 10 से बड़ा ही होगा। तो हम 20 लिख देते हैं। ये एक अच्छा बाइनरी सस्टी है। आपको मान लीजिए दिया हुआ है कि आपका जो K है ना वो कितना है? 20। आपका K20 मतलब कि आपको दो सर्कल खोजना है।",
+      "source": "caption",
+      "english_text": "ok? So we write seven to the right of five. Going well. The one to the left of 15 will be less than 15 but greater than 10. But will be greater than 10. We write 12. And the one to the right of 15 will be bigger than 15 and obviously bigger than 10. So we write 20. This is a good binary strategy. Suppose it is given to you that what is your K? 20. Your K20 means you have to find two circles."
+    },
+    {
+      "start_time": 277.6,
+      "end_time": 311.189,
+      "text": "कितना? दो सर्कल जिसका सम क्या हो? 20 हो। तो यहां से आपको देख के पता चलेगा कि अ 5 और 15 इन दोनों को अगर हम जोड़ दें तो आता है 20। तो ऐसा है। ऐसा दो सर्कल थ्री में है। आपको क्या रिटर्न करना है? ट्रू रिटर्न करना है। और कोई सर्कल तो नहीं है जिसका 20 आए। अ और कोई सर्कल नहीं है जिसका 20 आए दो ही सर्कल है। यूनिक आंसर है तो नो मैटर यूनिक हो। ऐसा भी हो सकता है कि बहुत सारा पेयर हो जिसका सम कोई मतलब नहीं। एक है ना अगर एक मिल जाता है तो आपको ट्रू रिटर्न करना है। तो ये आपका सवाल है। अच्छा तो जो हम पहला एप्रोच की बात कर रहे थे कि पहला एप्रोच बड़ा इजी लगेगा। आपको बड़ा अच्छा लगेगा सुनने में।",
+      "source": "caption",
+      "english_text": "how much? What is the sum of two circles? Be 20. So from here you will see that if we add 5 and 15, we get 20. So it is like that. There are two such in circle three. What do you have to return? Have to return true. And there is no circle which has 20. There is no other circle which has 20 and only two circles. If there is a unique answer then no matter it is unique. It may also happen that there are many pairs which have no meaning. There is one, if one is found then you have to return true. So this is your question. Well, as we were talking about the first approach, the first approach will seem very easy. You will be very happy to hear it."
+    },
+    {
+      "start_time": 311.199,
+      "end_time": 345.67,
+      "text": "तो वो हम आपको बता देते हैं। देखिए आपको टू सम आता तो है। ऐसा तो नहीं है कि आप टू सम जिंदगी में पहली बार आपको आता है। आपको आता किसमें है? एरे में आता है। एरे में कैसे आता है? एक बार रिवाइज करा देते हैं। आपको अगर एक सॉर्टेड एरे मिले कैसा सॉर्टेड एरे याद करिए टू टू पॉइंटर में एरे अगर सॉर्ट करने से फायदा होता है तो हम लोग उसको सॉर्ट कर लेते थे वहां भी आपको शायद सॉर्टेड एरे मिलता था या आप उसको सॉर्ट करते थे तो वो आपको आता है कैसे आता है हम आपको याद दिला देते हैं 0 1 2 4 5 मान लीजिए ये आपका कोई सॉर्टेड एरे होता कोई भी कुछ भी नंबर होता सॉर्टेड एरे है तो आप क्या करते थे आई को शुरू में",
+      "source": "caption",
+      "english_text": "So let us tell you that. See if you know two sums. It is not that you come across two-some for the first time in your life. What do you know? Comes in array. How does it come into the array? Let's revise it once. If you get a sorted array, what kind of sorted array is it? Remember the array in two-to-pointer. If sorting is beneficial, then we used to sort it. There too, you probably got a sorted array or you used to sort it, then you know how. Let us remind you. 0 1 2 4 5 Suppose this was any of your sorted array, any number, anything, it is a sorted array, then what did you do? in the beginning"
+    },
+    {
+      "start_time": 345.68,
+      "end_time": 378.469,
+      "text": "रखते थे और जे को लास्ट में रखते थे इसीलिए इसको टू पॉइंटर बोला जाता था कि दो इंडेक्स एक साथ एक साथ एक साथ मूव करता था अच्छा उसके उसके बाद आप देखते थे कि अगर एरे ऑफ़ i और एरे ऑफ़ j इक्वल इक्वल टू K है तो आप बोलते थे कि हां मिल गया आंसर। दो इंडेक्स मिल गया। वेरी गुड। खत्म हो गया। लेकिन अगर ऐसा नहीं है तो फिर दो केस हो सकता है। अगर एरे ऑफ़ i + एरे ऑफ़ j k के इक्वल नहीं है। दो और केस हो सकता है। या तो वो k से छोटा होगा या तो वो k से बड़ा होगा। तो दोनों केस के लिए अगर हम लोग K से छोटे होते। अगर हम लोग K से छोटे होते हैं तो एक बात बताइए कि आपको पता चला कि ये वाला इंडेक्स और ये वाला इंडेक्स इन",
+      "source": "caption",
+      "english_text": "Used to keep j in the last, that is why it was called two pointer because two indexes moved together simultaneously, well after that you used to see that if array of i and array of j is equal to K then you used to say yes, got the answer. Got two indexes. very good. It's over. But if it is not so then there can be two cases. If array of i + array of j is not equal to k. There may be two more cases. Either it will be smaller than k or it will be larger than k. So for both the cases if we were smaller than K. If we are smaller than K, then tell us one thing that you found out that this index and this index are"
+    },
+    {
+      "start_time": 378.479,
+      "end_time": 405.99,
+      "text": "दोनों का सम छोटा है। अच्छा इस केस में अगर आप J को मूव करते हैं। अगर आप J को मूव करते हैं। J को आप यहां ले आते हैं तो रिजल्ट और छोटा हो जाएगा। फॉर एग्जांपल अगर यहां वन है और यहां फाइव है। आपको पता चला कि 1 + 5 इज़ &lt; मान लीजिए की 10 है। अच्छा तो 6 &lt; 10 अच्छा। अगर आप इसको यहां ले आइए तो यहां मान लीजिए फोर होगा। तो 1 + 4 तो और छोटा हो जाएगा 10 से। तो अब और गलत आंसर में जा रहे हैं। इस केस में हम लोग क्या करते थे? i को बढ़ाते थे।",
+      "source": "caption",
+      "english_text": "The sum of both is small. Well in this case if you move J. If you move J. If you bring J here, the result will become even smaller. For example, if here is one and here is five. You found out that 1 + 5 is < Let's say 10. Well then 6 < 10 ok. If you bring it here, let's say it will be four. So 1 + 4 will become smaller than 10. So now going into more wrong answers. What did we do in this case? Used to increase i."
+    },
+    {
+      "start_time": 406.0,
+      "end_time": 440.55,
+      "text": "क्योंकि हो सकता है कि इसके बाहर कुछ ऐसा हो जिससे हमको 10 जाने की मदद मिले। हम जस्ट रिवीजन करा रहे हैं। इस केस में आप i प्लस प्लस करते थे। और अगर एरे ऑफ़ i और एरे ऑफ़ j k से बड़ा होता। k से बड़ा होता। अब मान लीजिए कि 1 + 5 &gt; 3 मान लीजिए k3 है तो 6 &gt; 3 इस केस में अगर आप i को बढ़ाइएगा तो 2 + 5 तो और बड़ा हो जाएगा थ्री से तो आप नहीं पहुंच रहे आंसर में आपको क्या चाहिए j को कम करिए ताकि वो सम कम की तरफ आए आपको कम वाला चाहिए ना इस केस में हम लोग j माइनस माइनस करते थे तो",
+      "source": "caption",
+      "english_text": "Because maybe there is something outside this that can help us go 10. We are just doing revision. In this case you used to do i plus plus. And if the array of i and the array of j were larger than k. would be greater than k. Now suppose 1 + 5 > 3 Suppose k is 3 then 6 > 3 In this case if you increase i then 2 + 5 will become bigger than three so you are not reaching what you want in the answer Reduce j so that it comes towards the even less You want the less one right In this case we used to do j minus minus so"
+    },
+    {
+      "start_time": 440.56,
+      "end_time": 473.749,
+      "text": "ये तो था टू सम अच्छा आपको परफेक्टली आता था किसमें जब एक सॉर्टेड एरे आपको मिलता था तो आपको आता है ये टू सम तो हम क्या कह रहे हैं बाइनरी सर्च ट्री में एक बहुत इंपॉर्टेंट प्रॉपर्टी होती है। क्या इंपॉर्टेंट प्रॉपर्टी होती है? बाइनरी सर्च ट्री का जब आप इन ऑर्डर करते हैं। कौन सा ऑर्डर? इन ऑर्डर मतलब कि लेफ्ट, रूट और राइट। लेफ्ट, रूट और राइट। याद कीजिए ट्रेवर्सल तीन तरह का होता था। प्रीआर्डर, इनऑर्डर, पोस्ट ऑर्डर। इनऑर्डर क्या है? पहले लेफ्ट चाइल्ड को मौका मिलेगा। फिर रूट अपना खुद का मौका लेगा और फिर अपने राइट चाइल्ड को मौका देगा। तो जब",
+      "source": "caption",
+      "english_text": "This was two-sum. Well, you knew it perfectly. When you got a sorted array, you knew it as two-sum. So what are we saying, binary search tree has a very important property. What is an important property? When you order these in a binary search tree. Which order? This order means left, root and right. Left, root and right. Remember there were three types of traversal. Preorder, inorder, postorder. What is inorder? The left child will get the chance first. Then Root will take his own chance and then give the chance to his right child. so when"
+    },
+    {
+      "start_time": 473.759,
+      "end_time": 506.79,
+      "text": "आप इनऑर्डर करते थे किसका? बाइनरी सर्च ट्री का तो अपने आप आपको एक सॉर्टेड ऑर्डर मिलता था। क्या? सॉर्टेड ऑर्डर मिलता था। कैसे दिखाते हैं? देखिए ये आपका बीएसटी है। इसका हम इनऑर्डर लिखते हैं। देखिए सबसे पहले तो हम लोग 10 पे आएंगे। तो 10 क्या करेगा? पहले अपने लेफ्ट चाइल्ड को मौका देगा। तो हम लोग पांच पे आ जाएंगे। पांच भी क्या करेगा? पहले अपने लेफ्ट चाइल्ड को मौका देगा। हम लोग टू पे आ जाएंगे। अब टू का कोई लेफ्ट चाइल्ड है नहीं। तो टू खुद मौका ले लेगा। लेफ्ट चाइल्ड नहीं है तो किसका बारी आता है? रूट का। तो सबसे पहला टू खुद मौका ले लेगा। टू का काम खत्म। टू का राइट चाइल्ड भी नहीं है। तो टू किसी को मौका नहीं दे सकता। अब",
+      "source": "caption",
+      "english_text": "Whose did you order in? Binary search tree automatically gives you a sorted order. What? Sorted order was available. How to show? Look, this is your BST. We write this in order. Look, first of all we will come at 10. So what will 10 do? Will give a chance to his left child first. So we will come at five. What will even five do? Will give a chance to his left child first. We will come in two. Now Tou has no left child. So Too will take the chance himself. If there is no left child then whose turn comes? Of root. So the first one will take the chance himself. Two's work is finished. Two don't even have a rightful child. So two cannot give a chance to anyone. now"
+    },
+    {
+      "start_time": 506.8,
+      "end_time": 541.11,
+      "text": "हम लोग ऊपर चले जाएंगे। फाइव। अब फाइव अपने लेफ्ट चाइल्ड को मौका दे चुका है। तो फाइव क्या खुद मौका लेगा क्या? खुद मौका लेगा। आ जाएगा क्या? फाइव। वेरी गुड। खुद मौका लेने के बाद फाइव अपने राइट चाइल्ड को मौका देगा। हम लोग कहां आ जाएंगे? सेवन। अब सेवन का लेफ्ट चाइल्ड तो है नहीं। तो सेवन का लेफ्ट चाइल्ड नहीं है तो सेवन खुद मौका ले लेगा। सेवन। सेवन का राइट चाइल्ड भी नहीं है तो कुछ नहीं होगा। हम लोग ऊपर आ जाएंगे। अब फाइव का और कुछ करने का बचा नहीं है। फाइव लेफ्ट राइट दोनों कर लिया। और ऊपर चले जाइए। वापस 10 पे आ गए। अब 10 अपने लेफ्ट चाइल्ड को मौका दे चुका है। 10 खुद ले लेगा मौका। वेरी गुड। अब खुद मौका लेने के बाद क्या करेगा?",
+      "source": "caption",
+      "english_text": "We will go up. Five. Now Five has given a chance to his left child. So will Five take the chance himself? Will take the chance himself. Will he come? Five. very good. After taking the opportunity himself, Five will give the opportunity to his right child. Where will we come? Seven. Now Seven has no left child. So Seven doesn't have a left child so Seven himself will take the chance. Seven. Even if Seven doesn't have a rightful child then nothing will happen. We will come up. Now there is nothing left for Five to do. Did both five, left and right. And go up. Came back at 10. Now 10 has given a chance to his left child. 10 Will take the chance himself. very good. Now what will he do after taking the chance himself?"
+    },
+    {
+      "start_time": 541.12,
+      "end_time": 567.59,
+      "text": "10 राइट चाइल्ड को मौका देगा। राइट चाइल्ड पे 15 पे आ जाइए। 15 सबसे खुद मौका नहीं लेगा। अपने लेफ्ट चाइल्ड को पहले मौका देगा। तो 12 पे आ गए। 12 का लेफ्ट चाइल्ड है नहीं। 12 खुद प्रिंट हो जाएगा। 12 हो गया। अब 12 का लेफ्ट, राइट दोनों नल है। कोई बात नहीं ऊपर चाहिए। 15, 15 अपने 12 को दे चुका है मौका। लेफ्ट को दे चुका है। 15 खुद प्रिंट हो जाएगा। तो 15 प्रिंट हो गया। खुद प्रिंट होने के बाद अपने राइट को मौका देगा। 20 हो गया। अब 20, 20 का लेफ्ट साइड है नहीं तो 20 खुद प्रिंट हो जाएगा।",
+      "source": "caption",
+      "english_text": "10 Will give a chance to the right child. Come to Right Child Pay 15. 15 Will not take chances with everyone. Will give first chance to his left child. So came at 12. There is no left child of 12. 12 will be printed automatically. It's 12. Now both left and right of 12 are taps. No need above. 15, 15 has given his 12 a chance. Has given to Lieut. 15 will be printed automatically. So 15 was printed. After printing itself, it will give a chance to its rights. It's 20. Now 20 is the left side of 20 otherwise 20 itself will be printed."
+    },
+    {
+      "start_time": 567.6,
+      "end_time": 601.11,
+      "text": "20 20 का राइट साइड नहीं है। ऊपर चले जाएंगे। 15 का काम खत्म हो चुका है और ऊपर चले जाएंगे। 10 का भी काम खत्म हो चुका है। अब सारा लिख चुके हैं। ध्यान से देखिए इस एरे को। ये एरे सॉर्टेड है कि नहीं? 2 5 7 10 12 15 20 यस एरे सॉर्टेड है। इन ऑर्डर बाइनरी सर्च ट्री को सॉर्ट कर देता है। क्या कर देता है? सॉर्ट। तो इससे मेरे दिमाग में एक तरीका आ रहा है कि हम लोग एक काम करते हैं। ये ट्री का रूट तो दिया ही होगा। ट्री का रूट दिया होगा ना। हम लोग इस ट्री पे इनऑर्डर कर देते हैं। हम लोग इस ट्री पे कौन सा कर देते हैं? इनऑर्डर ट्रेवर्सल कर देते हैं। और जबजब हम लोग इनऑर्डर तो यहां तो हम लोग प्रिंट कर रहे",
+      "source": "caption",
+      "english_text": "20 is not the right side of 20. Will go up. 15's work is finished and will go upstairs. The work of 10 has also been finished. Now everything has been written. Look carefully at this array. Is this array sorted or not? 2 5 7 10 12 15 20 Yes the array is sorted. Sorts the in-order binary search tree. What does it do? Sort. So this is coming to my mind a way that we can do one thing. The root of this tree must have been given. You must have given the root of the tree, right? We place an order on this tree. What do we do on this tree? Let's do inorder traversal. And whenever we are in order, here we are printing."
+    },
+    {
+      "start_time": 601.12,
+      "end_time": 635.829,
+      "text": "थे। यहां तो हम लोग प्रिंट कर रहे थे चीजों को। प्रिंट ना करके हम एक वेक्टर बनाएंगे या एरे बनाएंगे। कुछ भी बनाएंगे। वेक्टर या एरे बनाएंगे और प्रिंट करने के जगह पे उसको वेक्टर में पुश कर देंगे। क्या कर देंगे? पुश। कहने का क्या मतलब है? हम लोग एक छोटा सा फंक्शन लिखेंगे। जैसे आप इनऑर्डर का लिखे थे ना तो इनऑर्डर में आप प्रिंट करते थे। प्रिंट ना करिए। वेक्टर में पुश कर दिया करिए। कैसे? देखिए सबसे पहले तो एक न स्टार रूट आ गया। वेरी गुड। अगर रूट नल है। अगर रूट नल है तो कोई कुछ करने की जरूरत नहीं है। तो क्या करेंगे? कुछ नहीं करेंगे। अब अब इन ऑर्डर",
+      "source": "caption",
+      "english_text": "Were. Here we were printing things. Instead of printing, we will create a vector or create an array. Will make anything. Will create a vector or array and instead of printing it will push it into vector. What will you do? Push. What does it mean to say? We will write a small function. Just as you had written in-order, neither did you print in-order. Don't print. Push it into the vector. How? Look, first of all a star route has arrived. very good. If root is null. If the root is null then there is no need to do anything. So what to do? Will not do anything. now now in order"
+    },
+    {
+      "start_time": 635.839,
+      "end_time": 670.389,
+      "text": "क्या कहता है? लेफ्ट को पहले मौका दो। फिर खुद लो फिर राइट को। तो मौका देने का क्या मतलब है? सेम फंक्शन कॉल कर दो। किसके लिए? लेफ्ट के लिए। लेफ्ट को मौका मिल गया। मान लीजिए कि लेफ्ट का काम खत्म हो गया। अब खुद को मौका दो। खुद रूट अब मौका लेगा। मौका लेने का मतलब वेक्टर में पुश कर दीजिए। किस में? कोई आप वेक्टर बना लिया करिए। ऊपर में हम मान लीजिए एक ग्लोबल वेक्टर बना लिए। क्या? वेक्टर ऑफ़ इंट ऑफ़ टीएमपी। ठीक है? तो हम क्या करेंगे? टीएमपी डॉट पुश बैक। अब जावा वाले इसको जावा आरएल लिस्ट और पython वाले कुछ भी जो भी वेक्टर होता है आपका उसमें क्या",
+      "source": "caption",
+      "english_text": "What does it say? Give the left a chance first. Then take yourself and then write. So what does it mean to give a chance? Call the same function. For whom? For left. The Left got its chance. Suppose the left's work is finished. Now give yourself a chance. Root himself will now take the chance. Taking a chance means push it into the vector. In what? Someone please make a vector. Suppose we have created a global vector in the above. What? Vector of int of tmp. Ok? So what do we do? TMP dot push back. Now, Java people call it Java RL List and Python people call it whatever vector is, what do you mean by it?"
+    },
+    {
+      "start_time": 670.399,
+      "end_time": 703.11,
+      "text": "करिए? रूट के डेटा को पुश कर दिए। अब रूट खुद मौका ले लिया। मौका लेने का मतलब वेक्टर में पुश हो गया। अब क्या है इसको? राइट को मौका दे दो। मौका देने का मतलब फन को कॉल कर दो। फन को कॉल कर दो। यस यस। और रिटर्न कर जाओ। खत्म हो गया। ये क्या हुआ? ये हो गया लेफ्ट को मौका देना। ये हो गया खुद रूट अपना मौका लिया और ये हो गया राइट को मौका देना। तो इन ऑर्डर जब आप ये पूरा कंप्लीट कर लेंगे ना तो ये जो टीएमपी है ये जो टीएमपी है ये क्या बन जाएगा? एक सॉर्टेड एरे बन जाएगा। एक सॉर्टेड एरे बन",
+      "source": "caption",
+      "english_text": "do? Pushed the root data. Now Root himself took the chance. Taking a chance meant getting pushed into the vector. What is this now? Give Wright a chance. Giving a chance means call the fun. Call Fun. Yes yes. And return it. It's over. What happened? This is like giving a chance to the left. This happened that Root himself took his chance and this happened that he gave a chance to Wright. So when you complete these orders, what will this TMP become? A sorted array will be created. become a sorted array"
+    },
+    {
+      "start_time": 703.12,
+      "end_time": 737.59,
+      "text": "जाएगा। जैसे यहां पे बन गया था। ये बन जाएगा टीएमपी। एक बार आपको मिल गया सॉर्टेड एरे तो आप उसमें टू पॉइंटर लगा लीजिए। आपका काम देखिए आपका काम सर्कल ढूंढना ही है ना तो सर्कल में है तो नंबर हम क्या किए ट्री को जो भी आपका ट्री दिया था ना उसको कन्वर्ट कर दिए वेक्टर में क्योंकि हमको वेक्टर का आता है तो हम उसको कन्वर्ट कर दिए एक बार आपको ये मिल गया तो आप इसमें वेक्टर में लगा लीजिए अपने 2 पॉइंटर आई जे वाला वो तो आता है आपको लगाने उसका हमको कोड नहीं लिखना पड़े ऐसी हम उम्मीद कर रहे हैं आपसे एक बार ये हो गया खत्म हो गया काम लेकिन ये एप्रोच एक्सेप्टेबल नहीं है ये एप्रोच अब देखिए इसका टाइम कॉम्प्लेक्सिटी क्या होगा आप हर",
+      "source": "caption",
+      "english_text": "Will go. Like it was made here. This will become TMP. Once you have the sorted array, place a two pointer in it. Look, your job is to find the circle, if it is in the circle, then what do we do with the number? Whatever tree was given to the tree, we converted it into vector because we know about vector, so we converted it. Once you get it, then you put your 2 pointer IJ in it in the vector. You know how to put it, we do not have to write code for it. We are expecting from you, once this is done, the work is over but this approach is not acceptable. Now see what will be the time complexity of this approach."
+    },
+    {
+      "start_time": 737.6,
+      "end_time": 771.269,
+      "text": "सर्कल को किसी भी ट्रेवर्सल कोई भी आप डीएफएस ट्रेवर्सल करते हैं ना हर सर्कल पे एक-एक बार जाते हैं। ऑर्डर ऑफ़ n तो होता ही है वेयर n इक्वल टू नंबर ऑफ़ नोड्स। हर सर्कल पे एक बार तो जाएंगे ना। ट्रेवर्सल का क्या मतलब होता है? ट्री के हर सर्कल को देखना। कैसे देख रहे हैं? वो होता है कि इनऑर्डर देख रहे हो भाई कि लेफ्ट देख रहे हो पहले कि राइट देख रहे हो कि कैसे देख रहे हो कि लेवल ऑर्डर कुछ भी हो। देख तो रहे हो ना? अच्छा। अब स्पेस कॉम्प्लेक्सिटी। क्या? स्पेस कॉम्प्लेक्सिटी। आप इस ट्री को एक वेक्टर में कन्वर्ट कर दे रहे हैं। तो वेक्टर में कितना नोड होगा? जितना ट्री में नोड होगा उतना ही वेक्टर में नोड होगा। तो स्पेस",
+      "source": "caption",
+      "english_text": "Any traversal of circles. You do DFS traversal by visiting each circle once. The order of n is where n is equal to the number of nodes. Will go to every circle at least once. What does traversal mean? Looking at each circle of the tree. How are you looking? It happens that you are looking in the order, brother, you are looking to the left before looking to the right, how are you looking, no matter what the level order is. You are watching it, right? Good. Now Space Complexity. What? Space Complexity. You are converting this tree into a vector. So how many nodes will there be in the vector? The vector will have as many nodes as there are nodes in the tree. so space"
+    },
+    {
+      "start_time": 771.279,
+      "end_time": 800.47,
+      "text": "कॉम्प्लेक्सिटी भी इसकी ऑर्डर ऑफ़ n हो जाएगी। वेयर n इक्वल टू नंबर ऑफ़ नोड्स। तो ठीक है मतलब ठीक उतना बुरा तो नहीं है लेकिन इंटरव्यू ये नहीं सुनेगा। जब तक कि इंटरव्यू खुद ही बहुत बड़ा बकलोल ना हो वो ये नहीं सुनेगा। अगर आप हमको बताएंगे इंटरव्यू में हम ना बोलेंगे कि ये ठीक है। ब्रूट फोर्स के लिए अच्छा है। बिगिनर के लिए अच्छा है। लेकिन मजा नहीं आ रहा है और कुछ करो। तो ये अप्रोच वन है। ये समझ में आ गया होगा आपको। इसको कोड करके भी देख लीजिए चल जाएगा लेकिन यहां रुकना नहीं है।",
+      "source": "caption",
+      "english_text": "Its complexity will also be of the order of n. Where n equals two number of nodes. So it's okay, it's not that bad, but the interview won't listen to this. जब तक कि इंटरव्यू खुद ही बहुत बड़ा बकलोल ना हो वो ये नहीं सुनेगा। अगर आप हमको बताएंगे इंटरव्यू में हम ना बोलेंगे कि ये ठीक है। ब्रूट फोर्स के लिए अच्छा है। बिगिनर के लिए अच्छा है। लेकिन मजा नहीं आ रहा है और कुछ करो। तो ये अप्रोच वन है। ये समझ में आ गया होगा आपको। इसको कोड करके भी देख लीजिए चल जाएगा लेकिन यहां रुकना नहीं है।"
+    },
+    {
+      "start_time": 800.48,
+      "end_time": 835.11,
+      "text": "अब शुरू करते हैं अगले एप्रोच पे। थोड़ा दिमाग खोल के सुनिएगा। आप थोड़ा पेशेंस रखिए। पानीानी पी लीजिए। वीडियो पॉज कर दीजिए मन है तो लेकिन उसको एक स्ट्रेच में देखिएगा। उसको बार-बार ऐसा नहीं कि आज थोड़ा देखिए और कल नहीं वैसा मत कीजिएगा नहीं समझ में आएगा। अब अब शुरू होता है हार्ड पार्ट। तो थोड़ा जग जाइए। चलिए चलिए एक हम बीएसटी आप लोग के लिए बना दिए हैं। अभी आप लोग देख लीजिए। पॉज करके देख लीजिए कि सही बीएसटी है नहीं। नहीं ऐसा नहीं मत बोलिएगा कि अरे आप तो अपने मन से कुछ भी बना दिए जी बीएसटी तो है नहीं देख लीजिए सारा रूल फॉलो हो रहा है बीएसटी का ठीक है तो हम कुछ गलत नहीं बनाए हैं जानबूझ के इतना बड़ा ट्री है आपको समझाने के लिए बड़ा ट्री हमको मन नहीं किया ऐसा",
+      "source": "caption",
+      "english_text": "Now let's start the next approach. Listen with an open mind. You should have some patience. Drink water. Pause the video if you want, but watch it in one stretch. It is not necessary for him to repeatedly watch a little today and not tomorrow, don't do the same otherwise he will understand. Now the hard part begins. So wake up a little. Come on, we have made a BST for you guys. You guys take a look now. Pause and check whether it is the correct BST. No, don't say that you can make anything as per your wish, yes, BST is there, see, all the rules are being followed, it is okay for BST, so we have not made anything wrong intentionally, it is such a big tree to make you understand, we did not feel like doing so."
+    },
+    {
+      "start_time": 835.12,
+      "end_time": 868.47,
+      "text": "बनाने का जानबूझ के हम सोच के बनाया ऐसा अच्छा थोड़ी देर के लिए टू सम से बाहर चलते हैं टू सम से बाहर चलते हैं हम आपको एक और प्रॉब्लम देते हैं इमेजिन कीजिए कि आप इंटरव्यू में बैठे हैं आपको हम ये बीएसटी दिखाएं आपको हम एक छोटा सा प्रॉब्लम देते हैं कि भैया ये करके हमको बताओ हम आपको बोलते हैं हिस्ट्री में सॉर्टेड ऑर्डर में लो प्रिंट कर कर दो क्या? सॉर्टेड ऑर्डर में नंबर को प्रिंट कर दो। नंबर्स को जो भी नंबर इस ट्री में लिखा हुआ है ना सॉर्टेड ऑर्डर में प्रिंट कर दो उनको। सॉर्टेड ऑर्डर में छोटा से बड़ा सारा नंबर हमको प्रिंटेड चाहिए। करो तो आप बोलेंगे कि अरे इन ऑर्डर कर देंगे।",
+      "source": "caption",
+      "english_text": "We intentionally thought of making it so good that we go out of twos for a while. Let's go out of twos. We give you another problem. Imagine that you are sitting in an interview. Let us show you this BST. We give you a small problem that brother, do this and tell us. We tell you to print it in sorted order in history, what? Print the numbers in sorted order. Whatever numbers are written in this tree, print them in sorted order. We need all the numbers printed from smallest to largest in sorted order. If you do it, you will say, hey, we will order these."
+    },
+    {
+      "start_time": 868.48,
+      "end_time": 903.11,
+      "text": "अभी तो देखे थे इनऑर्डर होता है ना। इनऑर्डर में क्या सॉर्टेड ऑर्डर इनऑर्डर कर देंगे। बट ठीक है। इनऑर्डर नहीं करना है। इनऑर्डर नहीं करना है। ठीक है? और कुछ करना है। इनऑर्डर नहीं और कुछ करना है। तो आप बोलेंगे और कुछ तो नहीं आता है। इनऑर्डर आता है जिससे सॉर्ट और कुछ नहीं आता है। आएगा। देखिए हम क्या करते हैं। अभी देखिएगा हम हम कैसे अपना स्यूशन बनाएंगे। अभी इस पर मत जाइएगा कि अरे यह तो नहीं हम आप कैसे सोचे थोड़ा देर बेयर कीजिए इन ऑर्डर यूज़ नहीं करना है और आपका टास्क क्या है कि सॉर्टेड ऑर्डर में सारे नंबर लिखे होने चाहिए स्क्रीन पे ऐसा कुछ करना है। ऐसा कुछ प्रोग्राम लिखना है। तो आपको अब सब तो नहीं आता है। आपको बहुत",
+      "source": "caption",
+      "english_text": "Just saw that it happens in order. What sorted orders will be inordered in inorder? Butt is fine. Do not order in. Do not order in. Ok? Something else needs to be done. Not in order, something else needs to be done. So you speak and nothing comes. Inorder comes which sorts and nothing else comes. Will come. See what we do. Now let's see how we will make our sauce. Now don't go to the point that oh this is not what we should think, bear in mind for a while, you don't have to use these orders and what is your task that all the numbers should be written in sorted order, something like this has to be done on the screen. Have to write some program like this. So you don't know everything now. you very much"
+    },
+    {
+      "start_time": 903.12,
+      "end_time": 929.75,
+      "text": "सारा नंबर है। आपको इन ऑर्डर के अलावा और कुछ आता नहीं है। हमको भी नहीं आता है। ठीक है? अच्छा हम आपसे अगर बोले कि चलो सॉर्टेड ऑर्डर भूल जाओ थोड़ी देर के लिए। इस ट्री का सबसे छोटा नंबर फाइंड करके दिखाओ। इस ट्री का सबसे छोटा नंबर सबसे स्मालेस्ट नंबर फाइंड करो। तो देखो कोई भी बीएसटी में ना सबसे छोटा नंबर आपको कहां मिल सकता है? देखिए रूट रूट 20 है। अगर रूट का लेफ्ट चाइल्ड नहीं होता। बीएसटी हम फिर से एक बार बोल रहे हैं। बहुत जोर दीजिए इस बात पे। बीएएसटी क्या होता है?",
+      "source": "caption",
+      "english_text": "The whole number is there. You don't know anything else except these orders. We don't know either. Ok? Well, if we tell you that let's forget the sorted order for a while. Find the smallest number of this tree and show it. Find the smallest number in this tree. So see where you can get the smallest number in any BST? See, the route is Route 20. If root has no left child. BST we are speaking once again. Put a lot of emphasis on this. What is BAST?"
+    },
+    {
+      "start_time": 929.76,
+      "end_time": 962.949,
+      "text": "रूट यहां होता है। रूट से छोटा लेफ्ट में होता है। रूट से बड़ा राइट में होता है। ये आप याद रखिए। राम बाण है। याद रखिए। अच्छा 20 पे आ जाइए। 20 है एक नंबर। अच्छी बात है। अगर 20 का लेफ्ट चाइल्ड नहीं होता, अगर 20 का लेफ्ट चाइल्ड नल होता, मतलब कि 20 के सिर्फ राइट में ही एलिमेंट होते। हम लोग क्या बोलते? सबसे छोटा कौन है? 20। क्योंकि जिसका लेफ्ट चाइल्ड नहीं है, अगर 20 का लेफ्ट चाइल्ड नहीं होता तो लेफ्ट में कुछ है ही नहीं। राइट में जो भी है वो 20 से बड़ा है। यही भी एसटी बोलता है ना? तो क्या होता? 20। लेकिन अब 20 का लेफ्ट चाइल्ड यहां पे दिख रहा है आपको।",
+      "source": "caption",
+      "english_text": "The root happens here. Shorter than the root is on the left. It is bigger on the right than the root. You remember this. Ram is the arrow. Remember this. Okay, come at 20. 20 is a number. It's a good thing. If 20 had no left child, if the left child of 20 was NULL, that would mean only the right side of 20 would have elements. What should we say? Who is the youngest? 20. Because the one who does not have a left child, if there is no left child at 20 then there is nothing in the left. Whatever is on the right is greater than 20. This is what ST also says, isn't it? So what would have happened? 20. But now you can see the left child of 20 years here."
+    },
+    {
+      "start_time": 962.959,
+      "end_time": 996.31,
+      "text": "आपको दिख रहा है ना लेफ्ट चाइल्ड? तो 20 तो सबसे छोटा नहीं है। 20 तो सबसे छोटा नहीं है किसी भी हाल में। अच्छा 20 के लेफ्ट चाइल्ड पे आते हैं। अब 20 के राइट चाइल्ड पे तो जाने का नहीं है ना तुक। 30 तो छोटा हो नहीं सकता है। 20 के लेफ्ट राइट चाइल्ड पे क्यों जाएंगे? 20 है। 20 का लेफ्ट चाइल्ड है तो लेफ्ट चाइल्ड 20 से तो छोटा ही होगा। लेफ्ट चाइल्ड पे आ जाइए। 10 पे आ जाइए। अच्छा। अगर 10 का लेफ्ट चाइल्ड नहीं होता तो हम लोग क्या बोलते? 10 सबसे छोटा है। क्यों? 20 से हम लोग 10 पे आए। अगर 10 का लेफ्ट चाइल्ड नल होता तो हम लोग बोलते थे कि भैया देखो 10 के राइट में जो भी है वो 10 से बड़ा है। और 10 20 से छोटा है तो 10",
+      "source": "caption",
+      "english_text": "Can you see the left child? So 20 is not the smallest. 20 is not the smallest in any case. Okay, let's come to the left child of 20. Now there is no point in going after the right child of 20 years. 30 cannot be small. Why would the left go to the right child of 20? Is 20. If there is a left child of 20, then the left child must be younger than 20. Come to the left child. Come at 10. Good. What would we have said if there was no left child of 10? 10 is the smallest. Why? From 20 we came to 10. If the left child of 10 was a null, then we would say, brother, look, whatever is on the right of 10 is bigger than 10. And if 10 is less than 20 then 10"
+    },
+    {
+      "start_time": 996.32,
+      "end_time": 1029.669,
+      "text": "सबसे छोटा हुआ। लेकिन प्रॉब्लम है कि 10 का भी लेफ्ट चाइल्ड है। 10 का भी लेफ्ट चाइल्ड है। 10 भी नहीं हो सकता आंसर और नीचे आना पड़ेगा। नीचे कहां? क्या 10 के राइट में जाने से फायदा है? नहीं। 10 के राइट वाला 10 से तो बड़ा है ना तो वो सबसे छोटा नहीं हो सकता है। सबसे छोटा अगर मिलना है तो कहां मिलेगा? 10 के लेफ्ट में तो हम लोग क्या कर रहे हैं? लेफ्ट जाते जा रहे हैं। देखिएगा रूट से 10 पे आए। 10 से लेफ्ट चल के पांच पे आ गए। पांच पे सेम कहानी है। अगर पांच का लेफ्ट चाइल्ड नहीं होता तो हम लोग बोल देते कि देखो पांच का लेफ्ट चाइल्ड नहीं है। पांच के राइट वाला ऐसे ही पांच से बड़ा है तो पांच सबसे छोटा",
+      "source": "caption",
+      "english_text": "Became the youngest. But the problem is that there is also a left child of 10. He is also a left child of 10. The answer cannot be even 10 and will have to come down further. Where down? Is there any benefit in going right by 10? No. The one to the right of 10 is bigger than 10 so it cannot be the smallest. If you want to find the smallest, where will you find it? So what are we doing in 10's left? Going left. You will see that it will come on route 10. Walked left from 10 and came to 5. Same story on five. If there was no left child of five then we would have said that look, there is no left child of five. If the one to the right of five is bigger than five, then five is the smallest."
+    },
+    {
+      "start_time": 1029.679,
+      "end_time": 1061.43,
+      "text": "है। लेकिन गौर मतलब की बात ये है कि पांच का भी लेफ्ट चाइल्ड है। और लेफ्ट आ जाइए। थोड़ा थोड़ा और लेफ्ट आ जाइए। टू पे आ जाइए। टू पे आ जाइए। यस यस। टू का लेफ्ट चाइल्ड नहीं है। ध्यान से देखिए। टू का लेफ्ट चाइल्ड नहीं है। टू का सिर्फ राइट चाइल्ड है। तो क्या हम लोग गारंटीड बोल सकते हैं कि इसका सबसे छोटा वैल्यू क्या है? टू। इसका सबसे छोटा वैल्यू क्या है? टू। क्यों? हम लोग रूट से लेफ्ट चलते-चलते टू पे आ गए। रूट से टू पे आ गए। अब और लेफ्ट है ही नहीं। और लेफ्ट है ही नहीं।",
+      "source": "caption",
+      "english_text": "Is. But what is important to note is that he is also the left child of five. And come left. Come a little further left. Come on two. Come on two. Yes yes. Two has no left child. Look carefully. Two has no left child. Is the only right child of two. So can we say guaranteed what is its smallest value? To. What is its smallest value? To. Why? We walked left from the route and came to 2P. Came from route 2. There is no more left. And there is no left."
+    },
+    {
+      "start_time": 1061.44,
+      "end_time": 1095.11,
+      "text": "मतलब कि टू के लेफ्ट में कुछ नहीं है। टू के राइट में जो भी है वो टू से बड़ा है। तो कौन हुआ सबसे छोटा? टू ही होगा ना सबसे छोटा। अगर आपको कोई टास्क देता कि सॉर्टेड व्हाटेड भी छोड़ो टू सम तो छोड़ ही दिए सॉर्टेड भी छोड़ो सबसे छोटा वैल्यू बता के दिखाओ तो आप क्या करते आप ऐसा करते एक रूट से आप स्टार्ट करते और लेफ्ट जाते लेफ्ट जाते लेफ्ट जाते रहिए जाते रहिए जब तक कि जब तक कि किसी का लेफ्ट नल ना हो जाए जब तक कि किसी का लेफ्ट क्या नहीं हो जाए नल नहीं हो जाए तो वो आपका सबसे छोटा वैल्यू",
+      "source": "caption",
+      "english_text": "Meaning there is nothing to the left of two. Whatever is to the right of two is greater than two. So who was the youngest? There must be two, right? If someone gave you the task of leaving the sorted what is also to even, then leave the sorted also, tell me the smallest value, then what would you do? You would do this, you would start from a route and go left, keep going left, keep going left, until someone's left becomes null, until someone's left becomes null, then that would be your smallest value."
+    },
+    {
+      "start_time": 1095.12,
+      "end_time": 1123.43,
+      "text": "होता है ये समझ में आया वेरी गुड फर्स्ट स्टेज आप समझ चुके हैं अच्छा तो तो यह प्रॉब्लम तो सॉल्व हो गई। कौन सी वाली? सॉर्टेड ऑर्डर नहीं हुई है। सबसे छोटा वैल्यू। इसमें टाइम इसलिए लग रहा है क्योंकि हम बहुत आराम से इसको बताना चाहते हैं। हम आपको याद नहीं कराना चाहते हैं कि क्या होगा। हम चाहते हैं कि ये आपको याद रहे। बहुत लंबे समय तक ये आपके दिमाग में रहे इसलिए टाइम लग रहा है। अच्छा। टू आ गया आपका आंसर। अब देखिए टू आने के लिए आप कौन सा पाथ लिए हैं? आप रूट से शुरू किए थे। ये वाला पाथ से आप टू पे पहुंच गए।",
+      "source": "caption",
+      "english_text": "It is understood that this is a very good first stage. You have understood it. Well, this problem has been solved. Which one? Sorted order has not been done. Smallest value. It is taking time because we want to tell it very clearly. We don't want to remind you what will happen. We want you to remember this. It stays in your mind for a very long time so it is taking time. Good. Your answer has arrived. Now see which path have you taken to reach here? You started from the root. From this path you reached 2."
+    },
+    {
+      "start_time": 1123.44,
+      "end_time": 1157.99,
+      "text": "अच्छा। अब देखिए ट्री में एक प्रॉब्लम होता है। ट्री में एक प्रॉब्लम होता है। अब हम लोग अपने सॉर्टेड ऑर्डर पे आए हैं कि आपको पूरा ट्री को सॉर्टेड ऑर्डर पे लिखना है। ट्री में ना एक छोटा सा प्रॉब्लम होता है। आप किसी पेरेंट से उसके बच्चों तक जा सकते हैं। आप किसी पेरेंट से उसके बच्चों तक जा सकते हैं। आप रूट से रूट के लेफ्ट भी जा सकते हैं। रूट से राइट भी जा सकते हैं। लेकिन किसी बच्चे से ना आप उसके पेरेंट तक नहीं पहुंच सकते हैं। किसी बच्चे से आप उसके पेरेंट तक नहीं पहुंच सकते। ऐसा आप कभी देखे हैं कि रूट के पेरेंट पे चले जाओ। नहीं होता है। रूट में लेफ्ट और राइट लेफ्ट बच्चे और राइट बच्चे पे जा सकते हैं। बच्चों से पेरेंट",
+      "source": "caption",
+      "english_text": "Okay. Now see there is a problem with the tree. The tree has a problem. Now we have come to our sorted order that you have to write the entire tree in sorted order. There is not a small problem in the tree. You can go from a parent to its children. You can go from a parent to its children. You can also go left of the route. You can also go right from the route. But you cannot reach the parents of a child. You cannot reach a child's parents. Have you ever seen it like this that it goes to the root's parent? Does not happen. In the root, left and right can go to the left child and right child. children to parents"
+    },
+    {
+      "start_time": 1158.0,
+      "end_time": 1183.669,
+      "text": "पे जाने का रास्ता नहीं होता है। ठीक है? अब आप टू पे आए हैं। तो देखिए हम एक छोटा सा ट्रिक करते हैं। हम एक छोटा सा ट्रिक करते हैं। टू पर आने के लिए आप इतना तो देख ही लिए ना? चार ये तीनों सर्कल तो देखे ही थे ना? हम क्या करते हैं? इसको कहीं ना कहीं स्टोर कर देते हैं। इसको कहीं ना कहीं स्टोर कर देते हैं। कहां स्टोर करेंगे? मान लीजिए कहीं भी स्टोर करेंगे। इसको हम क्या करते हैं? देखिए अभी देखिए हम धीरे-धीरे कैसे अपना सॉल्यूशन बनाएंगे।",
+      "source": "caption",
+      "english_text": "There is no way to go there. Ok? Now you have come to two. So see, we do a little trick. We do a little trick. You have seen so much to come to 2, right? You had seen these three circles, right? What do we do? Let's store it somewhere. Let's store it somewhere. Where will you store it? Suppose we will store it anywhere. What do we do with this? Now see how we will gradually create our solution."
+    },
+    {
+      "start_time": 1183.679,
+      "end_time": 1215.27,
+      "text": "जब हम रूट से लेफ्ट तक पहुंचे। रूट से लेफ्ट तक पहुंचे हम क्या करते हैं? सारे रूट के लेफ्ट तक जब तक कि लेफ्ट उसका नल ना हो जाए ना इन चारों सर्कल को एक स्टक में कहां पे? एक स्टक पे स्टोर कर रहे हैं। क्यों? स्टक समझ में आएगा। हौसला रखिए। धीरज रखिए। 20 10 5 2 20 10 5 2 स्टोर हो गया। स्टोर हुआ है। अभी कुछ नहीं हुआ है। अभी बस स्टोर हुआ है स्टैक में। ठीक है? ये स्टोर करना तो बहुत आसान है ना। रूट से स्टार्ट कीजिए और रूट को स्टक में पुश कीजिए। रूट का लेफ्ट पे आ जाइए।",
+      "source": "caption",
+      "english_text": "When we reached the left from the route. What do we do to get from root to left? To the left of the entire route until the left becomes its tap. Where are these four circles in one stack? Storing on a stock. Why? Stuck will make sense. Be encouraged. Be patient. 20 10 5 2 20 10 5 2 Stored. Has been stored. Nothing has happened yet. Right now it's just stored in the stack. Ok? It is very easy to store this, isn't it? Start at the root and push the root into the stump. Come to the left of the route."
+    },
+    {
+      "start_time": 1215.28,
+      "end_time": 1244.31,
+      "text": "उसको स्टक में पुश कीजिए। उसको उसके लेफ्ट में आ जाइए। जब तक कि किसी का लेफ्ट नल ना हो जाए तब तक ये काम करते रहिए। कोर्ट में भी दिखाएंगे। लेकिन आपको लग रहा होगा जनरल आईडिया ये है। हम ये कर दिए। अच्छा। अब शुरू करते हैं खेल। अब शुरू करते हैं क्या? खेल। अच्छा। अब अगर आप इस टैग का टॉप निकालेंगे। अब अगर आप इस स्टक का टॉप निकालेंगे तो क्या आपको सबसे छोटा एलिमेंट मिलेगा? क्या आपको सबसे छोटा एलिमेंट मिलेगा? यह स्टक का टॉप है। आपको क्या सबसे छोटा एलिमेंट मिलेगा? हां जी मिलेगा।",
+      "source": "caption",
+      "english_text": "Push it into the stack. Come to him on his left. Keep doing this until someone's left tap is taken. Will show it in court also. But you must be feeling that this is the general idea. We did this. Good. Now let's start the game. Let's start now? game. Good. Now if you remove the top of this tag. Now if you remove the top of this stick, will you get the smallest element? Will you find the smallest element? This is the top of the stick. What is the smallest element you will find? Yes, you will get it."
+    },
+    {
+      "start_time": 1244.32,
+      "end_time": 1272.149,
+      "text": "अभी तक मिलेगा। पहले स्टेप के बाद तो पक्का मिलेगा। तो आपका टॉप क्या हो गया? टू। आपका टॉप टू आ गया। टू को हम कहीं पे प्रिंट करा देते हैं। ठीक है? यहां तक समझ में आ रहा है? कुछ नहीं हुआ है। रूट से लेके लेफ्ट तक जिसका मतलब जब नल ना हो जाए तब तक हम स्टैक में पुश किए। एक बार स्टैक का टॉप निकालो हमको टू। ऑब्वियसली मिलेगा क्योंकि हम टू को सबसे लास्ट में पुश किए सबसे पहले आएगा। ऑब्वियस सी बात है कि मिलेगा। अच्छा पॉप भी कर दो। पॉप भी कर दो। पॉप का मतलब हटा दो टू। वेरी गुड।",
+      "source": "caption",
+      "english_text": "Will still get it. You will definitely get it after the first step. So what happened to your top? To. Your top two have arrived. We get it printed somewhere. Ok? Is this even understandable? Nothing has happened. We pushed into the stack from root to left, which means until it becomes null. Take out the top of the stack once. Obviously it will be available because we pushed two last and will come first. It is obvious that we will get it. Well, pop it too. Pop it too. Pop means remove two. very good."
+    },
+    {
+      "start_time": 1272.159,
+      "end_time": 1301.75,
+      "text": "आपका एक टू आ चुका है आंसर में। याद रखिएगा। अच्छा। अब देखिए टू का लेफ्ट तो है नहीं। टू का लेफ्ट तो है नहीं। इसीलिए तो टू स्टैक के टॉप में था ना। अगर टू का लेफ्ट होता अगर कोई यहां पे अगर कोई यहां पे अगर कोई यहां पे वन होता तो वो स्टक के टॉप में आता पहले स्टेप के बाद वो नहीं हुआ है। तो मतलब टू का लेफ्ट तो है नहीं है। तो आप जानते हैं कि टू से छोटा कोई एलिमेंट नहीं है। टू ही सबसे छोटा एलिमेंट है। वेरी गुड। अब अब बहुत ध्यान से सुनिएगा। बहुत ध्यान से सुनिएगा। आपका काम सॉर्टेड ऑर्डर में प्रिंट करना है। क्या?",
+      "source": "caption",
+      "english_text": "Your answer has arrived. Remember this. Good. Now see, there is no left of two. There is no left of two. That's why it was on the top of the two stacks. If there was a left of two, if there was one here, if there was one here, if there was one here, then it would have come at the top of the stack, after the first step it has not happened. So that means there is no left side of two. So you know there is no element smaller than two. Tu is the smallest element. very good. Now listen very carefully. Listen very carefully. Your job is to print in sorted order. What?"
+    },
+    {
+      "start_time": 1301.76,
+      "end_time": 1336.47,
+      "text": "सॉर्टेड ऑर्डर। मतलब कि आपको जो अगला नंबर चाहिए ना, अगला नंबर वो टू से बड़ा होना चाहिए। टू से बड़ा होना चाहिए। ऑब्वियस सी बात है। तो क्या अभी देखिए स्टक के टॉप में क्या है? अभी देखिए स्टक के टॉप में क्या है? फाइव। अच्छा क्या सॉर्टेड ऑर्डर में अगर इस ट्री का आप सॉर्टेड ऑर्डर देखेंगे तो क्या टू के बाद फाइव आना चाहिए? नहीं। टू के बाद फोर या थ्री आना चाहिए। टू के बाद फाइव डायरेक्टली नहीं आना चाहिए। लेकिन आपके स्टैक में अब क्या आ चुका है टॉप पे? फाइव। तो अगर आप इसके बाद कुछ नहीं करेंगे तो आपका स्टैक आपको अगले बार टॉप में क्या बताएगा कि टू के बाद भाई फाइव लिख दो। इससे तो ये दोनों",
+      "source": "caption",
+      "english_text": "Sorted Order. Meaning that the next number you want should be greater than two. Must be greater than two. It's an obvious thing. So now let's see what's at the top of the stack? Now see what's at the top of the stack? Five. Well, if you see the sorted order of this tree, should five come after two? No. Two should be followed by four or three. Five should not come directly after two. But what's on top of your stack now? Five. So if you don't do anything after this, then what your stack will tell you next time at the top is that after two, write five. Because of this both of them"
+    },
+    {
+      "start_time": 1336.48,
+      "end_time": 1371.27,
+      "text": "छूट जाएगा। तो गलत हो जाएगा। तो तो यहीं पे सबसे इंपॉर्टेंट बात है। टॉप से हमको टू मिला था। उस टू को हम प्रिंट भी कर चुके हैं। अच्छा टू का स्टक के अब जो टॉप में है ना वो टू का पेरेंट होगा। वो टू का पेरेंट होगा। क्यों? क्योंकि स्टैक में हम लोग याद कीजिए पुश ही यही किए थे। रूट को पुश किए रूट के लेफ्ट में आ गए। उसको पुश किए उसके लेफ्ट में आ गए। उसको पुश किए उसके लेफ्ट में आ गए। तो हम लोग फाइव को पुश किए थे और फाइव के लेफ्ट में आके टू पे आ गए थे। टू को पुश किए थे। तो स्टैक के टॉप में ना टू का पेरेंट होगा। अब इतना समझ में आ रहा है कि टू का पेरेंट होगा।",
+      "source": "caption",
+      "english_text": "Will be left out. Then it will be wrong. So this is the most important thing. We got two from the top. We have also printed that two. Well, now the one who is at the top of the stack of two will be the parent of two. He will be the parent of two. Why? Because remember, we in the stack were the ones who did the pushing. Pushed the root and came to the left of the root. Pushed her and came to her left. Pushed her and came to her left. So we pushed five and came to the left of five and came to two. Had pushed two. So the parent of na2 will be at the top of the stack. Now it is clear that he will be the parent of two."
+    },
+    {
+      "start_time": 1371.28,
+      "end_time": 1404.39,
+      "text": "लेकिन क्या [गला साफ़ करने की आवाज़] टू के बाद सॉर्टेड ऑर्डर में टू का पेरेंट आना चाहिए या और कुछ आ सकता है? और कुछ आ सकता है? क्या आ सकता है? टू के राइट में जो एलिमेंट है ना टू के राइट में जो एलिमेंट है और सिर्फ एक एलिमेंट नहीं टू के राइट में जितने भी एलिमेंट हैं ये सारे फाइव से छोटे हैं तो सॉर्टेड ऑर्डर में ये सारे लोग फाइव से पहले आने चाहिए। ये सारे लोग फाइव से पहले आने चाहिए। फिर से रिपीट कर रहे हैं। टू का पेरेंट फाइव है।",
+      "source": "caption",
+      "english_text": "But [sound of clearing throat] should the parent of two come after two in the sorted order or can something else come? Anything else may come? What can come? The element to the right of two is not the element to the right of two and not just one element, all the elements to the right of two are smaller than five, so in the sorted order all these elements should come before five. All these people should come before five. Repeating again. The parent of two is five."
+    },
+    {
+      "start_time": 1404.4,
+      "end_time": 1430.23,
+      "text": "क्योंकि स्टार्ट में आपको दिख रहा होगा कि फाइव है। लेकिन सॉर्टेड ऑर्डर में अगर टू का कोई राइट चाइल्ड है या टू का कोई राइट सब ट्री है वो पूरा सब ट्री फाइव से पहले आना चाहिए। वो पूरा सब ट्री फाइव से पहले आना चाहिए। तो हम लोग क्या करेंगे ना? हम लोग क्या करेंगे? टू का राइट चाइल्ड निकालेंगे। देखिए अगर टू का राइट चाइल्ड नल हो गया। वेरी गुड।",
+      "source": "caption",
+      "english_text": "Because in the beginning you must be seeing that there is five. But in sorted order, if two has any right child or two has any right sub-tree, that entire sub-tree should come before five. That entire sub should come before tree five. So what will we do? What will we do? Will find out the right child of two. See if the right child of two becomes null. very good."
+    },
+    {
+      "start_time": 1430.24,
+      "end_time": 1463.75,
+      "text": "अगर टू का राइट चाइल्ड नल हो गया कोई दिक्कत नहीं है। तो फाइव आ सकता था। लेकिन टू का राइट चाइल्ड नल नहीं है। पूरा ये फाइव से पहले आना है। हम लोग क्या करेंगे ना? टू का राइट चाइल्ड निकालेंगे। टू का राइट चाइल्ड क्या है? फोर। टू का राइट चाइल्ड क्या है? फोर। फोर। फोर आ गया। अभी बस निकाल के बैठे हुए हैं। फोर। अच्छा। तो क्या नेचुरली देखें तो क्या फोर को भी हमको स्टक में पुश कर देना चाहिए? क्या फोर को भी हमको स्टक में पुश कर देना चाहिए? हां कर देना चाहिए।",
+      "source": "caption",
+      "english_text": "If the right child of two becomes null, there is no problem. So five could have come. But the right child of two is not null. All this has to come before five. What will we do? Will find out the right child of two. What is the right child of two? Four. What is the right child of two? Four. Four. Four is here. Right now the bus is sitting outside. Four. Good. So, looking at it naturally, should Four also push us into a stuck situation? Should Four also push us into a stuck position? Yes, it should be done."
+    },
+    {
+      "start_time": 1463.76,
+      "end_time": 1498.47,
+      "text": "क्यों? क्योंकि हम लोग टॉप निकाल रहे हैं ना तो हम ये विश्वास रख रहे हैं कि हमको जो टॉप है वो सबसे छोटा एलिमेंट देगा। पहली बार टू मिल गया था। वेरी गुड। अभी अगर आप फोर को पुश नहीं करेंगे ना तो स्टक का टॉप आपको फाइव दे देगा। हम लोग क्या करेंगे ना? सेम चीज दोहराएंगे। फोर को स्टक में पुश कर दो। फोर को स्टक में पुश कर दूं। अच्छा फोर भी पुश हो गया स्टक में। लेकिन क्या यहीं पर रुक जाना है? क्या यहीं पर रुक जाना है? नहीं। क्या फोर सॉर्टेड ऑर्डर में आना चाहिए टू के जस्ट बाद? नहीं। क्यों? फोर का भी तो लेफ्ट चाइल्ड है। फोर का भी तो लेफ्ट चाइल्ड है।",
+      "source": "caption",
+      "english_text": "Why? Because we are taking out the top, we are believing that the top we will get will give us the smallest element. Got two for the first time. very good. Now if you don't push the four then the top of the stick will give you the five. What will we do? Will repeat the same thing. Push the four into the stick. Push the four into the stick. Well, four also got pushed into the stump. But should we stop here? Should we stop here? No. Should four come just after two in the sorted order? No. Why? Four is also the left child. Four is also the left child."
+    },
+    {
+      "start_time": 1498.48,
+      "end_time": 1531.269,
+      "text": "फोर का लेफ्ट चाइल्ड उससे पहले आएगा ना सॉर्टेड ऑर्डर में। हम लोग सेम काम करेंगे। जो रूट के साथ काम किए थे ना। रूट को पुश किए। रूट का लेफ्ट पुश किए। रूट को पुश किए रूट का लेफ्ट पुश किए। फिर लेफ्ट पे गए। फिर जब तक कि किसी का लेफ्ट नल ना हो जाए तब तक पुश किए थे टू पे आने पे। सेम काम फोर से शुरू कर दो। सेम काम फोर से शुरू कर दो। तो क्या होगा? पहले तो फोर पुश हुआ। फोर पुश हो गया। वेरी गुड। स्टक के टॉप में फोर। लेकिन क्या फोर का लेफ्ट चाइल्ड नल है? क्या फोर का लेफ्ट चाइल्ड",
+      "source": "caption",
+      "english_text": "The left child of four will come before that in the sorted order. We will do the same work. Who worked with Root? Pushed the route. Pushed Root's left. Pushed the root, pushed the left of the root. Then went left. Then we pushed until someone's left tap came to two. Start the same work from four. Start the same work from four. So what will happen? First there was four push. Four push is done. very good. Four in the top of the stump. But is the left child of Four a null? What is the left child of four?"
+    },
+    {
+      "start_time": 1531.279,
+      "end_time": 1562.95,
+      "text": "नल है? नहीं। तो उसको पुश करो। सेम लूप इस्तेमाल करो। सेम वाइल लूप इस्तेमाल करो। फोर का लेफ्ट चाइल्ड क्या है? थ्री। थ्री को पुश करिए। थ्री को पुश करिए। क्या थ्री का कोई लेफ्ट चाइल्ड है? नहीं। थ्री का लेफ्ट चाइल्ड नहीं है। तो नहीं है तो रुक जाओ। टू पे भी रुक गए थे ना। टू का लेफ्ट चाइल्ड नहीं था तो रुक गए थे। थ्री पे भी रुक जाएंगे। अब बहुत इंपॉर्टेंट डाउट है। आप बोलेंगे कि अच्छा टू से तो आप राइट आ गए। इसके बाद आप सिर्फ लेफ्ट लेफ्ट देख रहे हैं। फोर का अगर कोई राइट चाइल्ड होता तो क्या करते? उसको तो आपने किया कंसीडर।",
+      "source": "caption",
+      "english_text": "Is there a tap? No. So push him. Use same loop. Use the same while loop. What is the left child of four? Three. Push three. Push three. Is there any left child of three? No. There is no left child of three. If not then stop. Had stopped at two also. Two had no left child so they stopped. Will stop at three also. Now there is a very important doubt. You will say that you have come to the right point. After this you are just looking left. What would you have done if Four had a rightful child? You considered it."
+    },
+    {
+      "start_time": 1562.96,
+      "end_time": 1597.43,
+      "text": "हो जाएगा कंसीडर। हो जाएगा। देखिए अभी स्टक में बहुत कम एलिमेंट्स आए हैं। अभी बहुत सारे एलिमेंट आने बाकी हैं। वैसे देखा जाए तो फाइव का भी तो राइट चाइल्ड है। वो भी नहीं ना है स्टैक में। 10 का भी तो राइट चाइल्ड है। वो भी नहीं ना है स्टैक में। 20 का भी तो राइट चाइल्ड है। वो भी नहीं है। तो विश्वास रखिए। अब आपका एक डाउट आना चाहिए कि अब ठीक है। टू पे आए। पहली बार तक हम लोग टू पे आए थे। आप टू के राइट चाइल्ड को बोले कि ये फाइव से पहले आना चाहिए तो इसको पुश कर दो। उसके बाद आप बोले कि चलो फोर का और लेफ्ट चाइल्ड जहां तक है जहां तक उसका लेफ्ट नल ना हो जाए वो भी वो भी समझ गए लेकिन आप राइट चाइल्ड को तो देख ही नहीं रहे हैं",
+      "source": "caption",
+      "english_text": "Will be considered. Will be done. Look, very few elements are in stock right now. There are still many elements to come. If we look at it, he is also the right child of Five. That too is not in the stack. 10 is also the right child. That too is not in the stack. He is also a right child at the age of 20. Neither is that. So have faith. Now you should have a doubt that it is okay now. Came on two. For the first time, we had come in two pairs. If you tell the right child of two that he should come before five, then push him. After that you said that let's go to the left child as far as the left child is concerned, he also understood but you are not looking at the right child."
+    },
+    {
+      "start_time": 1597.44,
+      "end_time": 1632.39,
+      "text": "अभी नहीं देख रहे हैं लेकिन देखेंगे लेकिन देखेंगे टाइम आने पे देखेंगे अच्छा फोर क्या होगा फोर थ्री को पुश करेगा थ्री का लेफ्ट साइड नल है तो हम लोग रुक जाएंगे ये एक आइट्रेशन हुआ ये एक आइट्रेशन हुआ इसको दोहराओ इसको दोहराओ इसको दोहराओ फिर से टॉप निकालो फिर से टॉप निकालो लोग क्या मिलेगा टॉप से? थ्री। स्टक का टॉप हमेशा आपको सबसे छोटा एलिमेंट देगा। जैसे पिछले बार टू मिला था इस बार थ्री मिला है। आपका टॉप क्या आया? थ्री। अपने रिजल्ट में थ्री",
+      "source": "caption",
+      "english_text": "अभी नहीं देख रहे हैं लेकिन देखेंगे लेकिन देखेंगे टाइम आने पे देखेंगे अच्छा फोर क्या होगा फोर थ्री को पुश करेगा थ्री का लेफ्ट साइड नल है तो हम लोग रुक जाएंगे ये एक आइट्रेशन हुआ ये एक आइट्रेशन हुआ इसको दोहराओ इसको दोहराओ इसको दोहराओ फिर से टॉप निकालो फिर से टॉप निकालो लोग क्या मिलेगा टॉप से? थ्री। स्टक का टॉप हमेशा आपको सबसे छोटा एलिमेंट देगा। जैसे पिछले बार टू मिला था इस बार थ्री मिला है। आपका टॉप क्या आया? थ्री। अपने रिजल्ट में थ्री"
+    },
+    {
+      "start_time": 1632.4,
+      "end_time": 1666.39,
+      "text": "को लिख दो। वेरी गुड। अब अब जो काम अब देखिए थ्री का लेफ्ट चाइल्ड नहीं हो सकता है। अगर थ्री का लेफ्ट चाइल्ड होता तो हम लोग उसको भी पुश कर देते ना। ऐसे ही पुश कर रहे थे ना। फोर हुआ था फिर थ्री हुआ था। जब तक कि उसका लेफ्ट नल ना हो जाए। तो स्टक के टॉप से जो भी आदमी निकलेगा ना उसका लेफ्ट चाइल्ड नहीं हो सकता है। ये पक्की बात है। अब जो काम हम लोग अब थ्री थ्री के ऊपर स्टक में क्या है? थ्री तो पॉप हो गया बेचारा। थ्री तो बेचारा पॉप हो गया टू की तरह। स्टक में अगला एलिमेंट कौन",
+      "source": "caption",
+      "english_text": "को लिख दो। वेरी गुड। अब अब जो काम अब देखिए थ्री का लेफ्ट चाइल्ड नहीं हो सकता है। अगर थ्री का लेफ्ट चाइल्ड होता तो हम लोग उसको भी पुश कर देते ना। ऐसे ही पुश कर रहे थे ना। फोर हुआ था फिर थ्री हुआ था। जब तक कि उसका लेफ्ट नल ना हो जाए। तो स्टक के टॉप से जो भी आदमी निकलेगा ना उसका लेफ्ट चाइल्ड नहीं हो सकता है। ये पक्की बात है। अब जो काम हम लोग अब थ्री थ्री के ऊपर स्टक में क्या है? थ्री तो पॉप हो गया बेचारा। थ्री तो बेचारा पॉप हो गया टू की तरह। स्टक में अगला एलिमेंट कौन"
+    },
+    {
+      "start_time": 1666.4,
+      "end_time": 1699.11,
+      "text": "है? फोर जो कि थ्री का पेरेंट है जो कि होना भी चाहिए। पुश ही ऐसे हुआ है ना। फोर पुश हुआ था। फिर फोर थ्री को पुश किया था। स्टक में फोर है। क्या थ्री के बाद सॉर्टेड ऑर्डर में फोर आना चाहिए? हां, इस केस में आना चाहिए। क्यों? क्योंकि थ्री का राइट चाइल्ड नहीं है। अगर थ्री का कोई राइट चाइल्ड होता मान लेते हैं 3.5 होता जो कि थ्री से बड़ा है लेकिन फोर से छोटा है तो थ्री के बाद वो आता। सेम काम हम लोग रिपीट करते। कौन सा सेम काम की बात कर रहे हैं? थ्री का राइट चाइल्ड। थ्री का राइट",
+      "source": "caption",
+      "english_text": "है? फोर जो कि थ्री का पेरेंट है जो कि होना भी चाहिए। पुश ही ऐसे हुआ है ना। फोर पुश हुआ था। फिर फोर थ्री को पुश किया था। स्टक में फोर है। क्या थ्री के बाद सॉर्टेड ऑर्डर में फोर आना चाहिए? हां, इस केस में आना चाहिए। क्यों? क्योंकि थ्री का राइट चाइल्ड नहीं है। अगर थ्री का कोई राइट चाइल्ड होता मान लेते हैं 3.5 होता जो कि थ्री से बड़ा है लेकिन फोर से छोटा है तो थ्री के बाद वो आता। सेम काम हम लोग रिपीट करते। कौन सा सेम काम की बात कर रहे हैं? थ्री का राइट चाइल्ड। थ्री का राइट"
+    },
+    {
+      "start_time": 1699.12,
+      "end_time": 1730.149,
+      "text": "चाइल्ड। इस केस में थ्री का राइट चाइल्ड नल हो गया है। इस केस में थ्री का राइट चाइल्ड तो नल है। कोई दिक्कत नहीं है। तो इसका मतलब क्या है? कुछ करने की जरूरत नहीं है। क्यों? थ्री का लेफ्ट चाइल्ड तो वैसा ही नहीं था। होता तो वो पुश हो जाता। वैसे ही हम लोग कर रहे हैं। थ्री का राइट चाइल्ड जैसे टू का राइट चाइल्ड फोर था तो उसको हम लोग बोले थे कि इसको करना पड़ेगा। लेकिन थ्री का कोई राइट चाइल्ड नहीं है। तो ऑब्वियस सी बात है कि थ्री के बाद कौन आएगा? उसका पेरेंट आएगा। उसका पेरेंट ऑलरेडी स्टक में है। तो थ्री पे कुछ करने की जरूरत नहीं है। थ्री पे कुछ करने की।",
+      "source": "caption",
+      "english_text": "चाइल्ड। इस केस में थ्री का राइट चाइल्ड नल हो गया है। इस केस में थ्री का राइट चाइल्ड तो नल है। कोई दिक्कत नहीं है। तो इसका मतलब क्या है? कुछ करने की जरूरत नहीं है। क्यों? थ्री का लेफ्ट चाइल्ड तो वैसा ही नहीं था। होता तो वो पुश हो जाता। वैसे ही हम लोग कर रहे हैं। थ्री का राइट चाइल्ड जैसे टू का राइट चाइल्ड फोर था तो उसको हम लोग बोले थे कि इसको करना पड़ेगा। लेकिन थ्री का कोई राइट चाइल्ड नहीं है। तो ऑब्वियस सी बात है कि थ्री के बाद कौन आएगा? उसका पेरेंट आएगा। उसका पेरेंट ऑलरेडी स्टक में है। तो थ्री पे कुछ करने की जरूरत नहीं है। थ्री पे कुछ करने की।"
+    },
+    {
+      "start_time": 1730.159,
+      "end_time": 1762.63,
+      "text": "क्यों? क्योंकि ये नल हो गया ना। आप जब तक कब तक पुश करते थे जब तक ये नल ना हो जाता। फोर आया था तो फोर को पुश किए। फोर से लेफ्ट गए। थ्री आए। थ्री को पुश किए। थ्री के लेफ्ट गए। वो नल हो गया तो रुक गए। यहां पे पहली बार में नल हो गया है। रुक जाइए। रुक जाइए। फिर दोहराइए। ये हम जानते हैं थोड़ा कंफ्यूजिंग लग रहा होगा। ये हम टू माय बेस्ट ऑफ माय एफर्ट्स आपको समझा रहे हैं। लेकिन और देखते रहिए। देखते रहिए। वो जो राइट सब डाउट क्लियर हो जाएगा। देखते रहिए। थोड़ा देखते रहिए। थोड़ा थोड़ा पेशेंस थोड़ा पेशेंस। थोड़ा पेशेंस भटकिए मत। हो गया। स्टक ऐसा दिख रहा है।",
+      "source": "caption",
+      "english_text": "क्यों? क्योंकि ये नल हो गया ना। आप जब तक कब तक पुश करते थे जब तक ये नल ना हो जाता। फोर आया था तो फोर को पुश किए। फोर से लेफ्ट गए। थ्री आए। थ्री को पुश किए। थ्री के लेफ्ट गए। वो नल हो गया तो रुक गए। यहां पे पहली बार में नल हो गया है। रुक जाइए। रुक जाइए। फिर दोहराइए। ये हम जानते हैं थोड़ा कंफ्यूजिंग लग रहा होगा। ये हम टू माय बेस्ट ऑफ माय एफर्ट्स आपको समझा रहे हैं। लेकिन और देखते रहिए। देखते रहिए। वो जो राइट सब डाउट क्लियर हो जाएगा। देखते रहिए। थोड़ा देखते रहिए। थोड़ा थोड़ा पेशेंस थोड़ा पेशेंस। थोड़ा पेशेंस भटकिए मत। हो गया। स्टक ऐसा दिख रहा है।"
+    },
+    {
+      "start_time": 1762.64,
+      "end_time": 1794.789,
+      "text": "क्या करेंगे? दोहराओ उसको। दोहराते जाओ ना। दोहराते जाओ। क्या निकला टॉप से? फोर। फोर क्या हो गया? पॉप हो गया। फोर को अपने रिजल्ट में लिख लो। लिख लिए। अब अब फोर फोर हो गया। अच्छा। फोर क्या? फोर का क्या कोई राइट चाइल्ड है? अगर अगर अगर देखिए स्टक में फोर के बाद क्या है? फाइव। अगर फोर का कोई फोर का कोई यह राइट चाइल्ड होता मान लीजिए 4.5 तो ये फाइव से पहले आना चाहिए था। सेम काम करते। क्या कौन सा",
+      "source": "caption",
+      "english_text": "क्या करेंगे? दोहराओ उसको। दोहराते जाओ ना। दोहराते जाओ। क्या निकला टॉप से? फोर। फोर क्या हो गया? पॉप हो गया। फोर को अपने रिजल्ट में लिख लो। लिख लिए। अब अब फोर फोर हो गया। अच्छा। फोर क्या? फोर का क्या कोई राइट चाइल्ड है? अगर अगर अगर देखिए स्टक में फोर के बाद क्या है? फाइव। अगर फोर का कोई फोर का कोई यह राइट चाइल्ड होता मान लीजिए 4.5 तो ये फाइव से पहले आना चाहिए था। सेम काम करते। क्या कौन सा"
+    },
+    {
+      "start_time": 1794.799,
+      "end_time": 1824.87,
+      "text": "सेम काम? फोर का राइट चाइल्ड अगर 4.5 होता उसको पुश करते और उसके सारे लेफ्ट बच्चों को पुश करते। लेकिन फोर का राइट चाइल्ड नल है। फोर का राइट चाइल्ड नल है। नल है तो ठीक है। कुछ नहीं करना है। फोर का लेफ्ट चाइल्ड के बारे में तो टेंशन लेने की जरूरत ही नहीं है। क्योंकि फोर का लेफ्ट चाइल्ड थ्री है। थ्री का काम तमाम हो चुका है। फोर के राइट चाइल्ड के बारे में टेंशन लेने की जरूरत थी। जो कि हम आपको बोले थे डाउट आना चाहिए ना। अब आपके मन में डाउट आया था ना कि जब हम लोग टू के बाद फोर को पुश किए थे। फोर का लेफ्ट तो पुश कर दिए।",
+      "source": "caption",
+      "english_text": "सेम काम? फोर का राइट चाइल्ड अगर 4.5 होता उसको पुश करते और उसके सारे लेफ्ट बच्चों को पुश करते। लेकिन फोर का राइट चाइल्ड नल है। फोर का राइट चाइल्ड नल है। नल है तो ठीक है। कुछ नहीं करना है। फोर का लेफ्ट चाइल्ड के बारे में तो टेंशन लेने की जरूरत ही नहीं है। क्योंकि फोर का लेफ्ट चाइल्ड थ्री है। थ्री का काम तमाम हो चुका है। फोर के राइट चाइल्ड के बारे में टेंशन लेने की जरूरत थी। जो कि हम आपको बोले थे डाउट आना चाहिए ना। अब आपके मन में डाउट आया था ना कि जब हम लोग टू के बाद फोर को पुश किए थे। फोर का लेफ्ट तो पुश कर दिए।"
+    },
+    {
+      "start_time": 1824.88,
+      "end_time": 1858.149,
+      "text": "फोर का राइट देखे नहीं। फोर का राइट अब देख रहे है। फोर का राइट अब देख रहे है। अब देख रहे हैं तो वो नल है। नल को क्या पुश करेंगे? कुछ मत पुश करो। छोड़ दो। छोड़ दो। यस यस। छोड़ दो। चलो। स्टक के टॉप में क्या है? अब फाइव। फाइव। फाइव को पॉप करिए। फाइव को पॉप करिए। क्या आया? फाइव अपने रिजल्ट में लिखिए। अपने रिजल्ट में लिखिए। अब अब फाइव के बाद स्टक में क्या है? 10। लेकिन क्या सॉर्टेड ऑर्डर में फाइव के बाद 10 आना चाहिए? नहीं। क्योंकि फाइव का राइट चाइल्ड नल नहीं है। फाइव के",
+      "source": "caption",
+      "english_text": "फोर का राइट देखे नहीं। फोर का राइट अब देख रहे है। फोर का राइट अब देख रहे है। अब देख रहे हैं तो वो नल है। नल को क्या पुश करेंगे? कुछ मत पुश करो। छोड़ दो। छोड़ दो। यस यस। छोड़ दो। चलो। स्टक के टॉप में क्या है? अब फाइव। फाइव। फाइव को पॉप करिए। फाइव को पॉप करिए। क्या आया? फाइव अपने रिजल्ट में लिखिए। अपने रिजल्ट में लिखिए। अब अब फाइव के बाद स्टक में क्या है? 10। लेकिन क्या सॉर्टेड ऑर्डर में फाइव के बाद 10 आना चाहिए? नहीं। क्योंकि फाइव का राइट चाइल्ड नल नहीं है। फाइव के"
+    },
+    {
+      "start_time": 1858.159,
+      "end_time": 1890.07,
+      "text": "राइट में जो भी है वो फाइव से बड़ा और 10 से छोटा है। तो ये पूरा सब ट्री फाइव के बाद और 10 से पहले आना चाहिए। तो जो काम टू पे हुआ था सेम काम फाइव पे होगा। सेम काम फाइव पे होगा। फाइव का राइट चाइल्ड क्या है भैया? सेवन है। सेवन है। अब अब सबसे पहले तो क्या सेवन को भी स्टैक में पुश होगा? हां। सेम दोहराइए सेवन और क्या सेवन पे रुक जाना है? क्या फाइव के बाद डायरेक्टली सेवन आता है स्टक में? नहीं।",
+      "source": "caption",
+      "english_text": "राइट में जो भी है वो फाइव से बड़ा और 10 से छोटा है। तो ये पूरा सब ट्री फाइव के बाद और 10 से पहले आना चाहिए। तो जो काम टू पे हुआ था सेम काम फाइव पे होगा। सेम काम फाइव पे होगा। फाइव का राइट चाइल्ड क्या है भैया? सेवन है। सेवन है। अब अब सबसे पहले तो क्या सेवन को भी स्टैक में पुश होगा? हां। सेम दोहराइए सेवन और क्या सेवन पे रुक जाना है? क्या फाइव के बाद डायरेक्टली सेवन आता है स्टक में? नहीं।"
+    },
+    {
+      "start_time": 1890.08,
+      "end_time": 1919.669,
+      "text": "क्यों? क्योंकि सेवन का भी तो लेफ्ट चाइल्ड है। सेम दोहराइए। एक बार आप फाइव के राइट चाइल्ड पे आ गए वो नल नहीं है। अब जब तक इसका लेफ्ट नल नहीं हो जाता है। इसके पूरे लेफ्ट फैमिली को पुश करो। तो पूरे लेफ्ट फैमिली को मतलब सिक्स को पुश करो। सिक्स को पुश करो। अब जब आप सिक्स पे आए तो सिक्स का लेफ्ट नल हो गया है। रुक जाइए, रुक जाइए, रुक जाइए और थम जाइए। फिर से फिर से दोहराइए। फिर से दोहराइए। फिर से दोहराइए। क्या है स्टक के टॉप में?",
+      "source": "caption",
+      "english_text": "क्यों? क्योंकि सेवन का भी तो लेफ्ट चाइल्ड है। सेम दोहराइए। एक बार आप फाइव के राइट चाइल्ड पे आ गए वो नल नहीं है। अब जब तक इसका लेफ्ट नल नहीं हो जाता है। इसके पूरे लेफ्ट फैमिली को पुश करो। तो पूरे लेफ्ट फैमिली को मतलब सिक्स को पुश करो। सिक्स को पुश करो। अब जब आप सिक्स पे आए तो सिक्स का लेफ्ट नल हो गया है। रुक जाइए, रुक जाइए, रुक जाइए और थम जाइए। फिर से फिर से दोहराइए। फिर से दोहराइए। फिर से दोहराइए। क्या है स्टक के टॉप में?"
+    },
+    {
+      "start_time": 1919.679,
+      "end_time": 1953.509,
+      "text": "सिक्स। यस। स्टक के टॉप में सिक्स है। आइए सिक्स लिखिए। अब अब रुक जाइए। अभी हड़बड़ाइए मत। सिक्स। सिक्स का लेफ्ट चाइल्ड के बारे में चिंता करने की आपको जरूरत नहीं है। क्योंकि या तो इसका लेफ्ट चाइल्ड नल होगा। या तो इसका लेफ्ट चाइल्ड टेकन केयर ऑफ होगा। टेकन सिक्स के राइट चाइल्ड में आपको चिंता करने की जरूरत है। क्यों? क्योंकि देखिए सिक्स के पॉप होने के बाद स्टक में तो सेवन है। क्या सिक्स के बाद सेवन आना चाहिए? अगर सिक्स के बाद 6.5 होता तो वो जाना चाहिए था। लेकिन किस्मत से सिक्स का",
+      "source": "caption",
+      "english_text": "सिक्स। यस। स्टक के टॉप में सिक्स है। आइए सिक्स लिखिए। अब अब रुक जाइए। अभी हड़बड़ाइए मत। सिक्स। सिक्स का लेफ्ट चाइल्ड के बारे में चिंता करने की आपको जरूरत नहीं है। क्योंकि या तो इसका लेफ्ट चाइल्ड नल होगा। या तो इसका लेफ्ट चाइल्ड टेकन केयर ऑफ होगा। टेकन सिक्स के राइट चाइल्ड में आपको चिंता करने की जरूरत है। क्यों? क्योंकि देखिए सिक्स के पॉप होने के बाद स्टक में तो सेवन है। क्या सिक्स के बाद सेवन आना चाहिए? अगर सिक्स के बाद 6.5 होता तो वो जाना चाहिए था। लेकिन किस्मत से सिक्स का"
+    },
+    {
+      "start_time": 1953.519,
+      "end_time": 1982.63,
+      "text": "राइट चाइल्ड है ही नहीं। सिक्स का राइट चाइल्ड है ही नहीं। नल है तो नल है तो नल को क्या पुश करेंगे? अगर अगर सिक्स का कोई राइट चाइल्ड होता उसको भी पुश करता और उसके पूरे लेफ्ट खानदान को पुश करते। मतलब कि अगर 6.5 होता फिर 6.4 होता फिर 6.1 होता फिर 6.0 पूरा को पुश करते जब तक कि लेफ्ट ना खाली हो जाए। लेकिन सिक्स का राइट चाइल्ड नल है तो हम लोग लकी हैं। हम लोग बच गए। तो आप लोग देख पा रहे होंगे।",
+      "source": "caption",
+      "english_text": "राइट चाइल्ड है ही नहीं। सिक्स का राइट चाइल्ड है ही नहीं। नल है तो नल है तो नल को क्या पुश करेंगे? अगर अगर सिक्स का कोई राइट चाइल्ड होता उसको भी पुश करता और उसके पूरे लेफ्ट खानदान को पुश करते। मतलब कि अगर 6.5 होता फिर 6.4 होता फिर 6.1 होता फिर 6.0 पूरा को पुश करते जब तक कि लेफ्ट ना खाली हो जाए। लेकिन सिक्स का राइट चाइल्ड नल है तो हम लोग लकी हैं। हम लोग बच गए। तो आप लोग देख पा रहे होंगे।"
+    },
+    {
+      "start_time": 1982.64,
+      "end_time": 2010.389,
+      "text": "आपको शुरू में लग रहा होगा कि हम लोग सिर्फ लेफ्ट का ख्याल नहीं राइट का ख्याल भी रख रहे हैं लेकिन अब रख रहे हैं। अब इस वक्त में रख रहे हैं। अब सिक्स का राइट चाइल्ड कुछ था नहीं। छोड़ दीजिए। क्या है? दोहराइए दोहराइए। जब तक ये स्टेप खाली ना हो जाए दोहराते रहिए भाई। सेवन सेवन निकल के आएगा। सेवन निकल के आएगा और सेवन पॉप होगा। सेवन को अपने रिजल्ट में लिख दो भाई। लिख दो। सेवन को अपने रिजल्ट में लिख दो। अब अब सेवन के राइट चाइल्ड के बारे में चिंता करने की तो जरूरत है नहीं।",
+      "source": "caption",
+      "english_text": "आपको शुरू में लग रहा होगा कि हम लोग सिर्फ लेफ्ट का ख्याल नहीं राइट का ख्याल भी रख रहे हैं लेकिन अब रख रहे हैं। अब इस वक्त में रख रहे हैं। अब सिक्स का राइट चाइल्ड कुछ था नहीं। छोड़ दीजिए। क्या है? दोहराइए दोहराइए। जब तक ये स्टेप खाली ना हो जाए दोहराते रहिए भाई। सेवन सेवन निकल के आएगा। सेवन निकल के आएगा और सेवन पॉप होगा। सेवन को अपने रिजल्ट में लिख दो भाई। लिख दो। सेवन को अपने रिजल्ट में लिख दो। अब अब सेवन के राइट चाइल्ड के बारे में चिंता करने की तो जरूरत है नहीं।"
+    },
+    {
+      "start_time": 2010.399,
+      "end_time": 2043.35,
+      "text": "क्योंकि या तो सेवन का राइट चाइल्ड सॉरी लेफ्ट चाइल्ड सेवन का लेफ्ट चाइल्ड या तो नल होगा या तो वो टेकन केयर ऑफ़ होगा। सिक्स टेकन केयर ऑफ़ है ना सेवन सिक्स का आपको चिंता करने की जरूरत नहीं है ना सिक्स आ चुका था। सेवन सिक्स को पुश किया तो अगर सेवन पॉप हो रहा है तो सिक्स पहले ही हो चुका होगा। कोई दिक सेवन के राइट चाइल्ड के बारे में टेंशन लेने की जरूरत है क्योंकि स्टैक में क्या है? 10 तो क्या सेवन के बाद 10 आना चाहिए? मान लीजिए अगर सेवन के बाद एट होता तो 10 आता कि एट आता एट आता तो सेम काम करते। सेवन के राइट चाइल्ड और मान लीजिए एट के बाद यहां 8.2",
+      "source": "caption",
+      "english_text": "क्योंकि या तो सेवन का राइट चाइल्ड सॉरी लेफ्ट चाइल्ड सेवन का लेफ्ट चाइल्ड या तो नल होगा या तो वो टेकन केयर ऑफ़ होगा। सिक्स टेकन केयर ऑफ़ है ना सेवन सिक्स का आपको चिंता करने की जरूरत नहीं है ना सिक्स आ चुका था। सेवन सिक्स को पुश किया तो अगर सेवन पॉप हो रहा है तो सिक्स पहले ही हो चुका होगा। कोई दिक सेवन के राइट चाइल्ड के बारे में टेंशन लेने की जरूरत है क्योंकि स्टैक में क्या है? 10 तो क्या सेवन के बाद 10 आना चाहिए? मान लीजिए अगर सेवन के बाद एट होता तो 10 आता कि एट आता एट आता तो सेम काम करते। सेवन के राइट चाइल्ड और मान लीजिए एट के बाद यहां 8.2"
+    },
+    {
+      "start_time": 2043.36,
+      "end_time": 2075.669,
+      "text": "8.5 पूरे लेफ्ट खानदान को पुश करते तो किस्मती से का राइट नल है तो कुछ नहीं करने की जरूरत है। छोड़ दो। ठीक है? सेवन भी हो गया। करते जाओ। पॉप करो। 10, 10 अपने रिजल्ट में 10 लिखो। अब अब 10 पॉप हो चुका। 10 पॉप हो चुका। 10 के बाद क्या है स्टार्ट में? 20. लेकिन क्या 10 के बाद डायरेक्ट 20 आना चाहिए? नहीं, 10 का राइट चाइल्ड भी तो है। 10 के राइट में जो भी है ना वो 20 से छोटा है और 10 से बड़ा है। तो",
+      "source": "caption",
+      "english_text": "8.5 पूरे लेफ्ट खानदान को पुश करते तो किस्मती से का राइट नल है तो कुछ नहीं करने की जरूरत है। छोड़ दो। ठीक है? सेवन भी हो गया। करते जाओ। पॉप करो। 10, 10 अपने रिजल्ट में 10 लिखो। अब अब 10 पॉप हो चुका। 10 पॉप हो चुका। 10 के बाद क्या है स्टार्ट में? 20. लेकिन क्या 10 के बाद डायरेक्ट 20 आना चाहिए? नहीं, 10 का राइट चाइल्ड भी तो है। 10 के राइट में जो भी है ना वो 20 से छोटा है और 10 से बड़ा है। तो"
+    },
+    {
+      "start_time": 2075.679,
+      "end_time": 2110.63,
+      "text": "यह आने चाहिए। अब आओ क्या करेंगे? क्या करेंगे? 10 का राइट निकालेंगे। 12 12 को तो पुश करेंगे ही। रुकेंगे नहीं। 12 के लेफ्ट को भी पुश करेंगे जब तक कि नल ना हो जाए। तो 11 भी लपेटे में आ गया। 12 के राइट के बारे में क्यों नहीं कर रहे हैं चिंता? करेंगे। करेंगे। जब 12 पॉप होगा तो 12 के राइट के बारे में चिंता। अभी छोड़ दो। अभी छोड़ दो फिर से फिर से फिर से टॉप क्या निकला 11 11 का लेफ्ट चाइल्ड के बारे में तो हम बोल चुके हैं कोई चिंता करने की जरूरत है नहीं राइट तो 11 ठीक है 11 को",
+      "source": "caption",
+      "english_text": "यह आने चाहिए। अब आओ क्या करेंगे? क्या करेंगे? 10 का राइट निकालेंगे। 12 12 को तो पुश करेंगे ही। रुकेंगे नहीं। 12 के लेफ्ट को भी पुश करेंगे जब तक कि नल ना हो जाए। तो 11 भी लपेटे में आ गया। 12 के राइट के बारे में क्यों नहीं कर रहे हैं चिंता? करेंगे। करेंगे। जब 12 पॉप होगा तो 12 के राइट के बारे में चिंता। अभी छोड़ दो। अभी छोड़ दो फिर से फिर से फिर से टॉप क्या निकला 11 11 का लेफ्ट चाइल्ड के बारे में तो हम बोल चुके हैं कोई चिंता करने की जरूरत है नहीं राइट तो 11 ठीक है 11 को"
+    },
+    {
+      "start_time": 2110.64,
+      "end_time": 2143.91,
+      "text": "अपने रिजल्ट में लिख दो 11 को पॉप कर दो लेफ्ट चाइल्ड के बारे में चिंता करने की जरूरत है नहीं और खुशकिस्मती से 11 का राइट नल है अब नल है तो क्या पुश करोगे कुछ मत करो छोड़ दो चलो अब अब अब स्टक के टॉप में क्या है 12 यस 12 12 को पॉप करिए और 12 को रिजल्ट में लिखिए। 12 को रिजल्ट में लिखिए। अब अब क्या स्टक में 20 है। 12 के बाद डायरेक्टली 20 आ जाना चाहिए क्या? नहीं भैया। 12 का राइट चाइल्ड भी तो है। 12 के",
+      "source": "caption",
+      "english_text": "अपने रिजल्ट में लिख दो 11 को पॉप कर दो लेफ्ट चाइल्ड के बारे में चिंता करने की जरूरत है नहीं और खुशकिस्मती से 11 का राइट नल है अब नल है तो क्या पुश करोगे कुछ मत करो छोड़ दो चलो अब अब अब स्टक के टॉप में क्या है 12 यस 12 12 को पॉप करिए और 12 को रिजल्ट में लिखिए। 12 को रिजल्ट में लिखिए। अब अब क्या स्टक में 20 है। 12 के बाद डायरेक्टली 20 आ जाना चाहिए क्या? नहीं भैया। 12 का राइट चाइल्ड भी तो है। 12 के"
+    },
+    {
+      "start_time": 2143.92,
+      "end_time": 2178.55,
+      "text": "जो भी राइट है वो 20 से छोटा है और 12 से बड़ा है वो आना चाहिए। तो क्या करेंगे? 12 का राइट नल नहीं है बबुआ। 12 का राइट 15 है। 15 को तो पुश करो ही। और 15 के पूरे लेफ्ट खानदान को पुश करो। खुशकिस्मती से 15 का कोई लेफ्ट खानदान है ही नहीं। तो 15 ही पुश हो के रह जाएगा। फिर से निकालो। फिर से निकालो। 15 निकल गया इस बार। 15 निकल गया। 15 को रिजल्ट में लिखो। 15 को रिजल्ट में लिखो। अब क्या 15 का कोई राइट चाइल्ड है? नहीं है। 15 का राइट चाइल्ड नल है। तो नल है। तो भैया नल है। कुछ नहीं",
+      "source": "caption",
+      "english_text": "जो भी राइट है वो 20 से छोटा है और 12 से बड़ा है वो आना चाहिए। तो क्या करेंगे? 12 का राइट नल नहीं है बबुआ। 12 का राइट 15 है। 15 को तो पुश करो ही। और 15 के पूरे लेफ्ट खानदान को पुश करो। खुशकिस्मती से 15 का कोई लेफ्ट खानदान है ही नहीं। तो 15 ही पुश हो के रह जाएगा। फिर से निकालो। फिर से निकालो। 15 निकल गया इस बार। 15 निकल गया। 15 को रिजल्ट में लिखो। 15 को रिजल्ट में लिखो। अब क्या 15 का कोई राइट चाइल्ड है? नहीं है। 15 का राइट चाइल्ड नल है। तो नल है। तो भैया नल है। कुछ नहीं"
+    },
+    {
+      "start_time": 2178.56,
+      "end_time": 2211.51,
+      "text": "करना है। वेरी गुड। राइट चाइल्ड नल का मतलब बहुत अच्छी बात है। कुछ मत करो। अब स्टक से क्या निकला? 20 निकला। 20 निकला तो 20 को लिखो और 20 को पप करो और 20 को पप करो। अब अब स्टक के टॉप में तो कुछ नहीं है। लेकिन सेम काम सेम काम दोहराइए। क्या 20 का राइट चाइल्ड नल है? नहीं। 20 का राइट चाइल्ड नल नहीं है। तो करो ना पुश। 20 का राइट चाइल्ड करो ना पुश। 30 को करो पुश। 20 का राइट है ना भैया? अभी तो 30। 30 करो पुश। और क्या 30 पे ही रुक जाना है। 20 के बाद डायरेक्ट 30 आता है",
+      "source": "caption",
+      "english_text": "करना है। वेरी गुड। राइट चाइल्ड नल का मतलब बहुत अच्छी बात है। कुछ मत करो। अब स्टक से क्या निकला? 20 निकला। 20 निकला तो 20 को लिखो और 20 को पप करो और 20 को पप करो। अब अब स्टक के टॉप में तो कुछ नहीं है। लेकिन सेम काम सेम काम दोहराइए। क्या 20 का राइट चाइल्ड नल है? नहीं। 20 का राइट चाइल्ड नल नहीं है। तो करो ना पुश। 20 का राइट चाइल्ड करो ना पुश। 30 को करो पुश। 20 का राइट है ना भैया? अभी तो 30। 30 करो पुश। और क्या 30 पे ही रुक जाना है। 20 के बाद डायरेक्ट 30 आता है"
+    },
+    {
+      "start_time": 2211.52,
+      "end_time": 2245.109,
+      "text": "क्या? नहीं। नहीं 30 के लेफ्ट में जो चीज है पूरा लेफ्ट खानदान आएगा। 30 के लेफ्ट में पूरा लेफ्ट लेफ्ट लेफ्ट लेफ्ट जितना है सब आएगा। 25 भी पुश हो गया इसी लपेटे में। 25 का लेफ्ट कोई है नहीं। रुक जाएंगे। रुक जाएंगे। अब नल मिल गया तो रुक जाइए। क्या निकला अगले बार? अगले बार क्या निकला? 25। याद कीजिए स्टक में ये वाला निकलता है। शुरू से नहीं निकालिएगा। ये वाला निकला। 25 25 के लेफ्ट के बारे में चिंता मत करिए। 25 के राइट के बारे में चिंता करिए। लेकिन 25 का राइट नल है तो कोई चिंता मत करिए चिंता से मुक्त हो जाइए",
+      "source": "caption",
+      "english_text": "क्या? नहीं। नहीं 30 के लेफ्ट में जो चीज है पूरा लेफ्ट खानदान आएगा। 30 के लेफ्ट में पूरा लेफ्ट लेफ्ट लेफ्ट लेफ्ट जितना है सब आएगा। 25 भी पुश हो गया इसी लपेटे में। 25 का लेफ्ट कोई है नहीं। रुक जाएंगे। रुक जाएंगे। अब नल मिल गया तो रुक जाइए। क्या निकला अगले बार? अगले बार क्या निकला? 25। याद कीजिए स्टक में ये वाला निकलता है। शुरू से नहीं निकालिएगा। ये वाला निकला। 25 25 के लेफ्ट के बारे में चिंता मत करिए। 25 के राइट के बारे में चिंता करिए। लेकिन 25 का राइट नल है तो कोई चिंता मत करिए चिंता से मुक्त हो जाइए"
+    },
+    {
+      "start_time": 2245.119,
+      "end_time": 2279.51,
+      "text": "और एंजॉय करिए लाइफ को 20 को मिटाइए खत्म करिए क्या निकला 30 30 को लिखिए और 30 को पॉप करिए ठीक है 30 के लेफ्ट के बारे में चिंता मत कीजिए 30 का लेफ्ट हो चुका होगा 30 के राइट के बारे में चिंता करिए लेकिन लेकिन 30 का राइट भी नल है भैया 30 का राइट भी नल है होगा ही 30 सबसे बड़ा है राइट नल है नल है तो कुछ नहीं करेंगे अब अब जब आप इसको दोहराएंगे तो आपका स्टैक एम्प्टी हो चुका है। आपका स्टक एम्प्टी हो चुका है। एम्प्टी होने का क्या मतलब है?",
+      "source": "caption",
+      "english_text": "और एंजॉय करिए लाइफ को 20 को मिटाइए खत्म करिए क्या निकला 30 30 को लिखिए और 30 को पॉप करिए ठीक है 30 के लेफ्ट के बारे में चिंता मत कीजिए 30 का लेफ्ट हो चुका होगा 30 के राइट के बारे में चिंता करिए लेकिन लेकिन 30 का राइट भी नल है भैया 30 का राइट भी नल है होगा ही 30 सबसे बड़ा है राइट नल है नल है तो कुछ नहीं करेंगे अब अब जब आप इसको दोहराएंगे तो आपका स्टैक एम्प्टी हो चुका है। आपका स्टक एम्प्टी हो चुका है। एम्प्टी होने का क्या मतलब है?"
+    },
+    {
+      "start_time": 2279.52,
+      "end_time": 2312.79,
+      "text": "अब अब कुछ नहीं बचा है। ये जो टॉप निकालने का खेल आप खेल रहे थे ना अब खत्म हो चुका है। ध्यान से देखिए। क्या ये आपको सॉर्टेड ऑर्डर में मिला कि नहीं मिला? हां, ये सॉर्टेड ऑर्डर में मिल गया। इस पूरे बीएसटी को बिना इन ऑर्डर यूज किए एक स्टक यूज करके एक छोटा सा ट्रिक लगा के क्या ट्रिक था फिर से देखिए रूट से स्टार्ट किए थे रूट के पूरे लेफ्ट खानदान को पुश किए थे हर बार हर बार क्या करते थे टॉप निकालते थे उसको आंसर में लिखते थे वो",
+      "source": "caption",
+      "english_text": "अब अब कुछ नहीं बचा है। ये जो टॉप निकालने का खेल आप खेल रहे थे ना अब खत्म हो चुका है। ध्यान से देखिए। क्या ये आपको सॉर्टेड ऑर्डर में मिला कि नहीं मिला? हां, ये सॉर्टेड ऑर्डर में मिल गया। इस पूरे बीएसटी को बिना इन ऑर्डर यूज किए एक स्टक यूज करके एक छोटा सा ट्रिक लगा के क्या ट्रिक था फिर से देखिए रूट से स्टार्ट किए थे रूट के पूरे लेफ्ट खानदान को पुश किए थे हर बार हर बार क्या करते थे टॉप निकालते थे उसको आंसर में लिखते थे वो"
+    },
+    {
+      "start_time": 2312.8,
+      "end_time": 2347.109,
+      "text": "आपका एलिमेंट है वो आपका एलिमेंट है अब टॉप का राइट देखते थे टॉप का राइट देखते थे अब टॉप के राइट को तो पुश करते ही करते थे। टॉप के राइट के पूरे लेफ्ट खानदान को पुश करते थे। पूरे लेफ्ट खानदान को पुश करते थे और यह प्रोसेस को बार-बार बार-बार दोहराते थे। बार-बार बार-बार बार-बार क्या करते थे? दोहराते थे। अच्छा। तो ये 25 मिनट का हुआ है और अभी भी आप लोग क्वेश्चन के करीब नहीं है। अभी भी हम टू सम नहीं समझाए हैं। हम बस ये समझाए हैं कि अगर आपको बाइनरी सर्च ट्री में से एक-एक एक-एक",
+      "source": "caption",
+      "english_text": "आपका एलिमेंट है वो आपका एलिमेंट है अब टॉप का राइट देखते थे टॉप का राइट देखते थे अब टॉप के राइट को तो पुश करते ही करते थे। टॉप के राइट के पूरे लेफ्ट खानदान को पुश करते थे। पूरे लेफ्ट खानदान को पुश करते थे और यह प्रोसेस को बार-बार बार-बार दोहराते थे। बार-बार बार-बार बार-बार क्या करते थे? दोहराते थे। अच्छा। तो ये 25 मिनट का हुआ है और अभी भी आप लोग क्वेश्चन के करीब नहीं है। अभी भी हम टू सम नहीं समझाए हैं। हम बस ये समझाए हैं कि अगर आपको बाइनरी सर्च ट्री में से एक-एक एक-एक"
+    },
+    {
+      "start_time": 2347.119,
+      "end_time": 2378.47,
+      "text": "करके सॉर्टेड ऑर्डर में एलिमेंट निकालना है तो कैसे निकालेंगे? अब चलिए क्वेश्चन पे। चलिए। अच्छा अभी जो कहानी हुआ है 25 मिनट में बहुत ज्यादा लंबा हो गया लेकिन जरूरी था। अगर हमको इसका कोड लिखना होता अगर हमको इसका कोड लिखना होता तो हम कैसे लिखते उसको? देखिए सबसे पहले तो आपको एक स्टैक चाहिए होगा। सबसे पहले तो आपको स्टक चाहिए होगा। किस तरीके का? नोड ही नोड पॉइंटर ही स्टोर कर ले। इसको हम नाम देंगे एसेंडिंग एएससी। इसको हम नाम देंगे। अच्छा",
+      "source": "caption",
+      "english_text": "करके सॉर्टेड ऑर्डर में एलिमेंट निकालना है तो कैसे निकालेंगे? अब चलिए क्वेश्चन पे। चलिए। अच्छा अभी जो कहानी हुआ है 25 मिनट में बहुत ज्यादा लंबा हो गया लेकिन जरूरी था। अगर हमको इसका कोड लिखना होता अगर हमको इसका कोड लिखना होता तो हम कैसे लिखते उसको? देखिए सबसे पहले तो आपको एक स्टैक चाहिए होगा। सबसे पहले तो आपको स्टक चाहिए होगा। किस तरीके का? नोड ही नोड पॉइंटर ही स्टोर कर ले। इसको हम नाम देंगे एसेंडिंग एएससी। इसको हम नाम देंगे। अच्छा"
+    },
+    {
+      "start_time": 2378.48,
+      "end_time": 2412.069,
+      "text": "मेन फंक्शन लिखते हैं पहले। पहले हम अपना जो भी अपना मेन फंक्शन है वह लिखते हैं। यह मेन फंक्शन क्या करने का है? यह इसको एक रूट मिलता है। इसको एक रूट मिलता है और उसका काम क्या है? सॉर्टेड ऑर्डर में प्रिंट करना। बस प्रिंट करना। अच्छा तो शुरू करिए। सबसे शुरू में याद करिए क्या किए थे? रूट से स्टार्ट करके रूट के लेफ्ट खानदान को रेल दिए थे उसमें। हम एक काम करेंगे। नोड स्टार t = रूट। टू सम नहीं है ये। हम हम जो अभी बताएं उसका कोड लिख रहे हैं क्योंकि इसका कोड डिफिकल्ट है। देखिए जिसका डिफिकल्ट है हम मानते हैं डिफिकल्ट",
+      "source": "caption",
+      "english_text": "मेन फंक्शन लिखते हैं पहले। पहले हम अपना जो भी अपना मेन फंक्शन है वह लिखते हैं। यह मेन फंक्शन क्या करने का है? यह इसको एक रूट मिलता है। इसको एक रूट मिलता है और उसका काम क्या है? सॉर्टेड ऑर्डर में प्रिंट करना। बस प्रिंट करना। अच्छा तो शुरू करिए। सबसे शुरू में याद करिए क्या किए थे? रूट से स्टार्ट करके रूट के लेफ्ट खानदान को रेल दिए थे उसमें। हम एक काम करेंगे। नोड स्टार t = रूट। टू सम नहीं है ये। हम हम जो अभी बताएं उसका कोड लिख रहे हैं क्योंकि इसका कोड डिफिकल्ट है। देखिए जिसका डिफिकल्ट है हम मानते हैं डिफिकल्ट"
+    },
+    {
+      "start_time": 2412.079,
+      "end_time": 2445.67,
+      "text": "है। टी हुआ क्या किए हम ऐसा कर सकते हैं कि वाइल टी अच्छा जब तक टी है जब तक टी नल नहीं है। अच्छा क्या करना है? ए सी डॉट पुश t रूट पुश हो गया और पूरा लेफ्ट खानदान को तो क्या करेंगे? t = t डॉट लेफ्ट और बंद कर देंगे। इससे क्या होगा? शुरू होगा रूट से 20 पुश करेगा लेफ्ट आ जाएगा। 10 पुश करेगा लेफ्ट आ जाएगा फाइव लेफ्ट आ जाएगा टू अब लेफ्ट जाएगा तो नल हो जाएगा रुक जाएगा तो पहला स्टेप कंप्लीट हो गया देखिए खत्म हो गया ना पहला स्टेप यस",
+      "source": "caption",
+      "english_text": "है। टी हुआ क्या किए हम ऐसा कर सकते हैं कि वाइल टी अच्छा जब तक टी है जब तक टी नल नहीं है। अच्छा क्या करना है? ए सी डॉट पुश t रूट पुश हो गया और पूरा लेफ्ट खानदान को तो क्या करेंगे? t = t डॉट लेफ्ट और बंद कर देंगे। इससे क्या होगा? शुरू होगा रूट से 20 पुश करेगा लेफ्ट आ जाएगा। 10 पुश करेगा लेफ्ट आ जाएगा फाइव लेफ्ट आ जाएगा टू अब लेफ्ट जाएगा तो नल हो जाएगा रुक जाएगा तो पहला स्टेप कंप्लीट हो गया देखिए खत्म हो गया ना पहला स्टेप यस"
+    },
+    {
+      "start_time": 2445.68,
+      "end_time": 2473.75,
+      "text": "अब निकालिए अब जो काम था वो निकालिए देखिए क्या करते हैं हम वाइल एए डॉट नॉट एम्प्टी कब तक करना था जब तक ये स्टक खाली ना हो जाए क्या करते थे नोड टॉप इसको इसको स्मॉल कर देते हैं नोड स्मॉल नोड स्मॉल इज = ASC डॉट टॉप टॉप निकालते थे। एएससी से पॉप करते थे। सही बात है ना?",
+      "source": "caption",
+      "english_text": "अब निकालिए अब जो काम था वो निकालिए देखिए क्या करते हैं हम वाइल एए डॉट नॉट एम्प्टी कब तक करना था जब तक ये स्टक खाली ना हो जाए क्या करते थे नोड टॉप इसको इसको स्मॉल कर देते हैं नोड स्मॉल नोड स्मॉल इज = ASC डॉट टॉप टॉप निकालते थे। एएससी से पॉप करते थे। सही बात है ना?"
+    },
+    {
+      "start_time": 2473.76,
+      "end_time": 2499.91,
+      "text": "पॉप करते थे। अब क्या करते थे? रुक जाते थे क्या? नहीं नहीं। नोड राइट चाइल्ड नोड राइट चाइल्ड इज़ इक्वल टू स्मॉल का राइट। याद कीजिए टू आया था ना? कहां था टू? टू। टू हो गया। टू का राइट चाइल्ड फोर। अब इस पर सेम काम दोहराते थे जो हम लोग रूट पर किए थे। इसको तो पुश करेंगे ही करेंगे। इसके पूरे लेफ्ट खानदान को रे लेंगे अंदर।",
+      "source": "caption",
+      "english_text": "पॉप करते थे। अब क्या करते थे? रुक जाते थे क्या? नहीं नहीं। नोड राइट चाइल्ड नोड राइट चाइल्ड इज़ इक्वल टू स्मॉल का राइट। याद कीजिए टू आया था ना? कहां था टू? टू। टू हो गया। टू का राइट चाइल्ड फोर। अब इस पर सेम काम दोहराते थे जो हम लोग रूट पर किए थे। इसको तो पुश करेंगे ही करेंगे। इसके पूरे लेफ्ट खानदान को रे लेंगे अंदर।"
+    },
+    {
+      "start_time": 2499.92,
+      "end_time": 2533.43,
+      "text": "सेम काम दोहरा दीजिए। सेम काम क्या कीजिए? दोहरा दीजिए। वाइल राइट चाइल्ड सेम काम जो ऊपर आप टी के साथ किए ना सेम काम कीजिए। एएससी डॉट पुश राइट चाइल्ड और सिर्फ इसको नहीं इसके पूरे खानदान को ही कर देंगे भाई। राइट चाइल्ड इक्व राइट चाइल्ड डॉट लेफ्ट इसको बंद किए इसको बंद किए क्या यह करने से और मान लीजिए इसको यहां पर प्रिंट कर दीजिएगा स्मॉल का और क्या स्मॉल का डाटा को ये करने से हो जाएगा हां यही",
+      "source": "caption",
+      "english_text": "सेम काम दोहरा दीजिए। सेम काम क्या कीजिए? दोहरा दीजिए। वाइल राइट चाइल्ड सेम काम जो ऊपर आप टी के साथ किए ना सेम काम कीजिए। एएससी डॉट पुश राइट चाइल्ड और सिर्फ इसको नहीं इसके पूरे खानदान को ही कर देंगे भाई। राइट चाइल्ड इक्व राइट चाइल्ड डॉट लेफ्ट इसको बंद किए इसको बंद किए क्या यह करने से और मान लीजिए इसको यहां पर प्रिंट कर दीजिएगा स्मॉल का और क्या स्मॉल का डाटा को ये करने से हो जाएगा हां यही"
+    },
+    {
+      "start_time": 2533.44,
+      "end_time": 2559.829,
+      "text": "हम लोग किए हैं अभी तक यही हम लोग किए हैं अब अब अब अभी तो हम आपको बोले थे कि ये तो सॉर्टेड ऑर्डर है एसेंडिंग ऑर्डर अगर हम बोले इसको डिसेंडिंग ऑर्डर में प्रिंट करो बाबू डिसेंडिंग ऑर्डर में प्रिंट करो आपको इंट्यूशन आ रहा होगा जो भी अभी तक किए हैं ना सब रिवर्स कर दो सब रिवर्स कर दो दिखाते हैं जो भी अभी तक किए हैं सब रिवर्स कर दो। आइए इसी के बगल में लिखते हैं। इसीलिए हम कोड यहां पे लिख रहे हैं।",
+      "source": "caption",
+      "english_text": "हम लोग किए हैं अभी तक यही हम लोग किए हैं अब अब अब अभी तो हम आपको बोले थे कि ये तो सॉर्टेड ऑर्डर है एसेंडिंग ऑर्डर अगर हम बोले इसको डिसेंडिंग ऑर्डर में प्रिंट करो बाबू डिसेंडिंग ऑर्डर में प्रिंट करो आपको इंट्यूशन आ रहा होगा जो भी अभी तक किए हैं ना सब रिवर्स कर दो सब रिवर्स कर दो दिखाते हैं जो भी अभी तक किए हैं सब रिवर्स कर दो। आइए इसी के बगल में लिखते हैं। इसीलिए हम कोड यहां पे लिख रहे हैं।"
+    },
+    {
+      "start_time": 2559.839,
+      "end_time": 2589.51,
+      "text": "जो भी हुआ है हर चीज को लेफ्ट को राइट बना दो। लेफ्ट को राइट बना दो। तो सबसे पहले तो एक और स्टक ले लो। ये क्या है? डिसेंडिंग ऑर्डर। डिसेंडिंग यस यस। डिसेंडिंग ऑर्डर। सेम काम करना है। देखिए हर लाइन के उधर हम उसका कोस्पोंडिंग लाइन लिख रहे हैं। t तो रूट है। अब वाइल t वाइल t एसेंडिंग ऑर्डर में क्या किए थे? रूट से शुरू किए थे।",
+      "source": "caption",
+      "english_text": "जो भी हुआ है हर चीज को लेफ्ट को राइट बना दो। लेफ्ट को राइट बना दो। तो सबसे पहले तो एक और स्टक ले लो। ये क्या है? डिसेंडिंग ऑर्डर। डिसेंडिंग यस यस। डिसेंडिंग ऑर्डर। सेम काम करना है। देखिए हर लाइन के उधर हम उसका कोस्पोंडिंग लाइन लिख रहे हैं। t तो रूट है। अब वाइल t वाइल t एसेंडिंग ऑर्डर में क्या किए थे? रूट से शुरू किए थे।"
+    },
+    {
+      "start_time": 2589.52,
+      "end_time": 2619.829,
+      "text": "पूरे लेफ्ट को रेल दिए थे। डिसेंडिंग ऑर्डर में क्या करेंगे? आपको सबसे पहले कौन सा एलिमेंट चाहिए? अब सबसे बड़ा वाला। सबसे बड़ा वाला कहां मिलेगा भाई? अरे पूरे राइट पे मिलेगा। जिसका राइट साइड नल हो जाए वही सबसे बड़ा। जैसे टू टू पे आए थे ना और टू को बोले सबसे छोटा पूरा राइट जाओगे ये सबसे बड़ा आ जाएगा। बोल रहे हैं ना हर चीज को रिवर्स करना है। हर चीज को क्या है मतलब इसका desc डॉट डिसेंडिंग डॉट पुश t अब यहां पे t = t डॉट लेफ्ट था।",
+      "source": "caption",
+      "english_text": "पूरे लेफ्ट को रेल दिए थे। डिसेंडिंग ऑर्डर में क्या करेंगे? आपको सबसे पहले कौन सा एलिमेंट चाहिए? अब सबसे बड़ा वाला। सबसे बड़ा वाला कहां मिलेगा भाई? अरे पूरे राइट पे मिलेगा। जिसका राइट साइड नल हो जाए वही सबसे बड़ा। जैसे टू टू पे आए थे ना और टू को बोले सबसे छोटा पूरा राइट जाओगे ये सबसे बड़ा आ जाएगा। बोल रहे हैं ना हर चीज को रिवर्स करना है। हर चीज को क्या है मतलब इसका desc डॉट डिसेंडिंग डॉट पुश t अब यहां पे t = t डॉट लेफ्ट था।"
+    },
+    {
+      "start_time": 2619.839,
+      "end_time": 2652.309,
+      "text": "यहां पे क्या होगा? t = यस t डॉट राइट वेरी गुड। क्या करेंगे अब? सेम काम। अब डिसेंडिंग पे कर दो भाई। डिसेंडिंग पे कर दो। डिसेंडिंग पे कर दो कर दो क्या करना है न स्टार उसका नाम स्मॉल था इसका नाम बिग कर दीजिए क्या करिए डिसेंडिंग डॉट टॉप यस और डिसेंडिंग डॉट पॉप ये तो ऑब्वियस बात है कि जिसका टॉप होगा वही पॉप होगा हर चीज रिवर्स बोल रहे हैं ना राइट चाइल्ड था लेफ्ट चाइल्ड नाम",
+      "source": "caption",
+      "english_text": "यहां पे क्या होगा? t = यस t डॉट राइट वेरी गुड। क्या करेंगे अब? सेम काम। अब डिसेंडिंग पे कर दो भाई। डिसेंडिंग पे कर दो। डिसेंडिंग पे कर दो कर दो क्या करना है न स्टार उसका नाम स्मॉल था इसका नाम बिग कर दीजिए क्या करिए डिसेंडिंग डॉट टॉप यस और डिसेंडिंग डॉट पॉप ये तो ऑब्वियस बात है कि जिसका टॉप होगा वही पॉप होगा हर चीज रिवर्स बोल रहे हैं ना राइट चाइल्ड था लेफ्ट चाइल्ड नाम"
+    },
+    {
+      "start_time": 2652.319,
+      "end_time": 2683.75,
+      "text": "भी रिवर्स कर दो न स्टार लेफ्ट चाइल्ड इज इक्वल टू यहां स्मॉल का राइट था। यहां पे क्या होगा? बिग का लेफ्ट। बोल रहे हैं हर एक चीज उल्टा हो जाएगा। इस पे हम नहीं चाहते हैं कि 25 मिनट और ले लें। सेम काम है। बिल्कुल उल्टा है। ऐसा पूरा 360° वाइल वाइल लेफ्ट चाइल्ड। वाइल लेफ्ट चाइल्ड डी ई एस ई डॉट पुश लेफ्ट चाइल्ड डॉट पुश",
+      "source": "caption",
+      "english_text": "भी रिवर्स कर दो न स्टार लेफ्ट चाइल्ड इज इक्वल टू यहां स्मॉल का राइट था। यहां पे क्या होगा? बिग का लेफ्ट। बोल रहे हैं हर एक चीज उल्टा हो जाएगा। इस पे हम नहीं चाहते हैं कि 25 मिनट और ले लें। सेम काम है। बिल्कुल उल्टा है। ऐसा पूरा 360° वाइल वाइल लेफ्ट चाइल्ड। वाइल लेफ्ट चाइल्ड डी ई एस ई डॉट पुश लेफ्ट चाइल्ड डॉट पुश"
+    },
+    {
+      "start_time": 2683.76,
+      "end_time": 2718.71,
+      "text": "लेफ्ट चाइल्ड। यस यस। और सेम रिवर्स ऑर्डर में राइट चाइल्ड इज इक्वल टू राइट चाइल्ड का लेफ्ट। तो लेफ्ट चाइल्ड इज इक्वल टू आप गेस कर लिए होंगे तो बहुत अच्छी बात है। नहीं किए होंगे तो और अच्छी बात है। लेफ्ट चाइल्ड का राइट। देखिए हर चीज रिवर्स हो गया। बंद कर दीजिए और यहां पे इसको पॉप कर लीजिए। ये देखिए। ये दोनों चीज हम क्यों पढ़ाए? ये दोनों चीज आपको क्या करता है? आप एक-ए स्टेप में एक-ए स्टेप में एक-एक स्टेप में हर बार जब आप यह करते हैं ना तो आपको",
+      "source": "caption",
+      "english_text": "लेफ्ट चाइल्ड। यस यस। और सेम रिवर्स ऑर्डर में राइट चाइल्ड इज इक्वल टू राइट चाइल्ड का लेफ्ट। तो लेफ्ट चाइल्ड इज इक्वल टू आप गेस कर लिए होंगे तो बहुत अच्छी बात है। नहीं किए होंगे तो और अच्छी बात है। लेफ्ट चाइल्ड का राइट। देखिए हर चीज रिवर्स हो गया। बंद कर दीजिए और यहां पे इसको पॉप कर लीजिए। ये देखिए। ये दोनों चीज हम क्यों पढ़ाए? ये दोनों चीज आपको क्या करता है? आप एक-ए स्टेप में एक-ए स्टेप में एक-एक स्टेप में हर बार जब आप यह करते हैं ना तो आपको"
+    },
+    {
+      "start_time": 2718.72,
+      "end_time": 2752.55,
+      "text": "एक-एक करके वैल्यू्यूज मिलती है। ये मिलता है आपको एसेंडिंग ऑर्डर में छोटे से बड़ा। ये आपको क्या मिलता है? डिसेंडिंग ऑर्डर में। बड़े से छोटा। बड़े से छोटा। अब हम ये क्यों पढ़ाए? ये हम क्यों पढ़ाए? हम पगला गए थे कि 35 मिनट इसमें नहीं। पगलाए नहीं है। अब देखिए। अब देखिए। बाप रे यह बनाना ना एक उसके तरह होता है एक जो जैसे डायरेक्टर फिल्म बनाता है ना कि शुरू में थोड़ा नहीं समझ में आता है और नहीं फिर लास्ट में जाके सब समझ में वो ऐसा लगता है ठीक है जब आप इतना मेहनत करते",
+      "source": "caption",
+      "english_text": "एक-एक करके वैल्यू्यूज मिलती है। ये मिलता है आपको एसेंडिंग ऑर्डर में छोटे से बड़ा। ये आपको क्या मिलता है? डिसेंडिंग ऑर्डर में। बड़े से छोटा। बड़े से छोटा। अब हम ये क्यों पढ़ाए? ये हम क्यों पढ़ाए? हम पगला गए थे कि 35 मिनट इसमें नहीं। पगलाए नहीं है। अब देखिए। अब देखिए। बाप रे यह बनाना ना एक उसके तरह होता है एक जो जैसे डायरेक्टर फिल्म बनाता है ना कि शुरू में थोड़ा नहीं समझ में आता है और नहीं फिर लास्ट में जाके सब समझ में वो ऐसा लगता है ठीक है जब आप इतना मेहनत करते"
+    },
+    {
+      "start_time": 2752.56,
+      "end_time": 2783.91,
+      "text": "हैं ना तो लगता है अब ये हम क्यों बताएं अब आपको क्या आपको स्टेप बाय स्टेप निकालने आता है क्या आप स्टेप बाय स्टेप छोटे से बड़ा वैल्यू और बड़े से छोटा वैल्यू दोनों आता है आपको दोनों का कोड आता है आपको टू सम में क्या होता था टू सम में क्या होता था एरे एक में याद कीजिए कीजिए। आप आई को यहां क्यों रखते थे? आप जे को यहां क्यों रखते थे? आई आपको क्या देता था? सबसे छोटा सॉर्टेड एरे था ना? तो आई में सबसे छोटा मिलता था ना? जे आपको क्या",
+      "source": "caption",
+      "english_text": "हैं ना तो लगता है अब ये हम क्यों बताएं अब आपको क्या आपको स्टेप बाय स्टेप निकालने आता है क्या आप स्टेप बाय स्टेप छोटे से बड़ा वैल्यू और बड़े से छोटा वैल्यू दोनों आता है आपको दोनों का कोड आता है आपको टू सम में क्या होता था टू सम में क्या होता था एरे एक में याद कीजिए कीजिए। आप आई को यहां क्यों रखते थे? आप जे को यहां क्यों रखते थे? आई आपको क्या देता था? सबसे छोटा सॉर्टेड एरे था ना? तो आई में सबसे छोटा मिलता था ना? जे आपको क्या"
+    },
+    {
+      "start_time": 2783.92,
+      "end_time": 2817.349,
+      "text": "देता था? सबसे बड़ा। अच्छा आप ij का कुछ काम करते थे। उसके बाद आपको या तो आई को बढ़ाना होता था या तो जे को घटाना होता था। i को बढ़ाने का मतलब क्या है? थोड़ा सा बड़ा वैल्यू और जे को घटाने का मतलब क्या है? थोड़ा सा कम वैल्यू। तो वही चीज तो हम लोग बीएसटी में भी सीख लिए। वही चीज तो हम लोग बीएसटी में भी सीख लिए। अगर आप ये करेंगे तो क्या आप यही काम कर सकते हैं? आई जे वाला। आप अगर दोनों को एक साथ कर देंगे तो क्या स्मॉल आपको सबसे छोटा वैल्यू देगा? हां जी। आपको स्मॉल क्या",
+      "source": "caption",
+      "english_text": "देता था? सबसे बड़ा। अच्छा आप ij का कुछ काम करते थे। उसके बाद आपको या तो आई को बढ़ाना होता था या तो जे को घटाना होता था। i को बढ़ाने का मतलब क्या है? थोड़ा सा बड़ा वैल्यू और जे को घटाने का मतलब क्या है? थोड़ा सा कम वैल्यू। तो वही चीज तो हम लोग बीएसटी में भी सीख लिए। वही चीज तो हम लोग बीएसटी में भी सीख लिए। अगर आप ये करेंगे तो क्या आप यही काम कर सकते हैं? आई जे वाला। आप अगर दोनों को एक साथ कर देंगे तो क्या स्मॉल आपको सबसे छोटा वैल्यू देगा? हां जी। आपको स्मॉल क्या"
+    },
+    {
+      "start_time": 2817.359,
+      "end_time": 2850.87,
+      "text": "देगा? आपको स्मॉल क्या देगा? टू देगा। क्या बिग आपको डीएसटी का सबसे बड़ा वैल्यू देगा? हां बिल्कुल देगा भाई। आपको 30 देगा। आप 2 और 30 को जोड़ेंगे आंसर आएगा 32। मान लीजिए मान लीजिए कि 2 + 30 K से बड़ा हो गया। 2 + 30 K से बड़ा हो गया। इस केस में हम लोग क्या करते थे? J माइनस माइनस J माइनस माइनस मतलब जो सबसे बड़ा वैल्यू है वो नहीं चाहिए। उससे एक छोटा वैल्यू चाहिए। उससे एक छोटा वैल्यू कैसे होता है? उससे एक छोटा वैल्यू कैसे होता है? इस चीज को एक बार और चला के। इस चीज",
+      "source": "caption",
+      "english_text": "देगा? आपको स्मॉल क्या देगा? टू देगा। क्या बिग आपको डीएसटी का सबसे बड़ा वैल्यू देगा? हां बिल्कुल देगा भाई। आपको 30 देगा। आप 2 और 30 को जोड़ेंगे आंसर आएगा 32। मान लीजिए मान लीजिए कि 2 + 30 K से बड़ा हो गया। 2 + 30 K से बड़ा हो गया। इस केस में हम लोग क्या करते थे? J माइनस माइनस J माइनस माइनस मतलब जो सबसे बड़ा वैल्यू है वो नहीं चाहिए। उससे एक छोटा वैल्यू चाहिए। उससे एक छोटा वैल्यू कैसे होता है? उससे एक छोटा वैल्यू कैसे होता है? इस चीज को एक बार और चला के। इस चीज"
+    },
+    {
+      "start_time": 2850.88,
+      "end_time": 2885.19,
+      "text": "को एक बार और चला के अगर आपको i++ चाहिए तो आपको सबसे छोटा वैल्यू नहीं चाहिए। उससे जस्ट बड़ा वैल्यू चाहिए। कैसे होता है? इस चीज को चला के। तो ये दोनों कोड क्या करता है? जो एरे में तो बहुत सिंपल था। एरे में तो आप i प्लस प्लस करते तो आपको मिल जाता था। j माइनस माइनस मिल जाता था। इसमें इतना इजी नहीं है। इसमें अगर आपको टू से थोड़ा ऊपर का वैल्यू चाहिए तो आपको इतना ये पापड़ पूरा बेलना पड़ेगा। ये पूरा पापड़ आपको बेलना पड़ेगा। अब हम बताते हैं कि वो कैसे काम करेगा। अब हम आपको बताते हैं कि वो कैसे काम करेगा।",
+      "source": "caption",
+      "english_text": "को एक बार और चला के अगर आपको i++ चाहिए तो आपको सबसे छोटा वैल्यू नहीं चाहिए। उससे जस्ट बड़ा वैल्यू चाहिए। कैसे होता है? इस चीज को चला के। तो ये दोनों कोड क्या करता है? जो एरे में तो बहुत सिंपल था। एरे में तो आप i प्लस प्लस करते तो आपको मिल जाता था। j माइनस माइनस मिल जाता था। इसमें इतना इजी नहीं है। इसमें अगर आपको टू से थोड़ा ऊपर का वैल्यू चाहिए तो आपको इतना ये पापड़ पूरा बेलना पड़ेगा। ये पूरा पापड़ आपको बेलना पड़ेगा। अब हम बताते हैं कि वो कैसे काम करेगा। अब हम आपको बताते हैं कि वो कैसे काम करेगा।"
+    },
+    {
+      "start_time": 2885.2,
+      "end_time": 2919.109,
+      "text": "आपको थोड़ा-थोड़ा आईडिया आ रहा होगा। कोड देखिए पूरा आईडिया आ जाएगा। उसका एक हम छोटा सा ड्राई रन भी कर देंगे। उसका हम छोटा सा ड्राई रन कर देंगे। सबसे पहले तो आपको ये दोनों चीजें दोनों जो हम स्टक का बात बताए हैं ना एसेंडिंग डिसेंडिंग दोनों एक साथ चलाना पड़ेगा। दोनों एक साथ मेंटेन करना पड़ेगा। डिपेंडिंग ऑन आपको क्या चाहिए वो आप अपने मन से डिसाइड कर सकते हैं। तो देखिए हम क्या करेंगे। देखिए हम क्या करेंगे? कुछ नहीं करेंगे। मतलब पूरा कोड हो चुका है। पूरा कोड यही है। इसको फंक्शन बना के लिख देंगे ताकि आपको आसान हो। और आज के कमेंट्स में आपको पूरा पूरा कोड भी मिल जाएगा। उसकी चिंता मत कीजिए।",
+      "source": "caption",
+      "english_text": "आपको थोड़ा-थोड़ा आईडिया आ रहा होगा। कोड देखिए पूरा आईडिया आ जाएगा। उसका एक हम छोटा सा ड्राई रन भी कर देंगे। उसका हम छोटा सा ड्राई रन कर देंगे। सबसे पहले तो आपको ये दोनों चीजें दोनों जो हम स्टक का बात बताए हैं ना एसेंडिंग डिसेंडिंग दोनों एक साथ चलाना पड़ेगा। दोनों एक साथ मेंटेन करना पड़ेगा। डिपेंडिंग ऑन आपको क्या चाहिए वो आप अपने मन से डिसाइड कर सकते हैं। तो देखिए हम क्या करेंगे। देखिए हम क्या करेंगे? कुछ नहीं करेंगे। मतलब पूरा कोड हो चुका है। पूरा कोड यही है। इसको फंक्शन बना के लिख देंगे ताकि आपको आसान हो। और आज के कमेंट्स में आपको पूरा पूरा कोड भी मिल जाएगा। उसकी चिंता मत कीजिए।"
+    },
+    {
+      "start_time": 2919.119,
+      "end_time": 2949.99,
+      "text": "सबसे पहले हम क्या करेंगे? देखिए सबसे पहला काम तो है कि दोनों स्टक बना लो। सबसे पहला काम तो है कि दोनों स्टक बना लो। स्टक नहीं बनाओगे तो क्या होगा? कुछ नहीं। इसको यहीं पे लिखते हैं। ठीक है? इसको नीचे ही लिखते हैं। इसके बाद नहीं है ना? दोनों स्टक बना लो। सबसे पहले तो बना लिए। अच्छा दो फंक्शन लिख दो। जो ये काम यहां पे हुआ था ना वाइल ये ये फलाना ढिमकाना हम एक लिख देते हैं",
+      "source": "caption",
+      "english_text": "सबसे पहले हम क्या करेंगे? देखिए सबसे पहला काम तो है कि दोनों स्टक बना लो। सबसे पहला काम तो है कि दोनों स्टक बना लो। स्टक नहीं बनाओगे तो क्या होगा? कुछ नहीं। इसको यहीं पे लिखते हैं। ठीक है? इसको नीचे ही लिखते हैं। इसके बाद नहीं है ना? दोनों स्टक बना लो। सबसे पहले तो बना लिए। अच्छा दो फंक्शन लिख दो। जो ये काम यहां पे हुआ था ना वाइल ये ये फलाना ढिमकाना हम एक लिख देते हैं"
+    },
+    {
+      "start_time": 2950.0,
+      "end_time": 2978.71,
+      "text": "न स्टार गेट स्मॉल मतलब स्मॉल वाला जो स्मॉल वाला दे रहा था। इसमें क्या पास करेंगे हम? इसमें कुछ पास करेंगे कि नहीं? कुछ नहीं पास करेंगे। इसमें कुछ पास करने की जरूरत नहीं है। सेम काम करना है। सबसे पहले तो गेट स्मॉल किससे आएगा? एसेंडिंग वाले स्टक से। अगर एएससी डॉट एम्प्टी है। अगर स्टक खाली है तो रिटर्नल। अगर स्टक खाली है तो क्या करेंगे आप? रिटर्न। कुछ नहीं कर पाएंगे।",
+      "source": "caption",
+      "english_text": "न स्टार गेट स्मॉल मतलब स्मॉल वाला जो स्मॉल वाला दे रहा था। इसमें क्या पास करेंगे हम? इसमें कुछ पास करेंगे कि नहीं? कुछ नहीं पास करेंगे। इसमें कुछ पास करने की जरूरत नहीं है। सेम काम करना है। सबसे पहले तो गेट स्मॉल किससे आएगा? एसेंडिंग वाले स्टक से। अगर एएससी डॉट एम्प्टी है। अगर स्टक खाली है तो रिटर्नल। अगर स्टक खाली है तो क्या करेंगे आप? रिटर्न। कुछ नहीं कर पाएंगे।"
+    },
+    {
+      "start_time": 2978.72,
+      "end_time": 3010.39,
+      "text": "रिटर्नल अब सेम काम सेम काम दोहरा दीजिए। नोड स्टार स्मॉल = एएससी डॉट टॉप टॉप हो गया। एएससी से पॉप करा दो। एएससी से पॉप करा दो। अब क्या टॉप को रिटर्न कर दें? नहीं रिटर्न करेंगे। लेकिन और भी तो स्टेप था। राइट चाइल्ड भी तो था। राइट चाइल्ड भी तो था बाबू। कुछ नहीं कर रहे हैं। वो पूरा कोड यहां हम कॉपी पेस्ट कर रहे हैं भाई। पूरा कोड कॉपी पेस्ट कर रहे हैं। पूरा कोड कॉपी पेस्ट कर रहे हैं। स्मॉल का राइट।",
+      "source": "caption",
+      "english_text": "रिटर्नल अब सेम काम सेम काम दोहरा दीजिए। नोड स्टार स्मॉल = एएससी डॉट टॉप टॉप हो गया। एएससी से पॉप करा दो। एएससी से पॉप करा दो। अब क्या टॉप को रिटर्न कर दें? नहीं रिटर्न करेंगे। लेकिन और भी तो स्टेप था। राइट चाइल्ड भी तो था। राइट चाइल्ड भी तो था बाबू। कुछ नहीं कर रहे हैं। वो पूरा कोड यहां हम कॉपी पेस्ट कर रहे हैं भाई। पूरा कोड कॉपी पेस्ट कर रहे हैं। पूरा कोड कॉपी पेस्ट कर रहे हैं। स्मॉल का राइट।"
+    },
+    {
+      "start_time": 3010.4,
+      "end_time": 3041.67,
+      "text": "यस। उसके बाद इस राइट चाइल्ड को तो रेलो ही। इसके पूरे लेफ्ट खानदान को रेल देंगे। आइए एएससी डॉट पुश किसको राइट चाइल्ड को और इसके पूरे लेफ्ट खानदान को पेलना है तो राइट चाइल्ड का लेफ्ट वही कोड है। इसमें कुछ अलग नहीं है। इसको बंद और ये करने के बाद क्या रिटर्न करेंगे? स्मॉल को रिटर्न कर देंगे। यह फंक्शन हो गया। सिमिलर",
+      "source": "caption",
+      "english_text": "यस। उसके बाद इस राइट चाइल्ड को तो रेलो ही। इसके पूरे लेफ्ट खानदान को रेल देंगे। आइए एएससी डॉट पुश किसको राइट चाइल्ड को और इसके पूरे लेफ्ट खानदान को पेलना है तो राइट चाइल्ड का लेफ्ट वही कोड है। इसमें कुछ अलग नहीं है। इसको बंद और ये करने के बाद क्या रिटर्न करेंगे? स्मॉल को रिटर्न कर देंगे। यह फंक्शन हो गया। सिमिलर"
+    },
+    {
+      "start_time": 3041.68,
+      "end_time": 3074.71,
+      "text": "फंक्शन लिख देते हैं। न स्टार गेट बिग के लिए लिख देते हैं। इसमें भी कुछ नहीं करना है। अगर गेट बिग किससे मिलेगा? डिसेंडिंग वाले से। डिसेंडिंग डॉट एम्प्टी रिटर्न नल रिटर्न नल। अच्छा उसके बाद सेम सेम सेम जो यहां है उसका ऑोजिट लिख दो। न स्टार बिग इक्वल टू डिसेंडिंग डॉट टॉप डिसेंडिंग से उसको हटाओ, खारिज करो। अब यहां पर राइट चाइल्ड",
+      "source": "caption",
+      "english_text": "फंक्शन लिख देते हैं। न स्टार गेट बिग के लिए लिख देते हैं। इसमें भी कुछ नहीं करना है। अगर गेट बिग किससे मिलेगा? डिसेंडिंग वाले से। डिसेंडिंग डॉट एम्प्टी रिटर्न नल रिटर्न नल। अच्छा उसके बाद सेम सेम सेम जो यहां है उसका ऑोजिट लिख दो। न स्टार बिग इक्वल टू डिसेंडिंग डॉट टॉप डिसेंडिंग से उसको हटाओ, खारिज करो। अब यहां पर राइट चाइल्ड"
+    },
+    {
+      "start_time": 3074.72,
+      "end_time": 3099.829,
+      "text": "था उल्टा उल्टा उल्टा लेफ्ट चाइल्ड इज़ इक्वल टू यहां पे स्मॉल का राइट था। यहां पे बिग का लेफ्ट हो जाएगा। वाइल लेफ्ट चाइल्ड यस वाइल लेफ्ट चाइल्ड डिसेंडिंग डॉट पुश लेफ्ट चाइल्ड यस यस। और वहां पे था राइट चाइल्ड इक्वल टू राइट चाइल्ड का लेफ्ट।",
+      "source": "caption",
+      "english_text": "था उल्टा उल्टा उल्टा लेफ्ट चाइल्ड इज़ इक्वल टू यहां पे स्मॉल का राइट था। यहां पे बिग का लेफ्ट हो जाएगा। वाइल लेफ्ट चाइल्ड यस वाइल लेफ्ट चाइल्ड डिसेंडिंग डॉट पुश लेफ्ट चाइल्ड यस यस। और वहां पे था राइट चाइल्ड इक्वल टू राइट चाइल्ड का लेफ्ट।"
+    },
+    {
+      "start_time": 3099.839,
+      "end_time": 3133.109,
+      "text": "यहां पे क्या होगा? लेफ्ट चाइल्ड इज इक्वल टू लेफ्ट चाइल्ड का राइट। लेफ्ट चाइल्ड का राइट। वेरी गुड। लास्ट में रिटर्न बिग। दोनों फंक्शन आपका तैयार है यूज़ करने के लिए। आइए अब अपना टू पॉइंटर शुरू करें। अब अपना टू पॉइंटर शुरू करते हैं। कहां पे? मेन में जो आपको लीड कोड फंक्शन दिया है ना। क्या बोला है आपको? एक न मिला है, एक न मिला है और एक K मिला है टू सम के लिए। सबसे पहले तो अगर रूट नल",
+      "source": "caption",
+      "english_text": "यहां पे क्या होगा? लेफ्ट चाइल्ड इज इक्वल टू लेफ्ट चाइल्ड का राइट। लेफ्ट चाइल्ड का राइट। वेरी गुड। लास्ट में रिटर्न बिग। दोनों फंक्शन आपका तैयार है यूज़ करने के लिए। आइए अब अपना टू पॉइंटर शुरू करें। अब अपना टू पॉइंटर शुरू करते हैं। कहां पे? मेन में जो आपको लीड कोड फंक्शन दिया है ना। क्या बोला है आपको? एक न मिला है, एक न मिला है और एक K मिला है टू सम के लिए। सबसे पहले तो अगर रूट नल"
+    },
+    {
+      "start_time": 3133.119,
+      "end_time": 3165.589,
+      "text": "है। अगर रूट नल है रिटर्न फॉल्स। ऐसा हो ही नहीं सकता है कि मिल जाएगा। रूट ही नल है। फॉल्स। अब दोनों स्टक को बनाइए, शुरू करिए, शुरू करिए। कैसे शुरू करते थे? नोड स्टार t = रूट। आइए पहले असेंडिंग वाला बना दें। तो वाइल टी ए डॉट पुश टी और इसके पूरे लेफ्ट खानदान को करिए t = t को लेफ्ट ये कब तक चलेगा जब तक कि सारा लेफ्ट खत्म ना हो जाए। सिमिलरली अब t को फिर से रूट",
+      "source": "caption",
+      "english_text": "है। अगर रूट नल है रिटर्न फॉल्स। ऐसा हो ही नहीं सकता है कि मिल जाएगा। रूट ही नल है। फॉल्स। अब दोनों स्टक को बनाइए, शुरू करिए, शुरू करिए। कैसे शुरू करते थे? नोड स्टार t = रूट। आइए पहले असेंडिंग वाला बना दें। तो वाइल टी ए डॉट पुश टी और इसके पूरे लेफ्ट खानदान को करिए t = t को लेफ्ट ये कब तक चलेगा जब तक कि सारा लेफ्ट खत्म ना हो जाए। सिमिलरली अब t को फिर से रूट"
+    },
+    {
+      "start_time": 3165.599,
+      "end_time": 3198.309,
+      "text": "पे लाइए और अब डिसेंडिंग वाला बना लीजिए। क्या करेंगे? उल्टा डिसेंडिंग डॉट पुश t। अब ऊपर लेफ्ट को रेले थे इधर राइट को रेल दीजिए। t = t का राइट कर दीजिए। t = t का राइट कर दीजिए। दोनों स्टक आपका बनकर तैयार है। दोनों स्टक बन के तैयार है। अब आ जाइए। अब अपना शुरू कर सकते हैं आप टू पॉइंटर। आइए टू पॉइंटर शुरू करते हैं। नोड स्टार i = गेट स्मॉल मतलब i = 0 करते थे ना। गेट स्मॉल",
+      "source": "caption",
+      "english_text": "पे लाइए और अब डिसेंडिंग वाला बना लीजिए। क्या करेंगे? उल्टा डिसेंडिंग डॉट पुश t। अब ऊपर लेफ्ट को रेले थे इधर राइट को रेल दीजिए। t = t का राइट कर दीजिए। t = t का राइट कर दीजिए। दोनों स्टक आपका बनकर तैयार है। दोनों स्टक बन के तैयार है। अब आ जाइए। अब अपना शुरू कर सकते हैं आप टू पॉइंटर। आइए टू पॉइंटर शुरू करते हैं। नोड स्टार i = गेट स्मॉल मतलब i = 0 करते थे ना। गेट स्मॉल"
+    },
+    {
+      "start_time": 3198.319,
+      "end_time": 3229.27,
+      "text": "गेट स्मॉल से सबसे छोटा वाला। तो सेम एज इंडेक्स ज़ीरो न स्टार j = गेट बिग मतलब j = n - 1 पे रखते थे। हो गया। अब टू टू पॉइंटर रुकता कब था? टू पॉइंटर रुकता कब था? याद कीजिए टू पॉइंटर कब रुकता था? टू पॉइंटर कब रुकता था? जब i लेस दैन ये हो जाता था। तब तक चलाते थे। तो इसका सबसे पहले तो देखिए जो i और जे है जो i और j है वो नल नहीं होना चाहिए। आई और j नल नहीं ना होना चाहिए। तो व्हाइल i",
+      "source": "caption",
+      "english_text": "गेट स्मॉल से सबसे छोटा वाला। तो सेम एज इंडेक्स ज़ीरो न स्टार j = गेट बिग मतलब j = n - 1 पे रखते थे। हो गया। अब टू टू पॉइंटर रुकता कब था? टू पॉइंटर रुकता कब था? याद कीजिए टू पॉइंटर कब रुकता था? टू पॉइंटर कब रुकता था? जब i लेस दैन ये हो जाता था। तब तक चलाते थे। तो इसका सबसे पहले तो देखिए जो i और जे है जो i और j है वो नल नहीं होना चाहिए। आई और j नल नहीं ना होना चाहिए। तो व्हाइल i"
+    },
+    {
+      "start_time": 3229.28,
+      "end_time": 3261.91,
+      "text": "एंड j मतलब दोनों में सर्कल हो एंड i नॉट इक्वल टू j i नॉट इक्वल टू j एंड i का डेटा शुड बी लेस दैन इक्वल टू j का डेटा ये क्या है देखिए इंडेक्स में तो i जे नल होता नहीं था तो ये नहीं लिखना था ये सेम ये कंडीशन है व्हाइल जो हम लोग इंडेक्स में लिखते थे ये सेम कंडीशन है कि i जे के इक्वल नहीं होना चाहिए तो इक्वल हो गया और i का डेटा j के डेटा कम होना चाहिए तो ज्यादा नहीं तब टू पॉइंटर रुक जाता था उसके बाद क्या करेंगे यहां भी रुक जाएंगे",
+      "source": "caption",
+      "english_text": "एंड j मतलब दोनों में सर्कल हो एंड i नॉट इक्वल टू j i नॉट इक्वल टू j एंड i का डेटा शुड बी लेस दैन इक्वल टू j का डेटा ये क्या है देखिए इंडेक्स में तो i जे नल होता नहीं था तो ये नहीं लिखना था ये सेम ये कंडीशन है व्हाइल जो हम लोग इंडेक्स में लिखते थे ये सेम कंडीशन है कि i जे के इक्वल नहीं होना चाहिए तो इक्वल हो गया और i का डेटा j के डेटा कम होना चाहिए तो ज्यादा नहीं तब टू पॉइंटर रुक जाता था उसके बाद क्या करेंगे यहां भी रुक जाएंगे"
+    },
+    {
+      "start_time": 3261.92,
+      "end_time": 3296.15,
+      "text": "अब सेम काम करना है इंट वेल इज इक्वल टू या सम जो भी आप कहना चाहें सम इज इक्वल टू i का डेटा प्लस j का डेटा इफ सम इक्वल इक्वल टू k वेरी गुड रिटर्न ट्रू कर दो इफ सम इज़ ग्रेटर दैन k अगर अगर सम के से बड़ा हो गया है। अगर वन और फाइव का सम बड़ा हो गया है थ्री से तो क्या करना पड़ेगा? क्या वन को बढ़ाएंगे और बड़ा हो जाएगा। फाइव को",
+      "source": "caption",
+      "english_text": "अब सेम काम करना है इंट वेल इज इक्वल टू या सम जो भी आप कहना चाहें सम इज इक्वल टू i का डेटा प्लस j का डेटा इफ सम इक्वल इक्वल टू k वेरी गुड रिटर्न ट्रू कर दो इफ सम इज़ ग्रेटर दैन k अगर अगर सम के से बड़ा हो गया है। अगर वन और फाइव का सम बड़ा हो गया है थ्री से तो क्या करना पड़ेगा? क्या वन को बढ़ाएंगे और बड़ा हो जाएगा। फाइव को"
+    },
+    {
+      "start_time": 3296.16,
+      "end_time": 3321.51,
+      "text": "कम करिए। फाइव को कम करिए। फाइव को क्या करिए? कम करिए। कम कैसे करेंगे? j = गेट बिग। गेट बिग क्या करेगा? थोड़ा कम वैल्यू देगा। क्या करेगा? थोड़ा कम वैल्यू देगा। थोड़ा कम वैल्यू देगा। अच्छा। एल्स एल्स अगर सम के से छोटा है तो i को बढ़ाओ। I = गेट स्मॉल I = गेट स्मॉल यह बंद कर दो।",
+      "source": "caption",
+      "english_text": "कम करिए। फाइव को कम करिए। फाइव को क्या करिए? कम करिए। कम कैसे करेंगे? j = गेट बिग। गेट बिग क्या करेगा? थोड़ा कम वैल्यू देगा। क्या करेगा? थोड़ा कम वैल्यू देगा। थोड़ा कम वैल्यू देगा। अच्छा। एल्स एल्स अगर सम के से छोटा है तो i को बढ़ाओ। I = गेट स्मॉल I = गेट स्मॉल यह बंद कर दो।"
+    },
+    {
+      "start_time": 3321.52,
+      "end_time": 3354.23,
+      "text": "अगर ये लूप टूट गया अगर ट्रू होना होगा तो हो जाएगा। लास्ट में क्या करना है? रिटर्न फॉल्स। ये देखिए ये हुआ दंगल कोड। यस। आज हमको भी मजा आ गया कोड करने में। देखिए ये अब आप बोलेंगे कि लिखे कैसे? लिख दिए। प्रैक्टिस करेंगे तो आप भी लिख देंगे। ये दोनों फंक्शन है। ये आपका मेन है। हम बोले थे हार्ड क्वेश्चन था। बहुत हार्ड क्वेश्चन था। इसका कोड हम रेट करेंगे। हार्ड है। इसका एक्सप्लेनेशन और हार्ड है। इसको समझना सुपर हार्ड है। लेकिन सुपर हार्ड चीजें समझने से ही सुपर डुपर नौकरी लगती है। इजी चीज से इजी ही बन के रह जाएंगे।",
+      "source": "caption",
+      "english_text": "अगर ये लूप टूट गया अगर ट्रू होना होगा तो हो जाएगा। लास्ट में क्या करना है? रिटर्न फॉल्स। ये देखिए ये हुआ दंगल कोड। यस। आज हमको भी मजा आ गया कोड करने में। देखिए ये अब आप बोलेंगे कि लिखे कैसे? लिख दिए। प्रैक्टिस करेंगे तो आप भी लिख देंगे। ये दोनों फंक्शन है। ये आपका मेन है। हम बोले थे हार्ड क्वेश्चन था। बहुत हार्ड क्वेश्चन था। इसका कोड हम रेट करेंगे। हार्ड है। इसका एक्सप्लेनेशन और हार्ड है। इसको समझना सुपर हार्ड है। लेकिन सुपर हार्ड चीजें समझने से ही सुपर डुपर नौकरी लगती है। इजी चीज से इजी ही बन के रह जाएंगे।"
+    },
+    {
+      "start_time": 3354.24,
+      "end_time": 3389.109,
+      "text": "उससे कुछ नहीं होगा आपको। ठीक है? तो ये कोड कमेंट में आपको दे देंगे। इस वीडियो को देखिए। नहीं समझ में आया एक बार और देखिए। वन टाइम नहीं समझ में आया। कोई दिक्कत नहीं है। बहुत बहुत हार्ड कांसेप्ट है। हम तो बोल रहे हैं। हम अक्सर हम बोलते हैं कि ज्यादातर हम नहीं बोलते हैं कि हार्ड क्वेश्चन है। हम बोलते हैं ये तो ऐसे ही क्वेश्चन है। ऐसे ही क्वेश्चन नहीं है। ये इजी नहीं है। ये अगर लीड कोड हम होते ना हम इसको हार्ड रेट करते। अगर आप ये स्टक वाला पढ़ रहे हैं तो जो लोग अप्रोच वन में भाग गया था उसके लिए ईजी है। वो तो वेक्टर बना कर दिया होगा। वो कुछ नहीं कर पाएगा। आप लोग अगर यहां तक आए हैं तो बहुत-बहुत बधाई हो। इसके लिए भी पेशेंस चाहिए। ठीक है? तो ये करिएगा। और हां ये तो हम पक्का बोल रहे हैं कि ये स्टाइवर से बेटर है। ये तो पक्का बेटर",
+      "source": "caption",
+      "english_text": "उससे कुछ नहीं होगा आपको। ठीक है? तो ये कोड कमेंट में आपको दे देंगे। इस वीडियो को देखिए। नहीं समझ में आया एक बार और देखिए। वन टाइम नहीं समझ में आया। कोई दिक्कत नहीं है। बहुत बहुत हार्ड कांसेप्ट है। हम तो बोल रहे हैं। हम अक्सर हम बोलते हैं कि ज्यादातर हम नहीं बोलते हैं कि हार्ड क्वेश्चन है। हम बोलते हैं ये तो ऐसे ही क्वेश्चन है। ऐसे ही क्वेश्चन नहीं है। ये इजी नहीं है। ये अगर लीड कोड हम होते ना हम इसको हार्ड रेट करते। अगर आप ये स्टक वाला पढ़ रहे हैं तो जो लोग अप्रोच वन में भाग गया था उसके लिए ईजी है। वो तो वेक्टर बना कर दिया होगा। वो कुछ नहीं कर पाएगा। आप लोग अगर यहां तक आए हैं तो बहुत-बहुत बधाई हो। इसके लिए भी पेशेंस चाहिए। ठीक है? तो ये करिएगा। और हां ये तो हम पक्का बोल रहे हैं कि ये स्टाइवर से बेटर है। ये तो पक्का बेटर"
+    },
+    {
+      "start_time": 3389.119,
+      "end_time": 3403.44,
+      "text": "पक्का पक्का पक्का बेटर है। इस कोई उसमें तो हम बोल दे हां बेटर पक्का बेटर है। ऐसा नहीं पढ़ा सकता है कोई भी। ठीक है? इससे बेटर इसका एक्सप्लेनेशन नहीं मिल सकता है नेट पे। तो इसको करिए और मिलते हैं अगले दिन।",
+      "source": "caption",
+      "english_text": "पक्का पक्का पक्का बेटर है। इस कोई उसमें तो हम बोल दे हां बेटर पक्का बेटर है। ऐसा नहीं पढ़ा सकता है कोई भी। ठीक है? इससे बेटर इसका एक्सप्लेनेशन नहीं मिल सकता है नेट पे। तो इसको करिए और मिलते हैं अगले दिन।"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

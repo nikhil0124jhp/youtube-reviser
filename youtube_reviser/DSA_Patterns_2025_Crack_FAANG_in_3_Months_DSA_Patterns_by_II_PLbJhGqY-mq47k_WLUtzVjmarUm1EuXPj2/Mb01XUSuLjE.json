@@ -1,0 +1,583 @@
+{
+  "video_id": "Mb01XUSuLjE",
+  "video_title": "2 Of The Most Important Questions in Dijkstra's Algorithm | Graph series DSA Patterns 2026",
+  "video_number": 103,
+  "chunks": [
+    {
+      "start_time": 1.51,
+      "end_time": 32.79,
+      "text": "हां भाई चलिए आज [गला साफ़ करने की आवाज़] दिक्करा पे दो क्वेश्चन करेंगे और कल मतलब कल मतलब पिछला वीडियो दिक्करा पे था ना बहुत अच्छा वीडियो है बहुत डिटेल वीडियो है तो ऑब्वियसली कि ये देखने से पहले आपको वो देखना पड़ेगा लेकिन उसमें हम एक छोटा सा बात हमसे मिस हो गया था मेरी गलती है और छोटा सा बात नहीं है बहुत इंपॉर्टेंट बात है ठीक है सब दिक्रा का बहुत इंपॉर्टेंट चीज मिस कर गए थे वो भी हम आपको क्लियर कर देते हैं और आज दो क्वेश्चन करेंगे पहला क्वेश्चन सुपर ईजी मतलब सुपर ईजी मतलब जो लोग dicra देख चुके हैं उनके लिए सुपर ईजी जो लोग नहीं देख चुके हैं उनके लिए बहुत हार्ड है दूसरा क्वेश्चन भी ईजी है। थोड़ा सा इधर-उधर ट्विस्ट है। एक आध लाइन का ट्विस्ट है।",
+      "source": "caption",
+      "english_text": "Yes brother, today [clearing throat sound] we will do two questions on Dikkara and tomorrow means yesterday, the previous video was on Dikkara, it is a very good video, it is a very detailed video, so obviously you will have to watch that before watching this, but in that we have missed one small thing, it is my mistake and it is not a small thing, it is a very important thing, okay everyone, we had missed a very important thing of Dikkra, that too, we will clear you and today. There will be two questions, the first question is super easy, meaning super easy for those who have seen Dicra, very hard for those who have not seen it, the second question is also easy. There's a little twist here and there. There is a half line twist."
+    },
+    {
+      "start_time": 32.8,
+      "end_time": 64.869,
+      "text": "बाकी वो भी आसान है। ठीक है? चलिए तो जो एक बात कल छूट गया था ना कल वाला देख लीजिए पहले और फिर आइए। कल हम आपको पूरा दिक्रा समझाए। दिक्रा काम कैसे करता है? रिलैक्स होता है। सोर्स से हर वर्टेक्स का नोट फाइंड कर लेना। वगैरह वगैरह सारी बातें अच्छी थी। लेकिन एक सिनेरियो इमेजिन कीजिए। ठीक है? कल हम लोग मैप पे बात किए थे कि आपको रांची है, बेंगलुरु है, दिल्ली है, इधर-उधर है। तो आपको सिंगल सोर्स से मतलब रांची से बाकी सारे शहर का निकालना है। तो कैसे निकालिएगा? ये मैप इमेजिन कीजिए एक बार। ठीक है? इमेजिन कीजिए कि यहां पे रांची है। ठीक बात है। आपको रांची",
+      "source": "caption",
+      "english_text": "The rest is also easy. Ok? Come on, let's see the one thing that we missed yesterday and then come back. Tomorrow we will explain the whole story to you. How does Dikra work? Relaxes. Find notes for each vertex from the source. All the things etc. were good. But imagine a scenario. Ok? Yesterday we talked about the map that you have Ranchi, Bangalore, Delhi, here and there. So you have to extract from single source means the rest of the city from Ranchi. So how to get it out? Imagine this map once. Ok? Imagine that here is Ranchi. That's right. Ranchi to you"
+    },
+    {
+      "start_time": 64.879,
+      "end_time": 98.95,
+      "text": "से सबका निकालना है। एक है यहां पे रांची से बोर एक रोड जाता है। अच्छी बात है। कल भी जाता था तो इसमें कोई बुरी बात नहीं है। ठीक है? बेंगलुरु से दिल्ली एक रोड जाता है। ठीक है? जा सकता है और दिल्ली से वापस रांची एक रोड जाता है। तो मतलब एक ऐसा करके साइकिल बना हुआ है कि मतलब आप रांची से बोर जा सकते हैं। बेंगलुरु से दिल्ली आ सकते हैं और दिल्ली से वापस रांची आ सकते हैं। ठीक है? अब जो रोड का किलोमीटर है ना एक चीज नोटिस कीजिए कल जो हम लोग किलोमीटर लिए थे ना सारा किलोमीटर पॉजिटिव था। क्यों? क्योंकि डिस्टेंस नेगेटिव नहीं होता है। किलोमीटर तो पॉजिटिव ही होता है। लेकिन अब लीड कोड तो",
+      "source": "caption",
+      "english_text": "Everything has to be removed from it. There is a road here from Ranchi to Bor. It's a good thing. I used to go yesterday too, so there is nothing wrong in that. Ok? There is a road from Bangalore to Delhi. Ok? Can go and from Delhi back to Ranchi there is a road. So it means that by doing this the cycle has become such that you can get bored of Ranchi. One can come to Delhi from Bangalore and come back to Ranchi from Delhi. Ok? Now notice one thing about the kilometers of the road, the kilometers we took yesterday were all positive. Why? Because distance is not negative. Kilometer is always positive. But now the lead code"
+    },
+    {
+      "start_time": 98.96,
+      "end_time": 125.03,
+      "text": "कुछ भी कर सकता है। लीड कोड ये सब नहीं मानता है। मान लीजिए हाइपोथेटिकली ना आपको बताया गया है कि रांची से बोर तक का डिस्टेंस -5 कि.मी. है। कितना? 5 कि.मी. नहीं -5 कि.मी. अच्छा मान लीजिए क्वेश्चन में तो कुछ भी हो सकता है। ठीक है? बेंगलुरु से दिल्ली जाने का रास्ता 1 कि.मी. है। ठीक है? और दिल्ली से रांची जाने का भी 1 कि.मी. है। ठीक है? ऐसा हो सकता है। बिल्कुल। कल भी हम लोग यही किए थे। कल एक एक्सेप्शन था कि -5 नहीं था।",
+      "source": "caption",
+      "english_text": "Can do anything. The LEED code does not consider all this. Suppose hypothetically you have been told that the distance from Ranchi to Bor is -5 km. Is. How much? 5 km No -5 Km. Well, let's say anything can happen in the question. Ok? The distance from Bangalore to Delhi is 1 km. Is. Ok? And also 1 km from Delhi to Ranchi. Is. Ok? could be possible. Absolutely. We did the same thing yesterday also. There was one exception yesterday that there was no -5."
+    },
+    {
+      "start_time": 125.04,
+      "end_time": 156.869,
+      "text": "ठीक है? फाइव होगा या कुछ और लेकिन हम क्या बोल रहे हैं? एक ऐसा मैप इमेजिन कीजिए गलती से। रांची से बोर -5 है। ये वन है और ये भी वन है। ठीक है? अब देखिए रांची से रांची जाने का डिस्टेंस हम लोग कैसे इस तरह का शुरुआत कैसे होता है? हम लोग बोलते हैं कि भैया कुछ भी हो जाए रांची से रांची जाने का डिस्टेंस तो ज़ीरो ही होगा। ऑब्वियस सी बात है कि अगर आप रांची में हैं और आपको रांची जाना है तो कितना डिस्टेंस होगा? ज़ीरो। लेकिन लेकिन लेकिन देखिए अब क्या होगा? अभी के लिए बेंगलुरु का डिस्टेंस हम लोग कितना मानते थे? इंफिनिटी और दिल्ली का इंफिनिटी जब हम लोग शुरू करते थे क्या प्रोसेस होता था?",
+      "source": "caption",
+      "english_text": "ok? Must be five or something but what are we saying? Imagine such a map by mistake. Bore-5 is from Ranchi. This is a forest and this is also a forest. Ok? Now see the distance of going from Ranchi to Ranchi, how does this kind of thing start? We say that brother, no matter what happens, the distance from Ranchi to Ranchi will be zero. The obvious thing is that if you are in Ranchi and you have to go to Ranchi, then what will be the distance? Zero. But but but see what will happen now? For now, what did we consider the distance to Bengaluru? When we started Infinity and Delhi's Infinity, what was the process?"
+    },
+    {
+      "start_time": 156.879,
+      "end_time": 186.55,
+      "text": "हम लोग रांची को पकड़ते थे क्योंकि इसका भी सबसे शॉर्टेस्ट डिस्टेंस है और इसको रिलैक्स करते थे। इसके सारे नेबर तक का रिलैक्सेशन करते थे। उसका क्या मतलब होता था? कि अगर ये इसका इसके नेबर तक जाने के लिए रोड है और इसका कुछ वेट है तो हम लोग क्या करते थे? इन दोनों को जोड़ के देखते थे कि वो इंफिनिटी से कम है कि नहीं। अगर वो इंफिनिटी से कम है इसका मतलब कि हम लोग को एक अच्छा डिस्टेंस मिला है और हम लोग बोर को रिलैक्स कर देते थे। देखिए क्या होगा? रांची उठाइए। ठीक है? रांची का पहला रोड कहां जाता है? बेंगलुरु। रोड का वेट क्या है? मतलब रोड का डिस्टेंस क्या है?",
+      "source": "caption",
+      "english_text": "We used to catch Ranchi because it also has the shortest distance and used to relax. Even all his neighbors used to relax. What did that mean? That if this is his road to reach his neighbor and it has some weight, then what were we to do? Used to add these two and see whether it is less than infinity or not. If it is less than infinity, it means that we have got a good distance and we were able to relax the bore. See what will happen? Pick up Ranchi. Ok? Where does the first road of Ranchi go? Bengaluru. What is road weight? Meaning what is the distance of the road?"
+    },
+    {
+      "start_time": 186.56,
+      "end_time": 219.35,
+      "text": "-5 करिए। 0 जो कि रांची का डिस्टेंस है। ऑब्वियस सी बात है। -5 आपको बेंगलुरु जाने में लगेगा। तो बेंगलुरु का कितना निकल के आया? अगर रांची से रांची जाने तक का ज़ीरो है। और बेंगलुरु तक डिस्टेंस -5 है, तो रांची में अह बैंगलोर जाने का कितना हुआ? 0 -5 = -5. ठीक है? क्या? -5 अभी क्या इंफिनिटी से कम है? बिल्कुल कम है। तो हम लोग क्या करेंगे? बोर को रिलैक्स कर देंगे। कल भी किए थे। तो बोर को रिलैक्स करेंगे और बोर का डिस्टेंस देखिए -5 हो गया। बोलो का डिस्टेंस -5 हो गया क्योंकि",
+      "source": "caption",
+      "english_text": "-Do 5. 0 which is the distance of Ranchi. It's an obvious thing. -5 it will take you to go to Bangalore. So how much did Bengaluru earn? If the distance from Ranchi to Ranchi is zero. And the distance till Bangalore is -5, so how much does it cost to go to Bangalore from Ranchi? 0 -5 = -5. Ok? What? -5 Is it less than infinity now? Absolutely less. So what will we do? Will relax the bore. Did it yesterday also. So we will relax the bore and see that the distance of the bore has become -5. Bolo's distance became -5 because"
+    },
+    {
+      "start_time": 219.36,
+      "end_time": 248.47,
+      "text": "दिक्कत ऐसा ही काम करता है। ठीक है? रांची से दिल्ली में रिलैक्स कीजिए। रांची से दिल्ली आप करेंगे तो आप पाएंगे कि रांची से रांची जाने तक ज़ीरो डिस्टेंस है और रांची से दिल्ली जाने का वेट वन है। तो 0 + 1 जो कि आता है वन। क्या ये वन इंफिनिटी से कम है? बिल्कुल कम है। तो हम लोग दिल्ली को भी रिलैक्स कर दिए। हम लोग दिल्ली को क्या कर दिए? रिलैक्स करके वन लिख दिए। ठीक बात है। रांची का काम खत्म हो गया। अब क्योंकि आप बोर को रिलैक्स किए थे। बोर पे अच्छा वेट आया था। इंफिनिटी से -5। अब हम लोग बोर को फिर रिलैक्स करेंगे।",
+      "source": "caption",
+      "english_text": "The problem is that's how it works. Ok? Relax in Delhi from Ranchi. If you go from Ranchi to Delhi, you will find that the distance from Ranchi to Ranchi is zero and the distance from Ranchi to Delhi is one. So 0 + 1 which comes to one. Is it less than One Infinity? Absolutely less. So we relaxed Delhi also. What did we do to Delhi? Relaxed and wrote one. That's right. Ranchi work is over. Now because you had relaxed the bore. There was good weight on the bore. Infinity to -5. Now we will relax the boredom again."
+    },
+    {
+      "start_time": 248.48,
+      "end_time": 279.11,
+      "text": "मतलब जो काम अभी रांची के साथ हुआ सेम काम बोर के साथ करेंगे। देखिएगा इसमें क्या बदल जाएगा। देखिएगा बहुत ध्यान से। बोर -5 है। बोर -5 है। बोर से कितना रोड निकलता है? दो रोड। एक रांची की तरफ, एक दिल्ली की तरफ। देखिए रांची की तरफ निकलने वाले रोड को बहुत ध्यान से देखिए। बेंगलुरु का खुद का डिस्टेंस कितना है? -5 बेंगलुरु से रांची तक का रांची इसका नेबर है। उसका वेट कितना है? उस रोड का वेट कितना है? -5 इन दोनों को जोड़िए। क्या बन जाएगा? -10।",
+      "source": "caption",
+      "english_text": "Meaning, the same work that was done with Ranchi will be done with Bor. Let's see what will change in this. Will look very carefully. The bore is -5. The bore is -5. How much road comes out of the bore? Two roads. One towards Ranchi, one towards Delhi. Look very carefully at the road leading towards Ranchi. What is the distance of Bangalore itself? -5 Ranchi is its neighbor from Bengaluru to Ranchi. What is his weight? What is the weight of that road? -5 Add these two. What will become? -10."
+    },
+    {
+      "start_time": 279.12,
+      "end_time": 313.11,
+      "text": "इसको कंपेयर कीजिए। क्या ये -10 रांची के अभी के डिस्टेंस से कम है? हां। क्योंकि आप रांची का डिस्टेंस कहां से शुरू किए थे? ज़ीरो से। जब आप पॉजिटिव वेट लेते थे तो कुछ भी करके कम 0 से कम क्या होगा? लेकिन अब क्योंकि यहां नेगेटिव वेट हो गया है तो आपको लग रहा है कि अच्छा बेंगलुरु आने का डिस्टेंस -5 है। बेंगलुरु से रांची तक का एक रोड जाता है जो कि -5 है। तो रांची का नया डिस्टेंस क्या हो गया? -5 + -5 जो कि है -10। अब देखते हैं ये इस तरह देखता है कि ये -10 जो है वो ज़ीरो से कम है। तो क्या हमको रांची को रिलैक्स कर देना चाहिए? हां कर देना चाहिए। तो ये",
+      "source": "caption",
+      "english_text": "Compare this. Is this -10 less than the current distance of Ranchi? Yes. Because from where did you start the distance of Ranchi? From zero. When you had positive weight, what would happen if you did anything less than 0? But now because there is negative weight here, you feel that the distance to reach Bengaluru is -5. There is a road from Bangalore to Ranchi which is -5. So what is the new distance of Ranchi? -5 + -5 which is -10. Now let's see it looks like this -10 is less than zero. So should we relax Ranchi? Yes, it should be done. so this"
+    },
+    {
+      "start_time": 313.12,
+      "end_time": 346.469,
+      "text": "क्या करेगा? रांची को -10 बना दिया। ये लीजिए। रांची को -10 बना दिया। यहीं खेल खराब हो गया। बताते हैं कैसे खराब हो गया। अब बोर से एक और रोड निकलता है दिल्ली तक का। तो -5 और 1 कितना आता है? -4 क्या ये -4 दिल्ली के अभी के डिस्टेंस से कम है? बिल्कुल कम है। तो दिल्ली को भी रिलैक्स कर लो। दिल्ली को भी रिलैक्स करके -4 बोर का काम खत्म हो गया। लेकिन लेकिन लेकिन अब रांची ज़ीरो से -10 हो गया। आपको अब रांची को रिलैक्स करना पड़ेगा। फिर रांची को रिलैक्स करना पड़ेगा। कैसे करेंगे? रांची से दो रोड निकलता है। -10 और -5 कितना",
+      "source": "caption",
+      "english_text": "What will he do? Made Ranchi -10. Take this. Made Ranchi -10. This is where the game went wrong. Let us tell you how it went wrong. Now another road emerges from Bor to Delhi. So what is -5 and 1? -4 Is this -4 less than the current distance of Delhi? Absolutely less. So relax Delhi also. By relaxing Delhi also, the work of 4 bore was finished. But but but now Ranchi went from zero to -10. Now you will have to relax Ranchi. Then Ranchi will have to relax. How to do? There are two roads leading from Ranchi. -10 and -5 how much?"
+    },
+    {
+      "start_time": 346.479,
+      "end_time": 379.51,
+      "text": "होता है? -15 क्या? -15 बोर के अभी से छोटा है। हां, छोटा है। -15 इज स्मॉलर देन -5। ये बोर को फिर रिलैक्स कर दे। देखिए बोर को फिर रिलैक्स कर दिया। दिल्ली को भी करेगा। देखिएगा -10 और 1 क्या निकलता है? -9 क्या -9 -4 से छोटा है? बिल्कुल छोटा है। ये देखो यहां पे -9 कर दिया। रांची रिलैक्स हो गया। अब जो है ना अब आप केस को रिलैक्स करिएगा। फिर से बोर को रिलैक्स करिएगा। बोर को रिलैक्स करेंगे। ये -15 और -5 रांची फिर से रिलैक्स हो जाएगा। ये जो",
+      "source": "caption",
+      "english_text": "Does it happen? -15 what? -Smaller than 15 bore now. Yes, it is small. -15 is smaller than -5. This should relax the bore again. Look, the bore has been relaxed again. Will do it to Delhi also. Let's see what comes out -10 and 1? -9 Is -9 smaller than -4? It is absolutely small. Look here it has been reduced to -9. Ranchi relaxed. Whatever it is, now you can relax the case. Relax the bore again. Will relax the bore. These -15 and -5 Ranchi will be relaxed again. this which"
+    },
+    {
+      "start_time": 379.52,
+      "end_time": 412.23,
+      "text": "साइकिल है ना ये कभी रुकेगा ही नहीं। आप जितनी बार दिक्त रन करेंगे ना उतनी बार आपको छोटा-छोटा छोटा-छोटा वेट मिलता जाएगा। क्यों? क्योंकि वेट नेगेटिव हो गया है। डिस्टेंस नेगेटिव हो गया है। ये ना आपका दिक्स्त कभी रुकेगा ही नहीं। आपका दिक्स्तरा रन करता जाएगा। करता जाएगा। क्यों? क्योंकि उसको बार-बार बढ़िया-बढ़िया बढ़िया-बढ़िया डिस्टेंस मिलता जाएगा। दिक्स्तरा बढ़िया किसको समझता है? छोटे को बढ़िया समझता है। आप इसको जितनी बार रन करेंगे ना ये लूप में फंस गया। देखिए एक बार बेंगलुरु रिलैक्स होगा रांची कम हो जाएगा। रांची रिलैक्स होगा बेंगलुरु कम हो जाएगा और ये कभी",
+      "source": "caption",
+      "english_text": "It's a bicycle, it will never stop. Every time you run, you will get smaller and smaller weights. Why? Because weight has become negative. The distance has become negative. This naa your dick will never stop. Your Dijkstra will continue to run. Will keep doing. Why? Because he will get better and better distances again and again. Who does Dijkstra consider best? Considers small as good. No matter how many times you run it, it gets stuck in a loop. See, once Bengaluru relaxes, Ranchi will reduce. Ranchi will relax, Bengaluru will subside and this will never happen again."
+    },
+    {
+      "start_time": 412.24,
+      "end_time": 438.55,
+      "text": "रुकेगा ही नहीं। ये दिक्कत आपका इनफाइनाइट लूप में चला गया। इसीलिए इसीलिए बहुत इंपॉर्टेंट बात है। कभी भी कभी भी नेगेटिव वेट्स इनवॉल्व हो। नेगेटिव वेट्स इनवॉल्व हो आपके ग्राफ में। नेगेटिव वेट्स इनवॉल्व हो तो क्या करना है आपको? डू नॉट यूज द्रा। डू नॉट यूज द्रा। दिक्कत्रा काम नहीं करता है। दिक्ra फंस जाता है। उसको नहीं समझ में आता है।",
+      "source": "caption",
+      "english_text": "Will not stop. This problem has led you into an infinite loop. That's why it's a very important thing. Anytime there are negative weights involved. Negative weights should be included in your graph. What should you do if negative weights are involved? Do not use draw. Do not use draw. Diktra does not work. Dikra gets trapped. He doesn't understand."
+    },
+    {
+      "start_time": 438.56,
+      "end_time": 472.55,
+      "text": "क्यों? क्योंकि वो जितनी बार रिलैक्स करता है ना उसको उतना छोटा-छोटा छोटा-छोटा वेट मिलता जाएगा। तो पिछले वीडियो में आपका जो हिप था ना वो कभी एंप्टी होगा ही नहीं। हिप में बार-बार बार-बार बार-बार बार-बार एक बार बोर जाएगा फिर रांची आएगा। फिर बोर आएगा, फिर रांची आएगा। इसीलिए याद रखा कीजिए कभी भी आपको कोई क्वेश्चन मिलता है ग्राफ का सिंगल सोर्स से सारे तक का शॉर्टेस्ट पाथ लेकिन आपको वहां पे लिखा रहता है कि वेट्स नेगेटिव हो सकते हैं भूल के भी भूल के भी दिक्शरा यूज़ मत कीजिएगा भूल के भी दिक्करा यूज़ नहीं कीजिएगा उसके",
+      "source": "caption",
+      "english_text": "Why? Because every time he relaxes, he will gain smaller and smaller weight. So the hip you had in the last video will never be amputee. He will get bored again and again and again and again and again and again and again he will come to Ranchi. Then he will get bored, then he will come to Ranchi. That's why remember that whenever you get a question about the shortest path from a single source to the whole of the graph, but it is written there that the weights can be negative, do not use Diksha even by mistake, do not use Diksha even by mistake."
+    },
+    {
+      "start_time": 472.56,
+      "end_time": 505.99,
+      "text": "लिए और एल्गोरिदम्स होते हैं बेलmैन फोर्ड होता है फ्लॉयड वर्सेसल वो सब आगे आएगा लेकिन अगर आपको दिख जाता है कहीं कि वेट नेगेटिव है दिक्ra की तरफ बिल्कुल नहीं सोचना है दिक्रा काम नहीं करेगा आप थस जाइएगा ठीक बात है तो ये एक बहुत इंपॉर्टेंट पॉइंट था जो रह गया था। अब आपको हम बता दिए तो एक बहुत अच्छा साइन है कि आपको एक्स्ट्रा लगना है कि नहीं लगना है। अगर नेगेटिव वेट है बिल्कुल नहीं लगेगा। पॉजिटिव वेट है अगर सारा वेट पॉजिटिव है और आपको एक सिंगल सोर्स पता है कि सिंगल सोर्स से कहीं जाना है। बहुत बार होता है कि नहीं पता होता। आपको अगर बोलेगा कि हर नोड से हर नोड का डिस्टेंस",
+      "source": "caption",
+      "english_text": "There are other algorithms for this, there is Bellman Ford, there is Floyd Versalle, all that will come forward but if you see somewhere that the weight is negative, do not think about Dikra at all, Dikra will not work, you will give up, okay, so this was a very important point which was left. Now let us tell you that it is a very good sign whether you want to get extra or not. If there is negative weight it will not apply at all. Positive weight is if all the weights are positive and you know a single source that has to go somewhere from that single source. Many times it happens that we don't know. If it tells you that the distance of every node from every node"
+    },
+    {
+      "start_time": 506.0,
+      "end_time": 539.35,
+      "text": "नहीं हो सकता है। अगर आपको बोलता है कि भैया एक सिंगल सोर्स है। सिंगल सोर्स है उससे कहीं जाना है। उससे या तो एक नोड पे जाना है या तो उससे सारे नोट्स पे जाना है। तो आप बिल्कुल क्या लगा सकते हैं? दिक्श्रा बड़ी खुशी से लगा सकते हैं। प्रोवाइडेड कि वेट नेगेटिव ना हो। ठीक है? आइए आगे बढ़ते हैं। अब आपको ज्यादा अच्छे से समझ में आएगा। चलिए तो देखिए जैसा कि हम बता चुके हैं। पहला क्वेश्चन सुपर सुपर ईजी है। मतलब कल का क्वेश्चन का जस्ट कॉपी कर देना है आपको। कल जो भी आप पढ़े थे ना जो भी आप कोड लिखे थे उसको उठा के यहां कॉपी कर देना है बस देखिए लेकिन छोटी-छोटी चीजें हैं वो आपको बताते हैं। सबसे पहले क्वेश्चन क्या बोलता है? आपको एक नेटवर्क",
+      "source": "caption",
+      "english_text": "Can't happen. If he tells you that brother is a single source. There is a single source and we have to go somewhere from that. From it either one has to go to one node or from it one has to go to all the notes. So what can you plant exactly? Can apply Dikshra with great pleasure. Provided that the weight should not be negative. Ok? Let's move ahead. Now you will understand better. Let us see as we have told. The first question is super super easy. Meaning, you just have to copy yesterday's question. Whatever you read yesterday or whatever code you wrote, you have to copy it here, just see but there are small things, they tell you. What does the first question say? you need a network"
+    },
+    {
+      "start_time": 539.36,
+      "end_time": 566.23,
+      "text": "दिया हुआ है। ठीक है? उसमें कितने नोड्स हैं? n नोड्स हैं। कितने नोड्स हैं? नोड्स का क्या मतलब है? आपके कितने सर्कल हैं? कितने वर्टेक्स हैं? कितना? n। वेरी गुड। बहुत ध्यान से सुनिएगा। ये वन टू n लेबल्ड है। मतलब ये वन टू n है। जनरली हम लोग ग्राफ का वर्टेक्स कहां से शुरू करते हैं? 0 से n - 1 ये क्या है? 1 टू n। ठीक है? तो ये ध्यान रखिए गलत हो जाएगा मेरा। खुद गलत हो चुका है। ठीक है? वन टू एन लेवल है। ठीक है? आपको एक टाइम्स दिया हुआ है।",
+      "source": "caption",
+      "english_text": "Is given. Ok? How many nodes are there in it? There are n nodes. How many nodes are there? What do the nodes mean? How many circles do you have? How many vertexes are there? How much? n. very good. Listen very carefully. This is labeled one to n. Meaning this is one to n. Generally, where do we start the vertex of the graph? What is 0 to n - 1? 1 to n. Ok? So keep this in mind, I will go wrong. He himself has gone wrong. Ok? One to n level. Ok? You have been given a time."
+    },
+    {
+      "start_time": 566.24,
+      "end_time": 592.07,
+      "text": "आपको एक टाइम्स दिया हुआ है। टाइम्स क्या है? टाइम्स क्या है? यहां पे ना आपका जस्ट लाइक आपको जैसे एजेस दिया रहता था ना। एजेस में आपको क्या दिया रहता था? आपको दिया रहता था कि u v वेट। UV वेट का मतलब क्या है? कि भैया u एक वर्टेक्स होगा। v तक एक एच जाएगा और उसका वेट w होगा। वेटेड डायरेक्टेड ग्राफ की बात कर रहे हैं। ये कैसा ग्राफ है? वेटेड। पहली बात है कि वेटेड तभी तो हम लोग डिक्शरा में सोच भी रहे हैं ना वेटेड में तो दूसरा लगता है।",
+      "source": "caption",
+      "english_text": "You have been given a time. What are the times? What are the times? Here, your just like used to give you an edge. What was given to you in Ages? Used to give you that u v wait. What does UV weight mean? That brother u will be a vertex. One h will go to v and its weight will be w. Talking about weighted directed graph. What kind of graph is this? Weighted. The first thing is that we are even thinking about weighted in Dictionaries, but in weighted it seems second."
+    },
+    {
+      "start_time": 592.08,
+      "end_time": 623.75,
+      "text": "अच्छा डायरेक्टेड डायरेक्टेड का क्या मतलब है कि अगर यू वी डब्लू लिखा हुआ है ना तो यू से वी तक एज है। वी से यू तक एज नहीं है। अनलेस ये लिखा हुआ हो। जो लिखा हुआ है यू से वी तक ही एज मानना है। इसको और नहीं बना देना है कि चलो यू से वी है तो वी से यू तक बना दे। नहीं। जब आप अपना एडजेसेंसी लिस्ट बनाइएगा। तो u से वी तक आपको बनाना है विद वेट w। लेकिन वी से यू नहीं बनाना है इसको देख के। इसको जब V सही होगा ना कुछ होगा तो बनाएंगे। इसको देख के नहीं बनाना है। क्यों? क्योंकि ये डायरेक्टेड ग्राफ है और ये वेटेड ग्राफ है। ठीक है?",
+      "source": "caption",
+      "english_text": "Well, what is meant by directed directed is that if U V W is written then there is an edge from U to V. There is no age from V to U. Unless it is written. As per what is written, U to V is to be considered as the age. There is no need to make it any further that if it is U to V then make it from V to U. No. When you make your adjacency list. So from u to v you have to create with weight w. But do not convert V into U after seeing this. Will make it when V is right or something happens. Don't make it just by looking at it. Why? Because this is a directed graph and it is a weighted graph. Ok?"
+    },
+    {
+      "start_time": 623.76,
+      "end_time": 658.71,
+      "text": "आपको बस ये करना है। आपको एक टाइम्स बता दिए। टाइम्स क्या हुआ? ऐसा आपको जस्ट लाइक लिस्ट ऑफ एजेस। लिस्ट ऑफ एजेस जो कि कल था। कल के इसीलिए हम बोल रहे हैं ना ये क्वेश्चन जस्ट लाइक कॉपी है उसका। बिल्कुल कॉपी है। ठीक है? आपको एक सोर्स वर्टेक्स दिया हुआ है। K क्या दिया हुआ है? एक सोर्स नोड। सोर्स नोड। सोर्स नोड दिया हुआ है K। आपको क्या बताना है? आपको क्या बताना है? रिटर्न द मिनिमम टाइम। रिटर्न द मिनिमम टाइम। मिनिमम टाइम किस चीज के लिए है? कि हम लोग अगर K से स्टार्ट करें। हम लोग अगर K से स्टार्ट करें। क्या करना है?",
+      "source": "caption",
+      "english_text": "All you have to do is this. Told you one time. Times what happened? You just like list of ages. List of Ages which was yesterday. That's why we are saying that this question is just like a copy of yesterday's. It's an exact copy. Ok? You are given a source vertex. What is K given? A source node. Source node. The source node is given by K. What do you have to say? What do you have to say? Return the minimum time. Return the minimum time. What is the minimum time for? That if we start from K. If we start from K. What is the plan?"
+    },
+    {
+      "start_time": 658.72,
+      "end_time": 690.79,
+      "text": "एक मान लीजिए सिग्नल छोड़ना। एक सिग्नल छोड़ना अगर K से स्टार्ट करें तो मिनिमम टाइम। किस चीज के लिए मिनिमम टाइम? सारे नोड्स तक कब तक पहुंचेगा वो? सारे नोड्स तक कितने टाइम में पहुंच जाएगा? कितने टाइम में पहुंच जाएगा? पहुंच जाएगा। पहुंच जाएगा। आपको एक सिंगल वैल्यू रिटर्न करनी है कि भैया ऐसा ऐसा ग्राफ है। आपको एक सोर्स वर्टेक्स हम k बता देंगे। अच्छा और फिर क्या करना है? आपको k से एक सिग्नल छोड़ना है। मतलब K से आपको स्टार्ट करना",
+      "source": "caption",
+      "english_text": "Let's say a signal drop. Minimum time to leave a signal if starting from K. Minimum time for what? How long will it take to reach all the nodes? How much time will it take to reach all the nodes? In what time will it reach? will reach. will reach. You have to return a single value that bhaiya is such a graph. We will tell you a source vertex k. Okay and then what to do? You have to leave a signal from k. Means you start from K"
+    },
+    {
+      "start_time": 690.8,
+      "end_time": 725.269,
+      "text": "है। और वो सारे नोड्स तक कितने मिनिमम टाइम में पहुंच जाएगा? मतलब ऐसा कौन सा टाइम होगा कि वो सारे नोड्स तक पहुंच जाए। तो ये ना बोईलर प्लेट द्रा का क्वेश्चन है। किसका क्वेश्चन है? है दिक्श्रा का क्वेश्चन है। क्यों दिक्श्रा का क्वेश्चन है वो आपको बताते हैं। सबसे पहले वेट्स देखिए। क्या वेट्स नेगेटिव है? नहीं। इसका जब आप कंस्ट्रेंट देखेंगे तो होगा कि नहीं भैया सारा वेट पॉजिटिव है। क्योंकि यहां पे वेट का मतलब क्या है? ये जो टाइम्स है ना ये है कि u से v जाने में कितना टाइम लगता है। तो ऑब्वियस सी बात है कि टाइम कभी नेगेटिव नहीं होता है। तो सारा वेट पॉजिटिव है। वेरी गुड। पहला हो गया। क्या आपको एक सिंगल सोर्स दिया हुआ है? हां,",
+      "source": "caption",
+      "english_text": "Is. And in what minimum time will it reach all the nodes? Meaning, what will be the time that it will take to reach all the nodes. So this is not a question of boiler plate draw. Whose question is it? This is a question of initiation. He tells you why there is a question of Dikshra. First look at the weights. Is vets negative? No. When you see its constraint, it will be like no brother, all the weight is positive. Because what does pay weight mean here? These times are how much time it takes to go from u to v. So it is obvious that time is never negative. So all weight is positive. very good. The first one is done. Are you given a single source? yes,"
+    },
+    {
+      "start_time": 725.279,
+      "end_time": 759.269,
+      "text": "हमको एक सिंगल सोर्स दिया हुआ है। क्या दिया हुआ है? K दिया हुआ है। वेरी गुड। क्या आपको उसको सारे नोट्स तक पहुंचाना है? क्या आपको उसको सारे नोट्स तक पहुंचाना है? बिल्कुल पहुंचाना है। बिल्कुल पहुंचाना है। और उसमें से हमको टाइम बताना है कि भैया सारे नोट्स तक पहुंचने में कितना टाइम लगेगा वो आपको रिटर्न करना है। तो इसीलिए ये क्वेश्चन किसका क्वेश्चन है? दिक्श्रा का क्वेश्चन है। सेम टू सेम जो आप कल कोड लिखे थे। सेम टू सेम जब आप कल कोड लिखे थे। फॉर एग्जांपल अगर आपको एक ऐसा ग्राफ दे रहा है टू। ठीक है? टू से वन जाना है और टू से थ्री भी जाता है। थ्री से टू से थ्री जाता",
+      "source": "caption",
+      "english_text": "We have been given a single source. What is given? K is given. very good. Do you have to get him to all the notes? Do you have to get him to all the notes? Absolutely have to deliver. Absolutely have to deliver. And out of that, we have to tell you the time that it will take to reach all the notes and return it to you. So, whose question is this question? There is a question of initiation. Same as the code you wrote yesterday. Same as when you wrote the code yesterday. For example, if we are giving you such a graph. Ok? Two goes to one and two goes to three too. three goes from two to three"
+    },
+    {
+      "start_time": 759.279,
+      "end_time": 793.829,
+      "text": "है और थ्री से फोर जाता है। ठीक है? आपको सोर्स क्या दिया हुआ है? आपको सोर्स दिया हुआ है टू। मतलब आप टू से स्टार्ट कर रहे हैं। क्या करेंगे? देखिए और हम सबका वेट लिख देते हैं। इसका वन है। इसका वन है। इसका वन है। देखिए सबसे पहले आप जब टू से स्टार्ट करेंगे ना तो वन तक जाने में कितना टाइम लगेगा? 1 यूनिट। थ्री तक जाने में 1 यूनिट। थ्री से फोर जाने में 2 यूनिट। 2 यूनिट। इसका जब आप फाइनल आपको जब दिक्कत्रा एरे बना के देगा, दिक्रा आपको जब एरे बना के देगा तो वो कुछ-कुछ ऐसा दिखेगा। देखिए अ इसको हां एक बात और सारे वर्टेक्स को सारे वर्टेक्स को ग्राफ बनाने",
+      "source": "caption",
+      "english_text": "Is and goes from three to four. Ok? What is the source given to you? The source has been given to you. Meaning you are starting from two. What to do? Look and we will write down everyone's weight. It has a forest. It has a forest. It has a forest. Look, first of all, if you start from two, how much time will it take to reach one? 1 unit. 1 unit to go to three. 2 units in going from three to four. 2 units. When you finalize it, when Diktra will give you the array, when Diktra will give you the array, it will look something like this. Look at this, yes one thing and make all the vertexes graph all the vertexes."
+    },
+    {
+      "start_time": 793.839,
+      "end_time": 827.43,
+      "text": "के दौरान उसमें माइनस माइनस कर दीजिएगा। क्यों? उसको हम लोग जीरो बेस्ड में कन्वर्ट कर रहे हैं। और आपका जो सोर्स वर्टेक्स है जो कि k है उसमें भी आपको k माइनस माइनस कर देना चाहिए। क्यों हम बोल रहे हैं? क्योंकि यहां पे वन बेस्ड है। हमको मालूम नहीं है इसको क्यों करता है। लेकिन हम लोग जनरली सीखे किस पे हैं? ज़ीरो बेस पे। आपको सबको किस पे कन्वर्ट कर देना है? ज़ीरो बेस पे कन्वर्ट कर देना है। तो अगर हम सबको ज़ीरो में कन्वर्ट कर दे ना तो देखिए कुछ ऐसा दिखेगा। ये कुछ-कुछ ऐसा दिखेगा कि 0 1 2 और थ्री। अब आपका सोर्स दिया हुआ क्या था? टू। लेकिन हम इसको क्या बोल रहे हैं? एक कम कर दीजिए। सोर्स वन",
+      "source": "caption",
+      "english_text": "During this, you will make a minus in it. Why? We are converting it into zero based. And your source vertex which is k, you should also make k minus minus. Why are we speaking? Because it is pay based here. We don't know why he does this. But what are we learning in general? On zero base. What do you have to convert everyone to? Have to convert to zero base. So if we convert all of them to zero, it will look something like this. It will look something like this: 0 1 2 and three. Now what was your source given? To. But what are we calling it? Make one less. source one"
+    },
+    {
+      "start_time": 827.44,
+      "end_time": 861.99,
+      "text": "पकड़ लीजिए। तो सेम सेम ग्राफ है। जस्ट आप वन बेस को ज़ीरो बेस कन्वर्ट कर दीजिए। जब आप इसका दिक्रा आपको ये एरे बना के देगा। जब आप इसमें पूरा दिक्कत लगाएंगे, एडजसेंसी लिस्ट बनाएंगे, हिप करेंगे, कुछ भी करेंगे तो आपको ये ग्राफ मिलेगा। देखिए 0, 1 2 और थ्री। 0, 1 2 एंड थ्री। ठीक है? जीरो वन से वन जाने के लिए ज़ीरो, ज़ीरो तक जाने के लिए वन, इस तक जाने के लिए वन और इस तक जाने के लिए टू। इतनी देर में आपका दिक्करा आपको बना के देगा। इससे शॉर्टेस्ट नहीं पॉसिबल है। अब देखिए आपसे क्वेश्चन क्या पूछा हुआ है? सारे नोट्स तक पहुंचने में कितना मिनिमम टाइम लगेगा? तो",
+      "source": "caption",
+      "english_text": "Grab it. So there is the same graph. Just convert one base to zero base. When you see it, it will create this array for you. When you put all the effort into it, make adjacency list, do hip, do anything, you will get this graph. See 0, 1, 2 and three. 0, 1 2 and three. Ok? Zero to go from zero to one, one to go to zero, one to go to this and two to go to this. In this time your dikkara will be made and given to you. It is not shortest but possible. Now see what question has been asked to you? What is the minimum time it will take to access all the notes? so"
+    },
+    {
+      "start_time": 862.0,
+      "end_time": 894.71,
+      "text": "देखिए इसका अगर आप मैक्सिमम निकाल लें इस एरे का आपका अगर मैक्सिमम निकाल लें क्या आया मैक्सिमम टू आया मतलब कि 2 सेकंड में ना सब तक पहुंच जाएगा वन में तो 0 सेकंड में पहुंच जाएगा 0 1 सेकंड में पहुंच जाएगा टू 1 सेकंड में पहुंच जाएगा थ्री पहुंचने में टू लग रहा है मतलब मैक्सिमम टाइम कितना लग रहा है टू लग रहा है तो 2 सेकंड में क्या आपका सिग्नल सब तक पहुंच जाएगा यस सब तक पहुंच जाएगा और आप कैसे श्योर है कि ये जो दो है वो मिनिमम है क्योंकि हम लोग इसमें दिक्क लगाए हैं अगर ये दो मिनिमम नहीं होता तो दिक्स्ट्रा आपको निकाल के दे देता कुछ और मिनिमम।",
+      "source": "caption",
+      "english_text": "Look, if you find out the maximum of this array, if you find out the maximum of this array, what is the maximum of two, means that no, it will reach everyone in 2 seconds. If one, it will reach everyone in 0, then 0 will reach in 1 second. Two is the minimum because we have made problems in it. If these two were not the minimum then Dijkstra would have given you some more minimum."
+    },
+    {
+      "start_time": 894.72,
+      "end_time": 927.75,
+      "text": "इसका मतलब ही यही है कि भैया वर्टेक्स नंबर थ्री तक पहुंचने में ना मिनिमम अमाउंट ऑफ़ टाइम दो लगेगा ही लगेगा। तो आप क्या करेंगे? इस एरे का मैक्सिमम निकाल देंगे। मैक्सिमम से आपको क्या पता चलेगा कि सब तक पहुंचने में कितना टाइम लगेगा? आपको पता चलेगा कि भैया दो लगेगा। क्या रिटर्न होगा? दो को रिटर्न कर दीजिए। दो को सिंपल से रिटर्न कर दीजिए। सबसे पहली बात ये हो गई। तो आपको समझ में आया इसमें क्या-क्या वो है? है थोड़ा-थोड़ा चेंज है। सबसे पहले तो ये वन बेस्ड दिया हुआ है। वन बेस का मतलब क्या करना है कि जब आप एडजेसेंसी लिस्ट बनाएंगे जब आप एडजेसेंसी लिस्ट बनाएंगे तो मान लीजिए आप यह करते थे",
+      "source": "caption",
+      "english_text": "This only means that it will take at least two minimum amount of time to reach vertex number three. So what will you do? Will remove the maximum of this array. How will you know from the maximum how much time it will take to reach everyone? You will know that it will take bhaiya two. What will be the returns? Return two. Return two with simple. The first thing that happened was this. So did you understand what is there in it? There is a slight change. First of all, it is given forest based. What is the meaning of one base that when you make the adjacency list, when you make the adjacency list, suppose you used to do this"
+    },
+    {
+      "start_time": 927.76,
+      "end_time": 961.91,
+      "text": "ना कि इंट s = ये इंट d = ये इंट w = फलाना आप क्या करते थे एरे ऑफ़ s डॉट पुश बैक क्या पुश करते थे d और w ऐसे बनता था ना माइनस कर दीजिए सब में s - 1 में पुश करिए d - 1 को तो हो जाएगा ज़ीरो बेस सिंपल ज़ीरो बेस्ड ये हो गया समझ समझ में आई बात? बाकी सब सेम है। आप इस पे दिक्स्ट्रा रन कीजिए। आपको ये फाइनल एरे मिलेगा। जैसे हम लोगों को कल एरे मिला था। कल आपको पूरा एरे रिटर्न करना था। आपको पूरा एरे रिटर्न नहीं करना है। आपको क्या रिटर्न करना है कि इसका मैक्सिमम टाइम क्या है? इसका",
+      "source": "caption",
+      "english_text": "Not that int s = this int d = this int w = so and so What did you do array of s dot push back What did you push d and w were formed like this Na minus all the s - 1 Push in d - 1 then it will become zero base simple zero based That's it. Do you understand? Everything else is the same. You run Dijkstra on it. You will get this final array. Like we got the array yesterday. Yesterday you had to return the entire array. You don't have to return the entire array. What is the maximum time for what you have to return? its"
+    },
+    {
+      "start_time": 961.92,
+      "end_time": 996.23,
+      "text": "मैक्सिमम टाइम बताएगा कि चलो इतने टाइम में ना सब तक पहुंच जाएगा। और मान लीजिए कोई ऐसा नोड है जहां तक आप पहुंच ही नहीं सकते हैं। मान लीजिए कोई ऐसा नोड है जो ग्राफ से कनेक्टेड ही नहीं है। उसका ना उसका डिस्टेंस क्या रह जाएगा? आई एन टी मैक्स रह जाएगा। मान लीजिए कोई ऐसा नोड है जो कनेक्टेड ही नहीं है ग्राफ आप उसप पहुंच ही नहीं सकते हैं कुछ करके तो वो आईएटी मैक्स हो जाएगा। अगर आपको कोई आईएटी मैक्स मिल जाता है ना तो आपको -1 रिटर्न करना है। -1 का क्या मतलब है कि सब तक पहुंचना पॉसिबल नहीं है। पहुंच सकते हैं लेकिन सारे नोट्स तक पहुंचना पॉसिबल ही नहीं है। आपको अगर आईएटी मैक्स ही पे छोड़ देता है कुछ मतलब कि वहां तक पहुंचना",
+      "source": "caption",
+      "english_text": "Maximum time will tell whether we will reach everyone in this time. And suppose there is a node that you cannot reach. Suppose there is a node which is not connected to the graph. What will be the distance between him and her? INT will remain max. Suppose there is a node in the graph which is not connected, you cannot reach it, if you do something then it will become IAT max. If you find any iat max then you have to return -1. What -1 means is that it is not possible to reach everyone. Can be accessed but it is not possible to access all the notes. If IAT leaves you at Max, there is no point in reaching there."
+    },
+    {
+      "start_time": 996.24,
+      "end_time": 1029.829,
+      "text": "पॉसिबल ही नहीं है। वहां तक पहुंचना बिल्कुल पॉसिबल नहीं है। फॉर एग्जांपल अगर आपको ऐसा ग्राफ मिल जाता ये ज़ीरो है। ये वन जा सकते हैं और ये टू है। ठीक है? ऐसा ग्राफ मिल जाता। ध्यान दीजिएगा। ज़ीरो से टू एज ही नहीं है। अब आपको बोलेगा इसका वेट टू है। आपका सोर्स इज़ इक्वल टू 0 है। तो देखिए ज़ीरो तक आप 0 सेकंड में पहुंच सकते हैं। वन तक आप 2 सेकंड में पहुंच सकते हैं। लेकिन टू तक कैसे पहुंचेंगे? टू तक जाने का रास्ता ही नहीं है। ज़ीरो से। ज़ीरो से आप कुछ भी कर लीजिए। टू तक पहुंचने का रास्ता ही नहीं है। तो टू क्या रह जाएगा आपका? आई टी मैक्स। आई टी मैक्स मतलब जो हम लोग इंफिनिटी मार्क करते हैं ना शुरू में यही रह जाएगा। अगर आपको आईएT",
+      "source": "caption",
+      "english_text": "Just not possible. It is not at all possible to reach there. For example, if you get a graph like this, it is zero. These can go one and this is two. Ok? Such a graph would have been obtained. Please pay attention. There is no zero to two edge. Now he will tell you that his wait is two. Your source is equal to 0. So see, you can reach zero in 0 seconds. You can reach the forest in 2 seconds. But how to reach 2? There is no way to reach 2. From zero. You can do anything with zero. There is no way to reach 2. So what will you be left with? IT Max. IT Max means that the infinity mark that we mark will remain the same initially. If you have IAT"
+    },
+    {
+      "start_time": 1029.839,
+      "end_time": 1063.27,
+      "text": "मैक्स मिलता है तो आपको -1 रिटर्न कर देना है। सिंपल सा ये है इसका कोड सेम लाइक यस्टरडे कोड है। हम इसका कोड दोबारा नहीं लिखेंगे। कल जो कोड लिखे थे उसमें थोड़ा-थोड़ा थोड़ा-थोड़ा चेंज में नहीं करना है। सबसे पहला चेंज तो आपको ये करना है ये वाला वन बेस में कन्वर्ट करना है। आपको जो भी सोर्स है उसको माइनस माइनस करना है और लास्ट में जब आपका एरे बन जाए आपको इस एरे का मैक्सिमम निकाल के रिटर्न कर देना है। लेकिन अगर वो अगर वो मैक्सिमम आई एनt मैक्स आ रहा है तो आपको -1 रिटर्न करना है। बस ये क्वेश्चन है। कल का कोड को एज़ इट इज़ उठाइए। कॉपी कर डालिए। पूरा आप सेट हो जाएंगे। अगला क्वेश्चन इंटरेस्टिंग",
+      "source": "caption",
+      "english_text": "If you get max then you have to return -1. It's simple, its code is the same as yesterday's code. We will not rewrite its code. There is no need to make small changes in the code that was written yesterday. The first change you have to make is to convert it into one base. Whatever source you have, you have to minus it and finally when your array is created, you have to find the maximum of this array and return it. But if that maximum is coming then you have to return -1. This is just a question. Pick up The Code of Tomorrow as it is. Copy it. You will be completely set. Next question interesting"
+    },
+    {
+      "start_time": 1063.28,
+      "end_time": 1091.99,
+      "text": "है। अगले क्वेश्चन की तरफ बढ़िए। चलिए। चलिए भाई अब आते हैं सेकंड क्वेश्चन पे। ये क्वेश्चन सच में इंटरेस्टिंग है। सच में इंटरेस्टिंग भी है, सच में हार्ड भी है थोड़ा। ठीक है? तो ये क्वेश्चन बहुत ध्यान से सुनिएगा। पेशेंस रख के सुनिएगा। अंत तक सुनिएगा। जरूरी है कि आपको समझ में आए। अ ये क्वेश्चन आने का चांस भी बहुत है इंटरव्यू में काहे कि बहुत अच्छा बहुत ब्यूटीफुल क्वेश्चन है। ठीक है? चलिए। आपको एक मैट्रिक्स दिया हुआ है। इस बार। आपको कोई ग्राफ नहीं दिया हुआ है। मतलब आपको कोई नोड या एज वेज़ वाला नहीं दिया हुआ है। आपको एक सिंपल टू डी क्या दिया हुआ है? मैट्रिक्स दिया हुआ है। ठीक है?",
+      "source": "caption",
+      "english_text": "Is. Proceed to the next question. Let go. Come on brother, now let's come to the second question. This question is really interesting. Really interesting, but also a little hard. Ok? So listen to this question very carefully. Listen with patience. Listen till the end. It is important that you understand. There are many chances of getting this question in the interview, it is a very good and beautiful question. Ok? Let go. You are given a matrix. This time. You have not been given any graph. Meaning you are not given any node or edge path. What is a simple 2D given to you? Matrix is ​​given. Ok?"
+    },
+    {
+      "start_time": 1092.0,
+      "end_time": 1125.99,
+      "text": "उससे डरना नहीं है। हम लोग ग्राफ में पहले भी मैट्रिक्स का क्वेश्चन कर चुके हैं। तो आपको एक ऐसा करके मैट्रिक्स दिया हुआ है। ठीक है? एक मैट्रिक्स बना लेते हैं। कितना है? मान लीजिए 3/3 का एक मैट्रिक्स दिया है। ठीक है? तो मैट्रिक्स और ग्राफ सेम ही होता है। बहुत चीजों में तो मैट्रिक्स आसान भी होता है। तो मैट्रिक्स से डरा मत कीजिए। आप खुशी मनाइए कि मैट्रिक्स मिल गया। इसमें आपको कम से कम वो सब लिस्ट फिस तो नहीं बनाना पड़ेगा खुद से। सब दिया हुआ है। ठीक है? 0 1 2 और 0 1 2 इसका नंबर लिख देते हैं। 1 2 3 8 2 5 3 5 बन गया। जीरो में आपको ये",
+      "source": "caption",
+      "english_text": "Don't be afraid of him. We have already asked the question of matrix in graph. So you are given a matrix like this. Ok? Let's make a matrix. How much is it? Suppose a matrix of size 3/3 is given. Ok? So matrix and graph are same. In many things the matrix is ​​also easier. So don't be intimidated by the matrix. You should be happy that you have got the matrix. In this at least you will not have to make all those list fees yourself. Everything is given. Ok? Let's write its number as 0 1 2 and 0 1 2. 1 2 3 8 2 5 3 5 became. You get this in zero"
+    },
+    {
+      "start_time": 1126.0,
+      "end_time": 1156.549,
+      "text": "मैट्रिक्स दिया हुआ है। ठीक है? करना क्या है? और बताया क्या हुआ है? अच्छा आपको बोला हुआ है ना आप टॉप लेफ्ट कॉर्नर में खड़े हैं। टॉप लेफ्ट कॉर्नर का क्या मतलब होता है? 0 पे। 0 पे आप अभी यहां पे खड़े हैं। आप अभी इस वन पे खड़े हैं। ठीक है? आपका गोल आपका गोल कहां जाना है? बॉटम राइट कॉर्नर में। बॉटम राइट कॉर्नर मतलब ये वाला एकदम राइट में। मतलब एकदम ऊपर में खड़े हैं। आपको डायगोनल एकदम चल चल के उधर जाना है। ठीक बात है। आप शुरू में कहां खड़े हैं? 0 पे। जाना कहां है? टू टू पे।",
+      "source": "caption",
+      "english_text": "Matrix is given. Ok? What is to be done? And tell me what happened? Well, you have been told that you are standing in the top left corner. What does top left corner mean? At 0. At 0 you are standing here right now. You are standing on this forest right now. Ok? Your goal is your goal where to go? In the bottom right corner. Bottom right corner means this one is on the far right. Meaning, standing at the very top. You have to go there by walking diagonally. That's right. Where do you initially stand? At 0. Where to go? Two to two."
+    },
+    {
+      "start_time": 1156.559,
+      "end_time": 1189.59,
+      "text": "मतलब बॉटम राइट कॉर्नर पे। ठीक है? आप कैसे चल सकते हैं? ग्राफ के क्वेश्चन में हमेशा अपने मूवमेंट का रूल हमेशा देख लिया करिए। मतलब मूवमेंट का रूल क्या होता है? नंबर ऑफ आइलैंड में क्या है? हम लोग देखे थे कि आप ऊपर नीचे इधर-उधर चल सकते हैं। कभी-कभी आपको क्या बोलेगा ना कि आप सिर्फ राइट या नीचे ही चल सकते हैं। तो इमेजिन मत कीजिएगा कि हम चल सकते हैं कि नहीं।\" कभी-कभी आपको बोलेगा कि आप डायगोनल भी चल सकते हैं। मतलब आप आठों दिशाओं में चल सकते हैं। यहां आपको बोला है कि आप चार डायरेक्शन में चल सकते हैं। कौन सा चार डायरेक्शन? आप ऊपर जा सकते हैं। आप राइट जा सकते हैं। आप नीचे जा सकते हैं और आप लेफ्ट जा सकते हैं। तो ये सब करना हम लोग ऑलरेडी बहुत अच्छे से सीख चुके हैं। कोई",
+      "source": "caption",
+      "english_text": "Meaning on the bottom right corner. Ok? How can you walk? Always check the rule of your movement in graph questions. Meaning, what is the rule of movement? What's in Number Island? We had seen that you could walk up and down here and there. Sometimes what will tell you is that you can only move right or down. So don't imagine whether we can walk or not.\" Sometimes he will tell you that you can also walk diagonally. Meaning, you can walk in all eight directions. Here you are told that you can walk in four directions. Which four directions? You can go up. You can go right. You can go down and you can go left. So we have already learned to do all this very well."
+    },
+    {
+      "start_time": 1189.6,
+      "end_time": 1223.83,
+      "text": "नई बात नहीं है। ठीक है? आप यहां पे खड़े हैं। यहां पे जाना है। आप चार दिशाओं में चल सकते हैं। ठीक है? यहां तक तो सब समझ में आ रहा है। अच्छा और अब देखिए अब आपको बोला है कि आप जो भी रूट तय करेंगे ना फॉर एग्जांपल मान लीजिए कि आप यहां पे खड़े थे। आप ये वाला रूट फॉलो करते हैं। ये भी एक रूट है। मतलब यहां से आप यहां गए, राइट गए, राइट गए, नीचे उतरे, नीचे उतरे। ऐसे करके आ गए। इस रूट का पाथ क्या होगा? इस रूट का पाथ का मतलब इस रूट का आपको इस रूट में कितना डिस्टेंस तय करना पड़ेगा? आपको इस रूट में कितना डिस्टेंस तय करना पड़ेगा? कुछ डिस्टेंस तो तय करना पड़ेगा ना। मतलब आप यहां से यहां जा रहे हैं यहां",
+      "source": "caption",
+      "english_text": "It is not a new thing. ok? You are standing here. Have to go here. You can walk in four directions. ok? Till now everything is understandable. Okay, and now look, now I have told you that whatever route you decide, for example, assume that you were standing here. You follow this route. This is also a route. Meaning from here you go here, go right, go right, go down, go down. Came here after doing this. What will be the path of this route? Path of this route means how much distance will you have to cover in this route? How much distance will you have to cover in this route? Some distance will have to be covered. meaning you are going from here to here"
+    },
+    {
+      "start_time": 1223.84,
+      "end_time": 1253.11,
+      "text": "से यहां, यहां से यहां, यहां से यहां। कुछ ना कुछ डिस्टेंस तो तय करना ही पड़ेगा। ठीक है? मान लेते हैं कि वो d डिस्टेंस है। कुछ भी हो सकता है। आप चाहें तो कोई और रूट भी ले सकते थे। आप ये ये कर सकते थे। ये भी एक रूट है। इसमें मान लीजिए कोई और डिस्टेंस तय करना पड़ता। डिस्टेंस क्या है वो सब बाद में। लेकिन कुछ ना कुछ तो करना पड़ेगा। अच्छा आप एक और रूट ले सकते थे। आप ये भी कर सकते थे। ये ये बहुत सारे रूट है ना मतलब बहुत सारे रूट हैं। आगे पीछे अगर चलना ही है आप और भी अगर कुछ ऐसे जा सकते थे। ये देखिए। नहीं ऐसा नहीं।",
+      "source": "caption",
+      "english_text": "From here, from here to here, from here to here. Some distance will have to be covered. ok? Let us assume that it is d distance. Anything can happen. If you wanted, you could have taken some other route also. You could have done this. This is also a route. Suppose some other distance had to be covered in this. What is distance, all that later. But something has to be done. Well you could have taken another route. You could do this too. These are these many routes, meaning there are many routes. If you have to go back and forth, you could have gone more like this. Look at this. No, not like that."
+    },
+    {
+      "start_time": 1253.12,
+      "end_time": 1286.07,
+      "text": "यहां गए, यहां गए, यहां आ गए, फिर यहां आ गए, फिर यहां आ गए, फिर यहां मतलब कुछ भी कर सकते थे। कहने का मतलब ये सबका कुछ ना कुछ डिस्टेंस आएगा। कुछ ना कुछ डिस्टेंस या कुछ ना कुछ दूरी या कुछ ना कुछ उसका वेट आपको तय करना पड़ेगा। इन सब में से इन सब में से कौन सा मिनिमम वेट ऑप्शन है आपके पास? इन सारे रूट्स को एक्सप्लोर करने के बाद कौन सा मिनिमम वेट ऑप्शन है आपके पास? मिनिमम वेट ऑप्शन है आपको। ये मिनिमम वेट रिटर्न करना है। क्वेश्चन समझ में आया कि नहीं? आपको एक मैट्रिक्स दिया हुआ है। हर मैट्रिक्स में कुछ ना कुछ नंबर",
+      "source": "caption",
+      "english_text": "Went here, went here, came here, came here again, came here again, then here meaning could do anything. What I mean to say is that there will be some distance from all of them. You will have to decide some distance or some distance or some weight. Which of these minimum weight options do you have? After exploring all these routes, which minimum weight option do you have? You have minimum weight option. This is the minimum weight to return. Did you understand the question or not? You are given a matrix. every matrix has some number"
+    },
+    {
+      "start_time": 1286.08,
+      "end_time": 1311.59,
+      "text": "लिखा हुआ है। आप टॉप लेफ्ट कॉर्नर में है। आपका गोल्ड बॉटम राइट कॉर्नर में जाना है। आप ऊपर नीचे दाएं बाएं चल सकते हैं। आपको कोई भी रूट लीजिए। लेकिन सारे रूट्स का आपको जो भी मिनिमम वेट पड़े ना जो भी आपको मिनिमम वेट पड़े जिसमें वो आपको रिटर्न करना है। अब ये वेट कैसे निकलता है? यही इस क्वेश्चन को बहुत इंटरेस्टिंग बनाता है। वो समझते हैं आगे चल के। चलिए। तो देखिए जब हम बोलते हैं ना कि इसका वेट निकालने वाला जो मैकेनिज्म है बड़ा इंटरेस्टिंग है। उसका मतलब क्या होता है?",
+      "source": "caption",
+      "english_text": "It is written. You are in the top left corner. Your gold should go in the bottom right corner. You can move up, down, right or left. Take any route you want. But whatever is the minimum weight for all the routes, whatever is the minimum weight for which you have to return. Now how is this weight calculated? This is what makes this question very interesting. They will understand later. Let's go. So see when we say that the mechanism which removes its weight is very interesting. What does that mean?"
+    },
+    {
+      "start_time": 1311.6,
+      "end_time": 1345.99,
+      "text": "देखिए आपको हम एक रूट पे समझाते हैं। किसी एक रूट पे मान लीजिए ये वाला रूट है। ठीक है? पहले राइट गए, राइट गए, नीचे आए, नीचे आए। ये वाला रूट है। हम इसको मार्क कर देते हैं किसी तरीके से। पहले हम लोग यहां जाएंगे। फिर हम लोग एक और राइट जाएंगे। फिर हम लोग एक और राइट जाएंगे। और फिर हम लोग एक और राइट जाएंगे। ठीक है? ये वाला रूट है। इस रूट में ना आप कहां से कहां जा रहे हैं? देखिए आप वन से टू पे जाए। फिर आप टू पे गए। फिर आप टू पे आए। फिर आप फाइव पे आए। ठीक है? कुछ लोगों को लगेगा कि इसका जो वेट है वो कुछ सम हो जाएगा सबका या ऐसा नहीं है। ठीक है? आप ना क्या",
+      "source": "caption",
+      "english_text": "See, let us explain one route to you. On any one route, let's say this is this route. ok? First went right, went right, came down, came down. This one is the route. We mark it in some way. First we will go here. Then we will go another right. Then we will go another right. And then we will go another right. ok? This one is the route. Where are you going from on this route? See, you go from one to two. Then you went to two. Then you came to two. Then you came on five. ok? Some people will think that its weight will be equal for everyone or it is not so. ok? what about you"
+    },
+    {
+      "start_time": 1346.0,
+      "end_time": 1379.27,
+      "text": "कीजिए? हर एक स्टेप पे हर एक स्टेप पे मतलब हर एक जंप पे ना एब्सोल्यूट डिफरेंस निकालिए। क्या निकालिए? एब्सोल्यूट डिफरेंस निकालिए नंबर्स का। एब्सोल्यूट डिफरेंस का क्या मतलब होता है? उनके बीच का दूरी नेगेटिव पॉजिटिव नहीं हमेशा पॉजिटिव होगा। उनके बीच में कितना दूरी है? इन दोनों के बीच में। वन और टू के बीच में कितना दूरी है? वन का दूरी है। -1 का दूरी नहीं है। वन का दूरी है। ठीक है? तो आपका एक दूरी हो गया वन। एक डिस्टेंस वन हो गया। ठीक है? सेम काम कीजिए। टू से टू के बीच में कितना दूरी है? ज़ीरो। एक हो गया ज़ीरो। टू से टू के बीच में कितना दूरी है? ज़ीरो। टू से फाइव के बीच में कितना",
+      "source": "caption",
+      "english_text": "do? Calculate the absolute difference on every step, that is, on every jump. What to take out? Find the absolute difference of the numbers. What does absolute difference mean? The distance between them will always be positive, not negative. What is the distance between them? In between these two. What is the distance between one and two? The forest is in the distance. There is no distance of -1. The forest is in the distance. ok? So your forest has become a distance away. One distance became one. ok? Do the same work. What is the distance between two and two? Zero. One became zero. What is the distance between two and two? Zero. How much between two and five"
+    },
+    {
+      "start_time": 1379.28,
+      "end_time": 1413.99,
+      "text": "दूरी है? तीन। ठीक है? तो अगर आप पांच नोट पे जाते हैं तो आपको चार डिस्टेंस मिलेगा। कौन-कौन सा? 1, 2, 3 और चार। इन सब में से क्या मैक्सिमम है? थ्री मैक्सिमम है। इस पूरे रूट का वेट क्या हो जाएगा? थ्री हो जाएगा। ध्यान से देखिएगा। सम डिफरेंस नहीं है। कुछ सम नहीं करना है आपको उस रूट में ना। किसी भी किसी में भी जब आप हॉप करते हैं मतलब आप एक सर्कल से दूसरे सर्कल या एक सेल से दूसरे सेल जाते हैं। एब्सोल्यूट डिफरेंस निकालिए दोनों नंबर्स का और पूरे रूट का जो भी मैक्सिमम एब्सोल्यूट डिफरेंस होगा ना वो आपके उस रूट का वेट हो जाएगा।",
+      "source": "caption",
+      "english_text": "is the distance? Three. ok? So if you go to five notes you will get four distances. Which one? 1, 2, 3 and four. Which of these is maximum? Three is the maximum. What will be the weight of this entire route? It will be three. Will look carefully. There is no even difference. You don't have to do anything in that route. In any case, when you hop, you move from one circle to another or from one cell to another. Find the absolute difference of both the numbers and whatever is the maximum absolute difference of the entire route, that will be the weight of your route."
+    },
+    {
+      "start_time": 1414.0,
+      "end_time": 1443.99,
+      "text": "तो हम लोग को एक चीज़ पता चला कि अगर आप ये वाला रूट फॉलो करते हैं तो आपका कितना वेट आएगा? तीन। तीन अच्छा लग रहा है लेकिन क्या हम इसको कम कर सकते हैं क्या? देखते हैं कम करके। एक और वेट कंसीडर एक और रूट कंसीडर करते हैं। चलिए इसको मिटा देते हैं। यह रूट तो हो गया। ठीक है? ये रूट हम आपको समझाने के लिए बनाए थे। ठीक है? अच्छा लग रहा है। लेकिन ठीक है और देखते हैं कुछ। ये कर दिए। ये कर दिए। ये कर दिए। ये कर दिए। इसको टू लिख दीजिए। ठीक है? एक और रूट देखते हैं। चलिए ये वाला रूट देखिए। ये वाला रूट क्या है? पहले पूरा नीचे आइए। पूरा राइट जाइए। ठीक है?",
+      "source": "caption",
+      "english_text": "So we came to know one thing that if you follow this route then how much weight will you gain? Three. Three sounds good but can we reduce it? Let's see by reducing it. Another wait consider another route consider. Let's erase this. This route is done. ok? We made these routes to make you understand. ok? Feeling good. But okay let's see something. Did this. Did this. Did this. Did this. Write this as two. ok? Let's look at another route. Let's see this route. What is this route? Come all the way down first. Go full right. ok?"
+    },
+    {
+      "start_time": 1444.0,
+      "end_time": 1473.99,
+      "text": "तो आप क्या-क्या किए? देखिए। आप वन से यह वाला रूट हम एक बार बना देते हैं। आप पहले नीचे आएंगे। फिर नीचे आएंगे। फिर इधर जाएंगे, फिर इधर जाएंगे। तो आप क्या-क्या कर रहे हैं देखिएगा। आप क्या-क्या कर रहे हैं देखिएगा। आप देखिए वन से थ्री गए, फिर आप फाइव गए, फिर आप थ्री गए और लास्ट में पांच पहुंच गए इस रूट से। इस रूट से यही हुआ ना? आइए डिफरेंस निकालते हैं। वन से तीन के बीच में कितना एब्सोल्यूट डिफरेंस है? दो का। तीन से पांच के बीच में दो का।",
+      "source": "caption",
+      "english_text": "So what did you do? Look. You and I will make this route from the forest once. You will come down first. Will come down again. Will go here again, will go here again. So see what you are doing. Let's see what you are doing. You see, from one went to three, then you went to five, then you went to three and finally reached five through this route. This is what happened with this route, isn't it? Let's find the difference. What is the absolute difference between one and three? Of two. Of two between three and five."
+    },
+    {
+      "start_time": 1474.0,
+      "end_time": 1506.31,
+      "text": "पांच से तीन के बीच में दो का। तीन से पांच के बीच में दो का। इसका मैक्सिमम क्या आया? दो। तो इस रूट का वेट कितना होगा? टू। क्या ये आपके थ्री से कम है? हां, थ्री से कम है। आप और भी रूट ट्राई कर सकते हैं। लेकिन इस क्वेश्चन का आंसर कितना होने वाला है? टू। आपको कभी भी किसी भी रूट को फॉलो करिए। टू से कम आंसर नहीं मिल सकता है। टू से कम आंसर नहीं मिल सकता है। ये इसका वेट का निकालने का तरीका है। ये इसके वेट का निकालने का क्या है? तरीका है। ठीक बात है? अब इसमें दिशरा कैसे लगेगा और क्यों लगेगा? सबसे पहले तो बात",
+      "source": "caption",
+      "english_text": "Of two between five and three. Of two between three and five. What was its maximum? Give. So what will be the weight of this route? To. Is this less than your three? Yes, less than three. You can try other routes also. But what will be the answer to this question? To. You can follow any route anytime. You cannot get an answer less than two. You cannot get an answer less than two. This is the way to calculate its weight. What is this to find out its weight? There is a way. Is that correct? Now how will Dishra be used in this and why? first of all"
+    },
+    {
+      "start_time": 1506.32,
+      "end_time": 1536.789,
+      "text": "है क्यों लगेगा? देखिए अ आपको एब्सोल्यूट डिफरेंस निकालने के लिए बोला है। मतलब कि कुछ भी आप करिए इधर-उधर कुछ भी नेगेटिव नहीं हो सकता है। मतलब कि क्या इस एरे में कुछ भी नेगेटिव आ सकता है? नहीं। एब्सोल्यूट डिफरेंस का मतलब ही होता है हमेशा पॉजिटिव। तो सबसे पहली बात तो ये है कि नेगेटिव चीजों से लेना देना नहीं है। नेगेटिव चीजों से लेना देना नहीं है। अच्छी बात है। क्या आपको एक सोर्स बोला गया है क्या? एक सिंगल सोर्स बिल्कुल बोला गया है। टॉप लेफ्ट वाला बिल्कुल बोला गया है। टॉप लेफ्ट से शुरू करना है। अच्छी बात है। दिक्रा को बस एक चीज़ चाहिए होती है।",
+      "source": "caption",
+      "english_text": "Why would it seem so? Look, A has asked you to find the absolute difference. Meaning that whatever you do, nothing negative can happen here and there. Meaning, can anything negative come in this array? No. Absolute difference always means positive. So the first thing is to have nothing to do with negative things. Nothing to do with negative things. That's a good thing. Have you been called a source? A single source is cited exactly. The one on the top left is exactly as stated. Have to start from top left. That's a good thing. Dikra wants just one thing."
+    },
+    {
+      "start_time": 1536.799,
+      "end_time": 1567.11,
+      "text": "शुरू करना कहां से बता दो। सिंगल सोर्स दिया हुआ है। बिल्कुल दिया हुआ है। और क्या आपको एक पर्टिकुलर जगह पहुंचने के लिए बोला गया है? देखिए या तो आपको हर जगह पहुंचने के लिए बोला जाए या तो एक पर्टिकुलर जगह पहुंचने के लिए बोला जाए। बिल्कुल बोला गया है। आपको बॉटम में पहुंचने के लिए बोला गया है। कहां पे? n - 1 और m - 1 जहां भी ये तीनों दोनों चारों चीजें हो ना यहां पे दिक्शरा लगेगा। यहां पे दिक्शरा लगेगा ही लगेगा। लेकिन दिक्शरा कैसे लगेगा और मतलब क्या करेंगे कि इसमें दिक्शरा लग जाए वो समझते हैं। आगे बढ़िए।",
+      "source": "caption",
+      "english_text": "Tell me where to start. Single source is given. Absolutely a given. And have you been asked to reach a particular place? See, either you are asked to reach everywhere or you are asked to reach a particular place. It has been absolutely said. You have been asked to reach the bottom. Where? Wherever n - 1 and m - 1 are present, there will be dikshara. Dikshara will definitely take place here. लेकिन दिक्शरा कैसे लगेगा और मतलब क्या करेंगे कि इसमें दिक्शरा लग जाए वो समझते हैं। Go ahead."
+    },
+    {
+      "start_time": 1567.12,
+      "end_time": 1601.99,
+      "text": "आइए आपको हम दिखाते हैं कि इसमें दिसरा लगेगा कैसे। देखिए सेम काम कीजिए जो आप ग्राफ में कर रहे थे ना ये जस्ट एक ग्राफ समझिए इसको। सबसे पहले तो कहां से स्टार्ट कर रहे हैं? ज़ीरो ज़ीरो से। तो ज़ीरो ज़ीरो का डिस्टेंस ना ज़ीरो मार्क कर लिए। ज़ीरो ज़ीरो का डिस्टेंस ज़ीरो होगा। ऑब्वियस सी बात है। बाकी सबका इंफिनिटी। बाकी सबका इनफिनिटी ले लीजिए। बाकी सबको देखिए इनफिनिटी मार्क कर देते हैं। बाकी सबका एकदम ये ग्राफ है। एकदम ग्राफ है। ठीक है? थोड़ा सा बस लॉजिक बदल जाएगा। देखिएगा। सबको इनफिनिटी मार्क कर दिए। अब जब आप किसी से किसी तक जा रहे हैं सबसे पहली बात तो जाएंगे कैसे ऊपर नीचे वो x y वाला एरे यूज़ करके मान लीजिए आप यहां पे आ रहे हैं",
+      "source": "caption",
+      "english_text": "आइए आपको हम दिखाते हैं कि इसमें दिसरा लगेगा कैसे। देखिए सेम काम कीजिए जो आप ग्राफ में कर रहे थे ना ये जस्ट एक ग्राफ समझिए इसको। सबसे पहले तो कहां से स्टार्ट कर रहे हैं? ज़ीरो ज़ीरो से। तो ज़ीरो ज़ीरो का डिस्टेंस ना ज़ीरो मार्क कर लिए। ज़ीरो ज़ीरो का डिस्टेंस ज़ीरो होगा। It's an obvious thing. बाकी सबका इंफिनिटी। बाकी सबका इनफिनिटी ले लीजिए। बाकी सबको देखिए इनफिनिटी मार्क कर देते हैं। बाकी सबका एकदम ये ग्राफ है। एकदम ग्राफ है। ok? थोड़ा सा बस लॉजिक बदल जाएगा। Will see. सबको इनफिनिटी मार्क कर दिए। अब जब आप किसी से किसी तक जा रहे हैं सबसे पहली बात तो जाएंगे कैसे ऊपर नीचे वो x y वाला एरे यूज़ करके मान लीजिए आप यहां पे आ रहे हैं"
+    },
+    {
+      "start_time": 1602.0,
+      "end_time": 1630.71,
+      "text": "वन से आप थ्री पे आ रहे हैं। अब आपको थ्री का देखना पड़ेगा कि थ्री तक जाने के लिए कितना लगेगा और क्या लगेगा? देखिए वन जिससे आप आ रहे हैं उसका डिस्टेंस क्या है? उसका डिस्टेंस क्या है? ज़ीरो। वन के ऊपर अभी यहां पे इस वाले वन के ऊपर क्या लिखा हुआ है? डिस्टेंस में ज़ीरो लिखा हुआ है। डिस्टेंस के लिए ना एक अलग मैट्रिक्स बना लेंगे। उसमें क्या लिखा रहेगा? ज़ीरो। वेरी गुड। अब इसका मतलब ना कि देखिए आप वन से शुरुआत किए थे। अभी तक का अभी तक का मैक्सिमम एब्सोल्यूट डिफरेंस कितना है?",
+      "source": "caption",
+      "english_text": "From one you are coming to three. Now you will have to see how much will it take to reach three and what will it take? See, what is the distance of the forest from which you are coming? What is its distance? Zero. What is written on this forest right here on this forest? Zero is written in the distance. We will create a separate matrix for distance. What will be written in it? Zero. very good. Now this does not mean that look, you started from the forest. What is the maximum absolute difference so far?"
+    },
+    {
+      "start_time": 1630.72,
+      "end_time": 1656.549,
+      "text": "जीरो। क्योंकि आप अभी शुरू किए हैं ना हमारा वेट कितना है? पूरे पाथ का पूरे रूट का मैक्सिमम एब्सोल्यूट डिफरेंस। तो अभी तक का मैक्सिमम एब्सोल्यूट डिफरेंस कितना है? ज़ीरो। इसको आप एक तरीके से समझिए कि अभी तक का मैक्सिमम एब्सोल्यूट डिफरेंस मतलब कि ज़ीरो है। ठीक है? और आप कहां से कहां जा रहे हैं? आप वन से थ्री पे जा रहे हैं। इन दोनों का मैक्सिमम डिफरेंस निकाल लीजिए। कितना एब्सोल्यूट डिफरेंस निकालिए।",
+      "source": "caption",
+      "english_text": "Zero. Because you have just started, what is our weight? Maximum absolute difference of the entire path to the entire route. So what is the maximum absolute difference so far? Zero. You should understand this in a way that the maximum absolute difference till now means that it is zero. Ok? And where are you going from? You're going from one to three. Find the maximum difference between these two. Find the absolute difference."
+    },
+    {
+      "start_time": 1656.559,
+      "end_time": 1689.99,
+      "text": "कितना आएगा? थ्री और एक का कितना आता है मैक्सिमम डिफरेंस? थ्री और एक का डिफरेंस आता है टू। अब आपको ये जो डिसाइड करना था ना कि कितना इसमें लगेगा? मैक्सिमम ऑफ़ डिस्टेंस एंड डिफरेंस। मैक्सिमम ऑफ डिस्टेंस एंड डिफरेंस। इसका क्या मतलब है? फिर से सुनिए। आप शुरू किए वन से जीरो जीरो से तो उसका डिस्टेंस आप ऑलरेडी जीरो लिखे हुए थे। ठीक है? तो जब आप इसको हिप से निकाले तो इसका डिस्टेंस आया जीरो। मतलब कि ये जो पाथ आप बना रहे हैं ना कोई भी पाथ हो अभी तक का मैक्सिमम",
+      "source": "caption",
+      "english_text": "How much will it cost? What is the maximum difference between three and one? The difference of three and one comes to two. Now you had to decide how much would it cost? Maximum of distance and difference. Maximum of distance and difference. What does it mean? Listen again. You started from one to zero and its distance was already written as zero. Ok? So when you took it out from the hip, its distance was zero. Meaning that this path you are making, no matter what path it is, is the maximum till now."
+    },
+    {
+      "start_time": 1690.0,
+      "end_time": 1723.99,
+      "text": "एब्सोल्यूट डिफरेंस। अभी तक का मैक्सिमम एब्सोल्यूट डिफरेंस कितना आएगा? ज़ीरो आया था। ठीक है? आप वन से थ्री पे जाना चाह रहे हैं। कितना है दोनों का एब्सोल्यूट डिफरेंस? थ्री और वन का एब्सोल्यूट डिफरेंस कितना है? टू। ये हो गया टू। अब थ्री का थ्री के ऊपर जो ये डिस्टेंस है इसमें आप क्या लिखेंगे? अभी तक का मैक्सिमम वैल्यू जो कि जीरो था और अभी जो तुरंत एब्सोल्यूट डिफरेंस आया है इन दोनों के बीच में जो कि दो है। इन दोनों में से मैक्सिमम कौन सा है भाई? तो मैक्सिमम आपको पता चलेगा कि टू है। आप थ्री के डिस्टेंस",
+      "source": "caption",
+      "english_text": "Absolute difference. What will be the maximum absolute difference so far? Zero had come. Ok? You're trying to go from one to three. What is the absolute difference between the two? What is the absolute difference between three and one? To. This is done. Now, what will you write in this distance between three and three? The maximum value till now which was zero and the immediate absolute difference between these two is two. Which of these two is maximum brother? So the maximum you will find is two. distance of you three"
+    },
+    {
+      "start_time": 1724.0,
+      "end_time": 1749.269,
+      "text": "में क्या चेक करेंगे? क्या ये टू इस इंफिनिटी से लेस है? बिल्कुल लेस है। तो आप यहां पे टू लिख देंगे। आप यहां पे टू लिख देंगे। एक और तरीके से आपको हम समझाने की कोशिश करते हैं। देखिए एक और तरीके से समझाने की कोशिश करते हैं। ठीक है? यहां मालूम है थोड़ा कॉम्प्लेक्स है। थोड़ा कॉम्प्लेक्स है। बने रहिए मेरे साथ। मान लीजिए ये मैट्रिक्स है। मान लीजिए ये मैट्रिक्स है। ये वाला मैट्रिक्स है। यहां पे वन है। यहां पे टू है। यहां पे एट है।",
+      "source": "caption",
+      "english_text": "What will I check? Is this to is less than infinity? Absolutely lace. So you will write pay to here. You will write pay to here. Let us try to explain it to you in another way. Look let's try to explain in another way. Ok? I know there is a bit of a complex here. It's a bit complex. Stay with me. Suppose this is a matrix. Suppose this is a matrix. This one is a matrix. There is a forest here. Pay two here. Here is the pay et."
+    },
+    {
+      "start_time": 1749.279,
+      "end_time": 1779.11,
+      "text": "यहां पे कुछ भी है। यहां पे कुछ भी है फर्क नहीं पड़ता है। हम लोग इस रूट में जाएंगे। हम लोग इस रूट में 1 2 से एट जाएंगे। देखिए क्या होगा? देखिए क्या होगा। सबसे पहले देखिए 0 1 2 0 1 2 आप शुरू कहां से करेंगे? ज़ीरो ज़ीरो से तो इसके ऊपर ज़ीरो लिखा हुआ होगा। बाकी सबके ऊपर लाल-लाल इंफिनिटी लिखा हुआ होगा। तो हम लोग अभी तीन ही पे फोकस कर रहे हैं। इन दोनों को मिटा दीजिए। इन दोनों को मिटा दीजिए। बस तीन पे फोकस करिए। क्या होगा देखिएगा। आप सबसे पहले कहां पे आए? सबसे पहले आप जीरो ज़ीरो से स्टार्ट किए। हिप से निकला 0 सोर्स है आपका हिप से निकला।",
+      "source": "caption",
+      "english_text": "There is anything here. It doesn't matter what happens here. We will go this route. We will go on this route from 1 to 2. See what will happen? See what will happen. First look 0 1 2 0 1 2 Where do you start? From zero zero, zero will be written on it. Everything else will have red Infinity written all over it. So right now we are focusing on only three. Delete both of these. Delete both of these. Just focus on three. Let's see what happens. Where did you come first? First of all you started from zero zero. Hip Se Nchal 0 Source is your Hip Se Nchal."
+    },
+    {
+      "start_time": 1779.12,
+      "end_time": 1813.11,
+      "text": "कितना है इसका डिस्टेंस? कितना है इसका डिस्टेंस? ज़ीरो। इसका डिस्टेंस ज़ीरो है। आप कहां जाना चाह रहे हैं? आप वन से टू जाना चाह रहे हैं। ठीक है? वन से टू तक का डिफरेंस कितना है? एब्सोल्यूट 2 - 1 = 1 अब टू का डिस्टेंस टू का डिस्टेंस कितना आएगा? अभी तक का अभी तक का जो कि वन के ऊपर जो डिस्टेंस लिखा हुआ था जो कि ज़ीरो लिखा हुआ था। अभी तक का मैक्सिमम एब्सोल्यूट डिफरेंस और इन दोनों के बीच का एब्सोल्यूट डिफरेंस दोनों में मैक्सिमम कौन सा है? दोनों में मैक्सिमम कौन सा है? एक मैक्सिमम है। क्या ये एक टू",
+      "source": "caption",
+      "english_text": "What is its distance? What is its distance? Zero. Its distance is zero. Where are you trying to go? You are looking to go from one to two. Ok? What is the difference from one to two? Absolute 2 - 1 = 1 Now what will be the distance of two? Till now, the distance which was written above the forest, which was written as zero. The maximum absolute difference so far and the absolute difference between these two, which is the maximum? Which is the maximum among the two? There is a maximum. is this one two"
+    },
+    {
+      "start_time": 1813.12,
+      "end_time": 1845.269,
+      "text": "के अभी आंसर से कम है? बिल्कुल कम है। टू का आंसर अपडेट हो के क्या बन गया? एक बन गया। टू का आंसर बनके एक बन गया। ये बात समझ में आई? फिर से अभी नहीं समझ में आया? इस बार समझ में आएगा। इमेजिन कीजिए। अब आप टू पे खड़े हैं। अब आप टू को हिप से निकाले। अब आप ज़ीरो और वन। टू को निकालें। कितना है टू का डिस्टेंस लिखा हुआ। टू का डिस्टेंस वन है लिखा हुआ। आप टू से आठ पे जाना चाह रहे हैं। देखिए क्या होगा? टू का डिस्टेंस कितना है? वन। मतलब कि अभी तक इस पाथ का अभी तक जो ये पाथ चल रहा था उसका मैक्सिमम एब्सोल्यूट डिफरेंस कितना है? एक",
+      "source": "caption",
+      "english_text": "Is it less than the answer now? Absolutely less. What happened after the answer to 2 was updated? became a. The answer to two became one. Did you understand this? Again, still don't understand? This time it will be understood. Imagine. Now you are standing on two feet. Now take out the two from the hip. Now you are zero and one. Remove the two. What is the distance written? The distance of two is written as one. You're looking to go from two to eight. See what will happen? What is the distance of two? Forest. Meaning, what is the maximum absolute difference of this path from the path that was being followed till now? one"
+    },
+    {
+      "start_time": 1845.279,
+      "end_time": 1879.59,
+      "text": "है। मतलब अभी तक का मैक्सिमम कितना था? एक टू और एट के बीच का एब्सोल्यूट डिफरेंस कितना है? छह। टू और एट के बीच का डिफरेंस कितना है? एब्सोल्यूट ऑफ़ 2 - 8 कितना है? छह। इन दोनों में से कौन सा बड़ा है? सिक्स बड़ा है। सिक्स बड़ा है। क्या ये सिक्स एट के इनफिनिटी से छोटा है? बिल्कुल छोटा है। एट का क्या बन जाएगा डिस्टेंस? सिक्स बन जाएगा। ऐसे करके काम होगा। ऐसे करके काम होगा। यहां पे कुछ भी सम डिफरेंस नहीं करना है। आपको क्या देखना है? जो भी आपका डिस्टेंस है जो भी आपके सोर्स का या कहीं से भी आप कहीं जाना चाह रहे हैं उसका",
+      "source": "caption",
+      "english_text": "Is. Meaning, what was the maximum till now? What is the absolute difference between one two and eight? Six. What is the difference between two and eight? What is the absolute of 2 - 8? Six. Which of these two is bigger? Six is ​​big. Six is ​​big. Is it smaller than the Infinity of Six Eight? It is absolutely small. What will become of distance? Will become six. By doing this the work will be done. By doing this the work will be done. There is no point in making any difference here. What do you want to see? Whatever is your distance, whatever is your source or from wherever you are trying to go."
+    },
+    {
+      "start_time": 1879.6,
+      "end_time": 1912.95,
+      "text": "डिस्टेंस उसका मतलब ये है ना कि वो अभी तक का मैक्सिमम पाथ है। ठीक है? आप जहां से जहां जाना चाह रहे हैं उन दोनों का भी तो कोई डिफरेंस होगा। उन दोनों का डिफरेंस आ गया छह। इन दोनों वैल्यूज में ये जो डिस्टेंस है और ये डिफरेंस है इसका मैक्सिमम कौन सा है? वो उस पा उस उसका आंसर बन जाएगा। वो उसका आंसर बन जाएगा। अगर ये आंसर ऑफ़ जो भी इससे कम है तो आंसर अपडेट होगा। और हीट में आप क्या पुश करेंगे? डिस्टेंस और डिफ का मैक्सिमम पुश करेंगे। मैक्सिमम पुश करेंगे। प्लस बस कुछ नहीं करना है। यही इसका छोटा सा ट्विस्ट",
+      "source": "caption",
+      "english_text": "Distance means that it is the maximum path so far. Ok? There will be some difference between where you want to go. The difference between them came to six. What is the maximum distance and difference between these two values? He will become his answer to that question. That will become his answer. If this answer is less than this then the answer will be updated. And what will you push in the heat? Will push maximum for distance and diff. Will push maximum. Plus just nothing to do. This is the little twist"
+    },
+    {
+      "start_time": 1912.96,
+      "end_time": 1947.509,
+      "text": "है या छोटा सा ट्रिक कह लीजिए। कुछ भी है। इसको हम उम्मीद करते हैं कि आपको समझ में आ रही हो। यहां पे ज़ीरो था। यहां से यहां गए आपको यहां पे ज़ीरो दिखा। बोला ठीक है। अभी तक का मैक्सिमम ज़ीरो है। हम दोनों के बीच का एब्सोल्यूट क्या है भाई? तो वन है। तो ठीक है मेरा वन हो जाएगा। अब यहां पे वन था। अब यहां से यहां जा रहे हैं तो बोला ठीक है भैया अभी तक का मैक्सिमम वन है। हम दोनों के बीच का एब्सोल्यूट डिफरेंस क्या है? छह है। क्या हो जाएगा? छह हो जाएगा। मान लीजिए इसके नीचे आप कहीं और जाना चाहते। इसके नीचे मान लीजिए फाइव होता। ठीक है? आप आठ से पांच जा रहे हैं तो देखिए क्या होगा। आप आठ से पांच जाना चाह रहे हैं। पांच में इंफिनिटी लिखा हुआ है। ठीक है? आठ पे क्या डिस्टेंस लिखा हुआ",
+      "source": "caption",
+      "english_text": "Or call it a small trick. There is anything. We hope you understand this. There was zero here. When you went from here to here, you saw zero here. Said ok. The maximum till now is zero. What is the absolute between us brother? So it is a forest. So okay, my forest will be done. Now there was a forest here. Now going from here to here, he said ok brother, this is the maximum one till now. What is the absolute difference between us? There are six. What will happen? It will be six. Suppose you want to go somewhere else below this. Let's say there was a five below this. Ok? If you are going from eight to five then see what happens. You're looking to go eight to five. Infinity is written in five. Ok? What distance is written on eight?"
+    },
+    {
+      "start_time": 1947.519,
+      "end_time": 1980.63,
+      "text": "है? डिस्टेंस आठ का सिक्स लिखा हुआ है। आठ और पांच के बीच में कितना डिफरेंस है? तीन है डिफरेंस। तो पांच पे क्या होगा? पांच का आंसर तीन होगा या छह होगा? छह होगा। क्योंकि पूरे पाथ का एब्सोल्यूट मैक्सिमम डिफरेंस आपको आगे देना है। अगर आप इस पाथ को फॉलो करते हुए पांच पे आएंगे ना तो आपका आंसर पांच का क्या हो जाएगा? आपके पांच का आंसर छह हो जाएगा ना कि तीन हो जाएगा। क्योंकि पूरे पाथ में जो भी एब्सोल्यूट मैक्सिमम डिफरेंस है वो आपको यहां पे अपडेट करना है। समझ में आ रही है",
+      "source": "caption",
+      "english_text": "Is it? Six of distance eight is written. What is the difference between eight and five? There are three differences. So what will happen at five? Will the answer to five be three or six? There will be six. Because you have to give the absolute maximum difference of the entire path. If you follow this path and come to five, then what will happen to your answer of five? The answer of your five will become six and not three. Because whatever is the absolute maximum difference in the entire path, you have to update it here. I am able to understand"
+    },
+    {
+      "start_time": 1980.64,
+      "end_time": 2009.029,
+      "text": "बात? यह करते करते करते करते एक्स्ट्रा चलाते चलाते चलाते चलाते आपको इसका आंसर मिल जाएगा। आपको इसका आंसर मिल जाएगा। वही आपको रिटर्न करना है क्योंकि आपका डेस्टिनेशन क्या है? बॉटम राइट कॉर्नर। बॉटम राइट कॉर्नर। चलिए अब इसका ड्राइव। आइए इसका कोड लिखें। इसका कोड लिखने के लिए थोड़ा कॉम्प्लेक्स होगा। आइए इसका कोड लिखने का कोशिश करते हैं। तो आपको एक आई एन टी करके फन ये आपका लीड कोड का क्वेश्चन है। आपको बस एक मैट्रिक्स दिया हुआ रहेगा। मैट्रिक्स का मतलब टू डी एरे।",
+      "source": "caption",
+      "english_text": "thing? By doing this, by running Extra, you will get the answer. You will get the answer. That is what you have to return because what is your destination? Bottom right corner. Bottom right corner. Now let's drive it. Let's write its code. Its code will be a bit complex to write. Let's try to write its code. So you have fun by doing an INT, this is your lead code question. You will be given just one matrix. Matrix means two D array."
+    },
+    {
+      "start_time": 2009.039,
+      "end_time": 2041.99,
+      "text": "2D या 2D एरे या 2D वेक्टर ठीक बात है। देखिए अगर आप लोग को वो मैक्सिमम वाला लॉजिक नहीं समझ में आया तो प्लीज कमेंट करिएगा। हम एक बार और समझाने का कोशिश करेंगे। लेकिन हमको बार-बार लग रहा है कि वो थोड़ा सा नॉन क्लियर हो सकता है। इसीलिए हम इतना इस पे जोर दे रहे हैं क्योंकि याद मत कीजिएगा कि जस्ट याद कर लिए। नहीं उससे फायदा नहीं होगा। और आगे का क्वेश्चन भी बनाना है ना। याद मत कीजिएगा। इसका एक ही मतलब है कि भैया आप टू से वन से स्टार्ट किए आप टू पे आ रहे हैं। वन के ऊपर ज़ीरो लिखा हुआ है। मतलब कि वन से वन तक आने का जो आंसर है, वन से वन तक आने का जो मैक्सिमम एब्सोल्यूट सम पाथ है, वो ज़ीरो",
+      "source": "caption",
+      "english_text": "2D or 2D array or 2D vector is fine. Look, if you guys don't understand that maximum logic then please comment. We will try to explain once more. But we feel again and again that it may be a little non-clear. That is why we are emphasizing so much on this because don't remember or just remember. No, that won't help. And further questions also have to be made. Don't remember. This means only one thing, brother, after starting from two to one, you are coming to two. Zero is written on the forest. Meaning that the answer to go from one to one, the maximum absolute sum path to go from one to one, is zero."
+    },
+    {
+      "start_time": 2042.0,
+      "end_time": 2076.31,
+      "text": "है। ठीक है? आप टू पे जाना चाह रहे हैं। तो अगर तो वन पे 10 लिखा हुआ होता तो टू का आंसर भी 10 हो जाता क्योंकि मैक्सिमम वही है। क्यों? लेकिन आपको पता चला कि ठीक है? वन से वन जाने का आंसर ज़ीरो है। वन और टू के बीच का डिफरेंस वन है। तो वन और टू के बीच का आंसर कितना? टू का आंसर कितना हो जाएगा? वन हो जाएगा। सेम बात जब आप टू से आठ पे आ रहे थे तो आपको पता चला कि देखो सोर्स से टू तक आने का आंसर वन है। टू और आठ के बीच का डिफरेंस छह है। तो आठ का आंसर क्या हो जाएगा? मैक्सिमम ऑफ़ सिक्स एंड वन। तो आठ का आंसर छह हो गया। क्योंकि जब आप वन से आठ पे आएंगे तो आपको छह हो",
+      "source": "caption",
+      "english_text": "Is. Ok? You want to go to two. So if 10 was written on number one, then the answer of number two would also be 10 because that is the maximum. Why? But you found out right? The answer to going from forest to forest is zero. The difference between one and two is one. So what is the answer between one and two? What will be the answer of two? It will become a forest. Same thing, when you were coming from two to eight, you came to know that look, the answer to coming from source to two is one. The difference between two and eight is six. So what will be the answer of eight? Maximum of six and one. So the answer of eight became six. Because when you go from one to eight, you become six."
+    },
+    {
+      "start_time": 2076.32,
+      "end_time": 2109.75,
+      "text": "जाएगा आंसर। लेकिन अब जब वन से टू तक जाएंगे तो आंसर वन रहेगा। अब जब वन से फाइव तक जाएंगे तो आंसर छह हो जाएगा। आगे बढ़ेंगे तो और आंसर हो जाएगा। इसीलिए यहां पे सम नहीं है। यहां पे मैक्सिमम है कि ठीक है तुम्हारे तक आने का कुछ आंसर है। मतलब कि वो मैक्सिमम अभी तक का मैक्सिमम है तुम्हारे तक आने का। तुम मेरे तक आना चाह रहे हो तो अच्छा बताओ कितना वो होगा? तो ठीक है। तुम्हारे तक आने का जो भी है वो तो ऑलरेडी मैक्सिमम है ना। हम लोग दोनों आपस में देख लेते हैं। अगर मेरा वाला इससे बड़ा है तो हम मेरा वाला अपना डिफरेंस रख लेंगे। अगर तुम्हारा वाला ही सबसे बड़ा है तो तुम्हारा वाला रख लेंगे।",
+      "source": "caption",
+      "english_text": "The answer will be given. But now when we go from one to two, the answer will remain one. Now when we go from one to five, the answer will become six. If we move ahead, there will be more answers. That's why there is no parity here. The maximum here is that it is okay, there is some answer coming to you. Meaning that that maximum is the maximum till now to come to you. If you want to come to me then tell me how much will it be? Well then. Whatever is required to reach you is already the maximum, isn't it? We both look at each other. If mine is bigger than this then we will keep my difference. If yours is the biggest then we will keep yours."
+    },
+    {
+      "start_time": 2109.76,
+      "end_time": 2144.15,
+      "text": "सिंपल। तो ये जस्ट है कि अभी तक का मैक्सिमम कुछ है। मेरा और तुम्हारा निकाल लिए। इन दोनों का मैक्सिमम ओवरऑल मैक्सिमम हो जाएगा। तो ओवरऑल मैक्सिमम निकालने का गेम है। ठीक है? चलिए तो सबसे पहले तो nm निकाल लीजिए भाई। n = a डॉट साइज मैट्रिक्स का रो और m = एरे ऑफ़ 0 का साइज। ये मैट्रिक्स का नंबर ऑफ़ कॉलम्स। ठीक बात है। डिक्शन के लिए आपको एक रिजल्ट का एरे चाहिए। तो लेकिन अब एरे से काम नहीं बनेगा। आपको एक मैट्रिक्स दिया हुआ है तो आपको एक मैट्रिक्स बनाना पड़ेगा जो कि हम लोग रिजल्ट के लिए बनाएंगे। तो एक टू डी मैट्रिक्स बना लीजिए।",
+      "source": "caption",
+      "english_text": "Simple. So this is just the maximum till now. Took out mine and yours. The maximum of both of these will be the overall maximum. So overall it is a game of finding maximum. Ok? Well, first of all find out the nm brother. n = row of a dot size matrix and m = size of array of 0. The number of columns of this matrix. That's right. For dictionary you need an array of results. So but now the array will not work. You have been given a matrix, so you will have to create a matrix which we will create for the result. So make a 2D matrix."
+    },
+    {
+      "start_time": 2144.16,
+      "end_time": 2177.99,
+      "text": "एक 2D मैट्रिक्स बना लिया करिए। आइए बनाए रिजल्ट अ इसको n देते हैं। अब इंट i फॉर i = 0 i &lt; n i + एक छोटा मैट्रिक्स बनाइए जिसमें m कॉलम्स हो। मैट्रिक t और सबकी वैल्यू आई एन टी मैक्स हो। ठीक बात है। रिजल्ट i इज़ इक्वल टू इशारे को घुसा दीजिए। ऐसे करके आप एक टू डी मैट्रिक्स बनाते हैं जिसमें सब इनफिनिटी है जिसमें सब इनफिनिटी है। ठीक",
+      "source": "caption",
+      "english_text": "Create a 2D matrix. Let's make the result a and let's call it n. Now make int i for i = 0 i < n i + a small matrix with m columns. Let the metric t and the value of all i n t be max. That's right. Insert the result i is equal to hint. By doing this you create a 2D matrix which has sub-infinities which has sub-infinities. okay"
+    },
+    {
+      "start_time": 2178.0,
+      "end_time": 2212.069,
+      "text": "है? अब मिनिमम हिप बनाना पड़ेगा। तो ऑलरेडी दिक्स्त में हम लोग पेयर का हिप बनाए थे क्योंकि उसमें क्या घुसता था? डिस्टेंस और नोड। अब लेकिन यहां पे डिस्टेंस तो घुसेगा ही। डिस्टेंस तो घुसना ही है। नोड अकेला नोड नहीं है। नोड के जगह आपको कोऑर्डिनेट्स घुसाना पड़ेगा। रो कॉलम। तो यहां पे आपको रो कॉलम घुसाना पड़ेगा। ये होगा आपका हिप मतलब पेयर ऑफ़ आई एन टी मतलब ये डिस्टेंस। और एक और इसके अंदर पेयर हो जाएगा। पेयर ऑफ़ आई एन टी एंड पेयर्स। ये देखिए ये ये वाला किसके लिए है? डिस्टेंस",
+      "source": "caption",
+      "english_text": "Is it? Now minimum hip will have to be made. So in Already Dixt, we made Pair's hip because what goes into it? Distance and node. Now, distance will definitely creep in here. The distance has to be covered. The node is not the only node. Instead of node you will have to enter coordinates. Row Column. So here you will have to enter the row column. This will be your hip meaning pair of INT means this distance. And another one will be paired inside it. Pair of i n t and pairs. Look who is this one for? distance"
+    },
+    {
+      "start_time": 2212.079,
+      "end_time": 2246.39,
+      "text": "के लिए। ये पेयर किसके लिए? रो कॉलम के लिए। तो उस हिसाब से आपको मिनी हिप बनाना पड़ेगा। आइए मिनी का सिंटेक्स देखते हैं। मिनी का सिंटेक्स आप भूल गए कोई दिक्कत नहीं। हम भी भूल जाते हैं। हम भी देखदेख के ही लिखते हैं। ठीक है? प्रायोरिटी q ठीक है? प्रायोरिटी q खोल दिए। क्या चाहिए? पेयर ऑफ़ आई एन टी पेयर ऑफ़ आई एन टी आई एन टी एक पेयर बंद दूसरा पेयर बंद। ठीक है? जो भी यहां पे लिखे हैं उसको वेक्टर के अंदर लिख दो। वेक्टर ऑफ जो भी यहां पर लिखा हुआ है पेयर ऑफ आई एन टी",
+      "source": "caption",
+      "english_text": "For. Who is this pair for? For row column. So accordingly you will have to make mini hip. Let's look at the syntax of mini. If you have forgotten the syntax of Mini, no problem. We also forget. We also write after seeing. Ok? Priority q is ok? Opened priority q. What do you want? Pair of I N T Pair of I N T I N T One pair off, the other pair off. Ok? Whatever is written here, write it inside the vector. Vector of whatever is written here Pair of INT"
+    },
+    {
+      "start_time": 2246.4,
+      "end_time": 2273.99,
+      "text": "पेयर ऑफ आई एन टी आई एन टी 1 2 3 ग्रेटर हो गया। ग्रेटर जो भी ऊपर लिखा हुआ है उसको ऐसा करके यहां पे लिख दीजिए। ठीक है? यहां पे ये बंद कर दीजिए और pq बंद कर दीजिए। ठीक बात है? चलिए तो अब देखिए। ठीक है? आइए अब x y बना लीजिए ऊपर नीचे आगे पीछे जाने के लिए ताकि आपको बार-बार ना करना पड़े। तो x 4 ये सब ऑलरेडी आप लोग को याद हो चुका होगा। 1 - 1",
+      "source": "caption",
+      "english_text": "Pair of i n t i n t 1 2 3 became greater. Whatever is written above, write it here. Ok? Close this here and close pq. Is that correct? Come on let's see now. Ok? Now let's make x y to go up and down and back and forth so that you don't have to do it again and again. So x 4 you guys must have already remembered all this. 1 - 1"
+    },
+    {
+      "start_time": 2274.0,
+      "end_time": 2305.349,
+      "text": "0 0 0 इंट y4 = 0 0 1 - 1 ठीक बात है बना लिए। अब शुरू करिए। शुरू करने से पहले जो भी आपका रिजल्ट है रिजल्ट ऑफ़ 0 = 0 मतलब शुरू वाले का ज़ीरो है। सोर्स वर्टेक्स का जीरो है। और इसको हिप में पुश करिए। हिप में क्या पुश करेंगे? हिप में क्या पुश होता है? सबसे पहले डिस्टेंस और 0 यह यह डिस्टेंस है और इसका कोऑर्डिनेट है।",
+      "source": "caption",
+      "english_text": "0 0 0 int y4 = 0 0 1 - 1 That's right. Start now. Whatever is your result before starting, Result of 0 = 0 means the initial one is zero. is the zero of the source vertex. And push it into the hip. What will push into the hip? What is push in hip? First of all distance and 0 is this distance and its coordinate."
+    },
+    {
+      "start_time": 2305.359,
+      "end_time": 2337.75,
+      "text": "शुरू करिए अपना खेल। क्या है खेल आपका? वाइल pq डॉट नॉट एम्प्टी। ठीक है? सॉरी सेमी कॉललन मत लगाइएगा गलती से भी। ठीक है? निकालिए एक-एक करके। पेयर ऑफ़ इंट पेयर ऑफ़ इंटेंट। यही घुसाए थे ना हिप में तो जो घुसाए हैं वही निकालेंगे। PQ डॉट टॉप और PQ डॉट पॉप हो गया पॉप। अब इससे सारी चीजें निकाल लीजिए। सबसे पहले तो जो",
+      "source": "caption",
+      "english_text": "Start your game. What is your game? While pq dot not empty. Ok? Don't use sorry semi colon even by mistake. Ok? Take out one by one. Pair of Int Pair of Int. This is what was inserted in the hip, so only what is inserted will be taken out. PQ dot top and PQ dot pop became pop. Now take out all the things from it. first of all which"
+    },
+    {
+      "start_time": 2337.76,
+      "end_time": 2370.63,
+      "text": "डिस्टेंस है वो क्या है? P डॉट फर्स्ट। P डॉट फर्स्ट में डिस्टेंस लिखा हुआ है। इंट रो किस किसका है? P डॉट सेकंड का फर्स्ट। P के सेकंड का फर्स्ट। P के सेकंड का फर्स्ट। और कॉलम कहां से निकलेगा? P के सेकंड का सेकंड से यह तीनों चीजें निकाल लिया। तीन इंफॉर्मेशन घुसाय तीनों निकल गई। ठीक है? सबसे पहले बात अगर ये डिस्टेंस अगर ये डिस्टेंस अगर ये डिस्टेंस",
+      "source": "caption",
+      "english_text": "What is distance? P dot first. Distance is written in P dot first. Whose inner row is it? P dot second first. First of second of P. First of second of P. And where will the column come from? These three things were extracted from P's second second. After entering three pieces of information, all three left. Ok? First of all if this distance if this distance if this distance"
+    },
+    {
+      "start_time": 2370.64,
+      "end_time": 2396.87,
+      "text": "बड़ा है आपके रो कॉलम से मतलब कि कल की तरह ये स्टेल वैल्यू है। क्या है? स्टेल वैल्यू है। कंटिन्यू कंटिन्यू। ये मतलब पुरानी वैल्यू इसका कोई खास यूज़ है नहीं। अगर ऐसा नहीं है तो आगे बढ़िए। कैसे बढ़ेंगे? सारे नेबर्स पे नेबर्स पे कैसे जाएंगे? x और y से जैसे नंबर ऑफ़ आइलैंड्स में जाते थे। आई एन टी k = 0 kस &lt; 4 k +",
+      "source": "caption",
+      "english_text": "It is larger than your row column meaning that it is a stale value as of yesterday. What is? Stale value is. Continue Continue. This means that the old value has no special use. If it is not then move ahead. How will it grow? How to pay all the neighbors to the neighbors? Like x and y used to go to the number of islands. i n t k = 0 ks < 4 k +"
+    },
+    {
+      "start_time": 2396.88,
+      "end_time": 2431.27,
+      "text": "इंट r = रो + x ऑफ़ k इंट c = कॉलम + y ऑफ़ k वैलिड है कि नहीं चेक कर लीजिए। वैलिड का फंक्शन ऊपर लिख लेंगे। वैलिड आर सी एन एम एंड एंड अगर यह वैलिड है तो ही करिएगा। एक काम करिए यहां पे लिख दीजिए कि अगर नॉट वैलिड तो कंटिन्यू कर जाओ। नॉट वैलिड तो इफ नॉट वैलिड कंटिन्यू मतलब वैलिड है तो ही आगे बढ़ेंगे। ठीक है? अब अब क्या करना है आपको? एब्सोल्यूट डिफरेंस",
+      "source": "caption",
+      "english_text": "Int r = Row + x of k Int c = Column + y of k Check whether it is valid or not. We will write the function of valid above. Do valid RCNM and end only if it is valid. Do one thing, write here that if not valid then continue. If not valid then if not valid continue means only if it is valid then we will proceed further. Ok? Now what do you have to do? Absolute difference"
+    },
+    {
+      "start_time": 2431.28,
+      "end_time": 2460.309,
+      "text": "निकाल लीजिए। इंट एब्सोल्यूट डिफरेंस इज इक्वल टू क्या आएगा? एब्सोल्यूट एरे ऑफ जहां से आप जा रहे हैं और जहां तक जा रहे हैं तो कहां से आप जा रहे हैं? आप इस रो कॉलम से जा रहे हैं। तो एरे ऑफ़ रो कॉलम रो कॉलम कहां तक जा रहे हैं? आप R और C तक जा रहे हैं प्रोवाइडेड कि वो वैलिड हो। तो जो कि हम लोग ऑलरेडी चेक कर चुके हैं। ये तो क्या निकला? इन दोनों के बीच का डिफरेंस। ठीक है?",
+      "source": "caption",
+      "english_text": "Take it out. What will come int absolute difference is equal to? Absolute array of where you're going from and where you're going from? You are going through this row column. So where are the array of row columns going to go? You are going to R and C provided that they are valid. So which we have already checked. What did this turn out to be? The difference between these two. Ok?"
+    },
+    {
+      "start_time": 2460.319,
+      "end_time": 2489.589,
+      "text": "न्यू वेट। न्यू वेट। न्यू वेट। न्यू वेट क्या था? मैक्सिमम ऑफ इन दोनों के बीच का एब्सोल्यूट डिफरेंस और अभी तक का जो एब्सोल्यूट डिफरेंस था मतलब कि अभी तक इसका जो डिस्टेंस था डिस्टेंस ये निकल गया न्यू वेट। अब करिए रिलैक्सेशन इफ न्यू वेट इज लेस देन जो कि इसके अभी लिखा हुआ है जो इस अभी के इस आदमी में लिखा हुआ है। तो आप इसको रिलैक्स कर सकते हैं।",
+      "source": "caption",
+      "english_text": "New weight. New weight. New weight. What was the new weight? Maximum of the absolute difference between these two and the absolute difference till now means the distance which was till now, this distance has become the new weight. Now do relaxation if the new weight is less than what is written in this man. So you can relax it."
+    },
+    {
+      "start_time": 2489.599,
+      "end_time": 2522.63,
+      "text": "रिलैक्स करने का क्या मतलब है? रिजल्ट आरसी को अपडेट कर दीजिए। किससे? न्यू वेट से और PQ डॉट पुश क्या पुश होगा? सबसे पहले तो यह न्यू वेट पुश होगा जो कि इसका नया वेट है और ये RC भी पुश हो जाएगा। ये बंद करिए ऐसा करके इसको बंद करिए और इस फॉर लूप को बंद करिए और इस वाइल लूप को बंद करिए और लास्ट में लास्ट में क्या कर दीजिए? रिटर्न रेस n - 1 m - 1 बॉटम राइट कॉर्नर का आपको",
+      "source": "caption",
+      "english_text": "What does it mean to relax? Please update the result RC. With whom? What will be the push from new weight and PQ dot push? First of all, this new weight will be pushed, which is its new weight and this RC will also be pushed. Close this, close this by doing this and close this for loop and close this while loop and what to do in the last one? Return race n - 1 m - 1 to the bottom right corner."
+    },
+    {
+      "start_time": 2522.64,
+      "end_time": 2556.87,
+      "text": "ये करके दे देगा। तो ये देखिए इसका कोड एक चीज छूट गया है बुलियन वैलिड लिखना तो बुलियन वैलिड जल्दी से लिख दीजिए बुलियन वैलिड वैलिड में क्या पास होता है आई एन टी आई आई एन टी जे आई एन टी एन और आई एन टी एम क्या चेक होता है इफ i &lt; 0 और i &gt; = n और j &lt; &lt; 0 और j &gt; = m अगर ऐसा है तो आप रिटर्न क्या करते हैं फॉल्स फॉल्स कर देते हैं। अगर ऐसा नहीं है तो आप क्या रिटर्न करते हैं? ट्रू",
+      "source": "caption",
+      "english_text": "Will do this and give it. So look at its code, one thing is missing, write Boolean Valid, then write Boolean Valid quickly. What is passed in Boolean Valid Valid, i n t i i n t j i n t n and i n t m, what is checked if i < 0 and i > = n and j < < 0 and j > = m. If so, then what do you return false? What do you return if it is not? True"
+    },
+    {
+      "start_time": 2556.88,
+      "end_time": 2589.67,
+      "text": "रिटर्न कर देते हैं। ये लीजिए ये पूरा कोड है। ये देख लीजिए। ये पूरा कोड है। थोड़ा कॉम्प्लेक्स कोड है। बिल्कुल मानते हैं। लेकिन बस कॉम्प्लेक्स ही है। वैसा कुछ सोचने का नहीं है। इस क्वेश्चन में कोड से ज्यादा सबसे इंपॉर्टेंट बात ये वाला पार्ट है कि आप क्या कर रहे हैं यहां पे? सबसे पहले आप एब्सोल्यूट डिफरेंस ये ये वाला जो लॉजिक है ना ये इस कोड का लॉजिक है बाकी सब तो इंप्लीमेंटेशन डिटेल्स है वो तो ठीक है वो तो टाइम के साथ आदमी सीख ही जाता है ये इस कोड का हार्ट है ये इस कोड का हार्ट बना ये हार्ट है तो ये दोनों कोड जाके कीजिए इसका ड्राई रन करिए कॉपी में कोड को",
+      "source": "caption",
+      "english_text": "Let's return. Here is the complete code. Take a look at this. This is the complete code. It's a bit complex code. Absolutely agree. But it is just complex. There is nothing to think about like that. In this question, the most important thing more than the code is the part that what are you doing here? First of all, you can see the absolute difference, this one is the logic of this code, rest all are implementation details, that is fine, man learns it with time, this is the heart of this code, this is the heart of this code, this is the heart, so go and do both these codes, dry run the code in your copy."
+    },
+    {
+      "start_time": 2589.68,
+      "end_time": 2595.359,
+      "text": "कीजिए कोड समझिए वीडियो देखिए और मिलते हैं अगले लेक्चर",
+      "source": "caption",
+      "english_text": "Understand the code, watch the video and see you in the next lecture."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

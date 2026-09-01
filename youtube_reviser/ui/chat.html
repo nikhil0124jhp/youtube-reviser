@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>YouTube Reviser — Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css?v=6">
+    <link rel="stylesheet" href="/static/chat.css?v=5">
+    <script src="/static/theme.js?v=4"></script>
+</head>
+
+<body>
+
+    <main class="app chat-app">
+
+        <header class="hero">
+
+            <div class="brand">
+
+                <a
+                    class="brand-icon brand-icon-link"
+                    href="/"
+                    aria-label="Back to ingestion"
+                >
+                    ▶
+                </a>
+
+                <div class="brand-content">
+
+                    <h1>
+                        YouTube Reviser
+                    </h1>
+
+                    <p>
+                        Watch, ask questions, find topics, and jump directly
+                        to the exact timestamps in your videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <nav class="page-nav">
+                <button
+                    id="themeToggleBtn"
+                    class="theme-toggle-btn"
+                    type="button"
+                    aria-label="Toggle dark/light theme"
+                    title="Toggle theme"
+                >
+                    <span class="theme-icon">🌙</span>
+                    <span class="theme-label">Dark</span>
+                </button>
+                <a href="/">← Add Videos</a>
+            </nav>
+
+        </header>
+
+
+        <div class="chat-page-layout">
+
+            <!-- LEFT COLUMN: RAG CHAT -->
+            <section class="card chat-card">
+
+                <div class="chat-header">
+
+                    <div>
+                        <span class="eyebrow">
+                            RAG CHAT
+                        </span>
+
+                        <h2>
+                            Ask Your Knowledge Base
+                        </h2>
+                    </div>
+
+                    <button
+                        id="clearChatBtn"
+                        class="secondary-btn"
+                        type="button"
+                    >
+                        Clear chat
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="chatMessages"
+                    class="chat-messages"
+                    aria-live="polite"
+                >
+
+                    <div class="chat-empty" id="chatEmptyState">
+                        <div class="chat-empty-icon">?</div>
+
+                        <h3>
+                            Ask a question
+                        </h3>
+
+                        <p>
+                            Try “Where was HNSW taught?”, “What is an embedding?”, or “Is video ka summary do”
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <form
+                    id="chatForm"
+                    class="chat-form"
+                >
+
+                    <textarea
+                        id="chatInput"
+                        rows="2"
+                        placeholder="Ask a question or topic location..."
+                        autocomplete="off"
+                        required
+                    ></textarea>
+
+                    <button
+                        id="sendChatBtn"
+                        class="primary-btn chat-send-btn"
+                        type="submit"
+                    >
+                        <span id="sendChatText">
+                            Send
+                        </span>
+
+                        <span
+                            id="chatLoader"
+                            class="loader hidden"
+                        ></span>
+                    </button>
+
+                </form>
+
+                <p
+                    id="chatStatus"
+                    class="chat-status"
+                ></p>
+
+            </section>
+
+
+            <!-- RIGHT COLUMN: YOUTUBE PLAYER & SELECTOR -->
+            <section class="card learning-card">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        VIDEO PLAYER
+                    </span>
+
+                    <h2>
+                        Interactive Player
+                    </h2>
+
+                </div>
+
+
+                <div class="player-wrapper">
+                    <div
+                        id="youtubePlayer"
+                        class="youtube-player"
+                    ></div>
+                </div>
+
+                <div class="player-meta">
+                    <span class="eyebrow">
+                        CURRENT VIDEO
+                    </span>
+
+                    <h3 id="currentVideoTitle">
+                        Select a video
+                    </h3>
+                </div>
+
+
+                <aside class="video-selector">
+
+                    <div class="selector-group">
+                        <label for="playlistSelect">
+                            Choose Playlist
+                        </label>
+
+                        <select id="playlistSelect">
+                            <option value="">
+                                Loading playlists...
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="selector-group">
+                        <label for="videoSelect">
+                            Choose Video
+                        </label>
+
+                        <select id="videoSelect">
+                            <option value="">
+                                Select a playlist first
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="selector-actions">
+                        <button
+                            id="refreshVideosBtn"
+                            class="secondary-btn"
+                            type="button"
+                        >
+                            Refresh Videos
+                        </button>
+
+                        <button
+                            id="removePlaylistBtn"
+                            class="danger-btn remove-playlist-btn hidden"
+                            type="button"
+                        >
+                            🗑 Remove Playlist
+                        </button>
+                    </div>
+
+                    <div class="scope-box">
+                        <div class="scope-header">
+                            <span class="scope-label">
+                                Search Scope
+                            </span>
+                            <span id="scopeBadge" class="scope-badge">
+                                This Playlist
+                            </span>
+                        </div>
+
+                        <label class="scope-toggle-label">
+                            <input
+                                type="checkbox"
+                                id="searchAllToggle"
+                            >
+                            <span>Search all indexed playlists</span>
+                        </label>
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </div>
+
+
+        <footer class="footer">
+
+            <span>
+                YouTube Reviser
+            </span>
+
+            <span class="footer-dot">
+                •
+            </span>
+
+            <span>
+                RAG Knowledge Base
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="/static/chat.js?v=5"></script>
+
+</body>
+</html>

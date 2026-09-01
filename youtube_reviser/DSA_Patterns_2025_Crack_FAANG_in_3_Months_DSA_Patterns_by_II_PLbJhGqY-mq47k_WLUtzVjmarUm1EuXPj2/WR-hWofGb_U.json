@@ -1,0 +1,527 @@
+{
+  "video_id": "WR-hWofGb_U",
+  "video_title": "Graph Representation: Adjacency Matrix vs Adjacency List – Which is Better?",
+  "video_number": 93,
+  "chunks": [
+    {
+      "start_time": 1.75,
+      "end_time": 35.19,
+      "text": "वीडियो शुरू करने से पहले बहुतेंट अनाउंसमेंट है। देखिए हमसे छोटा सा गलती हो गया क्योंकि हम पहले जब वीडियो बनाए तो हम ऐसा सोच के नहीं बनाए थे। तो हम बोल दिए हैं वीडियो में। आगे आने वाला आपको लगेगा कि C++, Java, Python का अलग-अलग है और सबको अलग-अलग देखना है अपना-अपना। वैसा नहीं करना है। हम ये लास्ट में शूट कर रहे हैं। पूरा वीडियो बन चुका है। ये हम अभी शूट कर रहे हैं क्योंकि और कोई रास्ता नहीं है। नहीं तो पूरा हमको फिर से बनाना पड़ जाएगा। है ना? देखिए इस लेक्चर में आपको हम ग्राफ का सिंटेक्स बताने वाले हैं। सिंटेक्स का मतलब कि जब हम लोग लेक्चर वन में देखे थे कि ग्राफ क्या होता है? Instagram यूज़ करता है, Facebook यूज़ कर, Google Maps यूज़ करता है। आज उन सारा एग्जांपल लेके आपको हम बताएंगे ना कि",
+      "source": "caption",
+      "english_text": "There are many announcements before starting the video. See, we made a small mistake because when we first made the video, we did not make it with this in mind. So we have said it in the video. In what follows, you will feel that C++, Java, Python are different and each has to be seen separately. Don't do that. We are shooting this last. The complete video has been made. We are shooting this now because there is no other way. Otherwise we will have to rebuild it completely. Isn't it? See, in this lecture we are going to tell you the syntax of graph. The meaning of syntax is that when we saw in lecture one, what is a graph? Uses Instagram, uses Facebook, uses Google Maps. Today we will take all those examples and tell you that"
+    },
+    {
+      "start_time": 35.2,
+      "end_time": 68.31,
+      "text": "क्यों अलग-अलग सिंटेक्स जरूरी होता है। और क्यों किसी भी लैंग्वेज में ग्राफ का डेटा स्ट्रक्चर आपको नहीं मिलेगा। ऐसा नहीं होता है कि C++ में एक ग्राफ का लाइब्रेरी है कि आप ग्राफ बना लो। एरे की तरह है कि एरे में है तो ग्राफ नहीं ग्राफ आपको खुद से बनाना पड़ता है। और ये बहुत हार्ड चीज है। लीड कोड आपको कभी भी ग्राफ बना बनाया नहीं देगा। जैसे आपको ट्री में ट्री बना बनाया मिलता था ना स्टक में स्टक मिल जाता था। यहां पे आपको ग्राफ खुद से बनाना पड़ेगा। लीड कोड आपको बहुत लिमिटेड इनेशन देगा कि भैया चार लोग हैं। प्रत्युष अमन से कनेक्टेड है। अमन सुजीता से कनेक्टेड है। वो उससे कनेक्टेड है। बस अपना ग्राफ खुद से बना के देख लो। जैसे बन है वैसे",
+      "source": "caption",
+      "english_text": "Why is different syntax necessary? And why you will not find the data structure of graph in any language. It is not the case that there is a graph library in C++ that you can create graphs from. It is like an array in that if it is in an array, it is not a graph but you have to make the graph yourself. And this is a very hard thing. Lead code will never let you create a graph. Just like you used to get a tree made in a tree, you did not get a stuck in a stick. Here you will have to make the graph yourself. The lead code will give you a very limited information that there are four people. Pratyush is connected to Aman. Aman is connected to Sujita. He is connected to it. Just make your own graph and see. as it is"
+    },
+    {
+      "start_time": 68.32,
+      "end_time": 102.55,
+      "text": "बनाओ लेकिन अपने मन से बनाओ। तो ये बहुत हार्ड पाथ है। थोड़ा देख के ध्यान से सुनिएगा। इंप्लीमेंटेशन सेम है। तीनों लैंग्वेज में इंप्लीमेंटेशन सेम है। फर्क इतना है कि अब C++ में हम जिसको वेक्टर बोलते हैं, जावा में उसको एरे बोला जाता है। पाइthन में उसको लिस्ट बोला जाता है। या तो जावा में उसको एरे लिस्ट बोला जाता है, पाइथन में लिस्ट बोला जाता है। और कोई सारा कुछ एरे में होगा। मतलब ऐसा आपको कोई स्पेसिफिक एडवांस चीज पढ़ने की ज़रूरत नहीं है कि हमको बहुत रॉकेट साइंस नहीं। एरे अगर आता है तो छोटा-छोटा एरे तो आता ही है। पढ़ा चुके हैं एरे हम बेसिक वाले प्लेलिस्ट में। आपको बस एरे से ग्राफ बनाना है। आप देखेंगे कि कितना इज़ी से बस एरे का यूज़ करके। वेक्टर या एरर लिस्ट का",
+      "source": "caption",
+      "english_text": "Make it but make it from your heart. So this is a very hard path. Take a look and listen carefully. Implementation is the same. Implementation is the same in all three languages. The difference is that now what we call vector in C++, is called array in Java. In Python it is called list. Either in Java it is called array list, in Python it is called list. And everything will be in the array. This means that you do not need to study any specific advanced thing that is not very rocket science for us. If it comes then it will come in small amounts. We have already taught you in the basic playlist. All you need to do is create a graph from the array. You'll see how easy it is just by using the array. vector or error list"
+    },
+    {
+      "start_time": 102.56,
+      "end_time": 136.55,
+      "text": "यूज़ करके या तो लिस्ट का यूज़ करके आप एक पूरा ग्राफ बना सकते हैं। तो आगे वाली बातों को C++ जावा Python उनको इग्नोर करिएगा। वो सोचेगा कि ऐसे ही वो छोड़ दो। वो कोई टाइम स्टैंप नहीं आएगा। पूरा वीडियो देखिए। पहले बेसिक समझिए। उसके बाद जो भी कर रहे हैं उसको आज आज शाम ही जैसे ही आप ये वीडियो खत्म करते हैं ना तो एक बड़े भाई होने के नाते आपको एडवाइस दे रहे हैं कि आज शाम में ही कॉपी खोल के वीएस कोड खोल के ऑनलाइन कुछ भी खोल के इसको खुद से करिए और कॉपी में लिखिए। ये नहीं करेंगे तो नहीं समझ में आएगा। कोई दुनिया का आदमी आपको बस ये बता के वीडियो दिखा के नहीं समझा सकता है कि चलो ये बना नहीं",
+      "source": "caption",
+      "english_text": "You can create a complete graph by using or using a list. So C++ Java Python will ignore the further points. He will think that he should just leave it. That time stamp will not come. Watch the full video. First understand the basics. After that, whatever you are doing, do it this evening itself, as soon as you finish this video, being an elder brother, I am advising you that this evening itself, open a copy, open VS code, open anything online, do it yourself and write in the copy. If you don't do this, you won't understand. No person in the world can make you understand by just showing a video and saying that this is not made."
+    },
+    {
+      "start_time": 136.56,
+      "end_time": 164.79,
+      "text": "निकल जाएगा दिमाग से। खुद से नहीं बनाएंगे तो नहीं होगा। हमको खुद बहुत महीना लगा था जब हम शुरू-शुर में पढ़ते थे तो ये मास्टर करने में। आज की डेट में अभी हम भूल जाते हैं कि अरे बाप रे ये ग्राफ कैसे बनाना है। थोड़ा वो प्रेशर हो जाता है। अभी भी हमको थोड़ा देखना पड़ा था कि कैसे करना है। तो वीडियो देखिए बेशक देखिए। दो बार देखिए, तीन बार देखिए। लेकिन खुद से बनाइएगा। आज ग्राफ बैठ के खुद से बनाइए। खुद से देखिए ग्राफ कैसा लगता है। उसको प्रिंट करिए। अच्छा मजा आता है। जब आप करते हैं सेटिस्फेक्शन मिलेगा कि चलो हम प्रिंट किए। ग्राफ बना मेरा ग्राफ है।",
+      "source": "caption",
+      "english_text": "It will go out of your mind. It won't happen if you don't make it yourself. It took us many months to master this when we were initially studying. In today's time, we forget that oh my god, how to make this graph. There is some pressure. We still had to see a little how to do it. So watch the video, of course. Look twice, look thrice. But make it yourself. Today sit and draw the graph yourself. See for yourself what the graph looks like. Print it. It's good fun. When you do, you will get satisfaction and then let us print it. The graph is my graph."
+    },
+    {
+      "start_time": 164.8,
+      "end_time": 199.35,
+      "text": "उसमें कुछ कुछ करिए। लेकिन एक ये इंपॉर्टेंट अनाउंसमेंट था। आगे C++ जावा Python उसको इग्नोर करिए। सारे लोग देखिए आराम से और कोड हम कोशिश करेंगे कमेंट में डाल दें यार। हम बार-बार भूल जाते हैं। आज हम कोशिश करेंगे कि डाल दें। चलिए देखिए। हेलो भाई। तो जो लोग भी पहला वीडियो नहीं देखे हैं इससे पहला वाला वो देख के आ जाइए। वो ग्राफ का इंट्रोडक्शन था वो नहीं देखेंगे तो इसमें थोड़ा दिक्कत होगा। दूसरी बात यह है कि यह वीडियो ना सिंटेक्स बेस्ड होने वाला है। अब सिंटेक्स बेस्ड इसलिए होने वाला है क्योंकि ग्राफ का एक बार सिंटेक्स समझ में आ जाएगा ना तब आगे जाके आसानी होगा क्योंकि अगर आपको लिखना नहीं आएगा ग्राफ अगर आपको क्योंकि क्या होता है कि लीड कोड के किसी भी क्वेश्चन में ना",
+      "source": "caption",
+      "english_text": "Do something in it. But this was an important announcement. Further ignore C++ Java Python. Everyone, feel free to watch and we will try to post more codes in the comments. We forget again and again. Today we will try to put it. Let's see. Hello, brother. So those who have not seen the first video, please watch the first one. That was the introduction of the graph. If you don't see it, there will be some difficulty in it. The second thing is that this video is not going to be syntax based. Now it is going to be syntax based because once the syntax of the graph is understood, then it will be easier to go ahead because if you do not know how to write a graph, then what happens is that in any question of the lead code,"
+    },
+    {
+      "start_time": 199.36,
+      "end_time": 234.309,
+      "text": "अभी तक आप जो भी कर रहे थे अभी तक आप जो भी पढ़ते थे उसमें आपको प्रॉपर चीज दिया रहता था। उसमें अगर वेक्टर है तो वेक्टर दिया रहता था। ट्री है तो ट्री दिया रहता था। लेकिन ग्राफ के क्वेश्चन में ना आपको पूरा ग्राफ नहीं दिया जाएगा। क्योंकि ग्राफ कोई डेटा स्ट्रक्चर नहीं होता है। किसी भी लैंग्वेज में आप खोज के देख लीजिएगा। कोई भी डेटा स्ट्रक्चर इसका नहीं होता कि ये ग्राफ का डेटा स्ट्रक्चर है। क्योंकि इतना कॉम्प्लेक्स होता है और लोग इसको अलग-अलग तरीके से करते हैं ना कि इसके लिए एक डेटा स्ट्रक्चर नहीं बन सकता है। जैसे एरे एक डेटा स्ट्रक्चर बना हुआ है क्योंकि एरे का एक ही काम होता है, एक ही चीज होता है। लेकिन ग्राफ थोड़ा कॉम्प्लेक्स हो जाता है। ग्राफ आपको खुद से बनाना पड़ेगा। और ये खुद से बनाना आपको हर क्वेश्चन में खुद से बनाना पड़ेगा।",
+      "source": "caption",
+      "english_text": "Till now, whatever you were doing, till now, whatever you were reading, you were given proper thing. If there is a vector in it then the vector was given. If there is a tree then the tree was given. But in graph questions, you will not be given the complete graph. Because a graph is not a data structure. You can search in any language and see. Any data structure does not mean that it is the data structure of a graph. Because it is so complex and people do it in different ways that there cannot be a single data structure for it. Like array is a data structure because array has only one work, one thing. But the graph gets a little complex. You will have to make the graph yourself. And you will have to do this by yourself in every question."
+    },
+    {
+      "start_time": 234.319,
+      "end_time": 265.59,
+      "text": "इसीलिए बहुत जरूरी है कि ये लेक्चर आप पूरा देखें। इसमें चार पार्ट है। पहला पार्ट वो है जो कि बेसिक बेसिक का यह मतलब है। इसमें हम आपको समझाएंगे कि करना क्या है। यह हम रेकमेंड करेंगे कि आप किसी भी लैंग्वेज में पढ़ते हैं। आप ये बेसिक सेक्शन जरूर देखिए। स्क्रीन पे इस समय आपके टाइम स्टैंप आ रहा होगा कि बेसिक कहां से है। फिर C++, जावा, पython एक बार आपका बेसिक खत्म हो जाता है। मतलब ये बेसिक वाला पार्ट खत्म हो जाए जितना भी 5 6 मिनट का जितना भी होगा। उसके बाद अगर आप C++ वाले हैं तो बने रहिएगा। अगर आप जावा वाले हैं तो आप जावा के टाइम स्टैंप पे जा सकते हैं। अगर आप Python के हैं तो आप Python के टाइम स्टैंप पे जा सकते हैं।",
+      "source": "caption",
+      "english_text": "That is why it is very important that you watch this lecture completely. It has four parts. The first part is what basic basic means. In this we will explain to you what to do. We would recommend that you read this in any language. You must see this basic section. At this time, your time stamp will be appearing on the screen as to where the basic is from. Then C++, Java, Python once your basic is over. Meaning, this basic part should be completed in as little as 5-6 minutes. After that if you are a C++ person then stick with it. If you are a Java user then you can go to Java time stamp. If you are a Python user then you can go to Python's time stamp."
+    },
+    {
+      "start_time": 265.6,
+      "end_time": 297.59,
+      "text": "ठीक है? लेकिन ये बेसिक वाला सबको देखना है। लेक्चर के अंत तक आपको समझ में आ जाएगा कि अगर आपको कोई ग्राफ पहले तो आपको पता चलेगा कि आपको बताना क्या है। मतलब आपको बताया क्या रहेगा कि भैया ये है इसका ग्राफ बनाना है और आप उसको ग्राफ बना पाएंगे। आप उसको प्रिंट कर पाएंगे। आप उसको देख पाएंगे कि हां चलो कोड में ऐसा लगता है। ड्राइंग तो ठीक है। ड्राइंग तो बना सकते हैं। लेकिन कोड में कैसा लगता है? तो वो सब आपको आ जाएगा। ठीक है? चलिए। तो पहले वाले लेक्चर में हम क्या बताए थे कि ग्राफ क्या होता है? तो ग्राफ क्या होता है? बहुत सारे आइटम्स होते हैं। बहुत सारे आइटम्स होते हैं। इनको हम लोग क्या बोलते हैं? नोड्स। आइटम्स कुछ भी हो सकते हैं। आइटम्स लोग हो सकते हैं। जैसे Google",
+      "source": "caption",
+      "english_text": "ok? But this basic one is for everyone to see. By the end of the lecture you will understand what a graph is supposed to tell you. Meaning, what if I told you that brother, you have to graph this and you will be able to graph it. You will be able to print it. You will be able to see that yes let's look like this in the code. The drawing is fine. You can make a drawing. But what does it look like in code? Then you will get all that. Ok? Let go. So what did we tell in the earlier lecture that what is a graph? So what is a graph? There are many items. There are many items. What do we call these? Nodes. The items can be anything. Items can be people. like google"
+    },
+    {
+      "start_time": 297.6,
+      "end_time": 331.43,
+      "text": "Maps पे जगह आइटम हो गया। Instagram पे लोग आइटम हो गया तो कुछ भी हो सकता है। और इन आइटम्स के बीच में ना कुछ कनेक्शंस होते हैं। क्या होते हैं? कुछ कनेक्शंस। मतलब कि एक आइटम पर्टिकुलर आइटम से कनेक्टेड है। किसी भी वे में कनेक्टेड हो सकता है। कोई कोई अगर प्लेस है तो वो प्लेस एक दूसरे से कनेक्टेड हो सकता है। मतलब यहां से वहां तक ट्रेन रूट है। अगर Instagram की बात करें तो लोग एक दूसरे से कनेक्टेड हो सकते हैं। मतलब ये इसको फॉलो किया है या उसको नहीं किया है। उस तरीके की चीजें होती हैं। अच्छा। अब ये जो कनेक्शंस है ना इनको हम लोग एजेस बोलते हैं। और इन नोड्स को हम लोग वर्टिससेस बोलते हैं। वर्टिससेस। आप लोग ट्रायंगल",
+      "source": "caption",
+      "english_text": "The place has become an item on Maps. If people become an item on Instagram, anything can happen. And there are no connections between these items. What are they? Some connections. Meaning that an item is connected to a particular item. Can be connected in any way. If there is any place then those places can be connected to each other. Meaning there is a train route from here to there. If we talk about Instagram, people can be connected to each other. Meaning whether he has followed this or not that. Things like that happen. Good. Now we call these connections as edges. And we call these nodes vertices. Vertices. you guys triangle"
+    },
+    {
+      "start_time": 331.44,
+      "end_time": 361.27,
+      "text": "कभी ना कभी पढ़े होंगे ना ट्रायंगल में कितना वर्टेक्स होता था? तीन वर्टिससेस होता है। और एज मतलब कि कोई भी दो वर्टिस मतलब मान लीजिए कि अगर हम सर्कल से इनको ऐसा दिखाएं तो ट्रायंगल कैसा लगता है दिखने में? ऐसा लगता है। है ना? तो ट्रायंगल के अगर हम वर्टिससेस की बात करें कि ट्रायंगल में कितने कोने या कितने वो होते हैं? तो इसमें आप बोलेंगे कि तीन होता है। 1 2 3 अब हम बोलेंगे कि ट्रायंगल में एज कितना होता है? है तो आप बोलेंगे कि ट्रायंगल में H भी भैया तीन होता है। तो कोई भी दो वर्टिससेस को अगर आप कनेक्शन दिखाना चाहते हैं मतलब मान लीजिए कि अगर हम बोले कि ये A है, ये B है, ये C है।",
+      "source": "caption",
+      "english_text": "You must have ever read how many vertex were there in a triangle? Has three vertices. And edge means any two vertices. Suppose if we show them like this with a circle, then how does the triangle look? It seems like. Isn't it? So if we talk about the vertices of a triangle, how many corners are there in the triangle? So in this you will say that there are three. 1 2 3 Now we will say what is the edge in a triangle? If so, you will say that H in the triangle is also brother three. So if you want to show the connection between any two vertices, that means suppose we say this is A, this is B, this is C."
+    },
+    {
+      "start_time": 361.28,
+      "end_time": 394.79,
+      "text": "अगर हम बोलना चाहें कि A B से किसी ना किसी तरीके से कनेक्टेड है। मतलब कि A और B के बीच में आपको एक एज बनाना पड़ेगा। ड्राइंग की बात कर रहे हैं जस्ट। इसको हम लोग ग्राफ में भी सिमिलर बोलते हैं कि जो भी नोड्स या जो भी आइटम्स होते हैं जिनके बीच में कनेक्शन एस्टैब्लिश करना है उनको क्या बोला जाता है? वर्टिससेस या तो नोट्स बोला जाता है। और अगर दो वर्टिससेस कनेक्टेड हैं किसी भी तरीके से मान लीजिए प्रत्युष अमन को Instagram पे फॉलो करता है तो ड्राइंग बनाएंगे ना तो प्रत्युष से अमन के बीच में एक लाइन बनेगी। इस लाइन को हम लोग क्या कहते हैं? एज बोलते हैं। ठीक है? तो ये कुछ टेक्निकल टर्म्स है जो आपको आना चाहिए। अच्छा। तो देखिए कोई भी ग्राफ",
+      "source": "caption",
+      "english_text": "If we want to say that A is connected to B in some way or the other. Meaning that you will have to create an edge between A and B. Just talking about drawing. We also call this similar in graphs, what are the nodes or items between which a connection has to be established called? Vertices are called notes. And if two vertices are connected in any way, suppose Pratyush follows Aman on Instagram, then if we make a drawing then a line will be formed between Pratyush and Aman. What do we call this line? Edge speaks. Ok? So these are some technical terms that you should know. Good. So look at any graph"
+    },
+    {
+      "start_time": 394.8,
+      "end_time": 427.67,
+      "text": "ऐसा ही दिखेगा। कोई भी ग्राफ होगा कि उसमें कुछ वर्टिससेस होंगे और उन वर्टिससेस के बीच में कुछ ना कुछ लाइन बना हुआ होगा। वो लाइन क्या होगा? वो लाइन होगा एज। मतलब कि फलाना फलाना वर्टेक्स फलाना फलाना वर्टेक्स से कनेक्टेड है। इसको हम लोग ग्राफ बोला जाता है। अगर हम एक नॉर्मल ग्राफ बनाएं चलिए चार वर्टेक्स का हम ग्राफ बना देते हैं। तो एक हो गया आपका ज़ीरो। ah इसको ज़ीरो से भी स्टार्ट कर सकते हैं, वन से भी आपकी मर्ज़ी। वन टू और थ्री। तो इस ग्राफ में हम बोलेंगे कि चार नोड्स हैं या चार लोग हैं। 0 1 2 3 अब हम इसमें hज बनाते हैं। तो मान लीजिए कि ये पूरा ऐसे hज बना हुआ है। ठीक है? ऐसे करके",
+      "source": "caption",
+      "english_text": "It will look like this. Any graph will have some vertices and there will be some line between those vertices. What will that line be? That line will be the edge. Meaning that such and such vertex is connected to such and such vertex. We call this a graph. If we make a normal graph, let us make a graph of four vertexes. So one becomes your zero. ah, you can start it from zero or even one as per your choice. One two and three. So in this graph we will say that there are four nodes or four people. 0 1 2 3 Now we make hj in it. So let's assume that this is how Haj is made. Ok? by doing like this"
+    },
+    {
+      "start_time": 427.68,
+      "end_time": 453.909,
+      "text": "H बना हुआ है और और ये भी है। ठीक है? तो ये एक ग्राफ है। इसमें अगर हम पूछे कि इसमें भैया वर्टिससेस कितने हैं? इसमें वर्टिससेस कितने हैं? तो आप बोलेंगे कि इसमें चार वर्टिससेस हैं। कौन-कौन से? 0, 1, 2 और थ्री। ओके? अब इसमें एजेस एजेस मतलब कि वर्टिस के बीच में लाइन कौन सा है? तो आप इसमें बहुत सारे एजेस देख सकते हैं। देखिए सबसे पहले तो आप बोलेंगे कि इसमें ज़ीरो और वन के बीच में एक एज है। अच्छा। अ 0 और टू के बीच में भी एक एज है।",
+      "source": "caption",
+      "english_text": "H is made up and and this is also. Ok? So this is a graph. If we ask, how many vertices are there in it? How many vertices are there in it? So you will say that it has four vertices. Which ones? 0, 1, 2 and three. Ok? Now in this, edges means which is the line between the vertices? So you can see a lot of edges in this. Look, first of all you will say that there is an edge between zero and one. Good. There is also an edge between 0 and 2."
+    },
+    {
+      "start_time": 453.919,
+      "end_time": 480.95,
+      "text": "वन और अब देखिए 0 और वन के बीच में एज है तो आप बोल सकते हैं कि वन और 0 के बीच में भी एज है। लेकिन उसको हम नहीं लिख रहे हैं क्योंकि बाद में आएंगे लेकिन अभी के लिए हम नहीं लिख रहे हैं क्योंकि ज़ीरो और वन लिख दिए ना तो वन ज़ीरो के बीच में लाइन तो सेम ही होती है। ठीक है? वन और टू के बीच में एज है। वन और थ्री के बीच में एज है। Okay? टू की बात करें तो टू और ज़ीरो के बीच में भी एज है। अब टू और ज़ीरो भी कनेक्टेड है लेकिन ज़ीरो टू ऑलरेडी लिखा हो चुका है ना। टू और वन भी है लेकिन वन टू लिख चुके हैं ना तो हम नहीं लिख रहे हैं जस्ट। टू और थ्री लिख सकते हैं। वेरी गुड।",
+      "source": "caption",
+      "english_text": "One and now see, there is an edge between 0 and one, so you can say that there is an edge between one and 0 also. But we are not writing it because it will come later but for now we are not writing it because if we have written zero and one then there is a line between one and zero. Ok? Edge is between one and two. There is an edge between one and three. Okay? Talking about two, there is an edge between two and zero also. Now two and zero are also connected but zero two is already written. There is also two and one but one and two have already been written so we are not just writing it. Can write two and three. very good."
+    },
+    {
+      "start_time": 480.96,
+      "end_time": 513.829,
+      "text": "टू और थ्री बस हो गया। थ्री। अब देखिए थ्री के पास तीन दो एजेस आ रहे हैं। टू से भी, वन से भी। लेकिन वन थ्री भी लिख चुके हैं। टू थ्री भी लिख चुके हैं। तो लिखना उतना जरूरी नहीं है। लिखना उतना जरूरी नहीं है। हम बोल सकते हैं कि चलो ऊपर ऊपर से ये सारे हमको वर्टिक्स और एज दिख रहे हैं। किसी भी ग्राफ के ड्राइंग में या किसी भी ग्राफ के डेटा स्ट्रक्चर में ना ऐसा इस तरीके से इनेशन स्टोर होता है। इसी एग्जैक्ट इसी तरीके से इनफार्मेशन स्टोर होगा। सबसे पहली बात कि वर्टिक्स वर्टिससेस कितने हैं? चार वर्टेस हैं। 0 1 2 3 मान लीजिए। एज मतलब कि किस-किस वर्टेक्स के बीच में लाइन बना हुआ है? तो अगर बोलता है कि 0 1 के बीच में 0 2 1 2 1",
+      "source": "caption",
+      "english_text": "Two and three, that's it. Three. Now see three is getting three two edges. From two, from one also. But have also written one three. Have also written two or three. So writing is not that important. Writing is not that important. We can say that from above we can see all these vertices and edges. In any graph drawing or in any graph data structure, inferences are not stored in this manner. Information will be stored in this exact manner. First of all, how many vertices are there? There are four vertices. 0 1 2 3 Suppose. Edge means that there is a line between which vertex? So if says that between 0 1 0 2 1 2 1"
+    },
+    {
+      "start_time": 513.839,
+      "end_time": 547.43,
+      "text": "3 2 3 तो इस तरीके से इसका इनफार्मेशन स्टोर होता है। लेकिन जितना आपको सिंपल लग रहा है ना अभी बहुत सिंपल आपको लग रहा है कि हां ठीक है ये तो बड़ा मजा आ रहा है। ऐसे-ऐसे लिख देंगे। लेकिन इतना सिंपल ग्राफ होता नहीं है। ये सबसे सिंपल काइंड ऑफ ग्राफ है। क्यों सिंपल है आपको हम बताते हैं। चलिए मान लीजिए कि ये ग्राफ जो है ना ये जो भी ग्राफ बना हुआ है ये Instagram का ग्राफ है। पहले Facebook का मान लीजिए। Facebook का मान लीजिए Facebook का ये ग्राफ है। है तो Facebook में क्या होता है कि लोग फ्रेंड रिक्वेस्ट भेजते हैं और फ्रेंड्स बन जाते हैं एक दूसरे के। मतलब आपका कोई जो लोग नए बच्चे हैं वो लोग Facebook नहीं चलाए होंगे। हम लोग चलाते थे तो Facebook में क्या होता था कि लोग फ्रेंड बन जाते थे। जनरली फ्रेंड बनते थे बस कि चलो फ्रेंड बन जाओ",
+      "source": "caption",
+      "english_text": "3 2 3 So its information is stored in this way. But as simple as it may seem to you, now you are feeling that yes, it is okay, it is a lot of fun. Will write like this. But the graph is not that simple. This is the simplest kind of graph. We will tell you why it is simple. Let us assume that whatever graph is made, it is the graph of Instagram. First consider Facebook. Suppose this is the graph of Facebook. So what happens in Facebook is that people send friend requests and become friends of each other. Meaning, some of your new kids might not have used Facebook. When we used to run it, what used to happen on Facebook was that people would become friends. Generally we used to become friends just let's be friends"
+    },
+    {
+      "start_time": 547.44,
+      "end_time": 573.509,
+      "text": "इसके। इसमें ये काम करेगा। अगर मान लीजिए अगर मान लीजिए क्या हो गया मेरे लैपटॉप को? कुछ तो हो गया। हां। अगर मान लीजिए कि अगर Facebook पे बोला जाए कि भैया ज़ीरो और वन के बीच में एक लाइन है। बस एक सिंपल सा लाइन है। ओके? तो मतलब कि ज़ीरो और वन एक दूसरे के दोस्त हैं। काम चलेगा। लेकिन मान लीजिए कि ये Instagram का लाइन है। क्या है? Instagram का ग्राफ है। अब देखिए जीरो और वन के बीच में एक लाइन आपको दिख रहा है। पीला कलर का एक लाइन दिख रहा है।",
+      "source": "caption",
+      "english_text": "Its. This will work in this. Suppose, what happened to my laptop? Something has happened. Yes. Suppose if it is said on Facebook that there is a line between zero and one. Just a simple line. Ok? So it means that zero and one are friends of each other. Will work. But let's say this is Instagram's line. What is? Instagram's graph. Now see, you can see a line between zero and one. A yellow colored line is visible."
+    },
+    {
+      "start_time": 573.519,
+      "end_time": 607.59,
+      "text": "लेकिन Instagram पे दो चीजें हो सकती हैं। अब ज़ीरो और वन अगर कनेक्टेड है तो Instagram पे दो चीजें हो सकती है। कौन-कौन सी? या तो ज़ीरो फॉलोज़ वन। Instagram पे फॉलो होता है ना कि भैया आप हमको फॉलो करेंगे और हम आपको फॉलो करेंगे। ऐसा नहीं होता है कि आप किसी को फॉलो किए तो ऑटोमेटिकली वो भी फॉलो नहीं होता है ना। जैसे आप अगर पढ़ो विद प्रत्युष को फॉलो करते हैं। जरूरी नहीं है कि पढ़ो विद प्रत्युष का अकाउंट आपको फॉलो करता है। है ना? हम अगर शाहरुख खान को फॉलो करते हैं तो जरूरी थोड़ी है कि शाहरुख खान उनको फॉलो करें। तो दो चीजें हो सकती हैं। अगर जीरो और वन के बीच में लाइन है तो जीरो फॉलोज़ वन या फिर वन फॉलोज़ जीरो। दोनों",
+      "source": "caption",
+      "english_text": "But two things can happen on Instagram. Now if zero and one are connected then two things can happen on Instagram. Which ones? Either zero follows one. Following on Instagram means that brother, you will follow us and we will follow you. It does not happen that if you follow someone then he or she also automatically follows you. Like if you follow Padho Vid Pratyush. It is not necessary that Padho With Pratyush's account follows you. Isn't it? If we follow Shahrukh Khan then it is necessary that Shahrukh Khan follows him. So two things can happen. If there is a line between zero and one then zero follows one or one follows zero. both"
+    },
+    {
+      "start_time": 607.6,
+      "end_time": 640.949,
+      "text": "हो सकता है। मतलब हो सकता है कि दोनों ट्रू हो। हो सकता है कोई एक ही ट्रू हो। तो ये तो यहां पता नहीं चल रहा है। ये तो आप बोल दिया कि भैया 0 और वन के बीच में एक लाइन है। लेकिन अगर Instagram को जानना हो कि अच्छा एक बात बताओ 0 वन को फॉलो करता है कि वन जीरो को फॉलो करता है कि दोनों एक दूसरे को फॉलो करते हैं? तो ये तो बताना मुश्किल है। जिसके बीच में एज नहीं है मतलब जीरो और थ्री के बीच में लाइन नहीं है तो बहुत अच्छा है कि ना जीरो थ्री को फॉलो करता है ना थ्री 0 को फॉलो करता है। वेरी गुड। लेकिन अब जिनके बीच में लाइन है अब साला टू और वन के बीच में लाइन है। तो वन टू को करता है कि टू वन को करता है कि दोनों करता है। ये कैसे पता चलेगा? इस चीज को सॉल्व करने के लिए ये जो",
+      "source": "caption",
+      "english_text": "It is possible. Meaning that both may be true. Only one may be true. So this is not known here. You said that brother, there is a line between 0 and one. But if Instagram wants to know, well tell me one thing, does 0 follow one or does one follow zero or do both follow each other? So this is difficult to tell. Which does not have an edge in between, meaning there is no line between zero and three, so it is very good that neither zero follows three nor three follows 0. very good. But now there is a line between those, now there is a line between two and one. So one does to two or two does to one or both. How will this be known? To solve this thing,"
+    },
+    {
+      "start_time": 640.959,
+      "end_time": 672.47,
+      "text": "लाइन है ना इससे काम नहीं बनेगा। इस चीज को सॉल्व करने के लिए इस तरीके का लाइन देखा गया। इस तरीके का इसको क्या बोलते हैं? डायरेक्टेड एज। इसको क्या बोलते हैं? डायरेक्टेड। इसमें एक एरो दिख रहा है ना आपको एक डायरेक्शन में। इसको क्या बोलते हैं? डायरेक्टेड एज। और इस तरीके के लाइन को जिसको कोई एज नहीं है जो अभी बना हुआ है। इसको क्या बोलते हैं? अनडायरेक्टेड एज। क्या बोलते हैं? अनडायरेक्टेड एज। अनडायरेक्टेड एज। अब अब अगर हम इस ग्राफ को दोबारा बनाएं तो चलिए मान लेते हैं कि आपके पास जो डेटा अवेलेबल है ना वो ये है",
+      "source": "caption",
+      "english_text": "There is a line, this won't work. To solve this problem, this method of line was seen. What is this method called? Directed Edge. What is this called? Directed. You can see an arrow pointing in one direction. What is this called? Directed Edge. And this type of line which has no edge is still formed. What is this called? Undirected Edge. What do you say? Undirected Edge. Undirected Edge. Now if we recreate this graph, let us assume that the data available with you is this."
+    },
+    {
+      "start_time": 672.48,
+      "end_time": 700.63,
+      "text": "कि जीरो फॉलोस वन एक बात है जीरो फॉलोस टू वेरी गुड है टू फॉलोस वन ओके अ थ्री फॉलोस टू ओके और कौन सा एच बच गया वन फॉलोस 3 ये आपका डेटा है। बस ये डेटा है। इसके अलावा आपको कोई भी इनेशन नहीं दिखानी है।",
+      "source": "caption",
+      "english_text": "कि जीरो फॉलोस वन एक बात है जीरो फॉलोस टू वेरी गुड है टू फॉलोस वन ओके अ थ्री फॉलोस टू ओके और कौन सा एच बच गया वन फॉलोस 3 ये आपका डेटा है। बस ये डेटा है। इसके अलावा आपको कोई भी इनेशन नहीं दिखानी है।"
+    },
+    {
+      "start_time": 700.64,
+      "end_time": 731.59,
+      "text": "अब जो ग्राफ बनेगा ना अब इस ग्राफ से थोड़ा अलग बनेगा। अब हम आपको दिखाते हैं कि क्या बनेगा। सबसे पहले तो सबसे पहले तो आइए सबसे पहले तो आपको सेम काम करना है कि ग्राफ बना लेना है। मतलब वर्टिससेस बना लेने हैं। 0 1 2 3 चलिए पहला क्या है? 0 वन को फॉलो करता है। तो हम लोग क्या करेंगे ना? 0 से वन तक एक डायरेक्टेड एज बनाएंगे। ये सिमिलर लाइन नहीं है। ध्यान दीजिएगा। ऊपर में बिना एरो के लाइन था। तो वो था कि चलो ज़ीरो भी वन का है। वन भी ज़ीरो का है। Facebook टाइप का कंडीशन था।",
+      "source": "caption",
+      "english_text": "अब जो ग्राफ बनेगा ना अब इस ग्राफ से थोड़ा अलग बनेगा। अब हम आपको दिखाते हैं कि क्या बनेगा। सबसे पहले तो सबसे पहले तो आइए सबसे पहले तो आपको सेम काम करना है कि ग्राफ बना लेना है। मतलब वर्टिससेस बना लेने हैं। 0 1 2 3 चलिए पहला क्या है? 0 वन को फॉलो करता है। तो हम लोग क्या करेंगे ना? 0 से वन तक एक डायरेक्टेड एज बनाएंगे। ये सिमिलर लाइन नहीं है। Please pay attention. ऊपर में बिना एरो के लाइन था। तो वो था कि चलो ज़ीरो भी वन का है। वन भी ज़ीरो का है। Facebook टाइप का कंडीशन था।"
+    },
+    {
+      "start_time": 731.6,
+      "end_time": 764.55,
+      "text": "लेकिन अब है कि जीरो वन को फॉलो करता है। वन से ज़ीरो तक कोई लाइन नहीं है। ऐसा कोई लाइन नहीं है जो वन से ज़ीरो ऐसा हो। नहीं ऐसा नहीं है लाइन। ज़ीरो से वन है क्योंकि ज़ीरो वन को फॉलो करता है। वन ज़ीरो को वापस नहीं करता है फॉलो। ओके? अगला लाइन क्या है? ज़ीरो फॉलोज़ टू। तो ज़ीरो से टू तक एक डायरेक्टेड ग्राफ H बनेगा। वेरी गुड। उसके बाद टू फॉलोस वन तो टू [गला साफ़ करने की आवाज़] से वन तक एक डायरेक्टेड ग्राफ बनेगा ऐसा। उसके बाद थ्री फॉलोस टू थ्री से टू तक एक ये बनेगा और वन फॉलोस थ्री और वन फॉलोस थ्री। ये",
+      "source": "caption",
+      "english_text": "लेकिन अब है कि जीरो वन को फॉलो करता है। वन से ज़ीरो तक कोई लाइन नहीं है। ऐसा कोई लाइन नहीं है जो वन से ज़ीरो ऐसा हो। नहीं ऐसा नहीं है लाइन। ज़ीरो से वन है क्योंकि ज़ीरो वन को फॉलो करता है। वन ज़ीरो को वापस नहीं करता है फॉलो। Ok? अगला लाइन क्या है? ज़ीरो फॉलोज़ टू। तो ज़ीरो से टू तक एक डायरेक्टेड ग्राफ H बनेगा। very good. उसके बाद टू फॉलोस वन तो टू [गला साफ़ करने की आवाज़] से वन तक एक डायरेक्टेड ग्राफ बनेगा ऐसा। उसके बाद थ्री फॉलोस टू थ्री से टू तक एक ये बनेगा और वन फॉलोस थ्री और वन फॉलोस थ्री। this"
+    },
+    {
+      "start_time": 764.56,
+      "end_time": 799.509,
+      "text": "देखिए। अब ये वाला ग्राफ और ऊपर वाला ग्राफ देखने में सेम लग रहा है। मतलब देखने में कद काठ ही सबका सेम है कि चार है। इधर-उधर है। यहां भी लेकिन ये दोनों ग्राफ अलग-अलग है। अलग-अलग क्यों है? ये वाला जो ग्राफ है ना ये अनडायरेक्टेड ग्राफ बोलते हैं इसको। क्या बोलते हैं? अनडायरेक्टेड ग्राफ। ये आपको क्वेश्चन में बताया रहेगा। ये आपको क्वेश्चन में साफ-साफ बताया रहेगा। अनडायरेक्टेड ग्राफ मतलब कि दो वर्टिससेस अगर कनेक्टेड है ना तो कनेक्शन दोनों तरीके से है। दोनों तरफ से है। ऐसा कुछ आपको नहीं करना है कि एक तरफ से एक तरफ़ा प्यार वैसा नहीं है। ये अनडायरेक्टेड ग्राफ आपको साफ-साफ बताया रहेगा। लेकिन कभी-कभी आपको क्वेश्चन में",
+      "source": "caption",
+      "english_text": "Look. अब ये वाला ग्राफ और ऊपर वाला ग्राफ देखने में सेम लग रहा है। मतलब देखने में कद काठ ही सबका सेम है कि चार है। इधर-उधर है। यहां भी लेकिन ये दोनों ग्राफ अलग-अलग है। Why is it different? ये वाला जो ग्राफ है ना ये अनडायरेक्टेड ग्राफ बोलते हैं इसको। What do you say? Undirected graph. ये आपको क्वेश्चन में बताया रहेगा। ये आपको क्वेश्चन में साफ-साफ बताया रहेगा। अनडायरेक्टेड ग्राफ मतलब कि दो वर्टिससेस अगर कनेक्टेड है ना तो कनेक्शन दोनों तरीके से है। दोनों तरफ से है। ऐसा कुछ आपको नहीं करना है कि एक तरफ से एक तरफ़ा प्यार वैसा नहीं है। ये अनडायरेक्टेड ग्राफ आपको साफ-साफ बताया रहेगा। लेकिन कभी-कभी आपको क्वेश्चन में"
+    },
+    {
+      "start_time": 799.519,
+      "end_time": 833.99,
+      "text": "बोला रहेगा गिवेन ए डायरेक्टेड ग्राफ। गिवेन ए डायरेक्टेड ग्राफ। यस। डायरेक्टेड ग्राफ। उस समय में ना जो लाइन बनेंगे ना वो डायरेक्शन के साथ बनेंगे। भैया जीरो से वन अगर लाइन जा रहा है ना तो जीरो वन एज है। इसमें आप लिख सकते हैं कि जीरो एंड वन एक एज है। लेकिन वन और ज़ीरो कोई एज नहीं है। वन से ज़ीरो तक कोई लाइन नहीं जा रही है। ऐसा कोई लाइन नहीं है जो वन से ज़ीरो तक जा रही है। इस ग्राफ को क्या बोलते हैं? डायरेक्टेड ग्राफ। तो आप लोग दो तरीके का ग्राफ देख लिए। एक तो हो गया सिंपल कि वैसा होगा। अभी देखिए अभी सिंटेक्स इसीलिए हम बोले थे कि ये बेसिक",
+      "source": "caption",
+      "english_text": "Will say given a directed graph. Given a directed graph. Yes. Directed graph. In that time, neither the lines will be made nor they will be made with direction. Brother, if the line is going from zero to one then zero is one edge. In this you can write that zero and one are an edge. But one and zero are not ages. There is no line going from one to zero. There is no line going from one to zero. What is this graph called? Directed graph. So you guys have seen two types of graphs. One thing is simple that it will happen. Just look at the syntax, that's why we said that it is basic."
+    },
+    {
+      "start_time": 834.0,
+      "end_time": 868.629,
+      "text": "वाला पार्ट सबको देखना चाहिए। ये हम आपको बस बता रहे हैं कि कितने तरीके की चीजें पॉसिबल हो सकती है ताकि जब हम लोग कोड में चले ना इंप्लीमेंटेशन में तो आपको क्लियर रहे कि क्या बोल रहा है वैसा नहीं होना चाहिए कि कुछ बोला क्या पता नहीं क्या करने लगा नहीं ओके अनडायरेक्टेड ग्राफ देख लिए डायरेक्टेड ग्राफ देख लिए तो क्या यहीं पे खत्म हो जाता है नहीं यहां भी खत्म नहीं होता है ठीक है तो अभी तक हम लोग क्या बोले कि ये Instagram में काम करेगा Instagram में परफेक्टली काम करेगा ये ऊपर वाला Facebook में परफेक्टली काम करेगा लेकिन अब बात आती है चलिए Google मैप्स की आ जाते हैं किसकी Google मैप्स की ओके अब किसकी की बात कर लें Google maps की। मान लीजिए शहर है। मान लीजिए शहर",
+      "source": "caption",
+      "english_text": "Everyone should see that part. We are just telling you how many types of things can be possible, so that when we go into the code or the implementation, you should be clear about what is being said, it should not be that what was said, I don't know what I started doing, okay, after seeing the undirected graph, after seeing the directed graph, does it end here? No, it does not end here too. Okay, so what have we said till now that this will work in Instagram, this above one will work perfectly in Instagram. It will work perfectly on Facebook but now let's talk about Google Maps. Okay now let's talk about whose Google Maps. Suppose it is a city. let's say city"
+    },
+    {
+      "start_time": 868.639,
+      "end_time": 897.509,
+      "text": "है। 0 1 2 3 चार जगह है शहर में। अच्छा आपको बोला जाता है आपको क्या बोला जाता है कि भैया ज़ीरो से वन तक रोड है। ज़ीरो से वन तक रोड है। मतलब कि ऐसा नहीं है कि वन से ज़ीरो तक है। मान लीजिए वन वे रोड है। ज़ीरो से वन तक एक वन वे रोड है। ओके? तो आप क्या बोलेंगे कि ठीक है? हम ज़ीरो से वन तक एक एरो बना देंगे। वेरी गुड। लेकिन अब अब Google मैप्स सिर्फ आपको ये थोड़ी दिखाता है कि बेंगलुरु से रांची तक एक रोड है।",
+      "source": "caption",
+      "english_text": "Is. 0 1 2 3 There are four places in the city. Well, you are told, what are you told that brother, there is a road from zero to one. There is a road from zero to one. Meaning it is not that it is from one to zero. Suppose it is a one way road. There is a one way road from zero to one. Ok? So what would you say is okay? We'll make an arrow from zero to one. very good. But now Google Maps only shows you that there is a road from Bengaluru to Ranchi."
+    },
+    {
+      "start_time": 897.519,
+      "end_time": 930.389,
+      "text": "नहीं बोर से रांची का डिस्टेंस क्या है भाई? बोर से रांची कितना किलोमीटर है? रांची से दिल्ली कितना किलोमीटर है? अब आपको एक और चीज यहां पे स्टोर करनी है। आपको बोल रहा है कि जीरो से वन तक एक रोड है। वेरी गुड। आप बना दिए। लेकिन वो 10 कि.मी. है। वो 10 कि.मी. है। अब ना इसके ऊपर आपको एक 10 लिखना पड़ेगा। इसके ऊपर एक 10 क्या है? हम बताएंगे। लिख देते हैं। लिख देते हैं। ड्राइंग में तो लिख ही सकते हैं। अब बता रहे हैं कि ड्राइंग कैसे बनाना है। ओके? फिर आपको कोई बोलता है कि वन से टू तक एक रोड है। वन से टू तक एक वन वे रोड है। तो आप बोलेंगे कि ठीक है वन से टू तक है ना? तो वन से टू तक एक बना",
+      "source": "caption",
+      "english_text": "No brother, what is the distance from Bor to Ranchi? How many kilometers is it from Bor to Ranchi? How many kilometers is it from Ranchi to Delhi? Now you have to store one more thing here. Telling you that there is a road from zero to one. very good. You made it. But that 10 km. Is. That 10 km. Is. Now you will have to write a 10 on top of it. What's a 10 on top of this? we tell. Let's write. Let's write. At least you can write in the drawing. Now we are telling you how to make a drawing. Ok? Then someone tells you that there is a road from one to two. From one to two is a one way road. So you will say that it is okay from one to two, right? So from one to two become one"
+    },
+    {
+      "start_time": 930.399,
+      "end_time": 962.23,
+      "text": "लेंगे। और इसका डिस्टेंस 5 कि.मी. है। इसका डिस्टेंस कितना है? 5 कि.मी. तो उसके ऊपर पांच लिख दीजिए। वेरी गुड। उसके बाद क्या बोलता है ये? टू से 0 तक। टू से 0 तक एक रोड है। तो बोलेंगे कि ठीक है? टू से ज़ीरो तक रोड है तो बना लेंगे ऐसे। और इसका डिस्टेंस क्या बोला? इसका डिस्टेंस 20 कि.मी. है। इसका डिस्टेंस कितना है? 20 कि.मी. तो यहां पे क्या हो जाएगा? 20 कि.मी. वेरी गुड। उसके बाद क्या बोला? वन से थ्री तक रोड है। ओके? तो वन से थ्री तक रोड है तो बना देंगे। कोई दिक्कत नहीं है।",
+      "source": "caption",
+      "english_text": "Will take. And its distance is 5 km. Is. What is its distance? 5 km So write five on it. very good. What does he say after that? From two to 0. There is a road from 2 to 0. So will you say is it okay? If there is a road from two to zero, we will build it like this. And what does its distance say? Its distance is 20 km. Is. What is its distance? 20 km So what will happen here? 20 km very good. What did you say after that? There is a road from one to three. Ok? So if there is a road from one to three, we will build it. There is no problem."
+    },
+    {
+      "start_time": 962.24,
+      "end_time": 993.67,
+      "text": "और इसका डिस्टेंस कितना है? इसका डिस्टेंस 3 कि.मी. है। इसका डिस्टेंस 3 कि.मी. है। तो इसमें तीन लिख दिए। अब लास्ट में बोला 2 से 3 तक रोड है। ओके? 2 से तीन तक रोड है तो बना लेंगे ऐसा करके ड्राइंग। इसका डिस्टेंस कितना है? इसका डिस्टेंस 6 कि.मी. है। इसका डिस्टेंस 6 कि.मी. है। ये देखिए। अब देखिए अब आप बोलेंगे कि ऊपर वाला ग्राफ और ये वाला ग्राफ देखने में तो सिमिलर लग रहा है। लेकिन इसमें एक और चीज क्या ऐड हो गई? ऊपर वाले ग्राफ में क्या था? आपको ज़ीरो से वन तक एरो था। ओके?",
+      "source": "caption",
+      "english_text": "And what is its distance? Its distance is 3 km. Is. Its distance is 3 km. Is. So I wrote three in it. Now in the last said there is road from 2 to 3. Ok? If there is a road from 2 to 3 then we will make the drawing by doing this. What is its distance? Its distance is 6 km. Is. Its distance is 6 km. Is. Look at this. Now see, you will say that the above graph and this graph look similar. But what else was added to it? What was in the graph above? You had arrows from zero to one. Ok?"
+    },
+    {
+      "start_time": 993.68,
+      "end_time": 1028.23,
+      "text": "लेकिन सारा एरो बराबर था। मतलब ज़ीरो से वन तक एरो भी एरो ही था। वन से थ्री तक वाला एरो भी एरो ही था। लेकिन अब आपके पास ना हर एरो के ऊपर एक क्या लिखा हुआ है? एक तरीके का वेट लिखा हुआ है। एक तरीके का किसी तरीके का वेट लिखा हुआ है। किसी तरीके का क्या लिखा हुआ है? वेट लिखा हुआ है। ओके? 1 मिनट। किसी तरीके का क्या लिखा हुआ है? वेट लिखा हुआ है। तो अब यहां पे हर एरो बराबर नहीं है। आप ये नहीं कह सकते हैं कि चलो ज़ीरो से वन जाने में भी एक एक सेकंड लगेगा और वन से थ्री जाने में भी 1 सेकंड। नहीं ऐसा नहीं है। अगर आप ज़ीरो से वन देखेंगे तो ये 10 कि.मी. है। 10 कि.मी.",
+      "source": "caption",
+      "english_text": "But the whole arrow was equal. Meaning, from zero to one, Arrow was also Arrow. The arrow from one to three was also an arrow. But now you have what is written above each arrow? One type of weight is written. The weight of one type or another is written. What is written in some way? Weight is written. Ok? 1 minute. What is written in some way? Weight is written. So now every arrow here is not equal. You cannot say that it will take one second to go from zero to one and one second to go from one to three. No it is not like that. If you see the forest from zero then it is 10 km. Is. 10 km"
+    },
+    {
+      "start_time": 1028.24,
+      "end_time": 1060.87,
+      "text": "का पाथ है ना? और अगर आप वन से टू देखेंगे तो ये 5 कि.मी. का पाथ है। अब थोड़ा और बदल गया है। तो अब अब तो ये डायरेक्टेड तो है। ये डायरेक्टेड तो है क्योंकि एरो है। ऐसा तो है नहीं कि आपको बोला गया है कि जीरो से वन तक भी रोड है और वन से ज़ीरो तक भी रोड है। नहीं जीरो से वन तक वन वे रोड है। एक तरीके का रोड है। अगर वन से ज़ीरो होगा तो बताएंगे आगे। डायरेक्टेड है। और इसमें आपको ये भी बताया हुआ है कि हर एज का एक वेट मतलब हर एज के एक डिस्टेंस हर एज के साथ एक वैल्यू एसोसिएटेड है। आप ज़ीरो से वन चल रहे हैं ना तो आपको कुछ वैल्यू मिलेगा या आपको देना पड़ेगा। कुछ भी हो सकता है। या तो आपको वैल्यू मिले कुछ भी।",
+      "source": "caption",
+      "english_text": "Is it the path? And if you look from one to two, it is 5 km. is the path of. Now a little more has changed. So now it is directed. It is directed because it is Arrow. It is not that you have been told that there is a road from zero to one and there is a road from one to zero also. No, it is a one way road from zero to one. There is a one way road. If it changes from one to zero, we will tell further. Is directed. And in this you are also told that a weight of each edge means a distance of each edge and a value associated with each edge. You are moving from zero to one, neither will you get any value or you will have to give it. Anything can happen. Either you get value or whatever."
+    },
+    {
+      "start_time": 1060.88,
+      "end_time": 1086.31,
+      "text": "लेकिन हर एज अलग-अलग है। तो ये वेटेड ग्राफ है। ये वेटेड ग्राफ बोला जाता है इसको। इसको क्या बोला जाता है? एक वेटेड ग्राफ बोला जाता है। तो दो चीजें हैं। सबसे ऊपर वाला ग्राफ जो था सबसे ऊपर वाला ग्राफ। ये नॉन वेटेड था। ये नॉनवेटेड इसमें देख लीजिए। किसी ऐज के साथ हम ये नहीं ना बोले थे कि अगर ये तो पॉसिबल नहीं है ना? क्योंकि ये ग्राफ हम किसके लिए बनाए थे? Facebook के लिए। अब प्रत्युष अमन का दोस्त है तो उसमें क्या वेट है?",
+      "source": "caption",
+      "english_text": "But every age is different. So this is a weighted graph. This is called weighted graph. What is this called? is called a weighted graph. So there are two things. The top graph which was the top graph. It was non weighted. Take a look at this non-weighted one. We did not say to anyone that if this is not possible, right? Because who did we make these graphs for? For Facebook. Now Pratyush is Aman's friend so what is the weight in it?"
+    },
+    {
+      "start_time": 1086.32,
+      "end_time": 1121.029,
+      "text": "उसमें क्या बोलेंगे कि क्या दोस्त है तो दोस्त है सब इक्वल है तो ये नॉन वेटेड ग्राफ था और अनडायरेक्टेड ग्राफ था कि Facebook में भैया हम आपके दोस्त हैं तो आप भी मेरे दोस्त हैं कोई उसमें झंझट नहीं है ओके अगला वाला ग्राफ किसका बना Instagram का अगला वाला ग्राफ किसका बना Instagram का इसमें क्या बोला गया कि नहीं ऐसा नहीं है कि अगर ज़ीरो वन को फॉलो करता है तो वन भी ज़ीरो को करे नहीं ज़ीरो वन को फॉलो करे तो तुम एक एज बनाना लेकिन यहां भी ये भी एक नॉन वेटेड ग्राफ था अब Instagram में भी क्या वेट देंगे मतलब बढ़ो वि प्रत्युष आप फॉलो कर रहे हैं तो उसमें क्या होगा? बस फॉलो कर लीजिए उसमें कुछ तो है नहीं वैसा। तो ये नॉन वेटेड लेकिन",
+      "source": "caption",
+      "english_text": "What will we say in it that if a friend is a friend, everyone is equal, so it was a non-weighted graph and an undirected graph that in Facebook, brother, if we are your friend, then you are also my friend, there is no problem in that, okay, whose graph made the next graph of Instagram, whose graph is the next graph of Instagram, what was said in it or not, it is not that if zero follows one, then one also follows zero, if zero follows one, then you are an edge. Banana But here also this was a non-weighted graph, now what weight will be given in Instagram also, meaning increase if you are following Pratyush, then what will happen in it? Just follow, there is nothing like that. So this is non weighted but"
+    },
+    {
+      "start_time": 1121.039,
+      "end_time": 1154.95,
+      "text": "डायरेक्टेड ग्राफ था। अब आ जाते हैं Google मैप्स पे। अब आ जाते हैं किस पे? Google मैप्स पे। अब ये डायरेक्टेड ग्राफ तो है। डायरेक्टेड ग्राफ तो है बिल्कुल। ज़ीरो से वन रांची से बोलो रोड है। इसका ये मतलब नहीं है कि बोर से रांची की रोड है। वेरी गुड। लेकिन रांची से बोर जाने में आपको कुछ डिस्टेंस लगेगा। वो डिस्टेंस आपको कहीं ना कहीं स्टोर करना पड़ेगा ना। बिना डिस्टेंस के Google मैप क्या करेगा? Google मैप बस ब्लू वाला लाइन थोड़ी दिखाएगा कि ऐसा-ऐसा करके चल जाओ। नहीं डिस्टेंस पता रहेगा। अगर किसी को डिस्टेंस पता रहेगा तभी तो Google मैप्स कुछ आपको बता पाएगा ना कि बेंगलुरु से अमेरिका जाने के लिए सबसे अच्छा रूट क्या है? कैसे बताएगा? डिस्टेंस ही अगर नहीं मालूम",
+      "source": "caption",
+      "english_text": "Was a directed graph. Now let's come to Google Maps. Now let's come to what? On Google Maps. Now this is a directed graph. It is definitely a directed graph. Zero to one is Ranchi to Bolo Road. This does not mean that there is a road from Bor to Ranchi. very good. But it will take you some distance to get bored of Ranchi. You will have to store that distance somewhere. What will Google Map do without distance? Google Map will just show a little blue line telling you to walk like this. No, distance will be known. Only if someone knows the distance, Google Maps will be able to tell you what is the best route to go from Bangalore to America? How will you tell? If you don't know the distance"
+    },
+    {
+      "start_time": 1154.96,
+      "end_time": 1181.11,
+      "text": "रहेगा। तो ये क्या है? डायरेक्टेड एंड वेटेड ग्राफ। डायरेक्टेड एंड वेटेड ग्राफ। तो इन तरह के ग्राफ्स होते हैं। उतना सिंपल नहीं होता है। इसका एप्लीकेशन क्या होता है? हम आपको बता देते हैं। देखिए अ इसका एप्लीकेशन आपको हम कैसे बतलाएं? देखिए मान लीजिए आपसे Google मैप्स पूछे। आप Google मैप्स बोलें कि हमको ना एक बात बताओ जीरो से थ्री जाना है। कहां से? मेरा सोर्स ज़ीरो है और डेस्टिनेशन थ्री है। तो देखिए एक पाथ ज़ीरो से थ्री जाने का ये है।",
+      "source": "caption",
+      "english_text": "Will remain. So what is this? Directed and weighted graphs. Directed and weighted graphs. So these are the types of graphs. It is not that simple. What is its application? We will tell you. See, how can we tell you its application? Look, suppose Google Maps asks you. You tell Google Maps to tell us one thing, we have to go from zero to three. From where? My source is zero and destination is three. So see, this is one path to go from zero to three."
+    },
+    {
+      "start_time": 1181.12,
+      "end_time": 1214.87,
+      "text": "आप पहले 0 से वन चले जाइए। वन से टू चले जाइए। टू से थ्री चले जाइए। है ना पाथ? देखिए ज़ीरो से वन चले गए। वन से टू चले गए। टू से इसमें कितना टाइम लगा? इसमें देखिए 0 से वन जाने में 10, वन से टू जाने में फाइव और टू से जाने में थ्री तो मतलब 21 21 कि.मी. आपको चलना पड़ा। लेकिन लेकिन लेकिन आप ये भी [गला साफ़ करने की आवाज़] कर सकते थे आप 0 से वन चले गए और वन से थ्री आ गए। वन से टू जाने की क्या जरूरत है? वन से डायरेक्ट आ गए। इसमें कितना टाइम लगेगा? 10 + 3 13 कि.मी. कौन सा पाथ छोटा है? 0 से वन और वापस वन से थ्री।",
+      "source": "caption",
+      "english_text": "You first go from 0 to one. Go from one to two. Go from two to three. Isn't it Path? See, went from zero to one. Went from one to two. How much time did it take? See in this, going from 0 to one takes 10, going from one to two takes five and going from two to three takes 21 21 kilometers. You had to walk. But but but you could also [clearing throat] you went from 0 to one and from one to three. What is the need to go from one to two? Came straight from the forest. How much time will it take? 10 + 3 13 km Which path is shorter? From 0 to one and back from one to three."
+    },
+    {
+      "start_time": 1214.88,
+      "end_time": 1248.71,
+      "text": "मतलब ये वाला पाथ। ये वाला पाथ छोटा है। तो आपको Google Maps कौन सा पाथ बताता है? 13 कि.मी. 21 कि.मी. वाला नहीं बताता है। Google मैप आपको ये पता कैसे चलता है? क्योंकि वो एक वेटेड डायरेक्टेड ग्राफ है। कितना कैसा ग्राफ है वो? वेटेड डायरेक्टेड ग्राफ है। मान लीजिए ज़ीरो से थ्री रास्ता ही नहीं रहता। ज़ीरो से थ्री रास्ता रहता ही नहीं। मतलब आप कुछ भी करके नहीं जा सकते हैं। तो बोल देता है कि भई आप नहीं जा सकते। ठीक है? आप जैसे आप बोलेंगे कि हम कार सेलेक्ट किए हैं और हमको पटना से अमेरिका जाना है। तो बोलेगा कि पगला गए हो क्या? पटना से अमेरिका। कार से नहीं जाया जाता है। क्योंकि रूट ही नहीं है ना। कहां जाओगे? गुजरात जा के रुकना पड़ेगा। कहां जाओगे अमेरिका?\" तो बोलेगा नहीं जा सकते",
+      "source": "caption",
+      "english_text": "Meaning this path. This path is short. So which path does Google Maps tell you? 13 km 21 km The one does not tell. How does Google Maps know this? Because it is a weighted directed graph. What kind of graph is that? is a weighted directed graph. Suppose there is no way from zero to three. There is no way from zero to three. Meaning you cannot leave after doing anything. So he says, brother, you cannot go. Ok? Like you will say that we have selected the car and we have to go to America from Patna. Then he will say, have you gone mad? Patna to America. Not accessible by car. Because there is no root, right? Where will you go? Will have to go to Gujarat and stay. Where will you go, America?\" then he will say, you can't go."
+    },
+    {
+      "start_time": 1248.72,
+      "end_time": 1278.71,
+      "text": "हैं। जब आप एयरप्लेन सेलेक्ट करेंगे तो एयरप्लेन का हो सकता है कि होगा अलग ग्राफ। तो बोलेगा कि हां पटना से अमेरिका जाने के लिए पटना से दिल्ली चले जाइए और दिल्ली से अमेरिका चले जाइए तो आप जा सकते हैं। कार से नहीं जा सकते हैं। पैदल नहीं जा सकते हैं। तो ये ऐसे करके ये काम करता है। ठीक है? अब आपको लगभग लगभग पूरा नहीं आया लेकिन बेसिक-बेसिक अंडरस्टैंडिंग हो गया होगा कि ग्राफ कैसा लगता है? एज कैसे बनता है? एज क्या होता है? अब आइए कोड पे चलते हैं। अब जो लोग भी C++ वाले हैं रुक जाइए। जावा वाले अपने टाइम स्टैंप पे, Python वाले अपने-अपने टाइम स्टैंप पे।",
+      "source": "caption",
+      "english_text": "Are. When you select an airplane, the airplane may have a separate graph. Then he will say that yes, to go from Patna to America, go from Patna to Delhi and from Delhi to America, then you can go. Cannot go by car. Cannot go on foot. So this is how it works. ok? Now you may not have understood it completely but you must have a basic understanding of what a graph looks like? How is an edge formed? What is edge? Now let's move on to the code. Now all those who are into C++, stop. Java people on their own time stamp, Python people on their own time stamp."
+    },
+    {
+      "start_time": 1278.72,
+      "end_time": 1312.95,
+      "text": "चलिए चलिए तो C++ वाले शुरू करते हैं। शुरू किससे करेंगे हम लोग? अनडायरेक्टेड नॉनवेटेड से। सबसे सिंपल वाला जो होता है उसी से शुरू करना अच्छा रहता है। तो मान लीजिए कि ये ग्राफ आपको ड्राइंग नहीं दिया रहेगा। एक ग्राफ हम बना दिए रेफरेंस के लिए कि ये ग्राफ ऐसा दिखता है। आपको जनरली आपको जनरली क्या दिया रहेगा ना? आपको एक लिस्ट ऑफ एजेस दिया रहेगा। क्या? लिस्ट ऑफ एजेस दिया रहेगा। मतलब लिस्ट ऑफ एजेस दिया रहेगा। और एंड नंबर ऑफ़ वर्टिससेस दिया रहेगा। नंबर ऑफ़ वर्टिससेस दिया रहेगा। ठीक है? हम बोल रहे हैं कि आपको लीड कोड क्या प्रोवाइड करेगा? लीड कोड ऐसा तो है नहीं कि आपको ड्राइंग बना के ये दे देगा। लीड",
+      "source": "caption",
+      "english_text": "Come on, let's start with C++. What should we start with? From undirected nonweighted. It is best to start with the simplest one. So suppose that this graph will not be given to you in drawing. We have made a graph for reference that this graph looks like this. What will be given to you in general, right? You will be given a list of ages. what? List of ages will be given. Meaning list of ages will be given. And the end number of vertices will be given. Number of vertices will be given. ok? We are talking about what will the lead code provide you? Lead code is not such that it will give you a drawing. lead"
+    },
+    {
+      "start_time": 1312.96,
+      "end_time": 1347.27,
+      "text": "कोड आपको बोलेगा कि भैया ये एजेस है और इसमें चार वर्टेक्स है। तो लीड कोड क्या बोलेगा? n = 4 है। इसका क्या मतलब है कि आपको ज़ीरो से लेके थ्री तक करना है। वो आप अपने हिसाब से कर सकते हैं। वो आप किसी को मन करता है कि हम वन से फोर तक करें तो आप कर सकते हैं। लेकिन अब क्योंकि एरे वगैरह में भी इंडेक्स ज़ीरो से स्टार्ट होता है। हम लोग भी इसमें ज़ीरो से स्टार्ट करेंगे। तो आपको समझ में आना चाहिए कि 0 1 2 3 ऐसा करके मेरा एक ग्राफ बनेगा। अच्छा उसके बाद आपको क्लियरली लिखा रहेगा कि ये किस तरीके का ग्राफ है। आपको बोलागा अनडायरेक्टेड ग्राफ है अगर अनडायरेक्टेड और नॉनवेटेड और नॉनवेटेड। नॉनवेटेड तो आपको देख के समझ में आ जाएगा क्योंकि अगर वेटेड होगा तो",
+      "source": "caption",
+      "english_text": "The code will tell you that brother, this is Edges and it has four vertexes. So what will the lead code say? n = 4. What this means is that you have to do it from zero to three. You can do that as per your convenience. If any of you feel like doing it from one to four, you can do it. But now because even in arrays etc. the index starts from zero. We will also start from zero in this. So you should understand that by doing this 0 1 2 3 I will create a graph. Well, after that it will be clearly written to you as to what type of graph it is. You will say it is an undirected graph if undirected and nonweighted and nonweighted. If it is non-weighted then you will understand after seeing it because if it is weighted then"
+    },
+    {
+      "start_time": 1347.28,
+      "end_time": 1381.99,
+      "text": "वेट देगा। वेटेड नहीं होगा तो वेट नहीं देगा। है ना? अच्छा आपको एज किस तरीके का दिया रहेगा? वो क्या रहेगा? हम आपको बताते हैं। h किस तरीके का? आपको एक वेक्टर ऑफ़ वेक्टर ऑफ इंट एजेस ऐसा करके दिया रहेगा। करीब-करीब 90% क्वेश्चन में जितना हम बनाए हैं ऐसा करके दिया रहेगा। इसका क्या मतलब होता है? इसको हम बताते हैं। पहले तो इसका मतलब क्या है? वेक्टर ऑफ़ वेक्टर ऑफ़ हिंट। मतलब एक वेक्टर जिसमें हर एंट्री एक वेक्टर है। 2D अरे तो एक बहुत बड़ा सा वेक्टर रहेगा। ठीक है? ऐसा करके। इसका नाम क्या है? एजेस। इसका नाम",
+      "source": "caption",
+      "english_text": "Will give weight. If it is not weighted then weight will not be given. isn't it? Well, what kind of edge will you be given? What will that be? We tell you. h Which way? You will be given a vector of vector of integer edges by doing this. Almost 90% of the questions that we have prepared will be given in this manner. What does this mean? Let us tell you this. First of all, what does it mean? Vector of vector of hint. Meaning a vector in which every entry is a vector. 2D, so there will be a very big vector. ok? By doing this. What is its name? Ages. its name"
+    },
+    {
+      "start_time": 1382.0,
+      "end_time": 1416.71,
+      "text": "क्या है? एजेस। 0 1 2 3 4 इसके हर बॉक्स में एक अलग वेक्टर है। इसके हर बॉक्स में एक अलग वेक्टर है और उसमें दो चीजें रहेंगी। उसमें दो चीजें रहेंगी। वो दो चीजें आपको ये बताएंगी कि फलाना वर्टेक्स से फलाना वर्टेक्स तक एज है। फॉर एग्जांपल उसमें ऐसा दिया रहेगा। देखिए आपको ज़ीरो से वन देगा, ज़ीरो से टू देगा, वन से टू देगा, वन से थ्री देगा, टू से थ्री देगा। बस खत्म हो गया काम। खत्म हो गया काम। देखिए आपको एक वेक्टर ऑफ़ वेक्टर ऑफ़ इंट मिलेगा जिसमें कि एक बहुत बड़ा सा वेक्टर एजेस एजेस जिसमें चार पांच चीजें हैं। अच्छा",
+      "source": "caption",
+      "english_text": "What is it? Ages. 0 1 2 3 4 Each box has a different vector. Each box has a different vector and will contain two things. There will be two things in it. Those two things will tell you that there is an edge from such and such vertex to such and such vertex. It will be given as an example. See, zero will give you one, zero will give two, one will give two, one will give three, two will give three. The work is just finished. The work is finished. See, you will get a vector of vector of int which has a very big vector edges edges which has four or five things in it. good"
+    },
+    {
+      "start_time": 1416.72,
+      "end_time": 1449.99,
+      "text": "नंबर ऑफ़ एजेस पांच हैं और हर एंट्री में एक आपको एक पर्टिकुलर एज दिया रहेगा। वो पर्टिकुलर एज कैसा दिखेगा? किसी भी सोर्स वर्टेक्स और डेस्टिनेशन वर्टेक्स। तो आप देख सकते हैं कि इस ग्राफ के हिसाब से आपको बोला है कि ज़ीरो से वन के बीच में एज है। तो देख सकते हैं ज़ीरो से वन के बीच में लाइन है असली ग्राफ में। अब क्योंकि ये अनडायरेक्टेड है तो ऑब्वियस सी बात है कि वन से ज़ीरो के बीच में भी होगा। वन से 0 आपको नहीं देगा क्योंकि हम पहले ही बता चुके हैं कि बेकार काम है ना। अब जब अनडायरेक्टेड है तो ऑब्वियस सी बात है कि 0 से वन मतलब वन से ज़ीरो भी है। तो क्यों इतना बेकार का ये करना है? तो आपको 0 से टू दिया है। ज़ीरो से टू ऑब्वियस सी बात है कि टू से ज़ीरो भी है। टू से ज़ीरो लिखा हुआ",
+      "source": "caption",
+      "english_text": "The number of edges is five and in each entry you will be given a particular edge. What will that particular edge look like? Any source vertex and destination vertex. So you can see that according to this graph you are told that there is an edge between zero and one. So you can see that there is a line between zero and one in the real graph. Now since it is undirected, it is obvious that it will also be between one and zero. One to 0 will not give you because we have already told that it is useless. Now when it is undirected then it is obvious that 0 to one also means one to zero. So why do this is so useless? So you have been given 0 to 2. From Zero to Two It is obvious that there is also a difference from two to zero. written from two to zero"
+    },
+    {
+      "start_time": 1450.0,
+      "end_time": 1483.35,
+      "text": "नहीं रहेगा इसमें। तो ये आपको इनपुट ये सब आपका इनपुट है। ये सब आपका इनपुट है। आपको इसको ग्राफ के फॉर्म में या तो डेटा स्ट्रक्चर में स्टोर करवाना है या तो कुछ और करवाना है। अच्छा। अब डेटा स्ट्रक्चर में स्टोर करवाने के लिए सबसे पहला काम जो हम पहले लेक्चर में बता चुके हैं। आप एक टू डी मैट्रिक्स बना सकते हैं। क्या बना सकते हैं? 2D मैट्रिक्स बना सकते हैं। लेकिन वो नहीं बनाना है। बता देते हैं। बता देते हैं। ऐसा नहीं होना चाहिए कि आता ही नहीं है। आप एक टू डी मैट्रिक्स बना सकते हैं। जैसा कि हम लोग फर्स्ट लेक्चर में कैसा देखे थे कि जितने यूजर थे उनका मतलब n * n का मैट्रिक्स बना लिए। तो n *",
+      "source": "caption",
+      "english_text": "Will not remain in it. So this is your input, this is all your input. This is all your input. You either have to store it in the form of a graph or in a data structure or do something else. Okay. Now the first task to be done is to store it in the data structure which we have mentioned in the first lecture. You can create a 2D matrix. What can we make? Can create 2D matrix. But that is not to be done. Let me tell you. Let me tell you. It should not be that it does not come. You can create a 2D matrix. As we saw in the first lecture, we made a matrix of n*n meaning the number of users. then n*"
+    },
+    {
+      "start_time": 1483.36,
+      "end_time": 1515.35,
+      "text": "n कितना है यहां पे? चार। तो आप ऐसा कर सकते हैं कि 4 * 4 का मैट्रिक्स बना लीजिए। 4 * 4 का मैट्रिक्स बना लीजिए। देखिए 4 * 4 का एक मैट्रिक्स बना लीजिए। 0 1 2 3 0 1 2 3 वेरी गुड है। अब आप क्या करिए? एक-एक करके एजेस पे वो करिए। लूप लिखिए। कैसे लूप लिखेंगे? देखिए। फॉर i = 0 i &lt; एजेस डॉट साइज मतलब जितने भी एजेस हैं सबको एक बार देखेंगे। अब अब हर एक एंट्री हर एक एजेस i एक अलग वेक्टर है।",
+      "source": "caption",
+      "english_text": "How much is n here? Four. So what you can do is create a 4 * 4 matrix. Make a matrix of 4 * 4. Look, make a matrix of 4 * 4. 0 1 2 3 0 1 2 3 Very good. What should you do now? Do that on the edges one by one. Write a loop. How to write a loop? Look. For i = 0 i < edges dot size means all the edges will be seen once. Now now each entry for each edge i is a different vector."
+    },
+    {
+      "start_time": 1515.36,
+      "end_time": 1549.99,
+      "text": "क्या है? अलग वेक्टर है। मतलब कि अगर हम बोले कि वेक्टर इंट एक एज सिंगल एज इज इक्वल टू एजेस का i मतलब कि जब i यहां पे होगा i यहां पे होगा तो आप इसको इस वाले वेक्टर को देख रहे होंगे इस वेक्टर में कितनी चीजें हैं दो चीजें हैं क्या-क्या एक सोर्स और एक डेस्टिनेशन मतलब ज़ीरो से वन तक जाना है तो आप कैसा लिख सकते हैं इंफ u इसको हम लोग सो या सोर्स लिखिए छोड़िए सोर्स लिखिए uv मत कीजिए सोर्स लिखिए सोर्स इक्वल टू एज ऑफ़ ज़ीरो एज ऑफ़ ज़ीरो का मतलब एज में क्या",
+      "source": "caption",
+      "english_text": "What is it? is a different vector. Meaning that if we say that vector int, single edge is equal to two edges, i means that when i is here, i is here, then you would be looking at this vector. How many things are there in this vector? There are two things, a source and a destination meaning to go from zero to one, then how can you write info u, we write so or source, leave source, write uv, don't do source, write source equal to edge of. What is the meaning of zero edge of zero in edge"
+    },
+    {
+      "start_time": 1550.0,
+      "end_time": 1577.669,
+      "text": "स्टोर रहेगा? ज़ीरो और वन। अब इसका ज़ीरो। इसका ज़ीरो मतलब ये क्या बनेगा? ज़ीरो। इंट डेस्टिनेशन मतलब ये एज ये एज किसके बीच में है? सोर्स और डेस्टिनेशन के बीच में। एज का वन। एज का वन। ये क्या हो जाएगा? वन। तो आपको पता चल गया कि ये मेरा जो भी ग्राफ है ना उसमें सोर्स और डेस्टिनेशन के बीच में एक एज हमको डालना है। तो वो हम मैट्रिक्स में कैसे डालते थे? आप अपना जो भी मैट्रिक्स बनाए हैं मैट्रिक्स। सोर्स और डेस्टिनेशन इसको वन कर दीजिए।",
+      "source": "caption",
+      "english_text": "Will the store remain? Zero and one. Now its zero. Its zero means what will it become? Zero. Int destination means what is this edge between? Between source and destination. Forest of Edge. Forest of Edge. What will happen? Forest. So you know that whatever graph I have, we have to put an edge between the source and destination. So how did we put that in the matrix? Whatever matrix you have created, the matrix. Make the source and destination one."
+    },
+    {
+      "start_time": 1577.679,
+      "end_time": 1611.51,
+      "text": "इसको वन कर दीजिए। मतलब कि अगर आपको जीरो और वन के बीच में बनाना है तो आप क्या मैट्रिक्स में जाएंगे? आप जाएंगे जीरो और वन। इसको वन कर दिए। इसको क्या कर दिए? वन। और क्योंकि ये अनडायरेक्टेड ग्राफ है। तो अगर सोर्स और डेस्टिनेशन के बीच में एज है। मतलब ज़ीरो और वन के बीच में यहां पे एज है। वन और ज़ीरो के बीच में भी एज होना चाहिए। तो आपको क्या करना पड़ेगा? मैट्रिक्स ऑफ़ डेस्टिनेशन एंड सोर्स। डेस्टिनेशन एंड सोर्स भी वन। मतलब वन और ज़ीरो वाला ब्लॉक भी। मतलब रो वन और कॉलम ज़ीरो। ये भी वन हो गया। देख लीजिए। ऐसे करके आप घूमते जाएंगे। अगला क्या आएगा? 0 और टू मतलब कि",
+      "source": "caption",
+      "english_text": "Make it a forest. Meaning, if you have to create something between zero and one, what matrix will you go into? You will go zero and one. Made it a forest. What did you do to this? Forest. And because it is an undirected graph. So if there is an edge between source and destination. Meaning, there is a pay edge here between zero and one. There should also be an edge between one and zero. So what do you have to do? Matrix of Destination and Source. Destination and source also one. मतलब वन और ज़ीरो वाला ब्लॉक भी। मतलब रो वन और कॉलम ज़ीरो। ये भी वन हो गया। Take a look. ऐसे करके आप घूमते जाएंगे। अगला क्या आएगा? 0 और टू मतलब कि"
+    },
+    {
+      "start_time": 1611.52,
+      "end_time": 1645.269,
+      "text": "0 और टू तो वन होगा ही। टू 0 भी वन हो जाएगा। ये भी वन हो गया। अगला क्या आएगा? वन और टू मतलब वन और टू वन हो गया। टू और वन भी वन हो गया। ये लीजिए। अगला क्या आया? वन और थ्री। मतलब वन और थ्री तो वन हुआ ही। थ्री और वन भी वन हो गया। ये लीजिए। अगला क्या आया? टू और थ्री। मतलब टू थ्री वाला कॉलम वो वन हुआ। थ्री और टू वाला भी वन हो गया। बाकी जो बच गया वो ज़ीरो। बाकी जो बच गया वो ज़ीरो। ये लीजिए। यह आपका ग्राफ बन के तैयार है। यह ग्राफ एग्जैक्टली इस ग्राफ को रिप्रेजेंट करता है। देख लीजिए कोई कोई छूटा नहीं है। सारे वर्टिससेस इंटैक्ट हैं। और इस तरीके से आप बना सकते हैं बड़ी ईज़ली। और इसको बंद कर",
+      "source": "caption",
+      "english_text": "0 and two will definitely be one. Two 0 will also become one. This also became a forest. What comes next? One and two means one and two become one. Two and one also became one. Take this. What came next? One and three. Meaning one and three becomes one. Three and one also became one. Take this. What came next? Two and three. Meaning the column two three became one. Three and two also became one. Whatever is left is zero. Whatever is left is zero. Take this. This is your graph is ready. This graph exactly represents this graph. See that no one is left out. All vertices are intact. And in this way you can make big easli. and turn it off"
+    },
+    {
+      "start_time": 1645.279,
+      "end_time": 1678.87,
+      "text": "दीजिए। देखिए ये आपको समझ में आया कि नहीं आया? मैट्रिक्स ये मैट्रिक्स क्या है? वेक्टर ऑफ़ वेक्टर ऑफ़ N2D मैट्रिक्स है N * N साइज़ का। वो हम अस्यूम कर रहे हैं कि आपको आता होगा ना? वो मैट्रिक्स बनाना तो आता ही चाहिए। तो ये आप ऐसे करके इसको क्या बोलते हैं? एडजेसेंसी मैट्रिक्स। एडजेसेंसी मैट्रिक्स। मैट्रिक्स। यस मैट्रिक्स। जभी भी आपको कोई एज मिले और आपको एडजेसेंसी मैट्रिक्स बनाने का मन करे तो आप इस तरीके से बना सकते हैं। किस तरीके से? इस तरीके से आप इसको बना सकते हैं। वेरी गुड। अब एडजेसेंसी मैट्रिक्स बहुत बेकार तरीका है। एडजेसेंसी मैट्रिक्स नहीं काम करता इंटरव्यू में। क्यों? पिछले",
+      "source": "caption",
+      "english_text": "Give it. Look, did you understand this or not? Matrix What is this matrix? The vector of vectors is an N2D matrix of N * N size. We are assuming that you know it, right? One must know how to make that matrix. So what do you call it when you do it like this? Adjacency Matrix. Adjacency Matrix. Matrix. Yes Matrix. Whenever you find an edge and you feel like creating an adjacency matrix, you can create it in this way. In what ways? You can make it in this way. very good. Now adjacency matrix is ​​a very useless method. Adjacency matrix does not work in interviews. Why? last"
+    },
+    {
+      "start_time": 1678.88,
+      "end_time": 1713.43,
+      "text": "बार बता चुके हैं। स्पेस बहुत ज्यादा लेता है। मतलब आपको बस आपको बस देखिए आपको बस चार वर्टेक्स और पांच एज इतना छोटा ग्राफ था। उसके लिए आप कितना 16 साइज का मैट्रिक्स बना के बैठे हुए हैं और बेकार का काम कर रहे हैं इधर-उधर इधर-उधर करके। अब हम लोग क्या करेंगे? अब हम लोग क्या करेंगे? बहुत ध्यान से देखिएगा। ये देख लीजिए कोड। अब हम लोग क्या करेंगे? देखिए अब हम लोग एक चीज बनाने वाले हैं जिसको बोलते हैं एडजेसेंसी। एडजेसेंसी लिस्ट। एडजेसेंसी लिस्ट। ये देखिए एडजेसेंसी क्या? लिस्ट। यस। एडजेसेंसी लिस्ट। एडजेसेंसी लिस्ट [हंसी] कैसा दिखता है? है ना? ये भी सेम वेक्टर ऑफ़ वेक्टर ऑफ़",
+      "source": "caption",
+      "english_text": "Have told it many times. Takes up too much space. Meaning, you just see, you just had four vertices and five edges, this was such a small graph. For that, you are sitting there making a 16 size matrix and doing useless work by moving it here and there. What will we do now? What will we do now? Will look very carefully. Look at this code. What will we do now? See, now we are going to create a thing which is called Adjacency. Adjacency list. Adjacency list. Look, what is adjacency? List. Yes. Adjacency list. What does the adjacency list look like [laughter]? Isn't it? This also same vector of vector of"
+    },
+    {
+      "start_time": 1713.44,
+      "end_time": 1747.83,
+      "text": "इंट होता है। वेक्टर ऑफ़ वेक्टर ऑफ़ इंट होता है। तो ये भी ऐसा दिखेगा। देखिए वेक्टर ऑफ़ वेक्टर ऑफ़ इंट इसका नाम होगा ADJ और ये कितने साइज का मैट्रिक्स होगा? ये N साइज का वो होगा वेक्टर होगा। पूरा बड़ा सा वेक्टर होगा। मतलब एक बड़ा सा वेक्टर बन गया। एक बड़ा सा वेक्टर बन गया। इसका नाम है ADJ। ठीक है? इसमें कितने कितने चीजें हैं? इसमें अरे इसमें कितने हैं? चार। 1 2 3 4 0 1 2 3 ये आपका इसको क्या बोलते हैं हम लोग?",
+      "source": "caption",
+      "english_text": "Is int. Vector of is vector of int. So this will also look like this. See vector of vector of int, its name will be ADJ and what size matrix will it be? This will be a vector of size N. The whole will be a big vector. Meaning it became a big vector. It became a big vector. Its name is ADJ. Ok? How many things are there in it? Hey how many are there in this? Four. 1 2 3 4 0 1 2 3 This is yours, what do we call this?"
+    },
+    {
+      "start_time": 1747.84,
+      "end_time": 1781.029,
+      "text": "एडजेसेंसी लिस्ट। एडजेसेंसी लिस्ट अभी बस इतना ही बना है। अभी बस इतना ही बना है। अच्छा तो इसमें n साइज का ये बन गया। अब देखिए क्या करते हैं? बहुत इंपॉर्टेंट चीज। ये सेम होगा। एजेस पे लूप करिए। एजेस पे लूप करिए। सोर्स और डेस्टिनेशन निकाल लिए। आपको क्या पता चला? सोर्स और डेस्टिनेशन। अब यहां पे पहली बार में सोर्स = 0 डेस्टिनेशन इज़ इक्वल टू वन। मतलब कि ज़ीरो और वन के बीच में आपको एज मिला हुआ है। इनपुट में बोला है कि ज़ीरो और वन के बीच में एज है। मैट्रिक्स में क्या करते थे कि मैट्रिक्स ऑफ 0 वन को वन कर दिया और मैट्रिक्स ऑफ़ वन 0 को भी वन कर दिए। इसमें क्या करेंगे ना देखिए एडजेसेंट",
+      "source": "caption",
+      "english_text": "Adjacency list. This is all the adjacency list has been prepared. That's all that's been made right now. Okay, so this became n size. Now see what they do? Very important thing. This will be the same. Loop at the edges. Loop at the edges. Took out the source and destination. What did you find out? Source and destination. Now here for the first time source = 0 destination is equal to one. Meaning that you have got an edge between zero and one. It is said in the input that there is an edge between zero and one. What was done in the matrix was that the matrix of 0 was made one and the matrix of 0 was also made one. What will the Adjutant do in this?"
+    },
+    {
+      "start_time": 1781.039,
+      "end_time": 1813.99,
+      "text": "सी ये क्या बोलता है? इसमें ये हर चीज हर इंडेक्स एक वर्टेक्स है। इसका हर इंडेक्स एक वर्टेक्स है। 0 1 2 3 हर वर्टेक्स में कौन-कौन से एजेस हैं वो उस वर्टेक्स में पुश करना है। मतलब कि इसमें हम क्या करेंगे? देखिए एडजेसेंसी ऑफ़ सोर्स एडजेसेंसी ऑफ़ सोर्स जो कि एक वेक्टर है जो कि एक वेक्टर है। एडजेसेंसी देखिए ये एडीj क्या है? वेक्टर ऑफ़ वेक्टर ऑफ़ एंड एडीj सोर्स एडीj सोर्स मतलब एडीj ज़ीरो ये खुद में एक वेक्टर है। ये खुद में मतलब ये",
+      "source": "caption",
+      "english_text": "C What does he say? In this, every index is a vertex. Every index of this is a vertex. 0 1 2 3 Which edges are there in each vertex, which are to be pushed in that vertex. Meaning, what will we do in this? See Adjacency of Source Adjacency of Source which is a vector which is a vector. Look at Adjacency, what is this Adjacency? Vector of vector of and eddy source eddy source meaning eddy zero is itself a vector. This in itself means this"
+    },
+    {
+      "start_time": 1814.0,
+      "end_time": 1848.23,
+      "text": "ना एग्जैक्टली आपके एज की तरह है। ये एग्जैक्टली आपके एज की तरह है। देखिए जो आपको एजेस मिला था ना ये एग्जैक्टली इस तरीके का है। मतलब बहुत बड़ा सा वेक्टर है। इस वेक्टर का हर इंडेक्स खुद में एक वेक्टर है। खुद में एक वेक्टर है। तो जो ये एडी जे सोर्स खुद में एक वेक्टर है ना। इसमें क्या करेंगे? पुश बैक पुश बैक डेस्टिनेशन। पुश बैक डेस्टिनेशन। अब मान लीजिए आपका सोर्स = 0 है। आपका डेस्टिनेशन = 1 है। तो हम लोग क्या किए? एडी जे बड़ा सा बनाए पहले इस चार लाइन चार का। इसमें अभी सारा चीज खाली है। सब खाली है। तो ADJ",
+      "source": "caption",
+      "english_text": "Not exactly like your age. This is exactly like your age. See, the edges you got are exactly like this. Meaning it is a very large vector. Each index of this vector is a vector in itself. is a vector in itself. So this ADJ source is a vector in itself, right? What will we do in this? Push Back Push Back Destination. Push Back Destination. Now suppose your source = 0. Your destination = 1. So what did we do? Eddie J. First make a big one of this four line four. Right now everything is empty in it. Everything is empty. So ADJ"
+    },
+    {
+      "start_time": 1848.24,
+      "end_time": 1881.11,
+      "text": "ऑफ़ ज़ीरो मतलब ADJ ऑफ़ ज़ीरो। ADJ ऑफ़ ज़ीरो में हम लोग यहां पहुंच गए। ये खुद में एक वेक्टर है। इसमें क्या पुश कर दिए? डेस्टिनेशन पुश कर दिए। मतलब कि इसमें ऐसा कुछ कर दिए। इसमें डेस्टिनेशन पुश कर दिए। वन पुश हो गया। लेकिन ये क्योंकि अनडायरेक्टेड ग्राफ है तो अगर जीरो और वन के बीच में एज है तो वन और जीरो के बीच में भी एज है तो क्या करेंगे यहां पे सबसे पहले तो एडी जे ज़ीरो के पुश बैक वन हो गया और एडी जे वन डॉट पुशबैक",
+      "source": "caption",
+      "english_text": "Off zero means ADJ of zero. We reached here at ADJ of Zero. This is a vector in itself. What did you push into it? Pushed the destination. Meaning that something like this was done in it. Pushed the destination in it. One push done. But because this is an undirected graph, if there is an edge between zero and one, then there is an edge between one and zero too, then what to do here, first of all, AD J is the push back of zero to one and AD J is one dot pushback."
+    },
+    {
+      "start_time": 1881.12,
+      "end_time": 1915.909,
+      "text": "ज़ीरो हो गया। एडीj वन के पुशबैक में ज़ीरो। मतलब एडी जे वन के पुशबैक में क्या हो गया? ज़ीरो। देखिए फिर से बताते हैं। आपको ज़ीरो और वन के बीच में एक एज डालना था। ज़ीरो और वन के बीच में S. तो आप क्या किए? आप एक AD जे बनाए जिसका साइज़ था नंबर ऑफ़ वर्टिससेस के बराबर। इतना बड़ा साइज था। ये बड़ा वेक्टर था। इस वेक्टर का हर एक इंडेक्स अलग से वेक्टर है। तो ये क्या होल्ड करता है ना? ये आपको क्या बताता है अंत में? अगर आप इस ज़ीरो इंडेक्स पे इसका देखेंगे ना तो इसका हर बड़ा सा इंडेक्स ज़ीरो जो है ना एक वर्टेक्स है। ज़ीरो किस-किस एज से कनेक्टेड है? इस ग्राफ में ज़ीरो किस-किस एज से कनेक्टेड है? तो अगर",
+      "source": "caption",
+      "english_text": "It became zero. Zero in on ADJ One's pushback. I mean, what happened in Eddie J One's pushback? Zero. Look let me tell you again. You had to put an edge between zero and one. S between zero and one. So what did you do? You created an AD J whose size was equal to the number of vertices. It was such a big size. This was a big vector. Each index of this vector is a separate vector. So what does it hold, right? What does this tell you in the end? If you look at this zero index, every major index of it is zero or a vertex. To which EDGE is Zero connected? To which edges is zero connected in this graph? so if"
+    },
+    {
+      "start_time": 1915.919,
+      "end_time": 1950.789,
+      "text": "हम बोले कि चलो ज़ीरो किस-किस वर्टेक्स से कनेक्टेड है ys तो आप बोलेंगे कि ज़ीरो एक तो वन से कनेक्टेड है और एक टू से कनेक्टेड है। तो ये आपको ए डी जे ज़ीरो देखने से पता चल जाएगा। अगर आपसे कोई पूछे कि वन किससे किससे कनेक्टेड है? तो आप बोलेंगे कि वन भैया देखिए ज़ीरो से कनेक्टेड है। एक तो टू से भी है और थ्री से भी है। तो अगर आप इसका वन देखेंगे ना तो आपको टू थ्री ज़ीरो तीनों मिलेगा। अगर आपसे कोई पूछे टू किससे कनेक्टेड है? तो आप बोलेंगे ग्राफ के हिसाब से टू देखिए ज़ीरो और थ्री से कनेक्टेड है। अगर आप ए डीj टू देखने लगेंगे ना तो आपको उस वेक्टर में टू के सारे कनेक्टेड वर्टेक्स मिल जाएंगे। टू के सारे कनेक्टेड वर्टेक्स मिल",
+      "source": "caption",
+      "english_text": "We said, let's say zero is connected to which vertex, then you will say that zero is connected to one and one is connected to two. So you will know this by watching ADJ Zero. If someone asks you which forest is connected to whom? So you will say that one brother, see it is connected to zero. One is from two and also from three. So if you look at one, you will get two, three, zero, all three. If someone asks you who is connected to? So you will say that according to the graph, two is connected to zero and three. If you start looking at A d dj 2, you will find all the connected vertices of 2 in that vector. Find all connected vertexes of two"
+    },
+    {
+      "start_time": 1950.799,
+      "end_time": 1980.87,
+      "text": "जाएंगे। तो मतलब कि अगर आप इसको ऐसा करते रहेंगे तो देखिए ज़ीरो और वन का काम हो चुका है। ज़ीरो और वन का काम हो चुका है। ज़ीरो और टू का काम करते हैं। तो क्या करेंगे? सेम काम। एडी जे ज़ीरो में जाके टू पुश करेंगे और एडी जे टू में जाके ज़ीरो पुश कर देंगे। ये देखिए क्योंकि अनडायरेक्टेड है ना? दोनों है। हो गया। 1 2 1 2 मतलब एडीजे वन में जाके टू पुश कर देंगे और एडीजे टू में जाके वन पुश कर देंगे। ये लीजिए वन टू काम हो गया। वन थ्री एडीजे वन में जाके थ्री पुश कर देंगे और एडी जे थ्री में जाके वन पुश कर देंगे।",
+      "source": "caption",
+      "english_text": "Will go. So that means if you keep doing it like this, then see the work of zero and one is done. The work of zero and one has been done. Do the work of zero and two. So what to do? Same work. Eddie J will go to zero and push to two and Eddie J will go to two and push to zero. Watch this because it's undirected, right? Both are there. Done. 1 2 1 2 means going to ADJ one will push two and going to ADJ two will push one. Here one two work is done. One Three: ADJ will go to one and push three and ADJ will go to three and push one."
+    },
+    {
+      "start_time": 1980.88,
+      "end_time": 2013.83,
+      "text": "ये लीजिए हो गया। टू थ्री एडीजे टू में जाके थ्री पुश कर देंगे और एडीजे थ्री में जाके टू पुश कर देंगे। ये खत्म हो गया। ये देखिए आपका ये क्या बना? एडजेसेंसी लिस्ट। एडजेसेंसी लिस्ट। अब अगर कोई आपसे पूछे कि एक बात बताओ ये जो वर्टेक्स वन है ना यह किस-किस वर्टेक्स से कनेक्टेड है? तो आप क्या करेंगे? आप ऐसा करेंगे कि वेक्टर एक इसका निकालेंगे। वेक्टर इंट TMP इक्वल टू ADJ वन। ADJ वन में क्या है? 0 2 3 मतलब",
+      "source": "caption",
+      "english_text": "Here it is done. Two three will go to ADJ two and push three and ADJ going to three will push two. It's over. Look what happened to you? Adjacency list. Adjacency list. Now if someone asks you, tell me one thing, this vertex one is connected to which vertex? So what will you do? You would do that by taking out vector one of this. Vector Int TMP Equal to ADJ One. What's in ADJ One? 0 2 3 meaning"
+    },
+    {
+      "start_time": 2013.84,
+      "end_time": 2048.149,
+      "text": "कि वन किससे किससे कनेक्टेड है? वन जीरो से भी कनेक्टेड है, वन टू से भी कनेक्टेड है और वन थ्री से भी कनेक्टेड है। तो ये आपको कम स्पेस में ज्यादा चीजें बताता है। कम स्पेस में ज्यादा चीजें बताता है। ये ऐसा आप इसको इमेजिन कीजिए कि अगर हम Instagram की बात करें ना तो मान लीजिए तीन लोग हैं। प्रत्युष, प्रत्युष। मान लीजिए तीन लोग हैं। प्रत्युष, अमन और सुनीता। ये आपको क्या बताता है? अगर मान लीजिए प्रत्युष अमन को फॉलो करता है ना तो प्रत्युष में एक वेक्टर होगा अमन। बस अमन अगर अमन सुनीता को फॉलो करता है और",
+      "source": "caption",
+      "english_text": "Which forest is connected to whom? One is connected to zero, one is also connected to two and one is also connected to three. So it tells you more things in less space. Tells more things in less space. Imagine this, if we talk about Instagram, let's say there are three people. Pratyush, Pratyush. Suppose there are three people. Pratyush, Aman and Sunita. What does this tell you? If suppose Pratyush follows Aman, then Aman will be a vector in Pratyush. Just Aman if Aman follows Sunita and"
+    },
+    {
+      "start_time": 2048.159,
+      "end_time": 2081.51,
+      "text": "प्रत्युष को फॉलो करता है तो अमन के पास ऐसा कुछ लिस्ट होगा अपना। अगर सुनीता केवल प्रत्युष को फॉलो करती है तो इसका ऐसा लिस्ट होगा। ये ये देखिए इसमें मैट्रिक्स बनाने की जरूरत नहीं है। प्रत्युष के पास सिर्फ अमन है एज अ वेक्टर तो मतलब प्रत्युष सिर्फ अमन से कनेक्टेड है। प्रत्युष से सिर्फ एक एच जाता है जो कि अमन की तरफ जाता होगा। अमन की तरफ से दो एच जाता होगा जो सुनीता और प्रत्युष की तरफ जाता होगा। सुनीता की तरफ से एक जाता होगा जो प्रत्युष की तरफ जाता होगा। सेम काम यहां पे हो रहा है। सेम काम ये जो एडजेसेंसी बनाया है ना सेम काम है। इसको एक बार हम आपको रिकमेंड करेंगे कि वीएस",
+      "source": "caption",
+      "english_text": "If he follows Pratyush, Aman will have a list like this. If Sunita follows only Pratyush then it will have a list like this. Look at this, there is no need to make a matrix. Pratyush has only Aman as a vector, meaning Pratyush is connected only to Aman. Only one H goes from Pratyush which will go towards Aman. Two H would be going from Aman's side which would be going towards Sunita and Pratyush. One would be going from Sunita's side and the other would be going towards Pratyush. Same work is happening here. Same work: This adjacency created is not the same work. We will recommend you this once VS"
+    },
+    {
+      "start_time": 2081.52,
+      "end_time": 2116.23,
+      "text": "कोड खोलिए। खुद से लिखिए और खुद से प्रिंट करके देखिए। खुद से प्रिंट करके देखिए। इसका हम एक बार प्रोग्राम आपको लिख देते हैं फिर से। आपको क्या दिया रहेगा? आपको क्या दिया रहेगा? एक तो इंट n मतलब कि जो नंबर ऑफ़ वर्टेक्स है और आपको एक वेक्टर ऑफ़ वेक्टर ऑफ़ इंट एजेस दिया रहेगा। वेक्टर ऑफ वेक्टर ऑफ इंट एजेस दिया रहेगा। ठीक है? एजेस में सारे एजेस होंगे छोटे-छोटे करके। आपको क्या बनाना है? वेक्टर ऑफ़ वेक्टर ऑफ़ इंट ADJ और कितने साइज़ का? जितने भी",
+      "source": "caption",
+      "english_text": "Open the code. Write it yourself and print it yourself. Try printing it yourself. We will write you its program once again. What will you be given? What will you be given? Firstly, int n means the number of vertices and you will be given a vector of vector of edges. Vector of vector of int edges will be given. Ok? Ages will have all the ages in small pieces. What do you want to make? Vector of vector of int ADJ and what size? as many as"
+    },
+    {
+      "start_time": 2116.24,
+      "end_time": 2149.75,
+      "text": "वर्टेक्स है उतने साइज़ का। तो एक बहुत बड़ा सा वेक्टर तैयार हो गया। अभी हर इंडेक्स खाली है। मतलब अभी कुछ नहीं भरे हैं। हम लोग क्या करेंगे? लूप करेंगे। इंट I किस पे लूप करेंगे? एडजेस पे। सारे एजेस को एक-एक करके देखेंगे। एजेस डॉट साइज़ मतलब जितने भी एजेस हो और i++ ओके एक एज निकालिए। एक एज निकालिए तो वेक्टर इंट एज इक्वल टू एज एस i अब ये जो एज निकला है ये एज किस तरीके का होगा? सोर्स और डेस्टिनेशन के तरफ जाता हुआ होगा। तो इंट",
+      "source": "caption",
+      "english_text": "The vertex is of that size. So a very big vector was ready. Right now every index is empty. Meaning nothing has been filled yet. What will we do? Will loop. Int What will I loop over? On Edges. Will look at all the edges one by one. Edges dot size means the number of edges and i++ ok take out one edge. If one edge is removed then vector int edge is equal to edge s i. Now what type of edge will be found? Must be going towards source and destination. so int"
+    },
+    {
+      "start_time": 2149.76,
+      "end_time": 2180.79,
+      "text": "सोर्स = h 0 इंट डेस्टिनेशन इज इक्वल टू एज वन वेरी गुड हो गया। अच्छा अब क्या करना है? सोर्स और डेस्टिनेशन के बीच में एक एज बनाना है। तो हम लोग क्या करते थे? जो एडीj है इसका मतलब क्या है? कि सोर्स और डेस्टिनेशन के बीच में लाइन बनानी है। तो हम लोग क्या करेंगे? एडीजे ऑफ़ सोर्स एडी ऑफ़ सोर्स जो कि सोर्स किससे किससे कनेक्टेड है? उसका एक लिस्ट रखता है। उसमें डेस्टिनेशन पुश बैक कर देंगे। और एडीजे ऑफ़ डेस्टिनेशन में",
+      "source": "caption",
+      "english_text": "Source = h 0 int destination is equal to one very good done. Well what to do now? An edge has to be created between the source and destination. So what did we do? What does edj mean? That a line has to be made between the source and destination. So what will we do? ADJ of Source ADJ of Source Which source is connected to whom? Keeps a list of them. Will push back the destination in it. And in ADJ of Destination"
+    },
+    {
+      "start_time": 2180.8,
+      "end_time": 2215.349,
+      "text": "सोर्स पुश बैक कर देंगे। तो एडीj ऑफ़ सोर्स डॉट पुश बैक क्या? डेस्टिनेशन मतलब कि अगर ज़ीरो और वन के बीच में H बनाना है तो ज़ीरो वाले इंडेक्स में एक वन पुश कर दिए। वन वाले इंडेक्स में एक ज़ीरो पुश कर दिए। और क्योंकि ये अनडायरेक्टेड है तो डेस्टिनेशन वाले में सोर्स पुशबैक कर दो। पुश बैकक सोर्स और इसको बंद कर दो। यह आपका तैयार हो गया बन के क्या? एडजेसेंसी लिस्ट। एडजेसेंसी लिस्ट मैट्रिक्स नहीं ये एक लिस्ट जैसा दिखता है। अगर आप इसको",
+      "source": "caption",
+      "english_text": "Source will push back. So edj of source dot push back what? Destination means that if H is to be made between zero and one, then one is pushed in the index of zero. Pushed a zero into the index of one. And since it is undirected, pushback the source to the destination. Push back source and close it. Is this yours ready? Adjacency list. Adjacency list is not a matrix, it looks like a list. if you like this"
+    },
+    {
+      "start_time": 2215.359,
+      "end_time": 2243.589,
+      "text": "विजुअलाइज़ करेंगे तो ये कुछ-कुछ ऐसा दिखेगा। कुछ-कुछ ऐसा दिखेगा। ये भी ऐसा ही दिख रहा है कि अगर आप देखिए ज़ीरो पे जाएंगे ना तो आपको वन और टू मिल रहा है। क्योंकि ज़ीरो वन और टू से कनेक्टेड है। अगर आप वन पे गए आपको 0 2 3 तीनों मिल रहा है। अगर आप टू पे गए आपको 0 1 3 तीनों मिल रहा है। अगर आप थ्री पे गए आपको वन और टू दोनों मिल रहा है। तो ये क्या है? है एडजेसेंसी लिस्ट। अच्छा ये तो हुई अनडायरेक्टेड की बात। अगर डायरेक्टेड हुआ तो अगर डायरेक्टेड ग्राफ बोला हुआ हो तो बस क्या करना है? इस लाइन को हटा देना है।",
+      "source": "caption",
+      "english_text": "If you visualize it, it will look something like this. It will look something like this. It also looks like this that if you go to zero then you are getting one and two. Because zero is connected to one and two. If you go to one you are getting 0 2 3. If you go to two you are getting 0 1 3 all three. If you go for three, you are getting both one and two. So what is this? Adjacency list. Well, this is about undirected. If it is directed, then if it is called a directed graph, then what is to be done? This line has to be removed."
+    },
+    {
+      "start_time": 2243.599,
+      "end_time": 2270.31,
+      "text": "इस लाइन को हटा देना है। क्योंकि यहां ये लाइन हम लोग क्यों जोड़े हैं? हम लोग बोले थे कि अगर भैया ज़ीरो और वन के बीच में एज है ना तो ज़ीरो वन से कनेक्टेड है और वन भी ज़ीरो से कनेक्टेड है। इसीलिए ये लाइन था। लेकिन अगर डायरेक्टेड ग्राफ है। अगर आपको बोला कि देखो एक एज है जो कि ज़ीरो से वन है। तो मतलब कि ज़ीरो और वन। तो ठीक है? [गला साफ़ करने की आवाज़] एडजेसेंसी ऑफ़ ज़ीरो में तो वन पुश बैक होगा। लेकिन वन और जीरो कोई एज नहीं है तो वन के में जीरो नहीं पुश करना है तो जस्ट ये लाइन हटा दीजिएगा किस केस में? किस केस में?",
+      "source": "caption",
+      "english_text": "This line has to be removed. Because why have we added this line here? We had said that brother, if there is an edge between zero and one, then zero is connected to one and one is also connected to zero. That's why there was this line. But if is a directed graph. If you are told that look there is an edge which is from zero to one. So that means zero and one. Well then? [Clearing throat] There will be one push back in Adjacency of Zero. But one and zero are not an edge, so if you want to push zero in one, then just remove this line, in which case? In which case?"
+    },
+    {
+      "start_time": 2270.32,
+      "end_time": 2302.47,
+      "text": "डायरेक्टेड के केस में। डायरेक्टेड के केस में ये दो चीजें नहीं करनी है। सिमिलरली जो मैट्रिक्स वाला पार्ट था मैट्रिक्स वाले पार्ट में ये वाला लाइन हट जाएगा। डायरेक्टेड है ना? ज़ीरो और वन में ज़ीरो और वन का काम करो। वन और ज़ीरो का चिंता मत करो। ज़ीरो और वन मतलब बस ज़ीरो और वन का करो। वन और ज़ीरो को छोड़ दो। वन और ज़ीरो आएगा तो देखेंगे। जब अगर कोई एज आएगा वन और ज़ीरो तो देखेंगे। हो सकता है। बिल्कुल हो सकता है कि ज़ीरो से वन में भी एज हो और वन से ज़ीरो भी एज हो। अगर एज में दिया रहेगा तो देखेंगे। अपने मन से नहीं देखेंगे। लेकिन डायरेक्टेड में अनडायरेक्टेड सॉरी अनडायरेक्टेड में आपको अपने मन से देखना पड़ेगा। तो ये हुआ ये आप",
+      "source": "caption",
+      "english_text": "In case of directed. These two things are not to be done in the case of directed. Similarly, this line will be removed from the matrix part which was part of the matrix. Directed right? Do the work of zero and one in zero and one. Don't worry about ones and zeros. Zero and one means just do zero and one. Leave out the ones and zeros. We will see when one and zero come. Whenever any edge comes, we will see one and zero. It is possible Of course, it is possible that there can be an edge from zero to one and there can also be an edge from one to zero. We will see if it is given in Edge. Will not see with your mind. But in directed, undirected, sorry in undirected, you will have to see with your mind. so this is what happened you"
+    },
+    {
+      "start_time": 2302.48,
+      "end_time": 2336.63,
+      "text": "क्या सीख गए? अभी तक अभी तक नॉन वेटेड नॉन वेटेड। अभी तक भी पूरा नहीं खत्म हुआ है। लेकिन नॉन वेटेड कभी अगले बार करेंगे। हम ज्यादा आप लोग को वो नहीं करना चाहते हैं कि एक ही दिन में पूरा रेल दें कि कुछ समझ में ना आए। इस चीज को जाके खुद से लिखिए। शुरू-शुर में थोड़ा कॉम्प्लेक्स लगता है लेकिन टाइम के साथ आसान हो जाएगा। हम भी देखिए याद तो नहीं किए हम भी धीरे-धीरे आदत हो जाएगा आपको ये लिखने का। इसीलिए हम बोले थे कि ये थोड़ा कॉम्प्लेक्स टॉपिक है इसीलिए क्योंकि अ कोई फिक्स आपको खुद से सब चीजें करनी पड़ती है ना। आपको खुद से सब चीजें लेकिन बहुत इंपॉर्टेंट चीजें करनी। तो इस तरीके से आप आपको अगर एजेस मिलता है और नंबर ऑफ वर्टिससेस मिलते हैं",
+      "source": "caption",
+      "english_text": "What did you learn? So far so far non weighted non weighted. It is not completely finished yet. But we will do non weighted next time. We don't want you guys to do that by giving the whole train in one day only to not understand anything. Go write this thing yourself. It may seem a little complex at first but will become easier with time. Let us also see, if you haven't memorized it, then gradually you will get into the habit of writing this. That's why we said that this is a bit complex topic because there is no fix and you have to do everything yourself. You have to do everything but very important things by yourself. So in this way you get the number of edges and the number of vertices."
+    },
+    {
+      "start_time": 2336.64,
+      "end_time": 2371.19,
+      "text": "तो आप अपना खुद का एडजेसेंसी लिस्ट बना सकते हैं। अच्छा इसको बनाने के बाद क्या-क्या कर सकते हैं? आप बहुत चीजें कर सकते हैं। कोई आपसे पूछे कि टू किससे किससे है? तो आप एडजेसेंसी ऑफ़ टू में जाइए और इसको प्रिंट करके देख लीजिए। अगर कोई पूछे कि देखो टू और थ्री के बीच में एज है कि नहीं? तो आप क्या करेंगे? एडी जे ऑफ़ टू में जाएंगे और थ्री को सर्च कर लेंगे और थ्री को सर्च कर लेंगे। अगर एडी जे ऑफ़ टू में आपको थ्री मिलता है तो मतलब टू और थ्री के बीच में एज है। अगर थ्री नहीं मिलता है तो एज नहीं है। ऐसे करके आप बहुत सारी चीजें कर सकते हैं। लेकिन सबसे पहला टास्क है कि इसको जाके खुद से बनाइए। वीएस कोड में आज बैठ के खुद से बनाइए। ये अपना एडजेस वाला वेक्टर बनाइए या चैट जीपीटी को",
+      "source": "caption",
+      "english_text": "So you can create your own adjacency list. Well, what can we do after making it? You can do many things. Someone asks you, 'To whom is from whom?' So you go to Adjacency of Two and print it and see. If someone asks, see whether there is an edge between two and three? So what will you do? Eddie Jay will go to the two and look for the three and look for the three. If you get three in Eddie J of two then it means there is an edge between two and three. If you don't get a three then there is no edge. You can do many things by doing this. But the first task is to go and make it yourself. Sit down and create it yourself in VS Code today. Create this vector with your edges or chat GPT"
+    },
+    {
+      "start_time": 2371.2,
+      "end_time": 2388.56,
+      "text": "बोलिए कि ऐसा एक हमको एजेस वेक्टर बना के दो। इसको लीजिए और ये एडजेसेंसी लिस्ट और एडजेसेंसी मैट्रिक्स दोनों खुद से बना के देखिए। खुद से नहीं बनाएंगे तो नहीं समझ में आएगा। कॉपी में, लैपटॉप में, कंप्यूटर में जहां आपको मन करता है वहां बनाइए लेकिन बनाइए। पॉजिटिवली बनाइए। ठीक है? चलिए।",
+      "source": "caption",
+      "english_text": "Say, give us such an edges vector. Take this and try making both this Adjacency List and Adjacency Matrix yourself. If you don't make it yourself, you won't understand. Create it in notebook, laptop, computer wherever you feel like but create it. Make it positively. Ok? Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

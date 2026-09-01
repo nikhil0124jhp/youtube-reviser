@@ -1,0 +1,450 @@
+{
+  "video_id": "NSh5oNElD84",
+  "video_title": "DSA PATTERNS Episode 19 | Linked List Basics for Beginners",
+  "video_number": 20,
+  "chunks": [
+    {
+      "start_time": 1.91,
+      "end_time": 36.47,
+      "text": "कंप्यूटर साइंस और प्रोग्रामिंग में सबसे बड़ी डिस्कवरीज में से एक है ना तो वो है लिंक लिस्ट। लिंक लिस्ट की एक खास बात है ना कि अगर आपको अच्छा टीचर नहीं मिलता है तो आपको लिंक लिस्ट कभी समझ में नहीं आएगा। आप जितना ट्यूटोरियल देखना है देखिए। जितने घंटे की फिल्म देखनी है देखिए लेकिन आपको लिंक लिस्ट कभी समझ में नहीं आ पाएगा। मेरे साथ ये लकी चीज हुई थी कि मेरे साथ एक बहुत अच्छे टीचर थे। उन्होंने एक बार समझाया था। और अगर एक बार कोई आपको अच्छे से समझा देता है तो आपके मन में छप जाता है लिंक लिस्ट। इस ट्यूटोरियल या इस वीडियो के एंड तक एंड तक अगर आप यहां आए हैं, आपका पूरा डर निकल जाएगा लिंक लिस्ट के बारे में। 20 मिनट दे दीजिए हमको अपनी जिंदगी का। आपके दिमाग में बैठ जाएगा लिंक लिस्ट। आप विज़लाइज़ कर पाएंगे कि असली में होता क्या है। कभी",
+      "source": "caption",
+      "english_text": "One of the biggest discoveries in computer science and programming is the link list. There is a special thing about link list that if you do not get a good teacher then you will never understand the link list. Watch as many tutorials as you want. Watch as many hours of movies as you want but you will never be able to understand the link list. The lucky thing that happened to me was that I had a very good teacher. He explained once. And once someone explains it to you well, the link list gets printed in your mind. If you have come here till the end of this tutorial or this video, all your fear about the link list will be gone. Give us 20 minutes of your life. The link list will get stuck in your mind. You will be able to visualize what actually happens. ever"
+    },
+    {
+      "start_time": 36.48,
+      "end_time": 69.03,
+      "text": "आपको याद करने की जरूरत नहीं पड़ेगी कि हेड लिखना है कि हेड डॉट नेक्स्ट लिखना है। वो आपको खुद समझ में आएगा। बस 20 मिनट दीजिए। आइए। अभी तक अभी तक हम लोग जो पैटर्न सीरीज कर रहे हैं उसमें हम जो लिंक लिस्ट बनाए थे ना वो लिंक लिस्ट इनकंप्लीट था। मतलब हम आपको कैसा लिंक लिस्ट बना के ऐसा लिंक लिस्ट बना के दिखाते ठीक है? लिंक लिस्ट ना कैसा होता है? ट्रेन की तरह होता है। ट्रेन में होता है ना ट्रेन? बोगीज़ होते हैं ट्रेन में। तो लिंक लिस्ट एकदम सेम ट्रेन की तरह होता है। लेकिन एक कैच के साथ अब आप कहेंगे कि सर एरे भी तो ट्रेन की तरह होता है। एरे भी तो लगता है कि बोगी बोगी बोगी। हां लिंक लिस्ट भी वही होता है। लेकिन एक उसमें कैच होता है।",
+      "source": "caption",
+      "english_text": "You will not need to remember whether to write head or head dot next. You will understand it yourself. Just give it 20 minutes. Come. Till now, the link list we had made in the pattern series we are doing was incomplete. Meaning, is it okay if we create such a link list and show it to you? What is a link list? It is like a train. There is a train in the train, right? There are bogies in trains. So the link list is exactly like a bean train. But with one catch, now you will say that sir, air is also like a train. Hey, it also seems like bogie bogie bogie. Yes, the link list is also the same. But there is a catch in that."
+    },
+    {
+      "start_time": 69.04,
+      "end_time": 103.27,
+      "text": "क्या कैच होता है? एरे ना आपका कंटीन्यूअस होता है। एरे क्या होता है? कंटीन्यूअस या कंटीन्यूअस जो भी बोलना है। मतलब आपके लैपटॉप में जो मेमोरी है ना तो आपके लैपटॉप में आपको एरे अगर 10 साइज़ का लेना है तो 10 मेमोरी एक ही साथ मिलेगी आपको एक लाइन में मिलेगी। लिंक लिस्ट में ऐसा नहीं है और इसीलिए लिंक लिस्ट बना भी था क्योंकि हो सकता है कि आपको एक 10 साइज का एरे चाहिए लेकिन आपके लैपटॉप में 10 कंटीन्यूअस मेमोरी अवेलेबल नहीं है मतलब आपका जो रैम है उसमें कंटीन्यूअसली 10 MB अवेलेबल नहीं हो सकता है। इधर-उधर होगी मतलब 1 M यहां होगी, एक बॉक्स यहां होगा, एक यहां होगा, एक यहां होगा। मिलके 10 हो",
+      "source": "caption",
+      "english_text": "What's the catch? Hey, yours is continuous. Hey what happens? Continuous or Continuous, whatever you want to say. Meaning, whatever memory is there in your laptop, if you want to buy an array of 10 sizes, then you will get 10 memories together, you will get them in one line. This is not the case in the link list and that is why the link list was created because maybe you want a 10 size array but your laptop does not have 10 continuous memory available, which means 10 MB of continuous memory cannot be available in your RAM. It will be here and there, meaning 1 M will be here, one box will be here, one will be here, one will be here. together we are 10"
+    },
+    {
+      "start_time": 103.28,
+      "end_time": 138.07,
+      "text": "सकती है। कंटीन्यूअस 10 नहीं है। तो फिर जब एरे था जब तो लोग इसमें स्टोर नहीं कर पाते थे क्योंकि लोग बोलते थे कि हमको कंटीन्यूअस दो। इसीलिए लिंक लिस्ट आया कि कोई बात नहीं। पूरे लैपटॉप में कहीं भी तुम्हारे पास अगर 10 बॉक्स है ना भाई तो तुम लिंक लिस्ट यूज़ करके अपना डेटा स्टोर कर सकते हो। वेरी गुड। लेकिन अब डेटा स्टोर तो कर सकते हो। लेकिन अब हम क्या बोले कि सारा आपका जो बॉक्स है ना वेरिएबल क्या होता है? वेरिएबल बॉक्स होता है। तो ये सारा स्कैटर्ड होता है। फैला हुआ होता है पूरे लैपटॉप में। तो मिलेगा कैसा? पता कैसे चलेगा कि कौन सा बॉक्स किस वाले लिंक लिस्ट का है? कौन सा बॉक्स किस वाले लिंक लिस्ट का है? यह पता कैसे चलेगा? ये तो किसी को पता करना पड़ेगा इसीलिए, इसीलिए",
+      "source": "caption",
+      "english_text": "Can. Continuous is not 10. Then when there was array, people were not able to store in it because people used to say give us continuous. That's why the link list came, no problem. Brother, if you have 10 boxes anywhere in the entire laptop, then you can store your data using link list. very good. But now you can store data. But now what can we say, what is the variable in your box? There is a variable box. So all this gets scattered. It is spread all over the laptop. So how will you get it? How to know which box belongs to which link list? Which box belongs to which link list? How will this be known? Someone has to find out, that's why"
+    },
+    {
+      "start_time": 138.08,
+      "end_time": 172.07,
+      "text": "कोई भी लिंक लिस्ट किसी भी लैंग्वेज में C++ में, Java में, Python में, जावास्क्रिप्ट में उसका क्या मतलब होता है? आमतौर पे आमतौर पे जब आप एरे बनाते हैं ना तो आपके पास एक बॉक्स होता है ऐसा करके इसमें वन होता है, टू होता है, थ्री होता है। तो आप यहां पे देखिए हर बॉक्स में एक ही वैल्यू है। हर बॉक्स में वन है। इस बॉक्स में फिर टू है और अगले बॉक्स में थ्री है। लिंक लिस्ट ऐसा नहीं होता है। लिंक लिस्ट को आप समझ सकते हैं कि बॉक्स ऐसा ही रहेगा। उस बॉक्स को आप दो हिस्से में बांट दीजिए। किस में बांट दीजिए? दो हिस्से में बांट दीजिए। जब आप बॉक्स को दो हिस्से में बांटेंगे ना तो आपको बॉक्स में दो हिस्से मिलेंगे ऐसा करके। ये एक बॉक्स",
+      "source": "caption",
+      "english_text": "What does any link list mean in any language, in C++, Java, Python, JavaScript? Usually, when you create an array, you have a box, so it has one, two, three. So you see here, every box has only one value. There is one in each box. This box again has a two and the next box has a three. Link list does not happen like this. You can understand the link list and the box will remain the same. Divide that box into two parts. Divide among whom? Divide into two parts. When you divide the box into two parts, you will get two parts in the box. this a box"
+    },
+    {
+      "start_time": 172.08,
+      "end_time": 206.149,
+      "text": "है। ये आपका ये आपका एक बॉक्स है। ये आपका बॉक्स वन है। अच्छा पहले पार्ट में आपको जो भी वैल्यू स्टोर करवानी है। फॉर एग्जांपल आपको इंटिजर स्टोर करवाना है। आपको कैरेक्टर जो भी आपको वैल्यू स्टोर करवानी है वो करवा दीजिए। तो आप यहां पे वन स्टोर करवा दीजिए कंफर्टेबल हो के। अगले पार्ट में जो सेकंड हाफ बॉक्स है ना उसमें क्या होगा? उसमें उसमें जो आगे वाला बॉक्स है उसका एड्रेस होगा। उसका क्या होगा? एड्रेस। क्योंकि हम क्या बोले? लिंक लिस्ट क्या होता है? पूरे लैपटॉप में 10 मेमोरी है। कहीं भी फैली हुई है, स्कैटर्ड है। आप उसको जोड़ के आप बोल रहे हैं कि ये 10ों बॉक्स मिलके एक लिंक लिस्ट का पार्ट",
+      "source": "caption",
+      "english_text": "Is. This is yours, this is a box of yours. This is your box one. Well, in the first part whatever value you want to store. For example you have to store an integer. Get your character to store whatever value you want. So you can get one store done here if you feel comfortable. What will be in the second half box in the next part? It will contain the address of the box next to it. What will happen to him? Address. Because what can we say? What is link list? The entire laptop has 10 memory. Spread anywhere, scattered. By adding it you are saying that these 10 boxes together are part of a link list."
+    },
+    {
+      "start_time": 206.159,
+      "end_time": 240.07,
+      "text": "है। तो, आपको पता तो होना चाहिए ना कि कौन सा बॉक्स किस वाले लिंक लिस्ट का पार्ट है? कैसे पता चलेगा? इसके लिए हम लोग क्या करते हैं? इसके लिए हम लोग क्या करते हैं कि हर बॉक्स को हर बॉक्स को पता होता है। क्या होता है? पता होता है। क्या पता होता है? कि इसके अगला वाला बॉक्स इसके अगला वाला बॉक्स कहां पे है? इसके अगला वाला बॉक्स कहां है? बस बस यही होता है लिंक लिस्ट। हर बॉक्स को क्या पता होता है एडिशनली कि मेरे आगे वाला बॉक्स कहां पे है? मेरे आगे वाला बॉक्स कहां पे है? बस उसको उसके आगे वाले का एड्रेस पता नहीं",
+      "source": "caption",
+      "english_text": "Is. So, you must know which box is part of which link list? How to know? What do we do for this? For this, what we do is that every box knows every box. What happens? Is known. What do you know? Where is the box next to this one? Where is the box next to this? This is just a link list. What does each box know besides where the box next to it is? Where is the box next to me? He just doesn't know the address of the person next to him."
+    },
+    {
+      "start_time": 240.08,
+      "end_time": 270.469,
+      "text": "है। इसके पीछे वाले का एड्रेस पता नहीं है। इसको बस ये पता है कि मेरे आगे कौन सा बॉक्स है और उसका एड्रेस क्या है? बस। फॉर एग्जांपल फॉर एग्जांपल आपके लैपटॉप में ना हर वेरिएबल का एक एड्रेस होता है। वो एड्रेस आप किसी भी फॉर्मेट में समझिए सिंपलीसिटी के लिए मान लीजिए इसका एड्रेस 100 है। इस वाले बॉक्स का इस वाले पूरे बॉक्स का एड्रेस 100 है। जैसे आपके घर का पता होता है ना हाउस नंबर 100 वैसे ही इसका हाउस नंबर 100 है। वेरी गुड। अच्छा मान लीजिए इसके आगे इसके आगे जो नेक्स्ट बॉक्स है वो लैपटॉप में कहीं भी हो सकता है। वो लैपटॉप में कहीं भी हो सकता है।",
+      "source": "caption",
+      "english_text": "Is. The address of the person behind this is not known. It just knows which box is next to me and what is its address? Bus. For example, every variable in your laptop has an address. You can understand that address in any format. For simplicity, assume its address is 100. The address of this box and the entire box is 100. Just like the address of your house is house number 100, similarly its house number is 100. very good. Well, suppose the next box next to this can be anywhere in the laptop. It can be anywhere in the laptop."
+    },
+    {
+      "start_time": 270.479,
+      "end_time": 305.27,
+      "text": "मान लेते हैं कि उसका हाउस नंबर क्या है? 200 है। उसका हाउस नंबर है 200। तो हम क्या बोले? बॉक्स वन को क्या पता होना चाहिए? बॉक्स वन को पता होना चाहिए कि बॉक्स टू कहां पे है? बस एक ही चीज पता होना चाहिए। तो बॉक्स टू कहां पे है? बॉक्स टू का एड्रेस क्या है? बॉक्स टू हाउस नंबर 200 है। तो आप बस यहां पे 200 लिख दीजिए। बस सिमिलरली, सिमिलरली, सिमिलरली, बॉक्स टू में आप क्या कर सकते हैं? बॉक्स टू में सबसे पहले वाले पार्ट में तो आप कोई डेटा स्टोर कर सकते हैं, मतलब जैसे टू स्टोर कर लिए, ठीक है? बॉक्स टू को क्या पता होना चाहिए? क्या बॉक्स टू को ये पता होना चाहिए कि बॉक्स वन कहां पे है? नहीं नहीं, वो रूल नहीं था। बॉक्स टू को ये पता होना चाहिए कि बॉक्स थ्री कहां",
+      "source": "caption",
+      "english_text": "Let us assume what is his house number? Is 200. His house number is 200. So what should we say? What should Box One know? Box one needs to know where box two is. There's just one thing you need to know. So where is box two? What is the address of box two? Box to house number is 200. So you just write 200 here. Just similar, similar, similar, what can you do in box two? In the first part of box two, you can store any data, that is, you have stored two, right? What should Box Two know? Does box two need to know where box one is? No no, that was not the rule. Box Two needs to know where Box Three is."
+    },
+    {
+      "start_time": 305.28,
+      "end_time": 339.67,
+      "text": "पे है? बॉक्स थ्री कहां पे है? हो सकता है हो सकता है कि बॉक्स थ्री हाउस नंबर 300 पे हो। बॉक्स थ्री का हाउस नंबर हो 300। तो हाउस टू को क्या पता होगा? हाउस टू मतलब हां बॉक्स टू या हाउस टू हाउस टू के सेकंड पार्ट में होगा 300। ये ठीक बात है। चलिए बॉक्स थ्री मान लेते हैं कि बॉक्स थ्री मान लेते हैं कि बॉक्स थ्री में सबसे पहले तो एक डाटा लिखिए तीन। ओके वेरी गुड। मान लेते हैं कि बॉक्स थ्री हमारा लास्ट बॉक्स है। मतलब हमारा लिंक लिस्ट का जो अभी का साइज है वो तीन ही है। बॉक्स थ्री के आगे कुछ नहीं है। तो हर बॉक्स को क्या पता होता था कि मेरे आगे वाला बॉक्स क्या है? अब बॉक्स थ्री के आगे तो कुछ नहीं है।",
+      "source": "caption",
+      "english_text": "Is it on? Where is box three? Maybe box three is at house number 300. The house number of box three should be 300. So what would House Two know? House two means yes box two or house two, the second part of house two will be 300. This is correct. Let us assume box three. Let us assume that box three. First of all write a data in box three. Okay very good. Let's say box three is our last box. Meaning, the current size of our link list is only three. There is nothing beyond box three. So how did each box know what the box next to me was? Now there is nothing beyond box three."
+    },
+    {
+      "start_time": 339.68,
+      "end_time": 374.309,
+      "text": "बॉक्स थ्री के आगे इस लिंक लिस्ट में कुछ नहीं है। तो बॉक्स थ्री अपने सेकंड पार्ट में क्या स्टोर करेगा? कुछ नहीं स्टोर करेगा। नल नल स्टोर करेगा बस। नल मतलब नल। हर हर लैंग्वेज में नल होता है। नल मतलब कुछ नहीं। अब देखिए क्या हुआ है? क्या हुआ है? अगर आपको कोई बता दे अगर आपको कोई बता दे कि लिंक लिस्ट का जो पहला बॉक्स है लिंक लिस्ट जो स्टार्टिंग बॉक्स है वो हाउस नंबर 100 है। ठीक है? तो आप हाउस नंबर 100 पे आ जाएंगे। ठीक है? हाउस नंबर 100 आपको क्या बताएगा कि ठीक है मेरे पास एक डाटा है वन वो तो ले लो और मेरे आगे वाला बॉक्स मेरे आगे वाला बॉक्स कहां पे है? वो एड्रेस 200 पे है। तो आप देख रहे हैं कि ये वाला बॉक्स आपको सेकंड बॉक्स तक",
+      "source": "caption",
+      "english_text": "There is nothing in this link list beyond box three. So what will box three store in its second part? Will store nothing. Tap tap will store that. Tap means tap. There is tap in every language. Tap means nothing. Now see what has happened? What has happened? If someone tells you, if someone tells you that the first box of the link list, the starting box of the link list, is house number 100. Ok? So you will come to house number 100. Ok? What will house number 100 tell you that okay, I have one data one, take that and the box next to me, where is the box next to me? That address is at 200. So you see that this box takes you till the second box."
+    },
+    {
+      "start_time": 374.319,
+      "end_time": 408.309,
+      "text": "पहुंचाने की ताकत रखता है। बस उतनी ही ताकत रखता है। वेरी गुड। आप इससे एड्रेस पूछ के कहां चले गए? हाउस नंबर 200 पे। हाउस नंबर 200 आपको क्या बोला कि ठीक है मेरे पास जो डाटा है वो तो टू है और मेरे आगे भी एक बॉक्स है उसका एड्रेस 300 है हमको इतना ही मालूम है| तो अब देखिए बॉक्स टू आपको बस बॉक्स थ्री तक पहुंचाने की ताकत रखता है वेरी गुड आप इससे 300 पूछ के हाउस नंबर 300 पे चले गए| अच्छा बॉक्स थ्री बोलता है कि मेरे पास डाटा तो है वो थ्री है आप ले लीजिए लेकिन मेरा जो मेरे आगे कुछ नहीं है मेरे आगे कुछ नहीं है इसीलिए मेरा जो सेकंड पार्ट है ना मेरा जो सेकंड पार्ट है वो क्या है नल है वो क्या है नल तो ठीक है आपको लग जाएगा कि ये",
+      "source": "caption",
+      "english_text": "Has the power to deliver. Has just that much power. very good. Where did you go after asking him for the address? House number 200. What did house number 200 tell you that it is okay, the data I have is two and there is a box next to me, its address is 300, this much we know. So now see, box two has the power to just take you to box three. Very good, you asked 300 from it and went to house number 300. Well, box three says that I have the data, that's three, you take it, but mine, there is nothing ahead of me, there is nothing ahead of me, that's why my second part, what is it, is it null, what is it null, then okay, you will feel that this"
+    },
+    {
+      "start_time": 408.319,
+      "end_time": 441.27,
+      "text": "लास्ट नोड है। लास्ट नोड या लास्ट बॉक्स या तो लास्ट हाउस है। आप यहां पे रुक जाएंगे। ठीक बात है। अब इस पूरे कहानी में एक चीज अभी भी मिसिंग है। स्टार्टिंग बॉक्स का एड्रेस किसको पता रहेगा? स्टार्टिंग बॉक्स का एड्रेस तो किसी को नहीं पता है। हम क्या बोले? हर बॉक्स को किसका एड्रेस पता है? अपने आगे वाले का, लेकिन स्टार्टिंग बॉक्स तो पहला बॉक्स है, पहला घर है, पहला घर का एड्रेस कौन बताएगा? इसीलिए, इसीलिए जभी भी आप लीड कोड का क्वेश्चन करते हैं तो आपको पहला वाला बॉक्स, पहला वाला बॉक्स दिया रहता है उसको क्या बोलते हैं? हेड। अब देखेंगे किसी भी क्वेश्चन में आपको हेड दिया रहता है। हेड",
+      "source": "caption",
+      "english_text": "is the last node. The last house is either the last node or the last box. You will stop here. That's right. Now one thing is still missing in this whole story. Who will know the address of the starting box? No one knows the address of the starting box. What should we say? Whose address does each box know? Of the one ahead of you, but the starting box is the first box, the first house, who will tell the address of the first house? That's why whenever you query the lead code, you are given the first box, the first box, what is that called? Head. Now you will see that you are given head in any question. head"
+    },
+    {
+      "start_time": 441.28,
+      "end_time": 474.309,
+      "text": "क्या होता है? पहला वाला बॉक्स का एड्रेस। हेड में क्या स्टोर होता है? 100। हेड में क्या स्टोर होता है? 100। जो भी आपके पहले बॉक्स का एड्रेस है वो हेड में स्टोर रहेगा। ठीक बात है? यही होता है लिंक लिस्ट। इसी को आप तरह-तरह से समझ सकते हैं। लेकिन सबसे आसान तरीका ये समझने का है। ठीक है? अब आ जाइए। अभी हम क्या बोले? अभी हम क्या बोले? लिंक लिस्ट में जो भी होता है बॉक्सेस होते हैं ना। अब अब थोड़ा टेक्निकल टर्म्स में समझ लेते हैं। इन बॉक्सेस को कहते हैं नोड्स। क्या कहते हैं? नोड। तो ये पूरा ये दोनों पार्ट मिलके एक नोड बनता है। ठीक है? जो आपका",
+      "source": "caption",
+      "english_text": "What happens? Address of the first box. What is stored in the head? 100. What is stored in the head? 100. Whatever the address of your first box is, it will be stored in the head. Is that correct? This is the link list. You can understand this in different ways. But the easiest way to understand this is. Ok? Come now. What did we say just now? What did we say just now? Whatever is in the link list are boxes. Now let us understand in some technical terms. These boxes are called nodes. What do you say? Node. So these two parts together form one node. Ok? which is yours"
+    },
+    {
+      "start_time": 474.319,
+      "end_time": 505.909,
+      "text": "फर्स्ट पार्ट होता है इसको क्या कहते हैं? डेटा। क्योंकि इसमें डेटा वैल्यूज होती है। इसमें वैल्यूज होती हैं। जैसे इसमें वन होगा। अच्छा। और जो ये वाला पार्ट होता है ये वाला जो क्या कंटेन करता है? अगले बॉक्स का एड्रेस इसको बोलते हैं नेक्स्ट। इसको क्या बोलते हैं? नेक्स्ट। डाटा और नेक्स्ट। आप अपने हिसाब से कुछ भी नाम रख सकते हैं। लेकिन स्टैंडर्ड कन्वेंशन यही है कि पहले वाले को डेटा बोलते हैं। दूसरे वाले को नेक्स्ट बोलते हैं। मान लीजिए इसका हाउस नंबर 100 है और ये ये स्टोर करता है। हम क्या बोले? जब भी आप लिंक लिस्ट का क्वेश्चन स्टार्ट करेंगे तो आपको क्या दिया रहेगा? आपको हेड दिया रहेगा।",
+      "source": "caption",
+      "english_text": "What is the first part called? data. Because it contains data values. It contains values. Like there will be a forest in it. Good. And what does this part contain? The address of the next box is called Next. What is this called? Next. Data and Next. You can name anything as per your choice. But the standard convention is to call the first one data. The second one is called next. Suppose his house number is 100 and he stores this. What should we say? Whenever you start a linked list question, what will you be given? You will be given head."
+    },
+    {
+      "start_time": 505.919,
+      "end_time": 538.63,
+      "text": "हेड में क्या होगा? फर्स्ट बॉक्स का हाउस नंबर। फर्स्ट बॉक्स का हाउस नंबर क्या है? 100 100 अच्छा। ठीक है। अब अब आपको मिल गया। तो हर बार हर बार आपको लिंक लिस्ट में हर बार हर समय आपको किसी ना किसी हाउस नंबर का एड्रेस चाहिए रहेगा। किसी भी वेरिएबल में हेड एक वेरिएबल है। ठीक है? हेड किस तरीके का वेरिएबल है? हेड एक पॉइंटर वेरिएबल है। अ पॉइंटर जिनको नहीं समझ में आता है दो तरीके की चीजें होती हैं। एक तो C++ जावा या पाइथन में एक तो वेरिएबल होता है। जैसे आप जब लिखते हैं इंट A = 10। तो आप इसका मतलब होता है कि",
+      "source": "caption",
+      "english_text": "What will happen in the head? House number of first box. What is the house number of first box? 100 100 good. Ok. Now you got it. So every time you will need the address of some house number in the link list. Head is a variable in any variable. Ok? What type of variable is head? head is a pointer variable. For those who don't understand, there are two types of things. Firstly, there is a variable in C++, Java or Python. Like when you write int A = 10. So you mean that"
+    },
+    {
+      "start_time": 538.64,
+      "end_time": 571.509,
+      "text": "एक बॉक्स बनेगा जिसका नाम होगा A। इसमें वैल्यू होगी 10 और इसका एक एड्रेस होगा। इसका एक एड्रेस होगा। हो सकता है इसका एड्रेस हो 500 या 400 पॉइंटर वेरिएबल क्या होता है? अगर हम कुछ ऐसा लिखें पॉइंटर वेरिएबल इंट स्टार P = एड्रेस ऑफ़ A इस वाले को एड्रेस बोलते हैं। क्या बोलते हैं? इस वाले को एड्रेस बोलते हैं। P में पता है क्या स्टोर होगा? P का वैल्यू क्या होगा? P का वैल्यू होगा 400। क्यों? P में A का वैल्यू नहीं है। P में A का हाउस नंबर है। ये 400। आप समझिए आपके लैपटॉप हाउस नंबर। आपका लैपटॉप बहुत बहुत बड़ा शहर",
+      "source": "caption",
+      "english_text": "A box will be created named A. It will have value 10 and it will have an address. It will have an address. Maybe its address could be 500 or 400. What is a pointer variable? If we write something like this pointer variable int star P = address of A, this one is called address. What do you say? This one is called address. Do you know what will be stored in P? What will be the value of P? The value of P will be 400. Why? P does not contain the value of A. P has house number of A. This 400. Understand your laptop's house number. your laptop very very big city"
+    },
+    {
+      "start_time": 571.519,
+      "end_time": 601.99,
+      "text": "है। बहुत तरीके के उसमें घर हैं। हर हर बॉक्स एक घर है और हर घर का एक हाउस नंबर है। ठीक है? चलिए हम क्या बोले? हेड में आपको हमेशा क्या मिलेगा? हेड में आपको हमेशा क्या मिलेगा? हेड में हमेशा आपको क्या मिलेगा? हाउस नंबर। हाउस नंबर ऑफ फर्स्ट नोड। ऑफ फर्स्ट नोड। ठीक? अब किसी भी इस तरीके के वेरिएबल जिसमें हाउस नंबर हो ना। उसका डाटा कैसे निकालते हैं? उसका डाटा निकालते हैं। अब अलग-अलग तरीके से निकालते हैं। C++ में। किसमें? C++ में।",
+      "source": "caption",
+      "english_text": "Is. There are many types of houses in it. Every box is a house and every house has a house number. Ok? Come on, what should we say? What will always get you in the head? What will always get you in the head? What will always get you in the head? House number. House number of first node. Off first node. Correct? Now any such type of variable which contains house number. How to extract its data? Let's extract its data. Now let's extract it in different ways. In C++. In what? In C++."
+    },
+    {
+      "start_time": 602.0,
+      "end_time": 634.31,
+      "text": "अगर आप हेड डॉट डेटा लिखेंगे तो ये है C++ में हेड डॉट डेटा लिखेंगे तो आपको मिलेगा वन। जावा में ये जो आपका एरो है ये जो आपका एरो है ये डॉट बन जाएगा। हेड डॉट डेटा इसका वैल्यू हो जाएगा वन। पाइthन में भी सेम पाइथन में भी सेम जावा की तरह हेड डॉट डेटा = 1 ये ठीक बात है। हां। एक और चीज़ हम बोले ना ये जो डेटा और नेक्स्ट इसका नाम हम क्या बोले? पहले पार्ट का नाम होता है डाटा, दूसरे पार्ट का नाम होता है नेक्स्ट।",
+      "source": "caption",
+      "english_text": "If you write head dot data, this is If you write head dot data in C++, you will get one. In Java, this is your arrow, this is your arrow, it will become a dot. Head Dot Data Its value will be one. Same in Python, same in Python, same as Java, head dot data = 1, this is correct. Yes. One more thing, what should we say about this data and next what should we say about its name? The name of the first part is Data, the name of the second part is Next."
+    },
+    {
+      "start_time": 634.32,
+      "end_time": 668.069,
+      "text": "जीएफजी पे जीएफजी पे इनका नाम होता है डाटा और नेक्स्ट। तो आप ऐसा यूज़ कर सकते हैं। लेकिन लीड कोड पे लीड कोड पे इस डेटा को ये डेटा नहीं कहते। इस डेटा का नाम इन्होंने वेल रखा हुआ है वेल एंड नेक्स्ट किसी भी क्वेश्चन में। तो ये आप देख लीजिएगा। अगर नाम आप देख लीजिएगा। नाम आपको कहीं पे लिखा रहेगा। ऊपर में कहीं पर लिंक लिस्ट जहां पे बनता है ना तो आपको दिया रहेगा कि डेटा और वैल। तो अगर वैल है तो हेड डॉट वेल लिख दिए। डेटा है तो हेड डॉट डेटा लिख दीजिए। डेटा आपका डेटा एक नाम है, वेरिएबल नेम है। इसको आप कुछ भी कर सकते हैं। आप अपना नाम भी यूज़ कर सकते हैं इसमें। लेकिन जो सेकंड पार्ट होगा उसका नाम हमेशा ही नेक्स्ट रहेगा। ये बहुत स्टैंडर्ड कन्वेंशन है। आप इसको और मत",
+      "source": "caption",
+      "english_text": "On GFG, their names are Data and Next. So you can use it like this. But this data on lead code is not called this data. They have named this data as Well and Next in any question. So you will see this. If you look at the name. Your name will be written somewhere. Somewhere above, where the link list is created, you will be given data and val. So if it is val then write head dot val. If there is data then write head dot data. Data Your data is a name, a variable name. You can do anything with it. You can also use your name in this. But the name of the second part will always be Next. This is a pretty standard convention. you don't like this anymore"
+    },
+    {
+      "start_time": 668.079,
+      "end_time": 701.67,
+      "text": "छेड़िए। अच्छा। अब यहां पे तो आप वैल्यू निकाल लिए, डेटा निकाल लिए। अगले बॉक्स का हाउस एड्रेस कैसे निकलेगा? सिमिलरली जैसे डेटा निकाले थे वैसे ही। हेड डॉट नेक्स्ट। हेड डॉट नेक्स्ट। Java में सॉरी हां, C++ में हेड एरो नेक्स्ट। Java एंड पाइथन में हेड डॉट नेक्स्ट। हेड डॉट नेक्स्ट ये आपको क्या देगा? ये आपको क्या देगा? 200 क्यों? अगला पार्ट नेक्स्ट वाला पार्ट इसमें क्या है? 200 अब आइए अब आइए। अब एक इतना समझ गए तो आपका 70% खत्म हो गया है सिलेबस। अब एक",
+      "source": "caption",
+      "english_text": "Tease. Good. Now here you have extracted the value, extracted the data. How to find the house address of the next box? Similarly the data was extracted. Head Dot Next. Head Dot Next. Sorry yes in Java, head arrow next in C++. Head Dot Next in Java and Python. What will Head Dot Next give you? What will this give you? Why 200? Next Part Next Part What's in it? 200 Come now come now. Now if you understand this much then 70% of your syllabus is over. now one"
+    },
+    {
+      "start_time": 701.68,
+      "end_time": 728.949,
+      "text": "लिंक लिस्ट बना के समझ लेते हैं। सबसे पहले एक लिंक लिस्ट बना लेते हैं। कितने? तीन नोट का। ज्यादा नहीं तीन नोड का। तो जब भी आप लिंक लिस्ट बनाइए तो अपने कॉपी में भी या कहीं पे रफ करने के लिए या तो कोई ड्राई रन करने के लिए हमेशा उसमें दो-दो पार्ट रखा कीजिए। डेटा के साथ मत बनाइए। क्योंकि इनिशियली आपको समझने के लिए एड्रेस भी लिखना जरूरी है। सबसे पहले आप तीन बॉक्स बना लिया करिए कोई भी क्वेश्चन समझने के लिए। सबसे पहले उनको हाउस एड्रेस दे दीजिए। अपने मन से कुछ भी दे दीजिए। अपने मन से कुछ भी दे दीजिए। अच्छा अपने मन से कुछ भी डाटा डाल दीजिए।",
+      "source": "caption",
+      "english_text": "Let's understand by making a link list. First of all let's make a link list. How many? Of three notes. Not more than three nodes. So whenever you make a link list, always keep two parts in it either in your copy or somewhere for roughing it or for doing a dry run. Don't make up with the data. Because initially it is necessary to write the address also to understand you. First of all, make three boxes to understand any question. First of all give them your house address. Give anything from your heart. Give anything from your heart. Okay, enter any data you want."
+    },
+    {
+      "start_time": 728.959,
+      "end_time": 762.47,
+      "text": "वन टू थ्री। डाटा डालने के बाद पहला नोड पहले नोड का जो नेक्स्ट पार्ट है वो क्या कंटेन करता है? अगले नोड का हाउस नंबर। अगले नोट का हाउस नंबर क्या है? 200। सेकंड बॉक्स का नेक्स्ट नोड क्या नेक्स्ट क्या कंटेन करेगा? थर्ड बॉक्स का हाउस नंबर। और थर्ड बॉक्स का हाउस नंबर क्या है? 300। लास्ट बॉक्स जो है उसका नेक्स्ट क्या कंटेन करेगा? मतलब आइडियली उसको करना चाहिए था अगले वाले का हाउस नंबर। लेकिन अगला कोई बॉक्स नहीं है तो नल। नल। ठीक बात है। अब आप देख रहे हैं यहां पे एक लिंक बन गया है। ये इसको आपको यहां तक पहुंचाएगा। सेकंड बॉक्स आपको थर्ड तक पहुंचाएगा। थर्ड बॉक्स आपको कहीं नहीं",
+      "source": "caption",
+      "english_text": "One two three. After entering the data, what does the next part of the first node contain? House number of the next node. What is the house number of the next note? 200. What will the next node of the second box contain next? House number of third box. And what is the house number of the third box? 300. लास्ट बॉक्स जो है उसका नेक्स्ट क्या कंटेन करेगा? मतलब आइडियली उसको करना चाहिए था अगले वाले का हाउस नंबर। लेकिन अगला कोई बॉक्स नहीं है तो नल। Tap. That's right. अब आप देख रहे हैं यहां पे एक लिंक बन गया है। ये इसको आपको यहां तक पहुंचाएगा। सेकंड बॉक्स आपको थर्ड तक पहुंचाएगा। थर्ड बॉक्स आपको कहीं नहीं"
+    },
+    {
+      "start_time": 762.48,
+      "end_time": 795.829,
+      "text": "पहुंचाएगा। ठीक है? क्या बोले हम? हम हमेशा हमेशा आपको एक हेड दिया रहेगा। हेड में क्या होगा? का हेड मतलब जो पहला स्टार्टिंग नोड है उसमें आपको पहले वाले का हाउस एड्रेस मिलेगा जो कि है 100। पहले वाले का हाउस नंबर मिलेगा जो कि है 100। अब आइए अब हमको एक प्रोग्राम दिया गया है कि इसको ट्रेवर्स करो और लिंक लिस्ट में जितनी भी वैल्यू है सबको प्रिंट करो। क्या करो? प्रिंट करो। मतलब आउटपुट क्या आना चाहिए? 1 2 3 सबसे पहला काम ट्रेवर्स कैसे होता है? अब देखिए। एक आदमी इसको कैसे ट्रेवर्स करता है? एक अगर आप पोस्ट मैंने आपको चिट्ठी डालनी है। तो आपको बोला गया है कि पहला घर हाउस नंबर 100 पे है। तो आप",
+      "source": "caption",
+      "english_text": "Will deliver. Ok? What should we say? हम हमेशा हमेशा आपको एक हेड दिया रहेगा। हेड में क्या होगा? का हेड मतलब जो पहला स्टार्टिंग नोड है उसमें आपको पहले वाले का हाउस एड्रेस मिलेगा जो कि है 100। पहले वाले का हाउस नंबर मिलेगा जो कि है 100। अब आइए अब हमको एक प्रोग्राम दिया गया है कि इसको ट्रेवर्स करो और लिंक लिस्ट में जितनी भी वैल्यू है सबको प्रिंट करो। What to do? प्रिंट करो। मतलब आउटपुट क्या आना चाहिए? 1 2 3 सबसे पहला काम ट्रेवर्स कैसे होता है? watch now. एक आदमी इसको कैसे ट्रेवर्स करता है? एक अगर आप पोस्ट मैंने आपको चिट्ठी डालनी है। तो आपको बोला गया है कि पहला घर हाउस नंबर 100 पे है। so you"
+    },
+    {
+      "start_time": 795.839,
+      "end_time": 829.829,
+      "text": "आप क्या करेंगे? पहले घर पे जाएंगे। वहां पर हाउस नंबर 100 पे वो चिट्ठी देंगे। उससे पूछ लेंगे अगला घर कहां है? वो बोलेगा अगला घर 200 पे है। आप 200 पे जाएंगे वहां पर चिट्ठी देंगे। उससे पूछेंगे अगला घर कहां है? वो बोलेगा 300 पे है। आप 300 पे जाएंगे। उसको भी चिट्ठी देंगे। उससे पूछेंगे अगला घर कहां है? वो बोलेगा अगला घर कहीं नहीं है तो आप रुक जाएंगे। यही आप करेंगे अगर आपका एक पोस्टम है तो सिमिलरली इसी को सिमिलरली इसी को आइए कोड में लिख देते हैं। कभी भी आपको लिंक लिस्ट ट्रेवर्स करना है ना। कभी भी लिंक लिस्ट ट्रेवर्स करना है। तो सबसे पहले एक वेरिएबल बना लीजिए। सबसे पहले क्या है? एक लोकल वेरिएबल बना लीजिए। नोड स्टार T = हेड।",
+      "source": "caption",
+      "english_text": "What will you do? पहले घर पे जाएंगे। वहां पर हाउस नंबर 100 पे वो चिट्ठी देंगे। उससे पूछ लेंगे अगला घर कहां है? वो बोलेगा अगला घर 200 पे है। आप 200 पे जाएंगे वहां पर चिट्ठी देंगे। उससे पूछेंगे अगला घर कहां है? वो बोलेगा 300 पे है। आप 300 पे जाएंगे। उसको भी चिट्ठी देंगे। उससे पूछेंगे अगला घर कहां है? वो बोलेगा अगला घर कहीं नहीं है तो आप रुक जाएंगे। यही आप करेंगे अगर आपका एक पोस्टम है तो सिमिलरली इसी को सिमिलरली इसी को आइए कोड में लिख देते हैं। कभी भी आपको लिंक लिस्ट ट्रेवर्स करना है ना। कभी भी लिंक लिस्ट ट्रेवर्स करना है। तो सबसे पहले एक वेरिएबल बना लीजिए। What's the first thing? एक लोकल वेरिएबल बना लीजिए। नोड स्टार T = हेड।"
+    },
+    {
+      "start_time": 829.839,
+      "end_time": 863.75,
+      "text": "अगर आप इसको जावा में लिखते हैं तो बस नोड T = हेड या पाइथन में लिखते हैं तो नड स्टार आपको C++ में लिखना होता है क्योंकि C++ में पॉइंटर थोड़ा ज्यादा एडवांस होता है। आपको पॉइंटर पे डायरेक्ट कंट्रोल मिलता है। जो लोग C++ पढ़ते हैं वो समझ रहे होंगे। जावा पाइथन वाले को स्टार लिखने की ज़रूरत नहीं है। अच्छा ये हम क्यों किए? ये हम क्यों किए? क्योंकि देखिए कभी भी ना अ कभी भी हेड को ज्यादा मत छेड़िए। क्योंकि हम क्या बोल रहे हैं? हेड में आपको क्या मिलता है? हेड में आपको स्टार्टिंग का एड्रेस मिलता है। अच्छा अगर आपसे ये स्टार्टिंग का एड्रेस भुला गया अगर आपसे गलती से ये एड्रेस भुला गया मतलब आप पोस्टमैन को एक ही चीज शुरू में याद रहती",
+      "source": "caption",
+      "english_text": "If you write it in Java then just node T = head or in Python then node star you have to write it in C++ because in C++ the pointer is a little more advanced. You get direct control over the pointer. People who read C++ will understand. Java Python guy doesn't need to write star. Well why did we do this? Why did we do this? Because see, never ever tease the head too much. Because what are we saying? What do you get in head? In the head you get the starting address. Well, if you have forgotten this starting address, if you have forgotten this address by mistake, it means that you postman remembers only one thing in the beginning."
+    },
+    {
+      "start_time": 863.76,
+      "end_time": 897.75,
+      "text": "है कि पहला घर किस हाउस नंबर पे है तो उसको बोलता है कि पहला घर 100 पे है। अगर पोस्टमैन पहले घर का एड्रेस भुला जाता है तो आप आगे कुछ नहीं कर पाएंगे। आपको पहला घर ही नहीं मिलेगा ना तो पूरा लिंक लिस्ट आपका भुला जाएगा। कोई तरीका नहीं है पहले घर पे जाए बिना सेकंड घर पे जाने का। क्या बोल रहे हैं? ध्यान से सुनिए। लिंक लिस्ट में ऐसा कोई तरीका नहीं है जिससे आप अगर पहला घर का एड्रेस भूल गए तो आप तीसरे या चौथे घर पे जा सकते हैं नहीं जा सकते हैं। तीसरे घर पर जाने के लिए आपको पहले आना पड़ेगा फिर दूसरे पे आना पड़ेगा फिर तीसरे पे आना पड़ेगा। इसीलिए हेड को कभी मत छेड़ा कीजिए। हमेशा हेड को बोलिए कि चलो हेड तुम 100 हो तुम अपने याद रखो तुमको हम",
+      "source": "caption",
+      "english_text": "If the question is asked about which house number the first house is on, then it is told that the first house is on 100. If the postman first forgets the home address then you will not be able to do anything further. You will not get the first house only, nor will your entire link list be forgotten. There is no way to go to the second house without going to the first house. What are you saying? Listen carefully. There is no way in the link list by which if you forget the address of the first house, you can go to the third or fourth house. To reach the third house, you will have to come to the first house, then come to the second house and then come to the third house. That's why never tease the head. Always tell the head to come on head, you are 100, you remember yourself, we are you."
+    },
+    {
+      "start_time": 897.76,
+      "end_time": 925.189,
+      "text": "बिलकुल नहीं छुएंगे। हेड का वैल्यू ले लीजिए एक लोकल वेरिएबल में किसमें? टी में ले लीजिए। चलिए अब इसके बाद क्या हुआ होगा? हेड में क्या वैल्यू थी? हेड में पहले नोड का हाउस नंबर था। था। पहले नोट का हाउस नंबर 100 है। तो ऑब्वियस सी बात है कि टीम में भी 100 आ गया होगा। ठीक है? ट्रेवर्स कैसे करते हैं? ट्रेवर्स कैसे करते हैं हम क्या बोले? घर बाय घर जाओ जैसे ही जैसे ही तुम को मिले कि अब कोई और घर नहीं है तो रुक जाओ। कैसे जाते हैं? लूप से जाते हैं भाई। वाइल लूप? वाइल लूप हमेशा यूज़ होता है लिंक लिस्ट में। अच्छा।",
+      "source": "caption",
+      "english_text": "Will not touch at all. Take the value of head into a local variable in what? Take it to the tee. Now what would have happened after this? What was the value in the head? The head contained the house number of the first node. Was. The house number of the first note is 100. So it is obvious that there must have been 100 in the team also. Ok? How to traverse? How do we traverse? What did we say? Go from house to house, stop as soon as you find that there are no more houses. How to go? Brother, we go through the loop. while loop? While loop is always used in linked list. Good."
+    },
+    {
+      "start_time": 925.199,
+      "end_time": 954.71,
+      "text": "कब तक जाना है? कब तक जाना है? चलिए इसको छोड़ देते हैं। इसको छोड़ देते हैं। इसको बाद में लिखेंगे। इसको बाद में लिखेंगे छोड़ देते हैं। सबसे पहला काम हम क्या बोले आपको डेटा प्रिंट करना है। डेटा कैसा एक्सेस होता है किसी भी हाउस नंबर का उसका एरो या डॉट दे के और डेटा। तो सबसे पहले तो आप सी आउट या आपका जावा है तो सिस्टम आउट प्रिंट एल एंड पाइथन है तो प्रिंट। टी डॉट डेटा या तो टी एरो डेटा या टी डॉट डेटा डिपेंडिंग ऑन योर लैंग्वेज। वेरी गुड। अब पोस्टमैन 100 पे चिट्ठी डाल चुका है। 100 पे चिट्ठी डाल चुका है। वेरी गुड।",
+      "source": "caption",
+      "english_text": "How long do you have to go? How long do you have to go? Let's leave this aside. Let's leave this aside. Will write this later. Will write this later, let's leave it. The first thing we need to do is print the data. How data is accessed: Any house number can be accessed by giving its arrow or dot and data. So first of all you C out or if your is Java then system out then print L and if it is Python then print. T Dot Data Either T Arrow Data or T Dot Data depending on your language. very good. Now the postman has put 100 letters. Lot has been cast for Rs 100. very good."
+    },
+    {
+      "start_time": 954.72,
+      "end_time": 986.55,
+      "text": "अब पोस्टमैन क्या करता है? अगले घर पे जाता है। अगले घर पे कैसे जाया जाएगा? अगला घर अगला घर क्या है? अगला घर 200 है। अच्छा आप अभी यहां पर खड़े हैं। आपका टी यहां पे है। आप अभी पोस्टमैन यहां पे हैं। आपके टी में 100 स्टोर है। अगले घर आप कैसे जाएंगे? अगले घर का एड्रेस आपको कहां मिलेगा? उस नोड के नेक्स्ट में। अगले घर का एड्रेस कहां मिलेगा? उस नोड के नेक्स्ट वाले में। ये देखिए मिल रहा है ना अगले घर का एड्रेस जहां आपको जाना है। तो t = t डॉट नेक्स्ट। सिंपल, सिंपल और वाइल लूप बंद कर दीजिए। क्या हुआ इससे?",
+      "source": "caption",
+      "english_text": "What does a postman do now? Goes to the next house. How to go to the next house? Next Home What is Next Home? The next house is 200. Well you are standing here right now. Your tee is here. You are a postman here now. You have 100 stores in t. How will you go to the next house? Where will you find the address of the next house? In the next of that node. Where can I find the address of the next house? In the next one of that node. Look, you are getting the address of the next house where you have to go. So t = t dot next. Simple, Simple and Close the Vile Loop. What happened from this?"
+    },
+    {
+      "start_time": 986.56,
+      "end_time": 1020.23,
+      "text": "सबसे पहले t था। ठीक है? 100 का वैल्यू आप प्रिंट किए वन। वेरी गुड। आप बोले t = t का नेक्स्ट मतलब 100 का नेक्स्ट। 100 हाउस नंबर का नेक्स्ट में क्या स्टोर है? 200 स्टोर है। अब आप अगला बोले t 200 हो गया। अब आपका t यहां पे आके खड़ा हो गया ऊपर में। यहां पे आकर खड़ा हो गया आपका t। अब आप बोलते हैं इसका डेटा प्रिंट कर दो। इसका डेटा प्रिंट कर दिया। अच्छा। फिर आप क्या बोलते हैं? t = t {डॉट} नेक्स्ट मतलब 200 का नेक्स्ट। 200 का नेक्स्ट 200 वाले बॉक्स के नेक्स्ट में क्या स्टोर है? 300 स्टोर है। अगले बार t = 300 हो गया। आप तीन प्रिंट कर दिए। फिर फिर क्या बोल रहे",
+      "source": "caption",
+      "english_text": "First there was t. Ok? Value of 100 you printed one. very good. You said t = next of t means next of 100. What's in store next for house number 100? There are 200 stores. Now you say next it's 200. Now your t has come here and stood at the top. Your t came here and stood up. Now you say print its data. Printed its data. Good. Then what do you say? t = t {dot} next means next of 200. What is stored next in the box of Rs.200? There are 300 stores. Next time t = 300. You printed three. then what are you saying"
+    },
+    {
+      "start_time": 1020.24,
+      "end_time": 1054.39,
+      "text": "हैं? अब आपका t यहां है। अब आप इससे पूछ रहे हैं कि तुम्हारे अगले वाला बॉक्स कहां है? मतलब t = t {डॉट} नेक्स्ट। ये बोलता है मेरे अगले वाले बॉक्स में नल है। मेरे नेक्स्ट वाले बॉक्स में नल है। अब आपका क्या हो गया? t = नल। यहां पे हो गया होगा। अब क्या t = नल का क्या मतलब है? कि सारे घर खत्म हो गए हैं। पोस्टमैन सारे घर में चिट्ठी डाल दिया है। अब आप लास्ट वाले घर को भी आ चुके हैं। उससे आप पूछे थे की अगला कहां है? वो बोला अगला कहीं नहीं है। ठीक है? तो ही आप नल हुए होंगे। यहां पे क्या और कुछ प्रिंट करने का जरूरत है? आप देखिए 1 2 3 ऑलरेडी आप प्रिंट कर चुके हैं। नहीं है। इसीलिए इसीलिए जो वाइल का कंडीशन होगा वो होगा कि जब तक जब तक टी नल",
+      "source": "caption",
+      "english_text": "are? Now your t is here. Now you are asking where is your next box? Meaning t = t {dot} Next. It says there is a tap in the box next to me. There is a tap in my next box. What happened to you now? t = null. It must have happened here. Now what does t=null mean? That all the houses are gone. The postman has dropped letters all over the house. Now you have reached the last house also. You asked him where is next? He said the next one is nowhere. Ok? Only then would you have become a tap. What else needs to be printed here? You see 1 2 3 already you have printed. Not there. That's why the condition of the will will be that as long as T is null"
+    },
+    {
+      "start_time": 1054.4,
+      "end_time": 1086.39,
+      "text": "नहीं है। जब तक जब तक टी नल नहीं है। अब ये नल को कैपिटल नल ऐसे लिखते हैं। स्मॉल नहीं लिखते हैं। लेकिन हम टाइप डेफ कर लेते हैं। तो हमको फर्क नहीं पड़ता है। कैपिटल लिखिएगा। नल मतलब कुछ नहीं। तो जब तक जब तक T नल नहीं है, जब तक T नल नहीं है, जब तक कोई बोल रहा ही रहा है कि मेरे आगे कुछ नहीं है, तब तक चलते चलो और तब तक प्रिंट करते चलो। तो ये देखिए सिंपल ट्रेवर्सल लूप ऐसे करते हैं लिंक लिस्ट में। समझ में आ गई? वेरी गुड। ट्रेवर्स हमेशा ऐसे ही होगा। है ना? हमेशा ऐसे ही होगा। अब आइए। अब आइए। दो चीज और है। दो",
+      "source": "caption",
+      "english_text": "It is not. As long as t is not null. Now this tap is written as capital tap. Small does not write. But we define the type. So it doesn't matter to us. Write capital. Tap means nothing. So as long as T is not null, as long as T is not null, as long as someone is saying that there is nothing ahead of me, then keep going and keep printing till then. So see how simple traversal loop is done in link list. Did you understand? very good. Travers will always be like this. Isn't it? It will always be like this. Come now. Come now. There are two more things. two"
+    },
+    {
+      "start_time": 1086.4,
+      "end_time": 1111.43,
+      "text": "छोटा-छोटा चीज और है। अब दो छोटा-छोटा चीज और है। चलिए यहां वन लिखिए, टू लिखिए, थ्री लिखिए। हाउस नंबर दे दीजिए अपने हिसाब से। 100, 200, 300 हम बार-बार बोल रहे हैं हाउस नंबर अपने हिसाब से दीजिए। आपको मन है 400 देने का, 5000 देने का, आप 7000 देने का जो मन करे दीजिए। तीन अलग-अलग वैल्यू देनी है। 100, 200, 300 से समझ में आता है इसलिए देना चाहिए। आइए।",
+      "source": "caption",
+      "english_text": "There are some more small things. Now there are two more small things. Let's write one here, write two, write three. Give the house number as per your choice. 100, 200, 300, we are saying again and again, give the house number as per your choice. You feel like giving Rs 400, Rs 5000, Rs 7000, whatever you feel like giving. Three different values ​​have to be given. 100, 200, 300 makes sense, hence it should be given. Come."
+    },
+    {
+      "start_time": 1111.44,
+      "end_time": 1145.029,
+      "text": "यहां पे 200, ये अपने वाले का, ये अपने नेक्स्ट वाले का, ये नल। अब लिंक हो गया ये, वेरी गुड। अब अब अगर कोई आपको बोलता है, अगर कोई आपको बोलता है कि इसमें इंसर्ट करो। क्या करो? इंसर्ट करो। अभी इसमें कितने नोट आपको दिख रहे हैं? तीन नोड दिख रहे हैं। अभी आपको कोई बोलता है इंसर्ट ए नोड। इंसर्ट एन नोड। और इंसर्ट ए नोड क्या? जिसकी वैल्यू हो चार। वैल्यू इज़ इक्वल टू चार। कोई भी आपको जबभी भी इंसर्ट करने बोलेगा ना लिंक लिस्ट में तो आपको कभी भी उसका नेक्स्ट का वैल्यू नहीं बताएगा। हम क्या बोले? हर नोड का दो पार्ट होता है। एक होता है इसका डेटा और एक होता है इसका नेक्स्ट। लिंक",
+      "source": "caption",
+      "english_text": "Here's 200, this is yours, this is your next one's, this tap. Now the link is done, very good. Now now if someone tells you, if someone tells you to insert it in this. What to do? Insert. How many notes can you see in it right now? Three nodes are visible. Now someone tells you to insert a node. Insert n node. And what about insert a node? Whose value is four. Value is equal to four. Whenever anyone asks you to insert something in the link list, he will never tell you its next value. What should we say? Every node has two parts. One is its data and one is its next. link"
+    },
+    {
+      "start_time": 1145.039,
+      "end_time": 1177.59,
+      "text": "लिस्ट में आपको जब भी कोई इंसर्ट करने के लिए बोलेगा ना, तो उसका नेक्स्ट नहीं बताया जाएगा। आपको बोलेगा वैल्यू = 4 इंसर्ट करो। ठीक है? और और जो दो चीज बताएगा एक तो बोलेगा वैल्यू और कहां पे भाई कहां पे करो कहां पे किस पोजीशन में किस घर के हम बोले ना सारा घर अलग-अलग है शहर में कहां पे एक नया घर बनेगा और वो किस पोजीशन में आएगा क्या वो सबसे स्टार्टिंग में आ जाएगा क्या वो सबसे एंड में आ जाएगा या वो कहीं पे मिडिल में आएगा तीन पॉसिबिलिटीज़ हो सकती है ना ठीक देखिए केस बाई केस ले के चलते हैं बहुत ईजी होगा",
+      "source": "caption",
+      "english_text": "Whenever someone asks you to insert something in the list, you will not be told next. You will be asked to insert value = 4. Ok? And whoever tells two things, one will say the value and where brother, where do you do it, where in which position, which house, we say, no, all the houses are different, where in the city will a new house be built and in what position will it come, will it come at the beginning, will it come at the end or will it come somewhere in the middle, there can be three possibilities, right see, it will be very easy to take it case by case."
+    },
+    {
+      "start_time": 1177.6,
+      "end_time": 1210.549,
+      "text": "ठीक है बहुत ईजी आपको कोई बोलता है आपको को कोई बोलता है कि एक नया घर बनाओ, एक नया घर बनाओ। और आपको क्या दे के भेजता है? हम क्या बोले? लिंक लिस्ट आपको हमेशा क्या दे के भेजता है? हेड दे के भेजता है। हेड इज इक्वल टू क्या? पहले घर का हाउस नंबर? 100। वेरी गुड? अब आ जाइए। हेड इज़ इक्वल टू 100 दे के आपको भेजा। आपको बोला है एक नया नोड इंसर्ट करो जिसमें फोर वैल्यू। नया घर बनाओ। अच्छा। तो सबसे पहले तो नया घर बना लो। सबसे पहले तो नया घर बना लो। यही तो होगा ना? घर इंसर्ट तो बाद में करेंगे। उसको बना के तो रख लें। अब इसका अलग-अलग तरीका होता है। Python C++",
+      "source": "caption",
+      "english_text": "Okay, very easy, someone tells you, someone tells you to build a new house, build a new house. And what does he give you and send? What should we say? What does Link List always give you? Sends after giving head. Head is equal to what? House number of the first house? 100. very good? Come now. Head is equal to 100 and sent to you. You are told to insert a new node in which four values. Build a new house. Good. So first of all build a new house. First of all, build a new house. This is what will happen, right? Will insert the house later. Make it and keep it. Now there are different methods for this. Python C++"
+    },
+    {
+      "start_time": 1210.559,
+      "end_time": 1244.95,
+      "text": "में क्या लिखते हैं? नोड स्टार एक इसको नड दे दीजिए इक्वल टू न्यू नो और यहां पे वैल्यू पास कर दीजिए। क्या? फोर। Python में सेम लिखते हैं। नोड नोड बिना स्टार के इज़ इक्वल टू न्यू नोड और यहां पे फोर पास कर दीजिए। पython में भी शायद लिखते हैं नोड इक्वल टू नोड और क्या? फोर पास कर देते हैं। ये C++ जावा Python में। ठीक है? वेरी गुड। आइए एक नोट ऐसा बना लीजिए। एक नोट ऐसा बना लीजिए। सिंटेक्स हम आपको नहीं सिखा रहे हैं। हम आपको कांसेप्ट सिखा रहे हैं। सबसे",
+      "source": "caption",
+      "english_text": "What do I write? Node star one, give it node equal to new no and pass the value here. What? Four. Write beans in Python. Node node without star is equal to new node and pass four here. In Python also perhaps we write node equal to node and what else? Let's pass the four. This is in C++, Java, Python. Ok? very good. Let's make a note like this. Make a note like this. We are not teaching you syntax. We are teaching you the concepts. the most"
+    },
+    {
+      "start_time": 1244.96,
+      "end_time": 1277.11,
+      "text": "पहले तो हम क्या बोले? एक नया नोड बना लो ना भाई। बना लो। तो एक नया हम फ्रेश नोट बना लिए। कहीं भी बनाए। अभी इसका कुछ आपको पता नहीं है। ठीक है? मान लीजिए इसका हाउस नंबर। इसका हाउस नंबर 400 है। इसका हाउस नंबर 400 है। इसमें वैल्यू दे दिए कितना? फोर। कभी भी आप नया नोड बनाते हैं ना तो उसके नेक्स्ट में उसके नेक्स्ट वाले पार्ट में बाय डिफॉल्ट नल होता है। क्या होता है? बाय डिफॉल्ट क्या होता है? नल। ठीक है? ये आपका बन गया। और इसको आप एक वेरिएबल में बनाए हैं। तो अभी आपका एक वेरिएबल है नोड। नोड में क्या है? इस नए वाले का हाउस नंबर क्या है? वो 400।",
+      "source": "caption",
+      "english_text": "What should we say first? Create a new node brother. Make it. So we created a new fresh note. Make it anywhere. You don't know anything about this yet. Ok? Suppose its house number. Its house number is 400. Its house number is 400. How much value did you give to it? Four. Whenever you create a new node, its Next part is null by default. What happens? What is by default? Tap. Ok? This became yours. And you have created this in a variable. So right now you have a variable node. What's in a node? What is the house number of this new one? That 400."
+    },
+    {
+      "start_time": 1277.12,
+      "end_time": 1310.87,
+      "text": "ठीक? अब आपके पास एक हेड है। एक आपके पास एक नया वाला नोड है। अब अगर इसको स्टार्टिंग में इंसर्ट करना है। मतलब आपको क्या बोलता है कोई कि इसको सबसे स्टार्टिंग में कर दो। ऐसा कर दो कि लिंक लिस्ट का फर्स्ट नोड बन जाए। तो देखिए दो बातें हैं। अगर इसको अगर इसको अभी आपका लिंक लिस्ट कैसा दिखता है? अभी आपका लिंक लिस्ट ऐसा दिखता है। अभी आपका लिंक लिस्ट ऐसा दिखता है। क्या है? 1 2 3 इसका हाउस नंबर 100 200 300। इसका नेक्स्ट नल इसका नेक्स्ट 300, इसका नेक्स्ट 200। अभी आपका लिंक लिस्ट ऐसा दिखता है। आपको क्या बोला",
+      "source": "caption",
+      "english_text": "ok? Now you have a head. One you have a new node. Now if it has to be inserted in the starting. Meaning, does anyone tell you to do this in the beginning? Make it so that the link becomes the first node of the list. So see, there are two things. If this if this What does your link list look like right now? This is what your link list looks like now. This is what your link list looks like now. What is? 1 2 3 Its house number is 100 200 300. Its Next Null Its Next 300, Its Next 200. This is what your link list looks like now. what did you say"
+    },
+    {
+      "start_time": 1310.88,
+      "end_time": 1341.27,
+      "text": "जा रहा है कि इस वाले नोड को इस नए वाले नोड को इस नए वाले नोड को उठा के कहां डाल दो स्टार्टिंग में। तो समझने के लिए ना आप इसको ड्रॉ कर लीजिए। आप इसको क्या कर लीजिए? ड्रॉ कर लीजिए। क्या है? फोर और नल। और इसका एड्रेस क्या है? 400। यही आपको बोला गया है ना कि स्टार्टिंग में एड्रेस करो। स्टार्टिंग में करो। अब देखिए अब आपको इसमें क्या-क्या गलत दिख रहा है? आपको इसमें ड्राइंग से ही कुछ गलत दिख जाएगा। सबसे पहले तो सबसे पहले तो आपका जो हेड है। हेड में क्या स्टोर है अभी? 100। क्योंकि अभी वाले का 100 है।",
+      "source": "caption",
+      "english_text": "The question is where to pick up this node, this new node, this new node and put it in the starting point. So to understand, draw it. What should you do with this? Draw it. What is? Four and tap. And what is its address? 400. This is what you have been told to do at the commencement address. Do it in the beginning. Now see what do you see wrong in this? You will see something wrong in the drawing itself. First of all, the first thing is your head. What's in store for the head right now? 100. Because the current one is 100."
+    },
+    {
+      "start_time": 1341.28,
+      "end_time": 1370.789,
+      "text": "क्या रूल होता है? हेड में क्या स्टोर होना चाहिए? हेड में स्टार्टिंग नोड का हाउस नंबर स्टोर होना चाहिए। तो स्टार्टिंग नोट का हाउस नंबर अब तो 400 होगा क्योंकि आप इसको यहां इंसर्ट करना चाहते हैं तो एक तो यहां पे गलत है। ठीक है? अब अब हम क्या बोले? हर बॉक्स आपको क्या बताता है? हर बॉक्स आपको दो चीज बताता है। मेरे अंदर डेटा क्या है और मेरे आगे वाला बॉक्स क्या है? तो अगर ये वाला बॉक्स अगर ये वाला बॉक्स फर्स्ट बॉक्स है। तो ये आपको डेटा तो बता रहा है। ये आपको डेटा तो फोर बराबर बता रहा है। लेकिन क्या अपने नेक्स्ट में ये बता रहा है कि मेरे आगे वाला बॉक्स कहां है? नहीं बता रहा है।",
+      "source": "caption",
+      "english_text": "What is the rule? What should be stored in the head? The house number of the starting node must be stored in the head. So the house number of the starting note will now be 400 because you want to insert it here, so one is wrong here. Ok? Now what should we say? What does each box tell you? Each box tells you two things. What's the data inside me and what's the box next to me? So if this one box if this one box is the first box. So this is what the data is telling you. It is telling you the data is equal to four. But in its Next is it telling me where the box next to me is? Not telling."
+    },
+    {
+      "start_time": 1370.799,
+      "end_time": 1405.35,
+      "text": "ये अपने बोल रहा है कि मेरे आगे तो नल है। ऐसा नहीं इसको करना चाहिए। इसको अपने नेक्स्ट में क्या बताना चाहिए कि मेरे आगे वाला बॉक्स कहां पे है? तो कायदे से कायदे से यहां पे यहां पे जहां नल लिखा हुआ है ना यहां पे 100 होना चाहिए था। बाकी सेम है बाकी सेम है। बाकी सब सेम है वेरी गुड। अब इसको करेंगे कैसे? इसको हम करेंगे कैसे? प्रोग्रामेटिकली कैसे करेंगे? ठीक है? आइए। अभी आपके पास ये है। अभी आपके पास ये है। हेड 100 है। नोड 400 है। दो चीजें गलत है। हेड की वैल्यू गलत है और ये नोड के नेक्स्ट की वो गलत है। तो सबसे पहले क्या करना है कि नोड को सुधार लीजिए।",
+      "source": "caption",
+      "english_text": "He is saying that there is a tap in front of me. This should not be done. What should it tell in its next that where is the box next to me? So according to the rules, where tap is written here, it should have been 100. The rest is beans, the rest is beans. Everything else is very good. Now how will we do this? How will we do this? How to do it programmatically? Ok? Come. You have this now. You have this now. Head is 100. Node is 400. Two things are wrong. The value of head is wrong and that of the next node is wrong. So the first thing to do is repair the node."
+    },
+    {
+      "start_time": 1405.36,
+      "end_time": 1438.07,
+      "text": "नोड को नोड के नेक्स्ट को सुधार लीजिए। नोड के नेक्स्ट को कैसे सुधारेंगे? नोड का नेक्स्ट किसको पॉइंट करना चाहिए? नोड के नेक्स्ट में क्या वैल्यू आपको चाहिए थी? आपको 100 वैल्यू चाहिए थी जो कि पहले नोड की वैल्यू थी। पहले नोड की वैल्यू कहां है? पहले नोड की वैल्यू है ना हेड में तो दिया हुआ है ना? तो सबसे पहले अगर हम कर दें कि नोड नेक्स्ट या तो नोड डॉट नेक्स्ट इज इक्वल टू हेड। तो नोड आपका नोड मतलब जब भी नोड बोलते हैं तो आप यहां खड़े हो जाते हैं। क्या बोल रहे हैं? नोड के नेक्स्ट में क्या डाल दो? हेड। हेड में क्या स्टोर है? 100। तो कुछ नहीं होगा। आपके नोड के नेक्स्ट में आपके नोड के नेक्स्ट में अभी",
+      "source": "caption",
+      "english_text": "Fix the node next to the node. How to improve Node's Next? Who should the node point to next? What value did you want in the node's next? You wanted the value 100 which was the value of the first node. Where is the value of the first node? The value of the first node is given in the head, right? So first of all if we do that node next is either node dot next is equal to head. So node your node means whenever node speaks you stand here. What are you saying? What to put next to the node? Head. What's stored in the head? 100. Then nothing will happen. In your node's next in your node's next now"
+    },
+    {
+      "start_time": 1438.08,
+      "end_time": 1469.59,
+      "text": "जो नल है अभी जो नल है वहां क्या स्टोर हो जाएगा? 100। अब देखिए अब ये सही लग रहा है। अब ये सही लग रहा है। अब ये वाला आप बना सकते हैं। ये लिंक बन गया। वेरी गुड। तो ये वाला प्रॉब्लम हो गया। अगली प्रॉब्लम क्या थी? हेड किसको पॉइंट करना चाहिए? हेड हमेशा कायदे से फर्स्ट नोड के हाउस एड्रेस को पॉइंट करना चाहिए। अभी हेड 100 को पॉइंट कर रहा है। लेकिन 100 अब सेकंड नोड है। 100 फर्स्ट नहीं रहा। फर्स्ट क्या है? 400 400 की कहां है? 400 है ना भाई? नोड में है ना? बस हेड इक्वल टू नोड।",
+      "source": "caption",
+      "english_text": "What will be stored in the tap that is there now? 100. Now see, it looks right now. Now this seems right. Now you can make this one. This link is created. very good. So this problem happened. What was the next problem? Who should the head point to? The head should always point to the house address of the first node. Right now the head is pointing to 100. But 100 is now the second node. No more 100 firsts. What is first? Where is 400 400? 400 right brother? In node right? Just head equals two nodes."
+    },
+    {
+      "start_time": 1469.6,
+      "end_time": 1498.31,
+      "text": "मतलब अब क्या हो गया? हेड इज़ इक्वल टू क्या बन गया आपका? 400। हेड इक्वल टू क्या बन गया? 400. यह कटके क्या बन गया? 400. अब ये लिंक लिस्ट को सेटिस्फाई कर रहा है। देख लीजिए। अब ये लिंक लिस्ट को सेटिस्फाई कर रहा है। वेरी गुड। देख लीजिए। कर रहा है ना सेटिस्फाई? बस हो गया। कभी भी डाउट हो ड्रॉ करके देख लीजिए। देख लीजिए उसमें गलत क्या-क्या है। सारे गलत को ठीक कर लीजिए। सारे गलत को ठीक कर लीजिए। ठीक है? अब हम आपको बोलते हैं, अब हम आपको बोलते हैं। एक काम करो।",
+      "source": "caption",
+      "english_text": "Meaning what happened now? Head is equal to what has become of you? 400. What became head equal to? 400. What has become of this cut? 400. Now this link is satisfying the list. Take a look. Now this link is satisfying the list. very good. Take a look. Is he satisfying you? That's it. Whenever you are in doubt, try drawing. See what is wrong in it. Right all the wrongs. Right all the wrongs. Ok? Now we speak to you, now we speak to you. do one thing."
+    },
+    {
+      "start_time": 1498.32,
+      "end_time": 1530.07,
+      "text": "एक काम करो। ये अभी का आपका लिंक लिस्ट है। ये क्या है? अभी का लिंक लिस्ट है। ये 100 है। ये 200 है और ये 300 है। ठीक है? वैल्यूस क्या-क्या है? वन है, टू है, थ्री है। और यहां पे 200 लिखा हुआ है। यहां पे 300 है। यहां पे नल है। तो अभी आपका लिंक लिस्ट होगा ऐसा और ऐसा। वेरी गुड। आपको एक हेड दिया रहेगा। हेड में क्या वैल्यू है? 100। ठीक? हम आपको बोलते हैं कहां इंसर्ट करो? सेकंड पोजीशन पे इंसर्ट करो। क्या करो? सेकंड पोजीशन पे इंसर्ट करो। सेकंड",
+      "source": "caption",
+      "english_text": "Do one thing. This is your current link list. What is this? The current link is listed. This is 100. This is 200 and this is 300. Ok? What are the values? There is one, there is two, there is three. And 200 is written here. It is 300 here. There is a tap here. So now your link list will be like this and like this. very good. You will be given a head. What is the value in head? 100. Correct? We tell you where to insert? Insert at second position. What to do? Insert at second position. seconds"
+    },
+    {
+      "start_time": 1530.08,
+      "end_time": 1564.23,
+      "text": "पोजीशन पे इंसर्ट करो। इंसर्ट क्या करो? फोर। फोर इंसर्ट करो। सेकंड पोजीशन पे। ठीक? क्या बोले? सबसे पहले सबसे पहला काम क्या कीजिए ना? नया नोट बना लीजिए और नया नोट को ड्रा भी कर लीजिए। क्या? डॉ भी करके देख लीजिए। आइए ड्रा कर लें। एक नोट यहां हम बनाएं जिसका हाउस नंबर हो सकता है 400 हो। जिसमें हो वैल्यू फोर और इसमें नल जो कि बाय डिफॉल्ट रहता है। ठीक? अब बना लिए। ठीक? अब आपका लिंक लिस्ट ऐसा दिखना चाहिए। ये होना चाहिए वन, ये होना चाहिए टू, ये होना चाहिए थ्री, ये होना चाहिए फोर। ऐसा ही होना चाहिए ना? ठीक है? अब",
+      "source": "caption",
+      "english_text": "Insert on position. Insert what to do? Four. Insert four. On second position. Correct? What did they say? First of all, what should you do first? Create a new note and also draw the new note. What? Try doing a doctor also. Let's draw. Let us make a note here whose house number could be 400. In which value is four and it is null which is by default. Correct? Now make it. Correct? Now your link list should look like this. It should be one, it should be two, it should be three, it should be four. It should be like this right? Ok? now"
+    },
+    {
+      "start_time": 1564.24,
+      "end_time": 1598.149,
+      "text": "देखिए अब इसमें पहचानिए गलती क्या-क्या है? क्या हेड की वैल्यू गलत है? नहीं, नहीं। नहीं नहीं। हेड की वैल्यू पहले गलत थी। पिछले वाले क्वेश्चन में गलत थी। इसमें गलत नहीं है। क्यों? हेड का मतलब क्या है? स्टार्टिंग नोड का हाउ हाउस एड्रेस। स्टार्टिंग नोड क्या अभी भी आपका वन ही दिख रहा है आपको कॉपी पे? हां, वन ही दिख रहा है। तो हेड तो बिल्कुल सही है। अच्छा। अच्छा। जो फर्स्ट नोड है, जो फर्स्ट नोड है, फर्स्ट नोड है। फर्स्ट नोड क्या है? वन वाला जो नोड है, ये वाला, ये वाला। आपको ये क्या प्रॉमिस करता है कि हम आपको सेकंड नोड का एड्रेस बताएंगे। सेकंड नोड का एड्रेस बताएंगे। अब आपके नए डायग्राम के हिसाब से सेकंड नोड का हाउस एड्रेस क्या है? सेकंड नोड का हाउस एड्रेस",
+      "source": "caption",
+      "english_text": "Look, now identify what is the mistake in this? Is the head value wrong? No. No. No. No. The value of head was wrong earlier. There was a mistake in the previous question. There is nothing wrong in this. Why? What does head mean? How house address of the starting node. Starting Node: Is your copy still visible on your copy? Yes, only forest is visible. So the head is absolutely correct. Good. Good. Which is the first node, which is the first node, which is the first node. What is first node? The one node, this one, this one. What promise does this give you that we will tell you the address of the second node. Will tell the address of the second node. Now according to your new diagram, what is the house address of the second node? House address of second node"
+    },
+    {
+      "start_time": 1598.159,
+      "end_time": 1631.029,
+      "text": "अब 400 बन चुका है। क्या ये वाला जो इसका नेक्स्ट है ये सही है? ये नहीं ये गलत है। तो इसको पहले लिस्ट में लिख लीजिए कि फर्स्ट नोड, फर्स्ट नोड का नेक्स्ट गलत है। ठीक है। वेरी गुड। अब इस वाले नोड पे आ जाइए। ये आपका क्या है? सेकंड नोड। सेकंड नोड। सेकंड नोड आपको क्या प्रॉमिस करता है कि हम आपको हमेशा क्या बताएंगे नेक्स्ट में थर्ड नोड का एड्रेस। क्या आपने नेक्स्ट में आपको ये थर्ड नोड का एड्रेस बता रहा है? नहीं। नहीं बता रहा है। ये बोल रहा है नल है। तो सेकंड नोड का भी गलत है। सेकंड नोड का भी गलत है। क्या",
+      "source": "caption",
+      "english_text": "Now 400 have been made. Is this one which is next to this correct? No this is wrong. So first write this in the list that the first node, next to the first node is wrong. Ok. very good. Now come to this node. What is this to you? Second node. Second node. What the second node promises you is that we will always tell you the address of the third node in the next. Is Next telling you the address of this third node? No. Not telling. This is what the tap is saying. So the second node is also wrong. The second node is also wrong. What"
+    },
+    {
+      "start_time": 1631.039,
+      "end_time": 1661.029,
+      "text": "नेक्स्ट गलत है। क्या यहां से सब कुछ सही है? थर्ड नोड आपको क्या वादा कर रहा है? हम आपको फोर्थ नोड का एड्रेस बताएंगे। क्या ये आपको फोर्थ नोड का एड्रेस बता रहा है? हां बता रहा है। ये फोर्थ है ना? हां। लास्ट वाला नोड क्या बोलता है? हम आपको कुछ नहीं बताएंगे नेक्स्ट में। आपको कुछ नहीं बता रहा है। बिल्कुल सही बात है। ठीक है? तो अब आइए इसको सही कर लीजिए। कहां से सही करेंगे? देखिए किस ऑर्डर में सही करेंगे ये बहुत इंपॉर्टेंट है। किस ऑर्डर में सही करेंगे? ये बहुत इंपॉर्टेंट है। सबसे पहले हम इसको सही करना चाहेंगे। सेकंड नोड में क्या गलती थी कि ये थर्ड नोड का एड्रेस नहीं बता पा रहा था। क्या थर्ड नोड का एड्रेस नहीं बता पा रहा था।",
+      "source": "caption",
+      "english_text": "Next is wrong. Is everything correct from here? What is Third Node promising you? We will tell you the address of the fourth node. Is it telling you the address of the fourth node? Yes he is telling. This is the fourth, isn't it? Yes. What does the last node say? We won't tell you anything next. Not telling you anything. That is absolutely correct. Ok? So now let's get this right. Where will we correct it? See, in which order you will correct it, it is very important. In which order will it be corrected? This is very important. First of all we would like to correct this. What was the fault in the second node that it was not able to tell the address of the third node. Was not able to tell the address of the third node?"
+    },
+    {
+      "start_time": 1661.039,
+      "end_time": 1693.029,
+      "text": "ठीक है? कायदे से कायदे से। सेकंड नोड के नेक्स्ट में सेकंड नोड के नेक्स्ट में अगर हम इसको लिखना चाहे इसका नाम हम नोट दे दें। = 400 न डॉट नेक्स्ट जो होना चाहिए कायदे से इस ड्राइंग के हिसाब से क्या होना चाहिए? 200 होना चाहिए। अच्छा ये 200 निकलेगा कैसे? ये 200 तो यहां ड्राइंग बनाया तो पता चल रहा है वहां तो नहीं निकलेगा। 200 क्या है? 200 पहले क्या था? 200 क्या था? पहले मतलब ये इंसर्ट करने से पहले ये बनाने से पहले। पहले जो सेकंड नोट था। पहले जो सेकंड नोट था उसका एड्रेस है।",
+      "source": "caption",
+      "english_text": "ok? By law by law. If we want to write it next to the second node, then we can name it note. = 400 dot What should happen next? According to this drawing, what should happen? Should be 200. Well, how will this 200 come out? If these 200 drawings were made here then it is clear that they will not be available there. What is 200? What was it 200 years ago? What was 200? First means before inserting this, before creating this. Earlier there was second note. This is the address of the second note which was there earlier."
+    },
+    {
+      "start_time": 1693.039,
+      "end_time": 1720.549,
+      "text": "उसका एड्रेस है। है ना? उसका एड्रेस है। उसी का एड्रेस है ना? पहले जो सेकंड नोड था उसका एड्रेस है। अच्छा। इसको कैसे निकाल सकते हैं? आपके पास ऑलरेडी हेड दिया हुआ है। अच्छा। हम क्या बोले? हेड क्या है? फर्स्ट नोड का एड्रेस। फर्स्ट नोड का नेक्स्ट आपको क्या बताता है? सेकंड नोड का एड्रेस। यही तो प्रॉपर्टी है लिंक लिस्ट का। का देखिए अभी भी फर्स्ट नोड का नेक्स्ट आपको क्या बता रहा है? 200 बता रहा है भाई। तो हेड डॉट नेक्स्ट मतलब हेड क्या है? फर्स्ट नोड।",
+      "source": "caption",
+      "english_text": "His address is. Isn't it? His address is. Is that his address? is the address of the second node which was earlier. Good. How can it be removed? You have already been given a head. Good. What should we say? What is head? Address of the first node. What does First Node's Next tell you? Address of the second node. This is the property of link list. Let's see what First Node's Next is telling you? 200 is being told brother. So what does head dot next mean head? First node."
+    },
+    {
+      "start_time": 1720.559,
+      "end_time": 1755.029,
+      "text": "फर्स्ट नोड का नेक्स्ट आपको क्या बताता है? सेकंड नोड का एड्रेस बताता है ना भाई। सेकंड नोड का ही तो एड्रेस बताता है तो वही लिख लीजिए वही कर लीजिए वेरी गुड हम क्या लिखेंगे क्या लिखेंगे नोड डॉट नेक्स्ट जो कि गलत था जो कि गलत था इक्वल टू हेड डॉट नेक्स्ट हेड डॉट नेक्स्ट आपका हेड 100 है 100 डॉट नेक्स्ट आपको 100 डॉट नेक्स्ट आपको क्या दे देता है 200 दे देता है तो नोट डॉट नेक्स्ट में तो 200 लिख दिए 200 लिख दिए अब ये कहां पॉइंट करने लगा है यहां पॉइंट करने लगा तो देखिए ये सही हो गया अब आप एक प्रॉब्लम सॉल्व कर लीजिए प्रॉब्लम प्रॉब्लम नीचे से सॉल्व करते हुए",
+      "source": "caption",
+      "english_text": "What does First Node's Next tell you? Brother, it tells the address of the second node. Only the address of the second node is given, so write the same, very good, what will we write, what will we write, node dot next, which was wrong, which was wrong, equal to head dot next, head dot next, your head is 100, 100 dot next gives you 100, what does dot next give you, what does it give you, 200, so in note dot next, write 200, write 200. Now he started pointing where, he started pointing here, then see it is correct, now you solve a problem by solving the problem from below."
+    },
+    {
+      "start_time": 1755.039,
+      "end_time": 1789.59,
+      "text": "आइए। देखिए एक जनरल रूल रखिए। आपको खुद समझ में आ जाएगा। जैसे-जैसे आप करेंगे। लेफ्ट टू राइट प्रॉब्लम देखिए। लेफ्ट टू राइट आप प्रॉब्लम देखिए और उसको नीचे से शुरू करना सॉल्व करना शुरू कीजिए। ठीक है? आइए ये हो चुका। अब क्या है? फर्स्ट नोड नेक्स्ट। फर्स्ट नोड क्या है? फर्स्ट नोड हेड है। हेड हेड इज़ इक्वल टू 100 है। फर्स्ट नोड का हाउस एड्रेस। हेड डॉट नेक्स्ट को हेड डॉट नेक्स्ट को कायदे से अब क्या होना चाहिए था? कायदे से इसको 400 होना चाहिए था। तभी तो यह इसको पॉइंट करता है। अभी तो यह 200 वाले को पॉइंट कर रहा है। वो गलत है। अब आप इसको बीच में इंसर्ट करिए ना। तो अब इसको पॉइंट करना चाहिए।",
+      "source": "caption",
+      "english_text": "Come. Look, keep a general rule. You will understand yourself. As you do. See Left to Right Problem. Look at the problem from left to right and start solving it starting from the bottom. Ok? Come on this is done. what now? First node next. What is first node? The first node is the head. Head Head Is Equal To 100. House address of the first node. Head Dot Next What should have happened to Head Dot Next by law now? According to law it should have been 400. That's why it points to it. Right now it is pointing to the 200 one. That is wrong. Now you insert this in the middle. So now this should be pointed out."
+    },
+    {
+      "start_time": 1789.6,
+      "end_time": 1822.71,
+      "text": "क्या है? 400 इसको क्या पॉइंट करना चाहिए था? जो भी आप नया नोड बनाए उसका एड्रेस। जो भी आप नया नोड बनाए उसका एड्रेस कहां है? वही तो नोड है। वही तो नोड बनाए हैं। नोड में ही तो है 400। बस यहां पे लिख दीजिए नोड। ये इसका मतलब क्या है? हेड पहला नोड को पॉइंट कर रहा है। पहला नोड के नेक्स्ट में जाओ। उसको नोड बना दो। नोड मतलब जो अभी नया नोड बना उसका हाउस एड्रेस वो 400 वाला। तो बस यहां पे आओ। यहां पे आओ। इसको काट के 400 लिख दो। अब क्या होगा? ये वाला जो एरो है ये वाला जो एरो है ये वाला जो एरो है ये वाला जो एरो है ये मिट जाएगा।",
+      "source": "caption",
+      "english_text": "What is it? 400 What point should it have made? The address of whatever new node you create. Where is the address of whatever new node you create? That is the node. Those are the nodes that have been created. There is only 400 in the node itself. Just write node here. What does this mean? The head is pointing to the first node. Go next to the first node. Make it a node. Node means the house address of the new node that has just been created is 400. So just come here. Come here. Cross this out and write 400. What will happen now? This one is an arrow, this one is an arrow, this one is an arrow, this one is an arrow, it will disappear."
+    },
+    {
+      "start_time": 1822.72,
+      "end_time": 1856.87,
+      "text": "कंप्यूटर इसको मिटा देगा और क्या हो जाएगा? और क्या हो जाएगा? एक नया एरो ऐसा बन जाएगा। अब देखिए आपका लिंक लिस्ट सुधर गया। आपका हेड कहां है? आपका हेड अभी भी यहीं है। हेड को हम लोग चेंज नहीं किए हैं। हेड 100 पे है। 100 किसको 100 क्या बता रहा है? मेरे आगे वाला नोट 400 पे है। डायरेक्टली यहां पे आ जाइए। 400 क्या बता रहा है? मेरे आगे वाला नोट 200 पे है। डायरेक्टली यहां पे आ जाइए। 200 क्या बता रहा है? मेरे आगे वाला नोट 300 पे है। यहां आ गया। 300 क्या बता रहा है? मेरे आगे कुछ नहीं है। लिंक लिस्ट आपका ख़तम हो गया। तो ये था इंसर्ट। ये था इंसर्ट। कॉपी पे डायग्राम बना के देखिए। आपको पता करना पड़ेगा। लेफ्ट टू राइट पता कीजिए क्या-क्या",
+      "source": "caption",
+      "english_text": "The computer will erase it and what will happen? What else will happen? A new arrow will be created like this. Now see your link list has improved. Where is your head? Your head is still here. We have not changed the head. The head is at 100. 100 What is 100 telling whom? The note next to me is 400 pes. Come here directly. What is 400 telling? The note next to me is 200 rupees. Come here directly. What is 200 telling? The note next to me is 300 pes. Came here. What is 300 telling? There is nothing ahead of me. Your link list is complete. So this was the insert. This was the insert. Make a diagram on your copy and see. You will have to find out. left to right find out what"
+    },
+    {
+      "start_time": 1856.88,
+      "end_time": 1883.669,
+      "text": "गलत है। नीचे से उसको सॉल्व करना शुरू कर दीजिए। आपको हमेशा क्या याद रखना है? हेड आपको हमेशा दिया रहेगा। जो कि होगा फर्स्ट नोड। फर्स्ट नोड का क्या? फर्स्ट नोड का हाउस एड्रेस। फर्स्ट नोड का हाउस एड्रेस। आप हमेशा एक नया नोड बनाएंगे। नया नोड में आपको क्या स्टोर करना है? जो नया नोड आप बनाएं। नया नोड मतलब वो जो दो हिस्से वाला घर है, नया नोड का हाउस एड्रेस हमेशा आपके नोड में रहेगा। हमेशा आपके नोड में रहेगा।",
+      "source": "caption",
+      "english_text": "Is wrong. Start solving it from below. What do you always have to remember? Head will always be given to you. Which will be the first node. What about the first node? House address of the first node. House address of the first node. You will always create a new node. What do you need to store in the new node? The new node you create. New node means that which is a two-part house, the house address of the new node will always be in your node. Will always be in your node."
+    },
+    {
+      "start_time": 1883.679,
+      "end_time": 1917.909,
+      "text": "इन दोनों को आपको ध्यान रखना है कि हम ठीक कर दें। सही बात है? अभी इसमें एक और क्वेश्चन है। ये तो हम बोले कि सेकंड में करो। इंसर्ट एट एनी पोजीशन हो सकता है। इंसर्ट एट एनी पोजीशन हो सकता है। एनी पोजीशन हो सकता है और इंसर्ट एट इंसर्ट एट लास्ट भी हो सकता है। ये दोनों क्वेश्चन हम क्यों नहीं करा रहे हैं? ये हम चाहते हैं कि आप खुद सोचिए। कॉपी पे लिखिए। कॉपी पे खुद सोचिए। कोई भी एक रैंडम पोजीशन ले लीजिए। आपको एक इनपुट दिया रहेगा फॉर एग्जांपल। आपको बोला रहेगा कि ये आपका लिंक लिस्ट है। आपका बहुत बड़ा सा एक लिंक लिस्ट है। आपको बोलेगा आफ्टर आफ्टर आफ्टर",
+      "source": "caption",
+      "english_text": "You have to take care of both of these so that we can fix them. That's correct? Now there is one more question in this. We told you to do this in seconds. Insert can be at any position. Insert can be at any position. There can be any position and insert at the end can also be done. Why are we not asking these two questions? We want you to think about this yourself. Write on the copy. Think about the copy yourself. Take any random position. You will be given an input for example. You will be told that this is your link list. You have a very big link list. Will tell you after after after"
+    },
+    {
+      "start_time": 1917.919,
+      "end_time": 1949.029,
+      "text": "थर्ड नोड। आफ्टर थर्ड नोड इंसर्ट करो या आफ्टर फिफ्थ नोड इंसर्ट करो आफ्टर आफ्टर एनी नोड आफ्टर आपको एक वेरिएबल दे देगा आफ्टर केथ नोड आफ्टर केथ नोड इंसर्ट करो और आपको बोलेगा एक लास्ट में भी इंसर्ट करो लास्ट में इंसर्ट करो ये दोनों क्वेश्चन आप खुद करके आइए कॉपी में लिखिए देखिए बनता है कि नहीं बनता है तो बताएंगे कमेंट जरूर करिएगा बना कि नहीं। ठीक है लिंक लिस्ट पढ़ने का यही तरीका है। कॉपी पे बना के देख लीजिए गलती उसमें खोज लीजिए अपने हिसाब से गलती को ठीक कर दीजिए आपका लिंक लिस्ट सुधर जाएगा। लिंक लिस्ट का एक ही रूल है। क्या रूल है? सॉरी दो रूल हैं।",
+      "source": "caption",
+      "english_text": "Third node. After insert the third node or after the fifth node, after any node, after will give you a variable, after the kth node, insert it after the kth node and will tell you to insert it in the last node as well, insert it in the last node. Do both these questions yourself and write in the copy. See if it is made or not, then you will definitely comment and tell you whether it is made or not. Okay, this is the way to read the link list. Make a copy and see the mistake in it. Correct the mistake as per your convenience and your link list will improve. There is only one rule for linked list. What is the rule? Sorry, there are two rules."
+    },
+    {
+      "start_time": 1949.039,
+      "end_time": 1983.59,
+      "text": "हेड हेड हमेशा कहां होना चाहिए? स्टार्टिंग। और हर नोड हर नोड का नेक्स्ट आपको क्या बताना चाहिए? अगले नोड अगले नोड का हाउस एड्रेस। अगले नोड का हाउस एड्रेस। हाउस एड्रेस। दो रूल लिंक लिस्ट को चाहिए फॉलो करना पड़ेगा। किसका? सिंगल लिंक लिस्ट। वो सब बाद में देखिएगा। डबल लिंक लिस्ट, सर्कुलर वो सब अलग चीज है। लेकिन दो रूल, टू रूल्स। ये टू रूल सेटिस्फाई होने चाहिए। आपको जब कॉपी में आप बनाएंगे सबसे पहले क्या काम करना है? कोई भी इन्सर्शन या डिलीशन कुछ भी उसको बना के देख लीजिए। अगर डिलीशन है तो एक नोट को रब कर लीजिए और फिर देख लीजिए। अब आपके कॉपी",
+      "source": "caption",
+      "english_text": "Where should the head always be? Starting. And what should every node tell you next? Next Node House address of the next node. House address of the next node. House address. Two rules link list must be followed. Whose? Single Link List. We will see all that later. Double linked list, circular, all that is a different thing. But two rules, two rules. These two rules must be satisfied. What is the first thing you have to do when you make a copy? Try making any insertion or deletion. If there is deletion, rub a note and then check. Now your copy"
+    },
+    {
+      "start_time": 1983.6,
+      "end_time": 2017.83,
+      "text": "में जो दिख रहा है ना वो इस रूल को फॉलो करना चाहिए। उस हिसाब से उसको बदल लीजिए वेरिएबल को यही तरीका है लिंक सीखने का। ऐसे ही सीखा जाएगा। जब तक आप कॉपी में नहीं बना के देखेंगे नहीं समझ में आएगा। रटिएगा मत कि ऐसा कर देंगे, वैसा कर देंगे। कुछ समझ में नहीं आएगा। ठीक है? ये सब हम लिख रहे हैं हमको कुछ समझ में नहीं आ रहा है। जब तक हम डायग्राम नहीं बनाएंगे, हमको भी समझ में नहीं आएगा। डायग्राम बना के लिंक लिस्ट पढ़ा कीजिए। ठीक है? तो ये हम क्यों पढ़ाएं? क्योंकि पैटर्न पढ़ने से पहले ये जरूरी होता है कि आप लिंक लिस्ट का ये सब बेसिक जान लीजिए ताकि पैटर्न में आपको डिफर दिक्कत ना आए क्योंकि वहां तो आप याद कर लीजिएगा फिर जब हम वाइल फ़स्ट नॉट इक्वल टू नल किए थे तो बहुत लोग उसको याद कर लिया होगा। अब आपको पता चला ट्रेवर्स क्यों करते हैं? अभी हम",
+      "source": "caption",
+      "english_text": "From what I can see, this rule should be followed. Change the variable accordingly, this is the way to learn the link. This is how it will be learned. Unless you see it in a copy, you will not understand. Don't memorize that we will do this or that. Will not understand anything. Ok? We are writing all this and we are not understanding anything. Unless we make a diagram, we will not understand. Make a diagram and read the link list. Ok? So why should we teach this? Because before reading the pattern, it is important that you know all the basics of link list so that you do not face any problem in the pattern because you will remember it there, then when we had said while first is not equal to null, then many people would have remembered it. Now you know why do traverses? now we"
+    },
+    {
+      "start_time": 2017.84,
+      "end_time": 2032.039,
+      "text": "ट्रेवर्स करके दिखाए थे ना कि वाइल t नॉट इक्वल टू नल भी लिखे थे। ठीक है? तो इस इस कारण से लिखे थे। तो ये एक लिंक लिस्ट का छोटा सा सेशन था। कल से देखते हैं लिंक लिस्ट का और पैटर्न पढ़ना शुरू करेंगे। चलिए धन्यवाद।",
+      "source": "caption",
+      "english_text": "Traversed and showed that while t is not equal to null was also written. Ok? So this was written for this reason. So this was a small session of a link list. Let's see and start reading more patterns of the link list from tomorrow. Let's go thanks."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

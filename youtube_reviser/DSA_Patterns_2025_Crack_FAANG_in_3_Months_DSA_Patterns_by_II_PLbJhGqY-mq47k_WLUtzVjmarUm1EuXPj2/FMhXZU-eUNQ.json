@@ -1,0 +1,541 @@
+{
+  "video_id": "FMhXZU-eUNQ",
+  "video_title": "DP in 15 Days Episode 4 House Robber Dynamic Programming",
+  "video_number": 112,
+  "chunks": [
+    {
+      "start_time": 3.11,
+      "end_time": 37.35,
+      "text": "कौन हो तुम? तुम एक चोर हो। चोर जो कि एक कॉलोनी में घुस गया है। अब कॉलोनी में ना बहुत सारे घर हैं। हर घर में कुछ पैसे हैं। सब घर में सेम अमाउंट ऑफ मनी नहीं है। हर घर में हो सकता है किसी में ₹10 है, ₹100 कुछ भी है। अब आपको ना एक चोर [गला साफ़ करने की आवाज़] की भांति चोरी करनी है हर घर में। लेकिन लेकिन लेकिन सबसे पहली बात तो आप चोरी करना यहां से शुरू करेंगे। वन से लेके लास्ट तक चोरी करना शुरू करेंगे। आपको पहले से नहीं मालूम है कि किस घर में कितना पैसा है। अब किस घर में कितना पैसा है वो तो घर में जाने के बाद ही पता चलेगा। लॉकर देखने के बाद। लेकिन एक और छोटा सा कैच है ना अगर दो एडजेसेंट घरों में चोरी हुई। किसी भी",
+      "source": "caption",
+      "english_text": "Who are you? You are a thief. A thief who has entered a colony. Now there are not many houses in the colony. There is some money in every house. Not every house has the same amount of money. Every house may have ₹10, some may have ₹100. Now you don't have to steal from every house like a thief [throat clearing sound]. But but but first of all you will start stealing from here. Will start stealing from first to last. You do not know in advance how much money is in which house. Now how much money is there in which house will be known only after visiting the house. After seeing the locker. But there is another small catch if theft occurs in two adjacent houses. any"
+    },
+    {
+      "start_time": 37.36,
+      "end_time": 69.83,
+      "text": "दो एडजेसेंट। एडजेसेंट का मतलब होता है जो साथ-साथ हैं। मतलब कि अगर दो कंटीन्यूअस घरों में चोरी आप किए। फॉर एग्जांपल अगर आप H2 मतलब दूसरे वाले घर में और तीसरे वाले घर में चोरी करते हैं ना तो तुरंत अलार्म बज जाएगा। तो आपको कम से कम एक घर छोड़ के तो चोरी करना है। कम से कम। मतलब अगर आप पहले घर में चोरी कर रहे हैं। आप दूसरे घर में चोरी नहीं कर सकते हैं। आप तीसरे में कर सकते हैं। तीसरे में करना आपकी चॉइस है। करना है नहीं करना है जो भी। लेकिन अगर आप पहले घर में चोरी कर रहे हैं। आप दूसरे घर में चोरी नहीं कर सकते",
+      "source": "caption",
+      "english_text": "Two Adjacent. Adjacent means those who are together. Meaning that if you commit theft in two continuous houses. For example, if you commit theft in H2 i.e. in the second house and in the third house, then the alarm will go off immediately. So you have to steal leaving at least one house behind. at least. Meaning if you are stealing in the first house. You cannot steal from another house. You can do it in the third. It is your choice to do it in the third. Whatever has to be done or not has to be done. But if you are stealing in the first house. You can't steal from another house"
+    },
+    {
+      "start_time": 69.84,
+      "end_time": 95.749,
+      "text": "हैं। ये अटल सत्य है। उसी हिसाब से अगर आप पहले घर में चोरी नहीं कर रहे हैं। आप दूसरे घर में चोरी कर रहे हैं तो आप तीसरे घर में चोरी नहीं कर सकते हैं। ये अटल सत्य है। इस क्वेश्चन का नाम है हाउस रॉबर। हाउस रॉबर सिर्फ डीपी समझने के लिए नहीं बहुत सारी चीजें समझने के लिए बहुत अच्छा क्वेश्चन है। क्या? सबसे पहले तो ये समझने के लिए अच्छा क्वेश्चन है ना कि क्यों डीपी लगाना पड़ेगा? क्यों आप इसको कॉमन सेंस से नहीं सॉल्व कर सकते हैं।",
+      "source": "caption",
+      "english_text": "Are. This is an unchangeable truth. Similarly, if you are not committing theft in the first house. If you are stealing in the second house then you cannot steal in the third house. This is an unchangeable truth. The name of this question is House Robber. House Robber is a very good question not just for understanding DP but for understanding many things. What? First of all, a good question to understand is why DP has to be applied? Why can't you solve this with common sense?"
+    },
+    {
+      "start_time": 95.759,
+      "end_time": 129.669,
+      "text": "मतलब क्यों आप पहले से कोई लॉजिक सोच के इसको सॉल्व नहीं कर सकते? वो भी हम बताएंगे। आपके मन में अभी लॉजिक आ रहा होगा कि ये कर लेंगे, वो कर लेंगे। किसी से सॉल्व नहीं होगा। सबका एक कारण है। तो वैरायटी ऑफ़ चीज़ समझने के लिए, रिकर्शन समझने के लिए, डीपी समझने के लिए, ग्रीडी समझने के लिए, बहुत सारी चीज़ समझने के लिए ना ये एक फंडामेंटल मतलब सॉलिड क्वेश्चन जिसको कहते हैं ना, मतलब ब्रिलियंट क्वेश्चन उस क्वेश्चन का नाम है हाउस रॉबर। तो आइए आपको हम हाउस रॉबर खोल के समझाएं। इसका एक पार्ट नहीं है, हाउस रॉबर का पांच पार्ट है। ठीक है? तो, एक पार्ट करते हैं। बाकी सारे पार्ट भी इसी पे चलेंगे। बाकी सारे पार्ट ऑटोमेटिक आसान हो",
+      "source": "caption",
+      "english_text": "Meaning why can't you solve it by thinking logically in advance? We will tell that also. Logic might be coming in your mind right now that we will do this, we will do that. It won't be solved by anyone. There is a reason for everything. So to understand variety of things, to understand recursion, to understand DP, to understand greedy, to understand many things, this is a fundamental i.e. solid question which is called, i.e. brilliant question, the name of that question is House Robber. So let us explain to you the house robber. It doesn't have one part, House Robber has five parts. Ok? So, let's do part one. All other parts will also follow this. All other parts are easy to automate"
+    },
+    {
+      "start_time": 129.679,
+      "end_time": 162.869,
+      "text": "जाएंगे। तो बहुत ध्यान से कॉपी कलम खोल के और सबसे पहले दिमाग कान खोल के सुनिए। चलिए शुरू करते हैं जल्दी से। अब देखिए शुरू करते हैं। अब जैसा कि हम बोले ना कि इस क्वेश्चन को सॉल्व करने के लिए आपके मन में बहुत सारा लॉजिकल एल्गोरिदम आना चाहिए। मतलब बिना डीपी बिना किसी चीज के लॉजिकल प्लान आना चाहिए कि चलो ऐसे सॉल्व कर देते हैं। हो जाएगा। उसमें से एक प्लान क्या होता है? अब देखिए मान लीजिए चार घर है। आपके पास एक ही रूल है कि भाई एडजेसेंट घरों में चोरी नहीं करनी है। तो देखिए एडजेसेंट घरों में अगर आप चोरी नहीं करते हैं ना तो मैक्सिमम कितना घर लूट सकते हैं? मतलब कि अगर चार घर हैं कंटीन्यूअस घर में चोरी नहीं मतलब एक घर",
+      "source": "caption",
+      "english_text": "Will go. So open your notebook and pen very carefully and first of all listen with your mind and ears open. Let's start quickly. Now look let's start. Now, as we said, to solve this question, many logical algorithms should come to your mind. Meaning, without DP, without anything, a logical plan should come that let's solve it like this. Will be done. What is one of those plans? Now see, suppose there are four houses. You have only one rule, brother, not to steal from adjacent houses. So see, if you do not steal from the adjacent houses, then what is the maximum number of houses that can be looted? Meaning that if there are four houses, there is no theft in one continuous house, which means one house."
+    },
+    {
+      "start_time": 162.879,
+      "end_time": 191.11,
+      "text": "छोड़ के हमेशा चोरी करना है। तो मैक्सिमम कितना घर लूटा जा सकता है? मैक्सिमम आप दो घर लूट सकते हैं। आप दो से ज्यादा घर नहीं लूट सकते हैं ना? समझ में आ रहा है ना? एडजेसेंट मतलब एक घर छोड़ के चोरी करना। एक घर चोरी किए, एक घर छोड़ दिए। एक घर चोरी किए, दूसरा छोड़ दिए, फिर चोरी किए, फिर छोड़ दिए। तो इससे आप कितना घर कवर कर पाएंगे? इससे आप जितना भी घर है, उसका आधा कवर कर पाएंगे मैक्सिमम केस में। मतलब आप तो एक आदमी ये सोच सकता है कि देखो दो घर चोरी करना है। अच्छा। अब घर में पैसा है।",
+      "source": "caption",
+      "english_text": "Always have to steal by leaving. So what is the maximum number of houses that can be looted? Maximum you can loot two houses. You can't rob more than two houses, right? Do you understand? Adjacent means stealing by leaving a house. Stole one house, left another house. Stole one house, abandoned another, stole again, then abandoned another. So how much house will you be able to cover with this? With this, you will be able to cover half of your house in the maximum case. Meaning, a person can think that he wants to steal two houses. Good. Now there is money in the house."
+    },
+    {
+      "start_time": 191.12,
+      "end_time": 224.789,
+      "text": "ऑब्वियस सी बात है कि पैसा नेगेटिव तो होगा नहीं। मतलब किसी घर में चोरी करने से ऐसा तो है नहीं कि आपका घट जाएगा। कुछ नहीं। चोरी करेंगे तो बढ़ेगा ही बढ़ेगा ना। आपका धन चोरी करने से घटना ही नहीं आ रहा है। आपका धन चोरी करने से बढ़ेगा। ओके? वेरी गुड। तो कोई बोले कि देखो दो घर में चोरी करना है। दो केस बना लो। दो केस का क्या मतलब है? एक बार ऐसा करके देख लेंगे कि सारे ऑड नंबर घर में चोरी कर लें। वन और थ्री में चोरी कर लें। बोले वेरी गुड अच्छी बात है। और एक और केस कर लें। एक बार और लूप चला के कि सारे ओड नंबर घर में चोरी कर लिए। इवन नंबर घर में चोरी कर लिए। हम बोले वेरी गुड। अब बोले",
+      "source": "caption",
+      "english_text": "It is obvious that the money will not be negative. Meaning, it does not mean that by stealing from a house your wealth will be diminished. Nothing. If you steal, it will increase. Nothing is happening by stealing your money. Your wealth will increase by stealing. Ok? very good. So someone says, look, you have to steal from two houses. Make two cases. What do two cases mean? After doing this once, try to steal all the odd numbers in the house. Steal in one and three. Said very good, that's a good thing. And do another case. By running the loop one more time, all the odd numbers were stolen from the house. Stolen from even numbered house. We said very good. say now"
+    },
+    {
+      "start_time": 224.799,
+      "end_time": 256.629,
+      "text": "कि भैया इन दोनों में जिसका भी ज्यादा आएगा मतलब जिससे भी ज्यादा पैसा मिलेगा उसको रिटर्न कर देंगे। तो बहुत अच्छा ये चल जाएगा। लेकिन अब इसमें एक फ्लॉ है। आप बोल रहे हैं कि चलो हम दो केस बना लेंगे। एक बार में हम सिर्फ ओड नंबर घर में चोरी करेंगे। वन और थ्री में। अच्छा। एक बार सिर्फ इवन नंबर वाले घर में चोरी करेंगे। टू और फोर में। वेरी गुड। लेकिन आपको वन और फोर भी तो चोरी करना पड़ सकता है। हो सकता है कि अगर आप घर नंबर वन चोरी किए उसके बाद हाउस नंबर टू तो ऑब्वियसली छोड़ना है। मतलब आप वन में चोरी कर लिए।",
+      "source": "caption",
+      "english_text": "That brother, whichever of these two gets more means we will return it to whoever gets more money. So this will work very well. But now there is a flaw in it. You are saying that let us make two cases. We will only steal odd numbered houses at a time. In one and three. Good. Will steal once only in even numbered houses. In two and four. very good. But you may have to steal one and four also. It is possible that if you steal house number one, then it is obvious that you have to leave house number two. Meaning you stole in the forest."
+    },
+    {
+      "start_time": 256.639,
+      "end_time": 289.35,
+      "text": "अच्छा टू तो ऑब्वियसली छोड़ना है। टू तो मैं कर ही नहीं सकता। अगर वन में किए हैं तो कोई बात नहीं। टू में छोड़ दिए। थ्री में कर सकते थे। लेकिन अब मजबूरी तो है नहीं कि करना ही है। छोड़ दिए। थ्री को भी छोड़ दिए। टू और थ्री दोनों को फोर में कर लिए। क्या फोर में कर सकते हैं? हां बिल्कुल कर सकते हैं। मतलब रूल है कि कंटीन्यूअस घर में नहीं करना है। कोई बात नहीं। तो वन में कर लिए और फोर में कर लिए। ये भी तो एक कॉम्बिनेशन बनता है। ये वाला जो कॉम्बिनेशन है ये ना आपके सारे ओड नंबर में कवर होगा ना सारे इवन नंबर में कवर होगा। क्यों? क्योंकि इसमें एक घर ऑड है, एक घर इवन है। ये केस तो कहीं नहीं कवर हुआ। मतलब कि मान लीजिए कि हाउस नंबर",
+      "source": "caption",
+      "english_text": "Well, we have to leave it obviously. I can't even do that. If it is done in the forest then there is no problem. Left in two. Could have done it in three. But now it is not a compulsion but it has to be done. Left it. Left out three also. Turned two and three into four. Can it be done in four? Yes of course you can. Meaning the rule is not to do continuous work at home. No problem. So did it in one and did it in four. This also becomes a combination. This combination will neither cover all your odd numbers nor cover all your even numbers. Why? Because in this one house is odd, one house is even. This case was not covered anywhere. Meaning that suppose the house number"
+    },
+    {
+      "start_time": 289.36,
+      "end_time": 321.029,
+      "text": "वन में ₹1000 रखा हुआ है। हाउस नंबर फोर में ₹5000 रखा हुआ है। हाउस नंबर दो में ₹10 रखा हुआ है। और हाउस नंबर तीन में ₹20 रखा हुआ है। इस केस में आप दो घर लूट सकते थे मैक्सिमम तो सबसे अच्छा कॉम्बिनेशन तो यही होगा ना भाई कि आप वन और फोर में चोरी कर लीजिए। अगर आप इसको बोलेंगे कि नहीं वन और थ्री का एक केस बनाएंगे तो आपको मिलेगा ₹120। अगर आप बोलेंगे कि नहीं हम सिर्फ इवन नंबर लूटूंगा टू और फोर तो आपको मिलेगा ₹510 लेकिन अगर आप वन और फोर में लूटते हैं वन और फोर में चोरी करते हैं तो",
+      "source": "caption",
+      "english_text": "₹1000 is kept in the forest. ₹5000 is kept in house number four. ₹10 is kept in house number two. And ₹20 is kept in house number three. In this case you could have robbed two houses maximum, so the best combination would be to steal in one and four. If you ask him to make a case of one and three, you will get ₹ 120. If you say no, I will rob only the even numbers, two and four, then you will get ₹ 510, but if you rob in one and four, steal in one and four."
+    },
+    {
+      "start_time": 321.039,
+      "end_time": 347.27,
+      "text": "आपको मिल रहा है ₹6000 तो ₹6000 ज्यादा हुआ ना तो इसमें आप ऐसा नहीं कर सकते हैं कि इवन कर लें ऑड कर लें। तो अगर ये आपके दिमाग में थॉट आया है जो कि आना चाहिए जो कि आना चाहिए। हम बोल नहीं बोल रहे हैं गलत है। इसीलिए हम सारा डिस्कस कर लिए। मेरे दिमाग में भी आया था आपके दिमाग में भी आएगा। ये इसीलिए नहीं काम कर सकता है। ठीक है? तो ऐसा कोई शंका नहीं रहना चाहिए कि वो भी तो कर सकते थे। नहीं कर सकते हैं। तो समझ में आ रहा है कि ये तो नहीं कर सकते हैं। इवन ऑड इवन ऑड नहीं किया जा सकता है। आगे आइए और आपको हम दिखाते हैं।",
+      "source": "caption",
+      "english_text": "If you are getting ₹ 6000, then ₹ 6000 is more, so you cannot do this by making it even or making it odd. So if this thought has come in your mind that should come, that should come. We are not speaking, it is wrong. That's why we discussed everything. It came to my mind, it will come to your mind too. This is why it can't work. Ok? So there should be no doubt that he too could have done it. can not do. So it is understood that this cannot be done. Even Odds Even Odds cannot be made. Come ahead and let us show you."
+    },
+    {
+      "start_time": 347.28,
+      "end_time": 380.629,
+      "text": "और अगला तरीका आपके दिमाग में क्या आ सकता है ना? ये भी आना चाहिए। ये भी बिल्कुल आना चाहिए। अब आप बोलेंगे ना कि एक काम करते हैं। शुरू तो हाउस नंबर वन से करना है। मतलब जो भी इंडेक्स ज़ीरो रहेगा उससे करना है। अच्छा। तो हम ये देख लेंगे ना कि एक बार में ऐसा कि हम दो घर देख लें। मतलब कि मान लीजिए आपको पता चलता है आप जिस पे खड़े हैं उसका तो पता रहेगा ना कितना मनी है। आपको एरे के फॉर्म में दिया रहेगा कि इस घर में ये पैसा है। अच्छा मान लीजिए आपको पता चलता है कि वन में ना ₹10 है। हाउस नंबर वन में ₹10 है और हाउस नंबर दो में ₹1000 है। कितना? ₹1000 है। तो आप बोलेंगे कि देखिए हम वन पे खड़े रहेंगे।",
+      "source": "caption",
+      "english_text": "And what's the next way that can come to your mind, right? This should also come. This should also definitely come. Now you will say let's do one thing. We have to start from house number one. Meaning, whatever index remains zero has to be done. Good. So we will see that we see two houses at once. Meaning that suppose you come to know that the person you are standing on, you will know how much money is there. It will be given to you in the form of an array that this is the money in this house. Well, suppose you come to know that there is no ₹ 10 in the forest. House number one has ₹10 and house number two has ₹1000. How much? It is ₹1000. So you will say, look, we will stand on the forest."
+    },
+    {
+      "start_time": 380.639,
+      "end_time": 413.43,
+      "text": "अच्छा वन और टू को देख लेंगे। अगर वन के पास ज्यादा पैसा हुआ तो हम वन को ले लेंगे और टू को इग्नोर करके थ्री पे कूद जाएंगे। हम बोले वेरी गुड। अगर वन के पास टू से कम पैसा हुआ तो हम वन को इग्नोर करके टू पे चले जाएंगे और टू को लेने की कोशिश करेंगे। ऐसा कुछ करने की कोशिश करेंगे। इसमें भी एक लॉ है। इसमें क्या फ्लॉ है? सिर्फ दो घर नहीं है। आगे बहुत सारे घर हैं। फॉर एग्जांपल इस केस में अगर आप देखते हैं ना कि देखो वन और टू में वन के पास कम है तो वन को क्या लें? टू को ले लेते हैं। आप क्या किए कि टू को ले लिए।",
+      "source": "caption",
+      "english_text": "Okay, let's see one and two. If one has more money, we will take one and ignore two and jump to three. We said very good. If one has less money than two, we will ignore one and go to two and try to take two. Will try to do something like this. There is a law in this also. What is the flaw in it? There are not just two houses. There are many houses ahead. For example, in this case, if you see that one has less in one and two, then what should one take? Let's take two. What did you do that you took 2?"
+    },
+    {
+      "start_time": 413.44,
+      "end_time": 439.27,
+      "text": "टू को ले लिए। अब जब आप टू को ले लिए ऑटोमेटिक बात बन जाती है कि अब आप थ्री को नहीं ले सकते हैं। अगर आप टू में चोरी कर लिए तो थ्री में नहीं कर सकते हैं चोरी। आपको सीधा फोर पे कूदना पड़ेगा। आपको सीधा फोर पे कूदना पड़ेगा। इमेजिन कीजिए फोर में ना ₹5 है। फोर में कितना रुपया है? ₹5 है। और जो साला आप थ्री को नहीं छोड़ दिए। थ्री को आप बिल्कुल इग्नोर कर दिए टू के कारण। टू में थ्री में ना ₹10,000 था।",
+      "source": "caption",
+      "english_text": "Took two. Now once you take a two, it becomes automatic that you can no longer take a three. If you steal in two, you cannot steal in three. You will have to jump straight onto the fours. You will have to jump straight onto the fours. Imagine, there is no ₹5 in four. How much rupees are there in four? It is ₹5. And the fucker you didn't leave the three. You completely ignored three because of two. Neither in two nor in three it was ₹10,000."
+    },
+    {
+      "start_time": 439.28,
+      "end_time": 472.23,
+      "text": "थ्री में कितना था? ₹10,000 था। मतलब कि अब आप वन पे थे। आप वन और टू को देख के अपना फैसला लिए कि वन को नहीं लेना है। टू को लेना है। अच्छा टू को ले लो। अब टू के चक्कर में थ्री बेचारा छूट गया। थ्री के पास था ₹10,000। मतलब आप कुछ भी करते तो आपको थ्री तो ले ही लेना चाहिए था। आपको थ्री तो ले ही लेना चाहिए था। इसमें क्या आइडियल सिनेरियो होता ना? आप वन और थ्री को ले लेते। वन और थ्री को ले लेते तो आपके पास ₹10 हो जाता। ये सबसे बेस्ट कॉम्बिनेशन है इस क्वेश्चन का। इसीलिए ना एक घर पर खड़े रहेंगे, आगे का घर देख",
+      "source": "caption",
+      "english_text": "How much was there in three? Was ₹10,000. Meaning that now you were on the forest floor. You look at one and two and decide not to take one. Have to take two. Okay, take two. Now in the pursuit of two, three poor people were left behind. Three had ₹10,000. Meaning, whatever you did, you should have taken three. You should have taken three. What would be an ideal scenario in this, right? You would have taken one and three. If you had taken one and three, you would have had ₹ 10. This is the best combination of this question. That's why we will not stand at one house, look at the next house."
+    },
+    {
+      "start_time": 472.24,
+      "end_time": 504.23,
+      "text": "लेंगे, पीछे का एक घर देख लेंगे। इससे भी बात नहीं बनेगी क्योंकि घर बहुत सारा है। और आप कितना आगे का देखिएगा? अब कोई बोलेगा कि चलो वन भी देख लेंगे, टू भी देख लेंगे, थ्री भी देख लेंगे। अरे भाई कितना देखिएगा? अब यहां तो बोला हुआ है कि एक घर छोड़ के चोरी करना है। अगर इसी क्वेश्चन को मॉडिफाई कर दिया इंटरव्यू में बोला सुनो एक घर छोड़ के चोरी नहीं करना है। आपको 10 घर छोड़ के चोरी करना है। मतलब अगर आप हाउस नंबर वन में चोरी किए आगे के 10 घर में आप चोरी नहीं कर सकते हैं। तब कितना घर देखेंगे? तब आप थोड़ी बोलेंगे कि हम आगे का 11 और 12 और 15 घर तो घर ही देखते रह जाएंगे ना हर घर पे खड़े हो के।",
+      "source": "caption",
+      "english_text": "Will take, we will see a house behind. Even this will not work because there is a lot of house. And how far ahead will you look? Now someone will say that let's see one, we will see two, we will see three also. Hey brother, how much will you see? Now it is said here that one has to leave a house and steal. If this question was modified then he said in the interview, listen, don't leave a house and steal. You have to steal 10 houses. Meaning, if you steal in house number one, you cannot steal in the next 10 houses. Then how many houses will you see? Then you will say that we will keep looking at the next 11, 12 and 15 houses, standing at every house."
+    },
+    {
+      "start_time": 504.24,
+      "end_time": 538.63,
+      "text": "तो ये भी नहीं चलेगा। इसीलिए आपके दिमाग में कोई भी इमीडिएट लॉजिक आता है ना कि हम इस घर पे खड़े हो के फैसला ले लेंगे कि नहीं इसको लेना है नहीं लेना है। प्रोबेबिलिटी है कि आपका डिसीजन बाद में जाके कहीं ना कहीं गलत हो जाएगा। मतलब कि अगर आप हाउस नंबर वन पे एक पक्का डिसीजन ले लेते हैं ना कि इसको लेंगे या नहीं लेंगे तो आगे जाके हो सकता है ना कि वो डिसीजन गलत हो जाए। आप बाद में सोचेंगे कि अरे साला वन को ले लेते तो ठीक रहता। यहां पे जैसे कि वन और फोर वाले में आप कभी ना कभी ना फोर पे जाके जरूर सोचेंगे कि साला टू और थ्री को नहीं लेना चाहिए था। वन को",
+      "source": "caption",
+      "english_text": "So this also won't work. That is why any immediate logic comes in your mind that we will stand at this house and decide whether to take it or not. There is a possibility that your decision will go wrong later on. Meaning that if you take a firm decision on house number one whether you will take it or not, then it is possible that in future that decision may turn out to be wrong. Later you will think that it would have been better if you had taken the forest. Here, like in one and four, at some point of time you will definitely think that you should not have taken two and three. to the forest"
+    },
+    {
+      "start_time": 538.64,
+      "end_time": 572.389,
+      "text": "ही लेके और बैठ जाना चाहिए था और सीधा फोर पे लेना चाहिए था। तो अब ये वैसा प्रॉब्लम है ये ना स्टॉक मार्केट जैसा प्रॉब्लम है। किसके तरह? स्टॉक मार्केट जैसा प्रॉब्लम है। मतलब अब आप डे वन पे अपना स्टॉक बेच दिए। मान लो आप बेच दिए। अब डे पे जाके ना वो स्टॉक बहुत उसका दाम बढ़ गया। आप मान लीजिए ₹10 में अपना स्टॉक बेच दिए। डे में जाके वो 1 लाख का हो गया। अब आप सोचेंगे कि साला ये डे वन को नहीं बेचते ना तो अभी बेच देते। लेकिन अब पछताते हो क्या जब चिड़िया चुग गई खेत वाला बात हो जाएगा। तो इसमें भी आप एक घर पे खड़े हो के ना पक्का डिसीजन तो नहीं ले सकते हैं कि भैया इसको",
+      "source": "caption",
+      "english_text": "Should have taken it and sat down and taken it straight on four. So now this is a problem like the stock market. Like what? There is a problem like the stock market. Meaning now you sold your stock on day one. Suppose you sold. Now by the day the price of that stock has increased a lot. Suppose you sold your stock for ₹10. By the end of the day he had become worth Rs 1 lakh. Now you will think that if they don't sell it on day one then they would have sold it now. But now do you regret it, when the bird has pecked, the matter of the farm will be over. So in this too, you cannot take a firm decision while standing at a house that brother should do this."
+    },
+    {
+      "start_time": 572.399,
+      "end_time": 599.91,
+      "text": "लेंगे या नहीं लेंगे। आगे जाके आपको मालूम नहीं है क्या होने वाला है। आपका फ्यूचर अनप्रिडिक्टेबल है। इसीलिए इस क्वेश्चन में ना कोई भी इमीडिएट डिसीजन या कोई भी इमीडिएट एल्गोरिदम कि चलो ये एल्गोरिदम बना लो ऐसे करके ले लो। काम नहीं करेगा क्योंकि आपको फ्यूचर का पता नहीं है कि फ्यूचर में होने क्या वाला है। फ्यूचर के किस घर में कितना पैसा है। आपको नहीं मालूम है। आप जब उस घर में जाएंगे तो पता चलेगा। उस हिसाब से आपको अपना डिसीजन लेना है वो तो पॉसिबल नहीं है। फ्यूचर के हिसाब से अपना डिसीजन तो नहीं ले सकता आदमी।",
+      "source": "caption",
+      "english_text": "Will you take it or not? You don't know what is going to happen going forward. Your future is unpredictable. That is why in this question there is no immediate decision or any immediate algorithm that let's make this algorithm and do it like this. Will not work because you do not know what is going to happen in the future. How much money is there in which house of the future? You don't know. You will come to know when you go to that house. You have to take your decision accordingly, it is not possible. A man cannot take his decisions based on the future."
+    },
+    {
+      "start_time": 599.92,
+      "end_time": 632.63,
+      "text": "पास्ट के हिसाब से ले सकता है। पास्ट में जो हुआ है उसके हिसाब से ले सकता है। लेकिन अब फ्यूचर में क्या होने वाला है? किसको पता है? इसीलिए किसी भी तरीके का हार्ड कोडेड एल्गोरिदम किसी भी तरीके का आप दिमाग लगाएंगे ना इस क्वेश्चन में काम नहीं बनेगा। इस क्वेश्चन में एक ही चीज काम करेगी ना कि बेटा आपको सारा पॉसिबल चॉइसेस लेना पड़ेगा। क्या? सारा पॉसिबिलिटी दुनिया में जितनी तरीके की पॉसिबिलिटी है वन को लिए तो क्या पॉसिबिलिटी बना? वन को छोड़ दिए तो क्या पॉसिबिलिटी बना? वन और टू दोनों को छोड़ दिए तो क्या पॉसिबिलिटी बना? सारे तरीके",
+      "source": "caption",
+      "english_text": "Can take it according to the past. It can be taken according to what has happened in the past. But what is going to happen in the future? Who knows? That is why any kind of hard coded algorithm you use in your mind will not work in this question. Only one thing will work in this question, son, you will have to take all the possible choices. What? All Possibilities: There are so many possibilities in the world, so what are the possibilities for one? What is the possibility if we leave the forest? What is the possibility if we leave out both one and two? all ways"
+    },
+    {
+      "start_time": 632.64,
+      "end_time": 667.11,
+      "text": "का पॉसिबिलिटी जितना तरीके का पॉसिबिलिटी है सबको एक्सप्लोर करना पड़ेगा और सब में सबसे अच्छा जो आंसर है वो आपको लेना पड़ेगा क्योंकि आप एक रिजिड फैसला नहीं कर सकते हैं कि चलो हम वन को नहीं लेंगे नहीं जानते हैं आपकी वन को नहीं लेना है। हो सकता है बाद में जाके आपको पता चले कि वन को ले लेना चाहिए था। इसीलिए आपको सारा पॉसिबल यूनिवर्स को देखना पड़ेगा। इस यूनिवर्स में हम वन को नहीं लिए। टू थ्री लिए मतलब टू और फोर लिए। इस यूनिवर्स में हम वन को लिए, टू थ्री फोर छोड़ दिए, फाइव को लिए। एक यूनिवर्स में हम वन को भी नहीं लिए, टू को भी नहीं लिए, थ्री को लिए, फोर",
+      "source": "caption",
+      "english_text": "As many possibilities as there are, you will have to explore all of them and you will have to take the best answer because you cannot take a rigid decision that we will not take that one, we don't know, we will not take that one. It is possible that later you will realize that the forest should have been taken. That's why you have to look at the entire possible universe. We did not take the forest for granted in this universe. To take three means to take two and four. In this universe we took one, gave up two, three, four and took five. In one universe we don't even take one, we don't even take two, we take three, four"
+    },
+    {
+      "start_time": 667.12,
+      "end_time": 701.03,
+      "text": "को छोड़ के फाइव को ले लिए। तो इस तरीके से आपको सारा पॉसिबिलिटी देख- देख के जिसमें भी सबसे अच्छा आंसर आता है वो लेना पड़ेगा। और इस चीज़ का नाम क्या है? इस चीज़ का नाम है रिकर्ज़न। रिकज़न में हम लोग ऐसा बफ़ेरा क्वेश्चन कर चुके हैं जिसमें आपको सारा पॉसिबिलिटी देखना है। हम चाहते तो यह बात आपको शुरू में ही बता देते कि आपको ऐसे करना है। लेकिन क्यों सारा पॉसिबिलिटी देखना है? क्यों एक एक फैसले से काम नहीं बनेगा। ये हम उम्मीद करते हैं कि आपको अच्छे से समझ में आएगा। आप चाहे तो और एल्गोरिदम बना लीजिए। मतलब आप और कुछ सोचिए कि अच्छा ऐसा करेंगे वैसा नहीं काम करेगा। कहीं ना कहीं जाके वो गलत जरूर हो",
+      "source": "caption",
+      "english_text": "Except 1 and took 5. So in this way you will have to look at all the possibilities and choose the best answer. And what is the name of this thing? The name of this thing is recursion. In Recon, we have made such a buffer question in which you have to see all the possibilities. If we wanted, we would have told you in the beginning that you have to do it like this. But why see all the possibilities? Why one decision at a time will not work. We hope that you will understand this well. If you want, make more algorithms. Meaning you think about something else, it is good to do this, it will not work like that. It must be wrong somewhere"
+    },
+    {
+      "start_time": 701.04,
+      "end_time": 733.829,
+      "text": "जाएगा। ठीक है? अब चलते हैं कि सारा पॉसिबल सिनेरियो का क्या मतलब है? सारा पॉसिबिलिटी का क्या मतलब है? अब आगे चलते हैं। चलिए। लेकिन अब ऑल पॉसिबिलिटी का क्या मतलब हुआ? ये क्या मतलब हुआ कि सारा पॉसिबिलिटी देख लो। ये कैसे देखना है? देखिए। आपको शुरू कहां से करना है? हाउस नंबर वन से करना है या तो एरे में इंडेक्स ज़ीरो से करना है। ठीक है? अब एक बात बताइए कि जब आप हाउस नंबर वन पे पहुंचते हैं। जब आप शुरू में हाउस नंबर वन पे पहुंचते हैं। आपके पास एक भी रुपया नहीं है। आप शुरू कर रहे हैं चोरी करना। अच्छा क्या आप हाउस नंबर वन पे देखिए हर घर पे जनरली जनरली स्पीकिंग आपके पास दो चॉइससेस है। आपके",
+      "source": "caption",
+      "english_text": "Will go. Ok? Now let's see what all the possible scenarios mean? What does all possibility mean? Now let's move ahead. Let go. But now what does All Possibility mean? What does it mean to see all the possibilities? How to see this? See. Where do you start? It has to be done from house number one or from index zero in the array. Ok? Now tell me one thing that when you reach house number one. When you initially reach house number one. You don't have a single rupee. You are starting to steal. Well, do you look at house number one? Generally speaking, on every house, you have two choices. your"
+    },
+    {
+      "start_time": 733.839,
+      "end_time": 768.629,
+      "text": "पास दो चॉइससेस है कि इस घर में चोरी करेंगे या तो इस घर में चोरी नहीं करेंगे। इसके अलावा तो कोई चॉइस नहीं ना भाई। आधा चोरी तो नहीं करेंगे। 3/4 चोरी तो नहीं। करेंगे या नहीं करेंगे? इस घर का सारा पैसा लूट लेंगे या इस घर को रहने देंगे, आगे बढ़ जाएंगे। अच्छा हाउस नंबर वन पे क्या आपके पास एक फ्री हैंड अवेलेबल है कि आप कुछ भी कर सकते हैं दोनों में से। हां बिल्कुल। क्यों? क्योंकि आपका जो रेस्ट्रिक्शन है ना कि भाई लगातार घरों में चोरी नहीं करना है। मतलब लगातार दो घरों में चोरी नहीं होना चाहिए। अब हाउस नंबर वन तो पहला घर है। तो हाउस नंबर वन के पहले तो कुछ था नहीं। तो यहां पे आपके पास दोनों ऑप्शन खुला हुआ है। या तो आप हाउस नंबर वन पे चोरी कर सकते हैं या तो",
+      "source": "caption",
+      "english_text": "You have two choices: either you will steal from this house or you will not steal from this house. Apart from this, there is no choice, brother. Will not steal half. 3/4 Not theft. Will you do it or not? Will we loot all the money from this house or will we let this house remain and move ahead. अच्छा हाउस नंबर वन पे क्या आपके पास एक फ्री हैंड अवेलेबल है कि आप कुछ भी कर सकते हैं दोनों में से। Yes absolutely. Why? क्योंकि आपका जो रेस्ट्रिक्शन है ना कि भाई लगातार घरों में चोरी नहीं करना है। मतलब लगातार दो घरों में चोरी नहीं होना चाहिए। अब हाउस नंबर वन तो पहला घर है। तो हाउस नंबर वन के पहले तो कुछ था नहीं। तो यहां पे आपके पास दोनों ऑप्शन खुला हुआ है। या तो आप हाउस नंबर वन पे चोरी कर सकते हैं या तो"
+    },
+    {
+      "start_time": 768.639,
+      "end_time": 795.59,
+      "text": "आप हाउस नंबर वन को छोड़ के आगे बढ़ सकते हैं। कहने का क्या मतलब है? आपका मन करे ना आप हाउस नंबर वन पे यस मतलब हाउस नंबर वन पे आप चोरी कर सकते हैं। कर सकते हैं। ठीक है? या तो आप हाउस नंबर वन को नो करके लीव कर सकते हैं। और किस पे जा सकते हैं? आप हाउस नंबर टू पे जा सकते हैं। आप कहां जा सकते हैं? हाउस नंबर टू पे जा सकते हैं। हाउस नंबर टू पे। दोनों ही केस में आप आगे बढ़ेंगे तो हाउस नंबर टू आ जाएगा।",
+      "source": "caption",
+      "english_text": "आप हाउस नंबर वन को छोड़ के आगे बढ़ सकते हैं। What does it mean to say? आपका मन करे ना आप हाउस नंबर वन पे यस मतलब हाउस नंबर वन पे आप चोरी कर सकते हैं। Can do. Ok? या तो आप हाउस नंबर वन को नो करके लीव कर सकते हैं। और किस पे जा सकते हैं? आप हाउस नंबर टू पे जा सकते हैं। आप कहां जा सकते हैं? हाउस नंबर टू पे जा सकते हैं। हाउस नंबर टू पे। दोनों ही केस में आप आगे बढ़ेंगे तो हाउस नंबर टू आ जाएगा।"
+    },
+    {
+      "start_time": 795.6,
+      "end_time": 830.389,
+      "text": "अच्छा हाउस नंबर टू पे जा सकते हैं। अच्छा अब देखिए इस वाले केस में जब आप हाउस नंबर वन पे चोरी करते हैं जिस यूनिवर्स में आप हाउस नंबर वन पे चोरी करते हैं इसमें आपके बैंक बैलेंस में जितना भी हाउस नंबर वन पे होगा पैसा वो जुड़ जाएगा। जुड़ जाएगा ना जब आप हाउस नंबर वन में चोरी किए तो हाउस वन में जितना भी पैसा रखा है वो आपके पास जुड़ जाना चाहिए। तो जितना भी आपके हाउस वन में होगा जो भी मनी होगा प्लस हो जाएगा आपके जो भी बाकी के चीजों में अच्छा जब आप हाउस नंबर वन में चोरी नहीं करते हैं जब आप हाउस नंबर वन पे चोरी नहीं करते हैं तो",
+      "source": "caption",
+      "english_text": "Okay, we can go to house number two. Well, now see in this case, when you steal from house number one, in the universe in which you steal from house number one, the amount of money that is on house number one will be added to your bank balance. It will be added. When you commit theft in house number one, all the money kept in house number one should be added to you. So, whatever money you have in house number one, whatever money you have, will be plus whatever other things you have. When you do not steal in house number one, when you do not steal in house number one, then"
+    },
+    {
+      "start_time": 830.399,
+      "end_time": 858.389,
+      "text": "आपका बैंक बैलेंस जितना था उतना ही रहेगा मतलब आप जीरो से शुरू किए ज़ीरो रहेगा चोरी तो नहीं किए ना अच्छा अब इस वाले केस में देखिए जब आप हाउस नंबर वन में चोरी करके हाउस नंबर टू में आते हैं जब आप हाउस नंबर वन में चोरी किए हाउस नंबर वन का पैसा आपने उठा लिए बैग बैग में भर लिए और कहां आ गए? हाउस नंबर टू पे। अब एक बात बताइए क्या आप हाउस नंबर टू में चोरी कर सकते हैं? क्या आपके पास कोई चॉइस है? नहीं। आपके पास कोई चॉइस नहीं है।",
+      "source": "caption",
+      "english_text": "Your bank balance will remain the same as it was, which means you started from zero and will remain zero if you did not steal. Now see in this case, when you steal from house number one and come to house number two, when you steal from house number one, you picked up the money of house number one, filled it in bags and where did you come? House number two. Now tell me one thing, can you steal in house number two? Do you have any choice? No. You don't have any choice."
+    },
+    {
+      "start_time": 858.399,
+      "end_time": 888.71,
+      "text": "क्यों? क्योंकि आप इस यूनिवर्स में पहला नंबर के हाउस में चोरी करके दूसरे नंबर के हाउस में आए हैं। अब दुनिया में कुछ भी हो जाए, कोई भी उलटफेर हो जाए, आप हाउस टू में चोरी नहीं कर सकते हैं। बिल्कुल नहीं कर सकते हैं। आपको सीधा-सीधा आपको सीधा-सीधा यहां नो करके हाउस नंबर थ्री पे जाना पड़ेगा। हाउस नंबर थ्री पे जाना पड़ेगा। और जब आप हाउस नंबर थ्री पे आएंगे ना अगेन आपके पास दोनों ऑप्शन खुल जाएगा।",
+      "source": "caption",
+      "english_text": "Why? Because you have come to the second house by stealing from the first house in this universe. Now no matter what happens in the world, no matter what happens, you cannot steal in House Two. Absolutely can't. You will have to directly leave here and go to house number three. Will have to go to house number three. And when you come to house number three again, both options will be open to you."
+    },
+    {
+      "start_time": 888.72,
+      "end_time": 923.189,
+      "text": "अब हाउस नंबर थ्री पे कोई रेस्ट्रिक्शन नहीं है। इस वाले पाथ को देखिए। आप हाउस नंबर वन पे चोरी किए। यस लेके हाउस नंबर टू पे आ गए। अब हाउस नंबर टू पे आपके पास कोई ऑप्शन नहीं है। कुछ नहीं कर सकते। आपको आगे के घर में जाना पड़ेगा। ज्यादा दिमाग मत लगाइए। इस घर में बिल्कुल नहीं चोरी हो सकती है। अच्छा। जब आप आगे के घर में गए। अगेन आगे के घर मतलब हाउस नंबर थ्री पे आपके पास फिर से फ्री हैंड आ गया क्योंकि अब हाउस नंबर टू में तो चोरी हुआ नहीं था। आप हाउस नंबर थ्री में जो मन करे कर सकते हैं क्योंकि लगातार घरों में चोरी नहीं होनी चाहिए। इस घर में हुआ और इस घर में हो सकता है नहीं भी हो सकता है। इस घर के बाद इस घर में नहीं हो सकता है। यह",
+      "source": "caption",
+      "english_text": "Now there is no restriction on house number three. Look at this path. You stole from house number one. After taking yes, he came to house number two. Now you have no option to pay house number two. Can't do anything. You will have to go to the house ahead. Don't worry too much. There can be absolutely no theft in this house. Good. When you went to the next house. Again you have a free hand on the next house i.e. house number three because now there was no theft in house number two. You can do whatever you want in house number three because there should not be theft in consecutive houses. It happened in this house and it may or may not happen in this house. This house cannot happen after this house. this"
+    },
+    {
+      "start_time": 923.199,
+      "end_time": 952.15,
+      "text": "अलाउड नहीं है। मतलब कि अगर आप डिसाइड करते हैं कि हमको किसी घर में चोरी करना है। उसके आगे वाला घर ऑटोमेटिकली ब्लॉक हो जाता है। आप एक तरीके से उसको स्किप करके उसके एक घर छोड़ के चले जाते हैं। अगर आप हाउस नंबर वन में चोरी नहीं करने का डिसीजन लेते। अगर आप हाउस नंबर वन में नहीं करते चोरी तो आप हाउस नंबर टू में फिर से कुछ भी कर सकते थे। आपको एक फ्री हैंड मिला हुआ है क्योंकि हाउस नंबर टू में कोई रेस्ट्रिक्शन नहीं है अब।",
+      "source": "caption",
+      "english_text": "Not loud. Meaning that if you decide that we have to steal from some house. The house next to it gets automatically blocked. In a way, you skip him and leave him at one of his houses. If you had decided not to steal in house number one. If you did not steal in house number one, you could do anything again in house number two. You have got a free hand because there are no restrictions in house number two now."
+    },
+    {
+      "start_time": 952.16,
+      "end_time": 978.15,
+      "text": "रेस्ट्रिक्शन कब होता जब आप हाउस वन में चोरी करते जब आप हाउस वन में यस आप डिसाइड करते। अगर आप हाउस वन में नो डिसाइड कर रहे हैं, हाउस टू को कोई तरीके का दिक्कत नहीं है। हाउस टू को फ्री हैंड मिला हुआ है। अब हाउस वन सेम चीज कर सकता है। हाउस वन या तो चोरी कर सकता है। अगर आप सॉरी हाउस टू में अगर आप हाउस टू में चोरी करेंगे तो हाउस टू में जितना भी मनी है वो आपके उसमें मिल जाएगा और आप चोरी करेंगे।",
+      "source": "caption",
+      "english_text": "When would there be restrictions when you would steal in House One? When would you decide in House One? If you are having no decision in House One, House Two has no problem. House Two has got a free hand. Now House One can do the same thing. House One can steal either. If you steal in House 2, then whatever money is there in House 2 will be mixed with you and you will steal."
+    },
+    {
+      "start_time": 978.16,
+      "end_time": 1012.31,
+      "text": "आप चाहें हाउस टू में चोरी नहीं भी कर सकते हैं। आपकी मर्जी। लेकिन अगर आप चोरी करते हैं हाउस टू में हाउस थ्री ऑटोमेटिकली ब्लॉक हो जाएगा। आपको नो करके हाउस फोर में जाना ही जाना पड़ेगा और कोई रास्ता नहीं है। भगवान भी आपको नहीं बचा सकते हैं। अगर आप हाउस टू में चोरी नहीं करते हैं तो आपके पास हाउस थ्री में अगेन आपके पास फ्री हैंड है। कोई रेस्ट्रिक्शन नहीं है। मतलब कि हर एक घर में हर एक घर में हर एक घर में हमारे पास जनरली तो दो चॉइससे होती हैं। हर एक घर में हमारे पास जनरली दो चॉइसे होती हैं। जब आप शुरू करेंगे शुरू वाले घर से फॉर एग्जांपल ये",
+      "source": "caption",
+      "english_text": "You may not want to steal in House Two. As you wish. But if you steal in House Two, House Three will be automatically blocked. You will have to say no and go to House Four, there is no other way. Even God can't save you. If you do not steal in House Two, you again have a free hand in House Three. There is no restriction. Meaning that in every house, in every house, we generally have two choices. In every house we generally have two choices. When you start from the starting house, for example:"
+    },
+    {
+      "start_time": 1012.32,
+      "end_time": 1047.189,
+      "text": "आपका एरे है। आपको एरे के फॉर्म में दिया रहेगा ना जो भी घर है आपको ऐसे बताया रहेगा कि ये देखो आपका एरे है और ये लो 1 2 3 1 करके आपका एरे है। मान लीजिए यहां पे टू है। जब आप शुरू करते हैं i = 0 से आप शुरू तो i = 0 मतलब फर्स्ट वाले घर से ही करेंगे। आपके पास शुरू में शुरू करने के समय तो फ्री हैंड रहता है। आपके पास तो फ्री हैंड रहता है। मतलब कि आप शुरू किस स्टेट के साथ किस मेंटालिटी के साथ करते हैं? आप शुरू करते हैं i = 0 और अगर हम एक और वेरिएबल ले लें फ्री = 1 इसके साथ आप शुरू करते हैं फ्री या तो वन हो सकता है",
+      "source": "caption",
+      "english_text": "is your array. Whatever house is there, it will be given to you in the form of an array and you will be told that look, this is your array and this is your array by doing 1 2 3 1. Suppose here is pay two. When you start from i = 0 then i = 0 means you will start from the first house only. You have a free hand when you first start. You have a free hand. Meaning, with which state and with which mentality do you start? You start with i = 0 and if we take another variable free = 1 with this you start with free can be either one"
+    },
+    {
+      "start_time": 1047.199,
+      "end_time": 1080.31,
+      "text": "या तो जीरो फ्री वन होने का क्या मतलब है कि इस घर में ना आपके पास चॉइस है। आप चाहें तो ले सकते हैं। नहीं चाहें तो नहीं ले सकते हैं। अगर आप शुरू करते हैं i = 0 फ्री = 1 मतलब आपके पास दो चॉइस हैं। आप चाहें तो दोनों चीज कर सकते हैं। कौन सी दोनों चीज? आप चाहें तो i = 0 में चोरी कर सकते हैं। लेकिन जब आप चोरी करेंगे तो एरे ऑफ 0 मतलब i = 0 वाले घर में जो भी पैसा रखा हुआ था इस केस में जो भी ₹1 रखा हुआ था वो आपको मिल जाएगा और आप आगे चले",
+      "source": "caption",
+      "english_text": "Either what it means to be zero free one is that you do not have a choice in this house. You can take it if you want. If you don't want, you can't take it. If you start with i = 0 free = 1 meaning you have two choices. If you want, you can do both. Which two things? You can steal at i = 0 if you want. But when you steal, the array of 0 means whatever money was kept in the house with i = 0, in this case whatever ₹ 1 was kept, you will get it and you move ahead."
+    },
+    {
+      "start_time": 1080.32,
+      "end_time": 1114.549,
+      "text": "जाएंगे। आप कहां चले जाएंगे? i = 1 पे चले जाएंगे। लेकिन i = 1 पे इस वाले पाथ पे जो फ्री होगा ना वो ज़ीरो हो जाएगा। क्यों? क्योंकि आप इसमें i = 0 पे चोरी करके आ रहे हैं। अब i = 1 पे आपके पास कोई रास्ता नहीं है। आप फ्री नहीं हैं। आपको सीधा-सीधा आगे जाना पड़ेगा नो लिख के i = 2 पे। जब आप i = 2 पे जाएंगे तब ये फ्री दोबारा वन होगा। लेकिन i = 1 पे इस वाले पे तो कोई चॉइस नहीं है। आपका फ्री जीरो",
+      "source": "caption",
+      "english_text": "Will go. Where will you go? Will go to i = 1. But at i = 1, the free space on this path will become zero. Why? Because you are sneaking into it at i = 0. Now at i = 1 you have no path. You are not free. You have to go straight ahead and write no on i = 2. When you go to i = 2 then this free will become one again. But at i = 1 there is no choice on this one. your free zero"
+    },
+    {
+      "start_time": 1114.559,
+      "end_time": 1147.75,
+      "text": "है। आपके पास फ्री विल नहीं है चूज़ करने का। आपको आगे जाना ही पड़ेगा। मुकाबले की अगर आप i = 0 पर चोरी नहीं करना चाहते हैं मतलब आप नो वाले पाथ में जाना चाहते हैं तो आप आगे तो फिर भी जाएंगे। घर में चोरी नहीं करना तो आगे वाले घर में जाओ। तो आप i = 1 पे आएंगे। लेकिन आपका जो फ्री होगा ना वो अभी भी वन होगा। क्यों वन होगा? क्योंकि आप i = 0 पे चोरी नहीं किए। आप चोरी नहीं किए तो आपको ये एरे ऑफ़ ज़ीरो यहां पे नहीं मिला। कोई बात नहीं। अब क्योंकि आप चोरी नहीं किए। आप i = 1 पे आ",
+      "source": "caption",
+      "english_text": "Is. You don't have free will to choose. You will have to go ahead. Conversely, if you do not want to steal at i = 0, meaning you want to go in the path with no, then you will still go ahead. If you don't want to steal from your house then go to the next house. So you will come to i = 1. But your free one will still be one. Why would there be a forest? Because you did not steal at i = 0. If you did not steal then you would not have found this array of zeros here. No problem. Now because you didn't steal. You come to i = 1"
+    },
+    {
+      "start_time": 1147.76,
+      "end_time": 1181.51,
+      "text": "सकते हैं और आपका फ्री विल आपका फ्री विल मतलब आपके चॉइस करने की शक्ति अभी भी वन है। आप i = 1 पे कोई भी काम कर सकते हैं। कौन सा काम? आप चोरी कर सकते हैं। यस लिख के आप चोरी नहीं कर सकते हैं। ऐसे करते करते करते आप एक पॉइंट पे पहुंचेंगे जब लास्ट में सारा घर खत्म हो जाएगा। आप कहां पहुंच जाएंगे? i इक्वल इक्वल टू n पे। i इक्वल इक्वल टू n का मतलब सारे घर देख लिए। अब उस घर में कहीं चोरी हुई होगी, कहीं चोरी नहीं हुई होगी, कहीं दो घर में नहीं हुई होगी। कुछ भी हो सकता है। सारे",
+      "source": "caption",
+      "english_text": "You can and your free will means your power to choose is still one. You can do any work on i = 1. Which work? You can steal. You cannot steal by writing yes. By doing this you will reach a point when finally the entire house will be destroyed. Where will you reach? i is equal to n pe. i equal to n means all the houses have been seen. Now there might have been theft somewhere in that house, somewhere there might not have been theft, somewhere there might not have been theft in two houses. Anything can happen. all"
+    },
+    {
+      "start_time": 1181.52,
+      "end_time": 1215.11,
+      "text": "रिजल्ट में से जो भी मैक्सिमम रिजल्ट होगा आपको वो रिटर्न करना पड़ेगा। आपको वो क्या करना पड़ेगा? रिटर्न करना पड़ेगा। सारे पॉसिबिलिटी देखने के बाद आपको वो रिटर्न करना पड़ेगा। इसको हम एक छोटे एग्जांपल से आपको फिर से समझाते हैं। ठीक है? चलिए आगे चलिए। एक छोटे एग्जांपल से फिर से इस एग्जांपल में देखिए। यहां पे तीन घर है। ज्यादा घर नहीं ले रहे हैं। तीन घर ले रहे हैं। ठीक है? आप कहां से शुरू करेंगे? आप शुरू करेंगे i = 0 से और आपका फ्री विल शुरू में तो वन ही रहता है। शुरू में आपको जो मन करे वो आप कर सकते हैं। ठीक है? अब",
+      "source": "caption",
+      "english_text": "You will have to return whatever is the maximum result. What do you have to do? Will have to return. You will have to make that return after seeing all the possibilities. Let us explain this to you again with a small example. Ok? Let's move ahead. Let's look at this example again with a small example. There are three houses here. Not taking much home. Taking three houses. Ok? Where do you start? You start with i = 0 and your free will is initially one. In the beginning you can do whatever you feel like. Ok? now"
+    },
+    {
+      "start_time": 1215.12,
+      "end_time": 1246.549,
+      "text": "यहां पे आपके पास दो चॉइस है। क्या दो चॉइस है? पहला चॉइस तो आपके पास है कि इसमें चोरी कर लो। इसमें चोरी कर लो। अब अगर आप इसमें चोरी करते हैं तो जो भी एरे ऑफ़ जीरो में जो पैसा है वो आपको मिल जाता है। इसमें हम वन प्लस कर देते हैं। वन प्लस नीचे से जो भी आंसर आएगा मतलब आगे के घर जाने के बाद कुछ भी हो वन उसमें प्लस कर देंगे। अच्छा आप ये करके पहुंच जाते हैं i = 1 अब क्योंकि आप चोरी करके आए हैं। आपका फ्री ज़ीरो हो गया। आपका फ्री क्या हो गया? ज़ीरो हो गया। आपका अगर फ्री ज़ीरो है। आपको कुछ सोचने की जरूरत नहीं है। नेक्स्ट घर में चलिए यहां पे नो लिख",
+      "source": "caption",
+      "english_text": "Here you have two choices. Are there two choices? The first choice you have is to steal from it. Steal in this. Now if you steal in it, you get whatever money is in the Array of Zero. We add one plus to this. Whatever answer comes from below i.e. whatever happens after going to the next house, One Plus will give it a plus. Well, by doing this you reach i = 1 now because you have come by stealing. Your free has become zero. What is your free time? It became zero. Your if free is zero. You don't need to think anything. Let's go to the next house, write no here"
+    },
+    {
+      "start_time": 1246.559,
+      "end_time": 1280.23,
+      "text": "के। कहां पे आ गए? I = 2 और अगेन आपका फ्री वन हो जाता है। अब क्यों? क्योंकि आप पहले वाले घर में चोरी करके जब आप चोरी करेंगे अगला घर ज़ीरो हो जाएगा। जब आप चोरी नहीं करेंगे अगला घर वन हो जाएगा। बराबर चलिए अब आइए यहां पे i = 2 फ्री = 1। अब फ्री = 1 मतलब आपके पास फ्री विल है। करिए। दोनों चीज़ आप कर सकते हैं। या तो आप चोरी कर सकते हैं। अगर आप चोरी करेंगे तो i = 2 में जो भी पैसा लिखा हुआ है जो फोर है आपके रिजल्ट में प्लस हो जाएगा। ठीक है? और आप चले जाएंगे i = 3 अब आप चोरी करके आए हैं तो अब आप फ्री = 0 पे आ",
+      "source": "caption",
+      "english_text": "K. Where have you come? I = 2 and again becomes your free one. why now? Because when you steal from the previous house, the next house will become zero. When you don't steal, the next house will be a forest. Now come here i = 2 free = 1. Now Free = 1 meaning you have free will. Do. You can do both things. Or you can steal. If you steal then whatever money is written in i = 2 which is four will be plus in your result. Ok? And you will go i = 3 Now you have come by stealing so now you come for free = 0"
+    },
+    {
+      "start_time": 1280.24,
+      "end_time": 1313.43,
+      "text": "जाएंगे। अच्छा अगर आप यहां पे चोरी नहीं करते हैं तो आप कहां i = 3 और आपका फ्री वन ही रह जाएगा। आपका फ्री वन ही फ्री विल फ्री मतलब है आपके पास फ्री विल है कि नहीं? अगर आप चोरी नहीं करते हैं ना ऑब्वियसली आपके पास फ्री विल है क्योंकि चोरी नहीं हुआ है। वहां आपको जो मर्जी करिए चोरी हो गया है। अगले घर में फ्री विल खत्म हो गया। आप यहां पे पहुंच गए। अब i = 3 पे पहुंच गए मतलब खेल खत्म। i = 3 मतलब आप तीनों घर देख लिए। ये i = n हो गया। खेल खत्म। इस प्रोसेस का खेल खत्म हो चुका है। ऊपर आइए वापस i = 0 में एक पाथ और है। नो का मतलब इसमें चोरी नहीं",
+      "source": "caption",
+      "english_text": "Will go. Well, if you do not steal here then you will have where i = 3 and your free one will remain. Your free one is free will. Free means do you have free will or not? If you do not steal, obviously you have free will because there has been no theft. Whatever you want there is stolen. Free will ended in the next house. You reached here. Now i = 3 has been reached which means the game is over. i = 3 means you have seen all three houses. It becomes i = n. Game over. The game of this process is over. Let's go back to i = 0 and there is one more path. no means no theft"
+    },
+    {
+      "start_time": 1313.44,
+      "end_time": 1347.19,
+      "text": "करेंगे। ठीक है? वापस आइए। i = 1 अब आप चोरी नहीं किए ना तो i = 1 में आपका फ्री अभी भी वन है। फ्री वन का मतलब दो चॉइससेस। कौन से दो चॉइससेस? यस। मतलब करेंगे। आप जैसे ही यस करेंगे मतलब i = 1 में जो भी पैसा लिखा हुआ है वो आपके रिजल्ट में जुड़ जाएगा। वो आपके रिजल्ट में जुड़ जाएगा। ठीक है? करते-करते आप i = 2 पे चले गए। i = 2 पे आए। अब आप i = 1 पे चोरी करके आए हैं। ऑटोमेटिकली इसका फ्री विल ज़ीरो हो जाएगा। फ्री विल ज़ीरो होने का मतलब कोई चॉइस नहीं है। आपको नेक्स्ट घर में जाना पड़ेगा नो लिख के। आप आ गए i = 3",
+      "source": "caption",
+      "english_text": "Will do. Ok? Come back. i = 1 Now you did not steal so at i = 1 your free is still one. Free one means two choices. Which two choices? Yes. Means will. As soon as you say yes, it means whatever money is written in i = 1 will be added to your result. It will be added to your result. Ok? By doing this you moved to i = 2. Come to i = 2. Now you have stolen at i = 1. Automatically its free will will become zero. Zero free will means no choice. You will have to go to the next house by writing no. You have come i = 3"
+    },
+    {
+      "start_time": 1347.2,
+      "end_time": 1380.789,
+      "text": "और फ्री इज़ इक्वल टू अब आप चोरी नहीं किए हैं। अब आप नो बोल के आए हैं। फ्री वन हो गया। फ्री वन हो गया। ठीक है? i = 3 आए। खेल आपका खत्म। ठीक है? i = 1 में एक और चॉइस बन सकती है कि आप नहीं कर रहे हैं चोरी। यहां भी नहीं की है चोरी। कोई बात नहीं। चोरी नहीं करिए कोई दिक्कत नहीं है। i = 2 पे आ गए। अब यहां भी चोरी नहीं करेंगे तो आपका फ्री वन ही होगा। उसमें कोई शक नहीं है। अगेन यहां पे दो ऑप्शन है। क्या दो ऑप्शन है? आप चोरी कर सकते हैं। करेंगे तो i = 3 और फ्री = 0 हो जाएगा। साथ-साथ इसका i = 2 में जो भी पैसा लिखा हुआ है वो आपको मिल जाएगा यहां पे।",
+      "source": "caption",
+      "english_text": "And Free Is Equal To Now You Haven't Stolen. Now you have come saying no. The free one is done. The free one is done. Ok? Let i = 3. Your game is over. Ok? Another choice can be made in i = 1 that you are not stealing. There has been no theft here either. No problem. Don't steal, there is no problem. Arrived at i = 2. Now if you don't steal here too, it will be your free one. There is no doubt about that. Again there are two options here. Are there two options? You can steal. If we do then i = 3 and free = 0. Along with this, whatever money is written in its i = 2, you will get it here."
+    },
+    {
+      "start_time": 1380.799,
+      "end_time": 1413.669,
+      "text": "उसके बाद आप चाहें तो चोरी नहीं कर सकते हैं। तो आप i = 3 पे आएंगे और आपका फ्री अभी भी वन हो जाएगा। वन ही रह जाएगा। मतलब यहां पे आके आपका खेल खत्म। खत्म i = 3 पे आपका खेल खत्म। तो देखिए कितना एंडिंग देखें हम लोग। कितना एंडिंग देखें। देखिए एक एंडिंग, दो एंडिंग, तीन एंडिंग, चार एंडिंग, पांच एंडिंग। पांच तरीके का यूनिवर्स बन चुका है। देख लीजिए किस यूनिवर्स में सबसे ज्यादा है। ट्रेस करके देख लीजिए। देखिए सबसे पहले इस लाइन में देखिए। इसमें सबसे पहले तो आपको ₹1 मिलता है। तो 1 प्लस उसके बाद नौ में कोई पैसा नहीं मिलता है। यहां पे आपको ₹4 मिलते हैं। तो 1 + 4 = 5 तो इसका आंसर क्या हुआ?",
+      "source": "caption",
+      "english_text": "After that you cannot steal if you want. So you will come to i = 3 and your free will still be one. Only the forest will remain. Meaning your game is over after coming here. Your game is over at i = 3. So let's see how many endings we see. See how many endings. See one ending, two endings, three endings, four endings, five endings. Five types of universe have been formed. See which universe has the most. Try tracing it. Look first of all look in this line. In this, first of all you get ₹ 1. So 1 plus there is no money in the nine after that. Here you get ₹4. So 1 + 4 = 5 then what is the answer?"
+    },
+    {
+      "start_time": 1413.679,
+      "end_time": 1440.95,
+      "text": "इसका आंसर हुआ ₹5। ठीक है? इसको ट्रेस कीजिए। सबसे पहले तो आपको ₹1 मिलता है। नौ में कोई रुपया नहीं मिलता है और नौ में कोई रुपया नहीं मिलता है। तो आपको सिर्फ यहां पे ₹1 मिला इसमें। ठीक है? इसको ट्रेस कीजिए। सबसे पहले नो मतलब आपको कोई रुपया नहीं मिलता है। यहां पे आप आते हैं आपको ₹3 मिलता है। फिर आप नौ पे आते हैं तो मतलब इसमें आपको ₹3 मिला। ठीक है? इसको ट्रेस कीजिए। आप नौ आते हैं कोई रुपया नहीं मिलता है। नौ आते हैं कोई रुपया नहीं मिलता है। यहां आते हैं तो ₹4 मिलता है।",
+      "source": "caption",
+      "english_text": "Its answer was ₹5. Ok? Trace it. First of all you get ₹1. No rupee is found in nine and no rupee is found in nine. So you only got ₹1 here. Ok? Trace it. First of all no means you don't get any money. If you come here you get ₹3. Then you come to nine, which means you got ₹3 in it. Ok? Trace it. You come nine and don't get any money. Nine come and no money is received. If you come here you get ₹4."
+    },
+    {
+      "start_time": 1440.96,
+      "end_time": 1475.269,
+      "text": "तो इसका आंसर हो गया ₹4। ठीक है? इसको ट्रेस कीजिए। नौ आते हैं कोई रुपए नहीं मिलता है। नौ आते हैं कोई रुपए नहीं मिलता है। नौ आते हैं कोई रुपया नहीं मिलता है। तो इसमें आपको ₹ मिलता है। सब में कौन सा अच्छा लग रहा है सबसे? ये वाला ₹5 वाला। किसके कारण आया था ये? जब आप हाउस नंबर ज़ीरो और हाउस नंबर टू को लिए थे। देख भी लीजिए। अगर आप वन लेंगे और फोर लेंगे। क्या आपके रूल को फॉलो करता है? बिल्कुल करता है। कितना रुपया मिलता है आपको? ₹5 आपको मिलता है। तो इस ये मेरा मतलब था जब आपको सारा पॉसिबिलिटी देखना पड़ेगा। यह मतलब था। अब इसका रिकर्शन कोड लिख देते हैं। हम उम्मीद करते हैं कि रिकर्शन आपको",
+      "source": "caption",
+      "english_text": "So its answer becomes ₹4. Ok? Trace it. Nine come and no money is received. Nine come and no money is received. Nine come and no money is received. So in this you get ₹. Which one looks best among all? This one is worth ₹5. Because of whom did this come? When you took house number zero and house number two. Take a look also. If you take one and take four. Does he follow your rules? Absolutely does. How much money do you get? You get ₹5. So this is what I meant when you have to see all the possibilities. It was meant. Now let's write its recursion code. We hope recursion helps you"
+    },
+    {
+      "start_time": 1475.279,
+      "end_time": 1509.029,
+      "text": "समझ में आया होगा। वो जो पॉसिबिलिटी का ट्री बनता है ना एग्जैक्टली इसी तरीके से बनता है। इसी तरीके से वो काम करेगा। इसी चीज को कोड में लिख देंगे। जो हम लोग यहां पे ड्राइंग में दिमाग लगाए ना सेम चीज को कोड लिखेंगे। तीन से चार लाइन का कोड हो जाएगा। उससे पहले उससे पहले जब हम डीपी का सेकंड एपिसोड ही पढ़ाए थे। आपको हम क्या बोले थे? व्हेन टू यूज़ डीपी इज़ अ वेरी यूनिक स्किल। व्हेन टू यूज़ डीपी? हर हार्ड क्वेश्चन में डीपी नहीं लगता है। डीपी कब लगता है? जब आप सेम रिकर्शन के फंक्शन को बार-बार बार-बार बार-बार कॉल कर रहे हैं।",
+      "source": "caption",
+      "english_text": "Must have understood. The tree of possibilities is formed in exactly the same way. This is the way it will work. We will write this thing in the code. Those of us here who concentrate on drawing will write code for the same thing. There will be three to four lines of code. Before that, when we had taught only the second episode of DP. What did we tell you? When to Use DP is a very unique skill. When to use DP? DP is not required in every hard question. When does DP occur? When you are calling the same recursion function again and again and again and again and again."
+    },
+    {
+      "start_time": 1509.039,
+      "end_time": 1542.149,
+      "text": "इस पूरे ट्री को देखिए। क्या आपको यहां लग रहा है कि सेम चीजों को बार-बार कंप्यूट किया जा रहा है। अब देखिए इस रिक्शन में बदल क्या रहा है? इस रिक्शन में दो चीजें बदल रही हैं। पहला तो इस रिक्शन में i बदल रहा है। I कभी जीरो होता है, वन होता है, टू होता है, थ्री होता है। बराबर और आपका जो फ्री का वैल्यू है वो बदल रहा है। मतलब फ्री या तो ज़ीरो रहता है या तो वन हो जाता है। हर i के लिए फ्री ज़ीरो भी हो सकता है, कभी वन भी हो सकता है। फॉर एग्जांपल यहां पे देखिए तो i = 1 में फ्री ज़ीरो था। यहां",
+      "source": "caption",
+      "english_text": "Look at this whole tree. Do you feel here that the same things are being computed again and again? Now see what is changing in this reaction? Two things are changing in this reaction. Firstly, i is changing in this reaction. I is sometimes zero, sometimes one, sometimes two, sometimes three. Equally and your value of free is changing. Meaning free either remains zero or becomes one. For every i there can be a free zero, sometimes there can also be a one. For example, if we look here, there was a free zero in i = 1. here"
+    },
+    {
+      "start_time": 1542.159,
+      "end_time": 1569.99,
+      "text": "पे आए तो i = 1 में फ्री वन हो गया। तो मतलब फ्री भी बदल रहा है, आई भी बदल रहा है। आई और फ्री का कोई कॉम्बिनेशन क्या कहीं पे भी आपको रिपीटेड दिख रहा है? आइए देखते हैं। i = 0 फ्री = 1 क्या आपको और कहीं भी ये दिख रहा है? लिखा हुआ है। सेम कॉम्बिनेशन i0 और फ्री वन नहीं दिख रहा है। ठीक है? i1 फ्री ज़ीरो। क्या कहीं भी दिख रहा है? लिखा हुआ नहीं दिख रहा है। i1 फ्री ज़ीरो बस एक ही बॉक्स में दिख रहा है।",
+      "source": "caption",
+      "english_text": "If it comes to i = 1, it becomes free one. So that means free is also changing, I is also changing. Do you see any combination of I and Free repeated anywhere? let's watch. i = 0 free = 1 Do you see this anywhere else? It is written. Same combination i0 and free one is not visible. Ok? i1 free zero. Is it visible anywhere? It is not visible what is written. i1 Free Zero is visible in just one box."
+    },
+    {
+      "start_time": 1570.0,
+      "end_time": 1603.59,
+      "text": "i2 फ्री वन क्या [गला साफ़ करने की आवाज़] ये कॉम्बिनेशन कहीं भी और आपको दिख रहा है? यस यस दिख रहा है। ये देखिए ये देखिए बार-बार सेम चीज कंप्यूट हो रहा है। अगर आपको एक भी इंस्टेंस आपके रिकर्शन में मिलता है ना जब आप सेम वैल्यू को कंप्यूट कर रहे हैं। सेम वैल्यू मतलब रिकर्शन का जो इनपुट है अगर वो सेम इनपुट के लिए बार-बार बार-बार आप काम कर रहे हैं ना मतलब कि वहां पे डीपी लगेगा। क्यों? यहां भी आप i = 2 फ्री = 1 का कुछ आंसर कैलकुलेट करने का कोशिश किए। आगे गए फलाना रिमका कुछ किए। यहां भी आप i = 2 फ्री = 1",
+      "source": "caption",
+      "english_text": "i2 Free One Do you [clearing throat] see this combination anywhere else? Yes yes it is visible. Look at this, the same thing is being computed again and again. If you find a single instance in your recursion when you are computing the same value. Same value means the input of recursion, if you are working again and again for the same input, it does not mean that DP will be applied there. Why? Here also you tried to calculate some answer for i = 2 free = 1. So and so Rimka went ahead and did something. Here also you i = 2 free = 1"
+    },
+    {
+      "start_time": 1603.6,
+      "end_time": 1638.47,
+      "text": "सेम आंसर कंप्यूट कर रहे हैं। क्यों कर रहे हैं? i = 2 3 = 1 इसका आंसर याद कर लीजिए। इसमें जो भी आए इसका क्या मतलब है? इस इस चीज का मतलब क्या है? कि आप i = 2 वाले घर पे पहुंचे और आपके पास फ्री विल है। आपके पास फ्री विल है। तो इसको आप याद करके रख लीजिए ना। इसको याद क्यों नहीं कर ले रहे हैं कि चलो अगर आप i = 2 पे पहुंचेंगे और आपके पास फ्री विल है इसका आंसर कुछ भी हो इसका आंसर 10 होगा 20 होगा। अरे हमको नहीं फर्क पड़ता है। कुछ भी जब आप पहली बार कंप्यूट किए यहां पे इसको याद करके रख लीजिए ताकि आप जब यहां",
+      "source": "caption",
+      "english_text": "Calculating the same answer. Why are you doing it? i = 2 3 = 1 Memorize its answer. What does it all mean? What is the meaning of this thing? That you arrive at a house with i = 2 and you have free will. You have free will. So remember this and keep it. Why are you not remembering that if you reach i = 2 and you have free will, whatever the answer may be, the answer will be 10 or 20. Hey, it doesn't matter to us. When you compute anything for the first time, remember it here so that when you"
+    },
+    {
+      "start_time": 1638.48,
+      "end_time": 1671.75,
+      "text": "पे आए ना आपको ये दोनों का जरूरत ना पड़े। आप सीधा यहां से उसको रिटर्न कर सकें। वही तो डीपी होता है ना मेमोराइजेशन मेमोराइजेशन याद रख लो। तो एक तो हम पकड़ दिए कि i2 और फ्री वन का रिपीट हो रहा है तो डीपी लगेगा और देख लीजिए और कुछ रिपीट हो रहा है क्या? i2 फ्री ज़ीरो यहां पे रिपीट हुआ। i2 फ्री ज़ीरो कहीं पे हुआ है क्या? i2 फ्री ज़ीरो तो नहीं है। हां चलिए ठीक है। क्योंकि ये एरे इतना छोटा था क्योंकि ये तीन का एरे है तो आपको बस एक ही रिपीटीशन दिखा। आप इसको अगर पांच साइज का एरे बनाएंगे तो आपको दिखेगा कि बार-बार बार-बार मल्टीपल थिंग्स रिपीट हो रहा है।",
+      "source": "caption",
+      "english_text": "Come on, you won't need both of these. You can return it directly from here. That's what DP is all about, remember memorization. So first of all, we caught that i2 and Free One are getting repeated, so DP will be installed and see if anything else is getting repeated? i2 free zero repeated here. Is i2 free zero available somewhere? i2 is not free zero. Yes, okay. Because this array was so small because it is an array of three so you only saw one repetition. If you make it an array of five sizes, you will see that multiple things are repeating again and again."
+    },
+    {
+      "start_time": 1671.76,
+      "end_time": 1704.389,
+      "text": "रिपीट तो देखिए ये भी हो रहा है। i = 3 और 3 = 0 ये देखिए। यह देखिए ये भी रिपीट हो रहा है। लेकिन ये अब अब एरे खत्म हो गया तो बेस केस है। ये तो सबसे छोटा इनपुट है ना। तो अब इसमें हम क्या करें? लेकिन ये भी रिपीट तो हो रहा है। रिपीट तो पक्का हो रहा है। बस आपको ये बता देगा कि रिपीट हो रहा है। एक भी अगर आपको रिपीटेड दिख गया ना उसमें डीपी लगाइए। उसको याद करके रख लीजिए। किसको? इस कॉम्बिनेशन को। किसका कॉम्बिनेशन? आई और फ्री। आई और फ्री। अब देखिए i = 3 और फ्री = 0 और i = 3 और फ्री",
+      "source": "caption",
+      "english_text": "See repeat, this is also happening. Look at i = 3 and 3 = 0. See this is also repeating. But now that the array is finished, this is the base case. This is the smallest input, isn't it? So what should we do in this now? But this is also repeating. It is definitely getting repeated. It will just tell you that it is repeating. If you see even one repeated, put DP on it. Remember that and keep it. Whom? To this combination. Whose combination? Came and free. Came and free. Now see i = 3 and free = 0 and i = 3 and free"
+    },
+    {
+      "start_time": 1704.399,
+      "end_time": 1735.029,
+      "text": "= 1 ये दोनों दो डिफरेंट सरकमस्टेंस है। ये दोनों सेम नहीं है। इसको आप याद नहीं रख सकते हैं कि i = 3 का एक आंसर है। नहीं i = 3 पे दो चीजें हो सकती हैं। फ्री ज़ीरो हो सकता है और फ्री वन हो सकता है। i = 3 और फ्री = 0 का एक आंसर होगा। i = 3 और फ्री = 1 का एक आंसर होगा। दोनों के दो सेपरेट आंसर होंगे। इसीलिए आपको पेअर में काम करना पड़ेगा। 2 डी एरे में स्टोर करना पड़ेगा रिजल्ट। आप ऐसा नहीं कर सकते हैं कि i = 3 का आंसर 10 है। अरे किसका उसमें फ्री की क्या वैल्यू है? उसका भी तो बताओ।",
+      "source": "caption",
+      "english_text": "= 1 These two are two different circumstances. These two are not the same. You cannot remember that i = 3 has one answer. No, two things can happen at i = 3. There can be free zeros and there can be free ones. There will be an answer of i = 3 and free = 0. There will be an answer of i = 3 and free = 1. There will be two separate answers for both. That's why you will have to work in pairs. The result will have to be stored in a 2D array. You cannot say that the answer to i = 3 is 10. Hey, what is the value of free in that? Tell me about that also."
+    },
+    {
+      "start_time": 1735.039,
+      "end_time": 1768.31,
+      "text": "आपको कैसे स्टोर करना पड़ेगा? आपको एक टू डी एरे लिख के स्टोर करना पड़ेगा। मतलब आपको इस तरीके का बनाना पड़ेगा कुछ। i = 0 i = 1, i = 2 और यहां पे फ्री = 0, फ्री = 1। अब आपको आंसर लिखना पड़ेगा। अगर आपको मालूम चलता है कि चलो i0 फ्री ज़ीरो का आंसर 10 है। यहां 10 लिख लिए। I2 फ्री वन का आंसर 20 है। यहां 20 लिख लिए। तो यहां आपको टू डी एरे आपका जो डायरी है वो टू डी एरे बन गया। क्यों? क्योंकि रिकर्शन में दो चीजें बदल रही है। रिकर्शन में एक चीज सिर्फ नहीं बदल रही है। अगर रिकर्शन में जो पिछले क्वेश्चन में सिर्फ एक चीज़ बदलता",
+      "source": "caption",
+      "english_text": "How do you need to store it? You will have to write a 2D array and store it. Meaning you will have to make something like this. i = 0 i = 1, i = 2 and here free = 0, free = 1. Now you have to write the answer. If you find out that the answer to i0 free zero is 10. Wrote 10 here. The answer for i2 free one is 20. Wrote 20 here. So here you have two d'arre, your diary has become two d'arre. Why? Because two things are changing in recursion. In recursion just one thing is not changing. If in recursion that changes only one thing in the previous question"
+    },
+    {
+      "start_time": 1768.32,
+      "end_time": 1795.909,
+      "text": "था। जब हम लोग नंबर ऑफ स्टेयर्स किए थे क्लाइंबिंग स्टेयर्स उसमें सिर्फ स्टेयर का पोजीशन बदल रहा था। वो स्टेयर का वैल्यू बदल रहा था। एक चीज में स्टोर कर लिए। हैश मैप में स्टोर कर लिए। यहां पे दो चीजें बदल रही हैं। आई मतलब हाउस नंबर तो बदल ही रहा है। फ्री चॉइस है कि नहीं है? है कि नहीं है? है कि नहीं है? वो भी यहां पे बदल रहा है। तो आपकी डायरी आप जो डायरी में लिखते हैं डीपी का आंसर जहां से देख के आप बता देते हैं वो एक टू डी एरे होना चाहिए। अब चलते हैं कोड पे। तो इतना एक्सप्लेनेशन काफी रहेगा मेरे हिसाब से।",
+      "source": "caption",
+      "english_text": "Was. When we did the number of stairs climbing stairs, only the position of the stairs was changing. He was changing the value of the stairs. Stored in one thing. Stored in hash map. Two things are changing here. I mean the house number is changing. Is it a free choice or not? Is it or isn't it? Is it or isn't it? That too is changing here. So the diary that you write in the diary from where you can see the answer to the DP, should be a 2D array. Now let's move on to the code. So this explanation will be enough according to me."
+    },
+    {
+      "start_time": 1795.919,
+      "end_time": 1830.789,
+      "text": "तो चलिए तो चलिए इसका कोड देखिए बहुत सिंपल होगा। सबसे पहले रिकर्शन वाला ही कोड लिख लेते हैं जो आपको रिकर्शन में लिखना पड़ेगा। देखिए तो रिकर्शन में हम क्या करेंगे ना? एक फंक्शन लिखेंगे छोटा सा इंट व फन। ओके। यहां पे कुछ चीजें पास होंगी। सबसे पहले तो आपका जो हाउसेस का जो डेटा है जो हाउसेस का एरे है वो पास होगा। अच्छा। हाउसेस में कितने हाउस हैं? n मतलब कितने हाउस हैं? इंट i i मतलब अभी आप किस हाउस से हैं? शुरू कहां से होगा? i = 0 से। और आई एन टी फ्री मतलब ज़ीरो है कि वन है? फ्री चॉइस है कि नहीं है? अभी इसको यहां पे रहने दीजिए। बंद नहीं कर रहे हैं ब्रैकेट एक कारण से। सबसे पहले तो बेस केस",
+      "source": "caption",
+      "english_text": "So come on, let's see its code, it will be very simple. First of all, let's write the recursion code which you will have to write in recursion. See, what will we do in recursion? Will write a function small int and fun. Ok. Some things will be passed here. First of all, your data of houses which is an array of houses will be passed. Good. How many houses are there in Houses? n means how many houses are there? Int i i means which house are you from now? Where to start? From i = 0. And INT free means zero or one? Is it a free choice or not? Leave it here for now. The brackets aren't closed for a reason. First of all the base case"
+    },
+    {
+      "start_time": 1830.799,
+      "end_time": 1865.35,
+      "text": "मतलब अगर i = n हो गया है। मतलब क्या? काम खत्म। i = n का क्या मतलब है? आप लास्ट में पहुंच गए। अब इसके आगे कितना मिलेगा? कुछ नहीं मिलेगा। रिटर्न ज़ीरो। इसका क्या मतलब है भाई? देखो। इस बॉक्स में आ गए आप। कहां गया? इस बॉक्स में आ गए। इसके बाद कितना पैसा मिलेगा? अरे सारा घर खत्म। जितना मिलना था मिल चुका है। पैसा कब मिलता है घर में चोरी करने से। आप i = n पे आ गए हैं। कोई हाउस ही नहीं है चोरी करने। अब मैदान है। अब कुछ नहीं कर सकते तो ₹ मिलेगा। ठीक है? इसके बाद इसके बाद इसके बाद अब सबसे पहले आपको चेक कर लेना चाहिए कि क्या",
+      "source": "caption",
+      "english_text": "Meaning if i = n then it is done. What does it mean? Work finished. What does i = n mean? You reached last. Now how much will you get after this? Nothing will be found. Returns zero. What does this mean brother? See. You have come to this box. where did he go? Came in this box. How much money will you get after this? Hey, the whole house is over. Whatever was to be received has been received. When do you get money by stealing from home? You have arrived at i = n. There is no house to steal. Now there is a field. If you can't do anything now, you will get Rs. Ok? After this, after this, now first of all you should check whether"
+    },
+    {
+      "start_time": 1865.36,
+      "end_time": 1900.07,
+      "text": "यहां पे क्या आपके पास फ्री विल है भी? अगर मान लीजिए आपके पास फ्री विल है ही नहीं। फ्री इक्वल इक्वल टू ज़ीरो है। फ्री विल है ही नहीं। जब आपके पास फ्री विल होता ही नहीं है तो आप क्या करते हैं? अगले घर की तरफ बढ़ो। ज्यादा दिमाग नहीं लगाओ। रिटर्न अगले घर में। सीधा सीधा एकदम सीधा। a एन i + 1 अगले घर में और। अब आप चोरी नहीं कर रहे हैं तो अगले घर का फ्री विल वन हो जाएगा। पक्का पक्का वन हो जाएगा। अगर कब? इस घर का अगर फ्री विल ज़ीरो था। आपके पास ज़्यादा कुछ ऑप्शन था नहीं। नो करके अगले घर में जाना था। नो करके जाने के कारण अगले घर का फ्री विल वन",
+      "source": "caption",
+      "english_text": "Do you even have free will here? Suppose you do not have free will. Free is equal to zero. There is no free will. What do you do when you don't have free will? Proceed to the next house. Don't think too much. Return to next house. Straight straight straight straight. a n i + 1 in the next house and. Now that you are not stealing, the next house will become the free will one. It will definitely become a forest. if when? The free will of this house was zero. You didn't have much option. Had to say no and go to the next house. Free will one of the next house due to no doing"
+    },
+    {
+      "start_time": 1900.08,
+      "end_time": 1927.35,
+      "text": "हो जाता है। खत्म हो गया। अगर आपका फ्री व्हील वन है तब आपके पास दो चॉइससेस हैं। कौन से दो चॉइसेस हैं? आपके पास एक चॉइस तो है कि आप इस घर में चोरी कर लीजिए। अगर आप इस घर में चोरी करेंगे तो आपको इस घर का पैसा तो मिल जाएगा। प्लस आप अगले घर में जा सकते हैं। एन आई + 1 और क्योंकि आप इस घर में चोरी कर रहे हैं। अगले घर का फ्री विल पक्का पक्का जीरो हो जाएगा। उसको कोई नहीं रोक सकता है। ये पहला चॉइस।",
+      "source": "caption",
+      "english_text": "It gets done. It's over. If your free wheel is one then you have two choices. Which two choices are there? You have a choice to steal from this house. If you steal from this house, you will get the money from this house. Plus you can move to the next house. NI+1 and because you are stealing in this house. The free will of the next house will definitely be zero. No one can stop him. This is the first choice."
+    },
+    {
+      "start_time": 1927.36,
+      "end_time": 1962.07,
+      "text": "दूसरा चॉइस क्या है भाई? इस घर में भी चोरी मत करो। इवन दो कि आपके पास फ्री विल था। आप चॉइस ले रहे हैं कि यहां हम चोरी नहीं करेंगे। हम अगले घर में जाएंगे। तो चले जाइए। चले जाइए अगले घर में। एन i + 1 और क्योंकि आप चॉइस ले रहे हैं कि इस घर में चोरी नहीं करेंगे। अगले घर में ऑटोमेटिकली आपके पास फ्री विल अवेलेबल है। फ्री विल अवेलेबल है। हो गया। दोनों चॉइस आ गया। दोनों में से जो भी मैक्सिमम है दोनों में से जो भी मैक्सिमम है वो रिटर्न कर दो। इसका क्या मतलब होता है? देखिए आप शुरू में यहां पे थे। आप शुरू में यहां पे आए। आप एक चॉइस ये वाला यस वाला लिए।",
+      "source": "caption",
+      "english_text": "What is the second choice brother? Don't steal in this house also. Even if you had free will. You are taking the choice that we will not steal here. We will go to the next house. So go away. Go to the next house. N i + 1 and because you are taking the choice not to steal in this house. You automatically have free will available in the next house. Free will is available. Done. Both choices have arrived. Whichever is the maximum, return whatever is the maximum. What does this mean? Look, you were here in the beginning. You came here in the beginning. You took one choice, this one, yes one."
+    },
+    {
+      "start_time": 1962.08,
+      "end_time": 1992.07,
+      "text": "इसमें एरे ऑफ़ ज़ीरो को जोड़ दिए। यही क्या किए थे ना? अच्छा एक नो वाला चॉइस लिए सीधा अगले घर में चले गए। मान लीजिए ये पूरा ट्री बना। ये तो आपको समझ में आया। लेकिन मान लीजिए यहां से आपका आंसर आता है ₹10। मतलब जब आप i = 0 पे चोरी किए थे। आता है ₹10 आंसर। जब आप i = 0 पे चोरी नहीं किए थे, इसका आंसर आता है ₹20। अब आपका फाइनल आंसर क्या होगा? 10 और 20 का मैक्सिमम। ये 10 और 20 कैसे आया? कहीं ना कहीं से आया होगा। इधर पूरा ट्री ट्री बना हुआ कहीं ना फलाना ढिमका करके आया होगा।",
+      "source": "caption",
+      "english_text": "Added array of zeros to it. This is what you did, isn't it? Well, we took the no option and went straight to the next house. Suppose this is a complete tree. You understood this. But suppose your answer from here is ₹10. Meaning when you stole at i = 0. The answer is ₹10. When you did not steal at i = 0, the answer is ₹20. Now what will be your final answer? Maximum of 10 and 20. How did these 10 and 20 come about? Must have come from somewhere. Here the whole tree is made up of trees, somewhere so and so must have come in fear."
+    },
+    {
+      "start_time": 1992.08,
+      "end_time": 2026.149,
+      "text": "नीचे से कुछ ना कुछ तालमोल करके आया होगा। लेकिन आया है ना कहीं से। अब i = 0 पे आप बैठे हैं। कंफर्टेबल हो के आपको पता चला इधर से 10 आ रहा है। इधर से 20 आ रहा है। कौन सा अच्छा लग रहा है? 20 अच्छा लग रहा है। 20 बता दो ऊपर जा के। यही काम करना है। यही रिकर्शन होता है ना? एक छोटा पार्ट अलग कर लीजिए। बाकी को अस्यूम कर लीजिए कि बाकी सॉल्व हो जाएगा। अस्यूम कर लीजिए कि यहां से 10 आ जाएगा कुछ करके। अस्यूम कर लीजिए कि वहां से सही आंसर 20 आ जाएगा। आपका काम क्या है? 10 कि 20? 20 कब? जब हम चोरी नहीं करेंगे तो 20 आ रहा है। तो 20 ही आंसर होगा। सेम चीज यहां पे कर रहे हैं और इसको रिटर्न कर देंगे। इसको क्या कर देंगे? सीधा रिटर्न",
+      "source": "caption",
+      "english_text": "Must have come from below after doing some coordination. But it has come from somewhere. Now you are sitting at i = 0. After getting comfortable you came to know that 10 is coming from here. 20 is coming from here. Which one looks good? 20 looks good. 20 Go upstairs and tell me. This is the work to do. This is recursion, isn't it? Separate a small part. Assume the rest will be resolved. Assume that 10 will come from here after doing something. Assume that the correct answer from there will be 20. What is your job? 10 or 20? 20 when? 20 is coming when we don't steal. So the answer will be 20 only. Same thing is being paid here and will return it. What will you do with this? direct return"
+    },
+    {
+      "start_time": 2026.159,
+      "end_time": 2059.909,
+      "text": "कर देंगे। खत्म हो गई बात। यहां पे बंद कर दीजिए इसको। बस अब आपको इसमें क्या लगाना है? dp ये तो रिक्शन हो गया। ये चल जाएगा। लेकिन टाइम लिमिट एक सीट आ जाएगा। क्यों टाइम लिमिट सीट आ जाएगा? क्योंकि आप बार-बार सेम काम कर रहे होंगे। आपको हम दिखाए ना सेम बॉक्स बार-बार बन रहा था। इस रिकर्शन को अगर ट्रेस करेंगे तो सेम आई और फ्री का जो कॉम्बिनेशन है ना वो बार-बार बार-बार बार-बार आएगा। बार-बार सॉल्व करेंगे उसमें क्या लगेगा? टाइम लगेगा। इसका क्या रास्ता है? एक डीपी का वो बना लें। एक डायरी टाइप से बना लें। उसमें हम आई और फ्री को लिख लें। कैसे? एक टू डी एरे की तरह। तो हम जो मेन फंक्शन होगा",
+      "source": "caption",
+      "english_text": "Will do it. The matter is over. Stop it here. Now what do you have to put in it? dp This is reaction. This will do. But the time limit for one seat will come. Why will time limit seats come? Because you will be doing the same work again and again. Let us show you that the same box was being made again and again. If we trace this recursion, the combination of same and free will come again and again. What will it take to solve it again and again? It will take time. What is the way out? Make that of a DP. Make a diary type. In that we write I and Free. How? Like a to d array. So the main function that we have will be"
+    },
+    {
+      "start_time": 2059.919,
+      "end_time": 2092.869,
+      "text": "मेरा कहां गया मेरा मेन फंक्शन? यहां पे मान लीजिए मेन फंक्शन। मतलब जो लीड कोड का फंक्शन है आपको लीड कोड यही बोलेगा ना करने के लिए। आपको लीड कोड बोलेगा कि इंट मान लीजिए ये आपका लीड कोड का फंक्शन है। लीड कोड आपको क्या देगा? लीड कोड आपको एक एरे देगा। बस यही देगा। आपको बताना है। सबसे पहले तो हम इसका साइज निकाल लूंगा। a डॉट साइज निकाल लिए। ये लीजिए a डॉट साइज निकल गया। अब एक 2D एरे बना लेते हैं हमारे डायरी के लिए लिखने के लिए। तो हम क्या करते हैं? एक वेक्टर ऑफ़ वेक्टर ऑफ़ इंट।",
+      "source": "caption",
+      "english_text": "Where is my main function? Here consider main function. Meaning, which is the function of the lead code, the lead code will tell you not to do it. Your lead code will tell you that int is a function of your lead code. What will lead code give you? The lead code will give you an array. That's all it will give. You have to tell. First of all we will find out its size. a Determined the dot size. Here's the dot size. Now let's create a 2D array to write to our diary. So what do we do? A vector of vectors of int."
+    },
+    {
+      "start_time": 2092.879,
+      "end_time": 2126.15,
+      "text": "DP कितने साइज का? n साइज का। क्योंकि आपको उसमें क्या लिखना है? आपको उसमें i और फ्री का हर एक कॉम्बिनेशन का आंसर लिखना है। अब i कहां तक जाएगा? n तक जाएगा। n का तो आंसर लिखना नहीं है। n में तो खत्म हो जाता है। तो मैक्सिमम किसका आंसर लिखना है? n - 1 का। इसका साइज हो गया n। फ्री का वैल्यू क्या हो सकता है? ज़ीरो या वन। तो हम क्या करेंगे? फॉर int i = 0 i &lt; n i + और एक वेक्टर और बनाएंगे साइज टू का t इसका साइज दो और",
+      "source": "caption",
+      "english_text": "What size is DP? Of n size. Because what do you have to write in it? You have to write the answer to every combination of i and free in it. Now how far will i go? Will go till n. The answer for n is not to be written. It ends in n. So whose answer is maximum to be written? of n – 1. Its size becomes n. What can be the value of free? Zero or one. So what do we do? For int i = 0 i < n i + and create a vector of size two and give it size two."
+    },
+    {
+      "start_time": 2126.16,
+      "end_time": 2152.63,
+      "text": "इसमें शुरू में -1 मतलब और इसको क्या करेंगे dp ऑफ़ i = t इससे क्या हुआ कि आपके पास एक 2D एरे बन के रेडी हो गया इस तरीके का किस तरीके का इस तरीके का i = 0 i = 1 के लिए i = 2 के लिए ये फ्री = 0 के लिए और लिए फ्री = 1 के लिए शुरू में सब में -1 है। सब में -1 है। -1 का क्या मतलब है? कि अभी तक इसका आंसर पता नहीं चला है।",
+      "source": "caption",
+      "english_text": "In this, initially -1 means and what will we do with it dp of i = t What happens that you have a 2D array made and ready, in this way, in this way, for i = 0, for i = 1, for i = 2, this is -1 in the beginning for free = 0 and for free = 1. There is -1 in all. What does -1 mean? That the answer has not been known yet."
+    },
+    {
+      "start_time": 2152.64,
+      "end_time": 2180.39,
+      "text": "शुरू में तो आपको किसी का आंसर पता नहीं चला है। तो किसी का पता नहीं चला है। अब क्या करेंगे? अपना रिकर्शन वाला फंक्शन कॉल कर देंगे। अपना रिकर्शन वाला फंक्शन कॉल कर देंगे। कॉल करते समय एरे एन i कहां से शुरू करना है? i ज़ीरो से। शुरुआत में फ्री विल की क्या वैल्यू है? वन। शुरू वाले घर में हमेशा फ्री विल रहेगा। वन साथ-साथ इस DP को भी पास कर दीजिए। DP को पास कर दीजिए। अब आइए ऊपर। अब फंक्शन का थोड़ा सिग्नेचर बदलिए। फंक्शन का थोड़ा सिग्नेचर बदलिए। क्या होगा यहां पे?",
+      "source": "caption",
+      "english_text": "In the beginning you did not know anyone's answer. So no one has been found. What will you do now? Will call our recursion function. Will call our recursion function. Where to start array n i when calling? i from zero. What is the value of free will in the beginning? Forest. There will always be free will in the initial house. Please pass this DP as well. Pass the DP. Now come up. Now change the signature of the function a bit. Change the signature of the function slightly. What will happen here?"
+    },
+    {
+      "start_time": 2180.4,
+      "end_time": 2212.95,
+      "text": "वेक्टर ऑफ़ वेक्टर ऑफ़ इंट बड़ा-बड़ा और m परसेंट DP खत्म हो गया। अब क्या बोले थे? ये तो हो गया भैया बेस केस। बेस केस को नहीं छेड़ना है। बेस केस को नहीं छेड़ना है। छेड़ना किसको है? बताते हैं यहां पर एक लाइन यहां पर इसको मिटाइए पहले यहां पे इसको मिटाइए सब मिटाइए मेरे ख्याल से सब मिटाइए सब मिटाइए सब मिटाइए मिटा रहे हैं क्योंकि हम फिर लिखेंगे अभी फिर लिखेंगे चलिए बेस केस के बाद सबसे पहले तो देख लीजिए कि इसका",
+      "source": "caption",
+      "english_text": "Vector of vector of int big-big and m percent DP is over. Now what did you say? This is the base case brother. Do not disturb the base case. Do not disturb the base case. Who needs to be teased? Let's say one line here, delete this here, first delete this here, delete all, I think, delete all, delete all, delete all, we are deleting because we will write again, now we will write again, let's first of all see that after the base case, its"
+    },
+    {
+      "start_time": 2212.96,
+      "end_time": 2245.19,
+      "text": "आंसर ऑलरेडी अगर पता है मतलब dp ऑफ़ i फ्री नॉट इक्वल टू -1 नॉट इक्वल टू -1 मतलब आंसर पता है सीधा यहां पे क्या कर दीजिए रिटर्न कर दीजिए क्या डीपी P ऑफ़ आई एंड फ्री। मतलब आई और फ्री के इस कॉम्बिनेशन का आंसर पता है। अगर नहीं पता है जो कि शुरू में नहीं पता होगा। शुरू में सब -1 है। तो आंसर निकाल लीजिए। कैसे निकालेंगे? सेम काम जो अभी किए थे वही कीजिए। सबसे पहले तो कर लीजिए कि अगर फ्री अब सेम कोड जो पहले लिखे सेम कोड कॉपी पेस्ट कर रहे हैं। फ्री इक्वल इक्वल",
+      "source": "caption",
+      "english_text": "If you already know the meaning of dp of i, free not equal to -1, not equal to -1, then you know the answer directly, what to do here, return what DP of i is free. Meaning, the answer to this combination of i and free is known. If you don't know, that may not be known in the beginning. Initially sub is -1. So find out the answer. How to get it out? Do the same work that you did just now. First of all, if you are free, now you are copying and pasting the same code as written earlier. free equal equal"
+    },
+    {
+      "start_time": 2245.2,
+      "end_time": 2279.03,
+      "text": "टू 0 है। तो रिटर्न रिटर्न क्या करेंगे? रिटर्न आप क्या करते थे? फन a n i + 1 एंड वन रिटर्न करने से पहले अब इसका आंसर ये है। इसका आंसर ये है तो इसमें ये कर दीजिए डीp i फ्री इक्वल टू ये कर दीजिए। इसका क्या मतलब है? इस लाइन का क्या मतलब है? ये लाइन एक शॉर्टकट है। अगर आपका फ्री ज़ीरो है तो आप आप क्या करते थे? आप रिटर्न फन आगे वाले घर में चले जाते थे जो भी करते थे। लेकिन ये इसका आंसर है ना इसका फाइनल आंसर आप रिटर्न करने की कोशिश कर रहे हैं",
+      "source": "caption",
+      "english_text": "To is 0. So what will the returns do? Returns What did you do? Now before returning fun a n i + 1 and one, this is the answer. If the answer is this, then do this, make dp i free equal to this. What does it mean? What does this line mean? This line is a shortcut. If your free is zero then what would you do? You used to go back to the next house and do whatever you wanted. But this is the answer and not the final answer you are trying to return."
+    },
+    {
+      "start_time": 2279.04,
+      "end_time": 2312.47,
+      "text": "ना उस आंसर को डीपी वाले में लिख तो लीजिए फॉर एग्जांपल आप यहां पे आए थे i = 0 और फ्री = 0 पे मान लीजिए कभी ना हो नहीं सकता है मान लीजिए i वन कर दीजिएगा वन पे तो आ सकते हैं i1 फ्री ज़ीरो पे आपको इसका आंसर नहीं पता था आपको इसका आंसर नहीं पता था तभी तो आप आगे आए अब इसका आंसर आप रिटर्न कर रहे हैं वन an एन एंड i - 1 मतलब आगे वाले से जाके और कुछ-कुछ करके रिटर्न कर रहे हैं लास्ट में रिटर्न करने से पहले इस आंसर आंसर को लिख लीजिए डीपी वाले एरे में। मतलब डीपी में जहां i1 और फ्री ज़ीरो वाला कॉलम है ना यहां पे ये वाला यहां पे इसका आंसर लिख लीजिए। यहां",
+      "source": "caption",
+      "english_text": "No, write that answer in the DP box. For example, you came here on i = 0 and free = 0. Suppose it can never happen. Suppose if you make i one then you can come to one. i1 is free to zero. You did not know the answer to this. You did not know the answer to this, that's why you came forward. Now you are returning its answer. One an n and i - 1 means go from the one ahead and do something and return. Lastly, before returning, write this answer in the DP array. Meaning in DP, where there is a column with i1 and free zero, write the answer of this one here. here"
+    },
+    {
+      "start_time": 2312.48,
+      "end_time": 2345.43,
+      "text": "पे इसका जो भी 10 20 30 जो भी आंसर आएगा लिख लीजिए। ये लाइन वही करता है रिटर्न और इसके पहले ना ये कर देते हैं हम डीपी आई फ्री इक्वल टू फलाना फलाना। हो गया इसका काम। अब अगर ऐसा नहीं है तो आपके पास दो चॉइससेस हैं। सेम काम कीजिए। इंट c1 = एरे ऑफ़ i + फन एरे n i + 1 अब इसका फ्री विल ज़ीरो हो जाता है। चॉइस दो भी है कि यहां पे चोरी ना की जाए। तो आप सेम काम कर सकते हैं कि एरे n i + 1 एंड वन। अब हम लोग क्या रिटर्न करते थे? रिटर्न मैक्स ऑफ़",
+      "source": "caption",
+      "english_text": "Whatever answer you get for 10, 20, 30, write it. This line returns the same and before that we do DP I free equal to so and so. Its work is done. Now if it is not so then you have two choices. Do the same work. Int c1 = Array of i + Fun Array n i + 1 Now its free will becomes zero. There is also a choice not to steal here. So you can do the same thing that array n i + 1 end one. Now what did we return? Return Max Off"
+    },
+    {
+      "start_time": 2345.44,
+      "end_time": 2378.31,
+      "text": "बोथ। मतलब मैक्स ऑफ़ C1 एंड C2। यहां भी सेम काम कीजिए। रिटर्न करने से पहले dp ऑफ़ i फ्री इक्वल टू खत्म। ये क्या होता है? इसका कोई मतलब देखिए आप इसको ऐसे भी ऐसे लिखने का मन नहीं है। मत कीजिए। आप इसको एक वेरिएबल में ले लीजिए। डीपी आई फ्री इक्वल टू दैट वेरिएबल। फिर रिटर्न दैट वेरिएबल। आपकी मर्जी ये जस्ट एक वन लाइनर है कि भैया रिटर्न करने से पहले रिटर्न आप तब कर रहे हैं जब आपको मालूम चल चुका है उस आई और फ्री के आंसर। अगर मालूम चल चुका है उसको लिख लो डायरी में। अगले बार काम आएगा। अगर नहीं लिखोगे तो फिर डायरी बनाने",
+      "source": "caption",
+      "english_text": "Booth. Means Max of C1 and C2. Do the same work here also. Before returning dp of i free equal to end. What is this? See if there is any meaning to this, you don't feel like writing it like this. Don't do it. You take it in a variable. DP i free equal to that variable. Then return that variable. Your wish is just a one liner that brother, before returning, you are returning only when you have known the answers to that question and free. If you already know, write it in your diary. Will be useful next time. If you don't want to write, then make a diary."
+    },
+    {
+      "start_time": 2378.32,
+      "end_time": 2404.87,
+      "text": "का पर्पस क्या हुआ? ये देखिए ये आपका कोड क्या बन गया? ये आपका कोड डीपी मेमोराइजेशन का कोड बन चुका है। डीपी मेमोराइजेशन का। पहले ये किस तरीके का था? रिकर्शन सारे पॉसिबल को देख लिए। वेरी गुड। अब किसका कोड है ये? अब डीपी का कोड है। क्यों? क्योंकि अब आप बार-बार ओवरलैपिंग सब प्रॉब्लम्स को कैलकुलेट नहीं करेंगे। अगर आपको लगता है कि भैया, आंसर पता है, यहीं से रिटर्न हो जाएगा। ये सब इतना भांग बोलना चलेगा ही या नहीं चलेगा?",
+      "source": "caption",
+      "english_text": "What was the purpose of? Look, what has become of your code? This code has become your code for DP memorization. Of DP memorization. What type was it before? Look at all the possible recursion. very good. Now whose code is this? Now there is the code of DP. Why? Because you will no longer calculate overlapping sub problems again and again. If you think that brother, you know the answer, the return will be done from here. Will all this talk about cannabis be acceptable or not?"
+    },
+    {
+      "start_time": 2404.88,
+      "end_time": 2433.359,
+      "text": "कभी नहीं चलेगा। ठीक है? तो आप यहीं से रिटर्न कर देंगे। ये क्या हुआ? ये किसका? डीपी का मेमोराइजेशन का सॉल्यूशन है। किसका? हाउस रॉबर का। वेरी वेरीेंट कांसेप्ट। वेरी वेरीेंट प्रॉब्लम। वेरी फंडामेंटल प्रॉब्लम। इसको करिए। इसको कॉपी में करिए। इसको इसको जरूर कॉपी में करिए। ट्राई रन करिए। खुद से समझिए। याद मत कीजिए कि ये ये कर देंगे। नहीं। ये समझिए। बहुत बहुत क्रूशियल क्वेश्चन है इस डीपी सीरीज का। ठीक है? तो चलिए मिलते हैं अगले लेक्चर में। थैंक यू",
+      "source": "caption",
+      "english_text": "Will never work. Ok? So you will return from here. What happened? Whose is this? DP has a solution for memorization. Whose? Of the house robber. Very variant concept. Very variant problem. Very fundamental problem. Do this. Copy this. Please copy this. Try run. Understand yourself. Don't remember that they will do this. No. Understand this. This is a very crucial question of this DP series. Ok? So let's meet in the next lecture. Thank you"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

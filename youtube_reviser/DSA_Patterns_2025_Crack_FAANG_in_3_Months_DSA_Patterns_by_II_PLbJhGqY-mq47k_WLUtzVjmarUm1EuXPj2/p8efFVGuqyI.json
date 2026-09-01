@@ -1,0 +1,233 @@
+{
+  "video_id": "p8efFVGuqyI",
+  "video_title": "DSA PATTERNS Episode 25 | Linked List Start of Cycle Logic Explained",
+  "video_number": 27,
+  "chunks": [
+    {
+      "start_time": 1.91,
+      "end_time": 36.229,
+      "text": "पूरे डीएसए इंटरनेट पे बहुत सारा वीडियो है इस टॉपिक के बारे में। किसके बारे में? स्टार्ट ऑफ लिंक लिस्ट साइकिल के बारे में। हम भी पढ़ाए थे। हमसे भी थोड़ा गलती हो गया था। बहुत सारे लोग मेरे पहले भी पढ़ाए हैं। उनसे भी बहुत गलती हो गया है। देखते हैं कोई रट्टा मरवा रहा है। कोई उसमें कैलकुलस डिफरेंसिएशन लगा दिया। कोई उसमें बोल दिया कि आपको ऐसा ही होता है। मान लो चार लाइन का एल्गोरिदम याद कर लो। ना ना। आपसे जब इंटरव्यू में पूछा जाएगा ना तो आप कितने उसको लॉजिक से लॉजिक से ज्यादा इंपॉर्टेंट है कि कितने आसान भाषा में उसको आप समझा पाते हैं। अगर आप आसान भाषा में नहीं समझा पाएंगे ना तो आपको कुछ नहीं कोई सेलेक्ट करेगा। आज मेरा गोल यही रहेगा कि इस टॉपिक को ऐसा खोल दें कि फिर आपको याद करने की ज़रूरत ना पड़े कि क्यों ऐसा",
+      "source": "caption",
+      "english_text": "There are tons of videos all over the DSA internet about this topic. About what? About Start of Link List Cycle. We also taught. We also made a little mistake. Many people have taught before me also. He too has made a big mistake. Let's see someone is memorizing. Someone put calculus differentiation into it. Someone said in it that this happens to you. Let's remember the four-line algorithm. Grandfather. When you will be asked in an interview, how much you can explain in simple language, it is more important than logic. If you are not able to explain in simple language then nothing will select you. My goal today will be to open up this topic in such a way that you don't have to remember why it is so."
+    },
+    {
+      "start_time": 36.239,
+      "end_time": 65.109,
+      "text": "होता है और क्यों ऐसा होता है। आइए। शुरू हो जाइए। थोड़ा सा समय दीजिएगा हमको। हम लोग अभी तक क्या पढ़ चुके थे लिंक लिस्ट में हम लोग जब लिंक लिस्ट वाला पैटर्न किए थे। तो मेरे से भी थोड़ा गलती हो गया। हमको इतना डीप में जाना चाहिए था। आज हम थोड़ा दो-तीन घंटा बैठ के सोचे हैं इस बारे में। हमको लगा कि ना ना। वैसे तो आपसे कोई क्वेश्चन पूछेगा तो आप नहीं बता पाएंगे उसको। हम लोग उसको क्या बोले थे? कि दो पॉइंटर रखते थे क्या? एक स्लो एक फास्ट। स्लो पॉइंटर एक स्टेप मूव करता था फास्ट पॉइंटर दो स्टेप मूव करता था। अच्छा!",
+      "source": "caption",
+      "english_text": "It happens and why it happens. Come. Get started. Please give us some time. What had we read till now in the link list when we did the link list pattern? So I also made a little mistake. We should have gone so deep. Today let us sit and think about this for two-three hours. We thought no no. However, if someone asks you a question, you will not be able to tell him. What did we tell him? Or did you keep two pointers? One slow, one fast. The slow pointer moved one step, the fast pointer moved two steps. Good!"
+    },
+    {
+      "start_time": 65.119,
+      "end_time": 99.51,
+      "text": "दोनों हेड से स्टार्ट करता था और क्योंकि साइकिल है क्योंकि साइकिल है तो फास्ट क्या करेगा? कि फास्ट जल्दी-जल्दी जल्दी-जल्दी चल के साइकिल के अंदर चला जाएगा और साइकिल में घूमता रहेगा, घूमता रहेगा। कभी ना कभी दोनों एक पॉइंट पे मीट कर जाएंगे। क्यों? क्योंकि स्लो भी कभी ना कभी धीरे धीरे धीरे धीरे एक घंटे बाद साइकिल में आएगा और स्लो जब साइकिल में स्टार्ट करेगा और फास्ट तेजी से घूम रहा है तो कभी ना कभी इसको ये पकड़ लेगा कभी ना कभी तो पकड़ ही लेगा अच्छी बात है चलिए पकड़वा देते है सावधानी के लिए सावधानी के लिए या तो हमारी सुविधा के लिए कुछ-कुछ वेरिएबल आप अपने मन से जो मन है वेरिएबल ले लीजिए आपके मन से एकदम आपके मन से",
+      "source": "caption",
+      "english_text": "Both used to start from the head and because it is a bicycle, because it is a bicycle, what will Fast do? That Fast will move quickly and quickly and go inside the cycle and will keep rotating in the cycle. Someday or the other both will meet at one point. Why? Because sometimes the slow will also slowly and gradually come into the cycle after an hour and when the slow starts the cycle and the fast is moving fast, then sooner or later it will catch it, sooner or later it will catch it, it is a good thing, let's get it caught, for the sake of caution, for the sake of caution, or for our convenience, some variables, you can take whatever variables you want from your mind, absolutely from your mind."
+    },
+    {
+      "start_time": 99.52,
+      "end_time": 133.43,
+      "text": "चलेंगे कि आपको क्या लगता है देखिए एक बात तो फिक्स है ना कि ये हेड है अच्छा ये स्टार्ट पॉइंट है किसका किसका? साइकिल का। मान लीजिए कभी भी कुछ भी मान लीजिए। ये मिड पॉइंट। ये क्या है? मिड पॉइंट। कुछ भी मानिए, कितना भी बड़ा साइकिल बनाइए, कितना भी उसका बड़ा-छोटा पूंछ बनाइए, मान लीजिए अपने हिसाब से। चलिए अब क्योंकि मान लिए हैं तो इसको नाम दे देते हैं। इस हेड से स्टार्ट वाले डिस्टेंस को हम लोग बोलेंगे X। मान लीजिए, मान लीजिए। स्टार्ट से जो मिड पॉइंट वाला डिस्टेंस है ना, उसको हम लोग बोलेंगे Y। उसको क्या बोलेंगे? Y। हम लोग मानेंगे कि ये जो साइकल है, इसमें C",
+      "source": "caption",
+      "english_text": "Let's see what do you think, see, one thing is fixed, this is the head, okay, this is the start point, whose is whose? Of bicycle. Assume anything at any time. This mid point. What is this? Mid point. Believe anything, make any big bicycle, make any big or small tail of it, believe it as per your convenience. Now that we have accepted it, let us give it a name. We will call this distance from head to start as X. Suppose, suppose. The distance from the start to the mid point will be called Y. What will you call him? Y. We will assume that this bicycle has C."
+    },
+    {
+      "start_time": 133.44,
+      "end_time": 168.15,
+      "text": "नोट्स हैं। जैसे इसमें कितना? एक दो तीन चार पांच नोट्स हैं तो पांच हो जाएगा सी अच्छी बात है चलिए तो जो स्टार्ट से ये पीछे वाला डिस्टेंस है जो बच गया है साइकिल में एक साइकिल का पॉइंट तो वो होगा जहां पे वो लोग स्लो चल के वहां मीट कर जाएगा एक बचा हुआ भी होगा सर्कल का हिस्सा तो ये चलिए c - y मान लीजिए इसको क्यों नाम दें बेकार में पूरे साइकिल का लेंथ c है ऊपर वाला हरा वाला बोलें कि y है तो नीचे लाल वाला वो c - y हो जाएगा यही होगा चलिए। अब आइए। क्लास नाइन 10 में क्लास नाइन 10 में या सेवन एट में स्पीड डिस्टेंस टाइम पढ़े थे ना क्या? स्पीड डिस्टेंस टाइम। स्पीड डिस्टेंस टाइम। कोई",
+      "source": "caption",
+      "english_text": "There are notes. Like how much is in it? If there are one, two, three, four, five notes then it will be five. C is a good thing. So, this is the distance from the start to the back, which is left in the cycle. The point of one cycle will be the point where those people will move slowly and meet there. The one left will also be a part of the circle, so let's say c - y. Let's say why name it unnecessarily. The length of the whole cycle is c. Let's say that the upper green one is y, then the red one below will be c - y. This is what will happen. Come now. Did you study Speed ​​Distance Time in Class Nine 10 or Seven Eight? Speed ​​Distance Time. Speed ​​Distance Time. someone"
+    },
+    {
+      "start_time": 168.16,
+      "end_time": 201.11,
+      "text": "इसमें फैंसी कांसेप्ट नहीं है। स्पीड डिस्टेंस टाइम है। चलिए। स्पीड क्या है? दोनों का स्लो एंड फास्ट का। स्लो का स्पीड वन है। फास्ट का स्पीड टू है। फास्ट का स्पीड टू है। टाइम सेम लग रहा है। मतलब टाइम सेम लगने का मतलब कि प्रोग्राम जब स्टार्ट हुआ था और कभी ना कभी जब दोनों मिल गया था तो प्रोग्राम खत्म हो गया था। तो दोनों को उतना ही समय मिल रहा है घूमने का ना। फास्ट उसमें ज्यादा घूम ले कम घूम वो अलग बात है लेकिन टाइम तो उतना ही मिल रहा है। प्रोग्राम प्रोग्राम कब खत्म होगा जब दोनों मिल जाएगा। तो टाइम 1 घंटा में मिले, 2 घंटा में मिले, 20 घंटा में मिले, दोनों को सेम मिलेगा। तो टाइम तो सेम है। टाइम दोनों के",
+      "source": "caption",
+      "english_text": "It doesn't have a fancy concept. Speed ​​is distance time. Let go. What is speed? Both slow and fast. Slow has speed one. Speed ​​of fast is two. Speed ​​of fast is two. Time seems to be the same. It means that the time being same means that when the program started and at some point when both met, the program ended. So both of them are getting equal time to roam around. Fast, move around more or move less is a different matter but you are getting the same amount of time. When will the program end when both meet? So if the time is met in 1 hour, if it is met in 2 hours, if it is met in 20 hours, both will get the same. So time is the same. time of both"
+    },
+    {
+      "start_time": 201.12,
+      "end_time": 229.509,
+      "text": "पास वन वन ही वन वन यूनिट है। अच्छा। तो डिस्टेंस। डिस्टेंस क्या होता है? स्पीड * टाइम। यही होता है। ठीक है? स्लो का डिस्टेंस जो होगा, स्लो का जो भी डिस्टेंस होगा वो क्या होगा? 1 * 1 टाइम को वन मान लीजिए। और फास्ट का डिस्टेंस क्या होगा? फास्ट का डिस्टेंस होगा 2 * 1 तो यहां आप देख पा रहे हैं कि जो स्लो का डिस्टेंस है और जो फास्ट का डिस्टेंस है उसमें थोड़ा गड़बड़ी है। क्यों? फास्ट का डिस्टेंस इज टू टाइम्स एज ऑफ स्लो। एज ऑफ़ स्लो।",
+      "source": "caption",
+      "english_text": "Pass One One is One One Unit. Good. So distance. What is distance? Speed ​​* Time. Same thing happens. Ok? What will be the distance of the slow, what will be the distance of the slow? Consider 1 * 1 time as one. And what will be the distance of the fast? The distance of fast will be 2 * 1. So here you can see that there is a slight difference between the distance of slow and the distance of fast. Why? The distance of fast is two times the age of slow. Age of Slow."
+    },
+    {
+      "start_time": 229.519,
+      "end_time": 257.349,
+      "text": "ऑब्वियस सी बात है। इसके लिए तो मैथ्स करने का जरूरत नहीं है। कोई आदमी ज्यादा तेजी से भाग रहा है तो सेम टाइम में आप जब 1 कि.मी. भागेंगे वो 2 कि.मी. भाग जाएगा। यही होता है। चलिए अब आइए। अब क्या है? ये करिए। फिर से एक छोटू सा छोटू सा लिंक लिस्ट बना लीजिए। छोटू सा लिंक लिस्ट बना लीजिए। वेरिएबल देखने के लिए बस वेरिएबल देखने के लिए। कोई जो मन करे वैसा बनाइए। जितना बड़ा, जितना छोटा, जितना अच्छा, जितना सुंदर वैसा बना लीजिए। चलिए बना लिए। सबसे पहले वेरिएबल जल्दी-जल्दी लिख लीजिए। ये आप बोले थे कि x है।",
+      "source": "caption",
+      "english_text": "It's an obvious thing. There is no need to do maths for this. If a person is running faster then you can cover 1 km in the same time. He will run 2 km. Will run away. Same thing happens. Let's come now. what now? Do this. Again make a small link list. Make a small link list. Just to see the variables, just to see the variables. Make whatever one wants. Make it as big, as small, as good, as beautiful. Let's make it. First of all, write down the variables quickly. This is what you said is x."
+    },
+    {
+      "start_time": 257.359,
+      "end_time": 282.39,
+      "text": "ये बोले थे कि y है। ये आपका मिड पॉइंट है। मिड पॉइंट। ठीक है? और ये जो बच गया सर्कल में वो क्या है? c - y है। ठीक है? देखिए स्लो क्या किया है? स्लो अपनी जिंदगी में क्या किया है? वो एक-एक स्टेप कूद के गया। कभी ना कभी साइकिल में घुसा होगा और मीट कर गया। मतलब सबसे पहले स्लो हेड से लेके स्टार्ट तक तो आया होगा। स्टार्ट ये है। ये स्टार्ट ऑफ साइकिल है।",
+      "source": "caption",
+      "english_text": "They said that it is y. This is your midpoint. Mid point. Ok? And what is this that is left in the circle? c - y. Ok? Look what Slow has done? What have you done slowly in your life? He jumped one step at a time. At some point or the other he must have entered the bicycle and met with it. Meaning, first of all it must have come from slow head till start. This is the start. This is the start of the cycle."
+    },
+    {
+      "start_time": 282.4,
+      "end_time": 316.31,
+      "text": "ये हेड है। स्लो हेड से लेके स्टार्ट तक आया होगा। और फिर स्टार्ट से लेके मिड पॉइंट तक चला गया होगा। कहां तक? मिड पॉइंट तक चला गया होगा। ठीक है? फास्ट क्या किया होगा? फास्ट क्या किया होगा? फास्ट भी हेड से स्टार्ट तो आया ही होगा। हेड से स्टार्ट तो आना जरूरी है ना। उसके बाद ये बहुत गोल गोल घूमा होगा। हो सकता है। हो सकता है। पक्का नहीं है कि घुमा होगा कि नहीं? गोल-गोल घुमा होगा। कहां पे? साइकिल में। बहुत बार घुमा होगा। कुछ भी मान लीजिए कितनी बार भी 10 बार, 20 बार, 50 बार, जितनी बार अच्छा और फिर जब इसका पूरा गोल-गोल हो गया तो फिर ये भी जो",
+      "source": "caption",
+      "english_text": "This is head. Must have come from slow head till start. And then it would have gone from start to mid point. Till where? Must have gone till mid point. Ok? What would Fast have done? What would Fast have done? Fast must have started from the head. It is important to start from the head, isn't it? After that it must have gone round and round. It is possible It is possible Not sure whether it will rotate or not? Will be going round and round. Where? In bicycle. Must have turned around many times. Let's say anything, any number of times - 10 times, 20 times, 50 times, any number of times is good and then when it is completely completed, then this also which"
+    },
+    {
+      "start_time": 316.32,
+      "end_time": 349.35,
+      "text": "है स्टार्ट से मिट गया होगा। मतलब ये घूमना तो एक और बार चाह रहा होगा। उसी समय मुलाकात हो गई होगी तो प्रोग्राम बंद हो गया। यही हुआ होगा। चलिए। यही हुआ होगा ना भाई। चलिए। हां। कुछ लोग बोलेंगे कि हो सकता है कि स्लो भी घुमा होगा। ऐसा तो नहीं हो सकता ना कि स्लो साइकिल में घुसा और मुलाकात हो गई। स्लो को भी आप घुमा लीजिए। चलिए। हां। क्यों? कोई भी डाउट नहीं छोड़ना है। हमको कोई भी ऐसा डाउट नहीं छोड़ना है जो लोग कमेंट में बोले कि अच्छा ये वाला पॉइंट व इग्नोर कर दिए इसीलिए तो समझा पाए। बाकी लोग तो ये कंसेप्ट नहीं स्लो भी घुमाओ। स्लो भी गोल-गोल घुमाओ।",
+      "source": "caption",
+      "english_text": "Must have been erased from the beginning. Meaning, he must be wanting to travel one more time. Had the meeting taken place at that very moment, the program would have stopped. This must have happened. Let go. This must have happened brother. Let go. Yes. Some people will say that it is possible that slow may also have been twisted. It is not possible that he entered the slow cycle and the meeting took place. You can also rotate the slow one. Let go. Yes. Why? Don't leave any doubt. We do not want to leave any such doubt that people say in the comments that we ignored this point and that is why we were able to explain it. Rest of the people, this is not a concept, turn it slowly. Also rotate slowly in a circular motion."
+    },
+    {
+      "start_time": 349.36,
+      "end_time": 377.83,
+      "text": "गोल-गोल घुमाओ। और फिर जब पूरा घूमना हो गया होगा तो कभी ना कभी तो स्टार्ट से ये भी गया ही होगा। स्टार्ट से नीट। अब देखिए अब कोई नहीं बोल सकता है कि ना अच्छा बेटा वो तो ले सब ले लिए सब सिनेरियो देख लिए अच्छा ये इसका हो गया स्लो का ये फास्ट का। अब इस वेरिएबल के टर्म्स में दोनों का डिस्टेंस लिख लेते हैं। आपको सब आपको सब मालूम है ना आप सब x y z सब किए हुए हैं मस्त से। आइए लिख लीजिए। स्लो का डिस्टेंस लिखिए। सबसे पहले स्लोप का। सबसे पहले स्लो क्या काम किया था? हेड से स्टार्ट।",
+      "source": "caption",
+      "english_text": "Turn it round and round. And then when the entire journey would have been completed then at some point or the other he would have gone from the start also. Neat from start. Now see, now no one can say that it is good son, he has taken everything, he has seen all the scenarios, okay, this one is slow and this is fast. Now let us write the distance of both in terms of this variable. You all know everything, right, you all have done x y z all very well. Let's write it down. Write the distance of the slow. First of all the slope. What was the first thing Slow did? Start from the head."
+    },
+    {
+      "start_time": 377.84,
+      "end_time": 408.469,
+      "text": "अच्छा लिख लीजिए। हेड से स्टार्ट का डिस्टेंस क्या है? x लिखिए x प्लस अच्छा आप बोल रहे हैं गोल-गोल घुमा हो। कितनी बार? कितनी भी बार m मान लीजिए m। m बार c क्या है? साइकिल का लेंथ। तो गोल-गोल घूमेगा तो c डिस्टेंस ही कवर करेगा एक बार में। m बार घूमा तो mc डिस्टेंस कवर कर लिया वेरी गुड। उसके बाद क्या किया जब इसका पूरा हो गया कभी ना कभी स्टार्ट से मीटिंग पॉइंट जो कि y है। ठीक है? लिख लीजिए y। स्लो का डिस्टेंस हो गया। फास्ट का डिस्टेंस लिख लीजिए। फास्ट क्या किया?",
+      "source": "caption",
+      "english_text": "Well write it down. What is the distance from head to start? x write x plus ok you are saying it is round and round. how often? Let m be any number of times m. What is m times c? Length of the bicycle. So if it goes round and round it will cover only c distance in one go. After turning m times, covered mc distance, very good. What did it do after that when it was completed sometime from the start to the meeting point which is y. Ok? Write down y. Slow distance is reached. Write down the distance of the fast. What did you do fast?"
+    },
+    {
+      "start_time": 408.479,
+      "end_time": 438.95,
+      "text": "ये भी हेड से स्टार्ट गया। ये भी हेड से स्टार्ट गया। मतलब x प्लस ये भी गोल-गोल घुमा। तो ऐसा तो हुआ नहीं होगा कि दोनों सेम बार गोल-गोल घुमा होगा। ये n टाइम्स घुमा होगा। n टाइम्स घुमा होगा। चलिए। और लास्ट में जब इसका भी हो गया तो ये भी स्टार्ट से मीट चला गया तो y हो गया। ये हो गया d1 ये हो गया d2 डिस्टेंस डिस्टेंस। अब एक पेज पहले क्या लिखे थे? फास्ट का जो डिस्टेंस है ना वो टू टाइम्स ऑफ़ स्लो डिस्टेंस है। तो इसमें लगा दीजिए फार्मूला को। चलिए तो मतलब कि 2 टाइम्स x",
+      "source": "caption",
+      "english_text": "This also started from the head. This also started from the head. Meaning x plus this also went round and round. So it would not have happened that both the beans would have gone round and round. It will be rotated n times. Will be rotated n times. Let go. And in the end, when this was also done, it also went from start to meat, so y was done. This is d1 This is d2 distance distance. Now what was written a page ago? The distance of fast is two times of slow distance. So put the formula in it. Let us mean that 2 times x"
+    },
+    {
+      "start_time": 438.96,
+      "end_time": 470.55,
+      "text": "+ mc + y = x + nc + y ये स्लो का डिस्टेंस है। फास्ट का डिस्टेंस। पहले देख चुके हैं ना भाई। आइए 2x + 2mc + 2y = x + nc + y ठीक है? इसको इक्वेट कर लीजिए। x + y + 2mc = nc ये आ गया। ये आ गया। अच्छा आइए इसको",
+      "source": "caption",
+      "english_text": "+ mc + y = x + nc + y This is the distance of the slow. Fast distance. Have seen it before, brother? Let's 2x + 2mc + 2y = x + nc + y ok? Equate it. x + y + 2mc = nc Here it comes. here comes the. ok let's do this"
+    },
+    {
+      "start_time": 470.56,
+      "end_time": 504.79,
+      "text": "कंटिन्यू करिए। x + y + 2mc = nc अब देखिए m और n तो आप लिए हैं। m और n तो आप लिए हैं ना इसको उधर ले जाइए। cc को एक तरफ कर दीजिए। x + y = nc - 2mc x + y = c n - 2m अब देखिए n भी आप लिए हैं m भी आप लिए हैं n और m का मतलब क्या है कि कितनी बार गोल-गोल घूमा है ऑब्वियस सी बात है कि कितनी बार नेगेटिव तो नहीं होगा अरे आपको कोई बोला कि तुम मैदान में",
+      "source": "caption",
+      "english_text": "Continue. x + y + 2mc = nc Now see, you have m and n. You have taken m and n, so take it there. Set cc aside. x + y = nc - 2mc"
+    },
+    {
+      "start_time": 504.8,
+      "end_time": 538.79,
+      "text": "एक बार दौड़ो या दो बार दौड़ो या तीन बार दौड़ो नेगेटिव नहीं ना होगा एक बार दौड़ेंगे या तो जीरो बार दौड़ेंगे या तो दौड़ ही नहीं पाएंगे है ना तो वही होगा तो ये एनी केस सॉरी ग्रेटर दैन इक्वल टू 0 होगा। ये जो पूरा चीज़ है n - 2n जो भी है हमको इतना सारा वेरिएबल के पचड़ा में नहीं पड़ना है। इसको एक नाम दे दीजिए। इसको एक नाम क्या दे दीजिए? pc सिंपल बात है। उसको p रख लिख लीजिए। अरे वो कितना बार भी हो। हमको क्या है? 10 बार होगा, 20 बार होगा, 30 बार होगा। उससे हमको मतलब ही नहीं है। दौड़ते रहो ना। तुम दौड़ो। चलिए। X की वैल्यू निकालने की कोशिश करते हैं। p टाइम C - Y। ये आ गया। X की",
+      "source": "caption",
+      "english_text": "Run once or run twice or run thrice will not be negative either will run once or will run zero times or will not be able to run at all either will be the same so in any case sorry it will be greater than equal to 0. The whole thing is n - 2n, whatever it is, we do not have to get into the trouble of so many variables. Give it a name. What name should we give it? pc is a simple thing. Write it down as p. Hey, no matter how many times it happens. What do we need? It will happen 10 times, it will happen 20 times, it will happen 30 times. We are not concerned with that. Keep running. you run. Let go. Let's try to find the value of X. p time C - Y. here comes the. of"
+    },
+    {
+      "start_time": 538.8,
+      "end_time": 572.79,
+      "text": "वैल्यू। यहां तक कोई नहीं है। अच्छा। x = p टाइम c - y ये लिखे थे। इसमें एक छोटा सा चीज करिए। इसको p - 1 c + c ऐसा लिख सकते हैं। प्लस - y इस काम को हम ऐसा लिख दिए। x = p - 1 c + c - y ये देखिए ऐसा इक्वेशन आपका लगने लगा। इसमें देखिए हम कोई भारी भर का मैथ नहीं किए। नहीं ये सब क्लास फाइव सिक्स का मैथ है। इधर से उधर एलएचएस आरएचएस कर रहे हैं। ठीक है? अब",
+      "source": "caption",
+      "english_text": "Value. There is no one here. Good. x = p time c - y were written. Do one small thing in it. This can be written as p – 1 c + c. Plus - y We wrote this work like this. x = p - 1 c + c - y Look, this equation starts looking like yours. See, we did not do any heavy math in this. No, this is all class five six math. From here to there LHS are doing RHS. Ok? now"
+    },
+    {
+      "start_time": 572.8,
+      "end_time": 607.03,
+      "text": "देखिए क्या हुआ? अब देखिए। x = p - 1c + c - y c - y कोई स्पेशल वैल्यू था क्या? c - y कोई स्पेशल हां क्या स्पेशल वैल्यू था? c - y क्या था? C - Y ये था जो बचा हुआ था ना जो बचा हुआ था ये वाला ये वाला ये था C - Y यही था ना C - Y ये तो आप लिए थे हम नहीं लिए थे आप लिए थे। अच्छा अब इसका मतलब क्या होता है? इसका मतलब क्या? देखिए ये इक्वेशन ना ये जो इक्वेशन है ना ये दुनिया का अटल सत्य है। अटल सत्य है। क्यों?",
+      "source": "caption",
+      "english_text": "See what happened? watch now. x = p - 1c + c - y c - y Was there any special value? c - y Any special Yes Was there any special value? c - what was y? C - Y This was the one that was left. This was the one that was left. This one was this one. C - Y This was this one. C - Y This is what you took. We didn't take it. You took it. Okay now what does this mean? What does this mean? Look, this equation is neither an equation nor an unchangeable truth of the world. It is an unchangeable truth. Why?"
+    },
+    {
+      "start_time": 607.04,
+      "end_time": 640.55,
+      "text": "मैथ्स करने से आया है। मैथ्स स्पीड डिस्टेंस टाइम का फार्मूला निकाले उससे आया है। कोई वेरिएबल में हम एजंप्शन नहीं लिए कि ऐसा हुआ होगा। नहीं नहीं नहीं। जो हुआ होगा वही दिखाएं। जो जो हो सकता है, स्लो भी घूम ले, फास्ट भी घूम ले, दुनिया में जो जो हो सकता है, सबको अस्यूम करके यह क्वेश्चन आया है। यह इक्वेशन क्या है? ट्रू 100% है। ये गलत नहीं हो सकता। ये गलत नहीं हो सकता है। अब आप देख लीजिए। अब जो हम लोग हम लोग जो एल्गोरिदम क्या लिखते हैं? हम लोग एल्गोरिथम क्या लिखते हैं? ये याद रखिएगा। ये याद रखिएगा। हम ये सॉरी कौन सा इक्वेशन था? जी ये वाला। ये वाला",
+      "source": "caption",
+      "english_text": "Came from doing maths. Maths comes from deriving the formula for speed distance time. We did not make any assumption in any variable that this would have happened. No, no, no. Show only what might have happened. This question has come assuming that whatever can happen, whether it can travel slowly or fast, whatever can happen in the world. What is this equation? True 100%. This cannot be wrong. This cannot be wrong. Now you take a look. Now what do we write about algorithms? What do we write algorithm? Remember this. Remember this. We are sorry, which equation was this? Yes, this one. this one"
+    },
+    {
+      "start_time": 640.56,
+      "end_time": 673.59,
+      "text": "इक्वेशन ये ये दुनिया का अटल सत्य है। है ना? इसको याद रखिएगा। अब आइए। चलिए एक काम करिए। आप ना हम हम लोग का एल्गोरिदम क्या कहता था कि जैसे ही स्लो इक्वल इक्वल टू फास्ट होता था। जैसे ही स्लो इक्वल इक्वल टू फास्ट होता था। क्या करते थे? स्लो को वापस हेड पे रखते थे। और फास्ट को वहीं पे रख छोड़ देते थे। और दोनों को चलाना शुरू करते थे। दोनों को क्या? चलाना शुरू करते थे। कितना? एक-एक स्पीड एक-एक स्पीड पे। दो-दो पे नहीं एक-एक स्पीड पे। और जहां पे दोनों मीट करता था वहीं पे हम लोग बोलते थे कि",
+      "source": "caption",
+      "english_text": "This equation is the unchangeable truth of this world. Isn't it? Remember this. Come now. Let's do one thing. What the algorithm of Aap Na Hum Hum Log used to say was that as soon as slow was equal to fast. Just like slow equals too fast. What did you do? Used to put the slo back on the head. And used to leave the fast there. And started driving both. What about both? Used to start driving. How much? One speed at a time. Not two-by-two but one-on-one speed. And wherever we both used to meet, we used to say that"
+    },
+    {
+      "start_time": 673.6,
+      "end_time": 708.47,
+      "text": "स्टार्टिंग पॉइंट। वहीं पे हम लोग क्या बोलते थे कि स्टार्टिंग पॉइंट। ठीक बात है? चलिए अब आइए एक स लिंक लिस्ट बना लेते हैं छोटा सा। एक काम करिए आप लिंक लिस्ट मत बनाइए। आप पहले साइकिल ही बना लीजिए। हम लोग का इक्वेशन क्या है? x = t - 1 c + c - y अपने हिसाब से आपको अब जो मन कर रहा है सबसे पहले सल लेंथ ले लीजिए। साइकिल इज इक्वल टू चलिए आप बोलिए कि मेरा 10 लेंथ का साइकिल है उसमें 10 नोट्स है। वेरी गुड। p - 1 p - 1 को कोई नंबर होना पड़ेगा। वो कितनी बार गोल-गोल घूमता है?",
+      "source": "caption",
+      "english_text": "Starting point. What we used to say there was the starting point. Is that correct? Now let us make a small link list. Do one thing, don't make a link list. You make a bicycle first. What is our equation? x = t - 1 c + c - y According to you, first take the length as per your wish. Cycle is equal to two. Let's say that I have a cycle of 10 lengths and there are 10 notes in it. very good. p - 1 p - 1 has to be a number. How many times does he go round and round?"
+    },
+    {
+      "start_time": 708.48,
+      "end_time": 742.55,
+      "text": "इसको थ्री ले लीजिए। थ्री ले लीजिए। p - 1 को थ्री ले लीजिए। तो ph सॉरी p - 1 को टू ले लीजिए। हां सिंपलीसिटी के लिए टू ले लीजिए। कुछ भी लीजिएगा हो जाएगा। y को y को क्या? एट ले लीजिए। एट ले लीजिए। एट ले लीजिए अपने हिसाब से। तो c - y 2 हो जाएगा। x की वैल्यू क्या आएगी? 2 * 10 + 10 - 8 2 = 22 ये आपको क्या बताता है? ये बताता है कि अगर आप ऐसा ऐसा कोई भी लिंक लिस्ट बनाए हैं। कोई भी लिंक लिस्ट आप अगर लेंगे तो x x का मतलब क्या है? जो हेड से लेके वो लिंक लिस्ट के स्टार्ट साइकिल तक",
+      "source": "caption",
+      "english_text": "Take this three. Take three. Take p - 1 three. So take ph sorry p - 1 to two. Yes, take two for simplicity. You can take anything and it will be done. y to y what? Take et. Take et. Take it as per your convenience. So c – y will be 2. What will be the value of x? 2 * 10 + 10 - 8 2 = 22 What does this tell you? This tells that if you have created any such link list. If you take any link list then what is the meaning of x x? From the head to the start cycle of the link list."
+    },
+    {
+      "start_time": 742.56,
+      "end_time": 777.11,
+      "text": "है। जो उसका पूंछ है जो उसका पूंछ निकला हुआ है। उसको ये रूल मानना ही पड़ेगा। उसको ये रूल मानना पड़ेगा। उसको इतना लेंथ होना पड़ेगा। अगर आप इस तरीके का साइकिल बनाते हैं और अगर आप ये बोलते हैं कि इतनी बार हो सकता है। आपका जो पूंछ है उसको इस तरीके का बात मानना ही मानना पड़ेगा क्योंकि ये इक्वेशन है। इक्वेशन कहां से आया है? सब चीज कैलकुलेट करके आया है कि ऐसा होगा नहीं हो सकता है। सब करके इक्वेशन आया है। इसका मतलब क्या होता है? तो आइए इसको एक एग्जांपल से हम समझा देते हैं कि ये कैसे क्यों इसको मानना ही पड़ेगा। आप अपना साइकिल लेंथ ले लीजिए। एट सॉरी 10 ले लीजिए। P - 1 को अपना 3 ले",
+      "source": "caption",
+      "english_text": "Is. Which is his tail, which is his tail sticking out. He will have to follow this rule. He will have to follow this rule. It will have to be this length. If you make a bicycle like this and if you say that this can happen so many times. Your tail will have to accept this method because it is an equation. Where does the equation come from? Everything has been calculated so that it may or may not happen. After doing everything the equation has come. What does it mean? So let us explain with an example how and why this has to be accepted. You take your cycle length. At sorry take 10. P - take 1 as your 3"
+    },
+    {
+      "start_time": 777.12,
+      "end_time": 804.87,
+      "text": "लीजिए और C - Y को क्या ले लीजिए? टू ले लीजिए। इसका क्या मतलब होता है? कि जो भी आपका साइकिल लेंथ है, जो भी आपका साइकिल लेंथ है, C - Y क्या होता है? अगर अगर ये वाला आपका मीटिंग पॉइंट है, अगर ये आपका मीटिंग पॉइंट है और ये आपका स्टार्ट पॉइंट है। इसका मतलब कि ये वाला जो लेंथ है इसका लेंथ है टू। ठीक है? बाकी साइकिल का लेंथ क्या होगा? बाकी साइकिल का लेंथ ऑब्वियसली आठ होगा। क्योंकि साइकिल लेंथ पूरा 10 है। और आपको इसमें तीन बार घूमना है।",
+      "source": "caption",
+      "english_text": "Take and what to take C - Y? Take two. What does this mean? That whatever your cycle length is, whatever your cycle length is, what is C - Y? If if this one is your meeting point, if this one is your meeting point and this one is your start point. This means that the length of this one is two. Ok? What will be the length of the remaining cycle? The length of the remaining cycle will obviously be eight. Because the cycle length is exactly 10. And you have to go around it three times."
+    },
+    {
+      "start_time": 804.88,
+      "end_time": 833.11,
+      "text": "x इस इक्वेशन के हिसाब से x क्या आएगा? 3 * 10 - 2 माइनस है कि प्लस है? +2 सॉरी + 2 32 मतलब x 32 ही होगा। 32 होगा ही होगा। अब हम लोग क्या बोलते थे? स्लो को रखो हेड पे। स्लो को आगे बढ़ाओ। फास्ट को रखो यहां पे। फास्ट को रखो मीटिंग पॉइंट पे। फास्ट को इस तरफ बढ़ाओ। इस तरफ बढ़ाओ। और दोनों मिलेगा हमेशा स्टार्ट पे। तो देख लीजिए। देखिए स्लो 32 टाइम्स चलेगा।",
+      "source": "caption",
+      "english_text": "What will x be according to this equation? 3 * 10 - 2 is minus that plus? +2 Sorry + 2 32 means x will be 32 only. There will definitely be 32. Now what did we say? Keep slow on head. Move forward slow. Keep the fast here. Keep fast at the meeting point. Increase the fast this way. Extend it this way. And both will always be available at the start. So take a look. See slow will run 32 times."
+    },
+    {
+      "start_time": 833.12,
+      "end_time": 861.59,
+      "text": "तो स्टार्ट पॉइंट पे आ जाएगा। स्टार्ट पॉइंट पे आ जाएगा यहां पे। ये तो पक्की बात है। अब देखते हैं फास्ट 32 टाइम्स चलेगा तो क्या होगा? देखिए। फास्ट सबसे पहले तो फास्ट सबसे पहले तो टू टाइम्स चल के टू टाइम्स चल के यहां पहुंच जाएगा। टू टाइम्स चल के यहां पहुंच जाएगा। टू टाइम्स में ही यहां पहुंच जाएगा। उसके बाद इसको और कितनी टाइम्स चलना है? 30 टाइम्स, 30 टाइम्स। क्योंकि स्लो को वहां से आने में 32 टाइम लगेगा। इसको 30 टाइम्स चलना है। अब देखिए 30 टाइम्स में से एक बार जब 10 चलेगा ना तो वापस स्टार्ट पे आ जाएगा।",
+      "source": "caption",
+      "english_text": "Then it will come to the start point. Will come to the start point here. This is a sure thing. Now let's see what will happen if Fast 32 Times continues? See. First of all, fast, first of all, walk two times and reach here by walking two times. Will reach here by walking two times. Will reach here in two times only. How many more times does it have to continue after that? 30 Times, 30 Times. Because slow will take 32 time to reach from there. This has to be done 30 times. Now see, out of 30 times, once it runs 10 times, it will come back to the start."
+    },
+    {
+      "start_time": 861.6,
+      "end_time": 894.949,
+      "text": "क्योंकि साइकिल है साइकिल है 10 बार चलके वापिस वहीं आ जाएगा। दूसरी बार 10 बार चलेगा तो फिर यहीं पे आ जाएगा। 20 बार चल चूका है। तीसरी बार भी अगर 10 बार चलेगा तो फिर से वहीं पे आ जाएगा क्योंकि ये साइकिल है। तो कहने का मतलब फास्ट सबसे पहले तो टू टाइम्स चलके कहां आ गया? स्टार्ट पे। उसके बाद ये और 10 चला स्टार्ट पे ही रहा। 20 बार चला स्टार्ट पे रहा। 30 बार चला स्टार्ट पे रहा। और 32वें बार में 32वें बार भी कौन आ जाएगा स्टार्ट पे? स्लो भी आ जाएगा। तो स्लो और फास्ट दोनों हम लोग देख सकते हैं कि 32 टाइम्स चल के कहां जा रहा है? स्टार्ट पे। मिलेगा",
+      "source": "caption",
+      "english_text": "Because it is a bicycle, it is a bicycle and after riding it 10 times it will come back to the same place. If you walk 10 times for the second time, you will come here again. Have walked 20 times. Even if you ride it 10 times for the third time, you will come back to the same place because it is a bicycle. So to say fast means, first of all, where did you come by walking two times? On start. After that it remained at the start for another 10 runs. It ran 20 times and remained at the start. It started 30 times and remained on start. And who will come to the start for the 32nd time? Slow will also come. So both slow and fast we can see where 32 times is going? On start. will get"
+    },
+    {
+      "start_time": 894.959,
+      "end_time": 928.389,
+      "text": "ही मिलेगा स्टार्ट पॉइंट पे। वहीं मिल सकता है। कैसे किए? मन से अपने कोई लिंक लिस्ट बना लीजिए। उसमें कोई भी साइकिल नंबर सोच लीजिए। कोई भी y सोच लीजिए। उस हिसाब से आपको x बनाना पड़ेगा। ये जो पूंछ है ये पूंछ मैथ्स के हिसाब से चलता है ना मेरे हिसाब से ना आपके हिसाब से। तो वैसे आपको बनाना पड़ेगा। देख लीजिए। इसका मतलब क्या होता है देखिए बहुत लोग क्या बोलते हैं ना। अब जो लोग इसको पढ़ाए हैं वो इसको ऐसे बताते हैं कि अगर जो लोग इसको पढ़ाए हैं ना वो इसको ऐसे बोलते हैं कि ये L1 है। ये साइकिल है और ये वाला चीज़ L2 था और जो ये वाला बात है वो था C - L2 तो लोग",
+      "source": "caption",
+      "english_text": "Will be available only at the start point. Can be found there. How did you do it? Make a link list of your own in your mind. Think of any cycle number in it. Think of any y. Accordingly you will have to make x. This tail works according to maths, neither according to me nor according to you. So you will have to make it anyway. Take a look. What does this mean, see what many people say. Now the people who have taught it speak of it as if it is L1. This is a bicycle and this one was L2 and this one was C - L2 so guys"
+    },
+    {
+      "start_time": 928.399,
+      "end_time": 962.87,
+      "text": "बोलने लगते हैं L1 = C - L2 ना। L1 = C - L2 कहां? यहां वही है। L1 32 है C - L2 आपका टू है। तो 32 = 2 थोड़ी है? ना, ना, ना। वो क्या है? l1 = सम nc + c - l2 ये तो 32 = 2 नहीं है। 32 = कुछ 3 * साइकिल लेंथ + 2 ऐसा है ये। समझे? इसको अगर आपको मैथमेटिकली लिखना है, उसका कोई जरूरत नहीं है। लेकिन, l1 मॉड = c - l2।",
+      "source": "caption",
+      "english_text": "They start saying L1 = C - L2. Where L1 = C – L2? Same here. L1 is 32 C - L2 is your two. So 32 = 2 is a little? No, no, no. What is that? l1 = even nc + c - l2 This is not 32 = 2. 32 = something like 3 * cycle length + 2 It's like this. Got it? If you have to write it mathematically, there is no need for that. But, l1 mod = c – l2."
+    },
+    {
+      "start_time": 962.88,
+      "end_time": 997.03,
+      "text": "फिर से सुनिए। L1 मतलब X. X मॉड C = X - सॉरी C - Y C - Y कितना था यहां पे? C - Y कितना था? टू। X कितना था? 32। हम क्या बोल रहे हैं? 32 मॉड 10 = 2 होने देखिए 2 = 2। ये मोड से कोई पढ़ाए सब बोल दिया कि नहीं नहीं ऐसा नहीं होता है। हम भी वही किया मेरा भी गलती है। बाकी सब लोग क्योंकि ये समझना मुश्किल होता है ना कि ऐसा क्यों होगा? अब सब लोग क्या बोलता है? ना ना एक काम करो कि इसको हटा दो और एल वन इक्वल टू अरे इसको क्यों हटा दो ऐसे ही थोड़ी हटा देंगे हटाने का कोई रीज़न होगा ना भाई रीज़न",
+      "source": "caption",
+      "english_text": "Listen again. L1 means How much was C-Y? To. How much was 32. What are we saying? See 32 mod 10 = 2 to be 2 = 2. It does not happen that someone should teach in this mode and say everything or no. We did the same thing, it's my fault too. Everyone else because it is difficult to understand why this would happen? What does everyone say now? No, do one thing, remove it and L one is equal to two, why remove it, we will remove it like this, will there be any reason to remove it?"
+    },
+    {
+      "start_time": 997.04,
+      "end_time": 1025.279,
+      "text": "है साइक्लिक है तो आप जितना भी ट्रेवल करेंगे तो आपका नोड पोजीशन बदल ले वगैरह नहीं लेकिन उसको बताए बिना बोले कि ना इसको हटा दो ऐसे थोड़ी मैथ्स में कुछ भी हट जाता है कुछ नहीं हटाना है पूरा मैथ्स करके देख लेना है आपका जो भी साइकिल लेंथ होगा उसी हिसाब से आपका पूछड़ी बनेगा और उसी हिसाब से आप मिल जाएंगे होप करते हैं कि समझ में आया हो बहुत मेहनत से सोचे हैं बहुत दिमाग लगा के सोचना पड़ा है तो चलिए इसको देखिए और कल से वापस अपने शेड्यूल में हम लोग आ जाएंगे चलिए।",
+      "source": "caption",
+      "english_text": "If it is cyclical, then no matter how much you travel, change your node position etc. but without telling him, remove it. Anything gets removed in such a few maths, nothing has to be removed. You have to do complete maths and see that whatever your cycle length is, your tail will be formed accordingly and you will meet accordingly. I hope you have understood that you have to think very hard, you have to think very carefully, so let's see this and from tomorrow we will be back in our schedule. Will come, let's go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

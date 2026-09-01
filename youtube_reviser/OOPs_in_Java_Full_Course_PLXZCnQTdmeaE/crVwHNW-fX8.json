@@ -1,0 +1,1010 @@
+{
+  "video_id": "crVwHNW-fX8",
+  "video_title": "AutoBoxing, Abstract classes & POJOs | Why only one public class in java file | Java Full Course #18",
+  "video_number": 7,
+  "chunks": [
+    {
+      "start_time": 0.08,
+      "end_time": 33.76,
+      "text": "हां जी। तो करें स्टार्ट। वेलकम बैक कोडर आर्मी हमारी इस जावा की सीरीज में और आज हम काफी इंटरेस्टिंग टॉपिक्स के बारे में बात करने वाले हैं। सबसे पहले तो हम एक इंटरव्यू क्वेश्चन देखेंगे कि पूरी की पूरी जावा की फाइल के अंदर एक ही पब्लिक क्लास क्यों होती है? और उस पब्लिक क्लास का नेम फाइल नेम के इक्वल क्यों होना चाहिए? ठीक है? इसके अलावा हम जावा की क्लासेस के इन डेप्थ में जाएंगे। हम समझेंगे कि इन अनबॉक्सिंग और ऑटो बॉक्सिंग क्या होती है? हम समझेंगे एब्स्ट्रैक्ट क्लासेस क्या होती है। हमने एब्स्ट्रैक्ट क्लासेस पहले भी पढ़ी है पर उसको थोड़ा और डेप्थ में जाके समझेंगे और हम समझेंगे पोजो क्लासेस क्या होती है। तो ये लेक्चर",
+      "source": "transcript_api",
+      "english_text": "Yes sir. So let's start. Welcome back Coder Army to our Java series and today we are going to talk about very interesting topics. First of all, we will see an interview question that why is there only one public class in an entire Java file? And why should the name of that public class be equal to the file name? Ok? Apart from this we will go in depth on Java classes. We will understand what is unboxing and auto boxing? We will understand what abstract classes are. We have already read about abstract classes but let us understand them in a little more depth and we will understand what Pozzo classes are. so this lecture"
+    },
+    {
+      "start_time": 32.32,
+      "end_time": 62.8,
+      "text": "देखने में आपको बहुत मजा आएगा क्योंकि आपकी क्लासेस की नॉलेज और ज्यादा अच्छी हो पाएगी इस लेक्चर के बाद में। तो चलो फटाफट इसे शुरू करते हैं। हां जी। तो देखो अगेन मैंने अपना खाली डेमो डॉट java करके एक फाइल बना रखी है। तो मैं ना यहां पे आपसे दो चीजों की बात करना चाहता हूं। ठीक है? सबसे पहली चीज यह कि व्हाई वन पब्लिक क्लास पब्लिक क्लास पर फाइल और दूसरी चीज यह व्हाई नेम",
+      "source": "transcript_api",
+      "english_text": "You will have a lot of fun watching because your knowledge of classes will become better after this lecture. So let's get started right away. Yes sir. So look again, I have created a file with my empty demo dot java. So I want to talk to you about two things here. Ok? The first thing is why one public class file on public class and the second thing is this why name"
+    },
+    {
+      "start_time": 59.68,
+      "end_time": 94.079,
+      "text": "ऑफ दैट पब्लिक क्लास शुड बी सेम एज फाइल नेम फाइल नेम इन दोनों चीजों के बारे में बात करना चाहता हूं। सबसे पहले प्रॉब्लम क्या है? अगर आपको प्रॉब्लम ही नहीं पता मैं बता देता हूं। हमारे पास फाइल का नाम है डेमो डॉट java। मैं कह रहा हूं इस फाइल में एक ही पब्लिक क्लास एग्ज़िस्ट कर सकती है जिसका नाम होगा डेमो। फाइल नेम सेम होगा क्लास नेम के। अगर मैं एक और फाइल अगर एक और क्लास बनाने की कोशिश करूं एक और पब्लिक क्लास लेट्स से पब्लिक क्लास सैंपल और अगर मैं ऐसे बनाने की कोशिश करूं तो देखो क्या होगा? जावा मुझे एक एरर देगा।",
+      "source": "transcript_api",
+      "english_text": "Of that public class should be same as file name file name I want to talk about these two things. First of all what is the problem? If you don't know the problem, I will tell you. We have the file name demo dot java. I am saying that only one public class can exist in this file whose name will be Demo. The file name will be the same as the class name. If I try to create another file, if I try to create another class, another public class, let's take a public class sample from Let's and if I try to create like this, see what will happen? Java will give me an error."
+    },
+    {
+      "start_time": 91.92,
+      "end_time": 126.32,
+      "text": "एरर क्या है? द पब्लिक टाइप सैंपल मस्ट बी डिफाइंड इन इट्स ओन फाइल। ये कहता है भाई यहां पे सैंपल नहीं आ सकती। ये पब्लिक फाइल है ना? पब्लिक क्लास है। तो इसको एक खुद की सैंपल फाइल में रखो। यहां पे नहीं कर सकते। हां, अगर मैं पब्लिक हटा दूं कोई दिक्कत नहीं है। मैं बहुत सारी क्लासेस रख सकता हूं जो नॉन पब्लिक है। पर एक ही पब्लिक क्लास हो सकती है पूरी की पूरी फाइल में। ये जावा कहता है और दूसरा इस फाइल का नाम बिल्कुल क्लास नेम के इक्वल होना चाहिए। अगर मैं इसका क्लास जो फाइल नेम है डेमो डॉट jवा और क्लास नेम कर दूं सैंपल तो देखो क्या होगा इसको सैंपल को हटा देते हैं क्योंकि नाम सेम हो जाएगा तो देखो जैसे ही मैंने इसको सेव किया मेरी",
+      "source": "transcript_api",
+      "english_text": "What is the error? The public type sample must be defined in its own file. It says brother, samples cannot come here. This is a public file, right? It is a public class. So put this in its own sample file. Can't do it here. Yes, if I remove public there is no problem. I can hold a lot of classes which are non public. But there can be only one public class in the entire file. It says Java and secondly the name of this file should be exactly equal to the class name. If I make its class which is the file name demo.java and name the class sample then see what will happen. Let's remove the sample because the name will be the same. So see as soon as I save it, my"
+    },
+    {
+      "start_time": 124.479,
+      "end_time": 157.599,
+      "text": "फाइल नेम भी अपने आप सैंपल डॉट jवा में कन्वर्ट हो गई। अगर मैं इसको वापस डेमो करके सेव करूं तो देखो फाइल नेम दोबारा डेमो डॉट jवा में कन्वर्ट हो गई। तो ये मुझे वो करने ही नहीं देगा। अगर मैं सिर्फ सेव ना करूं और सैंपल लिख के छोड़ दूं तो देखो मुझे एरर आ जाएगा। एरर क्या कहेगा? द पब्लिक टाइप सैंपल मस्ट बी डिफाइंड इन इट्स ओन फाइल। ठीक है? तो यहां पे ये मुझे ऐसा करना ही नहीं देगा। ये कहेगा भाई अपनी खुद की फाइल में डिफाइन करो। अगर यहां पे डिफाइन करना है तो दोनों का नाम सेम होना चाहिए। अब ऐसा क्यों? ये दो रूल्स क्यों हैं? इसको समझते हैं। देखो सबसे पहले हमें समझना पड़ेगा कि जेवीएम का रोल क्या होता",
+      "source": "transcript_api",
+      "english_text": "The file name was also automatically converted to sample.java. If I go back to demo and save it, the file name gets converted back to demo.java. So it won't let me do that. If I don't just save it and leave the sample, I will get an error. What will the error say? The public type sample must be defined in its own file. Ok? So here it won't let me do that. It will say brother, define it in your own file. If it is to be defined here then both names should be same. Now why so? Why are there these two rules? Let's understand this. Look, first of all we have to understand what is the role of JVM."
+    },
+    {
+      "start_time": 155.599,
+      "end_time": 188.879,
+      "text": "था? हमने पढ़ा था कि जेवीएम का काम होता है हमारे कोड को रन करना। ठीक है? अब हमारा कोड जेवीएम रन कैसे करता है? हमने समझा है कि हमारे पूरे के पूरे कोड में एक मेन फंक्शन होता है। ठीक है? और वही फंक्शन एग्जीक्यूट होता है। उस फंक्शन के अलावा कुछ भी एग्जीक्यूट नहीं होता। तो अगर आपने बहुत सारे हजारों मेथड्स भी बना रखे हैं। अगर आप उनको मेन के अंदर कॉल नहीं करोगे तो वो कभी एग्जीक्यूट होंगे ही नहीं। वो कभी कॉल ही नहीं होंगे। है ना? तो सारा का सारा कोड जो एंट्री पॉइंट है हमारे पूरे के पूरे प्रोग्राम का वो है मेन फंक्शन। ओके। तो जेवीएम को किसी तरह इस मेन फंक्शन को एग्जीक्यूट करने की जरूरत होती है। है ना? अब हमने समझा था कि",
+      "source": "transcript_api",
+      "english_text": "was? We had read that the job of JVM is to run our code. Ok? Now how does our code run in JVM? We have understood that our entire code has one main function. Ok? And the same function is executed. Apart from that function nothing is executed. So if you have created many thousands of methods. If you don't call them inside main they will never execute. Those calls will never happen. Isn't it? So all the code which is the entry point of our entire program is the main function. Ok. So JVM needs to execute this main function somehow. Isn't it? Now we understood that"
+    },
+    {
+      "start_time": 187.04,
+      "end_time": 214.159,
+      "text": "मेन फंक्शन स्टैटिक क्यों होना चाहिए? इसलिए होना चाहिए ताकि जेवीएम को इस डेमो क्लास का ऑब्जेक्ट ना बनाना पड़े इस मेन फंक्शन को कॉल करने के लिए। है ना? वो डायरेक्टली डेमो डॉट मेन ऐसे करके कॉल कर पाए। इसलिए हमने क्या किया? मेन को स्टैटिक कर दिया। ओके? ये तो हमने समझ लिया था। अब उसको पब्लिक क्यों होना चाहिए भाई? ऑब्वियस है ना? कि अगर हमारा मेन फंक्शन पब्लिक नहीं हुआ तो जेवीएम को एक्सेसिबल कैसे होगा? पब्लिक जो मेथड्स होते हैं वो हर जगह एक्सेसिबल होते हैं।",
+      "source": "transcript_api",
+      "english_text": "Why should main function be static? This should be done so that JVM does not have to create an object of this demo class to call this main function. Isn't it? They were able to call directly through demo.main like this. So what did we do? Made the main static. Ok? We had understood this. Now why should it go public brother? Obvious right? If our main function is not public then how will it be accessible to JVM? Methods that are public are accessible everywhere."
+    },
+    {
+      "start_time": 212.08,
+      "end_time": 244.799,
+      "text": "इनफैक्ट पैकेज के बाहर भी। तो ताकि जेवीएम उसे एक्सेस कर पाए। इसको पब्लिक भी होना चाहिए। ओके? बहुत बढ़िया। अब हम समझते हैं कि हमारी एक ही फाइल क्यों एक्सिस्ट करती है। अब आपको अच्छे से समझ आएगा। इमेजिन करो कि एक ही जावा क्लास में हजारों फाइल्स हो सकती हैं। लेट्स से यहां पे मैं एक और फाइल कर सकता हूं। सैंपल ठीक है? एक और क्लास कर सकता हूं तो सैंपल टू समथिंग लाइक दैट। मैं बहुत सारी क्लासेस बना सकता हूं। अगर मान लो जावा अलाउ करता कि मैं एक से ज्यादा पब्लिक क्लास बनाता तो मैं इसको भी पब्लिक बना सकता था। इसको भी पब्लिक बना सकता था। अभी नहीं बना पाऊंगा। अभी तो",
+      "source": "transcript_api",
+      "english_text": "Even outside the infact package. So that JVM can access it. It should also be public. Ok? very nice. Now we understand why our only file exists. Now you will understand well. Imagine that a single Java class can contain thousands of files. Let's say I can do another file here. Is the sample ok? If I can do another class then sample something like that. I can create many classes. Suppose, if Java allows that I create more than one public class, then I could make this also public. Could have made this also public. I won't be able to make it now. right now"
+    },
+    {
+      "start_time": 243.04,
+      "end_time": 277.52,
+      "text": "एरर आएगा। बट लेट से मैं बना पाता। कोई एरर नहीं आता। तो प्रॉब्लम ये होती कि जावा को कैसे पता लगता या जेवीएम को कैसे पता लगता? इस पूरी फाइल में ये जो मेरा मेन फंक्शन है वो किस क्लास के अंदर एक्सिस्ट करता है? वो डेमो के अंदर भी हो सकता है, सैंपल के अंदर भी हो सकता है, सैंपल टू के अंदर भी हो सकता है। तो मैं किसे कॉल करूं? मैं डेमो डॉट मेन करूं, सैंपल डॉट मेन करूं या सैंपल 2 डॉट मेन करूं। तो जेवीएम को ये कंफ्यूजन कभी ना हो। जावा कहता है भाई सिंपल रखते हैं। एक फाइल के अंदर जिस फाइल को आप रन कर रहे हो उसके अंदर एक ही पब्लिक क्लास होगी। लेट्स से पब्लिक क्लास डेमो बाकी कोई भी पब्लिक",
+      "source": "transcript_api",
+      "english_text": "An error will occur. But late I could have made it. No error occurs. So the problem would be that how would Java know or how would JVM know? In this entire file, my main function exists inside which class? It can be inside demo, can be inside sample, can be inside sample two. So who do I call? Should I do demo dot main, sample dot main or sample 2 dot main. So JVM should never have this confusion. Java says brother let's keep it simple. There will be only one public class inside the file you are running. Let's Public Class Demo Any Other Public"
+    },
+    {
+      "start_time": 275.28,
+      "end_time": 308.639,
+      "text": "क्लास हो ही नहीं सकती। अब अगर कोई भी पब्लिक क्लास नहीं होगी और एक ही पब्लिक क्लास होगी तो क्या होगा? इस जेवीएम को यही क्लास एक्सेसिबल होगी। क्योंकि पब्लिक क्लास मतलब इस पैकेज के बाहर एक्सेसिबल है और जेवीएम तो इस पैकेज के बाहर होगा जहां पे भी ये क्लास लिखी होगी। है ना? तो जेवीएम को ये फाइल एक्सेसिबल हो इसलिए इसका पब्लिक होना जरूरी है। और इसी का पब्लिक होना जरूरी है और बाकी किसी का भी नहीं ताकि जेवीएम को कंफ्यूजन ही ना हो कि इस पूरी की पूरी क्लास में मुझे किसका मेन मेथड किसके अंदर मेन मेथड एक्सिस्ट करता होगा। ठीक है? तो आई होप ये तो समझ गए कि भाई व्हाई वन पब्लिक क्लास पर फाइल। अब",
+      "source": "transcript_api",
+      "english_text": "There can be no class. Now what will happen if there is no public class and there is only one public class? This class will be accessible to this JVM. Because public class means it is accessible outside this package and JVM will be outside this package wherever this class is written. Isn't it? So for this file to be accessible to JVM, it must be public. And it is important for this to be public and not for anyone else so that JVM does not get confused as to whose main method exists in whose entire class. Ok? So I hope you understood that brother why file on one public class. now"
+    },
+    {
+      "start_time": 305.12,
+      "end_time": 338.96,
+      "text": "देखो अब ऑब्वियसली जेवीएम कैसे किसी फाइल को लोड करेगा? कैसे किसी क्लास को मेमोरी में लोड करेगा? भाई सिंपल रखते हैं ना वो ये देखेगा कि फाइल का नाम क्या है? अगर फाइल का नाम है डेमो डॉट java तो जेवीएम के लिए कितना सिंपल हो जाएगा अगर वो सीधा जावा सीधा डेमो फाइल को लोड कर पाए। है ना? यानी कि हमारी जो पब्लिक क्लास है डेमो उसका नाम अगर बिल्कुल सेम हो जाए फाइल के नेम के हिसाब से तो जेवीएम को क्लास को लोड करने में कोई प्रॉब्लम ही नहीं होगी। तो जेवीएम क्या करेगा? सीधा देखेगा फाइल का नाम क्या है? फाइल का नाम है डेमो। वो सीधा डेमो डॉट जावा क्लास में लोड कर देगा। अपने सॉरी मेमोरी में लोड कर",
+      "source": "transcript_api",
+      "english_text": "See now how will JVM obviously load a file? How to load a class into memory? Brother, let's keep it simple, he will see what is the name of the file? If the name of the file is demo.java then how simple it will be for JVM if it can directly load the Java demo file. Isn't it? That is, if the name of our public class Demo is exactly the same as the name of the file, then JVM will not have any problem in loading the class. So what will JVM do? Will directly see what is the name of the file? The name of the file is demo. That demo will load it directly into the Dot Java class. load it into your sorry memory"
+    },
+    {
+      "start_time": 336.88,
+      "end_time": 371.6,
+      "text": "देगा। और लोड करेगा तो उसका वो सीधा क्या कर सकता है? मेन मेथड कॉल कर सकता है। कैसे कर सकता है? वो सीधा लिखेगा भैया डेमो डॉट मेन। वो क्लास नेम डॉट ऑपरेटर और मेथड नेम। इस तरह करके मेन मेथड को कॉल कर पाएगा। तो आई होप आप समझ गए कि जावा इतना स्ट्रिक्ट रूल्स क्यों अप्लाई करता है। वो इसलिए अप्लाई करता है ताकि जेवीएम को वो क्लास फाइंड करने में कोई प्रॉब्लम ही ना हो जिसके अंदर मेन मेथड लिखा है जिसको हमें रन करना है। ठीक है? कैसे? वो कहेगा भाई एक ही पब्लिक क्लास बनाओ ताकि जेवीएम के पास वही क्लास एक्सेसिबल हो। दूसरा उस फाइल उस क्लास का नाम बिल्कुल सेम कर दो फाइल नेम के हिसाब से। ताकि अगेन जेवीएम",
+      "source": "transcript_api",
+      "english_text": "Will give. And if he loads it, what can he do with it? Can call main method. How can? He will directly write bhaiya demo dot main. That class name dot operator and method name. By doing this you will be able to call the main method. So I hope you understand why Java applies such strict rules. It is applied so that JVM does not have any problem in finding the class in which the main method is written which we have to run. Ok? How? He will say, brother, create only one public class so that the same class is accessible to JVM. Secondly, make the name of that file and class exactly the same as per the file name. So that again JVM"
+    },
+    {
+      "start_time": 369.84,
+      "end_time": 398.72,
+      "text": "सीधा फाइल नेम के हिसाब से समझ जाए कि कौन सी क्लास होगी पब्लिक जिसके अंदर मेरा मेन मेथड होगा। ठीक है? आई होप आपको ये समझ आ गया होगा। पर अभी कई बच्चों का ना ये डाउट होगा कि भैया अच्छा एक पब्लिक एक फाइल के अंदर एक पब्लिक क्लास हो सकती है। बट लेट्स से मेरे एक एप्लीकेशन में बहुत सारी फाइल्स हो सकती हैं। अभी जैसे मैंने डेमो डॉट java बनाई। लेट्स से मैं एक और डेमो 2 डॉट jवा बनाऊं। एक और डेमो 3 डॉट java बनाऊं। उन तीनों में एक-एक पब्लिक क्लास तो हो ही सकती है। यानी कि टोटल तीन पब्लिक क्लास हो गई। और उन तीनों में मेन फंक्शन तो किसी एक ही में एग्ज़िस्ट करेगा।",
+      "source": "transcript_api",
+      "english_text": "Based on the file name, I can understand which class will be public inside which my main method will be. Ok? I hope you have understood this. But now many children will have this doubt that brother, okay, there can be a public class inside a public file. But let's say I can have many files in one application. Just like I created demo dot java. Let me create another demo 2 dot jva. Let me make another demo 3 dot java. There may be at least one public class among those three. That means there were three public classes in total. And among those three, the main function will exist in only one."
+    },
+    {
+      "start_time": 397.44,
+      "end_time": 429.84,
+      "text": "है ना? तीनों में तो आप मेन लिखोगे ही नहीं। अब अगर आप पूरी की पूरी एक एप्लीकेशन बना रहे हो। तो लेट से आपने डेमो के अंदर तो मेन लिखा हुआ है डेमो के अंदर। पर डेमो टू हो या डेमो थ्री जो फाइल होगी उसके अंदर मेन नहीं है। अब जेवीएम को कैसे पता लगेगा कि मुझे कौन सी फाइल के अंदर जाना है और कौन सी पब्लिक क्लास के अंदर मुझे मेन मिलेगा। है ना? ये तो बहुत सिंपल है। फर्स्ट थॉट प्रिंसिपल अप्लाई करो। आपने एक एप्लीकेशन लिखी उसमें तीन क्या हो सकता है? 100 फाइल्स हो। ठीक है? अलग-अलग जगहों पे और उन 100 फाइल्स में किसी एक ही फाइल के अंदर किसी एक पब्लिक क्लास के अंदर मेन फंक्शन होगा। ऑब्वियसली एक फाइल के अंदर एक ही पब्लिक क्लास हो",
+      "source": "transcript_api",
+      "english_text": "isn't it? You will not write main in all three. Now if you are creating a complete application. So late, main is written inside the demo. But be it Demo 2 or Demo 3, there is no main file inside it. Now how will JVM know which file I have to go inside and inside which public class I will get main. Isn't it? This is very simple. Apply the first thought principle. You wrote an application, what three things can happen in it? There are 100 files. Ok? At different places and in those 100 files, there will be a main function inside a single public class in the same file. Obviously there should be only one public class in one file."
+    },
+    {
+      "start_time": 427.28,
+      "end_time": 461.28,
+      "text": "सकती है। उसके अंदर किसी के अंदर मेन मेथड होगा। पर जिसके भी अंदर मेन मेथड होगा उसी फाइल को तो जाकर के हम यहां से रन करते हैं। राइट? आप सोचो आप किसी भी रैंडम फाइल को रन नहीं करते। जब हम डेमो 2 डॉट जावा डेमो 3 डॉट जावा भी बनाते थे और उसको इंपोर्ट भी करते थे डेमो में। है ना? तो आप क्या करते थे? जहां पे आपका मेन मेथड एक्सिस्ट करता है। वहीं पे आप सारी फाइल्स इंपोर्ट करते हो। आप कहते हो भाई हर पैकेज से जो भी मुझे चाहिए मैं यहां पे इंपोर्ट कर लूंगा। और रन करूंगा मैं इसी फाइल को क्योंकि मेरा मेन फंक्शन यहीं पे एग्जिस्ट करता है। तो मैं अगर अगर मान लो मैं अ टर्मिनल के थ्रू रन करता तो मैं कैसे",
+      "source": "transcript_api",
+      "english_text": "Can. There will be a main method inside someone. But whichever file contains the main method, we go to that file and run it from here. Right? Imagine you don't run any random file. When we used to create demo 2.java, demo 3.java and also import them into demo. Isn't it? So what did you do? Where your main method exists. That's where you import all the files. You say brother, whatever I want from every package, I will import it here. And I will run this file because my main function exists here. So if let's say I run through a terminal, how do I"
+    },
+    {
+      "start_time": 459.44,
+      "end_time": 492.4,
+      "text": "लिखता? मैं लिखता जावा सी डेमो डॉट जावा यानी कि पहले मैंने जावा सी को सॉरी डेमो वाले फाइल को कंपाइल किया उसके बाद जावा डेमो फिर मैं रन करता डेमो को और मेन फंक्शन से मेरा रन शुरू होता उसके बाद कभी यहां पे कोई ऑब्जेक्ट डिक्लेअर हो रहा होता कभी कोई और मेथड कॉल हो रहा होता और मैं इधर-उधर जाता रहता पर मेरा मेन फंक्शन से ही तो कोड एग्जीक्यूट होना शुरू होता राइट तो एंट्री पॉइंट तो अभी भी यही है तो इसका मतलब ये जेवीएम को कैसे पता ऐसे पता क्योंकि हम उसी फाइल को जाकर के रन करते हैं। ठीक है? आई होप आपको अच्छे से समझ आ गया होगा। ये बहुत ही इंपॉर्टेंट इंटरव्यू क्वेश्चन है। कई बार इंटरव्यूज में पूछा",
+      "source": "transcript_api",
+      "english_text": "write? I used to write Java C demo dot java i.e. first I compiled the file containing the sorry demo to Java C, after that I would run the demo and then my run would start from the main function, after that sometimes some object would be declared here, sometimes some other method would be called and I would keep going here and there but my code would start executing from the main function itself. Right, the entry point is still the same, so it means how can it tell the JVM. The address is known because we go to the same file and run it. Ok? I hope you have understood well. This is a very important interview question. Asked many times in interviews"
+    },
+    {
+      "start_time": 490.479,
+      "end_time": 525.44,
+      "text": "जाता है। पर अब आपको इसका अच्छे से आईडिया लग गया होगा। तो अब बढ़ते हैं आगे। हां जी। तो अब हम बढ़ रहे हैं अपने नेक्स्ट टॉपिक की तरफ। हमें समझना पड़ेगा ऑटो बॉक्सिंग और अनबॉक्सिंग क्या होती है? अब ऑब्वियसली अगर हम जावा की क्लासेस को समझना चाहते हैं तो सबसे पहले ना ये समझना बहुत जरूरी है। इसको समझने के लिए मैं आपको बताता हूं कि हमने जावा में डेटा टाइप्स पढ़े थे। हमने कहा था भ जावा की पूरी की पूरी डेटा टाइप्स की दुनिया दो भागों में डिवाइड होती है। पूरी की पूरी दुनिया किस दो भागों में भैया? प्रिमिटिव्स और नॉन प्रिमिटिव्स। ये तो हमने बहुत बार पढ़",
+      "source": "transcript_api",
+      "english_text": "Goes. But now you must have got a good idea of ​​it. So now let's move ahead. Yes sir. So now we are moving towards our next topic. We have to understand what is auto boxing and unboxing? Now obviously if we want to understand the classes of Java then it is very important to understand them first. To understand this, let me tell you that we studied data types in Java. We had said that the entire world of data types of Java is divided into two parts. The whole world is divided into two parts, brother? Primitives and non-primitives. We have read this many times"
+    },
+    {
+      "start_time": 522.479,
+      "end_time": 548.32,
+      "text": "लिया है। नॉन प्रिमिटिव्स। अच्छा तो हमारे प्रिमिटिव्स में हमारे डेटा टाइप्स आते होंगे। जैसे कि हमारा आता होगा इंट हमारा आता होगा लॉन्ग हमारा आता होगा शॉर्ट वगैरह-वगैरह। अब ऐसे ही एक होता होगा फ्लोट है ना डबल कैर बुलियन बहुत सारे। बहुत सारे डेटा टाइप्स हमारे यहां आते हैं जो जो हमने सारे पढ़ रखे हैं। ओके? और नॉन प्रिमिटिव्स में मैंने आपको क्या बोला था?",
+      "source": "transcript_api",
+      "english_text": "Have taken. Non primitives. Well, our data types must be coming in our primitives. Like ours would come int, ours would come long, ours would come short etc. Now there must be a lot of double care bullion, isn't there a float like this? Many data types come to us which we have read about all. Ok? And what did I tell you about non-primitives?"
+    },
+    {
+      "start_time": 546.88,
+      "end_time": 581.519,
+      "text": "सारे ऑब्जेक्ट्स आ जाते हैं। सारे ऑब्जेक्ट्स या फिर जिसको हम बोलते हैं यूजर डिफाइंड डेटा टाइप्स। यूजर डिफाइंड डेटा टाइप्स। हमारे ये आ जाते हैं। ओके बहुत बढ़िया। अब इसमें ना एक और चीज है। जावा हमें स्पेशल क्लासेस देता है इन डेटा टाइप्स की रैपर क्लासेस। बेसिकली कहने का मतलब ये जावा कहता है अगर तुम्हारे पास इंट है ना तो मैं एक और क्लास देता हूं इंटीजर क्लास। अभी ऑब्वियसली क्लास है तो हमारे नॉन प्रिमिटिव्स में आएगी। पर जो इंट करता है वो इंटीजर भी कर सकता है प्लस एक्स्ट्रा काम भी कर सकता है। सेम जावा",
+      "source": "transcript_api",
+      "english_text": "All the objects come. All objects or what we call user defined data types. User Defined Data Types. Ours comes here. Okay, great. Now there is one more thing in this. Java gives us special classes, wrapper classes for these data types. Basically it means that Java says if you have int then I give another class, integer class. Now it is obviously a class so it will come in our non-primitives. But the one who does int can also do integer and plus extra work. beans java"
+    },
+    {
+      "start_time": 578.32,
+      "end_time": 611.12,
+      "text": "कहता है कि अगर आपके पास लॉन्ग है तो मैं एक लॉन्ग क्लास भी देता हूं। शॉर्ट है तो मैं एक शॉर्ट क्लास भी देता हूं। फ्लोट है तो मैं फ्लोट करके एक क्लास भी देता हूं। सेम डबल की एक क्लास देता हूं। सेम कैरेक्टर की एक क्लास देता हूं। कैरेक्टर कहता है वो उसको और वो बुलियन की भी एक क्लास देता है और इसमें जो भी अगर मैंने मिस कर दिया होगा जैसे बाइट है तो बाइट की भी एक क्लास होगी वगैरह-वगैरह तो बेसिकली हर प्रिमिटिव्स की वो एक नॉन प्रिमिटिव क्लास देता है जिसको उसको रैपर क्लासेस बोलते हैं। जैसे इंट का रैपर है इंटीजर",
+      "source": "transcript_api",
+      "english_text": "Says if you have long then I also give a long class. If it is short then I also give a short class. If there is a float, I also give a class by floating. I give a class of same double. I give a class of same character. The character says that he gives a class for it and also for Boolean and whatever I have missed in it, like if it is a byte, then byte will also have a class, etc. So basically, he gives a non-primitive class for every primitive, which is called wrapper classes. Like integer is wrapper of int"
+    },
+    {
+      "start_time": 608.24,
+      "end_time": 641.92,
+      "text": "लॉन्ग का रैपर है लॉन्ग। कुछ इस तरीके से। ठीक है? तो भैया ये रैपर क्लासेस एग्ज़िस्ट क्यों करती है? ये थोड़ी देर में समझते हैं। पहले मैं आपको एक चीज समझाना चाहता हूं। अगर ये रैपर क्लासेस हैं तो आखिर क्लासेस ही यानी कि इनके भी ऑब्जेक्ट क्रिएट हो सकते होंगे। तो क्या फर्क होता होगा एक नॉर्मल इंट में? जब मैं ऐसे लिखता था इंट x = 10 तो यहां पे क्या होता था? मैं आपको समझाया था कि एक x नाम का कंटेनर मेमोरी में स्टोर हो जाएगा जिसका सॉरी मेमोरी में बन जाएगा जिसका नाम होगा x उसके अंदर वैल्यू होगी 10। ये हमने पढ़ा है। पर अगर एक क्लास है इंटीजर क्लास",
+      "source": "transcript_api",
+      "english_text": "Long is the rapper of Long. Something like this. Ok? So why do these rapper classes exist? They will understand this after some time. First I want to explain one thing to you. If these are wrapper classes then after all they are classes i.e. their objects can also be created. So what would be the difference in a normal int? When I used to write int x = 10, what would happen here? I had explained to you that a container named x will be stored in the memory, whose name will be x and the value inside it will be 10. We have read this. But if one class is integer class"
+    },
+    {
+      "start_time": 640.24,
+      "end_time": 672.399,
+      "text": "उसमें मेरे को एक वेरिएबल डिक्लेअर करना है। लेट्स से x तो मैं सीधा नहीं कर सकता। मैं न्यू ऑपरेटर लगाता हूं कोई भी क्लास के ऑब्जेक्ट बनाने के लिए। तो मैं यहां लिखता न्यू इंटीजर जैसे अभी तक हमने पढ़ा है हम क्लासेस का ऑब्जेक्ट बनाते हैं और लेट्स से यहां पे मैं वैल्यू देता उसके कंस्ट्रक्टर में 10 ठीक है तो मैं इमेजिन कर रहा हूं ऐसा मैं कॉनंसेप्चुअली सोच रहा हूं होगा ये कि हमारी हीप मेमोरी होगी वहां पे एक ब्लॉक ऑफ मेमोरी असाइन हो जाएगी और ये हमारी स्टक मेमोरी होगी यहां पे एक एक्स नाम का रेफरेंस वेरिएबल हो जाएगा और ये पॉइंट करेगा इस ब्लॉक ऑफ",
+      "source": "transcript_api",
+      "english_text": "I have to declare a variable in it. Let's say x so I can't straighten it. I use new operator to create objects of any class. So I write new integer here, like we have read till now, we create objects of classes and let's give the value here in its constructor as 10. Okay, so I am imagining this, I am thinking conceptually, this will be our heap memory, there will be a block of memory assigned there and this will be our stuck memory, here there will be a reference variable named X and it will point to this block of"
+    },
+    {
+      "start_time": 669.68,
+      "end_time": 702.56,
+      "text": "मेमोरी में और इस ब्लॉक ऑफ मेमोरी में हमारे पास स्टोर होगा 10 कुछ इस तरीके से तो ये फर्क है इंट x = 10 में और इंटिजर x = न्यू इंटीजर 10 में। यहां पे तो भाई सीधा स्टैक मेमोरी में कंटेनर बन गया होगा और यहां पे क्या हुआ होगा? यहां पे एक रेफरेंस वेरिएबल होगा हमारी स्टक मेमोरी के अंदर। ये हमारी स्टक होगी और ये हमारी हीप होगी और हीप मेमोरी के अंदर एक्चुअल ऑब्जेक्ट क्रिएट होगा और x उसे पॉइंट करता होगा। यानी कि अगर मुझे वैल्यू चाहिए होगी तो मैं x डॉट कुछ वैल्यू या कुछ भी करके इसको निकाल सकता हूं। मैं अभी सोच रहा हूं। मुझे नहीं पता ऐसा सिंटेक्स है या",
+      "source": "transcript_api",
+      "english_text": "In memory and in this block of memory we will store 10 in something like this so this is the difference between int x = 10 and integer x = new integer 10. Here brother, the stack must have directly become a container in the memory and what would have happened here? Here there will be a reference variable inside our stuck memory. This will be our stack and this will be our heap and the actual object will be created inside the heap memory and x will point to it. That means if I want a value then I can find it by adding x dot some value or anything. I am thinking right now. I don't know whether there is such a syntax or"
+    },
+    {
+      "start_time": 701.2,
+      "end_time": 734.56,
+      "text": "नहीं है। अभी मैं इमेजिन कर रहा हूं कि अगर ऑब्जेक्ट है तो ये सब होता होगा। सेम गोज़ फॉर लॉन्ग, शॉर्ट, फ्लोट, डबल, कैरेक्टर, बुलियन या जो भी है। है ना? जो भी मैंने मिस्ट्री कर दी है वो सब भी। है ना? तो ये तो ऑब्वियस है ना कि ऐसा तो होता ही होगा। इसका मतलब अगर मैं इमेजिन करूं कि कंसेप्चुअल व्यू इस क्लास इंटीजर का कैसे दिखता होगा? तो कुछ ऐसा होता होगा ना हमारी एक इंटीजर क्लास बना रखी होगी जावा ने अंदर से। और उसके अंदर क्या-क्या डाल रखा होगा? उसके अंदर सबसे पहले होगी एक इंट वैल्यू। ठीक है? जो भी मैं यहां पे बेसिकली स्टोर करने वाला हूं। जैसे 10",
+      "source": "transcript_api",
+      "english_text": "It is not. अभी मैं इमेजिन कर रहा हूं कि अगर ऑब्जेक्ट है तो ये सब होता होगा। सेम गोज़ फॉर लॉन्ग, शॉर्ट, फ्लोट, डबल, कैरेक्टर, बुलियन या जो भी है। Isn't it? जो भी मैंने मिस्ट्री कर दी है वो सब भी। Isn't it? तो ये तो ऑब्वियस है ना कि ऐसा तो होता ही होगा। इसका मतलब अगर मैं इमेजिन करूं कि कंसेप्चुअल व्यू इस क्लास इंटीजर का कैसे दिखता होगा? तो कुछ ऐसा होता होगा ना हमारी एक इंटीजर क्लास बना रखी होगी जावा ने अंदर से। और उसके अंदर क्या-क्या डाल रखा होगा? उसके अंदर सबसे पहले होगी एक इंट वैल्यू। Ok? जो भी मैं यहां पे बेसिकली स्टोर करने वाला हूं। जैसे 10"
+    },
+    {
+      "start_time": 733.12,
+      "end_time": 766.32,
+      "text": "स्टोर करूंगा तो यहां पे उसका नाम हो गया वैल्यू। ये बेसिक इंटीजर टाइप की ही होगी। ठीक है? क्योंकि इंटीजर क्लास अंदर से तो इंट टाइप को ही स्टोर करेगा ना। तो ये प्रिमिटिव इंट टाइप की ही होगी। इसके अलावा होते होंगे कुछ कंस्ट्रक्टर्स है ना? और इसके अलावा होते होंगे कुछ मेथड्स। ये मेरा कॉनंसेप्चुअल व्यू है कि भैया ऐसे तो जावा ने कुछ किया होगा अंदर से। कुछ तो किया होगा। अभी समझेंगे क्या किया होगा। पर ये एक कॉनंसेप्चुअल व्यू है। ठीक है? इसको थोड़ा और ब्रॉड करेंगे हम धीरे-धीरे। सबसे पहले अब समझते हैं कि",
+      "source": "transcript_api",
+      "english_text": "स्टोर करूंगा तो यहां पे उसका नाम हो गया वैल्यू। ये बेसिक इंटीजर टाइप की ही होगी। Ok? क्योंकि इंटीजर क्लास अंदर से तो इंट टाइप को ही स्टोर करेगा ना। तो ये प्रिमिटिव इंट टाइप की ही होगी। इसके अलावा होते होंगे कुछ कंस्ट्रक्टर्स है ना? और इसके अलावा होते होंगे कुछ मेथड्स। ये मेरा कॉनंसेप्चुअल व्यू है कि भैया ऐसे तो जावा ने कुछ किया होगा अंदर से। Something must have been done. अभी समझेंगे क्या किया होगा। पर ये एक कॉनंसेप्चुअल व्यू है। Ok? इसको थोड़ा और ब्रॉड करेंगे हम धीरे-धीरे। सबसे पहले अब समझते हैं कि"
+    },
+    {
+      "start_time": 763.519,
+      "end_time": 797.279,
+      "text": "रैपर क्लासेस एग्जिस्ट ही क्यों करती हैं? अगर हमारे पास इंट था तो हमें इंटिजर की जरूरत क्यों पड़ी? सेम गोज़ फॉर एवरीथिंग। अगर हमारे पास फ्लोट था तो भैया फ्लोट की जरूरत क्यों पड़ी? एंड सो ऑन। बहुत सारी चीजें हैं। ठीक है? ओके। देखो रैपर क्लासेस एग्ज़िस्ट होने का रीज़न। सबसे पहले मैं लिख देता हूं कि ये है हमारी प्रिमिटिव क्लासेस। इसको मैं बोलता हूं प्रिमिटिव्स और ये है हमारी रैपर्स। उसके रैपर्स नॉन प्रिमिटिव्स। ठीक है? ओके। तो",
+      "source": "transcript_api",
+      "english_text": "Why do wrapper classes exist? If we had int then why did we need integers? Same Goes for Everything. If we had a float then why was there a need for a float? And so on. There are a lot of things. Ok? Ok. See the reason wrapper classes exist. First of all I write that these are our primitive classes. I call these primitives and these are our rappers. Its wrappers non primitives. Ok? Ok. so"
+    },
+    {
+      "start_time": 794.88,
+      "end_time": 829.04,
+      "text": "सबसे पहले हमारे रैपर क्लासेस एक्सिस्ट होने का रीजन बस एक है कि बहुत सारे जावा में ऐसी चीजें हैं जैसे जावा का कलेक्शन फ्रेमवर्क जो भी हम आगे पढ़ेंगे। ठीक है? वो सिर्फ क्लासेस से डील करता है। ऑब्जेक्ट से डील करता है। वो प्रिमिटिव से डील ही नहीं करता। कलेक्शन फ्रेमवर्क में क्या-क्या आता है? जैसे आता है एरे लिस्ट। ये हम आगे पढ़ेंगे क्या होता है? लिंक लिस्ट। बहुत सारी चीजें आती हैं। तो ये सब जो एरे लिस्ट होती है, लिंक लिस्ट होती है, यह सब ना अपने क्लासेस पे ही वर्क कर सकती हैं। इंटीजर, फ्लोट ये कभी भी प्रिमिटिव डेटा टाइप पे वर्क करने के लिए",
+      "source": "transcript_api",
+      "english_text": "The reason our wrapper classes exist in the first place is simply that a lot of Java has things like Java's collection framework which we'll read about later. Ok? He only deals with classes. Deals with objects. He doesn't deal with primitives at all. What is included in the collection framework? Like array list comes. We will read further what happens? Link list. A lot of things come up. So all these array lists, linked lists, all these can work on their classes only. Integer, Float these primitive data types to work with anytime"
+    },
+    {
+      "start_time": 825.76,
+      "end_time": 859.76,
+      "text": "बनी ही नहीं है। ओके? दूसरा क्योंकि जावा एक ऑब्जेक्ट ओरिएंटेड लैंग्वेज है। तो जावा को चाहिए कि हर प्रिमिटिव के एक सब्स्टट्यूटेबल नॉन प्रिमिटिव क्लास होनी चाहिए। जैसे इंट है तो उसका एक इंटीजर क्लास होनी चाहिए। फ्लोट है तो फ्लोटिंग फ्लोट क्लास होनी चाहिए। क्योंकि क्लासेस हमें बहुत सारी चीजें प्रोवाइड करती है। उसके अंदर इंटीजर के अंदर आप एक वैल्यू तो डाल ही सकते हो। पर क्योंकि जैसे मैंने देखा अगर ये क्लास है तो इसके अंदर कुछ मेथड्स भी होंगे। मेथड्स और वो मेथड्स हमें कुछ चीजें प्रोवाइड करते होंगे। कुछ बेनिफिट प्रोवाइड करते होंगे। तो जावा ने रैपर क्लासेस बना रखी हैं। ओके? ठीक है?",
+      "source": "transcript_api",
+      "english_text": "It has not been made. Ok? Second because Java is an object oriented language. So Java requires that every primitive must have a substitutable non-primitive class. Like int, it should have an integer class. If it is a float then it should be of floating class. Because classes provide us many things. You can enter a value inside it as integer. But because as I see, if it is a class then there will be some methods inside it. Methods and those methods must provide us some things. Must be providing some benefits. So Java has created wrapper classes. Ok? Ok?"
+    },
+    {
+      "start_time": 857.519,
+      "end_time": 891.199,
+      "text": "अगर आप कहते हो कि भैया रैपर क्लासेस होना जरूरी है क्योंकि कई सारे कलेक्शन, फ्रेमवर्क्स और भी बहुत सारी चीजें रैपर क्लासेस ही यूज़ करती हैं और प्रिमिटिव्स यूज़ नहीं करती। तो फिर प्रिमिटिव क्यों एक्सिस्ट करते हैं आज तक? बिल्कुल सही क्वेश्चन है कि अगर रैपर क्लासेस है तो प्रिमिटिव्स की तो जरूरत ही नहीं होनी चाहिए। देखो प्रिमिटिव्स एग्जिस्ट करते हैं जावा में बिकॉज़ ऑफ टू रीज़। बहुत सॉलिड टू रीज़न है। पहला रीज़न है बिकॉज़ ऑफ लेगेसी। क्योंकि इसे जो पुरानी लैंग्वेजज़ थी C, C++ क्योंकि उसमें हमारे प्रिमिटिव्स एग्ज़िस्ट करते थे। तो उस लेगेसी को मेंटेन करने के लिए जावा ने इसमें भी प्रिमिटिव्स को एग्ज़िस्ट करवा",
+      "source": "transcript_api",
+      "english_text": "If you say that brother, it is necessary to have wrapper classes because many collections, frameworks and many other things use wrapper classes only and do not use primitives. Then why do primitives still exist? The question is absolutely correct that if there are wrapper classes then there should be no need for primitives. See Primitives Exist in Java Because of Two Reasons. Very solid reason. The first reason is because of legacy. Because the old languages ​​were C, C++ because our primitives existed in them. So to maintain that legacy, Java made primitives exist in this also."
+    },
+    {
+      "start_time": 889.279,
+      "end_time": 923.76,
+      "text": "रखा है। क्यों लेगसी मेंटेन करनी है? भैया होता है ना ऑब्वियसली बहुत सारे लोग CC+ से जावा में शिफ्ट करेंगे। जावा जब बन रही थी तो उन्होंने ये सोचा था कि बहुत सारे लोग जो ऑलरेडी डेवलपमेंट करते हैं जो कोडिंग जानते हैं वो C++ से आएंगे। तो मैं चाहूंगा कि मैं उन्हें अट्रैक्ट कर पाऊं। तो मैंने उसमें प्रिमिटिव्स एज़ इट इज़ रखे। अब दूसरा रीज़न जो कि और वैल्यूुएबल रीज़न है वो है इनका फास्ट होना। प्रिमिटिव्स जो होते हैं वो फास्ट होते हैं। फास्ट क्यों होते हैं भाई? आप सोचो। एक जगह आप लिखते हो इंट x = 10 और एक जगह आप लिखते हो वही जो हमने पहले सोचा था। इंटीजर x = न्यू",
+      "source": "transcript_api",
+      "english_text": "Is kept. Why to maintain legacy? Brother, it happens that obviously many people will shift from CC+ to Java. When Java was being created, they had thought that many of the people who already do development and know coding would come from C++. So I would like to be able to attract them. So I laid out the primitives as it is. Now the second reason which is more valuable is that they are fast. Primitives are fast. Why are you fast brother? You think. At one place you write int x = 10 and at another place you write what we thought earlier. integer x = new"
+    },
+    {
+      "start_time": 921.04,
+      "end_time": 955.44,
+      "text": "इंटीजर और फिर इसमें आप वैल्यू 10 मारते हो। इसमें फास्ट कौन होगा? इंटक्स = 10 क्यों? क्योंकि इसको स्टोर करने के लिए क्या करना है? एक x की कंटेनर बनेगा जिसमें वैल्यू होगी 10। लेकिन जब आप एक ऑब्जेक्ट को स्टोर करते हो तो हमने डिस्कस किया था ना पहले उस ऑब्जेक्ट की मेमोरी के अलावा मेटा डेटा को भी स्टोर करना पड़ता है। कुछ पैडिंग डिटेल्स भी लगती है। फिर वो हीप में स्टोर होता है। उसका रेफरेंस वेरिएबल स्टैक में स्टोर होता है। तो कम ऑप्टिमाइज्ड है। ज्यादा मेमोरी कंज्यूम करता है। है ना? इतना ज्यादा रिसोर्सेज कंज्यूम करता है तो स्लो है लेकिन प्रिमिटिव्स के साथ काम करना फास्ट है। तो अगर आप ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग को",
+      "source": "transcript_api",
+      "english_text": "Integer and then you enter the value 10 in it. Who will be fast in this? Why intx=10? Because what needs to be done to store it? An x container will be created containing the value 10. But when you store an object, as we discussed earlier, apart from the memory of that object, you also have to store the meta data. Some padding details are also visible. Then it is stored in the heap. Its reference variable is stored in the stack. So less optimized. Consumes more memory. Isn't it? It consumes so many resources so it is slow but working with primitives is fast. So if you want to learn object oriented programming"
+    },
+    {
+      "start_time": 953.92,
+      "end_time": 987.759,
+      "text": "डील ही नहीं कर रहे या अगर आप डील भी कर रहे हो और आपको इतना ज्यादा इंटीजर फ्लोट हर जगह जरूरत नहीं पड़ रही तो आप प्रिमिटिव्स के साथ काम करो जो कि अभी तक हम करते भी आए थे। इनफैक्ट मोस्टली हम आगे भी करते रहेंगे। हम इनको भी यूज़ करेंगे। बहुत यूज़ करेंगे। खासकर तब यूज़ करेंगे जब हम कलेक्शन फ्रेमवर्क्स पढ़ रहे होंगे। पर हम प्रिमिटिव्स को भी यूज़ करेंगे। राइट? तो इसलिए ये आज तक एकिस्ट करते हैं। अब अगर आप ये समझ गए कि रैपर क्लासेस क्या होती हैं? और प्रिमिटिव्स की पर रैपर क्लास क्या है? उसकी मैपिंग क्या है? इंट की इंटीजर है, फ्लोट की फ्लोटिंग है वगैरह-वगैरह। अगर आप ये समझ गए तो अब",
+      "source": "transcript_api",
+      "english_text": "If you are not dealing at all or even if you are dealing and you do not need so many integer floats everywhere, then you work with primitives which we have been doing till now. In fact mostly we will continue to do so. We will use these also. Will use it a lot. Especially when we are studying collection frameworks. But we will also use primitives. Right? So that's why they exist till today. Now if you understand what rapper classes are? And what is the wrapper class on primitives? What is its mapping? Int is integer, float is floating and so on. If you understand this then now"
+    },
+    {
+      "start_time": 984.0,
+      "end_time": 1017.68,
+      "text": "समझना बहुत आसान हो जाएगा कि ऑटो बॉक्सिंग क्या होती है? और अनबॉक्सिंग क्या होती है। ठीक है? ओके। ऑटो बॉक्सिंग और अनबॉक्सिंग को समझते हैं। अब ऑटो बॉक्सिंग कहती है कि लेट्स से आपने कोई भी चीज प्रिमिटिव इंट में डिक्लेअ की है और उसको आप असाइन कर दो इंटिजर क्लास से तो वो ऑटोमेटिकली कन्वर्ट हो जाएगी। आपको कोई कास्टिंग या कुछ भी नहीं करना पड़ेगा। कोई खुद से सिंटेक्स नहीं लिखना पड़ेगा। इसका मतलब यह कि अगर मैं अपने कोड में कहीं",
+      "source": "transcript_api",
+      "english_text": "It will be very easy to understand what auto boxing is? And what is unboxing? Ok? Ok. Understand auto boxing and unboxing. Now auto boxing says that if you declare anything as primitive int with Lets and assign it to the integer class, it will be automatically converted. You don't have to do any casting or anything. You won't have to write any syntax yourself. This means that if I somewhere in my code"
+    },
+    {
+      "start_time": 1014.0,
+      "end_time": 1041.839,
+      "text": "लिखूं इंट x = 10 लेट्स से और मैं एक और इंटिजर क्लास भी डिफाइन करूं इंटिजर y और अगर मैं इसको असाइन कर दूं सीधा x से। ठीक है? असाइनमेंट ऑपरेटर x तो इस लाइन का मतलब क्या हुआ? इस लाइन का मतलब ये हुआ कि जो भी ये प्रिमिटिव इंट है ये अपने आप कन्वर्ट हो जाएगा इंटीजर में। अब यहां पे ये x क्या था? ये प्रिमिटिव इंट था। और मैंने इसको जैसे ही इंटीजर y = x लिखा यानी कि ये x अपने आप कन्वर्ट हो गया।",
+      "source": "transcript_api",
+      "english_text": "Let's write int x = 10 and I also define another integer class called integer y and if I assign it directly to x. Ok? Assignment operator x So what does this line mean? This line means that whatever this primitive int is, it will automatically be converted into integer. Now what was this x here? This was primitive int. And as soon as I wrote integer y = x, this x got automatically converted."
+    },
+    {
+      "start_time": 1039.52,
+      "end_time": 1066.64,
+      "text": "इंटीजर में अपने आप कन्वर्ट हो गया। हमें खुद से कुछ करने की जरूरत नहीं है। इसी को जावा कहता है ऑटो बॉक्सिंग। ऑटो बॉक्सिंग। अब देखो नाम से ही समझ आ रहा होगा। x = 10 एक प्रिमिटिव टाइप है और ऑब्जेक्ट को हम हमेशा एक बॉक्स की तरह इमेजिन करते हैं क्योंकि इसमें मल्टीपल चीज़ आ सकती है। तो हमने 10 को अपने आप एक बॉक्स में डाल दिया। अपने आप। ठीक है? कंपाइलर ने वो खुद से कर दिया। आपको खुद से करने की कुछ जरूरत नहीं है। ओके?",
+      "source": "transcript_api",
+      "english_text": "Converted to integer automatically. We don't need to do anything on our own. This is what Java calls autoboxing. Auto boxing. Now look, you can understand from the name itself. x = 10 is a primitive type and we always imagine the object like a box because it can hold multiple things. So we put 10 in a box by ourselves. yourself. Ok? The compiler did that automatically. You don't need to do anything on your own. Ok?"
+    },
+    {
+      "start_time": 1064.16,
+      "end_time": 1097.36,
+      "text": "ठीक है? पर ये हुआ कैसे होगा? अब ये कोई मैजिक तो है नहीं। है ना? है ना? ऐसे तो है नहीं कि इंटीजर y = x लिखा और ऐसे का ऐसा चल गया होगा। कंपाइलर ने अंदर से खुद इसमें कुछ चेंजज़ किए होंगे कि वो समझ गया आप करना क्या चाहते हो और अब मैं खुद से कुछ कोड लिख दूंगा। तो ऐसा होगा ना कि इस लाइन को चेंज करके कंपाइलर ने अंदर से कंपाइल टाइम पे ही ऐसा लिख दिया होगा। इंटीजर y = न्यू इंटीजर और इस x को अपने कंस्ट्रक्टर में ले लिया होगा। कुछ इस तरीके से कंपाइलर ने इंटरनली कर दिया होगा। ऐसा मैं सोच रहा हूं। है",
+      "source": "transcript_api",
+      "english_text": "ok? But how could this have happened? Now this is not magic. Isn't it? Isn't it? It is not like that integer y = x is written and it would have worked like this. The compiler must have made some changes internally so that it understands what you want to do and now I will write some code myself. So it would happen that by changing this line the compiler would have written it internally at compile time itself. Integer y = new Integer and this x will be taken in its constructor. The compiler might have done something like this internally. That's what I'm thinking. is"
+    },
+    {
+      "start_time": 1094.24,
+      "end_time": 1128.16,
+      "text": "ना? बिल्कुल सही बात। ऐसा ही होता था पहले ओल्ड जावा में। उसके बाद क्या हुआ कि जावा ने कहा यह ना थोड़ा सा अनऑप्टिमाइज तरीका है कि मैं कंस्ट्रक्टर के थ्रू कराऊं। जावाa ने क्या किया? एक नया मेथड दे दिया। जिस मेथड का नाम है वैल्यू ऑफ। जावा ने ये मेथड दे दिया। और जावा ने कहा कि अब इंटरनली मैं सिंटेक्स को कुछ ऐसे चेंज करूंगा। इंटीजर y = इंटीजर डॉट वैल्यू ऑफ़ और यहां पे x अपना पास कर",
+      "source": "transcript_api",
+      "english_text": "na? Exactly right. This used to happen earlier in Old Java. What happened after that was that Java said this is a slightly unoptimized way for me to do it through the constructor. What did Java do? Gave a new method. The name of the method is value off. Java provided this method. And Java said that now internally I will change the syntax like this. Integer y = integer dot value of and pass your x here."
+    },
+    {
+      "start_time": 1124.16,
+      "end_time": 1157.76,
+      "text": "दूंगा। कुछ इस तरीके से। अब जावा यह करता है मॉडर्न में। ठीक है? तो यह वाला जो वर्जन था यह ओल्ड जावा में होता है और यह न्यू। इनफैक्ट अभी की सारी जावा के वर्जनंस में हम ये करते हैं। एंड ये अंदर से होता है। आपको पता नहीं चलता। आपको तो बस ये लिखने की जरूरत है। इंटीजर y = x अपने आप ऑटो बॉक्सिंग हो जाएगी। पर अंदर से जावा ये वाली लाइन लिखता है। ठीक है? अब आप सोचो कि मैंने आपको बोला ये थोड़ा सा अनऑप्टिमाइज था। ये थोड़ा बेटर एप्रोच है। बेटर किस सेंस में होगी? मैं बताता हूं। बेटर ये इस सेंस में है कि अंदर से ना ये कैशिंग का यूज़ करता है थोड़ा सा इसको",
+      "source": "transcript_api",
+      "english_text": "Will give. Something like this. Now Java does this in modern. Ok? So this version was in old Java and this one is in new. In fact, we do this in all current versions of Java. And this happens from within. You don't know. You just need to write this. Integer y = x will be auto boxed automatically. But internally Java writes this line. Ok? Now think that I told you it was a little unoptimized. This is a slightly better approach. In what sense will it be better? I tell you. It is better in the sense that internally it uses a little bit of caching."
+    },
+    {
+      "start_time": 1155.76,
+      "end_time": 1190.64,
+      "text": "ऑप्टिमाइज बनाने के लिए। इसको हम थोड़ी देर बाद देखेंगे बाद में कि कैसे कैशिंग से उसको बेटर कर लेता है। पर अभी आप समझ लो इंटीजर डॉट वैल्यू ऑफ़ एक मेथड है। वो एक वैल्यू लेता है प्रिमिटिव वैल्यू लेता है x और उसको अपने आप कन्वर्ट कर देता है एक अ नॉन प्रिमिटिव इंटीजर में एक रैपर क्लास में। ठीक है? अब मैं आपको बता रहा था ना कि कॉनंसेप्चुअली जो हम इमेजिन कर रहे हैं इंटीजर क्लास दिखती कैसी होगी अंदर से? जो हमारी क्लास इंटीजर जावा ने बना के रखी होगी वो अंदर से दिखती कैसी होगी? तो मैंने तो बस अभी तक ये इमेजिन किया था कि उसमें इंट करके एक वैल्यू होगी। उसके अलावा कुछ कंस्ट्रक्टर होंगे। जैसे यहां पे मैं कंस्ट्रक्टर बना रहा था। अब मेरे",
+      "source": "transcript_api",
+      "english_text": "To optimize. We will see later how caching makes it better. But now you understand that integer dot value is a method. It takes a value, a primitive value x, and automatically converts it into a non-primitive integer in a wrapper class. Ok? Now I was telling you that conceptually, what would the integer class look like from inside? How would our class Integer, created by Java, look like from inside? So till now I had just imagined that there would be a value in it. Apart from that there will be some constructors. Like here I was making a constructor. now my"
+    },
+    {
+      "start_time": 1188.96,
+      "end_time": 1220.799,
+      "text": "को एक और मेथड मिला कि उसके अंदर एक वैल्यू ऑफ नाम का मेथड भी तो होगा। तभी तो मैं इस तरह लिख पा रहा हूं या कंपाइलर इस तरह लिख पा रहा है खुद से। है ना? तो वैल्यू ऑफ नाम का एक मेथड भी होगा। अब आप सोचो मैं कॉल कर रहा हूं इंटिजर डॉट वैल्यू ऑफ़ यानी कि क्लास नेम डॉट मेथड नेम। तो वो मेथड स्टैटिक भी होना चाहिए। तभी तो मैं उसके क्लास नेम के थ्रू कॉल कर पा रहा हूं। यानी कि अब मेरा जो कंसेप्चुअल व्यू है क्लास का वो कुछ ऐसा दिखता है। वो कुछ ऐसा दिखता है कि हमारी क्लास होगी इंटिजर।",
+      "source": "transcript_api",
+      "english_text": "Found another method that inside it there will also be a method named value of. That's why I am able to write like this or the compiler is able to write like this on its own. Isn't it? So there will also be a method named value of. Now imagine, I am calling integer dot value of i.e. class name dot method name. So that method should also be static. That's why I am able to call through his class name. That means, now my conceptual view of the class looks something like this. It looks something like this: Our class will be integer."
+    },
+    {
+      "start_time": 1216.88,
+      "end_time": 1251.44,
+      "text": "ओके? और मैंने ये समझ लिया कि उसमें इंट वैल्यू तो होगी ही होगी। ठीक है? और कुछ कंस्ट्रक्टर होते होंगे। उसके अलावा एक मेथड होता होगा जो स्टैटिक होगा। तो लेट्स से मैंने बोल दिया स्टैटिक और उस मेथड का नाम क्या होगा? वैल्यू ऑफ और ये क्या लेता होगा? ये एक इंट x लेता होगा और कुछ-कुछ करके उसे कन्वर्ट करता होगा। अब यहां पे मैंने इसका रिटर्न टाइप नहीं लिखा। रिटर्न टाइप होगा इसका इंटीजर कुछ इस तरीके से और उसको कन्वर्ट करता होगा इंटीजर में। है ना? तो ये अभी तक मैं इमेजिन कर सकता हूं कि भ जावा की जो",
+      "source": "transcript_api",
+      "english_text": "ok? And I understood that there must be int value in it. Ok? And there must be some constructors. Apart from that there must be a method which will be static. So from Lets I said static and what will be the name of that method? Value off and what would it take? It would take an int x and convert it a bit. Now here I did not write its return type. Its return type will be integer like this and it will convert it into integer. Isn't it? So till now I can imagine that Java's"
+    },
+    {
+      "start_time": 1249.6,
+      "end_time": 1278.559,
+      "text": "इंटरनल इंटीजर क्लास है वो ऐसे दिखती होगी। एंड दैट गोज़ फॉर एव्री रैपर क्लास डबल बी फ्लोट बी कुछ इस तरीके से दिखती होगी। ठीक है? ओके बहुत बढ़िया। अब आगे बढ़ते हैं। अब अगर आपको ऑटो बॉक्सिंग समझ आ गया तो अनबॉक्सिंग एकदम इसका उल्टा है। अगर लेट्स से मैं लिखता हूं इंटीजर x = 10 तो मैंने कुछ ऐसा लिखा। अब मैं इसको आराम से वापस प्रिमिटिव में भी कन्वर्ट कर सकता हूं। कुछ ऐसे लिख के।",
+      "source": "transcript_api",
+      "english_text": "There is an internal integer class, it would look like this. And That Goes for Every Wrapper Class Double B Float B would look something like this. Ok? Okay, great. Now let's move ahead. Now if you understand auto boxing then unboxing is its complete opposite. If from Lets I write integer x = 10 then I wrote something like this. Now I can easily convert it back to primitive as well. By writing something like this."
+    },
+    {
+      "start_time": 1275.76,
+      "end_time": 1309.76,
+      "text": "यानी कि ये लाइन लिखते ही मेरा y के अंदर भी 10 स्टोर हो जाएगा। है ना? ऑब्वियसली ये लाइन भी कोई मैजिक नहीं है। अंदर से जावा ने इसमें भी कुछ किया होगा। है ना? अब इसको हम पहले तो लिख देते हैं। इसको हम क्या बोलते हैं? अनबॉक्सिंग। पर यह तो आपने लिखा तो हो गया। पर अंदर से जावा ने कुछ ऐसा किया। अंदर से जावा ने लिखा इंट y = x डॉट इंट वैल्यू। एक मेथड कॉल कराया इंट वैल्यू। और ये मेथड कोई आर्गुमेंट नहीं लेता। बस वो क्या करता है? इस x को प्रिमिटिव x में कन्वर्ट कर देता है। ये x क्या है? ये",
+      "source": "transcript_api",
+      "english_text": "That means as soon as I write this line, 10 will be stored inside my y also. Isn't it? Obviously this line is also not magic. Internally Java must have done something in this also. Isn't it? Now let us write this first. What do we call this? Unboxing. But you have written this and it is done. But from inside Java did something like this. Internally Java wrote int y = x dot int value. Called a method int value. And this method does not take any arguments. Just what does he do? Converts this x to primitive x. What is this x? this"
+    },
+    {
+      "start_time": 1307.919,
+      "end_time": 1333.52,
+      "text": "इंटीजर है। यानी कि एक ऑब्जेक्ट है। उसको उसने सीधा कन्वर्ट कर इसमें कर दिया एक प्रिमिटिव टाइप में। तो x डॉट int वैल्यू एक मेथड है जो ये काम करता है कंपाइलर अंदर से ये खुद से लिख देता है। आपको लिखने की जरूरत नहीं है। ओके? अब देखो ये जो इंट वैल्यू नाम का मेथड है ये मैं किस पे कॉल कर रहा हूं? x पे कॉल कर रहा हूं। x क्या है? इंटीजर है। यानी कि इंट वैल्यू नाम का मेथड भी मेरी इंटीजर क्लास के अंदर होना चाहिए। तभी तो मैं उसे कॉल कर पा रहा हूं। दूसरा ये स्टैटिक नहीं होना चाहिए।",
+      "source": "transcript_api",
+      "english_text": "is an integer. That means it is an object. He directly converted it into a primitive type. So x dot int value is a method which does this work, the compiler writes it automatically from inside. You don't need to write. Ok? Now look at this method called int value, what am I calling on it? I am calling on x. What is x? is an integer. That means the method named int value should also be inside my integer class. That's why I'm able to call him. Second, it should not be static."
+    },
+    {
+      "start_time": 1332.24,
+      "end_time": 1366.88,
+      "text": "क्यों नहीं होना चाहिए? क्योंकि मैं इसको एक ऑब्जेक्ट नेम से कॉल कर रहा हूं। है ना? अगर ये स्टैटिक होता तो मैं स्टैटिक सॉरी क्लास नेम से इंटीजर और इंट वैल्यू कर सकता था। है ना? तो यानी कि अब मेरी इंटीजर क्लास में एक और मेथड जुड़ गया इंट वैल्यू नाम का। हम धीरे-धीरे इंटीजर क्लास कंस्ट्रक्ट करने की कोशिश कर रहे हैं कि अंदर से दिखती कैसी होगी। अभी तक हमने जाकर उसे देखा नहीं है। ठीक है? तो ये भी जोड़ देते हैं। तो देखो मैंने दोबारा से अपनी इंटीजर क्लास सीखी जो अभी तक हमें उसके बारे में पता है। हमने कहा एक वैल्यू नाम का इंट वैल्यू नाम का एक वेरिएबल होता होगा। कुछ कंस्ट्रक्टर्स होते होंगे। ये वैल्यू ऑफ़ नाम का मेथड तो हमने पहले डिस्कस कर लिया था। ये एक इंट x लेता होगा और इंटजर रिटर्न करता होगा। है ना? उसी",
+      "source": "transcript_api",
+      "english_text": "Why shouldn't it happen? Because I am calling it with an object name. Isn't it? If it was static then I could have integer and int values ​​with static sorry class name. Isn't it? So that means now another method named int value has been added to my integer class. We are slowly trying to construct the integer class to see what it would look like from inside. We haven't gone and seen him yet. Ok? So let's add these also. So look, I went over our integer classes again and what we know about them so far. We said that a value named int would have a variable named value. There must be some constructors. We had discussed this method called value of name earlier. It will take an int x and return an integer. Isn't it? the same"
+    },
+    {
+      "start_time": 1365.12,
+      "end_time": 1399.6,
+      "text": "तरीके से एक नया मेथड आ गया हमारे लाइन में इंट वैल्यू। ये क्या करता होगा? ये कोई आर्गुमेंट नहीं लेता होगा। कोई पैरामीटर नहीं है इसके पास और सीधा वैल्यू रिटर्न करता होगा। यानी कि ये वाली वैल्यू। तभी तो देखो हमने लिखा x डॉट इंट वैल्यू और जो भी x के अंदर इंटीजर वैल्यू स्टोर होगी वो रिटर्न हो गई होगी। अब वैसे ही इसी क्लास में मैंने क्या किया? रिटर्न वैल्यू यहां पे मैं लिख सकता था दिस डॉट वैल्यू। कुछ इस तरीके से हम लिखते हैं। है ना? इस क्लास में ये जो वैल्यू फील्ड है इसको रिटर्न कर दो। तो इंट वैल्यू एक तरह का क्या हो गया? गेटर नहीं हो गया। गेटर मेथड हो गया कि भाई हम इसको गेट कर सकते हैं। ये गेट वैल्यू भी हो सकता था। पर इसका नाम रखा हुआ है लेट्स से इंट वैल्यू।",
+      "source": "transcript_api",
+      "english_text": "A new method has come to our line with int value. What would he do? It would not take any argument. It has no parameters and returns a direct value. That means this value. That's why we wrote x dot int value and whatever integer value is stored inside x must have been returned. Now what did I do in this same class? Return value here I could write this dot value. We write something like this. Isn't it? Return the value field in this class. So what kind of int value became? Getter is not done. Getter method done, brother we can gate it. This could also be the gate value. But its name is Let's Int Value."
+    },
+    {
+      "start_time": 1397.84,
+      "end_time": 1425.039,
+      "text": "ओके? बहुत बढ़िया। अब मैं थोड़ा-थोड़ा और विजुअलाइज कर सकता हूं। ठीक है? चलो अब एक स्टेप और आगे बढ़ते हैं। अब ये सब जो अभी तक हमने किया है ना एक बार फटाफट इसे कोड में देख लेते हैं। हां जी। तो देखो मैंने अगेन अपना डेमो 2 डॉट java करके एक फाइल बना रखी है सिंपल। अब मैंने क्या बोला था? मेरे को देखना है ऑटो बॉक्सिंग। तो पहले लेट्स से ऑटो बॉक्सिंग ही देखते हैं। ठीक है? ऑटो बॉक्सिंग मैंने क्या बोला था? लेट्स से अगर मैं एक इंट x डिफाइन करूं।",
+      "source": "transcript_api",
+      "english_text": "ok? very nice. Now I can visualize a little more. Ok? Now let's go one step further. Now let's quickly see all this that we have done so far in the code. Yes sir. So look, again I have created a simple file using my demo 2.java. Now what did I say? I want to see auto boxing. So first let's watch auto boxing. Ok? Auto Boxing What did I say? Let's say if I define an int x."
+    },
+    {
+      "start_time": 1420.559,
+      "end_time": 1452.4,
+      "text": "इंट x = 10 और मैं अगर लिखूं इंटीजर जो हमारी क्लास है y = x तो देखो ये स्टेटमेंट बिल्कुल वैलिड है यानी कि y के अंदर हमारा 10 आ गया होगा। ओके इसको भी थोड़ी देर में देखते हैं। दूसरा मैं कह रहा था कि हमारा अनबॉक्सिंग क्या होता है? अनबॉक्सिंग अनबॉक्सिंग। अनबॉक्सिंग कहता है लेट्स से एक बार के लिए मैं एक और नया वेरिएबल लेता हूं। इंट a ठीक है? नहीं इस बार सॉरी पहले मैं क्लास लेता हूं हमारी इंटीजर a और अगर उसके अंदर कोई वैल्यू है",
+      "source": "transcript_api",
+      "english_text": "Int x = 10 and if I write integer which is our class y = x then see this statement is absolutely valid i.e. our 10 must have come inside y. Ok, let's look at this a little later. Secondly I was saying what is our unboxing? Unboxing Unboxing. Unboxing says lets take another new variable for once. int a ok? No this time sorry first I take class our integer a and if there is any value inside it"
+    },
+    {
+      "start_time": 1451.039,
+      "end_time": 1483.919,
+      "text": "तो मेरे पास दो तरीके हैं या तो मैं पहले ऐसे करूं न्यू इंटीजर और उसका नाम रख दूं लेट्स से 10 कुछ ऐसे या इस बार 20 रख देते हैं 20 कुछ ऐसे पर आप देख रहे हो स्पेलिंग गलत है यहां पे हां जैसे ही मैंने ये लिखा मेरे पास कोई एरर तो नहीं आया पर देखो ये इंटीजर कटा हुआ आया ठीक है ऐसा क्यों आ रहा है अगर हम इसको पढ़े तो वार्निंग है द कंस्ट्रक्टर इंटीजर हैज़ बीन डेप्रिशिएटेड सिंस वर्जन 9 एंड मार्क्ड फॉर रिमूवल। ठीक है? डेप्रिशिएट मत करने का मतलब बस ये होता है कि जावा कह रहा है अब इसको यूज़ मत",
+      "source": "transcript_api",
+      "english_text": "So I have two ways, either I first create a new integer like this and name it from Let's say 10 something like this or this time let's put 20 something like this but you see the spelling is wrong here yes as soon as I wrote this I did not get any error but look this integer came truncated okay why is it coming like this if we read this then there is a warning The constructor integer has been depreciated since Version 9 and marked for removal. Ok? Do not deprecate just means that Java is saying don't use it anymore."
+    },
+    {
+      "start_time": 1482.0,
+      "end_time": 1510.72,
+      "text": "करो। इसको धीरे-धीरे मैं हटाने वाला हूं। अपने नए वर्जन में जावा इसको हटा देगा। तो इसको यूज़ करना आपके लिए वो नहीं है। रिकमेंडेड नहीं है। राइट? पर ऑब्वियसली मैं कर सकता हूं। कोई प्रॉब्लम नहीं है इसको यूज़ करने में। तो मैं बस इसको यूज़ करके इसलिए दिखा रहा हूं कि मैं ऐसे भी वैल्यू को असाइन कर सकता हूं इंटिजर में। और मैं दूसरा क्या कर सकता हूं? अगर मेरे पास इंट भी होता उसको सीधा ये वैल्यू दे सकता था। देखो कोई एरर नहीं है। पर क्योंकि ऑटो बॉक्सिंग और अनबॉक्सिंग होती है। ऑटो बॉक्सिंग और अनबॉक्सिंग होती है।",
+      "source": "transcript_api",
+      "english_text": "Do it. I am going to remove it gradually. Java will remove it in its new version. So it is not for you to use it. Not recommended. Right? But obviously I can. There is no problem in using it. So I'm just using this to show that I can also assign values ​​to integers. And what else can I do? Even if I had an int, I could give it this value directly. Look there is no error. But because there is auto boxing and unboxing. Auto boxing and unboxing occurs."
+    },
+    {
+      "start_time": 1508.799,
+      "end_time": 1542.159,
+      "text": "तो आप इसको दोबारा देखो। अगर मैंने लिखा इंट x = 10 और इंटीजर y = x तो ये हो गया होगा। अब अगर मैं इसको प्रिंट करने की कोशिश करूंगा लेट्स से सिस्टम डॉट आउट डॉट प्रिंट ln तो मैं यहां पे x भी प्रिंट कर सकता हूं। वैसे ही सिस्टम डॉट आउट डॉट प्रिंट ln मैं y भी प्रिंट कर सकता हूं। तो x और y मैं दोनों यहां पे प्रिंट कर सकता हूं। ठीक है? इसको अभी के लिए कमेंट कर देते हैं। वैसे कोई जरूरत नहीं है। पर चलो कोई बात नहीं। अब यहां पर देखो मेरा दोनों बार 10 प्रिंट हो गया। अब आप एक और चीज सोचो। ये इंटीजर y = x अंदर से क्या हो रहा होगा? मैंने आपको क्या कहा था?",
+      "source": "transcript_api",
+      "english_text": "So you look at it again. If I wrote int x = 10 and integer y = x then this would be done. Now if I try to print this let's say system dot out dot print ln then I can also print x here. Similarly system dot out dot print ln I can also print y. So x and y I can print both here. Ok? Let's leave this as a comment for now. Well there is no need. But never mind. Now look here, I got 10 printed both times. Now think of one more thing. What might be happening inside this integer y = x? What did I tell you?"
+    },
+    {
+      "start_time": 1540.159,
+      "end_time": 1573.76,
+      "text": "अंदर से कंपाइलर कुछ ऐसे कर रहा होगा। वो दिखता होगा इंटीजर y = वो इसको लिखता होगा न्यू इंटीजर और यहां पे डाल देता होगा x। और मैंने कहा था ये तो ओल्ड जावा में होगा। इसलिए देखो इंटीजर पे दोबारा से स्लैश आ रहा है कि भ ये अलाउड नहीं है करना। न्यू जावा में क्या होता होगा? हमारा एक स्टैटिक मेथड कॉल होता होगा इंटीजर डॉट वैल्यू ऑफ़ और यहां पे वो डाल देता होगा x और इसको कर देता होगा बंद। देखो कोई एरर नहीं आया। तो अगर मैं इसको कमेंट कर दूं और इसको भी रहने दूं तो भी हमारा हमारा 10 10 प्रिंट हो जाएगा।",
+      "source": "transcript_api",
+      "english_text": "Internally the compiler might be doing something like this. It would look like integer y = He would write it as new integer and put x here. And I had said that this would happen in Old Java. Therefore, see that the slash is coming again on the integer, is this not allowed? What would happen in New Java? One of our static method calls would be integer dot value off and here it would put x and turn it off. Look, no error occurred. So if I comment this and leave this also, our 10 10 will still be printed."
+    },
+    {
+      "start_time": 1571.039,
+      "end_time": 1605.84,
+      "text": "बिल्कुल सही है ना? यानी कि ये लिखना बिल्कुल ही हमारा ऑप्शनल हो गया है। अब मैं सीधा ऐसे लिख सकता हूं। तो मैं उसे क्यों ही लिखूं? इतना बड़ा सिंटेक्स है ना? मुझे याद रखने की जरूरत ही नहीं है। मैं ऐसे कर दूंगा। तो यहां पे क्या हो रही होगी हमारी? ऑटो बॉक्सिंग। ऑटो बॉक्सिंग हो रही होगी। ऑटो बॉक्सिंग। इनफैक्ट आपको एक इंटरेस्टिंग चीज बताऊं। हमारी अनबॉक्सिंग हो रही है यहां पे। ठीक है? ऑलदो हमने नोटिस नहीं किया पर यहां पे जब मैं इस लाइन को प्रिंट करने की कोशिश कर रहा हूं ना मेरी अनबॉक्सिंग हो रही है कैसे? आप सोचो ये जो y है ये तो एक इंटीजर ऑब्जेक्ट है। है ना? ये तो रेफरेंस",
+      "source": "transcript_api",
+      "english_text": "Is it absolutely correct? That means writing this has become completely optional for us. Now I can write directly like this. So why should I write to him? That's such a big syntax isn't it? I don't need to remember. I will do it like this. So what will we be doing here? Auto boxing. Auto boxing will be happening. Auto boxing. In fact let me tell you something interesting. Our unboxing is happening here. Ok? Aldo we did not notice but here when I am trying to print this line, how is my unboxing happening? You think, this y is an integer object. Isn't it? this is reference"
+    },
+    {
+      "start_time": 1603.6,
+      "end_time": 1636.96,
+      "text": "वेरिएबल है इंटीजर का। तो मैं डायरेक्टली रेफरेंस वेरिएबल थोड़ी प्रिंट करता था कभी भी। तो अगर एग्जांपल के लिए आप समझो मेरे पास एक क्लास होती थी स्टूडेंट। ठीक है? और उसके अंदर कुछ डेटा होता होगा स्टूडेंट का। तो जब भी मैं स्टूडेंट का ऑब्जेक्ट बनाता था मैं कुछ ऐसा बनाता था स्टूडेंट s1 = न्यू स्टूडेंट कुछ इस तरीके से और मुझे अगर s1 में कुछ प्रिंट करना पड़ता था तो मैं s1 डॉट उसके अंदर जो भी प्रिंट करना है वो डालता था है ना तो अगर मान लो इसके अंदर नेम होगा तो मैं लिखूंगा s1 डॉट नेम कुछ इस तरीके से करता था है ना पर मैं डायरेक्टली s1 थोड़ी प्रिंट करता था तो सेम तरीके से यहां पे मैं डायरेक्टली y",
+      "source": "transcript_api",
+      "english_text": "The variable is of integer. So I used to print directly reference variables sometimes. So if you consider for example, I had a class of students. Ok? And there must be some data of the student inside it. So whenever I used to create an object of student, I used to create something like this Student s1 = New Student in this way and if I had to print something in s1, then I used to put s1 dot whatever has to be printed inside it, so suppose there is a name inside it, then I will write s1 dot name, I used to do something like this, but I used to directly print s1, then in the same way, here I directly write y."
+    },
+    {
+      "start_time": 1635.84,
+      "end_time": 1670.799,
+      "text": "कैसे प्रिंट कर पा रहा हूं मेरे को तो लिखना चाहिए y डॉट जो भी उसके अंदर वैल्यू मिलती होगी और हमें पता है मेथड क्या है मेथड का नाम है इंट वैल्यू है ना ये भी हमने देखा था इंट वैल्यू एक मेथड है जो उसकी इंटीजर वैल्यू आपकी जो प्रिमिटिव वैल्यू है वो लाके देता होगा। तो देखो अगर मैं ये भी लिखूंगा तो भी सही है तो भी हमारा 10 10 प्रिंट हो जाएगा। बिल्कुल सही और ये नहीं भी लिखूंगा तो भी सही है तो भी कोई दिक्कत नहीं है। तब भी हमारा 1010 तो प्रिंट हो ही रहा था। ओके? यानी कि यहां पे अनबॉक्सिंग हो रही है। ये जो ऑब्जेक्ट y है ये अपने आप प्रिमिटिव y में कन्वर्ट हो रहा है। क्योंकि जब भी जावा इसको देखता है लिखा हुआ जावा अपने आप डॉट इंट वैल्यू",
+      "source": "transcript_api",
+      "english_text": "How am I able to print, I should write y dot, whatever value will be found inside it and we know what is the method, the name of the method is int value, we had also seen that int value is a method which will return its integer value which is your primitive value. So look, even if I write this, it is correct, even then our 10 10 will be printed. Absolutely correct and even if I don't write this, it is correct, there is no problem. Even then our 1010 was still being printed. Ok? That means unboxing is happening here. This object y is automatically converting into primitive y. Because whenever Java sees this written Java automatically dot int value"
+    },
+    {
+      "start_time": 1669.12,
+      "end_time": 1701.36,
+      "text": "यहां लगा देता होगा। हमने देखा ही था। ठीक है? ठीक है? तो यहां पे ऑटो बॉक्सिंग हो रही है। यहां पे अनबॉक्सिंग हो रही है। अनबॉक्सिंग का हमने एक अलग से एग्जांपल भी देखा कि लेट्स से मैं ऐसे करूं और जो मैंने कहा था ये रिकमेंडेड नहीं है। हम अभी-अभी नहीं करते। तो हम क्या लिख सकते हैं? या तो हम लिख सकते हैं इंटीजर डॉट वैल्यू ऑफ और यहां पे मैं वैल्यू दे दूं 20। तो ये सही है। और यहां पे इंट = a हमने किया ही हुआ है। अब अगर मैं यहां पे a और b को प्रिंट करूंगा तो मेरा दोनों तरफ 20 आ जाना चाहिए। तो देखो अगर हम इसको प्रिंट करेंगे।",
+      "source": "transcript_api",
+      "english_text": "Would have put it here. We had seen it. Ok? Ok? So auto boxing is happening here. Unboxing is happening here. We also saw a separate example of unboxing that this is how I do it with Lets and what I said is not recommended. We just don't do it. So what can we write? Either we can write integer dot value of and here I will give the value 20. So this is correct. And here int = a we have already done. Now if I print a and b here, I should get 20 on both sides. So see if we print this."
+    },
+    {
+      "start_time": 1699.039,
+      "end_time": 1733.039,
+      "text": "ओके? ओके 1010 आया पहले फिर 2020 ठीक है तो ये 2020 भी आ गया पर अगेन क्या मुझे ये भी करने की जरूरत है बिल्कुल नहीं मैं सीधा यहां पे वैल्यू सॉरी मैं सीधा यहां पे वैल्यू असाइन कर सकता हूं 20 की कुछ ऐसे क्यों क्योंकि हमें पता है हमारा अपने आप ऑटो बॉक्सिंग हो जाता है यानी कि ये जो 20 है अपने आप ऑब्जेक्ट में कन्वर्ट हो जाएगा तो यहां पे मेरी स्पेसिफिकली हो रही है ऑटो बॉक्सिंग और अगर मैं इस ए को इस ऑब्जेक्ट ए को बी में साइन करूंगा तो यह भी अपने आप हो जाएगा या फिर यहां पे मेरी हो रही है अनबॉक्सिंग तो हमको दोनों बता दिए कि कैसे दोनों जगह ऑटो बॉक्सिंग",
+      "source": "transcript_api",
+      "english_text": "ok? Okay, 1010 came first, then 2020, okay, so this 2020 has also come, but again, do I need to do this also, absolutely not, I can directly assign the value here, sorry, I can directly assign the value here, why something like this of 20, because we know that ours is automatically auto boxed, that is, this 20 will automatically be converted into an object, so here I am specifically auto boxing and if I If I sign this object A to B, then this will also be done automatically or here I am doing unboxing, so tell me how to do auto boxing at both the places."
+    },
+    {
+      "start_time": 1731.44,
+      "end_time": 1765.2,
+      "text": "अनबॉक्सिंग अप्लाई हो रही है। यहां पे भी आप देख सकते हो अगर मैं A को डायरेक्टली प्रिंट कर रहा हूं तो यहां पे क्या हो रही है मेरी अनबॉक्सिंग और बी के मेरे तो कोई दिक्कत ही नहीं है। ठीक है? ओके। अब अगेन ये सिंटेक्स अगर कंपाइलर देखता होगा तो क्या करता होगा? A डॉट इंट वैल्यू लगा देता होगा अपने आप। क्योंकि A तो एक ऑब्जेक्ट है। है ना? हमें लगाने की जरूरत नहीं है। वो कंपाइलर खुद से लगा देता होगा। ओके? बहुत बढ़िया। आई होप आपको ये समझ आ गया होगा। ठीक है? अब इसके अलावा ना एक और चीज की बात करते हैं कि कब यह ऑटो बॉक्सिंग और अनबॉक्सिंग अपने आप अप्लाई होती होगी। किन-किन कंडीशंस पे होती होगी। ठीक है? अब एक तो मैंने आपको",
+      "source": "transcript_api",
+      "english_text": "Unboxing is applying. Here also you can see that if I am printing A directly then what is happening with my unboxing and with B I have no problem. Ok? Ok. Now again what would the compiler do if it sees this syntax? A dot would assign the int value automatically. Because A is an object. Isn't it? We don't need to impose. The compiler must have installed it automatically. Ok? very nice. I hope you have understood this. Ok? Now apart from this, let us talk about one more thing that when this auto boxing and unboxing will be applied automatically. Under what conditions would this happen? Ok? Now I have given you one"
+    },
+    {
+      "start_time": 1763.279,
+      "end_time": 1794.96,
+      "text": "पहले ही बता दिया कि असाइनमेंट पे अप्लाई होती है कि अगर आप एक इंटीजर y में x भी असाइन कर सकते हो तो ऑटो बॉक्सिंग हो जाएगी या फिर एक इंट में एक इंटीजर भी असाइन कर सकते हो तो अनबॉक्सिंग हो जाएगी। तो कब-कब वैल्यू एप्लीकेबल होती है तो पहले ले लेट्स से मैं लिख देता हूं असाइनमेंट्स में असाइनमेंट स्टेटमेंट्स में। ओके? अब एक और तरीका है ऑटो बॉक्सिंग अनबॉक्सिंग अप्लाई करने का वो है मेथड कॉल में। अब लेट्स से यहां पे मैं एक मेथड बना के रखता हूं स्टैटिक अ वॉइड। ठीक है? और उसका नाम है लेट्स से प्रिंट इंटीजर।",
+      "source": "transcript_api",
+      "english_text": "It has already been told that the same applies to assignment that if you can assign x to an integer y, then auto boxing will happen or if you can assign an integer to an int, then unboxing will happen. So whenever the value is applicable, first of all I write it in the assignments in the assignment statements. Ok? Now another way to apply auto boxing unboxing is in the method call. Now let's create a method here called static a void. Ok? And its name is print integer from lets."
+    },
+    {
+      "start_time": 1791.52,
+      "end_time": 1824.96,
+      "text": "प्रिंट इंटीजर ये क्या करता है? एक इंट एक्स एक्सपेक्ट करता है और उसको प्रिंट कर देता है स्क्रीन पे। तो सिस्टम डॉट आउट डॉट प्रिंट ln और x यहां पे प्रिंट कर देता होगा। कुछ इस तरीके से। अब मैं कह रहा हूं कि लेट्स से पहले एक बार मैं इन सबको कमेंट कर देता हूं। हां। अब मैं कह रहा हूं कि अगर मैं जब इस मेथड को कॉल करूंगा तो जब मैं इस प्रिंट इंटीजर मेथड को कॉल करता हूं कुछ वैल्यू देके लेट्स से मुझे स्क्रीन पे 50 प्रिंट करना है। तो मैं 50 दूंगा तो मेरा स्क्रीन पे 50 तो प्रिंट हो ही जाएगा। ये तो ऑब्वियस है 50 बिल्कुल। मैं कह रहा हूं मैं यहां पे इंटीजर 50 भी दे सकता हूं। तो बेसिकली अगर",
+      "source": "transcript_api",
+      "english_text": "Print Integer What does it do? Expects an int x and prints it on the screen. So the system would print dot out dot print ln and x here. Something like this. Now I am saying that before letting go, I comment on all this once. Yes. Now I am saying that if I call this method, then when I call this print integer method, after giving some value, I have to print 50 on the screen. So if I give Rs 50, Rs 50 will definitely be printed on my screen. This is obviously 50. I am saying that I can also give integer 50 here. so basically if"
+    },
+    {
+      "start_time": 1821.279,
+      "end_time": 1849.919,
+      "text": "मान लो मेरे पास कोई इंटीजर है x = 50 जो कि मैं कर सकता हूं डायरेक्टली। तो मैं यहां पे x को भी भेज सकता हूं। तब भी मेरा ये कोड चल जाएगा। यानी कि मेरा अपने आप जो 50 है ये जो x 50 है यहां पे आके अनबॉक्स हो जाएगा। तो ये हमारे बेसिकली किस में भी हो सकता है? मेथड कॉल्स में भी। हमारे मेथड कॉल्स में भी। हम आर्गुमेंट में यहां पे 50 भेजा। पैरामीटर में 50 एक्सपेक्ट कर लिया अनबॉक्स करके। उल्टा भी हो सकता है।",
+      "source": "transcript_api",
+      "english_text": "Suppose I have an integer x = 50 which I can do directly. So I can also send x here. Even then this code of mine will run. That means my own 50, this x 50 will come here and be unboxed. So basically this can happen in any of our bodies? Even in method calls. Even in our method calls. We sent 50 here in the argument. Expected 50 in parameters after unboxing. The reverse may also happen."
+    },
+    {
+      "start_time": 1846.399,
+      "end_time": 1879.52,
+      "text": "लेट्स से ये इंट है। ये इंट है और ये इंटीजर एक्सपेक्ट करता है। ये आपका इंटीजर एक्सपेक्ट करता है। तो भी कोई दिक्कत नहीं है। तब भी ये कोड चल जाएगा। यानी कि हमारा अनबॉक्स भी हो जाएगा। ऑटो बॉक्स भी हो जाएगा। तो मेथड कॉल्स में तीसरा एक और तरीका है आपकी एरिथमैटिक ऑपरेशंस में। लेट्स से एरथमेटिक ऑपरेशंस। आपकी एरथमैटिक ऑपरेशंस में भी हो सकता है। तो ये कैसे हो सकता है? लेट्स से यहीं पे इसको भी मैं एक बार के लिए कमेंट कर देता हूं। लेट्स से मैं यहां पे लिखता हूं इंटीजर सम या पहले मैं एक इंटीजर A",
+      "source": "transcript_api",
+      "english_text": "This is int from Letts. This is int and it expects an integer. This expects your integer. Still there is no problem. Even then this code will run. That means we will also be unboxed. There will also be auto box. So the third one in method calls is another method in your arithmetic operations. Arithmetic Operations from Lets. Can also happen in your arithmetic operations. So how can this happen? Let me comment on this here for once. Let's say here I write integer sum or first I write an integer A"
+    },
+    {
+      "start_time": 1876.159,
+      "end_time": 1910.48,
+      "text": "डिफाइन करता हूं 10 और एक इंटीजर B डिफाइन करता हूं। लेट्स से 20। तो आपको पता ही है यहां पे क्या हो रहा है? यहां पे ऑटो बॉक्सिंग हो रही है क्योंकि 10 डॉट इंट वैल्यू 20 डॉट इंट वैल्यू कुछ इस तरह चल रहा होगा। सॉरी अ इंटीजर डॉट वैल्यू ऑफ़ 10 इंटीजर डॉट वैल्यू ऑफ़ 20 कुछ इस तरह चल रहा होगा और ये 10 इंटीजर में कन्वर्ट हो रहा होगा अंदर से। है ना? और मैं कर सकता हूं लेट्स से इंट सम = a + b कुछ ऐसे और ये भी वैलिड है। तो अगर मैं चाहूं तो मैं सम को भी प्रिंट कर सकता हूं और मेरा आंसर आराम से प्रिंट हो जाएगा। तो इसको मैं लिख दिया सम",
+      "source": "transcript_api",
+      "english_text": "Define 10 and an integer B. 20 from Letts. So do you know what is happening here? Auto boxing is happening here because 10 dot int value will be going something like this 20 dot int value. Sorry an integer dot value of 10 integer dot value of 20 something like this would be going on and it would be converting to integer 10 internally. Isn't it? And I can do let's say int sum = a + b something like this and this is also valid. So if I want, I can print even and my answer will be printed easily. So I wrote this down"
+    },
+    {
+      "start_time": 1907.2,
+      "end_time": 1941.2,
+      "text": "और मेरा आ जाएगा यहां पे 20 + 10 30 बिल्कुल सही है ना? तो अंदर से क्या हुआ होगा? पहले ये a इंटीजर से इंट में कन्वर्ट हुआ होगा। b इंटीजर से इंट में कन्वर्ट हुआ होगा। उन दोनों इंट में एडिशन हुआ होगा और वो असाइन हुआ होगा हमारे सम को है ना तो पहले ये अनबॉक्स हुआ ये अनबॉक्स हुआ यानी कि अपने आप अंदर से a डॉट इंट वैल्यू और b डॉट इंट वैल्यू एक कंपाइलर ने खुद से लिख दिया होगा b डॉट इंट वैल्यू फिर इन दोनों को ऐड किया होगा सम असाइन किया होगा और सम को हमने प्रिंट कर दिया होगा तो हमारे मेथड कॉल्स में भी हमारा मेथड ऑपरेशन सॉरी अरिथमैटिक ऑपरेशंस में भी हमारी ऑटो बॉक्सिंग अनबॉक्सिंग",
+      "source": "transcript_api",
+      "english_text": "And mine will come here 20 + 10 30 is absolutely correct right? So what might have happened from inside? First this a must have been converted from integer to int. b must have been converted from integer to int. Addition must have taken place in both of those ints and it must have been assigned to our sum. So first it is unboxed, it is unboxed, that is, automatically from within, a compiler must have written a dot int value and b dot int value, then added b dot int value, then added both of them, must have assigned sum and we must have printed the sum. So in our method calls also, our method operation is sorry arithmetic operations. Also in our auto boxing unboxing"
+    },
+    {
+      "start_time": 1938.559,
+      "end_time": 1971.44,
+      "text": "होती है। आई होप आपको ऑटो बॉक्सिंग और अनबॉक्सिंग का कांसेप्ट अच्छे से क्लियर हुआ होगा। अब मुझे इसमें एक और लास्ट चीज़ आपको समझानी है। वह यह है। पहले मैं इस पूरे को कमेंट कर देता हूं। ठीक है? अब हमारा बिलकुल क्लियर है यहां पे मेन मेथड। ठीक है? मैं कह रहा हूं कि क्योंकि इंटीजर x = 10 जब मैं ये लिखता हूं तो आखिरकार इंटरनली क्या हो रहा होगा? इंटीजर डॉट वैल्यू ऑफ़ 10 इस तरह कन्वर्ट होता होगा ये। और ये एक ऑब्जेक्ट बन जाता होगा। अब मैंने आपको बोला है कि ऑब्जेक्ट क्या करते हैं? नल भी स्टोर कर सकते हैं।",
+      "source": "transcript_api",
+      "english_text": "It happens. I hope you must have been clear about the concept of auto boxing and unboxing. Now I have to explain one last thing to you. That's it. First let me comment on this whole thing. Ok? Now our main method is very clear here. Ok? I am saying that because integer x = 10 what exactly is happening internally when I write this? Integer dot value of 10 would be converted like this. And it would become an object. Now I have told you what objects do? Can also store taps."
+    },
+    {
+      "start_time": 1969.2,
+      "end_time": 2003.36,
+      "text": "नल मतलब नो वैल्यू कोई वैल्यू नहीं है। तो मैं यहां पे इंटिजर x = नल ऐसा भी लिख सकता हूं। ये भी वैलिड है। पर मान लो अब अगर मैंने इसको अनबॉक्स करने की कोशिश की इंट y = x तो मुझे कोई कंपाइलर एरर नहीं आएगा। पर जब मैं इस y को प्रिंट करने की कोशिश करूंगा तो मेरे पास क्या होगा? अब देखो x के अंदर नल स्टोर है। ऑब्जेक्ट नल स्टोर कर सकते हैं। नल का मतलब होता है नो वैल्यू। ठीक है? पर ये जो हमारे प्रिमिटिव्स हैं ये कोई नल स्टोर नहीं कर सकते। इनको नल का मतलब ही नहीं पता। हां अगर आपने y में कोई वैल्यू नहीं डालनी आप जीरो डाल दो अगर आप चाहते हो आपको कोई और वैल्यू नहीं डालनी",
+      "source": "transcript_api",
+      "english_text": "Null means no value. So I can also write integer x = null here. This is also valid. But suppose now if I tried to unbox this int y = x I would not get any compiler error. But what will I have when I try to print this y? Now see the null is stored inside x. Objects can store nulls. Null means no value. Ok? But our primitives cannot store any null. They don't even know the meaning of tap. Yes, if you do not want to enter any value in y, you can enter zero. If you want, you do not need to enter any other value."
+    },
+    {
+      "start_time": 2001.6,
+      "end_time": 2036.24,
+      "text": "पर आपको जीरो तो कम से कम डालना पड़ेगा है ना आप नल कुछ नहीं डाल सकते y में ठीक है पर आप देखो यहां पे करने की कोशिश कर रहे हो y = x या फिर अंदर से क्या हो रहा होगा x के अंदर नल है अंदर से ये x डॉट इंट वैल्यू कर रहा होगा यानी कि नल पे डॉट इंट वैल्यू कॉल कर रहा होगा आप नल पे अगर कोई भी मेथड कॉल करने की कोशिश करोगे तो कंपाइलर आपको एक नल पॉइंटर एक्सेप्शन देगा नॉट कंपाइलर रन टाइम पे आपको ये नल पॉइंटर एक्सेप्शन मिलेगा तो अगर आप देखो इसको अगर मैं हटा भी दूं हूं। तो जैसे ही मैं इस कोड को रन करूंगा, ये देखो मेरे पास सीधा नल पॉइंटर एक्सेप्शन आ गया। और अगर आप इसको पढ़ भी",
+      "source": "transcript_api",
+      "english_text": "But you have to put at least zero, you can't put null or anything in y, it's fine, but look here, you are trying to do y = At compiler run time you will get this null pointer exception, so if you see, even if I remove it. So as soon as I run this code, look, I get a straight Null Pointer Exception. And even if you read this"
+    },
+    {
+      "start_time": 2034.32,
+      "end_time": 2069.2,
+      "text": "लोगे तो वही बोलेगा कि भैया कैन नॉट इनवॉक इंटरवल बिकॉज़ ये आपका नल है। ठीक है? सिंपल। ओके? तो इस बात का हमें ध्यान रखना पड़ेगा कि हम कभी भी ऐसे कोई अनबॉक्सिंग या ऑटो बॉक्सिंग करने की कोशिश ना करें जिसमें नल पॉइंटर एक्सेप्शन आ जाए। ठीक है? चलो आई होप आपको ये सारी चीजें अच्छे से क्लियर हुई होगी। अब मुझे ना आपको एक और टॉपिक के बारे में समझाना है। तो उसके लिए मैं क्या करता हूं? मैं आपको एक और फाइल बनाता हूं। नई डेमो 3 डॉट java के नाम से। हां जी। तो जो मेरे को आपको नई चीज़ समझानी है उसके लिए मैंने अगेन डेमो 3 करके एक नई फाइल बना रखी है। क्योंकि अगेन पुरानी फाइलों में बहुत सारा कोड हो जाता",
+      "source": "transcript_api",
+      "english_text": "If you try then he will say that brother can't invoke interval because this is your tap. Ok? Simple. Ok? So we have to keep in mind that we should never try to do any unboxing or autoboxing in which null pointer exception occurs. Ok? Well, I hope all these things are clear to you. Now I have to explain to you about another topic. So what do I do about that? Let me make you another file. By the name of new demo 3 dot java. Yes sir. So for the new thing that I have to explain to you, I have created a new file by doing Demo 3 again. Because again there is a lot of code in old files."
+    },
+    {
+      "start_time": 2066.32,
+      "end_time": 2093.44,
+      "text": "है। तो वो नई चीज़ ये है। लेट्स से मेरे पास दो इंटिजर हैं। सिंपल पहले ये प्रिमिटिव बनाता हूं। इंट x = 10 और इंट y = 10 कुछ इस तरीके से। ठीक है? 1010 बहुत हो गया। लेट्स से इनको 10000 बोल लेते हैं। ओके? अब अगर मैं एक चीज प्रिंट करने की कोशिश करूं सिस्टम डॉट आउट डॉट प्रिंट ln और यहां पर मैं लिखूं x = y तो मैं क्या कर रहा हूं? एक बुलियन स्टेटमेंट प्रिंट करने की कोशिश कर रहा हूं। है ना?",
+      "source": "transcript_api",
+      "english_text": "Is. So this is the new thing. From let's I have two integers. Simple, first I create this primitive. Int x = 10 and int y = 10 something like this. Ok? 1010 is enough. Let's get them 10000 quotes. Ok? Now if I try to print one thing system dot out dot print ln and here I write x = y then what am I doing? Trying to print a boolean statement. Isn't it?"
+    },
+    {
+      "start_time": 2090.8,
+      "end_time": 2125.28,
+      "text": "कि क्या x y के इक्वल है? अगर है तो ट्रू प्रिंट होगा नहीं तो फॉल्स प्रिंट होगा। क्या प्रिंट होगा? ऑब्वियसली आपको पता है यहां पे प्रिंट होना चाहिए हमारा ट्रू। बिल्कुल। क्योंकि दोनों में 10000 की वैल्यू है। पर ऑन दी अदर हैंड अगर मैं करूं इंटीजर x = लेट्स से 200 और इंटीजर y लेट्स से 200 और तब मैं अगर सिस्टम डॉट आउट डॉट प्रिंट ln करने की कोशिश करूंगा कि क्या x इक्वल इक्वल है y के तो अब क्या प्रिंट होगा देखो हमारा ओके x y तो मैंने",
+      "source": "transcript_api",
+      "english_text": "Is x equal to y? If it is then it will be true print otherwise it will be false print. What will be printed? Obviously you know that our truth should be printed here. Absolutely. Because both have the value of 10000. But on the other hand if I do integer x = let's 200 and integer y let's 200 and then if I try to print system dot out dot ln whether"
+    },
+    {
+      "start_time": 2123.44,
+      "end_time": 2157.119,
+      "text": "वेरिएबल ले रखे हैं तो यहां पे मैं a और b ले लेता हूं a और b ठीक है और a और b को इक्वेट करा लेता हूं a को b से इक्वेट करा लेता हूं या फिर मैं इसको कमेंट भी कर सकता था चलो अभी कमेंट कर देते हैं इसको हटा देते हैं अब इसको प्रिंट करने की कोशिश कर रहे हैं हम इंटीजर a = 200 b = 200 अब a इक्वल इक्वल b है क्या? अब हमारा देखो लॉजिक तो कहता है कि ट्रू प्रिंट होना चाहिए। पर क्या ट्रू प्रिंट होगा? प्रिंट हुआ है फॉल्स। पर ऐसा क्यों? है ना? अब हमें ये समझना पड़ेगा जो कि बहुत इंपॉर्टेंट है। अब इसको हम फटाफट अपने आईपैड पे समझते हैं। तो हम कह रहे थे कि हमारे पास एक प्रॉब्लम आ रही थी। अगर मैं",
+      "source": "transcript_api",
+      "english_text": "If we have variables, then here I take a and b. A and b are fine and I equate a and b. I equate a with b. Or I could have just commented it. Let's just comment it and remove it. Now we are trying to print it. We have integer a = 200 b = 200. Now a is equal to b? Now look, our logic says that there should be true print. But will it be true print? It has been printed false. But why so? Isn't it? Now we have to understand this which is very important. Now we understand it quickly on our iPad. So we were saying that we were facing a problem. if i"
+    },
+    {
+      "start_time": 2154.0,
+      "end_time": 2187.119,
+      "text": "तो लिख रहा था इंट x = लेट्स से 100 और इंट y = 100 और तब मैं अगर x को y से कंपेयर करता था तो ट्रू आता था जो कि एक्सपेक्टेड भी था। पर अगर मैं उल्टा लिखता था अगर मैं इंटीजर x = लेट से मैंने 200 लिखा था और इंटीजर y = v 200 लिखा था और अगर मैं x को अब y से कंपेयर करता था तो हमारा फॉल्स आता था बल्कि ट्रू आना चाहिए। तो ये सब क्यों हो रहा था? इसको समझाने के लिए ना हमें समझना पड़ेगा इंटरनली इक्वल इक्वल कैसे काम करता है?",
+      "source": "transcript_api",
+      "english_text": "So I was writing int x = lets say 100 and int y = 100 and then if I compared x with y then it returned true which was also expected. But if I had written the reverse, if I had written integer x = let, I had written 200 and integer y = v had written 200 and if I had now compared So why was all this happening? To explain this, we have to understand how Equal Equal works internally?"
+    },
+    {
+      "start_time": 2185.52,
+      "end_time": 2220.4,
+      "text": "क्योंकि वहीं पे सारी गलती हो रही होगी। है ना? ओके। तो ये देखते हैं। देखो हमारे पास मैंने क्या कहा था? अगर हम एक ऑब्जेक्ट डिक्लअर करते हैं जब हम लिखते हैं इंटिजर x = लेट्स से 200 तो होता क्या है अंदर से अब ये तो हमने लिखा है हमें पता है कंपाइलर इसको कुछ इस तरह कन्वर्ट करता है कंपाइलर इसको इंटरनली कुछ ऐसे कन्वर्ट करता है भाई इंटीजर x = इंटीजर डॉट वैल्यू ऑफ़ वैल्यू ऑफ़ 200 फिर ये आपका",
+      "source": "transcript_api",
+      "english_text": "Because that's where all the mistakes are happening. Isn't it? Ok. So let's see this. Look what I said we have? If we declare an object, when we write Integer"
+    },
+    {
+      "start_time": 2216.96,
+      "end_time": 2243.839,
+      "text": "जो 200 है ये अपने आप एक इंटीिजर 200 में कन्वर्ट हो जाता होगा यानी कि क्लास के अंदर कन्वर्ट हो जाता होगा। एक ऑब्जेक्ट बन जाता होगा। ठीक है? तो अंदर से क्या हो रहा होगा? अब आप सोचो इसके भी अंदर क्या हो रहा होगा? इंटीजर डॉट वैल्यू ऑफ़ तो खुद एक मेथड है ना। ये किसी ना किसी तरीके से अंदर एक कंस्ट्रक्टर ही तो कॉल कर रहा होगा किसी रीज़न से। है ना? तो आखिर में एक न्यू ऑपरेटर ही कॉल हो रहा होगा ना। न्यू इंटीजर कुछ ऐसे और उसको एक वैल्यू मिल रही होगी 200। अब ये हम डायरेक्टली कॉल खुद नहीं कर रहे क्योंकि ऑप्टिमाइज़्ड नहीं है।",
+      "source": "transcript_api",
+      "english_text": "Which is 200, it would automatically get converted into an integer 200, that is, it would get converted inside the class. Must have become an object. Ok? So what might be happening from inside? Now imagine what would be happening inside this too? Integer dot value of is itself a method isn't it? Somehow or the other, there must be a constructor inside calling it for some reason. Isn't it? So ultimately a new operator must be calling, right? The new integer will be something like this and it will be getting a value 200. Now we are not making this call directly ourselves because it is not optimized."
+    },
+    {
+      "start_time": 2242.32,
+      "end_time": 2276.64,
+      "text": "हमने हम बाद में देखेंगे कि वैल्यू ऑफ़ कैसे ऑप्टिमाइज़्ड है। पर कहीं ना कहीं अंदर से कहीं ना कहीं एक ऑब्जेक्ट तो क्रिएट हो ही रहा होगा यूजिंग द न्यू कीवर्ड। है ना? यानी कि जो अभी तक हमने बात की थी कि हमारी एक हिप मेमोरी रही होगी। एक हमारी स्टैक मेमोरी रही होगी। ठीक है? इसको मैंने बोला स्टक, इसको मैंने बोला हीप। ठीक है? और इस हीप मेमोरी के अंदर एक इंटीजर नाम का ऑब्जेक्ट क्रिएट हुआ होगा। और स्टक मेमोरी के अंदर ये x रेफरेंस वेरिएबल होगा जो पॉइंट करता होगा इसको और इसके अंदर वैल्यू होगी 200। कुछ ऐसा हुआ होगा। बहुत बढ़िया। सेम गोज़ फॉर",
+      "source": "transcript_api",
+      "english_text": "We will see later how the value of is optimized. But somewhere inside, an object must be being created using the new keyword. Isn't it? That is, what we have talked about till now may have been a hip memory of ours. One might have been our stack memory. Ok? I called this a stack, I called this a heap. Ok? And an object named Integer must have been created inside this heap memory. और स्टक मेमोरी के अंदर ये x रेफरेंस वेरिएबल होगा जो पॉइंट करता होगा इसको और इसके अंदर वैल्यू होगी 200। कुछ ऐसा हुआ होगा। very nice. same goes for"
+    },
+    {
+      "start_time": 2274.4,
+      "end_time": 2308.88,
+      "text": "जब मैंने सेकंड स्टेटमेंट लिखी। लेट्स से इसके अलावा मैंने एक और स्टेटमेंट लिखी इंटीजर y = 200 तो भी यही सब प्रोसेस हुआ होगा कि इंटीजर y पहले वैल्यू ऑफ में कन्वर्ट हुआ होगा। अंदर से न्यू कॉल हुआ होगा और अगेन यहां पे आके हमारा एक और मेमोरी ब्लॉक बना होगा 200 का। यहां पे एक रेफरेंस वेरिएबल बना होगा y और वो पॉइंट करता होगा इसको कुछ ऐसा होता होगा जब भी हम ये स्टेटमेंट्स लिखते हैं। अब आप सोचो हमारा जो इक्वलिटी ऑपरेटर है हमारा ये जो ऑपरेटर",
+      "source": "transcript_api",
+      "english_text": "When I wrote the second statement. Apart from this, I wrote another statement if integer y = 200 then the same process would have happened that the integer y would have been converted to the value of first. A new call would have been made from inside and after coming here again, another memory block of 200 would have been created. Here a reference variable y will be created and it will point to it, something like this will happen whenever we write these statements. Now think about our equality operator."
+    },
+    {
+      "start_time": 2305.28,
+      "end_time": 2338.079,
+      "text": "है इक्वल इक्वल इक्वल इक्वल ऑपरेटर ये पता है क्या करता है? यह आपकी इन वैल्यूज़ को कंपेयर नहीं करता। बल्कि जब आप लिखते हो ना x = y तो आप क्या कर रहे हो? आप कह रहे हो क्या यह जो x रेफरेंस वेरिएबल है क्या ये y रेफरेंस वेरिएबल के इक्वल है? आप ये नहीं लिख रहे x डॉट वैल्यू जो भी x के अंदर यहां वैल्यू पड़ी होगी क्या वो इक्वल है y डॉट वैल्यू के। आप ये नहीं लिख रहे। आप सिंपल लिख रहे हो x इक्वल इक्वल y यानी कि आप कह रहे हो क्या ये दो रेफरेंसेस इक्वल हैं? तो इक्वल इक्वल",
+      "source": "transcript_api",
+      "english_text": "Do you know what the Equal Equals Equals operator does? It does not compare these values. Rather, when you write x = y, what are you doing? You're saying, is this x reference variable equal to the y reference variable? You are not writing that x dot value, whatever value lies inside x, is it equal to y dot value. You are not writing this. You are simply writing x equals equal y, that is, you are saying are these two references equal? so equal equal"
+    },
+    {
+      "start_time": 2334.96,
+      "end_time": 2367.839,
+      "text": "ऑब्जेक्ट्स के लिए रेफरेंसेस को कंपेयर करता है। रेफरेंसेस को तो इसको मैं प्रॉपर लिखता हूं। इट कंपेयर्स रेफरेंसेस रेफरेंसेस। ठीक है? आप समझ पा रहे हो रेफरेंसेस को कंपेयर क्यों कर रहा होगा? क्योंकि आप उससे पूछ रहे हो क्या x y के इक्वल है? तो वो देखेगा x क्या है? एक रेफरेंस वेरिएबल। y क्या है? एक रेफरेंस वेरिएबल। अब अगर आपने x = y लिखा है तो देखेगा x के अंदर क्या स्टोर है? और मैंने आपको बताया था x रेफरेंस वेरिएबल के अंदर क्या स्टोर होगा? इस वाले ऑब्जेक्ट का",
+      "source": "transcript_api",
+      "english_text": "Compares references to objects. I write proper about references. It compares references. Ok? Can you understand why he would be comparing the references? Because you're asking is x equal to y? So he will see what is x? A reference variable. what is y? A reference variable. Now if you have written x = y then see what is stored inside x? And I told you what will be stored inside the x reference variable? of this object"
+    },
+    {
+      "start_time": 2366.24,
+      "end_time": 2391.52,
+      "text": "एड्रेस स्टोर होगा। लेट से इसका ऑब्जेक्ट है 1001 और इस वाले का ऑब्जेक्ट है 2001। कुछ इस तरह तो इसके अंदर कहीं इंटरनली x के अंदर कहीं इंटरनली 1001 स्टोर होगा। y के अंदर कहीं इंटरनली 2001 स्टोर होगा। तो बेसिकली x कह रहा है कि मेरे पास भाई इस वाले ऑब्जेक्ट का एड्रेस है। y कह रहा है मेरे पास इस वाले एड्रेस का ऑब्जेक्ट है। और आप कंपेयर कर रहे हो क्या वो दोनों एड्रेस सेम है? आंसर बिल्कुल है नहीं।",
+      "source": "transcript_api",
+      "english_text": "The address will be stored. The object of this one is 1001 and the object of this one is 2001. Something like this, somewhere inside x, internally 1001 will be stored. There will be 2001 stored internally somewhere inside y. So basically x is saying that I have the address of this object. y is saying I have an object with this address. And you are comparing, are both the addresses the same? The answer is absolutely no."
+    },
+    {
+      "start_time": 2387.599,
+      "end_time": 2413.76,
+      "text": "नहीं सेम है। इसलिए आपका आंसर आया फॉल्स। ठीक है? अगर आप चाहते हो आपका आंसर ट्रू आए तो दो चीजें हैं। एक तो आप कंपेयर करो इनकी वैल्यू को। अब आप x की वैल्यू कैसे निकाल सकते हो? हमारे पास एक मेथड होता है x डॉट int वैल्यू। अगर आप लिखो x डॉट int वैल्यू। फिर लिखो इक्वल इक्वल और कंपेयर करो y डॉट int वैल्यू से। तब क्या आंसर आना चाहिए? तब बिल्कुल आना चाहिए। ट्रू।",
+      "source": "transcript_api",
+      "english_text": "No, it's beans. That's why your answer came false. Ok? If you want your answer to be true then there are two things. Firstly, you compare their value. Now how can you find the value of x? We have a method x dot int value. If you write x dot int value. Then write equal equal and compare y dot with int value. Then what should be the answer? Then you should definitely come. True."
+    },
+    {
+      "start_time": 2410.88,
+      "end_time": 2445.44,
+      "text": "क्योंकि अब आप कह रहे हो x डॉट अंदर जो वैल्यू है सेम y डॉट अंदर जो वैल्यू है और इन दोनों को आप कंपेयर कर रहे हो। अब आंसर आना चाहिए आपका ट्रू। ठीक है? आई होप आपको ये समझ आ गया होगा कि कुछ लोग ना बस इसको ऐसे समझ लेते हैं कि इक्वल इक्वल रेफरेंसेस कंपेयर करता है नॉन प्रिमिटिव में और वैल्यू कंपेयर करता है प्रिमिटिव में। पर आपको ऐसे याद करने की जरूरत नहीं है। बिल्कुल फर्स्ट थॉट प्रिंसिपल अप्लाई करो। जब मैं नॉर्मल ऐसे लिख रहा था वाइट से ही लिखते हैं इसको। जब मैं नॉर्मल ऐसे लिख रहा था लेट्स से इंट x = 10 इंट y = 10",
+      "source": "transcript_api",
+      "english_text": "Because now you are saying that the value inside x dot is the same as the value inside y dot and you are comparing these two. Now your answer should be true. Ok? I hope you have understood that some people simply understand it in such a way that equal compares references in non-primitive and compares values ​​in primitive. But you don't need to remember like this. Absolutely apply the first thought principle. When I was writing normally like this, it is written in white only. When I was writing the normal like this let's int x = 10 int y = 10"
+    },
+    {
+      "start_time": 2443.52,
+      "end_time": 2474.16,
+      "text": "तो प्रिमिटिव में तो आपको पता ही है ऐसा तो कुछ नहीं होता कि ये अलग एक स्टक मेमोरी सॉरी हीप मेमोरी बनता है और ये अलग हीप मेमोरी बनता है। नहीं आपके पास सीधा दो कंटेनर बनते हैं। एक x कंटेनर एक y कंटेनर दोनों में वैल्यू आती है 1010। तो जब इस केस में आप x = y करोगे तो वो सीधा वैल्यू ही तो कंपेयर करेगा क्योंकि x का मतलब ही 10 है। y का मतलब ही 10 है। y 10 को रेफर नहीं कर रहा। वैसे ही x 10 को रेफर नहीं करता। x का मतलब ही 10 है।",
+      "source": "transcript_api",
+      "english_text": "So, as you know in primitives, nothing happens that this becomes a separate stuck memory, sorry heap memory and this becomes a separate heap memory. No, you have two containers made directly. One x container and one y container both have the value 1010. So in this case when you do x = y then it will compare the value directly because x itself means 10. y itself means 10. y is not referencing 10. Likewise x does not refer to 10. x itself means 10."
+    },
+    {
+      "start_time": 2471.359,
+      "end_time": 2498.319,
+      "text": "राइट? x उस कंटेनर का नाम है जहां पे 10 स्टोर है। तो जब आप x इक्वल इक्वल y करते हो प्रिमिटिव में तो सीधा वैल्यू कंपेयर होती है। अब यहां पे जब आप नॉन प्रिमिटिव्स की बात करते हो और आप x = y लिखते हो तो इक्वल इक्वल काम सही तरीके से कर रहा है। ऐसा नहीं है वो प्रिमिटिव में अलग काम कर रहा है। नॉन प्रिमिटिव अलग काम कर रहा है। काम तो अभी भी वो x और y को कंपेयर करने का ही कर रहा है। और x और y के अंदर है क्या? अलग-अलग एड्रेसेस पड़े हैं। आपने उनकी वैल्यू तो पूछी ही नहीं।",
+      "source": "transcript_api",
+      "english_text": "Right? x is the name of the container where 10 is stored. So when you do x equals y in the primitive, the values ​​are compared directly. Now here when you talk about non-primitives and you write x = y then equal equals is working correctly. It is not that he is doing different work in primitives. Non primitive is doing different thing. He is still doing the work of comparing x and y. And what's inside x and y? There are different addresses. You didn't even ask their value."
+    },
+    {
+      "start_time": 2496.8,
+      "end_time": 2531.2,
+      "text": "आपने तो बोला ही नहीं कि उनकी वैल्यू सेम है या नहीं? आपने पूछा क्या x y के सेम है या नहीं? और आंसर है फॉल्स। अगर आपको वैल्यू कंपेयर करनी पड़ती तो आप क्या करते? x डॉट इंट वैल्यू क्या सेम है? y डॉट इंट वैल्यू के। है ना? अगर आप खुद का भी कुछ बनाते और उसमें एक गेटर बनाते तो आपको x डॉट गेटर गेट x और y डॉट गेट y कुछ समथिंग इस तरह कॉल करना पड़ता। आपको इस वैल्यू तक पहले पहुंचना तो पड़ता। x के अंदर ये 200 की वैल्यू थोड़ी है। x तो एक रेफरेंस वेरिएबल है। आपको डॉट ऑपरेटर लगा के यहां तक पहुंचना तो पड़ेगा। राइट? तो आई होप आपको ये समझ आ गया होगा कि इक्वल कोई मैजिकली कुछ चेंज नहीं हो गया।",
+      "source": "transcript_api",
+      "english_text": "You didn't even say whether their values are the same or not? You asked whether x is similar to y or not? And the answer is Falls. If you had to compare values, what would you do? What is x dot int value same? y dot int value. Isn't it? If you were to create something of your own and create a getter in it, you would have to call something like x dot getter get x and y dot get y. You would have had to reach this value first. This value of 200 is small inside x. x is a reference variable. You will have to reach here by dialing dot operator. Right? So I hope you have understood that nothing has magically changed."
+    },
+    {
+      "start_time": 2529.28,
+      "end_time": 2556.079,
+      "text": "एकदम से उसने अपना बिहेवियर नहीं बदल दिया। वो वही काम कर रहा है जो उसे करना चाहिए। पर हम थोड़ा समझ गलत लेते हैं। ठीक है? ओके। क्या एक और तरीका है हमारे पास इसको कंपेयर करने का? बिल्कुल है। हमारे पास एक और मेथड है इंटीजर क्लास के अंदर मैं ऐसे भी लिख सकता हूं x डॉट इक्व y। तो मेरे पास एक मेथड है इक्वल्स। अगर मैं x डॉट इक्वल्स लिखूं और यहां पे एक और ऑब्जेक्ट पास कर दूं इंटीजर ऑब्जेक्ट y।",
+      "source": "transcript_api",
+      "english_text": "He did not change his behavior suddenly. He is doing what he should be doing. But we misunderstand a little. Ok? Ok. Do we have another way to compare this? Of course it is. We have another method inside the Integer class, I can also write like this x dot equal y. So I have a method equals. If I write x dot equals and pass another object here, integer object y."
+    },
+    {
+      "start_time": 2554.16,
+      "end_time": 2588.319,
+      "text": "अब आंसर मेरा बिल्कुल ट्रू आएगा क्योंकि अब ये वैल्यूज़ कंपेयर करेगा। तो ये मेरे को यहां पे देगा ट्रू। ठीक है? अब मैं यहां पे एक और चीज़ समझ गया। ये जो इक्वल्स नाम का मेथड है ये भी मेरी इंटीजर क्लास में एक्सिस्ट करता होगा। एक्चुअली इक्वल्स इंटीजर से नहीं आया। वो उसकी किसी एक पेरेंट से आया है जो हम बाद में डिस्कस करेंगे। पर अभी आप समझ गए इक्वल्स नाम का ऑब्जेक्ट मेथड भी जावा हमारे इंटीजर क्लास के अंदर होगा। ठीक है? ओके? एक बार इसको फटाफट कोड में देख लेते हैं। तो देखो यहां पे हम थे। हमने इंटजर a = 200 और b = 200 किया था। व्हाट इफ मैं यहां पे जब कंपेयर करूं तो मैं लिखूं a डॉट इंट वैल्यू और",
+      "source": "transcript_api",
+      "english_text": "Now my answer will be absolutely true because now it will compare the values. So this will give me true here. Ok? Now I understood one more thing here. This method named Equals must also exist in my integer class. Actually does not come from Equals Integer. It comes from one of his parents which we will discuss later. But now you understand that the object method named Equals will also be inside our Integer class in Java. Ok? Ok? Let's take a quick look at it in the code. So look here we were. We had integer a = 200 and b = 200. What if when I compare here I write a dot int value and"
+    },
+    {
+      "start_time": 2584.56,
+      "end_time": 2616.24,
+      "text": "यहां पे मैं लिखूं b डॉट इंट वैल्यू। अब अगर मैं इनको कंपेयर करूं तो क्या अब ट्रू आएगा? बिल्कुल ट्रू आएगा। है ना? ओके। एक और तरीका था मैंने आपको बोला इनको कंपेयर करने का। अगर मुझे इंट वैल्यू में कन्वर्ट नहीं करना। मैं लिख सकता हूं a डॉट = b कुछ ऐसे। अब मैंने डायरेक्टली इनको इक्वल्स कर दिया। अब अंदर से क्या हो रहा होगा? बिल्कुल ट्रू आएगा। है ना? तो आई होप आपको समझ आ गया कि मेरे को अगर दो ऑब्जेक्ट को कंपेयर करना होता है तो मैं सीधा उनके रेफरेंसेस इक्वल नहीं कर देता।",
+      "source": "transcript_api",
+      "english_text": "Here I write b dot int value. Now if I compare them, will it be true? It will be absolutely true. Isn't it? Ok. I told you there was another way to compare them. If I don't want to convert to int value. I can write a dot = b something like this. Now I directly equalized them. What might be happening inside now? It will be absolutely true. Isn't it? So I hope you understand that if I have to compare two objects, I do not directly equalize their references."
+    },
+    {
+      "start_time": 2613.68,
+      "end_time": 2647.92,
+      "text": "a इक्वल इक्वल b गलत है। इसका मतलब ये हो रहा है कि मैं आपसे पूछ रहा हूं इफ a एंड b पॉइंट्स टू सेम रेफरेंस सेम रेफरेंस मैं ये कुछ पूछ रहा हूं। ठीक है? यहां पे स्पेलिंग गलत हो गए। हां पॉइंट्स टू सेम रेफरेंस। अगर मैं ऐसा लिखता हूं तो मैं आपसे ये पूछता हूं। ठीक है? आई होप आपको ये समझ आ गया होगा। अब ना हमने एक और नया मेथड देखा जो है इक्वल्स जो हमने सोचा हमारी इंटीजर क्लास में होता होगा। अब फाइनली ना एक बार अपनी इंटीजर क्लास को अच्छे से कंस्ट्रक्ट करते हैं और देखते हैं कि वो कैसे दिखती होगी। हां जी। तो देखो मैंने क्या किया? मैंने अपनी पूरी की",
+      "source": "transcript_api",
+      "english_text": "a equals equal b is wrong. What this means is that I am asking you, if a and b points to the same reference, I am asking this. Ok? The spelling went wrong here. Yes points to same reference. If I write like this then I ask you this. Ok? I hope you have understood this. Now we saw another new method which is Equals which we thought would be in our integer class. Now finally let us construct our integer class properly and see how it would look. Yes sir. So look what I did? I did my best"
+    },
+    {
+      "start_time": 2645.92,
+      "end_time": 2671.76,
+      "text": "पूरी इंटीजर क्लास कंसेप्चुअली खुद से विजुअलाइज़ की और देखा कि वो कैसे दिखती होगी। सबसे पहले नाम होगा इंटीजर क्लास वो फाइनल होगी। अब वो फाइनल क्यों होगी? देखो ये हमने समझा था कि अगर कोई क्लास होती है फाइनल तो आप उसको इन्हहेरिट नहीं कर सकते। हम नहीं चाहते होंगे कि आप भाई इंटीजर को इनहेरिट करके एक नया डेटा टाइप बनाओ। है ना? क्योंकि इनबिल्ट क्लास है। और मैंने बोला ऑब्वियसली वो पब्लिक होगी ताकि कोई भी इसको यूज़ कर सके पैकेज के बाहर भी। जैसे हमने यूज़ किया। इसके अंदर एक प्राइवेट इंट नाम का वैल्यू होती होगी।",
+      "source": "transcript_api",
+      "english_text": "Visualized the entire integer class conceptually myself and saw how it might look. First name will be integer class and that will be final. Now why would she be final? Look, we had understood that if a class is final then you cannot inherit it. We would not want you to create a new data type by inheriting Integer. Isn't it? Because it is an inbuilt class. And I said, obviously it will be public so that anyone can use it even outside the package. Like we used. There must be a value named private int inside it."
+    },
+    {
+      "start_time": 2670.24,
+      "end_time": 2703.28,
+      "text": "इंट वैल्यू ऑब्वियसली वो प्राइवेट होगी क्योंकि हम नहीं चाहते हम डायरेक्टली उसके साथ खेलें। उसके लिए कुछ गेटर सेटर होंगे। है ना? एक कुछ कंस्ट्रक्टर होता होगा। तो मैंने इमेजिन कर लिया ये हमारा क्या है? हमारा कंस्ट्रक्टर है। ठीक है? इसको हम डायरेक्टली कॉल नहीं करते क्योंकि अब डेप्लिकेट होने वाला है। हमने करके भी देख लिया था। अच्छा एक इंट वैल्यू होता होगा मेथड जो हमारी क्या करता होगा? यही वैल्यू रिटर्न कर देता होगा। तो इट्स लाइक अ गेटर। कुछ ऐसा होगा। है ना? एक पब्लिक स्टैटिक इंटीजर वैल्यू ऑफ होगा जो एक इंट x लेता होगा और उसको किसी तरीके से ऑब्जेक्ट में कन्वर्ट करता होगा। रिटर्न क्या करता होगा? इंटीजर। अब वो स्टैटिक",
+      "source": "transcript_api",
+      "english_text": "Int value Obviously it will be private because we don't want to play with it directly. There will be some getter setters for that. Isn't it? There must be some constructor. So I imagined, what is this for us? Is our constructor. Ok? We do not call this directly because now it is going to be duplicated. We had tried it also. Well, there must be an int value method which will do what for us? This would be the value returned. So it's like a getter. Something like this will happen. Isn't it? There will be a public static integer value of which takes an int x and converts it to an object in some way. What will the return do? Integer. now that static"
+    },
+    {
+      "start_time": 2701.839,
+      "end_time": 2734.24,
+      "text": "होगा। है ना? हमने समझा था क्योंकि हम इंटीजर डॉट वैल्यू ऑफ कॉल करते हैं। और ये सारे मेथड पब्लिक तो होंगे ही होंगे क्योंकि ऑब्वियसली हमें इन सबको कॉल करना है बाहर से। अब यहां पे देखो मैंने इसका इंप्लीमेंटेशन लिखा क्योंकि ऑब्वियसली मैंने क्या कहा था? अंदर से हो सकता है ये कंस्ट्रक्टर को ही कॉल करता हो। पर कुछ ऑप्टिमाइजेशन करने के लिए ये कैशिंग का यूज़ करता है। तो इसका इंटरनल ऑप्टिमाइज इसका इंटरनल जो वर्किंग है वो थोड़ी सी कॉम्प्लिकेटेड होगी। पर अभी हमें इसमें पढ़ना नहीं है। हम मान के चलते हैं कुछ तो होगी कि ये इंट x को इंटीजर में कन्वर्ट कर देता होगा। लास्ट हमारा एक इंटीजर अब इक्वल्स नाम का मेथड होगा जो एक इंटीजर लेता होगा x जिसे हमें कंपेयर करना है।",
+      "source": "transcript_api",
+      "english_text": "Will happen. Isn't it? We understood because we call integer dot value off. And all these methods must be public because obviously we have to call all these from outside. Now look here I wrote its implementation because obviously what did I say? Internally it may call the constructor only. But it uses caching to do some optimization. So its internal optimization, its internal working will be a little complicated. But we don't have to read into it right now. We assume that there must be something that converts the int x into an integer. Last, we will now have a method called equals which will take an integer x which we want to compare."
+    },
+    {
+      "start_time": 2733.04,
+      "end_time": 2765.52,
+      "text": "यहां पे थोड़ा सा गलत हो गया। यहां पे हमें लेना चाहिए y। ठीक है? और ये x डॉट इंट वैल्यू को और y डॉट इंट वैल्यू से कन्वर्ट नहीं करेगा। ये करेगा रिटर्न दिस डॉट वैल्यू को कंपेयर करेगा y डॉट वैल्यू से। कुछ इस तरह से मैं इमेजिन कर रहा हूं। कुछ इस तरीके से मैं इमेजिन कर रहा हूं। अंदर से काम होता होगा और हमारी ये इंटीजर क्लास बिल्कुल बढ़िया चलती होगी। पर क्या हमारी इंटीजर क्लास बस इतनी ही होगी? ठीक है? आंसर है नहीं। ये जो हमने यहां पे काम किया है ये है हमारा कंसेप्चुअल ओवरव्यू कि हम ऐसा इमेजिन कर रहे हैं ये तो होगा।",
+      "source": "transcript_api",
+      "english_text": "Something went wrong here. Here we should take y. Ok? And it will not convert x dot int value to y dot int value. This will return this dot value and compare it to the y dot value. This is how I am imagining. I am imagining something like this. The work would be done from within and this integer class of ours would be running very well. But will our integer class be just this? Ok? The answer is no. What we have worked on here is our conceptual overview of what we are imagining will happen."
+    },
+    {
+      "start_time": 2763.28,
+      "end_time": 2797.28,
+      "text": "काफी हद तक तो ये बिल्कुल सेम ही चीजें हैं। लेकिन देखो सबसे पहले इसमें कुछ चेंज है। सबसे पहला तो ये कि ये जो इक्वल्स मेथड है ये इंटीजर का है ही नहीं। ठीक है? ये किसी और क्लास से आता है जो इंटीजर खुद इन्हहेरिट करती है। वो हम अपनी नेक्स्ट क्लास में देखेंगे। पर अभी के लिए आप समझ गए कुछ चेंजेस इसमें हैं। अब ये अंदर से कुछ कैशिंग भी इंप्लीमेंट करता होगा। वो भी हमने अभी तक नहीं सोची कैसे करता होगा। है ना? ऊपर से हमारी जो अगर ओरिजिनल इंटीजर क्लास है अगर आप किसी भी आईडी के अंदर उस पे क्लिक करके जाके देखेंगे इंटीजर क्लास दिखती कैसी है जावा की। तो बहुत सारी चीजें अभी आपको उसमें समझ नहीं आएंगी क्योंकि बहुत सारी चीजें अभी तक",
+      "source": "transcript_api",
+      "english_text": "To a large extent these are exactly the same things. But look, first of all there is some change in it. First of all, this equals method is not for integers at all. Ok? It comes from another class which itself inherits Integer. We will see that in our next class. But for now you understand that there are some changes in it. Now it might also implement some caching internally. We have not yet thought about how he would do that. Isn't it? From the above, which is our original Integer class, if you click on it inside any ID, you will see how the Integer class looks like in Java. So many things you will not understand in it yet because many things have not yet been understood."
+    },
+    {
+      "start_time": 2794.96,
+      "end_time": 2828.319,
+      "text": "हमने नहीं पढ़ी हैं। वो कुछ इंटरफसेस को इंप्लीमेंट करता होगा। कुछ क्लास को एक्सटेंड करता होगा। है ना? उसमें बहुत सारी चीजें होंगी। कुछ एरेस बने होंगे अंदर से। तो हमें इतना अंदर तक डेप्थ में नहीं जाना। हमें इसका एक कंसेप्चुअल ओवरव्यू समझना है कि वो इंटीजर दिखता कैसा होगा। पर एक बार आपने इस जावा की सीरीज को पूरा करा ना आप जावा की कोई भी इंटरनल क्लास के अंदर जाके उसे पढ़ पाओगे कि अंदर से वो कैसे इंप्लीमेंटेड है। आपको हर चीज समझ आएगी। ऐसा नहीं होगा कि आपको कोई चीज समझ नहीं आ पा रही। ठीक है? ऑब्वियसली हर क्लास को अंदर से समझना प्रैक्टिकली इंपॉसिबल है क्योंकि बहुत सारी क्लासेस",
+      "source": "transcript_api",
+      "english_text": "We have not read. It must be implementing some interfaces. Must extend some classes. Isn't it? There will be many things in it. Some ares must have been formed from inside. So we don't have to go that deep. We need to understand a conceptual overview of what that integer would look like. But once you complete this Java series, you will be able to go inside any internal class of Java and read how it is implemented from inside. You will understand everything. It will not happen that you are not able to understand anything. Ok? Obviously, it is practically impossible to understand every class from the inside because there are so many classes."
+    },
+    {
+      "start_time": 2824.96,
+      "end_time": 2858.8,
+      "text": "हैं। पर हमें ये पढ़ पढ़ना जरूरी है कि वो कंसेप्चुअली कैसे दिखती होगी कि कल को अगर आपको कोई बोले कि इंटीजर क्लास बनाओ या फिर डबल बनाओ। फ्लोट क्लास बनाओ कि अंदर से कैसे बना होगा तो आप उसे बना सकते हो। ठीक है? अब एक और चीज ये जो बार-बार हम कैशिंग की बात कर रहे हैं कि भाई वैल्यू ऑफ यूज़ करो। ये कंस्ट्रक्टर यूज़ मत करो क्योंकि ये ज्यादा ऑप्टिमाइज्ड है। क्या मतलब इसका? इनफैक्ट मैं एक स्टेप और आगे जाता हूं और आपको बोलता हूं कि ये जो अभी तक हम कंपेयर कर रहे थे ना ऐसे कि भाई अगर",
+      "source": "transcript_api",
+      "english_text": "Are. But it is important for us to study how it would look conceptually if tomorrow someone tells you to make an integer class or make a double. Create a float class that how it will be created from inside then you can create it. Ok? Now one more thing that we are repeatedly talking about caching is that brother, do the value of use. Don't use this constructor because it is over optimized. What does this mean? In fact, I go one step further and tell you that what we were comparing till now is that if"
+    },
+    {
+      "start_time": 2853.76,
+      "end_time": 2886.56,
+      "text": "आप इंटिजर x = 200 लिखोगे और इंटीजर y = 200 लिखोगे और फिर x = y करोगे तो आपका आंसर फॉल्स आएगा। क्यों आएगा? क्योंकि ये रेफरेंसेस कंपेयर करता है। इसमें एक लूप होल है पता है? अगर आप इसकी जगह यहां पे इंटीजर x में अ लेट्स से 100 स्टोर कराते और y में भी 100 स्टोर कराते और फिर x = y करके देखते आपका आंसर ट्रू आ जाता। देयर इज़ अ वेरी हाई चांस। कंपाइलर टू कंपाइलर डिपेंड कर सकता है पर मोस्टली",
+      "source": "transcript_api",
+      "english_text": "If you write integer x = 200 and integer y = 200 and then x = y, your answer will be false. Why will he come? Because it compares references. It has a loop hole in it, you know? If instead of this you would have stored 100 in integer There is a very high chance. May depend from compiler to compiler but mostly"
+    },
+    {
+      "start_time": 2883.92,
+      "end_time": 2918.64,
+      "text": "आ जाता। क्यों? मैं रीज़न बताता हूं। कैशिंग यही होती है कि इंटीजर क्लास आपकी अंदर से क्या करती है? जब भी आप किसी वेरिएबल को डिक्लअर करते हो, जब भी आप ऐसे लिखते हो इंटीजर x = 200 मैंने आपको क्या बोला? अंदर से क्या होता होगा? अंदर से इंटीजर डॉट वैल्यू ऑफ़ 200 ऐसे आपका एक ऑब्जेक्ट बनता होगा। सेम जब आप लिखते होगे 100 तो अंदर से इंटीजर डॉट वैल्यू ऑफ़ 100 ऐसे ऑब्जेक्ट बनता होगा। तो ये जो वैल्यू ऑफ है हमारा जो अंदर से वैल्यू ऑफ मेथड है ये क्या करता होगा? ये जो कॉमनली यूज़्ड",
+      "source": "transcript_api",
+      "english_text": "Would have come. Why? I will tell you the reason. Caching is what your integer class does internally? Whenever you declare a variable, whenever you write integer x = 200, what did I tell you? What would happen from inside? You will have an object with integer dot value of 200 inside. When you write 100, an object with integer dot value of 100 will be created from inside. So what would this value off method of ours do? This which is commonly used"
+    },
+    {
+      "start_time": 2916.8,
+      "end_time": 2951.28,
+      "text": "वैल्यूज़ हैं और वो कॉमनली यूज़्ड वैल्यूज़ हैं इस रेंज की - 128 से + 127। बेसिकली जो हमारी बाइट डेटा टाइप की रेंज होती है उस रेंज के ना जितने भी इंटिजर्स हैं उनका ऑब्जेक्ट पहले से ही बना के रखता है ताकि आपको बार-बार नए ऑब्जेक्ट ना बनाना पड़े तो क्या होगा जैसे ही आपने इंटीजर को एक बार भी यूज़ करने की कोशिश की तो अंदर से पता है क्या हो रखा है अंदर से ये हो रखा है लेट्स से ये आपकी बहुत बड़ी हीप मेमोरी है अंदर से यहां पे एक ऑब्जेक्ट बना हुआ है -18 का एक ऑब्जेक्ट बना हुआ है -127 का",
+      "source": "transcript_api",
+      "english_text": "The values are and they are commonly used values in the range - 128 to + 127. Basically, which is the range of our byte data type, the object of all the integers in that range is already created so that you do not have to create new objects again and again. What will happen as soon as you try to use the integer even once, then you know from inside what is happening inside. Let's say that this is your huge heap memory. From inside, there is an object of -18 and an object of -127."
+    },
+    {
+      "start_time": 2948.8,
+      "end_time": 2982.4,
+      "text": "और ऐसे करते-करते एक ज़ीरो का होगा और करते-करते आगे जाता रहूंगा होगा + 127 तक। ये सारे ऑब्जेक्ट मेमोरी में पहले से क्रिएटेड हैं। और इनके कॉरेस्पोंडिंग एक स्टक मेमोरी में इनके रेफरेंसेस भी क्रिएटेड हैं। तो लेट्स से एक होगा a वो इसको पॉइंट करता होगा। एक होगा b वो इसको पॉइंट करता होगा। कुछ-कुछ करते-करते यहां पे लेट्स से कोई और वेरिएबल होगा a b वो इसको पॉइंट करता होगा। और यहां पे x y z कोई वेरिएबल होगा जो इसको पॉइंट करता होगा। बहुत सारे वेरिएबल्स बने होंगे। ये सब रेफरेंसेस हैं जो स्टक में बने हुए हैं और ये सब हमारे ऑब्जेक्ट्स हैं जो हीप में",
+      "source": "transcript_api",
+      "english_text": "And by doing this, it will reach zero and by doing this, I will keep moving forward till + 127. All these objects are already created in memory. And their references are also created in a corresponding stack memory. So there will be one of the lets a that points to this. A would be b He would be pointing to this. While doing something, there will be some other variable here than let's a b that will be pointing to this. And here at x y z there will be some variable which will point to it. There will be a lot of variables. These are all the references that remain in the stack and these are all our objects that are in the heap."
+    },
+    {
+      "start_time": 2979.52,
+      "end_time": 3013.119,
+      "text": "बने हैं। ये कैशिंग है कि ये आपका पहले से बना हुआ है। तो जब आप लिखते हो x = 100 मतलब कोई भी आप - 128 से + 127 की रेंज में कोई भी वेरिएबल इंटीजर में डालते हो तो बेसिकली अगर आप लिखते हो इंटीजर x = 100 तो एक्चुअली अब अंदर से ये नहीं हो रहा कि वो x को पहले इंटीजर डॉट इंट वैल्यू कॉल होता होगा। सॉरी वैल्यू ऑफ कॉल होता होगा इंटीजर डॉट वैल्यू ऑफ़ 100 अब ये वैल्यू ऑफ मेथड क्या करेगा अंदर से एक दोबारा कंस्ट्रक्टर कॉल नहीं करेगा इस 100",
+      "source": "transcript_api",
+      "english_text": "Are made. This is caching that it is already yours. So when you write Sorry value of call would be integer dot value of 100 now what will this value of method do from inside again the constructor will not be called this 100"
+    },
+    {
+      "start_time": 3010.8,
+      "end_time": 3044.319,
+      "text": "को बनाने के लिए वो सीधा देखेगा कि क्या मेरी इस मैपिंग में 100 एग्ज़िस्ट करता है 100 तो बना ही होगा इस रेंज में है ना तो उस 100 का जो भी रेफरेंस वेरिएबल है वो ला के x को असाइन कर देगा ठीक है तो लेट्स से वो रेफरेंस वेरिएबल है मैं यहां पे दिखाता हूं कहीं यहां पे होगा आपका 100 और वो रेफरेंस वेरिएबल है लेट्स से h ठीक है मान लेते हैं इग्जैजिन कर लेते हैं h है तो जब भी आप ये स्टेटमेंट लिखते हो इंटीजर x = 100 तो हुआ क्या होगा अंदर से अंदर से कंपाइलर ने इसको लिखा होगा x = इंटीजर",
+      "source": "transcript_api",
+      "english_text": "To create 100, it will directly see whether 100 exists in my mapping. 100 must be created if it is in this range, then whatever is the reference variable of that 100, it will assign it to h, then whenever you write this statement, integer x = 100, what will happen, internally the compiler must have written this x = integer."
+    },
+    {
+      "start_time": 3041.68,
+      "end_time": 3073.839,
+      "text": "डॉट वैल्यू ऑफ़ 100 कुछ ऐसे लिखा होगा अब ये वैल्यू ऑफ नाम का मेथड कॉल हुआ होगा वैल्यू ऑफ नाम के मेथड ने देखा होगा कि क्या 100 नाम का ऑब्जेक्ट मेरे पास पहले से क्रिएटेड है आंसर है हां क्रिएटेड है h के रेफरेंस में एग्ज़िस्ट करता है तो वो अंदर से क्या करेगा x = h कर देगा यानी कि x को भी वही रेफरेंस दे देगा जो h का है अब अपने आप हमारा ये जो x है वो ये यहां आ गया और वो भी इसको पॉइंट करने लग गया। आई होप आपको ये समझ आ गया होगा। अब जब दोबारा आप",
+      "source": "transcript_api",
+      "english_text": "Dot value of 100 must have been written like this. Now the method named value of must have been called. The method named value of must have checked whether I have already created an object named 100. The answer is yes, it has been created. It exists in the reference of h, so what will it do from inside. It will make x = h, that is, it will give the same reference to And he also started pointing it. I hope you have understood this. Now when you again"
+    },
+    {
+      "start_time": 3070.8,
+      "end_time": 3102.72,
+      "text": "लिखोगे इंटीजर y = 100 तो भी सेम होगा। अंदर से दोबारा ये इंटीजर डॉट वैल्यू ऑफ़ 100 ऐसे कॉल होता होगा। यह दोबारा देखेगा कि 100 का क्या एग्ज़िस्ट करता है? हां, एक्सिस्ट करता है h से। तो, यह लिख देगा y = h इंटरनली। यानी कि y भी आकर के हमारा x को पॉइंट करने लग सॉरी h को पॉइंट करने लग जाएगा जो h पॉइंट करता है। है ना? अब देखो x और y दोनों सेम रेफरेंस को पॉइंट",
+      "source": "transcript_api",
+      "english_text": "If you write integer y = 100, it will also be the same. Internally again this integer dot value of 100 would be called like this. It will again look at what exists of 100? Yes, exists from h. So, it will write y = h internally. That means y will also come and start pointing to our x, sorry, it will start pointing to h which points to h. Isn't it? Now see that both x and y are the same reference points."
+    },
+    {
+      "start_time": 3100.559,
+      "end_time": 3135.28,
+      "text": "कर रहे हैं। तो आप खुद सोचो अब जब आप लिखोगे कि क्या x इक्वल इक्वल है y के? तो आंसर तो ऑब्वियसली ट्रू आएगा। है ना? इसलिए आप देखना कि जब भी आप -128 से + 127 की रेंज में ये वाली चीज करने की कोशिश करोगे कि दो रेफरेंसेस को कंपेयर करो तो आंसर आपका मोस्टली ट्रू आ जाएगा। और उसका रीजन यही है कि हमारा जो वैल्यू ऑफ है वो अंदर से कैशिंग का यूज करता है फास्ट करने के लिए। वो इसलिए करता है ताकि बार-बार आपको इस रेंज में नए ऑब्जेक्ट्स ना बनाने पड़े। और ये वो रेंज है जहां पे ज्यादातर कॉमनली यूज़्ड इंटीजर्स बनाए जाते हैं। ठीक",
+      "source": "transcript_api",
+      "english_text": "Are doing. So think for yourself now when you write whether x is equal to y? So the answer will obviously be true. Isn't it? Therefore, you will see that whenever you try to compare two references in the range of -128 to + 127, the answer will be mostly true. And the reason behind this is that the value we have uses internal caching to make it faster. He does this so that you do not have to create new objects in this range again and again. And this is the range where most commonly used integers are created. okay"
+    },
+    {
+      "start_time": 3133.119,
+      "end_time": 3166.24,
+      "text": "है? तो इसलिए हम पहली बात तो दो चीजें कहते थे कि हमारा जो वैल्यू ऑफ है आप वो यूज़ करो। वो ज्यादा ऑप्टिमाइज्ड है ये वाला मेथड। और इसका जो कंस्ट्रक्टर है उसे यूज़ मत करो। इसलिए वो डेप्लिकेट हो रहा है। अगर आप करते हो आपको देखा है आपने वहां पे एक लाइन आ जाती है कि भ मत करो यूज़। हम हमेशा वैल्यू ऑफ प्रेफर करते हैं। इसलिए मैंने यहां पे इसकी इंप्लीमेंटेशन भी दी थी क्योंकि थोड़ी सी कॉम्प्लिकेटेड है क्योंकि अंदर से ये कैशिंग का यूज़ करता है जो कि अभी हमने समझा। दूसरा हमने देखा कि ये जो इक्वल्स मेथड है ये कैसे काम करता है। ठीक है? आई होप आपको ये सारी चीजें अच्छे से क्लियर हुई होंगी। अब बढ़ते हैं हम अपने नेक्स्ट टॉपिक की तरफ और जो",
+      "source": "transcript_api",
+      "english_text": "Is it? So, first of all we used to say two things that you should use the value of ours. This method is more optimized. And don't use its constructor. That's why it is getting duplicated. If you do, you have seen that there is a line saying do not use it. We always prefer value. That's why I have also given its implementation here because it is a little complicated because internally it uses caching which we have just understood. Secondly we saw how the equals method works. Ok? I hope all these things are clear to you. Now let us move towards our next topic and which"
+    },
+    {
+      "start_time": 3164.72,
+      "end_time": 3197.28,
+      "text": "अभी तक हमने एब्स्ट्रक्ट क्लासेस पढ़ी थी ना उसको थोड़ा सा और डेप्थ में जाके समझते हैं। अब देखो एब्स्ट्रैक्ट क्लासेस के बारे में हम ऑलरेडी पढ़ चुके हैं। एब्स्ट्रैक्ट क्लास वो क्लास होती है व्हिच कैन नॉट बी इंस्टेंशिएटेड। है ना? बस यही इसकी लाइन है व्हिच कैन नॉट बी इंस्टेंशिएटेड। बट काफी लोग ना अभी भी एब्स्ट्रैक्ट क्लास में कंफ्यूज हो जाते हैं और ये इंटरव्यू स्पेसिफिक क्वेश्चन बहुत बनते हैं कि क्या एब्स्ट्रैक्ट क्लासेस में कंस्ट्रक्टर हो सकते हैं क्या? है ना? क्या वो क्लास फाइनल हो सकती है? क्या उसमें आपके स्टैटिक मेथड्स हो सकते हैं? ऐसे बहुत सारे क्वेश्चंस हमारे एब्स्ट्रैक्ट क्लास के ऊपर बन जाते हैं।",
+      "source": "transcript_api",
+      "english_text": "Till now we have studied abstract classes, let us understand them in a little more depth. Now look, we have already read about abstract classes. Abstract class is that class which cannot be instantiated. Isn't it? That's its line which cannot be instantiated. But many people still get confused about abstract classes and these interview specific questions arise like whether abstract classes can have constructors? Isn't it? Can that class be final? Can you have static methods in it? Many such questions are asked on our abstract class."
+    },
+    {
+      "start_time": 3195.28,
+      "end_time": 3230.0,
+      "text": "अगर हम इन क्वेश्चन को अपने बेसिक फर्स्ट थॉट प्रिंसिपल से सोचे तो हमें आंसर्स मिलते जाएंगे। तो हम ना एक-एक करके उन क्वेश्चंस के आंसर देते हैं क्योंकि ये बहुतेंट है इंटरव्यू पर्सेक्टिव से और आपका ना माइंड खोलते हैं ये किसी भी क्लास को लेके इन जनरल अगर हम एब्स्ट्रैक्ट क्लास की भी बात कर रहे हैं ये लॉजिक आप किसी भी क्लास पे अप्लाई करोगे ना आपको आंसर वहीं मिलेंगे। ठीक है? तो इसको फटाफट कोड में चलते हैं और वहीं देखते हैं। तो देखो यहां पे मैंने अगेन अपनी डेमो 4 डॉट जावा करके खाली फाइल बना रखी है। और यहां पे मैंने कुछ पॉइंटर्स लिखे हैं जो एब्स्ट्रैक्ट क्लासेस के लिए ट्रू होते हैं। तो अगर आप इन पॉइंटर्स को एक बार समझ लो। यही हमारी एब्स्ट्रक्ट क्लास होती है भाई व्हिच कैन नॉट बी इंस्टेंशिएटेड डायरेक्टली। उसको इंस्टेंशिएट करने के लिए",
+      "source": "transcript_api",
+      "english_text": "If we think about these questions from our basic first thought principle, we will get answers. So, we do not give answers to those questions one by one because these are mostly from interview perspective and they do not open your mind for any class. In general, if we are talking about abstract class also, you will apply this logic on any class and you will get the answers there only. Ok? So let's quickly go into the code and see it there. So look, here again I have created an empty file by doing my demo 4.java. And here I have written some pointers which are true for abstract classes. So if you understand these pointers once. This is our abstract class which cannot be instantiated directly. to instantiate it"
+    },
+    {
+      "start_time": 3228.4,
+      "end_time": 3262.64,
+      "text": "आपको क्या करना पड़ेगा? उसको इन्हहेरिट करना पड़ेगा। उसको ऑब्जेक्ट बनाना पड़ेगा। दूसरी जो इनहेरिटेड क्लास है उसका कैन कंटेन एब्स्ट्रैक्ट मेथड जो मेथड विदाउट इंप्लीमेंटेशन होते हैं। कैन कंटेन नॉर्मल मेथड्स दोनों मेथड्स हो सकते हैं और इज मेंट टू बी एक्सटेंडेड। ये बनी ही इसलिए है कि इसको आप एक्सटेंड करो और इसका बेसिकली जो भी इसकी एक्सटेंडेड क्लास है उसके ऑब्जेक्ट्स बनाओ। ठीक है? ओके? ये सब हमें पता है। इन सारे पॉइंटर्स को मद्देनजर रखते ही हम कुछ क्वेश्चंस के आंसर करेंगे। ठीक है? तो सबसे पहले मैं क्या करता हूं? एक एब्स्ट्रैक्ट क्लास बना देता हूं अपनी एब्स्ट्रैक्ट क्लास लेट्स से एनिमल और कुछ ऐसे और इसमें अब ये मेरी",
+      "source": "transcript_api",
+      "english_text": "What will you have to do? He will have to inherit it. He will have to make an object. Secondly, the inherited class can contain abstract methods which are methods without implementation. Can contain normal methods and is meant to be extended. It is created so that you extend it and basically create objects of whatever its extended class is. Ok? Ok? We know all this. Keeping all these pointers in mind, we will answer some questions. Ok? So what's the first thing I do? I create an abstract class with my abstract class let's say animal and something like this and now this is my"
+    },
+    {
+      "start_time": 3261.28,
+      "end_time": 3295.52,
+      "text": "एब्स्ट्रैक्ट क्लास है तो इसमें एक मैं नॉर्मल मेथड रख लेता हूं और एक अपना कंक्रीट सॉरी अपना एब्स्ट्रक्ट मेथड रख लेता हूं तो एक है मेरा एब्स्ट्रैक्ट मेथड लेट्स से एब्स्ट्रैक्ट वॉइड मेक साउंड क्योंकि एनिमल्स कैन मेक साउंड राइट इसको मैंने यहीं ऐसे ही छोड़ दिया और लेट्स से एक मेथड है मेरा अ वॉयड स्लीप और ये मेरा नॉर्मल मेथड है। इसमें मैं लेट्स से इसको सिस्टम डॉट आउट डॉट प्रिंट एलn ऐसे कुछ कर देता हूं। प्रिंट एलn स्लीपिंग कुछ भी ऐसे। ठीक है? अब इमेजिन करो मैं एक",
+      "source": "transcript_api",
+      "english_text": "There is an abstract class, so in it I keep one normal method and one of my concrete sorry, I keep my abstract method, so one of my abstract method is let's abstract void make sound because animals can make sound right, I left it here like this and one method from let's is my void sleep and this is my normal method. In this I let's make it something like system dot out dot print ln. Print n sleeping anything like that. Ok? Now imagine I am a"
+    },
+    {
+      "start_time": 3291.839,
+      "end_time": 3326.0,
+      "text": "और क्लास बनाता हूं। लेट्स से क्लास डॉग डॉग। ठीक है? डॉग भी एक एनिमल है। तो मैं कहता हूं वो उसको एक्सटेंड करता होगा। एक्सटेंड्स एनिमल और उसका काम होगा इस मेक साउंड को क्या करना? मेक साउंड को ओवराइड करना। तो हम यहां पे ऐसे लिखते थे ओवराइड। और वो क्या करता था? अवॉइड आपका मेक साउंड वो ओवराइड करता था। ठीक है? अब ये इसको कैसे ओवराइड कर सकता है? एक डॉग कैसी आवाज निकालता है? मेकिंग बार्किंग साउंड कुछ ऐसे। ठीक है? तो ये हमारी क्लास होती",
+      "source": "transcript_api",
+      "english_text": "And I create a class. Class dog dog from lets. Ok? Dog is also an animal. So I say he must be extending it. Extends Animal and its job will be to make this sound what? Overriding the make sound. So here we used to write override like this. And what did he do? Avoid overrides the sound you make. Ok? Now how can it override this? What sound does a dog make? Making barking sounds like this. Ok? so this would be our class"
+    },
+    {
+      "start_time": 3324.559,
+      "end_time": 3359.359,
+      "text": "थी। और अगर हमें इसका ऑब्जेक्ट बनाना पड़ता था तो हम ऐसे करते थे एनिमल ए = न्यू। यहां पे हम लिख सकते थे डॉग। और हम a डॉट मेक साउंड कॉल करते और अगर हम इसे प्रिंट करते तो हमारा मेकिंग बार्किंग साउंड आ जाता। बहुत बढ़िया। पर क्या हम ऐसा कर सकते थे? एनिमल a इक्वल टू न्यू एनिमल। न्यू एनिमल ऐसे नहीं कर सकते थे क्योंकि एरर आ जाता कि भाई कैन नॉट इंस्टेंशिएट एनिमल टाइप क्योंकि वो तो एब्स्ट्रैक्ट क्लास है। तो हमें बस यहां पे न्यू डॉक करना पड़ता। ठीक है? ये सब तो हमें पता है। ओके? अब पहला क्वेश्चन आता है। क्वेश्चंस को मैं यहां लिखता हूं क्वेश्चंस।",
+      "source": "transcript_api",
+      "english_text": "Was. And if we had to create its object, we would do it like this: Animal a = new. Here we could have written dog. And we would call a dot make sound and if we printed it our making barking sound would come. very nice. But could we do this? Animal a is equal to new animal. New Animal could not be created like this because an error would have occurred that brother cannot instantiate Animal type because it is an abstract class. So we would just have to do a new dock here. Ok? We know all this. Ok? Now comes the first question. I write the questions here."
+    },
+    {
+      "start_time": 3357.28,
+      "end_time": 3390.88,
+      "text": "और यह सब वो हैं जो इंटरव्यू में कई बार पूछे जाते हैं। पहला क्वेश्चन आता है कैन एब्स्ट्रैक्ट क्लासेस हैव हैव कंस्ट्रक्टर्स? क्या एब्स्ट्रैक्ट क्लास के पास कंस्ट्रक्टर हो सकते हैं? क्वेश्चन मार्क सोचो बिल्कुल फर्स्ट थॉट प्रिंसिपल अप्लाई करो। देखो कंस्ट्रक्टर करता क्या है? कंस्ट्रक्टर कहता है कि अगर कोई ऑब्जेक्ट इसका कल को क्रिएट हुआ तो उसमें मुझे क्या वैल्यूज़ डालनी है? तो लेट्स से यहां पे मेरा ये एनिमल है। इसमें मेरा एक अ स्ट्रिंग टाइप का डेटा टाइप भी है। लेट्स से अ नेम नेम ऑफ एनिमल। ठीक है? कुछ ऐसे।",
+      "source": "transcript_api",
+      "english_text": "And all these are those which are asked many times in interviews. The first question comes is can abstract classes have constructors? Can abstract classes have constructors? Question Mark: Think exactly and apply the first thought principle. Look what the constructor does? The constructor says that if an object is created yesterday then what values ​​do I have to put in it? So let's say this is my animal here. I also have a string type data type in it. Let's say a name of animal. Ok? Something like this."
+    },
+    {
+      "start_time": 3389.52,
+      "end_time": 3416.16,
+      "text": "और अगर मैं इस एब्स्ट्रैक्ट क्लास में कंस्ट्रक्टर बना दूं एनिमल और मैं क्या करूं? नेम और यहां पे मैं एक नेम एक्सपेक्ट कर लूं। स्ट्रिंग नेम। तो मैंने अपना एक पैरामीटराइज़ कंस्ट्रक्टर बना दिया। और मैं क्या करता हूं? दिस डॉट नेम इक्वल टू नेम। जो भी यहां पे नेम आया उसको नेम में भर दो। तो क्या मुझे कोई एरर आएगा? बिल्कुल नहीं आएगा। यानी कि यस आंसर है यस।",
+      "source": "transcript_api",
+      "english_text": "And if I create a constructor in this abstract class Animal and what do I do? Name and here I expect a name. String Name. So I made my own parameterized constructor. And what do I do? This dot name is equal to name. Whatever name comes here, fill it in name. So will I get any error? Will not come at all. That means yes, the answer is yes."
+    },
+    {
+      "start_time": 3412.88,
+      "end_time": 3445.599,
+      "text": "कंस्ट्रक्टर्स आर अलाउड। यस। ठीक है? पर क्यों अलाउड है? जब मैं इसका ऑब्जेक्ट ही नहीं बना सकता तो इस कंस्ट्रक्टर का करूंगा क्या? क्योंकि अगर हम बिल्कुल फर्स्ट थॉट प्रिंसिपल से चलें तो कंस्ट्रक्टर का काम तभी नहीं आता जब आप इस क्लास का ऑब्जेक्ट बनाते हो। पर तब भी आता है जब आप इसके चाइल्ड का ऑब्जेक्ट बनाते हो। क्योंकि हमने पता है कि जब भी ये चाइल्ड का ऑब्जेक्ट बनेगा। जब भी डॉग का ऑब्जेक्ट बनेगा तो पेरेंट क्लास का कंस्ट्रक्टर कॉल होगा ही होगा। तो मैं यहां पे ऐसे कर सकता हूं कि मैं यहां पे एक कंस्ट्रक्टर बनाऊंगा लेट्स से अपने डॉक",
+      "source": "transcript_api",
+      "english_text": "Constructors Are Aloud. Yes. Ok? But why is it loud? What will I do with this constructor when I can't create its object? Because if we follow the first thought principle, then the work of constructor does not come only when you create an object of this class. But it also comes when you create an object of its child. Because we know that whenever it becomes a child object. Whenever a Dog object is created, the constructor of the parent class will be called. So what I can do here is I will create a constructor here from Let's go to my doc"
+    },
+    {
+      "start_time": 3441.68,
+      "end_time": 3475.68,
+      "text": "टाइप का और वो एक स्ट्रिंग नेम लेता होगा इस डॉग का और वो क्या करता होगा वो कॉल करता होगा सुपर और इस नेम को दे देता होगा। बेसिकली उसने क्या किया? सुपर का मतलब मैं हमने पढ़ा था क्या होता है कि अपने पेरेंट क्लास के कंस्ट्रक्टर को कॉल करो। तो जैसे ही आपने डॉग का ऑब्जेक्ट बनाया और यहां पे कोई नेम दिया वो कॉल करेगा पेरेंट का कंस्ट्रक्टर। पेरेंट का कंस्ट्रक्टर ये रहा और वो इस नाम में जो भी यहां पे नाम इसको आएगा वो असाइन कर देगा। ठीक है? तो क्योंकि डॉग का ऑब्जेक्ट बन सकता है और डॉग का ऑब्जेक्ट बनाने के लिए आप उसे एक वैल्यू दो और वो पेरेंट का कंस्ट्रक्टर कॉल कर देगा। इसलिए हमारी",
+      "source": "transcript_api",
+      "english_text": "Type and he would be taking a string name of this dog and what he would be doing would be calling super and giving this name. Basically what did he do? What we read about super is that you call the constructor of your parent class. So as soon as you create an object of Dog and give a name here, it will call the constructor of the parent. Here is the constructor of the parent and it will assign whatever name comes here in this name. Ok? So because an object of Dog can be created and to create an object of Dog, you give it a value and it will call the constructor of the parent. Therefore our"
+    },
+    {
+      "start_time": 3474.16,
+      "end_time": 3499.2,
+      "text": "एब्स्ट्रैक्ट क्लासेस में कंस्ट्रक्टर्स अलाउड हैं। अब इसको आप ऐसे डिक्लअ नहीं कर सकते। लेट्स से मैंने एक कुत्ते का नाम दिया ब्रूनो। कुछ इस तरीके से। अब ये अलाउड है। अब ये जाएगा यहां पे। ये कॉल करेगा अपने पेरेंट कंस्ट्रक्टर को। और पेरेंट्स कंस्ट्रक्टर क्या करेगा? इस नेम वाली फील्ड में ब्रूनो डाल देगा। अब अगर यहां पे मैंने कोई मेथड नहीं बना रखा। पर अगर कोई मेथड होगा ना गेट नेम तो वो ये वाला जो नाम यहां पे हमने डाला है जो कि ब्रूनो है वो हमें लाके प्रिंट कर देगा।",
+      "source": "transcript_api",
+      "english_text": "Constructors are allowed in abstract classes. Now you cannot declare it like this. From Lettuce I named a dog Bruno. Something like this. Now this is loud. Now it will go here. This will call its parent constructor. And what will the parent constructor do? Will put Bruno in this name field. Now if I have not made any method here. But if there is a method to get the name, then the name we have entered here, which is Bruno, will fetch us and print it."
+    },
+    {
+      "start_time": 3497.2,
+      "end_time": 3524.96,
+      "text": "ठीक है? तो आई होप आपको इसका आंसर मिल गया होगा। अब अगला हमारा क्वेश्चन है भाई कैन एब्स्ट्रैक्ट क्लासेस कैन बी मेड फाइनल और कैन एब्स्ट्रैक्ट क्लासेस बी फाइनल। फाइनल कीवर्ड आप उन्हें लगा सकते हो क्या? सोचो एक बार इसको ध्यान से। फाइनल कीवर्ड का मतलब क्या होता है? मैं कह रहा हूं अगर मैं किसी भी क्लास के आगे फाइनल लगाऊंगा तो मैं कहना चाहता हूं कंपाइलर को कि इस क्लास को कोई भी इन्हहेरिट नहीं कर सकता।",
+      "source": "transcript_api",
+      "english_text": "ok? So I hope you have got the answer to this. Now our next question is brother can abstract classes be made final and can abstract classes be final. Can you use the final keyword? Think carefully about this once. What does final keyword mean? I am saying that if I put final in front of any class, then I want to tell the compiler that no one can inherit this class."
+    },
+    {
+      "start_time": 3523.119,
+      "end_time": 3557.92,
+      "text": "पर एब्स्ट्रैक्ट क्लास का मतलब ही होता है कि उसको इनहेरिट करना पड़ेगा क्योंकि उसके पास एब्स्ट्रैक्ट मेथड है। अगर आप उसको इन्हहेरिट ही नहीं करोगे तो इन एब्स्ट्रैक्ट मेथड को तो कभी कोई डेफिनेशन ही नहीं मिलेगी। इसलिए ये अलाउड नहीं है। आप पहले देख लो। अगर मैं यहां पे लगा दिया फाइनल फाइनल कीवर्ड तो हमारा एरर आ जाएगा। द क्लास एनिमल कैन इदर बी एब्स्ट्रैक्ट और फाइनल दोनों आप नहीं कर सकते। ठीक है? बिल्कुल सही एरर है। यानी कि दिस इज़ नॉट अलाउड। और आपको रीज़न भी पता है क्योंकि फाइनल का मतलब ही होता है कि आप उसे इन्हहेरिट नहीं कर सकते। और एब्स्ट्रैक्ट का मतलब होता है इन्हहेरिट करना पड़ेगा। तो दोनों मिलाकर के तो बहुत ही ऑक्सिममोनिक",
+      "source": "transcript_api",
+      "english_text": "But abstract class means that it has to be inherited because it has abstract methods. If you don't inherit it then these abstract methods will never get any definition. That's why it is not loud. You take a look first. If I put final final keyword here then we will get an error. The Class Animal Can't Be Both Abstract and Final You can't. Ok? Absolutely correct error. That means this is not allowed. And you also know the reason because final means that you cannot inherit it. And abstract means it has to be inherited. So both together are very oxymonic."
+    },
+    {
+      "start_time": 3555.359,
+      "end_time": 3589.92,
+      "text": "टर्म्स हो गए। राइट? इसलिए जावा इसको अलाउ नहीं करता। ओके? अब तीसरा क्वेश्चन कैन एब्स्ट्रैक्ट क्लास हैव स्टैटिक मेथड्स? क्या स्टैटिक मेथड्स हो सकते हैं या वेरिएबल्स? वगैरह-वगैरह क्या हो सकते हैं? अब देखो स्टैटिक मेथड्स या स्टैटिक वेरिएबल्स वो मेथड्स होते हैं या वेरिएबल्स होते हैं जो किसी क्लास से एसोसिएट हो ना कि उसके ऑब्जेक्ट से। पर ऑब्वियसली आप एक एब्स्ट्रैक्ट क्लास का ऑब्जेक्ट तो नहीं बना सकते पर जो स्टैटिक मेथड्स हैं या स्टैटिक वेरिएबल्स हैं वो तो क्लास से लिंक है। क्लास तो हमारी बनी हुई है एनिमल",
+      "source": "transcript_api",
+      "english_text": "Terms are done. Right? Therefore Java does not allow it. Ok? Now the third question is can abstract class have static methods? Can there be static methods or variables? What could it be? Now see, static methods or static variables are those methods or variables which are associated with a class and not with its object. But obviously you cannot create an object of an abstract class but the static methods or static variables are linked to the class. Our class has become animal."
+    },
+    {
+      "start_time": 3588.24,
+      "end_time": 3622.0,
+      "text": "क्लास। तो कोई दिक्कत नहीं है। क्या प्रॉब्लम हो जाएगी? अगर आप में स्टैटिक मेथड होगा या स्टैटिक वेरिएबल होगा। राइट? तो बिल्कुल हो सकते हैं। आंसर है यस। इनफैक्ट एक एब्स्ट्रैक्ट क्लास में स्टैटिक मेथड भी हो सकते हैं, स्टैटिक वेरिएबल भी हो सकते हैं, स्टैटिक ब्लॉक भी हो सकते हैं। ठीक है? तो चाहूं तो मैं इसी में एक स्टैटिक अ लेट्स से स्ट्रिंग एक कीवर्ड रख सकता हूं। टाइप सॉरी एक वेरिएबल रख सकता हूं टाइप। कोई दिक्कत नहीं है। ये सब सही है। ठीक है? और मैं एक स्टैटिक मेथड भी बना सकता हूं। लेट्स से तो स्टैटिक वॉइड लेट्स से मैंने बनाया ईट। तो",
+      "source": "transcript_api",
+      "english_text": "Class. So there is no problem. What problem will there be? If you have static method or static variable. Right? So it can definitely happen. The answer is yes. In fact an abstract class can also have static methods, static variables, and static blocks. Ok? So if I want, I can put a string a keyword from a static a lets in this. Type Sorry can have a variable type. There is no problem. All this is correct. Ok? And I can also create a static method. I made a brick from lattices and static void lattices. so"
+    },
+    {
+      "start_time": 3620.48,
+      "end_time": 3653.839,
+      "text": "ये भी पॉसिबल है। ठीक है? अगर इसमें मैं कोई डिक्लेरेशन दे दूं। राइट? ऑब्वियसली इसको मैं एब्स्ट्रैक्ट नहीं बना सकता क्योंकि ये सेंस नहीं बनाएगा क्योंकि स्टैटिक का मेथड क्लास से लिंक है। उसको भी अगर आप एब्स्ट्रैक्ट बना दोगे तो उसको तो कोई और डिफाइन ही नहीं करेगा। ये भी हमने पढ़ा था। है ना? तो हम ये भी कर सकते हैं। अभी के लिए मैं ये सारी हटा देता हूं। ठीक है? ओके। अब चलते हैं अपने फोर्थ क्वेश्चन की तरफ। लेट्स से फोर्थ क्वेश्चन हमारा कहता है, कैन एब्स्ट्रैक्ट क्लासेस? कैन एब्स्ट्रैक्ट क्लासेस हैव प्राइवेट मेथड्स? क्या हमारे एब्स्ट्रैक्ट क्लासेस के पास प्राइवेट मेथड्स हो सकते",
+      "source": "transcript_api",
+      "english_text": "This is also possible. Ok? If I give any declaration in this. Right? Obviously I can't make this abstract because it wouldn't make sense since the static method is linked to the class. If you make it abstract then no one else will define it. We had read this also. Isn't it? So we can do this also. Let me remove all this for now. Ok? Ok. Now let's move towards our fourth question. Our fourth question from Let's says, Can abstract classes? Can Abstract Classes Have Private Methods? Can our abstract classes have private methods"
+    },
+    {
+      "start_time": 3651.76,
+      "end_time": 3686.4,
+      "text": "हैं? देखो सिंपल सा लॉजिक है। क्यों नहीं हो सकते? प्राइवेट मेथड्स बस वो मेथड होते हैं जो इस क्लास के बाहर एक्सेसिबल नहीं है। ठीक है? अगर कोई मेथड इस क्लास के बाहर एक्सेसिबल नहीं है और अगर वो आपने अच्छे से डिफाइन किया हुआ है। कोई दिक्कत नहीं है। प्राइवेट मेथड्स आर अलाउड। मैं लिख सकता हूं प्राइवेट लेट्स से वॉइड ईट। ईट नाम का एक मेथड लिख सकता हूं। कोई दिक्कत नहीं है। बिल्कुल अलाउड है। ठीक है? पर प्रॉब्लम ये है कि ये जो मेरा प्राइवेट मेथड है ये खुद एब्स्ट्रैक्ट नहीं होना चाहिए। ये अगर एब्स्ट्रैक्ट हो गया। लेट्स से यहां पे मैंने लिख दिया",
+      "source": "transcript_api",
+      "english_text": "are? Look, it's a simple logic. Why can't it happen? Private methods are simply methods that are not accessible outside the class. Ok? If any method is not accessible outside this class and if it is well defined by you. There is no problem. Private methods are allowed. I can write private lets say void eat. I can write a method named eat. There is no problem. Absolutely loud. Ok? But the problem is that this personal method of mine should not itself be abstract. If this becomes abstract. I wrote here late"
+    },
+    {
+      "start_time": 3684.4,
+      "end_time": 3714.64,
+      "text": "एब्स्ट्रैक्ट और इसको मैंने बंद कर दिया। ये बिल्कुल अलाउड नहीं है। क्यों अलाउड नहीं है? क्योंकि भाई देखो ईट एक प्राइवेट मेथड है। यानी कि इसकी विज़िबिलिटी बाहर है ही नहीं। और फिर आप कह रहे हो ये एब्स्ट्रैक्ट भी है कि भ चाइल्ड क्लास इसको डिफाइन करेगी। पर चाइल्ड क्लास को तो ये दिखेगा ही नहीं ना। विज़िबल ही नहीं होगा। तो ये तो प्रॉब्लमैटिक है। इसलिए इसमें एरर आ जाएगा। द एब्स्ट्रक्ट मेथड ईट इन टाइप एनिमल कैन ओनली सेट अ विज़िबिलिटी मॉडिफायर। या तो पब्लिक हो सकता है या प्रोटेक्टेड हो सकता है। ऐसे आप नहीं कर सकते। ठीक है? तो ये अलाउड नहीं है। तो हां प्राइवेट मेथड्स आर अलाउड।",
+      "source": "transcript_api",
+      "english_text": "Abstract and I closed it. This is not loud at all. Why is it not loud? Because brother, look, this is a private method. That means its visibility is not outside at all. And then you are saying that this is abstract and the child class will define it. But the child class will not be able to see this. Will not be visible at all. So this is problematic. Therefore an error will occur in it. The abstract method Eat in type Animal can only set a visibility modifier. Can be either public or protected. You can't do it like this. Ok? So this is not loud. So yes private methods are allowed."
+    },
+    {
+      "start_time": 3710.96,
+      "end_time": 3740.559,
+      "text": "यस बट नॉन एब्स्ट्रैक्ट ये रूल है। ठीक है? ओके। बहुत बढ़िया। तो इस एरर को दूर कर लेते हैं। इसको अभी के लिए हम हटा देते हैं। अब अपना अगला क्वेश्चन वो है कि कैन एब्स्ट्रैक्ट क्लासेस हैव फाइनल मेथड्स? अब ये बताओ कि क्या फाइनल मेथड्स हो सकते हैं हमारी एब्स्ट्रैक्ट क्लास के अंदर? अगेन आंसर इज़ व्हाई नॉट। यस बिल्कुल हो सकते हैं।",
+      "source": "transcript_api",
+      "english_text": "Yes but non abstract this is the rule. Ok? Ok. very nice. So let's remove this error. Let's remove this for now. Now our next question is, can abstract classes have final methods? Now tell me whether there can be final methods inside our abstract class? Again the answer is why not. Yes it can definitely happen."
+    },
+    {
+      "start_time": 3738.88,
+      "end_time": 3772.48,
+      "text": "क्योंकि फाइनल मेथड्स कौन से होते हैं? अगर मैं किसी भी मेथड को बोलता हूं फाइनल इसका मतलब मैं चाहता हूं कि वह मेथड ओवराइड नहीं हो सकता। तो अगर मान लो मैंने इस स्लीप को फाइनल बना दिया फाइनल वॉइड स्लीप कुछ इस तरीके से। तो इसका मतलब मैं बस ये कह रहा हूं ये जो मेरा डॉग है या कोई भी ऐसा क्लास जो एनिमल को एक्सटेंड करेगी वो इस स्लीप को ओवराइड नहीं कर सकती। बाकी किसी को भी कर सकती है। कोई दिक्कत नहीं है। स्लीप मैंने यहीं पे डिफाइन कर दिया। है ना? तो ये कोई दिक्कत नहीं है। पर ऑब्वियसली अगेन ये एब्स्ट्रैक्ट नहीं होना चाहिए। फाइनल मेथड तो एब्स्ट्रैक्ट हो ही नहीं सकते। अगर",
+      "source": "transcript_api",
+      "english_text": "Because what are the final methods? If I call any method final it means that I want that method cannot be overridden. So if suppose I made this sleep final, final void sleep in this way. So what I am saying is that my Dog or any class that extends Animal cannot override this sleep. The rest can be done by anyone. There is no problem. I defined sleep here. Isn't it? So this is not a problem. But obviously again it should not be abstract. फाइनल मेथड तो एब्स्ट्रैक्ट हो ही नहीं सकते। If"
+    },
+    {
+      "start_time": 3771.04,
+      "end_time": 3805.52,
+      "text": "मैंने ऐसा कुछ लिख दिया और इसको मैंने डिफाइन ही नहीं किया। अब ये ऑब्वियसली एब्स्ट्रैक्ट तो हो ही नहीं सकते। एरर आ जाएगा। मतलब कोई सेंस ही नहीं बनाना ना। आपने एब्स्ट्रैक्ट बना दिया एक फाइनल मेथड को। फाइनल कहता है ओवराइड नहीं कर सकते। और एब्स्ट्रैक्ट कहता है ओवराइड करना पड़ेगा। अगेन ऑक्सिममोनोनिक टर्म्स हैं। तो यस हो सकते हैं। बट अगेन नॉन एब्स्ट्रैक्ट। ओके। अब एक और क्वेश्चन देख लेते हैं। यह भी बहुत इंपॉर्टेंट है। कैन एब्स्ट्रैक्ट क्लासेस हैव नो एब्स्ट्रैक्ट मेथड? क्या ऐसा भी हो सकता है क्या कि हमें एक",
+      "source": "transcript_api",
+      "english_text": "I wrote something like this and I didn't even define it. Now this obviously cannot be abstract. Error will come. That means not making any sense. You have made an abstract a final method. Final says can't override. And the abstract says it has to be overridden. Again oxymemonic terms. So yes it can be. But again non abstract. Ok. Now let us look at another question. This is also very important. Can Abstract Classes Have No Abstract Methods? Is it possible that we have a"
+    },
+    {
+      "start_time": 3804.48,
+      "end_time": 3836.079,
+      "text": "एब्स्ट्रैक्ट क्लास बनाएं। उसके अंदर कोई एब्स्ट्रैक्ट मेथड ही ना बनाएं। आंसर है यस। बिल्कुल हो सकता है। अब आप कहोगे भैया ऐसा क्यों? ऐसी एब्स्टैक्ट क्लास हमें बनानी ही क्यों है जिसके अंदर कोई मेथड ही एब्स्ट्रैक्ट ही ना हो। बिल्कुल ऐसा हो सकता है कि मान लो आपके पास ये एब्स्ट्रैक्ट क्लास है। ठीक है? इसमें ये भी एब्स्ट्रैक्ट मेथड ना होता। अगर मैं आपको बना के भी दिखाऊं, यह जो मेक साउंड है, यह अपने आप की डेफिनेशन भी देता, तब भी अलाउड होता, कोई एरर नहीं आ रहा। और इसका रीज़न यह है कि आपने ऐसा इसलिए किया होगा कि आप चाहते होगे कि इस एब्स्ट्रैक्ट क्लास का ना कोई ऑब्जेक्ट ना बना पाए बस।",
+      "source": "transcript_api",
+      "english_text": "Create abstract class. Do not create any abstract method inside it. The answer is yes. Absolutely possible. Now you will say brother why so? Why do we have to create such an abstract class in which no method is abstract? Of course it can happen that suppose you have this abstract class. Ok? There is no abstract method in this either. Even if I make it and show you the sound it makes, it gives its own definition, it would still be loud, no error is coming. And the reason for this is that you must have done this because you want that no one can create an object of this abstract class."
+    },
+    {
+      "start_time": 3833.92,
+      "end_time": 3866.72,
+      "text": "लेकिन मैंने सबको डिफाइन जरूर कर दिया। अब आप ऐसा क्यों चाहोगे? कोई यूज़ केस हो सकता है। आप चाहोगे कोई भी डायरेक्टली एनिमल का ऑब्जेक्ट ना बनाएं। पहले एनिमल को इन्हहेरिट करें और उसका ऑब्जेक्ट बनाएं। अब लेकिन आपने इसमें कोई भी एब्स्ट्रैक्ट मेथड नहीं छोड़ा। ठीक है? आपने कहा हर मेथड आप ओवराइट जरूर कर सकते हो। पर मैं उसकी एक डिफॉल्ट इंप्लीमेंटेशन भी दूंगा। अब मेक साउंड की आपने कोई डिफॉल्ट इंप्लीमेंटेशन यहां दी होगी। लेट्स से यहीं पे हम यहां पे लिख सकते हैं मेकिंग साउंड। तो कुछ डिफॉल्ट इंप्लीमेंटेशन दे दी कि अगर कोई मेक साउंड को ओवराइड करेगा तो ठीक है नहीं करेगा तो मेकिंग साउंड",
+      "source": "transcript_api",
+      "english_text": "But I definitely defined everyone. Now why would you want that? There may be a use case. You don't want to make any direct animal objects. First inherit Animal and create its object. Now but you did not leave any abstract method in it. Ok? You said that you can definitely overwrite every method. But I will also give a default implementation of it. Now you might have given some default implementation of Make Sound here. Here in Lets we can write making sound. So some default implementation was given that if someone overrides make sound then it is okay, if not then making sound is fine."
+    },
+    {
+      "start_time": 3864.72,
+      "end_time": 3898.0,
+      "text": "प्रिंट हो जाएगा। कुछ इस तरीके से। ठीक है? तो ये भी आप कर सकते हो। अब यही वो कुछ छह इंपॉर्टेंट क्वेश्चंस हैं जो एब्स्ट्रैक्ट क्लासेस के बारे में आते हैं और लोगों को कंफ्यूज किया जाता है। बट अगर आपका कोर लॉजिक बिल्कुल क्लियर है कि फाइनल मेथड्स क्या होते हैं? प्राइवेट मेथड्स क्या होते हैं? स्टैटिक क्या होता है? तो आप इसका आंसर कर सकते हो। इनफैक्ट सेम क्वेश्चंस अगर कोई भी और क्लास के बारे में पूछा जाए या कुछ भी आपसे पूछा जाए तो आप इसी लॉजिक को अप्लाई करके सारे आंसर्स दे सकते हो। ठीक है? अब मूव करते हैं एक नए टॉपिक की तरफ। एक नए टाइप ऑफ क्लासेस की तरफ जो जावा के अंदर होती हैं जिनको हम बोलते हैं पोजो क्लासेस। देखो",
+      "source": "transcript_api",
+      "english_text": "It will be printed. Something like this. Ok? So you can do this also. Now these are some six important questions that come up about abstract classes and confuse people. But if your core logic is absolutely clear what are final methods? What are private methods? What is static? So you can answer this. In fact, if the same questions are asked about any other class or anything else, you can apply this logic and give all the answers. Ok? Now let's move towards a new topic. Towards a new type of classes which are inside Java which we call Pozo classes. look at"
+    },
+    {
+      "start_time": 3896.4,
+      "end_time": 3926.64,
+      "text": "पोजो क्लासेस क्या होती है? सबसे पहले पोजो एक शॉर्ट फॉर्म है जिसका फुल फॉर्म होती है प्लेन ओल्ड जावा ऑब्जेक्ट। इसको हम बोलते हैं पोजो। प्लेन ओल्ड जावा ऑब्जेक्ट। कहने का मतलब यह कि जावा की ऐसी एकदम सिंपल क्लास जो कोई भी एक्सटर्नल कोई फ्रेमवर्क यूज़ नहीं करती। ऐसे कोई स्प्रिंग का फ्रेमवर्क यूज़ नहीं करती या कोई भी एक्सटर्नल चीज यूज़ नहीं करती। सिंपल एक क्लास है जिसमें कुछ वेरिएबल्स हैं। उसके कुछ गेटर सेटर्स हैं। आप चाहो तो उसके उसमें कल को बिल्डर डाल सकते हो।",
+      "source": "transcript_api",
+      "english_text": "What are pozzo classes? First of all, POJO is a short form whose full form is Plain Old Java Object. We call this pozo. Plain old Java object. This means that it is a very simple class of Java which does not use any external framework. It does not use any spring framework or any external thing. Simple is a class which has few variables. He has some getter setters. If you want, you can put a builder in it."
+    },
+    {
+      "start_time": 3924.799,
+      "end_time": 3951.44,
+      "text": "बिल्डर डिज़ाइन पैटर्न से आता है या फिर थोड़े बहुत बिनेस लॉजिक डाल सकते हो। बट जनरली एक सबसे सिंपल क्लास जिसमें या तो कुछ वेरिएबल्स हैं और उसके कैटर लेटर हैं। कहने का मतलब कुछ इस तरह की क्लास लेट्स से मैंने एक क्लास बनाई सैंपल। ठीक है? उस क्लास के अंदर लेट्स से मैंने दो वेरिएबल डिक्लेअर कर दिए। इंट x कर दिया और एक लेट से स्ट्रिंग कर दिया y। ऐसे इसका एक कंस्ट्रक्टर हो सकता होगा।",
+      "source": "transcript_api",
+      "english_text": "The builder comes from the design pattern or you can add some business logic. But generally the simplest class is either a few variables or a set of letters. What I mean to say is that I created a sample class using class letters like this. Ok? Inside that class I declared two variables with lets. Converted int to x and converted a let to string y. In this way it might have a constructor."
+    },
+    {
+      "start_time": 3948.48,
+      "end_time": 3983.28,
+      "text": "सैंपल जो क्या करता होगा? एक इंट x लेता होगा। स्ट्रिंग y लेता होगा और उसको यहां पे असाइन करता होगा। होगा कुछ दिस डॉट x इज़ x दिस डॉट y इज़ y कुछ ऐसा करता होगा और मैंने क्या बोला कुछ गेटर सेटर्स हो सकते हैं कि भाई लेट्स से एक मेथड है अगेन इंट गेट x ठीक है वो क्या करेगा वो रिटर्न कर देगा x को है ना ऐसे ही एक अ वॉइड सेट सेट x होगा जो एक इंट x लेता होगा उसको सेट करता होगा कुछ इस तरीके से सेम तरीके से इस y के",
+      "source": "transcript_api",
+      "english_text": "What would the sample do? Would take an int x. Will be taking the string y and assigning it here. It would be something like this dot"
+    },
+    {
+      "start_time": 3980.96,
+      "end_time": 4015.52,
+      "text": "मेथड्स होंगे गेट y और सेट y तो बेसिक-बेसिक कुछ वेरिएबल ्स हुए उसका कुछ कंस्ट्रक्टर्स हुए और कुछ गेटर सेटर्स हुए। इस तरह की क्लास को हम कहते हैं पोजो क्लासेस। अब ये है क्यों? एक्सिस्ट क्यों करती है? पोजो क्लासेस का बेसिकली पर्पस क्या है? आप सोचो आपको किसी ऑब्जेक्ट को रिप्रेजेंट करना है। मैं बोल रहा हूं लेट्स से आपको एक स्टूडेंट को रिप्रेजेंट करना है। स्टूडेंट तो स्टूडेंट को रिप्रेजेंट करने के लिए हमें एक पोजो ही तो बनानी पड़ेगी। हम सोचेंगे ना कि उसकी कुछ कैरेक्टरिस्टिक्स होती होगी। जैसे हमने बोला उसका कुछ नाम होगा, कुछ ऐज",
+      "source": "transcript_api",
+      "english_text": "Methods will be get y and set y. So basic- basic are some variables, some are constructors and some getters are setters. We call such classes Pozo classes. Now why is this? Why does it exist? What is the basic purpose of Pozzo classes? Imagine you have to represent an object. I am saying that you have to represent a student through LET. To represent the students, we will have to make a Pozo. We would think that it would have some characteristics. Like we said, he will have some name, some age."
+    },
+    {
+      "start_time": 4012.64,
+      "end_time": 4046.96,
+      "text": "होगी, कुछ रोल नंबर होगा, कुछ लेट्स से कॉलेज होगा। कुछ इस तरह ये होगा इसका कुछ डेटा। ठीक है? और इसको रिप्रेजेंट करने के लिए मैं क्या करूंगा? प्रोग्रामिंग में सेम तरीके से आऊंगा कि भाई मैं आऊंगा और इसकी क्लास बना लूंगा स्टूडेंट कुछ इस तरीके से। और इसके डेटा में डेटा को मैं यहां पे एज वेरिएबल्स से रिप्रेजेंट कर लूंगा। नेम, एज, रोल नंबर और कॉलेज। अब अगर मैंने इनको प्राइवेट बनाया जो कि मैं जनरली बनाता हूं एक्सेस मॉडिफायर प्राइवेट देके मैं क्या करूंगा इसके कंस्ट्रक्टर और इसके गेटर सेटर्स भी बना लूंगा। ठीक है? तो मैंने क्या किया?",
+      "source": "transcript_api",
+      "english_text": "There will be some roll number, some will be late to college. Some of its data will be something like this. Ok? And what will I do to represent it? I will come into programming in the same way that brother, I will come and make students in its class in this manner. And in this data, I will represent the data here with pay age variables. Name, Age, Roll Number and College. Now if I make these private, which I usually do, what I will do is by giving the access modifier private, I will also create its constructor and its getter setters. Ok? So what did I do?"
+    },
+    {
+      "start_time": 4044.24,
+      "end_time": 4079.119,
+      "text": "एक स्टूडेंट को प्रोग्रामिंग में मॉडल करा मॉडल। ठीक है? इसलिए इन क्लासेस को जनरली मॉडल क्लासेस भी बोलते हैं। जब हम कोई फ्रेमवर्क पढ़ेंगे जैसे कि स्प्रिंग, बूट वगैरह पढ़ेंगे तो उसमें आप देखना कि जब भी हम किसी ऑब्जेक्ट का कोई टेबल बनाते हैं। मतलब आप इसको अगर मान लो इस स्टूडेंट की ऑब्जेक्ट को एसक्यूएल में स्टोर करोगे। ठीक है? ठीक है? जो एक स्ट्रक्चर क्वेरी लैंग्वेज होती है अगर आपको पता है उसमें क्या होगा? टेबल्स होते हैं। राइट? उसमें आपके अलग-अलग कॉलम्स होंगे। एक नेम होगा, एक ऐज होगा, एक रोल नंबर होगा, एक कॉलेज होगा। तो अगर आपने उसमें वैल्यू्यूज डालनी है तो आपको एक ऐसी क्लास चाहिए होगी। एक ऐसी पोजो क्लास जो",
+      "source": "transcript_api",
+      "english_text": "Model a student in programming. Ok? Therefore, these classes are also generally called model classes. When we read any framework like Spring, Boot etc., you will see that whenever we create a table of any object. Meaning, if you accept this, you will store the object of this student in SQL. Ok? Ok? Which is a structured query language, if you know what will happen in it? There are tables. Right? You will have different columns in it. There will be one name, one age, one roll number, one college. So if you have to put values ​​in it then you will need such a class. a pozo class that"
+    },
+    {
+      "start_time": 4077.119,
+      "end_time": 4110.4,
+      "text": "उस पूरे के पूरे ऑब्जेक्ट को रिप्रेजेंट करे, एक मॉडल को रिप्रेजेंट करे। है ना? तो ये उस केस में बहुत काम आती है जब आप एक रियल लाइफ ऑब्जेक्ट को सिर्फ मॉडल करना चाहते हो। उस पे ज्यादा ऑपरेशंस या बिजनेस लॉजिक नहीं डालना चाहते या फिर कोई एक्सटर्नल फ्रेमवर्क यूज़ नहीं करना चाहते। ठीक है? तो बहुत ही सिंपल लॉजिक है प्लेन ओल्ड जावा ऑब्जेक्ट पोजो का। अब देखो पोजो ना कोई सब्जेक्टिव टर्म है। ऐसा नहीं होता कि ये परफेक्ट पोजो है कोई इमपरफेक्ट पोजो है। जनरली जब पोजो बना था तो कहने का मतलब बस ये था कि एक ट्रू पोजो वही होगी जिसमें",
+      "source": "transcript_api",
+      "english_text": "Represent that entire object, represent a model. Isn't it? So this is very useful in the case when you just want to model a real life object. Don't want to put too many operations or business logic on it or don't want to use any external framework. Ok? So this is very simple logic of plain old Java object Pozo. Now look, Pozo is not a subjective term. It is not that this is a perfect pozo, some are imperfect pozo. Generally, when Pozo was created, it was meant to say that a true Pozo would be one which"
+    },
+    {
+      "start_time": 4107.839,
+      "end_time": 4135.92,
+      "text": "कोई हार्ड कोर बिजनेस लॉजिक ना लिखा हो। हार्ड कोर बिजनेस लॉजिक नहीं होना चाहिए। ठीक है? सिंपल मैंने आपको बोला क्या-क्या हो सकते हैं? आपके गेटर सेटर हो सकते हैं। ठीक है? आपके कंस्ट्रक्टर हो सकते हैं। ठीक है? आपके कुछ वेरिएबल डिफाइन हो वेरिएबल डिफाइन हो सकते हैं या जिसको हम फील्ड्स कहते हैं वो हो सकती है। वगैरह-वगैरह। पर पोजो की डेफिनेशन अगेन मैंने बोला सब्जेक्टिव है।",
+      "source": "transcript_api",
+      "english_text": "No hard core business logic is written. There should not be hard core business logic. Ok? Simple, I told you what can happen? Your getters can be setters. Ok? You can have constructors. Ok? Some of your variables may be defined variables or may be what we call fields. And so on. But again I said the definition of Pozo is subjective."
+    },
+    {
+      "start_time": 4133.6,
+      "end_time": 4168.0,
+      "text": "कुछ लोग उसमें बिल्डर भी डाल देते हैं। जो एक बिल्डर डिजाइन पैटर्न से आता है। अगर आपको नहीं पता वो वीडियो देख सकते हो अलग से। या फिर उसमें थोड़ा बहुत बिनेस लॉजिक भी डाल देते हैं। बिनेस लॉजिक। ठीक है? जैसे अगर मान लो मैंने स्टूडेंट क्लास में एक मेथड डाल दिया अ मार्क अटेंडेंस। राइट? तो वो थोड़ा सा बिज़नेस लॉजिक हो गया जो मैंने स्टूडेंट क्लास के अंदर ही डाल दिया। तो कभी कबभार मैं ये भी कर सकता हूं। है ना? तो पोजो पहले तो बनी थी बस इस पर्पस से कि भैया हमें सिर्फ बिज़नेस लॉजिक को रखना ही नहीं है। सिंपल गेटर सेटर कंस्ट्रक्टर वगैरह रखने हैं। पर बाद में क्योंकि लोगों ने बोला कि भ पोजो का मतलब तो ये है ना कि कोई फ्रेमवर्क यूज़ नहीं कर रहे। तो बिज़नेस लॉजिक डालने में क्या",
+      "source": "transcript_api",
+      "english_text": "Some people also include builder in it. Which comes from a builder design pattern. If you don't know, you can watch that video separately. Or even add a little business logic to it. Binance Logic. Ok? For example, suppose I put a method in the Student class called 'Mark Attendance'. Right? So that became a bit of business logic which I put inside the student class itself. So sometimes I can do this also. Isn't it? So Pozo was first created with the sole purpose that we do not just have to keep the business logic. Have to keep simple getter setter constructor etc. But later because people said that Pozo means that we are not using any framework. So what about putting business logic?"
+    },
+    {
+      "start_time": 4166.719,
+      "end_time": 4200.4,
+      "text": "दिक्कत है? या बिल्डर डालने में क्या दिक्कत है? तो वो एग्जैक्टली अब मॉडल नहीं कर पा रही। स्टूडेंट जो बाहर है और जो प्रोग्रामिंग में है उसको हम एक क्लास से रिप्रेजेंट तो कर रहे हैं। पर उसमें हम उसके बिहेवियर्स को भी डाल रहे हैं। पर मैंने कहा था यहां पे एक पोजो क्लास में मैं उसके बिहेवियर्स को ना बता के सिर्फ गेटर सेटर बताऊं। बिहेवियर के लिए मैं एक अलग क्लास बना लूं। मैं ऐसा भी कर सकता हूं। ठीक है? तो पोजो को भी हमने क्या किया? दो पार्ट्स में डिवाइड कर दिया। और यह सिर्फ आर्किटेक्चरल कंपैरिजन है। ठीक है? एक्चुअली अंदर से तो दोनों पोजो ही होती हैं। ठीक है? मैंने कहा एक होता है",
+      "source": "transcript_api",
+      "english_text": "Is there a problem? Or what is the problem in putting builder? So she is not able to model exactly now. We are representing the students who are outside and those who are in programming from one class. But we are also including his behaviors in it. But I had said here in a pozo class that I should not describe his behaviors and should only describe him as a getter-setter. I should create a separate class for behavior. I can do that too. Ok? So what did we do to Pozo also? Divided into two parts. And that's just the architectural comparison. Ok? Actually both are Pozo from inside. Ok? I said there is one"
+    },
+    {
+      "start_time": 4196.56,
+      "end_time": 4223.84,
+      "text": "आपका एनेमिक मॉडल। एनेमिक मॉडल और दूसरा होता है आपका रिच डोमेन मॉडल। रिच डोमेन मॉडल। अच्छा क्या होते हैं ये दोनों? ये बिल्कुल जो अभी हमने पढ़ा एनेमिक मॉडल कहता है कि सिंपल पूछो जिसमें आपके सिर्फ अ गेटर सेटर होंगे कंस्ट्रक्टर होगा कंस्ट्रक्टर और आपकी फील्ड्स होंगी। ठीक है? सबसे सिंपल ये होगा आपका एनेमिक मॉडल।",
+      "source": "transcript_api",
+      "english_text": "Your anemic model. Anemic model and the second one is your rich domain model. Rich domain models. Well, what are these two? Exactly what we just read, the anemic model says simple ask in which you will have only a getter setter, a constructor, a constructor and your fields. Ok? The simplest would be your anemic model."
+    },
+    {
+      "start_time": 4222.0,
+      "end_time": 4252.239,
+      "text": "रिच डोमेन मॉडल कहता है कि थोड़ा बहुत बिनेस लॉजिक हो सकता है। बिजनेस लॉजिक भी हो सकता है। ये है रिच डोमेन मॉडल। दोनों है तो पोजो ही। आप कोई भी क्लास बनाओ वो पोजो ही कहलाएगी। पर बस एक थोड़ा सा सेपरेशन कर दिया कि क्या आपने एक एनेमिक मॉडल को बनाया है या एक रिच डोमेन मॉडल को बनाया है। तो अगर इसको हम कंपेयर करें तो लेट्स से आपने एक क्लास बनाई स्टूडेंट और उसके अंदर आपने बस एक फील्ड रखी। लेट्स से अ स्ट्रिंग रखता हूं मैं स्ट्रिंग नेम।",
+      "source": "transcript_api",
+      "english_text": "The Rich Domain Model says that there can be quite a bit of binary logic. There may also be business logic. This is the Rich Domain Model. If both are there then it is Pozo. Whatever class you create, it will be called Pozo. But just to make a little separation whether you have created an anemic model or a rich domain model. So if we compare this, in Lets you created a class Student and inside it you just placed one field. Let's have a string i string name."
+    },
+    {
+      "start_time": 4250.08,
+      "end_time": 4284.4,
+      "text": "अभी एक ही फील्ड मान के चलते हैं। इसका आपने कंस्ट्रक्टर रख लिया। स्टूडेंट जो नेम लेता होगा। ठीक है? और इसके आपने गेटर्स और सेटर्स रख लिए। तो ये किस तरह की क्लास हुई? ये एनएमिक मॉडल हुई। ऑन दी अदर हैंड इसी स्टूडेंट में लेट्स से आपने एक नया अ बिनेस लॉजिक इंट्रोड्यूस कर लिया जो कि था मार्क अटेंडेंस जो इस स्टूडेंट के अटेंडेंस को मार्क करता है। और ये क्योंकि एक बिनेस लॉजिक के अंदर आता है। उसका इस मॉडल से डायरेक्टली कोई लेना देना नहीं है। मतलब एक स्टूडेंट को रिप्रेजेंट करने से कोई लेना देना नहीं है। उस मॉडल को हम",
+      "source": "transcript_api",
+      "english_text": "Let's go with a single field value for now. You have kept its constructor. The name that the student would take. Ok? And for this you have got getters and setters. So what kind of class was this? This became the nomic model. On the other hand, in this student let's you have introduced a new business logic which was Mark Attendance which marks the attendance of this student. And this is because it comes within a business logic. It has nothing to do with this model directly. Meaning it has nothing to do with representing a student. that model we"
+    },
+    {
+      "start_time": 4282.56,
+      "end_time": 4303.56,
+      "text": "क्या बोलेंगे? रिच डोमेन मॉडल। तो ये हमने एक थोड़ा सा सेपरेट कर लिया। ठीक है? अब मुझे बस आपको ये अच्छे से समझाना था। आई होप आपको सब कुछ अच्छे से समझ आया। ऑटो बॉक्सिंग अनबॉक्सिंग क्या होती है? एब्स्ट्रैक्ट क्लासेस को हमने अंदर से समझा और बेसिकली हमने ये भी समझा कि हमारे पोजो क्लासेस क्या होती हैं। ठीक है? आपसे मिलते हैं अब नेक्स्ट वीडियो में। तब तक के लिए थैंक यू सो मच।",
+      "source": "transcript_api",
+      "english_text": "What will you say? Rich domain models. So we separated this a little. Ok? Now I just had to explain this to you properly. I hope you understood everything well. What is Auto Boxing Unboxing? We understood abstract classes from inside and basically we also understood what our Pozo classes are. Ok? See you now in the next video. Till then thank you so much."
+    }
+  ],
+  "playlist_id": "PLXZCnQTdmeaE",
+  "playlist_title": "OOPs in Java Full Course"
+}

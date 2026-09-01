@@ -1,0 +1,485 @@
+{
+  "video_id": "j4wjZqzhMqc",
+  "video_title": "Learn Recursion Like A Pro",
+  "video_number": 73,
+  "chunks": [
+    {
+      "start_time": 1.75,
+      "end_time": 29.83,
+      "text": "आज का जो दो क्वेश्चन हम लोग करने वाले हैं ना एक होगा फिबोनाकी और एक होगा पेड्रोम स्ट्रिंग। तो ये बहुत बेसिक क्वेश्चन है। क्यों? क्यों बेसिक क्वेश्चन है? क्योंकि ये दोनों क्वेश्चन बना ही रिकर्शन पढ़ाने के लिए है। ठीक है? हमको लगता है कि किसी कोई ये क्वेश्चन डाला ही डीएसए में इसलिए था क्योंकि लोगों को रिकर्शन समझ में आए। ना सिर्फ रिकर्शन आगे आने वाला है। डायनेमिक प्रोग्रामिंग भी आपको पढ़ाना हम इसी क्वेश्चन से स्टार्ट करेंगे। क्यों? क्योंकि रिकर्शन का कोड बहुत अच्छा लगता है देखने में। तीन लाइन का कोड होता है फिबोनाकी का, पेड्रोमस्टिंग का पांच लाइन का कोड होता है। लेकिन ये कोड बहुत बेहूदा है। बेहूदा क्यों है? डीपी आएगा तो आप लोग खुद समझ जाएंगे कि बेहूदगई क्या होती है इस कोड।",
+      "source": "caption",
+      "english_text": "The two questions we are going to ask today will be Fibonacci and the other will be Pedrom String. So this is a very basic question. Why? Why is it a basic question? Because both these questions are meant to teach recursion. Ok? We think that someone put this question in DSA so that people could understand recursion. Not only recursion is going to come. We will start teaching you dynamic programming from this question. Why? Because recursion code looks very nice. Fibonacci has a three-line code, Pedromesting has a five-line code. But this code is very stupid. Why is it ridiculous? When DP comes, you will understand for yourself what absurdity this code is."
+    },
+    {
+      "start_time": 29.84,
+      "end_time": 56.709,
+      "text": "की। दूसरी बात कुछ लोग कमेंट कर रहे थे कि सर समझ में आ रहा है लेकिन पूरा समझ में नहीं आ रहा है तो आप इस रिकज़न सीरीज़ को भी ना रिकज़न की तरह ट्रीट कीजिए। हर दिन आपका काम क्या होना चाहिए? आपका काम बस एपिसोड x पढ़ना होना चाहिए। जैसे मान लीजिए आज तीन या चार जो भी आने वाला है आप बस इतना समझिए। बाकी का टेंशन मत लीजिए कि सर बैक ट्रैकिंग का वो वाला क्वेश्चन अभी तो नहीं समझ में आ रहा है। बाकी का क्वेश्चन जो भी है बाकी का 20 30 100 एपिसोड जितना भी आना है वो भरोसे में छोड़ दीजिए कि समझ में आ जाएगा। रिकर्शन में आप लोग क्या करते हैं?",
+      "source": "caption",
+      "english_text": "Of. Secondly, some people were commenting that Sir, I am understanding but if you are not able to understand completely, then you should treat this review series also like no review. What should be your task every day? Your job should simply be to read episode x. For example, let's say three or four days, whatever is going to come, just understand this much. Don't worry that Sir, you are not able to understand that question of back tracking. Whatever is the remaining question, whatever is to come in the remaining 20, 30, 100 episodes, leave it with confidence that it will be understood. What do you guys do in recursion?"
+    },
+    {
+      "start_time": 56.719,
+      "end_time": 91.03,
+      "text": "हर दिन एक स्मॉल प्रॉब्लम सॉल्व करते हैं। आज के लिए आपका स्माल प्रॉब्लम क्या है? इस एपिसोड x को अच्छे से समझना। बस ये 30 मिनट 35 मिनट समझना। बाकी का जो भी होने वाला है 10 घंटे का लेक्चर उसको छोड़ दीजिए। उसको रिकर्शन की तरह छोड़ दीजिए भगवान के भरोसे। और आप विश्वास रखिए कि आपको बाकी का आंसर मिल जाएगा। मतलब बाकी के एपिसोड भी समझ में आ जाएंगे। आज का एपिसोड आपको समझ में आ गया। दोनों को जब आप मिलाएंगे तो आपको पूरा रिकर्सन समझ में आ जाएगा। ठीक है? तो ओवरऑल मिला के रिकर्ज़ सीरीज़ को इस तरीके से देखिए। हर दिन आपको क्या करना है? एक छोटा सा काम करना है। अब बेस केस क्या है? बेस केस तो है बहुत धुरंधर जो बच्चे हैं बेस केस मतलब कि अगर",
+      "source": "caption",
+      "english_text": "Solve a small problem every day. What is your small problem for today? Understanding this episode x better. Just understand that these 30 minutes are 35 minutes. Whatever else is going to happen, leave that 10 hour lecture. Leave it to God like recursion. And rest assured that you will get the rest of the answer. Meaning the remaining episodes will also be understood. You understood today's episode. When you combine both, you will understand complete recursion. Ok? So overall, look at the recurring series in this manner. What do you have to do every day? There is a small work to do. Now what is the base case? The base case is very strong, the children who are there, the base case means that if"
+    },
+    {
+      "start_time": 91.04,
+      "end_time": 125.03,
+      "text": "एक भी एपिसोड नहीं देखिएगा तो आपको कोई फर्क नहीं पड़ेगा तब आपको सब समझ में आ जाएगा अगर आपके अगर आप एक भी एपिसोड नहीं देखे कोई बोला कि सर हम तो एक भी एपिसोड हम तो जीरो एपिसोड देखे सर जीरो एपिसोड देखे आपको सब समझ में आ जाएगा तो बेस केस वो हो गया बेस केस में जाना है कोई एपिसोड मत देखिए तो आपको आप बोल सकते हैं कि सर हम हम जितना देखे हमको सब समझ में आया और आप कुछ देखे नहीं तो बिल्कुल सही है। अगर आप रिकर्शन करना चाहते हैं तो आप आप आज का एपिसोड फोर समझने में अपना पूरा ध्यान पूरी शक्ति लगाइए। बाकी का भगवान भरोसे छोड़ दीजिए कि सर यह भगवान हमको करा देंगे। रिकर्शन में जैसे करते हैं ना कि बहुत बड़ा सा सब प्रॉब्लम है उसका आंसर कहां से मिलेगा? मिल जाएगा कहीं से हवा से",
+      "source": "caption",
+      "english_text": "If you don't watch even a single episode, it won't make any difference to you, then you will understand everything. If someone says, Sir, if you haven't watched even a single episode, sir, we have watched zero episodes. If you have watched zero episodes, you will understand everything. So, that is the base case. If you want to go to the base case, don't watch any episode, then you can say, Sir, as much as we watched, we understood everything and if you haven't watched anything, then it is absolutely right. If you want to do recursion, then devote all your attention and energy to understanding today's episode four. Leave the rest to God that Sir will get it done for us. Just like we do in recursion, it is a very big problem, where will we get the answer to it? you will get it from somewhere in the air"
+    },
+    {
+      "start_time": 125.04,
+      "end_time": 159.91,
+      "text": "जादू से मिल जाएगा। छोटा सा प्रॉब्लम हम सॉल्व कर लेते हैं। पूरा जब मिला देंगे तो मेरा पूरा हो जाएगा। ठीक है? तो बेस केस वाले बच्चों पे हम स्पेशल ध्यान देते हैं। बेस केस वाले बच्चों को काफी अच्छे लगते हैं। तो जल्दी शुरू करते हैं चलिए। तो पहला क्वेश्चन जैसा कि हम वादा किए थे बोईलर प्लेट क्वेश्चन है। बोईलर प्लेट का माने क्या होता है कि इसी क्वेश्चन के लिए रिकजन बना हुआ है। रिकर्जन इसी क्वेश्चन के लिए बना हुआ है। सिर्फ रिकजन नहीं। जब डायनेमिक प्रोग्रामिंग पढ़ेंगे तो भी इसी क्वेश्चन से शुरू करेंगे। तो बहुत ध्यान से सुनिएगा। फिबोनाकी। फिबोनाकी आप लोग कहीं ना कहीं सुने होंगे। मैथ्स में सुने होंगे या जो लोग बीटेक वेटेक कर रहे हैं आप लोग कहीं ना कहीं जरूर सुने होंगे कि फिबोनाकी नंबर होता है। अब फिबोनाकी नंबर",
+      "source": "caption",
+      "english_text": "Will be found by magic. We can solve small problems. When you mix it completely, I will be complete. Ok? So we pay special attention to children with base case. Children with base case like it very well. So let's start quickly. So the first question as we promised is a boiler plate question. What is the meaning of boiler plate and the reaction has been made for this question. Recursion is made for this question. Not just Rickson. When we study dynamic programming, we will start with this question. So listen very carefully. Fibonacci. You all must have heard about Fibonacci somewhere. You must have heard in Maths or those who are doing B.Tech. You must have heard somewhere that there is a Fibonacci number. now fibonacci numbers"
+    },
+    {
+      "start_time": 159.92,
+      "end_time": 187.67,
+      "text": "लिखते कैसे हैं? तो मान लीजिए कि ज़ीरो से स्टार्ट करते हैं। तो दो नंबर शुरू में हम लोग लिखते हैं कि ज़ीरो और वन। बस क्वेश्चन समझ लीजिए कि होता क्या है फिबोनाकी। अच्छा। तो ये हो गया ज़ीरो विद फिबोनाकी। मान लीजिए कि इंडेक्स कहां से शुरू होता है? ज़ीरो से। ये क्या हो गया? फर्स्ट फिबोनाकी। अच्छा। सेकंड फिबोनाकी क्या होता है? इन दोनों का सम। ज़ीरो और वन का सम क्या होता है? वन। तो हम लोग सेकंड लिख देंगे कि वन होता है। ठीक है? अगला वाला कैसे लिखेंगे? पिछले दो नंबर का सम। पिछले दो नंबर कौन से थे? वन और वन मतलब टू।",
+      "source": "caption",
+      "english_text": "How do you write? So let's say we start from zero. So in the beginning we write the two numbers zero and one. Just understand the question, what is Fibonacci? Good. So this is Zero with Fibonacci. Suppose where does the index start? From zero. What has happened? First Fibonacci. Good. What is a second Fibonacci? The sum of these two. What is the sum of zero and one? Forest. So we will write second that there is one. Ok? How to write the next one? Sum of last two numbers. What were the last two numbers? One and one means two."
+    },
+    {
+      "start_time": 187.68,
+      "end_time": 222.63,
+      "text": "अगला वाला सेम। पिछले दो वाले का सम थ्री। अगला थ्री और टू का सम पांच। अगला पांच और तीन का सम आठ। अगला 13 ये फिबोनाकी होता है मतलब कि कोई भी अगर आपको nथ फिबोनाकी बोलता है ना कि जो ज़ीरो से स्टार्ट होगा ज़ीरो वन ये हो गया सेकंड ये हो गया थर्ड ये हो गया फोर्थ। कोई भी अगर nथ बोलता है ना तो आपको उसके पीछे वाला फिबोनाकी का दोनों का सम करके उसको निकाल देना है। अच्छा तो ये बात समझ में आ गई। अब हम क्यों बोल रहे हैं कि ये स्टैंडर्ड रिकर्सन क्वेश्चन है क्योंकि शुरू के दो नंबर आपको बताए रहेंगे। शुरू के दो नंबर अब मान लीजिए शुरू के दो नंबर अगर नहीं बताएंगे तो कैसे निकालिएगा? आपको हर नंबर के लिए पिछले दो नंबर का सम चाहिए। पिछले",
+      "source": "caption",
+      "english_text": "The next one is beans. The last two add up to three. Next three and two add up to five. Next five and three equal eight. Next 13, this is Fibonacci, which means that if anyone calls you nth Fibonacci, it will not start from zero, zero one is second, this is third, this is fourth. If anyone says nth then you have to remove the one behind him by equating both the Fibonacci lines. Okay, so this is understood. Now why are we saying that this is a standard recursion question because the first two numbers will tell you. Now suppose, if you do not tell the first two numbers, then how will you find them? For each number you need the sum of the previous two numbers. last"
+    },
+    {
+      "start_time": 222.64,
+      "end_time": 256.55,
+      "text": "वाले दो फिबोनाकी नंबर का सम चाहिए होता है। तो अगर शुरू के दो कोई नहीं बताएगा तो हम लोग नहीं निकाल पाएंगे। इसीलिए आपको बताया होता है कि अगर हम लोग पूछे ना कि f ऑफ 0 क्या होगा? तो आप बोल दीजिए कि f ऑफ 0 होगा। f ऑफ वन क्या होगा? f ऑफ 1 होगा। ये दो आपको बताया हुआ है। वेरी गुड। f ऑफ 2 कैसे निकालेंगे? f ऑफ कैसे निकालेंगे? पिछले दो चीज का सम मतलब कि या तो f1 का सम + f0 का सम। ये हो गया। f ऑफ 5 कैसे निकालेंगे भाई? f का सम + f3 का सम ये हम नहीं बोल रहे ये फिबोनाकी होता है। f ऑफ",
+      "source": "caption",
+      "english_text": "The sum of the two Fibonacci numbers is required. So if no one tells the first two, we will not be able to find out. That is why you are told that if we ask what will be f of 0? So you say that f will be 0. What will be f of one? f will be off 1. These two have been told to you. very good. How to find f of 2? How to remove f off? The sum of the last two things means that either the sum of f1 + the sum of f0. that'll be. How will you find f of 5 brother? We are not saying that f's sum + f3's sum is Fibonacci. f off"
+    },
+    {
+      "start_time": 256.56,
+      "end_time": 289.43,
+      "text": "10 कैसे निकालेंगे भैया? f ऑफ 10 निकालेंगे तो 10 क्या पहले वाला नाइन का निकाल लेंगे और एट का निकाल लेंगे बस तो ये सिंपल सा प्रोग्राम है आप लोग को ऑलरेडी क्लिक कर गया होगा। सबसे पहले तो आपको दो चीजें बताई हुई हैं। क्या दो चीजें बताई हुई हैं? f ऑफ 0 का आंसर क्या होगा? ज़ीरो। f ऑफ 1 का आंसर क्या होगा? वन। ये क्या है आपका? अब रिक्शन का स्टेप्स का बात करते हैं। सबसे पहले हम क्या बोले थे? बेस केस सोच लीजिए। मतलब आपको जो भी इनपुट दिया हुआ है ना उसका सबसे छोटा इनपुट सोच लीजिए। उसका सबसे छोटे इनपुट का आंसर निकाल लीजिए। तो ये तो ऑलरेडी आपको बताया हुआ है कि सबसे छोटे इनपुट का आंसर क्या होगा? अगर इनपुट आपका",
+      "source": "caption",
+      "english_text": "How will you find 10, brother? If you take out f of 10, then 10 will be taken out of first nine and take out of eight. This is a simple program, you guys must have already clicked it. First of all, two things have been told to you. Are two things mentioned? What will be the answer of f off 0? Zero. What will be the answer of f of 1? Forest. What is this of yours? Now let us talk about the steps of reaction. What did we say first? Consider the base case. Meaning, whatever input is given to you, think of the smallest input. Find the answer of its smallest input. So, it is already told to you that what will be the answer of the smallest input? If your input"
+    },
+    {
+      "start_time": 289.44,
+      "end_time": 323.67,
+      "text": "ज़ीरो है। अगर n = 0 है आंसर क्या होना चाहिए? ज़ीरो। n = 1 है, आंसर क्या होना चाहिए? वन। तो बेस केस हम लोग सोच लिए। अच्छा। अब हम क्या बोल रहे हैं? एक छोटा सा प्रॉब्लम सॉल्व कर लीजिए। एक छोटा सा प्रॉब्लम सॉल्व कर लीजिए। उसको रहने देते हैं। बाकी का अगर हम क्या बोले अगर आपको छह पेज का एस्से लिखना है और अगर आपको कोई पांच पेज बता दे पांच पेज का आंसर कोई बता दे उसमें आप जोड़ के कैसे बताएंगे? इसमें उतना करने की भी जरूरत नहीं है। आपको अगर कोई n का आंसर पूछता है ना तो इसका क्या होता है? जो भी n - 1 का आंसर होगा प्लस जो भी n - 2 का आंसर होगा। ये आंसर हो",
+      "source": "caption",
+      "english_text": "Is zero. If n = 0 what should be the answer? Zero. n = 1, what should be the answer? Forest. So we thought of the base case. Good. What are we saying now? Solve a small problem. Solve a small problem. Let's let him be. What can we say about the rest, if you have to write an essay of six pages and if someone tells you five pages and someone tells you the answer of five pages, how will you tell by adding to it? There is no need to do that much in this. If someone asks you the answer to n, what happens to it? Whichever is the answer of n - 1 plus whatever is the answer of n - 2. this is the answer"
+    },
+    {
+      "start_time": 323.68,
+      "end_time": 357.43,
+      "text": "जाएगा। क्यों आंसर हो जाएगा? मान लीजिए आपसे कोई 10 का आंसर पूछ रहा है। अगर आपको कोई बता दे कि भैया नाइंथ वाला नाइंथ वाले की वैल्यू x है और एट्थ वाले की वैल्यू y है तो क्या आप इस 10 की वैल्यू बहुत आसानी से बता सकते हैं सर चुटकी बजा के बोलेंगे कि हां बता सकते हैं x + y हो जाएगा। तो अगर कोई आपसे n की वैल्यू पूछ रहा है कि भैया हम तुमको n दे रहे हैं nथ फिबोनाकी नंबर क्या होगा? तो आप बोलेंगे कि हमको एक काम करो तुम n - 1 का बता दो वैल्यू तो हमको x बता दो और n - 2 मतलब एथ वाले का बता दो y हम x + y जोड़ के तुमको सौंप देंगे तो बस खत्म हो गया प्रोग्राम",
+      "source": "caption",
+      "english_text": "Will go. Why will it be the answer? Suppose someone is asking you the answer of 10. If someone tells you that brother, the value of the ninth number is So if someone is asking you the value of n, brother, we are giving you n, what will be the nth Fibonacci number? So you will say, do us one thing, tell us the value of n - 1, then tell us x and n - 2 means the eighth one, tell us y, we will add x + y and hand it over to you, then the program is over."
+    },
+    {
+      "start_time": 357.44,
+      "end_time": 390.87,
+      "text": "प्रोग्राम इतना सही था रिकर्शन में बहुत आसान होता है डीपी भी आसान ही होता है मतलब फिबोनाकी इज़ द बेस्ट प्रोग्राम ठीक है तो आपको क्या दिया रहेगा मान लीजिए कोई ऐसा फंक्शन दिया हुआ है एफ फिब और इसमें आपको एक इंट n दिया हुआ है आपका काम क्या है n फिबोनाकी तो सबसे पहले क्या है बेस केस लिख लेना है अगर n इक्वल इक्वल 0 है तो रिटर्न ज़ीरो। सिंपल कुछ अकर नहीं करना है। अगर n = 1 है क्या करना है? रिटर्न वन। सिंपल क्वेश्चन में दिया हुआ है। ये क्या हो गया? बेस केस खत्म। बेस केस खत्म।",
+      "source": "caption",
+      "english_text": "The program was so correct, it is very easy in recursion, DP is also easy, that means Fibonacci is the best program, okay, so what will be given to you, suppose you are given such a function F Fib and in it you are given an int n, what is your task n Fibonacci, so first of all what is the base case, if n is equal to 0 then return zero. Don't do anything simple. What to do if n = 1? Return one. It is given in simple question. What has happened? Base case finished. Base case finished."
+    },
+    {
+      "start_time": 390.88,
+      "end_time": 425.83,
+      "text": "उसके बाद उसके बाद आपको क्या चाहिए? nथ निकालने के लिए क्या चाहिए? n - 1 का आंसर कोई बता दे। n - 2 का आंसर बता दे। तो जादू चलाइए। मान लीजिए कि यही वाला फंक्शन यही वाला फंक्शन आपको बता देगा। इंट आंसर 1 = इसी फंक्शन को n - 1 के लिए कॉल कर दीजिए। मान लीजिए कि आंसर मिल जाएगा। मान लीजिए कि जादू से आंसर मिल जाएगा। आंसर टू को इसी फंक्शन को n - 2 के लिए कॉल कर दीजिए। मान लीजिए कि जादू से आंसर मिल जाएगा। तो ये क्या हुआ? ट्रस्ट कर रहे हैं आप। आप ट्रस्ट कर रहे हैं या तो विश्वास रख रहे हैं। विश्वास रख रहे हैं कि यही फंक्शन जिसमें हम कुछ नहीं किए हैं जिसमें",
+      "source": "caption",
+      "english_text": "What do you want after that? What is needed to find the nth? Can someone tell me the answer to n - 1? Tell the answer of n - 2. So work the magic. Suppose this very function will tell you this. int answer 1 = Call this function for n - 1. Let us assume that the answer will be found. Suppose the answer will be found through magic. Answer: Call the same function for n - 2. Suppose the answer will be found through magic. So what happened? You are trusting. You are trusting or keeping faith. We are confident that this is the function in which we have not done anything in which"
+    },
+    {
+      "start_time": 425.84,
+      "end_time": 453.029,
+      "text": "हम हमको कुछ अता पता ही नहीं है। यही हमको आंसर दे देगा n - 1, n - 2 का। एक बार आपको दोनों आंसर मिल जाता है तब तो आपके लिए काम बहुत आसान है। क्या करिए? रिटर्न आंसर वन प्लस आंसर टू। आपका प्रोग्राम खत्म हो गया। यहां पे क्या किया आप? पीछे के आंसर का मतलब सब प्रॉब्लम के आंसर को जोड़ लिए। जोड़ के अपना आंसर बना लिए। जोड़ के अपना आंसर बना लिए। जोड़ के अपना आंसर क्या किए? बना लिए और रिटर्न कर दिए।",
+      "source": "caption",
+      "english_text": "We don't know anything at all. This will give us the answer of n - 1, n - 2. Once you get both the answers then the work is very easy for you. What to do? Return answer one plus answer two. Your program is over. What did you do here? The previous answer means the answer to all the problems combined. Make your answer by adding. Make your answer by adding. What did you do after adding your answer? Made it and returned it."
+    },
+    {
+      "start_time": 453.039,
+      "end_time": 482.869,
+      "text": "सिंपल हो गई बात। आइए इसको एक बार ड्राई रन करके देख लें। तो ये हो गया कोड। इसको ड्राई रन कर लेते हैं। मान लीजिए कि हम आपसे क्या पूछते हैं? 5 n = 5 के लिए पूछते हैं। n = 5 थोड़ा बड़ा हो जाएगा शायद। n = 3 के लिए पूछते हैं। ठीक है? आइए तो आप मेन से या जो भी आपका है आप क्या कॉल करेंगे? फन ऑफ़ थ्री। आइए कॉल करना शुरू करें। सबसे पहले फन जिसमें n = 3 है। क्या ये बेस केस को फुलफिल करता है?",
+      "source": "caption",
+      "english_text": "The matter became simple. Let's try it by dry running it once. So this is the code. Let's dry run it. Guess what we ask you? Let's ask for n = 5. n = 5 will probably be a little bigger. Let's ask for n = 3. Ok? Come on, what will you call from the mains or whatever yours is? Fun of three. Let's start calling. First the funnel in which n = 3. Does it fill the base case?"
+    },
+    {
+      "start_time": 482.879,
+      "end_time": 517.75,
+      "text": "क्या n 0 या वन? है? n ज़ीरो या वन नहीं है? तो आपको दोनों आंसर निकालने पड़ेंगे। तो आइए a1 = फन ऑफ़ n = 2 और a2 = फन ऑफ़ n = 1 ठीक है? अब उसके बाद क्या होगा? रिटर्न a1 + a2। अब एक-एक लाइन करके चलाते हैं। आइए इसको चलाते हैं। पहला लाइन चल गया। पहला लाइन क्या? फन n = 2 उस पे कूद जाएगा कंपाइलर। कंपाइलर कहां कूद जाएगा? n = 2 पे कूद जाएगा। आइए। ये भी बेस केस नहीं है क्योंकि बेस केस क्या है कि n जब ज़ीरो और वन है तो वो खत्म होगा नहीं तो",
+      "source": "caption",
+      "english_text": "Is n 0 or one? Is? n is not zero or one? So you will have to find both the answers. So let a1 = fun of n = 2 and a2 = fun of n = 1 okay? Now what will happen after that? Returns a1 + a2. Now let's run it one line at a time. Let's run this. The first line started. What is the first line? If n = 2 the compiler will jump to that. Where will the compiler jump? Will jump at n = 2. Come. This is also not a base case because what is the base case that when n is zero and one then it will end otherwise."
+    },
+    {
+      "start_time": 517.76,
+      "end_time": 542.949,
+      "text": "बढ़ता जाएगा कॉल करता जाएगा। इसमें भी वही काम कीजिए। a1 = फन ऑफ़ n = 1 a2 = फन ऑफ़ n = 0 और रिटर्न क्या करना है? a1 + a2 आइए अब इसको भी चलाएं। अब ये भी एक फंक्शन कॉल है। तो अब कंपाइलर यहां कूद जाएगा। इसको चलाइए। जैसे ही आप ये चलाएंगे। जैसे ही आप ये चलाएंगे फन n = 1 अब ये बेस केस है। n1 है। n1 में हम लोग क्या रिटर्न करते हैं?",
+      "source": "caption",
+      "english_text": "Will keep on increasing and will keep calling. Do the same thing in this also. a1 = fun of n = 1 a2 = fun of n = 0 and return what to do? a1 + a2 Let's run this too. Now this is also a function call. So now the compiler will jump here. Run this. As soon as you run this. As soon as you run this function n = 1 now this is the base case. n1 is. What do we return in n1?"
+    },
+    {
+      "start_time": 542.959,
+      "end_time": 570.23,
+      "text": "n1 का आंसर क्या होता है? वन। तो ये सिंपल क्या रिटर्न कर देगा? वन। और ये क्या हो गया? खत्म। इसका काम खत्म हो गया। इसका आंसर क्या आया? वन। सिमिलरली जब आप इसको कॉल करेंगे। अब ये भी चल गया। n = 0 का आंसर क्या आएगा? हम लिख नहीं रहे हैं। लेकिन ये कॉल होगा और उसका आंसर क्या आएगा? ज़ीरो। ये भी चल गया। बस रिटर्न a1 + a2 तो 1 + 0 क्या होता है? वन। तो ये क्या होगा? ये फंक्शन खत्म करके किसको रिटर्न करेगा? यहां पे ये वन रिटर्न कर देगा।",
+      "source": "caption",
+      "english_text": "What is the answer of n1? Forest. So what will this simple return do? Forest. And what happened? End. Its work is finished. What was the answer to this? Forest. Similarly when you call it. Now this is also gone. What will be the answer of n = 0? We are not writing. But will this call happen and what will be the answer? Zero. This also worked. Just returns a1 + a2 so what is 1 + 0? Forest. What would it be then? To whom will it return after completing the function? This one will return here."
+    },
+    {
+      "start_time": 570.24,
+      "end_time": 604.389,
+      "text": "सिंपल। अब आइए अब इसका एक लाइन बचा हुआ था। क्या है? 1 n = 1 अगेन 1 = n = 1 पे जाएंगे तो ये बेस केस है। तो यहां क्या रिटर्न होगा आपको? वन। दोनों मिल गया। आपको क्या रिटर्न करना है? रिटर्न a1 + a2 मतलब 1 + 1 क्या रिटर्न कर देंगे? टू। आपका आंसर क्या होगा? टू। अगर हम फिबोना की सीरीज़ लिखे भी तो स्टार्ट करेंगे 0 और वन से। फिर 0 + 1 1 + 1 2 तो ये है 0 ये है वन ये है टू ये है थ्री क्या आंसर आया टू सेम आंसर आप प्रिंट कर सकते हैं तो ये तो",
+      "source": "caption",
+      "english_text": "Simple. Come now, there was one line left. What is? If we go to 1 n = 1 again 1 = n = 1 then this is the base case. So what will be your return here? Forest. Got both. What do you have to return? Return a1 + a2 means what will 1 + 1 return? To. What will be your answer? To. Even if we write the Fibonacci series, we will start from 0 and one. Then 0 + 1 1 + 1 2 So this is 0 This is one This is two This is three What answer came Two same answers If you can print then this is"
+    },
+    {
+      "start_time": 604.399,
+      "end_time": 630.949,
+      "text": "बहुत सिंपल था उम्मीद करते हैं कि इसमें कोई डाउट नहीं होगा अगर आप पहले की एक वीडियो हो या पहले की कोई भी वीडियो देखिए मेरी रिकर्शन सीरीज की तो ये आपके लिए एकदम पीस ऑफ़ केक है। क्या है? पीस ऑफ़ केक है। इसमें हमको नहीं लगता है कि आपको समझने में कोई भी दिक्कत होगी। अगर आप बहुत ज्यादा हिम्मत महसूस कर रहे हैं, बहुत ज्यादा शक्ति है आपके अंदर, तो आप n = 5 के लिए चला लीजिएगा। n = 5 के लिए चलाएंगे, आपका कॉपी भर जाएगा। लेकिन चलाना चाहिए। अच्छी एक्सरसाइज है। हम मेरे पास उतना स्पेस नहीं है ना। आईपैड में उतना स्पेस नहीं है इसलिए हम नहीं चला रहे हैं।",
+      "source": "caption",
+      "english_text": "It was very simple, hope there will be no doubt in this, if you have watched an earlier video or any of the earlier videos of my recursion series then this is a piece of cake for you. What is? Piece of cake. We do not think that you will have any problem in understanding this. If you are feeling very courageous, have a lot of power inside you, then you can go for n = 5. Will run for n = 5, your copy will be filled. But it must be run. It's good exercise. I don't have that much space. The iPad doesn't have that much space so we're not running it."
+    },
+    {
+      "start_time": 630.959,
+      "end_time": 659.75,
+      "text": "खच-पच हो जाएगा। अपने कॉपी में आप आराम से चलाइए। n = 5 के लिए बहुत लंबा-लंबा ट्री बनेगा। और आपको आंसर क्या मिलना चाहिए? 0 1 2 और थ्री। तो ये हो गया 0 1 2 3 4 एक और। पांच। आपका आंसर होना चाहिए पांच। आपका आंसर लास्ट में पांच आना चाहिए। तो जाके इसको सबमिट करिएगा। ये रहा कोड। रिकजन का कोड ऐसा ही होता है। बहुत छोटा, बहुत प्यारा कोड होता है। लिखना बहुत आसान है। समझना मुश्किल है। चलाना ड्राई रन करना मुश्किल है। ठीक है? तो ये हो गया फिबोना की सीरीज। आप लोग सीख चुके हैं।",
+      "source": "caption",
+      "english_text": "Will be exhausted. Play it comfortably in your copy. For n = 5 a very tall tree will be formed. And what should be your answer? 0 1 2 and three. So it's 0 1 2 3 4 one more. Five. Your answer should be five. Your answer should come last in five. So go and submit it. Here is the code. Rickson's code is like this. It's a very short, very sweet code. It is very easy to write. hard to understand. Dry running is difficult. Ok? So this is the Fibonacci series. You guys have learned."
+    },
+    {
+      "start_time": 659.76,
+      "end_time": 691.99,
+      "text": "बहुत-बहुत बधाई हो। अगला जो क्वेश्चन है ना वो इंटीजर का नहीं है। एरे का नहीं है। ये है स्ट्रिंग का। ये है स्ट्रिंग का। अगेन हमको पता है कि ये क्वेश्चन भी आप लोग पहले से देखे होंगे। आपको इसमें चेक करना है कि स्ट्रिंग पेड्रोम है कि नहीं? पैिंड्रोम जिनको नहीं आता है आना चाहिए। पेड्रोम जिसका होता है सीधा उल्टा एक समान। सीधा उल्टा एक समान मतलब अगर आप उसको रिवर्स करके लिखेंगे तो आपको सेम स्ट्रिंग मिलना चाहिए। फॉर एग्जांपल नमन। नमन एक वर्ड है। अगर आप नमन को रिवर्स कर देंगे तो देखिए एन एम ए एन ये नमन का रिवर्स है। दोनों एक समान है। इस तरीके के स्ट्रिंग को हम लोग क्या बोलते हैं?",
+      "source": "caption",
+      "english_text": "Many many congratulations. The next question is not of integers. Does not belong to the array. This is of string. This is of string. Again, we know that you people must have seen these questions already. You have to check whether the string is Pedrom or not? Those who do not know Pandrome should come. Pedrom which is exactly the same as the reverse. Exactly the same means if you write it in reverse, you should get the same string. Naman for example. Naman is a word. If you reverse Naman, then see N M A N, this is the reverse of Naman. Both are same. What do we call this type of string?"
+    },
+    {
+      "start_time": 692.0,
+      "end_time": 725.67,
+      "text": "पेड्रोम। अगर आप कोई स्ट्रिंग लेते हैं ए बी सी। इसको रिवर्स करिए। सी बी ए। ये एक समान तो नहीं है। सेम स्ट्रिंग नहीं आया ना? तो ये हो जाएगा नॉट पेड्रोम। तो सिमिलरली आपको स्ट्रिंग दिया हुआ है। आपको ट्रू या फॉल्स बताना है। पेड्रोम है तो ट्रू बताइए। नहीं है तो फॉल्स बताइए। अच्छा। अगेन इसको सॉल्व करने का बहुत सारा तरीका है। हमको ये कमेंट में नहीं चाहिए कि अरे इससे क्यों किए हम तो इसको वैसे कर लेंगे टू पॉइंटर से कर लेंगे। वो हम नहीं पढ़ा रहे हैं। ठीक है? अब कर लेंगे हम जानते हैं कि कर लेंगे। लेकिन मेरा मुद्दा आप लोग को रिकर्ज़न पढ़ाना है। ठीक है? हमको पेड्रोम स्ट्रिंग का मास्टर बनाना नहीं है। क्योंकि ऐसा बहुत सारा कमेंट हम देखते हैं किसीकिसी में टू पॉइंटर के एक लेक्चर",
+      "source": "caption",
+      "english_text": "Pedrom. If you take any string A B C. Reverse it. CBA. This is not the same. The same string did not come, right? So it will be not Pedrom. So similarly you are given a string. You have to tell True or False. If it is Pedrom then tell the truth. If not then tell me the details. Good. Again there are many ways to solve this. We don't want this comment that why did we do this, we will do it the same way with a two pointer. We are not teaching that. Ok? We will do it now, we know we will. But my point is to teach you guys recursion. Ok? We don't have to master the Pedrom string. Because we see a lot of such comments in someone's lecture of a two-pointer."
+    },
+    {
+      "start_time": 725.68,
+      "end_time": 760.069,
+      "text": "में जिसमें हम दो मर्ज करा रहे थे एरे को। शायद नेगेटिव था सॉर्टेड ए नेगेटिव एरे वैसा करके तो उसमें बहुत सारा ज्ञानी लोग का कमेंट था कि अरे ये तरीका नहीं है आप तो दो पॉइंटर यहां वहां रख के वो पढ़ाना मकसद नहीं था आप लोग को मर्ज टू सॉर्टेड एरे पढ़ाना मकसद था तो जो ऐ है मेरा जो पढ़ाना चाहते हैं वो पढ़िए क्वेश्चन आप कहीं से देख के आए हैं कि नहीं आपको चैट जीबीटी बोला है कि दिस इज़ नॉट द ऑप्टिमाइज्ड अप्रोच उससे काम नहीं बनेगा जो पढ़ रहे हैं जो कांसेप्ट सिखाना चाहते हैं वो कीजिए क्वेश्चन तो एक जरिया है ना क्वेश्चन हम सिर्फ थ्योरी रटवा देंगे तो उससे नहीं होगा ना क्वेश्चन एक तरीका है आप लोगों को कॉन्सेप्ट बताने का कॉन्सप्ट सेप्ट पे फोकस कीजिए। क्वेश्चन चैट जीपीटी",
+      "source": "caption",
+      "english_text": "In which we were merging two arrays. Maybe it was a negative sorted array. After doing that, there were comments from a lot of knowledgeable people that this is not the method. The purpose was not to teach you by placing two pointers here and there. The purpose was to teach you people to merge two sorted arrays. So, whatever is mine, whatever you want to teach, read it. Question: Have you seen it from somewhere or not? Chat GBT has told you that this is not the optimized approach. That will not help. Those who are studying, those who want to teach the concept should do so. Questions are a medium. If we just make you memorize the theory then it will not help. Questions are a way to tell the concept to people. Focus on the concept itself. Question Chat GPT"
+    },
+    {
+      "start_time": 760.079,
+      "end_time": 786.949,
+      "text": "तो बोला था ऐसे करके तो आप फिर चैट जीपीटी पढ़ा नहीं पाएगा आपको। चैट जीपीटी बस आपको दे पाएगा। ठीक है? चलिए तो बात सिंपल सी है कि आपको एक स्ट्रिंग दिया रहेगा। आपको ट्रू या फॉल्स रिटर्न करना है। लेकिन इसमें रिकर्शन कैसे लगेगा? मतलब इसमें दिमाग में आना चाहिए कि साला इसमें रिकर्ज़ कैसे लगेगा? अभी तक हम लोग जो रिकर्ज़ पढ़े हैं उसमें क्या है? सबसे पहले तो आपको बेस केस सोचना है। बेस केस का माने कि सबसे छोटा इनपुट। सबसे छोटा इनपुट पे उसका आंसर सोच के रिटर्न कर दीजिए। सबसे पहले बेस केस।",
+      "source": "caption",
+      "english_text": "So it was said that if you do this then Chat GPT will not be able to teach you. Chat GPT will be able to give you just that. Ok? Well, the matter is simple that you will be given a string. You have to return true or false. लेकिन इसमें रिकर्शन कैसे लगेगा? मतलब इसमें दिमाग में आना चाहिए कि साला इसमें रिकर्ज़ कैसे लगेगा? अभी तक हम लोग जो रिकर्ज़ पढ़े हैं उसमें क्या है? सबसे पहले तो आपको बेस केस सोचना है। बेस केस का माने कि सबसे छोटा इनपुट। सबसे छोटा इनपुट पे उसका आंसर सोच के रिटर्न कर दीजिए। सबसे पहले बेस केस।"
+    },
+    {
+      "start_time": 786.959,
+      "end_time": 813.91,
+      "text": "अच्छा। एक बार को ये भी सोच लेंगे कोई बात नहीं। उसके बाद क्या है कि जिस इंडेक्स पे आप अभी हैं उनको अलग कर लो। उनको अलग कर लो। मतलब कि मान लीजिए आप इस एरे पे हैं तो आप इस वाले को अलग कर लिए और ये आपका रिमेनिंग हो गया। अब रिमेनिंग वाले का आंसर निकाल लो। सेम फंक्शन से। सेम फंक्शन से रिमेनिंग वाले का आंसर निकाल लो। कैसे निकलेगा? जादू से। सेम फंक्शन को कॉल कर देना रिमेनिंग वाले के लिए। आ जाएगा आंसर।",
+      "source": "caption",
+      "english_text": "Good. It doesn't matter if they think about it for once. What happens after that is to separate the indexes you are currently on. Separate them. Meaning, suppose you are on this array, then you separate this one and this becomes your remainder. Now find out the answer of the remaining one. From the same function. Find the answer of the remaining one using the same function. How will it work out? By magic. Call the same function for the remaining one. The answer will come."
+    },
+    {
+      "start_time": 813.92,
+      "end_time": 847.829,
+      "text": "उस पे ट्रस्ट रखोगे आ जाएगा। अब जिसको आप निकाले हैं जिसको आप अलग करके रखे थे मतलब आपका कोई एक अलग था प्लस रिमेनिंग को जोड़ के प्लस रिमेनिंग वाला जो आपको आंसर मिला उसको जोड़ के आंसर बना लीजिए मतलब कि अगेन छह पेज का ऐसे लिखना है एक पेज अलग कर लीजिए कि एक पेज तो हम खुद से ही लिख लूंगा। पांच पेज का आंसर अगर कोई बता दे तो अपना एक पेज और जो पांच पेज आपको कोई बता दिया है उसको जोड़ लीजिए और दोनों को जोड़ के अपना आंसर टीचर को सबमिट कर दीजिए। तो कुल मिला के ये हमारा रिकर्शन का टेंप्लेट था कि यही करना होता है। आइए सोचा जाए अब इसमें कैसे करेंगे। सबसे पहले",
+      "source": "caption",
+      "english_text": "If you trust him, he will come. Now, the one which you have taken out and the one which you had kept separately, means one of yours was different, add the plus remaining and make the answer by adding the answer which you got, that is, again you have to write six pages like this, separate one page that I will write one page myself. If someone gives you the answer of five pages, then add your one page and the five pages given to you by someone and after adding both, submit your answer to the teacher. So overall this was our template of recursion that this is what has to be done. Now let us think how to do this. first of all"
+    },
+    {
+      "start_time": 847.839,
+      "end_time": 882.55,
+      "text": "तो बेस केस सबसे पहले बेस केस क्या है? बेस केस मतलब सबसे छोटा इनपुट। अब आपको कोई स्ट्रिंग मिल रहा है इनपुट में। आपको इनपुट में क्या मिल रहा है? स्ट्रिंग। सबसे छोटा स्ट्रिंग क्या पॉसिबल है? सबसे छोटा स्ट्रिंग क्या पॉसिबल है? अगर स्ट्रिंग का लेंथ अगर स्ट्रिंग का लेंथ ज़ीरो हो। अगर स्ट्रिंग का लेंथ ज़ीरो हो तो आप क्या करेंगे? अगर किसी स्ट्रिंग का लेंथ ज़ीरो है तो उसका आंसर ट्रू होगा कि फॉल्स होगा? ट्रू होगा। ट्रू होगा। क्यों? खाली स्ट्रिंग है। मतलब इसमें कुछ है ही नहीं। अगर आप उसका रिवर्स करेंगे वो भी खाली रहेगा। तो खाली इज़ इक्वल टू खाली तो ट्रू रहेगा। अच्छा। तो ये तुम सोच लिया कि लेंथ = 0 का आंसर ट्रू ही रहता है। लेंथ =",
+      "source": "caption",
+      "english_text": "So Base Case First of all what is Base Case? Base case means smallest input. Now you are getting any string in the input. What are you getting in input? string. What is the shortest string possible? What is the shortest string possible? If the length of the string is zero. What will you do if the length of the string is zero? If the length of a string is zero then will its answer be true or false? Will be true. Will be true. Why? is an empty string. Meaning there is nothing in it. If you reverse it, it will also remain empty. So empty is equal to empty then it will remain true. Good. So you thought that the answer of length = 0 remains true. length ="
+    },
+    {
+      "start_time": 882.56,
+      "end_time": 916.55,
+      "text": "1 का आंसर क्या होगा? अगर किसी का लेंथ वन है, किसी स्ट्रिंग का लेंथ वन है, उसका आंसर क्या होगा? a ये स्ट्रिंग है। इसको रिवर्स करिए। a ही आएगा। सेम है, सेम लग रहा है। n अच्छा इसको रिवर्स करिए। n ये भी सेम आएगा। तो किसी भी एक लेंथ की स्ट्रिंग को आप अगर रिवर्स भी कर देंगे तो वही रहेगा ना। तो अगर एक लेंथ है तो इसका आंसर भी ट्रू है। चलिए ज़ीरो और वन के लिए हम लोग आंसर निकाल चुके हैं। वेरी गुड। अब आगे बढ़ते हैं। अब आगे बढ़ते हैं। अब मान लीजिए कि लेंथ = 2 मिल गया, थ्री मिल गया, लेंथ 10 मिल गया स्ट्रिंग का तब क्या करेंगे? अब उसके बारे में सोचते हैं। आइए, इंसानों की तरह सोचिए। हम बार-बार बोलते",
+      "source": "caption",
+      "english_text": "What will be the answer of 1? If the length of any string is one, the length of any string is one, what will be its answer? a is this string. Reverse it. Only a will come. It's the same, it looks the same. n Okay reverse it. n This will also be the same. So even if you reverse a string of any length, it will remain the same. So if there is one length then its answer is also true. Well, we have found out the answers for zero and one. very good. Now let's move ahead. Now let's move ahead. Now suppose we got length = 2, got three, got length 10, what will we do with the string then? Now let's think about that. Come, think like humans. we talk again and again"
+    },
+    {
+      "start_time": 916.56,
+      "end_time": 949.99,
+      "text": "हैं कि इंसान की तरह सोचना सीखिए। उसके बाद कोड पे जाया करिए। शुरू में कोड की भाषा नहीं सोचिए। ये मत सोचिए कि कौन सा इफ लिख देंगे, कौन सा फॉर लूप लिख देंगे, चल जाएगा। वैसे नहीं होगा। इंसान की तरह सोचिए। आपको हम जब कोई बड़ा स्ट्रिंग देते हैं तो आप क्या करते हैं? हम एक बड़ा स्ट्रिंग लिख रहे हैं। एम ए एल ए मल याम। ठीक है? मलयालम एक इंडिया की भाषा होती है केरला की मलयालम। बड़ा सा वर्ड है। आप कैसे सोचते हैं? आप कैसे करते हैं इसको? एक तरीका है कि आप इसको रिवर्स करके लिख लेते हैं कॉपी में और लाइन बाय लाइन मिला देते हैं। लेकिन अगर आपको रिवर्स",
+      "source": "caption",
+      "english_text": "That is, learn to think like a human being. After that go to the code. Don't think about code language in the beginning. Don't think which if we will write, which for loop we will write, it will work. It won't happen that way. Think like a human being. What do you do when we give you a big string? We are writing a big string. M A L A Mal Yam. Ok? Malayalam is an Indian language and Malayalam is from Kerala. It's a big word. How do you think? How do you do it? One way is that you write it in reverse in the copy and match it line by line. But if you reverse"
+    },
+    {
+      "start_time": 950.0,
+      "end_time": 984.31,
+      "text": "नहीं करने का मन है तो आप इसको कैसे सॉल्व करते हैं? तो हम हम एज ए इंसान हम कैसे सॉल्व करते हैं? हम आपको बताते हैं। हम सबसे पहले इसको पकड़ते हैं। सबसे पहला वाला और सबसे लास्ट वाला। एम और एम सेम है। अगर ये पहला और लास्ट ही सेम नहीं है तो ये स्ट्रिंग पैलिड्रोम नहीं हो सकता है। मान लीजिए कि लास्ट में इसके z लिखा होता तो m और z सेम नहीं है ना भैया। तो ये कैसे होगा पेंड्रोम? तो हम इसको पहले ही रिजेक्ट कर देते। अगर m और m सेम है तो हम आगे बढ़ते। तो हम एक इधर से आगे बढ़ते और एक पीछे से भी आगे बढ़ते। हम इसको देते और हम इसको लेते। अगेन अगर यहां पे हमको मुश्किल हो जाती। अगर यहां पे हमको गड़बड़ हो जाता। A होता वहां B होता तो हम इसको",
+      "source": "caption",
+      "english_text": "If you don't feel like doing it, how do you solve it? So how do we solve it as a human being? We tell you. We catch it first. The first one and the last one. M and M are same. If the first and the last string are not the same then the string cannot be palindrome. Suppose if z was written at the end, then m and z are not the same, bhaiya. So how will this pandrome happen? So we would have rejected it earlier. If m and m are equal then we proceed further. So one of us would move forward from this side and one would move forward from behind also. We give this and we take this. Again if we get into trouble here. If we get into trouble here. Had A been there, had B been there, we would have"
+    },
+    {
+      "start_time": 984.32,
+      "end_time": 1017.03,
+      "text": "भी रिजेक्ट कर देते कि ये स्ट्रिंग पैलिंड्रोम नहीं आएगी। लेकिन क्योंकि अभी तक सेम है। ये वाला भी सेम था। मतलब पहला और लास्ट वाला सेम था। सेकंड और सेकंड लास्ट भी सेम है। हम और आगे बढ़ेंगे। हम और आगे बढ़ेंगे और आगे बढ़ जाइए। एल और एल ये भी सेम है। ये भी सेम निकल गया। अगेन यहां पे अगर हमको जहां पे हमको दिखता कि ये सेम नहीं है, हम तुरंत वहां से हट जाते कि नहीं ये पैलिंड्रोम नहीं हो सकता है। बहुत बड़ा स्ट्रिंग है ना, हम एक साथ देख नहीं सकते हैं। ठीक है? ये भी सेम है और आगे बढ़ेंगे हम और आगे बढ़ेंगे तो हम और आगे बढ़ गए A और A अगेन ये भी सेम है। ये भी साला",
+      "source": "caption",
+      "english_text": "Would also have rejected that this string would not be a palindrome. But because there are still beans. This one was also the same. Meaning the first and last were the same. Second and second last are also the same. We will move further. We will go further and move ahead. L and L are also same. This too came out. Again, if we had seen that it was not the same thing, we would have immediately moved away from there to see that it cannot be a palindrome. It's a very big string, we can't watch it together. Ok? This is also the same and we will move further. If we move further then we will move further. A and A again this is also the same. this too fucker"
+    },
+    {
+      "start_time": 1017.04,
+      "end_time": 1043.429,
+      "text": "सेम है और आगे बढ़ेंगे और आगे बढ़ के हम कहां आ जाएंगे? हम यहां पे आ जाएंगे। अब दोनों यहीं पे आ गए। अब दोनों अब क्योंकि यहां से एक आगे बढ़े। यहां से एक आगे बढ़े। यहीं पे आ गए। ये तो ऑब्वियसली सेम होगा। ये तो ऑब्वियसली सेम ही होगा। तो अब हम और आगे नहीं बढ़ सकते। मतलब हम पूरा कंपेयर कर लिए। तो अब हम बोलते हैं कि हां जी ये ट्रू है। ये ट्रू है। हम हम ऐसे करते हैं। एज अ ह्यूमन आप भी ऐसे ही करते होंगे। बहुत बड़ा स्ट्रिंग है। तो आप क्या करते हैं पैलिंड्रोम के लिए? कि अच्छा एक काम करो पहला वाला देख लो। लास्ट वाला देख लो।",
+      "source": "caption",
+      "english_text": "We are the same and will move ahead and where will we reach after moving ahead? We will come here. Now both of them have come here. Now both of them move forward from here. Move ahead from here. Came here. This will obviously be the same. This will obviously be the same. So now we can't go any further. Meaning we have done a complete comparison. So now we say that yes, it is true. This is true. We we do it like this. As a human you too would be doing the same. It's a very big string. So what do you do with a palindrome? Well, do one thing, see the first one. Look at the last one."
+    },
+    {
+      "start_time": 1043.439,
+      "end_time": 1075.35,
+      "text": "सेम-सेम मिल रहा है। दूसरा देख लो, सेकंड लास्ट देख लो, सेम मिल रहा है। तीसरा देख लो, तीसरा लास्ट देख लो, सेम मिल रहा है। चौथा देख लो, लास्ट, चौथा देख लो, सेम मिल रहा है। पांचवा और पांचवा लास्ट। तो ये तो सेम ही है। जहां पे आप मिल जाते हैं, आप रुक जाते हैं। बोलते हैं, हां, सब सेम लग रहा है। पैलिंड्रोम है। जब आप रिवर्स भी करते हैं, तो आप एक तरीके से यही काम करते हैं। जब आप रिवर्स भी करते हैं। हम आपको रिवर्स करके दिखाते हैं। मान लीजिए आपका स्ट्रिंग ऐसा लगता। एम ए एल ए वाई ए एल ए एम आप इसको जब रिवर्स करके लिखते हैं तो आप ये लिखते हैं ना एम ए एल ए वाई ए एल ए",
+      "source": "caption",
+      "english_text": "Same is happening. Look second, look second last, you are getting the same. Look at the third one, look at the third last one, you are getting the same result. Look at the fourth, last, look at the fourth, you are getting the same. Fifth and fifth last. So this is just beans. Where you meet, you stop. They say, yes, everything looks the same. is a palindrome. When you do reverse too, you kind of do the same thing. Even when you do reverse. Let us show you in reverse. Suppose your string looks like this. M A L A Y A L A M When you write it in reverse, you write M A L A Y A L A"
+    },
+    {
+      "start_time": 1075.36,
+      "end_time": 1105.909,
+      "text": "एम और इन दोनों को कंपेयर करते हैं। ये दोनों क्या है? ये दोनों आप क्या कंपेयर कर रहे हैं? ये फर्स्ट है और ये लास्ट है जो कि अब फर्स्ट बन गया रिवर्स करने के बाद। ये सेकंड है और ये सेकंड लास्ट है। इन दोनों को कंपेयर करते हैं और जहां भी आपको मिलता है कि ये नहीं है तो आप हट जाते हैं। जहां भी मुश्किल डिफरेंस दिखता है आप तुरंत फॉल्स कर देते हैं। यही करते हैं ना? एल ये क्या है? ये थर्ड है और ये थर्ड लास्ट है। ये थर्ड लास्ट है। यही काम आप कर रहे हैं। ये क्या है? ये फोर्थ है।",
+      "source": "caption",
+      "english_text": "M and compare these two. What are these two? What are you comparing these two? This is the first and this is the last which has now become the first after being reversed. This is a second and this second is last. You compare these two and wherever you find that it is not there, you move away. Wherever you see a difficult difference, you immediately fall. This is what we do, right? L What is this? This is the third and this is the third last. This is the third last. This is what you are doing. What is this? This is fourth."
+    },
+    {
+      "start_time": 1105.919,
+      "end_time": 1140.07,
+      "text": "ये क्या था? ये फोर्थ लास्ट है। यही काम कर रहे हैं। ये क्या है? यह फिफ्थ है और ये फिफ्थ लास्ट है। यहां भी यही कर रहे हैं। अब यहां आप ये कर रहे हैं आप सिक्स्थ और ये सिक्स्थ लास्ट। लेकिन इसको करने का कोई फायदा नहीं है। इसको करने का फायदा नहीं है। क्यों फायदा नहीं है? क्योंकि ये वाला जो ए है ना यही ये वाला ए है। तो ये ऑलरेडी हो चुका है। ये देखिए। ये ऑलरेडी हो चुका है। तो अगर यहां तक सब कुछ सेम आ रहा था तो आप बोल सकते हैं कि पैेंड्रोम है। तो आप अगर रिवर्स करके करते हैं तो भी आप उसी लॉजिक से चलते हैं कि आप फर्स्ट उठाते हैं और लास्ट उठाते हैं कंपेयर करते हैं। अगर",
+      "source": "caption",
+      "english_text": "What was this? This is the fourth last. This is what we are doing. What is this? This is the fifth and this is the fifth last. They are doing the same here also. Now here you are doing this, you are sixth and this is sixth last. But there is no use in doing this. There is no use in doing this. Why is there no benefit? Because this one is the A. This one is the A. So this is already done. Look at this. This is already done. So if everything was the same till now then you can say that it is Pandrome. So even if you do it in reverse, you follow the same logic that you pick first and then compare. if"
+    },
+    {
+      "start_time": 1140.08,
+      "end_time": 1173.75,
+      "text": "सिमिलर नहीं है रिटर्न कर दो फॉल्स। अगर सिमिलर है इसको एक आगे लाओ मतलब सेकंड पे आओ उसको सेकंड लास्ट पे लाओ। अगेन कंपेयर करो। सिमिलर आप करते हैं। अच्छा। अब इस चीज़ को रिकर्सन से कैसे सॉल्व किया जा सकता है? अच्छा। हर बार हर बार अब क्या कर रहे हैं? देखिए। एम ए एल ए वाई ए एल ए एम ठीक है मान लीजिए हर बार देखिए हर बार आप एक आसान काम तो कर ही सकते हैं अगर आपको ये स्ट्रिंग मिलता है अभी हर बार आप एक आसान काम कर सकते हैं कि आप इसके फर्स्ट वाले को मान लीजिए आप यहां पे हैं और इसके लास्ट वाले को इस स्ट्रिंग के फर्स्ट और",
+      "source": "caption",
+      "english_text": "If it is not similar please return it. If it is similar then bring this one ahead i.e. come second and bring that one second last. Compare again. Similar you do. Good. Now how can this thing be solved with recursion? Good. Every time, what are you doing now? See. M A L A Y A L A M Okay, let's say look every time, every time you can do one simple thing if you get this string, now every time you can do one simple thing that you take the first one of this, let's say you are here and the last one of this string is the first and"
+    },
+    {
+      "start_time": 1173.76,
+      "end_time": 1208.07,
+      "text": "इस स्ट्रिंग के लास्ट वाले को कंपेयर कर लीजिए किसको कर रहे हैं फर्स्ट को लास्ट से हर बार हर बार एक ये तो आसान काम है ना एक तो एक कंपेयर का काम है अच्छा अगर अगर इसका आंसर आया कि नो ये इक्वल नहीं है तो आप डायरेक्टली फॉल्स रिटर्न कर सकते हैं। कर सकते हैं ना। अगर मान लो यहां m होता यहां पे y होता तो नहीं हो सकता है पैरेंड्रोम बिल्कुल बिल्कुल नहीं हो सकता है ना। अगर फर्स्ट लास्ट के इक्वल नहीं है तो जब आप कुछ भी कर लीजिए अब बाकी का स्ट्रिंग कुछ भी हो ये नहीं हो पाएगा पैड्रोम तो आप नहीं करते हैं। अच्छा जब आप अगर ये फर्स्ट और लास्ट इक्वल हो गया जैसा कि यहां पे हो गया। तो अभी आपको एक चीज़ पता है कि ये",
+      "source": "caption",
+      "english_text": "Compare the last one of this string, who are you comparing first to last every time? This is an easy task, no, this is the work of a comparer. Well, if the answer is that no, it is not equal, then you can directly return false. Can do it? If suppose here there was m and here there was y then it cannot be a parendrome at all. If the first is not equal to the last, then no matter what you do, no matter what the rest of the string is, it will not be possible, so you don't do it. Well, when you if this first and last become equal as it happened here. So now you know one thing that this"
+    },
+    {
+      "start_time": 1208.08,
+      "end_time": 1242.47,
+      "text": "वाला ये वाला इक्वल है इसके। Okay? तो ये पेड्रोम हो सकता है। लेकिन अब आपको ये बाकी का स्ट्रिंग चेक करना है। ये बाकी का स्ट्रिंग चेक करना है। अगर ये बाकी का स्ट्रिंग आपको कोई बता दे कि ये पेड्रोम है कि नहीं। अगर कोई आदमी आपको बता दे कि ये पेड्रोम है कि पेड्रोम नहीं है तो आप इसका फैसला बहुत आसानी से ले सकते हैं। हम ऐसा क्यों बोल रहे हैं? इसलिए बोल रहे हैं क्योंकि देखिए अगर कोई बता दे कि ये बीच वाला स्ट्रिंग ना पैलिंड्रोम है। ये बीच वाला स्ट्रिंग पैड्रोम है। कितना भी बड़ा हो सकता है। कोई दिक्कत नहीं है। पेड्रोम है। मतलब मान लीजिए ऐसा है ए ए ये पेंड्रोम है। अच्छा आप किसको चेक किए",
+      "source": "caption",
+      "english_text": "This one is equal to this one. Okay? So this could be Pedrom. But now you have to check the rest of the string. This is to check the rest of the string. If anyone can tell you the rest of this string whether it is Pedrom or not. If a person tells you whether it is Pedrom or not, then you can take the decision very easily. Why are we saying this? That's why I am saying this because see if someone tells you that this middle string is not a palindrome. This is the middle string padrom. No matter how big it can be. There is no problem. Pedrom is. Meaning, suppose it is like this, A A, this is a pendrome. ok who did you check"
+    },
+    {
+      "start_time": 1242.48,
+      "end_time": 1274.39,
+      "text": "हैं? शुरू वाले को और लास्ट वाले को। तो क्या ये पूरा स्ट्रिंग भी पैेंड्रोम नहीं हो जाएगा? हां हो जाएगा। क्यों? क्योंकि फर्स्ट और लास्ट इक्वल है। फर्स्ट और लास्ट इक्वल है। और ये जो बीच वाला पार्ट है ये भी पेड्रोम है। ये भी पेड्रोम है। तो जब आप इस पूरे स्ट्रिंग को एज ए पूरा स्ट्रिंग देखेंगे तो ये पक्का पक्का पेड्रोम होगा। क्यों होगा? क्योंकि जब आप इसको रिवर्स करेंगे ना जब आप इसको रिवर्स करेंगे तो क्या होगा? ये वाला आदमी फर्स्ट वाला आदमी लास्ट वाले आदमी से कंपेयर होगा। तो ये तो ऑलरेडी सेम है। और ये सारे आइटम्स ये जो बीच का पार्ट है इसको रिवर्स",
+      "source": "caption",
+      "english_text": "are? The first one and the last one. So won't this entire string also become pandrome? Yes will. Why? Because first and last are equal. First and last are equal. And this middle part is also Pedrom. This is also Pedrom. So when you look at this entire string as a complete string, it will definitely be a Pedrom. Why would it happen? Because what will happen when you reverse it? This person who is first will be compared to the person who is last. So this is already the same. And reverse all these items which is the middle part."
+    },
+    {
+      "start_time": 1274.4,
+      "end_time": 1308.549,
+      "text": "करके लिखिए। ए ए क्योंकि ये ऑलरेडी पेड्रोम है। ऑब्वियसली ये इक्वल आएगा। ऑब्वियसली पेड्रोम बोलता ही यही है कि सिंगल और उसका रिवर्स इक्वल आता है। ऑब्वियसली ये इक्वल आएगा। मतलब कि आपको कोई भी कितना भी बड़ा स्ट्रिंग 1000 लेंथ का स्ट्रिंग मिले ऐसा करके। 1000 लेंथ का स्ट्रिंग। आप अगर उसका ये फर्स्ट और लास्ट उठा के देखें। आप उसका फर्स्ट और लास्ट उठा के देखें। अगर फर्स्ट और लास्ट इक्वल नहीं है तो बीच का स्ट्रिंग कुछ भी हो। वो बीच का स्ट्रिंग कितना भी खलीफा हो वो नहीं हो सकता पहले तो पक्की बात है रिटर्न फॉल्स हो जाएगा लेकिन अगर s ऑफ",
+      "source": "caption",
+      "english_text": "Do it and write. A A A Because it is already Pedrom. Obviously it will come equal. Obviously, as soon as Pedrom says, a single and its reverse comes equal. Obviously it will come equal. Meaning that no matter how big the string is, you can get a string of 1000 length by doing this. String of length 1000. If you pick up his first and last and see. You pick up his first and last and see. If first and last are not equal then the middle string can be anything. No matter how accurate that middle string is, it cannot happen. Firstly, it is certain that return will fall, but if s is off."
+    },
+    {
+      "start_time": 1308.559,
+      "end_time": 1343.19,
+      "text": "फर्स्ट इक्वल इक्वल टू s ऑफ लास्ट है मान लीजिए यहां पे y है और यहां पे y आपको कोई बता दे कि ये वाला बीच वाला पार्ट जो आप छोड़े हैं जो कि सेकंड से सेकंड लास्ट तक जो बीच वाला पार्ट है इसके बारे में कोई आपको बता दे ट्रू या फॉल्स कि ये वाला स्ट्रिंग पैड्रोम है कि नहीं ये वाला स्ट्रिंग पैलिंड्रोम है कि नहीं तो आप बोल सकते हैं तो आप क्या बोल सकते हैं कि अगर s ऑफ फर्स्ट इक्वल इक्वल टू s ऑफ लास्ट सबसे पहले तो ये होना तो जरूरी है ये होना तो बिल्कुल जरूरी है। एंड एंड ये बीच वाला ये बीच वाला जो पार्ट है ना जो कि सेकंड से सेकंड लास्ट जो बीच ग्रे हरा वाला पार्ट है ये वाला बीच वाला पार्ट भी",
+      "source": "caption",
+      "english_text": "First equal is equal to s of last. Suppose here there is y and here y. Let someone tell you that this is the middle part which you have left which is the middle part from second to second last. Let someone tell you true or false whether this string is a palindrome or not. If this string is palindrome or not then you can say. So what can you say that if s of first is equal to two s of last. First of all. So it is necessary for this to happen, it is absolutely necessary for this to happen. And and this middle part, this middle part, which is second to second last, this middle gray green part, this middle part also."
+    },
+    {
+      "start_time": 1343.2,
+      "end_time": 1376.71,
+      "text": "पेड्रोम है। बीच वाला पार्ट भी पेड्रोम है। बीच वाला पार्ट भी पेड्रोम है। अगर ये दोनों चीजें होती हैं तो आंसर ट्रू है। तो आंसर ट्रू है। यहीं पे आता है रिकजन का खेल। यहीं पे आता है रिकर्शन का खेल। फर्स्ट और लास्ट के लिए हम लोग क्या करेंगे? दो पॉइंटर पास करिए। दो पॉइंटर पास करिए। देखिए। ये स्ट्रिंग रखिए। n a एम ए एन 0 1 2 3 4 ये स्ट्रिंग है। आपको क्या करना है? हर बार आपको फर्स्ट और लास्ट आपको बस एक ही चीज चाहिए। फर्स्ट और लास्ट को कंपेयर करके देख लीजिए। बीच वाले पार्ट",
+      "source": "caption",
+      "english_text": "Pedrom is. The middle part is also Pedrom. The middle part is also Pedrom. If both these things happen then the answer is true. So the answer is true. This is where reconstruction comes into play. This is where recursion comes into play. What will we do for first and last? Pass two pointers. Pass two pointers. See. Keep this string. n a m a n 0 1 2 3 4 This is the string. What do you have to do? Every time you need only one thing first and last. Try comparing the first and last. middle part"
+    },
+    {
+      "start_time": 1376.72,
+      "end_time": 1411.51,
+      "text": "का आंसर ट्रस्ट कीजिए कि आपको मिल जाएगा और दोनों अगर ट्रू है तो रिटर्न कर दीजिए। तो शुरुआत में हम लोग क्या करेंगे? फन स्ट्रिंग तो पास करेंगे ही। एक लो पॉइंटर = 0 और हाई पॉइंटर = 4। शुरुआत में शुरुआत में ये मेन से कॉल हुआ है। ये मेन से कॉल हुआ है। मतलब शुरुआत में फर्स्ट और लास्ट क्या है? जो स्ट्रिंग का जीरो है और जो स्ट्रिंग का साइज -1 है वो लास्ट है। अच्छा बेस केस थोड़ी देर के लिए भूल जाइए। बेस केस थोड़ी देर के लिए भूल जाइए। सबसे पहले आप क्या बोले थे? इफ s ऑफ लो नॉट इक्वल टू s ऑफ हाई। मतलब कि",
+      "source": "caption",
+      "english_text": "Trust that you will get the answer and if both are true then return it. So what will we do in the beginning? Will definitely pass the fun string. A low pointer = 0 and a high pointer = 4. Initially this call came from the main. This is a call from the main line. Meaning, what is first and last in the beginning? The string which has zero size and the string which has size -1 is the last one. Well, forget the base case for a while. Forget the base case for a while. What was the first thing you said? If s off low not equal to s off high. means that"
+    },
+    {
+      "start_time": 1411.52,
+      "end_time": 1439.19,
+      "text": "ये जो आपको अभी वाला लो और हाई मिला है। अभी का स्ट्रिंग मिला है ना। अगर इसमें फर्स्ट और लास्ट सेम नहीं है तो आप कुछ भी कर लीजिए। पॉसिबल नहीं है पेंड्रोम। तुरंत रिटर्न फॉल्स कर दीजिए। रिटर्न फॉल्स कर दीजिए। बराबर अब इसका मतलब है कि अब आप यहां पे नहीं आए हैं। मतलब कि इक्वल है। अब आपको क्या करना है? अब अब ये तो इक्वल है। ज़ीरो और फोर तो इक्वल है। अब अगर इसके बीच वाला भी पैेंड्रोम है। अगर इसके बीच वाला भी पैलिंड्रोम है तो आपको क्या करना है? रिटर्न।",
+      "source": "caption",
+      "english_text": "This is the current low and high that you have got. Got the current string, right? If first and last are not the same then you can do anything. Pendrome is not possible. Please return false immediately. Make return false. Now it means that you are no longer here. Meaning it is equal. What do you have to do now? Now this is equal. Zero and four are equal. Now if the one in between is also a pandrome. What do you have to do if the middle one is also a palindrome? Return."
+    },
+    {
+      "start_time": 1439.2,
+      "end_time": 1473.43,
+      "text": "अब सब कुछ किस पे डिपेंड करता है? अब सब कुछ बीच वाले पे डिपेंड करता है। फर्स्ट और लास्ट आप देख लीजिए कि दोनों n है। ओके? अब अगर बीच वाला पैेंड्रोम है तो पूरे स्ट्रिंग का आंसर ट्रू होगा। अगर बीच वाला पैिंड्रोम नहीं है पूरे स्ट्रिंग का आंसर फॉल्स होगा। तो सिंपल आप कर सकते हैं फन एस बीच वाला पार्ट किसको बोल रहे हैं हम? शुरुआत में लो ये था और हाई ये था। बीच वाला पार्ट क्या है? लो +1 और हाई -1 मतलब लो +1 और हाई -1 और इस फंक्शन को बंद कर दीजिए। फिर से समझिए। हर बार आप क्या",
+      "source": "caption",
+      "english_text": "Now on what does everything depend? Now everything depends on the person in the middle. First and last you see that both are n. Ok? Now if the middle one is pandrome then the answer of the entire string will be true. If there is no middle pandrome, the answer of the entire string will be false. So simple you can do the fun s middle part. Who are we talking to? In the beginning there was low and there was high. What is the middle part? Low +1 and High -1 means Low +1 and High -1 and turn off this function. Understand again. every time you"
+    },
+    {
+      "start_time": 1473.44,
+      "end_time": 1504.71,
+      "text": "कर रहे हैं? हर बार आपको जब कोई स्ट्रिंग मिलता है, हर बार आपको कोई स्ट्रिंग मिलता है तो लो यहां पे शुरूआत में यहां रहता है और हाई यहां पे रहता है। तो आप सबसे पहले चेक करते हैं कि क्या ये दोनों सेम है? अगर ये दोनों सेम नहीं है तो आप कुछ भी दुनिया का ताकत लगाएंगे पैलिंड्रोम में ही नहीं है। वैरी गुड। अगर ये दोनों सेम है। अगर ये दोनों सेम है। अब सब कुछ किस पे डिपेंड करता है? इस हरे वाले पार्ट पे। इस हरे वाले पार्ट पे। अगर ये हरा वाला पार्ट पैलिंड्रोम है। पूरा स्ट्रिंग पैलिंड्रोम है। अगर ये हरा वाला पार्ट पेड्रोम नहीं है, पूरा स्ट्रिंग पैलिंड्रोम नहीं है। तो आप क्या करते हैं? अगला कॉल लो +1 और हाई माइनस वन।",
+      "source": "caption",
+      "english_text": "are doing? Every time you get a string, every time you get a string, low is here at the beginning and high is here at the beginning. So first of all you check whether these two are same? If these two are not the same, then whatever you try to do in the world is not a palindrome. Very good. If both of these are same. If both of these are same. Now on what does everything depend? On this green part. On this green part. If this green part is a palindrome. The entire string is a palindrome. If the green part is not a palindrome, the entire string is not a palindrome. So what do you do? Next call low +1 and high minus one."
+    },
+    {
+      "start_time": 1504.72,
+      "end_time": 1529.99,
+      "text": "आप विश्वास रखते हैं कि आंसर आपको मिल जाएगा। आप विश्वास रखते हैं विश्वास रखते हैं कि मिल जाएगा कि मिल जाएगा। यह देखिए सेम फंक्शन है। ये सेम फंक्शन है। यह सेम फंक्शन है इसका भूल। विश्वास रखते हैं कि बीच का आंसर हमको कहीं से मिल जाएगा। हम मेरा काम क्या है? मेरा काम बस हर बार फर्स्ट और लास्ट निकालना है। बीच का आंसर हमको कहीं भगवान दे देंगे। बीच का आंसर हम देख के दोनों आंसर को जोड़ के और अपना आंसर बता देंगे।",
+      "source": "caption",
+      "english_text": "You believe that you will get the answer. You believe that you will get it, that you will get it. See this is the same function. This is the same function. It's the same function and it's a mistake. We believe that we will get the answer from somewhere. What's my job? My job is just to get first and last every time. God will give us the answer somewhere. After looking at the middle answer, we will add both the answers and give our answer."
+    },
+    {
+      "start_time": 1530.0,
+      "end_time": 1560.87,
+      "text": "तो ये हो गया। अब इसका बेस केस क्या है? इसका बेस केस क्या है? तो इसका बेस केस के लिए इसका एक ड्राई रन करना जरूरी है। देखिए बेस केस याद रखिएगा शुरू में हम लोग बोले क्या थे? लेंथ पे बोले थे शायद। कहां गया? अ कहीं तो बेस केस लिखा गया था। हां। अगर लेंथ जीरो तो भी ट्रू, लेंथ वन तो भी ट्रू। ओके? देखते हैं क्या होता है। आइए इसको नमन पे अपना करके देखते हैं। तो ये आपका स्ट्रिंग है। एन एम 0 1 2 3 4 ये आपका स्ट्रिंग है। शुरुआत",
+      "source": "caption",
+      "english_text": "So this is done. Now what is its base case? What is its base case? So it is necessary to do a dry run for its base case. Look, remember the base case, what we said in the beginning? Perhaps he spoke at length. where did he go? A The base case was written somewhere. Yes. If length is zero then it is also true, if length is one then it is also true. Ok? Let's see what happens. Let's see it adopted on Naman. So this is your string. N M 0 1 2 3 4 This is your string. beginning"
+    },
+    {
+      "start_time": 1560.88,
+      "end_time": 1595.35,
+      "text": "में आप क्या करते हैं? फन लो = 0 हाई = 4 क्योंकि मेन से यही कॉल होगा। मीन से में फर्स्ट क्या है? ज़ीरोथ इंडेक्स। और लास्ट क्या है? फोर्थ इंडेक्स। ओके? तो आप सबसे पहले क्या देखते हैं कि ज़ीरो और फोर मतलब n और n सेम है क्या? बोला हां n और n सेम है। तो आप क्या कॉल कर देते हैं? रिटर्न लो = 1 हाई = 3 मतलब अब अब सारा तुम्हारे भरोसे हैं भैया। अब लो = लो +1 और हाई -1 अब तुम्हारे भरोसे हैं। हम तुम पे छोड़ दिए। आइए इसको चलाइए। लो इक्वल टू 1 हाई इक्वल टू 3 ये भी सेम काम करेगा। ये भी बस इस a और इस a को देख लेगा। कि क्या ये सेम",
+      "source": "caption",
+      "english_text": "What do you do in? Fun Low = 0 High = 4 because this will be the call from main. What is the first thing in the meaning? Zeroth Index. And what is the last? Fourth index. Ok? तो आप सबसे पहले क्या देखते हैं कि ज़ीरो और फोर मतलब n और n सेम है क्या? बोला हां n और n सेम है। तो आप क्या कॉल कर देते हैं? रिटर्न लो = 1 हाई = 3 मतलब अब अब सारा तुम्हारे भरोसे हैं भैया। अब लो = लो +1 और हाई -1 अब तुम्हारे भरोसे हैं। हम तुम पे छोड़ दिए। आइए इसको चलाइए। लो इक्वल टू 1 हाई इक्वल टू 3 ये भी सेम काम करेगा। ये भी बस इस a और इस a को देख लेगा। कि क्या ये सेम"
+    },
+    {
+      "start_time": 1595.36,
+      "end_time": 1629.83,
+      "text": "है? बोला हां ये सेम है। अब ये क्या करेगा? बाकी का जो बचा हुआ है बाकी का जो बचा हुआ है ये किसको कॉल करेगा? फन लो = 2 और हाई = 2। अब देखिए बहुत इंपॉर्टेंट बात है। बहुत इंपॉर्टेंट बात यहां पे नोटिस कीजिए। अब लो इक्वल टू हाई हो गया है। लो इक्वल टू हाई हो गया है। जब लो इक्वल टू हाई हो गया है तो उस स्ट्रिंग का लेंथ कितना होगा? उस स्ट्रिंग का लेंथ कितना होगा? उस स्ट्रिंग का लेंथ स्लाइडिंग विंडो याद कीजिए। लो टू हाई के सब एरे का लेंथ कैसे निकाला जाता था? हाई - लो + 1 हाई माइनस लो + 1 मतलब 2 - 2 + 1 = 1 लेंथ",
+      "source": "caption",
+      "english_text": "Is? Said yes, it is beans. What will he do now? Whom will he call with the remaining amount and the remaining amount? Fun Low = 2 and High = 2. Now see, this is a very important thing. Notice a very important thing here. Now low is equal to high. Low has become equal to high. When low becomes equal to high, what will be the length of that string? What will be the length of that string? Recall the length of that string as a sliding window. How was the length of the sub array from low to high determined? High - Low + 1 High minus Low + 1 means 2 - 2 + 1 = 1 length"
+    },
+    {
+      "start_time": 1629.84,
+      "end_time": 1656.71,
+      "text": "कितना आया? वन हम लोग क्या बोले थे बेस केस में? अगर किसी स्ट्रिंग का लेंथ वन है तो क्या वो पैलिंड्रोम है? हां वो पैेंड्रोम पक्का है। वो पैलिंड्रोम पक्का है। तो अगर क्या आपको यहां पे आपको बेस केस मिल गया है? अगर लो इक्वल इक्वल टू हाई। इसका मतलब क्या है? कि आप जिस लेंथ ऑफ स्ट्रिंग को देख रहे हैं ना, आप जिस पार्ट को देख रहे हैं इस समय उसका लेंथ कितना है? वन। क्यों? हाई माइनस लो + 1 उसका लेंथ वन आएगा। खटाक से यहां पे रिटर्न ड्रॉ कर दो। खटाक से रिटर्न ट्रू कर दो।",
+      "source": "caption",
+      "english_text": "How much did it cost? One, what did we say in the base case? If a string has length one, is it a palindrome? Yes, that's Pandrome for sure. That's a palindrome for sure. So if you have got the base case here? If low is equal to high. What does it mean? The length of the string that you are looking at, what is the length of the part that you are looking at at this time? Forest. Why? High minus low + 1 will come to his length one. Draw the return here carefully. Return true immediately."
+    },
+    {
+      "start_time": 1656.72,
+      "end_time": 1691.269,
+      "text": "खटाक से क्या कर दो? रिटर्न ट्रू। लेकिन अब ये खत्म नहीं होता है। ये तो ऑड लेंथ स्ट्रिंग था। अगर हम लोग इवन लेंथ स्ट्रिंग बनाएं। n a b 0 1 2 3 4 5 ये इवन लेंथ स्ट्रिंग है। यहां देखते हैं क्या होता है? शुरुआत में आप क्या कॉल करेंगे? लो इज इक्वल टू 0 हाई इक्वल टू फाइव। ठीक है? क्या ये दोनों सेम है? n और n हां जी सेम है। तो हम लोग रिजल्ट अपने अपने अपना भाग के किसको सौंप देंगे? बीच वाले स्ट्रिंग को। तो ये किसको कॉल करेगा? फन लो = 1 और हाई = 4 अगेन सेम",
+      "source": "caption",
+      "english_text": "What to do with Khatak? Returns true. But now it does not end. This was an odd length string. If we make an even length string. n a b 0 1 2 3 4 5 This is an even length string. Let's see what happens here? What would you call the beginning? Low is equal to 0. High is equal to five. Ok? Are these two beans? n and n yes yes it is the same. So to whom will we hand over our respective results? To the middle string. So who will he call? Fun Low = 1 and High = 4 Again Same"
+    },
+    {
+      "start_time": 1691.279,
+      "end_time": 1726.149,
+      "text": "काम करिए इसको और इसको लो और हाई वाले को कंपेयर करके देख लीजिए। सेम नहीं हुआ तो वहीं से आ जाएंगे। सेम है तो ठीक है। आगे बढ़ेंगे। हम लोग अपना भाग किसको सौंप देंगे? वन लो = 2 हाई = किसको? थ्री। सेम काम देखिए। क्या b और b सेम है? हां जी। b और b सेम है। आगे बढ़िए। आगे बढ़िए। वन लो = 3 हाई = 2 अब देखिए ये ये तो गड़बड़ हो गया। बोलता है कि ये ऐसा स्ट्रिंग है जो स्टार्ट होता है जिसका फर्स्ट है लो = 3 पे और जिसका एंडिंग है",
+      "source": "caption",
+      "english_text": "Work on this and this and compare the low and high ones. If it is not available then we will come from there. If it's beans then it's okay. will proceed. To whom will we hand over our share? One low = 2 high = whom? Three. Look at the same work. Are b and b the same? Yes sir. b and b are equal. Go ahead. Go ahead. One Low = 3 High = 2 Now look, this is a mess. It says that this is a string which starts with Lo = 3 and ends with"
+    },
+    {
+      "start_time": 1726.159,
+      "end_time": 1759.99,
+      "text": "हाई = 2 पे ये तो कभी हो नहीं सकता है। ऐसा कौन सा स्ट्रिंग होता है जिसका जिसका एंड स्टार्टिंग जो है वो थ्री पे है। और जिसका एंडिंग जो है वो हाई पे है। ये तो कोई पॉसिबल स्ट्रिंग है नहीं। इस अगर आप इस इस स्ट्रिंग का लेंथ अगर निकालेंगे तो क्या आएगा? हाई माइनस लो + 1 मतलब 2 - 3 + 1 इसका इसका लेंथ क्या आएगा? 0 इसका लेंथ क्या आएगा? 0 इसका लेंथ क्या आएगा? 0 हाई माइनस लो + 1 2 - 3 + 1 का लेंथ क्या आएगा? 0 हम लोग बेस केस में क्या देखे थे? अगर किसी स्ट्रिंग का लेंथ ज़ीरो है तो क्या वो ट्रू होता है? या",
+      "source": "caption",
+      "english_text": "This can never happen at high = 2. Which is the string whose end and starting point is three? And whose ending is on a high note. This is not a possible string. If you calculate the length of this string, what will you get? High minus low + 1 means 2 - 3 + 1. What will be its length? 0 What will be its length? 0 What will be its length? What will be the length of 0 high minus low + 1 2 - 3 + 1? 0 What did we see in the base case? If the length of a string is zero then is it true? or"
+    },
+    {
+      "start_time": 1760.0,
+      "end_time": 1794.95,
+      "text": "फॉल्स होता है? हम लोग बोल रहे थे कि हां जी वो ट्रू होता है। क्योंकि अगर कोई खाली स्ट्रिंग है तो खाली को रिवर्स करोगे तो क्या आएगा? खाली आएगा। तो ये भी ज़ीरो होता है। तो क्या आपको अपना बेस केस मिल गया है? हर बार आपको जब लो और हाई पास होता है तो हम लोग एक इंट लेंथ निकाल लेंगे। क्या निकाल लेंगे? हाई माइनस लो + 1 अगर लेंथ इक्वल इक्वल टू 0 और लेंथ इक्वल इक्वल टू वन आया तो रिटर्न ट्रू कर दीजिए क्योंकि जीरो लेंथ का स्ट्रिंग और वन लेंथ का स्ट्रिंग दोनों का आंसर वन होता ट्रू होता है। अगर ऐसा नहीं है तो आप अपना बाकी कुछ कर सकते हैं। तो सिंपल है। आइए कोड लिखें।",
+      "source": "caption",
+      "english_text": "Falls happen? We were saying that yes, it is true. Because if there is an empty string then what will come if you reverse the empty string? Will come empty. So this is also zero. So have you found your base case? Every time you pass a low or high, we will calculate an int length. What will you take out? HIGH MINUS LOW + 1 If length equals equal to 0 and length equals to one then return true because zero length string and one length string both have the answer one as true. If it is not so then you can do the rest of your work. So it is simple. Let's write the code."
+    },
+    {
+      "start_time": 1794.96,
+      "end_time": 1827.269,
+      "text": "ट्राई रन करें। एक नॉन पैड्रोम का भी करके देख लेंगे। तो सबसे पहले तो कोड लिखिए बुल फन। इसमें आपको क्या पास करना है? सबसे पहले तो अपना स्ट्रिंग। सबसे पहले तो स्ट्रिंग। उसके बाद दो चीजें लो और हाई। मतलब इस वक्त हम लो और हाई क्या देख रहे हैं? मतलब इस वक्त हम फर्स्ट और लास्ट को देख रहे हैं। तो मेन क्या पास करेगा इसमें? ज़ीरो और s डॉट साइज - 1 ज़ीरो और लास्ट वाला इंडेक्स। अच्छा। सबसे पहले तो हम लेंथ निकालना चाहेंगे। लेंथ कैसे निकलेगा? हाई - लो + 1 अच्छा बेस केस। बेस",
+      "source": "caption",
+      "english_text": "Try run. Will try a non padrom also. So first of all write the code Bull Fun. What do you have to pass in this? First of all, your string. First of all, string. After that two things low and high. Meaning, what are the lows and highs we are seeing at this time? Meaning at this time we are looking at the first and the last. So what will the main pass in this? Zeros and s Dot Size - 1 Index with zero and last. Good. First of all we would like to find the length. How will the length be determined? High - Low + 1 good base case. base"
+    },
+    {
+      "start_time": 1827.279,
+      "end_time": 1860.71,
+      "text": "केस क्या है? लेंथ अगर ज़ीरो है और लेंथ वन है, खटाक से ट्रू रिटर्न कर दो। ये ये होगा ही। खाली स्ट्रिंग है या एक का स्ट्रिंग है? बिल्कुल ट्रू होगा। अब अगर ऐसा नहीं है। अब अगर ऐसा नहीं है। तो सबसे पहले तो क्या करिए? अगर s ऑफ़ लो नॉट इक्वल टू s ऑफ़ हाई मतलब कि अगर जो आप स्ट्रिंग देख रहे हैं ना उसमें फर्स्ट और लास्ट ही अलग-अलग है। तो आप इसमें कुछ भी अगर दुनिया का ताकत लगाएंगे तो ये पैरेंड्रोम नहीं हो पाएगा। रिटर्न फॉल्स। रिटर्न फॉल्स। अगर ऐसा हो गया अगर n और n सेम है तो अब मेरा पूरा भाग्य किसके हाथ में है?",
+      "source": "caption",
+      "english_text": "What is case? If length is zero and length is one, return true immediately. This will definitely happen. Is it an empty string or a string of one? It will be absolutely true. Now if it is not so. Now if it is not so. So what to do first of all? If s of low is not equal to s of high, it means that in the string you are looking at, the first and last are different. So if you use any power of the world in this then this parendrome will not happen. Return Falls. Return Falls. If this happens, if n and n are the same then now in whose hands is my entire fortune?"
+    },
+    {
+      "start_time": 1860.72,
+      "end_time": 1887.19,
+      "text": "अब बीच वाले स्ट्रिंग के हाथ में है। अब बोलेंगे कि भैया जो तुम करोगे वही होगा। अगर बीच वाला पेड्रोम है तो हम पूरे पेड्रोम है। अगर बीच वाला पेड्रोम नहीं है तो हम पूरे पेड्रोम नहीं है। तो सिंपल क्या करना है? रिटर्न बीच वाले का आंसर कैसे आएगा? विश्वास करिए कि यही फंक्शन दे देगा किसी तरीके से। विश्वास करिए कि बीच मतलब लो +1 और हाई -1। विश्वास करिए कि दे देगा। ये ये किस पे हो रहा है? ये काम ट्रस्ट पे हो रहा है कि भगवान दे देंगे।",
+      "source": "caption",
+      "english_text": "Now the middle string is in hand. Now we will say that whatever you do will happen. If the middle one is Pedrom then we are the whole Pedrom. If the middle is not Pedrom then we are not the whole Pedrom. So what is the simple thing to do? How will the answer to the middle one be returned? Believe me, this will provide this function in some way. Believe that the middle means low +1 and high -1. Believe that he will give. On whom is this happening? This work is being done on the trust that God will give it."
+    },
+    {
+      "start_time": 1887.2,
+      "end_time": 1921.909,
+      "text": "भगवान जो करते हैं सही करते हैं। तो ये ट्रस्ट पे हो रहा है। ये देख लीजिए कितना सा कोड है इसका पुच्चू सा कुछ है नहीं करने के लिए। आइए इसको चला के देखें। एक नॉन पेंड्रोम स्ट्रिंग लेके देख लेते हैं। आइए। जिसमें n है, n है। a है, a है। और यहां b है और यहां c है। देखिए क्या होगा। ठीक है? सबसे पहले मेन वाला। तो पहले वाला फंक्शन क्या कॉल होगा? लो = 0 और हाई = 5 के साथ। ठीक है? ये कॉल होगा। अच्छा लेंथ निकाल लीजिए। लेंथ क्या आएगा? 5 - 0 + 1 =",
+      "source": "caption",
+      "english_text": "Whatever God does is right. So this is happening on trust. Look at how much code there is, there is just a little bit of it to do nothing. Let's try it out. Let's take a non-pendrom string and see. Come. In which n is n. a is, a is. And here's b and here's c. See what will happen. Ok? First the main one. So what will be the first function call? With low = 0 and high = 5. Ok? This call will happen. Find a good length. What will be the length? 5 - 0 + 1 ="
+    },
+    {
+      "start_time": 1921.919,
+      "end_time": 1955.99,
+      "text": "6 तो क्या ये बेस केस में पड़ता है? नहीं। अभी लेंथ ज़ीरो है वन तो नहीं हुआ है। तो आपको आगे चलना पड़ेगा। सबसे पहले क्या चेक होगा कि क्या s ऑफ 0 और s 5 इक्वल है? n और n क्या ये इक्वल है? हां, इक्वल है। अब इसका भाग्य किसके हाथ में है? जो ये आदमी बोलेगा जो ये आदमी बोलेगा उसी के हाथ में है। तो फन लो = 1 और हाई = 4 अब जो ये बोलेगा वही होगा। आइए इस फंक्शन को कॉल करें। इस फंक्शन को कॉल करें। तो फन लो = 1 और हाई = 4 याद रखिए ये आपका मेन फंक्शन था। ये आपका मेन वाला जो आपको मेन में",
+      "source": "caption",
+      "english_text": "6 So does it fall in the base case? No. Right now the length is zero, it has not become one. So you will have to move ahead. The first thing to check is whether s of 0 and s of 5 are equal? n and n are they equal? Yes, it is equal. Now whose fate is in whose hands? Whatever this man says is in his hands. So Fun Low = 1 and High = 4. Now whatever he says will happen. Let's call this function. Call this function. So Fun Low = 1 and High = 4. Remember this was your main function. This is your main one which gives you the main"
+    },
+    {
+      "start_time": 1956.0,
+      "end_time": 1981.669,
+      "text": "रिजल्ट देगा। बाकी तो सारे वो कॉल्स होते रह जाएंगे। आइए सेम काम है। इसका भी लेंथ निकालिए। 4 - 1 + 1 = 4 तो क्या ये भी बेस केस है? नहीं ये भी बेस केस नहीं है। सबसे पहले क्या कंपेयर कीजिए? s ऑफ 1 और s4 को। s ऑफ 1 s ऑफ 4 को। क्या ये इक्वल है? हां ये इक्वल है। तो क्या बोलेगा? अब मेरा सर पूरा डिसीजन किस पे है? बीच वाले पे। लो = 2 और हाई इक्वल टू किस पे है? थ्री पे।",
+      "source": "caption",
+      "english_text": "Will give results. Rest all those calls will continue to happen. Let's do the same thing. Find out its length also. 4 - 1 + 1 = 4 So is this also the base case? No, this is also not a base case. What to compare first? s off 1 and s4. s off 1 to s off 4. Is it equal? Yes it is equal. So what will you say? Now my complete decision is on what? On the middle one. Low = 2 and High equal to what? On three."
+    },
+    {
+      "start_time": 1981.679,
+      "end_time": 2015.669,
+      "text": "आइए इसको कॉल करें। इस आदमी को कॉल करें। वन लो = 2 हाई = 3 ठीक है? इसका लेंथ निकालो भाई। 3 - 2 + 1 मतलब टू। क्या ये भी बेस केस है? ना ये भी बेस केस नहीं है। लेंथ ज़ीरो है वन तो है नहीं। तो बेस केस है नहीं। हां। क्या s2 और s3 इक्वल है? नहीं। s2 और x ऑफ़ 3 इक्वल नहीं है। तो ये वाला आदमी क्या रिटर्न कर देगा? फॉल्स। या क्या रिटर्न कर देगा? फॉल्स। और ये खत्म हो जाएगा। ये फॉल्स सीधा जाके कहां बैठ जाएगा? इधर। तो इस आदमी के पास क्या आंसर",
+      "source": "caption",
+      "english_text": "Let's call it. Call this guy. One low = 2 high = 3 ok? Find out its length brother. 3 - 2 + 1 means two. Is this also the base case? Neither is this a base case. Length is zero, one is not. So there is no base case. Yes. Is s2 and s3 equal? No. s2 and x of 3 are not equal. So what return will this man make? Falls. Or what will return? Falls. And this will end. Where will this falls sit directly? Here. So what answer does this man have?"
+    },
+    {
+      "start_time": 2015.679,
+      "end_time": 2049.909,
+      "text": "आ गया? फॉल्स। ये पूरा फंक्शन क्या रिटर्न करेगा? फॉल्स। ये आंसर किसके पास जाके बैठा है? यहां पे। ये पूरा आदमी मेन को क्या बोल देगा? फॉल्स। तो आप क्या प्रिंट करेंगे? फॉल्स। ध्यान से देखिए। क्या ये पैेंड्रोम है? नहीं। ये पैलिंड्रोम नहीं है। ऐसे ये प्रोग्राम चलता है। तो अगेन असली में काम कहां हो रहा है? काम कुछ नहीं हो रहा है। काम एक तो काम ये हो रहा है। बहुत बढ़िया। हर बार फर्स्ट और लास्ट को कंपेयर कर रहे हैं। बीच वाले स्ट्रिंग के लिए भरोसा रख रहे हैं कि हम लोग को मिल जाएगा। तो ये होता है रिकर्शन। आप समझ रहे हैं हम क्या बोल रहे हैं? तो ये हो गया",
+      "source": "caption",
+      "english_text": "Has he arrived? Falls. What will this entire function return? Falls. With whom does this answer lie? On here. What will this whole man say to the main? Falls. So what will you print? Falls. Look carefully. Is this pandrome? No. This is not a palindrome. This is how this program works. So again where is the real work happening? Nothing is getting done. One work is being done. very nice. Every time the first and last are being compared. The middle string is holding out hope that we will find it. So this is recursion. Do you understand what we are saying? so this is done"
+    },
+    {
+      "start_time": 2049.919,
+      "end_time": 2077.909,
+      "text": "स्ट्रिंग पे रिकर्शन। सेम आप आप चाहें तो स्ट्रिंग को रिवर्स भी कर सकते हैं। तो हम चाहते हैं कि वो आप लोग खुद करें। किसी स्ट्रिंग को रिवर्स स्ट्रिंग बनाइए। रिवर्स स्ट्रिंग करिए। रिकर्सन की मदद से। लूप से नहीं। लूप से हम जानते हैं आप लोग कर लेंगे। वो टू पॉइंटर्स हैं। रिवर्स स्ट्रिंग कीजिए यूजिंग रिकर्ज़। तो ये चाहते हैं हम कि आप लोग खुद करें। ये आप लोग करना सीख जाइए। ऑलमोस्ट ऑलमोस्ट सिमिलर ही है पैेंड्रोम के। तो ऐसे रिगार्जन काम करता है। कोड अगेन बोल रहे हैं बहुत छोटा होता है। देखिए पांच छह लाइन का कोड नहीं है। हम फैला फैला के लिखे हैं तब पांच छह लाइन का पड़ा है।",
+      "source": "caption",
+      "english_text": "Recursion on string. Same, you can also reverse the string if you want. So we want you guys to do that yourself. Reverse any string. Reverse string. With the help of recursion. Not from the loop. From Loop we know you guys will do it. Those are two pointers. Reverse string using recursion. So we want you guys to do this yourself. You guys learn to do this. It is almost similar to Pandrome. So that's how regurgitation works. The code we are speaking again is very short. Look, it is not a five or six line code. We have written it spread out, so it is only five or six lines long."
+    },
+    {
+      "start_time": 2077.919,
+      "end_time": 2111.27,
+      "text": "इसको हम चाहते दो तीन लाइन में खत्म कर सकते थे। ठीक है? दो-तीन लाइन में कोड खत्म हो जाएगा। कोड बहुत छोटा होता है। चलता बड़ा खतरनाक है। देखिए चलने में लग रहा होगा कि बाप रे बाप तो क्या हो गया? अब समझ में नहीं आ रहा है कुछ। तो रिकर्शन से करते रहिए। और कुछ लोग बोल रहे थे कि सर समझ में आ रहा है? पूरा समझ में नहीं आ रहा है। तो ये जो रिक्शन का प्लेलिस्ट है इसको भी रिकर्शन की तरह समझिए। हर दिन आज जो हो रहा है वो समझ लीजिए। हर दिन ये वाला लेक्चर समझ लीजिए। बाकी का लेक्चर का आपको डर लग रहा है ना कि बाकी तो बहुत बड़ा बचा हुआ है नहीं आएगा। हर दिन आप अपना काम करिए। बाकी का जो पूरा लेक्चर बचा हुआ है वो भगवान के भरोसे छोड़ दीजिए।",
+      "source": "caption",
+      "english_text": "We could have finished it in two or three lines if we wanted. Ok? The code will be finished in two-three lines. The code is very short. Walking is very dangerous. Look, while walking you must be feeling like 'Oh my God, what has happened?' Now I can't understand anything. So keep doing it with recursion. And some people were saying, Sir, do you understand? Don't understand completely. So this playlist of recursion, consider it also as recursion. Understand what is happening every day today. Consider every day as a lecture. You are afraid of the remaining lecture, because there is a lot left and you will not come. Do your work every day. Leave the remaining lecture to God."
+    },
+    {
+      "start_time": 2111.28,
+      "end_time": 2145.67,
+      "text": "लास्ट तक आपका काम हो जाएगा। मतलब जब ये सीरीज खत्म होगी तो आपको पूरा रिक्शन समझ में आ जाएगा। आपको मालूम नहीं चलेगा कैसे आया है। तो ये भी जस्ट आप आपको हर दिन क्या करना है? छोटा सा काम। आज का एपिसोड समझना है। आज का एपिसोड का क्वेश्चन लगाना है। बाकी जितना दुनिया का चीज नहीं हुआ है उसके बारे में टेंशन मत लीजिए। वो भगवान पे ट्रस्ट पे छोड़ दीजिए। ट्रस्ट है ना? रिकर्शन भी ट्रस्ट करता है ना ट्रस्ट करिए कि बन जाएगा किसी तरीके से। आपका काम क्या है कि मान लीजिए हम अगर एपिसोड फोर समझ गए और हमको भगवान अगर पूरा फाइव टू 20 जितना भी एपिसोड है सब समझा दिए तो हम पूरा समझ जाएंगे। आप बस इस पे फोकस रखिए। ये काम करिए ये काम भगवान पे छोड़ दीजिए। भगवान चाहेंगे तो समझ में आ ही जाएगा पूरा। है",
+      "source": "caption",
+      "english_text": "Your work will be done till the end. Meaning, when this series ends, you will understand the entire reaction. You won't know how it came. So this is also just what do you have to do every day? Small task. Today's episode has to be understood. The question of today's episode has to be asked. Don't worry about other worldly things that haven't happened yet. Leave that trust to God. Is there trust? Recursion also trusts, trust that it will be done somehow. What is your job? Suppose if we understand episode four and if God explains all the episodes five to 20 to us, then we will understand completely. You just keep focus on this. Do this work and leave it to God. If God wishes, you will understand completely. is"
+    },
+    {
+      "start_time": 2145.68,
+      "end_time": 2162.8,
+      "text": "ना? तो चलिए ये दो क्वेश्चन था। दोनों दो दोनों क्वेश्चन बनाइए। फिबोनाकी पेड्रोम मन करता है तो रिवर्स स्टिंग भी जरूर बनाइए। पैटर्न शीट में हम लगातार अपडेट कर रहे हैं। कल तक आपको क्वेश्चन दिखना चाहिए पूरा। हम लेकिन ये तीनों तो हम डाल ही दिए हैं। चलिए मिलिए कल है ना।",
+      "source": "caption",
+      "english_text": "na? So, these were two questions. Make two questions each. If you feel like Fibonacci Pedrom, then make reverse sting also. We are constantly updating the pattern sheet. By tomorrow you should see the question completed. But we have already put these three. Let's meet tomorrow."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

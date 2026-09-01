@@ -1,0 +1,387 @@
+{
+  "video_id": "EYpv5sypVdE",
+  "video_title": "Lecture 29 | The ABSOLUTE BEST Prefix Sum Pattern Hacks for Amazon Interviews",
+  "video_number": 32,
+  "chunks": [
+    {
+      "start_time": 1.829,
+      "end_time": 26.87,
+      "text": "आ जाइए भाई वेलकम है सारे। सॉरी कल क्लास नहीं हो पाई। कल थोड़ी तबियत ख़राब थी। मेरा नाम प्रत्युष नारायण है। माकामाई में है। यहां हम डीएसएफ अटैंड पढ़ाते हैं। जो लोग पहली बार आए हैं आपको डिस्क्रिप्शन से कुछ ना कुछ तो मिल ही जाएगा कि स्टार्ट कहां से करना है। चलिए। आज प्रीफिक्स सम का एक और सवाल करेंगे और यह सवाल बहुत हार्ड है। अह ये सवाल हर जगह सिखाया गया है और एक टेंपलेट के साथ सिखाया गया है कि एक काम करो इसमें प्लस कर दो, माइनस कर दो प्लस। नहीं। वो तरीका नहीं है। उससे आप सवाल याद कर सकते हैं। आप सवाल बना नहीं सकते हैं।",
+      "source": "caption",
+      "english_text": "Come brother, welcome everyone. Sorry couldn't attend class yesterday. I was a little unwell yesterday. My name is Pratyush Narayan. Is in Makamai. Here we teach DSF Attend. For those who are coming for the first time, you will definitely get something from the description as to where to start. Let go. Today we will ask another question on Prefix Sum and this question is very hard. Ah, this question has been taught everywhere and has been taught with a template that do one thing, do a plus in it, do a minus, do a plus. No. That is not the way. From that you can remember the questions. You cannot make questions."
+    },
+    {
+      "start_time": 26.88,
+      "end_time": 61.11,
+      "text": "हम लोग इसको वैसे नहीं सीखेंगे। हम लोग जैसे पढ़ते हुए आ रहे हैं वैसे ही सीखेंगे। हम लोग कैसे हरा पार्ट बनाते थे। उसका लाल पार्ट देखते थे। हम लोग को पता चल जाता था कि स्टोर क्या करना है और क्वेश्चन क्या पूछना है। उसी से हम लोग आंसर निकालते थे। पिछले दो क्वेश्चन में जो लोग पिछला वीडियो नहीं देखे हैं तो आप लोग को बहुत-बहुत बधाई। आप लोग नहीं देखे हैं। तो ऐसे ही अपना समय बचाते रहिए। ये सब मत देखिए। रील्स वगैरह देखते रहिए। खैर। तो ये जो क्वेश्चन है ना लीड कोड 525। बहुत इंपॉर्टेंट, बहुत अच्छा क्वेश्चन है। लेकिन जितना भी हम डिस्कशंस में पढ़े सब में मतलब ऐसा बताया हुआ है कि वो आपको लगेगा कि अरे ये तो हम कभी नहीं सोच पाते। ये तो मतलब जो याद रहेगा वही",
+      "source": "caption",
+      "english_text": "We won't learn it that way. We will learn as we come while studying. How we used to make green parts. Used to see its red part. We used to know what to store and what questions to ask. We used to find answers from that. Those who have not seen the previous video in the last two questions, many congratulations to you all. You guys haven't seen it. So keep saving your time like this. Don't watch all this. Keep watching Reels and more. well. So this question is lead code 525. Very important, very good question. But whatever we read in the discussions, the meaning of everything is mentioned in such a way that you will feel that we could never think of this. This means only what will be remembered"
+    },
+    {
+      "start_time": 61.12,
+      "end_time": 90.55,
+      "text": "बना पाएगा ऐसा नहीं है। चलिए आज दिखाएंगे कि जो हम लोग पैटर्न पढ़ रहे हैं वो कितना जरूरी है। वो कैसे हर क्वेश्चन में अप्लाई होता है तरह-तरह तरीके से। चलिए। सवाल आपको बोलता क्या है? सवाल सबसे पहले तो बोलता है कि आपके पास एक एरे है। आपके पास क्या है? एक एरे है। इस एरे में सिर्फ ज़ीरो और वन है। इस एरे में दो ही तरीके के नंबर आपको मिलेंगे। क्या? 0 और वन तो 1 2 3 4 5 1 2 3 ऐसा करके आपको एरे सिर्फ आपको जीरो और वन मिलेगा। अच्छा बहुत अच्छी बात।",
+      "source": "caption",
+      "english_text": "It is not possible that he will be able to make it. Let us show today how important the patterns we are studying are. How it is applied in every question in different ways. Let go. What does the question speak to you? The question first of all says that you have an array. What do you have? is an array. This array contains only zero and one. You will find only two types of numbers in this array. What? 0 and one are 1 2 3 4 5 1 2 3. By doing this you will only get zero and one. Okay, very good point."
+    },
+    {
+      "start_time": 90.56,
+      "end_time": 117.19,
+      "text": "जितना कम नंबर मिलेगा उतना ही अच्छा हो जाएगा मेरे लिए तो। अच्छा आपको इसमें एक मैक्सिमम लेंथ ऑफ ए कंटीन्यूअस सब एरे आपको क्या ढूंढना है? लेंथ ऑफ क्या? काउंट नहीं। काउंट नहीं। पिछले दो क्वेश्चन में काउंट था। इस बार लेंथ आ गया। लेंथ ऑफ मैक्सिमम सब एरे जिसमें जिसमें कंडीशन क्या है? इक्वल नंबर ऑफ जीरो एंड वन। इक्वल नंबर ऑफ 0 एंड वन।",
+      "source": "caption",
+      "english_text": "The lower the number I get, the better it will be for me. Well, what do you want to find in this, a maximum length of a continuous sub array? Length off what? Not count. Not count. There was counting in the last two questions. This time the length came. Length of maximum sub array in which what is the condition? Equal number of zero and one. Equal number of 0 and one."
+    },
+    {
+      "start_time": 117.2,
+      "end_time": 147.03,
+      "text": "इसकी आपको सबसे ज्यादा लेंथ बतानी है। तो अब देखिए अगर आप ये वाला सब एरे लेते हैं ये वाला। इसमें ज़ीरो एक बार है, एक बार है तो आपका आंसर टू हो सकता है। अ लेकिन आप अगर ये वाला सब एरे लेते हैं। इसमें भी वन दो बार है, ज़ीरो दो बार है। इसमें भी आपका आंसर फोर हो सकता है। लेकिन लेकिन लेकिन अगर आप ये वाला सब एरे लेते हैं। तो इसमें वन तीन बार है और ज़ीरो तीन बार है। इसमें आपकी मैक्सिमम लेंथ आ सकती है सिक्स। तो आपका आंसर होना चाहिए सिक्स। सबसे बड़ा सब एरे जिसमें ज़ीरो और वन एक बार हो। अच्छा।",
+      "source": "caption",
+      "english_text": "You have to tell its maximum length. So now see if you take this sub array, this one. In this there is zero once, if there is one then your answer can be two. A But if you take this sub array. In this also one is there twice and zero is there twice. In this also your answer can be four. But but but if you take this one sub array. So it has one three times and zero three times. Your maximum length can come in this six. So your answer should be six. The largest sub array containing zero and one once. Good."
+    },
+    {
+      "start_time": 147.04,
+      "end_time": 180.07,
+      "text": "चलिए। इसमें आप इसका डिस्क्रिप्शन देखेंगे, ट्यूटोरियल देखेंगे तो उसमें बड़ा अच्छा चीज है कि जब वन आता है तो सम को प्लस कर देना है, जीरो आता है तो सम को माइनस कर देना है। लेकिन वो क्यों करा जाता है? क्या दिमाग में आया वो नहीं बताया हुआ है। तो वो हम लोग आज देखने की कोशिश करेंगे। चलिए जो हम लोग पिछले दो क्वेश्चन में करते आ रहे हैं वही यहां भी करेंगे। फॉर एग्जांपल आप किसी इंडेक्स i तक पहुंचे हैं। आप क्या किसी इंडेक्स i तक पहुंचे हैं। ठीक है? यहां पे आपका i है। तो अगर हम i पे एंड होने वाले सब एरे का अच्छा आंसर निकाल लें जो कि हम लोग केडेंस में भी करते थे। याद करिए हम",
+      "source": "caption",
+      "english_text": "Let's go. In this you will see its description, if you see the tutorial, then the very good thing in it is that when one comes, then the sum has to be made plus, if zero comes, the sum has to be minus. But why is that done? What came to mind has not been mentioned. So we will try to see that today. Whatever we have been doing in the last two questions, we will do the same here also. For example you have reached an index i. Have you reached any index i? Ok? Here is your i. So if we find a good answer for the sub array ending with i, which we also used to do in Cadence. remember us"
+    },
+    {
+      "start_time": 180.08,
+      "end_time": 213.27,
+      "text": "लोग केडेंस में यही करते थे। केडेंस में हम लोग हर i पे खत्म होने वाले सब एरे का बेस्ट आंसर निकाल लेते थे और लास्ट में जो भी बेस्ट होता था उसको रिटर्न कर देते थे। प्रीफिक्स सम के पिछले दो सवालों में भी यही कर रहे हैं। i पे खत्म होने वाले सब एरे का अच्छा रिजल्ट निकाल लो। मतलब जिसमें सम था तो i पे खत्म होने वाले का अच्छा सम निकाल लो। ऐसा हर i के लिए करोगे तो आपको आंसर मिल जाएगी। ठीक है? तो फॉर एग्जांपल अगर हम इस आई पे हैं तो हम इस आई पे खत्म होने वाले सब एरे का जो भी अच्छा इस आई पे जो खत्म होता हो वैसे सब एरे का हम मैक्सिमम लेंथ निकाल लेंगे और ऐसा हम हर आई के लिए करेंगे तो हमको आंसर मिल जाएगा ठीक इसके लिए हम लोग क्या करते थे",
+      "source": "caption",
+      "english_text": "That's what people used to do at Cadence. In Cadence, we used to find the best answer for each array ending with i and return whatever was the best in the last one. We are doing the same in the last two questions of Prefix Sum. Get a good result for all the arrays ending in i. Meaning, if there was an even number, then find out the good even number for the one ending in i. If you do this for every i, you will get the answer. Ok? So for example, if we are on this i, then we will find out the maximum length of all the arrays that end on this i, whatever good is on this i, we will find out the maximum length of all the arrays that end on this i and we will do this for every i, then we will get the answer, exactly what we used to do for this."
+    },
+    {
+      "start_time": 213.28,
+      "end_time": 244.47,
+      "text": "हम क्या बोले थे आपको अपने मन से कोई हरा पार्ट ले लीजिए क्या अपने मन से एक हरा पार्ट ले लीजिए क्या ले लीजिए ग्रीन पार्ट ले लीजिए और अब इस ग्रीन पार्ट का मतलब क्या होता था ग्रीन पार्ट का मतलब होता था कि ये अच्छा सा एरे क्या है सही सा अच्छा सवाल है। सही या अच्छा क्या होता था? जो आपकी कंडीशन दी हुई है। मतलब कि आपके जितने ज़ीरो हैं उतने वन है। ये यही तो कंडीशन दी हुई है ना भाई। जितना ज़ीरो होगा उतना वन होगा। कैसे भी हो। हो सकता है आप अगर चार लेंथ का लिए तो हो सकता है इसमें",
+      "source": "caption",
+      "english_text": "What did we say, should you take a green part from your mind, should you take a green part from your mind, what should you take, take a green part and now what was the meaning of this green part, the meaning of green part was that what is this good array, it is a good question. What was right or good? Which is your condition. Meaning that you have as many ones as you have zeros. This is the condition given, isn't it brother? The more zero it is, the more it will be one. Be that as it may. Maybe if you take four lengths then it may be in this"
+    },
+    {
+      "start_time": 244.48,
+      "end_time": 274.79,
+      "text": "0 1 0 1 ऐसा ऐसा कुछ होगा। अच्छा। इसके जस्ट जो बचता है सब एरे उसको हम लोग क्या बोलते थे? रेड पार्ट। रेड पार्ट। रेड पार्ट। इसी रेड पार्ट का हम लोग को क्या सोचना पड़ता था कि ये रेड पार्ट को क्या होना पड़ेगा? क्या होना पड़ेगा? और उसी हिसाब से हम लोग सोचते थे कि क्वेश्चन क्या पूछेंगे#श मैप से? क्वेश्चन क्या पूछेंगे? क्वेश्चन क्या पूछेंगे? और क्वेश्चन क्या पूछेंगे? उसी हिसाब से स्टोर क्या करेंगे? हम बार-बार बोल रहे हैं पिछला दो क्वेश्चन जो नहीं देखे हैं।",
+      "source": "caption",
+      "english_text": "0 1 0 1 It would be something like this. Good. What did we call all that is left after this? Red part. Red part. Red part. What did we have to think about this red part, what would happen to this red part? What will have to happen? And accordingly we thought what questions would be asked from the map? What questions will you ask? What questions will you ask? What other questions will you ask? What will the stores do accordingly? We are saying again and again that we have not seen the last two questions."
+    },
+    {
+      "start_time": 274.8,
+      "end_time": 308.23,
+      "text": "तो ऐसे बच्चों को हम अवार्ड देंगे। अभी भारत रत्न मिलेगा ना जब 26 जनवरी को तो आप लोग को भारत रत्न दिलवाएंगे। जो लोग डायरेक्ट बीच-बीच में देखते हैं। यही हमारा लॉजिक था कि एक सब एरे आई पे खत्म होता है। वेरी गुड। एक ग्रीन पार्ट है जो कि अच्छा सब एरे हम लोग मान लिए कि यही सबसे अच्छा सब एरे है। जो बाकी बचा वो क्या होता है? वो रेड पार्ट होता है। वो अब उसको क्या होना पड़ेगा? जैसे जब सम वाला क्वेश्चन करते थे तो हम लोग मान लेते थे कि जो ग्रीन वाला सम है ना वो एग्जैक्टली k है। तो हम लोग को पता चलता था कि रेड वाले का सम - k होना चाहिए। ऐसा हम लोग को पता चलता था। मॉड्यूलस वाले क्वेश्चन में हम लोग मान लेते थे कि जो",
+      "source": "caption",
+      "english_text": "So we will give awards to such children. Now you will get Bharat Ratna, when on 26th January you will get Bharat Ratna. People who watch directly in between. This was our logic that each array ends at I. very good. There is a green part which is a good sub-array. We assumed that this is the best sub-array. What is left over? That is the red part. What will have to happen to him now? For example, when we used to do even questions, we used to assume that the green one which is even is exactly k. So we knew that the red one should be equal to - k. We used to know this. In modulus questions, we used to assume that"
+    },
+    {
+      "start_time": 308.24,
+      "end_time": 343.189,
+      "text": "ग्रीन वाला सम है ना उसको जब आप करेंगे तो ये ऐसा ऐसा आएगा। तो हम लोग को पता चलता था कि जो रेड वाला सम है उसको भी जब आप k से डिवाइड करेंगे तो वही रिमाइंडर आना चाहिए जो टोटल का है। तो ये ऐसा रिलेशन बनाते थे। लेकिन अब यहां रिलेशन क्या बना है। यहां यहां देखिए कंडीशन कुछ मैथमेटिकल फॉर्म में नहीं दिया है। कंडीशन कुछ अजीब सा दिया है। अच्छा देखते हैं क्या अजीब सा दिया है। चलिए। मतलब देखते हैं कि बोलना क्या कंडीशन बोलना क्या चाह रहा है आपको। मान लीजिए ये आपका एरे है। ये आपका एरे है। 0 1 2 3 4 5 6 आप मान लीजिए कि ये वाला पार्ट को ग्रीन बना दिए। सोच लीजिए",
+      "source": "caption",
+      "english_text": "The green one is even, when you do it, it will come out like this. So we used to know that when you divide the red number which is even by k, the same reminder should come as about the total. So they used to form such a relationship. But now what is the relation here? See here the condition is not given in some mathematical form. The condition given is a bit strange. Okay, let's see what a strange thing you have given. Let go. Meaning, let's see what condition you want to say and what you want to say. Suppose this is your array. This is your array. 0 1 2 3 4 5 6 Suppose you make this part green. think about it"
+    },
+    {
+      "start_time": 343.199,
+      "end_time": 377.749,
+      "text": "अपने मन से कि ये ग्रीन पार्ट है। अब ग्रीन पार्ट ग्रीन कब होगा? जब उसमें अ जीरो भी सेम हो और वन भी सेम हो। नंबर ऑफ़ ज़ीरो इक्वल टू नंबर ऑफ़ वन। तो अगर हम इसमें बोलें कि 0 = x हो और 1 = y हो। जस्ट फॉर वेरिएबल के लिए इस हरे वाले पार्ट में 0 कितनी बार है? x बार है। वन कितनी बार है? y बार है। तो दोनों का जो डिफरेंस आएगा, डिफरेंस आएगा x - y = 0 आना चाहिए। भैया यही तो बात हुई। 0 1 0 1 0 भी दो बार है। वन भी दो बार है। तो x - y जब आप 0 - 1 करेंगे तो आंसर ज़ीरो आना चाहिए।",
+      "source": "caption",
+      "english_text": "In my mind that this is the green part. Now when will the green part be green? When zero and one are the same and one is the same. Number of zero equals number of one. So if we say in this that 0 = x and 1 = y. How many times is there a 0 in this green part for the Just for variable? is x times. How many times is there a forest? is y times. So the difference between the two should be x - y = 0. Brother, this is what happened. 0 1 0 1 0 is also twice. The forest is also there twice. So when you do x - y 0 - 1 the answer should be zero."
+    },
+    {
+      "start_time": 377.759,
+      "end_time": 405.83,
+      "text": "हां ये आना चाहिए। ये आपकी हो गई सही कंडीशन। सही होने की कंडीशन हो गई। कंडीशन हो गई। अच्छा। तो एक चीज हम लोग को क्या पता चला कि हम लोग डिफरेंस में खेल रहे हैं यहां पे। पिछले दो क्वेश्चन में किसी क्वेश्चन में सम पे खेल रहे थे। किसी क्वेश्चन में सम मॉड्यूलस K पे खेल रहे थे। उसी को स्टोर भी कराते थे। वही पूछते भी थे। जिसमें सम पूछते थे तो स्टोर भी सम ही कराते थे और सम पूछते थे। किससे? ऐश मैप से रेड के लिए। इसमें डिफरेंस में खेल रहे हैं। डिफरेंस ज़ीरो होना चाहिए।",
+      "source": "caption",
+      "english_text": "Yes it should come. This is your perfect condition. The condition of getting it right is done. Condition is done. Good. So one thing we came to know is that we are playing with difference here. In the last two questions, some questions were playing on even par. In some question, we were playing on the even modulus K. Used to store the same also. He used to ask the same thing. In which if someone asked for even, then the store was also made even and he used to ask for even. With whom? For raid from ash map. In this we are playing in difference. The difference should be zero."
+    },
+    {
+      "start_time": 405.84,
+      "end_time": 433.43,
+      "text": "डिफरेंस ज़ीरो होना चाहिए। एक बात आपके दिमाग में ऐसे आ जाना चाहिए कि डिफरेंस देखा जा रहा है। कोई एरे सही है या गलत है? ये कैसे पता चलेगा? ये बस देख के तो नहीं पता चलेगा कि ज़ीरो तीन बार है और वन तीन बार है ना। मैथमेटिकली कैसे पता चलेगा? काउंट से कैसे पता चलेगा? तो अगर आप 0 - 1 करते हैं। आपका आंसर ज़ीरो आना चाहिए। ये बताता है कि अभी वाला एरे अभी वाला एरे सही है। ठीक है? अच्छी बात है।",
+      "source": "caption",
+      "english_text": "The difference should be zero. One thing should come to your mind that the difference is being seen. Is an array true or false? How will this be known? Just by looking at it you wouldn't know that zero is there three times and one is there three times, isn't it? How will we know mathematically? How will we know from the count? So if you do 0 - 1. Your answer should be zero. This indicates that the current array is correct. Ok? It's a good thing."
+    },
+    {
+      "start_time": 433.44,
+      "end_time": 466.79,
+      "text": "तो ये बात समझ में आती है ना कि सही होने के लिए हम लोग अब डिफरेंस देखना चाहते हैं। हम लोग अब डिफरेंस देखना चाहते हैं। क्योंकि देखिए आपको कुछ ना कुछ देखना पड़ेगा। हो सकता है आपके दिमाग में कोई और बात आए कि नहीं हम डिफरेंस नहीं देखेंगे। हम कुछ और देखेंगे। देख सकते हैं। लेकिन जीरो और वन सेम है कि नहीं? इसके लिए डिफरेंस एक बहुत अच्छा फैक्टर है। डिफरेंस दोनों का डिफरेंस ज़ीरो होना चाहिए। ठीक है? अगर दोनों सेम नहीं होंगे तो डिफरेंस कभी ज़ीरो नहीं आएगा। डिफरेंस या तो नेगेटिव आएगा या तो पॉजिटिव आएगा। ज़ीरो नहीं आएगा। अच्छा। बस इतना अगर आप सोच लिए 70% काम हो चुका है। हम लोग समझ लिए कि हरे वाले हरे वाले का डिफरेंस। डिफरेंस किसका डिफरेंस? नंबर ऑफ ज़ीरो और नंबर ऑफ़",
+      "source": "caption",
+      "english_text": "So it makes sense that to be right, we now want to see the difference. Now we want to see the difference. Because look, you will have to see something. Maybe some other thing comes to your mind or else we will not see the difference. We will see something else. Can see. But are zero and one the same or not? Difference is a very good factor for this. The difference between both should be zero. Ok? If both are not same then the difference will never reach zero. The difference will either be negative or positive. Zero will not come. Good. Just in case you thought, 70% of the work has been done. We understood the difference between the green one and the green one. Difference whose difference? number of zero and number of"
+    },
+    {
+      "start_time": 466.8,
+      "end_time": 492.79,
+      "text": "वन का डिफरेंस ज़ीरो आना चाहिए। अब बताइए कि इसका क्या आना चाहिए? रेड वाले का क्या आना चाहिए? अब अगला पार्ट तो यही था कि अब रेड को आपको फिगर आउट करना है कि रेड का डिफरेंस क्या आना चाहिए। अच्छा? चलिए नंबर का एग्जांपल लेके देख लेते हैं। मान लीजिए मान लीजिए कि पूरे एरे में पूरे एरे में जीरो जो है वो 10 बार आया। हम आपको एक और चीज बताएं कि जब आप पूरा सब एरे बनाए ना i तक वाला तो उसको जानबूझ के गलत बना लिया करिए। उसको जानबूझ के क्या बना लिया करिए?",
+      "source": "caption",
+      "english_text": "The difference of one should come to zero. Now tell me what should come of this? What should come of the red one? Now the next part was that now you have to figure out what the difference of the raid should be. Good? Let us take an example of the number. Suppose, let us assume that zero appears 10 times in the entire array. Let us tell you one more thing that when you make the entire sub array right up to i, then make it wrong intentionally. What did you do to it intentionally?"
+    },
+    {
+      "start_time": 492.8,
+      "end_time": 526.71,
+      "text": "गलत बना लिया करिए। अच्छा। मान लीजिए इसमें वन आया है फाइव टाइम्स। ठीक है? आपका डिफरेंस क्या है? फाइव है। अच्छी बात है। तो सही तो नहीं है। अच्छा। हम एक हरा एरे बना लेंगे। हमें एक क्या हरा बना लेंगे। हर एरे में आप कुछ भी दे दीजिए। हर एरे में आप जीरो और वन कुछ भी दीजिए लेकिन उनका डिफरेंस जीरो होना चाहिए। तो हम अपने हिसाब से इसमें जीरो तीन बार दे देंगे और जो वन है चलिए दो बार दे देते हैं दोनों को। दोनों को कितनी बार दे देते हैं? दो बार। अच्छा। ज़ीरो को भी दो बार दे दिए। अब अब इसका डिफरेंस ज़ीरो है। इसका डिफरेंस",
+      "source": "caption",
+      "english_text": "Make it wrong. Good. Suppose in this one comes five times. Ok? What is your difference? It's five. It's a good thing. So it is not right. Good. We will create a green array. What will make us green? You can give anything in every array. You can give zero and one in every array but their difference should be zero. So according to us, we will give zero three times and the one which is one, let's give it twice to both. How many times do you give it to both? twice. Good. Gave it to zero also twice. Now its difference is zero. its difference"
+    },
+    {
+      "start_time": 526.72,
+      "end_time": 560.31,
+      "text": "ज़ीरो है। बाकी जो रेड पार्ट बचा है उसमें कितने ज़ीरो और वन होंगे? अरे भैया टोटल इतना था। और आप हर में इतना दे दिए। बाकी जो बचा उसी में होगा। आइए। इसमें कितना ज़ीरो होगा? टोटल ज़ीरो 10 था, तो इसमें एट होगा, ऑब्वियसली। अह टोटल फाइव था, तो इसमें तीन होगा। इनका डिफरेंस निकालिए। 8 - 3 = 5, ये देखिए। सेम जो मॉड्यूलस में हो रहा था, सेम चीज़ तो मॉड्यूलस में हो रही थी कि सम को अगर आप K से डिवाइड करते थे, तो जो रिमाइंडर आता था ना, रेड पार्ट का भी सम उतना ही होना चाहिए, जिसको आप k से डिवाइड करेंगे, तो उतना रिमाइंडर आएगा। यहां भी देखिए",
+      "source": "caption",
+      "english_text": "Is zero. How many zeros and ones will there be in the remaining red part? Hey brother, the total was this much. And you gave so much in everything. The rest will be in whatever is left. Come. How many zeros will there be in it? Total zero was 10, so there would be eight in it, obviously. Ah total was five, so it will be three. Find their difference. 8 - 3 = 5, see this. The same thing was happening in the modulus, the same thing was happening in the modulus that if you divided the sum by k, then the reminder would come, the red part should also have the same sum, if you divide it by k, then the same reminder would come. see here also"
+    },
+    {
+      "start_time": 560.32,
+      "end_time": 594.71,
+      "text": "आपका पूरे वाले सम ये पूरा वाला सम टिल आई इसका डिफरेंस भी फाइव था इसका डिफरेंस भी फाइव था। बस तो रेड पार्ट का आपको पता चल गया ना क्या देखना है? कोई ऐसा डिफरेंस आया है जो सेम डिफरेंस हो। लेकिन ये क्यों होता है? लेकिन ये क्यों होता है? मतलब ये जादुई नहीं मतलब इसको समझना मुश्किल है कि ये ऐसा क्यों हुआ? देखिए। आपको हम एक फुटबॉल गेम के उससे समझाते हैं। एक फुटबॉल गेम चल रहा है। ठीक है? एक टीम ए है और एक टीम बी है। ठीक है? चलिए बहुत सारे राउंड्स होते हैं। बहुत सारे राउंड्स होते हैं। कभी ना कभी कभी ना कभी",
+      "source": "caption",
+      "english_text": "Your whole sum is this whole sum till I, its difference was also five, its difference was also five. Just now you know about the red part, what to see? There has been a difference which is the same difference. But why does this happen? But why does this happen? Meaning it is not magical, meaning it is difficult to understand why this happened? See. Let us explain it to you from a football game. There is a football game going on. Ok? There is a team A and there is a team B. Ok? Let's have lots of rounds. There are many rounds. never ever never ever"
+    },
+    {
+      "start_time": 594.72,
+      "end_time": 626.069,
+      "text": "आपको पता चला कि टीम ए जो है ना टीम ए वो 10 पॉइंट्स स्कोर कर ली। अच्छा वेरी गुड। और टीम बी जो है टीम बी जो है वो फाइव पॉइंट्स स्कोर कर ली। फाइव पॉइंट्स स्कोर कर ली। ये आपको एक एक राउंड में किसी राउंड में पता चला। किसी राउंड में पता चला। आगे जाके आगे जाके आपको क्या पता चलता है? हां तो इनमें डिफरेंस कितना है? फाइव पॉइंट्स का डिफरेंस है टीम ए और टीम बी में। अच्छा आगे जाके आपको पता चलता है कि टीम ए जो है ना वो 30 पॉइंट्स पे आ गई है। क्या? 30 पॉइंट्स पे आ गई है। टीम बी",
+      "source": "caption",
+      "english_text": "You came to know that Team A scored 10 points. Okay very good. And Team B, which is Team B, scored five points. Scored five points. You came to know this in one round at a time. Found out in some round. What do you know going forward? If yes then what is the difference between them? There is a difference of five points between Team A and Team B. Well, going ahead you come to know that Team A has reached 30 points. What? It has reached 30 points. Team B"
+    },
+    {
+      "start_time": 626.079,
+      "end_time": 660.87,
+      "text": "जो है वो 25 पॉइंट्स पे आ गई है। अभी भी दोनों का डिफरेंस फाइव है। ये भी डिफरेंस फाइव है। ये भी डिफरेंस फाइव है। अच्छा इनके बीच में इन दोनों राउंड्स के बीच में देखते हैं कि दोनों टीम कितना पॉइंट बनाई होगी। ये दोनों टीम कितना पॉइंट बनाई होगी? ये आदमी 10 से 30 पहुंच गया। मतलब टीम ए 20 पॉइंट्स बनाई है। यहां से यहां तक कहां से? यहां से यहां तक इन राउंड्स के बीच में। ये फाइव से 25 पहुंच गया। मतलब ये यहां से यहां तक कितना पॉइंट बनाया है? ये भी 20 पॉइंट्स बनाया है। आप देखिए टीम ए और टीम बी का पॉइंट सेम है।",
+      "source": "caption",
+      "english_text": "Whatever it is, it has come down to 25 points. Still the difference between both is five. This is also difference five. This is also difference five. Well, let's see how many points both teams would have scored between these two rounds. How many points would these two teams have scored? This man went from 10 to 30. Meaning Team A has scored 20 points. From here to where? From here to here in between these rounds. It went from five to 25. Meaning how many points have been made from here to here? This has also scored 20 points. You see, Team A and Team B have the same points."
+    },
+    {
+      "start_time": 660.88,
+      "end_time": 694.55,
+      "text": "कब? इन दोनों के बीच में। एक समय पे दोनों का डिफरेंस फाइव था। आगे चलके भी दोनों का डिफरेंस फाइव था। दोनों बीच में पक्का सेम नंबर ऑफ बनाया होगा। लॉजिकल बात है भाई। एक आदमी 10 था, एक आदमी 15 था। मान लीजिए दोनों का डिफरेंस था -5, अच्छा। कोई और दो नंबर ले लीजिए जिसका डिफरेंस भी -5 आए। 25 ले लीजिए, 30 ले लीजिए। अभी भी डिफरेंस आएगा -5। 10 से 25 पहुंचने में कितना पॉइंट बनाया होगा? 15 पॉइंट बनाया होगा। 15 से 30 बनाने में कितना पॉइंट बनाया होगा? 15 पॉइंट। देखिए फिर सेम आ रहा है। यही इसका लॉजिक है। हम लोग इसको",
+      "source": "caption",
+      "english_text": "when? In between these two. At one time the difference between the two was five. Even later, the difference between the two was five. There must have been exactly the same number off between the two. It is a logical thing brother. One guy was 10, one guy was 15. Suppose the difference between both was -5, ok. Take any two more numbers whose difference is also -5. Take 25, take 30. The difference will still be -5. How many points would have been scored in going from 10 to 25? Must have scored 15 points. How many points would have been scored in making 15 to 30? 15 points. Look, the beans are coming again. This is its logic. we this"
+    },
+    {
+      "start_time": 694.56,
+      "end_time": 727.269,
+      "text": "पैटर्न के हिसाब से समझ लिए लेकिन रियल वर्ल्ड में ये है कि मान लीजिए अभी आपके और आपके भाई के बीच का डिफरेंस 2 साल है। अभी आप कितने साल के हैं? अभी आप 10 साल के हैं। आपका भाई आठ साल का है तो डिफरेंस 2 साल है। आगे कभी जाके आगे कभी जा के। आप 30 साल के हो जाते हैं तो आपका भाई आपसे 2 साल छोटा है तो कितना है? 28 साल का होगा। अभी भी डिफरेंस टू है। आप 10 साल से 30 साल होने में आपको कितने साल लगेंगे? 20 साल। 8 साल से 28 साल होने में आपके भाई को कितने साल लगेंगे? 20 साल। तो ये दोनों का जो डिफरेंस है ना इसमें आप दोनों इक्वल इक्वल ग्रो करेंगे। जैसे कि ये दोनों टीम 2020 पॉइंट बनाई तब वो सेम डिफरेंस कायम",
+      "source": "caption",
+      "english_text": "Understand it according to the pattern but in the real world, suppose the difference between you and your brother is 2 years. How old are you now? You are 10 years old now. Your brother is eight years old so the difference is 2 years. Sometimes go ahead, sometimes go ahead. When you turn 30, how much is your brother 2 years younger than you? Will be 28 years old. There is still difference two. How many years will it take you to go from being 10 years old to 30 years old? 20 years. How many years will it take for your brother to turn from 8 years to 28 years? 20 years. So the difference between these two is that both of you will grow equally. As both these teams scored 2020 points then the same difference remained."
+    },
+    {
+      "start_time": 727.279,
+      "end_time": 759.509,
+      "text": "कर पाई। यही इसका लॉजिक है कि अगर अभी का डिफरेंस अभी का डिफरेंस फाइव है। अगर हम देख लें कि पीछे कभी डिफरेंस फाइव था कि नहीं तो हमको पता चल जाएगा कि जो बीच का पोर्शन है उसमे पक्का इक्वल होगा और वो हम आंसर लिख देंगे। तो अब ये तो हुआ ये तो बहुत अच्छा समझ में आया। किसके लिए? काउंट के लिए। ऐसे आप काउंट बनाते थे कि कभी भी मान लीजिए आपका डिफरेंस कुछ फाइव आएगा तो आप पूछते थे कि अभी तक कितने चीजों का डिफरेंस फाइव आ चुका है? तो आपको कोई बोलता है कि तीन चीजों का तो आप उस काउंट में जोड़ देते थे। अब आपको काउंट नहीं चाहिए। अब आपको लॉन्गेस्ट चाहिए क्या?",
+      "source": "caption",
+      "english_text": "Was able to do it. This is the logic of it that if the difference now is the difference five. If we check whether there was a difference five or not then we will know that the middle portion will definitely have an equal and we will write that answer. So now that this happened, it made perfect sense. For whom? To count. You used to keep a count in such a way that if you ever assume that your difference is five, then you would ask how many things have had a difference of five so far? So someone tells you that you used to add three things to that count. You don't need a count anymore. Now do you want the longest?"
+    },
+    {
+      "start_time": 759.519,
+      "end_time": 789.35,
+      "text": "लॉन्गेस्ट चाहिए। इसके लिए मान लेते हैं। मान लेते हैं। देखिए मान लीजिए ये आपका एरे है। आप यहां तक आपका i पहुंचा है। अच्छा अभी आपका डिफरेंस है कुछ कुछ भी है। थ्री है। हो सकता है। हो सकता है कि ऐसा बहुत सारा रेड पार्ट आपको खोजना क्या है? काउंट में क्या खोजते थे? आज से पहले कितना रेड पार्ट ऐसा आया जिसका डिफरेंस तीन था। तो आपको हैश में बताता था कि आज से पहले मान लीजिए तीन आया है। मान लीजिए ये तीन तरीके का रेड पार्ट आपको पता चलता है। ये R1 है।",
+      "source": "caption",
+      "english_text": "Want the longest. Let's accept this. Let's accept it. Look, suppose this is your array. Your i has reached here. Well, now your difference is something or the other. There is three. It is possible Maybe that's a lot of red part. What do you want to find? What did you look for in the count? How many red parts came before today whose difference was three? So I used to tell you in hash that before today let's say three has come. Suppose you come to know about these three types of red parts. This is R1."
+    },
+    {
+      "start_time": 789.36,
+      "end_time": 820.47,
+      "text": "ये R2 है और एक और रेड पार्ट ये। R3 है। तीन तरीके का रेड पार्ट आपको पता चलता है कि इसमें डिफरेंस तीन आया था। हो सकता है R1 जिस इंडेक्स पे खत्म हुआ होगा। R1 अभी इंडेक्स नंबर वन पे खत्म होगा। R2 इंडेक्स नंबर थ्री पे खत्म हुआ होगा। R5 इंडेक्स नंबर फाइव पे खत्म हुआ होगा। खत्म होने का क्या मतलब? जैसे R3 यहां से यहां तक ना भाई। R3 क्या होता है? ज़ीरो से लेके कुछ इंडेक्स तक तो वो फाइव तक होगा। R2 थ्री तक होगा, R1 वन तक होगा। अच्छा। मान लीजिए आप अभी 10 पे खड़े हैं। अभी 10 पे खड़े हैं।",
+      "source": "caption",
+      "english_text": "This is R2 and this is another red part. Is R3. The red part of three ways lets you know that the difference in it was three. Might be the index on which R1 ended. R1 will end up at index number one now. R2 would have ended at index number three. R5 would have ended at index number five. What does it mean to end? Like R3 from here to here no brother. What is R3? From zero to some index, it will be up to five. R2 will be up to three, R1 will be up to one. Good. Suppose you are standing at 10 now. Now standing at 10."
+    },
+    {
+      "start_time": 820.48,
+      "end_time": 853.509,
+      "text": "अब आप काउंट में तो तीनों R1 को गिन लेते थे क्योंकि काउंट था ना भाई। काउंट था तो काउंट था। लॉन्गेस्ट में आप किसको गिनना चाहेंगे? लॉन्गेस्ट में आप अगर 10 पे खड़े हैं। आपको कोई बोलता है कि लॉन्गेस्ट बनाना है तो आप सबसे छोटे R1 को गिनना चाहेंगे कि सबसे बड़े R1 को गिनना चाहेंगे? अगर आप सबसे बड़े को गिनते हैं तो आपका जो बीच का लेंथ है, बीच का जो हरा पार्ट बनेगा, वो कितने? फाइव लेंथ का बनेगा। अगर आप R2 को गिनते हैं, तो आपके बीच का जो हरा पार्ट है, वो कितने लेंथ का बनेगा? वो करीब सेवन लेंथ का बनेगा। अगर आप R1 को गिनते हैं, तो आपका कितना बनेगा? कितना बनेगा? नाइन लेंथ का बनेगा। यही तो है",
+      "source": "caption",
+      "english_text": "Now you used to count all three R1 in the count because there was a count, brother. If there was a count then there was a count. Who would you like to count among the longest? If you are standing at 10 in the longest. If someone tells you that you want to make the longest one, would you like to count the smallest R1 or the biggest R1? If you count the largest one, then how much will be the length of the middle, the green part in the middle? Will be made of five length. If you count R2, how long will the green part in the middle be? It will be about seven lengths. If you count R1, how much will you make? How much will it cost? Will be made of nine length. this is it"
+    },
+    {
+      "start_time": 853.519,
+      "end_time": 888.47,
+      "text": "लॉन्गेस्ट, यही तो है लॉन्गेस्ट। सारे रेड पार्ट जिसमें ये डिफरेंस सेम है उसको नहीं गिनना है। जो पहला रेड पार्ट आया था इस डिफरेंस के साथ उसको गिनना है। जो पहला रेड पार्ट आया था उसको गिनना है। पहला रेड पार्ट यस यस यस हम लोग को पता चल गया है। अभी लेकिन इसमें एक एच केस और है। अगर मान लीजिए अगर कोई ऐसा सम आता है। अगर कोई ऐसा सम आता है जहां पे डिफरेंस ज़ीरो हो जाए। जहां पे डिफरेंस ज़ीरो हो जाए। मतलब मतलब डिफरेंस ज़ीरो होने का क्या मतलब है? नंबर ऑफ़ ज़ीरो इक्वल टू नंबर ऑफ़ वन। मतलब नंबर ऑफ़ 0 - नंबर ऑफ़ 1 = 0 ऐसा कोई सम आ जाता है। सम नहीं मतलब हम उसको सम बोल रहे हैं।",
+      "source": "caption",
+      "english_text": "Longest, this is the longest. All red parts which have this difference are not to be counted. The first red part that came has to be counted with this difference. The first red part that came has to be counted. First red part yes yes yes we have come to know. Now but there is one more H case in it. Suppose if such a situation comes. If an even comes where the difference becomes zero. Where the difference becomes zero. What does it mean for the mean difference to be zero? Number of zero equals number of one. Meaning, an even number comes like Number of 0 – Number of 1 = 0. Not even means we are calling it even."
+    },
+    {
+      "start_time": 888.48,
+      "end_time": 921.59,
+      "text": "ऐसा कोई मान लीजिए डिफरेंस आ जाता है। आप किसी i = 8 तक है। i = 8 तक है। तो इसमें आप क्या करेंगे? इसमें आप क्या करेंगे? देखिए इसमें कुछ करने का ज़रूरत नहीं है। अगर ऐसा आया है ना मतलब मान लीजिए डिफरेंस इज़ इक्वल टू 0 आया है। मतलब इसमें हो सकता है ऐसा होगा। 0 0 1 1 चार बार ज़ीरो होगा। चार बार वन होगा। तो ये जो पूरा एरे है ना अपने आप में एक सब एरे है जो कि लॉन्गेस्ट बन सकता है। अगर i = 8 है मतलब i = 7 मान लीजिए क्योंकि हमेशा इवन रहेगा। इवन क्यों रहेगा आप लोग समझ रहे हैं ना? ऐसा सब एरे जिसमें इक्वल हो तो ज़ीरो भी तीन बार रहेगा और वन भी तीन बार रहेगा। तो ऑब्वियस सी",
+      "source": "caption",
+      "english_text": "Suppose such a difference occurs. You have up to some i = 8. up to i = 8. So what will you do in this? What will you do in this? Look, there is no need to do anything in this. If it has come like this, then assume that the difference is equal to 0. Meaning it is possible that this will happen. 0 0 1 1 will be zero four times. There will be forest four times. So this entire array is in itself a sub array which can become the longest. If i = 8 means assume i = 7 because it will always be even. Do you guys understand why it will be even? Such an array in which it is equal, zero will be present thrice and one will also be present thrice. so obvious"
+    },
+    {
+      "start_time": 921.6,
+      "end_time": 954.23,
+      "text": "बात है कि ये लेंथ इक्वल रहे इवन रहेगा। अच्छा। अगर i = 7 पे आपको ये मिल जाता है ना तो इसमें आपको कुछ रेड ग्रीन देखने की ज़रुरत नहीं है। रेड ग्रीन हम लोग कब देखते थे? हम लोग काउंट में देखिए हम लोग काउंट में भी देखते थे लेकिन उसमें भी कुछ करने की जरुरत नहीं थी। अगर पूरे सम ही वो कंडीशन को सेटिस्फाई कर रहा है तो जस्ट आप एक बढ़ा दीजिए अपने आंसर में। एक बढ़ा दीजिए वैसा हम लोग करते थे। लेकिन अब जब पूरा i = 7 ही हम लोग का कंडीशन सेटिस्फाई कर रहा है ना तो हम लोग को कोई रेड पार्ट बनाने की जरूरत नहीं है। इसका सीधा-सीधा एक लेंथ तो 7 + 1 = 8 ये तो हो ही सकता है। ये तो हो ही सकता है। ये तो आपके रिजल्ट में",
+      "source": "caption",
+      "english_text": "The thing is that the length will be equal and it will remain even. Good. If you get this at i = 7 then you do not need to see anything red or green in it. When did we see Red Green? We used to look at the count, but there was no need to do anything in that also. If he is satisfying the condition all the time then just increase one in your answer. Add one more, that's what we used to do. But now that the entire i = 7 is satisfying our condition, we do not need to create any red part. Its simple length can definitely be 7 + 1 = 8. This is definitely possible. This is in your result"
+    },
+    {
+      "start_time": 954.24,
+      "end_time": 988.31,
+      "text": "मतलब आना कंपेयर हो जाना चाहिए। फिर से सुनिए। अगर आपको दिखता है कि पूरा ही जो हम अभी एरे गिन रहे हैं जो आई से एरे गिन रहे हैं वो पूरा ही वो कंडीशन सेटिस्फाई करता है और आपको लॉन्गेस्ट प्रॉब्लम है काउंट की प्रॉब्लम नहीं है लॉन्गेस्ट फाइंड करना है तो देखिए i = 7 में पूरा आ रहा है अब अगर आप कोई रेड कंसीडर भी करेंगे कोई ऐसा वाला रेड कंसीडर भी करेंगे तो ये जो ग्रीन पार्ट है ना वो छोटा ही बनेगा कुछ ना कुछ छोटा बनेगा ग्रीन पार्ट मैक्सिमाइज कब हो जाएगा जब आप पूरा वो एरे ले लेंगे ज़ीरो से लेके 7 तक उसकी लेंथ क्या होती है एट मतलब आमतौर पे i + 1 तो ये तो आपके रिजल्ट पे आना चाहिए चलिए तो ये तो हो गई एच केस की बात अब अब इसको हम",
+      "source": "caption",
+      "english_text": "Means coming should be compared. Listen again. If you see that the entire array that we are counting from i to i satisfies that condition and you have the problem of longest, not the problem of counting, you have to find the longest, then see that the whole is coming in i = 7. Now if you consider any red, if you also consider any such red, then this green part will become smaller, the green part will become somewhat smaller. When will it be maximized, when you will take the entire array from zero to 7, what is its length, at means usually i + 1, so this should come on your result, so this is the matter of H case, now we will consider it."
+    },
+    {
+      "start_time": 988.32,
+      "end_time": 1022.23,
+      "text": "लोग करेंगे कैसे? सॉल्व कैसे? लॉजिक उम्मीद करते हैं कि आप लोग को आ गया होगा और देखिए हम कुछ याद नहीं कराएं। आप इसका सॉल्यूशन देखेंगे ना तो बड़ा अजीब सलूशन है कि भाई अ एक सम ले लो और जब वन आए तो सम में प्लस प्लस कर देना, ज़ीरो आए तो सम में माइनस माइनस कर देना। वो क्यों भाई? वो डिफरेंस है। वो वो ना सम उसका डिफरेंस कंटेन कर रहा है। वो बात वो है। लेकिन अभी ऐसा याद कर लेना कि प्लस प्लस कर देना, माइनस माइनस कर देना। फिर अभी तो याद कर लेंगे। फिर जब 0 1 2 आ जाएगा, तो आपको समझ में नहीं आएगा टू में प्लस प्लस करेंगे, माइनस माइनस करें तो फंस जाएंगे। चलिए इसके लिए इसके लिए देखिए हम लोग क्या करेंगे एक एरे बना लेते हैं जो इनपुट में",
+      "source": "caption",
+      "english_text": "How will people do? How to solve? We hope that you all have understood the logic and see that we do not remind you of anything. You will see its solution, it is a very strange solution that brother, take a sum and when one comes, make plus plus in the sum, if zero comes, make minus minus the sum. Why is that brother? That is the difference. He is not even, but his difference is being contained. That's that thing. But now remember to make plus or minus. Then we will remember now. Then when 0 1 2 comes, you will not understand, if you do plus plus in two, if you do minus minus then you will get stuck. Let's see what we will do for this, we will create an array which will be in the input"
+    },
+    {
+      "start_time": 1022.24,
+      "end_time": 1057.11,
+      "text": "एरे है 0 पांच बार वन पांच बार वन और 0 0 0 ध्यान से देखिएगा ध्यान से देखिएगा ध्यान से देखिएगा हां हम लोग हर बार क्वेश्चन क्या पूछना चाह रहे हैं कि जो भी आपका करंट डिफरेंस आएगा आज से पहले ये डिफरेंस पहली बार कब आया था ये हमारा क्वेश्चन है आज से पहले आज से पहले डिफरेंस पहली बार मतलब सबसे पहले कब आया था? उसी को उसी से तो लॉन्गेस्ट बनेगा ना भाई। हो सकता है डिफरेंस उसके बाद भी आया हो। उसमें हम इंटरेस्टेड नहीं है। पहला सबसे पहला इंडेक्स जहां पे आया था वो बताओ तो उससे हम लॉन्गेस्ट निकालेंगे। तो ये",
+      "source": "caption",
+      "english_text": "Array is 0 Five times one Five times one and 0 0 0 Look carefully Look carefully Look carefully Yes, the question we are trying to ask every time is that whatever your current difference will come, when did this difference come for the first time before today, this is our question. Before today, before today, when did the difference come for the first time? That will make him the tallest, brother. It is possible that the difference may have come even after that. We are not interested in that. First of all, tell us the place where the first index came from, then we will find the longest one from it. so this"
+    },
+    {
+      "start_time": 1057.12,
+      "end_time": 1091.029,
+      "text": "काम तो हैश मैप बड़ी आराम से कर देता है। तो शुरुआत में शुरुआत में अपना हैश मैप खाली रखिए। काउंट वाले प्रॉब्लम में हम लोग इसमें एक f0 = 1 डाल देते थे क्योंकि इनिशियली ज़ीरो था। यहां पे ज़रूरत नहीं है क्योंकि ज़ीरो का एक ही केस बनेगा लॉन्गेस्ट में कि पूरा ही वो एरे हो जाएगा। तो उसका कोई ज़रूरत नहीं है डालने का। डाल सकते हैं। कोई जरूरत वैसे है नहीं। चलिए हम लोग क्या मेंटेन करेंगे? हम लोग हर समय क्या मेंटेन करेंगे? डिफरेंस। डिफरेंस। डिफरेंस के लिए हम लोग को जरूरत क्या है? एक ज़ीरो का काउंटर ले लीजिए। एक वन का काउंटर ले लीजिए कि ज़ीरो कितनी बार आए और वन कितनी बार आए। डिफरेंस आप लोग को जो मन करे वो",
+      "source": "caption",
+      "english_text": "The hash map does the work very easily. So initially keep your hash map empty in the beginning. In the counting problem, we used to put an f0 = 1 in it because initially it was zero. There is no need here because only one case of zero will be created in the longest and that will be the entire array. So there is no need to insert it. Can put. There is no need as such. Come on, what will we maintain? What will we maintain all the time? Difference. Difference. What do we need for difference? Take a counter of zero. Take a one counter to see how many times zero comes and how many times one comes. The difference is whatever you feel like."
+    },
+    {
+      "start_time": 1091.039,
+      "end_time": 1116.95,
+      "text": "कर सकते हैं। 0 - 1 या 1 - 0 दोनों कर सकते हैं। दोनों काम करेंगे। लेकिन एक ही करिएगा। ऐसा नहीं कि कभी आप 0 - 1 कर दे रहे हैं, कभी 1 - 0 कर दे रहे हैं। तो वैसे पॉजिटिव नेगेटिव हो जाएगा। सोच लीजिए कि हम डिफरेंस हमेशा हमेशा हम डिफरेंस क्या कंसीडर करेंगे? नंबर ऑफ जीरो माइनस नंबर ऑफ वन बस वो पॉजिटिव आए नेगेटिव आए कोई फर्क नहीं पड़ता है। चलिए सबसे पहले हम लोग क्या करेंगे? i = 0 पे आएंगे। अच्छा i = 0 पे क्या है? वैल्यू क्या है? ज़ीरो है।",
+      "source": "caption",
+      "english_text": "Can do. Can do both 0 - 1 or 1 - 0. Both will work. But do only one. It is not that sometimes you are giving 0 - 1, sometimes you are giving 1 - 0. So the positive will become negative. Think that we will always consider our difference, what will we consider? Number of zero minus number of one, it doesn't matter whether it is positive or negative. Come on, what should we do first? Will come at i = 0. Well what is at i = 0? What is the value? Is zero."
+    },
+    {
+      "start_time": 1116.96,
+      "end_time": 1151.19,
+      "text": "तो ज़ीरो को एक बढ़ा देंगे। तो हमारा 0 = 1 बन गया। 1 = 0 हो गया। हमारा डिफरेंस क्या बना? डिफरेंस = 0 - 1 1 अच्छा। हैश मैप में आप देखिए कि आज हैश मैप में वन है कि नहीं? हैशप वन है कि नहीं? हैशप में वन नहीं है। मतलब वन कभी नहीं आया होगा। नहीं है मतलब नहीं आया होगा। कुछ मत करिए। लेकिन आगे जाने से पहले अब आपको एक ऐसा सब एरे मिल गया जिसका डिफरेंस वन है। तो आप वन के साथ किस इंडेक्स पे मिला था? ये किस इंडेक्स पे मिला है? ज़ीरो पे। ज़ीरो डाल दिए। चलो। i = 1 पे आ जाइए। i = 1 पे वन",
+      "source": "caption",
+      "english_text": "So we will increase zero by one. So our 0 = 1 becomes. 1=0 done. What is our difference? Difference = 0 - 1 1 Okay. In the hash map, you see whether there is one in the hash map today or not? HashMap is one or not? There is no forest in HashMap. Meaning the forest would never have come. No means he would not have come. Don't do anything. But before going further, now you have got a sub array whose difference is one. So which index did you meet with One? On which index is this found? At zero. Put zero. Let us go. Come to i = 1. i = 1 per one"
+    },
+    {
+      "start_time": 1151.2,
+      "end_time": 1185.669,
+      "text": "है। तो ज़ीरो तो वही रह जाएगा। वन की वैल्यू एक बढ़ जाएगी। अच्छा। वन की वैल्यू एक बढ़ जाएगी। डिफरेंस क्या हुआ? जीरो। अब हम ज़ीरो पे क्या बोले थे? देखिए इस पूरे एरे का इस पूरे यहां तक का सम डिफरेंस ज़ीरो है। तो लॉन्गेस्ट सब एरे क्या होगा? यही वाला सब एरे यही वाला सब एरे i वन पे है ना देखिए इसका लेंथ क्या है? इसका लेंथ टू है। आप क्या करिए? जैसे ही आपको डिफरेंस ज़ीरो मिले ना तो ये स्पेशल केस है। रेस्ट = मैक्स ऑफ़ रेस्ट i + 1 पूरा एरे मिल गया ना भैया। i = 1 तक आपको पता चला कि यहां तक हम डिफरेंस निकाले थे।",
+      "source": "caption",
+      "english_text": "Is. So zero will remain the same. The value of one will increase by one. Good. The value of one will increase by one. What is the difference? Zero. Now what did we say at zero? See, the sum difference of this entire array till this point is zero. So what will be the longest sub array? This is the sub array, this is the sub array, it is on i one, see what is its length? Its length is two. What should you do? As soon as you get the difference zero then it is a special case. Rest = Max of Rest i + 1 Got the complete array, brother. Till i = 1 you realized that till here we had taken the difference."
+    },
+    {
+      "start_time": 1185.679,
+      "end_time": 1219.99,
+      "text": "पूरा डिफरेंस ज़ीरो है। तो ये पूरा एरे ही बढ़िया है। अच्छा। तो रेस्ट की वैल्यू क्या हो गई? टू हो गई। टू हो गई। वेरी गुड। i = 1 पे आइए। वन है तो मतलब आपका 0 तो वन ही रह जाएगा। वन की वैल्यू टू हो जाएगी। डिफरेंस क्या आएगा? 1 - 2 - 1 अब देखेंगे -1 मेरा#श मैप में है। ना ना -1 नहीं है। लेकिन अब अब क्योंकि आ गया। अब डाल देंगे। कहां तक इंडेक्स? टू तक टू पे मिला था पहली बार। चलिए i = 2 पे आ जाइए। फिर से वन है। फिर से वन है। g = 1 हो जाएगा और 1 = 3 हो जाएगा। डिफरेंस क्या है? -2 -2#",
+      "source": "caption",
+      "english_text": "The entire difference is zero. So this whole array is great. Good. So what is the value of rest? It's two. It's two. very good. Come to i = 1. If it is one then it means your 0 will remain one. The value of one will become two. What will be the difference? 1 - 2 - 1 Now we will see -1 is in my #sh map. Na Na is not -1. But now because it has come. Will put it now. How far is the index? Met 2 Tak 2 Pe for the first time. Let us come to i = 2. There is a forest again. There is a forest again. g = 1 and 1 = 3. What is the difference? -2 -2#"
+    },
+    {
+      "start_time": 1220.0,
+      "end_time": 1251.909,
+      "text": "में है क्या? ना नहीं है। लेकिन चलिए डाल दीजिए। आगे काम आएगा कभी। तो आगे काम आएगा तो डाल देंगे। चलिए किस इंडेक्स में मिला है हम लोग को? अ यहां पे था जी। थ्री पे सॉरी ये थ्री है। थ्री पे डाल दिया। चलिए i = 4 पे आइए। i = 4 पे भी वन है। तो ज़ीरो तो वन ही रह जाएगा। और जो वन है वो फोर बन जाएगा। डिफरेंस = -3 आ गया। -3#शप है क्या ना मतलब मजा नहीं आ रहा है इसको भी डाल दिए चलिए आगे काम आएगा आगे कभी काम आएगा i = 5 पे आइए वन फिर से",
+      "source": "caption",
+      "english_text": "What is in? No it is not. But let's put it. Will be useful sometime later. So if it becomes useful in future, we will post it. Come on, in which index have we got? Oh, I was here. Sorry on three, this is three. Put it on three. Let us come to i = 4. There is also one at i = 4. So zero will remain only one. And the one which is one will become four. Difference=-3 arrived. -3#What is a curse, it means you are not enjoying, let's put this also, it will be useful in future, it will be useful in future, come on i = 5 again."
+    },
+    {
+      "start_time": 1251.919,
+      "end_time": 1284.39,
+      "text": "वन अरे बाप रे z = 1 वन क्या बन गया फाइव डिफरेंस -4 -4 हैश में है क्या ना लेकिन डाल दीजिए आगे कभी काम आ सकता है। चलिए i = सिक्स पे आइए। i = 6 पे ज़ीरो आया। चलिए ज़ीरो बढ़ा तो z = 2 हो गया। 1 = 5 ही है। हां। हां अब देखिए डिफरेंस = -3 -3 अब -3 को देखना है कि -3 हैश मैप में है कि नहीं। -3 अगर नहीं है तब तो बहुत अच्छी बात है ही नहीं। लेकिन अगर -3 है तो -3 किस इंडेक्स पे आया था? फोर पे। मतलब मतलब",
+      "source": "caption",
+      "english_text": "One Oh God z = 1 One What has become Five Difference -4 -4 Is it in the hash but put it in, it may be useful sometime in future. Let us come to i = six. Zero came at i = 6. Let us increase zero so z = 2. Only 1 = 5. Yes. Yes now see difference = -3 -3 Now -3 has to be seen whether -3 is in the hash map or not. -3 If it is not then it is not a very good thing. But if it is -3 then on which index did the -3 come? On four. meaning meaning"
+    },
+    {
+      "start_time": 1284.4,
+      "end_time": 1319.11,
+      "text": "इसका मतलब क्या है? ये पूरा चीज़ ये फोर तक, फोर तक आपका रेड पार्ट है। आपका हरा पार्ट क्या है? आप जिस इंडेक्स पे हैं i = 6 ये वाला। अरे आप i = 6 पे हैं। ये ये पार्ट आपका हरा पार्ट है। देखिए ये पार्ट। अब ये पार्ट कैसे आएगा? i सिक्स पे है। लास्ट वाला डिफरेंस मिला था फोर पे। तो ये कहां से आएगा? i - f ऑफ डिफरेंस। अगर डिफरेंस मिल जाता है तो अगर डिफरेंस मिल जाता है तो। ये क्या होगा आंसर इसका? 6 - 4 रिजल्ट इज़ इक्वल टू 2। रिजल्ट को देख लीजिए। देखिए रिजल्ट ऑलरेडी टू है। तो कोई",
+      "source": "caption",
+      "english_text": "What does this mean? This whole thing is your red part till four, till four. What is your green part? The index you're at i = 6 this one. Hey you are at i=6. This part is your green part. See this part. Now how will this part come? i is at six. The last difference was given at four pay. So where will this come from? i - f of difference. If difference is found then if difference is found. What will be the answer to this? 6 - 4 Result is equal to 2. Look at the result. See the result is already ready. so someone"
+    },
+    {
+      "start_time": 1319.12,
+      "end_time": 1353.11,
+      "text": "बात नहीं रिजल्ट को फिर से टू ही लिख देंगे। अच्छा। अब अब बहुत इंपॉर्टेंट बात है। क्या इस -3 की इंडेक्स अपडेट करके हम सिक्स कर दें? ना, ना, ना देखिए, अब आपको पता चला ना। रेड पार्ट -3 था। -3 ऑलरेडी इंडेक्स फोर तक आ चुका था। पहली बार वही आया था। अब आपको i = 6 पे भी मिल गया है कि यहां तक का डिफरेंस भी -3 है। तो क्या हम -3 का इंडेक्स अपडेट करके माइनस 4 से सिक्स कर दें? नहीं। क्योंकि हमको लॉन्गेस्ट चाहिए भैया। इसको अगर आप इसको अगर आप 4 से सिक्स कर देंगे। अगर आगे चलके भी -3 का जरूरत पड़ता है तो आपको सिक्स आंसर मिलेगा। आप रेड वाले का जितना",
+      "source": "caption",
+      "english_text": "No problem, we will rewrite the result again. Good. Now this is a very important thing. Should we update the index of -3 to six? No, no, no see, now you know. Raid was part-3. -3 Already the index had reached four. He came for the first time. Now you get that even at i = 6 the difference is -3. So should we update the index of -3 to minus four to six? No. Because we want the longest one. If you convert this from 4 to six. Even if -3 is required later on, you will get six answer. you as much as the red one"
+    },
+    {
+      "start_time": 1353.12,
+      "end_time": 1380.95,
+      "text": "बढ़ाएंगे आपको उतना छोटा आंसर मिलेगा। रेड पार्ट जितना कम होगा उतना बड़ा आंसर मिलेगा। तो हमको बड़ा आंसर चाहिए ना। कुछ अपडेट नहीं करेंगे। एक बार आ गया आ गया। बस खत्म हो गई बात। चलिए। i = 6 तक हो गया। i = i = 7 पे आ जाइए। सेवन पे भी ज़ीरो है। वेरी गुड। z = 3 बन गया। 1 = 4 बन गया। अह सॉरी 1 = 5 बन गया। डिफरेंस क्या है? -2 -2 पहले आया? यस आया है। थ्री पे आया है।",
+      "source": "caption",
+      "english_text": "If you increase it, you will get a smaller answer. The lesser the red part, the bigger the answer. So we need a bigger answer. Will not update anything. Once it has come, it has come. That's it, the matter is over. Let go. Till i = 6. i = come to i = 7. There is zero on intake also. very good. becomes z = 3. 1 = 4 becomes. Ah sorry became 1 = 5. What is the difference? -2 -2 came first? Yes it has come. Came on three."
+    },
+    {
+      "start_time": 1380.96,
+      "end_time": 1415.75,
+      "text": "तो 7 - 3 4 आपका आंसर फोर भी हो सकता है। आंसर को अपडेट करके फोर कर दीजिए। क्या हम -2 को अपडेट कर दें है मैप में? नहीं नहीं। जो सबसे पहले आया वही सबसे अच्छा है। चलिए। i = 8 पे आइए। ज़ीरो एक और मिल गया। वेरी गुड। ज़ीरो बन गया फोर। वन है फाइव। डिफरेंस क्या है? -1. -1 पहले कभी आया है क्या? यस। यस यस। आया है टू पे। कितना होगा हरा पार्ट का लेंथ? 8 - 2 6 6 क्या हम -1 को अपडेट कर दें? नहीं नहीं जरूरत है कुछ करने का। बस आपका लूप खत्म हो गया। आप रिटर्न क्या कर दिए? सिक्स। अब देख लीजिए ये जो पार्ट है ना कौन सा",
+      "source": "caption",
+      "english_text": "So 7 - 3 4 your answer can also be four. Please update the answer to four. Should we update -2 in the map? No. No. The one who came first is the best. Let go. Come to i = 8. Zero got one more. very good. Zero became four. One is five. What is the difference? -1. -1 Have you ever come before? Yes. Yes yes. Has come to pay. What will be the length of the green part? 8 - 2 6 6 Should we update -1? No, there is no need to do anything. That's it, your loop is finished. What did you return? Six. Now see which part is this?"
+    },
+    {
+      "start_time": 1415.76,
+      "end_time": 1449.669,
+      "text": "पार्ट? ये वाला पार्ट ये वाला पार्ट आपका लॉन्गेस्ट समय रहेगा। ये वाला वन तीन बार है और ज़ीरो भी तीन बार है। चलिए ड्राई रन देख लिए। आइए इसका कोड लिख लेते हैं। कोड इसका कैसे लिखेंगे? बहुत ईजी है। सबसे पहले तो इंट = a डॉट साइज़। है ना? अ दो वेरिएबल बना लेंगे। जैसे हम लोग हर बार सम के लिए वेरिएबल बनाते ही थे। तो इस बार दो वेरिएबल चाहिए क्योंकि वैसे कर रहे हैं। अब देखिए आप इसको ऑनलाइन पढ़ेंगे तो बस एक ही वेरिएबल से काम हो जाएगा सम से। तो वन मिले तो सम को बढ़ाना है। लेकिन वो उतना इंट्यूटिव हमको नहीं हमको तो नहीं समझ में आता है। तो हमको नहीं लगता आपको भी समझ में आएगा। ज़ीरो वन ज्यादा समझ में आता है कि डिफरेंस हर बार",
+      "source": "caption",
+      "english_text": "part? This part will be your longest time. This one is one three times and zero is also three times. Let's see the dry run. Let's write its code. How to write the code for this? It is very easy. First of all int = a dot size. Isn't it? A. We will create two variables. Like we used to create variables for the sum every time. So this time we need two variables because we are doing it that way. Now see, if you read this online, the work will be done easily with just one variable. So if forest is found then the sum has to be increased. But it is not that intuitive to us, we do not understand it. So we don't think you will also understand. Zero one makes more sense that difference every time"
+    },
+    {
+      "start_time": 1449.679,
+      "end_time": 1483.029,
+      "text": "निकल रहा है। और एक हैश मैप बना लिया जो कि डिफरेंस और उसका इंडेक्स रखेगा। क्या? इंडेक्स कौन सा? पहली बार। पहली बार वो डिफरेंस आएगा उसको स्टोर करना है बस। उसके बाद उसमें छेड़छाड़ नहीं करना है। अब यहां पे f0 = 0 करने का जरूरत नहीं है क्योंकि क्यों नहीं है जरूरत? क्योंकि नहीं है जरूरत। आप कर सकते हैं आप करने के लिए f0 = -1 कर सकते हैं। अब -1 कोई इंडेक्स नहीं होता है। लेकिन इंडेक्स हमारा क्या बताता है? किस इंडेक्स तक किस इंडेक्स तक खत्म हो के वो रेड पार्ट खत्म हो रहा है। मतलब किस इंडेक्स पे पहली बार वो आया था? तो शुरू का डिफरेंस ज़ीरो है।",
+      "source": "caption",
+      "english_text": "Coming out. And created a hash map which will hold the difference and its index. What? Which index? For the first time. That difference will come for the first time, you just have to store it. After that it should not be tampered with. Now there is no need to make f0 = 0 because why is there no need? Because there is no need. You can you can you can do f0 = -1. Now -1 is not an index. But what does the index tell us? That red part is ending up to which index. Meaning, on which index did it appear for the first time? So the initial difference is zero."
+    },
+    {
+      "start_time": 1483.039,
+      "end_time": 1508.07,
+      "text": "शुरू का डिफरेंस नो डाउट ज़ीरो है। लेकिन वो इंडेक्स ज़ीरो पे खत्म नहीं हुआ था। वो पहले ही खत्म हो गया था। इंडेक्स ज़ीरो पे खत्म होने का मतलब कि ज़ीरो पे खत्म होगा। ना ज़ीरो पे इंडेक्स = 0 पे डिफरेंस ज़ीरो नहीं हो सकता है। क्योंकि ये इंडेक्स = 0 पे बस एक होगा। या तो ज़ीरो होगा या वन होगा। तो डिफरेंस या तो -1 हो सकता है या वन हो सकता है। ज़ीरो नहीं हो सकता है। तो इसीलिए लिखने की जरूरत नहीं है क्योंकि हम लोग ज़ीरो को हैंडल कर लिए हैं। मतलब जब ज़ीरो आता है ना लॉन्गेस्ट प्रॉब्लम में तो आप i + 1 को ही अपना आंसर बना लेते हैं।",
+      "source": "caption",
+      "english_text": "The initial difference is no doubt zero. But that index did not end at zero. It was already over. The index ending at zero means that it will end at zero. No Zero Pay Index = 0 Pay difference cannot be zero. Because it will be just one at index = 0. It will either be zero or one. So the difference can be either -1 or one. Cannot be zero. So there is no need to write because we have handled zero. Meaning, when zero comes in the longest problem, you make i + 1 your answer."
+    },
+    {
+      "start_time": 1508.08,
+      "end_time": 1534.63,
+      "text": "चलिए और एक रिजल्ट के लिए आंसर लिख लेंगे। चलिए फॉर यहां पे लिखते हैं। फॉर i = 0 i &lt; i + ठीक है? सबसे पहले तो इफ ai = 0 + एल्स 1 + हो गया। सबसे पहले क्या निकाल लिए? डिफरेंस।",
+      "source": "caption",
+      "english_text": "Let's go and write the answer for a result. Let's write for here. For i = 0 i < i + ok? First of all if ai = 0 + else 1 +. What did you take out first? Difference."
+    },
+    {
+      "start_time": 1534.64,
+      "end_time": 1568.71,
+      "text": "डिफरेंस = 0 - 1 हम 0 - 1 कर रहे हैं। आप लोग 1 - 0 भी कर सकते हैं जो मन करे। लेकिन वही उसी पे कायम रहिएगा। मतलब बदल मत जाइएगा। ठीक है? चलिए सबसे पहले क्या हैंडल करते थे? इफ डिफरेंस इक्वल इक्वल टू 0 मतलब पूरा एरे i तक का जो हम लोग पूरा एरे देखे थे ना यहीं पे डिफरेंस ज़ीरो हो गया। कुछ नहीं करना है। रेस = मैक्स ऑफ़ रेस्ट और i + 1 i + 1 i तक आया ना? i = 3 तक अगर डिफरेंस ज़ीरो आया है। तो उसका लेंथ क्या होगा? 0 1 2 3 4 3 + 1 4 और अब कुछ नहीं करना है। अब कुछ",
+      "source": "caption",
+      "english_text": "Difference = 0 - 1 We are doing 0 - 1. You guys can also do 1 - 0 whatever you want. But it will remain the same. Meaning will not change. Ok? Let's handle what first? If difference is equal to 0, it means the entire array till i which we saw was the entire array, here the difference becomes zero. nothing to be done. Res = Max of Rest and i + 1 comes to i + 1 i , right? Till i = 3 if the difference is zero. So what will be its length? 0 1 2 3 4 3 + 1 4 And now there is nothing to do. now something"
+    },
+    {
+      "start_time": 1568.72,
+      "end_time": 1602.47,
+      "text": "नहीं करना है। कंटिन्यू कंटिन्यू बस अच्छा ठीक है ये ऐसा है। यहां पे आया अब यहां पे बाकी यहां पे लिख रहे हैं। आप लोग को हम उम्मीद करते हैं कि समझ में आता है। ठीक है? छापना नहीं है। हां। अब क्या चेक करना है कि अगर ये डिफरेंस नहीं है। अगर ये डिफरेंस नहीं है। अगर ये डिफरेंस नहीं है। इफ find डिफरेंस इक्वल इक्वल टू fn ये लाइन का मतलब होता है कि हैश मैप में नहीं है। हैश मैप में नहीं है। इक्वल इक्वल टू f मतलब#श",
+      "source": "caption",
+      "english_text": "Don't have to do it. Continue Continue Just okay okay it's like that. I came here, now I am writing the rest here. We hope that makes sense to you guys. Ok? Do not print. Yes. Now what to check if this is not the difference. If this is not the difference. If this is not the difference. If find difference is equal to fn this line means that the hash is not in the map. Not in hash map. Equal equal to f means #sh"
+    },
+    {
+      "start_time": 1602.48,
+      "end_time": 1636.39,
+      "text": "मैप में नहीं है। अगर नहीं है तो क्या करेंगे? नहीं है तो कुछ नहीं करेंगे। आगे बढ़ेंगे लेकिन आगे पहले डाल देंगे। आगे बढ़ने से पहले डाल देंगे। अब क्या कर सकते हैं? नहीं है। चलिए आगे काम आएगा। हो सकता है आगे काम आएगा। डाल दीजिए। एल्स एल्स एल्स है। है क्या करना है? किस इंडेक्स पे मिला था? किस इंडेक्स पे मिला था? एफ डिफरेंस पे मिला होगा। अच्छा अच्छी बात है। लेंथ क्या होगी? लेंथ क्या होगी? ग्रीन पार्ट की लेंथ क्या होगी? हम लोग देख चुके हैं। i माइनस इंडेक्स ऊपर ड्राई रन में देखिए। ड्राई रन में देखिए -3 4 पे मिलता था तो 6 - 4 = 2 आता था।",
+      "source": "caption",
+      "english_text": "Not in the map. If not, what will you do? If not then we will do nothing. Will move forward but will put forward first. Will put it before proceeding further. What can be done now? Not there. Come on, it will be useful later. Maybe it will be useful in future. Put it in. Everyone else is everyone else. what to do? On which index was it found? On which index was it found? F must have been received on difference. Okay, that's a good thing. What will be the length? What will be the length? What will be the length of the green part? We have seen it. i Minus index See dry run above. See in dry run -3 was available on 4, then 6 - 4 = 2."
+    },
+    {
+      "start_time": 1636.4,
+      "end_time": 1668.149,
+      "text": "फोर पे मिला था मतलब फोर तक वो डिफरेंस था। बचा कितना? अगर आप सिक्स पे हैं तो 5 और सिक्स बचा। 6 - 4 बचा। ठीक है? i माइनस इंडेक्स रिजल्ट को अपडेट करते थे। रिजल्ट को अपडेट करते थे। और और क्या आप f ऑफ डिफरेंस को अपडेट करते थे? नहीं अपडेट नहीं करते थे क्योंकि जो पहली बार आया था वही सबसे अच्छा हो क्योंकि हम लोग को लॉन्गेस्ट कर रहे हैं। ठीक है? चलिए इसको बंद कर दीजिए। फॉर लूप बंद कर दीजिए और लास्ट में रिटर्न रेस। बस खत्म हो गया कोड। तो ये बड़ा इंट्यूटिव तरीका था इसको समझने का।",
+      "source": "caption",
+      "english_text": "It was found on four means the difference was till four. How much is left? If you are on six then 5 more six left. 6 - 4 left. Ok? i Minus index used to update the result. Used to update the results. And and did you update the f off difference? No, we did not update because the one that came for the first time should be the best because we are keeping people the longest. Ok? Let's stop this. Close the for loop and return race at last. Just finished code. So this was a very intuitive way to understand this."
+    },
+    {
+      "start_time": 1668.159,
+      "end_time": 1695.19,
+      "text": "क्या? रेड और ग्रीन पार्ट से। किससे? रेड और ग्रीन पार्ट से। हमेशा ऐसे करा करिए। ग्रीन पार्ट फिर रेड पार्ट। ग्रीन पार्ट फिर रेड पार्ट। ग्रीन पार्ट रेड पार्ट। आपको मालूम चलेगा करना क्या है। चलिए बहुत-बहुत शुक्रिया देखने के लिए और आगे के जो दो क्वेश्चन है वो प्रॉब्लम चैलेंज क्वेश्चन है। बहुत हार्ड है। मतलब वो क्वेश्चन अभी पढ़ाना ठीक नहीं रहेगा। आगे के जो मतलब प्रीफिक्स सम के जो क्वेश्चन है कि वो बिना हीप पढ़ाए या बिना क्यों पढ़ाए आप लोग को समझ में नहीं आएगा। और अगला वाला उससे अगला वाला तो और हार्ड है।",
+      "source": "caption",
+      "english_text": "what? From red and green part. With whom? From red and green part. Always do it like this. Green part then red part. Green part then red part. Green part red part. You will know what to do. Well, thank you very much for watching and the next two questions are problem challenge questions. It is very hard. Meaning it would not be right to teach that question now. You people will not be able to understand the meaning of the following questions related to prefix sum without teaching heap or without teaching why. And the next one is even harder than that."
+    },
+    {
+      "start_time": 1695.2,
+      "end_time": 1707.36,
+      "text": "तो वो बिना शायद वो बिना मड सॉर्ट पढ़ाए या बिना फेनविक ट्री पढ़ाए वो भी समझ में नहीं आएगा। तो वो हम लोग बाद में करेंगे। कल से शायद रिवीजन करेंगे। अगला पैटर्न शुरू कर देंगे। चलिए बहुत-बहुत धन्यवाद आने के",
+      "source": "caption",
+      "english_text": "So perhaps without teaching Mud Sort or without teaching Fenwick Tree, that too will not be understood. So we will do that later. Will probably revise from tomorrow. Will start the next pattern. let's go, thank you very much for coming"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

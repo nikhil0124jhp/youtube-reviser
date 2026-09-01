@@ -1,0 +1,408 @@
+{
+  "video_id": "-gC-QEdpvO4",
+  "video_title": "What If You Could Master Recursion in 3 Easy Questions",
+  "video_number": 74,
+  "chunks": [
+    {
+      "start_time": 1.91,
+      "end_time": 36.069,
+      "text": "आज भाई रिकर्ज़न में करेंगे तीन सवाल तीनों बवाल। वैसे बवाल नहीं है तीनों क्वेश्चन बहुत ईज़ी है। तो आपको लगेगा कि बहुत ईज़ी-इज़ी क्वेश्चन हो रहा है रिकर्ज़न में। लेकिन ईज़ी क्वेश्चन करना इसीलिए जरूरी है ना क्योंकि आप ये सारा क्वेश्चन अभी तक लूप से करते हुए आए हैं। तीनों क्वेश्चन आज हम तीनों क्वेश्चन जो कराएंगे ना सम ऑफ डिजिट्स रिमूव ऑल ऑकरेंस और चेक ऑफ एरे इज़ सॉर्टेड। वो तीनों देखिएगा। तीनों अलग-अलग टाइप का प्रॉब्लम है। एक नंबर का प्रॉब्लम है। मतलब नंबर पे रिकर्शन कैसे चलता है। एक एरे पे रिकर्शन कैसे चलता है? और एक स्ट्रिंग पे रिकर्शन कैसे चलता है? तो ये तीनों प्रॉब्लम हम श्योर है कि आप लोग किए होंगे या तो कर लेंगे। अगर टाइम मिले तो कर लेंगे लूप से। लेकिन लूप से करने में आप रिकर्शन नहीं सीख पाएंगे। तो हम चाहते हैं कि ये इजी प्रॉब्लम कराने का मकसद ये",
+      "source": "caption",
+      "english_text": "Today Bhai will ask three questions in recursion, all three will create chaos. Well, there is no problem, all three questions are very easy. So you will feel that very easy questions are being asked in recursion. But it is important to do easy questions because till now you have been doing all these questions in a loop. All three questions: Today we will ask all three questions - sum of digits, remove all occurrences and check that the array is sorted. He will see all three. All three are different types of problems. There is a number problem. Meaning, how does recursion work on numbers? How does recursion work on an array? And how does recursion run on a string? So we are sure that you guys have either done these three problems or will do them. If I get time I will do it with a loop. But you will not be able to learn recursion by doing it with a loop. So we want that the purpose of making this easy problem is"
+    },
+    {
+      "start_time": 36.079,
+      "end_time": 70.87,
+      "text": "है ना कि आप लोग रिकर्शन का जो फर्स्ट वाला टाइप था जिसमें आप छोटा-छोटा प्रॉब्लम का आंसर लेके मिला के रिटर्न करते थे। उसमें कोई दिक्कत ना रहे। क्योंकि जब आगे जब डीपी पे जाएंगे ना या तो आगे जब ट्री पे जाएंगे तो ये सब बहुत काम आएगा। आगे जा के अगर ट्री में कंफ्यूजन हो गया ना कि छोटा का आंसर कैसे मिलेगा और रिटर्न कैसे करेंगे? तो ट्री में कुछ नहीं बनेगा। डीपी में भी 50% प्रॉब्लम्स नहीं बनेंगे। तो बहुत ध्यान से सुनिएगा। सेम विद कल से जब बैक ट्रैकिंग का प्रॉब्लम शुरू करेंगे। बहुत ध्यान से देखिएगा। अगर आप लोग बैक ट्रैकिंग नहीं समझते हैं अगर अगर, वो लिखना नहीं आता है तो क्या होगा ना कि आगे जाके ग्राफ नहीं समझ में आएगा। ग्राफ में जो डीएफएस होता",
+      "source": "caption",
+      "english_text": "Isn't it the first type of recursion in which you used to take the answer of small problems and return them. There should be no problem in that. Because in future, whenever we go to DP or tree, all this will be very useful. Going forward, if there is confusion in the tree, how will we get the answer of Chhota and how will we return? So nothing will be formed in the tree. Even in DP, 50% problems will not arise. So listen very carefully. Same with tomorrow when the problem of back tracking will start. Will look very carefully. If you people do not understand back tracking, if you do not know how to write that, then what will happen is that you will not be able to understand the graph in future. The DFS in the graph"
+    },
+    {
+      "start_time": 70.88,
+      "end_time": 100.95,
+      "text": "है ना वो पूरा यही होता है। आगे जाके डीपी के अगेन 40% प्रॉब्लम्स नहीं समझ में आएंगे क्योंकि जब तक रिकर्शन नहीं आएगा तब तक ये सारे प्रॉब्लम ये सारे चीजें नहीं आती। इसीलिए लोगों को नहीं आती क्योंकि रिकर्शन ही नहीं सीखते हैं। वो प्रॉब्लम देखते हैं। उनको लगता है कि हां इसमें तो लूप चलाए कर लेंगे। केस में क्यों करना है रिकर्शन? सीख लीजिए। मकसद सिखाना है। मकसद आपको लूप में एक्सपर्ट बनानी है। लूप में बहुत कर लिए ना। अभी तक बहुत लूप देख लिए। रिकर्न एक टेक्निक है जो आपको आना चाहिए। रिकर्शन पढ़ना आना चाहिए। ड्राई रन करना आना चाहिए। तो चलिए शुरू करें जल्दी से।",
+      "source": "caption",
+      "english_text": "Isn't that what it all boils down to? Going forward, we will not understand the next 40% problems of DP because till the time recursion does not come, all these problems and all these things will not be understood. That's why people don't know because they don't learn recursion. They see the problem. They think that yes, they will be able to run the loop in this. Why do recursion have to be done in case? Learn it. The purpose is to teach. The aim is to make you an expert in the loop. You have done a lot in the loop, haven't you? Seen a lot of loops so far. Recurne is a technique you should know. Must know how to read recursion. Must know how to do dry run. So let's get started quickly."
+    },
+    {
+      "start_time": 100.96,
+      "end_time": 131.51,
+      "text": "आइए भाई शुरू करते हैं। तो बहुत ईज़ी ईजी क्वेश्चन है। बहुत ऐसा क्विक क्विक क्विक सॉल्व करेंगे। ठीक है? पहला क्वेश्चन क्या है कि पहला क्वेश्चन में आपको सम ऑफ डिजिट्स निकालना है। आपको एक नंबर n दिया हुआ है और आपका काम क्या है कि इस n में जो भी डिजिट्स होंगे ना इसमें जो भी 1 2 तीन वाले डिजिट्स होंगे उनका सम रिटर्न करना है। हमको मालूम है आप लोग ये कर चुके हैं। आप लोग ये कैसे कर चुके हैं? आप लोग करते थे y n &gt; 0 डिजिट कैसे? किसी भी नंबर का डिजिट कैसे निकाला जाता है? है ना? वो निकाला जाता है d = n मॉड्यूलस 10 करके।",
+      "source": "caption",
+      "english_text": "Let's start brother. So it is a very easy question. We will solve many such things quickly and quickly. Ok? What is the first question? In the first question you have to find the sum of digits. You have been given a number n and your job is to return the sum of all the digits in this n and the digits of 1, 2 and 3 in it. We know you guys have done this. How did you guys do this? You guys used to say y n > 0 digit how? How to find the digit of any number? Isn't it? It is calculated by taking d = n modulus 10."
+    },
+    {
+      "start_time": 131.52,
+      "end_time": 160.229,
+      "text": "तो जब आप n मॉड्यूलस 10 करते हैं ना तो उसका लास्ट वाला डिजिट निकल जाता है। फॉर एग्जांपल अगर n = 5 6 7 है और आप इसका मॉड्यूलस निकालेंगे। मॉड्यूलस का मतलब कि इसको जब आप 10 से डिवाइड करेंगे तो कितना बचेगा? रिमाइंडर कितना बचेगा? तो जब आप करेंगे 5 6 7 को 10 से डिवाइड करेंगे तो रिमाइंडर कितना बचेगा? रिमाइंडर बचेगा सेवन। तो ये हो गया इसका लास्ट डिजिट। अच्छा अब इस लास्ट डिजिट को आप निकाल लिए। अब बाकी नंबर से इस लास्ट डिजिट को अलग कैसे करते हैं? इसको अलग करने का तरीका होता है। अगर आप इसका कोशेंट ले लेंगे।",
+      "source": "caption",
+      "english_text": "So when you multiply n modulus 10, its last digit is taken out. For example if n = 5 6 7 and you will find its modulus. Modulus means that when you divide it by 10, how much will be left? How much reminder will be left? So when you divide 5 6 7 by 10, how much will be left as a reminder? Reminder seven will be saved. So this is its last digit. Okay, now you have taken out this last digit. Now how to separate this last digit from the rest of the number? There is a way to separate it. If you take its quotient."
+    },
+    {
+      "start_time": 160.239,
+      "end_time": 193.83,
+      "text": "कोशंट मतलब याद कीजिए जब आप पढ़े थे डिवीज़ तो दो तरीके का चीज होता था। अरे क्या हो जाता? हां। दो तरीके का चीज होता था। आप ऐसे करके 10 से डिवाइड करते थे। तो पहले हम 10 * 5 67 तो ये करेंगे। उसके बाद इसको हम लोग बोलते थे रिमेंडर। और इस आदमी को क्या बोलते थे? कशेंट। याद है? थ्री फोर में डिवीज़न पढ़े ही होंगे। तो एक सिंपल ट्रिक होता है कि सबसे पहले आपको किसी भी नंबर का डिजिट अगर निकालना है एक्सट्रैक्ट करना है ना लास्ट वाला तो आप n मॉड्यूलस 10 कर दीजिए। आपको लास्ट डिजिट मिल जाएगा।",
+      "source": "caption",
+      "english_text": "Meaning of Quotient: Remember when you studied divisiveness, there were two types of things. Hey what could have happened? Yes. There were two types of things. You used to divide by 10 like this. So first we will do 10 * 5 67. After that we used to call it reminder. And what was this man called? Cachent. Remember? Divisions must have been studied in three and four. So there is a simple trick that if you want to extract the first digit of any number, if you want to extract the last one then you make n modulus 10. You will get the last digit."
+    },
+    {
+      "start_time": 193.84,
+      "end_time": 227.589,
+      "text": "अब बाकी नंबर से लास्ट डिजिट को अलग करने के लिए क्या करेंगे? n = n / 10 कर देंगे। तो जब आप 567 / 10 कर देंगे कोशंट निकाल लेंगे तो हो जाएगा 56। तो आप देखिए लास्ट वाला डिजिट ऑटोमेटिकली निकल गया है। इस तरीके से हम लोग इसको लूप में सॉल्व कर देते हैं। लेकिन आइए इसको रिकर्शन से सॉल्व करें। अच्छा सेम काम कीजिए। मान लीजिए आपके पास एक n है जो कि है 5 6 7 ठीक बात है अच्छा हम क्या बोलते हैं कि हमेशा ना एक छोटा सा पार्ट को अलग रख लीजिए बाकी पार्ट को भरोसा रखिए भगवान पे कि सॉल्व हो जाएगा दोनों को मिला के आंसर निकाल दीजिए तो हम",
+      "source": "caption",
+      "english_text": "Now what will we do to separate the last digit from the rest of the number? Will make n = n / 10. So when you make 567/10 and take out the quotient, it will be 56. So you see the last digit has been removed automatically. In this way we solve it in a loop. But let's solve this with recursion. Do good work. Suppose you have an n which is 5 6 7 Ok, what do we say that always keep a small part aside, rest the part, trust God that it will be solved, if you combine both and get the answer then we"
+    },
+    {
+      "start_time": 227.599,
+      "end_time": 261.749,
+      "text": "लोग क्या करेंगे क्योंकि हम लोग लास्ट डिजिट ही निकाल सकते हैं आप फर्स्ट डिजिट निकालना थोड़ा मुश्किल होता है या तो हमको मालूम नहीं कैसे निकालते हैं हम तो नहीं निकाले आज तक हम लोग किसी भी समय किसी भी नंबर का लास्ट डिजिट निकाल सकते हैं और बाकी को अलग भी कर सकते हैं मतलब हम लोग किसी भी समय इसको निकाल के इन दोनों को अलग कर सकते हैं। तो वही कीजिए। रिकर्शन क्या बोलता है? थोड़ा सा छोटा सा भाग उसमें से निकाल लो। सेवन निकाल लो। सेवन निकाल लिए। बाकी पार्ट का आंसर 56 जो भी नंबर बचा ना 56 इसका सम ऑफ़ डिजिट्स मान लीजिए कि कोई आपको बता देगा कि इसका सम ऑफ़ डिजिट्स 11 होता है। मान लीजिए अगर आप इस 11 और इस सेवन को जोड़ दें, तो क्या आप",
+      "source": "caption",
+      "english_text": "What will people do because we can only take out the last digit, it is a bit difficult to take out the first digit, either we do not know how to take out, we have not taken out till date, we can take out the last digit of any number at any time and can also separate the rest, meaning we can take out this at any time and separate these two. So do that. What does recursion say? Take out a small portion from it. Take out the intake. Took out the seven. The answer to the remaining part is 56. Whatever number is left, its sum of digits is 56. Suppose someone tells you that its sum of digits is 11. Suppose if you add this 11 and this seven, do you get"
+    },
+    {
+      "start_time": 261.759,
+      "end_time": 294.79,
+      "text": "अपना आंसर 18 बता सकते हैं? हां जी, हम 18 बता सकते हैं। तो, बस ये कंडीशन फुलफिल हो गया, तो आप रिकज़्शन लगा सकते हैं। फिर से सुनिए। एक छोटा सा पार्ट अपने लिए निकाल लीजिए। उसका आपको आंसर पता होगा। बाकी का भरोसा रखिए कि सॉल्व हो जाएगा। बाकी का भरोसा किस पे रखिए भगवान पे कि सॉल्व हो जाएगा। दोनों को मिलाके अपना आंसर बता दीजिए। एक पेज का हिस्से आप लिख लीजिए। बाकी पांच पेज का सोच लीजिए कोई और लिख देगा। टोटल उसको मिला देंगे तो आपके पास छह पेज का हिस्से तैयार होगा जो आप सबमिट कर सकते हैं। और बेस केस लिख लिया करिए कि सबसे छोटे इनपुट पे क्या हो सकता है? मतलब अगर n सबसे छोटा सबसे छोटा होगा तो क्या",
+      "source": "caption",
+      "english_text": "Can you tell me your answer 18? Yes, we can tell 18. So, once this condition is fulfilled, you can place the request. Listen again. Take out a small portion for yourself. You will know the answer to that. Rest assured that it will be resolved. Who should trust the rest but God that it will be solved. Mix both and tell your answer. You write part of one page. Think about the remaining five pages, someone else will write them. If you add the totals, you will have a six page portion ready which you can submit. And write down the base case, what can happen on the smallest input? Meaning if n is the smallest then what"
+    },
+    {
+      "start_time": 294.8,
+      "end_time": 329.51,
+      "text": "होगा? तो वो लिख लीजिए बेस केस। तो यहां पे बोला गया है कि n ना पॉजिटिव इंटीजर है। n नेगेटिव नहीं है क्योंकि फिर वो गड़बड़ हो जाएगा ना माइनस आ जाएगा गड़बड़ हो जाएगा। n क्या है? n पॉजिटिव इंटीजर है। आइए हम लोग क्या करेंगे? सबसे पहले तो इंट फन। ठीक है? ये इंट लेता है। इसका काम क्या है? किसी भी n को लेके उसका सम ऑफ़ डिजिट रिटर्न करना। सबसे पहले बेस केस लिख लीजिए। n अगर कोई पॉजिटिव इंटीजर है तो n सबसे छोटा क्या हो सकता है? n n 0 हो सकता है। मतलब यहां पे वन दिया हुआ है। लेकिन मान लीजिए कि n ज़ीरो भी हो सकता है। कि मान लेते हैं कि इफ n = 0 अगर आपका नंबर",
+      "source": "caption",
+      "english_text": "Will it happen? So write that base case. So here it is said that n is a positive integer. n is not negative because then it will get messed up, it will come to a minus and it will get messed up. What is n? n is a positive integer. Come on, what should we do? First of all, it's fun. Ok? It takes int. What is its function? Taking any n and returning its sum of digits. First write the base case. If n is a positive integer then what is the smallest n can be? n can be 0. Meaning, there is a forest here. But let us assume that n can also be zero. Let's say that if n = 0 if your number"
+    },
+    {
+      "start_time": 329.52,
+      "end_time": 361.83,
+      "text": "आपको ज़ीरो मिलता तो आप क्या रिटर्न करते? ज़ीरो में कितना डिजिट है? एक डिजिट। कौन सा? ज़ीरो। उसका सम क्या होता है? ज़ीरो। तो ये तो मालूम है सबको। रिटर्न ज़ीरो। बस अब अपने आ जाइए। सबसे पहले अपना छोटा सा पार्ट निकाल लीजिए। इंट d = n मॉड्यूलस 10। ये आप छोटा सा पार्ट लास्ट वाला निकाल दिए। वेरी गुड। उसके बाद बाकी को अलग कर लीजिए। n = n / 10 बाकी का पार्ट अलग हो गया। बाकी का पार्ट अब n में आ गया। डिजिट आपके पास है। इस बाकी के पार्ट का आंसर निकाल लीजिए। इसी फंक्शन को यूज करके भगवान पे भरोसा रखिए कि फंक्शन आपको दे",
+      "source": "caption",
+      "english_text": "What return would you have made if you had received zero? How many digits are there in zero? One digit. Which one? Zero. What is its sum? Zero. So everyone knows this. Returns zero. Just come to your place now. First of all, take out your small part. int d = n modulus 10. You removed this small part, the last one. very good. After that separate the rest. n = n / 10 The remaining part got separated. The remaining part now comes in n. You have the digit. Find out the answer to this remaining part. Use this function and trust God to give you the function."
+    },
+    {
+      "start_time": 361.84,
+      "end_time": 394.79,
+      "text": "देगा। इंट आंसर इज इक्वल टू फन एन। ये किस पे है? ट्रस्ट पे मिल जाएगा। अब आपको 567 था। 56 का आंसर आप ट्रस्ट कर रहे है कि मिल जाएगा। सेवन आप ऑलरेडी निकाल चुके हैं। तो क्या होगा सम ऑफ़ डिजिट? सम ऑफ डिजिट होगा जो आप निकाल के बैठे हुए थे d प्लस आंसर इसको रिटर्न कर दो इसको रिटर्न कर दो बस खत्म हो गया प्रोग्राम रिकजन का प्रोग्राम ऐसा ही बहुत क्यूट होता है ठीक है बहुत क्यूट क्यूट प्रोग्राम है तो अगेन ये क्या है बेस केस ये क्या है आप जो छोटा",
+      "source": "caption",
+      "english_text": "Will give. Int Answer is equal to fun n. What is this on? Will get trust pay. Now you had 567. You are confident that you will get the answer to 56. Seven you have already taken out. So what will be the sum of digits? It will be the sum of digits which you were sitting with after taking out d plus answer, return it, return it, the program is over, the program of recognition is very cute like this, okay very cute, cute program, so again what is this base case, what is this, the small one you"
+    },
+    {
+      "start_time": 394.8,
+      "end_time": 421.909,
+      "text": "सा पार्ट निकाले और ये वाला क्या है ट्रस्ट है दोनों को मिला के आंसर निकाल दिए आइए इसका ड्राई रन देखते हैं इसका क्या हो जा रहा है इसका ड्राई रन देखें मान लेते हैं कि आप 687 का सॉल्व कर रहे हैं n इक्व 687 तो पहला जो आपका मेन वाला फंक्शन कॉल करेगा वो किसको करेगा? फन जिसमें n होगा 687 ठीक है? आइए चलाइए। क्या ये बेस केस है? मतलब क्या n ज़ीरो बन चुका है? नहीं। n ज़ीरो तो नहीं बन चुका है। तो ठीक है आगे चलना पड़ेगा। d निकालिए।",
+      "source": "caption",
+      "english_text": "Take out the sa part and what is this one, trust, mix both and get the answer. Let's see its dry run. Let's see what is happening. Let's see its dry run. Let us assume that you are solving 687 n equating 687. So whom will your main function call first? Fun in which n will be 687 ok? Let's play. Is this the base case? Meaning has n become zero? No. n has not become zero. Okay then, we have to move ahead. Take out d."
+    },
+    {
+      "start_time": 421.919,
+      "end_time": 455.43,
+      "text": "d लास्ट डिजिट क्या होगा? 687 मॉड्यूलस 10 मतलब से। क्या आएगा रिमाइंडर? सेवन आएगा। n क्या बना देंगे हम? n = n / 10 मतलब 687 / 10 का कोशंट क्या आएगा? 68 ताकि लास्ट वाला डिजिट बाहर हो जाए इक्वेशन से। 68 आंसर किसके लिए निकाल लेंगे? फन ऑफ 68 के लिए। चलिए अब ये कॉल हो गया तो कंपाइलर सीधा यहां कूद जाएगा। दूसरा फन कॉल हो गया किसके लिए? n = 68 के लिए। अगेन क्या ये बेस केस हिट कर रहा है? क्या ये ज़ीरो बन चुका है? नहीं ज़ीरो नहीं बन चुका है। सेम काम कीजिए। अब 68 मॉड्यूलस 10 करेंगे तो",
+      "source": "caption",
+      "english_text": "d What will be the last digit? 687 modulus 10 from the mean. What reminder will come? Seven will come. n What will we make? n = n / 10 means what will be the quotient of 687 / 10? 68 so that the last digit is taken out of the equation. For whom will you find out 68 answers? For Fun Off 68. Now once this call is made, the compiler will directly jump here. Second fun call for whom? For n = 68. Again is this hitting the base case? Has it become zero? No, it has not become zero. Do the same work. Now if we do 68 modulus 10"
+    },
+    {
+      "start_time": 455.44,
+      "end_time": 488.23,
+      "text": "क्या आएगा रिमाइंडर? आठ आएगा। आठ। n क्या बन जाएगा? 68 / 10 तो लास्ट वाला डिजिट निकल जाएगा। n क्या बन जाएगा? सिक्स। और इस सिक्स का आंसर हम भगवान के भरोसे छोड़ देंगे कि हमको यहां से मिल जाए। आइए अगेन अब यहां आ जाते हैं। तो अगेन कंपाइलर यहां पे आ जाएगा। फन कॉल होगा किसके लिए? n = 6 के लिए। क्या ये बेस केस हिट कर रहा है? नहीं बिल्कुल बेस केस हिट नहीं कर रहा है। तो d क्या आ जाएगा? सिक्स मॉड्यूलस 10 क्या आएगा? सिक्स को 10 से भाग करेंगे तो क्या रिमाइंडर आएगा? सिक्स। n क्या बन जाएगा? 6 / 10 जब आप करेंगे तो कोशंट क्या आएगा? ज़ीरो। वन नहीं आएगा। थोड़ा डिवीज़न",
+      "source": "caption",
+      "english_text": "What reminder will come? Eight will come. Eight. What will n become? 68/10 then the last digit will come out. What will n become? Six. And we will leave the answer of this six to the trust of God that we get it from here. Let's come here again. So again the compiler will come here. Who will the fun call be for? For n = 6. Is it hitting the base case? Nope not hitting the base case at all. So what will d come? Six Modulus 10 What will come? Will you get a reminder if you divide six by 10? Six. What will n become? 6 / 10 What will be the quotient when you do? Zero. The forest will not come. little division"
+    },
+    {
+      "start_time": 488.24,
+      "end_time": 514.31,
+      "text": "विवीज़ दिमाग में सोच के बैठिएगा। n = 0 इसके लिए आंसर निकाल लीजिए। फन ऑफ़ ज़ीरो। अब आप क्या किए हैं तो कंपाइलर यहां आ जाएगा। फन ऑफ़ 0 क्या ये बेस केस हिट करता है? ध्यान से देखिए कोड। हां ये बेस केस हिट करता है। अगर ये n ज़ीरो बन जाता है तो हम लोग क्या बोलते हैं? आंसर क्या होगा उसका? ज़ीरो। तो ये क्या रिटर्न कर देगा यहां से? ये यहां से रिटर्न ज़ीरो। खत्म हो गया। ये वाला खत्म। ये सीधा कहां जाएगा?",
+      "source": "caption",
+      "english_text": "Viviz, please sit in your mind and think. Find the answer for n = 0. Fun of zero. Now what have you done then the compiler will come here. Fun of 0 Does it hit the base case? Look carefully at the code. Yes it hits the base case. If this n becomes zero then what do we say? What will be his answer? Zero. So what returns will it make from here? The return from here is zero. It's over. This one is over. Where will it go straight?"
+    },
+    {
+      "start_time": 514.32,
+      "end_time": 548.47,
+      "text": "यहां पे। अब आपको क्या करना है? इन दोनों को मिला के आंसर रिटर्न करना है। आंसर क्या रिटर्न कर रहे थे? d प्लस जो भी आंसर आया है उधर से तो क्या करेंगे? d क्या था? सिक्स। आंसर क्या आया? 0 तो ये क्या रिटर्न करेगा? 6 + 0 रिटर्न सिक्स। ये खत्म हो गया। ये वाला सिक्स किधर आ जाएगा? यहां पे आ जाएगा। सेम काम करिए। 8 + 6 रिटर्न क्या करिए? 8 + 6 रिटर्न 14 ये खत्म हो गया। ये 14 कहां आ जाएगा? यहां आ जाएगा। सेम काम कीजिए। 7 + 14 रिटर्न क्या करना है? 21 रिटर्न 21 आपके मेन में आंसर",
+      "source": "caption",
+      "english_text": "On here. What do you have to do now? You have to combine these two and return the answer. What were the answers returning? d plus whatever answer has come, what will we do from there? What was d? Six. What was the answer? 0 So what will it return? 6 + 0 returns six. It's over. Where will this six come? Will come here. Do the same work. What to do with 8 + 6 returns? 8 + 6 returns 14 it's over. Where will these 14 come? Will come here. Do the same work. What to do with 7+14 returns? 21 return 21 answer in your main"
+    },
+    {
+      "start_time": 548.48,
+      "end_time": 578.31,
+      "text": "क्या आ जाएगा? 21 आइए क्रॉस चेक कर लें। 687 क्या अगर इसको आप जोड़ेंगे तो आंसर 21 आएगा। 6 + 8 14 21 यस मेरा आंसर 21 आएगा। तो ये भी चल गया। इसीलिए रिकज़न के प्रोग्राम काफी क्यूट होते हैं जनरली। ठीक है? तो ये रहा पहला क्वेश्चन। आइए दूसरे की तरफ बढ़े। अगला क्वेश्चन क्या है? काफी नकली। ये भी। चेक इफ एन एरे इज़ सॉर्टेड। चेक इनफ एरे इज़ सॉर्टेड। तो आपको एक एरे दिया हुआ है। आपको बस ट्रू या फॉल्स बताना है। अगर एरे सॉर्टेड है तो आपको बोलना है कि हां जी ये सॉर्टेड है। बिल्कुल। यस।",
+      "source": "caption",
+      "english_text": "What will come? 21 Let's cross check. 687 What if you add this then the answer will be 21. 6 + 8 14 21 Yes my answer will be 21. So this also worked. That's why Rickson's programs are generally quite cute. Ok? So here's the first question. Let's move on to the second one. What is the next question? Quite fake. This too. Check If an Array Is Sorted. Check if array is sorted. So you are given an array. You just have to tell True or False. If the array is sorted then you have to say yes, it is sorted. Absolutely. Yes."
+    },
+    {
+      "start_time": 578.32,
+      "end_time": 606.47,
+      "text": "अगर एरे अनसॉर्टेड है तो आपको बोलना है फॉल्स। ये सॉर्टेड नहीं है। तो बहुत इजी क्वेश्चन है। ये डिफिकल्टी भी इजी है। लेकिन इसको करने का पर्पस है रिकर्शन सीखना और देखना कि क्या होता है। सब प्रॉब्लम कैसे तोड़ते हैं। तो आइए थोड़ा सोचते हैं कि हम लोग क्या करेंगे। अगर आपको कोई एरे ऐसा देता है। बहुत बड़ा एरे ऐसा देता है 10, 20 30 और 40 और 50। तो ऊपर से देखने में लग रहा है कि एरे सॉर्टेड है। लग रहा है ना कि सॉर्टेड है। अच्छा। लेकिन ये तो यहां से देखने में लग रहा है। हो सकता है कि बहुत बड़ा एरे हो।",
+      "source": "caption",
+      "english_text": "If the array is unsorted then you have to say false. This is not sorted. So it is a very easy question. This difficulty is also easy. But the purpose of doing this is to learn recursion and see what happens. How to solve all problems. So let's think a little about what we will do. If someone gives you an array like this. Very large array gives 10, 20, 30 and 40 and 50. So from above it appears that the array is sorted. Looks like it's sorted. Good. But this is visible from here. Might be a very large array."
+    },
+    {
+      "start_time": 606.48,
+      "end_time": 639.67,
+      "text": "तो एक इंसान कैसे सोचता है? अगर आपको कोई बहुत बड़ा एरे बोलता है और बोलता है कि देखो भाई सॉर्टेड है कि नहीं देख के बताओ। तो आप क्या करिएगा? हम ये करेंगे। हम इसको यहां से पढ़ना शुरू करेंगे। 10 से पढ़ना शुरू करेंगे। अगर हम देखेंगे कि 10 20 से छोटा है। तो हम आगे जाएंगे। अगर हमको पहले ही पता चल जाएगा। मान लो 10 है। यहां पे पांच है। अगर एरे शुरुआत ऐसे होता है। मान लेते हैं कि 10 और पांच आगे है। अब एरे आगे कितना भी बड़ा हो आगे एरे कितना भी सुंदर एरे हो, बहुत अच्छा एरे हो, ब्यूटीफुल एरे हो। हमको यही पता चल गया कि साला 10 और पांच नहीं होना चाहिए था इस ऑर्डर में कि 10 पांच से बड़ा हो गया। हम आगे नहीं जाएंगे। हम बोल देंगे कि सॉर्टेड नहीं है। कोई भी इंसान इसी तरह देखता है",
+      "source": "caption",
+      "english_text": "So how does a person think? If someone calls you a very big array and says, \"Look brother, is it sorted or not?\" So what will you do? We will do this. We will start reading it from here. Will start studying from 10. If we see that 10 is less than 20. So we will go ahead. If we know in advance. Let's say it is 10. There are five here. If it starts like this. Let's say 10 and five are ahead. Now, no matter how big the future is, no matter how beautiful the future is, very good, beautiful future. We came to know that there should not have been 10 and five in this order that 10 became greater than five. We will not go further. We will say that it is not sorted. Any person sees like this"
+    },
+    {
+      "start_time": 639.68,
+      "end_time": 673.11,
+      "text": "ना। कि पहले 10 देखे, 10 को 20 से देखें। अगर 10 20 से छोटा है, तो ठीक है, आगे बढ़ो, फिर 20 को उठाए, 20 को 30 से देखें। अगर 20 30 से छोटा है, ठीक है अभी तक। 30 को उठाए, 40 से देखे, बोले, \"हां ठीक है। 30 40 अच्छी बात है। 40 को उठाए, 50 से देखे, बोले, हां, अच्छी बात है। फिर आप एरे के एंड में आ गए, तो आप बोलेंगे हां जी पूरा एरे सॉर्टेड है। अगर आपको कभी भी जर्नी में यह पता चल जाता कि मान लो यहां पे 30 है, और यहां पे 20 है, ऐसे करके। अब नो मैटर आप पीछे क्या करके आए हैं? आगे क्या है? अगर आपको यही पता चल गया कि अरे साला ये तो 30 20 है, 30 20 नहीं होना चाहिए था। 30 20 से बड़ा हो गया है। अपने",
+      "source": "caption",
+      "english_text": "Nah. That first see 10, then see 10 from 20. If 10 is smaller than 20, OK, go ahead, then pick up 20, look at 20 by 30. If 20 is smaller than 30, okay so far. Pick up 30, look at 40, and say, \"Yes, it's okay. 30 40 is a good thing. Pick up 40, look at 50, say, yes, it's good. Then you come to the end of the array, then you will say, yes, the entire array is sorted. If you ever come to know in the journey, suppose here there is 30, and here there is 20, do it like this. Now no matter what you have come back with? What's next? Hey, this is 30, it should not have been 20."
+    },
+    {
+      "start_time": 673.12,
+      "end_time": 705.829,
+      "text": "आगे वाले से बड़ा है। तो अगर कोई भी एलिमेंट कोई भी एलिमेंट अपने नेक्स्ट एलिमेंट से बड़ा हो जाता है तो वायरस सॉर्टेड नहीं है। अगर ऐसा सारे रूल फॉलो कर रहे हैं तो वायरस सॉर्टेड है। कोई भी इंसान इसी तरीके से देखता है। अगर आपको हजार बच्चों के मार्क्स दे दिया जाए लिस्ट में तो आप इसी तरीके से कंपेयर करेंगे। आप आप स्कैनर नहीं है कि आप पूरा ऐसा देख के बता देंगे। नहीं बता सकते हैं। अगर आपको इमेजिन कीजिए कि हजार बच्चों के मार्क्स दे दिए जाएं। हज़ार 10,000 बच्चों के मार्क्स दे दिए जाएं। आप इसी तरह देखेंगे अपने आंख से। आइए रिकर्शन को भी इसी तरह बनाते हैं। हम लोग क्या करेंगे? एक एरे",
+      "source": "caption",
+      "english_text": "It is bigger than the one in front. So if any element becomes larger than its next element then the virus is not sorted. If all such rules are followed then the virus is sorted. Any human being sees it this way. If you are given the marks of a thousand children in a list, you will compare in this manner. You'll be able to tell by looking at it that you don't have a scanner. Can't tell. If you imagine that marks are given to thousand children. Marks should be given to 10,000 children. This is how you will see with your eyes. Let's make recursion the same way. What will we do? an array"
+    },
+    {
+      "start_time": 705.839,
+      "end_time": 733.829,
+      "text": "लेते हैं। एक बड़ा सा एरे लेते हैं जिसमें हो 10, 20, 30, 40 और 35। ठीक है? तो ऊपर से देखने में पता चल गया कि अरे सॉर्टेड तो नहीं है। ठीक है? अच्छी बात है। लेकिन अब हम क्या बोले थे? रिकर्शन क्या बोलता है? अगेन छोटा सा पार्ट रख लीजिए। छोटा सा पार्ट सॉल्व करके रख लीजिए। बाकी पे ट्रस्ट कीजिए। बाकी पे ट्रस्ट कीजिए कि आंसर मिल जाएगा। दोनों को मिला- मिला के मिलाजुला के अपना आंसर दे दीजिए। अच्छा।",
+      "source": "caption",
+      "english_text": "Let's take. Let's take a big array containing 10, 20, 30, 40 and 35. ok? So looking at it from above it became clear that it was not sorted. ok? That's a good thing. But now what did we say? What does recursion say? Again keep a small part. Solve a small part and keep it. Trust the rest. Rest trust that you will get the answer. Mix both and give your answer. Okay."
+    },
+    {
+      "start_time": 733.839,
+      "end_time": 768.389,
+      "text": "तो चलिए जब आपको ये एरे मिला शुरू में तो हम बोलते हैं ना कि एक काम करते हैं। इसको अपने पास रखते हैं। इसको अपने पास रखते हैं। और सबसे पहले ये चेक कर लीजिए कि क्या एरे का लेंथ अगेन बेस केस बेस केस क्या बनेगा? बेस केस मतलब सबसे छोटा एरे आपको क्या मिल सकता है? सबसे छोटा इनपुट क्या मिल सकता है? तो सबसे छोटा इनपुट मिल सकता है क्या? अगर एरे का लेंथ ज़ीरो हो जाए। अगर एरे हो ही ना अगर कोई एरे हो ही ना उसका क्या हो? लेंथ ज़ीरो हो तो क्या वो सॉर्टेड है? हां एक तरीके से बोल सकते हैं कि वो सॉर्टेड है। एक तरीके से बोला जा सकता है कि वो सॉर्टेड है। अगर किसी एरे का लेंथ वन है तो क्या वो सॉर्टेड है? हां",
+      "source": "caption",
+      "english_text": "So, when you got this array, in the beginning, we say, we do one thing. Keep it with you. Keep it with you. And first of all check whether the length of the array will become base case again? Base case means what is the smallest array you can get? What is the smallest input that can be found? So what is the smallest input that can be found? If the length of the array becomes zero. If there is an array, then what if there is an array? If length is zero, is it sorted? Yes, in one way we can say that it is sorted. In a way it can be said that it is sorted. If an array has length one, is it sorted? yes"
+    },
+    {
+      "start_time": 768.399,
+      "end_time": 798.389,
+      "text": "बिल्कुल सॉर्टेड है। अगर कोई एरे ऐसा है 10 तो इस एरे में और कोई एलिमेंट ही नहीं है तो बिल्कुल सॉर्टेड है। यस बिल्कुल सॉर्टेड है। बेस केस सम लिख लिया कि अगर एरे का लेंथ जीरो है एक तरीके से बोला जा सकता है कि वो सॉर्टेड है। अगर एरे का लेंथ वन है तो भी वो सॉर्टेड है तो भी वो सॉर्टेड है। अच्छा। अब यहां पे हम लोग आगे फंस गए कि अब एरे का लेंथ तो पांच है। अब क्या करें? ठीक है? बेस केस तैयार हो चुका है। छोटा प्रॉब्लम सॉल्व करिए। हर बार ऊपर में जब आप आंख से देख रहे थे तो आप क्या कर रहे थे? हर बार जो छोटा-छोटा चीज कर रहे थे क्या कर रहे थे? किसी भी एलिमेंट को उसके आगे वाले से कंपेयर कर रहे थे।",
+      "source": "caption",
+      "english_text": "Absolutely sorted. If there is an array such that 10 is exactly sorted if there is no other element in this array. Yes absolutely sorted. Base case sum is written that if the length of the array is zero then in a way it can be said that it is sorted. If the length of an array is one, it is still sorted. Okay. Now here we are stuck further because now the length of the array is five. What to do now? ok? The base case is ready. Solve a small problem. What were you doing every time you looked up? What little things were you doing every time? Any element was compared with the one before it."
+    },
+    {
+      "start_time": 798.399,
+      "end_time": 831.829,
+      "text": "यही कर रहे थे ना हर बार याद कीजिए क्या कर रहे थे? 10,000 बच्चे एक साथ नहीं देख रहे थे आप। छोटा-छोटा छोटा-छोटा करके देख रहे थे। ये वाला अगले वाले से छोटा है। हां जी चलेंगे। अगला वाला उसके अगले वाले से छोटा है? हां जी आगे चलेंगे। तो यही छोटा-छोटा प्रॉब्लम यहां पे एक बार सॉल्व कर लीजिए। ये प्रॉब्लम छोटा वाला प्रॉब्लम जो एक एलिमेंट अपने वाले से बड़ा है कि नहीं ये तो बहुत आसान है। तो मान लीजिए कि आप यहां पे खड़े हैं कहां पे? 10 पे। आप एक छोटा प्रॉब्लम सॉल्व कर लीजिए बस कि क्या 10 20 से छोटा है कि नहीं? ये क्वेश्चन पूछ लीजिए। अगर मान लीजिए क्वेश्चन का आंसर आ जाता है नो। मान लीजिए आगे पांच होता कि 10 पांच से छोटा नहीं है। तो फिर",
+      "source": "caption",
+      "english_text": "This is what you were doing every time, remember what you were doing? You weren't watching 10,000 kids at once. Were looking at it in small pieces. This one is smaller than the next one. Yes, we will do. Is the next one smaller than the one before that? Yes sir, we will go ahead. So solve this small problem here once. This problem, the small problem of whether an element is bigger than its previous one or not, is very easy. So suppose where are you standing here? On 10. Just solve a small problem whether 10 is less than 20 or not? Ask this question. Suppose the answer to the question is no. Suppose there is five next that 10 is not less than five. then again"
+    },
+    {
+      "start_time": 831.839,
+      "end_time": 864.389,
+      "text": "कुछ करने का जरूरत नहीं है। डायरेक्ट आप बोल सकते हैं कि फॉल्स। हम बोले ना कहीं भी आपको अगर एक एलिमेंट ऐसा मिल गया जो अपने आगे वाले से बड़ा है तो फिर पूरा एरे कुछ भी हो कोई भी भगवान एरे बनाए हो वो नहीं हो सकता है सॉर्टेड। यहीं से आप फॉल्स कर सकते हैं। लेकिन मान लीजिए कि यहां पे जैसे कि यहां पे आपको क्या पता चला कि 10 इज लेस दैन 20। तो ये तो ठीक है। ये तो ठीक है। आप इसके लिए इसके लिए सॉल्व किए। अब अभी आप किस एरे के लिए सॉल्व किए थे? इस पूरे एरे के लिए। किसके लिए? इस पूरे एरे के लिए। मान लीजिए आपको कोई बोल दे कि ये वाला एरे सॉर्टेड है। ये",
+      "source": "caption",
+      "english_text": "There is no need to do anything. Directly you can say that falls. We said, if you find anywhere that one element is bigger than the one in front of it, then the entire array, whatever God may have created, cannot be sorted. From here you can do the falls. But suppose, for example, here you find out that 10 is less than 20. So this is fine. This is fine. You solved for this for this. Now for which array did you just solve? For this entire array. For whom? For this entire array. Suppose someone tells you that this array is sorted. this"
+    },
+    {
+      "start_time": 864.399,
+      "end_time": 899.189,
+      "text": "वाला एरे कौन सा? ये वाला एरे 20 से लेके 35 वाला मान लीजिए कोई बता दे सॉर्टेड है। मान लीजिए कि कोई बता दे सॉर्टेड है। तो आप किस पोजीशन में खड़े होंगे देखिएगा। आप बोल रहे हैं आप बोल रहे हैं कि 10 अपने आगे वाले से छोटा है। यहां तक सही है। आपको कोई बता दे कि भाई आगे का पूरा एरे सॉर्टेड है। आगे 20 से आगे पूरा एरे सॉर्टेड है। मतलब 20 के बाद 30, 40, 50, 60, 70, 80 ये पूरा सॉर्टेड है, तो क्या यह पूरा एरे सॉर्टेड नहीं हो जाएगा? अगर 10 20 से छोटा है और यहां से यहां तक कोई आपको बता दिया कि हां जी यहां से यहां तक तो पूरा सॉर्टेड है। तो पूरा एरे सॉर्टेड",
+      "source": "caption",
+      "english_text": "Which one? Suppose this array is sorted from 20 to 35. Suppose someone tells me it is sorted. So see in which position you will stand. You are saying that 10 is smaller than the one in front of it. So far it is correct. Let someone tell you that the entire following array is sorted. The entire array from 20 onwards is sorted. Meaning, after 20, 30, 40, 50, 60, 70, 80, this entire array is sorted, so will not this entire array become sorted? If 10 is less than 20 and from here to here someone told you that yes, from here to here it is completely sorted. so the whole array is sorted"
+    },
+    {
+      "start_time": 899.199,
+      "end_time": 931.99,
+      "text": "है। ये बात आप समझ रहे हैं? 10 20 से छोटा है। 10 20 से छोटा है। Okay? और आपको कोई बताएं कि ये पूरा एरे सॉर्टेड है। 20 से 80 वाला पूरा कोई बता दिया कि ट्रू है। कोई दुनिया में बता दिया जादू से कि भैया ये पूरा एरे सॉर्टेड है। तो क्या पूरा एरे अगेन सॉर्टेड नहीं हो जाएगा? हां बिल्कुल हो जाएगा। और सेम केस में अगर 10 20 से छोटा है लेकिन आपको कोई बोला ना कि तुम्हारे आगे वाला एरे फॉल्स है। आगे वाला एरे फॉल्स है मतलब आगे में कहीं पे एक एक जगह पे कहीं पे 40 भी आया हुआ है। तो आगे वाला एरे सॉर्टेड नहीं है। तो क्या आपको ट्रू रिटर्न करना चाहिए या फॉल्स? फॉल्स",
+      "source": "caption",
+      "english_text": "Is. Do you understand this? 10 is less than 20. 10 is less than 20. Okay? And can anyone tell you that this entire array is sorted. Someone from 20 to 80 told that it is true. Someone in the world magically told me that brother, this entire array is sorted. So won't the entire array get sorted again? Yes, it will definitely happen. And in the same case if 10 is less than 20 but someone told you that the array in front of you is false. The next one is Aire Falls, which means there are 40 falls at one place in the front. So the next array is not sorted. So should you return True or False? Falls"
+    },
+    {
+      "start_time": 932.0,
+      "end_time": 966.47,
+      "text": "रिटर्न करना चाहिए क्योंकि 10 तो 20 से छोटा है। ये तो पता चल गया लेकिन 20 से 80 तक वाला एरे सॉर्टेड नहीं है। तो क्या पूरा एरे सॉर्टेड हो सकता है कभी भी? नहीं हो सकता है। क्यों? क्योंकि नहीं है ना। कोई आपको बता दिया कि नहीं है। तो फिर नहीं है सॉर्टेड। यह बात हम उम्मीद करते हैं कि आपको समझ में आई होगी। ये बात हम उम्मीद करते हैं कि आपको समझ में आई होगी। इसको हम एक और एग्जांपल दे के समझाएं अगर तो ये आप वैसे कर रहे हैं कि आपके पास आपके पास बहुत सारे पार्ट्स हैं। आपके पास बहुत सारे पार्ट्स हैं। ठीक है? या बहुत सारा खाना है। बहुत सारा खाना है। तो आप एक पर्टिकुलर डिश चेक कर देते हैं। एक पर्टिकुलर डिश चेक कर देते हैं। जैसे कि",
+      "source": "caption",
+      "english_text": "Must be returned because 10 is less than 20. It is known that the array from 20 to 80 is not sorted. So can the entire array ever be sorted? Can't happen. Why? Because it isn't. No one told you that. Then it's not sorted. We hope you have understood this. We hope that you have understood this. Let us explain this by giving another example, if you are doing this in a way that you have many parts with you. You have lots of parts. Ok? Or there is a lot of food. There is a lot of food. So you check a particular dish. Let's check a particular dish. such as"
+    },
+    {
+      "start_time": 966.48,
+      "end_time": 999.189,
+      "text": "हम लोग चेक किए कि 10 अपने अगले वाले से छोटा है कि नहीं। तो आपको पता चलता है कि ये तो अच्छा है। लेकिन आपको पता चलता है कि जो बाकी के डिश है ना उसमें से एक खराब है या कोई खराब है। तो क्या पूरा जो आपका पार्टी है वो अच्छा है या खराब है? आप बोलेंगे कि खराब है क्योंकि आगे एक को खराब मिल गया है। और अगर आप इसको चेक करते हैं कि ये अच्छा है और आपको बोलता है कि बाकी वाला भी अच्छा है। बाकी के जो 100 डिशेस हैं वो भी अच्छे हैं। आपसे कोई पूछे कि पूरा पार्टी का बताओ भाई। तो आप बोलेंगे हां पूरा पार्टी भी अच्छा है क्योंकि एक हम चेक किए। बाकी 99 कोई बोल रहा है कि सही है तो सही होगा पूरा। तो ये उसका लॉजिक है। हम लोग क्या करेंगे? हम लोग क्या करेंगे? इसको एक छोटे एग्जांपल",
+      "source": "caption",
+      "english_text": "We checked whether 10 is smaller than the next one or not. Then you realize that this is good. But you realize that one or more of the other dishes is bad. So is your party as a whole good or bad? You will say that it is bad because someone else has got a bad one. And if you check it, it is good and it tells you that the rest is also good. The remaining 100 dishes are also good. If someone asks you, tell me the details of the party. So you will say yes, the whole party is also good because we checked it. The remaining 99 people are saying that if it is right then it will be fulfilled. So this is his logic. What will we do? What will we do? A small example of this"
+    },
+    {
+      "start_time": 999.199,
+      "end_time": 1032.549,
+      "text": "से देखते हैं। देखिए 10 20 और 30 0 1 2 ठीक बात है? तो सबसे पहले हम लोग एक फंक्शन बनाएंगे जिसमें हम लोग इंडेक्स पास करेंगे। ठीक है? इंडेक्स पास करेंगे। मतलब किस इंडेक्स को अभी हम लोग देख रहे हैं? तो शुरू में आप कहां से देख रहे हैं? शुरू में आप ज़ीरो से आपको देखना पड़ेगा। पूरा एरे को बताना है कि सॉर्टेड है कि नहीं। तो शुरू में हम लोग i = 0 पे कॉल करेंगे। अच्छा। बेस केस क्या था? अगर एरे का लेंथ जिस एरे को आप देख रहे हैं इसका मतलब क्या होता है ना? ना I = 0 होगा कि आप i से लेके एंड तक देख रहे हैं। i से लेके एंड तक देख रहे हैं। मतलब आप ज़ीरो से लेके लास्ट तक देख रहे हैं। अच्छा। तो एरे का",
+      "source": "caption",
+      "english_text": "Let's see from. See 10 20 and 30 0 1 2 is that right? So first of all we will create a function in which we will pass the index. Ok? Will pass the index. Meaning, which index are we looking at now? So where are you looking from initially? In the beginning you will have to start from zero. To tell whether the entire array is sorted or not. So initially we will call i = 0. Good. What was the base case? What does it mean if the length of the array that you are looking at is? So I = 0 so you are looking from i to end. Looking from i to end. Meaning you are watching from zero to the last. Good. so array's"
+    },
+    {
+      "start_time": 1032.559,
+      "end_time": 1065.83,
+      "text": "लेंथ क्या होगा? एरे का लेंथ क्या होगा? इसको निकालने का बहुत सारा तरीका है। या तो आप n भी पास कर दीजिए। एरे का साइज इक्वल टू n पास कर दीजिए। तो आप कर सकते हैं ऐसा। n पास कर दीजिए। हमको अच्छा लगता है n पास करना। पर्सनली। हमको बहुत पसंद है n पास करना। n = 3। अब एरे का लेंथ ज़ीरो कब होगा? एरे का लेंथ ज़ीरो होगा जब i = n हो जाएगा। जब i3 हो जाएगा तो i = 3 से लेके लास्ट तक कितना एरे बचेगा? अब i का यहां से ले कितना एरे बचेगा? ज़ीरो लेंथ का एरे। तो i = n मतलब ज़ीरो लेंथ का एरे और i = n - 1 मतलब कितना लेंथ का एरे आप देख",
+      "source": "caption",
+      "english_text": "What will be the length? What will be the length of the array? There are many ways to remove it. Either you pass n also. Pass the size of the array equal to n. So you can do this. Pass n. We like to pass. Personally. We love n passing. n = 3. Now when will the length of the array be zero? The length of the array will be zero when i = n. When i3 is done then how much array will be left from i = 3 to the last? Now take i from here and how much array will be left? Zero length array. So i = n means array of zero length and i = n - 1 means array of how much length, you see."
+    },
+    {
+      "start_time": 1065.84,
+      "end_time": 1099.99,
+      "text": "रहे हैं? एक लेंथ का मतलब आप बस इस वाले इंडेक्स से लास्ट तक देख रहे हैं तो वो भी। तो बेस केस तो हम लोग इसी से तैयार कर सकते हैं कि इफ i = n और i = n - 1। बेस केस में क्या सोचे थे? अगर एरे का लेंथ ज़ीरो है तो वो सॉर्टेड है कि नहीं? हां जी सॉर्टेड है। एरे का लेंथ वन है तो वो सॉर्टेड है कि नहीं? हां जी सॉर्टेड है। रिटर्न ट्रू। कुछ और उधर-उधर करने की जरूरत नहीं है। रिटर्न ट्रू। ठीक है? अब छोटा सा पार्ट कैसे सॉल्व करेंगे? एरे ऑफ़ i को अगले वाले से मिला के देख लो। तो एरे ऑफ़ i को इफ एरे ऑफ़ i इज़ ग्रेटर दैन एरे ऑफ़",
+      "source": "caption",
+      "english_text": "Are you? One length means you are just looking from this index till the last, so that too. So we can prepare the base case by saying that if i = n and i = n - 1. What were you thinking about the base case? If the length of the array is zero then is it sorted or not? Yes, it is sorted. If the length of the array is one then is it sorted or not? Yes, it is sorted. Returns true. There is no need to do anything else here and there. Returns true. Ok? Now how will we solve the small part? Try matching the array of i with the next one. So array of i is greater than array of"
+    },
+    {
+      "start_time": 1100.0,
+      "end_time": 1133.11,
+      "text": "i + 1 मतलब कि ये जो आप 10 देख रहे हैं ना, मान लीजिए ये अपने अगले वाले से बड़ा है। तो क्या आपको कुछ भी और करने का जरूरत है? नहीं। क्योंकि यहीं फंस गया है। ये एरे सॉर्टेड नहीं हो सकता है। तुरंत क्या कर देंगे हम लोग? रिटर्न फॉल्स। बस अब लेकिन अगर आपको पता चलता है कि एरे ऑफ़ i एरे i + 1 से कम है। मतलब 10 तो 20 से कम है। मतलब अभी तक सही है। अब हम क्या बोले? बाकी एरे का आंसर पूछ लीजिए कहीं से। बाकी एरे का आंसर पूछ लीजिए। कैसे पूछेंगे? आप शुरू में क्या कर रहे थे? i = 0 को सॉल्व। आपको कोई i = 1 का आंसर अगर बता दे तो वही रिटर्न कर दीजिए। अब सब कुछ",
+      "source": "caption",
+      "english_text": "i + 1 means that this 10 that you are seeing is, let's say, bigger than the one next to it. So do you need to do anything else? No. Because he is stuck here. This array cannot be sorted. What will we do immediately? Return Falls. Just now but if you find that the array of i is less than the array i + 1. Meaning 10 is less than 20. Meaning it is still correct. What should we say now? Ask the answer to the remaining questions from somewhere. Ask the answer to the remaining array. How will you ask? What were you doing in the beginning? Solve i = 0. If someone tells you the answer of i = 1, then return the same. everything now"
+    },
+    {
+      "start_time": 1133.12,
+      "end_time": 1167.75,
+      "text": "किस पे डिपेंडेंट है? आगे वाले पे। क्योंकि 10 तो 20 से कम है। तो ये तो सही है। मतलब I = 0 पे तो गुड है। लेकिन i = 1 से बाकी का एरे अगर सॉर्टेड है तो पूरा एरे सॉर्टेड है। वन से ले के बाकी तक का एरे अनसोर्टेड है तो पूरा अनसॉर्टेड है। तो अब सब कुछ किस पे डिपेंड करता है? आगे वाले के आंसर पे। आगे वाला आंसर हम क्या बोल रहे हैं? ट्रस्ट कीजिए। यही फंक्शन आपको दे देगा। यही फंक्शन आपको दे देगा। क्या रिटर्न कर दीजिए? रिटर्न फन ऑफ i + 1 एंड n। ये आपको क्या देगा? i + 1 से एंड तक का आंसर। आप निकालने किसका आए थे? i = 0. आप पूछ किसका रहे हैं कि भैया i = 1 से",
+      "source": "caption",
+      "english_text": "Dependent on whom? On the next one. Because 10 is less than 20. So this is correct. Meaning it is good at I = 0. But if the rest of the array from i = 1 is sorted then the entire array is sorted. If the array from one to the rest is unsorted then the whole is unsorted. So what does everything depend on now? On the next one's answer. Next answer: What are we saying? Trust. This function will give you. This function will give you. What should I return? Return fun of i + 1 and n. What will this give you? Answer from i + 1 to end. Whose did you come to take out? i = 0. Who are you asking that brother from i = 1"
+    },
+    {
+      "start_time": 1167.76,
+      "end_time": 1199.59,
+      "text": "एंड तक आंसर बता दो। वही हम रिटर्न कर देंगे। तो ये हो गया आपका छोटा सा प्रोग्राम। ये किस तरीके का फंक्शन होगा? बुलियन टाइप का। तो ये इसका कोड है। आइए देख लें कैसे काम करता है? ये इसका कोड देख लीजिए। काम कैसे करता है? दिखा देते हैं। मान के चलिए ये आपका एरे है। हम एक जानबूझ के ऐसा एरे ले रहे हैं जो कि सॉर्टेड नहीं हो। ठीक है? तो सबसे पहले क्या कॉल होगा? फन i = 0। ठीक है? क्या ये बेस केस हिट कर रहा है? मतलब क्या i n है या क्या i n - 1 है? नहीं, नहीं है, तो बेस केस हिट नहीं कर रहा है। सबसे पहले क्या चेक करेंगे? एरे ऑफ़ 0 क्या ये बड़ा",
+      "source": "caption",
+      "english_text": "Tell the answer till the end. We will return the same. So this is your small program. What kind of function will this be? Of bullion type. So this is its code. Let's see how it works? Look at its code. How does it work? Let's show it. Let's assume this is your array. We are intentionally taking an array that is not sorted. Ok? So what will be the first call? Fun i = 0. Ok? Is it hitting the base case? Meaning what is i n or what is i n - 1 ? No, there isn't, so the base case is not hitting. What will you check first? Array of 0 is this big"
+    },
+    {
+      "start_time": 1199.6,
+      "end_time": 1233.59,
+      "text": "है एरे ऑफ़ वन से? क्या 10 20 से बड़ा है? नहीं। नो। तो ठीक है बच गए। अगर ये होता तो इसी समय फॉल्स हो जाता। ठीक है? बच गए। अब हम लोग क्या करेंगे? जो भी फन i = 1 का आंसर आएगा वही रिटर्न कर देंगे आंख बंद करके। आइए फन i = 1 पे आ जाए। ठीक है? फन i = 1 पे देखिए क्या होगा? 20 क्या ये बेस केस है? नहीं, ये बेस केस नहीं है। क्या एरे ऑफ़ वन बड़ा है एरे ऑफ़ टू से? यस यस यस। 20 इज ग्रेटर दैन फाइव। 20 इज़ ग्रेटर दैन फाइव। क्या हो जाएगा? क्या आगे कुछ भी दिमाग लगाने का जरूरत है?",
+      "source": "caption",
+      "english_text": "Is it from array of one? Is 10 bigger than 20? No. No. So it's okay, we survived. If this had happened then it would have fallen at this very moment. Ok? Saved. What will we do now? Whatever answer comes to the function i = 1, we will return the same with our eyes closed. Let the function come to i = 1. Ok? Let's see what happens at fun i = 1? 20 Is this the base case? No, this is not the base case. Is array of one bigger than array of two? Yes yes yes. 20 is greater than five. 20 is greater than five. What will happen? Do you need to think about anything further?"
+    },
+    {
+      "start_time": 1233.6,
+      "end_time": 1266.95,
+      "text": "नहीं। फॉल्स। और ये खत्म। ये फॉल्स सीधा कहां घुस जाएगा? यहां पे आप क्या रिटर्न कर देंगे? फॉल्स। तो क्या ये एरे फॉल्स है? हां जी एरे सॉर्टेड नहीं है। अगर अगर यहां पे मान लीजिए 50 होता। अगर मान लीजिए 50 होता, तो ये क्या रिटर्न करता? नो। ये क्या रिटर्न करता? नो। ठीक है? Okay, हम लोग कहां जाएंगे? आगे जाएंगे। i = 2। फिर जैसे ही आप i = 2 पे पहुंचेंगे क्या ये बेस केस हिट कर रहा है? हां जी, ये बेस केस हिट कर रहा है। i इक्वल इक्वल टू क्या है? n - 1 है। i = n - 1 है। तो",
+      "source": "caption",
+      "english_text": "No. Falls. And this is over. Where will this falls enter directly? What will you return here? Falls. So is this Ere Falls? Yes, the array is not sorted. If here, let's say it was 50. If it was say 50, what would it return? No. What return would this give? No. Ok? Okay, where should we go? Will go ahead. i = 2. Then as you get to i = 2 is it hitting the base case? Yes, it is hitting the base case. What is i equal equal to? n - 1. i = n – 1. so"
+    },
+    {
+      "start_time": 1266.96,
+      "end_time": 1295.99,
+      "text": "अगर हम सिर्फ इसको देखते, एक एक एलिमेंट को देखते तो ये सॉर्टेड है। हां जी। ये तो सॉर्टेड है अपने आप में। रिटर्न ट्रू। ये ट्रू कहां जाता? यहां पे आता। ये ट्रू कहां आता? यहां पे आता। ये कहां जाता आपके मेन के आंसर में? तो क्या सॉर्टेड है? हां ये सॉर्टेड है। तो ये ऐसे काम करता है। कोड इसको देख लीजिए। तो बहुत आसान हो जाता है। एक बार आपको समझ में आने लगेगा ना रिकज़न तो क्लिक करने लगेगा कि हां ठीक है। मतलब दो तीन चीज़ याद रखनी है कि बेस केस छोटा सा प्रॉब्लम सॉल्व करना आना चाहिए।",
+      "source": "caption",
+      "english_text": "If we just look at it, look at each element, then it is sorted. Yes sir. This is sorted in itself. Returns true. Where does this truth go? Come here. Where does this come true? Come here. Where does this go in your main answer? So what's sorted? Yes it is sorted. So this is how it works. Check this code. So it becomes very easy. Once you start understanding, then the recognition will start clicking that yes, it is okay. Meaning, two or three things have to be remembered that one should know how to solve a small base case problem."
+    },
+    {
+      "start_time": 1296.0,
+      "end_time": 1327.27,
+      "text": "और बाकी का प्रॉब्लम का रिजल्ट और ये छोटा सा आंसर को मिला के फाइनल आंसर बनाना आना चाहिए। तो ये हो गया दूसरा क्वेश्चन नकली। अगला लास्ट क्वेश्चन क्या है? है रिमूव ऑल ऑकरेंसेस ऑफ़ अ कैरेक्टर इन स्ट्रिंग। ये भी काफी ईजी क्वेश्चन है। मतलब ये क्वेश्चन बोलता क्या है कि आपको एक स्ट्रिंग मिलेगा। मतलब मान लीजिए आपको एक एप्पल वर्ड मिल गया और आपको एक कैरेक्टर मिलेगा। आपको ये मान लीजिए पी मिल गया। आपको इस स्ट्रिंग में से ना पी जहां-जहां है सबको रिमूव करके स्ट्रिंग रिटर्न करना है। मतलब कि कहां-कहां है पी? एक p ये है, एक पी ये है। तो रिटर्न क्या करेंगे? एल पी। सिंपल क्वेश्चन है। इसमें तो कोई दो राय है नहीं। इसको हम लोग कैसे सॉल्व",
+      "source": "caption",
+      "english_text": "And you should be able to combine the result of the remaining problem and this small answer to make the final answer. So this second question is fake. What is the next last question? Removes all occurrences of a character in a string. This is also a very easy question. Meaning what this question says is that you will get a string. Meaning, suppose you get an Apple Word and you will get a character. Suppose you got P. You have to remove Na P from this string wherever it is and return the string. Meaning, where is P? A p is this, a p is this. So what will you do in return? LP. It is a simple question. There is no doubt about this. How do we solve this?"
+    },
+    {
+      "start_time": 1327.28,
+      "end_time": 1361.83,
+      "text": "करते? एक स्ट्रिंग ले लेते। और इस पे लूप कर देते। अगर ये कररेक्टर नहीं मैच होता है इसमें जोड़ दो। अगर ये कररेक्टर मैच होता है मत जोड़ो। तो सिंपल है लूप से लेकिन रिकर्शन से भी करिए। रिकर्शन से भी करिए। रिकर्शन सीखिए। रिकर्शन में अपना बेस बनाने की कोशिश कीजिए। ठीक है? तो सिंपल आपको क्वेश्चन समझ में आ गया ना? एक कैरेक्टर है। उस स्ट्रिंग में से सारा रिमूव कर दो कैरेक्टर को। ठीक है? अगर मान लो वो सारा सारा ही कैरेक्टर है। ये वर्ड है तो कुछ नहीं। एम्प्टी स्ट्रिंग रिटर्न कर दो। कुछ सारा रिमूव करना है उस ऑकरेंस का। ठीक है? आइए अगेन देखें। सबसे पहले बेस केस सोच लेते हैं। बेस केस सोच लेते हैं। अच्छा।",
+      "source": "caption",
+      "english_text": "do? Take a string. And loop it on this. If this character does not match, add it. If this character matches, do not add. So it is simple with loop but do it with recursion also. Do it with recursion also. Learn recursion. Try to build your base in recursion. Ok? So did you understand the simple question? There is a character. Remove all the characters from that string. Ok? If we accept that he is the whole character. If this is a word then it is nothing. Return an empty string. Something has to be removed from that occurrence. Ok? Let's see again. First let's think of the base case. Let's think of the base case. Good."
+    },
+    {
+      "start_time": 1361.84,
+      "end_time": 1393.99,
+      "text": "अगर अगर आपको आपको सबसे छोटा स्ट्रिंग क्या मिल सकता है? सबसे छोटा स्ट्रिंग आपको मिल सकता है लेंथ = 0 का मतलब एम्प्टी स्ट्रिंग मिल सकता है आपको। एम्प्टी स्ट्रिंग मिल सकता है। अच्छा अगर एम्प्टी स्ट्रिंग है तो आपको रिटर्न क्या करना चाहिए? अब एम्प्टी स्ट्रिंग में आपको बोला जाए कि मान लो ये C है। इसको रिमूव करना है। तो एम्प्टी स्ट्रिंग तो कुछ है नहीं ना भाई। तो क्या रिमूव करेंगे? कुछ नहीं। यही रिटर्न कर देना है। यही रिटर्न कर देना है। यही रिटर्न कर देना है। वेरी गुड। ओके। बेस केस तैयार हो गया अपना। ठीक है? अब आते हैं बाकी पे। मान लो बहुत बड़ा स्ट्रिंग है। बहुत बड़ा सा स्ट्रिंग है।",
+      "source": "caption",
+      "english_text": "If if you find what is the shortest string you can get? The shortest string you can get is Length = 0 which means you can get an empty string. Empty string may be found. Well if there is empty string then what should you return? Now in the empty string you should be told that suppose it is C. This has to be removed. So empty string is nothing, brother. So what will you remove? Nothing. This is the return to be made. This is the return to be made. This is the return to be made. very good. Ok. Your base case is ready. Ok? Now coming to the rest. Suppose there is a very large string. It's a very big string."
+    },
+    {
+      "start_time": 1394.0,
+      "end_time": 1419.43,
+      "text": "पी और ए टी ई एन बी z कुछ भी बहुत बड़ा सा स्ट्रिंग है। ठीक है? ये बहुत बड़ा सा स्ट्रिंग है। आपको जो कैरेक्टर रिमूव करना है ना वो है पी। वो है पी। अच्छा हम क्या बोले? शुरू से देखना स्टार्ट कीजिए। शुरू से या एंड से जैसे भी आपको पता चले देखना स्टार्ट कीजिए। आइए यहां पे वो लोग खड़े हो चुके हैं। इस पे खड़े हो चुके हैं। ठीक है? अच्छा।",
+      "source": "caption",
+      "english_text": "P and a t e n b z is anything but a very large string. Ok? This is a very big string. The character you have to remove is P. That is P. Well, what should we say? Start watching from the beginning. Start watching from the beginning or the end as per your convenience. Come, those people are standing here. Have stood on this. Ok? Good."
+    },
+    {
+      "start_time": 1419.44,
+      "end_time": 1452.71,
+      "text": "सबसे पहले तो हम लोग क्या करेंगे? हम लोग हम लोग जब लूप वाला सॉल्यूशन सोचे थे। हम शुरू में बताया ना कि आप कैसे सॉल्व करते हैं? लूप करते। अगर ये कैरेक्टर है P पे तो इसको नहीं ऐड करेंगे आंसर में आगे बढ़ जाएंगे। अगर ये करैक्टर नहीं P नहीं होता तो इसको आंसर में ऐड कर लेते। अच्छा। तो एक काम करते हैं। एक काम करते हैं। एक आंसर बना लीजिए। एक फाइनल आंसर बना लीजिए रिटर्न करने का कि मेरा फाइनल आंसर जो है ना ये है। फाइनल आंसर मेरा ये है। शुरू में तो एम्प्टी रहेगा। अच्छा। अब आप इस पे कंसंट्रेट कीजिए। हम बोले इसको अलग कर लीजिए। इसको अलग करप इसपे कंसंट्रेट कीजिए। क्या आपको इसको आंसर में ऐड करना चाहिए? नहीं करना चाहिए। क्यों? क्योंकि",
+      "source": "caption",
+      "english_text": "First of all, what should we do? When we thought of the loop solution. We told in the beginning that how do you solve? Do the loop. If this character is on P then we will not add it and will move ahead in the answer. If this character was not P, we would have added it to the answer. Good. So let's do one thing. Let's do one thing. Make an answer. Make a final answer to return that this is my final answer. This is my final answer. Initially it will be empty. Good. Now you concentrate on this. We said separate it. Isolate it and concentrate on it. Should you add this to the answer? Should not be done. Why? because"
+    },
+    {
+      "start_time": 1452.72,
+      "end_time": 1487.029,
+      "text": "ये p आपके कैरेक्टर से मैच करता है तो इसको आपको रिमूव करना है। तो आप इसको ऐड नहीं करेंगे। अब अब बाकी के स्ट्रिंग का जो बाकी का स्ट्रिंग बहुत बड़ा सा स्ट्रिंग है। हमको नहीं मालूम कितना बड़ा है, क्या है, कितना कॉम्प्लेक्स है। बाकी के स्ट्रिंग का कोई आपको आंसर बता दिया कि भैया इसका आंसर है स्मॉल आंसर। कुछ भी हो सकता है ये। ये कोई भी हो सकता है। जिसमें पी नहीं हो। आंसर का मतलब बाकी के स्ट्रिंग में सही आंसर क्या है? बाकी के स्ट्रिंग में p नहीं हो तो ये आपको कुछ-कुछ बता दिया। अगर आप आंसर प्लस स्मॉल आंसर कर दें तो क्या आपको रिजल्ट",
+      "source": "caption",
+      "english_text": "If this p matches your character then you have to remove it. So you will not add it. Now the rest of the string is a very big string. We don't know how big it is, what it is, how complex it is. Someone told you the answer of the remaining string that brother, its answer is small answer. It could be anything. It could be anyone. In which there is no drink. Meaning of Answer What is the correct answer in the rest of the string? If there is no p in the rest of the string, then this tells you something. If you do answer plus small answer then will you get the result?"
+    },
+    {
+      "start_time": 1487.039,
+      "end_time": 1518.39,
+      "text": "मिल जाएगा? हां मिल जाएगा। फिर से सुनिए हम क्या बोल रहे हैं। आपका काम है किसी भी स्ट्रिंग में से p को हटाना। मान लीजिए कैरेक्टर मेरा p है। आप किसी भी एक इंडेक्स पे आए। शुरुआत में आप ज़ीरो इंडेक्स पे खड़े हैं। अगर ये इंडेक्स P नहीं है, अगर ये इंडेक्स पी नहीं है, आप इसको ऐसे भी सोच सकते हैं। देखिए, ये आपका बाकी का है। ये आपका बाकी का है जो कि आप ट्रस्ट करिए कि आपको मिल जाएगा। ट्रस्ट कीजिए कि मिल जाएगा। मान लीजिए ये आपको कहीं से मिल गया। ये आपको स्मॉल आंसर में मिल गया। अब अगर आपका ये वाला स्ट्रिंग जिस पे आप अभी खड़े हैं ये वाला करैक्टर।",
+      "source": "caption",
+      "english_text": "Will you get it? Yes you will get it. Listen again to what we are saying. Your task is to remove p from any string. Let's say the character is my p. You come to any one index. In the beginning you are standing at zero index. If this index is not P, if this index is not P, you can also think of it like this. Look, this is your rest. This is your rest which you can trust that you will get. Trust that you will get it. Suppose you got this from somewhere. You got this in small answer. Now if your string on which you are standing right now is this character."
+    },
+    {
+      "start_time": 1518.4,
+      "end_time": 1552.95,
+      "text": "अगर ये p नहीं है तो आपका पूरे स्ट्रिंग का आंसर क्या होना चाहिए? p + स्मॉल आंसर। यही होना चाहिए ना भाई? सॉरी। ah जो भी जो भी आपका स्ट्रिंग है जो भी आपका एस आई है। अगर ये नहीं है तो ये होना चाहिए। अगर ये एस आई है वो कैरेक्टर जो आपको रिमूव करना है तो आपका आंसर क्या होना चाहिए? केवल स्मॉल आंसर। केवल स्मॉल आंसर। ये तो लॉजिकल बात है ना भाई। देखो इस पे हम खड़े हैं। अगर ये p है। हमको p रिमूव करना है तो ये तो चाहिए ही नहीं। बाकी का आंसर हमको कोई बता दिया तो छेप लेंगे। वही दे देंगे। अगर ये p नहीं है तो हमको अपने आंसर में चाहिए। इसको बाकी के आंसर में",
+      "source": "caption",
+      "english_text": "If it is not p then what should be the answer of your entire string? p + small answer. This is what should happen, right brother? Sorry. ah whatever whatever your string is whatever your si is. If it is not there then it should be there. If this SI is the character which you have to remove then what should be your answer? Only small answer. Only small answer. This is a logical thing, isn't it brother? Look, we are standing on this. If this is p. If we have to remove p then this is not necessary. If someone tells us the remaining answer, we will publish it. Will give the same. If it is not p then we need it in our answer. Read this in the remaining answers"
+    },
+    {
+      "start_time": 1552.96,
+      "end_time": 1582.47,
+      "text": "जोड़ के अपना आंसर रिटर्न कर देंगे। मतलब आप ऐसे लिख रहे हैं। आपको छह पेज का आंसर लिखना है। आप एक पेज पे लेके बैठे हुए हैं। पांच पेज कहीं और से आना है। पांच पेज कहीं और से आना है। अब आपको टीचर बोल दी कि आपको ये एक पेज सबमिट नहीं करना है। तुम एक पेज में तुम्हारी हैंडराइटिंग खराब है। मान लीजिए कि पांच पेज आपको अच्छी हैंडराइटिंग का मिला है। टीचर बोल दी कि तुम्हारा हैंडराइटिंग खराब है। तुम्हारा वाला सबमिट नहीं होगा तो आप क्या करेंगे? यही वाला पांच पेज सबमिट कर देंगे। अगर टीचर आपको बोलती है कि हां भाई तुम्हारा भी हैंडराइटिंग अच्छा है तो आप क्या करेंगे? 1 + 5 सिक्स पेज सबमिट कर देंगे।",
+      "source": "caption",
+      "english_text": "Will add and return your answer. Meaning you are writing like this. You have to write a six page answer. You are sitting on a page. Five pages have to come from somewhere else. Five pages have to come from somewhere else. Now the teacher told you that you do not have to submit this one page. You have bad handwriting on one page. Suppose you have got five pages of good handwriting. The teacher said that your handwriting is bad. What will you do if yours is not submitted? Will submit these five pages. If the teacher tells you that yes brother, your handwriting is also good, then what will you do? 1 + 5 will submit six pages."
+    },
+    {
+      "start_time": 1582.48,
+      "end_time": 1615.669,
+      "text": "यही करना है। आइए, यही करें। अह यही, यही हर रिकर्शन में यही करना है भाई। अ यही सेम फंडा है, सेम फॉर्मूला है। दिमाग में एकदम इसको छाप लीजिए अपने। आइए एक फंक्शन लिखें जो कि हमको एक स्ट्रिंग देता है। अच्छा ये क्या-क्या लेगा? पहले तो आपका इनपुट स्ट्रिंग। अच्छा! इनपुट स्ट्रिंग का लेंथ, एक इंडेक्स मतलब आप अगेन एरे वाला कांसेप्ट है। इस इंडेक्स से लास्ट तक हम लोग देख रहे हैं। और आपका एक कैरेक्टर जो कि आपको रिमूव करना है। सबसे पहले बेस केस लिख लीजिए। इफ i इक्वल इक्वल टू n मतलब",
+      "source": "caption",
+      "english_text": "This is what has to be done. Let's do this. Ah, this is what has to be done in every recursion, brother. This is the same fund, same formula. Imprint this in your mind immediately. Let's write a function that returns us a string. Well, what will he take? First, your input string. Good! The length of the input string, an index means you again have the array concept. We are watching from this index till the last. And one of your characters which you have to remove. First write the base case. If i is equal to n means"
+    },
+    {
+      "start_time": 1615.679,
+      "end_time": 1650.149,
+      "text": "स्ट्रिंग खत्म है। स्ट्रिंग खत्म है। मतलब ज़ीरो लेंथ का स्ट्रिंग बचा हुआ है। क्या रिटर्न करना है? एम्प्टी स्ट्रिंग। एम्प्टी स्ट्रिंग। इसमें तो कोई दिमाग लगाना नहीं है। बस हो गया। अब बाकी के पार्ट का आंसर निकाल लीजिए। बाकी के पार्ट का आंसर निकाल लीजिए। कैसे? फन एस एन i + 1 सी मान लीजिए कि ये आपको सही आंसर दे देगा। इस आंसर में ये वाला सी रिमूव्ड है ऑलरेडी। इस आंसर में ये वाला सी ऑलरेडी रिमूव्ड है। ये बहुत अच्छा आंसर है। ये बहुत अच्छा आंसर है। अब पांच पेज आपको मिल गया है। अगर अगर आपका एस आई इक्वल इक्वल टू c है। मतलब जिस जिस कररेक्टर को आप",
+      "source": "caption",
+      "english_text": "The string is over. The string is over. Meaning a zero length string is left. What to return? Empty string. Empty string. There is no need to put any mind into this. That's it. Now find out the answer to the remaining parts. Find out the answers to the remaining parts. How? Fun S N i + 1 C Assume that this will give you the correct answer. This 'C' has already been removed in this answer. This one is already removed in this answer. This is a very good answer. This is a very good answer. Now you have got five pages. If if your s i is equal to c. meaning whatever character you"
+    },
+    {
+      "start_time": 1650.159,
+      "end_time": 1678.07,
+      "text": "रिमूव करना चाहते थे आप अभी उस पे हैं। तो आप क्या रिटर्न करेंगे? बाकी का जो मिला है बाकी का जो मिला है वही करेंगे ना? और क्या करेंगे? आपका आपका हैंडराइटिंग खराब है। आपका एक पेज बेकार है। बाकी का पांच पेज जो आया है वही रिटर्न होगा। वही होगा। नहीं तो क्या होगा? सबको मिला दीजिए। इन दोनों को मिला दीजिए। रिटर्न एस आई प्लस आंसर। इसको बंद कर दीजिए। आइए इसको ड्राइनेस कर लेंगे। ये देखिए इसका कोड है। अगेन ये क्या है? बेस केस। ये क्या है?",
+      "source": "caption",
+      "english_text": "Wanted to remove, you are on it now. So what will you return? Whatever is left, we will do the same, right? What else will you do? Your handwriting is bad. One of your pages is useless. The remaining five pages that have come will be returned only. Same thing will happen. What will happen otherwise? Get everyone together. Mix these two. Return SI Plus Answer. Turn it off. Let us dry it. See its code. What is this again? Base case. What is this?"
+    },
+    {
+      "start_time": 1678.08,
+      "end_time": 1711.19,
+      "text": "बाकी का ट्रस्ट वाला आंसर। ये क्या है? वो छोटा सा जो हम लोग स्टेप लेते हैं और आंसर को मिला के रिटर्न कर देते हैं। यही है। आइए ड्राई रन करें। मान लेते हैं कि आपका स्ट्रिंग क्या है? A P और E 0 1 2 आपको रिमूव किसको करना है? P को। आइए शुरू में फन i = 0 पे आइए। क्या ये बेस केस है? नहीं है। बेस केस नहीं है। ठीक है? बेस केस कब होगा? i = 3 हो जाएगा। तो ये बेस केस हो जाएगा। आइए। सबसे पहले तो आंसर निकाल लीजिए। किसका? i = 1 तक से अंत तक का आंसर निकाल के बैठ जाइए। इसको",
+      "source": "caption",
+      "english_text": "Rest of the trust answer. What is this? That small step that we take and return after finding the answer. This is it. Let's do a dry run. Let's assume what is your string? A P and E 0 1 2 Whom do you have to remove? To P. Let us start at the function i = 0. Is this the base case? Not there. There is no base case. Ok? When will the base case happen? i = 3. So this will be the base case. Come. First of all, find out the answer. Whose? Sit down and find out the answer from i = 1 till the end. to this"
+    },
+    {
+      "start_time": 1711.2,
+      "end_time": 1744.95,
+      "text": "कॉल करिए। फन i = 1 क्या ये बेस केस है? नाउ। सबसे पहले क्या कीजिए? फन i = 2 का आंसर निकाल के बैठ जाइए। बाहर आ जाइए। ये कॉल हो जाएगा। i = 2 क्या ये बेस केस है? ना सबसे पहले क्या कीजिए? फन i = 3 का आंसर निकाल के बैठ जाइए। i = 3 पे जब आप जाएंगे बेस केस हो जाएगा। बेस केस में क्या? एम्प्टी स्ट्रिंग। तो इसका आंसर कुछ नहीं आएगा। ये खाली स्ट्रिंग आया। अब आपको यहां पे देखना है। क्या ये e क्या ये आप जिसपे हैं वन i = 2 पे हैं। क्या ये इ आपके p के बराबर है? नहीं। नहीं ये P के",
+      "source": "caption",
+      "english_text": "Please call. Fun i = 1 Is this the base case? Now. What to do first? Sit down and find the answer to the function i = 2. Come out. This call will be made. i = 2 Is this the base case? What to do first? Sit down and find the answer to the function i = 3. When you go to i = 3 it will be the base case. What's in the base case? Empty string. So there will be no answer to this. It came empty string. Now you have to look here. Is this e Is this the one you're on is on i = 2. Is this e equal to your p? No. No this is from P"
+    },
+    {
+      "start_time": 1744.96,
+      "end_time": 1779.19,
+      "text": "बराबर नहीं है तो आंसर क्या होगा? E प्लस आंसर। तो ये क्या रिटर्न करेगा? ये एक स्ट्रिंग रिटर्न करेगा जिसमें E होगा। अच्छी बात है। ये कहां आ जाएगा? यहां पे आ जाएगा। अब क्या i वन वाला क्या ये बराबर है आपके कैरेक्टर के जिसको आप रिमूव करना चाहते थे? हां जी ये P और P बराबर है। तो इसको हम लोग ऐड नहीं करेंगे। क्या रिटर्न कर देंगे? बस जो आंसर आया था आगे से। रिटर्न E ये E कहां आ जाएगा? यही यहां आ जाएगा। i = 0 को चेक कीजिए। क्या a को आप रिमूव करना चाहते थे क्या? नहीं हम तो पी को करना चाहते थे तो ये तो अच्छा स्ट्रिंग है। क्या रिटर्न होगा? रिटर्न si + आंसर",
+      "source": "caption",
+      "english_text": "If it is not equal then what will be the answer? E plus answer. So what returns will it give? This will return a string containing E. It's a good thing. Where will it come? Will come here. Now what about the i one, is it equal to your character that you wanted to remove? Yes, this P and P are equal. So we will not add it. What will you return? Just the answer that came from further. Return E Where will this E come? This is what will come here. Check i = 0. Did you want to remove a? No, we wanted to do P so this is a good string. What will be the returns? return si + answer"
+    },
+    {
+      "start_time": 1779.2,
+      "end_time": 1813.19,
+      "text": "मतलब a + e = ae ये आपका फाइनल आंसर हो गया। ध्यान से देखिए a pe इसमें से आप t को रिमूव कर दीजिए सारे को। क्या आंसर आएगा? ae तो क्या सही आंसर आ रहा है? हां जी सही आंसर आ रहा है। तो ये इसका कोड हो गया। तो ये तीन प्रॉब्लम देखिए। तीन प्रॉब्लम में 10 मिनट हर प्रॉब्लम को लगे होंगे। हम बहुत ज्यादा समझाएं तो लगा है लिखने में तो देखिए कितना लाइन का कोड है 1 2 3 4 5 6 ठीक है तो छ 7 आठ लाइन इसी का रिकजन का होगा और ईजी-इजी प्रॉब्लम कराने का मकसद आप लोगों को सिखाना है ताकि आगे जाके बैक ट्रैकिंग और डायनामिक",
+      "source": "caption",
+      "english_text": "Meaning a + e = ae, this is your final answer. Look carefully at a pe and remove all the t from it. What answer will come? ae So what is the correct answer? Yes, the correct answer is coming. So this is its code. So look at these three problems. Of the three problems, each problem will take 10 minutes. If we try to explain too much then it will take a lot of time to write, so see how many lines of code there are: 1 2 3 4 5 6. Okay, so 6 7 8 lines will be for its reconstruction and the purpose of giving easy-easy problems is to teach you people so that in the future, back tracking and dynamic"
+    },
+    {
+      "start_time": 1813.2,
+      "end_time": 1819.44,
+      "text": "प्रोग्रामिंग में कोई कंफ्यूजन ना बचे कि रिकर्शन करते कैसे हैं। तो चलिए कल मिलिए।",
+      "source": "caption",
+      "english_text": "There should be no confusion in programming as to how recursion is done. So let's meet tomorrow."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

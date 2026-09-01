@@ -1,0 +1,639 @@
+{
+  "video_id": "O04KAy7cLBs",
+  "video_title": "Master DFS/BFS in Graphs | Graph series DSA Patterns",
+  "video_number": 94,
+  "chunks": [
+    {
+      "start_time": 1.75,
+      "end_time": 36.069,
+      "text": "देखिए वीडियो बहुत इंपॉर्टेंट है। डीएफएस बीएफएस ग्राफ में जितना भी क्वेश्चन बनता है दोनों इसी से बनता है। तो बहुत जरूरी है कि आप बहुत अच्छे से समझें। और नहीं समझ आए तो हमको बताएं कि नहीं समझ में आए ताकि हम इसको फिर से पढ़ाएं। दूसरा बात यह है ना कि वीडियो में अभी तक कमेंट आ रहा है कि हमको लगा था की यह हो गया है प्रॉब्लम सॉल्व। ये अभी तक कमेंट आ रहा है कि अह कोड नहीं होगा क्या? कोड कहां? हमको समझ में ये क्या है? यह क्या है? ये देखिए। ये जो हम यहां पे लिखे हैं इसको क्या बोला जाता है? ये हमको मेरे हिसाब से ये कोड है। आपके हिसाब से कोई और चीज है क्या? कोड दे दीजिए, नोट्स दे दीजिए। अरे अगर हम आपको यह दे देंगे, यह इससे आपको क्या समझ में आएगा? आज से एक महीना बाद",
+      "source": "caption",
+      "english_text": "See the video is very important. All the queries that are made in DFS BFS graph are made from this. So it is very important that you understand very well. And if you don't understand, tell us if you don't understand so that we can teach it again. The second thing is that comments are still coming in the video that we thought that the problem has been solved. The comment is still coming that there will be no code? where the code? Do we understand what this is? What is this? Look at this. What is what we have written here called? According to me this is the code. Is there anything else you think? Give me the code, give me the notes. Hey, if we give you this, what will you understand from it? one month from today"
+    },
+    {
+      "start_time": 36.079,
+      "end_time": 68.789,
+      "text": "अगर आप यह देखिएगा इससे क्या समझ में आएगा? हम देखिए बार-बार बोल रहे हैं कहने में आपको सुनने में खराब लगता होगा। खुद से जब तक नोट्स या कॉपी में नहीं लिखोगे। खुद से जब तक कोड नहीं करोगे समझ के तब तक डीएसए समझ में नहीं आएगा। मतलब हमको एकदम समझ में नहीं आ रहा है। मतलब मेरे साथ ऐसा प्रॉब्लम नहीं था। आजकल मतलब ये आप इसको ज्योग्राफी समझ रहे हैं क्या कि हम आपको नोट्स दे देंगे तो उसको सीडी की तरह अंदर ले लीजिएगा। आप Instagram पे ना बहुत सारा आदमी हैं। आप आप हर रील पे कमेंट करते होंगे ना Instagram पे बहुत सारे लोगों के कमेंट कोड टू गेट द लिंक कमेंट ये टू गेट",
+      "source": "caption",
+      "english_text": "What will you understand if you look at this? Look, we are saying it again and again, you must be feeling bad in listening to it. Unless you write on your own in notes or notebooks. You won't be able to understand DSA until you code yourself. Meaning we are not able to understand at all. Meaning I did not have such a problem. Nowadays, do you think of it as geography? If we give you notes, you will take them inside like a CD. You are not a very popular person on Instagram. You must be commenting on every reel of many people on Instagram. Comment code to get the link is to get this comment."
+    },
+    {
+      "start_time": 68.799,
+      "end_time": 101.67,
+      "text": "द लिंक। दिल पे हाथ रख के बताइए कितना चीज आज से पहले खोले हैं। देखिए अपना इनबॉक्स आपका भरा हुआ है। पीडीएफ से, वर्ड से, कंटेंट से, ये चीट शीट, वो चीट पैड सबसे आपका इनबॉक्स भरा हुआ है। हाथ रख के कितना चीज खोल के आज तक देखे हैं। देखे नहीं होंगे आप लोग। आप लोग, आप लोग को आदत हो गया है कि रख लेते हैं। ये कंटेंट है। कोड दे दो, नोट्स दे दो, सब दे दो। उसको लेके रख लेंगे, पढ़ेंगे नहीं। अरे पढ़ने पे फोकस करो, समझने पे फोकस करो ना। कोड तो 2005-10 में लोग मांगते होंगे कि उस समय इंटरनेट नहीं था कुछ था नहीं समझ में नहीं",
+      "source": "caption",
+      "english_text": "The Link. Put your hand on your heart and tell me how many things you have opened before today. See your inbox is full. Your inbox is filled with everything from PDF, Word, content, this cheat sheet, that cheat pad. How many things have you opened with your hands and seen till date? You guys must not have seen it. You people, you people have become a habit of keeping it. This is content. Give the code, give the notes, give everything. Will take it and keep it, will not read it. Hey, focus on reading, focus on understanding. People would have asked for the code in 2005-10, there was no internet at that time, there was nothing, I don't understand."
+    },
+    {
+      "start_time": 101.68,
+      "end_time": 132.949,
+      "text": "आता था तो उस समय मतलब हमको समझ में नहीं आ रहा है कि कोड दे दीजिए कोड आप करते हुए नहीं दिखाते हैं मतलब अगर हम ये कोड यहां पे लिख रहे हैं तो आप हमको ये टाइप करते हुए क्यों देखना चाहते हैं आपको लग रहा है कि हम कुछ गलत लिख देते हैं क्या? आपको अगर पूरा वीडियो समझ में आता है ना कोड मांगने का क्या जरूरत है? कोड आपको करना है भाई। अरे ये आप लोग क्या समझ रहे हैं? किस डायरेक्शन में पढ़ना चाहते हैं? इससे किसी का फायदा नहीं होगा। देखिए अगर हम कोड दे देंगे हम सीखेंगे। आप कभी नहीं सीखेंगे। हम आपको खुला-खुल्ला बोल रहे हैं। खुद से अगर नोट्स नहीं बनाते हैं।",
+      "source": "caption",
+      "english_text": "At that time, it meant that we are not able to understand, please give us the code, we do not show you doing the code, that is, if we are writing this code here, then why do you want to see us typing this? Do you think that we write something wrong? If you understand the entire video then why is there no need to ask for the code? You have to code, brother. Hey, what are you guys thinking? In which direction do you want to study? This will not benefit anyone. Look, if we give the code we will learn. You will never learn. We are telling you openly. If you don't make notes yourself."
+    },
+    {
+      "start_time": 132.959,
+      "end_time": 158.229,
+      "text": "आपको लगता है कि थोड़ा हम टाइम बचा लें। ऐसा कुछ करते नहीं दिन में। हमको ही मालूम है कि ऐसा कुछ कोई काम नहीं कर रहा है। हम भी कॉलेज गए हुए हैं। ठीक है? हम लोग भी 10 के बाद डायरेक्ट जॉब में नहीं आए। सब लोग कॉलेज गया हुआ है। वैसा कोई आदमी काम नहीं करता है कि नहीं नहीं थोड़ा टाइम बच जाए। नोट्स नहीं बनाए। कोड कोई दे देता तो उसको कॉपी पेस्ट कर देते। टाइम बच जाता। नहीं सीखेंगे। फिर ये सब देखने का फायदा नहीं है। इस तरीके के कंटेंट में ये करने का फायदा नहीं है। फिर आप रील्स देखिए। फिर आप आराम से रील देखिए। मूवी देखिए।",
+      "source": "caption",
+      "english_text": "Do you think we should save some time? Don't do anything like this during the day. We only know that no one is doing anything like this. We have also gone to college. Ok? We also did not join direct jobs after 10th. Everyone has gone to college. No man does such work just to save some time. Did not make notes. If someone had given the code, we would have copied and pasted it. Time would have been saved. Will not learn. Then there is no use in seeing all this. There is no benefit in doing this in this type of content. Then you watch the reels. Then you watch the reel comfortably. watch a movie."
+    },
+    {
+      "start_time": 158.239,
+      "end_time": 191.589,
+      "text": "आईपीएल है। आईपीएल को एंजॉय कीजिए। वो सब वैरायटी ऑफ़ एंजॉयमेंट मोड है। ठीक है? वो सब किया करिए। इस तरीके के कंटेंट में कोड नहीं है क्या? वीडियो में कोड कब होगा? अरे क्या है? ये ये जो लिखा हुआ है ये क्या लिखा हुआ है ये हमको समझ में समझाओ ये क्या है ये जो हम लिखे हैं क्या है ऊपर जो एक्सप्लेनेशन दिया है वो किस चीज के लिए था उसका एंड गोल क्या था कोड करवाना आपको खुद सीखिए स्ट्रगल नहीं करेंगे तो नहीं आएगा ये मतलब आप आप आपको अगर ये वाला कोड भी नहीं समझ में आ रहा है ना खुद से लिखने इस तरीके का कोड तो आप जॉब मत कीजिएगा जॉब जाइएगा आपका गांड फट जाएगा",
+      "source": "caption",
+      "english_text": "It is IPL. Enjoy IPL. That's all variety of enjoyment mode. Ok? Do all that. Is there no code in this type of content? When will the code be in the video? hey what's this? This is what is written, explain to us in understanding what is this, what is this that we have written, what is the explanation given above, what was it for, what was its end goal, you have to learn the code yourself, if you don't struggle, then it will not come, it means that if you are not able to understand even this code, nor can you write this type of code on your own, then don't do the job, if you lose the job, your ass will get busted."
+    },
+    {
+      "start_time": 191.599,
+      "end_time": 225.43,
+      "text": "जॉब में ऐसा ऐसा क्लास ऑब्जेक्ट और थ्रेड वर्ड शुरू हो जाएगा ना फिर आप जॉब से आपको रिजाइन करना पड़ेगा पड़ेगा नहीं तो वही चैट जीपीटी क्लॉड उधर-उधर से कुछ-कुछ करके थोड़ा दिन सर्वाइव करेंगे। अगर आप यह 50 लाइन का कोड खुद से नहीं लिख पाते हैं तो फिर आप जॉब के लिए रेडी नहीं है। फिर फिर आप टेक्निकल फील्ड के लिए रेडी नहीं है। फिर आप कुछ और काम करना शुरू कीजिए। ठीक है? शुरू करते हैं। चलिए। हेलो बच्चों, बहुत-बहुत स्वागत है। जो लोग वीडियो पे पहली बार आ रहे हैं, डिस्क्रिप्शन चेक कीजिए। कम से कम ग्राफ सीरीज तो आपको शुरू से देखनी चाहिए। शुरू के दो वीडियो हो चुके हैं। वो देखेंगे तो आपको ज्यादा समझ में आएगा। ऐसी मेरी उम्मीद है आपसे। आज का जो लेक्चर है ना आज हम लोग हम लोग",
+      "source": "caption",
+      "english_text": "Such class object and thread word will start in the job, otherwise you will have to resign from the job, otherwise the same chat GPT cloud will survive for a few days by doing something here and there. If you cannot write this 50 line code by yourself then you are not ready for the job. Then again you are not ready for technical field. Then you start doing some other work. Ok? let start. Let go. Hello children, you are very welcome. Those who are watching the video for the first time, check the description. At least you should see the graph series from the beginning. The first two videos have been done. If you see that, you will understand better. This is my expectation from you. What is today's lecture?"
+    },
+    {
+      "start_time": 225.44,
+      "end_time": 259.83,
+      "text": "क्या-क्या सीख चुके हम लोग सीख चुके हैं कि ग्राफ क्या होता है? एक जनरल आईडिया हो चुका है। और ग्राफ बनाया कैसे जाता है? मतलब एडजेसेंसी मैट्रिक्स में बनाया जाता है या एडजेसेंसी लिस्ट में बनाया जाता है। और हम आपको बता चुके हैं कि 90% ऑफ क्वेश्चन में आपको या तो लिस्ट दिया हुआ रहेगा एडजेसेंसी लिस्ट या तो आपको खुद से बनाना पड़ेगा। खुद से कब बनाना पड़ेगा? जब आपको नंबर ऑफ वर्टिससेस और एजेस दिए हुए होंगे। आपको बोला हुआ होगा कि भैया चार लोग हैं 0 1 2 3 और इनके बीच में ये सारे एजेस हैं। उसके बाद आपको ये भी बताया हुआ होगा कि ग्राफ किस तरीके का है। ग्राफ कनेक्टेड है कि डिस्कनेक्टेड है वो बाद में बताते हैं कि ग्राफ डायरेक्टेड है कि",
+      "source": "caption",
+      "english_text": "What all have we learned, what is a graph? A general idea has been reached. And how is the graph made? Meaning is made in adjacency matrix or made in adjacency list. And we have told you that in 90% of the questions, either the list will be given to you or the adjacency list will be given to you or you will have to make it yourself. When will you have to make it yourself? When you are given the number of vertices and edges. You must have been told that brother, there are four people 0 1 2 3 and in between them are all these ages. After that you will also be told what type of graph it is. Whether the graph is connected or disconnected, they later tell whether the graph is directed or not."
+    },
+    {
+      "start_time": 259.84,
+      "end_time": 294.15,
+      "text": "अनडायरेक्टेड है। डायरेक्टेड का मतलब कि एरो वाला मतलब एक एच जाएगा ना तो वो एरो है। ज़ीरो से वन का मतलब सिर्फ ज़ीरो से वन। वन से ज़ीरो नहीं। अनडायरेक्टेड मतलब ज़ीरो से वन के बीच में एक कॉमन लाइन और वो वन से ज़ीरो में भी है। उसके बाद वेटेड है कि नहीं? मतलब हर एज का कुछ ना कुछ वेट है कि नहीं? ये सब डिस्कस हो चुका है बहुत बहुत डिटेल में। ठीक है? आज जो हम लोग करने वाले हैं ना, हम लोग करने वाले हैं डीएफएस और बीएफएस। डीएफएस और बीएफएस आप लोग जाने अनजाने में करते हुए आ रहे हैं ट्री वगैरह में। लेकिन आपको उस समय हो सकता है कि नाम नहीं हम दिए थे। मेरी गलती हो गई कि हम आपको स्पेसिफिकली बताए नहीं कि ये डीएफएस है, ये बीएफएस है। ट्री के क्वेश्चन में",
+      "source": "caption",
+      "english_text": "Is undirected. Directed means that the one with arrow means one H will go, so it is an arrow. Zero to one just means zero to one. Not one to zero. Undirected means a common line between zero and one and that is also between one and zero. Is it weighted after that or not? Meaning, does every age have some weight or not? All this has been discussed in great detail. Ok? What we are going to do today, we are going to do is DFS and BFS. You people are knowingly or unknowingly doing DFS and BFS in trees etc. But it may have occurred to you at that time that we did not give the name. My mistake was that we did not tell you specifically that this is DFS, this is BFS. In question of tree"
+    },
+    {
+      "start_time": 294.16,
+      "end_time": 328.15,
+      "text": "जभी भी आप कोई रिकर्शन का फंक्शन लिखते थे ना, मान लीजिए इनऑर्डर। इनऑर्डर की बात कर लीजिए। लेफ्ट, रूट और राइट वो डीएफएस होता था। जभी भी आप कोई लेवल ऑर्डर का प्रॉब्लम करते लेवल ऑर्डर ट्रेवर्सल एक प्रॉब्लम था। उसको बीएफएस बोला जाता है। आज आपको हम नाम के साथ डिटेल में समझाएंगे। बहुत जरूरी है कि आप ये दोनों वीडियो देखें दोनों। डीएफएस और बीएफएस दोनों पार्ट देखें क्योंकि यही दो होते हैं ट्रेवर्सल। आगे हर क्वेश्चन में ना हम आपको इतना डिटेल में नहीं बताएंगे। हम आपको बोलेंगे कि चलो इसमें डीएफएस करना पड़ेगा। तो चलो डीएफएस कर दो। इसमें बीएफएस करना पड़ेगा तो चलो बीएफएस कर दो। तो ये दोनों बहुत बेसिक और फंडामेंटल ट्रेवर्सल है ग्राफ",
+      "source": "caption",
+      "english_text": "Whenever you used to write any recursion function, let's say in order. Talk about inorder. Left, Root and Right, that was DFS. Level order traversal was a problem whenever you had a level order problem. It is called BFS. Today we will explain it to you in detail along with the name. It is very important that you watch both these videos. See both DFS and BFS parts as these are the two traversals. Further, we will not tell you in detail about every question. We will tell you that we will have to do DFS in this. So let's do DFS. If you have to do BFS in this then let's do BFS. So these two are very basic and fundamental traversal graphs"
+    },
+    {
+      "start_time": 328.16,
+      "end_time": 362.71,
+      "text": "का। ग्राफ को इन्हीं दो तरीकों से देखा जाता है। या तो डेप्थ फर्स्ट सर्च जिसको डीएफएस बोला जाता है या तो ब्रेड्थ फर्स्ट सर्च जिसको बीएफएस बोला जाता है। ठीक है? डीएफएस पे आते हैं। किस पे? डीएफएस पे। अब देखिए डीएफएस क्या होता है ना? आपको हम एग्जांपल से समझाते हैं। Instagram का एग्जांपल ले लीजिए। क्योंकि ग्राफ बहुत रियल वर्ल्ड चीज है। ग्राफ ऑलमोस्ट हर ऐप आप देखते हैं ना जो कि लोगों को डील करता है या बहुत सारी चीजों से डील करता है। वो कहीं ना कहीं ग्राफ यूज़ करता है। अगर हम Instagram का बात ले लें तो आप क्या करते हैं? देखिए आप 9:00 बजे रात को Instagram खोले और आप मेरे प्रोफाइल पे आ गए। आप किसके प्रोफाइल पे? मेरे प्रोफाइल पे आ गए। ठीक है? स्टार्टिंग आपका प्रत्युष से",
+      "source": "caption",
+      "english_text": "Of. The graph is viewed in these two ways. Either depth first search which is called DFS or breadth first search which is called BFS. Ok? Coming to DFS. On what? On DFS. Now see what is DFS? Let us explain to you with an example. Take the example of Instagram. Because graph is a very real world thing. Graph Almost every app you see deals with people or deals with a lot of things. He uses graphs somewhere. If we take the matter of Instagram, what do you do? See, you opened Instagram at 9:00 pm and you came to my profile. Whose profile are you on? Came to my profile. Ok? Starting with Pratyusha"
+    },
+    {
+      "start_time": 362.72,
+      "end_time": 396.629,
+      "text": "है। पढ़ो वि प्रत्युष के Instagram पेज पे आप जाते हैं। आप देखते हैं कि प्रत्युष ना 32 लोगों को फॉलो करके रखा है। मेरे फॉलोइंग लिस्ट में 32 फॉलोअ लिस्ट में हजारों हैं लेकिन फॉलोइंग में कितने हैं। मान लो 32 हैं। अच्छा अब आप देखते हैं कि अच्छा देखते हैं प्रत्युष भैया किसको-किसको फॉलो किए। तो आपको पहला पता चलता है कि प्रत्युष भैया दीपिका पादुकोण को फॉलो करके रखे हैं। आप क्या करते हैं कि वहां से ना दीपिका पादुकोण के प्रोफाइल पे चले जाते हैं। आप ये किए ना प्रत्युष पे गए फॉलोइंग वाला लिस्ट खोले देखे अच्छा 32 फॉलोइंग है। आपको सबसे अच्छा लगा अच्छा दीपिका पादुकोण को किया है। आप कहां चले गए? दीपिका के प्रोफाइल पे चले गए। अच्छा",
+      "source": "caption",
+      "english_text": "Is. Read and you go to Pratyush's Instagram page. You see that Pratyush has followed 32 people. There are 32 followers in my following list, there are thousands in the list but how many are there in following. Suppose there are 32. Well, now you see, let's see whom Pratyush bhaiya followed. So the first thing you come to know is that Pratyush bhaiya is following Deepika Padukone. What you do is that from there you go to Deepika Padukone's profile. You did this, went to Pratyush, opened the following list and saw that he has 32 followers. You liked it best, Deepika Padukone. Where did you go? Went to Deepika's profile. good"
+    },
+    {
+      "start_time": 396.639,
+      "end_time": 430.15,
+      "text": "हो सकता है दीपिका के प्रोफाइल पे हो 100 फॉलोइंग। वो 100 लोगों को फॉलो की हुई है। वहां पे आप सर्च करना शुरू किए। आपको पता चला अच्छा दीपिका में सबसे अच्छा क्या लग रहा है? रणवीर सिंह। तो आप कहां चले गए? रणवीर सिंह के इंस्टा पे चले गए। ऐसा ही होता है ना भाई। स्टॉक आप लोग करना शुरू करते हैं। रुकते थोड़ी है। रणवीर सिंह के प्रोफाइल पे चले गए। अब रणवीर सिंह के प्रोफाइल पे भी आप देखिए। मान लीजिए यहां पे 200 फॉलोइंग वेरी गुड। अब रणवीर सिंह के प्रोफाइल पे आपको सबसे अच्छा लगा कि अच्छा ये रोनाल्डो को फॉलो करता है। आप रोनाल्डो के प्रोफाइल पे चले गए। ऐसे करके आप बढ़ते गए और देखते आएंगे कि क्या? यहां पे देखिए आप कर क्या रहे हैं। सबसे पहले आप प्रत्युष पे आए। आपका स्टार्टिंग कहां",
+      "source": "caption",
+      "english_text": "Maybe Deepika has 100 following on her profile. She is followed by 100 people. You started searching there. Well, did you find out what you like best about Deepika? Ranveer Singh. So where did you go? Went to Ranveer Singh's Insta. That's what happens, brother. You guys start stocking up. Let's wait a bit. Went to Ranveer Singh's profile. Now look at Ranveer Singh's profile also. Suppose 200 following here is very good. Now what you liked most about Ranveer Singh's profile is that he follows Ronaldo. You went to Ronaldo's profile. By doing this you will keep moving forward and see what? Look here what you are doing. First of all you came to Pratyush. where do you start"
+    },
+    {
+      "start_time": 430.16,
+      "end_time": 460.15,
+      "text": "था? प्रत्युष पे। तो सबसे पहला वाला आदमी प्रत्युष था। उसके बाद प्रत्युष 32 लोग को फॉलो करता था। लेकिन आप सारे 32 को विजिट नहीं किए। आप सिर्फ एक को विजिट किए। किसको? दीपिका पादुकोण को। इसके बाद आप सीधा दीपिका के प्रोफाइल पे आ गए। अब यहां पे 32 फॉलोविंग में बाकी 31 लोग भी थे। उनको अकेले नहीं देख रहे हैं। आप सीधा कहां पे आ गए? दीपिका पादुकोण के प्रोफाइल पे। उसके बाद अब दीपिका अगर 100 लोग को फॉलो करती है तो आप बाकी 100 को नहीं देख रहे हैं। आप सिर्फ एक आदमी को उठा के देख रहे हैं। किसको? रणवीर सिंह को। रणवीर सिंह को। तो दीपिका के भी बाकी 99 छूट गए।",
+      "source": "caption",
+      "english_text": "was? On Pratyush. So the first one was Pratyush. After that Pratyush used to follow 32 people. But you did not visit all 32. You visited only one. Whom? To Deepika Padukone. After this you came straight to Deepika's profile. Now there were 31 remaining people among the 32 following. Not seeing them alone. Where did you come straight from? On Deepika Padukone's profile. After that now if Deepika follows 100 people then you are not seeing the remaining 100. You are just looking at a man. Whom? To Ranveer Singh. To Ranveer Singh. So Deepika also missed the remaining 99."
+    },
+    {
+      "start_time": 460.16,
+      "end_time": 488.71,
+      "text": "मेरे तो 31 छूट ही गए थे। अब रणवीर सिंह पे आए तो रणवीर सिंह 200 को फॉलो करता है। लेकिन आपको किसमें इंटरेस्टेड है? रोनाल्डो में। तो आप बस यहां से सीधा कहां पे आ गए? रोनाल्डो तक। ये आप जो कर रहे हैं ना ये एग्जैक्ट काम इसको डीएफएस बोला जाता है। इसको क्या बोला जाता है? डीएफएस यानी डेप्थ फर्स्ट सर्च। डेप्थ फर्स्ट सर्च। डेप्थ फर्स्ट सर्च। इसका क्या मतलब है? आप शुरू किए आप ना घुसते चले जा रहे हैं। आप इसमें देखिए एक तरीके से आप घुसते घुसते घुसते घुसते नीचे चले जा रहे हैं।",
+      "source": "caption",
+      "english_text": "I had missed 31. Now coming to Ranveer Singh, Ranveer Singh follows 200. But what are you interested in? In Ronaldo. So where did you just come straight from here? Till Ronaldo. This exact work that you are doing is called DFS. What is this called? DFS means Depth First Search. Depth first search. Depth first search. What does it mean? You started it and you are continuing to enter. You see in this, in a way, you are going down by entering and entering."
+    },
+    {
+      "start_time": 488.72,
+      "end_time": 522.79,
+      "text": "डेप्थ में जा रहे हैं डेप्थ में जा रहे हैं। आप ऐसा नहीं कर रहे हैं कि पहले प्रत्युष को और प्रत्युष के सारे 32 फॉलोविंग का प्रोफाइल खोल के देख लिए। ऐसा नहीं किए थे आप। आप सिर्फ एक आदमी का प्रोफाइल खोले। किसका? दीपिका का। दीपिका के बाद ऐसा नहीं हुआ कि सारे 100 लोगों का फॉलोविंग आप देख लिए कि सारे 100 का प्रोफाइल कैसा है। नहीं। आप सिर्फ एक रणवीर सिंह पे घुसे। रणवीर में सारे 200 का नहीं देखे। एक में घुस गए रोनाल्डो का। तो आप क्या कर रहे हैं? नीचे जाते जा रहे हैं। डीप डीप डीप डीप घुसते चले जा रहे हैं। जब तक कि आपको कोई ऐसा प्रोफाइल ना मिल जाए। मान लीजिए कहीं जाके आपको कोई ऐसा प्रोफाइल मिल जाता है। रोनाल्डो का कुछ-कुछ कनेक्शन जुड़ता हुआ। मोदी जी मान",
+      "source": "caption",
+      "english_text": "Going in depth. Going in depth. You are not doing this by first opening the profiles of Pratyush and all 32 followers of Pratyush. You didn't do this. You just open a man's profile. Whose? Deepika's. After Deepika, it did not happen that all the 100 people were following you and you could see the profile of all the 100. No. You entered only on one Ranveer Singh. Didn't see all the 200's in Ranveer. Ronaldo entered one. So what are you doing? Going down. Going deep deep deep deep. Unless you find such a profile. Suppose you go somewhere and find such a profile. Adding some connections to Ronaldo. Modi ji maan"
+    },
+    {
+      "start_time": 522.8,
+      "end_time": 557.67,
+      "text": "लेते हैं आपको मोदी जी का प्रोफाइल मिलता है और मोदी जी का जीरो फॉलोविंग है। मोदी जी किसी को फॉलो नहीं करते हैं। मोदी जी नेता आदमी है। मोदी जी किसी को फॉलो नहीं करते हैं। मोदी जी बोले कि हम किसी को फॉलो नहीं करूंगा। तो आपको जब तक कोई ऐसा ना मिल जाए ना कि जिसका जीरो फॉलोविंग है। आप मोदी जी के आगे जा नहीं सकते। मोदी जी किसी को फॉलो नहीं करते तो क्या करेंगे? अब आप पीछे जाएंगे। अब आप पीछे जाएंगे। तो यहां आप क्या कर रहे हैं? डीप घुसते चले जा रहे हैं। घुसते घुसते घुसते घुसते जब तक कि मोदी जी के प्रोफाइल पे ना पहुंच जाए और मोदी जी और को पता चले कि भैया इसके आगे तो आप नहीं जा पाएंगे। अब जीरो फॉलोविंग है खत्म हो चुका है। इस एग्जैक्ट काम को क्या बोलते हैं? डेप्थ फर्स्ट सर्च। डीप डीप डीप डीप डीप घुसते चले जाते",
+      "source": "caption",
+      "english_text": "Let's say you get the profile of Modi ji and Modi ji has zero following. Modi ji does not follow anyone. Modi ji is a leader man. Modi ji does not follow anyone. Modi ji said that we will not follow anyone. So until you find someone who has zero following. You cannot go ahead of Modi ji. What will Modi ji do if he does not follow anyone? Now you will go back. Now you will go back. So what are you doing here? Going deeper. Keep entering and entering until you reach Modi ji's profile and Modi ji and others come to know that brother, you will not be able to go beyond this. Now zero following is over. What is this exact work called? Depth first search. Deep deep deep deep deep keep going in"
+    },
+    {
+      "start_time": 557.68,
+      "end_time": 584.31,
+      "text": "हैं। मतलब एक को पकड़ते हैं और एक पाथ पे जाते हुए एकदम नीचे तक जाते हैं जब तक कि वो खत्म ना हो जाए। उसके बाद वापस ऊपर आएंगे और वापस नीचे जाएंगे। कुछ-कुछ यह रिकजन जैसा लगता है। कुछ-कुछ देखने में यह रिकजन जैसा लगता है। अब अब आपको क्या क्वेश्चन क्या बोला है? आपको हम क्वेश्चन में वर्डिंग लिख देते हैं। आपको एक कनेक्टेड कनेक्टेड ये भी बताएंगे। कनेक्टेड क्या होता है? कनेक्टेड छूट गया था पिछले में। अनडायरेक्टेड।",
+      "source": "caption",
+      "english_text": "Are. Meaning, we grab one and go down a path until it ends. After that will come back up and go back down. It sounds a bit like Rickson. It looks a bit like Rickson. Now what question do you have now? We write the wording for you in the question. Will also tell you a connected connected. What is connected? Was left connected in the past. Undirected."
+    },
+    {
+      "start_time": 584.32,
+      "end_time": 618.23,
+      "text": "अनडायरेक्टेड ग्राफ। अनडायरेक्टेड ग्राफ। अच्छा। कनेक्टेड का क्या मतलब है कि कनेक्टेड का ये मतलब है ना कि सारे वर्टिससेस ग्राफ में जितने भी वर्टिससेस हैं ना सब आपस में कनेक्टेड हैं। मतलब सब पे पहुंचने का कोई ना कोई रास्ता होता है। मतलब कि मान लीजिए चार वर्टिससेस हैं। 0 1 2 3 अगर ये ग्राफ ऐसा लगता है कि ज़ीरो से वन एक एज है, ज़ीरो से टू एक एज है और टू से थ्री एक एज है। इस ग्राफ को ना हम लोग कनेक्टेड कहते हैं। क्योंकि यहां पे देख सकते हैं ना कि सब लोग आपस में कनेक्टेड हैं। कोई अकेले छूट नहीं गया है। मतलब कोई ऐसा आइलैंड नहीं है। लेकिन अगर आपको कोई",
+      "source": "caption",
+      "english_text": "Undirected graph. Undirected graph. Good. What does connected mean? Connected means that not all the vertices in the graph are connected to each other. Meaning there is some way to reach everything. Meaning that suppose there are four vertices. 0 1 2 3 If this graph looks like zero to one is an edge, zero to two is an edge and two to three is an edge. We call this graph connected. Because here you can see that everyone is connected to each other. No one is left alone. Meaning there is no such island. But if you have any"
+    },
+    {
+      "start_time": 618.24,
+      "end_time": 652.79,
+      "text": "बोले कि ये अनकनेक्टेड या डिस्कनेक्टेड ग्राफ है। डिस्कनेक्टेड ग्राफ का क्या मतलब होता है? डिस्कनेक्टेड ग्राफ का मतलब क्या होता है ना कि जीरो यहां हो, वन यहां हो, टू यहां हो। अब ये तीनों आपस में कनेक्टेड है लेकिन एक और वर्टेक्स है थ्री। थ्री तक कोई एज नहीं जा रहा है। थ्री तक कोई एज नहीं जा रहा है। तो देखिए इस ग्राफ को ना आप दो पार्ट में तोड़ सकते हैं। एक ग्राफ एक पार्ट आपका ये सिर्फ थ्री हो गया और दूसरा पार्ट आपका ये हो गया। तो इसको आप दो भाग में दो टुकड़ों में तोड़ सकते हैं। ऐसा तोड़ सकते हैं ना कि ये दोनों टुकड़े आपस में कनेक्टेड नहीं होंगे। इस तरीके के ग्राफ को हम लोग डिसकनेक्टेड ग्राफ बोलते हैं। आगे आएगा तो",
+      "source": "caption",
+      "english_text": "Said that this is an unconnected or disconnected graph. What does a disconnected graph mean? What does a disconnected graph mean? Zero is here, one is here, two is here. Now all three are connected but there is one more vertex three. No edge going till three. No edge going till three. So see, you can break this graph into two parts. One graph, one part of yours, becomes just three and the other part of yours becomes this. So you can break it into two parts. It can be broken in such a way that these two pieces will not be connected to each other. We call this type of graph a disconnected graph. if he comes forward"
+    },
+    {
+      "start_time": 652.8,
+      "end_time": 686.55,
+      "text": "आगे इसका क्वेश्चन। लेकिन अभी के लिए आपको कनेक्टेड ग्राफ मतलब सिंपल ग्राफ दिया है और अनडायरेक्टेड ग्राफ मतलब अनडायरेक्टेड का क्या मतलब है? कोई भी एज ज़ीरो से वन अगर आपको लाइन है या ज़ीरो से वन एज है तो वन से ज़ीरो भी आपको एज मिलेगा ही मिलेगा। उसमें कोई दो राय बिल्कुल नहीं है। तो आपको ये ग्राफ मिला है और जीएफजी आपके लिए आसान कर दिया है। आपको लिंक मिल जाएगा शीट में। जीएफजी में आपको एडजेसेंसी लिस्ट बना के भी दे दिया है। ये लीजिए आपका एक और काम आसान कर दिया। ऐसा नहीं किया है कि आपको बस वर्टेक्स बताया है और नहीं जो हम लिस्ट बनवाए थे पिछले बार लिस्ट क्या बनवाए थे कि एक बड़ा सा वेक्टर रहता था।",
+      "source": "caption",
+      "english_text": "Its question further. But for now you have been given connected graph meaning simple graph and undirected graph meaning what is the meaning of undirected? Any edge, if you have a line from zero to one or if you have an edge from zero to one, then you will definitely get an edge from one to zero. There is absolutely no doubt about that. So you've got this graph and GFG has made it easy for you. You will find the link in the sheet. Adjacency list has also been prepared and given to you in GFG. Here's another one of your tasks made easy. What has not been done is that we have just told you the vertex and no that we had made a list, the last time we made a list that there was a big vector."
+    },
+    {
+      "start_time": 686.56,
+      "end_time": 719.829,
+      "text": "उसमें नंबर ऑफ़ वर्टिससेस जितने इंडेक्स रहते थे। हर इंडेक्स में ज़ीरो किससे किससे कनेक्टेड है? वो उसमें लिखा रहता था। ऐसे-ऐसे करके वन किससे किससे कनेक्टेड है वो इसमें ऐसा-ऐसे करके लिखा रहता था। तो आपको ये बकायदा एडजेसेंसी लिस्ट भी बना के दे दिया कि आपको ये भी ना बनाने की जरूरत पड़े इस क्वेश्चन में। अब आपको इसका डीएफएस ट्रेवर्सल प्रिंट करना है या रिटर्न करना है। डीएफएस ट्रेवर्सल मतलब एक लिस्ट ऑफ़ एक वेक्टर ऑफ़ इंटीजर। एक वेक्टर ऑफ़ इंटीजर मतलब कि इस ग्राफ में आप ज़ीरो से शुरू करने में अगर आप ज़ीरो से शुरू करें। जैसा कि ऊपर Instagram में किससे",
+      "source": "caption",
+      "english_text": "There were as many indexes as the number of vertices in it. In each index, zero is connected to whom? It was written in it. It was written in such and such manner that the forest is connected to whom and to whom. तो आपको ये बकायदा एडजेसेंसी लिस्ट भी बना के दे दिया कि आपको ये भी ना बनाने की जरूरत पड़े इस क्वेश्चन में। अब आपको इसका डीएफएस ट्रेवर्सल प्रिंट करना है या रिटर्न करना है। डीएफएस ट्रेवर्सल मतलब एक लिस्ट ऑफ़ एक वेक्टर ऑफ़ इंटीजर। एक वेक्टर ऑफ़ इंटीजर मतलब कि इस ग्राफ में आप ज़ीरो से शुरू करने में अगर आप ज़ीरो से शुरू करें। जैसा कि ऊपर Instagram में किससे"
+    },
+    {
+      "start_time": 719.839,
+      "end_time": 753.19,
+      "text": "शुरू हुआ था? प्रत्युष से। आप इसी तरीके से ज़ीरो से शुरू करते हैं, तो आपको क्या लिस्ट मिलेगा वेक्टर अह अह नंबर्स का, वह आपको रिटर्न करना है। तो, यह आपका क्वेश्चन है। और आपको इसको कैसे करना है? डेप्थ फर्स्ट सर्च करना है। क्या करना है? डेप्थ फर्स्ट सर्च करना है। चलिए, तो अब इसको देखते हैं कि अब इसमें करेंगे क्या और क्या नहीं करेंगे, कैसे करेंगे, सब देखते हैं। चलिए। चलिए। तो ये आपका ग्राफ है। आप ग्राफ देख सकते हैं। और इसका हम एडजसेंसी लिस्ट लिख दिए हैं। एक बार समझा देते हैं। देखिए ये ग्राफ ऐसा है। इसमें कितने वर्टिससेस हैं? 1 2 3 4 पांच वर्टिससेस हैं। जीरो से ले फोर तक आपको ये",
+      "source": "caption",
+      "english_text": "had started? From Pratyush. आप इसी तरीके से ज़ीरो से शुरू करते हैं, तो आपको क्या लिस्ट मिलेगा वेक्टर अह अह नंबर्स का, वह आपको रिटर्न करना है। तो, यह आपका क्वेश्चन है। और आपको इसको कैसे करना है? डेप्थ फर्स्ट सर्च करना है। What is the plan? डेप्थ फर्स्ट सर्च करना है। चलिए, तो अब इसको देखते हैं कि अब इसमें करेंगे क्या और क्या नहीं करेंगे, कैसे करेंगे, सब देखते हैं। Let go. Let go. तो ये आपका ग्राफ है। आप ग्राफ देख सकते हैं। और इसका हम एडजसेंसी लिस्ट लिख दिए हैं। एक बार समझा देते हैं। देखिए ये ग्राफ ऐसा है। इसमें कितने वर्टिससेस हैं? 1 2 3 4 पांच वर्टिससेस हैं। जीरो से ले फोर तक आपको ये"
+    },
+    {
+      "start_time": 753.2,
+      "end_time": 782.71,
+      "text": "एडजेसेंसी लिस्ट जो मिलता है ना हमेशा एडजेसेंसी लिस्ट का जो साइज होता है ना वो आपको बता देगा कि नंबर ऑफ वर्टिससेस कितने हैं। क्योंकि ये लिस्ट होता क्या है? ये लिस्ट कुछ नहीं होता है। इसका हर इंडेक्स ना एक वर्टेक्स है। इसके हर इंडेक्स को आप एक वर्टेक्स मान सकते हैं। हर इंडेक्स में एक वेक्टर मिलेगा आपको। हर इंडेक्स के अंदर एक वेक्टर मिलेगा। वो वेक्टर क्या बताएगा कि ये वाला इंडेक्स मान लीजिए ज़ीरो। अगर ज़ीरो का बात कर रहे हैं ना ज़ीरो किस-किस नोड से कनेक्टेड है? तो आप ग्राफ में देखिए। ज़ीरो किस-किस नोड से कनेक्टेड है? तो ज़ीरो दो तीन और एक से कनेक्टेड है।",
+      "source": "caption",
+      "english_text": "एडजेसेंसी लिस्ट जो मिलता है ना हमेशा एडजेसेंसी लिस्ट का जो साइज होता है ना वो आपको बता देगा कि नंबर ऑफ वर्टिससेस कितने हैं। क्योंकि ये लिस्ट होता क्या है? ये लिस्ट कुछ नहीं होता है। इसका हर इंडेक्स ना एक वर्टेक्स है। इसके हर इंडेक्स को आप एक वर्टेक्स मान सकते हैं। हर इंडेक्स में एक वेक्टर मिलेगा आपको। हर इंडेक्स के अंदर एक वेक्टर मिलेगा। वो वेक्टर क्या बताएगा कि ये वाला इंडेक्स मान लीजिए ज़ीरो। अगर ज़ीरो का बात कर रहे हैं ना ज़ीरो किस-किस नोड से कनेक्टेड है? तो आप ग्राफ में देखिए। ज़ीरो किस-किस नोड से कनेक्टेड है? तो ज़ीरो दो तीन और एक से कनेक्टेड है।"
+    },
+    {
+      "start_time": 782.72,
+      "end_time": 817.03,
+      "text": "तो क्या बोला? 2 3 1 की बात करें। एक किससे किस से कनेक्टेड है? एक बस ज़ीरो से कनेक्टेड है तो वन वाले इंडेक्स में क्या वेक्टर आपको मिलेगा? सिर्फ ज़ीरो। टू किससे किससे कनेक्टेड है? टू 0 और फोर से कनेक्टेड है। तो यहां पे आपको ज़ीरो और फोर देखने को मिलेगा। तो कभी भी एडी डॉट साइज़ या ADJ का लेंथ जितना भी ADJ में सारे वर्टेक्स के होंगे। तो उसका लेंथ आपको बता देगा ना कि कितने वर्टेक्स है भैया इसमें। अच्छा। आइए हम शुरू करते हैं अपना वो खेल शुरू करते हैं। जस्ट लाइक Instagram हम लोग शुरू करते हैं। आपको बोला गया है कि आपको स्टार्ट कहां से करना है? स्टार्टिंग पॉइंट। Instagram में आप जब स्टॉक करेंगे तो कोई स्टार्टिंग पॉइंट",
+      "source": "caption",
+      "english_text": "तो क्या बोला? 2 3 1 की बात करें। एक किससे किस से कनेक्टेड है? एक बस ज़ीरो से कनेक्टेड है तो वन वाले इंडेक्स में क्या वेक्टर आपको मिलेगा? सिर्फ ज़ीरो। टू किससे किससे कनेक्टेड है? टू 0 और फोर से कनेक्टेड है। तो यहां पे आपको ज़ीरो और फोर देखने को मिलेगा। तो कभी भी एडी डॉट साइज़ या ADJ का लेंथ जितना भी ADJ में सारे वर्टेक्स के होंगे। तो उसका लेंथ आपको बता देगा ना कि कितने वर्टेक्स है भैया इसमें। Good. आइए हम शुरू करते हैं अपना वो खेल शुरू करते हैं। जस्ट लाइक Instagram हम लोग शुरू करते हैं। आपको बोला गया है कि आपको स्टार्ट कहां से करना है? Starting point. Instagram में आप जब स्टॉक करेंगे तो कोई स्टार्टिंग पॉइंट"
+    },
+    {
+      "start_time": 817.04,
+      "end_time": 851.43,
+      "text": "होगा ना कि आप डिसाइड किया कि चलो हम प्रत्युष से प्रोफाइल स्टॉक करना शुरू करें। इसी तरीके से आपको बोला हुआ है आपका जो स्टार्टिंग नोड है ना वो ज़ीरो होना चाहिए। आम तौर पे हमेशा ज़ीरो होता है। ठीक है? आपका स्टार्टिंग कहां से है? ज़ीरो। ओके? तो आपका स्टार्ट कहां पे है? तो सबसे पहले आपका जो नोड होगा वो क्या होगा? अभी हम बस आपको रफ में बता रहे हैं कि क्या कर सकते हैं। कोड की बात नहीं कर रहे हैं। आपका नोड हो गया ज़ीरो। ओके? अब जीरो हो गया तो सबसे पहले तो आपको एक ट्रेवर्सल मतलब एक पूरे ग्राफ को कवर करना है डीएफएस से। तो हम क्या कर सकते हैं कि ज़ीरो आ गया ना? मतलब ज़ीरो तो आप देख रहे हैं। तो हम एक अपने रिजल्ट में रिजल्ट में ज़ीरो तो लिख ही लेते हैं। ज़ीरो तो लिख ही लेना",
+      "source": "caption",
+      "english_text": "Maybe you decided that let's start stocking profiles from Pratyush. Similarly, you are told that your starting node should be zero. Normally it is always zero. Ok? Where are you starting from? Zero. Ok? So where is your start? So what will be your first node? Right now we are just telling you in the rough what can be done. Not talking about code. Your node has become zero. Ok? Now it becomes zero, so first of all you have to do one traversal i.e. cover an entire graph with DFS. So what can we do now that zero has arrived? Meaning zero as you see. So we definitely write zero in our result. just write zero"
+    },
+    {
+      "start_time": 851.44,
+      "end_time": 880.71,
+      "text": "चाहिए ना। अब ज़ीरो में आप शुरू कर रहे हैं तो लिख लीजिए ज़ीरो। अच्छा। अब देखिए आपको ज़ीरो के नेबर्स को देखना है। आपके ज़ीरो के नेबर्स को देखना है। ये नेबर्स क्या होते हैं? जीरो किससे किससे कनेक्टेड देखो जीरो के क्या कहलाते हैं? पड़ोसी, नेबर जैसे कि जीरो ये तीनों नोड जीरो के नेबर्स हैं। ये तीनों नोड क्या हैं जीरो के? डायरेक्ट नेबर्स हैं। फोर जीरो का नेबर नहीं है क्योंकि जीरो फोर से कनेक्टेड नहीं है ना। तो ये तीनों नोड जीरो के नेबर्स हैं। वेरी गुड। नेबर्स आपको कैसे पता चलेगा?",
+      "source": "caption",
+      "english_text": "Shouldn't it? Now if you are starting with zero then write zero. Good. Now see you have to watch Zero's Neighbors. Have to see your zero's neighbors. What are these neighbors? Zero is connected to whom, see what are the zeros called? Neighbors, neighbors such as zero, these three nodes are neighbors of zero. What are these three nodes of zero? Are direct neighbours. Four is not a neighbor of zero because zero is not connected to four. So these three are neighbors of node zero. very good. Neighbors how will you know?"
+    },
+    {
+      "start_time": 880.72,
+      "end_time": 906.71,
+      "text": "एडजेसेंसी लिस्ट से। एडजेसेंसी लिस्ट यही तो बताता है कि ज़ीरो किससे किससे कनेक्टेड है? तो आप क्या किए? ज़ीरो के नेबर्स पे जाना शुरू किए। नेबर्स पे। यह जस्ट वैसा ही है। Instagram पे प्रत्युष पे गए। प्रत्युष की एक फॉलोइंग लिस्ट आती है। प्रत्युष 32 लोगों को फॉलो करते हैं। वो क्या हैं? प्रत्युष के डायरेक्ट नेबर्स हैं। प्रत्युष जिनको फॉलो करते हैं वो प्रत्युष के क्या हैं? डायरेक्ट नेबर्स। तो आपको बस वही करना है। क्या करना है? डायरेक्ट नेबर्स को पता करना है। अच्छा।",
+      "source": "caption",
+      "english_text": "From the adjacency list. Adjacency list only tells that zero is connected to whom? So what did you do? Started visiting Zero's Neighbors. On Neighbors. It's just like that. Followed Pratyush on Instagram. A following list of Pratyush appears. Pratyush follows 32 people. What are they? They are direct neighbors of Pratyush. What are the people Pratyush follows? Direct Neighbors. So that's all you have to do. What is the plan? Direct neighbors have to know. Good."
+    },
+    {
+      "start_time": 906.72,
+      "end_time": 941.03,
+      "text": "अब देखिए जीरो के कितने डायरेक्ट नेबर्स हैं? जीरो के नेबर्स हैं दो। तीन और एक। दो तीन और एक। तीन नेबर्स हैं। आपको ना लेफ्ट टू राइट मतलब एक-एक करके नेबर्स को डील करना शुरू कीजिए। और जिस नेबर को आप सेलेक्ट करेंगे ना उसके एकदम अंदर तक घुस जाइए। फॉर एग्जांपल अगर आपको प्रत्युष पे पता चलता है कि ये तीन लोगों को फॉलो करता है। पहली हो गई दीपिका। दूसरा हो गए सचिन और चौथा हो गए अमिताभ बच्चन। तो ये प्रत्युष के तीन नेबर्स हैं। आपको कोई भी एक नेबर पकड़ना है। आप पहला वाला ही पकड़िए। दूसरा किसी को पकड़िए। दीपिका को पकड़ के दीपिका के एकदम अंदर तक घुस जाइए।",
+      "source": "caption",
+      "english_text": "Now see how many direct neighbors of zero are there? Zero's neighbors are two. three plus one. Two three and one. There are three neighbours. You should start dealing with neighbors one by one, from left to right. And go deep inside the neighbor you select. For example, if you find out on Pratyush that he follows three people. Deepika became the first. Sachin became second and Amitabh Bachchan became fourth. So these are the three neighbors of Pratyush. You have to catch any one neighbor. You catch the first one. Catch someone else. Hold Deepika and penetrate deep inside her."
+    },
+    {
+      "start_time": 941.04,
+      "end_time": 971.11,
+      "text": "फिर दीपिका के प्रोफाइल पे जाइए। दीपिका का नेबर सर्च कीजिए। उसको पता कीजिए। उसके अंदर तक मतलब एकदम डीप में चले जाना है किसी को पकड़ के। हम लोग क्या करते हैं? टू को पकड़ लेते हैं सबसे पहले। किसको? टू को पकड़ लेते। देखो सबसे पहले आया कोई इसमें वो वाली बात नहीं कि टू को क्यों पकड़े? लेफ्ट और राइट पकड़ लीजिए जो भी है। टू को पकड़े। अगला नोड। अगला नोड क्या हो गया हमारा? टू हो गया। वेरी गुड। टू हो गया। तो हम लोग क्या करेंगे? टू को अपने इसमें लिख लेंगे। टू को लिख लिए। लिख लिया अपने रिजल्ट में। वेरी गुड। अब टू के नेबर्स पता कीजिए। टू के नेबर्स कैसे पता करेंगे?",
+      "source": "caption",
+      "english_text": "Then go to Deepika's profile. Search Deepika's neighbor. Find out. To reach inside it means to go deep into it and hold someone. What do we do? Let's catch Two first. Whom? Would have caught two. Look, someone came first in this, there is no question of why to hold on to two? Grab left and right, whatever it is. Holding two. Next node. What has become of our next node? Two is done. very good. Two is done. So what will we do? We will write 2 in it. Wrote to. Wrote it in your result. very good. Now find out the neighbors of two. How will the two's neighbors know?"
+    },
+    {
+      "start_time": 971.12,
+      "end_time": 997.509,
+      "text": "एडजेसेंसी लिस्ट से adj ऑफ़ टू में जो भी वेक्टर होगा ना वो टू के नेबर होंगे। क्या है? क्या है टू का नेबर? ज़ीरो और फोर। ज़ीरो और फोर। अब देखिए यहां एक बहुत इंपॉर्टेंट बात है। यहां एक बहुत इंपॉर्टेंट बात है। अब ऊपर हम लोग क्या किए थे? हम लोग ज़ीरो से स्टार्ट किए थे। ज़ीरो के तीन नेबर थे 2 3 1 2 पे आ गए। ओके? दो के दो नेबर हैं। ज़ीरो और फोर। तो अब आप क्या करेंगे? क्या अब आप ज़ीरो है ना इसका पहला नेबर? वापस ज़ीरो पे चले जाएंगे क्या? वापस ज़ीरो पे चले जाएंगे क्या?",
+      "source": "caption",
+      "english_text": "Whatever vector is in adj of two from the adjacency list will be the neighbor of two. What is? What is your neighbor? Zero and four. Zero and four. Now see, there is a very important thing here. There is a very important thing here. Now what did we do up there? We started from zero. Zero had three neighbors and came to 2 3 1 2. Ok? Two have two neighbours. Zero and four. so what will you do now? Are you now zero's first neighbor? Will we go back to zero? Will we go back to zero?"
+    },
+    {
+      "start_time": 997.519,
+      "end_time": 1031.27,
+      "text": "नहीं, नहीं जाएंगे। क्यों? यह हम बताते हैं। बहुत प्रैक्टिकल रीज़न है। ये जस्ट वैसा है। आप शुरू किए थे कहां से? आप शुरू किए थे प्रत्युष से। ठीक है? आप प्रत्युष से शुरू किए थे। प्रत्युष के बहुत सारे नेबर थे। पहली नेबर प्रत्युष की दीपिका थी। ओके? आप क्या किए? दीपिका के प्रोफाइल पे आ गए। दीपिका के प्रोफाइल पे आ गए। वेरी गुड। अब मान लीजिए मान लीजिए कि किसी ना किसी कारण से दीपिका कवादुकोण भी पढ़ो विद प्रत्युष को फॉलो करती है। क्या दीपिका भी हमको फॉलो करती है? क्योंकि अनडायरेक्टेड ग्राफ है ना। मान लीजिए कि Instagram अनडायरेक्टेड है। अगर प्रत्युष दीपिका को फॉलो करता है। दीपिका भी",
+      "source": "caption",
+      "english_text": "No, will not go. Why? We tell you this. There is a very practical reason. It's just like that. Where did you start? You started with Pratyush. Ok? You started with Pratyush. Pratyush had many neighbors. The first neighbor was Pratyush's Deepika. Ok? What did you do? Came to Deepika's profile. Came to Deepika's profile. very good. Now let's say that for some reason or the other Deepika Kavadukone also follows Padho with Pratyush. Does Deepika also follow us? Because it is an undirected graph. Let's say Instagram is undirected. If Pratyush follows Deepika. Deepika too"
+    },
+    {
+      "start_time": 1031.28,
+      "end_time": 1065.83,
+      "text": "प्रत्युष को फॉलो करती है। तो दीपिका के फॉलोइंग में आपको सबसे पहले क्या दिख जाएगा? प्रत्युष दिख जाएगा। अब आप क्या करेंगे? अब आप एक लॉजिकली सोचिए ह्यूमन की तरह सोचिए। आप प्रत्युष के Instagram पे गए। वहां से दीपिका देखिए दीपिका पे आ गए। अब दीपिका के आपको वापस प्रत्युष मिल रहा है। क्या आप वापस प्रत्युष के Instagram पे चले जाते हैं? क्या नहीं जाते हैं क्योंकि ऐसा करेंगे तब तो आप इसी में फंस जाएंगे। वापस इस पे जाएंगे। वापस दीपिका आएगी। वापस यहां आएंगे। यही करते रह जाएंगे। आपको और प्रोफाइल देखना है ना भाई। आपको तो नया-नया स्टॉकिंग करना है कि कौन किसको कर रहा है। अगर प्रत्युष से आप दीपिका को आए हैं मतलब प्रत्युष का प्रोफाइल आप देख चुके हैं ना। आपको मन में",
+      "source": "caption",
+      "english_text": "Follows Pratyush. So what will you see first in Deepika's following? Pratyush will be visible. What will you do now? Now think logically, think like a human. You went to Pratyush's Instagram. Look Deepika, from there we came to Deepika. Now Deepika is getting Pratyush back. Do you go back to Pratyush's Instagram? Why don't you go because if you do then you will get trapped in this. Will go back to this. Deepika will come back. Will come back here. Will keep doing this. You want to see more profiles, don't you brother? You have to keep stocking up on who is doing what to whom. If you have come to Deepika from Pratyush, it means you have seen Pratyush's profile. in your mind"
+    },
+    {
+      "start_time": 1065.84,
+      "end_time": 1100.39,
+      "text": "याद है ना कि हम प्रत्युष का प्रोफाइल देख चुके हैं। तो अब दीपिका के नेबर में अगर प्रत्युष आता भी है आप उस पे ध्यान नहीं देते हैं। आप उस पे ध्यान नहीं वापस आप प्रत्युष में नहीं चले जाते हैं कि प्रत्युष को देख लें। देख लिए हैं। आपको याद रहता है ना कि किसका-किसका किसका-किसका प्रोफाइल हम देखते हुए आ रहे हैं। एग्जैक्टली यही चीज़ यहां पे करना है। देखिए टू के नेबर में टू के नेबर में ज़ीरो आया है। लेकिन आपको याद रखना पड़ेगा। क्या हम जीरो को देख चुके हैं। देख चुके का मतलब क्या हम यहां पे लिख चुके हैं कि नहीं? ये आपको याद रखना पड़ेगा। आप वापस जीरो पे मत जाइए। क्योंकि वापस ज़ीरो पे क्यों जाना है? वापस लॉजिकल है ना अभी हम Instagram वाले एग्जांपल से इसको सोचिए।",
+      "source": "caption",
+      "english_text": "Remember that we have seen Pratyush's profile. So now even if Pratyush comes to Deepika's neighbour, you do not pay attention to him. You don't pay attention to him, you don't go back to Pratyush to see Pratyush. Have seen. Do you remember whose profile we are seeing? Exactly the same thing has to be done here. See, there is a zero in the neighbor of two. But you have to remember. Have we seen zero? Have we written the meaning of seen here or not? You have to remember this. Don't go back to zero. Because why go back to zero? It's logical, isn't it? Now let's think about it with the example of Instagram."
+    },
+    {
+      "start_time": 1100.4,
+      "end_time": 1130.15,
+      "text": "वापस वहां क्यों जाना है जहां ऑलरेडी वो प्रोफाइल आप देख चुके हैं एक बार। इसीलिए इसको याद रखने के लिए आपको एक तरीका रखना पड़ेगा। इस तरीके को हम लोग क्या बोलते हैं? विजिटेड एरे। क्या? विजिटेड एरे। विजिटेड एरे का मतलब होता है जिस नोड को आप एक बार विजिट कर चुके हैं या जिस नोड को एक बार आप देख चुके हैं। विजिटेड एरे कैसा लगता है? विजिटेड एरे का साइज आपके नंबर ऑफ वर्टेक्स के बराबर या तो आपके एडी जे के बराबर ही रहता है। इसमें भी पांच",
+      "source": "caption",
+      "english_text": "Why go back to where you have already seen that profile once? That's why you have to have a method to remember it. What do we call this method? Visited Array. What? Visited Array. Visited array means the nodes which you have visited once or the nodes which you have seen once. What does a visited array look like? The size of the visited array is either equal to your number of vertices or equal to your AD j. five in this also"
+    },
+    {
+      "start_time": 1130.16,
+      "end_time": 1164.95,
+      "text": "बॉक्सेस होंगे। 0 1 2 3 4 शुरुआत में सारे नंबर जीरो होंगे। जीरो का मतलब क्या आप इसको नहीं देखे हैं। जीरो का मतलब कि आप इसको नहीं विजिट किए हैं वेरी गुड। अब एक एक्स्ट्रा स्टेप जैसे ही आप किसी नोट पे आते हैं शुरुआत करने के लिए हम लोग ज़ीरो पे आए थे ना तो आप जीरो को रिजल्ट में लिख दिए थे। एक और काम कीजिए। विजिटेड ऑफ ज़ीरो को ना वन कर दीजिए। विजिटेड ऑफ़ ज़ीरो को क्या कर दीजिए? वन कर दीजिए। यह देखिए हम वन कर दिए। अब अब जब आप टू पे गए अब टू पे देखिए टू पे जाने से पहले एक बार चेक कर लीजिए कि क्या आप",
+      "source": "caption",
+      "english_text": "There will be boxes. 0 1 2 3 4 Initially all the numbers will be zero. Zero means haven't you seen it? Zero means you have not visited it. Very good. Now one extra step, as soon as you come to any note, to start with we came to zero, so you wrote zero in the result. Do one more thing. Change the number of visitors from zero to one. What to do with Visited of Zero? Make it one. Look at this, we have created a forest. Now that you have gone to 2Pe, now look at 2Pe, before going to 2Pe, check once whether you"
+    },
+    {
+      "start_time": 1164.96,
+      "end_time": 1198.789,
+      "text": "टू का प्रोफाइल देखे हैं? टू का प्रोफाइल अभी तक नहीं देखे थे तो आप टू पे आ गए। अब देखिए टू पे आपको पहला नेबर क्या मिला? ज़ीरो लेकिन क्या ज़ीरो आलरेडी विजिटेड है? येस जीरो ऑलरेडी विजिटेड है। तो क्या आप जीरो पे ध्यान देंगे? नहीं ध्यान देंगे जीरो पे। बिल्कुल ध्यान नहीं देंगे। क्योंकि हो चुका है जीरो मतलब प्रत्युष। प्रत्युष का प्रोफाइल देख चुके हैं। ये दीपिका के प्रोफाइल में है। हमको और नए-नए लोग एक्सप्लोर करना है ना भाई। हम वही थोड़ी देखते रहेंगे बार-बार। तो आप जीरो को क्या करते हैं? इग्नोर। जीरो को क्या करते हैं? इग्नोर। क्यों? क्योंकि जीरो ऑलरेडी विजिटेड है जीरो। हम लोग ऊपर में जीरो देख के आए थे ना तो विजिटेड ऑफ़ जीरो हो चुका",
+      "source": "caption",
+      "english_text": "Have you seen 2's profile? If you haven't seen Two's profile yet, you have come to Two. Now see what was the first neighbor you got on 2? Zero But is Zero Already Visited? Yes zero is already visited. So will you pay attention to zero? Will not pay attention to zero. Will not pay any attention at all. Because it has become zero meaning Pratyush. Have seen Pratyush's profile. This is in Deepika's profile. We have to explore more new people, brother. We will keep watching the same thing again and again. So what do you do with zero? Ignore. What do you do with zero? Ignore. Why? Because zero is already visited zero. We had come up after seeing zero and have already been visited by zero."
+    },
+    {
+      "start_time": 1198.799,
+      "end_time": 1232.87,
+      "text": "होगा वन। वेरी गुड। अगला नेबर देखिए टू का। अब टू में जीरो था जीरो इग्नोर हो गया। अगला देखिए। लूप कर रहे हैं हम लोग। बस ये लूप चला रहे हैं। फोर। क्या फोर विजिटेड है? नहीं। फोर विजिटेड नहीं है तो आप क्या करेंगे? फोर में घुस जाएंगे। किस में घुस जाएंगे? फोर में घुस जाएंगे। घुस जाइए। अगला नोट क्या बन गया आपका? फोर। क्या करना है आपको? सबसे पहले तो सबसे पहले तो यह हम रिजल्ट ऊपर लिख देते हैं कहीं पे। सबसे पहले तो यहां पे जीरो टू लिख चुके थे। यह हमारा रिजल्ट है। सबसे पहले रिजल्ट में फोर लिख दीजिए। फोर आपको मिल गया। और और विजिटेड ऑफ़ फोर को क्या बना दीजिए? विजिटेड ऑफ़ फोर को क्या बना",
+      "source": "caption",
+      "english_text": "There will be forest. very good. Look at the next neighbour. Now there was zero in two, zero was ignored. See next. We are doing a loop. Just running this loop. Four. Is Four Visited? No. What will you do if the four is not visited? Will enter the four. What will you enter into? Will enter the four. Get in. What became your next note? Four. What do you have to do? First of all, we write this result somewhere above. First of all, zero two was written here. This is our result. First of all write four in the result. Four you got. And what to make of Visited of Four? What became of Visited of Four?"
+    },
+    {
+      "start_time": 1232.88,
+      "end_time": 1258.95,
+      "text": "दीजिए? वन। विजिटेड ऑफ़ फोर को वन। और विजिटेड ऑफ़ टू को भी यहां पे वन बनाना था। वो हम भूल गए। वो हम भूल गए। यहां पे वन। अब देखिए हम लोग विजिटेड ऑफ़ फोर को वन। ये क्यों बना रहे हैं? क्योंकि आगे अगर किसी के नेबर में फोर आता है ना तो हमको याद रहे कि भैया फोर देख चुके हैं। फोर पे बार-बार मत जाओ। फोर के प्रोफाइल पे बार-बार नहीं जाना है। वेरी गुड। अब क्या कीजिए? वही काम करना है। फोर का नेबर देखिए कैसे मिलेगा? एडजेसेंसी से। फोर का नेबर क्या है? फोर का नेबर क्या है? टू।",
+      "source": "caption",
+      "english_text": "give? Forest. Visited by four to one. And the visited of two also had to be made one here. We forgot that. We forgot that. Forest here. Now see we are the visitors of four to one. Why are they making this? Because in the future, if someone's neighbor sees a four, then we should remember that brother has seen a four. Don't go for four again and again. No need to visit Four's profile again and again. very good. What to do now? The same thing has to be done. See Four's Neighbor, how to get it? From Adjacency. What is Four's Neighbor? What is Four's Neighbor? To."
+    },
+    {
+      "start_time": 1258.96,
+      "end_time": 1286.39,
+      "text": "फोर का नेबर सिर्फ टू है। क्या आपको टू को जाना चाहिए? नहीं जाना चाहिए। क्यों भाई? विजिटर ऑफ़ टू वन है। इसीलिए टू का प्रोफाइल ऑलरेडी देख चुके हैं। तो नहीं जाना चाहिए। टू को क्या कर दिए? इग्नोर। अब टू के बाद क्या इस नोड फोर का कोई और नेबर बाकी है? नहीं। कोई नेबर बाकी नहीं है। तो आप क्या करेंगे? कुछ नहीं। खत्म कर देंगे इसको। इसको क्या करेंगे? ऊपर आ जाएंगे। ये जस्ट वैसा ही है। ये जस्ट वैसा ही है कि आप आप ऐसा किए। ये जस्ट वैसा है।",
+      "source": "caption",
+      "english_text": "The only neighbor of four is two. Should you go to To? Shouldn't go. why brother? The visitor is of two one. That's why you've already seen To's profile. So you should not go. What did you do to 2? Ignore. Now after two, are there any more neighbors of this node four? No. There are no neighbors left. So what will you do? Nothing. Will end this. What will we do with this? Will come up. It's just like that. It's just that you did it. It's just like that."
+    },
+    {
+      "start_time": 1286.4,
+      "end_time": 1314.31,
+      "text": "आप प्रत्युष के प्रोफाइल से शुरू किए। प्रत्युष के बाद आप दीपिका पे गए। ठीक है? दीपिका के बाद आप रणवीर सिंह पे गए। आप रणवीर सिंह पे गए। लेकिन प्रॉब्लम ये हो गई कि रणवीर सिंह ना सिर्फ दीपिका को फॉलो करता है। रणवीर सिंह मान लीजिए सिर्फ दीपिका को फॉलो करता है। तो प्रत्युष से दीपिका पे आए। दीपिका पे रणवीर पे आए। अब रणवीर सिर्फ इसको फॉलो करता है। लेकिन दीपिका आप देख चुके है ना? आप दीपिका आलरेडी देख चुके हैं। तो आप क्या करेंगे? आप इसको क्लोज कर देंगे या तो Instagram में बैक दबा के वापस दीपिका पे आ जाएंगे।",
+      "source": "caption",
+      "english_text": "You started with Pratyush's profile. After Pratyush you went to Deepika. Ok? After Deepika you went to Ranveer Singh. You went to Ranveer Singh. But the problem was that Ranveer Singh not only follows Deepika. Suppose Ranveer Singh only follows Deepika. So from Pratyush to Deepika. Deepika came to Ranveer. Now Ranveer only follows this. But you have seen Deepika, right? You have already seen Deepika. So what will you do? You can either close it or press back on Instagram to come back to Deepika."
+    },
+    {
+      "start_time": 1314.32,
+      "end_time": 1347.75,
+      "text": "क्योंकि दीपिका के और भी फॉलोवर होंगे। उनको देख लेते हैं। दीपिका का पहला फॉलोवर मान लीजिए रणवीर सिंह था। उसको देख लिए। अब वो सिर्फ दीपिका को करता था तो वो हमको जाना नहीं है। आप बैक दबा दिए। आप रणवीर सिंह से बैक बटन दबा के दीपिका पे आ गए। दीपिका और किसी को करती होगी। हो सकता है दीपिका सचिन तेंदुलकर को करती होगी तो हम सचिन तेंदुलकर पे चले जाएंगे। एग्जैक्टली यही काम कर रहे हैं यहां पे। चलिए। तो आप क्या किए? नोड इज इक्वल टू फोर में सब खत्म। कुछ और करने की जरुरत नहीं है। नोड टू पे आ गए। नोट टू पे आ गए। क्या नोट टू का और कोई नेबर बचा है? याद कीजिए। नोट टू का क्या-क्या हो चुका था? ज़ीरो था। ज़ीरो को तो इग्नोर कर दिए थे। फोर था फोर को",
+      "source": "caption",
+      "english_text": "Because Deepika will have more followers. Let's see them. Let's say Deepika's first follower was Ranveer Singh. Saw him. Now he used to do it only for Deepika, so we don't want to know about that. You pressed back. You pressed the back button from Ranveer Singh and came to Deepika. Deepika must be doing it to someone else. Maybe Deepika would have praised Sachin Tendulkar, then we will go to Sachin Tendulkar. Exactly the same work is being done here. Let go. So what did you do? It's all over in node is equal to four. There is no need to do anything else. Node 2P has arrived. Note 2 has arrived. Are there any more neighbors left on Note 2? Remember. What had happened to Note 2? Was zero. Zero was ignored. four tha four ko"
+    },
+    {
+      "start_time": 1347.76,
+      "end_time": 1380.789,
+      "text": "करके देख लिए। क्या नोट टू के पास और कुछ नेबर बचा है? कोई नेबर नहीं बचा है। तो क्या करेंगे? बैक बटन। बैक बटन दबा के पीछे आ जाएंगे। खत्म हो गया नोट टू। दीपिका का दो ही फॉलोवर था। मान लीजिए रणवीर सिंह, सचिन तेंदुलकर दोनों खत्म हो गया। अब क्या करें? कुछ नहीं बैक आ जाएंगे। अब स्टॉप और करना है ना बैक आ गए। कहां बैक आ गए? वापस नोट जीरो पे हम लोग आ गए। याद देखिए हम लोग कैसे किए थे। टू फोर वापस वापस करते वापस यहां आ गए। नोट ज़ीरो का अगला नेबर। नोट ज़ीरो के और नेबर बचे हैं। प्रत्युष का 32 सॉल्विंग था ना। आप सिर्फ दीपिका के अंदर घुसे थे। और भी तो लोग हैं। और के अंदर घुसिए। पूरा स्टॉक कीजिए ना। थ्री [गला साफ़ करने की आवाज़]",
+      "source": "caption",
+      "english_text": "Tried it. Does the Note 2 have any more neighbors left? There is no neighbor left. So what to do? Back button. You will come back by pressing the back button. Note 2 is over. Deepika had only two followers. Suppose Ranveer Singh and Sachin Tendulkar both are finished. What do we do now? Nothing will come back. Now we have to stop and do more, we are back. Where did you come back? We are back to note zero. Remember how we did it. Two-Four returned back here. Note Zero's Next Neighbor. More neighbors of Note Zero are left. Pratyush's solving was 32, right? You just entered Deepika. There are other people too. And get inside. Do full stock. Three [throat clearing]"
+    },
+    {
+      "start_time": 1380.799,
+      "end_time": 1407.19,
+      "text": "पे आ जाइए। क्या आपको थ्री को लेना चाहिए? यस। थ्री को लेना चाहिए। क्यों? विजिटेड ऑफ थ्री क्या है? ज़ीरो। तो आप ले लीजिए थ्री को। थ्री को लेके कहां आ जाइए? नोड इज़ इक्वल टू थ्री। सबसे पहला काम क्या कीजिए? अपने रिजल्ट में थ्री लिख लीजिए। और विजिटेड ऑफ़ थ्री को क्या करना है? वन बना दीजिए। याद रखने के लिए। वन बना दीजिए। याद रखने के लिए। वेरी गुड। वेरी गुड। थ्री का नेबर देखिए। थ्री का नेबर क्या है? जीरो। थ्री का नेबर क्या है?",
+      "source": "caption",
+      "english_text": "Come on. Should you take Three? Yes. Should take three. Why? What is Visited of Three? Zero. So you take three. Where should you come with three? Node is equal to three. What's the first thing to do? Write three in your result. And what is the Visited of Three to do? Make a forest. To remember. Make a forest. To remember. very good. very good. Watch Three's Neighbor. What is Three's Neighbor? Zero. What is Three's Neighbor?"
+    },
+    {
+      "start_time": 1407.2,
+      "end_time": 1435.43,
+      "text": "सिर्फ ज़ीरो। क्या आपको ज़ीरो के अंदर और घुसने की जरूरत है? नहीं। क्यों? विजिटेड ऑफ़ ज़ीरो वन है भाई। ज़ीरो के अंदर क्यों घुसोगे? देख चुके हैं। कुछ मत करो। नेबर खत्म। इग्नोर। बैक बटन दबाइए। खत्म हो गया। बैक बटन दबा कहां जाइए? वापस नोट ज़ीरो पे। नोट ज़ीरो के ये नेबर भी हो गया। कौन है अगला नेबर? वन। क्या आपको वन के अंदर घुसना चाहिए? यस। आपको घुसना चाहिए। क्योंकि विजिटेड एरे क्या है? ज़ीरो। तो वन अभी तक विजिट नहीं हुआ है। आप कहां आ गए?",
+      "source": "caption",
+      "english_text": "Just zero. Do you need to get further into Zero? No. Why? Visited by zero one brother. Why would you enter zero? Have seen. Don't do anything. Neighbor is over. Ignore. Press the back button. It's over. Where to press the back button? Back to note zero. He has also become a neighbor of Note Zero. Who is the next neighbour? Forest. Should you enter the forest? Yes. You must enter. Because what is a visited array? Zero. So the forest has not been visited yet. Where have you come?"
+    },
+    {
+      "start_time": 1435.44,
+      "end_time": 1465.669,
+      "text": "नो इज इक्वल टू 0 सॉरी नो इज़ इक्वल टू वन। नोड इज़ इक्वल टू वन। सबसे पहला काम क्या है? रिजल्ट में वन को लिख दो भाई। रिजल्ट में वन को लिख दो। और विजिटेड ऑफ़ वन को क्या कर दो? वन कर दो। हो चुका। वन को विजिट कर दिए। वेरी गुड। वापस आइए। नड वन के नेबर देखिए। नड वन के नेबर देखिए। सिर्फ ज़ीरो। क्या ज़ीरो को आपको अपना और घुसना चाहिए? ज़ीरो में? नहीं घुसना चाहिए। क्योंकि ज़ीरो हो चुका है विजिट। क्या करेंगे वन पे? कुछ नहीं। बैक बटन बैक बटन।",
+      "source": "caption",
+      "english_text": "No is equal to 0 Sorry no is equal to one. Node is equal to one. What is the first thing to do? Write one in the result brother. Write one in the result. And what to do with Visited One? Make it one. It's done. Visited the forest. very good. Come back. Watch Nad One's Neighbor. Watch Nad One's Neighbor. Just zero. Should Zero let you in? In zero? Should not enter. Because there have been zero visits. What will you do on forest land? Nothing. Back button Back button."
+    },
+    {
+      "start_time": 1465.679,
+      "end_time": 1499.75,
+      "text": "बैक बटन दबा के कहां आ गए वापस? नोट ज़ीरो पे। क्या नोट ज़ीरो के पास और कोई नेबर बचा है चेक करने के लिए? नहीं बचा है। मतलब पूरा Instagram खत्म हो गया। आप पूरा रात भर बैठ के इधर-उधर इधर-उधर करके स्टॉक कर लिए। अब कोई ऐसा सेलिब्रिटी बचा ही नहीं है जिसका प्रोफाइल आप विजिट नहीं किए। सारा विजिट हो गया। देखिए सारा विजिट हो गया। क्या करना है? Instagram बंद करना है। बंद कर दीजिए Instagram। क्या आ गया आपके रिजल्ट में? 02 43 1 0 2 4 31 0 2 4 31 इस काम को डीएफएस कहते हैं। ये कैसे काम करेगा? सबसे पहले जीरो पे गए 0 लिखे।",
+      "source": "caption",
+      "english_text": "Where did you come back after pressing the back button? Note at zero. Does Note Zero have any more neighbors left to check? There is no left. Meaning the entire Instagram is over. You sat there the whole night and stocked up here and there. Now there is no celebrity left whose profile you have not visited. The entire visit is over. Look, the entire visit is done. What is the plan? Have to close Instagram. Close Instagram. What came in your result? 02 43 1 0 2 4 31 0 2 4 31 This work is called DFS. How will this work? First go to zero and write 0."
+    },
+    {
+      "start_time": 1499.76,
+      "end_time": 1525.269,
+      "text": "0 के बाद टू पे आए टू लिखे। टू के बाद फोर पे आए फोर लिखे। फोर के बाद और कहीं जा नहीं सकते हैं। वापस टू पे आए। टू के बाद और कहीं जा नहीं सकते हैं। वापस ज़ीरो पे आए। ज़ीरो के बाद थ्री पे गए। थ्री लिखे। थ्री के बाद और कहीं जा नहीं सकते हैं। वापस ज़ीरो पे आए। ज़ीरो के बाद वन पे गए। वन लिखे। वन के बाद और कहीं जा नहीं सकते हैं। वापस ज़ीरो पे आए। अब ज़ीरो से और कहीं नहीं जा सकते हैं। एग्जिट कर गए। खत्म। ये होता है डीएफएस। ये क्या होता है? डीएफएस।",
+      "source": "caption",
+      "english_text": "After 0, write two on two. After two, write four on four. Can't go anywhere else after four. Came back to 2. Can't go anywhere else after 2. Came back to zero. After zero went to three. Write three. Can't go anywhere else after three. Came back to zero. After zero went to one. Write forest. Can't go anywhere else after the forest. Came back to zero. Now we can't go anywhere else from zero. Exited. End. This is DFS. What is this? DFS."
+    },
+    {
+      "start_time": 1525.279,
+      "end_time": 1556.47,
+      "text": "एग्जैक्टली इसी चीज को डीएफएस बोला जाता है। अब ये तो हो गई अह बात। मतलब ये तो हम बात बना रहे थे कि ऐसे-ऐसे करना है। इसका कोड कैसे करेंगे? इसका कोड भी देख लीजिए। कोड भी सिंपल ही है। जो भी हम बोले हैं उसका कोड है वो हो जाएगा। ठीक है? तो सबसे पहले तो एक फंक्शन हम लोग बना लेते हैं डीएफएस। डीएफएस का ये स्टैंडर्ड फंक्शन है। हर एक क्वेश्चन में हर एक ग्राफ के क्वेश्चन में जहां-जहां भी डीएफएस यूज़ होगा सेम यही फंक्शन और सेम यही आपको फॉर्मेट लिखना पड़ेगा। तो देखिए सबसे पहले हम क्या लिखेंगे? वॉइड डीएफएस ये एक तरीके का रिकर्शन है। ये एक तरीके का क्या है?",
+      "source": "caption",
+      "english_text": "Exactly this thing is called DFS. Now this thing has happened. Meaning, we were talking about doing something like this. How to code this? See its code also. The code is also simple. There is a code for whatever we have said, it will happen. Ok? So first of all we create a function DFS. This is a standard function of DFS. In every graph question, wherever DFS is used, you will have to write the same function and the same format. So see what will we write first? Void DFS is a type of recursion. What is this one method?"
+    },
+    {
+      "start_time": 1556.48,
+      "end_time": 1584.95,
+      "text": "रिकर्शन है। आपको समझ में आ रहा होगा क्योंकि हम लोग बार-बार क्या कर रहे हैं? कॉल कर रहे हैं। इधर-उधर इधर-उधर कॉल कर रहे हैं। ठीक है? तो सबसे पहले तो इसमें पास कर दीजिए अपना एडजेसेंसी मैट्रिक्स। क्या? एडजेसेंसी मैट्रिक्स। क्यों? क्योंकि ये हमारे नेबर निकालने के काम आता है। वेरी गुड। अब हम लोग अभी हम लोग किस नोड पे हैं? अभी हम लोग किस नोड पे हैं? जो यहां हम लोग देखते थे ना कि हम लोग नोट टू पे आ गए, फोर पे आ गए, थ्री पे आ गए। अब जीरो के बाद टू पे जाना है। अभी आप किस नोड पे हैं? अभी आप किस नोड पे हैं? तो अभी आप किस नोड पे हैं? वो देखना पड़ेगा।",
+      "source": "caption",
+      "english_text": "is recursion. You must be understanding because what are we doing again and again? Are calling. Calling here and there. Ok? So first of all pass your adjacency matrix in it. What? Adjacency Matrix. Why? Because it is useful in driving out our neighbors. very good. Now, which node are we on now? Which node are we on now? What we used to see here was that we came to pay two notes, came to pay four notes, came to pay three notes. Now after zero we have to go to two. Which node are you on now? Which node are you on now? So which node are you on now? That will have to be seen."
+    },
+    {
+      "start_time": 1584.96,
+      "end_time": 1618.789,
+      "text": "एक आपका जो वेक्टर है, जो भी आपका रिजल्ट स्टोर करने का वेक्टर है, जिसमें आप कुछ करेंगे और एक चीज़ और क्या पास करनी है? वेक्टर ऑफ ब वेक्टर ऑफ बुलियन विजिटेड वेक्टर ऑफ बुलियन विजिटेड जिसको शुरू में तो हम लोग सबको फॉल्स रखेंगे लेकिन जैसे-जैसे नोड को देखते जा रहे हैं वैसे-वैसे उसको ट्रू करते जाएंगे। ठीक है? यहां तक आ गए। सबसे पहला काम किसी भी नोड पे आने के बाद में सबसे पहला काम क्या किए थे? उसको रिजल्ट में लिखे थे। तो रिजल्ट में लिख दो किसको? नोड को। नोड में एक वैल्यू है। नोड मतलब आप जीरो पे हैं कि टू पे हैं कि किस पे हैं? सबसे पहला काम क्या",
+      "source": "caption",
+      "english_text": "One is your vector, whatever is your result vector to store, in which you will do something and one more thing is what to pass? Vector of B Vector of Boolean Visited Vector of Boolean Visited Which we will keep all false in the beginning but as we keep visiting the nodes, we will keep making them true. Ok? Came till here. What was the first thing you did after coming to any node? It was written in the result. So whom should you write in the result? To the node. The node has a value. Node means are you at zero or two or at which point? what's the first thing you do"
+    },
+    {
+      "start_time": 1618.799,
+      "end_time": 1651.75,
+      "text": "हुआ था? नोड पे आने के बाद सबसे पहला काम हुआ था कि रिजल्ट में पुश बैकक हो गया था नोड। रिजल्ट में पुश बैक हो गया था क्या? नोड। वेरी गुड। अगला काम क्या था? विजिटेड ऑफ नोड इज़ इक्वल टू ट्रू। क्या? विजिटेड ऑफ नोड इज़ इक्वल टू ट्रू। मतलब इस नोड को देख चुके हैं। अब ये नोड अगर किसी के भी नेबर में आता है। दोबारा नहीं देखना है। दोबारा नहीं देखना है। दोबारा नहीं देखना है। उसके बाद क्या किए थे? इस नोड के सारे नेबर को देखिए। इस नोड के सारे नेबर को",
+      "source": "caption",
+      "english_text": "What happened? The first thing that happened after reaching the node was that the node got pushed back in the result. Was there a push back in the results? Node. very good. What was the next task? Visited by node is equal to true. What? Visited by node is equal to true. Meaning have seen this node. Now if this node comes in anyone's neighbor. Don't want to see it again. Don't want to see it again. Don't want to see it again. What did you do after that? Look at all the neighbors of this node. to all neighbors of this node"
+    },
+    {
+      "start_time": 1651.76,
+      "end_time": 1683.75,
+      "text": "देखिए। कैसे नेबर को देखेंगे? तो देखिए इंट I = 0 I &lt; ADJ नोड डॉट साइज AD जे नोड डॉट साइज़ आई प्लस प्लस ये क्या कर रहा है? देखिए ADJ क्या है? वेक्टर ऑफ़ वेक्टर ऑफ़ इंट। डीजे ऑफ़ नोड मतलब ADJ ऑफ़ मान लीजिए 0। ADJ ऑफ़ जीरो कहां आ जाएगा? ये आ जाएगा। तो ये एक वेक्टर है ना? 2 3 1 इस पे लूप कर रहे हैं। इस पे लूप कर रहे हैं। ठीक है? अब आप नेबर कैसे निकालेंगे? इंट",
+      "source": "caption",
+      "english_text": "Look. How will you see your neighbour? So see int I = 0 I < ADJ node dot size AD J node dot size I plus plus what is it doing? See what is ADJ? Vector of vector of int. Let DJ of node mean ADJ of 0. Where will ADJ of Zero come? This will come. So this is a vector, right? 2 3 1 Looping over this. Looping on this. Ok? Now how will you remove Neighbor? int"
+    },
+    {
+      "start_time": 1683.76,
+      "end_time": 1717.75,
+      "text": "नेबर इज़ इक्वल टू ए डी जे अरे क्या हो गया? हां। ए डी जे नोड तो वो था वेक्टर। उस पे आप लूप कर रहे हैं i। ये देखिए ये आपको एक-एक करके एक-एक करके उसका नेबर देगा। ये पहले आपको दो देगा फिर तीन देगा फिर एक देगा। क्या हो रहा है? एडी जे नोड क्या है? दो तीन एक का एक वेक्टर। उस पे आप लूप कर रहे हैं इंडेक्स वाइज तो आपको क्या मिलेगा? पहले दो मिलेगा। फिर तीन मिलेगा फिर एक मिलेगा। नेबर मिलने के बाद क्या चेक करते थे? अगर अगर विजिटेड ऑफ नेबर मतलब यह नेबर इज़ इक्वल इज़ इक्वल टू फॉल्स। मतलब अगर ये नेबर",
+      "source": "caption",
+      "english_text": "Neighbor is equal to a DJ Hey what happened? Yes. A D J node was that vector. You are looping over i. See this, it will give you its neighbors one by one. First he will give you two, then three and then one. What is happening? What is an ADJ node? A vector of two three one. If you are looping over it index wise then what will you get? Will get the first two. Then you will get three, then you will get one. What did the neighbors check after meeting them? If If Visited Of Neighbor Means This Neighbor Is Equal Is Equal To False. Meaning if this neighbor"
+    },
+    {
+      "start_time": 1717.76,
+      "end_time": 1749.99,
+      "text": "एक्सप्लोर नहीं हुआ है। अगर आप ये Instagram प्रोफाइल अभी तक नहीं देखे हैं तो क्या करते थे? इसके अंदर घुस जाते थे। कैसे घुसेंगे? सेम फंक्शन को कॉल कर दीजिए। डीएफ एस ए डी जे नोड के जगह क्या होगा? नेबर। अब आप इस नेबर नोड में घुसने जा रहे हैं। रिजल्ट और विजिटेड खत्म हो गई बात खत्म हो गई बात इतनी सी बात है क्या कर रहे हैं आप अगर यह नेबर विजिटेड नहीं है आप सेम डीएफएस का फंक्शन इसके लिए कॉल करते हैं जस्ट वैसा ही है कि आप नड ज़ीरो",
+      "source": "caption",
+      "english_text": "Not explored. What if you haven't seen these Instagram profiles yet? Used to enter inside it. How to enter? Call the same function. What will happen in place of DF S A D J node? Neighbor. Now you are going to enter this neighbor node. Result and Visited is over, the matter is over, it's as simple as that, what are you doing if this neighbor is not visited, you call the same DFS function for it, it is just the same that you nudge zero"
+    },
+    {
+      "start_time": 1750.0,
+      "end_time": 1783.269,
+      "text": "पे थे दो को देखे वापस डीएफएस कॉल हो गया किसके लिए न इक्वल टू 2 के लिए प्रत्युष के प्रोफाइल से दीपिका के प्रोफाइल तक सेम डीएफएस फंक्शन किसके लिए नेबर के लिए और बस कुछ नहीं रिटर्न खत्म यह हो गया आपका डीएफएस कोड। कोई भी दुनिया का डीएफएस कोड इसी पैटर्न को फॉलो करेगा। इसी फॉर्मेट को फॉलो करेगा। यही दो-तीन लाइन आपको लिखना पड़ेगा हर बार। हर बार सबसे पहले आपका रिजल्ट रिजल्ट में कुछ भी हो सकता है। अगर आपको बोला जाता कि सारा नोड प्रिंट करो तो आप यहां पे सी आउट नोड कर देते। लेकिन ये जो विजिटेड नोड इक्वल",
+      "source": "caption",
+      "english_text": "Pe thee do ko dekhe back DFS call done for whom for not equal to 2 Same DFS function from Pratyush's profile to Deepika's profile for whom for neighbor and just nothing return finished This is your DFS code. Any DFS code in the world will follow this pattern. Will follow this format. You will have to write these two-three lines every time. Every time your result is the first one, the result can be anything. If you were told to print the entire node, you would have printed out the node here. But this visited node equal"
+    },
+    {
+      "start_time": 1783.279,
+      "end_time": 1818.23,
+      "text": "टू ट्रू है ये मत बोलिएगा। अगर ये भूल जाएंगे इनफाइनाइट लूप में चला जाएगा। इनफाइनाइट लूप में आपका प्रोग्राम चला जाएगा। क्यों चला जाएगा? क्योंकि प्रत्युष से शुरू किए दीपिका पे गए। दीपिका प्रत्युष करती है। वापस प्रत्युष पे गए। वापस दीपिका पे ये ये घूमता चला जाएगा। आप कभी दूसरे लोगों को देख ही नहीं पाएंगे। आपका प्रोग्राम क्रैश कर जाएगा। तो विजिटेड कर दिए। हर नेबर पे लूप किए। ये क्या है? लूप ओवर नेबर्स। लूप ओवर नेबर्स। वेरी गुड। उसके बाद नेबर निकाले। कैसे निकाले? ए डीजे ऑफ़ नोड एंड आई। उसके बाद अगर ये वॉल्स है तो कर दिए। अब इसको कॉल करने के लिए आपको क्या-क्या चाहिए? आप किसको कॉल करने के लिए आपको कुछ नहीं",
+      "source": "caption",
+      "english_text": "Don't say this is too true. If you forget this, it will go into an infinite loop. Your program will run in an infinite loop. Why will he go? Because it started with Pratyush and went to Deepika. Deepika does Pratyush. Went back to Pratyush. It will keep revolving back to Deepika. You will never be able to see other people. Your program will crash. So visited. Looped on every neighbor. What is this? Loop Over Neighbors. Loop Over Neighbors. very good. After that the neighbors came out. How to remove? A DJ of Nod and I. After that if it is walls then done. Now what do you need to call it? You don't have anything to call who."
+    },
+    {
+      "start_time": 1818.24,
+      "end_time": 1852.789,
+      "text": "चाहिए। मान लीजिए कि आपको ये मेन फंक्शन जो आपको जीएफजी देता है वो भी हम लिख देते हैं। हो सकता है वो भी ना समझ में आता हो। ये आपको मेन जो भी मेन फंक्शन जो भी है ना ये gfg वाला फंक्शन है। इसमें आपको बस एक चीज दी हुई है। क्या दिया हुआ है? वेक्टर ऑफ़ वेक्टर ऑफ़ इंट एंड ADJ। इसमें बस एक चीज़ दी हुई है। तो सबसे पहले क्या करिए? इंट N इंट N एंड N का मतलब नंबर ऑफ़ वर्टेक्स। हम क्या बताए हैं? AD जे का जो भी साइज़ होगा ना, वो आपके नंबर ऑफ़ वर्टेक्स आपको बता देगा। क्योंकि एडी जे हर वर्टेक्स के लिए कंटेन करता है। तो एडीj में जितने चीजें होंगी वो आपको n बता देगा। सबसे",
+      "source": "caption",
+      "english_text": "Should. Suppose we write this main function which gives you GFG. It is possible that even that may not be understood. This is your main function, whatever the main function is, this is the gfg function. You are given only one thing in this. What is given? Vector of vector of int and ADJ. There is only one thing given in it. So what to do first? Int N Int N and N means number of vertex. What have we told? Whatever be the size of AD J, it will tell you the number of vertex. Because AD J contains for every vertex. So n will tell you the number of things that will be in ADj. the most"
+    },
+    {
+      "start_time": 1852.799,
+      "end_time": 1886.149,
+      "text": "पहले हम अपना रिजल्ट बना लेते हैं। वेक्टर इंट रेस्ट एक खाली वेक्टर बना लिए। उसके बाद एक विजिटेड एरे बना लेते हैं। विजिटेड एरे कैसे बनाया जाता है? देखिए वेक्टर ऑफ़ बल विस। अब इसमें इसका साइज लिख दीजिए। कितना कितने न्स का आपको चाहिए? सेम एज एडी जे मतलब एडी जे में जितने नोट्स हैं उतने ही नड का विजिटर चाहिए होगा। n एन ज़ीरो। ये एक ट्रिक होता है। C++ का सिंटेक्स है। आप चाहे तो मैनुअली भी आपको चाहिए क्या मतलब बात क्या है ना मुद्दा क्या है कि आपको एक एम साइज का बुलियन एरे चाहिए जिसमें शुरू में सब फॉल्स हो बस इसको आप कैसे भी बनाइए लूप करके जो करना",
+      "source": "caption",
+      "english_text": "First we prepare our result. vector int rest Creates an empty vector. After that let's create a visited array. How is a visited array created? See vector of force vis. Now write its size in it. How many ns do you need? Same size ADJ means the number of notes required in ADJ will be the same number of notes. n n zero. This is a trick. The syntax of C++ is. If you want then you need to do it manually also. What is the point? What is the point that you need an M size boolean array in which all are false in the beginning. Just make it any way you want, do whatever you want by looping."
+    },
+    {
+      "start_time": 1886.159,
+      "end_time": 1921.029,
+      "text": "है करिए अब अब अब आपको क्या बोला है आपको किससे स्टार्ट करना है आपको Instagram का स्टॉकिंग किससे स्टार्ट करना है जीरो नोड से तो ज़ीरो नोड से स्टार्ट कर दीजिए एडी जे नोड के जगह क्या पास कर दिए ज़ीरो और रिजल्ट विजिटेड बस अगर ये डीएफएस एक बार पूरा रन हो गया तो आपका आपका रिजल्ट एरे बन जाएगा। कैसे? क्योंकि हर बार हम लोग यहां पे बना रहे हैं। ये पूरा कहानी चल जाएगा। एक बार ये पूरा कहानी चल जाएगा। आप कंफर्टेबल होके रिजल्ट को रिटर्न कर सकते हैं। वेरी गुड। ये देख लीजिए ये प्रोग्राम। उतना कुछ रॉकेट साइंस है नहीं।",
+      "source": "caption",
+      "english_text": "Do it now, now what has been told to you, from whom do you have to start, from whom do you have to start stalking of Instagram, then start from zero node, what should you pass in place of ADJ node, zero and result visited. Just if this DFS is completely run once, then your result array will be created. How? Because every time we are making it here. This will tell the whole story. Once this complete story will be done. You can return the result as per your convenience. very good. Watch this program. It's not that much rocket science."
+    },
+    {
+      "start_time": 1921.039,
+      "end_time": 1946.87,
+      "text": "एक बार समझ में आ जाने के बाद ये सब ऐसा मक्खन की तरह आप लिख पाएंगे। खुद से लिखिए। कॉपी में बनाइए, ड्राइंग बनाइए। देखिए क्या हो रहा है। देखिए एक आध चीज़ छोड़ देने पे क्या होता है। मतलब एक आध लाइन हटा दीजिए। देखिए क्या होता है। कोई अच्छा तरीका है उसको इंप्लीमेंट करिए। मतलब कहने का मतलब कि आप लोग डीएफएस सीख चुके हैं। इसको क्या बोलते हैं? डेप्थ फर्स्ट सर्च। बहुत-बहुत बधाई हो। बीएफएस की ओर चलते हैं। चलिए अब आपको आ जाते हैं बीएफएस। वो था डीएफएस।",
+      "source": "caption",
+      "english_text": "Once you understand all this, you will be able to write like butter. Write by yourself. Make a copy, make a drawing. Look what's happening. See what happens when you leave out even one thing. Meaning, remove half a line. See what happens. There is a good way, implement it. That is to say, you guys have learned DFS. What is this called? Depth first search. Many many congratulations. Let's go to BFS. Now let us come to you BFS. That was DFS."
+    },
+    {
+      "start_time": 1946.88,
+      "end_time": 1978.549,
+      "text": "डी फॉर डॉग। ये है बी फॉर बनाना। बी बीएफएस। इसका नाम क्या होता है? ब्रेड्थ फर्स्ट सर्च। वो क्या था? डेप्थ फर्स्ट सर्च। ये है ब्रेड्थ फर्स्ट। ये थोड़ा अलग होता है। ये थोड़ा अलग होता है। कैसे अलग होता है? उनको बताते हैं। देखिए एक वही वाला एग्जांपल Instagram का लीजिए। आप किसके प्रोफाइल पे गए? मेरे प्रोफाइल पे डीएफएस में आप क्या किए? प्रत्युष से दीपिका देखिए। दीपिका से रणवीर देखिए। रणवीर से रोनाल्डो गुस्से चले गए जब तक कि सब खत्म ना हो गए। अच्छा इसमें ऐसा नहीं करेंगे। मान लीजिए प्रत्युष दो लोगों को फॉलो करता है। दीपिका और सचिन।",
+      "source": "caption",
+      "english_text": "D for dog. This is B for Banana. B BFS. What is its name? Breadth first search. What was that? Depth first search. This is breadth first. This is a little different. This is a little different. How is it different? Let's tell them. Look, take the same example from Instagram. Whose profile did you visit? What did you do in DFS on my profile? Watch Deepika from Pratyush. Look at Deepika and Ranveer. Ronaldo became angry with Ranveer until it all came to an end. Well, we won't do that in this. Suppose Pratyush follows two people. Deepika and Sachin."
+    },
+    {
+      "start_time": 1978.559,
+      "end_time": 2003.909,
+      "text": "ठीक है? दो लोगों को हम फॉलो करते हैं। ये दीपिका भी दीपिका जी भी दो लोगों को फॉलो करती है। ये हो सकता है रणवीर सिंह को फॉलो करती होंगी और सचिन को ये भी फॉलो करती होंगी। ठीक है? सचिन को ऐसा-सा करके देखते हैं। ब्रेथ फर्स्ट क्या होता है ना? अब आप डीप में नहीं घुसते हैं। अब आप जिस नोट पे हैं जिस नोड पे भी हैं मतलब आप शुरू में प्रत्युष पे आए। प्रत्युष के सारे नेबर्स को खत्म कीजिए। प्रत्युष के सारे नेबर्स को इनऑर्डर में खत्म कीजिए।",
+      "source": "caption",
+      "english_text": "ok? We follow two people. This Deepika also Deepika ji also follows two people. It is possible that she might be following Ranveer Singh and she might also be following Sachin. Ok? We see Sachin doing something like this. What is breath first? Now you don't go deep. Now whatever note you are on, whatever node you are on, means you initially came to Pratyush. Eliminate all the neighbors of Pratyush. Eliminate all the neighbors of Pratyush in order."
+    },
+    {
+      "start_time": 2003.919,
+      "end_time": 2032.23,
+      "text": "मतलब कि प्रत्युष के बाद आप पहले दीपिका पे करिए। दीपिका पे करिए। ओके आप दीपिका पे जाएंगे। तो सबसे पहले आप दीपिका पे जाएंगे। ये तो जाएंगे ही। सब प्रत्युष की पहली नेवर दीपिका है। उसके बाद डीएफएस में आप क्या करते थे? दीपिका पे आके रणवीर सिंह पे घुस जाते मतलब दीपिका रणवीर सिंह ऐसा नहीं करना है। प्रत्युष के सारे नेबर्स इन ऑर्डर में खत्म होंगे। इसी ऑर्डर में खत्म होंगे। मतलब कि प्रत्युष पहले दीपिका के प्रोफाइल पे जाइए। दीपिका के प्रोफाइल पे ओके कुछ-कुछ होगा। ठीक है?",
+      "source": "caption",
+      "english_text": "Meaning that after Pratyush, you should first focus on Deepika. Do it on Deepika. Ok you will go to Deepika. So first of all you will go to Deepika. They will definitely go. Deepika is Pratyush's first never. What did you do in DFS after that? Coming to Deepika and attacking Ranveer Singh means Deepika and Ranveer Singh should not do this. All the neighbors of Pratyush will be eliminated in this order. Will finish in this order. Meaning that Pratyush first go to Deepika's profile. Okay, something will happen on Deepika's profile. Ok?"
+    },
+    {
+      "start_time": 2032.24,
+      "end_time": 2064.79,
+      "text": "उसके बाद सचिन का प्रोफाइल खुलना चाहिए। सचिन का ही प्रोफाइल खुलना चाहिए। उसके बाद, उसके बाद अब प्रत्युष का नेबर खत्म हो गया। उसके बाद आप दीपिका के नेबर्स को खोल सकते हैं। फिर आप रणवीर मतलब ये क्या है? या नाम से भी पता चल रहा है ना? ब्रेड्थ कवर कर रहे हैं पहले पहले। ब्रेड्थ फर्स्ट सर्च कर रहे हैं। क्या कर रहे हैं? ब्रेड्थ फर्स्ट सर्च। वो क्या था? डीप कर रहे थे। डीप डीप कर रहे थे। डीप घुसते चले जा। क्या है? ब्रेड्थ फर्स्ट सर्च है। क्या है? ब्रेड्थ फर्स्ट सर्च। मतलब जिस नोड पे है। अगर उस नोट के",
+      "source": "caption",
+      "english_text": "After that Sachin's profile should open. Only Sachin's profile should be opened. After that, now Pratyush's Neighbor ended. After that you can open Deepika's Neighbors. Then you Ranveer mean what is this? Or is it clear from the name also? Breadth is covered first. Searching breadth first. What are you doing? Breadth first search. What was that? Were doing deep. Were digging deep. Keep going deep. What is? Breadth is first search. What is? Breadth first search. Meaning the node on which it is. If that note"
+    },
+    {
+      "start_time": 2064.8,
+      "end_time": 2099.67,
+      "text": "कुछ नेबर्स हैं। उन नेबर्स को पहले कवर करो। उसी ऑर्डर में। वो नेबर हर नेबर के अंदर मत घुस जाओ कि पहले चलो इस नेबर को पूरा ही सलटा दिया जाए। नहीं। प्रत्युष के सारे नेबर्स को पहले खत्म करो। उसके बाद कहां घुसना है, कैसे घुसना है वो घुसो। ऐसा मत करो कि दीपिका पे आए हैं तो पहले दीपिका को पूरा सलटा दे। दीपिका जितना इतना सब देख लेंगे। नहीं ऐसा नहीं करना है। प्रत्युष के नेबर्स इन ऑर्डर में खत्म होंगे। ये देखिए ये भी बहुत ईजी है। अगर आपको डीएफएस समझ में आए तो ये उससे भी ईजी है। ठीक है? डीएफएस बहुत ईजी माना जाता है डीएफएस से। यहां पे आ गए। ओके? अब देखिए यहां पे ना डीएफएस करने से काम नहीं",
+      "source": "caption",
+      "english_text": "There are some neighbours. Cover those neighbors first. In the same order. That neighbor should not enter into every neighbor and say that first let's destroy this neighbor completely. No. Eliminate all Pratyush's neighbors first. After that, decide where to enter and how to enter. Don't do that if you have come to Deepika, then first give her full attention. Deepika will see so much. No, don't do this. Pratyush's Neighbors will end in this order. Look at this, this is also very easy. If you understand DFS then it is even easier. Ok? DFS is considered much easier than DFS. Came here. Ok? Now see, doing DFS here doesn't work."
+    },
+    {
+      "start_time": 2099.68,
+      "end_time": 2132.87,
+      "text": "चलेगा। डीएफएफ में जो हम लोग फंक्शन लिख दिए थे ना कि नोड पे गए नोड का नेबर निकाले नेबर पे घुस गए फिर नेबर का वही काम होगा नेबर में भी आप उसका नेबर निकाल रहे हैं उसमें घुस गए तो वैसे तो आप घुसते चले जाएंगे इसमें आपको ना एक ऑर्डर मेंटेन करना पड़ेगा इसमें एक ऑर्डर मेंटेन करना पड़ेगा मतलब एक अगर आप जीरो पे आते हैं ना तो जीरो का जितना भी नेबर है उनका एक ऑर्डर मेंटेन करना पड़ेगा ट्री का याद कीजिए ट्री का लेवल ऑर्डर ट्रेवर्सल याद कीजिए ट्री का लेवल ऑर्डर ट्रेवर्सल याद कीजिए क्या यूज किए थे क्यू क्या यूज किए थे। क्यू कभी भी ब्रेड्थ फर्स्ट सर्च या",
+      "source": "caption",
+      "english_text": "Will do. In DFF, we had written the function, not go to the node, take out the neighbor of the node, enter the neighbor, then the same work will be done in the neighbor also, you are taking out its neighbor, if you enter it, then anyway you will keep entering in it, you will not have to maintain an order in this, meaning one, if you come to zero, then you will have to maintain an order of all the neighbors of zero, remember the level order traversal of the tree, remember the tree. Level Order Traversal Remember what you used, why you used it. Why ever breadth first search or"
+    },
+    {
+      "start_time": 2132.88,
+      "end_time": 2164.39,
+      "text": "लेवल ऑर्डर की बात हो, तो आपको क्यू यूज़ करना पड़ेगा। एक ही तरीका है दुनिया में। क्यू यूज़ करना पड़ेगा। कैसे क्यू यूज़ करेंगे? हम आपको बताते हैं। क्यू क्या होता है? जिनको नहीं पता है लेवल ऑर्डर देख लीजिए यार। q एक अ चलिए बता दे जल्दी-जल्दी। q एक डेटा स्ट्रक्चर होता है। क्यू में दो तरीके के एंडिंग होते हैं। ये होता है फ्रंट। ये होता है रियर या फिर एंड। फ्रंट और एंड होता है। आप q में जब पुश करते हैं, जब आप q में पुश करते हैं ना, तो आप रियर से पुश करते रहते हैं। किससे? रियर से पुश करते रहते हैं।",
+      "source": "caption",
+      "english_text": "When it comes to level order, you have to use queue. There is only one way in the world. Why will you have to use it? How to use Q? We tell you. Why what happens? Those who don't know, see the level order. Q A A Come on tell me quickly. q is a data structure. There are two types of endings in Q. This is the front. This is rear or end. There is front and end. When you push in q, when you push in q, you keep pushing from the rear. With whom? Keep pushing from the rear."
+    },
+    {
+      "start_time": 2164.4,
+      "end_time": 2198.63,
+      "text": "मान लीजिए आप तीन चीजें पुश किए q में। वन टू थ्री। तो पहले वन पुश होगा रियर से तो वन यहां आ जाएगा। टू रियर से ही पुश होगा तो टू इसके बाद आ जाएगा। थ्री इसके बाद आ जाएगा। अब जब आप निकालते हैं जब आप ये तो हो गया पुश की बात। जब आप पॉप करते हैं ना तो पॉप में फ्रंट से पॉप करता है। वो फ्रंट में एक हाथ डालता है और जो भी उसको मिलता है उसको निकाल लेता है। तो आप एक बार पॉप करेंगे तो क्या आएगा? एक बार पॉप करेंगे वन आएगा। दूसरी बार पॉप करेंगे टू आएगा। तीसरी बार थ्री आएगा। तो आप देखिए जिस ऑर्डर में आप पुश किए थे वन टू थ्री उसी आर्डर में पॉप हुआ। इसीलिए क्यू को",
+      "source": "caption",
+      "english_text": "Suppose you push three things into q. One two three. So first one will be pushed from the rear and then one will come here. If Two pushes from the rear only, Two will come after it. Three will come after this. Now when you remove it, it is a matter of push. When you pop neither pops from the front. He puts a hand in the front and takes out whatever he finds. So what will come once you pop in? Will pop once and one will come. Will pop the second time and two will come. Three will come for the third time. So you see, one to three popped in the same order in which you pushed. That's why why?"
+    },
+    {
+      "start_time": 2198.64,
+      "end_time": 2226.87,
+      "text": "बोलते हैं। जब भी आपको आर्डर मेंटेन करना है ना कि चलो सचिन घुसे, दीपिका घुसी, ये घुसी और आपको चाहिए कि यही ऑर्डर मेंटेन रहे तो आप उसको एक क्यू में डाल दीजिए। जब आप उसको पर्प करेंगे ना सेम ऑर्डर आपको निकलेगा। तो देखिए इसमें हम लोग क्या करेंगे? बड़ी छोटी सी ट्रिक करेंगे। यहां पे आ गए। बाकी चीजें तो सेम रहेंगी। एक आपको रिजल्ट का वेक्टर चाहिए होगा। एक आपको रिजल्ट का वेक्टर चाहिए होगा और एक विजिटेड एरे भी चाहिए होगा। एक विजिटेड एरे चाहिए होगा जो हमको बताएगा कि भैया ठीक है। इसका हो गया है। इसको देख लिए हो।",
+      "source": "caption",
+      "english_text": "Let's speak. Whenever you have to maintain the order, say let's Sachin enter, Deepika enter, this enter and you want the same order to be maintained, then you put it in a queue. When you send it to him, you will receive the same order. So see what we will do in this? Will do a great little trick. Came here. Rest of the things will remain the same. First, you will need a vector of results. You will need a vector of results and a visited array. We will need a visited array which will tell us that brother is fine. Its done. You have seen this."
+    },
+    {
+      "start_time": 2226.88,
+      "end_time": 2256.55,
+      "text": "इसको बार-बार नहीं देखो एक ही बात को। विजिटेड एरे शुरू में क्या रहेगा? सब ज़ीरो। ठीक है? रिजल्ट शुरू में खाली रहेगा। आपको क्या बोला गया है? किससे स्टार्ट करना है? नोड इक्व 0 से। किससे? नो इज इक्वल टू 0 से। तो हम लोग एक q बनाएंगे। हम लोग एक क्या बनाएंगे? q बनाएंगे। ये हमारा q है। ये उसका फ्रंट है। ये उसका रियल है। ठीक है? सबसे पहले क्या कीजिए? q डॉट पुश जीरो और विजिटेड ऑफ़ 0 = ट्रू।",
+      "source": "caption",
+      "english_text": "Don't look at the same thing again and again. What will be the visited array initially? All zero. Ok? The result will be blank initially. What have you been told? What to start with? From node eq 0. With whom? No is equal to 0. So we will make a q. What will we make of one? Will make q. This is our q. This is its front. This is his real. Ok? What to do first? q Dot Push Zero and Visited Off 0 = True."
+    },
+    {
+      "start_time": 2256.56,
+      "end_time": 2284.47,
+      "text": "क्यों कर रहे हैं? बताएंगे। क्यों कर रहे हैं? बताएंगे। देखिए q में क्या किए? पुश। तो q में ज़ीरो पुश हो गया। ज़ीरो पुश हो गया। और ज़ीरो का विजिटेड क्या हो गया? वन। मतलब अब ज़ीरो पे नहीं जाना है। ज़ीरो हो चुका, ज़ीरो हो चुका। उसके बाद हम लोग क्या करेंगे? ये जस्ट हम लेवल ऑर्डर आपको समझा रहे हैं। लेवल ऑर्डर में सेम लेवल ऑर्डर से बहुत इजी है एक्चुअली। उसके बाद इस q पे आइट्रेट कीजिए। जब तक ये q पूरा खाली ना हो जाए तब तक वाइल लूप चलाइए। जब ये q पूरा खाली हो जाएगा ना तो आप देखेंगे कि कैसे आपका बीएफएस खत्म हो गया। बताते हैं।",
+      "source": "caption",
+      "english_text": "Why are you doing it? Will tell. Why are you doing it? Will tell. See what was done in q? Push. So zero push is done in q. Zero pushed. And what happened to Zero's visitation? Forest. Meaning no more going to zero. It has become zero, it has become zero. What will we do after that? This is just us explaining the level order to you. Level order is actually much easier than same level order. After that iterate over this q. Run the while loop until this q is completely empty. When this q becomes completely empty then you will see how your BFS is finished. Let us tell."
+    },
+    {
+      "start_time": 2284.48,
+      "end_time": 2319.27,
+      "text": "देखिए वाइल q डॉट वाइल q. ठीक है? क्या कीजिए? अब कौन सा नोड निकालेंगे? नोड इज इक्वल टू q डॉट पॉप निकल गया नोड वेरी गुड q डॉट पॉप सॉरी q डॉट पॉप नहीं q डॉट फ्रंट q डॉट फ्रंट jवा में इसका अलग सिंटेक्स हो सकता है फ्रंट निकालना है आपको और q डॉट पॉप इससे क्या हुआ सबसे पहले नोड नोड में क्या वैल्यू आई ज़ीरो और q से वो पॉप हो गया उसके बाद अब अब डीएफएस में क्या करते थे ज़ीरो के सारे",
+      "source": "caption",
+      "english_text": "See wile q dot wile q. Ok? What to do? Which node will we remove now? Node is equal to q dot pop, it is gone, node is very good, q dot pop, sorry, q dot pop is not, q dot front, q dot front, it may have different syntax in Java, you have to remove front, and q dot pop, what happened to this, first of all, what value came in node node, it became zero and q made it pop, after that, now what did all the zeros do in DFS?"
+    },
+    {
+      "start_time": 2319.28,
+      "end_time": 2344.95,
+      "text": "नेबर पे इटरेट करते थे उनके नेबर के लिए डीएफएस कॉल करते थे इसमें वो मत कीजिए q के ज़ीरो जीरो के सारे नेबर जीरो के सारे नेबर जो कि अनविज़िटेड है। याद रखिए अनविज़िटेड वालों को क्यू में पुश कर दीजिए। जीरो के सारे अनविज़िटेड नेबर को क्यू में पुश कर दीजिए। ज़ीरो का अ कौन नेबर है? कौन नेबर है? 2 3 1 2 3 1- देखिए। क्या आपको टू को पुश करना चाहिए?",
+      "source": "caption",
+      "english_text": "Used to iterate over neighbors and call DFS for their neighbors. Don't do that, all the neighbors of zero zero of q are all the neighbors of zero which are unvisited. Remember to push the unvisited ones into the queue. Push all unvisited neighbors of zero into the queue. Who is the neighbor of zero? Who is the neighbor? 2 3 1 2 3 1- Look. Should you push to?"
+    },
+    {
+      "start_time": 2344.96,
+      "end_time": 2378.79,
+      "text": "क्या आपको टू को पुश करना चाहिए? हां क्योंकि टू नहीं हुआ है विजिटेड। तो दो काम कीजिए। टू को तो पुश कर ही दीजिए। टू को तो पुश कर ही दीजिए और विजिटेड ऑफ टू को क्या कर दीजिए? वन कर दीजिए। वेरी गुड। थ्री को क्या आपको थ्री को पुश करना चाहिए? हां कर दीजिए। तो थ्री को पुश कर दीजिए। लेकिन लेकिन लेकिन विजिटेड को क्या बना दो? वन बना दो। वेरी गुड। क्या आपको वन को पुश करना चाहिए? हां करना चाहिए क्योंकि वन अनविज़िटेड है। तो पुश करिए बकायदा पुश करिए। लेकिन वन को भी विजिटेड",
+      "source": "caption",
+      "english_text": "Should you push to? Yes because two has not been visited. So do two things. Just push 2. Just push the two and what to do with the visited one? Make it one. very good. Should you push three? Yes please do it. So push three. But but but what to make of the visited? Make a forest. very good. Should You Push One? Yes, it should because the forest is unvisited. So push, push properly. But the forest was also visited"
+    },
+    {
+      "start_time": 2378.8,
+      "end_time": 2411.91,
+      "text": "में वन बना दो। खत्म हो गई बात। बात खत्म हो गई बात कि जीरो के सारे नेबर जीरो के सारे अनविज़िटेड नेबर आप पुश कर चुके हैं। और यहां पे यहां पे आप क्या करना है? एक काम भूल गए। रिजल्ट में ज़ीरो को लिख दीजिए। रिजल्ट में ज़ीरो को लिख दीजिए। खत्म हो गया। बंद कर दीजिए। फिर से चेक कीजिए। क्या Q एम्प्टी है? नहीं। Q एम्प्टी नहीं है। आइए। क्या निकलेगा नोड में? फ्रंट वाला। फ्रंट वाला क्या है फ्रंट में? टू। ध्यान से देखिए। ज़ीरो का पहला नंबर क्या था? दो था। क्या पहले दो निकल रहा है? हां। तो देखिए ऑर्डर कैसे मेंटेन होता है? क्या निकला फ्रंट से? दो।",
+      "source": "caption",
+      "english_text": "Make a forest in me. The matter is over. The matter is over that you have pushed all the neighbors of zero, all the unvisited neighbors of zero. And what do you have to do here? Forgot a task. Write zero in the result. Write zero in the result. It's over. Turn it off. Check again. Is Q empty? No. Q is not empty. Come. What will come out in the node? Front one. What is front? To. Look carefully. What was the first number of zero? There were two. Is the first two coming out? Yes. So see how the order is maintained? What came out from the front? Two."
+    },
+    {
+      "start_time": 2411.92,
+      "end_time": 2445.27,
+      "text": "दो को पॉप कर दीजिए। दो को अपने रिजल्ट में लिख दीजिए। दो को अपने रिजल्ट में लिख दीजिए। वेरी गुड लिख दिए। क्या करना है? सेम काम करना है। दो के सारे अनविज़िटेड नेबर को क्यू में डाल दीजिए कि जब आएगा टाइम उसका प्रोसेस करेंगे। क्यू के सारे टू के सारे अनविज़िटेड नेबर को टू में क्यू में डाल दीजिए। टू का कौन-कौन सा नेबर है? टू का नेबर कहां से मिलेगा? एडजेसेंसी से भाई। ज़ीरो एंड फोर। क्या आपको ज़ीरो को एंटरटेन करने की जरूरत है? नहीं। नहीं विजिटेड ऑफ़ ज़ीरो वन है। मतलब ज़ीरो का काम हो चुका है खत्म। क्या आपको फोर को एंटरटेन करने का जरूरत है? हां बिल्कुल",
+      "source": "caption",
+      "english_text": "Pop two. Write two in your result. Write two in your result. Very well written. What is the plan? Same work has to be done. Put all the unvisited neighbors of the two in the queue so that we can process them when the time comes. Put all the unvisited neighbors of queue two into the queue. Who is the neighbor of two? Where can I get Two's Neighbor? Brother from Adjacency. Zero and four. Do you need to entertain zero? No. No it is visited by zero one. Meaning zero's work is finished. Do you need to entertain four? yes of course"
+    },
+    {
+      "start_time": 2445.28,
+      "end_time": 2471.51,
+      "text": "एंटरटेन करने का जरूरत है। तो एंटरटेन करिए। क्या एंटरटेन करिए? क्यू में पुश कर दीजिए फोर को और विजिटेड में वन बनाना ना भूलें। विजिटेड में वन बनाना ना भूलें। अब देखिए आप देख सकते हैं कि सारा नोड विजिटेड हो चुका है। अब देखिए कैसे प्रोसेस होता है। ज़ीरो के बाद टू हो गया। टू के बाद और कुछ तो करने का है नहीं। टू खत्म हो गया। क्या q एम्प्टी हो गया है? नहीं। q एम्प्टी नहीं हुआ है। क्या निकला? थ्री निकल गया। आपका नड क्या बन गया?",
+      "source": "caption",
+      "english_text": "Need to entertain. So entertain. What should you entertain? Push four in queue and don't forget to make one in visited. Don't forget to create a forest in Visited. Now see you can see that all the nodes have been visited. Now see how the process happens. After zero it became two. There is nothing else to do after two. Two is over. Is q empty? No. q is not empty. What happened? Three passed. What became of your nudge?"
+    },
+    {
+      "start_time": 2471.52,
+      "end_time": 2502.79,
+      "text": "थ्री। थ्री को पॉप कर दिए। ओके? क्या करना है थ्री के साथ? रिजल्ट में डाल दो। अब थ्री का नेबर कौन-कौन है? ज़ीरो। क्या आपको ज़ीरो को एंटरटेन करने का जरूरत है? नहीं। ज़ीरो विजिटेड है। कुछ मत करिए। खत्म कर दीजिए। अगला निकालिए q से वन। नोड इज़ इक्वल टू वन। क्या करिए? रिजल्ट में लिख दीजिए। वन लिख दिए। वन का नेबर क्या है? वन का नेबर ज़ीरो है। क्या ज़ीरो एंटरटेन होगा? ना। ज़ीरो को इग्नोर करिए क्योंकि विजिटेड है। खत्म कर दीजिए। क्या क्यू एम्प्टी हो गया है? वन के पॉप होने के बाद नहीं। एम्प्टी नहीं हुआ है। कौन बचा है?",
+      "source": "caption",
+      "english_text": "Three. Popped the three. Ok? What to do with three? Put it in the result. Now who are Three's neighbours? Zero. Do you need to entertain zero? No. Zero visited. Don't do anything. Finish it off. Next take out one from q. Node is equal to one. What to do? Write it in the result. Wrote forest. What is the neighbor of the forest? One's neighbor is zero. Will Zero be entertained? No. Ignore zero because it is visited. Finish it off. Is the queue empty? Not after One pops. Not empty. Who is left?"
+    },
+    {
+      "start_time": 2502.8,
+      "end_time": 2528.47,
+      "text": "फोर। फोर को निकालो। नोड इज़ इक्वल टू फोर। फोर को रिजल्ट में लिखो। फोर का नेबर कौन है? टू। फोर का नेबर कौन है? टू। क्या टू को एंटरटेन करना है? नहीं करना है। कुछ मत कीजिए। क्या आप अब आपका क्यू पूरा खाली हो गया? हां जी। पूरा खाली हो गया। देखिए क्या आपको रिजल्ट में बीएफएस मिला? 0 2 3 1 4 ये कैसे मिला? ये कैसे मिला? ये कैसे मिला? हम आपको बताते हैं ये कैसे मिलेगा। देखिए एक-एक करके हम सबका नेबर लिखते हैं।",
+      "source": "caption",
+      "english_text": "Four. Take out four. Node is equal to four. Write four in the result. Who is Four's neighbor? To. Who is Four's neighbor? To. Want to entertain two? Don't have to do it. Don't do anything. Are you sure your queue is completely empty now? Yes sir. It became completely empty. See did you get BFS in the result? 0 2 3 1 4 How did you get this? How did you get this? How did you get this? We tell you how to get this. See, one by one we write everyone's neighbor."
+    },
+    {
+      "start_time": 2528.48,
+      "end_time": 2558.47,
+      "text": "देखिए जीरो का नेबर कौन-कौन था? 2 3 1 वन का नेबर था ज़ीरो। ये हम आपको एक बता रहे हैं कि असली में कैसे काम करता है। ये तो ठीक है। कोड तो काम कर ही रहा है। ज़ीरो नहीं सॉरी टू का नेबर कौन-कौन है? 0 एंड फोर। 0 एंड फोर। थ्री का नेबर ज़ीरो। फोर का नेबर टू। हम क्या बोले थे? सबसे पहले हम लोग ज़ीरो से स्टार्ट करेंगे। तो रिजल्ट में ज़ीरो लिखे। अब 0 के जितने नेबर हैं वो सारे होंगे। तो पहले टू होगा। टू लिखिए।",
+      "source": "caption",
+      "english_text": "See who were Zero's neighbors? 2 3 1 One's neighbor was Zero. We are telling you how it actually works. This is fine. The code is still working. Who are the neighbors of Zero Not Sorry Two? 0 and four. 0 and four. Three's neighbor zero. Four's neighbor two. What did we say? First of all we will start from zero. So write zero in the result. Now all the neighbors of 0 will be there. So first there will be two. Write two."
+    },
+    {
+      "start_time": 2558.48,
+      "end_time": 2591.27,
+      "text": "पहले टू होगा टू लिखिए। अब टू में अंधाधुंध घुस नहीं जाना है। टू में अंधाधुंध घुस नहीं जाना है। जीरो के सारे नेबर खत्म कीजिए। जीरो के सारे नेबर खत्म कीजिए। 3 एंड वन 3 एंड वन। अब हो गया। जीरो का नेबर खत्म हो गया। जीरो का नेबर खत्म हो गया। अगला किस पे जाना है? जीरो का जो फर्स्ट नेबर था उस पे चले जाइए। इसमें देखिए क्या जीरो ज़ीरो को करने की जरूरत है? नहीं। लेकिन फोर फोर को करने की जरूरत है? हां फोर। ये खत्म हो गया। खत्म हुआ। अब जीरो के अगले नेबर पे जाइए। अब आपको कुछ मिलेगा नहीं। तो बीएफएस ऐसे काम",
+      "source": "caption",
+      "english_text": "First write to hoga to. Now don't enter into two blindly. Don't enter into two blindly. Eliminate all neighbors of zero. Eliminate all neighbors of zero. 3 and one 3 and one. Now its done. Zero's Neighbor is over. Zero's Neighbor is over. Where to go next? Go to Zero's first neighbor. See this: Is there a need to do Zero Zero? No. But does a foursome need to be done? Yes four. It's over. has over. Now go to the next neighbor of zero. Now you will not get anything. so bfs work like this"
+    },
+    {
+      "start_time": 2591.28,
+      "end_time": 2616.63,
+      "text": "करता है कि पहले ना आप जिस नोड पे है ना उसके सारे नेबर को एग्जॉस्ट कर लीजिए। सारे नेबर देख लीजिए। उसके बाद धीरे धीरे धीरे धीरे नीचे जाइए। 02 314 ऊपर देखिए क्या हम लोग आया था? 02 314। ये आपका होता है बीएफएस। काफी इजी होता है। इसका कोड और छोटा है। मतलब इसका कोड और छोटा है डीएफएस से भी। इसमें हमको कोई स्पेशल फंक्शन लिखने की भी जरूरत नहीं है। हम क्या लिखेंगे? देखिए, आपको एक वेक्टर इंट चाहिए। ये आपका जीएफजी वाला फंक्शन है।",
+      "source": "caption",
+      "english_text": "What it does is that first exhaust all the neighbors of the node you are on. Look at all the neighbors. After that, go down slowly. 02 314 Look up Did we come? 02 314. This is your BFS. It is quite easy. Its code is even shorter. Meaning its code is even smaller than DFS. In this we do not even need to write any special function. What will we write? Look, you need a vector int. This is your GFG function."
+    },
+    {
+      "start_time": 2616.64,
+      "end_time": 2649.19,
+      "text": "ठीक है? और आपको एक एडजेसेंसी मैट्रिक्स दी रहेगी। एडजेसेंसी मैट्रिक्स वेक्टर ऑफ़ वेक्टर ऑफ़ इंट। आप लोग देखिए बहुत लकी हो गए हैं कि बनाना नहीं पड़ रहा है खुद से। ठीक है? लेकिन अगर बनाने की जरूरत आ जाए, तो हम उम्मीद करते हैं कि आप बना लेंगे। सबसे पहले तो n निकाल लीजिए। किसका? ATJ का साइज। सेम एज डीएफs। वेरी गुड। अपना रिजल्ट के लिए वेक्टर बना लीजिए। रिजल्ट के लिए वेक्टर बना लीजिए। रिजल्ट और एक बुलियन बना लीजिए। किसके लिए? विजिटेड के लिए। कितने साइज का? एन साइज का। शुरू में",
+      "source": "caption",
+      "english_text": "ok? And you will be given an adjacency matrix. Adjacency matrix vector of vector of int. See, you guys have become very lucky that you don't have to make it yourself. Ok? But if the need arises, we hope you will make it. First of all, take out n. Whose? Size of ATJ. Same Age DFs. very good. Create a vector for your result. Create a vector for the result. Result and create a bullion. For whom? For visited. What size? Of N size. in the beginning"
+    },
+    {
+      "start_time": 2649.2,
+      "end_time": 2681.67,
+      "text": "सब फॉल्स। खत्म हो गई बात। एक q बना लीजिए। q इंट q वेरी गुड। क्या था? सबसे पहले वाले को q में पुश कर दीजिए क्योंकि शुरुआत तो करनी पड़ेगी। और अगर पुश कर दिए हैं इसको फॉल्स कर दीजिए। सॉरी ट्रू कर दीजिए। इसको ट्रू कर दिया। आप ट्रू को वन भी लिख सकते हैं। ठीक है? अब अपना लूप चलाते हैं। आइए अपना लूप चलाते हैं। वाइल q डॉट नॉट एम्प्टी। वाइल q डॉट नॉट एम्प्टी। क्या करेंगे? इंट नोड निकालिए।",
+      "source": "caption",
+      "english_text": "Sab Falls. The matter is over. Make a q. q int q very good. what was it? Push the first one into q because you will have to start over. And if you have pushed then make it false. Make sorry true. Made it true. You can also write True as One. Ok? Now let's run our loop. Let's run our loop. While q is not empty. While q is not empty. What to do? Remove int node."
+    },
+    {
+      "start_time": 2681.68,
+      "end_time": 2713.829,
+      "text": "कौन सा? q के फ्रंट से नोड निकालिए। इसी को प्रोसेस करना है। क्यू क्या है ना कि आप आपको जिस ऑर्डर में चाहिए ना आप उसमें क्यू में डालते जा रहे हैं और एक-एक करके प्रोसेस करते जा रहे हैं। बहुत इंट्यूटिव है। एक बार अपने दिमाग में सोचिएगा कि क्या इंट्यूटिव चीज है। आपको प्रोसेस करना है इस तरीके से। आपको जिस तरीके से प्रोसेस करना है ना आप उस तरीके से उसको पुश करते जा रहे हैं। अगर आपको जीरो के सारे नेबर प्रोसेस करने हैं तो आप देखिए आप जीरो के सारे नेबर पुश भी कर रहे हैं। तो आप ऐसा नहीं है कि जादू से कुछ हो रहा है। नहीं आप पुश ही ऐसे कर रहे हैं कि आपको वैसा मिल रहा है। ठीक है? अब इस आदमी को q से पॉप कर दो। सबसे पहले इसको रिजल्ट",
+      "source": "caption",
+      "english_text": "which one? Remove the node from the front of q. This is what has to be processed. What is a queue? You are putting the things you need in the queue in the order you want and processing them one by one. Very intuitive. Think for once in your mind what is an intuitive thing. You have to process it this way. You are pushing it in a way that you don't want it to process. If you have to process all the neighbors of zero, then you see, you are also pushing all the neighbors of zero. So you don't think that something is happening by magic. No, you are pushing in such a way that you are getting that. Ok? Now pop this guy with q. First of all this result"
+    },
+    {
+      "start_time": 2713.839,
+      "end_time": 2744.15,
+      "text": "में पुश बैक कर दो। रिजल्ट में पुश बैक कर दो। किसको? नोड को। खत्म हो गई बात। अब नोड के सारे अनविज़िटेड नेबर को Q में डाल दो। कैसे करेंगे? फॉर वही लूप चलेगा। i = 0 i &lt; ADJ नोड डॉट साइज। मतलब ADJ नोड में सारे उसके नेबर्स होंगे। i प्लस प्लस कैसे निकलेगा नेबर? नेबर इज़ इक्वल टू एडी जे नोड का आई यह आपको",
+      "source": "caption",
+      "english_text": "Push back in. Push back in the result. Whom? To the node. The matter is over. Now put all the unvisited neighbors of the node in Q. How to do? The same for loop will run. i = 0 i < ADJ node dot size. Meaning ADJ node will have all its neighbors. i plus plus how will the neighbor come out? Neighbor Is Equal To Eddie J Nod's Eye It's You"
+    },
+    {
+      "start_time": 2744.16,
+      "end_time": 2775.91,
+      "text": "एक-एक करके नेबर देगा। अगर अगर विजिटेड ऑफ नेबर इक्वल इक्वल टू फॉल्स अगर ये फॉल्स है तो क्यू में पुश कर दो। क्यू में पुश कर दो। किसको? नेबर को। नोड को नहीं भाई। नेबर को करना। और विजिटेड ऑफ नेबर इज इक्वल टू ट्रू। एक बार पुश हो गया तो और बार-बार नहीं चाहिए। एक बार हो गया बार-बार नहीं चाहिए। बंद बंद बंद रिटर्न ड्रेस ये देखो ये बड़ा मासूम सा कोड",
+      "source": "caption",
+      "english_text": "Neighbor will give one by one. If if visited by neighbor is equal to false then push it to the queue. Push it into the queue. Whom? To the neighbor. Not to node, brother. To do to the neighbor. And Visited by Neighbor is Equal to True. Once the push is done, it is not required again and again. Once done, no need to do it again and again. Close Close Close Return Dress Look at this innocent little code"
+    },
+    {
+      "start_time": 2775.92,
+      "end_time": 2809.75,
+      "text": "है। इसको क्या बोलते हैं? डीएफs इसको क्या बोलते हैं? dfs दोनों डीएफएस डीएफएस की टाइम कॉम्प्लेक्सिटी ऑर्डर ऑफ़ n = नंबर ऑफ़ नोड्स। स्पेस कॉम्प्लेक्सिटी भी ऑर्डर ऑफ़ n जहां पे n = नंबर ऑफ़ नोड। दोनों डीएफएस डीएफएस दोनों। ये हो गया स्पेस। ये हो गया टाइम। बीएफएस डीएफएस दोनों की स्पेस और टाइम कॉम्प्लेक्सिटी क्या है? ऑर्डर ऑफ़ n तो ये बीएफएस का कोड सेम ही चीज कर रहे हैं। ऊपर आपको कहीं डीएफएस का कोड ये आपको डीएफएस का कोड। तो दोनों कोड को जरूर से कीजिए। ऐसा बंद मत कर दीजिए कि चलो ये तो कर ही दिया है तो बोलते रहता है हम तो बाद",
+      "source": "caption",
+      "english_text": "Is. What is this called? What do DFs call this? dfs Both DFS Time Complexity of DFS Order of n = Number of nodes. Space complexity is also of order n where n = number of nodes. Both DFS DFS both. This is space. It's time. What is the space and time complexity of both BFS and DFS? Order of n So this BFS code is doing the same thing. You will find the DFS code somewhere above. So definitely do both the codes. Don't stop saying that we have already done it, so we keep saying that we will do it later."
+    },
+    {
+      "start_time": 2809.76,
+      "end_time": 2818.64,
+      "text": "में करेंगे। बाद में मत कीजिए। बाद में कुछ नहीं हो पाता है। ठीक है? चलिए मिलते हैं अगले वीडियो में। एंड चलो ठीक है।",
+      "source": "caption",
+      "english_text": "I will do. Don't do it later. Nothing can happen later. Ok? Let's meet in the next video. And okay, it's okay."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

@@ -1,0 +1,352 @@
+{
+  "video_id": "AflRvP5LFFc",
+  "video_title": "Stop Struggling with Recursion: Combination Sum Explained Simply",
+  "video_number": 77,
+  "chunks": [
+    {
+      "start_time": 2.389,
+      "end_time": 36.63,
+      "text": "आज का रिकर्शन क्वेश्चन हार्ड है। ये Amazon में पूछा जाता है, मेटा में पूछा जाता है। बहुत सारी कंपनीज़ में पूछा जाता है। लेकिन उसमें एक थोड़ा सा ट्विस्ट है। ये ट्विस्ट के लिए हम आपको इंट्रो के तौर पे एक एग्जांपल समझाना चाहते हैं चॉकलेट का। तो ये एग्जांपल सुनने के बाद जो आगे का एक्सप्लेनेशन है वो दिमाग में ऐसा बैठेगा। तो ये हम बाद में बना रहे हैं। हम एक्सप्लेन पहले किए हमको करते-करते स्ट्राइक किया कि ये बता देना चाहिए था। तो ये बहुत ध्यान से सुन लीजिएगा। हम ये भी आशा करते हैं कि आप पहले के रिकजन वीडियोस देखते हुए आ रहे हैं और आप बिल्कुल नए यहां पे नहीं है क्योंकि आज जो फाइव स्टेप फ्लो चार्ट था उसकी बात होने वाली है। ठीक है? तो वो देख लीजिए नए बच्चे वो पहले देख लीजिए शुरू से ये वीडियो पड़ी रहेगी। ऐसा नहीं कि हम इसको डिलीट कर देंगे। मान लीजिए आप किसी चॉकलेट",
+      "source": "caption",
+      "english_text": "Today's recursion question is hard. This is asked in Amazon, it is asked in Meta. This is asked in many companies. But there is a slight twist in it. For this twist, we want to explain to you an example of chocolate as an intro. So after listening to this example, the further explanation will stick in your mind like this. So we are making this later. We explained earlier but while doing so it struck us that we should have told this. So listen to this very carefully. We also hope that you have been watching the previous recovery videos and you are not completely new here because today we are going to talk about the five step flow chart. Ok? So watch that, new kids, watch that first, this video will be there from the beginning. It is not that we will delete it. Suppose you buy some chocolate"
+    },
+    {
+      "start_time": 36.64,
+      "end_time": 70.55,
+      "text": "फैक्ट्री पे हैं। ठीक है? यहां पे बहुत सारे चॉकलेट देख सकते हैं। कैटबरी, किटकैट, मंच फर्क सब रखा हुआ है। आपके पास आपके चॉइससेस हैं। ठीक है? आपको मैनेजर बोला है कि बेटा तुम यहां से यहां तक घूम लो। यहां से यहां तक घूम लो। ठीक है? लाइन से घूमना। अच्छा हर चॉकलेट के पास तुम जाओगे ना तुम्हारे पास चॉइससेस हैं कि अगर तुमको चॉकलेट नहीं खाना है ना तो तुम आगे बढ़ जाओ कोई दिक्कत नहीं कोई कोई इशू नहीं आगे बढ़ जाना अगर तुमको ये कैडबरी खाना है तो तुम ऐसा नहीं है कि एक ही बार खा सकते हो तुमको जितना कैडबरी खाना है उतना खा सकते हो मतलब कैडबरी के बहुत सारे चॉकलेट हैं इसमें तुमको जितना मन करे उतना खा सकते हो ठीक है लेकिन अगर मान लो मान ली तुम ऐसा किया ना कि तुम दो कैडबरी खा के",
+      "source": "caption",
+      "english_text": "Are at the factory. Ok? You can see a lot of chocolates here. Catbury, KitKat, platform difference, everything is kept. You have your choices. Ok? The manager has told you that son, you should roam from here to here. Roam from here to here. Ok? Walking through the line. Well, you will go to every chocolate bar, you have a choice, if you do not want to eat chocolate, then you can go ahead, no problem, no issue, go ahead, if you want to eat this Cadbury, then it is not that you can eat it only once, you can eat as much Cadbury as you want, that is, there are a lot of Cadbury chocolates in it, you can eat as much as you want, okay, but if let's say that you did this, then you did not eat two Cadburys."
+    },
+    {
+      "start_time": 70.56,
+      "end_time": 96.31,
+      "text": "तुम आगे बढ़ गए आगे बढ़ गए किटकैट पे आगे बढ़ गए किट पे उसके बाद तुम लौट के कैटबरी पे नहीं आ सकते हो उसके बाद तुम नहीं बोल सकते हो कि किटकैट खा लिए लौट के आएंगे। नहीं नहीं नहीं कर सकते हो। जितना किटकैट अगर कैडबरी नहीं खाना है आगे चले जाओ। किटकैट नहीं खाना है आगे चले जाओ। कोई इशू नहीं है। लेकिन अगर तुमको खाना है तो तुम्हारा जितना मन करे तुम उतना कैडबरी यहां पे खा सकते हो। लेकिन एक बार आगे बढ़ गए ना तो कैडबेरी नहीं खा सकते हो घूम के।",
+      "source": "caption",
+      "english_text": "You have moved ahead, moved ahead on KitKat, moved ahead on Kit, after that you cannot come back to Catbury, after that you cannot say that you will come back after eating KitKat. No no can't. If you don't want to eat as much Cadbury as KitKat, go ahead. Don't want to eat KitKat, go ahead. There is no issue. But if you want to eat, you can eat as much Cadbury as you want here. But once you move ahead, you cannot roam around and eat Cadberries."
+    },
+    {
+      "start_time": 96.32,
+      "end_time": 121.67,
+      "text": "तो आप इसमें क्या करते? ये जो आगे वाले हम क्वेश्चन समझाने वाले हैं ना उसका उसका हार्ट है। उसका बेस है। आप क्या करेंगे? अगर आपको कैडबरी नहीं खाने का मन करेगा आप आगे बढ़ जाएंगे। यही करेंगे ना। नहीं खाने का मन है तो क्या करेंगे? ग्रुप के आगे बढ़ जाएंगे किट की तरफ। लेकिन मान लीजिए आपको पता नहीं है कि आपको कितना कैडबरी खाना है तो आप क्या करेंगे? आप क्या करेंगे ना? आप एक कैडबरी निकाल के खाएंगे। एक कैडबरी निकाल के खाएंगे। लेकिन वो एक कैडबरी निकाल के ना आप आगे नहीं बढ़ेंगे।",
+      "source": "caption",
+      "english_text": "So what do you do about it? This is the heart of the questions that we are going to explain later. It has a base. What would you do? If you don't feel like eating Cadbury, you can move ahead. This is what we will do. What to do if you don't feel like eating? Will move ahead of the group towards the kit. But suppose you do not know how much Cadbury you have to eat, then what will you do? What will you do? You will take out a Cadbury and eat it. Will take out a Cadbury and eat it. But you won't move forward by taking out that one Cadbury."
+    },
+    {
+      "start_time": 121.68,
+      "end_time": 156.39,
+      "text": "क्योंकि हो सकता है कि आपको एक और खाने का मन करे। मैनेजर साफ-साफ बोला है कि अगर आप किटकैट पे बढ़ गए तो आप कैडबरी पे वापस नहीं आ सकते हैं। पीछे नहीं आ सकते हो। आगे बढ़ते जाना पड़ेगा। आप क्या करेंगे ना? एक कैडबरी निकालेंगे। उसको खाएंगे और वहीं रहेंगे। वहीं रहेंगे। अभी भी आप कैडबरी में आगे नहीं निकले हैं। एक कैडबरी के बाद अगर आपको लगता है कि हो गया मन भर गया तो आप आगे जाएंगे Kitcat की तरफ। लेकिन अगर आपको लगता है कि नहीं और और मन कर रहा है। बढ़िया चॉकलेट है। आप एक और कैडबरी निकाल के खाएंगे। एक और कैडबरी निकाल के खाएंगे और वहीं रुके रहेंगे। अभी भी आगे नहीं जाएंगे। क्योंकि आप आगे तब जाएंगे ना जब आपका मन भर जाएगा। आपको",
+      "source": "caption",
+      "english_text": "Because you might feel like eating one more. The manager has clearly said that if you move on to KitKat, you cannot come back to Cadbury. Can't come back. We will have to keep moving forward. What will you do? Will take out a Cadbury. Will eat it and stay there. Will stay there. You still haven't caught on at Cadbury. If after one Cadbury you feel that you are satisfied, then you will move towards Kitkat. But if you think no and feel like it. It's great chocolate. You take out another Cadbury and eat it. Will take out another Cadbury and eat it and stay there. Still won't go ahead. Because you will go ahead only when your heart is full. to you"
+    },
+    {
+      "start_time": 156.4,
+      "end_time": 183.75,
+      "text": "मालूम नहीं है मन कब भरेगा। आप एक और कैडबरी निकाल के गए और वापस आप इसी पे हैं। अभी भी आप कैडबरी पे ही हैं। आप कैडबरी एक और खाली है। अभी भी यहीं पे आए हैं। जब आपको लगेगा कि अब हमको कैडबरी नहीं खाना है। जब हमको कैडबरी नहीं खाना है तो आप किटकैट पर जाएंगे तो आप किटकैट पर जाएंगे। Kitcat पे भी आप सेम काम करेंगे ना। आप यहां पे आके खड़े हो गए। आपको मान लो अच्छा लगता है किट तो आप एक किटकैट खाए लेकिन अगर आप वो किटकैट खाएंगे आप आगे नहीं बढ़ रहे हैं। वहीं रुकेंगे।",
+      "source": "caption",
+      "english_text": "Don't know when my mind will be filled. You take out another Cadbury and you're back at it. You are still at Cadbury. You Cadbury is another blank. Still here. When you feel that we don't have to eat Cadbury anymore. When we don't want to eat Cadbury, we go to KitKat, we go to KitKat. You will do the same work on Kitcat also. You came and stood here. Suppose you like Kit, then you eat one KitKat, but if you eat that KitKat, you are not moving forward. Will stay there."
+    },
+    {
+      "start_time": 183.76,
+      "end_time": 217.67,
+      "text": "वहीं रुकेंगे। अगर आपको मन करता है कि एक और किटकैट खाना है तो एक और बार किटकैट खाइए। लेकिन अभी भी आगे नहीं बढ़ना है। वहीं रुकना है। जब आपको लगता है कि किटकैट नहीं खाना है तो आप आगे बढ़ते हैं। तो आप आगे बढ़ते हैं। तो आप क्या कर रहे हैं? अगर आप किसी चॉकलेट पे खड़े हैं। अगर आप किसी चॉकलेट पे खड़े हैं। अगर आपको लगता है कि ये हमको नहीं खाना है। हो सकता है आपका मन भर गया हो या आपको पसंद ही नहीं हो। आपको मंच पसंद ही नहीं है। अगर आपको नहीं खाना है, अगर आपको नहीं खाना है, आप नेक्स्ट चॉकलेट की तरफ बड़े आसानी से चले जाते हैं। लेकिन लेकिन लेकिन अगर आपको खाना है, वो खाना है तो आप खाते हैं और",
+      "source": "caption",
+      "english_text": "Will stay there. If you feel like eating another KitKat, then eat the KitKat one more time. But still don't move forward. Have to wait there. When you feel like not eating KitKat, you move ahead. So you move on. So what are you doing? If you are standing on some chocolate. If you are standing on some chocolate. If you think that we should not eat this. Maybe you are full or you just don't like it. You don't like the stage at all. If you don't want to eat, if you don't want to eat, you move on to the next chocolate very easily. but but but if you have to eat, you have to eat, then you eat and"
+    },
+    {
+      "start_time": 217.68,
+      "end_time": 251.589,
+      "text": "अगले पे नहीं जाते हैं। वहीं खड़े हो के खाते हैं क्योंकि आपको मालूम नहीं कि कितना खाना है। हमको हो सकता है 100 खाना हो। यहीं खड़े रहो क्योंकि वो वापस नहीं आने देगा मैनेजर। अगर आपको खाना होता है तो आप यहीं पे खड़े होकर खाते हैं। ये आपको लग रहा होगा अभी बहुत बेतुका कि ये क्या बता रहा है? लेकिन ये हम बता रहे हैं क्योंकि बहुत रिलेटेबल है। आप यही करेंगे ना और कोई और कोई चीज तो नहीं करेंगे। आपको पता नहीं है ना कि कितना खा सकते हैं। बहुत सारा खाने का मन करेगा। तो आप यही करेंगे ना। जब तक आपका मन नहीं भर जाएगा तब तक उसको लेके खाते रहेंगे और कैडबरी पे रुके रहेंगे। जब आपको लगता है कि किसी चॉकलेट को नहीं खाना है तो आप अगले चॉकलेट में बढ़ते हैं। तो ये बहुत",
+      "source": "caption",
+      "english_text": "Don't go to the next one. You eat while standing there because you don't know how much to eat. We may have to eat 100. Stand here because he won't let you come back, manager. If you have to eat, you eat while standing here. This must be seeming very absurd to you right now, what is he saying? But we are telling this because it is very relatable. You will do this only and will not do anything else. You don't know how much you can eat. Will feel like eating a lot. So this is what you will do, right? You will keep eating it until you feel full and stop at Cadbury. When you feel like you can't eat any chocolate, you move on to the next chocolate. so this is very"
+    },
+    {
+      "start_time": 251.599,
+      "end_time": 279.27,
+      "text": "रिलेटेबल है। बहुत ह्यूमन एग्जांपल है। आगे वाली वीडियो में आपको समझ में आ जाएगा कि हम इसकी बात क्यों किए थे। इसकी बात करनी जरूरी थी। आपको नहीं समझ में आता आगे। हमको फील हो गया था कि नहीं आएगा समझ में। अब आगे बढ़िए। अब आपको समझ में आना चाहिए और शुरू करते हैं वीडियो। तो देखिए क्वेश्चन सबसे पहले हम समझाते हैं। थोड़ा आपको लगेगा कि क्वेश्चन बड़ा है लेकिन जो लोग रिकर्शन सीरीज देखते हुए आ रहे हैं आपको लगेगा कि हां जी बहुत बेसिक सा क्वेश्चन है। क्या बार-बार सेम कराते हैं? तो ये आपको लगेगा अगर आप सारे देखते हुए आ रहे हैं तो अगर आप पहली बार इस चैनल पे आके स्टमबल हो गए हैं तो वो नहीं लगेगा।",
+      "source": "caption",
+      "english_text": "Is relatable. It is a very human example. In the following video you will understand why we talked about this. It was necessary to talk about it. You don't understand further. We felt that he would not understand. Now go ahead. Now you should understand and let's start the video. So see, first let us explain the question. You may feel that the question is big but those who are watching the recursion series will feel that yes, it is a very basic question. Do you order beans again and again? So you will feel this if you have been watching all the time, then if you have stumbled on this channel for the first time then it will not feel that."
+    },
+    {
+      "start_time": 279.28,
+      "end_time": 313.909,
+      "text": "चलिए आपको बोला गया है कि आपको एक क्या दिया हुआ है? एरे जिसमें डिस्टिंक्ट इंटीजर्स हैं। है ना? डिस्टिंक्ट इंटीजर्स हैं और पॉजिटिव इंटीजर्स हैं। ऐसा भी दिया हुआ है। डिस्टिंक्ट पॉजिटिव इंटीजर्स मतलब पॉजिटिव नंबर्स हैं। सारे अलग-अलग हैं। अच्छा आपको एक टारगेट दिया हुआ है। आपको एक टारगेट भी दिया हुआ है। अच्छा आपका काम क्या है? एरे के सारे यूनिक कॉम्बिनेशन फाइंड करने हैं आपको। सारे यूनिक कॉम्बिनेशन फाइंड करने हैं। लेकिन वो कौन से यूनिक कॉम्बिनेशन? जिनका भी सम जिनका भी सम इक्वल इक्वल टू टारगेट हो। तो ऐसा",
+      "source": "caption",
+      "english_text": "Come on, you have been told what one has been given to you? Array containing distinct integers. Isn't it? Are distinct integers and are positive integers. This is also given. Distinct positive integers mean positive numbers. Everyone is different. Well, you have been given a target. You have also been given a target. ok what is your job? You have to find all the unique combinations of the array. All unique combinations have to be found. But which unique combinations are they? Whichever sum is equal to the target. so like this"
+    },
+    {
+      "start_time": 313.919,
+      "end_time": 347.67,
+      "text": "क्वेश्चन हम लोग पहले देख चुके हैं जहां आपको एरे का सारा परम्यूटेशन फाइंड करना था। फॉर एग्जांपल अगर एरे अगर 1 2 3 है तो आपको सारा करना रहता था कि एक एम्प्टी एरे कर दो एक वन टू कर दो एक वन थ्री कर दो एक टू थ्री मतलब सारे सबसेट सबसेट प्रिंटिंग वाला याद कीजिए। यहां पे भी वही है। लेकिन एक छोटी सी उसमें दिक्कत है कि आपको ना वही वाले सबसेट कॉम्बिनेशन को आप क्या समझिए? कॉम्बिनेशन को आप सबसेट समझिए। सबसेट का क्या मतलब होता है? एरे के कुछ एलिमेंट्स होंगे कुछ नहीं होंगे। तो वही है। लेकिन ये जो भी आप सबसेट है ना सबसेट जो भी आपका रहेगा इनका जिनका सम इक्वल इक्वल टू टारगेट हो उन्हीं सबसेट को अपने",
+      "source": "caption",
+      "english_text": "We have seen the question earlier where you had to find all the permutations of an array. For example, if the array is 1 2 3, then all you had to do was make an empty array, make one one, make one three, make one two three, that is, remember all the subsets. It is the same here also. But there is a small problem in that, what do you understand by not being the same subset combination? Consider the combination as a subset. What does subset mean? The array will contain some elements and some will not. So that's it. But whatever is your subset or whatever subset will be yours, those whose sum is equal to target, only those subsets will be yours."
+    },
+    {
+      "start_time": 347.68,
+      "end_time": 380.71,
+      "text": "आंसर में इंक्लूड करना है। तो ये प्रॉब्लम क्या है? सेम प्रॉब्लम है जनरेट सबसेट। लेकिन जिस सबसेट का सम इस टारगेट के इक्वल हो जो कि आपको दिया हुआ है क्वेश्चन में। सिर्फ उसी सबसेट को अपने आंसर में इंक्लूड करना है। और एक छोटी सी बात और एक छोटी सी बात अलग क्या है कि आप सबसेट वाले में क्या करते थे? ईच एलिमेंट के लिए आपके पास कितना चॉइस होता था? या तो आप उसको लेते थे या तो आप नहीं लेते थे कि अगर मान लीजिए ये आपका एरे है। हम ये बोलना चाह रहे हैं 1 2 3 और आप इसका सबसेट बनाते हैं तो मान लीजिए आप वन और टू बनाए तो देखिए वन इस सबसेट में एक ही बार आएगा। टू इस",
+      "source": "caption",
+      "english_text": "To be included in the answer. So what is this problem? The same problem is generated subsets. But the subset whose sum is equal to this target which is given to you in the question. Only that subset has to be included in your answer. And one little thing and one little thing that's different from what you used to do in the subset one? How much choice did you have for each element? Either you took it or you did not take it, if you assume this is your array. What we want to say is 1 2 3 and you make a subset of it, so suppose you make one and two, then see that one will appear only once in this subset. to this"
+    },
+    {
+      "start_time": 380.72,
+      "end_time": 410.23,
+      "text": "सबसेट में एक ही बार आया। लेकिन इसमें एक और यूनिक चीज है ना आप इसमें इस क्वेश्चन में इस पर्टिकुलर क्वेश्चन में कॉम्बिनेशन सम में किसी भी एलिमेंट को किसी भी एलिमेंट को कितनी भी बार ले सकते हैं कितने भी बार ले सकते हैं कितने भी बार मतलब बार-बार उसी एलिमेंट को भी ले सकते हैं। आपको एलिमेंट नहीं लेने का मन है कोई बात नहीं। लेकिन अगर आप उस एलिमेंट को ले चुके हैं। वन को ले चुके हैं। आपको मन करता है एक और वन ले लें। आप बिल्कुल ले सकते हैं। आपको मन कर एक बार और वन ले ले बिल्कुल ले सकते हैं। आपको मन करता है आप अब रुक जाते हैं। अब टू ले लेते हैं।",
+      "source": "caption",
+      "english_text": "Appeared only once in the subset. But there is another unique thing in this, in this question, in this particular question, you can take any element in the combination sum any number of times, any number of times, any number of times, meaning you can take the same element again and again. It's okay if you don't want to take the element. But if you have taken that element. Have taken the forest. You feel like taking another one. You can definitely take it. You can definitely take one more time if you feel like it. You feel like stopping now. Now let's take two."
+    },
+    {
+      "start_time": 410.24,
+      "end_time": 443.11,
+      "text": "बिल्कुल मतलब जो मन है वो करिए। हर एलिमेंट को बहुत बार ले सकते हैं। नहीं भी ले सकते हैं। तो ये सबसेट की तरह नहीं है कि या तो हर एलिमेंट को लेना है या तो नहीं लेना। नहीं हर एलिमेंट को लेना है या हर एलिमेंट को पांच बार लेना है। पांच बार ले लीजिए। 10 बार लेना 10 बार ले लीजिए। ये करते हुए जिन भी कॉम्बिनेशन का सम टारगेट के इक्वल आएगा आपको वो अपने रिजल्ट में प्रिंट करना है। फॉर एग्जांपल फॉर एग्जांपल अ अगर हम एक एरे का एग्जांपल लें एक एरे आपको ऐसे दिया हुआ है 2 3 6 और 7 0 1 2 3 ठीक है? आपका जो टारगेट है वो है",
+      "source": "caption",
+      "english_text": "Of course it means do whatever you feel like doing. Each element can be taken multiple times. Can't take it either. So it is not like a subset that either every element has to be taken or not. No, every element has to be taken or every element has to be taken five times. Take it five times. Take it 10 times. Take it 10 times. While doing this, you have to print the sum of the combinations equal to the target in your result. For example, if we take an example of an array, an array is given to you like this 2 3 6 and 7 0 1 2 3, right? Your target is"
+    },
+    {
+      "start_time": 443.12,
+      "end_time": 468.629,
+      "text": "सेवन। तो देखिए इसमें हम एक काम कर सकते हैं। एक सबसेट में टू लें। ये वाला टू ले लिया। अच्छा एक और बार लो। एक और बार मैंने मन नहीं भरा। एक और बार लो। ठीक है? ले लिया। एक और बार ले लिए। अब टू को रहने दो। अब थ्री को ले लो। अब थ्री को ले लो। ये देखिए। इसका सम क्या होगा? सेवन। तो ये आपका एक आंसर है। एक और आप क्या कर सकते हैं? सिर्फ सेवन। ये भी आपका एक आंसर है। क्या इसके अलावा कोई भी और आंसर पॉसिबल है? नहीं। कोई भी और आंसर पॉसिबल नहीं है।",
+      "source": "caption",
+      "english_text": "Seven. So see, we can do one thing in this. Take two in a subset. Took this one. Okay, have one more time. Once again I was not satisfied. Have one more time. Ok? Took it. Took one more time. Now let two be. Now take three. Now take three. Look at this. What will be its sum? Seven. So this is your answer. What else can you do? Only intake. This is also your answer. Is any other answer possible besides this? No. No other answer is possible."
+    },
+    {
+      "start_time": 468.639,
+      "end_time": 495.589,
+      "text": "आप देख लीजिए। आपको जितना परम्यूटेशन कॉम्बिनेशन करना है सब ले ले के देख लीजिए। और कोई आंसर पॉसिबल नहीं है जिसका सम सेवन आ जाए। सिर्फ यही दोनों आंसर पॉसिबल हैं। तो ये दोनों सबसेट आपके आंसर में होने चाहिए। आपके वेक्टर ऑफ़ वेक्टर ऑफ़ इंटीजर में ये दोनों होने चाहिए। आइए इसको अपने फ्लो चार्ट से सॉल्व करते हैं। तो हम लोग एक कल या पहले जो भी रिकर्शन की वीडियो आई थी उसमें एक स्टेप वाइज प्लान बनाए थे। फाइव स्टेप प्लान था। हां सबसे पहला स्टेप था कि आइडेंटिफाई स्टेजेस करिए। ये जस्ट हम रिवीजन करवा रहे हैं।",
+      "source": "caption",
+      "english_text": "You take a look. Try taking as many permutation combinations as you want. There is no other answer possible which can be found equally. Only these two answers are possible. So both these subsets should be in your answer. Your vector of vectors of integers should contain both of these. Let's solve this with our flow chart. So we had made a step wise plan in the video of recursion that came yesterday or earlier. There was a five step plan. Yes, the first step was to identify the stages. We are just getting this revision done."
+    },
+    {
+      "start_time": 495.599,
+      "end_time": 522.63,
+      "text": "उसके बाद वन बाय वन स्टेजेस कैसे जाना है वो देख लीजिए। चॉइससेस क्या है? चॉइससेस मतलब हर स्टेज में आपके पास चॉइस क्या है? आप क्या कर सकते हैं? मतलब या तो जो मन करे या तो अगर कोई कंडीशन हो तो। अच्छा। उसके बाद वो चॉइस मेक वन चॉइस। वो मेक वन चॉइस के समय अपने डायरी में उस चॉइस को लिखना होता था। आगे वाले स्टेज पे जाना होता था और फिर वापस आके डायरी में से उसको रिवर्स करना होता था। और जब आप सारे चॉइससेस खत्म कर लें तो अपनी डायरी देखिए।",
+      "source": "caption",
+      "english_text": "After that see how to go one by one stages. What are choices? Choices means what choices do you have in each stage? What can you do? Meaning either whatever you feel like or if there is any condition. Good. After that that choice make one choice. At the time of making one choice, one had to write that choice in one's diary. One had to go to the next stage and then come back and reverse it from the diary. And when you finish all the choices, look at your diary."
+    },
+    {
+      "start_time": 522.64,
+      "end_time": 552.63,
+      "text": "जो भी आपके डायरी में होगा वो आपका आंसर होता था। तो ये फाइव स्टेप प्लान था। फाइव स्टेप प्लान देखते हैं। आइए देखिए क्या करते हैं। देखिए ये फाइव स्टेप प्लान से आप हम बोले थे कोई भी क्वेश्चन बन सकता है। उस पर अभी तक का है। कोई भी क्वेश्चन बन सकता है। आइए सबसे पहला स्टेजेस क्या है? मतलब कितने मौके हैं आपके पास डिसीजन लेने के? तो देखिए स्टेजेस कितने मौके हैं आपके पास? आपके पास एरे है। एरे का हर एलिमेंट एरे का हर एलिमेंट आपके लिए मौका है। वहां पे आप डिसीजन लेना है आपको कि इसको लें कि नहीं लें? लें कि नहीं लें?",
+      "source": "caption",
+      "english_text": "Whatever was in your diary was your answer. So this was the five step plan. Let's look at the five step plan. Let's see what they do. See, with this five step plan, you and I told that any question can be solved. So far on that. Any question can be asked. Come, what are the first stages? Meaning, how many chances do you have to take a decision? So look at the stages, how many chances do you have? You have an array. Every element of the array Every element of the array is an opportunity for you. There you have to take a decision whether to take it or not? To take or not to take?"
+    },
+    {
+      "start_time": 552.64,
+      "end_time": 586.71,
+      "text": "हर एलिमेंट आपका एक स्टेज है। हर एलिमेंट का मतलब हर एक इंडेक्स आपके लिए स्टेज है। हर एक इंडेक्स आपके लिए स्टेज है। तो सिंपल बात है। किसी भी एरे या स्ट्रिंग के क्वेश्चन में स्टेजेस क्या होंगे? उसके जो इंडेक्स या उसके जो एलिमेंट होंगे वही स्टेजेस होता है। ठीक है? डिफरेंट स्टेजेस पर जाना कैसा है? इंडेक्स की मदद से। इंडेक्स की मदद से। हम इंडेक्स जीरो से शुरू करेंगे। और जब हम जब मेरा idx इक्वल इक्वल टू n हो जाएगा तो मतलब कि सारे स्टेजेस खत्म हो गए तो वहां रुक जाएंगे। बिल्कुल। चॉइस क्या है? सबसे इंपॉर्टेंट क्वेश्चन चॉइस क्या है? हर स्टेज पे चॉइस क्या है? हर स्टेज पे चॉइस क्या है? देखिए हर स्टेज का मतलब कि जब आप",
+      "source": "caption",
+      "english_text": "Every element is your stage. Every element means every index is a stage for you. Each index is a stage for you. So it's a simple thing. What will be the stages in any array or string query? Its index or its elements are its stages. Ok? What's it like going through different stages? With the help of index. With the help of index. We'll start at index zero. And when my idx becomes equal to n, which means all the stages are over, we will stop there. Absolutely. What is choice? What is the most important question choice? What are the choices at each stage? What are the choices at each stage? See what each stage means when you"
+    },
+    {
+      "start_time": 586.72,
+      "end_time": 615.67,
+      "text": "किसी एक इंडेक्स पे खड़े हैं। मान लीजिए आप यहां पे ये वाला एरे है 2 3 0 1 2 आप यहां पे खड़े हैं। इस स्टेज पे आपके पास क्या चॉइस है? इस स्टेज पे आपके पास क्या चॉइस है? देखिए सबसे पहला चॉइस तो बहुत सिंपल चॉइस है कि नहीं लेना है। नहीं लेना है। देखिए इस क्वेश्चन में वही आपको कॉम्प्लेक्स लग रहा है ना कि एक एलिमेंट को बार-बार ले सकते हैं। लेकिन बार-बार लेने का ये मतलब नहीं है कि उसको लेना ही है। एक एक सबसे अच्छा चॉइस है कि उसको नहीं ही लेना है। बिल्कुल ही इग्नोर कर देना नहीं लेना है। तो ये तो सबसे इजी चॉइस है। इसमें तो कुछ करना ही नहीं है।",
+      "source": "caption",
+      "english_text": "Standing on one index. Suppose you are standing here, this is the array 2 3 0 1 2. What choice do you have at this stage? What choice do you have at this stage? See, the first choice is a very simple choice whether to take it or not. Don't want to take it. See, in this question you are finding it complex and not that you can take one element again and again. But taking it again and again does not mean that it has to be taken. The best choice is not to take it. Don't ignore it at all. So this is the easiest choice. There is nothing to be done in this."
+    },
+    {
+      "start_time": 615.68,
+      "end_time": 649.99,
+      "text": "सीधा आगे वाले इंडेक्स पे जाना है। इसमें तो सीधा आगे वाले इंडेक्स पे चले जाना है। अच्छा एक और चॉइस है आपके पास। एक और चॉइस है। आप इसको ले सकते हैं। आप इसको ले सकते हैं। आप इसको ले सकते हैं। मतलब इस इंडेक्स को अपने आंसर में इंक्लूड कर सकते हैं। इस इंडेक्स को अपने आंसर में इंक्लूड कर सकते हैं। लेकिन यहां पे कैच क्या है कि जब हम लोग जनरेट सबसेट या कोई भी ऐसा प्रॉब्लम करते थे जहां आप उसको ले लेते थे और नहीं लेते थे। आप आगे वाले स्टेज पे जाते ही जाते थे। इसका हम क्या मतलब बोलना चाह रहे हैं? मान लीजिए आप यहां पे डोर वन पे खड़े थे। आप डोर वन पे खड़े थे। आपके",
+      "source": "caption",
+      "english_text": "Go straight to the next index. In this we have to go straight to the next index. Well, you have another choice. There is another choice. You can take it. You can take it. You can take it. Meaning, you can include this index in your answer. You can include this index in your answer. But what is the catch here that when we used to do generate subset or any such problem where you used to take it and not take it. You used to go to the next stage. What do we mean by this? Suppose you were standing here at door one. You were standing at door one. your"
+    },
+    {
+      "start_time": 650.0,
+      "end_time": 683.269,
+      "text": "पास दो चॉइससेस था। एक आप लेफ्ट जा सकते थे और राइट जा सकते थे। तो नो मैटर आप लेफ्ट का चॉइस करें या राइट का चॉइस करें। आप दोनों केसेस में डोर टू पे पहुंच जाते थे। दोनों केसेस में डोर टू पे पहुंच जाते थे। अगर आप डोर वन पे लेफ्ट खोलते हैं तो भी आप डोर टू पे जाते थे। डोर वन पे लाइट खोलते हैं तो भी आप डोर टू पे जाते थे। लेकिन यहां पे वैसा नहीं है। यहां पे आप ऐसा मान के चलिए आप डोर वन को बार-बार खोल सकते हैं। आप डोर वन को बार-बार खोल सकते हैं। क्या? बार-बार खोल सकते हैं। मतलब कि यहां पर यह भी पॉसिबल है कि आप डोर वन पे",
+      "source": "caption",
+      "english_text": "There were two choices. One, you could go left or you could go right. So no matter whether you choose left or right. You used to reach door to door in both the cases. In both the cases they would reach door to door. Even if you open left on door one, you would still go to door two. Even if you open the light on door one, you would go to door two. But it is not like that here. Here you can assume that you can open door one again and again. You can open Door One again and again. What? Can be opened again and again. Meaning that here it is also possible that you can pay on door one."
+    },
+    {
+      "start_time": 683.279,
+      "end_time": 716.949,
+      "text": "आए। आपने डिसाइड किया कि हमको लेफ्ट लेना है। लेकिन वो लेफ्ट लेके आप वापस डोर वन पे आ गए। आप वापस डोर वन पे आ गए। सॉरी ये लेफ्ट लेके आप वापस डोर वन पे आ गए। कहां आ गए? वापस डोर वन पे आ गए। अब ये भी कर सकते हैं। राइट लेके वापस डोर वन पे आ गए। वापस डोर वन पे आ गए। अच्छा। तो मतलब हमको पता चला कि किसी एक इंडेक्स पे मान लीजिए आप idx = 0 पे खड़े हैं। idx = 0 पे खड़े हैं। एक सबसे अच्छा चॉइस तो हो सकता है कि नहीं लेना है। नहीं लेना है। ये बेकार है नहीं लेना है। बिल्कुल सही बात है। तो",
+      "source": "caption",
+      "english_text": "Came. You decided that we have to take left. But taking that left you came back to door one. You came back to door one. Sorry, after taking this left you came back to door one. Where have you come? Came back to door one. Now you can do this too. Took the right and came back to door one. Came back to door one. Good. So that means we came to know that suppose you are standing on any one index at idx = 0. Standing at idx = 0. The best choice may be not to take it. Don't want to take it. This is useless, don't take it. That is absolutely correct. so"
+    },
+    {
+      "start_time": 716.959,
+      "end_time": 750.71,
+      "text": "इसमें तो नहीं लेना है तो आप फिर जाइए नेक्स्ट स्टेज पे। आप क्या करिएगा? idx = 0 पे आप सीधा idx = 1 पे आ जाइए। इस पे डिसीजन लेंगे। लेकिन अगर आपको ऐसा है कि लेना है लेना है। तो ये लेना है को कितनी बार अभी लिए? आप एक बार लिए। आप एक बार idx = 0 मान लीजिए इसका टू था तो इसको एक बार अपने डायरी में आप लिखिए लेकिन आप इसको बार-बार भी तो ले सकते हैं। आप इसको दो बार भी तो ले सकते हैं। तीन बार भी तो ले सकते हैं। चार बार भी तो ले सकते हैं। अगर आप इसको लेते हैं तो अभी idx = 1 पे मत जाइए। क्योंकि अगर आप idx = 1 पे चले गए तो इसको फिर से कैसे लेने का चॉइस मिलेगा? इसको फिर से लेने का चॉइस चाहिए।",
+      "source": "caption",
+      "english_text": "If you don't want to take part in this then go to the next stage. What will you do? At idx = 0 you come directly to idx = 1. Will take a decision on this. लेकिन अगर आपको ऐसा है कि लेना है लेना है। तो ये लेना है को कितनी बार अभी लिए? आप एक बार लिए। आप एक बार idx = 0 मान लीजिए इसका टू था तो इसको एक बार अपने डायरी में आप लिखिए लेकिन आप इसको बार-बार भी तो ले सकते हैं। आप इसको दो बार भी तो ले सकते हैं। तीन बार भी तो ले सकते हैं। चार बार भी तो ले सकते हैं। अगर आप इसको लेते हैं तो अभी idx = 1 पे मत जाइए। क्योंकि अगर आप idx = 1 पे चले गए तो इसको फिर से कैसे लेने का चॉइस मिलेगा? इसको फिर से लेने का चॉइस चाहिए।"
+    },
+    {
+      "start_time": 750.72,
+      "end_time": 784.87,
+      "text": "हमको कुछ ऐसा चाहिए जिसप हम बार-बार बार-बार इस पे आते रहें। बार-बार बार-बार आते रहें। तो आप इसको जब लेते हैं ना इंडेक्स इनक्रीस मत कीजिए। वापस idx = 0 पे आ जाइए। वापस idx = 0 पे आ जाइए। लेकिन लेकिन लेकिन अब कोई बोलेगा कि सर ये फिर खत्म कैसे होगा? ये तो कभी खत्म ही नहीं होगा। ये खत्म क्यों नहीं होगा? क्योंकि मान लीजिए idx = 0 पे आप खड़े हैं। आपका एलिमेंट है टू। आपकी डायरी शुरू में खाली है। आपकी डायरी शुरू में खाली है। हम क्या बोले कि अगर नहीं लेना है तो idx = 1 पे चले जाइए। लेना है अगर तो आप idx = 0 पे बार-बार वापस आते रहिए। तो आप तो बोलेंगे",
+      "source": "caption",
+      "english_text": "हमको कुछ ऐसा चाहिए जिसप हम बार-बार बार-बार इस पे आते रहें। बार-बार बार-बार आते रहें। तो आप इसको जब लेते हैं ना इंडेक्स इनक्रीस मत कीजिए। वापस idx = 0 पे आ जाइए। वापस idx = 0 पे आ जाइए। लेकिन लेकिन लेकिन अब कोई बोलेगा कि सर ये फिर खत्म कैसे होगा? ये तो कभी खत्म ही नहीं होगा। ये खत्म क्यों नहीं होगा? क्योंकि मान लीजिए idx = 0 पे आप खड़े हैं। आपका एलिमेंट है टू। आपकी डायरी शुरू में खाली है। आपकी डायरी शुरू में खाली है। हम क्या बोले कि अगर नहीं लेना है तो idx = 1 पे चले जाइए। लेना है अगर तो आप idx = 0 पे बार-बार वापस आते रहिए। तो आप तो बोलेंगे"
+    },
+    {
+      "start_time": 784.88,
+      "end_time": 818.949,
+      "text": "कि अच्छा तो मान लीजिए यहां कि हम ले लिए और अपनी डायरी में क्या लिख लिए कि हम टू ले लिए। अच्छा आप बोल रहे हैं कि लेके वापस idx = 0 पे आ जाओ। फिर से idx = 0 पे वही काम होगा। इसको आप बोलेंगे कि इसको ले लो। इसको डायरी में लिख लो और वापस इस पे आ जाओ। फिर वही काम होगा। वापस इस पे आ जाओ। फिर वही काम होगा। वापस इस पे तो ये खत्म कब होगा? ये तो इनफाइनाइट लूप पे चला जाएगा। नहीं नहीं जाएगा। क्यों नहीं जाएगा? देखिए क्वेश्चन आपको क्या बोलता है आपके लिए यही ईजी बनाने के लिए। सारा नंबर पॉजिटिव है। सारा नंबर पॉजिटिव है। सारा नंबर पॉजिटिव है। आपका सम किसके बराबर",
+      "source": "caption",
+      "english_text": "Well, let's assume here that we took it and what we wrote in our diary that we took two. Well, you are saying that come back to idx = 0. Again the same thing will happen at idx = 0. You will tell him to take this. Write it down in your diary and come back to it. Then the same thing will happen. Come back to this. Then the same thing will happen. Back to this, when will this end? This will go on an infinite loop. No will not go. Why won't he go? See what the question tells you to make it easier for you. The whole number is positive. The whole number is positive. The whole number is positive. what is yours equal to?"
+    },
+    {
+      "start_time": 818.959,
+      "end_time": 853.35,
+      "text": "होना चाहिए? टारगेट के बराबर। आपका सम टारगेट के बराबर होना चाहिए। अच्छा मान लीजिए किसी स्टेज पे किसी स्टेज पे आप किसी idx = 2 पे आए हुए हैं। ठीक है? मान लीजिए किसी तरह पहुंच गए। आपका अभी का सम अभी का सम मान लीजिए कितना है? 10 हो गया है। आपका अभी का सम 10 हो चुका है। ठीक है? आपका टारगेट है 13। आपका टारगेट है 12। आपका टारगेट है 12। अच्छा। अब क्या करेंगे? मान लीजिए जो एरे ऑफ़ idx है जिस एलिमेंट को आप कोशिश कर रहे हैं कि इसको हम लें या ना लें वो है फाइव वो है फाइव ठीक है अच्छा क्या आपको idx = 2 को एक बार",
+      "source": "caption",
+      "english_text": "Should it happen? Equal to target. Your sum should be equal to the target. Well, suppose you have come to some stage at idx = 2. Ok? Suppose somehow we reached. What is your current sum, let's say? It's 10. Your current sum is 10. Ok? Your target is 13. Your target is 12. Your target is 12. Good. What will you do now? Suppose the array of idx, the element which you are trying to take or not, is five, that is five, okay, do you have to check idx = 2 once?"
+    },
+    {
+      "start_time": 853.36,
+      "end_time": 883.829,
+      "text": "भी लेने का सोचना चाहिए नहीं सोचना चाहिए क्यों नहीं सोचना चाहिए क्योंकि अगर आप इसको लेते हैं अगर आप इसको ले लेंगे ले लेंगे और वापस idx = 2 पे आएंगे तो ये सम क्या बन जाएगा ये सम क्या बन जाएगा अगर आप इस फाइव को ले लेते हैं इंक्लूड कर लेते हैं तो आपको इसको इंक्लूड करना पड़ेगा आपके सम में आपका सम 15 बन जाएगा जाएगा। आपका सम 15 बन जाएगा। अच्छा। अब आगे कुछ भी हो आगे एरे में तो सारे पॉजिटिव इंटीजर हैं। क्या आपका ये 15 वाला सम कभी भी टारगेट के इक्वल हो पाएगा? नहीं हो पाएगा।",
+      "source": "caption",
+      "english_text": "Why should you not think because if you take this, if you take this and come back to idx = 2, then what will this sum become? What will this sum become? If you take this five and include it, then you will have to include it, your sum will become 15 in your sum. Your sum will become 15. Good. Now whatever happens next, the next array contains all positive integers. Will your score of 15 ever be equal to the target? Will not be possible."
+    },
+    {
+      "start_time": 883.839,
+      "end_time": 916.629,
+      "text": "अब इसमें आप कुछ भी कर लीजिए। आगे वाले कुछ ना लीजिए। आगे वाले को 100 बार ले लीजिए। कुछ भी करिए। पॉजिटिव नंबर है सारे। 15 12 बन ही नहीं सकता है बिना नेगेटिव नंबर के। तो यहां पे एक फंडा मिल गया ना। अगर आप किसी आईडीएक्स पे आते हैं और अगर आपको पता चलता है कि जो आप सम है यहां पे सम क्या है? सम आपकी डायरी है। सम आपकी डायरी की तरह है कि जब भी आप कोई एलिमेंट लेंगे जब आप उस लेने का फैसला करेंगे तो आप क्या करेंगे? सम प्लस = एरे ऑफ़ idx और जब वो काम हो जाएगा तो रिवर्स",
+      "source": "caption",
+      "english_text": "Now you can do anything in it. Don't take anything next. Take the next one 100 times. Do anything. All are positive numbers. 15 cannot become 12 without a negative number. So a fund has been found here. If you come to an IDX and you find out that you are even, what is the even here? Sam is your diary. It's like your diary, whenever you take an element, when you decide to take it, what will you do? sum plus = array of idx and when done reverse"
+    },
+    {
+      "start_time": 916.639,
+      "end_time": 949.189,
+      "text": "कैसे करेंगे? जस्ट इसका उल्टा सम माइनस = एरे ऑफ़ idx लेकिन अगर किसी इंडेक्स पे आपको पता चलता है अगर आपको ये पता चलता है कि सम प्लस एरे ऑफ़ idx ग्रेटर दैन टारगेट हो जाएगा। ये ग्रेटर दैन टारगेट हो जाएगा। इस केस में आपके पास कितने चॉइससेस बचते हैं? सिर्फ एक चॉइस बचता है कि नहीं लेना है। क्या नहीं लेना है भैया? नहीं लेना है। बिल्कुल नहीं लेना है। बिल्कुल नहीं लेना है। कोई फायदा नहीं है लेने का। और अगर ऐसा नहीं होता है और अगर ऐसा नहीं होता है तो आपके पास दो चॉइससेस हैं। तो",
+      "source": "caption",
+      "english_text": "How to do? Just the opposite sum minus = array of idx but if on any index you find out that sum plus array of idx will be greater than the target. This will be greater than target. How many choices are you left with in this case? Only one choice remains whether not to take it. What don't you want to take, brother? Don't want to take it. Not to be taken at all. Not to be taken at all. There is no use in taking it. And if it doesn't and if it doesn't then you have two choices. so"
+    },
+    {
+      "start_time": 949.199,
+      "end_time": 981.43,
+      "text": "आपके पास दो चॉइससेस हैं। आप idx = 0 पे खड़े हैं। पहला चॉइस आपके पास नहीं लेने का चॉइस तो हमेशा है। नहीं लेने का चॉइस तो हमेशा है। idx = 1 पे चले जाइए। और अगर आपको लेना है और अगर लेना है तो लीजिए। लेकिन आप क्योंकि आप इसमें बार-बार बार-बार बार-बार ले सकते हैं। रिवज़िट कीजिए idx = 0 को। रिवज़िट कर लीजिए idx = 0 को। एक और बार मौका दीजिए अपने आपको कि भैया तुमको जितना लेने का मन है उतना ले लो। उसके बाद थम जाना। उसके बाद थोड़ा थम जाना। ठीक है? उसके बाद क्या करना? थोड़ा सा थम जाना। चलो।",
+      "source": "caption",
+      "english_text": "You have two choices. You are standing at idx = 0. You always have the choice not to take the first choice. There is always the option not to take it. Go to idx = 1. And if you have to take it and if you have to take it then take it. But you can because you can take it again and again and again and again and again. Revisit idx = 0. Revisit idx = 0. Give yourself one more chance, brother, take as much as you feel like taking. After that stop. After that, calm down a bit. Ok? What to do after that? To calm down a bit. Let us go."
+    },
+    {
+      "start_time": 981.44,
+      "end_time": 1012.069,
+      "text": "तो हम उम्मीद करते हैं कि ये चीज आपको समझ में आई होगी कि हमको चॉइससेस में करना क्या है? देखिए चॉइससेस में स्टेज पे चॉइस तो आप समझ लिए कि लेना है नहीं लेना है। ठीक है? लेकिन नहीं लेके किस स्टेज पे जाना है। नहीं लेके अगले दरवाजे पे जाना है। लेकिन अगर आप ले लिए हैं तो क्योंकि आपके पास मौका है बार-बार बार-बार लेने का तो आप उसी दरवाजे पे बार-बार रिवजिट करते हैं। ये चीज कब खत्म होती है? जब आपको पता चलता है कि इस इंडेक्स को अगर हम ले लिए ना तो मेरा सम टारगेट से बड़ा हो जाएगा और फिर वो कभी नहीं हो पाएगा इक्वल टू टारगेट जो कि मेरा ऐ नहीं है। तो आप वहां पे रुक जाएंगे। वहां पे बोलेंगे कि भैया इसको लेने का तो सवाल ही पैदा नहीं होता है।",
+      "source": "caption",
+      "english_text": "So we hope that you have understood what we have to do in the choices? Look at the choices on the stage, then you will understand whether you have to take it or not. Ok? But not which stage to go to. No, you have to go to the next door. But if you have taken it, then because you have the opportunity to take it again and again, you revisit the same door again and again. When does this thing end? When you realize that if we take this index then my AI will be greater than the target and then it will never be equal to the target which is not my AI. So you will stop there. There they will say that brother, there is no question of taking it."
+    },
+    {
+      "start_time": 1012.079,
+      "end_time": 1046.789,
+      "text": "इसको हम नहीं लेंगे। चलिए अब इसको कोड में लिख लीजिए। सबसे पहले तो स्टेज के लिए आपको क्या चाहिए होगा? आपको एक इंडेक्स चाहिए होगा। ठीक है? तो हम फंक्शन में क्या-क्या पास करेंगे? हम लिख लेते हैं। सबसे पहले हम एरे पास करेंगे। एरे का n पास करेंगे। अ हम इंडेक्स भी पास करेंगे। अच्छा अ और क्या पास करेंगे आपकी डायरी सबसे मेन इंपॉर्टेंट जब आप चॉइस लेते हैं तो अपनी डायरी में आप लिखते हैं तो यहां पे आपको सबसेट रिटर्न कर रहे हैं तो एक तो ऑब्वियस सी बात है कि एक आपका डायरी होगा एक आपका डायरी होगा जिसमें आप चॉइससेस लिखेंगे ऑब्वियस सी बात ये भी है कि आपको",
+      "source": "caption",
+      "english_text": "We will not take this. Now let's write this in code. First of all, what will you need for the stage? You will need an index. Ok? So what will we pass in the function? We write down. First we will pass the array. Will pass n of the array. A We will also pass the index. Well, what else will you pass in your diary, the most important thing is that when you take a choice, you write in your diary, so here we are returning you a subset, so one obvious thing is that one will be your diary, one will be your diary in which you will write the choices, the obvious thing is also that you will"
+    },
+    {
+      "start_time": 1046.799,
+      "end_time": 1071.909,
+      "text": "सारे डायरीज चाहिए आपको सारे अच्छे वाले डायरीज चाहिए मतलब डायरीज में क्या लिखा होगा जो भी आप चॉइस मेक करके आए हैं जो भी आप सबसेट बना के आए हैं तो एक आपको वेक्टर ऑफ वेक्टर ऑफ इनपुट चाहिए होगा सारे डायरीज का कलेक्शन ये आपका रिजल्ट हो जाएगा। और हम एक काम करते हैं। हम एक इंक सम वेरिएबल भी ले लेते हैं। ये सम क्या बताएगा? सम भी एक तरीके का डायरी है। जब भी हम किसी एलिमेंट को लेंगे ना तो हम दो काम करेंगे। जब भी हम एलिमेंट को लेंगे तो हम दो काम करेंगे।",
+      "source": "caption",
+      "english_text": "You need all the diaries, you need all the good diaries, meaning what will be written in the diaries, whatever choice you have made, whatever subset you have made, then one thing you will need is a vector of vector of inputs. You will need a collection of all the diaries, this will be your result. And we do one thing. We also take an ink sum variable. What will this even tell? Sam is also a kind of diary. Whenever we take any element, we will do two things. Whenever we take an element we will do two things."
+    },
+    {
+      "start_time": 1071.919,
+      "end_time": 1106.47,
+      "text": "सबसे पहले तो उसको डायरी में पुश बैक कर देंगे। सबसे पहले तो हम उसको डायरी में पुश बैक कर देंगे। अगर लेंगे तो और क्या करेंगे कि सम प्लस = एरे ऑफ़ i। ये हो गया। जब उसका काम हो जाएगा तो दोनों को रिवर्स कर देंगे। सबसे पहले इसको रिवर्स कर दो। सम माइनस इक्व एरे ऑफ़ i और फिर इसको रिवर्स कर दो। पुश बैक का क्या रिवर्स होता है? पॉप बैक। तो एक डायरी के बजाय हम दो डायरी लेंगे क्योंकि हमको सम का बार-बार काम पड़ रहा है ना तो हम सम को इजी रखना चाहते हैं। इसीलिए आप चाहे तो एक से भी कर सकते हैं। आप बार-बार डायरी का सम निकाल लीजिए। कोई दिक्कत नहीं है। तो डायरी क्या कंटेन करता है? डायरी कंटेन करता है अभी तक आप क्या चुन के आए हैं? और",
+      "source": "caption",
+      "english_text": "First of all we will push it back in the diary. First of all, we will push it back in the diary. What else will we do if we take that sum plus = array of i. that'll be. When his work is done, he will reverse both. First reverse it. Sum minus equal array of i and then reverse it. What is the reverse of push back? Pop back. So instead of one diary, we will take two diaries because we are facing the problem of evens again and again and we want to keep the evens easy. That's why if you want, you can do it with just one. Check your diary again and again. There is no problem. So what does a diary contain? Diary Contents What have you chosen so far? and"
+    },
+    {
+      "start_time": 1106.48,
+      "end_time": 1141.43,
+      "text": "ये सम कंटेन करता है जो भी आपके डायरी में है उसका सम क्या है? 2 7 तो ये दोनों चीजें डायरी है आपकी। ठीक है? तो ये चीजें हम करेंगे। आइए इसका एल्गोरिदम या कोड जो भी होता है वह देखें। तो हम क्या करेंगे? सबसे पहले तो हम वॉइड आइए वॉइड फन इसमें सबसे पहले पास होगा एक मेरा एरे वेक्टर इंट a इंट n अ एक इंट idx जो कि मेरा अभी का है। अभी के इस इंडेक्स पे आपको डिसीजन लेना है। उसके बाद हम पास करेंगे एक वेक्टर इंट डायरी वेक्टर इंट",
+      "source": "caption",
+      "english_text": "It contains sum. What is the sum of whatever is in your diary? 2 7 So both these things are your diary. Ok? So we will do these things. Let's see its algorithm or whatever the code is. So what do we do? First of all, let's void let's void fun, first of all we will pass in this a my array vector int a int n a an int idx which is my current one. You have to take a decision on this current index. After that we will pass a vector int diary vector int"
+    },
+    {
+      "start_time": 1141.44,
+      "end_time": 1175.19,
+      "text": "डायरी और फिर हम एक इंट सम भी ले लेंगे और सारे डायरी का आंसर कहां पे है? फाइनल आंसर में क्या चाहिए आपको? सारे सबसेट तो वेक्टर ऑफ़ वेक्टर ऑफ़ इंट जो भी आपकी डायरी है ना उसका वेक्टर वेक्टर ऑफ़ वेक्टर ऑफ़ इंट ये फाइनल आंसर हो जाएगा आपका। ठीक है? आइए सबसे पहले सबसे पहले कब आप रुक जाते थे? कब आप रुक जाना रिकर्शन जब आपके पास चॉइस ही ना बचे। जब आगे का कुछ खत्म ही नहीं हो। सारे स्टेजेस खत्म हो गए। सारे स्टेजेस कब खत्म होते थे? इफ idx = n सब खत्म हो गया है। अब आपको क्या करना रहता था? जनरली जो डायरी में है वो लिख लेते थे। जनरली जो डायरी में है वो लिख",
+      "source": "caption",
+      "english_text": "Diary and then we will also take an int sum and where is the answer of all the diaries? What do you want in the final answer? All the subsets are vector of vector of int. Whatever your diary is, its vector vector of vector of int will be your final answer. Ok? First things first, when did you first stop? When do you stop recursion when you have no choice left? When there is no end to what lies ahead. All the stages are over. When did all the stages end? If idx = n it's all over. What did you have to do now? Generally he used to write whatever is in the diary. Write whatever is in your diary in general."
+    },
+    {
+      "start_time": 1175.2,
+      "end_time": 1207.83,
+      "text": "लेते थे। लेकिन यहां पे आपको कौन से सबसेट चाहिए जिसका सम एग्जजेक्टली इक्वल टू टारगेट हो? हां देखिए एक टारगेट भी आपको लेना पड़ेगा। एक आपको टारगेट भी लेना पड़ेगा यहां पे इंट टारगेट एक टारगेट अगर idx = 1 मतलब खेल खत्म है। अब आपको कुछ नहीं करना है। लेकिन अगर आपका सम इक्वल इक्वल टू टारगेट है। अगर आपका सम इक्वल इक्वल टू टारगेट है तो क्या करिए? रेस्ट डॉट पुश बैक डायरी। पुश बैक डायरी। तो मतलब वो डायरी सही है। उस डायरी में जो भी है एकदम एग्जैक्टली है।",
+      "source": "caption",
+      "english_text": "Used to take. But here which subset do you want whose sum is exactly equal to the target? Yes see, you will have to take a target also. You will also have to take a target, here int target is a target, if idx = 1 then the game is over. Now you don't have to do anything. But if your sum is equal to target. What to do if your sum is equal to target? Rest Dot Push Back Diary. Push Back Diary. So that means that diary is correct. Whatever is there in that diary is absolutely exact."
+    },
+    {
+      "start_time": 1207.84,
+      "end_time": 1242.31,
+      "text": "और क्या करिए? रिटर्न कर जाइए। अब आपका पूरा खत्म हो चुका है। तो ये आपका क्या हो गया? खत्म। सारे स्टेजेस खत्म हो गए। अब आइए डिसाइड करते हैं चॉइससेस पे। अब आइए डिसाइड करते हैं चॉइससेस पे। तो देखिए हम लोग क्या सोचे थे कि अगर इस इंडेक्स को लेने से सम छोटा रहेगा टारगेट से तो इसको आप ले सकते हैं। अगर इससे बड़ा हो जाएगा तो नहीं ले सकते हैं। लेकिन नहीं लेने का चॉइस तो दोनों में है। दोनों ही केसेस में नहीं लेने का चॉइस तो हमेशा ही रहता है आपके पास। तो नहीं लेने का चॉइस पहले ही कर लिया करिए। नहीं लेने का चॉइस पहले ही कर लिया करें। मतलब इस इस स्टेज को लेंगे ही नहीं। इसको इग्नोर कर देंगे। सीधा आगे अब अगर आप नहीं ले रहे हैं किसी चीज को आप",
+      "source": "caption",
+      "english_text": "What else to do? Please return. Now your whole is finished. So what happened to you? End. All the stages are over. Now let us decide on the choices. Now let us decide on the choices. So see what we thought was that if by taking this index the sum will be smaller than the target then you can take it. If it becomes bigger than this then you cannot take it. But both have the choice not to take it. In both the cases, you always have the option of not taking it. So make the choice in advance not to take it. Make the choice beforehand not to take it. Meaning we will not take this stage. Will ignore it. straight ahead now if you are not taking anything you"
+    },
+    {
+      "start_time": 1242.32,
+      "end_time": 1275.75,
+      "text": "नहीं ले रहे हैं तो डायरी में लिखने का भी मतलब नहीं है। आप डायरी में क्या लिखते हैं जो आप लेते हुए आते हैं। आप अगर 10 किए तो आप डायरी में 10 लिख लिए। 12 किए तो अब आप बीटेक किए ही नहीं। तो क्यों लिख रहे हैं उसको? उसमें कोई मतलब नहीं है ना। सीधा आगे चले जाइए। a n idx + 1 अगर नहीं लेना है सीधा आगे चले जाइए। नहीं लेना है तो बार-बार इस पे क्यों आएंगे? नहीं लेना है ना उसके बाद आपका डायरी उसमें कुछ चेंज नहीं हुआ आपका सम आपका रिजल्ट और आपका टारगेट कुछ चेंज नहीं हुआ ये क्या है नहीं लेना है नहीं लेना है चॉइस वन",
+      "source": "caption",
+      "english_text": "If you are not taking it then there is no point in writing in the diary. What do you write in the diary that you come with? If you do 10, you write 10 in your diary. If you have done 12 then you have not done B.Tech. So why are you writing to him? There is no point in that, right? Go straight ahead. a n idx + 1 If you don't want to take it, go straight ahead. If you don't want to take it then why would you come to this again and again? You don't have to take it after that, there is no change in your diary, your sum, your result and your target have not changed anything, what is this, you don't have to take it, you don't have to take it, Choice One"
+    },
+    {
+      "start_time": 1275.76,
+      "end_time": 1309.19,
+      "text": "अब चॉइस टू है कि लेना है चॉइस टू है कि लेना है लेकिन उसके लिए चेक है अगर इसको लेने से सम ज्यादा हो जाएगा टारगेट से इसको क्यों लेंगे तो एक चेक कर लीजिए इफ एरे ऑफ़ इंडेक्स प्लस सम अगर ये लेस दैन इक्वल टू टारगेट है मतलब अगर इसको लेने से भी सम कम ही रहता है टारगेट से तो थोड़ी उम्मीद है थोड़ी उम्मीद है आप ले सकते हैं लेकिन अगर ऐसा नहीं है तो नहीं ले सकते हैं तो अगर ऐसा है तो आप इसको ले सकते हैं ले सकते हैं आपके पास है चॉइस है आपके पास आप बिल्कुल लीजिए ट्राई करके देख लीजिए उसमें कोई है नहीं क्या बोले थे कोई भी चॉइस बनाने से पहले अगर आप किसी को",
+      "source": "caption",
+      "english_text": "Now choice is whether to take. Choice is whether to take but there is a check for it. If by taking this the even will be more than the target. Why would you take it? Then do a check if the array of index plus sum is less than equal to the target, meaning if even by taking this the even would remain less than the target, then there is some hope. There is some hope. You can take it but if it is not so then you cannot take it. If it is so then you can take it. You can take it, you have the choice, you have the choice, you can definitely take it, try it and see if there is anything in it, what did you say before making any choice, if you"
+    },
+    {
+      "start_time": 1309.2,
+      "end_time": 1344.149,
+      "text": "इंक्लूड कर रहे हैं सबसे पहले डायरी डॉट पुशबैक डायरी में लिखिए कि हम इसको ले रहे हैं हम इसको ले रहे हैं याद रखने के लिए एरे ऑफ़ idx डायरी के साथ-साथ सम को भी अपडेट कर दीजिए। सम इज़ इक्वल टू सम प्लस एरे ऑफ़ idx बहुत अच्छा। अब इसको ले लीजिए। अब इसको लेके आगे बढ़िए। आगे कहां बढ़िए? अगले इंडेक्स पे नहीं। सेम पे आइए। क्योंकि इसको हो सकता है कि आप अगले बार फिर लेना चाहते हो। आप टू को दो बार लेना चाहते हो तो अगले बार ले लेंगे। अगले बार ले लेंगे। एक बार अभी ले लेते हैं। एक बार बाद में ले लेंगे। तो क्या करिए? a n idx idx + 1 नहीं idx",
+      "source": "caption",
+      "english_text": "We are including, first of all write in diary dot pushback diary that we are taking this, we are taking this, to remember, update the array of idx diary as well as the sum. Sum is equal to sum plus array of idx Very nice. Now take this. Now move forward with this. Where to move next? Not on the next index. Come on same. Because you may want to take it again next time. If you want to take 2 twice, you will take it next time. Will take it next time. Let's take it once now. Will take it later. So what to do? a n idx idx + 1 n idx"
+    },
+    {
+      "start_time": 1344.159,
+      "end_time": 1372.31,
+      "text": "डायरी सम रिजल्ट टारगेट हो गया। अब वापस आए हैं। इन दोनों चीजों को रिवर्स कीजिए। जो भी आप इसके पहले किए थे रिवर्स करिए उसको। डायरी डॉट पॉप बैकक पुश बैक का रिवर्स पॉपक सम इज़ इक्वल टू सम प्लस एरे ऑफ़ इंडेक्स। मतलब सम में आप कुछ जोड़े उसका रिवर्स क्या होगा? एरे ऑफ़ इंडेक्स को घटा दीजिए। वो रिवर्स हो जाएगा। सम इज़ इक्वल टू सम माइनस एरे ऑफ़ इंडेक्स।",
+      "source": "caption",
+      "english_text": "Diary sum result target reached. Have come back now. Reverse both these things. Whatever you did before this, reverse it. diary dot pop backk reverse of push back popk sum is equal to sum plus array of index. Meaning, if you add something to a sum, what will be its reverse? Subtract the array of indices. It will be reversed. Sum is equal to sum minus array of indices."
+    },
+    {
+      "start_time": 1372.32,
+      "end_time": 1404.549,
+      "text": "इसको बंद कर दीजिए। अब क्या आप दोनों चॉइससेस कर चुके हैं? मतलब आप चॉइस वन कर चुके हैं? चॉइस टू। क्या इसके अलावा और कोई चॉइस है? ले सकते हैं और नहीं ले सकते हैं और ले सकते हैं। बहुत बार ले सकते हैं। इसके अलावा तो कोई चॉइस नहीं है। तो ठीक है खत्म हो गया। इसके अलावा चॉइस नहीं है तो बस रिटर्न ये आपका फंक्शन है। देख लीजिए। ये क्या स्टेप फॉलो करता है? स्टेजेस आइडेंटिफाई कीजिए। चॉइस आइडेंटिफाई कीजिए। आप कौन सा चॉइस किस कंडीशन में ले सकते हैं वो आइडेंटिफाई कीजिए। ये एक इसका कॉम्प्लेक्स पार्ट था कि इसमें हम सेम बार जा रहे हैं। क्योंकि आप बार-बार ले सकते हैं। आप बार-बार सेम",
+      "source": "caption",
+      "english_text": "Turn it off. Now have you made both your choices? Meaning you have made choice one? Choice two. Is there any other option other than this? Can take and can't take and can take. Can take many times. Apart from this there is no choice. So okay it's over. Apart from this, if there is no choice then just return, this is your function. Take a look. What steps does it follow? Identify the stages. Identify the choice. Identify which choice you can take under which condition. This was a complex part of it that we are going the same time. Because you can take it again and again. you beans again and again"
+    },
+    {
+      "start_time": 1404.559,
+      "end_time": 1437.99,
+      "text": "एलिमेंट को ले सकते हैं। बार-बार सेम एलिमेंट को ले सकते हैं। इसको रन कैसे करेंगे? कुछ नहीं करना है। सबसे पहले क्या बना लीजिए मेन से? इंट n = a डॉट साइज हो गया। अ इंट सम इक्वल टू 0 कर लिए। शुरू में सम ज़ीरो रहेगा। एक खाली डायरी बना लीजिए। वेक्टर इंट खाली डायरी बना लीजिए। एक खाली आंसर बना लीजिए। वेक्टर ऑफ़ वेक्टर ऑफ़ इंट एक खाली आंसर बना लीजिए। और इसको कॉल कर दीजिए। कॉल कहां से? शुरू से",
+      "source": "caption",
+      "english_text": "Can take element. Same elements can be taken again and again. How to run it? nothing to be done. First of all, what should you make from the main? Int n = a Dot size done. Made an int equal to 0. Initially the sum will be zero. Make a blank diary. Vector int Create a blank diary. Create a blank answer. Vector of vector of int Create a blank answer. And call him. Call from where? from the beginning"
+    },
+    {
+      "start_time": 1438.0,
+      "end_time": 1466.71,
+      "text": "कर दीजिए। a n 0 से कॉल करिए। ज़ीरो से यहां ले लीजिए। इंट idx = 0 ले लीजिए। कोई दिक्कत नहीं है। आइए। तो ले लीजिए। और एरे ऑफ़ n idx डायरी सम रिजल्ट एंड टारगेट। जब आप ये पूरा कर लेंगे। जब ये आदमी पूरा काम कर लेगा तो रिजल्ट में जो जो भरना है भर चुका होगा। रिटर्न रिजल्ट कर दीजिए।",
+      "source": "caption",
+      "english_text": "Please do it. Call from a n 0. Take it from zero here. Take int idx = 0. There is no problem. Come. So take it. And array of n idx diary sum result and target. When you finish this. When this person completes the work, whatever needs to be filled in the result will have been filled. Please return results."
+    },
+    {
+      "start_time": 1466.72,
+      "end_time": 1501.51,
+      "text": "यह आपका मेन फंक्शन में हो जाएगा। यह आपका रिक्शन है। तो आशा करते हैं कि आपको समझ में आ रहा होगा। स्पेशली यह पार्ट स्पेशली ये वाला पार्ट। तो अगर ये नहीं समझ में आया तो प्लीज कमेंट करिएगा। हम इसको फिर समझाने के लिए बिल्कुल रेडी हैं। ये वाला पार्ट समझ में आना चाहिए कि बार-बार क्या कर रहे हैं, क्या कर रहे हैं। इसीलिए हमें क्वेश्चन कराया क्योंकि क्वेश्चन थोड़ा अलग है। है ना? तो ये वाला पार्ट इंपॉर्टेंट है। बाकी सब तो सेम है। बाकी सब तो वो जनरेट सबसेट है। उसमें तो कोई है नहीं। सब सेम है। बार-बार एक ही पेप एलिमेंट पे क्यों आ जा रहे हैं? और वो रुकेगा कैसा? अगर आप ये नहीं डालेंगे ना अगर आप ये नहीं डालते ना तो ये कभी रुकता ही नहीं। कभी रुकता ही नहीं। मतलब आप आप ऐसा फंस जाते हैं। आप आप डोर वन पे आए और",
+      "source": "caption",
+      "english_text": "This will be in your main function. This is your reaction. So hope you understand. Especially this part, especially this part. So if you don't understand this then please comment. We are absolutely ready to explain this again. This part should be understood, what are you doing again and again, what are you doing. That is why we were asked the question because the question is a little different. Isn't it? So this part is important. Everything else is the same. Everything else is that generated subset. There is no one in it. Everything is the same. Why are you coming back to the same Pep element again and again? And how will he stop? If you don't put this, then it never stops. Never stops. Meaning you get stuck like this. You come to door one and"
+    },
+    {
+      "start_time": 1501.52,
+      "end_time": 1535.909,
+      "text": "आप ऐसा लिख दिए ना कि राइट लेने पे वापस डोर वन पे आ जाना। तो ये राइट लेके वापस डोर वन पे आ जाएगा। फिर आ गए। राइट लेके वापस यहां आ जाओ। अच्छा फिर आ गए। राइट लेके ये फंस जाएगा। ये इनफाइनाइट लूप है। इसको खत्म करने के लिए ये लिखना बहुत जरूरी है कि आप ये चॉइस कब ले सकते हैं। इसीलिए बहुत बहुत होश के साथ सोचिएगा कि कौन सा चॉइस कब ले सकते हैं? उसकी बहुत महत्वता है। चॉइस है लेकिन हर बार वो चॉइस नहीं है। हर बार ऐसा नहीं है कि आप लेफ्ट भी राइट भी सब खोल सकते हैं। नहीं दिमाग से खोलिए। क्या ये चॉइस हम ले सकते हैं कि नहीं ले सकते हैं? क्या हम इसको गलत ले रहे हैं? नहीं लेने का चॉइस तो बिल्कुल है। नहीं लेने का चॉइस हमेशा है। मान",
+      "source": "caption",
+      "english_text": "You wrote that after taking the right, come back to door one. So it will take the right and come back to door one. Came again. Take the right and come back here. Okay, we are back again. By taking the right he will be trapped. This is an infinite loop. To end this, it is very important to write down when you can take this choice. That's why think very consciously about which choice to take and when? It has great importance. There is a choice but it is not always a choice. It is not every time that you can open everything left as well as right. No, open your mind. Can we take this choice or not? Are we taking this wrong? There is definitely a choice not to take it. There is always the option not to take it. value"
+    },
+    {
+      "start_time": 1535.919,
+      "end_time": 1565.76,
+      "text": "लीजिए क्वेश्चन आपको बोलता। मान लीजिए क्वेश्चन आपको बोलता कि सारे एलिमेंट को एक बार तो लेना ही है। ऐसा नहीं कर सकते कि नहीं लेना है तो फिर आपको इसको बदलना पड़ता। तो ये चॉइस आपके पास नहीं है। नहीं लेने का चॉइस पहली बार में नहीं है तो आपको कुछ और कोड लिखना पड़ता है। वो क्वेश्चन पे डिपेंड करता है। लेकिन हर स्टेज पे हर स्टेज पे क्या चॉइससेस हैं? क्या चॉइससेस हैं आपके पास? ये रिकर्जन का मेन गेम होता है। ये आपको समझना है। तो इस क्वेश्चन को जरूर कीजिएगा। में क्वेश्चन बहुत अच्छा क्वेश्चन है। बहुत फैन फेवरेट कंपनी फेवरेट क्वेश्चन है।",
+      "source": "caption",
+      "english_text": "Let the question speak to you. Suppose the question tells you that you have to take all the elements once. If you can't do it or don't want to take it, then you have to change it. So you do not have this choice. If the option to not take it is not there in the first place then you have to write some more code. It depends on the question. But what are the choices at each stage? What choices do you have? This is the main game of recursion. You have to understand this. So please do this question. The question is a very good question. A very fan favorite company favorite question."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

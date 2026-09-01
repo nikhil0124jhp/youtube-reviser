@@ -1,0 +1,415 @@
+{
+  "video_id": "Sat-0sqezpM",
+  "video_title": "Path Sum Problem in 5 Minutes - No Confusion",
+  "video_number": 88,
+  "chunks": [
+    {
+      "start_time": 3.35,
+      "end_time": 36.95,
+      "text": "हेलो बच्चों तो मेरा सब कुछ हो चुका है सब सारा काम आज सैटरडे है तो वीडियो डाल देते हैं सैटरडे को तो पढ़ना ही चाहिए संडे को नहीं पढ़ना चाहिए तो संडे को हो सकता है ना डालें लेकिन इस वीक थोड़ा हो गया था गैप वीडियो डाल दिए इस वीडियो का मेन एजेंडा है पाथ सम आपको समझाना पाथ सम में आप बहुत सारी चीजें समझ जाएंगे एक तो आप रूट टू लीफ क्या होता है कैसे होता है सब आपको समझ में आ जाएगा कभी भी आपको ऐसा क्वेश्चन मिलता है कि रूट से लीफ तक का फलाना फलाना निकालो ना सिर्फ सम कुछ भी रूट से लीफ का कुछ भी करो रूट से लीफ को प्रिंट करो रूट से लीफ का कुछ निकालो रूट से लीफ में कुछ कुछ भी कुछ भी तो आप वो सब आप इससे कर सकते हैं। अ शायद तीन क्वेश्चन करेंगे। हमको मालूम नहीं है",
+      "source": "caption",
+      "english_text": "Hello children, everything is done for me, today is Saturday, so let's put the video. We must read it on Saturday, we should not read it on Sunday, so it is possible not to post it on Sunday, but this week there was a little gap, I have put the video. The main agenda of this video is to make you understand Path Sum. In Path Sum, you will understand many things, first of all you will understand what is root to leaf, how it all happens, you will understand anytime you get such a question that from root to leaf. Take out so and so till the leaf, not just do anything from the root to the leaf, print something from the root to the leaf, take something from the root to the leaf, anything from the root to the leaf, anything, anything, you can do all that with this. A: Maybe three questions. we don't know"
+    },
+    {
+      "start_time": 36.96,
+      "end_time": 71.35,
+      "text": "कितना क्वेश्चन करेंगे लेकिन तीन तीन शायद करेंगे। तो तीनों क्वेश्चन देखिएगा। पहला क्वेश्चन समझना जरूरी है क्योंकि पहला क्वेश्चन बेसिक है। बेसिक का मतलब फंडामेंटल है। दूसरा क्वेश्चन नकली है। तो दूसरा क्वेश्चन क्वेश्चन देख लीजिए। खुद से करिएगा। तीसरा क्वेश्चन पहले में थोड़ा सा ट्विस्ट है। तो तीसरा भी थोड़ा सा देखना जरूरी है। तीनों क्वेश्चन कोड हो जाना चाहिए। आपको ज्यादा अगर आप पहला समझ गए तो फर्क नहीं पड़ता है। अगर आप रिकजन देख चुके हैं तो आपको तीनों बिल्कुल देखने की भी जरूरत नहीं है। तीनों समझ में आ जाएगा। सिर्फ क्वेश्चन पढ़ के खुद से एक बार ट्राई कर लीजिए। तीनों क्वेश्चन क्या-क्या है? एक तो है पाथ सम वन, एक है",
+      "source": "caption",
+      "english_text": "How many questions will we ask, but maybe three. So see all three questions. It is important to understand the first question because the first question is basic. Basic means fundamental. The second question is fake. So look at the second question question. Do it yourself. The third question is a slight twist on the first. So it is important to look at the third one a little bit. All three questions should be coded. It doesn't matter much if you understand first. If you have seen Rickson then you don't even need to see all three. All three will be understood. Just read the questions and try once yourself. What are the three questions? There is one path, there is one, there is one"
+    },
+    {
+      "start_time": 71.36,
+      "end_time": 104.069,
+      "text": "पाथ सम टू और एक है सम ऑफ़ रूट टू लीफ। सम ऑफ़ रूट टू लीफ। तीनों सिमिलर क्वेश्चन एक ही टेंपलेट से तीनों बन जाएगा। अगर आप शायद पाथ सम वन का कोड देखेंगे तो आपसे सब बन जाएगा। कहां गया? हां ये। तो ये पाथ सम वन का कोड है। तो आपसे एक कोड एक टेंपलेट देखने के बाद तीनों बन जाएगा। जल्दी शुरू करते हैं टाइम वेस्ट किए बिना। चलिए। तो पहला क्वेश्चन क्या है? पहला क्वेश्चन है पाथ सम वन। पाथ सम वन बहुत इजी, बहुत नकली क्वेश्चन है। क्या करना है? हम आपको बता देते हैं जल्दी से। आपको एक ट्री दिया हुआ है। ऑब्वियस सी बात है कि हम ट्री पढ़ा रहे हैं तो ट्री दिया हुआ है। ओके? रूट दिया हुआ है। आपको एक टारगेट भी दिया हुआ है।",
+      "source": "caption",
+      "english_text": "Path sum to and one is sum of root to leaf. Sum of root to leaf. All three similar questions will be created from the same template. Maybe if you look at the code of Path Some One, you will be able to do everything. where did he go? Yes this. So this is the code for path sum one. So after seeing one code and one template from you, all three will be created. Let's start quickly without wasting time. Let go. So what is the first question? The first question is path sum one. Path Some One is a very easy, very fake question. What is the plan? We will tell you quickly. You have been given a tree. It is obvious that we are teaching the tree, so the tree is given. Ok? The route is given. You have also been given a target."
+    },
+    {
+      "start_time": 104.079,
+      "end_time": 136.79,
+      "text": "एक टारगेट सम दिया हुआ है। अच्छा आपको ट्रू या फॉल्स करना है। क्या करना है आपको? ट्रू या फॉल्स। बड़ा सिंपल है। किस बात में? ट्रू और किस बात में? फॉल्स। अगर अगर अगर रूट टू लीफ पाथ रूट टू लीफ पाथ याद कीजिए जब हाइट पढ़ा रहे थे तो रूट टू लीफ के बारे में चर्चा हुई थी कि रूट से लीफ कुछ होता है। अच्छा अब रूट तो एक ही होता है ट्री में। लीफ बहुत सारे होते हैं। लीफ हो सकता है तीन हो, चार हो, पांच हो, कितने भी हो सकता है ट्री पे डिपेंड करता है। अब अगर कोई भी रूट टू लीफ पाथ इज़ इक्वल टू",
+      "source": "caption",
+      "english_text": "A target is given. Well you have to say True or False. What do you have to do? True or False. It is very simple. In what matter? True and in what? Falls. If if if Root to Leaf Path Root to Leaf Path Remember when we were teaching height, there was a discussion about root to leaf that something happens from root to leaf. Well, now there is only one root in the tree. There are many leaves. There may be three, four, five or any number of leaves depending on the tree. Now if any root to leaf path is equal to"
+    },
+    {
+      "start_time": 136.8,
+      "end_time": 168.309,
+      "text": "रूट टू लीफ पाथ का सम रूट टू लीफ पाथ का रूट टू लीफ में कुछ सर्कल होगा ना। रूट से इधर उधर उधर उधर कहीं से कहीं से आके लीफ पे आएगा। अगर उसका सम इक्वल इक्वल टू टारगेट होता है। किसी भी रूट टू लीफ कोई भी रूट तो एक है रूट से लीफ तक का किसी भी लीफ का अगर सम वो पाथ का सम अगर आपके टारगेट से जो कि आपको टारगेट दिया हुआ है अगर इक्वल हो जाता है इस केस में आपको ट्रू रिटर्न करना है। अगर नहीं होता है तो फॉल्स रिटर्न करना है। फॉर एग्जांपल फॉर एग्जांपल अगर आपका ट्री ऐसा है कि यहां पे",
+      "source": "caption",
+      "english_text": "The sum of root to leaf path will be some circle in the root to leaf path, right? From here and there, from somewhere, from somewhere, from the root, it will come to the leaf. If its sum is equal to target. Any root to leaf, any route is one, if the path from the root to the leaf is equal to the path, if the path is equal to your target, which is given to you, if it is equal, in this case you have to return true. If it does not happen then false has to be returned. For example, if your tree is such that here"
+    },
+    {
+      "start_time": 168.319,
+      "end_time": 194.949,
+      "text": "फाइव है। यहां पे टू है और यहां पे थ्री है और यहां पे वन है। ठीक बात है। अच्छा 5 3 1 अब इसमें सबसे पहले तो रूट मार्क कर लेते हैं कि रूट ये वाला है। रूट एक ही होता है ट्री में। ये पांच वाला हमारा रूट है। लीफ भी मार्क कर लेते हैं। लीफ कितना है? लीफ क्या होता है? जिसका कोई बच्चा ना हो। जिसका एक भी बच्चा है ना वो लीफ नहीं है। हो सकता है किसी का लेफ्ट बच्चा हो, राइट ना हो। तो वो लीफ नोड नहीं है। लीफ नोड का मतलब जिसका एक भी बच्चा ना हो।",
+      "source": "caption",
+      "english_text": "It's five. Here's pay two and here's pay three and here's pay one. That's right. Okay 5 3 1 Now first of all let's mark the route in this that the route is this one. There is only one root in a tree. This is our route with five. Let's mark the leaves also. How much is the leaf? What is a leaf? Who has no children. Anyone who has even one child is not a leaf. It is possible that someone may have a left child and not a right one. So that is not a leaf node. Leaf node means one that does not have any children."
+    },
+    {
+      "start_time": 194.959,
+      "end_time": 229.91,
+      "text": "लेफ्ट भी नल, राइट भी नल। तो ये हमारा एक लीफ नोड है और ये वाला भी लीफ नोड है। ये वाला भी क्या है? लीफ नोड है। थ्री लीफ नोड नहीं है। अच्छा अब रूट एक है। लीफ दो है। तो चलिए सबसे पहले हम पांच से दो का सम निकालते हैं। तो एक होगा पांच और इसके बाद दो। इसका सम कितना होगा? सात। अगले लीव का भी तो पांच। पांच से आप तीन पे जा सकते हैं। तीन पे वन पे जा सकते हैं। तो इसका सम नाइन। अगर आपका टारगेट सम मान लीजिए आपका टारगेट सम अगर सात है तो आपको ट्रू रिटर्न करना है क्योंकि ये वाला हो गया। अगर नौ है तो भी ट्रू रिटर्न करना है। ये वाला भी हो गया। यही सवाल है कुल",
+      "source": "caption",
+      "english_text": "Left is also tap, right is also tap. So this is one of our leaf nodes and this one is also a leaf node. What is this one too? is a leaf node. There is no three leaf node. Well now there is route one. Leaf is two. So let us first find the sum of five to two. So one will be five and then two. What will be its sum? Seven. Five for the next leave also. From five you can go to three. Three can go to one. So its even nine. If your target sum is, let's say if your target sum is seven, then you have to return true because this one is done. Even if it is nine, it has to return true. This one is also done. This is the total question"
+    },
+    {
+      "start_time": 229.92,
+      "end_time": 263.11,
+      "text": "मिला के। अच्छा तो ये बड़ा इजी सवाल है। इसमें कोई रॉकेट साइंस नहीं है। कुछ नहीं है। हम आपको जल्दी से बताते हैं। और एक टेंपलेट बताएंगे। एक टेंप्लेट बताएंगे। उसी टेंपलेट से आप पाथ सम टू भी कर पाएंगे। हम लोग अभी करेंगे भी उसको। पाथ सम टू सेम क्वेश्चन है। थोड़ा सा एक छोटा सा ट्विस्ट है। वो बाद में आने पे देखेंगे। लेकिन एक ही टेंप्लेट से दोनों बन जाएगा। अच्छा। क्या करना है? देखिए आपको क्या करना है? रूट से लीफ तक का पाथ निकालना है। रूट से लीफ तक का पाथ निकालना है। तो अब पाथ कैसे निकलेगा? मान लीजिए एक ट्री है। मान लीजिए एक ट्री है। ये आपका ऐसा करके एक ट्री है।",
+      "source": "caption",
+      "english_text": "By mixing. Well, this is a very easy question. There is no rocket science in this. Nothing is there We tell you quickly. And will tell you a template. Will tell you a template. You will also be able to sum paths using the same template. We will do that now also. Path is a similar question. There's a little bit of a twist. Will see when he comes later. But both will be made from the same template. Good. What is the plan? See what you have to do? The path from root to leaf has to be found. The path from root to leaf has to be found. So now how will the path be found? Suppose there is a tree. Suppose there is a tree. This is your tree by doing this."
+    },
+    {
+      "start_time": 263.12,
+      "end_time": 296.79,
+      "text": "है ना? ये एक ट्री है। ऐसा करके। ठीक है? ये एक छोटा सा ट्री है। वन हो गया, टू हो गया, थ्री हो गया, फोर हो गया, पांच हो गया, छह हो गया। अच्छा। अब रूट से हर लीफ का पाथ निकालना है। तो ऑब्वियस सी बात है आपको समझ में आ रहा होगा कि वो जो रिकजन हम लोग करते थे फन पे रूट पास करते थे वो तो होगा ही। लेकिन उसके अंदर करेंगे क्या? क्या-क्या करेंगे? अच्छा मान लीजिए अगर रूट नल है। मान लीजिए अगर रूट नल है तो आप क्या कर सकते हैं? रूट नल का क्या मतलब होता है? मान लीजिए आपको जो ट्री दिया हुआ है ना उसका रूट ही नल है। मतलब वो सर्कल है ही नहीं। तो क्या करेंगे? कुछ नहीं करेंगे। इसमें तो कुछ नहीं कर सकते हैं ना। इसमें कोई चर्चा",
+      "source": "caption",
+      "english_text": "isn't it? This is a tree. By doing this. Ok? This is a small tree. It became one, it became two, it became three, it became four, it became five, it became six. Good. Now we have to find the path of each leaf from the root. So it is obvious that you must be understanding that the recension that we used to do and pass the route on fun will definitely happen. But what will we do inside it? What all will we do? Well suppose if root is null. Suppose if root is null what can you do? What does root tap mean? Suppose the root of the tree given to you is the null. Meaning that circle does not exist at all. So what to do? Will not do anything. Nothing can be done about this. no discussion on this"
+    },
+    {
+      "start_time": 296.8,
+      "end_time": 330.15,
+      "text": "करनी है नहीं। अच्छा अगर जो आपका रूट है जो आप इस सर्कल पे हैं अगर वो लीफ नोड है अगर वो लीफ नोड है अब आपको कुछ ना कुछ कंप्यूटेशन करना पड़ेगा अब आपको कुछ ना कुछ चेक करना पड़ेगा कि अभी तक का सम अभी तक का जो पाथ का सम है वो टारगेट के इक्वल है कि नहीं कुछ ना कुछ कुछ ना कुछ चेक तो करना पड़ेगा अच्छा अगर रूट नॉन लीफ है अगर रूट नॉन लीफ है तो क्या करें तीन ही तरीके का हो सकता है ना देखिए अगर आप जिस सर्कल पे रूट मतलब सर्कल जिस सर्कल पे आप खड़े हैं या तो वो नल है अब नल है तो क्या करेंगे? कुछ नहीं करेंगे। अगर वो लीफ है। अगर वो लीफ है तो",
+      "source": "caption",
+      "english_text": "Don't have to do it. Well, if it is your root that you are on this circle, if it is a leaf node, if it is a leaf node, now you will have to do some computation, now you will have to check something or the other, whether the sum of the path till now is equal to the target or not, something or the other, then something or the other, then you will have to check. Well, if the root is non-leaf, if the root is non-leaf, then what to do, there can be only three ways. No, see, if the circle on which you are standing, the root means the circle on which you are standing. Either that is a tap or now it is a tap, so what will you do? Will not do anything. If it's a leaf. if it's a leaf"
+    },
+    {
+      "start_time": 330.16,
+      "end_time": 363.83,
+      "text": "कुछ ना कुछ चेक करना पड़ेगा। कोई सम कुछ करेंगे। अच्छा अगर वो नॉन लीफ है। अगर वो नॉन लीफ है तो क्या करेंगे? तो कुछ नहीं। मान लीजिए आप यहां पे हैं। ये एक नॉन लीफ है। ये क्या है? नॉन लीफ। तीन लीफ तो नहीं है। आपको क्या चाहिए? रूट से लीफ तक का पाथ। मतलब कि यहां से यहां आप गए। अब आपको लीफ तक का पाथ चाहिए। तो क्या करेंगे? लीफ कैसे जाएंगे? उसके लेफ्ट और उसके राइट जाके देख लेंगे। उसके लेफ्ट और उसके राइट जाके देख लेंगे। रूट के लेफ्ट भी जाएंगे और रूट के राइट भी जाएंगे। और कुछ नहीं कर सकते ना आप। नॉन लीफ पे तो कुछ चेक करना",
+      "source": "caption",
+      "english_text": "Something will have to be checked. Someone will do something. Well if it is non-leaf. What to do if it is non-leaf? So nothing. Suppose you are here. This is a non leaf. What is this? Non leaf. There are no three leaves. What do you want? Path from root to leaf. Meaning that you went from here to here. Now you need a path to the leaf. So what to do? How will the Leafs go? We will go to his left and his right and see. We will go to his left and his right and see. Will go left of the route and will also go right of the route. You can't do anything else. please check something on non leaf"
+    },
+    {
+      "start_time": 363.84,
+      "end_time": 392.07,
+      "text": "ही नहीं है। नॉन लीफ का तो पाथ पूछा ही नहीं है। लीफ तक का पाथ पूछा है। तो तीन केस हम लोग देख लिए कि अगर नल होगा तो कुछ नहीं आ जाएंगे वापस। लीफ होगा तो कुछ ना कुछ चेक करेंगे। नॉन लीफ होगा तो उसके लेफ्ट जाएंगे। उसके राइट जाएंगे। अच्छा ये तो हो गई कि आप कैसे-क कैसे-कैसे ट्रेवर्स करेंगे। कैसे-कैसे क्या करेंगे? ट्रेवर्स करेंगे। अच्छा अब अब अब आपको सिर्फ ट्रेवर्स नहीं करना है। मतलब आपको सिर्फ पाथ पे घूमना नहीं है। आपको सम चाहिए ना। आपको उस पूरे पाथ का सम चाहिए। पूरे पाथ का क्या चाहिए? सम। तो बड़ा सिंपल है।",
+      "source": "caption",
+      "english_text": "It is not there. The path of non-leaf has not been asked. The path to the leaf has been asked. So we saw three cases that if there is a tap then nothing will come back. If there is a leaf, we will check something. If it is non-leaf, it will go to its left. His rights will go. Well, it is clear how you will traverse. How and what will we do? Will traverse. Well now you don't have to just traverse anymore. Meaning you don't just have to wander on the path. You want even, right? You need the sum of that entire path. What is the need for the entire path? Even. So it is very simple."
+    },
+    {
+      "start_time": 392.08,
+      "end_time": 426.55,
+      "text": "देखिए हम क्या करेंगे? ये आपका वन हो गया। मान लीजिए टू है। ये थ्री है और ये फोर है। ये बहुत छोटा सा ट्री हम ले रहे हैं। सबसे पहले आप वन रूट इक्वल टू वन पे आए। यहीं से स्टार्ट होगा। यही रूट है तो यहीं से स्टार्ट होगा। अच्छा सबसे पहले चेक कीजिए। क्या ये रूट नल है? क्या ये वन नल है? नल नहीं है। नल नहीं है। नल नहीं है। अच्छा अब अब आपको नल नहीं है मतलब ये कोई ना कोई सर्कल तो है। कोई ना कोई सर्कल तो ये है। कोई ना कोई सर्कल तो है। नल नहीं है। तो अगर कोई ना कोई सर्कल है और आपको पाथ चाहिए। पाथ का सम चाहिए। रूट से हर लीफ तक का सम चाहिए। तो क्यों ना हम लोग",
+      "source": "caption",
+      "english_text": "See what we will do? This has become your forest. Suppose it is two. This is three and this is four. We are taking this very small tree. First of all you came on one route equal to one. It will start from here. This is the route so we will start from here. Ok first check. Is this a root tap? Is this a forest tap? There is no tap. There is no tap. There is no tap. Well, now you don't have a tap, which means this is some kind of circle. This is some circle or the other. There is some circle or the other. There is no tap. So if there is a circle and you want a path. The path needs to be even. Evenness is required from the root to every leaf. so why not us"
+    },
+    {
+      "start_time": 426.56,
+      "end_time": 460.23,
+      "text": "एक सम = 0 ले लें। यहां पे हम लोग एक सम वेरिएबल भी ले लें। और अगर ये नल ना निकले ना तो सिंपली क्या करें? सम इक्व सम प्लस रूट का डाटा। रूट का डाटा अरे अब नल नहीं है तो कोई ना कोई सर्कल तो है तो कोई ना कोई सर्कल है मतलब यह किसी ना किसी पाथ पर तो पड़ेगा ही लीफ तक जाने में यह अगर कोई ना कोई भी सर्कल है तो कहीं ना कहीं से तो ये पाथ होगा ना किसी लीफ तक तो इसको ऐड कर लो इसको ऐड कर लो ओके ऐड कर लिया अच्छा अब अगर ये रूट लीफ है। अगर ये रूट लीफ है। लीफ कैसे चेक करेंगे कि इसका लेफ्ट भी नल हो और उसका",
+      "source": "caption",
+      "english_text": "Take an even = 0. Here we also take an even variable. And if this tap does not come out then simply what to do? Data of sum equal sum plus root. Now if the data of the root is not null, then there is some circle or the other, which means it will have to take some path or the other to reach the leaf. If this is a circle, then this path will go from somewhere to some leaf, so add it, add it, okay add it, now if this is the root leaf. If this is a root leaf. How to check leaf whether its left is also null and its"
+    },
+    {
+      "start_time": 460.24,
+      "end_time": 490.869,
+      "text": "राइट भी नल हो। अगर लीफ न लीफ है तो क्या लीफ पे क्या करना है? लीफ पे ही चेक करना है। लीफ का मतलब है कि आप यहां पे आ गए। ये लीफ है। ये भी लीफ है। अब इसके आगे तो आप जा नहीं सकते। इसके आगे आपको पता है कि अगर ये लीफ है तो लेफ्ट भी नहीं है, राइट भी नहीं है। तो क्या करेंगे? यहीं पे तो चेक करना है। यहीं पे चेक करना है। तो यहां पे तो एक सिंपल सा चेक कर लेंगे कि अगर सम इक्वल इक्वल टू मेरा टारगेट हो गया। ठीक है? और एक ग्लोबल वेरिएबल रख लेंगे। तो इसको हम रिजल्ट को ट्रू कर देंगे। रिजल्ट मतलब एक बुलियन बुलियन यहां पे रिजल्ट ले लेंगे। उसको ट्रू कर देंगे।",
+      "source": "caption",
+      "english_text": "Right should also be null. If there is no leaf then what to do on the leaf? Have to check on the leaf itself. Leaf means you are here. This is Leaf. This is also a leaf. Now you cannot go beyond this. Beyond this you know that if it is a leaf then it is neither left nor right. So what to do? This is where we have to check. Have to check here. So here we will do a simple check that if sum is equal to two then my target has been achieved. Ok? And keep a global variable. So we will make the result true. Result means one bullion bullion, we will take the result here. Will make it true."
+    },
+    {
+      "start_time": 490.879,
+      "end_time": 525.11,
+      "text": "अच्छा। अब आप लीफ पे आ गए। अब क्या और कुछ करने की गुंजाइश है? नहीं। नहीं कुछ नहीं करने की गुंजाइश है। कहीं आगे नहीं जा सकते हैं। रिटर्न कर जाइए। रिटर्न कर जाइए। खत्म हो गया। अब सिमिलरली अगर ये नल होता रूट अगर ये नल होता तो भी क्या करते? रिटर्न कर जाते। नल में आप क्या कुछ नहीं कर सकते ना उतना खास। चलिए हो गया। रिटर्न कर गए। अब अगर आप यहां पे आए हैं। अगर आप यहां पे आए हैं। मतलब ये नॉन लीफ है। मतलब ये नॉन लीफ है। मतलब ये पाथ अभी खत्म नहीं हुआ है। आपको लीफ तक जाना है। आपको इस पाथ से लीफ तक जाना है। तो क्या करेंगे? लीफ तक कैसे जाएंगे? आगे चले जाइए। एक फन कॉल",
+      "source": "caption",
+      "english_text": "Okay. Now you have come to Leaf. Is there scope to do anything else now? No. No, there is no scope for doing anything. Can't go anywhere ahead. Please return. Please return. It's over. Now, similarly, if this was a tap, what would Root do even if it were a tap? Would have returned. What you can't do in tap is not that special. Okay, it's done. Returned. Now if you have come here. If you have come here. Meaning it is non-leaf. Meaning it is non-leaf. Meaning this path is not over yet. You have to go to the Leaf. You have to go to Leaf through this path. So what to do? How to reach Leaf? Go ahead. a fun call"
+    },
+    {
+      "start_time": 525.12,
+      "end_time": 559.59,
+      "text": "कर दीजिए रूट के लेफ्ट को और एक और सम को भी पास कर दीजिए। सिमिलरली एक फन कॉल कर दीजिए रूट के राइट को और सम पास कर दीजिए और लास्ट में यहां पे रिटर्न कर जाइए। बस खत्म हो गया खेल। यही करना था। बस यही करना है। फिर से बता देते हैं क्या कर रहे हैं हम। देखिए फिर से बता देते हैं क्या कर रहे हैं। देखिए वन टू थ्री फोर ये आपका ट्री है। सबसे पहले हम लोग स्टार्ट किए रूट से। सबसे पहले प्रोग्राम तो रूट से स्टार्ट होगा। तो रूट = 1 और सम शुरू में सम कितना होना चाहिए? शुरू में जब आपके",
+      "source": "caption",
+      "english_text": "Pass it to the left of the root and pass one more even. Similarly, make a fun call, pass another few to the right of the route and return here at the end. The game is just over. This was what had to be done. That's all to do. Let us tell you again what we are doing. Look, let us tell you again what we are doing. Look, one two three four, this is your tree. First of all we started from the route. First of all the program will start from root. So root = 1 and what should be the sum initially? In the beginning when your"
+    },
+    {
+      "start_time": 559.6,
+      "end_time": 593.59,
+      "text": "पास कुछ है ही नहीं। कुछ है ही नहीं तो कितना? ज़ीरो होना चाहिए। ज़ीरो हो गया। अच्छा सबसे पहले चेक किए क्या ये नल है? नल नहीं है। अच्छा क्या ये लीफ है। अच्छा नल नहीं है। सर्कल है। तो सबसे पहले क्या कर दिए? सम = 0 + 1 = 1 इस सर्कल को ऐड कर दिया हमारे सम में। क्योंकि देखिए हर सर्कल हर सर्कल किसी ना किसी पाथ का तो हिस्सा है ही ना। हर सर्कल से होते हुए आप एक लीफ तक पहुंचेंगे। कोई ना कोई सर्कल कितना भी बड़ा ट्री हो देखिए कितना भी बड़ा ट्री हो कितना भी बड़ा ट्री हो कितना भी देखिए बड़ा ट्री हम बना देते हैं। अब किसी भी सर्कल को ले लीजिए। इसको ले",
+      "source": "caption",
+      "english_text": "There is nothing nearby. If there is nothing then how much? Should be zero. It became zero. Well, first of all check whether this is a tap? There is no tap. Okay, is this Leaf? There is no good tap. Is circle. So what did you do first? Sum = 0 + 1 = 1 Added this circle to our sum. Because see, every circle is a part of some path or the other. After going through each circle you will reach a leaf. Some circle or the other, no matter how big the tree is, no matter how big the tree is, no matter how big the tree is, we can make it. Now take any circle. take this"
+    },
+    {
+      "start_time": 593.6,
+      "end_time": 621.11,
+      "text": "लीजिए। ये किसी ना किसी पाथ का हिस्सा है? ये किस पाथ का हिस्सा है? किस रूट टू लिफ्ट का हिस्सा है? ये इसका हिस्सा है। ये इसका हिस्सा भी है। ये इसका हिस्सा भी है। तो मतलब हर आदमी हिस्सा है। तो हम लोग क्या करेंगे? उसको सम को वो कर देंगे। ऐड कर आयरन पे वापस आ जाते हैं। तो हम लोग कहां से स्टार्ट किए हैं? रूट से स्टार्ट करेंगे। सम ज़ीरो के साथ। तो सबसे पहले अगर वो नल नहीं है। अगर वो नल नहीं है तो कोई सर्कल है। सर्कल है तो किसी पाथ का पार्ट है। ऐड कर दीजिए। ऐड हो गया। अच्छा अब देखना है कि अब ये लीफ नोड है कि नहीं?",
+      "source": "caption",
+      "english_text": "Take it. Is this part of some path? Which path is this part of? Which route to lift is part of? This is part of it. This is also part of it. This is also part of it. So that means every man is a part. So what will we do? He will make it even. Add and come back to iron. So where do we start? Will start from the root. With even zero. So first of all if it is not a tap. If it is not a tap then it is a circle. If it is a circle then it is part of a path. Please add it. Added. Well, now we have to see whether it is a leaf node or not?"
+    },
+    {
+      "start_time": 621.12,
+      "end_time": 655.35,
+      "text": "अगर लीफ नोड हो गया है तो आपका काम खत्म हो चुका है। अब क्या बचा है? बस चेक करना। लेकिन ये तो लीफ नोड नहीं है। ये वाला लीफ नोड नहीं है। कोई बात नहीं। क्या करना था? अब लीफ नोड नहीं है तो आपको और नीचे जाना पड़ेगा। नीचे का मतलब लेफ्ट जाइए या राइट जाइए। हम लोग क्या करेंगे? इसके लेफ्ट भी चले जाएंगे। मतलब टू पे और सम वन लेके जाएगा ये। याद रखिएगा सम ऑफ़ अब वन हो चुका है तो वन लेके जाएगा ये और राइट पे भी जाएंगे। राइट पे जाएंगे फिर भी ये सम इज़ इक्वल टू वन लेके जाएगा। अच्छी बात है। अब ये फंक्शन कॉल है तो इसको चला के देखते हैं। अब हम लोग आ चुके हैं। रूट आपका टू हो चुका है और आपका सम जो है वन हो चुका",
+      "source": "caption",
+      "english_text": "If the leaf node is done then your work is finished. What is left now? Just checking. But this is not a leaf node. This one is not a leaf node. No problem. What was to be done? Now there is no leaf node so you have to go further down. Below means go left or go right. What will we do? Its left will also go away. Meaning he will take two pay and some one. Remember, now the sum is one, so it will take one and will also go to the right. Even if we go to the right, we will still take this sum as equal to one. It's a good thing. Now this is a function call so let's run it and see. Now we have arrived. Your root has become two and your sum has become one."
+    },
+    {
+      "start_time": 655.36,
+      "end_time": 687.509,
+      "text": "है। सेम बात यहां भी है। अगर ये नल नहीं है मतलब ये सर्कल है। सर्कल है तो अह उसको ऐड कर दो। ऐड करने का मतलब पहले से सम वन था। टू ऐड हो गया। 1 + 2 = 3 हो गया। वेरी गुड। अगेन अब टू लीफ नोड तो नहीं है। लीफ नोड मतलब लेफ्ट भी नल, राइट भी नल। टू का एक बच्चा है। तो टू लीफ नोड नहीं है। अब लीफ नोड नहीं है। मतलब क्या है? आगे जाना है। आगे जाने का मतलब कि आपको फोर पे जाना है। सम इज़ इक्वल टू थ्री लेके और क्योंकि टू का राइट चाइल्ड नल है तो आप नल पे जाएंगे। आप नल पे जाएंगे। आप चाहें तो यहां पे चेक भी कर सकते हैं कि हमको नल पे नहीं जाना है। उससे कोई फायदा नहीं होगा।",
+      "source": "caption",
+      "english_text": "Is. Same thing happens here also. If it is not a tap, it means it is a circle. If there is a circle then add it. Adding already meant even one. To add is done. 1 + 2 = 3. very good. Again there is no two leaf node. Leaf node means left is also null, right is also null. Two have a child. So there is no two leaf node. There is no leaf node anymore. What is the meaning? Need to go ahead. Going forward means you have to go on four. Sum is equal to two three and since the right child of two is null then you will go to null. You will go to the tap. If you want, you can also check here that we do not have to go to the tap. There will be no benefit from that."
+    },
+    {
+      "start_time": 687.519,
+      "end_time": 715.91,
+      "text": "हो जाएगा मतलब। ठीक है? आइए फोर पे चलाते हैं। अब हम आ गए फोर पे। सम इक्वल टू थ्री पे। यही कहानी यहां भी नल नहीं है मतलब सर्कल है। सर्कल है तो मतलब कुछ ये है ये सर्कल है तो उसका ऐड करना है। सम = 3 + 4 = 7 हो गया। अब ये लीफ नोड है। अब ये लीफ नोड है। लीफ नोड है तो चेक कर लीजिए। चेक करने का मतलब कि अगर आपका टारगेट सेवन होता तो आप अपने आंसर को ट्रू कर देते।",
+      "source": "caption",
+      "english_text": "Meaning it will happen. Ok? Let's go on four. Now we have come to four. Sum equals two three pay. Same story here too, there is no tap, it means circle. If there is a circle then it means something like this, if there is a circle then it has to be added. Sum = 3 + 4 = 7. Now this is a leaf node. Now this is a leaf node. Check if there is a leaf node. Checking means that if your target was seven then you would have made your answer true."
+    },
+    {
+      "start_time": 715.92,
+      "end_time": 745.43,
+      "text": "मतलब अपने रिजल्ट को ट्रू कर देते और रिटर्न कर जाते। और क्या कर जाते? रिटर्न कर जाते। अगर आपका वो नहीं है तो भी आप रिटर्न कर जाते। क्योंकि देखिए फोर के बाद कहीं जाने का कोई गुंजाइश है नहीं। तो अगर आप आपका टारगेट मैच होता है तो आप ट्रू कर दीजिए। नहीं मैच होता है तो नहीं करिए। मतलब दोनों हालत में आपको रिटर्न कर जाना है। तो ये खत्म हो गया। अब ये नल वाला चलेगा। नल में क्या होता है? नल में कुछ नहीं होता। नल में आप कुछ नहीं कर सकते हैं। ये भी चल जाएगा। टू चल गया। थ्री पे आ जाइए। थ्री को चलाइए। वन थ्री और सम इज इक्वल टू वन। सम = 1 ये वाला चल रहा है।",
+      "source": "caption",
+      "english_text": "Meaning, you would have verified your result and returned it. What else would you have done? Would have returned. Even if it was not yours, you would have returned it. Because see, there is no scope of going anywhere after four. So if your target matches then you make it true. No, if there is a match then don't do it. Meaning in both the cases you have to return. So it's over. Now this tap will work. What happens in the tap? There is nothing in the tap. You can't do anything in tap. This will also work. Two left. Come on three. Drive three. One three and the sum is equal to one. Even = 1 This one is going on."
+    },
+    {
+      "start_time": 745.44,
+      "end_time": 778.55,
+      "text": "ये वाला यहां पे चल रहा है। अगेन ये नल नहीं है तो ऐड कर दीजिए। सम क्या बन गया आपका? 1 + 3 = 4 बन गया। अब थ्री लीफ नोड है। थ्री लीफ नोड है। कैसे पता चला? लेफ्ट भी नल, राइट भी नल। अगर आपका टारगेट थ्री है तो वेरी गुड। आपको ट्रू कर देना है। अगर थ्री नहीं है तो कुछ नहीं करना है। दोनों ही हालत में आपको यहां से रिटर्न करना है। तो ये भी खत्म हो गया। ये खत्म हो गया तो आप यहां आ गए। यहां तो लास्ट में रिटर्न है ही। कहने का मतलब कि आपको दो लीफ नोड मिला और दोनों लीफ नोड में एक का सम आपका सात था। एक में चार था। तो अगर आपका टारगेट सात या चार होता तो आपका ट्रू होता। अगर आपका टारगेट सात या चार नहीं",
+      "source": "caption",
+      "english_text": "This one is going on here. Again, if this tap is not there then add it. What has become of you? 1 + 3 = 4 becomes. Now there is a three leaf node. There is a three leaf node. How did you know? Left is also tap, right is also tap. If your target is three then very good. You have to make it true. If there is no three then nothing has to be done. In both the cases you have to return from here. So this too is over. When this is over, you come here. Here the return is at the end. That means you got two leaf nodes and the sum of one in both the leaf nodes was your seven. There were four in one. So if your target was seven or four then you would have been true. If your target is not seven or four"
+    },
+    {
+      "start_time": 778.56,
+      "end_time": 812.069,
+      "text": "होता तो आपका फॉल्स हो जाता। तो आइए इसका कोड बड़ा सिंपल है। आइए देख लीजिए। सबसे पहले ऊपर एक ये लिख लेते हैं। शुरुआत में हम लोग मान के चलेंगे कि कोई बात सम एक्सिस्ट नहीं करता है। क्योंकि आपको ढूंढना है ना जो भी आपको ढूंढना है ना कि अच्छा बताओ ये हो सकता है कि नहीं? तो मान लीजिए कि नहीं हो सकता है। मान लीजिए कि नहीं हो सकता है। होगा तो देखेंगे। होगा तो देखेंगे। अगर आप इसको ट्रू कर देंगे ना शुरू में। अब मान लीजिए आप शुरू में इसको ट्रू कर दिए। अब मान लीजिए कि नहीं मिला। नहीं मिला तो नहीं मिला तो फिर क्या करेंगे? नहीं मिला तो आप गलत आंसर रिटर्न कर देंगे। इसीलिए मान के चला कीजिए कि शुरू में नहीं है। होगा तो चेंज कर देंगे।",
+      "source": "caption",
+      "english_text": "If it had happened, you would have fallen. So its code is very simple. Let's take a look. First of all, let's write this one at the top. In the beginning we will assume that nothing exists exactly the same. Because you have to find whatever you want to find, tell me, is this possible or not? So let's say it can't happen. Let's say that may not happen. We will see if it happens. We will see if it happens. If you make it true in the beginning. Now suppose you made it true in the beginning. Now suppose it is not found. If you don't get it, what will you do if you don't get it? नहीं मिला तो आप गलत आंसर रिटर्न कर देंगे। इसीलिए मान के चला कीजिए कि शुरू में नहीं है। होगा तो चेंज कर देंगे।"
+    },
+    {
+      "start_time": 812.079,
+      "end_time": 845.11,
+      "text": "वॉइड फन। वॉइड फन क्यों है? क्योंकि इसमें कोई काम नहीं करना। कुछ रिटर्न नहीं करना है। अगर ट्रू है तो हम लोग इसी को कर देंगे। हां आप इसको ये भी कर सकते हैं कि इसमें ही रिटर्न कर दीजिए। हमको अच्छा नहीं लगता। हमको हमेशा ग्लोबल अच्छा लगता है। इसीलिए हम ऐसे करते हैं। आप चाहें तो कुछ रिटर्न कर सकते हैं। आपकी मर्जी। एक रूट हो गया। एक सम हो गया और एक टारगेट हो गया। टारगेट मतलब जो टारगेट आपको लीड कोड दे रहा है वो। सबसे पहला काम अगर रूट नल है। नल में क्या करना है? नल में कुछ नहीं करना है। रिटर्न कर जाना है। अगर रूट नल नहीं है मतलब कोई ना कोई सर्कल तो है।",
+      "source": "caption",
+      "english_text": "Void Fun. Why is void fun? Because there is no work to be done in this. Nothing to be returned. If it is true then we will do the same. Yes, you can also do this by returning it only. We don't like it. We always like global. That's why we do it like this. You can return something if you want. As you wish. One route is done. One match is made and one target is achieved. Target means the target which is giving you the lead code. The first thing to do is root tap. What to do in tap? There is nothing to be done in the tap. Have to return. If the root is not null, it means there is some circle."
+    },
+    {
+      "start_time": 845.12,
+      "end_time": 879.11,
+      "text": "उसको ऐड कर लो। सबसे पहले सम प्लस इक्वल टू रूट डॉट डेटा ऐड हो गया। सम में ये वाला सर्कल आ गया। अब लीफ के लिए चेक कर लीजिए कि अगर रूट का लेफ्ट इक्वल इक्वल टू नल एंड दोनों नल होने चाहिए ना तो रूट का राइट भी इक्वल इक्वल टू नल होना चाहिए। यस यस ये क्या बताता है आपको? लीफ अगर लीफ है तो क्या चेक कर लीजिए इफ सम इक्वल इक्वल टू टारगेट अच्छा अगर ऐसा है तो क्या करेंगे? रिजल्ट को ट्रू कर",
+      "source": "caption",
+      "english_text": "Add it. First the sum plus equal to root dot data is added. This circle came in the even. Now check for the leaf that if the left end of the root should be equal to null and both ends should be null, then the right end of the root should also be equal to null. Yes yes what does this tell you? If leaf is leaf then what to check if sum is equal to target. Well if so then what to do? True the result"
+    },
+    {
+      "start_time": 879.12,
+      "end_time": 904.79,
+      "text": "देंगे एक बार और रिटर्न कर जाएंगे। बस अगर लीफ नहीं है तो क्या करना है? और आपको नीचे जाना है तो नीचे जाइए। सबसे पहले लेफ्ट चले जाइए। रूट के लेफ्ट चले जाइए। सम टारगेट एक बार ये हो गया तो रूट के राइट भी चले जाइए। नीचे जाना है ना? दोनों तरफ जाएंगे। अब लेफ्ट अब हो सकता है कि एक नल हो, एक ना हो, कोई फर्क नहीं पड़ता है। लीफ तो नहीं है ना? मतलब नीचे कुछ ना कुछ तो है।",
+      "source": "caption",
+      "english_text": "Will give once more and return. Just what to do if there is no leaf? And if you want to go down then go down. First go left. Go left of the route. Once this is the target, go to the right of the route. Want to go down, right? Will go both ways. Now on the left, there may be one tap, there may not be one, it does not matter. It's not a leaf, is it? Meaning there is something underneath."
+    },
+    {
+      "start_time": 904.8,
+      "end_time": 938.31,
+      "text": "यहां तक का पाथ नहीं लेना है। लीफ का ही पाथ लेना है। तो नॉन लीफ के नीचे चले जाइए। अब नीचे आपको नल मिलता है, क्या मिलता है वो बाद में देखा जाएगा। सम ले लीजिए और टारगेट ले लीजिए। इतना हो गया तो बस रिटर्न कर जाइए। खत्म हो गई बात। अब मेन फंक्शन से मेन फंक्शन मतलब लीड कोड वाले फंक्शन से क्या कॉल करेंगे? कुछ नहीं। फन रूट। पहली बार सम क्या रहता था? ज़ीरो और टारगेट। इतना होने के बाद अगर आपको पाथ मिला है तो यह वाला चल जाएगा लाइन और आपका ट्रू हो जाएगा। तो ये होने के बाद रिटर्न",
+      "source": "caption",
+      "english_text": "Don't take the path till here. Only the path of the leaf has to be taken. So go under the non leaf. Now below you get a tap, what you get will be seen later. Take the sum and take the target. Once this is done, just return it. The matter is over. Now what will we call from main function to main function i.e. from the function having lead code? Nothing. Fun Route. What was even for the first time? Zero and target. After this, if you have found the path then this line will run and yours will be true. So after this the return"
+    },
+    {
+      "start_time": 938.32,
+      "end_time": 970.55,
+      "text": "टू खत्म हो गया पाथ समवन। बड़ा नकली सा क्वेश्चन था। एक और नकली क्वेश्चन पे चलते हैं। जल्दी से आइए। ये क्वेश्चन हम आपको रेकमेंड करेंगे कि एक बार जब हम क्वेश्चन समझा दें ना तो खुद से ट्राई करके आइएगा। ये क्वेश्चन पाथ सम वन का एग्जैक्ट कॉपी है। ठीक है? इसमें कोई समझने की, कोई दिमाग दौड़ाने की जरूरत नहीं है। एक बार क्वेश्चन देख लीजिए। खुद से प्लीज ट्राई करिएगा। वीडियो देख लीजिएगा। मतलब अगर मन करे तो देख लीजिएगा लेकिन उतना कुछ है नहीं तो आप चाहे तो ये क्वेश्चन खुद से करके पाथ सम टू वाले पार्ट पे स्किप कर जाइएगा तो पाथ सम टू अच्छा क्वेश्चन है थोड़ा सा थोड़ा सा ये तो बेकार क्वेश्चन है ठीक है इसमें कुछ नहीं है बताते हैं",
+      "source": "caption",
+      "english_text": "The path is over, someone. It was a very fake question. Let's move on to another fake question. come over quickly. We would recommend you to try these questions yourself once we explain them. This question is an exact copy of Path Some One. Ok? There is no need for any understanding or racking your brain in this. Look at the question once. Please try it yourself. Have a look at the video. Meaning, if you feel like it, you can see it, but if there is not much else, then if you want, you can do this question yourself and skip the path-sum-two part, then path-sum-two is a good question, a little bit, this is a useless question, okay, there is nothing in it, let me tell you."
+    },
+    {
+      "start_time": 970.56,
+      "end_time": 1001.189,
+      "text": "क्या है एक आपको ट्री दिया हुआ है अच्छा सेम काम करना है रूट से लीफ का सम निकालना है लेकिन इसमें कैच है इसमें कैच क्या है अब मान लीजिए इसमें रूट तो एक है। रूट तो एक है। अब आपको बोलता है ना कि रूट से लीफ का पाथ निकालो। तो इसमें दो लीफ है। दो लीफ मतलब यह दोनों है। है ना? दोनों लीफ है ना? हां, दोनों लीफ है। अब आपको पाथ सम वन में क्या करना था? यहां से यहां तक का सम निकालना था। तो अब यहां पे आते तो आपका सम क्या होता है? थ्री। यहां पे आते तो आपका सम क्या होता है इन दोनों का? फोर।",
+      "source": "caption",
+      "english_text": "What is one, you have been given a tree, you have to do the same work, you have to find the number of leaves from the root, but there is a catch in this, what is the catch in this, now suppose there is one root in it. There is only one route. Now it tells you to find the path from the root to the leaf. So it has two leaves. Two leaves means it is both. Isn't it? Both are leaf right? Yes, both are leaf. Now what did you have to do in Path Some One? The sum had to be calculated from here to here. So now what would have happened to you if you had come here? Three. If you had come here, what would have happened to these two? Four."
+    },
+    {
+      "start_time": 1001.199,
+      "end_time": 1034.87,
+      "text": "ये करना था। यहां पे एग्जैक्ट सम नहीं निकाल के आपको बोला है इन दोनों को जोड़ के एक नंबर बना दो। इन दोनों को जोड़ के क्या बना दो? नंबर बना दो। मतलब सेम काम करते रहना है। रूट से लीफ तक आना है। लीफ तक आने के बाद आपको क्या-क्या मिला? वन और टू तो वो नंबर ना वन और टू का सम ना बनके वो नंबर 12 बन जाना चाहिए। क्या बन जाना चाहिए? 12 बन जाना चाहिए। सिमिलर कहानी दूसरे लीफ में शुरू में वन और थ्री वन और थ्री का सम ना बनके वन थ्री का नंबर बन जाना चाहिए। 13 बन जाना चाहिए। अच्छा एक बार सब ये हो गया ना। सारे ऐसे नंबर्स",
+      "source": "caption",
+      "english_text": "This had to be done. Here, instead of finding the exact sum, you are asked to add these two and make one number. What do you make by combining these two? Make a number. It means to keep doing the same work. Have to come from root to leaf. What did you get after coming to Leaf? If one and two are equal then that number should not be the sum of one and two but the number should become 12. What should become? Should become 12. Similar story: In the second leaf, initially one and three should not become the sum of one and three, but should become the number of one three. Should become 13. Well, once all this is done, isn't it? all such numbers"
+    },
+    {
+      "start_time": 1034.88,
+      "end_time": 1069.669,
+      "text": "मतलब सारे रूट टू लीफ का आप नंबर जब बना लें इनको सम कर दीजिए। इनका सम क्या आएगा? 25 ये आपको रिटर्न करना है। ये आपको रिटर्न करना है। फिर से समझाते हैं। पाथ सम वन में रूट से लीफ का सिंपल सम था कि 1 + 2 और 1 + 3 ऐसा करना था। सम नहीं लेना है। वन और टू का क्या नंबर बनता है? जोड़ के 12 वन और 3 का 13। सारे ऐसे नंबर जब मिल जाएंगे तो उनका सम आपको रिटर्न करना है। अच्छा। बड़ा सिंपल है। अगर आपको याद हो तो हम लोग कभी ना कभी एक किए हैं। हमको याद है हम पढ़ाए हैं। यह अब क्या करना है आपको बोल रहा है। हर सर्कल में क्या लिखा हुआ है? हर सर्कल में डिजिट्स हैं। हर",
+      "source": "caption",
+      "english_text": "Meaning, when you number all the roots to leaves, add them together. What will be their equal? 25 You have to return this. You have to return this. Let me explain again. Path sum one had simple sum from root to leaf that 1 + 2 and 1 + 3 had to do this. Don't take it for granted. What number is made from one and two? Addition of 12 one's and 3's of 13. When all such numbers are found then their sum has to be returned to you. Good. It is very simple. If you remember, we have united at some point or the other. We remember we taught. It's telling you what to do now. What is written in each circle? There are digits in every circle. every"
+    },
+    {
+      "start_time": 1069.679,
+      "end_time": 1102.95,
+      "text": "सर्कल में डिजिट्स हैं। हां, ऐसा नहीं है कि किसी सर्कल में डबल डिजिट नंबर है। नहीं, किसी भी सर्कल में जो डिजिट है ना वो 0 से नाइन तक ही है। तभी तो नंबर बनाएंगे ना। तभी तो नंबर बनाएंगे ना भैया। अरे वन और थ्री को जोड़ के नंबर बना सकते हो। अब बोल देगा 10 और फोर को जोड़ो तो मुश्किल हो जाएगी। मुश्किल हो जाएगी। अच्छा। डिजिट्स दिया हुआ है। आपको डिजिट्स को जोड़ के क्या बनाना है? नंबर बनाना है, नंबर बनाना है। इसका एक बहुत सिंपल ट्रिक होता है। अगर आपको आता है, अगर आप पेड्रोम किए हैं या तो आप रिवर्स ए नंबर वाला प्रोग्राम किए हैं तो आपको आता होगा। नहीं आता है तो इसमें ये सीख लीजिए। ये आने की",
+      "source": "caption",
+      "english_text": "There are digits in the circle. Yes, it is not that there is a double digit number in any circle. No, the digits in any circle are from 0 to nine only. Only then will we make numbers. Only then will you make the number, brother. Hey, you can make numbers by adding one and three. Now he will say, if you add 10 and four, it will become difficult. It will be difficult. Good. Digits are given. What do you want to make by adding the digits? Have to make numbers, have to make numbers. It has a very simple trick. If you know, if you have done Pedrom or if you have done reverse A number program then you must know. If you don't know, then learn this. this coming"
+    },
+    {
+      "start_time": 1102.96,
+      "end_time": 1129.83,
+      "text": "आना चाहिए। अगर आपको डिजिट्स को जोड़ के नंबर बनाना है। जैसे कि एक डिजिट है वन और एक डिजिट है टू। इनको आपको जोड़ के एक नंबर बनाना है। अच्छा कैसे बनाएंगे? शुरुआत में शुरुआत में एक सम = 0 लेना होता है। शुरुआत में ज़ीरो है। अच्छा। अब आपको वन जोड़ना है। वन जोड़ना है। तो इसके लिए क्या ट्रिक होता है? सम इज इक्वल टू सम * 10 * 10 प्लस डिजिट प्लस डिजिट। तो देखिए क्या होगा? शुरुआत में सम ज़ीरो है।",
+      "source": "caption",
+      "english_text": "Should come. If you want to make numbers by adding digits. Like one digit is one and one digit is two. You have to add them and make a number. How to make it better? In the beginning an sum = 0 has to be taken. There is zero in the beginning. Good. Now you have to add the forest. Forest has to be added. So what is the trick for this? Sum is equal to sum * 10 * 10 plus digit plus digit. So let's see what will happen? In the beginning the sum is zero."
+    },
+    {
+      "start_time": 1129.84,
+      "end_time": 1163.669,
+      "text": "मान लीजिए आप वन जोड़ना चाहते हैं तो सम क्या बन जाएगा? सम इक्वल टू 0 * 10 + 1 क्या बना? 0 * 10 0 + 1 1 ठीक है? हो गया। अब आपको इसमें टू जोड़ना है। टू का सम नहीं करना है। टू को नंबर बना के जोड़ना है। सेम काम कीजिए। सेम काम कीजिए। देखिए सम = सम * 10 प्लस डिजिट। अभी सम क्या बना था? 1 1 * 10 + 2 1 * 10 क्या होता है? 10 + 2 12 देखिए बन गया। बन गया ना? मान लीजिए एक और आपको फाइव जोड़ना है इसमें। मतलब नंबर में जोड़ना है। सेम काम कीजिए। सम इक्वल टू सम",
+      "source": "caption",
+      "english_text": "Suppose you want to add one, then what will become of the sum? What is Sum Equal to 0 * 10 + 1? 0 * 10 0 + 1 1 ok? Done. Now you have to add two to it. Do not add two. Two has to be added by making a number. Do the same work. Do the same work. See Sum = Sum * 10 plus digit. What was even made just now? What is 1 1 * 10 + 2 1 * 10? 10 + 2 12 See it is done. Is it done? Suppose one more and you have to add five to it. Means to add to the number. Do the same work. sum equal to sum"
+    },
+    {
+      "start_time": 1163.679,
+      "end_time": 1196.87,
+      "text": "* 10 + डिजिट। 12 * 10 + डिजिट। 12 * 10 क्या होता है? 120 + 5 125 देखिए नंबर बनता जा रहा है। नंबर बनता जा रहा है। बस यही काम करना है। जो पांच सम में पांच सम में आप क्या करते थे यहां पे? ये कर रहे थे ना इसको चेंज करके क्या लिख दीजिए? सम = सम * 10 + रूट डॉट डेटा जुड़ जाएगा। एक बार आप लीफ नोट पे आ जाते हैं। अब आपको लीफ नोट पे कुछ चेक नहीं करना है। अब आपको लीफ नोट पे कुछ चेक नहीं करना है। इसकी जरूरत नहीं है। इसकी जरूरत नहीं है आपको।",
+      "source": "caption",
+      "english_text": "* 10 + digits. 12 * 10 + digits. What is 12 * 10? 120 + 5 125 See the number is becoming. The number is increasing. This is the only thing to do. What did you do here during the five days? You were doing this, what should you change and write? Sum = Sum * 10 + Root Dot data will be added. Once you come to Leaf Note. Now you don't have to check anything on Leaf Note. Now you don't have to check anything on Leaf Note. It is not needed. You don't need this."
+    },
+    {
+      "start_time": 1196.88,
+      "end_time": 1229.51,
+      "text": "अब आप जब लीफ नोड पे आए हैं तो आपका सम क्या कंटेन करता है? वो नंबर आपका सम 12 कंटेन करता है। आपको इसको जोड़ते रहना है। जोड़ते रहना है। ऊपर जैसे हम बुलियन रिजल्ट इज इक्वल ट्रू लिए थे ना। यहां हम क्या करेंगे? बुलियन रिजल्ट इज इक्वल टू जो भी लिए थे इसमें हम क्या करेंगे? इंट रिजल्ट = 0 ये क्या है? टोटल का सम। टोटल का सम जब आप लीफ पे पहुंचते हैं कुछ नहीं करना है। रिजल्ट प्लस इक्वल टू सम खत्म हो गया खेल। यही था। क्या था? ऊपर आप क्या कर",
+      "source": "caption",
+      "english_text": "Now that you have come to the leaf node, what does your sum contain? That number contains your sum 12. You have to keep adding to it. Have to keep adding. Like above we had taken the boolean result is equal true. What will we do here? What do we do if the boolean result is equal to whatever was taken? int result = 0 What is this? Sum of total. Total Sum When you reach the leaf there is nothing to do. Result plus equal to sum, game over. This was it. what was it? what do you do above"
+    },
+    {
+      "start_time": 1229.52,
+      "end_time": 1254.63,
+      "text": "रहे थे? इसको कर रहे थे। रूट का डेटा को जोड़ रहे थे। वैसा नहीं जोड़ना है। नंबर के जोड़ना है। तो इसके जगह क्या लिख दिए? सम = सम * 10 + डेटा। अब यहां पे पाथ सम में चेक होता था। यहां चेक नहीं करना है। ऐसा जितना भी सम बने ना जितना भी 2 लीफ का सम बने सबको एक साथ जोड़ना है। तो एक साथ जोड़ दो। ये जोड़ दिए और सेम ये तो सेम रहेगा। रिटर्न ट्रू सॉरी रिटर्न ओ यहां पे हम रिटर्न ट्रू लिख दिए थे। रिटर्न रेस रिटर्न रेस रिटर्न रेस ऊपर भी यहां भी।",
+      "source": "caption",
+      "english_text": "were staying? Were doing this. Adding route data. Don't add like that. The numbers have to be added. So what to write instead? Sum = Sum * 10 + Data. Now here the check was done in path sum. No checking here. Whatever number of even or even number of 2 leaves is formed, they all have to be joined together. So add it together. If you add these and it will still be beans. Return True Sorry Return O Here we had written Return True. Return race return race return race up here also here."
+    },
+    {
+      "start_time": 1254.64,
+      "end_time": 1287.029,
+      "text": "ठीक है? तो ये क्वेश्चन बहुत नकली बहुत बेकार जाके आप इसको कर सकते हैं। ये ईजी है कि मीडियम है? ये मीडियम है। मीडियम नहीं है। सुपर ईजी है। ठीक है? अगर पाथ सम वन ईजी था तो ये सुपर ईजी है। इसको जाके करिए। अब बढ़ते हैं पाथ सम टू की ओर। चलिए। पाथ सम टू आपको सिमिलर चीज़ बोलता है। पाथ सम टू बहुत सिमिलर है पाथ सम से। इसमें भी अगर एक आपको ट्री दिया रहे ऐसा करके मान लीजिए कोई ट्री दिया हो और 1 3 कितना होता है? फोर और थ्री से और मान लीजिए कि यहां भी फाइव है। ठीक है? मतलब ठीक है? आपको एक ट्री दिया। आपको एक टारगेट सेवन दिया है।",
+      "source": "caption",
+      "english_text": "ok? So you can do this by making these questions very fake and very useless. Is it easy or medium? This is medium. Not medium. Is super easy. Ok? If Path Sum One was easy then this is super easy. Go do it. Now let's move towards Path Sum Two. Let go. Path Some tells you similar things. Path Some Too is very similar to Path Some. In this also, if one gives you a tree, then suppose a tree is given and what is 1 3? From four and three and let's say there is five here too. Ok? meaning ok? Gave you a tree. You have been given a target intake."
+    },
+    {
+      "start_time": 1287.039,
+      "end_time": 1320.31,
+      "text": "टारगेट सेवन दिया है। सेम सेम। अब पाथ सम वन में आपको क्या बताना था कि किसी भी किसी भी रूट टू लीफ का पाथ क्या है? सेवन है कि नहीं? तो यहां आप देख सकते हैं कि वन टू इसको फोर कर देते हैं। इसको फोर कर देते हैं। हां। इसमें आप देख सकते हैं कि वन टू और फोर रूट से लीफ है। सेवन है तो ट्रू। सिमिलरली वन थ्री और थ्री ये भी सेवन है। तो आप ट्रू रिटर्न करते थे। इसमें आपको ये नहीं करना है। इसमें ना जितना भी जितना भी रूट टू लीफ जितने भी रूट टू लीफ का सम सेवन है। जितने भी रूट टू लीफ का सम सेवन है, उनको आपको एक",
+      "source": "caption",
+      "english_text": "Target intake has been given. Same beans. Now in Path Sum One, what did you have to tell what is the path from any root to leaf? Is it consumed or not? So here you can see that one two makes it four. Let's make it four. Yes. In this you can see that one, two and four are leaves from the root. If there is seven then it is true. Similarly one three and three are also seven. So you used to return true. You don't have to do this in this. In this, there is an even intake of root to leaf and root to leaf. For all the root to leaf intake, you will get one"
+    },
+    {
+      "start_time": 1320.32,
+      "end_time": 1354.47,
+      "text": "वेक्टर बना के रिटर्न करना है। वेक्टर ऑफ़ वेक्टर। फॉर एग्जांपल सबसे पहला पाथ अगर हम देखें तो एक वेक्टर बनता है 1, 2 और 4। सही बात है। एक और अगर हम वेक्टर देखें तो बनता है 1 3 इन दोनों को एक वेक्टर में रिटर्न करना है। इन दोनों को किसमें? एक वेक्टर मतलब लिस्ट ऑफ लिस्ट 2D एरे रिटर्न करना है। 2D एरे रिटर्न करना है। सेम क्वेश्चन है थोड़ा सा इसमें वो है। तो चलिए इसमें हम क्या करेंगे? देखिए जो पाथ सम वन में किए थे वो तो करना ही पड़ेगा। क्या? जो पाथ सम वन में किए थे वो तो करना ही पड़ेगा। तो वो करना ही पड़ेगा। मतलब कि सब",
+      "source": "caption",
+      "english_text": "Have to return as a vector. Vector of vector. For example, if we look at the first path, a vector is formed consisting of 1, 2 and 4. That's correct. Another if we look at the vector, it becomes 1 3. Both of these have to be returned in one vector. In which of these two? A vector means to return a 2D array of lists. To return a 2D array. Same question, a little bit of that in this. So what will we do in this? Look, we will have to follow the path we did in Some One. What? We will have to follow the same path that we did in the same forest. So that will have to be done. means that all"
+    },
+    {
+      "start_time": 1354.48,
+      "end_time": 1388.71,
+      "text": "लिखना पड़ेगा वैसा ही। सम बनाना पड़ेगा। अह चेक करना पड़ेगा, सब करना पड़ेगा। लेकिन एक एक्स्ट्रा चीज़ करनी पड़ेगी। पाथ सम वन में जब आपका कंडीशन मैच हो जाता था। मतलब कि जब सम इक्वल इक्वल टू टारगेट हो जाता था। तो इसमें आप क्या करते थे? रिजल्ट इज़ इक्वल टू ट्रू कर देते थे। अब यहां पे ये नहीं करना है। यहां पे आपको ना सम के साथ-साथ एक पाथ बनाते हुए चलना पड़ेगा। या फिर जो लोग मेरा रिकर्शन फॉलो करते आ रहे हैं। एक डायरी मेंटेन कर लीजिए। एक डायरी मेंटेन कर लीजिए। याद कीजिए रिकर्न में एक डायरी मेंटेन होती थी। डायरी क्या बोलता था? जो चॉइस आप लेते थे ना जो चॉइस आप लेते थे उसको डायरी में लिख लेते थे। उसको",
+      "source": "caption",
+      "english_text": "Will have to be written like that. Will have to be made even. Ah, we will have to check, everything will have to be done. But one extra thing will have to be done. When your condition was matched in Path Sum One. Meaning that when the sum became equal to the target. So what did you do in this? Result is equal to true. Now this is not to be done here. Here you will have to walk along the Na Sam making a path. Or those who have been following my recursion. Maintain a diary. Maintain a diary. Remember, a diary was maintained in Recurn. What did the diary say? Whatever choices you made, you used to write them in your diary. him"
+    },
+    {
+      "start_time": 1388.72,
+      "end_time": 1421.27,
+      "text": "डायरी में लिख लेते थे। जब वो काम हो जाए रिटर्न करने से पहले उसको डायरी से मिटा देते थे। उसको डायरी से मिटा देते थे। सेम काम करना है। कैसे करना है? अभी बता देते हैं। आइए मान लीजिए ये आपका ट्री है। वन टू थ्री अ यहां पे क्या है? फोर और उधर थ्री है। फोर और थ्री है। अच्छा ट्री बना हुआ है। अच्छा शुरुआत कहां से करेंगे? फन रूट इक्वल टू वन। शुरुआत में तो सम जीरो",
+      "source": "caption",
+      "english_text": "Used to write in diary. When the work was done, he would erase it from the diary before returning it. Used to erase it from the diary. Same work has to be done. How to do? Let me tell you right now. Let us assume this is your tree. One two three a what is here? There is four and there is three. There are four and three. A nice tree has been built. Well where do we start? Fun route equals two. In the beginning it is equal to zero"
+    },
+    {
+      "start_time": 1421.28,
+      "end_time": 1453.83,
+      "text": "ही रहेगा। और एक डायरी हम लोग एक डायरी बनाएंगे। डायरी मतलब एक खाली वेक्टर। डायरी मतलब है खाली वेक्टर। डायरी मतलब कि खाली वेक्टर। तो ये खाली वेक्टर है। कुछ नहीं है कुछ। और एक डायरी। अच्छा आ गए। अगर रूट नल है तो क्या करना है? कुछ नहीं। पाथ समवन में भी कुछ नहीं था। यहां भी कुछ नहीं करना है। तो रूट नल में कुछ नहीं करना है। अच्छा उसके बाद पाथ सम क्या करता था? अगर ये नल नहीं है। अगर ये नल नहीं है तो मतलब कोई ना कोई सर्कल तो है। कोई ना कोई सर्कल है तो किसी ना किसी पाथ में होगा ही। इसको सब में जोड़ लेता था। यहां भी जोड़ देंगे। यहां भी जोड़ देंगे। सम इज",
+      "source": "caption",
+      "english_text": "Will remain the same. And we will make a diary. Diary means an empty vector. Diary means empty vector. Diary means empty vector. So this is the empty vector. Nothing is something. And a diary. Okay I have come. What to do if root is null? Nothing. There was nothing in Path Samevan also. There is nothing to be done here either. So nothing to do in root tap. Well, what did Path Sam do after that? If this is not a tap. If it is not a tap then it means there is some circle. If there is some circle then it must be in some path. Used to add this to everything. Will add here also. Will add here also. even is"
+    },
+    {
+      "start_time": 1453.84,
+      "end_time": 1482.31,
+      "text": "इक्वल टू सम प्लस रूट का डेटा। रूट का डेटा जुड़ गया। जुड़ गया सम में। और और एक चीज और करेंगे कि यहां पे आप इसको जोड़ रहे हैं ना इसको डायरी में लिख लीजिए। इसको डायरी में लिख लीजिए क्योंकि अगर मान लीजिए आप रूट से लीफ तक जाएंगे लीफ पे पहुंच जाएंगे सम इक्वल इक्वल टू टारगेट हो जाता है तो वो पाथ कैसे पता चलेगा आपको कि किस पाथ से आया है वो यहां से पता चलेगा कैसे अभी दिखाते हैं इसको हम डायरी में लिख लेंगे किसको इस रूट के नंबर",
+      "source": "caption",
+      "english_text": "Data of equal to sum plus root. Route data added. Added to the total. And one more thing we will do is that you are adding this here and write it in the diary. Write it in the diary because if suppose you go from the root to the leaf and reach the leaf, sum becomes equal to the target, then how will you know that path, which path it came from, it will come to know from here, how now let's show it, we will write it in the diary to whom will be given the number of this route."
+    },
+    {
+      "start_time": 1482.32,
+      "end_time": 1513.43,
+      "text": "को डायरी डॉट पुश बैक किसको रूट के डेटा को रूट के डेटा को डायरी में लिख लिया कि चलो इस सर्कल पे हम आए अब अगर ये लीफ है। अगर ये लीफ है तो क्या करते थे? सबसे पहले चेक होता था। इफ सम इक्वल इक्वल टू टारगेट अगर ये है पाथ समन में क्या करते थे? रिजल्ट इज़ इक्वल टू ट्रू। यहां नहीं करना है। यहां पे आपका जो डायरी होगा ना आपका डायरी आपका पाथ होगा।",
+      "source": "caption",
+      "english_text": "Co diary dot push back whom route's data, wrote the route's data in the diary, let's come to this circle, now if this is a leaf. If this is Leaf then what did you do? The check was done first. If Sum Equals Equal to Target If this is what did you do in path summation? Result is equal to true. Not to be done here. Whatever diary you have here, your diary will be your path."
+    },
+    {
+      "start_time": 1513.44,
+      "end_time": 1548.39,
+      "text": "आप किस पाथ से किस सर्कल से जिगजैग ज़गैग करके यहां पे पहुंचे हैं कि आपको टारगेट मिला है। वही होगा डायरी में। इसको क्या करिए? रिजल्ट में पुश बैक कर दीजिए। सिंपली सिंपली यस रिजल्ट क्या है? रिजल्ट जो आपको लौटाना है वेक्टर ऑफ़ वेक्टर ये है रिजल्ट वेक्टर ऑफ़ वेक्टर जावा वाले मतलब एरे लिस्ट ऑफ़ एरे लिस्ट जो भी 2D एरे 2D एरे 2D एरे ये है आपका रिजल्ट हो गया पुश हो गया पुश। अब पाथ सम वन में क्या करते थे? यहां से रिटर्न क्योंकि लीफ के बाद और कुछ नहीं कर सकते ना रिटर्न। लेकिन लेकिन",
+      "source": "caption",
+      "english_text": "By which path and which circle did you zigzag and reach here, you have found the target. The same will be in the diary. What to do with this? Push back in the result. What is the Simply Simply Yes result? The result which you have to return is vector of vectors, this is the result vector of vectors, Java ones means array list of arrays list whatever 2D array 2D array 2D array this is your result, push is done, push is done. Now what did you do in Path Sam One? Return from here because nothing else can be done after the leaf, no return. but but"
+    },
+    {
+      "start_time": 1548.4,
+      "end_time": 1575.99,
+      "text": "याद कीजिए रिकर्शन में हम बोले थे अगर आप डायरी मेंटेन कर रहे हैं। अगर आप डायरी मेंटेन कर रहे हैं, डायरी में आप पुश किए अच्छी बात है। लेकिन लौटने से पहले उसको रिवर्स कर दीजिए। जो भी यहां पे डायरी में चेंज हो रहा है, उसको रिवर्स करिए। तो डायरी में क्या चेंज हुआ है? पुश बैकक हुआ है। पुश बैक का रिवर्स क्या होता है? पॉप बैकक। पॉप बैकक डायरी डॉट पॉप बैक। यस। रिटर्न होने से पहले। अब रिटर्न कर जाइए।",
+      "source": "caption",
+      "english_text": "Remember in recursion we said if you are maintaining a diary. If you are maintaining a diary, it is a good thing that you push in the diary. But reverse it before returning. Whatever is changing in the diary here, reverse it. So what has changed in the diary? There has been pushback. What is the reverse of push back? Pop Backk. Pop Backk Diary Dot Pop Back. Yes. Before the return is made. Now return."
+    },
+    {
+      "start_time": 1576.0,
+      "end_time": 1601.75,
+      "text": "अगर लीफ नोट नहीं है तो क्या करते थे? कुछ नहीं करते थे। लेफ्ट और राइट दोनों जाते थे। फन रूट के लेफ्ट चले जाइए। वही सम ले जाइए। वही डायरी ले जाइए। डायरी में ऑलरेडी पुश हो चुका है। याद रखिएगा डायरी में हो चुका है पुश यहां पे। राइट भी चले जाइए। राइट भी चले जाइए। वही सम लेके और वही डायरी लेके। अब अब अब पास सम वन में यहां भी रिटर्न कर जाते थे।",
+      "source": "caption",
+      "english_text": "What to do if there is no leaf note? Didn't do anything. Used to go both left and right. Go left on the Fun Route. Take the same amount. Take that diary with you. The diary has already been pushed. Remember, the push has been done in the diary here. Go right also. Go right also. Take the same sum and the same diary. Now now they used to return here in the pass even one."
+    },
+    {
+      "start_time": 1601.76,
+      "end_time": 1635.35,
+      "text": "लेकिन लेकिन अब देखिए आप इसको यहां पे पुश किए हैं। डायरी में आप यहां पे चेंज किए। अब आप लीफ के लिए तो रिवर्स कर दिए। लीफ के लिए तो यहां पर रिवर्स हो गया। नॉन लीफ के लिए भी तो रिवर्स करना है। नॉन लीफ के लिए भी तो रिवर्स करना है। अगर आप यहां पर नहीं लिखेंगे तो नॉन लीफ के लिए वो रिवर्स नहीं होगा। लीफ के लिए तो बढ़िया है। लीफ के लिए तो आप यहां पे पुश बैक का पॉप बैक कर दिए। लेकिन अगर ये नॉन लीफ हुआ तो ये तो यहां नहीं जाएगा। ये नीचे आ जाएगा। यहां भी सेम काम कीजिए। डायरी डॉट पॉप बैक। ये जो लोग रिकर्शन देखे हैं उनको बहुत अच्छे से समझ में आ रहा होगा। जो लोग रिकर्शन नहीं देखे हैं तो प्लीज जाके",
+      "source": "caption",
+      "english_text": "But but see now you have pushed it here. You made changes here in the diary. Now you have done the reverse for Leaf. For Leaf, the reverse happened here. Even for non-leaf, the reverse has to be done. For non-leaf also the reverse has to be done. If you do not write here, it will not be reversed for non-leaf. It's great for the Leaf. For Leaf, you popped back the push back here. But if it is non-leaf then it will not go here. It will come down. Do the same work here also. Diary Dot Pop Back. Those who have seen recursion must be understanding this very well. Those who have not seen Recursion, please go"
+    },
+    {
+      "start_time": 1635.36,
+      "end_time": 1662.31,
+      "text": "रिकर्शन एक बार देख लीजिए। रिकर्ज़ बड़ा छोटा सा पैटर्न हम पढ़ाए थे। उसमें ज्यादा वीडियो भी नहीं है। रिकर्ज़ बड़ी ब्यूटीफुली हम पढ़ाए थे। इसीलिए हम बार-बार इसको रिपीट नहीं करते हैं। क्योंकि रिकज़न में इसके ऊपर हम 30 40 एक घंटा दे चुके हैं कि क्यों रिवर्स करना है, क्यों नहीं करना है, कैसे वो चॉइस बनता है, कैसे यूनिक सब कर चुके हैं हम लोग रिकज़न में। ठीक है? तो अगर रिकर्ज़ आप नहीं देखे हैं तो आपको देख लेना चाहिए। बहुत मदद मिलेगी। ट्री में ही नहीं। ग्राफ में मदद मिलेगी। फिर जाके डीपी में मदद मिलेगी। तो रिकज़न नहीं देखे हैं तो फिर आपका यहां आना नहीं बनता है।",
+      "source": "caption",
+      "english_text": "Take a look at the recursion. We taught the recurring big and small pattern. There is not much video in it. We had taught the courses very beautifully. That is why we do not repeat it again and again. Because in Reckon, we have given 30-40 hours on why to reverse it, why not to do it, how that choice is made, how unique we have done all this in Reckon. Ok? So if you have not seen Recurz then you should see it. Will be of great help. Not in the tree itself. The graph will help. Then go and get help in DP. So if you haven't seen Rickson then you don't have to come here."
+    },
+    {
+      "start_time": 1662.32,
+      "end_time": 1689.19,
+      "text": "ये एडवांस। इसीलिए हम इसमें ज्यादा टाइम नहीं दे रहे हैं। ठीक है? बस खत्म हो गया। यह हो गया पाथ सम टू। देख लीजिए। इसका एक ड्राई रन कर देते हैं। आइए ड्राई रन करते हैं। इसका एक छोटा सा ड्राई रन कर दें। सबसे पहले आप कहां जाएंगे? फन वन में। सम कहां से? ज़ीरो से। और आपका डायरी शुरू में खाली है। डायरी शुरू में खाली है। ये नन नहीं है। तो क्या करेंगे? सबसे पहले तो सम = 0 + 1 = 1 और डायरी में इसको लिख देंगे। जो डायरी में वन लिख दिए।",
+      "source": "caption",
+      "english_text": "This advance. That's why we are not spending much time on it. Ok? It's over. This is Path Sum Too. Take a look. Let's do a dry run of it. Let's do a dry run. Give it a small dry run. Where will you go first? In Fun One. Where from? From zero. And your diary is initially empty. The diary is initially empty. This is not a nun. So what to do? First of all, sum = 0 + 1 = 1 and we will write this in the diary. Who wrote forest in the diary."
+    },
+    {
+      "start_time": 1689.2,
+      "end_time": 1723.029,
+      "text": "हो गया। अब क्या ये लीफ है? क्या ये वन? लीफ आपको लग रहा है? है लीफ नहीं है। लीफ नहीं है तो क्या करेंगे? फन टू लेफ्ट पे जाएंगे सम इज़ इक्वल टू वन के साथ और डायरी के साथ। सिमिलरली थ्री पे भी जाएंगे। सम इज़ इक्वल टू वन और डायरी के साथ। तो हम बस हम लेफ्ट वाले पाथ का आपको दिखा रहे हैं। तो चलिए टू वाले को एग्जीक्यूट करें। फन टू सम = 1 और डायरी भी एज़ इट इज़ आया है। क्या करेंगे? नल नहीं है ना? सम = 1 + 2 = 3 डायरी में टू को लिख लीजिए। डायरी में टू को ये एक एक्स्ट्रा स्टेप है। लिख लिए क्या करेंगे",
+      "source": "caption",
+      "english_text": "It's done. Now is this the Leaf? Is this a forest? Leaf do you feel? It is not a leaf. What to do if there is no leaf? We will go to Fun Too Left with Some Is Equal to One and Diary. Will also go on similar three. With Some Is Equal Two and Diary. So we are just showing you the left path. So let's execute the two one. Fun to some = 1 and diary has also come as it is. What to do? There is no tap, right? Sum = 1 + 2 = 3 Write down 2 in your diary. This is an extra step to add to the diary. what will you do after writing"
+    },
+    {
+      "start_time": 1723.039,
+      "end_time": 1756.47,
+      "text": "यहां भी लीफ तो नहीं है टू लीफ नहीं है बेटा है फोर पे जाइए फन फोर सम इज इक्वल टू थ्री के साथ और डायरी के साथ इसको एग्जीक्यूट करते हैं आइए देखिए क्या होगा फन फोर पे आ गए सम = 3 है और डायरी भी है नल तो नहीं है फोर सर्कल है ना नल नहीं है तो क्या करेंगे सबसे पहले सम में जोड़ दीजिए 3 + 7 हो गया डायरी में फोर को लिख लीजिए डायरी में फोर को लिख लीजिए अब फोर लीफ है देखिए देख लीजिए फोर लीफ है। लीफ है तो चेक कर लीजिए। मान लेते हैं कि टारगेट सेवन होगा। आपको मिल गया है। तो",
+      "source": "caption",
+      "english_text": "Here too there is no leaf, there is no two leaf, son, go to four, go to fun four, sum is equal to two and execute it with diary, let's see what will happen, fun has arrived at four, sum = 3 and diary is also there, there is no null, there is no four circle, no null, what to do, first add to the sum, 3 + 7, done, write four in the diary, write four in the diary, now four There is a leaf, see, there is a four leaf. Check if there is a leaf. Let us assume that the target will be achieved. You have got it. so"
+    },
+    {
+      "start_time": 1756.48,
+      "end_time": 1790.31,
+      "text": "क्या पुश हो जाएगा? देखिए पाथ आपको मिला कि नहीं मिला? ये आपको 1 2 4 मिल गया। वेरी गुड। तो आपके आपके रिजल्ट में एक वन टू फोर का पाथ आ चुका है। अब अब फोर क्या करेगा? रिटर्न होने से पहले डायरी से पॉप बैक। डायरी से पॉप बैक। तो डायरी में ये फोर पॉप बैकक हो गया। वापस चल के हम लोग कहां पे आ गए? ये खत्म हो गया। ये भी खत्म हो गया। वापस चल के टू पे आ गए। टू का राइट चाइल्ड नल है। तो नल से कुछ नहीं होगा। अब टू बी रिटर्न करने से पहले क्या करता है? पॉप बैक। तो अब टू बी पॉप हो गया। देखिए वापस चल के कहां पे आ गए? हम लोग टू बी खत्म हो गया। तो अब हम लोग यहां पे आ गए। अब थ्री एग्जीक्यूट होगा तो",
+      "source": "caption",
+      "english_text": "Will there be a push? See whether you found the path or not? You got this 1 2 4. very good. So a path of one to four has appeared in your result. What will Four do now? Pop back from the diary before it returns. Pop back from the diary. So this four pop got back in the diary. Where did we come after returning? It's over. This too is over. Came back to 2. The right child of two is null. So nothing will happen with the tap. Now what does To B do before returning? Pop back. So now to be popped. Look where we came back after coming back? We To Be is over. So now we have come here. Now if three is executed then"
+    },
+    {
+      "start_time": 1790.32,
+      "end_time": 1821.029,
+      "text": "देखिए डायरी में टू और फोर पुश हुआ था लेकिन ये दोनों पॉप हो गया। तो अगर अब थ्री का पाथ निकालना होगा। तो अब ये दोनों ये दोनों थ्री। ये दोनों थ्री ऐड होगा। इसमें टू और फोर नहीं रहेगा। तो अब ये दोनों थ्री यहां पे ऐड होगा। 1 3 तो आपको दूसरा पाथ क्या मिलेगा? 1 3 अगर आप पप नहीं करते। मान लीजिए कि आप पॉप नहीं करते तो ये टू और ये फोर तो यहां पे रह जाता। तो आपको पाथ क्या मिल जाता? 1 2 4 3 और थ्री ये मिल जाता। ये नहीं चाहिए ना। रूट टू लीफ का अलग-अलग पाथ है ना। एक एक पाथ 1 2 4 है। एक पाथ 1 3 है। तो ये दोनों है।",
+      "source": "caption",
+      "english_text": "See, there were two and four pushes in the diary but both of them popped. So if now we have to find a path of three. So now these two these two three. These two will be three add. There will be no two and four in this. So now both these three will be added here. 1 3 So what other path will you get? 1 3 If You Don't Pup. Suppose if you had not popped, this two and this four would have remained here. So what path would you have got? 1 2 4 3 and you get three. Don't want this. There are different paths from root to leaf. One path is 1 2 4. One path is 1 3. So it's both."
+    },
+    {
+      "start_time": 1821.039,
+      "end_time": 1832.799,
+      "text": "अगर आप पॉप नहीं करते हो आपको यह मिल जाता। यह गलत हो जाता। इसीलिए पॉप करते हैं। बड़ा छोटा सा आपको समझा दिए। तो यह पाथ सम टू है। इसको भी जाके कोड करके तुरंत आइए। चलिए।",
+      "source": "caption",
+      "english_text": "If you don't pop you get this. This would have gone wrong. That's why we pop. Let me explain it to you big and small. So this path is sum to. Go and code this also immediately. Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

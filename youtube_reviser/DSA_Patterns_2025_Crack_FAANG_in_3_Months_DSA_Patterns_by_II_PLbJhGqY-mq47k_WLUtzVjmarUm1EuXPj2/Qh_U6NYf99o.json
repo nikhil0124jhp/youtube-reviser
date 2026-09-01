@@ -1,0 +1,233 @@
+{
+  "video_id": "Qh_U6NYf99o",
+  "video_title": "Recursion Fixed Template For All Questions | One Template To Solve Recursion Problems",
+  "video_number": 71,
+  "chunks": [
+    {
+      "start_time": 1.67,
+      "end_time": 35.51,
+      "text": "हेलो बच्चों, कैसे हैं? आप लोग तो ठीक ही रहते हैं। तो, देखिए, कल का रिकज़न उम्मीद करते हैं कि आप लोगों को अच्छा लगा होगा। तो देखिए, शुरू करने से पहले आपको एक छोटी सी चीज हम बता देते हैं कि रिकर्शन दो टाइप का होता है। ठीक है? एक होता है सब प्रॉब्लम बेस्ड, जो कल हम लोग थोड़ा सा देखे थे, वो जो गार्ड वाला था ना कि आप अपना प्रॉब्लम सॉल्व कर लो। आज इसको डिटेल में देखेंगे। इसका पूरा टेंप्लेट आपको हम बताएंगे कि सेम कोड से सारा प्रॉब्लम वो सेम तीन लाइन का कोड होता है। वो तीन आपको चीजें सोचनी है। जैसा स्लाइडिंग विंडो में देखे थे ना कि ये एक पॉइंट सोच लो। उसके बाद सारा कोड ऐसा बॉईलर प्लेट कोड है। सेम आपको हम बताएंगे। सब प्रॉब्लम वाला चीज जो होता है ना आगे जाके ये ट्रीज़ और 30% ऑफ़",
+      "source": "caption",
+      "english_text": "Hello children, how are you? You guys are fine. So, check out yesterday's recap, hope you guys enjoyed it. So see, before starting, let us tell you one small thing that there are two types of recursion. Ok? One is all problem based, which we saw a little bit yesterday, the one about the guard, you solve your problem. Today we will see it in detail. We will tell you its complete template, the whole problem with the same code is that same three line code. Those are three things you have to think about. Just think of this one point as seen in the sliding window. All the code after that is such boiler plate code. We will tell you the same. All the problematic things that happen, go ahead and get these trees and 30% off."
+    },
+    {
+      "start_time": 35.52,
+      "end_time": 67.51,
+      "text": "डीपी प्रॉब्लम्स में ये यूज़ होगा। दूसरा होता है चॉइस और बैक ट्रैकिंग। मेरा प्लान था चॉइस और बैक ट्रैकिंग पढ़ाने का आज ही ये देख लें। बहुत बड़ा-बड़ा ग्राफ बनाए तो हैं। लेकिन हमको लग रहा है कि थोड़ा सा इसमें हमको थोड़ा काम करने की जरूरत है समझाने के लिए। तो अभी समझाएंगे तो समझ में उतना आएगा नहीं। आज एक ही में क्रम कर देंगे ना तो वो फिर उड़ जाता है दिमाग से। तो ये बैक ट्रैकिंग कल करेंगे। लेकिन बैक ट्रैकिंग बहुत इंपॉर्टेंट है। मिस मत कीजिएगा बैक ट्रैकिंग क्योंकि आगे जाके ये 70% ऑफ़ डीपी क्वेश्चन एंड 100% ऑफ़ ग्राफ क्वेश्चन में काम आएगा। ठीक है? जो पूरा आप लोग पढ़ते हैं ना ग्राफ का डीएफएस तो डीएफएस क्या होता है? डीएफएस यही होता है।",
+      "source": "caption",
+      "english_text": "This will be used in DP problems. Second is choice and back tracking. My plan was to teach choice and back tracking, see this today itself. Very big graphs have been made. But we feel that we need to do a little work to understand this. So if we explain it now, we will not understand that much. Today we will sort it out in one go or else it will fly away from our mind. So will do this back tracking tomorrow. But back tracking is very important. Don't miss back tracking as it will be useful in future for 70% of DP questions and 100% of graph questions. Ok? If you all read about DFS of graph, then what is DFS? This is what DFS is."
+    },
+    {
+      "start_time": 67.52,
+      "end_time": 101.03,
+      "text": "ठीक है? इसीलिए हम बोलते हैं कि रिकर्शन मास्टर है सबका। जो लोग बोलते हैं ना कि इसको ट्री बहुत अच्छा आता है यार। इसको इसका डीपी बहुत स्ट्र्रांग है। नहीं उनका ट्री डीपी स्ट्रॉन्ग नहीं है। उनका रिकर्शन स्ट्रांग है। अब रिकर्शन के प्रोग्राम को 1 मिनट लगता है डीपी बनाने में। रिकर्शन आपको अगर ट्री का प्रॉब्लम मिलता है, आपको रिकर्शन आता है तो 5 मिनट लगता है कोड लिखने में। आपका अगर रिकर्शन स्ट्रांग है ना तो आपका ये सारा चीजें स्ट्रांग हो जाती हैं। तो चॉइस वन के बारे में उम्मीद ध्यान से बात करेंगे अ किसी क्वेश्चन से। चॉइस वन मतलब सब प्रॉब्लम की तरह। और आपको हम बता देंगे ये कब यूज़ होता है? कैसे यूज़ होता है? टेंपलेट क्या होता",
+      "source": "caption",
+      "english_text": "ok? That's why we say that recursion is everyone's master. People say that he knows the tree very well, man. Its DP is very strong. No their tree dp is not strong. Their recursion is strong. Now the recursion program takes 1 minute to create the DP. Recursion: If you get a tree problem, if you know recursion, it takes 5 minutes to write the code. If your recursion is strong then all these things become strong. So hopefully we will talk carefully about Choice One without any questions. Choice one means like all problems. And we will tell you when it is used? How is it used? what is a template"
+    },
+    {
+      "start_time": 101.04,
+      "end_time": 127.67,
+      "text": "है? फलाना डीम का सब। और कल इसके बारे में बात करेंगे बहुत डिटेल से। तो पूरा देखिएगा वीडियो। लाइक जरूर कीजिएगा। शुरू करते हैं। तो आइए एक छोटे से प्रॉब्लम से स्टार्ट करते हैं। पहला वाला तरीका पढ़ना। टू फाइंड मैक्सिमम इन एन एरे। ये हम जानते हैं कि 99% लोग किए होंगे। काफी ईजी काफी स्कूल लेवल बेसिक लेवल का क्वेश्चन है। मतलब कुछ है नहीं इस क्वेश्चन में। 99% लोग कैसे किए होंगे? आपको एक फन मिलता है जिसमें मान लीजिए आपको एक वेक्टर मिलता है और उसका साइज मिलता है। तो आप शुरू में एक मैक्स इक्वल टू एरे ऑफ़ ज़ीरो ले लेते हैं।",
+      "source": "caption",
+      "english_text": "Is it? All of so and so dem. And tomorrow we will talk about it in great detail. So watch the full video. Please like it. let start. So let's start with a small problem. Read the first method. To find maximum in an array. We know that 99% people would have done this. Quite easy, it is a school level basic level question. There is no meaning in this question. How would 99% people have done it? You get a function in which suppose you get a vector and get its size. So you initially take a max equal to two array of zeros."
+    },
+    {
+      "start_time": 127.68,
+      "end_time": 161.35,
+      "text": "उसके बाद आप लूप चलाते हैं पूरे एरे पे और आप मैक्स = मैक्स ऑफ़ मैक्सी एंड एरे ऑफ़ आई। मतलब मैक्सी को चलाते जाते हैं और आपको अगर कभी लगता है कि मैक्सी इस वाले एलिमेंट से छोटा है तो मैक्सी को उस एलिमेंट के बराबर कर देते हैं। ऐसा जब आप पूरे एरे पे करते हैं तो आपको मैक्सिमम मिल जाता है। हमको नहीं लगता है कि ये समझाने की ज़रूरत है क्योंकि सबको आता होगा। अगर आप अभी तक मेरे से पढ़ रहे हैं तो आपको ये आता ही होगा। नहीं भी आता है तो कोई बात नहीं। इस इसमें क्या है? ये कैसा सॉल्यूशन है? लूप लिखने वाला सॉल्यूशन है क्योंकि आप देख रहे हैं फॉर लूप लिख रहे हैं आप अच्छा। तो ये आइड्रेटिव सॉल्यूशन है। इसमें आपको एक अच्छा सा इंट्यूशन भी आ रहा है कि कहां पे काम हो रहा है भाई? तो काम यहां पे हो रहा है। ये आदमी काम कर रहा है बेसिक मेन काम।",
+      "source": "caption",
+      "english_text": "After that you run the loop over the entire array and you get max = max of maxi and array of i. Meaning, you keep running the maxi and if you ever feel that the maxi is smaller than this element, then you make the maxi equal to that element. When you do this over the entire array you get the maximum. We don't think there is a need to explain this because everyone would know it. If you have been reading from me till now then you must be aware of this. Even if he doesn't come, it doesn't matter. What's in this? What kind of solution is this? Writing a loop is the solution as you see you are writing a for loop. So this is an ideographic solution. In this you are also getting a good intuition as to where the work is being done, brother? So work is happening here. This man is doing basic main work."
+    },
+    {
+      "start_time": 161.36,
+      "end_time": 194.55,
+      "text": "काम ये कर रहा है। अब इसको आइए रिकज़न से लिखते हैं क्योंकि हम बार-बार बोल रहे हैं कि ऐसा दुनिया में कोई प्रॉब्लम नहीं है जो लूप से हो सकता है रिकर्शन से नहीं हो सकता है। या तो जो रिकर्सन से हो सकता है लूप से नहीं। दोनों इंटरकनेक्टेड है। हर प्रॉब्लम को दो तरीके होते हैं सॉल्व करने के। आइए रिकर्शन लिखेंगे। इसी में टेंप्लेट भी सीखेंगे। इसी में आपको हम बता भी देंगे कि कैसे करना है। सिमिलर प्रॉब्लम्स। आइए। तो सबसे पहले इस तरीके के प्रॉब्लम्स में ना क्या किया जाता है? सबसे पहले आपको एक बेस केस सोच लिया जाता है। बेस केस जब हम बोलते हैं ना तो ये प्रॉब्लम होता है कि आपको जो भी प्रॉब्लम मिला है उसमें कुछ इनपुट मिला होगा। या तो कोई नंबर मिला होगा या तो कोई एरे मिला",
+      "source": "caption",
+      "english_text": "This is the work. Now let us write this with recursion because we are saying again and again that there is no such problem in the world which can be done by loop and cannot be done by recursion. Either which can be done by recursion but not by loop. Both are interconnected. There are two ways to solve every problem. Let's write recursion. You will also learn templates in this. In this we will also tell you how to do it. Similar Problems. Come. So first of all, what should be done in this type of problems? First of all you are given a base case. When we talk about base case, the problem is that whatever problem you have got, you must have got some input in it. Either a number would be found or an array would be found."
+    },
+    {
+      "start_time": 194.56,
+      "end_time": 227.35,
+      "text": "होगा कोई स्ट्रिंग मिला होगा, कोई ट्री मिला होगा, कोई कुछ भी मिला होगा ना। कोई इनपुट का ही तो प्रॉब्लम होता है ना। सबसे छोटा इनपुट पे सॉल्व कर लीजिए। सबसे छोटा इनपुट का अगर आपको कोई पूछे कि आंसर बताओ। उसका आंसर आपको आता ही होगा। मतलब लीड कोड पे आप कोई भी प्रॉब्लम देखेंगे आप अस्यूम करेंगे कि भाई इसका आंसर सबसे छोटे वाले इनपुट पे क्या होता है? तो वो आंसर आप ऐसे ही बता देंगे कि हां इसका आंसर वन होता है या ज़ीरो होता कुछ भी होता है। उसका आंसर सोच लीजिए। सोच लीजिए। ठीक है? अपने कॉपी में सोच लीजिए। बहुत आसान होता है ये। हर प्रॉब्लम आपको दिखा देंगे कि कैसे सबसे छोटे इनपुट का आंसर सोचना काफी आसान होता",
+      "source": "caption",
+      "english_text": "Some string might have been found, some tree might have been found, something might have been found. There is always a problem with some input. Solve on smallest input. If someone asks you the answer to the smallest input. You must know its answer. Meaning, if you see any problem on the lead code, you will assume that the answer lies on the smallest input. So you will just tell that answer that yes its answer is one or zero or whatever. Think about the answer. Just think about it. Ok? Think about it in your notebook. This is very easy. Each problem will show you how it is much easier to think of the answer for the smallest input."
+    },
+    {
+      "start_time": 227.36,
+      "end_time": 259.43,
+      "text": "है। अच्छा। उसके बाद उसके बाद आप अभी जिस नंबर पे हैं। इस फंक्शन में जो नंबर पे हैं आप जिस नंबर या जिस इंडेक्स पे हैं अगर एरे की बात करें तो आप किसी इंडेक्स पे होंगे। स्ट्रिंग की भी बात करें तो किसी इंडेक्स पे होंगे या तो प्योर नंबर्स की बात करें तो आप किसी एक नंबर पे होंगे। जिस भी नंबर पे हैं उसको अलग कर दीजिए। उसको अलग कर दीजिए। मतलब कि कल के लेक्चर में गार्ड जिस फ्लोर पे बैठा था उस फ्लोर को अलग कर दीजिए। बाकी का पूरा होटल एक तरफ और बाकी का पूरा एरे बाकी का पूरा एरे",
+      "source": "caption",
+      "english_text": "Is. Good. After that, the number you are on now. In this function, the number or index you are on, if we talk about the array, then you will be on some index. Even if we talk about strings, you will be on some index or if we talk about pure numbers, you will be on some number. Separate whatever number it is on. Set it aside. Meaning, isolate the floor on which the guard was sitting during yesterday's lecture. The rest of the hotel is on one side and the rest of the entire array is on the rest."
+    },
+    {
+      "start_time": 259.44,
+      "end_time": 293.43,
+      "text": "पूरा एरे या पूरा स्ट्रिंग। पूरा स्ट्रिंग एक तरफ। पूरा एरे या पूरा स्ट्रिंग या बाकी के जितने भी नंबर्स अगर आप n = 10 के लिए कर रहे हैं तो कहने का मतलब है कि 10 को अलग कर लीजिए। बाकी के 1 टू 9 एक तरफ कर दो ग्रुप बना दीजिए। अच्छा इस ग्रुप के लिए इस ग्रुप के लिए विश्वास रखिए कि सॉल्व हो जाएगा। विश्वास करिए भगवान पे, भगवान पे, अल्लाह पे, जीसस पे, किसी पे भी आप मानते हैं विश्वास करिए कि ये सॉल्व हो जाएगा। सॉल्व हो जाएगा और इसका आपको आंसर मिल जाएगा। इसका आपको आंसर मिल जाएगा। और कैसे मिलेगा? सेम फंक्शन कॉल करके मिल जाएगा। अब सेम फंक्शन को अगर इस इस पे कॉल",
+      "source": "caption",
+      "english_text": "Complete array or complete string. Complete string aside. The entire array or the entire string or all the remaining numbers. If you are doing this for n = 10, then it means separating 10. Keep the remaining 1 to 9 aside and make two groups. Well, for this group, have faith that it will be solved. Believe in God, in God, in Allah, in Jesus, in anyone you believe in, believe that it will be solved. It will be solved and you will get the answer. You will get the answer to this. How else to get it? Will be achieved by calling the same function. Now if the same function is called like this"
+    },
+    {
+      "start_time": 293.44,
+      "end_time": 325.99,
+      "text": "करेंगे ना जो बाकी का एरे बच गया। आपका एक नंबर जिस पे कॉल हुआ था उसको अलग रख लिए। बाकी का जितना भी चीज बचा है बहुत बड़ा हो कोई बात नहीं। इसी फंक्शन को कॉल कर दीजिए। विश्वास रखिए कि आंसर मिल जाएगा। विश्वास रखिए कि आंसर मिल जाएगा। उस आंसर को और आप जो चीज अलग किए हैं आप जो भी चीज अलग किए हैं। चीज अलग किए हैं। ये हम बस हिंदी में लिख रहे हैं। टेंप्लेट अभी शूडो कोड भी बता देंगे। ठीक है? ये तो हम बस आपको समझाने के लिए हिंदी में लिख रहे हैं। प्लस जो भी आपको आंसर मिला था इसको मिला के रिटर्न कर दीजिए। इसको मिला के रिटर्न कर दीजिए। एक अगर हम आपको एग्जांपल दें तो आपको जैसे छह पेज का एस्स लिखना",
+      "source": "caption",
+      "english_text": "Will do with the remaining array left? Keep aside one of your numbers on which the call was made. Whatever is left, it doesn't matter if it is very big. Call this function. Have faith that you will get the answer. Have faith that you will get the answer. That answer and whatever things you have separated, whatever things you have separated. Things have been separated. We are just writing this in Hindi. The template will now also tell you the Shudo code. Ok? We are writing this in Hindi just to make you understand. Plus whatever answer you got, find it and return it. Get it and return it. If we give you an example, you have to write a six page essay."
+    },
+    {
+      "start_time": 326.0,
+      "end_time": 354.15,
+      "text": "है। आपको छह पेज का एस्स लिखना है। अच्छा इसका सबसे छोटा इनपुट हो सकता है कि मान लीजिए आपको अगर ज़ीरो पेज का एस्स लिखना होता तो आप क्या करते? कुछ नहीं लिखते। ज़ीरो ही रिटर्न कर देते। अगर टीचर बोली कि भाई जीरो पेज का ऐसे लिखो। तो कुछ नहीं। खाली हाथ रिटर्न कर दिए। खाली पेपर रिटर्न कर देंगे। वैरी गुड। ये आपका छोटा केस हो गया। मान लीजिए कि आप अभी आप आपका आपका मेन प्रॉब्लम है कि हमको छह पेज का ऐसे लिखना है। आप क्या कीजिए? एक पेज को अलग कर दीजिए सबसे लास्ट वाले को। ये क्या है? लास्ट वाले पेज को अलग कर दीजिए। बाकी का क्या बचा? पांच पेज। बाकी का क्या बचा?",
+      "source": "caption",
+      "english_text": "Is. You have to write a six page essay. Well, its smallest input could be that suppose you had to write an essay of zero pages, what would you do? Don't write anything. Would have returned only zero. If the teacher said, brother, write zero pages like this. So nothing. Returned empty handed. Will return blank paper. Very good. This is your small case. Suppose your main problem right now is that you have to write six pages like this. What should you do? Separate one page, the last one. What is this? Separate the last page. What's left? Five pages. What's left?"
+    },
+    {
+      "start_time": 354.16,
+      "end_time": 387.43,
+      "text": "पांच पेज। अस्यूम करिए कि ये हो जाएगा। अस्यूम करिए कि इसका आंसर कोई आपको दे देगा। आपके आगे वाला, आपके पीछे वाला, बगल वाला कहीं से टेप लेंगे आप। आंसर मिल जाएगा। विश्वास रखिए कि आंसर मिल जाएगा। एक बार आपको पांच पेज का मिल गया। आप कैसे इसमें ये एक पेज जोड़ के टोटल छह पेज का आंसर रिटर्न कर देंगे। ये काम आप कैसे करेंगे? ये आपको सोचना है। आइए इस प्रॉब्लम में इसको एक्सप्लोर करें। आपका प्रॉब्लम क्या है? आपको एक एरे दिया रहेगा। अच्छा एरे का कुछ साइज होगा = n होगा। अच्छा आपको इस एरे का क्या निकालना है? मैक्सिमम निकालना है। ठीक है? अब साइज",
+      "source": "caption",
+      "english_text": "Five pages. Assume it will happen. Assume that someone will give you the answer. You will take the tape from the person in front of you, the person behind you, the person next to you. You will get the answer. Have faith that you will get the answer. Once you get five pages. How will you add this one page to it and return a total answer of six pages. How will you do this work? You have to think about this. Let's explore it in this problem. What is your problem? You will be given an array. Well, the array will have some size = n. Well, what do you want to get from this array? Maximum has to be found. Ok? now size"
+    },
+    {
+      "start_time": 387.44,
+      "end_time": 421.909,
+      "text": "इसका n है। हम बात बनाइए सबसे पहले सबसे छोटा इनपुट क्या होता है इसका? क्या पॉसिबल है सबसे छोटा इनपुट? अब कोई कहेगा कि एरे का साइज मिनिमम कितना हो सकता है? एरे का साइज़ मिनिमम ज़ीरो हो सकता है। लेकिन वो तो सेंस बनाता नहीं है। ज़ीरो होगा तो फिर तो कुछ नहीं होगा मैक्सिमम। अच्छा। तो इस इस प्रॉब्लम में हमको लगता है लॉजिकली सोचा जाए, कॉमन सेंस से सोचा जाए तो सबसे छोटा इनपुट क्या होता? एक साइज का एरे होगा। एक साइज का एरे क्योंकि अगेन जीरो साइज का एरे देखिए नेगेटिव साइज का तो एरे होता नहीं है। जीरो साइज का एरे में क्या मैक्सिमम है? कुछ मैक्सिमम नहीं है। एक साइज का एरे सेंस बना रहे हैं कि एक साइज का एरे में सबसे छोटा इनपुट हम लोग ले सकते हैं। अच्छा बताइए अगर हम आपको",
+      "source": "caption",
+      "english_text": "Its n is. Let us first talk about what is the smallest input? What is the smallest input possible? Now someone will say what can be the minimum size of the array? The minimum size of the array can be zero. But that doesn't make sense. If it is zero then nothing will happen maximum. Good. So in this problem, we think that if we think logically, if we think with common sense, then what would be the smallest input? There will be an array of one size. Array of one size because again look at the array of zero size, there is no array of negative size. What is the maximum size of zero size array? There is no maximum. One size array is making sense that we can take the smallest input in a one size array. ok let us know if we tell you"
+    },
+    {
+      "start_time": 421.919,
+      "end_time": 447.27,
+      "text": "एक ही साइज का एरे दें जिसमें एक ही एलिमेंट हो 12 क्या होगा इसका मैक्सिमम? इसका मैक्सिमम होगा एरे ऑफ़ ज़ीरो। स एरे का साइज एक है तो उसका मैक्सिमम क्या होगा? वही एलिमेंट एरे ऑफ़ ज़ीरो। तो आपको सबसे छोटा इनपुट का आंसर मिल गया कि अगर अगर n इक्वल इक्वल टू 1 है। आप क्या रिटर्न कर देंगे? एरे ऑफ़ 0। पहला काम आप कर चुके हैं। पहला हर्डलन पार कर चुके हैं। वेरी गुड। उसके बाद उसके बाद हम क्या बोले?",
+      "source": "caption",
+      "english_text": "Given an array of same size containing only one element 12, what will be its maximum? Its maximum will be array of zero. If the size of the array is one then what will be its maximum? Same element array of zero. So you got the answer for the smallest input if n is equal to 1. What will you return? Array of 0. You have done the first thing. Have crossed the first hurdle. very good. What did we say after that?"
+    },
+    {
+      "start_time": 447.28,
+      "end_time": 480.469,
+      "text": "सेकंड स्टेप क्या है? मान लीजिए आपको एक तीन साइज का एरे मिलता है। आपको एक n = तीन साइज का एरे मिलता है। ठीक है? हम क्या बोले? जिस पे आप अभी है ना जिस नंबर पे या जिस साइज पे या जिस इंडेक्स पे किसी भी चीज पे जिस पे आप अभी हैं फंक्शन अभी कॉल हुआ है ना उसको अलग कर लीजिए। उसको अलग कर लीजिए। अच्छा। n = 3 का क्या मतलब होता है कि आपका एरे कुछ ऐसा दिखता है। 0 1 2 तो मान लीजिए 3 10 और फाइव। ऐसा दिखता होगा। अच्छा। n = 3 का मतलब कौन सा लास्ट एलिमेंट है? एरे का लास्ट एलिमेंट क्या है? एरे ऑफ़ टू। एरे ऑफ़ टू ये लास्ट एलिमेंट है। इसको अलग कर लो। इसको अलग कर",
+      "source": "caption",
+      "english_text": "What is the second step? Suppose you get an array of size three. You get an array of size n = three. Ok? What should we say? Separate the number on which you are now or the size or index or anything on which function has just been called. Take it apart. Good. What does n = 3 mean is that your array looks like this. 0 1 2 So let's say 3 10 and five. It would look like this. Good. Which last element means n = 3? What is the last element of the array? Array of two. Array of two is the last element. Take it apart. take it apart"
+    },
+    {
+      "start_time": 480.479,
+      "end_time": 509.189,
+      "text": "लो। इसको अलग करके रख लो। इसको अलग करके रख लो। एरे ऑफ़ टू इक्वल टू इसको अलग करके कहीं पे स्टोर कर लो अभी। ठीक है? इसको अलग कर लिया। अब जब आप इसको अलग कर दिए। मान लीजिए कि आप एरे को यहां से काट दिए। एरे को यहां से काट दिए। फाइव को आप बोले कि हम फाइव को अलग रख लेंगे और बाकी का पूरा एरे एक प्रॉब्लम है। बाकी का पूरा एरे एक प्रॉब्लम है। जो ये पूरा एरे बचा है। इसका साइज कितना है? इसका साइज कितना है? इसका साइज़ दो है। इसका साइज़ दो है। देखिए शुरू में आपको जब एरे मिला तो n = 3 था। आप क्या किए कि n = 3 का मतलब कि एरे का लास्ट एलिमेंट क्या होगा? एरे ऑफ़ टू।",
+      "source": "caption",
+      "english_text": "Take it. Keep it separate. Keep it separate. Array of two equal to two, separate it and store it somewhere now. Ok? Took it apart. Now that you've taken it apart. Let's say you truncate the array here. Cut off the array from here. You say to five that we will keep five separately and the rest of the array is a problem. The entire remaining array is a problem. This entire array is left. What is its size? What is its size? Its size is two. Its size is two. See, initially when you got the array, n = 3. What did you do that n = 3 means what will be the last element of the array? Array of two."
+    },
+    {
+      "start_time": 509.199,
+      "end_time": 544.15,
+      "text": "एरे ऑफ़ टू को आप सोचिए कि हम एरे ऑफ़ टू को अलग रख लेते हैं। बाकी के पूरे एरे को एक अलग प्रॉब्लम बना लेते हैं। अब जब बाकी का पूरा एरे अलग बन जाएगा तो उसका साइज़ कितना होगा? टू। मान लीजिए कि इसका आंसर कोई आपको बता देगा। मान लीजिए कि इसका आंसर कोई बता देगा और कौन बताएगा? यही फंक्शन बता देगा। मैजिकली जादू से कुछ होगा कि यही फंक्शन आपको उसका आंसर बता देगा। मतलब कि आपको कोई फंक्शन इन दोनों का मैक्सिमम बता देगा। इन दोनों का एरे का काम क्या है? फंक्शन का काम क्या है? आपको एक एरे ऑफ गिवन साइज उसका मैक्सिमम बताना है। मान लीजिए कि आपको इन दोनों का मैक्सिमम पता चल जाएगा। इन दोनों का मैक्सिमम जो कि हम लोग आंसर कहेंगे। क्या होगा ये? 10 मिल",
+      "source": "caption",
+      "english_text": "Think of the array of two, we keep the array of two separate. The entire remaining array becomes a separate problem. Now when the entire remaining array is made separately, what will be its size? To. Suppose someone will tell you the answer to this. Suppose someone will tell the answer to this and who will? This function will tell. If something happens magically, this function will tell you its answer. Meaning that some function will tell you the maximum of these two. What is the function of these two arrays? What is the work of function? You have to tell the maximum of an array of given size. Suppose you will know the maximum of both of these. The maximum of these two is what we will call the answer. What will this happen? 10 mill"
+    },
+    {
+      "start_time": 544.16,
+      "end_time": 576.949,
+      "text": "गया आंसर। तो आपको आंसर मिल गया किसका? रिमेनिंग पांच पेज। रिमेनिंग पांच पेज का आंसर मिल गया। आप एरे ऑफ़ टू को अलग रखे हुए थे जोकि था पांच। इन दोनों को मिला के फाइनल आंसर दे दीजिए। अच्छा अब एक बात बताइए। आपके पास एक एरे था। आप इस एलिमेंट को अलग कर दिए। बाकी के एरे का मैक्सिमम कुछ है। बाकी के एरे का मैक्सिमम आपको पता चला कि 10 है। कैसे आया कहां आया? मालूम नहीं। ठीक है? ये एलिमेंट है पांच। ये एलिमेंट है पांच। अब इन दोनों में जो मैक्सिमम होगा वही पूरे एरे का मैक्सिमम होगा। जाहिर सी बात है ना कि पूरे एरे का",
+      "source": "caption",
+      "english_text": "Gone is the answer. So did you get the answer? Remaining five pages. Got the answer of remaining five pages. You were setting aside the array of two, which was five. Combine these two and give the final answer. Okay now tell me one thing. You had an array. You isolated this element. The maximum of the rest of the array is some. The maximum of the rest of the array you found out is 10. How did he come and where did he come? Do not know. Ok? This is element five. This is element five. Now the maximum of these two will be the maximum of the entire array. It is obvious that the entire array"
+    },
+    {
+      "start_time": 576.959,
+      "end_time": 605.03,
+      "text": "पूरे एरे का पूरे एरे का लास्ट एलिमेंट आप पकड़ लिए राइट फ्रॉम जीरो टू सेकंड लास्ट का मैक्सिमम आपको कोई बता दे तो पूरे एरे का मैक्सिमम क्या होगा इन दोनों का मैक्सिमम ये बात समझ में आ रही है ना कि नहीं आ रही है फाइव और 10 का मैक्सिमम क्या होता है 10 तो आप क्या करेंगे रिटर्न 10 कर देंगे मतलब कि यहां पे आप क्या करेंगे रिटर्न जो भी मैक्स होगा जो भी आप एरे ऑफ़ n - 1 को पकड़े थे और बाकी का जो भी आपको आंसर मिला था उसका मैक्स आप रिटर्न कर देंगे तो आपको पूरा एरे का मैक्सिमम मिल जाएगा ठीक है?",
+      "source": "caption",
+      "english_text": "You grab the last element of the entire array, right from zero to the second last. If someone tells you, what will be the maximum of the entire array, the maximum of these two, you are understanding this or not, what is the maximum of five and 10, what is 10, then what will you do, return 10, that means what you will return here, whatever will be the max, whatever you will return the array of n - 1. And if you return the maximum of the rest of the answers you got, you will get the maximum of the entire array, okay?"
+    },
+    {
+      "start_time": 605.04,
+      "end_time": 638.63,
+      "text": "आइए इसको, इसको लिख के, चला के देखते हैं। अह, इस पे हम इतना ज़ोर इसीलिए दे रहे हैं क्योंकि ये बहुत बेसिक प्रॉब्लम है। लेकिन ये क्लियर नहीं होगा तो आगे थोड़ी दिक्कत होगी। इसीलिए हम बहुत ज्यादा जोर दे रहे हैं। सिंपल बातों को बार-बार बता रहे हैं, ठीक है? आइए। तो एक हम लोग फंक्शन लिखते हैं जो आपको क्या करता है? int फन एक आपको वेक्टर देता है। अच्छा, अच्छी बात है और इस वेक्टर का एक साइज भी होता है। ठीक है? सबसे पहला काम क्या है? बेस केस। इफ n = 1 अगर आपको कोई एक साइज का एरे देता तो आप क्या रिटर्न करते? आपको अगर एक साइज का एरे देता तो आप",
+      "source": "caption",
+      "english_text": "Let's write this and run it. Ah, we are giving so much emphasis on this because it is a very basic problem. But if this is not clear then there will be some problem in future. That is why we are emphasizing so much. Just telling simple things over and over again, okay? Come. So we write a function which does what for you? int fun one gives you a vector. Well, that's a good thing and this vector also has a size. Ok? What is the first thing to do? Base case. If n = 1 If someone gave you an array of one size, what would you return? If you were given an array of one size, you would"
+    },
+    {
+      "start_time": 638.64,
+      "end_time": 669.35,
+      "text": "एरे ऑफ़ जीरो रिटर्न करते। वही होता है मैथ्स। रिटर्न एरे ऑफ़ ज़ीरो। ये क्या हुआ? बेस केस। बेस केस। ठीक बात है। अच्छा। अभी आप जिस एल साइज़ पे हैं। अभी आप n = 3 साइज़ पे हैं। मान लीजिए। मान लेते हैं कि आप n = 3 साइज़ पे हैं। तो लास्ट एलिमेंट क्या होगा? एरे ऑफ़ टू। मतलब एरे ऑफ़ n - 1। तो हम लोग क्या करेंगे? इंट लास्ट इज़ इक्वल टू एरे ऑफ़ n - 1 इसको पकड़ के बैठ गए। इसको पकड़ के बैठ गए। ठीक है?",
+      "source": "caption",
+      "english_text": "Returns an array of zeros. That's what maths is. Returns array of zeros. What happened? Base case. Base case. That's right. Good. The L size you are in now. Right now you are at size n = 3. Suppose. Let's assume you are on size n = 3. So what will be the last element? Array of two. Means array of n - 1. So what will we do? Int last is equal to array of n - 1 Sat holding it. Sat holding it. Ok?"
+    },
+    {
+      "start_time": 669.36,
+      "end_time": 701.91,
+      "text": "बाकी का एरे क्या बचा? बाकी का एरे का साइज़ कितना होगा? n - 1 साइज़ का एरे बच जाएगा। उसका आंसर आप अस्यूम करिए कि ये फंक्शन आपको दे देगा। अस्यूम कर लीजिए। अस्यूम करिए। इंट आंसर इक्वल टू फन a n - 1 n नहीं। क्योंकि बाकी एरे का साइज़ कितना बचा? n - 1 लास्ट को तो पकड़ लिए ना भैया। लास्ट वाला जो एलिमेंट था एरे ऑफ़ n - 1 उसको पकड़ लिए। बाकी एरे का साइज कितना रहा? n - 1 मान लीजिए कि मिल जाएगा। ये क्या है? ये जादू है। ये जादू है आपका विश्वास है कि मिल जाएगा। अब आप एरे के लास्ट एलिमेंट को",
+      "source": "caption",
+      "english_text": "What is left? What will be the size of the remaining array? n - Array of size 1 will be saved. You assume that this function will give you the answer. Assume it. Assume. Int Answer Equal to Fun a n - 1 n No. Because how much size of the remaining array is left? n - 1 You have caught the last one, brother. Grab the last element of the array of n - 1. What was the size of the remaining array? n - 1 Suppose that will be found. What is this? This is magic. This is magic, you believe that you will get it. Now you select the last element of the array"
+    },
+    {
+      "start_time": 701.92,
+      "end_time": 736.71,
+      "text": "पकड़े हुए हैं। आपको बाकी के एरे का आंसर मिल चुका है। मतलब बाकी के एरे में कोई फलाना बंदा मैक्सिमम है जो कि आंसर में है। लास्ट एलिमेंट ये है। इन दोनों का मैक्सिमम अगर आप निकाल देंगे तो आपको पता चल जाएगा। पूरे एरे का मैक्सिमम कौन है? क्या कीजिए? रिटर्न। इसी को हम बोलते हैं कि जो हम बोलते हैं ना कि लास्ट और बाकी को जोड़ा कैसे जाता है? तो अगर सम होता अगर आपको बोला जाता सम ऑफ एरे तो आप लास्ट प्लस आंसर कर देते। मिनिमम ऑफ एरे तो मिनिमम ऑफ लास्ट एंड आंसर कर देते। अगर आपको होता प्रोडक्ट ऑफ एरे तो आप लास्ट इंटू आंसर कर देते। लेकिन यहां पे क्योंकि हम लोग का मैक्स है। हम लोग मैक्स ऑफ लास्ट एंड आंसर।",
+      "source": "caption",
+      "english_text": "Are holding. You have already found the answers to the remaining arrays. Meaning, in the rest of the array, some such and such is the maximum which is in the answer. This is the last element. If you calculate the maximum of these two then you will know. What is the maximum of the entire array? What to do? Return. This is what we say, what we say is not the last and how is the rest added? So if it was even, if you were told sum of array then you would answer last plus. Minimum of array would have made minimum of last and answer. If you had the product of an array, you would have answered the last one. लेकिन यहां पे क्योंकि हम लोग का मैक्स है। हम लोग मैक्स ऑफ लास्ट एंड आंसर।"
+    },
+    {
+      "start_time": 736.72,
+      "end_time": 770.629,
+      "text": "बस ये खत्म हो गया। ये प्रोग्राम चल जाएगा। अगेन यहां पे काम हो कहां रहा है। ऊपर से देखने पे नहीं पता चलेगा कि साला काम कौन कर रहा है। मतलब हर बार लास्ट को पकड़ लिए। इस पे कोई बोल दिए कि जादू से कहीं पे आंसर आ जाएगा लास्ट में दोनों को मिला के। लेकिन ये जादू से आंसर आएगा कैसे? आइए दिखाते हैं कैसे आएगा। ये याद रखिएगा। ये प्रोग्राम याद रखिएगा। यही टेंपलेट होता है हर रिकर्शन जो हम फर्स्ट टाइप बता रहे हैं ना जो कि आपको फर्स्ट टाइप जो होता है जिसमें आप छोटे प्रॉब्लम को जोड़ के लास्ट चीज और छोटे प्रॉब्लम को जोड़ के आंसर बताते हैं। वो इसी टेंप्लेट पे चलता है। इसके अलावा कोई",
+      "source": "caption",
+      "english_text": "That's it, it's over. ये प्रोग्राम चल जाएगा। अगेन यहां पे काम हो कहां रहा है। ऊपर से देखने पे नहीं पता चलेगा कि साला काम कौन कर रहा है। मतलब हर बार लास्ट को पकड़ लिए। इस पे कोई बोल दिए कि जादू से कहीं पे आंसर आ जाएगा लास्ट में दोनों को मिला के। लेकिन ये जादू से आंसर आएगा कैसे? आइए दिखाते हैं कैसे आएगा। Remember this. ये प्रोग्राम याद रखिएगा। यही टेंपलेट होता है हर रिकर्शन जो हम फर्स्ट टाइप बता रहे हैं ना जो कि आपको फर्स्ट टाइप जो होता है जिसमें आप छोटे प्रॉब्लम को जोड़ के लास्ट चीज और छोटे प्रॉब्लम को जोड़ के आंसर बताते हैं। वो इसी टेंप्लेट पे चलता है। any other than this"
+    },
+    {
+      "start_time": 770.639,
+      "end_time": 805.59,
+      "text": "टेंप्लेट नहीं होता है। डायनेमिक प्रोग्रामिंग में भी जब आप प्रोग्राम लिखेंगे तो वैसा ही दिखेगा। ठीक है? इसका आइए इसका हम आपको एक ड्राई रन करके दिखाते हैं। मान लीजिए ये आपको एरे था ओरिजिनल एरे ये था 5 3 और टू। ठीक है? 0 1 2 ठीक बात है। अ आप शुरू में शुरू में आपका मेन से आप कॉल करते हैं क्या? फन ऑफ़ एरे ऑफ़ थ्री। मतलब कि शुरू में एरे का साइज़ कितना है? तीन है ना? तो तीन को कॉल किए। आइए सबसे पहले क्या कॉल होगा? ये। आइए प्रोग्राम को चलाते हैं। क्या n1 है? क्या",
+      "source": "caption",
+      "english_text": "टेंप्लेट नहीं होता है। डायनेमिक प्रोग्रामिंग में भी जब आप प्रोग्राम लिखेंगे तो वैसा ही दिखेगा। Ok? इसका आइए इसका हम आपको एक ड्राई रन करके दिखाते हैं। मान लीजिए ये आपको एरे था ओरिजिनल एरे ये था 5 3 और टू। Ok? 0 1 2 ठीक बात है। अ आप शुरू में शुरू में आपका मेन से आप कॉल करते हैं क्या? फन ऑफ़ एरे ऑफ़ थ्री। मतलब कि शुरू में एरे का साइज़ कितना है? There are three, right? तो तीन को कॉल किए। आइए सबसे पहले क्या कॉल होगा? These. आइए प्रोग्राम को चलाते हैं। What is n1? What"
+    },
+    {
+      "start_time": 805.6,
+      "end_time": 839.509,
+      "text": "इसका n1 है? नहीं, n1 तो नहीं है, n3 है। तो, वो तो चलेगा नहीं। ओके? फिर हम लोग क्या करते हैं? लास्ट इक्वल टू एरे ऑफ़ n - 1। एरे ऑफ़ n - 1 मतलब लास्ट इज़ इक्वल टू एरे ऑफ़ टू इक्वल टू क्या है? एरे ऑफ़ टू टू। ठीक है? ये चल गया। ये चल गया। आंसर इज़ इक्वल टू आंसर इज़ इक्वल टू फन ऑफ़ एरे। और एक साइज़ कम कर दिए। उसका एक साइज़ कम कर दीजिए। क्योंकि एक लास्ट को तो हम पकड़ के बैठ गए। एक साइज़ उसका कम कर दीजिएगा। तो क्या होगा? आंसर = 1 एरे n = 2 ठीक है और हम क्या बोले थे कल जब आप एक और फंक्शन",
+      "source": "caption",
+      "english_text": "Its n1 is? No, it is not n1, it is n3. So, that won't do. Ok? Then what do we do? Last equal to array of n - 1. What is Array of n - 1 means last is equal to two? Array of two. Ok? This is gone. This is gone. Answer is equal to Answer is equal to fun of array. And reduced one size. Reduce it one size. Because we sat holding the last one. Please reduce it by one size. So what will happen? Answer = 1 Array n = 2 Okay and what we said yesterday when you use another function"
+    },
+    {
+      "start_time": 839.519,
+      "end_time": 865.11,
+      "text": "यहां पर कॉल करते हैं तो कंट्रोल अब अगले फंक्शन में चला गया इसका एक लाइन बचा हुआ है इसका ये रिटर्न वाला लाइन बचा हुआ है लेकिन अभी नहीं चलेगा बाद में लास्ट में चलाएंगे इसको अभी एक लाइन इसका छोड़ दीजिए एक लाइन इसका छोड़ दीजिए अब आप किस में आ गए फन a और n - n = 2 में आइए फन एरे n = 2 फिर से चलाइए सेम फंक्शन है ना भाई फंक्शन का कोड ऑफ लाइन तो सेम ही है तो सेम सेम ही चलेगा हर बार। क्या n वन है? ना, बेस केस में आप अभी नहीं घुस पाए हैं।",
+      "source": "caption",
+      "english_text": "When we call here, the control now goes to the next function, one line of it is left, this return line is left, but now it will not run, later we will run it in the last, leave one line of this, leave one line of this, now what have you come to, let's enter the fun array n = 2, fun array n = 2, run it again, isn't it the same function brother, if the line of code of the function is the same, the same will run the same every time. Is n one? No, you haven't been able to get into the base case yet."
+    },
+    {
+      "start_time": 865.12,
+      "end_time": 895.75,
+      "text": "ठीक है? कोई बात नहीं। इसका लास्ट पकड़िए। लास्ट इज़ इक्वल टू एरे ऑफ़ क्या है? n - 1 एरे ऑफ़ वन। क्या है? एरे ऑफ़ वन? थ्री। बिल्कुल चल गया। वेरी गुड। इसका भी आंसर कॉल करिए। फिर से आंसर कॉल करेगा ये। आंसर इज़ इक्वल टू फन ऑफ़ एरे n = 1 कर देगा। एक साइज़ कम हो गया। आप इसमें फिर से लास्ट को पकड़ के बैठ गए। एक एक कम बच गया। अगेन जैसे ही आप ये फंक्शन कॉल करते हैं, कंट्रोल कहां जाता है? फंक्शन पे। कंट्रोल कहां जाता है? फंक्शन पे। आइए कंट्रोल भेजें फंक्शन पे।",
+      "source": "caption",
+      "english_text": "ok? No problem. Catch the last of this. What is last equal to array of? n - 1 Array of ones. What is? Array of one? Three. It went perfectly. very good. Call the answer to this also. He will answer the call again. Answer is equal to fun of array will make n = 1. One size less. You sat in it again holding the last one. One less was left. Again, as soon as you call this function, where does the control go? On function. Where does the control go? On function. Let's pass control to the send function."
+    },
+    {
+      "start_time": 900.629,
+      "end_time": 929.59,
+      "text": "अरे n = 1 अब अब अब यहां पे बेस केस कीेंस आती है। क्या n1 हो चुका है? हां n1 हो चुका है। तो क्या अब इसके बाद कुछ और कॉल होगा? नहीं। सीधा हम लोग क्या रिटर्न कर देंगे? एरे ऑफ़ ज़ीरो। सीधा हम लोग क्या रिटर्न कर देंगे? एरे ऑफ़ ज़ीरो। एरे ऑफ़ ज़ीरो। एरे ऑफ़ ज़ीरो क्या है? फाइव। हम लोग सीधा फाइव कर देंगे यहां से रिटर्न। तो ये हो गया खत्म। ये हो गया खत्म। इसका आंसर कहां जाएगा? वन a और n = 1 का आंसर कहां जाएगा? इसका आंसर सीधा यहां घुस जाएगा। इसका आंसर सीधा यहां घुस जाएगा। फाइव। सीधा यहां फाइव घुस जाएगा।",
+      "source": "caption",
+      "english_text": "Hey n = 1 Now here comes the base case keys. Is n1 done? Yes n1 is done. So will there be any more calls after this? No. What return will we give directly? Array of zeros. What return will we give directly? Array of zeros. Array of zeros. What is array of zero? Five. We will return straight from here. So this is over. This is over. Where will the answer go? Where will the answer of one a and n = 1 go? Its answer will enter directly here. Its answer will enter directly here. Five. Five will enter here directly."
+    },
+    {
+      "start_time": 929.6,
+      "end_time": 956.31,
+      "text": "वेरी गुड। अब ये अब ये वाला बाकी का अपना चलाएगा। हम बोले उल्टा चलता है। आता है फिर उल्टा वापस जाता है। अब इसका लास्ट लाइन चलाइए। क्या था इसका लास्ट लाइन? रिटर्न मैक्सिमम ऑफ़ लास्ट एंड आंसर। मतलब कि मैक्सिमम ऑफ़ इसका लास्ट क्या था? थ्री। इसका आंसर क्या आया? फाइव। = 5। ये क्या रिटर्न करेगा? n = 2 वाला।",
+      "source": "caption",
+      "english_text": "Very good. Now this one will run the rest. We said it goes the other way. Comes and then goes back in reverse. Now run its last line. What was its last line? Return maximum of last and answer. Meaning, what was its last maximum? Three. What was the answer to this? Five. = 5. What return will it give? The one with n = 2."
+    },
+    {
+      "start_time": 956.32,
+      "end_time": 989.269,
+      "text": "फाइव रिटर्न करेगा। ये भी हो गया खत्म। ये भी हो गया खत्म। इसका आंसर सीधा कहां चला जाएगा? यहां पे। ये आ गया फाइव। अब इसका भी एक लाइन बचा हुआ है। ये भी चलाइए। तो रिटर्न मैक्सिमम ऑफ़ लास्ट एंड आंसर। मतलब मैक्सिमम ऑफ़ टू एंड फाइव। मैक्सिमम ऑफ़ टू एंड फाइव क्या होता है? फाइव। इसका आंसर ये भी खत्म हो गया। ये सीधा कहां चला जाएगा यहां पे। और इसके बाद अब क्या मेन में प्रिंट कर पाएंगे? फाइव। देखिए क्या एरे का साइज एरे का मैक्सिमम सच में फाइव था? हां। तो काम कहां हो रहा है? ये जो विश्वास का बात है ना कि काम साला हो कहां",
+      "source": "caption",
+      "english_text": "Will return five. This too is over. This too is over. Where will the answer directly go? On here. Here comes five. Now this too has one line left. Run this also. So return maximum of last and answer. Meaning maximum of two and five. What is the maximum of two and five? Five. The answer to this is also over. Where will it go straight here? And after this, will we be able to print in main? Five. See, was the maximum array size really five? Yes. So where is the work happening? It's a matter of trust, where is the work?"
+    },
+    {
+      "start_time": 989.279,
+      "end_time": 1016.48,
+      "text": "रहा है? काम हर जगह हो रहा है। छोटा-छोटा छोटा-छोटा काम बार-बार हो रहा है। इसलिए आपको एक बार में पता नहीं चलता है कि साला काम हो कहां रहा है। लेकिन हो रहा है काम। अब विश्वास रखिए काम हो जाएगा। तो ये जो ये जो स्टेप है ना ये जो विश्वास रखने का स्टेप है ये बहुत क्रूशियल है कि हो जाएगा काम। अगर आप ये सही से करते हैं ना अगर आप ये जोड़ जोड़ना सही से आता है आपको तो काम हो जाएगा विश्वास रखिए तो ये था पहला टेंपलेट इसी टेंप्लेट पे हर तरीके का क्वेश्चन होता है फर्स्ट टाइप का ठीक है",
+      "source": "caption",
+      "english_text": "Is it? Work is happening everywhere. Small tasks are being done again and again. That's why you don't know at once where the work is happening. But work is being done. Now have faith, the work will be done. So, this step is very important to have faith that the work will be done. If you do this properly, if you know how to add these joints properly, then the work will be done, believe me, this was the first template, there are every type of question on this template, the first type is fine."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

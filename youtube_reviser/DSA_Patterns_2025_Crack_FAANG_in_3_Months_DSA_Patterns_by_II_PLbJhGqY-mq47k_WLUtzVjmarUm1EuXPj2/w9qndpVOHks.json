@@ -1,0 +1,247 @@
+{
+  "video_id": "w9qndpVOHks",
+  "video_title": "DP Series Episode 11 LIS: From Recursion to Tabulation",
+  "video_number": 119,
+  "chunks": [
+    {
+      "start_time": 1.75,
+      "end_time": 28.87,
+      "text": "हेलो बच्चों। तो जैसा कि पिछले लेक्चर में हम लोग देखे थे। हम लोग क्या देख चुके थे? एलआईएस। एलआईएस का मतलब लॉन्गेस्ट इंक्रीजिंग सब्सक्वेंस। ये कॉमन नहीं है। ये इंक्रीजिंग था। ठीक है? तो हम आपको क्या बताए थे कि ये क्वेश्चन थोड़ा डिफिकल्ट होने वाला है या डिफरेंट होने वाला है। क्यों? क्योंकि इसमें बहुत सारा चीज़ सीखना है। अभी तक हम लोग जो कर रहे थे उसमें रिकर्शन लिखे, मेमोराइज़ किए, रिकर्शन को पढ़ लिए। उसका टैबुलेशन बना दिए। खत्म हो गया। लेकिन इसमें ना आपको रिकर्शन तो सीखना था जो कि हम लोग कर चुके हैं। नहीं देखे हैं तो पिछला वाला देख के आइए। मेमोराइज़ेशन भी सीख लिए थे कि चलो उसको मेमोराइज़ भी कर देंगे। वेरी गुड।",
+      "source": "caption",
+      "english_text": "Hello children. So as we saw in the last lecture. What had we seen? LIS. LIS stands for Longest Increasing Sequence. This is not common. It was increasing. Ok? So what did we tell you that this question is going to be a little difficult or different. Why? Because there is a lot to learn in this. Till now, what we were doing was writing recursion, memorizing it, reading the recursion. Made its tabulation. It's over. But in this you had to learn recursion which we have already done. If you haven't seen it then watch the previous one. We had also learned memorization so let's memorize it. very good."
+    },
+    {
+      "start_time": 28.88,
+      "end_time": 61.83,
+      "text": "लेकिन इसमें ना टैबुलेशन और ऑप्टिमाइज टैबुलेशन इसका टैबुलेशन थोड़ा अलग तरीके का है और टैबुलेशन से भी बात नहीं बनेगा साला इसमें तो आपको बाइनरी सर्च का एप्रोच का लास्ट में करना पड़ेगा मतलब कि लास्ट में जाके ना आपको n log n का एप्रोच इसमें सोचना पड़ेगा और वही आपको करना पड़ेगा नहीं तो इंटरव्यूअर नहीं मानेगा तो आज हम लोग ये पूरा निपटाएंगे ज्यादा हार्ड नहीं है थोड़ा हार्ड है मतलब हार्ड भी होगा तो हम आपको अच्छे से समझा देंगे याद रहेगा जिंदगी भर ठीक है तो चलिए एलआईएस आपको निकालना है एलआईएस का लेंथ निकालना है बस ठीक है क्या निकालना है आपको? एलआईएस का लेंथ निकालना है एरे से। वेरी गुड।",
+      "source": "caption",
+      "english_text": "But in this there is no tabulation and optimized tabulation, its tabulation is a little different and even with tabulation it will not work, in this you will have to do the approach of binary search in the last, that is, in the last, you will have to think of n log n approach in this and you will have to do the same, otherwise the interviewer will not agree, so today we will solve this completely, it is not very hard, it is a little hard, that is, if it will be hard, then we will explain it to you well, you will remember it throughout your life. Okay, so come on, you have to find the LIS, you have to find the length of the LIS, okay, what do you have to find? The length of LIS is to be determined from the array. very good."
+    },
+    {
+      "start_time": 61.84,
+      "end_time": 95.03,
+      "text": "रिकर्शन देख चुके थे, मेमोराइजेशन देख चुके थे। अब बात करेंगे कि बिना रिकर्शन का टैबुलेशन से इसको कैसे सोचा जाए और कैसे किया जाए और फिर बाइनरी सर्च से हला कैसे किया जाए। देखिए मान लेते हैं कि आपका एरे ये है। मान लेते हैं कि आपका एरे जो है वो है चलिए 10 मान लीजिए, टू मान लीजिए, फाइव मान लीजिए और क्या मान लीजिए? थ्री मान लीजिए और सेवन मान लीजिए और और क्या मान सकते हैं आप? अ सेवन के बाद क्या मान सकते? सिक्स मान लीजिए। ठीक है? ये एरे अच्छा एरे है। वन ये बढ़िया एरे है। इसका आपको एलआईएस का",
+      "source": "caption",
+      "english_text": "Had seen recursion, had seen memorization. Now we will talk about how to think and do it through tabulation without recursion and then how to solve it through binary search. See, let's assume that your array is this. Let's assume that your array is, let's say 10, let's say two, let's say five and let's say what? Say three, say seven, and what else can you assume? What can we expect after consuming A? Let's say six. Ok? This is very good. One, this is a great array. This will give you information about LIS."
+    },
+    {
+      "start_time": 95.04,
+      "end_time": 125.99,
+      "text": "लेंथ निकालना है। तो अगर हम इसको देख पा रहे हैं। अगर हम इसका आंसर सोच पा रहे हैं तो इसका आंसर ये होना चाहिए। इसका आंसर होना चाहिए टू होना चाहिए। अ फाइव हो सकता है। सेवन। एक तो ये तीन लेंथ का हम सोच पा रहे हैं और एक सोच पा रहे हैं जो टू सोच सकते हैं, थ्री सोच सकते हैं। थ्री के बाद सेवन या सिक्स में से एक ही आ सकता है। तो ठीक है। हमको लगता है इसका आंसर थ्री आएगा। थ्री के बाद चार का आंसर तो आप नहीं बना सकते हैं। एक बार देख लें क्या इसमें चार का एलआईएस पॉसिबल है? टू टू तो लेंगे ही। फाइव अगर लेंगे तो फाइव से 7 बनेगा।",
+      "source": "caption",
+      "english_text": "Have to find the length. So if we are able to see it. If we are able to think of its answer then its answer should be this. The answer should be two. Could be a five. Seven. Firstly, we are able to think in three lengths and we are able to think in one which can think in twos, can think in threes. After three, only one of seven or six can come. Well then. We think the answer will be three. You cannot make the answer of four after three. Take a look, is LIS of four possible in this? Will definitely take two or two. If we take five then five will make 7."
+    },
+    {
+      "start_time": 126.0,
+      "end_time": 158.63,
+      "text": "थ्री लेंगे तो थ्री। हां, ठीक है। चार का नहीं बना सकते हैं। तीन ही इसमें मैक्सिमम आंसर आएगा। लेकिन अब इसमें कैसे बनाएं? देखिए अब इसको ऐसे सोचा जा सकता है कि कोई भी एलआईएस बने। एलआईएस का मतलब कि कोई भी आप एरे बनाएंगे मतलब कोई भी आप आंसर अपना बनाएंगे वो किसी ना किसी नंबर पे तो खत्म होगा। कोई भी एलआईएस जो बनेगा कोई भी लॉन्गेस्ट इंक्रीजिंग सब सीसीक्वेंस बनेगा फॉर एग्जांपल अगर आप 2 5 7 बनाते हैं 2 3 7 बनाते हैं या तो आप कोई छोटा एलआईएस भी बनाते हैं। मान लीजिए आप थ्री और सिक्स बनाते हैं। ये भी एक एलआईएस है। अच्छा किसी ना किसी नंबर पे तो सब खत्म हो रहा",
+      "source": "caption",
+      "english_text": "If you take three, you will get three. Yes, ok. Can't make it out of four. The maximum answer will be three. But how to make it now? See, now it can be thought of in such a way that anyone can become an LIS. LIS means that any array you make means any answer you make, it will end up at some number or the other. Any LIS that is formed will be any longest increasing sub sequence. For example, if you make 2 5 7, make 2 3 7, or you can also make a shorter LIS. Let's say you draw a three and a six. This is also an LIS. Well, everything is ending at some number or the other."
+    },
+    {
+      "start_time": 158.64,
+      "end_time": 192.79,
+      "text": "है ना। ये तो ऐसा तो नहीं बदल जाएगा। ये सात पे खत्म हो रहा है। ये सात पे खत्म हो रहा है। ये छह पे खत्म हो रहा है। मतलब किसी ना किसी नंबर पे हर एलआईएस खत्म हो रहा है। अच्छा अगर हम लोग एक चीज निकालने की कोशिश करें या एक चीज कैलकुलेट करने की कोशिश करें कि मान लीजिए ये वाला नंबर है। ये वाला शुरू वाला नंबर क्या है? 10 पे खत्म होने वाले 10 पे खत्म होने वाले एलआईएस होंगे। मतलब कुछ एलआईएस होंगे ना जो 10 पे खत्म होगा। उसमें से सबसे बड़ा नंबर कौन सा है? क्या बोल रहे हैं? फिर से सुनिए। 10 एक नंबर है। कोई ना कोई एलआईएस तो होगा ना जो 10 पे खत्म होगा। मतलब",
+      "source": "caption",
+      "english_text": "Isn't it? This will not change like this. It's ending at seven. It's ending at seven. It's ending at six. Meaning every LIS is ending on some number or the other. Well, if we try to figure out one thing or try to calculate one thing, let's say this is the number. What is this starting number? Those ending in 10 will be LIS ending in 10. Meaning there will be some LIS which will end on 10. Which is the largest number among them? What are you saying? Listen again. 10 is a number. There must be some LIS which ends at 10. meaning"
+    },
+    {
+      "start_time": 192.8,
+      "end_time": 226.309,
+      "text": "एटलीस्ट ये तो होगा ही। एटलीस्ट अगर हम ये बना दें एक लेंथ का तो ये तो एक एलआईएस है। हर हर हर एक नंबर को अगर आप ले लेंगे तो ये एलआईएस हो गया। अच्छा 10 पे खत्म होने वाले हो सकता है कि चार एलआईएस बनते हो। अभी नहीं बन रहा है। लेकिन किसी भी नंबर पे बात कर रहे हैं। जनरली किसी नंबर पे खत्म होने वाले एलआईएस बहुत सारे हो सकते हैं। चार पांच छ कुछ भी हो सकते हैं। उनमें से सबसे बड़ा लेंथ कौन सा है? अगर ये हम हर नंबर के लिए निकाल लें। मान लीजिए आपको पता चला कि ना 10 पे खत्म होने वाला एलआईएस का मैक्सिमम लेंथ पॉसिबल है एक अच्छा टू पे खत्म होने वाले मैक्सिमम",
+      "source": "caption",
+      "english_text": "Atlist this will definitely happen. Atlist, if we make this of one length then it is a LIS. If you take every single number, it becomes LIS. Well, maybe four LICs are formed, ending at 10. It is not being made yet. But talking on any number. Generally there can be many LICs ending in a number. It can be four, five or six. Which of them has the greatest length? If we calculate this for every number. Suppose you found out that the maximum length possible for an LIS ending in 10 is a good maximum length ending in 2."
+    },
+    {
+      "start_time": 226.319,
+      "end_time": 260.789,
+      "text": "पॉसिबल है एक लेंथ का फाइव पे खत्म होने वाले एलआईएस का मैक्सिमम लेंथ कितना पॉसिबल है मान लीजिए दो सात पे खत्म होने वाले का मैक्सिमम लेंथ पॉसिबल है तीन छह पे खत्म होने वाले का मैक्सिमम लेंथ पॉसिबल है तीन और क्या बच गया तीन इस वाले पे थ्री पे खत्म होने वाले मैक्सिमम एलआईएस का लेंथ है दो अगर आप ये सब निकाल लिए अब पूरे एरे का सबसे बड़ा एलआईएस कौन होगा? ये जितने भी नंबर हैं 1 1 2 3 ये वाले इनमें से जो मैक्सिमम वैल्यू होगी क्या है? मैक्सिमम वैल्यू तीन। तो क्या यही आपका आंसर नहीं हो जाएगा? फिर से एक बार हम आपको बता रहे हैं। ये थोड़ा अलग",
+      "source": "caption",
+      "english_text": "What is the possible length of one? How possible is the maximum length of an LIS ending in five. Suppose two is possible. The maximum length of a LIS ending in seven is possible. Three is possible. The maximum length of one ending in six is three. And what is left is three. The maximum length of an LIS ending in three is two. If you take all these out, now who will be the biggest LIS of the entire array? There are all these numbers 1 1 2 3. What will be the maximum value of these? Maximum value three. So won't this be your answer? Once again we are telling you. this is a little different"
+    },
+    {
+      "start_time": 260.799,
+      "end_time": 293.189,
+      "text": "टाइप का एप्रोच है। हम क्या कर रहे हैं ना कि एलआईएस बनाने के बजाय हम हर नंबर को देखेंगे। एक-एक करके। हर एक नंबर को एरे में देखेंगे। ऐसे-ऐसे करके। अच्छा उस नंबर पे खत्म होने वाला एलआईएस क्या बहुत सारा हो सकता है? हो सकता है। अब देखिए फॉर एग्जांपल अगर हम सिक्स की बात करें तो ऐसा नहीं है कि सिक्स पे खत्म होने वाला एलआईएस बस एक होगा। सिक्स पे खत्म होने वाला एलआईएस अगर हम लिखने लगेंगे ना तो देखिए हम क्या-क्या लिख सकते हैं। सबसे पहले तो सिक्स खुद एक एलआईएस है। अच्छा 26 ये भी एक एलआईएस है। 2 36 ये भी एक एलआईएस",
+      "source": "caption",
+      "english_text": "Type approach. What we are doing is instead of creating an LIS, we will look at each number. One by one. Will look at each number in the array. By doing like this. Well, can LIS ending in that number be too many? It is possible Now see for example, if we talk about six, it is not that there will be only one LIC ending in six. If we start writing LIS ending in six, then see what we can write. First of all, Six itself is a LIS. Well 26 this is also a LIS. 2 36 This is also a LIS"
+    },
+    {
+      "start_time": 293.199,
+      "end_time": 327.029,
+      "text": "है। 56 ये भी एक एलआईएस है। 256 ये सा बहुत सारे मतलब हो सकता है कि सिक्स पे खत्म होने वाला आईएस ना 10 पॉसिबल हो। लेकिन इन 10ों में से सबसे बड़ा लेंथ कौन सा है? तो हमको पता चलेगा कि भैया सबसे बड़ा लेंथ तीन लेंथ का है। तो हम सिक्स के बस सामने तीन लिख देंगे आंसर में। ऐसा अगर हम हर नंबर के लिए कर लिए इस एरे में तो हमको ये सारा आंसर पता चल जाएगा। उन सारे आंसर्स में से जो मैक्सिमम वैल्यू आएगी हम बोल देंगे कि एरे का यही है मैक्सिमम वैल्यू। ये बात समझ में आती है कि नहीं आती है? अब चलिए इसको और डीप में थोड़ा",
+      "source": "caption",
+      "english_text": "Is. 56 This is also a LIS. 256 There are many possible meanings that ending in six is ​​not 10 possible. But which one has the longest length among these 10? So we will know that brother, the biggest length is three lengths. So we will just write three in front of six in the answer. If we do this for every number in this array then we will know all the answers. The maximum value that comes out of all those answers, we will say that this is the maximum value of the array. Do you understand this or not? Now let's go a little deeper into this"
+    },
+    {
+      "start_time": 327.039,
+      "end_time": 353.43,
+      "text": "समझने की कोशिश करते हैं। चलिए तो देखिए इसको समझाने के लिए ना थोड़ा थोड़ा [गला साफ़ करने की आवाज़] पेशेंस रखिए। यह आपका एरे है। इसमें आपको वही वही जो हम ट्रिक अभी बताए ना कि हर नंबर पर खत्म होने वाला मैक्सिमम लेंथ एलआईएस आपको निकालना है। लेकिन कैसे निकालेंगे? इसके लिए तो नहीं सीखे अभी तक कुछ। देखिए सात को पकड़िए। फॉर एग्जांपल मान लीजिए कि आप सात का निकालने की कोशिश कर रहे हैं। थोड़ी देर के लिए ये भी मान लीजिए कि सात से पहले जो नंबर हैं, सात से पहले जो नंबर है, लेफ्ट टू राइट देखेंगे ना एरे को भाई।",
+      "source": "caption",
+      "english_text": "Let's try to understand. Come on, have a little [throat clearing sound] patience to explain this. This is your array. In this, you have to find the maximum length LIS that ends on every number using the same trick that we told you now. But how to get it out? Haven't learned anything for this yet. Look catch seven. For example, suppose you are trying to find the number seven. Let us also assume for a moment that the numbers before seven, the numbers before seven, will be seen from left to right, brother."
+    },
+    {
+      "start_time": 353.44,
+      "end_time": 387.909,
+      "text": "सात से पहले जो नंबर है ना, उनका आंसर ऑलरेडी आपको पता है। उनका आंसर आपको ऑलरेडी पता है। मान लीजिए थोड़ी देर के लिए। तो हम ना क्या करते हैं? सबसे पहली बात तो 10 है ना एक बात बताइए 10 तो पहला नंबर है तो 10 पे खत्म होने वाला एलआईएस कौन सा होगा सबसे मैक्सिमम सिर्फ 10 अब 10 के पहले तो कोई है नहीं ना तो वो आ जाएगा 10 पे आपको खत्म करना है 10 पहला नंबर है तो 10 पे खत्म होने वाला ना यही एलआईएस एक होगा ये लिख लीजिए फोर पे खत्म होने वाला कौन सा एलआईएस होगा जो सबसे बड़ा होगा अब देखिए फोर है तो 10 और फोर तो लिखा नहीं जा सकता है 10 और फोर तो इंक्रीजिंग नहीं",
+      "source": "caption",
+      "english_text": "You already know the answer to the numbers before seven. You already know their answer. Let's say for a while. So what do we do? First of all, it is 10, tell me one thing, 10 is the first number, so which LIS ending with 10 will be the maximum, only 10, now there is no one before 10, otherwise it will come, you have to finish on 10, 10 is the first number, so this is the only LIS ending with 10, write this down, which LIS ending with 4 will be the biggest, now see, if there is 4, then 10 and 4 are written. Can't go 10 and four so no increasing"
+    },
+    {
+      "start_time": 387.919,
+      "end_time": 413.749,
+      "text": "है अच्छा फोर पे बस आप यही लिख सकते हैं एक ही लिख सकते हैं क्योंकि 10 4 लिखेंगे गलत हो जाएगा। तो फोर का आंसर भी हो गया बस फोर। ओके? टू सेम काम। अब टू पे आप आ गए ना तो टू पे आप ये नहीं लिख सकते हैं। 10 टू 10 4 2 ये तो इंक्रीजिंग है नहीं। 4 2 ये भी इंक्रीजिंग नहीं है। तो टू पे खत्म होने वाला कौन सा एलआईएस आ गया भाई? टू सिर्फ टू। सिर्फ टू सिंपल टू। ठीक है? फाइव। अब देखिए इंटरेस्टिंग हो जाएगा।",
+      "source": "caption",
+      "english_text": "Okay, you can only write this on four, you can only write one because writing 10 4 will be wrong. So the answer to four also became just four. Ok? Two same work. Now you have come to two, so you cannot write this on two. 10 to 10 4 2 This is not increasing. 4 2 This is also not increasing. So which LIS ending in 2 has come brother? Two only two. Just two simple two. Ok? Five. Now see, it will be interesting."
+    },
+    {
+      "start_time": 413.759,
+      "end_time": 448.309,
+      "text": "फाइव पे खत्म होने वाला सबसे बड़ा एलआईएस क्या हुआ? देखिए फाइव पे ना दो एलआईएस आता है। आप फोर और फाइव ये भी लिख सकते हैं और टू और फाइव ये भी लिख सकते हैं। अब आप इसमें से जो मन करे लिखिए। हमको तो बस लेंथ चाहिए। एलआईएस हम आपको बस समझाने के लिए लिख रहे हैं। हमको फर्क तो सिर्फ लेंथ से पड़ता है। तो आपके सहूलियत के लिए फोर और फाइव ये लिख दीजिए। टू और फाइव भी लिख सकते हैं। बस लेंथ है ना? लेंथ तो दोनों का टू है। कोई भी लिख दीजिए अपने मन से। चलिए। थ्री। थ्री पे देखिए। थ्री पे क्या लिख सकते हैं? थ्री पे जैसा कि हमको समझ में आ रहा है आप सिर्फ टू और थ्री ये कर सकते हैं। टू और थ्री सिर्फ ये कर सकते",
+      "source": "caption",
+      "english_text": "What happened to be the biggest LIC to end on 5th? See, there are no two lis on five. You can also write four and five and two and five. Now write whatever you want from this. We just need length. LIS We are writing to you just to explain. We only care about length. So for your convenience, write four and five. You can also write two and five. Just the length, right? The length of both is two. Write anything from your mind. Let go. Three. Look at three. What can be written on three? On three, as we understand, you can only do two and three. Two and Three can only do this"
+    },
+    {
+      "start_time": 448.319,
+      "end_time": 480.55,
+      "text": "हैं। ठीक है? और कुछ नहीं कर सकते हैं। आप देखिए आप 4 2 3 ना 10 2 3 ना 2 5 3 नहीं सिर्फ 2 3 तो थ्री का आंसर हो गया टू और थ्री हो गया। सात से पहले ये सारे नंबर है। सबका आंसर आ गया आपके पास। वेरी गुड। अब आइए सात पे। अब हम आपको सिखाते हैं कि सात पे कैसे निकालना है। अब आप आए हैं सात। आपका ये नंबर है। आपको क्या करना है? सात पे खत्म होने वाले सारे एलआईएस में से मैक्सिमम लेंथ वाला एलआईएस निकालना है। ये आपका प्रॉब्लम स्टेटमेंट है। वेरी गुड। तो देखिए बिना कुछ किए बिना कुछ सोचे समझे",
+      "source": "caption",
+      "english_text": "Are. Ok? Can't do anything else. You see, you have 4 2 3 not 10 2 3 not 2 5 3 not just 2 3 so the answer to three has become two and three. These are all the numbers before seven. You have got all the answers. very good. Now come to seven. Now we teach you how to find seven pes. Now you have come seven. This is your number. What do you have to do? The maximum length LIS has to be found out of all the LIS ending with 7. This is your problem statement. very good. So watch without doing anything without thinking anything"
+    },
+    {
+      "start_time": 480.56,
+      "end_time": 507.189,
+      "text": "सात पे खत्म होने वाला एक एलआईएस तो सात हो गया। ये तो होगा ही होगा। ये तो हर नंबर के लिए है। सिर्फ वही नंबर लिख दो। है इंक्रीजिंग। एक नंबर तो है ही इंक्रीजिंग। तो सात तो एक आंसर होगा ही। अच्छा। अब एक बात हमको बताइए। हम एक काम कर सकते हैं। एक ट्रिक कर सकते हैं। इन सारे नंबर्स में से ये सात से पहले जो नंबर्स आए थे सात से पहले जो भी यहां पे जनता है इनमें से अगर हम देखें कि सात से छोटे नंबर कौन से हैं? क्या बोल रहे हैं?",
+      "source": "caption",
+      "english_text": "An LIS ending in seven becomes seven. This will definitely happen. This is for every number. Just write that number. Is increasing. One number is increasing. So seven will definitely be an answer. Good. Now tell us one thing. We can do one thing. Can do a trick. Out of all these numbers, the numbers that came before seven, whoever knows here before seven, if we see which are the numbers smaller than seven? What are you saying?"
+    },
+    {
+      "start_time": 507.199,
+      "end_time": 541.75,
+      "text": "फिर से सुनिए। सात से छोटे नंबर कौन से हैं? सेवन से छोटे नंबर कौन से हैं? तो सेवन से छोटा नंबर कौन-कौन सा है इसमें से? क्या 10 से छोटा है क्या? नहीं। फोर क्या फोर सेवन से छोटा है? यस। फोर से से छोटा है। एक तो हो गया फोर। ठीक है? क्या टू से से छोटा है? यस। टू से से छोटा है। एक हो गया टू। क्या फाइव से से छोटा है? यस। फाइव भी छोटा है। और क्या थ्री से से छोटा है? थ्री भी छोटा है। तो एक काम आप कर सकते हैं। एक ट्रिक कर सकते हैं। आपको निकालना है सेवन पे खत्म होने वाले सारे",
+      "source": "caption",
+      "english_text": "Listen again. What are the numbers smaller than seven? What are the numbers smaller than seven? So which of these numbers is smaller than seven? What is smaller than 10? No. Is four less than seven? Yes. Four is smaller than. One becomes four. Ok? What is smaller than two? Yes. is smaller than two. One became two. What is less than five? Yes. Five is also small. And what is smaller than three? Three is also small. So you can do one thing. Can do a trick. You have to remove all the letters ending in -seven."
+    },
+    {
+      "start_time": 541.76,
+      "end_time": 573.59,
+      "text": "एलआईएस में से मैक्सिमम। क्या हम ये कर सकते हैं? क्या इन नंबर्स के इन नंबर्स का जो भी एलआईएस था इन नंबर्स का जो भी एलआईएस था मतलब ये ये ये क्या आप सबके आगे साथ नहीं जोड़ सकते हैं? कहने का मतलब क्या आप इस फोर को फोर और सेवन नहीं बना सकते हैं? क्या ये इंक्रीजिंग नहीं होगा? होगा। क्योंकि आप सिर्फ सेवन से छोटे वाले नंबर्स को कंसीडर कर रहे हैं भाई। होगा ये एलआईएस। क्या इस टू को आप टू और सेवन नहीं बना सकते हैं? बिल्कुल बना सकते हैं। क्या",
+      "source": "caption",
+      "english_text": "Max out of LIS. Can we do this? Whatever LIS of these numbers, whatever LIS of these numbers, means that these, these, can't you add together in front of all of them? That is to say, can't you make this four four and seven? Will this not be increasing? will be. Because you are only considering numbers smaller than seven, brother. This will be LIS. Can't you make this two two and seven? Can absolutely make it. what"
+    },
+    {
+      "start_time": 573.6,
+      "end_time": 607.67,
+      "text": "इस 4 5 को आप 4 5 7 नहीं बना सकते हैं? बना सकते हैं। क्या इस 2 3 को आप 2 3 7 नहीं बना सकते हैं? क्या? बिल्कुल बना सकते हैं। आप सिर्फ कब नहीं ये काम कर सकते हैं। इस 10 को आप 10 और से नहीं बना सकते हैं। ये इंक्रीजिंग नहीं है। इसीलिए हम बस सेवन से छोटे नंबर देख रहे हैं। अच्छा ये काम भी हो गया। मतलब कि ये सारे एलआईएस ये सारे एलआईएस जो लिखा हुआ था इनके आगे एक सेवन अगर आप जोड़ देंगे ना तो आपको सेवन पे खत्म होने वाले एलआईएस मिल",
+      "source": "caption",
+      "english_text": "You can't make this 4 5 4 5 7? Can make. Can't you make this 2 3 2 3 7? What? Can absolutely make it. You can do these things not just when. You cannot make this 10 with 10 more. This is not increasing. That's why we're seeing smaller numbers than just intake. Well, this work has also been done. Meaning that if you add a seven in front of all these LICs that were written then you will get LIS ending with seven."
+    },
+    {
+      "start_time": 607.68,
+      "end_time": 641.43,
+      "text": "जाएंगे। सेवन पे खत्म होने वाले एलआईएस मिल जाएंगे। इनमें से इनमें से कौन सा सबसे बड़ा लेंथ का एलआईएस है? ये दोनों क्या लेंथ है इसका? थ्री। तो सेवन का आंसर बेटा क्या हो जाएगा? थ्री हो जाएगा। आप सेवन पे खत्म होने वाले एलआईएस को तीन से ज्यादा नहीं बना सकते हैं। ये कब आया? ये कैसे समझ में आया? जब हम लोग को सेवन से पहले वाले सारे नंबर्स का पता था। सबका आंसर सबका लेंथ पता था। 10 का लेंथ पता था",
+      "source": "caption",
+      "english_text": "Will go. LIS ending on intake will be available. Which of the following has the largest length LIS? What is the length of these two? Three. So what will be the answer to Seven, son? It will be three. You cannot create more than three LIS ending in seven. When did this come? How did you understand this? When we knew all the numbers before intake. Knew everyone's answer and everyone's length. knew the length of 10"
+    },
+    {
+      "start_time": 641.44,
+      "end_time": 675.67,
+      "text": "वन। फोर का लेंथ वन। टू का लेंथ वन। फाइव का लेंथ टू। थ्री का लेंथ टू। सेवन के लिए हम लोग क्या किए? सेवन के लिए हम लोग बस एक काम किए कि सेवन से पहले वाले नंबर्स में से सारे छोटे नंबर्स को देखें। सारे छोटे नंबर्स को देखे और सबके लेंथ में +1 +1 +1 +1 कर दिए। उनमें से जो भी मैक्सिमम आया जो कि थ्री आया वो सेवन का आंसर बन गया। वो सेवन का आंसर बन गया। इसी ट्रिक से आप हर नंबर का मैक्सिमम लेंथ एलआईएस",
+      "source": "caption",
+      "english_text": "Forest. Length one for four. Two's length one. Five's length two. Three's length two. What did we do to earn money? The only thing we did for intake was to look at all the smaller numbers among the numbers before intake. Look at all the short numbers and change their length to +1 +1 +1 +1. Whichever maximum came out of them, which was three, became the answer of seven. He became the answer to Seven. With this trick you can find the maximum length of each number."
+    },
+    {
+      "start_time": 675.68,
+      "end_time": 708.87,
+      "text": "निकालेंगे। क्या करेंगे? सबसे पहली बात तो एक तो होगा ही होगा। वो नंबर को अगर आप खुद ले लेंगे एक तो उसका आंसर होना ही होना है। उसके बाद उसके पहले के सारे छोटे लोगों को देखेंगे। सबसे पहले सारे छोटे लोगों को उसके पहले के सारे छोटे लोगों को देखेंगे। उनका आंसर जो छोटे लोगों का आंसर है उसमें +1 कर देंगे। इन सारे छोटे लोगों के आंसर को प्लस वन करने के बाद जो मैक्सिमम वैल्यू मिलेगी वो आपका आंसर हो",
+      "source": "caption",
+      "english_text": "Will take it out. What to do? First of all, one thing will definitely happen. If you take that number yourself then it will definitely have an answer. After that we will see all the small people before that. First look at all the little people and all the little people before that. We will give +1 to their answer which is the answer of small people. The maximum value you get after adding the answers of all these little people plus one should be your answer."
+    },
+    {
+      "start_time": 708.88,
+      "end_time": 742.069,
+      "text": "जाएगा। तो हम उम्मीद कर रहे हैं ये ट्रिक आपको समझ में आया होगा। थोड़ा आउट ऑफ द बॉक्स ट्रिक है। थोड़ा डिफिकल्ट ट्रिक है लेकिन इनट्यूटिव ट्रिक है। लेकिन इंट्यूटिव ट्रिक है। आपको तो सेवन पे खत्म होने वाले एलआईएस बनाने थे। आप देख ले कि भैया मेरे से जो छोटे नंबर हैं उनका एलआईएस हमको पहले से पता है। एक काम क्यों ना हम करें उनके एलआईएस के आगे सात को जोड़ दो। वही हो जाएगा सेवन का एलआईएस सारा चीज जोड़ने के बाद जो मैक्सिमम लेंथ आएगा वो मेरा आंसर हो जाएगा। ये करने के बाद आपका आंसर एरे तैयार हो जाएगा। आइए इसका हम आपको ड्राई रन करके दिखाते हैं",
+      "source": "caption",
+      "english_text": "Will go. So we hope you have understood this trick. There's a little out-of-the-box trick. A bit difficult trick but an intuitive trick. But there is an intuitive trick. You had to make LIS ending on seven. You see, brother, we already know the LIS of the numbers which are smaller than mine. Why don't we do one thing, add seven to their LIS. That will be the LIS of intake. The maximum length that comes after adding all the things will be my answer. After doing this your answer array will be ready. Let us show you this by doing a dry run."
+    },
+    {
+      "start_time": 742.079,
+      "end_time": 774.71,
+      "text": "किसी छोटे एग्जांपल पे। चलिए आगे। तो देखिए ये आपका मान लीजिए एरे है। इसमें आपको एलआई ढूंढना है। यही वाला ट्रिक हम लोग लगाते हैं। एक ना आंसर एरे बना लेते हैं। यहां पे क्या बना लेते हैं? आंसर एरे। ये इसी साइज का इसी साइज का 0 1 2 3 4 बना लिए। सबसे पहले नंबर का तो हम लोग ये करेंगे। देखिए हम लोग क्या करेंगे? एक-एक करके एलिमेंट्स को देखेंगे। एक-एक करके एलिमेंट्स को देखेंगे। ओके? सबसे पहले तो किसी भी नंबर का आंसर एक तो होगा ही होगा। किसी नंबर का आंसर एक तो होना ही है ना। उस नंबर को लिख दीजिए एलआईएस में तो लेंथ वन हो जाएगी। हो गया। उसके बाद",
+      "source": "caption",
+      "english_text": "On a small example. Let's move ahead. So see, this is your assumed array. In this you have to find LI. This is the trick we use. Let's create an answer array. What do they make here? Answer array. These made 0 1 2 3 4 of the same size. We will do this first of all. See what we will do? Let us look at the elements one by one. Let us look at the elements one by one. Ok? First of all, the answer of any number will definitely be one. The answer to any number has to be one, right? Write that number in LIS and the length will become one. Done. after that"
+    },
+    {
+      "start_time": 774.72,
+      "end_time": 807.91,
+      "text": "उसके पहले के एलिमेंट्स को देखना है। j = 0 j &lt; i j + उसके पहले के एलिमेंट्स को देखेंगे। अच्छा। अगर यह पहले का एलिमेंट इससे छोटा है, सिर्फ छोटे वाले को देखना है। बड़े वाले को नहीं देखना है। क्योंकि से में आप अगर 10 को देखेंगे तो 10 पे खत्म होने वाले एलआईएस के आगे सेवन थोड़ी लगा सकते हो। नहीं होगा। सिर्फ छोटे एलिमेंट्स को। तो ये क्या है? छोटे एलिमेंट्स। उसके बाद हम लोग क्या कर सकते हैं? रिजल्ट ऑफ़ आई इक्वल टू मैक्सिमम रिजल्ट ऑफ़ आई। और जो भी इस J का आंसर है,",
+      "source": "caption",
+      "english_text": "The elements before that have to be seen. j = 0 j < i j + will look at the elements before it. Good. If this first element is smaller than this one, only the smaller one has to be seen. Don't want to see the big one. Because if you look at 10, then you can put a 'seven' before the LIS ending in 10. Will not done. Only small elements. So what is this? Small elements. What can we do after that? Result of I equal to maximum result of I. And whatever is the answer of this J,"
+    },
+    {
+      "start_time": 807.92,
+      "end_time": 841.91,
+      "text": "इस J का आंसर जो भी है, उसमें एक जोड़ दीजिए। अगर आप ये किए तो आपको आंसर मिल जाएगा। आइए इसको टेस्ट करते हैं। i = 0 पे आइए। i = 0 पे सबसे पहले तो हम क्या बोले? यहां पे वन लिख दीजिए। वन तो होगा ही आंसर हो गया। अब i = 0 के पहले तो कोई है नहीं। कोई मतलब नहीं है देखने का। मत करिए। मत करिए कुछ। ठीक है? i = 1 पे आइए। i = 1 पे आइए। सबसे पहले वन लिख दीजिए आंसर में। ठीक है? ये आपका रिजल्ट एरे है। उसके बाद देखिए वन है। वन के पहले जो एलिमेंट है थ्री। क्या वन से पहले आपको कोई भी छोटा एलिमेंट दिख रहा है वन से? नहीं दिख रहा है तो कुछ होगा नहीं। कुछ मत कीजिए। आगे",
+      "source": "caption",
+      "english_text": "Whatever is the answer of this J, add one to it. If you do this you will get the answer. Let's test it. Come to i = 0. First of all, what should we say at i = 0? Write one here. There must be a forest, the answer is there. Now before i = 0 there is none. There is no point in watching. Don't do it. Don't do anything. Ok? Come to i = 1. Come to i = 1. First of all write 'one' in the answer. Ok? This is your result array. After that see there is a forest. The element before one is three. Do you see any small elements before the forest? If it is not visible then nothing will happen. Don't do anything. forward"
+    },
+    {
+      "start_time": 841.92,
+      "end_time": 870.47,
+      "text": "बढ़िए। i = 2 पे आइए। आठ इस पे आ गए। सबसे पहले तो वन लिख दीजिए। अब अब ध्यान से देखिए। आठ के पहले कौन-कौन से एलिमेंट हैं? दोनों। थ्री और वन दोनों। अब हम क्या करेंगे? जो छोटे एलिमेंट्स हैं। थ्री का आंसर क्या है? थ्री का आंसर है वन। तो एट का आंसर क्या हो जाएगा? 1 + 1 टू। एक आंसर ये हो गया। एट से पहले एक और एलिमेंट है जो एट से छोटा है। कौन सा? वन। अगेन वन का आंसर क्या है? वन। इसका एक और 1 + 1 = 2.",
+      "source": "caption",
+      "english_text": "Grow up. Come to i = 2. Eight came to this. First of all write one. Now look carefully. Which elements are before eight? Both. Both three and one. what shall we do now? Which are small elements. What is the answer of three? The answer to three is one. So what will be the answer of et? 1 + 1 to. This is one answer. There is another element before at which is smaller than at. Which one? Forest. What is the answer to again one? Forest. Another one of this is 1 + 1 = 2."
+    },
+    {
+      "start_time": 870.48,
+      "end_time": 904.31,
+      "text": "दोनों में से कौन सा मैक्सिमम है? टू। तो एट का फाइनल आंसर क्या हो जाएगा? एट का फाइनल आंसर होगा टू। ये टू लेंथ किस एलआईएस का आया है? आप ये दोनों 3 8 और 1 8 ये दोनों अगर आप बनाएंगे तो एट का आंसर टू आ जाएगा। हो गया। आगे बढ़िए। i = 3 टू। टू से पहले वाले एलिमेंट को देखिए। 3 1 8 कौन सा एलिमेंट छोटा है टू से? सिर्फ वन एलिमेंट। ये वाला एलिमेंट। वन का आंसर क्या है? वन। तो टू का आंसर क्या होना चाहिए? 1 + 1 2 सिर्फ एक ही एलिमेंट छोटा है तो टू का आंसर हो जाएगा टू। ये कौन सा एलआईएस है? ये वाला है। वन और टू ये वाला",
+      "source": "caption",
+      "english_text": "Which of the two is maximum? To. So what will be the final answer of AT? The final answer of eight will be two. Which LIS has this two length come from? If you make these two, 3 8 and 1 8, then the answer of eight will come to two. Done. Go ahead. i = 3 to. Look at the element before two. 3 1 8 Which element is smaller than two? Just one element. This element. What is the answer of forest? Forest. So what should be the answer to two? 1 + 1 2 If only one element is small then the answer of two will be two. Which LIS is this? This one is. one and two this one"
+    },
+    {
+      "start_time": 904.32,
+      "end_time": 929.35,
+      "text": "एलआईएस है। आगे आइए। लास्ट नंबर पे आइए। फाइव। यस। फाइव से छोटे कितने एलिमेंट्स हैं? फाइव से छोटे दो एलिमेंट हैं। एक तो ये वाला वन। एक तो ये वाला वन और ये वाला टू। वन का आंसर कितना है? वन। तो फाइव का एक आंसर हो सकता है 1 + 1 2। टू का आंसर कितना है? टू। तो फाइव का एक और आंसर क्या हो सकता है? 2 + 1 3 इन दोनों में से इन दोनों में से कौन सा मैक्सिमम है? थ्री।",
+      "source": "caption",
+      "english_text": "Is LIS. Come forward. Come to the last number. Five. Yes. How many elements are smaller than five? There are two elements smaller than five. One is this forest. One is this one and this one is two. What is the price of forest? Forest. So one answer to five could be 1 + 1 2. What is the answer of two? To. So what could be another answer to five? 2 + 1 3 Which of these two is maximum? Three."
+    },
+    {
+      "start_time": 929.36,
+      "end_time": 963.35,
+      "text": "फाइव का फाइनल आंसर क्या होगा? थ्री। ये कौन सा एलआईएस है? ये वाला एलआईएस है। 1 2 एंड फाइव। अब इस पूरे एरे में कौन सा नंबर मैक्सिमम? इस पूरे एरे में कौन सा नंबर मैक्सिमम है? लेंथ इज़ इक्वल टू थ्री। तो आपके पूरे एरे का आंसर क्या हो जाएगा? तीन। कौन सा एलआईएस? वन टू एंड फाइव वाला एलआईएस। तो बस इसी तरीके से ये काम होगा। इसका कोड देखिए। देखिए इसका कोड तो हम ऑलरेडी लिख ही दिए हैं। एक बार और लिख देते हैं। चलिए तो इसका कोड होगा एलआईएस और आपको एक एरे दिया जाएगा वेक्टर इंट a",
+      "source": "caption",
+      "english_text": "What will be the final answer of five? Three. Which LIS is this? This one is LIS. 1 2 and five. Now which number is maximum in this entire array? Which number is maximum in this entire array? Length Is Equal To Three. So what will be the answer of your entire array? Three. Which LIS? LIS with one two and five. So this work will be done only in this way. Look at its code. Look, we have already written its code. Let's write one more time. Well, its code will be LIS and you will be given an array vector int a"
+    },
+    {
+      "start_time": 963.36,
+      "end_time": 998.23,
+      "text": "उसके बाद क्या कीजिए? इंट n = a डॉट साइज। वेरी गुड। उसके बाद क्या करेंगे? एक वेक्टर बना लेंगे। आंसर वाला या रिजल्ट वाला। इसका साइज हम n रखेंगे। उसके बाद अपना खेल शुरू कर देंगे। ij का करिए और खेल शुरू कीजिए। फॉर i = 0 i &lt; n i + सबसे पहले तो एक तो होगा ही आंसर तो i = 1 तो कर ही लीजिए उसके बाद पहले वाले एलिमेंट्स को देखिए j = 0 j &lt; i j &lt; n नहीं i से पहले वाले एलिमेंट को देखना है उसके बाद चेक कीजिए कि क्या ये छोटा एलिमेंट है",
+      "source": "caption",
+      "english_text": "What to do after that? int n = a dot size. very good. What will you do after that? Will create a vector. The one with answer or result. We will keep its size n. After that we will start our game. Do ij and start playing. For i = 0 i < n i + First of all, there must be one answer so do i = 1, after that look at the elements before j = 0 j < i j < n No, you have to look at the element before i, after that check whether it is the smallest element."
+    },
+    {
+      "start_time": 998.24,
+      "end_time": 1032.549,
+      "text": "क्या पहले वाला एरे ऑफ़ j लेस &lt; एरे ऑफ़ i सिर्फ छोटे को देखना है स्मॉलर इक्वल टू भी नहीं देखना है क्योंकि मान लीजिए यहां पे फोर है और आप एक और फोर देख रहे हैं तो इस मान लीजिए इस फोर का आंसर टू है। वन और फोर। इसके बाद भी फोर नहीं लगा सकते हैं। स्ट्रिक्टली इंक्रीजिंग चाहिए। इसीलिए अगर ऐसा है। अगर ऐसा है तो क्या करेंगे? रिजल्ट ऑफ़ i इक्वल टू मैक्सिमम ऑफ़ जो अभी का है वैल्यू है। या फिर इस वाले j में एक जोड़ दीजिए। तो आपको पता चल जाएगा। बंद कीजिए, बंद कीजिए। अब आपका रिजल्ट बन के तैयार है। अब पूरे रिजल्ट में जो सबसे बड़ा",
+      "source": "caption",
+      "english_text": "Is the first array of j less < array of i only to look at smaller, do not even look at smaller equal to two because suppose there is four here and you are looking at another four, then suppose the answer of this four is two. One and four. Even after this, fours cannot be scored. Strictly increasing is required. That's why if it is so. If so, what to do? Result of i is equal to maximum of which is the current value. Or add one to this j. Then you will know. Stop it, stop it. Now your result is ready. Now the biggest one in the entire result"
+    },
+    {
+      "start_time": 1032.559,
+      "end_time": 1064.23,
+      "text": "वैल्यू है, इसके बाद हम लोग एक करेंगे कि पूरे रिजल्ट में जो सबसे बड़ा वैल्यू है, इंट आंसर = 1 तो आंसर होगा ही आपके एरे का। उसके बाद पूरे रिजल्ट को देखेंगे। i = 0 i &lt; n i प्लस प्लस आंसर इज़ इक्वल टू मैक्सिमम ऑफ़ आंसर एंड रिजल्ट ऑफ़ i मतलब पूरे रिजल्ट में जो सबसे बड़ा वैल्यू है वो आंसर में आ जाएगा। लास्ट में क्या करेंगे? रिटर्न आंसर। ये लीजिए। ये आपका छोटा सा टैबुलेशन कोड है। टाइम कॉम्प्लेक्सिटी कितनी होगी? ऑर्डर ऑफ़ n²",
+      "source": "caption",
+      "english_text": "Value is, after this we will unite that which is the largest value in the entire result, int answer = 1, then the answer will be of your array. After that we will see the complete result. i = 0 i < n i plus plus answer is equal to maximum of answer and result of i means the largest value in the entire result will come in the answer. What will you do in the end? Return answer. Take this. This is your little tabulation code. What will be the time complexity? order of n²"
+    },
+    {
+      "start_time": 1064.24,
+      "end_time": 1078.72,
+      "text": "स्पेस कॉम्प्लेक्सिटी ऑर्डर ऑफ़ n। यह आपका स्पेस या आपका टाइम। यह हम उम्मीद करते हैं कि आपको समझ में आया होगा। अब चलते हैं हमारे वेक्टर वाले अप्रोच में। उस पे थोड़ा और ध्यान से सुनिएगा। ठीक है? चलिए आगे बढ़िए।",
+      "source": "caption",
+      "english_text": "Space complexity order of n. This is your space or your time. We hope you have understood this. Now let's move on to our vector approach. Listen a little more carefully to that. Ok? Let's move ahead."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

@@ -1,0 +1,352 @@
+{
+  "video_id": "CdGBURVBMn4",
+  "video_title": "Episode 10 of DP in 15 Days | Longest Increasing subsequence part 1",
+  "video_number": 118,
+  "chunks": [
+    {
+      "start_time": 2.609,
+      "end_time": 30.15,
+      "text": "हेलो बच्चों, कैसा वित्त वीकेंड? चलिए [गला साफ़ करने की आवाज़] आज का लेक्चर बहुत ध्यान से देखिएगा। बहुत सुकून से देखिएगा। अगेन जो बच्चे बीच में आ गए हैं डीपी सीरीज के डीपी सीरीज शुरू से देखो। अब आज हम लोग करने वाले हैं एलआईएस। एलआईएस बहुत इंपॉर्टेंट इसलिए है क्योंकि अभी तक हम लोग जितना भी डीपी किए थे ना वो किस पे था? वो एरे पे था। वो इंटीजर एरे पे था। ये पहला क्वेश्चन होने वाला है जो कि ये भी इंटीजर ही होने वाला है लेकिन ये थोड़ा अलग टाइप का क्वेश्चन होने वाला है। अभी तक हम लोग जो भी नैप्सक और वगैरह वगैरह किए थे ना उससे अलग कैटेगरी का है।",
+      "source": "caption",
+      "english_text": "Hello kids, how was the finance weekend? Come on [clearing throat], watch today's lecture very carefully. Will watch very comfortably. Again, the children who have come in between, watch the DP series from the beginning. Now today we are going to do LIS. LIS is very important because till now all the DP we had done was on what? He was on the array. It was on the integer array. This is going to be the first question which is also going to be integer but it is going to be a slightly different type of question. It is in a different category from whatever knapsacks etc. we have done till now."
+    },
+    {
+      "start_time": 30.16,
+      "end_time": 59.029,
+      "text": "ये एक अलग से अपना एक पैटर्न है। जैसे सबसेट सम एक अलग पैटर्न था ना एक क्वेश्चन से तीन क्वेश्चन चार क्वेश्चन होता था। ये भी एक अलग तरीके का पैटर्न है। ये एक क्वेश्चन करने के बाद भी आप तीनचार अलग-अलग क्वेश्चन कर सकते हैं। इसीलिए अलग कैटेगरी अलग पैटर्न अलगेंस है इसका। अच्छा एलआईएस का इसलिए भी जरूरत ज्यादा है। एलआईएस का मतलब होता है लॉन्गेस्ट इंक्रीजिंग सबसीक्वेंस। इस पे तो बाद में आएंगे लेकिन इस पे ना बहुत ये देखिए इतना बड़ा सा चीज बना हुआ है ना। सबसे पहले तो देखिए एलआईएस का आज हम आपको रिकर्शन समझाएंगे और उसका मेमोराइजेशन समझाएंगे।",
+      "source": "caption",
+      "english_text": "This is a separate pattern of its own. Like Subset Sum was a different pattern from one question to three questions to four questions. This is also a different type of pattern. Even after doing this one question, you can do three-four different questions. That's why it has a different category and different pattern. Well, that's why there is more need for LIS. LIS stands for Longest Increasing Sequence. We will come to this later but don't worry too much about this, look at this, such a big thing has been made, isn't it? First of all, today we will explain to you the recursion of LIS and its memorization."
+    },
+    {
+      "start_time": 59.039,
+      "end_time": 86.63,
+      "text": "आज का लेक्चर उसी के लिए है क्योंकि हम चाहते हैं कि इस पे ज्यादा रश ना किया जाए। धीरे-धीरे सीखा जाए। इसको दो पार्ट में करके सीखा जाए। लेकिन एलआईएस का रिकर्शन और उसका मेमोराइजेशन। मेमोराइजेशन मतलब डीपी लिखना ये काफी नहीं है। ये काफी नहीं है। आपको किसी भी इंटरव्यू में मेमोराइजेशन का आपको टैबुलेशन आना चाहिए। जो कि पहले भी हम लोग बता रहे हैं कि टैबुलेशन ही आपका एंड गोल है। लेकिन इसमें आपको टैबुलेशन का ऑप्टिमाइज्ड टैबुलेशन आना चाहिए। मतलब टैबुलेशन में भी जगह बचा लो थोड़ा सा। स्पेस ऑप्टिमाइज कर दो। ओके?",
+      "source": "caption",
+      "english_text": "Today's lecture is for that because we do not want to make too much fuss about it. Let's learn slowly. This should be learned in two parts. But recursion of LIS and its memorization. Memorization means writing DP, it is not enough. This is not enough. You should know tabulation by memorization in any interview. Which we are telling you earlier also that tabulation is your end goal. But in this you should get optimized tabulation of tabulation. Meaning, save a little space in tabulation also. Optimize the space. Ok?"
+    },
+    {
+      "start_time": 86.64,
+      "end_time": 119.91,
+      "text": "इसके बाद भी नहीं रुकना है। इंटरव्यूअर ये भी नहीं मानेगा आपसे। इंटरव्यूअर को सबसे ऑप्टिमल बाइनरी सर्च वाला एप्रोच चाहिए। बिल्कुल बाइनरी सर्च। डीपी में बाइनरी सर्च मतलब कि एलआईएस में 1 2 3 4 पांच स्टेजेस है इंप्रूवमेंट का। हम लोग शुरू करेंगे एज़ यूजुअल रिकर्शन लिख के रिकर्शन में मेमोराइजेशन करके लेकिन उसमें रुकना नहीं है। आज का लेक्चर इन दोनों को कवर करेगा। ये दोनों समझने के बाद आपको पार्ट टू देखना पड़ेगा जिस पे हम लोग रिकर्शन को टैबुलेशन में करेंगे। टैबुलेशन का ऑप्टिमाइज़्ड और लास्ट में जाके हम लोग",
+      "source": "caption",
+      "english_text": "Don't stop even after this. The interviewer will not even agree to this from you. The interviewer wants the most optimal binary search approach. Exactly binary search. Binary search in DP means that there are 1 2 3 4 five stages of improvement in LIS. We will start by writing the usual recursion and memorizing the recursion but do not stop there. Today's lecture will cover both. After understanding both of these, you will have to watch part two in which we will do recursion in tabulation. We optimized the tabulation and went to the last level."
+    },
+    {
+      "start_time": 119.92,
+      "end_time": 147.589,
+      "text": "बाइनरी सर्च वाला एप्रोच से इस क्वेश्चन को सॉल्व करेंगे। तो ये सारा एप्रोच आपको आना चाहिए। किसी भी इंटरव्यू में अगर आपसे एलआईएस या एलआईएस का कोई अलग वेरिएंट पूछ लिया तो आपको ये करके दिखाना पड़ेगा मोस्ट ऑफ द केसेस में। मतलब अगर हम आपका इंटरव्यूअर लेंगे तो हम तो आपको ये करवाएंगे। हम आपके रिकर्जन से नहीं मानेंगे। तो आप कान खोल के देखिएगा। कॉपी निकाल लीजिए और चलिए। तो देखो एलआईएस का मतलब हम ऊपर में गलत बोल दिया था। लॉन्गेस्ट कॉमन नहीं होता है। लॉन्गेस्ट इंक्रीसिंग सबसीक्वेंस एल आई एस। ठीक है?",
+      "source": "caption",
+      "english_text": "We will solve this question using binary search approach. So you should know this whole approach. In any interview, if you are asked about LIS or any different variant of LIS, then you will have to demonstrate it in most of the cases. Meaning, if we interview you, we will make you do this. We will not agree with your recussion. So you will open your ears and see. Take out the copy and let's go. So see, we had said the meaning of LIS wrongly above. Longest is not common. Longest increasing sequence lis. Ok?"
+    },
+    {
+      "start_time": 147.599,
+      "end_time": 180.869,
+      "text": "अब ये आपको बोलता क्या है? ये आपको ये बोलता है ना कि आपको एक एरे दिया रहेगा। फॉर एग्जांपल आपको ये एरर दिया है 10 नौ और दो और क्या है भाई? 5 3 7 5 3 और 7 फिर है 1 0 1 और 18 ठीक बात है। 0 1 2 3 4 5 6 7 ये आपका एरे दिया है। अच्छा सब सीक्वेंस का मतलब क्या होता है? ये जो लिखा हुआ है क्या होता है? सब सीक्वेंस। सब सीक्वेंस का क्या मतलब होता है? कि आप एरे में किसी भी नंबर्स को ले सकते हैं। आप एरे में किन्हीं भी सीक्वेंस ऑफ नंबर को ले सकते हैं। फॉर एग्जांपल अगर आपका मन करता है तो",
+      "source": "caption",
+      "english_text": "Now what does this tell you? It tells you that you will be given an array. For example, I have given you this error: 10, nine and two, what else is there brother? 5 3 7 5 3 and 7 Then 1 0 1 and 18 That's right. 0 1 2 3 4 5 6 7 This is your array. Well, what does sub sequence mean? What is this written? All sequence. What does sub sequence mean? That you can take any numbers in the array. You can take any sequence of numbers in the array. For example if you feel like it"
+    },
+    {
+      "start_time": 180.879,
+      "end_time": 215.83,
+      "text": "आप एरे से नौ उठा लीजिए। फिर आप तीन उठा लीजिए। फिर आप 101 उठा लीजिए। तो इसको क्या बोला जाता है? इसको एक सब सीक्वेंस बोला जाता है। सब सीक्वेंस। ठीक है? क्या बोला जाता है? सब सीक्वेंस। सब सीक्वेंस। और सबस्ट्रिंग में क्या अंतर होता है? सबस्ट्रिंग का क्या मतलब होता है? जब हम लोग स्लाइडिंग विंडो करते थे तो पढ़ते थे ना सबस्ट्रिंग। सबस्ट्रिंग का मतलब कंटीन्यूअस पार्ट उठाना है आपको। आपको वो स्लाइडिंग विंडो, एक विंडो उठाना है, एक चंक उठाना है। लेकिन सब सीक्वेंस का मतलब क्या है? आप छोड़-छोड़ के भी नंबर उठा सकते हैं। मतलब आप नौ उठाए, फिर आप आगे का एक नंबर छोड़ दिए, फिर आप उसको उठा लिए, फिर आप आगे का दो नंबर छोड़ दिए, तीसरे",
+      "source": "caption",
+      "english_text": "You pick nine from the array. Then you pick three. Then you pick up 101. So what is this called? This is called a sub sequence. All sequence. Ok? What is said? All sequence. All sequence. And what is the difference between substrings? What does substring mean? When we used to do sliding windows, we used to read substrings. Substring means you have to pick the continuous part. You have to have that sliding window, lift a window, lift a chunk. But what does the sub sequence mean? You can also pick up numbers by skipping them. Meaning you picked up a nine, then you skipped the next number, then you picked up that one, then you skipped the next two numbers, the third"
+    },
+    {
+      "start_time": 215.84,
+      "end_time": 249.67,
+      "text": "कुछ भी कर सकते हैं। लेकिन इसी ऑर्डर में ऑर्डर मेंटेन होना चाहिए। मतलब ऑर्डर मेंटेन होने का मतलब कि 10 और नाइन ये एक सब सीसीक्वेंस है। लेकिन आप ऐसा नहीं कर सकते हैं कि आप ना पहले नाइन उठाए, पहले ये वाला नाइन उठाए और फिर ये वाला 10 उठा के ये लिख दे। नहीं ये सब सीक्वेंस नहीं है। ऑर्डर बिगड़ गया ना? 9 10 के बाद आता है। तो आपको जो मन करे आप उठाइए। ऑर्डर मेंटेन करते चलिए। लेकिन एक विंडो में उठाने की जरूरत नहीं है। इसको क्या बोला जाता है? सब सीसीक्वेंस। सब सीक्वेंस और सबस्ट्रिंग में डेफिनेशन डिफरेंस आपको मालूम होना चाहिए। चलिए। तो हो गया कि सब सीक्वेंस ये होता है कि आप किसी भी नंबर को उठा सकते हैं। आप चाहे तो पूरा एरर भी",
+      "source": "caption",
+      "english_text": "Can do anything. But order should be maintained in this order. Meaning that order is maintained, 10 and nine are a sub-sequence. But you cannot do this that you first pick a nine, first pick this one nine and then this one pick 10 and write this. No, this is not all sequence. Did the order go wrong? 9 comes after 10. So pick whatever you feel like. Keep maintaining order. But there is no need to lift into a window. What is this called? All sequence. You should know the definition difference between sub sequence and substring. Let go. So the whole sequence is that you can pick any number. If you want, even the complete error"
+    },
+    {
+      "start_time": 249.68,
+      "end_time": 283.909,
+      "text": "उठा सकते हैं। वो भी सब सीसीक्वेंस है। आप चाहें तो कोई एक नंबर भी उठा सकते हैं। वो भी सब सीसीक्वेंस है। वेरी गुड। लेकिन अब उसमें क्या बोला है? लॉन्गेस्ट इंक्रीजिंग सब्सक्वेंस। यस लॉन्गेस्ट इंक्रीजिंग सब सीक्वेंस इसका क्या मतलब है? अगर हम ये सब सीक्वेंस उठा लिए। मान लीजिए नाइन और टू और फाइव ये सब सीक्वेंस उठा लिए। अच्छा क्या ये इंक्रीजिंग सब सीसीक्वेंस है क्या? क्या ये इंक्रीजिंग सबसीक्वेंस है क्या? इसको कैसे टेस्ट करेंगे? सबसे पहला नंबर क्या है? नौ। ये अच्छा है। नाइन के बाद क्या आ गया? टू आ गया। मतलब नाइन के",
+      "source": "caption",
+      "english_text": "Can pick up. That too is all sequence. If you want, you can also pick any one number. That too is all sequence. very good. But what does it say now? Longest increasing sequence. Yes Longest Increasing Sub Sequence What does this mean? If we take all these sequences. Suppose we picked up all these sequences of nine, two and five. Okay, is this an increasing sub sequence? Is this an increasing sequence? How will you test it? What is the first number? nine. This is good. What came after nine? Two is here. means nine"
+    },
+    {
+      "start_time": 283.919,
+      "end_time": 315.029,
+      "text": "बाद आप नीचे चले गए। आप यहां से स्टार्ट किए और आप नीचे चले गए। ये इंक्रीजिंग सब्सीक्वेंस नहीं है। ये तो डिक्रीजिंग सबसीक्वेंस है। तो ये इंक्रीजिंग नहीं है। क्योंकि इंक्रीजिंग का मतलब ना कि वो लगातार इंक्रीज होता रहे। लगातार इंक्रीज होता रहे। ये इंक्रीजिंग सबसीक्वेंस नहीं है। एक और एग्जांपल देखिए। टू फाइव थ्री। क्या ये इंक्रीजिंग सबसीक्वेंस है? चेक करते हैं। टू। अच्छा है। पहला तो ठीक ही रहता है। टू के बाद क्या आया? फाइव। मतलब टू के बाद आप ऊपर गए। ऊपर गए। वेरी गुड।",
+      "source": "caption",
+      "english_text": "After you went down. You started from here and you went down. This is not an increasing sequence. This is a decreasing sequence. So this is not increasing. Because increasing does not mean that it should keep increasing continuously. Keep increasing continuously. This is not an increasing sequence. Look at another example. Two five three. Is this an increasing sequence? Let's check. To. Is good. The first one is fine. What came after two? Five. Meaning after two you went up. Went up. very good."
+    },
+    {
+      "start_time": 315.039,
+      "end_time": 346.39,
+      "text": "फाइव के बाद आप थ्री पे आ गए। तो यही गलती हो गया। टू के बाद ऊपर गए और फिर थ्री पे आ गए। ये भी इंक्रीसिंग सबसीक्वेंस नहीं। इंक्रीसिंग मतलब वो हमेशा इंक्रीजिंग होना चाहिए। जितना है उतना इंक्रीसिंग होना चाहिए। ये भी इंक्रीसिंग सबसीक्वेंस नहीं है। एक और देखिए। 2 5 7 1 01 क्या ये इंक्रीसिंग सबसीक्वेंस है? यस यस यस। ये इंक्रीसिंग है। दो के बाद पांच आया। पांच के बाद सात आया। सात के बाद 101 आ गया। इस सब सीक्वेंस को क्या बोला जाता है?",
+      "source": "caption",
+      "english_text": "After five you came to three. So this was the mistake. Went up after two and then came down to three. This is also not an increasing sequence. Increasing means it should always be increasing. There should be increasing as much as it is. This is also not an increasing sequence. Look at one more. 2 5 7 1 01 Is this an increasing sequence? Yes yes yes. This is increasing. After two came five. After five came seven. After seven came 101. What is this sequence called?"
+    },
+    {
+      "start_time": 346.4,
+      "end_time": 379.11,
+      "text": "इंक्रीजिंग सबसीक्वेंस। क्या? इंक्रीजिंग सबसीक्वेंस। वेरी गुड। आपको क्या पूछा गया है? अब ऐसा तो है नहीं कि यही एक इंक्रीजिंग सबसीक्वेंस है। ऐसा तो कोई बात नहीं ना भाई कि यही एक इंक्रीजिंग सब सीसीक्वेंस है। हम एक और लिख के दिखा सकते हैं आपको। 7 1 ये भी इंक्रीजिंग सबसीक्वेंस है। 10 18 ये भी इंक्रीजिंग सबसीक्वेंस है। अ 9 101 ये भी इंक्रीजिंग सबसीक्वेंस है। 2 3 7 18 ये भी तो ये सब सारे इंक्रीजिंग सब्सक्वेंस है। लेकिन",
+      "source": "caption",
+      "english_text": "Increasing sequence. What? Increasing sequence. very good. What have you been asked? Now it is not that this is an increasing sequence. It doesn't matter brother that this is an increasing sub sequence. We can write another one and show it to you. 7 1 This is also an increasing sequence. 10 18 This is also an increasing sequence. A 9 101 This is also an increasing sequence. 2 3 7 18 These are all increasing sequences. but"
+    },
+    {
+      "start_time": 379.12,
+      "end_time": 407.749,
+      "text": "आपको क्या लौटाना है? आपको लॉन्गेस्ट वाला लौटाना है। लॉन्गेस्ट इंक्रीजिंग सबसीक्वेंस आप क्या बना सकते हैं? तो इस क्वेश्चन में आप लॉन्गेस्ट इंक्रीजिंग सबसीक्वेंस का लेंथ क्या हो सकता है? आपका आंसर आएगा चार लेंथ का आप बना सकते हैं। आप इस एरे में पांच लेंथ का इंक्रीजिंग सबसीक्वेंस नहीं बना पाएंगे। वो आप ट्राई करके देख लीजिएगा। आपको क्या लौटाना है? इंक्रीजिंग सब सीक्वेंस में से सबसे लंबा इंक्रीजिंग सब सीक्वेंस आपको लौटाना है।",
+      "source": "caption",
+      "english_text": "What do you have to return? You have to return the longest one. What's the Longest Increasing Subsequence You Can Make? So in this question you can ask what can be the length of the longest increasing sequence? Your answer will be, you can make it of four lengths. You will not be able to create increasing subsequences of length five in this array. You can try it and see. What do you have to return? The longest increasing subsequence of the increasing subsequences is returned to you."
+    },
+    {
+      "start_time": 407.759,
+      "end_time": 441.35,
+      "text": "क्या? सबसे लंबा वाला उसका लेंथ लौटाना है। तो इस क्वेश्चन में आप चार से ज्यादा बड़ा इंक्रीजिंग सबसीक्वेंस नहीं लौटा पाएंगे। और एक बात जब हम आपको इंक्रीजिंग बोल रहे हैं ना तो वो स्ट्रिक्टली इंक्रीजिंग है। क्या? स्ट्रिक्टली इंक्रीजिंग। मतलब कि अगर आपके सबसीक्वेंस में ऐसा आया 5 फाइव 10 तो आपको लगेगा कि ये भी इंक्रीजिंग है। नहीं ये इंक्रीसिंग नहीं है क्योंकि आप फाइव पे थे आप फाइव पे ही रह गए और फिर आप 10 पे गए। ये इंक्रीजिंग नहीं है। क्यों? क्योंकि ये वाला जो पार्ट है ना दिस इज़ नॉट",
+      "source": "caption",
+      "english_text": "what? The longest one is to return its length. So in this question you will not be able to return increasing subsequences greater than four. And one more thing, when we are telling you increasing, it is strictly increasing. What? Strictly increasing. Meaning that if 5 five 10 appears in your subsequence then you will feel that this is also increasing. No, it is not increasing because you were at five, you remained at five and then you went to 10. This is not increasing. Why? Because this part is not this"
+    },
+    {
+      "start_time": 441.36,
+      "end_time": 470.55,
+      "text": "इंक्रीजिंग। ये कांस्टेंट रहा। सेम नंबर्स नहीं हो सकता है। इंक्रीजिंग का मतलब स्ट्रिक्टली इंक्रीजिंग। फाइव के बाद यहां पे अगर सिक्स होता तो ये इंक्रीजिंग सब्सीक्वेंस हो जाता। सेम भी नहीं रहना चाहिए नंबर। मतलब इंक्रीजिंग ऐसा ऐसा करके बढ़ता ही रहना चाहिए। बढ़ता ही रहना चाहिए। इसको बोलते हैं इंक्रीजिंग। और आपका काम क्या है? लॉन्गेस्ट इंक्रीजिंग सबसीक्वेंस का लेंथ निकाल के देना। तो क्वेश्चन क्लियर होगा? अब इस क्वेश्चन को समझते हैं। चलिए आगे। अब इस क्वेश्चन को समझना शुरू कीजिए। मान लीजिए ये आपका एरे है।",
+      "source": "caption",
+      "english_text": "Increasing. This remained constant. Cannot have same numbers. Increasing means strictly increasing. If there was a six after five, it would have been an increasing sequence. The number should not remain the same. Meaning increasing should keep increasing by doing this and this. Must keep growing. This is called increasing. And what is your job? Find the length of the longest increasing subsequence. So the question will be clear? Now let us understand this question. Let's move ahead. Now start understanding this question. Suppose this is your array."
+    },
+    {
+      "start_time": 470.56,
+      "end_time": 496.23,
+      "text": "इसमें आपको एलआईएस का लेंथ फाइंड करना है। तो देख के आपको पता चल रहा होगा कि एलआईएस जो होगा ना मतलब देख के पता चल जाएगा। 1 2 5 अगर हम इस लेंथ का बना दें मतलब तीन लेंथ। तीन से ज्यादा नहीं बना पाएंगे क्योंकि एरे का लेंथ चार है। चारों को लेना पॉसिबल है नहीं। तीन लेंथ का बनाया जा सकता है क्या? 1 2 5 ठीक? लेकिन इसको सोचा कैसे जाए? इसको सॉल्व कैसे किया जाए? रिकर्जन कैसे लिखा जाए? सब देखेंगे। चलिए तो ये क्वेश्चन भी एक चॉइस का क्वेश्चन है। इतना आपको समझ में आना चाहिए अभी तक?",
+      "source": "caption",
+      "english_text": "In this you have to find the length of LIS. So by watching you will know what the meaning of LIS will be. 1 2 5 If we make it of this length, it means three lengths. Will not be able to create more than three because the length of the array is four. It is not possible to take all four. Can it be made of three lengths? 1 2 5 ok? But how to think about this? How to solve this? How to write recursion? Everyone will see. Well, this question is also a question of choice. You should understand this much by now?"
+    },
+    {
+      "start_time": 496.24,
+      "end_time": 530.23,
+      "text": "क्योंकि आप इसमें कोई सेट एल्गोरिदम नहीं बना सकते हैं। इसका कहने का क्या मतलब है जो हम शुरू से चिल्ला रहे हैं। आप जब फोर पे आए। अब एक-एक करके देखें ना भाई। अगर आपको सबसीक्वेंस में उसको इंक्लूड करना है कि नहीं करना है। एक-एक करके ही देखेंगे। आप जब फोर पे आएंगे आपके पास कोई सेट एल्गोरिदम नहीं है कि हां चलो फोर को हम नहीं लेंगे या फोर को हम ले लेंगे। ऐसा नहीं हो सकता है। नहीं ना हो सकता है। मतलब अगर मान लीजिए आप बोले कि फोर मेरे आंसर में रहेगा ही रहेगा। हम कुछ भी हो जाए फोर को नहीं छोड़ेंगे। तो आपका आंसर ना अब मान लीजिए आप फोर को रख लिए अपने आंसर में जीत करके रख लिए। अब फोर को रखने के कारण ना आप वन रख पाएंगे ना आप टू रख",
+      "source": "caption",
+      "english_text": "Because you cannot make any set algorithm in it. What does it mean to say what we have been shouting from the beginning? When you came on four. Now let's see one by one, brother. If you want to include it in the subsequence or not. Will see one by one. When you come to four, you do not have any set algorithm that yes, let's take four, we will not take it or we will take four. This cannot happen. No, it can't happen. Meaning, if you say that four will always be there in my answer. We will not leave Four no matter what. So your answer is no. Now let's assume that you have kept four as your answer and kept it as a win. Now because of keeping four you will neither be able to keep one nor you will be able to keep two."
+    },
+    {
+      "start_time": 530.24,
+      "end_time": 563.67,
+      "text": "पाएंगे। नहीं रख पाएंगे ना। तो फोर को रखने के बाद वन टू हो नहीं पाया। फाइव रख सकते हैं। आपका आंसर आ जाएगा दो। आना कितना चाहिए था? तीन। सिमिलरली आप ये भी नहीं बोल सकते कि हम किसी नंबर को नहीं रखेंगे। मान लीजिए आप फोर को नहीं रखे और आप वन पे आ गए। अब आप जिद पे आ गए कि हम वन को नहीं रखूंगा। कुछ भी हो जाए दुनिया में वन को नहीं रखेंगे। तो अगर भाई आप वन को नहीं रखेंगे तो फिर आपको टू और फाइव लेना पड़ेगा। तो टू और फाइव का आंसर भी दो आएगा। आना कितना चाहिए था? तीन। कहने का क्या मतलब है? एक एल्गोरिदम एक पक्का पक्का डिसीजन आप नहीं ले सकते हैं कि इसको हम रखेंगे कि नहीं रखेंगे। आपको दोनों",
+      "source": "caption",
+      "english_text": "Will find. Will not be able to keep it? So after placing four, one could not become two. Can keep five. Your answer will come. How much should have come? Three. Similarly, you cannot say that we will not keep any number. Suppose you did not place four and you came to one. Now you are adamant that we will not keep the forest. Whatever happens, forests will not be preserved in the world. So brother, if you do not keep one then you will have to take two and five. So the answer of two and five will also be two. How much should have come? Three. What does it mean to say? You cannot take a firm decision on whether we will keep an algorithm or not. you both"
+    },
+    {
+      "start_time": 563.68,
+      "end_time": 594.71,
+      "text": "करके देखना पड़ेगा। और जैसे ही ये लाइन आता है कि आपको दोनों करके देखना पड़ेगा। आपको सारा चॉइस करके देखना पड़ेगा। क्या आपके दिमाग में आना चाहिए? बड़ा-बड़ा रिकजन। आपके दिमाग में लाल रंग का बड़ा-बड़ा क्या आना चाहिए? रिकर्जन। अच्छा अच्छी बात है। तो कहने का मतलब कि हर इंडेक्स पे आपके पास एक चॉइस है। क्या चॉइस है? इसको हमको अपने आंसर में इंक्लूड करना है। मतलब इसको अपने सब सीक्वेंस में हम रखना चाहेंगे। मतलब कि आपकी सब सीसीक्वेंस की लेंथ कितने से? एक से बढ़ेगी। या तो इसको हम छोड़ के आगे बढ़ जाएंगे। दो ही तरीके का चॉइस हो सकता है।",
+      "source": "caption",
+      "english_text": "We will have to do it and see. And as soon as this line comes, you will have to try both. You will have to try all the choices. Should come to your mind? Big-big Rickson. What big red color should come to your mind? Recursion. Okay, that's a good thing. So it means that you have a choice on every index. What is the choice? We have to include this in our answer. Meaning we would like to keep it in our sub sequence. Meaning, what is the length of your sub sequence? Will increase by one. Either we will leave it and move ahead. There can be only two types of choice."
+    },
+    {
+      "start_time": 594.72,
+      "end_time": 629.509,
+      "text": "ऐसा तो होगा नहीं। आधा रख लेंगे। नहीं रख सकते। आधा नहीं रख सकते हैं। रखेंगे या नहीं रखेंगे? ओके। लेकिन लेकिन लेकिन आप एक बात बताइए। मान लीजिए आप i = 0 पे हैं। i = 0 पे हैं। i = 0 पे तो है एलिमेंट फोर। अब पहला एलिमेंट पे तो आपके पास चॉइस होगा। पहले एलिमेंट पे तो ऐसा नहीं है ना भाई कि अब पहला एलिमेंट तो पहला एलिमेंट है। उसके पहले कुछ है नहीं। तो आप इसको रख भी सकते हैं नहीं भी रख सकते हैं। आपका चॉइस एकदम खुला है। मतलब आप अपने दिल का सुनिए। तो आप बोलते हैं कि ठीक है दो चॉइसेस है। एक तो है यस वाला पाथ कि हम इसको अपने आंसर में रखेंगे। अगर आप इसको अपने आंसर में रखेंगे तो आपका जो सब",
+      "source": "caption",
+      "english_text": "This will not happen. Will keep half. Can't keep. Can't keep half. Will you keep it or not? Ok. But but but tell me one thing. Suppose you are at i = 0. at i = 0. At i = 0 there is element four. Now you will have a choice on the first element. It is not so on the first element, brother, that now the first element is the first element. There is nothing before that. So you can keep it or not. Your choice is completely open. Meaning, listen to your heart. So you say ok there are two choices. One is the path of yes that we will keep in our answer. If you keep this in your answer then all your"
+    },
+    {
+      "start_time": 629.519,
+      "end_time": 657.75,
+      "text": "सीसीक्वेंस का लेंथ है वो एक से बढ़ जाएगा। वेरी गुड ओके और आपके पास एक और पाथ है कि हम इसको नहीं रखेंगे। अगर आप इसको नहीं रखेंगे अपने आंसर में तो आपके आंसर का लेंथ नहीं बढ़ेगा। ओके। लेकिन जब आप इसको लेके इसको यस वाले पाथ से आप i = 1 पे आएंगे। अब देखिए i = 1 पे क्या है? वन। i = 1 पे कौन सा नंबर है? वन। आप यहां पे क्या करके आए हैं? आप यहां पे इस आदमी को लेके आए हैं। इस आदमी को लेके आए हैं।",
+      "source": "caption",
+      "english_text": "The length of the sequence will be increased by one. Very good okay and you have another path that we will not keep it. If you do not keep this in your answer then the length of your answer will not increase. Ok. But when you take this from the yes path, you will come to i = 1. Now see what happens at i = 1? Forest. What number is at i = 1? Forest. What have you come here for? You have brought this man here. Have brought this man."
+    },
+    {
+      "start_time": 657.76,
+      "end_time": 692.31,
+      "text": "यस वाले पाथ में है ना आप? यस वाले पाथ में मतलब आप फोर को लेके आए हैं। मतलब आपका सब सीक्वेंस कुछ-कुछ ऐसा दिखेगा कि फोर आ गया है। कुछ बचा हुआ है अब लेना। अब एक बात बताइए अगर आप फोर को लेके आ रहे हैं। किसको? फोर को लेके आ रहे हैं। क्या आप दुनिया में कुछ भी करके वन को ले सकते हैं? क्या? क्या आप दुनिया में कुछ भी करके वन को ले सकते हैं? या नहीं ले सकते हैं। जैसे ही आप वन को लेने का चॉइस लेंगे ना आपका लॉन्गेस्ट इंक्रीजिंग सब सीसीक्वेंस ब्रेक हो जाएगा। अगर आप फोर को लेके यहां पे आए हैं, आप फोर के बाद जैसे ही वन डालेंगे, दिस इज नॉट एन इंक्रीजिंग",
+      "source": "caption",
+      "english_text": "Are you on the path of yes? Yes path means you have brought four. Meaning your sub sequence will look something like this: Four has arrived. There is something left, take it now. Now tell me one thing if you are bringing four. Whom? Bringing four. Can you take the forest by doing anything in the world? What? Can you take the forest by doing anything in the world? Or can't take it. As soon as you choose to take one, your longest increasing sub sequence will be broken. If you have come here with four, as soon as you put one after four, this is not an increasing"
+    },
+    {
+      "start_time": 692.32,
+      "end_time": 725.91,
+      "text": "सब सीसीक्वेंस। तो लॉन्गेस्ट का तो छोड़ ही दीजिए। इंक्रीजिंग सब सीसीक्वेंस भी नहीं है। मतलब कि अगर आप फोर को लेके आए हैं ना और आप वन पे आ गए हैं। आपके पास बस एक रास्ता बचेगा दुनिया में। कौन सा दुनिया में रास्ता बचेगा? नहीं ले सकते हैं भैया इसको। वो बिल्कुल नहीं ले सकते हैं। आगे जाना पड़ेगा। सिमिलरली i = 2 पे आए। i = 2 पे आए। अभी भी लास्ट कौन सा एलिमेंट लिए थे आप? चार। लास्ट कौन सा एलिमेंट लिए थे? चार। क्या चार लेने के बाद आपको लगता है कि आप दुनिया में कुछ भी करके दो को ले सकते हैं अपने आंसर में?",
+      "source": "caption",
+      "english_text": "All sequence. So leave aside the longest one. There is no increasing sub sequence either. Meaning that if you have come with four and you have come with one. You will have only one way left in the world. Which way will survive in this world? Brother, I can't take it. They can't take it at all. Will have to go further. Similarly we arrive at i = 2. Come to i = 2. Still, which element did you take last? Four. Which element did you take last? Four. After taking four, do you think that you can do anything in the world to take two in your answer?"
+    },
+    {
+      "start_time": 725.92,
+      "end_time": 752.389,
+      "text": "नहीं ले सकते हैं। दैट विल नॉट बी एन इंक्रीसिंग सबसीक्वेंस। आपके पास सिर्फ एक रास्ता बचेगा। नो का। नो करके आप कहां पे आएंगे? i इज इक्वल टू थ्री पे। अब अब अब i = 3 पे कौन सा एलिमेंट लास्ट लिया हुआ है? चार। अब यहां पे क्या नंबर है? पांच। अब आपके पास चॉइस है। अब आप चाहे तो फैसला ले सकते हैं। कौन सा एलिमेंट लास्ट लिए हुए थे? चार। चार के बाद अभी कौन सा नंबर आया?",
+      "source": "caption",
+      "english_text": "Can't take. That will not be an increasing sequence. You will have only one way left. Of no. Where will you come by saying no? i is equal to three pe. Now at i = 3 which element is taken last? Four. Now what is the number here? Five. Now you have a choice. Now you can take a decision if you want. Which element was taken last? Four. What number just came after four?"
+    },
+    {
+      "start_time": 752.399,
+      "end_time": 787.35,
+      "text": "पांच। तो पांच जो है वो चार से बड़ा है। पांच चार से बड़ा है। अब आपके पास फैसला है कि आप चाहे तो पांच को आंसर में ले सकते हैं। चाहे तो आप पांच को आंसर में नहीं भी ले सकते हैं। अब जाके अब जाके आपके पास कितने ऑप्शन बचेंगे? दो ऑप्शन यस भी और नो भी। लेकिन अगर आपका प्रीवियस एलिमेंट मतलब आपका जो प्रीवियस टेकन एलिमेंट है। कौन सा? प्रीवियस टेकन एलिमेंट है। प्रीवियस टेकन एलिमेंट। अगर ये आदमी ग्रेटर दैन इक्वल टू आपके अभी के एलिमेंट से है। आपके पास कोई चॉइस नहीं",
+      "source": "caption",
+      "english_text": "Five. So five is greater than four. Five is greater than four. Now you have the decision that if you want, you can take five as answer. If you want, you can not take five as answer. How many options will you have left now? There are two options, yes and no. But if your previous element means your previously taken element. Which one? There is a previously taken element. Previous Taken Element. If this man is greater than equal to your current element. you have no choice"
+    },
+    {
+      "start_time": 787.36,
+      "end_time": 814.31,
+      "text": "बचती है बेटा। आपके पास कोई चॉइस नहीं है। आपको छोड़ के आगे जाना पड़ेगा। छोड़ के आगे जाना पड़ेगा। और दुनिया में कोई रास्ता नहीं बचा है आपके पास। लेकिन जो आप प्रीवियस टेकन एलिमेंट मतलब अभी इससे पहले जो एलिमेंट आप लिए थे वो अगर लेस है इससे तब आपके पास दो तरीके के चॉइससेस बचेंगी और ये हम क्यों बोल रहे हैं कि आपको प्रीवियस टेक एन एलिमेंट याद रखना चाहिए।",
+      "source": "caption",
+      "english_text": "It survives, son. You don't have any choice. You will have to leave and move ahead. We will have to leave and move ahead. And you have no option left in this world. But if the previously taken element means the element you had taken before this is less, then you will be left with two types of choices and that is why we are saying that you should remember the previous taken element."
+    },
+    {
+      "start_time": 814.32,
+      "end_time": 845.829,
+      "text": "मान लीजिए आप पहला एलिमेंट लिए चार। आप पहला एलिमेंट लिए चार। तो आपका जो प्रीवियस है वो आपका बन गया चार। आपके पास आया पांच। आपके पास नया नंबर आया पांच। तो आप ले सकते हैं। आपके पास चॉइस है। आप पांच को ले लिए। आप पांच को ले लिए। अब आपका प्रीवियस चार नहीं रहेगा। अब आपका प्रीवियस चार नहीं है। अब आपका प्रीवियस पांच बन जाएगा। क्यों? क्योंकि मान लीजिए इस पांच के बाद एक और पांच है एरे में। अगर आप अपने प्रीवियस को नहीं बदलते, अपने प्रीवियस को चार रहने देते तब तो आपको लगता कि हम इसको भी ले सकते हैं। नहीं ले सकते हैं। जस्ट नाउ जस्ट रीसेंट वाला",
+      "source": "caption",
+      "english_text": "Suppose you take the first element as four. You take the first element four. So your previous one has become your four. Five came to you. You have a new number, five. So you can take it. You have a choice. You took five. You took five. Now your previous four will no longer be there. Now your previous four is no more. Now your previous will become five. Why? Because suppose after this five there is another five in the array. If you had not changed your previous, had left your previous four, then you would have thought that we can take this also. Can't take. Just Now Just Recent One"
+    },
+    {
+      "start_time": 845.839,
+      "end_time": 877.189,
+      "text": "एलिमेंट कौन सा है आपका? पांच। इस पांच पे क्या आप ये पांच और ले सकते हैं? नहीं। वो इंक्रीजिंग नहीं रहेगा। आप इस पांच को नहीं ले सकते हैं। मान लीजिए आगे एलिमेंट आया 10। अब आप इस 10 को ले सकते हैं। तो अब आप इस 10 को चाहे तो ले सकते हैं। और आपका प्रीवियस अपडेट हो के क्या बन जाएगा? 10। अगले सारे का फैसला किसके बेस पे होना है? 10 के बेस पे होना है। तो आपको इसमें सिर्फ इंडेक्स नहीं चाहिए। आपको क्या चाहिए? प्रीवियस कौन सा एलिमेंट लेके आ रहे हैं भाई? प्रीवियस कौन सा एलिमेंट लेके आ रहे हो? प्रीवियस कौन सा एलिमेंट",
+      "source": "caption",
+      "english_text": "Which element is yours? Five. On this five, can you take five more? No. It will not be increasing. You can't take this five. Suppose next element comes 10. Now you can take this 10. So now you can take these 10 if you want. And what will become of your previous update? 10. On what basis is the next decision to be taken? It has to be on the basis of 10. So you don't just want an index in it. What do you want? Which element are you bringing with you brother? Which previous element are you bringing? Which element is previous?"
+    },
+    {
+      "start_time": 877.199,
+      "end_time": 910.79,
+      "text": "लेके आ रहे हो? मतलब कि जब आप i = 0 पे रहेंगे। i = 0 पे रहेंगे। तो कौन सा एलिमेंट है? प्रीवियस कोई एलिमेंट नहीं। कोई कुछ नहीं लिए हैं। तो आप ना प्रीवियस को भी इंडेक्स पे स्टोर कर सकते हैं कि हम कौन सा इंडेक्स का एलिमेंट उठा के आ रहे हैं। तो जब आप i = 0 पे रहेंगे तो कौन सा एलिमेंट है प्रीवियस? मतलब इससे पहले क्या लिए थे? कुछ नहीं। अभी तो शुरू किए थे। अभी क्या लेंगे? आपका प्रीवियस -1 हो सकता है। आपका प्रीवियस क्या हो सकता है? -1 हो सकता है। अच्छा। आप डिसाइड कैसे करेंगे कि मेरे पास चॉइस है कि नहीं है? अगर अगर तो",
+      "source": "caption",
+      "english_text": "Are you bringing it? Meaning that when you will be at i = 0. Will remain at i = 0. So which element is it? No previous element. No one has taken anything. So you can also store the previous information on the index to know which element of the index we are selecting. So when you stay at i = 0, which element is previous? I mean, what did you take before this? Nothing. Had just started. What will you take now? Your previous may be -1. What could be your previous? Could be -1. Good. How do you decide whether I have a choice or not? if if then"
+    },
+    {
+      "start_time": 910.8,
+      "end_time": 944.629,
+      "text": "आपका प्रीवियस -1 हुआ तो आपके पास चॉइस है। प्रीवियस -1 होने का मतलब कि अभी तक आप कुछ नहीं लिए हैं। अभी तक आप कुछ नहीं लिए हैं तो आपके पास चॉइस है। और और अगर प्रीवियस -1 नहीं है तो अगर ये जो प्रीवियस है वो लेस देन है आपके अभी के एलिमेंट से तो भी आपके पास दो तरीके के चॉइस हैं। अगर ये दोनों चीजें नहीं है। अगर ये दोनों चीजें नहीं होती हैं। आपके पास सिर्फ एक चॉइस क्या बचेगा? छोड़ देने का चॉइस बचेगा। क्या? छोड़ देने का चॉइस बचेगा। छोड़ देने का चॉइस बचेगा। अगर ऐसा",
+      "source": "caption",
+      "english_text": "If your previous is -1 then you have a choice. Being Previous-1 means that you have not taken anything yet. If you haven't taken anything yet, you have a choice. And if the previous is not -1, then if the previous is less than your current element, then you still have two choices. If both these things are not there. If both these things do not happen. What is the only choice left for you? There will be a choice to leave. What? There will be a choice to leave. There will be a choice to leave. if so"
+    },
+    {
+      "start_time": 944.639,
+      "end_time": 978.23,
+      "text": "नहीं है तो। तो ये आपको उम्मीद करते हैं कि समझ में आया? अब चलिए हमारे कोड की तरफ हम धीरे-धीरे। तो इतने बड़े भाषण के बाद कवि क्या कहना चाहते हैं कि आपको दो चीजें चाहिए। आपको तो इंडेक्स चाहिए जिस पे आप फैसला लेना चाहते हैं। और आपको प्रीवियस इंडेक्स चाहिए। प्रीवियस इंडेक्स आपको क्या बताता है कि इससे पहले आप कौन सा लेके आए हैं? अगर लेके आए हैं तो आपको उसके हिसाब से चुनना पड़ेगा। मतलब कि अगर हम ऐसा फंक्शन लिखें कि अ इंट फन ओके और वेक्टर इंट a ठीक है n कितने एलिमेंट है उसके बाद",
+      "source": "caption",
+      "english_text": "If it is not there. So do you hope that made sense? Now let us move towards our code slowly. So what the poet wants to say after such a big speech is that you need two things. You need an index on which you want to take decisions. And you need the previous index. What does the Previous Index tell you about which one you came before? If you have brought it then you will have to choose accordingly. Meaning that if we write such a function that a is int fun ok and vector int a is ok n how many elements are there after that"
+    },
+    {
+      "start_time": 978.24,
+      "end_time": 1012.629,
+      "text": "दो चीजें i और इंट प्रव मतलब i मतलब अभी का इंडेक्स और प्रव मतलब सब पहले तो बेस केस लिख लीजिए अगर एरे खत्म हो गया कितना और बन सकता है कुछ नहीं बन सकता है बेटा कुछ नहीं खत्म खेल खत्म खेल खत्म बेटा ठीक है अच्छा अब आपको चेक करना पड़ेगा। क्या चेक करना पड़ेगा? इफ प्रीवियस इक्वल इक्वल टू -1 इसका क्या मतलब है? जब हम लोग शुरू करते हैं ना तो हम लोग प्रीवियस को -1 भेजते हैं। -1 का मतलब है कि अभी तक कोई एलिमेंट नहीं लिए हैं। अब अभी तक अगर कोई एलिमेंट नहीं लिए हैं तो आप फ्री हैं। आप स्वतंत्र हैं ये एलिमेंट लेने के लिए या",
+      "source": "caption",
+      "english_text": "Two things i and int prv means i means the index of now and prv means all first write the base case if the array is finished how much more can be made nothing can be made son nothing is over game is over game is over son ok ok now you have to check. What needs to be checked? What does it mean if Previous Equals Equal to -1? When we start, we send -1 to the previous one. -1 means no elements have been taken yet. Now if you have not taken any elements yet then you are free. You are free to take these elements or"
+    },
+    {
+      "start_time": 1012.639,
+      "end_time": 1044.309,
+      "text": "नहीं लेने के लिए? और अगर प्रीवियस -1 नहीं है मतलब कुछ ना कुछ लेके आए हैं। और एरे ऑफ़ i इज ग्रेटर दैन एरे ऑफ़ प्रीवियस। मतलब जो आप प्रीवियस में ले के रखे हुए हैं। मतलब मान लीजिए आप चार ले के रखे थे। अभी का एलिमेंट है 10। अब 4 10 चलेगा तो आपके पास चॉइस है। आप 10 को ले सकते हैं। 10 को नहीं ले सकते हैं। ठीक है? अब आपके पास दो चॉइससेस हैं। पहला चॉइस तो है कि आप इस एलिमेंट को ले लीजिए अपने आंसर में। अगर आप इसको अपने आंसर में लेते हैं तो आपका आंसर एक से बढ़ेगा। लेंगे तो एक बढ़ेगा ना? लेंथ बढ़ गया। प्लस आप आगे",
+      "source": "caption",
+      "english_text": "Not to take? And if the previous is not -1 then it means you have brought something. And array of i is greater than array of previous. Meaning which you have kept in the previous one. Meaning, suppose you had taken four. The current element is 10. Now if 4 10 will do then you have a choice. You can take 10. Can't take 10. Ok? Now you have two choices. The first choice is to include this element in your answer. If you take this into your answer then your answer will increase by one. If you take it, it will increase by one, right? Length increased. plus you ahead"
+    },
+    {
+      "start_time": 1044.319,
+      "end_time": 1071.43,
+      "text": "जाइए। एरे n i + 1 और हम क्या बोले थे? अगर आप किसी को ले रहे हैं, किसी एलिमेंट को ले रहे हैं। अब ये इंडेक्स अब अगले वाले का प्रीवियस बन जाएगा। अगर आप पांच को लिए तो आप पांच आगे वालों के लिए प्रीवियस बन जाएगा। तो प्रीवियस के जगह हम लोग आई पास कर देंगे। क्योंकि अब ये वाला इंडेक्स आगे वाले आदमी के लिए प्रीवियस का काम करेगा। समझ में आ गई बात? ओके। अगला चॉइस क्या है कि आप नहीं लीजिए। आप नहीं लीजिए। नहीं लेंगे। लेना जरूरी थोड़ी है।",
+      "source": "caption",
+      "english_text": "Go. Array n i + 1 and what did we say? If you are taking someone, taking some element. Now this index will become the previous one of the next one. If you take five then you will become the priority for the next five. So instead of previous we will pass I. Because now this index will work as a priority for the next person. Have you understood the point? Ok. What is the next choice that you should not take? You don't take it. will not have. It is necessary to take a little."
+    },
+    {
+      "start_time": 1071.44,
+      "end_time": 1105.43,
+      "text": "आगे चले जाएंगे। एरे n i + 1 अब अगर आप इसको नहीं लिए तो आगे वाले के लिए प्रीवियस क्या रहेगा जो अभी तक था मतलब मान लीजिए अभी तक के लिए चार प्रीवियस था ये वाला एरे था ना जी ये वाला एरे था ना देखो 4 1 2 0 1 2 ये वाला एरे था मान लीजिए हम फोर को लिए थे तो मेरा प्रीवियस बन गया था ज़ीरो आप वन पे आए आप वन को नहीं लिए आप वन को नहीं लिए नहीं क्या लिए ले ही नहीं सकते हैं नहीं लिए तो आगे बढ़ गए अब जब आप आगे बढ़ के टू पे आएंगे टू के लिए क्या है प्रीवियस टू के लिए भी तो फोर ही है प्रीवियस यस अब टू के लिए वन थोड़ी बन जाएगा प्रीवियस। वन को जब लिया ही नहीं",
+      "source": "caption",
+      "english_text": "Will go ahead. Array n i + 1 Now if you do not take this then what will be the previous one for the next one which was there till now means suppose till now four was the previous one, this one was array na ji this one was array no see 4 1 2 0 1 2 This one was array suppose we had taken four then my previous became zero you came to one you did not take one you did not take one you can't take one then move ahead Now when you move ahead and come to two, what is the previous for two? Even for two, four is previous. Yes, now one will become a little previous for two. When the forest was not taken"
+    },
+    {
+      "start_time": 1105.44,
+      "end_time": 1133.75,
+      "text": "तो वो प्रीवियस कैसे बनेगा? इसीलिए एज़ इट इज़ प्रीवियस पास कर दिए। ये लीजिए वेरी गुड। दोनों चॉइससेस हो गया। अब दोनों चॉइससेस में से कौन सा चॉइस बड़ा है? जो भी आपको अच्छा चॉइस लग रहा है मैक्स ऑफ़ C1 या C2 मतलब इसको लेने से कुछ लेंथ मिलेगा। मान लीजिए इसको हम लिए तो हमको पता चलेगा कि पांच लेंथ का मिल रहा है। नहीं लेने पे 10 लेंथ का बन रहा है तो नहीं लेने वाला कर लेंगे। खत्म हो गया। अब अगर ऐसा नहीं है। अगर ऐसा नहीं है मतलब कि क्या है?",
+      "source": "caption",
+      "english_text": "So how will he become previous? That's why As It Is Previous was passed. Have this very good. Both choices were made. Now which of the two choices is bigger? Whatever you feel is a good choice, max of C1 or C2 means you will get some length by taking it. Suppose we take it then we will know that we are getting five lengths. If it is going to be 10 lengths if you don't take it then you will take it if you don't want to take it. It's over. Now if it is not so. If it is not so then what does it mean?"
+    },
+    {
+      "start_time": 1133.76,
+      "end_time": 1164.39,
+      "text": "आपके पास किसी तरीके का चॉइस नहीं बचा है। तो आपको क्या रिटर्न करना है? आप इसमें नहीं ले सकते हैं कुछ भी करके। रिटर्न फन एरे एंड i + 1 एंड प्रव। ये क्यों लिखे हैं? मान लीजिए इफ कब फेल होगा? इफ तब फेल होगा। अगर प्रीवियस -1 है तो इफ चल जाएगा। प्रीवियस -1 नहीं है। अच्छा। और एरे ऑफ़ i बड़ा भी नहीं है एरे ऑफ़ प्रीवियस से। मतलब कि कहीं ना कहीं आपका एरे ऑफ़ i ना स्मॉलर देन या इक्वल टू आपके एरे ऑफ़ प्रीवियस है।",
+      "source": "caption",
+      "english_text": "You are not left with any choice. So what do you have to return? You can't get into it by doing anything. Return fun array end i + 1 end prv. Why are these written? Suppose when will the if fail? If then it will fail. If previous is -1 then if will run. Previous is not -1. Good. And the array of i is not even bigger than the array of previous. Meaning that somewhere your array of i is neither smaller than or equal to your array of previous."
+    },
+    {
+      "start_time": 1164.4,
+      "end_time": 1195.669,
+      "text": "जब ऐसा हो जाए तो आपके पास क्या बचता है करने को? कुछ नहीं। आपको आगे जाना पड़ेगा। आप इस एलिमेंट को तो जिंदगी में कभी नहीं ले सकते हैं। ऐसा हम किए और यहां पे बंद कर दिए। खत्म हो गया रिकर्शन। रिकर्शन को डीपी में करने के लिए क्या करते हैं? रिकर्शन को डीपी में करने के लिए क्या करते हैं? क्या चीजें बदल रही हैं? i बदल रहा है और प्रवफ बदल रहा है। i कितना हो सकता है? i मैक्सिमम n तक जा सकता है। प्रीवियस प्रीवियस भी तो इंडेक्स ही है ना भाई। इसका भी n तक जा सकता है। तो मेमोराइज करने के लिए क्या करेंगे? एक एरे",
+      "source": "caption",
+      "english_text": "When that happens, what is left for you to do? Nothing. You will have to go ahead. You can never take this element for granted in life. We did this and closed it here. Recursion is over. What to do to do recursion in DP? What to do to do recursion in DP? Are things changing? i is changing and pravaf is changing. How much can i be? i can go up to maximum n. Previous Previous is also an index, isn't it brother? This can also go up to n. So what should we do to memorize it? an array"
+    },
+    {
+      "start_time": 1195.679,
+      "end_time": 1230.47,
+      "text": "बनाएंगे। कितने बड़ा? n + 1 और n + 1 साइज का। उसके बाद क्या करेंगे? यहां पे उस एरे को या उस बीपी के वेक्टर को पास कर देंगे। यहां पे वेक्टर ऑफ़ ये हम इसलिए अब नहीं बता रहे हैं। मेन फंक्शन है क्योंकि ये बार-बार बार-बार आपकी बुद्धि में घुस चुका होगा। वेक्टर ऑफ इंट खताक खताक dp खत्म हो गई बात उसके बाद बेस केस को छोड़ दो इफ डीp ऑफ़ i और प्रव नॉट इक्वल टू -1 देन",
+      "source": "caption",
+      "english_text": "Will make. How big? Of size n + 1 and n + 1. What will you do after that? Here we will pass that array or vector of that BP. That's why we are not telling the vector of these here now. It is the main function because it must have entered your mind again and again. vector of int khatak khatak dp finished thing then leave the base case if dp of i and prv not equal to -1 then"
+    },
+    {
+      "start_time": 1230.48,
+      "end_time": 1258.63,
+      "text": "रिटर्न dp ऑफ़ i ऑफ़ प्रवफ वेरी गुड अगर ऐसा नहीं है तो आपको करना पड़ेगा लेकिन रिटर्न करने से पहले इसमें स्टोर करवा दीजिए रिटर्न करने से पहले इसमें स्टोर करवा दीजिए। dp ऑफ़ i ऑफ़ प्रव = मैक्स ऑफ़ C1 C2 एक और जगह रिटर्न है। यहां भी आपको स्टोर करवाना पड़ेगा। यहां भी आपको स्टोर करवाना पड़ेगा।",
+      "source": "caption",
+      "english_text": "Return dp of i of proof very good. If it is not so then you will have to do it but before returning, get it stored in it. Before returning, get it stored in it. dp of i of prv = max of C1 C2 Another place is return. Here also you will have to get it stored. Here also you will have to get it stored."
+    },
+    {
+      "start_time": 1258.64,
+      "end_time": 1290.789,
+      "text": "डीपी ऑफ़ i ऑफ़ प्रव = फन एरे Ni + 1 एंड प्रव। ये हो गया आपका मेमोरा आइज़। लेकिन इसमें एक बहुत बड़ा बहुत बड़ा गलती है। बहुत बड़ा गलती है। क्या है वो गलती? वीडियो पॉज करके 1 मिनट खुद सोचिए। नहीं तो हम आपको बता देते हैं। चलिए बता देते हैं। पॉज कर लिए होंगे सोच लिए होंगे। क्या गलती है इसमें? आप जब ये रिकर्शन स्टार्ट करेंगे ना। आप जब ये रिकर्शन स्टार्ट करेंगे तो कैसे करेंगे? हम क्या बोले हैं? आप मेन फंक्शन से जब इस रिकर्शन",
+      "source": "caption",
+      "english_text": "DP of i of prv = fun array ni + 1 end prv. This is your Memora Eyes. But there is a very big mistake in this. It is a big mistake. What is that mistake? Pause the video and think for yourself for a minute. Otherwise we will let you know. Let us tell. Must have paused and thought. What is wrong in this? When you start this recursion. When you start this recursion, how will you do it? What have we said? When you call this recursion from the main function"
+    },
+    {
+      "start_time": 1290.799,
+      "end_time": 1319.99,
+      "text": "को कॉल करेंगे आप ऐसे कॉल करेंगे। रिटर्न फन एरे एन i कहां से शुरू होगा? ज़ीरो से। और हम क्या बोले थे प्रीवियस क्या शुरू होगा शुरू में? प्रीवियस को हम लोग -1 करके शुरू करेंगे कि शुरू में कोई प्रीवियस नहीं है। अब इसका मतलब कि आपका प्रीवियस जो पास हुआ है वो क्या पास हुआ है? -1 -1 का मतलब कोई इंडेक्स नहीं है। उसको हम लोग यूज़ कर रहे हैं। लेकिन आप यहां तो डीपीआई और प्रीवियस कर रहे हैं।",
+      "source": "caption",
+      "english_text": "You will call like this. Where will return fun array n i start from? From zero. And what did we say previously, what will start in the beginning? We will start the previous with -1 so that initially there is no previous. Now this means that what you have passed in your previous exam has passed? -1 -1 means no index. We are using it. But here you are doing DPI and Previous."
+    },
+    {
+      "start_time": 1320.0,
+      "end_time": 1353.59,
+      "text": "मान लीजिए कहीं भी अगर प्रीवियस का वैल्यू बाय चांस कहीं पे -1 हुआ। आप इस एरे के इंडेक्स में ना -1 पास कर देंगे। सेगमेंटेशन फॉल्ट से क्रैश हो जाएगा। क्या हो जाएगा? क्रैश हो जाएगा या अनएक्सेक्टेड बिहेवियर आ जाएगा। इसको सॉल्व करने के लिए क्या करें? अब प्रीवियस का वैल्यू i का वैल्यू तो माइनस में नहीं जा सकता। वो तो मालूम है। प्रीवियस का वैल्यू हो सकता है -1 क्योंकि आप पास कर रहे हैं -1। इसके लिए क्या करें? इसके लिए हम लोग ये मान लेंगे। हम लोग ये मान लेंगे। क्या मान लेंगे कि आई और प्रेव जो फन में जो आई और",
+      "source": "caption",
+      "english_text": "Suppose somewhere if the value of the prior by chance is -1. You will pass na-1 to the index of this array. Segmentation fault will cause crash. What will happen? It will crash or cause unexpected behavior. What to do to solve this? Now the value of previous i cannot go into minus. That is known. The value of previous may be -1 because you are passing -1. What to do for this? For this we will accept this. We will accept this. Will you believe that I am more prev jo fun mein jo ai and"
+    },
+    {
+      "start_time": 1353.6,
+      "end_time": 1386.71,
+      "text": "प्रव है ना मान लीजिए हम लोग ये मान लेंगे कि फन आई प्रव इसका आंसर कहां पे मिलेगा हम लोग को या इसका आंसर हम लोग किस में लिखेंगे इसका आंसर हम लोग डीपीआई और प्रव +1 में लिखेंगे प्रव +1 में लिखेंगे मतलब कि मान लीजिए कभी ना कभी i = 0 और प्रव = -1 हुआ इसका आंसर हम लोग कहां पे लिखेंगे dp ऑफ़ 0 और ज़ीरो में। dp ऑफ़ ज़ीरो एंड ज़ीरो में। कभी ना कभी i = 4 और प्रव = 2 हो",
+      "source": "caption",
+      "english_text": "Suppose, we will assume that where will we get the answer to Fun i Prav or in what language will we write its answer, we will write its answer in DPI and Prav +1, we will write it in Prav +1, meaning that suppose sometimes i = 0 and Prav = -1, where will we write its answer, dp of 0 and in zero. In dp of zero and zero. Sometimes i = 4 and pv = 2"
+    },
+    {
+      "start_time": 1386.72,
+      "end_time": 1415.35,
+      "text": "गया। इसका आंसर कहां पे आपको मिलेगा? इसका आंसर आपको dp ऑफ़ 4 एंड थ्री में मिलेगा। हम लोग प्रव प्लस वन में आंसर लिख देंगे। क्यों? क्योंकि प्रव -1 हो सकता है। अगर आप सिंपल-सिंपल आई प्रव को आई प्रव लिखेंगे क्रैश हो जाएगा या गलत हो जाएगा। इसीलिए हम लोग ये मान लेंगे। देखिए डायरी क्या है? डायरी आप माने हैं ना कि आप डायरी में यहां पे लिखेंगे और यहां पे देख लेंगे। आपका मर्जी। अब मान लीजिए कि आप एक डायरी बना रहे हैं या कैलेंडर बना रहे हैं। अब नॉर्मली लोग क्या करते हैं?",
+      "source": "caption",
+      "english_text": "Gone. Where will you find the answer to this? You will get the answer to this in dp of 4 and three. We will write the answer in Prov Plus One. Why? Because Prav can be -1. If you simply write i prav to i prav it will crash or go wrong. That's why we will accept this. See what is a diary? Diary: You have agreed that you will write here in the diary and will see it here. Your wish. Now suppose you are making a diary or a calendar. Now what do normal people do?"
+    },
+    {
+      "start_time": 1415.36,
+      "end_time": 1449.99,
+      "text": "नॉर्मली लोग मंडे को जो होता है वो मंडे वाले पेज पे लिखते हैं। मंडे को जो होता है वो मंडे वाले पेज पे लिखते हैं। नॉर्मली ये करते हैं। आप मान लीजिए आपकी डायरी आपका मर्जी। आप मान लीजिए ना कि जो चीज मंडे को होगा ना उसको हम ट्यूसडे वाले पेज पे लिखेंगे। आपकी मर्जी भाई आपकी डायरी है। जो चीज ट्यूसडे को होगा उसको हम वेडनेसडे वाले पेज पर लिखेंगे। और जो चीज मान लीजिए फ्राइडे को होगा उसको हम सैटरडे वाले पेज पे लिखेंगे। आपकी मर्जी आप लिखिए। मान लीजिए कोई आपसे पूछता है कि अच्छा बताओ ट्यूसडे को क्या हुआ था? तो नॉर्मल आदमी तो ट्यूसडे को क्या हुआ था?",
+      "source": "caption",
+      "english_text": "Normally people write whatever happens on Monday on the Monday page. Whatever happens on Monday is written on the Monday page. Normally do this. You accept that your diary is your wish. Please accept that whatever happens on Monday, we will write it on Tuesday's page. Your wish brother is your diary. Whatever happens on Tuesday, we will write it on the Wednesday page. And let's say whatever happens on Friday, we will write it on the Saturday page. You write as per your wish. Suppose someone asks you, tell me what happened on Tuesday? So normal man, what happened on Tuesday?"
+    },
+    {
+      "start_time": 1450.0,
+      "end_time": 1483.35,
+      "text": "वो ट्यूसडे वाले पेज से देखेगा। लेकिन आप क्योंकि उल्टा कर रहे थे मतलब आप कुछ अलग कर रहे थे। आप क्या करेंगे? वेडनेसडे का पेज खोल के उसको बता देंगे। कोई आपसे पूछा है कि अच्छा जी एक बात बताओ सैटरडे को क्या हुआ था? आप क्या करेंगे? संडे का पेज खोल लेंगे अपनी डायरी में और उसको पढ़ के सुना देंगे। आपकी मर्जी है। आपका रूल आपका आपका लाइफ आपका रूल। इसीलिए हम लोग एक चेंज इसमें करना चाहेंगे। क्या चेंज करना चाहेंगे? यहां पे अगर प्रव को प्रव प्लस वन कर देंगे। क्या कर देंगे? प्रव + 1 खत्म हो गया। हर जगह आपको यही करना है।",
+      "source": "caption",
+      "english_text": "He will see it from Tuesday's page. But because you were doing the opposite, it meant you were doing something different. What would you do? Will open Wednesday's page and tell him. Someone has asked you, 'Ok sir, tell me one thing, what happened on Saturday?' What would you do? We will open the Sunday page in our diary and read it out. It's your choice. Your rule, your life, your rule. That is why we would like to make a change in it. What would you like to change? Here if we change Prav to Prav plus one. What will you do? Prav+1 is over. This is what you have to do everywhere."
+    },
+    {
+      "start_time": 1483.36,
+      "end_time": 1518.23,
+      "text": "यहां पे तो आप आंसर खोज रहे हैं लेकिन जहां पे आप आंसर लिख रहे हैं वहां भी तो चेंज करना पड़ेगा। अगर आप लिखेंगे अपने रूल से तभी तो खोजेंगे अपने रूल से। आप लिख दिए नॉर्मली आप खोज रहे हैं किसी और रूल से तो अलग हो जाएगा। तो जहां-जहां लिखने का काम है कहां-कहां काम है? यहां पे और यहां पे ये देखिए। ये आप एक मेमोराइजेशन का कोड लिख चुके हैं। ये आप क्या लिख चुके हैं? मेमोराइजेशन का कोड आप कर चुके हैं। क्या चेंज हुआ? हम किस हिसाब से लिखते हैं वो आपकी मर्जी है। आप चाहे ना तो प्रीवियस का आंसर आप प्रीवियस प्लस 10 में लिख दीजिए। आपकी एकदम आपकी मर्जी है। क्योंकि आप लिख रहे हैं। आप खोज रहे",
+      "source": "caption",
+      "english_text": "Here you are searching for the answer but the place where you are writing the answer will also have to be changed. If you write according to your rules then only you will search according to your rules. If you have written normally that you are searching then it will be different according to some other rule. So wherever there is work to write, where is the work? See this here and here. You have written a memorization code. What have you written? You have completed the memorization code. What changed? How we write is your choice. If you want then write the answer of previous question in previous plus 10. It is absolutely your choice. Because you are writing. you are looking for"
+    },
+    {
+      "start_time": 1518.24,
+      "end_time": 1551.2,
+      "text": "हैं तो आपको जो मन करता है आप वो कर सकते हैं। तो इन चीजों का ध्यान रखिएगा। इसीलिए हम बोले कि ये सब चीज रटने वाला नहीं है कि हमेशा आई का आंसर आई नहीं आपकी मर्जी है। आप कैसे भी लिखिए। तो ये बहुत इंपॉर्टेंट चीज थी समझने के लिए। इसलिए हम इस पे ज्यादा जोर दिए हैं। तो ये आप मेमोराइजेशन कर चुके हैं। जो हम लोग शुरू में बात किए थे ना स्टेजेस का कहां बात किए थे? जी कहां चला गया? हां, अभी आप यह कर चुके हैं। कहां गया? डन। डन। कल ये तीनों हम लोग करेंगे। तो कल का लेक्चर मिस मत कीजिएगा। और कल का लेक्चर देखने से पहले ये पूरा समझ के जाइएगा। चलिए मिलते",
+      "source": "caption",
+      "english_text": "If so, you can do whatever you feel like. So keep these things in mind. That's why we said that all this stuff is not meant to be memorized, the answer to 'Aai' is always 'No', it is your choice. Whatever you write, So this was a very important thing to understand. That's why we have laid more emphasis on this. So you have done this memorization. Where did we talk about the stages that we talked about in the beginning? Where did you go? Yes, you have done it now. where did he go? Dunn. Dunn. We will do all three of these tomorrow. So don't miss tomorrow's lecture. And before watching tomorrow's lecture, understand this completely. let's meet"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

@@ -1,0 +1,373 @@
+{
+  "video_id": "JUV-Hdtuzsw",
+  "video_title": "DSA PATTERNS Episode 23 | Kadane’s Algorithm: Most Important Interview Question",
+  "video_number": 25,
+  "chunks": [
+    {
+      "start_time": 1.67,
+      "end_time": 27.75,
+      "text": "अगर आप लोग गलती से इस चैनल पे आ गए बहुत-बहुत बधाई और जो लोग मेरे स्टूडेंट्स हैं उनको तो बहुत-बहुत बधाई है ही। चलिए आज डीएसए पैटर्न्स में क्या करेंगे? केडेंस केन्स ऑलमोस्ट खत्म ही कर देंगे। बस रिवीज़न बचेगा। कल स्टार्ट हुआ था, कल या परसों स्टार्ट हुआ था। आज खत्म हो जाएगा। कैसे खत्म हो जाएगा? केडेंस एल्गोरिदम नहीं रटना है। पैटर्न वाइज़ पढ़ना है ताकि नया क्वेश्चन बने। सेम क्वेश्चन को रट के कुछ फायदा नहीं है। तीन सवाल करेंगे। तीनों बवाल रहेगा। कल तीन हुआ था, आज तीन होगा। छह सवाल में पूरा केडेंस आपको क्लियर हो जाएगा। ऐसा कोई केडेंस का क्वेश्चन नहीं होगा जो आपसे ना बन पाए।",
+      "source": "caption",
+      "english_text": "If you have come to this channel by mistake, many congratulations and many congratulations to those who are my students. What will we do in DSA patterns today? Cadence Kanes will almost finish. Only revision will be left. It started yesterday, it started yesterday or the day before yesterday. It will end today. How will it end? Cadence algorithm is not memorization. Have to read pattern wise so that new questions are formed. There is no benefit in memorizing the same questions. Will ask three questions. There will be chaos among all three. It was three yesterday, it will be three today. The entire cadence will be clear to you in six questions. There will not be any cadence question which you cannot solve."
+    },
+    {
+      "start_time": 27.76,
+      "end_time": 61.67,
+      "text": "सेम टेंपलेट यूज़ करेंगे। ऐसा कोई हम नया बात आज नहीं बता देंगे जो कल या परसों नहीं बताए थे। सेम टेंपलेट जो कल बताए थे बेस्ट एंडिंग वाला बताए थे। मिनिमम, मैक्सिमम, प्रोडक्ट तीनों में बताए थे। बेस्ट एंडिंग होता क्या है? बेस्ट एंडिंग शिफ्ट कैसे करता है? रिजल्ट में कैसे स्टोर होता है? सेम बातों को यूज़ करके क्वेश्चन सॉल्व होगा। कोई नया बात नहीं बताएंगे। ये वाला जो क्वेश्चन है ना मैक्सिमम विद वन डिलीशन, ये एक डिस्क्लेमर दे रहे हैं। इसको पूरा देखिएगा। ये क्वेश्चन थोड़ा कॉम्प्लेक्स है। हम बार-बार बोलेंगे वीडियो में कि कॉम्प्लेक्स है लेकिन पूरा सुनेंगे तो समझ में आएगा। और यह अगर समझ में नहीं आएगा ना, तो इसको रटते रह जाइएगा। रट के फिर भूल जाइएगा एक हफ्ते में। यह अगर आप समझ लिए तो यह",
+      "source": "caption",
+      "english_text": "Will use the same template. We will not tell you anything new today that was not told yesterday or the day before yesterday. Same template which was mentioned yesterday with the best ending. Minimum, maximum, product were mentioned in all three. What is the best ending? How does the best ending shift? How is it stored in the result? The question will be solved using the same things. Will not tell anything new. This question is maximum with one deletion, they are giving a disclaimer. Will see it completely. This question is a bit complex. We will say again and again in the video that it is complex but you will understand if you listen to it completely. And if you don't understand this, then you will keep memorizing it. Memorize it and forget it in a week. If you understand this then"
+    },
+    {
+      "start_time": 61.68,
+      "end_time": 95.51,
+      "text": "जिंदगी भर की चीज़ हो जाएगी कि समझ लिए। ठीक है? रटिएगा मत। बहुत मेहनत लगेगी कि बहुत मेहनत लगी है कि इसको सिंपल करके कैसे समझा सकें आप लोग को, है ना? तो देखिएगा। अह बाकि आईपैड नोट्स, कोड लिंक, पैटर्न लिंक सब आपको डिस्क्रिप्शन में कहीं ना कहीं मिलेगा। लाइक कर दीजिए और शुरू कर देते हैं जल्दी। देखिए जो पहला क्वेश्चन है ना, पहला क्वेश्चन कल के क्वेश्चन के बहुत 99% सेम है एक ट्विस्ट के। कल हम लोग एक क्वेश्चन क्या किए थे जिसका नाम था मैक्स सब एरे है ना अच्छा इस क्वेश्चन में सेम है मैक्स सब एरे है लेकिन लेकिन एक छोटा सा ट्विस्ट है वन डिलीशन अलाउड है क्या अलाउड है वन डिलीशन",
+      "source": "caption",
+      "english_text": "It will be a lifetime thing if you understand it. Ok? Don't memorize. It will take a lot of hard work to explain it to you in a simple way, isn't it? So we will see. Uh, you will find the rest of the iPad notes, code links, pattern links somewhere in the description. Like it and let's start soon. Look, the first question is 99% similar to yesterday's question with a twist. Yesterday we did a question whose name was Max sub array hai na ok in this question it is same max sub array hai but but there is a small twist one deletion is allowed is one deletion allowed"
+    },
+    {
+      "start_time": 95.52,
+      "end_time": 129.35,
+      "text": "अलाउड है इसका मतलब क्या है अगर हम लोग कल के क्वेश्चन पे देखें इस एरे में मैक्सिमम सम सब एरे क्या होगा अगर आप कडेन यूज़ करते हैं तो आपको पता चलेगा कि जो ये वाला सब एरे है जो ये वाला सब एरे है 0 + 3 = 3 आपका मैक्सिमम सम सब एरे होगा वेरी गुड लेकिन अब आपको ये क्या बोलता है क्वेश्चन कि आप वही काम करिए जो आप कर रहे थे। है ना? एक सब एरे बनाइए जिसका सम अच्छा हो वो दे दीजिए। लेकिन सब एरे बनाने के प्रोसेस में आपके पास एक शक्ति है, ऑप्शन है, पावर है जो भी इसको कहना चाहिए कहिए। आप एक एलिमेंट को एक एलिमेंट को इग्नोर कर सकते",
+      "source": "caption",
+      "english_text": "Okay, what does it mean if we look at yesterday's question, what will be the maximum sum sub array in this array? If you use Kaden then you will know that this sub array is 0 + 3 = 3. Your maximum sum sub array will be very good but now what does this question tell you that you should do the same thing which you were doing. Isn't it? Make a sub-array and give the one whose sum is good. But in the process of making sub array, you have a power, an option, a power, whatever you want to call it. You can ignore one element by another"
+    },
+    {
+      "start_time": 129.36,
+      "end_time": 162.63,
+      "text": "हैं। क्या कर सकते हैं? इग्नोर या तो डिलीट। मतलब उसका सम काउंट नहीं कर सकते हैं। ये खास करके नेगेटिव नंबर के लिए ज्यादा फायदा करेगा कि मान लीजिए कोई नेगेटिव एलिमेंट आ गया। आपको लग रहा है कि मेरा पूरा सब एरे अच्छा चल रहा था। बीच में एक नेगेटिव एलिमेंट आके पूरा खराब कर दे रहा है। तो आप इसको इग्नोर कर दीजिए। फॉर एग्जांपल अगर आप ये पूरा सब एरे ले लेते हैं 1 -2 0 और 3 अब वैसे तो इसका सम इसका टोटल सम क्या आता है? 1 - 2 - 1 और इसका आता है टू। अब चूंकि आपके पास पावर है तो अब इस नेगेटिव नंबर को इग्नोर कर दीजिए। इग्नोर कर दीजिए। इसको मत काउंट करिए। अब इसका सम क्या आएगा? 1 + 0 + 3 जो",
+      "source": "caption",
+      "english_text": "Are. What can be done? Ignore or delete. Meaning its sum cannot be counted. This will be especially beneficial for negative numbers, let's say a negative element has arrived. You see, my whole sub-array was going well. A negative element coming in between is spoiling the whole thing. So you ignore it. For example, if you take this entire sub array 1 -2 0 and 3, now what is its total sum? 1 - 2 - 1 and it comes to two. Now that you have the power, ignore this negative number. Ignore it. Don't count it out. Now what will come of it? 1 + 0 + 3 which"
+    },
+    {
+      "start_time": 162.64,
+      "end_time": 196.79,
+      "text": "कि है फोर। तो आपको ये फोर रिटर्न कर देना आंसर में। देखिए आपके पास ऑप्शन है ध्यान से। इसको ऐसे मत करिए कि आपको करना ही करना है डिलीट। ना ना करना ही करना नहीं है। ऑप्शन है मन करे तो कर लीजिए। अगर सारा पॉजिटिव है तो आप क्यों करिएगा। आपको लग रहा है कि जरूरत है तो कर लीजिए। ठीक है? चलिए। कल के टेंप्लेट से इसको सॉल्व करेंगे। कल का टेम्प्लेट क्या बोलता था? सबसे पहले तो बेस्ट डिलीट बेस्ट एंडिंग। बेस्ट एंडिंग को क्या करो? क्लियर डिफाइन और क्लियर करो। डिफाइन और क्लियर का क्या मतलब था? कि मन में सोच लो कि बेस्ट एंडिंग सिग्निफाई क्या करता है? बेस्ट एंडिंग वैसे तो नॉर्मली क्या सिग्निफाई",
+      "source": "caption",
+      "english_text": "That is four. So you should return these four in the answer. Look carefully, you have options. Don't do it like you have to delete it. To say no is not to do. There is an option, if you feel like doing it then do it. If everything is positive then why should you do it? If you feel there is a need then do it. Ok? Let go. Will solve this with tomorrow's template. What did yesterday's template say? First of all, best delete, best ending. What to do with the best ending? Clear define and clear. What was the point of define and clear? Think about it in your mind, what does the best ending signify? Best ending, normally, what does it mean?"
+    },
+    {
+      "start_time": 196.8,
+      "end_time": 230.789,
+      "text": "करता था मैक्सिमम सम में कि बेस्ट सम पॉसिबल पॉसिबल एट एनी सब एरे एनी सब एरे एनी सब एरे एंडिंग एट एंडिंग एट इंडेक्स आई इंडेक्स आई यही हम लोग करते थे हर इंडेक्स आई पे देख लेंगे कि वो इंडेक्स आई पे कितने सब एरे एंड हो रहे हैं और उसमें बेस्ट रिजल्ट क्या है और उसका हम लोग देख लेंगे ऐसे हर आई पे देखेंगे हमको आंसर मिल जाएगा तो बेस्ट एंडिंग का ऊपर ऊपर मोटा मोटा-मोटा मतलब तो यही रहता था और यही रहेगा जिंदगी भर। ठीक है? बेस्ट का मतलब क्वेश्चन के हिसाब से बदलता था। है ना? बेस्ट एंडिंग",
+      "source": "caption",
+      "english_text": "Used to be in maximum sum that best sum possible possible at any sub array any sub array any sub array ending at ending at index eye index eye, this is what we used to do on every index eye, we will see how many sub arrays are ending at that index eye and what is the best result in that and we will see that on every eye, we will get the answer, so the rough meaning of best ending was the same and it will remain like this for the whole life. Ok? The meaning of best varied depending on the question. Isn't it? best ending"
+    },
+    {
+      "start_time": 230.799,
+      "end_time": 265.35,
+      "text": "का मतलब तो यही रहेगा। थ्योरी में यही मतलब है लेकिन बेस्ट का मतलब बदल जाएगा। अच्छा अब देखिए अब देखिए। मैक्सिमम समारे में आपके पास कितने बेस्ट एंडिंग पॉसिबल थे? सिर्फ एक पॉसिबल था। क्यों? क्योंकि उसमें कोई आपके पास ऑप्शन या तो कोई आपको पावर नहीं दिया गया था। आपको बस एक बेस्ट एंडिंग चाहिए होता था जो कि मैक्सिमम सम देते अभी तक पीछे का और उसको हम लोग यूज़ करके अपने में यूज़ कर लें तो एक ही पॉसिबल था। यहां पे आपके पास ऑप्शन है। यहां पे आपके पास ऑप्शन है ये ऑप्शन आपको कौन दिया है? ऑप्शन आपको क्वेश्चन दिया है कि आप डिलीट कर सकते हैं। इसके कारण कितने तरीके का किसी भी इंडेक्स पे किसी भी इंडेक्स आई",
+      "source": "caption",
+      "english_text": "The meaning will remain the same. This is the meaning in theory but the meaning of best will change. Okay now look now look. How many best ending possibilities did you have in Maximum Samaare? There was only one possible. Why? Because in that you neither had any option nor any power was given to you. All you needed was a best ending which would give the maximum result till now and if we could use it for ourselves then only one thing was possible. Here you have option. Here you have an option. Who gave you this option? You have been given the option to delete the question. Due to this, in how many ways can any index come on any index?"
+    },
+    {
+      "start_time": 265.36,
+      "end_time": 299.43,
+      "text": "पे मान लीजिए इस पे बहुत सारा सवेरे खत्म हो रहा है। कितना आंसर पॉसिबल है और कितना बेस्ट तरीके का आंसर पॉसिबल है। एक तो पॉसिबल है कि आप कोई डिलीशन ना करें। कोई डिलीशन ना करें। मतलब अभी तक जो आ रहे हैं आप कुछ डिलीट मत करिए। कुछ डिलीट करने का जरूरत नहीं है। सबको पढ़ेंगे। अच्छा! कोई डिलीशन ना करिए। एक तो ये आंसर पॉसिबल है। एक और आंसर क्या पॉसिबल है? एग्जैक्टली वन डिलीशन वन डिलीशन कर दीजिए। क्या करिए? वन डिलीशन कर दीजिए। एक ये पॉसिबल है, एक ये पॉसिबल है। इसके अलावा कुछ पॉसिबल नहीं है। मैक्सिमम सम में केवल एक पॉसिबल था कि",
+      "source": "caption",
+      "english_text": "Let us assume that a lot of morning is being spent on this. How many answers are possible and how many best answers are possible. One possibility is that you may not make any deletions. Do not make any deletions. Meaning, don't delete anything that is coming till now. There is no need to delete anything. Will read everyone. Good! Do not do any deletion. Firstly, this answer is possible. Is another answer possible? Make exactly one deletion, one deletion. What to do? Make one deletion. One is possible, one is possible. Apart from this nothing is possible. There was only one possible in the maximum sum that"
+    },
+    {
+      "start_time": 299.44,
+      "end_time": 330.31,
+      "text": "भाई जो मैक्सिमम सम है वही लेना है। इसके अलावा डिलीशन एडिशन का तो कुछ है ही नहीं। तो एक लेना है। यहां पे दो लेना पड़ जाएगा क्योंकि आपके पास ऑप्शन दिया है ना क्वेश्चन में कि आप या तो कोई डिलीशन ना करिए भाई। या तो नॉर्मल जैसे कडेन चलाते थे वैसे ही चलाइए। या तो आप एक डिलीशन कर लीजिए। कहीं भी एक डिलीशन कर लीजिए और आंसर दे दीजिए। हो सकता है ये आईना डिलीट हुआ हो। इसके पहले का तीन एलिमेंट वाला कुछ डिलीट हो गया हो लेकिन सब एरे में एक ही डिलीशन है। अच्छा। अब आइए। अब जबकि हम लोग बेस्ट एंडिंग समझ जाते थे कि कितना होगा, कैसा होगा, कहां का होगा? उसके बाद हम लोग क्या करते थे? उसके बाद हम लोग इसको लिखते थे इनिशियल वैल्यूज लिखते थे।",
+      "source": "caption",
+      "english_text": "Brother, you have to take only the maximum amount. Apart from this, there is nothing about deletion and addition. So have to take one. Here you will have to take two because you have the option given in the question that you can either do no deletion, brother. Or run it normally like you used to run it. Either you do a deletion. Make a deletion anywhere and give the answer. This mirror may have been deleted. Something with three elements before this may have been deleted but there is only one deletion in the sub array. Good. Come now. Now that we understood the best ending, how much would it be, how would it be, where would it be? What did we do after that? After that we used to write it as initial values."
+    },
+    {
+      "start_time": 330.32,
+      "end_time": 362.07,
+      "text": "हम लोग सोचते थे कि अगर एरे में एक ही एलिमेंट होता। कितना एलिमेंट होता? एक ही एलिमेंट। तो आपका बेस्टिंग क्या होता? तो देखिए। इसमें हम लोग दो तरीके का वेरिएबल नाम सोच लेते हैं कि नो डिलीशन। नो डिलीट। अब बताइए क्या अगर नो डिलीट का क्या मतलब है? कि अभी तक कुछ डिलीट नहीं हुआ है। कुछ डिलीट नहीं हुआ है। अच्छा तो अगर कुछ डिलीट नहीं हुआ है और इसका वैल्यू मान लीजिए वन है कुछ भी है। तो क्या होगा आपका बेस्ट आंसर? पॉसिबल। वन ही होगा ना भाई। आपका i = 0 पे एंडिंग वाला सब एरे कितना हो सकता है? एक हो सकता है। उसमें एक ही एलिमेंट है। आप बोल रहे हैं अभी तक कुछ डिलीट नहीं हुआ है। तो यही होगा आंसर। वही",
+      "source": "caption",
+      "english_text": "We used to think that if there was only one element in the array. How many elements would there be? Same element. So what would have been your besting? So see. In this we think of two types of variable names: no deletion. No delete. Now tell me what if no delete means? That nothing has been deleted yet. Nothing has been deleted. Well, if nothing has been deleted and its value is say one or whatever. So what will be your best answer? Possible. It must be a forest, isn't it brother? How big can your sub array be, ending at i = 0? could be the one. There is only one element in it. You are saying that nothing has been deleted yet. So this will be the answer. the same"
+    },
+    {
+      "start_time": 362.08,
+      "end_time": 396.309,
+      "text": "होगा। वेरी गुड। वन डिलीट क्या होगा? वन डिलीट क्या होगा? वन डिलीट देखिए सेंस नहीं बना रहा है। क्यों? क्योंकि हम अभी बोले कि एरे में एक ही एलिमेंट है। कितने सब एरे पॉसिबल है इस एक एलिमेंट पे एंडिंग वाले एक सब एरे पॉसिबल है जिसमें एक ही एलिमेंट रहेगा। अब बोल रहे हैं कि उसमें से भी हम वन डिलीट कर दिए तो आपका एरे तो एम्प्टी हो जाएगा। आपका जो सब एरे वो तो एम्प्टी हो जाएगा। वो अलाउड है नहीं। वो कैटन आपको अलाउ करता नहीं है। तो ये नॉनसेंसिकल बात लग रही है। तो इसमें कोई वैल्यू देने का मेरा मन नहीं है। तो चलिए इसको आई एन टी मीन लिख लीजिए। कुछ भी लिख लीजिए। मतलब ये कुछ भी नॉनसेंसिकल इलॉजिकल वैल्यू है कि भाई एक एलिमेंट है उसको डिलीट कर देंगे तो क्या होगा? कुछ नहीं",
+      "source": "caption",
+      "english_text": "Will happen. very good. What will happen one delete? What will happen one delete? See one delete is not making sense. Why? Because we just said that there is only one element in the array. How many sub arrays are possible? One sub array ending at one element is possible which will have only one element. Now they are saying that if we delete one from that too then your array will become empty. All your array will become empty. It is not loud. That catan doesn't allow you. So this seems like a nonsensical thing. So I don't feel like giving any value to it. So let's write it as INT Means. Write anything. Meaning, it has some non-sensical logical value that brother, it is an element, what will happen if we delete it? nothing"
+    },
+    {
+      "start_time": 396.319,
+      "end_time": 426.07,
+      "text": "होगा भाई ये तो हवा हवा हो जाएगा ना। चलिए रिजल्ट रिजल्ट रिजल्ट क्या होता था? रिजल्ट हमेशा शुरू में बेस्ट एंडिंग के बराबर ही रहता था। इसमें आपके पास दो तरीके के बेस्ट एंडिंग है। एक तो आप बोल रहे हैं कि ये नॉनसेंसिकल है, इलॉजिकल है। और एक में आप बोल रहे हैं कि जिसमें एरे ऑफ़ ज़ीरो की वैल्यू है। तो रिजल्ट भी वन हो जाएगा। रिजल्ट भी वन हो जाएगा या फिर जो भी आपका एरे ऑफ़ ज़ीरो है वो हो जाएगा। तो ये आपने इनिशियल कंडीशन डिफाइन कर लिया। वेरी गुड। आइए आइए। अब अगला स्टेप क्या देखना था? बेस्ट एंडिंग चेंज कैसे होगा?",
+      "source": "caption",
+      "english_text": "It will happen brother, it will happen easily. Come on, what was the result result result? The result was always equal to the best ending in the beginning. In this you have two types of best endings. Firstly, you are saying that this is nonsensical, illogical. And in one you are saying that it has the value of array of zero. So the result will also be one. The result will also be one or whatever your array of zeros is. So you have defined the initial condition. very good. Come come come. Now what was the next step to be seen? How would the best ending change happen?"
+    },
+    {
+      "start_time": 426.08,
+      "end_time": 459.43,
+      "text": "बेस्ट एंडिंग चेंज कैसे होगा? हर आई के साथ और ये सबसे इंपॉर्टेंट स्टेप है। ये सबसे इंपॉर्टेंट स्टेप है इस एल्गोरिदम या पैटर्न का। बेस्ट एंडिंग चेंज कैसे होगा? ये इस क्वेश्चन का आंसर आपको मिल जाता है तो आप 90% क्वेश्चन सॉल्व कर लेते हैं। आइए। मान लीजिए ये एक वन है -2 है 0 है 3 0 1 2 3 अब जब i को हम लोग वन से लेके n तक चलाते हैं तो हमको दोनों बेस्ट एंडिंग बदलना पड़ेगा क्योंकि बेस्ट स्टैंडिंग बदलना पड़ेगा बेस्ट एंडिंग कितने टाइप का है दो टाइप का है तो दोनों बदलना पड़ेगा प्रोडक्ट में भी दोनों बदल रहे थे प्रोडक्ट में भी दो टाइप का था ना एक मीन",
+      "source": "caption",
+      "english_text": "How would the best ending change happen? With each eye and this is the most important step. This is the most important step of this algorithm or pattern. How would the best ending change happen? If you get the answer to this question then you will solve 90% of the question. Come. Suppose this is one - 2 is 0 is 3 0 1 2 3 Now when we move i from one to n then we will have to change both the best endings because the best standing will have to be changed. How many types of best endings are there?"
+    },
+    {
+      "start_time": 459.44,
+      "end_time": 492.23,
+      "text": "था एक मैक्स था तो दोनों बदलना पड़ता है ठीक एक आपके पास क्या है एक आपके पास कौन सा एंडिंग वाला है नो डिलीट अच्छा एक आपके पास क्या है? वन डिलीट। वन डिलीट। दो तरीके के बेस्ट एंडिंग हैं। अच्छा। ये तो क्या है कि नॉर्मल है। ये तो नॉर्मल अभी तक हम लोग जो कैडन पढ़ रहे थे वही है। तो ये इसमें कितना ऑप्शन होता था? इसमें दो ऑप्शन होता था कि या तो एरे ऑफ़ आई इस नो डिलीट वाले के साथ मिल जाए और अपना बना अलग बना ले। या तो अपना अलग से एक बना ले। सिर्फ एरे ऑफ़ आई रख ले। मतलब",
+      "source": "caption",
+      "english_text": "One was max so both have to be changed ok one what do you have one what ending do you have no delete ok one what do you have? One delete. One delete. There are two types of best endings. Good. Is this normal? This is normal, the cadence we were studying till now is the same. So how much option was there in this? There were two options in this, either merge the array of I is with no delete one or create your own separate one. Or make one of your own. Just keep the array of eyes. meaning"
+    },
+    {
+      "start_time": 492.24,
+      "end_time": 524.389,
+      "text": "या तो अभी तक जो पीछे चल रहा है नो डिलीट वाला, उसमें हम जा के मिल जाते हैं। या तो हम अपना बना लेते हैं। क्योंकि नो डिलीट क्या बोलता है? नो डिलीट मतलब एक भी डिलीशन नहीं। एरे आई पे एंड होने वाले सारे सब एरे का मैक्सिमम सम जिसमें एक भी डिलीट ना हो। तो ये तो नॉर्मल केन है कि या तो या तो तुम नो डिलीट में मिल जाओ। या तो नो डिलीट में मिल जाओ और एक सम बना लो या फिर अपना एक अलग सम बना लो। इन दोनों में जो भी मैक्स होगा उसकी वैल्यू दे दो नो डिलीट में। उसकी वैल्यू कहां दे दो? नो डिलीट में। उसकी वैल्यू कहां दे दो? नो डिलीट में। तो वेरी गुड। ये तो सिंपल है।",
+      "source": "caption",
+      "english_text": "Either we go and join the no-delete one which is still running behind. Or we make our own. Because what does no delete say? No delete means not even a single deletion. The maximum sum of all sub-arrays in the array i.e. end in which none is deleted. So this is normal can be either or you get no delete. Either join No Delete and create a single group or create your own separate group. Whichever is maximum among these two, give its value in no delete. Where should you give its value? In no delete. Where should you give its value? In no delete. So very good. This is simple."
+    },
+    {
+      "start_time": 524.399,
+      "end_time": 558.55,
+      "text": "यहां पे ट्विस्ट है। ये ये समझना मुश्किल है। वन डिलीट समझना मुश्किल है। अब देखिए। वन डिलीट का क्या मतलब है? वन डिलीट का मतलब क्या है? कि एक डिलीट होना चाहिए। एक डिलीट होना चाहिए। होना ही होना चाहिए। आई पे एंडिंग होने वाले सारे सब एरे को ले लो। कोई प्रॉब्लम नहीं। लेकिन उसमें एक डिलीट होना ही होना चाहिए। अब इसमें भी ना दो तरीके का ऑप्शन हो जाता है। अब देखिए इसको नेक्स्ट पेज पे समझते हैं। इसको ध्यान से समझिएगा। ये नहीं समझ में आएगा तो नहीं समझ पाएंगे। फिर यही आप रटते रह जाएंगे। ऐसे रटना ठीक नहीं है। वन डिलीट का क्या मतलब है? है कि एक डिलीट होना ही",
+      "source": "caption",
+      "english_text": "Here's the twist. This is difficult to understand. One delete is difficult to understand. watch now. What does one delete mean? What does one delete mean? That should be a delete. There should be a deletion. It must happen. Take all sub arrays ending in i. No problem. But there must be a deletion in it. Now in this also there is an option of two ways. Now let us understand it on the next page. Understand this carefully. If you don't understand this then you won't be able to understand. Then you will keep memorizing this. It is not right to cram like this. What does one delete mean? that's bound to be a deletion"
+    },
+    {
+      "start_time": 558.56,
+      "end_time": 591.75,
+      "text": "चाहिए। अब इसमें इसमें देखिए इसमें दो केसेस इसमें भी दो केसेस हो सकता है कि एक डिलीट होना चाहिए। वेरी गुड। हम बोल रहे हैं कि एक डिलीट होना चाहिए। अब जबकि आप इंडेक्स आई पे हैं जब आप इंडेक्स आई पे हैं तो या तो हो सकता है कि पहले से पहले से कोई डिलीट हो चुका हो। पहले से कोई डिलीट हो चुका हो। हो चुका हो। पहले से कोई डिलीट हो चुका हो। ठीक है? या तो आप एरे ऑफ़ i को ही डिलीट करना चाहते हैं। एरे ऑफ़ आई को ही क्या करना चाहते हैं? डिलीट करना चाहते हैं। डिलीट करना चाहते हैं।",
+      "source": "caption",
+      "english_text": "Should. Now look at this, there are two cases in this, there may be two cases in this too, one should be deleted. very good. We are saying that there should be a deletion. Now when you are on the index page, when you are on the index page, it is possible that something may already have been deleted. Someone may have already been deleted. It's done. Someone may have already been deleted. Ok? Either you want to delete the array of i only. What do you want to do with Array of I? Want to delete. Want to delete."
+    },
+    {
+      "start_time": 591.76,
+      "end_time": 625.59,
+      "text": "चाहते हैं। दोनों एक साथ नहीं हो सकता। ऐसा नहीं होगा कि आप पहले वाले का भी वो आंसर पकड़ लीजिए जिसमें ये डिलीट हो चुका हो और आप एरे ऑफ़ आई को भी डिलीट कर दीजिए। तो दो डिलीशन हो जाएगा। तो अगर इंडेक्स आई के पास आपके पास दो तरीके का चॉइस है। तो पहले से अगर कोई डिलीट हो चुका हो तो इसके पास एक ही ऑप्शन है कि इसमें मिलने का। क्या करने का? मिलने का। अगर पहले से कोई डिलीट नहीं हो चुका हो तो ये खुद को डिलीट कर सकता है। तो अगर इसको खुद से डिलीट करना है। अगर इसको खुद को ही डिलीट करने का मन है, इसको मन है कि हम ना लें तो इसको कौन सा बेस्ट एंडिंग चाहिए होगा पीछे वाला? क्या इसको नो डिलीट वाला चाहिए",
+      "source": "caption",
+      "english_text": "want. Both cannot happen together. It will not happen that you get the answer of the first one in which it has been deleted and you also delete the array of I. So there will be two deletions. So if you have Index I you have a choice of two ways. So if someone has already been deleted, then he has only one option to join it. What to do? To meet. If something has not already been deleted, it can delete itself. So if you want to delete it yourself. If it wants to delete itself, if it wants us not to take it, then what best ending would it want for the one behind? Does it need no delete?"
+    },
+    {
+      "start_time": 625.6,
+      "end_time": 658.87,
+      "text": "होगा? या तो इसको वन डिलीट वाला चाहिए होगा। फिर से क्वेश्चन हम बोल रहे हैं। अगर एरे ऑफ़ आई को मन है कि इस बार हम ही डिलीट हो जाते हैं। तो इसको पीछे से कौन सा बेस एंडिंग चाहिए होगा? प्रोडक्ट वाला क्वेश्चन याद कीजिए। नेगेटिव नंबर को कौन सा बेस्ट एंडिंग चाहिए था? उसको मिनिमम बेस्ट चाहिए था। पॉजिटिव वाले को मैक्सिमम बेस्ट चाहिए था। तो एरे ऑफ़ आई को अगर खुद को डिलीट करने का मन है, तो उसको कौन सा बेस्ट चाहिए? उसको ये नो डिलीट वाला चाहिए पीछे से। क्योंकि अगर आप वन डिलीट वाला लीजिएगा पीछे से तो वन डिलीट पीछे वाले का मतलब ही है कि पीछे तक एक डिलीट हो चुका",
+      "source": "caption",
+      "english_text": "Will it happen? Either it needs one delete one. We are asking questions again. If the Array of I wants to, this time we are the ones who get deleted. So which base ending should it require from behind? Remember the product question. What was the best ending Negative Number wanted? He wanted minimum best. The positive one wanted maximum best. So if Array of I wants to delete itself, then which one does it want best? He wants this no delete one from behind. Because if you take the one deleted from behind, then the one deleted from behind means that one deletion has been done till the back."
+    },
+    {
+      "start_time": 658.88,
+      "end_time": 692.79,
+      "text": "है। और आप एरे ऑफ़ आई को भी डिलीट कर देंगे तो दो डिलीट हो जाएगा। लेकिन पीछे वाले नो डिलीट को अगर हम ले लें जो पहले था जो अभी नहीं जो पहले वाला था और हम एरे ऑफ़ आई को डिलीट कर दें तो हमको हम डिलीट कर सकते हैं। वेरी गुड। अच्छा अगर आप पीछे वाले वन डिलीट को लेते हैं तो इसका मतलब क्या है? अगर आप पीछे वाले वन डिलीट को लेते हैं तो इसके मतलब है कि या तो आपको उस वन डिलीट में मिलना पड़ेगा। या तो आपको उस वन डिलीट में मिलना पड़ेगा या तो आप अपना अलग भी बना सकते हैं। अलग भी बना सकते हैं। आपके आपके मर्जी पे है। देखिए अब अब इसका एक",
+      "source": "caption",
+      "english_text": "Is. And if you delete the array of I also, then two will be deleted. But if we take the back no delete which was there before, which is not now, which was there before and we delete the array of I, then we can delete us. very good. Well, if you take the one delete at the back, what does it mean? If you take the one delete that is behind, it means that you will either have to meet that one delete. Either you will have to join that one delete or you can create your own. Can also be made separately. It is on your choice. Now look at this one"
+    },
+    {
+      "start_time": 692.8,
+      "end_time": 725.269,
+      "text": "बार हम कोड लिखते हैं। फिर आपको हम समझाएंगे कि हो क्या रहा है। सबसे पहले ये हम जानते हैं कि थोड़ा कंफ्यूजन है। बहुत कंफ्यूजिंग क्वेश्चन है। इस तरीके से आप सोचते हैं तो बहुत कंफ्यूजिंग क्वेश्चन है। ये है ना? तो ये एक्चुअली में बहुत हार्ड क्वेश्चन है। लेकिन थोड़ा सा सबर कीजिए समझ में आएगा। i = 1 iस n i + सबसे पहले सबसे पहले हम लोग अपना नो डिलीट वाला काम कर लेते हैं क्योंकि ये तो नॉर्मल सीएस चीज है। है ना? तो नो डिलीट ये नो डिलीट क्या है? बेस्ट एंडिंग एट i - 1 था कि जिसमें एक भी डिलीटेशन पॉसिबल नहीं है। तो इसमें तो हम लोग जानते थे कि",
+      "source": "caption",
+      "english_text": "times we write code. Then we will explain to you what is happening. First of all we know that there is some confusion. This is a very confusing question. If you think about it this way, it is a very confusing question. This is it right? So this is actually a very hard question. But have a little patience and you will understand. i = 1 is n i + First things first, let's do our no delete thing because that's a normal CS thing. Isn't it? So what is No Delete? The best ending at i - 1 was that in which not a single deletion is possible. So in this we knew that"
+    },
+    {
+      "start_time": 725.279,
+      "end_time": 759.59,
+      "text": "क्या होता है? नो डिलीट प्लस एरे ऑफ़ आई और सिर्फ एरे ऑफ़ ये कर लीजिए। आपका नो डिलीट सेट हो गया। नो डिलीट क्या हो गया? सेट हो गया। इज़ इक्वल टू सॉरी। अरे यार हम जानते हैं बहुत हार्ड क्वेश्चन है। लेकिन थोड़ा सबर कीजिए। तो नो डिलीट इक्वल टू मैक्स ऑफ इसमें दो ऑप्शन नो डिलीट प्लस एरे ऑफ़ आई या तो एरे ऑफ़ आई सिर्फ अपना ही स्टार्ट कर दें तो कुछ भी हो सकता है। दोनों केस में नो डिलीट नो डिलीट ही रहेगा क्योंकि डिलीट नहीं हुआ है। पहले भी नहीं हुआ था उसके साथ अभी जुड़ रहे हैं और या तो हम भी बन",
+      "source": "caption",
+      "english_text": "What happens? No delete plus array of i and just do array of ye. Your no delete is set. No delete what happened? It's set. Is equal to sorry. Hey friend, we know this is a very hard question. But have some patience. So no delete is equal to max off, there are two options no delete plus array of i or array of i only starts its own then anything can happen. दोनों केस में नो डिलीट नो डिलीट ही रहेगा क्योंकि डिलीट नहीं हुआ है। पहले भी नहीं हुआ था उसके साथ अभी जुड़ रहे हैं और या तो हम भी बन"
+    },
+    {
+      "start_time": 759.6,
+      "end_time": 792.47,
+      "text": "जाते हैं तो अभी भी कोई डिलीट नहीं होगा। तो वेरी गुड। ये रख लीजिए। आपका नो डिलीट सेट हो गया है। आपका क्या हुआ है? नो डिलीट सेट हो गया। आपका नो डिलीट सेट हो गया। नो डिलीट का तो ये काम हो गया। अब वन डिलीट पे आते हैं। वन डिलीट पे देखिए देखिए नो डिलीट में एरे ऑफ़ आई तो था ही। एरे ऑफ़ आई तो था ही। या तो ये इसके साथ मिला था या तो अपना ये बना लिया था। ये तो था ही। अच्छा वन डिलीट में क्या होगा? वन डिलीट में क्या होगा कि वन डिलीट क्या बोलता है कि एरे ऑफ़ आई मतलब आई पे खत्म होने वाला जो भी सब एरे उसका बेस्ट चांस है जिसमें वन डिलीशन हो चुका हो। वन डिलीशन हो चुका हो। तो क्या इसमें एरे ऑफ़",
+      "source": "caption",
+      "english_text": "जाते हैं तो अभी भी कोई डिलीट नहीं होगा। So very good. ये रख लीजिए। आपका नो डिलीट सेट हो गया है। What happened to you? नो डिलीट सेट हो गया। आपका नो डिलीट सेट हो गया। नो डिलीट का तो ये काम हो गया। अब वन डिलीट पे आते हैं। वन डिलीट पे देखिए देखिए नो डिलीट में एरे ऑफ़ आई तो था ही। एरे ऑफ़ आई तो था ही। या तो ये इसके साथ मिला था या तो अपना ये बना लिया था। This was it. अच्छा वन डिलीट में क्या होगा? वन डिलीट में क्या होगा कि वन डिलीट क्या बोलता है कि एरे ऑफ़ आई मतलब आई पे खत्म होने वाला जो भी सब एरे उसका बेस्ट चांस है जिसमें वन डिलीशन हो चुका हो। वन डिलीशन हो चुका हो। तो क्या इसमें एरे ऑफ़"
+    },
+    {
+      "start_time": 792.48,
+      "end_time": 827.43,
+      "text": "आई सिर्फ अकेला आ सकता है? नहीं आ सकता है। क्यों? फिर से नॉनसेंसिकल बात कर रहे हैं हम। इसमें हम बोल रहे हैं कि आई के वन डिलीट वाले चीज में क्या एरे ऑफ आई खुद भी आ सकता है? जैसे यहां पे आ गया था। नहीं आ सकता है। वन डिलीट का मतलब होता है आई पे खत्म होने वाले सारे आंसर में बेस्ट जिसमें एक डिलीशन हुआ ही हुआ हो। सिर्फ एरे ऑफ़ आई को अगर आप लेंगे तो इसमें कहां हुआ एक डिलीशन। ये तो शुरू भी हो रहा है एरे ऑफ़ आई से खत्म हो रहा है एरे ऑफ़ आई पे। तो इसमें एक एलिमेंट है। इसमें नहीं होना चाहिए था एलिमेंट। तो ये तो नहीं हो सकता है। तो एक बात हम लोग को समझ में आई कि ये वाला ऑप्शन तो वन डिलीट में पॉसिबल नहीं है। सिर्फ इसको लेके आप वन डिलीट में नहीं दे सकते हैं। ना",
+      "source": "caption",
+      "english_text": "आई सिर्फ अकेला आ सकता है? Can't come. Why? फिर से नॉनसेंसिकल बात कर रहे हैं हम। इसमें हम बोल रहे हैं कि आई के वन डिलीट वाले चीज में क्या एरे ऑफ आई खुद भी आ सकता है? जैसे यहां पे आ गया था। Can't come. वन डिलीट का मतलब होता है आई पे खत्म होने वाले सारे आंसर में बेस्ट जिसमें एक डिलीशन हुआ ही हुआ हो। सिर्फ एरे ऑफ़ आई को अगर आप लेंगे तो इसमें कहां हुआ एक डिलीशन। ये तो शुरू भी हो रहा है एरे ऑफ़ आई से खत्म हो रहा है एरे ऑफ़ आई पे। तो इसमें एक एलिमेंट है। इसमें नहीं होना चाहिए था एलिमेंट। तो ये तो नहीं हो सकता है। तो एक बात हम लोग को समझ में आई कि ये वाला ऑप्शन तो वन डिलीट में पॉसिबल नहीं है। सिर्फ इसको लेके आप वन डिलीट में नहीं दे सकते हैं। No"
+    },
+    {
+      "start_time": 827.44,
+      "end_time": 859.59,
+      "text": "वन तो आप क्या कर सकते हैं? तो अब तीन तरीके का ऑप्शन हो जाता है कि एक तो जो पहले का वन डिलीट है जो पहले का वन डिलीट है मतलब जो पहले का वन डिलीट है मतलब i - 1 तक जिसमें एक डिलीशन हो चुका है उसमें मिल जाओ उसमें जाके मिल जाओ एक ये ऑप्शन हो सकता है इसमें भी एक डिलीशन है वेरी गुड या फिर एरे ऑफ़ आई को अगर आपको डिलीट करने का मन है जो कि हम लोग ये वाला ऑप्शन देखे थे एरे ऑफ़ आई को डिलीट करने का मन है तो आप वन डिलीट के साथ एरे ऑफ़ आई को डिलीट नहीं कर सकते हैं। आप वन डिलीट के साथ एरे ऑफ़ आई को डिलीट नहीं कर सकते हैं। आपको",
+      "source": "caption",
+      "english_text": "Forest So what can you do? So now there are three types of options, one is that the earlier one is deleted, which is the earlier one is deleted, that is, the earlier one is deleted, that is, till i - 1, in which one deletion has taken place, join it, go to that and join it, one option can be, there is a deletion in this too, very good or if you feel like deleting the array of i, which we saw this option, feel like deleting the array of i. If so, you cannot delete the array of i with one delete. You cannot delete array of i with one delete. to you"
+    },
+    {
+      "start_time": 859.6,
+      "end_time": 893.75,
+      "text": "क्या लेना पड़ता है? नो डिलीट। नो डिलीट। बस नो डिलीट। बस नो डिलीट। देखिए यही इस क्वेश्चन का मेन पॉइंट है। नो डिलीट क्या सिग्निफाई करता था? अभी नया वाला नहीं। पहले वाला पहले वाला। i - 1 तक कुछ डिलीट नहीं हुआ था। उसका बेस्ट आंसर। कुछ नहीं डिलीट हुआ था। उसका बेस्ट आंसर। अब आपका मन है कि हम एरे ऑफ आई को डिलीट करना चाहते हैं। तो एक काम करिए ना इस वाले नो डिलीट को आप यहां पे आइए और यहां पे इसको वन डिलीट बना दीजिए। कहां पे? आई पे तो वही काम हो जाएगा। आई - 1 तक नो डिलीट था कि आई - 1 तक का जो भी आंसर था उसमें कुछ",
+      "source": "caption",
+      "english_text": "What needs to be taken? No delete. No delete. Just no delete. Just no delete. See, this is the main point of this question. What did no delete signify? Not the new one yet. First one first one. Nothing was deleted till i - 1. His best answer. Nothing was deleted. His best answer. Now you mean we want to delete the array of I. So do one thing, come here and make this one no delete and make it one delete. Where? Same thing will be done on I. There was no deletion till I-1 or whatever answer was there till I-1 there was something in it."
+    },
+    {
+      "start_time": 893.76,
+      "end_time": 919.189,
+      "text": "डिलीट नहीं हुआ है। वैरी गुड। अब आपको मन है कि हम आई तक का एक आंसर बनाएं जिसमें एक डिलीट हो और उसमें हम एरे ऑफ आई को ही डिलीट करना चाहते हैं। तो उस नो डिलीट को उठा के यहां पे ले आइए। तो वही बात हो जाएगी कि एरे ऑफ आई को उसमें आप गिनेंगे नहीं। लेकिन आई तक आपको एक ऐसा वन डिलीट आंसर मिल जाएगा जिसमें खुद एरे ऑफ आई डिलीट हुआ हो। समझ में आया? हम क्या बोलना चाह रहे हैं? हम क्या बोलना चाह रहे हैं? देखिए। सबसे पहला तो आपके पास एक चॉइस है कि आप वन डिलीट आपको वन डिलीट बनाना है।",
+      "source": "caption",
+      "english_text": "Has not been deleted. Very good. Now you want us to create an array of i in which there is a delete and in that we want to delete the array of i only. So pick up that no delete and bring it here. So the same thing will happen that you will not count Array of I in it. But till i, you will get one delete answer in which the array of i itself has been deleted. Did you understand? What are we trying to say? What are we trying to say? See. First of all, you have a choice whether you want to delete one or make one delete."
+    },
+    {
+      "start_time": 919.199,
+      "end_time": 947.43,
+      "text": "ये हम लोग किस लिए कर रहे हैं? ये हम लोग इसलिए कर रहे हैं कि नया वन डिलीट कैसे बनेगा? नया वन डिलीट कैसे बनेगा? जैसे यहां पे नया नो डिलीट बना है ना? हर बार बेस्ट ट्रेंडिंग बनाते हैं ना नया नया अपडेट करते हैं इसीलिए। नया वन डिलीट कैसा बनेगा? अच्छा। सबसे पहले तो एक चॉइस है कि जो जो ऑलरेडी वन डिलीट है जो पिछला वाला वन डिलीट है उसमें एरे ऑफ आई मिला दो। एरे ऑफ़ आई वेरी गुड। एरे ऑफ़ आई मिला दिया। या फिर अगर आपको एरे ऑफ़ आई को ही डिलीट करना है। एरे ऑफ़ आई को ही डिलीट करना है तो आप वन डिलीट के साथ उसको नहीं मिला सकते हैं।",
+      "source": "caption",
+      "english_text": "Why are we doing this? We are doing this because how will the new one delete be created? How will the new one delete be created? Like a new no delete has been created here, right? That's why we make the best trending updates every time. What will the new One Delete look like? Good. First of all, there is a choice to add array of I to the already deleted one which is the previous one deleted. Array of I very good. Array of I added. Or if you have to delete the array of I only. If you want to delete only the array of I, then you cannot combine it with one delete."
+    },
+    {
+      "start_time": 947.44,
+      "end_time": 981.59,
+      "text": "वन डिलीट तो वो सिग्निफाई करता है कि पिछले बार तक भी एक डिलीट हो चुका था। तो उसके साथ एरे ऑफ आई कैसे डिलीट होगा? इसके साथ आप पुराना आपका जो पुराना नो डिलीट था। नो डिलीट था वो कर सकते हैं। अब देखिए अब आपका वन डिलीट सही लग रहा है देखने में। आपका एक इसका मैक्स आपका एक ऑप्शन तो क्या बोलता है कि जो अभी वाला मतलब जो पहले वाला वन डिलीट है उसको रहने दो। उसके साथ AI को मिला दो। वेरी गुड। या फिर या फिर हो सकता है कि हम इसी को डिलीट करना चाहते हो। तो एक काम करो जो पुराना वाला नो डिलीट था ना पुराना वाला नो डिलीट था जो i",
+      "source": "caption",
+      "english_text": "One delete signifies that till last time also one deletion had been done. So how will the array of eyes be deleted with him? With this you can delete your old no. No delete, you can do that. Now see, your one delete looks correct. What does your one max option say that the current one means that the previous one is deleted, let it remain. Combine AI with that. very good. Or maybe we want to delete this. So do one thing that the old one was no delete na the old one was no delete which i"
+    },
+    {
+      "start_time": 981.6,
+      "end_time": 1015.269,
+      "text": "- 1 वाला था वहां तक कुछ डिलीट नहीं हुआ था। उसी को यहां पे लिख दो। तो उसका इफेक्टिव मतलब हो जाएगा कि यहां पे एरे ऑफ़ आई ही डिलीट हो गया और इसको वन डिलीट बना दो किसका आई वाले का नया वाला वन डिलीट इसको बना दो और देख लो दोनों में जो मैक्स है आप समझ रहे हैं हम क्या बोल रहे हैं समझ रहे है ना क्या बोल रहे हैं कि अभी वाले को ही डिलीट करना है अभी वाले को ही डिलीट करना है जैसे कि अगर इस एरे में हम बात करें तो 1 - 2 0 1 जब i = 1 पे आए होंगे ना तो आपका नो डिलीट क्या होगा नो डिलीट वन होगा क्योंकि हम लोग करके आए थे तो आप बोल रहे हैं कि एक काम करो वन डिलीट",
+      "source": "caption",
+      "english_text": "- There was 1, nothing was deleted till then. Write that here. So its effective meaning will be that here only the array of i has been deleted and make it one delete, whose i is the new one, make this one delete and see what is the max in both of them, you understand what we are saying, do you understand what we are saying is that only the current one has to be deleted, only the current one has to be deleted, like if we talk in this array then we will have reached 1 - 2 0 1 when i = 1. Neither, what will be your no delete? There will be no delete one because we had already done it, so you are saying do one thing, delete one."
+    },
+    {
+      "start_time": 1015.279,
+      "end_time": 1048.71,
+      "text": "वन डिलीट को ये वाला वन बना दो। कहां पे? i = 1 पे। इसका मतलब क्या हुआ? कि आप खड़े तो हैं i = 1 लेकिन आपका वन डिलीट है वन। मतलब कि आप यहां तक लिए और इसको गायब कर दिए। इसको गायब इस अब इसको डिलीट कर दिए। तो अब ये वन डिलीट बन गया। अब ये आगे जाएगा। तो ये मतलब है। अच्छा। इसको कोड में कैसे लिखेंगे कि सबसे पहले तो सबसे पहले तो सबसे पहले तो फिर से एक बार कोड लिखवा देते हैं। क्योंकि इसमें कुछ-कुछ नंसेस है। छोटा-छोटा नन्सेस है। फॉर i = 1 i &lt; n i प्लस प्लस सबसे पहले हम लोग एक",
+      "source": "caption",
+      "english_text": "Make one delete this one. Where? At i = 1. What is the meaning of this? That you are standing i = 1 but your one is deleted one. Meaning that you took it to this extent and made it disappear. This is missing, now it has been deleted. So now it became one delete. Now it will go further. So this means. Good. How to write this in code? First of all, let's write the code once again. Because there are some nuances in it. There are small nuns. For i = 1 i < n i plus plus first of all we"
+    },
+    {
+      "start_time": 1048.72,
+      "end_time": 1082.71,
+      "text": "चीज गौर किए कि पुराने वाले नो डिलीट का काम पड़ रहा है कहां पे वन डिलीट में अच्छा तो एक इसको प्रीवियस प्रीवियस नो डिलीट इक्वल टू नो डिलीट एक ये कर लीजिए ऐसे आप लोग ना ये हर बेस्टिंग में कर लिया करिए प्रीवियस और अभी वाला तो इससे क्लेरिटी बढ़ता है चलिए इसका ही बना लेते हैं कुछ फर्क नहीं पड़ता प्रीवियस वन डिलीट वन डिलीट = 1 डिलीट यह भी एक बना लीजिए। बना लिए। अच्छा। अब सबसे पहले नो डिलीट को अपडेट कर देते हैं। क्योंकि वो तो सिंपल सी बात है। नो",
+      "source": "caption",
+      "english_text": "Notice that where the old no delete is being used, where in one delete is good, then one is the previous one, previous no delete is equal to two no delete one, do this like this, you guys, do this in every besting, do the previous one and the current one, it increases clarity, let's make this one only, it doesn't matter, previous one delete, one delete = 1 delete, make this also one. Made it. Good. Now first let's update No Delete. Because that is a simple thing. no"
+    },
+    {
+      "start_time": 1082.72,
+      "end_time": 1111.35,
+      "text": "डिलीट इज़ इक्वल टू मैक्स ऑफ़ एक तो होगा कि नो डिलीट के साथ एरे ऑफ़ आई को जोड़ दो और एरे ऑफ़ आई को अपना रख लो। अच्छा। ठीक है। अब अब वन डिलीट क्या हम बोले? वन डिलीट। ऐसा तो देखिए। वन डिलीट में हम बार-बार समझा रहे हैं कि ऐसा ऑप्शन नहीं आएगा कि सिर्फ आप AI को रख के उसको वन डिलीट बना सकते हैं। ना सिर्फ A आई रहेगा तो उसमें एक ही एलिमेंट है और वो वन डिलीट नहीं है वो नो डिलीट है इसीलिए नो डिलीट में गया है।",
+      "source": "caption",
+      "english_text": "Delete is equal to max of. One way would be to combine array of i with no delete and keep array of i as your own. Good. Ok. Now one delete, did we say? One delete. Look at it like this. In One Delete, we are repeatedly explaining that such an option will not come that you can just keep the AI ​​and make it One Delete. Not only will A remain, there is only one element in it and that one is not deleted, it is no deleted, that is why it is included in no deleted."
+    },
+    {
+      "start_time": 1111.36,
+      "end_time": 1145.83,
+      "text": "अच्छा सबसे पहला ऑप्शन क्या था कि जो अभी तक का वन डिलीट है जो अभी तक का वन डिलीट मतलब ये वाला प्रीवियस प्रीवियस वन डिलीट प्रीवियस वन डिलीट के साथ एरे ऑफ़ आई को जोड़ दो। तो यहां यहां पे वन डिलीट हुआ होगा। यहां पे कोई डिलीट नहीं हुआ। वेरी गुड। इसको जोड़ दो। या फिर अगर आप एरे ऑफ़ आई को डिलीट करके उसको वन डिलीट बनाना चाहते हैं तो आपको प्रीवियस नो डिलीट मतलब जो प्रीवियस नो डिलीट था जो पहले तक का नो डिलीट था वैरी गुड उसको अभी वाला वन डिलीट बना देंगे तो इसका मतलब है कि अभी वाले को हम लोग डिलीट कर रहे हैं।",
+      "source": "caption",
+      "english_text": "Well, what was the first option, which is the one delete so far, which is the one delete so far, meaning this one, add the array of I with the previous one, the previous one delete, the previous one delete. So here one must have been deleted. There was no deletion here. very good. Add this. Or if you want to delete the array of I and make it one delete, then you will make the previous no delete, which was no delete earlier, very good, and make it the current one delete, then it means that we are deleting the current one."
+    },
+    {
+      "start_time": 1145.84,
+      "end_time": 1179.35,
+      "text": "ठीक? ये हम लोग बना लिए। लेकिन इसमें अभी भी गलती है। देखिए हम लोग शुरू में वन डिलीट को डिफाइन कैसे किए थे? नो डिलीट तो अच्छा डिफाइन हुआ था एरे ऑफ़ ज़ीरो। वेरी गुड। वन डिलीट क्या डिफाइन हुआ था? वन डिलीट को हम लोग बोले थे कि ये नॉनसेंसिकल बात है। क्या कर रहा है ये आदमी? नॉनसेंसिकल बात कर रहा है। कहां पे? यहां पे देखिए। ये नॉनसेंसिकल बात कर रहा है। तो इसके लिए इसके लिए इसके लिए आपको क्या करना पड़ेगा? जब ये आदमी नॉनसेंसिकल बात कर रहा है तो आप इसको कैसे सुधारेंगे? ऐसे तो करेंगे तो गलत हो जाएगा। क्योंकि वो आई एनडी मीन है। वो मतलब इलॉजिकल था तो इसीलिए कुछ वैल्यू देना था इसीलिए हम लोग दे दिए थे। नहीं तो उसको हम लोग नहीं देते। नहीं तो उसको हम नहीं देते। तो जब",
+      "source": "caption",
+      "english_text": "ok? We made this. But there is still a mistake in it. See how we defined one delete initially? No delete was a well defined array of zeros. very good. What was one delete defined? We told One Delete that this is a nonsensical thing. What is this man doing? Talking nonsense. Where? Look here. He is talking nonsense. So what do you have to do for this? When this guy is talking nonsense, how do you correct him? If you do it like this, it will be wrong. Because she is i n d mean. That means it was illogical, so some value had to be given, that is why we gave it. Otherwise we would not have given it to him. Otherwise we would not have given it to him. so when"
+    },
+    {
+      "start_time": 1179.36,
+      "end_time": 1205.669,
+      "text": "वन डिलीट आपको एक चेक लगाना पड़ेगा। कहां पे चेक लगाना पड़ेगा यहां पे? इसके बीच में आपको एक चेक लगाना पड़ेगा। इसके बीच में आपको एक चेक लगाना पड़ेगा। क्या चेक लगाना पड़ेगा? आपको देखना पड़ेगा कि इफ माय ये वाला इफ माय प्रीवियस वन डिलीट इक्वल इक्वल टू आई एन टी मीन इसका मतलब कि वन डिलीट में अभी तक कोई वैल्यू नहीं है।",
+      "source": "caption",
+      "english_text": "One delete: You will have to put a check. Where will the check have to be put here? You will have to put a check in between. You will have to put a check in between. Will I have to check? You have to see that if my this one if my previous one delete is equal to i n t means that there is no value in one delete yet."
+    },
+    {
+      "start_time": 1205.679,
+      "end_time": 1239.35,
+      "text": "वन डिलीट में अभी तक तो कोई वैल्यू नहीं है। तो आप क्या करिए ना? तो प्रीवियस वन डिलीट = 0 कर दीजिए। ज़ीरो कर दीजिए। या तो एक काम करिए उसको Aआई ही बना लीजिए। उसको क्या कीजिए? ए आई ही बना लीजिए। देखिए इसका मतलब क्या है? इसका मतलब सिंपल प्लस नहीं है। इसका मतलब है कि प्रीवियस वाला वन डिलीट के साथ हम एरे ऑफ आई को जोड़ना चाहते हैं। तो अभी तक आपके अगर प्रीवियस वन डिलीट में कोई वैल्यू ही नहीं है। अभी तक तो वो इलॉजिकल वैल्यू है। तो आप उसमें जोड़ने का मतलब है कि उसको एरे ऑफ आई उसमें ले आइए। एरे ऑफ आई ही बना दीजिए। एरे एरे",
+      "source": "caption",
+      "english_text": "There is no value in one delete yet. So what should you do? So make previous one delete = 0. Make it zero. Either do one thing and make it AI. What to do with him? Just make AI. See what this means? It does not mean simple plus. This means that we want to add the array of I by deleting the previous one. So till now there is no value in your if previous one delete. As of now, that is the logical value. So adding it means bringing it into the Array of I. Make an array of eyes only. oh oh oh oh oh oh oh"
+    },
+    {
+      "start_time": 1239.36,
+      "end_time": 1271.43,
+      "text": "ऑफ़ आई कुछ नहीं में जुड़ेगा तो क्या बनेगा? एरे ऑफ़ बनेगा। तो इसको आप एरे ऑफ़ i बना दीजिए। इसको एरे ऑफ़ i बना दीजिए और सिवाय बजाय ये लिखने के बजाय ये वाला चीज लिखने के यहां पे बजाय ये वाला चीज लिखने के आप क्या कीजिए कि एक वेरिएबल लीजिए। एक क्या कीजिए वेरिएबल ले लीजिए जो कि ऐसा दिखेगा। अब हम यहां यहां तक तो समझ में आया होगा ना? यहां तक तो समझ में आ गया होगा। यहां तक इसके बाद हम लिख देते हैं आप एक वेरिएबल ले लीजिए v2 इफ इफ माय प्रीवियस वन डिलीट इफ माय प्रीवियस वन डिलीट इज़",
+      "source": "caption",
+      "english_text": "What will happen if off i is added to nothing? Array of will be formed. So make this an array of i. Make it an array of i and except instead of writing this thing, instead of writing this thing here, what you do is take a variable. Take a what to do variable that looks like this. Now we must have understood till here, right? You must have understood till now. So after this we write, you take a variable v2 if if my previous one delete if my previous one delete is"
+    },
+    {
+      "start_time": 1271.44,
+      "end_time": 1303.43,
+      "text": "इक्वल टू आई एम टी मीन देन v2 = एरे ऑफ़ आई और अगर ऐसा नहीं है अगर ऐसा नहीं है तो v2 = जो भी मेरा प्रीवियस वन डिलीट प्रीवियस वन डिलीट प्लस एरे ऑफ़ आई प्लस एरे ऑफ़ आई। अब अब जब आप लिखते हैं तो अब आप कंफर्टेबल हो के लिख सकते हैं। वन डिलीट इज इक्वल टू मैक्स ऑफ़ v2 जो कि ये वाला है या तो सिर्फ एरे ऑफ़ आई अगर नॉन ससेंसिकल वैल्यू है तो। नहीं तो अगर प्रीवियस सॉरी आपका जो अगर आपको",
+      "source": "caption",
+      "english_text": "Equal to I'm not mean then v2 = array of i and if it's not if it's not then v2 = whatever my previous one delete previous one delete plus array of i plus array of i. Now when you write, you can write comfortably. One delete is equal to max of v2 which is this one or just array of i if non sequential value. Otherwise if the previous sorry your which if you"
+    },
+    {
+      "start_time": 1303.44,
+      "end_time": 1337.75,
+      "text": "एरे ऑफ़ आई को डिलीट करना है तो प्रीवियस वन डिलीट सॉरी प्रीवियस नो डिलीट प्रीवियस नो डिलीट। आज मेरा थोड़ा लगता है कि फ्लो गड़बड़ है। प्रीवियस नो डिलीट बस ये आपका वन डिलीट भी अपडेट हो गया। नो डिलीट ये इसको रहने दीजिए। इसको इसको हटा दीजिए। आधा कोड यहां है। उसके बाद का आधा यहां है। अच्छा अब रिजल्ट कैसे अपडेट होता था? सारे बेस्ट एंडिंग का बेस्ट ले लेते थे। बेस्ट मतलब मैक्सिमम सिंपल। रिजल्ट इज़ इक्वल टू मैक्स ऑफ़",
+      "source": "caption",
+      "english_text": "If you want to delete the array of I then delete the previous one, sorry, previous no delete, previous no delete. Today I feel like the flow is a bit messed up. Previous no delete just this one delete is also updated. No delete, leave it as it is. Remove this this this. Half the code is here. The latter half is here. Well now how was the result updated? Used to take the best of all the best endings. Best means maximum simple. Result is equal to max of"
+    },
+    {
+      "start_time": 1337.76,
+      "end_time": 1372.39,
+      "text": "रिजल्ट। और एक और मैक्स लगा लीजिए कि इन दोनों का भी मैक्स ले लीजिए। वन डिलीट और नो डिलीट। बस लूप बंद करके क्या करेंगे? रिटर्न रिजल्ट। सिंपल सा हो गया। अब देखिए मालूम है हम बार-बार बोल रहे हैं क्वेश्चन थोड़ा कॉम्प्लेक्स था लेकिन ये वन डिलीट आप बेस्ट एंडिंग को कैसे चेंज करते हैं ना उसी पे पूरा खेल है। वही आपको सोचना है कि बेस्ट एंडिंग चेंज कैसे हो रहा है? वन डिलीट अभी है। अगला वन डिलीट क्या बन सकता है? तो उसके लिए आपको हिंदी में उसका मतलब सोचना पड़ेगा कि वन डिलीट जब किसी आई पे",
+      "source": "caption",
+      "english_text": "Result. And put another max so that these two also get max. One delete and no delete. What will you do by simply closing the loop? Return result. It became simple. Now see, you know we are saying it again and again, the question was a bit complex but this one delete, how do you change the best ending, the whole game is on that. You have to think that how is the best ending change happening? One delete right now. What could become the next One Delete? So for that you will have to think about its meaning in Hindi that one delete when someone comes."
+    },
+    {
+      "start_time": 1372.4,
+      "end_time": 1405.11,
+      "text": "हम लोग निकालते हैं तो क्या होता है? सबसे पहले तो सब एरे एंडिंग एट आई इसका बेस्ट आंसर बेस्ट आंसर जिसमें एग्जैक्टली एग्जजेक्टली एक डिलीशन हो एक डिलीशन इसीलिए हम लोग इसको ऐसे अपडेट करते हैं कि या तो अभी तक जिसमें एक एक डिलीशन हो चुका है उसके साथ खुद जुड़ जाओ उसके साथ खुद जुड़ जाओ उसके साथ क्या करो खुद जुड़ जाओ या फिर अगर तुमको मन है कि अभी पहला पहला डिलीशन मेरा अभी होना चाहिए। तो",
+      "source": "caption",
+      "english_text": "What happens if we remove people? First of all, all the array ending at I is the best answer, the best answer in which there is exactly one deletion, one deletion, that is why we update it in such a way that either in which one deletion has happened till now, join with that one yourself, join with that one yourself, what to do with that one, join yourself or if you feel that the first deletion should be mine right now. so"
+    },
+    {
+      "start_time": 1405.12,
+      "end_time": 1432.39,
+      "text": "अभी तक का जो नो डिलीशन हुआ है ना उसको अभी का वन डिलीशन बना दूं तो अभी वाला तो मेरा डिलीट हो जाएगा। आशा करते हैं कि समझ में आया होगा। बहुत इंपॉर्टेंट कांसेप्ट है। बहुत अच्छा कांसेप्ट है इसीलिए इतना इसमें वो लग रहा है मेहनत लग रहा है। चलिए। अगला जो दोनों क्वेश्चन है, अगला जो दोनों क्वेश्चन है, दोनों नकली क्वेश्चन है। अगला क्या है? दोनों नकली क्वेश्चन है। अगला क्वेश्चन क्या बोलता है? मैक्सिमम एब्सोल्यूट सम। बहुत नकली बहुत नकली क्वेश्चन है।",
+      "source": "caption",
+      "english_text": "If I convert the no deletion till now into one deletion, then my current one will get deleted. Hope you have understood. It is a very important concept. It's a very good concept, that's why so much hard work is being put into it. Let go. The next one is both question, the next one is both question, both are fake question. what is next? Both are fake questions. What does the next question say? Maximum absolute sum. Very fake, very fake question."
+    },
+    {
+      "start_time": 1432.4,
+      "end_time": 1463.269,
+      "text": "हमको लगता है आप लोग को देख के समझ में आ जाएगा। क्या बोलता है ना कि एक एरे दिया हुआ है 2 -5 और 1 और -4 और 3 -2 0 1 2 3 4 5 क्या बोलता है? कोई ऐसा सब एरे ढूंढ लो भाई। ऐसा सब एरे ढूंढ लो जिसका कोई सम हो। जिसका कोई सम हो मिनिमम सम हो, मैक्सिमम सम हो, कोई भी सम हो, कोई भी सम हो। सारा सब एरे का सम निकाल लो। सारे सम का क्या कर दो? एब्सोलॉल्यूट कर दो। क्या कर दो?",
+      "source": "caption",
+      "english_text": "We think you guys will understand after watching. What does it say that given an array 2 -5 and 1 and -4 and 3 -2 0 1 2 3 4 5 what does it say? Find someone like this, brother. Find all such arrays which have some even. Whatever is even, minimum is even, maximum is even, any is even, any is even. Find out the sum of all the arrays. What to do with all the money? Make it absolute. what to do?"
+    },
+    {
+      "start_time": 1463.279,
+      "end_time": 1495.99,
+      "text": "एब्सोलॉल्यूट कर दो। और उसमें से मैक्स रिटर्न करो। एब्सल्यूट का क्या मतलब होता है ना कि जब आप फोर को लिखेंगे एब्सल्यूट फोर तो वो फोर बनेगा। लेकिन जब -4 को एब्सल्यूट फोर करेंगे तो वो भी फोर बन जाएगा। नेगेटिव को पॉजिटिव कर देता है। पॉजिटिव को पॉजिटिव रहने देता है। एब्सोल्यूट उसको कहते हैं। तो क्या बोलता है? सारा सब एरे लो। सारा सब एरे लो। उसका क्या निकालो? सम निकाल लो। सबको क्या करो? एब्सोल्यूट कर दो और उसका रिटर्न कर दो जो भी उसमें मैक्सिमम है। तो मैक्सिमम एब्सोल्यूट सम बहुत नकली क्वेश्चन है। इसमें हम कुछ बताएंगे भी",
+      "source": "caption",
+      "english_text": "Make it absolute. And make max return from it. What does absolute mean? When you write four, it will become four. But when -4 is converted to absolute four then it will also become four. Turns negative into positive. Allows the positive to remain positive. It is called absolute. So what does it say? Take everything here. Take everything here. What do you make of it? Find out the even. What to do everyone? Make it absolute and return whatever is its maximum. So maximum absolute sum is a very fake question. We will also tell you something in this"
+    },
+    {
+      "start_time": 1496.0,
+      "end_time": 1530.39,
+      "text": "नहीं। बहुत नकली क्वेश्चन है। अगर इस एरे में आपको दिया रहता ना 2 -5 1 -4 3 2 तो आपको ये क्या बोलता है? कि एक काम करो ये वाला ले लो। ये वाला ले लो। इसका सबसे पहले तो सम निकालो। -5 + 1 + -4 -8 इसको एब्सोल्यूट कर दो 8 बस यही रिटर्न कर दो सब में कुछ नहीं है क्वेश्चन कुछ नहीं है क्वेश्चन आपको एक बार आपको एक बार मैक्सिमम सम निकाल लेना है और एक बार",
+      "source": "caption",
+      "english_text": "No. This is a very fake question. If in this array you are given 2 -5 1 -4 3 2 then what does it tell you? Do one thing and take this one. Take this one. First of all find the sum. -5 + 1 + -4 -8 Make it absolute 8 Just return this There is nothing in the question There is nothing in the question You have to find the maximum sum once and once"
+    },
+    {
+      "start_time": 1530.4,
+      "end_time": 1564.07,
+      "text": "मिनिमम सम निकाल लेना है दोनों को एब्सोल्यूट कर दीजिए और जिसमें भी जो भी आपको मैक्सिमम लगे मैक्सिमम ऑफ देम रिटर्न कर दीजिए। क्यों? ये जो 5 1 -4 है क्या है? इस एरे का इस एरे का इस एरे का मिनिमम सम सब एरे है भाई मिनिमम सम सब एरे तभी तो एब्सोल्यूट होगा। देखो अगर आपको पॉजिटिव में ही आपको मैक्सिमम सम में ही बहुत बड़ी वैल्यू मिल गई बहुत अच्छी बात है। वही रिटर्न करिए। लेकिन अगर आपको बहुत ज्यादा नेगेटिव वैल्यू भी मिल गई तो भी अच्छा है ना? तो भी तो अच्छा है। उसका",
+      "source": "caption",
+      "english_text": "You have to find the minimum sum, make both of them absolute and whichever you feel is maximum, return the maximum of them. Why? What is this 5 1 -4? This array of this array has the minimum sum of all the arrays, only then it will be absolute. Look, if you get a huge value in the maximum sum only in the positive, it is a very good thing. Return the same. But even if you get very negative values, it is still good, right? Even then it is good. his"
+    },
+    {
+      "start_time": 1564.08,
+      "end_time": 1597.83,
+      "text": "एब्सोल्यूट करेंगे तो पॉजिटिव बन जाएगा। तो यही तो क्वेश्चन बोल रहा है कि अगर आपको पॉजिटिव सम मिलता है ना तो वेरी गुड है उसको रिटर्न कर दीजिए। अगर आपको बहुत नेगेटिव बहुत ही गंदा सम मिल गया बहुत ही गंदा सम मिल गया तब भी बहुत अच्छी बात है। जितना गंदा सम मिलेगा मतलब -4, -10, -14, -20, -100 एब्सोल्यूट करेंगे उतना ही बड़ा होता जाएगा। ये 4 बनेगा, ये 10 बनेगा, ये 14 बनेगा, ये 20 बनेगा, ये 100 बनेगा। तो अब देखिए जितना सम कम होता जा रहा है ना जितना सम कम होता जा रहा है उतना ही अच्छा बनता जा रहा है उतना ही अच्छा बनता जा रहा",
+      "source": "caption",
+      "english_text": "If you make it absolute then it will become positive. So this is what the question is saying that if you get a positive sum then it is very good, return it. If you get a very negative, very bad even, very bad even, then it is a very good thing. The dirtier the sum you get, i.e. -4, -10, -14, -20, -100, the bigger the absolute. This will become 4, this will become 10, this will become 14, this will become 20, this will become 100. So now see, the more the even is getting less, the more the even is getting less, the better it is getting, the better it is getting"
+    },
+    {
+      "start_time": 1597.84,
+      "end_time": 1624.63,
+      "text": "है तो एक ऑप्शन तो है कि आप सबसे अच्छा सम फाइंड कर लो सबसे अच्छा सम मतलब जो मैक्स सम हो एक ऑप्शन और है कि आप सबसे गंदा सम फाइंड कर लो जो कि मीन है दोनों का एब्सोल्यूट कर दो दोनों का एब्सोल्यूट कर दो और रिटर्न कर दो रिजल्ट और रिटर्न कर दो जो भी उसमें से आपको अच्छा लगे उसका रिटर्न कर दो इसका तो हमको नहीं लगता कि हमको कोड लिखवाने का ज़रूरत पड़ेगा मिनिमम सम सिखा चुके हैं मैक्सिमम सम सिखा चुके हैं दो फंक्शन बनाइए दोनों कर लीजिए। दोनों रिटर्न कर दीजिए। उसका एब्सोल्यूट निकाल के रिटर्न कर दीजिए। क्यों?",
+      "source": "caption",
+      "english_text": "So one option is that you find the best sum, the best sum means which is the max sum. Another option is that you find the worst sum which is the mean. Absoluteize both of them, absoluteize both of them and return the result and return whichever one you like best. For this, we do not think that we will need to write code. We have taught you the minimum sum, we have taught you two functions of maximum sum. Make both. Please return both. Find out its absolute and return it. Why?"
+    },
+    {
+      "start_time": 1624.64,
+      "end_time": 1659.029,
+      "text": "एब्सोल्यूट का मतलब ही वही होता है कि पॉजिटिव मिला तो बहुत अच्छी बात है। और बाकी नेगेटिव मिला तो सबसे नेगेटिव ढूंढ लो भाई। नेगेटिव में सबसे मैक्सिमम नहीं। नेगेटिव में ऐसा नंबर ढूंढो जो एकदम गिरा हुआ नंबर है। एकदम मिनिमम नंबर है। उसका एब्सोल्यूट कर दो सबसे बड़ा बन जाएगा। और देख लो कि वो अगर पॉजिटिव सम से भी बड़ा है तो वही रिटर्न कर दो। तो ये क्वेश्चन तो हमको लगता है कि एकदम नकली क्वेश्चन है। ये Amazon में भी पूछा गया है, AOB में पूछा गया है। ये बहुत नकली क्वेश्चन है। ये मतलब दो मिनट का क्वेश्चन है। अगर आप लोग शुरू से पढ़ते हुए आए ना तो दो मिनट लगेगा इस क्वेश्चन को सॉल्व करने में। दो फंक्शन लिखना है। चार-चार पांच-पांच लाइन का तो फंक्शन है। लिख लीजिए और कर दीजिए उसको। खत्म हो गया है क्वेश्चन। बस अब यही",
+      "source": "caption",
+      "english_text": "Absolute means the same thing that if found positive then it is a very good thing. And if you find the rest negative, then find the most negative one, brother. Not the maximum in negative. Find a number in the negative which is exactly the same number. This is the absolute minimum number. Make it absolute and become the greatest. And check that if it is greater than positive sum then return the same. So we think this question is a completely fake question. This has also been asked in Amazon, it has been asked in AOB. This is a very fake question. This means it is a two minute question. If you guys read from the beginning, it will take two minutes to solve this question. Two functions have to be written. There is a function of four-four-five-five lines. Write it down and do it. The question is over. that's it now"
+    },
+    {
+      "start_time": 1659.039,
+      "end_time": 1677.84,
+      "text": "था। सर्कुलर एरे हमको लगता है कि अब टाइम हो गया है इसलिए हम उसको चलिए कल बताएंगे। कल कल क्या होगा? कल दो चीज़ होगी। कल रिवीजन ऑफ कैड्स होगा और सर्कुलर भी होगा और सर्कुलर भी होगा। चलिए मिलते हैं कल। कल आइए।",
+      "source": "caption",
+      "english_text": "Was. Circular Array We feel that now is the time so we will tell him tomorrow. What will happen tomorrow? Two things will happen tomorrow. Tomorrow there will be revision of cads and there will be circular and also there will be circular. Let's meet tomorrow. Come tomorrow."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

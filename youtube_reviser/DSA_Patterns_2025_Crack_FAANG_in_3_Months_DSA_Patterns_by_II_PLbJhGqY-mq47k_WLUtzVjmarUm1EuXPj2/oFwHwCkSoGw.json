@@ -1,0 +1,457 @@
+{
+  "video_id": "oFwHwCkSoGw",
+  "video_title": "DSA Patterns Episode 6 - What If You Could Master Time Complexity in Just 30 Minutes?",
+  "video_number": 6,
+  "chunks": [
+    {
+      "start_time": 1.99,
+      "end_time": 35.59,
+      "text": "यह मेरा चैनल का सबसे इंपॉर्टेंट वीडियो है। अभी तक अभी तक अगर कुछ नहीं देखे हो, डीएसए पैटर्न नहीं देखे हो, बेसिक्स नहीं देखे हो, कोई बात नहीं। ये मिस मत करना, यह देख लेना जीवन थोड़ा सुधर जाएगा। अभी तक मेरा भी गलती है कि जो हम पढ़ा रहे थे, हम उनको लगता था कि टाइम कॉम्प्लेक्सिटी तो सबको आता है। लेकिन सबको कैसे आएगा जब हम ही को नहीं आता था शुरू में, तो किसी को नहीं आएगा। मेरी गलती है। तो अभी तक हम जितना भी पढ़ा रहे थे टाइम और स्पेस कॉम्प्लेक्सिटी समझना बहुत इसीलिए भी जरूरी है ना कि आपको पता चलता है कि कौन सा एल्गोरिदम कब यूज़ करना है ये इसका आधा खेल टाइम कॉम्प्लेक्सिटी में है। दो चीज़ें हैं। कौन सा एल्गोरिदम कब यूज़ करना है ये",
+      "source": "caption",
+      "english_text": "This is the most important video of my channel. If you haven't seen anything till now, haven't seen the DSA patterns, haven't seen the basics, no problem. Don't miss this, see this and life will improve a little. Till now, it is also my fault that those we were teaching thought that everyone knows the time complexity. But how will everyone know it when we did not know it in the beginning, so no one else will. It's my fault. So, whatever we were teaching till now, it is very important to understand time and space complexity so that you know when to use which algorithm, half of it is in time complexity. There are two things. Which algorithm to use when?"
+    },
+    {
+      "start_time": 35.6,
+      "end_time": 66.63,
+      "text": "एक तो आपको पता चलता है पैटर्न से जोकि हम लोग सीख रहे हैं। अगर पैटर्न से नहीं पता चलता है ना तो टाइम कॉम्प्लेक्सिटी या तो प्रोग्राम का जो इनपुट है उसको देख के भी पता चल जाता है। एक हिंट मिल जाता है कि कौन सा एल्गोरिदम नहीं लगेगा और कौन सा लग सकता है। इसके लिए सबसे पहले शुरू करते हैं। कहानी की तरह समझाएंगे। बहुत सिंपल में समझ में आ जाएगा। सबसे पहले आ जाओ लीड कोड पे। ठीक है? हम लोग लीड कोड पे प्रोग्राम सबमिट करते हैं या तो जीएफजी पे करते हैं। ऐसा ही कोई वेबसाइट होता है वहां करते हैं। कहीं भी कर सकते हो ऑनलाइन",
+      "source": "caption",
+      "english_text": "Firstly, you get to know from the patterns that we are learning. If it is not known from the pattern, then it can be known either by looking at the time complexity or the input of the program. A hint is given as to which algorithm will not be used and which one can be used. For this let's start first. Will explain like a story. It will be understood very simply. First of all come to the lead code. Ok? We either submit programs on Lead Code or on GFG. There is a website like this where they do it. You can do it online anywhere"
+    },
+    {
+      "start_time": 66.64,
+      "end_time": 93.99,
+      "text": "में। अब देखो सबसे पहला बात समझो कि सिंपल ऑपरेशन क्या होता है? सिंपल ऑपरेशन मतलब जो कि बहुत सिंपल है करना। फॉर एग्जांपल a = 10 ये एक सिंपल ऑपरेशन है। प्रिंट हेलो ये एक सिंपल ऑपरेशन है। a = 10 + 2 a = b + c ये सारा क्या है? ये सारा सिंपल ऑपरेशन है। सिंपल ऑपरेशन का क्या मतलब है?",
+      "source": "caption",
+      "english_text": "In. Now look, first of all understand what is a simple operation? Simple operation means something that is very simple to do. For example a = 10, this is a simple operation. Print Hello, this is a simple operation. a = 10 + 2 a = b + c What is all this? This is all a simple operation. What does simple operation mean?"
+    },
+    {
+      "start_time": 94.0,
+      "end_time": 125.749,
+      "text": "जिसको करने में चलो सीधे भाषा में मान के चलो। एक टाइम लगता है, एक यूनिट टाइम लगता है। एक यूनिट टाइम लगता है। यह यूनिट टाइम हो सकता है 1 MS हो, माइक्रो सेकंड हो, मिली सेकंड हो, एक माइक्रो सेकंड हो, 1 सेकंड हो लेकिन एक लगता है। आप समझ के चलिए कि कॉन्स्टेंट टाइम है, ये तो तुरंत हो जाएगा ऐसे। चुटकी बजाते ही ये काम पूरा हो जाएगा। इसको कहते हैं सिंपल ऑपरेशन। कोई भी लीड कोड जैसा और या तो जीएफजी जैसा प्लेटफार्म जब आपको बोलता है ना कि प्रोग्राम सबमिट कीजिए। तो कभी-कभी देखते होंगे कि अगर आप घटिया प्रोग्राम लिखेंगे",
+      "source": "caption",
+      "english_text": "While doing it, follow the straight language with respect. It takes one time, one unit time. It takes one unit time. This unit time can be 1 MS, micro second, milli second, one micro second, 1 second but it seems to be one. You should understand that time is constant, this will happen immediately. This work will be completed as soon as you pinch it. This is called simple operation. When any platform like Lead Code or GFG asks you not to submit the program. So sometimes you will see that if you write a poor program"
+    },
+    {
+      "start_time": 125.759,
+      "end_time": 159.509,
+      "text": "तो टाइम लिमिट एक्सीड आता है। टाइम लिमिट एक्सीडेड ये क्यों आता है? या तो ये लीड कोड को पता कैसे चलता है कि आपका टाइम लिमिट एक्सीड हो गया है। या तो ऐसा हो सकता है कि लीड कोड पूरा प्रोग्राम को चलने के लिए कुछ समय देता हो। ऐसा ही तो होगा ना। लीड कोड आपको बोलता है कि 1 सेकंड में आपका प्रोग्राम चलना चाहिए। ऐसा होगा। या तो नंबर ऑफ ऑपरेशंस, नंबर ऑफ ऑपरेशंस परमिट करता होगा। इसका क्या मतलब है? नंबर ऑफ सिंपल ऑपरेशन अगर लीड कोड लिमिट कर दे कि आप 100 ही ऑपरेशन चला सकते हैं। तो अगर आप",
+      "source": "caption",
+      "english_text": "So the time limit is exceeded. Why does this time limit exceed? Either this is how the lead code knows that your time limit has been exceeded. It may also be the case that the lead code allows some time for the entire program to run. This is what will happen, isn't it? The lead code tells you that your program should run in 1 second. This will happen. Either the number of operations permits the number of operations. What does it mean? If the lead code limits the number of simple operations, you can run only 100 operations. so if you"
+    },
+    {
+      "start_time": 159.519,
+      "end_time": 193.11,
+      "text": "101 ऑपरेशन चलाने की कोशिश करेंगे तो आपका टाइम लिमिट एक्सीड आ जाएगा। या फिर आपका प्रोग्राम को अगर 1 सेकंड लगना है आप 1 सेकंड 1.0001 सेकंड भी लेंगे, तो आपका टाइम लिमिट एक्सीडेड आ जाएगा। यही दो तरीका हो सकता है। ठीक है? अब लीड कोड पे आप जनरल मान के चलिए। इसको अब इसका कोई एग्जैक्ट फिगर नहीं है क्योंकि हम लीड कोड में सॉफ्टवेयर इंजीनियर नहीं है। लेकिन 10 टू दी पावर 8 सिंपल ऑपरेशंस आप कर सकते हैं अपने प्रोग्राम में जनरली 99% केस में। 10 टू दी पावर 8 सिंपल ऑपरेशंस आप कर",
+      "source": "caption",
+      "english_text": "If you try to run 101 operations, your time limit will be exceeded. Or if your program has to take 1 second, you will take 1 second or even 1.0001 second, then your time limit will be exceeded. There can be only two ways. Ok? Now move on to the lead code as a general rule. Now there is no exact figure for this because we are not software engineers in lead code. But you can do 10 to the power of 8 simple operations in your program in general 99% of the cases. 10 to the power of 8 simple operations you can do"
+    },
+    {
+      "start_time": 193.12,
+      "end_time": 225.509,
+      "text": "सकते हैं। इस चीज को करने के लिए हर लैंग्वेज को अलग-अलग टाइम लगता है। आप कभी सुने होंगे कि C फास्ट है। C++ फास्ट है। Python स्लो है, जावा स्लो है। हो सकता है C++ को ये करने में 1 सेकंड लगता हो। 10 टू दी पावर 8 ऑपरेशन करने में। हो सकता है पython को ये करने में 2 सेकंड लगता हो। हो सकता है जावास्क्रिप्ट को ये करने में 3 सेकंड लगता हो। कोई फर्क नहीं पड़ता है। लीड कोड आपको बोलता है कि आप कोई भी लैंग्वेज चुनिए। आप C++ चुनिए, Python चुनिए, जावास्क्रिप्ट चुनिए। हम आपको उस हिसाब से टाइम दे देंगे। अगर आपका जावास्क्रिप्ट है तो आपको 3 सेकंड मिलेगा।",
+      "source": "caption",
+      "english_text": "Can. Every language takes different time to do this. You must have ever heard that C is fast. C++ is fast. Python is slow, Java is slow. C++ might take 1 second to do this. 10 to the power of 8 operations. Python may take 2 seconds to do this. JavaScript may take 3 seconds to do this. It doesn't matter. The lead code tells you to choose any language. You choose C++, choose Python, choose JavaScript. We will give you time accordingly. If your using javascript you will get 3 seconds."
+    },
+    {
+      "start_time": 225.519,
+      "end_time": 250.949,
+      "text": "Python में दो, C++ में एक। लेकिन लेकिन नंबर ऑफ ऑपरेशंस सेम रहता है किसी भी लैंग्वेज के लिए। तो लीड कोड आपको क्या बोलता है? आप कोई भी प्रोग्राम लिखिए, किसी भी तरीके से लिखिए। मैक्सिमम आप 10 टू दी पावर 8 सिंपल ऑपरेशन कर सकते हैं। इसका क्या मतलब है? कि अगर आप ऐसा प्रोग्राम लिखते हैं। आप लिखते हैं प्रिंट हेलो। ठीक है? इसको लीड कोड बोलता है कि ये एक सिंपल ऑपरेशन है। एक ही काम हो रहा है ना?",
+      "source": "caption",
+      "english_text": "Two in Python, one in C++. But the number of operations remains the same for any language. So what does the lead code say to you? You can write any program, write it in any way. Maximum you can do 10 to the power 8 simple operations. What does it mean? That if you write such a program. You write print hello. Ok? The lead code says that this is a simple operation. Only one thing is happening, isn't it?"
+    },
+    {
+      "start_time": 250.959,
+      "end_time": 284.87,
+      "text": "इसमें एक सिंपल काम प्रिंट हो रहा है। ऐसा ऐसा आप 10 टू दी पावर 8 प्रिंट स्टेटमेंट लिख सकते हैं टोटल मिला के। अगर आपको सारा प्रिंट नहीं लिखना है तो a = 10, b = 20, c = 30 और a = b + c इसमें कितना स्टेटमेंट हुआ? इसमें कितना सिंपल ऑपरेशन हुआ? इसमें 1 2 3 4 5 ये मिला के हो गया पांच। तो ये लीड कोड पे चल जाएगा। लेकिन द मोमेंट कि आप 10 टू दी पावर एट से ज्यादा सिंपल ऑपरेशन करेंगे तो आपको टाइम लिमिटिक",
+      "source": "caption",
+      "english_text": "A simple task is being printed in this. Like this you can write the print statement 10 to the power 8 by adding the totals. If you do not want to print everything, then a = 10, b = 20, c = 30 and a = b + c. How many statements are there in this? How simple was this operation? In this, 1 2 3 4 5 is added and becomes five. So this will run on lead code. But the moment you do more simple operations than 10 to the power of eight, you will get time limited."
+    },
+    {
+      "start_time": 284.88,
+      "end_time": 317.189,
+      "text": "सीड आएगा। जनरल रूल ये होता है। अब अब ये हम आपको क्यों समझाएं? बताते हैं क्यों समझाएं। फॉर एग्जांपल अब लेट कोड में आप देखते हैं कि कोई भी क्वेश्चन होता है ना तो उसमें इनपुट का साइज लिखा होता है। इनपुट का साइज लिखा होता है। फॉर एग्जांपल अगर आपको बोलता है कि आपको एक एरे का क्वेश्चन है। उसमें आपको लिखेगा कि साइज ऑफ़ एरे वो आपको बता देता है कि क्या होगा? मैक्सिमम क्या होगा? साइज ऑफ़ एरे वो आपको बोलता है कि मैक्सिमम क्या होगा? कभी-कभी ये 1000 होता है। कभी-कभी ये 1 लाख होता है। मतलब 10 टू दी पावर 5 होता है।",
+      "source": "caption",
+      "english_text": "Seed will come. The general rule is this. Now why should we explain this to you? Let us explain why. For example, now in the late code you see that whenever there is any question, the size of the input is written in it. The size of the input is written. For example, if it tells you that you have a question about an array. It will write to you that the size of the array tells you what will happen? What will be the maximum? Size of array tells you what will be the maximum? Sometimes it is 1000. Sometimes it is 1 lakh. Meaning 10 to the power is 5."
+    },
+    {
+      "start_time": 317.199,
+      "end_time": 350.95,
+      "text": "कभी-कभी ये 10 टू दी पावर 9 होता है। किसीकिसी केस में ये 10 टू दी पावर 100 ये नाइन से भी ज्यादा हो सकता है। किसी-किसी केस में ये नंबर बस 20 होता है। ऐसा क्यों? ऐसा इसलिए क्योंकि अभी हम आपको क्या बोले? इस नंबर को याद करके रखिए। 10 टू दी पावर 8। अब आपको हम बताते हैं। फॉर एग्जांपल आपको बोला है कि n का साइज 10 हो सकता है मैक्सिमम। मतलब आपका प्रोग्राम जिस इनपुट पर रन होगा उस इनपुट का साइज 10 हो सकता है मैक्सिमम। अब आप कितना कॉम्प्लेक्सिटी कर सकते हैं? यही वो हिंट है जो हम बोल रहे थे ना कि इनपुट देख के",
+      "source": "caption",
+      "english_text": "Sometimes it's 10 to the power 9. In some cases, this 10 to the power 100 can be even more than nine. In some cases this number is just 20. Why so? This is because what can we tell you now? Remember this number. 10 to the power 8. Now let us tell you. For example, we have told you that the maximum size of n can be 10. Meaning, the maximum size of the input on which your program will run can be 10. How much complexity can you do now? This is the hint that we were saying and not after seeing the input."
+    },
+    {
+      "start_time": 350.96,
+      "end_time": 379.189,
+      "text": "समझ में आ जाता है कि एल्गोरिदम कौन सा लग सकता है? अगर 10 टू दी पावर 10 है। क्या आप इसमें ऑर्डर ऑफ़ n का कर सकते हैं? ऑर्डर ऑफ़ n का क्या मतलब है? अभी बताएंगे। लेकिन अभी के लिए समझ लीजिए। ऑर्डर ऑफ़ n का मतलब कि ये n है ना, तो आपको 10 ऑपरेशंस कर सकते हैं। आप ऑप्ट कर रहे हैं। अभी बताएंगे। बहुत आराम से बताएंगे। लेकिन अभी के लिए ये चीज ये पार्ट समझने के लिए अगर आप ऑर्डर ऑफ़ n का प्रोग्राम लिखेंगे तो आप n का जो वर्स्ट केस पॉसिबल 10 है।",
+      "source": "caption",
+      "english_text": "Can you understand what the algorithm might look like? If 10 to the power is 10. Can you do order of n in this? What does order of n mean? Will tell you now. But understand for now. Order of n means that it is n, so you can do 10 operations. You are opting in. Will tell you now. Will tell you very easily. But for now, to understand this part, if you write a program of order of n, then the worst case possible for n is 10."
+    },
+    {
+      "start_time": 379.199,
+      "end_time": 410.23,
+      "text": "आप 10 ऑपरेशंस करेंगे। समझ में आ गया ऑर्डर ऑफ़ n का मतलब? अगर आप ऑर्डर ऑफ़ log n का प्रोग्राम लिखेंगे तो आप log बेस टू 10 जो कि होता है थ्री ऑपरेशंस करेंगे वर्स्ट केस में। अगर आप ऑर्डर ऑफ n² का प्रोग्राम लिखेंगे तो आप 10² मतलब 100 ऑपरेशंस करेंगे वर्स्ट केस में। अगर आप ऑर्डर ऑफ n का प्रोग्राम लिखेंगे तो आप 10 टू दी पावर क्यूब 1000 ऑपरेशंस करेंगे वर्स्ट केस में।",
+      "source": "caption",
+      "english_text": "You will perform 10 operations. Do you understand the meaning of order of n? If you write a program of order of log n then you will do log base to 10 which is three operations in the worst case. If you write a program of order of n², you will do 10² i.e. 100 operations in the worst case. If you write a program of order of n, you will do 10 to the power cubed 1000 operations in the worst case."
+    },
+    {
+      "start_time": 410.24,
+      "end_time": 443.189,
+      "text": "ठीक है? अगर आप ऑर्डर ऑफ़ 2 टू दी पावर n करते हैं तो आप 2 पावर 10 1024 ऑपरेशंस करेंगे वर्स्ट केस में। समझ में आया? क्या मतलब होता है ऑर्डर ऑफ़ कहने का? अब देखिए एग्जांपल n = 10 दिया हुआ है। पूरा डीएसए का खेल क्यों खेलते हैं हम लोग कि टाइम कॉम्प्लेक्सिटी कम से कम निकालना है। हम लोग को ऐसा टाइम कॉम्प्लेक्सिटी का प्रोग्राम लिखना है जो कि पास हो जाए। अब देखिए n अगर 10 है। क्या आप ऑर्डर ऑफ़ n का प्रोग्राम लिख सकते हैं? हां लिख सकते",
+      "source": "caption",
+      "english_text": "ok? If you order n by 2 to the power you will do 2 to the power 10 1024 operations in the worst case. Did you understand? What does it mean to say order off? Now see the example n = 10 is given. Why do we play the whole DSA game? We want to minimize the time complexity. We have to write a program of such time complexity that it can pass. Now see if n is 10. Can you write a program of order of n? yes you can write"
+    },
+    {
+      "start_time": 443.199,
+      "end_time": 475.589,
+      "text": "हैं। क्यों? क्योंकि आप 10 कर रहे हैं। मैक्सिमम कितना परमिटेड है? 10 टू दी पावर एट। 10, 10 टू पावर 8 से कम है? यस। आप ऑर्डर ऑफ n लिख सकते हैं। क्या आप ऑर्डर ऑफ़ n² लिख सकते हैं? यस 100 कम है। n लिख सकते हैं। 1000 हां लिख सकते हैं। आप ऑर्डर ऑफ़ 2 टू दी पावर n लिख सकते हैं? हां, लिख सकते हैं भाई। ये 1024 होता है। क्या आप ऑर्डर ऑफ़ nोरियल लिख सकते हैं। nोरियल मतलब 10ोरियल मतलब 10 * 9 * 8 * 7 1 तक। इसका भी कुछ ना कुछ वैल्यू होता है।",
+      "source": "caption",
+      "english_text": "Are. Why? Because you are doing 10. What is the maximum permitted? 10 to the power at. 10 is less than 10 to the power 8? Yes. You can write order of n. Can you write order of n²? Yes 100 less. Can write n. You can write 1000 yes. Can you write order of 2 to the power n? Yes, you can write brother. This is 1024. Can you write order of noreal. noreal means 10norial means 10 * 9 * 8 * 7 up to 1. This also has some value."
+    },
+    {
+      "start_time": 475.599,
+      "end_time": 506.71,
+      "text": "हमको याद नहीं है। लेकिन 10 टू दी पावर 8 से तो कम होता है। आपको समझ में आ गया? क्या आप ऑर्डर ऑफ़ n टू दी पावर n का प्रोग्राम लिख सकते हैं। इतना भी गंदा प्रोग्राम लिख सकते हैं क्या? इसका वैल्यू 10 टू दी पावर 10 मतलब ये नहीं लिख सकते। क्यों? क्योंकि 10 टू दी पावर 10 बड़ा है 10 टू दी पावर 8 से। तो यहां पे आ के आप रुक गए। अगर आप इस तरीके का प्रोग्राम इस टाइम कॉम्प्लेक्सिटी का प्रोग्राम लिखेंगे तो फंसेगा। इसके ऊपर आप कुछ भी लिखिए वो चल जाएगा। समझ पा रहे हैं हम क्या बोल रहे हैं? ये कब चल रहा था? जब आपको इनपुट दिया",
+      "source": "caption",
+      "english_text": "We don't remember. But 10 to the power is less than 8. Did you understand? Can you write a program to order n to the power n. Can you write such a dirty program? Its value cannot be written as 10 to the power 10. Why? Because 10 to the power 10 is bigger than 10 to the power 8. So after coming here you stopped. If you write a program of this type with this time complexity, it will get stuck. Whatever you write on it will work. Are you able to understand what we are saying? When was this going on? when you were given input"
+    },
+    {
+      "start_time": 506.72,
+      "end_time": 541.269,
+      "text": "हुआ है n = 10 कहां है? यहां पे n = 10 में आप कितना गंदा प्रोग्राम लिख सकते हैं? यहां तक लिख सकते हैं। ये वाला प्रोग्राम तो आप नहीं लिख सकते हैं। कितना भी आप कोशिश करिए। अगला एग्जांपल पे आते हैं। n आपको दिया हुआ है 1000। वर्स्ट केस में क्या आप ऑर्डर ऑफ़ n का लिख सकते हैं? 1000 हां, लिख सकते हैं। ऑर्डर ऑफ़ n² लिख सकते हैं? ये कितना हो जाएगा? 1000 का स्क्वायर मतलब 10 टू दी पावर सिक्स। अभी भी ये है 10 टू पावर 8 से कम है। लिख सकते हैं। क्या आप ऑर्डर ऑफ़ n लिख सकते हैं? ये कितना है? 10 टू दी पावर 9 ये आप नहीं लिख",
+      "source": "caption",
+      "english_text": "Where is n = 10? How dirty a program can you write when n = 10? Can even write. You cannot write this program. No matter how hard you try. Coming to the next example. n is given to you 1000. Can you write the order of n in the worst case? 1000 Yes, can write. Can write order of n²? How much will this be? 1000 squared means 10 to the power six. This is still 10 to the power less than 8. Can write. Can you write the order of n? How much is this? 10 to the power 9 you don't write this"
+    },
+    {
+      "start_time": 541.279,
+      "end_time": 575.59,
+      "text": "सकते हैं क्योंकि 10 टू पावर 9 10 टू पावर 8 से बड़ा है। तो इस अगर n का इनपुट का साइज़ 1000 है उस प्रोग्राम में तो आपको n से कम का प्रोग्राम लिखना पड़ेगा। समझ पा रहे हैं आप? कि आप पहले सोचते थे कि क्यों ऐसा कर रहे हैं? मतलब क्यों n log n चलता है और क्यों n² नहीं चलता है वो इसलिए चलता है और नहीं चलता है। क्यों? क्योंकि 10 टू दी पावर 8 ऑपरेशन अलाउड है। n इनपुट साइज है। उस हिसाब से आप अपना प्रोग्राम ऑप्टिमाइज करते हैं। अगला एग्जांपल पे आइए। n = 10 टू दी पावर 5 है। दिया हुआ है आपको। क्या आप ऑर्डर ऑफ़ n लिख सकते हैं?",
+      "source": "caption",
+      "english_text": "Because 10 to the power 9 is bigger than 10 to the power 8. So if the size of input n is 1000 in that program then you will have to write a program less than n. Are you able to understand? That you first wondered why they were doing this? Meaning why n log n runs and why n² does not run, that is why it runs and does not run. Why? Because 10 to the power 8 operation is allowed. n is the input size. You optimize your program accordingly. Come to the next example. n = 10 to the power is 5. It has been given to you. Can you write the order of n?"
+    },
+    {
+      "start_time": 575.6,
+      "end_time": 609.03,
+      "text": "10 टू दी पावर 5 लिख सकते हैं। क्या आप ऑर्डर ऑफ़ n² लिख सकते हैं? ये हो जाएगा 10 टू दी पावर 10 नहीं लिख पाएंगे अब। ये बड़ा है 10 टू दी पावर 8 से। तो इसका कहने का मतलब कि n का वैल्यू जब 10 टू दी पावर 5 हो तो आप n² भी नहीं लिख सकते हैं। देखिए ऊपर आप लिख पा रहे थे लेकिन यहां आप n लिख सकते हैं। बस n लिख सकते हैं। एक और चीज आप कर सकते हैं। n log n एक बहुत फेमस वो है टाइम कॉम्प्लेक्सिटी है। n log n ऑर्डर ऑफ़ n log n लिख सकते हैं। n log n कितना होगा? 10 टू दी पावर 5 * 10 पावर 5 का लॉग",
+      "source": "caption",
+      "english_text": "You can write 10 to the power 5. Can you write order of n²? This will become 10 to the power, 10 will not be written now. This is bigger than 10 to the power 8. So this means that when the value of n is 10 to the power 5, then you cannot even write n². See above you were able to write but here you can write n. Can just write n. There's one more thing you can do. n log n is a very famous one which is time complexity. Can write n log n order of n log n. What will be n log n? Log of 10 to the power 5 * 10 to the power 5"
+    },
+    {
+      "start_time": 609.04,
+      "end_time": 638.71,
+      "text": "बेस टू में ये कितना आता है? 10 टू पावर 5 का लॉग आ जाएगा। 10 करेंगे मतलब 30 से तो कम ही होगा। 30 से कम होगा। 30 तक जाते-जाते बहुत बढ़ जाता है। इसकी वैल्यू क्या होगी? 30 * 10 टू दी पावर 5 = 3 * 10 टू दी पावर 6 क्या ये नंबर 10 टू दी पावर 8 से कम है? हां, कम है। इसीलिए इसीलिए n log n चल जाता है और n² नहीं चलता है। समझ में आया? क्यों n log n चलता है? क्यों n² इसका सबका साइंस है। कोई जादू नहीं है।",
+      "source": "caption",
+      "english_text": "How much does it cost in base two? The log of 10 to the power 5 will appear. If we do 10, it will be less than 30. Will be less than 30. It increases a lot as you reach 30. What will be its value? 30 * 10 to the power 5 = 3 * 10 to the power 6 Is this number less than 10 to the power 8? Yes, it is less. That's why n log n works and n² doesn't. Did you understand? Why does n log n move? Why n² is the science of it all. There is no magic."
+    },
+    {
+      "start_time": 638.72,
+      "end_time": 673.67,
+      "text": "कोई कहा नहीं है कि ऐसा चलेगा। अब अगले एग्जांपल पे आइए। n = 10 टू दी पावर 8 है। इस केस में n चलेगा चल जाएगा। 10 टू पावर 8 ही चल जाएगा। n log n चलेगा कि नहीं? नहीं चलेगा। 10 टू दी पावर 8 * log 10 टू दी पावर 8। अब देखो ये कुछ भी होगा तो कुछ ना कुछ तो नंबर होगा। 3 4 5 6 30 80 कुछ तो ऑलरेडी ये नंबर है। आप इससे कुछ भी पॉजिटिव नंबर इंटू करेंगे तो ये 10 टू दी पावर 8 से बड़ा हो जाएगा। इसीलिए जब n का वैल्यू 10 टू पावर 8 हो तो सिर्फ ऑर्डर ऑफ़ n चलेगा। ऑर्डर ऑफ़ n log n भी नहीं चलेगा।",
+      "source": "caption",
+      "english_text": "No one has said that this will work. Now come to the next example. n = 10 to the power is 8. In this case n will work. 10 to the power 8 will do. Will n log n work or not? Will not do. 10 to the power 8 * log 10 to the power 8. Now look, if it is anything, there will be some number or the other. 3 4 5 6 30 80 Something is already this number. If you put any positive number into it, it will become greater than 10 to the power 8. That is why when the value of n is 10 to the power 8 then only the order of n will work. Order of n log n will also not work."
+    },
+    {
+      "start_time": 673.68,
+      "end_time": 706.79,
+      "text": "और एक एक्सट्रीम एग्जांपल देखिए। n का वैल्यू है 10 टू दी पावर 9. इस केस में इस केस में क्या ऑर्डर ऑफ़ n चलेगा जो कि 10 टू दी पावर 9 ऑपरेशन करेगा? नहीं नहीं चलेगा। क्यों नहीं चलेगा? क्योंकि ये नंबर कम है। 10 टू दी पावर 8 से कम है। कम है, कम है। इस केस में आपको log n का लिखना पड़ेगा। आपको ऑर्डर ऑफ़ log n log n नहीं सिर्फ log n जो कि log 10 टू दी पावर 9 इसका आंसर आता है 30 क्या ये चलेगा हां 30 कम है 10 टू पावर 8 से ये चल जाएगा ऐसे डिसाइड होता है कि कौन सा प्रोग्राम में",
+      "source": "caption",
+      "english_text": "And look at an extreme example. The value of n is 10 to the power 9. In this case, what will be the order of n which will perform 10 to the power 9 operation? No it won't do. Why won't it work? Because this number is less. 10 to the power is less than 8. It's less, it's less. In this case you will have to write log n. You need the order of log n, not log n, just log n which is log 10 to the power 9. The answer is 30, will it work? Yes, 30 is less than 10 to the power 8, it will work. This is how it is decided which program."
+    },
+    {
+      "start_time": 706.8,
+      "end_time": 735.99,
+      "text": "कौन सा आपको टाइम कॉम्प्लेक्सिटी यूज़ करना है। समझ में आया? ये बहुत कम जगह अवेलेबल है। बहुत कम लोगों को पता है। बहुत कम लोग इसको सिखाते हैं पता नहीं क्यों। लेकिन ये जानना चाहिए कि इस तरीके से होता है। अब अगले पार्ट पे आते हैं। अब इतना सारा हम आर्डर ऑफ़ n और आर्डर ऑफ़ n, log n इसका बात कर दिए। निकलता कैसे है? अब बताते हैं कैसे निकलता है? अभी हम आपको क्या बताएं कि सिंपल ऑपरेशंस। ठीक है? सिंपल ऑपरेशंस।",
+      "source": "caption",
+      "english_text": "Which time complexity do you want to use? Did you understand? This is a very limited space available. Very few people know. I don't know why very few people teach it. But you should know that it happens this way. Now let's come to the next part. Now we have talked so much about order of n and order of n, log n. How does it come out? Now let us tell you how it turns out? What can we tell you now that simple operations. Ok? Simple operations."
+    },
+    {
+      "start_time": 736.0,
+      "end_time": 762.949,
+      "text": "सिंपल ऑपरेशंस में कितना टाइम लगता है? वन। इसको हम लोग ऑर्डर ऑफ वन भी लिखते हैं। इसको आप मान के चलिए वन लगता है। फॉर एग्जांपल अब अभी और एक बात ऑर्डर ऑफ़ जब हम लोग जब हम लोग क्या बोलते हैं? ऑर्डर ऑफ़ वन और ऑर्डर ऑफ़ n में क्या अंतर है? ऑर्डर ऑफ़ वन मतलब ये नहीं है कि इसको चलने में एक टाइम एक यूनिट टाइम लग रहा है। ऐसा हम लोग को लगता है। सोचना भी चाहिए। लेकिन इसका मतलब इसमें कांस्टेंट टाइम लगता है।",
+      "source": "caption",
+      "english_text": "How much time does simple operations take? Forest. We also write this as Order of One. You can consider it as a forest. For example, now one more thing out of order, when we say what do we say? What is the difference between order of one and order of n? Order of one does not mean that it is taking one unit time to run. We think so. You should also think. But this means it takes constant time."
+    },
+    {
+      "start_time": 762.959,
+      "end_time": 796.55,
+      "text": "क्या बोल रहे हैं हम? फिर से समझिए। बहुत इंपॉर्टेंट चीज़ है। ऑर्डर ऑफ़ वन का मतलब ये नहीं कि उसमें वन टाइम लगता है। इसमें कॉन्स्टेंट टाइम लगता है। इसका मतलब कि ये आपके इनपुट पे डिपेंडेंट नहीं है। ये आपके इनपुट पे डिपेंडेंट नहीं है। कहने का मतलब अगर आप प्रिंट हेलो कर रहे हैं फॉर एग्जांपल। तो आपके इनपुट का साइज n = 1 हो तो भी इसमें ऑर्डर ऑफ वन मतलब कांस्टेंट टाइम इसमें कुछ भी लग सकता है। फॉर एग्जांपल इसमें 3 सेकंड लग रहा है। जस्ट फॉर एग्जांपल तो भी इसमें 3 सेकंड लगेगा। आपका",
+      "source": "caption",
+      "english_text": "What are we saying? Understand again. It is a very important thing. Order of one does not mean that it takes one time. It takes constant time. This means that it is not dependent on your input. It is not dependent on your input. That is to say, if you are printing hello for example. So even if the size of your input is n = 1, it may take anything of the order of one i.e. constant time. For example it is taking 3 seconds. Even just for example it will take 3 seconds. Yours"
+    },
+    {
+      "start_time": 796.56,
+      "end_time": 829.829,
+      "text": "n 100 हो जाएगा तो भी इसमें 3 सेकंड लगेगा। आपका n 1000 हो जाएगा तो भी इसमें 3 सेकंड लगेगा। तो ये इनपुट पे डिपेंडेंट नहीं है। ये कॉन्स्टेंट टाइम है। ये 3 सेकंड लगेगा ही लगेगा। तुम कुछ भी करो। तुम कोई भी एरे लाओ, कोई भी n लाओ, कोई भी लिंक लिस्ट लाओ, इतना लगेगा ही लगेगा। इसीलिए इसको हम लोग बोलते हैं कि ये कॉन्स्टेंट वो है। टाइम कॉम्प्लेक्सिटी है। कभी भी आपको दिखे ऑर्डर ऑफ वन मतलब कॉन्स्टेंट। ये इनपुट पे डिपेंडेंट नहीं है। जैसे ही आर्डर ऑफ़ के अंदर n आ गया। n से जुड़ा हुआ कोई भी आ गया। ये इनपुट पे",
+      "source": "caption",
+      "english_text": "Even if n becomes 100 it will take 3 seconds. Even if your n becomes 1000 it will take 3 seconds. So it is not dependent on input. This is constant time. This will take only 3 seconds. You do anything. You bring any array, any n, bring any linked list, it will take a lot. That is why we call it that this constant is that. There is time complexity. Whenever you see order of one, it means constant. It is not dependent on input. As soon as n came inside the order off. Anyone connected to n came. on this input"
+    },
+    {
+      "start_time": 829.839,
+      "end_time": 862.23,
+      "text": "डिपेंडेंट है। जैसे आपका इनपुट बढ़ेगा, जैसे आपका इनपुट बढ़ेगा, वैसे आपका टाइम भी इसके साथ-साथ बढ़ेगा। इसका मतलब यह होता है। ठीक है? अब आ जाते हैं कि निकालते कैसे हैं? ऑर्डर कैसे निकालते हैं? ऑर्डर ऑफ n जानते कैसे हैं? फॉर एग्जांपल आप एक प्रोग्राम लिखिए। आपके प्रोग्राम में मान लीजिए तीन लाइन है। आपके प्रोग्राम में हेलो है। आप बोलते हैं कि in a = 10 है और इंट b = 20 है और आप रिटर्न कर देते हैं।",
+      "source": "caption",
+      "english_text": "Is dependent. As your input increases, your time will also increase along with it. It means this. Ok? Now let's come to how to remove it? How to place an order? How to know the order of n? For example, write a program. Suppose your program has three lines. Hello in your program. You say int a = 10 and int b = 20 and you return."
+    },
+    {
+      "start_time": 862.24,
+      "end_time": 895.35,
+      "text": "रिटर्न a + b ये आपका प्रोग्राम है। चार लाइन का प्रोग्राम है। इसमें आप एक एरे भी पास कर रहे हैं जिसमें n एलिमेंट्स हो सकते हैं। n आपका इनपुट है। इस प्रोग्राम का टाइम कॉम्प्लेक्सिटी कैसे निकालेंगे? सबसे पहले बात आपको पहचानना पड़ेगा कि कौन सा चीज सिंपल ऑपरेशन है। मतलब कौन सा चीज सिंपल ऑपरेशन है। सिंपल ऑपरेशन है। मतलब जो इनपुट पे डिपेंडेंट नहीं है। अभी हम बताए थे ना प्रिंट हेलो इनपुट पे डिपेंडेंट नहीं है। कि इसको आप कभी भी चलाएंगे तो सेम टाइम लगेगा। नो मैटर द इनपुट। सिंपल ऑपरेशन आपको आईडेंटिफाई करना",
+      "source": "caption",
+      "english_text": "Return a + b This is your program. There is a four line program. In this you are also passing an array which can contain n elements. n is your input. How to find the time complexity of this program? First of all you have to identify which thing is a simple operation. Meaning, which thing is a simple operation? It is a simple operation. Meaning which is not dependent on input. Just now we told you that print hello is not dependent on input. That whenever you run it, it will take the same time. No Matter the Input. Simple operation to identify you"
+    },
+    {
+      "start_time": 895.36,
+      "end_time": 928.79,
+      "text": "पड़ेगा और जो इनपुट पे डिपेंडेंट है। इनपुट पे डिपेंडेंट है। ये दो सेक्शन आपको आइडेंटिफाई करना पड़ेगा। यहां पे आपको सिंपल ऑपरेशन कौन दिख रहा है? क्या ये लाइन इनपुट पे डिपेंडेंट है? नहीं। इस ये सिंपल है। क्या ये आपके n पे डिपेंड है? इनपुट पे डिपेंडेंट नहीं। इंट = 10 तो वही होगा ना। कभी भी आप चलाएगा तो वही होगा। तो ये सिंपल है। b = 20 इनपुट पे डिपेंडेंट है। नहीं है। कभी भी चलाओगे सेम चलेगा। रिटर्न a + b भी इनपुट पे डिपेंडेंट नहीं है। कुछ भी पास करोगे तो सेम चलेगा। तो ये चारों ऑपरेशन सिंपल ऑपरेशन है। सिंपल ऑपरेशन में टाइम कितना",
+      "source": "caption",
+      "english_text": "And which is dependent on the input. Dependent on input. You will have to identify these two sections. What simple operation do you see here? Is this line input dependent? No. This is this simple. Does it depend on your n? Not dependent on input. Int = 10 so it will be the same. The same thing will happen whenever you drive. So this is simple. b = 20 depends on the input. Not there. Whenever you stir it, it will remain fine. The return a + b is also not dependent on the input. If you pass anything then the same will work. So these four operations are simple operations. How much time does a simple operation take?"
+    },
+    {
+      "start_time": 928.8,
+      "end_time": 958.069,
+      "text": "लगता है? ऑर्डर ऑफ़ वन। ठीक है? अब ये आपके प्रोग्राम का क्या? चार इंडिपेंडेंट सेक्शन भी है। कहने का क्या मतलब है? ये आपका एक इंडिपेंडेंट सेक्शन है। ये लाइन यहीं पे चलता है। यहीं पे खत्म हो जाता है। ये लाइन चलना यहीं से शुरू होता है और यहीं पे खत्म हो जाता है। सिमिलर विद दिस लाइन एंड सिमिलर टू दिस लाइन। मतलब ये चार इंडिपेंडेंट लाइन है जो कंपाइलर शुरू करता है चलाना और बंद कर देता है चलाना। तो आप अपने प्रोग्राम को ऐसे देख सकते हैं। आपका जो प्रोग्राम था अब वो ऐसा दिख रहा है।",
+      "source": "caption",
+      "english_text": "Do you think? Order of One. Ok? Now what about your program? There are also four independent sections. What does it mean to say? This is your independent section. This line runs here. It ends here. This line starts from here and ends here. Similar with this line and similar to this line. Meaning these are four independent lines which the compiler starts running and stops running. So you can see your program like this. Your program now looks like this."
+    },
+    {
+      "start_time": 958.079,
+      "end_time": 983.43,
+      "text": "अगर हम मैथमेटिक्स के टर्म में सोचे तो। पहला लाइन में ऑर्डर ऑफ वन है। ये ऑर्डर ऑफ वन है। ये ऑर्डर ऑफ वन है। ये ऑर्डर ऑफ वन है। चार इंडिपेंडेंट सेक्शन है आपके पास। चार लाइन चार इंडिपेंडेंट सेक्शन बन गया। अब पूरे प्रोग्राम का टाइम कॉम्प्लेक्सिटी कैसे निकालते हैं? क्या सबको जोड़ देते हैं कि ऑर्डर ऑफ़ वन इंटू आप अगर फोर टाइम्स कर देंगे तो ऐसा तो नहीं होता है कि इसका ऑर्डर ऑफ़ फोर लिखते हैं।",
+      "source": "caption",
+      "english_text": "If we think in terms of mathematics. The first in line is the order of one. This is order of one. This is order of one. This is order of one. You have four independent sections. Line four became four independent sections. Now how to find the time complexity of the entire program? Do we add it all up that if you add order of one into it four times, then it doesn't happen that its order of four is written."
+    },
+    {
+      "start_time": 983.44,
+      "end_time": 1011.67,
+      "text": "ऑर्डर ऑफ़ फोर नहीं लिख सकते हैं। क्यों? क्योंकि ऑर्डर ऑफ़ फोर और ऑर्डर ऑफ़ वन में कोई मतलब नहीं है। कोई फर्क नहीं है। फिर से समझिए। हम क्या बोले ऑर्डर ऑफ़ वन का मतलब ये नहीं कि इसमें वन टाइम लगता है। ऑर्डर ऑफ़ फोर का मतलब ये नहीं कि इसमें फोर टाइम लगता है। इसमें कॉन्स्टेंट टाइम लगता हो। कुछ भी हो, फोर हो, 100 हो, 1000 हो, कुछ भी कॉन्स्टेंट है। इसका पूरे प्रोग्राम का टाइम कॉम्प्लेक्सिटी कैसे निकलता है? मैक्सिमम ऑफ टाइम कॉम्प्लेक्सिटी ऑफ़ ऑल इंडिपेंडेंट सेक्शंस।",
+      "source": "caption",
+      "english_text": "Cannot write order of four. Why? Because there is no meaning between order of four and order of one. There is no difference. Understand again. What can we say, order of one does not mean that it takes one time. Order of four does not mean that it takes four times. It takes constant time. Whatever it may be, four, 100, 1000, anything is constant. How is the time complexity of the entire program determined? Maximum Time Complexity of All Independent Sections."
+    },
+    {
+      "start_time": 1011.68,
+      "end_time": 1039.829,
+      "text": "इसको ध्यान से पढ़िए और याद कर लीजिए। ऑल इंडिपेंडेंट सेक्शंस। मतलब कि अगर आपके प्रोग्राम में ऐसा चार सेक्शन है छोटा-छोटा छोटा ऑर्डर ऑफ वन इसमें लग रहा है। ऑर्डर ऑफ वन इसमें लग रहा है। ऑर्डर ऑफ वन इसमें लग रहा है। ऑर्डर ऑफ़ वन इसमें लग रहा है। पूरे प्रोग्राम का टाइम कॉम्प्लेक्सिटी होगा इस चारों का मैक्सिमम जो कि ऑर्डर ऑफ़ वन है। तो यही आपके पूरे प्रोग्राम का टाइम कॉम्प्लेक्सिटी हो जाएगा। समझ में आया इतना बात कि टाइम कॉम्प्लेक्सिटी निकालते कैसे हैं?",
+      "source": "caption",
+      "english_text": "Read it carefully and memorize it. All Independent Sections. Meaning that if there are four such sections in your program, small orders of one are being included in it. Order of one is involved in this. Order of one is involved in this. Order of One is involved. The time complexity of the entire program will be the maximum of these four, which is of the order of one. So this will be the time complexity of your entire program. Have you understood how to calculate time complexity?"
+    },
+    {
+      "start_time": 1039.839,
+      "end_time": 1071.75,
+      "text": "मैक्सिमम ऑफ़ ऑल द इंडिपेंडेंट सेक्शंस। अगला एग्जांपल देखिए। धीरे-धीरे जैसे-जैसे हम लोग जाएंगे आपको क्लियर होता रहेगा। अब अब सबसे पहले इस इस लाइन का क्या कॉम्प्लेक्सिटी है? i &lt; 100 i + ये लूप है और इसमें हम लोग जस्ट प्रिंट कर रहे हैं। प्रिंट हेलो ठीक है? ये ये आपका मान लीजिए इस सेक्शन है प्रोग्राम का। इस सेक्शन का टाइम कॉम्प्लेक्सिटी कितना है? ध्यान से देखिए।",
+      "source": "caption",
+      "english_text": "Maximum of all the independent sections. See the next example. Gradually, as we go, it will become clear to you. Now first of all what is the complexity of this line? i < 100 i + This is a loop and in this we are just printing. print hello ok? Let's assume this is this section of the program. What is the time complexity of this section? Look carefully."
+    },
+    {
+      "start_time": 1071.76,
+      "end_time": 1100.15,
+      "text": "इसमें क्या हो रहा है? I ज़ीरो से है। I ज़ीरो में है। I 100 तक जा रहा है। मतलब 100 टाइम्स ये लूप चलेगा। हर बार आप एक बार हेलो प्रिंट कर रहे हैं। तो ये लूप 100 टाइम्स हेलो प्रिंट कर रहा है। अब क्या ये आपके इनपुट पे डिपेंडेंट है? क्या ये आपके इनपुट पे डिपेंडेंट है? अगर फॉर एग्जांपल आपके प्रोग्राम में एक इनपुट होता जो कि 100 होता। तो ये इसको चलने में कितना टाइम लगेगा? इसको चलने में 100, 100 बार ये प्रिंट हेलो कर रहा है। एक बार प्रिंट हेलो करने में कितना टाइम लगता है?",
+      "source": "caption",
+      "english_text": "What is happening in this? I is from zero. I is in zero. I'm going up to 100. Meaning this loop will run 100 times. Every time you are printing hello once. So this loop is printing hello 100 times. Now is this dependent on your input? Is it dependent on your input? For example, if your program had an input that was 100. So how much time will it take to run? It is printing hello 100, 100 times while it is running. How much time does it take to print hello once?"
+    },
+    {
+      "start_time": 1100.16,
+      "end_time": 1133.669,
+      "text": "कॉन्स्टेंट टाइम। तो इसको चलने में 100 टाइम लगेगा। 100 यूनिट लगेगा। Okay? अगर आपका n = 10 टू पावर 5 है तो भी इसको चलने में 100 ही यूनिट लगेगा। क्योंकि ये तो 100 बार चल रहा है ना। n कुछ भी हो ये तो 100 बार चलेगा। n1 भी हो तो भी ये 100 बार चलेगा। आप n नहीं भी पास करेंगे तो भी ये 100 बार चलेगा। तो ये क्या है? ये इनपुट पे डिपेंडेंट है कि इनपुट से इंडिपेंडेंट है। ये इंडिपेंडेंट है। ये इंडिपेंडेंट है। समझ में आया? इंडिपेंडेंट और डिपेंडेंट क्या होता है? जो इनपुट के बदलने से अगर किसी सेक्शन का टाइम बढ़ जाए या घट जाए तो वो डिपेंडेंट है। जिस सेक्शन को इनपुट से कोई फर्क नहीं पड़ता है वो",
+      "source": "caption",
+      "english_text": "Constant Time. So it will take 100 time to run. It will take 100 units. Okay? Even if your n = 10 to the power 5, it will take only 100 units to run. Because this is happening 100 times. Whatever happens, this will happen 100 times. Even if n is 1, this will run 100 times. Even if you don't pass n, it will run 100 times. So what is this? Is it dependent on input or independent from input? This is independent. This is independent. Did you understand? What is independent and dependent? If the time of any section increases or decreases due to change in input, then it is dependent. The section where the input does not matter"
+    },
+    {
+      "start_time": 1133.679,
+      "end_time": 1166.15,
+      "text": "इनपुट इंडिपेंडेंट है। तो ये इंडिपेंडेंट है। अगला लाइन देखिए। फॉर i = 0 i &lt; ni + और प्रिंट। यहां आपको समझ में आएगा क्या बोल रहे हैं। हेलो और लूप बंद। अब ये देखिए n आपका इनपुट है। n आपका इनपुट है। अब देखिए क्या n के बदलने से इस फॉर लूप का टाइम कॉम्प्लेक्सिटी बदलेगा? हां, बदलेगा। ये लूप क्या कर रहा है? ये लूप n टाइम्स एग्जीक्यूट कर रहा है। n टाइम्स क्या कर रहा है? एक सिंपल ऑपरेशन कर रहा",
+      "source": "caption",
+      "english_text": "Is input independent. So it is independent. Look at the next line. For i = 0 i < ni + else print. Here you will understand what is being said. Hello and loop closed. Now see this n is your input. n is your input. Now see will the time complexity of this for loop change by changing n? Yes, it will change. What is this loop doing? This loop is executing n times. What is the Times doing? performing a simple operation"
+    },
+    {
+      "start_time": 1166.16,
+      "end_time": 1200.31,
+      "text": "है। इस ऑपरेशन का तो ऑर्डर ऑफ़ वन है। टोटल ये फॉर लूप क्या कर रहा है? n * 0 ऑफ़ 1 कर रहा है। मतलब ऑर्डर ऑफ़ n ऑपरेशंस कर रहा है। सिंपल बात है ना? अगर n 10 है तो ये फॉर लूप 10 टाइम्स चलेगा। n 100 है तो ये फॉर लूप 100 टाइम्स चलेगा। n000 है तो ये फॉर लूप 1000 टाइम्स चलेगा। इनपुट के बढ़ने या घटने से फॉर लूप का वो बढ़ रहा है कि कितने बार ये फॉर लूप चलेगा? ये डिपेंडेंट है। ये डिपेंडेंट है। ये डिपेंडेंट है इनपुट पे। इसको हम लोग कहते हैं। अब अब",
+      "source": "caption",
+      "english_text": "Is. There is an order of one for this operation. Totally what is this for loop doing? n * 0 is doing 1. Meaning doing order of n operations. It's a simple thing isn't it? If n is 10 then this for loop will run 10 times. If n is 100 then this for loop will run 100 times. If n000 then this for loop will run 1000 times. How many times the for loop will run as the input increases or decreases? This is dependent. This is dependent. This is dependent on input. We people call this. now now"
+    },
+    {
+      "start_time": 1200.32,
+      "end_time": 1230.39,
+      "text": "देखिए n टाइम्स तो चल रहा है। ये n टाइम्स चल रहा है। हर बार कितने कॉम्प्लेक्सिटी का काम हो रहा है? हर बार ये फॉर लूप n टाइम्स चलेगा। हर बार कितने कॉम्प्लेक्सिटी का काम कर रहा है? ऑर्डर ऑफ़ वन का काम कर रहा है। एक ही प्रिंट कर रहा है ना? प्रिंट करने में वन लगता है। तो इस टोटल का कॉम्प्लेक्सिटी क्या हो गया? अब आपको इनपुट इंटू करना पड़ेगा। n * 1 = आर्डर ऑफ़ n। इसी चीज़ को हम लोग कहते हैं कि कोई प्रोग्राम ऑर्डर ऑफ़ n टाइम ले रहा है। मतलब n टाइम्स कोई काम कर रहा है और ऑर्डर ऑफ़ वन पे लग रहा है हर काम को।",
+      "source": "caption",
+      "english_text": "Look, it's going on for n times. This goes on n times. How much complexity is the work being done each time? Each time this for loop will run n times. How much complexity is the work being performed each time? Doing the work of Order One. Printing only one, right? It takes a forest to print. So what is the complexity of this total? Now you have to enter input. n * 1 = order of n. This is what we call a program taking order of n time. Meaning someone is doing a work n times and every work is being done on the order of one."
+    },
+    {
+      "start_time": 1230.4,
+      "end_time": 1264.87,
+      "text": "तो टोटल काम कितना कर रहे हो? n * 1। समझ में आया कि? फिर बताएं। लूप n टाइम्स चल रहा है। हर टाइम एक कांस्टेंट काम हो रहा है। तो इसीलिए इसका टाइम कॉम्प्लेक्सिटी हो गया ऑर्डर ऑफ n। कोई भी लूप जीरो से n चलेगा तो उसका टाइम कॉम्प्लेक्सिटी हो जाएगा n। समझ में आया? n * 1 अब देखते हैं। इसमें एक और बात है। अब बहुत बच्चों को डाउट आता है। हमको भी आता था। एक काम i &lt; n नहीं चल रहा। n - 1 चल रहा है। i + और यह प्रिंट कर रहा है। अब बताते हैं।",
+      "source": "caption",
+      "english_text": "So how much total work are you doing? n*1. Did you understand that? Then tell me. The loop is running n times. There is a constant work happening all the time. So that's why its time complexity becomes order of n. If any loop runs from zero to n, its time complexity will be n. Did you understand? n*1 now let's see. There is one more thing in this. Now many children have doubts. We also knew. A task i < n is not running. n - 1 is ongoing. i+ and it is printing. Now let us tell."
+    },
+    {
+      "start_time": 1264.88,
+      "end_time": 1298.23,
+      "text": "यह प्रिंट कर रहा है। अब देखिए यह लूप कितने बार चल रहा है? सबसे पहले तो सबसे पहली बात तो यह है कि क्या यह इंडिपेंडेंट लूप है या डिपेंडेंट लूप है? तो ये डिपेंडेंट लूप है। क्यों? क्योंकि n के कारण इस लूप का चेंज हो जाएगा टाइम। लेकिन, पहला वाला लूप कितना चल रहा था? 0 से n तक चल रहा था, तो n टाइम्स चल रहा था। ये वाला लूप बोल रहा है कि ज़ीरो से n - 1 चल रहा है, तो मतलब n - 1 टाइम्स चल रहा है। वही हो रहा है ना? पहला वाला लूप जीरो से लेके n जा रहा था तो ये n था। ये वाला लूप बोल रहा है कि ये है तो ये n - 1 होना चाहिए। इस लूप का टोटल",
+      "source": "caption",
+      "english_text": "It is printing. Now see how many times this loop is running? First things first, is it an independent loop or a dependent loop? So this is a dependent loop. Why? Because the time of this loop will change due to n. But, how long was the first loop going on? was running from 0 to n, so it was running n times. This loop is saying that it is running from zero to n - 1, so it means it is running n - 1 times. That's what is happening isn't it? The first loop was going from zero to n, so this was n. This one loop is saying that if it is there then it must be n - 1. total of this loop"
+    },
+    {
+      "start_time": 1298.24,
+      "end_time": 1331.669,
+      "text": "कॉम्प्लेक्सिटी क्या है? n - 1 * ऑर्डर ऑफ़ 1 तो क्या इसको हम लोग लिखते हैं कि ऑर्डर ऑफ़ n - 1 है? नहीं नहीं। देखिए अगर देखिए ऑर्डर ऑफ़ n - लेकिन लिखना तो यही चाहिए। मैथमेटिकली तो यही लिखना चाहिए। लेकिन जब भी हम लोग ऑर्डर के अंदर ये इसको ऑर्डर बोलते हैं। बिग ओ बोलते हैं। ठीक है? इसके अंदर लिखे जाने वाला कोई भी चीज एक एक्सप्रेशन है। एक एक्सप्रेशन है। मैथ में पढ़ते थे ना एक्सप्रेशन है। मतलब क्वाड्रेटिक एक्सप्रेशन पढ़ते थे आप लोग a² + bx + c वैसा",
+      "source": "caption",
+      "english_text": "What is complexity? n - 1 * Order of 1 So do we write this as order of n - 1? No. No. See if you see the order of n - but this is what is required to be written. This is what should be written mathematically. But whenever we call it an order within an order. Big O speaks. Ok? Anything written inside it is an expression. is an expression. We used to study expressions in math. Meaning, you guys used to read quadratic expression like a² + bx + c."
+    },
+    {
+      "start_time": 1331.679,
+      "end_time": 1366.549,
+      "text": "इस एक्सप्रेशन का हम लोग जब रिजल्ट निकालते हैं, जब हम लोग इसको एनालाइज करते हैं कि इसमें कितना लगेगा? इसमें जो हाईएस्ट पावर वाला चीज है, इसमें जो हाईएस्ट पावर है n का हम लोग उसको कंसीडर करते हैं इसका कॉम्प्लेक्सिटी। मतलब इसमें n का पावर क्या है? वन। वन को आप कैसे लिख सकते हैं? वन को आप लिख सकते हैं n टू दी पावर 0 लिख सकते हैं। तो इस वन के जगह हम लिख सकते थे n टू दी पावर 0 और वन इसमें दो पावर हैं। ये है ये है। हाईएस्ट कौन सा है? वन इसीलिए इसका टाइम कॉम्प्लेक्सिटी हो जाता है ऑर्डर ऑफ n। ऑर्डर ऑफ n - 1, n",
+      "source": "caption",
+      "english_text": "When we find out the result of this expression, when we analyze it, how much will it cost? The thing with highest power in it, the highest power n in it, we consider that as its complexity. Meaning, what is the power of n in this? Forest. How can you write forest? To one you can write n and to the power you can write 0. So instead of this one, we could have written n to the power 0 and one, this is two powers. This is this. Which is the highest? Therefore its time complexity becomes order of n. Order of n - 1, n"
+    },
+    {
+      "start_time": 1366.559,
+      "end_time": 1400.31,
+      "text": "- 1, n + 2, n + 100, n - 50 ये सब डिस्कार्ड हो जाएगा। क्यों? क्योंकि हाईएस्ट पावर इसका वन है। इसीलिए इसका हम लोग लिखते हैं कि इसका कॉम्प्लेक्सिटी भी ऑर्डर ऑफ़ n है। n - 1 से n - 2 से फर्क नहीं पड़ता है। अगर कोई आपको ऐसा बोलता है कि इसका टाइम कॉम्प्लेक्सिटी ये है, ये है। तो क्या करते आप? ऐसा भी तो बोल सकता है ना कि इसका टाइम कॉम्प्लेक्सिटी ये है। सेम काम करना है। n का हाईएस्ट पावर क्या है? यहां पे टू है। यहां पे वन है। यहां n टू दी पॉवर ज़ीरो है। इसका टाइम कॉम्प्लेक्सिटी हो जाएगा ऑर्डर ऑफ़ n²।",
+      "source": "caption",
+      "english_text": "- 1, n + 2, n + 100, n - 50, all these will be discarded. Why? Because the highest power is its one. That is why we write that its complexity is also of the order of n. It doesn't matter from n - 1 to n - 2. If someone tells you that its time complexity is this, it is. So what do you do? It can also be said that its time complexity is this. Same work has to be done. What is the highest power of n? Pay two here. There is a forest here. Here n to the power is zero. Its time complexity will be of order of n²."
+    },
+    {
+      "start_time": 1400.32,
+      "end_time": 1434.149,
+      "text": "ऑर्डर ऑफ़ n² यही वो कारण है। यही वो कारण है। इसीलिए हम बोलते हैं वीडियो लास्ट तक देखा कीजिए। यही वो कारण है कि जब हम लोग टाइम कॉम्प्लेक्सिटी निकालते हैं हम क्या बोले थे? कि अगर आपके पास चार तीन सेक्शन है। इसका आर्डर ऑफ़ वन है। इसका आर्डर ऑफ़ वन है। इसका आर्डर ऑफ़ वन है। तो हम लोग इसका मैक्सिमम ले लेते हैं। मैक्सिमम लेने का मतलब क्या होता है? इसको आप कैसे लिख सकते हैं? टोटल देखिए टाइम तो प्रोग्राम में सम का लग रहा है। आपके प्रोग्राम में अगर ये तीन सेक्शन वन टू और थ्री चल रहा है। टोटल तो कायदे से इनका सम होना चाहिए था। तो मैक्सिमम क्यों होता है? मैक्सिमम इसी",
+      "source": "caption",
+      "english_text": "Order of n² is the reason. This is the reason. That's why we say watch the video till the end. This is the reason why when we think of time complexity, what did we say? That if you have four three sections. Its order is one. Its order is one. Its order is one. So we take its maximum. What does it mean to take maximum? How can you write this? Look at the total time, the program seems to be taking the same amount. If these three sections one two and three are running in your program. By law their total should have been equal. So why is there a maximum? maximum is"
+    },
+    {
+      "start_time": 1434.159,
+      "end_time": 1466.95,
+      "text": "कारण से होता है। इसको आप क्या लिखेंगे? n टू दी पावर 0 + n टू दी पावर 0 + n टू दी पावर ज़ीरो। इसमें हाईएस्ट पावर क्या है? इसमें हाईएस्ट पावर ज़ीरो है। इसीलिए इसका टाइम कॉम्प्लेक्सिटी हो जाता है n टू दी पावर 0 = ऑफ़ वन। इस कारण से हाईएस्ट पावर ऑफ़ n को हम लोग उसका लेते हैं कि ये वर्स्ट कॉम्प्लेक्सिटी है। बाकी को इग्नोर कर देते हैं। इसी कारण से मैक्सिमम लिया जाता है। इतना आप लोग समझ गए होंगे। एक और चीज करके देख लेते हैं। फॉर एग्जांपल अगर आप प्रोग्राम लिखते हैं। आपके प्रोग्राम में दो लाइन है। प्रिंट हेलो ये एक लाइन",
+      "source": "caption",
+      "english_text": "It happens for a reason. What will you write about this? n to the power 0 + n to the power 0 + n to the power zero. What is the highest power in it? The highest power in this is zero. That is why its time complexity becomes n to the power 0 = of one. For this reason, we consider the highest power of n as the one with the worst complexity. Ignore the rest. For this reason the maximum is taken. You guys must have understood this much. Let's try one more thing. For example if you write a program. There are two lines in your program. print hello this one line"
+    },
+    {
+      "start_time": 1466.96,
+      "end_time": 1499.669,
+      "text": "हो गया। और ये है i = 0 i &lt; n i + और ये अपने प्रिंट वर्ल्ड यह आपका प्रोग्राम है। सबसे पहले सेक्शन आइडेंटिफाई कीजिए। सेक्शन इंडिपेंडेंट सेक्शन मतलब कंपाइलर उसको चलाएगा और खत्म कर देगा उस टास्क को। सबसे पहला सेक्शन क्या दिख रहा है? ये इसमें कितना काम हो रहा है? एक काम हो रहा है हेलो कर रहा है। इसका टाइम कॉम्प्लेक्सिटी क्या है? ऑर्डर ऑफ़ वन। अब क्या ये अकेले एक सेक्शन है? क्या हम क्या",
+      "source": "caption",
+      "english_text": "It's done. And this is i = 0 i < n i + and this is your print world, this is your program. First identify the section. Section independent section means the compiler will run it and finish that task. What is the first section visible? How much work is going into this? One thing is happening is doing hello. What is its time complexity? Order of One. Now is this a stand alone section? what we what"
+    },
+    {
+      "start_time": 1499.679,
+      "end_time": 1534.47,
+      "text": "बोल रहे हैं? कि अनडू का आंसर। हां। क्या ये लाइन अकेला एक सेक्शन है? नहीं। नहीं नहीं अकेला सेक्शन नहीं। क्यों? क्योंकि फॉर लूप खत्म नहीं हुआ है। फॉर लूप कब चलता है? फॉर लूप यहां से शुरू होता है। यहां खत्म होता है। तो ये पूरा एक सेक्शन है। ऐसा नहीं आप बोल सकते हैं कि ये लाइन एक सेक्शन है और ये प्रिंट एक सेक्शन है और ये अलग सेक्शन। नहीं। फॉर काम वो काम शुरू कब और खत्म कब? वो छोटा सा जो काम है क्या इसके बजाय क्या इसके अगर ये नहीं रहता। ये लाइन नहीं रहता तो क्या ये लाइन का कोई महत्व था? नहीं था। लेकिन अगर ये लाइन नहीं रहता तो भी ये फॉर लूप चलेगा।",
+      "source": "caption",
+      "english_text": "Are you speaking? That's the answer to undo. Yes. Is this line a single section? No. No no not the only section. Why? Because the for loop has not finished. When does the for loop run? The for loop starts here. It ends here. So this is a whole section. It is not like you can say that this line is one section and this print is one section and this is a different section. No. For work, when does that work start and end? What if that small task is no longer there? If this line does not exist then would this line have any significance? Wasn't. But even if there is no line, this for loop will still run."
+    },
+    {
+      "start_time": 1534.48,
+      "end_time": 1566.549,
+      "text": "अगर यह फॉर लूप नहीं रहता तो भी यह लाइन चलेगा। इसीलिए अलग-अलग सेक्शन है। अगर ये लाइन नहीं रहेगा तो इस लाइन का महत्वता कम हो जाएगा। इसीलिए ये एक अलग सेक्शन है। ये एक अलग सेक्शन है। समझ गए? इसका टाइम कॉम्प्लेक्सिटी क्या है? अभी हम लोग देख लिए थे। ऑर्डर ऑफ़ n। टोटल प्रोग्राम का टाइम कॉम्प्लेक्सिटी क्या है? सबको सम कर दो भाई। वन को सम कर दो, n को सम कर दो। लिख दो 1 + n हाईएस्ट पावर क्या है? इसका वन है। यहां पे इंटू n टू दी पावर ज़ीरो है। हाईएस्ट वाला उठा लो। ऑर्डर ऑफ़ n। इस प्रोग्राम का टोटल कॉम्प्लेक्सिटी आ गया।",
+      "source": "caption",
+      "english_text": "This line will run even if there is no for loop. That's why there are different sections. If this line is not there then the importance of this line will reduce. That's why this is a separate section. This is a separate section. Understand? What is its time complexity? We had just seen it. Order of n. What is the time complexity of the total program? Make everyone equal, brother. Make one even, make n even. Write what is 1 + n highest power? It has a forest. Here pe into n to the power is zero. Pick the highest one. Order of n. The total complexity of this program has reached."
+    },
+    {
+      "start_time": 1566.559,
+      "end_time": 1599.59,
+      "text": "ऑर्डर ऑफ़ n। ऐसे हम लोग ये काम करते हैं। एक और लास्ट एग्जांपल देख लीजिए जो कि बहुत यूज़ होता है। फॉर i = 0 i &lt; ni + देखिए। ये पढ़ाने के लिए हो सकता है हम हम लगातार इसमें दो घंटा तक बोल सकते हैं लेकिन जितना जरूरी है उतना बता रहे हैं। अब देखिए अब देखिए अब थोड़ा वो होगा j &lt; n + प्रिंट हेलो",
+      "source": "caption",
+      "english_text": "Order of n. This is how we do this work. Let's look at one last example which is used a lot. For i = 0 i < ni + see. We may talk continuously for two hours to teach this but we are telling only as much as is necessary. Now look now look now a little that will be j < n + print hello"
+    },
+    {
+      "start_time": 1599.6,
+      "end_time": 1628.63,
+      "text": "ये आपका प्रोग्राम है। अब बताइए अब इसमें क्या हो रहा है? पहले पढ़ते हैं इसको। एक आई लूप चल रहा है। कहां से कहां तक चल रहा है? सबसे पहला बात इनपुट डिपेंडेंट है कि इनपुट इंडिपेंडेंट है? इनपुट डिपेंडेंट है। ये तो इनपुट डिपेंडेंट है। ये कितना बार चल रहा है? n टाइम्स। जीरो से n चल रहा है ना भाई? n टाइम्स चल रहा है। तो इसको लिख लेते हैं। ये n टाइम्स चल रहा है। पहले जब हम लोग फॉर लूप लिखे थे तो क्या हो रहा था? हर बार प्रिंट हो रहा था। तो हर बार एक काम कर रहे थे।",
+      "source": "caption",
+      "english_text": "This is your program. Now tell me what is happening in this? Let's read this first. There is an eye loop going on. From where to where is it going? First of all, is it input dependent or input independent? Is input dependent. This is input dependent. How often does this happen? n Times. Zero to n is going on, right brother? n times is going on. So let's write this down. This goes on n times. What was happening when we first wrote the for loop? It was being printed every time. So each time he was doing one thing."
+    },
+    {
+      "start_time": 1628.64,
+      "end_time": 1660.63,
+      "text": "लेकिन ये फॉर लूप यहां से शुरू होता है और यहां खत्म होता है। इसके बीच में ये वाला फॉर लूप है। ये नेस्टेड फॉर लूप है। फॉर लूप के अंदर फॉर लूप। अब इसको पहले देखते हैं। ये क्या कर रहा है? सबसे पहला बात इनपुट डिपेंडेंट है कि इंडिपेंडेंट है? डिपेंडेंट है। ज़ीरो से n जा रहा है, n से बदलेगा या घटेगा? ये n टाइम्स चल रहा है। ये वाला फॉर लूप क्या कर रहा है? ये वाला फॉर लूप अब हेलो प्रिंट कर रहा है। ये हेलो प्रिंट कर रहा है। इसको वन। तो क्या हो रहा है? ऊपर ऊपर से जब देखेंगे तो क्या हो रहा है? i चल रहा है n टाइम्स।",
+      "source": "caption",
+      "english_text": "But this for loop starts from here and ends here. This one in the middle is the for loop. This is a nested for loop. For loop inside for loop. Now let's look at this first. What is he doing? First of all, is it input dependent or independent? Is dependent. Going from zero to n, will n change or decrease? This goes on n times. What is this for loop doing? This for loop is now printing hello. It is printing hello. This one. So what's happening? What is happening when we look from above? i is running n times."
+    },
+    {
+      "start_time": 1660.64,
+      "end_time": 1687.51,
+      "text": "हर बार क्या हो रहा है? j चल रहा है n टाइम्स। जे रन n टाइम्स। J हर बार आर्डर ऑफ वन का काम कर रहा है। ये हो रहा है। इसका क्या मतलब है? अगर आपका N 3 है। 1 2 3 आपका i पहले वन पे आया। i वन से थ्री तक चलेगा। हर बार क्या हो रहा है? जे भी थ्री टाइम्स चल रहा है। जे थ्री टाइम चल रहा है ना? जे भी तो एन बार चल रहा है।",
+      "source": "caption",
+      "english_text": "What's happening every time? j is running n times. J Run n Times. J is doing the work of order of one every time. This is happening. What does it mean? If your N is 3. 1 2 3 Your i comes first on one. i will go from one to three. What's happening every time? J is also walking three times. J Three time is going on right? J is also running n times."
+    },
+    {
+      "start_time": 1687.52,
+      "end_time": 1716.47,
+      "text": "ओके। i खत्म हो गया। इसमें क्या होगा? जे फिर से चलेगा। जे फिर से चलेगा थ्री टाइम्स। अच्छा। I3 पे आया। J फिर से थ्री टाइम्स चल रहा है। J फिर से थ्री टाइम्स चल रहा है। टोटल नंबर ऑफ सिंपल ऑपरेशन कितना हो गया? तीन तीन तीन 9 अगर आप इसको फोर तक का देखेंगे। 1 2 3 4 I वन पे आया। ये 1 2 3 4 सिमिलरली",
+      "source": "caption",
+      "english_text": "OK. i finished. What will happen in this? J will walk again. J will run again three times. Good. Came on i3. J is moving again three times. J is moving again three times. What is the total number of simple operations? Three three three 9 if you look at it up to four. 1 2 3 4 I came to the forest. This 1 2 3 4 similar"
+    },
+    {
+      "start_time": 1716.48,
+      "end_time": 1749.909,
+      "text": "1 2 3 4 सिमिलरली 1 2 3 4 सिमिलरली 1 2 3 4 नंबर ऑफ सिंपल ऑपरेशन कितना हो गया? 4 8 12 16 देख रहे हैं पैटर्न? इसका क्या मतलब है? n = 3 है। नंबर ऑफ सिंपल ऑपरेशन हो गया 3 * 3 9 n = 4 है। ये हो गया 4 * 4 16 इसका टाइम कॉम्प्लेक्सिटी क्या है? ऑर्डर ऑफ़ n² ऐसा क्यों हुआ? क्योंकि क्योंकि बाबू",
+      "source": "caption",
+      "english_text": "1 2 3 4 Similarly 1 2 3 4 Similarly 1 2 3 4 What is the number of simple operations? 4 8 12 16 See the pattern? What does it mean? n = 3. Number of simple operations done is 3*39n=4. This becomes 4 * 4 16. What is its time complexity? Order of n² Why did this happen? because because babu"
+    },
+    {
+      "start_time": 1749.919,
+      "end_time": 1782.549,
+      "text": "i n टाइम्स चल रहा है। हर बार ये n का काम कर रहा है। इसमें j भी चल रहा है जो कि n टाइम्स चल रहा है। j हर बार वन का काम कर रहा है। तो इसका टोटल टाइम कॉम्प्लेक्सिट क्या हुआ? बोले थे इंटू करना है। पिछले बार भी किए थे। n * n * 1 = n²। इस चीज़ का टाइम कॉम्प्लेक्सिटी हो गया n²। अगर इसमें एक तीसरा फॉर लूप रहता जो भी n बार चल रहा है तो इसका होता n * n * n * 1 n ऐसे टाइम कॉम्प्लेक्सिटी बढ़ता है। तो आप अगर नेस्टेड लूप लिखते हैं तो उसका टाइम कॉम्प्लेक्सिटी सीधा स्क्वायर हो जाता है।",
+      "source": "caption",
+      "english_text": "i n Times is going on. Every time it is doing n's work. It also has j running which is running n times. j is doing forest work every time. So what is its total time complexity? Said to do intu. Did it last time also. n * n * 1 = n². The time complexity of this thing became n². If there was a third for loop in it which would run n times then it would be n * n * n * 1 n. In this way the time complexity increases. So if you write a nested loop, its time complexity becomes square."
+    },
+    {
+      "start_time": 1782.559,
+      "end_time": 1815.029,
+      "text": "ये इसका मतलब है। अब लास्ट एग्जांपल आपका एक प्रोग्राम है भाई। आप ये कर रहे हैं। हां, एक और चीज सॉर्ट का टाइम कॉम्प्लेक्सिटी n log n होता है। ठीक है? अब ये क्यों होता है? ये रिकर्शन से मैथ से होता है बाद में सिखाएंगे। अभी के लिए याद रखिए। प्रिंट हेलो। ठीक है? फॉर i = 0, i &lt; n i + और ये कर रहा है प्रिंट हेलो।",
+      "source": "caption",
+      "english_text": "This is what it means. Now the last example is your program brother. You are doing this. Yes, one more thing sort has time complexity n log n. Ok? Now why does this happen? This is done through recursion in math, we will teach it later. Remember that for now. print hello. Ok? For i = 0, i < n i + and it is printing hello."
+    },
+    {
+      "start_time": 1815.039,
+      "end_time": 1844.63,
+      "text": "बहुत अच्छी बात है। अब सॉर्ट अगर हम एरे को सॉर्ट कर रहे हैं। a डॉट बिगिन a डॉट एंड एरे का लेंथ n है। ये आपका प्रोग्राम है। आप ऐसा प्रोग्राम लिखें जो कि हम लोग लिखे भी थे। टू सम में याद करिए। ऐसा ही सिमिलर एस एग्जैक्ट यही प्रोग्राम था उसमें। था कि नहीं था? सॉर्ट और लूप और बाकी चीज। अब बताइए सबसे पहले सेक्शन आइडेंटिफाई कर लो। सबसे पहला काम करो। क्या ये सेक्शन इंडिपेंडेंट है? क्या ये सेक्शन किसी और से रिलेटेड है? नहीं।",
+      "source": "caption",
+      "english_text": "This is a very good thing. Now sort if we are sorting array. a dot begins a dot end array has length n. This is your program. You write a program which we had also written. Remember in two. There was such a similar exact program in it. Was it or wasn't it? Sort and loop and the rest. Now tell me, first identify the section. Do the first thing. Is this section independent? Is this section related to something else? No."
+    },
+    {
+      "start_time": 1844.64,
+      "end_time": 1876.71,
+      "text": "तो यह आपका सेक्शन वन हो गया। यह क्या एक सेक्शन है? क्या फॉर लूप और सॉर्ट रिलेटेड है? नहीं है। फॉर लूप चला और खत्म हो गया। प्रिंट करके खत्म हो गया। उसके बाद सॉर्टिंग हो रहा है। ये आपका सेक्शन टू है। क्या ये सॉर्टिंग का लाइन किसी से रिलेटेड है? नहीं अपना लाइन है। ये आपका थ्री हो गया। अब क्या बोले थे? हर सेक्शन का टाइम कॉम्प्लेक्सिटी निकाल लो। सेक्शन वन का टाइम कॉम्प्लेक्सिटी क्या है? प्रिंट हेलो। प्रिंट हेलो का कुछ नहीं होता है। ऑर्डर ऑफ़ वन। सेक्शन टू का कॉम्प्लेक्सिटी क्या है? अभी सीखे थे। i n टाइम्स चल रहा है हर बार वन काम हो रहा",
+      "source": "caption",
+      "english_text": "So this is your section one. What a section is this? Are for loop and sort related? Not there. The for loop runs and ends. Printing is finished. After that sorting is happening. This is your section two. Is this sorting line related to anything? No, it's my line. This is your three. Now what did you say? Find out the time complexity of each section. What is the time complexity of section one? print hello. Nothing happens with print hello. Order of One. What is the complexity of section two? Just learned. i n Times is going on every time one work is getting done"
+    },
+    {
+      "start_time": 1876.72,
+      "end_time": 1911.43,
+      "text": "है। ऑर्डर ऑफ n सेक्शन थ्री क्या है? शॉर्ट में n log n लगता है। अभी याद कर लीजिए। धीरे-धीरे बताएंगे। अब टोटल टाइम कॉम्प्लीसिटी सम कर दो। 1 + n + n log n क्या बोले थे? अब कोई बोलेगा कि इसमें n का पावर कहां है? तो n का पॉवर n log n को लिखते हैं n * n 1 / 2। ठीक है? n / 2 इसका होता है n 3 / 2। log n को जो लोग नहीं जानते हैं n टू दी पावर अच्छा ऐसा नहीं होता है क्या अच्छा रूट का हम सोचे स्क्वायर रूट है कोई बात नहीं समझने के",
+      "source": "caption",
+      "english_text": "Is. What is order of n section three? In short it appears as n log n. Remember it now. Will tell you slowly. Now sum the total time complexity. 1 + n + n log n What did you say? Now someone will say where is the power of n in this? So n to the power n log n is written as n * n 1 / 2. Ok? n / 2 means n 3 / 2. For those who don't know log n, n to the power, well, it doesn't happen like that, what good root should we think of as square root, no need to understand."
+    },
+    {
+      "start_time": 1911.44,
+      "end_time": 1943.75,
+      "text": "लिए ठीक है अभी ये आपके टोटल प्रोग्राम इसमें सबसे बड़ा एलिमेंट सबसे बड़ा क्या है क्या वन बड़ा है नहीं n n log n सबसे बड़ा क्या है n log n सबसे बड़ा है क्योंकि ये सिर्फ n है ये आप n में कुछ इंटू भी कर रहे हैं n log n तो इस टोटल प्रोग्राम का टाइम कॉम्प्लेक्सिटी आ गया n log n ऐसे हम लोग टाइम क्या फिर से रिवाइज करा देते हैं। तीन सेक्शन लिए तीनों का लिखे तीनों को सम में लिखे मैक्सिमम ले लिए। तो ये होता है भाई साहब टाइम",
+      "source": "caption",
+      "english_text": "Okay, now this is your total program. What is the biggest element in it? Is one big? No. What is the biggest? Take three sections and write down the sum of all three. Take the maximum. So this is brother time"
+    },
+    {
+      "start_time": 1943.76,
+      "end_time": 1977.83,
+      "text": "कॉम्प्लेक्सिटी। समझ में आया कि जब n m ऑर्डर ऑफ़ n लॉग n स्क्वायर ये सब बोलता है तो उसका मतलब क्या होता है? अब आपको इतना टाइम कॉम्प्लेक्सिटी आ गया है कि आप अपने जो जिस भी कॉलेज में पढ़ रहे हैं उस टीचर को आप पढ़ा सकते हैं। आपके कॉलेज के किसी टीचर को इतना नहीं आता होगा। ये मेरा गारंटी है। सब लोग याद करवा देता है कि ऑर्डर ऑफ़ n मतलब बिगो होता है, बिग ओमेगा होता है। ये नहीं उसका मैथमेटिकल डेरिवेशन और समझना उसको ऐसे होता है। आज आपको टाइम कॉम्प्लेक्सिटी समझ में आ गया है। आगे जब भी हम लोग बात करेंगे तो आपको समझ में आएगा कि अच्छा n² बोल रहा है तो क्यों बोल",
+      "source": "caption",
+      "english_text": "Complexity. Have you understood what it means when it says n m order of n log n square? Now you have got so much time complexity that you can teach the teacher in whatever college you are studying. No teacher in your college would know this much. This is my guarantee. Let everyone remember that order of n means bigo, big omega. This is not its mathematical derivation and this is how it is understood. Today you have understood time complexity. Whenever we talk further, you will understand that if n² is speaking then why speak?"
+    },
+    {
+      "start_time": 1977.84,
+      "end_time": 2012.31,
+      "text": "रहा है? n² और n log n बोल रहा है तो टोटल टाइम कॉम्प्लेक्सिटी n² कैसे आ गया। n² n log n कभी-कभी हां। कभी-कभी आपको हो सकता है आपको देखने से ना पता चले कि दोनों में बड़ा कौन है। इसका सबसे अच्छा एग्जांपल है n का वैल्यू कोई थ्री ले लीजिए। दोनों का वैल्यू निकाल लीजिए। 3² कितना होता है? 9 और n log n मतलब 3 * log 3 log 3 हमेशा बेस टू में है। इसका आंसर आएगा 3. कुछ दोनों में बड़ा कौन है? नाइन बड़ा है। n² बड़ा है। n² दे दीजिए। कभी भी समझ में ना आए वैल्यू ले के देख लीजिए। समझ में आ",
+      "source": "caption",
+      "english_text": "Is it? If we are talking about n² and n log n then how did the total time complexity come to n². n² n log n Sometimes yes. Sometimes you may not be able to tell by looking who is the elder among the two. The best example of this is, take the value of n any three. Find out the value of both. What is 3²? 9 and n log n means 3 * log 3 log 3 is always in base two. The answer will be 3. Who is bigger among the two? Nine is big. n² is bigger. Give n². If you ever don't understand the value, try it. come to understand"
+    },
+    {
+      "start_time": 2012.32,
+      "end_time": 2046.36,
+      "text": "गया? अगर आपको नहीं समझ में आ रहा है कि n और n² में क्या है? वैल्यू ले लीजिए। टू है इसका वैल्यू टू आ जाएगा। इसका वैल्यू फोर आ जाएगा। तो ये बड़ा है। सिंपल वैल्यू ले के देख लेना है। समझ में आया? तो उम्मीद करते हैं कि बहुत अच्छा लगा हो आप लोग को। ये बहुत इंपॉर्टेंट वीडियो था। और एक अनाउंसमेंट कि कल दिवाली है तो कल हम ट्रैवल कर रहे हैं तो कल का वीडियो शायद ना आए। अब ये वीडियो हम दिवाली के एक दिन पहले बना रहे हैं। हमको मालूम नहीं है कब लाइव जाएगा, कब नहीं जाएगा। लेकिन दिवाली के दिन वीडियो तो नहीं बनाएंगे। अब कैसे भी आए तो आज के लिए बहुत हुआ।",
+      "source": "caption",
+      "english_text": "gone? If you don't understand what is n and n²? Take the value. If it is two, its value will be two. Its value will be four. So this is big. Have to take a simple value and see. Did you understand? So we hope you guys liked it very much. This was a very important video. And an announcement that tomorrow is Diwali so we are traveling tomorrow so tomorrow's video may not come. Now we are making this video a day before Diwali. We don't know when it will go live and when it won't. But will not make a video on Diwali. Now no matter how you come, that's enough for today."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

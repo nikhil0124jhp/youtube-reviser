@@ -1,0 +1,548 @@
+{
+  "video_id": "5Net0Dd7NAA",
+  "video_title": "Solve Any HEAP Question By This Template | Top K frequent Elements Leetcode",
+  "video_number": 64,
+  "chunks": [
+    {
+      "start_time": 1.99,
+      "end_time": 36.79,
+      "text": "हेलो जी, देखिए आप इस चैनल में अगर नए हैं तो जा के आप डिस्क्रिप्शन चेक करिए। इवन कि आप पुराने बच्चे हैं, अगर आप हिप ऑन पेयर्स मतलब जो इसके पिछले वाला वीडियो है इस हिपप सीरीज़ में वो आप नहीं देखे हैं आज का बिल्कुल बंद कर दीजिए यहीं पे बंद कर दीजिए बिल्कुल। खुद समझ में नहीं आएगा वो देख के आइए तब ये समझ में आएगा। अगर आप ये नहीं देखे हैं ना आपको कोड समझ में आएगा ना आपको ये समझ में आएगा कि हम क्या कर रहे हैं। रेकमेंड तो हम ये करेंगे कि कम से कम ये ही प्लेलिस्ट पूरा देख के आप यहां पे आइए। क्योंकि आज हम लोग दो क्वेश्चन करने वाले हैं और पहला क्वेश्चन हम आपको कराएंगे। दूसरा क्वेश्चन आपके लिए एक चैलेंज है कि अगर आपको पहला अच्छे से आ गया है समझ में दूसरे में थोड़ा खुद दिमाग लगाइए। 10% चेंज से दूसरा क्वेश्चन बन जाएगा और ये सब किया करिए। देखिए क्योंकि",
+      "source": "caption",
+      "english_text": "Hello ji, see, if you are new to this channel then go and check the description. Even if you are an old kid, if you are a Hip on Pairs fan, meaning you have not seen the previous video in this Hip series, then stop today's one completely, stop it right here. You will not be able to understand it yourself, come and see it, then you will understand it. If you haven't seen this, you won't understand the code, nor will you understand what we are doing. We would recommend that you come here after at least watching this playlist completely. Because today we are going to ask two questions and we will ask you the first question. The second question is a challenge for you that if you have understood the first question well, then apply your mind to the second one. With 10% change, another question will be created and do all this. see because"
+    },
+    {
+      "start_time": 36.8,
+      "end_time": 71.27,
+      "text": "ये हम क्यों कर रहे हैं? क्योंकि ऐसा नहीं है कि हमको टाइम नहीं है पढ़ाने का। पढ़ा सकता हूं पढ़ाएंगे भी। लेकिन हम लोग भी जब किसी से पढ़ते हैं ना, मान लीजिए कि हम एग्जांपल देते हैं कि हम मान लो स्ट्राइवर से पढ़ रहे थे। तो स्ट्राइवर अपनी पूरे YouTube में कितना? 500 क्वेश्चन ज्यादा थोड़ी कराए होंगे। हम 500 नहीं सॉल्व किए हैं ना। हम 1500 सॉल्व किए हैं। तो वो क्यों हुआ? अगर हम बस उनका वीडियो देखते रहते और जो क्वेश्चन वो करा रहे हैं वही करके सो जाते। तो फिर हम नहीं सीखते ना। तो ये सब करने से आप खुद सीखते हैं। तो अगर हम बस जो बता देंगे आप वो सुन लेंगे उसको जा के कॉपी में नोट कर लिए और लिख लिए फिर आप बहुत कम सीख पाएंगे। तो ये सब आपके लिए चांस है कि हां इससे आपको क्या होगा ना कॉन्फिडेंस आएगा कि चलो ये खुद से",
+      "source": "caption",
+      "english_text": "Why are we doing this? Because it is not that we do not have time to teach. I can teach and will also teach. But when we also study from someone, suppose we give the example that we were studying from a striver. So how much does Striver make in all of YouTube? Must have asked more or less 500 questions. We haven't solved 500, right? We have solved 1500. So why did that happen? If we had just kept watching his video and doing the questions he was asking, we would have fallen asleep. Then we don't learn. So by doing all this you learn yourself. So if you just listen to what we tell you, note it down in your notebook and write it down, then you will be able to learn very little. So all this is a chance for you that yes, what will happen to you or will you get the confidence to do this on your own?"
+    },
+    {
+      "start_time": 71.28,
+      "end_time": 105.109,
+      "text": "हो गया। और ये सब हम इसलिए करते हैं। ये हम इसलिए नहीं करते हैं कि आपको डीमोटिवेट हो जाए ऐसा नहीं। आपके आपका कॉन्फिडेंस बूस्ट हो। कि चलो एक पैटर्न का ये क्वेश्चन हुआ। सिमिलर 10 20% चेंज के साथ अगर हम दूसरा कर पाते हैं तो आपको समझ में आता है कि हां हमको बहुत अच्छे से वो कांसेप्ट आ गया है। तो ये वीडियो देखिएगा ये वाला क्वेश्चन। इस वाले क्वेश्चन के अंत तक आपको हम एक ट्रिक बता देंगे हिप का कि क्या पहचानना है कि कौन सा हिप लगाना है मैक्स कि मीन कहां मैक्स लगाना है कहां मीन लगाना है कैसे करना है सब समझ में आ जाएगा। तो चलिए शुरू करते हैं। आइए पहले तो क्वेश्चन समझाते हैं। बहुत ध्यान से",
+      "source": "caption",
+      "english_text": "It's done. And that's why we do all this. We do not do this so that you get demotivated. May your confidence be boosted. So let's ask this question of a pattern. If we can do another similar 10 with 20% change, then you understand that yes, we have understood that concept very well. So watch this video and answer this question. By the end of this question, we will tell you a trick about the hip, how to identify which hip to put, the mean of max, where to put max, where to put mean, how to do it, everything will be understood. So let's get started. Let us first explain the question. very carefully"
+    },
+    {
+      "start_time": 105.119,
+      "end_time": 139.91,
+      "text": "क्वेश्चन सुनिएगा। हिंदी में आपको बताएंगे। आपको एक एरे दिया हुआ है और इस एरे में आपको रिटर्न क्या करना है? टॉप के फ्रीक्वेंट एलिमेंट्स। टॉप के फ्रीक्वेंट एलिमेंट्स मतलब कि इस एरे में देखिए बहुत सारे एलिमेंट्स हैं। इस एरे में आप देख रहे होंगे कि यूनिक एलिमेंट्स की बात करें तो 1 2 3 4 करके एलिमेंट्स हैं। अच्छा। हर एलिमेंट की कुछ फ्रीक्वेंसी होती होगी। हर एलिमेंट कितने बार भी आया होगा? फॉर एग्जांपल अगर हम वन की बात करें तो वन यहां एक बार आया है। दो बार आया है। तीन बार आया है। तो हम एक बार लिख देते हैं बगल में कि वन तीन बार आया है। ठीक बात है। अच्छा। दो को देखिए। वन बार दो बार तीन बार और कहीं नहीं। ओके। दो भी तीन बार",
+      "source": "caption",
+      "english_text": "Listen to the question. Will tell you in Hindi. You are given an array and what do you have to return in this array? Top frequent elements. Top frequent elements means that there are many elements in this array. You must be seeing in this array that if we talk about unique elements, there are elements in the order 1 2 3 4. Good. Every element must have some frequency. How many times would each element have occurred? For example, if we talk about forest, forest has come here once. Has come twice. Has come three times. So we write once next to it that the forest has come three times. That's right. Good. Look at two. Once, twice, thrice and nowhere else. Ok. two or three times"
+    },
+    {
+      "start_time": 139.92,
+      "end_time": 172.39,
+      "text": "आया है। तीन को देखते हैं। तीन कहां एक बार आया यहां? एक बार, एक बार, एक बार, तो तीन चार बार आया है। तीन टोटल चार बार आया है और चार कितनी बार आया होगा। तो फोर यहां पे एक बार आया है। यहां पे एक बार आया है। तो फोर कितनी बार आया है? दो बार आया है। ठीक बात है। अच्छा। आपको फॉर एग्जांपल इस क्वेश्चन में दिया हुआ है कि k = 2। k = 2 की वैल्यू दी हुई है क्वेश्चन में। अच्छा। आपको क्या बताना है? टॉप के फ्रीक्वेंट एलिमेंट्स मतलब कि इन ये सब इनकी फ्रीक्वेंसी है। इनमें जो टॉप टू फ्रीक्वेंट एलिमेंट्स हैं देखिए टॉप टू फ्रीक्वेंट एलिमेंट सबसे पहले तो थ्री है।",
+      "source": "caption",
+      "english_text": "Has come. Let's look at three. Where did three come here once? Once, once, once, then three or four times. Three total has come four times and how many times four must have come. So Four has been here once. Came here once. So how many times has four come? Has come twice. That's right. Good. For example, you are given in this question that k = 2. The value of k = 2 is given in the question. Good. What do you have to say? Top frequent elements means that these are their frequencies. See the top two frequent elements in these. First of all, there are three."
+    },
+    {
+      "start_time": 172.4,
+      "end_time": 206.869,
+      "text": "सबसे ज्यादा बार थ्री आया है। तो एक तो हो गया थ्री। अगले की बात करें कि मान लीजिए चार बार तो एक ही बार आया है। तीन बार कौन-कौन आए हैं? तो तीन बार आप देखेंगे कि एक और दो दोनों तीन-तीन बार आए हैं। एक और दो में से जो आपका मन करे उसको आप दे सकते हैं। तो आप बोल दीजिए कि वन। तो हम लोग देख सकते हैं कि थ्री और वन ना टॉप टू फ्रीक्वेंट एलिमेंट्स हैं। कितने? टॉप टू। टॉप टू क्यों बोल रहे हैं? क्योंकि k = 2 दिया हुआ है। अगर k3 दिया होता तो आपको टू भी आंसर। k4 दिया होता तो फोर भी आंसर में ऐसा। तो ये आपका सवाल है। और बहुत इंपॉर्टेंट बात ये है ना इसको आपको n log n से लेस कॉम्प्लेक्सिटी में सॉल्व करना है। मतलब n log n नहीं होनी चाहिए आपकी।",
+      "source": "caption",
+      "english_text": "Three has come the maximum number of times. So one becomes three. Talking about the next thing, let's say it has come only once four times. Who have come three times? So three times you will see that one and two have come three times each. You can give whichever one or two you feel like. So you say that one. So we can see that three and one are not the top two frequent elements. How many? Top two. Why are you saying top two? Because k = 2 is given. If k3 had been given then you would have got 2 answer. If k4 had been given then four would have been like this in answer. So this is your question. And the very important thing is that you have to solve it with less complexity than n log n. Meaning yours should not be n log n."
+    },
+    {
+      "start_time": 206.879,
+      "end_time": 240.55,
+      "text": "टाइम कॉम्प्लेक्सिटी की बात है। n log n नहीं होना चाहिए। ये क्वेश्चन में लिखा हुआ है। आप देख पाएंगे कि फॉलो अप में लिखा हुआ होगा कि कि n log n से कम में बनाना भैया इसको। अच्छा। तो टॉप के फ्रीक्वेंट एलिमेंट तो सबसे पहले तो q या हिप का क्वेश्चन है। तो पहले दिन का पैटर्न याद कीजिए। अगर आपको कोई दिया हुआ है एरे और आपको कोई टॉप के या तो मोस्ट के ऐसा कुछ है टॉप के फ्रीक्वेंट ग्रेटर के ग्रेटेस्ट के लार्जेस्ट ऐसा होता है तो वो हिप का क्वेश्चन होता है। और उसके बाद वहां पे मैक्स लगता है कि मीन लगता है इसके लिए भी एक ट्रिक है वो लास्ट में बताएंगे। लेकिन पहले थोड़ा सोचते है कि कैसे इसको करेंगे। मान लीजिए कि आपको हिप",
+      "source": "caption",
+      "english_text": "It is a matter of time complexity. n should not be log n. This is written in the question. You will see that it will be written in the follow up that make it less than n log n. Good. So the top frequent element is first of all the question of q or hip. So remember the pattern of the first day. If you are given an array and you have something like top k or most k, top k frequent, greater k greatest k largest, then it is a hip question. And after that whether it seems max or mean, there is a trick for this also which will be told in the last. But first let's think a little about how to do it. Let's say you have hip"
+    },
+    {
+      "start_time": 240.56,
+      "end_time": 272.31,
+      "text": "की नॉलेज नहीं होती है। मान लीजिए अगर आपको हिप की नॉलेज नहीं होती तो आप क्या करते हैं देखिए। हम क्या करते हैं कि यहां पे सबसे पहले तो यहां पे फ्रीक्वेंसी की बात आई है कि एलिमेंट का फ्रीक्वेंसी के हिसाब से डिसाइड होगा कि टॉप के कौन सा है। एलिमेंट ग्रेटेस्ट लार्जेस्ट नहीं एलिमेंट के फ्रीक्वेंसी के हिसाब से डिसाइड करना है कि टॉप के कौन सा है और वो एलिमेंट रिटर्न करना है। तो एक जो मेरे दिमाग में सलूशन आ रहा है ना सबसे सिंपल सॉल्यूशन क्या आ रहा है कि अगर हम एरे को सॉर्ट कर लेते। अगर अभी ही भूल जाइए, पूरा ही भूल जाइए, सोचना सीखिए कि सोचते कैसे हैं, कैसे सॉल्यूशन तक पहुंचते हैं। हम क्या करते ना कि एरे को सॉर्ट कर देते।",
+      "source": "caption",
+      "english_text": "There is no knowledge of. Suppose if you do not have knowledge of hip then see what you do. What we do is that first of all, here it is a matter of frequency, according to the frequency of the elements, which one is on top. The element has to be decided according to the frequency of the element, not greatest largest, which one is on top and that element has to be returned. So the one solution that comes to my mind is the simplest solution that is if we sort the array. If you forget it now, forget it completely, learn to think, how you think, how you reach solutions. What we would do is sort the array."
+    },
+    {
+      "start_time": 272.32,
+      "end_time": 305.83,
+      "text": "अगर हम एरे को सॉर्ट कर देते तो मेरा एरे कुछ ऐसा दिखने लगता। सॉर्ट करने के बाद मेरा एरे कुछ ऐसा दिखने लगता। 1 1 2 3 3 4 और 4 0 1 2 3 4 5 6 7 8 9 10 11 अगर हम सॉर्ट कर देते तो एरे ऐसा बन जाता। अभी भी लेकिन हम कुछ कर नहीं पाएंगे। अभी आप क्या कर सकते हैं कि हर एलिमेंट की फ्रीक्वेंसी निकाल सकते हैं। हर एलिमेंट की फ्रीक्वेंसी कैसे निकाल सकते हैं कि आप अब देखिए जितने भी वन होंगे सब एक जगह आ",
+      "source": "caption",
+      "english_text": "If we had sorted the array, my array would have looked something like this. After sorting my array would look like this. If we had sorted 1 1 2 3 3 4 and 4 0 1 2 3 4 5 6 7 8 9 10 11, the array would have become like this. Still but we won't be able to do anything. Now what you can do is find the frequency of each element. How can we find out the frequency of every element? Now you can see all the forests coming together at one place."
+    },
+    {
+      "start_time": 305.84,
+      "end_time": 338.87,
+      "text": "जाएंगे। जितने भी वन होंगे सब एक साथ आ जाएंगे। जितने टू होंगे सब एक साथ आ जाएंगे। जितने थ्री होंगे सब एक साथ आ जाएंगे। जितने फोर होंगे सब एक साथ आ जाएंगे। आप ऐसा करके तो वन की फ्रीक्वेंसी निकाल सकते हैं कि वन तीन बार आया है। दो की फ्रीक्वेंसी निकाल सकते हैं कि दो तीन बार आया है। तीन की फ्रीक्वेंसी निकाल सकते हैं कि तीन चार बार आया है। और चार की भी निकाल सकते हैं कि चार दो बार आया है। अच्छा। लेकिन इससे फायदा कुछ नहीं होगा क्योंकि हमको तो सबकी नहीं चाहिए। हमको टॉप के चाहिए। इससे भी सॉर्ट करने से कोई फायदा नहीं हुआ। पहली बात और सॉर्ट करने में ऑलरेडी n login लग ही जाएगा। तो n log में तो आपको नहीं बनाना है।",
+      "source": "caption",
+      "english_text": "Will go. All the forests will come together. All the two will come together. All three will come together. All the four will come together. By doing this you can find out the frequency of one that has come three times. We can find out the frequency of two that two has come three times. We can find out the frequency of three, that three has come four times. And we can also find out that four has appeared twice. Good. But this will be of no use because we do not need everyone. We need top ones. There was no benefit in sorting this also. First of all, it will take login to sort things out. So you don't have to make n log."
+    },
+    {
+      "start_time": 338.88,
+      "end_time": 373.27,
+      "text": "क्वेश्चन में लिखा हुआ है। तो सॉर्ट करने का कोई फायदा नहीं है क्योंकि ये जो फ्रीक्वेंसी निकालना है ये तो आप नॉर्मली भी निकाल सकते थे। आप अगर एरे पे करेंगे अगर आप हैश मैप यूज़ करेंगे। तो आप नॉर्मली भी निकाल सकते थे। तो ठीक है हर एलिमेंट का फ्रीक्वेंसी निकालने का तो काम है नहीं। तो अब k वाले फ्रीक्वेंट एलिमेंट चाहिए। अच्छा। अब आइए और और कुछ सोचते हैं कि अब क्या किया जा सकता है भाई। अब देखते हैं कि क्या-क्या हो सकता है अब इसमें। अब टॉप के देख के समझ में आ रहा है कि यहां पे हिप लगेगा। लेकिन हिप कैसा लगेगा? हिप हिप क्यों? मैक्स हिप लगेगा कि मीन हिप लगेगा? और एक प्रॉब्लम है कि हिप में रखेंगे क्या? जब हम लोग के लार्जेस्ट एलिमेंट किए थे तो हिप में नंबर रख लिए",
+      "source": "caption",
+      "english_text": "It is written in the question. So there is no use in sorting because the frequency you want to find could have been found normally. If you use an array, you will use a hash map. So you could have taken it out normally also. So it is okay, there is no work to find the frequency of every element. So now we need frequent elements with k. Good. Now let us think more about what can be done now brother. Now let's see what can happen in this. Now looking at the top it is clear that the hip will be placed here. But what will the hip look like? Why hip hip? Will it look like max hip or mean hip? And there is a problem whether to keep it in the hip? When we did the largest elements, we kept the numbers in the hip."
+    },
+    {
+      "start_time": 373.28,
+      "end_time": 406.39,
+      "text": "थे। यहां पे क्या रखेंगे भाई? यहां पे देखते हैं क्या रखेंगे। सबसे पहले तो आपको यहां पे टॉप किस पे? टॉप के जो है ना ये क्या है? वो आपको देखना पड़ेगा। पहले वाले क्वेश्चन में कौन सा था? केथ लार्जेस्ट एलिमेंट। तो वो एलिमेंट पे था कि केथ लार्जेस्ट एलिमेंट कौन सा है। यहां पे आपको बताना है कि टॉप के फ्रीक्वेंसी वाले एलिमेंट कौन से है। तो सबसे पहले मेरे हिसाब से आपको हर एलिमेंट की फ्रीक्वेंसी पता होनी चाहिए और वो कहीं पे स्टोर होना चाहिए। हर एलिमेंट की फ्रीक्वेंसी आपको पता होनी चाहिए और वो कहीं पे स्टोर भी होनी चाहिए। तो हम क्या कर सकते है ना कि एक हैश मैप में। एक हैश मैप में हर एलिमेंट और उसका फ्रीक्वेंसी पहले तो",
+      "source": "caption",
+      "english_text": "Were. What will you keep here brother? Let's see what we will keep here. First of all, what is the top pay here? What is this? You will have to see that. Which one was in the previous question? Keith Largest Element. So it was on the element that which is the largest element. Here you have to tell which are the top frequency elements. So first of all according to me you should know the frequency of each element and it should be stored somewhere. You should know the frequency of each element and it should also be stored somewhere. So what can we do instead of a hash map. In a hash map, each element and its frequency are first"
+    },
+    {
+      "start_time": 406.4,
+      "end_time": 441.029,
+      "text": "स्टोर कर लें कि हम कर लें कि वन भाई तीन बार आया है, दो तीन बार आया है, तीन चार बार आया है और चार दो बार आया है। तो ये हम हैश मैप में स्टोर कर लें। एक बार लूप लगा के इसमें कितना टाइम लगेगा? ऑर्डर ऑफ़ n टाइम लगेगा। तो ठीक है। अभी भी हम n log n तक नहीं गए हैं। ऑर्डर ऑफ़ n टाइम लगेगा। अच्छा। अब टॉप के है हिप का यूज़ करना है। इंट्यूटिवली दिमाग में आता है ना कि टॉप के है। टॉप के मतलब कि ज्यादा वाले के तो हम मैक्स हिप क्यों ना यूज़ कर लें? अ मैक्स हिप यूज़ करेंगे तो हो सकता है काम बिल्कुल हो सकता है। तो देखिए उसके बाद आता है कि हिप में रखेंगे क्या? हिप में",
+      "source": "caption",
+      "english_text": "Store it so that we can say that one brother has come three times, two has come three times, three has come four times and four has come twice. So we store this in the hash map. How much time will it take once the loop is placed? It will take order of n time. Well then. We still haven't reached n log n. It will take order of n time. Good. Now the top hip has to be used. Intuitively comes to mind and isn't it at the top. If top means big, why don't we use max hip? If you use a max hip then the work can be done at all. So see after that what will be kept in the hip? in the hip"
+    },
+    {
+      "start_time": 441.039,
+      "end_time": 467.11,
+      "text": "एलिमेंट तो नहीं रख सकते हैं। हिप में अगर आप वन को इंसर्ट कर देंगे फिर टू को करेंगे तो उससे कोई फायदा नहीं होगा। हिप में आपको फ्रीक्वेंसी इंसर्ट करनी पड़ेगी। जिस चीज पे आपको टॉप के या जिस चीज पे आपको केथ लार्जेस्ट चाहिए ना वो चीज़ आपको इंसर्ट करनी पड़ेगी। हिप में। लेकिन सिर्फ फ्रीक्वेंसी इंसर्ट करने से भी काम नहीं चलेगा। फॉर एग्जांपल अगर ये 3 4 2 आप हिप में इंसर्ट कर भी लिए और आपको लास्ट में कुछ आंसर मिल भी गया। तो ये तीन तीन 4 2 किसका फ्रीक्वेंसी है? ये कैसे पता चलेगा?",
+      "source": "caption",
+      "english_text": "Can't keep elements. If you insert one in the hip and then do two, it will not be of any benefit. You will have to insert frequency into the hip. You will have to insert the thing on which you want the top or the thing on which you want the largest. In the hip. But just inserting the frequency will not suffice. For example, if you inserted this 3 4 2 in HIP and you also got some answer in the last. So whose frequency is this three three 4 2? How will this be known?"
+    },
+    {
+      "start_time": 467.12,
+      "end_time": 501.83,
+      "text": "ये तो हैशमैप में आप ये पता कर सकते हैं कि वन की फ्रीक्वेंसी कितना है? ये नहीं पता कर सकते कि तीन किसका फ्रीक्वेंसी है? वैल्यू से सर्चिंग नहीं होती है मैप में। हैशप में की से सर्च हो सकता है। कि आप पूछ सकते हैं कि तीन की फ्रीक्वेंसी कितनी बार है? चार बार है। आप ये नहीं पूछ सकते किसी एलिमेंट की फ्रीक्वेंसी चार है। वो एलिमेंट हमको बता दो। ये नहीं होता हैप में। तो आपको हिप में सिर्फ एलिमेंट से तो काम बनेगा ही नहीं क्योंकि एलिमेंट पे तो कुछ करना ही नहीं है। फ्रीक्वेंसी से भी काम नहीं बनेगा सिर्फ क्योंकि टॉप की फ्रीक्वेंसी चाहिए अच्छी बात है आप हिप में इंसर्ट करेंगे। लेकिन वो इंसर्ट करके होगा क्या? वहां से मान लीजिए आपको आंसर मिल गया लास्ट में कि भई मान लीजिए हिप",
+      "source": "caption",
+      "english_text": "In this hashmap, you can find out what is the frequency of a forest? Can't figure out whose frequency is three? Searching by value is not done in the map. Search can be done by key in HashMap. You may ask how many times is the frequency of three? It's four times. You cannot ask whether the frequency of an element is four. Tell us that element. This does not happen in a heap. So you will not be able to work with just the element in hip because there is nothing to be done on the element. Even frequency will not help because top frequency is required, it is good that you will insert it in the hip. But what will happen after inserting it? From there, let's say you got the answer at the end."
+    },
+    {
+      "start_time": 501.84,
+      "end_time": 536.71,
+      "text": "में कुछ करके आपको लास्ट में आंसर मिल जाता है कि चार और तीन ग्रेटेस्ट फ्रीक्वेंसी है। चार और तीन सबसे ज्यादा दो वाले फ्रीक्वेंसी है। लेकिन ये चार किसका फ्रीक्वेंसी है? किस एलिमेंट का फ्रीक्वेंसी है? ये तो पता नहीं है। ये तीन किस एलिमेंट का फ्रीक्वेंसी है? पता नहीं है। आपको फाइनल आंसर में एलिमेंट रिटर्न करना है। फ्रीक्वेंसी नहीं रिटर्न करना है। इसीलिए हिप में हमको दोनों चीजें इंसर्ट करनी पड़ेगी। दोनों चीज़ें का क्या मतलब है? हिप में हमको एक पेयर इंसर्ट करना पड़ेगा। इसीलिए हम पिछला वीडियो पढ़ाए थे हिप ऑन पेयर्स क्योंकि ये बहुत जरूरी है इस क्वेश्चन में। ये क्वेश्चन बिना पेयर के नहीं बन सकता है। हमको हिप में दो चीजें इंसर्ट करनी पड़ेगी। पहली बात तो",
+      "source": "caption",
+      "english_text": "By doing something, you finally get the answer that four and three are the greatest frequencies. Four and three have the highest frequency. But whose frequency are these four? What is the frequency of which element? This is not known. These three are the frequencies of which element? Don't know. You have to return the element in the final answer. Not frequency to be returned. That's why we have to insert both the things in the hip. What do both things mean? We will have to insert a pair in the hip. That's why we taught Hip on Pairs in the last video because it is very important in this question. This question cannot be solved without pair. We will have to insert two things in the hip. first thing"
+    },
+    {
+      "start_time": 536.72,
+      "end_time": 564.63,
+      "text": "हमको फ्रीक्वेंसी इंसर्ट करनी पड़ेगी। पहली बात तो हमको फ्रीक्वेंसी और उस फ्रीक्वेंसी किस एलिमेंट का है वो इंसर्ट करना पड़ेगा। वो फ्रीक्वेंसी किस ये कैसे इंसर्ट होगा? हैश मैप पे लूप लगा के। हैश मैप पे अगर आप लूप लगाएंगे तो आपको दोनों चीज़े मिल जाती हैं। आपको की भी मिल जाता है। आपको वैल्यू भी मिल जाता है। वैल्यू और की उल्टा करके उसको इंसर्ट कर देंगे हीप में। ऐसा करके हमको हिप में इंसर्ट करना पड़ेगा। अच्छा तो पता चल गया कि हिप में क्या इंसर्ट करना है। ओके। लेकिन अब करेंगे क्या है? हिप किस तरीके का है?",
+      "source": "caption",
+      "english_text": "We will have to insert the frequency. First of all, we have to insert the frequency and which element that frequency belongs to. Which frequency and how will it be inserted? By looping over the hash map. If you apply a loop on a hash map, you get both the things. You also get a key. You also get value. By inverting the value and key, we will insert it into the heap. By doing this we will have to insert it in the hip. Well now we know what to insert in the hip. Ok. But what will we do now? What type of hip is it?"
+    },
+    {
+      "start_time": 564.64,
+      "end_time": 598.47,
+      "text": "सबसे पहले तो मैक्स हिप है कि मिन हीप है? इंट्यूटिवली मेरे दिमाग में आता है कि अच्छा टॉप के पूछा गया है तो मैक्स हिप ले लेंगे। ले सकते हैं। देखिए क्या होता है? मान लीजिए आप एक मैक्स हिप बना लेते हैं। आप एक मैक्स हिप बना लेते हैं यहां पे। ये एक हिप है। ये किस तरीके का हिप है? मैक्स हिप है। मैक्स हिप अब यहां पे पेअर है। फ्रीक्वेंसी और एलिमेंट दोनों का रूल डिफाइन होता है कि फ्रीक्वेंसी के हिसाब से ये मैक्स होना चाहिए और एलिमेंट के हिसाब से ये मैक्स होना चाहिए। तो चलिए हम लोग बोलते हैं कि चलो दोनों को मैक्स ले लो। दोनों को मैक्स ले लो। हम लोग कल क्या पढ़े थे? याद करिए कल या परसों जो भी पढ़े थे। इसीलिए हम बार-बार बोल रहे हैं वो नहीं देखे हैं तो ये नहीं समझ में आएगा।",
+      "source": "caption",
+      "english_text": "First of all, is it max hip or min hip? Intuitively it comes to my mind that if asked for a good top then I will take the max hip. Can take. See what happens? Let's say you build a max hip. You create a max hip here. This is a hip. What kind of hip is this? Max is hip. Max Hip is now a Pay Pair here. The rule of both frequency and element is defined that according to the frequency it should be maximum and according to the element it should be maximum. So let's say let's take both of them to the max. Take both to the max. What did we read yesterday? Remember whatever you read yesterday or the day before. That's why we are saying it again and again, if you haven't seen it then you won't understand it."
+    },
+    {
+      "start_time": 598.48,
+      "end_time": 631.91,
+      "text": "बिल्कुल। हीप कैसे डिसाइड करता है कि इस पेयर में से कौन सा एलिमेंट ऊपर जाना चाहिए। वो पहले तो फर्स्ट देखेगा। फर्स्ट अगर उल्टा हुआ मतलब फर्स्ट अगर अलग-अलग हुआ तो फर्स्ट के हिसाब से आप अगर मैक्स बनाया है तो मैक्स होगा। मीन बनाया है तो मिन टॉप पे जाएगा। अगर फर्स्ट सेम हो गया तो वो सेकंड देखेगा। अगर सेकंड उसका अगर अब मीन बनाए हैं तो वैसे उस हिसाब से ऊपर नीचे कर देगा। अच्छा। मान लेते हैं थोड़ी देर के लिए कि हम लोग दोनों को मैक्स बना लें जस्ट फॉर सिंपलीसिटी पर्पस कि दोनों को मैक्स ही बना लिए। अब हम लोग आइए इंसर्ट करना शुरू करते हैं। तो सबसे पहले तो ये आता है वन और थ्री। तो इसको किस कैसे इंसर्ट करेंगे? एक पेयर बनाएंगे जिसमें",
+      "source": "caption",
+      "english_text": "Of course. How the heap decides which element of this pair should go to the top. He will see first. If first is reversed then if first is different then if you have made max according to first then it will be max. If Pisces is created then Pisces will go on top. If the first one is successful then he will look for the second one. If the second is now made a mean, then it will move up and down accordingly. Good. Let's assume for a while that we make both of them max. Just for simplicity purpose, let's make both of them max. Now let's start inserting. So first of all comes this one and three. So how will you insert this? will form a pair in which"
+    },
+    {
+      "start_time": 631.92,
+      "end_time": 666.71,
+      "text": "फ्रीक्वेंसी पहले रहेगा एलिमेंट बाद में रहेगा। तो हम लोग क्या बनाएंगे? थ्री और वन। Okay? तो ये पहला इंसर्ट हो गया। दूसरा आया क्या? थ्री और टू। पहला उसका फ्रीक्वेंसी थ्री और किस एलिमेंट का फ्रीक्वेंसी थ्री है? टू का थ्री है। Okay? ये भी इंसर्ट हो गया। थ्री और फोर मतलब फोर फ्रीक्वेंसी है और किस एलिमेंट का है? इसका ये भी इंसर्ट हो गया। उसके बाद फोर और टू मतलब टू और फोर मतलब कि फ्रीक्वेंसी टू है और एलिमेंट फोर है। तो आप देख सकते हैं कि सारा हम लोग हैश मैप का इंसर्ट कर दिए हिप में। अब ये क्या कैसा हिप है ये? मैक्स हिप है। आपके एकदम अनुसार है। जरूरत के अनुसार। आपको कितने",
+      "source": "caption",
+      "english_text": "Frequency will be first, element will be later. So what will we make? Three and one. Okay? So this first insert is done. Did the second one come? Three and two. First, its frequency is three and which element's frequency is three? Two is three. Okay? This also got inserted. Three and four means four frequency and which element does it belong to? This also got inserted. After that four and two means two and four means frequency is two and element is four. So you can see that we have inserted all the hash maps in the hip. Now how hip is this? Max is hip. It suits you perfectly. As per need. how many do you need"
+    },
+    {
+      "start_time": 666.72,
+      "end_time": 701.03,
+      "text": "एंट्रीज चाहिए? आपको टॉप के चाहिए। टॉप के या फिर टॉप टू? इस क्वेश्चन में टॉप टू वाली चाहिए। तो कुछ नहीं करेंगे। दो एंट्रीज पॉप कर लेंगे हिप से। कौन-कौन सी दो एंट्री पॉप होगी? सबसे पहला इस मैक्स हिप में सबसे पहला पॉप कौन होगा जो टॉप पे बैठा होगा। कौन सा टॉप पे बैठा होगा? जिसका फर्स्ट सबसे ज्यादा है। किसका फर्स्ट सबसे ज्यादा है? फोर और थ्री का फर्स्ट सबसे ज्यादा है। तो सबसे पहला जब आप पॉप करेंगे तो आपको क्या मिलेगा? फोर और थ्री। ये फोर और थ्री आपको क्या बताता है? एक ऐसा एलिमेंट था जिसकी फ्रीक्वेंसी फोर थी और किस एलिमेंट की फ्रीक्वेंसी फोर थी? थ्री की फ्रीक्वेंसी फोर थी। तो आप अपने आंसर में थ्री लिख सकते हैं। वेरी",
+      "source": "caption",
+      "english_text": "Want entries? You need a top. Top or top two? Want top two in this question? So won't do anything. Will pop two entries from the hip. Which two entries will pop? First of all, who will be the first pop in this Max Hip who will be sitting on the top? Who will be sitting on top? Whose first is highest. Who has the most firsts? The first of four and three is the highest. So what's the first thing you get when you pop in? Four and three. ये फोर और थ्री आपको क्या बताता है? एक ऐसा एलिमेंट था जिसकी फ्रीक्वेंसी फोर थी और किस एलिमेंट की फ्रीक्वेंसी फोर थी? थ्री की फ्रीक्वेंसी फोर थी। तो आप अपने आंसर में थ्री लिख सकते हैं। Very"
+    },
+    {
+      "start_time": 701.04,
+      "end_time": 735.19,
+      "text": "गुड। तो अब ये एलिमेंट आपका गायब हो गया हिप से। अगला एलिमेंट कौन सा पॉप होगा? देखिए। अगले एलिमेंट के लिए अगर हम लोग फर्स्ट पे देखें दो चीज़ों का फर्स्ट सेम है। थ्री और थ्री दोनों का सेम है। लेकिन टॉप पे कौन सा बैठा होगा? जिसका सेकंड ज्यादा होगा। क्यों? क्योंकि हम लोग बोल रहे हैं कि फर्स्ट पे भी तुम मैक्स रहो और सेकंड के हिसाब से भी तुम मैक्स ही की तरह बिहेव करो। तो किसका ज्यादा है? टू का ज्यादा है। तो ये वाली एंट्री आएगी आपके पास। कौन सी? थ्री और टू। अगेन ये एंट्री आपको क्या बताती है? एक एलिमेंट का फ्रीक्वेंसी थ्री है और वो कौन सा एलिमेंट है? टू है। और इससे आपको क्या पता चल जाएगा कि टू। तो आप अपने आंसर में टू लिख सकते हैं। आपको आंसर मिल गया। आपको टॉप के",
+      "source": "caption",
+      "english_text": "Good. तो अब ये एलिमेंट आपका गायब हो गया हिप से। अगला एलिमेंट कौन सा पॉप होगा? See. अगले एलिमेंट के लिए अगर हम लोग फर्स्ट पे देखें दो चीज़ों का फर्स्ट सेम है। थ्री और थ्री दोनों का सेम है। लेकिन टॉप पे कौन सा बैठा होगा? जिसका सेकंड ज्यादा होगा। Why? क्योंकि हम लोग बोल रहे हैं कि फर्स्ट पे भी तुम मैक्स रहो और सेकंड के हिसाब से भी तुम मैक्स ही की तरह बिहेव करो। तो किसका ज्यादा है? टू का ज्यादा है। तो ये वाली एंट्री आएगी आपके पास। Which one? थ्री और टू। अगेन ये एंट्री आपको क्या बताती है? एक एलिमेंट का फ्रीक्वेंसी थ्री है और वो कौन सा एलिमेंट है? It's two. और इससे आपको क्या पता चल जाएगा कि टू। तो आप अपने आंसर में टू लिख सकते हैं। आपको आंसर मिल गया। आपको टॉप के"
+    },
+    {
+      "start_time": 735.2,
+      "end_time": 766.31,
+      "text": "चाहिए था। दो बार पॉप किया आपको आंसर मिल गया। ये आप वेरी गुड रिटर्न कर सकते हैं। ये क्वेश्चन बन जाएगा। वेरी गुड। सॉल्व हो गया क्वेश्चन। लेकिन लेकिन लेकिन अब आइए थोड़ा इस पे टाइम कॉम्प्लेक्सिटी पे नज़र मारते हैं कि टाइम कॉम्प्लेक्सिटी क्या होगा? हम आपको क्या बोले हिप में तीन ही ऑपरेशन होता है। हिप में कौन-कौन सा तीन ऑपरेशन होता है? हिप में सबसे पहला तो ऑपरेशन होता है टॉप देखना। हिप में सबसे पहला होता है टॉप देखना। उसके बाद होता है पुश। पुश या इंसर्ट जो आप घुसाते हैं अंदर। उसके बाद क्या होता है? पॉप। पॉप या जावा में इसको ऑफर कहते हैं कि निकालना।",
+      "source": "caption",
+      "english_text": "Should have. दो बार पॉप किया आपको आंसर मिल गया। ये आप वेरी गुड रिटर्न कर सकते हैं। ये क्वेश्चन बन जाएगा। very good. सॉल्व हो गया क्वेश्चन। लेकिन लेकिन लेकिन अब आइए थोड़ा इस पे टाइम कॉम्प्लेक्सिटी पे नज़र मारते हैं कि टाइम कॉम्प्लेक्सिटी क्या होगा? हम आपको क्या बोले हिप में तीन ही ऑपरेशन होता है। हिप में कौन-कौन सा तीन ऑपरेशन होता है? हिप में सबसे पहला तो ऑपरेशन होता है टॉप देखना। हिप में सबसे पहला होता है टॉप देखना। उसके बाद होता है पुश। पुश या इंसर्ट जो आप घुसाते हैं अंदर। What happens after that? Pop. पॉप या जावा में इसको ऑफर कहते हैं कि निकालना।"
+    },
+    {
+      "start_time": 766.32,
+      "end_time": 798.87,
+      "text": "ऊपर से निकालना। टॉप की फ्रीक्वें टाइम कॉम्प्लेक्सिटी होती है ऑर्डर ऑफ़ वन। बिल्कुल कॉन्स्टेंट ऑपरेशन होता है। लेकिन पुश और पॉप की क्या होती है? log n। ये n क्या है? है। ये n आपके साइज ऑफ़ एरे नहीं है। याद रखिएगा ये एन आपका एरे का साइज नहीं है। हिप का साइज है। हिप का मैक्सिमम साइज कितना हो सकता है? हिप का मैक्सिमम साइज एक समय में कितना ग्रो कर सकता है? उस पे डिसाइड होता है। अच्छा तो ये हम लोग कर लिए। ये हम लोग देख लिए। अब देखते हैं कि आप लोग कर क्या रहे हैं। सबसे पहले तो हम लोग इसमें हैश मैप बनाए। सबसे पहले तो एरे इज़ अ हैश मैप बनाए। किसका?",
+      "source": "caption",
+      "english_text": "ऊपर से निकालना। टॉप की फ्रीक्वें टाइम कॉम्प्लेक्सिटी होती है ऑर्डर ऑफ़ वन। बिल्कुल कॉन्स्टेंट ऑपरेशन होता है। लेकिन पुश और पॉप की क्या होती है? log n। ये n क्या है? Is. ये n आपके साइज ऑफ़ एरे नहीं है। याद रखिएगा ये एन आपका एरे का साइज नहीं है। हिप का साइज है। हिप का मैक्सिमम साइज कितना हो सकता है? हिप का मैक्सिमम साइज एक समय में कितना ग्रो कर सकता है? उस पे डिसाइड होता है। अच्छा तो ये हम लोग कर लिए। ये हम लोग देख लिए। अब देखते हैं कि आप लोग कर क्या रहे हैं। सबसे पहले तो हम लोग इसमें हैश मैप बनाए। सबसे पहले तो एरे इज़ अ हैश मैप बनाए। Whose?"
+    },
+    {
+      "start_time": 798.88,
+      "end_time": 833.269,
+      "text": "फ्रीक्वेंसी के लिए। तो उसमें लग गया कितना? ऑर्डर ऑफ़ n टाइम। क्योंकि आप एक बार करेंगे तो एक बार n लग जाएगा। स्पेस की बात बाद में करेंगे। टाइम की कर लेते हैं। अच्छा प्लस हिप में उसके बाद क्या कर रहे हैं? पूरा हर एंट्री पे लूप कर रहे हैं। हर एंट्री पे लूप कर रहे हैं#श मैप में। ओके? तो एट मैक्स कितने एंट्रीज हो सकती हैं? एट मैक्स कितने एंट्रीज हो सकती हैं? नंबर ऑफ़ यूनिक एलिमेंट्स। देखिए हैश मैप कितना बड़ा है आपका? 1 2 3 4 हैशमैप का साइज़ कितना है? फोर। ये फोर कहां से आया? क्योंकि आपके एरे में नंबर ऑफ़ यूनिक एलिमेंट्स चार थे। लेकिन एरे के नंबर ऑफ़ यूनिक एलिमेंट्स तो n भी हो सकते हैं। अगर हर एलिमेंट एक बार आया तो आपका हैश मैप का साइज और एरे का साइज़ सेम हो जाएगा। सबकी फ्रीक्वेंसी",
+      "source": "caption",
+      "english_text": "फ्रीक्वेंसी के लिए। तो उसमें लग गया कितना? ऑर्डर ऑफ़ n टाइम। क्योंकि आप एक बार करेंगे तो एक बार n लग जाएगा। स्पेस की बात बाद में करेंगे। टाइम की कर लेते हैं। अच्छा प्लस हिप में उसके बाद क्या कर रहे हैं? पूरा हर एंट्री पे लूप कर रहे हैं। हर एंट्री पे लूप कर रहे हैं#श मैप में। Ok? तो एट मैक्स कितने एंट्रीज हो सकती हैं? एट मैक्स कितने एंट्रीज हो सकती हैं? नंबर ऑफ़ यूनिक एलिमेंट्स। देखिए हैश मैप कितना बड़ा है आपका? 1 2 3 4 हैशमैप का साइज़ कितना है? Four. ये फोर कहां से आया? क्योंकि आपके एरे में नंबर ऑफ़ यूनिक एलिमेंट्स चार थे। लेकिन एरे के नंबर ऑफ़ यूनिक एलिमेंट्स तो n भी हो सकते हैं। अगर हर एलिमेंट एक बार आया तो आपका हैश मैप का साइज और एरे का साइज़ सेम हो जाएगा। सबकी फ्रीक्वेंसी"
+    },
+    {
+      "start_time": 833.279,
+      "end_time": 866.87,
+      "text": "वन हो जाएगी। तो मान के चलते हैं कि हैशमैप का वर्स्ट साइज पॉसिबल कितना हो सकता है? एन। एन क्या है एरे का साइज़। Okay? एन। हर चीज़ के लिए हर हर एंट्री के लिए आप क्या कर रहे हैं? एक पुश कर रहे हैं। कहां पे? हिप में पुश कर रहे हैं। तो पुश की क्या होती है टाइम कॉम्प्लेक्सिटी? एक पुश की। log n। n मतलब ये वाला एन एरे का साइज नहीं है। हिप का मैक्सिमम साइज कितना हो सकता है एट मैक्स। तो देखिए आपका हिप का साइज कितना हो सकता है? जितना आपके हैश मैप का साइज है उतना आपके हिप का साइज हो सकता है। क्यों? क्योंकि आपके हैशमैप का साइज आप हर एंट्री को हैशमैप के हर की",
+      "source": "caption",
+      "english_text": "It will become a forest. So, what is the worst size possible for a hashmap? N. N is the size of the array. Okay? N. What are you doing for every entry for everything? Making a push. Where? Pushing into the hip. So what is the time complexity of push? Did a push. log n. n means this n is not the size of the array. What is the maximum size of hip that can be at max. So see what size your hip can be? The size of your hash map can be equal to the size of your hip. Why? Because the size of your hashmap is equal to the size of each entry of the hashmap."
+    },
+    {
+      "start_time": 866.88,
+      "end_time": 900.069,
+      "text": "वैल्यू पेयर को उठा के हिप में पुश कर रहे हैं। तो हिप का साइज कितना बढ़ सकता है? हैशमैप के साइज तक बढ़ सकता है। और हैशमैप का साइज कितना हो सकता था? क्या देखे थे वर्स्ट केस में? एरे के साइज के इक्वल ही हो सकता है मैप का साइज। क्यों? क्योंकि अगर हर एलिमेंट एक बार आएगा तो हैशमैप का साइज इक्वल टू एरे का साइज। जितना हैशप का साइज है उतना को आप घुसा के हिप में घुसा रहे हैं तो हिप का साइज भी कितना बढ़ सकता है? एरे के साइज तक बढ़ सकता है। मतलब कि n बढ़ सकता है। तो इस पुश और पॉप की एक बार पुश और पॉप करने का कितना हो जाएगा? log n। अब ये n आपका एरे का साइज़ है। आप कितनी",
+      "source": "caption",
+      "english_text": "Picking up the value pair and pushing it into the hip. So how much can hip size increase? Can increase up to the size of the hashmap. And what could be the size of the hashmap? What did you see in the worst case? The size of the map can only be equal to the size of the array. Why? Because if each element comes once then the size of the hashmap is equal to the size of the array. If you are inserting the same amount of hashish into the hip, then how much can the size of the hip also increase? Can increase up to the size of the array. Meaning that n can increase. So how much of this push and pop will be done once push and pop? log n. Now this n is the size of your array. how much are you"
+    },
+    {
+      "start_time": 900.079,
+      "end_time": 933.269,
+      "text": "बार पुश कर रहे हैं? n टाइम्स पुश कर रहे हैं। क्यों? क्योंकि आप हैशमैप में कितनी एंट्रीज़ हैं? n एंट्रीज़ हैं। हर बार पुश कर रहे हैं तो n log n। तो ये देखिए आपका n log n तो यहीं आ गया। n log n में नहीं करना है। n log n में नहीं करना है। ये नॉट अलाउड है। कर सकते हैं। हो जाएगा। सबमिट भी हो जाएगा। लेकिन n log n अलाउड नहीं है या n log n आपको इंटरव्यू रोक देगा कि नहीं भैया ये जो तुम मैक्स हिप कर रहे हो ना हर एंट्री को उठा के हिप में पुश कर रहे हो उसके बाद k टाइम्स उसको पॉप कर रहे हो उसकी हम नहीं टाइम कॉम्प्लेक्सिटी कर रहे हैं उसका भी देखिए कर ही लेते हैं इसके बाद पुश करने के बाद आप क्या कर रहे हैं k टाइम्स पॉप कर रहे",
+      "source": "caption",
+      "english_text": "Pushing the bar? n Times are pushing. Why? Because how many entries are there in the hashmap? There are n entries. If you are pushing every time then n log n. So see, your n log n is here. Not to be done in n log n. Not to be done in n log n. This is not allowed. Can do. Will be done. It will also be submitted. But n log n is not allowed or will n log n stop you in the interview or not? Brother, what you are doing is max hip, you are picking up every entry and pushing it in the hip, after that you are popping it k times, we are not doing its time complexity, let's see that also, after pushing, what are you doing after pushing, you are popping it k times."
+    },
+    {
+      "start_time": 933.279,
+      "end_time": 967.59,
+      "text": "है ताकि आपको आंसर मिल जाए तो k टाइम्स पॉप कर रहे हैं एक पॉप की कितनी है log n मतलब एरे का साइज k log n यहां पे देखिए बार-बार कंफ्यूज मत होइएगा हिप का जो log n निकलता है ना ये n ये आपको बताता है कि ये जो n है ना हिप का मैक्सिमम साइज कितना हो सकता है। चूंकि इस इस कंडीशन में हिप का मैक्सिमम साइज और एरे का मैक्सिमम साइज सेम हो सकता है इसीलिए हम यहां पे n लिख रहे हैं नहीं तो नहीं लिखना है ओके। अब आपका k log n ये तो छोटा ही होगा n log से। तो यहां आपको पता चलता है कि आपकी टाइम कॉम्प्लेक्सिटी n log हो जाएगी। n loन में नहीं करना है नहीं अलाउड है। ठीक",
+      "source": "caption",
+      "english_text": "So that you get the answer, you are popping it k times, how many times is one pop, log n means the size of the array, k log n, see here, do not get confused again and again, the log n of the hip comes out, this n tells you that this n is what is the maximum size of the hip. Since in this condition the maximum size of the hip and the maximum size of the array can be the same, that is why we are writing n here otherwise it is not necessary to write OK. Now your k log n must be smaller than n log. So here you find that your time complexity will be n log. Not to be done in loan, not allowed. okay"
+    },
+    {
+      "start_time": 967.6,
+      "end_time": 994.15,
+      "text": "है? अब तो अब अब इससे हमको पता चलता है कि मैक्स हीट नहीं ले सकते है। क्योंकि मैक्सिप लेने का मतलब है कि आपको सबको पुश करना पड़ेगा। K मैक्स को निकाल लेना पड़ेगा। तो ये एक प्रॉब्लम हो गई। ये एक प्रॉब्लम हो गई है। आइए अब प्रॉब्लम हो गई है तो प्रॉब्लम को सॉल्व करते हैं। देखते हैं। बन जाएगा। इसे आप सबमिट करेंगे बन जाएगा। लेकिन देखते हैं और कोई तरीका है कि नहीं। तो सिंपलीसिटी के लिए हम लोग अपना हैश मैप ऐसे लिखते हैं। हैशप ये हमारा हैश मैप था जिसमें हम लोग एलिमेंट्स और उनकी फ्रीक्वेंसी को स्टोर कर रहे थे।",
+      "source": "caption",
+      "english_text": "Is it? Now this shows us that we cannot take max heat. Because taking Maxip means you have to push everyone. K max will have to be taken out. So this became a problem. This has become a problem. Now that the problem has arisen, let us solve the problem. Let's see. Will become. Once you submit it, it will be created. But let's see if there is any other way. So for simplicity we write our hash map like this. Hashmap: This was our hash map in which we were storing the elements and their frequency."
+    },
+    {
+      "start_time": 994.16,
+      "end_time": 1026.549,
+      "text": "Okay? वन यहां पे तीन बार आया था। दो यहां पे तीन बार आया था। चलिए आपको जस्ट सिखाने के लिए हम ऐसा कर देते हैं कि दो एक बार आया था। तीन चार बार आया था और चार दो बार आया था। ठीक बात है। ओके। ये आपका हैश मैप है। आपको क्या चाहिए? आपको टॉप टू फ्रीक्वेंट एलिमेंट चाहिए। हम लोग देखे कि मैक्स ही से काम नहीं बना। क्यों नहीं बना? काम बन गया। एन लॉग इन हो गया। एन लॉग इन में नहीं करना था। एन लॉग इन में करना नहीं था। तो अब देखिए हम लोग क्या कर सकते हैं ना। अब आपको हम वो ट्रिक बताते हैं कि जभी भी हिप में जभी भी हिप में",
+      "source": "caption",
+      "english_text": "Okay? The forest came here three times. Came here two or three times. Just to teach you, let us pretend that it came once. Three came four times and four came twice. That's right. Ok. This is your hash map. What do you want? You want the top two most frequent elements. We saw that Max alone did not work. Why was it not made? getting things done. N Logged in. Didn't have to log in. Didn't have to log in. So now see what we can do. Now we will tell you the trick that whenever you are in the hip, whenever you are in the hip,"
+    },
+    {
+      "start_time": 1026.559,
+      "end_time": 1057.75,
+      "text": "आपको ये मिले केथ लार्जेस्ट। केथ लार्जेस्ट मिले। केथ बिगेस्ट मतलब कि बड़ा-बड़े बड़े वाले शब्द बिगेस्ट केथ ग्रेटेस्ट या टॉप के या मोस्ट फ्रीक्वेंट के ऐसा मतलब कि के साथ क्या हो कोई बड़ा टर्म हो कि सबसे मैक्स क्या होना चाहिए हमेशा इन केसेस में मिन हीप यूज़ होगा। हमेशा इन केसेस में मिन हीप यूज़ होगा। और कभी आपको मिलता है कि केएथ स्मालेस्ट केथ स्मालेस्ट",
+      "source": "caption",
+      "english_text": "You get these Keith Largest. Keith got the largest. Keth Biggest means the big words, Biggest Keth Greatest or Top's or Most Frequent's meaning that what should be with any big term, what should be the maximum, min heap will always be used in these cases. Min heap will always be used in these cases. And sometimes you get that Keith Smallest Keith Smallest"
+    },
+    {
+      "start_time": 1057.76,
+      "end_time": 1084.71,
+      "text": "या अह केएथ अह अ शॉर्टेस्ट कुछ भी। अह छोटे का जो भी पर्यायवाची शब्द आप सोच सकते हैं। अह बॉटम के मतलब बॉटम के मतलब अह लोएस्ट के। मतलब जो भी छोटे का जो भी आप पर्यायवाची सोच सकते हैं। इस केस में मैक्सिप यूज़ होगा। इस केस में मैक्सिप यूज़ होगा। ये हम पहले ही क्यों नहीं बता दिए? हम आपको क्यों मैक्सिप के दिखा दिए करके कि मैक्सिप से भी हो सकता है। लेकिन ये क्यों नहीं बता दिए? क्योंकि वो सोचना जरूरी है कि क्यों नहीं हो सकता है।",
+      "source": "caption",
+      "english_text": "Or ah keith ah a shortest anything. Whatever synonym of uh small you can think of. Ah bottom means bottom means ah lowest. Meaning whatever small synonym you can think of. Maxip will be used in this case. Maxip will be used in this case. Why didn't we tell this earlier? Why we have shown you that it can also be done with Maxip. But why didn't you tell this? Because it is important to think why it cannot happen."
+    },
+    {
+      "start_time": 1084.72,
+      "end_time": 1119.029,
+      "text": "मैक्सिप से आप देखिए एन लॉग इन टाइम लग जाएगा। तो ये याद रखिएगा कभी भी बड़े का काम हो केथ बड़ा कुछ चाहिए मीन हिप यूज़ करना पड़ेगा केथ ज्यादा कुछ चाहिए मैक्स हिप यूज़ करना पड़ेगा हम लोग देखे थे केथ लार्जेस्ट एलिमेंट में क्या यूज हुआ था मिन हीप यूज़ हुआ था केथ स्मालेस्ट एलिमेंट में क्या यूज हुआ था मैक्स हिप यूज हुआ था इसीलिए अब हम आपको बताते हैं क्यों होगा ये तो हम आपको जस्ट बता दिए कि ये याद रखिएगा आज के बाद याद रखिएगा ठीक है तो कभी भी के बिगेस्ट का हो प्रॉब्लम तो उसमें मैक्सिप नहीं लगाइएगा कोई इंटरव्यूअर नहीं लगाने देगा लग जाएगा आएगा बहुत ईजीली लग जाएगा लेकिन इंटरव्यू लगाने",
+      "source": "caption",
+      "english_text": "You will see from Maxip that it will take N login time. So remember this, whenever it is the work of a big person, something big is needed, mean hip will have to be used, something more is needed, max hip will have to be used, we had seen keth what was used in the largest element, min heap was used, kith what was used in the smallest element, max hip was used, that is why now we tell you why this will happen, so we just told you that you will remember this, after today you will remember, okay so anytime. If there is a problem of the biggest then you will not put maxip in it, no interviewer will allow you to do it, it will come up, it will be very easy but you will find it very easy to do the interview."
+    },
+    {
+      "start_time": 1119.039,
+      "end_time": 1151.99,
+      "text": "नहीं देगा। ठीक है? याद रखिए। और आइए देखते हैं कि अब इसमें मिन हीप लग सकता है क्या? मिन हीप लग सकता है क्या? चलिए#श मैप है। आपको क्या चाहिए? टॉप टू। अच्छा टॉप टू फ्रीक्वेंट एलिमेंट्स। ओके? तो मतलब देखिए मान लीजिए इस एरे में छह एलिमेंट्स होते हैं। मान लीजिए कि इस एरे में छह एलिमेंट्स होते हैं। हम छह एलिमेंट का ले लेते हैं। मान लीजिए एक ऐसा एरे कंसीडर कीजिए जिसमें छह यूनिक एलिमेंट्स हैं। जिसमें छह यूनिक एलिमेंट्स हैं। ऐसा पांच छह। पांच कितनी बार आया है भाई? पांच। चलिए 1 2 3 4 सब हो चुका है।",
+      "source": "caption",
+      "english_text": "Will not give. Ok? Remember this. And let's see now whether a min heap can be placed in it? Can min heap be used? Let #sh be a map. What do you want? Top two. Nice top two frequent elements. Ok? So see the meaning, suppose this array contains six elements. Suppose this array contains six elements. We take six elements. Consider an array that has six unique elements. Which has six unique elements. So five or six. How many times have you come brother? Five. Come on 1 2 3 4 everything is done."
+    },
+    {
+      "start_time": 1152.0,
+      "end_time": 1185.029,
+      "text": "पांच आपका एक बार आया है। और छह आपका दो बार आया है। ठीक बात है। वेरी गुड है। ओके। छह आपका दो बार नहीं कर देते हैं। छह को हम कर देते हैं कि छह। छह भी चार बार आया है। ठीक बात है। चार बार आया। तो इस इस क्वेश्चन के हिसाब से आपका आंसर क्या होना चाहिए? आपका आंसर थ्री होना चाहिए और सिक्स होना चाहिए। क्योंकि ये दोनों टॉप टू फ्रीक्वेंट एलिमेंट्स हैं। अच्छा। तो देखिए हम लोग एक काम करते हैं। हम लोग इसको लिखने की कोशिश करते हैं कि इस इस चीज को ना इस इस एलिमेंट्स के ऑर्डर को इनके फ्रीक्वेंसी के ऑर्डर से सॉर्ट कर लेते हैं। फ्रीक्वेंसी के ऑर्डर से। तो देखिए सबसे ज्यादा बार कौन आया है? सबसे",
+      "source": "caption",
+      "english_text": "Five of you have come once. And your six has come twice. That's right. Very good. Ok. Six doesn't do yours twice. We turn six into six. Six has also come four times. That's right. Came four times. So what should be your answer according to this question? Your answer should be three and six. Because both of these are top two frequent elements. Good. So see, let us do one thing. We try to write this by sorting the order of these elements according to the order of their frequency. By order of frequency. So see who has come the most number of times? the most"
+    },
+    {
+      "start_time": 1185.039,
+      "end_time": 1217.59,
+      "text": "ज्यादा बार सिक्स आया है। Okay? उससे कम, उससे कम या उससे इक्वल ही है। उसके बाद थ्री आया है। उसके बाद कौन सा आया है? वन आया है जो कि तीन बार आया है। उसके बाद आया है फाइव जोकि एक बार आया है और लास्ट में टू जो कि एक बार आया है। इसके नीचे हम फ्रीक्वेंसी लिख देते हैं। ये चार बार आया है। चार बार आया है। वन तीन बार आया है। कुछ छूट गया क्या? चार, चार छूट गया। चार आपका दो बार आया है। चार छूटा कि क्या छूटा? अच्छा। सॉरी। तो इसको हम जस्ट इनके फ्रीक्वेंसी के ऑर्डर से सॉर्ट कर रहे हैं। उसके बाद आपका क्या आया है जी? चार",
+      "source": "caption",
+      "english_text": "Six has come more often. Okay? Less than, less than or equal to. After that comes three. Which one has come after that? One has come which has come three times. After that comes five which has come once and lastly two which has come once. Below this we write the frequency. This has come four times. Has come four times. The forest has come three times. Is something missing? Four, four missed. Four yours has come twice. Four left or what is left? Good. Sorry. So we are just sorting these by the order of their frequency. What has come to you after that sir? four"
+    },
+    {
+      "start_time": 1217.6,
+      "end_time": 1251.11,
+      "text": "आया है दो बार और उसके बाद पांच और एक पांच और दो एक-एक बार आए हैं। पांच और दो एक-एक बार आए हैं चार दो बार आया है। तो ये सॉर्ट हो गया। ओके। आपका आंसर क्या है? आपका आंसर ये वाले हैं। टॉप टू वाले टॉप टू वाले तीन और छह आपके आंसर है। ओके? ध्यान से देखिए। छह। अब हम लोग एक क्वेश्चन पूछते है। हर एलिमेंट में एक क्वेश्चन पूछते हैं कि ये वाला जो एलिमेंट है ये वाला जो एलिमेंट है छह। ये कितने एलिमेंट से छोटा है? फ्रीक्वेंसी के हिसाब से। अब हर चीज फ्रीक्वेंसी से है। अब इनके वैल्यू से मत देखिएगा। छह कितने एलिमेंट से छोटा है? तो आपको आंसर मिलेगा कि छह जो है ना वो जीरो एलिमेंट से छोटा है। छह से",
+      "source": "caption",
+      "english_text": "It has come twice and after that five and one five and two have come once each. Five and two have come once each and four has come twice. So it's sorted. Ok. What is your answer? These are your answers. The top two, three and six are your answers. Ok? Look carefully. Six. Now let us ask a question. A question is asked in every element that this element is six. It is smaller than how many elements? According to frequency. Now everything is about frequency. Now don't look at their value. Six is ​​smaller than how many elements? So you will get the answer that the six element is smaller than the zero element. from six"
+    },
+    {
+      "start_time": 1251.12,
+      "end_time": 1285.909,
+      "text": "बड़ा कोई एलिमेंट नहीं है। छह ज़ीरो एलिमेंट से छोटा है। अब बात करते हैं तीन की। तीन कितने एलिमेंट से छोटा है? तीन कितने एलिमेंट से छोटा है? इन टर्म्स ऑफ दिस। तो आप बोलेंगे कि अब चार चार है ये भी चार है किसी से छोटा नहीं है। मान लीजिए कि इस ऑर्डर के हिसाब से कितने उसके आगे इंसान है? तो आपको आंसर मिलेगा कि ये एक आदमी से छोटा है। ये वाला आदमी वन कितने लोगों से छोटा है? ये दो आदमी से छोटा है। चार कितने आदमी से छोटा है? चार के आगे कितने लोग हैं जो इससे हायर फ्रीक्वेंसी में बैठे हुए हैं? तीन लोग बैठे हुए हैं। पांच पांच के आगे कितने लोग बैठे हुए हैं? चार लोग बैठे हुए हैं और दो के आगे पांच लोग बैठे हुए हैं। अच्छा।",
+      "source": "caption",
+      "english_text": "There is no greater element. Six is ​​smaller than the zero element. Now let's talk about three. Three is less than how many elements? Three is less than how many elements? In Terms of this. So you will say that now four is four, this is also four and not smaller than anyone. Suppose, according to this order, how many people are there in front of him? Then you will get the answer that it is smaller than a man. This man is younger than how many people? He is younger than the two men. Four is smaller than how many people? How many people are there in front of four who are sitting in a higher frequency? Three people are sitting. How many people are sitting next to each other? Four people are sitting and five people are sitting next to two. Good."
+    },
+    {
+      "start_time": 1285.919,
+      "end_time": 1320.07,
+      "text": "आपको चाहिए क्या? आपको चाहिए क्या? आपके आंसर में क्या है? आपके आंसर में तीन और छह है। मतलब कि जब k = 2 है तो आपको ऐसे एलिमेंट चाहिए जो या तो ज़ीरो से छोटे हों या तो उसके आगे जीरो एलिमेंट हो या तो मतलब कि वो ज़ीरो एलिमेंट से छोटे हों या तो वो वन एलिमेंट से छोटे हों। या तो वो वन एलिमेंट से छोटे हों। अगर कोई एलिमेंट ऐसा मिलता है जो दो एलिमेंट से छोटा है तो वो आपको आंसर में नहीं चाहिए। क्यों? क्योंकि वो टॉप टू में नहीं आ पाएगा। टॉप टू का क्या मतलब होता है? फर्स्ट और सेकंड। फर्स्ट किससे पीछे होता है? किसी से नहीं। जीरो से पीछे। सेकंड किससे पीछे होता है? एक से पीछे होता है। लेकिन जो",
+      "source": "caption",
+      "english_text": "What do you want? What do you want? What's in your answer? Your answer contains three and six. Meaning that when k = 2, you need elements that are either smaller than zero or there is a zero element next to it, meaning they are smaller than the zero element or they are smaller than one element. Either they are smaller than one element. If any element is found which is smaller than two elements then you do not want it in the answer. Why? Because he will not be able to come in the top two. What does top two mean? First and second. Who comes first and second? to nobody. Behind zero. What is the second behind? Is behind one. but which"
+    },
+    {
+      "start_time": 1320.08,
+      "end_time": 1350.87,
+      "text": "थर्ड आदमी है थर्ड तो दो से पीछे है तो वो टॉप टू में नहीं आएगा। इसीलिए हम लोग को ये दोनों चाहिए। अब देखिए बहुत इंपॉर्टेंट बात देखिए। बहुत इंपॉर्टेंट बात समझिए। हम लोग एक मीन हीप बना लेते हैं। हम लोग एक मिन हीप बना लेते हैं। हम लोग क्या करते हैं? एक मिन हीप बना लेते हैं। जस्ट बना लीजिए। बना के देख लीजिए। मतलब ज्यादा ज्यादा क्या होगा? नहीं होगा क्वेश्चन सॉल्व। तो नहीं होगा। कोई बात नहीं। ऐसे में भी तो नहीं होगा। ठीक है? एक मिन ही बना लेते हैं। ये क्या बन गया? मिन हीप हिप किस प्रकार का है? सेम प्रकार का है।",
+      "source": "caption",
+      "english_text": "If the third person is third then he is behind the two, so he will not be in the top two. That's why we need both. Now look at this very important thing. Understand this very important thing. We make a mean heap. We make a min heap. What do we do? Let's make a mini heap. Just make it. Make it and see. Meaning, what will be more? Question will not be solved. So it won't happen. No problem. Even in this case it won't happen. Ok? Let's make just one minute. What has become of this? What type of Min Heap Heap is? It is of bean type."
+    },
+    {
+      "start_time": 1350.88,
+      "end_time": 1384.23,
+      "text": "फ्रीक्वेंसी और एलिमेंट। सिंपलीसिटी के लिए दोनों में मीन चलेगा। मतलब कि फर्स्ट के हिसाब से भी ये मिन हीप है और सेकंड के हिसाब से भी मिन हीप है। कल का लेक्चर का याद दिला रहे हैं। मिन हीप बन गया। आप क्या कीजिए ना? इसको शुरू के दो एलिमेंट क्योंकि शुरू के हम लोग को कितना चाहिए? टॉप के एलिमेंट्स चाहिए। टॉप के एलिमेंट्स चाहिए। शुरू के दो एलिमेंट को उठा के हिप में डाल दीजिए। शुरू के दो एलिमेंट को हैश मैप से उठा के ही में डाल दीजिए। मतलब इस आदमी को उठाइए और इस आदमी को उठाइए। नो मैटर की आंसर है कि नहीं। वन और टू आंसर नहीं। कोई बात नहीं। डालना डाल दीजिए ना। डाल दीजिए। हर एलिमेंट को देखना",
+      "source": "caption",
+      "english_text": "Frequency and element. For simplicity, Pisces will do in both. Meaning that in terms of first it is a min heap and in terms of second also it is a min heap. Reminding me of yesterday's lecture. Min became Heap. What should you do? These are the first two elements because how much do we need in the beginning? Top elements are required. Top elements are required. Pick up the first two elements and put them in the hip. Pick the first two elements from the hash map and put them in it. Meaning pick this guy and pick this guy. No matter whether the answer is there or not. There is no one or two answer. No problem. Please put it in. Put it in. View each element"
+    },
+    {
+      "start_time": 1384.24,
+      "end_time": 1412.87,
+      "text": "तो है ना? डाल दो ना। तो डाल दीजिए कि इसका क्या हो गया? थ्री और वन हो गया और ये वन और टू हो गया। फ्रीक्वेंसी और एलिमेंट डल गया। ओके। हिप का साइज कितना है अभी? हिप का साइज कितना है? टू है। ठीक बात है। ओके। ठीक है? अब आइए अगले एलिमेंट को देखिए। इसको देखते हैं। थ्री और फोर। मतलब कि थ्री के एलिमेंट थ्री की फ्रीक्वेंसी फोर है। मतलब कि आप क्या डालना चाह रहे हैं? फोर और थ्री को डालना चाह रहे हैं। फोर और थ्री को डालना चाह रहे हैं हिप में। अच्छा अब एक बात बताइए।",
+      "source": "caption",
+      "english_text": "So is it? Put it in. So tell me what happened to it? Three and one became and this became one and two. Frequency and element added. Ok. What is your hip size now? What is the hip size? It's two. That's right. Ok. Ok? Now let's look at the next element. Let's see this. Three and four. Meaning that the frequency of element three is four. Meaning what are you trying to put? Wanting to bowl four and three. Wanting to put four and three in the hip. Okay now tell me one thing."
+    },
+    {
+      "start_time": 1412.88,
+      "end_time": 1447.43,
+      "text": "फोर और थ्री को आप डालना चाह रहे हैं कहां डालना चाह रहे हैं? हिप में डालना चाह रहे हैं। अच्छा। क्या ये फोर? क्या ये फोर, अभी आपके हिप के टॉप में क्या होगा? अभी आपके हिप के टॉप में क्या होगा? अभी आपके हिप के टॉप में ये होगा। वन और टू। क्यों? क्योंकि ये मिन हीप है। मिन हीप है। कौन सा सबसे मिनिमम फ्रीक्वेंसी है? वन और टू। अच्छा। क्या फोर और थ्री आपके वन और टू से बड़ा है? क्या फोर और थ्री आपके वन और टू से बड़ा है? हां मेरा बड़ा है। मतलब कि आप जो डालना चाह रहे हैं फोर और थ्री इस वाले और जो आपके हिप के टॉप में है अभी वन और टू ये आप देख सकते हैं कि ये बड़ा है। ये",
+      "source": "caption",
+      "english_text": "Where are you trying to put four and three? Wanting to put it in the hip. Good. Is this four? Is this four, what's going to be in the top of your hip right now? What's at the top of your hip right now? Now it will be at the top of your hip. One and two. Why? Because it's Min Heep. Min is heap. Which is the lowest frequency? One and two. Good. Is the four and three bigger than your one and two? Is the four and three bigger than your one and two? Yes mine is bigger. Meaning that what you are trying to put is four and three and what is at the top of your hip now is one and two, you can see that it is bigger. this"
+    },
+    {
+      "start_time": 1447.44,
+      "end_time": 1480.07,
+      "text": "बड़ा है। ओके। अब देखिए। वन और टू के बारे में एक इंपॉर्टेंट चीज नोटिस कीजिए। वन और टू अभी के अभी के हिप में अभी के हिप में टॉप पे बैठा हुआ है। अभी के हिप में वो टॉप पे बैठा हुआ है। हिप का साइज कितना है? दो है। ओके। वन और टू टॉप पे बैठा हुआ है। मतलब वन और टू सबसे मिनिमम होगा इस हिप में? मिनिमम हिप बना है ना भैया? तो मिनिमम होगा ना सबसे ओके। और वन और टू इसके टॉप में बैठा हुआ है। तो वन और टू गारंटीड कितने लोगों से छोटा होगा? एक लोगों से छोटा होगा इस आदमी से। इस आदमी से वन और टू छोटा होगा। वन टू दो की हिप",
+      "source": "caption",
+      "english_text": "Is big. Ok. watch now. Notice one important thing about one and two. One and two are sitting on the top of Abhi's hip. He is sitting on top of Abhi's hip. What is the hip size? There are two. Ok. One and two are sitting on top. Meaning one and two will be the minimum in this hip? Minimum hip is made, isn't it brother? So minimum will be most ok. And one and two are sitting on its top. So One and Two is guaranteed to be smaller than how many people? One must be younger than this man. One and two will be smaller than this man. one to two hip"
+    },
+    {
+      "start_time": 1480.08,
+      "end_time": 1514.549,
+      "text": "के साइज में सबसे मिनिमम है। दो लोगों के ग्रुप में वो सबसे गरीब है। तो वो कितने लोगों से तो गरीब होगा ही होगा? एक आदमी से पक्का गरीब होगा। एक आदमी से पक्का गरीब होगा। और हम लोग देखे कि वन और टू फोर और थ्री से भी छोटा है। क्योंकि अभी देख लिए फोर और थ्री घुसाना चाहते थे। हम लोग को देखे कि वन और थ्री अह वन और टू जो है फोर और थ्री से छोटा है। तो वन और थ्री कितने लोगों से छोटा हो गया? गारंटीड दो लोगों से छोटा हो गया। एक तो इस आदमी से और एक अपने हिप के दोस्त से। क्योंकि हिप का साइज कितना है? हिप का साइज दो है। वन और टू सबसे मिनिमम था वहां पे। मतलब वन और",
+      "source": "caption",
+      "english_text": "Is the minimum in size. He is the poorest in the group of two people. So how many people will he be poorer than? Will definitely be poorer than one man. Will definitely be poorer than one man. And we saw that one and two are smaller than four and three. Because after seeing it, wanted to enter four and three. Let us see that one and three is one and two which is smaller than four and three. So One and Three became shorter by how many people? Guaranteed became smaller than two people. One from this guy and one from my hip friend. Because what is the size of the hip? Hip size is two. One and two were the minimum there. meaning forest and"
+    },
+    {
+      "start_time": 1514.559,
+      "end_time": 1541.669,
+      "text": "2 3 1 से तो छोटा है ही। बिल्कुल है और फोर थ्री से भी छोटा है। वन और टू कितने लोगों से छोटा हो गया? गारंटीड दो लोगों से छोटा हो गया। ऊपर वाला याद कीजिए। क्या आपको कोई ऐसा एलिमेंट चाहिए था अपने आंसर में जो दो लोगों से छोटा हो? नहीं चाहिए था। क्योंकि दो लोगों से छोटा कौन होगा? वो थर्ड आदमी हो जाएगा। मैक्स टू मैक्स, मैक्स टू मैक्स थर्ड होगा। आपको कौन सा एलिमेंट चाहिए था? जो या तो जीरो लोगों से छोटा हो या मैक्सिमम एक लोगों से छोटा हो।",
+      "source": "caption",
+      "english_text": "2 3 is definitely smaller than 1. Of course it is and four is smaller than three. One and Two became smaller by how many people? Guaranteed became smaller than two people. Remember the above. Did you want an element in your answer that was smaller than two people? Wasn't wanted. Because who would be younger than two people? He will be the third person. Max to max, max to max will be third. Which element did you want? Which is either less than zero people or less than maximum one people."
+    },
+    {
+      "start_time": 1541.679,
+      "end_time": 1567.909,
+      "text": "लेकिन यहां हम लोग देख पा रहे हैं कि ये जो हिप का टॉप है ना आपके वन और टू ये तो गारंटीड दो लोगों से छोटा है एक इससे और एक इससे। तो क्या वन और टू कभी भी आपका आंसर हो सकता है? नहीं हो सकता है आपका आंसर। क्योंकि वन और टू कभी भी टॉप टू में नहीं आ पाएगा क्योंकि ये दो लोगों से छोटा है। टॉप टू में आने वाला आदमी दो लोगों से छोटा नहीं हो सकता है। या तो वो एक से छोटा होगा या सेकंड पोजीशन ज़ीरो से छोटा होगा फर्स्ट पोजीशन। तो क्या कीजिए? वन और टू तो आपका आंसर बिल्कुल नहीं हो सकता है।",
+      "source": "caption",
+      "english_text": "But here we are able to see that this top of the hip, your one and two, is guaranteed to be smaller than two people, one from this and one from that. So could One and Two ever be your answer? Your answer may be no. Because One and Two will never be able to be in the top two because they are smaller than two people. The person coming in the top two cannot be younger than the two people. Either it will be less than one or the second position will be less than zero and the first position. So what to do? Your answer cannot be one or two at all."
+    },
+    {
+      "start_time": 1567.919,
+      "end_time": 1597.669,
+      "text": "वन और टू को क्या करिए? पॉप सॉरी। वन और टू को क्या करिए? पॉप करिए। यहां से। हटाइए इसको। बेकार एलिमेंट है। बिल्कुल बेकार। और किसको घुसाइए? किसको घुसाइए? फोर और थ्री को घुसाइए। फोर और थ्री को घुसाइए अंदर। फोर और थ्री को अंदर घुसाइए। ठीक है? इस आदमी का पत्ता साफ हो गया। ये आदमी गया। ओके? आइए अगले आइटम पे आइए। फोर और टू। मतलब फ्रीक्वेंसी फोर और एलिमेंट टू। ठीक है भाई? फ्रीक्वेंसी फोर और एलिमेंट फ्रीक्वेंसी फोर है क्या है?",
+      "source": "caption",
+      "english_text": "What to do with one and two? Pop sorry. What to do with one and two? Pop it. From here. Remove this. It is a useless element. Absolutely useless. Who else to include? Whom to enter? Enter four and three. Get four and three in. Tuck in fours and threes. Ok? This man was wiped clean. This man is gone. Ok? Let's move on to the next item. Four and two. Meaning frequency four and element two. okay brother? What is frequency four and element frequency four?"
+    },
+    {
+      "start_time": 1597.679,
+      "end_time": 1630.63,
+      "text": "सॉरी। फ्रीक्वेंसी हां फ्रीक्वेंसी टू और एलिमेंट फोर फ्रीक्वेंसी टू और एलिमेंट फोर हां ओके सेम एक्सरसाइज रिपीट करिए आपके हिप के टॉप में कौन सा बैठा हुआ होगा थ्री और वन थ्री और वन ये थ्री और वन अभी भी कैसे है अरे हम किसी और को पॉप कर दिए क्या अरे यार यही हां वन और टू को पॉप करना था ना वन और हां ठीक है ठीक है ठीक है ठीक है उसको सही पॉप किए थे सही पॉप किए थे ठीक है इसको पॉप करके करके और फोर और थ्री को घुसा दिए थे। फोर",
+      "source": "caption",
+      "english_text": "Sorry. Frequency yes Frequency two and element four Frequency two and element four Yes OK repeat the same exercise Which one will be sitting on the top of your hip Three and one Three and one How is this three and one still How is it Hey did we pop someone else Oh man, this is it Yes one and two Had to be popped No one and yes OK OK OK OK Popped that right Popped it OK Popped this and four and three Were inserted. Four"
+    },
+    {
+      "start_time": 1630.64,
+      "end_time": 1660.71,
+      "text": "और थ्री को घुसा दिए थे। ठीक है? अब आइए अब आइए फोर और टू पे। फोर और टू पे मतलब कि इसका फ्रीक्वेंसी कितना है? टू। और एलिमेंट कितना है? फोर। ओके? एलिमेंट कितना है? फोर। आपके हिप के टॉप को देखिए। आपके हिप के टॉप को देखिए हमेशा। आपके हिप के टॉप पे कौन होगा? ये वाला एलिमेंट। आपके हिप के टॉप पे क्या होगा? ये एलिमेंट क्या बोलता है? फ्रीक्वेंसी थ्री एलिमेंट फोर। तो ये आपका टॉप का एलिमेंट है। ये आपका करंट का एलिमेंट है। देखिए क्या इसका फ्रीक्वेंसी इससे छोटा है? यस, यस, यस।",
+      "source": "caption",
+      "english_text": "And three were inserted. Ok? Now come now let's four and two. Four and two pe means what is its frequency? To. And how much is the element? Four. Ok? How much is the element? Four. Look at the top of your hips. Always look at the top of your hips. Who will be on top of your hip? This element. What will be at the top of your hip? What does this element say? Frequency three element four. So this is your top element. This is your element of current. See if its frequency is smaller than this? Yes, yes, yes."
+    },
+    {
+      "start_time": 1660.72,
+      "end_time": 1693.909,
+      "text": "इसके आपका करंट का एलिमेंट आपके टॉप से छोटा है। अब अब आपको एक अपने करंट एलिमेंट के बारे में एक बात पता चली। देखिए आपका करंट एलिमेंट हिप के टॉप से भी छोटा है। हिप के टॉप से भी छोटा है। मतलब कि हिप में जो टॉप पे एलिमेंट बैठा है। हिप पे जो टॉप पे एलिमेंट बैठा है वो गारंटीड एक आदमी से छोटा है। ये हम लोग जान चुके हैं। क्योंकि हिप का साइज टू है वो थ्री और वन जो है ना ये जो है गारंटीड एक आदमी से छोटा है। गारंटीड इससे छोटा है। ओके? तो ये तो गारंटीड सेकंड पोजीशन पे है एट मैक्स। स्पष्ट तो नहीं हो सकता है और ये",
+      "source": "caption",
+      "english_text": "Therefore your current element is smaller than your top. Now you know one thing about your current element. Look, your current element is shorter than the top of the hip. Shorter than the top of the hip. Meaning the element sitting on top of the hip. The top element sitting on the hip is guaranteed to be smaller than a man. We have come to know this. Because hip size is two, that is three and one is guaranteed to be smaller than a man. Guaranteed is smaller than this. Ok? So this is guaranteed second position at max. It may not be clear and this"
+    },
+    {
+      "start_time": 1693.919,
+      "end_time": 1724.549,
+      "text": "वाला करंट आदमी आपके उससे भी छोटा है। मतलब ये करंट गारंटीड कितने लोगों से छोटा होगा? दो लोगों से छोटा होगा। एक तो आपके हिप के टॉप से और एक इससे जिससे टॉप खुद छोटा है। मतलब कि ये ऐसा ऐसा रिलेशन है। आपका जो हिप का टॉप है वो किसी न किसी एक्स से छोटा है क्योंकि ये हिप के टॉप पे, हिप के टॉप पे कौन जाता है? मिनिमम एलिमेंट्स आता है तो वो छोटा होगा और आपका करंट आपके टॉप से भी छोटा है। आपका करंट आपके टॉप से भी छोटा है। मतलब कि आपका करंट क्या कभी भी आंसर हो सकता है? नहीं।",
+      "source": "caption",
+      "english_text": "The current guy is younger than you. Meaning, this guaranteed current will be smaller than how many people? Will be smaller than two people. One from the top of your hip and one from where the top itself is shorter. Meaning that this is such a relationship. The top of your hip is smaller than some X because it goes on the top of the hip, who goes on the top of the hip? If minimum elements come then it will be small and your current is also smaller than your top. Your current is smaller than your top. Meaning, can your current ever be the answer? No."
+    },
+    {
+      "start_time": 1724.559,
+      "end_time": 1758.07,
+      "text": "आपका करंट पक्का पक्का दो लोगों से छोटा है। दो लोगों से छोटा वाला आपका टॉप टू का आंसर नहीं हो सकता है। बिल्कुल नहीं हो सकता है। करंट को इग्नोर कर दीजिए बिल्कुल। करंट को इग्नोर कर दीजिए बिल्कुल की करंट आपका कभी भी आंसर नहीं हो सकता है। करंट को क्या करेंगे? इग्नोर कर दीजिए। बिल्कुल इग्नोर कर दीजिए। आगे बढ़िए। क्या मिलता है? फाइव की फ्रीक्वेंसी वन है। मतलब कि आप क्या इंसर्ट करना चाहते हैं? वन फ्रीक्वेंसी और एलिमेंट फाइव। सेम चीज दोहराइए। ये आपका करंट है। हिप के टॉप पे कौन है? थ्री और वन। थ्री और वन। क्या आपका करंट का फ्रीक्वेंसी हिप के टॉप से",
+      "source": "caption",
+      "english_text": "Your current is definitely younger than two people. The younger one among the two cannot be your top two answer. Absolutely not possible. Ignore the current completely. Ignore the current as current can never be your answer. What will we do with the current? Ignore it. Ignore it completely. Go ahead. What do you get? The frequency of five is one. Meaning what do you want to insert? One Frequency and Element Five. Repeat the same thing. This is your current. Who is on top of the hip? Three and one. Three and one. Is the frequency of your current higher than the top of the hip?"
+    },
+    {
+      "start_time": 1758.08,
+      "end_time": 1789.59,
+      "text": "छोटा है? हां, छोटा है। मतलब कि आपका करंट आपके टॉप से छोटा है। आपका टॉप ऑलरेडी एक्स से छोटा है। तो क्या होगा? आपका करंट कितने लोगों से छोटा हो गया? गारंटीड। दो लोगों से। से दो से ज्यादा भी हो सकता है। दो लोगों से तो पक्का छोटा है आपको ये करंट नहीं चाहिए आपके आंसर में। ये आपका आंसर कभी भी नहीं बन सकता है। बिल्कुल हटा दीजिए इसको। बिल्कुल इग्नोर कर दीजिए। आगे बढ़ते हैं। आगे बढ़ते हैं। चलिए आगे बढ़ते जाइए। आगे बढ़ते जाइए। सिक्स और फोर मतलब कि फ्रीक्वेंसी फोर और एलिमेंट है सिक्स।",
+      "source": "caption",
+      "english_text": "Is it small? Yes, it is small. Meaning your current is smaller than your top. Your top is already shorter than X. So what will happen? Your current became smaller than how many people? Guaranteed. From two people. It can be more than two. It is definitely smaller than two people, you don't want this current in your answer. This can never be your answer. Remove it completely. Ignore it completely. Let's move ahead. Let's move ahead. Let's move ahead. Keep moving forward. Six and four means that the frequency is four and the element is six."
+    },
+    {
+      "start_time": 1789.6,
+      "end_time": 1823.35,
+      "text": "ठीक है? ये आपका क्या है? ये आपका करंट है। आपके हिप के टॉप में कौन बैठा हुआ है? थ्री और वन। क्या आपका करंट आपके टॉप से बड़ा है? यस यस यस बड़ा है। अब आपको आपके टॉप के बारे में क्या पता चला? टॉप वाला एलिमेंट ऑलरेडी एक x से छोटा था क्योंकि हिप का साइज़ टू था। टू के साइज़ में ये मिनिमम एलिमेंट था तो ऑलरेडी एक्स से छोटा था और ये इससे भी छोटा हो गया। ये आपके कर्व से भी छोटा हो गया। मतलब कि आपका जो हिप का टॉप एलिमेंट है गारंटीड दो लोगों से छोटा है। वो आंसर में नहीं हो सकता है क्योंकि वो टॉप टू में चाह के भी नहीं आ",
+      "source": "caption",
+      "english_text": "ok? What is this to you? This is your current. Who's sitting on top of your hip? Three and one. Is your current bigger than your top? Yes yes yes is big. Now what did you find out about your top? The top element was already smaller than an This was the minimum element in the size of 2, so it was already smaller than X and it became even smaller. It became smaller than your curves. Meaning that the top element of your hip is guaranteed to be smaller than the other two. He cannot be in the answer because he cannot come in the top two even if he wants to."
+    },
+    {
+      "start_time": 1823.36,
+      "end_time": 1850.789,
+      "text": "पाएगा। क्या करेंगे? ये तो आंसर नहीं हो सकता है। इसको निकालिए और फोर और सिक्स को डालिए। अब आपके सारे एलिमेंट्स खत्म हो गए। लास्ट में आपके हिप में कौन से एलिमेंट्स बचे? देखिए आपके हिप में दो ही एलिमेंट बचे। शुरू भी दो से किए। लास्ट भी दो से हुआ। फोर सिक्स मतलब की फ्रीक्वेंसी फोर। किसका फ्रीक्वेंसी फोर? सिक्स का फ्रीक्वेंसी फोर। आपके आंसर में क्या आ जाएगा एक? सिक्स। और फोर थ्री। फ्रीक्वेंसी फोर।",
+      "source": "caption",
+      "english_text": "Will get. What to do? This cannot be the answer. Take it out and put in four and six. Now all your elements are gone. Which elements were left in your hip in the end? See, only two elements are left in your hip. Started with two also. The last one also happened by two. Four six means frequency four. Whose frequency four? Frequency four of six. What will come in your answer? Six. And four three. Frequency Four."
+    },
+    {
+      "start_time": 1850.799,
+      "end_time": 1878.23,
+      "text": "लेकिन एलिमेंट कौन सा? थ्री। क्या सिक्स और थ्री ही आपका आंसर नहीं था इसके हिसाब से? यस आपका आंसर सिक्स और थ्री था। तो क्या ऐसे करके आपको आंसर मिला है? एक छोटा सा ट्रिक सोच के कि कौन सा एलिमेंट चाहिए जो कितने लोगों से छोटा हो सकता है? अगर हम k = 2 की बात कर रहे हैं तो कोई एलिमेंट अगर दो लोगों से छोटा हो गया तो वो कभी आपका आंसर नहीं हो सकता। आपका आंसर कौन हो सकता है? जो या तो एक से छोटा हो या तो किसी से छोटा ना हो। वही टॉप टू में आ पाएगा। अगर k = 3 हो जाता। सेम लॉजिक।",
+      "source": "caption",
+      "english_text": "But which element? Three. According to this, wasn't six and three your answer? Yes, your answer was six and three. So did you get the answer by doing this? A little trick is to think about which element is needed which can be smaller than how many people? If we are talking about k = 2 then if any element is smaller than two elements then it can never be your answer. Who can be your answer? Which is either smaller than one or not smaller than any other. Only he will be able to come in the top two. If k = 3 then Same logic."
+    },
+    {
+      "start_time": 1878.24,
+      "end_time": 1904.149,
+      "text": "अगर कोई एलिमेंट तीन लोगों से छोटा हो गया वो आपका आंसर नहीं हो सकता है फिर तो वो टॉप थ्री में नहीं आ पाएगा। टॉप थ्री में कौन आ सकता है? या तो थर्ड बंदा जो कि दो लोगों से छोटा हो। सेकंड बंदा जो एक से छोटा हो फर्स्ट बंदा जो किसी से छोटा ना हो। तो आपको करके आंसर मिल गया। इसकी टाइम कॉम्प्लेक्सिटी ज़रा एनालाइज़ करते हैं मेरे साथ। सबसे पहले तो हैशमैप बनाने के लिए आपको ऑर्डर ऑफ n लगेगा। इसमें तो कोई गुंजाइश नहीं है। ओके? हैशमैप का साइज़ आप हर एलिमेंट के लिए कुछ-कुछ तो कर ही रहे हैं। मैप पे लूप तो कर ही रहे हैं ना भाई।",
+      "source": "caption",
+      "english_text": "If an element is smaller than three people, it cannot be your answer, then it will not be able to come in the top three. Who can come in the top three? Or a third person who is younger than the two people. Second person who is smaller than one, first person who is not smaller than anyone. So you finally got the answer. Let us analyze its time complexity with me. First of all, to create a hashmap you will need order of n. There is no scope for this. Ok? Size of Hashmap You're doing something to each element. You are just doing a loop on the map, aren't you?"
+    },
+    {
+      "start_time": 1904.159,
+      "end_time": 1937.029,
+      "text": "हैशमैप में आप लूप तो करके देख रहे हैं। ओके? लूप कर रहे हैं तो एन तो लगेगा। हर बार आप या तो आप एक बार टॉप तो देख रहे हैं, ठीक है? या तो आप इग्नोर कर रहे हैं, या तो आप पॉप करके पुश कर रहे हैं, या तो आप पॉप करके पुश कर रहे हैं। उसमें पॉप पुश में लगेगा कुछ ना कुछ लॉग। लेकिन वो लॉग क्या लगेगा? क्या वो log n लगेगा? नहीं। हिप का साइज, हिप का साइज याद कीजिए। क्या कभी भी टू से ऊपर गया? नहीं गया। हिप का साइज कभी भी k से ऊपर नहीं जाने दिए थे हम। तो ये क्या हो जाएगा? n log k। a n log n नहीं पिछले एग्जांपल में",
+      "source": "caption",
+      "english_text": "You are trying to do a loop in Hashmap. Ok? If you are doing loop then N will be required. Every time you either look at the top once, okay? Either you are ignoring, either you are popping and pushing, or you are popping and pushing. There will be some log in the pop push. But what will that log look like? Will it take log n? No. Hip size, remember hip size. Did it ever go above two? Didn't go. We never allowed the hip size to go above k. So what will happen? n log k. a n log n not in the previous example"
+    },
+    {
+      "start_time": 1937.039,
+      "end_time": 1971.59,
+      "text": "मैक्स हिप में हिप का साइज बढ़ गया था। हिप का साइज एरे का साइज बन गया था। लेकिन इसमें हम कभी भी हिप का साइज के से ऊपर जाने ही नहीं दिए। अगर कोई एलिमेंट इंसर्ट होता था तो वो पॉप करने के बाद इंसर्ट होता था। एट एनी पॉइंट ऑफ टाइम हिप का साइज दो से ज्यादा नहीं जाने दिए थे। तो इसका क्या टाइम कॉम्प्लेक्सिटी बना? एन log k व्हिच इज बेटर दैन n log n। तो ये एक सॉल्यूशन है जोकि एक्सेप्ट हो जाएगा। ये एक सॉल्यूशन है जो कि एक्सेप्ट हो जाएगा। किसका सॉल्यूशन है ये? मिनी हीप का सॉल्यूशन है। एक बार जल्दी से और ड्राई रन देखिए। छोटे से एग्जांपल का छोटे से एग्जांपल का देखिए पूरा क्लियर हो जाएगा।",
+      "source": "caption",
+      "english_text": "Hip size had increased in Max Hip. The size of the hip had become the size of the array. But in this we never allowed the hip size to go above K. If any element was inserted, it was inserted after popping. At any point of time the hip size was not allowed to go more than two. So what is its time complexity? N log k which is better than n log n. So this is a solution which will be accepted. This is a solution that will be accepted. Whose solution is this? Mini Heap is the solution. Take a quick look at the dry run. Look at a small example and everything will become clear."
+    },
+    {
+      "start_time": 1971.6,
+      "end_time": 2005.11,
+      "text": "तो छोटा सा एग्जांपल क्या है? आपका एरे ऐसा है। 1 2 1 2 1 2 3 1 3 और टू। हैश मैप बना लेते हैं जल्दी से। हैश मैप में। वन कितनी बार है? चार बार। दो कितनी बार है? 1 2 3 चार बार। तीन कितनी बार है? दो बार। मिन हीप बनाएं। मिन हीप बनाएं। मिन हीप में क्या किए है? आपको कितने एलिमेंट चाहिए? k = 2 दिया हुआ है। टॉप k एलिमेंट्स। शुरू के दो आइटम्स को घुसा दो मिनप में। शुरू के दो आइटम्स को घुसा दो मिनप में। मत सोचो कि क्या है। जस्ट फॉर",
+      "source": "caption",
+      "english_text": "So what is a small example? Your array is like this. 1 2 1 2 1 2 3 1 3 and to. Create a hash map quickly. In HashMap. How many times is there a forest? Four times. How many times is two? 1 2 3 four times. How many times is three? twice. Create a min heap. Create a min heap. What is done in Min Heap? How many elements do you need? Given k = 2. Top k elements. Insert the first two items into the minimap. Insert the first two items into the minimap. Don't think what it is. just for"
+    },
+    {
+      "start_time": 2005.12,
+      "end_time": 2039.99,
+      "text": "आपके अंडरस्टैंडिंग के लिए हम ना इसको घुसाते हैं। एक तो हम इसको घुसा लेते हैं। वन और फोर। मतलब कि हम फोर और वन को घुसाते हैं। फोर और वन को घुसाते हैं। और हम इसको घुसा देते हैं। क्योंकि हैशपैप सॉर्टेड नहीं होता है। वो किसी भी ऑर्डर में आ सकता है। जस्ट फॉर अंडरस्टैंडिंग हम इसको घुसा दिए। तो हम टू और थ्री को भी घुसा दिए। टू और थ्री को घुसा दिया। ठीक बात है? आगे बढ़ते हैं। हैशमैप में कितने एलिमेंट बचे? एक एलिमेंट। आइए इसको प्रोसेस करते हैं। टू और फोर मतलब फ्रीक्वेंसी फोर और एलिमेंट टू। इसको आप देखना चाहते हैं। आपके टॉप पे इस समय कौन सा एलिमेंट बैठा होगा? मीन वाला टू और थ्री। टू और थ्री। क्या ये फोर आपके टू से",
+      "source": "caption",
+      "english_text": "For your understanding, we do not include this. Firstly, we enter it. One and four. Meaning we enter four and one. Let's enter four and one. And we insert it. Because Hashmap is not sorted. It can come in any order. Just for understanding we included it. So we inserted two and three also. Two and three were inserted. Is that correct? Let's move ahead. How many elements are left in the hashmap? An element. Let's process this. Two and four means frequency four and element two. You want to see this. Which element is sitting on your top right now? Means two and three. Two and three. Is this four your two?"
+    },
+    {
+      "start_time": 2040.0,
+      "end_time": 2074.55,
+      "text": "बड़ा है? क्या ये फोर आपके टू से बड़ा है? यस ये आपके टू से बड़ा है। यस ये आपके टू से बड़ा है। मतलब कि इसका क्या मतलब हुआ? ये जो टॉप का एलिमेंट है ये ऑलरेडी किसी x से छोटा होगा। एक्स क्या है? एक एलिमेंट। एक एलिमेंट से क्योंकि हीट का साइज टू है। तो ये k - 1 एलिमेंट से तो पक्का छोटा है क्योंकि ये मीन पे बैठा है। और ये इससे भी छोटा हो गया। तो ये कुल मिला के कितने लोगों से छोटा हो गया? ये जो टू थ्री वाला आइटम है कुल मिला के कितने लोगों से गारंटीड छोटा होगा? एक तो यही और एक दो लोगों से। दो लोगों से छोटे वाला मेरा नहीं हो सकता है टॉप टू में। क्या आपको ये टू थ्री चाहिए? नहीं चाहिए। 2 3 को पॉप",
+      "source": "caption",
+      "english_text": "Is it big? Is this four bigger than your two? Yes it is bigger than your two. Yes it is bigger than your two. I mean, what does it mean? This top element will already be smaller than any x. What is X? An element. From one element because the size of heat is two. So it is definitely smaller than the k - 1 element because it is sitting on the mean. And it became even smaller. So in total it became smaller than how many people? This is a two-three item, how many people in total will it be guaranteed smaller? One from this and one from two people. The one who is younger than the two cannot be in the top two. Do you want this two three? Don't want. pop 2 3"
+    },
+    {
+      "start_time": 2074.56,
+      "end_time": 2101.51,
+      "text": "करो और 4 2 को घुसाओ। 4 2 को घुसाओ। 4 2 हो सकता है आंसर हो जाए। हो सकता है आंसर हो जाए। सारे आइटम खत्म हुए हैं। आपके हिप में कौन से दो आइटम बचे हैं? एक तो फोर वन मतलब फ्रीक्वेंसी फोर एलिमेंट वन। एलिमेंट वन और फोर टू। फ्रीक्वेंसी फोर, एलिमेंट टू। वन और टू। यही आपके आंसर क्या नहीं थे? वन की फ्रीक्वेंसी फोर, टू की फ्रीक्वेंसी फोर। तो टॉप टू में तो वन और टू ही है। इसको बस रिटर्न कर देंगे। वेरी गुड।",
+      "source": "caption",
+      "english_text": "Do that and enter 4 2. Enter 4 2. 4 2 may be the answer. There may be an answer. All items are gone. What two items are left in your hip? Firstly, four one means frequency four element one. Elements One and Four Two. Frequency four, element two. One and two. Was this not your answer? One's frequency four, two's frequency four. So in the top two there is only one and two. Will just return it. very good."
+    },
+    {
+      "start_time": 2101.52,
+      "end_time": 2129.99,
+      "text": "तो उम्मीद करते हैं ये समझ में आया हो। आइए कोड कोड लिखें इसका। तो सबसे पहले आपको क्या दिया रहेगा? एक वेक्टर दिया रहेगा। सबसे पहले आपको एक आपको एक इंटीजर ऑफ़ वेक्टर रिटर्न भी करना है। मतलब एक एरे रिटर्न करना है और आपको एक वेक्टर ऑफ़ वो भी दिया रहेगा। वेक्टर दिया रहेगा। इंट K भी दिया रहेगा। ठीक है? आइए। इंट k इक्व सॉरी इंट n ले लेते हैं।",
+      "source": "caption",
+      "english_text": "So hope you understand this. Let's write the code for this. So what will be given to you first? A vector will be given. First of all you have to return an integer of vector. This means returning an array and you will also be given a vector of that. The vector will remain given. Int K will also be given. Ok? Come. Let's take int k equal sorry int n."
+    },
+    {
+      "start_time": 2130.0,
+      "end_time": 2163.27,
+      "text": "n = a डॉट साइज। ओके? अब आपको एक हिप बनाना है। हिप ऑफ पेयर्स बनाना है। हिप ऑफ पेयर्स बनाना है। कैसा? दोनों मैक्स होने चाहिए। दोनों मैक्स होने चाहिए। तो कल का कोड जा के देख लीजिए। वो कोड हमको भी याद नहीं है। हम भी उसको देखते ही हैं। अपना एक अगर आप C++ में है तो अपना एक कंपैरेटर फंक्शन लिखिए। सब उसमें उसमें लाइन बाय लाइन बताया हुआ है कि आपको पेअर चाहिए। कौन सा पेअर चाहिए? मैक्स मैक्स मीन मैक्स हर तरीके का कॉम्बिनेशन बताया हुआ है। तो आपको क्या चाहिए? आपको मीन और मीन का हिप चाहिए। दोनों में मीन और मीन का आपको हिप चाहिए। ठीक बात है? ओके। तो एक हिप बना",
+      "source": "caption",
+      "english_text": "n = a dot size. Ok? Now you have to make a hip. To make hip off pairs. To make hip off pairs. How? Both should be max. Both should be max. So go and check yesterday's code. We don't even remember that code. We also see him. If you are in C++ then write your own compiler function. Everything is mentioned line by line in it that you need a pair. Which pair do you want? Max Max Mean Max is the combination of each method. So what do you need? You need pisces and pisces hips. In both, you need the hip of Pisces and Pisces. Is that correct? Ok. so make a hip"
+    },
+    {
+      "start_time": 2163.28,
+      "end_time": 2196.31,
+      "text": "लीजिए। अगर आप पाइथन में हैं क्लास पेअर करके वो एलटी फंक्शन में जावा में है। क्लास पेयर करके वो जो हम इंटीजर का सिखाए थे। a - b या b - a जो भी आपको करना है। तो ये तो इजी है आपको इंट का ही चाहिए। हम उसमें तो इंट और स्ट्रिंग का भी बता दिए थे। इसमें आपको ईजी है। इंट और इंट का ही चाहिए। तो यहां पे हम लिख रहे हैं कि हिप बना लो। हिप ऑफ पेयर्स कैसा हिप जो कि मीन और मीन मतलब फर्स्ट के अनुसार भी मीन, सेकंड के अनुसार भी मीन। ओके? अब क्या करना है? हैशमैप बना लेते हैं। हैश मैप बना लेते हैं। हम आपको इसका कोड दे देंगे",
+      "source": "caption",
+      "english_text": "Take it. If you are in Python, by pairing the class, it is in Java in LT function. What we taught about integers in pairing class. a - b or b - a whatever you want to do. So this is easy, you only need brick. We had also explained about int and string in it. You are easy in this. Int and int only are required. So here we are writing that make hip. Hip of Pairs Kaisa Hip which is mean and mean means mean according to the first, mean according to the second also. Ok? What to do now? Let's create a hashmap. Let's create a hash map. we will give you its code"
+    },
+    {
+      "start_time": 2196.32,
+      "end_time": 2229.67,
+      "text": "अगर चाहिए होगा तो। हैशमैप क्या होगा? हर एलिमेंट का फ्रीक्वेंसी स्टोर करेगा। तो आइए इसका हर एलिमेंट का फ्रीक्वेंसी स्टोर कर दें। i = 0 i &lt; n i++ और f ai प्लस प्लस हो गया फ्रीक्वेंसी का काम फ्रीक्वेंसी का काम पूरा हो गया है ओके अब क्या करना हैशमैप पे लूप करना है और अपना वो चलाना है तो आइए लूप करें फॉर ऑटो आई एफ इसके बाद अब हैशमैप में क्या स्टोर है एलिमेंट और उसका फ्रीक्वेंसी तो एक इंट",
+      "source": "caption",
+      "english_text": "If needed. What will be the hashmap? Will store the frequency of each element. So let's store the frequency of each element. i = 0 i < n i++ and f ai plus plus frequency work is done frequency work is completed ok now what to do is to loop over the hashmap and run ours so let's loop for auto i f after this now what is stored in the hashmap the element and its frequency is an int"
+    },
+    {
+      "start_time": 2229.68,
+      "end_time": 2263.91,
+      "text": "एलिमेंट = i डॉट फर्स्ट जावा पython वाले जैसे भी आप निकालते हैं। इंट फ्रीक्वेंसी इक्व i डॉट सेकंड। ठीक है? हिप में घुसाने के लिए इसका एक पेयर हम बना लेते हैं। हिप में घुसाने के लिए इसका हम पेअर बना लेते हैं। ठीक बात है। हिप में घुसाने के लिए सॉरी मेरा कॉल आ गया था। हां तो हम लोग क्या करते थे कि क्या याद कीजिए हम लोग करने का क्या कोशिश करते थे कि हिप के शुरू हिप नहीं सॉरी हैशमैप के शुरू के",
+      "source": "caption",
+      "english_text": "Element = i dot first java python one you remove. Int frequency eq i dot sec. Ok? We make a pair of these to insert into the hip. We make a pair of these to insert into the hip. That's right. Sorry for hitting you in the hip, my call had come. Yes, so what we used to do, remember what we tried to do, at the beginning of hip, not hip, sorry, at the beginning of hashmap."
+    },
+    {
+      "start_time": 2263.92,
+      "end_time": 2295.589,
+      "text": "एलिमेंट्स को तो बिना किसी रेजिस्टेंस के घुसा देते थे बिना किसी रेजिस्टेंस के घुसा देते थे उसमें कुछ चेक नहीं करते थे कि ये करंट है कि क्या है तो सबसे पहले हम लोग एक काम करते हैं ना जो आपको घुसाना है उसका एक पेअर बना लेते हैं तो पेअर देखिए ऐसा बनता है। तो हम लोग एक क्या करेंगे ना अ पेयर आप लोग का अगर जावा में है न्यू पेयर करके पाइथन में है न्यू पेयर C++ वाले ऐसा करके पेअर बना लीजिए पेयर इंटेंट कर्व इज़ इक्वल टू अ क्या घुसाना है आपको याद करिएगा फ्रीक्वेंसी एलिमेंट फ्रीक्वेंसी",
+      "source": "caption",
+      "english_text": "We used to insert the elements without any resistance, we used to insert them without any resistance, we did not check whether there is current or not, so first of all we do one thing, we make a pair of what you have to insert, then see the pair is made like this. So, what will we do? A pair, if you guys have a new pair in Java, then in Python there is a new pair. C++ people do this and create a pair. Pair intent curve is equal to a. What to enter, you will remember frequency element frequency."
+    },
+    {
+      "start_time": 2295.599,
+      "end_time": 2324.95,
+      "text": "और एलिमेंट मतलब फ्रीक्वेंसी एंड एलिमेंट ये आपको वो करना है तो सबसे पहले तो एक काम कर लेंगे ना कि अगर PQ डॉट साइज़ लेस दैन K है मतलब कि अभी तक आप के को नहीं प्रोसेस किए हैं। जब एक बार आप दो को प्रोसेस कर लेंगे तो हिप का साइज़ दो हो जाएगा। लेकिन अगर आप नहीं प्रोसेस किए मान लो पहला में है या दूसरे में है। कुछ मत कीजिए। डायरेक्ट पुश कर दीजिए। डायरेक्ट पुश कर दीजिए। किसको? करंट को। और कंटिन्यू कर दीजिए। आगे चलेंगे।",
+      "source": "caption",
+      "english_text": "And element means frequency and element, if you want to do that, then first of all you will do one thing, if PQ dot size is less than K, it means that you have not processed K yet. Once you process two the hip size will be two. But if you have not processed it then assume it is in the first or the second. Don't do anything. Push directly. Push directly. Whom? To the current. And continue. Will move ahead."
+    },
+    {
+      "start_time": 2324.96,
+      "end_time": 2359.43,
+      "text": "लेकिन अगर ऐसा नहीं है। लेकिन अगर ऐसा नहीं है। लेकिन अगर ऐसा नहीं है। मतलब कि PQ का साइज़ हो चुका है। अब क्या करते थे? अगर करंट वाले का फ्रीक्वेंसी अगर करंट वाले का फ्रीक्वेंसी कम है आपके टॉप के फ्रीक्वेंसी से तो करंट को इग्नोर कर देते थे क्योंकि करंट फिर दो लोगों से छोटा है। अगर ऐसा नहीं है टॉप को पॉप करते थे करंट को पुश करते थे। तो ऐसे इसको ऐसे चेक करेंगे। करंट का क्या है? करंट क्या है? फ्रीक्वेंसी और एलिमेंट। तो मतलब इफ करंट का फर्स्ट। करंट डॉट फर्स्ट जो कि इसका फ्रीक्वेंसी रहेगा इज़ स्मॉलर देन PQ डॉट",
+      "source": "caption",
+      "english_text": "But if it is not so. But if it is not so. But if it is not so. It means that the size of PQ has been determined. What did you do now? If the frequency of the current person is less than the frequency of your top then they used to ignore the current because again the current is smaller than the two people. If it is not so then pop the top and push the current. So we will check it like this. What about current? What is current? Frequency and element. So means first of if current. Current dot first which will be its frequency is smaller than PQ dot"
+    },
+    {
+      "start_time": 2359.44,
+      "end_time": 2390.79,
+      "text": "टॉप का फर्स्ट। मतलब PQ के जो टॉप में एलिमेंट है उससे अगर ये छोटा है क्या करना है? कुछ नहीं। इग्नोर कंटिन्यू कंटिन्यू कुछ नहीं। इग्नोर। नहीं तो नहीं तो अब क्या करना है? उस टॉप वाले को हटाइए। पॉप करिए। उड़ाइए उसको। क्योंकि अब टॉप वाला गलत हो गया। टॉप वाला अब दो लोगों से छोटा हो जाएगा। तो वो आंसर नहीं हो सकता। और PQ डॉट पुश। क्या पुश करंट ये है मैप का लूप बंद कर दीजिए। अब आपके हिप में लास्ट में हम लोग क्या देखे थे कि दो ही एलिमेंट बचेंगे।",
+      "source": "caption",
+      "english_text": "Top's first. Meaning, what to do if it is smaller than the element at the top of PQ? Nothing. Ignore Continue Continue Nothing. Ignore. If not then what to do now? Remove that top one. Pop it. Blow him up. Because now the top one has gone wrong. The top one will now be smaller than the two people. So that can't be the answer. And push PQ dot. Is this the push current? Close the loop of the map. Now what we saw in your hip last time was that only two elements would be left."
+    },
+    {
+      "start_time": 2390.8,
+      "end_time": 2423.829,
+      "text": "अगर K2 है तो K एलिमेंट्स बचेंगे जो कि हाईएस्ट फ्रीक्वेंसी वाले होंगे। एक रिजल्ट के लिए ये ले लीजिए वेक्टर इंट रेस्ट और इस हिप को अब खाली करिए। जैसे हम लोग स्टैक को खाली करते थे वैसे ही हिप को भी खाली करा जाता है। pq डॉट एम्प्टी रेस्ट में आपको चाहिए क्या? फ्रीक्वेंसी की एलिमेंट। फ्रीक्वेंसी के एलिमेंट एलिमेंट तो रेस्ट डॉट पुश बैक जो भी PQ के टॉप में है क्योंकि आप टॉप ही निकाल सकते हैं। आप कोई एलिमेंट निकालने",
+      "source": "caption",
+      "english_text": "If K is 2 then K elements will be left which will be of highest frequency. For a result, take this vector int rest and free this hip now. Just like we used to empty the stack, similarly the hip is also emptied. What do you need in pq dot empty rest? Element of frequency. Element element of frequency then rest dot push back whatever is in the top of PQ because you can remove the top only. You can remove an element"
+    },
+    {
+      "start_time": 2423.839,
+      "end_time": 2457.51,
+      "text": "कोई बारीक देख के नहीं निकाल सकते हैं। टॉप का सेकंड सेकंड क्यों? एलिमेंट चाहिए। हीप में क्या घुसाए थे? फ्रीक्वेंसी एंड एलिमेंट। सेकंड वाला और tq डॉट पॉप ये खत्म हो गई। और लास्ट में यहां पे रिटर्न प्रेस कर दीजिए। बस खत्म। टाइम कॉम्प्लेक्सिटी देख चुके हैं। n लॉग k n नहीं स्पेस कॉम्प्लेक्सिटी ऑर्डर ऑफ़ n क्योंकि एनीवेज#शप तो बनाएंगे ही। हैशमैप कम से कम आपका एरे का साइज ज्यादा से ज्यादा हो सकता है। तो ये इसकी ये चर्चा हो गई। तो ये क्वेश्चन जरूर बनाइएगा। और",
+      "source": "caption",
+      "english_text": "Can't figure it out by looking in detail. Why second second of top? Element required. What did you put in the heap? Frequency and element. The second one and tq dot pop it's over. And finally press return here. that's over. Have seen time complexity. n log k n is not space complexity order of n because we will make #shape anyway. Hashmap can be at least the size of your array and can be at most. So this discussion happened. So definitely make this question. and"
+    },
+    {
+      "start_time": 2457.52,
+      "end_time": 2467.24,
+      "text": "अगला जो क्वेश्चन है शीट में जो कि टॉप के फ्रीक्वेंट वर्ड्स है वो जरूर ट्राई कीजिएगा नहीं तो हम कल बताएंगे ही। ठीक बात है। चलिए।",
+      "source": "caption",
+      "english_text": "You must try the next question which is on the top frequent words in the sheet, otherwise we will tell you tomorrow. That's right. Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

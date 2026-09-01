@@ -1,0 +1,380 @@
+{
+  "video_id": "14NH9aD7XeY",
+  "video_title": "Tree Series Last Video Construct a Binary Tree from Preorder and Inorder Traversal",
+  "video_number": 91,
+  "chunks": [
+    {
+      "start_time": 2.149,
+      "end_time": 36.549,
+      "text": "देखो भाई आज डिस्क्लेमर पहले ही दे देते हैं। क्वेश्चन इजी नहीं है। क्वेश्चन कॉम्प्लेक्स है। हार्ड भी नहीं है लेकिन कॉम्प्लेक्स है। मेरा ही पसीना छूट गया पढ़ाने में। तो जो लोग सीरियस है वही देखना। जो लोग ऐसे ही इधर-उधर हैं हवाहवाई में वो मत देखिएगा। आपको समझ में भी नहीं आएगा। तो उतना टाइम वेस्ट मत कीजिएगा। मतलब अगर आप दो-ती मिनट देखते हैं तो मत ही देखिए। समझ में बिल्कुल नहीं आएगा। हम अभी बता देते हैं। इसलिए नहीं कि टीचिंग गंदा है। हम पढ़ाएं, कोई पढ़ाएं। क्वेश्चन मुश्किल है। क्वेश्चन काफी अभी तक जितना ट्री क्वेश्चन है उसमें सबसे मुश्किल यही है। तो देख लीजिए पढ़ातेपढ़ते इतना सारा शीट खत्म हो चुका है। सब क्या गचपच गजपच हो चुका है। तो जो लोग सीरियस हैं वही देखिए जो लोग सीरियस हैं आपके बस का बात",
+      "source": "caption",
+      "english_text": "Look brother, let's give the disclaimer in advance today. The question is not easy. The question is complex. Not hard but complex. I lost my sweat in teaching. So watch only those who are serious. Don't look at the people who are wandering around like this in the air. You won't even understand. So don't waste that much time. Meaning, if you watch for two-three minutes then don't watch. Will not understand at all. We will tell you right now. Not because teaching is dirty. We should teach, someone should teach. The question is difficult. This is the most difficult question out of all the tree questions so far. So see, so many sheets have been finished while teaching. What a mess everything has become. So only those who are serious, see only those who are serious, it is for you."
+    },
+    {
+      "start_time": 36.559,
+      "end_time": 70.31,
+      "text": "नहीं है। तो चलिए शुरू करते हैं आपको क्वेश्चन समझाने से। क्वेश्चन समझते हैं। फिर अपने एग्जांपल पे रियल लाइफ एग्जांपल पे आएंगे। आपको इस बार बड़ी अजीब चीज है कि कोई भी ट्री नहीं दिया है। कोई भी ट्री का नोट नहीं दिया हुआ है। आपको दो एरे दिया है। अच्छा आपको दो एरे दिया है। एक एरे है प्रीआर्डर मतलब किसी जमाने में कोई ट्री था। किसी जमाने में कोई वृक्ष खड़ा था। मतलब कैसा-कसा कोई ट्री होगा। होगा। हमको क्या है? ऐसा-सा कहीं भी होगा। प्रीआर्डर उसका दिया है। उस ट्री का प्रीआर्डर। उस ट्री का एक और चीज भी मिला है। इन ऑर्डर भी यहां हुआ है। यस इन ऑर्डर भी मिला हुआ है। अच्छा आपको इन दोनों को",
+      "source": "caption",
+      "english_text": "It is not. So let's start by explaining the question to you. Understand the question. Then we will come to our real life exam. The strange thing is that no tree has been given to you this time. No tree has been noted. You are given two arrays. Well, you have been given two arrays. An array is preorder, meaning that once upon a time there was a tree. Once upon a time there stood a tree. Meaning what kind of tree it would be. will be. What do we need? Something like this can happen anywhere. Preorder has been placed. Preorder that tree. Another thing has also been found from that tree. These orders have also been placed here. Yes in order is also received. ok you both"
+    },
+    {
+      "start_time": 70.32,
+      "end_time": 99.91,
+      "text": "यूज़ करके इन दोनों एरे को यूज़ करके रियल ट्री जनरेट करना है। मतलब आप रचयिता हैं या तो आप निर्माता हैं। आपको रियल ट्री जनरेट करके उसका रूट रिटर्न करना है। तो अभी तक आपको रूट मिलता था। आप उसमें कुछ करते थे। अब आपको एरे दिया है। मतलब उसका प्रीआर्डर और इनऑर्डर ट्रेवर्सल दिया है। आप उसका रूट जनरेट करके दिखाइए। आगे बढ़ने से पहले एक बहुत इंपॉर्टेंट सवाल जो आपको सवाल या कासेप्ट जो आपको समझ में आना चाहिए ना वो यह है कि दो चीजें क्यों दी हुई है? एक चीज भी आपके मन में आएगा कि अगर हमको प्रीआर्डर दे देता प्रीआर्डर",
+      "source": "caption",
+      "english_text": "Using these two arrays we have to generate a real tree. Meaning you are either a creator or a producer. You have to generate the real tree and return its root. So till now you used to get route. You used to do something in it. Now you have been given an array. Meaning its preorder and inorder traversal is given. You generate its route and show it. Before moving ahead, a very important question or concept that you should understand is why two things are given? One thing will also come to your mind that if you had given us a pre-order, you would have given us a pre-order."
+    },
+    {
+      "start_time": 99.92,
+      "end_time": 134.39,
+      "text": "क्या होता है? रूट लेफ्ट राइट। ओके? इनऑर्डर क्या होता है? लेफ्ट रूट राइट। आपके मन में आएगा कि अगर हमको यही एक ही दे देता ना कोई प्रीआर्डर दे देता तो हम बना लेते। फॉर एग्जांपल अगर आपको कोई बोलता है कि भैया किसी ट्री है उसका प्रीआर्डर है 1 2 3 तो सिंपल में आप ये सोच सकते थे अच्छा वन है तो वन हो गया रूट ये हो गया लेफ्ट और ये हो गया राइट तो क्यों ना हम ऐसा ट्री बना दें कि वन हो जाए टू हो जाए और थ्री हो जाए वेरी गुड आप बिल्कुल बना सकते हो लेकिन ये ट्री तो आप",
+      "source": "caption",
+      "english_text": "What happens? Root Left Right. Ok? What is inorder? Left root right. It will come to your mind that if only this one was given to us or someone had given us a pre-order, we would have made it. For example, if someone tells you that brother, there is a tree, its pre-order is 1 2 3, then in simple you could have thought that if there is one, then one becomes the root, this becomes left and this becomes right, then why don't we make such a tree that one becomes two and becomes three, very good, you can definitely make it, but you can make this tree."
+    },
+    {
+      "start_time": 134.4,
+      "end_time": 166.949,
+      "text": "बनाए आप ये ट्री बना के पेपर सबमिट कर दिए हम एक और ट्री बनाते हैं उसका प्रीआर्डर देखते हैं क्या आएगा हम एक और ट्री बनाते हैं देखिए वन टू थ्री थ्री आपके ट्री से अलग है। बिल्कुल अलग है। इसका प्रीआर्डर निकालिए। यहां पे आएंगे वन। लेफ्ट चाइल्ड पे टू लेफ्ट साइड पे थ्री। इसका भी साला प्रीआर्डर वन टू थ्री है। एक और ट्री देखिए। वन टू थ्री। इसका भी प्रीआर्डर वन टू थ्री है। मतलब कि आप अगर एक हमको प्रीआर्डर देंगे ना 1 2 3 तो उसका हम छह सात तरह का ट्री आपको बना के दे सकते हैं।",
+      "source": "caption",
+      "english_text": "You have made this tree and submitted the paper. Let us make another tree and see if it will be pre-ordered. Let us make another tree. See, one two three three is different from your tree. It is completely different. Preorder it. Forest will come here. Left child pe two left side pe three. This also has a preorder of one to three. Look at another tree. One two three. Its preorder is also one to three. Meaning that if you give us a preorder 1 2 3 then we can make six or seven types of trees and give it to you."
+    },
+    {
+      "start_time": 166.959,
+      "end_time": 199.43,
+      "text": "मतलब यूनिक आंसर नहीं आएगा। तो इससे पता नहीं चलेगा कि आप जो ट्री बनाए वो सही है कि हम जो ट्री बनाए वो सही है। क्योंकि दोनों का प्रीआर्डर वही आ रहा है। लेकिन लेकिन लेकिन जब आप प्रीआर्डर के साथ इनऑर्डर भी देते हैं। जब आप प्रीआर्डर के साथ इनऑर्डर भी देते हैं तो चीजें बदल जाती हैं। देखिए मान लीजिए वही प्रीआर्डर है 1 2 3 और आपका इनऑर्डर भी 1 2 3 है। आपका इनऑर्डर भी 1 2 3 है। अब देखिए एक बात तो तय है कि आप वन तो रूट होगा ट्री का। ये अगर प्रीआर्डर है तो वन तो ट्री का रूट होगा ना। अगर ट्री का रूट ही प्रीआर्डर के पहले नहीं आता तो नहीं हो",
+      "source": "caption",
+      "english_text": "Meaning, a unique answer will not come. So it will not be known whether the tree made by you is correct or the tree made by us is correct. Because the pre-order of both is coming the same. But but but when you place an inorder along with a preorder. Things change when you add inorder along with preorder. See, suppose the same preorder is 1 2 3 and your inorder is also 1 2 3. Your inorder is also 1 2 3. Now see, one thing is certain that you, the forest, will be the root of the tree. If this is a preorder, then one must be the root of the tree, right? If the root of the tree does not come before preorder then it will not happen"
+    },
+    {
+      "start_time": 199.44,
+      "end_time": 231.509,
+      "text": "पाता। वन ओके ठीक है। अब अगर आप बोलते अब अगर आप बोलते कि अब एक काम करेंगे हम ये बनाएंगे। हम ये बनाएंगे। आप बोलते कि ये ट्री है। इसका प्रीआर्डर मैच हो रहा है। अब इसका इनऑर्डर निकाल के देखिए। सबसे पहले यहां आएगा। रूट खुद नहीं होगा। प्रिंट पहले लेफ्ट साइड को मौका देगा। तो टू हो जाएगा। फिर वन फिर थ्री। क्या ये मैच कर रहा है आपके इनऑर्डर से? नहीं। ये आपका इनऑर्डर था दिया हुआ। आपको इन दोनों को कंबाइन करके आंसर देना था। लेकिन आप जो आंसर बता रहे हैं वो इसको तो मैच कर रहा है। प्रीआर्डर तो सेम आ रहा है लेकिन क्या इनऑर्डर सेम आ रहा है?",
+      "source": "caption",
+      "english_text": "Finds. One ok ok. Now if you had said, now if you had said that now we will do one thing, we will make this. We will make this. You say that this is a tree. Its preorder is being matched. Now take out its in-order and see. Will come here first. The root itself will not happen. The print will give priority to the left side first. So it will be two. Then one, then three. Is this matching with your in-order? No. This was given in your order. You had to give the answer by combining these two. But the answer you are giving matches it. The pre-order is still coming, but is the in-order same coming?"
+    },
+    {
+      "start_time": 231.519,
+      "end_time": 265.59,
+      "text": "नहीं। इसीलिए प्रीआर्डर और इनऑर्डर दोनों का कॉम्बिनेशन से एक यूनिक आंसर आएगा। उसमें कोई भी सर्कल इधर से उधर अगर आप करेंगे चेंज हो जाएगा। अगर सिर्फ प्रीआर्डर दिया हो तो आप बहुत सारा चीज मतलब आप देखिए ना तीन लेंथ में हम छह सात तरह का चीज बना के दिखा दिए ना। अगर 100 देगा तो आप शायद 1 लाख ट्री बना देंगे। पॉसिबिलिटी बहुत सारी है। दोनों दिया हो एक ही पॉसिबिलिटी है। यूनिक पॉसिबिलिटी है। अब हम लोग आगे चलते हैं और देखते हैं कि इसको समझना कैसे है। उसका कोड कैसे करना है और एक हम आपको सलाह देंगे कि आपको स्टेज बाय स्टेज समझ में आएगा। ये एक्सपेक्ट मत कीजिएगा कि शुरू वाला",
+      "source": "caption",
+      "english_text": "No. That is why the combination of both preorder and inorder will give a unique answer. If you move any circle in it, it will change. If you have given only pre-order, then you can see a lot of things, you see, in three lengths, we have made six-seven types of things and shown them. If you give Rs 100 then you will probably make 1 lakh trees. There are many possibilities. There is only one possibility if both are given. There is a unique possibility. Now let us move ahead and see how to understand this. How to code it and one we will give you advice that you will understand step by step. Don't expect that the initial"
+    },
+    {
+      "start_time": 265.6,
+      "end_time": 300.469,
+      "text": "एक्सप्लेनेशन ही पूरा 100% आ जाएगा। स्टेज बाय स्टेज है। शुरू में एक्सप्लेनेशन है। मतलब शुरू में इसका इंट्यूशन है। फिर इसका थोड़ा सा और डीप इंट्यूशन है। फिर इसका नंबर के साथ एक्सप्लेनेशन है। फिर इसका कोड है और फिर उसका ड्राई रन है। स्टेज बाय स्टेज समझ में आएगा। लास्ट तक जाते-जाते समझ में आएगा। और फिर भी अगर आप इसको कॉपी पेन पे नहीं प्रैक्टिस करेंगे तो नहीं आएगा। ये हम डिस्क्लेमर दे देते हैं। पेशेंस रखिएगा। और चलिए बढ़ते हैं आगे। चलिए। अब देखिए अब हम लोग दादा जी तो बना लिए। दादा जी तो बन गया ना। दादा जी का काम खत्म हो गया। कैसे? प्रीआर्डर के पहला वाला बना के दादा जी बनाए पता चल गया लेफ्ट राइट क्या है सब हो गया अच्छा अब एक",
+      "source": "caption",
+      "english_text": "The explanation itself will be 100% complete. It is stage by stage. There is an explanation at the beginning. Meaning in the beginning it is intuition. Then there's a little bit more of this deeper intuition. Then there is its explanation with numbers. Then there is its code and then there is its dry run. You will understand stage by stage. You will understand as you reach the end. And still, if you do not practice it on copy pen then it will not come. We give this disclaimer. Have patience. And let's move ahead. Let go. Now look, now we have made Dada ji. It has become a grandfather, isn't it? Grandfather's work is finished. How? Grandfather made the first one of pre-order, I found out what is left and right, everything is done, now one."
+    },
+    {
+      "start_time": 300.479,
+      "end_time": 335.43,
+      "text": "काम करते हैं दादा जी का पूरा लेफ्ट सब ट्री बना लेते हैं कौन सा दादा जी का पूरा लेफ्ट सब ट्री बना लेते हैं राइट बाद में देखेंगे पूरा लेफ्ट बना लेते हैं तो एक बात बताइए कि ऑलरेडी आपको पता चला कि दादा जी यहां पे थे टू तक दादा के लेफ्ट में पापा और प्रत्युषी आ सकते हैं जो कि ज़ीरो से वन है। तो क्या आपको बाकी किसी एरे का काम है? एटलीस्ट जब आप लेफ्ट सबट्री को देख रहे हैं तो बाकी एरे का काम है। बाकी एरे का काम नहीं है। तो एक काम करेंगे कि जब तक हम लोग लेफ्ट सब ट्री में रहेंगे ना हम लोग इतना ही एरे देखेंगे। मान लेंगे कि एरे यही है। कैसे मान लेंगे एक लो = 0 है और हाई = 1 है। बाकी इनऑर्डर एरे है ही",
+      "source": "caption",
+      "english_text": "Let's work, let's make Dada's entire left sub-tree. Which Dada's entire left sub-tree should we make? Right, we will see later. Let's tell you one thing. Already, you came to know that Dada ji was here till two. Papa and Pratyushi can come in Dada's left, which is from zero to one. So do you have any other work to do? Atlist is the work of the rest of the array when you are looking at the left subtree. The rest is not the work of the array. So we will do one thing that as long as we stay in the left sub-tree, we will see only this much array. Let's assume that this is it. How will we assume a low = 0 and a high = 1. The rest is an inorder array."
+    },
+    {
+      "start_time": 335.44,
+      "end_time": 368.629,
+      "text": "नहीं। क्योंकि बाकी इनऑर्डर एरे का काम नहीं है ना। दादाजी बन चुका है। दादा जी के राइट में जो भी है वो राइट सब ट्री में है। लेफ्ट सब ट्री में उनका काम नहीं है। अभी आपके लिए दो ही चीजें इंपॉर्टेंट है। अच्छा अब आ जाइए लेफ्ट सबट्री में आ गए हैं। अब एक बात बताइए लेफ्ट सब ट्री में तो आ गए। आपको पता है कि लेफ्ट सबट्री में पापा और प्रत्युष दोनों है। अब इसका जो नेक्स्ट इंडेक्स है वन जो कि पापा है। किसका? प्रीआर्डर का। प्रीआर्डर का याद रखिए हम लोग सबसे पहले इंडेक्स ज़ीरो पे देखे। दादा बना। इंडेक्स वन पे आए तो हम लोग पापा पे आ गए। अब एक बात बताइए इसका इमीडिएट चाइल्ड। यहां जो हम दो लिखे हुए हैं इसका इमीडिएट चाइल्ड इसका इमीडिएट",
+      "source": "caption",
+      "english_text": "No. Because the rest is not the work of inorder array right. He has become a grandfather. Whatever is in grandfather's rights is in the rights sub tree. They do not have any work in the left sub tree. Right now only two things are important for you. Okay, now we have come to the left subtree. Now tell me one thing, you have come to the left sub-tree. You know that both Papa and Pratyush are in the left subtree. Now its next index is one which is Papa. Whose? Of preorder. Remember for pre-order we first look at the index at zero. Became a grandfather. When we came to index one, we came to Papa. Now tell me one thing about its immediate child. What we have written here is its immediate child."
+    },
+    {
+      "start_time": 368.639,
+      "end_time": 402.79,
+      "text": "चाइल्ड क्या होना चाहिए? पापा होना चाहिए कि प्रत्युष होना चाहिए? ये वाले का बात कर रहे हैं ये सर्कल का। ये हां पापा भरना है या प्रत्युष भरना है। क्या भरना चाहिए था? देखिए अगर आप बोलते हैं कि यहां पे हम जी प्रत्युष भरेंगे। दोनों भर सकते हैं ना। पापा और प्रत्युष दोनों हम लोग देखे थे कि हो सकता है। आप बोलते हैं कि दोनों में प्रत्युष भरेंगे। अच्छा, अगर ऐसा है, तो एक बात बताइए कि जब यहां पे दादा है और यहां पे प्रत्युष आप बोल रहे हैं कि हम भरेंगे, तो प्रीआर्डर में पापा कैसे आ गया प्रत्युष के पहले? ऐसा कैसे हो गया कि जब प्रीआर्डर आपको मिला है, तो दादा आया, दादा आना चाहिए। उसके बाद हम लोग रूट हुआ।",
+      "source": "caption",
+      "english_text": "What should be the child? Should it be Papa or Pratyusha? This one is talking about this circle. Is this yes Papa bharna or Pratyush bharna? What should have been filled? See, if you say that here we will fill our hearts with Pratyush. Both can be filled, right? Papa and Pratyush both of us saw that it was possible. You say that Pratyush will be filled in both. Well, if it is so, then tell me one thing that when Dada is here and Pratyush is here and you are saying that we will fill, then how did Papa come before Pratyush in the pre-order? How did it happen that when you have received the pre-order, Dada has come, Dada should come. After that we got routed."
+    },
+    {
+      "start_time": 402.8,
+      "end_time": 436.39,
+      "text": "रूट के बाद लेफ्ट आते। अब लेफ्ट में सर पापा कैसे आ गए? प्रत्युष आना चाहिए था ना। प्रीआर्डर फिर दादा और प्रत्युष होना चाहिए था। पापा कैसे आए? कहां से आए पापा? पापा आए क्योंकि यहां पे प्रत्युष नहीं हो सकता है। यहां पे पापा को ही होना पड़ेगा। यहां पे पापा को ही होना पड़ेगा। तो यहां पे पापा नहीं होना तो आपका प्रीआर्डर गलत है। आपका मतलब कुछ ना कुछ तो गलत कर रहे हैं आप। फिर से सुनिए। हम लोग जब दादा जी पर थे तो हम लोग देखे कि दादाजी के लेफ्ट में पापा और प्रत्युष है तो लेफ्ट सब ट्री में हो सकता है दोनों आ सकते हैं कहीं से",
+      "source": "caption",
+      "english_text": "Coming left after the route. Now how did Sir Papa come to the left? Pratyush should have come, right? Preorder should have been Dada and Pratyush again. How did Papa come? Where did Papa come from? Papa came because Pratyush cannot be here. Papa will have to be here only. Papa will have to be here only. So if Papa is not there then your preorder is wrong. You mean you are doing something wrong. Listen again. When we were at Grandfather's house, we saw that Papa and Pratyush were on Grandfather's left side, so they could be in the left sub-tree, both of them could have come from somewhere."
+    },
+    {
+      "start_time": 436.4,
+      "end_time": 470.309,
+      "text": "भी आ सकते हैं लेकिन जब हम लोग प्रीआर्डर में आगे बढ़े वन पे देखें कि पापा है क्या यहां पे किसी भी जन्म में प्रत्युष आ सकता है नहीं आ सकता है क्योंकि अगर यहां पे प्रत्युष आ जाएगा तो आप पहले दादा लिखे प्रीआर्डर में फिर आप प्रत्युष लिखते ना फिर आप पापा क्यों लिख दिए फिर पापा को बाद में लिखते प्रीआर्डर आपको बोलता है किस ऑर्डर में सर्कल बनता जाएगा जैसे ही लेफ्ट सब टी में आए अगला वाला जो आदमी है जो कि पापा है वो यहां पे आप लिखिए। अब अब बहुत ध्यान से देखिए। सेम काम जो दादा जी में आप दोहराए थे। दादा जी को इन ऑर्डर",
+      "source": "caption",
+      "english_text": "He can also come but when we move ahead in the pre-order, let's see whether Papa is here, Pratyush can come in any birth, he cannot come because if Pratyush comes here, then first you write Dada in the pre-order, then you write Pratyush, then why do you write Papa and then write Papa later, the pre-order tells you in which order the circle will be formed as soon as the left sub tee comes, the next person who is Papa, you write here. Now look very carefully. The same work which you repeated in Dada ji. these orders to grandfather"
+    },
+    {
+      "start_time": 470.319,
+      "end_time": 503.43,
+      "text": "में खोजे थे। इनऑर्डर के लेफ्ट को बोले थे ये लेफ्ट सब ट्री में आएंगे। इन ऑर्डर में राइट वाले को बोले राइट में आएंगे। सेम काम कीजिए पापा पे। सेम काम कीजिए पापा पे। क्या करिए? पापा को खोजिए इन ऑर्डर में। पापा को खोजिए इन ऑर्डर में। कहां मिले आपको पापा? ज़ीरो पे मिले। जीरो पे मिले। अब अब इसमें पापा के लेफ्ट में कोई है? पापा के लेफ्ट में क्या कोई आदमी है? नहीं है। जीरो के लेफ्ट में कोई नहीं है ना? मतलब कि क्या पापा के लेफ्ट सब ट्री में कोई भी आदमी हो सकता है? नहीं हो सकता",
+      "source": "caption",
+      "english_text": "were discovered in. Told the left of in-order would come in the left sub-tree. In this order, the one on the right will come to the right. Do the same work on Papa. Do the same work on Papa. What to do? Find Papa in this order. Find Papa in this order. Where did you find papa? Met at zero. Met at zero. Now is there anyone to Papa's left in this? Is there anyone to Papa's left? Not there. There is no one to the left of zero, right? Meaning, can there be any person in Papa's left sub-tree? can't happen"
+    },
+    {
+      "start_time": 503.44,
+      "end_time": 531.11,
+      "text": "है। नहीं हो सकता है। बिल्कुल नहीं हो सकता है। पापा के राइट में कौन-कौन सा है? और हम देखिए ध्यान से बताए जब आप इधर आए हैं, आप इस एरे के साथ आए हैं। लो जीरो हाई वन आप इतना ही एरे कंसीडर कर रहे हैं। पापा के राइट में पापा के राइट में क्या है? प्रत्युष है। मतलब कि मतलब कि पापा के राइट सब ट्री में प्रत्युष हो सकता क्या? होगा ही होगा ही। यहां तो एक ही है तो प्रत्युष ही होगा। समझ में आ रही है बात?",
+      "source": "caption",
+      "english_text": "Is. Can't happen. Absolutely not possible. Which ones are in Papa's rights? And let us see, tell us carefully when you have come here, you have come with this array. Low zero high one, that's all you are considering. What is Papa's right? It is Pratyush. That means, can Pratyush be in Papa's right sub tree? It will definitely happen. There is only one here so it must be Pratyush. Are you understanding the point?"
+    },
+    {
+      "start_time": 531.12,
+      "end_time": 564.55,
+      "text": "नहीं आ रही है। क्यों बोल रहे हैं कि पापा का लेफ्ट सब ट्री इनल होगा। क्योंकि पापा के लेफ्ट में इनऑर्डर वाले एरे में क्या दिख रहा है आपको? कुछ नहीं दिख रहा है तो जब कुछ नहीं दिख रहा है रूट पापा है पापा के लेफ्ट में कुछ नहीं है तो जब कुछ नहीं है तो कुछ नहीं होगा नल होगा पापा के राइट में क्या आ गया प्रत्युष अब अब अब पापा का लेफ्ट बनाने का जरूरत नहीं है क्योंकि नल है ये हम आपको कोड नहीं बता रहे हैं ये हम आपको बता रहे हैं कि सोचा कैसे जाता है सोचना क्या है इसमें कोड भी लिख देंगे पापा के राइट बना लेते हैं अब पापा का जब आप राइट बनाएंगे जब आप पापा का राइट बनाएंगे तो आप ये वाला एरे लेके आए थे अब",
+      "source": "caption",
+      "english_text": "She is not coming. Why are you saying that Papa's left sub tree will be inal? Because what do you see in the unordered array on Papa's left? If nothing is visible then the root is Papa. If there is nothing on Papa's left then when there is nothing then nothing will be null. What has come to Papa's right Pratyush. Now now there is no need to make Papa's left because it is null. We are not telling you the code. We are telling you how thought goes, what is thinking. We will also write the code in it. Now when you will make Papa's right, when you will make Papa's right. If you want to make it right, you brought this array now."
+    },
+    {
+      "start_time": 564.56,
+      "end_time": 594.389,
+      "text": "पापा का जब राइट बनाइए ना तो सिर्फ इसको कंसीडर करिए सिर्फ सिर्फ इसको कंसीडर करिए क्योंकि दादाजी तो ऑलरेडी हो चुका था। ये वाले एरे में कैसे होगा? लो भी वन और हाई भी वन। लो भी वन और हाई भी वन। अगेन पापा के राइट में कौन सा आदमी बनेगा? प्रीआर्डर में जो अगला आदमी है वही बनेगा। प्रत्युष ही बनेगा। तो ये क्या बन गया आपका? प्रत्युष बन गया। सेम काम प्रत्युष के साथ दोहराइए। प्रत्युष आपको कहां मिला है? वन पे। क्या प्रत्युष के लेफ्ट में कोई है?",
+      "source": "caption",
+      "english_text": "Whenever you make a right for your father, just consider it, just consider it because grandfather was already ready. How will this happen in the array? Low is one and high is also one. Low is one and high is also one. Which man will be in Papa's rights again? The next person in the pre-order will be made. Only Pratyush will be made. So what has become of you? Pratyush became. Repeat the same thing with Pratyush. Pratyush where did you get it? On one. Is there anyone to Pratyush's left?"
+    },
+    {
+      "start_time": 594.399,
+      "end_time": 622.71,
+      "text": "प्रत्युष के लेफ्ट में है पापा। लेकिन आप किससे एरे लेके आए हैं? लो वन, हाई वन। इतना ही आप कंसीडर कर रहे हैं। बस इतना सा एरे आप देख रहे हैं इन ऑर्डर में। तो क्या प्रत्युष के लेफ्ट में कोई है? कोई नहीं है। क्या प्रत्युष के राइट में कोई है? कोई नहीं है। मतलब कि प्रत्युष लीफ नोड है। प्रत्युष का लेफ्ट राइट सब बराबर हो चुका है। हो गया। पापा का काम हो गया। पापा का लेफ्ट भी बन गया। पापा का राइट भी बन गया। दादा पे वापस आ जाइए। दादा पे दादा का लेफ्ट बन गया। दादा का लेफ्ट बन गया। देखिए ओरिजिनल ट्रे ऐसा था। क्या लेफ्ट ऐसा दिख रहा? हां, ऐसा दिख रहा है।",
+      "source": "caption",
+      "english_text": "Papa is on Pratyush's left. But from whom have you brought the array? Low one, high one. This much you are considering. That's all you are seeing in these orders. So is there anyone to Pratyush's left? There is none. Is there anyone to Pratyush's right? There is none. Meaning that Pratyusha is a leaf node. Pratyush's left and right are all equal. Done. Papa's work is done. Papa also became left. Papa's rights also became available. Come back to Dada. Dada became Dada's left. Became grandfather's left. Look, the original tray was like this. Does the left look like this? Yes, it looks like that."
+    },
+    {
+      "start_time": 622.72,
+      "end_time": 654.23,
+      "text": "अब दादा का राइट बनाते हैं। अब दादा का राइट बनाते हैं। क्या होगा? क्या होगा दादा के राइट में बनाने में? सबसे पहले दादा के राइट में कौन से तीन लोग हैं? रोहन, चाचा, सूरज, कैसे पता चला? इनऑर्डर वाले एरे में दादा के राइट में आ रहे हैं। तो हम लोग बस अब इतना सारा एरे कंसीडर करेंगे इनऑर्डर में। कहां से कहां तक? लो = 3 और हाई = 5 क्योंकि बाकी का काम नहीं है। बाकी का काम नहीं है। ओके? अब अब बात करते हैं राइट सब ट्री में। आइए राइट वाले सर्कल में किसको रहना चाहिए तीनों में से?",
+      "source": "caption",
+      "english_text": "Now let's make Dada's right. Now let's make Dada's right. What will happen? What will happen in making it in grandfather's rights? Who are the first three people to the right of grandfather? Rohan, uncle, Suraj, how did you know? The in-order ones are coming to the right of grandfather in the array. So now we will just consider this entire array in the order. From where to where? Low = 3 and High = 5 because there is no remaining work. There is no remaining work. Ok? Now let's talk about the right sub-tree. Come, who should remain in the right circle among the three?"
+    },
+    {
+      "start_time": 654.24,
+      "end_time": 688.15,
+      "text": "अगला जो प्रीआर्डर का आदमी है, अगला जो प्रीआर्डर का आदमी है थ्री। क्योंकि क्योंकि क्योंकि अगर आप बोलते हैं कि नहीं नहीं हम इसको नहीं रखेंगे। हम यहां पे रोहन रखना चाहते हैं तो भैया जब आप रोहन रखना चाहते हैं तो रोहन यहां क्यों नहीं आया? यहां पे चाचा कैसे आ गए? देखिए, रूट, रूट आपका यह है। लेफ्ट इतना खत्म हो गया। अब शुरू होता है राइट सब ट्री। यहां पे चाचा क्या कर रहा है? अगर चाचा यहां नहीं है तो अगर चाचा यहां नहीं है तो फिर चाचा यहां क्या कर रहा है? इसीलिए यहां पे कौन रहेगा? चाचा। चाचा यहां पे चाचा रहेंगे।",
+      "source": "caption",
+      "english_text": "The next one is the preorder guy, the next one is the preorder guy three. Because because because if you say no no we will not keep it. We want to keep Rohan here, so brother, when you want to keep Rohan, then why didn't Rohan come here? How did uncle come here? Look, root, this is your root. The left is so over. Now the right sub tree starts. What is uncle doing here? If uncle is not here then what is uncle doing here? That's why who will stay here? Uncle. Uncle will stay here as uncle."
+    },
+    {
+      "start_time": 688.16,
+      "end_time": 720.79,
+      "text": "सेम काम चाचा पे दोहराइए। चाचा को खोजिए। कहां मिला? यहां पे। चाचा के लेफ्ट में कौन है? एक आदमी है रोहन। कौन सा आदमी है? लो भी थ्री हो गया। हाई भी थ्री हो गया। चाचा के लेफ्ट में क्या बचा? सिर्फ रोहन। तो चाचा के लेफ्ट में क्या होगा? रोहन। रोहन में कुछ है नहीं इधर-उधर करने के लिए। क्योंकि जब आप रोहन पे आएंगे तो रोहन के लेफ्ट में कुछ नहीं है। राइट में कुछ नहीं है। जैसा प्रत्युष के साथ हुआ था। चाचा के राइट में कौन है? सूरज। चाचा के राइट में क्या हो गया? सूरज। ऐसे करके आप ट्री बना रहे हैं। ऐसे करके आप देखिए क्या",
+      "source": "caption",
+      "english_text": "Repeat the same thing on uncle. Find uncle. Where did you find it? On here. Who is to uncle's left? There is a man Rohan. Which man is it? Lo also became three. High also became three. What is left in uncle's left? Only Rohan. So what will happen to uncle's left? Rohan. There is nothing to move around in Rohan. Because when you come to Rohan, there is nothing on the left of Rohan. There is nothing on the right. As happened with Pratyush. Who is to the right of uncle? Sun. What happened to uncle's right? Sun. By doing this you are making a tree. do it like this and see what"
+    },
+    {
+      "start_time": 720.8,
+      "end_time": 748.47,
+      "text": "है ये ट्री? ये देख लीजिए। और क्या ओरिजिनल ट्री एग्जैक्टली सेम है। हां, एग्जैक्टली सेम है। एग्जैक्टली सेम है। ये इसका एल्गोरिदम कह लीजिए, समझने का तरीका कह लीजिए। इस तरीके से बनता है कि अगर आप इसको कॉपी में बना रहे होते तो आप कैसे बनाते? तो आप सबसे पहले स्टार्ट किए। फिर से एक बार रिवाइज करा देते हैं तरीका को। दादा जी से स्टार्ट किए। पहला दादा जी बना लिए। और शुरू में आपके पास पूरा इनऑर्डर का कार्य है। पूरा पूरा इनऑर्डर का कार्य आप देखना चाहते हैं। अगला स्टेप क्या है?",
+      "source": "caption",
+      "english_text": "Is this a tree? Take a look at this. And is the original tree exactly the same. Yes, exactly the same. Exactly same. Call this its algorithm, call it a way of understanding. It is made in such a way that if you were making it in a copy, how would you make it? So you started first. Let's revise the method once again. Started with grandfather. Made the first grandfather. And in the beginning you have all the in-order work. You want to see the complete inorder work. What is the next step?"
+    },
+    {
+      "start_time": 748.48,
+      "end_time": 782.31,
+      "text": "दादा को यहां से खोजो। दादा मिला। दादा के लेफ्ट में जो भी आइटम है वो लेफ्ट सब ट्री में जाएंगे। दादा के राइट में जो भी आइटम है वो राइट सब ट्री में आएंगे। अब दादा जी का लेफ्ट सब ट्री बना लीजिए। लेफ्ट सब ट्री में क्या होगा? एक आगे जाइए। क्या आता है? पापा। यहां पे यही होगा। पापा हो गए। सेम काम कीजिए। पापा को यहां खोजिए। पापा के लेफ्ट में जाइए। पापा के लेफ्ट में कुछ है नहीं। तो पापा का लेफ्ट नल। पापा के राइट में जाइए। प्रत्युष। तो पापा के राइट में क्या? प्रत्युष। प्रत्युष अगला लिखा हुआ है। वेरी गुड। लेफ्ट पूरा खत्म। दादा जी पे वापस। दादा जी के राइट में। दादा जी के राइट में कौन से तीन लोग",
+      "source": "caption",
+      "english_text": "Find grandfather from here. Found grandfather. Whatever item is on the left of Dada will go in the left subtree. Whatever items are there in Dada's right will come in the right sub tree. Now make left sub tree of grandfather. What will be in the left sub tree? Go one ahead. What comes next? Father. This is what will happen here. Papa is done. Do the same work. पापा को यहां खोजिए। पापा के लेफ्ट में जाइए। पापा के लेफ्ट में कुछ है नहीं। तो पापा का लेफ्ट नल। पापा के राइट में जाइए। Pratyush. तो पापा के राइट में क्या? Pratyush. प्रत्युष अगला लिखा हुआ है। very good. लेफ्ट पूरा खत्म। दादा जी पे वापस। दादा जी के राइट में। दादा जी के राइट में कौन से तीन लोग"
+    },
+    {
+      "start_time": 782.32,
+      "end_time": 816.79,
+      "text": "हो सकते हैं? रोहन, चाचा, सूरज। राइट में आइए। सबसे पहले कौन होगा? जो अगला लिखा हुआ है चाचा जी। चाचा जी को खोजिए। चाचा जी के लेफ्ट में इधर, राइट में इधर। मतलब चाचा के लेफ्ट में क्या? रोहन। चाचा के लेफ्ट में देखिए रोहन लिखा हुआ है। चाचा के राइट में सूरज तो चाचा के राइट में सूरज लिखा हुआ है। तो ऐसे आप बनाएंगे अगर आप कॉपी में बनाना चाहें। अगर आप क्या कॉपी में बनाना चाहें अब इसका कोड देखिए अब इसका कोड देखिए। इसमें बहुत सारा चीज है करने के लिए। तो आपको इसका कोड क्या होगा? कोड लिख लेते हैं। फिर ड्राई रन कर लेंगे। है ना? आइए। तो देखिए आपको क्या",
+      "source": "caption",
+      "english_text": "Can happen? रोहन, चाचा, सूरज। राइट में आइए। सबसे पहले कौन होगा? जो अगला लिखा हुआ है चाचा जी। चाचा जी को खोजिए। चाचा जी के लेफ्ट में इधर, राइट में इधर। मतलब चाचा के लेफ्ट में क्या? Rohan. चाचा के लेफ्ट में देखिए रोहन लिखा हुआ है। चाचा के राइट में सूरज तो चाचा के राइट में सूरज लिखा हुआ है। तो ऐसे आप बनाएंगे अगर आप कॉपी में बनाना चाहें। अगर आप क्या कॉपी में बनाना चाहें अब इसका कोड देखिए अब इसका कोड देखिए। इसमें बहुत सारा चीज है करने के लिए। तो आपको इसका कोड क्या होगा? कोड लिख लेते हैं। फिर ड्राई रन कर लेंगे। Isn't it? Come. तो देखिए आपको क्या"
+    },
+    {
+      "start_time": 816.8,
+      "end_time": 842.71,
+      "text": "रिटर्न करना है? आपको एक न स्टार ही रिटर्न करना है। दुविधा वो है। नो स्टार ही आपको रिटर्न करना है तो इसको हम कुछ बना लेते हैं। मेक ट्री कर लेते हैं। ठीक है? मेक ट्री। आपको दो वेक्टर दिए रहेंगे। आपको दो वेक्टर दिए रहेंगे। एक होगा आपका प्रीआर्डर और एक होगा आपका इनऑर्डर। एक क्या होगा आपका? इनऑर्डर। ठीक है?",
+      "source": "caption",
+      "english_text": "Want to return? You don't have to return even a single star. That is the dilemma. If you have to return no star then we will convert it into something. Let's make a tree. Ok? Make Tree. You will be given two vectors. You will be given two vectors. One will be your preorder and one will be your inorder. What will happen to you? Inorder. Ok?"
+    },
+    {
+      "start_time": 842.72,
+      "end_time": 867.829,
+      "text": "अच्छा सबसे पहले तो उसकी जरूरत नहीं है वैसे। लेकिन हम क्या करते हैं कि एक जरूरत है कि नहीं? हां जरूरत है। देखिए आपका क्या है? आप प्रीआर्डर में इंडेक्स बाय इंडेक्स जाएंगे तो ये तो ठीक है। ये तो हम कर लेंगे हर बार। लेकिन आपको जब कोई दादाजी मिलता है ना तो आपको दादा जी यहां पे खोजना पड़ेगा। इन ऑर्डर में दादा जी किस इंडेक्स पे है? उसी से पता चलेगा ना। हम एक काम करते हैं कि ये जो इनऑर्डर का एरे है ना इसको एक हैश मैप बना लेते हैं।",
+      "source": "caption",
+      "english_text": "Well, first of all there is no need for that. But what do we do whether there is a need or not? Yes there is a need. See what's yours? If you go index by index in preorder then it is fine. We will do this every time. But when you find a grandfather, you will have to search for him here. On which index is Grandfather in this order? You will know from that only. One thing we do is that we make this unordered array a hash map."
+    },
+    {
+      "start_time": 867.839,
+      "end_time": 900.87,
+      "text": "उससे क्या होगा कि आपको दादाजी खोजने के लिए पूरा नहीं देखना पड़ेगा। आप एक बार पूछेंगे कि दादा कहां है भाई? दादा यहां है तो मिल जाएगा। आइए। तो एक अनऑर्डर्ड मैप बना लेते हैं। अनऑर्डर्ड इसका कोड हम देख लेंगे दे देंगे। अनऑर्डर्ड मैप किसका? इंट और इंट ये क्या बोलता है? कौन सा नंबर किस इंडेक्स पे है? क्योंकि असली में दादा जी थोड़ी है। असली में तो नंबर है। कौन सा इंडेक्स किस इंडेक्स पे है? ठीक है? इन और एक हम लूप चला लेते हैं। आई एन टी आई = 0 i &lt; इन ऑर्डर डॉट साइज",
+      "source": "caption",
+      "english_text": "What that means is that you don't have to look all the way to find Grandpa. You will once ask, where is Dada, brother? If Dada is here then you will get it. Come. So let's make an unordered map. Unordered, we will check its code and give it. Whose unordered map? What does int and int say? Which number is on which index? Because in reality there is little grandfather. In reality it is a number. Which index is on which index? Ok? We run these and one loop. i nti = 0 i < in order dot size"
+    },
+    {
+      "start_time": 900.88,
+      "end_time": 926.15,
+      "text": "और i + और क्या करेंगे? इन इन ऑर्डर i = i मतलब यह नंबर फलाने फलाने इंडेक्स पे है। वेरी गुड। उसके बाद क्या करेंगे? उसके बाद उसके बाद हम एक फंक्शन लिखेंगे। उसके बाद हम एक फंक्शन लिखेंगे। इसको यहां बंद कर देते हैं और बताते हैं कैसे कॉल करेंगे। देखिए उसके बाद हम एक फंक्शन लिखेंगे। हम इस फंक्शन में क्या लिखेंगे? एक हम ग्लोबल वेरिएबल ले लेते हैं।",
+      "source": "caption",
+      "english_text": "And what else will i+ do? In this order i = i means this number is on such and such index. very good. What will you do after that? After that we will write a function. After that we will write a function. Let's close it here and tell you how to make the call. See, after that we will write a function. What will we write in this function? First, we take a global variable."
+    },
+    {
+      "start_time": 926.16,
+      "end_time": 960.389,
+      "text": "इंडेक्स = 0 ये इंडेक्स क्या बोलता है? आप प्रीआर्डर के प्रीआर्डर के किस इंडेक्स में हैं? आप एक-एक करके देखिए। के प्रीआर्डर पे जा रहे हैं। एक-एक करके आप प्रीआर्डर के इंडेक्स पे आगे बढ़ रहे हैं और वहीं से आप सर्कल बनाते हैं। एक बार आपका इंडेक्स जीरो पे शुरू होता है तो आप दादा जी का सर्कल बनाते हैं। उसके बाद आप दादा जी के लेफ्ट सबट्री और राइट सब ट्री के लिए सेम फंक्शन को कॉल करते हैं। ठीक है? हम एक इंडेक्स बना लेते हैं। और आपको एक लो और हाई चाहिए। लो और हाई क्यों चाहिए? इस समय आप इनऑर्डर का कौन सा पार्ट देख रहे हैं? मतलब जब आप शुरू करते हैं, जब आप शुरू करते हैं तो आप पूरा इनऑर्डर देख रहे थे। तभी तो आपको दादा जी यहां मिले। एक बार दादा जी मिल गए। जब आप दादा",
+      "source": "caption",
+      "english_text": "Index = 0 What does this index say? What index of preorder are you in? You see one by one. Going on preorder. One by one you move on to the preorder index and from there you make the circle. Once your index starts at zero, you form the Grandfather Circle. After that you call the same function for the left subtree and right subtree of the grandfather. Ok? We create an index. And you need a low and a high. Why need low and high? Which part of the inorder are you looking at at this time? Meaning when you start, when you start you were looking at the whole inorder. That's why you found Grandfather here. Once we met grandfather. when you grandfather"
+    },
+    {
+      "start_time": 960.399,
+      "end_time": 990.79,
+      "text": "जी के लेफ्ट में गए ना आप बस इतना देख रहे थे। आपको इतना इतना से कोई काम नहीं था। आप बस इतना सा देख रहे थे। आप दादा जी के राइट में गए तो आप दादा जी के आगे से लेके राइट तक देख रहे थे। तो इसके लिए हम लोग क्या करेंगे? लो से हाई। क्या? लो से हाई। अच्छा तो एक हम फंक्शन लिख लेते हैं। इस फंक्शन का काम होगा कि ये चीजें रिटर्न करे। नोड देखिएगा फन। ठीक है? एक प्रीआर्डर पास कर देते हैं कि हम लोग अभी इस प्रीआर्डर एरे का फलाना फलाना इंडेक्स वो कर रहे हैं।",
+      "source": "caption",
+      "english_text": "You went to the left, you were just looking at this. You had no use for so much. That's all you were looking at. When you went to grandfather's right, you were looking from ahead to right of grandfather. So what should we do for this? Low to high. What? Low to high. Well, let us write a function. The job of this function will be to return these things. Node will look fun. Ok? Let's pass a preorder that we are currently doing so-and-so index of this preorder array."
+    },
+    {
+      "start_time": 990.8,
+      "end_time": 1024.15,
+      "text": "प्री ऑर्डर हो गया वेरी गुड। और कुछ हां लो और हाई इंक लो इंक हाई। ठीक है? और ये हैशमैप को भी ग्लोबल बना लेंगे। ये हैश मैप जो है ना ये वाला ये वाला हैशमैप ये वाला#श मैप को ग्लोबल कर देंगे ताकि ये पास करने की जरूरत ना पड़े। यहीं पे एक्सेस हो जाए। आइए अब आ जाइए सबसे पहले सबसे पहले अ सबसे पहले एक बात बताइए मान लीजिए मान लीजिए कि अच्छा वो बाद में उसका बेस केस बाद में लिखेंगे मान लेते हैं कि नहीं हो सबसे पहले तो आप किसी भी इंडेक्स पे हैं तो आप शुरू कब",
+      "source": "caption",
+      "english_text": "Pre order done very good. And some yes low and high inc low inc high. Ok? And this will also make the hashmap global. This hash map is this one, this one hashmap, this one #, we will make the hash map global so that there is no need to pass it. Get access here. Let's come now, first of all, first of all, first of all, tell me one thing, let's say that it is good, we will write its base case later, let's say that it is not, first of all, if you are on any index, then when will you start?"
+    },
+    {
+      "start_time": 1024.16,
+      "end_time": 1057.19,
+      "text": "करेंगे इंडेक्स इक्वल टू 0 से तो सबसे पहले तो इसका एक नोड बना लो इसका एक नोड बना लो कैसे नोड स्टार नोड इक्वल टू न्यू नोड किसका किस पे हैं हम लोग शुरू किससे किए थे दादा जी से इंडेक्स से प्रीआर्डर के इंडेक्स से तो प्रीआर्डर के इंडेक्स में जो भी एलिमेंट है उसका एक नोड बना लिया। तो ये काम क्या किया? इसका मतलब कि एक दादा नाम का नोट बन गया। दादा नाम का नोट बन गया। एक बार दादा नाम का नोट बन गया। मतलब आप प्रीआर्डर में इसको",
+      "source": "caption",
+      "english_text": "We will make the index equal to 0, so first of all, make a node of this, make a node of this, how node star node equal to new node, whose on whom, we started with what, from grandfather's index to the index of preorder, then we made a node of whatever element is in the index of preorder. So what did you do? This means that a note named Dada has been created. A note was made in the name of Dada. Once a note was made in the name of Dada. Meaning you can preorder it"
+    },
+    {
+      "start_time": 1057.2,
+      "end_time": 1091.35,
+      "text": "देख चुके हैं। आगे बढ़ जाइए। इंडेक्स प्लस प्लस कर दीजिए। इंडेक्स प्लस प्लस कर दीजिए। हो गया। प्रीआर्डर का इतना ही काम था। अब क्या काम है? इन ऑर्डर में दादा को ढूंढो। इन ऑर्डर में दादा को ढूंढो मतलब उसका इंडेक्स निकालो। इंट आईडी इक्वल टू इन हमारा जो हैश मैप है और नोड का डेटा या फिर प्रीआर्डर के जो भी जिसका बिहाफ बनाए हैं दादा जी ये क्या करता है? दादा जी को ढूंढता है। दादा जी को ढूंढता है। उसके बाद क्या किए थे? सेम फंक्शन को सेम फंक्शन को लेफ्ट के लिए कॉल",
+      "source": "caption",
+      "english_text": "Have seen. Go ahead. Make index plus plus. Make index plus plus. Done. That was all there was to preorder. What is the work now? Find Dada in these orders. Find Dada in these orders means extract his index. Int ID is equal to in which is our hash map and the data of the node or whatever preorder is created under which, Grandfather, what does this do? Searches for grandfather. Searches for grandfather. What did you do after that? Call to the same function to the left"
+    },
+    {
+      "start_time": 1091.36,
+      "end_time": 1117.029,
+      "text": "कर दिए और राइट के लिए कॉल कर दिए। मतलब कि जब लेफ्ट के लिए कॉल किए तो मान लीजिए यहां पे आपको दादाजी कहां मिले थे? सेकंड इंडेक्स पे। तो आपका जो आईडी क्या था? टू। जब आप लेफ्ट के लिए कॉल किए थे तो क्या किए थे आप? ज़ीरो से वन देखना था लेफ्ट में पापा और प्रत्युष। और जब राइट के लिए कॉल किए थे तो थ्री से फाइव देखना था। थ्री से फाइव देखना था। मतलब कि शुरुआत में लो कितना था? ज़ीरो और हाई कितना था? फाइव।",
+      "source": "caption",
+      "english_text": "Did it and called for rights. Meaning that when you called for left, suppose where did you find grandfather here? On second index. So what was your ID? To. What did you do when you called for the left? Had to see forest from zero. Papa and Pratyush were on the left. And when calls were made for rights, we had to see three to five. Had to watch from three to five. Meaning, how much was it in the beginning? What was zero and high? Five."
+    },
+    {
+      "start_time": 1117.039,
+      "end_time": 1151.909,
+      "text": "क्योंकि हम पूरा इन ऑर्डर देख रहे थे। जब आपको आई डी = 2 मिला तो आप क्या हो गए? देखिए आप आप लो = 0 पे ही रहे लेकिन आईडी - 1 तक आ गए। ये इसका लो और हाई बन गया। राइट का लोअर हाई क्या बन गया? idडी + 1 जो कि थ्री बन गया और हाई तो ये आपका लो और हाई ऐसे बन जाएगा। लोअर हाई का मतलब क्या है कि आप उतना ही इनऑर्डर देख रहे हैं। जब आप दादा के लेफ्ट में है ना तो सिर्फ पापा प्रत्युष देखिए ना। पूरा नहीं देखने का जरूरत है। दादा के राइट में है तो रोहन, चाचा और सूरज देखिए। बाकी देखने का जरूरत नहीं है। देखिए उसके बाद हम क्या करेंगे? नोड",
+      "source": "caption",
+      "english_text": "Because we were seeing these orders completely. What happened to you when you got ID=2? See, you remained at Lo = 0 but came to ID - 1. This became its low and high. What became of Wright's Lower High? idD + 1 which becomes three and high, then this will become your low and high. What a lower high means is that you are seeing that much inorder. When you are on Dada's left, just look at Papa Pratyush. No need to see the whole thing. Look at Rohan, Chacha and Suraj who are on Dada's right. No need to see the rest. See what we will do after that? node"
+    },
+    {
+      "start_time": 1151.919,
+      "end_time": 1186.549,
+      "text": "डॉट लेफ्ट मतलब कि दादा के लेफ्ट में दादा के लेफ्ट को इक्वल टू सेम फंक्शन सेम फंक्शन प्रीआर्डर तो एज इट इज पास हो जाएगा यहां पे कहां से कहां लो से लेके आईडी -1 तक मतलब शुरुआत से लेके दादा के एक पीछे तक लो आईडी -1 और नड का राइट क्या है नड का राइट क्या है वन प्रीआर्डर एज इट इज और कहां से कहां तक दादा से एक आगे और लास्ट तक मतलब आईडी +1 से हाई तक ये दोनों",
+      "source": "caption",
+      "english_text": "Dot left means left of grandfather is equal to left of grandfather. Same function preorder so as it is will pass here from where to where from low to id -1 means from beginning to one behind of grandfather low id -1 and what is right of nad what is right of nad one preorder as it is and where from where to where one ahead of grandfather and till last means from id +1 to high these two"
+    },
+    {
+      "start_time": 1186.559,
+      "end_time": 1219.11,
+      "text": "क्या करेगा ये दादा का पूरा लेफ्ट सब ट्री बना देगा प्रत्युष और पापा पूरा रिकन से ये दादा का पूरा राइट सब ट्री बना देगा एक बार ये हो गया तो आप क्या किए आप आप इसमें हो क्या रहा है पहली बार में क्या हो रहा है ना आप एक दादा बनाए उसके बाद आप कॉल किए तो ये पूरा लेफ्ट सब ट्री जितना था सब बन गया पूरा राइट बन गया एक बार हो गया है तो रिटर्न कर दीजिए रिटर्न न बस यह इसका कोड है। यह इसका कोड है। अभी तक हम इसमें बेस केस नहीं लिखे हैं। अभी तक हम इसमें बेस केस नहीं लिखे हैं। बेस केस क्यों नहीं लिखे आपको दिखाते",
+      "source": "caption",
+      "english_text": "What will it do? It will create Dada's complete left sub tree. Pratyush and Papa, with complete recon, it will create Dada's complete right sub tree. Once this is done, what do you do? What is happening in it? What is happening in the first time, you create a Dada, after that you call, then this entire left sub tree is as it was, the entire right sub tree is created. Once it is done, then return it. This is just its code. This is its code. We have not yet written the base case in it. We have not yet written the base case in it. Why didn't I write the base case and show you?"
+    },
+    {
+      "start_time": 1219.12,
+      "end_time": 1251.43,
+      "text": "हैं। ये याद रखिए। ये याद रखिए। और इसको जब हम कॉल करेंगे मेन से तो कैसे करेंगे? रिटर्न फन फन में प्रीआर्डर पास कर दिए। और शुरुआत में आप कितना लो हाई देखना चाहते हैं? ये जो लो हाई है, शुरुआत में कितना देखना चाहते हैं? पूरा इनऑर्डर देखना चाहते हैं। तो लो इज़ इक्वल टू 0 और हाई क्या रहेगा? इनऑर्डर इंडेक्स इनऑर्डर का साइज जो भी इनऑर्डर का साइज हो और -1 मतलब पूरा ये हो गया ये कोड हो गया। इसका ड्राई रमन देखिए और क्लियर हो जाएगा। इसका ड्राई रम देखिए तो और क्लियर हो जाएगा। हम एक छोटा सा ट्री बना लेते हैं एक रेफरेंस",
+      "source": "caption",
+      "english_text": "Are. Remember this. Remember this. And when we call it from main, how will we do it? Passed preorders in return fun fun. And how much low high do you want to see initially? This is low and high, how much do you want to see in the beginning? Want to see the complete inorder. So low is equal to 0 and what is high? Inorder index is the size of the inorder, whatever is the size of the inorder and -1 means it is complete, this code is done. Look at its dry Raman and it will become clear. If you look at its dry rum, it will become more clear. We create a small tree as a reference"
+    },
+    {
+      "start_time": 1251.44,
+      "end_time": 1285.35,
+      "text": "के लिए कि अ मान लीजिए ये आपका ट्री है थ्री वन टू और फोर ये आपका ट्री है। बराबर है। इसका प्रीआर्डर हम लिख लेते हैं। इसका प्रीआर्डर का अगर हम एरे बनाएं तो 3 1 2 1 इसका इनऑर्डर का एरे बनाएं तो क्या आएगा? 1 3 4 2 ठीक है? बराबर है। आइए ठीक बात है। अच्छा सबसे पहले क्या कॉल करते हैं आप? सबसे पहले हमारा इंडेक्स ज़ीरो होता है। इंडेक्स अभी कितना है?",
+      "source": "caption",
+      "english_text": "For that a Let's say this is your tree three one two and four this is your tree. Is equal. We write its preorder. If we make an array of its preorder, then 3 1 2 1. If we make an array of its inorder, what will come? 1 3 4 2 ok? Is equal. Come on, that's fine. Okay, what do you call first? First of all our index is zero. What is the index now?"
+    },
+    {
+      "start_time": 1285.36,
+      "end_time": 1313.029,
+      "text": "ज़ीरो। मतलब प्रीआर्डर के आप ज़ीरो को देख रहे हैं। तो फन मान लीजिए कि अभी इंडेक्स इक्व 0 पे हम लोग कॉल कर रहे हैं। कॉल नहीं कर रहे हैं। हम आपको समझाने के लिए कर रहे हैं। और शुरुआत में लो और हाई क्या रहता है? पूरा इन ऑर्डर आप देखना चाहते हैं। आप पूरा इन ऑर्डर देखना चाहते हैं। लो = 0 हाई = 3 पूरा इन ऑर्डर आप देखना चाहते हैं। वेरी गुड। अब आइए सबसे पहले सबसे पहले आप क्या करते हैं? अभी हम बेस केस नहीं लिखे हैं। लेकिन सबसे पहले क्या करते हैं? एक सर्कल बना लेते हैं। एक सर्कल बना लेते हैं। किसका?",
+      "source": "caption",
+      "english_text": "Zero. Meaning you are looking at zero of preorders. So, let's assume that right now we are calling the index equal to 0. Not calling. We are here to convince you. And what is low and high in the beginning? You want to see the complete order. You want to see the complete order. Low = 0 High = 3 Complete in order you want to see. very good. Now, first things first, what do you do? We have not written the base case yet. But what do you do first? Let's make a circle. Let's make a circle. Whose?"
+    },
+    {
+      "start_time": 1313.039,
+      "end_time": 1339.43,
+      "text": "प्रीआर्डर के इंडेक्स का और इंडेक्स को बढ़ा देते हैं। वो ये कहता है अभी आप यहां पे हैं। इसका सर्कल बना लो। इंडेक्स को बढ़ा दो। अगले बार उसका सर्कल बनेगा। तो सबसे पहले किसका सर्कल बनेगा? थ्री का। मतलब यहां पे हम ये थ्री का सर्कल बन गया। और इंडेक्स क्या हो गया? वन हो गया। ठीक है? वेरी गुड। उसके बाद लेफ्ट सब ट्री उसके बाद अब इस थ्री को अब इस थ्री को इन ऑर्डर में ढूंढो। इन ऑर्डर में ढूंढो।",
+      "source": "caption",
+      "english_text": "Increases the index of preorder and increases the index. He says that you are here now. Make a circle out of it. Increase the index. Next time its circle will be formed. So whose circle will be formed first? Of three. Meaning here we became a circle of three. And what happened to the index? It became a forest. Ok? very good. After that left sub tree after that now find these three now find these three in this order. Find in these orders."
+    },
+    {
+      "start_time": 1339.44,
+      "end_time": 1371.43,
+      "text": "कहां मिला? वन में। मतलब आपका आईडी क्या आया? वन। क्या करना है? लेफ्ट के लिए कॉल करो, राइट के लिए कॉल करो। तो हम लोग क्या करेंगे? एक तो कॉल होगा विद लो = 0 और हाई = ID - 1 ID - 1 ये देखिए ID - 1 id - 1 क्या होगा? ज़ीरो। और एक क्या कॉल होगा? लो = आईडी + 1 2 और हाई सेम रहेगा। हाई = 3 यह किसके लिए है? लेफ्ट के लिए। यह किसके लिए है? राइट के लिए। ठीक है? अभी तक समझ",
+      "source": "caption",
+      "english_text": "Where did you find it? In the forest. Meaning what is your ID? Forest. What is the plan? Call for left, call for right. So what will we do? Firstly there will be a call with low = 0 and high = ID - 1 ID - 1 see this ID - 1 id - 1 what will happen? Zero. What else would a call be? Low = ID + 1 2 and High will remain the same. High = 3 What is it for? For left. what's that for? For right. Ok? still understand"
+    },
+    {
+      "start_time": 1371.44,
+      "end_time": 1404.95,
+      "text": "में आ रहा है? आइए इसको बनाते हैं। फन याद रखिएगा इंडेक्स वन हो चुका है हमारा। ठीक है? अभी तक हम लोग सर्कल में बस थ्री बनाए हैं। चलिए अ ये क्या है? लो = 0 और हाई = 0। ठीक? आते हैं। देखते हैं। सबसे पहला काम क्या करना है? जो इंडेक्स है जो इंडेक्स है क्या इंडेक्स है अभी वन मतलब आप यहां पे हैं इसका सर्कल बना लीजिए इसका सर्कल बना लीजिए तो मान लेते हैं कि इसका सर्कल हम ऐसा बना लिए चलिए बन गया अभी तक ठीक है अब क्या करेंगे अब क्या करेंगे इस वन को ढूंढेंगे कहां ढूंढेंगे इनऑर्डर में कहां",
+      "source": "caption",
+      "english_text": "coming in? Let's make this. Fun, remember, index one is already ours. Ok? So far we have made just three in the circle. Come on, what is this? Low = 0 and High = 0. Correct? Let's come. Let's see. What's the first thing to do? Which is the index, which is the index, what is the index, now one means you are here, make its circle, make its circle, so let's assume that we have made its circle like this, let's make it so far, it is fine, what will we do now, what will we do now, where will we find this one, where will we find it, where in the order"
+    },
+    {
+      "start_time": 1404.96,
+      "end_time": 1436.789,
+      "text": "मिला ये वन यहां मिल गया यहां मिल गया उसके बाद क्या करेंगे अब ध्यान से देखिए ड्राइंग में आपको दिख रहा होगा यहां जब हम लोग आए थे ना तो हम लोग इतना ही देख रहे थे इतना ही थ्री के लेफ्ट वाला देख रहे थे तो वन के लेफ्ट में भी कुछ नहीं है वन के राइट में भी कुछ नहीं है देखते हैं हमारा कोड इसको कैसे पकड़ता है इसके क्या करिए हां idx बनाने के बाद idडीएक्स को बढ़ा भी दीजिए idx को बढ़ा के टू कर दीजिए ठीक है अब कॉल कर देते हैं कॉल कर देते हैं idडी क्या मिला आपको ज़ीरो मतलब ये वन कहां मिला वन ज़ीरो पे मिला तो अभी क्या करेंगे लेफ्ट सब ट्री में कॉल करने के लिए क्या होगा लो",
+      "source": "caption",
+      "english_text": "Got this one here, got it here, what will we do after that, now look carefully in the drawing, you must be seeing here, when we came here, we were seeing only this much, we were looking at the one on the left of three, there is nothing on the left of one, there is nothing on the right of one, let's see how our code captures this, what to do with it, yes, after creating idx, increase iddx also, increase idx to two, okay now let's call. Hey idd, what did you get at zero, meaning where did you get this one? If you got one at zero, then what will you do now? What will happen to make a call in the left sub tree?"
+    },
+    {
+      "start_time": 1436.799,
+      "end_time": 1463.269,
+      "text": "सेम रह जाएगा और हाई आईडी - 1 हो जाएगा अच्छा राइट सब ट्री के लिए लो आईडी + 1 हो जाएगा और हाई सेम रह जाएगा यही होगा कॉल अच्छा अब अब एक बात बताइए क्या ये सेंस बना रहा है? लो और हाई क्या बताता है? लो से हाई तक देखो। स्लाइडिंग विंडो में हर जगह होता है। लो से हाई तक एरे को देखो। ये बोल रहा है 0 से लेके -1 तक देखो। बेतुका चीज है ना? कम से कम 0 से 0 तक देखो भी समझ आता है कि एक ब्लॉक देखो।",
+      "source": "caption",
+      "english_text": "The same will be left and the high ID will be - 1. Okay, for the right sub tree the low ID will be + 1 and the high ID will be left, this will be the call. Okay, now tell me one thing, is this making sense? What do low and high indicate? Look from low to high. Happens everywhere in sliding windows. Look at the array from low to high. It is saying look from 0 to -1. It's a ridiculous thing, isn't it? At least look from 0 to 0. It also makes sense to look at one block."
+    },
+    {
+      "start_time": 1463.279,
+      "end_time": 1491.75,
+      "text": "ज़ीरो से -1 तक देखो क्या होता है? बेकार केस है। कुछ नहीं हो सकता है ना। वन से लेके ज़ीरो तक देखो। ये कैसे देखेंगे? वन से ज़ीरो। वन से टू देख सकते हैं। वन से लो हमेशा हाई से इक्वल टू या छोटा रहना चाहिए ना। लो हाई से बड़ा होने का क्या मतलब है? कोई खास मतलब है नहीं। यहां देखिए यहां आप कौन सा एरे देख रहे हैं? नहीं देख रहे हैं। इसी से इसी से इसी से एक और लाइन यहां पे ऐड करना पड़ेगा। इफ लो इज ग्रेटर देन हाई। अगर लो हाई से बड़ा हो गया क्या होगा उसमें? नल कुछ नहीं।",
+      "source": "caption",
+      "english_text": "See what happens from zero to -1? This is a useless case. Nothing can happen, right? Look from one to zero. How will we see this? One to zero. Can see from one to two. Low from one should always be equal to two or less than high. What does it mean for the low to be greater than the high? There is no special meaning. Look here, which array are you seeing here? Not looking. Due to this, one more line will have to be added here. If low is greater than high. What will happen if low becomes bigger than high? Tap nothing."
+    },
+    {
+      "start_time": 1491.76,
+      "end_time": 1518.549,
+      "text": "रिटर्न नल रिटर्न नल। इसीलिए इसीलिए जब आप वन पे इस दोनों को कॉल करते हैं तो दोनों का आंसर नल आता है। तो देखिए वन का कोई बेटा नहीं है। वन का कोई बेटा नहीं है। ये फंक्शन खत्म हो गया। ये फंक्शन खत्म हो गया। ये वन किससे आके जुड़ा? ये वन किससे आके जुड़ा? थ्री के लेफ्ट से। थ्री के लेफ्ट से। थ्री के लेफ्ट से। देखिए बन गया। थ्री का लेफ्ट बन गया। थ्री का राइट बनाते हैं। देखिए थ्री का राइट बनाते हैं।",
+      "source": "caption",
+      "english_text": "Return tap Return tap. That's why when you call both of them on One Pay, both of them get a tap answer. So see, the forest has no son. The forest has no son. This function is over. This function is over. Who did this forest come into contact with? Who did this forest come into contact with? From the left of three. From the left of three. From the left of three. Look it's done. Three's left. Let's make a right of three. See, let's make the right of three."
+    },
+    {
+      "start_time": 1518.559,
+      "end_time": 1551.909,
+      "text": "आइए थ्री का राइट बनाते हैं। क्या कॉल हुआ? लो = 2, हाई = 3 इंडेक्स क्या है आपका? टू है। तो टू नामक एक सर्कल बना लेते हैं। टू नामक और इंडेक्स को बढ़ा के थ्री कर देते हैं। सही बात है। अब क्या करना है? जिसका आप सर्कल बनाए हैं उसको इन ऑर्डर में खोजिए। टू कहां मिला? यहां पे मिला। idडी = 3 पे। ID = 3 पे। सेम काम। लेफ्ट और राइट इसका बना लीजिए। एक इसका लेफ्ट क्या बनेगा? लो तो लो रह जाएगा और हाई आई डी - 1 हो जाएगा। वेरी गुड। राइट क्या बनेगा?",
+      "source": "caption",
+      "english_text": "Let's make a right of three. What call happened? Low = 2, High = 3 What is your index? It's two. So let's make a circle called two. Name two and increase the index to three. That's correct. What to do now? Find the one whose circle you have drawn in this order. Where did you get 2? Found here. id = 3 pe. ID = 3. Same work. Make left and right of it. What will become of its left? Low will remain low and high ID will become - 1. very good. What will become right?"
+    },
+    {
+      "start_time": 1551.919,
+      "end_time": 1586.789,
+      "text": "लो जो है वो थ्री बन जाएगा। सॉरी लो आईडी + 1 4 बन जाएगा और हाई थ्री रह जाएगा। ठीक? अब यह लेफ्ट वाला है। इसको इसको चलाते हैं। इसको चलाते हैं। आइए। वन लो = 2 हाई = 2 आईडी कहां है आपकी? थ्री पे मतलब इस पे वन का सर्कल बना लीजिए कहीं पे। वन का सर्कल यहां पे हम बना लिए। वन का सर्कल यहां पे बना लिए। बन गया और आईडी को बढ़ा दीजिए। आईडी को बढ़ा दीजिए। ध्यान दीजिएगा। आपका प्रीआर्डर एरे खत्म हो चुका है। प्रीआर्डर एरे खत्म हो चुका है। ठीक है? अब क्या करना है? जिसका आप सर्कल",
+      "source": "caption",
+      "english_text": "Take whatever is there and it will become three. Sorry low id + 1 will become 4 and high will remain three. Correct? Now it is the left one. Let's run this and this. Let's run this. Come. One Low = 2 High = 2 Where is your ID? On three means make a circle of one on it somewhere. We made a circle of forest here. Made a circle of forest here. Done and increase the ID. Increase the ID. Please pay attention. Your preorder array has been exhausted. Preorder array is exhausted. Ok? What to do now? whose circle you"
+    },
+    {
+      "start_time": 1586.799,
+      "end_time": 1620.71,
+      "text": "बनाए, जिसका आप सर्कल बनाए, उसको खोजिए। उसको खोजिए। किसको? किसको बनाए थे? 31 2 1 ये कैसे बन गया? जी सॉरी ये फोर था। ये फोर है। ये फोर है। तो आप यहां भी फोर बनाइए। फोर को खोजिए। फोर कहां मिला? यहां पे। idडी = 2 पे। idडी = 2 पे। सेम काम कीजिए। लेफ्ट राइट के लिए कॉल करने का कोशिश कीजिए। तो लो तो लो रहेगा। आईडी हाई आपका आईडी - 1 बन जाएगा। इसके लिए कॉल करने का कोशिश कीजिए। तो लो इज़ इक्वल टू आईडी + 1 हो जाएगा। हाई सेम रहेगा। ध्यान से देखिए। ये दोनों बकवास है। दो से लेके",
+      "source": "caption",
+      "english_text": "Find the one whose circle you draw. Find him. Whom? Whom were you made? 31 2 1 How did this happen? Yes sorry it was four. This is four. This is four. So you make a four here also. Find four. Where did you find four? On here. id = 2 pe. id = 2 pe. Do the same work. Try calling for left right. So take it, it will remain. ID HIGH will become your ID - 1. Try calling for this. So lo is equal to id + 1. Will remain high level. Look carefully. Both of these are nonsense. from two to"
+    },
+    {
+      "start_time": 1620.72,
+      "end_time": 1655.669,
+      "text": "वन तक नहीं देख सकते। थ्री से ले टू तक नहीं देख सकते। पूरा खत्म हो गया। ये लौट के कहां आया? ये लौट के आया इसके लेफ्ट में। मतलब कि किसके लेफ्ट में? ये वाला। फोर टू के लेफ्ट में। टू का राइट भी करना है। लेकिन टू का राइट एक बकवास चीज है। फोर से लेके थ्री तक [हंसी] नहीं देख सकते हैं। ये भी खत्म हो गया। ये लौट के कहां आया? ये लौट के आपके मेन वाले शुरू वाले थ्री के राइट में आके अटैच हो गया। और आप लास्ट में रिटर्न क्या करेंगे? यह आपका रूट है। क्या यह वही ट्री है जो हम लोग बनाए थे? यस, यह वही ट्री है जो हम लोग बनाए थे। तो, यह इसका छोटा सा ड्राई रन",
+      "source": "caption",
+      "english_text": "Can't even see the forest. Can't see from three to take two. It's completely over. Where did he come back? It came back to his left. Meaning, on whose left? This one. To the left of four two. The right of two also has to be done. But the right of two is a nonsense. Can't see from four to three [laughter]. This too is over. Where did he come back? It came back and attached itself to the right of your main starting three. And what will you return in the end? This is your route. Is this the same tree that we made? Yes, this is the same tree that we made. So, this is a little dry run of it"
+    },
+    {
+      "start_time": 1655.679,
+      "end_time": 1676.159,
+      "text": "है। लेकिन, अगेन क्वेश्चन बहुत हार्ड है। तो, समझाने से आपको हेल्प मिली होगी। लेकिन, जब तक इसको कॉपी पन्ने पे नहीं करेंगे, उतना आसानी से नहीं आएगा। टाइम लगेगा। अच्छा क्वेश्चन है। बहुत अच्छा क्वेश्चन है। और इसी के साथ आज का ट्री ट्री सीरीज होता है खत्म। अगले बार से ग्राफ या डीपी पर बढ़ेंगे। चलिए।",
+      "source": "caption",
+      "english_text": "Is. But, again the question is very hard. So, explaining would have helped you. But, unless you copy it on the page, it will not come easily. It will take time. Good question. It is a very good question. And with this today's Tree Tree series ends. Will move on graph or DP from next time. Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

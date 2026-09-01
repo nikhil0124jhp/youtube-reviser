@@ -1,0 +1,604 @@
+{
+  "video_id": "-g6h0Ok1Buk",
+  "video_title": "EP 03: Level Order Traversal In Binary Tree | Intuition and Template",
+  "video_number": 81,
+  "chunks": [
+    {
+      "start_time": 2.389,
+      "end_time": 28.07,
+      "text": "पूरा पसीनापसीना हो गया जी। मतलब बाप रे बहुत लंबा वीडियो हो गया होगा। मतलब हमको लगता है कि 30-40 मिनट का तो हो ही जाएगा। इस वीडियो में हम लोग जो पढ़ने वाले हैं ना वो वन ऑफ द मोस्टेंट कांसेप्ट है। बहुत सारे रीज़ंस हैं। सबसे पहले तो इस कांसेप्ट का नाम है लेवल ऑर्डर। ठीक है? तो पिछले में हम आप लोग को कुछ ट्रेवर्सल सिखाए थे। प्रीआर्डर, पोस्ट ऑर्डर और इनऑर्डर मतलब कि वो एग्जांपल से बताया था ना कि दादा जी पहले अपने लेफ्ट बच्चे को खिलाते हैं। फिर खुद खाते हैं फिर राइट को खिलाते हैं। अब आपको एक दूसरे तरीके से ट्रेवर्स करना पड़ेगा जिसको बोला जाता है लेवल ऑर्डर।",
+      "source": "caption",
+      "english_text": "I was completely sweating. I mean, it must have been a very long video. Meaning we think it will take at least 30-40 minutes. What we are going to read in this video is one of the most important concepts. There are lots of reasons. First of all, the name of this concept is level order. Ok? So in the previous we taught you some traversal. Preorder, post order and inorder means that it was told from the example that grandfather feeds his left child first. Then eat it yourself and then feed it to Wright. Now you have to traverse in a different way which is called level order."
+    },
+    {
+      "start_time": 28.08,
+      "end_time": 62.709,
+      "text": "आगे आने में उस पे बात करेंगे। लेकिन ये इंपॉर्टेंट इसलिए है क्योंकि अभी तक आप लोग क्यू से बिल्कुल अनजान थे। क्यू डेटा स्ट्रक्चर नहीं ना हुआ है। हमको मालूम है नहीं हुआ है क्योंकि क्यू डेटा स्ट्रक्चर का जो मेन यूज़ होता है ना वो इसी में यूज़ होता है। ट्री के लेवल ऑर्डर में और ग्राफ के बीएफएस में और ग्राफ के बीएफएस में। मतलब क्यू डेटा स्ट्रक्चर का स्टैंड अलोन क्वेश्चन बहुत कम आता है। कम पूछा जाता है इंटरव्यू में। होता है। ऐसा नहीं कि नहीं होता है लेकिन इंटरव्यूज में बहुत कम पूछा जाता है। इंटरव्यू में स्टैक ज्यादा स्टैक के स्टैंड अलोन क्वेश्चन ज्यादा पूछे जाते हैं। क्यू का स्टैंड अलोन क्वेश्चन उतना इंपॉर्टेंट नहीं है इसलिए हम अभी तक नहीं पढ़ाए थे। तो इस वीडियो में आप क्यू भी सीख जाएंगे। क्यू का आपको एक इंट्रोडक्शन मिल",
+      "source": "caption",
+      "english_text": "We will talk about that in future. But this is important because till now you people were completely unaware of Q. Q Data is not structured. We know that it has not happened because the main use of Q data structure is in this. In level order of tree and in BFS of graph and in BFS of graph. Meaning, stand alone queries of Q data structure rarely come up. Less is asked in interviews. It happens. It is not that it does not happen but it is rarely asked in interviews. More stack and stand alone questions are asked in the interview. The stand alone question of Q is not that important so we had not taught it yet. So in this video you will also learn why. Why do you get an introduction?"
+    },
+    {
+      "start_time": 62.719,
+      "end_time": 91.51,
+      "text": "जाएगा कि क्यू क्या होता है? और आप लेवल ऑर्डर भी सीख जाएंगे। आप लेवल ऑर्डर का एक फिक्स्ड टेंप्लेट सीखेंगे सबसे पहले कि लेवल ऑर्डर का एल्गोरिदम आपको आना चाहिए। मतलब वो कोई सोचने वाला एल्गोरिदम नहीं है। वो एक फिक्स्ड टेंप्लेट आपको पता होना चाहिए। बेस्ड ऑन द क्वेश्चन। उस टेंप्लेट में आपको छोटा-छोटा मॉडिफिकेशन करेंगे। लेवल ऑर्डर के तीनों क्वेश्चन आपसे बन जाएंगे। तीनों क्वेश्चन में छोटे-छोटे मॉडिफिकेशन है। मतलब पहला वाला प्योर लेवल ऑर्डर है। उसके बाद एक जिगजैग है। उसके बाद लेवल ऑर्डर टू है। दो से तीन लाइन के चेंज में तीनों क्वेश्चन आप बना सकते हैं।",
+      "source": "caption",
+      "english_text": "Will you know why what happens? And you will also learn the level order. You will learn a fixed template of level order. First of all you should know the algorithm of level order. Meaning it is not a thinking algorithm. That's a fixed template you should know. Based on the question. You will make small modifications in that template. You will be able to solve all three questions of level order. There are small modifications in all three questions. Meaning the first one is pure level order. After that there is a zigzag. After that there is level order two. You can make all three questions in a change of two to three lines."
+    },
+    {
+      "start_time": 91.52,
+      "end_time": 126.23,
+      "text": "इस वीडियो के लिए आपको हम एक एडवाइस देंगे ना कि थोड़ा पेशेंस रखिएगा। क्योंकि एक बहुत नया चीज सीखने आप जा रहे हैं। आप क्यों सीखने जा रहे हैं? और आप लेवल ऑर्डर सीखने जा रहे हैं जिसका एल्गोरिदम मेरे हिसाब से फेयरली कॉम्प्लेक्स है। तो जब ड्राई रन होगा ना तो उसमें इंपेशेंट मत हो जाइएगा कि अरे नहीं समझ में आ रहा है, नहीं समझ में आ रहा है। थोड़ा सा टाइम दीजिए। थोड़ा सा उसको 30 सेकंड 1 मिनट 2 मिनट टाइम दीजिए क्योंकि ये ऐसा एल्गोरिदम है कि शुरू में जब हम शुरू करेंगे ना तो आपको पहले 1 मिनट में मान लीजिए हम ड्राई रन शुरू किया तो पहले 1 मिनट में आपको 5% समझ में आएगा। ऑनेस्टली बता रहे हैं हम ऐसा नहीं बोल रहे कि हम कोई मास्टर गॉड टीचर हैं। नहीं 1 मिनट में 5% समझ में आएगा। अगले 2 मिनट में 50% समझ में आने",
+      "source": "caption",
+      "english_text": "For this video, we will give you an advice that you should have some patience. Because you are going to learn a lot of new things. Why are you going to learn? And you are going to learn Level Order whose algorithm is fairlly complex in my opinion. So when there is a dry run, don't get impatient with it and say, 'Oh no, I don't understand, no, I don't understand.' Give some time. Give it a little 30 seconds, 1 minute, 2 minutes time because this is such an algorithm that initially when we start, in the first 1 minute, let's say we start a dry run, then in the first 1 minute you will understand 5%. Honestly, we are not saying that we are some master God teacher. No 5% will make sense in 1 minute. Understand 50% in next 2 minutes"
+    },
+    {
+      "start_time": 126.24,
+      "end_time": 161.19,
+      "text": "लगेगा। अगले 3 मिनट में आपको ये 99% समझ में आने लगेगा। तो जैसे-जैसे आप देखते जाएंगे ना बहुत एक्सप्पोनेंशियल ग्रोथ होगा। लेकिन शुरू के 1 मिनट में आपको लगेगा कि कुछ समझ में नहीं आ रहा है क्या हो रहा है क्या डल रहा है क्या निकल रहा है लेकिन पेशेंस के साथ देखिए रिक्वेस्ट कर रहे हैं पेशेंस के साथ देखिएगा बिल्कुल समझ में आएगा मेरा प्रॉमिस है लेवल ऑर्डर के लिए सबसे डिटेल्ड वीडियो आपको इंटरनेट पे यही मिलेगा बाकी लोग का हम देख चुके हैं कितना पढ़ाए हैं 6 मिनट 7 मिनट में करके धमा चौकड़ी कर दिया और खत्म हो गया लेवल ऑर्डर और क्यू के लिए सबसे डिटेल्ड वीडियो ये होने वाली है पेशेंट हो के देखिएगा चलिए शुरू करते हैं जल्दी तो जो पहला क्वेश्चन है ना जो बेस बनाने",
+      "source": "caption",
+      "english_text": "It will take. In the next 3 minutes you will understand 99% of it. So as you see, there will be exponential growth. But in the first 1 minute, you will feel that you are not able to understand what is happening, what is being put in, what is coming out, but watch with patience, you are requesting, watch with patience, you will understand completely, my promise is that you will get the most detailed video for level order, this is the only one you will get on the internet, we have seen how much you have taught in 6 minutes, 7 minutes, and it is over, this is going to be the most detailed video for level order and queue. Be patient and see, let's start quickly, the first question is to make the base."
+    },
+    {
+      "start_time": 161.2,
+      "end_time": 193.43,
+      "text": "का क्वेश्चन है वो ये है लेवल ऑर्डर ट्रेवर्सल। ठीक है? तो आपको मिल जाएगा लीड कोड 102। क्यों ये क्वेश्चन बेस्ड क्वेश्चन है? क्योंकि अगेन आप अगर ये क्वेश्चन समझ जाते हैं इसमें थोड़ा टाइम भी लगेगा। हम इसको बहुत आराम आराम से समझाएंगे। बाकी के दो क्वेश्चन इसके जस्ट छोटे-छोटे छोटे-छोटे वेरिएशन हैं। उसमें ज्यादा टाइम नहीं लगने वाला है। जितना भी मेहनत या जितना भी समय आपको देना है तो इसी में देना है। ठीक है? लेवल ऑर्डर बोलता क्या है? आपको एक ट्री मिलता है। फॉर एग्जांपल आपका ट्री ऐसा दिखता है। देखिएगा। इसका एक चाइल्ड है 20, इसका एक चाइल्ड है नाइन और 20 का एक चाइल्ड है फोर और इसका चाइल्ड है फाइव और नाइन का एक",
+      "source": "caption",
+      "english_text": "The question is, this is level order traversal. Ok? So you will get lead code 102. Why is this a question based question? Because again if you understand these questions it will take some time. We will explain it very easily. The remaining two questions are just small variations of this. That's not going to take much time. Whatever hard work or whatever time you have to give, you have to give it in this. Ok? What does level order mean? You get a tree. For example your tree looks like this. Will see. It has a child of 20, it has a child of nine and 20 has a child of four and it has a child of five and nine"
+    },
+    {
+      "start_time": 193.44,
+      "end_time": 227.11,
+      "text": "चाइल्ड है 10 ऐसा आपका ट्री है। अब अभी तक हम लोग तीन तरीके की चीजें पढ़ चुके हैं ना प्रीआर्डर इनऑर्डर पोस्ट ऑर्डर। पिछले किए थे कि प्रीआर्डर क्या होता है? इनऑर्डर क्या होता है? उसमें क्या होता था कि रूट उसका लेफ्ट चाइल्ड, राइट चाइल्ड या तो लेफ्ट चाइल्ड रूट और ऐसा-सा करके कुछ होता था। लेवल ऑर्डर क्या बोलता है? अगर आप ये ट्री देखें। अगर आप ये ट्री को बहुत ध्यान से देखिए। इसमें अगर आप हॉरिजॉन्टल लाइंस बनाएंगे। हॉरिजॉन्टल लाइंस का क्या मतलब है? सीधा-सीधा लाइंस। अगर हम इसमें सीधा-सीधा लाइंस बनाए तो देखिए कैसे बनेगा। सबसे पहला लेवल सबसे पहला लेवल कौन सा है? रूट का। तो ये वाला लाइन देखिए ये वाला एक लेवल है। एक लेवल है ना। मान",
+      "source": "caption",
+      "english_text": "Child is 10 such is your tree. Now till now we have read three types of things, pre-order, post order. Last asked what is preorder? What is inorder? What used to happen in that was that the root was its left child, the right child was either the left child root and something like that. What does the level order say? If you see this tree. If you look at this tree very carefully. In this if you make horizontal lines. What do horizontal lines mean? Straight lines. If we draw straight lines in it then see how it will be. The First Level Which is the first level? Of root. So look at this line, this one is a level. There is one level, isn't it? value"
+    },
+    {
+      "start_time": 227.12,
+      "end_time": 260.629,
+      "text": "लीजिए अगर आप इस कंपनी में देखें सबसे ऊपर कौन सा होता है? रूट। सीईओ। सबसे ऊपर का लेवल वो होता है। दूसरा लेवल सीईओ के अंडर जो दो लोग होंगे सीएफओ और सीओ। उनके लिए आप एक और लेवल बना सकते हैं। उनके लिए आप एक और लेवल बना सकते हैं। तो मान लीजिए कि ये हो गया लेवल जीरो और ये हो गया लेवल वन। तो लेवल जीरो में कितने लोग हैं? एक आदमी रूट थ्री है। लेवल वन में कितने लोग हैं? दो लोग हैं। 20 भी लेवल वन में है और नाइन भी लेवल वन में है। आप एक और लाइन बना सकते हैं। आप एक और लाइन ये भी बना सकते हैं जो इन तीनों को क्रॉस करता हुआ जाएगा। ये क्या हो गया? ये हो गया आपका",
+      "source": "caption",
+      "english_text": "If you look at this company, who is at the top? Root. CEO. That is the highest level. The second level under the CEO will be the two people CFO and CO. You can create another level for them. You can create another level for them. So let's say this becomes level zero and this becomes level one. So how many people are at level zero? A man is route three. How many people are in level one? There are two people. 20 is also in level one and nine is also in level one. You can create another line. You can also draw another line that will cross these three. What has happened? this is yours"
+    },
+    {
+      "start_time": 260.639,
+      "end_time": 294.87,
+      "text": "लेवल टू। लेवल टू में कितने नोट्स हैं? तीन नोट्स हैं। ये और ये। अब इसको बोलते हैं लेवल ऑर्डर ट्रेवर्सल। जब आप हॉरिजॉन्टल हॉरिजॉन्टल लाइन बनाएंगे ना ट्री में जो भी नड्स या जो भी सर्कल एक लाइन में आता है ना उसको हम लोग बोलते हैं कि वो एक लेवल का आदमी है। फॉर एग्जांपल अगर इसको और एक एग्जांपल से समझाएं तो सबसे ऊपर में क्या होता है? दादाजी। दादाजी के दो बेटे हैं। पापा और चाचा। ठीक है? पापा के दो बेटे हैं। मान लो प्रत्युष और प्रांजलल। ठीक है? चाचा का एक बेटा है जो कि है मोहित। ठीक बात है। अच्छा इसमें",
+      "source": "caption",
+      "english_text": "Level two. How many notes are there in level two? There are three notes. This and this. Now this is called level order traversal. When you make a horizontal line, whatever nodes in the tree or whatever circle comes in a line, we call that person a level person. For example, if we explain this with one more example, then what happens at the top? grandfather Sir. Grandfather has two sons. Papa and uncle. Ok? Papa has two sons. Suppose Pratyush and Pranjalal. Ok? Uncle has a son who is Mohit. That's right. good in this"
+    },
+    {
+      "start_time": 294.88,
+      "end_time": 328.71,
+      "text": "अगर हम लेवल बनाएं तो सबसे ऊपर के लेवल में सिर्फ दादा जी आएंगे। सिर्फ दादा जी आएंगे ना। ये ये क्या हो जाएगा? मान लीजिए जैन जैन बूमर जैन बूमर होता है या जो भी होता है। उसके अगले लेवल में पापा और चाचा आएंगे। इनको कुछ और बता दीजिए। ठीक है? सबसे लास्ट के लेवल में प्रत्युष, प्रांजलल और मोहित आएंगे। ये क्या होंगे? जजी। तो अगर आप हॉरिजॉन्टल लाइन बनाते हैं तो जो भी लोग एक लेवल पे हैं ना एक ही एक ही उस पे लेवल पे हैं उनको हम बोलते हैं कि वो एक लेवल के आदमी हैं। लेवल ऑर्डर का ट्रेवर्सल क्या होता है कि आपको अब ऐसा नहीं करना है कि रूट लेना है उसका लेफ्ट साइड और ऐसा नहीं करना है। आपको लेवल बाय",
+      "source": "caption",
+      "english_text": "If we make levels, only grandfather will be in the top level. Only grandfather will come. What will happen? Let's say Jain Jain Boomer is Jain Boomer or whatever. Papa and uncle will come in his next level. Tell them something else. Ok? Pratyush, Pranjalal and Mohit will come in the last level. What will these be? Judge. So if you draw a horizontal line, then all the people who are at the same level, we call them people of the same level. What level ordered traversal does is that you no longer have to do that by taking the root, its left side and not doing that. you level by"
+    },
+    {
+      "start_time": 328.72,
+      "end_time": 362.31,
+      "text": "लेवल चलना है। तो अगर इसमें आपको कोई बोले कि इसका लेवल ऑर्डर ट्रेवर्सल लिख के बताओ जी। तो आप ऐसे लिख सकते हैं कि मान लीजिए आप सबसे पहले लिखेंगे कि सबसे पहले एक आदमी है थ्री। अच्छा। उसके बाद एक आदमी है 20 और नाइन। उसके बाद अगले लेवल पर है फोर फाइव और 10। ये इसका लेवल ऑर्डर ट्रेवर्सल है। क्यों ये लेवल ऑर्डर ट्रेवर्सल है? क्योंकि देखिए सबसे पहले हम लेवल जीरो में जो भी था अगेन हर लेवल में लेफ्ट टू राइट लिखना है या राइट टू लेफ्ट लिखना है ये क्वेश्चन बाय क्वेश्चन डिपेंड करता है। लेकिन फॉर एग्जांपल अगर आपको कोई बोलता है ना कि इसका लेवल ऑर्डर ट्रेवर्सल या लेवल ऑर्डर में इस ट्री को लिखो। हर लेवल में लेफ्ट टू राइट लिखना। हर लेवल में क्या लिखना?",
+      "source": "caption",
+      "english_text": "Have to walk level. So if someone tells you to write its level order traversal then tell me. So you can write like this, suppose first of all you will write that first of all there is a man, three. Good. After that there is a man 20 and nine. After that the next level is four five and 10. This is its level order traversal. Why is this level order traversal? Because see, first of all whatever was there in level zero, again in every level whether we have to write left to right or right to left, it depends question by question. But for example, if someone tells you to write this tree in level order traversal or level order. Writing left to right in every level. What to write in each level?"
+    },
+    {
+      "start_time": 362.32,
+      "end_time": 390.629,
+      "text": "लेफ्ट टू राइट। तो लेवल ज़ीरो में क्योंकि एक ही नोड है तो आप बस एक ही चीज़ लिख पाएंगे। थ्री। लेवल वन में दो लोग हैं। अब लेफ्ट टू राइट लिखना है। मतलब पहले 20 और फिर नाइन। तो ये लेवल वन हो गया। लेवल टू में तीन नोड हैं। इनको भी लेफ्ट टू राइट लिखना है। मतलब ऐसा 4 5 10 और इसका एक बड़ा सा वेक्टर बनेगा। तो ये आपका क्या हो गया? ये जो चीज है ना ये ये क्या है? ये लेवल ऑर्डर ट्रेवर्सल है। क्या है? लेवल ऑर्डर ट्रेवर्सल है। लेवल ऑर्डर ट्रेवर्सल। लेवल बाय लेवल जा रहे हैं। यहां पे क्या होगा?",
+      "source": "caption",
+      "english_text": "Left to right. So in level zero because there is only one node you will only be able to write one thing. Three. There are two people in level one. Now we have to write from left to right. Meaning first 20 and then nine. So this is level one. Level two has three nodes. These also have to be written left to right. That means 4 5 10 and this will create a big vector. So what happened to you? What is this thing? This is level ordered traversal. What is? Level is ordered traversal. Level Order Traversal. Going level by level. What will happen here?"
+    },
+    {
+      "start_time": 390.639,
+      "end_time": 425.11,
+      "text": "दादाजी, पापा फिर चाचा और अगले वाले में प्रत्युष प्रांजल और मोहित। तो ये भी क्या है? लेवल ऑर्डर ट्रेवर्सल है। तो जो देखिए जो भी लेवल ऑर्डर का कोई भी क्वेश्चन आए किसी भी तरीके का कितना भी कॉम्प्लेक्स क्वेश्चन आए कि अब लेवल ऑर्डर में आपको कोई भी कुछ बोले ना लेफ्ट टू राइट करो राइट टू लेफ्ट करो आधा लेफ्ट आधा राइट कुछ भी करो इसमें जो चीज यूज़ होती है ना इसमें आप रिकर्सन यूज़ करेंगे तो मज़ा नहीं आएगा और हो भी नहीं पाएगा रिकर्शन आप जो पिछले में किया था ना इनऑर्डर प्रीआर्डर में कि पहले रूट ले लेते हैं रूट का लेफ्ट को मौका देते हैं रूट के राइट को मौका देते हैं उससे ये नहीं हो पाएगा उससे ये नहीं हो पाएगा क्यों नहीं हो पाएगा हम बताएंगे कोई भी लेवल ऑर्डर का क्वेश्चन आए ना आपको",
+      "source": "caption",
+      "english_text": "Grandfather, father then uncle and in the next one Pratyush Pranjal and Mohit. So what is this also? Level is ordered traversal. So see, whatever level order question comes, no matter how complex question comes, in level order, no one tells you anything, do left to right, do right to left, half left, half right, do anything. Whatever is used in it, if you use recursion in it, then it will not be fun and it will not be possible to do the recursion which you did in the previous, in in order preorder, that first take the root, then take the left of the root. Let's give a chance to the right of the root. This won't be possible with him. This won't be possible with him. Why won't it be possible? We'll tell you if you have any level order question."
+    },
+    {
+      "start_time": 425.12,
+      "end_time": 458.39,
+      "text": "क्यों यूज़ करना है क्यों हम जानते हैं अभी तक हम क्यू नहीं पढ़ाए हैं क्यों क्योंकि उतना कुछ खास होता नहीं है q में पढ़ने के लिए इसी में आप q भी पढ़ लीजिए इसी में आप क्यू भी बता देते हैं क्यू क्या होता है आप लोग स्टक पढ़ चुके हैं हम आपको स्टैक बताए थे है ना आपको हम स्टैक बताए थे स्टैक क्या होता है फर्स्ट इन लास्ट आउट फर्स्ट इन लास्ट आउट मतलब कि स्टक क्या होता था स्टक एक ऐसा स्ट्रक्चर होता था ऐसा करके मान लीजिए इसमें आप तीन चीजें इंसर्ट किए पहले आप वन इंसर्ट किए टू इंसर्ट किए थ्री इंसर्ट किए तो जब आप वन इंसर्ट करते थे तो वन यहां आ जाता था टू करते थे टू इसके ऊपर आ जाता था। थ्री करते थे। थ्री इसके ऊपर आ जाता था। जब आप इसको",
+      "source": "caption",
+      "english_text": "We know why we have to use Q, why we have not taught Q yet, because there is nothing special to read in Q. In this you also read Q. In this you also tell Q. What is Q? You guys have already read Stuck. We told you about Stack. What is Stack? First in last out, first in last out means what was Stuck? Stuck was such a structure. By doing this, suppose you insert three things in it, first you insert one. When you inserted three, when you inserted one, one would come here, if you did two, two would come above it. Used to do three. Three used to come over it. when you this"
+    },
+    {
+      "start_time": 458.4,
+      "end_time": 491.589,
+      "text": "निकालते थे, जब आप इसको निकालते थे तो कैसे निकलता था? पहले थ्री निकलता था, फिर टू निकलता था और सबसे लास्ट में वन निकलता था। तो वन सबसे पहले घुसा था सबसे लास्ट में निकला। टू सेकंड घुसा था। सेकंड निकला। थ्री सबसे लास्ट में घुसा था लेकिन सबसे पहले निकल गया। तो ये तो होता था स्टक। क्यू इसका जस्ट उल्टा होता है। इसका जस्ट उल्टा होता है। क्यू का मतलब क्या है? फर्स्ट इन फर्स्ट आउट। फर्स्ट इन फर्स्ट आउट। मतलब सिनेमा हॉल में क्यू का मतलब ही क्यू का मतलब क्या होता है? कतार लाइन। सिनेमा हॉल में क्या होता है? जो आदमी सबसे पहले होता है क्यू में उसको",
+      "source": "caption",
+      "english_text": "When you used to take it out, how did it come out? First three came out, then two came out and at last one came out. So the forest was the first to enter and the last to exit. Two seconds had entered. Seconds came out. Three entered last but left first. So this was stuck. Because it's just the opposite. It's just the opposite. What does Q mean? First in first out. First in first out. Meaning, what is the meaning of queue in cinema hall? queue line. What happens in the cinema hall? The person who is first in the queue should"
+    },
+    {
+      "start_time": 491.599,
+      "end_time": 524.63,
+      "text": "सबसे पहले टिकट मिलता है। जो आदमी किसी राइड में सबसे पहले क्यू में खड़ा होता है उसको सबसे पहले टिकट मिलता है। ऐसा तो नहीं होता है ना कि जो आदमी सबसे पहले क्यू में है उसको सबसे लास्ट में टिकट मिलता है। नहीं ऐसा नहीं होता है। तो क्यू का यही मतलब होता है कि फर्स्ट इन फर्स्ट आउट। क्यू क्या होता है? क्यू को आप जस्ट ऐसा समझिए। क्यू को आप ऐसा समझिए। ये होता है q। ठीक है? अब इसमें दो ओपनिंग या दो छेद होते हैं। इसको हम लोग बोलते हैं फ्रंट और इसको हम लोग बोलते हैं बैक। इसको हम लोग क्या बोलते हैं? बैक। अच्छा सेम होता है। अब q में अगर आप पुश करना चाहें ना क्यू में आप पुश करना चाहें तो सिमिलर आप स्टक की तरह पुश कर सकते हैं। मतलब आप",
+      "source": "caption",
+      "english_text": "Get the ticket first. The person who stands first in the queue in a ride gets the first ticket. It does not happen that the person who is first in the queue gets the ticket last. No, that doesn't happen. So the meaning of queue is first in first out. Why what happens? Why should you consider it as just that? Why should you understand this? This is q. Ok? Now it has two openings or two holes. We call this front and we call this back. What do we call this? Back. It is a good bean. Now if you want to push in q or if you want to push in q then similar you can push like stuck. meaning you"
+    },
+    {
+      "start_time": 524.64,
+      "end_time": 559.43,
+      "text": "बोल सकते हैं कि q में पुश कर दो वन। ठीक है? एक और पुश कर दो। q में एक और पुश कर दो टू। और एक और चीज पुश कर दो थ्री। ठीक बात है? तो इसमें क्या होगा ना कि जो पुश होगा जो पुश होगा वो मान लीजिए आप बैक से पुश करेंगे मतलब सबसे पहले वन यहां पे पुश होगा तो वन यहां आ जाएगा टू पुश होगा टू यहां आ जाएगा और थ्री यहां आ जाएगा ये तो हो गया पुश करने की बात तो ऐसा क्यों लगता है अब अगर आपको एक-एक करके निकालना है ना तो आप कहां से निकालेंगे स्टैक में तो आप कहां से निकालते थे टॉप से क्योंकि एक ही खुला होता था टॉप इस पे दो खुले हैं फ्रंट और बैक आप निकालेंगे फ्रंट से आप कहां से",
+      "source": "caption",
+      "english_text": "You can say push one into q. Ok? Give one more push. Make another push in q. And one more thing, push two three. Is that correct? So what will happen in this, what will be the push, what will be pushed, suppose you will push from the back, that means first of all, one will be pushed here, then one will come here, two will push, two will come here and three will come here, that's it about pushing, so why do you feel like this? Now if you have to take out one by one, then from where will you take it out in the stack, then where would you take it out from the top because only one was open at the top, there are two open on it, front and back, where will you take it out from the front?"
+    },
+    {
+      "start_time": 559.44,
+      "end_time": 593.509,
+      "text": "निकालेंगे फ्रंट से q डॉट फ्रंट आपको क्या देगा ना फ्रंट में जो सबसे पहला एलिमेंट है क्या दिख रहा है को वन तो आपको क्या मिलेगा? वन मिलेगा। क्या मिलेगा? वन। इसके बाद आप करेंगे q डॉट पॉप। इसके बाद आप करेंगे q डॉट पॉप। तो घुसा कहां से था? पुश। पुश कहां से हुआ था? बैक से। पॉप कहां से होगा? फ्रंट से। फ्रंट से। फ्रंट वाला पॉप हो जाएगा। फिर से करिए q डॉट फ्रंट। q डॉट फ्रंट। क्या मिलेगा? फ्रंट में क्या है? टू। टू आपको मिल गया टू। फिर से अगर हम q डॉट पॉप करें तो q डॉट पॉप कहां से पॉप होगा? फ्रंट से पॉप होगा।",
+      "source": "caption",
+      "english_text": "If you remove q dot front from the front, what will it give you? What will you get? Forest will be found. What will be getting? Forest. After this you will pop q dot. After this you will pop q dot. So where did it enter from? Push. Where did the push come from? From the back. Where will the pop come from? From the front. From the front. The front one will pop. Do q dot front again. q dot front. What will be getting? What's on the front? To. Two you got two. Again if we pop q dot then from where will q dot pop? Will pop from the front."
+    },
+    {
+      "start_time": 593.519,
+      "end_time": 627.91,
+      "text": "फ्रंट से पॉप होगा। फ्रंट में जो भी है पॉप हो जाएगा। फिर से करिए। फिर से करिए। q डॉट फ्रंट कहां से मिलेगा आपको? फ्रंट में जो भी है थ्री थ्री थ्री मिल गया। फिर से करिए। q डॉट पॉप। पॉप कहां से होगा? फ्रंट से होगा। फ्रंट से होगा। तो जो भी फ्रंट में है वो पॉप हो जाएगा। तो देखिए q यही होता है। बस यही होता है। कुछ नहीं होता है। अगर आप करते हैं q डॉट पुश। तो पुश कहां से होता है? बैक से। पुश कहां से होता है? बैक से। तो जब 1 2 3 पुश किए थे तो वन आ गया था, टू आ गया था, थ्री आ गया था। जब आप q डॉट फ्रंट निकालते हैं, q डॉट फ्रंट निकालते हैं तो फ्रंट से जो आदमी",
+      "source": "caption",
+      "english_text": "Will pop from the front. Whatever is in the front will pop. Do it again. Do it again. q Where can you get Dot Front? Whatever is in the front, three three three got it. Do it again. q dot pop. Where will the pop come from? Will be from the front. Will be from the front. So whatever is in the front will pop. So see q this is what happens. This is just what happens. Nothing happens. If you do q dot push. So where does the push come from? From the back. Where does the push come from? From the back. So when 1 2 3 were pushed, one had come, two had come, three had come. When you take out q dot front, take out q dot front then the person who comes from the front"
+    },
+    {
+      "start_time": 627.92,
+      "end_time": 660.15,
+      "text": "दिखता है वो पहले एक्सेस होता है। तो इसमें क्या हुआ? पुश करने का ऑर्डर भी 1 2 और थ्री था। निकलने का ऑर्डर भी क्योंकि आप फ्रंट से निकाल रहे हैं ना निकलने का ऑर्डर भी 1 2 3 ही है। निकलने का ऑर्डर भी 1 2 3 ही है। और जब आप पॉप करते हैं तो कहां से पॉप होता है? फ्रंट से। फ्रंट में जो भी उसको एलिमेंट दिखेगा उसको उड़ा देगा क्यू। तो इसीलिए क्यू में ऑर्डर मेंटेन होता है। स्टक में आर्डर रिवर्स हो जाता था। 1 2 3 घुसता था निकलता था 3 2 1 q में 1 2 3 घुसेगा तो 1 2 3 ही निकलेगा। थ्री टू वन नहीं निकलेगा। इसीलिए q मतलब सीधा।",
+      "source": "caption",
+      "english_text": "Looks like it gets accessed first. So what happened in this? The order to push was also 1, 2 and three. The exit order is also 1 2 3 because you are exiting from the front. The exit order is also 1 2 3. And when you pop where do you pop from? From the front. Why will he blow up whatever element he sees in the front? So that's why order is maintained in the queue. In case of stock the order was reversed. 1 2 3 used to enter and 3 2 1 used to come out. If 1 2 3 enters in q then only 1 2 3 will come out. Three to one will not work. That's why q means straight."
+    },
+    {
+      "start_time": 660.16,
+      "end_time": 694.15,
+      "text": "क्यू मतलब सीधा मतलब जो पहले घुसेगा वो पहले निकलेगा। फर्स्ट इन फर्स्ट आउट। तो ये हम उम्मीद करते हैं कि ये आप लोगों को समझ में आता होगा। तो ये छोटा सा इंट्रोडक्शन था क्यू। का क्यू में उतना कुछ होता नहीं है। अ स्टैक बहुत कॉम्प्लेक्स टॉपिक है। क्यू मेरे हिसाब से उतना कॉम्प्लेक्स टॉपिक है नहीं। क्यू का जितना भी कॉम्प्लेक्स क्वेश्चन है ना सब ट्री में ही होता है। सब ट्री में ही होता है। क्यू के बहुत कम ऐसे क्वेश्चन है कि क्यू ही बहुत कॉम्प क्यू में ऐसा कुछ होता नहीं है कॉम्प्लेक्स करने के लिए। यही होता है क्यू। अच्छा अब आते हैं मेन टॉपिक पे। अब जब आपको क्यू का एक इंट्रोडक्शन पता है हम नहीं बोल रहे हैं आप क्यू में मास्टर हो गए हैं। लेकिन आपको पता है ना इंट्रोडक्शन क्या होता है? पुश कहां से",
+      "source": "caption",
+      "english_text": "Q literally means whoever enters first will come out first. First in first out. So we hope that you guys understand this. So this was a small introduction. Not much happens in Ka Q. A stack is a very complex topic. Why according to me it is not that complex a topic. Every complex question of Q exists in a sub-tree. Everything happens in the tree only. There are very few such questions in Q that the Q itself is very comp and there is nothing to complicate it. Why does this happen? Okay, now coming to the main topic. Now that you know an introduction to cue, we are not saying you have become a master in cue. But do you know what introduction is? push from where"
+    },
+    {
+      "start_time": 694.16,
+      "end_time": 728.55,
+      "text": "होता है? बैक से। फ्रंट निकालते हैं तो फ्रंट वाला आ जाता है। पॉप जब आप करते हैं तो कहां से होता है? फ्रंट से। तो मतलब फर्स्ट इन फर्स्ट आउट। अब इस ट्री को देखिए। दादा जी वाले ट्री को देखिए। इसका आपको लेवल ऑर्डर ट्रेवर्सल बना के दिखाना है। मतलब कि आपको ना इसमें कितना लेवल दिख रहा है? इसमें आपको तीन लेवल दिखेगा। तीन लेवल का मतलब ये हो गया वन फिर दूसरा और तीसरा। तो लेवल ऑर्डर ट्रेवर्सल का मतलब कि आपको ना तरह-तरह के एरे बनाने हैं। मतलब आपको एक एरे बनाना है जिसमें ऊपर वाला लेवल हो। मतलब ऊपर वाला लेवल मतलब जिसमें ये हो जिसमें दादाजी हो। ये एक हो गया। लेवल वन खत्म। लेवल टू में कितने लोग हैं? दो लोग हैं। पापा और चाचा। तो आपको",
+      "source": "caption",
+      "english_text": "Does it happen? From the back. If you take out the front, the front one comes. Where does the pop come from when you do? From the front. So that means first in first out. Now look at this tree. Look at grandfather's tree. You have to show this by making level order traversal. Meaning, what level do you see in it? In this you will see three levels. Three levels means first, second and third. So level order traversal means you don't have to create different types of arrays. Meaning you have to create an array in which the top level is. Meaning the upper level means in which this is in which Grandfather is. It became one. Level one over. How many people are in level two? There are two people. Papa and uncle. so you"
+    },
+    {
+      "start_time": 728.56,
+      "end_time": 763.19,
+      "text": "अलग एक एरो बनाना है जिसमें पापा और चाचा हो। अच्छा वेरी गुड। लेवल थ्री। लेवल थ्री क्या है? जिसमें तीन लोग हैं। प्रत्युष, मोहित और सुमन। तो आपको लेफ्ट टू राइट लेफ्ट टू राइट। याद रखिएगा लेफ्ट टू राइट ही रिटर्न करना है। ये सिंपल वाला लेवल ऑर्डर है। प्रत्युष और मोहित और सुमन। ठीक बात है। अब ये क्या हो गया? तीन एरे। तीन एरे मतलब तीनों लेवल को रिप्रेजेंट करते हैं ये फर्स्ट लेफ्ट टू राइट। मतलब ये वाला। ये वाला किसके लिए है? लेवल ज़ीरो बोल दीजिए। ये वाला किसके लिए? लेवल वन के लिए। और ये वाला किसके लिए है? लेवल टू के लिए। इन सबको एक बड़े से एरे में डाल के आपको रिटर्न करना है। मतलब अगर आप C++ में है तो आपको वेक्टर ऑफ़ वेक्टर ऑफ़ इंट",
+      "source": "caption",
+      "english_text": "Have to make a separate arrow in which father and uncle are there. Okay very good. Level three. What is level three? In which there are three people. Pratyush, Mohit and Suman. So you have to go left to right, left to right. Remember to return only from left to right. This is a simple level order. Pratyush and Mohit and Suman. That's right. Now what has happened? Three arrays. Three arrays represent all three levels, first left to right. Meaning this one. Who is this one for? Say level zero. Who is this one for? For level one. And who is this one for? For level two. You have to put all this in a big array and return it. Meaning if you are in C++ then you have vector of vector of int."
+    },
+    {
+      "start_time": 763.2,
+      "end_time": 797.11,
+      "text": "रिटर्न करना है। जावा में है तो आपको एक लिस्ट ऑफ लिस्ट जो भी है टू डी एरे जो भी होता है ना तो अलग-अलग आपको एरे बनाना है। हर लेवल के लिए एक एरे बना के लास्ट में सबको कंबाइन करके रिटर्न करना है। तो ये तो सवाल हो गया। अब देखिए कि इसमें क्यू कैसे यूज़ होगा। और हम पहले ही बता देते हैं कि ये बहुत नॉन ऑब्वियस एल्गोरिदम है। मतलब कि ये एल्गोरिदम ऐसा नहीं है जो आप आपको अगर कुछ नहीं आता है लेवल ऑर्डर के बारे में तो आप इसको सोच सकते हैं। नहीं ये एक बेस एल्गोरिदम है। ये आपको आना पड़ेगा। ये आपको आना चाहिए। इसके हिसाब से इसके बेसिस पे आप दूसरे लेवल ऑर्डर के क्वेश्चन सॉल्व कर सकते हैं। तो बेसिक वाला बहुत ध्यान से देखिएगा। हम आपको ड्राइर दिखाते हैं। हो सकता है कि शुरू",
+      "source": "caption",
+      "english_text": "Have to return. In Java, you have to create a list of lists or arrays, whatever they are, you have to create separate arrays. Create an array for each level, combine all of them and return them at the end. So this is the question. Now see how Q will be used in this. And we tell you in advance that this is a very non-obvious algorithm. Meaning that this algorithm is not something that you can think of if you do not know anything about level order. No, this is a base algorithm. You will have to come here. You should come here. Accordingly, on its basis you can solve questions of second level order. So look very carefully at the basic one. Let us show you the dryer. maybe start"
+    },
+    {
+      "start_time": 797.12,
+      "end_time": 830.389,
+      "text": "में 30 सेकंड या 1 मिनट आपको लगे कि ये क्या कर रहा है। धीरे-धीरे देखते जाइए। पूरा सेंस बनाने लगेगा। जब हम लोग लास्ट प्रत्युष वाले लेवल तक पहुंचेंगे ना। सब सेंस बनाने लगेगा कि अच्छा हो कैसा रहा है मतलब क्या हो रहा है क्यों हो रहा है सब समझ में आएगा तो सबसे पहले क्या करते हैं ना कोई भी लेवल ऑर्डर का ट्रेवर्सल हो एक q बना लिया करिए एक क्या बना लिया करिए क्यू जिसमें एक तरीके से होगा फ्रंट और यहां से होगा बैक ठीक है एक लेवल q बना लिया करिए ठीक है ये q किसी भी समय ना एक लेवल के लोगों को कंटेन करेगा कैसे करेगा हम आपको बताते हैं अच्छा तो सबसे पहले क्या काम करेंगे कि मान लीजिए कि आपको",
+      "source": "caption",
+      "english_text": "In 30 seconds or 1 minute you will feel what he is doing. Keep watching slowly. Will start making complete sense. When we reach the level of last Pratyusha. Everyone will start making sense that how is it, what is happening, why is it happening, then everything will be understood, so first of all, what do we do, no matter the level of order traversal, create a q, what do we create a q in which there will be a front and from here, back, okay, create a level q, do it okay, this q will contain the people of one level at any time, we will tell you how it will do, okay, so the first thing we will do is let's say that you have"
+    },
+    {
+      "start_time": 830.399,
+      "end_time": 862.069,
+      "text": "क्या मिलेगा आपको रूट मिलेगा रूट मतलब ये दादाजी वाला इसको रूट बोला जाता ये रूट दिया रहेगा। आपको बोला है कि लेवल ऑर्डर बताओ भैया। अच्छा अगर रूट ही नल है। रूट का नल मतलब ट्री है ही नहीं। ट्री में कुछ है ही नहीं। तो कुछ नहीं करना है। रिटर्न वेक्टर कोई खाली एरर रिटर्न कर दीजिए। मतलब कि रूट नल का मतलब कि फैमिली में कोई है ही नहीं। पूरी फैमिली खाली है। पूरी फैमिली खाली है तो क्या होगा? खाली रिटर्न करना है। वेरी गुड। अगर रूट नल नहीं है तो आप शुरू करेंगे। तो आप क्या शुरू करेंगे? अपना काम करना शुरू करेंगे। सबसे पहले ये किस तरीके का क्यू है? ये क्यू क्या स्टोर करता है? स्टैक होता है ना? हर चीज का एक होता है ना कि ये किस चीज का स्टैक है?",
+      "source": "caption",
+      "english_text": "What will you get, you will get root, meaning this grandfather's person is called root, he will be given root. I have told you to tell me the level order, brother. Well if the root is the tap. Tap of root means there is no tree at all. There is nothing in the tree. So nothing has to be done. Return vector Return an empty error. Meaning that root null means that there is no one in the family. The whole family is empty. What will happen if the entire family is empty? Have to return empty. very good. If root is not null then you will start over. So what do you start with? Will start doing his work. First of all, what kind of cue is this? What does this Q store? There is a stack, right? There is one for everything, what is this stack of?"
+    },
+    {
+      "start_time": 862.079,
+      "end_time": 896.389,
+      "text": "इंटीजर का स्टैक है, कैरेक्टर का स्टैक है, स्ट्रिंग का स्टक है। उसी तरीके से क्यू भी किस तरीके का क्यू है? क्या ये इंटीजर का क्यू है? क्या ये कैरेक्टर का क्यू है? किसी और चीज का क्यू है? तो ये ना हम लोग ये पूरा-पूरा सर्कल ये जो पूरा सर्कल है जिसको क्या बोला जाता है? नोड। जिसको नोड बोला जाता है। पूरा-पूरा सर्कल का क्यू बनाएंगे। मतलब इस क्यू में पुश करते समय पूरा सर्कल ही पुश कर देंगे। जिस एक नोड ही पुश कर देंगे। नोड में डेटा भी होगा। डेटा मतलब कि जो नंबर और नोड में एक लेफ्ट भी होगा, एक राइट भी होगा। तो ये Q एक नोड टाइप का क्यू है। एक किसका टाइप है? नोड टाइप का मतलब Q ऐसा है। Q नोड",
+      "source": "caption",
+      "english_text": "There is a stack of integers, there is a stack of characters, there is a stack of strings. In the same way Q is also what type of Q? Is this the cue for integers? Is this the character's cue? Why anything else? So what is this whole circle of us called? Node. Which is called node. Will make a queue of a complete circle. Meaning, while pushing in this queue, you will push the entire circle. Only one node will be pushed. The node will also contain data. Data means that every number and node will have a left and a right. So this Q is a node type Q. Whose type is one? Node type means Q is such that. Q node"
+    },
+    {
+      "start_time": 896.399,
+      "end_time": 931.269,
+      "text": "स्टार अगर C++ वाले हैं तो स्टार जावा वाला है तो नोड और इसका नाम रखेंगे Q। इसका नाम रखेंगे Q। तो ये नोड टाइप का मतलब पूरा-पूरा सर्कल ही इसमें हम लोग घुसाते जाएंगे। अच्छा! शुरू करने के लिए, शुरू करने के लिए क्या करेंगे ना? दादाजी को जो कि रूट है आपका। रूट को इसमें घुसा दो। रूट को इसमें घुसा दो क्योंकि लेवल ऑर्डर शुरू कहां से होगा? शुरू वाले लेवल से। शुरू वाले लेवल में कितने लोग हैं? एक ही आदमी है रूट। तो इसमें दादाजी को घुसा दिए। दादाजी कहां से घुसेंगे? बैक से घुसेंगे। बैक से जब आप पुश लिखते हैं तो वो बैक में पुश करता है। तो दादा जी को ये क्या करेगा? यहां पे पुश कर देगा। अब आपके",
+      "source": "caption",
+      "english_text": "Star if it is C++, Star if it is Java then Node and its name will be Q. Will name it Q. So this node type means a complete circle and we will keep inserting it in it. Good! To start, what will you do to start, right? Grandfather who is your root. Insert the root into it. Insert the root into it because where does the level order start? From the starting level. How many people are there in the starting level? There is only one man, Root. So grandfather was included in it. Where will Grandfather enter from? Will enter from the back. When you write push from back, it pushes in the back. So what will he do to grandfather? Will push here. now your"
+    },
+    {
+      "start_time": 931.279,
+      "end_time": 965.749,
+      "text": "दादाजी यहां पे आ चुके हैं। ठीक है? आ चुके हैं? वेरी गुड। अब इस q को देखना स्टार्ट कीजिए। अब अपना एल्गोरिदम स्टार्ट कीजिए। तो हम लोग क्या लिखेंगे कि हम लोग क्या लिखेंगे? वाइल वाइल q नॉट एम्प्टी। मतलब जब तक ये q खाली नहीं हो जाता है तब तक हम लोग कुछ-कुछ करेंगे। नहीं समझ में आ रहा कोई देख पूरा देखते जाइए ट्राई रन देख लीजिए नहीं समझ में आ रहा है देखने में तो कोई हर्ज है नहीं लास्ट में सब समझ में आ जाएगा व्हाइल q डॉट नॉट एम्प्टी अच्छा अब हम लोग देखना शुरू करेंगे अब आप देखिए इस समय आपके क्यू में क्या है सिर्फ दादाजी सिर्फ दादाजी मतलब सिर्फ ये वाला लेवल सिर्फ ये वाला लेवल सिर्फ ये वाला जो कि",
+      "source": "caption",
+      "english_text": "Grandfather has come here. Ok? have arrived? very good. Now start watching this q. Now start your algorithm. So what should we write? While while q is not empty. Meaning, we will do something until this q becomes empty. I am not able to understand, watch it completely, watch the try run. If you are not able to understand, then there is no harm in watching. In the end, everything will be understood while q is not empty. Okay, now we will start watching. Now you see what is there in your queue at this time, only Dadaji, only Dadaji means only this level, only this level, only this one which"
+    },
+    {
+      "start_time": 965.759,
+      "end_time": 999.99,
+      "text": "लेवल ज़ीरो है लेवल ज़ीरो के सारे लोग इसमें हैं। लेवल ज़ीरो में कितने लोग होने चाहिए थे? एक आदमी एक आदमी है इसमें। एक आदमी है इसमें। तो किसी भी समय, किसी भी समय इस क्यू का जो साइज होगा ना, इस क्यू का जो साइज होगा वो आपको बताएगा कि उस पर्टिकुलर लेवल में कितने लोग हैं। तो सबसे पहले क्योंकि लेवल जीरो में एक ही आदमी होना चाहिए और q का साइज भी एक है। उस लेवल में कितना आदमी होना चाहिए? एक आदमी होना चाहिए। तो हम लोग क्या करेंगे ना। हम लोग यहां पे इंट लेवल साइज निकालेंगे कि इस पर्टिकुलर लेवल पे इस लेवल में जिसको हम लोग देखना चाह रहे हैं। कितने लोग हैं उसमें? तो आपको पता चलेगा कि q का अभी का",
+      "source": "caption",
+      "english_text": "Level zero is there, all the people of level zero are in it. How many people were supposed to be at Level Zero? A man is a man in this. There is a man in it. So at any point of time, the size of this queue will tell you how many people are there in that particular level. So first of all because there should be only one person in level zero and the size of q is also one. How many people should be there in that level? Must be a man. So what will we do? Here we will find out the int level size that we want to see at this particular level. How many people are there in it? So you will know that the current time of q is"
+    },
+    {
+      "start_time": 1000.0,
+      "end_time": 1031.829,
+      "text": "साइज क्या है? क्यू का अभी का साइज क्या है? कितना है? वन। अच्छा, अगर इस लेवल में एक आदमी है तो इस इस लेवल में एक ही आदमी है तो इसके एरे का साइज़ कितना होगा? जो हम लोग यहां पे फाइनल एरे ये बनाएंगे दादा जी इसका साइज़ कितना होगा? एक होगा। लेवल में जितने लोग होंगे एरे का भी साइज़ उतना ही होगा ना स्टोर करने के लिए। तो एक छोटा सा टेंपरेरी एरे हम लोग यहां पे बनाएंगे। वेक्टर, इंट, TMP और ये कितने साइज़ का होगा? जो भी लेवल साइज है, जो भी लेवल साइज है, तो आप एक खाली वेक्टर बना चुके हैं। खाली वेक्टर यहां पे बना चुके हैं।",
+      "source": "caption",
+      "english_text": "What is the size? What is Q's current size? How much is it? Forest. Well, if there is one person in this level, then what will be the size of its array? Grandfather, what will be the size of the final array that we will make here? there will be a. The size of the array to store will be the same as the number of people in the level. So we will create a small temporary array here. Vector, Int, TMP and what size will it be? Whatever the level size is, whatever the level size is, you've created an empty vector. Empty vector has been created here."
+    },
+    {
+      "start_time": 1031.839,
+      "end_time": 1064.23,
+      "text": "अब आइए लेवल ऑर्डर ट्रेवर्सल शुरू करते हैं। अब लेवल ऑर्डर ट्रेवर्सल शुरू करते हैं। कितने लोग हैं इस लेवल में? एक लोग हैं। जो भी लेवल साइज है। अभी तो एक ही लोग हैं। अभी लेवल साइज एक है। हम लोग क्या करेंगे? इतने टाइम्स लूप रन करेंगे। इतने टाइम्स लूप रन करेंगे। मतलब हम लोग करेंगे वाइल। एक और वाइल इसमें लेवल साइज माइनस माइनस मतलब इसका क्या मतलब होता है कि ये वाला जो लूप है ना ये लेवल साइज टाइम्स रन करेगा। लेवल साइज अभी तो वन है तो ये एक ही बार रन करेगा। अच्छा अब आप क्या करिए? पॉप करना शुरू करिए। तो सबसे पहले हम लोग एक पॉप कराएंगे। नोड स्टार t",
+      "source": "caption",
+      "english_text": "Now let's start level order traversal. Now let's start the level order traversal. How many people are there in this level? There is one people. Whatever the level size is. Right now there are only one people. Currently the level size is one. What will we do? This number of times the loop will run. This number of times the loop will run. Meaning we will fail. Another while in this, level size minus minus, what does it mean that this one is a loop, it will run level size times. The level size is currently one, so it will run only once. Well what should you do now? Start popping. So first of all we'll do a pop. node star t"
+    },
+    {
+      "start_time": 1064.24,
+      "end_time": 1097.11,
+      "text": "= q डॉट पॉप। जब आप q सॉरी q डॉट पॉप नहीं सबसे पहले हम लोग इसका फ्रंट देख लेंगे। इसका फ्रंट देखेंगे। फ्रंट फ्रंट देखने के बाद q डॉट पॉप करेंगे। अब इससे होगा क्या? जब आप फ्रंट देखते हैं तो फ्रंट में फ्रंट में कौन सा है? दादाजी। तो आपके टी में क्या आ गया? दादाजी। आपके टी में क्या आ गए? दादाजी। q डॉट पॉप। q डॉट पॉप कहां से होता है? फ्रंट में जो भी मिलेगा उसको पॉप कर देगा। फ्रंट में जो भी मिलेगा उसको पॉप कर देगा। अब हुआ क्या कि आपके दादा जी इस q से निकल चुके हैं। आपके दादाजी एक q से निकल चुके हैं। अभी के लिए निकल चुके हैं।",
+      "source": "caption",
+      "english_text": "= q dot pop. When you don't pop q sorry q dot, first of all we will see its front. Will see its front. After seeing the front q dot will pop. Now what will happen from this? When you look at the front, which one is in the front? grandfather Sir. So what got into your tee? grandfather Sir. What's in your tee? grandfather Sir. q dot pop. q Where does Dot Pop come from? Will pop whatever is found in the front. Will pop whatever is found in the front. What happened now is that your grandfather has left this Q. Your grandfather has passed out from a q. Have left for now."
+    },
+    {
+      "start_time": 1097.12,
+      "end_time": 1129.43,
+      "text": "और आपके टी में क्या आ चुके हैं? वही दादा जी आ चुके हैं। आपके टी में आपके दादाजी आ चुके हैं। t = दादाजी। वेरी गुड। t = दादा जी आ चुके हैं। अब क्या करेंगे? क्योंकि आपको लेफ्ट टू राइट इंसर्ट करना है तो आप क्या करेंगे? जो आप ये एरे बना के आए हैं ना टीएमपी तो हम लोग क्या करेंगे? टीएमपी डॉट पुश बैक जो भी दादा जी का डेटा जो भी दादा जी का डेटा तो जो भी टी का डेटा मतलब उसमें जो भी डेटा होगा जो भी नंबर होगा या तो दादा जी हम एग्जांपल के लिए है आमतौर पे नंबर होता है। तो टी डॉट डेटा तो आपके",
+      "source": "caption",
+      "english_text": "And what has arrived in your tee? The same grandfather has come. Your grandfather has come to your tee. t=grandfather. very good. t = Grandfather has arrived. What will you do now? Because you have to insert left to right, what will you do? If you have come here with this array, TMP, then what will we do? TMP dot push back Whatever Dada ji's data, whatever Dada ji's data, whatever T's data means whatever data will be in it, whatever number will be either Dada ji, we are for example, usually there is a number. so t dot data then your"
+    },
+    {
+      "start_time": 1129.44,
+      "end_time": 1162.95,
+      "text": "टीएमपी में आपके टीएमपी में क्या आ चुका है? है। अब मान लीजिए दादा जी आ चुके हैं। आपके टीएमपी में स्टोर हो चुके हैं। वेरी गुड। खत्म हो गया। नहीं नहीं हुआ है खत्म। अब दादाजी आप कर चुके हैं प्रोसेस। लेकिन दादा जी के चिल्ड्रन भी होंगे ना। दादा जी के चिल्ड्रन भी होंगे। तो अब देखिए कैसे अगला लेवल बनेगा। देखिएगा कैसे अगला लेवल बनेगा। अब हम लोग एक और खेल खेलेंगे। इफ t डॉट लेफ्ट मतलब अगर t डॉट लेफ्ट नॉट इक्वल टू नल। मतलब इस टी ये जो नोड है, ये जो टी में अभी जो ये दादाजी का नोड है, अगर इसका लेफ्ट चाइल्ड है, अगर इसका लेफ्ट चाइल्ड है, तो उसको क्यू में पुश कर दो। उसको",
+      "source": "caption",
+      "english_text": "What is in your TMP? Is. Now suppose grandfather has arrived. Stored in your TMP. very good. It's over. No it is not over. Now Grandpa you have done the process. But grandfather will also have children. Grandfather will also have children. So now let's see how the next level will be created. Let's see how the next level will be created. Now we will play another game. If t dot left means if t dot left is not equal to null. Meaning, this node in this T, which is this grandfather's node in T, if it has a left child, if it has a left child, then push it into the queue. him"
+    },
+    {
+      "start_time": 1162.96,
+      "end_time": 1190.63,
+      "text": "क्यू में पुश कर दो। उसको क्यू में पुश कर दो। सिमिलरली, अगर टी का राइट नॉट इक्वल टू नल मतलब कि इसका एक राइट चाइल्ड भी है, आपके दादाजी या जो भी आपका नोड है, उसका एक राइट चाइल्ड है। उसको Q में पुश कर दो। उसको Q में पुश कर दो। उसको Q में पुश कर दो। और ये वाइल लूप बंद कर दो। अब देखिए क्या हुआ। बहुत ध्यान से देखिएगा। पूरा खेल बदल गया है। शुरू करते हैं। हम लोग पहले आए थे तो हमारे क्यू में दादा जी थे।",
+      "source": "caption",
+      "english_text": "Push it into the queue. Push it into the queue. Similarly, if right of T is not equal to null means it also has a right child, your grandfather or whatever your node is, has a right child. Push it into Q. Push it into Q. Push it into Q. And close this vicious loop. Now see what happened. Will look very carefully. The whole game has changed. let start. When we came first, Dada ji was in our queue."
+    },
+    {
+      "start_time": 1190.64,
+      "end_time": 1224.15,
+      "text": "लेवल साइज हमारा आया वन। अच्छा वेक्टर इन टीएमपी हम लोग एक साइज का वेक्टर बना लिए। अच्छा हम लोग किए वाइल लेवल साइज माइनस माइनस मतलब एक ही बार रन करना है। इस लेवल में कितने लोग हैं? एक लोग हैं। तो एक बार इसको रन करना है। रन करने के अनुसार हम लोग क्या किए कि एक नोट टी में q डॉट फ्रंट निकाले। q को पॉप करा दिए। तो दादा जी आपके पॉप हो गए। टी में आ गए दादा जी। आप जो बनाए थे टीएमपीटी बनाए थे उसमें दादाजी को पुश कर दिए तो आपका एक एरे बन के तैयार हो गया। अच्छा अब हम लोग देखें कि अब दादा जी का अगर लेफ्ट चाइल्ड है मतलब दादाजी का लेफ्ट चाइल्ड अगर पापा है तो क्यू में उसको पुश कर दो। क्यू में उसको पुश कर दो। पुश कहां से होगा? बैक",
+      "source": "caption",
+      "english_text": "Level size our came one. Well vector in TMP, we have created a vector of one size. Well, we did it while level size minus minus means we have to run it only once. How many people are there in this level? There is one people. So it has to be run once. According to the run, what we did was to remove the q dot front in a note t. Popped the q. So grandfather became your pop. Grandfather has come in tea. When you pushed Dadaji in the TMPT that you had made, your array was ready. Okay, now let us see that if grandfather has a left child, that means if grandfather has a left child, then push him in the queue. Push it in the queue. Where will the push come from? back"
+    },
+    {
+      "start_time": 1224.16,
+      "end_time": 1257.99,
+      "text": "में। तो आपके क्यू में क्या पुश हुआ पहले? पापा पुश हुए। अब हम लोग देखते हैं अगर दादाजी का राइट चाइल्ड है। अगर दादा जी के राइट चाइल्ड मतलब चाचा हैं उसको भी पुश कर दो क्यू में। क्यू में एक और क्या पुश हो गए? आपके चाचा जी पुश हो गए। और कुछ पुश नहीं हुआ। खत्म हो गया ना दादा जी का एक ही था खत्म हो गया अब आप इससे बाहर निकल गए अब आप इस वाइल से बाहर निकल गए किस वाइल से इस वाइल से इस वाइल से बाहर आ गए अब आपका जो टीएमपी है उसमें इस लेवल के सारे लोग स्टोर हो चुके होंगे देखिए आपके टीएमपी में दादा जी स्टोर हो गए थे ये कौन सा [हंसी] लेवल चल रहा है अभी लेवल ज़ीरो चल रहा था लेवल ज़ीरो के दादा जी हो गए हैं",
+      "source": "caption",
+      "english_text": "In. So what got pushed to your queue first? Papa got pushed. Now let us see if grandfather has the right child. If you are grandfather's right child i.e. uncle, then push him also in the queue. What else got pushed in the queue? Your uncle got pushed. And nothing was pushed. Grandfather had only one, it is finished, now you have come out of it, now you have come out of this vial, from which vial you have come out of this vial, now all the people of this level must have been stored in your TMP, see, grandfather was stored in your TMP, which [laughter] level is this going on, now level zero was going on, level zero has become grandfather."
+    },
+    {
+      "start_time": 1258.0,
+      "end_time": 1284.789,
+      "text": "स्टोर टीएमपी में आप क्या कीजिए आपका जो भी बड़ा वाला एरे है जो भी आपका वेक्टर ऑफ़ वेक्टर का एरे है उसमें क्या करना है आपको उसमें आपको क्या करना है रेस्ट डॉट पुश बैक टीएमपी रेस्ट डॉट पुशबक टीएमपी बस और यह वाइल लूप बंद करना है। यह कौन सा वाइल लूप है? ये वाला वाइल लूप वाइल q डॉट नॉट एंटी इसको बंद करना है। इसको बंद करना है। तो अभी आपके रेस्ट में क्या आ चुका है? आपके रेस्ट में दादा जी आ चुके हैं। तो हम एक बड़ा सा वेक्टर यहां पे बना लेते हैं।",
+      "source": "caption",
+      "english_text": "What you have to do in Store TMP, whatever is your big array, whatever is your vector of vectors, what you have to do in it, what you have to do in it, rest dot push back TMP rest dot pushback TMP, just and this is to close the while loop. Which Vile Loop is this? This one while loop while q dot not anti has to be closed. This has to be closed. So what has come to your rest now? Grandfather has come to your rest. So we create a big vector here."
+    },
+    {
+      "start_time": 1284.799,
+      "end_time": 1318.47,
+      "text": "आपके दादाजी आ चुके हैं। आपके दादा जी वाला आ चुका है। अब देखिए फिर से अब हम लोग इस वाइल लूप में आएंगे। क्या आपका क्यू खाली हो गया है? नहीं आपका क्यू खाली नहीं हुआ है। आपके क्यू में अब दो लोग हैं। पहले आपके क्यू में एक था। अब आपके क्यू में दो लोग आ चुके हैं। पापा और चाचा। पापा और चाचा। कोइंसिडेंटली देखिए ये पापा और चाचा क्या हैं? इस लेवल के लोग हैं। इस लेवल के लोग हैं। तो हम बोले थे ना कि जब आप ये निकालते हैं ना लेवल साइज तो उस लेवल में जितने भी लोग होने चाहिए ना ये क्यू सबको रखता है। तो देखिए लेवल जीरो का काम हो चुका। लेकिन लेवल वन में कितने लोग होने चाहिए थे? दो लोग पापा और",
+      "source": "caption",
+      "english_text": "Your grandfather has arrived. Your grandfather has arrived. Now see again we will come into this vicious loop. Is your queue empty? No your queue is not empty. There are now two people in your queue. There was one in your queue earlier. Now two people have come to your queue. Papa and uncle. Papa and uncle. Coincidentally see what are these papa and uncle? There are people of this level. There are people of this level. So we had said that when you calculate the level size, then all the people should be there in that level, why does it keep everyone? So see the work of level zero is done. But how many people should have been in Level One? two people father and"
+    },
+    {
+      "start_time": 1318.48,
+      "end_time": 1351.59,
+      "text": "चाचा। क्या आपके क्यू में है पापा और चाचा? हां आपके क्यू में है पापा और चाचा। तो ऐसे करके ये क्यों काम करता है? और एक साइकिल देखिए और क्लियर हो जाएगा। अब जब आप लेवल साइज बनाते हैं, अब जब आप लेवल साइज बनाते हैं तो क्या आएगा यहां पे? टू। वन नहीं। अब पापा और चाचा है तो लेवल साइज क्या हो गया? टू। अब क्योंकि इस लेवल में दो लोग होने चाहिए थे तो आप कितने साइज का टेंपरेरी एरे बनाएंगे? दो साइज का। तो आपका टीएमपी क्या बन गया? दो साइज का एक एरे बन गया। आपका टीएमपी एक दो साइज का एरे है। और आपके आपका टीएमपी कितने साइज का एरे है? दो साइज का एरे है। अब हम लोग कितनी बार इटरेट करेंगे? लेवल साइज माइनस",
+      "source": "caption",
+      "english_text": "Uncle. Are papa and uncle in your queue? Yes, father and uncle are in your queue. So why does it work this way? And see one cycle and it will be clear. Now when you create the level size, now when you create the level size, what will come here? To. Not a forest. Now that there is father and uncle, what is the level size? To. Now since there were to be two people in this level, what size of temporary array would you create? Of two sizes. So what became your TMP? An array of two sizes was formed. Your tmp is a two size array. And what size array is your TMP? There are two sizes of array. Now how many times will we iterate? level size minus"
+    },
+    {
+      "start_time": 1351.6,
+      "end_time": 1385.909,
+      "text": "माइनस लेवल साइज माइनस माइनस मतलब टू माइनस माइनस मतलब दो दो बार दो बार ये काम करेंगे ये वाला वाइल लूप कितनी बार चलेगा अब दो बार चलेगा क्योंकि इस लेवल में दो लोग हैं पापा और चाचा हैं ठीक बात है अब क्या होगा न t = टू अब चलाइए दो बार चलाते हैं आइए सबसे पहले नोट t = q डॉट फ्रंट q डॉट फ्रंट मतलब फ्रंट में कौन बैठा है पापा फ्रंट में पापा बैठे हैं तो आइए t को अपडेट करके क्या लिख दें यहां पे अरे t टी को अपडेट करके क्या लिख दें? पापा, टी को अपडेट करके लिख दिए पापा। वेरी गुड। q डॉट",
+      "source": "caption",
+      "english_text": "Minus Level Size Minus Minus means Two Minus Minus means Two Twice Twice This will work How many times will this while loop run Now it will run twice because there are two people in this level Papa and Uncle Okay now what will happen t = two Now let's run it twice Let's first note t = q dot front q dot front means Who is sitting in the front Papa Papa is sitting in the front So let's update t What should we write here? Hey, what should you write after updating T? Papa, please update the letter and write, Papa. very good. q dot"
+    },
+    {
+      "start_time": 1385.919,
+      "end_time": 1416.63,
+      "text": "पॉप। q डॉट पॉप मतलब कहां से पॉप होगा? फ्रंट से पॉप होगा। फ्रंट में कौन है? हां ये पापा इसको हटा दो। इसको हटा दो। ठीक है? वेरी गुड हटा दिए। हटा दिए। अब अब क्या करेंगे? टीएमपी डॉट पुशबैक टी का डेटा। मतलब पापा का जो भी डेटा है उसको टीएमपी में पुश बैक। तो जस्ट फॉर अंडरस्टैंडिंग टीएमपी में आप पापा पुशबैक [हंसी] कर दिए। वेरी गुड। अब सेम काम अगर पापा का लेफ्ट चाइल्ड नॉट इक्वल टू नल है। अगर पापा का लेफ्ट चाइल्ड नॉट इक्वल टू नल है तो उसको क्यू में पुश करो। लेकिन क्या आपको पापा का लेफ्ट चाइल्ड दिख रहा है?",
+      "source": "caption",
+      "english_text": "Pop. q dot pop means where will it pop from? Will pop from the front. Who is in the front? Yes, papa, remove it. Remove this. Ok? Very good removed. Removed. What will we do now? Data from TMP Dot Pushback T. Meaning whatever data Papa has, push it back into TMP. So in Just for Understanding TMP you did dad pushback [laughs]. very good. Now same thing if papa's left child is not equal to null. If papa's left child is not equal to null then push it to the queue. But do you see Papa's left child?"
+    },
+    {
+      "start_time": 1416.64,
+      "end_time": 1451.35,
+      "text": "नहीं नहीं दिख रहा है। नहीं दिख रहा है। कोई बात नहीं। कोई बात नहीं। पापा का राइट चाइल्ड दिख रहा है? हां। पापा का राइट चाइल्ड दिख रहा है। क्या दिख रहा है? प्रत्युष। क्या करना है? q डॉट पुश प्रत्युष। मतलब q डॉट पुश। पुश कहां से होगा? बैक से। तो प्रत्युष पुश हो गया। प्रत्युष पुश हो गया। यह देखिए। प्रत्युष क्या हो गया? पुश हो गया। ठीक है? पुश हो गया। वेरी गुड। अभी कितने बार ये चला है? ये वाला वाइल लूप कितनी बार? एक बार। पापा के लिए चला था। दो बार चलाना है। क्योंकि ये कितनी बार चलता है? लेवल साइज। उस लेवल में जितने लोग हैं उनके लिए ये चलेगा। एक और बार चलाओ। सेम काम करो। t = q डॉट",
+      "source": "caption",
+      "english_text": "No, it is not visible. not visible. No problem. No problem. Papa's right child is visible? Yes. Papa's right child is visible. What is visible? Pratyush. What is the plan? q dot push pratyush. Meaning q dot push. Where will the push come from? From the back. So Pratyush got pushed. Pratyush got pushed. Look at this. Pratyush what happened? Pushed. Ok? Pushed. very good. How many times has this happened now? How many times does this while loop? Once. Had gone for papa. Have to run it twice. Because how many times does this happen? Level size. This will work for all the people in that level. Stir one more time. Do the same work. t = q dot"
+    },
+    {
+      "start_time": 1451.36,
+      "end_time": 1486.07,
+      "text": "फ्रंट। फ्रंट में कौन है? चाचा। कौन है फ्रंट में? चाचा। टी क्या हो जाएगा? चाचा। टी क्या हो जाएगा? चाचा। और q डॉट पॉप। q डॉट पॉप। पॉप कहां से होगा? फ्रंट से। चाचा को हटा दो। चाचा को हटा दो। चाचा को हटा दो। वेरी गुड। टीएमपी डॉट पुश बैक टी का डाटा। मतलब टीएमपी में चाचा का जो भी डाटा है तो हम चाचा ही पुश कर देते हैं। हम चाचा ही पुश कर देते हैं। हम चाचा पुश कर देते हैं। वेरी गुड। टीएमपी में हो गया चाचा पुश। अब क्या चाचा का लेफ्ट चाइल्ड नॉट इक्वल टू नल है। तो हां, चाचा का लेफ्ट चाइल्ड नॉट इक्वल टू नल है। चाचा का",
+      "source": "caption",
+      "english_text": "Front. Who is in the front? Uncle. Who is in the front? Uncle. t What will happen? Uncle. t What will happen? Uncle. and q dot pop. q dot pop. Where will the pop come from? From the front. Remove uncle. Remove uncle. Remove uncle. very good. Data from TMP.push back tee. Meaning, whatever data is there in TMP, we push it only to uncle. We uncle only pushes. We push uncle. very good. Uncle got pushed in TMP. Now is uncle's left child not equal to null? So yes, uncle's left child is not equal to null. uncle's"
+    },
+    {
+      "start_time": 1486.08,
+      "end_time": 1512.87,
+      "text": "लेफ्ट चाइल्ड है। चाचा का लेफ्ट साइड है। उसको क्यू में पुश कर दो। उसको क्यू में पुश कर दो। किसको? मोहित बेटे को। कहां पुश कर दो? बैक में। मोहित बैठे हो कहां पुश कर दो? बैक में। बैक में। यस। क्या चाचा का राइट चाइल्ड है? हां, चाचा का राइट चाइल्ड भी है। सुमन कहां पुश कर दो? बैक के साइड इसको पुश कर दो। सुमन को कहां पुश कर दें? बैक के साइड पुश कर दिए। बैक को। अब देखिए आपका क्यों ऐसा लग रहा है? काम हो गया। चाचा हट भी चुके हैं। हो गया।",
+      "source": "caption",
+      "english_text": "Left child. Uncle's left side. Push it into the queue. Push it into the queue. Whom? To Mohit son. Where to push? In the back. Mohit, where are you sitting? In the back. In the back. Yes. Is uncle's right child? Yes, he is also uncle's right child. Suman where to push? Push it towards the back. Where should we push Suman? Pushed towards the back. To the back. Now see why you feel like this? The work is over. Uncle has also moved away. Done."
+    },
+    {
+      "start_time": 1512.88,
+      "end_time": 1546.31,
+      "text": "क्या ये लेवल साइज वाला लूप दो बार चल चुका? हां। दो बार चल चुका। पापा के लिए चला। चाचा के लिए चला। वेरी गुड। आपके टीएमपी में क्या स्टोर हो गया? देखिए पापा और चाचा उस लेवल पे इस लेवल पे हम लोग इस लेवल पे खेल रहे थे। पापा और चाचा दोनों इसमें स्टोर हो गए। कहां से कहां? लेफ्ट से राइट। क्या करेंगे? रेस्ट डॉट पुश बैक टीएमपी। तो रेस्ट में एक और चीज़ क्या आ गई अब? पापा और चाचा भी आ गए। पापा और चाचा वाला एरे इसमें आ गया। सिमिलरली खत्म। अब ये किसका लूप है? क्यू एम्प्टी का। क्या क्यू एम्प्टी है? नहीं। क्यू एम्प्टी नहीं है। क्यू में तीन लोग और हैं। और",
+      "source": "caption",
+      "english_text": "Has this level sized loop run twice? Yes. It has been done twice. Went for papa. Went for uncle. very good. What got stored in your TMP? See, father and uncle, we were playing at that level. Both father and uncle got stored in it. From where to where? Left to right. What to do? Rest dot push back tmp. So what else has come in the rest now? Papa and uncle also came. The array of father and uncle came into this. Finished similarly. Now whose loop is this? Of queue empty. Is the queue empty? No. Q is not empty. There are three more people in the queue. and"
+    },
+    {
+      "start_time": 1546.32,
+      "end_time": 1576.23,
+      "text": "कोइंसिडेंटली इस क्यू में तीन लोग कौन हैं? अगले लेवल के सारे लोग आपको इस क्यू में मिलेंगे। अगले लेवल के सारे लोग आपको इस क्यू में मिलेंगे। इसीलिए इसीलिए ये जो लेवल साइज है ना उस लेवल में कितने लोग हैं प्रोसेस करने के लिए? उस लेवल में कितने लोग हैं प्रोसेस करने के लिए? ये आपको ये बताता है। सेम काम दोबारा कीजिए। सेम काम दोबारा कीजिए। लेवल साइज निकालिए। कितना है क्यू का साइज? तीन तीन। मतलब इस लेवल में जिस लेवल पे हम लोग अभी हैं उसमें कितने लोग हैं प्रोसेस करने के लिए?",
+      "source": "caption",
+      "english_text": "Coincidentally who are the three people in this queue? You will find all the people from the next level in this queue. You will find all the people from the next level in this queue. That's why this is the level size, how many people are there in that level to process? How many people are there in that level to process? This tells you this. Do the same thing again. Do the same thing again. Find out the level size. What is the size of the queue? Three three. Meaning, in this level at which we are currently, how many people are there to process?"
+    },
+    {
+      "start_time": 1576.24,
+      "end_time": 1602.95,
+      "text": "तीन लोग। तीन लोग हैं। कौन-कौन? प्रत्युष, मोहित, सुमन सारे क्यू में हैं। वेरी गुड। वेक्टर इन टीएमपी। इस लेवल में अगर तीन लोग हैं तो कितने साइज का एरे बनेगा? तीन साइज का एरे बनेगा। तो टीएमपी बन गया। कितने साइज का? तीन साइज का। सेम काम कीजिए। लेवल साइज माइनस माइनस मतलब ये कितने? तीन बार ये लूप चलेगा। तीन बार ये लूप चलेगा। आइए चलाइए। सबसे पहली बार चलाइए। t = q डॉट फ्रंट। कौन सा आदमी है फ्रंट पे? कौन सा आदमी है फ्रंट पे?",
+      "source": "caption",
+      "english_text": "Three people. There are three people. Who all? Pratyush, Mohit, Suman are all in queue. very good. Vector in tmp. If there are three people in this level, then what size array will be formed? An array of three sizes will be formed. So TMP was formed. What size? Of three sizes. Do the same work. Level size minus minus means how many? This loop will run three times. This loop will run three times. Let's play. Run it for the first time. t = q dot front. Which man is on the front? Which man is on the front?"
+    },
+    {
+      "start_time": 1602.96,
+      "end_time": 1636.549,
+      "text": "प्रत्युष भाई फ्रंट पे है। वेरी गुड। टी क्या बन गया? टी क्या बन गया? प्रत्युष टी क्या बन गया? प्रत्युष और q डॉट पॉप पॉप मतलब फ्रंट में जो भी है हटा दो। फ्रंट में जो भी है हटा दो। फ्रंट में कौन है? प्रत्युष। प्रत्युष को खाली कर दो। प्रत्युष खाली हो गया। वेरी गुड। अब क्या करना है? टीएमपी डॉट पुशबैक टी का डाटा। टीएमपी डॉट पुशबैक टी का डेटा। तो टीएमपी में प्रत्युष का डाटा। तो टीएमपी में हम प्रत्युष घुसा देते हैं। टीएमपी में हम प्रत्युष घुसा देते हैं। वेरी गुड। अब क्या प्रत्युष का कोई लेफ्ट साइड है? है तो क्या आपको प्रत्युष का यहां पे लेफ्ट",
+      "source": "caption",
+      "english_text": "Pratyush Bhai is on the front. very good. What did T become? What did T become? What has become of Pratyush T? Pratyush and q dot pop pop means remove whatever is in front. Remove whatever is in the front. Who is in the front? Pratyush. Free up Pratyush. Pratyush went blank. very good. What to do now? Data from TMP Dot Pushback T. Data from TMP Dot Pushback T. So Pratyush's data in TMP. So we insert Pratyush in TMP. We insert Pratyush in TMP. very good. Now does Pratyush have any left side? So do you have Pratyush's left here?"
+    },
+    {
+      "start_time": 1636.559,
+      "end_time": 1663.11,
+      "text": "चाइल्ड दिख रहा है? नहीं दिख रहा है। नहीं दिख रहा है। कोई दिक्कत नहीं है। क्या आपको प्रत्युष का राइट चाइल्ड दिख रहा है? नहीं नहीं दिख रहा है। नहीं दिख रहा है। कोई दिक्कत नहीं है। तो प्रत्युष डिलीट हुआ लेकिन प्रत्युष के कारण कोई पुश नहीं हुआ। क्योंकि प्रत्युष के अगले लेवल में कोई है ही नहीं। प्रत्युष का कोई बच्चा है ही नहीं। तो नहीं हुआ पुश। कोई बात नहीं। अभी ये कितनी बार चला? लेवल साइज वाला। एक बार। एक तीन बार चलाना है। दूसरी बार चलाओ। टी क्या हो जाएगा? क्यू का फ्रंट। क्यू के फ्रंट में अब कौन है? मोहित। मोहित मोहित। तो टी क्या बन गया आपका?",
+      "source": "caption",
+      "english_text": "Can you see the child? not visible. not visible. There is no problem. Do you see Pratyush's right child? No, it is not visible. not visible. There is no problem. So Pratyush got deleted but there was no push because of Pratyush. Because there is no one in the next level of Pratyush. Pratyush does not have any child. So the push did not happen. No problem. How many times has this happened now? Level sized one. Once. Have to run it one three times. Stir a second time. t What will happen? Front of Q. Who is in front of Q now? Bewitched. Mohit Mohit. So what has become of you?"
+    },
+    {
+      "start_time": 1663.12,
+      "end_time": 1696.95,
+      "text": "मोहित। टी क्या बन गया? मोहित और q डॉट पॉप। q डॉट पॉप कहां से पॉप होगा? फ्रंट से। फ्रंट में जो भी है पॉप कर दो। मोहित को पॉप कर दो। वेरी गुड। मोहित को पॉप करने के बाद टीएमपी डॉट पुश बैक टी का डेटा। तो टी में जो भी है मोहित का डेटा। तो हम मोहित को पुश कर देते हैं। जस्ट फॉर सिंपलीसिटी सेक। चलिए सेम काम। क्या मोहित का लेफ्ट चाइल्ड आपको दिख रहा है? नहीं दिख रहा है। मोहित का कोई लेफ्ट चाइल्ड है ही नहीं। मत पुश करो। मोहित का राइट चाइल्ड दिख रहा है? नहीं। नहीं दिख रहा है तो मत पुश करो। कुछ नहीं हुआ। मोहित डिलीट हो गया। कुछ पुश नहीं हुआ। कोई बात नहीं।",
+      "source": "caption",
+      "english_text": "Mohit. What did T become? Mohit and q dot pop. q Where will the dot pop from? From the front. Pop whatever is in the front. Pop Mohit. very good. Data of tmp dot push back t after popping mohit. So whatever is Mohit's data in T. So we push Mohit. Just for simplicity sake. Let's do the same thing. Can you see Mohit's left child? not visible. Mohit does not have any left child. Don't push. Mohit's right child is visible? No. If you can't see it, don't push. Nothing happened. Mohit got deleted. Nothing was pushed. No problem."
+    },
+    {
+      "start_time": 1696.96,
+      "end_time": 1723.75,
+      "text": "लेवल साइज कितनी था? तीन। कितनी बार चला चुके हैं? दो बार। तीसरी बार भी चलाओ। तीसरी बार भी चलाओ। उस लेवल में जितने लोग हैं उतनी बार ये लेवल साइज का लूप चलता है। तीसरी बार चलाए। सेम काम कीजिए। t = q डॉट फ्रंट। कौन सा आदमी है फ्रंट में? सुमन। सुमन है फ्रंट में। तो टी क्या बन गया? टी अब बन गया सुमन। ठीक है? q डॉट पॉप। फ्रंट से पॉप करिए। फ्रंट से पॉप करिए। क्या दिख रहा है फ्रंट में? पॉप पॉप पॉप क्यू खाली हो गया आपका।",
+      "source": "caption",
+      "english_text": "What was the level size? Three. How many times have you run it? twice. Stir for the third time also. Stir for the third time also. This level size loop runs as many times as there are people in that level. Run for the third time. Do the same work. t = q dot front. Which man is in the front? flower. Suman is in the front. So what became of T? T now becomes Suman. Ok? q dot pop. Pop from the front. Pop from the front. What is visible in the front? Pop pop pop cue yours is empty."
+    },
+    {
+      "start_time": 1723.76,
+      "end_time": 1749.99,
+      "text": "अब क्या करना है? टीएमपी डॉट पुश बैक सुमन। टीएमपी डॉट पुश बैक सुमन तो सुमन पुश हो गई। वेरी गुड। क्या सुमन का आपको लेफ्ट साइड दिख रहा है? नहीं नहीं दिख रहा है। तो नहीं पुश करेंगे। क्या सुमन का राइट चाइल्ड दिख रहा है? नहीं नहीं दिख रहा है। नहीं पुश करेंगे। अब सुमन भी पॉप हो गई। कुछ पुश नहीं हुआ। अब हो गया। ये क्या तीन बार चल चुका है? हां। तीन बार चल चुका है। याद कीजिए। कितनी बार? प्रत्युष के लिए चला। मोहित के लिए चला। सुमन के लिए चला। आपका टीएमपी तैयार है। खत्म हुआ।",
+      "source": "caption",
+      "english_text": "What to do now? Tmp dot push back suman. TMP Dot Push Back Suman So Suman got pushed. very good. Can you see Suman's left side? No, it is not visible. So will not push. Is Suman's right child visible? No, it is not visible. Will not push. Now Suman also popped up. Nothing was pushed. Now its done. Has this happened three times already? Yes. It has been done three times. Remember. how often? Went for Pratyush. Went for Mohit. Went for Suman. Your TMP is ready. has over."
+    },
+    {
+      "start_time": 1750.0,
+      "end_time": 1784.95,
+      "text": "रेस्ट डॉट पुशबैक टीएमपी टीएमपी में क्या है ये तीनों तो आपके रेस्ट में एक और एरे आ गया जिसमें प्रत्युष है मोहित है और सुमन भी है और सुमन एक और एरे आप में पुश हो गया अब हम लोग इसमें वापस आए क्या आपका क्यू खाली हो चुका है हां आपका क्यू खाली हो चुका है देख लीजिए क्यू में कुछ नहीं है जब क्यू में कुछ नहीं है इसका मतलब क्या है कि फैमिली के सारे लेवल्स खत्म हो चुके हैं फैमिली में कितने लेवल्स थे तीन सबसे पहले दादाजी का जनरेशन फिर पापा और चाचा चाचा का जनरेशन फिर प्रत्युष मोहित और सुमन का जनरेशन तो क्या हम लोग तीनों कवर कर लिए? हां हम लोग तीनों कवर कर लिए।",
+      "source": "caption",
+      "english_text": "Rest Dot Pushback TMP What are these three in TMP? So, another array has come in your rest in which Pratyush is Mohit and Suman is also there and Suman another array has been pushed in you. Now we come back to it. Is your queue empty? Yes, your queue is empty. See, there is nothing in the queue. When there is nothing in the queue, what does it mean that all the levels of the family are over? How many levels were there in the family, first of all there are three. Grandfather's generation, then father's and uncle's generation, then Pratyush Mohit and Suman's generation, so have we covered all three? Yes, we covered all three."
+    },
+    {
+      "start_time": 1784.96,
+      "end_time": 1811.75,
+      "text": "अब कोई जनरेशन बची नहीं है। तो काम खत्म हो गया है। लास्ट में क्या करेंगे? यहां पे रिटर्न रेस रिटर्न रेस। रेस में देखिए क्या है? सबसे पहले दादाजी का जनरेशन एल जीरो। फिर पापा और चाचा एल वन। लास्ट में प्रत्युष मोहित सुमन का एल टू। तो आप देख रहे हैं क्या हो रहा है? कैसे हुआ? ये ड्राई रन करके समझाना बहुत जरूरी था क्योंकि ये एल्गोरिदम नहीं सोच पाएंगे। ये एल्गोरिदम बेस एल्गोरिदम है। कोई भी लेवल ऑर्डर का प्रॉब्लम इसी को फॉलो करता है।",
+      "source": "caption",
+      "english_text": "There is no generation left now. So the work is finished. What will you do in the end? Here return race return race. See what's in the race? First up is Grandfather's Generation L Zero. Then papa and uncle l one. Last in Pratyush Mohit Suman's L2. So you see what's happening? How did it happen? It was very important to explain by doing this dry run because these algorithms will not be able to think. This algorithm is the base algorithm. Any level order problem follows this."
+    },
+    {
+      "start_time": 1811.76,
+      "end_time": 1845.029,
+      "text": "तो सबसे पहले हम आपको फिर से समराइज़ कर देते हैं। सबसे पहले हम लोग क्या किए? क्यू बनाए। उसमें क्या पुश किए? दादाजी को। दादाजी मतलब रूट को। उसके बाद हम लोग लूप किए कब तक? जब तक ये क्यू खाली नहीं हुआ। उसके बाद वो वाले लेवल पे कितने लोग हैं वो हमको बताता है क्या? क्यू का साइज या तो लेवल साइज। उसमें जितने नहीं लोग होंगे उतनी बार आपको ये वाइल लेवल साइज माइनस माइनस करके चलाना है और एक टीएमपी बनाना है जिसमें उस लेवल साइज का एक एरे बनाना है। हर बार हर बार जब ये लेवल साइज का चलता है तो आप क्यू का फ्रंट देखेंगे।",
+      "source": "caption",
+      "english_text": "So first let's summarize for you again. What did we do first? Why make it? What did you push into it? To grandfather. Grandfather means the root. How long did we loop after that? Until this queue becomes empty. After that, does he tell us how many people are there at that level? Queue size or level size. You have to run this file minus the level size as many times as there are people in it and create a TMP in which an array of that level size has to be created. Every time this level size is moved you will see the front of the queue."
+    },
+    {
+      "start_time": 1845.039,
+      "end_time": 1876.789,
+      "text": "क्यू को पॉप करेंगे। उसके बाद वो जो भी आया है उसको अपने एरे में पुश करेंगे। अब यदि दादाजी का कोई लेफ्ट बेटा है तो उसको क्यू में पुश करिए। अगर कोई राइट बेटा है तो उनको पुश करिए। नहीं तो रहने दीजिए। जब ये पूरा काम हो जाएगा तो आप अपने रेस्ट में उस टीएमपी को ऐड कर सकते हैं। रेस्ट में उस टीएमपी को ऐड कर सकते हैं। तो इससे क्या होता है कि सबसे पहले आप दादाजी को देखते हैं। दादाजी दो लोगों को पुश करते हैं। किसको? पापा और चाचा को। अब आप पापा और चाचा को एक साथ देखते हैं। इन दोनों को देखते हैं। तो जब आप पापा को देखते हैं तो पापा क्यों में क्या पुश कर देते हैं?",
+      "source": "caption",
+      "english_text": "Will pop the cue. After that he will push whatever has come into his array. Now if grandfather has any left son then push him in the queue. If there is any right son then push him. Otherwise let it be. When all this work is done then you can add that tmp to your rest. You can add that TMP in REST. So what happens is that first of all you look at Grandfather. Grandfather pushes two people. Whom? To father and uncle. Now you see papa and uncle together. Let's look at these two. So when you see Papa, what does Papa push in the why?"
+    },
+    {
+      "start_time": 1876.799,
+      "end_time": 1910.789,
+      "text": "प्रत्युष को। और चाचा को देखते हैं तो चाचा क्या पुश कर देते हैं? मोहित और सुमन को। पापा और चाचा दोनों को देख लेते हैं। अगली बार क्योंकि अब तीन बच्चे हैं। अब तीन बच्चे हैं। अब जनरेशन 3 में तीन बच्चे हैं। तो अब तीनों को एक साथ देखते हैं। अब प्रत्युष किसको पुश करता है? किसी को नहीं। मोहित किसको पुश करता है? किसी को नहीं। सुमन किसको पुश करती है? किसी को नहीं। तो उसके बाद आपका क्यू खाली हो जाता है। अगर मान लीजिए मोहित का एक चाइल्ड होता। अगर मोहित का एक चाइल्ड होता तो मोहित भी किसी को पुश कर देता। मोहित मान लीजिए कि अरुण को यहां पुश कर देता। तो आप एक और बार चलाते। अब लास्ट लेवल में कितना",
+      "source": "caption",
+      "english_text": "To Pratyush. And when you see uncle, what does uncle push? To Mohit and Suman. Let's see both father and uncle. Next time because we have three kids now. Now there are three children. Now Generation 3 has three children. So now let's look at all three together. Now whom does Pratyush push? Not to anyone. Whom does Mohit push? Not to anyone. Whom does Suman push? Not to anyone. So after that your queue becomes empty. Suppose Mohit had a child. If Mohit had a child then Mohit would also have pushed someone. Suppose Mohit would have pushed Arun here. So you run one more time. Now how much in the last level"
+    },
+    {
+      "start_time": 1910.799,
+      "end_time": 1944.47,
+      "text": "बच्चा होता? केवल अरुण। केवल अरुण। क्योंकि मोहित का एक बच्चा था। तो इस जनरेशन में कितनी बार चलता? एक बार। तो अरुण कहां चलता? अरुण आपके एरे में आता। लेकिन अरुण पुश किसको करता? किसी को नहीं। तो फिर आपका क्यू खाली हो जाता। तो जब आपका क्यू खाली हो जाता है मतलब आप समझ जाते हैं कि पूरा जनरेशन खत्म हो चुका है। पूरा फैमिली ट्री खत्म हो जाता है। तो ये लेवल आर्डर ऐसे किया जाता है। लेवल आर्डर सेम रहेगा। हां, क्वेश्चन कहां बदलेगा? अब क्वेश्चन ऐसे बदलेगा। अब यहां पे आपको बोला गया कि भैया लेवल ऑर्डर ट्रेवर्सल करो और हर लेवल में हर लेवल में लेफ्ट टू राइट करो। हर लेवल में लेफ्ट टू राइट करो मतलब लेफ्ट टू राइट का क्या मतलब है मतलब",
+      "source": "caption",
+      "english_text": "Would have been a child? Only Arun. Only Arun. Because Mohit had a child. So how many times does this happen in this generation? Once. So where would Arun go? Arun comes in your array. But whom would Arun push? Not to anyone. Then your queue would become empty. So when your queue becomes empty, you understand that the entire generation is over. The entire family tree ends. So this level order is done like this. Level order will remain the same. Yes, where will the question change? Now the question will change like this. Now here you were told that brother, do level order traversal and do left to right in every level. Do left to right in every level, meaning, what does left to right mean?"
+    },
+    {
+      "start_time": 1944.48,
+      "end_time": 1979.19,
+      "text": "पहले लेवल में तो एक ही है तो दादाजी कर दो दूसरे लेवल में दो लोग हैं पापा और चाचा जी इनको लेफ्ट टू राइट लिखो पापा पहले चाचा बाद में तीसरे लेवल में तीन लोग हैं तो इनको भी लेफ्ट टू राइट लिखो प्रत्युष मोहित सुमन तो ये तो हो गया क्वेश्चन इसको क्या बोल सकता है हर लेवल में राइट टू लेफ्ट लिखो हर लेवल में राइट टू लेफ्ट लिखो मतलब लेवल वन तो सेम रहेगा दादाजी लेवल टू में चाचा और पापा लिखो राइट टू लेफ्ट लेवल थ्री में सुमन मोहित प्रत्युष लिखो राइट टू टू लेफ्ट लिखो। ये एक तरीके का हो गया। एक और क्वेश्चन हो सकता है। जिगजैग जिगजैग का मतलब जिगजैग का मतलब कि लेवल ज़ीरो में तो नॉर्मल लिखो",
+      "source": "caption",
+      "english_text": "There is only one person in the first level, so make it Dadaji. There are two people in the second level, Papa and Uncle, write them left to right. Papa, first uncle, then in the third level there are three people, then write them left to right. Pratyush Mohit Suman. So this is a question. What can we say to this? Write right to left in every level. Write right to left in every level, meaning level one will remain the same. Grandfather, write Chacha and Papa in level two. Write Suman Mohit Pratyush in level three, write right to left. It became one of a kind. There may be another question. Zigzag Zigzag means Zigzag means write normal in level zero."
+    },
+    {
+      "start_time": 1979.2,
+      "end_time": 2012.149,
+      "text": "लेफ्ट टू राइट। तो लेवल ज़ीरो में तो दादाजी ही अकेले हैं। तो लेफ्ट टू राइट का मतलब नहीं है। ये हो गया। लेवल वन में ये बोलेगा कि उल्टा कर दो। राइट टू लेफ्ट लिखो। मतलब लेवल में चाचा और पापा लिखो। चाचा और पापा लिखो। ये लिखो। लेवल थ्री में लेवल टू में फिर उल्टा कर दो। लेफ्ट टू राइट पे आ जाओ। अब प्रत्युष, मोहित और सुमन लिखो। मतलब लेवल ज़ीरो में दादाजी लेफ्ट टू राइट। लेवल वन में उल्टा राइट टू लेफ्ट मतलब चाचा और पापा तो ये हो गया राइट टू लेफ्ट लेवल टू में फिर उल्टा लेफ्ट टू राइट पे आ जाओ प्रत्युष मोहित सुमन तो ये क्वेश्चन है सच में हम बना के नहीं बोल रहे हैं ये जिगजैग ऑर्डर का क्वेश्चन है तो जिगजैग ऑर्डर का क्वेश्चन",
+      "source": "caption",
+      "english_text": "Left to right. So grandfather is alone in level zero. So left to right doesn't make sense. that'll be. In level one it will say to turn it upside down. Write right to left. Meaning write uncle and papa in the level. Write uncle and papa. Write this. In level three, turn it in level two and then reverse it. Come on left to right. Now write Pratyush, Mohit and Suman. Means Grandfather left to right in level zero. In level one, reverse right to left means uncle and papa, then it became right to left in level two, then reverse left to right, come to Pratyush Mohit Suman, so this is a question, really, we are not saying this in vain, this is a question of zigzag order, so a question of zigzag order."
+    },
+    {
+      "start_time": 2012.159,
+      "end_time": 2043.909,
+      "text": "हम आपको होमवर्क में दे रहे हैं बहुत कम कोड चेंजिस करने पड़ेंगे जिगज़ैग होमवर्क में दे दें कि बना ही दें। अ चलिए बना ही देते हैं। ये हम उम्मीद करते हैं कि ये लेवल ऑर्डर तो आपको समझ में आया होगा। तो ये रहा लेवल ऑर्डर का कोड और ऐसे करके लेवल ऑर्डर होता है। सब सेम ही रहता है। अब जिगजैग का हम आपको बताते हैं। जिगजैग का क्या मतलब होता है? जिगजैग का क्या मतलब होता है? हम आपको बताते हैं। जिगजैग का मतलब ये होता है कि अब मान लीजिए कि ऐसे हैं दादाजी पापा।",
+      "source": "caption",
+      "english_text": "We are giving you in homework, you will have to make very few code changes, give it in Zigzag homework or just make it. Ah, let's make it. We hope that you have understood this level order. So here is the code of level order and this is how level order is done. Everything remains the same. Now let us tell you about Zigzag. What does zigzag mean? What does zigzag mean? We tell you. Zigzag means that now let us assume that Grandpa and Papa are like this."
+    },
+    {
+      "start_time": 2043.919,
+      "end_time": 2072.47,
+      "text": "चाचा पापा का एक राइट चाइल्ड है प्रत्युष। चाचा का भी एक राइट साइड है मोहित। ठीक है? प्रत्युष का एक लेफ्ट है सुमन। मतलब प्रत्युष की बेटी है और मोहित का एक बेटा है जिसका नाम है रोहन। ठीक है? ये आपका फैमिली ट्री है। आपको क्या बोला गया है? जिगजैग लेवल ऑर्डर करो। मतलब इसका एरे ऐसा बनाओ कि देखो पहले लेवल में तो दादाजी तो उसमें तो कोई डिबेट ही नहीं है। दादाजी तो अकेले हैं तो दादाजी रहेंगे। अच्छा।",
+      "source": "caption",
+      "english_text": "Pratyush is the right child of uncle and father. Uncle also has a right side Mohit. Ok? Suman is one left of Pratyush. Meaning, Pratyush has a daughter and Mohit has a son named Rohan. Ok? This is your family tree. What have you been told? Order Zigzag Level. Meaning, make its array such that look, Grandfather, in the first level there is no debate in it. If grandfather is alone, he will remain grandfather. Good."
+    },
+    {
+      "start_time": 2072.48,
+      "end_time": 2106.47,
+      "text": "सेकंड लेवल में अब इसको तुम राइट टू लेफ्ट लिखो। मतलब सेकंड लेवल में राइट टू लेफ्ट मतलब चाचा और पापा होना चाहिए। चाचा और पापा होना चाहिए। अच्छा। थर्ड लेवल में अगेन लेफ्ट टू राइट पे आ जाओ। फिर से अल्टरनेट कर दो। मतलब इसमें प्रत्युष और मोहित होना चाहिए। प्रत्युष और मोहित होना चाहिए। अगले लेवल में वापस राइट टू लेफ्ट आ जाओ। मतलब अल्टरनेट करते रहो। लेफ्ट टू राइट, राइट टू लेफ्ट। लेफ्ट टू राइट, राइट टू लेफ्ट। अगले लेवल में क्योंकि राइट टू लेफ्ट लिखना है तो रोहन और सुमन करो। रोहन और सुमन करो। ठीक है? तो ये क्या होगा? ये किसका है? L0। ये किसका है? L1 लेकिन उल्टा। राइट टू लेफ्ट। ये किसका है? L2।",
+      "source": "caption",
+      "english_text": "Now write it right to left in the second level. Meaning in the second level there should be right to left i.e. uncle and papa. Must be uncle and father. Good. Come to the third level again from left to right. Alternate again. Meaning there should be Pratyush and Mohit in it. Must be Pratyush and Mohit. Come back right to left in the next level. Meaning keep alternating. Left to right, right to left. Left to right, right to left. In the next level because if you have to write right to left then do Rohan and Suman. Do Rohan and Suman. Ok? What would it be then? Whose is this? L0. Whose is this? L1 but in reverse. Right to left. Whose is this? L2."
+    },
+    {
+      "start_time": 2106.48,
+      "end_time": 2141.349,
+      "text": "लेफ्ट टू राइट। ये किसका है? L3 मतलब राइट टू लेफ्ट। अच्छा ऐसा करो। सेम चीज़ करनी है। सेम चीज़ करनी है। एक चीज़ बदलेगी। देखिए एक चीज़ क्या बदलेगी? हम एक वेरिएबल ले लेंगे। हम एक वेरिएबल ले लेंगे। देखिए सब कुछ सेम सब पूरा कोड सेम। पूरा एक-एक एग्जैक्ट लाइन लाइन सेम रहेगा। लेकिन हम एक ले लेंगे। आपको शुरू कैसे करना है? फर्स्ट लेवल में क्या करना है? फर्स्ट लेवल में बोला गया है कि स्टार्टिंग फ्रॉम लेफ्ट टू राइट। मतलब फर्स्ट लेवल में तुम लेफ्ट टू राइट करो। उसके बाद तुम अल्टरनेट करते रहो। हम एक काम करेंगे ना। कि बुलियन एक लेफ्ट टू राइट कर देंगे। लेफ्ट टू राइट = 1 मतलब लेफ्ट टू राइट मतलब इस लेवल में",
+      "source": "caption",
+      "english_text": "Left to right. Whose is this? L3 means right to left. Well do this. Same thing has to be done. Same thing has to be done. One thing will change. See what one thing will change? We'll take a variable. We'll take a variable. See everything is same, complete code is same. Every exact line will remain the same. But we'll take one. How do you get started? What to do in the first level? In the first level it is said that starting from left to right. Meaning in the first level you do left to right. After that you keep alternating. We will do one thing, right? That will convert the bullion from left to right. Left to Right = 1 means Left to Right in this level."
+    },
+    {
+      "start_time": 2141.359,
+      "end_time": 2167.43,
+      "text": "हमको लेफ्ट टू राइट करना है वन। पहले में तो वही करना है। अच्छा सेम q डॉट पुश रूट। q डॉट पुश रूट। ठीक है? आइए q बना के दिखाते हैं। q बना के q बना के दिखाते हैं। ये बन गया q। तो शुरू में क्या पुश हो गया? दादाजी। शुरू में क्या पुश हो गया? दादाजी। यह आपका फ्रंट है और ये आपका बैक है। ठीक बात है। चलाते हैं। तो क्या अभी q एम्प्टी है? नहीं नहीं एम्प्टी है।",
+      "source": "caption",
+      "english_text": "We have to do left to right one. The same thing has to be done in the first place. Nice bean q dot push root. q dot push root. Ok? Let's make q and show it. Let's show by making q. This became q. So what was the initial push? grandfather Sir. What pushed you initially? grandfather Sir. This is your front and this is your back. That's right. Let's run. So is q empty now? No no it is empty."
+    },
+    {
+      "start_time": 2167.44,
+      "end_time": 2200.87,
+      "text": "आइए। तो सबसे पहले लेवल साइज क्या आया? q का साइज। तो लेवल साइज आया वन। अच्छा। एक टीएमपी भी बना लेते हैं। टीएमपी का एरे बन गया जिसका साइज है एक। इस लेवल में तो दादा जी है ना बस। अच्छा। अब हम लोग क्या करेंगे ना? दो इंडेक्स ले लेंगे। दो क्या ले लेंगे? इंडेक्स ले लेंगे। इंट फर्स्ट इंडेक्स इक्वल टू 0। अब ये इंडेक्स किसके लिए है? टीएमपी को भरना कहां से शुरू करना है? देखिए पता चलेगा। पता चलेगा इंट एक लास्ट इंडेक्स ले लेंगे जो कि होगा लेवल साइज़ -1 लेवल साइज़ -1 अच्छा सेम काम करेंगे लेकिन ये जो लाइन है ना जहां पे हम",
+      "source": "caption",
+      "english_text": "Come. So what came the level size in the first place? Size of q. So came level size one. Good. Let's also create a TMP. An array of TMP is created whose size is one. Grandfather is in this level, isn't he? Good. What will we do now? Will take two indexes. What will you take for two? Will take the index. Int first index equal to 0. Now who is this index for? Where to start filling TMP? See, you will know. You will know that int will take one last index which will be level size-1 level size-1 will work well but this is the line where we"
+    },
+    {
+      "start_time": 2200.88,
+      "end_time": 2226.55,
+      "text": "लोग टीएमपी डॉट पुश बैक ये वाला जो ग्रीन लाइन है अब ये क्या करता था ये ऑटोमेटिकली आपका लेफ्ट टू राइट ही करता था लेफ्ट टू राइट मतलब जब आप ये करते थे तो लेफ्ट टू राइट ही चलेगा ना हर कुछ लेफ्ट टू राइट ही चलेगा अच्छा तो इसमें हम लोग क्या देख लेंगे ना अंदर में जा के लेवल साइज वाले में कि अगर अगर लेफ्ट टू राइट है। अगर लेफ्ट टू राइट है इक्वल इक्वल टू वन है। अगर लेफ्ट टू राइट है तब तो सिंपल चलेगा।",
+      "source": "caption",
+      "english_text": "People, TMP dot push back, this one which is the green line, now what did it do, it used to do your left to right automatically, that is, when you used to do this, then only left to right will work, everything will work only left to right, so what will we see in it, right, after going inside the level sized one, if it is left to right. If left to right is equal is equal to one. If it is left to right then it will be simple."
+    },
+    {
+      "start_time": 2226.56,
+      "end_time": 2255.75,
+      "text": "टीएमपी डॉट पुश बैकक जो भी टी का डेटा मतलब ये तो नॉर्मल चलेगा। ये नॉर्मल चलेगा। लेकिन एल्स एल्स एल्स अगर राइट टू लेफ्ट करना है। राइट टू लेफ्ट करना है तो हम लोग क्या करेंगे? टीएमपी लास्ट इसका लास्ट इंडेक्स इज इक्वल टू T डॉट डेटा T डॉट डेटा एंड एंड एंड लास्ट माइनस माइनस एंड लास्ट माइनस माइनस इसको भी हम फर्स्ट पे ले जाते हैं। इसको भी पुश बैक नहीं करते हैं।",
+      "source": "caption",
+      "english_text": "Whatever TMP dot pushback data means, it will run normally. This will work normally. But if you have to do right then left. If we have to do right to left then what should we do? TMP last its last index is equal to T dot data T dot data end end end last minus minus and last minus minus this also we take it to the first pay. Don't push back on this either."
+    },
+    {
+      "start_time": 2255.76,
+      "end_time": 2290.71,
+      "text": "अगर लेफ्ट टू राइट वन है तो हम क्या करेंगे कि tmp फर्स्ट इक्वल टू t डॉट डेटा एंड फर्स्ट प्लस प्लस ये देखिए क्या हुआ ये देखिए क्या हुआ कि आपको लगेगा बाप रे क्या लिख दिए कुछ नहीं लिखे हैं कुछ नहीं लिखे हैं आपको बताते हैं उम्मीद करते हैं कि कोड में कोड में ये चेंजेस हैं हम आपको बताते हैं ड्राइव रन कैसे होगा ये सबसे शुरू में सबसे शुरू में हम अपना क्यू बना लेते हैं ठीक है अपना क्यू बना लेते हैं जिसमें दादाजी होंगे दादाजी होंगे ठीक है? सबसे पहले लेवल साइज क्या आएगा? वन आएगा। टीएमटी कितने साइज का",
+      "source": "caption",
+      "english_text": "If there is one left to right, then what we will do is that tmp first equal to t dot data and first plus plus see what happened, see what happened that you will think, what have you written, what have you written, some have not been written, some have not been written, let us tell you, let us hope that these are the changes in the code, let us tell you, how will the drive run, in the beginning, in the beginning, we create our queue, okay, let's create our queue in which grandfather will be grandfather, okay? What will be the level size first? The forest will come. What size is TMT?"
+    },
+    {
+      "start_time": 2290.72,
+      "end_time": 2319.51,
+      "text": "एरे बनेगा? एक साइज का एरे बनेगा। फर्स्ट फर्स्ट इंडेक्स मतलब ये टीएमटी को फर्स्ट इंडेक्स क्या होता है? किसी भी वेक्टर का ज़ीरो होता है। लास्ट इंडेक्स इस टीएमपी का लास्ट इंडेक्स कहां होगा? लेवल साइज - 1 क्योंकि कितने भी साइज का ये वेक्टर है तो उससे एक छोटा। तो लास्ट भी हो जाएगा इसका ज़ीरो। अच्छा। अब जब हम लोग भरेंगे, जब हम लोग इसमें भरेंगे, तो क्या होगा? ये कितने साइज आपका लेवल साइज कितना चलेगा? एक बार। आपका टी बन जाएगा दादाजी। आपका टी बन जाएगा दादाजी और आपके दादाजी यहां से उड़ जाएंगे। दादाजी यहां से उड़ गए। ठीक है?",
+      "source": "caption",
+      "english_text": "Will it become an array? An array of one size will be created. What does first index mean to TMT? Any vector has zero. Last Index Where will be the last index of this TMP? Level size - 1 because whatever size this vector is, it is one smaller than that. So the last one will also be zero. Good. Now when we fill it, what will happen? How many sizes is this, how much will your level size suffice? Once. Your tee will be made, Grandpa. Your tee will become grandpa and your grandpa will fly away from here. Grandfather flew away from here. Ok?"
+    },
+    {
+      "start_time": 2319.52,
+      "end_time": 2354.47,
+      "text": "अब लेफ्ट टू राइट अभी क्या है? अभी शुरू में शुरू में सबसे पहले लेवल में लेफ्ट टू राइट ट्रू है। लेफ्ट टू राइट ट्रू है या वन है? वन है ना? वन है। तो अगर वन है। अगर वन है तो सीधा वन है मतलब नॉर्मल भरना है। तो हम लोग क्या करेंगे? टीएमपी फर्स्ट, टीएमपी फर्स्ट इज इक्वल टू दादाजी। टीएमपी फर्स्ट इक्वल टू दादाजी और फर्स्ट प्लस प्लस फर्स्ट प्लस प्लस तो फर्स्ट क्या है? जीरो तो टीएमपी क्या बनेगा? दादाजी टीएमपी 0 = दादाजी और फर्स्ट हो गया। तो एक तो इसमें हो गया। तो आपके रेस्ट में सबसे पहला एरे स्टोर हुआ दादाजी। इसमें उतना क्लियर नहीं होगा क्योंकि ये तो एक ही है ना। अगले में",
+      "source": "caption",
+      "english_text": "Now what is left to right now? Right now, in the beginning, left to right is true in the first level. Is left to right true or one? Is it a forest? There is a forest. So if there is a forest. If it is forest then it is straight forest which means it has to be filled normally. So what will we do? TMP first, TMP first is equal to grandfather. TMP first equal to grandpa and first plus plus first plus plus so what is first? If zero then what will TMP become? Grandfather TMP 0 = Grandfather and first is done. So one thing is done in this. So the first array was stored in your REST, Grandfather. It will not be that clear because it is only one. in the next"
+    },
+    {
+      "start_time": 2354.48,
+      "end_time": 2387.829,
+      "text": "देखिए। लेकिन लेकिन अगले लेवल में अगले लेवल में आपको क्या करना है? अल्टरनेट। अभी तो लेफ्ट टू राइट वन था। मतलब लेफ्ट टू राइट करना था। अगले लेवल में आपको लेफ्ट टू राइट को जीरो करना पड़ेगा। तो जब हम लोग इस जगह जब ये लेवल साइज वाला लूप खत्म हो जाएगा। लेवल साइज वाला लूप जब खत्म हो जाएगा इसके बाद हम लोग क्या करेंगे? लेफ्ट टू राइट इज इक्वल टू 1 - लेफ्ट टू राइट। 1 - लेफ्ट टू राइट। इससे क्या होगा ना? लेफ्ट टू राइट स्वाप हो जाएगा। ये कैसे काम करता है? ये छोटा सा ट्रिक है। अगर मान लीजिए ये लेफ्ट टू राइट वन होता जो कि है। तो जब हम ये लिखते हैं",
+      "source": "caption",
+      "english_text": "Look. But but what do you have to do in the next level? Alternate. Right now it was left to right one. Meaning had to do left to right. In the next level you will have to zero left to right. So when we are here at this point, this level sized loop will end. What will we do after the level-sized loop ends? Left to Right is equal to 1 - Left to Right. 1 - Left to Right. What will happen from this, right? Left to right will be swapped. How does it work? This is a small trick. Suppose it was a left to right one, which it is. So when we write this"
+    },
+    {
+      "start_time": 2387.839,
+      "end_time": 2419.75,
+      "text": "ना लेफ्ट टू राइट इज़ इक्वल टू 1 - लेफ्ट टू राइट। तो लेफ्ट टू राइट क्या बन जाएगा आपका? लेफ्ट टू राइट क्या बन जाएगा आपका? 1 - 1 0 देखिए स्वाप हो गया। अगर ये लेफ्ट टू राइट पहले से ज़ीरो होता। अगर ये लेफ्ट टू राइट पहले से ज़ीरो होता और हम बोलते हैं कि लेफ्ट टू राइट इज़ इक्वल टू 1 - लेफ्ट टू राइट। तो आपका लेफ्ट टू राइट नया वाला क्या बन जाता? वन। क्योंकि 1 - 0 कितना होता है? वन। तो ये ऐसे स्वाइप किया जाता है। किसी भी बाइनरी चीज़ को ऐसे स्वाइप कर सकते हैं आप। अगर आप लिख दें लेफ्ट टू राइट इक्वल टू 1 - लेफ्ट टू राइट। तो अगर पहले वन था तो अब ज़ीरो हो जाएगा। पहले ज़ीरो था अब वन हो जाएगा। तो",
+      "source": "caption",
+      "english_text": "No left to right is equal to 1 - left to right. So what will become of you Left to Right? What will become of you Left to Right? 1 - 1 0 See the swap is done. If this left to right was already zero. If this left to right was already zero and we say that left to right is equal to 1 - left to right. So what would have become of your new left to right? Forest. Because how much is 1 - 0? Forest. So this is how it is swiped. You can swipe any binary thing like this. If you write left to right equal to 1 - left to right. So if earlier it was one then it will become zero now. Earlier it was zero, now it will become one. So"
+    },
+    {
+      "start_time": 2419.76,
+      "end_time": 2452.87,
+      "text": "ये स्वाइप हो गया। तो अगले बार अगले बार दादा जी के अगले लेवल में जब हम लोग आएंगे ना तो अब क्यू में क्या हो जाएगा? क्यू में क्या स्टोर होगा पहले? पापा और चाचा। क्योंकि हम लोग कर लेंगे क्योंकि हम लोग कर लेंगे। ये जस्ट हम आपको दिखा रहे हैं कि काम कैसे करेगा। अब आइए सेम काम करना है। आपका लेवल साइज क्या बना? टू। आपका लेवल साइज क्या बना? टू। आपका टीएमपी कितने साइज का एरे बनेगा? दो साइज का। क्योंकि दो लोग हैं ना? दो साइज का। ज़ीरो और वन। अच्छा। फर्स्ट तो ज़ीरो। लास्ट इज़ इक्वल टू लेवल साइज़ - 1। 2 - 1 क्या होता है? 1 2 - 1 क्या होता है? वन। ठीक है?",
+      "source": "caption",
+      "english_text": "It got swiped. So next time when we come to Dada ji's next level, what will happen next? What will be stored in the queue first? Papa and uncle. Because we will do it because we will do it. We are just showing you how this will work. Now let's do the same work. What is your level size? To. What is your level size? To. What size array will your TMP become? Of two sizes. Because there are two people, right? Of two sizes. Zero and one. Good. First, zero. Last is equal to level size - 1. What is 2 - 1? What is 1 2 - 1? Forest. Ok?"
+    },
+    {
+      "start_time": 2452.88,
+      "end_time": 2487.67,
+      "text": "आइए सबसे पहले अब इसको दो बार चलाना है लेवल साइज को। तो सबसे पहले टी में क्या स्टोर होगा? पापा। टी में क्या स्टोर होगा? पापा। और पापा को पॉप कर दो। अब अब हम लोग देखेंगे कि अगर लेफ्ट टू राइट वन है। अगर लेफ्ट टू राइट वन है तो अब लेफ्ट टू राइट वन नहीं है। अब लेफ्ट टू राइट ज़ीरो है। क्योंकि हम लोग अल्टरनेट करते हैं हर बार। लेफ्ट टू राइट वन पे तो ऐसा करते थे। लेकिन अगर लेफ्ट टू राइट ज़ीरो है तो हम लोग क्या करेंगे? टीएमपी का लास्ट इंडेक्स से भरना इसको शुरू करेंगे। लास्ट इंडेक्स इक्वल टू T डॉट डाटा मतलब क्या है लास्ट? वन मतलब टीएमपी के वन में डाल देंगे पापा और लास्ट को माइनस माइनस कर",
+      "source": "caption",
+      "english_text": "First of all, now we have to run it twice to change the level size. So what will be stored in T first of all? Father. What will be stored in T? Father. And pop papa. Now we will see if left to right is one. If there is one left to right then there is no longer one left to right. Now left to right is zero. Because we alternate every time. Used to do this on left to right one. But if left to right is zero then what will we do? We will start filling it from the last index of TMP. Last index equal to T dot data What does last mean? One means Papa, we will put it in the forest of TMP and we will put the last one in minus minus."
+    },
+    {
+      "start_time": 2487.68,
+      "end_time": 2520.63,
+      "text": "देंगे। लास्ट को माइनस माइनस कर देंगे। तो अब लास्ट क्या बन गया? लास्ट अब ज़ीरो बन गया। ठीक है? अब ये लेवल साइज़ टू था तो दो बार चलेगा। अब क्या? अब T क्या बनेगा? चाचा। T क्या बनेगा? चाचा। T क्या बन गया? चाचा। और चाचा यहां से उड़ गए। अगेन देखेंगे अगर लेफ्ट टू राइट वन है जो कि नहीं है। अब जीरो हो चुका है। लेफ्ट टू राइट जीरो का मतलब आपको राइट टू लेफ्ट भरना है। सेम काम करेंगे। टीएमपी के लास्ट में टी का डेटा भरेंगे। टीएमपी के लास्ट में टी का डेटा भरेंगे। लास्ट क्या बन गया है अब? ज़ीरो। तो टीएमपी के लास्ट में इसका डेटा भर दिए। और लास्ट को माइनस माइनस तो अब लास्ट आपका -1 बन गया। और आपका लेवल",
+      "source": "caption",
+      "english_text": "Will give. Will reduce the last one to minus. So what became the last thing now? Last now becomes zero. Ok? Now if this level was size two then it would last twice. what now? Now what will T become? Uncle. What will T become? Uncle. What has T become? Uncle. And uncle flew away from here. Again we will see if there is one left to right which it is not. Now it has become zero. Left to Right Zero means you have to fill from right to left. Beans will work. T's data will be filled in the last part of TMP. T's data will be filled in the last part of TMP. What has happened last now? Zero. So fill its data in the last part of TMP. And minus the last, so now the last becomes your -1. and your level"
+    },
+    {
+      "start_time": 2520.64,
+      "end_time": 2554.63,
+      "text": "साइज टू था तो ये खत्म हो गया। देखिए क्या एरे बना यहां पे? चाचा और पापा। पापा और चाचा नहीं चाचा और पापा। क्योंकि हम लोग एरे को लास्ट से भर रहे हैं। एरे को किस तरीके से आप भरते हैं? वही तो डिसाइड करता है ना कि लेफ्ट टू राइट कि राइट टू लेफ्ट। क्यू में तो सेम था। क्यू में पहले पापा थे, चाचा थे। अब अगर आप टीएमपी को शुरू से भरेंगे तो ऑब्वियसली पापा और चाचा आएंगे। अगर आप टीएमपी को लास्ट से भरना शुरू कर देंगे तो चाचा और पापा आ जाएंगे। तो ये बस एक ट्रिक है। ये बस एक क्या है? ट्रिक है कि आप टीएमपी को भर कैसे रहे हैं? उसका ट्रिक है। अगर आपका मन करता तो आप ये भी कर सकते थे कि नॉर्मल टीएमपी बना लीजिए और अगर वो वाला लेवल लेफ्ट टू राइट नहीं है,",
+      "source": "caption",
+      "english_text": "Was size two so it was over. See what happened here? Uncle and papa. Papa and uncle, not uncle and papa. Because we are filling the array from last. How do you fill the array? He is the one who decides, not left to right or right to left. There was beans in the queue. In Q, first there was father, there was uncle. Now if you fill the TMP from the beginning then obviously father and uncle will come. If you start filling the TMP from the last then uncle and papa will come. So this is just a trick. What is this bus one? The trick is how are you filling the TMP? That's his trick. If you feel like it, you could also make a normal TMP and if that level is not left to right,"
+    },
+    {
+      "start_time": 2554.64,
+      "end_time": 2588.39,
+      "text": "राइट टू लेफ्ट है तो टीएमपी को रिवर्स कर दीजिए। मतलब कि आप नॉर्मल जैसे पिछले में बनाए थे ना तो आप पापा और चाचा का ही बना लीजिए। और अगर आपको पता चलता है कि ये राइट टू लेफ्ट वाला है जो कि इस बुलियन से पता चल जाएगा। तो आप इसको रिवर्स कर दीजिए। तो ये चाचा और पापा बन जाएगा। लेकिन इसमें थोड़ा ज्यादा टाइम लगेगा। उतना अच्छा नहीं है। उससे अच्छा आप ये कर सकते हैं कि टीएमपी को भरिए। अगर लेफ्ट टू राइट इज इक्वल टू ट्रू है तो इसको फर्स्ट से भरिए। अगर लेफ्ट टू राइट इज इक्वल टू फॉल्स है तो इसको लास्ट से भरिए। इसमें कोई रॉकेट साइंस नहीं है। छोटा सा ट्रिक है। तो ऐसा ही होता है लेवल ऑर्डर का प्रॉब्लम। सेम प्रोग्राम होगा। सेम स्ट्रक्चर थोड़ी सी चीजें कैसे आप इसको भर",
+      "source": "caption",
+      "english_text": "If it is right to left then reverse the TMP. Meaning that you should make it as normal as you made it in the past, so you should make it for your father and uncle only. And if you find out that it is right to left, that will be known from this bullion. So you reverse it. So he will become uncle and father. But it will take a little more time. Not that good. You can do better than that by filling the TMP. If left to right is equal to true then fill it first. If left to right is equal to false then fill it last. There is no rocket science in this. There is a small trick. So this is how the problem of level order happens. Same program will happen. Same structure, few things, how you fill it"
+    },
+    {
+      "start_time": 2588.4,
+      "end_time": 2621.19,
+      "text": "रहे हैं? टीएमपी को आप कैसे भर रहे हैं? उसमें थोड़ा-थोड़ा थोड़ा-थोड़ा चेंजिस होगा। तो ये दोनों क्वेश्चन प्लीज जाके कीजिएगा। लेवल ऑर्डर इज़ द मोस्ट इंपॉर्टेंट कॉन्सेप्ट इन ट्रीज। और आगे जाके ग्राफ में बीएफएस पे भी इसका काम होता है। तो ये प्लीज इसको अच्छे से समझिए। अ नहीं समझ में आता है फिर देखिए लेकिन हमको नहीं लगता है कि किसी को नहीं समझ में आया होगा मेरे हिसाब से पूरा पसीना पसीना हो गया ड्राई रन देख के तो पक्का आपको समझ में आ रहा होगा कि हां ऐसा-सा होता है हर लेवल में ये होता है आप टीएमपी को किस तरीके से भरते हैं वो डिपेंड करता है क्वेश्चन टू क्वेश्चन लेफ्ट टू राइट ऐसे करिए हां मान ले क्वेश्चन रहता कि हर लेवल में राइट टू",
+      "source": "caption",
+      "english_text": "Are you? How are you filling the TMP? There will be slight changes in it. So please go and answer these two questions. Level Order Is the Most Important Concept in Trees. And going further, its work is also done on BFS in the graph. So please understand this well. A No, I understand, then see, but we don't think anyone would have understood. According to me, all the sweat has become sweat. After watching the dry run, you must be understanding that yes, something like this happens in every level. It depends on how you fill the TMP. It depends from question to question, left to right, do it like this. Yes, let's assume that there is a question to the right in every level."
+    },
+    {
+      "start_time": 2621.2,
+      "end_time": 2654.069,
+      "text": "लेफ्ट करना है तो ये जो लास्ट वाला है आप ये करते अब कोई चेक करने की जरूरत नहीं है हर लेवल में राइट टू लेफ्ट ही भरना है तो हर बार ऐसे ही भरिए हर लेवल में लेफ्ट टू राइट भरना है हर लेवल में ऐसे भरिए अल्टरनेट नेट भरना है तो देख लीजिए उस लेवल में क्या रूल है उस हिसाब से भरिए तो इससे आपको पता चलता है तो वीडियो थोड़ा लंबा हो गया है लेकिन जरूरी था ये इतना समझाना जरूरी था अगर हम सिर्फ ऐसे समझा देते कि हां इसको ऐसे कर लो तो नहीं समझ में आता ड्राई रन से समझ में आया होगा तो प्लीज ये आपका कोड है ये आपका नॉर्मल लेवल ऑर्डर का कोड है इसमें चेंज क्या होगा इंस्टेड ऑफ दिस लाइन इंस्टेड ऑफ़ दिस लाइन",
+      "source": "caption",
+      "english_text": "If you want to go left, then this is the last one, you do this, now there is no need to check, if you want to fill right to left in every level, then fill it like this every time, you have to fill left to right in every level, fill it like this, if you want to fill alternate net, then see what is the rule in that level, fill it accordingly, then this will tell you, so the video has become a little long but it was necessary to explain this much, it was necessary if we could have just explained like this, yes If you do it like this then you won't understand. If you have understood it after dry run then please this is your code. This is the code of your normal level order. What will be the change in it? Instead of this line. Instead of this line."
+    },
+    {
+      "start_time": 2654.079,
+      "end_time": 2687.99,
+      "text": "आप क्या लिखेंगे कि इफ लेफ्ट टू राइट अगर लेफ्ट टू राइट भरना है तो कैसे भरेंगे टीएमपी ठीक है? फर्स्ट में वो डाल दीजिए। फर्स्ट में वो टी का डेटा डाल दीजिए और फर्स्ट को प्लस प्लस कर दीजिए। अगर ऐसा नहीं है। अगर ऐसा नहीं है तो टीएमपी के लास्ट में डालिए। अगर आपको राइट टू लेफ्ट भरने का धुन है सॉरी आप उसके लास्ट में डालिए। टी का डेटा डालिए और लास्ट को माइनस माइनस कर दीजिए। मतलब पीछे से भरना स्टार्ट कीजिए। पीछे से भरेंगे तो ऑटोमेटिकली राइट टू लेफ्ट हो जाएगा। q में तो स्टोर लेफ्ट टू राइट ही हो रहा है। q में तो हर लेवल के बच्चे",
+      "source": "caption",
+      "english_text": "What will you write if left to right? If you have to fill left to right then how will you fill TMP, is it ok? Put that in the first place. Put the data of that T in the first and make the first plus plus. If it is not so. If it is not so then put it at the last of TMP. If you are interested in filling right to left, then please put it in the last section. Enter the data of T and subtract the last one. Meaning start filling from the back. If you fill from behind, it will automatically go from right to left. In q the storage is being done left to right only. In Q, children of every level"
+    },
+    {
+      "start_time": 2688.0,
+      "end_time": 2720.95,
+      "text": "कैसे स्टोर है? लेफ्ट टू राइट। मतलब क्यू में तो नॉर्मल स्टोर कर रहे हैं हम लोग। क्यू में हम लोग पहले दादा को स्टोर किए। उसके बाद पापा और चाचा को स्टोर किए। मतलब लेफ्ट टू राइट ही स्टोर किए। उसके बाद प्रत्युष, मोहित और सुमन को स्टोर किए। तो, क्यू में नॉर्मली स्टोर हो रहा है। टीएमपीटी में आप कैसे भर रहे हैं? वो डिसाइड कर देगा कि आप लेफ्ट टू राइट भरेंगे, राइट टू लेफ्ट भरेंगे। समझ में आया बात? घुसो दिमाग में? इसको जा के करो। दोनों क्वेश्चन सॉल्व करो। हम तो कहते हैं लेवल ऑर्डर टू भी सॉल्व कर दो। तीन क्वेश्चन है लेवल ऑर्डर के। एक लेवल ऑर्डर है, एक जिगजैग लेवल ऑर्डर है, एक लेवल ऑर्डर टू है। हम तो कहते हैं कि लगे हाथों तीनों को सॉल्व करके दिखा दीजिए हमको कि",
+      "source": "caption",
+      "english_text": "How is it stored? Left to right. Meaning, we are storing normally in the queue. In queue we stored Dada first. After that father and uncle were stored. Meaning stored left to right only. After that Pratyush, Mohit and Suman were stored. So, storing normally in queue. How are you filling in TMPT? He will decide whether you will fill left to right or right to left. Did you understand the point? Enter your mind? Go do it. Solve both the questions. We say solve level order two also. There are three questions in level order. There is a level order, there is a zigzag level order, there is a level order two. We ask you to solve all three and show us that"
+    },
+    {
+      "start_time": 2720.96,
+      "end_time": 2730.52,
+      "text": "कितना में मादा है। और मिलते हैं कल। देखते हैं होली का मौसम भी है। तो कल परसों देखते हैं कभी भी मिलेंगे। चलिए।",
+      "source": "caption",
+      "english_text": "How many is female? And see you tomorrow. Let's see, it's Holi season too. So let's see the day after tomorrow, we will meet sometime. Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

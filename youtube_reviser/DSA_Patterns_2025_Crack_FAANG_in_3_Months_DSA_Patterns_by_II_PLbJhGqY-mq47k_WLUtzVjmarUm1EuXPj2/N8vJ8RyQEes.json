@@ -1,0 +1,492 @@
+{
+  "video_id": "N8vJ8RyQEes",
+  "video_title": "DSA PATTERNS Episode 22 | Kadane’s Algorithm Pattern: Introduction & Intuition",
+  "video_number": 23,
+  "chunks": [
+    {
+      "start_time": 3.27,
+      "end_time": 36.95,
+      "text": "आइए जी आज तक इंटरनेट पर आप लोग बहुत बार यह चीज पढ़े होंगे। केडेंस एल्गोरिदम केडेंस एल्गोरिदम बहुत लोग इसको पढ़ाते हैं। स्ट्राइवर जी पढ़ाते हैं, लव बब्बर पढ़ाते हैं। हर आदमी इसको पढ़ाता है। लेकिन जिस तरीके से हम आपको पढ़ाने जा रहे हैं ना, उस तरीके से कोई नहीं पढ़ाया है। देखिए प्रॉब्लम क्या है ना कि हम पढ़ाते हैं डीएसएफ पैटर्न और लोग पढ़ाने लगते हैं किडेंस एल्गोरिदम। अब पढ़ना दोनों सही है। पढ़ने में गलत नहीं है। लेकिन एल्गोरिदम पढ़ने से क्या होता है ना कि एल्गोरिदम पढ़ने से आपसे एक ही क्वेश्चन बनेगा। देखिए केडेंस एल्गोरिदम बस एक तरीके के क्वेश्चन को सॉल्व करने के लिए बनाया गया था। तो अगर आप एल्गोरिदम पढ़ लेंगे तो आपसे वो क्वेश्चन बन जाएगा। फॉर एग्जांपल आपसे",
+      "source": "caption",
+      "english_text": "Come, till today you people must have read this thing many times on the internet. Cadence Algorithm Cadence Algorithm Many people teach it. Striver ji teaches, Luv Babbar teaches. Every person teaches this. But no one has taught us in the way we are going to teach you. See, what is the problem, we teach DSF pattern and people start teaching Kidence algorithm. Now both readings are correct. There is nothing wrong in reading. But what happens by reading the algorithm, not only one question will arise from you. See, the Cadence algorithm was created to solve just one type of question. So if you read the algorithm then that question will be prepared for you. For example from you"
+    },
+    {
+      "start_time": 36.96,
+      "end_time": 71.35,
+      "text": "मैक्सिमम सब सब एरे और मिनिमम सम सब एरे बन जाएगा। मैक्सिमम प्रोडक्ट सब एरे नहीं बनेगा। क्यों नहीं बनेगा वो जब तक नहीं बनेगा जब तक आप उस टीचर का वीडियो नहीं देखिएगा। फिर वो बताएगा कि चलो केडेंस जैसा ही है। ये कर लो वो कर लो। आपको समझ में नहीं आएगा कि ये क्यों किए और वो क्यों किए वो तो आपको लगेगा कि चलो टीचर बता दिया तो उसको रट लेते हैं। लेकिन ऐसा कितना क्वेश्चन रटिएगा। केडेंस एल्गोरिदम मत पढ़ा कीजिए। केडेंस एक तरीके का पैटर्न है। मतलब केडेंस में जो थॉट प्रोसेस यूज़ होता है ना उसको एक पैटर्न कहते हैं कि क्या थॉट प्रोसेस है? जब आप थॉट प्रोसेस पढ़ेंगे ना तो आपको समझ में आएगा कि चलो",
+      "source": "caption",
+      "english_text": "Maximum will become Sub sub array and Minimum will become Sum sub array. Maximum product will not form sub array. Why won't it be made unless you watch the video of that teacher? Then he will tell that let's be like Cadence. Do this, do that. You will not be able to understand why they did this and why they did that, you will feel that if the teacher told you then let's memorize it. But how many such questions will you memorize? Don't read the Cadence algorithm. Cadence is a type of pattern. Meaning, the thought process used in cadence is called a pattern. Is it a thought process? When you read the thought process you will understand that let's"
+    },
+    {
+      "start_time": 71.36,
+      "end_time": 105.83,
+      "text": "मैक्सिमम सब एरे में भी यही थॉट प्रोसेस यूज़ हुआ। प्रोडक्ट में भी यही यूज़ हुआ। इसमें भी यही यूज़ हुआ। सब में यही यूज़ हुआ। तो आपके लिए इज़ी बन जाएगा। देखिए पूरा गोल नया क्वेश्चन बनाना है। एल्गोरिदम रटने से कुछ नहीं होगा। एल्गोरिदम रटने से एक क्वेश्चन रट लेंगे। अगला क्वेश्चन में वही एल्गोरिदम लगेगा लेकिन वो इतना घुमा के लगेगा कि आपको समझ में नहीं आएगा कि ऐसा हुआ क्यों। तो वो मेरा गोल नहीं है पढ़ाने का। चलिए सबसे पहले सबसे पहले सबसे पहले केडेंस एल्गोरिदम या केडेंस पैटर्न जो भी है ये यूज़ किस लिए होता है? कभी भी कभी भी आपको क्वेश्चन में कोई सब एरे दिया हो सब एरे।",
+      "source": "caption",
+      "english_text": "The same thought process was used in Maximum Sub Array also. The same was used in the product also. The same was used in this also. This was used in everything. Then it will become easy for you. See, the whole goal is to create a new question. Memorizing algorithms will do nothing. You will memorize a question by memorizing the algorithm. The next question will use the same algorithm but it will be so twisted that you won't understand why it happened. So that is not my goal of teaching. Well, first of all, what is the Cadence Algorithm or Cadence Pattern, what is it used for? Anytime you have been given a sub array in a question, sub array."
+    },
+    {
+      "start_time": 105.84,
+      "end_time": 139.19,
+      "text": "ठीक है? और वहां पे लिखा हो कंटीन्यूअस। कंटीनग्यूस और इस कंटीनग्यूस सब एरे का इस कंटीनग्यूस सब एरे का आपको या तो सम निकालना हो या तो आपको उसका प्रोडक्ट निकालना हो या तो आपका कुछ भी निकालना हो मतलब फ्रीक्वेंसी निकालनी हो और ये बेस्ट बोला जाए बेस्ट। बेस्ट का मतलब क्या होता है? या तो वो मिनिमम हो या तो वो मैक्सिमम हो। बेस्ट का दो ही चीज़ होता है। बेस्ट का दो ही मतलब होता है। मतलब कि आपको बोला जाए कि एक एरे दिया हुआ है। उसमें से एक ऐसा सब एरे निकालो जिसका सम मैक्सिमम हो या तो जिसका सम मिनिमम हो या तो जिसका प्रोडक्ट",
+      "source": "caption",
+      "english_text": "ok? And it is written there as continuous. Of this continuous sub array and this continuous sub array, you either have to find the sum, or you have to find its product, or you have to find anything, that is, you have to find the frequency and this is called the best. What does best mean? Either it is minimum or it is maximum. There are only two things that are best. Best has only two meanings. That means you are told that an array is given. Find out from it a sub-array whose sum is maximum or whose sum is minimum or whose product is"
+    },
+    {
+      "start_time": 139.2,
+      "end_time": 168.869,
+      "text": "मैक्सिमम हो या तो जिसका प्रोडक्ट मिनिमम हो। सब एरे का लेंथ नहीं तुम वो वैल्यू ही निकाल दो। अब कभी-कभी पूछते हैं कि सब एरे का स्टार्ट बता दो भाई। जिसमें वो सम मैक्सिमम हो जाए। कभी-कभी पूछते हैं कि वो सम बता दो। कभी-कभी पूछते हैं कि उसकी एंडिंग बता दो। कभी-कभी पूछते हैं कि स्टार्ट और एंडिंग दोनों बता दो। तो ये क्वेश्चन के पूछने के तरीके पे निर्भर करता है। लेकिन लेकिन जो मूल थॉट प्रोसेस है केडेंस का वो समझिए कि वो कैसे काम करता है। केडेंस एल्गोरिदम मत रटिए। केडेंस एल्गोरिदम तीन लाइन का एल्गोरिदम है वो तो हम अभी रटवा देंगे। उससे आप एक क्वेश्चन बना लीजिएगा मैक्सिमम सम वाला।",
+      "source": "caption",
+      "english_text": "Either it is maximum or its product is minimum. You just extract that value, not the length of the array. Now sometimes people ask, brother, tell me the start of the sub-array. In which that sum becomes maximum. Sometimes they ask me to tell them. Sometimes they ask me to tell them its ending. Sometimes they ask to tell both the beginning and ending. So it depends on the way the question is asked. But but understand the basic thought process of Cadence and how it works. Don't memorize cadence algorithms. Cadence algorithm is a three-line algorithm, we will memorize it now. From that you will make a question with maximum sum."
+    },
+    {
+      "start_time": 168.879,
+      "end_time": 202.39,
+      "text": "लेकिन फिर प्रोडक्ट नहीं बनेगा। है ना? चलिए। सबसे पहले जो एक एरे हम अगर देखें। तो आपको याद होगा कि हम लोग अभी एक सब एरे और सब सीक्वेंस और सबस्ट्रिंग पे एक चीज करके आ रहे हैं। क्या करके आ रहे हैं? स्लाइडिंग विंडो। स्लाइडिंग विंडो बहुत दिन से पढ़ते हुए आ रहे हैं ना। स्लाइडिंग विंडो में बहुत सारा ऐसा ही क्वेश्चन तो सॉल्व करते थे कि मैक्सिमम साइज का सब एरे निकालो जिसका सम कुछ हो। मिनिमम साइज सब एरे निकालो जिसका सम कुछ हो। लेकिन स्लाइडिंग विंडो में एक दिक्कत क्या थी ना कि स्लाइडिंग विंडो नेगेटिव एलिमेंट्स में काम नहीं करता था। क्या नेगेटिव एलिमेंट्स में काम नहीं करता था। फॉर एग्जांपल अगर",
+      "source": "caption",
+      "english_text": "But then the product will not be made. Isn't it? Let go. First of all, if we look at an array. So you will remember that we are just going to do one thing on sub array and sub sequence and sub string. What are you coming here for? Sliding window. I have been reading Sliding Window for a long time. Many similar questions were solved in sliding windows such as finding a sub-array of maximum size whose sum is something. Find the minimum size sub array whose sum is something. But the problem with the sliding window was that it did not work in negative elements. What didn't work in negative elements. For example if"
+    },
+    {
+      "start_time": 202.4,
+      "end_time": 231.99,
+      "text": "आपका होता वन टू और थ्री सारे पॉजिटिव होते। जस्ट फॉर एग्जांपल इसमें क्या होता है ना? इसमें क्या होता है कि जब आप हाई को बढ़ाते हैं स्लाइडिंग विंडो की बात कर रहे हैं। हाई को बढ़ाते हैं तो आपका सम बढ़ता है। ऑब्वियस सी बात है हाई को बढ़ाएंगे तो और सम आएगा तो बढ़ेगा। जब आप लो को बढ़ाते है ना आपका सम कम होता है। ऑब्वियस सी बात है कि लो को बढ़ाने का मतलब कि एक एलिमेंट को हटाना तो आपका ऑब्वियस्ली कम होगा। ठीक है? लेकिन ये बस पॉजिटिव में एप्लीकेबल है। जैसे ही यहां पे नेगेटिव आ गया ना? क्या आ गया?",
+      "source": "caption",
+      "english_text": "Your one, two and three would have been all positive. Just for example, what does it contain? What happens is that when you increase the height we are talking about sliding windows. If you increase the high, your sum increases. It is obvious that if we increase the high then it will increase if the even comes. When you increase lo your even decreases. Obviously, increasing LO means removing one element and your output will obviously be less. Ok? But this is applicable only in positive. As soon as the negative came here, right? What has come?"
+    },
+    {
+      "start_time": 232.0,
+      "end_time": 265.27,
+      "text": "नेगेटिव। तो हो सकता है हो सकता है कि जब आप हाई को बढ़ाएं तो आप एक नेगेटिव एलिमेंट को इंक्लूड कर लें आपके सम में। तो आपका सम बढ़ भी सकता है और आपका सम घट भी सकता है। सेम चीज होती है लो में। जब आप लो को बढ़ाएंगे हो सकता है कि आप एक नेगेटिव एलिमेंट को बाहर निकाल रहे हो तो आपका सम बढ़ भी सकता है और आपका सम घट भी सकता है। तो देखिए पूरा स्लाइडिंग विंडो ना नेगेटिव में फेल हो गया। क्योंकि आपको पता ही नहीं चल रहा है कि हाई बढ़ाने से होगा क्या? पहले आपको पता था कि हाई बढ़ाने से सम बढ़ता है। लो बढ़ाने से सम कम होता है। लेकिन जब नेगेटिव आ गया ना तो आपको मालूम नहीं है कि हाई बढ़ाने से क्या",
+      "source": "caption",
+      "english_text": "Negative. So it is possible that when you increase the high, you include a negative element in your sum. So your sum may increase and your sum may also decrease. Same thing happens in Lo. When you increase Lo, you may be taking out a negative element, your Sam may increase or your Sam may also decrease. So see the whole sliding window failed in the negative. Because you don't know what will happen by increasing the height? Earlier you knew that increasing the high increases the even. Increasing Lo reduces even. But when negative comes, you don't know what will happen if you increase the high."
+    },
+    {
+      "start_time": 265.28,
+      "end_time": 297.59,
+      "text": "होगा? लो बढ़ाने से क्या होगा। तो जो डिसीजन मेकिंग पावर है क्या है? जो आपकी डिसीजन मेकिंग पावर थी यही तो डिसीजन मेकिंग पावर होती है ना कि हाई को बढ़ाना है कि लो को बढ़ाना है। तो वो आपका पावर खत्म हो गया। आपको समझ में नहीं आएगा कि क्या करना है। इसीलिए स्लाइडिंग विंडो नेगेटिव एलिमेंट्स के केस में फेल हो जाता है। ठीक है? इसी को टैकल करने के लिए किडेंस आया था। चलिए केडेंस का थॉट प्रोसेस समझिए। कडेंस का फ्लो चार्ट उसके बाद समझेंगे। फ्लो चार्ट भी समझ लीजिए। फ्लो चार्ट तो हम अभी बता दिए। सब एरे का क्वेश्चन होना चाहिए। मतलब एरे का तो होना ही चाहिए क्वेश्चन। सब एरे का होना चाहिए।",
+      "source": "caption",
+      "english_text": "Will it happen? What will happen if I increase it? So what is decision making power? Your decision making power is your decision making power and not whether to increase the high or increase the low. So your power is gone. You won't understand what to do. That is why sliding windows fail in case of negative elements. Ok? This is what Kidance came to tackle. Let's understand Cadence's thought process. Flow chart of cadence will be understood after that. Understand the flow chart also. We have just told you the flow chart. There should be questions on all the areas. Meaning there must be a question about the array. Everything should be of array."
+    },
+    {
+      "start_time": 297.6,
+      "end_time": 325.51,
+      "text": "आपको कुछ बेस्ट निकालना हो। बेस्ट का मतलब मैक्सिमम या मिनिमम निकालना हो। किस चीज का निकालना हो? सम का निकालना हो, प्रोडक्ट का निकालना हो, किसी तरीके की फ्रीक्वेंसी निकालनी हो। इस तरीके के चीज़ आएंगी तो क्या यूज़ होगा? और और एरे में नेगेटिव एलिमेंट्स भी हो। नेगेटिव भी हो, पॉजिटिव भी हो, अह ज़ीरो भी हो, सब हो, सब हो। सब हो। तो क्या काम आता है? किडेंस, किडेंस। इसके अलावा कोई रास्ता नहीं है।",
+      "source": "caption",
+      "english_text": "You have to find something best. Best means finding maximum or minimum. What needs to be removed? Whether it is to find a sum, to find a product, or to find some kind of frequency. If things like this come, what will be the use? And the array also contains negative elements. Be it negative, be it positive, be it zero, be it all, be it all. Everything is done. So what works? Kidence, kidence. There is no way around this."
+    },
+    {
+      "start_time": 325.52,
+      "end_time": 357.029,
+      "text": "इसके अलावा एक ही रास्ता है डायनामिक प्रोग्रामिंग वो बाद में बताएंगे। लेकिन क्या काम आएगा? केडेंस आएगा। ठीक है? ये इसका फ्लो चार्ट हो गया। ये इसका थ्री पॉइंट फ्लो चार्ट हो गया। अब फ्लो चार्ट मतलब थॉट प्रोसेस क्या है केन्स के सोचने का? तो सबसे पहले एक काम करिए। सबसे पहले एक एरे बना लेते हैं। क्या बना लेते हैं? 1 4 3 और 2। 0 1 2 3 ठीक। देखिए अगर सारे पॉजिटिव हैं। सारे पॉजिटिव हैं। सारे पॉजिटिव हैं। आपको क्या बोला गया है कि जितने भी सब एरे हैं इस एरे में",
+      "source": "caption",
+      "english_text": "Apart from this, the only way is dynamic programming which we will explain later. But what will be useful? Cadence will come. Ok? This became its flow chart. This became its three point flow chart. Now flow chart means what is the thought process of Keynes' thinking? So first of all do one thing. First of all let's create an array. What do you make? 1 4 3 and 2. 0 1 2 3 OK. See if all are positive. All are positive. All are positive. What have you been told that all the arrays in this array"
+    },
+    {
+      "start_time": 357.039,
+      "end_time": 389.749,
+      "text": "जितने भी सब एरे हैं सबका सम फाइंड करो। सबका सम फाइंड करो और उसमें से क्या रिटर्न कर दो? मैक्सिमम सम रिटर्न कर दो। मैक्सिमम सम रिटर्न कर दो। ठीक है? अगर एक बात बताइए कि सारे अगर पॉजिटिव होंगे तो पूरे एरे का सम ही मैक्सिमम सम होगा ना? अरे सारे एरे पॉजिटिव हैं तो 1 + 4 + 3 + 2 सबको सम कर दीजिए 10 आ जाएगा। ये आंसर में दे दीजिए। तो अगर सारे पॉजिटिव हैं तब तो केडेंस का भी जरूरत नहीं है। स्लाइडिंग विंडो का भी किसी का जरूरत नहीं है। मतलब सारे एरे का सम दे दो। सही बात है। अच्छा।",
+      "source": "caption",
+      "english_text": "Find the sum of all the arrays. Find the sum of all and what will you return from it? Return the maximum amount. Return the maximum amount. Ok? If you tell me one thing, if all are positive then the sum of the entire array will be the maximum sum, right? Hey, if all the arrays are positive then add 1 + 4 + 3 + 2 and you will get 10. Give this in the answer. So if all are positive then there is no need for cadence. There is no need for sliding windows either. Meaning give the sum of the entire array. That's correct. Good."
+    },
+    {
+      "start_time": 389.759,
+      "end_time": 421.589,
+      "text": "तो केडेंस का एक बात तो समझ में आया कि नेगेटिव होने चाहिए। नेगेटिव होने चाहिए। तो इस एरे को थोड़ा मॉडिफाई कर लेते हैं। इस एरे को यहां पे ये कर माइनस कर देते हैं। ठीक है? केडेंस का थॉट प्रोसेस बहुत ध्यान से समझिए। बहुत ध्यान से समझिए। आगे वाली सारी क्लासेस में इसी टेंपलेट का यूज़ करेंगे। किसका? टेंपलेट। केडेंस एक ही टेंपलेट पे काम करता है। आपको आपको इंडेक्स बाय इंडेक्स जाना है। आपको इंडेक्स बाय इंडेक्स जाना है। यस यस इंडेक्स बाय इंडेक्स जाना है। हर इंडेक्स",
+      "source": "caption",
+      "english_text": "So one thing Cadence understood was that it should be negative. Must be negative. So let's modify this array a bit. Let's minus this array by doing this here. Ok? Understand Cadence's thought process very carefully. Understand very carefully. We will use this template in all subsequent classes. Whose? Template. Cadence works on a single template. You have to go index by index. You have to go index by index. Yes yes go index by index. every index"
+    },
+    {
+      "start_time": 421.599,
+      "end_time": 448.469,
+      "text": "पे हर इंडेक्स पे हर इंडेक्स पे आपको दो तरीके की चॉइससेस लेनी है। क्या दो तरीके की चॉइससेस लेनी है? हर इंडेक्स पे आपको दो तरीके के चॉइससेस लेनी है। देखिए हर इंडेक्स पे आप निकालने की आप कोशिश कर रहे हैं। एनी आंसर एनी आंसर एंडिंग एट दिस इंडेक्स एंडिंग एट दिस इंडेक्स। ये ये आप निकालने की कोशिश कर रहे हैं।",
+      "source": "caption",
+      "english_text": "Pay Har Index Pay Har Index you have to take two types of choices. Are there two types of choices? You have to take two types of choices on each index. Look at each index you are trying to extract. Any answer Any answer ending at this index Ending at this index. This is what you are trying to figure out."
+    },
+    {
+      "start_time": 448.479,
+      "end_time": 483.029,
+      "text": "एनी आंसर एंडिंग एट दिस इंडेक्स। अच्छा। और हर इंडेक्स पे आपको चॉइससेस क्या लेनी है? अब ये इंडेक्स क्या कर सकता है? देखिए जब आप एक एरे बनाते हैं, जब आप एक एरे वन और टू और थ्री बनाते हैं। इसके सब एरे कैसे लिखते हैं? इसके सब एरे लिखना जानते हैं? इसका सब एरे क्या होता है? पहले या तो वन होगा। वन के साथ टू होगा। वन टू थ्री होगा। सिमिलरली टू से स्टार्ट करिएगा तो टू होगा। टू और थ्री होगा। और सिमिलरली थ्री होगा। अब देखिए एंडिंग एट इन एंडिंग एट थ्री। क्या है? एंडिंग एट थ्री। जो हम बोल रहे हैं। बार-बार हम बोल रहे हैं ना एंडिंग एट थ्री। कितने सब एरे आपको दिख",
+      "source": "caption",
+      "english_text": "Any answer ending at this index. Good. And what choices do you have to make on each index? Now what can this index do? See when you create an array, when you create an array one and two and three. How to write all its arrays? Do you know how to write all its arrays? What is its sub array? First there will be either forest. There will be two with one. One will be two three. Similarly if you start from two then it will be two. There will be two and three. And similarly there will be three. Now look at the ending at three. What is? Ending at three. What we are saying. We are saying again and again, ending at three. How many things are there for you to see?"
+    },
+    {
+      "start_time": 483.039,
+      "end_time": 514.709,
+      "text": "रहे हैं इन छहों में से जो एंडिंग एट थ्री हैं देखिए एक तो ये वाला सब एरे एक तो ये वाला सब एरे एक तो ये वाला सब एरे तीन सब एरे हैं। एंडिंग एट टू में कितने दिख रहे हैं? एक ये वाला सब एरे है। एक ये वाला सब एरे है। एंडिंग एट वन कितने दिख रहे हैं? बस एक वाला। एक एंडिंग मतलब समझा कि जो सब एरे उस इंडेक्स पे एंड करता है। उसका हमको आंसर निकालना है। ठीक है? अच्छा अच्छी बात। तो सबसे पहले तो एट ईच इंडेक्स आई ईच इंडेक्स आई क्या निकालना है हमको? एंडिंग एट दैट",
+      "source": "caption",
+      "english_text": "Out of these six, those which are ending at three, see one, this one is all array, one, this one is all array, one, this one is all array, three are all array. How many are seen in Ending at Two? This one is all array. This one is all array. How many are watching Ending at One? Just one. An ending means that the sub-array ends at that index. We have to find the answer to that. Ok? ok good point. So first of all, what do we have to find out? ending at that"
+    },
+    {
+      "start_time": 514.719,
+      "end_time": 544.389,
+      "text": "इंडेक्स का आंसर। एंडिंग एट दैट इंडेक्स का आंसर। अच्छा। अब ये कैसे निकलेगा? अब ये कैसे निकलेगा? देखिए इसमें ना दो तरीके का चीज हो सकता है। इसमें दो तरीके का चीज हो सकता है। अगर जो आंसर पहले से आ रहा है अगर जो आंसर आपके पास पहले से है उस आंसर में आप i को अगर जोड़ देंगे तो आपको मिल जाएगा कि एंडिंग एट i कहने का क्या मतलब है कि अगर आप ये वाला सब एरे देखिए 1 2 3 हम अगर मान लीजिए थ्री के लिए निकाल रहे हैं कि थ्री पे एंड होने वाले कितने आंसर हैं। तो अगर वन और टू का आंसर आपके पास ऑलरेडी होगा।",
+      "source": "caption",
+      "english_text": "Index answer. The answer to the ending at that index. Good. Now how will this work out? Now how will this work out? See, there cannot be two ways in this. There can be two types of things in this. If the answer is already coming, if you add i to the answer you already have, then you will get what is meant by saying ending at i. If you look at this sub array 1 2 3, let's say for three, we are finding out how many answers are there ending at three. So if you already have the answer to one and two."
+    },
+    {
+      "start_time": 544.399,
+      "end_time": 572.79,
+      "text": "या तो उसके पहले का होगा या तो कुछ भी होगा। टू का होगा, वन का जिसका उसके पहले का आंसर आप मान लीजिए कि है। अगर आप इस आंसर में अगर सम की बात की जाए अगर एरे ऑफ़ आई जोड़ देते हैं। अगर एरे ऑफ़ आई जोड़ देते हैं तो ये एक पॉसिबिलिटी है। ये पॉसिबिलिटी है ना? कि मान लीजिए उसके पहले का आंसर आपके पास है। आप उसमें एरे ऑफ आई जाके जोड़ दिए तो आपको मिल गया कि आप एंडिंग एट एरे ऑफ़ आई। एक तो ये पॉसिबिलिटी है। दूसरी पॉसिबिलिटी क्या है? पहले का सारा आंसर को खारिज कर दीजिए। पहले का सारे आंसर को क्या कर दीजिए? हटा दीजिए।",
+      "source": "caption",
+      "english_text": "Either it will be before that or it will be whatever. It will be of two, of one whose answer before that, you can assume. If you talk about sum in this answer, if you add array of i. If we add array of eyes then it is a possibility. This is a possibility right? Suppose you have the answer before that. If you go and add Array of I to it, you get the ending at Array of I. One thing is this possibility. What is the second possibility? Reject all the previous answers. What to do with all the earlier answers? Remove it."
+    },
+    {
+      "start_time": 572.8,
+      "end_time": 600.23,
+      "text": "सिर्फ एरे ऑफ़ आई लेके एक बना लीजिए। मतलब ये वाला ये वाला ये वाला सवाल है। ये क्या है? सिर्फ थ्री को लेके बनाया हुआ है। ये क्या है? टू और थ्री को लेके बनाया हुआ है। मतलब अगर आपके पास टू का आंसर रहता तो आप उसमें थ्री जोड़ देते। ये क्या है? अगर आपके पास वन टू का आंसर रहता तो आप उसमें थ्री जोड़ देते। तो कुल मिला के दो ही तरीके का चॉइस है। एक तो जो पहले का आंसर चलता आ रहा है उसमें आप ये एरे ऑफ आई जोड़ दीजिए। तो वो बन जाएगा एंडिंग एट आई। अगला चॉइस है कि पहले का सारा आंसर हटा दो।",
+      "source": "caption",
+      "english_text": "Just take the array of eyes and make one. Meaning, this one is this one and this one is this question. What is this? Made with only three. What is this? Made with two and three. Meaning, if you had the answer of two, you would have added three to it. What is this? If you had the answer of one two, you would add three to it. So overall there are only two types of choices. Firstly, add this array of eyes to the earlier answer. So that will become ending at i. The next choice is to remove all the previous answers."
+    },
+    {
+      "start_time": 600.24,
+      "end_time": 635.03,
+      "text": "पहले का सारा आंसर हटा दो। सिर्फ एरे ऑफ़ आई रख को रख लो। ये भी एक आंसर है। ठीक है? एक क्या होता है कि जो पहले का आंसर है कि जो पहले का आंसर है उसमें एरे ऑफ़ i को जोड़ दो। एरे ऑफ़ i को जोड़ दो। एक है कि पहले का सारा हटा दो। सिर्फ एरे ऑफ़ i रखो। सिर्फ एरे ऑफ़ i रखो। दो ही ऑप्शन है। अच्छा। अगर ऐसा आप हर इंडेक्स के लिए करते हैं। ऐसा आप हर इंडेक्स के लिए कर लेते हैं। 0 टू n - 1 के लिए कर लेते हैं। तो आपको बहुत सारा आंसर मिल जाएगा कि एक जो ज़ीरो पे खत्म होगा। एक जो वन पे खत्म होगा, एक जो टू पे खत्म होगा, एक जो थ्री",
+      "source": "caption",
+      "english_text": "Delete all the previous answers. Just keep the array of eyes. This is also an answer. Ok? One thing that happens is that you add the array of i to the previous answer. Concatenate the array of i. One is to remove all the previous ones. Just keep the array of i. Just keep the array of i. There are only two options. Good. If you do this for every index. You do this for every index. Let's do it for 0 to n - 1. So you will get a lot of answers, including one that will end at zero. One that ends in one, one that ends in two, one that ends in three"
+    },
+    {
+      "start_time": 635.04,
+      "end_time": 668.79,
+      "text": "पे खत्म होगा एंड सो ऑन, एक जो n - 1 पे खत्म होगा। तो बस आपको सारे इंडेक्स का आंसर मिल गया कि सारे इंडेक्स के एंडिंग में उसका बेस्ट आंसर आपको अगर मिल गया तो बस इसका अगर आप मैक्स निकाल लेंगे इसका आप मैक्स निकाल लेंगे तो आपको अपना रिजल्ट मिल जाएगा। कोई भी सब एरे क्या होता है? कोई भी सब एरे किसी ना किसी इंडेक्स पे तो खत्म होगा ना भाई। जैसे 1 1 2 3 1 2 3 ये सारे सब एरे हैं। ये सारे क्या हैं? सब एरे हैं। हर सब एरे किसी ना किसी इंडेक्स पे तो खत्म होगा। अब जैसे ये वन पे खत्म हो रहा है। ये थ्री पे खत्म हो रहा है। ये टू पे खत्म हो रहा है। ये टू पे खत्म हो",
+      "source": "caption",
+      "english_text": "And so on, one that ends in n - 1. So once you get the answers of all the indexes, if you get the best answer at the end of all the indexes, then just find out the max of it, then you will get your result. What is any sub array? Any sub-array will end up on some index or the other. Like 1 1 2 3 1 2 3 all these are arrays. What are all these? All are arrays. Every array will end up on some index or the other. Now it seems as if this forest is coming to an end. It's ending on three. This is ending in two. it ends in two"
+    },
+    {
+      "start_time": 668.8,
+      "end_time": 697.43,
+      "text": "रहा है। ये थ्री पे ये थ्री पे। कोई भी सब एरे किसी ना किसी इंडेक्स पे तो खत्म होगा। अगर आप हर इंडेक्स का एंडिंग वाला आंसर बस निकाल लिए। तो उसका मैक्स ले लेंगे तो आपको रिजल्ट मिल जाएगा। सिंपल बात है। चलिए किडेंस इसी थॉट प्रोसेस पे काम करता है। आगे देखेंगे कि आगे वाले पांच छ सात आठ जितने भी क्वेश्चन हैं सब में सेम थॉट प्रोसेस है। एल्गोरिदम अभी तक नहीं बताए हैं कि क्या करना है। थॉट प्रोसेस समझिए कि अगर आप ऐसा करते हैं तो आपको आंसर मिल जाएगा। ठीक? अब आइए। अब आइए। देखिए। एक एरे ले लीजिए। क्या ले",
+      "source": "caption",
+      "english_text": "Has been. Ye three pe ye three pe. Any sub array will end up at some index or the other. If you simply find out the ending answer of each index. So if you take its maximum then you will get the result. It's a simple thing. Let's say Kidance works on this thought process. We will see further that the next five, six, seven and eight questions have the same thought process. The algorithms haven't yet told you what to do. Understand the thought process that if you do this you will get the answer. Correct? Come now. Come now. See. Take an array. what to take"
+    },
+    {
+      "start_time": 697.44,
+      "end_time": 730.949,
+      "text": "लीजिए? एक एरे ले लीजिए। -2 1 2 और -4 और 5 ठीक? 0 1 2 3 4 चलिए एक बात बताइए कि i = 0 i = 0 पे 0 पे एंड होने वाला सबसे अच्छा आंसर क्या हो सकता है? ज़ीरो पे एंड होने वाला 0 पे एंड होने वाला सबसे अच्छा आंसर क्या हो सकता है? i = 0 के पहले तो कुछ नहीं है। i का ज़ीरो से ही स्टार्ट होगा ना। तो आपके पास दो ही चॉइस है। आपके पास क्या चॉइस था",
+      "source": "caption",
+      "english_text": "Take it? Take an array. -2 1 2 and -4 and 5 right? 0 1 2 3 4 Let us tell you one thing that what could be the best answer for i = 0 i = 0 pe 0 pe end? What could be the best answer to zero pay ending 0 pay ending? There is nothing before i = 0. i will start from zero only. So you have only two choices. what choice did you have"
+    },
+    {
+      "start_time": 730.959,
+      "end_time": 765.35,
+      "text": "कि पहले का ले लो या तो एरे ऑफ़ i ले लो। तो पहले वाला चॉइस तो इस पे अवेलेबल है ही नहीं। तो इसमें आपको एक ही चॉइस मिलेगा कि एरे ऑफ़ I को ही लेना पड़ेगा। इससे हम लोग को पता चला कि i = 0 पे जो अभी तक का बेस्ट आंसर है। अभी तक का इस एंडिंग वाला बेस्ट आंसर है वो क्या है? एरे ऑफ़ ज़ीरो ही है। एरे ऑफ़ ज़ीरो ही है जो कि -2 है। अच्छा। और एक जो हमारा आंसर है, हमारा आंसर जो फाइनल रिजल्ट है वो क्या करता है? सारे इंडेक्स का एंडिंग वाला रिजल्ट देख के उसका मैक्सिमम लेता है। तो जब i0 जीरो पे रहेगा तो आपका आंसर भी और कुछ है नहीं आपके आंसर में। तो आपका आंसर को भी एरे ऑफ़ ज़ीरो ही होना पड़ेगा। ये तो नेचुरल बात है ना, उससे पहले कुछ है ही नहीं। एक ही चॉइस",
+      "source": "caption",
+      "english_text": "Take that first or take the array of i. So the first option is not available on this one. So in this you will get only one choice that you will have to take Array of I only. From this we came to know that i = 0 which is the best answer so far. What is the best answer to this ending so far? It is an array of zeros. The array of zeros itself is -2. Good. And what does the one who is our answer, our answer and the final result do? After seeing the ending result of all the indexes, it takes its maximum. So when i0 remains at zero then your answer also has nothing else in your answer. So your answer will also have to be an array of zeros. This is a natural thing, there is nothing before that. only one choice"
+    },
+    {
+      "start_time": 765.36,
+      "end_time": 798.389,
+      "text": "है भाई। तो ये भी हो गया -2। अच्छा। i = 1 पे आइए। ये ड्राई रन देखिए। पूरा क्लियर हो जाएगा थॉट प्रोसेस। क्यों ऐसा करते हैं? i = 1 पे आइए। ठीक है? अब आपके पास एक पहले का आंसर है। क्या आंसर है? ये वाला। बेस्ट एंडिंग। बेस्ट एंडिंग को लेके चलेंगे। बेस्ट एंडिंग मतलब i - 1 जब भी आप i पे रहते हैं ना तो आपके i - 1 पे होता है आपका बेस्ट एंडिंग। बेस्ट एंडिंग क्या बोलता है आपको कि i - 1 पे जो खत्म हुआ था ना उसका बेस्ट आंसर ये है। ठीक है? तो फिर आपके पास दो चॉइस रहता है कि या तो आप उसमें मिल जाइए या तो आप उसमें मिल जाइए और बेस्ट एट i बना लीजिए या तो आप अपना",
+      "source": "caption",
+      "english_text": "Yes brother. So this also became -2. Good. Come to i = 1. Look at this dry run. The thought process will become completely clear. Why do this? Come to i = 1. Ok? Now you have an earlier answer. What is the answer? This one. Best ending. Will go with the best ending. Best ending means i - 1. Whenever you stay at i, your best ending is at i - 1. What does the best ending tell you that this is the best answer to what ended on i - 1? Ok? Then you have two choices, either you join him and become the best at i, or you"
+    },
+    {
+      "start_time": 798.399,
+      "end_time": 825.59,
+      "text": "अलग कुछ शुरू कर लीजिए। ठीक है? ये होता है। अब देखिए i = 1 के पास कितना चॉइस है? दो चॉइस है। एक तो जो ये पहले से आंसर आ रहा है पहले i - 1 मतलब जो 0 का बेस्ट एंडिंग था उसके साथ मिलके ये अपना कुछ कर ले। मतलब इस -2 के साथ मिल जाए और इसमें वन जोड़ ले। या तो इसके पास चॉइस है कि अपना खुद का स्टार्ट करे। मतलब किसी को ना ले बस अपने आप को ले ले। तो या तो अपने आप को ये लेगा तो वन ले सकता है। अच्छा इसका आंसर क्या होगा? -1। इसका आंसर क्या है?",
+      "source": "caption",
+      "english_text": "Start something different. Ok? This happens. Now see how much choice does i = 1 have? There are two choices. Firstly, this answer is already coming, first i - 1 means it can do something by combining it with the best ending of 0. Meaning, combine this with -2 and add one to it. Either he has the choice to start his own. Meaning don't take anyone, just take yourself. So either he can take this for himself or he can take one. Well, what will be the answer? -1. What is its answer?"
+    },
+    {
+      "start_time": 825.6,
+      "end_time": 859.35,
+      "text": "वन। दोनों में अच्छा कौन सा है? अच्छा कौन सा लग रहा है? मैक्सिमम है ना? मैक्सिमम सम आपको अच्छा ये लग रहा है। तो आप ये ले लीजिए। अब आपका बेस्ट एंडिंग अब आपका बेस्ट एंडिंग क्या बन गया है? जब आपका i = 1 आया। अब आपका बेस्ट एंडिंग क्या बन गया होगा? वन। वन बन गया होगा। आंसर को कुछ नहीं करना है। आंसर को अपने बेस्ट एंडिंग से अपडेट कर दीजिए। आंसर पहले -2 था। क्या -2 वन से छोटा है? छोटा है तो आंसर को काट के वन लिख दीजिए। चलिए आगे बढ़िए। i = 2 पे आइए। i = 2 के पास कितने चॉइससेस हैं? या तो अपने पिछले वाले के साथ ये मिल जाए या तो अपना ही बनाए बस। तो अगर पिछले वाले के",
+      "source": "caption",
+      "english_text": "Forest. Which is better among the two? Which one looks good? Is it the maximum? Maximum you are liking this. So you take this. Your Best Ending Now What has become your best ending now? When your i = 1 came. Now what would have been your best ending? Forest. Must have become a forest. The answer is nothing to do. Update the answer with your best ending. The answer was earlier -2. Is -2 smaller than one? If it is small then cross out the answer and write 'one'. Let's move ahead. Come to i = 2. How many choices does i = 2 have? Either get it with your previous one or make your own. So if the previous one"
+    },
+    {
+      "start_time": 859.36,
+      "end_time": 884.949,
+      "text": "साथ मिलता है मतलब बेस्ट एंडिंग के साथ बेस्ट एंडिंग क्या रिप्रेजेंट करता है? आपका जो अच्छा आंसर था जो वन पे एंड करता था। अब ये देखिए जरूरी नहीं है कि ये जो वन पे एंड करता था वो ज़ीरो वन होगा। हो सकता है बस वन हो। एंड करेगा वन पे। तो ये है। कहीं से भी सवेरे चलता रहे हो। एंड वन पे करेगा। अच्छा इसके पास क्या ऑप्शन है? या तो इसमें मिल जाओ मतलब वन और खुद मिल जाओ या तो सिर्फ अपने आप को ले लो। अब इसका आंसर क्या है? थ्री। इसका आंसर है टू। अच्छा कौन सा ऑप्शन लग रहा है इसको?",
+      "source": "caption",
+      "english_text": "Gets along meaning with the best ending What does the best ending represent? Your answer was good which ended with one pay. Now see, it is not necessary that the one he used to end will be zero one. Maybe just the forest. And will do one pay. So this is it. You keep walking from somewhere in the morning. And one will pay. Well, what option does he have? Either merge into it, meaning the forest and yourself, or just take yourself. Now what is the answer? Three. The answer is two. Well, which option does he like?"
+    },
+    {
+      "start_time": 884.959,
+      "end_time": 919.43,
+      "text": "इसको थ्री ऑप्शन लग रहा है। अच्छा। तो ये थ्री ले लेगा। अब स्टैंडिंग आपका क्या बन गया? थ्री। आंसर को अपडेट कर दीजिए। आंसर को वन काट के थ्री कर दीजिए क्योंकि थ्री बड़ा है। ठीक है? अब देखिए अब एल्गोरिदम खुलेगा। i = 3 आ गया। i = 3 आ गया। इसके पास भी दो ऑप्शन है। अभी तक का जो बेस्ट एंडिंग है उसके साथ ये जुड़ जाए या तो बस अपने आप को ले ले। ये क्या हुआ? -1 ये क्या हुआ? -1 और ये क्या है? -4 दोनों में से बड़ा कौन सा है? -1 बड़ा है। तो ये क्या करेगा? जुड़ जाएगा। ठीक है? तो बेस्ट एंडिंग अब आपका क्या बन गया है? -1 क्या आपको आंसर अपडेट करना चाहिए? नहीं करना",
+      "source": "caption",
+      "english_text": "There seem to be three options. Good. So this will take three. What has become of your standing now? Three. Please update the answer. Cut the answer by one and make it three because three is big. Ok? Now see, the algorithm will open. i = 3 arrived. i = 3 arrived. It also has two options. This ties in with the best ending ever, or just take it for yourself. What happened? -1 What happened? -1 And what is this? -4 Which of the two is bigger? -1 is bigger. So what will he do? Will be connected. Ok? So what has become your best ending now? -1 Should you update the answer? not to do"
+    },
+    {
+      "start_time": 919.44,
+      "end_time": 953.749,
+      "text": "चाहिए? क्योंकि आंसर आपका थ्री है और ये -1 है। कोई फर्क नहीं पड़ता है। अब आ जाइए। i = 4 I = 4 के पास देखिएगा क्या ऑप्शन है या तो ये अभी तक के जो बेस्ट एंडिंग है उसके साथ ये मिल जाए तो मिलके ऐसा बना ले इसको फाइव कर ले या तो ये बस अपना-अपना रहे अपना फाइव रहे अब ये देखिए ये हो गया -4 और ये था फाइव तो ये किसको चुनेगा जो बड़ा है उसको चुनेगा तो सिर्फ अपने आप को रखेगा ये सिर्फ अपने आप को रखेगा अब आपका बेस्ट एंडिंग बन गया फाइव क्या आपका आंसर अभी थ्री था और बेस्ट एंडिंग अब फाइव है तो अपडेट कर दीजिए फाइव ले जाइए बस आपका एल्गोरिदम खत्म हो गया आपको आंसर क्या मिल गया बस फाइव फाइव अगर",
+      "source": "caption",
+      "english_text": "Want? Because your answer is three and this is -1. It doesn't matter. Come now. i = 4 Let's see what option I = 4 has, either it combines with the best ending so far, then together make it like this, make it five, or it just remains its own, it remains its five, now look at this, it has become -4 and this was five, so it will choose the one who is bigger, it will choose the one, then it will keep only itself, it will keep only itself, now your best ending has become five, is your answer now three? Was and the best ending is now five so update it take five that's it your algorithm is over what answer did you get just five five if"
+    },
+    {
+      "start_time": 953.759,
+      "end_time": 986.55,
+      "text": "आप इस एरे में देखेंगे भी सारा सब एरे को देख लीजिए सारा सब एरे को प्रिंट करके देख लीजिए लिख के देख लीजिए आप ये वाला सब एरे सबसे अच्छा सब एरे है फाइव और कोई नहीं आ सकता है अगर आप कोशिश करेंगे कि 1 2 - 4 और फाइव लें ये वाला लें इसका आंसर आएगा 3 - 4 + 5 जो कि होगा फोर जो आंसर अच्छा नहीं है तो फाइव अच्छा आंसर है ये होता है थॉट प्रोसेस किसका केडेंस का हर आई पे आपको क्या करना है बेस्ट एंडिंग एट आई निकालना है बेस्ट एंडिंग एट आई इसके लिए आपके पास कितने चॉइससेस रहते अमूमन दो चॉइससेस रहते हैं कि या तो जो पहले वाले",
+      "source": "caption",
+      "english_text": "You will also see in this array, look at the entire sub array, print out the entire sub array, see it by writing, this sub array is the best sub array, five and no other can come, if you try, take 1 2 - 4 and five more, take this one, the answer will be 3 - 4 + 5, which will be four, if the answer is not good, then five is the good answer, this is the thought process whose cadence is the denominator. What you have to do is to find out the best ending at i. How many choices do you have for this? Generally there are two choices either the one which was earlier"
+    },
+    {
+      "start_time": 986.56,
+      "end_time": 1015.269,
+      "text": "के साथ मिल जाओ पहले वाले के साथ मिल जाओ या तो अपने आप को रखो बस अपने आप को रखो पहले वाले को जाने दो अपने आप को रखो इन दोनों चॉइससेस में जो भी अच्छा है जो भी अच्छा है वो आपका क्या बन जाता है बेस्ट एंडिंग फिर से बेस्ट एंडिंग फिर से ठीक है इसके लिए आप यूज़ क्या करते हैं इसके लिए आपके पास तो ऑलरेडी बेस्ट एंडिंग होता है ना जो i - 1 तक का एंडिंग है जब आप i वन पे गए थे तो आपके पास i0 का था तो वो था जब भी हो जाए बेस्ट बेस्ट एंडिंग इसको अपडेट कर दो रिजल्ट में। क्या कर दो?",
+      "source": "caption",
+      "english_text": "Get together with the first one, either keep yourself, just keep yourself, let the first one go, keep yourself, whatever is good in these two choices, whatever is good, what becomes yours, best ending again, best ending again, okay, what do you use for this, for this you already have the best ending, isn't it, which is the ending till i - 1, when you went to i one, you had i0, so that was whenever. Let the best ending happen and update it in the result. what to do?"
+    },
+    {
+      "start_time": 1015.279,
+      "end_time": 1045.029,
+      "text": "अपडेट कर दो रिजल्ट में। रिजल्ट में ये होता है पूरा थॉट प्रोसेस। तो इस तरीके से पढ़िए। एल्गोरिदम मत रटिए। अभी तक हम लोग एल्गोरिदम कोड एक भी लाइन नहीं देखे हैं ना। एल्गोरिदम मत रटा करिए। ये होता है केडेंस का थॉट प्रोसेस। केडेंस एल्गोरिदम तो पांच लाइन का एल्गोरिदम है। उसमें कुछ है नहीं वैसा। अब आइए अब सवाल पे आते हैं। सवाल क्या है? मैक्सिमम सम एरे। सब एरे ठीक है? यह सवाल है।",
+      "source": "caption",
+      "english_text": "Please update the result. This is the complete thought process as a result. So read it this way. Don't memorize algorithms. We haven't seen a single line of algorithm code yet. Don't memorize algorithms. This is Cadence's thought process. The Cadence algorithm is a five-line algorithm. There is nothing like that in it. Now let us come to the question. What is the question? Maximum sum array. Is everything okay? that is the question."
+    },
+    {
+      "start_time": 1045.039,
+      "end_time": 1079.99,
+      "text": "यह क्या है? आपका सवाल है। अब इसका सवाल में क्या बोला है? -1 2 1 -3 और 4 -1 0 1 2 3 4 ठीक है? चलिए एक टू भी दे देते हैं। टू भी दे देते हैं। है ना? चलिए फाइव। सबसे पहले हम क्या बोले थे? i = 0 i = 0 के पहले कुछ नहीं होता है। इसीलिए बेस्ट एंडिंग लिख लीजिए। तो बेस्ट एंडिंग लिख लीजिए। बेस्ट एंडिंग क्या कीजिए? लिख लीजिए। क्या? एरे ऑफ़ जीरो। अभी तक आपके पास कोई और चीज है भी नहीं। तो आप आंसर में भी एरे ऑफ़ ज़ीरो लिख लीजिए। एरे ऑफ़",
+      "source": "caption",
+      "english_text": "What is this? Your question is. Now what is said in this question? -1 2 1 -3 and 4 -1 0 1 2 3 4 OK? Let's give one too. Give two also. Isn't it? Let's go five. What did we say first? i = 0 Nothing happens before i = 0. That's why write the best ending. So write the best ending. What's the best ending? Write it down. What? Array of zeros. You don't have anything else yet. So you write array of zero in the answer also. array of"
+    },
+    {
+      "start_time": 1080.0,
+      "end_time": 1113.43,
+      "text": "ज़ीरो लिख लीजिए। उसके बाद क्या करना है? कुछ नहीं करना है। लूप चलाना है कहां से कहां तक? i = 1 i &lt; n i + सबसे पहले हम क्या बोले? अब इस i के पास दो चॉइससेस है कि या तो पहले वाले बेस्ट एंडिंग के साथ मिल जाए और या तो अपना अपना शुरू कर ले। तो सबसे पहले आप एक वैल्यू निकाल लीजिए क्या? v1 इक्वल टू जो अभी तक का बेस्ट एंडिंग था जो अभी तक का बेस्ट एंडिंग था क्योंकि ये सम का प्रॉब्लम है तो इसको जोड़ने के लिए आपको सम करना पड़ेगा। ये तो सिंपल बात है। दूसरा चॉइस इसके पास क्या है कि बस खुद को ले लो। बस खुद को ले लो।",
+      "source": "caption",
+      "english_text": "Write zero. What to do after that? nothing to be done. From where to where to run the loop? i = 1 i < n i + What should we say first? Now this i has two choices to either merge with the previous best ending or start its own. So first of all you should find out a value? v1 Equals Two Which was the best ending ever Which was the best ending ever because this is a problem of sums so to add it you have to sum. This is a simple thing. The second choice he has is to just take himself. Just take yourself."
+    },
+    {
+      "start_time": 1113.44,
+      "end_time": 1140.47,
+      "text": "अब बेस्ट एंडिंग नेट इंडेक्स i क्या बनेगा? दोनों का मैक्सिमम। दोनों में से जो अच्छा लग रहा है वो कर लीजिए। तो कैसे अच्छा अच्छा कैसे डिसाइड करेंगे? क्योंकि ये मैथ्स का क्वेश्चन है। मैक्स का क्वेश्चन है ना इसमें। अच्छा मतलब मैक्स। अच्छा मतलब मीन भी हो सकता है। अगर मीन का क्वेश्चन है तो अच्छा मतलब मीन। मैक्स का क्वेश्चन है तो अच्छा मतलब मैक्स। बस मैक्स ऑफ़ क्या? V1 V2 बस काम हो गया। अब ये आपका क्या बन गया? एट i एट I मतलब एंडिंग एट i वाला। कुछ नहीं और करना है।",
+      "source": "caption",
+      "english_text": "Now what will become the best ending net index i? Maximum of both. Do whatever feels good among the two. So how will you decide what is good? Because this is a maths question. There is a question of Max in this, right? Well meaning Max. Well can also mean Pisces. If there is a question of Pisces then it means Pisces. If there is a question about Max then it means Max. Just max off what? V1 V2 That's it, the job is done. Now what has become of you? At i At I means the one ending at i. Nothing else to do."
+    },
+    {
+      "start_time": 1140.48,
+      "end_time": 1173.75,
+      "text": "आपका जो आंसर है आपका आंसर है। हम लोग पहले ही देखे थे कि सारे i के एंडिंग वाले का अगर मैक्स ले लेंगे तो मिल जाएगा। आंसर इज़ इक्वल टू मैक्स ऑफ़ आंसर बेस्ट एंडिंग। बेस्ट एंडिंग बस इसको बंद कर दीजिए। क्या रिटर्न कर दीजिए? आंसर। आंसर रिटर्न कर दीजिए। बस ये चार पांच लाइन का कोड है। अब देखिए ये कोड अगर हम आपको पहले ही बता देते सबसे शुरू में यही कोड लिख के बता देते तो आप इसको याद कर लेते कि पहले ये लाइन लिखना है। फिर ये लिखना है फिर ये लिखना है। फिर ये लिखना है। वैसे नहीं होता है पढ़ाई। वैसे आप याद नहीं कितना याद करिएगा। आपका दिमाग का रैम लिमिटेड है",
+      "source": "caption",
+      "english_text": "Your answer is your answer. We had already seen that if we take the max of all the i's ending in i, we will get it. Answer is equal to max of answers best ending. Best ending just turn it off. What should I return? Answer. Please return the answer. This is just a four-five line code. Now see, if we had told you this code in advance, if we had written this code in the beginning, then you would have remembered that you have to write this line first. Then you have to write this, then you have to write this. Then this has to be written. Studying doesn't happen like that. Well you don't remember how much you will remember. Your brain's RAM is limited"
+    },
+    {
+      "start_time": 1173.76,
+      "end_time": 1202.95,
+      "text": "भाई। ज्यादा याद नहीं कर पाएंगे मतलब। उतना याद करना पॉसिबल नहीं है। आप भूल जाएंगे, याद करिएगा भूल जाइएगा। दो-तीन दिन याद रहेगा भूल जाइएगा। ठीक है? ये होता है थॉट प्रोसेस। समझ में आया? मैक्सिमम सब एरे क्या हो गया? सॉल्व हो गया खटाक से। आ जाइए। अब दिखाते हैं कितना ईजी है। कितना ईजी अप्रोच है। आ जाइए। इसके जस्ट ऑोजिट क्वेश्चन में आ जाइए। क्या? मिनिमम सब एरे सम। क्या? मिनिमम सब एरे सम। जस्ट ऑपोजिट क्वेश्चन है। आपको क्या आपको क्या खोजना है? सारा सब एरे ले लीजिए।",
+      "source": "caption",
+      "english_text": "Brother. Meaning you won't be able to remember much. It is not possible to remember that much. You will forget, remember and forget. You will remember it for two-three days and then forget it. Ok? This is the thought process. Did you understand? What happened to Maximum Sub Array? Solved it quickly. Come over. Now let's show how easy it is. What an easy approach. Come over. Come to its Just Answer Question. What? Minimum all are same. What? Minimum all are same. There is a just opposite question. What do you need to find? Take all the array."
+    },
+    {
+      "start_time": 1202.96,
+      "end_time": 1231.99,
+      "text": "सबका सम निकाल लीजिए। पिछले बार जो मैक्सिमम सम वो खोज रहे थे। अब जो मिनिमम सम है वो खोज रहे हैं। बस इतना ही डिफरेंस है। कुछ नहीं करना है। बस कुछ नहीं करना है। ले लीजिए -2 1 -2 3 4 कुछ भी ले लीजिए। सबसे पहले हम क्या बोले? बेस्ट एंडिंग बेस्ट एंडिंग बेस्ट एंडिंग। जब i = 0 पे रहेगा तो बेस्ट एंडिंग क्या होगा? उसके आगे कुछ पीछे कुछ है ही नहीं। a 0 रहेगा। आंसर भी क्या रहेगा? आंसर भी क्या रहेगा? और कुछ आंसर अभी अवेलेबल नहीं है।",
+      "source": "caption",
+      "english_text": "Find out the sum of everything. The maximum sum they were searching for last time. Now we are searching for the minimum amount. That's the only difference. nothing to be done. Just nothing to do. Take -2 1 -2 3 4 Take anything. What should we say first? Best ending best ending best ending. What will be the best ending when i = 0? There is nothing in front of it, nothing behind it. a will remain 0. What will be the answer? What will be the answer? And some answers are not available yet."
+    },
+    {
+      "start_time": 1232.0,
+      "end_time": 1259.669,
+      "text": "a 0 रहेगा। ठीक है? कुछ नहीं करिए। लूप चलाइए। कहां से कहां तक? वन से n तक। लूप चलाइए। आइए। क्या करते हैं? कौन सा दो ऑप्शन है आपके पास? आपके पास पहले वाले से मिलने का ऑप्शन है या तो अपना कुछ करने का ऑप्शन है। बस इंट V1 क्योंकि सम का सब एरे है। मतलब क्योंकि सम का क्वेश्चन है। आपको सम खोजा गया है। तो क्या होगा? जो भी आपका बेस्ट एंड है उसमें एरे ऑफ़ आई जोड़ दीजिए।",
+      "source": "caption",
+      "english_text": "a will remain 0. Ok? Don't do anything. Run the loop. From where to where? From one to n. Run the loop. Come. What do you do? Which two options do you have? You have the option of meeting the first one or doing something of your own. Just int V1 because sum is a sub array. Meaning because there is a question of even. You have been found even. So what will happen? Whatever your best end is, add Array of I."
+    },
+    {
+      "start_time": 1259.679,
+      "end_time": 1286.39,
+      "text": "आपके पास दूसरा ऑप्शन क्या रहता है? अपना। कुछ नहीं करेंगे। हम अपना अकेले रहेंगे। अकेले रह लीजिए। अब दोनों का अच्छा आंसर कौन है? दोनों में अच्छा आंसर क्यों है? ये मिनिमम का क्वेश्चन है। तो दोनों में जो कम रहेगा वो अच्छा आंसर रहेगा। पिछले बार मैक्सिमम का क्वेश्चन था तो अच्छा मतलब मैक्सिमम होता था। इस बार मिनिमम है तो अच्छा मतलब मिनिमम है। तो मिनिमम ऑफ़ टू चॉइससेस ये और ये v1 v2। बस आंसर को कैसे अपडेट करेंगे? आंसर आपको मिनिमम चाहिए।",
+      "source": "caption",
+      "english_text": "What other option do you have? own. Will not do anything. We will remain alone. Stay alone. Now which is the better answer of the two? Why is there a good answer in both? This is a question of minimum. So the lesser of the two will be the good answer. Last time there was a question of maximum, the good meaning was maximum. This time it is minimum so good means minimum. So minimum of two choices is this and this v1 v2. Just how to update the answer? Answer: You want minimum."
+    },
+    {
+      "start_time": 1286.4,
+      "end_time": 1321.19,
+      "text": "सेम जैसे पिछले बार किए थे। आंसर इक्वल टू मीन मिन मैक्स नहीं मिन। आपको मिनिमम चाहिए। तो अच्छा मतलब मिनिमम आंसर और बेस्ट एंडिंग खत्म हो गई बात लूप बंद कर दीजिए यहां पर रिटर्न आंसर कर दीजिए देख लीजिए कितना लाइन बदला कुछ नहीं बदला एक मिनिमम मैक्सिमम हो गया है बस ये पिछले वाले प्रोग्राम में मैक्सिमम मैक्सिमम था यहां पे दोनों मिनिमम और मिनिमम हो गया है बस यही बदला है थॉट प्रोसेस सेम रहा थॉट प्रोसेस सेम रहा ये दो ये दोनों का डेंस एल्गोरिदम है लेकिन जो पैटर्न है जो",
+      "source": "caption",
+      "english_text": "Same as last time. Answer: Equal to mean min not max min. You want the minimum. So, it means that the minimum answer and the best ending are over, close the loop, return the answer here, see how many lines have changed, nothing has changed, one minimum has become a maximum, just this, in the previous program, the maximum was maximum, here both have become minimum and minimum, the only thing that has changed is that the thought process has remained the same, the thought process has remained the same, both of them have dense algorithms but the pattern is"
+    },
+    {
+      "start_time": 1321.2,
+      "end_time": 1355.43,
+      "text": "पैटर्न है या तो जो टेंपलेट है क्या है टेंपलेट है वो क्या है वो क्या है सेम है क्या है सेम थॉट प्रोसेस सेम है एंडिंग एट i निकालना है कभी भी कोई भी इस इस तरीके के क्वेश्चन में आपको क्या निकालना है एंडिंग एट i का निकालना है उसके लिए आपके पास अमूमन दो चॉइससेस रहेगा पहले वाले के साथ मिलो पहले वाले के साथ मिलो या तो अपना स्टार्ट करो अपना स्टार्ट करो और दोनों में जो भी अच्छा लगे वो ले लीजिए और अपने रिजल्ट को अपडेट करते रहिए",
+      "source": "caption",
+      "english_text": "The pattern is either what is the template, what is the template, what is that, what is that, what is the same, what is the same thought process, what is the ending at i. Any time, in this type of question, what do you have to remove, what is the ending at i, for that you will generally have two choices, meet with the first one, meet with the first one, either start your own, start your own and take whatever you like in both and check your result. keep updating"
+    },
+    {
+      "start_time": 1355.44,
+      "end_time": 1390.149,
+      "text": "हर बार। बस इतना ही काम करना रहता है। चलिए आइए। अब ये क्वेश्चन देखिए। ये एक और क्वेश्चन है जिसमें हम लोग अभी तक जो पढ़े हैं ना उसमें एक थोड़ा सा ट्विस्ट आ जाएगा। क्या ट्विस्ट आ जाएगा वो देखिए। ठीक है? सेम क्वेश्चन है। सम के जगह आपको क्या फाइंड करना है? प्रोडक्ट। बाकि सब सेम है आपको मैक्सिमम। प्रोडक्ट सब एरे मतलब जितने भी सब एरे आप लिख सकते हैं लिख लीजिए। सबका क्या निकाल लीजिए? प्रोडक्ट निकाल लीजिए मतलब प्रोडक्ट। पूरे का प्रोडक्ट उसमें जो भी मैक्स हो वो रिटर्न कर दीजिए। ठीक है? अभी तक हम लोग जो पढ़े हैं वही करते हैं। क्या पढ़े थे? बेस्ट एंडिंग रखना है किस तक? i तक। अच्छा। और",
+      "source": "caption",
+      "english_text": "Every time. This much work remains to be done. Let's come. Now look at this question. This is another question in which there will be a slight twist in what we have read so far. Let's see what twist will happen. Ok? Same question. What do you need to find in place of sum? Product. Everything else is same, you have maximum. Product sub array means write as many sub arrays as you can. What should we make of it all? Take out the product, meaning the product. Please return the entire product whatever is the maximum. Ok? Till now we do only what we have read. What did you read? To whom to keep the best ending? Till i. Good. and"
+    },
+    {
+      "start_time": 1390.159,
+      "end_time": 1423.909,
+      "text": "अपने रिजल्ट को अपडेट करते रहना है। दो ही स्टेप पढ़े थे। तो चलिए बेस्ट एंडिंग एट शुरू में बेस्ट एंडिंग क्या होगा? जब i 0 पे होगा तब तो पीछे कुछ है ही नहीं। तो a 0 होता है। ठीक है? -2 कर दीजिए। और रेस्ट बी अभी भी कुछ है नहीं। वो भी a 0 होता है। तो उसको भी -2 कर दीजिए। अब देखिए जब हम जब हम जब हम देखिए शुरू में हो गया ना? अब देखिए अब अपना जो हम लोग पढ़े हैं उसी को अप्लाई करेंगे। कोई नया चीज नहीं करेंगे। i = 1 पे आएंगे। i = 1 पे आपके पास क्या चॉइस रहता है? पीछे वाले के साथ मिल जाओ जो अभी तक का बेस्ट एंडिंग है और अपना बना लो दो चॉइस रहता है। तो पीछे",
+      "source": "caption",
+      "english_text": "You have to keep updating your results. Had read only two steps. So let's start with the best ending. What will be the best ending? When i is at 0 then there is nothing behind. So a is 0. Ok? Make it -2. And Rest B is still nothing. That also a is 0. So make that also -2. Now see when we when we when we see it happened in the beginning right? Now see, we will apply what we have studied. Will not do anything new. Will come at i = 1. What choice do you have when i = 1? Join the last one which is the best ending so far and make your own, there are two choices. so behind"
+    },
+    {
+      "start_time": 1423.919,
+      "end_time": 1455.59,
+      "text": "वाला क्या था -2। तो या तो ये पीछे वाले के साथ मिल के -6 बना सकता है या तो ये खुद रह के थ्री बना सकता है। दोनों में क्या बड़ा लग रहा है आपको? क्योंकि मैथ्स का क्वेश्चन है थ्री बड़ा लग रहा है। ऑब्वियस सी बात है। तो हम लोग रिजल्ट को अपडेट करके थ्री लिख देंगे और मैक्स एंडिंग ये हो जाएगा। अच्छा। अब देखिए, बहुत ध्यान से देखिए। बहुत ध्यान से देखिए। यहीं पे खेल बिगड़ेगा। i = 2 मतलब -4। इसके पास क्या चॉइस है? इसके पास चॉइस है कि जो अभी तक का बेस्ट एंडिंग है, अभी तक का बेस्ट एंडिंग थ्री बन गया है। बेस्ट वही है ना अभी तक का। तो या तो ये थ्री के साथ मिलके -12 बना ले या तो ये खुद ही रह",
+      "source": "caption",
+      "english_text": "What was the one -2? So either he can make a 6 with the one behind him or he can make a 3 by himself. Which of the two seems bigger to you? Because the question in maths is three, it seems big. It's an obvious thing. So we will update the result and write three and this will be the max ending. Good. Now look, look very carefully. Look very carefully. This is where the game will go wrong. i = 2 means -4. What choice does he have? It has the choice of what is the best ending ever, becoming the best ending three ever. That is the best till now. So either it combines with three to make -12 or it remains alone."
+    },
+    {
+      "start_time": 1455.6,
+      "end_time": 1488.23,
+      "text": "के -4 बने। दो ही चॉइस है। अब देखिए दोनों में बड़ा कौन सा है? दोनों में -4 बड़ा है। -12 और -4 में -4 बड़ा है। तो आप अपना बेस्ट एंडिंग इसको बना देंगे। और आप देखेंगे कि क्या मेरा रिजल्ट इससे छोटा आपको पता चलेगा मेरा रिजल्ट छोटा नहीं है। तो आप रिटर्न क्या कर देंगे? आप थ्री रिटर्न कर देंगे पूरे एरे में। ठीक है? अच्छी बात है। लेकिन देखिए इस एरे को अगर आप देखिएगा पूरे एरे को देखिएगा। इसका मैक्सिमम प्रोडक्ट क्या है? इसका मैक्सिमम प्रोडक्ट थ्री नहीं है। इसका मैक्सिमम प्रोडक्ट है -2 * 3 * -4 जो कि है 24।",
+      "source": "caption",
+      "english_text": "Became K-4. There are only two choices. Now see which of the two is bigger? -4 is bigger in both. Among -12 and -4, -4 is larger. So you will make this your best ending. And you will see if my result is smaller than this you will know that my result is not smaller. So what will you do in return? You will return three to the entire array. Ok? It's a good thing. But look at this array, if you look at it you will see the entire array. What is its maximum product? Its maximum product is not three. Its maximum product is -2 * 3 * -4 which is 24."
+    },
+    {
+      "start_time": 1488.24,
+      "end_time": 1521.99,
+      "text": "इसका प्रोडक्ट तो ये है। क्यों? इसका प्रोडक्ट तो ये है। हम लोग रिटर्न कर रहे हैं थ्री। मतलब हम लोग सिर्फ ये वाला एरे ले रहे हैं मतलब एरे ले रहे हैं। लेकिन आप पूरे एरे को अगर प्रोडक्ट कर देते तो आपको 24 मिल जाता जोकि मैक्सिमम है जो कि आंसर में होना चाहिए था। तो इसमें तो आप बोलेंगे कि आपका तो फेल हो गया पूरा थॉट प्रोसेस तो गलत है। इसमें तो आप एल्गोरिदम पढ़ाए नहीं पैटर्न पढ़ाए नहीं तो गलत हो गया। अच्छा। गलत क्यों हो गया? देखिए गलत क्यों हो गया। मान लीजिए सारे एरे में सारे एरे में 2 3 4 सारे अगर पॉजिटिव एलिमेंट रहते। सारे पॉजिटिव एलिमेंट रहते तब तो ये बराबर चलता। अब मान लीजिए फोर के पास अगर चॉइस है कि पहले का जो प्रोडक्ट",
+      "source": "caption",
+      "english_text": "Its product is this. Why? Its product is this. We are returning three. Meaning, we are only taking this one array, meaning we are taking the array. But if you had produced the entire array, you would have got 24, which is the maximum that should have been in the answer. So in this you will say that your entire thought process has failed and is wrong. In this, you teach the algorithm and not the pattern, otherwise it would have gone wrong. Good. Why did it go wrong? See why it went wrong. Suppose there are 2 3 4 positive elements in the entire array. If all the positive elements were there then it would have continued smoothly. Now suppose that if Four has the choice that the product of the first"
+    },
+    {
+      "start_time": 1522.0,
+      "end_time": 1556.39,
+      "text": "है उसमें कर लो या तो अपना बना लो तो पॉजिटिव में तो ये बराबर चलता। कोई दिक्कत नहीं होती। दिक्कत क्यों हो गई? दिक्कत होगी क्यों गई? दिक्कत नेगेटिव के कारण हो गई। अच्छा नेगेटिव में क्या होता है ना कि नेगेटिव * नेगेटिव इक्वल टू पॉजिटिव बन जाता है। जब आप प्रोडक्ट करते हैं तो यही दिक्कत है ना? सम में कोई दिक्कत नहीं है। नेगेटिव + नेगेटिव = नेगेटिव और पॉजिटिव + पॉजिटिव इक्वल टू पॉजिटिव। ये बहुत सीधा खेल है। लेकिन जो ये उल्टा हो जाता है नेगेटिव * नेगेटिव मतलब ये पॉजिटिव बन जाता है। अच्छा अब देखिए अब देखिए एक",
+      "source": "caption",
+      "english_text": "If you do it in it or make it your own then it will work equally in positive. There is no problem. Why did the problem arise? Why would there be a problem? The problem was caused by negativity. Well, what happens in negative is not that negative * negative becomes equal to positive. That's the problem when you do a product, isn't it? There is no problem in even. Negative + Negative = Negative and Positive + Positive equal to positive. This is a very simple game. But what it turns out to be negative * Negative means it becomes positive. ok now look now look a"
+    },
+    {
+      "start_time": 1556.4,
+      "end_time": 1589.269,
+      "text": "सिस्टैटिक तरीके से सोचिए ओरिजिनल एरे क्या था? ये -2 था और ये -4 था। -2 के पास तो कोई चॉइस थी नहीं क्योंकि ये पहला एलिमेंट है तो -2 को रहने देते हैं। थ्री के पास दो चॉइस थी। क्या थी? थ्री के पास 3 * -2 करने का या तो थ्री रखने का। तो ये कोशिश किया कि थ्री रखें। अच्छा। फोर पे जब आए हम लोग, सॉरी -4 पे जब आए। इसको हम लोग दो ही चॉइस दे रहे हैं। या तो ये खुद रह ले ये तो बहुत अच्छी बात है ये तो रखना भी चाहिए। या तो ये -4 * 3 करके -12 बना ले। लेकिन लेकिन लेकिन एक और चॉइस है इसमें जो हम लोग इसको दे नहीं पा रहे हैं।",
+      "source": "caption",
+      "english_text": "Think Systematically What was the original array? This was -2 and this was -4. There was no choice for -2 because it is the first element, so let's leave -2. Three had two choices. What was it? To make 3*-2 near three or to keep three. So tried to keep it three. Good. When we came on 4, sorry - when we came on 4. We are giving him only two choices. Either you keep it yourself, it is a very good thing, you should keep it. Either make it -4 * 3 and make -12. But but but there is another choice in this which we are not able to give it."
+    },
+    {
+      "start_time": 1589.279,
+      "end_time": 1622.87,
+      "text": "क्या चॉइस है कि अगर ये -4 * -6 कर लेता तो ये 24 बन जाता। पहले का होता है ना पहले का यहां तक का -6 अगर हम कंसीडर करें तो 4 * -6 करेगा तो 24 बन जाएगा। अच्छा ये -6 आया कहां से? ये -6 आया कहां से? -6 ये है। ये -6 यहां से आएगा। देखिए इस ये वाला -6 है। इसका मतलब कि फोर के पास फोर, फोर क्या है? है फोर नहीं है। -4 है। नेगेटिव है। नेगेटिव है। तो या तो इसके पास है कि अभी तक का जो मैक्सिमम प्रोडक्ट चल रहा है, अभी तक का जो एंडिंग वाला मैक्सिमम",
+      "source": "caption",
+      "english_text": "What is the choice that if it had done -4*-6 it would have become 24. The first one is not the first one, even -6. If we consider, then 4 * -6 will become 24. Well, where did this -6 come from? Where did this -6 come from? -6 This is. This-6 will come from here. Look, this one is -6. This means that four has four, what is four? Is four is not. Is -4. Is negative. Is negative. So either it has the maximum product running so far or the maximum ending product so far."
+    },
+    {
+      "start_time": 1622.88,
+      "end_time": 1656.149,
+      "text": "प्रोडक्ट चल रहा है, उसमें से करके कुछ ये बना ले या तो ये अपना रह ले या फिर या फिर अभी तक का जो मिनिमम प्रोडक्ट चल रहा है, मिनिमम प्रोडक्ट चल रहा है, अगर कोई प्रोडक्ट नेगेटिव में चल रहा है अभी तक, उससे अगर ये जुड़ जाए किसी तरीके से, तो ये पॉजिटिव बन जाएगा। क्योंकि नेगेटिव इंटू नेगेटिव क्या होता है? पॉजिटिव होता है। मतलब अगर कोई पॉजिटिव है उसको तो कोई डरने की बात ही नहीं है। वो तो या तो अपना खुद रहेगा या तो अभी तक का जो बेस्ट वाला मैक्सिमम प्रोडक्ट चल रहा है मैक्सिमम एंडिंग एट I - 1 जो भी चल रहा होगा उसके साथ प्रोडक्ट करके देख ले। नेगेटिव के साथ",
+      "source": "caption",
+      "english_text": "The product is running, make something out of it, either keep it your own or else the minimum product which is running till now, the minimum product is running, if any product is running in negative till now, if it gets connected with it in some way, then it will become positive. Because what is negative into negative? Is positive. Meaning if someone is positive then there is nothing to fear. Either it will be your own or try the product with whatever maximum product is running till now, Maximum Ending at I - 1. with negative"
+    },
+    {
+      "start_time": 1656.159,
+      "end_time": 1689.59,
+      "text": "एक प्रॉब्लम है कि नेगेटिव को आपको तीन ऑप्शन देना पड़ेगा। क्या तीन ऑप्शन देना पड़ेगा? अगर ये नेगेटिव है। अभी तक का जो मिनिमम प्रोडक्ट चल रहा है मतलब हो सकता है कि वो प्रोडक्ट पॉजिटिव भी हो लेकिन हो सकता है कि जो अभी तक का जो मिनिमम चल रहा है वो नेगेटिव हो। क्या हो? नेगेटिव हो। जैसे यहां हम लोग देखें कि मिनिमम प्रोडक्ट -4 से पहले क्या निकला आपको? -6 ये क्या था? मिनिमम प्रोडक्ट था। मिनिमम एंडिंग वाला प्रोडक्ट था। तो इसके पास एक तो है कि ये मिनिमम एंडिंग वाले के साथ जोड़ के खुद को बना ले। इससे क्या होगा कि अगर मिनिमम वाला भी बाय केस इन केस बाय लक",
+      "source": "caption",
+      "english_text": "There is a problem that you will have to give three options for negative. Will I have to give three options? If it is negative. The minimum product that is running so far may mean that the product may be positive but it is possible that the minimum product that is running so far may be negative. what are you? Be negative. Like here let us see what you got before Minimum Product-4? -6 What was this? There was minimum product. It was a product with minimal ending. So it has one that it can combine with the one with minimal ending to make itself. What will happen if even the minimum one is by case in case by luck?"
+    },
+    {
+      "start_time": 1689.6,
+      "end_time": 1721.75,
+      "text": "नेगेटिव हुआ तो ये पॉजिटिव बन जाएगा। ये पॉजिटिव बन जाएगा। एक इसके पास है कि अभी तक का जो मैक्सिमम वाला चल रहा है, मैक्सिमम वाला चल रहा है। हो सकता है ये पॉजिटिव हो, नेगेटिव हो, कुछ भी हो, उसके साथ ये जोड़ के कुछ बना ले। ठीक है? इसमें ये पॉजिटिव भी रह सकता है, नेगेटिव भी रह सकता है। या तो इसके पास एक ऑप्शन है कि खुद को ले लो बस। ये तो इन केस डेफिनेटली नेगेटिव आएगा। तो अब देखिए, जब आप सिर्फ मैक्सिमम एंडिंग ट्रैक कर रहे हैं। इस केस को आप हैंडल नहीं कर पा रहे हैं। नहीं कर पा रहे हैं। इसके लिए इसके लिए छोटा सा ट्विस्ट क्या करना है?",
+      "source": "caption",
+      "english_text": "If it is negative it will become positive. This will become positive. One thing it has is that till now the maximum one is going on, the maximum one is going on. It may be positive, negative, whatever, combine it with it and create something. Ok? In this it can be positive as well as negative. Either there is an option to take it yourself. This will definitely come negative in this case. So now see, when you are just tracking the maximum ending. You are not able to handle this case. Can't do it. What's the little twist to it?"
+    },
+    {
+      "start_time": 1721.76,
+      "end_time": 1747.11,
+      "text": "आपको एक की जगह दो तरीके का एंडिंग ट्रैक करना पड़ेगा। क्या हम लोग क्या ट्रैक करते थे? याद कीजिए बेस्ट एंडिंग। बेस्ट एंडिंग ट्रैक करते थे ना। हम क्या बोले? बेस्ट क्या होगा? बेस्ट क्वेश्चन के हिसाब से डिपेंड करेगा कि वो मैक्सिमम है कि मिनिमम है जो भी। बेस्ट एंडिंग हम लोग को अब हम लोग देख लिए कि नेगेटिव को कौन सा बेस्ट एंडिंग चाहिए। नेगेटिव को ज्यादा फायदा होता है कि अगर आप उसको मिनिमम के साथ करके देखें। एक बहुत लॉजिकल सी बात है।",
+      "source": "caption",
+      "english_text": "You'll have to track two endings instead of one. What did we keep track of? Remember the best ending. Used to do the best ending track. What should we say? What would be best? The best will depend on the question whether it is maximum or minimum. Best Ending Now we have seen which is the best ending for a negative. Negative is more beneficial if you try it with minimum. It is a very logical thing."
+    },
+    {
+      "start_time": 1747.12,
+      "end_time": 1781.11,
+      "text": "मान लीजिए -4 को आप वन से इंटू करें और -4 को आप टू से इनपुट करें तो इसका आंसर क्या आएगा? -4। इसका क्या आएगा? -8। देखिए बड़ा कौन सा है? बड़ा -4 है। इसको आप छोटे वाले के साथ जब इंटू किए ना तो ये ठीक-ठाक रहा। नेगेटिव को आप जितने बड़े एलिमेंट के साथ इंटू करेंगे ना रिजल्ट उतना खराब हो जाएगा। क्या बोल रहे हैं? अगर आप नेगेटिव फोर को 1000 से मल्टीप्लाई करिएगा तो वो नेगेटिव 4000 हो जाएगा। लेकिन अगर आप नेगेटिव फोर को एक से मल्टीप्लाई करिएगा तो वो नेगेटिव फोर रहेगा। तो नेगेटिव फोर बड़ा होता है नेगेटिव से तो उल्टा हो जाता है। मतलब पॉजिटिव को तो अभी तक क्या",
+      "source": "caption",
+      "english_text": "Suppose you input -4 through one and -4 through two, then what will be the answer? -4. What will come of this? -8. See which one is bigger? Big is -4. When you entered it with the smaller one, it was fine. The bigger the element you enter the negative in, the worse the result will be. What are you saying? If you multiply negative four by 1000, it will become negative 4000. But if you multiply negative four by one, it will remain negative four. So negative four is bigger than negative one, so the reverse is true. I mean, what about positive yet?"
+    },
+    {
+      "start_time": 1781.12,
+      "end_time": 1812.23,
+      "text": "चाहिए? पॉजिटिव को तो अभी तक का मैक्स एंडिंग वाला चीज़ चाहिए। लेकिन जो नेगेटिव एलिमेंट है जो नेगेटिव आई वाला एलिमेंट है उसको क्या चाहिए? उसको मिन एंडिंग वाला प्रोडक्ट चाहिए। उसको मिन एंडिंग वाला चॉइस आपको देना पड़ेगा। आप उसको मैक्स देंगे तो हालत और खराब हो जाएगी। क्यों? क्योंकि पॉजिटिव को तो आप आप कोशिश करेंगे कि जितने बड़े नंबर से हो सकता है उतने बड़े नंबर से प्रोडक्ट करें। लेकिन नेगेटिव एलिमेंट को आप कोशिश करते हैं कि जितना छोटा नंबर हो सके उससे हम इंटू करें उसको। इसीलिए पॉजिटिव का तो ठीक है पॉजिटिव अभी तक सम चल रहा था तो ठीक था।",
+      "source": "caption",
+      "english_text": "Want? Positive needs the thing with the maximum ending till date. But what does the negative element, the element with negative eye, require? He wants a product with min ending. You will have to give him the choice of min ending. If you give him Max, his condition will get worse. Why? Because you will try to produce the positive ones in as large numbers as possible. But you try to include the negative element in as small a number as possible. That's why positive is fine, if positive was running even till now then it was fine."
+    },
+    {
+      "start_time": 1812.24,
+      "end_time": 1842.389,
+      "text": "नेगेटिव एलिमेंट का प्रोडक्ट जब आता है ना तो ये उल्टा हो जाता है रूल। तो नेगेटिव के लिए बेस्ट एंडिंग क्या होगा? उसके लिए बेस्ट एंडिंग मैक्सिमम एंडिंग नहीं मिनिमम एंडिंग उससे पहले वाला। तब ये डिसाइड कर सकता है कि अगर हमको एक मिनिमम एंडिंग मिल गया तो क्या हम इसके साथ प्रोडक्ट कर लें खुद को या तो हम खुद ही रह लें। तब ये डिसीजन ले पाएगा। इसके लिए आपको क्या करना पड़ेगा? हम लोग बेस्ट एंडिंग ट्रैक करते थे। इसमें आप बेस्ट एंडिंग मत ट्रैक कीजिए। आप एक मैक्सिमम एंडिंग और एक मिनिमम एंडिंग ट्रैक कर लीजिए। कैसे? आइए।",
+      "source": "caption",
+      "english_text": "When the product of negative elements comes, this rule gets reversed. So what would be the best ending for a negative? The best ending for him is not the maximum ending but the minimum ending before that. Then it can decide that if we get a minimum ending, should we product ourselves with it or should we remain ourselves. Then he will be able to take the decision. What will you have to do for this? We used to track the best ending. Don't track the best ending in this. You track a maximum ending and a minimum ending. How? Come."
+    },
+    {
+      "start_time": 1842.399,
+      "end_time": 1876.31,
+      "text": "सबसे पहले एरे ये है। थ्री और फोर। आप एक मिन एंडिंग ट्रैक कर लीजिए। मीन एंडिंग मतलब आई पे जो खत्म होगा मीन एंडिंग मतलब i वाले इंडेक्स पे उस पे मिनिमम आंसर क्या है मिनिमम प्रोडक्ट क्या है तो सिंपल सी बात है कि शुरू में तो ये भी a ज़ीरो होगा और मैक्स एंडिंग मतलब i पे जो खत्म हुआ है वो भी i a 0 होगा और शुरू में आपका रिजल्ट भी a 0 होगा क्योंकि और कुछ है नहीं। ठीक है? आइए लूप चलाइए। i = सॉरी वन i &lt; ni + अच्छा। पहले आपके पास कितने चॉइससेस होते दो चॉइस कि एक तो वो जो बेस्ट एंडिंग के",
+      "source": "caption",
+      "english_text": "First of all this is the array. Three and four. You track a min ending. Mean ending means whatever ends on i. Mean ending means whatever ends on i. What is the minimum answer on that index. What is the minimum product? So the simple thing is that initially this a will also be zero and Max ending means whatever ends on i will also be i a 0 and initially your result will also be a 0 because there is nothing else. Ok? Let's run the loop. i = sorry one i < ni + good. First, how many choices would you have? Two choices, one with the best ending."
+    },
+    {
+      "start_time": 1876.32,
+      "end_time": 1905.75,
+      "text": "साथ करके बना लो या तो खुद बना लो। अब आपके पास दो तरीके के बेस्ट एंडिंग है। एक मीन है एक मैक्स है। तो फॉर सिंपलीसिटी पर्पस कि हमको हर आई को देखना ना पड़े कि ये पॉज़िटिव है कि नेगेटिव है। तीन बना लीजिए। तीन वेरिएबल बना लीजिए। क्या? सबसे पहला वैल्यू तो ये खुद रहेगा। ये किसी के डिपेंडेंट नहीं रहेगा। ये खुद शुरू करेगा। वेरी गुड। रहिए। दूसरा क्या चॉइस है? कि ये जो मीन एंडिंग है, मीन एंडिंग है उसके साथ ये जुड़ जाए। उसके साथ ये जुड़ जाए। तो ये तो दूसरा हो गया। तीसरा चॉइस क्या है?",
+      "source": "caption",
+      "english_text": "Make it together or make it yourself. Now you have two types of best endings. One is mean and one is max. So for simplicity purpose, we do not have to check each eye whether it is positive or negative. Make three. Make three variables. What? The first value will be this itself. He will not be dependent on anyone. It will start itself. very good. Stay. What is the other choice? That it should connect with the mean ending, the mean ending. Let this join him. So this became the second one. What is the third choice?"
+    },
+    {
+      "start_time": 1905.76,
+      "end_time": 1938.23,
+      "text": "तीसरा चॉइस क्या है? जो मैक्स एंडिंग है जो मैक्स एंडिंग है उसके साथ ये जुड़ जाए। अब ये देखिए ये नेगेटिव पॉजिटिव दोनों को कवर कर लिया। आप चाहते तो ऐसा कर सकते हैं कि देखिए पॉजिटिव को किससे फर्क पड़ता है? मैक्स एंडिंग से। नेगेटिव को कौन चाहिए? मेन एन्डिंग वाला तो आप उसके हिसाब से कर सकते थे। लेकिन सिंपलीसिटी पर्पस तीन ही वेरिएबल बनाना पड़ेगा। तीन बना। पहले हम दो बनाते थे। अब तीन बना लीजिए। उसके बाद क्या करते थे? बेस्ट एंडिंग को अपडेट करते थे। अब बेस्ट एंडिंग कितने तरीके का है आपके पास? दो तरीके का। एक मैक्स एंडिंग, एक मीन एंडिंग। उसी हिसाब से दोनों अपडेट होगा। कैसे? मैक्स एंडिंग क्या बोलता है",
+      "source": "caption",
+      "english_text": "What is the third choice? Whichever max ending is there, it should connect with whatever is the max ending. Now see this, it has covered both negative and positive. If you want, you can do this and see what difference the positive makes? From Max Ending. Who needs negativity? You could have done the main ending accordingly. But for simplicity purpose only three variables will have to be created. Make three. Earlier we used to make two. Now make three. What did you do after that? Used to update the best ending. Now how many ways of best ending do you have? Of two ways. A max ending, a mean ending. Both will be updated accordingly. How? what does max ending say"
+    },
+    {
+      "start_time": 1938.24,
+      "end_time": 1967.59,
+      "text": "कि i पे आने वाला I पे खत्म होने वाला मैक्सिमम प्रोडक्ट क्या है? ठीक है? यही बोलता है। तो मैक्स ऑफ़ इन तीनों का मैक्स तो V1 कर लीजिए और मैक्स V2, V3। इसका क्या मतलब है? सबसे पहले V2 और V3 में जो मैक्स है वो निकाल लो और फिर उसके आंसर और V1 में देख लो कौन सा मैक्स है और उसको बना लो। सिंपल सी बात है। मीन एंडिंग क्या बोलता है? मीन एंडिंग बोलता है कि हम i पे खत्म होने वाले मिनिमम प्रोडक्ट बनना चाहते हैं। इसको बस उल्टा कर लीजिए। मीन",
+      "source": "caption",
+      "english_text": "What is the maximum product coming to i and ending at i? Ok? This is what it says. So the max of these three should be V1 and the max should be V2, V3. What does it mean? First find out the max in V2 and V3 and then find out which is the max in V1 and V1 and make it. It's a simple thing. What does the mean ending say? Mean ending says that we want to be the minimum product ending in i. Just turn it upside down. Pisces"
+    },
+    {
+      "start_time": 1967.6,
+      "end_time": 1999.59,
+      "text": "v1 मीन v2 v3 बस खत्म हो गया। दोनों बेस्ट एंडिंग अपडेट हो गया आपका यहां पे। सिंपल सी बात है। उसके बाद क्या करता है? रिजल्ट अपडेट करते हैं। रिजल्ट क्या होता है? रिजल्ट आपका जो क्वेश्चन है आपका। क्वेश्चन आपसे मैक्सिमम पूछा है। रिजल्ट इक्वल टू मैक्स ऑफ़ रिजल्ट और अब इसके बाद हम लोग लिखते थे बेस्ट एंडिंग। आपके पास दो तरीके का बेस्ट एंडिंग है। तो आप एक काम करिए ये लिख लीजिए मैक्स ऑफ़ यहां पे मैक्स एंड ए मतलब ये वाला पहला और मीन एंड",
+      "source": "caption",
+      "english_text": "v1 mean v2 v3 just finished. Both the best endings are updated here. It's a simple thing. What does he do after that? Let's update the results. What is the result? The result is your question. Maximum questions have been asked of you. Result equal to max of result and now after this we used to write best ending. You have two types of best endings. So you do one thing, write max of here, max and a means this one is the first and mean and"
+    },
+    {
+      "start_time": 1999.6,
+      "end_time": 2033.19,
+      "text": "मीन एंड मतलब ये वाला। तो दोनों के साथ देख लीजिए। इन दोनों में अब ऑब्वियस सी बात है। देखिए मैक्स एंड और मीन एंड मैक्स आपको क्या बोलता है? i पे खत्म होने वाला मैक्सिमम प्रोडक्ट। मीन एंड क्या बोलता है? आई पे खत्म होने वाला मिनिमम प्रोडक्ट। दोनों में से बड़ा कौन रहेगा? ऑब्वियस्ली मैक्स एंडिंग बड़ा रहेगा। तो आप चाहते तो सिर्फ मैक्स एंडिंग लिख लेते लेकिन समझने के लिए क्योंकि हम लोग रेस को हमेशा बेस्ट एंडिंग से देखते थे। यहां पे दो तरीके का बेस्ट एंडिंग है तो हम लोग दोनों से कर देख लेंगे। कोई दिक्कत उसमें नहीं है। ये लिख लीजिए। लूप बंद कर दीजिए और रिटर्न रेस्ट। सिंपल बात है। सेम थॉट प्रोसेस था ना? कुछ बदला नहीं। क्या बदला?",
+      "source": "caption",
+      "english_text": "Mean and means this one. So see with both of them. Now there is something obvious between these two. See what Max End and Mean End Max say to you? Maximum product ending at i. What does mean end say? Minimum product ending on eye. Who will be the elder among the two? Obviously Max Ending will be big. So if you wanted, you could have just written the max ending but for the sake of understanding because we always watched the race with the best ending. There are two ways of best ending here, so we will try to do both. There is no problem in that. Write this down. Close the loop and return rest. It's a simple thing. Was it the same thought process? Nothing changed. What changed?"
+    },
+    {
+      "start_time": 2033.2,
+      "end_time": 2065.51,
+      "text": "बेस्ट एंडिंग का मतलब बदल गया। बेस्ट एंडिंग का मतलब बदल गया। किसके लिए? पॉजिटिव एलिमेंट के लिए। बेस्ट एंडिंग का मतलब कुछ और है। नेगेटिव एलिमेंट के लिए बेस्ट देखिए बेस्ट का मतलब मिनिमम मैक्सिमम नहीं होता है। बेस्ट मतलब मेरे लिए क्या बेस्ट है। मेरे लिए जो बेस्ट है हम तो वो देखेंगे ना। हम थोड़ी देखेंगे कि पूरा दुनिया के लिए क्या बेस्ट है। हो सकता है किसी के लिए बेस्ट कुछ और हो। हो सकता है किसी और आदमी के लिए वो बेस्ट कुछ और हो। तो पॉजिटिव के लिए बेस्ट होता है कि अभी तक का जो मैक्सिमम प्रोडक्ट है वो हमको दो ताकि क्योंकि हम पॉजिटिव को पॉजिटिव से जितना बड़े नंबर से मल्टीप्लाई करेंगे उतना मजा आएगा। नेगेटिव बोलता है कि हमको जितना छोटा हो सकता है उतना दो।",
+      "source": "caption",
+      "english_text": "The meaning of best ending changed. The meaning of best ending changed. For whom? For positive element. Best ending means something else. For negative elements see best, best does not mean minimum maximum. Best means what is best for me. We will see what is best for me. We will see what is best for the whole world. Maybe something else is best for someone. It may be that for some other person the best thing may be something else. So for the positive, it is best to give us the maximum product so far so that the bigger the number we multiply the positive with the positive, the more fun we will enjoy. Negative says give us as little as we can."
+    },
+    {
+      "start_time": 2065.52,
+      "end_time": 2099.349,
+      "text": "हमको हो सके तो नेगेटिव ही दे दो। तो हम उससे मल्टीप्लाई कर लेंगे। नेगेटिव अपने प्रोडक्ट के लिए हमेशा छोटा नंबर ढूंढता है। पॉजिटिव अपने प्रोडक्ट के लिए हमेशा बड़ा नंबर ढूंढता है। ये प्रॉब्लम किसमें है? ये प्रॉब्लम सम में नहीं था। क्योंकि सम में तो नंबर पॉजिटिव हो या नेगेटिव हो बोलता है कि जितना बड़ा नंबर हमको दोगे सम करने के लिए हमको उतना अच्छा लगेगा। यही होता है ना लॉजिक कि जितना बड़ा नंबर हमको दोगे हम उतना अच्छे से रहेंगे। लेकिन नेगेटिव में ये बिल्कुल उल्टा हो जाता है। तो नेगेटिव में जो बेस्ट का मतलब है वो बदल गया है किसके लिए? नेगेटिव के लिए और पॉजिटिव के लिए। बस इतना सा चेंज था। तो एक बेस्ट एंडिंग की जगह दो, दो बेस्ट स्टैंडिंग रख लीजिए, एक मिनिमम बेस्ट",
+      "source": "caption",
+      "english_text": "If possible, give us only negative. So we will multiply that. Negative always looks for small numbers for its products. Positive always looks for big numbers for its products. What is this problem? This problem was not even there. Because in a sum, whether the number is positive or negative, it says that the bigger the number you give us, the better we will feel to make the sum. This is the logic, the bigger the number you give us, the better off we will be. But in negative it becomes completely opposite. So the meaning of best in negative has changed for whom? For negative and for positive. There was just this much change. So instead of one best ending, keep two, two best standings, one minimum best."
+    },
+    {
+      "start_time": 2099.359,
+      "end_time": 2132.31,
+      "text": "एंडिंग रख लीजिए, एक मैक्सिमम रख लीजिए। जो नंबर जिस हिसाब से है वहां दे दीजिए। अगर आपको इतना तामझाम नहीं करने का मन है, सिंपल तीन चॉइस बना लीजिए, दो की जगह तीन चॉइस बना ली। तो इसमें क्या हो रहा है? हम हर हर नंबर पे तीन चॉइसेस कर रहे हैं। एक तो ये अपने पीछे वाले मीन से मिल लो। एक अपने पीछे वाले मैथ्स से मिल लो और एक खुद ही रह लो। खुद ही रह लो। खुद ही रह लो। किसी से मत मिलो। खुद ही रह लो। बस खत्म हो गया। तीन क्वेश्चन देखिए। तीन क्वेश्चन किए हम लोग। तीन क्वेश्चन। तीनों क्वेश्चन क्या है? मीडियम लेवल का क्वेश्चन है लीड कोड में। मीडियम लेवल का। अगर हम सिर्फ",
+      "source": "caption",
+      "english_text": "Keep the ending, keep a maximum. Give the number as per the requirement. If you don't want to go through so much fuss, just make three choices instead of two. So what's happening in this? We are doing three choices on every number. Firstly, meet the Pisces behind you. One should meet the maths behind you and the other should be left to oneself. Be yourself. Be yourself. Don't meet anyone. Be yourself. It's over. Look at three questions. We asked three questions. Three questions. What are the three questions? Medium level question is in lead code. Medium level. if we just"
+    },
+    {
+      "start_time": 2132.32,
+      "end_time": 2165.349,
+      "text": "आपको कैडेंस एल्गोरिदम याद करा लेते ना। कैडेंस एल्गोरिदम याद करा लेते। तो सबसे पहले तो आपको हम मैक्सिमम का याद कराते। फिर मिनिमम का याद कराते। फिर आपसे प्रोडक्ट नहीं बनता तो प्रोडक्ट वाला याद कराते। तो कितना याद करिएगा? ऐसा बहुत सारा क्वेश्चन है अभी। याद मत किया करिए। तो इसीलिए थॉट प्रोसेस। थॉट प्रोसेस क्या है? आई आई पे एंड होने वाला चीज़ देखना है। भाई अपने हिसाब से हमको बेस्ट लेना है। उसके साथ मिलके या तो अलग से चॉइस ले लेनी है। जो अच्छा चॉइस है उसको रिजल्ट पे अपडेट कर देना है। तो बस हर हर हर कोड देखिए। मतलब मुश्किल से 10 लाइन का कोड है। तीनों कोड जाइए इसको कोड करिए और",
+      "source": "caption",
+      "english_text": "Would have reminded you of the Cadence algorithm. Cadence would have memorized the algorithm. So first of all let us remind you of the maximum. Then remind about the minimum. Then if the product is not made by you then the product person would remind you. So how much will you remember? There are a lot of such questions right now. Don't remember. So that's why the thought process. What is thought process? I'll pay and see what's going to happen. Brother, we have to take the best according to us. Either together with him or take the choice separately. The good choice has to be updated on the result. So just look at the har har har code. Meaning it is barely 10 lines of code. All three codes, go code this and"
+    },
+    {
+      "start_time": 2165.359,
+      "end_time": 2180.96,
+      "text": "केडेंस का और एक दो क्वेश्चन बाकी है। तो वो सब कर देंगे और जल्दी। इसके बाद प्रीफिक्स सम भी आएगा। प्रीफिक्स सम भी हम ऐड कर देंगे शीट में। जिसके जिसके पास शीट नहीं है डिस्क्रिप्शन में है अपडेटेड है सब में किडेंस का क्वेश्चन जल्दी-जल्दी करके आइए जाइए।",
+      "source": "caption",
+      "english_text": "Cadence has one or two more questions left. So they will do all that and quickly. After this, prefix sum will also come. We will also add the prefix sum to the sheet. Whoever does not have the sheet is in the description and it is updated. Please do the question of kiddens in all and come quickly."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

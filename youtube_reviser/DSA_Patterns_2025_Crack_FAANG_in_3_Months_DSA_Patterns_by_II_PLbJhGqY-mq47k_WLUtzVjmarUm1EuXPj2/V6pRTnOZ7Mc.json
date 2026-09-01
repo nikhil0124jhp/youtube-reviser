@@ -1,0 +1,163 @@
+{
+  "video_id": "V6pRTnOZ7Mc",
+  "video_title": "DSA PATTERNS Episode 10 | Introduction to Sliding Window",
+  "video_number": 10,
+  "chunks": [
+    {
+      "start_time": 2.79,
+      "end_time": 37.67,
+      "text": "बहुत-बहुत स्वागत है जी सेकंड पैटर्न में जो कि है क्या है स्लाइडिंग विंडो। तो जिन्होंने भी टू पॉइंटर देख लिया है वो उनके लिए बहुत इजी रहेगा ये स्लाइडिंग विंडो देखना। जिन्होंने नहीं देखा है उनके लिए भी इजी ही रहेगा। वैसा कुछ बात तो है नहीं। लेकिन एक बात आप मेक श्योर करिए कि ये वाली जो इंट्रोडक्शन वीडियो है ना ये एक इंट्रोडक्शन वीडियो है। ठीक है? यह आपको इंट्रोडक्शन मतलब इसमें आपको फ्लो चार्ट मिलेगा। इसमें आपको रूल्स पता चलेंगे कि कब यह पैटर्न यूज करना है और कैसे यूज करना है। तो यह वाली वीडियो प्लीज लास्ट तक देखिएगा क्योंकि आगे आने वाली वीडियोस इसी पे डिपेंड करेंगी। इतनी",
+      "source": "caption",
+      "english_text": "Very welcome to the G-second pattern, which is what sliding windows are. So whoever has seen Two Pointer, it will be very easy for them to see this sliding window. It will be easy even for those who have not seen it. There is no such thing. But one thing you should make sure that this is an introduction video. Ok? This is an introduction to you, which means you will get a flow chart. In this you will know the rules as to when to use this pattern and how to use it. So please watch this video till the last because the upcoming videos will depend on it. so much"
+    },
+    {
+      "start_time": 37.68,
+      "end_time": 70.149,
+      "text": "बात समझ में आ गई? तो आगे बढ़ते हैं। अब देखिए स्लाइडिंग विंडो। स्लाइडिंग विंडो का मतलब विंडो का मतलब क्या होता है? विंडो का मतलब विंडो। और स्लाइडिंग का मतलब कि यह विंडो अपने मन से छोटा या बड़ा हो सकता है। इसका मतलब अभी यह विंडो का साइज इतना है। हो सकता है किसी फ्यूचर पॉइंट पे विंडो का साइज इतना हो जाए। ये बढ़ जाए या हो सकता है किसी फ्यूचर पॉइंट पे विंडो का इतना ही रह जाए। तो ये श्रिंक हो जाए। तो ये अपने मन से एक्सपेंड या श्रिंक कर सकता है। इसीलिए इसको स्लाइडिंग और विंडो। विंडो मतलब ये विंडो है। ठीक",
+      "source": "caption",
+      "english_text": "Did you understand the point? So let's move ahead. Now look at the sliding window. Meaning of Sliding Window What does window mean? Window means window. And sliding means that this window can be smaller or larger as per your wish. This means this is the size of the window right now. It is possible that at some future point the size of the window may become this much. It may increase or it may remain the same amount of window at some future point. So it shrinks. So it can expand or shrink at will. That is why it is called sliding window. Window means this is the window. okay"
+    },
+    {
+      "start_time": 70.159,
+      "end_time": 104.469,
+      "text": "बात है। अब ये स्लाइड कैसे करता है? ये श्रिंक कैसे करता है? टू पॉइंटर्स के मदद से। इसीलिए इसीलिए पहले टू पॉइंटर हम लोग पढ़ते हैं। पहले हम लोग टू पॉइंटर पढ़ते हैं। उसके बाद स्लाइडिंग विंडो पे आते हैं। अब ये श्रिंक करता है लो एंड हाई के मदद से। होता क्या है कि आप इस एंड पे लो को रखते हैं और इस एंड पे हाई को रखते हैं। अब ये दोनों सिर्फ एक ही डायरेक्शन में मूव कर सकते हैं। लो भी यहीं पे मूव कर सकता है। हाई भी यहीं पे मूव कर सकता है। तो जब हाई मूव करता है जब भी आप हाई प्लस प्लस करेंगे तो ये विंडो एक्सपैंड हो जाएगा। क्योंकि लो और बीच के लो और हाई के",
+      "source": "caption",
+      "english_text": "It's a matter. Now how does it slide? How does it shrink? With the help of two pointers. That's why we read Two Pointer first. First we read the two pointer. After that come to the sliding window. Now it shrinks with the help of low and high. What happens is that you keep this end pay low and this end pay high. Now both of them can move only in one direction. Lo can also move here. High can also move here. So when the high moves, whenever you press high plus plus, this window will expand. Because of low and middle low and high"
+    },
+    {
+      "start_time": 104.479,
+      "end_time": 135.03,
+      "text": "बीच की दूरी बढ़ जाएगी। जब भी आप लो प्लस प्लस करते हैं और हाई को एक जगह रखते हैं तो विंडो श्रिंक हो जाता है। क्यों? क्योंकि लो और हाई के बीच की दूरी घट जाएगी। एक चीज नोटिस करिए कि ये एक्सपैंड होगा तो इस तरफ से होगा मतलब इस तरफ बढ़ेगा और ये जब श्रिंक होगा तो इस तरफ का पार्ट कटेगा। मतलब ये राइट डायरेक्शन में ही बढ़ रहा है ये विंडो। अगर श्रिंक होगा तो यहां से काटेंगे आप भाग लो को बढ़ा के। अगर एक्सपैंड होगा तो यहां पे हाई को बढ़ा के पार्ट जोड़ेंगे। ऐसे ये विंडो काम करता है।",
+      "source": "caption",
+      "english_text": "The distance between will increase. Whenever you move low plus plus and keep high in one place the window shrinks. Why? Because the distance between low and high will decrease. Notice one thing that when it expands, it will be from this side, meaning it will grow in this direction and when it shrinks, the part on this side will be cut. Meaning, this window is expanding in the right direction only. If there is shrinkage then you will cut it from here by increasing the part Lo. If expanded, then parts will be added here by increasing the pay height. This is how this window works."
+    },
+    {
+      "start_time": 135.04,
+      "end_time": 167.27,
+      "text": "ठीक है? इस पैटर्न को कहते हैं स्लाइडिंग विंडो। अब सबसे पहली बात फ्लो चार्ट। सबसे पहली बात कहां लगेगा? एरे पे लगेगा। एरे नहीं तो स्ट्रिंग क्योंकि स्ट्रिंग भी एक तरीके का एरे होता है। लिंक लिस्ट पे नहीं लगेगा। लिंक लिस्ट पे 99.9% केस पे नहीं लगेगा। याद रखिए गांठ बांध लीजिए उसको। नहीं लगेगा। सबसे पहला आपके लिए हिंट क्या हो गया? एरे या स्ट्रिंग का क्वेश्चन है तो ही लगेगा। नहीं तो नहीं लगेगा। सबसे अच्छी बात है। गुड। अगर अगर अगर क्वेश्चन",
+      "source": "caption",
+      "english_text": "ok? This pattern is called sliding window. Now first things first, the flow chart. Where will you look first? Will be on the array. If not array then string because string is also a type of array. The link will not appear on the list. Link list will not be affected in 99.9% cases. Remember, tie it in a knot. Will not be felt. What was the first hint for you? It will be asked only if there is a question about array or string. Otherwise it will not apply. The best thing. Good. if if if question"
+    },
+    {
+      "start_time": 167.28,
+      "end_time": 196.07,
+      "text": "में अगर क्वेश्चन में सब एरे या तो सबस्ट्रिंग व्हेन वी आर टॉकिंग अबाउट स्ट्रिंग्स ये लिखा हुआ है लिखा हुआ है या आपको समझ में आ रहा है तो ही स्लाइडिंग विंडो लगेगा तो ही स्लाइडिंग विंडो लगेगा नहीं तो नहीं लगेगा ठीक है सब एरे का मतलब कि कंटीन्यूअस कंटीन्यूअस ठीक है सबस्ट्रिंग का मतलब भी कंटीन्यूअस।",
+      "source": "caption",
+      "english_text": "In the question, if the sub array is either substring when we are talking about strings, it is written, or you understand, only then the sliding window will be applied, otherwise it will not be applied, okay, sub array means continuous, continuous, okay, substring also means continuous."
+    },
+    {
+      "start_time": 196.08,
+      "end_time": 230.309,
+      "text": "सब सीक्वेंस अलग होता है। याद रखिएगा लोग कंफ्यूज हो जाते हैं। सब सीक्वेंस देख के लगाने लगते हैं। सब सीसीक्वेंस मतलब नॉन कंटीन्यूअस। नॉन कंटीन्यूअस मतलब कि एरे में अगर ऐसा-ऐसा एलिमेंट है तो कोई भी दो एलिमेंट ले लो। तो ये ले लो और ये ले लो। तो ये एक सबक्वेंस है। लेकिन अगर एरे ऐसा-ऐसा करके है। आपको बोलता है कि टू का सब एरे लो तो आपको दो कंटीन्यूअस एलिमेंट लेने पड़ेंगे। यही लेना पड़ेगा। या तो ये वाला लेना पड़ेगा। या तो यह वाला लेना पड़ेगा या तो कोई भी लेना पड़ेगा जो कि कंटीन्यूअस हो। सब सीक्वेंस नॉन कंटीन्यूअस कोई भी दो एलिमेंट ले लीजिए",
+      "source": "caption",
+      "english_text": "Every sequence is different. Remember, people get confused. Everyone starts applying after seeing the sequence. Sub sequence means non continuous. Non continuous means that if there is such and such element in the array then take any two elements. So take this and take this. So this is a subsequence. But if it is done like this. It tells you to take a sub array of two, so you will have to take two continuous elements. This is what will have to be taken. Either you will have to take this one. Either you will have to take this one or you will have to take any other which is continuous. Sub sequence non continuous take any two elements"
+    },
+    {
+      "start_time": 230.319,
+      "end_time": 259.59,
+      "text": "ऑर्डर में। ठीक बात है समझ में आ गई? तो एरे स्ट्रिंग सब एरे सबस्ट्रिंग। ठीक है? अब आर वी ट्राइंग टू फाइंड समथिंग? क्वेश्चन आपको पूछ क्या रहा है? आर वी फाइंडिंग क्वेश्चन आपसे चाहता क्या है? तो क्वेश्चन आपसे इनमें कुछ भी चाह सकता है। मैक्सिमम मिनिमम लॉन्गेस्ट लॉन्गेस्ट शॉर्टेस्ट",
+      "source": "caption",
+      "english_text": "In order. Okay, did you understand? So array string sub array substring. Ok? Now Are We Trying to Find Something? What is the question asking you? What are we finding questions asking of you? So the question may want any of these from you. Maximum Minimum Longest Longest Shortest"
+    },
+    {
+      "start_time": 259.6,
+      "end_time": 294.31,
+      "text": "या तो सम या काउंट या तो एवरेज या तो एट मोस्ट के या फिर एट लीस्ट के या तो एग्जैक्टली के ये ये ध्यान से देखिए बहुत बड़ी लिस्ट है लेकिन लेकिन लेकिन ये लिस्ट कब कब सोचना है इस लिस्ट के बारे में सोचना भी कब है जब आप ये दोनों पार कर जाएं एरे और स्ट्रिंग का क्वेश्चन हो सब",
+      "source": "caption",
+      "english_text": "Either sum or count, either average, either at most or at least, or exactly. Look carefully, this is a very big list, but but but, when to think about this list, when to think about this list, when you cross these two, then there is a question of array and string."
+    },
+    {
+      "start_time": 294.32,
+      "end_time": 328.31,
+      "text": "एरे सबस्ट्रिंग लिखा हो और साथ में ये सब चीजें लिखी हो ध्यान से देखिए स्क्रीनशॉट ले लीजिए कॉपी में नोट कर लीजिए मैक्सिमम मिनिमम लॉन्गेस्ट सॉर्टेड सम काउंट एवरेज एटमोस्ट के एट लीस्ट के एग्जैक्टली देखिए ये सब वर्ड्स अगर आपको क्वेश्चन में मिले आपको समझ में आता है कि ये सब ही पूछ रहा है। मेरे से यही चीजें पूछी जा रही हैं तो आप स्लाइडिंग विंडो करेंगे। ठीक है? फिर से देखिए यही तीन चीजें थी। एरे स्ट्रिंग सब एरे सबस्ट्रिंग कंटीन्यूअस होना चाहिए और इनमें से कुछ कर रहे हैं तो स्लाइडिंग",
+      "source": "caption",
+      "english_text": "Array substring is written and all these things are written along with it. Look carefully, take a screenshot, note down in the copy, Maximum, Minimum, Longest, Sorted, Sum, Count, Average, Atmost, At least, See all these words exactly. If you find all these words in the question, then you understand that it is he who is asking. I am being asked the same things so you will do sliding windows. Ok? Look again, these were the three things. Array string sub array substring must be continuous and some of these are sliding"
+    },
+    {
+      "start_time": 328.32,
+      "end_time": 363.029,
+      "text": "विंडो लगेगा। स्लाइडिंग विंडो लगेगा। स्लाइडिंग विंडो लगेगा। फ्लो चार्ट देख लीजिए फिर से। फ्लो चार्ट नहीं अगर तो देख लीजिए पॉज करके। कॉपी में नोट कर लीजिए। फ्लो चार्ट देख लीजिए। कॉपी में नोट कर लीजिए। समझ गए? फ्लो स्लाइडिंग विंडो कब लगेगा। ठीक है? अब एक छोटी सी बात स्लाइडिंग विंडो जो होता है, स्लाइडिंग विंडो होता है। ये दो तरीके के होते हैं। एक तो ये फिक्स होते हैं। दूसरे डायनामिक होते हैं। अभी मैंने आपको बोला ना कि ये एक्सपैंड करता है और श्रिंक करता है। हो सकता है ना भी करे। कैसे ना करे?",
+      "source": "caption",
+      "english_text": "Window will appear. Sliding window will be installed. Sliding window will be installed. Look at the flow chart again. If there is no flow chart then try pausing. Make a note in your copy. Look at the flow chart. Make a note in your copy. Understand? When will the flow sliding window be installed? Ok? Now a small thing, what a sliding window is, is a sliding window. These are of two types. Firstly, they are fixed. Others are dynamic. Just now I told you that it expands and shrinks. It may or may not. How not to do it?"
+    },
+    {
+      "start_time": 363.039,
+      "end_time": 395.43,
+      "text": "फॉर एग्जांपल अगर आपको क्वेश्चन में बोला जाता ये आपका एरे है तो ये 1 0 3 5 2 1 4 0 1 2 3 4 5 6 आपसे क्वेश्चन में पूछा जाता कि सब एरेज लो सब एरे ऑफ लेंथ थ्री और फाइंड मैक्सिमम ऑफ ऑल देयर सम क्वेश्चन का मतलब हिंदी में क्या है? इस",
+      "source": "caption",
+      "english_text": "For example, if you are asked in the question, this is your array, then it is 1 0 3 5 2 1 4 0 1 2 3 4 5 6. You are asked in the question that find all the arrays, take all the arrays of length three and find the maximum of all their sum. What is the meaning of the question in Hindi? this"
+    },
+    {
+      "start_time": 395.44,
+      "end_time": 429.909,
+      "text": "एरे में सारे लेंथ तीन के सब एरे ले लो। उनका सम निकाल लो। उसमें जो मैक्सिमम है वो रिटर्न कर दो। सबसे पहली बात कि अपना एल्गोरिदम लगाना है। फ्लो चार्ट लगाना है। एरे लिखा हुआ है। हां मतलब एरे दिया हुआ है। तो एरे तो है। सब एरे लिखा हुआ है। फाइंड मैक्सिमम ऑफ़ ऑल देयर सम। तो सारी हमारी कंडीशन सेटिस्फाई हो गई। मैक्सिमम ऑफ़ सम। तो इसमें तो स्लाइडिंग विंडो लगेगा ही लगेगा। अगर इसमें नहीं लगेगा तो कहीं नहीं लगेगा। तो ये परफेक्ट क्वेश्चन है फ्लो चार्ट समझने के लिए। तो इसमें आप क्या कर सकते हैं? इसमें आप अ क्या करते",
+      "source": "caption",
+      "english_text": "Take all arrays of length three in the array. Find their sum. Return the maximum that is there. The first thing to do is to install your algorithm. Have to put up a flow chart. It is written here. Yes, it means the array is given. So there it is. Everything is written here. Find maximum of all their sum. So all our conditions were satisfied. Maximum of sum. So it will definitely have a sliding window. If it doesn't work, it won't work anywhere. So this is the perfect question to understand flow chart. So what can you do about this? what do you do in this"
+    },
+    {
+      "start_time": 429.919,
+      "end_time": 463.35,
+      "text": "हैं कि आप अब आपको जब क्वेश्चन में दिया हुआ है ना जब आपको क्वेश्चन में लेंथ तीन दिया हुआ है। किसीकिसी क्वेश्चन में नहीं दिया होता। किसी में होता है कि सब एरे लेना है। किसी भी लेंथ के लीजिए। लेकिन जब आपको लेंथ दिया होता है, जब आपको साइज दिया होता है, जब आपको लेंथ दिया होता है, किसका लेंथ दिया होता है? सब एरे का या सबस्ट्रिंग का? तो आप फिक्स विंडो लेते हैं। फिक्स विंडो कैसे लेते हैं? तीन साइज की विंडो। अब इसको कोड में कैसे लिखना है? सूडो कोड ये सब कल सिखाएंगे। लेकिन हम बस कांसेप्ट सिखा रहे हैं। फिक्स लेंथ ले लीजिए। तीन का ले लीजिए। है ना? तीन का ले लीजिए। अब",
+      "source": "caption",
+      "english_text": "Now you have given the length of three in the question. Was not given in any question. Some people feel that everything has to be taken. Take any length. But when you are given length, when you are given size, when you are given length, whose length is given? Sub array or substring? So you get the fixed window. How to get fixed window? Three sizes of windows. Now how to write this in code? Pseudo code will teach all this tomorrow. But we are just teaching the concept. Take fixed length. Take three. Isn't it? Take three. now"
+    },
+    {
+      "start_time": 463.36,
+      "end_time": 496.23,
+      "text": "देखिए अब क्या? टू सम में क्या बताए थे? किसी भी चीज को लिखने से पहले उसका ब्रूट फ़ोर्स सोच लो। ब्रूट फ़ोर्स क्या है? कि ऑल सब एरेज़ ले लो। ऑल सब एरेज़ ऑफ़ साइज़ तीन। इस एरे से निकाल लो। वो कैसे निकलेगा? वैसे निकलेगा। एक तो यह हो गया 103 फिर एक 0 से शुरू हो के 035 फिर एक थ्री से शुरू हो के 352 फिर एक फाइव से शुरू हो के इतना और फिर ये हो के ये इतने सारे सब एरे मिल गए। सब सब एरे को ले लो। सबका सम निकाल लो। उसका मैक्स रिटर्न कर दो तो बहुत",
+      "source": "caption",
+      "english_text": "Look what now? What were you told in Two Sum? Before writing anything, think about its brute force. What is brute force? That take all sub arrays. All sub arrays of size three. Take it out from this array. How will it come out? It will turn out that way. First, it becomes 103, then one starting with 0, then 035, then one starting with three, 352, then starting with a five, this much and then this much, so many sub-arrays are found. Take all sub array. Find out the sum of everything. If you return his max then that's enough."
+    },
+    {
+      "start_time": 496.24,
+      "end_time": 528.07,
+      "text": "अच्छा बात है। लेकिन स्लाइडिंग विंडो में आप इसका बहुत फास्ट कर सकते हैं। तो आप अपनी विंडो ऐसे शुरू करते हैं। आपकी विंडो ये होती है। ठीक है? इसका सम आप निकाल लेते हैं। इसका सम जो कि है फोर। ठीक है? इसका सम आप पहले सब एरे का जब आपको लेफ्स लेंथ दी होती है तब तो आप फोर निकाल लेते हैं। ठीक है? उसके बाद आप विंडो को एक शिफ्ट करते हैं। विंडो का साइज नहीं बदल रहा है। देखिए साइज तीन ही है। विंडो का पोजीशन एक शिफ्ट हो गया। अब आप इसका सम निकालने के लिए इसको शुरू से अंत तक नहीं जोड़ते हैं। देखिए हुआ क्या? आप यहां पे",
+      "source": "caption",
+      "english_text": "That's a good thing. But in sliding window you can do it very fast. So this is how you start your window. This is your window. Ok? You figure out its sum. Its sum is four. Ok? In this way, when you are given the left length of the first sub-array, you take out four. Ok? After that you shift the window one. Window size is not changing. See, the size is only three. The position of the window shifted. Now you don't add it from beginning to end to find the sum. See what happened? you here"
+    },
+    {
+      "start_time": 528.08,
+      "end_time": 555.75,
+      "text": "थे। इसका सम आया 5। अब आप यहां पे हैं तो 0 और थ्री तो कॉमन है। हम क्या बोल रहे हैं? आप एरे को बड़ा कर लीजिए और केवल चार एलिमेंट देखिए। 1 0 3 और 5 ठीक है? वन फिर से बताते हैं। वन ये बहुत इंपॉर्टेंट कांसेप्ट है समझना। इसीलिए समझा रहे हैं इतना मेहनत सा। पहला सब एरे आपका ये था। आपका पहला सब एरे ये था। ये था ना? हां।",
+      "source": "caption",
+      "english_text": "Were. Its sum came to 5. Now if you are here then 0 and three are common. What are we saying? You expand the array and see only four elements. 1 0 3 and 5 ok? The forest explains again. One, this is a very important concept to understand. That's why I'm trying so hard to explain. The first one was yours. Your first sub array was this. Was this it? Yes."
+    },
+    {
+      "start_time": 555.76,
+      "end_time": 589.75,
+      "text": "दूसरा सब एरे आपका ये था। जब आप शिफ्ट कर दिए तो यह बन गया सब एरे। अब देखिए अब देखिए 0 0 3 ये दोनों तो कॉमन है ये दोनों कॉमन है ना बदला क्या है बदला है वन और बदला है फाइव तो हुआ क्या है आपका जो पहले वाला सम था वो था 1 + 0 + 3 ये वन था इस वाले का सम टू क्या बन गया आपका 0 + 3 + 5 तो आप कर क्या रहे हैं देखिए सम वन और सम टू में डिफरेंस क्या है 0 और थ्री तो सेम सेम है।",
+      "source": "caption",
+      "english_text": "The second one was yours. When you shifted it became everything. Now look now see 0 0 3 These two are common, these two are common right what has changed is one and five have changed so what happened to yours the previous one was even that was 1 + 0 + 3 this one was the sum two of this one what became your 0 + 3 + 5 so what are you doing see what is the difference between the even one and the even two 0 and three are the same."
+    },
+    {
+      "start_time": 589.76,
+      "end_time": 623.35,
+      "text": "ज़ीरो और थ्री तो सेम है। यस। सम टू में वन नहीं है। तो अब वन नहीं है और फाइव है। यही तो डिफरेंस है। अगर आप ऐसा करेंगे तो आपको सम टू मिल गया। सम टू में क्या नहीं है? सम टू में वन नहीं है और फाइव ऐड हो गया है। तो कभी भी आप ऐसा जब करते हैं ना स्लाइडिंग विंडो तो हम लोग क्या बोलते हैं? इसका सम तो मालूम है भाई। फोर है। इसका सम कैसे निकालेंगे? इसका सम निकालने के लिए बस इसमें कुछ नहीं करेंगे। इस वाले एरे का सम निकालने के लिए 4 - 1 + 5 कर देंगे तो आपको आ जाएगा 4 + 5 8 देखिए इस",
+      "source": "caption",
+      "english_text": "Zero and three are the same. Yes. There is no one in sum two. So now there is no one and there is five. This is the difference. If you do this then you have got sum two. What is not in sum two? There is no one in the sum two and five has been added. So whenever you do this, sliding window, what do we say? You know the meaning of this, brother. Is four. How to calculate its sum? Just don't do anything to make it even. To find the sum of this array, if you do 4 - 1 + 5, you will get 4 + 5 8. Look at this."
+    },
+    {
+      "start_time": 623.36,
+      "end_time": 656.87,
+      "text": "विंडो का सम होगा एट एट है हां एट है इस विंडो का सम एट है इस विंडो का सम कैसे निकालेंगे पीछे वाला घटा दो पीछे वाला घटा दो आगे वाला जोड़ दो 10 देख लीजिए इसका सम निकाल के 3 + 5 8 और 2 इसका 10 ऐसे हम लोग विंडो को शिफ्ट करते हैं तो बहुत फास्ट कर देता है आपकी आपके काम को है ना तो ये फिक्स लेंथ जब भी आपको क्वेश्चन में सब एरे का लेंथ नहीं दिया होगा। सब एरे का लेंथ नहीं दिया होगा। अगर दिया होगा डायनेमिक साइज या लेंथ दिया ही नहीं है तो आप यूज़ करेंगे डायनेमिक जिसमें लो बढ़ सकता",
+      "source": "caption",
+      "english_text": "The sum of the window will be at at is yes at at is the sum of this window is at at How to find the sum of this window is the back one minus two the back one minus two front one add two 10, look at the sum of this, find out the sum of 3 + 5 8 and 2 of this 10, this is how we shift the window, it makes it very fast for your work, neither is this fixed length, whenever you have not been given the length of the sub array in the question. Length of sub array may not be given. If dynamic size or length is not given then you will use dynamic in which length can increase."
+    },
+    {
+      "start_time": 656.88,
+      "end_time": 691.35,
+      "text": "है। हाई भी बढ़ सकता है। तो विंडो कभी इतना बड़ा होगा। कभी इतना बड़ा होगा कभी इतना बड़ा हो जाएगा। कभी इतना बड़ा तो बड़ा-छोटा होता रहेगा। तो ये था स्लाइडिंग विंडो। उसका फ्लो चार्ट उसका टेंप्लेट उसका कॉनंसेप्ट कि स्लाइडिंग विंडो यूज़ कब किया जाता है? तो स्लाइडिंग विंडो किसी भी ऐसे क्वेश्चन जहां आपको सब एरे या सबस्ट्रिंग से डील करना है और आपको कुछ ऐसा मिनिमम मैक्सिमम लॉन्गेस्ट शॉर्टेड इस तरह का फालतू चीज करना है तो हम लोग स्लाइडिंग विंडो यूज़ करते हैं। इसको लिख लीजिए। इसको नोट कर लीजिए और कल से जिसको अभी तक पैटर्न शीट नहीं मिला है जिसको अभी तक पैटर्न शीट नहीं मिला है डिस्क्रिप्शन से डाउनलोड कर लो। कल से इसका एक-एक करके क्वेश्चन करना",
+      "source": "caption",
+      "english_text": "Is. Highs may also increase. So the window will never be this big. Sometimes it will be this big, sometimes it will be this big. Sometimes this big, it will keep getting bigger and smaller. So this was the sliding window. Its flow chart, its template, its concept, when is sliding window used? So sliding window, in any such question where you have to deal with sub array or substring and you have to do some useless thing like minimum maximum longest shortest, then we use sliding window. Write this down. Note it down and whoever has not yet received the pattern sheet from yesterday, download it from the description. Question it one by one from tomorrow"
+    },
+    {
+      "start_time": 691.36,
+      "end_time": 694.88,
+      "text": "चालू करेंगे। मिलते हैं कल।",
+      "source": "caption",
+      "english_text": "Will start. See you tomorrow."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

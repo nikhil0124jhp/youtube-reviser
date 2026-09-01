@@ -1,0 +1,562 @@
+{
+  "video_id": "TIBZsd-Qlrg",
+  "video_title": "Don't Miss This Binary Search Interview Question | DSA Patterns 2026 Cpp Java Python",
+  "video_number": 55,
+  "chunks": [
+    {
+      "start_time": 1.67,
+      "end_time": 34.87,
+      "text": "हेलो एंड वेलकम टू पढ़ो विद प्रत्युष। मेरा नाम है प्रत्युष नारायण। आज का ये जो सवाल है ना एपिसोड 52 इसके पहले हम स्ट्रोंगली रिकमेंड करते हैं कि आप एटलीस्ट 51 तो देख के आ रहे होंगे। मतलब जो वीडियो परसों आई थी शायद आज थर्सडे है जो वीडियो ट्यूसडे को आई थी जरूर जा के देखिए 51 उसके बाद ये वीडियो देखिए नहीं तो समझ में नहीं आएगा। ठीक है? और जो लोग देखते हुए आ रहे हैं जो लोग 51 देख चुके हैं। हम हाइली इन एनकरेज करेंगे कि आप अभी इस वीडियो को यहीं पॉज कर दीजिए। और इस क्वेश्चन पे जाके लीड कोड 33 पे जाके इस क्वेश्चन को सॉल्व करने की कोशिश कीजिए। एक बार जब आप सॉल्व कर लेंगे तो आइएगा इस वीडियो पे क्योंकि जो आप टेक्निक सोचेंगे सॉल्व करने का वो सबसे बेस्ट तरीका नहीं है। बेस्ट तरीका हम जो",
+      "source": "caption",
+      "english_text": "Hello and welcome to Padho with Pratyush. My name is Pratyush Narayan. Today's question is episode 52. Before this, we strongly recommend that you must have watched Atlist 51. Meaning, the video that came the day before yesterday, maybe today is Thursday, the video that came on Tuesday, definitely go and watch 51. After that watch this video, otherwise you will not understand. Ok? And those who are coming to see, those who have seen 51. We would highly encourage you to pause this video right here. And try to solve this question by going to lead code 33. Once you solve it then come to this video because whatever technique you think is not the best way to solve it. The best way we can"
+    },
+    {
+      "start_time": 34.88,
+      "end_time": 69.429,
+      "text": "पढ़ाने वाले हैं वो है। लेकिन अगर आप वो तरीका भी सोच लेते हैं तो वेल एंड गुड। ठीक है? चलिए शुरू करते हैं। तो आज का जो क्वेश्चन है ना सेम जो हम बाइनरी सर जैसे पढ़ाए थे। प्रत्युष मॉल था। दुकानें लगी हुई थी। आपके पास कुछ पैसे थे और आप उस पैसे की एक दुकान खोजने का कोशिश करते थे कि हर दुकान एक शर्ट बेच रही है। आपको उसी पैसे के एक दुकान चाहिए जिसमें शर्ट बिक रही है और आप जाके मॉल के आगे खड़े हो जाते थे। आप एक-एक करके गेस करते थे और फिर देखते थे कि क्या-क्या करना है। तो वही क्वेश्चन है। अब इस क्वेश्चन में क्या डिफरेंस है? जो हम लोग पहले देखे थे जो हम लोग सिंपल बाइनरी सर्च याद कीजिए। जो हम लोग क्वेश्चन पढ़े थे कि सिंपल बाइनरी सर्च उसमें एक मॉल था। उसमें जो दुकानें लगी थी",
+      "source": "caption",
+      "english_text": "He is the one who teaches. But if you think of that way also then well and good. Ok? Let's get started. So today's question is not the same as the one we taught like Binary Sir. It was Pratyush Mall. Shops were set up. You had some money and you used that money to try to find a shop and find that every shop is selling a shirt. You needed a shop selling shirts for the same money and you used to go and stand in front of the mall. You used to guess one by one and then see what to do. So that is the question. Now what is the difference in this question? Remember the simple binary search that we saw earlier. We had read the question that there was a mall in it. the shops in it"
+    },
+    {
+      "start_time": 69.439,
+      "end_time": 104.23,
+      "text": "ना वो इंक्रीजिंग ऑर्डर ऑफ प्राइसेस में लगी हुई थी। मतलब कि पहले 10, 20, 30, 40, 50, 60, 100 तक। ठीक है? अब इस मॉल में एक शिफ्ट है। ये एक नए तरीके का मॉल है। ये नए तरीके का मॉल क्यों है? क्योंकि यहां पे दुकानें सॉर्टेड में एग्जैक्टली नहीं लगी हुई हैं। आप देख सकते हैं कि वो ना एक रोटेशन के साथ है। मतलब कि वो एक रोटेशन के साथ लगा हो। उसका क्या मतलब है? देखिए। कुछ दुकानें देखिए दुकान शुरू हुई ₹50 से। उसके बाद 50 60 70 80 90 100 मतलब एक पार्ट है। एक पार्ट है दुकान का। एक पार्ट है दुकान का जो कि सॉर्टेड है। मतलब एक तरीके से देखा जाए तो सॉर्टेड ही है। 50",
+      "source": "caption",
+      "english_text": "Nor was she engaged in increasing order of prices. That means first 10, 20, 30, 40, 50, 60, 100. Ok? Now there is a shift in this mall. This is a new type of mall. Why is this a new type of mall? Because the shops here are not exactly sorted. You can see that's with a rotation. Meaning that it should be engaged with a rotation. What does that mean? See. Look at some shops, the shops started from ₹50. After that 50 60 70 80 90 100 means one part. There is a part of the shop. There is a part of the shop which is sorted. Meaning, if seen in one way, it is sorted. 50"
+    },
+    {
+      "start_time": 104.24,
+      "end_time": 137.35,
+      "text": "60 70 ऐसा करके सॉर्टेड है। और और एक और पार्ट है। एक सेकंड पार्ट है। एक सेकंड पार्ट है ये। 10, 20, 30, 40 ये भी अपने आप में सॉर्टेड है। लेकिन ये पूरा एरे अपने आप में सॉर्टेड नहीं है। मतलब कि अगर आप एक सॉर्टेड एरे को रोटेट कर देते हैं। एक सॉर्टेड एरे को रोटेट कर देते हैं ना तो आपको ऐसा एक एरे मिलता है जहां पे एक पहला पार्ट है और एक दूसरा पार्ट है। पहला पार्ट का एरे अपने आप में सॉर्टेड है। मतलब 50 60 70 80 90 100 और दूसरे पार्ट का एरे भी अपने आप में सॉर्टेड है। 10 20 30 40 लेकिन आप दोनों को कंबाइन कर देंगे तो दोनों मिलके सॉर्टेड नहीं है। ऐसा आपका",
+      "source": "caption",
+      "english_text": "60 70 is sorted like this. And there is one more part. There is a second part. This is a second part. 10, 20, 30, 40 are also sorted in themselves. But this entire array itself is not sorted. Meaning that if you rotate a sorted array. When you rotate a sorted array, you get an array where there is a first part and a second part. The first part is the array itself sorted. Meaning 50 60 70 80 90 100 and the array of the second part is also sorted in itself. 10 20 30 40 But if you combine both, then both together are not sorted. so yours"
+    },
+    {
+      "start_time": 137.36,
+      "end_time": 172.07,
+      "text": "मॉल है। और आपको मालूम नहीं है कि ये मॉल कैसा लगता है। मतलब ये आपको पहले से मालूम नहीं है कि पार्ट वन खत्म कहां होता है? पार्ट टू शुरू कहां होता है। मतलब आपको ये बाउंड्री अभी तो आपको देख के समझ में आ रहा है कि ठीक है 50 से 100 वाला एक होगा और 100 से 40 वाला एक होगा लेकिन आपको पहले से मालूम नहीं है कि ये बाउंड्री कहां है। आपको बस वो एरे दिया हुआ है और आपको ये मान लीजिए आप ₹30 लेके आए हैं। आप धुन में है कि हमको ₹30 का दुकान ही खोजना है। मतलब आपको ये वाला दुकान खोजना है और आपको इस वाले दुकान का खोज के इसका इंडेक्स रिटर्न करना है या कुछ भी रिटर्न करना है। ठीक है? तो ये आपका सवाल है। अब जो लोग 51 देख चुके हैं उनको ये बहुत अच्छे से समझ में आएगा। जो लोग 51 नहीं",
+      "source": "caption",
+      "english_text": "There is a mall. And you don't know what this mall feels like. That means you don't already know where Part One ends? Where does Part Two begin? Meaning, right now you are able to understand this boundary by looking at it, okay, there will be one from 50 to 100 and one from 100 to 40, but you do not know in advance where this boundary is. You have just been given that array and you have to assume that you have brought ₹30. You are in the mood that we have to find a shop only for ₹30. Meaning you have to search for this shop and you have to search for this shop and return its index or return anything. Ok? So this is your question. Now those who have seen 51 will understand this very well. people who are not 51"
+    },
+    {
+      "start_time": 172.08,
+      "end_time": 206.71,
+      "text": "देखे उनको भी समझ में आएगा ही। हम इस तरीके से पढ़ाएंगे कि आपको भी दिक्कत ना हो। हालांकि हम रेकमेंड करेंगे कि आप वो देख के आ जाइए पहले। चलिए। अब देखिए ये क्वेश्चन में ना थोड़ा सा ट्रिक है। सबसे पहले तो अगर आप 51 देख के आए हैं। तो 51 क्या बोलता था? 51 में भी सेम तरीके का प्रॉब्लम था। लेकिन 51 का रिक्वायरमेंट अलग था। एपिसोड 51 वाला जो क्वेश्चन था फाइंड मिनिमम इन सॉर्टेड रोटेड सॉर्टेड एरे वो क्या था? रोटेड सॉर्टेड डायरे का मिनिमम फाइंड करो। मतलब ये वाला चीज फाइंड करो। Okay? अगर अगर आप वो क्वेश्चन जानते हैं आपको वो क्वेश्चन करने आता है तो आप यहां का मिनिमम फाइंड कर सकते हैं। देखिए",
+      "source": "caption",
+      "english_text": "See, they will also understand. We will teach in such a way that you too do not face any problem. However, we would recommend that you come and see that first. Let go. Now see, there is a little trick in this question. First of all, if you have come after watching 51. So what did 51 say? 51 also had the same problem. But the requirement of 51 was different. What was the question of episode 51 - Find minimum in sorted rotated sorted array? Find the minimum of the rotated sorted diary. Meaning find this thing. Okay? If you know that question and know how to answer that question, then you can find the minimum here. look at"
+    },
+    {
+      "start_time": 206.72,
+      "end_time": 237.19,
+      "text": "ये मिनिमम फाइंड करने से होगा क्या? आपको यही बाउंड्री ही तो मिलेगी। आप अगर मिनिमम फाइंड कर लेंगे आपके इस क्वेश्चन में बाउंड्री मिल जाएगी। तो आप उसको सॉल्व कर लेंगे। कैसे सॉल्व कर लेंगे? फॉर एग्जांपल फॉर एग्जांपल अगर आप वो क्वेश्चन देख के आए हैं और आपका एरे कैसा भी हो। आपका एरे कैसा भी हो। आपका एरे अगर ऐसा दिखता है 50 60 70 80 90 100 ये आपका पहला पार्ट था और दूसरा पार्ट 10 से शुरू 10 20 30 और 40 अगर हम सबका इंडेक्स लिख दें तो ये 0 1 2",
+      "source": "caption",
+      "english_text": "What will happen by finding this minimum? You will get only this boundary. If you find the minimum, you will find the boundary in this question. Then you will solve it. How will you solve it? For example: For example, if you have seen that question and what is your array. Whatever your array may be. If your array looks like this 50 60 70 80 90 100 this was your first part and the second part starts from 10 10 20 30 and 40 if we write the index of all then it will be 0 1 2"
+    },
+    {
+      "start_time": 237.2,
+      "end_time": 270.31,
+      "text": "3 4 5 6 7 8 9 ओके 10 दुकानें हैं। अब आपको इस ये फाइंड करने आता है। आपको ये फाइंड करने आता है। ये कैसे है? ये है मिनिमम इन रोटेड सॉर्टेड एरे। ये हम लोग क्वेश्चन कर चुके हैं। बहुत अच्छे से समझे थे कि कैसे होता है। पार्ट टू, पार्ट वन करके किए थे और आपको पार्ट वन का फर्स्ट ऑकरेंस निकालना रहता है। तो ये आपको फाइंड करने आता है। तो जैसे ही आप ये फाइंड कर लेंगे। मान लीजिए आपको पता चला कि सिक्स्थ इंडेक्स ऐसा है। आपको क्या पता चल गया कि इस मॉल में दो पार्ट्स हैं। इस मॉल में दो पार्ट्स हैं। कैसे दो पार्ट्स हैं? पहला",
+      "source": "caption",
+      "english_text": "3 4 5 6 7 8 9 OK There are 10 shops. Now you have to find this. You come to find this. How is this? This is the minimum in rotated sorted array. We have asked these questions. Understand very well how it happens. Part two was done by doing part one and you have to find the first occurrence of part one. So it comes to find you. So as soon as you find this. Suppose you found out that the sixth index is like this. How did you know that this mall has two parts? There are two parts in this mall. How are there two parts? the first"
+    },
+    {
+      "start_time": 270.32,
+      "end_time": 297.51,
+      "text": "पार्ट जो कि ज़ीरो से फाइव इंडेक्स तक है। इसको आप पार्ट वन कह लीजिए या पार्ट टू कह लीजिए। जो आपका मन मर्जी है वो कह लीजिए। इसको आप कुछ भी कह लीजिए। बड़ा पार्ट कह लीजिए छोटा पार्ट चलिए बड़ा पार्ट कह लीजिए इसको। इसको क्या कह लीजिए? बड़ा पार्ट क्योंकि 50 60 70 80 90 ये थोड़ी महंगी दुकानें हैं और 10 20 30 40 ये मान लीजिए थोड़ी सस्ती दुकानें हैं तो ये बड़ा पार्ट है। और आपको एक बात पता चलता है कि सिक्स से नाइन ये वाला इंडेक्स में छोटे पार्ट है। दो पार्ट में एनरे टूट गया और ये दोनों पार्ट अपने आप में सॉर्टेड है।",
+      "source": "caption",
+      "english_text": "Part which is from zero to five index. Call it part one or part two. Say whatever you want. Call it whatever you want. Call it a big part, small part, let's call it a big part. What should we call this? Big part because 50 60 70 80 90 are slightly expensive shops and let's say 10 20 30 40 are slightly cheap shops, so this is a big part. And one thing you realize is that six to nine are small parts in this index. The array is broken into two parts and both these parts are sorted in themselves."
+    },
+    {
+      "start_time": 297.52,
+      "end_time": 330.23,
+      "text": "देखिए ज़ीरो से 5 अपने आप में सॉर्टेड है। यस। 50 60 70 80 90 100 अपने आप में सॉर्टेड है। और सिक्स से नाइन भी अपने आप में सॉर्टेड है। सिक्स से नाइन भी अपने आप में सॉर्टेड है। अब आपको ढूंढना क्या है? अब आपको ढूंढना क्या है? 30। तो आप दोनों में चेक कर लीजिए। दोनों में चेक कर लीजिए। या दोनों में बाइनरी सर्च लगा दीजिए। दोनों में बाइनरी सर्च लगा दीजिए। दोनों एरे में मतलब कि आप एक बार बाइनरी सर्च लगाइए विद लो = 0 और हाई = 5। तो आप इस एरे में 30 ढूंढ लीजिए। इस एरे में नहीं मिलेगा। इस एरे में तो नहीं मिलेगा देख के पता चला। लेकिन कोई बात नहीं। इस",
+      "source": "caption",
+      "english_text": "See, zero to 5 is sorted by itself. Yes. 50 60 70 80 90 100 is sorted by itself. And six to nine is also sorted in itself. Six to nine is also sorted in itself. What are you looking for now? What are you looking for now? 30. So check both of them. Please check both. Or apply binary search in both. Apply binary search to both. This means that you perform binary search once in both the arrays with low = 0 and high = 5. So you find 30 in this array. Will not be found in this array. Found out after looking that it would not be found in this array. But never mind. this"
+    },
+    {
+      "start_time": 330.24,
+      "end_time": 363.67,
+      "text": "एरे में बाइनरी सर्च लगा दीजिए। मान लीजिए यहां पे नहीं मिला। कोई बात नहीं मिला तो इसमें भी लगा दीजिए। लो = 6 हाई = 9 आपको सिंपल बाइनरी सर्च तो करने आता है ना। सिंपल बाइनरी सर्च में क्या करते थे? हम लोग इतना दिमाग लगाते ही नहीं थे। उसमें लो = 0 लिखते थे और हाई = n - 1 लिख देते थे। गेस करते थे। अगर आपको चाहिए होता तो हम मान के चल रहे हैं कि आप लोग वीडियो देख के आ रहे हैं तो सिंपल बाइनरी सच आपको आता है। दोनों पे अब लगा दीजिए। तो अगर आप इसमें लगाएंगे तो इसमें आपको कुछ आंसर नहीं मिलेगा या तो माइनस वन आंसर मिलेगा कोई बात नहीं। लेकिन जब आप या इस लोअर सिक्स इसमें लगाएंगे बाइनरी सर्च तो आपको",
+      "source": "caption",
+      "english_text": "Apply binary search to the array. Suppose it is not found here. If you don't find anything then include it in this also. Low = 6 High = 9 You know how to do simple binary search, right? What did you do in simple binary search? We didn't even think that much. In that we used to write low = 0 and high = n - 1. Used to gas. If you wanted, then we are assuming that you people are coming after watching the video, so you know the simple binary truth. Now put it on both. So if you try it, you will not get any answer or you will get minus one answer, no problem. But when you or this lower six apply binary search in it, you will get"
+    },
+    {
+      "start_time": 363.68,
+      "end_time": 396.87,
+      "text": "पता चल जाएगा कि आपका जो भी 30 है वो इंडेक्स एट पे है तो आप एट रिटर्न कर देंगे। तो ये एक तरीका है और हम बहुत दिल से उम्मीद कर रहे हैं कि जो लोग पहले का वीडियो देख के आए हैं उन लोग को ये पूरे अच्छे तरीके समझ में आ रहा होगा और आप लोग इसका कोड लिखने में पूरी तरीके से सक्षम हैं। इस कोड लिखने के लिए आपको क्या चाहिए? सबसे पहले तो आपको ये वाला चीज़ चाहिए। ये, ये क्या है? मिनिमम इन रोटेड सॉर्ट एर है जो हम लोग निकाल चुके हैं जो हम लोग को आता है निकाल लें। एक बार आप मिनिमम निकाल लिए तो आप अपने एरे को दो पार्ट में तोड़ सकते हैं। क्या दो पार्ट में तोड़ सकते हैं? मान लीजिए आप निकालें कि इंडेक्स इज़ इक्वल टू समथिंग पे आपका मिनिमम है। Okay? तो आप क्या कर सकते हैं",
+      "source": "caption",
+      "english_text": "You will come to know that whatever your Rs. 30 is at index pay, then you will return at. So this is one method and we are sincerely hoping that those who have watched the earlier video will be understanding these methods well and you guys are fully capable of writing its code. What do you need to write this code? First of all you need this thing. This, what is this? This is the minimum in rotated sort, which we have found out, whatever we know, we can find it. Once you have found the minimum, you can break your array into two parts. Can it be broken into two parts? Suppose you find that Index is equal to something is your minimum. Okay? so what can you do"
+    },
+    {
+      "start_time": 396.88,
+      "end_time": 431.35,
+      "text": "कि मेरा लो 1 = 0 और मेरा हाई वन इज़ इक्वल टू इंडेक्स - 1 देखिए इंडेक्स आपका मिनिमम सिक्स पे था तो आपका लो क्या था? ज़ीरो से लेके फाइव तक। ज़ीरो से लेके 6 - 1 तक। हो गया। और आपका दूसरा एरे कहां से शुरू होगा? लो 2 = इंडेक्स और हाई टू = जो भी लास्ट है n - 1 आपको दो लो मिल गया। दो बार बाइनरी सर्च लगाइए एक-एक करके दोनों इसी एरे पे मतलब इस लो और हाई के साथ फिर इस लोअर हाई के साथ जहां आपको आंसर मिलता है वो रिटर्न कर दीजिए। मान लीजिए आपको कहीं आंसर नहीं मिला। मान लीजिए आप 32 खोजने आया था। 32 तो एरे में है नहीं। 32",
+      "source": "caption",
+      "english_text": "That my low 1 = 0 and my high one is equal to index - 1 see index was your minimum at six then what was your low? From zero to five. From zero to 6 - 1. Done. And where will your second array start? Low 2 = index and high 2 = whatever is the last n - 1. You got two lows. Perform binary search twice, one by one, on both the same array, i.e. with this low and high and then with this lower high, return the answer you get. Suppose you did not find the answer anywhere. Suppose you came to find 32. 32 is not in the array. 32"
+    },
+    {
+      "start_time": 431.36,
+      "end_time": 463.51,
+      "text": "तो माल में है नहीं। तो आप फिर -1 ही रिटर्न कर दे कोई प्रॉब्लम नहीं है। तो ऐसे करके आप ये प्रॉब्लम सॉल्व कर सकते हैं। लेकिन लेकिन अब ये बहुत अच्छा अप्रोच है। वेरी गुड एप्रोच है। वैरी नाइस। यस। आई एम वेरी हैप्पी कि आप ऐसा सोचे तो अच्छी बात है। नहीं सोच पाए तो भी अच्छी बात है। समझ आ गया होगा। अब हमको उम्मीद है। अब जिन लोगों को ये नहीं समझ में आए इसीलिए हम बोल रहे हैं कि आपको वो 51 देखना जरूरी है। इसीलिए वो 51 देखना काफी जरूरी है आपके लिए। ठीक है? अब ये एप्रोच सही है लेकिन किसी-किसी इंटरव्यू में ये एप्रोच नहीं चलेगा। इस ये अप्रोच में नहीं चलेगा। क्यों नहीं चलेगा? क्योंकि देखिए यहां पे आप दो-तीन बार काम कर रहे हैं।",
+      "source": "caption",
+      "english_text": "So it is not in the goods. So you just return -1, there is no problem. So by doing this you can solve this problem. But but now this is a very good approach. Very good approach. Very nice. Yes. I am very happy that you think so, it is good. Even if you can't think, it's a good thing. Must have understood. Now we have hope. Now, for those who did not understand this, we are saying that it is important for you to see that 51. That is why it is very important for you to see that 51. Ok? Now this approach is correct but in some interviews this approach will not work. This approach will not work. Why won't it work? Because see here you are working two-three times."
+    },
+    {
+      "start_time": 463.52,
+      "end_time": 496.23,
+      "text": "सबसे पहले तो आप एक काम कर रहे हैं कि वो पार्ट वन वाला इंडेक्स निकालने के लिए या जो मिनिमम इंडेक्स निकालने के लिए है उसके लिए भी हम लोग बाइनरी सर्च को यूज़ किए थे। उसके लिए भी हम लोग बाइनरी सर्च को यूज़ किए थे। कैसे यूज़ किए थे? हम लोग मान लिए थे कि एरे में दो तरीके के एलिमेंट्स हैं। p2 p2 p2 p2 और फिर p1 p1 p1 p1 और हम लोग p1 का फर्स्ट ऑकरेंस निकाले थे। तो इसके लिए भी एक तरीके से वो एल्गोरिदम यूज़ किए थे ना कि बाइनरी सर्च करेंगे। अगर P2 आ गया तो ऑब्वियस सी बात है राइट जाएंगे। P1 आ गया तो इसको आंसर में लिख लेंगे और लेफ्ट जाएंगे। मतलब कुल मिला के एक बाइनरी सर्च आप किए थे। तो",
+      "source": "caption",
+      "english_text": "First of all, you are doing one thing that we used binary search to find the index for part one or to find the minimum index. For that also we used binary search. How were you used? We assumed that there are two types of elements in the array. p2 p2 p2 p2 and then p1 p1 p1 p1 and we had found the first occurrence of p1. So for this also in a way they used algorithms and not binary search. If P2 comes then it is obvious that we will go right. If P1 comes, we will write it in the answer and go left. Meaning overall you did a binary search. so"
+    },
+    {
+      "start_time": 496.24,
+      "end_time": 531.11,
+      "text": "यहां पे आप एक बार बाइनरी सर्च किए। उसके बाद उसके बाद जब आपको ये चीज़ मिल गया तो आप फिर से बाइनरी सर्च कर रहे हैं उन दो एरे पे। फिर से आप बाइनरी सर्च कर रहे हैं उन दो एरे पे। चलिए दो पे ना करें मतलब आप दिमाग ऐसा लगा सकते हैं कि मान लीजिए आपका ये आया। आप इसका रेंज देख लीजिए कि इसका लोएस्ट 50 है और हाईएस्ट 100 है। ऑब्वियस सी बात है कि 50 से 100 के बीच में तो 30 नहीं मिलता है। और इसका लोएस्ट 10 है और इसका 40 है तो 10 से 40 के बीच में मिल सकता है तो आप एक पे ना लगाएं एक पे लगाएं। एनी केस आपको एक एरे पे तो सर्च करना ही पड़ेगा। एक एरे पे तो सर्च और करना ही पड़ेगा। तो आपको कुल मिला के एक और एक्चुअल सर्च करना पड़ेगा। तो आप दो बार बाइनरी सर्च कर रहे हैं। दो बार",
+      "source": "caption",
+      "english_text": "Here you did a binary search once. After that, once you have found this thing, you are again doing binary search on those two arrays. Again you are doing binary search on those two arrays. Let's not do it for two, meaning you can put your mind in such a way that it will come to you. You can see its range, its lowest is 50 and highest is 100. It is obvious that out of 50 to 100, you do not get 30. And its lowest is 10 and its lowest is 40, so you can get it between 10 and 40, so don't pay for one, pay for one. In any case, you will have to search on an array. More searching will have to be done on an array. So you will have to do another actual search altogether. So you are doing the binary search twice. twice"
+    },
+    {
+      "start_time": 531.12,
+      "end_time": 556.389,
+      "text": "बाइनरी सर्च कर रहे हैं। इंटरव्यूअर आपको बोलेगा कि नहीं इसको वन शॉट में करो। वन शॉट मतलब वन पास। मतलब एक बार बाइनरी सर्च करो जिससे सब हो जाए जिससे सब हो जाए। कहीं-कहीं ये बोला जा सकता है इसीलिए सीखना जरूरी है। तो ज़्यादा डिफिकल्ट नहीं है। थोड़ा सा बस अब आपको इसके लिए बेसिक बहुत अच्छे से क्लियर होना चाहिए। इसीलिए अभी तक हम बेसिक पे बहुत ज्यादा फोकस कर रहे थे सिखाने पे। कल एक कमेंट में हमको कोई बोला था कि आप क्वेश्चन नहीं पढ़ाते हैं। आप बहुत बेकार- बेकार बात करते हैं।",
+      "source": "caption",
+      "english_text": "Doing binary search. The interviewer will ask you to do it in one shot. One shot means one pass. Meaning, do binary search once so that everything can be done. This can be said at some places, that is why it is important to learn. So it is not very difficult. Now you should be very clear with the basics for this. That is why till now we were focusing a lot on teaching the basics. Yesterday someone told us in a comment that you do not teach questions. You talk a lot of nonsense."
+    },
+    {
+      "start_time": 556.399,
+      "end_time": 591.03,
+      "text": "तो बेकार- बेकार बात हम क्यों करते हैं? ताकि आपका बेसिक क्लियर हो। बाइनरी सर्च अगर रटवाना हो तो आप कर लीजिए। वो लो मिड हाई याद करते रहेंगे तो ये क्वेश्चन कभी नहीं बनेगा। जो आदमी भी लो मिड हाई याद करके बाइनरी सर्च पढ़ा है ना उससे ये क्वेश्चन कभी नहीं बनेगा क्योंकि उसको कॉन्सेप्ट ही नहीं समझ में आता है कि बाइनरी सर्च में होता क्या है वो रट लिया है कि अच्छा जब लेस होता है तो इधर जाना है राइट नहीं वैसा नहीं करना होता है इसीलिए वो बात बनाते हैं इसीलिए नहीं कि हमको अपना वो बढ़ाना है मिनट बढ़ाना नहीं वैसा हम कुछ काम नहीं करते हैं ठीक है आइए देखते हैं और बहुत आराम से इसको सॉल्व करते हैं बहुत आराम से सॉल्व करते हैं। जब हम लोग बेसिक बाइनरी सर्च पढ़ते थे, जब हम",
+      "source": "caption",
+      "english_text": "So why do we talk uselessly? So that your basic is clear. If you want to memorize binary search, then do it. If they keep remembering low mid high then this question will never arise. The person who has studied Binary Search by memorizing Low Mid High will never be able to solve this question because he does not even understand the concept of what is happening in Binary Search. He has learned by heart that when there is less, we have to go here, not right, we do not have to do that, that is why they make the point, not because we have to increase ours, not by increasing the minutes, we do not do anything like that, okay, let's see and solve it very easily. Let's solve it very easily. When we used to read Basic Binary Search, when we"
+    },
+    {
+      "start_time": 591.04,
+      "end_time": 623.19,
+      "text": "लोग बेसिक यह है तो सर्च ना है तो वह भी सर्च यह भी सर्च है। वह बेसिक वाला भी सर्च ही था। लेकिन यह है कि यहां का एरे रोटेड है। मतलब थोड़ा ट्विस्ट आ गया है। अच्छा देखिए जब हम लोग बेसिक पढ़ते थे, जब हम लोग बेसिक वाले मॉडल में सर्च किए थे तो क्या करते थे? आपका बेसिक मॉल ऐसा लगता था देखने में। 30, 40, 50, 60, 70, 80, 90 और 100। आपका बेसिक मॉल ऐसा लगता था। ओके? मान लीजिए कि आप कोई चीज गेस किए। मान लीजिए आप कोई चीज गेस किए। यहां पे आ गए। आप इसको गेस करने में आ गए। आप इस वाले दुकान",
+      "source": "caption",
+      "english_text": "People, if it is basic then there is search, if not then that too is search, this is also search. That basic one was also a search. But the thing is that the array here is rotated. Meaning there has been a little twist. Well, see, when we used to study BASIC, when we searched in BASIC models, what did we do? Your basic mall looked like this. 30, 40, 50, 60, 70, 80, 90 and 100. Your basic mall looked like this. Ok? Suppose you guess something. Suppose you guess something. Came here. You have come to gas it. you from this shop"
+    },
+    {
+      "start_time": 623.2,
+      "end_time": 651.19,
+      "text": "को गेस किए। अब अगर इसकी वैल्यू आपके सर्च वैल्यू के इक्वल होती थी। मतलब आप इसी को ढूंढ रहे थे तब तो आप इसको रिटर्न कर देते थे। ओके। उसमें तो कोई दिक्कत ही नहीं थी। रिटर्न कर देते थे। अगर अगर आपका एरे ऑफ़ गेस जो भी आप गेस किए हैं वो लेस दैन टारगेट होता था। मतलब की आप जो चीज ढूंढना चाह रहे हैं ना वो इससे बड़ी है। मतलब कि मान लीजिए आप 30 पे हैं। आप मान लीजिए 70 ढूंढना चाह रहे थे। तो अब देखिए 30 उससे कम हो गया है। तो यहां पे हम लोग को मालूम था कि 30 के लेफ्ट वाला तो कम ही होगा।",
+      "source": "caption",
+      "english_text": "Gassed. Now if its value was equal to your search value. Meaning, if you were looking for this then you would have returned it. Ok. There was no problem in that. Used to return. If your array of guesses, whatever you guessed was less than the target. It means that the thing you are trying to find is bigger than this. Meaning, suppose you are 30. Suppose you wanted to find 70. So now see 30 has become less than that. So here we knew that there would be very few lefties in their 30s."
+    },
+    {
+      "start_time": 651.2,
+      "end_time": 683.829,
+      "text": "अगर आपको ज्यादा चाहिए अगर आपको ज्यादा चाहिए एक तरीके से अब आपको क्या आप 30 वाले दुकान पे गए आपको पता चला कि नहीं नहीं हमको तो 70 ढूंढना था 30 तो कम है। तो आपको 30 से बड़ी वैल्यू खोजनी चाहिए थी। अब 30 के बड़ी वैल्यू कहां मिलती थी 30 के राइट में। तो देख के पता चलता था कि 30 के बड़ी वाली वैल्यू 30 के राइट में है। इस केस में आप राइट चले जाते थे कैसे? लो इज़ इक्वल टु गेस +1 से। ठीक है? इस केस में आप राइट चले जाते थे लो इज़ इक्वल टू गैस प्लस वन से। और अगर आपको पता चलता था कि अगर मेरा एरे ऑफ़ गैस इज़ मोर दैन टारगेट है। मतलब कि आप जिस दुकान में गए वो महंगा है जो आप खोज रहे थे। मान लीजिए आप इस",
+      "source": "caption",
+      "english_text": "If you want more, if you want more, in a way, now did you go to the shop with 30, did you find out that no no, we had to find 70, 30 is less. So you should have found a value greater than 30. Now where could the bigger value of 30 be found in the rights of 30? So by looking at it, it was clear that the value which is bigger than 30 is to the right of 30. How did you go right in this case? Low is equal to guess +1. Ok? In this case you would go right by saying lo is equal to two gas plus one. And if you knew if my array of gas is more than target. Meaning that the shop you went to has the expensive price you were looking for. Suppose you have this"
+    },
+    {
+      "start_time": 683.839,
+      "end_time": 717.99,
+      "text": "दुकान में आ गए 80 पे और आप खोज रहे थे 40। आप फाइंड करने की कोशिश कर रहे थे 40। आप आ गए हैं 80 पे। आपका गेस 80 पे आके रुक गया है। तो इसका क्या मतलब होता था कि आपको 80 से कम वैल्यू ढूंढनी चाहिए। अब 80 ऑलरेडी ज़्यादा है तो 80 से ज़्यादा ढूंढने में क्या है? आपको 80 से कम की वैल्यू चाहिए। अब ड्राइंग में देख के पता चलता था कि 80 से कम की वैल्यू कहां मिलेगी? लेफ्ट में। तो इस केस में हम लेफ्ट जाते थे, लेफ्ट कैसे जाते हैं? हाई इज इक्वल टू गेस माइनस वन करके लेफ्ट चले जाते थे। कुल मिला के यही होता था ना बेसिक्स यही यही आपका माइंड होता था, यही थॉट प्रोसेस होता था यही आप लोग करते थे। सेम चीज़ को आइए अपने इस क्वेश्चन में करते हैं। आइए, सेम",
+      "source": "caption",
+      "english_text": "Came in the shop for 80 rupees and you were looking for 40 rupees. You were trying to find 40. You have reached 80. Your gas has stopped at 80. So what this means is that you should look for a value less than 80. Now 80 is already more so what is the point in looking for more than 80? You want a value less than 80. Now by looking at the drawing it was clear where a value less than 80 would be found? In the left. So in this case we used to go left, how to go left? Used to do high is equal to guess minus one and go left. Overall, this was the basics, this was your mind, this was the thought process, this was what you people used to do. Let us do the same thing in this question. Come on, Sam!"
+    },
+    {
+      "start_time": 718.0,
+      "end_time": 751.75,
+      "text": "चीज़ को दिमाग लगाते हैं। और थोड़ा पेशेंस के साथ देखिएगा एंड तक आपको पूरा क्लियर हो जाएगा। इस सॉल्यूशन को प्लीज याद मत कीजिएगा। याद करेंगे, कल तक भूल जाएंगे। समझ लेंगे जिंदगी भर याद रहेगा। ठीक है? आइए हम लोग एक मॉल बना लेते हैं अपना ठीक है हम लोग क्या मॉल बनाते हैं 50 60 70 80 90 100 उसके बाद 10 20 30 40 सबका इंडेक्स लिख देते हैं 0 1 2 3 4 5 6 7 8 9 10 शॉप्स हैं वेरी गुड मान लीजिए आप कुछ भी",
+      "source": "caption",
+      "english_text": "Let's put our mind to things. And watch with some patience till the end you will get complete clarity. Please do not miss this solution. Will remember, will forget by tomorrow. You will understand and remember it for the rest of your life. Ok? आइए हम लोग एक मॉल बना लेते हैं अपना ठीक है हम लोग क्या मॉल बनाते हैं 50 60 70 80 90 100 उसके बाद 10 20 30 40 सबका इंडेक्स लिख देते हैं 0 1 2 3 4 5 6 7 8 9 10 शॉप्स हैं वेरी गुड मान लीजिए आप कुछ भी"
+    },
+    {
+      "start_time": 751.76,
+      "end_time": 786.389,
+      "text": "एलिमेंट ढूंढ रहे थे कोई भी एलिमेंट ढूंढ लिया टारगेट आप ढूंढ रहे थे ठीक है आप टारगेट ढूंढ रहे हैं टारगेट कुछ भी हो सकता है मतलब कोई भी आप नंबर ढूंढना चाहते हैं अब देखिए अब आप गेस करेंगे। बाइनरी सच क्या होता है? गेस गेम होता है। तो आप 10ों में से कोई भी दुकान और इनिशियली गेस कर सकते हैं। मतलब इनिशियली क्या है कि आपका लो = 0 है और हाई इज इक्वल टू 9 है। शुरू में तो पूरा मौल ही आपके लिए है। कुछ भी गेस करिए। तो आप मान लीजिए कुछ भी गेस करते हैं। अब देखिए यहां पे प्रॉब्लम क्या होगी? अब देखिए यहां पे प्रॉब्लम क्या होगी। आपका गेस आपका गेस। याद रखिएगा इस एरे में दो पार्ट्स हैं। अब आपका मॉल ना अब आपका मॉल आप एक सिंगल मॉल की तरह नहीं देख सकते कि ये एक सिंगल मॉल है और",
+      "source": "caption",
+      "english_text": "एलिमेंट ढूंढ रहे थे कोई भी एलिमेंट ढूंढ लिया टारगेट आप ढूंढ रहे थे ठीक है आप टारगेट ढूंढ रहे हैं टारगेट कुछ भी हो सकता है मतलब कोई भी आप नंबर ढूंढना चाहते हैं अब देखिए अब आप गेस करेंगे। बाइनरी सच क्या होता है? गेस गेम होता है। तो आप 10ों में से कोई भी दुकान और इनिशियली गेस कर सकते हैं। मतलब इनिशियली क्या है कि आपका लो = 0 है और हाई इज इक्वल टू 9 है। शुरू में तो पूरा मौल ही आपके लिए है। कुछ भी गेस करिए। तो आप मान लीजिए कुछ भी गेस करते हैं। अब देखिए यहां पे प्रॉब्लम क्या होगी? अब देखिए यहां पे प्रॉब्लम क्या होगी। आपका गेस आपका गेस। याद रखिएगा इस एरे में दो पार्ट्स हैं। अब आपका मॉल ना अब आपका मॉल आप एक सिंगल मॉल की तरह नहीं देख सकते कि ये एक सिंगल मॉल है और"
+    },
+    {
+      "start_time": 786.399,
+      "end_time": 819.35,
+      "text": "दुकानें ऐसे करके ऐसे लगी हुई है। नहीं। अब आपको इस मॉल को पार्ट वाइज़ देखना पड़ेगा। जैसे हम लोग मिनिमम में भी इसको पार्ट वाइज़ देखते थे। आपके मॉल में अब दो तरीके के पार्ट्स हैं। एक पार्ट ये है। एक पार्ट ये है और एक पार्ट ये है। अब आपका मॉल दो पार्ट्स में ये आपका पार्ट वन समझ लीजिए। पार्ट वन बड़ा पार्ट छोट जो भी आपको मन करे इसको आप पार्ट टू समझ लीजिए। हम इसको पार्ट वन पार्ट टू करके बोलते हैं। ठीक है? अच्छा। अब जो आप गेस करते हैं जो आप गेस करते हैं वो पार्ट वन में भी हो सकता है, पार्ट टू में भी हो सकता है। वह तो डिपेंड करता है कि पार्ट वन कितना बड़ा",
+      "source": "caption",
+      "english_text": "दुकानें ऐसे करके ऐसे लगी हुई है। No. अब आपको इस मॉल को पार्ट वाइज़ देखना पड़ेगा। जैसे हम लोग मिनिमम में भी इसको पार्ट वाइज़ देखते थे। आपके मॉल में अब दो तरीके के पार्ट्स हैं। एक पार्ट ये है। एक पार्ट ये है और एक पार्ट ये है। अब आपका मॉल दो पार्ट्स में ये आपका पार्ट वन समझ लीजिए। पार्ट वन बड़ा पार्ट छोट जो भी आपको मन करे इसको आप पार्ट टू समझ लीजिए। हम इसको पार्ट वन पार्ट टू करके बोलते हैं। Ok? Good. अब जो आप गेस करते हैं जो आप गेस करते हैं वो पार्ट वन में भी हो सकता है, पार्ट टू में भी हो सकता है। वह तो डिपेंड करता है कि पार्ट वन कितना बड़ा"
+    },
+    {
+      "start_time": 819.36,
+      "end_time": 853.59,
+      "text": "है और पार्ट टू कितना बड़ा है। हम कहने का मतलब कि जो भी आप इंडेक्स गेस करते हैं वो इंडेक्स किसी भी पार्ट में लाई कर सकता है ना। वो दुकान किसी भी पार्ट में हो सकता है। वो दुकान पार्ट वन में हो सकता है वो दुकान पार्ट टू में भी हो सकता है। आइए पहले देखते हैं कि जो भी आप चीज़ गेस करते हैं आप जो भी इंडेक्स गेस करते हैं वो पार्ट वन में आ जाता है। वो पार्ट वन में आ जाता है। जो भी आप गेस करते हैं मतलब जो भी आप गेस करते हैं वो पार्ट वन में फॉल करता है। पार्ट वन का क्या कंडीशन था? याद कीजिए मिनिमम इन रोटेट मत भूलिएगा। मिनिमम इन रोटेट सॉर्टेड डायरे मत भूलिएगा उसको इसके पहले पढ़ाने का मतलब ही यही था। कौन सा गैस इंडेक्स किस पार्ट में फॉल करता",
+      "source": "caption",
+      "english_text": "And how big is part two? What we mean to say is that whatever index you guess can bring the index to any part. It can be in any part of the shop. That shop may be in Part One, that shop may also be in Part Two. Let's first see that whatever you guess, whatever index you guess comes in part one. That comes in Part One. Whatever you guess means whatever you guess falls in Part One. What was the condition of part one? Remember, don't forget to rotate in minimum. Don't forget Minimum in Rotate Sorted Diary, this was the meaning of teaching it earlier. Which gas index falls in which part?"
+    },
+    {
+      "start_time": 853.6,
+      "end_time": 886.949,
+      "text": "है? ये कैसे पता चलता था? अगर एरे ऑफ़ गेस इज़ ग्रेटर देन एरे ऑफ़ n - 1 तो ये पार्ट वन में है। ध्यान से देखिए क्या बोल रहे हैं? अगर एरे ऑफ़ गेस इज़ ग्रेटर दैन लास्ट एलिमेंट। देखिए 50 इज़ ग्रेटर दैन 40 तो 50 पार्ट वन में है। 60 इज़ ग्रेटर दैन 40 तो 60 पार्ट वन में है। 70 इज़ ग्रेटर दैन 40 तो 70 पार्ट वन में है। 80 इज़ ग्रेटर दैन 40 80 पार्ट वन में है। 90 इज़ ग्रेटर दैन 40 90 पार्ट वन में है। 100 इज़ ग्रेटर दैन 40 100 पार्ट वन में है। लेकिन 10 इज़ नॉट",
+      "source": "caption",
+      "english_text": "Is it? How was this known? If the array of guesses is greater than the array of n - 1 then this is in part one. Look carefully what are you saying? If the array of guesses is greater than the last element. See 50 is greater than 40 so 50 is in part one. 60 is greater than 40 so 60 is in part one. 70 is greater than 40 so 70 is in part one. 80 Is Greater Than 40 is in 80 Part One. 90 Is Greater Than 40 is in 90 Part One. 100 Is Greater Than 40 is in 100 Part One. but 10 is not"
+    },
+    {
+      "start_time": 886.959,
+      "end_time": 919.91,
+      "text": "ग्रेटर दैन 40 तो 10 पार्ट टू में है। 20 इज़ नॉट ग्रेटर दैन 40 20 पार्ट टू में है। 30 इज़ नॉट ग्रेटर दैन 40 30 पार्ट टू में है। एंड 40 इज़ आल्सो नॉट ग्रेटर दैन 40। 40 इज़ इक्वल टू 40 बट 40 इज़ नॉट ग्रेटर दैन 40। तो 40 भी पार्ट टू में है। ऐसे करके तुरंत पता चल जाता है कि कौन सा इंडेक्स किस पार्ट में है? तो चलिए मान लीजिए आप जो भी गेस किए आप जो भी गेस किए आप इस वाले को गेस किए। इस वाले पे गेस किए। आप जो भी गेस किए वो मान लीजिए कि पार्ट वन में आ गया। कैसे पता चलेगा? एरे ऑफ़ गेस इज़ ग्रेटर दैन एरे ऑफ़ n - 1। तो हां 80 &gt; 40 आपको पता चला कि पार्ट वन में",
+      "source": "caption",
+      "english_text": "Greater than 40 is in 10 part two. 20 Is Not Greater Than 40 is in 20 Part Two. 30 Is Not Greater Than 40 is in 30 Part Two. And 40 is also not greater than 40. 40 is equal to 40 but 40 is not greater than 40. So 40 is also in part two. By doing this you can immediately know which index is in which part? So let's say whatever guess you did, whatever guess you did, you guessed this one. Gasped on this one. Whatever guess you made, assume that it has come in Part One. How to know? Array of guesses is greater than array of n - 1. So yes 80 > 40 you learned that in part one"
+    },
+    {
+      "start_time": 919.92,
+      "end_time": 952.47,
+      "text": "है। ओके? अब देखिए तीन कंडीशन हो सकती है। अब तीन तरीके की चीजें हो सकती हैं। कोई भी आप गेस करेंगे तो उसमें तीन ही सिनेरियो पॉसिबल है। सबसे पहला सिनेरियो तो क्या है कि आपका जो एरे ऑफ़ गेस है इक्वल इक्वल टू टारगेट हो जाए। इक्वल इक्वल टू टारगेट हो जाए। इसमें क्या करना है? कुछ नहीं। वेरी गुड। यस यस। वेरी गुड। क्लैपिंग कीजिए और रिटर्न कर दीजिए। गेस। रिटर्न कर दीजिए। यस। मिल गया ना? मिल गया ना माय रिसर्च में? खत्म हो गई बात? खत्म हो गई। मिल गया। तो रिटर्न कर दीजिए। सारे एलिमेंट यूनिक हैं। ठीक है? इस दुकान में इस मॉल में सारी दुकानें यूनिक सामान बेचती हैं। तो कोई टेंशन लेने की जरूरत नहीं है। अगर आपको मिल गया है तो वाह बहुत",
+      "source": "caption",
+      "english_text": "Is. Ok? Now see, there can be three conditions. Now three types of things can happen. If you make any guess, only three scenarios are possible. The first scenario is that your array of guesses becomes equal to the target. Be equal to target. What to do in this? Nothing. very good. Yes yes. very good. Clapping and returning. Guess. Please return it. Yes. Found it, right? Found it in my research? Is the matter over? It is over. Got it. So please return it. All elements are unique. Ok? In this shop, all the shops in this mall sell unique items. So there is no need to take any tension. wow if you got it"
+    },
+    {
+      "start_time": 952.48,
+      "end_time": 987.189,
+      "text": "बधाई हो। अच्छा अब एक बात बताइए अगर आपका एरे ऑफ़ गेस जो है अ अगर आपका एरे कम हो जाए। अगर आपका एरे लेस दैन टारगेट हो जाए। मतलब कि इसका क्या मतलब है? आप जिस दुकान पे हैं आप अभी 80 पे आए हैं। आप अभी 80 पे आए हैं गेस करने के लिए। आपको पता चलता है कि नहीं हम 80 तो नहीं ढूंढ रहे थे। हम हम तो 90 ढूंढ रहे थे फॉर एग्जांपल कुछ भी 80 से कोई भी बड़ी वैल्यू ढूंढ रहे थे इसका मतलब ये एरे ऑफ़ गेस इज़ लेस दैन टारगेट तो हम 80 से बड़ी वैल्यू ढूंढ रहे थे। अब ड्राइ ड्रॉइंग देखिए बाइनरी सेक्शन बहुत इंपॉर्टेंट है कि आप जो भी क्वेश्चन सॉल्व कर रहे हैं ना उसका एक ड्रॉइंग अपने मन",
+      "source": "caption",
+      "english_text": "Congratulations! Well now tell me one thing if your array of guesses which is A if your array is reduced. If your array becomes less than the target. I mean what does it mean? You have just reached 80 in the shop you are at. You have just come to 80 to guess. You realize that no, we were not looking for 80. We were looking for 90. For example, we were looking for any value greater than 80, which means this array of guesses is less than the target, so we were looking for any value greater than 80. Now look at the dry drawing. It is very important to have a drawing in your mind of whatever question you are solving."
+    },
+    {
+      "start_time": 987.199,
+      "end_time": 1021.43,
+      "text": "में बना के रख लें या तो अपने कॉपी में बना के रख लें ताकि आप उसको देख के लेफ्ट राइट सोच पाएं। लेफ्ट राइट सोचना ड्राइंग से बहुत आसान है व्हेन कंपेयर्ड टू के अपने मन में अपने मन में कहानी मत बनाइए। ड्राइंग देखिए डिसाइड कीजिए। अच्छा। अब एक बात बताइए। आपका एरे ऑफ गैसेस लेस दैन टारगेट हो गया है। तो ऑब्वियस सी बात है कि मान लीजिए आप 80 पे हैं। आपको 80 से बड़ी वैल्यू खोजनी थी। आपको मान लीजिए 90 खोजना था। 100 200 कुछ भी 80 से बड़ा खोजना था। तो आपको 80 से बड़ा वैल्यू की तरफ आप जाना चाहिए। अब आपको 80 से बड़े वैल्यू को खोजना चाहिए। अब 80 से बड़ा वैल्यू 80 के लेफ्ट साइड में दिख रहा है कि 80 के राइट साइड में दिख रहा है? फिर से क्वेश्चन",
+      "source": "caption",
+      "english_text": "Prepare it in my notebook or keep it in your notebook so that you can think left and right after seeing it. Thinking Left Right Is Much Easier Than Drawing When Compared To Don't make up a story in your mind in your mind. Look at the drawing and decide. Good. Now tell me one thing. Your array of gases is less than the target. So the obvious thing is that suppose you are 80 years old. You had to find a value greater than 80. Suppose you had to find 90. Had to find 100 200 anything larger than 80. So you should go towards a value greater than 80. Now you should look for a value greater than 80. Now is the value greater than 80 visible on the left side of 80 or on the right side of 80? question again"
+    },
+    {
+      "start_time": 1021.44,
+      "end_time": 1056.15,
+      "text": "सुनिए। ड्राइंग में 80 से बड़ा वैल्यू 80 से लार्जर वैल्यूज़ 80 के लेफ्ट साइड में दिख रहा है कि 80 के राइट साइड में दिख रहा है? 80 के राइट साइड में दिख रहा है। देखिए 90 और 100 दो ही वैल्यू 80 से बड़े हैं और वो कहां है? राइट साइड में। 80 के लेफ्ट साइड में कोई भी वैल्यू 80 से बड़ी नहीं है। 80 से बड़ी नहीं है देख लीजिए। 80 के लेफ्ट साइड में कोई भी वैल्यू 80 से बड़ी नहीं है। कोई भी वैल्यू 80 से बड़ी नहीं है। हां, राइट साइड में इसकी वैल्यू बड़ी है। तो ऑब्वियस सी बात है कि आपको लेफ्ट तो नहीं ही जाना चाहिए। आप अगर लेफ्ट जाएंगे तो आपको कभी नहीं मिलेगा टारगेट क्यों? क्योंकि 80 ऑलरेडी टारगेट",
+      "source": "caption",
+      "english_text": "Listen. In the drawing, are values ​​larger than 80 visible on the left side of 80 or on the right side of 80? 80's are visible on the right side. See, 90 and 100 are the only two values ​​greater than 80 and where is that? On the right side. To the left of 80, no value is greater than 80. See if it is not older than 80. To the left of 80, no value is greater than 80. No value is greater than 80. Yes, its value is bigger on the right side. So it is obvious that you should not go left. If you go left you will never find the target. Why? Because 80 already target"
+    },
+    {
+      "start_time": 1056.16,
+      "end_time": 1082.789,
+      "text": "से कम है। आप लेफ्ट जाएंगे तो सारी वैल्यूज 80 से कम है। तो अगर 80 टारगेट से कम है तो 70 टारगेट से कम है। 50 टारगेट से कम है। आपको कहीं नहीं मिलेगा। इस केस में तो बहुत सिंपली आपको राइट जाना चाहिए। इस केस में आपको राइट जाके और खोजना चाहिए। राइट कैसे जाते हैं? लो इज इक्वल टू गेस। +1 वेरी गुड। सॉल्व हो गया। लेकिन अब एक छोटा सा ट्विस्ट है। अब अब इस इस क्वेश्चन का सबसे हार्ड पार्ट अब आया है।",
+      "source": "caption",
+      "english_text": "is less than. If you go left, all values ​​are less than 80. So if 80 is less than the target then 70 is less than the target. Less than 50 targets. Will get you nowhere. In this case, very simply you should go right. In this case you should go right and search. How to go right? Low is equal to guess. +1 Very good. Solved. But now there is a small twist. Now the hardest part of this question has come."
+    },
+    {
+      "start_time": 1082.799,
+      "end_time": 1114.07,
+      "text": "यह लास्ट पार्ट एक समझ जाइए। पार्ट वन अगर अभी हा अभी बहुत इंपॉर्टेंटली अभी हम लोग ये डिस्कस कर रहे हैं कि जब आपका गेस पार्ट वन में लाई करे। आपका गेस जब पार्ट टू में लाई करेगा तो अलग थ्योरी बनेगी देखिएगा। उसको अब समझाएंगे। ये समझ जाइए अगला वाला आप खुद लिख लेंगे। हम वादा करते हैं अगर आप ये समझ गए अगला वाला खुद लिख लेंगे। ओके। अभी तीन कंडीशन हो सकते थे। ऐरे ऑफ़ गैस इज़ इक्वल इक्वल टू टारगेट रिटर्न गेस। कुछ नहीं करना है। एरे ऑफ़ गेस इज़ लेस दैन टारगेट। तो आपको मतलब 80 से बड़ी वैल्यू ढूंढनी है। तो आप 80 से बड़ी वैल्यू ड्राइंग में देख के क्या लग रहा है कि हां ठीक है राइट में ही मिलता है तो राइट चले जाते हैं। लो इज़ इक्वल टू गेस",
+      "source": "caption",
+      "english_text": "Understand this last part one. Part One If now yes now very importantly now we are discussing that when your guess brings in part one. When your guess comes in part two, a different theory will be formed. Will explain it now. Understand this, you will write the next one yourself. We promise if you figure this out you'll write the next one yourself. Ok. There could have been three conditions. Array of gas is equal to target return gas. nothing to be done. Array of guesses is less than target. So you have to find a value greater than 80. So, seeing a value greater than 80 in the drawing, do you feel that yes, it is okay, if you get it only on the right, then you go to the right. Lo Is Equal To Guess"
+    },
+    {
+      "start_time": 1114.08,
+      "end_time": 1148.07,
+      "text": "प्लस वन। लेकिन क्या होगा अगर ऐरे ऑफ़ गैस अगर ऐरे ऑफ़ गैसेस इज़ ग्रेटर दैन टारगेट। क्या? ग्रेटर दैन टारगेट। अब दिक्कत है। देखिए अब दिक्कत क्यों है? कुछ लोगों को फील होने लगा होगा क्यों दिक्कत है। ऐरे ऑफ़ गैसेस इज़ ग्रेटर दैन टारगेट। मतलब कि आप जिस पे खड़े हैं आप 80 पे खड़े हैं आप 80 से कम वैल्यू ढूंढना चाहते थे। आप 80 से कम वैल्यू ढूंढना चाहते थे। ठीक है? आप 80 से कम की वैल्यू ढूंढना चाहते थे। मतलब मान लीजिए आप 70 ढूंढना चाहते थे, आप 50 ढूंढना चाहते थे, आप 40 ढूंढना कुछ भी 80 से कम। तो अब आपको 80 से कम वैल्यू चाहिए।",
+      "source": "caption",
+      "english_text": "Plus one. But what if the array of gases is greater than the target. What? Greater than target. Now there is a problem. See why there is a problem now? Some people may have started feeling why there is a problem. Array of gases is greater than target. Meaning that where you are standing, you are standing at 80. You wanted to find a value less than 80. You wanted to find a value less than 80. Ok? You wanted to find a value less than 80. Meaning let's say you wanted to find 70, you wanted to find 50, you wanted to find 40, anything less than 80. So now you want a value less than 80."
+    },
+    {
+      "start_time": 1148.08,
+      "end_time": 1180.23,
+      "text": "लेकिन गौर से देखिए डायग्राम में। 80 से अगर हम पूछने लगे कि 80 से कम वैल्यू 80 के लेफ्ट में है कि 80 के राइट में है? तो आप कंफ्यूज हो जाएंगे। कंफ्यूज आ जाएंगे। क्यों कंफ्यूज आ जाएंगे? क्योंकि 80 से लेफ्ट में भी 80 से छोटी वैल्यू दिख रही है 50 60 70 लेकिन 80 से राइट में भी 80 से छोटी वैल्यू दिखती है देखिए 10 20 30 40 फिर से सुनिए हम जब यहां पूछे थे आपसे कि 80 से बड़ी वैल्यू लेफ्ट में दिख रही है कि राइट में दिख रही है तो वो आप बड़ा कॉन्फिडेंट हो खुश हो के बता दिए थे कि 80 से सारी बड़ी वैल्यूस 80 के लेफ्ट राइट",
+      "source": "caption",
+      "english_text": "But look carefully at the diagram. From 80, if we start asking whether the value less than 80 is to the left of 80 or to the right of 80? Then you will get confused. Will get confused. Why will you get confused? Because even from 80 to the left, values smaller than 80 are visible. 50 60 70, but from 80 to the right, values smaller than 80 are also visible. Look, 10 20 30 40. Listen again, when we asked you here whether values larger than 80 are visible on the left or right, then you are very confident and happily told that all the values larger than 80 are visible. Values Left Right of 80"
+    },
+    {
+      "start_time": 1180.24,
+      "end_time": 1213.75,
+      "text": "में है वेरी गुड लेकिन यहां हम पूछ रहे हैं कि 80 से कम वैल्यू कहां-कहां दिख रही है? तो आप बोल देंगे कि अरे 80 से कम वैल्यू तो लेफ्ट में भी दिख रहा है और राइट में भी दिख रहा है। तो इसमें लेफ्ट जाना चाहिए कि राइट जाना चाहिए? ये तो कंफ्यूजन हो गया। ये इस क्वेश्चन का सबसे मेन पार्ट है। 80 से कम की वैल्यू तो यहां भी दिख रहा है और यहां भी दिख रहा है तो आप जाएंगे कहां? अब जाएंगे कहां? कहां जाएंगे? तो देखिए यहां पे एक चीज़ काम करती है। अच्छा हम आपसे ड्रॉइंग के हिसाब से आंसर कीजिएगा हमको। हम आपसे बहुत सिंपल क्वेश्चन पूछ रहे हैं। आपका टारगेट 80 से कम है। ओके? तो मतलब 80 से कोई कम वैल्यू",
+      "source": "caption",
+      "english_text": "It is very good but here we are asking where is the value less than 80 visible? So you will say that the value less than 80 is visible on the left as well as on the right. So should it go left or right? This is confusion. This is the most main part of this question. Value of less than 80 is visible here too and if it is visible here too then where will you go? Where will we go now? Where will you go? So see, one thing works here. Okay, please answer us according to the drawing. We are asking you very simple questions. Your target is less than 80. Ok? So that means any value less than 80"
+    },
+    {
+      "start_time": 1213.76,
+      "end_time": 1248.47,
+      "text": "ढूंढना चाहते हैं। मान लीजिए कि आप 60 ढूंढ रहे होते। मान लीजिए कि आपका टारगेट 60 होता। ये आपका टारगेट होता कि ये 60 है तो आप कहां जाते? तो ऑब्वियसली आप बोलते कि हां अगर टारगेट 60 है तो हम लेफ्ट जाते क्योंकि लेफ्ट में दिख रहा है आपको कि 60 है। वेरी गुड। तो टारगेट 60 में आप क्या बोले कि हम लेफ्ट जाते हैं। ठीक है? जाना भी चाहिए। अगर हम बोलें कि आपका टारगेट 80 से कम है ना। आपका टारगेट 20 है। आपका टारगेट 20 है तो आप कहां जाते हैं? आप बोलते कि अच्छा 20 है। ड्राइंग के हिसाब से अगर 20 यहां है तो ड्राइंग के हिसाब से हम राइट जाते। ड्राइंग के हिसाब से हम राइट जाते। ये हम आपसे पूछे कि अगर टारगेट",
+      "source": "caption",
+      "english_text": "Want to find. Let's say you were looking for 60. Suppose your target was 60. If your target was 60, where would you go? So obviously you would have said that yes, if the target is 60 then we would have gone left because on the left you can see that it is 60. very good. So what did you say in target 60 that we go left. Ok? Should also go. If we say that your target is less than 80, right? Your target is 20. If your target is 20, where do you go? You say it's good 20. According to the drawing, if there is 20 here then according to the drawing we would have gone right. According to the drawing we would have gone right. Let us ask you that if the target"
+    },
+    {
+      "start_time": 1248.48,
+      "end_time": 1283.43,
+      "text": "60 होता तो आप कहां जाते? तो आप बोले कि लेफ्ट जाते क्योंकि लेफ्ट में दिख रहा है। टारगेट 20 होता तो कहां जाते? तो बोलते कि अच्छा टारगेट 20 है मतलब तो राइट जाते राइट दिख रहा है। अब आप देख तो सकते नहीं हैं। अब तो यहां तो आप ड्राइंग देख के बाइनरी सर्च तो ड्राइंग जानता नहीं है। तो बाइनरी सर्च को क्या करना पड़ेगा? बाइनरी सर्च को अपना दिमाग लगाना पड़ेगा। ध्यान से सुनिए। एरे ऑफ़ गेस ग्रेटर दैन टारगेट है। अब 80 के लेफ्ट में भी छोटी वैल्यू 80 के राइट में भी छोटी वैल्यू। देखिए 80 के लेफ्ट में 80 के लेफ्ट में 80 के लेफ्ट में सबसे छोटी वैल्यू आप पता कर सकते हैं क्या? 80 के लेफ्ट में सबसे छोटी वैल्यू कैसे पता करेंगे? हम बोल रहे हैं 80 ये",
+      "source": "caption",
+      "english_text": "If it was 60, where would you go? So you said that you should go left because it is visible on the left. If the target was 20, where would we go? So when they say that a good target is 20, it means that we are going right. Now you can't see. Now here, after seeing the drawing, binary search does not know the drawing. So what does binary search have to do? Binary search requires you to use your brain. Listen carefully. Array of guesses is greater than target. Now the smaller value on the left of 80 is also the smaller value on the right of 80. See, can you find the smallest value to the left of 80? How to find the smallest value to the left of 80? we are talking 80 these"
+    },
+    {
+      "start_time": 1283.44,
+      "end_time": 1317.43,
+      "text": "है। 80 पार्ट वन में है। 80 के लेफ्ट में सबसे छोटी वैल्यू कैसे पता चलेगी? एरे ऑफ़ ज़ीरो। एरे ऑफ़ ज़ीरो। एरे ऑफ़ जीरो मतलब कि 80 के लेफ्ट में सबसे छोटा वैल्यू 50 है। एरे ऑफ़ जीरो है। सबसे छोटा वैल्यू एरे ऑफ़ 0 है। तो, तो मान लीजिए अब इसमें दो केसेस बन जाते हैं। अब इसमें दो केसेस बन जाते हैं। आपको अब 80 से छोटी वैल्यू चाहिए, लेकिन, लेकिन, लेकिन मान लीजिए अब इफ अब ये इसके अंदर है। इफ एरे ऑफ़ जीरो बड़ा है टारगेट से। एरे ऑफ़ जीरो भी बड़ा है, एरे ऑफ़",
+      "source": "caption",
+      "english_text": "Is. 80 is in part one. How to find the smallest value to the left of 80? Array of zeros. Array of zeros. Array of zeros means that the smallest value to the left of 80 is 50. Is an array of zeros. The smallest value array is 0. So, suppose now two cases are made in this. Now two cases are made in it. Now you want a value smaller than 80, but, but, but let's say if now it's inside this. If the array of zeros is larger than the target. Array of zero is also big, array of"
+    },
+    {
+      "start_time": 1317.44,
+      "end_time": 1350.789,
+      "text": "गेस तो बड़ा है ही टारगेट से। एरे ऑफ़ ज़ीरो भी बड़ा है टारगेट से। मतलब कि आप आपका अगर 50 है, 50 भी बड़ा है आपके टारगेट से। आप अगर 20 खोज रहे हैं, इस केस में क्या आपको लेफ्ट जाने से फायदा होगा? नहीं होगा। क्योंकि 80 के लेफ्ट में सबसे छोटी वैल्यू भी टारगेट से बड़ी है। 50 भी टारगेट से बड़ा है। ऑबवियस सी बात है कि अगर 50 टारगेट से बड़ा है, तो 60, 70 सब टारगेट से बड़ा होगा। इस कंडीशन में आपको लेफ्ट नहीं जाना चाहिए। इस कंडीशन में आपको कहां जाना चाहिए? राइट, राइट जाना चाहिए। इस कंडीशन में आपको राइट जाना चाहिए। एल्स आपको",
+      "source": "caption",
+      "english_text": "The guess is bigger than the target. The array of zeros is also bigger than the target. Meaning that if your target is 50, 50 is also bigger than your target. If you are looking for 20, in this case would you benefit from going left? Will not done. Because the smallest value to the left of 80 is also larger than the target. Even 50 is bigger than the target. It is obvious that if 50 is bigger than the target, then 60, 70 will all be bigger than the target. In this condition you should not go left. Where should you go in this condition? Right, should go right. In this condition you should go right. Else you"
+    },
+    {
+      "start_time": 1350.799,
+      "end_time": 1377.59,
+      "text": "लेफ्ट जाना चाहिए। एल्स का मतलब कि एरे ऑफ़ ज़ीरो इज़ लेस दैन इक्वल टू टारगेट। एरे ऑफ़ ज़ीरो इज़ लेस दैन इक्वल टू टारगेट। मतलब कि 50 इज़ लेस दैन इक्वल टू योर टारगेट। तो मान लीजिए आप 70 खोज रहे हैं। अगर आप 70 खोज रहे हैं तो आप राइट क्यों जाएंगे? राइट में तो कोई वैल्यू 70 से बड़ी है ही नहीं या 70 भी नहीं है। तो ये क्या हम लोग कर रहे हैं? हम लोग रेंज निकाल के पता कर रहे हैं कि लेफ्ट जाने में फायदा होगा कि नहीं। 80 से छोटी वैल्यू है लेफ्ट में।",
+      "source": "caption",
+      "english_text": "Should go left. Else means the array of zeros is less than equal to target. Array of zeros is less than equal to target. Meaning that 50 is less than equal to your target. So let's say you're looking for 70. Why would you go right if you're looking for 70? On the right, there is no value greater than 70 or even 70. So what are we doing? We are finding out the range whether going left would be beneficial or not. Values ​​smaller than 80 are on the left."
+    },
+    {
+      "start_time": 1377.6,
+      "end_time": 1412.39,
+      "text": "बिल्कुल है। लेकिन अगर 80 के लेफ्ट की सबसे छोटी वैल्यू भी मेरे टारगेट से बड़ी है तो हम लेफ्ट क्यों जाएंगे? भाई वहां पे थोड़ी मिलेगा। 50 टू 70 के रेंज में आपको 30 कैसे मिल जाएगा? ये तो बेकार बात है। अगर हम बोलते हैं कि मेरा लेफ्ट का सबसे छोटा दुकान 50 है। बाकी दुकानें 50 से बड़ी होंगी या तो 50 होंगी। तो आप बोलते हैं कि हमको अगर सर्च करना है 30 तो हम क्यों जाएंगे भैया लेफ्ट? हम तो राइट जाएंगे ना। और अगर आप बोलते हैं कि ठीक है एरे ऑफ़ ज़ीरो इज़ लेस दैन इक्वल टू टारगेट है। एल्स में एल्स में मतलब कि ठीक है सबसे छोटी दुकान 50 है और हम 70 खोजना चाहते हैं तो ऑब्वियसली आपको लेफ्ट जाना चाहिए। आपको राइट नहीं जाना चाहिए। तो ये",
+      "source": "caption",
+      "english_text": "Of course it is. But if even the smallest value to the left of 80 is bigger than my target then why would we go left? Brother, we will get some there. How do you get 30 in the 50 to 70 range? This is useless talk. If we say that the smallest shop to my left is 50. The remaining shops will be either bigger than 50 or less than 50. So you say that if we have to search 30 then why should we go left? We will go right. And if you say that ok the array of zero is less than equal to target. In Else in Else means okay the smallest shop is 50 and we want to find 70 so obviously you should go left. You should not go right. so this"
+    },
+    {
+      "start_time": 1412.4,
+      "end_time": 1444.31,
+      "text": "बात सबसे इंपॉर्टेंट चीज़ थी इस क्वेश्चन की समझने की। तो ये आप राइट लेफ्ट करके पूरा लिख चुके हैं। ध्यान से एक बार इसको देखिए पॉज करके। फिर से एक बार दिमाग में रिकैैप कीजिए। ये चीज़ अगर नहीं समझ में आई है तो प्लीज कमेंट में बोलिएगा। इस बातों का हम कभी बुरा नहीं मानते। देखिए आप लोग बोले कि प्रीफिक्स सम नहीं समझ में आया। किसी काम को बुरा नहीं लगता है। हमको लगता है वो जो बेकार बेकार बच्चे आ के कमेंट करते हैं ना कि ये वो सब फलाना ढिमकाना उसमें। इसमें आपको बोलना चाहिए कि नहीं समझ में आया। मेरे हिसाब से अच्छा खासा समझ में आना होगा। मतलब हम लोग अभी पार्ट वन में देखे थे। फिर से इसको रीकैप कर देते हैं। पार्ट टू सेम तरीके से लिखेंगे।",
+      "source": "caption",
+      "english_text": "The most important thing was to understand this question. So you have written this completely from right to left. Look at it carefully once and then pause. Recap in your mind once again. If you have not understood this thing, please tell in the comments. We never feel bad about these things. Look, you people said that I did not understand the prefix even. Don't feel bad doing any work. We feel that it is those useless children who come and comment and not all this so-and-so and so-and-so in it. In this you should say whether you understood or not. According to me, there has to be a lot of understanding. Meaning we just saw it in part one. Let's recap it again. Will write part two in the same manner."
+    },
+    {
+      "start_time": 1444.32,
+      "end_time": 1473.99,
+      "text": "पार्ट टू जस्ट इसका उल्टा हो जाएगा। ठीक है? हम लोग देखे थे कि सबसे पहले तो आप जो भी गेस करते हैं लो प्लस हाई बाय टू वो आपके पार्ट वन में आया। तो सबसे पहली कंडीशन होगी एरे ऑफ़ गेस इक्वल इक्वल टू टारगेट। तो इसमें तो कुछ नहीं करना रिटर्न कर देना है। अगले था कि एरे ऑफ गेस लेस दैन टारगेट तो इसमें आपको 80 से बड़ा नंबर चाहिए था। ड्राइंग से पता चल रहा था कि 80 से बड़ा नंबर तो राइट में ही है। इसमें आप राइट चले गए। लेकिन जब एरे ऑफ़ गेस इज़ ग्रेटर दैन टारगेट मतलब कि 80 टारगेट से बड़ा है। आपको 80 से कम नंबर चाहिए। अब 80 से कम नंबर में प्रॉब्लम क्या हुआ कि लेफ्ट में भी कम है और राइट में भी कम है।",
+      "source": "caption",
+      "english_text": "Part Two Just would do the opposite. Ok? We had seen that first of all, whatever guess you made, low plus high buy two, came in your part one. So the first condition will be array of guesses equal to target. So there is nothing to be done in this, just return it. Next was Array of Guess Less Than Target so in this you needed a number greater than 80. It was clear from the drawing that the number greater than 80 is only on the right. In this you went right. But when the array of guesses is greater than the target, it means that 80 is larger than the target. You need a score less than 80. Now what is the problem with numbers less than 80 that there is less in the left and less in the right also."
+    },
+    {
+      "start_time": 1474.0,
+      "end_time": 1508.23,
+      "text": "लेकिन जो लेफ्ट वाला कम है, लेफ्ट में कम है। उसको देख लिया। लेफ्ट में आपके लेफ्ट में सबसे कम वैल्यू कौन सी होगी? एरे ऑफ़ ज़ीरो। क्योंकि पार्ट वन भी सॉर्टेड है। याद कीजिए हम बोले दोनों पार्ट अपने आप में सॉर्टेड है। दोनों पार्ट अपने आप में सॉर्टेड है। तो हम लोग देख लिए कि आपका जो एरे ऑफ़ ज़ीरो है वो 80 के कम में 80 के लेफ्ट में सबसे कम वैल्यू होगा। तो अगर 50 भी टारगेट से बड़ा है, अगर 50 भी टारगेट से बड़ा है मतलब आप 30 ढूंढना चाहते होंगे। 20 ढूंढना चाहते होंगे। अब देखिए 30 और 20 आपको कहां राइट में मिलेगा। अब तो लेफ्ट जाने से फायदा रहा नहीं। हम लोग राइट चले गए। एल्स अगर ऐरे ऑफ़ ज़ीरो इज़ लेस दैन",
+      "source": "caption",
+      "english_text": "But the one which is less on the left, is less on the left. Saw him. What will be the lowest value on your left? Array of zeros. Because Part One is also sorted. Remember we said both parts are sorted in themselves. Both parts are sorted in themselves. So we have seen that your array of zeros will be the lowest value to the left of 80. So if 50 is also greater than the target, if 50 is also greater than the target that means you want to find 30. Would like to find 20. Now see where you will find 30 and 20 on the right. Now there is no benefit in going left. We went right. Else If Array of Zeros Is Less Than"
+    },
+    {
+      "start_time": 1508.24,
+      "end_time": 1541.59,
+      "text": "इक्वल टू टारगेट। मतलब कि 50 इज़ लेस दैन इक्वल टू टारगेट। तो आप 60 या 70 ढूंढना चाहते होंगे। अब 60 और 70 लेफ्ट में मिलेगा, राइट में मिलेगा नहीं। तो आप लेफ्ट में आ गए। तो ड्राइंग बनाने से ये समझ में आता है ये मन में सोचने से नहीं समझ में आएगा। जो लोग इसको मन में सोचते है ना कि ऐसा कर लेंगे वैसा कर लूंगा। फिर कुछ लोग इसको याद करना है नहीं याद नहीं करना है। ड्राइंग बनाइए देख लीजिए। तो ये हो गया कब? जब आपका गेस जब आपका गेस किस में फॉल करे? पार्ट वन में फॉल करे। जब आपका गेस पार्ट वन में फॉल करे। इस डायग्राम को ताज़ा रखिए। इसी के हिसाब से कोड लिखेंगे। आइए चलते हैं आपका गेस पार्ट टू में फॉल कर जाएगा तब क्या होगा अब",
+      "source": "caption",
+      "english_text": "Equal to target. Meaning that 50 is less than equal to target. So you might want to find 60 or 70. Now 60 and 70 will be available on the left, not on the right. So you came to the left. So this can be understood by making a drawing, it cannot be understood by thinking in the mind. Those who think in their mind that they will do this, I will do that. Then some people say that it is not to be remembered, it is not to be remembered. Make a drawing and see. So when did this happen? When your gas When your gas falls into whom? Follow in part one. When Your Guess Falls Part One. Keep this diagram fresh. Will write the code accordingly. Let's go, what will happen now when your gas falls in part two?"
+    },
+    {
+      "start_time": 1541.6,
+      "end_time": 1574.31,
+      "text": "देखिए वो वो देखेंगे और समझ में आएगा वो देखेंगे तो और समझ में आएगा चलिए उस ड्राइंग को हम डिस्टर्ब नहीं करना चाहते हैं इसीलिए यहां बना रहे हैं। हू 50 60 हां सॉरी तो ये क्या है? 50 60 70 80 90 100 10 20 30 और 40 जैसा कि हम लोग जानते हैं कि एरे में दो पार्ट्स बन गए हैं। ये एक पार्ट है और ये दूसरा पार्ट है। इसका इंडेक्सिंग कर",
+      "source": "caption",
+      "english_text": "Look, you will see that and you will understand. If you see that, you will understand more. Well, we do not want to disturb that drawing, that is why we are making it here. Huh 50 60 yes sorry so what is this? 50 60 70 80 90 100 10 20 30 and 40 As we know that the array has two parts. This is one part and this is another part. index it"
+    },
+    {
+      "start_time": 1574.32,
+      "end_time": 1607.269,
+      "text": "देते हैं। 0 1 2 3 4 5 6 7 8 9 अब पहले पार्ट में गेस आपका पार्ट वन में पड़ा था। ये आपका पार्ट वन है और ये आपका पार्ट टू है। लेकिन आपका गेस पार्ट टू में भी पढ़ सकता है। तो, उसके लिए भी आपको तैयार रहना पड़ेगा। पार्ट टू में कैसे पड़ेगा? इफ एरे ऑफ़ गेस इज़ अह ग्रेटर दैन एरे ऑफ़ n - 1, देन इट इज़ पार्ट वन, एल्स, इट इज़ पार्ट टू। अब आप पार्ट टू के लिए सॉल्व कर रहे हैं। अब आप पार्ट टू के लिए सॉल्व कर रहे है। तीन कंडीशन यहां भी पॉसिबल हैं। अब आपका गेस पार्ट टू में है। ठीक है? आपका मान लीजिए कि आपका गेस ये है। आपका गेस यहां पे है, पार्ट टू में है। ठीक है?",
+      "source": "caption",
+      "english_text": "Let's give. 0 1 2 3 4 5 6 7 8 9 Now in the first part, the guess was in your part one. This is your part one and this is your part two. But your guess can also read in Part Two. So, you have to be prepared for that also. How will it be in part two? If the array of guesses is greater than the array of n - 1, then it is part one, else, it is part two. Now you are solving for part two. Now you are solving for part two. Three conditions are possible here also. अब आपका गेस पार्ट टू में है। Ok? आपका मान लीजिए कि आपका गेस ये है। आपका गेस यहां पे है, पार्ट टू में है। Ok?"
+    },
+    {
+      "start_time": 1607.279,
+      "end_time": 1638.87,
+      "text": "यहां भी तीन कंडीशन हो सकती है ऊपर वाले की तरफ। इफ सबसे पहला कंडीशन तो इफ एरे ऑफ गेस इक्वल इक्वल टू टारगेट इसमें तो कुछ सोचना ही नहीं है। ताली बजानी है और रिटर्न गेस कर देना। यही तो आपका काम था। यही तो आपका काम था। रिटर्न कर देना। वेरी गुड। ये तो बेकार कंडीशन है। हां। अब देखिए इफ एरे ऑफ़ गेस इज़ ग्रेटर दैन टारगेट। एरे ऑफ़ लेस इज़ ग्रेटर दैन टारगेट। मतलब कि आप 20 पे आए थे। 20 आपके टारगेट से बड़ा है।",
+      "source": "caption",
+      "english_text": "यहां भी तीन कंडीशन हो सकती है ऊपर वाले की तरफ। इफ सबसे पहला कंडीशन तो इफ एरे ऑफ गेस इक्वल इक्वल टू टारगेट इसमें तो कुछ सोचना ही नहीं है। ताली बजानी है और रिटर्न गेस कर देना। यही तो आपका काम था। यही तो आपका काम था। रिटर्न कर देना। very good. ये तो बेकार कंडीशन है। Yes. अब देखिए इफ एरे ऑफ़ गेस इज़ ग्रेटर दैन टारगेट। एरे ऑफ़ लेस इज़ ग्रेटर दैन टारगेट। मतलब कि आप 20 पे आए थे। 20 आपके टारगेट से बड़ा है।"
+    },
+    {
+      "start_time": 1638.88,
+      "end_time": 1671.75,
+      "text": "मतलब आप 20 से कुछ कम ढूंढना चाह रहे थे। 20 से कुछ कम ढूंढना चाह रहे थे। ड्राइंग देखिए। 20 से कम के एलिमेंट्स 20 के राइट साइड में है कि 20 के लेफ्ट साइड में है। आपको पता चलेगा कि 20 से कम एक ही एलिमेंट है 10 जोकि इसके लेफ्ट साइड में है। देखिए 20 के राइट साइड में कोई भी एलिमेंट 20 से बड़ा नहीं है। कोई भी एलिमेंट 20 से छोटा नहीं है। 20 के राइट साइड में कोई एलिमेंट 20 से छोटा नहीं है। अगर आपको 20 से छोटा चाहिए तो आपको लेफ्ट में जाना पड़ेगा। तो इस केस में क्या करेंगे हम लोग? कुछ नहीं करेंगे। लेफ्ट जाएंगे। लेफ्ट कैसे जाते",
+      "source": "caption",
+      "english_text": "Meaning you were looking for something less than 20. Wanted to find something less than 20. Look at the drawing. Elements less than 20 are on the right side of 20 or on the left side of 20. You will notice that the only element less than 20 is 10, which is on its left side. See, no element on the right side of 20 is greater than 20. No element is smaller than 20. There is no element smaller than 20 on the right side of 20. If you want smaller than 20 then you will have to go left. So what should we do in this case? Will not do anything. Will go left. how to go left"
+    },
+    {
+      "start_time": 1671.76,
+      "end_time": 1704.389,
+      "text": "हैं? हाई इज इक्वल टू गैस -1। ध्यान से देखिए एकदम उल्टा हो गया है। देखिए ऊपर वाले में जो सिंपल कंडीशन था वहां हम लोग देखे थे एरे ऑफ गैसेस इज़ लेस देन टारगेट और राइट जाते थे। यहां पे देख रहे हैं एरे ऑफ़ गैसेस इज़ ग्रेटर दैन टारगेट तो लेफ्ट चले गए। तो ये सिंपल कंडीशन हो गया। लेकिन, यहां पे कॉम्प्लेक्स कंडीशन क्या होगा? यहां पे कॉम्प्लेक्स कंडीशन क्या होगा? कॉम्प्लेक्स कंडीशन होगा जब एरे ऑफ़ गैस इज़ लेस देन टारगेट। एरे ऑफ़ गैस इज़ लेस दैन टारगेट। मतलब कि आप 20 पे आए। आप 20 नहीं ढूंढ रहे थे। आप 20 से कुछ बड़ा ढूंढ",
+      "source": "caption",
+      "english_text": "are? High is equal to gas-1. Look carefully, it has happened exactly the opposite. See, in the above simple condition, we saw that the array of gases is less than the target and went right. Here we are seeing that the array of gases is greater than the target so we have moved to the left. So this became a simple condition. But, what will be the complex condition here? What will be the complex condition here? A complex condition would be when the array of gas is less than the target. Array of gas is less than target. Meaning you came on 20th. You weren't looking for 20. you look for something bigger than 20"
+    },
+    {
+      "start_time": 1704.399,
+      "end_time": 1739.11,
+      "text": "रहे थे। अब एकदम वही चीज़ है। 20 से बड़ा एलिमेंट 20 के लेफ्ट साइड में है कि 20 के राइट साइड में है? दोनों 20 के लेफ्ट में भी 20 से बड़े एलिमेंट है और 20 के राइट में भी 20 से बड़े एलिमेंट है। 20 के लेफ्ट में भी बड़े एलिमेंट है और 20 के राइट में भी बड़े एलिमेंट हैं। तो आपको बड़ा एलिमेंट तो चाहिए लेकिन आप लेफ्ट जाएंगे कि राइट जाएंगे? ये डिसाइड करने के लिए एकदम उल्टा काम करेंगे। पार्ट वन में एरे ऑफ़ जीरो को यूज़ किए थे हम लोग देखने के लिए कि लेफ्ट में सबसे छोटा एलिमेंट कौन है? यहां पे एरे ऑफ़ n - 1 लास्ट को यूज़ करेंगे देखने",
+      "source": "caption",
+      "english_text": "Were staying. Now it is exactly the same thing. Is the element greater than 20 on the left side of 20 or on the right side of 20? Both the left side of 20 also has elements greater than 20 and the right side of 20 also has elements greater than 20. There are larger elements on the left side of 20 and there are larger elements on the right side of 20 as well. So you want a bigger element but will you go left or right? This will do exactly the opposite thing to disassembly. In Part One, we used the array of zeros to see which was the smallest element on the left. Here we will use array of n - 1 last."
+    },
+    {
+      "start_time": 1739.12,
+      "end_time": 1764.87,
+      "text": "के लिए कि सबसे बड़ा एलिमेंट कौन है? यस यस। आपको 20 से बड़ा एलिमेंट चाहिए। तो अगर अगर एरे ऑफ़ n - 1 एरे ऑफ़ n - 1 आपको बड़ा एलिमेंट चाहिए ना। आपको बड़ा एलिमेंट चाहिए। तो अगर एरे ऑफ़ n - 1 आपके टारगेट से कम है। आपके टारगेट से कम है। मतलब कि आपका टारगेट आपका टारगेट एरे ऑफ गेस से भी बड़ा है और एरे ऑफ n - 1 से भी बड़ा है।",
+      "source": "caption",
+      "english_text": "For what is the largest element? Yes yes. You need an element larger than 20. So if if array of n - 1 array of n - 1 you want the bigger element right. You need a bigger element. So if the array of n - 1 is less than your target. is less than your target. Meaning that your target is larger than the array of guesses and the array of n - 1."
+    },
+    {
+      "start_time": 1764.88,
+      "end_time": 1798.549,
+      "text": "मतलब कि राइट साइड में जो सबसे बड़ा है उससे भी बड़ा आपका टारगेट। मान लीजिए आपका टारगेट अगर 70 होता तो 70 20 से बड़ा तो है। यस मेरे गेस वाले से बड़ा है और मेरे राइट साइड में जो सबसे बड़ा एलिमेंट है 70 उससे भी बड़ा है। तो 70 कहां जाना चाहिए आपको? आपको लेफ्ट जाना चाहिए। आपको लेफ्ट जाना चाहिए क्योंकि राइट अगर आप जाएंगे तो राइट का सबसे बड़ा एलिमेंट 40 है। आपका टारगेट 40 से भी बड़ा है तो आप राइट में क्यों ढूंढने जा रहे है? राइट में आप क्यों ढूंढने जा रहे राइट का सबसे बड़ा एलिमेंट कोई आपको बोला कि राइट में जो दुकान है ना उस राइट में सबसे महंगी दुकान ₹40 का शर्ट बेचती है। आप खोजने के निकले",
+      "source": "caption",
+      "english_text": "Meaning that your target is bigger than the biggest one on the right side. Suppose if your target was 70 then 70 is greater than 20. Yes, it's bigger than my guess one and the biggest element on my right side, 70, is even bigger than that. So where should you go 70? You should go left. You should go left because if you go right then the largest element on the right is 40. If your target is bigger than 40 then why are you looking to the right? Why are you going to find the biggest element of Wright in Wright? Someone told you that the most expensive shop in Wright sells shirts worth ₹ 40. you set out to find"
+    },
+    {
+      "start_time": 1798.559,
+      "end_time": 1832.31,
+      "text": "₹70 का शर्ट तो आप राइट क्यों जा रहे हैं आप? लेफ्ट जाइए इस केस में आप लेफ्ट जाइए। एल्स एल्स अगर एरे ऑफ़ n - 1 इज़ ग्रेटर दैन इक्वल टू टारगेट होता। अगर मान लीजिए आपका 40 आपका आपका जो टारगेट है वो गेस से ज्यादा है। मतलब आपका टारगेट 20 से ज्यादा है। ऐसा है आपका टारगेट। 20 से तो ज्यादा है। लेकिन 40 से कम है। इसका मतलब ये हुआ। तो आपको कहां जाना चाहिए? मतलब मान लीजिए आप 30 ढूंढ रहे होते। आप 30 इसमें फिट बैठता है। 30 फिट बैठता है। 30 के लिए आप नहीं जाते लेफ्ट। 30 के लिए आप राइट जाना।",
+      "source": "caption",
+      "english_text": "Shirt worth ₹70 so why are you going right? Go left: In this case you go left. Else Else if the array of n - 1 is greater than equal to target. If let's say your target of 40 is more than guess. Meaning your target is more than 20. This is your target. There are more than 20. But less than 40. This means this. So where should you go? Meaning, suppose you were looking for 30. You 30 fits in it. Fits 30. For 30 you don't go left. For 30 you go right."
+    },
+    {
+      "start_time": 1832.32,
+      "end_time": 1860.31,
+      "text": "क्यों? क्योंकि ये राइट में ही लाई करेगा। आप ध्यान से देखिए लेफ्ट के सारे बड़े एलिमेंट 30 से बड़े होंगे। लेफ्ट के सारे बड़े एलिमेंट 30 से बड़े होंगे। 30 के लिए आपको कहां जाना है? राइट जाना है। अब ये बातें कैसे समझ में आ रही है? ड्राइंग बना के समझ में आ रही है। हम बिल्कुल याद नहीं किए हैं आपसे पहले। बिल्कुल हम इसको रटे नहीं है। इसका कोई फार्मूला नहीं है। इसका कोई घुट्टी नहीं है। हम आपको पिला दें कोई इसका चूर्ण नहीं। कुछ नहीं आता है। ड्राइंग बना के दिखता है कि अच्छा लेफ्ट जाना है कि राइट जाना है? एक ही डिसिशन मेकिंग आपको करनी है कि लेफ्ट की राइट?",
+      "source": "caption",
+      "english_text": "Why? Because it will bring only right. If you look carefully, all the big elements on the left will be bigger than 30. All large elements on the left will be greater than 30. Where do you go for 30? Have to go right. Now how are these things understood? Understanding after making drawing. We haven't missed you at all before. Of course we haven't memorized it. There is no formula for this. It has no gutti. Let us give you drink, not its powder. Nothing comes. Make a drawing and see whether it is better to go left or right? The only decision you have to make is left or right?"
+    },
+    {
+      "start_time": 1860.32,
+      "end_time": 1892.789,
+      "text": "लेफ्ट की राइट हर बार। तो कहां है? आपका टारगेट 20 से बड़ा और 40 से छोटा या इक्वल है। तो आपका टारगेट 30 हो सकता है। 30 कहां मिलेगा? कहां मिल सकता है? यहीं पे मिल सकता है। मान लीजिए आप 35 भी ढूंढ रहे होते। तो 35 भी कहां मिलने की प्रोबेबिलिटी है? राइट साइड में। लेफ्ट साइड में तो 50 से 100 में तो 30 मिलने की प्रोबेबिलिटी बिल्कुल नहीं है। तो कहां जाएंगे? राइट। लेफ्ट कैसे जाया जाता है? लेफ्ट कैसे जाया जाता है? हाई इज इक्वल टू गेस - 1 राइट कैसे जाया जाता है? लो इज इक्वल टू गेस",
+      "source": "caption",
+      "english_text": "Left's right every time. So where is it? Your target is greater than 20 and less than or equal to 40. So your target can be 30. Where to get 30? Where can it be found? Can be found here. Suppose you were looking for 35 also. So where is the probability of getting even 35? On the right side. On the left side, the probability of getting 30 out of 50 to 100 is not at all. So where will you go? Right. How to go left? How to go left? High is equal to guess - 1 How to go right? lo is equal to guess"
+    },
+    {
+      "start_time": 1892.799,
+      "end_time": 1926.07,
+      "text": "-1। आपका कोड तैयार हो चुका है। आपका पूरा कोड तैयार हो चुका है। आइए, इसका कोड लिखते हैं। दोनों दोनों को देखेंगे। अब गेस आपका दोनों पार्ट में ही लाई कर सकता है ना? दो ही पार्ट है एरे में। पार्ट वन पार्ट टू दोनों का लिख लिए। दोनों में जितना कंडीशन पॉसिबल था सब लिख लिए। आपका कोड इसी से बनेगा। आइए कोड लिखें। तो ये वन शॉट में आप काम कर सकते हैं। आइए दिखाते हैं कितना ब्यूटीफुल कोड होगा इसका। तो घबराइएगा मत। सबसे पहले तो आप int लो = 0 हाई इज इक्वल टू अब इसके बाद ये लिखने के बाद अगर कोई कमेंट किया ना कि सर आप कोड ही दे दीजिए तो दो चांटा देंगे गाल पे। इसमें क्या कोड दे दे? यार इसमें",
+      "source": "caption",
+      "english_text": "-1. Your code is ready. Your complete code is ready. Let's write its code. Both will see both. Now gas can bring in both your parts, right? There are only two parts in the array. Wrote both part one and part two. Write down all the possible conditions in both. Your code will be created from this. Let's write the code. So you can do this work in one shot. Let's show how beautiful this code will be. So don't worry. First of all, you int low = 0 high is equal to 2. Now after writing this, if anyone comments saying sir, if you give the code then I will slap you twice on the cheek. What code should you give in this? friend in this"
+    },
+    {
+      "start_time": 1926.08,
+      "end_time": 1960.789,
+      "text": "कोड देने का फिर यही मतलब है। इसके बाद भी कोड देने का यही मतलब है कि फिर आप वीडियो मत देखिए। फिर आप चैट जीपीटी में जाइए आपको कोड मिल जाएगा। इतना समझाने के बाद भी अगर आप कोड मांग रहे हैं कि नहीं अभी भी कोड ही दे दीजिए हमको तो फिर आप डीएसए नहीं पढ़ पाएंगे ज्यादा दिन तक तो फिर आप रहने दीजिए। ठीक है? तो आपको क्या करना है? कुछ नहीं करना है। शुरू कर देना है। व्हाइल लो इज लेस दैन इक्वल टू हाई। सबसे पहले गेस कर लीजिए। कोई भी हम लोग हमेशा बीच वाला गेस करते हैं। ये चीजें हम समझा चुके हैं कि ये जरूरी नहीं है कि आप बीच वाला गेस करें। अच्छा रहता है कि आप बीच वाला",
+      "source": "caption",
+      "english_text": "This is what it means to give the code. Even after this, giving the code means that you do not watch the video again. Then you go to chat GPT and you will get the code. Even after explaining this, if you are asking for the code or not, just give us the code, then you will not be able to read DSA for a long time, so leave it. Ok? So what do you have to do? nothing to be done. Have to start. While low is less than equal to high. First of all, guess. No matter what, we always guess the middle one. We have explained these things that it is not necessary that you do the gas in the middle. It's good that you are the one in the middle"
+    },
+    {
+      "start_time": 1960.799,
+      "end_time": 1989.509,
+      "text": "गेस करें। सबसे पहले तो चेक कर लीजिए कि क्या अगर आपका एरे ऑफ़ गेस इज़ इक्वल इक्वल टू टारगेट अगर आपका एरे ऑफ़ गेस इज़ इक्वल इक्वल टू टारगेट रिटर्न गेस। इसमें ज्यादा दिमाग लगाना ही नहीं है। रिटर्न गेस। तो दोनों अब गेस देखिए। गेस किसी भी पार्ट में पढ़े पार्ट वन में पार्ट टू में। अगर आप वो इक्वल इक्वल टू टारगेट है तो रिटर्न कर दीजिए। तो हम लोग देखिए हम लोग इसको भी कवर कर लिए। हम लोग इसको भी कवर कर लिए और इसको भी कवर कर लिए। ठीक है? जो जो कवर होगा उसपे हम टिक मार देंगे। ठीक है? ओके।",
+      "source": "caption",
+      "english_text": "Guess. First of all, check if your array of guesses is equal to target return guess. There is no need to put much mind into this. Return gas. So now both of you see the guess. Read guess in any part, in part one, in part two. If you are that equal to the target then return it. So let's see, we have covered this also. We covered this and covered this too. Ok? We will tick whatever is covered. Ok? Ok."
+    },
+    {
+      "start_time": 1989.519,
+      "end_time": 2020.87,
+      "text": "अब बचता है। अब आपको डिसाइड पहले आपको डिसाइड करना है कि आपका गेस पार्ट वन में है कि पार्ट टू में है। आपका गेस पार्ट वन में है कि पार्ट टू में है। कैसे? ये वाली कंडीशन से। ये वाली कंडीशंस है। आइए इसको भी लिख लें। तो सबसे पहले आपको डिसाइड करना है कि इफ माय एरे ऑफ़ गेस इज़ ग्रेटर देन एरे ऑफ़ n - 1। बस ये क्या बोलता है आपको? पार्ट वन। पार्ट वन। ओके? अब हम लोग इसमें घुस गए हैं। अब पार्ट वन में देखिए क्या-क्या लिखे थे। पार्ट वन में लिखे थे।",
+      "source": "caption",
+      "english_text": "Now it remains. Now you have to decide, first you have to decide whether your guess is in part one or part two. Your guess is whether it is in Part One or Part Two. How? From this condition. These are the conditions. Let's write this down too. So first of all you have to decide if my array of guesses is greater than the array of n - 1. Just what does this say to you? Part One. Part One. Ok? Now we have entered into it. Now see what was written in Part One. Wrote in Part One."
+    },
+    {
+      "start_time": 2020.88,
+      "end_time": 2055.829,
+      "text": "ये तो पार्ट टू था। पार्ट वन में ये हैंडल हो चुका था। वेरी गुड। ये बचा था। ये सिंपल कंडीशन था। इसको लिख लेते हैं। इफ एरे ऑफ़ गेस इज़ लेस देन टारगेट तो कहां जाना था? राइट जाना था। इफ एरे ऑफ़ गेस इज़ इफ इसको हम अलग कलर से लिखते हैं। ये पार्ट वन का कलर है। ठीक है? याद रखिएगा। इफ एरे ऑफ़ गेस इज़ लेस देन टारगेट। कहां जाना था? कहां जाना था जी? अ राइट जाना था। राइट मतलब लो = + 1 लो इक्वल टू एल्स एल्स",
+      "source": "caption",
+      "english_text": "This was part two. This was handled in Part One. very good. This was left. This was a simple condition. Let's write this down. If the array of guesses is less than the target then where to go? Had to go right. If the array of guess is if then we write it with a different color. This is the color of part one. Ok? Remember this. If the array of guesses is less than the target. Where to go? Where did you want to go? Had to go right. Right Means Lo = + 1 Lo Equal to Else Else"
+    },
+    {
+      "start_time": 2055.839,
+      "end_time": 2089.19,
+      "text": "एल्स मतलब क्या हो गया? देखिए ये भी लिख लिए पार्ट वन नहीं ये वाला। ये हो गया। इफ एरे ऑफ़ गैस इज़ लेस दैन टारगेट। ये हो गया। ये पूरा कंडीशन हो गया। ये पूरा कंडीशन हो गया। अब आप इसमें आए। एल्स मतलब ये है। एरे ऑफ़ गैस इज़ ग्रेटर दैन टारगेट। अब इसमें भी एक इफ था। इसमें अपना एक इफ था। क्या इफ था? इफ एरे ऑफ़ ज़ीरो इज़ ग्रेटर दैन टारगेट गो राइट। इसका कोड भी लिखेंगे हम। इसका कोड भी आपको स्क्रीन शेयर करके दिखाएंगे। चिंता मत कीजिए। इफ इसमें एक और इफ था। इफ एरे ऑफ़ ज़ीरो इज़ ग्रेटर दैन टारगेट देन राइट। इफ एरे ऑफ़ ज़ीरो इज़ इसमें अपना ही इफ था एक। इफ एरे ऑफ़ ज़ीरो इज़",
+      "source": "caption",
+      "english_text": "What does els mean? Look, write this also, not part one, this one. that'll be. If array of gas is less than target. that'll be. This is the complete condition. This is the complete condition. Now you come into this. Else means this. Array of gas is greater than target. Now there was an if in this too. It had its own if. What if? If array of zero is greater than target go right. We will also write its code. Its code will also be shown to you by screen sharing. Don't worry. If there was another if. If array of zero is greater than target then right. If the array of zero is its own if was one. If array of zero is"
+    },
+    {
+      "start_time": 2089.2,
+      "end_time": 2123.75,
+      "text": "ग्रेटर दैन टारगेट देन गो राइट। राइट का क्या मतलब है? लो इज़ इक्वल टू गेस + 1 एल्स गो लेफ्ट। हाई = यस -1 ये एल्स बंद हुआ और ये इफ बंद हुआ। किसका? पार्ट वन का इफ बंद हो गया। ये तो बस पार्ट वन हुआ है अभी। फिर से एक बार कंफर्म कर लेते हैं। हम लोग क्या-क्या किए देखिए पार्ट वन में सबसे पहला गेस किए कि इफ एरे ऑफ़ गेस इज़ लेस दैन टारगेट तो हम लोग राइट चले गए। क्या चले गए? राइट। एक बार चेक कर लेते हैं ऊपर वाले से। जो हम",
+      "source": "caption",
+      "english_text": "Greater than target than go right. What does right mean? Lo is equal to guess + 1 else go left. High = Yes-1 This else is turned off and this If is turned off. Whose? The if of part one is closed. This is just part one. Let's confirm once again. See what we did in Part One. The first guess was that if the array of guesses is less than the target, then we went right. Have you gone? Right. Let's check once from above. which we"
+    },
+    {
+      "start_time": 2123.76,
+      "end_time": 2150.95,
+      "text": "लोग लिखे थे वो सही है कि नहीं। तो हां, एरे ऑफ़ गेस इज़ लेस दैन टारगेट तो आपको राइट जाना था हो गया। उसके बाद हम लोग चेक किए थे एल्स में कि एरे ऑफ़ गेस ग्रेटर दैन टारगेट। उसके बाद हम लोग एक और इफ उसके अंदर लगाए थे। अगर एरे ऑफ़ ज़ीरो इज़ ग्रेटर दैन टारगेट तो आपको राइट जाना है। तो क्या वही लिखे हैं? इफ एरे ऑफ़ ज़ीरो इज़ ग्रेटर दैन टारगेट आपको राइट जाना है। ये क्या है? राइट जाना है। Okay? तो ये भी खत्म हो गया। एल्स आपको लेफ्ट जाना है। एल्स आपको लेफ्ट जाना है। एल्स आपको लेफ्ट जाना है।",
+      "source": "caption",
+      "english_text": "What people wrote is correct or not. So yes, the array of guesses is less than the target so you had to go right and it's done. After that we checked in others that the array of guesses was greater than the target. After that we put another IF inside it. If the array of zeros is greater than the target then you have to go right. So is that what is written? If the array of zeros is greater than the target you have to go right. What is this? Have to go right. Okay? So this too is over. Else you have to go left. Else you have to go left. Else you have to go left."
+    },
+    {
+      "start_time": 2150.96,
+      "end_time": 2183.51,
+      "text": "पार्ट वन खत्म हो गया। पार्ट वन खत्म हो गया। अब आपका पार्ट टू आता है। तो ये हम लोग क्या लिखे थे? इफ इसके बाद कंटिन्यू करा दीजिए। तो आपको ज्यादा इफ एल्स लिखने की जरूरत नहीं पड़ेगी। क्या है? इसके बाद यहां पे कंटिन्यू लिख दीजिए। हो गया। पार्ट वन का काम हो गया। ठीक है? इफ का काम हो गया। अब यहां से शुरू होता है पार्ट टू। अब आप यहां तक पहुंचे हैं मतलब आप पार्ट वन में नहीं हैं। आप पार्ट टू में हैं। मतलब आप पार्ट टू में हैं। पार्ट टू में आप आ गए हैं। ओके? पार्ट टू में देखते हैं क्या बचा हुआ है। ये तो हो गया था। ये बचा हुआ है। इफ एरे ऑफ़ गेस इज़ ग्रेटर दैन टारगेट। इफ एरे ऑफ़ गेस इज़",
+      "source": "caption",
+      "english_text": "Part one is over. Part one is over. Now comes your part two. So what did we write? If after this, please continue. So you will not need to write much if else. What is? After this write continuation here. Done. Part one is done. Ok? If's done. Now part two starts from here. Now that you have reached this point, it means you are not in Part One. You are in part two. Meaning you are in part two. You have arrived at part two. Ok? Let's see what's left in Part Two. This had happened. This is left over. If the array of guesses is greater than the target. If the array of guesses is"
+    },
+    {
+      "start_time": 2183.52,
+      "end_time": 2216.55,
+      "text": "ग्रेटर दैन टारगेट दो गो लेफ्ट। इफ एरे ऑफ़ गेस इज़ ग्रेटर नहीं हां इफ एरे ऑफ़ गेस इज़ ग्रेटर दन टारगेट गो लेफ्ट। ठीक है? आइए इफ एरे ऑफ़ गेस इज़ ग्रेटर दैन टारगेट ग्रेटर दैन टारगेट। क्या जाना था आपको? गो लेफ्ट। लेफ्ट मतलब हाई इक्वल टू गेस - 1 हाई इज़ इक्वल टू गेस - 1 ओके? यस दिस इज़ डन। दिस इज़ डन। एल्स एल्स। एल्स में आप ये आ गए। एल्स एल्स यस। एल्स आप इसमें आ गए।",
+      "source": "caption",
+      "english_text": "Greater Than Target Do Go Left. If the array of guesses is greater than the target go left. Ok? Let us if the array of guesses is greater than the target. Why did you have to go? Go left. Left means high is equal to guess - 1 high is equal to guess - 1 OK? Yes this is done. This is done. Else Else. Here you come in els. Else Else Yes. Else you came into this."
+    },
+    {
+      "start_time": 2216.56,
+      "end_time": 2243.109,
+      "text": "अब इसके अंदर अपना इफ था। इसके अंदर अपना इफ था। क्या था? अगर एरे ऑफ़ n - 1 इज लेस दैन टारगेट। अगर एरे ऑफ़ n - 1 अगर एरे ऑफ़ n - 1 इज़ लेस दैन टारगेट लेस दैन टारगेट। लेफ्ट जाना था। i = s - 1 = -1 एल्स एल्स ये हो गया। राइट जाना था।",
+      "source": "caption",
+      "english_text": "Now it had its if inside. It had its if inside. what was it? If array of n - 1 is less than target. If the array of n - 1 is less than the target. Had to go left. i = s - 1 = -1 else that's it. Had to go right."
+    },
+    {
+      "start_time": 2243.119,
+      "end_time": 2275.43,
+      "text": "राइट जाना था। क्या करना था राइट जाने के लिए? लो इक्व गेस + 1 ये एल्स बंद हुआ और आपका ये मेन वाइल लूप बंद हो गया। लास्ट में आप अगर नहीं मिला तो रिटर्न -1 कर दीजिए। लास्ट में कुछ नहीं मिला। तो ध्यान से देखिए। ये पूरा सबसे पहले आप गेस निकाले। उसके बाद आप चेक किए कि ये पार्ट वन है क्या? पार्ट वन ये चला। ये पूरा उसके बाद आप पार्ट टू का चेक किए। पार्ट टू यहां तक चला। अगर ये आपका मेन वाइल लूप है। ये",
+      "source": "caption",
+      "english_text": "Had to go right. What had to be done to go right? Low eq gas + 1 This else is closed and your main while loop is closed. If you don't get it in the end then return -1. Nothing was found in the end. So look carefully. All this is done first of all you remove the gas. After that you checked whether this is part one? Part one goes on. After this you can check part two. Part two went till here. If this is your main while loop. this"
+    },
+    {
+      "start_time": 2275.44,
+      "end_time": 2302.55,
+      "text": "आपका मेन वाइल लूप है। और लास्ट में आपको कुछ नहीं मिला तो आप रिटर्न माइनस वन कर दिए। तो ये हुआ सर्च इन रोटेट सॉर्ट एरे। अब ये देखने में बहुत कॉम्प्लेक्स कोड है कि इतना सारा इफ एल्स इफ एल्स लेकिन ड्राइंग बना के हम उम्मीद करते हैं कि आपको समझ में आया होगा। अह आइए इसका कोड भी दिखा ही देते हैं बहुत दिन हो गया कोड किए हुए। आइए। तो जो लोग भी यहां तक आए हैं आप लोग हम उम्मीद करते हैं कि सीधा कोड लेने नहीं आए हैं। बहुत मेहनत लगी है। मेरा गला दर्द कर गया था बताते-बताते। तो आइए तो कोड तो बस क्या ही है कि जो हम आईपैड में लिखे वही यहां लिख देंगे।",
+      "source": "caption",
+      "english_text": "is your main while loop. And if you don't get anything in the end then you make the return minus one. So this is search in rotate sort array. Now this looks like a very complex code with so many if else if else but after making the drawing we hope that you have understood. Ah, let's show its code also, it's been a long time since I coded. Come. So those who have come here, we hope that you have not come directly to get the code. It took a lot of hard work. My throat hurt while telling. So, what is the code? Whatever we write in the iPad, we will write the same here."
+    },
+    {
+      "start_time": 2302.56,
+      "end_time": 2333.829,
+      "text": "देखिएगा लो = 0 हाई = n - 1 हम थोड़ा वो फों्ट बढ़ा देते हैं ताकि आपको दिखाई जल्दी दे दे। थोड़ा इतना भी नहीं ज्यादा हो गया ना? हां ठीक है। इतना हमको लगता है कि इतना इतना अगर नहीं दिखाई दे रहा है तो फिर आंख ख़राब है। ठीक है? तो जो हम वहीं लिखते हैं वहां लिखते हैं। य यहां भी लिखेंगे। सबसे पहले गेस कर लेते हैं। गेस क्या करते हैं? बीच वाला गेस कर लेते हैं। ओके। सबसे पहले तो चेक कर लेते हैं कि मेरा गेस अगर इक्वल इक्वल टू टारगेट है तो रिटर्न गेस कर देते हैं बिना कुछ सोचे।",
+      "source": "caption",
+      "english_text": "See, low = 0 high = n - 1, we increase the font a little so that you can see it quickly. A little is not too much, is it? Yes ok. We think that if we cannot see this much, then our eyes are bad. Ok? So whatever we write there, we write there. Will write here also. First of all let's guess. What do guesses do? Let's guess the middle one. Ok. First of all, we check that if my guess is equal to the target, then we make the return guess without thinking anything."
+    },
+    {
+      "start_time": 2333.839,
+      "end_time": 2358.95,
+      "text": "ओके। अब आता है मेन काम। क्या मेन काम? अब आपको करना है कि आपका गेस किस पार्ट में आया है? आपका गेस किस पार्ट में पड़ा है? इफ एरे ऑफ़ गेस इज़ अ ग्रेटर देन एरे ऑफ़ n - 1। ओके? तो, क्या होता है? अब ये क्या बोलता है कि आपका पार्ट वन में आया है। आपका पार्ट वन में आया है। ठीक है? आपका पार्ट वन में आया है। ओके? तो क्या करते थे?",
+      "source": "caption",
+      "english_text": "OK. Now comes the main work. What is your main work? Now you have to find out in which part your gas has come? In which part is your gas lying? If array of guesses is a greater than array of n - 1. Ok? So, what happens? Now what does it say that your part one has come. Yours has appeared in Part One. Ok? Yours has appeared in Part One. Ok? So what did you do?"
+    },
+    {
+      "start_time": 2358.96,
+      "end_time": 2391.51,
+      "text": "सबसे पहले तो एक बेसिक कंडीशन चेक करते थे कि अगर एरे ऑफ़ गेस इज़ अ ग्रेटर देन एरे ऑफ़ n - n - 1 था, n - 2 था। पार्ट वन में क्या था? अच्छा। अच्छा सॉरी। सबसे पहले तो एक बेसिक कंडीशन चेक करते थे कि अगर एरे ऑफ़ ग्रेस इज़ लेस दैन टारगेट। आपको बड़ी वैल्यू चाहिए थी। बड़ी वैल्यू आपको कहां मिलेगी? लो इज़ इक्वल टू गेस + 1 एल्स। अब आपके पास थोड़ा वो था। अब आप चेक करते थे कि एरे ऑफ़ ज़ीरो इज़ ग्रेटर दैन टारगेट। तो हां भाई एरे ऑफ़ ज़ीरो ग्रेटर दैन टारगेट तो आपको राइट जाना पड़ेगा। लो",
+      "source": "caption",
+      "english_text": "First of all, we used to check a basic condition that if the array of guesses is a greater than the array of n - n - 1, then n - 2. What was in Part One? Good. ok sorry. First of all, a basic condition was checked that if the array of grace is less than the target. You wanted great value. Where will you find great value? Lo is equal to guess + 1 else. Now you had a little of that. Now you used to check that the array of zeros is greater than the target. So yes brother, if the array of zero is greater than the target then you will have to go right. take"
+    },
+    {
+      "start_time": 2391.52,
+      "end_time": 2426.47,
+      "text": "इज़ इक्वल टू गेस + 1 एल्स आपको लेफ्ट जाने की जरूरत है। हाई इक्वल टू गेस - 1 यहां पे उतना नहीं समझा रहे हैं। तेजी-तेजी से लिख रहे हैं क्योंकि ah समझा चुके हैं। ये ये कोड याद करने की बात नहीं है। देखिए ये कोड हम भी आईपैड से देख के ही बोल रहे हैं। क्योंकि हमको भी याद नहीं है ना। याद कैसे रहेगा? ये ये सब याद करना पॉसिबल नहीं है ना कि लो हाई ये मशीन थोड़ी है हम लोग। हम लोग कॉन्सेप्ट याद कर सकते हैं। तो आप खुद से इसको कभी भी डिराइव कर सकते हैं। ये आप अगर एक्सपेक्ट करते हैं कि तीन दिन पहले किए थे याद नहीं हुआ हमको भी याद नहीं है। हम इसको कल किए थे। हम इसको देखिए। हम इसको कल किए थे डे एगो। हमको अभी तक याद नहीं है तो। अगर हमको याद नहीं",
+      "source": "caption",
+      "english_text": "Is equal to guess + 1 else you need to go left. High Equals Two Guess - 1 Not explaining that much here. I am writing fast because I have already explained. This is not a matter of memorizing this code. See, we are also speaking this code after seeing it from iPad. Because we too don't remember. How will it be remembered? It is not possible to remember all this, we are not low or high machines. We can remember the concept. So you can derive it yourself anytime. If you expect that we did this three days ago, we don't remember it either. We did it yesterday. Let us look at this. We did this yesterday day ago. If we don't remember yet. if we don't remember"
+    },
+    {
+      "start_time": 2426.48,
+      "end_time": 2455.99,
+      "text": "है तो आपको भी याद नहीं होगा ना? याद नहीं करना है। एक बार डिराइव कर लीजिए देख के लिख दीजिए। चलिए। एल्स मतलब आपका गेस कहां आया है? पार्ट टू में। पार्ट टू में सबसे पहला कंडीशन क्या चेक हुई थी? एक सिंपल कंडीशन चेक हुई थी कि अगर एरे ऑफ़ गेस इज़ लेस देन टारगेट तो आप क्या नहीं लेस था ग्रेटर था? हम एरे ऑफ़ गेस इज़ अच्छा हां सॉरी एरे ऑफ़ गेस इज़ ग्रेटर दैन देखिए। हां। ठीक है। ठीक है। कोई बात नहीं। तो क्या करते थे? हाई",
+      "source": "caption",
+      "english_text": "If it is then you also won't remember it, right? Don't remember. Derive it once, see it and write it down. Let go. Else means where did your gas come from? In Part Two. What was the first condition checked in Part Two? A simple condition was checked that if the array of guesses is less than the target then what would you say was less or greater? We see the array of guesses is okay yes sorry the array of guesses is greater than. Yes. Ok. Ok. No problem. So what did you do? high"
+    },
+    {
+      "start_time": 2456.0,
+      "end_time": 2488.63,
+      "text": "इज़ इक्वल टू गेस - 1 एल्स क्या? इफ एरे ऑफ़ n - 1 इज़ लेस दैन टारगेट। एरे ऑफ़ n - 1 इज़ लेस दैन टारगेट, तो क्या करते थे? हाई इज़ इक्वल टू गेस - 1, Okay? एल्स लो इज़ इक्वल टू गेस + 1। क्या ये सही है? पार्ट टू में यही होता था। पार्ट टू में क्या होता था? एरे ऑफ़ गेस इज़ ग्रेटर दैन टारगेट में हम लोग करते थे। लेफ्ट जाना है तो लेफ्ट ऐसे जाया जाता है। यस।",
+      "source": "caption",
+      "english_text": "Is Equal to Guess - 1 Else What? If array of n - 1 is less than target. Array of n - 1 is less than target, so what to do? High Is Equal To Guess - 1, Okay? Else low is equal to guess + 1. Is this correct? This was what happened in Part Two. What happened in part two? We used to do this in Array of Guesses Is Greater Than Target. If you want to go left then you go left like this. Yes."
+    },
+    {
+      "start_time": 2488.64,
+      "end_time": 2520.39,
+      "text": "अगर एरे ऑफ़ n - 1 इज लेस देन टारगेट। तो आपको लेफ्ट ही जाना पड़ेगा फिर से और नहीं तो आपको राइट जाना पड़ेगा। तो देखते हैं लग तो सही रहा है। लग तो सही ही रहा है हमको। ठीक है? मेन वाइल लूप ये रहा। रिटर्न -1 कर देते हैं यहां पे। अगर नहीं मिला तो कुछ नहीं मिला तो -1 ही हो जाएगा। देखने में ठीक-ठाक लग रहा है? यस। ठीक-ठाक ही लग रहा है।",
+      "source": "caption",
+      "english_text": "If array of n - 1 is less than target. So you will have to go left again otherwise you will have to go right. So let's see if it looks right. It seems right to us. Ok? Here is the main while loop. Let's return -1 here. If not found then it will be -1 if nothing is found. Does it look okay? Yes. Looks just fine."
+    },
+    {
+      "start_time": 2522.63,
+      "end_time": 2536.0,
+      "text": "वेरी गुड। यस। तो ये आप देख सकते हैं कि सेम कोड है जो आईपैड में लिखा गया था। कुछ हम वो नहीं करते हैं। धांधली नहीं करते हैं कि आपको कुछ और दिखाते हैं। हम कुछ और करते हैं। है ना? तो चलिए ये था थोड़ा सा छोटा सा बाइनरी सर्च और कल आइए। है ना? चलिए।",
+      "source": "caption",
+      "english_text": "Very good. Yes. So you can see that this is the same code which was written in the iPad. Some we don't do. Don't pretend to show you something else. We do something else. Isn't it? So this was a little binary search and come tomorrow. Isn't it? Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

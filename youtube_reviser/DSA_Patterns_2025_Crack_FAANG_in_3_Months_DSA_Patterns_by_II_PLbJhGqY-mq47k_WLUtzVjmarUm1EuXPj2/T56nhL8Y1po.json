@@ -1,0 +1,828 @@
+{
+  "video_id": "T56nhL8Y1po",
+  "video_title": "Master Bit Manipulation in One Video | XOR Tricks + Interview Questions",
+  "video_number": 125,
+  "chunks": [
+    {
+      "start_time": 3.429,
+      "end_time": 37.11,
+      "text": "इस एक वीडियो के बाद आपको दोबारा कभी बिट मैनपुलेशन समझने में ना दिक्कत आएगी और ना किसी और का या मेरा कोई और वीडियो देखने की जरूरत पड़ेगी। ऐसी मेरी उम्मीद है। ठीक है? तो एक डिस्क्लेमर दे देते हैं कि पानी वानी पी के बैठ जाइए क्योंकि हमको नहीं मालूम है कितना बड़ा वीडियो बनेगा क्योंकि बिट मैनपुलेशन हमको जितना आता है हमको आज तक जिंदगी में जितना समझ में आया है और जितना आपको जरूरत है प्लेसमेंट के लिए या जनरल कंप्यूटर साइंस के बच्चे बनने के लिए भी हमको लगता है कि आपको बिट मैनपुलेशन तो आना ही चाहिए क्योंकि जो बेसिक है कंप्यूटर का जो बेसिक कंप्यूटर जिस तार से बना है वही अगर आपको नहीं समझ में आता है तो हमको नहीं लगता है कि आप बहुत आगे जा पाएंगे अपने कंप्यूटर साइंस करियर में क्योंकि जितना भी वेबसाइट बना लो ऐप बना",
+      "source": "caption",
+      "english_text": "After watching this one video, you will never have trouble understanding bit manipulation again, nor will you need to watch any other video of anyone else or mine. That's my hope. Ok? So let's give a disclaimer that sit down after drinking water because we don't know how big the video will be made because as much bit manipulation as we know, we have understood as much in our life till date and as much as you need it for placement or to become a student of General Computer Science, we feel that you must know bit manipulation because it is the basic of the computer, the basic of the computer, the wire on which the computer is made, if you don't understand it, then we don't. It seems that you will be able to go far in your computer science career because no matter how much you create a website or app,"
+    },
+    {
+      "start_time": 37.12,
+      "end_time": 70.31,
+      "text": "लो ये फलाना ढिमकाना एआईएमएल सब कर लो। कंप्यूटर जिससे बना हुआ है, जिस-जिस इलेक्ट्रिसिटी से कंप्यूटर बना हुआ है ना वो अगर नहीं समझ में आता है तो आप नहीं समझेंगे बहुत अंदर तक। तो अगेन अ जितना भी प्लेसमेंट्स में रिक्वायर्ड है और जितना भी चाहिए बिट मैनपुलेशन वो आपको हम समझा देते हैं आज। चलिए तो देखिए बिट मैनपुलेशन क्या है? बिट मैनपुलेशन क्यों है? कितना पढ़ना है? काहेला पढ़ना है? क्यों ऐसा कर दिया गया? इसके लिए देखिए। इमेजिन कीजिए दो सोल्जर खड़े हैं। ठीक है? दो एक कमांडर है और एक जनरल सोल्जर है। ठीक है? जो",
+      "source": "caption",
+      "english_text": "Take this so-and-so Dhimkana AIML, do it all. If you do not understand what the computer is made of, the electricity that the computer is made of, then you will not understand it deeply. So again, whatever is required in the placements and whatever bit manipulation is required, we will explain it to you today. Let us see what is bit manipulation? Why is there bit manipulation? How much to study? Want to read Kahela? Why was this done? Look for this. Imagine two soldiers standing. Ok? Two are commanders and one is a general soldier. Ok? which"
+    },
+    {
+      "start_time": 70.32,
+      "end_time": 103.27,
+      "text": "कमांडर है ना वो बहुत दूर खड़ा है पहाड़ पे और उसका जो सोल्जर है वो बंदूक लेके खड़ा है उससे बहुत ज्यादा दूर। ठीक है? अब कमांडर को एक ऑर्डर पास करना है हर दिन कि सोल्जर को गोली चलानी है कि नहीं चलानी है। बस इतना ही ऑर्डर पास करना है। अब इमेजिन कीजिए कि जो कमांडर है ना उसके पास एक फ्लेयर गन है। फ्लेयर गन जानते हैं ना PUBG में होता था फ्लेयर गन। उस फ्लेयर गन में दो ही तरीके की कैपेबिलिटी है। या तो आप उससे लाल गोली चला सकते हैं ऊपर। मतलब लाल कलर का फ्लेयर पूरा आसमान लाल चमक जाएगा या तो आप उससे हरे कलर का गोली चला सकते हैं। यही हो सकता है फ्लेयर गन में",
+      "source": "caption",
+      "english_text": "The commander is standing far away on the mountain and his soldier is standing far away with a gun. Ok? Now the commander has to pass an order every day whether the soldier should fire or not. That's all the order has to pass. Now imagine that the commander has a flare gun. Flare Gun: Do you know that there was a flare gun in PUBG? That flare gun has only two types of capabilities. Or you can shoot the red bullet from above. Meaning the red colored flare will make the entire sky glow red or you can fire green colored bullets from it. This can happen in flare gun"
+    },
+    {
+      "start_time": 103.28,
+      "end_time": 136.55,
+      "text": "दो तरीके। ठीक है? अच्छी बात है। अब जो कमांडर है ना वो इस सोल्जर को बोल के रखा है। ये जो सोल्जर है पीले कलर का बंदूक लेके तैयार बैठा है कि जैसे ही सर बोलेंगे हम गोली दागेंगे। इसको बोला है कि एक काम करना तुम रोज रात को 10:00 बजे रोज रात को 10:00 बजे मेरी तरफ देखना। हम बहुत दूर हैं। लेकिन ठीक है रात रहेगा ना मेरे पहाड़ की तरफ इन जनरल देखना। हम रोज रात को 10:00 बजे या तो लाल गोली चलाएंगे या तो हरी गोली चलाएंगे फ्लेयर गन से और तुमको दिख जाएगा क्योंकि लाइट दिखती है लोगों को लाइट दिखती है ना भाई बहुत दूर से भी लाइट दिखेगी अंधेरे में अगर मेरा",
+      "source": "caption",
+      "english_text": "Two ways. Ok? It's a good thing. Now the commander has given this soldier a warning. This soldier is sitting ready with a yellow colored gun that as soon as Sir says, we will fire. He has been told to do one thing, look at me every night at 10:00 pm. we are very far. But it's okay, the night will remain to see these generals on my mountain side. Every night at 10:00 pm we will either fire a red bullet or a green bullet from the flare gun and you will be able to see it because light is visible, people can see light, brother, light will be visible even from a long distance in the dark, if my"
+    },
+    {
+      "start_time": 136.56,
+      "end_time": 170.39,
+      "text": "चलाया हुआ फ्लेयर लाल कलर का हुआ तो तुम गोली मत चलाना ओके बहुत अच्छी बात है सोल्जर बोला यस सर और अगर मेरा चलाया हुआ फ्लेयर हरे कलर का आ जाता है 10:00 बजे रात को तो तुम गोली चला देना बस इतनी बात हुई है हर रोज रात को 10:00 बजे सोल्जर अपने देखता है कमांडर अंदर की ओर अगर लाल कलर की फ्लेयर चलती है तो कुछ नहीं करता है। अगर हरे कलर की गोली चलती है तो वो भी गोली मार देता है। अब बताइए एक कितना सिंपल वे ऑफ़ कम्युनिकेशन है। क्या इस कम्युनिकेशन के लिए आपको कोई भी और चीज चाहिए क्या आपको फोन चाहिए? नहीं। क्या आपको कंप्यूटर चाहिए? नहीं, इंटरनेट",
+      "source": "caption",
+      "english_text": "If the flare fired by me comes in red color then you do not fire ok, it is very good, the soldier said yes sir and if the flare fired by me comes in green color at 10:00 pm then you fire, that's all. What has happened is that every day at 10:00 pm, the soldier looks at himself and the commander looks inside, if a red flare is fired then he does nothing. If a green bullet is fired then he also shoots. Now tell me how simple a way of communication it is. Do you need anything else for this communication Do you need a phone? No. Do you need a computer? no, internet"
+    },
+    {
+      "start_time": 170.4,
+      "end_time": 203.11,
+      "text": "चाहिए, नहीं, चिट्ठी चाहिए, नहीं, फोर्समैन चाहिए, नहीं। कितने भी दूर से मतलब एस लॉन्ग एज आपको पहाड़ थोड़ा भी दूर तक दिख रहा है। बहुत इजी वे ऑफ कम्युनिकेशन नहीं है कि अगर लाल गोली लाल फ्लेयर है कुछ नहीं करना है। हरा फ्लेयर है गोली चला देनी है। बस इसी चीज को बिट मैनपुलेशन बोला जाता है। और आज के सारे आज के नहीं मतलब जब से कंप्यूटर की कंप्यूटर का आविष्कार हुआ है तब से लेके आज तक मॉडर्न सुपर कंप्यूटरटर्स तक सब इसी तरीके से ऑपरेट करते हैं। सब एकजेक्टली इसी तरीके से ऑपरेट करते हैं। जो लाल फ्लेयर पे नहीं चलाना है और हरे फ्लेयर पे चला देना है। लेकिन",
+      "source": "caption",
+      "english_text": "Want it, no, want the letter, no, want Forsman, no. From any distance means as long as you can see the mountain even at a distance. Very easy way of communication is that if the red pill is red flare then nothing to be done. There is a green flare, it has to be fired. This is what is called bit manipulation. And not all of today's computers, but from the time computers were invented till today, all operate in the same manner, even modern supercomputers. Everything operates in exactly the same manner. Which should not be run on the red flare and should be run on the green flare. but"
+    },
+    {
+      "start_time": 203.12,
+      "end_time": 232.309,
+      "text": "आपको दिमाग में शक आएगा कि यह तो बड़ा मतलब बेसिक हो गया कि गोली चलाना है या नहीं चलाना है। फॉर एग्जांपल अगर कमांडर को यह बोलना रहे कि फॉर एग्जांपल तुम दो गोली चलाओ तो दो गोली चलाओ ये कैसे कम्युनिकेट होगा? तीन गोली चलाओ ये कैसे कम्युनिकेट होगा? एक गोली ही चलाओ ये कैसे कम्युनिकेट होगा? यहां तो बस ये जो बात जा रही है ना कि गोली चलाना है कि नहीं चलाना है? बड़ा बड़ा ऑन एंड ऑफ टाइप का है कि ऑफ मतलब नहीं चलाना। ऑन मतलब एक गोली चला देना। लेकिन अगर उसको बोलना हो कि एक काम करो जी दो गोली मार दो तू कैसे बताएगा?",
+      "source": "caption",
+      "english_text": "You will have a doubt in your mind that it has become very basic whether to fire or not to fire. For example, if the commander has to say that for example, if you fire two bullets, then fire two bullets, how will this be communicated? Fire three bullets, how will this be communicated? Just fire one bullet, how will this be communicated? What is being discussed here is whether to fire or not to fire? It is of big on and off type, off means not running. On means to fire a shot. But if you have to tell him to do one thing, shoot him if you want, how will you tell him?"
+    },
+    {
+      "start_time": 232.319,
+      "end_time": 265.909,
+      "text": "इसके लिए कुछ नहीं करना है। इसके लिए एक और फ्लेयर गन ले लेनी है। इसके लिए एक और फ्लेयर गन ले लेनी है। अब कमांडर एक फ्लेयर गन नहीं मारेगा। कमांडर दो फ्लेयर गन मारेगा। दोनों में से लाल या हरा कुछ भी निकल सकता है। अब दोनों मिलके ये डिसाइड कर लिए कि देखो बेटा ऐसा करना। अब हम दो फ्लेयर गन चला रहे हैं। दोनों में से रेड भी निकल सकता है, ग्रीन भी निकल सकता है। तो टोटल कॉम्बिनेशन कितने पॉसिबल हो सकते हैं? चार कॉम्बिनेशन पॉसिबल हो सकते हैं। कैसे? या तो दोनों फ्लेयर गन से हम रेड-रेड मार दें। हो सकता है। पहले फ्लेयर गन से हम रेड मारें और दूसरे",
+      "source": "caption",
+      "english_text": "There is nothing to be done for this. For this one more flare gun has to be taken. For this one more flare gun has to be taken. Commander will no longer fire a flare gun. The Commander will fire two flare guns. Either red or green can come out. Now both of them together decided to do this, son. We are now firing two flare guns. Of the two, red can also come out, green can also come out. So how many total combinations are possible? Four combinations are possible. How? Either we kill Red-Red with both flare guns. It is possible First we raid with flare gun and second"
+    },
+    {
+      "start_time": 265.919,
+      "end_time": 298.95,
+      "text": "फ्लेयर गन से हम ग्रीन मारे। बिल्कुल हो सकता है। पहले फ्लेयर गन से हम ग्रीन मार दें और दूसरे से हम रेड मार दें। तो सोल्जर बोलता है हो सकता है। या तो हम दोनों फ्लेयर गन से ग्रीन मार दें। अब हम दो फ्लेयर चला रहे हैं ना भाई। दोनों में से लाल और हरा दोनों निकल सकता है। तो हम टोटल मिला के चार चीजें कर सकते हैं। अब सोल्जर को ये समझा दिया गया कि चारों का मतलब क्या है? अगर दोनों में रेड रेड चल रहा है बैठे रहना कुछ मत करना। मतलब कुछ मत करना। कुछ मत करना। पहले से रेड और दूसरे से ग्रीन निकल रहा है तो एक काम",
+      "source": "caption",
+      "english_text": "We killed Green with the flare gun. Absolutely possible. With the first flare gun we shoot green and with the second we shoot red. So the soldier says maybe. Either we both kill Green with the flare gun. Now we are running two flares, brother. Both red and green can come out. So we can do four things by getting the total. Now it was explained to the soldier what all four mean? If red raid is going on in both of them then just sit and do nothing. Meaning don't do anything. Don't do anything. If red is coming out from the first and green is coming out from the second, then there is one thing to do."
+    },
+    {
+      "start_time": 298.96,
+      "end_time": 323.99,
+      "text": "करना। तुम एक गोली मारना। पहले से ग्रीन और दूसरे से रेड निकल रहा है तो तुम दो गोली मारना। दोनों से ग्रीन निकल रहा है तो तुम तीन गोली मारना। देखिए बस एक फ्लेयर गन बढ़ाने से आपके कितनी कैपेबिलिटी बढ़ गई। पहले आप क्या बता सकते थे? गोली मारना या मत मारना। अब आप चार चीजें बता सकते हैं। गोली मत मारना, एक गोली मारना, दो गोली मारना, तीन गोली मारना। तो बस अगर आपको और कॉम्प्लेक्स इंस्ट्रक्शन देना है।",
+      "source": "caption",
+      "english_text": "To do. You shoot one. Green is coming out from the first and red is coming out from the second, so you shoot two. If green is coming out from both then you shoot three. See how much your capabilities have increased just by adding one flare gun. What could you have told earlier? To shoot or not to shoot. Now you can tell four things. Don't shoot, shoot one, shoot two, shoot three. So just in case you need more complex instructions."
+    },
+    {
+      "start_time": 324.0,
+      "end_time": 349.51,
+      "text": "कोई बोलेगा कि नहीं हम हमको ये भी समझाना है कि दो गोली मार के एक बम मार देना। दो गोली मार के एक बम मार देना और लैंडमाइन में कुछ भी करना है दुनिया में। मतलब आप यहां तक उसको बोलना है कि एक काम करो अपना पोस्ट छोड़ दो। मेरे घर चले जाओ। मेरी बीवी को शॉपिंग करा दो, वापस लौट आओ। इतना तक भी इंस्ट्रक्शन देना है ना। आपको बस ये नंबर ऑफ फ्लेयर गंस बढ़ानी है। नंबर ऑफ़ फ्लेयर गंस बढ़ानी है। जिनमें से रेड या ग्रीन निकलता है। डिपेंडिंग ऑन द पैटर्न।",
+      "source": "caption",
+      "english_text": "Will anyone say or not? We also have to explain that killing one bomb with two bullets is the same thing. Kill a bomb with two kills and landmines can do anything in the world. Meaning you have to even tell him to do one thing, leave your post. Go to my house. Get my wife shopping and come back. Even this much instruction has to be given, right? You just have to increase the number of flare guns. The number of flare guns has to be increased. Out of which red or green comes out. Depending on the pattern."
+    },
+    {
+      "start_time": 349.52,
+      "end_time": 375.51,
+      "text": "कोई बोलेगा कि हमने भ पांच फ्लेयर गन ले आए। हम पांच फ्लेयर गन ले आए। दोनों में रेड, ग्रीन, रेड, ग्रीन निकलता है। तो उसमें से कोई भी कॉम्बिनेशन पॉसिबल है ना? हो सकता है पहले से मारा रेड, रेड और बीच के दोनों से ग्रीन चला दिया। ब्रीच के दोनों से ग्रीन चला दिया। इस कॉम्बिनेशन का क्या मतलब है? इस कॉम्बिनेशन का कुछ तो मतलब होगा जो डिसाइडेड होगा। सोल्जर जब ये कॉम्बिनेशन देखेगा क्या? कौन सा कॉम्बिनेशन? रेड, ग्रीन, रेड, ग्रीन, रेड।",
+      "source": "caption",
+      "english_text": "Someone will say that we also brought five flare guns. We brought five flare guns. In both, red, green, red, green come out. So any of those combinations is possible, right? It is possible that after hitting red in advance, green is fired from red and the middle two. Green was fired from both sides of the breach. What does this combination mean? This combination must have some meaning which will be decided. Will the soldier see this combination? Which combination? Red, green, red, green, red."
+    },
+    {
+      "start_time": 375.52,
+      "end_time": 409.27,
+      "text": "वो अपना कुछ ना कुछ काम कर लेगा जो उसको बताया हुआ है। इसी तरीके से कंप्यूटर काम करते हैं। कंप्यूटर के पास ये जो नंबर ऑफ फ्लेयर गन है ना ये एक या दो या तीन नहीं होता है। कितने होते हैं? ये लाखों में होते हैं। कंप्यूटर के पास लाखों फ्लेयर गन है। हजारों फ्लेयर गन है। और कंप्यूटर अपने मन से कोई भी कॉम्बिनेशन प्रोड्यूस कर सकता है। इसी चीज को बिट मैनपुलेशन कहते हैं। और ये जो रेड फ्लेयर गन और ये जो ग्रीन फ्लेयर गन है ना रेड गोली और ग्रीन गोली इस रेड गोली को कंप्यूटर की भाषा में जीरो बोला जाता है। और इस ग्रीन",
+      "source": "caption",
+      "english_text": "He will do some of his work which has been told to him. This is the way computers work. The number of flare guns that the computer has is not one or two or three. How many are there? These are in lakhs. The computer has millions of flare guns. There are thousands of flare guns. And the computer can produce any combination it wants. This thing is called bit manipulation. And this red flare gun and this green flare gun, red bullet and green bullet, this red bullet is called zero in computer language. and this green"
+    },
+    {
+      "start_time": 409.28,
+      "end_time": 442.469,
+      "text": "को कंप्यूटर की भाषा में वन बोला जाता है। कंप्यूटर एग्जैक्टली इतना ही समझता है। आपके दिमाग में कोई भी चीज आ रही हो कॉम्प्लेक्स जो आप कंप्यूटर पे करते हैं। हेलो वर्ल्ड प्रिंट से लेके मूवी देखने से लेके गेम खेलने से लेके अपने दोस्त को WhatsApp मैसेज भेजने से देख कुछ भी काम Twitter यू कोई भी काम जो आप कंप्यूटर पे करते हैं आज की डेट में वो एट दी एंड एक कॉम्बिनेशन होता है। किसका कॉम्बिनेशन होता है? इस रेड और ग्रीन फ्लेयर गन का जिसको कंप्यूटर क्या बोलता है? जीरो या वन। मतलब कि आपके पास बहुत सारे फ्लेयर गन",
+      "source": "caption",
+      "english_text": "In computer language it is called forest. This is exactly what the computer understands. Whatever complex thing is coming to your mind which you do on computer. Hello World, from printing to watching a movie, playing a game, sending a WhatsApp message to your friend, watching Twitter or any work you do on a computer, in today's date it is at the end a combination. What is the combination? What does the computer say about this red and green flare gun? Zero or one. That means you have a lot of flare guns."
+    },
+    {
+      "start_time": 442.479,
+      "end_time": 475.99,
+      "text": "है। आपको जो काम करना है ना आप बहुत सारे रेड ग्रीन रेड ग्रीन रेड ग्रीन इसका कॉम्बिनेशन प्रोड्यूस करते हैं। और उसको पढ़ के उसको सिग्नल देख के जैसे ये सोल्जर समझता था कंप्यूटर समझता है कि ये आदमी करना क्या चाहता है? आप जब Netflix पे मूवी देखते हैं ना तो वो मूवी आप तक कैसे पहुंच रही है? वो मूवी Netflix के ऑफिस से आपके लैपटॉप में आपके मोबाइल तक कैसे आ रही है? वो मूवी और कुछ नहीं है। वो बहुत सारा 001 001 का कॉम्बिनेशन है। हो सकता है इसमें लाखों ज़ीरो वन हो। एक मूवी तक आपको पहुंचाने के लिए लाखों ऐसे 001 01",
+      "source": "caption",
+      "english_text": "Is. Whatever work you have to do, you produce a lot of red green red green red green combinations. And after reading it and seeing the signal, just like this soldier understood, the computer understands what this man wants to do? When you watch a movie on Netflix, how is that movie reaching you? How is that movie coming from Netflix's office to your laptop to your mobile? That movie is nothing else. That's a lot of 001 001 combinations. There may be millions of zeros and ones in it. A million ways to get you to a movie 001 01"
+    },
+    {
+      "start_time": 476.0,
+      "end_time": 501.27,
+      "text": "0101 आपके कंप्यूटर तक आ रहे हैं। कैसे आते हैं? ऑप्टिकल फाइबर से आते हैं। ऑप्टिकल फाइबर का यूज़ करता है? लाइट यूज़ करता है। लाइट क्या होता है? यही तो होता है रेड या ग्रीन मतलब लाइट ऑन या ऑफ, ऑन या ऑफ। इसी चीज को बिट मैनपुलेशन कहते हैं। और बिट मैनपुलेशन से आप ऐसा-ऐसा काम कर सकते हैं जो आपके दिमाग में कभी नहीं आए। आप आप कॉम्प्लेक्स डीएसए क्वेश्चन सॉल्व कर सकते हैं। आप आप हर हर एक चीज कर सकते हैं जो आप सोच भी नहीं सकते हैं।",
+      "source": "caption",
+      "english_text": "0101 are coming to your computer. How come? Come from optical fiber. Uses optical fiber? Uses light. What is light? This is what red or green means light on or off, on or off. This thing is called bit manipulation. And with bit manipulation you can do such things which never came to your mind. You can solve complex DSA questions. You can do everything you can't even imagine."
+    },
+    {
+      "start_time": 501.28,
+      "end_time": 535.99,
+      "text": "किसके मदद से? बस ये रेड, ग्रीन, रेड, ग्रीन, रेड ग्रीन या तो 0 1 0 1 0 1 0 1 इसी को क्या बोला जाता है? बिट। ये जो जीरो है ना और ये वन है इसको बिट बोला जाता है। और कंप्यूटर को सिर्फ दो बिट समझ में आता है। या तो जीरो या तो वन। अब बढ़ते हैं। अब बात आती है कि बाइनरी नंबर सिस्टम। ये जो हम आपको बताया ना कि कंप्यूटर को बस रेड और ग्रीन या तो जीरो या वन। [गला साफ़ करने की आवाज़] इसको बाइनरी नंबर सिस्टम बोला जाता है। बाइनरी का क्या मतलब होता है? दो। बाइनरी का मतलब क्या होता है? दो। हम लोग जो नंबर सिस्टम यूज़ करते हैं ना उसको डेसिमल नंबर सिस्टम बोला जाता है। डेसिमल डेका का मतलब क्या",
+      "source": "caption",
+      "english_text": "With whose help? It's just red, green, red, green, red green or so 0 1 0 1 0 1 0 1 What is this called? bit. This zero and this one are called bits. And the computer understands only two bits. Either zero or one. Now let's move on. Now comes the binary number system. What we told you is that the computer has only red and green, either zero or one. [clearing throat] This is called the binary number system. What does binary mean? Two. What does binary mean? Two. The number system that we use is called decimal number system. what does decimal deca mean"
+    },
+    {
+      "start_time": 536.0,
+      "end_time": 568.23,
+      "text": "होता है? 10। समझ में आती है बात? ठीक है? तो हम लोग जो सिस्टम यूज़ करते हैं उसको डेसिमल बोला जाता है। कंप्यूटर जो नंबर सिस्टम यूज़ करता है उसको बाइनरी बोला जाता है। तो अब इन दोनों के बीच में कुछ ना कुछ कन्वर्ज़ तो होना चाहिए क्योंकि बाइनरी हम लोग को नहीं समझ में आता है। डेसिमल उसको नहीं समझ में आता है। क्यों नहीं समझ में आता है डेसिमल? ऐसा आपके दिमाग में आना चाहिए ना कंप्यूटर को भी बनाना है डेसिमल नहीं कंप्यूटर है क्या कंप्यूटर एट द एंड क्या है बल्ब देखे हैं ना इलेक्ट्रिसिटी का जब इलेक्ट्रिकल इंजीनियरिंग का फर्स्ट क्लास होता है तो उसमें बल्ब दिखाया जाता है बल्ब एक स्विच से कनेक्टेड होता है बल्ब किस दो स्टेट में एक्सिस्ट कर सकता",
+      "source": "caption",
+      "english_text": "Does it happen? 10. Do you understand? Ok? So the system we use is called decimal. The number system that computers use is called binary. So now there must be some convergence between these two because we do not understand binary. He doesn't understand decimals. Why don't you understand decimals? This should come to your mind that even a computer has to be made. What is a computer not a decimal? What is a computer at the end? Have you seen a bulb? When there is a first class of electrical engineering, a bulb is shown in it. The bulb is connected to a switch. In which two states can the bulb exist?"
+    },
+    {
+      "start_time": 568.24,
+      "end_time": 602.47,
+      "text": "है या तो वो बल्ब जल सकता है या तो वो बल्ब बुझ सकता है उसके अलावा कोई स्टेट नहीं होता है ये जो बल्ब है ये ये जो बल्ब है ये या तो ऑन हो सकता है या तो ऑफ हो सकता है अब बोलेंगे कि डिग हो सकता है वो सब बाद का बात है ठीक है लेकिन इन जनरल बल्ब क्या करता है? स्विच ऑन करते हैं। बल्ब जल जाता है। बंद करते हैं। बल्ब बंद हो जाता है। इसको इलेक्ट्रिकल इंजीनियरिंग बोला जाता है। कंप्यूटर ना ऐसे करोड़ों बल्ब को एक बॉक्स में अगर आप बंद कर दें तो उसको कंप्यूटर बोला जाता है। बस कंप्यूटर एट द एंड एट इट मोस्ट सिंपलेस्ट फॉर्म क्या है ना? ऐसे करोड़ों अरबों बल्ब को एक जगह लाके बंद कर दीजिए। और उनका एक",
+      "source": "caption",
+      "english_text": "Either that bulb can be lit or that bulb can be extinguished, there is no state other than that, this bulb is this bulb, it can either be on or it can be off. Now we will say that it can be extinguished, all that is a later matter, okay, but what does this general bulb do? Let's switch on. The bulb burns out. Let's close. The bulb goes off. This is called electrical engineering. If you put crores of such bulbs in a box then it is called a computer. Just what is a computer at the end in its simplest form right? Bring crores and billions of such bulbs at one place and turn them off. and one of their"
+    },
+    {
+      "start_time": 602.48,
+      "end_time": 628.069,
+      "text": "मीनिंग बना लीजिए कि अगर ये शुरू वाले पांच बल्ब जल रहे हैं तो इनका ये मतलब है। लास्ट वाले 50 बल्ब जल रहे हैं तो इनका ये मतलब है। उसी को कंप्यूटर बोला जाता है। अब क्योंकि बल्ब दो ही अब इन बल्ब को क्या बोला जाता है सीएससी में? ट्रांजिस्टर ट्रांजिस्टर सुने होंगे आप लोग कभी ना कभी कि ट्रांजिस्टर छोटे होते जा रहे हैं। कुछ नहीं होता है। वो बल्ब होता है। या तो वो जलता है या तो नहीं जलता है। उसमें बिजली जाएगी तो वो जलेगा। बिजली नहीं जाएगी तो नहीं जलेगा। क्योंकि बल्ब के पास दो ही स्टेट है। बल्ब और कुछ नहीं कर सकता है।",
+      "source": "caption",
+      "english_text": "Make a meaning that if these first five bulbs are burning then this is what they mean. If the last 50 bulbs are burning then this is what they mean. That is called computer. Now because there are only two bulbs, what are these bulbs called in CSC? Transistor Transistor You must have heard at some point or the other that transistors are getting smaller. Nothing happens. That is a bulb. Either it burns or it does not burn. If electricity goes into it, it will burn. If there is no electricity then it will not burn. Because the bulb has only two states. The bulb can't do anything else."
+    },
+    {
+      "start_time": 628.079,
+      "end_time": 653.75,
+      "text": "बल्ब जल सकता है, बुझ सकता है। तीसरा काम तो उसको आता नहीं है। इसीलिए कंप्यूटर को सिर्फ बाइनरी समझ में आता है। लेकिन हम लोग को डेसिमल समझ में आता है। डेसिमल का मतलब हमारे नंबर सिस्टम में जो डिजिट्स हैं वो जीरो से लेके नाइन तक हैं। और भी कोई नंबर आप अगर बनाना चाहें तो आप 09 के कॉम्बिनेशन से बना सकते हैं। बना सकते हैं ना? कैसे? अगर आपको बनाना है 105 तो आप क्या बनाएंगे? 105। 1 0 5 में वन है, ज़ीरो है, फाइव है। सारा इसी अल्फाबेट से है।",
+      "source": "caption",
+      "english_text": "The bulb may burn or go out. He doesn't know the third task. That's why computers only understand binary. But we understand decimals. Decimal means the digits in our number system which are from zero to nine. If you want to create any other number, you can create it with the combination of 09. Can you make it? How? If you had to make 105, what would you make? 105. In 1 0 5 there is one, there is zero and there is five. Sara is from this alphabet."
+    },
+    {
+      "start_time": 653.76,
+      "end_time": 683.35,
+      "text": "कंप्यूटर के पास बाइनरी है। तो कंप्यूटर के पास बस ज़ीरो और वन अवेलेबल है। कंप्यूटर को 2 3 4 5 ये नहीं समझ में आता है। इसको बस ज़ीरो और वन समझ में आता है। तो अब हमारे नंबर को बाइनरी में कैसे कन्वर्ट करें और बाइनरी को हमारे नंबर में कैसे कन्वर्ट करें? ये प्रॉब्लम आई। तो ये देखा गया कि चलो 11 लेके देख लेते हैं। 11 11 हमारा नंबर है। हम लोग को हमको और आपको 11 समझ में आता है। उसको नहीं आता है समझ में। उसको आपको बाइनरी में करके देना पड़ेगा। अब 11 का मतलब ये नहीं समझे कि इसमें वन वन लिखा हुआ है तो ये बाइनरी है।",
+      "source": "caption",
+      "english_text": "Computers have binary. So the computer has only zeros and ones available. The computer does not understand 2 3 4 5. It only understands zero and one. So now how to convert our number to binary and how to convert binary to our number? This problem occurred. So it was seen that let's take 11 and see. 11 11 is our number. We understand you and me 11. He doesn't understand. You will have to convert it into binary. Now the meaning of 11 should not be understood that if one is written in it then it is binary."
+    },
+    {
+      "start_time": 683.36,
+      "end_time": 710.389,
+      "text": "नहीं ये 11 हमारा नंबर है। ये 11 हमारा नंबर है। इसको बाइनरी में कैसे कन्वर्ट किया जाता है ना? देखा गया कि अब चलो इसको टू के पावर में लिखते हैं। इसको टू के पावर में लिखते हैं। तो एक बात बताइए कि टू का हाईएस्ट पावर टू का हाईएस्ट पावर जो कि 11 से कम है वो क्या है? अगर आप 2 की पावर 4 लिखेंगे तो वो तो 16 हो जाएगा। 16 की जरूरत नहीं है। वो तो 11 से बड़ा है। अगर आप 2 पावर 3 लिखते हैं तो वो आठ होता है। तो बोला कि हां 2 3 से स्टार्ट करो।",
+      "source": "caption",
+      "english_text": "No, this 11 is our number. This 11 is our number. How is this converted to binary? It was seen that now let's write this in power of two. This is written in powers of two. So tell me one thing, what is the highest power of two which is less than 11? If you write 4 to the power of 2, it will become 16. No need for 16. That is bigger than 11. If you write 2 power 3, it is eight. So he said yes, start from 2 3."
+    },
+    {
+      "start_time": 710.399,
+      "end_time": 742.389,
+      "text": "तो कंप्यूटर क्या करता है? 2 की पावर 3 से लेके 2 की पावर 0 तक अपने पास लिख लेता है। ये हो गया। अब ये क्या देखता है? 2 3 क्या होता है? आठ होता है। क्या आठ 11 से कम है? हां आठ 11 से कम है या इक्वल भी है? तो इसके जगह ये क्या लिख देगा? वन लिख देगा। इसके जगह वन लिख देगा। और अब आपके 11 में से आठ माइनस करके थ्री हो जाएगा। कंप्यूटर आगे बढ़ेगा। 2 की पावर 2 क्या होती है? फोर। क्या फोर थ्री से कम है क्या? नहीं। तो फोर को नहीं लेना है। फोर",
+      "source": "caption",
+      "english_text": "So what does a computer do? Writes down everything from 3 to the power of 2 to 0 to the power of 2. that'll be. Now what does he see? What happens 2 3? Is eight. Is eight less than 11? Yes, is eight less than or equal to 11? So what will he write instead? One will write. Will write forest instead. And now your 11 will be reduced to eight by minus three. The computer will move forward. What is 2 to the power of 2? Four. Is four less than three? No. So don't take four. four"
+    },
+    {
+      "start_time": 742.399,
+      "end_time": 776.87,
+      "text": "के जगह ज़ीरो लिख दो। आगे बढ़ो। 2 की पावर वन क्या होता है? टू। क्या टू आपके थ्री से कम है या इक्वल है? बिल्कुल है। तो इस इसको लेंगे या तो इसके जगह वन लिख देंगे। और क्योंकि अब आप टू ले लिए तो अब आप अपने थ्री से टू काट के माइनस वन कर देंगे। आगे बढ़ेगा कंप्यूटर। 2 की पावर 0 क्या होती है? वन होती है। क्या वन इस वन से इक्वल है या लेस है? बिल्कुल है। तो इस वन को भी ले लेगा। ये देखिए 1 0 1 1 ये क्या बन गया? 11 का बाइनरी रिप्रेजेंटेशन। 11 का बाइनरी रिप्रेजेंटेशन। कंप्यूटर इस तरीके",
+      "source": "caption",
+      "english_text": "Write zero in place of . go ahead. What is one to the power of 2? To. Is the two less than or equal to your three? Of course it is. So either we will take this or we will write forest in its place. And because now you have taken two, now you will subtract two from your three and get minus one. Computer will move forward. What is 0 to the power of 2? There is a forest. Is the forest equal or less than this forest? Of course it is. Then he will take this forest also. Look at this 1 0 1 1 What has become of this? Binary representation of 11. Binary representation of 11. computer this way"
+    },
+    {
+      "start_time": 776.88,
+      "end_time": 808.55,
+      "text": "से आपके कीबोर्ड पे जब 11 दबाते हैं तो कंप्यूटर उसको ऐसे कैलकुलेट करता है। लेकिन अब 1 को वापस 11 में कैसे कैलकुलेट किया जाता है? बहुत सिंपल है वो भी। 1 0 1 1 ये एक बाइनरी नंबर है। ये एक बाइनरी नंबर है। हमको और आपको ये बस देख के नहीं समझ में आएगा। हमको और आपको इसका मतलब नहीं पता है। हमको 11 चाहिए तभी हम उसको पढ़ पाएंगे। तो कंप्यूटर ये कैसे करता है? बाइनरी सिस्टम में ना हर एक का एक पोजीशन होता है। वो पोजीशन यहां से स्टार्ट होता है। ये ज़ीरो पोजीशन है। ये वन पोजीशन है।",
+      "source": "caption",
+      "english_text": "When you press 11 on your keyboard, the computer calculates it like this. But now how to calculate 1 back into 11? That too is very simple. 1 0 1 1 This is a binary number. This is a binary number. You and I will not understand this just by seeing. You and I don't know its meaning. We need 11 only then we will be able to read it. So how does a computer do this? Each node has a position in the binary system. That position starts from here. This is zero position. This is one position."
+    },
+    {
+      "start_time": 808.56,
+      "end_time": 837.67,
+      "text": "ये टू पोजीशन है। ये थ्री पोजीशन है। ठीक बात है? ओके। अब कंप्यूटर क्या करेगा? यहां पर वन लिखा हुआ है। 1 * ये जो पोजीशन है ये 2 की पावर 0 इसको क्या होगा? 1 * 2 की पावर 0 1 ओके यहां पे भी वन लिखा हुआ है और ये जो पोजीशन है उसको टू की पावर में दे देगा 1 * 2 की पावर 1 मतलब टू। ओके? अगेन यहां पे लिखा हुआ है ज़ीरो। और यहां जो पोजीशन है उसको टू की पावर में दे देगा। तो ज़ीरो इंटू एनीथिंग विल बी ज़ीरो।",
+      "source": "caption",
+      "english_text": "This is two position. This is three positions. Is that correct? Ok. What will the computer do now? Forest is written here. 1 * This position is a power of 2. What will happen to it? 1 * 2's power 0 1 OK, here also one is written and this will give the position to the power of two, 1 * 2's power 1 means two. Ok? Again it is written here as zero. And the position here will be given to the power of two. So zero into anything will be zero."
+    },
+    {
+      "start_time": 837.68,
+      "end_time": 872.389,
+      "text": "Okay? अगेन यहां पे वन है और पोजीशन में थर्ड पोजीशन है ये। 2 की पावर 3 दे देगा। ये हो जाएगा आठ। इन सबको जोड़ दीजिए। 1 + 2 + 0 + 8 क्या बना? 11। ये हमको और आपको रिटर्न होता है। तो ये क्या होता है? बाइनरी टू डेसिमल कन्वर्ज़। हम लोग जब 11 लिखते हैं तो कंप्यूटर उसको 101 बनाता है अपने हिसाब से। उस पे कुछ-कुछ करता है। और जब ये इसको 1001 मिल जाता है। हमको और आपको दिखाने के लिए इसको वापस 11 में कन्वर्ट करके आपको दिखा दिया जाता है। तो ये डिफरेंस है किसमें? बाइनरी और डेसिमल",
+      "source": "caption",
+      "english_text": "Okay? Again here pe is one and this is the third position in position. The power of 2 will give 3. This will be eight. Add it all up. What is 1 + 2 + 0 + 8? 11. This is a return to us and you. So what is this? Binary to Decimal Convert. When we write 11, the computer converts it into 101 according to its own. Does something on that. And when it gets 1001. To show us and you, it is converted back to 11 and shown to you. So what is this difference? binary and decimal"
+    },
+    {
+      "start_time": 872.399,
+      "end_time": 897.509,
+      "text": "नंबर सिस्टम में। तो जो बाइनरी नंबर होता है ना मान लीजिए अब इस मान लीजिए इस नंबर में 1 0 1 1 इसमें आपको कितना डिजिट दिख रहा है? इसमें हमको चार डिजिट दिख रहा है। 1 2 3 4 तो इसको बोला जाता है कि ये एक फोर बिट का फोर बिट रिप्रेजेंटेशन है। कितने बिट का? फोर बिट। क्योंकि इसमें चार डिजिट दिख रहा है। फोर बिट हर एक डिजिट हर एक वन या ज़ीरो अपने आप में एक बिट है।",
+      "source": "caption",
+      "english_text": "In number system. So the binary number is 1 0 1 1. How many digits can you see in it? In this we are seeing four digits. 1 2 3 4 So it is said that this is a four-bit representation of a four-bit. How many bits? Four bit. Because four digits are visible in it. Each four-bit digit, each one or zero, is a bit in itself."
+    },
+    {
+      "start_time": 897.519,
+      "end_time": 930.87,
+      "text": "उसको एक बिट की तरह काउंट किया जाता है। और इसकी पोजीशनिंग कहां से स्टार्ट होती है? लेफ्ट से स्टार्ट होती है। ज़ीरो लेफ्ट या राइट जो भी मतलब इधर से उधर आप समझ रहे हैं ना? ज़ीरो, वन, टू और थ्री। हमेशा पोजीशनिंग ज़ीरो से स्टार्ट होगी। वन से नहीं। तो किसी फोर बिट के नंबर के लिए आप इस तरीके से उसको लिखते हैं और कंप्यूटर भी इसको इसी तरीके से समझता है। अब एक बात बताइए फोर बिट का आपके पास है। इसमें आप मैक्सिमम कितना डेसिमल नंबर तक लिख सकते हैं? इसमें आप मैक्सिमम कितना डेसिमल नंबर तक रिप्रेजेंट कर सकते [हंसी] हैं? अब एक",
+      "source": "caption",
+      "english_text": "It is counted as one bit. And where does its positioning start? Starts from the left. You understand what zero left or right means here and there, right? Zero, one, two and three. Positioning will always start from zero. Not from the forest. So for any four-bit number, you write it in this way and the computer also understands it in the same way. Now tell me one thing you have about four bits. What is the maximum number of decimal numbers you can write in this? What is the maximum number of decimals you can represent in this [laughter]? now one"
+    },
+    {
+      "start_time": 930.88,
+      "end_time": 963.67,
+      "text": "बात बताइए क्या आप इसमें अ 128 इस नंबर को रिप्रेजेंट कर सकते हैं? नहीं। क्यों नहीं कर सकते हैं? क्योंकि हम आपको क्या बोले? ये जो फोर बिट का नंबर है 1 0 1 1 इसकी फोर बिट में मैक्सिमम कौन सा नंबर रिप्रेजेंट हो सकता है? तो आप एक काम कर सकते हैं ना कि चारों बिट में वन ले लीजिए। नंबर तो दो ही है कंप्यूटर के पास। ज़ीरो या वन उसके अलावा कुछ समझ में नहीं आता है। अब आपको कोई बोला कि चार बिट है भैया। चारों में वन ले के देख लीजिए मैक्सिमम कितना नंबर बनता है। आइए इसको देखें ये क्या होगा? इसका पोजीशनिंग होगा",
+      "source": "caption",
+      "english_text": "Tell me, can you represent this number as 128? No. Why can't it? Because what can we tell you? This four-bit number is 1 0 1 1. What is the maximum number that can be represented in its four bits? So you can do one thing and not take one in all four bits. The computer has only two numbers. Zero or one doesn't make any sense other than that. Now someone told you that it is four bits, brother. Take one out of all four and see what is the maximum number. Let's see what this will be? Its positioning will be"
+    },
+    {
+      "start_time": 963.68,
+      "end_time": 996.629,
+      "text": "0 1 2 3 इसको आइए डेसिमल में कन्वर्ट करके देखते हैं क्या होता है? 1 * 2 पावर 0 ये हो जाएगा 1 * 2 पावर 1 ये हो जाएगा 1 * 2 की पावर 2 और ये हो जाएगा 1 * 2 पावर 3 ये हो गया वन ये हो गया टू ये हो गया फोर ये हो गया एट सबको जोड़ेंगे क्या बनेगा आपके आंसर में 15 मतलब चार बिट में चार बिट में जो मैक्सिमम डेसिमल नंबर रिप्रेजेंट हो सकता है वो क्या है 15 मिनिमम सबको जीरो",
+      "source": "caption",
+      "english_text": "0 1 2 3 Let's convert this into decimal and see what happens? 1 * 2 power 0 This will be 1 * 2 power 1 This will be 1 * 2 power 2 And this will be 1 * 2 power 3 This is one This is two This is four This is eight Add them all What will become of your answer 15 Meaning What is the maximum decimal number that can be represented in four bits in four bits 15 Minimum all zeros"
+    },
+    {
+      "start_time": 996.639,
+      "end_time": 1024.71,
+      "text": "बना दीजिए सबको जीरो बना दीजिए इसका इसका आंसर क्या आएगा? ज़ीरो। क्योंकि पोजीशन कुछ भी हो 0 1 2 3 हो इंटू तो ज़ीरो से ही होगा ना। जो यहां पे लिखा हुआ है उससे इंटू होता है। और जो पोजीशन है वो टू की पावर में जाती है। तो ज़ीरो मतलब कि चार बिट में आपके पास क्या रेंज उपलब्ध है? आपके पास ज़ीरो से 15 तक उपलब्ध है। अगर आपको 16 को बाइनरी में बनाना है। 16 का बाइनरी देखना है तो क्या चार बिट में वो पॉसिबल है?",
+      "source": "caption",
+      "english_text": "Make everyone zero, what will be the answer? Zero. Because whatever be the position, be it 0 1 2 3, it will be from zero only. It is understood from what is written here. And that position goes to the power of two. So zero means what's the range you have available in four bits? You have zero to 15 available. If you need to convert 16 into binary. If you want to see the binary of 16, is it possible in four bits?"
+    },
+    {
+      "start_time": 1024.72,
+      "end_time": 1055.43,
+      "text": "नहीं। आपको पांच बिट लेना पड़ेगा उसके लिए। आपको उसके लिए पांच बिट लेना पड़ेगा। समझ में आती है? तो एक जनरल रूल के तहत अगर आप बोलते हैं कि मेरे पास x बिट्स है तो उसमें आप कौन सा रेंज रिप्रेजेंट कर सकते हैं डेसिमल का? 0 से लेके 2 की पावर x - 1 तक। अगर आपके पास चार बिट है तो आप क्या कर सकते हैं? ज़ीरो से लेके 2 की पावर 4 - 1 व्हिच विल बी 0 से लेके 16 - 1 व्हिच",
+      "source": "caption",
+      "english_text": "No. You will have to take five bits for that. You have to take five bits for that. Do you understand? So as a general rule, if you say I have x bits, then what range of decimals can you represent in it? From 0 to the power of 2 x - 1. What can you do if you have four bits? From zero to the power of 2 4 - 1 which will be 0 to the power of 16 - 1 which"
+    },
+    {
+      "start_time": 1055.44,
+      "end_time": 1088.95,
+      "text": "विल बी 0 से लेके 15 तक 15 से ऊपर का नंबर चार बिट में रिप्रेजेंट नहीं कर सकते हैं। ये सेम कोरिलेट होता है वो जो फ्लेयर गन वाला हमारा वो था फ्लेयर गन वाला। अगर कमांडर को दो एक्शन देने हैं। अगर कमांडर को दो एक्शन देने हैं मतलब एक्शन नंबर जीरो और एक्शन नंबर वन। तो एक बिट में ही काम हो जाएगा। एक बिट में काम हो जाएगा। लेकिन कमांडर को अगर तीन एक्शन देने हैं फॉर एग्जांपल मतलब एक्शन ज़ीरो, एक्शन वन, एक्शन टू। तो इसको दो बिट लेना पड़ेगा।",
+      "source": "caption",
+      "english_text": "Will B cannot represent numbers above 15 from 0 to 15 in four bits. This is the same correlation, the one with the flare gun was the one with the flare gun. If the commander has to give two actions. If the commander has to give two actions, that means action number zero and action number one. So the work will be done in just one bit. The job will be done in a bit. But if the commander has to give three actions, for example that means action zero, action one, action two. So it will have to take two bits."
+    },
+    {
+      "start_time": 1088.96,
+      "end_time": 1120.47,
+      "text": "क्या एक फ्लेयर गन से आप तीन तरीके का एक्शन दे सकते हैं? नहीं। एक फ्लेयर गन से कितना एक्शन दे सकते थे? सिर्फ दो। गोली चलानी है या नहीं चलानी है? खत्म। अगर आपको तीन एक्शन देना है मतलब गोली चलानी नहीं है, एक गोली चलानी है, दो गोली चलानी है तो आपको दो फ्लेयर गन अपने पास रखना पड़ेगा। इसीलिए हम बोले थे कि जैसे-जैसे आपको ज्यादा एक्शन की जरूरत पड़ेगी ना नंबर ऑफ फ्लेयर गन बढ़ाते जाइए आपको मिलता जाएगा। अगर कोई बोले कि मेरे पास 10 बिट का नंबर है। मेरे पास 10 बिट का उपलब्धि है। मतलब मेरे पास 10 फ्लेयर गंस हैं। तो वो मैक्सिमम कितना नंबर रिप्रेजेंट कर",
+      "source": "caption",
+      "english_text": "Can you give three modes of action with one flare gun? No. How much action could a flare gun provide? only two. To fire or not to fire? End. If you have to give three actions i.e. do not fire one bullet, fire one bullet, fire two bullets then you will have to keep two flare guns with you. That's why we said that as you need more action, increase the number of flare guns and you will get it. If someone says that I have a 10 bit number. I have 10 bit achievement. Meaning I have 10 flare guns. So what is the maximum number it can represent?"
+    },
+    {
+      "start_time": 1120.48,
+      "end_time": 1154.87,
+      "text": "सकता है? ये हो सकता है 0 2 की पावर 10 - 1 विल बी 0 1024 - 1 0 से लेके 1023 तक आप रिप्रेजेंट कर सकते हैं। अगर आपको 2000 को रिप्रेजेंट करना है तो आपको 10 बिट से काम नहीं बनेगा। आपको 10 से ज्यादा बिट लेनी पड़ेगी। तो ये पूरा एक मैथ्स होता है। इसीलिए टू बहुत इंपॉर्टेंट नंबर है। व्हेन इट कम्स टू कंप्यूटर साइंस। सब कुछ टू पे रिलेटेड है। हमारे नॉर्मल जिंदगी में हर चीज 10 पे रिलेटेड है। क्योंकि हम लोग डेसिमल नंबर सिस्टम पढ़ते हैं। कंप्यूटर बाइनरी नंबर सिस्टम पढ़ता है। उसके लिए हर चीज टू की पावर से रिलेटेड है। हर एक चीज",
+      "source": "caption",
+      "english_text": "could? This could be 0 to the power of 2, 10 - 1 would be 0, 1024 - 1, you can represent from 0 to 1023. If you have to represent 2000, then 10 bits will not suffice. You have to get more than 10 bits. So this is all maths. That is why two is a very important number. When It Comes to Computer Science. Everything is two pay related. Everything in our normal life is related to 10. Because we read decimal number system. Computer reads binary number system. For him everything is related to the power of two. every single thing"
+    },
+    {
+      "start_time": 1154.88,
+      "end_time": 1186.95,
+      "text": "छोटी से छोटी चीज और बड़ी से बड़ी चीज कहां पे आके कन्वर्ज होती है? टू की पावर पे। तो ये बात समझ में आती है कि अगर कंप्यूटर को डेसिमल नंबर सिस्टम में मान लो किसी नंबर को रिप्रेजेंट करना है तो उसको कितने बिट की जरूरत पड़ेगी? वो ऐसे डिसाइड होता है कि भाई इतने बिट की जरूरत पड़ेगी। क्योंकि जब आप x बिट्स करते हैं तो आपके पास एक रेंज होती है कि आप यहां से यहां तक आप लोग कॉलेज में कंप्यूटर साइंस पढ़े होंगे तो आप लोग को कोई ना कोई टीचर बताया होगा ना कि इंटीजर इंटीजर जो हम लोग पढ़ते हैं C++ या जावा में उसका एक रेंज होता है। ये उसका रेंज होता है। ये",
+      "source": "caption",
+      "english_text": "Where do the smallest thing and the biggest thing converge? To the power of two. So it is understandable that if the computer has to represent a number, say in the decimal number system, then how many bits will it need? He decides that only so many bits will be required. Because when you do This is its range. this"
+    },
+    {
+      "start_time": 1186.96,
+      "end_time": 1220.549,
+      "text": "क्या होता है? क्योंकि इंटीजर ना 16 बिट पे ऑपरेट करता है। जब आप लिखते हैं ना इंट एट ए इंट ए में ना 16 बिट होते हैं। इंट ए में 16 बिट होते हैं। या तो 32 बिट्स होते हैं कहीं-कहीं कंपाइलर में। तो उस हिसाब से आप उतना 32 बिट्स का क्या मतलब है? वो इंटीजर मैक्सिमम कितना डेसिमल वैल्यू तक होल्ड कर सकता है? 0 से लेके 2 की पावर 32 - 1 तक। बस इतना ज्यादा नहीं। समझ में आती है बात? कि नहीं आती है बात? इसको क्या बोला जाता है? बाइनरी नंबर सिस्टम क्या बोला जाता है? बाइनरी नंबर सिस्टम। अब आगे",
+      "source": "caption",
+      "english_text": "What happens? Because integers operate on 16 bits. When you write Na int at A Int A contains Na 16 bits. Int A contains 16 bits. Either there are 32 bits somewhere in the compiler. So what does 32 bits mean? What is the maximum decimal value that integer can hold? From 0 to the power of 2, 32 - 1. Just not that much. Do you understand? Or it doesn't come up? What is this called? What is binary number system called? Binary number system. now forward"
+    },
+    {
+      "start_time": 1220.559,
+      "end_time": 1254.71,
+      "text": "बढ़ते हैं। अब क्योंकि ये बाइनरी नंबर सिस्टम बन गया और कंप्यूटर को अब जीरो और वन पता चलने लगा। लेकिन अब इसमें एक और बात उठी कि हमारे डेसिमल नंबर सिस्टम में कुछ-कुछ ऑपरेशंस होते हैं। हमारे डेसिमल नंबर सिस्टम में ऑपरेशंस होते हैं ना या ऑपरेटर्स होते हैं। मतलब प्लस हो गया, माइनस हो गया, इंटू हो गया, डिवीज़न हो गया। ऐसे करके बहुत सारे ऑपरेटर्स होते हैं। मतलब अगर किसी को लिखना हो कि 2 + 2 तो बोलता है फोर होता है। तो कंप्यूटर साइंस में भी जरूरत पड़ी कि अब डेसिमल में तो बना लिए। बाइनरी में भी तो जरूरत पड़ेगी। तो कोई बोला कि सेम ही ऑपरेटर्स बाइनरी में भी कर दो। लेकिन कोई बोला कि नहीं ये काम नहीं करेगा। क्यों नहीं",
+      "source": "caption",
+      "english_text": "Let's grow. Now because it became a binary number system and the computer now started knowing zero and one. But now another thing has arisen that there are some operations in our decimal number system. In our decimal number system there are operations Na or operators. Means plus is done, minus is done, in is done, division is done. There are many operators doing this. Meaning if someone has to write that 2 + 2 then he says it is four. So in computer science also there was a need to convert it into decimal. It will be needed in binary also. So someone said to do the same operators in binary also. But someone said no, this won't work. why not"
+    },
+    {
+      "start_time": 1254.72,
+      "end_time": 1286.789,
+      "text": "करेगा? कंप्यूटर को क्या समझ में आता है? वन या ज़ीरो। अब अगर कोई बोले कि कंप्यूटर अगर 1 + 1 करना चाहे तो 1 + 1 का आंसर क्या आएगा? कोई बोलेगा कि टू आएगा। लेकिन बेटा ये टू कंप्यूटर को समझ में नहीं आता है ना? कंप्यूटर को बस दो अल्फाबेट का ज्ञान है। ज़ीरो और वन। तो 1 + 1 का आंसर टू कैसे आ सकता है? इसीलिए कंप्यूटर साइंस या बिट मैनपुलेशन में अलग तरीके के ऑपरेटर्स का यूज़ होता है। वो अलग तरीके के ऑपरेटर क्या होते हैं? पहला ऑपरेटर होता है एंड। पहला ऑपरेटर होता है एंड। एंड की",
+      "source": "caption",
+      "english_text": "will do? What does a computer understand? One or zero. Now if someone says that if the computer wants to do 1 + 1, then what will be the answer of 1 + 1? Someone will say that two will come. But son, these two computers don't understand, right? Computer knows only two alphabets. Zero and one. So how can the answer of 1 + 1 be two? That is why different types of operators are used in computer science or bit manipulation. What are those different types of operators? The first operator is and. The first operator is and. and key"
+    },
+    {
+      "start_time": 1286.799,
+      "end_time": 1318.95,
+      "text": "भूमिका ये होती है। अगर अगर आप ज़ीरो एंड ज़ीरो करते हैं। ये एंड कहां होता है? है जो आपके कीबोर्ड पे सेवन के ऊपर लिखा हुआ है उसको एंड बोला जाता है। सिर्फ एक एंड। अगर आप ज़ीरो एंड ज़ीरो करते हैं तो इसका रिजल्ट आता है ज़ीरो। अगर आप 0 एंड वन करते हैं इसका रिजल्ट आता है ज़ीरो। अगर आप वन एंड ज़ीरो करते हैं इसका भी रिजल्ट आता है ज़ीरो। लेकिन अगर आप वन एंड वन करते हैं इसका रिजल्ट आता है वन। क्यों? क्योंकि एंड ऑपरेटर एंड ऑपरेटर ना जब दोनों नंबर",
+      "source": "caption",
+      "english_text": "This is the role. If if you do zero and zero. Where does this end? What is written above seven on your keyboard is called end. Just one end. If you do zero and zero then the result is zero. If you do 0 and one, the result is zero. If you do one and zero, the result is also zero. But if you do one and one, the result is one. Why? Because AND operator AND operator when both the numbers"
+    },
+    {
+      "start_time": 1318.96,
+      "end_time": 1347.11,
+      "text": "वन हो। दोनों नंबर वन हो तभी इसका रिजल्ट वन आ सकता है। नहीं तो इसका रिजल्ट जीरो आएगा। अब यहां पे देखिए क्या दोनों वन है? नहीं। दोनों ज़ीरो हैं। ज़ीरो आएगा। क्या दोनों वन है? नहीं। एक ज़ीरो है। आंसर ज़ीरो आएगा। क्या दोनों वन है? नहीं। आंसर ज़ीरो आएगा। क्या दोनों वन है? यस। दोनों वन है। तो एंड का मतलब होता है एंड का क्या मतलब होता है? जब दोनों ट्रू होंगे। दोनों वन होंगे तो आंसर वन आएगा। नहीं तो हर केस में आंसर ज़ीरो आएगा। ओके?",
+      "source": "caption",
+      "english_text": "Be a forest. Only if both are number one can the result be one. Otherwise its result will be zero. Now see here, are both forests? No. Both are zero. Zero will come. Are both forests? No. There is a zero. The answer will be zero. Are both forests? No. The answer will be zero. Are both forests? Yes. Both are forests. So end means what does end mean? When both are true. If both are forests then answer one will come. Otherwise the answer will be zero in every case. Ok?"
+    },
+    {
+      "start_time": 1347.12,
+      "end_time": 1380.31,
+      "text": "दूसरा ऑपरेटर होता है और और जस्ट एंड से ऑोजिट होता है। जीरो एंड 0 का आंसर जीरो सॉरी और को कैसे लिखा जाता है? और को लिखा कैसे जाता है? ज़ीरो और जीरो। ये जो एक डंडा है ना ये डंडा वन नहीं है। एक डंडा है। अपने कीबोर्ड पे देखेंगे तो एक डंडा आपको दिखेगा कहीं पे। इसका आंसर आएगा ज़ीरो। ज़ीरो और वन इसका आंसर आएगा वन। वन और ज़ीरो। इसका आंसर आएगा वन। वन और वन इसका आंसर आएगा वन। मतलब दोनों में से एक भी अगर वन है तो उसका आंसर वन आएगा। अगर",
+      "source": "caption",
+      "english_text": "The second operator is and and is just separated from the end. The answer to zero and 0 is how to write zero and sorry? How is and written? Zero and zero. This stick is not one. There is a stick. If you look at your keyboard, you will see a stick somewhere. Its answer will be zero. Zero and one, the answer will be one. One and zero. The answer will come from one. Forest and forest, the answer will be forest. Meaning, if even one of the two is one, then its answer will be one. if"
+    },
+    {
+      "start_time": 1380.32,
+      "end_time": 1414.95,
+      "text": "दोनों जीरो है तो उसका आंसर ज़ीरो आएगा। तो ये दोनों को देखिए। ये दोनों को देखिए। ये दोनों एक दूसरे से जस्ट उल्टा है। एंड क्या बोलता है? एंड क्या बोलता है कि अगर दोनों वन होंगे तो हम आंसर वन देंगे। और बोलता है कि अगर दोनों में से एक भी अगर वन हो गया तो हम आपको उसका आंसर वन दे देंगे। तो ये दो ऑपरेटर का नाम क्या होता है? एंड और ऑपरेटर। ओके? वेरी गुड। अगला ऑपरेटर क्या होता है? अगला ऑपरेटर होता है ज़र। अगला ऑपरेटर होता है ज़र। दिस इज़ द मोस्टेंट ऑपरेटर। ज़र क्या बोलता है? दो नंबर पे ज़र कर सकते हैं हम लोग। तो 0",
+      "source": "caption",
+      "english_text": "If both are zero then the answer will be zero. So look at these two. Look at these two. These two are just opposites of each other. What does the end say? And what it says is that if both are one then we will give the answer as one. And says that if even one of the two becomes one then we will give you its answer one. So what are the names of these two operators? And and operator. Ok? very good. What is next operator? The next operator is zar. The next operator is zar. This is the most operator. What are you saying? We can click on two numbers. so 0"
+    },
+    {
+      "start_time": 1414.96,
+      "end_time": 1448.63,
+      "text": "1 0 1 1 ज़र क्या बोलता है? अगर दोनों सेम हुए। अगर दोनों सेम हुए मतलब ये दोनों सेम है। ज़ीरो और ज़ीरो सेम है। वन और ये भी सेम है। सेम का आंसर ज़ीरो आएगा। अगर दोनों डिफरेंट हुए। ज़ीरो और वन डिफरेंट है। वन और ज़ीरो भी डिफरेंट है। इनका आंसर वन आएगा। इसको बोला जाता है ज़र। ज़र क्या बोलता है? अगर आप कंप्यूटर का ज़ीरो और वन में ही कर सकते हैं ना ज़र। हां। तो अगर दोनों सेम हुए ज़ीरो ज़र ज़ीरो कर रहे हैं इसका आंसर ज़ीरो आएगा। वन ज़र वन कर रहे हैं",
+      "source": "caption",
+      "english_text": "1 0 1 1 What do you say? If both are same. If both are same then both of them are same. Zero and zero are the same. One and this is also a bean. The answer to the same question will be zero. If both differ. Zero and one are different. One and zero are also different. Their answer will be one. This is called zar. What are you saying? If you can do the computer's zeros and ones only, then yes. Yes. So if both the values ​​are zeroing one by one then the answer will be zero. One by one one is doing one"
+    },
+    {
+      "start_time": 1448.64,
+      "end_time": 1482.87,
+      "text": "आंसर ज़ीरो आएगा। लेकिन दोनों डिफरेंट हो गए। अगर ज़ीरो ज़र वन कर रहे हैं उसका आंसर वन आएगा। वन ज़र ज़ीरो कर रहे हैं उसका आंसर वन आएगा। इसको लिखते कैसे हैं? वन ये वाला और ज़ीरो। इसका ये वाला इसका क्या मतलब होता है? ये ज़र ऑपरेटर का साइन होता है जो कि सिक्स के ऊपर आपको कीबोर्ड में मिलेगा। ठीक है? सिक्स के ऊपर आपको ज़र का सिंबल इसको जनरली पावर सिंबल आप लोग बोलते होंगे जनरल मैथ में। लेकिन कंप्यूटर साइंस में अगर आप ये लिखते हैं तो इसका मतलब क्या होता है? ज़र ऑपरेटर। इसका मतलब क्या होता है? ज़ोर ऑपरेटर। तो ये बात समझ में आई कि अलग ऑपरेटर्स की जरूरत क्यों पड़ी? जैसे हमारे दुनिया के मैथ्स में प्लस माइनस",
+      "source": "caption",
+      "english_text": "The answer will be zero. But both became different. If you are doing zero then one, the answer will be one. We are doing one zero and the answer will be one. How to write this? One, this one and zero. What does this one mean? This is the operator sign which you will find on the keyboard above six. Ok? Above the six you will see the symbol of zero, you may generally call it the power symbol in general math. But if you write this in computer science, what does it mean? Zar operator. What does it mean? Emphasis operator. So it was understood why separate operators were needed? Like plus minus in the maths of our world."
+    },
+    {
+      "start_time": 1482.88,
+      "end_time": 1509.029,
+      "text": "इंटू डिवीज़न है। कंप्यूटर साइंस की दुनिया में क्या है? मेन ऑपरेटर्स एंड और या तो ज़र इनका सिंबल क्या होता है? एंड और और ज़र तो ये तीन बेसिक ऑपरेटर जैसे हमारा प्लस माइनस है ना प्लस कंप्यूटर का प्लस माइनस एंड और ज़र होता है। आगे बढ़ते हैं। चलिए आगे बढ़ने से पहले इसको यूज़ करके आपको हम दिखाते हैं कि काम कैसे करता है। आप इसको खुद ट्राई करिए। कंपाइलर खोलिए और लिखिए।",
+      "source": "caption",
+      "english_text": "Into division. What is there in the world of computer science? What is the symbol of main operators and and or or? And and and zero are these three basic operators like our plus is minus and plus is computer's plus minus and and zero. Let's move ahead. Before proceeding further, let us show you how it works by using it. You try it yourself. Open the compiler and write."
+    },
+    {
+      "start_time": 1509.039,
+      "end_time": 1541.35,
+      "text": "एंड ऑपरेटर। ठीक है? आप सिर्फ ऐसा लिखिए। इंट A = 6 एंड 9 और इसको प्रिंट कर दीजिए। अब ये कंप्यूटर में कैसे होगा? इसको 6 एंड न आप तो अपने भाषा में लिख दिए कि 6 9 कंप्यूटर तो 6 9 नहीं समझ में आता है। तो सिक्स को पहले ये बाइनरी में कन्वर्ट करेगा। सिक्स का बाइनरी क्या होगा? 0 1 1 0 कैसे? अब देखिए आपको लगेगा कि ये तुरंत कर लिया। आप भी तुरंत कर लेंगे। थोड़ा प्रैक्टिस लगेगा। देखिए सिक्स को करने के लिए बाइनरी में क्या करेंगे? हम यहां पे फोर बिट ले रहे हैं। जस्ट समझाने के लिए।",
+      "source": "caption",
+      "english_text": "End operator. Ok? You just write like this. Int A = 6 & 9 and print it. Now how will this happen in the computer? You write it as 6 and neither in your language that 69 is understood by the computer, not 69. So first it will convert six to binary. What will be the binary of six? 0 1 1 0 how? Now see, you will feel that this has been done immediately. You will also do it immediately. It will take some practice. See what to do in binary to do six? We are taking four bits here. Just to explain."
+    },
+    {
+      "start_time": 1541.36,
+      "end_time": 1574.87,
+      "text": "सिक्स के लिए तीन बिट काफी है। क्योंकि जब आप तीन बिट लेंगे तीन बिट में कहां से कहां तक रिप्रेजेंट हो सकता है? 0 से लेके 2 पावर 3 - 1 मतलब 0 से लेके 7 तक। तो सिक्स के लिए तीन बिट काफी है। लेकिन नौ के लिए नौ के लिए आपको चार बिट लगेंगे। क्योंकि ज़ीरो से सेवन में नौ नहीं आता है। नौ के लिए चार बिट लगेंगे। तो हम लोग सिक्स को भी चार बिट कर सकते हैं। चलिए तो सिक्स को कैसे रिप्रेजेंट करेंगे? टू का कौन सा पावर है जो सिक्स से कम है? क्या टू पावर 3 लेना उचित है? नहीं। तो देखिए 2 3 2 1 2 0 आठ। आठ को लेना क्या ठीक है? नहीं।",
+      "source": "caption",
+      "english_text": "Three bits is enough for six. Because when you take three bits, how much can be represented in three bits? 0 to 2 power 3 - 1 means 0 to 7. So three bits are enough for six. But for nine it will take you four bits. Because zero does not add up to seven. It will take four bits for nine. So we can convert six to four bits. So how will we represent Six? What power of two is less than six? Is it worth taking Two Power 3? No. So see 2 3 2 1 2 0 eight. Is it okay to take eight? No."
+    },
+    {
+      "start_time": 1574.88,
+      "end_time": 1607.43,
+      "text": "ठीक है। आठ सिक्स से बड़ा है ना? जीरो लिख दिया। फोर क्या लेना ठीक है? बिल्कुल ठीक है। यहां पे वन लिख दिया। जब आप फोर लेते हैं सिक्स में से टू हो गया। फोर हो गया माइनस बचा टू। अब टू क्या टू लेना उचित है? बिल्कुल उचित है। टू इज़ लेस दैन इक्वल टू टू। इसको ले लीजिए। अब ये हो गया ज़ीरो। यहां पे आया वन। क्या वन ज़ीरो से कम है क्या? नहीं वन नहीं है। तो 0 तो इसका क्या हो गया? 0 1 1 0 सिमिलरली नौ को क्या लिखेंगे? 1 0 0 1 नौ का क्या हो गया? 1 01 मतलब जब आप 1 0 1 लिखते हैं तो इसका मतलब",
+      "source": "caption",
+      "english_text": "Ok. Eight is bigger than six, right? Wrote zero. For what is it okay to take? Absolutely fine. One is written here. When you take four, six becomes two. Four is minus two. Now is it appropriate to take 2? Absolutely appropriate. Two is less than equal to two. Take this. Now it has become zero. Here comes the forest. Is one less than zero? No, it is not a forest. So 0 then what happened to it? 0 1 1 0 What will you write similarly to nine? 1 0 0 1 What happened to nine? 1 01 meaning when you write 1 0 1 it means"
+    },
+    {
+      "start_time": 1607.44,
+      "end_time": 1633.669,
+      "text": "होता है 1 * 2 पावर 3 8 और ये हो गया 1 * 2 पावर 0 मतलब 1 8 + 1 9 बाकी दोनों ज़ीरो है। ओके अब कंप्यूटर क्या करेगा? सेम एंड का लॉजिक अप्लाई करेगा। यहां से देखिए ज़ीरो और वन ज़ीरो और वन का एंड क्या आएगा? क्या दोनों वन है? नहीं। तो इसका आंसर आएगा ज़ीरो। वन और ज़ीरो का एंड क्या आएगा? क्या दोनों वन है? बिल्कुल नहीं। इसका आंसर आएगा ज़ीरो। वन और ज़ीरो का एंड क्या दोनों वन है? नहीं। इसका आंसर आएगा ज़ीरो।",
+      "source": "caption",
+      "english_text": "It is 1 * 2 power 3 8 and this becomes 1 * 2 power 0 meaning 1 8 + 1 9 the remaining two are zero. Ok what will the computer do now? Same end logic will apply. See from here, what will be the end of Zero and One? Are both forests? No. So its answer will be zero. What will be the end of one and zero? Are both forests? no way. Its answer will be zero. Is the end of one and zero both one? No. Its answer will be zero."
+    },
+    {
+      "start_time": 1633.679,
+      "end_time": 1662.31,
+      "text": "और ज़ीरो और वन का एंड क्या आएगा? क्या दोनों वन है? बिल्कुल नहीं। इसका आंसर आएगा ज़ीरो। अब बताइए ये 0 0 0 जब आप इसको डेसिमल में कन्वर्ट करेंगे तो इसका आंसर आएगा ज़ीरो। तो आपका ए क्या प्रिंट होगा स्क्रीन पे? ज़ीरो। वेरी गुड। अब आप लिखिए इंट B = 6 और 9 6 और 9 देखते हैं क्या आंसर आता है। 0 1 1 0 हो गया सिक्स। 1 0 0 1 हो गया न। जीरो और वन का और क्या आएगा?",
+      "source": "caption",
+      "english_text": "And what will be the end of zero and one? Are both forests? no way. Its answer will be zero. Now tell this 0 0 0, when you convert it into decimal then its answer will be zero. So what will your A print on the screen? Zero. very good. Now you write int B = 6 and 9 6 and 9 and see what answer comes. 0 1 1 0 Done six. 1 0 0 1 It's done. What else will come of zero and one?"
+    },
+    {
+      "start_time": 1662.32,
+      "end_time": 1696.31,
+      "text": "क्या इनमें से एक भी वन है? बिल्कुल है। वन। वन और जीरो का और क्या एक भी वन है? बिल्कुल। वन और जीरो का और क्या एक भी वन है? बिल्कुल। जीरो और वन का और क्या एक भी वन है? बिल्कुल। 1 1 इसको जब आप डेसिमल में कन्वर्ट करेंगे तो आंसर आएगा 15। तो आपके बी का आंसर क्या आएगा? 15। अब आप लिखिए ज़र 6 ज़र 9 और आप प्रिंट कीजिए C को। देखते हैं क्या आंसर आता है। 6 0 1 1 0 9 मतलब 1 0 0 1 ज़र क्या बोलता है? अगर दोनों सेम हुए आंसर आएगा ज़ीरो। अगर दोनों",
+      "source": "caption",
+      "english_text": "Is even one of these a forest? Of course it is. Forest. Apart from one and zero, is there any other one? Absolutely. Apart from one and zero, is there any other one? Absolutely. Apart from zero and one, is there any other one? Absolutely. 1 1 When you convert this into decimal, the answer will be 15. So what will be the answer of your B? 15. Now you write 6 and 9 and you print C. Let's see what the answer is. What does 6 0 1 1 0 9 mean 1 0 0 1 zar say? If both are same then the answer will be zero. if both"
+    },
+    {
+      "start_time": 1696.32,
+      "end_time": 1730.47,
+      "text": "डिफरेंट हुए आंसर आएगा वन। ज़ीरो और वन का क्या आंसर? सेम है कि डिफरेंट है? डिफरेंट बिट्स है आंसर आएगा वन। वन और ज़ीरो का आंसर वन। वन और ज़ीरो का आंसर वन। ज़ीरो और वन का आंसर वन। तो C का आंसर भी क्या आएगा? 1 1 यानी कि 15 यानी कि 15। तो इस तरीके से आप एंड और ज़र को खुद से ट्राई कर सकते हैं। वेरी गुड। एक और ऑपरेटर होता है। एक और ऑपरेटर होता है जिसका नाम होता है नॉट। जिसका नाम होता है नॉट। उसको एक्सक्लेमेशन में लिख दीजिए। नॉट ऑफ़ सिक्स। नॉट कुछ नहीं होता है। नॉट मतलब क्या होता है ना? 0 1 1 0 लिखेगा",
+      "source": "caption",
+      "english_text": "There will be a different answer. What is the answer to zero and one? Is it the same or different? Different bits is the answer will come one. The answer to one and zero is one. The answer to one and zero is one. The answer to zero and one is one. So what will be the answer of C? 1 1 means 15 means 15. So in this way you can try And and Zar yourself. very good. There is another operator. There is another operator whose name is not. Whose name is Knot. Write that in exclamation. Not six. Nothing happens. What does not mean? will write 0 1 1 0"
+    },
+    {
+      "start_time": 1730.48,
+      "end_time": 1761.909,
+      "text": "कंप्यूटर। उसके बाद हर बिट को टॉगल कर देगा। हर बिट को क्या करेगा? टॉगल कर देगा। जीरो को वन बना देगा। वन को जीरो बना देगा। वन को जीरो बना देगा और इसको वन। 1 0 1 क्या आंसर आता है? नाइन। तो डी का आंसर क्या आएगा? नाइन। तो नॉट ऑपरेटर मतलब हर एक बिट को उल्टा कर दीजिए। ज़ीरो को वन कर दीजिए। वन को ज़ीरो कर दीजिए। आंसर आ गया नाइन। तो ये चार ऑपरेटर। अब दो और ऑपरेटर होते हैं जो आपको सीखना जरूरी है। वो होता है लेफ्ट शिफ्ट। क्या होता है? लेफ्ट शिफ्ट। लेफ्ट शिफ्ट को क्या इससे बोला जाता? ये होता है लेफ्ट शिफ्ट।",
+      "source": "caption",
+      "english_text": "Computer. That will toggle each bit. What will each bit do? Will toggle. Will make zero one. Will reduce forest to zero. Will make one zero and this one one. 1 0 1 What is the answer? Nine. So what will be the answer of D? Nine. So not operator means invert each bit. Turn zero into one. Reduce forest to zero. The answer is nine. So these four operators. Now there are two more operators that you need to learn. That is left shift. What happens? Left shift. Should Left Shift be called this? This is left shift."
+    },
+    {
+      "start_time": 1761.919,
+      "end_time": 1787.11,
+      "text": "ये होता है लेफ्ट शिफ्ट। मतलब दो इधर वाले एरो जो कि लेफ्ट में पॉइंट कर रहे हो। लेफ्ट शिफ्ट क्या होता है ना? अगर आप लिखते हैं सिक्स। मान लीजिए कोई लिख दिया सिक्स। तो क्या हो गया? 6 0 1 1 0 ठीक है? लेफ्ट शिफ्ट का मतलब क्या होता है? हर एक बिट को हर एक बिट को लेफ्ट शिफ्ट कर दो। हर एक बिट को लेफ्ट शिफ्ट कर दो। तो देखिए ज़ीरो जब लेफ्ट शिफ्ट होगा तो ज़ीरो कहीं जाके खो जाएगा। ज़ीरो कहीं जाके खो जाएगा।",
+      "source": "caption",
+      "english_text": "This is left shift. Meaning the two arrows here are pointing left. What is left shift? If you write six. Suppose someone has written six. So what happened? 6 0 1 1 0 ok? What does left shift mean? Left shift each bit by one bit. Left shift each bit. So see, when zero is shifted left, zero will get lost somewhere. Zero will get lost somewhere."
+    },
+    {
+      "start_time": 1787.12,
+      "end_time": 1820.149,
+      "text": "क्योंकि चार बिट का ही नंबर है। वन लेफ्ट शिफ्ट हो के यहां आ जाएगा। ये वाला वन शिफ्ट हो के यहां आ जाएगा। ये वाला होके यहां आ जाएगा। अब ये वाली जगह तो खाली रह गई। ये वाली जगह तो खाली रह गई। तो जो अगर खाली रह गई ना वहां पे अपने मन से जीरो लिख देता है कंप्यूटर। अपने मन से क्या लिख देता है? जीरो लिख देता है कंप्यूटर। अपने मन से क्या लिख देता है? जीरो लिख देता है। कौन लिख देता है? कंप्यूटर लिख देता है। ओके? हां। यहां पे ये वन हो जाएगा। वन हो जाएगा। 1 1 0 मतलब जब आप 0 1 1 0 को एक बार लेफ्ट शिफ्ट किए तो हर एक",
+      "source": "caption",
+      "english_text": "Because it is a four-bit number only. One will shift left and come here. This one will come here after one shift. This one will be done and will come here. Now this place remains vacant. This place remained empty. So if the space is left blank, the computer automatically writes zero there. What do you write from your mind? The computer writes zero. What do you write from your mind? Writes zero. Who writes it? The computer writes. Ok? Yes. This will become a forest here. It will become a forest. 1 1 0 means when you left shift 0 1 1 0 once, then every"
+    },
+    {
+      "start_time": 1820.159,
+      "end_time": 1849.75,
+      "text": "बिट एक जगह लेफ्ट शिफ्ट हो गया। तो सबसे इधर वाला बिट तो खो गया। सबसे उधर वाला बिट तो खो गया। खो गया ना? अच्छा। अब बाकी बिट शिफ्ट हो गए। जो जगह बची वहां पे जीरो लिख दिए। ये नंबर क्या है? ये नंबर है। ये देखिए 0 * 2 पावर 0 ये हो गया 0 * 2 पावर 1 0 ये क्या है? 1 * 2 पावर 2 = 4 और ये क्या है? 1 * 2 3 8 जोड़ेंगे तो क्या आएगा?",
+      "source": "caption",
+      "english_text": "The bit shifted left one place. So the last bit is lost. The farthest bit was lost. Lost, right? Good. Now the remaining bits have shifted. Zero was written in the space left. What is this number? This is the number. Look at this 0 * 2 power 0 Here it is 0 * 2 power 1 0 What is this? 1 * 2 power 2 = 4 and what is this? What will come if we add 1 * 2 3 8?"
+    },
+    {
+      "start_time": 1849.76,
+      "end_time": 1880.47,
+      "text": "12 आएगा। मतलब जब आप सिक्स को एक लेफ्ट शिफ्ट किए, एक बार लेफ्ट शिफ्ट किए तो क्या बन गया ये? 12 बन गया। क्या बन गया? 12 बन गया। मतलब कि जब आप किसी भी नंबर को x टाइम्स x टाइम्स लेफ्ट शिफ्ट करते हैं। क्या करते हैं? x टाइम्स लेफ्ट शिफ्ट करते हैं तो वो नंबर जानते हैं क्या बन जाता है? अगर आप n को x टाइम्स लेफ्ट शिफ्ट कर रहे हैं तो वो बन जाएगा n * 2 की पावर x।",
+      "source": "caption",
+      "english_text": "12 will come. Meaning, when you shift six to the left, shift left once, what happens to it? Becomes 12. What has happened? Becomes 12. Meaning that when you shift any number x times x times left. What do you do? Do you know what happens to that number if we shift it left x times? If you shift n left x times, it becomes n * 2 to the power of x."
+    },
+    {
+      "start_time": 1880.48,
+      "end_time": 1907.35,
+      "text": "ये बन जाएगा। करके देख लीजिए। सिक्स को आप वन टाइम लेफ्ट शिफ्ट किए। वन टाइम लेफ्ट शिफ्ट किया तो वो क्या बन गया? 6 * 2 की पावर 1 = 12 6 * 2 की पावर 1 व्हिच इज़ 12 अब इसका जस्ट उल्टा राइट शिफ्ट इसका जस्ट उल्टा राइट शिफ्ट कैसे रिप्रेजेंट होता है? इधर से इधर से देखिए लेफ्ट शिफ्ट कैसे रिप्रेजेंट हुआ था? लेफ्ट वाले दो एरो थे।",
+      "source": "caption",
+      "english_text": "This will be made. Try it and see. You shifted six left one time. What happens if you shift left one time? 6 * 2 to the power 1 = 12 6 * 2 to the power 1 Which is 12 Now its just reversed right shift How is this represented just reverse right shift? Look from here, how was the left shift represented? The one on the left had two arrows."
+    },
+    {
+      "start_time": 1907.36,
+      "end_time": 1940.71,
+      "text": "राइट शिफ्ट राइट की तरफ दो एरो थे। आइए हम आपको दिखाते हैं। 1 0 जो कि 12 है। इसको एक बार राइट शिफ्ट कीजिए। तो देखिए ये वाला राइट शिफ्ट हो के यहां आ गया। ये वाला यहां आ गया। ये वाला यहां आ गया। ये जाके खो गया। एक जगह बच गई। एक जगह बच गई। अब ये वाली जगह बच गई। यहां पे अपने मन से लिख दीजिए। 0 1 1 0 1 1 0 क्या है भाई? सिक्स है। सिक्स है। मतलब कि आप जब n को x टाइम्स x टाइम्स राइट शिफ्ट करते हैं तो",
+      "source": "caption",
+      "english_text": "Right Shift There were two arrows on the right side. Let us show you. 1 0 which is 12. Shift it right once. So see, this one shifted right and came here. This one came here. This one came here. He got lost. One place left. One place left. Now this place is saved. Write here from your heart. 0 1 1 0 1 1 0 What's up brother? It's six. It's six. Meaning that when you shift n right x times x times then"
+    },
+    {
+      "start_time": 1940.72,
+      "end_time": 1972.63,
+      "text": "वो क्या बन जाता है? n / n / 2 की पावर x लेफ्ट शिफ्ट में क्या होता था? मल्टीप्लाई बाय 2 की पावर x राइट शिफ्ट में डिवाइडेड बाय 2 की पावर x माने कि 12 को वन टाइम अगर आप राइट शिफ्ट करेंगे तो ये क्या बन जाएगा? 12 / 2 की पावर 1 व्हिच इज़ सिक्स। व्हिच इज़ सिक्स। तो ये दोनों ऑपरेटर को क्या बोला जाता है? लेफ्ट शिफ्ट एंड राइट शिफ्ट। लेफ्ट शिफ्ट मतलब इसको लिखा कैसे जाता है? इंट a = 6 लेफ्ट शिफ्ट वन इसका",
+      "source": "caption",
+      "english_text": "What does he become? What was the power x left shift of n / n / 2? Multiply by 2 to the power 12 / 2 is the power of 1 which is six. Which is six. So what are these two operators called? Left Shift and Right Shift. Left shift means how is it written? int a = 6 left shift one its"
+    },
+    {
+      "start_time": 1972.64,
+      "end_time": 2004.149,
+      "text": "मतलब क्या है? सिक्स को एक बार एक बार लेफ्ट शिफ्ट करो। इंट b = 12 या 16 इधर उधर टू इसका मतलब क्या है? 16 को दो बार राइट शिफ्ट करो। दो बार राइट शिफ्ट करो। लेफ्ट शिफ्ट राइट शिफ्ट होता क्या है? हर एक बिट उतने बार जितने बार भी आप यहां पे लिखे हैं, जितने बार भी आप करवाना चाहते हैं, उतने पोजीशन लेफ्ट या राइट चला जाएगा। इसका फार्मूला क्या होता है? n अगर",
+      "source": "caption",
+      "english_text": "What is the meaning? Shift six to the left once. int b = 12 or 16 here and there to what does this mean? Shift right twice on 16. Shift right twice. What is left shift right shift? Each bit will be moved left or right as many times as you have written here, as many positions as you want it to do. What is its formula? n if"
+    },
+    {
+      "start_time": 2004.159,
+      "end_time": 2037.669,
+      "text": "कोई आदमी ऐसा लिखता है कि इंटरेस्ट = n लेफ्ट शिफ्ट x तो क्या बन जाएगा? रिजल्ट विल बी n * 2 की पावर x अगर कोई आदमी लिखता है रिजल्ट इज़ = n राइट शिफ्ट x तो रिजल्ट की वैल्यू क्या आएगी? n / 2 की पावर x ये देखिए ये होता है लेफ्ट शिफ्ट राइट शिफ्ट तो आप लोग कितने ऑपरेटर सीख चुके हैं टोटल करके छह ऑपरेटर सीख चुके हैं कौन-कौन से एंड और ज़र नॉट लेफ्ट शिफ्ट एंड",
+      "source": "caption",
+      "english_text": "What will happen if a person writes that interest = n left shift x? Result will be n * power of 2 x If a person writes Result is = n right shift x then what will be the value of the result? Power of n / 2"
+    },
+    {
+      "start_time": 2037.679,
+      "end_time": 2070.869,
+      "text": "राइट शिफ्ट टोटल मिला के छह ही ऑपरेटर होते हैं बाइनरी में। इसके अलावा कोई सातवां ऑपरेटर नहीं होता है। सातवां होता है कि नहीं? हां ठीक है। इसके अलावा कोई सातवां ऑपरेटर नहीं होता है। तो ये था बिटवाइज मैनपुलेशन के ऑपरेटर। अब कुछ इंटरेस्टिंग बातें देखते हैं। कुछ इंटरेस्टिंग पैटर्न्स देखते हैं जिसके हिसाब से हम लोग फिर क्वेश्चन लगाएंगे। अब हम आपको बोले ना कि आपको हम कुछ इंपॉर्टेंट पैटर्न सिखाते हैं। इनको सीखना पैटर्न बोल लीजिए। ट्रिक बोल लीजिए जो भी लेकिन बहुत इंपॉर्टेंट ट्रिक है। क्यों इंपॉर्टेंट ट्रिक है? सबसे इंपॉर्टेंट देखिए इसका मतलब क्या है? वन लेफ्ट शिफ्ट",
+      "source": "caption",
+      "english_text": "There are only six right shift total operators in binary. Apart from this there is no seventh operator. Is there a seventh or not? Yes ok. Apart from this there is no seventh operator. So this was the operator of bitwise manipulation. Now let us see some interesting things. We see some interesting patterns according to which we will then ask questions. Now let us tell you that we will teach you some important patterns. Call these learning patterns. Call it a trick, but it is a very important trick. Why is this an important trick? Most importantly see what it means? one left shift"
+    },
+    {
+      "start_time": 2070.879,
+      "end_time": 2101.589,
+      "text": "आई टाइम्स। वन को i टाइम्स लेफ्ट शिफ्ट करो। तो हम आपको i की वैल्यू बदल-बल के दिखाते हैं। सबसे पहले वन का डेसिमल वन का बाइनरी रिप्रेजेंटेशन क्या होगा? चार बिट में मान लीजिए 0 0 1 ये ओरिजिनल वन है। मतलब i = 0 i = 0 मतलब ये ज़ीरो टाइम्स लेफ्ट शिफ्टेड है। ये तो ओरिजिनल वन है ना। अभी तक कोई शिफ्ट नहीं हुआ है। एक बार लेफ्ट शिफ्ट करके देखते हैं। मतलब i इक्वल टू और यहां पे हम ये बना लेते हैं। देखिए यहां पे हम आपको समझाने के लिए पोजीशन बना लेते",
+      "source": "caption",
+      "english_text": "I Times. Left shift one to i times. So we show you the value of i by changing the force. First of all, what will be the binary representation of decimal one? In four bits, let's say 0 0 1 is the original one. Meaning i = 0 i = 0 means it is zero times left shifted. This is the original one, right? No shift has taken place yet. Let's try left shift once. Meaning i is equal to two and here we make this. Look, here we will make a position to convince you."
+    },
+    {
+      "start_time": 2101.599,
+      "end_time": 2136.069,
+      "text": "हैं। ये है पोजीशन = 0 ये है पोजीशन = 1 ये है पोजीशन = 2 और ये है पोजीशन = 3 ठीक है? समझने में आसानी रहे उसके लिए। i = 1 i = 1 देखिए इसका मतलब एक हर एक बिट को एक बार शिफ्ट करो। मतलब ये वाला वन ये वाला वन यहां आ जाएगा। ये वाला वन यहां आ जाएगा। ये वाला ज़ीरो यहां आएगा। ये वाला ज़ीरो यहां आएगा। जो बच गया वहां पे ज़ीरो लगा देंगे। ठीक है? एक और बार करके देखते हैं। एक और बार करके देखते हैं। मतलब कहने का मतलब क्या होगा? i = 2 मतलब अगेन एक और",
+      "source": "caption",
+      "english_text": "Are. This is position = 0 This is position = 1 This is position = 2 And this is position = 3 Okay? To make it easier for him to understand. i = 1 i = 1 See, this means shift each bit once. Meaning this one, this one will come here. This one will come here. This one zero will come here. This one zero will come here. We will put zero on whatever is left. Ok? Let's try it one more time. Let's try it one more time. What would it mean to say? i = 2 means again one more"
+    },
+    {
+      "start_time": 2136.079,
+      "end_time": 2166.39,
+      "text": "बार करिए। इस वाले को वन को यहां डाल दीजिए। मतलब वन और ये वाला ज़ीरो यहां आ जाएगा। ज़ीरो यहां आ जाएगा। ये ज़ीरो बन जाएगा। Okay? एक और बार करके देखिए। एक और बार करके देखिए। मतलब ये जो वन है ये यहां आ जाएगा। तो ये यहां आ गया। अब बाकी बच गए। ये जीरो यहां आ गए। ये जीरो यहां आ गए। एक बच गया। तो यहां डाल दिए। देखिए क्या वैल्यू बन रही है। देखिए क्या वैल्यू बन रही है। इसका वैल्यू कितना है? वन। इसका वैल्यू कितना है? टू। इसका वैल्यू कितना है? फोर। इसका वैल्यू कितना है?",
+      "source": "caption",
+      "english_text": "Do it again. Put this one forest here. Meaning one and this one zero will come here. Zero will come here. This will become zero. Okay? Try it one more time. Try it one more time. Meaning, this forest will come here. So here it comes. Now the rest are left. These zeros have come here. These zeros have come here. One survived. So put it here. See what value is being created. See what value is being created. What is its value? Forest. What is its value? To. What is its value? Four. What is its value?"
+    },
+    {
+      "start_time": 2166.4,
+      "end_time": 2197.589,
+      "text": "फाइव। सॉरी एट। सॉरी इसका वैल्यू कितना है? एट। अब बहुत गौर से एक चीज़ नोटिस कीजिए। जब आप i = 0 पे लेफ्ट शिफ्ट कर रहे थे। मतलब कोई लेफ्ट शिफ्ट नहीं। कहने का मतलब कि ज़ीरो बार लेफ्ट शिफ्ट हुआ था। कौन सा बिट? कौन सा बिट या कौन सा पोजीशन वन था? पोजीशन ज़ीरो वन था। पोजीशन ज़ीरो वन था। जब आप i = 1 किए कौन सा पोजीशन वन हो गया? ये वाला। फर्स्ट पोजीशन। फर्स्ट पोजीशन। i = 2 पे कौन सा पोजीशन वन था?",
+      "source": "caption",
+      "english_text": "Five. Sorry et. Sorry, how much is it worth? et. Now notice one thing very carefully. When you were left shifting at i = 0. Meaning no left shift. That is to say, there was a left shift zero times. which bit? Which bit or which position was one? Position was zero one. Position was zero one. Which position becomes one when you do i = 1? This one. First position. First position. Which position was one at i = 2?"
+    },
+    {
+      "start_time": 2197.599,
+      "end_time": 2226.39,
+      "text": "सेकंड पोजीशन। सेकंड पोजीशन। i = 3 पे कौन सा पोजीशन वन था? थर्ड पोजीशन। थर्ड पोजीशन। मतलब कि जब आप वन लेफ्ट शिफ्ट आई करते हैं तो कैसा नंबर बनता है? एक नंबर बनता है आयत बिट वाला सेट बनता है। आयत बिट सेट मतलब कि आयत बिट ही वन रहता है सिर्फ और बाकी सारे बाकी सारे बिट ज़ीरो रहते हैं। बाकी सारे बिट ज़ीरो रहते हैं।",
+      "source": "caption",
+      "english_text": "Second position. Second position. Which position was one at i = 3? Third position. Third position. Meaning, when you shift one left, what kind of number is formed? A number is formed and a set of rectangle bits is formed. Rectangle bit set means that rectangle bit remains one only and all other bits remain zero. All remaining bits remain zero."
+    },
+    {
+      "start_time": 2226.4,
+      "end_time": 2258.95,
+      "text": "देख लीजिए I = 2 किए कौन सा बिट टू था? कौन सा बिट सेट था? सेट का मतलब वन। सेट का मतलब वन। सेकंड वाला बिट मतलब सेकंड पोजीशन वाला बिट वन था। बाकी सारे बिट जीरो थे। अब ये हम क्यों समझाएं? इसमें क्या करेंगे? तो है तो है। इसको ना एक बिट मास्क बोला जाता है। इसको एक बिट मास्क बोला जाता है। बिट मास्क का मतलब समझाएंगे आगे। लेकिन इस पर्टिकुलर चीज को इस पर्टिकुलर चीज को बिट मास्किंग बोला जाता है। जहां पे सारे अलग सारे बिट",
+      "source": "caption",
+      "english_text": "Let's see which bit was I = 2? Which bit was set? Set means one. Set means one. The second bit meant the bit in the second position was one. All other bits were zero. Now why should we explain this? What will we do in this? So it is, it is. This is called a bit mask. This is called a bit mask. We will explain the meaning of bit mask further. But this particular thing is called bit masking. where all the different bits"
+    },
+    {
+      "start_time": 2258.96,
+      "end_time": 2292.87,
+      "text": "एक तरीके के हो लेकिन एक पर्टिकुलर पोजीशन थोड़ा अलग हो उसको बिट मास्किंग बोला जाता है। इसका काम क्या है? इसका काम क्या है? इसका काम अभी बताते हैं। इसका काम भी बताते हैं। अगर आपको कोई बोले सिक्स एक नंबर है। सिक्स एक नंबर है। सिक्स का क्या रिप्रेजेंटेशन 0 1 1 0 0 1 1 0 अच्छा पोजीशन लिख लीजिए 0 1 2 3 अगर कोई बोले थर्ड बिट को थर्ड बिट जब भी कोई कोई एनथ बिट बोलता है ना तो वो पोजीशन की बात कर रहा है तो उसको ऐसा मत सोचिएगा कि कोई बोले कि ये वन है टू है थ्री है नहीं इस",
+      "source": "caption",
+      "english_text": "Same method but a particular position is slightly different, it is called bit masking. What is its function? What is its function? Let us explain its work now. Its work is also explained. If someone tells you that six is ​​a number. Six is ​​a number. What is the representation of six? 0 1 1 0 0 1 1 0 Well, write down the position. 0 1 2 3 If someone says third bit, third bit, whenever someone says nth bit, he is talking about the position, so do not think that if someone says that this is one, two, three, not this."
+    },
+    {
+      "start_time": 2292.88,
+      "end_time": 2324.55,
+      "text": "पोजीशन के हिसाब से वो बात कर रहा है कोई बोले थर्ड बिट को सेट करो थर्ड बिट को सेट करो या फिर या फिर या फिर इसके इसके भी पहले इसके पहले इसके भी पहले कोई आपसे एक सिंपल सा सवाल पूछता है। क्या सेकंड बिट सेट है? क्या सेकंड बिट सेट है? मतलब कि सेकंड बिट का मतलब क्या ये वाला बिट वन है कि ज़ीरो है? ये आपसे कोई क्वेश्चन पूछ रहा है तो ये कैसे पता करेंगे आप कि आपको देखना पड़ेगा ना बिट बाय बिट जाके। लेकिन इसका एक तरीका है। आप क्या कर सकते हैं?",
+      "source": "caption",
+      "english_text": "According to the position he is talking, someone says set the third bit, set the third bit or then or then or before this, before this, before this, someone asks you a simple question. Is the second bit set? Is the second bit set? That means the second bit means is this bit one or zero? If he is asking you a question then how will you know it, you will have to look bit by bit. But there is a way. What can you do?"
+    },
+    {
+      "start_time": 2324.56,
+      "end_time": 2357.76,
+      "text": "एक बिट मास्क बनाइए। एक बिट मास्क बनाइए जिसमें वन लेफ्ट शिफ्ट वन इधर वाला लेफ्ट शिफ्ट टू बनाइए। वन लेफ्ट शिफ्ट टू बनाइए। जब आप ये वन लेफ्ट शिफ्ट टू बनाएंगे तो इसका मतलब क्या होगा? बाकी सारे बिट ज़ीरो हो जाएंगे और ये वाला बिट वन होगा। अभी समझाए थे वन लेफ्ट शिफ्ट आएगा। यही मतलब होता है। इन दोनों को एंड कर दीजिए। इन दोनों को ऐड कर दीजिए। देखिए क्या आंसर आता है। 0 0 0 बाकी तो ज़ीरो क्योंकि एंड का मतलब ही होता",
+      "source": "caption",
+      "english_text": "Make a bit mask. Make a bit mask in which one is left shift one and the one here is left shift two. Make one left shift two. What does it mean when you make this one left shift two? All the remaining bits will become zero and this bit will become one. Just explained that one left shift will come. This is what it means. End both of these. Add both of these. See what answer comes. 0 0 0 The rest is zero because it means end."
+    },
+    {
+      "start_time": 2357.76,
+      "end_time": 2389.19,
+      "text": "है कि अगर एक भी ज़ीरो है तो वो आंसर ज़ीरो हो जाएगा। तो जब ये तीनों बिट ज़ीरो थे तो ऑब्वियसली यहां पे ज़ीरो आना चाहिए। लेकिन लेकिन लेकिन ये वाला वन है। ये वाला बिट वन है क्योंकि आप ये बिट मास्क ये आपका बिट मास्क है। ये आपका बिट मास्क है। अब अगर ये वाला बिट वन है तो इसका आंसर वन आएगा। अगर यहां पे ये बिट जीरो रहता तो इसका आंसर जीरो आ जाता। तो देखिए आपका आंसर क्या आया? 0 1 0 0 ये एक नॉन जीरो रिजल्ट है। ये एक नॉन ज़ीरो रिजल्ट है।",
+      "source": "caption",
+      "english_text": "That is, if there is even one zero then that answer will be zero. So when these three bits were zero, then obviously zero should come here. But but but this one is one. This one is bit one because you this bit mask this is your bit mask. This is your bit mask. Now if this bit is one then its answer will be one. If this bit here had remained zero then its answer would have been zero. So see what was your answer? 0 1 0 0 This is a non-zero result. This is a non-zero result."
+    },
+    {
+      "start_time": 2389.2,
+      "end_time": 2420.069,
+      "text": "इसका एक ही मतलब हो सकता है कि सेकंड बिट सेट है। यस सेकंड बिट सेट है। अगर कोई आपसे एक क्वेश्चन पूछता ना कि यही नंबर ले लो। 6 0 1 1 0 पोजीशनिंग 0 1 2 3 कोई पूछ रहा है थर्ड बिट सेट है कि नहीं? सेम काम कीजिए। वन लेफ्ट शिफ्ट थ्री का बिट मास्क बनाइए। वो बिट मास्क कैसा दिखेगा? यहां पे वन बाकी जगह जीरो एंड कर दीजिए। ऑब्वियसली ज़ीरो आएगा। ऑब्वियसली ज़ीरो आएगा।",
+      "source": "caption",
+      "english_text": "The only thing this can mean is that the second bit is set. Yes second bit is set. If someone asks you a question, take this number. 6 0 1 1 0 Positioning 0 1 2 3 Someone is asking if the third bit is set or not? Do the same work. Create a bit mask of one left shift three. What will that bit mask look like? Here, end with one and zero at other places. Obviously zero will come. Obviously zero will come."
+    },
+    {
+      "start_time": 2420.079,
+      "end_time": 2447.589,
+      "text": "ऑब्वियसली ज़ीरो आएगा। लेकिन ये वाला बिट वन है। तो अब इस बिट पे डिपेंड करता है। जो आपका नंबर है उस पे डिपेंड करता है। अब आपका नंबर का बिट ही जीरो है। इसका आंसर भी जीरो आएगा। ये देखिए। दिस इज़ ए जीरो रिजल्ट। जीरो रिजल्ट मतलब कि थर्ड बिट इज़ नॉट सेट। थर्ड बिट इज़ नॉट सेट या अनसेट। तो ये एक तरीका होता है। कोई भी अगर आपसे पूछ रहा है ना कि आपके पास एक नंबर है n।",
+      "source": "caption",
+      "english_text": "Obviously zero will come. But this one is bit one. So now it depends on this bit. It depends on what your number is. Now the only bit of your number is zero. Its answer will also be zero. Look at this. This is a zero result. Zero result means the third bit is not set. Third bit is not set or unset. So this is one method. If anyone is asking you whether you have a number n."
+    },
+    {
+      "start_time": 2447.599,
+      "end_time": 2480.87,
+      "text": "उसका आयत बिट सेट है कि नहीं? आईएथ बिट सेट है कि नहीं? तो इसमें आप क्या कर सकते हैं? आप एक बिट मास्क बना सकते हैं। आई एन टी बिट मास्क इज इक्वल टू वन लेफ्ट शिफ्ट आई। उसके बाद इफ एन एंड बिटमास्क एन एंड बिटमास नॉट इक्वल टू ज़ीरो देन इट इज़ सेट। एल्स इट इज़ अनसेट। ये देखिए ये एक ट्रिक है जो आप यूज़ कर सकते हैं। क्यों? क्योंकि जब आप एक बिट मास्क बनाते हैं तो बिट",
+      "source": "caption",
+      "english_text": "Is its rectangle bit set or not? Is the Ith bit set or not? So what can you do about this? You can create a bit mask. I n t bit mask is equal to one left shift i. After that if n and bitmask n and bitmass is not equal to zero then it is set. Else it is unset. See, this is a trick that you can use. Why? Because when you create a bit mask the bit"
+    },
+    {
+      "start_time": 2480.88,
+      "end_time": 2514.309,
+      "text": "मास्क का मतलब ही हम लोग उस तरीके से बना रहे हैं ना कि जिस भी बिट पे आप चेक कर रहे हैं जिस भी पोजीशन पे आप सेट कर रहे हैं वो सिर्फ वहां पे वन रहेगा। बाकी सारा ज़ीरो रहेगा। तो ऑब्वियसली इनका इनका एंड तो ज़ीरो ही आएगा। लेकिन जहां पे ये वन है ना उस पे किस पे डिपेंड करेगा अब आंसर? इस वाले x पे डिपेंड करेगा जो कि आपके नंबर का वो पोजीशन का बिट है। अगर आपके नंबर का वो पोजीशन का बिट ज़ीरो है। आपका यहां का आंसर भी ज़ीरो आएगा। अगर आपके नंबर के उस पोजीशन का बिट वन है तो आपका आंसर यहां वन आएगा। तो ऐसे हम लोग को तुरंत ऐसे पता चल जाएगा कि जीरो है कि वन है। वेरी गुड।",
+      "source": "caption",
+      "english_text": "The meaning of the mask itself is that we are making it in that manner, not that whatever bit you are checking, whatever position you are setting, it will remain one only there. The rest will remain zero. So obviously their end will be zero. But now the answer will depend on where this forest is located? This one will depend on x which is the bit of that position of your number. If that position bit of your number is zero. Your answer here will also be zero. If the bit of that position of your number is one then your answer will be one here. So in this way we will immediately know whether it is zero or one. very good."
+    },
+    {
+      "start_time": 2514.319,
+      "end_time": 2542.309,
+      "text": "अच्छा और आप काम कर सकते हैं इस बिट से और आप काम इस बिटमार्क से कर सकते हैं। आपको कोई बोला n = 6 है। 0 1 1 0 ठीक है। आपको कोई बोला सेट द थर्ड बिट। सेट द थर्ड बिट। मतलब पोजीशनिंग लिख लीजिए। 0 1 2 3 सेट द थर्ड बिट। थर्ड बिट जीरो है तो उसको वन बना दो। वन है तो भी उसको। मतलब तुम्हारे आंसर में थर्ड बिट का आंसर वन आना चाहिए।",
+      "source": "caption",
+      "english_text": "Okay and you can work with this bit and you can work with this bitmark. Someone told you that n = 6. 0 1 1 0 OK. Someone told you to set the third bit. Set the third bit. Meaning write down the positioning. 0 1 2 3 Set the third bit. If the third bit is zero then make it one. Even if it is a forest. Meaning, the third bit of answer should be one in your answer."
+    },
+    {
+      "start_time": 2542.319,
+      "end_time": 2575.589,
+      "text": "बाकी नंबर एज इट इज रहना चाहिए। आप क्या करेंगे? आप देखिए क्या करेंगे? आप एक बिट मास्क बनाएंगे। वन लेफ्ट शिफ्ट थ्री उसका क्या मतलब होगा? यहां पे वन बाकी जगह ज़ीरो। इसको और कर दीजिए। इसको और कर दीजिए। देखिए क्या हुआ। 0 0 1 0 1 1 0 1 0 1 ये देखिए ये क्या है? 1 1 0 आपका ओरिजिनल नंबर क्या था? 0 1 1 0 क्या आपका ये वाला बिट सेट हो गया? बिल्कुल सेट हो",
+      "source": "caption",
+      "english_text": "Rest of the numbers should remain as it is. What would you do? See what you will do? You will create a bit mask. One Left Shift Three What would that mean? One here, zero elsewhere. Do more of this. Do more of this. Look what happened. 0 0 1 0 1 1 0 1 0 1 See what this is? 1 1 0 What was your original number? 0 1 1 0 Is this bit of yours set? be absolutely set"
+    },
+    {
+      "start_time": 2575.599,
+      "end_time": 2604.309,
+      "text": "गया। क्या बाकी के तीनों बिट सेम रह गए? 1 0 1 0 यस सेम रह गए। क्यों? क्योंकि ये और का प्रॉपर्टी है। आप जब बिट मास्क बनाए तो आप बिट मास्क में थर्ड वाले बिट को वन बना दिए। बाकी सारे को जीरो बना दिए। अब बाकी के नंबर कुछ भी हो यहां पे a b c a b c 0 1 कुछ भी हो। अब देखिए a और ज़ीरो और तो ये तो ज़ीरो हो चुका है। अब वो a पे डिपेंड करेगा। अगर a वन है तो यहां भी वन आएगा।",
+      "source": "caption",
+      "english_text": "Gone. Do the remaining three bits remain the same? 1 0 1 0 Yes remained the same. Why? Because this is someone else's property. When you create a bit mask, you make the third bit in the bit mask one. Made all the rest zero. Now whatever the remaining numbers may be, here a b c a b c 0 1 may be anything. Now look at a and zero and so it has become zero. Now it will depend on a. If a is forest then forest will come here also."
+    },
+    {
+      "start_time": 2604.319,
+      "end_time": 2637.91,
+      "text": "अगर a ज़ीरो है यहां भी ज़ीरो आएगा। अगर B वन था यहां भी वन आएगा। अगर B ज़ीरो था यहां भी ज़ीरो आएगा। लेकिन जिस बिट को सेट करने के लिए बोल रहा है उसको आप वन बना दिए। तो इरेस्पेक्टिव ऑफ़ x x पे कुछ भी हो जीरो हो या वन हो यहां पे आपका आंसर वन आएगा ही आएगा। तो बाकी के बिट्स को नहीं टच किए सिर्फ जो हमको बोला गया था सेट द थर्ड बिट उसको जाके वन बना दिया ये बिट मास्किंग। तो क्या चीज सीख लिए है? सबसे पहले तो सेट है कि नहीं? सेट है कि नहीं?",
+      "source": "caption",
+      "english_text": "If a is zero then zero will come here also. If B was forest then forest will come here also. If B was zero then zero would come here also. But the bit which is asking to be set, you made it one. So whatever is the aspect ratio of x, be it zero or one, here your answer will be one. So we did not touch the remaining bits, we just set the third bit that we were told and made it one, masking this bit. So what have you learned? First of all, is it set or not? Is it set or not?"
+    },
+    {
+      "start_time": 2637.92,
+      "end_time": 2669.349,
+      "text": "सेट है कि नहीं? क्या किए? बिट मास्क बनाए एंड कर दिए। अगर आंसर ज़ीरो आया तो नॉट सेट है। वन आया सेट है। वेरी गुड। दूसरा ट्रिक क्या देखे? सेट कर दो। सेट कर दो। वहां पे कुछ भी हो उस बिट को सेट कर दो। बिट मास्क बनाए और कर दिए उससे। और कर दिए। अपने आप वो सेट हो गया। और बाकी का नंबर सेम रह गया। अब और देखिए। और देखिए। अब कोई बोला n = 6 है जी। 0 1 1 0 पोजीशनिंग लिख लो। 0",
+      "source": "caption",
+      "english_text": "Is it set or not? What did you do? Made bit mask and done. If the answer is zero then it is not set. One came set. very good. What second trick should we see? Set it. Set it. Whatever is there, set that bit. Made a bit mask and did it with him. And did it. It got set automatically. And the remaining numbers remained the same. Now look further. And see. Now someone said n=6. 0 1 1 0 Write down the positioning. 0"
+    },
+    {
+      "start_time": 2669.359,
+      "end_time": 2702.47,
+      "text": "1 2 3 टॉगल कर दो। टॉगल द थर्ड बिट। टॉगल द थर्ड बिट। मतलब टॉगल का मतलब क्या होता है? अगर थर्ड बिट ज़ीरो है वन बना दो। अगर थर्ड बिट वन है उसको ज़ीरो बना दो। देखिए क्या करेंगे? बिट मास्क बनाइए। बिट मास्क बनाइए थर्ड बिट पे। 1 0 0 ज़र कर दीजिए साले को। ज़ौर कर दीजिए। देखिए क्या होगा? 0 एंड ज़ीरो का ज़ॉर क्या आएगा? ज़ीरो। वन एंड 0 का ज़र क्या आएगा? वन। वन एंड ज़ीरो का ज़र क्या आएगा? वन। तो क्या ये तीनों बिट सेम रह गए इसके तरह? बिल्कुल सेम रह",
+      "source": "caption",
+      "english_text": "1 2 3 Toggle. Toggle the third bit. Toggle the third bit. What does toggle mean? If the third bit is zero make it one. If the third bit is one, make it zero. See what we will do? Create a bit mask. Draw a bit mask on the third bit. 1 0 0 Please do it to the bastard. Emphasize it. See what will happen? What will be the force of 0 and zero? Zero. What will happen with one and 0? Forest. What will happen after One and Zero? Forest. So do these three bits remain the same? remain exactly the same"
+    },
+    {
+      "start_time": 2702.48,
+      "end_time": 2734.309,
+      "text": "गए। अब देखिए क्या होगा थर्ड बिट पे? ज़ीरो और वन का बिट ज़ीरो और वन का ज़र वन। क्या ये ज़ीरो वन बन गया? बिल्कुल बन गया। अगर अगर यहां पे वन होता, यहां पे ऑलरेडी वन होता। तो वन और वन का ज़र क्या होता? ज़ीरो। तो क्या ये वन टॉगल हो गया? बिल्कुल टॉगल हो गया। तो आप क्या किए? एक बिट मास्क बनाए और किसी भी बिट को किसी भी बिट को टॉगल कर सकते हैं बाकी नंबर को नहीं छुए बिना बाकी के नंबर को नहीं छुए बिना तो ये तीन तरीके के ट्रिक्स है किस पे है",
+      "source": "caption",
+      "english_text": "Went. Now see what will happen on the third bit? Zero and one's bit is zero and one's zero is one. Has it become zero one? Absolutely done. If there was one here, there would already be one here. So what is the meaning of forest and forest? Zero. So is this one toggled? Toggled exactly. So what did you do? Create a bit mask and toggle any bit to any other number without touching the rest of the numbers. So these are three types of tricks on which one."
+    },
+    {
+      "start_time": 2734.319,
+      "end_time": 2765.43,
+      "text": "डिपेंडेंट ये सारे बिट मास्किंग पे किस पे बिटमास्किंग यस बिटमास्किंग बिट मास्किंग से आप बहुत पावरफुल चीजें कर सकते हैं ये चीजें क्यों पॉसिबल है क्योंकि ये ऑपरेटर्स इस तरीके से बने हुए हैं। ये ऑपरेटर्स उसी तरीके से बने हुए हैं। एक बिटमास करके एंड करके आप ये पता कर दिए कि वो सेट है कि नहीं। और कर दिए बिटमास से तो उस बिट को इरेस्पेक्टिव ऑफ़ क्या था? सेट कर दिए। ज़र कर दिए तो आप उस बिट को टॉगल कर दिए बिना बाकी के नंबर को छुए हुए बिना बाकी के नंबर को छुए हुए एक दो स्टेप",
+      "source": "caption",
+      "english_text": "Dependent all these bit masking on what bit masking yes bit masking you can do very powerful things with bit masking why are these things possible because these operators are made in this way. These operators are made in the same manner. By adding a bit mass you can find out whether it is set or not. And if we did it with Bitmass then what was the objective of that bit? Set it. If you do so, you can toggle that bit without touching the rest of the numbers and do one or two steps without touching the rest of the numbers."
+    },
+    {
+      "start_time": 2765.44,
+      "end_time": 2792.15,
+      "text": "में। ओके? एक और क्वेश्चन आता है। अनसेट अनसेट द थर्ड बिट। अनसेट द थर्ड बिट। अब सेट द थर्ड बिट था। अनसेट द थर्ड बिट। क्या होता है अनसेट द थर्ड बिट? सिक्स है। 0 1 1 0 पोजीशनिंग लिख लीजिए। 0 1 2 3 सेट द थर्ड बिट सॉरी अनसेट द थर्ड बिट मतलब इस वाले को अनसेट कर दो। इस वाले को जीरो बना दो। इस वाले को जीरो बना दो।",
+      "source": "caption",
+      "english_text": "In. Ok? Another question comes. Unset Unset the third bit. Unset the third bit. Now set was the third bit. Unset the third bit. What is unset the third bit? It's six. 0 1 1 0 Write down the positioning. 0 1 2 3 Set the third bit Sorry unset the third bit means unset this one. Make this one zero. Make this one zero."
+    },
+    {
+      "start_time": 2792.16,
+      "end_time": 2826.47,
+      "text": "सेकंड बिट देख लीजिए समझने के लिए। ये तो ऑलरेडी ज़ीरो है। सेकंड बिट देख लीजिए। मतलब सेकंड बिट वन है। उसको ज़ीरो बना दो। मतलब वो सेकंड बिट कुछ भी हो उसको ज़ीरो करना है। सेट का जस्ट ऑपोजिट क्या करेंगे? देखिए। सबसे पहले बिट मास्क बनाएंगे। सबसे पहले बिट मास्क बनाएंगे। क्या क्या बनेगा? सेकंड बिट का बिट मास्क वन लेफ्ट शिफ्ट टू। तो ये दिखेगा ऐसा। ऐसा ही दिखेगा। इसको क्या करिए ना? नॉट कर दीजिए। इसको उल्टा कर दीजिए। इस पे नॉट लगा दीजिए। 1 0 1 1 ये लिख दीजिए। यहां 1 0 1 1 अभी इसमें क्या कर दीजिए? एंड कर दीजिए। अभी इसमें",
+      "source": "caption",
+      "english_text": "Watch the second bit to understand. This is already zero. Look at the second bit. Meaning second bit is one. Make it zero. Meaning, whatever that second bit is, it has to be zeroed out. What will you do just opposite the set? See. First of all we will create a bit mask. First of all we will create a bit mask. What will happen? Bit mask of second bit one left shift two. So it will look like this. It will look like this. What to do with this? Notify it. Turn it upside down. Put a knot on it. 1 0 1 1 Write this. Here 1 0 1 1 What to do with it now? End it. now in this"
+    },
+    {
+      "start_time": 2826.48,
+      "end_time": 2859.91,
+      "text": "एंड कर दीजिए। देखिए 0 एंड 1 0 1 एंड 1 1 0 एंड 1 0 1 एंड 0 देखिए। क्या ये जीरो सेम रह गया? बिल्कुल। क्या ये वन सेम रह गया? क्या ये जीरो सेम रह गया? बिल्कुल। क्या ये बिट अनसेट हो गया? बिल्कुल अनसेट हो गया। तो इसमें क्या किए? अनसेट के लिए बिट मास्क बनाए। नॉट ऑफ बिटमास्क बनाए एंड कर दिए। अनसेट हो गया। तो आप लोग चार तरीके के ट्रिक सीख चुके हैं। कौन से चार तरीके की ट्रिक? पहला चेक करो सेट है कि",
+      "source": "caption",
+      "english_text": "End it. See 0 and 1 0 1 and 1 1 0 and 1 0 1 and 0 See. Is this zero bean left? Absolutely. Is this one bean left? Is this zero bean left? Absolutely. Is this bit unset? Completely unset. So what did you do in this? Create bit mask for unset. Not off bitmask made and done. Unset. So you guys have learned four types of tricks. Which four types of tricks? First check that it is set"
+    },
+    {
+      "start_time": 2859.92,
+      "end_time": 2892.95,
+      "text": "नहीं? चेक करो सेट है कि नहीं? क्या होता था? बिट मास्क एंड अगर रिजल्ट ज़ीरो अनसेट रिजल्ट वन सेट दूसरा सेट करो आईएथ बिट को बिट मास्क बनाओ और कर दो हो जाएगा तीसरा अनसेट करो बिट मास्क बनाओ नॉट ऑफ बिट मास्क ले लो एंड कर दो अब अनसेट हो जाएगा चौथा टॉगल कर दो किसी आईथ बिट को बिटमास्क बनाओ ज़र कर दो अपने आप वो टॉगल हो जाएगा तो ये चार ऑपरेशन ये चार अपने आप में क्वेश्चन बन सकता है लेकिन ये चारों क्या है ट्रिक्स है ये चलो छोटी-छोटी छोटी-छोटी",
+      "source": "caption",
+      "english_text": "no? Check whether it is set or not? What used to happen? Bit mask end if result zero unset result one set second set ith bit make bit mask and done third unset make bit mask not off take bit mask and done now fourth will be unset toggle any ith bit make bitmask then do it automatically it will get toggled then these four operations, these four can become questions in themselves but what are these four tricks, let's go into small ones."
+    },
+    {
+      "start_time": 2892.96,
+      "end_time": 2927.19,
+      "text": "ट्रिक्स है। ओके? और ट्रिक्स देखिए। और ट्रिक्स देखिए। अभी खत्म नहीं हुआ है। बहुत बड़ा टॉपिक है। ठीक है? और ट्रिक्स देखिए। चेक करो। चेक करो कि n ऑड है कि इवन है। n ऑड है कि इवन है? ये आपका क्वेश्चन है। n ऑड है कि इवन है। अब ये करना आपको आता है। n मॉड्यूलस 2 = 1 है तो ये ऑड है जी। और n मॉड्यूलस 2 = 0 है तो ये इवन है जी। लेकिन बिट मास्क से सॉल्व करना है। एक बात नोटिस कीजिए। हम एक काम करते हैं। 0 1 2 3 4 5 6 7 ये डेसिमल के",
+      "source": "caption",
+      "english_text": "There are tricks. Ok? See more tricks. See more tricks. It's not over yet. It is a very big topic. Ok? See more tricks. Check. Check whether n is odd or even. n is it odd or even? This is your question. n is the odds that is even. Now you know how to do this. If n modulus 2 = 1 then it is odd. And n modulus is 2 = 0 so it is even. But it has to be solved with bit mask. Notice one thing. We do one thing. 0 1 2 3 4 5 6 7 These are decimal"
+    },
+    {
+      "start_time": 2927.2,
+      "end_time": 2961.51,
+      "text": "नंबर है। ये डेसिमल का नंबर है। यस। इन सबका हम बाइनरी रिप्रेजेंटेशन लिखते हैं। तीन बिट में लिखते हैं। देखिए ज़ीरो होगा 0 0 1 0 0 1 0 0 1 1 0 0 1 0 1 0 ये क्या होगा? 4 और टू ना ठीक है 1 1 0 सिक्स होगा 1 1 0 1 1 ठीक है लिख दिया सबका बाइनरी आप भी लिख सकते हैं बहुत तेजी से एक पैटर्न नोटिस कीजिए ऑड नंबर्स कौन-कौन है इसमें से वन ऑड है थ्री ऑड है फाइव ऑड है सेवन",
+      "source": "caption",
+      "english_text": "The number is. This is a decimal number. Yes. We write binary representation of all this. Writes in three bits. See zero will be 0 0 1 0 0 1 0 0 1 1 0 0 1 0 1 0 What will this be? 4 and two are ok. 1 1 0 will be six. 1 1 0 1 1 is ok. I have written everyone's binary. You can also write very fast. Notice a pattern. Which are the odd numbers? Out of these, one is odd, three is odd, five is odd, seven is odd."
+    },
+    {
+      "start_time": 2961.52,
+      "end_time": 2990.549,
+      "text": "ऑड है सबका लास्ट बिट देखिए या सबका जीरोथ बिट देखिए ऑड वाले का बिट हमेशा वन होगा देखिए इवन वाले नंबर्स का हमेशा जीरोथ बिट जीरो होगा इवन वाले हमेशा जीरोथ बिट जीरो होगा देखिए देखिए ज़ीरो का ज़ीरो है। टू का ज़ीरो है। फोर का ज़ीरो है। सिक्स का ज़ीरो है। मतलब एक पैटर्न दिखाई दे रहा है। इवन नंबर्स में जीरोथ बिट अनसेट है।",
+      "source": "caption",
+      "english_text": "See the last bit of all is odd or see the zeroth bit of all, see the bit of the odd number will always be one. See, the even number will always have the zeroth bit. See, the even number will always have the zeroth bit. See, the bit of the zero will always be zero. Two is zero. Four is zero. Six is ​​zero. Meaning a pattern is visible. The zeroth bit is unset in even numbers."
+    },
+    {
+      "start_time": 2990.559,
+      "end_time": 3022.15,
+      "text": "ऑड नंबर्स में ज़ीरोथ बिट सेट है। बस चेक कर लीजिए। क्या चेक करना है आपको? आपको चेक करना है कि n इज़ इवन या ऑड? कौन सा बिट पे इंटरेस्टेड हैं आप? ज़ीरोथ बिट पे। आई एन टी बिट मास्क इक्वल टू वन लेफ्ट शिफ्ट 0 लेफ्ट शिफ्ट 0 मतलब ये वन ही रह जाएगा लेकिन ठीक है कोई बात नहीं कैसे चेक करते थे कोई बिट सेट है कि नहीं इफ n एंड बिटमास इक्वल इक्वल टू ज़ीरो इसका मतलब कि ये अनसेट है इसका मतलब कि ये अनसेट है",
+      "source": "caption",
+      "english_text": "Odd numbers have the zeroth bit set. Just check. What do you need to check? You have to check whether n is even or odd? Which bit are you interested in? At zeroth bit. i n t bit mask equal to one left shift 0 left shift 0 means it will remain one but ok no problem how to check if any bit is set or not if n and bit mass equal to zero means it is unset it means it is unset"
+    },
+    {
+      "start_time": 3022.16,
+      "end_time": 3054.23,
+      "text": "प्रिंट इवन एल्स प्रिंट ऑड यही होता था ना भाई कोई बिट चेक सेट है कि नहीं कैसे चेक करते थे बिट मास्क बना के बना लिया बिटमास n एंड बिटमास का अगर ज़ीरो आता था तो उसका मतलब था कि वो अनसेट था। सेट नहीं था। अगर सेट नहीं है तो वो किस तरीके का नंबर होगा? इवन नंबर होगा। प्रिंट कर दी इवन। सेट है तो किस तरीके का नंबर होगा? ऑड नंबर होगा तो प्रिंट कर दिए ऑड। तो ये हुआ कुछ जनरल ट्रिक्स। ये उतने कॉम्प्लेक्स नहीं है लेकिन जानना जरूरी है। अगर आप इसको नहीं जानते तो आपको बाद में आके दिक्कत होती।",
+      "source": "caption",
+      "english_text": "Print Even Else Print Odd This used to happen, brother, how did we check whether a bit is set or not? How did we check by making a bit mask? If the bit mass was n and the bit mass was zero, then it meant that it was unset. Was not set. If not set then what kind of number will it be? There will be an even number. Printed it even. If it is set then what kind of number will it be? If there is an odd number then print the odd number. So these are some general tricks. This is not that complex but it is important to know. If you did not know this, you would face problems later."
+    },
+    {
+      "start_time": 3054.24,
+      "end_time": 3085.43,
+      "text": "लास्ट ट्रिक और सबसे इंपॉर्टेंट ट्रिक क्या है? n एंड n - 1 इसका क्या मतलब होता है? देखिए n = 14 पकड़ लो। चार बिट में 14 पकड़ लो। 14 का क्या होता है? 1 1 0 करके देख लीजिए। 14 आएगा। ठीक बात है। अच्छी बात है। वेरी गुड। अब क्या करते हैं हम लोग? n तो 14 हो गया। 14 को ना n - 1 क्या हो गया? 13। इसको इसके साथ एंड करके देखिए। 13 क्या बनेगा? 8 4 11 और 11 के बाद दो डालेंगे तो आठ नहीं 8 4 12 हो",
+      "source": "caption",
+      "english_text": "What is the last trick and the most important trick? What does n and n - 1 mean? See, grab n = 14. Catch 14 in four bits. What happens to 14? Try doing 1 1 0. 14 will come. That's right. It's a good thing. very good. What do we do now? n then becomes 14. What happened to n - 1 on 14th? 13. Try ending it with this. 13 What will become? If you put two after 8 4 11 and 11, it will become 8 4 12, not eight."
+    },
+    {
+      "start_time": 3085.44,
+      "end_time": 3119.91,
+      "text": "जाएगा। 0 और वन। ये क्या है? 14 है। ये है 13 है। ठीक है? देखिए क्या होता है। एंड करिए इसको। 0 और वन को ऐड करिए। 0 1 1 क्या बन गया? 14 बन गया आपका। ये 1 1 0 0 मतलब 12 बन गया। हुआ क्या इसमें से? 14 का राइट मोस्ट सेट बिट गायब हो गया। देखिए 14 का राइट मोस्ट सेट बिट गायब हो गया। 14 का राइट मोस्ट सेट बिट गायब हो गया। और ये 12 बन गया। 12 को 12 के साथ",
+      "source": "caption",
+      "english_text": "Will go. 0 and one. What is this? Is 14. This is 13. Ok? See what happens. End this. Add 0 and one. 0 1 1 What happened? 14 is done. This becomes 1 1 0 0 meaning 12. What happened from this? The right most set bit of 14 is missing. See the right most set bit of 14 is missing. The right most set bit of 14 is missing. And it became 12. 12 with 12"
+    },
+    {
+      "start_time": 3119.92,
+      "end_time": 3152.549,
+      "text": "सेम काम करिए। 12 के साथ सेम काम कीजिए। 1 1 0 0 ये है 12। 11 के साथ इसको करने की कोशिश कीजिए। 1 0 1 1 ये है 11। एंड करिए। देखिए क्या होता है। 0 0 1 देखिए 12 का राइट मोस्ट सेट बिट गायब हो गया। बाकी नंबर सेम रह गया। तो तो इस ट्रिक को क्या बोला जाता है? कुछ कर्निंगम कर्निंगम उसका हम प्रोनंसिएशन भूल गए। कर्निंगम कुछ बोला जाता है। जब आप",
+      "source": "caption",
+      "english_text": "Do the same work. Do the same thing with 12. 1 1 0 0 This is 12. Try doing that with 11. 1 0 1 1 This is 11. End it. See what happens. 0 0 1 See the right most set bit of 12 is missing. The remaining numbers remained the same. So what is this trick called? Some Corningham Corningham, we forgot its pronunciation. Corningham is spoken somewhat. when you"
+    },
+    {
+      "start_time": 3152.559,
+      "end_time": 3178.39,
+      "text": "n को n एंड n - 1 करते हैं ना तो राइट मोस्ट सेट बिट राइट मोस्ट सेट बिट गायब हो जाता है। क्या हो जाता है? गायब हो जाता है। वो जीरो बन जाता है। अगर आप ये करते जाते हैं लगातार तो एक-एक करके ना सेट बिट्स कम होते जाते हैं। एक-एक बिट करके सेट बिट्स कम होते जाते हैं राइट से।",
+      "source": "caption",
+      "english_text": "When n is converted to n and n - 1 then the right most set bit disappears. What happens? Disappears. He becomes zero. If you do this continuously, the unset bits will be reduced one by one. The set bits are reduced one by one by writing."
+    },
+    {
+      "start_time": 3178.4,
+      "end_time": 3210.71,
+      "text": "देखिए 12 को 11 से किया तो आठ बन गया। ये आठ है। आठ को एक और बार करके देखिए। देखिए 1 0 0 ये आठ है ना? इसको n - 1 से करिए। 0 1 1 ये सात होता है। करिए। एंड देखिए क्या होता है। पूरा गायब हो गया। एक-एक करके सारे सेट बिट गायब हो गए। इसका भी राइट मोस्ट सेट बिट था। गायब हो गया। तो कर्णहम ट्रिक्स है ना आप किसी भी नंबर n मान लीजिए n में n में तीन सेट बिट है। तीन सेट बिट है। एक-एक करके अगर आपको सेट बिट को हटाना है या गिनना है गिनना भी है तो",
+      "source": "caption",
+      "english_text": "See, if you divide 12 by 11, it becomes eight. This is eight. Try eight one more time. Look, 1 0 0, this is eight, right? Do this from n - 1. 0 1 1 This is seven. Do. And see what happens. Disappeared completely. One by one all the set bits disappeared. It also had its right most set bit. Disappeared. So the Karnham trick is you take any number n. Suppose n has three sets of bits. There are three set bits. If you need to remove or count the set bits one by one, you can also count them."
+    },
+    {
+      "start_time": 3210.72,
+      "end_time": 3240.309,
+      "text": "आप ये करते रहिए n एंड n - 1, n - 1 जब तक कि वो ज़ीरो ना हो जाए। इससे आपको क्या पता चलेगा? कितने बिट सेट हैं उसमें और एक-एक करके सेट वाले बिट ना हटते रहेंगे राइट से। ये ट्रिक होता है। क्या ट्रिक होता है? अगेन n दिया हुआ है ना? आप क्या करते रहिए? n = n एंड n - 1 ये करते रहिए जब तक कि n &gt; 0 हो। एक-एक करके वन वाले बिट गायब होते रहेंगे राइट से और आपका नंबर धीरे धीरे धीरे धीरे करके ज़ीरो होता रहेगा।",
+      "source": "caption",
+      "english_text": "You keep doing this n and n - 1, n - 1 until it becomes zero. What will this tell you? How many bits are set in it and the bits set one by one will keep getting removed from the right. This is a trick. What is the trick? Again n is given right? What do you keep doing? n = n and n - 1. Keep doing this until n > 0. One by one, the one bits will keep disappearing from the right side and your number will gradually reduce to zero."
+    },
+    {
+      "start_time": 3240.319,
+      "end_time": 3271.589,
+      "text": "इसको एक क्या बोलते हैं? कर्णहम ट्रिक। अब आप तैयार हैं क्वेश्चन सॉल्व करने के लिए। तो सबसे पहला क्वेश्चन क्या होता है? सबसे पहला क्वेश्चन हम जरा खोल लें। अ सबसे पहला क्वेश्चन कहां गया? अ काउंट सेट बिट्स यस काउंट सेट बिट्स लीड कोड 338 क्या बोलता है आपको एक नंबर n दिया हुआ है ये क्या है जी अरे ये क्या आ गया हां नंबर ऑफ़ सॉरी लीड कोड 338 नहीं है जी मेरी गलती लीड कोड 191",
+      "source": "caption",
+      "english_text": "What is this one called? Karnham Trick. Now you are ready to solve the question. So what is the first question? Let us first open the question. A Where did the first question go? a count set bits yes count set bits lead code 338 what does it say you have been given a number n what is this yes oh what has come yes number of sorry lead code is not 338 yes my mistake lead code 191"
+    },
+    {
+      "start_time": 3271.599,
+      "end_time": 3306.069,
+      "text": "यस लीड कोड 191 आपको एक नंबर n दिया है काउंट नंबर ऑफ सेट बिट्स काउंट नंबर ऑफ़ सेट बिट्स मतलब n = 11 दिया हुआ है। 11 क्या होता है? 1 0 1 1 इसका आंसर कितना आना चाहिए? तीन आना चाहिए। इसको आप चाहे तो बिना इसके ट्रिक के भी कर सकते हैं। कैसे कर सकते हैं? देखिए कैसे कर सकते हैं? देखिए आप ना एक काम कर सकते हैं कि आप एक ऐसा कर लीजिए कि इंट रेस = 0 व्हाइल",
+      "source": "caption",
+      "english_text": "Yes Lead Code 191 You are given a number n Count Number of Set Bits Count Number of Set Bits means n = 11 is given. 11 What happens? 1 0 1 1 What should be its answer? There should be three. If you want, you can do it even without this trick. How can do? See how we can do it? Look, one thing you can do is make it so that int res = 0 while"
+    },
+    {
+      "start_time": 3306.079,
+      "end_time": 3340.87,
+      "text": "n &gt; 0 ओके क्या करेंगे हम लोग? देखिए इंट बिट = n / 2 इफ बिट इक्व 1 रेस्ट + n = n / 2 ये क्या कर रहे हैं हम ये तो हम नहीं सिखाए थे देखिए क्या कर रहे हैं 11 है ना 11 है 11 को ना ये जो आप लोग स्कूल में पढ़े थे अब काम आएगा टू से डिवाइड कीजिए आंसर कितना आता है फाइव रिमाइंडर कितना बचता है वन इसको काउंट कर लीजिए इसको काउंट कर लीजिए रखिए इसको दोबारा करिए टू से डिवाइड फाइव को",
+      "source": "caption",
+      "english_text": "n > 0 OK what will we do? See int bit = n / 2 if bit equ 1 rest + n = n / 2 What are we doing, we did not teach this, see what are we doing, 11 isn't 11, 11 is 11, this is what you all learned in school, now it will be useful, divide by two, how much is the answer, five, reminder, how much is left, one, count it, count it, keep it, do it again, divide by two. to five"
+    },
+    {
+      "start_time": 3340.88,
+      "end_time": 3373.19,
+      "text": "कितना आएगा? टू। रिमाइंडर कितना बचेगा? वन। रखिए। टू को दोबारा टू से डिवाइड कीजिए। कितना आएगा? वन। रिमाइंडर कितना बचेगा? वन। जब यहां वन आता था तो रुक जाते थे। ये जो नंबर है ना 1 0 1 1 यही 11 का रिप्रेजेंटेशन होता है। यही काम जो आप लोग को स्कूल में मास्टर जी सिखाए थे। यहां पे हम लोग कर रहे हैं। क्या कर रहे हैं? n को टू से डिवाइड कर रहे हैं। रिमाइंडर अगर वन आता है, रिमाइंडर अगर वन आता है, उसको गिन लेते हैं। वो सेट बिट है। जीरो आता है। कुछ नहीं करते हैं। और इसको टू से डिवाइड कर लेते हैं। कब तक ये काम करते",
+      "source": "caption",
+      "english_text": "How much will it cost? To. How much reminder will be left? Forest. Keep it. Divide two by two again. How much will it cost? Forest. How much reminder will be left? Forest. When the forest came here, we used to stop. This number is 1 0 1 1, this is the representation of 11. This is the work that Master Ji taught you in school. Here we are doing it. What are you doing? Dividing n by two. If one reminder comes, if one reminder comes, let's count it. That's the set bit. Zero comes. Don't do anything. And divide it by two. how long will they do this work"
+    },
+    {
+      "start_time": 3373.2,
+      "end_time": 3405.829,
+      "text": "हैं? जब तक कि n 0 ना बन जाए। जब तक कि n ज़ीरो ना बन जाए। लेकिन आप इसको कर्णघम ट्रिक कैसे भी कर सकते हैं। अभी जो हम सिखाए थे। क्या ट्रिक सिखाए थे? अगर आप n एंड n - 1 बार-बार बार बार-बार करते रहते हैं ना। एक-एक करके सेट बिट गायब होता रहता है। तो इसको हम लोग क्या कर सकते हैं? इंट रेस = 0 व्हाइल n &gt; 0 क्या करेंगे? क्या करेंगे? रेस प्लस प्लस और n = n एंड n - 1",
+      "source": "caption",
+      "english_text": "are? Until n becomes 0. Until n becomes zero. But you can also do this Karngham trick. What we just taught. What tricks were taught? If you keep doing n and n - 1 again and again and again and again, right. The set bits keep disappearing one by one. So what can we do about this? int res = 0 while n > 0 what to do? What to do? res plus plus and n = n and n - 1"
+    },
+    {
+      "start_time": 3405.839,
+      "end_time": 3435.19,
+      "text": "ये लीजिए खत्म हो गया काम। क्या होगा? n रहेगा सबसे पहले 11। n रहेगा सबसे पहले 11। आप क्या करते रहेंगे बार-बार? 1 0 1 1 सबसे पहले इस बिट को ज़ीरो करेगा कर्णहम ट्रिक। यह बन जाएगा आपका ज़ीरो। एक बार काउंट हो गया। एक सेट बिट था। दूसरा सेट बिट बनेगा ज़ीरो एक और बार। तीसरा सेट बिट बनेगा एक और बार। आंसर क्या आएगा? तीन। तो ये क्या बन गया? नंबर ऑफ़ वन बिट्स ऐसे आप काउंट कर सकते हैं। ऊपर वाला मेथड से भी कर सकते हैं। नीचे वाले। ऊपर वाला मेथड।",
+      "source": "caption",
+      "english_text": "Here the work is finished. What will happen? The first n will be 11. The first n will be 11. What will you keep doing again and again? 1 0 1 1 Karnham trick will first zero this bit. This will become your zero. Once counted. There was a set bit. The second set bit will become zero one more time. The third set bit will be made one more time. What will be the answer? Three. So what has become of this? You can count the number of one bits like this. You can also do it with the above method. The ones below. The above method."
+    },
+    {
+      "start_time": 3435.2,
+      "end_time": 3466.23,
+      "text": "आप जो स्कूल में पढ़े थे उसका एक कोड का रिप्रेजेंटेशन है। ये क्या यूज़ करता है? कॉर्निंग ट्रिक यूज़ करता है। चलिए आगे बढ़िए। आइए। अगला सवाल लीड कोड 136 सिंगल नंबर। अब देखिए सिंगल नंबर क्या बोलता है कि आपको एक एरे मिला हुआ है। आपको एक एरे मिला हुआ है। अच्छा एव्री एलिमेंट एव्री एलिमेंट इन दैट एरे मतलब एव्री नंबर इन दैट एरे अपीयरर्स ट्वाइस मतलब हर एक एलिमेंट रिपीटेड है। एक्सेप्ट फॉर वन एक्सेप्ट फॉर वन। यस एक्सेप्ट फॉर वन। मतलब कि आपका एरे",
+      "source": "caption",
+      "english_text": "It is a code representation of what you studied in school. What is it used for? Corning uses tricks. Let's move ahead. Come. Next question lead code 136 single number. Now see what the single number says that you have got an array. You've got an array. Well every element in that array means every number in that array appears twice means every element is repeated. Accept for one. Accept for one. Yes except for one. meaning that your array"
+    },
+    {
+      "start_time": 3466.24,
+      "end_time": 3500.23,
+      "text": "कुछ ऐसा दिखता है। 4 1 2 1 2 इस पे देखिए कौन से एलिमेंट रिपीटेड है? देखिए वन दो बार है। टू दो बार है। चार एक बार है। चार एक बार है। आपको इस चार को खोज के निकालना है क्योंकि ये ऑड वन आउट है। कभी भी इस तरीके का क्वेश्चन मिले ना मिसिंग नंबर ये फलाना मिसिंग हो गया, रिपीटेड हो गया, डुप्लीकेट हो गया। हमेशा ज़र यूज़ होगा। हमेशा ज़र यूज़ होगा। क्योंकि ज़र क्या बोलता है? ज़र ना बोलता था कि अगर तुम सेम ज़र सेम करोगे हम इसको जीरो बना देंगे। हम इसको खा",
+      "source": "caption",
+      "english_text": "Looks something like this. 4 1 2 1 2 See which elements are repeated on this? See, the forest is there twice. Two is twice. Four is once. Four is once. You have to find this four because it is the odd one out. If you ever get a question like this, missing number, this or that number has become missing, repeated, duplicated. Will always be used. Will always be used. Because what does he say? Zar Naa used to say that if you do the same thing again and again, we will reduce it to zero. we eat this"
+    },
+    {
+      "start_time": 3500.24,
+      "end_time": 3526.15,
+      "text": "जाएंगे। हम इसको खा जाएंगे। ठीक है? अगर नंबर कोई डिफरेंट आया डिफरेंट आया तो हम इसको छोड़ देंगे। तो हम इसको कुछ ना कुछ तुमको आंसर प्रदान करेंगे। यही बोलता था ना भाई कि अगर ज़ीरोज़ और ज़ीरो करोगे तो ज़ीरो आएगा। वंस और वन करोगे ज़ीरो आएगा। ज़ीरोज़ और वन करोगे तो आंसर वन आएगा। और वंस और ज़ीरो करोगे तो आंसर वन आएगा। ओके? मतलब कि अगर तुम अगर तुम मान लो टू और टू करोगे ना आंसर हमेशा ज़ीरो आने वाला है।",
+      "source": "caption",
+      "english_text": "Will go. We will eat it. Ok? If the number is different then we will leave it. So we will provide you some answer to this. Brother, I used to say that if you do zeros and zeros, you will get zeros. If you do once and one, you will get zero. If you do zeros and ones, the answer will be one. And if you do one and zero, the answer will be one. Ok? Meaning that if you assume that you will do two and two, the answer will always be zero."
+    },
+    {
+      "start_time": 3526.16,
+      "end_time": 3553.109,
+      "text": "ओके? अगर तुम टूज़ और फोर करोगे हमेशा कोई नॉन ज़ीरो आंसर आएगा। क्योंकि टू और फोर कहीं ना कहीं तो डिफ़र करेगा ना बिट में। अगर टू और फोर का हर एक बिट सेम रहता तो टू टू फोर बन जाता। टू और फोर कहीं ना कहीं तो डिफ़र करेगा। तो आंसर हमेशा नॉन ज़ीरो आएगा। कहने का क्या मतलब है कि ज़र आपको बोलता है ना कि चिंता मत करो। यहां पे सारे नंबर के पास अपना-अपना दोस्त है। वन के पास एक और वन है। टू के पास अपना एक और टू है। चार बेचारा अकेला है।",
+      "source": "caption",
+      "english_text": "ok? If you do twos and fours there will always be a non-zero answer. Because two and four will differ somewhere or the other. If every bit of two and four remained the same, then two would become four. Two and four will differ somewhere. So the answer will always be non zero. What does it mean to say that God tells you not to worry? Every number here has their own friend. There is another forest near the forest. Two has another Two of its own. Poor Char is alone."
+    },
+    {
+      "start_time": 3553.119,
+      "end_time": 3585.829,
+      "text": "ज़र क्या बोलता है? एक काम करो सबको ज़ौर कर दो। सबको ज़र कर दो। इससे होगा क्या? देखिए आप ये करने लगेंगे। फोर ज़र वन ज़र टू ज़र वन ज़र टू। क्या होगा? वन अपने वन को खा जाएगा। वन अपने वन को खा के ज़ीरो बन जाएगा। टू अपने टू को खा जाएगा। टू अपने टू को खा जाएगा। ज़ीरो कर देगा। बचेगा क्या? फोर। इसका आंसर क्या आएगा? ज़ीरो। जब आप किसी भी नंबर को ज़ीरो से करते हैं, तो आंसर ए आता है। करके देख लीजिए। फोर क्या",
+      "source": "caption",
+      "english_text": "What are you saying? Do one thing and force everyone else. Please force everyone. What will happen from this? See, you will start doing this. Four zer one zer two zer one zer two. What will happen? The forest will eat its own forest. The forest will become zero by eating its own forest. Two will eat its own two. Two will eat its own two. Will reduce it to zero. What will be left? Four. What will be the answer to this? Zero. When you divide any number by zero, the answer comes 'A'. Try it and see. what four"
+    },
+    {
+      "start_time": 3585.839,
+      "end_time": 3618.789,
+      "text": "होता है? 1 0 0 करिए ज़ीरो से ज़ॉ। देखिए क्या आएगा? 0 1 क्या आंसर आया? फोर। आप किसी भी नंबर को ज़ीरो से ज़ॉर करेंगे तो आंसर सेम ही नंबर आएगा। नंबर बदलेगा नहीं। और सेम नंबर एक दूसरे को खा जाएंगे। तो क्या होगा? अगर हम पूरे एरे का ज़ौर कर दें। अगर हम पूरे एरे का ज़ौर कर दें तो सेम वाले तो एक दूसरे को खा के एक बड़ा सा जीरो बन जाएगा। और जो नंबर बच जाएगा जिसका कोई दोस्त नहीं है। जो ऑड वन आउट नंबर है वो x और ज़ीरो बनके आंसर क्या आ जाएगा? x",
+      "source": "caption",
+      "english_text": "Does it happen? 1 0 0 Do zero to zaw. See what will come? 0 1 What answer came? Four. If you multiply any number by zero, the answer will be the same number. The number will not change. And the same numbers will eat each other. So what will happen? If we assert the entire array. If we force the entire array, the ones with one will eat each other and become a big zero. And the number that will be left is the one that has no friends. What will be the answer if the odd one out number becomes x and zero? x"
+    },
+    {
+      "start_time": 3618.799,
+      "end_time": 3652.95,
+      "text": "इसी को रिटर्न कर दीजिए। इसी को रिटर्न कर दीजिए। कैसे? देखिए आई एन टी x =t x = 0 रहने दीजिए। फॉर आई एनt i = 0 i &lt; &lt; a डॉट साइज और i++ x = x और एरे ऑफ़ i और रिटर्न x खत्म हो गई बात खत्म हो गई बात वेरी गुड तो ये दो क्वेश्चन हम करा दिए हैं। अ तीन क्वेश्चन और बचा है। अब मेरा उतना मन नहीं",
+      "source": "caption",
+      "english_text": "Please return this. Please return this. How? See let i n t x =t x = 0. For i nt i = 0 i < < a dot size and i++ x = x and array of i and return x, the matter is over, the matter is over, very good, so we have done these two questions. A. Three more questions are left. I don't feel like it anymore"
+    },
+    {
+      "start_time": 3652.96,
+      "end_time": 3666.0,
+      "text": "कर रहा है पढ़ाने का। बहुत लंबा हो गया लेक्चर। हमको लगता है आप लोग के लिए भी। तो तीन क्वेश्चन अगले लेक्चर में करेंगे। लेकिन ये तीन बिट मैनपुलेशन का बेसिक्स हो गया, एडवांस कहिए कुछ भी तो आप लोग काफी हद तक सीख चुके हैं।",
+      "source": "caption",
+      "english_text": "Is doing it to teach. The lecture has been very long. We think for you guys too. So we will ask three questions in the next lecture. But these three bits are the basics of manipulation, call it advanced, you guys have learned it to a great extent."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

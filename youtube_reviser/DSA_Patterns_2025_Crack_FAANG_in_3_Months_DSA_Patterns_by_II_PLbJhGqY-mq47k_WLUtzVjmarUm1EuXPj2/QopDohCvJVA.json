@@ -1,0 +1,289 @@
+{
+  "video_id": "QopDohCvJVA",
+  "video_title": "LCA in Binary Search Tree – Don't Miss This Trick! | Trees Ep 08 | DSA Series",
+  "video_number": 86,
+  "chunks": [
+    {
+      "start_time": 1.75,
+      "end_time": 36.389,
+      "text": "हेलो भाई कैसे हैं सारे? तो हम आज ही आए हैं पटना से। अभी जस्ट आए हैं फ्लाइट से। तो अभी हम वीडियो बनाने बैठ गए हैं। वीडियो आ जाएगी आज शाम में। हम बोले थे कि संडे को आएगा। दो दिन का गैप हो गया क्योंकि हम कहीं बाहर गए हुए थे और कल से हम घर जा रहे हैं तो कल से घर मतलब बोर जा रहे हैं। तो कल से वीडियोस रेगुलर और लंबी आएंगे। अभी मालूम है हमको वीडियो थोड़ा छोटा-छोटा आ रहा है क्योंकि मेरे पास इंटरनेट नहीं है उतना। ठीक है? आप लोग 30 मिनट का वीडियो जब हम बनाते हैं ना तो वो 5 6 GB का बन जाता है। उतना इंटरनेट नहीं है मेरे पास। मेरे पास जो डोंगल है ना वो भी 4GB ही का है। तो उतना ज्यादा इंटरनेट मेरे पास अपलोड का नहीं उतना स्पीड भी नहीं है। अगर हम अपलोड करेंगे ना तो हमको 2 घंटा अपलोड करने में लगेगा। इसीलिए नहीं आ रहा था। वैसे उसका कोई है नहीं। मतलब",
+      "source": "caption",
+      "english_text": "Hello brother, how are you all? So we have come from Patna today itself. Just came from the flight. So now we have sat down to make the video. The video will come this evening. We had said that he would come on Sunday. There was a gap of two days because we had gone somewhere and from yesterday we are going home, hence from tomorrow we are going home i.e. bored. So from tomorrow the videos will be regular and longer. Right now we know that the video is coming a bit short because I don't have that much internet. Ok? When you guys make a 30 minute video, it becomes 5-6 GB. I don't have that much internet. The dongle I have is also of 4GB only. So I don't have that much internet, I don't have that much upload speed. If we upload it, it will take us 2 hours to upload. That's why he was not coming. Well, he has no one. meaning"
+    },
+    {
+      "start_time": 36.399,
+      "end_time": 66.95,
+      "text": "ऐसा कुछ होना नहीं चाहिए कि वीडियो लंबा है इसलिए अच्छा है। नहीं छोटे-छोटे वीडियो बहुत अच्छे होते हैं। लंबा अगर हम एक घंटा बैठ के ही ही कर देंगे तो उसका कोई मतलब नहीं है ना। तो आज हम लोग देखने वाले हैं एलसीए इन बीएसटी। बहुत ध्यान से देखिएगा। अगर आप लोग एलसीए इन बाइनरी ट्री देख चुके हैं, बहुत जरूरी है कि ये भी देखिए क्योंकि वो वाला एप्रोच यहां काम नहीं आएगा। हम पहले ही बता देते हैं। जो लोग भी एलसीए इन बाइनरी ट्री देखे हैं ये देखना जरूरी है क्योंकि वो वाला एप्रोच यहां पे काम नहीं आएगा। हम भी जब पढ़ते थे तो हम भी बाइनरी ट्री का देख के बीएसटी को छोड़ दिए थे कि क्या है इसमें वही लगा देंगे।",
+      "source": "caption",
+      "english_text": "It should not be that the video is long so it is good. No, short videos are very good. If we do it long just by sitting for an hour, then there is no point in it, right? So today we are going to see LCA in BST. Will look very carefully. If you guys have seen LCA in Binary Tree, it is very important to see this also because that approach will not work here. We tell you in advance. For those who have seen LCA in binary trees, this is important to see because that approach will not work here. When we used to study, we also left BST after seeing the binary tree and thought that whatever is there, we will apply the same in it."
+    },
+    {
+      "start_time": 66.96,
+      "end_time": 97.83,
+      "text": "नहीं अलग-अलग क्वेश्चन है ना किसी कारण से है। वही लगा देते तो वही क्वेश्चन क्यों बनाता है? पगला थोड़ी है। तो देखिए और जो लोग एलसीए इन बाइनरी टेक ही नहीं देखे हैं उनपे बहुत-बहुत बधाई हम देंगे। लेकिन वो पहले देख के आइए फिर ये देखिएगा। चलिए शुरू करते हैं जल्दी। तो क्वेश्चन देखो क्वेश्चन तो सेम एलसीए का ही है कि आपको एलसीए इन बीएसटी निकालना है। बाइनरी ट्री नहीं बीएसटी। बाइनरी ट्री हम लोग सीख चुके हैं। वो वीडियो जो जो नहीं देखा है ना जो लोग पहली बार यहीं पे कूद गए हैं वो वीडियो देखिए। वो मेरी वन ऑफ द बेस्ट वीडियोस है। वो एक बार देख लीजिए। तो देखिए अगर तुम लोग चाहो ना तो एलसीए ऑफ़ बाइनरी ट्री भी यहां पे लगा सकते हो।",
+      "source": "caption",
+      "english_text": "No, these are separate questions, there is no reason for this. If you have applied the same then why does it raise questions? A little crazy. So see and we will congratulate those who have not seen LCA in Binary Tech. But let's see that first and then see this. Let's start quickly. So look at the question, the question is of the same LCA that you have to calculate LCA in BST. BST not binary tree. We have learned binary tree. Those who have not seen that video, those who have jumped here for the first time, watch that video. That is one of my best videos. See that once. So see, if you guys want, you can also apply LCA of Binary Tree here."
+    },
+    {
+      "start_time": 97.84,
+      "end_time": 131.51,
+      "text": "क्योंकि देखो अरे बीएसटी क्या होता है? बीएसटी बाइनरी ट्री होता है ना। बाइनरी ट्री विथ अ सर्च ऐसा होता है कि लेफ्ट में कम और राइट में ज्यादा जो भी है वो होता तो बाइनरी ट्री है। तो वो भी यहां पे लगाया जा सकता है। लेकिन इंटरव्यू में ना वो वाला नहीं माना जाएगा। अगर आप वो वाला एलसीए वाला यहां पे लगाइएगा ना तो वो नहीं मानेगा क्योंकि वो बोलेगा कि अरे एलसीए इन बाइनरी सर्च ही पूछे तो इसका बताओ ना वो तो ठीक है वो तो अच्छी बात है आता है लेकिन ये वाला बताओ तो वो नहीं माना जाएगा ठीक है अब इसमें देखिए इसमें कुछ भी करने से पहले ना सोचते हैं कि अब एलसीए का मतलब क्या होता है एलसीए का मतलब मतलब एलसीए जब हम लोग ड्राइंग बना के ऐसा देखते हैं ट्री में ये हम बीएसटी बनाए हुए हैं बाय द वे",
+      "source": "caption",
+      "english_text": "Because look what is BST? BST is a binary tree. Binary tree with a search is such that whatever is less on the left and more on the right, then it is a binary tree. So that can also be applied here. But that one will not be considered in the interview. If you put that LCA here, then he will not agree because he will say, hey, if LCA is asked in binary search, then tell me about it, that is fine, it is a good thing, but if you tell me about this one, then it will not be accepted, okay, now look at this, before doing anything in this, do not think now what is the meaning of LCA, what is the meaning of LCA, what does LCA mean, when we make a drawing and see like this in the tree, we have made BST by the way."
+    },
+    {
+      "start_time": 131.52,
+      "end_time": 164.15,
+      "text": "यह बाइनरी ट्री नॉर्मल नहीं है बीएसटी है देख सकते हो कि हर पेरेंट हर पेरेंट का लेफ्ट चाइल्ड उससे कम होगा और पेरेंट का राइट चाइल्ड उससे ज़्यादा होगा तो यह बीएसटी बना हुआ है अच्छा अच्छा अब आपको इसका एलसीएम निकालना है। आपको P और Q दो तरीके का नोट दिया हुआ है और आपको इसका लोएस्ट कॉमन एनसेेस्टर निकालना है। अच्छा तो लोएस्ट कॉमन एनसेेस्टर आइए ड्राइंग बना के देखते हैं कि होता क्या है। फॉर एग्जांपल अगर हम बोले कि फोर और एट का निकालना है तो लोएस्ट कॉमन एनसेेस्टर अगर आपको ड्राइंग में खोजना है ना ड्राइंग का बात कर रहे हैं कि वही ट्री का ड्राइंग में अगर आपको पता करना है ना कि कौन सा है तो क्या किया करिए ना फोर से रूट तक का एक",
+      "source": "caption",
+      "english_text": "This binary tree is not normal, it is BST, you can see that every parent, the left child of every parent will be less than it and the right child of the parent will be greater than it, so it is made BST. Okay, now you have to find its LCM. You are given two types of notes P and Q and you have to find its lowest common ancestor. Okay, so let's draw the lowest common ancestor and see what happens. For example, if we say that we have to find four and eight, then the lowest common ancestor, if we have to find it in the drawing, we are talking about the same tree in the drawing, if we have to find out which one, then what to do, right from four to the root."
+    },
+    {
+      "start_time": 164.16,
+      "end_time": 190.47,
+      "text": "पाथ बनाओ। किसका? फोर से रूट तक का एक पाथ बनाओ। तो आओ पाथ बनाते हैं। तो ये पाथ बना। यह पाथ बना। ठीक है? 8 से भी रूट तक का एक पाथ बनाओ। 8 से भी रूट का एक पाथ बनाओ। तो, यह पाथ बना। यह दोनों पाथ पहली बार जहां पे इंटरसेक्ट करेगा ना, वही एलसीए होता है। वही एलसीए होता है। देखो, फोर से पाथ बनाए तो ऐसे जाएगा। एट से पाथ बनाएंगे तो ऐसे जाएगा। कहां पे इंटरसेक्ट कर रहा है? यहां पे। एलसीए क्या हो गया इसका? फाइव। चेक करो। क्या फाइव एलसीए है?",
+      "source": "caption",
+      "english_text": "Make a path. Whose? Draw a path from four to the root. So let's make the path. So this path was formed. This path was made. Ok? Make a path from 8 to the root. Make a path to the root of 8 also. So, this path was created. The LCA occurs where these two paths intersect for the first time. That is LCA. Look, if you make a path with four then it will go like this. If you make a path using at, it will go like this. Where is it intersecting? On here. What happened to LCA? Five. Check. What is five LCA?"
+    },
+    {
+      "start_time": 190.48,
+      "end_time": 224.07,
+      "text": "हां फाइव ही एलसीए है क्योंकि फाइव के लेफ्ट में ये आ रहा है और फाइव के राइट में ये आ रहा है। तो लोएस्ट कॉमन एसेेस्टर फाइव ही है। फाइव को छोड़ के और कुछ नहीं है। थ्री नहीं हो सकता है। सेवन नहीं हो सकता है। क्यों? क्योंकि आप फोर और एट का देख रहे हैं। तो ड्राइंग में पहचानने का सबसे सिंपल ट्रिक यही हुआ ना कि फोर से यहां तक का बना है और एट से भी यहां तक का बना है। जहां पे दोनों मिला वही एलसीए हो गया। क्योंकि एलसीए का काम ही यही होता है ना। एलसीए मतलब होता है लोएस्ट कॉमन एनसेेस्टर। मतलब पी का भी एनसेेस्टर, क्यू का भी एनसेेस्टर और वो लोएस्ट कॉमन होना चाहिए। तो देखो अगर हम कोई भी ट्री लें एक ना एक पॉइंट आएगा ना जहां पे ये ट्री",
+      "source": "caption",
+      "english_text": "Yes, five is LCA because this is coming on the left of five and this is coming on the right of five. So the lowest common ancestor is five. There is nothing else except five. Can't be three. Cannot be consumed. Why? Because you are looking at fours and eights. So the simplest trick to recognize in the drawing is that even is made from four and even is made from eight. Where both meet, it becomes LCA. Because this is what LCA does. LCA means Lowest Common Ancestor. Meaning, P also has an ancestor, Q also has an ancestor and it should be the lowest common. So see, if we take any tree, there will be a point where this tree"
+    },
+    {
+      "start_time": 224.08,
+      "end_time": 258.31,
+      "text": "स्प्लिट हो जाएगा और यहां पे P रहेगा कहीं और यहां पे q रहेगा कहीं और ये वाला नोड किसको क्या बोलते हैं एलसीए जिसके यहां पे एक p रहे और यहां पे q रहे ये काम आप किसी भी नोड पे कर सकते हैं हमको थ्री और 18 का एलसीए निकालना है तो वही काम करना है थ्री से रूट तक का एक पाथ बनाए 18 से भी रूट तक का एक पाथ बनाए कहां पे फर्स्ट बार इंटरसेक्ट किया 10 थ्री और 18 का क्या है एलसीए 10 क्योंकि 10 देखो देखो 10 थ्री का भी है, 18 का भी है। 10 से नीचे अगर आप जाएंगे ना तो 10 से नीचे कोई एनसेेस्टर पॉसिबल नहीं है। 10 से नीचे कोई एनसेेस्टर पॉसिबल नहीं है। तो ड्राइंग से क्या समझ",
+      "source": "caption",
+      "english_text": "It will be split and here P will remain somewhere else here q will remain somewhere else. What is this node called LCA which has a p here and a q here? You can do this work on any node. If we have to find the LCA of three and 18 then we have to do the same thing. Make a path from three to the root. Also make a path from 18 to the root. Where is 10 intersected for the first time? What is the LCA of three and 18? 10 because 10 Look, look, it's 10 threes, it's 18 too. If you go below 10 then no ancestor below 10 is possible. No ancestor below 10 is possible. So what do you mean by drawing?"
+    },
+    {
+      "start_time": 258.32,
+      "end_time": 289.99,
+      "text": "में आ रहा है कि एलसीएम क्या हुआ? एट और 17 का एलसीए कौन है? एट से रूट तक बनाओ। एट से रूट तक बनाओ। 10 हो गया। 17 से रूट तक बनाओ। क्या हो गया? 10 तो 10 कहां पे मिला? पहली बार 10 पे। तो क्या हो गया? 10 एलसीए। एक और एग्जांपल 12 और 16 का बनाओ। आओ 12 से रूट तक का पाथ ये रहा। 16 से रूट तक का पाथ ये रहा। कहां पर इंटरसेक्ट किया पहली बार? 15 तो 15 क्या हो गया इसका? एलसीए। एलसीए। तो अगर हम लोग इंटरसेक्ट कराएं तो जहां पे पहली बार दोनों इंटरसेक्ट करता है वही क्या होता है?",
+      "source": "caption",
+      "english_text": "Coming in what happened to LCM? What is the LCA of eight and 17? Build from et to root. Build from et to root. It's 10. Make 17 to the root. What happened? 10 So where did you get 10? First time at 10. So what happened? 10 LCA. Make another example of 12 and 16. Come, here is the path from 12 to Route. Here's the path from Route 16 to Route 16. Where did it intersect for the first time? 15 So what became of 15? LCA. LCA. So if we intersect, then what happens where the two intersect for the first time?"
+    },
+    {
+      "start_time": 290.0,
+      "end_time": 324.55,
+      "text": "एलसीए। और आप लोग देख रहे हैं ना कि एलसीए कहीं भी कुछ भी हो रहा है ना। तो अगर 15 12 और 18 का एलसीएम 15 है तो 15 के लेफ्ट साइड पे कहीं ना कहीं जाके आपको 12 मिला। 15 के राइट साइड पे कहीं ना कहीं जाके आपको 18 मिला। तो 15 क्या हो गया? 15 एक स्प्लिट पॉइंट हो गया। जहां पे वो स्प्लिट हो गया। जहां पे क्या हो गया? स्प्लिट हो गया। पहली बार अगर एक छोटे ट्रिक का एग्जांपल दें तो एलसीए हमेशा हमेशा हम लोग को एलसीए कैसा मिल रहा है? एक एलसीए यहां पे मिल रहा है। जो भी नोड हो और उसके कहीं ना कहीं लेफ्ट साइड पे जाके क्या मिल रहा है? पी। ऐसा नहीं कि डायरेक्ट। कहीं ना",
+      "source": "caption",
+      "english_text": "LCA. And you guys are seeing that nothing is happening anywhere in LCA. So if 15 is the LCM of 12 and 18, then somewhere on the left side of 15, you get 12. Going somewhere on the right side of 15, you got 18. So what happened to 15? 15 A split point is reached. Where it got split. Where what happened? Split happened. For the first time, if we give an example of a small trick, then LCA is always there, how are we getting LCA? An LCA is available here. Whatever be the node, what do you get by going somewhere on its left side? P. Not that directly. somewhere"
+    },
+    {
+      "start_time": 324.56,
+      "end_time": 357.51,
+      "text": "कहीं कहीं ना कहीं लेफ्ट साइड पे। और कहीं ना कहीं राइट साइड पे जाके कोई क्या मिलेगा? Q। ऐसा कोई भी नोड, ऐसा कोई भी नोड इसको इसी को हम लोग क्या कहते हैं? एलसीए। एलसीए जिसके लेफ्ट साइड पे कुछ कुछ करके कहीं पे जाके पी मिल रहा हो। राइट साइड पे कुछ कुछ करके क्या मिल रहा हो? Q तभी तो ऐसा होगा ना। तभी तो ऐसा होगा कि जब आप P से रूट तक बनाएंगे तो यहां तक आएगा। Q से रूट तक बनाएंगे तो यहां तक आएगा। और यहीं पे क्या हो जाएगा? दोनों मिल जाएगा। तो इसको हम लोग बोलेंगे कि ये स्प्लिट पॉइंट है या एलसीए है। किसी भी एलसीए में यही आप देख रहे हैं कि ये हम ड्राइंग से बता रहे हैं। ऐसा कोई इसमें मैथ नहीं है। ड्राइंग से यही पता चल रहा",
+      "source": "caption",
+      "english_text": "Somewhere on the left side. And what will one find by going somewhere on the right side? Q. Any such node, any such node, what do we call this? LCA. LCA on the left side of which one is getting drunk after doing something. What are you getting by doing something on the right side? Q Only then will this happen, right? Only then will it happen that when you build from P to the root, it will come here. If we build from Q to root, it will reach here. And what will happen here? Will get both. So we will call it split point or LCA. This is what you see in any LCA and we are telling this through the drawing. There is no such math in it. This is what is known from the drawing"
+    },
+    {
+      "start_time": 357.52,
+      "end_time": 384.95,
+      "text": "है ना कि एलसीए के लेफ्ट साइड पे जाके एक नोड मिल रहा है और एलसीए के कहीं राइट पे राइट पे जाके अलग नोड मिल रहा है। वही एलसीए हो जा रहा है। तो बस बस यही चीज बीएसटी में यूज़ कर लेते हैं। यही चीज बीएसटी में यूज़ कर लेते हैं। कैसे यूज़ करते हैं हम आपको बताते हैं। कैसे यूज़ करते हैं हम आपको बताते हैं। मान के चलो कि आपको दो नोड का एलसीएम फाइंड करना है P और Q का। P और Q का। अच्छा आप अभी एक सर्कल पे हैं। आप अभी ट्री का एक सर्कल पे देख रहे हैं। किसी एक रूट को देख रहे हैं।",
+      "source": "caption",
+      "english_text": "Isn't it that by going to the left side of the LCA, one node is found and by going to the right side of the LCA, a different node is found. The same LCA is happening. So this is the only thing we use in BST. The same thing is used in BST. We will tell you how to use it. We will tell you how to use it. Suppose you have to find the LCM of two nodes P and Q. Of P and Q. Well you are in a circle now. You are currently looking at a circle of trees. Looking at one route."
+    },
+    {
+      "start_time": 384.96,
+      "end_time": 410.07,
+      "text": "ठीक है? अच्छी बात है। अब सिंपलीसिटी के लिए मान लीजिए ना कि P का डेटा इज़ लेस देन Q का डेटा। हम लोग इसको ऐसे ही बनाएंगे। ऐसे ही कॉल करेंगे कि जो P है ना वो छोटा वाला वैल्यू है और Q है जो बड़ा वाला वैल्यू है। मतलब कि फॉर एग्जांपल अगर आपको फाइव और 10 का एलसीएम निकालना है ना तो फाइव को हम लोग बोलेंगे कि ये P है और 10 को बोलेंगे कि ये Q है। हम लोग को कुछ भी P और Q तो नाम है ना। आप कुछ भी बोल सकते हैं किसी को भी। वेरी गुड। ऐसा करते हैं।",
+      "source": "caption",
+      "english_text": "ok? It's a good thing. Now for simplicity, assume that the data of P is less than the data of Q. We will make it like this. Similarly we will call that P is the smaller value and Q is the bigger value. Meaning that for example, if you have to find the LCM of five and 10, then we will call five as P and 10 will be called Q. We all know anything with P and Q. You can say anything to anyone. very good. Let's do this."
+    },
+    {
+      "start_time": 410.08,
+      "end_time": 442.95,
+      "text": "अब आप ये रूट पे आए हैं। अब इस पे तीन चार चीजें हो सकती हैं। इस पे क्या हो सकती हैं? तीन चार तरीके की चीजें हो सकती हैं। अच्छा। और ये भी दिया हुआ है। एक बात और इस क्वेश्चन में ये भी दिया हुआ है ना कि दोनों पी और q विल एक्ज़िस्ट। विल एक्ज़िस्ट। यस। ये बहुत इंपॉर्टेंट पार्ट है। विल एक्ज़िस्ट। मतलब वो ट्री में होगा ही होगा। ऐसा कभी नहीं हो सकता कि वो ट्री में हो ही ना। नहीं बिल्कुल पॉसिबल नहीं है। होगा ही होगा। बिल्कुल। चलो हम लोग अभी रूट पे हैं। आपको P और Q का ढूंढना है। अब यहां जाके तीन चार चार चीजें हो सकती हैं। देखो पहला तो सबसे पहला चीज तो",
+      "source": "caption",
+      "english_text": "Now you have come to this route. Now three-four things can happen on this. What can happen on this? Three or four types of things can happen. Good. And this is also a given. One more thing, it is also given in this question that both p and q will exist. Will Exist. Yes. This is a very important part. Will Exist. Meaning it must be in the tree. It can never happen that he is in the tree. No, it is not possible at all. It will definitely happen. Absolutely. Come on, we are on the route now. You have to find P and Q. Now three or four things can happen here. Look, first things first"
+    },
+    {
+      "start_time": 442.96,
+      "end_time": 477.909,
+      "text": "ये हो सकता है ना कि रूट का डेटा P और q के इक्वल आ जाए। किसका? p और q के इक्वल आ जाए। मतलब या तो रूट इक्वल इक्वल टू p आ जाए या तो रूट इक्वल इक्वल टू q आ जाए। ये हो सकता है। बिल्कुल हो सकता है। तो इसमें क्या एलसीए हो जाएगा? इसमें तो रूट ही एलसीए हो जाएगा। इसमें तो रूट ही एलसीए हो जाएगा। क्योंकि यह बात एलसीए में भी पढ़ाए थे कि अगर पी और q होता है ना मान लीजिए कोई ऐसा नोड है पी और कहीं ना कहीं जाके q तो एलसीए क्या हो जाता है पी क्योंकि हर आदमी खुद का बॉस होता है याद कीजिए भाई हर आदमी खुद का तो बॉस होता ही है हर आदमी खुद का एनसेेस्टर होता ही है तो पी तो खुद का एनसेेस्टर है और पी q का भी एनसेेस्टर",
+      "source": "caption",
+      "english_text": "It is possible that the root data becomes equal to P and q. Whose? Let p and q become equal. Meaning, either the root becomes equal to p or the root becomes equal to q. This can happen. Absolutely possible. So what will be LCA in this? In this, the route itself will be LCA. In this, the route itself will be LCA. Because this thing was also taught in LCA that if there is P and q, suppose there is a node P and q goes somewhere, then what becomes of LCA P because every man is his own boss, remember brother, every man is his own boss, every man is his own ancestor, so P is his own ancestor and P is also the ancestor of q."
+    },
+    {
+      "start_time": 477.919,
+      "end_time": 512.23,
+      "text": "है तो लोएस्ट कॉमन खुद पी हो गया अगर ऐसा आया कि q है और यहां p है तो क्या हो गया एलसीए q हो गया क्योंकि q खुद का एनसेेस्टर तो है ही पी का भी हो जाएगा तो लोएस्ट कॉमन q तो अगर रूट p या q के इक्वल है तब तो आपका आंसर इज़ इक्वल टू रूट हो जाएगा। आंसर इज़ ये तो बड़ा ईजी कंडीशन है। इसमें कोई मैथ अभी तक नहीं है। अब आएगा अब आएगा इंपॉर्टेंट पार्ट। अगर दूसरा केस ऐसा हो। दूसरा केस ऐसा हो। हम बस एक सर्कल का बात कर रहे हैं और उस पे P और Q का देख रहे हैं कि क्या-क्या चीजें पॉसिबल है। तो पहला चीज तो रूट P और Q के इक्वल हो जाए तो बहुत अच्छी बात है। अच्छा। दूसरी चीज़ क्या पॉसिबल है? कि जो रूट का डेटा है ना",
+      "source": "caption",
+      "english_text": "Then the lowest common becomes p itself. If it turns out that there is q and here there is p, then what happened LCA becomes q because q is its own ancestor, it will also be the ancestor of p, then the lowest common is q. So if the root is equal to p or q then your answer will become equal to root. The answer is this is a very easy condition. There is no math in it yet. Now comes the important part. If the second case is like this. Let the second case be like this. We are just talking about a circle and seeing P and Q on it to see what things are possible. So the first thing is that if the roots of P and Q are equal then it is very good. Good. What else is possible? That is the data of the route, right?"
+    },
+    {
+      "start_time": 512.24,
+      "end_time": 544.949,
+      "text": "रूट का डेटा है। रूट में कुछ नंबर लिखा होगा वो लेस है P के डेटा से। वो लेस है P के डेटा से और P का डेटा किससे लेस है? Q के डेटा से। मतलब कि रूट का वैल्यू जो है ना रूट का वैल्यू सबसे छोटा है। रूट का वैल्यू सबसे छोटा है P और Q में। तो मतलब ऐसा लग रहा है कि रूट फिर P फिर Q। ठीक है? तो इसको एग्जांपल के लिए हम बता रहे हैं कि मान लेते हैं कि अगर हम लोग 10 पे हैं तो अगर आपको एलसीएम निकालना होता 13 और 17 का तो 10 दोनों से छोटा है। 10 13 से भी छोटा है 10 17 से भी छोटा है। अब अब अगर 10 दोनों से छोटा है। अगर 10 दोनों से",
+      "source": "caption",
+      "english_text": "Route data. There will be some number written in the route which is related to P's data. It is laced with P's data and what is P's data laced with? From data of Q. Meaning that the value of the root is the smallest value. The value of the root is smallest in P and Q. So meaning it looks like root then P then Q. Ok? So for the sake of example, let us assume that if we are on 10, then if you had to find the LCM of 13 and 17, then 10 is smaller than both. 10 is smaller than 13. 10 is smaller than 17. Now if 10 is smaller than both. If 10 from both"
+    },
+    {
+      "start_time": 544.959,
+      "end_time": 577.99,
+      "text": "छोटा है तो क्या 10 एलसीए हो सकता है क्या? नहीं। एलसीए नहीं हो सकता है। क्यों नहीं हो सकता है? क्योंकि 13 और 17 अब 10 आप बोल रहे हैं कि दोनों से छोटा है। तो थोड़ा दिमाग पे जोर लगा के बोलिए कि क्या 10 कभी भी एलसीए हो सकता है? नहीं हो सकता है क्योंकि हम लोग क्या देखे थे? एलसीए कौन होता था? एलसीए ऐसा एक बॉक्स होता था ना जो स्प्लिट कर देता था, स्प्लिट हो जाता था। एक तरफ पी और एक तरफ q एक तरफ पी एक तरफ q। लेकिन अब यहां पे तो आप बोल रहे हैं कि मेरा जो रूट है जिस भी हम सर्कल को देख रहे हैं वो पी और q दोनों से छोटा है।",
+      "source": "caption",
+      "english_text": "If it is small then can it be 10 LCA? No. Cannot be LCA. Why can't it happen? Because 13 and 17 now 10 you are saying is smaller than both. So use your brain a little and say can 10 ever be LCA? Can't be because what did we see? Who was LCA? LCA used to be a box which could split. On one side p and on one side q. On one side p and q on one side. But now here you are saying that the root of the circle we are looking at is smaller than both p and q."
+    },
+    {
+      "start_time": 578.0,
+      "end_time": 610.47,
+      "text": "अब अगर वो दोनों से छोटा होगा तो क्या वो कभी ऐसे स्प्लिट कर पाएगा बीएसटी में? बीएसटी में क्या वो 10 कभी ऐसा स्प्लिट कर पाएगा? नहीं। क्योंकि ये स्प्लिट करने के लिए क्या होना चाहिए? P लेस दैन इक्वल टू एल्स ये लेस दैन इक्वल टू q ये होना चाहिए। लेकिन अगर आप बोलेंगे कि मेरा 10 दोनों से छोटा है तो दोनों से छोटा है तो 10 कभी भी स्प्लिट नहीं कर पाएगा। ऐसा कभी नहीं हो पाएगा कि 13 आपको 10 के लेफ्ट साइड पे मिल जाए और 17 आपको राइट साइड पे मिल जाए। नहीं दोनों राइट साइड पे मिलेगा क्योंकि 10 दोनों से छोटा है तो ऐसा कभी हो ही नहीं सकता है कि 10 एलसीए हो जाए।",
+      "source": "caption",
+      "english_text": "Now if he is younger than both, will he ever be able to do such a split in BST? Will that 10 ever be able to do such a split in BST? No. Because what needs to happen for this to split? P less than equal to else is less than equal to q it should be. But if you say that my 10 is smaller than both, then 10 will never be able to split. It will never happen that you get 13 on the left side of 10 and 17 on the right side. No, both will be found on the right side because 10 is smaller than both, so it can never happen that 10 becomes LCA."
+    },
+    {
+      "start_time": 610.48,
+      "end_time": 645.03,
+      "text": "ऐसा कभी हो ही नहीं सकता है कि 10 एलसीए हो जाए। अगर 10 एलसीएम नहीं हो सकता है तो क्या 10 के लेफ्ट में कुछ भी एलसीएम हो सकता है? नहीं। क्योंकि अगर 13 17 10 से बड़ा है तो ये सबसे बड़ा है तो ये सब एलसीएम कैसे होगा? अगर 13 और 17 10 से बड़ा है तो 10 के लेफ्ट में जो कुछ भी है सबसे ये दोनों बड़ा है। तो अगर 10 एलसीए नहीं हो सकता है तो ये सब भी एलसीए नहीं हो सकता। क्योंकि अभी हम लोग ड्राइंग में क्या देखे? एलसीए स्प्लिट कर देता था। एक तरफ P, एक तरफ Q, एक तरफ P, एक तरफ Q तो 10 एलसीए नहीं हो सकता है। और कोई भी 10",
+      "source": "caption",
+      "english_text": "It can never happen that there will be 10 LCA. If 10 cannot be LCM then can anything to the left of 10 be LCM? No. Because if 13 17 is bigger than 10 then it is the biggest so how will all these be LCM? If 13 and 17 are greater than 10, then whatever is to the left of 10 is greater than both of them. So if 10 cannot be LCA then all these also cannot be LCA. Because what have we seen in the drawing now? Used to split LCA. One side P, one side Q, one side P, one side Q so there cannot be 10 LCA. and any 10"
+    },
+    {
+      "start_time": 645.04,
+      "end_time": 678.47,
+      "text": "के लेफ्ट में एलसीए नहीं हो सकता है। तो ये सब गायब हो गया। एलसीए क्या हो सकता है? 10 के राइट में कोई एलसीए हो सकता है। 10 के राइट में कोई एलसीए हो सकता है। यस। 10 के राइट में कोई आदमी एलसीए हो सकता है। तो अगर आपको ऐसा केस मिलता है। अगर आपको ऐसा केस मिलता है कि रूट जो है ना वो p और q दोनों से छोटा है। तो आप कहां जाएंगे? रूट तो हो नहीं सकता एलसीए। क्योंकि एलसीए को तो स्प्लिट करना है। रूट के लेफ्ट में भी कुछ नहीं हो सकता है। सीधा रूट के राइट में चले जाइए खोजने के लिए। रूट के राइट में चले जाइए खोजने के लिए। क्योंकि अगर एलसीए होगा तो कहां होगा? राइट साइड में लेफ्ट साइड में तो",
+      "source": "caption",
+      "english_text": "There cannot be LCA in the left. So all this disappeared. What can be LCA? There may be an LCA to the right of 10. There may be an LCA to the right of 10. Yes. Someone to the right of 10 could be an LCA. So if you get such a case. If you get such a case that the root is less than both p and q. So where will you go? LCA cannot be the route. Because LCA has to be split. Nothing can happen to the left of the root either. Go straight to the right of the route to find it. Go to the right of the route to find it. Because if there is LCA, where will it be? On the right side and on the left side"
+    },
+    {
+      "start_time": 678.48,
+      "end_time": 704.79,
+      "text": "नहीं हो सकता है। सिमिलरली सिमिलरली अगर रूट का डेटा ग्रेटर देन q के डेटा है और हम लोग बोल चुके हैं कि q p से बड़ा है। p और q ऑर्डर में है। तो रूट का डेटा q के डेटा से बड़ा है। अब आइए इसी एग्जांपल को फिर समझाते हैं। मतलब कि आप अभी 10 पे हैं। आपको एलसीएम खोजना है थ्री और सेवन का। 10 थ्री और सेवन दोनों से बड़ा है। तो क्या ऐसा कभी भी पॉसिबल है कि 10 इन दोनों को ऐसा स्प्लिट कर देगा?",
+      "source": "caption",
+      "english_text": "Can't happen. Similarly, if the data of the root is greater than the data of q and we have said that q is greater than p. p and q are in order. So the data at root is larger than the data at q. Now let us explain this example again. Meaning you are on 10 now. You have to find the LCM of three and seven. 10 is greater than both three and seven. So is it ever possible that 10 will split these two like this?"
+    },
+    {
+      "start_time": 704.8,
+      "end_time": 738.23,
+      "text": "नहीं। थ्री और से दोनों 10 के लेफ्ट में आएगा। ऐसा कभी नहीं होगा कि थ्री लेफ्ट में आ जाए और सेवन राइट में आ जाए। तो 10 भी वो स्प्लिट वाला ड्राइंग में तो फिट नहीं हो रहा है। तो इससे क्या पता चला? 10 भी एलसीएम नहीं हो सकता है। और और अगर थ्री और से 10 ही बड़ा है तो 10 के राइट में तो सारे 10 से बड़े बैठे हुए हैं। तो वो भी तो बड़े होंगे। तो 10 तो नहीं हो सकता। ये भी नहीं हो सकते हैं। ये कोई नहीं हो सकता है। ये कोई नहीं। 10 और 10 का राइट दोनों बाहर। तो एलसीएम हो क्या सकता है? 10 के लेफ्ट में कुछ एलसीए हो सकता है। 10 के लेफ्ट में एकदम रिवर्स",
+      "source": "caption",
+      "english_text": "No. Three and two will both come to the left of 10. It will never happen that three comes on the left and seven comes on the right. So even that split 10 is not fitting in the drawing. So what did this reveal? Even 10 cannot be LCM. And if only 10 is greater than three and then all those greater than 10 are sitting to the right of 10. So they will also be big. So it can't be 10. This also cannot happen. It can't be anyone. This is no one. 10 and 10 right both out. So what could be LCM? There may be some LCA on the left of 10. absolutely reverse to the left of 10"
+    },
+    {
+      "start_time": 738.24,
+      "end_time": 771.829,
+      "text": "लॉजिक है। क्योंकि एलसीए का काम क्या है? स्प्लिट कर देना। स्प्लिट कर देना ऐसे नॉर्मल के। एक तरफ P, एक तरफ Q। अब 10 में 10 तो P और Q दोनों से बड़ा है। तो 10 तो कभी स्प्लिट कर नहीं पाएगा। ऐसा P और Q तो पॉसिबल है नहीं। 10 के राइट वाला भी कोई स्प्लिट नहीं कर पाएगा। क्योंकि 10 के राइट में तो और बड़े-बड़े लोग हैं। सब खत्म। सब खत्म। कहां एलसीएम मिल सकता है? लेफ्ट साइड में। लेफ्ट साइड में मिल सकता है। एकदम उल्टा। एकदम उल्टा। लेफ्ट साइड में मिल सकता है। कहां? लेफ्ट साइड में रूट के लेफ्ट साइड में लेफ्ट साइड में यस अच्छा ये तीन केसेस हो गया। कौन-कौन से?",
+      "source": "caption",
+      "english_text": "There is logic. Because what is the job of LCA? Split it. Split it like this. On one side P, on the other side Q. Now out of 10, 10 is greater than both P and Q. तो 10 तो कभी स्प्लिट कर नहीं पाएगा। ऐसा P और Q तो पॉसिबल है नहीं। 10 के राइट वाला भी कोई स्प्लिट नहीं कर पाएगा। क्योंकि 10 के राइट में तो और बड़े-बड़े लोग हैं। It's all over. It's all over. कहां एलसीएम मिल सकता है? On the left side. लेफ्ट साइड में मिल सकता है। एकदम उल्टा। एकदम उल्टा। लेफ्ट साइड में मिल सकता है। Where? लेफ्ट साइड में रूट के लेफ्ट साइड में लेफ्ट साइड में यस अच्छा ये तीन केसेस हो गया। Which ones?"
+    },
+    {
+      "start_time": 771.839,
+      "end_time": 803.11,
+      "text": "पहला ये अगर रूट p और q के इक्वल है तब तो वही एल है। तब तो कोई डिबेट ही नहीं है। अगर रूट p और q से छोटा है तो वो नहीं हो सकता है। आपको रूट के राइट में जाना है। अगर रूट q से बड़ा है मतलब p और q दोनों से बड़ा है। आपको रूट के लेफ्ट में जाना है। अब चौथा केस क्या पॉसिबल है? चौथा केस क्या पॉसिबल है? रूट का डाटा ना रूट का डाटा ग्रेटर देन P के डाटा एंड रूट का डाटा लेस देन Q का डेटा लेस दैन Q का डेटा यस लेस दैन Q का",
+      "source": "caption",
+      "english_text": "पहला ये अगर रूट p और q के इक्वल है तब तो वही एल है। तब तो कोई डिबेट ही नहीं है। अगर रूट p और q से छोटा है तो वो नहीं हो सकता है। आपको रूट के राइट में जाना है। अगर रूट q से बड़ा है मतलब p और q दोनों से बड़ा है। आपको रूट के लेफ्ट में जाना है। अब चौथा केस क्या पॉसिबल है? चौथा केस क्या पॉसिबल है? रूट का डाटा ना रूट का डाटा ग्रेटर देन P के डाटा एंड रूट का डाटा लेस देन Q का डेटा लेस दैन Q का डेटा यस लेस दैन Q का"
+    },
+    {
+      "start_time": 803.12,
+      "end_time": 835.59,
+      "text": "डेटा मतलब रूट P और Q के बीच में है। रूट Q और P और Q के बीच में है। एग्जैक्टली यही हम लोग खोज रहे हैं। एग्जैक्टली मतलब कि फॉर एग्जांपल अगर आप 15 पे आते हैं। आप एलसीए ढूंढ रहे हैं किसका? 12 और 18 का तो 12 लेस दैन इक्वल टू 15 &lt; 18 क्या आप यही खोज रहे थे क्या यही खोज रहे थे अगर 15 12 और 18 के बीच में पड़ता है तो क्या 15 ताकत रखता है 12 और 18 को ऐसा स्प्लिट कर देने की हां 15 12 और 18 को",
+      "source": "caption",
+      "english_text": "The data mean lies between root P and Q. Route Q is between P and Q. Exactly this is what we are looking for. Exactly means that for example if you come on 15th. Whose LCA are you looking for? If 12 and 18 are equal to 12 then 12 is less than equal to 15 < 18 Is this what you were looking for Is this what you were looking for If 15 falls between 12 and 18 then does 15 have the power to split 12 and 18 like this Yes 15 to 12 and 18"
+    },
+    {
+      "start_time": 835.6,
+      "end_time": 869.269,
+      "text": "स्प्लिट कर सकता है 15 के बाएं ओर आपको कहीं ना कहीं 12 मिल जाएगा और 15 के दाएं ओर आपको कभी ना कभी 18 मिल जाएगा यही होगा एलसीए यही होगा एलसीए क्यों क्यों? क्योंकि अगर वो स्प्लिट कर देता है ना इधर-उधर स्प्लिट कर देता है तो एग्जजेक्टली वही चीज होगा। जब आप 12 से रूट तक का ड्राइंग बनाएंगे तो उसमें 15 कहीं ना कहीं आएगा। 12 से रूट तक का ड्राइंग बनाएंगे तो उसमें 15 कहीं ना कहीं आएगा। 18 से भी बनाएंगे तो 15 कहीं ना कहीं आएगा। और क्योंकि 15 वो आदमी है। 15 वो आदमी है जो 12 और 18 को स्प्लिट कर देता है। तो यही वो स्प्लिट और यही क्या",
+      "source": "caption",
+      "english_text": "You can split 15 on the left side, you will get 12 somewhere and on the right side of 15, you will sometimes get 18, this will be LCA, this will be LCA, why why? Because if he splits it or splits it here and there, it will be exactly the same thing. When you make a drawing from 12 to the root, 15 will appear somewhere in it. If you make a drawing from 12 to the root, then 15 will appear somewhere in it. Even if we make it from 18, 15 will come somewhere. And because 15 is that man. 15 is the man who splits 12 and 18. So this is that split and what is this?"
+    },
+    {
+      "start_time": 869.279,
+      "end_time": 902.55,
+      "text": "बन जाएगा? एलसीए। यही क्या बन जाएगा? एलसीए। यह जस्ट वैसा है। ये जस्ट वैसा हम आपको बताते हैं। इसका मतलब हो सकता है आप लोग को थोड़ा सा दिक्कत हो रहा होगा। हम आपको बता देते हैं। हम आपको तुरंत बता देते हैं। ठीक है? इसका क्या क्यों हम बोल रहे हैं कि स्प्लिट पॉइंट ही एलसीए होता है। इमेजिन कीजिए आप कोई यूएसए से अपने घर तक पार्सल मंगाए हैं। इमेजिन कीजिए आप यूएसए से अपने घर तक कोई पार्सल मंगवाए हैं। अपने यूएसए से बता रहे हैं। इसका एग्जांपल के लिए आप मान लीजिए अपने यूएसए से ना घर में खाना मंगा रहे हैं। कुछ पार्सल मंगा रहे हैं। दो घर है। घर वन और",
+      "source": "caption",
+      "english_text": "Will it be made? LCA. What will this become? LCA. It's just like that. This is just what we tell you. This may mean that you may be facing a little problem. We will tell you. We will let you know immediately. Ok? What about this, why are we saying that the split point itself is LCA. Imagine you have ordered a parcel from USA to your home. Imagine you have received a parcel from USA to your home. Speaking from our USA. For example, suppose you are ordering food from your USA at home. Ordering some parcels. There are two houses. home forest and"
+    },
+    {
+      "start_time": 902.56,
+      "end_time": 936.79,
+      "text": "घर टू। हम क्यों ये बात बोल रहे हैं? देखिए सबसे पहले पार्सल यूएसए है। उसके बाद पार्सल इंडिया आएगा। इंडिया से ये दिल्ली जाएगा। दिल्ली से आपके कहीं पे मोहल्ले में जाएगा। और एक पॉइंट आएगा ना जब ये मोहल्ले से हो सकता है घर वन कहीं और हो किसी और गली में और घर टू कहीं और हो। घर टू कहीं और हो। ठीक है? तो देखिए अभी तक सब कुछ स्ट्रेट स्ट्रेट स्ट्रेट स्ट्रेट चल रहा था। मोहल्ला ऐसा आया जिस पे से ऐसा ऐसा जाके घर वन पे पहुंच गया और ऐसा ऐसा ऐसा जाके घर टू पे। अब अगर कोई पूछे ना कि घर वन और घर टू का लोएस्ट कॉमन एनसेेस्टर कौन है?",
+      "source": "caption",
+      "english_text": "To home. Why are we saying this? Look, first of all there is Parcel USA. After that Parcel India will come. From India it will go to Delhi. Will go to your locality from Delhi. And there will come a point when this house may be from the locality, house one may be somewhere else, in some other street and house two may be somewhere else. Home should be somewhere else. Ok? So see, till now everything was going straight straight straight. The locality came in such a way that such and such went to house one and such and such went to house two. Now if someone asks who is the lowest common ancestor of house one and house two?"
+    },
+    {
+      "start_time": 936.8,
+      "end_time": 970.55,
+      "text": "मतलब लोएस्ट कॉमन पॉइंट। कॉमन पॉइंट क्या है? तो देखिए यूएसए भी कॉमन पॉइंट है। लेकिन लोएस्ट सबसे नजदीक वाला कॉमन पॉइंट क्या है? तो वो होगा मोहल्ला। क्यों? मोहल्ला ही ऐसा पॉइंट था ना जो स्प्लिट कर दिया। स्प्लिट कर दिया। अब आप अगर घर वन से यूएसए तक कोई पाथ बनाएंगे ना। तो आप ऐसे ही बनाएंगे। घर टू से भी यूएसए तक पाथ बनाएंगे, तो ऐसे ही बनाएंगे। कहां पे दोनों मिल रहा है? मोहल्ला में मिल रहा है। तो, मोहल्ला क्या हुआ? एलसीए। यही काम हम लोग ट्री में कर रहे हैं। यही काम हम लोग ट्री में कर रहे हैं। तो अगर आपको चौथे केस में ऐसा पता चलता है कि जो 15 है ना 12 उससे छोटा है। 18 उससे बड़ा है। तो",
+      "source": "caption",
+      "english_text": "Means lowest common point. What is the common point? So see USA is also a common point. But what is the lowest nearest common point? So that would be the locality. Why? The locality was the point which divided it. Split it. Now if you make a path from home to USA. So you will make it like this. If we make a path from home to USA, we will make it like this only. Where are both available? Available in the locality. So, what happened to Mohalla? LCA. We are doing the same work in the tree. We are doing the same work in the tree. So if you find out in the fourth case that 15 is less than 12. 18 is bigger than that. so"
+    },
+    {
+      "start_time": 970.56,
+      "end_time": 1003.749,
+      "text": "पक्का पक्का जब आप 12 से रूट तक याद कीजिए घर वन से यूएसए तक घर बनाए थे। ऐसा लगेगा। 18 से बनाएंगे तो ऐसा लगेगा। कहां मिलेगा? 15 पे। तो 15 क्या होगा? एलसीए। एलसीए। तो यही एक केस बचा हुआ है। यही एक केस बचा हुआ है। यही एक केस बचा हुआ है। अगर ऐसा हो गया तो क्या करेंगे? आंसर इज इक्वल टू रूट और रिटर्न। रिटर्न खत्म। ये पांच चार लाइन चार केसेस का कोड है। पहला केस जब रूट P या Q के इक्वल हो तो रूट ही आंसर है। वेरी गुड। अगर रूट सबसे छोटा है। रूट सबसे छोटे का मतलब क्या है? कि ये आपका",
+      "source": "caption",
+      "english_text": "Sure, when you remember from 12 to Route 1, houses were made from House One to USA. it would seem. If you make it from 18 then it will look like this. Where to get it? On 15. So what will be 15? LCA. LCA. So this is the only case left. This is the only case left. This is the only case left. What will you do if this happens? Answer is equal to route and return. Returns finished. This is a code of five four lines and four cases. In the first case, when the root is equal to P or Q, then the root is the answer. very good. If the root is shortest. What does root smallest mean? that this is yours"
+    },
+    {
+      "start_time": 1003.759,
+      "end_time": 1031.11,
+      "text": "रूट है और दोनों P और Q इसके राइट में हैं। यही मतलब है ना। दोनों से छोटा का मतलब P और Q बड़े हैं तो राइट में होंगे। तो लेफ्ट भी बेकार है तो आप राइट चले जाइए। अगर ये दोनों से बड़ा है तो मतलब ये जो आपका रूट होगा और दोनों P और Q कहीं ना कहीं इधर होंगे तो ये भी स्प्लिट नहीं कर पा रहा है। अब कहां जाना पड़ेगा? लेफ्ट में जा के देखना पड़ेगा। जस्ट लाइक सर्च जस्ट लाइक सर्च। लेकिन वो ऐसा है अगर P और Q के बीच में है तो आपका रूट यहां है। आपका P कहीं ना कहीं होगा। ऐसा नहीं है कि उसके तुरंत लेफ्ट में होगा। कहीं ना कहीं होगा।",
+      "source": "caption",
+      "english_text": "is the root and both P and Q are to its right. This is what it means isn't it? Smaller than both means if P and Q are bigger then they will be on the right. So left is also useless so go right. If it is bigger than both then it means that this will be your root and both P and Q will be somewhere here, then it is also not able to split. Where will I have to go now? You will have to go to the left and look. Just Like Search Just Like Search. But that's like if it's between P and Q then your route is here. Your P will be there somewhere. It is not that it will be on his immediate left. It must be there somewhere."
+    },
+    {
+      "start_time": 1031.12,
+      "end_time": 1064.549,
+      "text": "इसीलिए क्वेश्चन में बोला हुआ है कि वो है। है P और Q है। P और Q पक्का है। तो P कहीं ना कहीं लेफ्ट में होगा। Q कहीं ना कहीं राइट में होगा। तो यही आदमी क्या बन जाएगा? एलसीए। क्योंकि जब आप p और q से रूट तक बनाएंगे ना जब आप p और q से बनाएंगे ना तो वो यहीं से हो के गुजरेगा। यहीं से हो के गुजरेगा। तो ये एलसीए बन जाएगा। तो बस ये छोटा सा ड्राइंग याद रखिए। अपने आप ये सब याद आ जाएगा। ये ये सब कुछ करने की जरूरत नहीं है। ड्राइंग याद रखिएगा कि एलसीए का ड्राइंग बनाया था तो क्या पता चला था कि ऐसे हो रहा था। ऐसे हो रहा था। कहीं ना कहीं से ऐसे ऐसे आके ना कहीं पे एक मिल जाता था। वही एलसीए होता था। तो आइए इसका कोड लिखें। इसका कोड",
+      "source": "caption",
+      "english_text": "That is why it is said in the question that it is. is P and Q. P and Q are definite. So P will be somewhere on the left. Q will be somewhere on the right. So what will this man become? LCA. Because when you build from p and q to the root, when you build from p and q, it will pass through here only. It will pass from here. So this will become LCA. So just remember this little drawing. You will remember all this automatically. There is no need to do all this. Remember the drawing that when the drawing of LCA was made then it was not known that this was happening. It was happening like this. One or the other came from somewhere like this and one was found somewhere. That was LCA. So let's write its code. its code"
+    },
+    {
+      "start_time": 1064.559,
+      "end_time": 1093.909,
+      "text": "लिखने के लिए एक ग्लोबल वेरिएबल बना लेते हैं। एक ग्लोबल वेरिएबल बना लेते हैं। और एक वॉइड फन लिख लेते हैं। नोड इसमें क्या पास होगा? रूट और दोनों चीजें न स्टार P और Q है ना? नो स्टार Q अच्छी बात है। सबसे पहले तो अगर रूट नल है। अगर रूट नल है तो फिर तो खेला ही खत्म है। क्या करेंगे रिटर्न?",
+      "source": "caption",
+      "english_text": "Let's create a global variable for writing. Let's create a global variable. And write a void fun. What will node pass into it? Root and both things neither star P and Q right? No Star Q is a good thing. First of all if the root is null. If the route is null then the game is over. What will you do in return?"
+    },
+    {
+      "start_time": 1093.919,
+      "end_time": 1125.59,
+      "text": "रिटर्न अगर रूट p या q के बराबर है रूट इक्वल इक्व p और रूट इक्वल इक्वल टू q क्या हो जाएगा आंसर इज़ इक्वल टू रूट और रिटर्न ठीक है वेरी गुड अब दूसरा केस लिख लेते हैं कि अगर रूट का डेटा रूट का डेटा इज लेस देन p का डेटा मतलब रूट p और q दोनों से छोटा है तो p और q कहां पे होंगे राइट साइड में होंगे तो क्या करेंगे? फन",
+      "source": "caption",
+      "english_text": "Return if root is equal to p or q Root is equal to p and root is equal to q What will happen Answer is equal to root and return is OK Very Good Now let us write the second case that if the data of root is less than the data of p means the data of root is smaller than both p and q then where will p and q be if they are on the right side then what will we do? Fun"
+    },
+    {
+      "start_time": 1125.6,
+      "end_time": 1160.23,
+      "text": "रूट डॉट राइट P और Q एल्स एल्स एल्स इफ लिखना पड़ेगा। एल्स इफ रूट का डेटा जो है ना रूट का डेटा इज़ ग्रेटर दैन Q के डेटा से। मतलब P और Q दोनों से बड़ा है। क्योंकि हम लोग अस्यूम कर रहे हैं कि p q से बड़ा है। जब हम लोग कॉल करेंगे ना तो ऐसे ही कॉल करेंगे। हम बताएंगे। अभी अस्यूम क्या कर रहे हैं कि p q से छोटा है। सॉरी, p q से छोटा है। तो यहां पे क्या कॉल होगा? वन रूट के लेफ्ट में और p और q तो एज़ इट इज़। अब अगर एल्स यहां तक आए हैं। एल्स एल्स का मतलब क्या होगा?",
+      "source": "caption",
+      "english_text": "You will have to write root dot right P and Q else else else if. Else if the data of root which is not the data of root is greater than the data of Q. Means is greater than both P and Q. Because we are assuming that p is greater than q. When we call, we will call like this only. we tell. What we are assuming right now is that p is smaller than q. Sorry, p is smaller than q. So what will be the call here? To the left of one root and p and q so as it is. Now if the others have come this far. What does 'else' mean?"
+    },
+    {
+      "start_time": 1160.24,
+      "end_time": 1192.87,
+      "text": "आप इस चौथे केस में आ चुके हैं। कहां गया चौथा केस? ये आपका चौथा केस था कि मतलब रूट बीच में पड़ता है। अब जब रूट बीच में पड़ता है ना तो यही एल्स ये होगा। क्योंकि यही उन दोनों को ऐसा फाड़ देगा बीच में से। अगर ऐसा है आंसर इज़ इक्वल टू रूट और रिटर्न। और कुछ करने की जरूरत नहीं है। ये हो गया खत्म। अब जब हम इसको कॉल करेंगे देख लीजिए कोड हो गया। जब इसको हम लोग कॉल करेंगे मेन वाले फंक्शन से तो हम लोग देख लेंगे कि इफ p डॉट डेटा इज लेस देन q डॉट डेटा तो फन",
+      "source": "caption",
+      "english_text": "You have come to this fourth case. Where did the fourth case go? This was your fourth case that means the root falls in the middle. Now when the root falls in the middle then it will be this and this. Because this is what will tear both of them apart. If so then the answer is equal to route and return. There is no need to do anything else. This is over. Now when we call this, see the code is done. When we call this from the main function, we will see that if p dot data is less than q dot data then it is fun."
+    },
+    {
+      "start_time": 1192.88,
+      "end_time": 1227.029,
+      "text": "रूट p q ठीक है नॉर्मल एल्स अगर p बड़ा है जस्ट इसको उल्टा कॉल कर देंगे देखिए नाम है ये सब नाम है इससे कोई फर्क नहीं पड़ता ये सब लोकल नाम q p करके कॉल कर देंगे अभी इससे कोई फर्क नहीं पड़ा यहां पे आप qp पास किए ये उसको समझेगा कि p है और q है q को पी समझ लेगा पी को q समझ लेगा तो जस्ट नाम है सब सब कुछ होने के बाद रिटर्न आंसर। तो ये देख लीजिए छोटा सा यहां पे कोड है। इसमें हमको नहीं लगता कि कोई भी दिक्कत है। ये क्या है? केस वन। ये क्या है? केस वन। अच्छा ये है। ये ये है केस वन। ये तो नल है। ये क्या है? केस टू। ये",
+      "source": "caption",
+      "english_text": "Root p q is ok normal else if p is big then just call it in reverse see the name is all these names it doesn't matter it will call all these local names q p will call it now it doesn't matter here you pass qp it will understand that it is p and q is q will understand p is q then it is just name everything return answer after everything is done. So see this little code here. We don't think there is any problem in this. What is this? Case one. What is this? Case one. Well this is it. This is case one. This is a tap. What is this? Case two. this"
+    },
+    {
+      "start_time": 1227.039,
+      "end_time": 1261.83,
+      "text": "क्या है? केस थ्री। ये क्या है? केस फोर। केस थ्री। केस फोर यहां आया। मतलब इसमें हम लोग देख रहे हैं कि रूट जस्ट लाइक सर्च। सर्च में जो किए थे वही कर रहे हैं कि p q और रूट का रिलेशन क्या हो सकता है? क्या-क्या हो सकता है? रूट दोनों से बड़ा हो सकता है, एक से बड़ा हो सकता है या दोनों से छोटा कुछ भी हो सकता है। बेस्ड ऑन दैट हम लोग देखे कि एलसीए क्या हो सकता है? एलसीए कैसे पता चला कि वो स्प्लिट कर देता है दो आदमी को ड्राइंग बना के। अब ड्राइंग जब बनाएंगे ना किसी भी दो नोड से जब आप रूट तक का ड्राइंग बनाएंगे ऐसा एक आएगा जहां पे ये दोनों पहली बार मिलेंगे और यही दोनों को स्प्लिट कर देगा। यही दोनों को स्प्लिट करेगा और यही दोनों का",
+      "source": "caption",
+      "english_text": "What is it? Case three. What is this? Case four. Case three. Case four came here. Meaning in this we are seeing that the route is just like search. We are doing the same thing as we did in the search, what could be the relation between p q and root? What can happen? The root can be the greater of both, greater than one, or anything less than both. Based on that let us see what LCA can be? How did LCA come to know that he splits two people by making a drawing. Now when you will make a drawing from any two nodes, when you will make a drawing till the root, there will be one where these two will meet for the first time and this will split both of them. This is what will split both of them and this is what will divide both of them"
+    },
+    {
+      "start_time": 1261.84,
+      "end_time": 1269.52,
+      "text": "एलसीए भी बन जाएगा। तो ये एक क्वेश्चन था। कल से अपने घर जा रहे हैं। कल से वीडियोस लंबी आएंगी। बहुत अच्छी बात है।",
+      "source": "caption",
+      "english_text": "LCA will also be made. So this was a question. Going to my home from tomorrow. From tomorrow the videos will be longer. very good thing."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

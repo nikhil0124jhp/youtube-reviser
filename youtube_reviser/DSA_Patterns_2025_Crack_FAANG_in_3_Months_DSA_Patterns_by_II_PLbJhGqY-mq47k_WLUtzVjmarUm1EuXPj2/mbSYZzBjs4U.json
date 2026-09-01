@@ -1,0 +1,513 @@
+{
+  "video_id": "mbSYZzBjs4U",
+  "video_title": "Most Asked Graphs Question in FAANG Interviews | Number of Islands Leetcode",
+  "video_number": 95,
+  "chunks": [
+    {
+      "start_time": 1.75,
+      "end_time": 27.109,
+      "text": "शुरू करने से पहले ना दो बातें हैं। जैसा कि आपको टाइटल से पता चला होगा। यह एग्जैक्ट क्वेश्चन यह एग्जैक्ट क्वेश्चन है। इतना बेसिक क्वेश्चन है और इतना फंडामेंटल क्वेश्चन है ना इस क्वेश्चन को करने के बाद ये सारे क्वेश्चन रोटेटन ऑरेंज ब्लास्ट रेडियस सराउंडेड आगे हम लोग देखेंगे। ये क्वेश्चन को आप ना पेरेंट क्वेश्चन जैसा समझ सकते हैं कि अगर आपको ये आया ना ये सारे बहुत इजी हो जाएंगे। अगर आपको ये नहीं आया तो ये सारे बड़े हार्ड हो जाएंगे। ये पहली बात है। दूसरी बात ये है ना कि अगर ग्राफ की हम लोग बात करें तो ग्राफ तो हार्ड टॉपिक है ये।",
+      "source": "caption",
+      "english_text": "Before we start, there are two things. As you might have guessed from the title. This is an exact question. This is an exact question. This is such a basic question and such a fundamental question, after doing this question, we will see all these questions rotated orange blast radius surrounded further. You can consider these questions as parent questions, if you know this then all these will become very easy. If you don't know this then all these will become very difficult. This is the first thing. The second thing is that if we talk about graphs then graphs are a hard topic."
+    },
+    {
+      "start_time": 27.119,
+      "end_time": 61.75,
+      "text": "ग्राफ सब लोग जानते हैं कि हार्ड होता है। लेकिन ग्राफ में भी अगर पूछा जाए ना कि चलो थोड़ा कम हार्ड हार्ड वेरी हार्ड इसमें डिवाइड करो ना तो इस तरीके के क्वेश्चन को ग्राफ्स के मामले में इजी समझा जाता है। इजी नहीं है लेकिन अब ग्राफ में दिक्कत्रा हो गया एमएसयू हो गया ये सब हार्ड टॉपिक्स में आते हैं। बेलमेनफोर्ड हो गया ये सब हार्ड टॉपिक फ्लॉयड वार्शल वेरी हार्ड में आता है। आप लोग अभी बच्चे हैं। आप लोग का भी एक्सपीरियंस नहीं होगा या तो एक दो साल होगा उतने ही लोग देख रहे होंगे ना। तो आपसे जब क्वेश्चन पूछा जाएगा ना तो इसी तरीके के क्वेश्चन ज्यादा चांस है कि पूछा जाए। अगर ग्राफ पूछा जाता है जैसे जब मेरा Amazon का इंटरव्यू था सॉफ्टवेयर इंजीनियर वन का एग्जैक्ट ये",
+      "source": "caption",
+      "english_text": "Everyone knows that graphs are hard. But even in graphs, if the question is asked, let's divide it by making it less hard, very hard, then this type of question is considered easy in the case of graphs. It is not easy but now there is a problem in the graph, it is MSU, all these come in hard topics. Belmanford Done All this hard topic comes in Floyd Warshall Very Hard. You guys are still kids. You people will also not have the experience, either it will be one or two years, the same number of people will be watching, right? So when you will be asked questions, there are more chances that similar questions will be asked. If the graph is asked like when I had an interview at Amazon, this is the exact question of Software Engineer One."
+    },
+    {
+      "start_time": 61.76,
+      "end_time": 89.749,
+      "text": "वाला क्वेश्चन पूछा गया था रॉट एंड ऑरेंजेस तो कभी भी ना आप लोग ऐसा एक्सपेक्ट अभी मत करिएगा कि बच्चों से जब क्वेश्चन पूछा जाता है ना तो बहुत कम होता है कि कोई फ्लॉयड वॉरियर पूछ लिया मतलब बहुत कोई सनकी आदमी होगा तो पूछिएगा नहीं तो अगर वो ग्राफ में आ रहा है ना तो 80% चांस है कि आपको यही सब क्वेश्चन पूछा जाएगा तो बहुत इंपॉर्टेंट है ना कि ये बहुत अच्छे से समझिए और जब हम ये पढ़ते थे ना तो हम ये पढ़ने के लिए स्ट्राइवर का वीडियो देखे थे तो अब स्टाइवर का वीडियो देखे थे तो उस समय हम कोड कर लिए लेकिन मेरा कोड बहुत गंदा था।",
+      "source": "caption",
+      "english_text": "The question that was asked was 'Rot and Oranges', so never, you guys, do not expect such a question now, when children are asked this question, it is very rare that someone like Floyd Warrior is asked, that means it must be some crazy person, then you will ask, otherwise if it is coming in the graph, then there is 80% chance that you will be asked all these questions, so it is very important that you understand this very well and when we used to read this. Neither did we watch Stryver's video to read this, so now we watched Stryver's video, at that time we were able to code but my code was very dirty."
+    },
+    {
+      "start_time": 89.759,
+      "end_time": 123.03,
+      "text": "गंदा हम आपको बताएंगे आगे समझ में आएगा कि गंदा कोड का क्या मतलब है। तो वह वीडियो हम उनका पूरा देखे थे और उसमें कोड में उनका इतना ब्यूटीफुल कोड था। इतना सुंदर कोड था ना छोटा-छोटा ट्रिक था। वो ट्रिक अगर हम वो वीडियो नहीं देखते ना तो हमको नहीं समझ में आता। फिर अभी तक हम भाई गंदा कोड आपको कोई भी पढ़ाते आप भी आगे समझते तो वो हो जाता। उस दिन हमको समझ में आया कि देखना इंपॉर्टेंट है। मतलब पूरा देखना बहुत इंपॉर्टेंट है। उस समय हमको भी लगता था कि अरे ये बार-बार बोल रहा है कि वीडियो पूरा देखो। को लगता था कि अरे तुम्हारा वीडियो देखने के लिए बैठे हैं क्या? और और भी काम है हमको। नहीं जब आप वीडियो पूरा देखते हैं ना तो कोई एक्सपीरियंस आदमी जैसा कोड करता है। अब",
+      "source": "caption",
+      "english_text": "Dirty We will tell you further to understand what dirty code means. So we watched his entire video and he had such a beautiful code in the code. It was such a beautiful code, wasn't it a little trick. If we had not watched that video, we would not have understood that trick. Then till now, if we brothers had taught you any dirty code, then if you had understood further, it would have been done. That day we understood that seeing is important. Meaning it is very important to see completely. At that time we also felt that he is repeatedly saying that we should watch the entire video. Was thinking that hey are we sitting to watch your video? And we have more work. No, when you watch the full video, no one codes like an experienced man. now"
+    },
+    {
+      "start_time": 123.04,
+      "end_time": 157.99,
+      "text": "हमको नहीं पता वो कहां से सीखें। हो सकता है कॉम्पिटिटिव प्रोग्राम कहीं से भी सीखे हो। उससे हमको फर्क नहीं पड़ता है। लेकिन जब कोई एक्सपीरियंस आदमी ये कोड लिखता है ना उसके कोड में एक ब्यूटी होता है। उसके कोड में बहुत छोटा-छोटा छोटा-छोटा चीजें होती है जो आप नहीं सीख पाएंगे। ये चीजें ना आप चैट जीपीटी से सीख पाएंगे ना क्लॉड से सीख पाएंगे। बहुत छोटा ये टाइम के साथ आदमी सीखता है कि चलो ये जो हम कोड लिख रहे हैं ना बड़ा गंदा बेहूदा कोड है जो आप लोग भी लिखेंगे उसमें कोई गलत बात नहीं है लेकिन बहुत इंपॉर्टेंट है ना कि वीडियो देख के वो टेक्निक सीख लेने में वो टेक्निक सीख के उसको मास्टर कर लेने में आप देखेंगे कि कितना आसान और कितना सुंदर हो जाएगा कोड जब जब आप वो अप्लाई करेंगे",
+      "source": "caption",
+      "english_text": "We don't know from where they learn it. You may learn competitive programs from anywhere. It doesn't matter to us. But when an experienced person writes this code, there is a beauty in his code. There are many small things in his code that you will not be able to learn. You will neither be able to learn these things from Chat GPT nor from Cloud. With time a person learns that the code we are writing is very dirty and ridiculous, there is nothing wrong in the code you will also write, but it is very important to learn the technique by watching the video and master it, you will see how easy and how beautiful the code will become whenever you apply it."
+    },
+    {
+      "start_time": 158.0,
+      "end_time": 185.11,
+      "text": "तो ठीक है आइए शुरू करते हैं नंबर ऑफ़ आइलैंड तो क्वेश्चन क्या बोलता है आपको हम जल्दी से क्वेश्चन समझाते हैं क्वेश्चन बोलता है कि आपको एक m * n का क्या m * n या n * m ले लीजिए। हम n * m लेना ज्यादा पसंद करते हैं। n * m का ग्रिड दिया हुआ है। क्या दिया हुआ है? ग्रिड। ग्रिड का मतलब होता है 2D मैट्रिक्स। 2D मैट्रिक्स। अच्छा इस ग्रिड में क्या है? ये कैरेक्टर टाइप का है। ये मैट्रिक्स कैरेक्टर टाइप का है। याद रहे इंटीजर टाइप का नहीं है।",
+      "source": "caption",
+      "english_text": "Okay, let's start with the number of islands, so what does the question say? Let us quickly explain the question to you. The question says that you should take m * n or n * m of an m * n. We prefer to take n*m. A grid of n * m is given. What is given? Grid. Grid means 2D matrix. 2D matrix. Well what's in this grid? This is character type. This matrix is ​​of character type. Remember it is not of integer type."
+    },
+    {
+      "start_time": 185.12,
+      "end_time": 218.869,
+      "text": "क्या है? कैरेक्टर टाइप का है। इसमें दो ही चीजें हैं। इस पूरे मैट्रिक्स में दो ही तरीके की चीजें हैं। या तो इसमें वन है। वन नंबर वाला वन नहीं कैरेक्टर वाला वन। ठीक है? क्योंकि कैरेक्टर का मैट्रिक्स है। होगा किसी कारण से। या फिर ज़ीरो। ज़ीरो भी नंबर वाला ज़ीरो नहीं, कैरेक्टर वाला ज़ीरो। अच्छा दो चीज़ हैं। अच्छा इन दोनों का मतलब क्या है? एक जहां-जहां एक लिखा हुआ है ना, उसका मतलब लैंड है। उसका मतलब जमीन या लैंड है। और जहां-जहां जीरो लिखा हुआ है, उसका मतलब वाटर है या पानी है। अच्छा। आपको क्या करना है? इस पूरे मैट्रिक्स में, इस पूरे मैट्रिक्स में नंबर ऑफ़ आइलैंड फाइंड करने",
+      "source": "caption",
+      "english_text": "What is it? Is of character type. There are only two things in this. There are only two types of things in this entire matrix. Either there is forest in it. Not one with numbers, one with characters. Ok? Because there is a matrix of character. Must be for some reason. Or zero. Zero is not a number zero, it is a character zero. Well there are two things. Well, what do these two mean? Wherever Ek is written, it means land. It means land. And wherever zero is written, it means water or water. Good. What do you have to do? To find the number of islands in this entire matrix,"
+    },
+    {
+      "start_time": 218.879,
+      "end_time": 249.27,
+      "text": "हैं। नंबर ऑफ़ आइलैंड्स फाइंड करने हैं। आइलैंड का मतलब होता है टापू। आइलैंड का क्या मतलब होता है? एक ऐसा जमीन का टुकड़ा जो कि वाटर से सराउंडेड हो। अगेन आइलैंड का क्या मतलब है? एक ऐसा जमीन का टुकड़ा जो कि वाटर से सराउंडेड हो। जैसे अंडमान निकोबार क्या है? एक आइलैंड है। अंडमान निकोबार एक आइलैंड है। लक्षद्वीप एक आइलैंड है। वो क्यों आइलैंड है? क्योंकि ऐसा ऐसा करके एक लैंड है। ये अंडमान निकोबार है। और इसके पूरे चारों ओर इसके चारों ओर चारों ओर पानी है। ये कहीं पे जमीन से नहीं जुड़ा हुआ है। इंडिया से जुड़ा हुआ नहीं है। ठीक है? श्रीलंका।",
+      "source": "caption",
+      "english_text": "Are. Number of islands is to be found. Island means island. What does island mean? A piece of land that is surrounded by water. What does Again Island mean? A piece of land that is surrounded by water. Like what is Andaman Nicobar? There is an island. Andaman Nicobar is an island. Lakshadweep is an island. Why is that an island? Because there is a land by doing this. This is Andaman Nicobar. And there is water all around it all around it. It is not connected to the ground anywhere. Not connected to India. Ok? Sri Lanka."
+    },
+    {
+      "start_time": 249.28,
+      "end_time": 282.95,
+      "text": "श्रीलंका क्या है? एक आइलैंड है। छोटा सा आइलैंड है। यहां पे एक छोटा सा करके आइलैंड है। और इसके पूरे तरफ चारों तरफ क्या है? पानी है। तो आपको ऐसे नंबर ऑफ आइलैंड्स फाइंड करने हैं इसमें। अब आगे चलते हैं और देखते हैं कि इसमें सोचते हैं क्या करना है, कैसे करना है? वो सब के बारे में बात करते हैं धीरे-धीरे। चलिए अब आ जाइए। अभी तो ये बात हो गई कि आइलैंड क्या होता है वगैरह वगैरह। लेकिन इस इनपुट मान लीजिए ये आपको इनपुट दिया हुआ है। अच्छा। इसमें आपको कितने लैंड दिख रहे हैं? लैंड को देखिए हम येलो से लैंड है और बाकी इसमें पानी है। ठीक है? तो पांच तरीके के आपको लैंड दिख रहे होंगे। इसमें अगर हम देखने की कोशिश करें कि कितना तरीके का लैंड दिख रहा है तो आपको",
+      "source": "caption",
+      "english_text": "What is Sri Lanka? There is an island. It is a small island. There is a small island here. And what is all around it? There is water. So you have to find such number of islands in it. Now let's go ahead and see what to do and how to do it? They talk about everything slowly. Come on, come now. Now it has been talked about what is an island etc. But suppose this input is given to you. Good. How many lands can you see in this? Look at the land, we are yellow with land and the rest is water. Ok? So you will be seeing five types of lands. In this, if we try to see how many types of land are visible, then you will see"
+    },
+    {
+      "start_time": 282.96,
+      "end_time": 312.31,
+      "text": "क्वेश्चन फिर से पढ़ना पड़ेगा। क्वेश्चन के हिसाब से अभी आप बोल सकते हैं कि पूरा ही एक आइलैंड है। पूरा एक आइलैंड का मतलब ये देखिए ये अगर हम बना दें तो कोई बोलेगा कि सर ये एक आइलैंड है। ये देखिए ये एक आइलैंड बन गया है। तो एक आइलैंड है इसमें। नहीं एक आइलैंड नहीं है। क्यों नहीं है? क्वेश्चन आपको बोलता है कि आइलैंड का मतलब क्वेश्चन आपको आइलैंड का मतलब साफ-साफ बताता है। साफ-साफ कैसे बताता है? हम आपको बताते हैं। क्वेश्चन बोलता है आइलैंड को आप कैसे बना सकते हैं? आप एडजेसेंट वन जोड़ सकते हैं। वन का मतलब लैंड है। तो एडजेसेंट लैंड को आप ग्रुप कर सकते हैं।",
+      "source": "caption",
+      "english_text": "The question will have to be read again. According to the question now you can say that the whole is an island. Look at the meaning of a complete island, if we make it then someone will say that Sir, this is an island. Look at this, it has become an island. So there is an island in it. No, not an island. Why isn't it? The question tells you the meaning of island. The question tells you clearly the meaning of island. How does he tell clearly? We tell you. The question asks, how can you create an island? You can add adjacent one. Forest means land. So you can group adjacent lands."
+    },
+    {
+      "start_time": 312.32,
+      "end_time": 346.95,
+      "text": "वेरी गुड। लैंड को आप ग्रुप करके एक आइलैंड बना सकते हैं। लेकिन ये ग्रुपिंग कैसे होनी चाहिए? सिर्फ चार डायरेक्शन में होनी चाहिए। सिर्फ चार डायरेक्शन में। कौन-कौन से चार डायरेक्शन? अप, डाउन, लेफ्ट और राइट मतलब नॉर्थ, साउथ, ईस्ट, वेस्ट। डायगोनल अलाउड नहीं है। डायगोनल कनेक्शन अलाउड नहीं है। क्या नहीं अलाउड है? फिर से सुनिए। बहुत कंफ्यूजिंग कांसेप्ट है। ध्यान से सुनिएगा। आइलैंड आपको क्या बोला है? आप ना पासपास के लैंड को ग्रुप कर सकते हैं तो वो एक आइलैंड बन जाएगा। लेकिन ये जो ग्रुपिंग होनी चाहिए ना ये सिर्फ इन चार डायरेक्शन में होनी चाहिए। नॉर्थ, साउथ, ईस्ट, वेस्ट, अप,",
+      "source": "caption",
+      "english_text": "Very good. You can group land and create an island. But how should this grouping take place? It should be in only four directions. In only four directions. Which four directions? Up, Down, Left and Right means North, South, East, West. Diagonal is not allowed. Diagonal connection is not allowed. What is not allowed? Listen again. It's a very confusing concept. Listen carefully. What does the island say to you? If you can group adjacent lands, it will become an island. But the grouping that should happen should be only in these four directions. North, South, East, West, Up,"
+    },
+    {
+      "start_time": 346.96,
+      "end_time": 379.99,
+      "text": "डाउन, लेफ्ट, राइट। डायगोनल कनेक्शन नहीं बन सकता है। अब देखिए हम थोड़ा सा यहां पे ग्रुपिंग करने की कोशिश करेंगे। इस वाले लैंड को देखिए। ये लैंड किसके साथ ग्रुप कर सकता है। क्या यह लैंड इसके साथ ग्रुप हो सकता है? हां, हो सकता है। क्यों? क्योंकि राइट राइट अलाउड है। अच्छा। यह लैंड क्या इसके नीचे वाले के साथ हो सकता है? हां डाउन अलाउड है। वेरी गुड। ये वाला क्या अपने लेफ्ट वाले के साथ हो सकता है? हां हो सकता है। बिल्कुल लेफ्ट भी अलाउड है। और ये वाला क्या अपने अप वाले के साथ हो सकता है? हां अप भी अलाउड है। तो ये एक आइलैंड बन गया। लेकिन क्या ये वाला वन",
+      "source": "caption",
+      "english_text": "Down, left, right. Diagonal connection cannot be made. Now see, we will try to do a little grouping here. Look at this land. With whom can this land be grouped? Can this land be grouped with it? well maybe. Why? Because right is right loud. Good. Can this land be with the one below it? Yes it is down loud. very good. Can this one be with the one on your left? well maybe. Of course the left is also allowed. And can this one happen with the one above? Yes, you are also loud. So it became an island. But is this one a forest?"
+    },
+    {
+      "start_time": 380.0,
+      "end_time": 413.909,
+      "text": "इसके साथ कनेक्टेड है? नहीं। नहीं इसके साथ कनेक्टेड नहीं है क्योंकि ये जो डायरेक्शन है ना ये एक डायगोनल डायरेक्शन है। डायगोनल नहीं दिया हुआ है। हो सकता है आगे चल के किसी क्वेश्चन में बोला जाए कि डायगोनल भी अलाउड है। लेकिन यहां पे डायगोनल नहीं अलाउड है। तो ये वाला वन और इस वाले वन के बीच में कोई कनेक्शन नहीं है। कोई कनेक्शन नहीं है। अब आप इस आइलैंड को देखिए। क्या ये पूरी तरीके से पानी से सराउंडेड है? हां। हां देखिए इसके पूरा राइट में पूरा पानी है। अस्यूम करने बोला गया है कि अगर आप मैट्रिक्स के बाहर चले",
+      "source": "caption",
+      "english_text": "Connected to it? No. No, it is not connected to it because this direction is a diagonal direction. Diagonal is not given. It is possible that in some future question it may be said that diagonal is also allowed. But here diagonal is not allowed. So there is no connection between this one and this one. There is no connection. Now you look at this island. Is it completely surrounded by water? Yes. Yes, see, there is water on its entire right side. It is said to assume that if you go outside the matrix"
+    },
+    {
+      "start_time": 413.919,
+      "end_time": 448.39,
+      "text": "जाते हैं। मतलब आप मैट्रिक्स के बाहर चले गए। बाहर मान लीजिए कि पानी है। बाहर मान लीजिए कि पानी है। तो इसके लेफ्ट साइड में भी पूरा पानी है। इसके ऊपर में भी मैट्रिक्स खत्म हो जा रहा है। तो ऑब्वियसली पानी है। इसके राइट साइड में भी पानी है और इसके बॉटम साइड में भी पानी है। तो क्या ये चार वन का ग्रुप मिलके एक आइलैंड बना? हां बिल्कुल एक आइलैंड बना। तो आपके नंबर ऑफ आइलैंड में एक तो हो चुका है। एक तो हो चुका है। अब बाकी लैंड को देखते हैं। जितना भी लैंड है ना बेसिकली क्वेश्चन क्या है कि हर लैंड को आपको किसी ना किसी आइलैंड का पार्ट बनाना है। और ऐसे करके आपको जितने तरीके के आइलैंड्स मिलेंगे अलग-अलग आइलैंड्स मिलेंगे उनका",
+      "source": "caption",
+      "english_text": "Let's go. Meaning you went outside the matrix. Suppose there is water outside. Suppose there is water outside. So there is full water on its left side also. On top of this, the matrix is ​​also coming to an end. So obviously it is water. There is water on its right side and there is water on its bottom side also. So did this group of four forests together become an island? Yes, of course an island was formed. So there is already one in your number of islands. One has already been done. Now let's look at the rest of the land. Whatever land there is, basically the question is that you have to make every land a part of some island. And by doing this you will get different types of islands."
+    },
+    {
+      "start_time": 448.4,
+      "end_time": 483.35,
+      "text": "हमको काउंट बताना है। अच्छा इस वाले वन को देखिए। क्या ये वन किसी और वन से कनेक्टेड है? देखते हैं। आपको क्या-क्या अलाउड है? अप डाउन लेफ्ट राइट। देखिए इसके अप में पानी है। इसके राइट में पानी है। इसके डाउन में पानी है और इसके लेफ्ट में पानी है। क्या ये वन इस वन से कनेक्ट हो सकता है? नहीं हो सकता है। क्यों? डायगोनल अलाउड नहीं है। तो चार ही डायरेक्शन अलाउड है। इस वन के देखिए चारों डायरेक्शन में क्या है? पानी है। तो क्या ये वन किसी भी और लैंड से कनेक्टेड है? नहीं कनेक्टेड है। तो ये वन अकेला ये वन अकेला एक आइलैंड",
+      "source": "caption",
+      "english_text": "We have to tell the count. Well, look at this forest. Is this forest connected to any other forest? Let's see. What all are you allowed? Up down left right. Look, there is water in it. There is water on its right. There is water in its down and there is water in its left. Can this one be connected to this one? Can't happen. Why? Diagonal is not allowed. So only four directions are allowed. See what is there in the four directions of this forest? There is water. So is this forest connected to any other land? Not connected. So this forest alone, this forest alone, an island"
+    },
+    {
+      "start_time": 483.36,
+      "end_time": 517.029,
+      "text": "है। क्या है? अकेला एक आइलैंड है। तो आपके आइलैंड में एक और जुड़ गया। बाकी के लैंड में आइए। बाकी के लैंड में आइए। इस पर आ जाइए। देखते हैं। क्या इसके ऊपर में जा सकते हैं आप? इसके ऊपर में क्या लैंड है? नहीं। इसके ऊपर में लैंड नहीं है। क्या इसके लेफ्ट में लैंड है? नहीं। लेफ्ट में लैंड नहीं है। क्या इसके नीचे लैंड है? नहीं। बोला जा रहा है कि जैसे ही आप मैट्रिक्स के बाहर चले गए वहां पे पानी है। तो इसके इधर भी आप समझ सकते हैं कि पानी है। लेकिन क्या इसके राइट में लैंड है? यस। इसके राइट में लैंड है। तो क्या ये दोनों लैंड आपस में जुड़े हुए हैं। आपस में कनेक्टेड हैं। यस दे आर कनेक्टेड।",
+      "source": "caption",
+      "english_text": "Is. What is? There is a lonely island. So one more addition to your island. Come to the rest of the land. Come to the rest of the land. Come to this. Let's see. Can you go over it? What land is above it? No. There is no land above it. Is there land on its left? No. There is no land on the left. Is there land beneath it? No. It is being said that as soon as you go outside the matrix there is water. So here also you can understand that there is water. But does it have land to its right? Yes. There is land on its right. So are these two lands connected? Are connected to each other. Yes they are connected."
+    },
+    {
+      "start_time": 517.039,
+      "end_time": 547.269,
+      "text": "वेरी गुड। इस वाले लैंड पे आइए। क्या इसके ऊपर पानी है? हां, इसके ऊपर पानी है। अब लेफ्ट वाला तो ऑलरेडी कनेक्ट हो चुका है। नीचे क्या इसके नीचे पानी है? हां, मैट्रिक्स के बाहर चले गए मतलब पानी है। क्या इसके राइट में पानी है? हां, इसके राइट में भी पानी है। मैट्रिक्स के बाहर निकल गए तो पानी है। तो क्या हुआ? ये दोनों वन मिलके एक आइलैंड बन गया। क्या? ये दोनों वन मिलके एक आइलैंड बन गया। एक और जुड़ गया। अब देखिए क्या और कोई लैंड बचा हुआ है जिसको हम लोग अभी तक नहीं देखे हैं? नहीं। कोई लैंड नहीं बचा हुआ है।",
+      "source": "caption",
+      "english_text": "Very good. Come to this land. Is there water on it? Yes, there is water on it. Now the left one is already connected. Is there water beneath it? Yes, gone outside the matrix means water. Is there water in its right? Yes, there is water on its right side also. If you go out of the matrix, there is water. So what? These two forests together became an island. What? These two forests together became an island. Another one added. Now see, is there any other land left which we have not seen yet? No. There is no land left."
+    },
+    {
+      "start_time": 547.279,
+      "end_time": 581.269,
+      "text": "क्या आंसर आया आपका? आपका आंसर आया थ्री। आपका आंसर कितना आया? थ्री। तीन आइलैंड है। कौन-कौन से तीन आइलैंड है? एक आइलैंड ये हो गया। एक आइलैंड ये अकेला हो गया और एक ये दोनों हो गए। ऐसा क्यों हुआ? क्योंकि लैंड के कनेक्शन में डायगोनल कनेक्शन अलाउड नहीं है। अगर डायगोनल कनेक्शन अलाउड हो जाता ना तो ये दोनों वन कनेक्टेड और ये दोनों वन कनेक्टेड तो आपका आंसर क्या आता? आपका आंसर वन आता। ये पूरा एक आइलैंड बन जाता। लेकिन क्योंकि डायगोनल अलाउड नहीं है तो आपके पास तीन तरीके के आइलैंड्स आ रहे हैं। तो उम्मीद करते हैं कि ये आपको समझ में आया कि क्वेश्चन का मतलब क्या है? आइलैंड का क्या मतलब है?",
+      "source": "caption",
+      "english_text": "Did you get the answer? Your answer came three. What was your answer? Three. There are three islands. Which three islands are there? It has become an island. One island became one and the other became both of them. Why did this happen? Because diagonal connection is not allowed in the land connection. If diagonal connection was allowed, then both of these are connected and both of these are connected, then what would be your answer? Your answer would be one. This would have become an entire island. But since diagonal is not allowed then you have three types of islands. So hope you understand what the question means? What does island mean?"
+    },
+    {
+      "start_time": 581.279,
+      "end_time": 614.87,
+      "text": "बेसिकली आपको वन को या तो लैंड को वन रिप्रेजेंट करता है लैंड को उनको ग्रुप करना है आपस में। कनेक्ट करना है एक दूसरे से। और ये करने के बाद जितने भी अलग-अलग ग्रुप्स बनेंगे, अलग-अलग आइलैंड्स बनेंगे उनका एक काउंट रिटर्न करना है। ये इस क्वेश्चन का मतलब है। अब आइए आपको हम बताते हैं कि किसी भी ऐसे क्वेश्चन को सॉल्व करने का क्या ट्रिक और क्या टेंपलेट है। इसमें ज्यादा कुछ सोचने की जरूरत नहीं है। कोई भी ऐसा क्वेश्चन आपको एक ही चीज उसमें हर बार करनी है। चलिए। तो देखिए किसी भी [गला साफ़ करने की आवाज़] इस तरीके के क्वेश्चन में ना इंट्यूशन बिल्ड करने का सबसे अच्छा आईडिया क्या है? सबसे अच्छा",
+      "source": "caption",
+      "english_text": "Basically you have to group either the forest or the land, one represents the land and group them among themselves. To connect with each other. And after doing this, a count has to be returned of all the different groups and islands that will be formed. This is the meaning of this question. Now let us tell you what is the trick and what is the template to solve any such question. There is no need to think much about this. In any such question, you have to do the same thing every time. Let go. So look, what's the best idea for building intuition in any [clearing throat] type of question? the best"
+    },
+    {
+      "start_time": 614.88,
+      "end_time": 641.99,
+      "text": "एग्जांपल क्या हम आपको बताते हैं। देखिए मान लीजिए आप एक एक्सप्लोरर हैं। आप क्या है? एक एक्सप्लोरर मतलब डोरा द एक्सप्लोरर जैसे आप खोजने आए हैं। आपको ऊपर से ये मैप दिख रहा है। आप आप बैठे हुए हैं हेलीकॉप्टर से। आप ऊपर से आपको ये मैप दिख रहा है। ऊपर से आपको ये देश दिख रहा है कि कहीं-कहीं जमीन है। कहीं-कहीं पानी है। आपको वही फाइंड करना है। कितने नंबर ऑफ आइलैंड है। आप देखिए आप शुरू से देखना शुरू करेंगे। मतलब शुरू से इस कोने से देखना शुरू करेंगे। जैसे ही जैसे ही आपको कोई लैंड दिखता है। आपको क्या दिखता है?",
+      "source": "caption",
+      "english_text": "Let us tell you the example. Look, let's say you're an explorer. What are you? An explorer like Dora the Explorer has come to find you. You are seeing this map from above. You are sitting in a helicopter. You can see this map from above. You can see this country from above and there is land in some places. There is water at some places. You have to find the same. How many number of islands are there? You see you will start watching from the beginning. Meaning, we will start looking from this corner from the beginning. As soon as you see any land. What do you see?"
+    },
+    {
+      "start_time": 642.0,
+      "end_time": 676.069,
+      "text": "कोई लैंड दिखता है। ओके? आप क्या बोलेंगे हेलीकॉप्टर को कि हमको इस पे उतार दो। हमको इस पे उतार दो। ओके? मान लेते हैं कि आपको हेलीकॉप्टर वाला यहां पे उतार दिया। वेरी गुड। अब आप क्या करेंगे ना? अब आप पैदल चलना शुरू करेंगे। इस लैंड से आप पैदल चलना शुरू करेंगे। किन डायरेक्शंस में? जो डायरेक्शन आपको बोला हुआ है अप, डाउन, लेफ्ट, राइट। जब तक आप जा सकते हैं, तब तक आप जाएंगे। देखिए आप क्या करेंगे। यहां पे मान लीजिए आप इस ऑर्डर में ट्रेवल करते हैं। पहले आप कहां जाते हैं? अप फिर डाउन फिर लेफ्ट और फिर राइट यह आप पैदल",
+      "source": "caption",
+      "english_text": "Some land is visible. Ok? What will you tell the helicopter to drop us here? Put us on this. Ok? Let's assume that the helicopter dropped you here. very good. What will you do now? Now you will start walking. You will start walking from this land. In which directions? The direction you are told is up, down, left, right. You will go as long as you can. See what you will do. Here suppose you travel in this order. Where do you go first? Up then down then left then right this is you on foot"
+    },
+    {
+      "start_time": 676.079,
+      "end_time": 710.55,
+      "text": "ट्रेवर्स करना शुरू करेंगे ग्राफ को। देखिए आप क्या करेंगे? आपको यहां पे उतारा हेलीकॉप्टर वाला। ओके। अभी तक आपको क्या बताया कि ज़ीरो आइलैंड है। अभी तक आपको ज़ीरो आइलैंड है। ओके। आपको यहां पे उतारा हेलीकॉप्टर वाला। अब क्या करेंगे? पहले आप अप जाने की कोशिश करेंगे। क्या यहां से आप अप जा सकते हैं? नहीं जा सकते क्योंकि ग्राफ खत्म हो जाएगा। वहां पे पानी है। नहीं जा सकते। वेरी गुड। डाउन। क्या इससे आप डाउन जा सकते हैं? हां, आप डाउन जा सकते हैं। तो आप कहां चले जाएंगे? डाउन चले जाएंगे। और आप जिन आइलैंड्स पे जा चुके हैं, जिन आइलैंड्स को आप ऑलरेडी विजिट कर चुके हैं ना, उनको आप मार्क भी कर देंगे याद रखने के लिए ताकि आप गोल गोल",
+      "source": "caption",
+      "english_text": "Will start traversing the graph. See what you will do? The helicopter dropped you here. Ok. What did we tell you till now that there is Zero Island? So far you have zero islands. Ok. The helicopter dropped you here. What will you do now? First you will try to go up. Can you go up from here? Can't go because the graph will end. There is water there. Can't go. very good. Down. Can this take you down? Yes, you can go down. So where will you go? Will go down. And you will also mark the islands which you have visited, the islands which you have already visited, to remember them so that you can go round and round."
+    },
+    {
+      "start_time": 710.56,
+      "end_time": 737.59,
+      "text": "गोल-गोल ना घूमते रहें। याद कीजिए डीएफएस बीएफएस क्या यूज़ करते थे? विजिटेड एरे। जिस आइलैंड पे आपको एक बार डाला जा चुका है, जिस आइलैंड को आप एक बार जा चुके हैं, विजिट कर चुके हैं ना, उसको आप मार्क करते रहेंगे। कैसे मार्क करेंगे? मान लीजिए कुछ भी, कुछ भी करके मार्क कर इसको मार्क कर दिए। यहां से अप तो जा नहीं सकते। आप डाउन आ गए। अब डाउन क्या आप डाउन जा सकते हैं? हां बिल्कुल। क्यों? क्योंकि डाउन वाला वन है। अगर डाउन में जीरो होता तो आप डाउन नहीं जा पाते। पानी में नहीं जाना है।",
+      "source": "caption",
+      "english_text": "Don't keep going round and round. Remember what DFS (BFS) used to do? Visited Array. You will keep marking the island on which you have been dropped once, the island on which you have gone once, visited it. How to mark? Suppose you marked it by doing anything, anything. Can't go up from here. You came down. Down now can you go down? Yes absolutely. Why? क्योंकि डाउन वाला वन है। अगर डाउन में जीरो होता तो आप डाउन नहीं जा पाते। पानी में नहीं जाना है।"
+    },
+    {
+      "start_time": 737.6,
+      "end_time": 770.71,
+      "text": "सिर्फ लैंड पे रहना है। आप आ गए यहां पे। इसको भी मार्क कर दिए। इसको भी मार्क कर दिए। वेरी गुड। यहां पे सेम चीज कीजिए। अब आप यहां पे खड़े हैं। क्या आपको यहां से अप जाना चाहिए? देखिए यहां पे अप जा सकते हैं। अप में वन है। लेकिन ये वन ऑलरेडी विजिटेड है ना? ये वन पे आप ऑलरेडी आप जा चुके हैं। तो यहां हम लोग नहीं जाएंगे। एक बार जा चुके हैं तो क्यों जाएंगे? सेम Instagram वाला एग्जांपल जब ऑलरेडी देख चुके हैं पूरा ग्राफ इसी पे काम करता है विजिटेड एरे पे कि भैया इसको ऑलरेडी देख चुके हैं ना यहीं से तो डाउन आए थे। अब डाउन से वापस अप जाएंगे तो हम तो ये करते रह जाएंगे गोल-गोल नहीं जाएंगे। ओके क्या",
+      "source": "caption",
+      "english_text": "सिर्फ लैंड पे रहना है। आप आ गए यहां पे। इसको भी मार्क कर दिए। इसको भी मार्क कर दिए। very good. यहां पे सेम चीज कीजिए। Now you are standing here. क्या आपको यहां से अप जाना चाहिए? देखिए यहां पे अप जा सकते हैं। अप में वन है। लेकिन ये वन ऑलरेडी विजिटेड है ना? ये वन पे आप ऑलरेडी आप जा चुके हैं। तो यहां हम लोग नहीं जाएंगे। एक बार जा चुके हैं तो क्यों जाएंगे? सेम Instagram वाला एग्जांपल जब ऑलरेडी देख चुके हैं पूरा ग्राफ इसी पे काम करता है विजिटेड एरे पे कि भैया इसको ऑलरेडी देख चुके हैं ना यहीं से तो डाउन आए थे। अब डाउन से वापस अप जाएंगे तो हम तो ये करते रह जाएंगे गोल-गोल नहीं जाएंगे। ok what"
+    },
+    {
+      "start_time": 770.72,
+      "end_time": 805.03,
+      "text": "आप यहां से डाउन जा सकते हैं? नहीं जा सकते हैं क्योंकि डाउन में पानी है। डाउन में क्या है? पानी है। पानी में नहीं जा सकते हैं। वेरी गुड। क्या आप यहां से लेफ्ट जा सकते हैं? बिल्कुल नहीं जा सकते हैं। लेफ्ट जाएंगे मैट्रिक्स खत्म हो जाएगा। और बोला गया है कि जहां मैट्रिक्स खत्म हो जाए ना वहां पे पानी है तो आप लेफ्ट में नहीं जा सकते हैं। क्या आप राइट जा सकते हैं? बिल्कुल जा सकते हैं। राइट जाइए। राइट जाएंगे तो आप क्या करेंगे? क्या आप राइट जा सकते हैं? यस। क्योंकि राइट में वन है। आप लैंड पे ट्रैवल कर सकते हैं। तो आप राइट पहुंच गए। अगेन इसको क्या किए? विजिटेड मार्क कर दिए। इसको विजिटेड मार्क कर दिए। ये भी हरा हो गया।",
+      "source": "caption",
+      "english_text": "आप यहां से डाउन जा सकते हैं? नहीं जा सकते हैं क्योंकि डाउन में पानी है। डाउन में क्या है? There is water. पानी में नहीं जा सकते हैं। very good. क्या आप यहां से लेफ्ट जा सकते हैं? Can't go at all. लेफ्ट जाएंगे मैट्रिक्स खत्म हो जाएगा। और बोला गया है कि जहां मैट्रिक्स खत्म हो जाए ना वहां पे पानी है तो आप लेफ्ट में नहीं जा सकते हैं। क्या आप राइट जा सकते हैं? बिल्कुल जा सकते हैं। राइट जाइए। राइट जाएंगे तो आप क्या करेंगे? क्या आप राइट जा सकते हैं? Yes. क्योंकि राइट में वन है। आप लैंड पे ट्रैवल कर सकते हैं। तो आप राइट पहुंच गए। अगेन इसको क्या किए? विजिटेड मार्क कर दिए। इसको विजिटेड मार्क कर दिए। ये भी हरा हो गया।"
+    },
+    {
+      "start_time": 805.04,
+      "end_time": 834.23,
+      "text": "वेरी गुड। यहां पे सेम काम कीजिए। क्या यहां से आप अप जा सकते हैं? पहले देख लेते हैं कि क्या यहां से आप राइट जा सकते हैं? नहीं जा सकते हैं। लेफ्ट लेफ्ट जा सकते थे लेकिन लेफ्ट वाला ऑलरेडी हो चुका है। विजिटर तो नहीं जाएंगे। डाउन डाउन जा ही नहीं सकते हैं। पानी है। अप जा सकते हैं। आप अप चले गए। अप चले गए तो यहां पे आ गए। यहां पे आके आप फिर से क्या किए इसको हरा मार्क कर दिए। सेम काम दोहराइए। क्या यहां से आप अप जा सकते हैं? नहीं। अप जाएंगे तो मैट्रिक्स खत्म हो जाएगा। नहीं जा सकते हैं। क्या यहां से आप डाउन जा सकते हैं?",
+      "source": "caption",
+      "english_text": "very good. Do the same work here. Can you go up from here? First let's see if you can go right from here? Can't go. Left could have gone left but the left one is already done. Visitors will not go. Can't go down. There is water. Can go up. You went up. When we went up, we came here. After coming here, what did you do again and mark it green. Repeat the same thing. Can you go up from here? No. If you go up, the matrix will end. Can't go. Can you go down from here?"
+    },
+    {
+      "start_time": 834.24,
+      "end_time": 868.389,
+      "text": "डाउन देखा जाए तो जा सकते हैं। लेकिन डाउन वाला विजिटेड है ना? तो डाउन से ही तो आए थे अप। नहीं जाएंगे। विजिटेड में वापस नहीं जाएंगे। क्या यहां से आप लेफ्ट जा सकते हैं? देखा जाए तो टेक्निकली जा सकते हैं। लेकिन लेफ्ट वाला भी ऑलरेडी विजिटेड है। उस आइलैंड से आप शुरू किए थे। मतलब इस आइलैंड को आप देख चुके हैं। नहीं जाएंगे। क्या आप राइट जा सकते हैं? बिल्कुल नहीं जा सकते हैं। राइट में पानी है। पानी में नहीं जाना है। ओके? अब देखिए ऐसा जब आप किए ना ऐसा जब आप किए इसमें आप कुछ भी डीएफएस, बीएफएस वो सब बाद में कोड में देखेंगे। लेकिन अब आप कर लिए। अब आप देखिए कि अब आप ना फंस गए हैं। इस चारों आइलैंड के ग्रुप पे आप फंस चुके हैं। अब आप और",
+      "source": "caption",
+      "english_text": "If you look down, you can go. But the one down is visited, right? So we came up from down. Will not go. Will not go back to visited. Can you go left from here? If seen technically we can go. But the left one is also already visited. You started from that island. Meaning you have seen this island. Will not go. Can you go right? Can't go at all. There is water on the right. Do not go into the water. Ok? Now see, when you did it, when you did it, you will see anything like DFS, BFS, all that later in the code. But now you are done. Now you see that you are no longer stuck. You are stuck on this group of four islands. now you and"
+    },
+    {
+      "start_time": 868.399,
+      "end_time": 901.189,
+      "text": "कहीं नहीं जा सकते हैं। आपको जितना लैंड कवर करना था आप कर चुके हैं इधर-उधर इधर-उधर घूम के। आपको जितना अलाउंस था अब आपको डायगोनल का अलाउंस नहीं है तो आप यहां से यहां नहीं गए। होता तो चले जाते लेकिन आपको जितना इजाजत थी जितना भी आपको बताया गया था उतने में आप ये कवर कर चुके हैं। इसका क्या मतलब है कि आप जितना भी कवर किए कर लिए। अब आप ऊपर आए हेलीकॉप्टर में मतलब जितना भी लैंड कवर हुआ है ये एक आइलैंड का पार्ट है ये एक कनेक्टेड ग्रुप का पार्ट है तभी तो उसको कवर कर लिए ना अगर वो कनेक्टेड नहीं होता तो कवर कैसे",
+      "source": "caption",
+      "english_text": "Can't go anywhere. You have covered all the land you had to cover by moving here and there. Now you don't have diagonal allowance as much as you had, so you didn't go from here to here. If it had happened, you would have gone but you have covered as much as you were allowed and as much as you were told. What does it mean that you have covered as much as you can? Now you come up in the helicopter, meaning whatever land is covered, it is a part of an island, it is a part of a connected group, only then it is covered, if it is not connected then how can it be covered?"
+    },
+    {
+      "start_time": 901.199,
+      "end_time": 935.99,
+      "text": "करते अब आप वापस हेलीकॉप्टर में वापस आ गए और आप अपने काउंटर को आप अपने काउंटर को या नंबर ऑफ आइलैंड्स को क्या कर दिए वन कर दिए जीरो से क्योंकि आपको एक लैंड दिखा था आप उस लैंड पे कूदे आसपास के जितने कनेक्टिंग लैंड थे सबको जाके कवर कर दिए अप डाउन लेफ्ट राइट करके के और इनको विजिटेड भी मार्क कर दिए। उसके बाद उसके बाद आप क्या किए? अपने काउंटर को एक से बढ़ा दिए। वेरी गुड। अब आप क्या किए? वापस देखना शुरू कीजिए। वापस इस मैप में देखना शुरू कीजिए। कौन ऐसा क्या ऐसा कोई वन बचा है जो विजिटेड ना हो जो कि विजिटेड ना हो।",
+      "source": "caption",
+      "english_text": "Now you came back in the helicopter and what did you do to your counter or the number of islands, you changed it from zero to one because you saw a land, you jumped on that land and covered all the nearby connecting lands by doing up, down, left, right and also marked them as visited. What did you do after that? Increase your counter by one. very good. What did you do now? Start looking back. Start looking back at this map. Who is there, is there any such forest left which is not visited, which is not visited."
+    },
+    {
+      "start_time": 936.0,
+      "end_time": 964.79,
+      "text": "क्या कोई ऐसा लैंड बच गया है जो विजिटेड ना हो? यस बच गया है। कौन सा? ये वाला लैंड बच गया है। हेलीकॉप्टर को क्या बोलिएगा? हमको इस लैंड पे उतार दो अब इसको एक्सप्लोर करेंगे और इसके कनेक्टिंग में जितने भी हैं सबको एक्सप्लोर करके उनको एक आइलैंड बना देंगे। आपको आपका हेलीकॉप्टर क्या किया? आपको यहां पे उतार दिया। सबसे पहला काम क्या करते हैं? इस पे हरा कलर से मार्क कर लेते हैं कि भैया इसका काम हो चुका है। इस पे हम विजिट कर चुके हैं। अब दोबारा इस पे नहीं आना है। ठीक है? अब इस पे सेम काम कीजिए। एक्सप्लोरर हैं।",
+      "source": "caption",
+      "english_text": "Is there any land left that has not been visited? Yes, it has survived. Which one? This land has been saved. What would you call a helicopter? Land us on this land, now we will explore it and by exploring all those connected to it, we will make them an island. What did you do with your helicopter? Dropped you here. What's the first thing you do? Let's mark it with green color that the work is done. We have visited this. Don't have to come to this again. Ok? Now do the same work on this. Are explorers."
+    },
+    {
+      "start_time": 964.8,
+      "end_time": 992.629,
+      "text": "एक्सप्लोर कीजिए। क्या आप यहां से अप जा सकते हैं? बिल्कुल नहीं जा सकते हैं। अप में पानी है। क्या आप यहां से डाउन जा सकते हैं? कतई नहीं जा सकते हैं। पानी है। क्या यहां लेफ्ट जाया जा सकता है? नहीं जाया जा सकता है। राइट जा सकते हैं। नहीं भाई साहब राइट में नहीं जा सकते हैं। क्या करेंगे? कुछ नहीं करेंगे। वापस आ जाएंगे। हेलीकॉप्टर को क्या बोलेंगे? हमको उठा लो। अब तो कोई काम ही नहीं बचा ना। यहां आके आप फंस गए। वापस आप देखिए ऊपर में चारों में फंस गए थे। हो गया था तो यहां अकेले लैंड में ही फंस गए। इसका क्या मतलब है?",
+      "source": "caption",
+      "english_text": "Explore. Can you go up from here? Can't go at all. There is water in it. Can you go down from here? Can't go at all. There is water. Can one go left here? Cannot be visited. Can go right. No, Bhai Saheb cannot go to the right. What to do? Will not do anything. Will come back. What will you call a helicopter? Pick us up. Now there is no work left. By coming here you are trapped. Look back at the top, all four were trapped. Had it happened, we were stuck here alone in the land. What does it mean?"
+    },
+    {
+      "start_time": 992.639,
+      "end_time": 1019.35,
+      "text": "ये अकेला लैंड एक आइलैंड है। इस पे आइलैंड का मतलब ही यही होता है ना? अगर आपको किसी आइलैंड पे उतार दिया जाए और आपको बोला जाए कि भैया पानी में नहीं जाना है। तो आप उसी आइलैंड पे फंस जाएंगे ना। पानी में जाना ही नहीं है। यही काम इसके साथ हुआ है इस आदमी के साथ। ये आदमी यहां आके फंस गया। वापस हेलीकॉप्टर पे आइए। और क्योंकि ये अकेला एक आइलैंड है। अपने काउंटर को क्या कीजिए? एक और बढ़ा दीजिए। अब आपके पास दो आइलैंड काउंट हो गए हैं। सेम काम कीजिए।",
+      "source": "caption",
+      "english_text": "This lonely land is an island. This is what the island means, isn't it? If you are dropped on an island and you are told not to go into the water. So you will be stuck on the same island. Don't go into the water. The same thing has happened to this man. This man came here and got trapped. Come back to the helicopter. And because it is an island alone. What to do with your counter? Increase one more. You now have two island counts. Do the same work."
+    },
+    {
+      "start_time": 1019.36,
+      "end_time": 1045.59,
+      "text": "क्या मैप पे कोई ऐसा वन या ऐसा लैंड बचा है जो विजिटेड ना हो जो विजिटेड ना हो। वन तो बहुत सारे बचे हैं। लेकिन इनका काम हो चुका है। काम होने का क्या मतलब है? किसी ना किसी आइलैंड पे जा चुके हैं। क्या कोई ऐसा वन है जो कि विजिटेड ना हुआ हो। यस है। ये वाला वन बचा हुआ है। और ये भी बचा हुआ है। तो हम लोग एक-एक करके ले रहे हैं। एक-एक करके लेंगे। ये वाले वन पे क्या बोलेंगे हेलीकॉप्टर को? भैया हमको यहां पे कूदवा दो। हेलीकॉप्टर कूद गया यहां पे।",
+      "source": "caption",
+      "english_text": "Is there any unvisited forest or land left on the map? There are plenty of forests left. But their work is done. What does it mean to have work? Have been to some island or the other. Is there any forest which has not been visited? Yes it is. This forest is left. And this is also left. So we are taking it one by one. Will take it one by one. What will these people say to the helicopter on the forest floor? Brother, make us jump here. The helicopter jumped here."
+    },
+    {
+      "start_time": 1045.6,
+      "end_time": 1079.75,
+      "text": "सबसे पहला काम क्या करेंगे? हरा मार्क कर देंगे इसको। किसका काम हो चुका है। सेम काम यहां से एक्सप्लोर करने की कोशिश कीजिए। क्या आप यहां से ऊपर जा सकते हैं? बिल्कुल नहीं जा सकते हैं। पानी है। क्या आप यहां से नीचे जा सकते हैं? बिल्कुल नहीं जा सकते हैं। नीचे तो मट्रिक्स ही खत्म है। वहां भी पानी है। क्या यहां से लेफ्ट जा सकते हैं? बिल्कुल नहीं जा सकते हैं। लेफ्ट में भी पानी है। क्या यहां से राइट जा सकते हैं? यस। राइट जा सकते हैं। क्यों? राइट में भी लैंड है। राइट में भी लैंड है। क्या करेंगे? राइट आ जाएंगे। और इसको क्या कर देंगे? हरा कलर से मार्क कर देंगे। सेम एक्सरसाइज। क्या यहां से ऊपर",
+      "source": "caption",
+      "english_text": "What will you do first? Will mark it green. Whose work has been done? Try to explore the same work from here. Can you go up from here? Can't go at all. There is water. Can you go down from here? Can't go at all. The matrix itself is finished below. There is water there too. Can we go left from here? Can't go at all. There is water on the left also. Can we go right from here? Yes. Can go right. Why? There is land on the right also. There is land on the right also. What to do? Wright will come. And what will we do with it? Will mark with green color. Same exercise. what up from here"
+    },
+    {
+      "start_time": 1079.76,
+      "end_time": 1113.669,
+      "text": "जा सकते हैं? नहीं। नीचे जा सकते हैं? नहीं। लेफ्ट टेक्निकली जा सकते हैं। लेकिन लेफ्ट वाला हो चुका है विजिटेड। तो बार-बार जाने की जरूरत नहीं है। आप एक्सप्लोरर हैं। नई जगह पे जाना पसंद करते हैं। क्या राइट जा सकते हैं? बिल्कुल नहीं। क्या करेंगे? आप यहां पे फंस गए। इसके बाहर आप कहीं नहीं जा सकते हैं। हेलीकॉप्टर को क्या बोलेंगे? हमको वापस बुला लो। और और क्योंकि आप एक और नया आइलैंड एक्सप्लोर करके आए हैं। अपने एक और में एक जोड़ देंगे। अब दोबारा देखिए। क्या मैप में कोई ऐसा वन बच गया है जो कि अनविज़िटेड हो जो कि हरा कलर में ना हो?",
+      "source": "caption",
+      "english_text": "can go? No. Can go down? No. Can go left technically. But the left one has been visited. So there is no need to go again and again. You are an explorer. Likes to go to new places. Can go right? no way. What to do? You are stuck here. You can't go anywhere outside this. What will you call a helicopter? Call us back. And because you have come back from exploring another new island. Will add one to your another one. Now look again. Are there any unvisited forests left on the map that are not colored green?"
+    },
+    {
+      "start_time": 1113.679,
+      "end_time": 1145.99,
+      "text": "नहीं। ऐसा कोई लैंड नहीं है जो कि विजिटेड ना हुआ हो। ये पूरा एक्सरसाइज करते-करते जब आपको मैप में ऐसा कोई लैंड ना दिखे जब जो कि अनविज़िटेड हो। कितना आंसर आया? तीन। कौन-कौन से तीन आइलैंड? एक दो तीन। इस ग्राफ के कनेक्टेड कॉम्पोनेंट्स या जब भी आपको ऐसा बोला जाए ना कि एक ग्रिड दिया हुआ है। फलाना फलाना चीजें हैं। देख के बताओ कितने लोग कनेक्टेड है। कुछ भी ऐसा सिमिलर क्वेश्चन सबका ये टेंपलेट है। ये इंट्यूशन से सब कुछ काम करता है। जो हम बोले कि हमको यहां पे उतार दो। वो क्या",
+      "source": "caption",
+      "english_text": "No. There is no land which has not been visited. While doing this exercise, you do not see any land on the map which is unvisited. How much answer did you get? Three. Which three islands? One two three. The connected components of this graph or whenever you are told that a grid is given. There are such and such things. Look and tell how many people are connected. This is the template for all similar questions. Everything works with this intuition. Whatever we said, drop us here. what is that"
+    },
+    {
+      "start_time": 1146.0,
+      "end_time": 1180.95,
+      "text": "उतार रहे हैं? आप बेसिकली इस मैप पे या इस ग्राफ पर एक लूप चला रहे हैं। नेस्टेड लूप चला रहे हैं। जैसे ही आपको कोई वन मिलता है जो कि अनविज़िटेड है। आप उस पे डीएफएस कर देते हैं। उसको स्टार्टिंग पॉइंट मान के। डीएफएस का क्या मतलब होता है? आप उसको स्टार्टिंग पॉइंट मान के एक डीएफएस फंक्शन में भेज देते हैं कि अभी हम 0 पे गए हैं। क्यों? क्योंकि ये लैंड है। उसके बाद हरा मार्क करने का क्या मतलब है? आप उस विजिटेड एरे में उसको लिख देते हैं कि मेरा विजिटेड ऑफ 0 1 बन चुका है। मतलब ये",
+      "source": "caption",
+      "english_text": "Taking off? You're basically running a loop over this map or this graph. Running nested loops. As soon as you find a forest which is unvisited. You do DFS on it. Taking that as a starting point. What does DFS mean? You send that to a DFS function with the starting point value that we're currently at 0. Why? Because this is land. Then what does green marking mean? You write in that visited array that my visited off 0 has become 1. means this"
+    },
+    {
+      "start_time": 1180.96,
+      "end_time": 1214.71,
+      "text": "विजिटेड हो चुका है। वेरी गुड। अब ट्रेवर्स करने का क्या मतलब है? उसका मतलब क्या है? अब आप इस जीरो जीरो से कहां-कहां जा सकते हैं? कहां-कहां जा सकते हैं? चार डायरेक्शन में आप जा सकते हैं। अगर कैसे पता चलेगा कि आप जा सकते हैं कि नहीं? अगर मान लीजिए कहीं जाने में मैट्रिक्स ही खत्म हो गया नहीं जा सकते हैं। अगर कहीं जाने में पानी आ रहा है नहीं जा सकते हैं। अगर कहीं पे वन आ रहा है लेकिन वो वन विजिटेड है नहीं जा सकते हैं। आप कब जा सकते हैं? जब उस डायरेक्शन में कोई ऐसा वन हो जो कि विजिटेड ना हो जिसका विजिटेड",
+      "source": "caption",
+      "english_text": "Has been visited. very good. Now what does it mean to traverse? What does that mean? Now where can you go from this zero zero? Where can we go? You can go in four directions. How will you know if you can go or not? If we assume that we cannot go anywhere, the matrix itself is destroyed. If there is water coming somewhere, you cannot go. If a forest is coming somewhere but that forest is visited, you cannot go there. When can you go? When there is a forest in that direction which is not visited and which is visited"
+    },
+    {
+      "start_time": 1214.72,
+      "end_time": 1247.909,
+      "text": "जीरो हो। अगर ऐसा मिलता है तो आप वहां पे डीएफएस में वापस उस पे चले जाते हैं। सेम है कैसा? प्रत्युष के प्रोफाइल से दीपिका के प्रोफाइल पे जाना। डीएफएस एक नोड से दूसरे नोड या तो एक बॉक्स से दूसरे बॉक्स ये सेम वही काम हम लोग कर रहे हैं। तो ये हो रहा पूरा इंट्यूशन। हमको नहीं लगता इसको इससे ज्यादा अच्छे तरीके से समझाया जा सकता है। ये मेरे हिसाब से बहुत सिंपल बहुत क्रूशियल एक्सप्लेनेशन था। अब आइए कोड के बारे में थोड़ा बात करें। अब आपको हम वो टेक्निक दिखाएंगे जो हम बात कर रहे थे। ये सारा कुछ बहुत कॉम्प्लेक्स लग रहा है। लेकिन एक बार वो टेक्निक या टेंपलेट",
+      "source": "caption",
+      "english_text": "Be zero. If it is found then you go back to it in DFS. How are the beans? Going from Pratyush's profile to Deepika's profile. DFS from one node to another or from one box to another, we are doing the same thing. So this is complete intuition happening. We don't think it can be explained in a better way than this. According to me, this was a very simple but very crucial explanation. Now let's talk a little about code. Now we will show you the technique we were talking about. This all sounds very complex. But once that technique or template"
+    },
+    {
+      "start_time": 1247.919,
+      "end_time": 1282.31,
+      "text": "आप लोग सीख जाएंगे तो ये तो बाएं हाथ का खेल हो जाएगा। ठीक है? चलिए अब बात आती है कि इस तरीके के कोड को इंप्लीमेंट कैसे किया जाता है जो सबसे इंपॉर्टेंट चीज है ना कि आप इसको सीख जाइए बाकी सब चीज इसी पे चलता है ठीक है अप डाउन कैसे जाना है सबसे इंपॉर्टेंट पार्ट तो ये है कि भैया हम किसी मैप में आए किसी बॉक्स पे आए हैं अब अप डाउन लेफ्ट राइट मतलब उसका क्या है ऐसा तो है नहीं कि आप लिख देंगे तो अप चला जाएगा नहीं जाएगा ना देखिए डीएफएस में हम लोग कभी भी किसी भी ब्लॉक में जब आपका एक्सप्लोरर बोलता था कि हमको इस फलाने ब्लॉक पे ड्रॉप करो तो क्या बोलता था उसका कुछ आई होगा और कुछ जे होगा मतलब मतलब कुछ x कोऑर्डिनेट और y को ऐसे",
+      "source": "caption",
+      "english_text": "If you guys learn this then it will become a game for the left hand. Ok? Let us now come to the question of how to implement this type of code, which is the most important thing, don't you learn it, everything else depends on this, okay, how to go up and down, the most important part is that brother, we have come to some box in a map, now what is the meaning of up, down, left right? It is not that if you write, it will go up, it will not go, don't see, in DFS, we will never go to any block when your explorer. He used to say drop us on such and such block, then what he used to say was that it would have some I and some J, which means some x coordinate and y coordinate would be like this."
+    },
+    {
+      "start_time": 1282.32,
+      "end_time": 1316.47,
+      "text": "ही दिखता है ना टू डी मैट्रिक्स में इसी से डिनोट होता है। अच्छा देखते हैं कि मान लीजिए कि आप अभी इस बीच वाले ब्लॉक पे हैं। वन वन वाले ब्लॉक पे हैं। आपको चार डायरेक्शन को पहले तो आपको चेक करना है कि भैया हम जा सकते हैं कि नहीं। मतलब इसका मतलब क्या है कि हो सकता है कि चारों डायरेक्शन में आप मैट्रिक्स से बाहर ही चले जाएं। अच्छा। अच्छा अच्छा मैट्रिक्स से बाहर नहीं गए तो ये भी खतरा है कि उधर पानी ना हो। मतलब जीरो ना लिखा हो। ओके। अब होगा कि अच्छा जीरो नहीं लिखा है वन लिखा है तो उसका विजिटेड मतलब बहुत चीजें आपको चेक करनी है फिर उस पे जाना है तो ये कैसे करेंगे देखिए हम लोग देखते हैं कि क्या करेंगे अब जा के देखते हैं वन वन वाले ब्लॉक से इस बीच वाले ब्लॉक से ऊपर",
+      "source": "caption",
+      "english_text": "It is visible in the 2D matrix and is denoted by this. Okay, let's see, let's say you are right now on this middle block. One is on the forest block. First of all you have to check the four directions whether we can go or not. What this means is that it is possible that you may go out of the matrix in all four directions. Good. Well, if you don't go out of the matrix then there is a danger that there may be no water there. Meaning zero is not written. Ok. Now it will happen that okay, zero is not written, one is written, so it has been visited, it means many things, you have to check and then go to that, so see how we will do this, let's see what we will do, now let's go and see from the one block above this middle block."
+    },
+    {
+      "start_time": 1316.48,
+      "end_time": 1343.029,
+      "text": "जाइए जस्ट इसके ऊपर तो आप कहां पहुंच जाएंगे इस वाले ब्लॉक तक पहुंचेंगे मतलब 0 वन तक 0 वन तक पहुंचे ओके लेफ्ट अप नहीं अप हो गया डाउन जाने की कोशिश करिए क्या डाउन जाने की कोशिश करें मतलब इस वाले ब्लॉक पे क्या है ये ब्लॉक टू वन वन वेरी गुड। अब लेफ्ट जाने की कोशिश करिए। बाएं यहां पे आने की कोशिश करिए। कौन सा ब्लॉक है ये? वन 0 और राइट जाने की कोशिश करिए।",
+      "source": "caption",
+      "english_text": "Go just above it, where will you reach, reach this block, meaning reach 0 one, reach 0 one, okay left up, not up, try to go down, what, try to go down, meaning what is on this block, this block to one one very good. Now try to go left. Try to come left here. Which block is this? One 0 and try to go right."
+    },
+    {
+      "start_time": 1343.039,
+      "end_time": 1376.63,
+      "text": "कौन सा ब्लॉक है ये? वन और टू। वन और टू। इसमें देखिए बहुत इंपॉर्टेंट चीज हो क्या रहा है। आपका ओरिजिनल ij क्या था? वन वन। आप अप डाउन लेफ्ट राइट लिख के देखिए। आपको ये कोऑर्डिनेट मिलेगा। इसमें देखिए हो क्या रहा है? इसमें ना आप i - 1 और j पे जा रहे हैं। देखिए i1 से 0 हो गया। j सेम रहा। डाउन में आप i + 1 और j पे जा रहे हैं। i वन से टू हो गया। j सेम रहा। लेफ्ट में आप i और j - 1 तक जा रहे हैं। देखिए i सेम है लेकिन j - 1 हो गया। आप यहां पे वन",
+      "source": "caption",
+      "english_text": "Which block is this? One and two. One and two. See what is happening in this very important thing. What was your original ij? One one. You try writing up, down, left right. You will get this coordinate. See what is happening in this? In this you are going to i - 1 and j. See i1 became 0. j remained the same. In down you are going to i + 1 and j. i went from one to two. j remained the same. On the left you are going to i and j - 1. See i is the same but j becomes - 1. you here one"
+    },
+    {
+      "start_time": 1376.64,
+      "end_time": 1402.87,
+      "text": "था यहां पे ज़ीरो हो गया। राइट में आप i और j + 1 तक जा रहे हैं। तो देखिए या तो आई चेंज हो रहा है या तो जे चेंज हो रहा है। तो ये आपके चार डायरेक्शन है। अब आप चाहे तो इसको मैनुअली लिख सकते हैं। मतलब किसी भी i जे पे अगर आप ऐसे ऐसा ऐसे ऐसा करेंगे तो आप अप डाउन पहुंच जाएंगे। लेकिन यहीं पे वो ब्यूटी काम आता है। हम क्या करेंगे ना एक एरे बना लेंगे। एक x एक्सिस का एरे एक y एक्सिस का एरे उसमें चार चीजें रहेंगी। देखिए कौन-कौन सी चीजें रहेंगी।",
+      "source": "caption",
+      "english_text": "It became zero here. On the right you are going to i and j + 1. So see, either I is changing or J is changing. So these are your four directions. Now if you want, you can write it manually. Meaning, if you do this on any i or j, you will go up and down. But this is where that beauty comes in handy. What will we do? We will create an array. An array of x axis and an array of y axis. There will be four things in it. See what things will remain."
+    },
+    {
+      "start_time": 1402.88,
+      "end_time": 1435.909,
+      "text": "इंट x 4 इक्वल टू देखिए हम क्या लिखेंगे? I आपको चार डायरेक्शन में I क्या-क्या बदला? क्या-क्या? आई में क्या-क्या ऐड हुआ? तो देखिए, अप जाने के बजाय आपको i में -1 करना पड़ा। तो हम x में लिख देंगे -1। डाउन जाने के लिए आपको i में +1 करना पड़ा। तो हम यहां पे लिख देंगे वन। लेफ्ट जाने के लिए आपको i में कितना बढ़ाने की जरूरत है? कुछ नहीं। ज़ीरो, तो हम यहां पे लिख देंगे ज़ीरो। राइट जाने के लिए i में क्या चेंज होगा? कुछ नहीं, ज़ीरो। यह आपका बन गया x एक्सिस। y एक्सिस बना लीजिए।",
+      "source": "caption",
+      "english_text": "Int x 4 is equal to see what we will write? What changed in the four directions? what-what? What was added to I? So see, instead of going up you had to go -1 in i. So we will write -1 in x. To go down you had to +1 in i. So we will write here one. How much do you need to increase i to go left? Nothing. Zero, so we will write zero here. What will change in i to go right? Nothing, zero. This becomes your x axis. Make y axis."
+    },
+    {
+      "start_time": 1435.919,
+      "end_time": 1468.31,
+      "text": "किसके लिए? j के लिए। j के लिए। देखिए अप जाने के लिए जे में क्या चेंज हुआ? कुछ नहीं। जीरो। डाउन जाने के लिए j में क्या चेंज हुआ? कुछ नहीं। जीरो। लेफ्ट जाने के लिए जे में क्या चेंज हुआ? -1 मतलब -1 चेंज हुआ। -1 राइट जाने के लिए j में क्या चेंज हुआ? +1 तो 1 ये आपका y कोऑर्डिनेट। अब कभी भी आपको ये चारों फाइंड करना हो ना कि भैया अब अभी हम मान लीजिए वन वन पे हैं। हम चारों डायरेक्शन में जाके देखना चाहते हैं। तो आप एक ना छोटा सा लूप",
+      "source": "caption",
+      "english_text": "For whom? for j. for j. See what changed in J to go up? Nothing. Zero. What changed in j to go down? Nothing. Zero. What changed in J to go left? -1 means -1 change. -1 What changed in j to go right? +1 So 1 is your y coordinate. Now whenever you want to find these four, brother, now let us assume that we are on one. We want to go and see in all four directions. So you don't have a small loop"
+    },
+    {
+      "start_time": 1468.32,
+      "end_time": 1501.669,
+      "text": "चलाइए। छोटा सा लूप चलाइए। आई एन टी k = 0 k &lt; 4 k + उसके बाद आई एन टी रो = i + x k और कॉलम = j + y ऑफ़ k इससे क्या हो रहा है ना कि इस एक लूप से एक लूप से आपको ये सब मिल जाएगा। ये सब मिल जाएगा। देखिए जब k = 0 होगा ना तो आप कौन सा एलिमेंट लेंगे? ये वाला और ये वाला। आपका रो क्या बन जाएगा?",
+      "source": "caption",
+      "english_text": "Play it. Play a small loop. i n t k = 0 k < 4 k + then i n t row = i + x k and column = j + y of k What is happening with this is not this one loop one loop you will get all this. You will get all this. See, when k = 0, which element will you take? This one and this one. What will your cry become?"
+    },
+    {
+      "start_time": 1501.679,
+      "end_time": 1534.23,
+      "text": "i + x ऑफ़ k मतलब i - 1 आपका कॉलम क्या बन जाएगा? j + y ऑफ़ k मतलब j + 0 मतलब j तो क्या आपको i - j मिल गया यहां पे? देखिए i - 1 और j मिल गया। k = 1 करेंगे ना आपको ये मिल जाएगा। k = 2 करेंगे ना ये मिल जाएगा। k = 3 पे ये मिल जाएगा। तो इस एक लूप से आपको चारों डायरेक्शन चेक हो जाएगा। मतलब आप जो जो काम करना चाहते हैं ना रो कॉलम पे कर लीजिए। ये चारों देख लेगा। अच्छा आप लोगों को लग रहा होगा कि इतना क्यों कर रहे हैं? हम ऐसे ही लिखेंगे ना। हम ये लिखेंगे। नहीं कुछ-कुछ क्वेश्चन",
+      "source": "caption",
+      "english_text": "i + x of k means i - 1 what will your column become? j + y of k means j + 0 means j So do you get i - j here? See i - 1 and j found. If you do k = 1 you will get this. If we do k = 2, we will get this. This will be achieved at k = 3. So with this one loop you will check all four directions. Meaning, whatever work you want to do, do it on the column. He will see all four. Well, you people must be thinking why are you doing so much? We will write like this, right? We will write this. no, some questions"
+    },
+    {
+      "start_time": 1534.24,
+      "end_time": 1565.269,
+      "text": "में ना डायगोनल भी अलाउड होता है। उसमें आठ डायरेक्शन होते हैं। मतलब नॉर्थ ईस्ट साउथ वेस्ट तो होता ही है। नॉर्थ ईस्ट नॉर्थ वेस्ट बहुत सारा डायरेक्शन आठ डायरेक्शन मतलब अभी तो आप बस चार ये ले रहे हैं। ये ले रहे हैं। ये ले रहे हैं ये ले रहे हैं। डायगोनल में और चार जुड़ जाते हैं। ये वाला ये वाला ये वाला ये वाला। तो ये जो चार है ना ये आठ बन जाएगा। उसमें आपको बहुत वो कंबर सम हो जाता है। उसमें हम क्या करेंगे ना इसको एट कर देंगे और यहां पे और जोड़ देंगे जो जो है। उसमें आप कुछ नहीं करेंगे। लिख के आठ पे चला देंगे।",
+      "source": "caption",
+      "english_text": "Neither diagonal is allowed in me. There are eight directions in it. Meaning North East South West is definitely there. North East North West A lot of directions Eight directions means right now you are taking only these four. These are taking. They are taking, they are taking. Four more are added in the diagonal. This one, this one, this one, this one. So this four which is four will become eight. In that you get a lot of that waist. What we will do in that is we will attach it and add more here. You will not do anything in that. Will write and run it at eight."
+    },
+    {
+      "start_time": 1565.279,
+      "end_time": 1599.19,
+      "text": "जितना भी डायरेक्शन जाना है उसके हिसाब से ये कैलकुलेशन कर लीजिए। उसको x और y में लिखिए। x और y में क्या लिख रहे हैं कि i को क्या चेंज होना पड़ रहा है? अप जाने के लिए i में क्या चेंज हो रहा है? i में -1 हो रहा है। तो पहले -1 लिख दिए। डाउन जाने के लिए i में क्या चेंज हो रहा है? +1 हो रहा है। तो +1 लिख दिए। अप डाउन लेफ्ट राइट। अब इसमें जरूरी नहीं है कि आप ऐसा ही लिखिए। आप लेफ्ट, राइट, अप डाउन उस हिसाब से x और y बनाइएगा। तो ये एक टेक्निक है जिससे आप जा सकते हैं जिससे आप चारों डायरेक्शन में जा सकते हैं। दूसरी बात दूसरी बात ऐसा हो सकता है कि इसके दौरान आप मैट्रिक्स से बाहर निकल जाएं।",
+      "source": "caption",
+      "english_text": "Do this calculation according to the direction in which you want to go. Write that in x and y. What is being written in x and y that i has to change? What's changing in i to go up? i is getting -1. So first wrote -1. What is changing in i to go down? +1 is happening. So wrote +1. Up down left right. Now it is not necessary that you write like this. You will make left, right, up and down x and y accordingly. So this is a technique through which you can go in all four directions. Secondly, it may happen that during this you go out of the matrix."
+    },
+    {
+      "start_time": 1599.2,
+      "end_time": 1629.59,
+      "text": "बहुत पॉसिबिलिटी है ना? मान लीजिए ये आपका मैट्रिक्स है। ये आपका मैट्रिक्स है ये वाला। 0 0 मान लीजिए आप यहां पे आए हैं। यहां से शुरू किए हैं। i = 0 j = 0 अब हो सकता है ना इसमें आप अगर लेफ्ट या अप जाने की कोशिश करें। इसमें हम अप जाने की कोशिश करें तो अप में हमारा रो क्या बनेगा? अप में क्या रो बना था? i - 1 और j मतलब कि क्या बन जाएगा ये? -1 और 0 क्या एरे ऑफ़ -1 कुछ होता है? नहीं होता है। ये क्या हो जाएगा? क्रैश कर जाएगा प्रोग्राम।",
+      "source": "caption",
+      "english_text": "There is a lot of possibility, isn't it? Suppose this is your matrix. This one is your matrix. 0 0 Suppose you have come here. Started from here. i = 0 j = 0 Now this is possible if you try to go left or up. If we try to go up in this, then what will happen to us in going up? What was there in you? i - 1 and j mean what will it become? -1 and 0 Is the array of -1 something? Does not happen. What will happen? The program will crash."
+    },
+    {
+      "start_time": 1629.6,
+      "end_time": 1662.47,
+      "text": "मैट्रिक्स में नहीं जा सकता है ना ऊपर। इसके लिए ना एक छोटा सा वैलिड फंक्शन लिख लीजिए। वैलिड फंक्शन लिख लीजिए। वो वैलिड का यही काम रहेगा। वो चार चीजें लेगा। देखिए वो i लेगा, वो j लेगा, वो इंट n लेगा और इंट m लेगा। n क्या है? इस मैट्रिक्स का साइज। कौन सा i और j वैलिड है और कौन सा i और j नॉन वैलिड है। देखिए कैसे हम पता करेंगे। इफ i इज लेस &lt; 0 क्या? I i &lt; 0 मतलब इनवैलिड और i &gt; = n i",
+      "source": "caption",
+      "english_text": "Can't go up into the matrix. Write a small valid function for this. Write a valid function. That will be the work of Valid. He will take four things. See, it will take i, it will take j, it will take int n and it will take int m. What is n? The size of this matrix. Which i and j are valid and which i and j are non valid. See how we find out. If i is less < 0 what? I i < 0 means invalid and i > = n i"
+    },
+    {
+      "start_time": 1662.48,
+      "end_time": 1696.789,
+      "text": "&gt; = n मान लीजिए ये वाला मैट्रिक्स है। इसमें कितने रोज़ हैं? टोटल तीन रोज़ हैं। तो n = 3 लेकिन आपका इंडेक्स कहां तक जाता है? सिर्फ टू तक जाता है। अरे यार सिंपल एर इंडेक्स। तो अगर मान लीजिए i तीन हो गया। इनवैलिड है। और j &lt; &lt; 0 अगर आपका कॉलम अगर आपका कॉलम बेकार हो गया। यहां से अगर आप लेफ्ट जाएंगे तो आप 0 - 1 पे आ जाएंगे। नहीं होता है। वो नहीं जा सकते हैं। और j &gt; = m अगर ऐसा कुछ भी हुआ है तो आप मैट्रिक्स से बाहर निकल चुके हैं पूरी-पूरी तरीके से। रिटर्न फॉल्स। रिटर्न फॉल्स। ये वैलिड नहीं है। तो यहां हम लोग",
+      "source": "caption",
+      "english_text": "> = n Let this be the matrix. How many days are there in it? There are three days in total. So n = 3 but where does your index go? Only goes till two. Hey man simple er index. So if let's say i becomes three. is invalid. And j < < 0 if your column if your column becomes useless. If you go left from here, you will come to 0 - 1. Does not happen. They can't go. And j > = m If anything like this happens then you have completely exited the matrix. Return Falls. Return Falls. This is not valid. so here we are"
+    },
+    {
+      "start_time": 1696.799,
+      "end_time": 1723.669,
+      "text": "कोशिश ही नहीं करेंगे जाने की। नहीं तो रिटर्न ट्रू। नहीं तो रिटर्न ट्रू। तो ये क्या है? ये एक वैलिड फंक्शन है। क्या है? बुलियन वैलिड। बुलियन वैलिड। तो आप किसी भी जब आप यहां पे रो और कॉलम निकालेंगे ना। अब ये हो सकता है कि रो और कॉलम वैलिड हो। हो सकता है ये मैट्रिक्स से बाहर चला जाए हो। सिंपली चेक करना है आपको इफ वैलिड रो कॉलम एंड m ये आपको तुरंत बता देगा। अगर ये वैलिड है तो ही हम लोग आगे जाएंगे।",
+      "source": "caption",
+      "english_text": "Won't even try to go. Otherwise return true. Otherwise return true. So what is this? This is a valid function. What is? Boolean Valid. Boolean Valid. So any time you come here you will come out with more columns. Now it is possible that the row and column may be valid. It is possible that it may go out of the matrix. You simply have to check if the row column and m are valid, it will tell you immediately. We will go ahead only if it is valid."
+    },
+    {
+      "start_time": 1723.679,
+      "end_time": 1758.23,
+      "text": "अगर ये वैलिड नहीं है रुक जाएंगे। अगले वाले हो सकता है ये अप नहीं वैलिड हो डाउन होगा वैलिड तो वहां पे चले जाएंगे। तो कुछ भी करने से पहले आपको ये वैलिड चेक कर लेना चाहिए। हर क्वेश्चन में आपको ये सब चीजें करनी पड़ेंगी। पक्का करनी पड़ेंगी। जो भी इस तरीके का क्वेश्चन है ना आपको ये सब कहानी बनानी पड़ेगी। एक बार का है मतलब ज्यादा इतना इतना कुछ इसमें रॉकेट साइंस है नहीं मेरे हिसाब से एक बार का है सीखना पड़ता है मतलब ये किसी को ऐसा नहीं है कि आप ये सोच लेंगे नहीं सोच नहीं सकते हैं ये सब लोग कहीं ना कहीं से सीखे हैं और आगे सिखाते हैं तो हम भी आपको ये बता दिए पता होना चाहिए इस तरीके से कोड लिखा करिए अब आइए चलते हैं हमारे कोड पे आपको सारी",
+      "source": "caption",
+      "english_text": "If it is not valid we will stop. The next one may be valid, not up, but down, it will be valid, so we will go there. So before doing anything you should check that it is valid. You will have to do all these things in every question. Will have to make sure. Whatever is the question of this type, you will have to make all these stories. One time means so much, so much, there is so much in it, no, according to me, one time has to be learned, that is, it is not like that that you will think, no, you cannot think, all these people have learned from somewhere and teach further, so we should also tell you this, you should know, write the code in this way, now let's go to our code, you will get all the information."
+    },
+    {
+      "start_time": 1758.24,
+      "end_time": 1792.31,
+      "text": "चीजें क्लियर हो जाएंगी धीरे-धीरे सबसे पहले क्या करते हैं अपना फंक्शन लिख लेते हैं छोटे-छोटे सबसे पहले तो अपना बुलियन वैलिड लिख लेते हैं वैलिड हम क्या बोले ये आपको बताता है कि एक पर्टिकुलर आई जे एक पर्टिकुलर आई जे मतलब एक पर्टिकुलर बॉक्स जिसप आप जाना चाहते हैं क्या वो वैलिड है? वैलिड है कि नहीं? इंट आई इंट जे इंट n इंट m क्या बोले थे? अगर i 0 से कम हो जाए और i &gt; = n हो जाए और j 0 से कम हो जाए और j &gt; = m हो जाए। तुरंत क्या करना है?",
+      "source": "caption",
+      "english_text": "Things will become clear gradually, first of all, what do we do, write our function, first of all, write our boolean valid? Valid, what did we say, it tells you that a particular IJ, a particular IJ means a particular box in which you want to go, is it valid? Is it valid or not? int i int j int n int m What did you say? If i becomes less than 0 and i >= n and j becomes less than 0 and j >= m. What to do immediately?"
+    },
+    {
+      "start_time": 1792.32,
+      "end_time": 1826.87,
+      "text": "रिटर्न फॉल्स। यह वैलिड नहीं है। नहीं तो अगर ऐसा नहीं हुआ तो फिर वैलिड है। रिटर्न वैलिड लिख दिया जा चुका है। अब आ जाइए डीएफएस। डीएफएस फंक्शन लिख लेते हैं। डीएफएस फंक्शन का क्या काम है? डीएफएस फंक्शन एक बॉक्स से शुरू होता है और उस एक्सप्लोरर की तरह वो सारे कनेक्टिंग लैंड को एक्सप्लोर करने की कोशिश करता है। कनेक्टिंग लैंड का क्या मतलब है? किस बॉक्स पे आप एक्सप्लोर करते हैं? वो बॉक्स मैट्रिक्स से बाहर नहीं होना चाहिए। वो बॉक्स में ज़ीरो नहीं लिखा होना चाहिए। वो बॉक्स में वन लिखा होना चाहिए। और उसका विजिटेड फॉल्स होना चाहिए। तभी उस पे हम लोग जाते हैं। हम लोग एक छोटा सा डीएफएस",
+      "source": "caption",
+      "english_text": "Return Falls. This is not valid. Otherwise, if this does not happen then it is valid. Return valid has been written. Come on now DFS. Let's write the DFS function. What is the purpose of DFS function? The DFS function starts from a box and like an explorer tries to explore all the connecting lands. What does connecting land mean? Which box do you explore? That box should not be outside the matrix. There should not be zero written in that box. One should be written in that box. And it should have visited falls. Only then we go there. we guys a little dfs"
+    },
+    {
+      "start_time": 1826.88,
+      "end_time": 1858.87,
+      "text": "फंक्शन लिख लेते हैं। वॉइड डीएफएस इसमें क्या-क्या पास होगा? सबसे पहले तो इसमें आपका बड़ा वाला जो आपको मैट्रिक्स आपको जो मैप दिया हुआ है जो आपको इनपुट दिया हुआ है ये पास होगा। उसके बाद इसमें n और m ये इस मैट्रिक्स का साइज है। उसके बाद इंट आई और इंट जे आप अभी किस बॉक्स पे हैं? अभी आपको किस बॉक्स पे उतारा गया है? वो होगा। और एक 2D बुलियन 2D बुलियन विजिटेड एरे पास होगा। विजिटेड एरे पास होगा। विजिटेड",
+      "source": "caption",
+      "english_text": "Let's write the function. Void DFS What will pass in this? First of all, your big one, the matrix which has been given to you, the map which has been given to you as input, will be passed. After that n and m are the size of this matrix. After that int i and int j which box are you on now? Which box have you been placed on now? That will happen. And a 2D Boolean will pass 2D Boolean visited array. The visited array will pass. visited"
+    },
+    {
+      "start_time": 1858.88,
+      "end_time": 1889.59,
+      "text": "एरे क्यों? ट्रैक रखने के लिए। चलिए आ गए डीएफएस में। सबसे पहला काम एक्सप्लोरर क्या करता था? जिस पे लैंड पे अभी है ये पक्का है कि आप लैंड पे आएंगे उसको वन कर दो। उस विजिटेड वो विजिट हो चुका। इस पे दोबारा नहीं आना है भूल के। वेरी गुड। अब क्या करना है? इसको हो गया। अब एक्सप्लोर करना है। कैसे एक्सप्लोर करना है? कैसे एक्सप्लोर करना है? फॉर चारों डायरेक्शन में k = 0 kस &lt; 4 k + यस ऊपर में x और y",
+      "source": "caption",
+      "english_text": "Hey why? To keep track. Let's get into DFS. What was the first thing the Explorer did? Whatever land is there now, it is certain that you will come to land, convert it into forest. That visited has already been visited. Don't come to this again by mistake. very good. What to do now? This is done. Now to explore. How to explore? How to explore? For k = 0 ks < 4 k + yes in all four directions x and y"
+    },
+    {
+      "start_time": 1889.6,
+      "end_time": 1917.909,
+      "text": "बना लेते हैं। इंट x 4 इक्वल टू क्या था? x क्या बनाए थे? क्या बनाए थे? अ -1 1 0 0 -1 1 0 0 y बना लेते हैं। y बना लेते हैं। y बना लेते हैं। 1 मिनट y4 y4 में क्या बना था? ऊपर से देख लीजिए। 0 शायद -1 था। आ गया। -1 1 यस -1 1 ये क्या बताता है?",
+      "source": "caption",
+      "english_text": "Let's make it. What was int x 4 equal to? x What did you make? What did you make? Let's make -1 1 0 0 -1 1 0 0 y. Let's make y. Let's make y. What was made in 1 minute y4 y4? Take a look from above. 0 was probably -1. Has arrived. -1 1 Yes -1 1 What does this tell?"
+    },
+    {
+      "start_time": 1917.919,
+      "end_time": 1952.87,
+      "text": "चारों डायरेक्शन जाने के लिए x और y में i और j में क्या चेंजज़ जरूरी है? सिंपल बात है। चार तक लूप चलाइए। अब इंट रो = i + x ऑफ k सिंपल कॉलम = j + y ऑफ़ k इसमें गड़बड़ मत कीजिएगा क्रैश कर जाएगा पूरा प्रोग्राम एक बार देख लीजिएगा ठीक है रो कॉलम क्या है चारों डायरेक्शन का रो कॉलम अगर आप ij पे हैं चारों डायरेक्शन का रो कॉलम आपको इस लूप से मिलेगा हम क्या बोले थे ऐसा हो सकता है कि ये वैलिड ही ना हो अब हम लोग चेक करेंगे की इस रो कॉलम पे हमको डीएफएस जाना चाहिए या नहीं जाना",
+      "source": "caption",
+      "english_text": "What changes are necessary in i and j in x and y to go in all four directions? It's a simple thing. Run loops for four. Now int row = i +"
+    },
+    {
+      "start_time": 1952.88,
+      "end_time": 1986.71,
+      "text": "चाहिए सबसे पहली बात क्या यह वैलिड भी है? ऐसा तो नहीं है कि यह रो कॉलम मैट्रिक्स से बाहर निकल गया। ओके। अगर यह वैलिड नहीं होगा, यहीं टूट जाएगा। चिंता मत करिएगा। एंड एंड एंड एरे ऑफ़ रो कॉलम मतलब वो इक्वल इक्वल टू वन। ये कैरेक्टर वाला वन लिखिएगा। वन नंबर मत लिखिए। गलत हो जाएगा। कररेक्टर वाला वन। क्या यह वन है? अगर ज़ीरो है नहीं जाना है। अगर यह वन है एंड विजिटेड ऑफ रो कॉलम विजिटेड ऑफ रो कॉलम",
+      "source": "caption",
+      "english_text": "First of all, is it even valid? It is not that this row has dropped out of the column matrix. Ok. If it is not valid, it will break here. Don't worry. And and and array of row columns means they are equal to one. Write the one with this character. Don't write number one. Will go wrong. One with character. Is this a forest? If it is zero then don't go. If it is one and visited off row column visited off row column"
+    },
+    {
+      "start_time": 1986.72,
+      "end_time": 2018.71,
+      "text": "इक्वल इक्व 0 यह विजिटेड नहीं होना चाहिए तभी जाएंगे अगर ऐसा है अगर ऐसा है तो आप डीएफएस चल सकते हैं डीएफएस में आई जे के जगह अब रो कॉलम पास कर दीजिए आई जे के जगह रो कॉलम पास कर दीजिए ए एन एम रो कॉलम विजिटेड रो कॉलम पे जाएंगे रो कॉलम को फिर से ये कर देगा विजिटेड को उसके बाद सेम चीज वहां से दोहराएंगे मतलब एक्सप्लोरर सेम चीज दोहराता रहेगा कब तक? जब तक इसका पूरा खत्म ना हो जाए। और पूरा खत्म होने के बाद यह फंस जाएगा। फंसने के बाद यह",
+      "source": "caption",
+      "english_text": "Equal Equal 0 It should not be visited then only if it is so then you can run DFS. In DFS now pass row column instead of IJ. Pass row column instead of IJ. A N M row column will go to the visited row column. It will again make the row column as visited. After that the same thing will be repeated from there. Means how long will the explorer keep repeating the same thing? Until it is completely finished. And it will get stuck after it is completely finished. after getting stuck"
+    },
+    {
+      "start_time": 2018.72,
+      "end_time": 2046.63,
+      "text": "वापस आ जाएगा। इस लूप को बंद करके रिटर्न। इस लूप को बंद करके रिटर्न। ये आपका डीएफएस का फंक्शन है। ये आपका डीएफएस का फंक्शन है। मेन मेन में आते हैं जो लीड कोड का है। उसमें आपको क्या-क्या करनी पड़ेगी? देखिए लीड कोड आपको एक बोलता है कि नम ऑफ आइलैंड और आपको एक टू डी मैट्रिक्स देता है। एज इनपुट जो कि कै ओ ये सॉरी कैरेक्टर टाइप का मैट्रिक्स है ये। यह कैरेक्टर टाइप का मैट्रिक्स है। यह कैर मैट्रिक्स है। ठीक है? याद रखिएगा।",
+      "source": "caption",
+      "english_text": "Will come back. Return by closing this loop. Return by closing this loop. This is your DFS function. This is your DFS function. Main comes in main which is of lead code. What will you have to do in that? See the lead code tells you the name of the island and gives you a 2D matrix. Edge input which is a matrix of sorry character type. This is a character type matrix. This is the Care Matrix. Ok? Remember this."
+    },
+    {
+      "start_time": 2046.64,
+      "end_time": 2081.589,
+      "text": "वेक्टर ऑफ वेक्टर ऑफ कैर a। ठीक है? क्या करेंगे? सबसे पहले साइज निकाल लेंगे इसका। n = a डॉट साइज और ये हो गया नंबर ऑफ़ रोज़। नंबर ऑफ़ कॉलम इज़ इक्वल टू एरे ऑफ़ 0 डॉट साइज़। एरे ऑफ़ ज़ीरो डॉट साइज। इससे आपको नंबर ऑफ़ कॉलम्स मिल जाता है। ठीक है? एक रिजल्ट वेरिएबल ले लेते हैं। रिजल्ट = 0 ले लेते हैं। दो वेरिएबल ले लेते हैं i और j। ठीक है? उसके बाद एक विजिटेड एरे बना लेते हैं। तो हम लोग एक काम करते हैं कि वेक्टर",
+      "source": "caption",
+      "english_text": "Vector of vector of care a. Ok? What to do? First of all we will find out its size. n = a dot size and this is the number of roses. Number of columns is equal to array of 0 dot size. Array of zero dot size. This gives you the number of columns. Ok? Let's take a result variable. Let's take Result = 0. Let's take two variables i and j. Ok? After that let's create a visited array. So we do one thing that vector"
+    },
+    {
+      "start_time": 2081.599,
+      "end_time": 2113.589,
+      "text": "वेक्टर बुल विजिटेड इसका साइज अभी n दे देते हैं। अब हर एक n में आपको एक m साइज का मैट्रिक्स घुसाना है। कैसे घुसाते हैं? फॉर i = 0 i &lt; n i + इसमें एक और बुलियन का वेक्टर ये 2d बुलियन का मैट्रिक्स है। वेक्टर ऑफ़ बुल t इसका साइज क्या होगा? m और ये पूरा फॉल्स होगा। अब क्या करिए? विजिटेड ऑफ़ i = t ये पूरा जो है ना ये 2D मैट्रिक्स बनाता है।",
+      "source": "caption",
+      "english_text": "Vector bull visited, now give its size as n. Now in every n you have to enter a matrix of size m. How to insert? For i = 0 i < n i + another vector of Boolean, this is a 2d Boolean matrix. What will be the size of the vector of bull t? m and this will be complete falls. What to do now? Visited by i = t This whole thing forms a 2D matrix."
+    },
+    {
+      "start_time": 2113.599,
+      "end_time": 2146.31,
+      "text": "ये क्या है? 2D मैट्रिक्स बनाता है। 2D बुलियन मैट्रिक्स बना देगा और सारे फॉल्स होंगे। इसमें इसमें सारे चीजें फॉल्स होंगी। ये बना आपका कोई और सिंटेक्स और बना सकते हैं। बेसिकली ये आपको बनाना है। अब क्या करना है? अब अपने एक्सप्लोरर पे आ जाइए। एक्सप्लोरर पूरे मैप को देखेगा। जैसे ही उसको कोई ऐसा ब्लॉक मिलता है जो वन है जो कि लैंड है और जो विजिटेड नहीं है वो उस पे कूद जाता है और जब वो वापस आता है तो रिजल्ट को प्लस प्लस कर देता है क्योंकि वहां एक आइलैंड मिल गया होगा। तो क्या करेगा एक्सप्लोरर?",
+      "source": "caption",
+      "english_text": "What is this? Creates a 2D matrix. Will create a 2D Boolean matrix and all the values ​​will be false. All things will fall into it. You can create any other syntax like this. Basically you have to make this. What to do now? Now come to your explorer. Explorer will view the entire map. As soon as he finds a block which is a forest which is land and which is not visited, he jumps on it and when he comes back, he makes the result a plus because an island must have been found there. So what will Explorer do?"
+    },
+    {
+      "start_time": 2146.32,
+      "end_time": 2176.23,
+      "text": "पूरे मैप में घूम-घूम के देखेगा। पूरे मैप में घूम-घूम के देखेगा। लूप से हर एक ब्लॉक को देखेगा। हर एक ब्लॉक को देखेगा। अगर उसको कोई ऐसा ब्लॉक मिलता है इफ एरे ऑफ़ आई जे इक्वल इक्वल टू वन लैंड एंड वो विजिटेड नहीं होना चाहिए। एंड वो विजिटेड नहीं होना चाहिए। विजिटेड ऑफ आई j इक्वल इक्वल टू 0 क्या करेगा वो? क्या करेगा?",
+      "source": "caption",
+      "english_text": "Will look around the entire map. Will look around the entire map. The loop will look at each block. Will see each block. If it finds a block such that if array of i is equal to one land and it should not be visited. And he should not be visited. Visited off i j equals equal to 0 What will he do? What will he do?"
+    },
+    {
+      "start_time": 2176.24,
+      "end_time": 2201.67,
+      "text": "पहले तो उस पे कूद जाएगा जाके एन एम आई जे विजिटेड उस पे कूद जाएगा और वापस आने के बाद जब ये कॉल खत्म हो जाएगी रिजल्ट प्लस प्लस यस यस यस और लास्ट में रिटर्न रेस्ट ये देखिए काफी बड़ा कोड काफी कॉम्प्लेक्स कोड लेकिन यही कोड है और यही आपको फॉलो करना है। यह आपका मेन फंक्शन का कोड है।",
+      "source": "caption",
+      "english_text": "First of all, NMI will jump on it and after coming back, when the call ends, it will say result plus plus yes yes yes and finally return rest. See this is a very big code, very complex code but this is the code and this is what you have to follow. This is the code of your main function."
+    },
+    {
+      "start_time": 2201.68,
+      "end_time": 2226.95,
+      "text": "यह आपका डीएफएस फंक्शन है जिसमें वैलिड भी है और यह आपके दो डायरेक्शन एरे इनको डायरेक्शन एरे आप बोल सकते हैं। यह आपके डायरेक्शन एरे हैं। टाइम कॉम्प्लेक्सिटी n * m स्पेस कॉम्प्लेक्सिटी n * m क्योंकि आप ये विजिटेड एरे एनीवेज यूज़ कर रहे हैं। तो स्पेस कॉम्प्लेक्सिटी n * m n मतलब नंबर ऑफ़ रोज़ m मतलब नंबर ऑफ़ कॉलम्स। तो ये आप बहुत फंडामेंटल क्वेश्चन सीख चुके हैं। उम्मीद करते हैं कि ये कोड थोड़ा कॉम्प्लेक्स है। नो डाउट कॉम्प्लेक्स है।",
+      "source": "caption",
+      "english_text": "This is your DFS function which also contains valid and these are your two direction arrays, you can call them direction array. This is your direction array. Time Complexity n * m Space Complexity n * m because you are using these visited arrays anyway. So space complexity n*m n means number of rows m means number of columns. So you have learned these very fundamental questions. Let's expect this code to be a bit complex. No Doubt is complex."
+    },
+    {
+      "start_time": 2226.96,
+      "end_time": 2259.589,
+      "text": "खुद से आपको करना पड़ेगा तभी समझ में आएगा। लेकिन जितना हो सकता था उतना हम सिंपली भाषा में आपको समझाए हैं और इसीलिए कोड लिखने से पहले हम क्या-क्या कर रहे हैं वो समझा दिए। ऐसा नहीं लगे कि आपको कोड में कोड में वही हो रहा है जो हम लोग बात किए थे। सिंटेक्स में प्रॉब्लम होगी वो सब धीरे-धीरे टाइम के साथ सॉल्व हो जाएगी। ग्राफ में सबको होता है। ठीक है? ऐसा कोई ऊपर से नहीं आता है जिसको ग्राफ में प्रॉब्लम ना होती हो। तो ये आप देख लीजिए। बड़ा कोड नो डाउट बड़ा कोड है। लेकिन अब हम लोग ग्राफ में आ चुके हैं ना और आप लोग एडवांस डीएसए में आ चुके हैं। तो ये सब करना अब 10-10 लाइन का कोड से काम नहीं बनेगा। है ना? तो ये क्वेश्चन जरूर कीजिए।",
+      "source": "caption",
+      "english_text": "You will have to do it yourself only then you will understand. But we have explained it to you in simple language as much as we could and that is why we explained what we are doing before writing the code. It doesn't look like you're seeing exactly what we talked about is happening in the code. There will be problems in syntax, all of them will gradually be solved with time. Everyone is in the graph. Ok? There is no one from above who does not have problem in graph. So you see this. Big code is no doubt big code. But now we have come to the graph and you people have come to the advanced DSA. So now it will not be possible to do all this with 10-10 lines of code. Isn't it? So definitely ask this question."
+    },
+    {
+      "start_time": 2259.599,
+      "end_time": 2269.92,
+      "text": "हो सके तो नंबर ऑफ प्रोविंसेस भी ट्राई कर लीजिए। ऐसा ही क्वेश्चन है। थोड़ा अपना दिमाग यूज़ करके नहीं तो आगे आने वाले वीडियो में बता देंगे। चलिए बहुत-बहुत धन्यवाद आने के",
+      "source": "caption",
+      "english_text": "If possible, try the number of provinces also. This is a similar question. Use your brain a little, otherwise we will tell you in the upcoming video. let's go, thank you very much for coming"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

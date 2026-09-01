@@ -1,0 +1,429 @@
+{
+  "video_id": "TqxB7zruBm4",
+  "video_title": "Do Not Miss This Amazon Interview Question | Binary Search DSA Patterns Cpp Java Python",
+  "video_number": 58,
+  "chunks": [
+    {
+      "start_time": 1.75,
+      "end_time": 29.269,
+      "text": "आज का जो क्वेश्चन है मेरे से कहां पूछा गया था? Samsung R&amp;D में। ठीक है? तो ये क्वेश्चन बहुत ध्यान से देखिएगा। ये क्वेश्चन देखने के बाद आप लोग जो अगले वाले सारे क्वेश्चन हैं स्प्लिट एरे इंटू वो सब वो सब सब क्वेश्चन इसी का कॉपी है। सारे लीड कोड हार्ड क्वेश्चन बाइनरी सर्च पे बन जाएंगे। तो अगर आप देखते हुए आ रहे हैं आप कोको देख चुके हैं, अग्रेसिव देख चुके हैं और ये क्वेश्चन ये तीन क्वेश्चन मिला के बाइनरी सर्च पे कितना भी हार्ड स्टोरी बेस्ड प्रॉब्लम आए वो सारा आपसे बन जाएगा। तो थोड़ा कान खोल के सुनिएगा। थोड़ा सा कॉम्प्लेक्स क्वेश्चन हो सकता है लेकिन लास्ट तक जरूर देखने का कोशिश कीजिएगा।",
+      "source": "caption",
+      "english_text": "Where was today's question asked to me? In Samsung R&D. Ok? So look at this question very carefully. After seeing this question, all the next questions which are split array into all those questions are copies of this one. All lead codes will be created on hard query binary search. So if you are watching, you have seen Coco, you have seen Aggressive and these three questions, after getting these three questions, no matter how hard story based problem comes on binary search, all of them will be solved by you. So listen with an open ear. It may be a bit complex question but definitely try to see till the end."
+    },
+    {
+      "start_time": 29.279,
+      "end_time": 62.79,
+      "text": "चलिए। तो देखिए क्वेश्चन बोलता क्या है ना क्वेश्चन पढ़ना भी एक स्किल है। मतलब कि गीग्स फॉर गीग्स या लीड कोड से क्वेश्चन पढ़ना उसको समझना उसको अपने भाषा में लिखना ये एक स्किल है जो धीरे-धीरे आप लोग को आ जाएगा। खैर आप लोग को हम समझाते हैं हिंदी में कि क्या है। आपके पास कुछ बुक्स रखे हुए हैं। अच्छा हर बुक्स के कुछ पेजेस हैं। हर बुक्स में क्या है? कुछ पेजेस हैं। ठीक है? तो मान लीजिए अगर आपके पास तीन बुक है तो पहली बुक में मान लीजिए 20 पेज है, दूसरे में 30 पेज है, तीसरे में 10 पेज है। ऐसा करके है। ओके? आपके पास K नंबर ऑफ क्या है? स्टूडेंट्स हैं। ओके? आप एक लाइब्रेरी ओपन करते हैं। आपके पास के",
+      "source": "caption",
+      "english_text": "Let's go. So see what the question says, reading questions is also a skill. Meaning that reading the question from Gigs for Gigs or Lead Code, understanding it and writing it in your own language is a skill which you will gradually acquire. Well, let us explain to you in Hindi what it is. You have some books kept. Well, every book has some pages. What's in each book? There are some pages. Ok? So suppose if you have three books, let's say the first book has 20 pages, the second has 30 pages, the third has 10 pages. By doing this. Ok? What's the K number off you have? Are students. Ok? You open a library. near you"
+    },
+    {
+      "start_time": 62.8,
+      "end_time": 90.71,
+      "text": "बच्चे हैं और आपके बुक में पेजेस ऐसे-ऐसे हैं। ओके? अब कुछ रूल्स हैं। कुछ रूल्स क्या है? हर स्टूडेंट को बुक मिलना चाहिए। हर स्टूडेंट को बुक मिलना चाहिए। कोई भी स्टूडेंट बिना बुक के ना रह जाए। ओके? अच्छी बात है। हर बुक डिस्ट्रीब्यूट होना चाहिए। मतलब कि हर बुक को आपको एक बच्चे को देना है। ऐसा नहीं कर सकते हैं कि कोई बुक हम रख लिए अपने पास। उसको किसी को दिए नहीं। नहीं। हर बुक डिस्ट्रीब्यूट होना चाहिए। आपके पास कोई बुक ऐसा नहीं हो जिसको एक भी बच्चा लेने वाला नहीं बचे। ओके? वन बुक टू ओनली वन स्टूडेंट। अब एक बुक को आप दो बच्चों में नहीं बांट सकते।",
+      "source": "caption",
+      "english_text": "You have children and the pages in your book are like this. Ok? Now there are some rules. What are some rules? Every student should get a book. Every student should get a book. No student should be left without a book. Ok? It's a good thing. Every book should be distributed. Meaning that you have to give each book to a child. We cannot keep any book with us. Didn't give it to anyone. No. Every book should be distributed. You should not have any book for which there is not even a single child left to take it. Ok? One Book to Only One Student. Now you cannot divide a book between two children."
+    },
+    {
+      "start_time": 90.72,
+      "end_time": 116.789,
+      "text": "ऐसा नहीं कर सकते कि बुक को फाड़ दिए। 20 पन्ना इसको दे दिए 30 उसको। नहीं। जो एक बुक है उसमें मान लीजिए कितना भी पेजेस हो। 50 पेज हो, 10 पेज हो, पांच पेज हो। एक ही बच्चे को देना है। Okay? और कंटीन्यूअस असाइनमेंट मतलब कि लाइन से किताबें देनी है। मतलब कि एक बच्चे को आप एक किताब दे सकते हैं। एक बच्चे को आप लगातार दो किताबें भी दे सकते हैं। तीन भी दे सकते हैं वगैरह-वगैरह। चलिए। अब ये रूल है। जैसे-जैसे आप आगे बढ़ेंगे आपको ये सब क्लियर होता जाएगा कि ये रूल क्यों है? अच्छा ये तो क्वेश्चन है। ये तो रूल है।",
+      "source": "caption",
+      "english_text": "Can't do that by tearing the book. Gave 20 pages to this person and 30 to him. No. Suppose there are any number of pages in a book. Be it 50 pages, 10 pages, five pages. Have to give to only one child. Okay? And continuous assignment means that books have to be given from line to line. Meaning that you can give a book to a child. You can also give two books consecutively to a child. Can also give three etc. Let go. Now this is the rule. As you progress, it will become clear to you why this rule exists? Well this is a question. This is the rule."
+    },
+    {
+      "start_time": 116.799,
+      "end_time": 150.229,
+      "text": "लेकिन आपको करना क्या है? कैसे डिस्ट्रीब्यूट करना है? अच्छा आपको एक चीज फाइंड करनी है। जब आप कोई भी डिस्ट्रीब्यूशन करते हैं। मान लीजिए आपके पास दो बच्चे हैं और आप क्या करते हैं कि दो इस बच्चे को बुक वन और बुक टू दे देते हैं और इस बच्चे को बुक थ्री दे देते हैं। मान लीजिए बुक वन में 10 पेज था। बुक टू में 20 पेज था। बुक थ्री में ah 25 पेज था। ठीक बात है? तो स्टूडेंट वन को मिला के कितने पेजेस मिले? कितने पेजेस बुक्स नहीं कितने पेजेस? 10 + 20 इसको मिला के कितना मिला? 30 पेज। स्टूडेंट टू को कितना पेज मिला है? बुक का बात नहीं हो रहा है।",
+      "source": "caption",
+      "english_text": "But what are you supposed to do? How to distribute? Well you have to find one thing. When you make any distribution. Suppose you have two children and what you do is that you give book one and book two to this child and book three to this child. Suppose Book One had 10 pages. Book two had 20 pages. Book Three had ah 25 pages. Is that correct? So how many pages did Student One get? How many pages, not books, how many pages? How much did you get by mixing 10 + 20? 30 pages. How many pages has Student Two got? There is no talk of book."
+    },
+    {
+      "start_time": 150.239,
+      "end_time": 183.67,
+      "text": "पेजेस का बात हो रहा है। कितना नंबर ऑफ पेजेस मिला? इसको 25। इन दोनों में मैक्सिमम कौन है? 30। तो ये क्या है? मैक्सिमम पेजेस टू वन स्टूडेंट टू वन स्टूडेंट। अच्छा तो ये क्या है? 30। अब ये तो कॉम्बिनेशन है कि आप अगर आप ऐसा दिए तो इसमें 30 आ गया। अगर आपको हो सकता है कि कुछ और कर देते। स्टूडेंट वन को बुक वन दे देते। स्टूडेंट टू को बुक टू, बुक थ्री दे देते। ऐसा वगैरह-वगैरह करते तो आपको और भी कुछ आंसर मिल सकता था। इन सारे कॉम्बिनेशन में से आपको इसकी चीज को मिनिमाइज करना है। क्या करना है इसको? मिनिमाइज। किस काम",
+      "source": "caption",
+      "english_text": "Talking about pages. What number of pages did you get? 25 to this. Who is the maximum among these two? 30. So what is this? Maximum Pages Allowed to One Student. Okay so what is this? 30. Now this is a combination that if you give it like this then it gets 30. If you could have done something else. Give book one to student one. Give book two and book three to student two. If you had done this etc., you could have got more answers. Out of all these combinations, you have to minimize its element. What does he have to do? Minimize. what work"
+    },
+    {
+      "start_time": 183.68,
+      "end_time": 216.63,
+      "text": "को किस चीज को मिनिमाइज करना है? मैक्सिमम पेजेस टू वन स्टूडेंट्स को मिनिमाइज करना है। मैक्सिमम पेज टू वन स्टूडेंट को मिनिमाइज करना है। इस बार सेम प्रॉब्लम है एग्रेसिव काउच जैसा। उसमें क्या करना था? कि अ डिस्टेंस था और उसमें आपको वो क्या उसमें क्या मैक्सिमाइज करना था? उसमें उल्टा वो उल्टा क्वेश्चन था। उसमें किसी भी दो काऊ के बीच के मिनिमम डिस्टेंस को मैक्सिमाइज करना था। इसमें किसी भी बच्चे के मैक्स पेजेस को मिनिमाइज करना है। क्या करना है? मिनिमाइज। तो एक एग्जांपल से हम समझाते हैं कि इसका क्या मतलब है? इसका मतलब है क्या? आइए। तो मान लीजिए कि आपके",
+      "source": "caption",
+      "english_text": "What needs to be minimized? Maximum pages to one student is to be minimized. Maximum page to one student is to be minimized. This time the problem is the same as aggressive couch. What was to be done in that? That there was a distance and what was it that you had to maximize in it? There was that wrong question in it. The objective was to maximize the minimum distance between any two cows. In this, the maximum pages of any child have to be minimized. What is the plan? Minimize. So let us explain with an example what this means? What does this mean? Come. So let's say that your"
+    },
+    {
+      "start_time": 216.64,
+      "end_time": 249.27,
+      "text": "पास ऐसे-ऐसे पन्ने हैं कि आपके पास चार किताबें हैं। आपके पास चार किताबें हैं। 12 अह 34, 67 और 90। ध्यान दीजिएगा ये सॉर्टेड हो ऐसा जरूरी नहीं है। ऐसा जरूरी नहीं है कि सॉर्टेड होना चाहिए पेजेस में। नहीं, किसी भी बुक में कितने भी पेजेस हो सकते हैं। और आपके पास कितने बच्चे हैं? आपके पास बच्चे कितने हैं? दो बच्चे हैं। तो देखिए आप दो-तीन काम कर सकते हैं। आप ऐसा कर सकते हैं कि पहले वाले बच्चे को ये s1 है। इसको आप ये वाली बुक दे दीजिए जिसमें 12 पेज था। एक ही बुक दी है। एक ही",
+      "source": "caption",
+      "english_text": "There are such pages that you have four books. You have four books. 12 Ah 34, 67 and 90. Please note that it is not necessary that it is sorted. It is not necessary that it should be sorted into pages. No, any book can have any number of pages. And how many children do you have? How many children do you have? Have two children. So see you can do two-three things. You can do this so that the first child is s1. Give him this book which had 12 pages. Only one book has been given. same one"
+    },
+    {
+      "start_time": 249.28,
+      "end_time": 283.51,
+      "text": "बुक दी है 12 पेज वाले। ओके? दूसरा बच्चा दूसरा बच्चा s2, इसको आप बाकी तीनों बुक दे दिए क्योंकि बाकी तीनों देना पड़ेगा ना इसको। अब देखिए ऐसा आप नहीं कर सकते कि इसको बुक टू और बुक थ्री ही देंगे और बुक फोर किसी को नहीं देंगे नहीं बुक फोर देना पड़ेगा तो ऐसा करके आपके पास दो ही बच्चे हैं ना तो आपको देना पड़ेगा। इसमें किस बच्चे के पास मैक्सिमम होगा? देखिए इस बच्चे के पास तो कितना 12 ही पेज है टोटल। इस बच्चे के पास कितना पेज है? 191 पेज है तो इसका आंसर क्या आएगा? 191 एक तो ये कॉम्बिनेशन हुआ। एक और कॉम्बिनेशन है क्या? अब 12 और 34 वाला इसको दे दिए और 67 और 90 वाला दूसरे बच्चे को दे दिए। अब",
+      "source": "caption",
+      "english_text": "The book given has 12 pages. Ok? Second child Second child s2, you gave him the remaining three books because he will have to give the remaining three. Now see, you cannot do this that you will only give him Book Two and Book Three and will not give Book Four to anyone, otherwise you will have to give Book Four, then by doing this you have only two children, otherwise you will have to give it. Which child will have maximum in this? Look, this kid has only 12 pages in total. How many pages does this kid have? If there are 191 pages then what will be the answer? 191 Firstly, this combination happened. Is there another combination? Now 12 and 34 were given to him and 67 and 90 were given to another child. now"
+    },
+    {
+      "start_time": 283.52,
+      "end_time": 316.629,
+      "text": "देखिए कितना होगा। अब इसके पास कितना? पांच और 45 पेज और इसके पास 157 क्या आया मैक्सिमम? 157 आया। ओके? एक और काम कर सकते हैं कि इसको आप 12 34 और 67 दे दीजिए। और इसको आप बस 90 दीजिए। इस बच्चे के पास कितना आया? 4 2 6 एक 113 पेज। इस बच्चे के पास 90 पेज। कितना मैक्सिमम आया? 113. अब ये तीन कॉम्बिनेशन है। दो बच्चों में तीन ही कॉम्बिनेशन पॉसिबल हैं क्योंकि अब और कुछ नहीं कर सकते। आपको कंटीन्यूअस देना है। हर बुक एक बच्चे को देना ही है।",
+      "source": "caption",
+      "english_text": "See how much it will be. How much does he have now? Five more 45 pages and it came to 157. What's the maximum? 157 came. Ok? Another thing you can do is give it 12, 34 and 67. And you just give it 90. How much did this child get? 4 2 6 A 113 pages. This kid has 90 pages. What was the maximum? 113. Now these are three combinations. Only three combinations are possible between two children because nothing else can be done now. You have to give continuously. Every book has to be given to a child."
+    },
+    {
+      "start_time": 316.639,
+      "end_time": 351.029,
+      "text": "तो यही आप कर सकते हैं तो और कुछ नहीं। इन तीनों में कौन सा आंसर मिनिमम है? मिनिमाइज़ करना है। ये आंसर, ये आंसर। ये आंसर। तो आपका आंसर क्या हो जाएगा? आपका आंसर क्या हो जाएगा? आपका आंसर हो जाना चाहिए। अरे यार ये पेन ही खराब हो जाता है बीच में। आपका आंसर क्या हो जाना चाहिए 113 आपका आंसर क्या हो जाना चाहिए 113 क्यों क्योंकि ये मिनिमम आंसर है तो ऐसा आपको एक कॉम्बिनेशन ढूंढना है और आपको मिनिमम पॉसिबल क्या ढूंढना है मैक्सिमम पेजेस टू वन स्टूडेंट उसको मिनिमाइज करना है तो जो लोग अग्रेसिव काउस देख के आए हैं उनको पता चल गया होगा क्या करना है जो लोग",
+      "source": "caption",
+      "english_text": "So this is what you can do and nothing else. Which answer is minimum among these three? Have to minimize. This answer, this answer. This answer. So what will be your answer? What will be your answer? Your answer should be done. Oh man, this pen itself gets damaged in between. What should be your answer? 113 What should your answer be? 113 Why because this is the minimum answer so you have to find a combination and you have to find the minimum possible. Maximum pages to one student. If you want to minimize it, then those who have come after watching the aggressive cow must have known what to do."
+    },
+    {
+      "start_time": 351.039,
+      "end_time": 380.71,
+      "text": "नहीं देख के आए हैं आइए देखते हैं क्या आप लोग नहीं देखे हैं तो मेरा ही गलती है आप लोग नहीं देखे हैं तो आइए दिखवाएं सबसे पहले सबसे पहले अह क्या आपको मैक्सिमाइज करना है आपको क्या मैक्सिमाइज करना है? आ सॉरी क्या मिनिमाइज करना है? मैक्सिमम पेजेस टू वन स्टूडेंट। एकदम अग्रेसिव काऊ जैसा है। मैक्सिमम पेजेस टू वन स्टूडेंट। अच्छा। अब क्या करें? तो अब जिस चीज को मिनिमाइज करना है, इसको क्या करना है?",
+      "source": "caption",
+      "english_text": "We have not come to see it. Let's see, if you guys haven't seen it, it's my fault. If you guys haven't seen it, then let's get it shown. First of all, uh, do you have to maximize? What do you have to maximize? Oh sorry, what to minimize? Maximum Pages to One Student. Just like an aggressive cow. Maximum Pages to One Student. Good. What do we do now? So now what has to be done about the thing that has to be minimized?"
+    },
+    {
+      "start_time": 380.72,
+      "end_time": 413.67,
+      "text": "इसको मिनिमाइज करना है। इसको मिनिमाइज करना है, याद रखिएगा। अच्छा, अच्छा, एक बात बताइए, एक बच्चे को अब ये है मैक्सिमम पेजेस टू वन स्टूडेंट। अब ये आपको क्या करना है? यही चीज आपको गेस भी करना पड़ेगा। यही चीज आपको गेस भी करना पड़ेगा। ओके? तो आइए गेस करते हैं। आइए गेस करके देखते हैं कि क्या है। आइए तो ये आपके किताबें हैं। एक में 12 पेज है। इसमें 34 पेज है। इसमें 67 पेज है और उसमें 90 पेज है। ये आपकी चार किताबें हैं। और आपके पास कितने स्टूडेंट हैं? दो बच्चे हैं। दो बच्चे हैं। आपके पास दो बच्चे हैं। ओके?",
+      "source": "caption",
+      "english_text": "This has to be minimized. This has to be minimized, remember. Okay, okay, tell me one thing, now this is the maximum pages for one student. Now what do you have to do? You will have to guess the same thing. You will have to guess the same thing. Ok? So let's guess. Let's guess and see what it is. Come on, these are your books. One has 12 pages. It contains 34 pages. This one has 67 pages and that one has 90 pages. These are your four books. And how many students do you have? Have two children. Have two children. You have two children. Ok?"
+    },
+    {
+      "start_time": 413.68,
+      "end_time": 447.27,
+      "text": "अब आपको क्या करना है? गेस करना है। तो आइए एक चीज गेस करते हैं कि हम ना एक गेस करेंगे कि मैक्सिमम पेजेस टू वन स्टूडेंट क्या होना चाहिए? मैक्सिमम हम बोलते हैं कि मैक्सिमम पेजेस टू वन स्टूडेंट ना 30 होना चाहिए। कुछ भी गेस कर सकते हैं। 30 होना चाहिए। मतलब मैक्सिमम पेजेस टू वन स्टूडेंट को 30 मिलना चाहिए। मतलब इसका क्या मतलब है? कि किसी भी बच्चे को किसी भी बच्चे को बच्चे को 30 से ज्यादा पेज",
+      "source": "caption",
+      "english_text": "What do you have to do now? Have to guess. So let's guess one thing that we will not guess what should be the maximum pages to one student? Maximum we say that maximum pages to one student should not be 30. Can guess anything. Should be 30. Meaning maximum pages one student should get is 30. I mean what does it mean? That any child any child any child more than 30 pages"
+    },
+    {
+      "start_time": 447.28,
+      "end_time": 481.67,
+      "text": "नहीं मिल सकता है। 30 से ज्यादा पेज नहीं मिल सकता है। नहीं मिल सकता है। नो इट इज नॉट अलाउड। क्योंकि हम 30 हम गेस किए हैं कि हम ना ऐसा करेंगे कि किसी भी बच्चे को मैक्सिमम पेज जो अलाउड है वो 30 गेस करेंगे। आइए देखते हैं। सबसे पहले स्टूडेंट वन को पेज देना शुरू कीजिए। अग्रेसिव का में क्या किए थे? हर गाय के लिए शुरू किए थे। स्टूडेंट वन के लिए शुरू करिए। क्या आप स्टूडेंट वन को ये वाला किताब दे सकते हैं? हां दे सकते हैं। क्यों? क्योंकि किसी भी बच्चे को 30 से ज्यादा पेज नहीं मिलना चाहिए। इसको आप 12 दे सकते हैं। अच्छा। अभी स्टूडेंट वन खत्म नहीं हुआ है। स्टूडेंट वन को आप और दे सकते हैं और दे सकते हैं। लेकिन जब आप",
+      "source": "caption",
+      "english_text": "Can't get it. Can't get more than 30 pages. Will not be found. No it is not allowed. Because we have guessed that the maximum number of pages allowed to any child will be 30. let's watch. Start giving the page to Student One first. What did you do in Aggressive? Started for every cow. Start for Student One. Can you give this book to Student One? Yes can give. Why? Because no child should get more than 30 pages. You can give it 12. Good. Student One is not over yet. You can give and give more to Student One. but when you"
+    },
+    {
+      "start_time": 481.68,
+      "end_time": 513.75,
+      "text": "अगले किताब पे आते हैं तो अगली किताब में 34 पेज है। तो क्या आप स्टूडेंट वन को ये दे सकते हैं? अगर आप स्टूडेंट वन को देंगे तो ये 12 + 34 46 हो जाएगा। लेकिन आप क्या गेस करके आए हैं? 30 गेस करके आए हैं। मतलब आप ये स्टूडेंट वन को नहीं दे सकते हैं। स्टूडेंट वन को आप 12 दे सकते थे। 34 अगर देंगे तो वो एक्सीड कर जाएगा जो हम लिमिट सोच के आए हैं। आप इसको नहीं दे सकते हैं। स्टूडेंट वन को एक ही किताब दे सकते हैं आप 12। अब आपको स्टूडेंट टू की ओर चलना पड़ेगा। लेकिन लेकिन लेकिन एक बहुत डिफिकल्ट बात है। जब आप स्टूडेंट टू की ओर आते हैं तो अभी कौन सा किताब बचा",
+      "source": "caption",
+      "english_text": "Coming to the next book, the next book has 34 pages. So can you give this to Student One? If you give it to student one then it will become 12 + 34 46. But what have you guessed? Came after doing 30 guesses. Meaning you cannot give it to Student One. You could have given 12 to Student One. If we give 34 then he will exceed what we thought was the limit. You can't give it. You can give only one book to student one. Now you have to head towards Student Two. But but but it is a very difficult thing. When you come to Student 2, which book is still left?"
+    },
+    {
+      "start_time": 513.76,
+      "end_time": 546.949,
+      "text": "हुआ है? 34। क्या आप स्टूडेंट टू को ये 34 दे सकते हैं? नहीं दे सकते हैं, नहीं दे सकते हैं। क्यों नहीं दे सकते हैं? क्योंकि किसी भी बच्चे को मैक्सिमम पेज 30 अलाउड है। आप 34 भी नहीं दे सकते हैं। तो मतलब कि ये जो किताब है ना 34 वाला ये आप किसी बच्चे को नहीं दे सकते हैं या आप किसी बच्चे को नहीं दे सकते हैं। मतलब कि ये बुक क्या हो जाएगा? अनडिस्ट्रीब्यूटेड रह जाएगा। अनडिस्ट्रीब्यूटेड रह जाएगा। तो 30 तो आपका आंसर नहीं हो सकता है। 30 तो आपका आंसर बिल्कुल नहीं हो सकता है। आप ऐसा लिमिट नहीं सेट कर सकते हैं कि किसी भी बच्चे को हम 30 ही दूंगा। सिमिलरली 70",
+      "source": "caption",
+      "english_text": "Has it happened? 34. Can you give these 34 to Student Two? Can't give, can't give. Why can't you give? Because the maximum number of pages allowed to any child is 30. You can't even give 34. So that means that this book is 34 in number, you cannot give it to any child or you cannot give it to any child. Meaning, what will this book become? Will remain undistributed. Will remain undistributed. So 30 cannot be your answer. 30 then your answer cannot be at all. You cannot set such a limit that we will give only 30 to any child. Similarly 70"
+    },
+    {
+      "start_time": 546.959,
+      "end_time": 580.07,
+      "text": "भी आंसर नहीं हो सकता है। 70 भी आंसर नहीं ना हो सकता है। क्यों नहीं हो सकता है? क्योंकि अब देखिए 70 अगर आपका आंसर है तो ये 90 वाला बुक आप किसको देंगे? किसी को नहीं दे पाएंगे। 80 80 भी आंसर नहीं हो सकता है क्योंकि फिर ये 90 किसको देंगे? तो एक बात हमको पता चलता है कि आंसर ना 90 होना चाहिए। 90 या 90 से ज्यादा ही हो सकता है। क्यों? क्योंकि अगर आप 89 भी डिसाइड करते हैं कि किसी भी बच्चे को 89 से ज्यादा पेज नहीं मिलना चाहिए। तो ये 90 आप किसको देंगे? यह 90 आप किसको देंगे? ये 90 आप किसी को नहीं दे पाएंगे। इसीलिए एक बात तो पता चलती है कि जिस भी बुक पे मैक्सिमम पेजेस है ना उससे छोटा आंसर",
+      "source": "caption",
+      "english_text": "There can't be an answer either. Even 70 cannot be the answer. Why can't it happen? Because now see, if 70 is your answer then to whom will you give this 90 book? Will not be able to give it to anyone. Even 80 cannot be the answer because then to whom will they give 90? So one thing we come to know is that the answer should not be 90. Can be 90 or more than 90. Why? Because even if you decide 89, no child should get more than 89 pages. So who will you give these 90 to? Who will you give this 90 to? You will not be able to give these 90 rupees to anyone. That's why one thing is known that whichever book has maximum pages, it has a smaller answer."
+    },
+    {
+      "start_time": 580.08,
+      "end_time": 613.03,
+      "text": "पॉसिबल नहीं है। आइए 90 के लिए चेक करते हैं। क्यों नहीं 90 के 90 तो हो सकता है हमारे लॉजिक के हिसाब से। चेक करते हैं। आइए 90 चेक किया जाए कि 12 है, 34 है, 67 है और 90 है। ठीक है? ओके। हम लोग चेक किए कि हम लोग क्या करेंगे कि मैथ्स पेजेस टू वन स्टूडेंट। वन स्टूडेंट कितना होना चाहिए? 90 होना चाहिए। 90 से ज्यादा नहीं दे सकते हैं किसी बच्चे को। आइए चेक करते हैं। सबसे पहले स्टूडेंट वन। क्या आप स्टूडेंट वन को 12 वाला बुक दे सकते हैं?",
+      "source": "caption",
+      "english_text": "Not possible. Let's check for 90. Why not 90 out of 90? According to our logic it can happen. Let's check. Let's check 90 is 12, 34, 67 and 90. Ok? Ok. We checked that what we would do is give maths pages to one student. How much should one student be? Should be 90. Can't give more than 90 rupees to any child. Let's check. First up is Student One. Can you give a 12th book to student one?"
+    },
+    {
+      "start_time": 613.04,
+      "end_time": 646.949,
+      "text": "हां दे सकते हैं। 12 वाला दे सकते हैं। वेरी गुड। दे दीजिए। क्या आप स्टूडेंट वन को 34 वाला बुक दे सकते हैं? यस दे सकते हैं। क्योंकि जब आप 12 + 34 करेंगे तो ये 46 है जोकि 90 से कम है जो कि 90 से कम है। दे सकते हैं। लेकिन क्या आप स्टूडेंट टू को 67 दे सकते हैं? नहीं। जब आप अच्छा दे सकते हैं क्या? नहीं नहीं दे सकते हैं। क्योंकि जब आप इसमें 67 करेंगे तो क्या होगा? 12 34 67 4 2 6 13 1 13 हो जाएगा जो कि 90 से ज्यादा है। तो स्टूडेंट वन खत्म हो चुका है। अब आप स्टूडेंट वन को और कोई किताब नहीं दे सकते क्योंकि कंटीन्यूअस असाइनमेंट है। ऐसा आप नहीं कर सकते हैं कि",
+      "source": "caption",
+      "english_text": "Yes can give. Can give one of 12. very good. Give it. Can you give the book with 34 to student one? Yes can be given. Because when you do 12 + 34, it's 46, which is less than 90, which is less than 90. can give. But can you give Student Two a 67? No. When can you give good? No, can't give. Because what will happen when you do 67 in it? 12 34 67 4 2 6 13 1 will become 13 which is more than 90. So Student One is over. Now you cannot give any more book to Student One because it is a continuous assignment. you can't do that"
+    },
+    {
+      "start_time": 646.959,
+      "end_time": 679.43,
+      "text": "स्टूडेंट वन को तीसरा बुक नहीं दिया और फिर चौथा दे दिए। नहीं कंटीन्यूअसली असाइनमेंट होनी चाहिए। तो आप इसको नहीं दे। स्टूडेंट वन का काम हो गया। अब ये 67 आपको कहां से देना पड़ेगा? स्टूडेंट टू को देना पड़ेगा। स्टूडेंट टू को देना पड़ेगा। तो ठीक है। क्या इसको हम 67 दे सकते हैं? हां, दे सकते हैं। 67 दिया जा सकता है। क्यों? क्योंकि यह 90 से कम है। इसके पास 67 पेज है। लेकिन, क्या आप यह 90 इसमें जोड़ सकते हैं? नहीं। क्योंकि आप 90 जोड़ेंगे क्या हो जाएगा? 157, 157 90 से कम है, तो ये आप स्टूडेंट टू को नहीं दे सकते हैं 90 वाला। तो स्टूडेंट टू का भी काम हो",
+      "source": "caption",
+      "english_text": "Student one was not given the third book and then given the fourth. No, there should be continuous assignments. So you don't give it. Student one's work is done. Now from where will you have to pay this Rs.67? Student 2 will have to pay. Student 2 will have to pay. Well then. Can we give it 67? Yes, can give. 67 can be given. Why? Because it is less than 90. It has 67 pages. But, can you add this 90 to it? No. Because what will happen if you add 90? 157, 157 is less than 90, so you cannot give it to student 2 with 90. So student 2's work should also be done"
+    },
+    {
+      "start_time": 679.44,
+      "end_time": 710.31,
+      "text": "गया। लेकिन लेकिन क्या आपके पास और बच्चे बचे हैं देने के लिए? ये देखिए 90 वाला बुक अभी तक किसी को नहीं मिला है। स्टूडेंट वन इतना में हुआ। स्टूडेंट टू 67 में इसका हो गया। अब 90 वाला बुक किसको मिलेगा? आपको यहां पे आपको स्टूडेंट थ्री चाहिए था। स्टूडेंट थ्री नहीं है आपके पास। दो ही बच्चे हैं। तो इससे हमको क्या पता चलता है? 90 भी आपका आंसर नहीं हो सकता है। 90 भी आपका आंसर नहीं हो सकता है। क्यों? क्योंकि बच्चे खत्म हो गए। हम लोग देखिए हम लोग क्या कर रहे हैं? हम लोग यहां पे हर बच्चे को ईच बच्चे को ईच बच्चे",
+      "source": "caption",
+      "english_text": "Gone. But but do you have any more children left to give? Look, no one has received the 90's book yet. Student One happened in itna. It happened in Student Two 67. Now who will get the 90 book? You wanted student three here. You don't have student three. There are only two children. So what does this tell us? Even 90 cannot be your answer. Even 90 cannot be your answer. Why? Because the kids are gone. Look at what we are doing? We here, every child, every child, every child"
+    },
+    {
+      "start_time": 710.32,
+      "end_time": 745.03,
+      "text": "को ईच बच्चे को जितना हो सके जितना हो सके उतना दे रहे हैं उतना दे रहे हैं मतलब ये जितना तक ले सकता है उतना लिमिट तक जा रहे हैं हम लोग स्टूडेंट वन में 12 के बाद रुक नहीं गए थे देते जाते थे जब तक कि आप लिमिट हिट नहीं करने वाले होते हैं तब तक देने का कोशिश करते हैं तो ये करने के बाद भी आपके सारे बुक डिस्ट्रीब्यूट नहीं हुए आपका एक बुक रह गया 90 पेज वाला तो क्या आपका आंसर 90 हो सकता है आपका आंसर 90 नहीं हो सकता। आपका आंसर 90 नहीं हो सकता है। अब एक और बात ये तो हो गई कि क्या आंसर नहीं हो सकता है। क्या आंसर हो सकता है? मतलब कौन सा नंबर आंसर हो सकता है? उस",
+      "source": "caption",
+      "english_text": "You are giving as much as you can to each child, that is, you are going to the limit as much as you can take, in Student One, we did not stop after 12th, we used to keep giving till you are about to hit the limit, then even after doing this, all your books were not distributed, only one of your books was left with 90 pages, so can your answer be 90? Your answer may not be 90. Could. Your answer cannot be 90. Now one more thing has happened that what cannot be the answer. What could be the answer? Meaning which number can be the answer? that"
+    },
+    {
+      "start_time": 745.04,
+      "end_time": 779.19,
+      "text": "पे थोड़ा बात करते हैं। तो ये थोड़ा कॉन्सेप्ट लोगों को समझने में दिक्कत आती है इसीलिए हम जोर दे रहे हैं। ठीक है? 12 34 67 90 0 1 2 3 मान लीजिए कि आप गेस कीजिए कि मैक्सिमम पेजेस मैक्सिमम अच्छा एक बात बताइए किसी भी बच्चे को आप मैक्सिमम पेज कितना दे सकते हैं इस लाइब्रेरी में? सारे बुक का सम उतना ही दे पाएंगे। सारे बुक का जितना भी सम है उतना ही दे पाएंगे ना? उससे ज्यादा तो नहीं दे पाएंगे। तो सारे बुक का सम कितना है? 191 + 12 3 203 हम बोले कि किसी भी बच्चे को 203 से ज्यादा नहीं मिलेगा जो कि कभी नहीं",
+      "source": "caption",
+      "english_text": "Let's talk a little. So people find it difficult to understand this little concept, that is why we are emphasizing on it. Ok? 12 34 67 90 0 1 2 3 Suppose you guess the maximum pages maximum. Well, tell me one thing, what is the maximum number of pages you can give to any child in this library? You will be able to pay the same amount for all the books. Will you be able to give only the amount of the entire book? Will not be able to give more than that. So what is the sum of all the books? 191 + 12 3 203 We said that no child will get more than 203 which will never happen"
+    },
+    {
+      "start_time": 779.2,
+      "end_time": 814.15,
+      "text": "मिल सकता है। अगर आप एक बच्चे को सारा भी दे देंगे तो 203 ही रहेगा तो 203 नहीं मिल सकता है। ठीक है? तो आइए देखते हैं कि 203 पॉसिबल है कि नहीं? आइए। सबसे पहले स्टूडेंट वन। क्या आप स्टूडेंट वन को 12 दे सकते हैं? हां दे सकते हैं। 12 दे सकते हैं। ठीक है? क्या इसको 34 भी दे सकते हैं? हर स्टूडेंट को ना हर स्टूडेंट को ऊपर तक भर दीजिए। उसका पूरा बैग ही भर दीजिए। जब तक कि आप लिमिट हिट ना करें। तो 34 देने से भी आप लिमिट हिट नहीं करेंगे। तो इसको 34 भी दिया जा सकता है। क्या स्टूडेंट टू को 67 दिया जा सकता है? हां, दिया जा सकता है। अभी भी आप लिमिट हिट अभी भी आपका 113 आया है। 203 से कम है। और क्या इस बच्चे को 90 भी दिया जा सकता है?",
+      "source": "caption",
+      "english_text": "Can get. Even if you give everything to a child, it will remain only 203, so 203 cannot be received. Ok? So let's see whether 203 is possible or not? Come. First up is Student One. Can you give Student One a 12? Yes can give. Can give 12. Ok? Can we give it 34 also? Fill every student, not every student, to the top. Fill his entire bag. Unless you hit the limit. So even by paying 34 you will not hit the limit. So it can also be given 34. Can Student Two be given a 67? Yes, it can be given. Still you hit the limit, still your 113 has come. is less than 203. And can this child be given even 90?"
+    },
+    {
+      "start_time": 814.16,
+      "end_time": 847.509,
+      "text": "हां, आपको 90 भी दिया जा सकता है। सारे बुक खत्म हो गए क्योंकि ये इसका सम क्या आया? 203, 203 अलाउड है। आप गेस यही करके आए थे। अच्छा तो आपके बुक खत्म हो गए आपके बुक खत्म हो गए लेकिन अब लोगों को लगेगा कि 203 भी मेरा आंसर नहीं हो सकता है क्यों क्योंकि सारे बच्चे को तो बुक नहीं मिला सारे बच्चे को तो बुक नहीं मिला अब देखिए सारे बच्चे को बुक क्यों नहीं मिला क्योंकि आप ग्रीडी होके सारे एक ही बुक सारे बच्चे को दे दिए अब मान लीजिए आपके पास एक बच्चा रह गया आपके पास एक बच्चा रह गया s2 रह गया s2 के पास तो एक भी बुक नहीं है तो देखिए हम लोग क्या रूल बनाए थे किसी भी बच्चे को 203 से ज्यादा किताबें",
+      "source": "caption",
+      "english_text": "Yes, you can also be given 90. All the books are gone because what is this? 203, 203 is allowed. This is what you came to guess. Well, your books are finished, your books are finished, but now people will think that even 203 cannot be my answer, because not all the children got the books, not all the children got the books, now see why all the children did not get the books, because you got greedy and gave all the same books to all the children. Now suppose you are left with one child, you are left with one child, s2 is left, s2 does not have even a single book, so see what rules we had made for any child. more than 203 books"
+    },
+    {
+      "start_time": 847.519,
+      "end_time": 880.55,
+      "text": "नहीं मिल सकती किसी भी बच्चे को 203 से ज्यादा किताबें नहीं मिल सकती हैं। अगर आपका एक ही बच्चा कैपेबल है सारी किताबें रखने के तो अब आप ये आंसर हो सकता है। ये आंसर कैसे हो सकता है? क्योंकि आप क्या करिए? एक बुक उठाइए। इसको इधर दे दीजिए। खत्म हो गया। इसको यहां से हटा दीजिएगा। इसको यहां से हटा दीजिएगा। देखिए। अभी भी सही है। अभी भी सही है। इस बच्चे के पास कितना है? 113 बुक है। इस बच्चे के पास 90 बुक हैं आप अपने लिमिट के अंदर है। तो ये आंसर हो सकता है। ये आंसर हो सकता है तो बच्चा रह जाना प्रॉब्लम नहीं है। किताब का छूट जाना प्रॉब्लम है। बच्चा का रह जाना",
+      "source": "caption",
+      "english_text": "No child can get more than 203 books. If only one of your children is capable of keeping all the books, then now you can have this answer. How can this be the answer? Because what can you do? Pick up a book. Give this here. It's over. Remove it from here. Remove it from here. See. Still correct. Still correct. How much does this kid have? There is 113 books. This kid has 90 books, you are within your limit. So this could be the answer. If this can be the answer then remaining a child is not a problem. Missing a book is a problem. child's absence"
+    },
+    {
+      "start_time": 880.56,
+      "end_time": 913.269,
+      "text": "क्यों नहीं है प्रॉब्लम? बच्चा का रह जाना क्यों नहीं है प्रॉब्लम? हम आपको एक ये हम समझाने की कोशिश कर रहे हैं। याद मत कीजिएगा। ये लोग याद कर लेते हैं कि हां ठीक है बच्चा से नहीं। बच्चा से क्यों प्रॉब्लम नहीं है? मान लीजिए आपके पास 10 किताबें हैं। आपके पास 10 किताबें हैं। 1 1 10 किताबें हैं। सब में एक-एक पेज है। आप अपना लिमिट कुछ ऐसा सोच के आए थे कि किसी भी बच्चे के पास ना किसी भी बच्चे के पास 10 किताबें ah 10 से ज्यादा पेज नहीं होनी चाहिए। तो ऑब्वियस सी बात है कि मान लीजिए",
+      "source": "caption",
+      "english_text": "Why is there no problem? Why is leaving a child behind is not a problem? We are trying to explain this to you. Don't remember. These people remember that yes, it is okay, but not with the child. Why is there no problem with the child? Suppose you have 10 books. You have 10 books. 1 1 There are 10 books. Each has one page. You came up with your limit thinking that no child should have more than 10 books or 10 pages. So it's obvious that we should accept it."
+    },
+    {
+      "start_time": 913.279,
+      "end_time": 947.35,
+      "text": "s1 है। S1 को आप सारा दे सकते हैं। S1 को आप सारा दे सकते हैं। देखिए आप सारे किताबें S1 को दे दीजिए। कितना हो जाएगा? 10 आप अपने लिमिट में हैं। अब मान लीजिए आपके पास तीन स्टूडेंट्स और थे। आपके पास तीन स्टूडेंट और थे। अब आपको लगेगा कि ये तो आंसर नहीं हो सकता है। हो सकता है। ऐसा इसलिए हुआ क्योंकि आप ग्रीडी थे। आप ग्रीडी थे। आप ये डिसाइड करने की कोशिश कर रहे थे कि कौन सा बच्चा ज्यादा से ज्यादा कितना ले सकता है उसको दे दो और फिर डिसाइड करेंगे। एक बार आपको पता चल गया कि ये ठीक है। आपके कम बच्चों में भी ये टारगेट अचीवेबल है। आइए मैथ्स वाला टारगेट कम बच्चों में भी अचीवेबल है। क्या कीजिए?",
+      "source": "caption",
+      "english_text": "s1 is. You can give everything to S1. You can give everything to S1. Look, give all the books to S1. How much will it be? 10 You are at your limit. Now suppose you had three more students. You had three more students. Now you will feel that this cannot be the answer. It is possible This happened because you were greedy. You were greedy. You were trying to decide which child can take the maximum amount, give it to him and then decide. Once you know it's okay. This target is achievable even if you have fewer children. Let us tell you that the target of Maths is achievable even for less children. What to do?"
+    },
+    {
+      "start_time": 947.36,
+      "end_time": 981.03,
+      "text": "एक-एक बुक उठाइए। यहां एक दे दीजिए, यहां एक दे दीजिए, यहां एक दे दीजिए। क्या होगा? इधर से तीनो गायब हो गया, तो इसका सात आएगा। इन सबका वन आएगा, वन आएगा, वन आएगा। मतलब ये 10 वाला जो लिमिट आप इनफोर्स किए थे ना, यह पॉसिबल है। अभी ऐसा क्यों लग रहा था क्योंकि आप ग्रीडी थे ना आप एक बच्चे को जितना हो सकता था उतना दे रहे थे। ऑब्वियस सी बात है कि कुछ लोग छूट जाएंगे। तो लगता है कि मेरा एक आर्डर आ गया 1 मिनट। तो ये काम करके हम लोग को क्या समझ में आया कि अगर बच्चे कम पड़ जाते हैं ना तो ठीक है। बच्चे कम पड़ जाते हैं तो ठीक है। क्यों? क्योंकि आप एक बच्चे को इतना ज्यादा दे दिए थे। उसमें से थोड़ा-थोड़ा निकाल लीजिएगा। हां, ये कब",
+      "source": "caption",
+      "english_text": "Pick up one book each. Give one here, give one here, give one here. What will happen? If all three disappear from here, then its seven will come. The forest of all these will come, the forest will come, the forest will come. Meaning, this limit of 10 which you had enforced is possible. Why it felt like this now was because you were greedy and you were giving as much as you could to a child. It is obvious that some people will be left out. So it seems that one of my orders has arrived in 1 minute. So what we understood after doing this work is that it is okay if the children fall short. It is okay if the children fall short. Why? Because you gave so much to a child. Take out a little bit from it. yes, when is this"
+    },
+    {
+      "start_time": 981.04,
+      "end_time": 1014.069,
+      "text": "पॉसिबल नहीं होगा? अगर अगर आपके नंबर ऑफ बुक्स अब आपके नंबर ऑफ बुक्स लेस देन आपके नंबर ऑफ स्टूडेंट्स हैं। लेस देन नंबर ऑफ स्टूडेंट्स हैं। मतलब कि आपके पास दो बुक है और आपके पास तीन स्टूडेंट हैं। अब आप कुछ भी करना आंसर पॉसिबल नहीं है। क्योंकि आप पेजेस मैटर नहीं करते हैं। देखिए हर स्टूडेंट को एक बुक मिलना चाहिए। रूल में था। लेकिन आपके पास दो ही बुक है। तो अगर हर स्टूडेंट को आप एक-एक बुक भी देंगे। पेज के बारे में एकदम भूल जाइए। अब ये पॉसिबल नहीं है। इस केस में आपका आंसर -1 आना चाहिए। नॉट पॉसिबल। लेकिन अगर आप इस तरीके से डिस्ट्रीब्यूशन कर रहे हैं। अगर",
+      "source": "caption",
+      "english_text": "Would not be possible? If your number of books is now your number of books is less than your number of students. There are less than number of students. Meaning you have two books and you have three students. Now it is not possible for you to do anything. Because you don't care about pages. See, every student should get a book. Was in rule. But you have only two books. So if you also give one book to every student. Forget about the page altogether. Now this is not possible. In this case your answer should be -1. Not possible. But if you are distributing in this way. if"
+    },
+    {
+      "start_time": 1014.079,
+      "end_time": 1043.429,
+      "text": "आप मन में सोच के आए कि 10 बुक्स 10 पेज हम एक बच्चे को दे सकते हैं। एक ही बच्चे में आपका काम हो गया और आपको पता है कि मेरा नंबर ऑफ बुक्स अच्छा खासा है। मेरा नंबर ऑफ बुक्स इक्वल टू नंबर ऑफ स्टूडेंट्स है या मेरा नंबर ऑफ बुक्स ग्रेटर दैन नंबर ऑफ स्टूडेंट्स है। तो आप ठीक है। जिस बच्चे को आप सब दे दिए। है ना? उसमें से थोड़ा-थोड़ा निकाल के बाकी बच्चे को दे दीजिए। देना नहीं है। मन में सोचना है। कहने का मतलब कि ये यस आंसर है। ये पॉसिबल आंसर है। ये पॉसिबल आंसर है। ओके। अब देखिए इतनी बात अगर समझ में आई हो तो अब हम लोग किस डायरेक्शन में मूव कर रहे हैं आप लोगों को समझ में आ गया होगा।",
+      "source": "caption",
+      "english_text": "You thought in your mind that we can give 10 books and 10 pages to a child. Your work is done in just one child and you know that my number of books is quite good. My number of books is equal to the number of students or my number of books is greater than the number of students. So you are fine. The child to whom you gave everything. Isn't it? Take out a little bit from it and give the rest to the child. Don't have to give. Have to think in the mind. That means it is a yes answer. This is a possible answer. This is a possible answer. Ok. Now see, if you have understood this much then you must have understood in which direction we are moving now."
+    },
+    {
+      "start_time": 1043.439,
+      "end_time": 1077.669,
+      "text": "ऊपर वाले क्वेश्चन में जब आप 90 गेस किए तो आपको पता चला कि ये नॉट पॉसिबल है। ये नॉट पॉसिबल है। अब एक बात बताइए अगर 90 इसमें नॉट पॉसिबल क्यों हुआ? क्योंकि सारे बच्चे खत्म हो गए। हर बच्चा जितना ले सकता था आप ले दिए। अभी भी बुक बाकी है। अभी भी बुक बाकी है। मतलब कि बच्चे की लिमिट हिट हो गई है। बच्चा जितना किताब रख सकता था बैग में रख लिया है। उसके बाद भी आपके पास एक दो किताब या बाकी है। तीन किताब बाकी है। तो इसीलिए था कि नॉट पॉसिबल है। तो एक बात बताइए कि अगर 90 ही नॉट पॉसिबल है। जब आप 90 का लिमिट लगाएं तो नॉट पॉसिबल हो गया। जब आप 80 का लिमिट लगाएंगे तो आपको",
+      "source": "caption",
+      "english_text": "In the above question, when you did 90 guesses, you came to know that it is not possible. This is not possible. Now tell me one thing, if 90 is not possible then why is it not possible? Because all the children are gone. Every child took as much as he could. The book is still pending. The book is still pending. Meaning that the child's limit has been hit. The child has kept as many books as he could in the bag. Even after that you still have a book or two left. Three books left. So that's why it was not possible. So tell me one thing that even 90 is not possible. When you put a limit of 90 then it becomes not possible. When you set a limit of 80, you will get"
+    },
+    {
+      "start_time": 1077.679,
+      "end_time": 1112.549,
+      "text": "लगता है कि ये पॉसिबल हो जाएगा? नहीं। ये भी नॉट पॉसिबल है। क्यों? ये इसको आप ऐसे समझिए कि आपके पास बहुत सारे बच्चे हैं। आपके पास बहुत सारे बच्चे हैं। सबके पास एक-एक बैग है। सबके पास एक-एक बैग है। आप एक लिमिट लगाएं कि हर बैग में 10 किलो ही रखने देंगे। हर बैग में 10 किलो रखने देंगे। तो मान लीजिए कुछ-कुछ करते-करते ये बच्चा 8 किलो रख लिया। ये 9 किलो रख लिया और ये 8 किलो रख लिया और फिर ये 7 किलो रख लिया। लेकिन अभी भी आपके पास 5 केजी रिमेनिंग रह गया जो कि कोई बच्चा नहीं ले सकता है। कोई बच्चा ये 5 केजी आप किसी भी बच्चे को देंगे तो 10 से प्लस हो जाएगा।",
+      "source": "caption",
+      "english_text": "Do you think this will be possible? No. This is also not possible. Why? Think of it like you have many children. You have lots of children. Everyone has one bag each. Everyone has one bag each. You put a limit that only 10 kg will be kept in each bag. Will be allowed to keep 10 kg in each bag. So let's say that by doing a few things this child has gained 8 kg. Kept this 9 kg and this kept 8 kg and then kept this 7 kg. But you are still left with 5 kg remaining which no child can take. If you give these 5 kg to any child, it will become 10 plus."
+    },
+    {
+      "start_time": 1112.559,
+      "end_time": 1144.23,
+      "text": "तो आपके पास यह रह गया। आप बोले कि नॉट पॉसिबल। तो ये क्यों हुआ? क्योंकि आप 10 kg का लिमिट लगाए। तो अगर आप 7 kg का लिमिट लगा देंगे कि हर बैग में अब 7 ही kg रह सकता है तो भी ये नॉट पॉसिबल होगा। तो आपके पास यहां पे जो बचेगा ना वो ज्यादा बच जाएगा। तो खराब सलूशन की तरफ आप जा रहे हैं। अब जब 10 kg का लिमिट लगाए आपको पता चला कि अच्छा सबका बैग भर गया। उसके बाद भी मेरे पास 5 kg बच गया। उसके बाद भी मेरे पास किताबें बच गई। तो अगर आप 7 kg का लिमिट लगा देंगे तो आपके पास और खराब हो जाएगा। इसीलिए अगर 90 सॉल्यूशन नहीं हुआ 80 कभी सॉल्यूशन नहीं होगा। सिमिलरली",
+      "source": "caption",
+      "english_text": "So you are left with this. You said not possible. So why did this happen? Because you imposed a limit of 10 kg. So even if you impose a limit of 7 kg that each bag can contain only 7 kg, it will still not be possible. So whatever is left with you here will be more. So you are heading towards a bad solution. Now when the limit of 10 kg is imposed, you realize that everyone's bag is full. Even after that I was left with 5 kg. Even after that I still had books left. So if you impose a limit of 7 kg then you will get worse. That's why if there is no solution to 90, there will never be a solution to 80. Similary"
+    },
+    {
+      "start_time": 1144.24,
+      "end_time": 1179.19,
+      "text": "सिमिलरली अगर 150 सॉल्यूशन है। अगर 150 पॉसिबल है पॉसिबल का मतलब कि या तो सारे बच्चे को हो गया सारी किताबें खत्म हो गई बेसिकली। सारी किताबें खत्म हो गई। हो सकता है किसी एक ही बच्चे पे ज्यादा हो गया हो वो सब हम लोग देख लेंगे कि इधर-उधर कर देंगे हो जाएगा। अगर 150 का लिमिट पॉसिबल है, तो 170 का भी पॉसिबल होगा। 170 का लिमिट भी पॉसिबल होगा। क्यों? क्योंकि 150 में आप देखिए कि हां ठीक है एक ही बच्चा रख लिया सारा बुक 170 में भी रख लेगा। इसका क्या मतलब है? जब आप 10 का लिमिट लगाएं 10 पेज का लिमिट तो s1 क्या",
+      "source": "caption",
+      "english_text": "Similarly if there is 150 solution. If 150 is possible then it is possible that either all the children have got it or all the books have been finished basically. All the books are finished. It is possible that it is too much for one child, we will see about it or move it around. If the limit of 150 is possible, then 170 will also be possible. A limit of 170 will also be possible. Why? Because in Rs 150, you see that yes, it is okay that you have kept only one child, the whole book will be kept in Rs 170 also. What does it mean? When you put a limit of 10, then what is the limit of 10 pages?"
+    },
+    {
+      "start_time": 1179.2,
+      "end_time": 1211.51,
+      "text": "किया? S1 सब रख लिया। s1 10 बुक रख लिया एक-एक पेज वाली। अगर आप 15 का लिमिट लगाएंगे तो भी s1 सारा रख लेगा ना। s1 तो 10 है। तो अगर आप 15 का लिमिट लगाएंगे, 20 का लिमिट लगा देंगे, 1000 का लिमिट लगा देंगे। क्या फर्क पड़ता है? s1 10 है ना, तो ठीक है, अगर 10 में काम बन गया था, 15 में भी, 20 में भी हजार में भी बन जाएगा। तो आपके आपको कैसा दिख रहा है? एक पॉइंट तक, एक पॉइंट तक आपको पता चलता है नो, नो, नो, नो, नो। ये किस पॉइंट तक? ये क्या गेस कर रहे हैं हम लोग? मैक्सिमम नंबर ऑफ पेजेस अलाउड टू अ स्टूडेंट, एक पॉइंट तक",
+      "source": "caption",
+      "english_text": "did? S1 kept it all. s1 Kept 10 books with one page each. Even if you set a limit of 15, S1 will keep it all. s1 is 10. So if you put a limit of 15, put a limit of 20, put a limit of 1000. How does it matter? s1 is 10, so it is okay, if the work was done in 10, it will be done in 15, 20 or even in thousand. So how do you feel about it? Up to a point, up to a point, you realize no, no, no, no, no. Up to what point? What are we guessing? Maximum number of pages allowed to a student, up to one point"
+    },
+    {
+      "start_time": 1211.52,
+      "end_time": 1244.149,
+      "text": "नो। अचानक से एक पॉइंट आएगा जहां पे ये यस बन जाएगा और ये हमेशा यस रहेगा। अगर 113 पॉसिबल है तो 114 भी पॉसिबल है। 115 भी पॉसिबल है, 116 भी पॉसिबल है। सब पॉसिबल है। अच्छा, अब ये आपका क्या बन गया? गेस का आंसर? क्या यह मोनोटोनिक है? हां जी, यह मोनोटोनिक है। इसमें आपको फाइंड क्या करना है? आपको मिनिमाइज करना है इस लिमिट को। आपको मिनिमाइज करना है। मिनिमाइज मतलब यस वाला फर्स्ट ऑकरेंस, यस का फर्स्ट ऑकरेंस क्योंकि हो सकता है ये लिमिट 113 में हो।",
+      "source": "caption",
+      "english_text": "No. Suddenly there will come a point where it becomes yes and it will always be yes. If 113 is possible then 114 is also possible. 115 is also possible, 116 is also possible. Everything is possible. Well, what has become of you now? The answer to the guess? Is it monotonic? Yes, it is monotonic. What do you have to find in this? You have to minimize this limit. You have to minimize. Minimize means first occurrence of yes, first occurrence of yes because it may be in the limit 113."
+    },
+    {
+      "start_time": 1244.159,
+      "end_time": 1277.909,
+      "text": "ये 114 हो, 115 है, 116 है। लेकिन इन चारों में से आपको लेना कौन सा है? मिनिमाइज करना है फर्स्ट ऑकरेंस। फर्स्ट ऑकरेंस आपको लेना है। तो आप क्या करेंगे? आप क्या करेंगे? लो बनाएंगे, हाई बनाएंगे, गेस करेंगे। अगर आपका आंसर नो आता है, आंख बंद करके आपको राइट जाना चाहिए। लेकिन अगर आपका आंसर यस आता है, तो सबसे पहले तो इसको स्टोर कर लेना चाहिए और लेफ्ट जाना चाहिए। सेम प्रॉब्लम है फर्स्ट ऑकरेंस वाली दुकान वाली प्रॉब्लम। आइए इसको सॉल्व करने का कोशिश करते हैं। सबसे पहले तो हम लोग एक वो फंक्शन लिखते हैं कि जिसमें हम",
+      "source": "caption",
+      "english_text": "Be it 114, be it 115, be it 116. But which of these four should you take? The first occurrence is to be minimized. You have to take the first opportunity. So what will you do? What would you do? Will make low, make high, guess. If your answer is no, you should close your eyes and go right. But if your answer is yes, then first of all you should store it and go left. The same problem is the problem of the first occurrence shop. Let's try to solve this. First of all, we write a function in which we"
+    },
+    {
+      "start_time": 1277.919,
+      "end_time": 1312.63,
+      "text": "लोग बताएंगे कि हमारा जो लिमिट है, हमारा जो लिमिट है वो पॉसिबल है कि नहीं। तो सबसे पहले तो हम लोग एक चीज करेंगे कि देखिए सबसे पहले एक चीज करेंगे कि बुल फन ड्राई रन करेंगे चिंता मत कीजिए तो वेक्टर इंट बुक्स ये आपकी बुक्स है ये आपकी नंबर ऑफ बुक्स है और आपका क्या है एक इंट लिमिट मतलब कि किसी भी बच्चे को इतने से ज्यादा पेजेस नहीं देना अलाउड है और आपके नंबर ऑफ़ बच्चे नंबर ऑफ़ बच्चे। ओके? तो देखिए पहला",
+      "source": "caption",
+      "english_text": "People will tell whether our limit is possible or not. So first of all we will do one thing that see, first of all we will do one thing that bull will do fun dry run don't worry so vector int books this is your books this is your number of books and what is yours an int limit means it is not allowed to give more than this many pages to any child and your number of children number of children. Ok? so see first"
+    },
+    {
+      "start_time": 1312.64,
+      "end_time": 1337.909,
+      "text": "किताब तो पहले बच्चे को दे ही दीजिए। पहला किताब तो पहले बच्चे को दे ही दीजिए। तो ओके। तो हम लोग एक अह हम लोग एक क्या k लेके चलेंगे। k मतलब नंबर ऑफ़ बच्चे जिसको अभी तक अभी तक मिल चुका है किताब। तो k = 1 कर दीजिए। और इंट पेज = एरे ऑफ़ 0 मतलब कि पहले बच्चे को पहला वाला किताब मिल गया है। अगला किताब से हम लोग ट्राई करेंगे कुछ करने का। चलिए।",
+      "source": "caption",
+      "english_text": "Give the book to the child first. Give the first book to the child first. So ok. So what will we carry? k means number of children who have received the book so far. So make k = 1. And int pages = array of 0 means the first child has got the first book. Next we will try to do something with the book. Let go."
+    },
+    {
+      "start_time": 1337.919,
+      "end_time": 1369.75,
+      "text": "तो सबसे पहले या फिर पहला किताब मत दीजिए। पहला किताब मत दीजिए। हम लोग लूप में ही दे देंगे। k = 1 कर लीजिए कि अभी आप पहले बच्चे पे हैं। अभी आप पहले बच्चे पे फोकस कर रहे हैं। पहले आपको क्या याद रखना है? किसी भी समय अगर आपके बच्चे खत्म हो गए और आपका बुक बचा हुआ है। गेम खत्म हो गया आपका। आपका गेम खत्म हो चुका है। तो आइए i = 0 i &lt; ni + अच्छा। अब ये वाला बुक आप इस एकिस्टिंग बच्चे को दे सकते हैं कि नहीं दे सकते हैं? वो कैसे पता चलेगा? तो इन इसका पहले इसके पास कुछ नहीं है। अभी इसके पास इस बच्चे के पास एक भी पेज नहीं है।",
+      "source": "caption",
+      "english_text": "So don't give it first or the first book. Don't give the book first. We will give it in the loop itself. Let k = 1 so that you are now on the first child. Right now you are focusing on your first child. What do you need to remember first? At any time if your children are finished and your book is left. Your game is over. Your game is over. So let i = 0 i < ni + good. Now can you give this book to this existing child or not? How will he know? So before this he has nothing. This kid doesn't have a single page right now."
+    },
+    {
+      "start_time": 1369.76,
+      "end_time": 1403.99,
+      "text": "खाली बच्चा है। हम लोग फर्स्ट बच्चे पे फोकस कर रहे हैं क्योंकि K1 है। K1 है। क्या आप इस बच्चे को वो बुक दे सकते हैं कि नहीं दे सकते हैं? तो इफ पेज प्लस बुक्स i लेस दैन इक्वल टू लिमिट मतलब कि अगर ये बुक वाला ये बुक देने से आपका जो नंबर ऑफ़ पेज है इस बच्चे के पास वो लिमिट के अंदर रहता है तो आप इसको बिल्कुल दे सकते हैं। आप इसको बिल्कुल दे सकते हैं। बिल्कुल दे सकते हैं। तो आपको बस आगे इसको दे दीजिए। पेज इज इक्वल टू पेज प्लस बुक्स आई। आप इसको बिल्कुल दे सकते हैं।",
+      "source": "caption",
+      "english_text": "Is an empty child. We are focusing on the first child because it is K1. Is K1. Can you give that book to this child or not? So if pages plus books i is less than equal to limit, it means that if the number of pages that you have by giving this book to this child remains within the limit, then you can definitely give it to him. You can absolutely give it a try. Can absolutely give. So you just pass it on. Page is equal to page plus books i. You can absolutely give it a try."
+    },
+    {
+      "start_time": 1404.0,
+      "end_time": 1436.39,
+      "text": "बिल्कुल दे सकते हैं। आगे आ जाइए। बुक्स आई और हो जाइए। लेकिन एल्स एल्स अब आप इस बच्चे को नहीं दे सकते हैं। अब आप इस बच्चे को वो बुक नहीं दे सकते हैं। अब आपको किसको वो बुक देना पड़ेगा? अगले बच्चे को। तो अगले बच्चे को देने के लिए क्या करना पड़ेगा? k + k + वन का काम खत्म। k बढ़ गया और पेज इक्वल टू जो भी आपका बुक्स आई। बुक्स आई बुक्स आई। लेकिन लेकिन ऐसा करने से ये के बढ़ाने से अगर",
+      "source": "caption",
+      "english_text": "Can absolutely give. Come forward. Books arrived and it was done. But you can't give it to this child anymore. Now you cannot give that book to this child. Now to whom will you have to give that book? To the next child. So what needs to be done to give birth to the next child? k + k + forest work finished. k increased and page equal to whatever your books i. Books I Books I. But but by doing this, if it increases"
+    },
+    {
+      "start_time": 1436.4,
+      "end_time": 1470.63,
+      "text": "आपका K बड़ा हो गया आपके स्टूडेंट से आपके नंबर ऑफ स्टूडेंट से बड़ा हो गया तो आप क्या कर देंगे रिटर्न फॉल्स खत्म खेल रिटर्न फॉल्स क्योंकि बड़ा होने का क्या मतलब है आपके पास दो बच्चे थे आप आपको पता चला कि नहीं दूसरे बच्चे को भी ये हम किताब नहीं दे सकते हैं हमको तीसरा बच्चा चाहिए होगा तो केस तीन हो जाएगा लेकिन अगर वो ऐसा हो गया आपको रिटर्न फाल्स कर देना है और अगर सब कुछ सही चलता है तो आप लास्ट में रिटर्न ट्रू कर सकते लास्ट में रीड एंड ट्रू कर सकते हैं। अभी ये काम कैसे करता है? आइए देखते हैं ड्राई रन कि ये काम कैसे करता है। थोड़ा कंफ्यूजिंग है। ड्राई रन देखिए क्लियर हो जाएगा। तो दोनों केस के लिए देखेंगे। जब",
+      "source": "caption",
+      "english_text": "Your K has become bigger than your student, your number of students has become bigger than the number of students, then what will you do? Return false, game over, return false because what is the meaning of being big, you had two children, you came to know that no, we cannot give this book to the second child also, we want a third child, then the case will become three, but if it happens like this, you have to return false and if everything goes well, then you can return true in the last, read and true in the last. How does this work now? Let's see how the dry run works. A bit confusing. See dry run, it will be clear. So we will see for both the cases. when"
+    },
+    {
+      "start_time": 1470.64,
+      "end_time": 1499.43,
+      "text": "हम लोग कर सकते हैं जब हम लोग नहीं कर सकते हैं। आइए तो आप एक एरे ऐसा बनाइए। 12 34 67 90 0 1 2 3 ठीक है? आइए हम लोग पहली मैं क्या गेस करते हैं? हमारा जो लिमिट है, अ लिमिट इज़ इक्वल टू 100 देखते हैं। 100 पॉसिबल है कि नहीं? आइए। तो शुरू में क्या होगा? k = 1 अब पहले बच्चे पे फोकस कर रहे हैं। इसके पास कितना पेज है शुरू में? ज़ीरो पेज है। ठीक है? आइए बुक देना शुरू करते हैं। i = 0 पे। तो आपको क्या पता चला? 12। 12 क्या इसको दे सकते हैं?",
+      "source": "caption",
+      "english_text": "We can do it when people can't. Come, you create an array like this. 12 34 67 90 0 1 2 3 ok? Let us guess what first? Let us see our limit, A limit is equal to 100. Is it 100 possible or not? Come. So what will happen in the beginning? k = 1 Now focusing on the first child. How many pages does it have to begin with? There is zero page. Ok? Let's start booking. At i = 0. So what did you find out? 12. 12 Can you give it?"
+    },
+    {
+      "start_time": 1499.44,
+      "end_time": 1534.07,
+      "text": "क्या? पेज + 12 लेस दैन इक्वल टू 100 यस आप दे सकते हैं। तो आप क्या कर देंगे? पेज इज इक्वल टू 12। अभी आप पहले बच्चे पे ही हैं। वेरी गुड। i = 1 34 क्या आप इसको 34 दे सकते हैं? यस। 12 + 34 46 इज़ लेस दैन इक्वल टू 100। आप इसको दे सकते हैं। तो आप ये भी इसी बच्चे को दे दिए। अब आपका क्या पेज हो गया? 46 i = 2 क्या आप इसको 67 दे सकते हैं? नहीं। क्यों? क्योंकि 46 + 67 113 113 बन जाएगा जो कि आपके लिमिट को क्रॉस कर जाएगा। नहीं दे सकते हैं। तो आप क्या करते थे? k + k =",
+      "source": "caption",
+      "english_text": "what? Page + 12 Less Than Equal to 100 Yes you can give. So what will you do? Page is equal to 12. Right now you are on your first child. very good. i = 1 34 Can you give 34 to this? Yes. 12 + 34 46 is less than equal to 100. You can give it. So you gave this also to this child. What is your page now? 46 i = 2 Can you give it 67? No. Why? Because 46 + 67 will become 113 113 which will cross your limit. Can't give. So what did you do? k + k ="
+    },
+    {
+      "start_time": 1534.08,
+      "end_time": 1562.63,
+      "text": "2। अब आप सेकंड बच्चे पे हैं। अब आप सेकंड बच्चे पे हैं। इस सेकंड बच्चे को आपको ये किताब देना पड़ेगा। आपको ये किताब देना पड़ेगा। 67 और क्या आपका k बड़ा हो गया है स्टूडेंट से। आपका स्टूडेंट कितने थे? दो। क्या आपका के बड़ा हो गया स्टूडेंट से? नहीं, नहीं हुआ है। अभी आप दूसरे बच्चे पे हैं। आपके पास दो बच्चे हैं। वो अलाउड है। वो चलता है, अभी चलता है। आप लास्ट बच्चे पे हैं। लेकिन ठीक है। आगे के लिए ठीक है। आगे आइए। i = 3 90 क्या आप इस दूसरे बच्चे को इस k = 2 वाले बच्चे को दे सकते हैं?",
+      "source": "caption",
+      "english_text": "2. Now you are on the second child. Now you are on the second child. You will have to give this book to this second child. You will have to give this book. 67 And has your k become bigger than student. How many students did you have? Two. Has your child become bigger than the student? No, it has not happened. Now you are on your second child. You have two children. That's loud. He walks, walks now. You are on the last child. But okay. Okay to move ahead. Come forward. i = 3 90 Can you give this other child to this child with k = 2?"
+    },
+    {
+      "start_time": 1562.64,
+      "end_time": 1594.95,
+      "text": "नहीं। 67 + 90 157 हो सकता है। आपका लिमिट क्रॉस हो जाएगा। तो आपको ये तीसरे बच्चे को देना पड़ेगा। आपको k = 3 और इस तीसरे बच्चे को आपको ये 90 देना पड़ेगा। लेकिन आपका ये k तीन बन गया। आपके पास बच्चे कितने थे? दो। के इज़ ग्रेटर दैन स्टूडेंट्स। क्या हो जाएगा? फॉल्स। इसीलिए 100 इज़ नॉट पॉसिबल। 100 इज़ नॉट पॉसिबल। इस कारण से ये नॉट पॉसिबल। आपके आपको बच्चे बढ़ाने पड़ेंगे ये करने के लिए। आपका आपका बच्चे खत्म हो गए। आपका बुक डिस्ट्रीब्यूट नहीं हुआ। नॉट पॉसिबल। एक पॉसिबल का केस भी देख लेते हैं। एक पॉसिबल का केस भी देख",
+      "source": "caption",
+      "english_text": "No. 67 + 90 can be 157. Your limit will be crossed. So you will have to give it to the third child. You have to give k = 3 and this third child you have to give this 90. But this k of yours became three. How many children did you have? Two. K is greater than students. What will happen? Falls. That's why 100 is not possible. 100 is not possible. For this reason it is not possible. To do this you will have to raise children. Your children are gone. Your book was not distributed. Not possible. Let us also look at a possible case. See also a possible case"
+    },
+    {
+      "start_time": 1594.96,
+      "end_time": 1629.029,
+      "text": "लेते हैं। तो एक पॉसिबल का भी देखना चाहिए। मान लीजिए आपने जो लिमिट सेट की वो क्या थी? 150। 150। आइए देखते हैं। तो शुरू में आप किस बच्चे पे फोकस कर रहे हैं? फर्स्ट बच्चे पे। इसके पास कितने पेजेस हैं शुरू में? ज़ीरो पेजेस हैं। i = 0 आई है। 12, क्या आप इसको 12 दे सकते हैं? हां, दे सकते हैं। 0 + 12 12 लेस दैन इक्वल टू लिमिट है आपका। आप इसको दे सकते हैं। तो इसका पेज क्या बन गया? 12। i = 1, क्या आप इसको 34 दे सकते हैं? हां दे सकते हैं। आप इसको 34 दे सकते हैं क्योंकि 12 + 34 46 होता है। अब आप अब 150 से तो कम ही",
+      "source": "caption",
+      "english_text": "Let's take. So one possible thing should also be seen. Suppose what was the limit you set? 150. 150. let's watch. So which child are you focusing on initially? On first child. How many pages does it have to begin with? There are zero pages. i = 0. 12, can you give this a 12? Yes, can give. 0 + 12 12 Less than equal to limit is yours. You can give it. So what became of its page? 12. i = 1, can you give it 34? Yes can give. You can give it 34 because 12 + 34 is 46. Now you are less than 150 now"
+    },
+    {
+      "start_time": 1629.039,
+      "end_time": 1655.029,
+      "text": "है। 46 i = 2 क्या आप इसको 67 दे सकते हैं? हां दे सकते हैं। 46 + 67 कितना होता है? 113। आपके लिमिट से अभी भी वो अंदर है। आपके लिमिट से अभी भी वो अंदर है। इक्वल टू 113 हो गया। लेकिन जब आप i = 3 आए। अब क्या आप इसको 90 दे सकते हैं? नहीं। 67 + 90 अह सॉरी 113 + 90 कुछ और हो जाएगा। 2003 हो जाएगा। आपके 150 से तो आगे ही बढ़ जाएगा।",
+      "source": "caption",
+      "english_text": "Is. 46 i = 2 Can you give it 67? Yes can give. What is 46 + 67? 113. He is still within your limit. He is still within your limit. Equal to 113. But when you came to i = 3. Now can you give it a 90? No. 67 + 90 Ah sorry 113 + 90 There will be something else. It will be 2003. Your 150 will only increase further."
+    },
+    {
+      "start_time": 1655.039,
+      "end_time": 1688.47,
+      "text": "नहीं दे सकते हैं तो क्या करना चाहिए? दूसरा बच्चा पे शुरू आ जाइए। और इस दूसरे बच्चे को कितना पेज मिल रहा है? ये वाले किताब का पेज मिल रहा है। लेकिन अब आपका लूप खत्म हो गया। अब आपका लूप खत्म हो गया। आपका लूप में आप कहीं भी ऐसा आए कि आपका बच्चे आपके जो था के किस बच्चे पे आप डील कर रहे हैं? क्या वो कभी भी नंबर ऑफ स्टूडेंट्स से ज्यादा हुआ? नहीं। k = 2 चलेगा क्योंकि नंबर ऑफ स्टूडेंट्स हैं आपके पास टू। इसीलिए 150 क्या है? यस। 150 आंसर नहीं है देखिए। 150 इसका आंसर नहीं है। इसका आंसर 113 है। लेकिन यस पे आप लोग क्या करते थे? 150 को लिखते थे और लेफ्ट",
+      "source": "caption",
+      "english_text": "What should be done if you cannot give? Let's start on the second child. And how many pages is this other kid getting? This page of the book is available. But now your loop is finished. Now your loop is finished. Do you ever come across any point in your loop that which child of yours are you dealing with? Did it ever exceed the number of students? No. k = 2 will work because the number of students you have is two. So what is 150? Yes. Look, there is no answer 150. 150 is not the answer. Its answer is 113. But what did you guys do on this day? Used to write 150 and left"
+    },
+    {
+      "start_time": 1688.48,
+      "end_time": 1715.669,
+      "text": "जाते थे। तो ऐसे करके आपको कभी ना कभी 113 मिल जाएगा। क्योंकि 150 अगर ट्रू है वेरी गुड। ट्रू है लेकिन आपको फर्स्ट ऑकरेंस तो आप लेफ्ट जाएंगे तो आपको मिल जाएगा। तो ये कोड है ये ड्राई रन है और मेन मेन वाला फंक्शन भी लिख लेते हैं। हां, मेन वाले फंक्शन में कुछ चीजें हैं। तो जो आपका मेन फंक्शन है वो इंट जो आपका गिग्स फॉर गीग्स का फंक्शन है उसमें आपको क्या-क्या मिलेगा? आपको एक एरे ऑफ बुक्स मिलेंगी, जिसमें नंबर ऑफ पेजेस होंगे।",
+      "source": "caption",
+      "english_text": "Used to go. So by doing this you will get 113 someday. Because if 150 is true then it is very good. True but you will get the first occurrence if you go left. So this is the code, this is a dry run and we also write the main function. Yes, there are some things in the main function. So, what is your main function and what is your gigs for gigs function, what will you get in it? You will get an array of Books, containing numbers of pages."
+    },
+    {
+      "start_time": 1715.679,
+      "end_time": 1748.47,
+      "text": "और आपको क्या मिलेगा आपको? नंबर ऑफ बच्चे मिलेंगे। आपको नंबर ऑफ बच्चे मिलेंगे। ठीक है? आइए। अब देखिए ये एरे सॉर्टेड नहीं करना है। इस एरे को सॉर्ट मत कीजिएगा। जिस बुक का जो पोजीशन है उसी हिसाब से कंटीन्यूअस एलोकेशन इसको सॉर्ट नहीं करना है। ये उनके लिए बहुत बड़ा सिग्नल है जो बोलते थे कि सॉर्टेड एरे में ही बाइनरी सर्च लगता है। नहीं लग गया इसमें सॉर्टेड एरे नहीं था। बाइनरी सर्च लग जाएगा। आइए। n = बुक्स डॉट साइज। सबसे पहले हम क्या बोले थे? अगर आपके नंबर ऑफ बुक्स आपके बच्चों से कम है तो नहीं पॉसिबल हो सकता है। इफ n",
+      "source": "caption",
+      "english_text": "And what will you get? Number of children will be found. You will get number of children. Ok? Come. Now see, this array is not to be sorted. Do not sort this array. Continuous allocation does not have to be sorted according to the position of the book. This is a big signal for those who used to say that binary search is done only in sorted arrays. Didn't seem like it was not a sorted array. Binary search will start. Come. n = books dot size. What did we say first? If your number of books is less than that of your children then it may not be possible. If n"
+    },
+    {
+      "start_time": 1748.48,
+      "end_time": 1783.43,
+      "text": "इज़ लेस दैन स्टर्ड नॉट पॉसिबल। नहीं कर सकते हैं तो -1 रिटर्न कर दीजिए। नहीं कर सकते हैं ना? दो बुक और तीन बच्चे। कैसे देंगे? हर बुक एक ही बच्चे को देना है। फाड़ के तो देंगे नहीं। नहीं दे सकते हैं। अब आता है लो और हाई। एंड लो हाई। लो क्या बोले थे? लोए मतलब यह जो मैक्सिमम नंबर ऑफ पेजेस है इसकी आप लोएस्ट लिमिट कहां तक लगा सकते हैं इस एरे में 12 34 67 90 अगर आप 80 की लिमिट लगा देंगे तो ऑब्वियसली आंसर नहीं आएगा क्यों क्योंकि ये 90 पेज वाला बुक किसी को नहीं मिलेगा अगर आप 85 लिमिट लगा देंगे ऑब्वियसली आंसर नहीं आएगा क्योंकि ये 90 पेज वाला बुक किसी को नहीं",
+      "source": "caption",
+      "english_text": "Is less than impossible. If you can't, return -1. Can't do it? Two books and three children. How to give? Each book is to be given to only one child. Will not tear and give. Can't give. Now comes the low and the high. And low high. Lo, what did you say? Low means this is the maximum number of pages. How far can you set its lowest limit in this array? 12 34 67 90 If you set a limit of 80 then obviously the answer will not come because no one will get this 90 page book. If you set a limit of 85 then obviously the answer will not come because no one will get this 90 page book."
+    },
+    {
+      "start_time": 1783.44,
+      "end_time": 1812.71,
+      "text": "मिलेगा तो आपको इस एरे का जो मैक्सिमम है वो एज ए लो रखना पड़ेगा क्योंकि उतना तो रखना ही पड़ेगा आपको 90 से बड़ा ही आंसर आएगा 90 से छोटा आंसर नहीं हो सकता है तो लो क्या है मैक्सिमम ऑफ द एरे और हाई क्या है। एक बच्चे को मैक्सिमम कितना पेज दे सकते हैं? सम सारे बुक एक बच्चे को दे दोगे उससे ज्यादा तो पॉसिबल नहीं है। अगर पूरे बुक का पेजेस का सम 203 है तो आप अगर लिमिट लगा भी दिया कि 500 रख लो उससे कोई फर्क नहीं पड़ता है। आप लगा सकते हैं। क्या है? 500 पेज कैसे दोगे किसी बच्चे को? हो ही नहीं सकता है। तो क्या पता चला?",
+      "source": "caption",
+      "english_text": "If you get it then you will have to keep the maximum of this array as low because you will have to keep that much only, you will get an answer bigger than 90, the answer cannot be smaller than 90, so what is low and what is the maximum of the array and what is high. What is the maximum number of pages that can be given to a child? If you can give all the books to a child then it is not possible to do more than that. If the total number of pages of the entire book is 203, then even if you set a limit of 500, it does not make any difference. You can put it. What is? How will you give 500 pages to a child? It just can't happen. So what did you find out?"
+    },
+    {
+      "start_time": 1812.72,
+      "end_time": 1846.63,
+      "text": "लो क्या है? मैक्सिमम ऑफ़ एरे। और हाई क्या है? सम ऑफ़ एरे। आइए। फॉर i = 0 i &lt; n i + लो = लो को ज़ीरो कर दीजिए शुरू में क्योंकि ज़ीरो पेजेस तो किसी बुक में होता नहीं है। तो मैक्स ऑफ़ लो एंड ai एरे का जो मैक्सिमम है वो एरे ऐसा कर याद रखिएगा सॉर्टेड एरे नहीं है तो एरे ऑफ़ n - 1 नहीं कर दीजिएगा और ai और हाई क्या है? पूरा एरे का सम सॉरी बुक्स और एरे हम ऐसा लिख रहे हैं लेकिन उसको एक ही समझिएगा। लोअर",
+      "source": "caption",
+      "english_text": "What is it? Maximum of array. And what is high? Sum of array. Come. For i = 0 i < n i + lo = make lo zero initially because there are no zero pages in any book. So max of low and ai is the maximum of the array. Do this and remember, if it is not a sorted array then make it an array of n - 1 and what is ai and high? Whole array of some sorry books and array, we are writing like this but consider it as one. lower"
+    },
+    {
+      "start_time": 1846.64,
+      "end_time": 1879.11,
+      "text": "हाई डिफाइन हो गया। वेरी गुड। अब तो काम खत्म है आपका। अब तो इंट रेस्ट = -1 वाइल लो लेस &lt; = हाई ओके सॉरी ये मत लगाइएगा। इंट गेस कर लीजिए। बीच वाला काम गेस कर लीजिए। लो प्लस हाई बाय 2 इफ फन ऑफ बुक्स n आपका जो गेस वाला लिमिट था वो और",
+      "source": "caption",
+      "english_text": "Done high defined. very good. Now your work is over. Now int rest = -1 while low less <= high ok sorry don't use this. Do int guess. Guess the middle work. Low plus high by 2 if fun of books n your guess limit was and"
+    },
+    {
+      "start_time": 1879.12,
+      "end_time": 1909.509,
+      "text": "नंबर ऑफ़ बच्चे अगर इसका आंसर यस आता है। अगर इसका आंसर यस आता है तो रिजल्ट इज़ इक्वल टू गेस और आपको फर्स्ट ऑकरेंस के लिए लेफ्ट चले जाना चाहिए। हाई इज़ इक्वल टू गेस - 1 एल्स अगर इसका आंसर नो आता है तो आपको राइट जाना चाहिए। कुछ करने की जरूरत नहीं है। लो इज़ इक्वल टू गेस + 1 ये बंद कर दीजिए और लास्ट में रिटर्न गेस सॉरी रिटर्न रेस्ट खत्म हो गया। क्या टाइम कॉम्प्लेक्सिटी? n log n क्यों n log n?",
+      "source": "caption",
+      "english_text": "Number of children: If the answer is yes. If the answer is yes then the result is equal to guess and you should go left for first occurrence. High is equal to guess - 1 else if the answer is no then you should go right. There is no need to do anything. Low is equal to guess + 1 stop this and last return guess sorry return rest finished. What time complexity? n log n why n log n?"
+    },
+    {
+      "start_time": 1909.519,
+      "end_time": 1930.24,
+      "text": "ये वाला वाइल लूप log n लेता है। और ये पूरा फन ये पूरा फन कितने में आएगा? ऑर्डर ऑफ़ n में। तो ये n log n ये था वो एलोकेशन प्रॉब्लम जो कि बहुत फेमस है। तो जाके इसको कोड कीजिए। यह देखिए कोड ले लीजिए। सेम कोड करिए और और भी प्रॉब्लम्स ट्राई कीजिए स्टोरी वाले। कल से हम लोग टू डी मैट्रिक्स स्टार्ट करेंगे।",
+      "source": "caption",
+      "english_text": "This while loop takes log n. And how much will this whole fun cost? In order of n. So this n log n was that allocation problem which is very famous. So go code it. See this, take the code. Do the same code and try more problems, story people. From tomorrow we will start 2D matrix."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

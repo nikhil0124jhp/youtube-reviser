@@ -1,0 +1,170 @@
+{
+  "video_id": "oZnLzJCOdPA",
+  "video_title": "DSA Patterns Lecture 30 | Master Prefix Sum Pattern in 10 Minutes",
+  "video_number": 33,
+  "chunks": [
+    {
+      "start_time": 2.149,
+      "end_time": 34.31,
+      "text": "हेलो जी, कैसे हैं सारे? तो आज है क्या? एपिसोड 30 ऑफ प्रीफिक्स सम रिवीज़न। जो लोग चैनल पे पहली बार आ रहे हैं, डिस्क्रिप्शन में देखिए। आपको पता चल जाएगा डीएसए पैटर्न्स होता क्या है, क्या होता है और क्यों होता है? शीट वगैरह सब आपको वहां से मिल जाएगी। अगर आप इस वीडियो पे पहली बार आ रहे हैं तो एपिसोड 26, 27, 28, 29। ये सारे में आपको एक कंप्लीट आईडिया लग जाएगा इस पूरे डीएसए पैटर्न का जिसका नाम है प्रीफिक्स सम। सारे क्वेश्चंस किस तरीके से बनाने हैं, क्या फिक्स टेंप्लेट होते हैं सब पता चल जाएगा। खैर अगर आप सिर्फ ये देखना चाहते हैं तो भी सही है। कोशिश करेंगे कि जल्दी से जल्दी समराइज हो जाए कि होता क्या है और आपको जल्दी पता चल",
+      "source": "caption",
+      "english_text": "Hello sir, how is everyone? So what is today? Episode 30 of Prefix Sum Revision. For those who are visiting the channel for the first time, please see the description. You will know what DSA patterns are, what happens and why it happens? You will get all the sheets etc. from there. If you are coming to this video for the first time then episode 26, 27, 28, 29. In all this you will get a complete idea of ​​this entire DSA pattern whose name is Prefix Sum. You will know how all the questions are to be made, whether there are fixed templates. Well, if you just want to see this then that is also fine. Will try to summarize as quickly as possible what happens and let you know quickly"
+    },
+    {
+      "start_time": 34.32,
+      "end_time": 67.59,
+      "text": "जाए। चलिए सबसे पहले हम लोग पढ़े थे कि प्रीफिक्स सम कब लगता है? किस तरीके के क्वेश्चन में? तो एक बात आई थी कि जब भी सब एरे के क्वेश्चन होंगे एरे प्लस सब एरे के क्वेश्चन होंगे तो लग सकता है। ओके? तो देखिए सब एरे के क्वेश्चन में ना बेसिकली तीन तरीके के पैटर्न्स लगते हैं। एक होता है स्लाइडिंग विंडो जो कि हम लोग पढ़ चुके हैं। एक और होता है केडेंस जो भी हम लोग पढ़ चुके हैं। तीसरा और सबसे इंपॉर्टेंट पैटर्न जो कि प्रीफिक्स सम जो कि सबसे हार्ड भी है समझना। तो देखिए सबसे पहले बात कर लेते हैं कि अब सब एरे के क्वेश्चन में तो तीनों लग सकते हैं। तो आपको मालूम कैसे चलेगा कि प्रीफिक्स सम ही लगाना है।",
+      "source": "caption",
+      "english_text": "Go. Let us first read that when is the prefix 'sum'? In which type of question? So one thing came up that whenever there will be questions from sub array, there will be questions from array plus sub array. Ok? So see, there are basically three types of patterns in sub-array questions. One is the sliding window which we have already studied. Another one is Cadence which we have already read. The third and most important pattern is Prefix Sum which is also the hardest to understand. So see, first of all let's talk about the fact that now all three can be asked in the questions of sub-array. So how will you know that prefix 'even' has to be used?"
+    },
+    {
+      "start_time": 67.6,
+      "end_time": 94.87,
+      "text": "तो देखिए सबसे पहले बात करते हैं प्रीफिक्स सम एंड किडेंस की। क्या एंड केडेंस की? तो दोनों के क्वेश्चन में ना डिफरेंस होंगे। एक में हो सकता है कि आपको वैसा पूछा जाए कि सब एरे निकालो। कोई मैक्सिमम सब एरे निकालो जिसमें कोई कंडीशन हो जिसमें कोई कंडीशन हो। सम लेस दैन k हो या सम ग्रेटर दैन k हो। ऐसी कोई कंडीशन दी रहेगी। ठीक है?",
+      "source": "caption",
+      "english_text": "So see, first of all let's talk about prefix sum and kidense. What about End Cadence? So there will be no difference in the questions of both. In one you may be asked to remove all the arrays. Find a maximum sub-array containing any condition. The sum may be less than k or the sum may be greater than k. No such condition will be given. Ok?"
+    },
+    {
+      "start_time": 94.88,
+      "end_time": 126.95,
+      "text": "इसका आपको शॉर्टेस्ट या लॉन्गेस्ट निकालना पड़ेगा। शॉर्टेस्ट या लॉन्गेस्ट ऐसा कुछ करके निकालना पड़ेगा। या तो काउंट ऑफ सर निकालना पड़ेगा। अच्छा केडेंस भी सिमिलर होता है। ऑलमोस्ट सिमिलर होता है। लेकिन इसकी कंडीशन थोड़ी अलग होती है। इसकी कंडीशन कभी ऐसे नहीं होगी कि सम ग्रेटर दैन k हो या सम इक्वल टू k हो या तो सम लेस दैन k हो। ऐसी नहीं होती है। इसमें जो सब एरे आपको ढूंढना होता है ना उसका सम उसका सम या तो मैक्सिमम होता था। याद कीजिए मैक्सिमम सम सब एरे या तो इसका सम मिनिमम ऑफ़ ऑल सब एरेज होता था। या तो इसका",
+      "source": "caption",
+      "english_text": "You will have to find out its shortest or longest. Shortest or longest will have to be found out. Either the head count will have to be taken out. Good cadence is also similar. Is almost similar. But its condition is slightly different. Its condition will never be such that the sum is greater than k or the sum is equal to k or the sum is less than k. It doesn't happen like that. In this, whatever array you have to find was either its sum or its maximum. Recall that the maximum sum sub array was either the minimum sum of all sub arrays. either its"
+    },
+    {
+      "start_time": 126.96,
+      "end_time": 160.71,
+      "text": "प्रोडक्ट मिनिमम या मैक्सिमम होता था। ऐसा होता था। तो नंबर ऑफ सब एरेस दोनों में निकालने हैं। मैक्सिमम लेंथ भी दोनों में निकालने पड़ सकती है। लेकिन सब एरे का जो कंडीशन होता था ना वो सबसे एरे में मैक्सिमम होता था। या तो मिनिमम होता था। ऐसा कुछ होता था। इसमें मैक्सिमम या मिनिमम नहीं है किसमें? प्रीफिक्स सम में। प्रीफिक्स सम आपको बोलता है कि कुछ ऐसा निकालो जिसमें कोई कंडीशन हो। सम मॉड्यूलस k इक्वल इक्वल टू 0 हो जाए। सम इक्वल्स टू k हो जाए। अ नंबर ऑफ़ 1 = नंबर ऑफ़ ज़ीरो। तो कोई बहुत स्पेसिफिक कंडीशन होगी। केस जनरली जनरली 90% ऑफ टाइम इस तरीके के चीजों में निकाला जाता है कि जब उसका सम",
+      "source": "caption",
+      "english_text": "The product was minimum or maximum. This used to happen. So the number of sub arrays has to be calculated in both. Maximum length may also have to be found in both. But the condition of all the arrays was maximum in most of the arrays. Either it was minimum. Something like this used to happen. Which has no maximum or minimum? In prefix even. The prefix sum tells you to select something that has a condition. Sum modulus k becomes equal to 0. Sum equals to k. A number of 1 = number of zero. So there must be some very specific condition. The case is generally solved 90% of the time in such a way that when its total"
+    },
+    {
+      "start_time": 160.72,
+      "end_time": 194.63,
+      "text": "मैक्सिमम हो जाए कब उसका सम मिनिमम हो जाएगा कब उसका प्रोडक्ट मैक्सिमम इस तरीके में अच्छा और अब तो ये तो हो गई प्रीफिक्स सम और क्रेडेंस की कि कब लगाना है प्रीफिक्स सम और स्लाइडिंग विंडो प्रीफिक्स सम और स्लाइडिंग विंडो स्लाइडिंग विंडो दोनों दोनों सेम क्वेश्चन सॉल्व करते हैं। दोनों क्या सेम एग्जैक्टली सेम क्वेश्चन सॉल्व करते हैं। आप एक क्वेश्चन में प्रीफिक्स भी लगा सकते हैं, स्लाइडिंग विंडो भी। लेकिन दोनों में से लगाना कब है? कभी भी, कभी भी नेगेटिव हो एरे में। नेगेटिव हो एरे में। उस केस",
+      "source": "caption",
+      "english_text": "When will its sum become maximum? When will its product become maximum? This method is good and now it is clear that when to apply prefix sum and credence. Prefix sum and sliding window. Both the prefix sum and sliding window solve the same question. Do both solve exactly the same questions? You can also add a prefix to a query, also a sliding window. But when to apply either of them? Never, ever be negative in the array. Be negative in the array. that case"
+    },
+    {
+      "start_time": 194.64,
+      "end_time": 228.149,
+      "text": "में, उस केस में स्लाइडिंग नहीं लगेगा। नहीं लगेगा। स्लाइडिंग नहीं लग सकता है। स्लाइडिंग विंडो के क्वेश्चंस खास करके ऐसे क्वेश्चन में जिसमें सम या कुछ ऐसा निकालना है वो सिर्फ पॉजिटिव में काम करते हैं। नेगेटिव में स्लाइडिंग विंडो फेल हो जाता है। तो सबसे पहले तो आपको देखना है कि किस तरीके का क्वेश्चन है। अगर कोई बहुत स्पेसिफिक कंडीशन दी गई है तो या तो वो क्वेश्चन प्रीफिक्स सम से बनेगा या तो वो स्लाइडिंग विंडो से बनेगा। अगर कुछ लॉन्गेस्ट मैक्सिमम सम मिनिमम सम की बात की गई है तो वो कैडन से बनेगा। कोई इसमें दो राय नहीं है। अच्छा। अब अगर आपको पता चला कि वो केन से नहीं बनेगा तो वो प्रीफिक्स से बनेगा कि स्लाइडिंग से",
+      "source": "caption",
+      "english_text": "In that case, sliding will not occur. Will not be felt. Sliding may not occur. Sliding window questions, especially those in which a sum or something like that has to be found, work only in positive. The sliding window fails in the negative. So first of all you have to see what type of question it is. If a very specific condition is given then either the question will be formed with prefix sum or it will be formed with sliding window. If some longest maximum sum minimum sum has been talked about then it will be made from cadence. There is no doubt about this. Good. Now if you come to know that it will not be made from 'can' then it will be made from 'prefix' or 'sliding'"
+    },
+    {
+      "start_time": 228.159,
+      "end_time": 260.469,
+      "text": "बनेगा। अगर उसमें नेगेटिव है, अगर उसमें नेगेटिव है तो वो किससे बनेगा? प्रीफिक्स सम से ही बनेगा। स्लाइडिंग से नहीं बन सकता है। ठीक है? इसके बाद हम लोग आ गए थे टेंपल्लेट पे। टेंप्लेट पे हम लोग क्या आ गए थे कि देखिए प्रीफिक्स सम एक कांसेप्ट होता है। क्या होता है? एक कांसेप्ट होता है। प्रीफिक्स सम इज़ नथिंग बट ए कांसेप्ट। प्रीफिक्स सम को स्टोर करने के लिए डेटा स्ट्रक्चर अलग-अलग हो सकते हैं। इस इंफॉर्मेशन को स्टोर करने के लिए डेटा स्ट्रक्चर अलग-अलग हो सकते हैं। या तो ये सिंगल वेरिएबल हो सकता है या तो एक सिंपल एरे हो सकता है या तो ये एक हैश मैप हो",
+      "source": "caption",
+      "english_text": "Will be made. If there is negative in it, if there is negative in it then what will it be made of? Prefix will be formed from even. Cannot be made by sliding. Ok? After this we came to the template. What we had come to on the template was that prefix sum is a concept. What happens? There is a concept. Prefix sum is nothing but a concept. The data structures to store the prefix sum can be different. The data structures to store this information can be different. Either it can be a single variable, or it can be a simple array, or it can be a hash map."
+    },
+    {
+      "start_time": 260.479,
+      "end_time": 293.03,
+      "text": "सकता है या तो ये डीक्यू हो सकता है या तो ये फेनविक ट्री हो सकता है। कुछ भी हो सकता है। स्टोर करने के लिए डेटा स्ट्रक्चर अलग-अलग हो सकते हैं। तो जनरल रूल जनरल रूल यही होता है। किसी भी प्रीफिक्स सम क्वेश्चन को सॉल्व करने के लिए आप बाकी के चार वीडियो देखेंगे तो आपको ज्यादा आईडिया लगेगा। लेकिन जनरल टेंप्लेट यही होता है। आपको हर इंडेक्स आई हर इंडेक्स आई पे एंडिंग होने वाले एंडिंग होने वाले एंडिंग होने वाले सब एरे सब एरे इसका आंसर निकालना है हर बार। इसका",
+      "source": "caption",
+      "english_text": "It could either be DQ or it could be Fenwick Tree. Anything can happen. The data structures to store can be different. So the general rule is the general rule. If you watch the remaining four videos to solve any prefix sum question, you will get more ideas. But this is the general template. You have to find the answer for every index eye, every index eye ending, ending ending, sub array, sub array, every time. its"
+    },
+    {
+      "start_time": 293.04,
+      "end_time": 326.39,
+      "text": "एक आंसर निकालना है। मतलब आपको i की एक लूप चलानी है। ज़ीरो से n तक। i पे एंड होने वाले सारे सब एरे का आपको आंसर निकालना है। तो ऐसे जब आप करेंगे तो आप जब पूरा एरे क्रॉस कर देंगे तो आपको एक बेस्ट आंसर ऑटोमेटिकली मिल जाएगा। क्योंकि हर सब एरे किसी ना किसी इंडेक्स पे तो खत्म होता होगा। अपने हर इंडेक्स पे खत्म होने वाले सारे सब एरे का अच्छा आंसर निकाल लिया। मतलब उसका बेस्ट आंसर अगर वो बोलता है काउंट तो आपने काउंट निकाल लिया। अ मैक्सिमम बोलता है तो मैक्सिमम निकाल लिया। शॉर्टेस्ट लेंथ बोलता है तो शॉर्टेस्ट लेंथ निकाल दिया। ऐसा जब आप हर i के लिए कर देंगे तो आपको आंसर मिल जाएगा। अच्छा। लेकिन इसको करते कैसे हैं?",
+      "source": "caption",
+      "english_text": "An answer has to be found. Meaning you have to run a loop of i. From zero to n. You have to find the answer to all the sub-arrays ending with i. So when you do this, when you cross the entire array, you will get the best answer automatically. Because every sub array must end at some index or the other. Found a good answer for all the sub-arrays ending at each of our indexes. Meaning, if he says count as his best answer, then you have calculated the count. If A says maximum then the maximum has been taken. If it says shortest length then the shortest length is removed. When you do this for every i, you will get the answer. Good. But how to do this?"
+    },
+    {
+      "start_time": 326.4,
+      "end_time": 359.83,
+      "text": "कैसे भी करते हैं? सबसे पहले मान लीजिए आप यहां पे i पे हैं। मान लीजिए ये सम का क्वेश्चन है। आप इसका सम इक्वल टू कुछ सम आया होगा। किसका सम? जीरो से लेके i तक का सम कुछ सम आया होगा। ओके अपने हिसाब से अपने हिसाब से आप एक ग्रीन पार्ट चुन लीजिए। ग्रीन पार्ट चुन लीजिए। ये क्या है? ग्रीन पार्ट है। ग्रीन पार्ट आपको क्या बोलता है? ये आपका अच्छा सब एरे है। अच्छा सब एरे है। अच्छा सब एरे का क्या मतलब है? कि क्वेश्चन में जो कंडीशन बोली गई है क्वेश्चन में जो कंडीशन बताई गई है वो उसको सेटिस्फाई करेगा। सेटिस्फाई",
+      "source": "caption",
+      "english_text": "How do you even do it? First of all, suppose you are here at pay i. Suppose this is an even question. You must have got its sum equal to something. Whose even? There must have been some sum from zero to i. Ok, choose a green part as per your convenience. Select the green part. What is this? Green part. What does the green part speak to you? This is your good sub array. Okay, everything is fine. Well what does sub array mean? That the condition stated in the question will be satisfied. satisfy"
+    },
+    {
+      "start_time": 359.84,
+      "end_time": 390.55,
+      "text": "करेगा। फॉर एग्जांपल अगर क्वेश्चन में बोलता है कि फाइंड द नंबर ऑफ़ सब एरेज। फाइंड द नंबर ऑफ़ सब एरेज वेयर द सम ऑफ ईच सब एरे इक्वल टू K एग्जैक्टली इक्वल टू K. आप मान के चलिए कि जो मेरा ग्रीन पार्ट का सम है इसका नाम है ग्रीन ग्रीन सम। ग्रीन सम जो कि यहां से यहां तक है। कहीं से शुरू हो के i तक लास्ट में जाता है। इसका सम इसका सम एग्जैक्टली K है। तभी तो ये अच्छा होगा ना भाई। क्वेश्चन के हिसाब से अच्छा होगा। अच्छा। इसके बाद जो भी बचा अभी तक सब एरे में उसको हम बोलेंगे रेड पार्ट। उसको क्या बोलेंगे? ये रेड पार्ट।",
+      "source": "caption",
+      "english_text": "Will do. For example, if the question says find the number of sub arrays. Find the number of sub arrays where the sum of each sub array is equal to K exactly equal to K. Let us assume that the sum of my green part is called green green sum. Green sum which is from here to here. Starts from anywhere and goes till i at the end. Its sum is exactly K. Only then it will be good, brother. It would be good according to the question. Good. After this, whatever is still left in the sub array, we will call it the red part. What will you call him? This red part."
+    },
+    {
+      "start_time": 390.56,
+      "end_time": 424.469,
+      "text": "अब आपको एक चीज निकालनी है कि अगर ग्रीन का कुछ सम है और पूरे एरे का सम मतलब जीरो से आई पूरे एरे का सम है। रेड का सम क्या होगा? रेड सम क्या होगा? आपको देखने से पता चलेगा कि अगर पूरे चीज यहां से यहां तक का सम है। और यहां से यहां तक का सम आपने बोला है कि k है। क्योंकि ये ग्रीन पार्ट है। ऑटोमेटिकली यहां से यहां तक का सम होगा सम - k। सम - k। तो क्लियर बात है। आपको मिल जाता है कि रेड का सम होगा सम - k। अब अब अब यही क्वेश्चन आपको पूछना है। हर आई पे आपको यही क्वेश्चन पूछना है। आपको क्या",
+      "source": "caption",
+      "english_text": "Now you have to figure out one thing that if something green is even and the entire array is even, that means the entire array starting from zero is even. What will be the sum of red? What will be the red sum? You will see if the whole thing is even from here to here. And the sum from here to here you said is k. Because this is the green part. Automatically the sum from here to here will be sum - k. Even - k. So it is clear. You get that the sum of the red will be even - k. Now this is the question you have to ask. You have to ask this question every time. what to you"
+    },
+    {
+      "start_time": 424.479,
+      "end_time": 457.67,
+      "text": "क्वेश्चन पूछना है? हर आई पे जब आप जाते हैं तो आपको क्या क्वेश्चन पूछना है? आज से पहले मतलब आई से पहले अगर ये काउंट का क्वेश्चन है। कितने कितने सब एरे या कितने रेड पार्ट आए थे? कितने रेड पार्ट आए थे? जिसका जिसका सम = सम - k हो। ये क्वेश्चन आपको पूछना है और इस क्वेश्चन का आपको आंसर निकालना है। कितने हम लोग कब पूछेंगे? जब काउंट का क्वेश्चन होता था तो कितने पूछते थे? जब लॉन्गेस्ट का क्वेश्चन",
+      "source": "caption",
+      "english_text": "Want to ask a question? What questions should you ask when you go to every eye? Before today means before I if it is a counting question. How many sub arrays or how many red parts were there? How many red parts were there? whose sum = sum - k. You have to ask this question and you have to find the answer to this question. How many people will we ask when? When there was a counting question, how many were asked? When the question of longest"
+    },
+    {
+      "start_time": 457.68,
+      "end_time": 491.35,
+      "text": "था तो पूछते थे कि सबसे पहला इंडेक्स कौन सा था? जब इसका आईएसएम आया था तो उस हिसाब से पूछेंगे। जब आप ये पूछेंगे फॉर एग्जांपल फॉर एग्जांपल अगर आप यहां तक हैं। अगर यहां आपका आई है। अगर आप ये क्वेश्चन पूछते हैं कि आज से पहले कितने रेड पार्ट आए थे जिनका सम माइनस के था? फॉर एग्जांपल आपको कोई बताता है कि ऐसे तीन रेड पार्ट आए थे। एक रेड पार्ट ये था। इसका नाम था R1, इसका सम भी सम माइनस K था। एक ये वाला रेड पार्ट था जिसका नाम था R2। इसका सम भी सम माइनस K था। एक और रेड पार्ट आया था जिसका नाम था R3। आप यह नोटिस करेंगे हर रेड पार्ट के लिए एक",
+      "source": "caption",
+      "english_text": "So we used to ask which was the first index? When its ISM came, we will ask accordingly. When you ask this for example, if you are till here. If you have come here. If you ask this question, how many raid parts had come before today whose sum was minus K? For example, someone tells you that there were three such raid parts. This was a red part. Its name was R1, its sum was also even minus K. This one was the red part whose name was R2. Its sum was also even minus K. There was another red part named R3. You will notice that there is one for each red part"
+    },
+    {
+      "start_time": 491.36,
+      "end_time": 524.149,
+      "text": "ग्रीन पार्ट बनेगा। हर रेड पार्ट के लिए एक ग्रीन पार्ट बनेगा। R1 के लिए यह ग्रीन पार्ट बनेगा। तो एक आंसर तो ये हो गया। इसका सम क्या होगा? एग्जैक्टली K क्योंकि हम लोग उल्टा चल रहे हैं। हम लोग पहले ग्रीन पार्ट को अस्यूम कर लिए कि उसका सम के होगा। उसी हिसाब से रेड पार्ट की कैलकुलेशन आई थी कि रेड पार्ट में ढूंढना क्या है? खोजना क्या है? पूछना क्या है? तो R1 के लिए एक ग्रीन पार्ट पक्का बनेगा। अपने आंसर में एक जोड़ लिए। R2 के लिए भी एक ग्रीन पार्ट बनेगा ये वाला। अपने आंसर में जोड़ लिए। R3 के लिए भी ग्रीन पार्ट बनेगा। ये वाला आपने आंसर में जोड़ दिए। तो अगर आपको कोई बताता है कि आज से पहले सम - K कितनी बार आया था? कितने सारे रेड पार्ट",
+      "source": "caption",
+      "english_text": "Green part will be formed. For every red part, a green part will be made. This will become the green part for R1. So there is one answer. What will be its sum? Exactly K because we are moving backwards. We first assumed the green part to be even. Accordingly, the calculation of red part was done that what is to be found in the red part? What is searching? What is there to ask? So a green part will definitely be made for R1. Add one to your answer. This one will also become a green part for R2. Added to your answer. Green part will also be made for R3. You added this one to the answer. So if someone tells you how many times the sum - K came before today? so many red parts"
+    },
+    {
+      "start_time": 524.159,
+      "end_time": 558.79,
+      "text": "हैं? तो आपको कोई बोलता है कि रेड पार्ट्स नंबर ऑफ रेड पार्ट्स इक्वल टू थ्री हैं। इसका जाहिर जाहिर मतलब है कि नंबर ऑफ ग्रीन भी तीन होगा। आप अपने आंसर में +3 जोड़ देते थे। अब पूछना तो समझ में आ गया। अब जो हम लोग पूछते हैं वही तो आप स्टोर करेंगे। कहां स्टोर करेंगे? हैशमैप में स्टोर करेंगे या डीक्यू में स्टोर करेंगे या वेरिएबल में कहीं भी वो स्टोर कहीं भी करिए इनफार्मेशन कहीं भी स्टोर करिए। फॉर एग्जांपल आपने स्टोर किया कि मान लीजिए किसी समय सम - k की जो वैल्यू है वो थी फाइव। आपने हर बार हैश में स्टोर कर लिया कि पांच तीन बार आया था। आप पूछे पांच कितनी बार आया? तो आपको मिल गया आंसर तीन।",
+      "source": "caption",
+      "english_text": "are? So someone tells you that the number of red parts is equal to three. This obviously means that the number of greens will also be three. You used to add +3 to your answer. Now it makes sense to ask. Now you will store only what we ask. Where will you store it? Will you store it in hashmap or store it in DQ or store it anywhere in a variable? Store the information anywhere. For example, you stored that suppose at some time the value of sum - k was five. You stored in the hash every time that five came three times. How many times did five come, you ask? So you got answer three."
+    },
+    {
+      "start_time": 558.8,
+      "end_time": 592.55,
+      "text": "तो आगे जाने से पहले i के आगे जाने से पहले हम लोग क्या करते थे? ये वाला सम भी कहां स्टोर कर देते थे हैश मैप में। क्योंकि आगे हो सकता है इसकी काम आएगी। आप लोग पीछे स्टोर करते हुए आ रहे थे तभी ना वही काम आया। अभी भी स्टोर कर देंगे ताकि आगे काम आए। यही जनरल फॉर्मेट होता है। कहने का क्या मतलब है? हम लोग क्या पूछते हैं? हम लोग सबसे पहले एक हैश मैप बनाते हैं। हम लोग सबसे पहले एक हैश मैप बनाते हैं। शुरू में ये खाली रहता था। हम लोग एक लूप चलाते थे। कहां से कहां तक? 0 i से ज़ीरो से n तक। यस। सबसे पहले तो अगर सम का क्वेश्चन है। क्वेश्चन अलग-अलग तरीके के हैं। हम बार-बार बोल रहे हैं। बाकी चारों",
+      "source": "caption",
+      "english_text": "So what did we do before i went ahead? Where was this even sum stored in the hash map? Because it may be useful in future. You people were coming back while storing, then the same thing did not work. Will still store it for future use. This is the general format. What does it mean to say? What do we ask? First of all we create a hash map. First of all we create a hash map. Initially it was empty. We used to run a loop. From where to where? From 0 i to zero n. Yes. First of all, if there is a question of even. Questions are of different types. We are speaking again and again. the remaining four"
+    },
+    {
+      "start_time": 592.56,
+      "end_time": 627.03,
+      "text": "वीडियो देखेंगे। आपको बिल्कुल समझ में आएगा ये। सम + = ai मतलब अभी तक का सम ये है। रेड सम क्या आता था? रेड सम ग्रीन सम क्या होता था? ग्रीन सम जो कंडीशन सेटिस्फाई करे उस हिसाब से रेड सम निकलता था जो बचा हुआ है। तो अगर ग्रीन सम कंडीशन सेटिस्फाई करता है फॉर एग्जांपल ऐसा पूछता है कि ऐसा सब एरे निकालो जिसका सम एग्जैक्टली k हो तो ग्रीन सम का सम k होगा। रेड सम का सम क्या होगा? सम - k। हम लोग इसको बोलेंगे कि रिजल्ट में क्या जोड़ दो? आज से पहले जितने भी रेड सम आए थे। आज से पहले जितने भी सब एरे ऐसे ज़ीरो टू मान लीजिए टू का भी सम था। 0 टू 4 का भी सम",
+      "source": "caption",
+      "english_text": "Will watch the video. You will understand this completely. Sum + = ai means this is the sum till now. What was the red sum? What was red sum green sum? The red sum which is left was calculated according to the conditions that the green sum satisfied. So if Green Sum satisfies the condition for example, it asks to find a sub-array whose sum is exactly k, then the sum of Green Sum will be k. What will be the sum of red sum? Even - k. We will ask what should be added to the result? All the red sums that had come before today. Before today, all the arrays were like zero two, assume two was also even. even sum of 0 to 4"
+    },
+    {
+      "start_time": 627.04,
+      "end_time": 660.63,
+      "text": "था। 0 टू 6 सबका सम रेड सम के इक्वल था। सब एक-एक ग्रीन पार्ट आपको देंगे इस आई तक के लिए। सबको जोड़ लो। सबको जोड़ लिए। जाने से पहले आगे जाने से पहले इस वाले सम को भी आपको जोड़ना पड़ेगा। अब ये सम भी एक सम बन चुका है जो आ चुका है। इस सम को भी अपने हैशमैप में जोड़ लेते थे। अपने हैश मैप में जोड़ लेते थे और आगे और लास्ट में रिटर्न रिजल्ट कर देते थे। यही टेंपलेट यूज़ हुआ चारों क्वेश्चन में। चार या पांच क्वेश्चन किए होंगे। सब में सेम टेंप्लेट यूज़ हुआ। एक क्वेश्चन बचा हुआ है जो कि डीक्यू का क्वेश्चन है वो हम बाद में पढ़ाएंगे क्योंकि उसके लिए आपको डीक्यू आना",
+      "source": "caption",
+      "english_text": "Was. The sum of all 0 to 6 was equal to red sum. Everyone will give you one green part each for this eye. Add everyone. To connect everyone. Before going further, you will have to add this sum also. Now this even has become an even which has arrived. We used to add this sum also to our hashmap. We used to add it to our hash map and return results first and last. This template was used in all four questions. Must have asked four or five questions. Same template was used in all. There is one question left which is DQ question, we will teach it later because for that you will have to appear for DQ."
+    },
+    {
+      "start_time": 660.64,
+      "end_time": 692.31,
+      "text": "जरूरी है। तो जब डीक्यू के पैटर्न स्टार्ट होंगे तो वो हम लोग पढ़ लेंगे। लेकिन टेंपलेट यही है आपको। आपको ये थॉट प्रोसेस डेवलप करना पड़ेगा। आप कभी भी एक ऐसा एरे बना लीजिए। I को मान लीजिए। क्वेश्चन के हिसाब से उसका सम या प्रोडक्ट जो भी आपसे क्वेश्चन पूछ रहा है अगर आपसे डिफरेंस पूछ रहा है। जैसे ज़ीरो वन में डिफरेंस ट्रैक होता था, सम नहीं डिफरेंस ट्रैक होता था। उसका सम को सम मान लीजिए। अपने हिसाब से एक ग्रीन पार्ट बना लीजिए। ग्रीन पार्ट को कंडीशन सेटिस्फाई करवा दीजिए। बचे हुए देख लीजिए कि अगर मेरा ग्रीन पार्ट ऐसा है तो मेरा रेड पार्ट क्या होगा? रेड पार्ट होगा क्या? रेड पार्ट जैसे ही आपको पता चलता है",
+      "source": "caption",
+      "english_text": "It is necessary. So when the DQ patterns start, we will read them. But this is the template you need. You will have to develop this thought process. You can create such an array anytime. Let I be. According to the question, its sum or product is asked by whoever is asking you the question, if he is asking you the difference. Like Zero One had a difference track, not an even but a difference track. Consider its sum as even. Make a green part as per your choice. Get the green part satisfied. Remaining, see that if my green part is like this then what will be my red part? Will there be a red part? Red part as soon as you find out"
+    },
+    {
+      "start_time": 692.32,
+      "end_time": 726.389,
+      "text": "कि क्या होगा? यही यही आप#शप या कहीं भी किसी भी डेटा स्ट्रक्चर जो भी आप यूज़ कर रहे हैं#श मैप में स्टोर करेंगे। यही आप हैश मैप में स्टोर करेंगे। यही आप पूछेंगे। यही आप पूछेंगे। तो ये एक जनरल टेंपल्लेट था प्रीफिक्स सम का। कोई भी प्रीफिक्स सम का क्वेश्चन इसी फॉर्मूले से सॉल्व होता है और उसका कोई अलग टेंप्लेट नहीं होता है। सिंपल से सिंपल क्वेश्चन कॉम्प्लेक्स से कॉम्प्लेक्स क्वेश्चन सब इसी से सॉल्व होता है। तो ये एक छोटा सा रिवीज़न था। अह जो लोग पहले लेक्चर देख चुके हैं उनको बहुत अच्छा लगा होगा। जिनको थोड़ा-थोड़ा कंफ्यूजन है। 26 बार-बार 26, 27, 28, 29",
+      "source": "caption",
+      "english_text": "what will happen? This is what you will store in #map or anywhere in whatever data structure you are using. This is what you will store in the hash map. That's what you would ask. That's what you would ask. So this was a general template of prefix even. Any prefix sum question is solved by this formula and there is no separate template for it. From simple to simple questions, from complex to complex questions, everything is solved by this. So this was a small revision. Ah, those who have seen the lecture before must have liked it very much. Those who have some confusion. 26 again and again 26, 27, 28, 29"
+    },
+    {
+      "start_time": 726.399,
+      "end_time": 755.24,
+      "text": "देख लीजिए। प्रीफिक्स सम आपका कंप्लीट हो जाएगा। और आप जानते हैं अभी आप लोग का एंटसेम एग्जाम चल रहा है। तो आप लोग थोड़ा कंसिस्टेंसी ब्रेक हो गई। कोई बात नहीं। वो मेरे लाइव बैच में बच्चे हैं उनकी भी ब्रेक हो रही है। तो इसमें घबराना नहीं है। जब तक आपका एंड सेम चल रहा है वो भी जरूरी है। मतलब हम भी समझते हैं कि एंड सम के कारण आपका फोकस शिफ्ट हो जाता है। इजी नहीं होता है कि पढ़ाई करना। लेकिन ठीक है कोई बात नहीं। एंड सम खत्म हो जाए तो आके देख लीजिएगा। तो आज का प्रीफिक्स सम रिवीजन खत्म हो गया है। चलिए मिलते हैं कल।",
+      "source": "caption",
+      "english_text": "Take a look. Your prefix sum will be complete. And you know that your Antsem exam is going on right now. So you guys, the consistency got broken a bit. No problem. They are kids in my live batch and they are also getting a break. So there is no need to worry about this. As long as your end result is working, that too is necessary. Meaning, we also understand that your focus shifts due to end sum. It is not easy to study. But okay, no problem. When the end sum is over then come and see. So today's Prefix Sum revision is over. Let's meet tomorrow."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

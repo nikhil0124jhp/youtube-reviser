@@ -1,0 +1,590 @@
+{
+  "video_id": "_V7J7exlyzk",
+  "video_title": "Diameter of Binary Tree | Check Complete Binary Tree | Tree DSA Series",
+  "video_number": 89,
+  "chunks": [
+    {
+      "start_time": 1.75,
+      "end_time": 30.07,
+      "text": "क्या जी पढ़ाई लिखाई ठीक चल रहा है कि नहीं चल रहा है? आज दो क्वेश्चन करेंगे डायमीटर और कंप्लीटनेस और बताना चाहते हैं कि देखो जो लोग भी फोर्थ ईयर में आ चुके हैं आप लोग तो पढ़ ही लीजिए आपके लिए तो और कोई चारा है नहीं टाइम खत्म है जो लोग थर्ड ईयर में भी है ना तो पढ़ो थर्ड ईयर वाले बहुत लोग को हम देखते हैं लोग सोचते हैं अरे बहुत टाइम है सेकंड ईयर सोचता है अभी तो बहुत बहुत टाइम है लेकिन बहुत टाइम है लेकिन बहुत सारा चीज भी करना है ना देखिए आज की डेट में ना डीएसए आपका ब्रेड एंड बटर है। डीएसए क्या है? ब्रेड एंड बटर। ब्रेड एंड बटर का मतलब समझते हैं?",
+      "source": "caption",
+      "english_text": "Are your studies going well or not? Today we will do two questions on diameter and completeness and want to tell that look, those who have come in the fourth year, you all should study, there is no other option for you, time is over, those who are in the third year too, then do not read, we see many people in the third year, people think, oh there is a lot of time, the second year thinks that there is a lot of time, but there is a lot of time, but a lot of things have to be done, don't see, in today's date, no DSA is your bread and butter. There is butter. What is DSA? Bread and butter. Do you understand the meaning of bread and butter?"
+    },
+    {
+      "start_time": 30.08,
+      "end_time": 64.31,
+      "text": "फ्रेज़ होता है। मतलब कि बेसिक ब्रेड बटर मतलब बटर ब्रेड बेसिक नाश्ता होता है। पूरा नाश्ता नहीं होता है। ब्रेड बटर खा के जिंदा नहीं रह सकते आप। बेसिक मतलब सिर्फ सर्वाइवल योग्य है। तो डीएसए आजकल वो बन चुका है। डीएसए तो आना ही आना चाहिए। और भी बहुत कुछ आना चाहिए। मतलब आजकल एआई आना चाहिए। एमएल ये बहुत कुछ आना चाहिए। ठीक है? क्योंकि कंपटीशन दिन भर दिन बढ़ रहा है। एंट्री लेवल जॉब्स कम होता जा रहा है। ठीक है? ठीक है? एंट्री लेवल जॉब्स जिस टाइप का 2021 में था आज उससे शायद 80% लेस हो चुका है। ठीक है? और धीरे-धीरे और कम हो रहा है। क्योंकि एक एंट्री लेवल बच्चा जितना जानता है ना उतना",
+      "source": "caption",
+      "english_text": "There is a phrase. Meaning that basic bread butter means butter bread is a basic breakfast. There is no complete breakfast. You cannot survive by eating bread and butter. Basic means only survivable. So DSA has become that nowadays. DSA must come. There should be more to come. Meaning AI should come nowadays. ML There should be a lot of this coming. Ok? Because competition is increasing day by day. Entry level jobs are decreasing. Ok? Ok? The type of entry level jobs that existed in 2021 is probably 80% less than it is today. Ok? And gradually it is decreasing further. Because an entry level kid doesn't know much."
+    },
+    {
+      "start_time": 64.32,
+      "end_time": 98.95,
+      "text": "एआई टूल्स कर देता है। तो वो सब धीरे-धीरे कट हो रहा है। इसीलिए और भी जरूरी हो जाता है ना कि पढ़ाई पे ध्यान दीजिए। बेयर मिनिमम करके नहीं होगा कि आएगा तो कुछ ना कुछ कर ले। पढ़ लेंगे। नहीं होगा। होगा भी तो बहुत कम होगा। उससे दाल पानी नहीं चल पाएगा आपका। तो पढ़िए और और कोई सब्स्टट्यूट नहीं है आपका। ठीक है? अगर आप यह चैनल देखते हैं मतलब कि आप मिडिल क्लास या लो क्लास फैमिली से ही आते हैं। कोई भी करोड़पति का बेटा या करोड़पति की बेटी डीएसए तो नहीं पढ़ती है। हम भी अगर करोड़पति होते तो हम डीएसए ना पढ़ते ना पढ़ाते। अगर आप लोग पढ़ते हैं मतलब आप लोग उसी तरीके की फैमिली से आते हैं जहां से हम आते थे। तो और कोई सब्स्टट्यूट आपके",
+      "source": "caption",
+      "english_text": "AI tools do. So all that is slowly being cut. That is why it becomes even more important to concentrate on studies. Bare minimum will not happen that if he comes then he will do something. Will read. Will not done. Even if it happens, it will be very less. You will not be able to get your pulses and water through it. So read and there is no other substitute for you. Ok? If you watch this channel it means that you come from a middle class or low class family. No millionaire's son or millionaire's daughter studies DSA. If we too were millionaires, we would not have studied or taught DSA. If you guys read, it means you guys come from the same type of family from where we came. so any other substitute for you"
+    },
+    {
+      "start_time": 98.96,
+      "end_time": 133.35,
+      "text": "पास है नहीं कि नहीं पढ़ेंगे तो क्या करेंगे? बाकी जगह और कंपटीशन है। अगर आप लोग सोचते हैं कि नहीं पढ़ेंगे तो हम म्यूजिक में चले जाएंगे और रील वो सब में और ज्यादा कंपटीशन है। सबसे आसान और ओनली फिजिबल तरीका आपके पास पढ़ाई है। तो पढ़ाई करिए। तो डीएसएम में बहुत टाइम मत लगाइए। तुरंत तुरंत तुरंत तुरंत करके खत्म करिए। आइए शुरू करते हैं। आइए पहला क्वेश्चन की ओर बढ़े। पहला क्वेश्चन आपसे क्या पूछता है? आपको एक बाइनरी ट्री का रूट दिया हुआ है एज यूजुअल। और आपको उसका डायमीटर निकालना है। क्या? डायमीटर। अब डायमीटर आप लोग सर्कल में सुने होंगे। क्लास कभी भी स्कूल में पढ़े ही होंगे। आपको बाइनरी ट्री का डायमीटर निकालना है। तो क्या",
+      "source": "caption",
+      "english_text": "What will you do if you don't have the pass or don't study? There is still more space and competition. If you people think that we will not study then we will go into music and reel, there is more competition in all that. The easiest and only feasible way for you is study. So study. So don't spend too much time on DSM. immediately immediately immediately immediately immediately finish it. Let's start. Let us move towards the first question. What does the first question ask you? You are given the root of a binary tree as usual. And you have to find its diameter. What? diameter. Now you guys must have heard the diameter in the circle. You must have studied classes at some point in school. You have to find the diameter of the binary tree. so what"
+    },
+    {
+      "start_time": 133.36,
+      "end_time": 167.83,
+      "text": "बोलता है? डायमीटर होता क्या है? सबसे पहले क्या बोला है? आपको ये बोला है ना कोई भी एक ट्री ले लो अपने हिसाब से। कोई भी एक ट्री ऐसा हम बना लेते हैं। ठीक है? आइए वाइट कलर से बनाएं। अरे यार तो एक उजला कलर से एक हम ट्री बना लेते हैं। बाइनरी ट्री है ना? आइए। ये कोई अ बाइनरी सर्च ट्री नहीं है। नॉर्मल ट्री है। है ना? नॉर्मल बाइनरी ट्री है। ये ट्री बन गया। अच्छा नंबरिंग कर दें। 1 2 3 4 5 6 7 8 वेरी गुड। आपको क्या बोला है? कोई भी दो सर्कल इसमें पकड़ लो। इसमें पूरे ट्री में अपने मन का कोई भी दो सर्कल पकड़ लो। पकड़",
+      "source": "caption",
+      "english_text": "speaks? What is diameter? What did you say first? I have told you to take any tree as per your convenience. We can make any tree like this. Ok? Let's make it with white color. Hey friend, let's make a tree with one white color. Binary tree right? Come. This is not a binary search tree. It is a normal tree. Isn't it? is a normal binary tree. It became a tree. Do good numbering. 1 2 3 4 5 6 7 8 Very good. What did he tell you? Hold any two circles in it. In this, hold any two circles of your choice in the entire tree. catch"
+    },
+    {
+      "start_time": 167.84,
+      "end_time": 200.949,
+      "text": "लो। आइए पकड़ लें। दो सर्कल पकड़ लीजिए। आप एक फोर पकड़ लीजिए। एक थ्री पकड़ लीजिए। पकड़ लिए। इन दोनों के बीच का पाथ देख लो। इन दोनों के बीच का क्या देख लो? पाथ। मतलब कि अगर आप सर्कल तीन पे खड़े हैं। आपको कोई बोला कि भैया ड्राइंग बनाओ और सर्कल चार पे जाओ तो आप कैसे जाएंगे? आप आप अगर यहां पर खड़े हैं। आपको कोई बोला कि आप यहां पे हैं ना तो यहां पे जाकर बताइए कैसे जाएंगे? आप ऊपर जाएंगे सबसे पहले। अच्छा फिर एक बार नीचे जाएंगे फिर एक और बार नीचे जाएंगे या यही करेंगे ना और तो कोई बात नहीं है। हम बार-बार बोल रहे हैं एक ट्री में दो सर्कल के बीच में एक ही पाथ होता है और यूनिक पाथ होता है।",
+      "source": "caption",
+      "english_text": "Take it. Let's catch up. Grab two circles. You grab a four. Grab a three. Got caught. Look at the path between these two. What can you see between these two? Path. Meaning that if you are standing on circle three. Someone told you, brother, make a drawing and go to circle four, then how will you go? If you are standing here. Someone told you that you are here, so go here, tell me how to go? You will go up first. Okay, then we will go down once and then we will go down once more or we will do the same, otherwise there is no problem. We have been saying again and again that in a tree there is only one path between two circles and there is a unique path."
+    },
+    {
+      "start_time": 200.959,
+      "end_time": 234.229,
+      "text": "यही चीज ट्री को ग्राफ से अलग करती है। ठीक है? तो अगर आप तीन पे खड़े हैं। आपको एक स्टेप ऊपर जाना पड़ेगा। एक नीचे और एक नीचे। इस पाथ में कितना डंडा हुआ? इस पाथ में सर्कल नहीं है। कितना डंडा क्रॉस किए? एक डंडा ये हुआ, ये वाला, एक डंडा ये वाला और एक डंडा ये वाला। तो इन दोनों के बीच का पाथ कितना है? तीन। अच्छा। तो इसको कहीं पे मान लीजिए हम लिख लें कि तीन है। लेकिन अब जैसा जरूरी तो नहीं है कि हम यही दोनों सर्कल चुने। हम मेरा मन हम कुछ भी चुन सकते हैं। आइए कुछ भी चुनते हैं। अगर आप कुछ भी चुन सकते हैं अगर आपकी फ्री विल है तो कुछ भी चुनिए। आइए। अब हम एक काम",
+      "source": "caption",
+      "english_text": "This is what differentiates a tree from a graph. Ok? So if you are standing on three. You have to go one step higher. One down and one down. How many sticks are there in this path? There is no circle in this path. How many poles did you cross? One stick is this, this one, one stick is this and one stick is this. So what is the path between these two? Three. Good. So suppose we write it somewhere that it is three. But as of now it is not necessary that we choose these two circles. We my mind we can choose anything. Let's choose anything. If you can choose anything, if you have free will, then choose anything. Come. Now we have a task"
+    },
+    {
+      "start_time": 234.239,
+      "end_time": 267.59,
+      "text": "करते हैं ना कि तीन को रहने देते हैं। इसको चुन लेते हैं। तीन और छह को। पिछले बार हम तीन और चार को चुने थे। लेकिन मेरा मन ना हम तीन और छह को चुनना चाहते हैं। इसमें देख लीजिए। सेम एक्सरसाइज इसमें रिपीट कीजिए। कितना डंडा क्रॉस करके आप दोनों तक पहुंच पाएंगे? तो देखिए इसमें भी आपको एक बार ऊपर जाना पड़ेगा। एक नीचे, एक नीचे, एक नीचे। इसमें कितना डंडा बना? चार डंडा। पिछले बार कितना बना था? तीन। इसमें चार। तो इसका चार आ गया। ओके? एक और ट्राई कर लेते हैं। एक और ट्राई कर लेते हैं। एक और ट्राई कर ही लेते हैं। है ना? हम एक काम करते हैं कि आठ को चुन लेते हैं।",
+      "source": "caption",
+      "english_text": "Let's do it or let three remain. Let's select this. On three and six. Last time we chose three and four. But I don't feel like choosing three and six. Take a look in this. Repeat the same exercise. By crossing how many poles will you be able to reach both? So see, in this also you will have to go up once. One down, one down, one down. How many sticks are there in it? Four sticks. How much did you make last time? Three. Four in it. So its four. Ok? Let's try one more. Let's try one more. Let's try one more. Isn't it? One thing we do is select eight."
+    },
+    {
+      "start_time": 267.6,
+      "end_time": 297.27,
+      "text": "किसको? आठ को। तीन को रहने दे रहे हैं। आठ को चुन लेते हैं। अच्छा सेम काम कीजिए। एक डंडा यहां, एक डंडा यहां, एक डंडा यहां, एक डंडा यहां। कितना डंडा बना? चार। फिर से देखिए। 1 2 3 4 इसका भी चार आया। इस ट्री में हमको नहीं लगता है कि को कोई भी आप दो सर्कल ऐसा चुन सकते हैं ना जिसमें चार से ज्यादा समय लगे। हमको नहीं लगता है। हो सकता है होता भी हो। देख लीजिएगा। मेरे हिसाब से चार। तो इसमें आंसर क्या आना चाहिए आपका? इसका आंसर क्या आना चाहिए? चार। क्यों? ऐसा दो सर्कल जिसके बीच में मैक्सिमम डिस्टेंस हो क्या?",
+      "source": "caption",
+      "english_text": "To whom? On eight. Letting three stay. Let's choose eight. Do good work. A stick here, a stick here, a stick here, a stick here. How much stick did you make? Four. Look again. 1 2 3 4 This also came to four. In this tree, we do not think that you can select any two circles which will take more than four times. We don't think so. It may also happen. Please take a look. I think four. So what should be your answer to this? What should be the answer to this? Four. Why? Are there two circles which have maximum distance between them?"
+    },
+    {
+      "start_time": 297.28,
+      "end_time": 331.67,
+      "text": "मैक्सिमम डिस्टेंस हो। मतलब कि अगर आप दोनों सर्कल का ऐसा पाथ ड्राइंग बनाएंगे ना तो आपको ज्यादा से ज्यादा डंडा चाहिए और सबसे ज्यादा जो वैल्यू आएगी ना उसको हम लोग क्या बोलेंगे? डायमीटर बोलेंगे। उसको हम लोग डायमीटर बोलेंगे। यही आपको रिटर्न करना है। अच्छा अब एक नजर में देखने में तो ये बहुत हार्ड लग रहा है कि भाई ये कैसे चुनेंगे। अपने मन से कोई सर्कल पता भी नहीं है कि ट्री कैसा लगता है। हमको तो बस ये रूट दिया हुआ है। आपको ड्राइंग देख के तो नहीं पता चलेगा ना कि ट्री ऐसा कब चुन लेंगे। आपको बस रूट दिया हुआ है। अब जब रूट दिया हुआ है तो कैसे दो सर्कल चुन लेंगे और कैसे उसका पाथ भी ऐसा तो कुछ अभी तक हम लोग नहीं सीख पाए हैं। तो देखने में",
+      "source": "caption",
+      "english_text": "There should be maximum distance. Meaning that if you make such a path drawing of both the circles, then you will need maximum number of rods and what will we call the maximum value? Will say diameter. We will call it diameter. This is what you have to return. Well, now at a glance it seems very difficult as to how brother will choose this. No circle in your mind even knows what a tree feels like. We have just been given this route. You won't know by looking at the drawing when the tree will choose like this. You have been given a bus route. Now when the route is given then how to choose two circles and how to find its path is something we have not been able to learn yet. so to see"
+    },
+    {
+      "start_time": 331.68,
+      "end_time": 366.309,
+      "text": "ये क्वेश्चन हार्ड लग रहा है। आइए सोचते हैं जो क्वेश्चन हार्ड लगे उसमें कुछ नहीं समझ में आ रहा है ना जब आप ऐसा फंस जाए ना कि अब क्वेश्चन पढ़ लिए क्वेश्चन का समझ में आ गया क्या करना है। उसके बाद कुछ नहीं आ रहा है। एकदम खाली हो गए तो कम से कम ड्राइंग बना लीजिए। कुछ ना कुछ उसमें करिए। थोड़ा समय दीजिए। ऐसे ही लोग सीखते हैं। आइए आइए सोचते हैं और सोचने से पहले ना एक एग्जांपल देके आपको हम समझा दें क्योंकि एग्जांपल से हमेशा अच्छा समझ में आता है। बशर्त है कि हम आपको डायरेक्ट ट्री में समझाने लगे। तो हमारे देश का एग्जांपल लेते हैं कि मान लीजिए कि एक देश में सेंट्रल जो रूट जिसको हम लोग रूट बोलते हैं ना मान लीजिए कि न्यू दिल्ली",
+      "source": "caption",
+      "english_text": "This question seems hard. Let's think about the question which seems difficult and you are not able to understand anything about it, when you get stuck in such a way that after reading the question, you understand the question and what to do. Nothing is coming after that. If you are completely free then at least make a drawing. Do something in it. Give some time. This is how people learn. Come let us think and before thinking let us explain to you by giving an example because examples always help in better understanding. Provided that we start explaining you in direct tree. So let us take the example of our country, let us assume that in a country the central route which we call the route, let us assume that New Delhi"
+    },
+    {
+      "start_time": 366.319,
+      "end_time": 393.189,
+      "text": "एयरपोर्ट आपका रूट है। क्या? न्यू दिल्ली एयरपोर्ट जो कि इंडिया का एयरपोर्ट आप मान सकते हैं। वो आपका क्या है? वो आपका रूट है। इससे ऊपर कुछ नहीं है। ठीक? थोड़ी देर के लिए मान लीजिए कि न्यू दिल्ली से ना आप दो स्टेट के उस तक जा सकते हैं। दो स्टेट के एयरपोर्ट पर जा सकते हैं। फॉर एग्जांपल हम रांची में रहते हैं तो आप मान लीजिए कि आप रांची को जा सकते हैं। अच्छा और हम बेंगलुरु में भी रहते हैं तो मान लेते हैं कि आप बेंगलुरु एयरपोर्ट भी जा सकते हैं। कहां से? न्यू दिल्ली से। आप दोनों जगह जा सकते हैं।",
+      "source": "caption",
+      "english_text": "The airport is your route. What? You can consider New Delhi Airport as the airport of India. What is that yours? That's your route. There is nothing above this. Correct? Let us assume for a moment that from New Delhi you cannot go to that place in two states. Can go to airports of two states. For example, we live in Ranchi, so suppose you can go to Ranchi. Well, and we also live in Bengaluru, so let us assume that you can also go to Bengaluru Airport. From where? From New Delhi. You can go to both places."
+    },
+    {
+      "start_time": 393.199,
+      "end_time": 427.909,
+      "text": "अच्छा। ठीक है? जैसे कि राजधानी ट्रेन चलती है। सबसे बेस्ट एग्जांपल राजधानी ट्रेन चलती है ना? तो राजधानी ट्रेन का काम ही होता है कि झारखंड की राजधानी को भी दिल्ली से जोड़ दे और कर्नाटका की राजधानी को भी दिल्ली से जोड़ दे। राजधानी इसीलिए उसको बोलते हैं। अच्छा। अब आप रांची में आ गए लेकिन मान लीजिए कि मेरा एक्चुअल घर रांची में नहीं है वो झारखंड में कहीं और है। जहां पे राजधानी नहीं जाती है लेकिन वो कहीं और आउटस्कर में है। तो मान लेते हैं कि रांची में एक जगह हो सकता है कि हम देवघर जाना चाहते हो। देवघर कैसे जाएंगे? रांची से देवघर का कोई लोकल ट्रेन चलता होगा। उसमें बैठ जाएंगे। अच्छा रांची में और हो सकता है झारखंड में कि हम धनबाद भी जाना चाहते हैं। धनबाद भी जाना",
+      "source": "caption",
+      "english_text": "Okay. Ok? As the Rajdhani train runs. The best example is Rajdhani train, right? So the work of Rajdhani train is to connect the capital of Jharkhand with Delhi and also to connect the capital of Karnataka with Delhi. That's why it is called the capital. Good. Now you have come to Ranchi but suppose that my actual house is not in Ranchi, it is somewhere else in Jharkhand. Where the capital does not go but it is somewhere else in the outskirt. So let's assume that there might be a place in Ranchi that we want to go to, Deoghar. How to go to Deoghar? There must be a local train running from Ranchi to Deoghar. Will sit in it. Well, in Ranchi and maybe in Jharkhand, we also want to go to Dhanbad. go to dhanbad also"
+    },
+    {
+      "start_time": 427.919,
+      "end_time": 456.07,
+      "text": "चाहते हो। कैसे जाएंगे? पहले रांची आ जाएंगे राजधानी से। रांची से लोकल ट्रेन पकड़ के धनबाद चले जाएंगे। सिमिलरली दिल्ली से आप बोर आ सकते हैं। लेकिन मान लीजिए आपको एग्जैक्टली बोर नहीं जाना है। आप बोर से कहां कहां? आप बोर से एक जगह मसूर भी जा सकते हैं और आप बोर से कहीं और भी जा सकते हैं। हमको कर्नाटका के दूसरे शहर का नाम नहीं आता है तो आप मान लीजिए कोई और टाउन में जा सकते हैं। किसी और टाउन में जा सकते हैं। इस पर कोई हेट देने का जज हमको नहीं मालूम। ये मान लीजिए कि आपका आपका इंडिया का सिस्टम है ट्रेवल का।",
+      "source": "caption",
+      "english_text": "Want to. how are going? Will first come to Ranchi from the capital. Will take local train from Ranchi to Dhanbad. Similarly, you may get bored with Delhi. But let's say you don't want to be exactly bored. Where are you bored? You can go from Bor to one place and you can also go from Bor to somewhere else. If we do not know the name of another city of Karnataka, then suppose we can go to some other town. Can go to some other town. We don't know any judge to give a hat on this. Assume that yours is India's system of travel."
+    },
+    {
+      "start_time": 456.08,
+      "end_time": 489.589,
+      "text": "है ना? सबसे पहले रूट क्या है? नई दिल्ली रेलवे स्टेशन। नई दिल्ली रेलवे स्टेशन से आप दो राजधानी में जा सकते हैं। या तो आप रांची जा सकते हैं या तो बेंगलुरु जा सकते हैं। रांची में आने के बाद आप देवघर जा सकते हैं और धनबाद जा सकते हैं। बेंगलुरु में आने के बाद आप मैसूर और और एक जगह जा सकते हैं कर्नाटका में। यह आपका है। अब अगर आपसे कोई पूछे कि भैया इनमें ना सारे स्टेशन है। सारे रेलवे स्टेशन है। अब अगर कोई पूछे कि कोई भी दो रेलवे स्टेशन चुन लो। कोई भी दो रेलवे स्टेशन चुन लो जिनके बीच का डिस्टेंस मैक्सिमम हो। जिनके बीच का डिस्टेंस मैक्सिमम हो या फिर जिनके बीच",
+      "source": "caption",
+      "english_text": "isn't it? First of all, what is the root? New Delhi Railway Station. From New Delhi Railway Station you can go to two Rajdhanis. Either you can go to Ranchi or you can go to Bangalore. After coming to Ranchi you can go to Deoghar and go to Dhanbad. After coming to Bengaluru, you can go to Mysore and another place in Karnataka. It's yours. Now if someone asks you, brother, aren't there all these stations? There are all railway stations. Now if someone asks, choose any two railway stations. Choose any two railway stations between which the distance is maximum. The distance between which is maximum or between which"
+    },
+    {
+      "start_time": 489.599,
+      "end_time": 523.43,
+      "text": "का जो डंडा हो ना वो मैक्सिमम हो। जिनके बीच का जो डंडा हो वो मैक्सिमम हो। या तो जिनके बीच का पाथ मैक्सिमम हो। एग्जैक्टली यही क्वेश्चन आपसे पूछा है ना एग्जैक्टली जो हम क्वेश्चन आपसे पूछ रहे हैं कोई भी दो चुन लो यही है ना डायमीटर क्वेश्चन तो आप इस पे सोच लीजिए ये क्योंकि इंट्यूटिव ये ज्यादा है अच्छा अब देखिए अब थोड़ा लॉजिक से काम कीजिए आप चुन सकते हैं अब मान लीजिए कि आप बोले कि ठीक है हम ना रांची और नई दिल्ली चुन लेते हैं। रांची और नई दिल्ली चुन लेते हैं। तो रांची और नई दिल्ली आप क्यों चुन रहे हैं? रांची और नई दिल्ली के बीच में तो एक ही बात है। एक ही बात है ना? आप चाहते तो नई दिल्ली के",
+      "source": "caption",
+      "english_text": "The stick should be maximum. The stick in between should be maximum. Either those between which the path is maximum. Exactly this question has been asked to you, isn't it? Exactly the question that we are asking you, choose any two, this is the diameter question, so think about it because it is more intuitive. Okay, now see, work with a little logic, you can choose. Now suppose you say, okay, we will choose Ranchi and New Delhi. Let's choose Ranchi and New Delhi. So why are you choosing Ranchi and New Delhi? There is only one thing in between Ranchi and New Delhi. It's the same thing, isn't it? If you want, from New Delhi"
+    },
+    {
+      "start_time": 523.44,
+      "end_time": 551.509,
+      "text": "ऐसे भी ये भी कर सकते थे। लेकिन जब आप सिर्फ रांची और दिल्ली चुनते हैं तो आपको बस एक मिलता है। तो आप बोले कि ठीक है हम क्या करते हैं? हम रांची और बोर चुन लेते हैं। लेकिन आप रांची और बेंगलुरु भी क्यों चुन रहे हैं? देखिए रांची और बोर के बीच का अगर हम पाथ बनाएं तो कैसा पाथ बनेगा? एक ये वाला पाथ बनेगा और एक ये वाला पाथ बनेगा। तो दो डंडा किसके बीच में? रांची और बेंगलुरु के बीच में दो डंडा आ रहा है। लेकिन आप दो डंडे में रुक क्यों रहे हैं? आप दो डंडे में रुक क्यों रहे हैं? आप चाहे अगर तो देखिए दो डंडा तो बन चुका है।",
+      "source": "caption",
+      "english_text": "They could have done this also. But when you choose just Ranchi and Delhi you get just one. So you said okay what do we do? We choose Ranchi and Bor. But why are you choosing Ranchi and Bengaluru also? See, if we make a path between Ranchi and Bor, what kind of path will it be? This path will be made and this path will be made. So between which two sticks? Two sticks are coming between Ranchi and Bengaluru. But why are you stopping at two poles? Why are you stopping at two poles? If you want, then see that two sticks have been made."
+    },
+    {
+      "start_time": 551.519,
+      "end_time": 578.07,
+      "text": "आप रांची के नीचे भी तो जा सकते हैं। तो आप रांची के नीचे भी जाइए ना। आप रांची के नीचे आके देवघर पहुंच जाइए। आप रांची के नीचे जाकर देवघर पहुंच जाइए। और आप बेंगलुरु तक क्यों रुक रहे हैं? बोर के नीचे और भी है ना? बेंगलुरु से आप और कहीं-कहीं जा सकते हैं ना। तो बेंगलुरु के नीचे भी आप मैसूर क्यों नहीं आ रहे हैं? आप मैसूर आ जाइए। आप बोर के नीचे मैसूर आ जाइए। एक बार एक बार जब आप देवघर और मैसूर पहुंच गए। अब आप और नीचे नहीं जा सकते हैं। अब आप और नीचे नहीं जा सकते हैं।",
+      "source": "caption",
+      "english_text": "You can also go down to Ranchi. So you go down to Ranchi also. You come down from Ranchi and reach Deoghar. You go down from Ranchi and reach Deoghar. And why are you stopping till Bengaluru? There's more down the bore, right? You can go to many other places from Bangalore. So why are you not coming to Mysore even below Bengaluru? You come to Mysore. You come to Mysore under the bore. Once you reach Deoghar and Mysore. You can't go any lower now. You can't go any lower now."
+    },
+    {
+      "start_time": 578.08,
+      "end_time": 612.87,
+      "text": "इसका पाथ निकालिए। इसका पाथ निकालिए। इसका पाथ कितना आएगा? एक दो तीन चार। एक दो तीन चार। तो ये आपका सही आंसर हुआ। रांची और बेंगलुरु चुनने का कोई लॉजिक नहीं है क्योंकि रांची और बैंगलोर आप चुने। ओके। आप बोलते हैं कि रांची से न्यू दिल्ली, न्यू दिल्ली से बैंगलोर। ठीक है? लेकिन आप रांची से और दूर भी जा सकते है ना? बेंगलुरु से भी आप और दूर जा सकते हैं ना? तो जाइए ना वहां पे क्यों? आपको मैक्सिमम पाथ चाहिए। तो आप किसी भी किसी भी बीच वाले नोड पे क्यों रुकना है आपको? आपको जो दो सर्कल चुनना है उनका पाथ मैक्सिमम होना चाहिए। मैक्सिमम दूरी चाहिए। तो आप बीच",
+      "source": "caption",
+      "english_text": "Find its path. Find its path. How much will its path cover? One two three four. One two three four. So this is your correct answer. There is no logic in choosing Ranchi and Bangalore because you chose Ranchi and Bangalore. Ok. You say that Ranchi to New Delhi, New Delhi to Bangalore. Ok? But you can also go further away from Ranchi, right? You can go further away from Bangalore too, right? So why go there? You need maximum path. So why do you have to stop at any intermediate node? The path of the two circles you want to select should be maximum. Maximum distance is required. so between you"
+    },
+    {
+      "start_time": 612.88,
+      "end_time": 641.99,
+      "text": "वाले नोट्स पे क्यों रुक रहे हैं? बीच वाले नोट्स पे मत रुकिए। एंड नोड्स तक जाइए। एंड नोड्स तक जितना हो सकता है उतना एंड नोड तक जाने की कोशिश कीजिए। फॉर एग्जांपल अब देवघर के एग्जांपल ले लेते हैं। मान लेते हैं कि देवघर भी एंड स्टेशन नहीं है। देवघर से आप और एक स्टेशन जा सकते हैं। मान लीजिए एक एक जगह है वहां पे जस्सीडी वो एक देवघर का सबस्टेशन है। सेम चीज यहां पे रिपीट होगी। अब जब आप आ गए हैं आप एक तो एंड पॉइंट आपका मैसूर है।",
+      "source": "caption",
+      "english_text": "Why are you stopping at notes? Don't stop at the middle notes. Go to end nodes. Try to reach as many end nodes as possible. For example, let us take the example of Deoghar. Let us assume that Deoghar is also not an end station. From Deoghar you can go to one more station. Suppose there is a place called Jassidi and that one is the substation of Deoghar. Same thing will repeat here. Now that you have come, your end point is Mysore."
+    },
+    {
+      "start_time": 642.0,
+      "end_time": 670.389,
+      "text": "मैसूर से आप और कहीं नहीं जा सकते हैं तो ठीक है। लेकिन अब आप बोल रहे हैं कि हम देवघर तक देवघर तक क्यों रुक रहे हैं? आप देवघर से और दूर जा सकते हैं ना। देवघर एंड पॉइंट नहीं है। देवघर एक बीच का पॉइंट है। बीच में मत रुकिए। जितना हो सकता है एंड तक जाइए ना। तो आप जाइए ना जस्ट सीडी में। जाइए ना यहां पे। कितना हुआ पाथ? कितना हुआ? 1 2 3 4 5 कितना? पांच। ये हुआ सही सॉल्यूशन। या तो एक लॉजिकल सॉल्यूशन।",
+      "source": "caption",
+      "english_text": "It is okay if you cannot go anywhere else from Mysore. But now you are saying why are we stopping till Deoghar till Deoghar? You can go further away from Deoghar, right? Deoghar is not an end point. Deoghar is an intermediate point. Don't stop in the middle. Go till the end as much as possible. So you go to Just CD. Go here. How much is the path? How much did it happen? 1 2 3 4 5 How much? Five. This was the right solution. Either a logical solution."
+    },
+    {
+      "start_time": 670.399,
+      "end_time": 705.19,
+      "text": "फिर से हम रिपीट कर रहे हैं। आपका जो थिंकिंग प्रोसेस है कि हम दो सर्कल चुन लेते हैं। लेकिन अगर आप बोले कि हम दो सर्कल मान लीजिए हम रांची और बोर चुन लिए। ठीक है। रांची और बोर इतना दूर है लेकिन रांची और बोर पे रुकने की जरूरत नहीं है ना। रांची से और जाइए ना। रांची से और दूर जाके देवघर आइए। देवघर से और दूर जाके सीडी आइए। सिमिलरली बोर से भी और दूर आइए ना मैसूर। तो कहने का मतलब ना अगर आप कोई भी बीच वाला नोड चुनेंगे। कोई भी बीच वाला नोड चुनेंगे। बीच वाला नोड मतलब जो कि नॉन लीफ नोड हो। जो कि एक एंड पॉइंट ना हो।",
+      "source": "caption",
+      "english_text": "We are repeating again. Your thinking process is that we choose two circles. But if you say let us assume two circles, we will choose Ranchi and Bor. Ok. Ranchi and Bor are so far but there is no need to stop at Ranchi and Bor. Go further from Ranchi. Go further away from Ranchi and come to Deoghar. Go further away from Deoghar and get CD. Similarly, Mysore, come further away from bore. So that means no if you choose any middle node. Will choose any middle node. Middle node means which is a non-leaf node. Which is not an end point."
+    },
+    {
+      "start_time": 705.2,
+      "end_time": 730.47,
+      "text": "एंड पॉइंट ना हो। तो आपको सही आंसर नहीं मिलेगा। तो आपको सही आंसर नहीं मिलेगा। आपको सही आंसर तभी मिलेगा ना जब दोनों सर्कल लीफ नोड्स हो। दोनों सर्कल लीफ नोट्स हो। क्योंकि इंट्यूटिवली भी सोचिए ना अगर एक बहुत बड़ा सा ट्री है। अगर एक बहुत बड़ा सा ट्री है। अगर एक बहुत बड़ा सा ट्री है। ऐसा करके बहुत बड़ा सा ऐसा करके ट्री है। आपको लॉन्गेस्ट पाथ चाहिए।",
+      "source": "caption",
+      "english_text": "There should be no end point. So you will not get the correct answer. So you will not get the correct answer. You will get the correct answer only when both the circles are leaf nodes. Both circles are leaf notes. Because even intuitively think if there is a very big tree. If it is a very big tree. If it is a very big tree. By doing this, the tree is very big. You want the longest path."
+    },
+    {
+      "start_time": 730.48,
+      "end_time": 764.15,
+      "text": "आप लीफ नोड से एक दूसरे लीफ नोड तक जाएंगे ना तो आपको सबसे ज्यादा पाथ मिलेगा। फॉर एग्जांपल आप इस लीफ नोड से स्टार्ट करते हुए यहां तक पहुंचे। यहां से यहां तक पहुंचे। यहां से यहां आए। यहां से यहां आए। यहां से यहां यहां यहां आ गए। यहां से यहां आ गए। ये हुआ सबसे लॉन्गेस्ट पाथ। अगर आप कोई बीच वाला दो नोड चुन लेते हैं कि भैया हम हम ये और ये चुन रहे हैं तो आप दो ही मिलता। ऐसा क्यों कर रहे हैं आप? और फैलिए ना और फैलिए भैया। एंड पॉइंट पे जाइए। एक चीज तो समझ में आती है ना? कोई भी डायमीटर हो कहीं से भी हो। लीफ नोड्स को कनेक्ट करेगा वो। किसी भी दो लीफ नोड्स को कनेक्ट करके ही आपको मैक्सिमम डिस्टेंस",
+      "source": "caption",
+      "english_text": "You will get the longest path if you go from a leaf node to another leaf node. For example, you started from this leaf node and reached here. Reached from here to here. Came here from here. Came here from here. Came here from here to here. Came here from here. This was the longest path. अगर आप कोई बीच वाला दो नोड चुन लेते हैं कि भैया हम हम ये और ये चुन रहे हैं तो आप दो ही मिलता। ऐसा क्यों कर रहे हैं आप? और फैलिए ना और फैलिए भैया। एंड पॉइंट पे जाइए। एक चीज तो समझ में आती है ना? कोई भी डायमीटर हो कहीं से भी हो। लीफ नोड्स को कनेक्ट करेगा वो। किसी भी दो लीफ नोड्स को कनेक्ट करके ही आपको मैक्सिमम डिस्टेंस"
+    },
+    {
+      "start_time": 764.16,
+      "end_time": 798.949,
+      "text": "मिल सकता है। किसी भी दो बीच वाले नोड को कनेक्ट करके नहीं मिल सकता है। कितना भी बड़ा ट्री कितना भी कॉम्प्लेक्स ट्री हो अगर आप किसी भी बीच वाले नोड्स को कनेक्ट करेंगे ना इवन कि एक लीफ और एक नॉन लीफ उसमें भी नहीं मिलेगा। क्योंकि क्योंकि मान लीजिए आपका ऐसा थॉट प्रोसेस हो कि हम एक काम करेंगे। हम एक काम करेंगे। ये मान लीजिए कि आपका एक लीफ नोड है। इसको तो ले लेंगे। और हम जा के एक बीच वाले नोड इस इस पे पहुंच जाएंगे। तो हां आप बोल रहे हैं कि मेरा जो ये वाला पाथ है ना ये मैक्सिमम है लेकिन ये बीच वाला नोड है ना मतलब कि इसका कोई ना कोई बेटा तो होगा अगर नहीं होता तो ये लीफ होता तो आप इसके लीफ तक क्यों नहीं जा रहे हैं अगर आप जाएंगे तो",
+      "source": "caption",
+      "english_text": "Can get. किसी भी दो बीच वाले नोड को कनेक्ट करके नहीं मिल सकता है। कितना भी बड़ा ट्री कितना भी कॉम्प्लेक्स ट्री हो अगर आप किसी भी बीच वाले नोड्स को कनेक्ट करेंगे ना इवन कि एक लीफ और एक नॉन लीफ उसमें भी नहीं मिलेगा। क्योंकि क्योंकि मान लीजिए आपका ऐसा थॉट प्रोसेस हो कि हम एक काम करेंगे। हम एक काम करेंगे। ये मान लीजिए कि आपका एक लीफ नोड है। इसको तो ले लेंगे। और हम जा के एक बीच वाले नोड इस इस पे पहुंच जाएंगे। तो हां आप बोल रहे हैं कि मेरा जो ये वाला पाथ है ना ये मैक्सिमम है लेकिन ये बीच वाला नोड है ना मतलब कि इसका कोई ना कोई बेटा तो होगा अगर नहीं होता तो ये लीफ होता तो आप इसके लीफ तक क्यों नहीं जा रहे हैं अगर आप जाएंगे तो"
+    },
+    {
+      "start_time": 798.959,
+      "end_time": 830.87,
+      "text": "जो भी मिल रहा है उससे एक तो ज्यादा ही मिलेगा तो आप क्यों नहीं जा रहे हैं लीफ नोड तक तो बिना दो लीफ नोड को कनेक्ट किए हुए आपको नहीं मिल सकता है लॉन्गेस्ट डिस्टेंस सिमिलरली बिना एंड पॉइंट्स को कनेक्ट किए हुए या तो लीफ स्टेशंस को कनेक्ट किए हुए आपको नहीं मिल सकता है। लेकिन अब एक दूसरा सवाल आता है कि लीफ नोड तो बहुत सारा है। लीफ नोड तो बहुत सारा है। कैसे पता चलेगा कौन सा दो लीफ नोड? इसके बारे में भी सोचते हैं। चलिए। अब प्रॉब्लम आता है कि कौन से दो लीफ को कनेक्ट करें? अब जैसे कि यहां आप देखिए तो यहां पे चार लीफ है। यहां पे चार लीफ है।",
+      "source": "caption",
+      "english_text": "Whatever you are getting, you will get one more, so why are you not going to the leaf node? You cannot get the longest distance without connecting two leaf nodes. Similarly, you cannot get the longest distance without connecting the end points or connecting the leaf stations. But now another question arises that there are too many leaf nodes. There are a lot of leaf nodes. How to know which two leaf nodes? Let's think about this too. Let go. Now the problem arises that which two leaves to connect? Now as you see here, there are four leaves. There are four leaves here."
+    },
+    {
+      "start_time": 830.88,
+      "end_time": 859.35,
+      "text": "कौन-कौन सा? ये ये किसी भी दो लीफ को कनेक्ट कर सकते हैं। तो देख लेते हैं। देखिए अगर अगर हम चार और पांच को कनेक्ट करें। देखिए एक चीज तो हमको उम्मीद करते हैं कि आपको समझ में आ गई होगी कि क्यों डायमीटर दो लीफ को ही कनेक्ट करना चाहिए। बीच वाले से फायदा नहीं है क्योंकि आप और फैल सकते हैं तो फैलना चाहिए। अच्छा अगर आप चार और पांच को कनेक्ट करते तो क्या पाथ बनता? चार दो और पांच ये पाथ बनेगा। अच्छा इसमें कितना डंडा आएगा इसमें? एक दो। याद कीजिएगा कि इसका नंबर नहीं पूछा।",
+      "source": "caption",
+      "english_text": "Which one? These can connect any two leaves. So let's see. See if if we connect four and five. Look, one thing, we hope that you have understood why only two diameter leaves should be connected. There is no benefit from the middle one because if you can spread further then you should spread. Well, if you had connected four and five, what path would have been formed? Four, two and five will form this path. Okay, how many sticks will it hold? One or two. Remember that I did not ask for his number."
+    },
+    {
+      "start_time": 859.36,
+      "end_time": 888.23,
+      "text": "इसका नंबर तीन है। लेकिन डंडा कितना है? दो डंडा है। तो इसका आंसर कितना आएगा? दो आएगा। इसका आंसर दो आएगा। चार और सिक्स को अगर कनेक्ट करें फोर और सिक्स को तो आप क्या करेंगे? चार से दो जाएंगे, दो से एक जाएंगे, एक से तीन जाएंगे और फिर छह पे आएंगे। इसमें कितना डंडा बनेगा? चार डंडा। इसमें चार डंडा। फोर और सेवन को अगर कनेक्ट करेंगे तो फोर से टू जाएंगे, वन जाएंगे, थ्री जाएंगे और सेवन। इसमें भी चार डंडा बनेगा। अच्छा।",
+      "source": "caption",
+      "english_text": "Its number is three. But how much is the stick? There are two sticks. So what will be its answer? Two will come. The answer will be two. If you connect four and six, what will you do? Four will go to two, two will go to one, one will go to three and then it will come to six. How many sticks will it make? Four sticks. There are four sticks in it. If you connect four and seven, then four will go to two, one will go to one, three will go to seven. Four sticks will be made in this also. Good."
+    },
+    {
+      "start_time": 888.24,
+      "end_time": 914.15,
+      "text": "फाइव और सिक्स को अगर करेंगे तो फाइव से टू जाएंगे, फिर वन जाएंगे, फिर थ्री जाएंगे और सिक्स जाएंगे। इसमें भी कितना डंडा बनेगा? चार। फाइव से सेवन गए तो फाइव से टू जाएंगे, फिर वन जाएंगे, फिर थ्री जाएंगे और सेवन जाएंगे। इसमें भी चार डंडा बनेगा। अच्छा। सिक्स से सेवन जाएंगे तो सिक्स से पहले थ्री जाएंगे और फिर से। इसमें दो डंडा बनेगा। अब कोई नहीं बचा। सारा लीफ का काम दिखा दिए। चार से पांच में कितना डंडा बनेगा? दो डंडा बनेगा।",
+      "source": "caption",
+      "english_text": "If you do five and six, then from five you will go to two, then to one, then to three and then to six. How much stick will be made in this also? Four. If we go from five to seven, then five will go to two, then to one, then to three and then to seven. Four sticks will be made in this also. Good. If six goes to seven, then six goes to three and then again. Two sticks will be made in this. Now there is no one left. Showed all the leaf's work. How many sticks will be made from four to five? Two sticks will be made."
+    },
+    {
+      "start_time": 914.16,
+      "end_time": 947.35,
+      "text": "ठीक? चार से पांच मतलब चार दो पांच। ये हो गया है। ये सारे कॉम्बिनेशन बनेंगे। तो इसमें हाईएस्ट आंसर क्या है आपका? चार है। तो आपका आंसर चार हो जाएगा। बड़े गौर से देखिए। बड़े गौर से देखिए। ये जितना पाथ है ना ये जितना पाथ है हम किसी एक पाथ को आपको ड्राइंग बना के दिखाते हैं। ये सारे पाथ ये सारे पाथ जब आप ड्राइंग बनाएंगे ना तो सीधा-सीधा सीधा चलते जाएगा और एक जगह आएगा जहां ये पाथ घूम जाएगा जहां ये पाथ टर्न हो जाएगा टर्निंग पॉइंट आएगा और ये फिर ऐसे-ऐसे इसका मतलब लेफ्ट राइट है इसका मतलब ये नहीं कि यहां पे ये है। इसका मतलब",
+      "source": "caption",
+      "english_text": "ok? Four to five means four two five. This is done. All these combinations will be made. So what is your highest answer in this? There are four. So your answer will be four. Look very carefully. Look very carefully. There are many paths, there are many paths, we show you one path by making a drawing. All these paths, when you make a drawing, they will go straight and there will come a place where this path will turn, where this path will turn, a turning point will come and then like this, it means left right, it does not mean that this is here. it means"
+    },
+    {
+      "start_time": 947.36,
+      "end_time": 980.629,
+      "text": "यह जो हम घच पर घच बनाए ना, इसका मतलब लेफ्ट राइट है मतलब कि मान लीजिए ऐसा आएगा, ऐसा आएगा यहां। और एक पॉइंट आएगा जहां यह पूरी तरीके से घूम जाएगा। उसके बाद यहां आएगा, यहां आएगा, यहां आ जाएगा। हम एक पाथ आपको बना के दिखाते हैं। ये पाथ देखिए। ये देखिए। 4 2 1 3 7 देखिए क्या होगा? 4 2 1 3 7 कैसा पाथ लग रहा है देखने में? कैसा पाथ लग रहा है देखने में? देखिए। 4 2 1 3 और से कैसा पाथ लगा देखिए यहां तक सीधा गया एक जगह आया जहां ये घूम",
+      "source": "caption",
+      "english_text": "This, which we make 'Ghach on Ghach', means left right, meaning that suppose it will come like this, like this will come here. And there will come a point where it will rotate completely. After that it will come here, it will come here, it will come here. We will draw a path and show you. See this path. Look at this. 4 2 1 3 7 See what will happen? 4 2 1 3 7 What kind of path does it look like? What kind of path does it look like? See. 4 2 1 3 See what kind of path it took from there, went straight till here and came to a place where it turned around."
+    },
+    {
+      "start_time": 980.639,
+      "end_time": 1014.23,
+      "text": "गया एक जगह आया जहां ये घूम गया टर्निंग पॉइंट क्या है इसका वन रूट लेकिन जरूरी नहीं कि वन हमेशा टर्निंग पॉइंट हो नहीं इसको देखिए 4 टू फाइव ऐसा गए और ऐसा आ गए क्या है टर्निंग पॉइंट टू मतलब कि मतलब कि कोई भी दो लीफ को आप जोड़ेंगे ना उसका पाथ देखने में ऐसा ही लगेगा ऐसा ऐसा ऐसा ऊपर जाएगा आएगा। सबसे आप ऊपर जाएंगे। एक टर्निंग पॉइंट आएगा। जरूरी नहीं है कि रूट हो। ये भी हो सकता है टर्निंग पॉइंट। इसको देखिए। 6 3 7 ऐसा बना। ये टर्निंग पॉइंट है। तो कोई भी सर्कल कोई भी सर्कल हो सकता है टर्निंग पॉइंट। और उस टर्निंग पॉइंट के",
+      "source": "caption",
+      "english_text": "It went to a place where it turned, what is the turning point, its one route, but it is not necessary that one is always the turning point, no, look at this, 4 to 5, it went like this and came like this, what is the turning point, it means that if you connect any two leaves, its path will look like this, it will go up like this, it will come down. You will go higher than everyone else. A turning point will come. It is not necessary to have root. This could also be a turning point. Look at this. 6 3 7 became like this. This is the turning point. So any circle can be any circle's turning point. And that turning point"
+    },
+    {
+      "start_time": 1014.24,
+      "end_time": 1047.75,
+      "text": "बाद वो घूम जाएगा। उस टर्निंग पॉइंट के बाद वो घूम जाएगा। तो तो दो लीफ को जोड़ने के बजाय अगर हम इस सर्कल पे सोचना शुरू कर दें कि अगर अगर अगर इस सर्कल पे अपना ध्यान दीजिए। अब इस सर्कल पे अपना पूरा ध्यान दीजिए। आप इस सर्कल पे आकर खड़े हैं टू पे। अगर टू को टर्निंग पॉइंट बनना हो। टू को किसी भी पाथ का टर्निंग पॉइंट बनना हो तो क्या डायमीटर निकलेगा? मतलब कि अगर आप दो लीफ ऐसा जोड़ रहे हैं जिसमें टू टर्निंग पॉइंट बने ही बने तो कितना मैक्सिमम डायमीटर आ सकता है? मतलब कि आप",
+      "source": "caption",
+      "english_text": "Later he will turn around. After that turning point he will turn around. So instead of connecting two leaves, if we start thinking about this circle, if if if, pay our attention to this circle. Now pay your full attention to this circle. You have come to this circle and are standing on two sides. If 2 is to be a turning point. If 2 is to be the turning point of any path, what will be its diameter? Meaning that if you are joining two leaves in such a way that two turning points are formed, then what is the maximum diameter that can be achieved? means that you"
+    },
+    {
+      "start_time": 1047.76,
+      "end_time": 1072.789,
+      "text": "टू पे आके खड़े हैं। आपसे पूछा जा रहा है कि टू के आप लेफ्ट में कितना नीचे जा सकते हैं? कितना मैक्सिमम नीचे जा सकते हैं? और टू के राइट में आप कितना मैक्सिमम नीचे तक जा सकते हैं? मान लीजिए कि आपको कोई बताया कि टू के लेफ्ट में कितना सर्कल है? टू के लेफ्ट में कितना सर्कल कितना डीप जा सकते हैं? बताया कि एक सर्कल डीप जा सकते हैं। टू के राइट में कितना डीप जा सकते हैं?",
+      "source": "caption",
+      "english_text": "Have come and are standing on two feet. You are being asked how far to the left can you go? How much maximum can we go down? And what is the maximum level you can go down to the right of two? Suppose someone told you how many circles are to the left of two? How much circle can go deep to the left of two? Told that a circle can go deeper. How deep can one go to the right of two?"
+    },
+    {
+      "start_time": 1072.799,
+      "end_time": 1106.23,
+      "text": "कोई बताया यहां भी एक सर्कल डीप जा सकते हैं। तो आपका आंसर क्या होगा? किसी ऐसे पाथ का जिसका टर्निंग पॉइंट टू होना ही होना चाहिए। 1 + 1 इसका आंसर आएगा दो। इसका आंसर क्या आएगा? दो। ध्यान से देखिए। जहां पर टू टर्निंग पॉइंट था 4 टू 5 क्या इसका आंसर दो आया है? हां, इसका आंसर दो आया है। फिर से बताते हैं। अपना ध्यान वन पे कंसंट्रेट कीजिए। आपको वन पे आए। आपको वन पे पता लगाना है कि कौन सा कौन सा ऐसा पाथ है जिस पे वन टर्निंग पॉइंट हो ही हो।",
+      "source": "caption",
+      "english_text": "Someone told that one can go circle deep here also. So what will be your answer? A path that must have a turning point. The answer will be 1 + 1. What will be the answer to this? Two. Look carefully. Where the turning point was 4 to 5, is the answer 2? Yes, the answer is two. Let me tell you again. Concentrate your attention on one. You came to the forest. You have to find out which is the path which has one turning point."
+    },
+    {
+      "start_time": 1106.24,
+      "end_time": 1140.31,
+      "text": "तो आप क्या पूछेंगे कि हम वन से लेफ्ट में कितना नीचे जा सकते हैं? कितना डीप जा सकते हैं? कितने हाइट तक जा सकते हैं? आपको पता चलेगा कि हम एक और दो जा सकते हैं। तो आपको लेफ्ट वाला क्या बताएगा? दो। सिमिलरली आप एक से पूछेंगे कि राइट में कितना डीप जा सकते हैं? राइट आपको क्या बताएगा कि हम भी दो जा सकते हैं। क्या होगा इसका आंसर? 2 + 2 2 + 2 4 देख लीजिए जिस भी पाथ में वन टर्निंग पॉइंट है, कितना है उसका आंसर? उसका आंसर है फोर। ये फोर क्यों आ रहा है? ये फाइव क्यों नहीं आ रहा है? क्योंकि अगर हम लोग देखें तो आप",
+      "source": "caption",
+      "english_text": "So how far down can we go from one to the left you ask? How deep can we go? How high can you go? You know we can go one and two. So what will the one on the left tell you? Two. Similarly you would ask one how deep can one go to the right? What Wright will tell you is that we too can go. What will be its answer? 2 + 2 2 + 2 4 See, whatever path has one turning point, what is its answer? Its answer is four. Why is this four coming? Why is this five not coming? Because if we see you"
+    },
+    {
+      "start_time": 1140.32,
+      "end_time": 1166.87,
+      "text": "वन से बोल रहा है कि लेफ्ट में टू जा सकता है। मतलब लेफ्ट में दो सर्कल है। वन के लेफ्ट में दो सर्कल है। वन के राइट में भी दो सर्कल है। तो वन को भी जोड़ना चाहिए क्योंकि यहां पे नंबर ऑफ सर्कल्स नहीं पूछा है। नंबर ऑफ डंडा पूछा हुआ है। नंबर ऑफ डंडा पूछा हुआ है। तो आप जब इसको देखेंगे तो नंबर ऑफ डंडा कितना आता है? लेफ्ट में आप जितना नीचे जा सकते हैं और राइट में जितना नीचे जा सकते हैं। एक और एग्जांपल से हम आपको ये चीज समझाना चाहते हैं। आ गया होगा समझ में। लेकिन देखिए वन",
+      "source": "caption",
+      "english_text": "He is telling One that Two can go left. Meaning there are two circles on the left. There are two circles on the left of the forest. There are also two circles on the right side of the forest. So one should also be added because number of circles has not been asked here. Number of stick is asked. Number of stick is asked. So when you look at this, what is the number of sticks? On the left you can go as low as you can and on the right you can go as low as you can. We want to explain this to you with another example. Must have understood. but look at the forest"
+    },
+    {
+      "start_time": 1166.88,
+      "end_time": 1199.83,
+      "text": "टू थ्री अब देखिएगा 4 5 6 7 8 न और 10 ये एक सर्कल है। आइए वन पे देखते हैं। वन पे आइए। वन पे आप कौन सा ऐसा पाथ है जो जिसका टर्निंग पॉइंट वन हो मतलब कि तो कौन सा ऐसा पाथ होगा? आप वन से नीचे कितना नीचे जा सकते हैं? लेफ्ट में कितना नीचे जा सकते हैं? तो देखिए एक दो तीन चार चार हुआ लेकिन क्या चार जा सकते",
+      "source": "caption",
+      "english_text": "Two Three Now see 4 5 6 7 8 no and 10 this is a circle. Let's look at one. Come to the forest. Which is the path on the forest which has one turning point, that is, which path will it be? How far below the forest can you go? How far can you go left? So see one two three four became four but can four go?"
+    },
+    {
+      "start_time": 1199.84,
+      "end_time": 1226.39,
+      "text": "हैं देखते हैं। एक दो तीन चार पांच पांच जा सकते हैं। एक के लेफ्ट में आप कितना एक के लेफ्ट का हाइट कितना है? कितना नीचे जा सकते हैं? 1 2 3 4 पांच जा सकते हैं। तो एक को क्या पता चलेगा? पांच। एक के राइट में कितना है? कितना डीप जा सकते हैं? एक के राइट में सिर्फ एक। सिर्फ एक। तो इसका आंसर क्या होना चाहिए? ऐसे पाथ का जहां पे वन टर्निंग पॉइंट होना ही होना चाहिए।",
+      "source": "caption",
+      "english_text": "Let's see. One two three four five five can go. How much are you to the left of one? What is the height of one to the left? How low can we go? 1 2 3 4 five can go. So how would one know? Five. How much is one right? How deep can we go? Just one to the right of one. Only one. So what should be the answer? There must be one turning point on such a path."
+    },
+    {
+      "start_time": 1226.4,
+      "end_time": 1260.71,
+      "text": "उसका आएगा आंसर 5 + 1 = 6 देख लीजिए बना के। देख लीजिए बना के। अगर हम ये पाथ बनाते 10 9 8 5 2 1 3 देखिए कितना डंडा बनेगा। 1 2 3 4 5 6 क्या छह बना? हां जी छह बना। वन हो गया। लेकिन हम क्या बोले थे? जरूरी नहीं है कि वन बनेगा ही बनेगा। सिक्स एक आंसर हो सकता है। सिमिलर काम नीचे के लिए करिए। सिमिलर काम नीचे के लिए करिए। आइए टू पे आ जाइए। टू के लेफ्ट में आप कितना नीचे जा सकते हैं? तो टू के लेफ्ट में आप 1 2 3 जा सकते हैं। तो ये",
+      "source": "caption",
+      "english_text": "Its answer will be 5 + 1 = 6. Try making it. Try making it. If we make this path 10 9 8 5 2 1 3, see how many sticks will be made. 1 2 3 4 5 6 What makes six? Yes, it became six. It became a forest. But what did we say? It is not necessary that a forest will be formed. Six could be an answer. Do similar work for below. Do similar work for below. Let's come to two. How low can you go in two's left? So to the left of two you can go 1 2 3. so this"
+    },
+    {
+      "start_time": 1260.72,
+      "end_time": 1295.35,
+      "text": "बोलेगा तीन। टू के राइट में कितना नीचे जा सकते हैं? 1 2 3 4 तो ये बोलेगा चार। कितना आंसर होना चाहिए उस पाथ का जिसका टर्निंग पॉइंट टू हो। इसका आंसर होना चाहिए 3 + 4 = 7। आइए वेरीफाई करके देखते हैं। अगर हम ये पाथ बनाएं 7 6 4 2 5 8 9 10 इसमें देखते हैं कितना डंडा आता है। सेवन और 10 को जोड़ना है इसको और इसको देखते हैं कितना डंडा बनेगा। 1 2 3 4 5 6 7 सात आ गया आंसर। तो आपका पहला आंसर क्या था? सिक्स। अब आपको सात मिल गया है। इसमें",
+      "source": "caption",
+      "english_text": "Will say three. How low can one go to the right of two? 1 2 3 4 So it will say four. How many answers should there be for that path which has two turning points? The answer should be 3 + 4 = 7. Let us verify. If we make this path 7 6 4 2 5 8 9 10, let's see how much stick comes in it. We have to add seven and 10 and let's see how many sticks will be formed. 1 2 3 4 5 6 7 The answer is here. So what was your first answer? Six. Now you've got seven. in this"
+    },
+    {
+      "start_time": 1295.36,
+      "end_time": 1327.669,
+      "text": "आपका आंसर क्या होगा? ये वाला। अगर आप इन दोनों को जोड़ने की कोशिश करेंगे तो आपको ये मिलेगा। इस ट्रिक से। अब ये काम कैसे निकाल रहे हैं हम कि टू के लेफ्ट में कितना जा सकते हैं? हाइट ऑफ ए ट्री भाई। हाइट ऑफ ए ट्री। हाइट ऑफ ए ट्री पढ़ाए थे या तो डेप्थ ऑफ ए ट्री। सेम क्वेश्चन सॉल्व हुआ था। तो आपको क्या करना है? आपको कुछ नहीं करना है। आपको हाइट ऑफ ए ट्री का प्रोग्राम लिखना है। हाइट ऑफ ए ट्री का प्रोग्राम कैसे लिखते थे? किसी भी रूट पे जाते थे। सबसे पहले लेफ्ट वाले का हाइट निकालते थे। उसके बाद राइट सब ट्री का आप",
+      "source": "caption",
+      "english_text": "What will be your answer? This one. If you try to connect these two, you will get this. With this trick. Now how are we working out how much we can go left of 2? Height of a tree brother. Height of a Tree. Either height of a tree or depth of a tree was taught. Same question was solved. So what do you have to do? You don't have to do anything. You have to write a program for the height of a tree. How did you write the program for Height of a Tree? Used to go on any route. First of all we used to calculate the height of the one on the left. After that you of right sub tree"
+    },
+    {
+      "start_time": 1327.679,
+      "end_time": 1360.95,
+      "text": "हाइट निकालते थे। अब जो ये लेफ्ट और राइट है इनको एक जगह जोड़ लीजिए। सम इज़ इक्वल टू लेफ्ट प्लस राइट। एक ग्लोबल वेरिएबल ले लीजिए। रिजल्ट इज़ इक्वल टू मैक्स ऑफ़ रिजल्ट एंड सम। यस। अब ऊपर अपनी हाइट रिटर्न कर दीजिए। क्या करते थे रिटर्न? टोटल हाइट क्या होती थी? लेफ्ट प्लस राइट + 1 ये काम आपको करना है। आइए कोड दिखाते हैं। फिर ड्राई रन भी करके दिखाएंगे। क्या करना है? सबसे पहले तो एक ग्लोबल वेरिएबल ले लेते हैं। रिजल्ट इक्वल टू 0 ठीक है?",
+      "source": "caption",
+      "english_text": "Used to calculate height. Now join the left and right parts at one place. Sum is equal to left plus right. Take a global variable. Result is equal to max of result and sum. Yes. Now return your height above. What did returns do? What was the total height? Left plus right + 1 is what you have to do. Let's show the code. Then we will also show it by doing a dry run. What is the plan? First of all, let's take a global variable. Is the result equal to 0?"
+    },
+    {
+      "start_time": 1360.96,
+      "end_time": 1395.83,
+      "text": "हाइट का हाइट का प्रोग्राम जो लोग हाइट का वीडियो नहीं देखे हैं प्लीज देख लीजिए। हाथ जोड़ लिए हैं। इंट फन क्या पास करते थे? कुछ नहीं। बस नोड का रूट सबसे पहले अगर रूट नल है तो हाइट कितना होता था? कुछ नहीं। ज़ीरो। रिटर्न ज़ीरो। क्या होता था? दो स्टेप। लेफ्ट सब ट्री का हाइट निकालते थे। कैसे निकालते थे? सेम पास करके। मान लीजिए कि मिल जाएगा रूट का लेफ्ट और इंट राइट इज इक्वल टू फन",
+      "source": "caption",
+      "english_text": "Those who have not seen the video of Height, please watch it. Have folded hands. What did Int Fun pass? Nothing. First of all, if the root of the bus node is null, then what was the height? Nothing. Zero. Returns zero. What used to happen? Two steps. Used to calculate the height of the left sub tree. How did you get it out? By passing the beans. Suppose we get the left and right sides of the root, this is equal to fun."
+    },
+    {
+      "start_time": 1395.84,
+      "end_time": 1424.63,
+      "text": "रूट का राइट एक बार निकल गया। अब हमारे हमारे प्रोग्राम के लिए रिटर्न तो यही करना है। रिटर्न तो टोटल हाइट क्या होता है? लेफ्ट प्लस सॉरी रिटर्न क्या करते हैं? वन हां वन प्लस मैक्सिमम ऑफ़ लेफ्ट एंड राइट। मैक्सिमम ऑफ लेफ्ट एंड राइट। ये हाइट में यही करता था ना हाइट यही। लेकिन हमारे प्रोग्राम के लिए क्या करना है? इंट सम इक्वल टू लेफ्ट प्लस राइट।",
+      "source": "caption",
+      "english_text": "Root's right slips once. Now this is the return we have to make for our program. Return So what is the total height? What do left plus sorry returns? One yes one plus maximum of left and right. Maximum of left and right. This is what he used to do in height, isn't this height? But what about our program? Int sum equal to left plus right."
+    },
+    {
+      "start_time": 1424.64,
+      "end_time": 1457.51,
+      "text": "प्लस वन नहीं जोड़ रहे हैं। क्यों नहीं जोड़ रहे हैं? क्योंकि आपको नंबर ऑफ़ सर्कल नहीं चाहिए। वो डंडा चाहिए। तो डंडा हमेशा एक कम होता है। तो इसलिए नहीं कर रहे हैं। और रेस इक्वल टू मैक्स ऑफ़ रेस एंड सम। तो ये आपका प्रोग्राम हो गया। ये आपका प्रोग्राम हो गया। ड्राई रन कर देते हैं। ड्राई रन करने के लिए एक ट्री ले लेते हैं हम। एक अगर हम ट्री ढूंढना चाहे तो चलिए इसी को ढूंढ लेते हैं। इसी को ले लेते हैं। वन टू थ्री फोर फाइव। अच्छा ट्री है। इसको भी हटा देते हैं। इसको हटाइए।",
+      "source": "caption",
+      "english_text": "Not adding plus one. Why not adding? Because you don't want number off circle. Need that stick. So the stick is always one less. So that's why we're not doing it. And race equal to max of race and sum. So this is your program. This is your program. Let's do a dry run. Let us take a tree for dry run. If we want to find a tree, then let us find this one. Let's take this one. One two three four five. It's a nice tree. Let's remove this also. Remove this."
+    },
+    {
+      "start_time": 1457.52,
+      "end_time": 1489.75,
+      "text": "इसको हटा देते हैं। और इसको फोर कर देते हैं। आसानी होगी। आइए प्रोग्राम अरे प्रोग्राम रन करते हैं। आइए प्रोग्राम रन करते हैं। सबसे पहले फन वन के लिए कॉल होगा। क्या यह नल है? यह नल नहीं है। लेफ्ट इक्वल टू फन टू राइट इक्वल टू फन थ्री। फन टू कॉल हो गया। फन टू कॉल हुआ। ये नल है ना? लेफ्ट इज इक्वल टू फन ऑफ़ नल इक्वल टू 0। राइट इज़ इक्वल टू फन ऑफ़ फोर।",
+      "source": "caption",
+      "english_text": "Let's remove this. And let's make it four. It will be easy. Let's run the program. Let's run the program. First there will be a call for Fun One. Is it a tap? This is not a tap. Left equals two fun two, right equals two fun three. Fun to call is done. Fun to call happened. This is a tap right? Left is equal to fun of null equal to 0. Right is equal to fun of four."
+    },
+    {
+      "start_time": 1489.76,
+      "end_time": 1523.669,
+      "text": "आते हैं। फन ऑफ़ फोर कॉल करिए। फन ऑफ़ फोर। इसका लेफ्ट राइट दोनों ज़ीरो आएगा क्योंकि इसका लेफ्ट राइट चिल्ड्रन नहीं है। ठीक है? यहां भी अब सेम काम होगा। इसका सम क्या आएगा? ज़ीरो। रेस्ट क्या होगा? मैक्स ऑफ़ रेस्ट एंड सम रेस्ट ज़ीरो ही रह जाएगा। ये क्या रिटर्न करेगा? 1 + मैक्स ऑफ़ लेफ्ट एंड राइट = 1। ये वन कहां आ जाएगा? यहां पे। अब वन टू में सम क्या निकलेगा? 0 + 1 = 1 रेस्ट इज़ इक्वल टू मैक्स ऑफ़ अभी अभी हमारा रेस ज़ीरो है। तो ज़ीरो बड़ा है, वन बड़ा है? वन बड़ा है। तो ये वन हो गया। ये",
+      "source": "caption",
+      "english_text": "Let's come. Call Fun of Four. Fun of four. Its left and right sides will both be zero because it has no left and right children. Ok? Same work will be done here also. What will be its equivalent? Zero. What will be the rest? Max of rest and sum rest will remain zero. What return will it give? 1 + Max of Left and Right = 1. Where will this forest come? On here. Now what will be the sum of one and two? 0 + 1 = 1 Rest is equal to max off Right now our race is zero. So zero is bigger, one is bigger? The forest is big. So it became a forest. this"
+    },
+    {
+      "start_time": 1523.679,
+      "end_time": 1555.43,
+      "text": "क्या रिटर्न करेगा? 1 + मैक्स ऑफ़ लेफ्ट एंड राइट। तो मैक्स ऑफ़ वन एंड ज़ीरो मतलब टू। ये टू कहां आ जाएगा? ये टू यहां आ जाएगा। फन थ्री आइए। फन थ्री को कॉल करें। फन थ्री कॉल करें। इसका भी लेफ्ट भी ज़ीरो आएगा, राइट भी ज़ीरो आएगा। क्योंकि ये एक लीफ नोड है। ये क्या? इसका सम क्या आएगा? ज़ीरो। रेस्पॉट करने की जरूरत नहीं है। रिटर्न क्या करेगा? ये 1 + मैक्स ऑफ़ 0 = 1 ये वन कहां आ जाएगा? यहां पे। वन में क्या सम आएगा? 1 + 2 = 3 क्या रेस्ट? हां।",
+      "source": "caption",
+      "english_text": "What will return? 1 + Max of Left and Right. So max of one and zero means two. Where will this two come? This two will come here. Let's have fun three. Call the Fun Three. Call Fun Three. Its left side will also be zero, its right side will also be zero. Because it is a leaf node. What is it? What will be its equivalent? Zero. No need to respot. What will the returns do? This 1 + Max of 0 = 1 Where will this one come? On here. What will happen in the forest? 1 + 2 = 3 What rest? Yes."
+    },
+    {
+      "start_time": 1555.44,
+      "end_time": 1589.51,
+      "text": "रेस्ट को अपडेट कर दीजिए। थ्री कर दीजिए। अब ये क्या रिटर्न करेगा? इसका जरूरत नहीं है लेकिन ठीक है। 1 + मैक्स ऑफ़ मैक्स ऑफ़ क्या है इसका? 1 + मैक्स ऑफ़ 0 एंड 1 क्या है? वन वन और टू है। तो 1 + 2 जो भी है थ्री। लेकिन हमारा रेस्ट क्या है लास्ट में बन गया? थ्री। क्या आपका आंसर थ्री है? आपका आंसर थ्री है। कैसे? अगर आप इन दोनों को पकड़ लें। फोर और थ्री को एक पाथ दो पाथ तीन पाथ। 4 2 1 3 इसका आंसर आता है थ्री। तो ये आप सीख चुके होंगे प्रोग्राम करना डायमीटर ऑफ ए ट्री इजी क्वेश्चन था",
+      "source": "caption",
+      "english_text": "Update the rest. Make it three. Now what return will it give? It's not needed but okay. 1 + Max Off What is Max Off? What is 1 + Max of 0 and 1? One is one and two. So 1 + 2 whatever is three. But what is our rest made in the end? Three. Is your answer three? Your answer is three. How? If you catch these two. Four and three, one path, two path, three path. 4 2 1 3 Its answer is three. So you must have learned this: Programming was the diameter of a tree easy question."
+    },
+    {
+      "start_time": 1589.52,
+      "end_time": 1621.269,
+      "text": "लेकिन थोड़ा डीप था समझने में चलिए अगला क्वेश्चन भी इंटरेस्टिंग है उसका नाम है कंप्लीट बाइनरी ट्री क्या कंप्लीट कंप्लीट बड़ा इंटरेस्टिंग टाइप का ट्री होता है क्या होता है आपको हम बताते हैं एक बाइनरी ट्री होता है ठीक है कंप्लीट का डेफिनेशन क्या है कि सबसे पहले तो एव्री लेवल एव्री हां इसके लिए प्रीरक्विज़िट है अगर आप लेवल ऑर्डर ट्रेवर्सल नहीं देख के आए हैं अगर आप लेवल ऑर्डर ट्रेवर्सल नहीं देखे प्लीज देखिए। हाथ जोड़ रहे हैं। वो देख के आइए नहीं तो नहीं समझ में आएगा। वार्निंग दे देते हैं। ठीक है? मेरा काम खत्म।",
+      "source": "caption",
+      "english_text": "But it was a little deeper in understanding. Let's understand the next question. Its name is Complete Binary Tree. What is Complete Binary Tree? What is Complete Complete? It is a very interesting type of tree. What is it? Let us tell you what is a binary tree. Okay, what is the definition of Complete? First of all, every level is a prerequisite for this. Yes, it is a prerequisite for this. If you have not seen level order traversal, if you have not seen level order traversal, please. Look. Folding hands. Come see it otherwise you will not understand. Give warning. Ok? I finish work."
+    },
+    {
+      "start_time": 1621.279,
+      "end_time": 1654.549,
+      "text": "कंप्लीट ट्री क्या बोलता है? एव्री लेवल एव्री लेवल। लेवल का क्या मतलब होता है? जब आप हॉरिजॉन्टल लाइन बनाते हैं ना ट्री में उसको लेवल बोला जाता है। लेवल ज़ीरो, लेवल वन, लेवल टू। अच्छा। एक्सेप्ट पॉसिबबली द लास्ट। ये थोड़ा मुश्किल है। थोड़ा अंग्रेजी इसमें ज्यादा है। एक्सेप्ट पॉसिबबली द लास्ट इज कंप्लीटली फिल्ड। इज कंप्लीटली फिल्ड। समझाएंगे। इंग्लिश इंग्लिश पे ध्यान मत दीजिए। लास्ट लेवल में लास्ट लेवल में अगर वो कंप्लीटली फील्ड नहीं है तो लेफ्ट टू राइट फील्ड होना चाहिए। इसका क्या मतलब है? हम बताते हैं आपको। इतना मत लोट लीजिए। ये",
+      "source": "caption",
+      "english_text": "What does the complete tree say? Every level every level. What does level mean? When you make a horizontal line in a tree, it is called a level. Level zero, level one, level two. Good. Accept possibly the last. This is a little difficult. There is more than a little English in it. Accept Possibly the last is completely filled. Is completely filled. Will explain. Don't pay attention to English. In the last level, if it is not completely field in the last level, then there should be left to right field. What does it mean? We will tell you. Don't get so carried away. this"
+    },
+    {
+      "start_time": 1654.559,
+      "end_time": 1689.51,
+      "text": "ट्री है। 1 2 3 4 5 6 ये एक ट्री है। ठीक है? इसमें सबसे पहले हम लेवल बना देते हैं। ये एक लेवल हुआ। पहला लेवल ये है। इसका नाम क्या है? लेवल ज़ीरो। दूसरा लेवल टू और थ्री वाला। इसका नाम क्या है? लेवल वन। तीसरा लेवल 4 5 6 वाला। इसका लेवल क्या है? टू। ठीक है? आपको क्या बोलता है? इसमें कितना लेवल है? तीन लेवल है। अच्छा सबसे लास्ट लेवल को अभी के लिए छोड़ दीजिए। सबसे लास्ट लेवल को मतलब लेवल टू को अभी तक के लिए छोड़ दीजिए। लेवल ज़ीरो और लेवल वन पे ध्यान दीजिए। क्या लेवल",
+      "source": "caption",
+      "english_text": "There is a tree. 1 2 3 4 5 6 This is a tree. Ok? In this, first of all we make levels. This is one level. This is the first level. What is his name? Level zero. The second one is level two and three. What is his name? Level one. The third level is 4 5 6. What is its level? To. Ok? What speaks to you? How many levels are there in it? There are three levels. Well, leave the last level for now. Leave the last level i.e. level two for now. Pay attention to level zero and level one. what level"
+    },
+    {
+      "start_time": 1689.52,
+      "end_time": 1722.63,
+      "text": "जीरो पूरा तरीके से फिल्ड है? हां, लेवल जीरो पूरे तरीके से फिल्ड है। इसका क्या मतलब होता है? बताते हैं। लेवल जीरो को तो रहने दीजिए। इसमें तो रूट है ना? उसको लेवल वन क्या लेवल वन पूरी तरीके से फिल्ड है? हां, लेवल वन पूरी तरीके से फील्ड है। क्यों? क्योंकि इसके ऊपर में जो वन था ना उसका लेफ्ट और राइट दोनों चिल्ड्रन पॉपुलेटेड है। उसका लेफ्ट और राइट दोनों चिल्ड्रन पॉपुलेटेड है। अगर यहां पे थ्री नहीं होता ना तो इसका मतलब होता कि लेवल वन पूरी तरीके से फिल्ड नहीं है। लेवल वन पूरी तरीके से फिल्ड नहीं है। अच्छा। अब आ",
+      "source": "caption",
+      "english_text": "Is zero completely filled? Yes, level zero is completely filled. What does this mean? Let us tell. Leave it at level zero. There is a root in it, right? Is it level one? Is level one completely filled? Yes, level one is a full field. Why? Because the forest above it is populated by both its left and right children. Both its left and right children are populated. If there was no number three here, it would mean that level one is not completely filled. Level one is not completely filled. Good. come now"
+    },
+    {
+      "start_time": 1722.64,
+      "end_time": 1754.07,
+      "text": "जाइए लास्ट लेवल पे। क्या लेवल टू पूरी तरीके से फिल है? बट नहीं है। क्यों? आप देख सकते हैं कि लेवल वन के एक सर्कल का राइट में कुछ नहीं है। इसका राइट नल है। लेकिन कंप्लीट बाइनरी ट्री आपको लास्ट लेवल में छूट देता है। लास्ट लेवल में हो सकता है कि पूरा फिल नहीं हो। हो सकता है कि यहां पे एक नल हो। ओके? लेकिन लेकिन लेकिन जो नोड होने चाहिए ना वो लेफ्ट टू राइट फिल होने चाहिए। लेफ्ट टू राइट फिल होने चाहिए। फॉर एग्जांपल अगर हम इसको",
+      "source": "caption",
+      "english_text": "Go to the last level. Is level two completely filled? Not a butt. Why? You can see that the circle in level one has nothing on the right. Its right is tap. But Complete Binary Tree gives you relaxation in the last level. The last level may not be completely filled. There might be a tap here. Ok? But but but the nodes that should be there should be left to right filled. Must be filled from left to right. For example if we"
+    },
+    {
+      "start_time": 1754.08,
+      "end_time": 1787.269,
+      "text": "मिटा दें और इस फाइव को हम यहां जोड़ दें। क्या यह कंप्लीट है? नहीं। क्या ये कंप्लीट नहीं है? क्यों नहीं है? ये नल है। ये नल है। टू का राइट साइड नल है। ये अलाउड नहीं है। देखिए लेवल टू पूरी तरीके से फिल नहीं है। हम जानते हैं पूरी तरीके से फिल्ड होने में चार नोड लगता है। नहीं है। कोई बात नहीं। कोई बात नहीं। लेकिन ये किस तरीके से फिल है? ये ऐसे फिल है फोर। फोर के बाद नल आ गया। फिर आया सिक्स और फिर आया फाइव। यह अलाउड नहीं है। यह अलाउड नहीं है। लेफ्ट टू राइट फिल होना चाहिए।",
+      "source": "caption",
+      "english_text": "Erase and let's add this five here. Is it complete? No. Is this not complete? Why isn't it? This is a tap. This is a tap. The right side of two is null. This is not loud. See level two is not completely filled. We know it takes four nodes to be completely filled. Not there. No problem. No problem. But in what way is it filled? This is how Phil is four. After four the tap came. Then came six and then came five. It is not loud. It is not loud. Must be filled left to right."
+    },
+    {
+      "start_time": 1787.279,
+      "end_time": 1821.269,
+      "text": "और जो भी नल है ना वो उसके बाद एक लाइन में आने चाहिए। ये ऐसा हो सकता था। फोर फाइव सिक्स नल ये अलाउड है क्योंकि इसमें सारा नल कहां है? राइट? एक बार अगर नल आ गया उसके बाद कोई नल नहीं आ रहा है। एक बार अगर नल आ गया और उसके बाद कोई आइटम नहीं आ रहा है। लेकिन ऊपर वाले एग्जांपल में एक बार नल आ गया उसके बाद नोड नहीं आ सकता है। अगर उसके बाद नोड आया तो वो कंप्लीट माइनरी ट्री नहीं है। ये लेफ्ट टू राइट का छूट कहां मिलता है? सिर्फ लास्ट लेवल में ऊपर का सारा लेवल कंप्लीटली",
+      "source": "caption",
+      "english_text": "And all the taps should come in a line after that. It could have been like this. Four Five Six Nal This is allowed because where is all the Nal in this? Right? Once the tap comes, no tap is coming after that. Once if tap comes and after that no item is coming. But in the above example, once the tap comes, the node cannot come after that. If a node comes after that then it is not a complete minor tree. Where is this left to right discount available? All the above levels are completed only in the last level."
+    },
+    {
+      "start_time": 1821.279,
+      "end_time": 1855.99,
+      "text": "फिल्ड होना चाहिए। फॉर एग्जांपल अगर कोई ऐसा ट्री बना दे वन टू थ्री फोर और बस ये बना दे क्या ये है कंप्लीट बाइनरी ट्री नहीं क्योंकि देखिए ये हुआ लेवल जीरो ये हुआ लेवल वन और ये हुआ लेवल टू लास्ट लेवल को छोड़ दीजिए क्या सेकंड लास्ट लेवल पूरी तरीके से फिल है नहीं है सेकंड लास्ट लेवल पूरा फिल नहीं है तो ये नहीं है कंप्लीट बाइनरी ट्री लास्ट लेवल पे तो अभी आएंगे ही कि नहीं लास्ट लेवल ठीक है कि नहीं है क्या सेकंड लास्ट लेवल भी है पूरी तरीके",
+      "source": "caption",
+      "english_text": "Must be filled. For example, if someone makes such a tree one two three four and just makes it like this, is this not a complete binary tree because see this is level zero, this is level one and this is level two, leave the last level, is the second last level completely filled? Is it right or not? Is the second last level also the complete method?"
+    },
+    {
+      "start_time": 1856.0,
+      "end_time": 1890.95,
+      "text": "से फिल नहीं तो ये छूट कि सारा लेवल होना चाहिए ये सिर्फ लास्ट लेवल में आपको ये छूट है और लास्ट लेवल में भी वो लेफ्ट टू राइट में फिल होना चाहिए मतलब कि लास्ट लेवल में कितना भी नोड हो कुछ नोड नल हो सकते हैं लेकिन वो सारे नल राइट में होने चाहिए ऐसा नहीं हो सकता है कि फोर आए फिर एक फाइव आ जाए फिर यहां पे एक नल आ जाए फिर यहां पे एक सिक्स आ जाए फिर यहां पे एक नल आ जाए और सेवन आ जाए। नहीं, यह नहीं है कंप्लीट बाइनरी ट्री। कंप्लीट के लिए यह दोनों नल को एकदम राइट में होना चाहिए था और इन सारे फील्ड नोड्स को एकदम लेफ्ट में होना चाहिए था। तो ये कंप्लीट बाइनरी",
+      "source": "caption",
+      "english_text": "If it is not filled then there is an exemption that the entire level should be filled. You have this exemption only in the last level and in the last level also it should be filled from left to right, that means no matter how many nodes are there in the last level, some nodes may be null but all those nodes should be on the right. It cannot happen that a four comes, then a five comes, then a null comes here, then a six comes here, then a null comes here and then a seven comes. No, this is not a complete binary tree. To be complete, both these taps should have been on the extreme right and all these field nodes should have been on the extreme left. So this is complete binary"
+    },
+    {
+      "start_time": 1890.96,
+      "end_time": 1925.269,
+      "text": "ट्री का डेफिनेशन है। एक बार और देख लीजिएगा थोड़ा कॉम्प्लेक्स है। अब सोचना स्टार्ट करते हैं कि इसमें क्या करेंगे? चलिए। इस क्वेश्चन को सॉल्व करने के लिए ना क्योंकि क्योंकि ये क्वेश्चन ही आपको बोल रहा है लेवल। ये क्वेश्चन ही लेवल्स के बारे में है ना। आपको बोल रहा है ना कि लेवल ऐसा नहीं होना चाहिए। लेवल वैसा नहीं। इससे क्या याद आता है हमको? लेवल ऑर्डर ट्रेवर्सल। लेवल ऑर्डर ट्रेवर्सल क्योंकि इसमें आप वैसा नहीं कर पाएंगे कि आप एक डीएफएस चला दिए और आप रूट के लेफ्ट जा रहे हैं राइट उससे नहीं होगा क्योंकि यहां पे लेवल्स की बात की गई है ना कि हर लेवल ऐसा होना चाहिए लास्ट लेवल वैसा होना चाहिए तो आपको लेवल ऑर्डर चलना पड़ेगा एक",
+      "source": "caption",
+      "english_text": "The definition of tree is. Take a look one more time, it's a bit complex. Now let's start thinking what to do in this? Let go. Not to solve this question because this question itself is telling you the level. This question is about levels isn't it? Telling you that the level should not be like this. The level is not the same. What does this remind us? Level Order Traversal. Level order traversal because in this you will not be able to do the same thing that if you run a DFS and you are going left of the route then it will not be right because here we have talked about levels and not every level should be like this, the last level should be like that then you will have to follow the level order."
+    },
+    {
+      "start_time": 1925.279,
+      "end_time": 1950.71,
+      "text": "बड़ी इंटरेस्टिंग आपको हम प्रॉपर्टी दिखाते हैं इसकी देखिए एक बहुत इंटरेस्टिंग आपको प्रॉपर्टी दिखाते हैं वन टू थ्री 4 5 6 क्या है ये ट्री आपको दिया हुआ है मान लीजिए थ्री का राइट वाला नल है। ये आप देख सकते हैं। ये कंप्लीट बाइनरी ट्री है। अगर हम इसका लेवल ऑर्डर ट्रेवर्सल लिखें। लेवल ऑर्डर का क्या मतलब होता है? लेफ्ट टू राइट पहले फर्स्ट लेवल लिखिए। लेफ्ट टू राइट सेकंड लेवल लिखिए।",
+      "source": "caption",
+      "english_text": "Very interesting, we show you a property, see this, a very interesting, we show you a property, one to three, 4 5 6. What is this tree, given to you, suppose it is the tap on the right of three. You can see this. This is a complete binary tree. If we write its level order traversal. What does level order mean? Write first level from left to right. Write left to right second level."
+    },
+    {
+      "start_time": 1950.72,
+      "end_time": 1983.59,
+      "text": "लेफ्ट टू राइट थर्ड लेवल लिखिए। तो देखिए क्या आएगा? सबसे पहले आएगा वन। फिर आएगा टू थ्री। फिर आएगा 4 5 6 नल। ठीक? ये आया। इसमें इसमें इसमें नल कहां पे आया? सारा लास्ट में एक नल आया। तो ठीक है। एक और बड़ा एग्जांपल से समझिए। इसमें हो सकता है ना आए। वन टू थ्री फोर फाइव सिक्स से 8 9 10 11 ठीक",
+      "source": "caption",
+      "english_text": "Write left to right third level. So see what will come? Forest will come first. Then comes two three. Then will come 4 5 6 taps. Correct? here comes. Where did the tap come in this? At last a tap came. Well then. Understand with another big example. It may or may not be included. One two three four five six to 8 9 10 11 ok"
+    },
+    {
+      "start_time": 1983.6,
+      "end_time": 2017.509,
+      "text": "है? ये ट्री है। थोड़ा बड़ा ट्री है। इसका भी हम लेवल ऑर्डर लिखते हैं। लेवल ऑर्डर अगेन हर लेवल को लेफ्ट से राइट लिखना है। कैसे लिखते हैं? Q से। कोड भी दिखाएंगे और दिखा भी चुके हैं। लेवल ऑर्डर में उतना कुछ खास है नहीं। 1 2 3 4 5 6 और 7 8 9 10 11 और नल को छोड़िए मत। नल को भी लिखिए। ये क्या है? ये एक इसका नल है। ये भी नल है। इसका भी ये नल है। ये भी नल है। तो नल को भी लिखिए। नल नल नल नल। ये इसका लेवल",
+      "source": "caption",
+      "english_text": "Is it? This is a tree. There is a slightly bigger tree. For this also we write level order. Level Order Again each level has to be written from left to right. how to spell? From Q. Will show the code and have already shown it. There is nothing special in the level order. 1 2 3 4 5 6 and 7 8 9 10 11 and don't skip the tap. Also write about tap. What is this? This is one of its taps. This is also a tap. It also has this tap. This is also a tap. So write about tap also. Tap tap tap tap. This is its level"
+    },
+    {
+      "start_time": 2017.519,
+      "end_time": 2051.99,
+      "text": "ऑर्डर हो गया। यहां भी बड़े गौर से देखिए। जब हम इसको लेवल ऑर्डर में लिखते हैं ना या लेवल ऑर्डर में ट्रेवर्स करते हैं लेवल ऑर्डर ट्रेवर्सल के तरफ एक बार अगर कोई नल आया एक बार अगर कोई नल आया नल के पहले तो सारे अच्छे एलिमेंट आ रहे थे मतलब सारे नोड टाइप के एलिमेंट आ रहे थे जो कि नॉन नल थे एक बार अगर नल आया उसके बाद सारा नल आता है उसके बाद सारा नल उसके बाद देखिए एक भी एलिमेंट नहीं आया अगर इस कंप्लीट बाइनरी ट्री को आप कहीं से भी छेड़ेंगे इसको आप कहीं से भी छेड़ेंगे ना तो देखिए क्या होगा मान लेते हैं हम इसको यहां से छेड़ देते हैं। देखिए क्या होगा? हम इस",
+      "source": "caption",
+      "english_text": "The order is done. Look very carefully here also. When we write it in level order or traversal in level order, towards level order traversal, once if any null came, once if any null came, then all the good elements were coming before the null, that means all the node type elements were coming which were non-null. Once if the null came, then all the nulls came after that, after that all the nulls. After that, see, not even a single element came. If you tease this complete binary tree from anywhere. If you tease it from anywhere, see what will happen, let's say we tease it from here. See what will happen? we this"
+    },
+    {
+      "start_time": 2052.0,
+      "end_time": 2080.31,
+      "text": "सेवन को मिटा के यहां पे नल लिख देते हैं। यहां पे नल लिख देते हैं। देखिए क्या होगा? लिखिए लेवल ऑर्डर। 1 2 3 4 5 6 नल नल उसके बाद उसके बाद लेवल ऑर्डर खत्म थोड़ी होगा। और है ना बाकी? तो और लिखो। 8 9 10 11 नल नल यहां देखिए क्या हुआ। यहां पे नल आया। ठीक है? आ सकता है। पहली बार आ सकता है। हो सकता है ट्री खत्म हो गया हो।",
+      "source": "caption",
+      "english_text": "Delete the intake and write null here. Let's write tap here. See what will happen? Write level order. 1 2 3 4 5 6 tap tap after that the level order will end a bit. And isn't it the rest? So write more. 8 9 10 11 Tap Tap See what happened here. Here came the tap. Ok? Can come. Can come for the first time. The tree may be gone."
+    },
+    {
+      "start_time": 2080.32,
+      "end_time": 2113.589,
+      "text": "लेकिन उस नल के बाद और एलिमेंट आ गए। ये कंप्लीट बाइनरी ट्री नहीं है। ड्राइंग में भी देखिए क्या ये कंप्लीट बाइनरी ट्री है? नहीं। क्योंकि सेकंड लास्ट लेवल क्या पूरी तरीके से फिल है? नहीं है भाई। सेकंड लास्ट लेवल में एक चीज नल है। नहीं हो सकता है। सेकंड लास्ट लेवल तक सब फिल होना चाहिए। तो ये नहीं है बाइनरी ट्री। ये नहीं है कंप्लीट बाइनरी ट्री। और कहीं से छेड़ के इसको बताते हैं। और कहीं से छेड़ के इसको हम बताते हैं। देखिए इसको हम जैसा था वैसा कर देते हैं। से और यहां पे नल नल दो दे देते हैं। ठीक है? और कहीं से भी इसको छेड़ते हैं। देखिए क्या करेंगे हम?",
+      "source": "caption",
+      "english_text": "But after that tap more elements came. This is not a complete binary tree. Also see in the drawing, is this a complete binary tree? No. Because is the second last level completely filled? No brother. One thing in the second last level is a tap. Can't happen. Everything should be filled till the second last level. So this is not a binary tree. This is not a complete binary tree. And they tease and tell this from somewhere. And we tell this by teasing it from somewhere. Look, let us make it as it was. From here and here we give tap tap two. Ok? And they tease it out of nowhere. See what we will do?"
+    },
+    {
+      "start_time": 2113.599,
+      "end_time": 2148.39,
+      "text": "इसको मिटा दीजिए। इसको मिटा दीजिए। और यहां पे क्या करिए? नल लिख दीजिए। इसका लेवल ऑर्डर करिए। इसका लेवल ऑर्डर करिए। क्या आएगा? 1 2 3 4 5 6 7 8 और नल। और नल और नल। लेकिन उसके बाद नल आता नहीं रहेगा। 10 11 आ गया। 10 11 आ गया। क्या ये कंप्लीट बाइनरी ट्री है? नहीं। क्योंकि सेकंड लास्ट लेवल तक तो सब फुल्ली फिल्ड है। वेरी गुड। लेकिन लास्ट लेवल में कुछ चीजें नल है। और क्या वो नल पूरी तरीके से राइट साइड में है? नहीं। वो",
+      "source": "caption",
+      "english_text": "Delete this. Delete this. And what to do here? Write tap. Order this level. Order this level. What will come? 1 2 3 4 5 6 7 8 And tap. And tap and tap. But after that the tap will not keep coming. 10 11 is here. 10 11 is here. Is this a complete binary tree? No. Because everything is completely filled till the second last level. very good. But some things are missing in the last level. And is that tap completely on the right side? No. that"
+    },
+    {
+      "start_time": 2148.4,
+      "end_time": 2181.91,
+      "text": "मिक्स हो गया है। नोड नल नोड ऐसा नहीं हो सकता है। सारे नोड्स लेफ्ट साइड में होंगे। जितने भी आने हैं और जितने भी नल आने हैं वो सब राइट साइड में होने चाहिए। लेकिन यहां पे एक नल बीच में आके बैठ गया तो ये भी कंप्लीट बाइनरी ट्री नहीं है। इससे हमको क्या पता चला? इस ट्री पे इस ट्री पे सिंपल लेवल ऑर्डर ट्रेवर्सल करो। सिंपल लेवल ऑर्डर ट्रेवर्सल करो। सिंपल करो। पहली बार जब आपको नल मिलता है। पहली बार आपको नल मिलता है। एक बुलियन वेरिएबल से एक बुलियन वेरिएबल को जिसका नाम हम लोग",
+      "source": "caption",
+      "english_text": "It's mixed. Node null node cannot happen. All the nodes will be on the left side. All the pipes and taps should be on the right side. But here a null comes and sits in the middle, so this is also not a complete binary tree. What did we learn from this? Perform simple level order traversal on this tree. Perform simple level order traversal. Simplify it. The first time you get a tap. For the first time you get a tap. From a Boolean variable to a Boolean variable whose name we"
+    },
+    {
+      "start_time": 2181.92,
+      "end_time": 2214.63,
+      "text": "रखेंगे नल सीन। नल फाउंड या नल सीन। उसको ट्रू कर दो। अगली बार अगर कोई नल मिला अगर कोई नंबर अगली बार अगर कोई नोड मिला अगर कोई नोड जो कि नॉट नल हो और ये नल सीन ट्रू है मतलब कि ये फॉल्स कंप्लीट ट्री है मतलब कि जब पहली बार आपको यहां पे नल मिलेगा ना तो आप इस नल सीन को क्या कर देंगे ट्रू कर देंगे पहली बार मिला है ना ट्रू कर देंगे ओके पहली बार क्या जब भी नल मिले तो इसको ट्रू कर दो लेकिन अगली बार",
+      "source": "caption",
+      "english_text": "Will keep tap scene. Null Found or Null Seen. Make it true. Next time if any null is found, if any number, next time if any node is found, if any node is not null and this null scene is true, it means that this is a false complete tree, that is, when you get a null here for the first time, then what will you do with this null scene, will you make it true for the first time, no, will you make it true? Okay, for the first time, whenever you get a null, make it true, but next time."
+    },
+    {
+      "start_time": 2214.64,
+      "end_time": 2244.79,
+      "text": "जब आपको ये 10 मिलेगा तो आप चेक करेंगे कि अच्छा ये नॉन नल है। क्या मेरा नल सीन ट्रू है? मतलब कि इस 10 के पहले क्या कोई नल आ चुका है? आप बोलेंगे अगर ऐसा है तो फॉल्स रिटर्न कर दो। अगर ऐसा है तो फॉल्स रिटर्न कर दो। बस यही करना है इसमें। कैसे करना है बताते हैं। लेवल ऑर्डर का कोड भी मेमोराइज रिवाइज हो जाएगा। आइए तो आपको एक फंक्शन लिखना है। बुल इज कंप्लीट। इज कंप्लीट। इसको हम थोड़ा छोटा कर देंगे।",
+      "source": "caption",
+      "english_text": "When you get this 10, you will check that it is non-null. Is my tap scene true? Meaning, has any tap come before this 10? You will say if it is so then return false. If so, return false. This is all we have to do in this. Let us tell you how to do it. The code of level order will also be memorized and revised. Come, you have to write a function. The bull is complete. Is complete. We will make it a little smaller."
+    },
+    {
+      "start_time": 2244.8,
+      "end_time": 2277.27,
+      "text": "इसमें क्या पास होगा? नोड। रूट सबसे पहले तो बेसिक बेसिक चेक कर लो भाई कि अगर रूट नल है तो क्या करो ट्रू अब खाली नोट कंप्लीट ही होता है खाली नोट कंप्लीट ही होता है बस लेवल ऑर्डर किससे होता है q से q से यस q नोड स्टार अगर आपको ये नहीं समझ में आ रहा है तो अगेन लेवल ऑर्डर देखिए लेवल ऑर्डर बहुत प्यार से समझाया हुआ है वो देखने के बाद मक्खन जैसा समझेगा क्यों सबसे पहले इसमें रूट को पुश कर दो",
+      "source": "caption",
+      "english_text": "What will pass in this? Node. Root, first of all, check the basic basic, brother, what to do if the root is null. True, now empty note is complete, empty note is complete only, what is the level order from q to q to yes q node star, if you are not able to understand this, then look at the level order again, the level order is explained very lovingly, after seeing it, he will understand like butter, why first of all push the root in it."
+    },
+    {
+      "start_time": 2277.28,
+      "end_time": 2310.95,
+      "text": "बस उसके बाद वाइल q डॉट एम्टी अब अब लेवल ऑर्डर में आप क्या करते थे लेवल ऑर्डर जो आपको ट्रेवर्सल करना रहता था ना उसमें आप इसका साइज निकालते थे क्योंकि आपको लेवल बाय लेवल वेक्टर बना के कहीं पे डालना था इसमें वैसा कोई नीड नहीं है इसमें आपको बस ये चाहिए इस ट्री को आपको ऐसे करके इसको रिवर्स इसको ट्रेवर्स इसको ट्रेवर्स इसको ट्रेवर्स मतलब बस कहीं का कुछ स्टोर नहीं करना है एक-एक करके नोड हमको बस देखना है। लेवल वाइज लेवल वाइज देखना है। कुछ करने की जरूरत नहीं है।",
+      "source": "caption",
+      "english_text": "Just after that, while q dot empty, now what did you do in the level order, the level order which you had to traversal, you used to find out its size because you had to make a level by level vector and put it somewhere, there is no such need in this, all you need is this tree, you do it like this, reverse it, traverse this, traverse this, traverse this, meaning we do not have to store anything anywhere, we just have to see the nodes one by one. Have to see level wise. There is no need to do anything."
+    },
+    {
+      "start_time": 2310.96,
+      "end_time": 2338.71,
+      "text": "देखते जाइए। क्या करिए? सबसे पहले नोड निकालिए। नोड T = Q डॉट फ्रंट। Q का फ्रंट निकाल लो। Q के फ्रंट को पॉप कर दो। हो गया। हो गया। अब अब अगर अगर t इक्वल इक्वल टू नल T इक्वल इक्वल टू नल है तो क्या बोले थे? हमारा जो नल फाउंड है नल फाउंड इज इक्वल टू ट्रू कर दो। जितना बार मिला उतने बार कर दो। कोई दिक्कत नहीं है।",
+      "source": "caption",
+      "english_text": "Keep watching. What to do? First remove the node. Node T = Q dot front. Take out the front of Q. Pop the front of Q. Done. Done. Now now if if t is equal to null T is equal to null then what did you say? Make our statement that null found is equal to true. Do it as many times as you get. There is no problem."
+    },
+    {
+      "start_time": 2338.72,
+      "end_time": 2372.23,
+      "text": "एक नल मिला हो जाएगा। ऊपर में हम लोग क्या करेंगे यहां पे? भूल नल फाउंड इज इक्वल टू फॉल्स। शुरू में ये फॉल्स रहेगा। जैसे ही आपको पहला नल मिला ट्रू कर दिए। एल्स एल्स मतलब कि आपको एक अच्छा सर्कल मिला है। सबसे पहले अगर नल फाउंड ट्रू है। नल फाउंड ट्रू है। रिटर्न फॉल्स। इसका क्या मतलब है? कि नल फाउंड कभी ना कभी मिल चुका था। मतलब कभी ना कभी यह वाला नल आ चुका था। उसके बाद आपको 10 मिल गया। तुरंत फॉल्स ऐसा नहीं हो सकता है। ऐसा है मतलब वो कंप्लीट नहीं है। अगर",
+      "source": "caption",
+      "english_text": "One tap will be found. What will we do up here? Falsely found is equal to falsely. Initially it will be a waterfall. Turn it true as soon as you get the first tap. Else Else means you've got a nice circle. First if null found is true. Null found true. Return Falls. What does it mean? That the tap was found sometime or the other. Meaning, this tap had come sometime or the other. After that you got 10. Immediate falls may not happen. This means it is not complete. if"
+    },
+    {
+      "start_time": 2372.24,
+      "end_time": 2405.829,
+      "text": "ऐसा नहीं है। अगर ऐसा नहीं है। अब आप क्या करिए? टी के लेफ्ट को भी पुश कर दीजिए। टी के राइट को भी पुश कर दीजिए। q डॉट पुश टी का लेफ्ट को भी पुश कर दीजिए। और टी के राइट को भी पुश कर दीजिए। ठीक है। राइट को भी पुश कर दीजिए। इसको बंद करिए। इसको बंद करिए। और अगर कुछ नहीं होता है तो लास्ट में रिटर्न ट्रू कर दीजिए। ये बड़ा सिंपल सा लेवल ऑर्डर है क्योंकि इसमें कोई स्टोरेज वगैरह की चेंज बस आपको एक-एक करके देखना है। कभी भी आपको एक-एक करके नोड को देखना है ना लेवल ऑर्डर में। ऐसे देखते हैं। इसका ड्राई रन करते",
+      "source": "caption",
+      "english_text": "It is not so. If it is not so. What should you do now? Push the left side of the tee also. Push the right side of T also. q Push the dot push t to the left also. And push the right side of T also. Ok. Push right also. Turn it off. Turn it off. And if nothing happens then return true in the last. This is a very simple level order because you just have to check the changes in storage etc. one by one. Anytime you have to view the nodes one by one or in the level order. Let's see it like this. dry run it"
+    },
+    {
+      "start_time": 2405.839,
+      "end_time": 2431.43,
+      "text": "हैं। आइए इसका ड्राई रन भी कर दें। नहीं तो बोलेंगे क्या लिख दिए। आइए छोटा सा ट्री हम आपको लेते हैं। हम आपको समझाते हैं कि कंप्लीट नहीं हो तो कैसे पकड़ेगा ये? कंप्लीट नहीं हो तो कैसे पकड़ेगा? फोर। ठीक है? यह आपका ट्री है। अब इसमें नल क्या-क्या है? यह नल है। ये नल है और ये नल है। ठीक है? सबसे पहले आप क्या करते हैं? सबसे पहले हमारा नल फाउंड।",
+      "source": "caption",
+      "english_text": "Are. Let's do its dry run also. Otherwise they will say what have you written? Come let's get you, little tree. Let us explain to you that if it is not complete then how will it be caught? How will you catch it if it is not complete? Four. Ok? This is your tree. Now what all is there in it? This is a tap. This is tap and this is tap. Ok? What do you do first? First of all our tap was found."
+    },
+    {
+      "start_time": 2431.44,
+      "end_time": 2465.109,
+      "text": "नल फाउंड इज इक्वल टू फॉल्स। अब ये फॉल्स है। आप अपने q में क्या पुश करते हैं? सबसे पहले रूट। रूट का मतलब वन। वन पुश हो गया। ठीक? आइए। क्या q एम्प्टी है? बोला q एम्प्टी नहीं है। तो क्या करेंगे? एक निकालेंगे। कहां से? ये है फ्रंट। और यह है रियर या तो एंड t इक्वल टू क्या हो गया? वन और फ्रंट को पॉप कर दिए। तो q खत्म। अच्छा सबसे पहले क्या टी नल है? टी नल नहीं है। टी नल नहीं है। तो आपका नल फाउंड अभी भी इसको हम यहां पे लिख देते हैं। अरे क्या हो गया इसको?",
+      "source": "caption",
+      "english_text": "Null found is equal to false. Now this is the falls. What do you push into your q? First the root. Root means forest. One push done. Correct? Come. Is q empty? Said q is not empty. So what to do? Will take out one. From where? This is the front. And this is rear or and t is equal to what? Popped one and front. So q is over. Well first of all what is a t tap? T is not a tap. T is not a tap. So if your tap is found, we still write it here. Hey, what happened to him?"
+    },
+    {
+      "start_time": 2467.27,
+      "end_time": 2492.71,
+      "text": "पेंसिल का कुछ हो जाता है। टी वन आया। ओके। तो अब क्या करना है? क्या टी नल है? नहीं। टी नल नहीं है। तो यहां पे अपना हम नल फाउंड को अभी भी फॉल्स ही रहने देंगे। कुछ नहीं होगा इसमें। ये भी फॉल्स है। अच्छा। t वन है। क्या करते थे? अगर नल ये हो गया। टी के लेफ्ट और टी को राइट को तुरंत पुश कर देते थे। क्योंकि ऐसे ही लेवल ऑर्डर काम करता है। जब आप वन के दोनों बच्चों को पुश कर देंगे ना ऑटोमेटिकली ऑटोमेटिकली वन के बाद टू थ्री का नंबर आएगा। टू थ्री का नंबर आएगा। क्योंकि पहले आप लेफ्ट को पुश कर रहे हैं और फिर राइट को पुश कर रहे हैं।",
+      "source": "caption",
+      "english_text": "Something happens to the pencil. T came one. Ok. So what to do now? Is t a tap? No. T is not a tap. So here we will still leave our null found as false. Nothing will happen in this. This is also a fall. Good. t is forest. What did you do? If tap it's done. Used to immediately push T to left and T to right. Because that's how the level order works. When you push both the children of one, then automatically one will be followed by two and three. Number two or three will come. Because first you are pushing left and then pushing right."
+    },
+    {
+      "start_time": 2492.72,
+      "end_time": 2527.51,
+      "text": "ऑटोमेटिकली वन के बाद टू थ्री का नंबर आएगा। हम क्या किए? टू को थ्री को पुश कर दिए। ये वाला लूप चलता रहेगा। क्यू एम्प्टी नहीं है। क्या होगा टी? टी अब टू हो गया। डी अब क्या हो गया? टू हो गया। ठीक है? क्या ये नल है? नल नहीं है। नल फाउंड अभी भी आपका फॉल्स है। ओके? तो क्या करना है? टू के लेफ्ट चाइल्ड और राइट चाइल्ड दोनों को पुश कर दो। देखिए लेवल ऑर्डर ट्रेवर्सल में हम लोग नल वाले को पुश नहीं करते थे। याद कीजिएगा। टी का लेफ्ट अगर नल नहीं होता तो उसको पुश करते थे। लेकिन यहां पे इरेस्पेक्टिव पुश कर दो। तभी तो पता चलेगा कि नल है। अगर आप नल को पुश ही नहीं करेंगे। कैसे पता चलेगा कि",
+      "source": "caption",
+      "english_text": "Two or three will automatically come after one. What did we do? Pushed two to three. This loop will continue. Q is not empty. What will happen t? T now becomes two. D. What happened now? Two is done. Ok? Is this a tap? There is no tap. Null Found is still your Falls. Ok? So what to do? Push both the left child and right child of two. See, we did not push the tap in level order traversal. Please remember. If the left side of the tee was not taped, we would push it. But push the objection here. Only then will you know that there is a tap. If you don't push the tap. How to know that"
+    },
+    {
+      "start_time": 2527.52,
+      "end_time": 2560.55,
+      "text": "नल है। इरेस्पेक्टिव क्या है? पुश कर दो। तो टू का लेफ्ट साइड नल पुश हो गया और फोर ये भी पुश हो गया। ठीक है? और टू हमारा पॉप हो गया है। फिर से चलाइए। थ्री पे आ जाइए। t इज़ इक्वल टू क्या हो गया? थ्री। क्या थ्री नल है? थ्री नल नहीं है। नल फाउंड अभी भी फॉल्स है। क्या करना है? थ्री के लेफ्ट और राइट दोनों बच्चों को पुश कर दो। नल नल। और थ्री को पॉप कर दो। देखिए ये होने से क्या हुआ? ये होने से क्या हुआ? आप जब टू और थ्री को देख चुके हैं ना तो अगला ऑटोमेटिकली क्यों में तैयार हो गया है? नल फॉर नल नल नल फॉर नल",
+      "source": "caption",
+      "english_text": "There is a tap. What is irrespective? Push it. So the left side tap of two got pushed and four also got pushed. Ok? And our two have been popped. Play again. Come on three. t is equal to what? Three. What is three taps? There is no three taps. Null Found is still a waterfall. What is the plan? Push both the left and right children of three. Tap tap. And pop the three. See what happened because of this? What happened because of this? When you have seen two and three, why is the next one automatically ready? Null for Null Null for Null"
+    },
+    {
+      "start_time": 2560.56,
+      "end_time": 2594.71,
+      "text": "नल ऑटोमेटिकली जब आप ऐसे देखेंगे ना तो आप उसी तरीके से देख रहे हैं लेवल बाय लेवल लेफ्ट टू राइट देख रहे हैं चलिए अगला टी अगला टी क्या आएगा अगला टी नल आएगा क्योंकि हम लोग पुश किए थे टी नल आया आइए यहां आ जाइए क्या टी नल है हां टी नल है नल फाउंड ट्रू हो गया ये पहला नल है ये पहला नल है ये पहला नल है मतलब कि अगर इस ट्री को अब कंप्लीट होना है ना सारे नल होने पड़ेंगे अब सारे नल होने पड़ेंगे लेकिन ऐसा नहीं है क्यों नहीं है क्योंकि क्योंकि आपका अगला टी क्या आ जाएगा? आपका अगला टी क्या आ जाएगा? फोर। यहां पे हो",
+      "source": "caption",
+      "english_text": "When you see null automatically, then you are seeing in the same way, level by level, left to right. Let's see the next tee, what will come next tee, next tee, null will come because we pushed, tee null came, come here, what tee is null, yes tee is null, null is found true, this is the first null, this is the first null, this is the first null, which means that if this tree has to be completed now, then all the nulls will have to be present. There will be taps but that's not the case because why not because what will your next tee come? What will be your next tee? Four. be here"
+    },
+    {
+      "start_time": 2594.72,
+      "end_time": 2622.309,
+      "text": "गया गड़बड़। क्यों हो गया गड़बड़? क्या टी नल है? टी नल नहीं है। लेकिन जब आप यहां पे आए जब आप यहां पे आए अगर नल फाउंड ट्रू है। क्या नल फाउंड ट्रू है? हां जी नल फाउंड ट्रू है। क्या बोलेगा? रिटर्न फॉल्स। क्यों रिटर्न फॉल्स? क्योंकि सेकंड लास्ट लेवल तक दिक्कत नहीं हुई। पूरा भरा था। लेकिन लास्ट लेवल इस तरीके से क्या सारा नल राइट पे है? नहीं। सारा नॉन राइट नहीं है। मिक्स मैच हो गया है। मिक्स मैच अलाउड नहीं होता है। क्या रिटर्न करेगा?",
+      "source": "caption",
+      "english_text": "Gone messed up. Why did it go wrong? Is t a tap? T is not a tap. But when you come here, when you come here, if null is found true. Is null found true? Yes, null found is true. What will you say? Return Falls. Why returns false? Because there was no problem till the second last level. It was completely full. But at the last level, is everything right in this way? No. Sara is not right. Mix match is done. Mix match is not allowed. What will return?"
+    },
+    {
+      "start_time": 2622.319,
+      "end_time": 2637.2,
+      "text": "सीधा फॉल्स। सीधा फॉल्स। ऐसे ये काम करेगा। ऐसे यह काम करेगा। तो ये दोनों बहुत दिलचस्प क्वेश्चन है। बहुत बेसिक फंडामेंटल क्वेश्चन है। दोनों को कोड कीजिए और मिलते हैं अगले लेक्चर में। चलिए।",
+      "source": "caption",
+      "english_text": "Straight Falls. Straight Falls. This is how it will work. This is how it will work. So both of these are very interesting questions. This is a very basic fundamental question. Code both and see you in the next lecture. Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

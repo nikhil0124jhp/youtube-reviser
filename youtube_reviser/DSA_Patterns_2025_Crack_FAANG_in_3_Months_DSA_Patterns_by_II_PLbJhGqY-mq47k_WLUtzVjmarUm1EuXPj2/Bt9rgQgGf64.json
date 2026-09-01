@@ -1,0 +1,506 @@
+{
+  "video_id": "Bt9rgQgGf64",
+  "video_title": "DSA PATTERNS Episode 24 | Kadane’s Algorithm Pattern: Quick Revision",
+  "video_number": 26,
+  "chunks": [
+    {
+      "start_time": 2.79,
+      "end_time": 37.35,
+      "text": "वेलकम टू द चैनल। आज केन्स का पूरा रिवीज़न खत्म करके पैटर्न को आज क्या करेंगे? समाप्त। चलिए। शीट वीट सब आपको डिस्क्रिप्शन में है वो सब अच्छी बातें हैं। सबसे पहले आईडेंटिफाई कैसे किया जाता है? आईडेंटिफाई कैसे करना है कि किसका क्वेश्चन है? कैडन का क्वेश्चन है। सबसे पहली बात एरे का क्वेश्चन होगा। ऐरे का ही होगा। स्ट्रिंग का भी नहीं होगा। क्योंकि स्ट्रिंग में कैडेंस बेसिकली होता है। केडिस सम ऑफ़ सब एरे होता है। है ना? सम ऑफ सब एरे या तो प्रोडक्ट ऑफ सब एरे ऐसा कुछ करके होता है। स्ट्रिंग में ये पॉसिबल नहीं होता है कि आप सम कैसे निकालेंगे। है ना? सबसे पहली बात है कि एरे का ही",
+      "source": "caption",
+      "english_text": "Welcome to the channel. What will you do with the pattern today after finishing the complete revision of Keynes? End. Let go. Sheet Wheat is all good in the description. How is identification done in the first place? How to identify whose question it is? Caden has a question. The first thing will be the question of array. Must be of array only. Neither will the string. Because strings basically have cadence. Caddis is the sum of all arrays. Isn't it? Sum of sub arrays or product of sub arrays is done by doing something like this. It is not possible in a string how you would find the sum. Isn't it? The first thing is that the array itself"
+    },
+    {
+      "start_time": 37.36,
+      "end_time": 70.55,
+      "text": "क्वेश्चन होगा। ना स्ट्रिंग का होगा ना लिंक लिस्ट का होगा। ठीक है? उसके बाद आपको कुछ मैक्सिमम या मिनिमम निकालना होगा। ठीक है? प्लस प्लस क्या? सम निकालना पड़ सकता है। प्रोडक्ट निकालना पड़ सकता है। अह सम प्रोडक्ट के साथ। हां ठीक है। सम और प्रोडक्ट फ्रीक्वेंसी कभी-कभी निकालनी पड़ सकती है। लेकिन बेसिकली यही दोनों होंगे। क्या होंगे? सम और प्रोडक्ट और और प्लस कुछ आपको कंडीशन दी रहेगी। कुछ आपको क्या रहेगा? कंडीशन दिया सकता है। ये ऑप्शनल है ना? ये ऑप्शनल",
+      "source": "caption",
+      "english_text": "There will be question. Neither will it be of string nor of link list. Ok? After that you have to find some maximum or minimum. Ok? Plus plus what? It may be necessary to find out the sum. Product may have to be removed. Ah with some product. Yes ok. Sum and product frequencies may sometimes have to be calculated. But basically it will be both. What will happen? Sum and product and plus some condition will be given to you. How about something for you? Can give condition. This is optional right? This is optional"
+    },
+    {
+      "start_time": 70.56,
+      "end_time": 105.51,
+      "text": "है। मतलब जैसे कि या तो आपको मैक्सिमम सम निकालना हो। और उसमें एक कंडीशन जोड़ दिया जाए कि आप एक डिलीट कर सकते हैं या तो आप दो डिलीट कर सकते हैं। या तो एक कंडीशन जोड़ दिया जाए कि आपका एरे कुछ सर्कुलर टाइप का है। या तो एक कंडीशन जोड़ दिया जाए कि अ ये तो निकालना है लेकिन एब्सोल्यूट निकालना है। तो कोई भी कंडीशन जैसे कि एब्सोल्यूट डिलीट करो। मतलब आपके पास कोई ऑप्शन दे दे। आपके पास हाथ में एक शक्ति दे दे या तो आपको लिमिट कर दे। कुछ ऑप्शन दे के लिमिट कर दे कि एरे ऐसा है या तो आपको काम ऐसे करना है या तो ये काम नहीं करके ये काम करना है। छोटा सा छोटा सा कंडीशन। है ना? और ये सब चीजें कहां पे? सब एरे में।",
+      "source": "caption",
+      "english_text": "Is. Meaning as if you either have to find the maximum sum. And a condition should be added to it that you can delete one or you can delete two. Either a condition can be added that your array is of some circular type. Either a condition should be added that this has to be removed but it has to be removed absolutely. So delete any condition like absolute. Meaning, give you some option. Either give you a power in your hand or limit you. Give some options and limit them by saying that either you have to do the work like this or you have to do this work by not doing this. Just a small condition. Isn't it? And where are all these things? All in array."
+    },
+    {
+      "start_time": 105.52,
+      "end_time": 139.99,
+      "text": "किसमें? सब एरे में। सब सीक्वेंस में नहीं। सब सीक्वेंस में नहीं। सब एरे में। सब एरे में। ठीक है? चलिए ये होता है किसका फ्लो चार्ट? कैडेंस का फ्लो चार्ट। ये इसमें कैडेंस लगेगा ही लगेगा। अच्छा। अब बात करते हैं कि स्टेप्स क्या-क्या हैं? स्टेप्स क्या-क्या हैं? किडेंस को कभी भी रटना नहीं है। किडेंस काम कैसे करता है? आप कभी भी किसी इंडेक्स आई पे पहुंचते हैं किसी एरे के तो आपके पास पीछे तक पीछे मतलब यहां पे खत्म होने वाला यहां",
+      "source": "caption",
+      "english_text": "In what? All in array. Not all in sequence. Not all in sequence. All in array. All in array. Ok? Come on, whose flow chart is this? Flow chart of cadence. There will definitely be a cadence to it. Good. Now let's talk about what are the steps? What are the steps? Kiddance never has to be cram. How does Kidence work? Anytime you reach an index point in an array, you have all the way back, meaning it ends here."
+    },
+    {
+      "start_time": 140.0,
+      "end_time": 174.07,
+      "text": "पे खत्म होने वाला मतलब i - 1 पे i - 1 इंडेक्स पे खत्म होने वाला बेस्ट रिजल्ट होना चाहिए क्या होना चाहिए बेस्ट रिजल्ट बेस्ट रिजल्ट का क्या मतलब होता है क्वेश्चन बाय क्वेश्चन डिपेंड करता है ये मिनिमम हो सकता है मैक्सिमम हो सकता है मिनिमम मैक्सिमम दोनों हो सकता है कुछ कंडीशन है तो उसको अप्लाई करके हो सकता है। और क्या? सम। सम या तो प्रोडक्ट। मतलब जो भी आपका क्वेश्चन आपसे पूछ रहा है, अगर आपका क्वेश्चन सम पूछ रहा है, तो ऑब्वियसली आपके पास सम होगा। अगर आपसे प्रोडक्ट पूछ रहा है, तो ऑब्वियसली आपके पास प्रोडक्ट होगा। ठीक है? ये आपके पास होना चाहिए। अब मोटे-मोटे तौर पे आपके पास",
+      "source": "caption",
+      "english_text": "Meaning ending in pe i - 1 Index ending in pe What should be the best result What should be the best result What is the meaning of best result It depends question by question It can be minimum, it can be maximum, minimum can be maximum, it can be both, if there is some condition then it can be done by applying it. What else? Even. Even or product. Meaning whatever your question is asking you, if your question is asking even, then obviously you will have even. If someone is asking you for the product, then obviously you have the product. Ok? You must have this. Now you roughly have"
+    },
+    {
+      "start_time": 174.08,
+      "end_time": 208.229,
+      "text": "दो ऑप्शन रहते हैं किस पे? i इंडेक्स पे। या तो, या तो, आप जो पुराना बेस्ट है, आपका जो पुराना बेस्ट है, मतलब जो i - 1 तक बेस्ट है, उसके साथ जुड़ जाइए। उसके साथ क्या कीजिए? जुड़ जाइए। ठीक है? तो ये भी आपका हो गया कि i पे खत्म होने वाला। याद रखिए हमेशा आपको i पे खत्म होने वाला बनाना है। i पे खत्म होने वाला बेस्ट रिजल्ट हमेशा आपको बनाना है। इसीलिए i - 1 का भी जो बेस्ट रिजल्ट था ना जिसको हम पुराना बेस्ट रिजल्ट बोल रहे हैं। वो भी i - 1 पे खत्म होने वाला था। मतलब उसके लास्ट में i - 1 आएगा। आगे चाहे कुछ भी आए। और आपके पास एक ऑप्शन रहता है कि आप सिर्फ एरे ऑफ आई बनाइए। मतलब एक ही सब एरे",
+      "source": "caption",
+      "english_text": "Which are the two options? i index pe. Either, either, you connect with the old best, your old best, meaning the best till i - 1. What to do with him? Get involved. Ok? So this is also yours that ends in i. Remember you always have to make it end in i. You always have to create the best result ending in i. That is why the best result of i - 1 is also called the old best result. That too was going to end at i - 1. Meaning i - 1 will come in its last place. No matter what comes next. And you have one option to just make an array of eyes. means everything is the same"
+    },
+    {
+      "start_time": 208.239,
+      "end_time": 237.03,
+      "text": "बनाइए जिसमें एरे ऑफ i हो। तो टेक्निकली ये भी एरे ऑफ आई पे खत्म हो रहा है वो भी हो रहा था। तो आपके पास मोटा-मोटा ये दो ऑप्शन रहते हैं। आप अपडेट कीजिए मतलब फिर से आई वाला बनाइए और अपने रिजल्ट को अपडेट कर दीजिए। रिजल्ट को जो भी बेस्ट एंडिंग है आपका उससे अपडेट कर दीजिए। डिपेंडिंग ऑन क्वेश्चन। मोटा-मोटा यही होता है। इसमें हम लोग क्वेश्चन कितना सारा देखे थे? पहला क्वेश्चन तो स्टैंडर्ड क्या देखे थे? मैक्स समवे एल। ठीक है?",
+      "source": "caption",
+      "english_text": "Create which contains array of i. So technically this is also ending on the array of I, that was also happening. So you broadly have these two options. You update means make the same again and update your result. Update the result with whatever is your best ending. Depending on question. This is what rough and tough is all about. How many questions did we see in this? First question, what was the standard seen? Max Someway L. Ok?"
+    },
+    {
+      "start_time": 237.04,
+      "end_time": 267.43,
+      "text": "और तो सबसे पहला काम इसमें हम लोग क्या करते हैं कि i = 0 के लिए अपना बेस्ट एंडिंग डिफाइन कर लीजिए। i = 0 के लिए अपना बेस्ट एंडिंग डिफाइन कर लीजिए। बेस्ट एंडिंग को हिंदी में क्या बोलते हैं? i = 0 के लिए अगर हम लोग बात करें तो I = 0 पे खत्म होने वाले ये बहुतेंट टर्म है। खत्म होने वाले खत्म होने वाले सारे सब एरेज सारे सब एरेज सारे सब एरेस का बेस्ट आंसर बेस्ट आंसर।",
+      "source": "caption",
+      "english_text": "And so the first thing we do is define our best ending for i = 0. Define your best ending for i = 0. What is best ending called in Hindi? If we talk about i = 0, then there are many terms ending at i = 0. Ending Ending All Sub Arrays All Sub Arrays All Sub Arrays Best Answer Best Answer."
+    },
+    {
+      "start_time": 267.44,
+      "end_time": 299.83,
+      "text": "इससे आपको करना है। कभी भी बेस्ट रिजल्ट का आपको मतलब ये याद रहना चाहिए कि i पे या i = 0 पे या तो जिस भी i पे आप जा रहे हैं शुरू में तो i = 0 इसीलिए हम लिखे हैं। जिस भी आप इंडेक्स पे हैं उस इंडेक्स पे खत्म होने वाले सारे सब एरे लिख लीजिए। उनका बेस्ट रिजल्ट आपके बेस्ट रिजल्ट में बेस्ट एंडिंग में स्टोर होना चाहिए। यही होता है। तो अब देखिए अगर आपके पास ऐसा एरे था कि 1 - 2 0 और 3 0 1 2 3 ऑब्वियस सी बात है कि i = 0 पे खत्म होने वाले कितने सब एरे पॉसिबल बस एक सब एरे पॉसिबल होता है जो कि खुद एरे ऑफ़ ज़ीरो होता है।",
+      "source": "caption",
+      "english_text": "You have to do this. Whenever you mean the best result, you should remember that at i or i = 0, whichever i you are going for, initially i = 0, that is why we have written. Whatever index you are at, write down all the sub-arrays ending at that index. Their best result should be stored in the best ending in your best result. Same thing happens. So now see if you had such an array that 1 - 2 0 and 3 0 1 2 3 Obviously, how many sub arrays are possible ending at i = 0. There is only one sub array possible which is itself an array of zeros."
+    },
+    {
+      "start_time": 299.84,
+      "end_time": 333.35,
+      "text": "है ना? एम्प्टी सब एरे अलाउड नहीं है। एक ही पॉसिबल है। इसीलिए इसीलिए आप देखते होंगे कि मेजोरिटी ऑफ़ केसेस में हम अपने बेस्ट एंडिंग को क्या कर देते हैं? और याद नहीं करना है। क्योंकि एक ही सब एरे पॉसिबल है तो उसका सम क्या होगा? एरे ऑफ़ जीरो ही होगा। एरे ऑफ़ ज़ीरो लिख देते हैं। क्यों? क्योंकि जीरो पे खत्म होने वाले कितने सब एरे पॉसिबल हैं? एक ही सब एरे पॉसिबल है। इस सब एरे का सम क्या है? एरे ऑफ़ ज़ीरो ही है। क्योंकि एक ही है ना भाई? एक ही है। उसी को हम लोग बेस्ट एंडिंग में लिख लेते थे और अभी के लिए अगर आपका एरे में एक ही एलिमेंट होता तो आपका रिजल्ट भी यही होता। आपका रिजल्ट भी यही होता क्योंकि एम्प्टी अलाउड नहीं है। एम्प्टी",
+      "source": "caption",
+      "english_text": "isn't it? Empty sub array is not allowed. There is only one possible. That's why you must be seeing that in the majority of cases, we give up our best ending. And don't remember. Because only one sub array is possible then what will be its sum? There will be an array of zero only. Let's write array of zeros. Why? Because how many sub-arrays ending in zero are possible? Only one sub array is possible. What is the sum of all this array? It is an array of zeros. Because there is only one, right brother? There is only one. We used to write the same in the best ending and for now, if there was only one element in your array, your result would also be the same. Your result would have been the same because empty is not allowed. empty"
+    },
+    {
+      "start_time": 333.36,
+      "end_time": 367.59,
+      "text": "अलाउड नहीं होता है। एम्प्टी अलाउड नहीं होता है। आपके एरे में एक ही एलिमेंट है तो मैक्सिमम सम सब एरे क्या होगा भाई? एक ही सब एरे पॉसिबल है। इसका सम ही मैक्सिमम होगा। तो रिजल्ट भी ऐसे लिख लेते थे। ठीक बात है। चलिए। सबसे पहले क्या हो गया? बेस्ट रिजल्ट डिफाइन हो गया। बेस्ट एंडिंग डिफाइन हो गया। i = 0 के लिए रिजल्ट भी उसी हिसाब से हम लोग लिख दिए। अब हम लोग क्या करते i = 1 से कहां तक लूप चलाते थे? i = n तक। ठीक है? सबसे पहला काम क्या करते थे कि जो पुराना है जो पुराना बेस्ट है पुराना बेस्ट है इसको कहीं पे स्टोर करा लीजिए समझने के लिए। नहीं भी करेंगे तो ठीक है लेकिन कर लेना चाहिए। इसको",
+      "source": "caption",
+      "english_text": "Is not allowed. Empty is not allowed. If there is only one element in your array then what will be the maximum sum sub array brother? Only one sub array is possible. Its sum will be maximum. So the results were also written like this. That's right. Let go. What happened first? Best result has been defined. Best ending defined. We also wrote the result for i = 0 in the same manner. Now what do we do? Where do we run the loop from i = 1? Till i = n. Ok? The first thing we used to do was to store it somewhere to understand what is old, what is old is best, what is old is best. It's okay if you don't do it, but you should do it. to this"
+    },
+    {
+      "start_time": 367.6,
+      "end_time": 400.309,
+      "text": "बेस्ट एंडिंग स्टोर करा लीजिए। तो ये पुराना क्या बोलता है आपको? ये पुराना क्या होता है? i - 1 पे खत्म होने वाला बेस था। ये i - 1 पे खत्म होने वाला बेस था। अब i पे खत्म होने वाला बेस निकालिए। तो बेस्ट एंडिंग बेस्ट एंडिंग इक्व हां एक और बात अब जब क्वेश्चन मैक्सिमम सम का है तो आपका बेस्ट का मतलब क्या होना चाहिए? आपका बेस्ट सम कंटेन करना चाहिए जो मैक्सिमम हो जो क्या हो मैक्सिमम हो तो क्या करेंगे मैक्सिमम क्या दो चॉइस बताए थे जो भी आपका पुराना बेस्ट है जो भी आपका पुराना बेस्ट है मतलब i - 1 तक का जो",
+      "source": "caption",
+      "english_text": "Store the best ending. So what does this old thing say to you? What is this old? i - was a base ending in 1. This was a base ending in i - 1. Now find the base ending in i. So best ending best ending equ yes one more thing now when the question is about maximum even then what should be your meaning of best? Your best sum should be contained, whatever is the maximum, what is the maximum, what to do if it is maximum, what two choices were given, whatever is your old best, whatever is your old best, meaning whatever is up to i - 1."
+    },
+    {
+      "start_time": 400.319,
+      "end_time": 433.589,
+      "text": "बेस्ट है या तो उसमें जुड़ जाइए और एक सब एरे बना लीजिए या तो ये हो सकता है क्योंकि आपको बेस्ट बनना है तो आपको पता है कि पुराना में कौन बेस्ट है आप उसी के साथ जुड़ेंगे फॉर एग्जांपल आप एक नेता है आप एक नेता है जो निर्दलीय लड़ता है। आपके पास बहुत सारी पार्टी का चॉइस है। बीजेपी है, कांग्रेस है, आम आदमी पार्टी ऐसा ऐसा करके बहुत पार्टी है। आपको अब किसी पार्टी में शामिल होना है तो आप किस पार्टी में शामिल होंगे? जो पार्टी सबसे स्ट्रोंग है अभी तक मान लीजिए आपको पता चलता है कि बीजेपी अभी तक सबसे स्ट्रांग है तो आप बीजेपी में जुड़ जाएंगे। आप क्या करेंगे बीजेपी और प्लस हम आप ऐसा कर लेंगे। ऐसा",
+      "source": "caption",
+      "english_text": "It is best to either join it and make a sub-array, either this can be done because you want to be the best, then you know who is the best in the past, you will join with him for example, you are a leader, you are a leader who fights as an independent. You have a lot of party options. There is BJP, Congress, Aam Aadmi Party, there are many parties doing this and that. Now if you have to attend a party, which party will you attend? The party which is the strongest till now. Suppose you come to know that BJP is the strongest till now, then you will join BJP. What will you do BJP and plus we you will do it. like this"
+    },
+    {
+      "start_time": 433.599,
+      "end_time": 463.909,
+      "text": "कर लेंगे। आपको अगर लगता है कि कोई पार्टी अच्छी नहीं है, कोई पार्टी स्ट्रांग नहीं लग रही है हमको। हम ही सबसे स्ट्रांग हैं। मतलब हमको सबसे ज्यादा आप हो सकता है कि आपको पता चले कि बीजेपी को 50,000 वोट आता है। इसको दो वोट आता है, इसको 10 वोट आता है। और हमको अकेले 1 लाख वोट आता है। तो हम क्यों मिलेंगे बीजेपी से? तो आप खुद बन जाइए। खुद बन जाइए। यही दो ऑप्शन होता है। यही यही पूरा लॉजिक यही है। पूरा लॉजिक यही है। आपको अगर मिलना है किसी पार्टी में तो आप सबसे स्ट्रांग पार्टी से मिलिए। पुराने वाले। या तो आपको अलग लड़ना है तो आप अलग लड़िए। तो बस ये तो आप पार्टी से मिल गए। ये आप क्या किए? पुराने बेस में मतलब आप क्या किए? आप पार्टी से मिल गए।",
+      "source": "caption",
+      "english_text": "Will do it. If you feel that no party is good, no party seems strong to us. We are the strongest. Meaning, most of all you may know that BJP gets 50,000 votes. This one gets two votes, this one gets 10 votes. And we alone get 1 lakh votes. So why should we meet BJP? So be yourself. Be yourself. These are the two options. This is the whole logic. This is the whole logic. If you want to meet in a party, then meet in the strongest party. The old ones. Either you want to fight separately, then you fight separately. So that's it, you met the party. What did you do? I mean, what did you do in the old base? You joined the party."
+    },
+    {
+      "start_time": 463.919,
+      "end_time": 497.35,
+      "text": "वेरी गुड। या तो आप अकेले लड़ दिए। और इसका मैक्स आपका बेस्ट एंडिंग हो जाएगा। इसका मतलब क्या है? एट i एंडिंग एट i पुराना बेस्ट क्या था? i - 1 नया वाला एट i हो गया। वेरी गुड। अब रिजल्ट इज़ इक्वल टू क्योंकि हम लोग मैक्स कर रहे हैं। तो मैक्स अभी तक का जो भी रिजल्ट है और बेस्ट एंडिंग बेस्ट एंडिंग और लूप बंद कर दिए थे। जब आप ऐसा हर आई के लिए कर लेंगे। जब आप ऐसा हर आई के लिए कर लेंगे तो आपको रिजल्ट मिल जाएगा। रिटर्न रिजल्ट बस ये इसका टेंप्लेट होता है। अब इसमें आपको चेंज क्या करना पड़ता है? आपको",
+      "source": "caption",
+      "english_text": "Very good. Either you fought alone. And its maximum will be your best ending. What does it mean? At i ending at i What was the old best? i - 1 The new one is done at i. very good. Now the result is equal to two because we are doing max. So whatever is the result of Max till now and the best ending and the loop was closed. After you have done this for each i. When you do this for each eye, you will get the result. The return result is just its template. Now what changes do you have to make in this? to you"
+    },
+    {
+      "start_time": 497.36,
+      "end_time": 524.63,
+      "text": "चेंज करना पड़ता है कि आप बेस्ट एंडिंग को डिफाइन कैसे करते हैं? बेस्ट एंडिंग के बारे में सोचते कैसे हैं? और यहां पे अपडेट कैसे करते हैं? ये वाला अपडेशन कैसे करते हैं? बाकी सेम रहेगा। सेम टेंप्लेट, सेम ब्लूप्रिंट। चलिए। मिनिमम समय क्या था? इसका जस्ट उल्टा कर लिए थे। क्या किए थे? इसका जस्ट उल्टा कर लिए थे। इसका जस्ट उल्टा कर लिए थे। हर चीज़ सेम थी। जो बेस्ट एंडिंग यहां पे मैक्स था ना इसको काट के मीन कर लिए थे। रिजल्ट को काट के मीन कर लिए थे। मिनिमम सम का क्वेश्चन हो गया था।",
+      "source": "caption",
+      "english_text": "Have to change how you define the best ending? How do you think about the best ending? And how to update here? How to do this update? The remaining beans will remain. Same template, same blueprint. Let go. What was the minimum time? It was done just the opposite. What did you do? It was done just the opposite. It was done just the opposite. Everything was the same. The best ending here was max, but it was cut down to mean. The results were calculated and averaged. There was a question of minimum amount."
+    },
+    {
+      "start_time": 524.64,
+      "end_time": 557.59,
+      "text": "सही बात है। आइए मैक्सिमम प्रोडक्ट में क्या किए थे? यहां आपको पता चलेगा कि ये ये पैटर्न पढ़ने का असली मतलब क्या है? क्योंकि अगर आप केन से पढ़ेंगे तो फिर आपको कोई बोलेगा कि एक काम करो इसको ज़ीरो से स्प्लिट कर दो और नेगेटिव को अलग हैंडल कर लो। अरे ऐसा कुछ करने की जरूरत नहीं है भाई। सब है रे। हम आपको क्या बोले कि जब भी आप जब भी कोई i पे रहता है तो वो पीछे वाले i - 1 तक का बेस्ट खोजता है। अपने लिए अपने लिए जैसे आप जो थे आप पुरानी पार्टीज में आप पुरानी पार्टी में बीजेपी, कांग्रेस और आप में",
+      "source": "caption",
+      "english_text": "That is correct. Let's see what was done in Maximum Product? Here you will know what is the real meaning of reading these patterns? Because if you study from the can then someone will tell you to do one thing, divide it by zero and handle the negative separately. Hey brother, there is no need to do anything like this. Everything is there. What can we tell you that whenever you stay at any i, it searches for the best one till the next i - 1. For yourself, as you were in the old parties, you in the old party, BJP, Congress and AAP."
+    },
+    {
+      "start_time": 557.6,
+      "end_time": 591.829,
+      "text": "अपने लिए बेस्ट ढूंढते थे। हो सकता है आपके लिए बेस्ट कुछ और हो और मेरे लिए बेस्ट कुछ और हो। इसका कहने का क्या मतलब है? हो सकता है कि आपको लगे कि बीजेपी अच्छी है। लेकिन हमको लगे कि आम आदमी पार्टी अच्छी है। अलग-अलग आदमी के लिए अलग-अलग बेस्ट हो सकता है। यही इस क्वेश्चन का कॉन्सेप्ट था। क्यों? क्योंकि अगर एरे ऑफ़ आई अगर एरे ऑफ़ आई पॉजिटिव रहेगा। अगर एरे ऑफ़ आई पॉजिटिव रहेगा फॉर एग्जांपल ये फोर रहता है। इसको इसको यहां पे कौन सा नंबर चाहिए? यहां पे इसको बड़ा से बड़ा नंबर चाहिए होगा। बड़ा से बड़ा मतलब मैक्स बड़ा से बड़ा नंबर चाहिए होगा। तभी तो ये जाके कुछ अपने जीवन में बड़ा कर पाएगा।",
+      "source": "caption",
+      "english_text": "Used to look for the best for himself. It is possible that for you the best may be something else and for me the best may be something else. What does it mean to say this? You may think that BJP is good. But we feel that Aam Aadmi Party is good. It may be best for different people. This was the concept of this question. Why? Because if array of i if array of i will remain positive. If the array of I remains positive, for example it remains four. Which number does he want here? Here it would require the biggest number. Biggest means the biggest max number required. Only then will he be able to do something big in his life."
+    },
+    {
+      "start_time": 591.839,
+      "end_time": 625.75,
+      "text": "लेकिन अगर एरे ऑफ़ फाइव नेगेटिव था, तो हम लोग क्या देखे थे? कि -4 को -4 को छोटा से छोटा नंबर चाहिए। छोटा से छोटा। नेगेटिव मिल जाए सबसे अच्छी बात है। छोटा से छोटा नंबर चाहिए था तभी ये अपने जीवन में कुछ बेस्ट कर पाएगा। जैसे कि फोर को 10 चाहिए तो ये 40 बन जाएगा। लेकिन -4 को अगर -10 मिल जाएगा तब ये 40 बन पाएगा। -4 को अगर आप 10 दे दीजिएगा तो ये -40 बन जाएगा और गंदा हो जाएगा अपने आप से। है ना? तो इससे हम लोग को पता चला था कि एरे ऑफ़ आई को बेस तो चाहिए। पीछे का बेस तो चाहिए। लेकिन पीछे का कैसा बेस चाहिए? ये डिपेंड करता",
+      "source": "caption",
+      "english_text": "But if the array of five was negative, what did we see? That -4 needs to be the smallest number possible. The smallest. The best thing is to get a negative. The smallest number was required only then he would be able to do something best in his life. For example, if four is required to be 10 then it will become 40. But if -4 gets -10 then it will become 40. If you give 10 to -4, it will become -40 and will become dirty on its own. Isn't it? So from this we came to know that Array of I needs a base. A rear base is needed. But what kind of rear base do you want? it depends"
+    },
+    {
+      "start_time": 625.76,
+      "end_time": 657.91,
+      "text": "है। ये डिपेंड करता है किस पे? ये पॉजिटिव है कि नेगेटिव है। इसमें हम लोग क्या किए थे? जो हम लोग बेस्ट डिफाइन किए थे अपना तो हम लोग दो बेस्ट डिफाइन कर लिए थे। क्या बेस्ट मीन और बेस्ट मैक्स और दोनों को एरे ऑफ़ ज़ीरो लिख दिए थे। इनका हिंदी में क्या मतलब था? ये i = 0 पे किए थे। शुरू में किए थे ना मतलब i = 0 पे। मतलब कि ये आपको क्या बताता है? कि i = 0 पे खत्म होने वाले हम बार-बार ये हिंदी वाला लिख रहे हैं क्योंकि ये समझना जरूरी है।",
+      "source": "caption",
+      "english_text": "Is. It depends on what? Is it positive or negative? What did we do in this? Whatever we had defined as our best, we had defined our two bests. What was best mean and best max and both were written as array of zeros. What did they mean in Hindi? This was done at i = 0. Initially, it means at i = 0. I mean, what does it tell you? We are writing this Hindi word ending at i = 0 again and again because it is important to understand this."
+    },
+    {
+      "start_time": 657.92,
+      "end_time": 691.91,
+      "text": "खत्म होने वाले सब एरे में सब एरे में सबसे मैक्स प्रोडक्ट किसका है? मैक्स प्रोडक्ट क्या है? ये ये बताता है। बेस्ट मीन आपको क्या बता सॉरी ये ये बेस्ट मैक्स है और ये बेस्ट मीन है। तो मैक्स आपको ये बताता है। मीन आपको क्या बताता है? I = 0 पे खत्म होने वाले खत्म होने वाले सारे सब एरे में सारे सब एरे में सारे सब एरे में मिनिमम प्रोडक्ट किसका है? मिनिमम",
+      "source": "caption",
+      "english_text": "Which sub-array has the maximum product among the finite sub-arrays? What is Max Product? This tells this. What can I tell you about Best Means? Sorry, this is Best Max and this is Best Means. So Max tells you this. What does Pisces tell you? What is the minimum product in all sub-arrays in all sub-arrays in all sub-arrays ending in I = 0? minimum"
+    },
+    {
+      "start_time": 691.92,
+      "end_time": 725.43,
+      "text": "प्रोडक्ट किसका है? यही बताता है। शुरुआत में दोनों क्योंकि i = 0 पे एक ही सब एरे है। मिनिमम मैक्सिमम जो करोगे वही आएगा। अच्छी। इसके बाद हम लोग क्या किए थे? सिंपल वही लूप चलाए थे। i = 1 i &lt; ni प्लस प्लस कर दिए थे वेरी गुड अब अब सबसे पहले तो दो चीजें कर लीजिए पुराना बेस्ट मैक्स और एक पुराना बेस्ट मिन इसमें ले लिए सबसे पहले तो जो हमारा बेस्ट मैक्स था और इसमें ले लिया जो",
+      "source": "caption",
+      "english_text": "Whose product is it? This is what it tells. Initially both have the same sub array at i = 0. Whatever you do with minimum and maximum, that is what will come. Good. What did we do after this? Just played the same loop. i = 1 i < ni Plus Plus Had done Very Good Now, first of all do two things, take the old best max and an old best min in it, first of all take which was our best max and take in it which"
+    },
+    {
+      "start_time": 725.44,
+      "end_time": 760.23,
+      "text": "हमारा बेस्ट मिन था वेरी गुड ले ली ले ली अब क्या किया अब जब हम लोग अब देखिए एरे ऑफ़ i पहले किससे से जुड़ता था। एरे ऑफ़ आई के पास दो ऑप्शन रहता था। या तो ये किसी बीजेपी कांग्रेस आम आदमी पार्टी में से एक से जुड़ जाता था जो इसको बेस्ट लगता था या तो खुद बनाता था। अब यहां पे जोकि दो है दो बेस्ट है। एक आपके लिए हो सकता है बीजेपी बेस्ट होगी। मेरे लिए हो सकता है कांग्रेस बेस्ट होगी। तो दो बेस्ट है। तो अब आपको तीन वैल्यू बनाना पड़ता है। आपको इंट v1 इक्वल टू सबसे पहले जो आपका पुराना बेस्ट मैक्स है। क्या है? पुराना बेस्ट मैक्स है। इससे जुड़ जाइए। इससे जुड़",
+      "source": "caption",
+      "english_text": "Our best min was very good le li le li now what did we do now when we people now see the array of i used to connect with whom first. Array of I had two options. Either he used to join any one from BJP, Congress, Aam Aadmi Party which he thought was best or he used to form it himself. Now the two that are there are the two that are best. Maybe BJP will be best for you. Maybe Congress will be best for me. So two are best. So now you have to create three values. You have to first find int v1 equal to your old best max. What is? The old best is Max. Join it. join this"
+    },
+    {
+      "start_time": 760.24,
+      "end_time": 793.91,
+      "text": "जाइए। ठीक है? दूसरा ऑप्शन क्या है? जो पुराना बेस्ट मीन है, जो पुराना बेस्ट मीन है, मिन है, इससे जुड़ जाइए। हो सकता है आपकी बेस्ट की व्याख्या दूसरी होगी। आपको लगता होगा कि हम सबसे ताकतवर पार्टी से नहीं हम सबसे कमजोर पार्टी से जुड़ेंगे कहे कि हम उसमें स्टार बन जाए। ये भी हो सकता है ना? किसी को लगे कि हम बीजेपी से क्यों जुड़े हैं। बीजेपी तो ऑलरेडी इतनी बड़ी पार्टी है। हमको कोई भाव नहीं देगा। हम सबसे उससे पार्टी से जुड़ेंगे। सबसे कमजोर पार्टी से हो तो कांग्रेस से जुड़ जाए। जुड़ जाइए। और तीसरा तीसरा ऑप्शन तो रहता ही है कि आप अकेले लड़िए अकेले चुनाव लड़िए किसी से मत अब देखिए अब ये हो गया",
+      "source": "caption",
+      "english_text": "Go. Ok? What is the second option? Which is the old best mean, which is the old best mean, min, join it. Maybe your best interpretation will be different. You would think that instead of joining the most powerful party, we will join the weakest party so that we can become a star in it. This can also happen, right? Anyone wonder why we are associated with BJP. BJP is already such a big party. Will not give us any price. Most of us will join the party. If you are from the weakest party then join Congress. Get involved. And the third option remains that you fight alone, contest the elections alone, do not vote with anyone, now see this is done."
+    },
+    {
+      "start_time": 793.92,
+      "end_time": 820.31,
+      "text": "v1 ये हो गया v2 ये हो गया v3 ये हो गया है ना अब आपको क्या करना है अब आपको क्या करना है अब आपको दोनों को अपडेट करना है ना दोनों को इसको भी इसको भी कर लीजिए बेस्ट मैक्स क्या करते थे बेस्ट मैक्स क्या होगा सारे चॉइससेस का मैक्सिमम तो मैक्सिमम ऑफ v1 v2 v3 बेस्ट मीन क्या होगा सारे चॉइससेस का मिनिमम",
+      "source": "caption",
+      "english_text": "v1 It's done v2 It's done v3 It's done Na what do you have to do now What do you have to do Now you have to update both of them Na do this also Do this also Do this also Best Max What would be the best max What would be the maximum of all the choices So the maximum of v1 v2 v3 Best mean What would be the minimum of all the choices"
+    },
+    {
+      "start_time": 820.32,
+      "end_time": 854.629,
+      "text": "मीन V1 V2 V3 एक मिनट 1 मिनट रुकिए सॉरी सॉरी सॉरी माफ करिए माफ करिए माफ करिए माफी चाहेंगे बहुत-बहुत माफी चाहेंगे सबसे हां था। बेस्ट बेस्ट मीन क्या था? मिनिमम ऑफ़ तीनों था तो मिनिमम कर लीजिए। अब जब हम लोग रिजल्ट अपडेट कर रहे हैं। जब हम लोग रिजल्ट अपडेट कर रहे हैं तो हम लोग क्या",
+      "source": "caption",
+      "english_text": "Means V1 V2 V3 Wait a minute 1 minute Sorry Sorry Sorry Sorry Sorry Sorry Sorry Very Very Sorry Most of all was yes. What was best best mean? If there is minimum of all three then do the minimum. Now when we are updating the results. What do we do when we are updating the results?"
+    },
+    {
+      "start_time": 854.639,
+      "end_time": 885.75,
+      "text": "अपडेट कर रहे हैं? रिजल्ट में क्या चाहिए? आपको आंसर क्या मांग गया? मैक्सिमम प्रोडक्ट। तो रिजल्ट में क्या होता था? बेस्ट का रिजल्ट और बेस्ट का मैक्सिमम यहां पे दो बेस्ट था। तो मैक्सिमम ऑफ़ रिजल्ट आपका जो भी बेस्ट मीन है। हो सकता है ये हो जाए और बेस्ट मैक्स। कुछ भी हो सकता है मतलब कुछ भी हो सकता है। कायदे से तो मीन नहीं लिखना चाहिए लेकिन लिख दीजिए कोई फर्क नहीं पड़ता है। उससे कोई ज्यादा इशू नहीं है। और लूप क्लोज करके रिटर्न रिजल्ट देखिए केन का यही पैटर्न पढ़ने से हम लोग को ये प्रोडक्ट वाला समझ में आया नहीं तो प्रोडक्ट नहीं समझ में आता है।",
+      "source": "caption",
+      "english_text": "Updating? What is required in the result? What answer did you ask for? Maximum product. So what happened in the result? The result of the best and the maximum of the best were the two best here. So maximum of result is whatever your best meaning is. Maybe this can happen and best max. Anything can happen means anything can happen. As a rule, you should not write 'Mean' but write it, it doesn't matter. There is no more issue than that. And close the loop and see the return result. By reading this pattern of Ken, we understood this product, otherwise it is not a product."
+    },
+    {
+      "start_time": 885.76,
+      "end_time": 919.11,
+      "text": "प्रोडक्ट में क्योंकि नेगेटिव है, पॉजिटिव है, जीरो है तो आपको स्प्लिट करके अलग-अलग केन चलाना पड़ेगा। वो हमको नहीं अच्छा लगता है। ठीक बात है। आ जाइए। उसके बाद हम लोग क्या किए थे? उसके बाद हम लोग दो। उसके बाद हम लोग एक बहुत हार्ड क्वेश्चन किए थे। क्या कि मैक्सिमम सम सब एरे विद विद वन डिलीशन यस वन डिलीशन यहां बोले ना मैक्सिमम सम सब एरे तो आपको दिया रहेगा और कुछ एक कंडीशन दिया रहेगा कि एक डिलीशन करना है कि दो डिलीशन करना है कि पांच डिलीशन करना है कुछ भी करो अच्छा अब देखिए",
+      "source": "caption",
+      "english_text": "Because there is negative, positive and zero in the product, you will have to split and run different cans. We don't like that. That's right. Come over. What did we do after that? After that we two. After that we asked a very hard question. What is the maximum sum sub array with one deletion? Yes one deletion. It is said here that maximum sum sub array will be given to you and some condition will be given whether one deletion is to be done, two deletions are to be done or five deletions are to be done. Do anything. Okay, now see."
+    },
+    {
+      "start_time": 919.12,
+      "end_time": 952.55,
+      "text": "विद वन डिलीशन बोला है अच्छी बात है अब यहां पे बेस्ट कैसे करेंगे अब देखिए अब क्योंकि आपके पास पावर है एक बात तो तय है कि मैक्सिमम सम है मैक्सिमम सम है तो मीन का जरूरत नहीं है। बेस्ट मिनिमम का जरूरत नहीं है क्योंकि देखिए सम सीधा चलता है। प्रोडक्ट में दूसरी होती है। मान लीजिए ये कोई पॉजिटिव नंबर है या कोई नेगेटिव नंबर है। दोनों को सबसे बड़ा-बड़ा नंबर चाहिए होगा अच्छा करने के लिए ज़िंदगी में। दोनों को सबसे बड़ा प्रोडक्ट में उल्टा हो गया था कि नेगेटिव को छोटा नंबर चाहिए था अच्छा करने के लिए। नहीं यहां पे तो सीधा है। एक बात हम लोग को पता चल रही है कि मैक्स ही लेना पड़ेगा। मतलब बेस्ट मैक्स अच्छी बात है। लेकिन अब चूंकि आपके पास एक",
+      "source": "caption",
+      "english_text": "With one deletion said, it is a good thing, now how will you do the best here, now see because you have the power, one thing is certain that the maximum is even, if the maximum is even then there is no need for mean. There is no need for best minimum because see it goes straight. There is a second one in the product. Suppose it is a positive number or a negative number. Both will need the biggest numbers to do well in life. Both of them were inverted in the biggest product that the negative needed a smaller number to do well. No, it is straightforward here. One thing we are realizing is that we will have to take only Max. Meaning best max is a good thing. But now that you have a"
+    },
+    {
+      "start_time": 952.56,
+      "end_time": 986.31,
+      "text": "कंडीशन है। आपके पास क्या कंडीशन है? कि अगर आपके पास कोई एरे है ना अगर आपके पास कोई एरे है 1 - 2 0 3 0 ऐसा तो पहले आपको सब एरे लेते थे तो सब एरे में सारे एलिमेंट लेना पड़ता था लेकिन अब आपको बोला गया है ना कि अब आप कोई भी सब एरे बना लीजिए अपने मन से और अगर आपको मन करता है अगर आपको मन करता है तो आप एक एलिमेंट को इग्नोर कर दीजिए सब में इग्नोर कर दीजिए अब इसका सम 1 + 0 + 3 = 4 आ जाएगा तो ये भी आंसर हो सकता है आपका मन ना करे तो आप इग्नोर ना करिए मतलब आप डिलीट मत करिए मन करता है तो एक डिलीट कर सकते हैं किसी भी सब एरे अच्छा इसमें हम लोग क्या पढ़े थे?",
+      "source": "caption",
+      "english_text": "There is a condition. What condition do you have? That is, if you have any array, if you have any array, 1 - 2 0 3 0, earlier you used to take sub array, then you had to take all the elements in the sub array, but now you have been told that now you can make any sub array of your choice and if you feel like it, if you feel like it, then you ignore one element, ignore it in all, now its sum will come to 1 + 0 + 3 = 4. This can also be the answer, if you don't feel like it, don't ignore it, that means don't delete it, if you feel like it, you can delete one, all the same, okay, what did we read in this?"
+    },
+    {
+      "start_time": 986.32,
+      "end_time": 1020.389,
+      "text": "इसके लिए आप लोग वीडियो देखिएगा तो ज्यादा अच्छा रहेगा क्योंकि बहुत डीप में वो वीडियो है। है ना? अब इसके लिए हम लोग क्या पढ़े थे? इसके लिए हम लोग पढ़े थे कि आप क्योंकि आपके पास दो ऑप्शन है। देखिए बेस्ट का तो मतलब है कि जो मैक्सिमम हो लेकिन मैक्सिमम अब दो तरीके से आ सकता है। या तो आप डिलीट करिए या तो आप डिलीट ना करिए। हम लोग क्या किए थे कि बेस्ट एक तो नो डिलीट मतलब यहां तक का बेस्ट रिजल्ट विद नो डिलीशंस। इसको हम लोग बोले थे कि एरे ऑफ़ ज़ीरो बन जाओ। क्योंकि अगर एक ही एलिमेंट है एरे में शुरू में तो एक ही सब एरे पॉसिबल है जिसमें वन होगा। अब इसमें नो डिलीट का करके आपको वन सम मिलेगा। वेरी गुड। लेकिन",
+      "source": "caption",
+      "english_text": "For this, it would be better if you guys watch the video because that video is very deep. Isn't it? Now what did we read for this? For this we read that you have two options. See, best means whatever is maximum but now maximum can come in two ways. Either you delete it or you don't delete it. What we did was that best one to no deletion means even best result with no deletions. We told him to become an array of zero. Because if there is only one element in the array initially then only one sub array is possible which will have one. Now by doing no deletion in this you will get one sum. very good. but"
+    },
+    {
+      "start_time": 1020.399,
+      "end_time": 1045.909,
+      "text": "एक और हम लोग बोले थे कि बेस्ट वन डिलीट मतलब अच्छे आंसर सबसे अच्छा आंसर। लेकिन एक डिलीशन के साथ अब इसमें हम लोग कोई वैल्यू नहीं दिए थे। क्यों नहीं दे पाए थे? क्योंकि देखिए ज़ीरो i = 0 और इसका एलिमेंट है वन। शुरू में कितने सब एरे पॉसिबल है जो यहां पे खत्म हो रहे हैं? एक ही सब एरे पॉसिबल है जिसमें ये एलिमेंट है। इसमें अब एक ही एलिमेंट है वन। अब आप बोल रहे हैं कि इसमें से भी एक डिलीट कर दो तो सब एरे में बचेगा क्या? तो एम्प्टी बन जाएगा।",
+      "source": "caption",
+      "english_text": "Another thing we said was that best one delete means good answer is the best answer. But with a deletion, now we did not give any value in it. Why couldn't you give it? Because see zero i = 0 and its element is one. How many sub-arrays are possible in the beginning, ending here? Only one sub array is possible which contains this element. Now there is only one element in it, one. Now you are saying that if you delete one of these, will everything be left in the array? So it will become empty."
+    },
+    {
+      "start_time": 1045.919,
+      "end_time": 1076.95,
+      "text": "इसीलिए इसको जीरो बना दीजिए। आई एन मीन बना दीजिए। कुछ भी बना दीजिए। ज़ीरो बना दीजिए। चलिए। रिजल्ट में अभी कोई लिख दीजिए। एरे ऑफ़ ज़ीरो ही लिख दीजिए भाई। क्या कर सकते हैं? कोई इसमें ये देखिए। इसका मतलब ज़ीरो नहीं। इसका मतलब नॉनसेंसिकल वैल्यू है। यहां पे कुछ वैल्यू देने का मजा नहीं आ रहा है। ये हम कल बहुत विस्तार से समझाए हैं। नॉनसेंसिकल वैल्यू। ठीक है? इसके बाद क्या किए थे? सेम फॉर i = 1 i &lt; ni + वेरी गुड। सबसे पहले तो",
+      "source": "caption",
+      "english_text": "Therefore make it zero. Make it i n mean. Make anything. Make it zero. Let go. Just write something in the result. Just write array of zero, brother. What can be done? Someone look at this. This does not mean zero. It means nonsensical value. It is not fun to give any value here. We have explained this in great detail yesterday. Nonsensical value. Ok? What did you do after this? Same for i = 1 i < ni + very good. first of all"
+    },
+    {
+      "start_time": 1076.96,
+      "end_time": 1108.07,
+      "text": "ये जो पुराना है पुराना नो डिलीट और पुराना वन डिलीट। इन दोनों का वैल्यू ले लीजिए। इक्वल टू नो डिलीट इक्वल टू वन डिलीट। सबसे पहले तो देखिए नो डिलीट क्या है? नो डिलीट मतलब अभी तक का बेस्ट आंसर विदाउट एनी डिलीशन। तो ये तो नॉर्मल केन है भाई। ये तो नॉर्मल केन है ना। सबसे पहले तो इसी को अपडेट कर दीजिए कि नो डिलीट इक्वल टू मैक्स। या तो तुम जो पुराना नो डिलीट है नो डिलीट है उसके साथ जुड़ जाओ। उसके साथ",
+      "source": "caption",
+      "english_text": "This is the old one, the old no delete and the old one delete. Take the value of both of these. Equal to no delete is equal to one delete. First of all, what is No Delete? No deletion means the best answer so far without any deletion. So this is a normal Kane, brother. This is a normal cane, isn't it? First of all, update this to no delete equal to max. Either you join the old no delete no delete. with him"
+    },
+    {
+      "start_time": 1108.08,
+      "end_time": 1141.75,
+      "text": "जुड़ जाओ। या तो तुम अपना बना लो। बस ये तो हो गया। ये पुराना वन डिलीट के साथ क्यों नहीं जुड़ पाएगा? क्योंकि नो डिलीट का मतलब है कि अभी तक का आंसर जिसमें एक भी डिलीशन ना हुआ हो। लेकिन जो पुराना वन डिलीट है ना वो आपको पीछे तक का आंसर देता है लेकिन उसमें एक डिलीट हो चुका है। तो वो हमको आंसर में नहीं जोड़ना है किसमें? नो डिलीट में। क्योंकि नो डिलीट मतलब आई पे खत्म होने वाला बेस्ट आंसर जिसमें एक भी डिलीशन ना हुआ हो। अब एक भी डिलीशन कहां? तो या तो आप पीछे वाला नो डिलीट ले लीजिए जिसमें एक भी डिलीशन नहीं हुआ था और उसमें एरे ऑफ़ आई को जोड़ दीजिए। या तो आप सिर्फ एरे ऑफ़ आई को लीजिए। इसमें भी कोई डिलीशन नहीं हुई है। अच्छा। वन डिलीट में",
+      "source": "caption",
+      "english_text": "Get involved. Either you make your own. That's it. That's it. Why won't this old one be added to the delete? Because no deletion means the answer so far in which there has not been a single deletion. But the old one which is deleted gives you the answer till the last one but one has been deleted in it. So why don't we add that to the answer? In no delete. Because no deletion means the best answer ending at i in which there is not even a single deletion. Now where is even a single deletion? So either you take the previous no delete in which there was not a single deletion and add the array of I to it. Or you just take the Array of I. There has been no deletion in this either. Good. in one delete"
+    },
+    {
+      "start_time": 1141.76,
+      "end_time": 1175.19,
+      "text": "क्या किए थे? वन डिलीट में क्या किए थे? अब देखिए एक और बात थी। वन डिलीट में ये एरे ऑफ़ आई नहीं आ सकता है। एरे ऑफ़ आई का मतलब क्या है? वन डिलीट आपको क्या बोलता है? कि i पे खत्म होने वाले सारे सब एरे में बेस्ट आंसर जिसमें एक डिलीट हो चुका हो। अगर आप सिर्फ एरे ऑफ़ आई लेते हैं ना, तो इसका मतलब है कि आपके पास एक ही सब एरे है जिसमें एक ही एलिमेंट है। अब इसमें देखिए कुछ डिलीट नहीं हुआ है। इसमें डिलीट कहां हुआ है कुछ? ये तो एक सब एरे है जिसका जो एरे ऑफ़ आई से शुरू होता है एरे ऑफ़ आई पे खत्म हो जाता है। तो इस सब एरे में डिलीट कहां हुआ? डिलीट करने के लिए आपको इसको डिलीट करना पड़ेगा। तो ये वन डिलीट में नहीं आएगा इसीलिए ये नो डिलीट",
+      "source": "caption",
+      "english_text": "What did you do? What did you do in One Delete? Now see there was one more thing. This array of eyes cannot come in one delete. What does Array of I mean? What does One Delete say to you? That is the best answer among all sub-arrays ending with i in which one has been deleted. If you just take array of i, it means you have only one sub array which has same element. Now see nothing has been deleted in it. Where has anything been deleted in this? This is a sub array which starts from Array of I and ends at Array of I. So where did the deletion happen in all this array? To delete it you will have to delete it. So it will not come in one delete, that is why it is no delete."
+    },
+    {
+      "start_time": 1175.2,
+      "end_time": 1209.43,
+      "text": "में आया है वन डिलीट में नहीं आया है। कल हम ये समझाए थे हम बता देते हैं एनी हाउ चलिए। अब आपको वन डिलीट खोजना है किस पे? आई वाला वन डिलीट खोजना है कि आई में जो हो जाए। अच्छा अच्छी बात है। सबसे पहली बात तो है कि जो पिछले वन डिलीट आ रहा है उसको आप ले लीजिए क्योंकि उसमें ऑलरेडी एक डिलीट हो चुका होगा और उसमें एरे ऑफ़ आई जोड़ दीजिए तो भी वन डिलीट होगा। पिछला वन डिलीट में कोई ना कोई एलिमेंट डिलीट हो चुका है। उसमें आप एरे ऑफ़ आई जोड़ दीजिए तो भी वन डिलीट ही रहेगा। तो सबसे पहले तो जो पुराना वन डिलीट है वन डिलीट है उसमें एरे ऑफ़ आई को जोड़ दीजिए। ठीक है? लेकिन आपका",
+      "source": "caption",
+      "english_text": "It has come in 'One Delete' but not in 'Delete'. We explained this yesterday, let us tell you how. Now on what do you want to find One Delete? One delete of i is to be found so that whatever happens in i. Okay, that's a good thing. The first thing is that you should take the previous one that is getting deleted because it will already have one deletion in it and if you add the array of I in it then also one will be deleted. Some element has been deleted in the previous one delete. Even if you add array of eyes to it, one will remain deleted. So first of all, add the array of I to the old one delete one delete. Ok? but your"
+    },
+    {
+      "start_time": 1209.44,
+      "end_time": 1242.71,
+      "text": "ये भी मन कर सकता है कि हम जो वन डिलीट i निकाल रहे हैं एट i निकाल रहे हैं उसमें हम एरे ऑफ़ आई को ही डिलीट कर दें। तो यह भी तो मेरा मन कर सकता है कि हम एरे ऑफ़ आई को डिलीट करना चाहते हैं। इसके लिए आपको क्या करना पड़ेगा? आपका i यहां है। यहां पे आपका एरे ऑफ़ आई है। आपके पास दो तरीके के पिछले वाले आंसर हैं। एक है नो डिलीट और एक है वन डिलीट। यही है ना आपके पास पीछे तक का बेस तो यही। अगर आप इसमें आपको अब क्या करना है? आपको एरे ऑफ़ आई को ही डिलीट करना है। तो क्या आप इसको ये वाला इस्तेमाल कर सकते हैं? ये वाला आप इस्तेमाल नहीं कर सकते क्योंकि यहां पे",
+      "source": "caption",
+      "english_text": "You may also feel like deleting the array of i in the one delete i that we are removing at i. So I may also feel like we want to delete the array of I. What will you have to do for this? Your i is here. Here is your array of eyes. You have two types of previous answers. One is no delete and one is one delete. This is the base you have till the end. If you are in this, what should you do now? You have to delete the array of I only. So can you use this one? You can't use this one because here"
+    },
+    {
+      "start_time": 1242.72,
+      "end_time": 1276.71,
+      "text": "ऑलरेडी एक नंबर डिलीट हो चुका है। अब आप एरे ऑफ़ आई को डिलीट करने के लिए इसका इस्तेमाल नहीं कर सकते। आप किसका इस्तेमाल कर सकते हैं? इस आदमी का इस्तेमाल कर सकते हैं। पुराने नो डिलीट का मतलब क्या था? कि पीछे तक वाला आंसर जिसमें कुछ डिलीट नहीं हुआ है। अब आपको वन डिलीट चाहिए आई पे जिस पे एक ही डिलीट हुआ हो जो एरे ऑफ़ आई हो। तो आपको ये वाला वैल्यू लेके यहां पे लिख देना होगा एज़ वन डिलीट। फिर से बता रहे हैं पिछला वाला नो डिलीट का मतलब कि पिछले वाले तक बेस्ट आंसर इसमें कुछ डिलीशन नहीं है। वेरी गुड। आपको मन है कि हम एरे ऑफ आई को डिलीट करके वन डिलीट ये बना सके। तो आप",
+      "source": "caption",
+      "english_text": "Already one number has been deleted. You can no longer use it to delete the Array of I. Which one can you use? Could use this guy. What did the old no delete mean? That till the last answer in which nothing has been deleted. Now you need one delete i which has only one delete which is the array of i. So you have to take this value and write it here as one delete. Telling again that the previous one is no deleted means that till the previous one is the best answer, there is no deletion in it. very good. You wish that we could create one delete by deleting the array of I. so you"
+    },
+    {
+      "start_time": 1276.72,
+      "end_time": 1310.07,
+      "text": "नो डिलीट को ही लिख दीजिए वन डिलीट आई में। इससे क्या होगा? पीछे तक कुछ डिलीट नहीं हुआ है। एरे ऑफ़ आई को आप नहीं गिनेंगे तो आपका वन डिलीट बन जाएगा। तो लिख दीजिए पुराना नो डिलीट। बस और ये ऐसा हो गया। उसके बाद क्या करते थे? दोनों मैक्स का ये हो गया रेस। ये हो गया वन डिलीट। ये हो गया नो डिलीट। और इसको रिटर्न कर देते थे। ये क्वेश्चन बहुत हार्ड क्वेश्चन है। बहुत इंट्यूशन वाला क्वेश्चन है। कल का वीडियो देख लीजिए।",
+      "source": "caption",
+      "english_text": "Just write No Delete in the One Delete box. What will happen with this? Nothing has been deleted yet. If you do not count the array of I, your forest will become deleted. So write the old no delete. That's it and it happened. What did you do after that? It's a race between the two maxes. This is one deletion. This is done no delete. And used to return it. This question is a very hard question. This is a very intuitive question. Watch yesterday's video."
+    },
+    {
+      "start_time": 1310.08,
+      "end_time": 1343.83,
+      "text": "प्लीज मेरा हाथ जोड़ के प्रार्थना है। अगर यहां तक देख रहे हैं नहीं समझ में आए कल वाला वीडियो देखिए। कल इसको बहुत विस्तार में आज जो 30 मिनट का वीडियो हम 30 मिनट में आज पांच क्वेश्चन समझा रहे हैं ना। कल 30 मिनट में बस एक क्वेश्चन समझाए थे। तो ध्यान से देखिएगा वो वीडियो। चलिए। अब अब आपको क्या बोला गया है? अगला क्वेश्चन क्या था? मैक्सिमम एब्सोल्यूट सम ऑफ एनी सब एरे एनी सब एरे। अच्छा मैक्सिमम एब्सोल्यूट सम इन एनी सब एरे आपको इसका क्या बोला था? केडेंस आपको देखिए सबसे पहले इसको समझना पड़ेगा कि",
+      "source": "caption",
+      "english_text": "Please join my hands and pray. If you are watching till now and don't understand then watch tomorrow's video. Tomorrow it will be explained in detail in today's 30 minute video where we are explaining five questions in 30 minutes. Just explained one question in 30 minutes yesterday. So watch that video carefully. Let go. Now what have you been told? What was the next question? Maximum Absolute Sum of Any Sub Array Any Sub Array. Well, what did you say about maximum absolute sum in any sub array? Cadence you see, first of all you have to understand that"
+    },
+    {
+      "start_time": 1343.84,
+      "end_time": 1378.549,
+      "text": "क्वेश्चन में क्या बोला और केडेंस का एक्चुअल क्वेश्चन जो मैक्सिमम सम सब एरे था बिना एब्सोल्यूट के वो क्या बोलता था? वो आपको बोलता था सारा सब एरे बना लो पहले। के डेंस काम तो यही करता है ना सारा सब एरे बना लो सब एरे वन हो गया सब एरे टू हो गया सब एरे थ्री हो गया और सब एरे फोर हो गया मतलब ऐसा बहुत सारा बना लो अच्छा सबका सम निकाल लो इसका s1 हो गया इसका s2 हो गया इसका s3 हो गया इसका s4 हो गया ऐसे होता जाएगा अच्छा और सारे में जो भी मैक्सिमम सम है मैक्सिमम ऑफ़ s1 s2 s3 s4",
+      "source": "caption",
+      "english_text": "What did he say in the question and what did he say in the actual question of Cadence which was maximum sum sub array without absolute? He used to tell you to prepare everything first. This is what dense work does, right, make the entire sub array, sub array becomes one, sub array becomes two, sub array becomes three and sub array becomes four, that is, make a lot of them, ok, find out the sum of all, this is s1, this is s2, this is s3, this is s4, it will be like this, well, whatever is the maximum sum in all, maximum of s1 s2 s3 s4."
+    },
+    {
+      "start_time": 1378.559,
+      "end_time": 1411.35,
+      "text": "हमको लौटा दो ये आंसर था किडेंस नॉर्मल जो मैक्सिमम सम सब एरे इस क्वेश्चन में एब्सोल्यूट आ गया है। ये क्या बोलता है? ये आपको क्या बोलता है? ये आपको एक एक्स्ट्रा लेयर लगाने बोल रहा है। क्या लेयर लगाने बोल रहा है? बोलता है तुम सारा सवेरे बना लो भाई। काम वही करो। काम वही करो। बना लो। अच्छा बना लिए। फिर बोलता है तुम वही काम करो। सबका सम निकाल लो। s1 निकाल लो। S2 निकाल लो। S3 निकाल लो। S4 निकाल लो। अब जाहिर सी बात है कि जब आप सम निकालेंगे तो कुछ सम पॉजिटिव होगा। होगा कुछ सब नेगेटिव",
+      "source": "caption",
+      "english_text": "Return it to us, this answer was 'Kidnes Normal' which is the maximum sum sub-array in this question. What does this say? What does this say to you? It is telling you to apply an extra layer. Are you talking about applying layers? He says, you prepare the whole thing in the morning, brother. Do the same work. Do the same work. Make it. Well made. Then he says you do the same thing. Find out the sum of everything. Take out s1. Take out S2. Take out S3. Take out the S4. Now it is obvious that when you find the sum, some sum will be positive. something negative will happen"
+    },
+    {
+      "start_time": 1411.36,
+      "end_time": 1442.63,
+      "text": "होगा। जाहिर सी बात है। है ना? क्या बोलता है? सारे सम को सारे सारे सम को एब्सोल्यूट कर दो। एब्सोल्यूट करने का मतलब कि पॉजिटिव है तो वेरी गुड। पॉजिटिव रहने दो। नेगेटिव है तो उसको पॉजिटिव बना दो। एब्सोल्यूट का मतलब ये होता है। तो आपको क्या बोलता है? इसको मान लीजिए s1 बना दो। इसको कुछ s2 बना दो। इसको s3 बना दो। इसको s4 बना दो। अब आपका सारा सम जो आया है वो क्या है? पॉजिटिव है। ये एक एक्स्ट्रा लेयर है। अब वही काम करो। अब वही काम करो। मैक्सिमम दे दो मैक्सिमम ऑफ़",
+      "source": "caption",
+      "english_text": "Will happen. It's an obvious thing. Isn't it? What does he say? Make all the sums absolute all the sums. To say absolute means that if it is positive then it is very good. Let it be positive. If it is negative then make it positive. This is what absolute means. So what speaks to you? Consider this and make it s1. Make it some s2. Make it s3. Make it s4. Now what is all your money that has come? Is positive. This is an extra layer. Now do the same thing. Now do the same thing. Give maximum maximum of"
+    },
+    {
+      "start_time": 1442.64,
+      "end_time": 1469.75,
+      "text": "S2 S3 S4 दे दो रिटर्न कर दो। अब आओ अब वही काम करना है। तो एक एक्स्ट्रा लेयर लग गया है। अब देखिए एक्स्ट्रा लेयर लग गया तो इससे घबराना नहीं है। आपको बस देखना है कि हो क्या रहा है? एब्सोल्यूट का मतलब क्या होता है? पहले मान लीजिए पहले मान लीजिए कि क्या होता था कि आप जितना भी सवा है ना उसको दो ग्रुप में बांट लीजिए। क्योंकि जाहिर सी बात है कि पॉजिटिव नेगेटिव का सवाल है। पॉजिटिव नेगेटिव पॉजिटिव पॉजिटिव रहता है। नेगेटिव भी पॉजिटिव बन जाता है। अब एक आप गौर कीजिए।",
+      "source": "caption",
+      "english_text": "S2 S3 S4 Give it return it. Come now, you have to do the same thing. So an extra layer has been added. Now see, if the extra layer is applied then there is no need to worry about it. You just have to see what's happening? What does absolute mean? First, let's assume that what used to happen was that whatever amount you had was divided into two groups. Because it is obvious that it is a question of positive and negative. Positive negative remains positive. Even negative becomes positive. Now take a look."
+    },
+    {
+      "start_time": 1469.76,
+      "end_time": 1502.47,
+      "text": "चलिए कुछ नेगेटिव नंबर ले लेते हैं। -4, -10 और -14 सबको पॉजिटिव बना दीजिए। 4, 10 और 14 देखिए जब ये नेगेटिव था ना इसमें सबसे बड़ा नंबर क्या था? -4 और सबसे छोटा नंबर क्या था? -14। लेकिन जब आप इसको बना दिए एब्सोल्यूट जब इसको एब्सोल्यूट कर दिए तो सबसे छोटा नंबर कौन बन गया? फोर। और सबसे बड़ा नंबर कौन सा बन गया? 14। तो देखिए सबसे छोटा नेगेटिव नंबर सबसे बड़ा पॉजिटिव नंबर बन गया। एब्सल्यूट वन यही ना होता",
+      "source": "caption",
+      "english_text": "Let's take some negative numbers. Make -4, -10 and -14 all positive. Look at 4, 10 and 14. When it was negative, what was the biggest number? -4 And what was the smallest number? -14. But when you made it absolute, then which number became the smallest? Four. And which became the biggest number? 14. So see the smallest negative number became the largest positive number. Absolute one is not this"
+    },
+    {
+      "start_time": 1502.48,
+      "end_time": 1536.47,
+      "text": "है। -10 को आप जब करेंगे तो 10 बन जाएगा। -4 को करेंगे तो फोर बनेगा। तो -10 जोकि छोटा है -4 से लेकिन जब एब्सोल्यूट होगा तो ये बड़ा हो जाएगा। उल्टा बिहेव कर रहा है। अच्छा। अब एक काम करिए इसको सोचने के लिए। सारे सब एरे का सम आपको मिलेगा। बहुत सारा सम रहेगा। उसको दो ग्रुप में बांट दीजिए। किस ग्रुप में? एक पॉजिटिव, एक नेगेटिव मतलब मान लीजिए s1, s2, s3, s4 यह आपका पॉजिटिव सब एरे सम्स हैं। निकालेंगे तो यही मिलेगा। ब्रूट फोर्स से निकाल के हम बांट देंगे। अच्छा। और s5, s8",
+      "source": "caption",
+      "english_text": "Is. When you do -10 it will become 10. If you do -4 then it will become four. So -10 which is smaller than -4 but when absolute it will be bigger. He is behaving wrongly. Good. Now do one thing to think about it. You will get the sum of all sub-arrays. There will be a lot of equality. Divide them into two groups. In which group? One positive, one negative means let's say s1, s2, s3, s4 are your positive sub array sums. If you take it out, this is what you will get. We will take it out by brute force and distribute it. Good. and s5, s8"
+    },
+    {
+      "start_time": 1540.39,
+      "end_time": 1574.07,
+      "text": "ये मेरा नेगेटिव वाला है। अब देखिए इसको जब आप सब को एब्सोल्यूट करेंगे, जब सबको एब्सोल्यूट करेंगे तो सब सेम ही रहेगा क्योंकि पॉजिटिव सेम रहता है। मान लीजिए आपके पास बस ये ग्रुप रहता आपके पास। ये आपका पॉजिटिव का ग्रुप है। ये आपका नेगेटिव का ग्रुप है। मान लीजिए आपके पास बस ये वाला ग्रुप रहता तो क्या आपको आंसर पता रहता पहले से एब्सोल्यूट करने से या मैक्सिमम निकालने से पहले? हां पता रहता। अरे बहुत सारा पॉजिटिव नंबर है। मैक्सिमम क्या होगा? जो मैक्सिमम नंबर है वो तो पता ही रहता कि मैक्सिमम सम ही उसका मैक्सिमम होगा। मान लीजिए यहां पे ये s4 मैक्सिमम रहता तो आपको पता चलता कि s4 मेरा आंसर है। अच्छी बात है। यहां पे भी क्या आपको",
+      "source": "caption",
+      "english_text": "This is my negative one. Now look at this, when you absolute everything, when you absolute everyone, everything will remain the same because positive remains the same. Suppose you only have this group with you. This is your group of positives. This is your group of negatives. Suppose you had only this group, would you have known the answer before absoluteizing it or finding the maximum? Yes, I would have known. Hey, there are a lot of positive numbers. What will be the maximum? Whatever is the maximum number, one already knows that the maximum number will be its maximum. Suppose here this s4 was maximum then you would know that s4 is my answer. It's a good thing. Do you want to be here too?"
+    },
+    {
+      "start_time": 1574.08,
+      "end_time": 1608.63,
+      "text": "पता रहेगा? नेगेटिव में हां अभी बताए ना सबसे छोटा नेगेटिव नंबर जब एब्सोल्यूट होगा ना तो सबसे बड़ा नंबर बन जाएगा। तो यहां पे मान लीजिए सबसे छोटा नंबर s से था। आप बोलेंगे कि s मेरा आंसर है। दोनों ग्रुप का अलग-अलग देख रहे हैं। अब दोनों ग्रुप मिला दीजिए। क्या करिए? आपके पॉजिटिव ग्रुप आपको बोला है कि s4 मेरा आंसर है। आपका नेगेटिव बोला है कि S4 ये क्या है? S7 s मेरा आंसर है। अब आपको पता नहीं है कि दोनों में बड़ा कौन है? छोटा कौन है। अब दोनों का मैक्स कर लीजिए। क्या कर लीजिए? मैक्स कर लीजिए और आंसर दे दीजिए। फिर से बताते हैं। दो ग्रुप है। एक",
+      "source": "caption",
+      "english_text": "Will you know? Yes in negative, tell me now, when the smallest negative number becomes absolute, it will become the largest number. So here suppose the smallest number was from s. You will say that s is my answer. Both groups are watching separately. Now mix both the groups. What to do? Your positive group has told you that S4 is my answer. Your negative has said that S4 what is this? S7 s is my answer. Now you don't know who is bigger among the two? Who is younger? Now maximize both. What should you do? Do it to the max and give the answer. Let me tell you again. There are two groups. one"
+    },
+    {
+      "start_time": 1608.64,
+      "end_time": 1642.87,
+      "text": "पॉजिटिव सब एरे सम का, एक नेगेटिव सब एरे सम का। पॉजिटिव वाले का आंसर क्या होगा? जो उसका मैक्स होगा। नेगेटिव वाले का आंसर क्या होगा? जब हम एब्सोल्यूट के साथ कर रहे हैं तो उसका जो सबसे छोटा एलिमेंट होगा वो आंसर होगा। अब जबकि ये भी एब्सोल्यूट बन चुका है। और ये तो पहले से ही पॉजिटिव था तो एब्सोल्यूट ही है। अब दोनों का मैक्स निकाल लेंगे। तो देखिए क्वेश्चन में हो क्या रहा है। ये जो ग्रुप बना है ये किस चीज का ग्रुप है? हम लोग कर क्या रहे हैं? सबसे पहले तो हम लोग एक सबसे पहले हम लोग नॉर्मल सम निकाल रहे हैं। सबसे पहले नॉर्मल सम निकाल रहे हैं बिना एब्सोल्यूट का। हम लोग मैक्सिमम सम खोज रहे हैं। मैक्सिमम सम को हम लोग बोल रहे हैं s1 उस ग्रुप में बिना एब्सोल्यूट",
+      "source": "caption",
+      "english_text": "A positive sub array of even, a negative sub array of even. What will be the answer of positive one? Which will be its max. What will be the answer to the negative one? When we are dealing with absolutes, the smallest element will be the answer. Now that this has also become absolute. And this was already positive so it is absolute. Now we will find the max of both. So see what is happening in the question. This group that has been formed is a group of what? What are we doing? First of all, we are finding the normal sum. First of all we are finding the normal sum without absolute. We are looking for the maximum sum. We call the maximum sum as s1 in that group without absolute."
+    },
+    {
+      "start_time": 1642.88,
+      "end_time": 1676.31,
+      "text": "किए। फिर हम लोग एक मिनिमम सम खोज रहे हैं। एक मिनिमम सम खोज रहे हैं। मिनिमम सम खोज रहे हैं। इसको हम लोग बोल रहे हैं s2। उसके बाद इसको हम लोग s1 बना रहे हैं। इसको s2 बना रहे हैं। कैसे? एब्सोलॉल्यूट करके। एब्सोलॉल्यूट करके। अब इन दोनों में जो भी मैक्स है उसको रिटर्न कर दे रहे हैं। यही तो काम कर रहे हैं। यही तो काम है मतलब पॉजिटिव नेगेटिव का ग्रुप इसीलिए तो बना था। एक पॉस एक सबसे मैक्स सम मैक्स सम भी हो सकता है कि नेगेटिव आ जाए कोई दिक्कत नहीं है। मैक्स सम में हो सकता है कोई पॉजिटिव आए। ने मिनिमम सम निकालेंगे",
+      "source": "caption",
+      "english_text": "Did it. Then we are looking for a minimum sum. Looking for a minimum sum. Looking for minimum sum. We are calling this s2. After that we are making it S1. Making it s2. How? By absolute. By absolute. Now whatever max is there between these two is being returned. This is what they are working on. This is the work, that is why the group of positive and negative was formed. One Pos One Most Max Sum Max Sum It is also possible that negative may come, there is no problem. It is possible that someone may come positive in Max Sum. will find the minimum sum"
+    },
+    {
+      "start_time": 1676.32,
+      "end_time": 1710.07,
+      "text": "तो हो सकता है कि कुछ नेगेटिव भी आ जाए क्योंकि नेगेटिव नंबर्स है एरे में तो आ ही जाएगा। इसका हम लोग एब्सोल्यूट करके निकाल दे रहे हैं। तो क्वेश्चन क्या कहता है? है क्वेश्चन कुछ नहीं कहता है। एक A1 निकाल लो क्या करके? Kn मैक्स के मैक्स ये आपको क्या देगा? आपको मैक्सिमम सम देगा। a2 निकाल लो। kडन मीन। Kडन क्या? मीन। यह आपको नेगेटिव वाला सम देगा। इसको एब्सोल्यूट कर दो। इसको भी एब्सोल्यूट कर दो। मान लीजिए कुछ-कुछ आएगा। आपके पास दो आंसर आ गया। अब इसी",
+      "source": "caption",
+      "english_text": "So it is possible that some negative may also come because negative numbers are there in the array. We are eliminating this absolutely. So what does the question say? Is question doesn't say anything. How about taking out an A1? Kn Max K Max What will it give you? Will give you maximum sum. Take out a2. kdan mean. What? Pisces. This will give you a negative sum. Make it absolute. Make this also absolute. Suppose something will come. You got two answers. now this"
+    },
+    {
+      "start_time": 1710.08,
+      "end_time": 1744.389,
+      "text": "दोनों में से आंसर होगा। इसका मैक्स कर दो। बस सिंपल बात है। सिंपल लॉजिक कि एब्सोल्यूट सम क्या होता है भाई? आप जब एरे में भी देखेंगे आप जब एरे में भी देखेंगे। या तो हो सकता है कि कोई बहुत अच्छा पॉजिटिव सम आ जाए तो वो आपका आंसर हो जाए। या तो एक बहुत ही नेगेटिव सम आ जाए। उसका भी जब एब्सोल्यूट करेंगे तो बहुत बड़ा हो जाएगा। हो सकता है एरे के बीच में कहीं पे -100 आ जाए सम। तो -100 को आप करेंगे तो 100 हो जाएगा। तो बड़ा हो जाएगा। तो या तो हम लोग को सबसे अच्छा सम ढूंढ लेना है या तो सबसे गंदा सम ढूंढ के उसको एब्सोल्यूट करके चेक कर लेना है कि या तो बहुत अच्छा मिल जाए। वेरी गुड। बहुत गंदा मिले तो भी हमारे पास ऑप्शन है।",
+      "source": "caption",
+      "english_text": "The answer will be either of these. Max it out. It's just a simple thing. What is the absolute sum of simple logic? You will see in the Jab array also. You will also see in the Jab array. Either it is possible that a very good positive number comes and it becomes your answer. Either a very negative sum comes. When it is made absolute, it will become very big. Maybe the Pe-100 might fall somewhere in the middle of the array. So if you do -100 then it will become 100. So it will grow up. So either we have to find the best match or we have to find the worst match and check it absolutely, either very good one is found. very good. Even if it is very dirty, we still have an option."
+    },
+    {
+      "start_time": 1744.399,
+      "end_time": 1776.71,
+      "text": "क्यों ऑप्शन है? एब्सोल्यूट है इसीलिए। सेम आपको करना है। आपको दोनों प्रोग्राम आता है। आपको मैक्स सम का ही प्रोग्राम आता है। मीन सम का ही प्रोग्राम आता है। दोनों को रन कर लीजिए और देख लीजिए मैक्सिमम कौन सा है? वेरी गुड। चलिए एक और क्वेश्चन बच गया। क्या बच गया? सर्कुलर एरे। क्या? सर्कुलर एरे। सर्कुलर एरे। सर्कुलर एरे में मैक्सिमम मैक्सिमम ये आपको क्या बोलता है? एक एरे है। आपको मैक्सिमम निकालना है। जैसे आप निकाल रहे थे वैसे ही निकालना है। लेकिन इस एरे में एक खूबी है। हम बोले ना",
+      "source": "caption",
+      "english_text": "Why is there an option? That's why it's absolute. You have to do the same. You know both programs. You only know the Max Sum program. Only Pisces program comes. Run both and see which is the maximum? very good. Well, one more question is left. What is left? Circular array. What? Circular array. Circular array. Maximum Maximum in Circular Array What does this tell you? is an array. You have to extract the maximum. You have to take it out the same way you were taking it out. But this array has one quality. we said no"
+    },
+    {
+      "start_time": 1776.72,
+      "end_time": 1804.389,
+      "text": "छोटा-छोटा कंडीशन देगा केन में। ये 5 है। -1 -2 -6 और यहां पे थ्री है। 1 2 3 4 इसका आपको मैक्सिमम सम निकालना है। अगर आप नॉर्मल के लगाएंगे नॉर्मल मैक्सिमम सम निकालेंगे तो आपको पता चलेगा कि ये जो फाइव है ये इसका मैक्सिमम सम है। तो आप फाइव दे देंगे क्योंकि फाइव के बाद आप इस थ्री को इंक्लूड करने के लिए आपको ये पूरा नेगेटिव पार करना पड़ेगा जो आपके साम को कम कर देगा। अच्छा नहीं लगेगा। चला के आप देख लीजिएगा फाइव आएगा। लेकिन आपको बोला हुआ है ना कि ये एरे जो है ना सर्कुलर है।",
+      "source": "caption",
+      "english_text": "Will give small condition in can. This is 5. -1 -2 -6 And here is pay three. 1 2 3 4 You have to find the maximum sum of this. If you calculate the normal maximum sum, then you will know that this five is its maximum sum. So you will give five because after five, to include this three, you will have to overcome all this negative which will reduce your strength. It won't look good. Go ahead and see if five will come. But you have been told that this array is not circular."
+    },
+    {
+      "start_time": 1804.399,
+      "end_time": 1834.149,
+      "text": "मतलब इस फोर के बाद एरे खत्म नहीं होता है। इस फोर के बाद एरे वापस इस जीरो पे मिल जाता है। ऐसा एरे अब आपका अब आप बताइए कि क्या होगा? अब आप देखिए अब आप ये कर सकते हैं। यहां से शुरू किए और इसको भी ले लिए। इसको अपने पथ में ले लिए। तो अब अब आपका सम थ्री और फाइव दोनों मिलके आठ हो गया। इसको ऐसे आप समझिए। इसको ऐसे आप समझिए। एक सर्कुलर एरे है। ऐसा एरे है। मतलब ऐसा नहीं होगा लेकिन देखने में ऐसा लगेगा वो।",
+      "source": "caption",
+      "english_text": "Meaning the array does not end after this four. After this four the array returns to this zero. So now you tell me what will happen? Now you see now you can do this. Started from here and took this also. Took it into your path. So now your sum three and five together becomes eight. Understand it this way. Understand it this way. Is a circular array. Such is the array. Meaning it won't happen like this but it will look like this."
+    },
+    {
+      "start_time": 1834.159,
+      "end_time": 1865.75,
+      "text": "सबसे पहले है 5 फिर है -2, फिर है -3, फिर है -6 और एक और थ्री है। अब देखिए अब आपको बोला है कि ये एक डोनट है। क्या है? एक डोनट है। इसमें से एक पीस तोड़ लो जिसमें सबसे ज्यादा मिठास हो। मतलब जो सबसे मैक्सिमम हो। जाहिर सी बात है कि आप ये वाला पीस तोड़ेंगे। ये वाला पीस तोड़ेंगे। देखिए ये इसका मैक्सिमम। यही यहां पे हम किए थे। फाइव और थ्री। सर्कुलर समझेंगे ज्यादा अच्छा लगेगा। अब इसको देखिए हम लोग अभी तक तो कैडन पढ़े हैं हम लोग केन आता है। मैक्सिमम सम भी आता है। सर्कुलर नहीं आता है।",
+      "source": "caption",
+      "english_text": "First there is 5, then there is -2, then there is -3, then there is -6 and then there is another three. Now look, now I have told you that this is a donut. What is? There is a donut. Break off one piece from it which has the most sweetness. Meaning which is maximum. It is obvious that you will break this piece. Will break this piece. Look, this is its maximum. That's what we did here. Five and three. It will feel better if you understand it circularly. Now look at this, till now we have read Cadan, but now comes Ken. Maximum even comes. Circular does not come."
+    },
+    {
+      "start_time": 1865.76,
+      "end_time": 1890.95,
+      "text": "सर्कुलर नहीं आता है। अच्छा नहीं आता है तो कोई बात नहीं। अब एक बात बताइए अ चलिए। अब ये डोनट आपको समझ में आ गया ना कैसा दिख रहा है देखने में? अच्छा। चलिए एरे। अब इसमें देखिए दो सिनेरियो हो सकता है। सारा प्रॉब्लम कहां आ रहा है? आपको बोल रहा है कि सर्कुलर है। मतलब आपका आंसर घूम जाता है। घूमने का क्या मतलब है? कि आपका आंसर देखिए आधा आंसर आपका यहां पे आ गया। आधा आंसर यहां पे आ गया। मतलब आगे पीछे दोनों घूम गया।",
+      "source": "caption",
+      "english_text": "Circular does not come. It doesn't matter if it doesn't turn out well. Now tell me one thing. Now do you understand what this donut looks like? Good. Let's go here. Now see, two scenarios can happen. Where is all the problem coming from? Telling you that it is circular. Meaning your answer gets changed. What does it mean to roam? Look at your answer, half of your answer is here. Half the answer is here. Meaning both moved back and forth."
+    },
+    {
+      "start_time": 1890.96,
+      "end_time": 1925.11,
+      "text": "अब एक बात बताइए। एक बात जो आपको डोनट में देखने से ही पता चल रहा होगा। ये जो लाल वाला हिस्सा है ना ये मेरा क्या है? मैक्सिमम समवेरे है। सवेरे है। ये जो हरा वाला हिस्सा बच गया है ये क्या है? इसको हम लोग क्यों आंसर में इंक्लूड नहीं कर रहे हैं? हम लोग को तो मैक्सिमम सम चाहिए। तो आपका मैक्सिमम सम खाली लाल वाला क्यों है? बाकी का डोनट में क्या है आपका? बाकी का डोनट में आपका मिनिमम सम है भाई। मिनिमम सम है। मिनिमम सम है आपका बाकी का डोनट। अरे एक केक है आपको बोला गया कि आपको जो सबसे मीठा पीस",
+      "source": "caption",
+      "english_text": "Now tell me one thing. One thing that you would know just by looking at the donut. This red part, isn't it mine? The maximum is Samvere. It is morning. What is this green part that is left? Why are we not including this in the answer? We want maximum sum. So why is your maximum even empty red one? What's the rest of your donut? The remaining donut is your minimum sum, brother. The minimum is even. Minimum even is the rest of your donut. Hey there is a cake you were told that the sweetest piece you can eat"
+    },
+    {
+      "start_time": 1925.12,
+      "end_time": 1955.59,
+      "text": "लग रहा है आप वो ले लीजिए। तो आप एक पीस तोड़ दिए। आप यह वाला पीस तोड़ लिए। बाकी का काहे छोड़ दिए? उसको भी तोड़ लेते। अगर सारा अच्छा होता तो आप सारा तोड़ लेते। क्यों छोड़े उसको? कहे कि वो सड़ा हुआ पीस है। ये मिनिमम है भाई। ये मिनिमम है। ये मिनिमम है। ये डोनट का ये वाला पीस एकदम बेकार है। इसीलिए इसको हम लोग मैक्सिमम सम में नहीं इंक्लूड कर पा रहे हैं। अगर कोई इसमें से कुछ भी अगर बेकार नहीं होता इसका क्या मतलब है? कि दोनों जो छोर है ये और ये दोनों बेकार है। इसीलिए हम लोग इंक्लूड नहीं कर रहे हैं। कि आप अगर इसको इंक्लूड करेंगे तो आपका रिजल्ट गड़बड़ हो जाएगा।",
+      "source": "caption",
+      "english_text": "Looks like you can take that. So you broke a piece. You broke this piece. Why leave the rest? Would have broken that too. If everything was good then you would have broken it. Why leave him? Say he is a rotten piece of shit. This is the minimum brother. This is minimum. This is minimum. This piece of donut is absolutely useless. That is why we are not able to include it in the maximum sum. What does it mean if none of this is useless? That both this end and this end are useless. That's why we are not including people. That if you include it, your result will get messed up."
+    },
+    {
+      "start_time": 1955.6,
+      "end_time": 1990.389,
+      "text": "देख लीजिए। अगर आप -2 को अपने रिजल्ट में इंक्लूड करेंगे। आपका आंसर सिक्स बन जाएगा। चाहिए ही नहीं। हम लोग को अच्छा वाला चाहिए। तो क्यों हम इंक्लूड करेंगे इसको? कहे कि ये बेकार है। यहां से बेकारी का शुरुआत हो जाता है। हो सकता है यहां पे पॉजिटिव थ्री होगा। यहां पे नेगेटिव थ्री नहीं होगा। अभी भी देख लीजिए बेकार है। इस थ्री को इंक्लूड करने के लिए या तो आपको सॉरी यहां पे मान लीजिए 1 है। इस वन को इंक्लूड करने के लिए या तो आपको इसको इंक्लूड करना पड़ेगा तो ये -2 हो जाएगा। और फिर इसको इंक्लूड करेंगे तो -1 तब भी रहेगा। या तो आपको इंक्लूड करने के लिए -6 को इंक्लूड करके तब वन लेना पड़ेगा। -5 में आप तब भी घाटे में रहेंगे। इसीलिए ये जो बच गया है पार्ट, ये जो बच गया है, क्या",
+      "source": "caption",
+      "english_text": "Take a look. If you include -2 in your result. Your answer will become six. Not needed at all. We want a good one. So why would we include it? Say it's useless. Unemployment starts from here. It is possible that there will be a positive three here. There will be no negative three here. Still look, it's useless. To include this three, you either have to say sorry here, 1. To include this forest, you will either have to include it or it will become -2. And then if we include it then -1 will still remain. Either you have to include -6 and then take one. In -5 you will still be in loss. That's why this part that is left, this part that is left, what?"
+    },
+    {
+      "start_time": 1990.399,
+      "end_time": 2024.71,
+      "text": "है? ये बेकार है। बहुत बेकार है। मीन सम का पार्ट मीन सम का पार्ट है। देखिए अब दो सिनेरियो हो सकता है आपके में। ये डोनट वाला चीज समझ गए तो अच्छा होगा। दो सिनेरियो हो सकता है। इस एरे में आपको खोजना है। मान लीजिए ये एरे अब आपको तो एरे डोनट बना के नहीं ना देगा। आपको तो एरे एरे देगा। अब देखिए दो सिनेरियो हो सकता है। या तो आपका जो मैक्सिमम वाला सम है वो या तो कहीं पे बीच में ही आ जाए। जो हम लोग पढ़े हैं, हम लोग क्या पढ़े हैं कि बीच में आता है, घूमता नहीं है मतलब गोल-गोल नहीं घूमता है। अच्छा, तो या तो ये बीच में आ जाए जो कि अच्छी बात है। हम लोग को ये तो निकालना",
+      "source": "caption",
+      "english_text": "Is it? This is useless. Very useless. The part of the mean sum is the part of the mean sum. Look, now two scenarios can happen for you. It would be good if you understood this donut thing. Two scenarios can happen. You have to search in this array. Let's say this guy won't make donuts for you anymore. Will give you only one thing. Now see, two scenarios can happen. Either your maximum number falls somewhere in between. What we have read, what we have read is that it comes in the middle, does not rotate, that is, does not rotate in a round. Well, then either it comes in the middle which is a good thing. we have to figure this out"
+    },
+    {
+      "start_time": 2024.72,
+      "end_time": 2059.109,
+      "text": "आता है। ये तो मैक्स सम का क्वेश्चन है ना भाई। या फिर आपके पास एक ऐसा आ जाए। या फिर आपके पास एक ऐसा आ जाए जिसमें आपका रिजल्ट गोल-गोल घूम जाए। मतलब आधा रिजल्ट ये हो और आधा रिजल्ट ये हो। इस केस में ये तो केस वन है। ऐसा हो सकता है। ये केस टू है। ऐसा भी हो सकता है। इस केस में आपको समझ में आ जाना चाहिए कि जो बीच वाला पार्ट फंसा हुआ है ये वाला ये और कुछ नहीं है। मेरा मिनिमम सम है। मेरा मिनिमम सम है सब एरे का। कह कि देखिए अगर आपका लाल वाला पार्ट नहीं घूमा तब तो अच्छी बात है। आप",
+      "source": "caption",
+      "english_text": "Comes. This is a question of max sum, isn't it brother? Or you may get one like this. Or you may get one in which your result goes round and round. Meaning, half the result should be this and half the result should be this. In this case this is case one. could be possible. This is case two. This can also happen. In this case, you should understand that the middle part which is stuck is nothing else. My minimum is even. My minimum is the sum of all the array. Say, see, if your red part has not rotated then it is a good thing. you"
+    },
+    {
+      "start_time": 2059.119,
+      "end_time": 2089.03,
+      "text": "तो वही निकाल लीजिए कैडन से। अगर आपका लाल वाला पार्ट घूम जाएगा मतलब आपका हरा वाला पार्ट कभी नहीं घूमेगा। ऐसा नहीं होगा कि दोनों घूम जाएगा। तो आपका हरा वाला पार्ट अब स्ट्रेट है। ये हम क्यों बता रहे हैं? क्योंकि हम लोग अभी तक जो कैडन पढ़े हैं, हम लोग को कैडन स्ट्रेट एरे में ही आता है ना। हम लोग को कैडन स्ट्रेट एरे में आता है। तो हम लोग को स्ट्रेट एरे में ही अपना कैटेन यूज़ करना पड़ेगा। लेकिन हम लोग सर्कुलर एरे नहीं आता है। स्ट्रेट तो आता है तो आप ये यूज़ कर लीजिए। इसको ऐसे समझिए कि मान लीजिए ये इंडिया है। मान लीजिए इंडिया है। बीजेपी पूरा यहां तक जीत गई।",
+      "source": "caption",
+      "english_text": "So get the same from Caden. If your red part rotates, it means your green part will never rotate. It will not happen that both will turn around. So your green part is now straight. Why are we telling this? Because whatever Cadan we have studied till now, we understand Cadan in straight array only. We come under Caden Straight Array. So we will have to use our caten in straight array only. But we do not have circular array. If you have a straight line then use it. Understand this as if this is India. Suppose it is India. BJP won completely till here."
+    },
+    {
+      "start_time": 2089.04,
+      "end_time": 2123.589,
+      "text": "पूरा नॉर्थ जीत गई। कश्मीर जीत गई और बीजेपी पूरा साउथ भी जीत गई। पूरा तमिलनाडु जीत गई। कांग्रेस क्या जीतेगी? कांग्रेस यही तो बीच में जीतेगी। कांग्रेस यही तो बीच में जीतेगी। कांग्रेस नहीं ना हो सकता है कि कांग्रेस भी नॉर्थ साउथ घूम जाए। ना ना अगर बीजेपी देश के दोनों ओर है। अगर बीजेपी यहां है, बीजेपी नॉर्थ में भी है, साउथ में भी है, कांग्रेस पक्का बीच में होगी। कांग्रेस पक्का बीच में होगी। और अगर बीजेपी देश के बीच में है, तो हो सकता है कि कांग्रेस उधर उधर। तो, हम लोग को मतलब ही नहीं। हम लोग को बीजेपी से मतलब है। यह बात समझ में आई? कि अगर लाल वाला पार्ट बीच में है तो बहुत अच्छी बात है। अगर लाल वाला पार्ट घुमा हुआ है",
+      "source": "caption",
+      "english_text": "The entire North won. Kashmir won and BJP won the entire South also. The entire Tamil Nadu won. What will Congress win? Congress will win only in the middle. Congress will win only in the middle. It is not possible that Congress may also move to North-South. No no if BJP is on both sides of the country. If BJP is here, BJP is there in North as well as South, Congress will definitely be in the middle. Congress will definitely be in the middle. And if BJP is in the middle of the country, then maybe Congress is on the other side. So, we don't care at all. We are concerned about BJP. Did you understand this? If the red part is in the middle then it is a very good thing. If the red part is twisted"
+    },
+    {
+      "start_time": 2123.599,
+      "end_time": 2158.31,
+      "text": "तो पक्का मिनिमम जो कि हरा वाला पार्ट है वो पक्का बीच में होगा। अच्छा। आपके पास दो केस आ गया है। पहला केस क्या था? कि आपका जो मैक्सिमम था वो स्ट्रेट था। तो ये आप निकाल लीजिए। a1 इक्वल टू ये तो किडनैन है। ये तो सबको आता है। मैक्सिमम सम सब एरे स्ट्रेट अरे। आप सोचिए ही मत कि अरे सर्कुलर है क्योंकि आप मान के चल रहे हैं कि मेरा आंसर सही आ रहा है। आंसर घूम ही नहीं रहा है। तो अरे सर्कुलर हमको क्या मतलब है? ये तो आप किडन लगा लिए। अच्छा। अगला जो आंसर है इसमें आपको लगता है कि मेरा यहां पर घूम गया है। घूम गया है। कोई बात नहीं। आपको हरा वाला पार्ट तो है ना बीच में आपके। ये तो हम लोग प्रूफ कर चुके हैं कि ये बीच में ही",
+      "source": "caption",
+      "english_text": "So the minimum which is the green part will definitely be in the middle. Good. You have got two cases. What was the first case? That your maximum was straight. So take this out. a1 is equal to this is kidnan. Everyone knows this. Maximum sum sub array is straight array. Don't even think that it is circular because you are assuming that my answer is correct. The answer is not rotating. So what does circular mean to us? You have planted this kid. Good. In the next answer, you will feel that I have gone astray here. Has turned around. No problem. You have the green part in the middle, right? We have already proved that this"
+    },
+    {
+      "start_time": 2158.32,
+      "end_time": 2192.31,
+      "text": "है। आप हरा वाला पार्ट निकाल लीजिए। अब क्या कीजिए? मीन आंसर निकाल लीजिए। कैसे? कैडन यूज़ करके। सिंपल कैडन यूज़ करिए। क्योंकि हरा वाला पार्ट बीच में है। अब आरा सर्कुलर है कि रेक्टेंगल है। हमको कोई फर्क नहीं पड़ता है। अच्छा। अब आपको हरा वाला पार्ट मिल गया। लेकिन आपको चाहिए क्या? आपको लाल वाला पार्ट चाहिए। आपको हरा नहीं चाहिए। तो पूरे सम ऑफ़ एरे से अगर आप माइनस कर दें इस मीन आंसर को जो कि हरा वाला पार्ट है। तो आपको ये लाल पार्ट मिल जाएगा। लाल पार्ट मिल जाएगा। मिल जाएगा ना भाई? बीजेपी को यहां 10 वोट आया। यहां पे",
+      "source": "caption",
+      "english_text": "Is. You take out the green part. What to do now? Find out the mean answer. How? By using cadence. Use simple cadence. Because the green part is in the middle. Now is the saw circular or rectangular? It doesn't matter to us. Good. Now you got the green part. But what do you want? You need the red part. You don't want green. So from the whole sum of array, if you subtract this mean answer which is the green part. So you will get this red part. You will get the red part. Will you get it, brother? BJP got 10 votes here. here on"
+    },
+    {
+      "start_time": 2192.32,
+      "end_time": 2226.71,
+      "text": "20 वोट आया। पूरे इंडिया में वोट है 50 तो कांग्रेस को कितना आया होगा? 50 - 10 - 20 तो 30 इतना ही आया होगा ना? या तो उल्टा इसको देख लीजिए। पूरे इंडिया में वोट है 50। कांग्रेस का आपको पता चलेगा कांग्रेस को 30 आया। बीजेपी को कितना आया होगा? 50 - 30 20 तो सिंपल मैथ है। आप दो पार्ट निकाल लिए। आपको दोनों लाल पार्ट आ गया ना? ये भी आपका लाल पार्ट है। जो आपके से निकाले हैं। A1 और ये भी आपका लाल पार्ट है जो आप इससे सम माइनस मिनिमम से निकाले हैं। दोनों का मैक्सिमम ले लीजिए। क्योंकि दो और दो ऑप्शन है ना। ऊपर भी आ सकता है नीचे भी। दोनों का आंसर ले लीजिए। मैक्स",
+      "source": "caption",
+      "english_text": "20 votes came. If the votes in entire India are 50 then how much would Congress have got? 50 - 10 - 20 so 30 would be that much, right? Or look at it in reverse. Votes in entire India are 50. You will know that Congress got 30 rupees. How much would BJP have earned? 50 - 30 20 is simple math. You took out two parts. Did you get both the red parts? This is also your red part. Which have been extracted from you. A1 And this is also your red part which you have derived from this sum minus minimum. Take maximum of both. Because there are two and two options. Can come up as well as down. Take the answers of both. Max"
+    },
+    {
+      "start_time": 2226.72,
+      "end_time": 2257.03,
+      "text": "ले लीजिए। रिटर्न कर दीजिए। सिंपल हो गया। दोनों क्रेडिन आपको समझा चुके हैं। है ना? बस सिंपल हो गया। तो कभी भी देखिए कभी भी क्वेश्चन देख के घबराना नहीं है। क्वेश्चन देख केन का क्वेश्चन देख के घबराना नहीं है। क्या करना है? घबराना नहीं है। क्योंकि क्वेश्चन केन का बहुत आसान होता है। मतलब पूरा उसमें केन लगता है विथ ए ट्विस्ट। विथ ए ट्विस्ट। हम लोग बहुत सारा ट्विस्ट वाला क्वेश्चन देख लिए। हम लोग एक प्रोडक्ट का ट्विस्ट देख लिए जिसमें आपको दो मैक्स लेना पड़ा। मैक्स भी लेना पड़ा।",
+      "source": "caption",
+      "english_text": "Take it. Please return it. It became simple. Both Credins have explained it to you. Isn't it? It just became simple. So see anytime, don't panic after seeing the question. Don't panic after seeing Ken's question. What is the plan? Don't panic. Because the question can be very easy. Meaning, it all sounds like Ken with a twist. With a twist. We saw many twisty questions. We saw a twist on a product in which you had to take two Max. Had to take Max also."
+    },
+    {
+      "start_time": 2257.04,
+      "end_time": 2288.069,
+      "text": "मिनी भी लेना पड़ा बेस्ट में। हम लोग एक वन डिलीट का ट्विस्ट देख लिए जिसमें आपको नो डिलीट लेना पड़ा। वन डिलीट लेना पड़ा। हम लोग एब्सोल्यूट का ट्विस्ट देख लिए। हम लोग इसका सर्कुलर का ट्विस्ट देख लिए। हमको इसी इतना ही ट्विस्ट होता है। इससे ज्यादा ट्विस्ट नहीं होता है किडन। है ना? तो ये हो गया टोटल छह क्वेश्चन। आप किडन पे सॉल्व कर चुके हैं। मेरे समझ के हिसाब से इतना क्वेश्चन मोर देन इनफ है आपको किडन समझाने के लिए और आपसे नया क्वेश्चन बनवाने के लिए इंटरव्यू में। तो चलिए आज का रिव्यू सॉरी रिवीजन वीडियो हो चुका है।",
+      "source": "caption",
+      "english_text": "Had to take mini also in best. We saw a twist of one delete in which you had to take no delete. Had to take one delete. We have seen the twist of Absolute. We saw its circular twist. We get only this much twist. It doesn't get much more twist than this, kidden. Isn't it? So this is a total of six questions. You have solved Kidn Pay. According to my understanding, this question is more than enough to make you understand and ask new questions from you in the interview. So today's review is done, sorry revision video."
+    },
+    {
+      "start_time": 2288.079,
+      "end_time": 2293.359,
+      "text": "कल से मिलते हैं और पढ़ते रहिए और सीखते रहिए।",
+      "source": "caption",
+      "english_text": "See you tomorrow and keep reading and learning."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

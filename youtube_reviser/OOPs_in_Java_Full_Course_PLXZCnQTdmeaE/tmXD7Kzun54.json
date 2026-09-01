@@ -1,0 +1,919 @@
+{
+  "video_id": "tmXD7Kzun54",
+  "video_title": "Object Oriented Programming  in Java | Classes, Objects, new Keyword | Java Full Course #12",
+  "video_number": 1,
+  "chunks": [
+    {
+      "start_time": 0.16,
+      "end_time": 35.12,
+      "text": "हां जी तो करें स्टार्ट। वेलकम बैक कोडर आर्मी हमारी इस जावा की सीरीज में और आज हम एक बहुत ही इंटरेस्टिंग टॉपिक के बारे में बात करने वाले हैं जो है ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग। उसे शॉर्ट में हम बोलते हैं ऊप्स। अब इसके बारे में ना आपने बहुत बार सुना होगा और अगर आप ऑलरेडी ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग के बारे में जानते भी हो तब भी आपको बहुत सारे डाउट्स होंगे इसको लेके। राइट? आज इस वीडियो में हम वो सारे डाउट क्लियर करने वाले हैं और अगर आपने इसके बारे में नहीं सुना आप बिल्कुल फर्स्ट टाइम ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग पढ़ने वाले हो तब भी आपको बहुत ही ज्यादा मजा आने वाला है क्योंकि हम बिल्कुल स्क्रैच से चलेंगे और",
+      "source": "transcript_api",
+      "english_text": "Yes, let's start. Welcome back Coder Army to our Java series and today we are going to talk about a very interesting topic which is Object Oriented Programming. We call it Oops in short. Now you must have heard about it many times and even if you already know about Object Oriented Programming, you will still have many doubts regarding it. Right? Today in this video, we are going to clear all those doubts and if you have not heard about it, you are going to study Object Oriented Programming for the first time, still you are going to have a lot of fun because we will walk from scratch and"
+    },
+    {
+      "start_time": 32.96,
+      "end_time": 65.28,
+      "text": "अपने कांसेप्ट को बिल्ड करेंगे। तो चलो फटाफट चलते हैं स्क्रीन पे बहुत मजा आएगा। हां जी। तो सबसे पहले ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग होती क्या है? अच्छा ये बाद में समझेंगे। उससे पहले जो अभी तक हमें पता है उसके बारे में बात करते हैं। तो इमेजिन करो हम कुछ कोड लिख रहे हैं। ठीक है? और मैंने कहा कि मुझे ना कोड में एक नेम को रिप्रेजेंट करना है। एक वेरिएबल बनाना है जिसका नाम है नेम। ठीक है? आप कहोगे कोई बात नहीं भैया हो जाएगा। अब नेम है तो उसको हम स्ट्रिंग में रिप्रेजेंट कर सकते हैं। तो मैंने लेट्स से बनाया",
+      "source": "transcript_api",
+      "english_text": "Will build your concept. So let's go quickly, it will be a lot of fun on screen. Yes sir. So first of all what is object oriented programming? Well, we will understand this later. Before that, let's talk about what we know so far. So imagine we are writing some code. Ok? And I said that I have to represent a name in Na Code. A variable has to be created whose name is name. Ok? You say no problem brother, it will be done. Now if we have a name, we can represent it in a string. so i made it with lettuce"
+    },
+    {
+      "start_time": 62.48,
+      "end_time": 97.36,
+      "text": "स्ट्रिंग नेम और यहां पे मैं उसकी कोई वैल्यू सेट कर सकता हूं। लेट्स से आदित्य। बहुत बढ़िया। अब मैंने नेम को तो रिप्रेजेंट कर दिया आदित्य के नाम को। ठीक है? अब मेरे को लग रहा है यार इस आदित्य की ना मेरे को ऐज को भी स्टोर करना है। तो आप कहोगे कोई बात नहीं भैया मैं एक ऐज का वेरिएबल बना दूंगा। इंट ऐज और लेट्स से हमने उसमें डाल दिया 28 ये भी हो गया। ओके ठीक है? मैंने आदित्य का नाम स्टोर कर लिया। आदित्य की ऐज स्टोर कर ली। अच्छा मुझे अगर आदित्य का अ रोल नंबर भी स्टोर करना हो तो लेट्स से वो स्टूडेंट है। ठीक है? किसी कॉलेज में मुझे उसका रोल नंबर भी",
+      "source": "transcript_api",
+      "english_text": "String name and here I can set any value for it. Let's say Aditya. very nice. Now I have represented the name to Aditya's name. Ok? Now I feel that not only this Aditya but also my age has to be stored. So you say no problem brother, I will create an age variable. From int as and lets we put in it 28 and this is also done. Okay all right? I stored Aditya's name. Stored Aditya's age. Well, if I want to store Aditya's roll number also then since he is a student. Ok? I also need his roll number in some college."
+    },
+    {
+      "start_time": 95.52,
+      "end_time": 129.36,
+      "text": "स्टोर करना है। कोई बात नहीं हम करेंगे इंट रोल नंबर। यह सब जो अभी तक हमने सीखा है और लेट्स से आदित्य का रोल नंबर है 1001 हमने यह भी स्टोर करवा लिया। ठीक है? अच्छा अब आदित्य का कॉलेज भी स्टोर करवा लेते हैं। तो अगेन स्ट्रिंग कॉलेज क्योंकि कॉलेज भी एक स्ट्रिंग में होगा और लेट्स से यहां पे मैंने डाल दिया आईआईटी गुवाहाटी। ठीक है? बहुत बढ़िया। ओके। तो मैंने यहां पे आदित्य की सारी चीजें स्टोर करवा ली। अभी हम ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग नहीं समझ रहे। अभी हम बेसिक जो हमें पता है उसके बारे में कुछ बात कर रहे हैं। ठीक",
+      "source": "transcript_api",
+      "english_text": "Have to store. No problem we will enter roll number. All this we have learned till now and from Lets Aditya's roll number is 1001, we also got it stored. Ok? Okay, now let's get Aditya's college store also. So again string college because the college will also be in a string and here I have put IIT Guwahati. Ok? very nice. Ok. So I got all Aditya's things stored here. Right now we do not understand object oriented programming. Right now we're just talking about the basics of what we know. okay"
+    },
+    {
+      "start_time": 127.439,
+      "end_time": 160.239,
+      "text": "है? इसको मैं ऊपर से हटा भी देता हूं। हां जी। तो ये मैंने आदित्या की कुछ चार डिटेल्स को स्टोर करवा लिया। ओके। अभी आपको कुछ प्रॉब्लम समझ आ रही है यहां पे? आपको प्रॉब्लम दिख रही होगी कि एक आदित्य को एक आदित्य की इंफॉर्मेशन को स्टोर करवाने के लिए मुझे यहां चार इंडिपेंडेंट वेरिएबल की जरूरत पड़ रही है। नेम, एज, रोल नंबर, कॉलेज। है ना? अब ये जो चार इंडिपेंडेंट वेरिएबल्स हैं ना ये कोड में अलग से फैले हुए हैं। ठीक है? मतलब मेरे पास ऐसा कोई ब्लॉक नहीं है कि मैं बोलूं इस ब्लॉक को मैं बोल रहा हूं आदित्य।",
+      "source": "transcript_api",
+      "english_text": "Is it? I also remove it from above. Yes sir. So I got some of Aditya's details stored. Ok. Now do you understand the problem here? You must be seeing the problem that to store the information of one Aditya, I need four independent variables here. Name, Age, Roll Number, College. Isn't it? Now these four independent variables are spread separately in the code. Ok? Meaning I don't have any such block that I can speak on this block, I am calling it Aditya."
+    },
+    {
+      "start_time": 158.239,
+      "end_time": 189.36,
+      "text": "राइट? ऐसे मैंने कोई इसको कोई ब्लॉक भी नहीं डाला हुआ। मैंने इनको अलग-अलग रखा हुआ है। ओके? तो मेरे को ना समझ नहीं आ रहा कि ये नेम किसका नेम है? क्या ये ऐज भी उसी पर्सन की है जिसके हम नेम की बात कर रहे हैं। क्या ये रोल नंबर भी उसी पर्सन का है? क्या ये कॉलेज भी उसी पर्सन का है? मेरे को देख के समझ नहीं आ रहा कोड में। है ना? क्योंकि एक अगर मैं एक स्टूडेंट की बात करूं जिसका नाम है आदित्य। ठीक है? उसके पास ये चार कैरेक्टरिस्टिक्स हैं। ठीक है? और ये कैरेक्टरिस्टिक्स मैंने अलग-अलग वेरिएबल के थ्रू रिप्रेजेंट की है। ओके? अभी देखते हैं अभी और समझ आएगा। अभी हम क्या करते हैं? हम एक और स्टूडेंट की बात करते हैं।",
+      "source": "transcript_api",
+      "english_text": "Right? As such, I have not even put any block on it. I have kept them separate. Ok? So I am not able to understand whose name is this? Is this age also of the same person whose name we are talking about? Does this roll number also belong to the same person? Does this college also belong to the same person? I can't understand the code by looking at it. Isn't it? Because if I talk about a student whose name is Aditya. Ok? He has these four characteristics. Ok? And I have represented these characteristics through different variables. Ok? Let's see now and we will understand more. What do we do now? Let us talk about another student."
+    },
+    {
+      "start_time": 187.68,
+      "end_time": 220.159,
+      "text": "लेट्स से इसके बाद मुझे एक और स्टूडेंट को रिप्रेजेंट करना है जिसका नाम है रोहित। ठीक है? ओके। बहुत बढ़िया। तो क्या करूं? उसका पहले मैं नेम सेव कराता हूं। अब अगेन उसके लिए भी मुझे एक स्ट्रिंग चाहिए होगा। ठीक है? अब ऑब्वियसली यहां पे मैं वेरिएबल नेम नहीं रख सकता क्योंकि वो तो मैंने ऑलरेडी रखा हुआ है। तो मुझे नेम टू रखना पड़ेगा। है ना? यहां पे लेट्स से मैं कर दूंगा रोहित। कुछ इस तरीके से। और इसी तरीके से मैं ये बाकी वेरिएबल एज, रोल नंबर और कॉलेज भी स्टोर करा लूंगा। तो एक काम करते हैं इनको सीधा हम यहां से कट करते हैं।",
+      "source": "transcript_api",
+      "english_text": "After this, I have to represent another student whose name is Rohit. Ok? Ok. very nice. So what should I do? First I save his name. Now again I would need a string for that also. Ok? Now obviously I cannot keep the variable name here because I have already kept it. So I will have to keep name two. Isn't it? Rohit, I will do it here later. Something like this. And in the same way I will store the remaining variables age, roll number and college also. So let's do one thing, we cut them straight from here."
+    },
+    {
+      "start_time": 216.72,
+      "end_time": 250.319,
+      "text": "सॉरी कॉपी कर लेते हैं और यहां पे पेस्ट कर देते हैं। कुछ ऐसे ये थोड़ा एक्स्ट्रा कट हो गया। हां जी। कुछ इस तरीके से। तो मैं क्या करता हूं? ऐज को ऐज टू कर देता हूं। रोल नंबर को रोल नंबर टू कर देता हूं। कॉलेज को कॉलेज टू कर देता हूं। फिर मैं ऐज को 28 ही रहने देता हूं। लेट्स से रोहित का रोल नंबर हो गया हमारा 102 और कॉलेज को भी मैं आईआईटी गुहाटी ही रहने देता हूं। ठीक है? तो मैंने बस थोड़े से चेंजेस करें। तो आप समझ रहे हो? अब अगेन अब मुझे रोहित को",
+      "source": "transcript_api",
+      "english_text": "Sorry, let's copy it and paste it here. This is how this little extra got cut. Yes sir. Something like this. So what do I do? I turn age into age. I change the roll number to roll number two. I turn college into college. Then I leave the age as 28. Due to lates, Rohit's roll number became 102 and I also let the college remain IIT Guhati. Ok? So I just made a few changes. So do you understand? Now again now I have to Rohit"
+    },
+    {
+      "start_time": 248.4,
+      "end_time": 283.199,
+      "text": "रिप्रेजेंट करने के लिए दोबारा से एक सेट ऑफ चार वेरिएबल्स की जरूरत पड़ी इन चार वेरिएबल्स की। है ना? तो मैं बेसिकली कहना चाहता हूं ये मेरा आदित्य है और ये रोहित है। पर कोड में देख करके मुझे सही से पता नहीं चल रहा। मुझे पता नहीं चल रहा ये ऐज टू किसके अंदर आती है? ये रोल नंबर टू क्या रोहित को रिप्रेजेंट कर रहा है या आदित्य को? कॉलेज टू किसको रिप्रेजेंट कर रहा है? राइट? बहुत सारे मेरे मन में डाउट्स आ रहे हैं। पर अभी तक तो हम ऐसे ही कोड लिखते थे। ओके? चलो अभी हम कुछ प्रॉब्लम्स को देख रहे हैं। तो एक और प्रॉब्लम मैं आपको बताता हूं। लेट्स से कल को मैं एक फंक्शन बनाता हूं जो मुझे ना एक",
+      "source": "transcript_api",
+      "english_text": "Again a set of four variables was required to represent these four variables. Isn't it? So I basically want to say, this is my Aditya and this is Rohit. But looking into the code I am not able to figure it out properly. I don't know under whom this Age Two comes? Is this role number two representing Rohit or Aditya? Who is College Two representing? Right? Many doubts are coming in my mind. But till now we used to write code like this. Ok? Let us look at some problems now. So let me tell you one more problem. Let's make tomorrow a function that gives me no"
+    },
+    {
+      "start_time": 281.12,
+      "end_time": 315.28,
+      "text": "यूजर की सारी डिटेल्स को प्रिंट करता है। एक स्टूडेंट की लेट से मुझे उसका नाम, रोल नंबर, ऐज और उसका कॉल सब कुछ प्रिंट करना है। तो मैं एक फंक्शन बना दूंगा प्रिंट। है ना? ऑब्वियसली आपको पता है हम फंक्शन कैसे बनाते हैं? हम फंक्शन को बाहर अ मेन फंक्शन के बाहर बना सकते हैं। तो लेट्स से वॉइड प्रिंट आप मान के चलो मेन के बाहर है। ठीक है? अभी तो मैं आपको बस एक सीरीज दिखा रहा हूं। ये सारा कोड मेन के अंदर लिखा होगा अपने मेन फंक्शन के और ये मेन फंक्शन के बाहर लिखा होगा। उसको मैं मेन में कॉल करा लूंगा। पर वॉइड प्रिंट मैं कैसे बनाऊंगा? मैं यहां पे एक पैरामीटर पास कर लूंगा। और पैरामीटर में क्या-क्या",
+      "source": "transcript_api",
+      "english_text": "Prints all the details of the user. From a student's late, I have to print his name, roll number, age and his call. So I will create a function print. Isn't it? Obviously you know how we create functions? We can create the function outside the main function. So lets print void you assume let's be outside of main. Ok? Right now I am just showing you a series. All this code will be written inside the main function and this will be written outside the main function. I will call him in main. But how do I make a void print? I'll pass a parameter here. And what about the parameters?"
+    },
+    {
+      "start_time": 311.12,
+      "end_time": 336.639,
+      "text": "होगा? लेट्स से इसको एक नेम चाहिए। एक ऐज चाहिए। है ना? ऐसे ही एक रोल नंबर चाहिए। ऐसे ही एक कॉलेज चाहिए तो यह सारी चीजें इसे चाहिए तब जाकर के यह इसे प्रिंट कर पाएगा और आपको पता है हम प्रिंट कैसे कर सकते हैं? कुछ नहीं। हम बस इसको थोड़ा सा मैं छोटा कर लेता हूं। हां, हम बस सिस्टम डॉट आउट डॉट प्रिंट एलn कॉल कर सकते हैं।",
+      "source": "transcript_api",
+      "english_text": "Will it happen? It needs a name from Let's. Need an edge. Isn't it? Need a roll number like this. If we want a college like this then it needs all these things only then it will be able to print it and do you know how we can print it? Nothing. Let's just make it a little bit smaller. Yes, we can just call system dot out dot print l n."
+    },
+    {
+      "start_time": 334.88,
+      "end_time": 367.919,
+      "text": "राइट? मैं यहां पे लिख नहीं रहा पर आप समझ गए कि हम इसको सिंपली प्रिंट कर सकते हैं। तो अब आप देख रहे हो एक और प्रॉब्लम ये कि जब भी मुझे एक स्टूडेंट को प्रिंट करना होगा ना मुझे ये चारों डिटेल्स एक फंक्शन में पास करनी होगी। एक भी चीज अगर मैं भूल गया तो मैं प्रॉपर्ली स्टूडेंट को प्रिंट नहीं कर पाऊंगा। है ना? तो अब ना मुझे बहुत सारी सिचुएशन समझ आ रही है। बहुत सारी प्रॉब्लम समझ आ रही है। ठीक है? तो जो मुझे सारी प्रॉब्लम समझ आ रही है ना फटाफट पहले एक बार उसको लिस्ट डाउन कर लेते हैं और फिर आगे बढ़ते हैं। तो देखो मैंने क्या किया? मैंने वो सारी प्रॉब्लम्स को लिस्ट डाउन कर लिया जो अभी हमें ऊपर फेस हो रही थी। सबसे पहली",
+      "source": "transcript_api",
+      "english_text": "Right? I am not writing here but you understand that we can simply print it. So now you see another problem that whenever I have to print a student, I have to pass these four details in one function. If I forget even one thing, I won't be able to print the student properly. Isn't it? So now I am not able to understand many situations. Many problems are understandable. Ok? So, as far as I understand the problem, let's first list it down and then move ahead. So look what I did? I listed down all the problems we were facing right now. the very first"
+    },
+    {
+      "start_time": 365.919,
+      "end_time": 399.68,
+      "text": "प्रॉब्लम है नीड अ लॉट ऑफ इंडिपेंडेंट वेरिएबल टू रिप्रेजेंट वन स्टूडेंट। ये तो हमने देखा ही था। एक स्टूडेंट को रिप्रेजेंट करने के लिए देखो हमें चार इंडिपेंडेंट वेरिएबल की जरूरत पड़ रही थी। है ना? तो मैं कह रहा था कि हमारा स्टूडेंट है कहां? राइट? स्ट्रिंग नेम, इंट, एज, इंट रोल नंबर, स्ट्रिंग कॉलेज ये सब मिलाकर के किसी तरह आदित्य को रिप्रेजेंट कर रहे हैं। है ना? पर ये तो इंडिपेंडेंट वेरिएबल है। राइट? ये नेम और ऐज और रोल नंबर और कॉलेज आपस में इंडिपेंडेंट है एक दूसरे से। है ना? तो मुझे बेसिकली कोड को देख के समझ नहीं आ रहा कि ये एक स्टूडेंट है। वो तो हमने लिखा है तो हमें पता है कि हम इसको ऐसे इमेजिनरी ब्लॉक्स में डाल रहे हैं। ये सब इमेजिनरी ब्लॉक्स हैं। बट एक्चुअली कोड",
+      "source": "transcript_api",
+      "english_text": "The problem is we need a lot of independent variables to represent one student. We had already seen this. See, to represent one student we needed four independent variables. Isn't it? So I was saying where is our student? Right? String name, int, age, int roll number, string college, all these together are representing Aditya in some way. Isn't it? But this is an independent variable. Right? This name, age, roll number and college are independent from each other. Isn't it? So basically looking at the code I cannot understand that this is a student. We have written it so we know that we are putting it in such imaginary blocks. These are all imaginary blocks. but actually code"
+    },
+    {
+      "start_time": 397.36,
+      "end_time": 424.0,
+      "text": "में तो कोई ब्लॉक नहीं है। राइट? ओके? तो अगला पॉइंट देखते हैं। इफ आई पास द स्टूडेंट टू अ फंक्शन, आई नीड टू पास ऑल द फोर वेरिएबल्स। ऑब्वियसली यह भी हमने देख लिया कि जब मेरे को इसके किसी फंक्शन में पास करना पड़ा। जैसे मैंने प्रिंट फंक्शन बनाया तो मुझे क्या करना पड़ा? मुझे सारे वेरिएबल्स को पास करना पड़ा। अगर मैं एक भी भूल गया तो मेरा स्टूडेंट प्रिंट नहीं हो पाएगा प्रॉपर्ली। है ना? और इस प्रिंट फंक्शन को भी नहीं पता कि ये क्या कर रहा है। है ना? ये तो बस इंडिपेंडेंट चार वेरिएबल लेता है। उनको प्रिंट कर देता है।",
+      "source": "transcript_api",
+      "english_text": "There is no block in me. Right? Ok? So let's see the next point. If I pass the Student to a function, I need to pass all the four variables. Obviously we also saw this when I had to pass in any of its functions. Like when I created a print function, what did I have to do? I had to pass all the variables. If I forget even one, my student will not be able to print properly. Isn't it? And this print function doesn't even know what it's doing. Isn't it? It simply takes four independent variables. Prints them."
+    },
+    {
+      "start_time": 422.0,
+      "end_time": 454.72,
+      "text": "तो बेसिकली हमारे कोड को ना कोई आईडिया नहीं है कि हम कंसेप्चुअली एक स्टूडेंट को रिप्रेजेंट कर रहे हैं। राइट? तीसरा देख लो। आई नीड टू क्रिएट अ न्यू सेट ऑफ वेरिएबल। अगर मुझे एक नए स्टूडेंट को रिप्रेजेंट करना है वो भी हमने देखा कि अगर हमें रोहित को बनाना पड़ा तो मुझे नेम टू एज टू रोल नंबर टू कॉलेज टू इस तरह के वेरिएबल्स लेने पड़े। अब सपोज़ करो मुझे कल को एक और स्टूडेंट बनाना है। फिर मुझे वो चार वेरिएबल लेने पड़ेंगे। उनके नेम थोड़े से चेंज करने पड़ेंगे। नेम थ्री एज थ्री कुछ इस तरीके से। है ना? ओके। और लास्ट बहुत इंटरेस्टिंग है। देखो मैंने यहां पे लिखा है नो अथॉरिटी ओवर डेटा। क्या मतलब",
+      "source": "transcript_api",
+      "english_text": "So basically our code has no idea that we are conceptually representing a student. Right? Look at the third one. I need to create a new set of variables. If I have to represent a new student, that too we saw that if we had to create Rohit, then I had to take variables like name, age, roll number, college, etc. Now suggest that I have to make another student tomorrow. Then I have to take those four variables. Their names will have to be changed slightly. Name three as three something like this. Isn't it? Ok. And the last one is very interesting. Look, I have written here no authority over data. what does it mean"
+    },
+    {
+      "start_time": 451.759,
+      "end_time": 485.759,
+      "text": "इसका? इसका मतलब ये कि जब हमने ये चार वेरिएबल्स ऊपर डिक्लेअर करें तो इस चार वेरिएबल्स को ओन कौन करता है? अथॉरिटी किसकी है इसके पास? फॉर एग्जांपल मैंने कहा यह जो नेम, एज, रोल नंबर और आपका कॉलेज है। ठीक है? यह तो इंडिपेंडेंट वेरिएबल है। कोड के हिसाब से इनका आपस में कोई लिंक नहीं है। पर अगर मैं बात करूं कि मुझे अगर एक स्टूडेंट को रिप्रेजेंट करना है तो ये सारे आपस में रिलेटेड होने चाहिए ना। ये सारे एक स्टूडेंट को रिप्रेजेंट करते हैं। तो ये सारे आपस में रिलेटेड होने चाहिए। तो कोई तो एक एक होना चाहिए जो इनको ओन करे। है ना? तो अथॉरिटी नहीं",
+      "source": "transcript_api",
+      "english_text": "its? This means that when we declare these four variables above, then who owns these four variables? Who has the authority? For example, I said this is your name, age, roll number and your college. Ok? This is an independent variable. According to the code, there is no link between them. But if I talk about if I have to represent a student, then all these should be related to each other. All of them represent one student. So all these should be related to each other. So there must be someone who owns them. Isn't it? so no authority"
+    },
+    {
+      "start_time": 484.16,
+      "end_time": 509.84,
+      "text": "है किसी के पास डेटा कि कोई भी आकर के इसको चेंज कर सकता है। सब इसको इंडिपेंडेंट मान सकते हैं। ओके? इसके बारे में आपको ज्यादा समझ आएगा जब हम धीरे-धीरे आगे बढ़ेंगे। ठीक है? बट आई होप आप सारी प्रॉब्लम समझ गएगे। ठीक है? ये चार प्रॉब्लम्स हैं हमारे पास जो हमें फेस करनी पड़ रही हैं। अगर हम अभी तक जो कोड लिखते आए थे उस तरह का कोड लिखेंगे। ठीक है? तो यहां पे इन्हीं सारी प्रॉब्लम्स को सॉल्व करने के लिए जन्म होता है किसका?",
+      "source": "transcript_api",
+      "english_text": "Does anyone have the data that anyone can come and change it. Everyone can consider it independent. Ok? You will understand more about this as we move forward slowly. Ok? But I hope you will understand the whole problem. Ok? These are the four problems we have to face. If we write the kind of code we have been writing till now. Ok? So who is born here to solve all these problems?"
+    },
+    {
+      "start_time": 507.039,
+      "end_time": 542.0,
+      "text": "जन्म होता है ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग का। ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग। अब ये है क्या? ठीक है? अब हम इसके बारे में बात करेंगे। सबसे पहले एक मिथ दूर कर देते हैं। देखो ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग पहली बात तो एक पूरा का पूरा अलग प्रोग्रामिंग पैराडाइम है। ठीक है? पूरा का पूरा पैराडाइम मतलब एक कोड लिखने का तरीका। ठीक है? तो अभी तक जैसे हम किसी तरीके से कोड लिख रहे थे। है ना? ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग एक अलग तरीका है कोड लिखने का या कोड के बारे में सोचने का। तो जब आप कोड लिखते हो, आप",
+      "source": "transcript_api",
+      "english_text": "Object oriented programming is born. object oriented Programming. Now what is this? Ok? Now we will talk about it. First of all let's dispel one myth. Look, object oriented programming is, first of all, a completely different programming paradigm. Ok? The whole paradigm means a way of writing code. Ok? So till now it's like we were writing code in some way. Isn't it? Object Oriented Programming is a different way of writing code or thinking about code. So when you write code, you"
+    },
+    {
+      "start_time": 540.16,
+      "end_time": 572.56,
+      "text": "सोचते हो आपको कोड कैसे लिखना है? तो ये एक तरीका बताता है कोड लिखने का। ठीक है? इसके अलावा भी हमारे पास तरीके हैं कोड लिखने के। अब जो हम जावा पढ़ रहे हैं वो एक ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग लैंग्वेज है। पर ऐसी भी लैंग्वेज है जो ऑब्जेक्ट ओरिएंटेड नहीं है। ठीक है? वो फंक्शनल लैंग्वेजज़ कहलाती हैं। पर हम उसके बारे में भी बात नहीं कर रहे। हम ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग के बारे में बात करने वाले हैं। तो हम इसके बारे में फोकस करेंगे। ठीक है? ओके? तो देखो सबसे पहले बात करते हैं। हमने प्रॉब्लम्स को देख लिया। अब मैं कह रहा हूं कि ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग कहती क्या है? कैसे",
+      "source": "transcript_api",
+      "english_text": "Wondering how to write code? So this tells one way to write code. Ok? Apart from this we also have ways to write code. Now what we are studying Java is an object oriented programming language. But there are also languages ​​which are not object oriented. Ok? They are called functional languages. But we are not talking about that either. We are going to talk about object oriented programming. So we will focus about that. Ok? Ok? So look let's talk first. We have seen the problems. Now I am saying what does Object Oriented Programming say? how"
+    },
+    {
+      "start_time": 570.0,
+      "end_time": 603.279,
+      "text": "उन प्रॉब्लम्स को सॉल्व करती है? तो देखो इसका कांसेप्ट ये है कि ये आपसे क्वेश्चन पूछती है। सबसे पहले मैं चलो आपसे वही क्वेश्चन पूछता हूं कि हम कोड क्यों लिखते हैं? व्हाई डू वी राइट कोड्स? ठीक है? तो आप कहोगे भैया एक ऐसा क्वेश्चन है हम कोड लिखते हैं किसी प्रॉब्लम को सॉल्व करने के लिए। है ना? एट द एंड ऑफ़ द डे आप एक प्रॉब्लम ही तो सॉल्व कर रहे हो। अगर आप सिंपल एक कैलकुलेटर ऐप भी बनाते हो। ठीक है? और उसमें आप कोई भी एडिशन, सब्ट्रैक्शन, मल्टीप्लिकेशन वगैरह परफॉर्म कर सकते हो। आप 2 + 3 करोगे तो आंसर फाइव आ जाएगा। तो यहां पे भी तो आप एक प्रॉब्लम को ही सॉल्व कर रहे हो। राइट? प्रॉब्लम क्या है? कि हम दो नंबर्स लेते हैं। उनका",
+      "source": "transcript_api",
+      "english_text": "Solves those problems? So see, its concept is that it asks you questions. First of all, let me ask you the same question, why do we write code? Why Do We Write Codes? Ok? So you will say, brother, this is such a question, we write code to solve a problem. Isn't it? At the end of the day you are solving a problem. Even if you create a simple calculator app. Ok? And in it you can perform any addition, subtraction, multiplication etc. If you do 2 + 3, the answer will be five. So here also you are solving a problem only. Right? What is the problem? That we take two numbers. their"
+    },
+    {
+      "start_time": 601.68,
+      "end_time": 633.76,
+      "text": "एडिशन क्या होगा या उनका सब्ट्रैक्शन, मल्टीप्लिकेशन, डिवीजन क्या होगा? है ना? तो बेसिकली कहने का मतलब बस इतना ही है कि आप कोड लिखते हो किसी प्रॉब्लम को सॉल्व करने के लिए। और वो प्रॉब्लम्स कौन सी होती है? वो एक रियल वर्ल्ड प्रॉब्लम होती है। जो हमारी दुनिया है, हमारी दुनिया में जो भी प्रॉब्लम्स अराइज़ होती है, उसको सॉल्व करने के लिए हम एक कोड लिखते हैं। कोड क्या हो गया? किसी एप्लीकेशन को हमने कोड कह दिया, वेबसाइट लिख दी, हमने उसको कोड कह दिया वगैरह-वगैरह। तो किसी भी रियल वर्ल्ड प्रॉब्लम को सॉल्व करने के लिए ही तो हम कोई वेबसाइट सॉफ्टवेयर एप्लीकेशन बनाते हैं। राइट? चलो बहुत बढ़िया। अब",
+      "source": "transcript_api",
+      "english_text": "What will be the addition or what will be their subtraction, multiplication, division? Isn't it? So basically it just means that you write code to solve a problem. And what are those problems? That is a real world problem. Whatever problems arise in our world, we write a code to solve it. What happened to the code? We called an application a code, we wrote a website, we called it a code and so on. So we create a website software application only to solve any real world problem. Right? Okay, that's great. now"
+    },
+    {
+      "start_time": 631.519,
+      "end_time": 664.56,
+      "text": "ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग के कहने का मतलब यह है कि अगर आप किसी रियल वर्ल्ड प्रॉब्लम को रियल वर्ल्ड प्रॉब्लम को सॉल्व करना चाहते हो तो पहले रियल वर्ल्ड को मिमिक भी करना पड़ेगा प्रोग्रामिंग में। मिमिक मतलब जैसे हमारी रियल दुनिया है। प्रोग्रामिंग में भी हमेशा हमें कुछ उसी तरीके से बनानी पड़ेगी। तो हम ज्यादा बेहतरीन प्रॉब्लम्स को सॉल्व कर पाएंगे। ज्यादा अच्छी प्रॉब्लम्स को सॉल्व कर पाएंगे और प्रॉब्लम के बारे में ज्यादा बेटर सोच पाएंगे। तो ये कहता है ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग कि भाई अगर आपको रियल वर्ल्ड की प्रॉब्लम को सॉल्व करना है",
+      "source": "transcript_api",
+      "english_text": "What Object Oriented Programming means is that if you want to solve a real world problem, then first you will have to mimic the real world in programming. Mimic means like our real world. Even in programming we will always have to create something in the same way. So we will be able to solve better problems. You will be able to solve better problems and think better about the problems. So this says that if you want to solve real world problem then object oriented programming."
+    },
+    {
+      "start_time": 662.72,
+      "end_time": 690.8,
+      "text": "तो पहले रियल वर्ल्ड को मिमिक करना शुरू करो प्रोग्रामिंग में। अच्छा क्या मतलब इसका? अब इसका मतलब ये कि देखो रियल वर्ल्ड में ना हमने अभी ऊपर स्टूडेंट वाला एग्जांपल दिया था तो मैं उसी के साथ चलता हूं। रियल वर्ल्ड में स्टूडेंट एक ऑब्जेक्ट होता है। ठीक है? ये एक स्टूडेंट है। अब आप बोलोगे भैया हमने इसको ऑब्जेक्ट क्यों कहा? राइट? देखो हमें कुछ तो कहना पड़ेगा। रियल वर्ल्ड में जितनी भी एंटिटीज होती हैं मैं उनको कुछ तो नाम देना पड़ेगा। तो मैंने उनको नाम दिया ऑब्जेक्ट्स। हर चीज एक ऑब्जेक्ट होती है।",
+      "source": "transcript_api",
+      "english_text": "So first start mimicking the real world in programming. Well what does this mean? Now this means that look, in the real world, we had just given the student example above, so I go with that. In the real world, a student is an object. Ok? This is a student. Now you will ask brother, why did we call it an object? Right? Look, we have to say something. I have to give some name to all the entities that exist in the real world. So I named them objects. Everything is an object."
+    },
+    {
+      "start_time": 688.959,
+      "end_time": 721.68,
+      "text": "हां तो मैं इसको कह के कोई ऑब्जेक्टिफाई नहीं कर रहा। ठीक है? मैं एक टर्म दे रहा हूं कि मुझे सबको कुछ ना कुछ तो कहना पड़ेगा। है ना? चाहे वो लिविंग थिंग हो, चाहे वो नॉन लिविंग थिंग हो। हमने सबको एक ऑब्जेक्ट कह दिया। राइट? हम सबको ऑब्जेक्ट की तरह क्लासिफाई कर सकते हैं। चाहे वो लिविंग थिंग हो, चाहे वो नॉन लिविंग थिंग हो। ओके? तो मैं अभी वही बोलता हूं कि रियल वर्ल्ड में स्टूडेंट एक ऑब्जेक्ट होता है। ऑब्जेक्ट मतलब एक पूरा का पूरा एंटिटी है और उसके पास कुछ चीजें होती हैं। ठीक है? चीजें मतलब उसके पास उसकी कोई कैरेक्टरिस्टिक उसकी कोई आइडेंटिटी होगी। जैसे उस स्टूडेंट का कुछ नाम होता",
+      "source": "transcript_api",
+      "english_text": "Yes, I am not objectifying anyone by saying this. Ok? I am giving a term that I will have to say something to everyone. Isn't it? Be it a living thing or a non-living thing. We called everyone an object. Right? We can classify everyone as an object. Be it a living thing or a non-living thing. Ok? तो मैं अभी वही बोलता हूं कि रियल वर्ल्ड में स्टूडेंट एक ऑब्जेक्ट होता है। ऑब्जेक्ट मतलब एक पूरा का पूरा एंटिटी है और उसके पास कुछ चीजें होती हैं। Ok? चीजें मतलब उसके पास उसकी कोई कैरेक्टरिस्टिक उसकी कोई आइडेंटिटी होगी। जैसे उस स्टूडेंट का कुछ नाम होता"
+    },
+    {
+      "start_time": 718.72,
+      "end_time": 752.0,
+      "text": "होगा। उस स्टूडेंट का कोई ऐज होती होगी। कोई लेट्स से रोल नंबर होता होगा। है ना? और उसका कोई कॉलेज होता होगा। वही वही फोर वेरिएबल्स जो हमने बुक में डिक्लअर किए थे। मैंने कहा था ये एक स्टूडेंट की आइडेंटिटी है। है ना? आप किसी भी स्टूडेंट को देखोगे आपको पता होगा कि इसका कोई नाम है, एज है, रोल नंबर है, कॉलेज है। आपको पता होगा। ठीक है? तो ऊप्स कहता है ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग कहता है कि अगर आप इस स्टूडेंट को रियल वर्ल्ड से ये आपका जो है ये रियल वर्ल्ड है। लेट्स से रियल वर्ल्ड।",
+      "source": "transcript_api",
+      "english_text": "Will happen. उस स्टूडेंट का कोई ऐज होती होगी। कोई लेट्स से रोल नंबर होता होगा। Isn't it? और उसका कोई कॉलेज होता होगा। वही वही फोर वेरिएबल्स जो हमने बुक में डिक्लअर किए थे। मैंने कहा था ये एक स्टूडेंट की आइडेंटिटी है। Isn't it? आप किसी भी स्टूडेंट को देखोगे आपको पता होगा कि इसका कोई नाम है, एज है, रोल नंबर है, कॉलेज है। as you may know. Ok? तो ऊप्स कहता है ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग कहता है कि अगर आप इस स्टूडेंट को रियल वर्ल्ड से ये आपका जो है ये रियल वर्ल्ड है। लेट्स से रियल वर्ल्ड।"
+    },
+    {
+      "start_time": 748.24,
+      "end_time": 780.24,
+      "text": "और ये है आपका प्रोग्रामिंग वर्ल्ड। ठीक है? तो इस अगर स्टूडेंट को आप रियल वर्ल्ड से प्रोग्रामिंग वर्ल्ड में रिप्रेजेंट करने की कोशिश कर रहे हो तो आपको नहीं लगता आपको इसको ऐसे चार इंडिपेंडेंट वेरिएबल ना बना करके एक ही वेरिएबल बनाना चाहिए लेट्स से एक ही वेरिएबल या उसको बोलो आप एक ही ब्लॉक बनाना चाहिए जिसमें हम इन चारों को एक साथ रिप्रेजेंट कर सकें। ठीक है? तो इसी ब्लॉक के अंदर एक पार्ट हो नेम का, एक पार्ट हो",
+      "source": "transcript_api",
+      "english_text": "And this is your programming world. Ok? So, if you are trying to represent the student from the real world to the programming world, then don't you think that instead of making four such independent variables, you should make a single variable from Let's say only one variable or call it that, you should make a single block in which we can represent these four together. Ok? So within this block there should be a part called name, there should be a part"
+    },
+    {
+      "start_time": 777.519,
+      "end_time": 812.16,
+      "text": "लेट्स से ऐज का, एक पार्ट हो लेट्स से रोल नंबर का और एक पार्ट हो कॉलेज का। ठीक है? तो एक ही ब्लॉक ये चारों चीजें रिप्रेजेंट करे। क्योंकि बाहर की दुनिया में भी तो एक ही ब्लॉक। अब ये इंसान क्या है? एक ऑब्जेक्ट है। तो मैंने इसको बोल दिया एक ब्लॉक है। एक ही ब्लॉक चारों चीजें रिप्रेजेंट कर रहा है। ठीक है? तो बेसिकली मतलब बस वही हुआ कि क्योंकि रियल लाइफ में हमारे पास स्टूडेंट एक ऑब्जेक्ट है। तो प्रोग्रामिंग वर्ल्ड में भी तो हमारे पास स्टूडेंट एक ऑब्जेक्ट होना चाहिए। अब वहां पे रियल लाइफ में वो एक लिविंग ऑब्जेक्ट है। ठीक है? जिसके पास ये चार कैरेक्टरिस्टिक्स हैं। उसको मैं म्यूिक कैसे करूं? मैं एक काम करता हूं। एक बड़ा ब्लॉक बनाता हूं। उसमें वो चारों",
+      "source": "transcript_api",
+      "english_text": "Let there be one part for age, one part for let's roll number and one part for college. Ok? So a single block should represent these four things. Because even in the outside world it is only one block. Now what is this person? is an object. So I called it a block. A single block is representing all four things. Ok? So basically it means the same thing because in real life we ​​have student as an object. So even in the programming world we should have a student object. Now there in real life it is a living object. Ok? Who has these four characteristics. How do I make it music? I do one thing. I make a big block. those four in it"
+    },
+    {
+      "start_time": 810.48,
+      "end_time": 841.12,
+      "text": "कैरेक्टरिस्टिक्स डाल देता हूं। तो जैसे ही ये चार कैरेक्टरिस्टिक्स बाहर एक स्टूडेंट के अंदर आती है। उसकी इंट्रिंसिक प्रॉपर्टी है। है ना? तो प्रोग्रामिंग में भी ये चार कैरेक्टरिस्टिक्स नेम, एज, रोल नंबर और कॉलेज उसके अंदर आनी चाहिए। उसकी इंट्रिंसिक प्रॉपर्टी होनी चाहिए। है ना? बहुत बढ़िया। तो ये कांसेप्ट कहता है ऊप्स। ये इसका बेसिक कांसेप्ट है। ठीक है? कि ऐसा होना चाहिए। तो बेसिकली हमें रियल वर्ल्ड को मिमिक करना है। तो हमें क्या करना पड़ेगा? ऑब्जेक्ट्स के टर्म्स में बात करनी पड़ेगी। अभी तक हम प्रोग्रामिंग में किसके टर्म्स में बात कर रहे थे?",
+      "source": "transcript_api",
+      "english_text": "Let me put the characteristics. So as soon as these four characteristics come out inside a student. It is its intrinsic property. Isn't it? So in programming also these four characteristics name, age, roll number and college should be included in it. It should have intrinsic properties. Isn't it? very nice. So this concept says oops. This is its basic concept. Ok? That it should be so. So basically we have to mimic the real world. So what do we have to do? We will have to talk in terms of objects. Till now we were talking in programming terms in what terms?"
+    },
+    {
+      "start_time": 838.32,
+      "end_time": 866.56,
+      "text": "वेरिएबल्स, फंक्शनंस इन सब के टर्म्स में। पर अब हमें सोचना पड़ेगा ऑब्जेक्ट्स के टर्म्स में। ठीक है? और अब जावा में अगर हम एक ऐसा ब्लॉक बनाएं जिसमें हमारे मल्टीपल वेरिएबल्स आए उसको हम ऑब्जेक्ट्स कहते हैं। ठीक है? तो यही है एक बेसिक कांसेप्ट ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग का। तो अब एक बार देखते हैं कि हो क्या रहा होगा? प्रोग्रामिंग में हो क्या रहा होगा। प्रोग्रामिंग में कुछ ऐसा हो रहा होगा कि मेरे पास कोई सिंटेक्स होगा। है ना? अभी मैं सिंटेक्स में भी जा रहा है।",
+      "source": "transcript_api",
+      "english_text": "In terms of variables, functions, all this. But now we have to think in terms of objects. Ok? And now in Java, if we create a block that contains our multiple variables, we call it objects. Ok? So this is the basic concept of object oriented programming. So now let's see what might be happening? What might be happening in programming? There must be something going on in programming that I would have some syntax for. Isn't it? Right now I'm going into the syntax too."
+    },
+    {
+      "start_time": 864.8,
+      "end_time": 898.0,
+      "text": "वो हम थोड़ी देर में देखेंगे। तो कुछ होगा ऐसे ही कोड ब्लॉक खुलता होगा कहीं ना कहीं। है ना? ऐसे कोड ब्लॉक खुलता होगा। है ना? और उसमें हम वो जो सारे वेरिएबल थे नेम, एज, रोल नंबर और कॉलेज ये सब एक साथ रिप्रेजेंट करते होंगे। है ना? तो कुछ ऐसा ही होता होगा मेरे हिसाब से तो है ना कि हम नेम, एज, रोल नंबर, कॉलेज साथ में रिप्रेजेंट करते होंगे। है ना? एक ही ब्लॉक में रिप्रेजेंट करते होंगे। अब ये एक ही ब्लॉक है। जो मैंने ऊपर प्रॉब्लम्स की बात की थी ना वो सारे इंडिपेंडेंट वेरिएबल थे। अब ये इंडिपेंडेंट वेरिएबल नहीं है। अब ये एक ही ब्लॉक है। और एक ही ब्लॉक है। मतलब हम एक रियल वर्ल्ड",
+      "source": "transcript_api",
+      "english_text": "We will see that in a little while. So something like this would open a code block somewhere. Isn't it? The code block will open like this. Isn't it? And in that we would represent all the variables like name, age, roll number and college all together. Isn't it? So, according to me, something like this must be happening, we would be representing name, age, roll number, college together. Isn't it? Must be representing in the same block. Now it is one block. The problems I talked about above were all independent variables. Now this is not an independent variable. Now it is one block. And there is only one block. Meaning we are a real world"
+    },
+    {
+      "start_time": 895.76,
+      "end_time": 925.519,
+      "text": "स्टूडेंट को रिप्रेजेंट कर रहे हैं। राइट? पर अब थोड़ी सी ना मजे की बात करते हैं। इसमें आपको देखो बहुत मजा आएगा जो मैं अभी आपको समझाने वाला हूं। आप सोचो हमेशा ना जब भी आपको कोई ऊप्स पढ़ाता है तो आपको ये बोल देता है कि रियल वर्ल्ड को हमें मिमिक करना है। बहुत बढ़िया। मैं थोड़ा सा इसमें और अंदर जाना चाहता हूं। मैं आपको कह रहा हूं कि देखो मैंने कहा मुझे एक स्टूडेंट को एक रियल वर्ल्ड स्टूडेंट को मिमिक करना था। पर स्टूडेंट क्या है? एक ह्यूमन ही तो है।",
+      "source": "transcript_api",
+      "english_text": "Representing the student. Right? But now let's talk about a little fun. See, you will have a lot of fun in this, which I am going to explain to you now. Just think, whenever someone teaches you, he tells you that we have to mimic the real world. very nice. I want to go into this a little bit more. I'm telling you, look I said I had to have a student mimic a real world student. But what is a student? He is only a human."
+    },
+    {
+      "start_time": 922.399,
+      "end_time": 948.279,
+      "text": "एक स्टूडेंट क्या है? एक ह्यूमन ही तो है। है ना? और एक ह्यूमन सिर्फ एक स्टूडेंट थोड़ी हो सकता है। एक ह्यूमन तो बहुत सारी चीजें हो सकता है। अभी ह्यूमन कॉलेज गया तो स्टूडेंट बन गया। अगर ह्यूमन अपने घर जाएगा तो वो एक सन या डॉटर कहलाएगा अपने मां-बाप का। ठीक है? अगर ह्यूमन अ क्या कहते हैं? किसी ऑफिस जाएगा कल को तो वो क्या कहलाएगा? वो एक एंप्लई कहलाएगा।",
+      "source": "transcript_api",
+      "english_text": "What is a student? He is only a human. Isn't it? And a human can only be a student. A human can be many things. Now when I went to Human College, I became a student. If a human goes to his home, he will be called a son or daughter of his parents. Ok? What do you say if human A? If he goes to an office tomorrow, what will it be called? He will be called an employee."
+    },
+    {
+      "start_time": 948.32,
+      "end_time": 977.04,
+      "text": "है ना? तो बेसिकली ह्यूमंस मल्टीपल रोल प्ले करता है। वो कभी एक स्टूडेंट हो सकता है, कभी एक सन या डॉटर हो सकता है, कभी एक एंप्लई हो सकता है। ये किस पे डिपेंड करता है? रियल वर्ल्ड की बात कर रहा हूं मैं अभी। ये डिपेंड करता है कि सिनेरियो क्या है? वो कौन सी जगह पे है। अगर वो एक कॉलेज में है या लेट्स से एक स्कूल में है तो वो एक स्टूडेंट कहलाता है। अगर वो अपने घर पे है। ठीक है? राइट? तो वह एक एक सन या डॉटर कहलाता है। और अगर वह एक एंप्लई है।",
+      "source": "transcript_api",
+      "english_text": "isn't it? So basically humans play multiple roles. Sometimes he may be a student, sometimes he may be a son or daughter, sometimes he may be an employee. What does it depend on? I am talking about the real world now. It depends what the scenario is. Which place is he? If he is in a college or later a school then he is called a student. If he is at home. Ok? Right? So each one is called a son or daughter. And if he is an employee."
+    },
+    {
+      "start_time": 974.8,
+      "end_time": 1000.639,
+      "text": "बेसिकली अगर वो एक ऑफिस में है। ठीक है? तो वो एक एंप्लई कहलाता है। तो कुछ ऐसा होता है। है ना? रियल वर्ल्ड की बात कर रहा हूं मैं। है ना? अब मैंने कहा मैंने प्रोग्रामिंग में स्टूडेंट को कैसे रिप्रेजेंट किया था? भाई चार वेरिएबल से रिप्रेजेंट किया था। नेम, एज, रोल नंबर और कॉलेज। पर आप सोचो क्या ये चार वेरिएबल काफी हैं एक पूरे के पूरे स्टूडेंट को रिप्रेजेंट करने के लिए? आंसर होगा नहीं।",
+      "source": "transcript_api",
+      "english_text": "Basically if he is in an office. Ok? So he is called an employee. So something like this happens. Isn't it? I am talking about the real world. Isn't it? Now I said how did I represent the student in programming? Brother was represented with four variables. Name, Age, Roll Number and College. But think about it, are these four variables enough to represent an entire student? The answer will be no."
+    },
+    {
+      "start_time": 998.8,
+      "end_time": 1032.959,
+      "text": "एक असली स्टूडेंट में एक रियल वर्ल्ड स्टूडेंट में बहुत सारी आइडेंटिटीज होती हैं। उसके नाम, एज, रोल नंबर और कॉलेज के अलावा उसके ग्रेड्स हो सकते हैं। है ना? उसके पास कौन-कौन से सब्जेक्ट्स हैं वो हो सकते हैं। ठीक है? और भी बहुत सारी चीजें हो सकती हैं। उसके इंडिविजुअली कितने मार्क्स आए हर सेमेस्टर में वो हो सकते हैं। मतलब बहुत सारी चीजें हो सकती हैं। है ना? एक स्टूडेंट के अंदर बहुत सारी चीजें हो सकती हैं जो उसकी आइडेंटिटी का पार्ट है। पर हमने सिर्फ चार ही चीजों को रिप्रेजेंट किया। नेम, एज, रोल नंबर, कॉलेज। क्यों? और एक और क्वेश्चन हमने स्टूडेंट को ही तो रिप्रेजेंट किया पर स्टूडेंट एक्चुअली तो एक ह्यूमन है। अब वो",
+      "source": "transcript_api",
+      "english_text": "A real student has many identities in a real world student. Apart from his name, age, roll number and college, he may have grades. Isn't it? What subjects can he have? Ok? Many more things can happen. How many marks can he get individually in each semester? Meaning many things can happen. Isn't it? There can be many things inside a student which are part of his identity. But we represented only four things. Name, Age, Roll Number, College. Why? And one more question, we have represented the student only but the student is actually a human being. now that"
+    },
+    {
+      "start_time": 1030.72,
+      "end_time": 1064.32,
+      "text": "जो ह्यूमन है वो जब अपने घर जाएगा तो उसके पास और कैरेक्टरिस्टिक्स होंगी। जैसे फॉर एग्जांपल उसका घर का नाम क्या होता होगा? अब वही ह्यूमन कल को एंप्लई बनेगा तो उसके पास और कैरेक्टरिस्टिक्स आएंगी। लेट्स से उसके पास कोई आएंगे एंप्लई की आईडी होगी। है ना? उसके ऑफिस का नाम होगा। उसकी सैलरी होगी वगैरह-वगैरह। तो बेसिकली मैं ये कहना चाहता हूं कि एक इंसान एक ह्यूमन अलग-अलग रोल प्ले करता है रियल वर्ल्ड में और हर रोल में उसके पास खुद की कोई आइडेंटिटी होती है। तो जब मैं एक स्टूडेंट की बात करता हूं मैं उसकी कुछ आइडेंटिटीज की बात करता हूं। फिर वो जब घर जाता है उसकी कुछ और आइडेंटिटीज होती हैं। जब वो एंप्लई",
+      "source": "transcript_api",
+      "english_text": "When the human being goes to his home, he will have more characteristics. For example, what would be his family name? Now if the same human becomes an employee tomorrow, he will have more characteristics. He will have the ID of any employee who will come to him from Lets. Isn't it? Will be the name of his office. What will be his salary etc. So basically I want to say that a human being plays different roles in the real world and in each role he has his own identity. So when I talk about a student, I talk about some of his identities. Then when he goes home, he has some other identities. When that employee"
+    },
+    {
+      "start_time": 1062.72,
+      "end_time": 1093.84,
+      "text": "बनता है कल को ऑफिस जाता है तो उसकी कुछ और आइडेंटिटीज होती हैं। तो पर क्या प्रोग्रामिंग में मैं इस पूरे की पूरी हायरार्की को रिप्रेजेंट कर दूं। देखो आंसर है बिल्कुल नहीं। आप इसको ऐसे सोचो कि मुझे ना रियल वर्ल्ड को मिमिक करना था। ठीक है? मिमिक करने का मतलब होता है रियल वर्ल्ड की नकल उतारना। जैसे थोड़ी रियल दुनिया दिखती है, कुछ उसी तरीके से अपने आप को दिखाना। प्रोग्रामिंग में अपने को दिखाना। ओके? बहुत बढ़िया। और देखो और प्रोग्रामिंग में मुझे रियल वर्ल्ड को मेमिक करना क्यों था? मुझे प्रॉब्लम्स को सॉल्व करना था अपने कोड के थ्रू। है ना?",
+      "source": "transcript_api",
+      "english_text": "It turns out that if he goes to office tomorrow, he will have some other identities. So, how should I represent this entire hierarchy in programming? Look, the answer is absolutely not. You think of it this way, I didn't want to mimic the real world. Ok? To mimic means to copy the real world. To show oneself in a similar way to what the real world looks like. Show yourself in programming. Ok? very nice. And see why I had to mimic the real world in programming? I had to solve problems through my code. Isn't it?"
+    },
+    {
+      "start_time": 1091.919,
+      "end_time": 1124.799,
+      "text": "तो अगर मुझे रियल वर्ल्ड को मेमिक करना है और अपनी प्रॉब्लम्स को सॉल्व करना है तो मैं क्या इस पूरी हायरार्की से कंसर्न हूं? आंसर है नहीं। डिपेंड करता है कि मैं किस चीज के लिए कोड लिख रहा हूं। मैं किस चीज के लिए एप्लीकेशन बना रहा हूं। तो अगर लेट्स से मैं कॉलेज के लिए एक पोर्टल बना रहा हूं। जहां पे स्टूडेंट आ सकते हैं। अपनी अटेंडेंस मार्क कर सकते हैं। अपने सब्जेक्ट देख सकते हैं वगैरह-वगैरह। तो अगर मैं कॉलेज के लिए पोर्टल बना रहा हूं। लेट्स से अपनी एप्लीकेशन में ये ऊपर की रियल दुनिया है। नीचे जितना भी है प्रोग्रामिंग की दुनिया है। तो मैं कंसर्न हूं सिर्फ स्टूडेंट से। है ना? उस ह्यूमन",
+      "source": "transcript_api",
+      "english_text": "So if I want to mimic the real world and solve my problems, am I concerned with this whole hierarchy? The answer is no. Depends what I'm writing the code for. What am I making the application for? So if with Lets I am creating a portal for college. Where students can come. You can mark your attendance. You can see your subjects etc. So if I am making a portal for college. This is the real world above in your application from Lets. What lies below is the world of programming. So I am concerned only with the students. Isn't it? that human"
+    },
+    {
+      "start_time": 1123.28,
+      "end_time": 1156.16,
+      "text": "के सिर्फ स्टूडेंट वाले पार्ट से मैं कंसर्न हूं। मुझे नहीं मतलब कि वो कल को सन डॉटर भी कहलाएगा। मुझे नहीं मतलब वो कल को एंप्लई भी कहलाएगा। मुझे मतलब है कि अभी अगर एक इंसान एक स्टूडेंट है तो मैं स्टूडेंट को कैसे अपने प्रोग्रामिंग में रिप्रेजेंट करूं और क्योंकि मुझे उसकी कॉलेज की एप्लीकेशन बनानी है और मुझे पता लगा स्टूडेंट के पास भी बहुत सारी कैरेक्टरिस्टिक्स हो सकती है। है ना? पर मुझे सिर्फ उन कैरेक्टरिस्टिक्स से मतलब है जिसके लिए मुझे कोड लिखना है जो मेरे कोड में काम आने वाली है। मेरे को स्टूडेंट का नाम काम आएगा। लेट्स से ऐज काम आएगी, रोल नंबर काम आएगा और लेट्स से",
+      "source": "transcript_api",
+      "english_text": "I am concerned only with the student part. I don't mean that tomorrow she will also be called Sun Daughter. I don't mean that tomorrow he will also be called an employee. I mean right now if a person is a student then how do I represent the student in my programming and because I have to make his college application and I found out that the student can also have a lot of characteristics. Isn't it? But I only care about those characteristics for which I have to write code which are going to be useful in my code. The student's name will be useful to me. Age will be useful with LATE, roll number will be useful and LATE with"
+    },
+    {
+      "start_time": 1153.76,
+      "end_time": 1187.12,
+      "text": "कॉलेज का नाम काम आएगा। मान लो ये चार वेरिएबल्स काफी है मेरे लिए कोड को लिखने में। तो मैं कंसर्न हूं सिर्फ इन चार वेरिएबल में। मुझे नहीं मतलब कि उसके पास ग्रेड्स भी होते हैं। उसके पास सब्जेक्ट्स भी होते हैं। अगर हां ये दोनों वेरिएबल भी काम आएंगे तो आप इसको भी इंक्लूड कर सकते हो। पर अगर ये नहीं काम आएंगे तो मुझे उससे मतलब ही नहीं है। ठीक है? आई होप आपको समझ आया होगा कि मैं पूरे के पूरी रियल दुनिया को एज इट इज़ रिप्रेजेंट नहीं कर रहा। मैं बस उसके एक पार्ट को में करने की कोशिश कर रहा हूं। तो अगर रियल वर्ल्ड में स्टूडेंट के पास बहुत सारी चीजें हैं",
+      "source": "transcript_api",
+      "english_text": "The name of the college will be useful. Suppose these four variables are enough for me to write the code. So I am concerned only with these four variables. I don't mean he even has grades. He also has subjects. If yes, both these variables will also be useful then you can include them also. But if these are not useful then I don't care. Ok? I hope you understand that I am not representing the entire real world as it is. I'm just trying to do a part of it. So if in the real world the student has a lot of things"
+    },
+    {
+      "start_time": 1185.28,
+      "end_time": 1218.32,
+      "text": "तो मैं उसकी सिर्फ उन पर्टिकुलर कैरेक्टरिस्टिक्स से इंटरेस्टेड हूं जो मेरे को प्रॉब्लम सॉल्व करने में काम आएगी। उस पर्टिकुलर कैरेक्टरिस्टिक्स को मैं क्या करूंगा? एक ऑब्जेक्ट बना दूंगा। एक कंटेनर के अंदर रख दूंगा। जैसे नेम, एज, रोल नंबर वगैरह रख दिया मैंने और मैंने कहा ये मेरा ऑब्जेक्ट हो गया। अब ये ऑब्जेक्ट रियल ऑब्जेक्ट को रिप्रेजेंट कर रहा है या उसको ममिक कर रहा है। ठीक है? तो याद रखना अगर कल को मैं लेट्स से कोई एंप्लाइजस के लिए एप्लीकेशन बनाऊंगा तो मैं एंप्लई जो होता है उसकी कैरेक्टरिस्टिक्स पे फोकस करूंगा। कल को अगर मैं एक सन या डॉटर के लिए एक एप्लीकेशन बनाऊंगा तो मैं फोकस करूंगा",
+      "source": "transcript_api",
+      "english_text": "So I am only interested in those particular characteristics which will help me in solving the problem. What will I do with that particular characteristic? Will create an object. Will keep it inside a container. Like I put name, age, roll number etc. and I said this has become my object. Now this object is representing or mimicking the real object. Ok? So remember, if tomorrow I create an application for employees with Lets, I will focus on the characteristics of the employee. Tomorrow if I create an application for a son or daughter I will focus on"
+    },
+    {
+      "start_time": 1216.48,
+      "end_time": 1246.799,
+      "text": "उसकी कैरेक्टरिस्टिक्स पे। मैं हमेशा जो कंटेनर बनाऊंगा प्रोग्रामिंग में उसमें वो सब चीजें स्टोर करूंगा जो एक सन डॉटर के लिए चाहिए होगी या यहां पे वो सब चीजें स्टोर करूंगा जो एक एंप्लई के लिए चाहिए होगा। यानी कि मैं एक ह्यूमंस की सिर्फ उन्हीं कैरेक्टरिस्टिक्स पे फोकस करूंगा हर टाइम जो मेरे को एक प्रॉब्लम को सॉल्व करने के काम आएगी। ठीक है? आई होप आपको ये समझ आया होगा ये वाला। कई लोग ये नहीं समझा पाते कि हम प्रोग्रामिंग में मिमिक तो कर रहे हैं पर कैरेक्टरिस्टिक्स तो बहुत ज्यादा हो सकते हैं। तो आई होप ये चीजें आपको बिल्कुल क्लियर हो गई होगी।",
+      "source": "transcript_api",
+      "english_text": "On its characteristics. I will always store in the container that I create in the programming, all the things that are needed for a son's daughter or here I will store all the things that are needed for an employee. This means that I will always focus only on those characteristics of a human being which will be useful to me in solving a problem. Ok? I hope you have understood this one. Many people are unable to understand that we are doing mimicry in programming but the characteristics can be very high. So I hope these things must have been completely clear to you."
+    },
+    {
+      "start_time": 1243.919,
+      "end_time": 1278.799,
+      "text": "ठीक है? अब चलते हैं हम एक्चुअल कोड की तरफ एक रियल वर्ल्ड स्टूडेंट को प्रोग्रामिंग में रिप्रेजेंट करने के लिए। ठीक है? तो पहले मैं दो दुनिया बना देता हूं। ये है रियल वर्ल्ड। ठीक है? और ये है हमारी प्रोग्रामिंग। देखो मैंने कहा कि रियल वर्ल्ड में स्टूडेंट एक ऑब्जेक्ट है। कुछ इस तरीके से और स्टूडेंट के पास क्या है? कैरेक्टरिस्टिक्स हैं। अ स्टूडेंट के पास नेम हो सकता है, उसका एज हो सकती है, रोल नंबर हो सकता है और कॉलेज का नाम हो सकता है। ठीक है? ओके। बहुत बढ़िया। अब आप",
+      "source": "transcript_api",
+      "english_text": "ok? Now let's move on to actual code to represent a real world student in programming. Ok? So first I create two worlds. This is the real world. Ok? And this is our programming. Look, I said that in the real world a student is an object. Something like this and what does the student have? Characteristics are. A student may have a name, age, roll number and college name. Ok? Ok. very nice. now you"
+    },
+    {
+      "start_time": 1276.4,
+      "end_time": 1310.0,
+      "text": "एक और क्वेश्चन का आंसर दो। जब भी मैं बोलता हूं स्टूडेंट जैसे ये एक स्टूडेंट है। आपके मन में क्या इमेज बनती है? क्योंकि आप सोचो स्टूडेंट तो एक एब्स्ट्रैक्ट टर्म है। अभी तक मैं किसी एब्सोल्यूट स्टूडेंट की बात नहीं कर रहा। एब्सोल्यूट मतलब एक बच्चा जिसकी मैं एग्जैक्टली बात कर रहा हूं। किसी नाम की बात नहीं कर रहा। पर अगर मैं बात करूं भाई लेट्स से अरुण एक एग्जैक्ट बच्चा है। ठीक है? अरुण के पास खुद का नाम होगा जिसका ऑब्वियसली वो अरुण ही होगा। उसकी ऐज होगी। उसका रोल नंबर होगा और उसका कॉलेज का नाम होगा। पर",
+      "source": "transcript_api",
+      "english_text": "Answer one more question. Whenever I say student it is like he is a student. What image is created in your mind? Because if you think about it, student is an abstract term. So far I am not talking about any absolute student. Absolute means a child whom I am talking about exactly. Not talking about any name. But if I talk to Bhai Letts, Arun is an exact child. Ok? Arun will have his own name which will obviously be Arun. Will be his age. His/her roll number will be there and his/her college name will be there. on"
+    },
+    {
+      "start_time": 1307.84,
+      "end_time": 1342.159,
+      "text": "अरुण एक एग्जैक्ट बच्चा है। ऐसे ही मैं बात करूं लेट्स से वरुण। वरुण भी एक एग्जैक्ट बच्चा है। एक एब्सोल्यूट स्टूडेंट है जिसकी मैं बात कर रहा हूं। उसका भी कुछ नाम होगा, एज होगी, रोल नंबर होगा, कॉलेज होगा। ठीक है? पर जब मैं स्टूडेंट सिर्फ बोलता हूं स्टूडेंट तो वो तो एक एब्स्ट्रैक्ट टर्म है ना। मैं बस ये बताना चाहता हूं एक आईडिया को रिप्रेजेंट करना चाहता हूं कि स्टूडेंट होता क्या है? बेसिकली जब मैं बोलता हूं स्टूडेंट तो मैं एक आईडिया की बात करता हूं कि एक स्टूडेंट होता क्या है? वो दिखता कैसा होगा? कि हर स्टूडेंट का एक नाम होता होगा, एज होती होगी, रोल नंबर होता होगा, कॉलेज होता होगा। पर जब मैं एब्सोल्यूट स्टूडेंट की बात करूंगा तो मैं बोलूंगा जैसे अरुण हो",
+      "source": "transcript_api",
+      "english_text": "Arun is an exact child. This is how I talk to Let's Varun. Varun is also an exact child. There is an absolute student whom I am talking about. He will also have some name, age, roll number, college. Ok? But when I just say student, it is an abstract term, isn't it? I just want to tell and represent an idea of ​​what a student is? Basically, when I say student, I am talking about an idea of ​​what a student is? What would that look like? That every student must have a name, age, roll number, college. But when I talk about absolute student, I will talk like it is Arun."
+    },
+    {
+      "start_time": 1340.24,
+      "end_time": 1370.799,
+      "text": "गया, वरुण हो गया या आदित्य हो गया या रोहित हो गया वगैरह-वगैरह। ठीक है? तो प्रोग्रामिंग में भी ना पहले हम इस एब्स्ट्रैक्ट टर्म को रिप्रेजेंट करते हैं यूजिंग अ कीवर्ड कॉल्ड एज क्लास। तो देखो मैं क्या लिखता हूं? सबसे पहले मैं एक कीवर्ड लिखूंगा क्लास। और फिर मैं लिखूंगा जिसको मैं रिप्रेजेंट करना चाहता हूं। तो स्टूडेंट इसको हम बोलेंगे क्लास का नाम। ठीक है? फिर मैं अपने कर्ली ब्रैकेट्स ऑन करूंगा। आपको पता है कर्ली ब्रैकेट्स का मतलब जावा में क्या होता है? कोड ब्लॉक को ऑन करना। अब मैंने क्या किया अभी तक?",
+      "source": "transcript_api",
+      "english_text": "It became Gaya, it became Varun or it became Aditya or it became Rohit etc. Ok? So even in programming, first we represent this abstract term using a keyword called class. So see what I write? First of all I will write a keyword class. And then I will write who I want to represent. So student, we will call this the name of the class. Ok? Then I'll put my curly brackets on. Do you know what curly brackets mean in Java? Turning on the code block. Now what have I done so far?"
+    },
+    {
+      "start_time": 1368.159,
+      "end_time": 1393.679,
+      "text": "क्लास स्टूडेंट। अब इसके अंदर मैं वो सारी कैरेक्टरिस्टिक्स को रिप्रेजेंट कर सकता हूं जो एक स्टूडेंट की होती है। नेम, एज, रोल नंबर, कॉलेज यूजिंग वेरिएबल्स। आपको पता ही है। मैं लिख सकता हूं स्ट्रिंग आपका नेम। ठीक है? इंट आपका एज, इंट आपका रोल नंबर कुछ इस तरीके से और स्ट्रिंग आपका कॉलेज।",
+      "source": "transcript_api",
+      "english_text": "Class student. Now inside this I can represent all the characteristics that a student has. Name, Age, Roll Number, College Using Variables. You already know. I can write the string your name. Ok? Int is your age, int is your roll number and string is your college."
+    },
+    {
+      "start_time": 1390.24,
+      "end_time": 1422.64,
+      "text": "राइट? आई होप ये आपको समझ आ गया होगा। तो मैं प्रोग्रामिंग में कुछ इस तरीके का कोड लिखता हूं या सिंटेक्स लिखता हूं कि मैंने बनाया क्लास स्टूडेंट जिसमें नेम, एज, रोल नंबर और कॉलेज ये चार वेरिएबल्स आते हैं। ठीक है? ओके? तो मैंने एक रियल वर्ल्ड एब्स्ट्रैक्ट आईडिया ऑफ स्टूडेंट को रिप्रेजेंट कर लिया। पर याद रखना अभी तक मैंने एक्चुअल ऑब्जेक्ट नहीं बनाया है। मैंने अभी तक प्रोग्रामिंग में अभी तक मेरी मेमोरी में कोई कंटेनर बना ही नहीं है जो एक्चुअली डेटा को होल्ड करेगा इन चारों नेम, एज, रोल नंबर और कॉलेज को। अभी",
+      "source": "transcript_api",
+      "english_text": "Right? I hope you have understood this. So in programming, I write some code or syntax like this that I have created a class Student in which four variables are name, age, roll number and college. Ok? Ok? So I represented a real world abstract idea of ​​a student. But remember, I have not created the actual object yet. I have not yet created any container in my memory in programming which will actually hold the data of these four names, age, roll number and college. right now"
+    },
+    {
+      "start_time": 1420.159,
+      "end_time": 1453.679,
+      "text": "तक मैंने बस ये रिप्रेजेंट किया है कि मेरा स्टूडेंट दिखता कैसा होगा। ठीक है? कि मेरे स्टूडेंट का आईडिया कैसा होगा। इसीलिए हम जावा में कट इसीलिए हम इन क्लासेस को क्या कहते हैं? हम इन क्लासेस को कहते हैं ब्लूप्रिंट ऑफ एन ऑब्जेक्ट। ठीक है? ये एक ब्लूप्रिंट बता रही है कि ऑब्जेक्ट दिखेगा कैसा? अभी तक हमने ऑब्जेक्ट बनाया नहीं है। वो अभी हम नीचे बनाएंगे। पर ये अभी मेरे को बता रही है कि एक ऑब्जेक्ट दिखता कैसा होगा। उसमें क्या-क्या कैरेक्टरिस्टिक्स होती होंगी।",
+      "source": "transcript_api",
+      "english_text": "Till now I have just represented what my student would look like. Ok? What would be my student's idea? That's why we cut in Java That's why we call these classes? We call these classes blueprints of an object. Ok? This is a blueprint telling how the object will look? We have not created the object yet. We will make that below now. But it is just telling me what an object will look like. What characteristics would it have?"
+    },
+    {
+      "start_time": 1451.36,
+      "end_time": 1482.88,
+      "text": "तो ये नेम, एज, रोल नंबर और कॉलेज ये चार उसमें कैरेक्टरिस्टिक्स होती होंगी। ठीक है? अब मुझे इस स्टूडेंट का एक एग्जैक्ट ऑब्जेक्ट बनाना है। तो मैं ऑब्जेक्ट कैसे बना सकता हूं? उससे पहले मैं एक पहले इस क्लास को कॉपी कर लेता हूं। ठीक है? ये क्लास हमारे काम आने वाली है। अब मैंने यहां पे अपनी स्टूडेंट क्लास को कॉपी कर लिया। अब मैं बताता हूं मैं इसका ऑब्जेक्ट कैसे बनाता हूं प्रोग्रामिंग में। उससे पहले एक छोटी सी चीज समझ लो। ये हमने पहले भी बात की थी। हमारे पास जो डेटा टाइप्स होते हैं",
+      "source": "transcript_api",
+      "english_text": "So name, age, roll number and college would be the four characteristics in it. Ok? Now I have to create an exact object of this student. So how do I create an object? Before that, I first copy this class. Ok? This class is going to be useful for us. Now I copied my student class here. अब मैं बताता हूं मैं इसका ऑब्जेक्ट कैसे बनाता हूं प्रोग्रामिंग में। उससे पहले एक छोटी सी चीज समझ लो। ये हमने पहले भी बात की थी। हमारे पास जो डेटा टाइप्स होते हैं"
+    },
+    {
+      "start_time": 1480.32,
+      "end_time": 1514.72,
+      "text": "वो दो तरह के होते हैं। ठीक है? आपको पता है एक होते हैं आपके प्रिमिटिव्स और एक हमने बात की थी नॉन प्रिमिटिव्स। ठीक है? और अभी तक हम जितने भी डेटा टाइप्स पढ़ते आ रहे थे। ठीक है? कौन-कौन से हमने पढ़ लिए थे? हमने इंटीजर पढ़ा था। है ना? उसमें आपको पता है इंट फ्लोट सॉरी इंट शॉर्ट, बाइट, लॉन्ग ये सब आते हैं हमने। अ फ्लोटिंग पॉइंट्स पढ़े थे। इसमें आपका फ्लोट और डबल आता है। हमने बुलियन पढ़ा था। हमने कैर पढ़ा था।",
+      "source": "transcript_api",
+      "english_text": "They are of two types. Ok? You know, one is your primitives and one we talked about is non-primitives. Ok? And all the data types we have been reading till now. Ok? Which ones had we read? We had read integers. Isn't it? In that you know int float sorry int short, byte, long all these come we have. Had read floating points. This includes your float and double. We read Bullion. We had read Carr."
+    },
+    {
+      "start_time": 1512.08,
+      "end_time": 1545.679,
+      "text": "वगैरह-वगैरह कैरेक्टर पढ़ा था वगैरह-वगैरह। इसमें आपका कैर आता है। ये सब आपको ऑलरेडी पता है। हमने बात की थी। इसके अलावा हमारे पास नॉन प्रिमिटिव डेटा टाइप्स भी होते हैं। ठीक है? अभी तक हमने इसके बारे में ज्यादा बात नहीं की। हमने बस आपको ये बता दिया था कि फॉर एग्जांपल एरेज एक नॉन प्रिमिटिव टाइप्स हैं। अब आप समझ लो ये जो नॉन प्रिमिटिव टाइप्स होते हैं ना ये वही होते हैं जिसको हम प्रोग्रामिंग में ऑब्जेक्ट्स बोल रहे हैं। बेसिकली जितने भी हम ऑब्जेक्ट्स बनाने वाले हैं ऑब्जेक्ट्स वो एक नॉन प्रिमिटिव डेटा टाइप है। नॉन",
+      "source": "transcript_api",
+      "english_text": "Etc., etc., I had read the character, etc. Your care comes in this. You already know all this. We talked. Apart from this we also have non-primitive data types. Ok? We haven't talked much about it yet. We just told you that for example arrays are non-primitive types. Now you understand that these non-primitive types are the same which we call objects in programming. Basically, all the objects that we are going to create are non-primitive data types. non"
+    },
+    {
+      "start_time": 1543.36,
+      "end_time": 1577.52,
+      "text": "प्रिमिटिव्स क्यों? क्योंकि ऑब्वियसली ये एक वेरिएबल में रिप्रेजेंट तो हो नहीं सकते। जैसे यहां पे हमने इंट, फ्लोट, बुलियन, कैर वगैरह बनाया था। ये नॉन प्रिमिटिव्स हैं। ऑब्जेक्ट क्या था? एक कंटेनर है और उस कंटेनर के अंदर मल्टीपल चीजें आ सकती हैं। ठीक है? तो इसको हमने नॉन प्रिमिटिव बोल दिया। ओके? गुड इनफ। अब हर चीज़ क्योंकि एक ऑब्जेक्ट है तो कुछ ऐसे ऑब्जेक्ट होंगे जो पहले से बने होंगे। ठीक है? जो पहले से जावा हमें बना के दिए होंगे अपनी लैंग्वेज के अंदर। और कुछ ऐसे होंगे जो हम खुद से बनाएंगे। जो हम खुद से",
+      "source": "transcript_api",
+      "english_text": "Why primitives? Because obviously these cannot be represented in one variable. Like here we had created int, float, bullion, char etc. These are non primitives. What was the object? There is a container and multiple things can come inside that container. Ok? So we called it non-primitive. Ok? Good enough. Now because everything is an object there will be some objects that are already created. Ok? Which Java would have already prepared and given to us in its own language. And there will be some that we will create ourselves. which we ourselves"
+    },
+    {
+      "start_time": 1572.159,
+      "end_time": 1601.6,
+      "text": "बनाएंगे ना उनको हम बोलेंगे यूजर डिफाइंड डेटा टाइप। ठीक है? तो कहने का मतलब कि ये भी एक डेटा टाइप ही होंगे। जैसे ये एक डेटा टाइप है। ये भी एक डेटा टाइप ही होंगे। पर ये यूजर डिफाइंड होंगे। हमने ऐसे ऑब्जेक्ट जो खुद से बनाए होंगे। अगर इसका एग्जांपल चाहिए तो ये देखो यहां पे हम ये जो क्लास बना रहे हैं ना स्टूडेंट इसका हम ऑब्जेक्ट बनाएंगे। है ना? तो ये एक यूजर डिफाइंड डेटा टाइप है। तो हमने क्या किया? एक तरह से एक डेटा टाइप ही बना लिया। हमने क्या किया? कंटेनर बना लिया।",
+      "source": "transcript_api",
+      "english_text": "We will create them and call them user defined data types. Ok? So it means that this will also be a data type. Like this is a data type. This will also be a data type. But these will be user defined. Objects that we might have created ourselves. If you want an example of this, then see here, we will create the class student as its object. Isn't it? So this is a user defined data type. So what did we do? In a way, a data type was created. what did we do? Made the container."
+    },
+    {
+      "start_time": 1599.6,
+      "end_time": 1627.2,
+      "text": "है ना? उसके अंदर हम चीजें स्टोर करवा रहे हैं। पर ये हमने खुद से डिफाइन किया है। यूजर डिफाइंड है। ठीक है? तो आई होप आपको ये समझ आ गया होगा। बस ये इतनी सी बात थी। इसको इग्नोर करके अब हम बढ़ते हैं कि हम इस स्टूडेंट का ऑब्जेक्ट कैसे क्रिएट करेंगे। ठीक है? तो अब देखो मुझे स्टूडेंट का ऑब्जेक्ट बनाना है। तो एक ये एक टू स्टेप प्रोसेस है। मैं आपको करके बताता हूं कि मुझे कैसे कोड लिखना पड़ेगा। सबसे पहले मैं इस स्टूडेंट का एक वेरिएबल बनाऊंगा s1।",
+      "source": "transcript_api",
+      "english_text": "isn't it? We are getting things stored inside it. But we have defined this ourselves. User defined. Ok? So I hope you have understood this. It was just that simple thing. Ignoring this, we now move on to how we will create the object of this student. Ok? So now look I have to create a student object. So this is a two step process. Let me show you how I have to write the code. First of all I will create a variable s1 of this student."
+    },
+    {
+      "start_time": 1625.2,
+      "end_time": 1660.159,
+      "text": "ठीक है? मैंने एक स्टूडेंट डिक्लेअर कर दिया। अभी तक मेमोरी में कोई स्टूडेंट नहीं बना। मैंने बस एक वेरिएबल डिक्लेअर किया है। अब इस वेरिएबल का टाइप क्या है? स्टूडेंट। मैंने कहा ना एक यूजर डिफाइंड डेटा टाइप है। हमने खुद एक डेटा टाइप रिप्रेजेंट कर लिया। जैसे मैं लिखता हूं इंट x है ना? तो मैं क्या कहता हूं कि एक मेमोरी में एक ऑब्जेक्ट है जिसका नाम है x वो कोई वेरिएबल स्टोर कर सकता है लेट्स से फोर। और वो किस टाइप का है? वो इंटीजर टाइप का है। उसी तरीके से मैंने यहां पे लिखा स्टूडेंट s1. S1 मैंने कहा एक वेरिएबल है s1. ठीक है? वो कुछ स्टोर कर सकता है। वो क्या स्टोर कर सकता है? अभी",
+      "source": "transcript_api",
+      "english_text": "ok? I declared a student. Till now no student has been formed in memory. I just declared a variable. Now what is the type of this variable? Student. I said it is a user defined data type. We represented a data type ourselves. Like I write int x right? So what I say is that there is an object in memory named x that can store any variable let's say four. And what type is it? It is of integer type. In the same way I wrote student s1 here. S1 I said is a variable s1. Ok? He can store something. What can it store? right now"
+    },
+    {
+      "start_time": 1657.84,
+      "end_time": 1684.32,
+      "text": "बताऊंगा। और वो किस टाइप का है? वो है स्टूडेंट टाइप का। स्टूडेंट टाइप का है। ठीक है? ओके। तो पहले मैंने एक डिक्लेअ किया। ठीक है? अब अगर मैं अगेन इंट x की बात करूं तो इसको मैं बोलता था डिक्लेरेशन। अगर मुझे इसमें वैल्यू देनी होती थी तो मैं अगली लाइन में लिख लेता था x = 4। बाद मैंने आपको बताया था हम इसको मिला भी सकते हैं इंट x = 4। ऐसे भी लिख सकते हैं। है ना? तो पहले हमने देखा था डिक्लेरेशन और डेफिनेशन अलग-अलग लाइन में।",
+      "source": "transcript_api",
+      "english_text": "I will tell. And what type is it? He is student type. Is of student type. Ok? Ok. So first I made a declaration. Ok? Now if I talk about int x again, I used to call it declaration. If I had to give a value in it, I would write x = 4 in the next line. Later I told you that we can also mix this int x = 4. You can also write like this. Isn't it? So earlier we saw declaration and definition in separate lines."
+    },
+    {
+      "start_time": 1682.399,
+      "end_time": 1716.88,
+      "text": "फिर हमने देखा था दोनों साथ में। तो यहां पे भी हम पहले देखते हैं डिक्लेरेशन अलग लाइन में। अब डेफिनेशन देखो कैसे कर सकते हैं। अब मैं लिख सकता हूं यह जो s1 है इक्वल टु इस वेरिएबल में कौन सी वैल्यू डालनी है? न्यू स्टूडेंट। अब ये सिंटेक्स थोड़ा सा नया है। ठीक है? आप लोगों के लिए थोड़ा सा नया हो सकता है जो ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग पहली बार पढ़ रहे हैं। अब अगर इसको हम ध्यान से समझे देखो कहता क्या है? सबसे पहले मैंने कहा डिक्लेरेशन। मैंने एक स्टूडेंट को डिक्लेअर किया S1 एक वेरिएबल बना लिया और",
+      "source": "transcript_api",
+      "english_text": "Then we saw both of them together. So here also we first see the declaration in a separate line. Now let's see how we can do the definition. Now I can write this which is s1 is equal to what value to put in this variable? New student. Now this syntax is a bit new. Ok? Might be a bit new for those of you who are reading Object Oriented Programming for the first time. Now if we understand this carefully, see what it says? First of all I said declaration. I declared a student S1 as a variable and"
+    },
+    {
+      "start_time": 1714.559,
+      "end_time": 1748.559,
+      "text": "उस S1 में मैंने डाल दिया न्यू स्टूडेंट। अब इसको एक-एक करके समझते हैं। ठीक है? ओके? बहुत बढ़िया। ओके? आपको ये दिख रहा होगा। अब मैंने आपको कहा था कि हमारे पास ना दो तरह की मेमोरी होती है। ठीक है? एक होती है आपकी हीप मेमोरी। लेट्स से ये है आपकी हीप मेमोरी और एक होती है आपकी स्टक मेमोरी। अभी मेमोरी क्या होती है? कैसे काम करती है? इसमें क्या-क्या चीजें होती है? वो हम बाद में देखेंगे। एक इसके लिए प्रॉपर वीडियो बनेगी डेडिकेटेड। अभी के लिए आप मान के चलो",
+      "source": "transcript_api",
+      "english_text": "In that S1 I put New Student. Now let us understand it one by one. Ok? Ok? very nice. Ok? You must be seeing this. Now I told you that we do not have two types of memory. Ok? One is your heap memory. This is your heap memory and one is your stuck memory. Now what is memory? How does it work? What things are there in it? We will see that later. A dedicated video will be made for this. for now you just assume"
+    },
+    {
+      "start_time": 1747.039,
+      "end_time": 1780.399,
+      "text": "हमारे पास दो मेमोरी होती है। हीप मेमोरी और स्टक मेमोरी। हमारे जितने भी ऑब्जेक्ट्स हैं वो सब हीप मेमोरी में बनते हैं। ठीक है? तो मैं आपको अब बताता हूं ढंग से होता क्या होगा। जैसे ही आपने ये लाइन लिखी होगी। ठीक है? मैं बताऊंगा क्या होगा। सबसे पहले आपने पहली लाइन लिखी स्टूडेंट S1 तो कुछ नहीं हुआ। आपने एक S1 नाम के वेरिएबल को डिक्लेअ कर दिया और आपने कहा कि हम एक ऑब्जेक्ट को एक यूजर डिफाइंड डेटा टाइप को रिप्रेजेंट करने वाले हैं। बहुत बढ़िया। फिर आपने लिखा s1 = न्यू स्टूडेंट। ठीक है? अब देखो क्या",
+      "source": "transcript_api",
+      "english_text": "We have two memories. Heap memory and stuck memory. All our objects are created in heap memory. Ok? So let me tell you now what will happen. As soon as you have written this line. Ok? I will tell you what will happen. First of all you wrote the first line Student S1 and nothing happened. You declared a variable named S1 and you said we're going to make an object representing a user defined data type. very nice. Then you wrote s1 = new student. Ok? now look what"
+    },
+    {
+      "start_time": 1778.159,
+      "end_time": 1812.08,
+      "text": "हुआ? तो मैं राइट टू लेफ्ट चलूंगा क्योंकि आप ये राइट चीजों को लेफ्ट में असाइन करते हो। है ना? असाइनमेंट ऑपरेटर से। तो वहां बताऊंगा। ये न्यू कीवर्ड है। ये कहता है कि ये जो हमारी हीप मेमोरी है ना इसमें मुझे एक स्पेस को एलोकेट करना है। एक स्पेस को एलोकेट करना है जिसमें मैं अपने एक ऑब्जेक्ट को स्टोर करूंगा। किस टाइप के ऑब्जेक्ट को स्टोर करूंगा? स्टूडेंट टाइप के ऑब्जेक्ट को स्टोर करूंगा। तो न्यू ने क्या कहा कि भाई हीप मेमोरी के अंदर एक स्पेस को एलोकेट करो और वो स्पेस क्या स्टोर करेगा? वो स्पेस स्टोर करेगा हमारे स्टूडेंट की इनेशन को। क्योंकि उसका टाइप",
+      "source": "transcript_api",
+      "english_text": "happened? So I will go right to left because you assign these right things to the left. Isn't it? From the assignment operator. So I will tell you there. This is a new keyword. It says that this is our heap memory and I have to allocate a space in it. Have to allocate a space in which I will store one of my objects. What type of object will I store? Will store object of type Student. So what did New say that brother allocate a space inside the heap memory and what will that space store? That space will store our student's information. because his type"
+    },
+    {
+      "start_time": 1810.08,
+      "end_time": 1844.559,
+      "text": "क्या है? टाइप है स्टूडेंट। ठीक है? ये न्यू कीवर्ड ने कहा। ओके? अच्छा फिर इस स्टूडेंट ने क्या कहा? ठीक है ये हम नेक्स्ट लेक्चर में देखेंगे। ये बहुतेंट है। पर अभी के लिए आप बस ऐसे समझ लो कि जैसे हमने लिखा न्यू स्टूडेंट पूरा का पूरा तो हुआ क्या होगा? एक स्पेस एलोकेट हो गया होगा हमारी हीप मेमोरी के अंदर। फिर देखो मैंने इस न्यू स्टूडेंट को असाइन किया एक s1 नाम के वेरिएबल में। इसका क्या मतलब? अब देखो जब ये स्पेस एलोकेट हुआ होगा। ठीक है? तो ये इसके कुछ एड्रेस होगा। अब लेट से इसका एक स्टार्टिंग एड्रेस होगा 1001",
+      "source": "transcript_api",
+      "english_text": "What is it? Type is student. Ok? This new keyword said. Ok? Well then what did this student say? Okay, we will see this in the next lecture. This is a lot. But for now, just understand that as we wrote, what will happen if New Student is completed? A space must have been allocated inside our heap memory. Then look, I assigned this new student to a variable named s1. What does this mean? Now see when this space is allocated. Ok? So these would be some of its addresses. Now from late it will have a starting address of 1001"
+    },
+    {
+      "start_time": 1842.72,
+      "end_time": 1877.039,
+      "text": "है ना? और इसका कुछ एंडिंग एड्रेस होगा। एंडिंग एड्रेस क्या होगा? वो भी अगेन बाद में आ जाएगा। पर अभी आप देखो स्टार्टिंग एड्रेस होगा लेट से 1001। यहां से ये मेमोरी स्टार्ट होती है। फिर इसके बाद मैंने एक चंक ऑफ स्पेस को एलोकेट किया होगा। तो जब मैं लिखूंगा ना न्यू स्टूडेंट और इसको मैं असाइन कर दूंगा S1 तो इसका जो स्टार्टिंग एड्रेस होगा ये 1001 असाइन हो जाएगा इस S1 वेरिएबल में। पर अब ये S1 वेरिएबल है कहां? ये S1 वेरिएबल है आपकी स्टक मेमोरी में। और ये क्या स्टोर करता है? ये स्टोर करता है इस 1001 मेमोरी एड्रेस को। तो एक तरह से मैं कह नहीं सकता",
+      "source": "transcript_api",
+      "english_text": "isn't it? And it will have some ending address. What will be the ending address? That too will come again later. But now you see the starting address will be 1001 from late. This memory starts from here. Then after this I must have allocated a chunk of space. So when I will write new student and I will assign it as S1, then its starting address 1001 will be assigned in this S1 variable. But now where is this S1 variable? This is the S1 variable in your stuck memory. And what does it store? It stores this 1001 memory address. so in a way i can't say"
+    },
+    {
+      "start_time": 1874.399,
+      "end_time": 1909.2,
+      "text": "ये स्टोर कर रहा है हमारे ऑब्जेक्ट की लोकेशन को। है ना? ये जो S1 है ये स्टोर कर रहा है हमारे इस पूरे ऑब्जेक्ट की लोकेशन को। क्यों? क्योंकि ये उसका स्टार्टिंग एड्रेस स्टोर कर रहा है। अगर मुझे स्टार्टिंग एड्रेस मिल गया तो मुझे ऑब्वियसली सारा एड्रेस मिल गया। उस कंप्लीट एड्रेस मिल गया ब्लॉक का क्योंकि वो कंटीन्यूअस मेमोरी में स्टोर होता है। ठीक है? तो इस S1 को मैं क्या कहता हूं? मैं कहता हूं यह जो s1 है ना यह है हमारा रेफरेंस वेरिएबल। इसका मैं क्या नाम रखता हूं? इसका मैं नाम रखता हूं इसका मैं नाम रखता हूं रेफरेंस वेरिएबल।",
+      "source": "transcript_api",
+      "english_text": "This is storing the location of our object. Isn't it? This S1 is storing the location of our entire object. Why? Because it is storing its starting address. If I get the starting address, I obviously get the entire address. Got the complete address of that block because it is stored in continuous memory. Ok? So what do I say to this S1? I say this is s1, this is our reference variable. What do I name it? I name this I name this reference variable."
+    },
+    {
+      "start_time": 1906.799,
+      "end_time": 1938.88,
+      "text": "अब ये रेफरेंस वेरिएबल क्या है? कुछ नहीं है। ये एक स्पेशल काइंड ऑफ वेरिएबल है हमारे जावा में जो किसी का रेफरेंस स्टोर करता है। रेफरेंस मतलब किसी का एड्रेस स्टोर करता है। बस इतना समझ लो। ठीक है? तो S1 खुद एक ऑब्जेक्ट नहीं है। स्टार्टिंग में बहुत बच्चे इसमें कंफ्यूज होते हैं। उनको लगता है स्टूडेंट S1 मतलब S1 ही ऑब्जेक्ट हो गया। नहीं S1 ऑब्जेक्ट नहीं है। S1 तो बस एक रेफरेंस वेरिएबल है जो स्टोर कर रहा है एक एक्चुअल ऑब्जेक्ट के एड्रेस को। किस टाइप के ऑब्जेक्ट को?",
+      "source": "transcript_api",
+      "english_text": "Now what is this reference variable? Nothing is there This is a special kind of variable in our Java which stores a reference to someone. Reference means stores someone's address. Just understand this. Ok? So S1 itself is not an object. Many children are confused about this in the beginning. They feel that student S1 means S1 itself has become an object. No S1 is not an object. S1 is just a reference variable storing the address of an actual object. Which type of object?"
+    },
+    {
+      "start_time": 1937.279,
+      "end_time": 1969.679,
+      "text": "स्टूडेंट टाइप के ऑब्जेक्ट को। और वो स्टूडेंट टाइप का ऑब्जेक्ट है कहां? वो है हीप मेमोरी के अंदर। और S1 कहां है? वो है स्टक मेमोरी के अंदर। क्यों ये स्टैक में है? क्यों वो हीप में है? हम बाद में देखेंगे। पर अभी आप समझ गए ये रेफरेंस वेरिएबल रहेगा स्टैक में ऑब्जेक्ट रहेगा हीप में s1 सिर्फ इस ऑब्जेक्ट के एड्रेस को पॉइंट करेगा ठीक है उसको रेफर करेगा तो मैंने इसको क्या बोला रेफरेंस वेरिएबल ओके बहुत बढ़िया तो भैया इस ऑब्जेक्ट का नाम क्या हुआ आपने कहा s1 तो रेफरेंस वेरिएबल का नाम है ये पॉइंट करता है एक ऑब्जेक्ट को पर इस ऑब्जेक्ट का नाम क्या है इस",
+      "source": "transcript_api",
+      "english_text": "To an object of type Student. And where is that student type object? That is inside the heap memory. And where is S1? That's stuck inside the memory. Why is it in the stack? Why is it in the heap? we will see later. But now you understand that this reference variable will remain in the stack, the object will remain in the heap, s1 will only point to the address of this object, okay it will refer to it, so what did I call it, reference variable, okay very good, so brother, what is the name of this object, you said s1, so the name of the reference variable, it points to an object, but what is the name of this object?"
+    },
+    {
+      "start_time": 1968.159,
+      "end_time": 1996.799,
+      "text": "ऑब्जेक्ट का कोई नाम नहीं है ये है अननेम्ड अननेम्ड ठीक है हम एक्चुअली जो हिप में चीजें स्टोर होती है उसका कोई नाम नहीं रखते हम उसको बस रेफर करवाते हैं किसी रेफरेंस वेरिएबल से और रेफरेंस वेरिएबल का खुद का नाम होता है। तो यहां पे S1 जो रेफरेंस वेरिएबल है इसका नाम है। तुम्हें हम जनरली इसलिए ऐसे बोल देते हैं कि स्टूडेंट S1 तो S1 ही ऑब्जेक्ट हो गया। बट एक्चुअली S1 ऑब्जेक्ट नहीं है। इंटरव्यूज़ में स्पेसिफिकली ये क्वेश्चन आ सकता है अगर आप जावा का इंटरव्यू दे रहे हो कि क्या S1 एग्जैक्ट ऑब्जेक्ट होता है?",
+      "source": "transcript_api",
+      "english_text": "There is no name of the object, it is unnamed unnamed. Well, we actually do not keep any name for the things stored in the hip, we just reference it with a reference variable and the reference variable has its own name. So here S1 is the name of the reference variable. We generally call you like this because student S1 has become an object. Butt is not actually an S1 object. This question may specifically come up in interviews if you are giving a Java interview, is S1 an exact object?"
+    },
+    {
+      "start_time": 1994.96,
+      "end_time": 2026.72,
+      "text": "नहीं। S1 सिर्फ एक रेफरेंस वेरिएबल होता है जो होल्ड करता है एक्चुअल ऑब्जेक्ट को। एक्चुअल ऑब्जेक्ट यहां से बनता है। ठीक है? और इसका खुद का कोई नाम नहीं होता जावा में। ओके? तो यहां तक अगर आप समझ गए, ठीक है? और ये सिंटेक्स भी आप समझ गए। तो मैंने क्या कहा था? हम इन दोनों अ सिंटेक्स को हम इन दोनों लाइंस को मिला के एक लाइन के अंदर भी लिख सकते हैं। मैं सिंपली कैसे लिख सकता हूं? मैं लिख सकता हूं स्टूडेंट s1 = न्यू स्टूडेंट।",
+      "source": "transcript_api",
+      "english_text": "No. S1 is just a reference variable that holds the actual object. The actual object is created from here. Ok? And it does not have its own name in Java. Ok? So even if you understand, okay? And you understood this syntax also. So what did I say? We can also write both these syntaxes within one line by combining these two lines. How can I write simply? I can write Student s1 = New Student."
+    },
+    {
+      "start_time": 2022.48,
+      "end_time": 2052.72,
+      "text": "इस एक लाइन से मैंने सब कह दिया। मैंने कह दिया कि सबसे पहले हीप मेमोरी में एक ब्लॉक ऑफ मेमोरी को एलोकेट करो और उसको असाइन कर दो S1 नाम के रेफरेंस वेरिएबल के अंदर। ठीक है? ओके। अब एक और चीज जब भी मैंने कहा था ना मैं न्यू कीवर्ड लिखता हूं मेरा मतलब होता है एक हिप में एक चंक ऑफ स्पेस को एलोकेट करो। अब ये जो चंक ऑफ स्पेस हिपप मेमोरी में एलोकेट होता है। ये होता है आपका रन टाइम में।",
+      "source": "transcript_api",
+      "english_text": "I said everything with this one line. I said that first of all allocate a block of memory in the heap memory and assign it inside the reference variable named S1. Ok? Ok. Now one more thing, whenever I said I write new keyword, I mean allocate a chunk of space in a hip. Now this chunk of space is allocated in hip memory. This happens in your run time."
+    },
+    {
+      "start_time": 2050.72,
+      "end_time": 2084.72,
+      "text": "ठीक है? यानी कि न्यू कीवर्ड काम करता है रन टाइम पे। अब क्वेश्चन आ सकता है कि रन टाइम क्या होता है? तो बता देता हूं। देखो किसी भी देखो कोड में ना आपके दो टाइप्स की हम बात करते हैं जनरली। एक होता है आपका कंपाइल टाइम और एक होता है आपका रन टाइम। ठीक है? और प्रोग्रामिंग में कुछ चीजें कंपाइल टाइम में होती है। कुछ चीजें रन टाइम में होती है। फॉर एग्जांपल हमने बात की थी कि कुछ ऐसे एरर्स हैं जो आपको कंपाइल टाइम में ही आ जाएंगे। जो रेड लाइन आ जाती है ना नीचे लिखती आ जाती है। तो कंपाइल टाइम में ही आ जाएंगे। बेसिकली जब आपका कोड कंपाइल होने लगेगा वो तभी बता देगा कि भैया आपके पास",
+      "source": "transcript_api",
+      "english_text": "ok? That means new keyword works at run time. Now the question may arise that what is run time? So let me tell. Look at any code, we talk about your two types in general. One is your compile time and one is your run time. Ok? And some things in programming happen in compile time. Some things happen at run time. For example, we talked about that there are some errors which you will encounter at compile time itself. The red line that comes and gets written down. So it will come at compile time itself. Basically, when your code starts compiling, it will tell you that you have"
+    },
+    {
+      "start_time": 2081.839,
+      "end_time": 2113.2,
+      "text": "कोई एरर है। ठीक है? और कुछ एरर आपके रन टाइम में आते हैं। जब आपका कोड रन होना शुरू होता है तब कुछ एरर्स आते हैं। ठीक है? तो बेसिकली मैंने कहा था कुछ चीजें कंपाइल टाइम में होती है और कुछ चीजें रन टाइम में होती है। ये जो मेमोरी एलोकेशन है न्यू कीवर्ड से ये आपका रन टाइम पे होता है। तो एग्जैक्टली जब आपने कोड लिखा तभी जाकर के हिप में मेमोरी एलोकेट नहीं होगी। पर जब आपका कोड रन हो रहा होगा तब जाकर के आपकी एक मेमोरी एलोकेट होगी हीप में। इसलिए हम इस न्यू कीवर्ड को कहते हैं",
+      "source": "transcript_api",
+      "english_text": "There is an error. Ok? And some errors come in your run time. When your code starts running, some errors occur. Ok? So basically I said that some things happen in compile time and some things happen in run time. This memory allocation is done at your run time with the new keyword. So exactly when you wrote the code, the memory will not be allocated in the hip. But when your code is running, then your memory will be allocated in the heap. So we call this new keyword"
+    },
+    {
+      "start_time": 2110.4,
+      "end_time": 2136.64,
+      "text": "डायनेमिक मेमोरी एलोकेशन यह डायनेमिकली मेमोरी को एलोकेट करता है। डायनेमिकली का मतलब क्या हुआ? रन टाइम पे। ठीक है? तो अगर आप रन टाइम की बात करते हो तो इसको हम बोलते हैं डायनेमिक। और अगर आप कंपाइल टाइम की बात करते हो तो इसको हम बोलते हैं स्टैटिक। बस ये याद रखना टर्म्स है कुछ कि स्टैटिक मेमोरी एलोकेशन मतलब जो कंपाइल टाइम पे होती है।",
+      "source": "transcript_api",
+      "english_text": "Dynamic Memory Allocation It allocates memory dynamically. What does dynamic mean? At run time. Ok? So if you talk about run time then we call it dynamic. And if you talk about compile time then we call it static. Just remember that these terms are static memory allocation which happens at compile time."
+    },
+    {
+      "start_time": 2134.56,
+      "end_time": 2168.32,
+      "text": "डायनेमिक मेमोरी एलोकेशन जो रन टाइम पे होती है। ठीक है? इसके विपरीत जब मैं इंट x लिखता था ना इक्वल टू 4 लेट से लिखता था तो ये जो है ये रन टाइम सॉरी ये कंपाइल टाइम पे एलोकेट होगा यानी कि एक मेमोरी एड्रेस बनेगा x जिसमें हम स्टोर कर रहे हैं फोर और ये सब हो जाएगा कंपाइल टाइम पे जब भी आप एक ऑब्जेक्ट बनाते हो वो सब बनते हैं रन टाइम पे ठीक है तो जैसे देखो हमने लिखा स्टूडेंट s1 = न्यू स्टूडेंट तो आप ये समझ गएगे कि भैया हमारे पास एक स्टक मेमोरी होगी एक हमारे पास हीप मेमोरी होगी इस हीप मेमोरी के अंदर हमारा एक ऑब्जेक्ट",
+      "source": "transcript_api",
+      "english_text": "Dynamic memory allocation that occurs at run time. Ok? On the contrary, when I used to write int One, we will have heap memory, inside this heap memory we will have one object."
+    },
+    {
+      "start_time": 2165.76,
+      "end_time": 2199.76,
+      "text": "बन गया होगा और यहां पे एक S1 होगा जो इस ऑब्जेक्ट को पॉइंट कर रहा होगा। ये सब तो हो चुका है। ठीक है? अब ये सिनेरियो बन चुका है। पर मैंने क्या कहा था? स्टूडेंट क्लास के अंदर ये जो हमने ऊपर स्टूडेंट क्लास देखी थी कहां गई स्टूडेंट क्लास? ये रही। अब ये स्टूडेंट क्लास के अंदर चार फील्ड्स थी। नेम, एज, रोल नंबर, कॉलेज। अब मुझे इनको कोई वैल्यू भी देनी है। तो मैं वैल्यू कैसे दूंगा? तो आप ऐसे समझ लो कि इसी हमारे ऑब्जेक्ट के अंदर चार चीजें आती होंगी। हमारे पास अ लेट्स से नेम आता होगा, ऐज आती होगी, रोल नंबर आता होगा और कॉलेज आता होगा। छोटा-छोटा मैं लिख रहा हूं। ठीक है? पर हम इसको वैल्यूज़ कैसे",
+      "source": "transcript_api",
+      "english_text": "And there will be an S1 here pointing to this object. All this has happened. Ok? Now this scenario has become. But what did I say? Inside the student class, where has the student class that we saw above gone? Here it is. Now there were four fields inside the Student class. Name, Age, Roll Number, College. Now I have to give them some value also. So how do I provide value? So you should understand that there would be four things inside this object. We would have got name, age, roll number and college from A.L.T.S. I am writing small. Ok? But how do we value it?"
+    },
+    {
+      "start_time": 2197.839,
+      "end_time": 2232.32,
+      "text": "देते होंगे? उसका सिंटेक्स क्या होगा? तो उसका सिंटेक्स कुछ ऐसा होता है कि मैं लिखता हूं कुछ ऐसे S1 डॉट इसको हम बोलते हैं डॉट ऑपरेटर S1 डॉट नेम इक्वल टू अब जो भी मैं नाम रखना चाहता हूं लेट्स से आदित्य वैसे ही S1 डॉट एज जो भी मैं ऐज रखना चाहता हूं लेट्स से 28 s1 रोल नंबर लेट्स से 1001 s1 कॉलेज लेट्स से आईआईटी गुवाहाटी यही सब हमने ऊपर रखा था यही सब",
+      "source": "transcript_api",
+      "english_text": "Must be giving? What will be its syntax? So its syntax is something like this, I write something like S1 dot, we call it dot operator S1 dot name equal to two, now whatever I want to keep the name is Aditya from Lets, similarly S1 dot age, whatever I want to keep as the age, 28 s1 roll number from Lets, 1001 s1 college from Lets, IIT Guwahati, this is all we had kept above, this is all"
+    },
+    {
+      "start_time": 2228.56,
+      "end_time": 2257.599,
+      "text": "हमने मैंने नीचे रख दिया कुछ इस तरीके से। तो मैं इस तरीके से वैल्यू्यूज डालता हूं इस ऑब्जेक्ट की फील्ड्स के अंदर s1 डॉट नेम डॉट एज डॉट रोल नंबर डॉट कॉलेज ये डॉट ऑपरेटर को यूज़ करके। ठीक है? तो बेसिकली अगर मैं इसको अगेन चंक्स में जो मैंने काम किया उसको एक साथ बताऊं तो सबसे पहले मैंने एक क्लास बनाई स्टूडेंट नाम की। फिर मैंने उस क्लास का ऑब्जेक्ट बनाया कुछ इस तरीके से और उस ऑब्जेक्ट में मैंने वैल्यू स्टोर करी। तो ये एक के बाद एक किया होगा।",
+      "source": "transcript_api",
+      "english_text": "I put it down something like this. So I insert values ​​in the fields of this object like this s1 dot name dot age dot roll number dot college by using this dot operator. Ok? So basically, if I put together the work I did in chunks, first of all I created a class called Student. Then I created an object of that class like this and stored the value in that object. So this must have been done one after the other."
+    },
+    {
+      "start_time": 2255.839,
+      "end_time": 2290.4,
+      "text": "तो सबसे पहले मैंने क्लास बनाई होगी क्लास स्टूडेंट। उसका ऑब्जेक्ट बनाया होगा यूजिंग दिस लाइन तो ये इसके बाद आती होगी और फिर उस ऑब्जेक्ट के अंदर मैंने वैल्यू स्टोर करी होगी कुछ इस तरीके से और ये इसके भी बाद आता होगा। ठीक है? तो पहले ये फिर ये और फिर ये क्योंकि मैंने यहां पे अलग-अलग लिखा है तो मैंने बता दिया। ओके? बहुत बढ़िया। अब अगर मान लो मुझे एक और स्टूडेंट बनाना है। ये तो मैंने एक बार ब्लूप्रिंट बना दिया। अब मैं इसके कितने भी स्टूडेंट बना सकता हूं। जैसे रियल लाइफ में भी आपके पास जो एब्स्ट्रैक्ट टर्म है स्टूडेंट उसके भी कितने भी स्टूडेंट हो सकते हैं? अरुण भी एक स्टूडेंट है। वरुण भी एक स्टूडेंट है। आदित्य भी एक स्टूडेंट",
+      "source": "transcript_api",
+      "english_text": "So first of all I would have created a class class Student. Its object must have been created using this line, so it must have come after this and then inside that object I must have stored the value in something like this and it must have come after this also. Ok? So first this, then this and then this because I have written separately here, so I told. Ok? very nice. Now suppose I have to make another student. I made this blueprint once. Now I can make any number of students out of it. Like in real life also, the abstract term student you have can have any number of students? Arun is also a student. Varun is also a student. Aditya is also a student"
+    },
+    {
+      "start_time": 2287.52,
+      "end_time": 2322.16,
+      "text": "है वगैरह-वगैरह। है ना? तो वैसे ही इस क्लास के भी मैं इंफिनिट स्टूडेंट बना सकता हूं। ऑब्वियसली है ना? अगली बार मैं क्या करूंगा? जैसे क्लास थी। अगली बार मैं लिखूंगा स्टूडेंट s2। एक नया रेफरेंस वेरिएबल बना दिया। इक्वल टू न्यू स्टूडेंट। ये भी मैंने सेम ही लिखा। ठीक है? यहां पे क्या हुआ होगा दोबारा? दोबारा मैं कह रहा हूं एक और हीप में मेमोरी को एलोकेट करो। तो अब बेसिकली हमारी हिप कुछ ऐसी दिखती होगी। तुम्हारी जो हीप होगी अब उसमें दो मेमोरीज़ हैं। एक S1 के लिए एक S2 के लिए। और जो हमारा",
+      "source": "transcript_api",
+      "english_text": "etc. etc. Isn't it? So similarly, I can create infinite students of this class also. Obviously right? What will I do next time? Like it was class. Next time I will write Student s2. Created a new reference variable. Equal to new student. I wrote this also in the same way. Ok? What could have happened here again? Again I am saying allocate memory in another heap. So now basically our hip would look something like this. Your heap will now have two memories. One for S1, one for S2. and which is ours"
+    },
+    {
+      "start_time": 2319.68,
+      "end_time": 2354.32,
+      "text": "स्टैक स्पेस है, ये जो हमारा स्टक स्पेस है, इसमें भी दो रेफरेंस वेरिएबल हैं। S1, S2। S1 पॉइंट करता है इसको और S2 पॉइंट करता है इसको। ठीक है? इसके पास खुद का नेम, एज, रोल नंबर और कॉलेज है। इसके पास भी खुद का नेम, एज, रोल नंबर और कॉलेज है। अब मैं S2 को भी वैल्यूज़ दे सकता हूं। कैसे दूंगा? सेम तरीके से s2 डॉट नेम s2 डॉट एज s2 डॉट रोल नंबर कुछ इस तरीके से यहां पे मैं जैसे लेट्स से दिया रोहित यहां पे मैंने लेट्स से दिया अ यहां पे स्ट्रिंग का वो नहीं आएगा यहां पे दिया 28",
+      "source": "transcript_api",
+      "english_text": "This is the stack space, which is our stack space, it also has two reference variables. S1, S2. S1 points to this and S2 points to this. Ok? It has its own name, age, roll number and college. It also has its own name, age, roll number and college. Now I can assign values ​​to S2 as well. How will I give? In the same way s2 dot name s2 dot age s2 dot roll number in some way like here I let's give Rohit here I let's give a here the string's that won't come here let's give 28"
+    },
+    {
+      "start_time": 2352.32,
+      "end_time": 2385.839,
+      "text": "यहां पे दिया रोल नंबर लेट्स से 102 कुछ इस तरीके से मैं ऐसी वैल्यू्यूज भी दे सकता हूं। ठीक है? तो आई होप आपको चीजें थोड़ी समझ आ रही होंगी कि मैंने पहले कैसे वैल्यूज़ दी और मैंने h2 को कैसे वैल्यूज़ दी। अब इसको ना एक साथ मैं पहले कंबाइन करके लिखता हूं। तो देखो मैंने यहां पे पूरा का पूरा कोड एक साथ लिख दिया। सबसे पहले हमने मैंने क्लास बनाई स्टूडेंट। ठीक है? उसमें सारी फील्ड्स हो गई। फिर मैंने दो स्टूडेंट बनाए s1 और s2। ठीक है? S1 और S2। अब मैंने सबसे पहले S1 की वैल्यूज़ लिखी। S1 डॉट नेम, S1 डॉट एज, S1 डॉट रोल नंबर और S1 डॉट कॉलेज। और फिर मैंने S2 के",
+      "source": "transcript_api",
+      "english_text": "Here I can also give such values from roll number lets say 102. Ok? So I hope you are getting some understanding of how I gave the values ​​in the first and how I gave the values ​​to the h2. Now I first combine these and write them together. So look, I have written the entire code here together. First of all we created a class, Student. Ok? All the fields are there. Then I created two students s1 and s2. Ok? S1 and S2. Now first I wrote the values ​​of S1. S1 Dot Name, S1 Dot Age, S1 Dot Roll Number and S1 Dot College. And then I started S2"
+    },
+    {
+      "start_time": 2383.599,
+      "end_time": 2417.44,
+      "text": "अंदर वैल्यूज़ भरी। तो मैंने आपको क्या समझाया था? मैंने आपको वही समझाया था कि भैया हमारे पास दो तरह की मेमोरी होती है। ये हमारे पास हीप मेमोरी है। इसमें दो वेरिएबल बन गए। दो ऑब्जेक्ट बन गए होंगे। S1 और S2 यहां पे रेफरेंस वेरिएबल है। ये आपके होंगे स्टक के अंदर। S1 पॉइंट करता होगा इसको और S2 पॉइंट करता होगा इसको। ये सब हमें देख के समझ आ गया। और डॉट ऑपरेटर क्या करता होगा? अब समझ आ ही रहा होगा। S1 डॉट नेम जब भी हम लिखते होंगे तो सबसे पहले हम S1 पे जाते हैं। फिर मैं कहता हूं डॉट मतलब मैं इस ऑब्जेक्ट पे आ गया। और इसका नेम फील्ड को मैं यहां पे एक्सेस करना चाहता हूं या फिर नेम फील्ड के अंदर",
+      "source": "transcript_api",
+      "english_text": "Filled with values inside. So what did I explain to you? I had explained to you that brother, we have two types of memory. This is the heap memory we have. Two variables were created in this. Two objects will have been created. S1 and S2 are reference variables here. These will be yours inside the stack. S1 must point to this and S2 must point to this. We understood all this after seeing it. And what would the dot operator do? Now you must be understanding. Whenever we write S1.name, first of all we go to S1. Then I say dot, meaning I have come to this object. And I want to access its name field here or inside the name field."
+    },
+    {
+      "start_time": 2415.76,
+      "end_time": 2449.839,
+      "text": "कोई वैल्यू डालना चाहता हूं। ठीक है? तो डॉट ऑपरेटर मुझे वहां तक लेके जाता है। याद रखना मैंने दोबारा बोला था S1 सिर्फ एक रेफरेंस वेरिएबल है। वो एक एड्रेस को स्टोर करता है। किसके एड्रेस को? इस ऑब्जेक्ट के स्टार्टिंग एड्रेस को। तो वहां तक पहुंचने का तरीका ही मेरे पास ये डॉट ऑपरेटर होता है। ये जो डॉट ऑपरेटर है ना ये मुझे वहां तक पहुंचाता है। और उसके बाद जैसे ही मैं यहां तक पहुंच गया मेरे पास चार फील्ड हैं। नेम, एज, रोल नंबर और कॉलेज। इन चारों में से मैं कुछ भी एक्सेस कर सकता हूं। तो S1 डॉट लिखते ही आगे मैं कुछ भी लिख सकता हूं। चाहे मैं नेम लिखूं, चाहे मैं ऐज लिखूं, चाहे रोल नंबर या कॉलेज लिखूं। ठीक है? ठीक है? मैं कुछ भी एक्सेस कर सकता हूं क्योंकि मैं अब इस",
+      "source": "transcript_api",
+      "english_text": "Want to enter a value. Ok? So the dot operator takes me there. Remember I said again that S1 is just a reference variable. It stores an address. To whose address? The starting address of this object. So the only way to reach there is with me this dot operator. This dot operator takes me there. And then as soon as I reach here, I have four fields. Name, Age, Roll Number and College. I can access anything from these four. So as soon as I write S1 dot, I can write anything further. Whether I write name, whether I write age, whether I write roll number or college. Ok? Ok? I can access anything because I'm on this now"
+    },
+    {
+      "start_time": 2448.079,
+      "end_time": 2480.72,
+      "text": "ऑब्जेक्ट तक पहुंच गया हूं। इस ऑब्जेक्ट तक पहुंचाने का काम किसका था? इस डॉट ऑपरेटर का। याद रखना। ठीक है? तो मैं ये सब कर सकता हूं। और एक और चीज अभी तक हमने देखो ये देखा है कि हम नेम, एज, रोल नंबर और कॉलेज को असाइन कैसे करेंगे? अगर मुझे इनको प्रिंट करना होगा या एक्सेस करना होगा तो कैसे करूंगा? तब भी सिंपल है। लेट्स से अगर मुझे सिस्टम डॉट आउट डॉट प्रिंट एलn कुछ ऐसा करना है और ये जो s1 है इसका नाम प्रिंट करना है तो मैं कुछ नहीं करूंगा। s1 डॉट नेम लिख दूंगा यहां पे ब्रैकेट के अंदर। तो इसको मैं एक्सेस भी ऐसे कर सकता हूं डॉट ऑपरेटर के थ्रू।",
+      "source": "transcript_api",
+      "english_text": "Have reached the object. Whose responsibility was it to reach this object? Of this dot operator. Remember. Ok? So I can do all this. And one more thing so far we have seen that how will we assign the name, age, roll number and college? How do I print or access these? Even then it is simple. From Lets, if I have to do something like system dot out dot print ln and print the name of this s1, then I will not do anything. I will write the name s1 dot here inside the brackets. So I can access this also through dot operator."
+    },
+    {
+      "start_time": 2479.04,
+      "end_time": 2512.64,
+      "text": "अगर मुझे इसमें वैल्यू डालनी है तो s1 डॉट नेम इक्वल टू आदित्य। वैल्यू निकालनी है तो सीधा s1 डॉट नेम प्रिंट करवा दिया। जैसे मैं नॉर्मल वेरिएबल के साथ करता हूं। ठीक है? ओके? अब हम आगे बढ़ते हैं। पर आगे बढ़ने से पहले ना मुझे आपको कुछ चीजें बतानी है। पहले मुझे आपको जो चीज बतानी है वो है नेमिंग कन्वेंशन की। ठीक है? देखो बहुत छोटी सी चीज है। ठीक है? सबसे पहले समझते हैं कन्वेंशन होता क्या है? कन्वेंशन कोई रूल नहीं होता। ये गुड प्रैक्टिस होती है। ठीक है? कि हम ऐसा करते हैं। जावा में हम कैसे चीजों को नाम देते हैं। तो सबसे पहले जितने भी हमारे",
+      "source": "transcript_api",
+      "english_text": "If I have to enter value in it then s1 dot name equal to Aditya. If you want to know the value then directly get s1 dot name printed. Like I do with normal variables. Ok? Ok? Now we move ahead. But before proceeding further, I have to tell you a few things. The first thing I want to tell you is about the naming convention. Ok? Look, it's a very small thing. Ok? First of all let us understand what is a convention? Convention is not a rule. This is good practice. Ok? That we do this. How do we name things in Java? So first of all all our"
+    },
+    {
+      "start_time": 2510.0,
+      "end_time": 2544.64,
+      "text": "पास वेरिएबल्स होते हैं। ठीक है? अब वो चाहे प्रिमिटिव वेरिएबल्स हो जैसे कि इंट, फ्लोट, कैर, बुलियन वगैरह या फिर हमारे रेफरेंस वेरिएबल हो। रेफरेंस वेरिएबल जो भी हमने ऊपर s1, s2 बनाया था ना वो सब हम जब भी इनको नाम देते हैं तो हम इनको नाम देते हैं हमेशा कैमल केस में। कैमल केस क्या होता है भैया? कुछ नहीं होता। अगर आप इसका कोई नाम रख रहे हो जैसे लेट्स से अ फर्स्ट नेम लास्ट नेम एक वेरिएबल का नाम है तो आप उसको ऐसे रखो कि",
+      "source": "transcript_api",
+      "english_text": "Have variables. Ok? Now whether it is primitive variables like int, float, char, boolean etc. or our reference variables. Whenever we name the reference variables like s1, s2 above, we always name them in camel case. What is camel case brother? Nothing happens. If you are keeping a name for it like let's say a first name last name is the name of a variable then you should keep it like this"
+    },
+    {
+      "start_time": 2541.119,
+      "end_time": 2575.68,
+      "text": "जो पहला वर्ड है उसका पहला लेटर स्मॉल और उसके बाद से जो दूसरा वर्ड तीसरा वर्ड जो भी आएगा उसका पहला लेटर कैपिटल और दोनों के बीच में कोई गैप नहीं। फर्स्ट नेम अब लेट्स से मैंने रखना है लास्ट नेम तो एल छोटा है एन बड़ा है लास्ट नेम कुछ इस तरीके से। अगर तीन लेटर्स सॉरी तीन वर्ड्स भी होते जैसे कि अ फर्स्ट नेम ऑफ स्टूडेंट लेट से इसमें चार हैं तो मैं इसको ऐसे रखूंगा पहले एफ स्मॉल आएगा फिर एन कैपिटल आएगा फिर ओ भी कैपिटल आएगा फिर एस भी कैपिटल आएगा कुछ ऐसे फर्स्ट नेम ऑफ",
+      "source": "transcript_api",
+      "english_text": "The first letter of the first word is small and the first letter of the second word and the third word that comes after that is capital and there is no gap between the two. Now I have kept the first name from Let's, the last name is L is small and N is big, the last name is something like this. If there were three letters, sorry, three words like A first name of student, there are four in it, then I would keep it like this, first F would come in small, then N would come in capital, then O would also come in capital, then S would also come in capital. Some of the first names of"
+    },
+    {
+      "start_time": 2572.96,
+      "end_time": 2607.52,
+      "text": "स्टूडेंट ठीक है बस पहला स्मॉल होना चाहिए उसके बाद सारे कैपिटल होने चाहिए इसको हम बोलते हैं कैमल केस सारे वेरिएबल्स का नाम हम कैमल केस में रखते हैं ओके बहुत बढ़िया दूसरी बात जितनी भी हमारी क्लासेस होंगी होगी जो हमने ऊपर क्लास बनाई थी ऐसे स्टूडेंट उसका नाम हम रखेंगे कैपिटल लेटर में। ठीक है? स्टार्टिंग विद कैपिटल लेटर जैसे हमने ऊपर रखा था। हमने क्या नाम रखा था उसका? स्टूडेंट तो वो एस कैपिटल था। है ना? अगर हम लेट से",
+      "source": "transcript_api",
+      "english_text": "Student is ok, just the first one should be small, after that all should be capital, we call it camel case, we keep the name of all the variables in camel case, OK, very good, second thing, all the classes we will have which we had created class above, such students, we will keep their name in capital letter. Ok? Starting with capital letters like we had above. What did we name him? Student was that with a capital S. Isn't it? if we are late"
+    },
+    {
+      "start_time": 2605.119,
+      "end_time": 2638.8,
+      "text": "ह्यूमन बनाते तो उसमें भी एस कैपिटल होता। चेयर एक क्लास बनाते तो उसमें सी कैपिटल होता। तो ये हमेशा कैपिटल लेटर से स्टार्ट होता क्योंकि वो एक एब्स्ट्रक्ट आईडिया को रिप्रेजेंट कर रहा है। हम उसको हमेशा कैप्स में रखना पसंद करते हैं। ओके? और एक लास्ट चीज हमारे जितने भी फंक्शनंस होते हैं वो भी कैमल केस के थ्रू रिप्रेजेंट किए जाते हैं। कैमल केस ठीक है? ये बस नेमिंग कन्वेंशन है। ऐसा नहीं है कि आप एक क्लास का नाम छोटे से शुरू कर लोगे। आप स्टूडेंट की जगह स्टूडेंट रख लोगे तो कोई एरर आ जाएगा। या फिर इस फर्स्ट नेम की जगह आप ऐसे एक वेरिएबल का नाम रख लोगे कि",
+      "source": "transcript_api",
+      "english_text": "Had we made Human, it would have had a capital S in it too. If Chair were a class, it would have a capital C. So it always starts with a capital letter because it is representing an abstract idea. We always like to keep it in caps. Ok? And one last thing, all our functions are also represented through Camel Case. Is the camel case ok? This is just a naming convention. It is not that you will start a class name with a small one. If you substitute student for student, an error will occur. Or instead of this first name, you will name a variable such that"
+    },
+    {
+      "start_time": 2636.48,
+      "end_time": 2671.359,
+      "text": "फर्स्ट भी कैपिटल है, एफ भी कैपिटल है तो कोई एरर आ जाएगा। कोई एरर नहीं आएगा। ये कोई कंपाइलर एरर नहीं है। बस ये एक गुड कोडिंग प्रैक्टिस है कि हमेशा हम वेरिएबल्स का नाम कैमल केस में रखते हैं। इस तरह नहीं रखते। क्लासेस का नाम हम ऐसे रखते हैं कैपिटल में और फंक्शन का भी हम कैमल केस में रखते हैं। जावा में जब भी आप कोई कोड डीबग करोगे आप देखोगे ये कन्वेंशंस फॉलो होता हुआ। इसलिए आप भी ये कन्वेंशंस फॉलो करो। बस ये मेरे को बताना था छोटा सा। ठीक है? अब आगे बढ़ते हैं। तो देखो अभी तक हमने बात की कि हमने ना एक स्टूडेंट को एक रियल वर्ल्ड स्टूडेंट को ये एक स्टूडेंट था।",
+      "source": "transcript_api",
+      "english_text": "First is also capital, F is also capital then some error will occur. No error will occur. This is not a compiler error. It's just a good coding practice to always name variables in camel case. Don't keep it like this. We keep the names of classes in capitals and also keep the names of functions in camel case. Whenever you debug any code in Java, you will see these conventions being followed. Therefore, you also follow these conventions. I just wanted to tell you this little thing. Ok? Now let's move ahead. So look, till now we have talked about one student, one real world student, this was one student."
+    },
+    {
+      "start_time": 2668.8,
+      "end_time": 2702.16,
+      "text": "उसको प्रोग्रामिंग में रिप्रेजेंट कर लिया यूजिंग क्लास एंड ऑब्जेक्ट। तो मैंने क्या किया? मैंने क्लास बनाई स्टूडेंट और इसके अंदर उसकी सारी कैरेक्टरिस्टिक्स भर दी। पर क्या मैंने कंप्लीट रियल वर्ल्ड स्टूडेंट को रिप्रेजेंट कर लिया? अब ध्यान से सोचो। क्या एक स्टूडेंट के पास सिर्फ उसकी कैरेक्टरिस्टिक्स होती है? जो अभी तक हमने रिप्रेजेंट किया। है ना? जो उसकी आइडेंटिटी जो हमने बोली थी उसका नाम, एज, रोल नंबर। क्या एक ऑब्जेक्ट एक रियल वर्ल्ड ऑब्जेक्ट के पास यही चीजें होती है? सोचो इसको। आंसर है नहीं। एक",
+      "source": "transcript_api",
+      "english_text": "Represented it in programming using class and object. So what did I do? I created a class Student and filled all its characteristics inside it. But have I represented the complete real world student? Now think carefully. Does a student have only his characteristics? Which we have represented till now. Isn't it? Which is his identity which we said, his name, age, roll number. Does an object have the same things as a real world object? Think about this. The answer is no. one"
+    },
+    {
+      "start_time": 2700.24,
+      "end_time": 2729.28,
+      "text": "ऑब्जेक्ट के पास कैरेक्टरिस्टिक्स के अलावा बिहेवियर्स भी होता है। अच्छा बिहेवियर क्या होता है भैया? देखो इसका मैं आपको एक एग्जांपल देके समझाता हूं। लेट्स से मेरे पास एक रियल वर्ल्ड ऑब्जेक्ट है एनिमल। एनिमल एक रियल लाइफ ऑब्जेक्ट है। अब अगेन इसकी भी कुछ कैरेक्टरिस्टिक्स होती होंगी। क्या होती होंगी? कैरेक्टरिस्टिक्स? जैसे भाई उसका एनिमल का कोई टाइप होता होगा। टाइप बोले तो भाई वो कैसा एनिमल है?",
+      "source": "transcript_api",
+      "english_text": "In addition to characteristics, objects also have behaviors. What is good behavior brother? Look, let me explain it to you by giving an example. From Lets I have a real world object Animal. Animal is a real life object. Now again this too must have some characteristics. What would have happened? Characteristics? Like brother, it must be some type of animal. If you say type then brother, what kind of animal is that?"
+    },
+    {
+      "start_time": 2727.68,
+      "end_time": 2753.839,
+      "text": "कार्नवोर्स है, हर्बीवोर्स है वगैरह वगैरह। है ना? उसकी कितनी टांगे हैं? तो लेट्स से नंबर ऑफ लेग्स एक उसकी कैरेक्टरिस्टिक होती होगी। ठीक है? और भी कैरेक्टर होता होगा कि वो वाइल्ड एनिमल है या डोमेस्टिकेटेड है। ठीक है? बहुत तरह के डॉट डॉट डॉट कई तरह के उसकी कैरेक्टरिस्टिक्स हो सकती हैं। पर इसकी कैरेक्टरिस्टिक्स के अलावा एक वेरिएबल के बिहेवियर भी तो हो सकते हैं।",
+      "source": "transcript_api",
+      "english_text": "There are carnivores, herbivores, etc. Isn't it? How many legs does he have? So the number of legs would be more characteristic than the legs. Ok? There must be another character whether it is a wild animal or domesticated. Ok? There can be many types of dot dot dot many types of its characteristics. But apart from its characteristics, a variable can also have behaviour."
+    },
+    {
+      "start_time": 2750.88,
+      "end_time": 2784.16,
+      "text": "बिहेवियर बोले तो जैसे कोई एनिमल आवाज निकाल सकता है तो इट कैन मेक साउंड। ठीक है? उसके अलावा एनिमल कैन ईट, कैन रन है ना? एसेट्रा। तो एनिमल बहुत सारे काम भी तो कर सकता है। बेसिकली वो कुछ कर सकता है। ठीक है? एनिमल कैन डू समथिंग। तो उसके जो डू समथिंग है उसको हमने बोल दिया बिहेवियर्स। ठीक है? तो अगेन एक एनिमल की कैरेक्टरिस्टिक्स भी हो सकती है, बिहेवियर भी हो सकता है। पर अभी तो जो मैं एनिमल की अगर क्लास बनाता, अगर मैं एनिमल की क्लास बनाता, लेट्स से क्लास एनिमल उसमें तो मैं सिर्फ इनकी कैरेक्टरिस्टिक्स को",
+      "source": "transcript_api",
+      "english_text": "If we talk about behaviour, then it can make sound as if any animal can make a sound. Ok? Apart from that, Animal can eat, can run right? Ecetra. So the animal can do many things. Basically he can do something. Ok? Animals can do something. So whatever he does, we called it behaviour. Ok? So again, an animal can have characteristics as well as behavior. But right now, if I create a class of animal, if I create a class of animal, let's say class animal, then I will only include their characteristics."
+    },
+    {
+      "start_time": 2782.24,
+      "end_time": 2816.56,
+      "text": "रिप्रेजेंट कर रहा था। यूजिंग वेरिएबल्स मैं एक स्ट्रिंग बनाता, टाइप, मैं एक इंट बनाता, नंबर ऑफ लेग्स। कुछ इस तरीके से। मैं बस वेरिएबल्स को यूज़ करके इसके कैरेक्टरिस्टिक्स को रिप्रेजेंट कर रहा था। पर अभी तक मैंने इसके बिहेवियर को तो रिप्रेजेंट किया ही नहीं। है ना? अब अगर मैं एक रियल वर्ल्ड को मेमिक करना चाहता हूं, तो आपको नहीं लगता मुझे इसके बिहेवियर्स को भी रिप्रेजेंट करना चाहिए। क्योंकि एक बिहेवियर भी एक एनिमल का हिस्सा होता है। यह जो रियल वर्ल्ड एनिमल होगा जैसे कैरेक्टरिस्टिक्स इसका अपना एक हिस्सा है। वैसे ही बिहेवियर भी तो इसका एक अपना हिस्सा है। इसका अपना इंट्रिंसिक हिस्सा है। फॉर एग्जांपल एनिमल जो खाना",
+      "source": "transcript_api",
+      "english_text": "Was representing. Using variables I would create a string, type I would create an int, number of legs. Something like this. I was just using variables to represent its characteristics. But till now I have not represented his behaviour. Isn't it? Now if I want to mimic a real world, don't you think I should also represent its behaviors? Because behavior is also a part of an animal. The characteristics of the real world animal will be its own part. Similarly, behavior is also a part of it. It has its own intrinsic part. For example animals who eat"
+    },
+    {
+      "start_time": 2814.48,
+      "end_time": 2849.359,
+      "text": "खाता है, भागता है, आवाज निकालता है। वो खुद से निकालता है। अपने शरीर से काम करता है। कोई उसको एक्सटर्नल चीज थोड़ी चाहिए। उसको आवाज निकालने के लिए, खाने के लिए और भागने के लिए। ये सब कोई बाहर से कोई उसकी हेल्प नहीं कर रहा। वह अंदर से खुद आवाज निकालता है, खुद खा पाता है। तो यह उसका इंट्रेंसिक नेचर है। यह बिहेवियर भी उसका इंट्रेंसिक नेचर है। तो मुझे इसको भी रिप्रेजेंट करना चाहिए। तो बेसिकली कहने का मतलब ये कि अगर मैं बनाऊं क्लास एनिमल ठीक है? तो उसके अंदर मैं ये सब चीजें तो डाल दूंगा कि हां भाई स्ट्रिंग",
+      "source": "transcript_api",
+      "english_text": "Eats, runs, makes sounds. He takes it out by himself. Works with your body. He needs something external. To make sounds, to eat and to run away. No one from outside is helping him in all this. He makes his own sounds from inside and is able to eat on his own. So this is its intrinsic nature. This behavior is also his intrinsic nature. So I should represent this also. So basically it means that if I create a class Animal, is it okay? So I will put all these things inside it, yes brother string."
+    },
+    {
+      "start_time": 2845.92,
+      "end_time": 2871.359,
+      "text": "अ टाइप ऑफ एनिमल है ना या इंट नंबर ऑफ लेग्स ये सब तो मैं डाल दूंगा। कोई दिक्कत नहीं है। डॉट डॉट डॉट लेकिन मैं इसके बिहेवियर को ऐसे रिप्रेजेंट करूं। क्या अभी तक हमने प्रोग्रामिंग में कोई ऐसी चीज पढ़ी है जो इसके बिहेवियर को भी मिमिक कर दे। कैरेक्टरिस्टिक को मिमिक हमने कैसे किया? यूजिंग वेरिएबल्स। ये तो आपको पता ही है। है ना? ये देखो स्ट्रिंग इंट ये वेरिएबल्स ही तो है। इसको यूज़ करके हमने कैरेक्टरिस्टिक्स को रिप्रेजेंट कर लिया।",
+      "source": "transcript_api",
+      "english_text": "Is it a type of animal or is it number of legs, I will put all these. There is no problem. Dot Dot Dot But let me represent its behavior like this. Have we ever read anything in programming that can mimic its behavior? How did we mimic the characteristics? Using Variables. You already know this. Isn't it? Look, string int is just a variable. Using this we represented the characteristics."
+    },
+    {
+      "start_time": 2869.839,
+      "end_time": 2904.079,
+      "text": "अब बिहेवियर को कैसे करें? क्या है? ऐसे हमारे प्रोग्रामिंग में कुछ देखो बिहेवियर क्या कहता है कि वो ऑब्जेक्ट क्या कर सकता है? और हमने प्रोग्रामिंग में भी एक चीज़ पढ़ी है फंक्शनंस। और फंक्शनंस क्या होते हैं? दैट डज़ समथिंग। है ना? तो वो बिहेवियर को बहुत अच्छा रिप्रेजेंट कर सकते हैं। बिहेवियर भी तो यही है कि वो ऑब्जेक्ट क्या कर सकता है? और फंक्शनंस भी एक्चुअली डस समथिंग है ना? तो हम फंक्शनंस के थ्रू अपने अ ऑब्जेक्ट्स के बिहेवियर को रिप्रेजेंट कर सकते हैं। तो मैं क्या कर सकता हूं? ये जो मेक साउंड है, ईट है, रन है इनके मैं फंक्शनंस बना सकता हूं। फॉर एग्जांपल मैं इनके फंक्शनंस बना दूंगा।",
+      "source": "transcript_api",
+      "english_text": "Now how to behave? What is? Like this, look at something in our programming, what does the behavior say about what that object can do? And one thing we have also studied in programming is functions. And what are the functions? That does something. Isn't it? So they can represent the behavior very well. Behavior is also about what can that object do? And functions also actually do something, right? So we can represent the behavior of our objects through functions. So what can I do? I can make functions of these things like make sound, eat, run etc. For example I will create their functions."
+    },
+    {
+      "start_time": 2902.0,
+      "end_time": 2936.559,
+      "text": "लेट्स से वॉइड मेक साउंड। मेक साउंड कुछ इस तरीके से। और यहां पे मैं इसको डिफाइन कर दूंगा लेट्स से ऐसे। ठीक है? अब इसके अंदर बॉडी आ जाएगी। अब आप देखो मैंने इस फंक्शन को इस क्लास के अंदर ही बना दिया। क्यों? क्योंकि मैंने क्या कहा था? ये बिहेवियर भी तो इस एनिमल का ये बिहेवियर भी तो इस एनिमल का इंट्रिंसिक नेचर है। तो उसके इंट्रिंसिक नेचर को रिप्रेजेंट करने के लिए मैंने इस बिहेवियर को इस एनिमल ग्लास के अंदर डाल दिया। है ना? अब ऐसे ही ईंट का फंक्शन बनाना होगा। तो मैं यहां पे एक",
+      "source": "transcript_api",
+      "english_text": "Let's make the void make sound. Make sound something like this. And here I will define it with lets like this. Ok? Now the body will come inside it. Now you see, I created this function inside this class itself. Why? Because what did I say? This behavior of this animal is also the intrinsic nature of this animal. So to represent its intrinsic nature, I put this behavior inside this animal glass. Isn't it? Now the brick function will have to be made like this. so here i am"
+    },
+    {
+      "start_time": 2934.48,
+      "end_time": 2966.64,
+      "text": "और फंक्शन बना सकता हूं। वॉइड ईट। अब अगेन वो देख लेंगे बाद में कि वो तो लॉजिक पे डिपेंड करता है कि वो वॉइड टाइप का होगा या किसी और टाइप का होगा। पर रिप्रेजेंट करने के लिए मैं बता दिया कि मैं ऐसे बना सकता हूं वॉइड ईट है ना। तो अब एग्जैक्टली मैंने एक रियल वर्ल्ड सिनेरियो को ममिक किया है क्योंकि मैंने किसी ऑब्जेक्ट के कैरेक्टरिस्टिक्स को और उस ऑब्जेक्ट के बिहेवियर को दोनों को अपनी प्रोग्रामिंग में रिप्रेजेंट कर लिया एक ऑब्जेक्ट के अंदर। अब एनिमल के अंदर ही उसके डेटा टाइप उसके कैरेक्टर्स हैं और उसके बिहेवियर्स भी हैं। अब सेम चीज अगर मैं स्टूडेंट पे अप्लाई करूं तो मैंने क्या कहा था? एक",
+      "source": "transcript_api",
+      "english_text": "And I can create a function. Void Eat. Now again we will see later that it depends on the logic whether it will be of void type or some other type. But to represent, I told that I can make void eat like this, right? So now exactly I have mimicked a real world scenario because I have represented both the characteristics of an object and the behavior of that object in my programming inside one object. Now inside Animal itself its data types are its characters and also its behaviors. Now the same thing if I apply for student pay, what did I say? one"
+    },
+    {
+      "start_time": 2964.48,
+      "end_time": 2991.28,
+      "text": "रियल लाइफ जो स्टूडेंट होता है, यह अगर एक स्टूडेंट है, इसके पास खुद की कोई कैरेक्टरिस्टिक्स होंगी। इसके कैरेक्टर्स होंगे। कैरेक्टर्स को हम डेटा भी कह सकते हैं। याद रखना है ना? कुछ डेटा होगा। लेट्स से हमने अभी अभी तक क्या बात किया था? हमने उसके नेम की बात की थी, एज की बात की थी, रोल नंबर की बात की थी, कॉलेज की बात की थी वगैरह-वगैरह। अच्छा। पर इसका खुद का कुछ बिहेवियर भी तो होता होगा।",
+      "source": "transcript_api",
+      "english_text": "The real life student, if he is a student, will have some characteristics of his own. It will have characters. We can also call characters as data. Want to remember, right? There will be some data. What did we just talk about Letts? We talked about his name, age, roll number, college, etc. Good. But it must have some behavior of its own."
+    },
+    {
+      "start_time": 2988.559,
+      "end_time": 3021.359,
+      "text": "क्या बिहेवियर? लेट्स से भैया अ इसका एक बिहेवियर होगा कि मार्क अटेंडेंस। हर बच्चा खुद की अटेंडेंस को मार्क कर सकता है। तो मार्क अटेंडेंस का एक बिहेवियर होता होगा। मैं यहां पे खैर ये नहीं देता। ये तो सिर्फ इसका बिहेवियर है। इसको प्रोग्रामिंग में मैं फंक्शनंस के थ्रू रिप्रेजेंट करता हूं। है ना? तो अब देखो मैं इसको कैसे बनाऊंगा? सेम मैं क्लास बनाऊंगा स्टूडेंट कुछ इस तरीके से। ठीक है? ऊपर आ जाएंगे मेरे सारे वेरिएबल्स। आपको पता ही है यह",
+      "source": "transcript_api",
+      "english_text": "What behaviour? Let's say brother, one of its behavior will be to mark attendance. Every child can mark his own attendance. So there must be a behavior of mark attendance. Well, I don't give this here. This is just his behaviour. In programming I represent this through functions. Isn't it? So now see how I will make it? Same I will create class Student in this way. Ok? All my variables will come up. you already know this"
+    },
+    {
+      "start_time": 3018.64,
+      "end_time": 3052.64,
+      "text": "सब मैंने किया ही हुआ है। स्ट्रिंग नेम ठीक है? इंट एज इंट रोल नंबर वगैरह-वगैरह। स्ट्रिंग कॉलेज ये ऊपर आ गए और नीचे आ जाएंगे मेरे बिहेवियर्स। तो मैं यहां पे लिख सकता हूं लेट्स से वॉइड मार्क अटेंडेंस। इसको मैंने एक फंक्शन बना दिया कुछ इस तरीके से। और यहां पे आ जाएगा कुछ भी जो मैं करना चाहता हूं। बॉडी ऑफ़ द फंक्शन। तो देखो अगेन मैंने कैरेक्टरिस्टिक्स को भी रिप्रेजेंट कर लिया। यूजिंग वेरिएबल बिहेवियर को भी रिप्रेजेंट कर लिया यूजिंग फंक्शनंस। ठीक है? तो अगेन ये क्या रिप्रेजेंट कर रहा",
+      "source": "transcript_api",
+      "english_text": "I have already done everything. String name is ok? Int age int roll number etc. String College These have come up and will come down my behaviours. So I can write here lets say void mark attendance. I made it a function like this. And anything I want to do will come here. Body of the function. So look again I have also represented the characteristics. Using variables behavior is also represented using functions. Ok? So what is this representing again?"
+    },
+    {
+      "start_time": 3051.28,
+      "end_time": 3085.599,
+      "text": "है? ये रिप्रेजेंट कर रहा है उसके कैरेक्टर्स को या डेटा को। और ऐसे ये सब क्या रिप्रेजेंट करेंगे? ये रिप्रेजेंट करेंगे किसी भी ऑब्जेक्ट के बिहेवियर को। ठीक है? अब देखो मैं इन फंक्शनंस को कॉल कैसे कर सकता हूं। अभी जब मैं कोड लिखता हूं कि मैंने एक ऑब्जेक्ट बनाया। सॉरी इसको ऐसे बनाते हैं। हां, मैं ऑब्जेक्ट ऐसे बनाता हूं। स्टूडेंट S1 = न्यू स्टूडेंट यह तो मैं करता हूं। और अगर मुझे S1 का नेम फच करना है तो मैं S1 डॉट नेम कर सकता हूं। है ना? इसको मैं चाहे तो प्रिंट कर लूं चाहे मैं से कोई वैल्यू डाल",
+      "source": "transcript_api",
+      "english_text": "Is it? Is it representing its characters or data. And what will all this represent? This will represent the behavior of any object. Ok? Now see how I can call these functions. Right now when I write the code I created an object. Sorry let's make it like this. Yes, that's how I create objects. Student S1 = New Student This is what I do. And if I want to fetch the name of S1, I can do S1 dot name. Isn't it? I can print it if I want, or I can enter any value."
+    },
+    {
+      "start_time": 3083.119,
+      "end_time": 3111.599,
+      "text": "दूं। अब मुझे अगर ये मार्क अटेंडेंस कॉल करना है तो भी मैं सेम सिंटेक्स लिखूंगा। S1 डॉट मार्क अटेंडेंस डॉट ऑपरेटर और हमारा मार्क अटेंडेंस। और आपको पता ही है जब भी हम कोई फंक्शन कॉल करते हैं हम क्या करते हैं? अ पैरेंथेसिस देके सेमी कॉललन लगा देते हैं कि हमने एक फंक्शन को कॉल कर लिया। ये तो हमने पहले पढ़ा ही हुआ है। तो S1 डॉट मार्क अटेंडेंस करते ही मैंने क्या किया? मैंने S1 के इस फंक्शन को कॉल कर लिया जो इस ऑब्जेक्ट के अंदर लाई करता है।",
+      "source": "transcript_api",
+      "english_text": "Let me. Now if I have to call this mark attendance, I will write the same syntax. S1 dot mark attendance dot operator and our mark attendance. And do you know what we do whenever we call a function? By placing a parentheses, we put a semicolon to indicate that we have called a function. We have read this before. So what did I do as soon as I attended S1 Dot Mark? I called this function of S1 which brings in this object."
+    },
+    {
+      "start_time": 3108.8,
+      "end_time": 3134.24,
+      "text": "है ना? यानी कि अब हमारा जो S1 ऑब्जेक्ट बनेगा मेमोरी में उसमें सिर्फ ये चार वेरिएबल ही नहीं है। नेम, एज, रोल नंबर और आपका क्या है? कॉलेज। इसके अलावा फंक्शन भी है मार्क अटेंडेंस। ये याद रखना। ठीक है? अब ये पूरा का पूरा ऑब्जेक्ट्स सिर्फ कैरेक्टरिस्टिक से नहीं बल्कि बिहेवियर से भी मिलके बना है। और मैंने आपको बता दिया हम कॉल कैसे करेंगे।",
+      "source": "transcript_api",
+      "english_text": "isn't it? This means that now our S1 object that will be created does not have only these four variables in the memory. Name, Age, Roll Number and what is yours? College. Apart from this, there is also a function to mark attendance. Remember this. Ok? Now these entire objects are made up not only of characteristics but also of behavior. And I told you how we will make the call."
+    },
+    {
+      "start_time": 3131.44,
+      "end_time": 3165.2,
+      "text": "सेम यूजिंग डॉट ऑपरेटर। अच्छा। अब मेरा एक और चीज क्वेश्चन है आपसे। जब हम पहले एक प्रिंट फंक्शन लिखते थे। लेट्स से वॉइड प्रिंट कि भाई मुझे स्टूडेंट की डिटेल को स्क्रीन पे प्रिंट करना है। तो मुझे क्या करना पड़ता था? मुझे यहां पे हर चीज पास करनी पड़ती थी। है ना? उसका नेम, एज, रोल नंबर अलग-अलग। पर अब तो मैं सीधा का सीधा पूरा का पूरा स्टूडेंट पास कर सकता हूं। स्टूडेंट एस तो लेट्स से वॉइड प्रिंट क्या करता होगा? एक कंप्लीट स्टूडेंट लेता होगा s और उसको प्रिंट कर देता होगा। प्रिंट करने के लिए आपको पता ही है हमें कुछ नहीं करना। यहां पे हम लिखेंगे सिस्टम डॉट आउट",
+      "source": "transcript_api",
+      "english_text": "Same using dot operator. Good. Now I have one more question for you. When we first wrote a print function. Let's print the void brother, I have to print the details of the student on the screen. So what did I have to do? I had to pass everything here. Isn't it? His name, age, roll number are different. But now I can pass the exam straight away. So what will student S do with blank print? A complete student would take the notes and print them. You know we don't have to do anything for printing. Here we will write system dot out"
+    },
+    {
+      "start_time": 3162.319,
+      "end_time": 3194.319,
+      "text": "डॉट प्रिंट एलn और s डॉट नेम प्रिंट करो कॉमा s डॉट एज प्रिंट करो कॉमा वगैरह-वगैरह कुछ इस तरह से मैं प्रिंट कर लूंगा कोई दिक्कत नहीं है तो मुझे बेसिकली अब प्रिंट करने के लिए स्टूडेंट पूरा का पूरा स्टूडेंट पास करने की जरूरत है ना कि उसके इंडिविजुअल वेरिएबल्स को बहुत बढ़िया पर यहां से मैं क्वेश्चन ये है कि क्या अभी भी आपको लगता है ये जो प्रिंट फंक्शन है इसको हमें बाहर लिखना चाहिए व्हाट इफ इस फंक्शन को भी मैं इस क्लास के अंदर लिख दूं तो अब प्रिंट फंक्शन उसके स्टूडेंट की खुद की एक आइडेंटिटी बना दूं।",
+      "source": "transcript_api",
+      "english_text": "dot print l n and s dot name print comma s dot edge print comma etc. etc. I will print it like this, no problem, so basically now to print it, I need to pass the entire student and not its individual variables, very good, but from here, my question is, do you still think that this is the print function, we should write it out, what if this. If I write the function inside this class, then now make the print function its own identity of the student."
+    },
+    {
+      "start_time": 3191.92,
+      "end_time": 3222.16,
+      "text": "तो अब आप कहोगे भैया पर हम तो रियल वर्ल्ड सिनेरियो को फोकस कर रहे थे और रियल वर्ल्ड में प्रिंट नाम की तो कोई चीज ही नहीं होती। प्रिंट कोई बिहेवियर नहीं होता। स्टूडेंट का प्रिंट कोई बिहेवियर रियल नहीं होता। है ना? बिल्कुल सही बात है। पर आप ऐसे सोचो हमने जो प्रोग्रामिंग में रियल वर्ल्ड को मिमिक करना था वो तो हमने कर लिया। है ना? पर अब जब हमें कोड लिखना है ऐसे कोई भी हेल्पफुल फंक्शनंस ऐसे कोई भी हेल्पफुल डेटा जो हमें एक ऑब्जेक्ट के अंदर डालने पे हमारा कोड इजी हो जाएगा वो भी हम उसके अंदर डाल देंगे।",
+      "source": "transcript_api",
+      "english_text": "So now you will say brother, we were focusing on the real world scenario and there is no such thing as print in the real world. Print is not behavior. The printed behavior of a student is not real. Isn't it? That is absolutely correct. But if you think like this, we have done what we had to do in programming to mimic the real world. Isn't it? But now when we have to write code, we will put any such helpful functions or any such helpful data inside an object which will make our code easy."
+    },
+    {
+      "start_time": 3220.319,
+      "end_time": 3252.079,
+      "text": "अब बेसिकली रियल वर्ल्ड सिनेरियो को मिमिक करने के बाद आपको ऐसे सोचना है कि हमने एक रियल स्टूडेंट को एक डिजिटल स्टूडेंट तो बना दिया है ना? पर डिजिटल स्टूडेंट के अंदर तो ऐसे और भी बिहेवियर हो सकते हैं जो रियल स्टूडेंट में नहीं होंगे। फॉर एग्जांपल रियल स्टूडेंट में प्रिंट नाम का कोई बिहेवियर नहीं होगा। है ना? क्योंकि ऑब्वियसली आप रियल लाइफ में खुद को प्रिंट नहीं करते। पर ये जो हमारा डिजिटल स्टूडेंट है ये तो खुद को प्रिंट कर सकता है। तो यहां पे प्रिंट नाम का फंक्शन मेक्स सेंस। तो ये जो प्रिंट नाम का बिहेवियर है मान लो ये इस डिजिटल स्टूडेंट का वर्जन है ना कि इस रियल स्टूडेंट का।",
+      "source": "transcript_api",
+      "english_text": "Now basically after mimicking the real world scenario, you have to think that we have transformed a real student into a digital student, right? But there can be other such behaviors in a digital student which will not be there in a real student. For example, in real student there will be no behavior named print. Isn't it? Because obviously you don't print yourself in real life. But our digital student can print himself. So here the function named print makes sense. So this behavior called print, believe that it is the version of this digital student and not of this real student."
+    },
+    {
+      "start_time": 3250.079,
+      "end_time": 3281.839,
+      "text": "तो हम इसको भी इसके अंदर डाल सकते हैं। ठीक है? तो व्हाट इफ ये जो प्रिंट है इसको भी मैंने इसके अंदर डाल दिया। तो इसका फायदा ये होगा कि अगर मैंने ये जो मैंने अपनी क्लास बना रखी है स्टूडेंट। ठीक है? जिसके अंदर बाकी सारी चीजें आती हैं। और यहीं पे मैंने डाल दिया वॉइड प्रिंट। अब आप सोचो क्या मुझे कोई पैरामीटर्स लेने की जरूरत है? बिल्कुल नहीं। मेरे को कोई पैरामीटर लेने की जरूरत नहीं है। क्योंकि सारे पैरामीटर मेरे इसी क्लास के अंदर हैं। मैं इनको तो यूज़ कर ही सकता हूं। अभी हम कोड में देखेंगे कैसे?",
+      "source": "transcript_api",
+      "english_text": "So we can put this inside this also. Ok? So what if this print is also put inside it. So its advantage will be that if I have created this class in my student. Ok? Within which all the other things come. And this is where I put the void print. Now you think, do I need to take any parameters? no way. I don't need to take any parameters. Because all the parameters are inside my class. I can definitely use them. Now we will see in the code how?"
+    },
+    {
+      "start_time": 3280.24,
+      "end_time": 3315.04,
+      "text": "और मैं यहां पे सिर्फ सिस्टम डॉट आउट प्रिंट एलn सीधा प्रिंट कर दूंगा नेम। आपका ऐज, आपका रोल नंबर, आपका कॉलेज वगैरह-वगैरह। सिंपल। ठीक है? बेसिकली मुझे अब कोई पैरामीटर लेने की जरूरत नहीं है क्योंकि ये जो प्रिंट फंक्शन है ये इस स्टूडेंट का हिस्सा बन गया है। इस स्टूडेंट का खुद का एक आइडेंटिटी बन गया है। अब मैं कह सकता हूं ईच स्टूडेंट कैन प्रिंट इटसेल्फ। हर बच्चा खुद को प्रिंट कर सकता है। ये इस डिजिटल स्टूडेंट का हिस्सा है। ठीक है? अगेन मैंने आपको बोला रियल वर्ल्ड में प्रिंट नाम का कोई फंक्शन नहीं हो सकता। पर डिजिटल स्टूडेंट में तो हमें प्रिंट चाहिए। तो हमने उसको भी इसके",
+      "source": "transcript_api",
+      "english_text": "And here I will just print system dot out print ln directly name. Your age, your roll number, your college etc. Simple. Ok? Basically I don't need to take any parameters now because this print function has become a part of this student. This student has developed his own identity. Now I can say every student can print itself. Every child can print himself. This is part of this digital student. Ok? Again I told you that there cannot be any function called print in the real world. But for digital students, we need print. So we told him also"
+    },
+    {
+      "start_time": 3312.72,
+      "end_time": 3342.96,
+      "text": "अंदर डाल दिया। अब आप इसको ऐसे सोचना कि प्रोग्रामिंग में जरूरी नहीं है कि जो हमारे रियल ऑब्जेक्ट हैं उसे हम एज इट इज मिमिक करते हैं अपनी डिजिटल ऑब्जेक्ट्स में। राइट? कुछ ऑब्जेक्ट फिजिकल हो सकते हैं। कुछ ऑब्जेक्ट नॉन फिजिकल भी हो सकते हैं। फॉर एग्जांपल हमने एनिमल तो एक फिजिकल ऑब्जेक्ट है। एग्ज़िस्ट करता है। उसको हम डिजिटली रिप्रेजेंट कर सकते हैं। स्टूडेंट एक फिजिकल ऑब्जेक्ट है। एग्ज़िस्ट करता है।",
+      "source": "transcript_api",
+      "english_text": "Put it inside. Now you should think of it this way, in programming it is not necessary that we mimic our real object as it is in our digital objects. Right? Some objects may be physical. Some objects may also be non-physical. For example, animal is a physical object. Exists. We can represent it digitally. Student is a physical object. Exists."
+    },
+    {
+      "start_time": 3341.04,
+      "end_time": 3375.119,
+      "text": "उसको हम डिजिटली रिप्रेजेंट कर सकते हैं। पर आप सोचो बैंक अकाउंट रियल वर्ल्ड में एग्ज़िस्ट करता है क्या? मतलब बैंक अकाउंट कोई फिजिकल चीज नहीं है। पर उसको भी तो हम रिप्रेजेंट कर सकते हैं यूजिंग अ क्लास। पर हम क्यों बनाएंगे बैंक अकाउंट की क्लास? देखो, अगर हम एक क्लास बनाएंगे बैंक अकाउंट, वह हम बस इसलिए बनाएंगे क्योंकि बैंक अकाउंट भी एक कॉम्प्लिकेटेड ऑब्जेक्ट है। उसके अंदर मल्टीपल चीज़ हो सकती हैं। जैसे आपका अकाउंट नंबर हो सकता है। आपका आईएफएससी कोड हो सकता है। आपका अ ब्रांच का नाम हो सकता है वगैरह-वगैरह।",
+      "source": "transcript_api",
+      "english_text": "We can represent it digitally. But do you think, does a bank account exist in the real world? Meaning bank account is not a physical thing. But we can represent that also using a class. But why would we create a bank account class? Look, if we create a class Bank Account, we will create that simply because Bank Account is also a complex object. There may be multiple things inside it. Like it could be your account number. May be your IFSC code. Your A may be the name of the branch etc."
+    },
+    {
+      "start_time": 3373.04,
+      "end_time": 3406.4,
+      "text": "बहुत सारी चीज़ हो सकती हैं। है ना? तो हम उसको भी तो एक क्लास के थ्रू रिप्रेजेंट कर सकते हैं। तो अब आप समझ गए कोई भी ऐसी चीज जो कॉम्प्लिकेटेड है एक वेरिएबल में रिप्रेजेंट करने के लिए जिसको आप एक सिंपल इंट कैर फ्लोट में रिप्रेजेंट नहीं कर सकते। उसके अंदर मल्टीपल चीजें आती है। वो एक बॉक्स की तरह है। उसका क्या करोगे? आप बना दोगे एक ऑब्जेक्ट जैसे हमने बैंक अकाउंट का बना दिया। ताकि इसी के अंदर उसका अकाउंट नंबर, उसका आईएफएससी, उसका ब्रांच वगैरह-वगैरह हम स्टोर करवा पाए। और इसी के अंदर हम उसके फंक्शनंस या उसके",
+      "source": "transcript_api",
+      "english_text": "Many things can happen. Isn't it? So we can represent that also through a class. So now you understand that anything that is complex enough to represent in a variable you cannot represent it in a simple int char float. Multiple things come inside it. It's like a box. What will you do with it? You will create an object like we created for bank account. So that inside this we can store his account number, his IFSC, his branch etc. And within this we can see its functions or its"
+    },
+    {
+      "start_time": 3402.72,
+      "end_time": 3430.319,
+      "text": "बिहेवियर को भी लिख पाए। ठीक है? तो मिमिक करने का मतलब यही नहीं होता कि आप बस फिजिकल आइडेंटिटीज को उठाओगे। आप ऐसी आइडेंटिटीज भी उठा सकते हो जो नॉन फिजिकल है। जैसे आपका बैंक अकाउंट क्योंकि बैंक अकाउंट के अंदर भी मल्टीपल कैरेक्टरिस्टिक्स होती हैं। है ना? ऐसे ही आप मान लोकेशन। अब लोकेशन के अंदर इसको भी मैं अगर पेन से ही लिखूं। हां। लोकेशन के अंदर भी बहुत सारी कैरेक्टरिस्टिक्स हो सकती हैं। जे इसका लोंगट्यूड क्या है?",
+      "source": "transcript_api",
+      "english_text": "Be able to write the behavior also. Ok? So mimicking does not mean that you will just pick up physical identities. You can also pick up identities which are non-physical. Like your bank account because even a bank account has multiple characteristics. Isn't it? That's how you value location. Now if I write this inside the location with pen only. Yes. There can be many characteristics within the location as well. J What is its length?"
+    },
+    {
+      "start_time": 3427.92,
+      "end_time": 3461.28,
+      "text": "लैटीट्यूड क्या है? वगैरह-वगैरह। है ना? तो उसको भी रिप्रेजेंट करने के लिए प्रोग्रामिंग में मुझे क्लास बनानी पड़ेगी। तो कोई भी ऐसा रियल लाइफ ऑब्जेक्ट चाहे वो फिजिकल हो चाहे वो नॉन फिजिकल हो जो थोड़ा सा भी कॉम्प्लिकेटेड है। मतलब एक वेरिएबल से रिप्रेजेंट नहीं किया जा सकता। प्रोग्रामिंग में मैं उसके लिए क्या करता हूं? क्लास बनाता हूं। ठीक है? आई होप आपको ये समझ आ गया होगा कि हम हर चीज को जावा में ऑब्जेक्ट्स की तरह सोचना शुरू कर सकते हैं इन दी ऑब्जेक्ट ओरिएंटेड पैराडाइम। ठीक है? अब अभी तक हमने जो भी पढ़ा उसको फटाफट कोड में देखते हैं। बहुत मजा आएगा। हां जी। तो अगेन देखो यहां पे",
+      "source": "transcript_api",
+      "english_text": "What is latitude? And so on. Isn't it? So to represent that too I will have to create a class in programming. So any real life object, whether it is physical or non-physical, which is even a little complicated. Meaning cannot be represented by a variable. What do I do for that in programming? I make a class. Ok? I hope you have understood that we can start thinking of everything as objects in Java in this object oriented paradigm. Ok? Now let's quickly look at what we have read so far in code. It will be a lot of fun. Yes sir. so look again here"
+    },
+    {
+      "start_time": 3458.799,
+      "end_time": 3492.799,
+      "text": "मेरा बॉईलर प्लेट कोड रेडी है। ठीक है? अ मुझे क्या करना था? मैं सबसे पहले अपनी एक स्टूडेंट क्लास बनाता हूं। और सबसे पहले बताता हूं वो हम लिखेंगे कहां? क्या हम अपनी स्टूडेंट क्लास इसके अंदर बनाएंगे? क्लास स्टूडेंट? बिल्कुल नहीं। हम इस मेन फंक्शन के अंदर नहीं बनाएंगे। हम इस मेन फंक्शन के बाहर भी नहीं बनाएंगे। हम इसके भी बाहर बनाएंगे। इस कोड ब्लॉक के भी बाहर बनाएंगे। अगर आप देखो ये भी एक क्लास है। ठीक है? इसमें हम बाद में आते हैं क्या है? अब हम इसके बाहर बनाएंगे। लेट्स से क्लास स्टूडेंट तो मैंने एक स्टूडेंट क्लास बनाई। अब देखो हमारी स्टूडेंट क्लास में क्या-क्या था। सबसे पहले कुछ कैरेक्टरिस्टिक्स थे तो वो देख लेते हैं।",
+      "source": "transcript_api",
+      "english_text": "My boiler plate is code ready. Ok? A What was I supposed to do? First of all I create my Student class. And first of all let me tell you where will we write it? Shall we create our student class inside this? class student? no way. We will not create this inside the main function. We will not even create this outside the main function. We will build out of this too. Will also create outside this code block. If you see, this is also a class. Ok? What is this, we will come later? Now we will create out of it. Class Student from Lets So I created a student class. Now see what was there in our student class. First of all, if there were some characteristics then let's see them."
+    },
+    {
+      "start_time": 3490.4,
+      "end_time": 3517.16,
+      "text": "तो एक स्ट्रिंग हो गया लेट्स से नेम अ इसको ऐसे रख लेते हैं। अ एक हमारा हो गया एज एक हमारा हो गया रोल नंबर और इसके अलावा हमने क्या रखा था? इसको पूरा लिख लेते हैं। चलो रोल नंबर इसके अलावा हमने क्या कहा था? स्ट्रिंग कॉलेज कुछ इस तरीके से। है ना? अब एक काम करते हैं। यहां पे स्ट्रिंग आएगा। ओके। इसके कुछ बिहेवियर्स को भी रिप्रेजेंट कर लेते हैं। तो लेट्स से एक रिप्रेजेंट करते हैं हम वॉइड मार्क अटेंडेंस।",
+      "source": "transcript_api",
+      "english_text": "So there is a string, let's name it, let's keep it like this. One is our age, one is our roll number and what else did we keep? Let's write it down completely. Come on roll number what else did we say? String college something like this. Isn't it? Now let's do one thing. The string will come here. Ok. Some of its behaviors are also represented. So let's make a representation, we void mark attendance."
+    },
+    {
+      "start_time": 3517.28,
+      "end_time": 3552.079,
+      "text": "ठीक है? कुछ इस तरीके से और कुछ नहीं करता मैं यहां पर बस सिस्टम डॉट आउट डॉट प्रिंट एलn लिख देता हूं कि भ अटेंडेंस मार्क्ड। लेट्स से अटेंडेंस मार्क्ड। अब अटेंडेंस किसने मार्क की है? तो मैं चाहता हूं स्टूडेंट का नाम भी आए। तो अटेंडेंस मार्क्ड बाय अ यहां पे मैं लिख सकता हूं प्लस और नेम। अब ये कौन सा नेम है? यह इसी स्टूडेंट का नेम है जो बेसिकली ये जो ऑब्जेक्ट है उसका जो नेम है यह वही नेम है। अब क्योंकि मार्क अटेंडेंस इस स्टूडेंट का हिस्सा है तो इसको पता होगा कि खुद का नाम क्या है? तो ये सिंपली नाम",
+      "source": "transcript_api",
+      "english_text": "ok? Something like this doesn't do anything else, I just write system dot out dot print ln here that attendance is marked. Attendance marked late. Now who has marked the attendance? So I want the name of the student to also come. So attendance marked by a here I can write plus and name. Now what name is this? This is the name of this student, which is basically the name of this object. Now because Mark Attendance is a part of this student then he will know what is his own name? So this is a simple name"
+    },
+    {
+      "start_time": 3550.079,
+      "end_time": 3584.24,
+      "text": "प्रिंट कर सकता है। इसको ये नाम अपने पैरामीटर में लेने की जरूरत नहीं है क्योंकि इसका नाम का एक्सेस है इसके पास। राइट? ओके। अब इसी में मैं लेट्स से एक और फंक्शन लिख देता हूं। वॉइड प्रिंट ठीक है? प्रिंट। यह कुछ नहीं करेगा। ये इन सारी वैल्यूज़ को प्रिंट करेगा। तो बेसिकली सिस्टम डॉट आउट डॉट प्रिंट ln और इनको ये कॉमा सेपरेटेड प्रिंट कर लेगा। तो मैं फटाफट वो लिख देता हूं। तो देखो मैंने नेम एज रोल नंबर और कॉलेज प्रिंट करा दिया। बहुत बढ़िया। अब मुझे स्टूडेंट क्लास के ऑब्जेक्ट्स को बनाना है। उसको मैं कहां बनाऊंगा? उसको मैं दोबारा बनाऊंगा मेन में। क्योंकि मैंने आपको क्या कहा था? देखो",
+      "source": "transcript_api",
+      "english_text": "Can print. It doesn't need to take this name as its parameter because it has access to its name. Right? Ok. Now in this I write another function from lets. Is void print ok? Print. It won't do anything. This will print all these values. So basically the system will print dot out dot print ln and these comma separated. So I write that quickly. So see, I got my name, roll number and college printed. very nice. Now I have to create objects of Student class. Where will I make it? I will make it again in main. Because what did I tell you? look at"
+    },
+    {
+      "start_time": 3582.48,
+      "end_time": 3616.96,
+      "text": "प्रोग्रामिंग में हमारा जो फ्लो ऑफ़ कंट्रोल है वो सिर्फ मेन फंक्शन को एग्जीक्यूट करता है। है ना? जो भी मेन में लिखा होगा वही एग्जीक्यूट होगा। अब अगर एक्चुअली मैं लिखूंगा स्टूडेंट s1 = न्यू स्टूडेंट। मतलब मैं स्टूडेंट नाम का ऑब्जेक्ट मेन के अंदर बनाऊंगा। तभी जाकर के इस क्लास के लिए कोई मेमोरी एलोकेट होगी। वरना ये तो मैंने बस ऐसे कोड लिखा हुआ है। इसके लिए कोई मेमोरी एलोकेट ही नहीं होगी। ठीक है? तो मैं क्या करूंगा? यहां पे मैं स्टूडेंट नाम का एक ऑप्शन बनाऊंगा। लेट्स से s1 इक्वल टू न्यू स्टूडेंट कुछ इस तरीके से। और लेट्स से मैं एक और बना लेता हूं। S2B इक्वल टू न्यू",
+      "source": "transcript_api",
+      "english_text": "Our flow of control in programming only executes the main function. Isn't it? Whatever is written in main will be executed. Now if actually I will write student s1 = new student. Meaning I will create an object named Student inside main. Only then will any memory be allocated for this class. Otherwise this is just the code I have written. No memory will be allocated for this. Ok? so what do i do? Here I will create an option named Student. Let's say s1 equal to new student something like this. And with lettuce I make another one. S2B equal to new"
+    },
+    {
+      "start_time": 3615.52,
+      "end_time": 3650.24,
+      "text": "स्टूडेंट। ये आपको पता ही है। हम ऐसे कर सकते हैं। ठीक है? अब S1 डॉट अब मेरे को वैल्यू देनी है तो मैं क्या करूंगा? S1 डॉट नेम और लेट्स से इसमें मैंने दे दिया आदित्य जो हमने बात की थी S1 डॉट एज लेट्स से मैंने दे दिया 28 S1 डॉट सॉरी S1 डॉट अ हमारे पास क्या था रोल नंबर ठीक है इसको मैंने दे दिया 1001 देखो मुझे आईडी खुद ही रिप्रेजेंट कर देता है वीएस कोड कि मैं क्या डालने वाला हूं जैसे मैंने डॉट लिखा इसने देखो हर चीज डाल दी कि मैं क्या-क्या डाल सकता हूं तो यहां पे लिख सकता हूं कॉलेज क्यों क्योंकि इसको पता है कि उस ऑब्जेक्ट के अंदर क्या-क्या है तो वो मुझे ला के दे देता है तो लेट्स से यहां पे",
+      "source": "transcript_api",
+      "english_text": "Student. You already know this. We can do it like this. Ok? Now S1 Dot Now I have to give value then what should I do? S1 dot name and in this from Lets I gave Aditya which we had talked about S1 dot as Lets I gave 28 S1 dot sorry S1 dot a What we had was roll number ok I gave it 1001 see it represents me the ID itself VS code what am I going to put as I wrote dot see it put everything that what can I put so I can write college here because it knows that Whatever is there inside that object, he brings it to me and gives it to me, so let's see it here."
+    },
+    {
+      "start_time": 3648.0,
+      "end_time": 3681.599,
+      "text": "मैंने दिया आईआईटी गुवाहाटी। ओके बहुत बढ़िया। अब ऐसे ही मैं क्या कर सकता हूं? मैं एक और वेरिएबल s2 के अंदर ये सारी चीजें डाल सकता हूं। तो मैं यहां पे लिख दूंगा s2 डॉट नेम s2 डॉट एज s2 डॉट नंबर और s2 डॉट कॉलेज। यहां पे नेम को कर देते हैं हम रोहित और यहां पे 1001 को बस कर देते हैं 102। बाकी चीजें सेम रहने देते हैं। बहुत बढ़िया। ठीक है? अब देखते हैं आगे। मैं क्या करता हूं? S1 के मार्क अटेंडेंस फंक्शन को कॉल कर लेता हूं। ठीक है? यानी कि स्क्रीन पे प्रिंट होना चाहिए।",
+      "source": "transcript_api",
+      "english_text": "I gave IIT Guwahati. Okay, great. Now what can I do like this? I can put all these things inside another variable s2. So I will write here s2 dot name s2 dot age s2 dot number and s2 dot college. Here we change the name to Rohit and here we change 1001 to just 102. Leave the rest of the things the same. very nice. Ok? Now let's look ahead. What do I do? I call the mark attendance function of S1. Ok? That means it should be printed on the screen."
+    },
+    {
+      "start_time": 3679.44,
+      "end_time": 3712.0,
+      "text": "अटेंडेंस मार्क बाय आदित्य। वैसे ही मैं S2 के भी मार्क अटेंडेंस को कॉल कर लेता हूं। बहुत बढ़िया। अब मैं दोबारा S1 को कहता हूं प्रिंट कर ले खुद को और S2 को भी कहता हूं खुद को प्रिंट कर ले। तो स्क्रीन पे सब कुछ प्रिंट हो जाना चाहिए। ठीक है? तो एक बार रन करके देखते हैं इसे फटाफट। ये देखो। अटेंडेंस मार्क्ड बाय आदित्य। अटेंडेंस मार्क्ड बाय रोहित। आदित्य की सारी डिटेल और रोहित की सारी डिटेल सब कुछ प्रिंट हो गया। बहुत बढ़िया। ठीक है? तो आई होप आपको समझ आया कि हमने कैसे एक क्लास बनाई, कैसे उसके हमने दोनों ऑब्जेक्ट्स",
+      "source": "transcript_api",
+      "english_text": "Attendance mark by Aditya. Similarly, I call mark attendance of S2 also. very nice. Now again I tell S1 to print itself and I also tell S2 to print itself. So everything should be printed on the screen. Ok? So let's run it once and see it quickly. Look at this. Attendance marked by Aditya. Attendance marked by Rohit. All the details of Aditya and all the details of Rohit were printed. very nice. Ok? So I hope you understood how we created a class, how we created two objects in it."
+    },
+    {
+      "start_time": 3710.0,
+      "end_time": 3743.04,
+      "text": "बनाए और कैसे हमने उसकी वैल्यूज़ को स्टोर किया और उनको उनके बिहेवियर्स को कॉल करा लिया। ठीक है? तो ये सब आपको पता है ये सब कैरेक्टरिस्टिक्स हैं। डेटा को रिप्रेजेंट करती है और ये सब बिहेवियर क्या को रिप्रेजेंट करता है। अब देखो अभी तक मैं आपको कहता था अब इस बॉईलर प्लेट कोड को इग्नोर करो। अब कुछ टाइम से आपको पता लग गया कि ये जो ये कोड है मेन ये कुछ नहीं है। खुद एक फंक्शन है। जैसे हम बाकी फंक्शन लिखते मेन भी एक फंक्शन है और हमारा फ्लो ऑफ़ कंट्रोल हमेशा इस मेन फंक्शन के अंदर जो भी लिखा है उसी को एग्जीक्यूट करता है। अब ये जो फंक्शन है इसका रिटर्न टाइप है वॉइड और ये आर पैरामीटर क्या लेता है? स्ट्रिंग आक्स।",
+      "source": "transcript_api",
+      "english_text": "And how we stored its values and made them call their behaviors. Ok? So you know all these are the characteristics. Represents data and what does all this behavior represent? Now look, till now I was telling you to ignore this boiler plate code. Now after some time you have come to know that this code is nothing main. itself is a function. Just like we write other functions, main is also a function and our flow of control always executes whatever is written inside this main function. Now the return type of this function is void and what does it take as the R parameter? String Ox."
+    },
+    {
+      "start_time": 3741.359,
+      "end_time": 3776.0,
+      "text": "ठीक है? ये पैरामीटर्स लेता है। बहुत बढ़िया। ये क्यों लेता है? अभी हमने वो नहीं देखा पर हमको पता है लेता है। ओके? और अभी तक हमने ये भी नहीं समझा पब्लिक और स्टैटिक क्या होता है? पर हम काफी चीजें समझ गए। राइट? ये भी हम बाद में देख लेंगे। अब इसके भी ऊपर चलते हैं। अब आप ध्यान से देखो। हमने ऊपर लिखा हुआ है पब्लिक क्लास डेमो। आप इस पब्लिक को इग्नोर करो। आपको बस देखो क्लास डेमो यानी कि यह भी तो एक डेमो क्लास है और यह क्लास का नाम क्या है जो इस फाइल का नाम है देखो डेमो डॉट java है ना यह क्यों है ये भी हम बाद में देखेंगे पर आप समझ सकते हो कि हमने जो क्लास डेमो लिखा है ये भी हमने एक क्लास बनाई है और इस क्लास के अंदर हमने",
+      "source": "transcript_api",
+      "english_text": "Ok? It takes parameters. very nice. Why does it take this? We haven't seen him yet but we know he takes it. Ok? And yet we have not even understood what is public and static? But we understood many things. Right? We will see this also later. Now let's go over this also. Now look carefully. We have written public class demo above. You ignore this public. You just look at the class demo, that is, this is also a demo class and what is the name of this class, which is the name of this file, see why it is demo dot java, we will see this also later, but you can understand that the class demo that we have written, we have also created a class and inside this class, we have"
+    },
+    {
+      "start_time": 3774.24,
+      "end_time": 3801.92,
+      "text": "एक मेन फंक्शन लिखा हुआ है देखो पब्लिक स्टैटिक वॉइड मेन ये मैंने इसको बस बंद किया है इस कोड ब्लॉक को आप बंद कर सकते हो ठीक है तो ये जो मेन फंक्शन मैंने लिखा हुआ है ये इस क्लास के अंदर आता है क्योंकि देखो ये बिल्कुल सिमिलर नहीं है जैसे मैंने अपनी एक स्टूडेंट क्लास बनाई और उसके अंदर कुछ फंक्शनंस लिखे वैसे ही यहां पे एक डेमो क्लास बनाई जिसके अंदर एक मेन फंक्शन लिखा और ये हमें करना ही पड़ता है। मतलब हमें एक क्लास बनानी ही पड़ेगी। उसके अंदर एक मेन फंक्शन लिखना ही पड़ेगा। उसी के अंदर हम कुछ कोड लिख सकते हैं।",
+      "source": "transcript_api",
+      "english_text": "Look, there is a main function written, public static void main, I have just closed it, you can close this code block, okay, so this main function which I have written, it comes inside this class because look, it is not at all similar, like I created a student class of mine and wrote some functions inside it, similarly, I created a demo class here inside which I wrote a main function and we have to do this. Meaning we will have to create a class. A main function will have to be written inside it. Inside that we can write some code."
+    },
+    {
+      "start_time": 3799.119,
+      "end_time": 3832.799,
+      "text": "यानी कि जो हमारी जावा है वो प्योरली ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग है। ऑलमोस्ट। ठीक है? अब मैं ऑलमोस्ट क्यों लगा रहा हूं वो मैं आपको बाद में बताऊंगा। तो मैं यहां लिख सकता हूं। जावा इज़ ऑलमोस्ट कंप्लीट ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग। ठीक है? जावा जो है ऑलमोस्ट कंप्लीट ऑब्जेक्ट ओरिएंटेड प्रोग्रामिंग है। ठीक है? ऑलमोस्ट मैं क्यों लगा रहा हूं? अगेन आपको बाद में बता दूंगा। क्योंकि देखो जावा में अगर आपको थोड़ा सा भी कोड लिखना है तो पहले आपको एक क्लास बनानी पड़ेगी। उसके अंदर आपको एक मेन फंक्शन लिखना पड़ेगा और उसके अंदर ही आप अपना बाकी कोड लिख सकते",
+      "source": "transcript_api",
+      "english_text": "That means our Java is purely object oriented programming. Almost. Ok? Now I will tell you later why I am putting almost. So I can write here. Java Is Almost Complete Object Oriented Programming. Ok? Java is almost complete object oriented programming. Ok? Why am I putting almost? I will tell you again later. Because see, if you want to write even a little code in Java, then first you will have to create a class. Inside that you will have to write a main function and inside that you can write the rest of your code."
+    },
+    {
+      "start_time": 3830.64,
+      "end_time": 3864.96,
+      "text": "हो। अगर जैसे मुझे खुद की कोई क्लास बनानी पड़ी तो मैंने उसको यहां बनाया। इस क्लास के बाहर अपनी जो मेन डेमो क्लास थी उसके बाहर बनाया। है ना? पर उसका ऑब्जेक्ट मुझे कहां डिक्लेअर करना पड़ा? मेन क्लास के अंदर सॉरी मेन फंक्शन के अंदर। ठीक है? तो ये छोटी-छोटी चीजें जो रह गई है ये भी आपको धीरे-धीरे समझ आ जाएगा कि हमने मेन क्लास क्यों बनाई थी? है ना? और ये पब्लिक क्या होता है? पब्लिक स्टैटिक ये सब क्या होता है? यहां पे हमने स्ट्रिंग आर्गुमेंट क्यों लिखा हुआ है? ये सारी चीजें आपको धीरे-धीरे समझ आ जाएंगी। बट आई होप आपको काफी चीजें अब समझ आने लग गई कि जावा में अगर आपको थोड़ा सा भी कुछ कोड लिखना है तो आपको पहले कम से कम एक क्लास तो बनानी",
+      "source": "transcript_api",
+      "english_text": "Yes. If I had to create a class of my own, I created it here. Created this class outside of my main demo class. Isn't it? But where did I have to declare its object? Inside the main class, inside the sorry main function. Ok? So these small things which are left, you will gradually understand why we had created the main class? Isn't it? And what is this public? Public Static What is all this? Why have we written string argument here? You will gradually understand all these things. But I hope you have started understanding a lot of things now that if you want to write even a little code in Java, then you should first create at least a class."
+    },
+    {
+      "start_time": 3863.039,
+      "end_time": 3893.319,
+      "text": "पड़ेगी। यानी कि बिना अभी तक आपने जो कोई भी क्लासेस पढ़ी थी आप हमेशा बोईलर प्लेट में ही सही पर एक क्लास तो बना ही रहे थे। और उसके अंदर एक फंक्शन तो लिख ही रहे थे। इसका नाम था वॉइड मेन। ठीक है? तो आई होप आपको ये सारी चीजें समझ आई होंगी। ये बस एक इंट्रोडक्शन था ऑब्जेक्ट्स और क्लासेस का। अगले लेक्चर में हम इसको थोड़ा सा और डेप्थ में समझेंगे। पर अगर आपको ये अच्छे से समझ आ गया तो आप समझ लो। आपने कोर आईडिया समझ लिया जो ऊब्स के प्रिंसिपल का आईडिया है। ठीक है? बाकी आपसे मिलते हैं नेक्स्ट लेक्चर में। तब तक के लिए थैंक यू सो मच।",
+      "source": "transcript_api",
+      "english_text": "Will have to. That means that without whatever classes you had studied till now, you were always creating a class, even if it was in a boiler plate. And we were writing a function inside it. Its name was Void Man. Ok? So I hope you have understood all these things. This was just an introduction to objects and classes. In the next lecture we will understand this in a little more depth. But if you understand it well then you understand. You have understood the core idea which is the idea of ​​the principal of boredom. Ok? See you in the next lecture. Till then thank you so much."
+    }
+  ],
+  "playlist_id": "PLXZCnQTdmeaE",
+  "playlist_title": "OOPs in Java Full Course"
+}

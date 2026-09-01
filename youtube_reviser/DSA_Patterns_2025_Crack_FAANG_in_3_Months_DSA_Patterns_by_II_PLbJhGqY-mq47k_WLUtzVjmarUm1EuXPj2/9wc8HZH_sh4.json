@@ -1,0 +1,275 @@
+{
+  "video_id": "9wc8HZH_sh4",
+  "video_title": "DSA PATTERNS Episode 16 | Sliding Window Pattern: Amazon Interview Question",
+  "video_number": 16,
+  "chunks": [
+    {
+      "start_time": 2.389,
+      "end_time": 29.269,
+      "text": "इससे पहले कि मेरे बच्चे बोले कि पढ़ने का वीडियो बनाओ। ये सब नहीं देखेंगे। पढ़ने का ही वीडियो है। थोड़ा ध्यान खोल के सुनो। जो लोग नए-नए बच्चे आ रहे हैं ना आज आपको इस वीडियो में पता चल जाएगा कि इतना दिन से हम जो चिल्ला रहे हैं हम जो पढ़ा रहे हैं क्यों आपके स्ट्राइवर भैया या तो आपके लव बब्बर भैया या तो अपना कॉलेज आपका कॉलेज कोई भी कॉलेज उससे ये आदमी बेटर है। ये क्वेश्चन देखिए जो आपके स्क्रीन पे है। ये क्वेश्चन क्या है? हार्ड क्वेश्चन है। लीड कोड हार्ड क्वेश्चन है। Facebook, Amazon, Lindin, Microsoft जो जो कंपनी का आप नाम सोच सकते हैं। सब में पूछा गया है।",
+      "source": "caption",
+      "english_text": "Before my kids ask, make a video of them reading. Will not see all this. This is a video of reading only. Listen carefully. Those new students who are coming, today you will know in this video that what we have been shouting for so long, what we are teaching, why your striver brother or your love Babbar brother or your college, your college, any college, this person is better than that. Look at this question which is on your screen. What is this question? It is a hard question. Lead code is a hard question. Facebook, Amazon, Lindin, Microsoft, whatever company you can think of. Everything has been asked."
+    },
+    {
+      "start_time": 29.279,
+      "end_time": 61.91,
+      "text": "चार तरीके का तो हिंट दिया हुआ है इस क्वेश्चन में। मतलब अच्छा खासा हार्ड है। अब देखिए समस्या क्या है ना कि अगर आप इन तीनों भैया या कोई भी आपके भैया दीदी हैं उनसे अगर पढ़े हैं। अगर ये क्वेश्चन उनके कोर्स में है, तब तो आप ये क्वेश्चन बना सकते हैं। लेकिन अगर ये क्वेश्चन उनके कोर्स में नहीं है, तो आपसे ये क्वेश्चन नहीं बनेगा। और एक बात हमेशा याद रखिए कि इंटरव्यू में क्वेश्चन किसी के कोर्स से नहीं आता है। किसी के शीट से नहीं आता है क्योंकि सब इंटरव्यू वाला तो हमसे नहीं पढ़ाया है तो सब उनसे नहीं पढ़ा है। इसीलिए हम आपको पैटर्न पढ़ाते हैं या टेंपलेट पढ़ाते हैं। क्या पढ़ाते हैं? टेंपलेट या",
+      "source": "caption",
+      "english_text": "Four methods have been hinted at in this question. Meaning it is quite hard. Now see what is the problem, if you have studied with these three brothers or any of your brothers and sisters. If this question is in their course, then you can make this question. But if this question is not in their course, then you will not be able to solve this question. And always remember one thing that the questions in the interview do not come from anyone's course. It does not come from anyone's sheet because the interviewee has not taught everything from us, so everything has not been taught from him. That's why we teach you patterns or templates. What do you teach? template or"
+    },
+    {
+      "start_time": 61.92,
+      "end_time": 89.19,
+      "text": "रूल्स। एक बार ये रूल सीख गए ना तो कोई भी क्वेश्चन बनने लगेगा कि आपको क्वेश्चन बाय क्वेश्चन रटने का जरूरत नहीं है। क्योंकि कितना क्वेश्चन रटिएगा। 500, 1000, 10,000, 20,000 कोई उसका लिमिट ही नहीं है। आइए खोल देते हैं इस क्वेश्चन को और देखिए कितना नकली कितना बेहूदा सवाल पूछा जाता है Amazon जैसी भी कंपनी में। क्या आपको क्वेश्चन बोल रहा है? क्वेश्चन क्या बोल रहा है? आपको दो स्ट्रिंग दिया हुआ है। एस और T इसका लेंथ N है और इसका लेंथ M है। आपको S में आपको किस में खोजना है?",
+      "source": "caption",
+      "english_text": "Rules. Once you learn these rules, no question will start forming and you do not need to memorize it question by question. Because how many questions will you memorize? 500, 1000, 10,000, 20,000, there is no limit. Let us open up this question and see how fake and ridiculous the question is asked in a company like Amazon. Is the question speaking to you? What is the question saying? You have been given two strings. S and T, its length is N and its length is M. What do you need to find in S?"
+    },
+    {
+      "start_time": 89.2,
+      "end_time": 123.19,
+      "text": "s में। क्या खोजना है? मिनिमम विंडो खोजना है। क्या खोजना है? मिनिमम विंडो सबस्ट्रिंग। मिनिमम विंडो सबस्ट्रिंग खोजना है। ये तो खोजना है उसका। लेकिन कंडीशन क्या है? कुछ तो कंडीशन होगा। उसका कंडीशन ये है कि जो टी वाला स्ट्रिंग है ना वो पूरा-पूरा स्ट्रिंग इंक्लूडिंग डुप्लीकेट्स इंक्लूडिंग डुप्लीकेट्स वो इस विंडो में मौजूद हो। उसका हर कैरेक्टर इस विंडो में मौजूद हो। ऑर्डर से मतलब नहीं है। फॉर एग्जांपल अगर टी ए बी सी है ना तो आप एस में कोई भी विंडो बनाइए। कोई भी विंडो बनाइए। फॉर एग्जांपल आप ये वाला",
+      "source": "caption",
+      "english_text": "in s. What to search for? To find the minimum window. What to search for? Minimum window substring. To find the minimum window substring. This is his search. But what is the condition? There must be some condition. Its condition is that the entire string including duplicates should be present in this window. Every character should be present in this window. Doesn't matter the order. For example, if TA is ABC then you can create any window in S. Create any window. For example, this one"
+    },
+    {
+      "start_time": 123.2,
+      "end_time": 157.43,
+      "text": "विंडो बनाना चाहें तो इसमें कहीं ना कहीं ए बी और सी प्रेजेंट होना चाहिए। हो सकता है यहां पे बी हो। हो सकता है ए हो और सी हो। तो बी ए सी एक-एक बार प्रेजेंट होना चाहिए। अगर अगर अगर ये वाला आपका स्ट्रिंग ए बी सी सी होता तो आपका जो भी आप विंडो चुनेंगे ना उसमें सी दो बार होना चाहिए। सी दो बार होना चाहिए। कहीं भी हो विंडो में किसी भी ऑर्डर में हो। लेकिन सी दो बार होना चाहिए। ए एक बार होना चाहिए। बी एक बार होना चाहिए। इसके अलावा और कुछ भी हो सकता है। इसके अलावा और कुछ भी। ये तो होना ही चाहिए। और ऐसा विंडो का आपको मिनिमम सबस्ट्रिंग फाइंड करना है। क्या",
+      "source": "caption",
+      "english_text": "If you want to make a window, A, B and C should be present somewhere in it. May be there is Pe B here. May be A and may be C. So BAC should be presented once. If this was your string A B C C, then whatever window you choose, C should be there twice. C should be there twice. Anywhere in the window, in any order. But C should be there twice. A should happen once. B should happen once. Apart from this, anything else can happen. Anything else besides this. This must happen. And you have to find the minimum substring of this window. what"
+    },
+    {
+      "start_time": 157.44,
+      "end_time": 190.309,
+      "text": "फाइंड करना है? सबस्ट्रिंग। लेंथ नहीं। लेंथ नहीं। लेंथ नहीं बेटा। सबस्ट्रिंग मतलब ऐसा कोई भी विंडो का सबस्ट्रिंग आपको रिटर्न कर देना है। ये आपका क्वेश्चन है। अब जो मेरे बच्चे हैं जो पढ़ के आए हैं, जो रिवाइज़ करके आए हैं स्लाइडिंग विंडो। पॉज़ कर दीजिए। खुद से सोच के आइए। जो नए बच्चे देख रहे हैं आइए। आपको तो मालूम नहीं होगा टेंप्लेट या पैटर्न। आपको हम बता देते हैं। किसी भी स्लाइडिंग विंडो का क्वेश्चन दुनिया का कोई भी स्लाइडिंग विंडो का क्वेश्चन दो ही तरीके का होता है। एक होता है मैक्स विंडो एक होता है मिन विंडो। ये क्वेश्चन किस तरीके का है? मिन विंडो का है। मीन विंडो का दुनिया का कोई भी",
+      "source": "caption",
+      "english_text": "Want to find? substring. No length. No length. No length son. Substring means returning you the substring of any such window. This is your question. Now my children who have come back after studying, who have come back after revising Sliding Window. Pause. Come think for yourself. The new kids who are watching come. You may not know the template or pattern. We will tell you. Any sliding window question in the world has two types of questions. One is max window and one is min window. What type of question is this? Min belongs to the window. Mean Window's Anywhere in the World"
+    },
+    {
+      "start_time": 190.319,
+      "end_time": 222.71,
+      "text": "क्वेश्चन में जो कंडीशन होगा ना जिस कंडीशन में आपको विंडो रिटर्न करना होगा वो कंडीशन होगा कुछ अगर सम है तो वो ग्रेटर दैन इक्वल टू होना चाहिए। ग्रेटर दैन इक्वल टू समथिंग होना चाहिए। क्या? सम जरूरी नहीं है आपसे जो भी चीज पूछा जाए ना वो ग्रेटर दैन इक्वल टू समथिंग दिया होगा कंडीशन में। इस क्वेश्चन में क्या कंडीशन है? इस क्वेश्चन में है एस में कोई ऐसा सबस्ट्रिंग मतलब कोई ऐसा विंडो जिसमें टी का सारा कैरेक्टर मौजूद हो। सारा कैरेक्टर मौजूद हो और उसी फ्रीक्वें उतने फ्रीक्वेंसी में तो मौजूद हो ही। सारा",
+      "source": "caption",
+      "english_text": "The condition that will be in the question and the condition in which you have to return the window will be that if something is even then it should be greater than equal to two. Must be greater than equal to something. What? It is not necessary that whatever is asked of you must be greater than equal to something in the given condition. What is the condition in this question? In this question, there is a substring in S, meaning a window in which all the characters of T are present. The entire character must be present and must be present at that frequency. Sara"
+    },
+    {
+      "start_time": 222.72,
+      "end_time": 257.43,
+      "text": "कैरेक्टर होना चाहिए। होना चाहिए। होना चाहिए। मतलब टी का सारा करैक्टर होना चाहिए। उसके बाद आप कुछ भी कर सकते हैं। तो इसका वही तो मतलब हुआ कि आपका जो भी फ्रीक्वेंसी बनेगा या तो जो भी सबस्टिंग बनेगा ना वो एट लीस्ट एट लीस्ट ग्रेटर दैन इक्वल टू t होना चाहिए। एक तरीके से बोला जाए तो एट लीस्ट उससे तो बड़ा होना चाहिए। मतलब t का पूरा होना चाहिए। उसके अलावा कुछ भी होता रहे। समझ में आई? तो ये तो पता चल रहा है हम लोग को मिनिमम का पैटर्न है। कंडीशन भी मिल गया। आइए। आइए देख लेते हैं। कितना स्टेप था भाई? स्टेप वन क्या था? स्टेप वन क्या था? अब देखिए ये सब हम",
+      "source": "caption",
+      "english_text": "Must have character. Should be. Should be. Meaning, the entire character of T should be there. After that you can do anything. So this means that whatever frequency will be made or whatever substring will be made, it should at least be greater than equal to t. In a way, at least it should be bigger than that. Meaning t must be fulfilled. Apart from that, anything else can happen. Did you understand? So it is clear that we have a pattern of minimum. Got the condition also. Come. Let's take a look. How many steps was it brother? What was step one? What was step one? Now look at all this"
+    },
+    {
+      "start_time": 257.44,
+      "end_time": 285.03,
+      "text": "नया नहीं बता रहे हैं, ये सब हम बताते हुए आ रहे हैं। आप देख लीजिएगा कि पिछले दो, पिछला दो लेक्चर देखिएगा आपको ये पता चल जाएगा ये फ्लो चार्ट। ठीक है? नहीं पता है कोई बात नहीं। आइए दो मिनट में बता देते हैं। स्टेप वन तो आईडेंटिफाई करना है कि ये किस चीज का क्वेश्चन है। तो ये तो पता चल रहा है कि स्लाइडिंग विंडो का क्वेश्चन है। इसमें तो किसी को कोई दो राय किसी को शक मेरे हिसाब से नहीं होगा क्योंकि सबस्ट्रिंग पूछ रहा है। स्ट्रिंग का क्वेश्चन है। एक कंडीशन दिया हुआ है। परफेक्ट एग्जांपल ऑफ़ स्लाइडिंग विंडो क्वेश्चन। वेरी गुड। स्टेप टू में आ जाइए।",
+      "source": "caption",
+      "english_text": "We are not telling anything new, we are coming telling all this. You will see that if you watch the last two, last two lectures, you will know this flow chart. Ok? Don't know, never mind. Let us tell you in two minutes. Step one is to identify what the question is about. So it is clear that there is a question of sliding window. No one will have any second opinion on this, according to me there will be no doubt because the substring is asking. There is a question of string. A condition has been given. Perfect example of sliding window question. very good. Come to step two."
+    },
+    {
+      "start_time": 285.04,
+      "end_time": 311.27,
+      "text": "फिक्स का है कि वेरिएबल का है? फिक्स का है कि वेरिएबल विंडो का है? कहीं पर आपको ऐसा बोल रहा है कि सबस्ट्रिंग ऑफ लेंथ ये दो या तो सबस्ट्रिंग ऑफ लेंथ इतना दो नहीं। बोल रहा है मिनिमम दो। मिनिमम सबस्ट्रिंग दो। मतलब जैसे ही बोला आपको मिनिमम दो या मैक्सिमम दो। ये वेरिएबल का क्वेश्चन बन गया। वेरी गुड। स्टेप थ्री। स्टेप थ्री। यहां पे खेल करना है। यहां पे खेल करना है। आपके विंडो का इनेशन क्या है? और कैसे आप इसको स्टोर करेंगे?",
+      "source": "caption",
+      "english_text": "Is it fixed or variable? Is it fixed or variable window? Somewhere it is telling you that give this substring of length or don't give this substring of length. He is saying give minimum. Give the minimum substring. Meaning, as soon as he said, give you minimum or maximum. This became a question of variables. very good. Step three. Step three. Have to play here. Have to play here. What is the installation of your window? And how will you store it?"
+    },
+    {
+      "start_time": 311.28,
+      "end_time": 342.31,
+      "text": "इंफॉर्मेशन मतलब जो भी आप विंडो पकड़ के चल रहे हैं, जो भी आप विंडो ये वाला पकड़ के चल रहे हैं, यह विंडो क्या है? ये विंडो आपको क्या बताएगा? इस विंडो से आप क्या पता करना चाहते हैं? तो इस विंडो में हम क्या पता करना चाहते हैं? कि टी का सारा कैरेक्टर का फ्रीक्वेंसी है कि नहीं? इसके लिए इस विंडो का इनेशन हम लोग क्या स्टोर करेंगे? फ्रीक्वेंसी। फ्रीक्वेंसी मतलब हैश मैप#श मैप या तो एरे कुछ भी। मतलब इस विंडो में जो जो कररेक्टर है सबका फ्रीक्वेंसी तभी तो आपको मालूम चलेगा ना भाई। फॉर एग्जांपल अगर कोई एस का विंडो",
+      "source": "caption",
+      "english_text": "Information means whatever window you are walking with, whatever window you are walking with, what is this window? What will this window tell you? What do you want to find out from this window? So what do we want to find out in this window? Is T the frequency of all the characters or not? For this, what will we store in this window? Frequency. Frequency means hashmap#hashmap or array anything. Meaning, only then you will know the frequency of all the characters in this window. For example if any S's window"
+    },
+    {
+      "start_time": 342.32,
+      "end_time": 377.029,
+      "text": "ऐसा बना जिसमें ए दो बार हो, बी एक बार हो और c दो बार हो। आपका टी इस तरीके का था जिसमें ए एक बार था, बी एक बार था और सी एक बार था। तो क्या ये दोनों ये दोनों मैच करेगा कि नहीं? तो कैसे पता करेंगे कि आप मैच करेगा कि नहीं? देखिए। आपका टी क्या था आपका t ये है। मतलब ए एक बार टी में था। तो ए एक बार तो होना ही चाहिए इसमें। क्या ए दो एक से ज्यादा है? हां ज्यादा है। तो वेरी गुड। ये मैच कर गया। बी इसमें एक बार था तो बी एस वाले विंडो में एक बार से तो एक बार होना चाहिए एक बार से ज्यादा होना चाहिए। क्या ये एक बार या एक से",
+      "source": "caption",
+      "english_text": "Make it such that A occurs twice, B occurs once and C occurs twice. Your T was like this where A was once, B was once and C was once. So will these two match or not? So how do you know if you will be a match or not? See. What was your t? Your t is this. Meaning A was once in T. So this should happen at least once. Is a two more than one? Yes it is more. So very good. It matched. B was there once in this, so in the window with B, there should be once, there should be more than once. Is it once or from one"
+    },
+    {
+      "start_time": 377.039,
+      "end_time": 410.07,
+      "text": "ज्यादा है? हां है। वेरी गुड। सी टी में एक बार है मतलब एस वाले विंडो में भी सी एक होना चाहिए या एक से ज्यादा होना चाहिए? क्या ये है? हां है। तो मतलब ये क्या है आपका इनफार्मेशन? सही है। इंफॉर्मेशन सही है। इंफॉर्मेशन गलत कब हो जाता? इंफॉर्मेशन गलत कब हो जाता? फॉर एग्जांपल आप कोई ऐसा विंडो पकड़ लेते जिसमें ए एक बार होता और बी एक बार होता और सी होता ही नहीं। और आपका T आपको दिया हुआ है कि A एक बार होना चाहिए, बी एक बार होना चाहिए और सी एक बार होना चाहिए। तो अब देख लीजिए। आपका T बोलता है कि A एक बार या एक बार से ज्यादा होना चाहिए तो वो",
+      "source": "caption",
+      "english_text": "Is it much? Yes it is. very good. There is one bar in C. It means that even in the window with S, there should be one C or more than one? is this? Yes it is. So what is your information? Correct. The information is correct. When does information become wrong? When does information become wrong? For example, you would have caught a window in which A would occur once and B would occur once and C would not occur at all. And your T is given to you that A must occur once, B must occur once and C must occur once. So take a look now. Your T says that A must occur once or more than once, so that"
+    },
+    {
+      "start_time": 410.08,
+      "end_time": 444.87,
+      "text": "है वेरी गुड। B एक बार या एक बार ज्यादा होना चाहिए वो भी है वेरी गुड। लेकिन आपका T बोलता है कि C भी एक या एक से ज्यादा होना चाहिए। लेकिन आपका C कितना है? C 0 है C है नहीं तो C 0 है। अगर c नहीं है तो मतलब क्या है कि C 0 है C एक भी बार नहीं आया है। तो ये वाला जो इंफॉर्मेशन है ये आपका क्या हो गया? गलत हो गया। ये आपका गलत हो गया। अब देखिए अब देखिए ये गलत सही पता कैसे चलेगा? बहुत सिंपल है स्ट्रिंग के हर क्वेश्चन में हम लोग क्या करते हुए आ रहे हैं? अगर आपको कहीं भी फ्रीक्वेंसी निकालना है ना और आपको हैश मैप नहीं भी आता है। आपको क्या नहीं आता है? हैश मैप नहीं भी आता है। सिंपल क्या है? एक 256 का",
+      "source": "caption",
+      "english_text": "Is very good. B should be once or more, that is also very good. But your T says that C should also be one or more. But what is your C? C is 0, otherwise C is 0. If c is not there then what does it mean that C is 0, C has not appeared even once. So what has happened to this information? Went wrong. This is your mistake. Now see, now see how will you know this is right or wrong? It is very simple, what are we doing in each question of the string? If you have to find the frequency anywhere and you do not know hash map. What don't you know? Hash map is also not available. What is simple? a 256"
+    },
+    {
+      "start_time": 444.88,
+      "end_time": 477.83,
+      "text": "इसका एरे ले लीजिए। कितने साइज का? 256। 256 क्यों? क्योंकि मेरा बर्थडे आता है 256 में। नहीं नहीं। C++ में टोटल करैक्टर ही होता है C+ 256। किसी भी प्रोग्रामिंग लैंग्वेज में टोटल करैक्टर होता है 256। आप 256 साइज का एरे ले लीजिए। सबको जीरो बना दीजिए। जब किसी कैरेक्टर का फ्रीक्वेंसी आपको इंक्लूड करना हो तो इसको बढ़ा दिया करिए। जब किसी कैरेक्टर को आपको भगा देना हो तो इसको घटा दिया करिए। ऐसे करके आपका फ्रीक्वेंसी बन जाएगा। एरे है ये तो सिंपल एरे इसमें तो कोई हैश मैप यूज़ नहीं हो रहा है। अब देखिए। अब देखिए। अब देखिए। क्या अगला क्या था? इंफॉर्मेशन",
+      "source": "caption",
+      "english_text": "Take its array. What size? 256. Why 256? Because my birthday comes in 256. No. No. The total number of characters in C++ is C+ 256. The total number of characters in any programming language is 256. You take an array of size 256. Make everyone zero. When you want to include the frequency of a character, increase it. When you have to send a character away, reduce it. By doing this your frequency will be created. This is a simple array, no hash map is being used in it. watch now. watch now. watch now. What was next? information"
+    },
+    {
+      "start_time": 477.84,
+      "end_time": 503.35,
+      "text": "सही है या गलत है? इंफॉर्मेशन सही है या गलत है? सही है या गलत है? ये कैसे पता चलेगा? क्योंकि ये बहुत मेजर पार्ट है हमारे फ्लो चार्ट का। हमारे बहुत मेजर पार्ट है फ्लो चार्ट का। कैसे पता चल रहा है? पिछले बार क्या किए थे भाई? फॉर एग्जांपल आपका एस का कोई विंडो होगा और आपका टी ए बी सी है। टी ए बी सी है। टी तो आपको दिया रहेगा। तो पहले टी का ये वाला चीज़ बना लीजिए। क्या बना लीजिए? ये 256 वाला एरे बना लीजिए। टी का एरे बना लीजिए।",
+      "source": "caption",
+      "english_text": "Is it right or wrong? Is the information correct or incorrect? Is it right or wrong? How will this be known? Because this is a very major part of our flow chart. Our flow chart is a very major part. How are you getting to know? What did you do last time brother? For example, your window is S and yours is TABC. TA is ABC. T will be given to you. So first make this tea thing. What should you make? Make this 256 array. Make an array of T."
+    },
+    {
+      "start_time": 503.36,
+      "end_time": 538.31,
+      "text": "तो क्या होगा कि इसमें जो ए बी सी कोई भी इंडेक्स पे होगा तो इसपे वन होगा। ठीक है? अब मान लीजिए आपका एस का ऐसा विंडो बना। अ आपका एस का ऐसा विंडो बना जिसमें ए तो है बी भी है लेकिन सी नहीं है सी नहीं है तो अब ये इनफार्मेशन अब ये विंडो अब आपका जो ये विंडो और बाकी कुछ भी हो सकता है बाकी कुछ भी होते रहे कोई फर्क नहीं हो सकता है डी 10 बार हो ई 15 बार हो कोई फर्क नहीं पड़ता है हम लोग को फर्क कहां से पड़ रहा है ये ग्रेटर दैन ये होना चाहिए टी वाले में जो करैक्टर है उससे चेक करेंगे बस उससे ग्रेटर होना चाहिए बाकी तुम कुछ भी रखो अब देखिए चेक कर लीजिए कैसे पता चलेगा कि ये सही विंडो है कि गलत विंडो है चेक",
+      "source": "caption",
+      "english_text": "So what will happen is that whichever ABC is on the index, it will be one. Ok? Now suppose such a window of your S is created. A, make such a window of your S in which A is there, B is also there but C is not there, C is not there, so now this information is now this window of yours, now this window of yours and the rest can be anything, the rest can be anything, there can be no difference, D can be 10 times, E can be 15 times, it doesn't matter where do we care, it should be greater than this, we will check with the character in T, it should just be greater than that, rest you keep anything, now see how to check. You will know whether this is the right window or the wrong window. Check"
+    },
+    {
+      "start_time": 538.32,
+      "end_time": 572.47,
+      "text": "कर लीजिए ना भाई आपको क्या बोल रहा रहा है क्वेश्चन कि A B और C जो कैरेक्टर्स में है उनका फ्रीक्वेंसी उनका फ्रीक्वेंसी किसमें वो जो विंडो वाले एरे में है विंडो वाले एरे में है वो उससे इक्वल होना चाहिए या उससे ग्रेटर होना चाहिए तो चेक कर लीजिए एक-एक करके क्या ए का फ्रीक्वेंसी अगर वन है तो क्या ये वन से इक्वल या ग्रेटर है हां है क्या बी का अगर यहां पे वन है तो क्या बी से ये ग्रेटर दैन इक्वल टू है हां है लेकिन अगर c का वन है तो क्या यहां पे c का ग्रेटर दैन इक्वल टू वन है नहीं है ये ज़ीरो तो ये विंडो आपका क्या हो गया ये विंडो आपका गलत गलत हो गया। कोई फर्क नहीं पड़ता है कि आपके डी के पास 10",
+      "source": "caption",
+      "english_text": "Do it brother, what is the question telling you, the frequency of the characters A, B and C, their frequency, the one in the windowed array, the one in the windowed array, it should be equal to it or it should be greater than it, then check one by one, is the frequency of A, if there is one, then is it equal or greater than one? But if c is one, then is c here greater than equal to one? No, this is zero, so what has happened to this window, this window has gone wrong to you. Doesn't matter if your D has 10"
+    },
+    {
+      "start_time": 572.48,
+      "end_time": 600.07,
+      "text": "है कि ई के पास 15 है। वो तो हमको चाहिए ही नहीं। हमको बस टी में जो कररेक्टर है उनका फ्रीक्वेंसी से मैच करना है। ठीक है? पता चल गया इनफार्मेशन सही और गलत कैसे डिसाइड करेंगे? इतना अगर आपको पता चल गया है तो अब आइए 2 मिनट में क्वेश्चन सॉल्व करके दिखाएंगे। मिनिमम विंडो, मिनिमम विंडो का फ्लो चार्ट क्या था? मिनिमम विंडो का फ्लो चार्ट क्या था? हाई कहां से कहां तक चलता था? जो मेरे स्टूडेंट्स हैं अभी पॉज कर दीजिए। खुद जा के बना लीजिए। हम पूरा आपके लिए क्लियर कर दिए हैं। हाई कहां से कहां तक चलता था? जीरो से n तक।",
+      "source": "caption",
+      "english_text": "That is, e has 15. We don't need that at all. We just have to match the frequency of the character in T. Ok? Got to know how to decide the right and wrong information? If you have come to know this much then now let us show you how to solve the question in 2 minutes. Minimum Window, What was the flow chart of Minimum Window? What was the flow chart of minimum window? From where to where did the high go? Those who are my students, please pause now. Go and make it yourself. We have completely cleared it for you. From where to where did the high go? From zero to n."
+    },
+    {
+      "start_time": 600.08,
+      "end_time": 633.99,
+      "text": "उसके बाद क्या करते थे? कल का लेक्चर याद कीजिए। जो लोग परसों का देख के डायरेक्ट आ जा रहे हैं, मत देखिए। कल का लेक्चर देखिए। कल का लेक्चर। कल के लेक्चर में मिनिमम का फ्लो चार्ट बताया गया था। परसों के लेक्चर में मैक्सिमम का फ्लो चार्ट बताया गया था। एक ही फ्लो चार्ट दुनिया के हर चीज में लगेगा। आ जाइए। क्या किए थे? क्या किए थे इसके बाद? इसके बाद क्या करना है? जब तक जब तक जब तक आपका इंफॉर्मेशन आपका इस विंडो का इंफॉर्मेशन इसके पहले क्या करना है? अपने इंफॉर्मेशन में हाई को इंक्लूड कर लेना है। हाई को कहां इंक्लूड कर लेना है? अपने इंफॉर्मेशन में कैसे इंक्लूड करेंगे? एरे में हाई वाले",
+      "source": "caption",
+      "english_text": "What did you do after that? Remember yesterday's lecture. Those who are coming directly after seeing the day before yesterday, don't watch. Watch yesterday's lecture. Tomorrow's lecture. The flow chart of Minimum was explained in yesterday's lecture. The flow chart of Maximum was explained in the lecture the day before yesterday. The same flow chart will be used in everything in the world. Come on over. What did you do? What did you do after this? What to do after this? Until, until, until your information, your information about this window, what to do before this? You have to include high in your information. Where to include high? How to include in your information? high ones in the array"
+    },
+    {
+      "start_time": 634.0,
+      "end_time": 667.91,
+      "text": "कैरेक्टर का बढ़ा देंगे। सिंपल बात है। अब जब तक इंफॉर्मेशन सही है, सही है। सही है गलत नहीं। जो लोग परसों का देख के आ रहे हैं उनको लग रहा होगा ये उल्टा बोल रहे हैं। कल का प्लीज देखिए। जब तक इंफॉर्मेशन सही है तब तक क्या करना है? दो काम करना है। सबसे पहले इसको अपने रिजल्ट में लिख लेना है। क्यों? क्योंकि इंफॉर्मेशन सही है ये हमको चाहिए। इसको अपने रिजल्ट में लिख लेना है। और अगला काम क्या करना है? लो को लो को अपने इंफॉर्मेशनेशन से निकाल देना है। अपने इंफॉर्मेशनेशन से निकाल देना है और लो को बढ़ा देना है। बस इतना काम करना है। हाई को बंद कर देना है और",
+      "source": "caption",
+      "english_text": "Will enhance the character. It's a simple thing. Now as long as the information is correct, it is correct. Right, not wrong. Those who are coming after watching the day before yesterday, they might be thinking that he is saying the wrong thing. Please see tomorrow. What to do as long as the information is correct? Two things have to be done. First of all you have to write this in your result. Why? Because we need the information to be correct. You have to write this in your result. And what's the next thing to do? You have to remove Lo from your information. Have to remove it from your information and increase the level. There is just so much work to do. the high has to be turned off and"
+    },
+    {
+      "start_time": 667.92,
+      "end_time": 695.11,
+      "text": "अपना रिजल्ट रिटर्न कर देना है। अपना रिजल्ट रिटर्न कर देना है। किसी भी मिनिमम विंडो सबस्ट्रिंग का यही पैटर्न होता है। अब आइए अब देखते हैं इसको करेंगे कैसे? करेंगे कैसे? सबसे पहले तो दो ठो एरे बना लेंगे। दो एरे बना लेंगे। दो एरे 256 का बना लेंगे। 256 का बना लेंगे। क्यों? एक एरे है आपके एस के विंडो के लिए। एक एरे आपका टी का है। टी का है। अब मान लीजिए ये आपका टी वाला एरे है। तो इसको नाम दे दीजिए नीड नीडेड। नीडेड इतना तो चाहिए।",
+      "source": "caption",
+      "english_text": "You have to return your result. You have to return your result. Any minimal window substring has this pattern. Now let us see how to do this? How to do it? First of all we will make two arrays. Will make two arrays. We will make two arrays of 256. Will make 256. Why? There is an array for your S's window. An array is your T's. Is of T. Now suppose this is your T array. So name it Needed Needed. Needed, this much is needed."
+    },
+    {
+      "start_time": 695.12,
+      "end_time": 729.19,
+      "text": "इतना तो चाहिए। जो हम बोल रहे हैं ना कंडीशन सम ग्रेटर दैन इक्वल टू K। तो ये K क्या है? K आपका नीडेड है। नीडेड मतलब K इससे तो बड़ा होना चाहिए। और इसको इसको क्या नाम दे देंगे? इसको आप हैव नाम दे दीजिए। अभी कितना है? अभी कितना है मेरे पास? अब देखिए क्या आपको नीडेड नीडेड आपको पता कैसे चलेगा कि कितना है? T को ट्रेवर्स कर लीजिए। T को ट्रेवर्स कर लीजिए। ट्रेवर्स कर लीजिए। और T में जो जो करैक्टर है वो नीडेड में कर लीजिए। मतलब T अगर A B C है तो पहले A का A को ज़ीरो से वन कर दीजिए। B है तो B को जीरो से वन कर दीजिए। C है तो C को ज़ीरो से वन कर दीजिए।",
+      "source": "caption",
+      "english_text": "This much is needed. What we are saying is the condition sum greater than equal to K. So what is this K? K is your need. Needed means K must be larger than this. And what name will we give it? You name it Have. How much is it now? How much do I have now? Now see if you need what you need, how will you know how much? Traverse T. Traverse T. Traverse it. And whatever character is there in T, use it as needed. Meaning if T is A B C then first change the A of A from zero to one. If B then change B from zero to one. If it is C then change C from zero to one."
+    },
+    {
+      "start_time": 729.2,
+      "end_time": 760.389,
+      "text": "मान लीजिए एक और C है तो इसको वन से टू कर दीजिए। सबसे पहले अपना नीडेड बना लीजिए। नीडेड आपका बन गया। अब आइए अब अपना स्लाइडिंग विंडो का शुरू करेंगे। लिखिए फॉर हाई = 0 हाई &lt; n यह कोई नया बात नहीं है। सेम रटा रटाया बात बार-बार हम लोग कर रहे हैं। सबसे पहले क्या काम करना है? हाई को अंदर ले लेना है। हाई को अंदर ले लीजिए। आपका विंडो का क्या है? अरे है उसका नाम क्या है? हैव है। हैव हैव। हैव में किसको अंदर लेना है? हाई को अंदर लेना है। हाई वाले कैरेक्टर का। तो आपका जो एस",
+      "source": "caption",
+      "english_text": "Suppose there is another C, then change it from one to two. First of all make your kneaded. Needed became yours. Now let's start our sliding window. Write for high = 0 high < n This is nothing new. We are talking the same thing over and over again. What's the first thing to do? Have to take the high inside. Take the high in. What about your window? Hey what's his name? Have. Have have have. Who should be included in Have? Have to take the high in. Of high character. so your joe s"
+    },
+    {
+      "start_time": 760.399,
+      "end_time": 792.949,
+      "text": "हाई एस हाई और प्लस प्लस। हाई अंदर आ गया। अब क्या करना है? जब तक इनफार्मेशन सही है तब तक करते रहना है कुछ-कुछ। तो आइए लुक लिखिए। वाइल अब देखिए इंफॉर्मेशन सही या गलत का हम बता चुके हैं कैसे कैलकुलेशन होगा। उसका एक फंक्शन लिख लेंगे। अभी फंक्शन लिख लेंगे। उसको हम अभी लिख दिखाते हैं। अभी के लिए मान लीजिए उस फंक्शन का नाम है एम फन। उस फंक्शन का नाम क्या है? चलिए सही है। फंक्शन का नाम है सही। और सही में आपको क्या सही में आप क्या कर रहे थे? हैव का कंपेयर कर रहे थे नीडेड के साथ। नीडेड जितना है उतना तो हैव में होना",
+      "source": "caption",
+      "english_text": "High s high and plus plus. Hai came inside. What to do now? जब तक इनफार्मेशन सही है तब तक करते रहना है कुछ-कुछ। तो आइए लुक लिखिए। वाइल अब देखिए इंफॉर्मेशन सही या गलत का हम बता चुके हैं कैसे कैलकुलेशन होगा। उसका एक फंक्शन लिख लेंगे। अभी फंक्शन लिख लेंगे। उसको हम अभी लिख दिखाते हैं। अभी के लिए मान लीजिए उस फंक्शन का नाम है एम फन। उस फंक्शन का नाम क्या है? चलिए सही है। फंक्शन का नाम है सही। और सही में आपको क्या सही में आप क्या कर रहे थे? हैव का कंपेयर कर रहे थे नीडेड के साथ। नीडेड जितना है उतना तो हैव में होना"
+    },
+    {
+      "start_time": 792.959,
+      "end_time": 824.389,
+      "text": "चाहिए। तो इसमें क्या पास करेंगे? हैव और नीडेड। ये अभी हम आपको लिख के दिखा भी देंगे। और इसको क्लोज कर दीजिए। मतलब जब तक सही है, जब तक सही है, जब तक सही है तो क्या करना है? आपको रिजल्ट को स्टोर करते जाना है। एक बात और यहां पे आपको रिजल्ट में लेंथ नहीं देना है। यहां पे आपको रिजल्ट में लेंथ नहीं देना है। आपको पूरा सबस्ट्रिंग रिटर्न करना है। पूरा सबस्ट्रिंग रिटर्न करना है। तो इसको करने के लिए आप लेंथ करते थे तो क्या करते थे कि रिजल्ट को लिख लेते थे कि रिजल्ट इक्वल टू मिनिमम ऑफ रिजल्ट एंड लेंथ। ठीक है? तो सबसे पहले तो आपको लेंथ निकालना पड़ेगा।",
+      "source": "caption",
+      "english_text": "Needed So what will you pass in this? Have and need. We will show this to you in writing now. And close it. Meaning, as long as it is right, as long as it is right, as long as it is right, what to do? You have to keep storing the results. One more thing, here you do not have to give length in the result. Here you do not have to give length in the result. You have to return the complete substring. To return the complete substring. So to do this, when you used length, what you did was that you used to write the result that result is equal to minimum of result and length. Ok? So first of all you have to find the length."
+    },
+    {
+      "start_time": 824.399,
+      "end_time": 851.75,
+      "text": "सबसे पहले तो आपको लेंथ निकालना पड़ेगा। तो लेंथ तो निकाल ही लीजिए सबसे पहले। ये तो हर बार हम लोग निकालते ही थे। लेंथ आप निकाल लिए मतलब इस वाले विंडो का जो अभी सही है इसका लेंथ ये फलाना फलाना है। एक काम आप कर सकते हैं। जिसको सब्सट्रिंक नहीं आता है हम बता देते हैं। इफ इफ रेस्ट ग्रेटर दैन l लेन। यही करते थे ना कि रेस अगर लेन से बड़ा है तभी तो अपडेट करने का फायदा है। नहीं तो कोई फायदा नहीं है। हमको मिनिमम चाहिए। तो सबसे पहले तो रेस इक्वल टू लेन कर दीजिए। और एक काम कीजिए।",
+      "source": "caption",
+      "english_text": "First of all you have to find the length. So first of all find out the length. We used to bring this out every time. You find out the length, meaning the length of this window which is correct now is so-and-so. There is one thing you can do. We tell those who do not know the substring. If if rest is greater than l len. This is what we used to do, that only if the race is bigger than the lane then there is benefit in updating. Otherwise there is no use. We want minimum. So first of all make the race equal to two lanes. Do one more thing."
+    },
+    {
+      "start_time": 851.76,
+      "end_time": 879.03,
+      "text": "अब C++ में सबस्टिंग कैसे निकलता है ना? आपको सबस्ट्रिंग निकालने के लिए दो चीज़ पास करना पड़ता है। आप किसी भी स्ट्रिंग का सबस्ट्रिंग निकाल सकते हैं। कैसे? आपको उसका स्टार्टिंग पॉइंट पास करना होता है और आपको उसका लेंथ पास करना होता है सबस्ट्रिंग का। फॉर एग्जांपल अगर आपके पास ऐसा है कोई a b c है 0 1 2 तो अगर आप स्टार्टिंग में ज़ीरो लिख देते हैं और लेंथ में दो लिख देते हैं तो ये A को लेगा और B को लेगा। तो आपको इसका आंसर आ जाएगा A B। अगर आप लेंथ में तीन लिख देते हैं तो ये A को ले लेगा, B को ले लेगा, c को ले लेगा।",
+      "source": "caption",
+      "english_text": "Now how does substring come out in C++, right? You have to pass two things to extract the substring. You can extract substring of any string. How? You have to pass its starting point and you have to pass its length of the substring. For example, if you have something like this, a b c is 0 1 2, then if you write zero in the starting and two in the length, then it will take A and B. So you will get the answer A B. If you write three in length, it will take A, it will take B, it will take c."
+    },
+    {
+      "start_time": 879.04,
+      "end_time": 911.509,
+      "text": "तो इसका आंसर A, B, C आ जाएगा। मतलब स्टार्टिंग पॉइंट करो और उतना लेंथ का सबस्टिंग उससे स्टार्ट करके ले लो। अब देखिए लेंथ तो आपको यहां से पता चल गया कि लेंथ तो इसका रिजल्ट होने वाला है। लेंथ तो फाइनल हम लोग के पास रिजल्ट होने वाला है और स्टार्टिंग पॉइंट कैसे चेंज होगा? हर बार आपको फाइनल चाहिए क्या आपको मिनिमम सबस्ट्रिंग चाहिए। उसके लिए दो चीज चाहिए। एक उस सबस्टिंग का लेंथ जो कि हम लोग रेस्ट में स्टोर करेंगे बार-बार वो लास्ट में आ जाएगा। लेकिन स्टार्टिंग पॉइंट, स्टार्टिंग पॉइंट कौन सा होगा? इस विंडो का स्टार्टिंग, किसी भी विंडो का स्टार्टिंग पॉइंट क्या होता है? हमेशा लो होता है। विंडो का मतलब ही होता है लो टू हाई। तो आप एक और वेरिएबल ले लीजिए और एक",
+      "source": "caption",
+      "english_text": "So its answer will be A, B, C. Meaning, make a starting point and take substrings of that length starting from it. Now look at the length, from here you know that length is going to be its result. Length, we are going to have the final result and how will the starting point change? Every time you want final do you want minimum substring. Two things are needed for that. The length of the substring that we will store in the rest will come last again and again. But what will be the starting point, the starting point? Starting point of this window, what is the starting point of any window? Always low. Window itself means low to high. So you take another variable and a"
+    },
+    {
+      "start_time": 911.519,
+      "end_time": 946.15,
+      "text": "स्टार्ट में स्टार्ट में लो को स्टोर कर दीजिए। ये हम लोग कब काम कर रहे हैं? जब आपका रेस लेंथ से बड़ा है तभी ये काम कर रहे हैं क्योंकि मिनिमम चाहिए। ये सेम काम हम लोग करते थे एक लाइन में रेस्ट इज़ इक्वल टू मिनिमम ऑफ लेंथ एंड रेस्ट जस्ट बिकॉज़ इसमें सबस्ट्रिंग देना है तो ऐसे आपको करना पड़ेगा। आप किसी और तरीके से भी करिए अपने हिसाब से सोच के। और क्या करना है? बंद कर दीजिए। पहला काम हो गया। पहला काम क्या हुआ? रिजल्ट में ले लिए लो वाले को। अब उस विंडो को अब क्या करना है? लो को भगा दो भाई। अरे लो को भगा दो यार। लो को भगाएंगे कैसे? लो को भगाओ जल्दी। एस लो माइनस माइनस खत्म हो गया खेल। लो को प्लस",
+      "source": "caption",
+      "english_text": "Store low in start. When are we working? These work only when your race is longer than the length because a minimum is required. We used to do the same thing in a line, rest is equal to minimum of length and rest just because if you want to give substring in it then you will have to do it like this. You can do it in some other way as per your thinking. What else to do? Turn it off. The first work is done. What was the first thing you did? Take the one in the result. Now what is that window supposed to do now? Drive Lo away, brother. Hey, drive me away, friend. How will you drive away Lo? Drive Lo away quickly. S lo minus minus game over. lo ko plus"
+    },
+    {
+      "start_time": 946.16,
+      "end_time": 978.389,
+      "text": "प्लस कर दीजिए। बस बस ये वाइल लूप खत्म। उसके बाद कुछ करना है कि नहीं? कुछ नहीं करना है। ये हाई वाला लूप खत्म। हाई का फॉर लूप खत्म। अब हम लोग क्या करते थे? रिटर्न रिजल्ट कर देते थे। लेकिन अभी रिजल्ट में आपके पास क्या है? अभी आपके पास रिजल्ट में उसका लेंथ है। रिजल्ट में लेंथ है। और स्टार्ट में क्या है? स्टार्ट में उसका स्टार्टिंग पॉइंट है। तो सबस्ट्रिंग कैसे निकाला जाता सबस्टिंग रिटर्न करना है ना? कर दीजिए यार। कर दीजिए। रिटर्न एस एस का विंडो रिटर्न करना है ना? सब एसटीआर सब एसटीआर इसको ऐसे लिखते हैं। यहां सबसे पहले क्या देते हैं?",
+      "source": "caption",
+      "english_text": "Please do plus. That's it, this vicious loop is over. Is there anything to be done after that or not? nothing to be done. This high loop is over. High's for loop ends. What did we do now? Used to return results. But what do you have in the result now? Now you have its length in the result. The result has length. And what's in the start? Its starting point is in Start. So how is the substring extracted? The substring has to be returned, right? Do it friend. Please do it. Return SS window is to return right? Sub STR Sub STR This is written like this. What is given first here?"
+    },
+    {
+      "start_time": 978.399,
+      "end_time": 1009.35,
+      "text": "स्टार्टिंग पॉइंट और लेंथ। लेंथ कहां स्टोर हुआ हुआ होगा? रिजल्ट में मिनिमम वाले का। बस खत्म हो गया। हार्ड क्वेश्चन अब सॉल्व कर लिए। कितना? 16 मिनट लगा। इतना सारा भाषण देने के बाद भी। हार्ड क्वेश्चन है ये लीड कोड का। हार्ड क्वेश्चन विद फोर टाइप ऑफ हिंट्स। मतलब अच्छा खासा हार्ड क्वेश्चन। हो गया सॉल्व। इसमें हम लोग क्या यूज़ किए? सिंपल टेंप्लेट यूज़ किए। इस रूल में कुछ बदला कि नहीं? इस रूल में अभी तक कुछ भी बदला कि मिनिमम में क्या करते थे? एक भी हम ऐसा स्टेप बताएं जो एक्स्ट्रा हो गया आपके लिए कि अरे ये आप क्या कर दिए? ये तो सही नहीं किए तो कल तो ये बोले थे आज ये कर दिए।",
+      "source": "caption",
+      "english_text": "Starting point and length. Where will the length be stored? The one with minimum in the result. It's over. Solved hard questions now. How much? Took 16 minutes. Even after giving so many speeches. This is a hard question of lead code. Hard questions with four types of hints. Meaning a very hard question. It is solved. What did we use in this? Used simple templates. Has anything changed in this rule or not? Has anything changed till now in this rule as to what was to be done in minimum? Let us tell you even one step which has become extra for you, what have you done? If you did not do this right, then yesterday you said this, today you did this."
+    },
+    {
+      "start_time": 1009.36,
+      "end_time": 1043.59,
+      "text": "नहीं सेम स्टेप कर रहे हैं भाई। हाई को चलाओ। हाई को रिजल्ट में लो। जब तक इनफार्मेशन सही है तब तक उसको रिजल्ट में लेके लो को घटाते बढ़ाते रहो। लास्ट में उसको रिजल्ट को रिटर्न कर दो। अब आ जाइए जो हम बताए थे। इंफॉर्मेशन सही है कि गलत कैसे पता करेंगे? तो आइए अब बहुत लोगों को कोड लिखने में प्रॉब्लम होता है। हम लिख देते हैं। सही या गलत कैसे पता चलता था? तो सही और गलत में सबसे पहले तो हम लोग पास क्या कर रहे थे? पास क्या कर रहे थे? दो ठो एरे पास कर रहे थे। वेक्टर इंट हैव हैव मतलब अभी जो है अभी जो है s का विंडो में है। वेरी गुड। और अगला वेक्टर क्या पास करते थे? जो आपका नीडेड है। क्या है?",
+      "source": "caption",
+      "english_text": "No, you are doing the same step brother. Drive high. Take high as result. As long as the information is correct, keep increasing or decreasing by taking it into account. Finally return the result to him. Now come what we told you. How will you know if the information is correct or not? So now many people have problem in writing code. We write. How to know right or wrong? So first of all, what were we passing between right and wrong? What were you doing nearby? The two were passing by. Vector int have have means whatever is now is in the window of s. very good. And what was the next vector passed? Which is your need. What is?"
+    },
+    {
+      "start_time": 1043.6,
+      "end_time": 1068.95,
+      "text": "नीडेड है। नीडेड का नाम क्या था? नीडेड। ठीक? क्या इसका लॉजिक था कि नीड में जो वैल्यू है, नीड में कोई भी वैल्यू होगा। होगा। नीड में A का वैल्यू वन होगा, B का दो होगा, C का तीन कुछ भी होगा। बाकी सब ज़ीरो होगा। तो, नीड में जिस करैक्टर का जो भी वैल्यू है, हैव में उस कैरेक्टर का वो वैल्यू या तो उससे इक्वल होना चाहिए या बड़ा होना चाहिए। बाकी कुछ भी हो। तो आइए, सिंपल लूप से पता चल जाएगा, ना जी? आपका लेंथ आपका दोनों एरे का साइज़ कितना है?",
+      "source": "caption",
+      "english_text": "Is needed. What was the name of Needed? Needed. Correct? Was its logic that whatever value is there in need, any value will be there in need. will be. In need, the value of A will be one, that of B will be two, that of C will be three. Everything else will be zero. So, whatever the value of the character in Need, the value of that character in Have must be either equal to or greater than it. Whatever else happens. So come, you will know with a simple loop, right? What is your length and the size of both your arrays?"
+    },
+    {
+      "start_time": 1068.96,
+      "end_time": 1103.59,
+      "text": "256. इसीलिए 256 लिया जाता है। बहुत आसान पड़ता है, ठीक है? आइए, चला दीजिए। 256 ले लीजिए और आई प्लस प्लस कर दीजिए। अब हम लोग का कब ये इनफार्मेशन गलत हो जाएगा? कब ये इनफार्मेशन गलत हो जाएगा? जब हैव का कोई वैल्यू नीड के किसी वैल्यू से कम होगा। यही तो है ना? अगर मान लीजिए हैव के a में ज़ीरो है और नीड के a में वन है तो ये गलत हो जाएगा। तो इफ चला लीजिए कि अगर हैव आई हैव का आई लेस देन नीड आई कभी भी कभी भी कभी भी 256 में कभी भी तो रिटर्न फॉल्स मतलब सही नहीं है। इन फंक्शन का नाम सही है। अब अगर ये लूप पूरा चल गया, अगर",
+      "source": "caption",
+      "english_text": "256. That's why 256 is taken. Sounds pretty easy, right? Come on, let's start it. Take 256 and make it i plus plus. Now when will this information of ours become wrong? When will this information become wrong? When any value of Have is less than any value of Need. This is it right? If suppose there is zero in a of Have and one in a of Need then it will be wrong. So run if if I have I have I have less than I need I ever ever ever ever ever in 256 then return false means it is not correct. The name of these functions is correct. Now if this loop runs completely, if"
+    },
+    {
+      "start_time": 1103.6,
+      "end_time": 1137.669,
+      "text": "ये लूप पूरा 256 बार चल गया मतलब कि आपका ये कंडीशन कभी नहीं पकड़ा। आपका ये कंडीशन कभी एग्जीक्यूट नहीं हुआ। ये ये कंडीशन कभी एग्जीक्यूट नहीं होने का मतलब क्या है? कि हैव का आई हमेशा नीड के आई के तो इक्वल है तो ग्रेटर है। यही तो हम लोग का कंडीशन है सही होने का। यहां फटाक से फटाक से रिटर्न ट्रू कर दीजिए। ये लीजिए ये आपका हम सही वाला वो फंक्शन लिख दिए। ये क्या है? सही फंक्शन लिख दिए। ये लीजिए। भूल सही। भूल सही। इस फंक्शन का नाम क्या है? भूल सही। सही। यही तो सही यूज़ हो रहा था यहां पे। कहां पे? यहां पे। ये यही वाला सही यूज़ हो रहा था यहां पे। देखिए सेम हो गया। खत्म हो गया क्वेश्चन। यह",
+      "source": "caption",
+      "english_text": "This loop ran 256 times, which means you never caught this condition. This condition of yours was never executed. What does it mean that this condition is never executed? That the I of Have is always equal or greater than the I of Need. This is our condition to be right. Here, return true immediately. Here, we have written the correct function. What is this? Wrote the correct function. Take this. Correct the mistake. Correct the mistake. What is the name of this function? Correct the mistake. Correct. This was the correct use being made here. Where? On here. This one was being used correctly here. Look, it's done. Question is over. this"
+    },
+    {
+      "start_time": 1137.679,
+      "end_time": 1169.99,
+      "text": "क्वेश्चन और इस तरीके से आप किसी इंटरव्यूअर को समझा दिए तो उसका पैर थरथरा जाएगा कि अरे ये तो क्या बता दिया ये तो सिस्टमेटिक तरीके से बता रहा है। इसके ऑोजिट क्या होगा कि आप रट के जाइएगा। स्ट्राइवर भैया रटवा दिए थे। वहां पूछेगा कि ऐसा क्यों कर रहे हो भाई? वहां आपसे पूछ देगा कि ये क्यों कर रहे हो भाई? ऐसा काहे कर रहे हो ये सब कहां से रट के आए हो? तो आपको पता चलेगा कि ये तो नहीं आता है। और जो लोग नए बच्चे हैं उनको लग रहा होगा कि भाई आप भी तो रटवाए। आप भी तो बोले कि जब तक इनफार्मेशन सही है तब तक ये करते रहो। कल का लेक्चर देख लीजिए। रटवाए कुछ नहीं है। ये आपको जल्दी से बताना था तो हम बता दिए। कुछ नहीं रटवाया गया है।",
+      "source": "caption",
+      "english_text": "If you explain the question to an interviewer in this manner, his feet will tremble that hey, what have you told, he is telling it in a systematic manner. What will happen next is that you will go by heart. Striver Bhaiya had got it memorized. There he will ask why are you doing this brother? There he will ask you why are you doing this brother? Why are you doing this, where did you learn all this from? Then you will know that it does not come. And those who are new kids might be feeling that brother, you should also make them memorize it. You also said that as long as the information is correct, keep doing this. Watch yesterday's lecture. There is nothing to memorize. If we had to tell you this quickly, we told it. Nothing has been memorized."
+    },
+    {
+      "start_time": 1170.0,
+      "end_time": 1194.64,
+      "text": "एकदम लॉजिकल बताया गया है कि क्यों श्रिंक होता है। दोनों श्रिंक करने का लॉजिक मैक्सिमम विंडो और मिनिमम विंडो में अलग-अलग क्यों होता है? उल्टा क्यों होता है? सब बताया गया है। ध्यान से जाके देखिए, एंजॉय करिए और ये क्वेश्चन जा के अभी सबमिट कर लीजिए। बहुत इंपॉर्टेंट क्वेश्चन है इंटरव्यू के पर्सपेक्टिव से तो मजाक अपने साइड है लेकिन बहुत इंपॉर्टेंट क्वेश्चन है। है ना? चलिए मिलते हैं कल। कल सो लिंक स्टार्ट कर ही देंगे। है ना? चलिए।",
+      "source": "caption",
+      "english_text": "It has been explained quite logically why shrinkage occurs. Why is the logic of shrinking different in maximum window and minimum window? Why is it the reverse? Everything has been told. Go and watch carefully, enjoy and submit this question now. This is a very important question. From the perspective of the interview, the joke is on our side but it is a very important question. Isn't it? Let's meet tomorrow. Will start the link tomorrow. Isn't it? Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

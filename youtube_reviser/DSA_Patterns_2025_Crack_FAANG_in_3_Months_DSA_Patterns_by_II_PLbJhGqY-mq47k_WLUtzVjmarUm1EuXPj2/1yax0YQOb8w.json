@@ -1,0 +1,569 @@
+{
+  "video_id": "1yax0YQOb8w",
+  "video_title": "Let's Revise HEAP Data Structure With This Leetcode Hard Question | CPU Task Scheduler",
+  "video_number": 69,
+  "chunks": [
+    {
+      "start_time": 1.829,
+      "end_time": 34.47,
+      "text": "तो, हम हमें कमेंट पढ़ रहे थे एक्चुअली, तो उसमें हम आज तो हिप का रिवीज़न कराने का सोचे थे क्योंकि कोर शेड्यूलर थ्री अह मेरे हिसाब से हमको लगता है कि जब आप लोग को हम रिकर्शन पढ़ा देंगे उसके बाद उसपे आना चाहिए क्योंकि वो एक चॉइस का प्रॉब्लम है। तो, आपको पता चलना चाहिए कि वो चॉइस हम लोग जो कर रहे हैं ना, तो वो रिकर्शन क्यों नहीं कर सकते और क्यों ही करना चाहिए। तो हम पहले रिकर्न पढ़ाना चाहेंगे आप लोग को पूरा। फिर उसमें आएंगे। एक और हम कमेंट देख रहे थे। हम एक क्वेश्चन बनाए था आप लोग को शायद रिऑर्गनाइज्ड रिंग अह हमको लगा था कि ये सीपीयू टास्क शेड्यूलर उसी तरीके का क्वेश्चन है भी मतलब 90% क्वेश्चन सेम है तो हम उसको नहीं पढ़ाए थे हमको लगा था हो जाएगा लेकिन आज आप लोग देख रहे होंगे ये कोड ये कोड अभी हम खुद लिखे",
+      "source": "caption",
+      "english_text": "So, we were reading the comments actually, so today we had thought of revising the HIP because Core Scheduler Three Ah, according to me, we think that after we teach you all the recursion, then we should come to that because it is a problem of choice. So, you should know that if we are making that choice, then why we cannot do recursion and why we should do it. So first we would like to teach Recurne to you guys completely. Will come into that again. Another one we were looking at the comments. We had made a question, perhaps you guys might be seeing the reorganized ring. Ah, we thought that this CPU Task Scheduler is a question of the same type, meaning 90% of the questions are the same, so we did not teach it, we thought it would be done, but today you guys would be seeing this code. We just wrote this code ourselves."
+    },
+    {
+      "start_time": 34.48,
+      "end_time": 66.39,
+      "text": "हैं बैठ के तो ये कोड काफी बड़ा कोड है तो ये नहीं करना चाहिए था क्वेश्चन है एक्चुअल में बहुत कॉम्प्लेक्स है और ऐसा नहीं करना चाहिए था तो जिनका भी वो कमेंट था बहुत बहुत हेल्पफुल कमेंट था आपका आइए इस क्वेश्चन को देखेंगे बहुत अह बहुत सिमिलर क्वेश्चन है आपसे रीऑर्गेनाइज्ड स्ट्रिंग अगर बन गया होगा ना तो भी ये क्वेश्चन समझना, ये क्वेश्चन का एप्रोच सोचना। और इस क्वेश्चन का कोड लिखना बहुत बहुत इंप्लीमेंटेशन हैवी आप इसको बोल सकते हैं। समझा तो हम देंगे, समझा तो आपको आसान भाषा में हम देंगे कि क्या करना है, क्या नहीं करना है लेकिन वो करेंगे कैसा? वो वो नहीं। तो वो हमसे भी बहुत बार गलत हुआ है।",
+      "source": "caption",
+      "english_text": "Well, this code is a very big code, so this should not have been done. The question is actually very complex and this should not have been done, so whoever had that comment, your comment was very, very helpful. Let's look at this question. This is a very similar question to yours. Even if it has become a reorganized string, still understand this question, think about the approach to this question. And writing the code for this question is very implementation heavy, you can say it. We will explain to you, we will explain to you in simple language what to do and what not to do, but how will they do it? That's not that. So we too have been wrong many times."
+    },
+    {
+      "start_time": 66.4,
+      "end_time": 100.55,
+      "text": "हम भी आज इसको कर रहे थे सबमिट। हमसे भी काफी सारा एरर सिंटेक्स एरर नहीं है। रन टाइम एरर बहुत चीज़ हमको भी नहीं छूट गई थी इधर-उधर इधर-उधर। तो हमको लगा कि ये पढ़ा देना चाहिए। तो आइए इसको पढ़िए। ये पढ़ने के बाद आप आप बोल सकते हैं कि 80-85% ही आपका पूरा कंप्लीट है। जो हार्ड क्वेश्चंस बचे हैं, कोर शेडलर बचा है, टू हिप्स बचा है। वो सब जब हम लोग रिकर्शन डीपी करके आएंगे उसके बाद ज्यादा सेंस बनाएगा तो वो बाद में करेंगे। तो ये अंत तक देखिएगा इसका कोड बहुत हार्ड है। इंट्यूशन उतना हार्ड नहीं है। इंट्यूशन बहुत आपको नेचुरल कॉमन सेंस की तरह लगेगा कि हां यही यही करना चाहिए। आपके दिमाग में आ जाएगा कि हां ये करना तो चाहिए। कैसे करना चाहिए वो शायद",
+      "source": "caption",
+      "english_text": "We were also submitting it today. A lot of errors from us too are not syntax errors. We also missed many run time errors here and there. So we felt that this should be taught. So let's read this. After reading this you can say that only 80-85% of your work is complete. The hard questions left, the core Shedler left, the two hips left. All that will make more sense after we do the recursion DP, we will do that later. So watch it till the end, its code is very hard. Intuition is not that hard. Intuition will seem like natural common sense to you that yes, this is what should be done. It will come to your mind that yes, this should be done. How should that be done?"
+    },
+    {
+      "start_time": 100.56,
+      "end_time": 134.71,
+      "text": "ना आए समझ में। तो जल्दी-जल्दी शुरू करते हैं चलिए। तो हम लोग एक क्वेश्चन किए थे रिऑर्गनाइज स्ट्रिंग अगर आप लोग को याद होगा तो शायद एक दो तीन लेक्चर पहले एक क्वेश्चन हुआ था जिसमें रिऑर्गनाइज स्ट्रिंग करना था उसमें आपको बताए थे एक पीटी सर का एग्जांपल आपको एक पीटी सर का एग्जांपल हम बताए थे क्या बताए थे कि उनके पास ऐसा सीट रखा हुआ है क्लास में एग्जाम होना है और उनके पास कुछ बच्चे हैं जैसे एक क्लास एट का बच्चा है एक क्लास नाइन का बच्चा है और एक और क्लास एट का बच्चा है ऐसा करके तीन बच्चे हैं। अब उनको इन बच्चों को कैसे बिठाना था जैसे हम लोग एग्जाम में बैठते हैं कैसे अल्टरनेट तरीके से नहीं तो बच्चा लोग चोरी करना शुरू कर देता है। तो वो क्या किए थे? क्योंकि",
+      "source": "caption",
+      "english_text": "Couldn't understand. So let's start quickly. So, we had done a question on reorganizing string. If you guys remember, maybe one or two-three lectures ago, there was a question in which we had to reorganize string. In that, we told you the example of a PT sir. We told you the example of a PT sir. What we told you was that they have such a seat that there is an exam in the class and they have some children like there is a child of class eight, a child of class nine and another class. Eight has a child, so there are three children. Now how did they have to make these children sit like we sit in exams, in an alternate manner, otherwise the children start stealing. So what did they do? because"
+    },
+    {
+      "start_time": 134.72,
+      "end_time": 167.99,
+      "text": "क्लास एट का बच्चा दो बार है। दो क्लास एट का बच्चा और एक क्लास नाइन का बच्चा है। तो अगर वो इस सीट को वैसे भरने लगेंगे ना कि यहां पे क्लास नाइन बिठा दिए। मान लीजिए यहां पे क्लास नाइन बिठा दिए। अब उनको यहां पे क्लास एट दोनों बिठाना पड़ेगा। क्योंकि सीट उतना ही लिमिटेड था तो यहां पे बिठाना पड़ता और ये दोनों चोरी कर लेता। ये उनको नहीं चाहिए था। इसीलिए वो क्या किए थे? इन सबको फ्रीक्वेंसी के हिसाब से बैठाए थे। क्योंकि उनका गोल क्या था ना कि जिस बच्चे की ज्यादा फ्रीक्वेंसी है उसको पहले खत्म कर दो बिठा के ताकि मेरा टेंशन कम रहे। बाद में अगर एक बच्चा लास्ट में बचेगा तो उसको तो कहीं भी सेट कर देंगे। लेकिन जिस बच्चे की सबसे ज्यादा फ्रीक्वेंसी है उसको सबसे पहले सेटल कर",
+      "source": "caption",
+      "english_text": "The child of class eight is there twice. There are two class eight children and one class nine child. So, if they start filling this seat in such a way that class nine is seated here. Suppose class nine is seated here. Now both of them will have to sit here in class. Because the seats were so limited, they had to sit here and both of them would have stolen it. They did not want this. That's why what did they do? All of them were seated according to frequency. Because what was their goal, not to eliminate the child who has more frequency and make me sit first so that my tension remains less. Later, if one child is left last, he will be set anywhere. But the child who has the highest frequency should be settled first."
+    },
+    {
+      "start_time": 168.0,
+      "end_time": 201.99,
+      "text": "दो। तो वो क्या किए थे? यहां पे क्लास एट का बच्चा बिठाए थे। ठीक है? अब उनके पास दो बच्चे बाकी है। एक नाइन का, एक आठ का। फिर से अब दोनों की फ्रीक्वेंसी तो सेम है। अब बचे हुए बच्चों में एक बच्चा आठवीं क्लास का है। एक बच्चा नौवीं क्लास का है। तो किसको बिठाएंगे? दोनों को ट्राई कर लो। आठवीं क्लास को ट्राई कर लो। तो क्या आठवीं बैठ सकता है? नहीं बैठ सकता है। क्यों? क्योंकि चोरी हो जाएगा। तो वो क्या करता था? क्लास नाइन को बिठा देता था। अब क्लास नाइन भी गोल हो गया। लास्ट में कौन सा एक बच्चा बचा क्लास एट का उसको यहां पे सेट कर देता था। तो पीटी सर को नहीं आता था कुछ डीएसए वगैरह। लेकिन पीटी सर तब भी कॉमन सेंस का यूज़ करके ये क्वेश्चन बना लेते थे कैसे? फ्रीक्वेंसी के हिसाब से।",
+      "source": "caption",
+      "english_text": "Give. So what did they do? A class eight child was seated here. Ok? Now they have two children left. One of nine, one of eight. Again now the frequency of both is same. Now among the remaining children, one child is in eighth class. One child is in ninth class. So who will you seat? Try both. Try eighth grade. So can sit eighth? Can't sit. Why? Because it will be stolen. So what did he do? Used to make class nine sit. Now class nine has also come round. Which one child left in the last class eight would have set him here? So PT sir did not know anything about DSA etc. But even then PT sir used common sense to ask these questions. According to frequency."
+    },
+    {
+      "start_time": 202.0,
+      "end_time": 230.07,
+      "text": "अब ये पढ़ाने में हमको लगा कि ये क्वेश्चन सिमिलर है और बहुत तरीकों में है भी। किसके? सीपीयू शेड्यूलर के। सीपीयू शेड्यूलर। ये दोनों क्वेश्चन एक्सजेक्टली सेम है सिवाय एक बहुत इंपॉर्टेंट चीज के। बहुत ध्यान से सुनिएगा। सेम प्रॉब्लम है। ठीक है? सेम प्रॉब्लम है। आपके पास कुछ बच्चे हैं। मान लीजिए उनको बच्चों का नाम ए, बी, सी, डी ऐसा है। तो आपके पास ऐसे बच्चे हैं। एक ए है, एक और ए है, एक और ए है और तीन बच्चे बी के हैं। तीन बच्चे बी के हैं। ठीक है? आपको इनको अरेंज करना है।",
+      "source": "caption",
+      "english_text": "Now while teaching this we felt that this question is similar and in many ways also. Whose? Of CPU Scheduler. CPU Scheduler. Both these questions are exactly the same except one very important thing. Listen very carefully. Same problem. Ok? Same problem. You have some children. Suppose the names of their children are A, B, C, D. So you have such children. One is A, another is A, another is A and three children are of B. B has three children. Ok? You have to arrange them."
+    },
+    {
+      "start_time": 230.08,
+      "end_time": 260.629,
+      "text": "आपको उनको उसी तरीके से पीटी सर की तरह बिठाना है। लेकिन अब जो आपका कंस्ट्रेंट है ना, अब ये नहीं है कि आपको बच्चों को अल्टरनेट बिठाना है। पहले वाले में क्या था? अल्टरनेट बिठा दीजिए हो जाएगा। यहां पे क्या कंस्ट्रेंट है? एक गैप दिया हुआ है। गैप इक्वल टू 2 इसका क्या मतलब है? आप किसी भी बच्चे को बिठा सकते हैं। बिल्कुल बिठाइए। लेकिन किसी भी दो सिमिलर बच्चों के बीच में कम से कम दो सीट्स का गैप रहना चाहिए। दो सीट्स का गैप रहना चाहिए। मतलब कि अगर आप ए को यहां बिठाते हैं इस सीट पे बिठा दीजिए। फिर मान लीजिए ये सीट वन है।",
+      "source": "caption",
+      "english_text": "You have to position them in the same manner as PT Sir. But now your constraint is not that you have to make the children sit alternately. What was in the first one? Install the alternate and it will be done. What is the constraint here? A gap is given. Gap Equals 2 What does it mean? You can seat any child. Make sure to sit. But there should be a gap of at least two seats between any two similar children. There should be a gap of two seats. Meaning that if you make A sit here, make him sit on this seat. Then suppose this is seat one."
+    },
+    {
+      "start_time": 260.639,
+      "end_time": 288.07,
+      "text": "ये सीट टू होगा। ये सीट थ्री होगा। ये सीट फोर होगा। ये सीट फाइव होगा। ये सीट सिक्स होगा। ये सीट से होगा। एंड सो ऑन। ठीक है? अब आप ए को यहां बिठा दिए। किस पे? सीट वन पे। सीट वन पे आप किसी को भी बिठा सकते हैं। आपकी मर्जी। सीट टू पे आप ए को नहीं बिठा सकते हैं। क्यों? क्योंकि ये बोला है ना कि दो क्सक्यूटिव ए के बीच में दो गैप होना चाहिए। दो सीट का गैप होना चाहिए। तो यहां पे आप बी बिठा सकते हैं। ज्यादा से ज्यादा। बी बिठा सकते हैं। तो अब ए का काम हो चुका है। एक बी का काम हो चुका है।",
+      "source": "caption",
+      "english_text": "This will be seat two. This will be seat three. This will be seat four. This will be seat five. This will be seat six. This will happen from the seat. And so on. Ok? Now you have placed A here. On what? On seat one. You can make anyone sit on seat one. As you wish. You can't seat A by paying seat two. Why? Because it is said that there should be two gaps between two executive A's. There should be a gap of two seats. So here you can seat B. At most. Can seat B. So now A's work is done. A B's work has been done."
+    },
+    {
+      "start_time": 288.08,
+      "end_time": 323.029,
+      "text": "अगले में इस सीट पे अब आपके पास तो दो ही तरीके के बच्चे हैं। या तो ए है या तो बी है। क्या यहां पे आप ए को बिठा सकते हैं? नहीं बिठा सकते हैं। क्यों? क्योंकि जब आप ए को यहां बिठाएंगे ना इस ए और इस ए में कितने सीट का गैप है? एक सीट का, एक सीट का नहीं होना चाहिए। दो सीट का गैप होना चाहिए। कम से कम, कम से कम बोला गया है दो सीट का गैप होना चाहिए। क्या यहां पे आप बी को बिठा सकते हैं? नहीं, नहीं बिठा सकते हैं। अगर आप बी को बिठाएंगे तो इन दोनों के बीच में कितना गैप बचेगा? ज़ीरो सीट का अलाउड नहीं है। कम से कम दो सीट का गैप होना चाहिए। तो ये वाला जो है ना सीट थ्री ये आपको आइडल रखना पड़ेगा। इस सीट पे कोई नहीं बैठ पाएगा। इस सीट पे कोई नहीं",
+      "source": "caption",
+      "english_text": "Next, now you have only two types of children on this seat. Either it is A or it is B. Can you seat A here? Can't sit. Why? Because when you seat A here, how many seats are there gap between this A and this A? It should not be of one seat, one seat only. There should be a gap of two seats. At least, it has been said that there should be a gap of two seats. Can you seat B here? No, can't sit. If you seat B, how much gap will be left between these two? Zero seat is not allowed. There should be a gap of at least two seats. So this one, seat three, you will have to keep it idle. No one will be able to sit on this seat. no one on this seat"
+    },
+    {
+      "start_time": 323.039,
+      "end_time": 356.469,
+      "text": "बैठ पाएगा। आगे बढ़ जाइए। सीट फोर पे क्या आप ए को बिठा सकते हैं? हां ए को बिठा सकते हैं। क्योंकि अगर आप यहां पे A को बिठाएंगे इन दोनों के बीच में कितना गैप है? दो सीट का, चलता है। आपको दो गैप रखना है तो दो से ज्यादा भी रख सकते हैं लेकिन दो रखना है। तो यहां पे आप कंफर्टेबल हो के ए को बिठा सकते हैं। इस ए का काम हो गया। अगले सीट पे आइए। सीट फाइव पे क्या आप ए को बिठा सकते हैं? नहीं, ए को नहीं बिठा सकते क्योंकि अगर आप ए को बिठाएंगे यहां पे कितना गैप हुआ दोनों के बीच में जीरो सीट का। जीरो नहीं चाहिए दो का गैप चाहिए। ए को नहीं बिठा सकते हैं। क्या आप यहां पे बी को बिठा सकते हैं? हां बिल्कुल बिठा सकते हैं। क्यों? क्योंकि इन दोनों",
+      "source": "caption",
+      "english_text": "Will be able to sit. Go ahead. Can you fit A on seat four? Yes, A can be seated. Because if you place A here, how much gap is there between these two? Two seater, runs. If you want to keep two gaps, you can keep more than two but you have to keep two. So here you can sit comfortably. This A's work is done. Come to the next seat. Can you seat A on seat five? No, you cannot seat A because if you seat A there is a gap of zero seat between the two. Don't want zero, want a gap of two. Cannot accommodate A. Can you fit Pe B here? Yes, you can definitely sit. Why? because these two"
+    },
+    {
+      "start_time": 356.479,
+      "end_time": 384.39,
+      "text": "के बीच में कितना गैप है? दो सीट का। सीट थ्री सीट फोर का गैप छूटा हुआ है। वेरी गुड। इस बी का भी काम खत्म हो गया। अगले में आइए। एस सिक्स में क्या बी को बिठा सकते हैं? ना बी को नहीं बिठा सकते क्योंकि बी तो यहीं है ज़ीरो सीट का गैप। आप ए को भी नहीं बिठा सकते हैं? ए को भी नहीं बिठा सकते हैं याद रखिए। क्यों? यहां बिठाएंगे ना। कितना गैप है? एक सीट का। एक सीट का गैप नहीं चाहिए। दो सीट का गैप चाहिए। अगेन यहां पे आप किसी को नहीं बिठा सकते हैं। ना ए को ना बी को। ये सीट खाली रह गया। ये सीट क्या रह गया? खाली रह गया।",
+      "source": "caption",
+      "english_text": "How much gap is there between? Of two seats. There is a gap left for seat three and seat four. very good. This B's work is also over. Come to the next one. Can B fit in S Six? Neither can B be seated because B is here, there is a zero seat gap. You can't even seat A? Remember, even A can't be made to sit. Why? Will make you sit here, right? How much gap is there? Of one seat. There should not be a gap of one seat. A gap of two seats is required. Again you cannot make anyone sit here. Neither to A nor to B. This seat remained vacant. What is left of this seat? Remained empty."
+    },
+    {
+      "start_time": 384.4,
+      "end_time": 413.83,
+      "text": "आगे बढ़िए। सीट सेवन पे क्या आप बी को बिठा सकते हैं? ना B को बिठाएंगे तो एक सीट का गैप बचेगा। ए को बिठा सकते हैं क्या? हां जी बिल्कुल। ए को बिल्कुल बिठा सकते हैं। क्यों? इन दोनों के बीच में सीट फोर सीट सेवन के बीच में कितना गैप है? दो सीट का चलता है। दो सीट का चलता है। आगे आ जाइए। S8 अब आपको और सीटें लगेंगी क्योंकि अभी सारे बच्चे खत्म नहीं हुए हैं। ये खत्म हो गया लेकिन ये जो एक बच्चा था ये बाकी है। इस सीट पे क्या आप इस बच्चे को बिठा सकते हैं? बिल्कुल बिठा सकते हैं कंफर्टेबल हो के। क्यों? क्योंकि इनके बीच में अगेन दो सीट का गैप है। कितने सीटें लगी आपको?",
+      "source": "caption",
+      "english_text": "Go ahead. Can you seat B on seat seven? If B is seated then there will be a gap of one seat. Can we accommodate A? Yes, absolutely. Can absolutely seat A. Why? What is the gap between these two, seat four and seat seven? It is a two seater. It is a two seater. Come forward. S8 Now you will find more seats because all the children are not finished yet. It is over but the child that was there remains. Can you seat this child on this seat? You can absolutely sit comfortably. Why? Because again there is a gap of two seats between them. How many seats did you get?"
+    },
+    {
+      "start_time": 413.84,
+      "end_time": 448.15,
+      "text": "कितने सीटें लगी आपको? 1 2 3 4 5 6 7 8 आपको रिटर्न क्या करना है? आठ। मिनिमम नंबर ऑफ़ सीट टू फिक्स ऑल द स्टूडेंट्स। सो दैट देयर इज़ अ गैप ऑफ़ एटलीस्ट टू सीट्स बिटवीन द जो भी आपको गैप दिया रहा है उतना गैप होना चाहिए। तो यहां वो क्वेश्चन डिफर करता है। तो मेरे हिसाब से पिछला वाला क्वेश्चन अगर लीड कोड मीडियम था ना ये क्वेश्चन हालांकि मीडियम है। ये क्वेश्चन काफी हार्ड है। ठीक है? यहां पे दो चीजें हैं। एक तो आपको गैप दिया हुआ है कि दो बच्चों के बीच में एटलीस्ट इतना गैप रहना चाहिए। पहली बात। उसके बाद आपको सीट की कोई कंस्ट्रेंट नहीं है। ऐसा नहीं है कि आपको बोला हुआ है कि नहीं आपको छह ही सीट मिलेगा। क्योंकि छह बच्चे हैं छह सीट",
+      "source": "caption",
+      "english_text": "How many seats did you get? 1 2 3 4 5 6 7 8 What do you have to return? Eight. Minimum number of seats to be fixed for all the students. So that there is a gap of athlete two seats between the whatever is giving you the gap there should be that much gap. So here he defers the question. So according to me, if the previous question if lead code was medium, this question however is medium. This question is quite hard. Ok? There are two things here. Firstly, you have been given a gap that there should be at least this much gap between two children. First thing. After that you have no seat restrictions. It is not that you have been told that you will get only six seats. Because there are six children, six seats"
+    },
+    {
+      "start_time": 448.16,
+      "end_time": 482.469,
+      "text": "मिलेगा। नहीं छह बच्चे हैं। छह सीट नहीं मिलेगा। यूज़ करिए। आप यहां पे आठ सीट यूज़ कर लिए। मिनिमम नंबर ऑफ़ सीट्स में बिठा सकते हैं। वो बताना है आपको। आप चाहते तो 100 सीट भी यूज़ कर सकते थे। लेकिन मिनिमम नंबर ऑफ़ सीट्स क्या है? क्या आठ से कम सीट्स में आप बिठा सकते थे? नहीं बिठा सकते थे। तो आपको आठ सीट आपको आठ रिटर्न करना ही करना है। तो ये इस क्वेश्चन का प्रीमाइस आप कह लीजिए। अब आइए सोचना शुरू करते हैं क्वेश्चन को सॉल्व कैसे करना है? तो देखिए कॉमन सेंस क्या कहता है? कॉमन सेंस यही कहता है जो पिछले वाले क्वेश्चन में भी कहता था कि जो बच्चा सबसे ज्यादा फ्रीक्वेंट है ना मतलब जो सबसे ज्यादा फ्रीक्वेंट है A अगर तीन बार है तो A अगर सबसे फ्रीक्वेंट है हर स्टेप पे तो आपको",
+      "source": "caption",
+      "english_text": "Will get it. No, there are six children. Six seats will not be available. Use it. You used eight seats here. Can be seated in minimum number of seats. You have to tell that. If you wanted, you could have used even 100 seats. But what is the minimum number of seats? Could you fit in fewer than eight seats? Couldn't make it sit. So you have to return eight seats. So call this the premise of this question. Now let's start thinking how to solve the question? So see what common sense says? Common sense says the same which was also said in the previous question that the child who is most frequent means the one who is most frequent. If A is three times then A is most frequent at every step then you"
+    },
+    {
+      "start_time": 482.479,
+      "end_time": 516.55,
+      "text": "उसको ही बिठाने का कोशिश करना चाहिए। पिछले में भी हम लोग ये किए थे कि जो बच्चा सबसे ज्यादा था तो सर कोशिश कर रहे थे कि उसको सेट कर दो यार ये सेट हो गया तो बाकी भी हो ही जाएंगे किसी ना किसी तरीके से। तो हर स्टेप में एक तो चीज है कि सबसे फ्रीक्वेंट वाले को आपको बिठाने का कोशिश करना चाहिए कॉमन सेंस के हिसाब से क्योंकि क्या होगा कि सबसे फ्रीक्वेंट वाले को अगर आप छोड़े रहेंगे ना मान लीजिए आपके पास बहुत सारे बच्चे थे और ए सबसे ज्यादा फ्रीक्वेंट था। अब मान लीजिए बी सी डी एक बार था। बी सी डी एक-एक बार था। ठीक है? और ए कितना बार था? चार बार था। अब इससे होगा क्या? आपको बताते हैं। मान लीजिए आप अपने मन से कर रहे हैं कि नहीं हम हमको क्या मतलब है? हम तो किसी को भी",
+      "source": "caption",
+      "english_text": "We should try to make him sit only. In the past too, we had done this that the child who was the highest, then sir was trying to set him, if he is set then the rest will also be done in some way or the other. So one thing in every step is that you should try to accommodate the most frequent one. According to common sense, what will happen if you leave the most frequent one. Suppose you had many children and A was the most frequent. Now suppose B C D once existed. B C D was once each. Ok? And how many times was A? It was four times. Now what will happen from this? Let us tell you. Suppose you are doing it from your mind or not, what do we mean? we can tell anyone"
+    },
+    {
+      "start_time": 516.56,
+      "end_time": 551.43,
+      "text": "बिठा सकते हैं तो बिठा सकते हैं। अब क्या करेंगे? बी को कहां बिठाएंगे? सीट नंबर वन पे। हो गया सेट। सी को कहां बिठाएंगे? सीट नंबर टू पे। क्योंकि बी और सी अलग-अलग है। तो इसमें तो गैप का कोई कांसेप्ट ही नहीं है। डी को कहां बिठाएंगे? सीट नंबर थ्री पे। तो तीन बच्चे तीन सीट काम खत्म। लेकिन अब आपके पास क्या बचा हुआ है? A ठीक है? मान लीजिए आपका गैप जो है ना वो दो है। कि हर सिमिलर बच्चे के बीच में कितने का गैप होना चाहिए? दो सीट का गैप होना चाहिए। तो आप ए को सीट फोर पे बिठा सकते हैं क्योंकि ए पहली बार बैठ रहा है तो ठीक है। डी से तो दूरी मैटर नहीं करती है। अगले ए के लिए ना अगले ए को आप सीट नंबर फाइव पे नहीं",
+      "source": "caption",
+      "english_text": "If you can make it sit, you can make it sit. What will you do now? Where will B be seated? On seat number one. It's set. Where will C be seated? Seat number two pay. Because B and C are different. So there is no concept of gap in this. Where will you seat D? On seat number three. So three children, three seats, the work is finished. But what are you left with now? A ok? Suppose your gap is two. What should be the gap between each similar child? There should be a gap of two seats. So you can make A sit on seat four because A is sitting for the first time so it is okay. Distance from D does not matter. No for the next A. No for the next A. You are on seat number five."
+    },
+    {
+      "start_time": 551.44,
+      "end_time": 578.63,
+      "text": "बिठा पाएंगे और ना ही सीट नंबर सिक्स पे बिठा पाएंगे। देखिए क्योंकि हर ए के बीच में गैप होना चाहिए कम से कम दो का। अगले ए को आप सीट नंबर सेवन पे बिठा पाएंगे। सिमिलरली सीट नंबर आठ और सीट नंबर नौ आपको खाली छोड़ना पड़ेगा। ठीक है? अगले ए को आप कहां बिठा पाएंगे? सीट नंबर 10 पे। सिमिलरली अगले 11 और 12 पे आपको अगेन गैप छोड़ना पड़ेगा। लास्ट वाले ए को आप कहां बिठा पाएंगे? S13 पे आप यहां बिठा पाएंगे।",
+      "source": "caption",
+      "english_text": "Will not be able to sit nor will be able to sit on seat number six. See because there should be a gap of at least two between each A. Next A you will be able to sit on seat number seven. Similarly, you will have to leave seat number eight and seat number nine vacant. Ok? Where will you be able to fit the next A? On seat number 10. Similarly, on next 11 and 12 you will have to leave gap again. Where will you be able to place the last A? You will be able to sit here on S13."
+    },
+    {
+      "start_time": 578.64,
+      "end_time": 612.87,
+      "text": "तो देखिए ये एक एन 2 3 4 टोटल कितने लगे? 13 सीट्स। 13 सीट्स लग गए आपको। 13 सीट्स। बच्चे टोटल कितने थे? चार और तीन सात। सात स्टूडेंट्स में 13 सीट्स आप ले रहे हैं। मतलब लगभग लगभग डबल। ये प्रॉब्लम क्यों हुआ? ये प्रॉब्लम इसीलिए हुआ ना? क्योंकि बी सी डी को तो आप शुरू में भर दिए। बी सी डी को तो आप लगा कि अच्छा है लोएस्ट फ्रीक्वेंसी है। शुरू में इसको भर दो। ए को आप छोड़ दिए। सबसे ज्यादा जो बच्चा था उसको आप छोड़ दिए लास्ट के लिए। अब लास्ट में इसे छोड़ने से क्या हुआ ना कि अब आपको हर अब आपके पास बचा ही केवल ए है। आपको लगभग लगभग एक ए के लिए एक ए तीन सीट ले",
+      "source": "caption",
+      "english_text": "So see how much does this 1 N 2 3 4 total cost? 13 seats. You got 13 seats. 13 seats. How many children were there in total? Four and three seven. You are taking 13 seats among seven students. Meaning almost double. Why did this problem happen? That's why this problem happened, right? Because you filled BCD in the beginning. You thought BCD was good as it was the lowest frequency. Fill it in the beginning. You left out A. You left the child who was most important to you for last. Now what happened by leaving it at the end, that now you are left with only A. You can get an A three seat for about $1"
+    },
+    {
+      "start_time": 612.88,
+      "end_time": 646.389,
+      "text": "रहा है। देखिए एक ए को बैठाने के कारण तीन सीट खराब होता है। देखिए तीन सीट खराब कर रहा है ये। ये भी तीन सीट खराब कर रहा है। ये भी तीन सीट खराब कर रहा है। कर रहा है ना? हां। अगर आप ए को पहले से भर दिए होते ना, पहले से कोशिश किए होते भरने का तो आपको कम सीट लगता। हम आपको दिखाते हैं। वो क्यों होता है वो भी बताएंगे। देखिए इसीलिए हम ये बता रहे हैं क्योंकि जरूरी नहीं कि याद कर लिया जाए कि फ्रीक्वेंसी ज्यादा को नहीं करना। कॉमन सेंस का यूज़ किया करिए। आइए कोशिश करते हैं। ए को बिठा दीजिए कहां पे? S1 पे। ठीक है? ऑब्वियस सी बात है कि ए, एस टू और S3 में तो नहीं बैठ सकता है। अगले में भी S4 में ए को बिठा",
+      "source": "caption",
+      "english_text": "Has been. See, because of seating one A, three seats are lost. Look, he is spoiling three seats. He is also wasting three seats. He is also wasting three seats. Is he doing it? Yes. If you had filled A in advance, if you had tried to fill it in advance, you would have got a lesser seat. Let us show you. We will also tell you why that happens. See, that is why we are telling this because it is not necessary to remember that the frequency should not be increased. Use common sense. Let's try. Where should A sit? On S1. Ok? It is obvious that A cannot sit in S2 and S3. A will be seated in S4 in the next one too."
+    },
+    {
+      "start_time": 646.399,
+      "end_time": 680.949,
+      "text": "दीजिए। हो गया। ऑब्वियस सी बात है कि S5 और S6 में ए नहीं बैठ सकता आएगा। ए को और बिठा दीजिए। कहां पे? S सेवन पे। ऑब्वियस सी बात है कि S8 और S9 पे A नहीं बैठ पाएगा और इसको बिठा दीजिए S10 पे। चारों A हो गए 1 2 3 4 जो सबसे मैक्सिमम था उसको खत्म कर दिया एक बार में। बिल्कुल सही बात है। अब आपके पास क्या-क्या बचता है? बी सी डी। तीनों एक-एक बारी है। तीनों को आप कहीं भी बिठा सकते हैं। अब देखिए बी सी डी। बस खत्म हो गया। कितना सीट लगा टोटल में? 10 सीट। ऊपर कितना लगा था? 13 सीट।",
+      "source": "caption",
+      "english_text": "Give it. Done. It is obvious that A will not be able to sit in S5 and S6. Make A sit more. Where? S at seven. It is obvious that A will not be able to sit on S8 and S9 and let it sit on S10. All four A's became 1 2 3 4. The one which was the maximum was finished in one go. That is absolutely correct. Now what is left with you? B C D. All three have one turn each. You can seat all three anywhere. Now look at BCD. It's over. How many seats were there in total? 10 seats. How much did it cost? 13 seats."
+    },
+    {
+      "start_time": 680.959,
+      "end_time": 715.03,
+      "text": "क्यों लगा था 13 सीट? क्योंकि आप सबसे फ्रीक्वेंट वाले को लास्ट के लिए छोड़ दिए थे। अब उसको बिठाने के चक्कर में आपको ज्यादा सीट आइडल रखना पड़ा। हर ए को तीन-तीन सीट आइडल रखना पड़ा। लेकिन इसमें क्या हुआ? यहां भी आप एक तरीके से देखेंगे तो हर ए ऐसा करके ग्रुप बना रहा है। बना रहा है ना? हरे बना रहा है। लेकिन लेकिन लेकिन ये जो ए दो सीट आइडल करवाया था ना यहां पे आप बी और सी को घुसा दिए। ये दूसरा वाला a जो एक सीट आइडल कराया था वहां पे आप डी को घुसा दिए। तो आप आइडल सीट को कम कर दिए। तो आप आइडल सीट को जितना कम करेंगे आइडल सीट का मतलब है खाली सीट। खाली सीट जितना कम होगा उतना टोटल नंबर ऑफ सीट्स भी कम लगेगा। तो इसीलिए कॉमन सेंस हम लोगों को कहता है कि हम लोग",
+      "source": "caption",
+      "english_text": "Why were there 13 seats? Because you left the most frequent one for last. Now in order to accommodate him, you had to keep more seat idle. Each A had to keep three seat idols each. But what happened in this? Here too, if you look at it in a different way, everyone is forming a group by doing this. Is he making it? Making green. But but but this A two seat idol was made, here you inserted B and C. ये दूसरा वाला a जो एक सीट आइडल कराया था वहां पे आप डी को घुसा दिए। तो आप आइडल सीट को कम कर दिए। तो आप आइडल सीट को जितना कम करेंगे आइडल सीट का मतलब है खाली सीट। खाली सीट जितना कम होगा उतना टोटल नंबर ऑफ सीट्स भी कम लगेगा। तो इसीलिए कॉमन सेंस हम लोगों को कहता है कि हम लोग"
+    },
+    {
+      "start_time": 715.04,
+      "end_time": 749.99,
+      "text": "को मोस्ट फ्रीक्वेंट वाले से शुरुआत करनी चाहिए और मोस्ट फ्रीक्वेंट वाले को हर स्टेप पे भरना चाहिए। अब देखते हैं कि भरेंगे कैसा और क्या करेंगे कि भर जाए। है ना? चलिए। देखिए अब आप क्या करेंगे? हम अब एकदम मास्टर की तरह सोचेंगे। ठीक है? मान लीजिए आपके पास इस तरीके का क्लास आया हुआ है। तीन ए के बच्चे हैं और तीन सेक्शन बी के बच्चे हैं और आपका जो गैप है वो आपको दो दिया हुआ है। मतलब हर सिमिलर बच्चे के बीच में कितना गैप होना चाहिए? दो सेट का गैप होना चाहिए। तो सबसे पहले तो जैसा हम लोग रीऑर्गेनाइज्ड स्ट्रिंग में किए थे इनका फ्रीक्वेंसी निकाल लेते हैं। सबसे पहला काम तो क्या किया करिए? इस तरीके के क्वेश्चन में जहां आपको फ्रीक्वेंसी की जरूरत पड़े ना फ्रीक्वेंसी निकाल लिया",
+      "source": "caption",
+      "english_text": "को मोस्ट फ्रीक्वेंट वाले से शुरुआत करनी चाहिए और मोस्ट फ्रीक्वेंट वाले को हर स्टेप पे भरना चाहिए। अब देखते हैं कि भरेंगे कैसा और क्या करेंगे कि भर जाए। Isn't it? Let go. देखिए अब आप क्या करेंगे? हम अब एकदम मास्टर की तरह सोचेंगे। Ok? मान लीजिए आपके पास इस तरीके का क्लास आया हुआ है। तीन ए के बच्चे हैं और तीन सेक्शन बी के बच्चे हैं और आपका जो गैप है वो आपको दो दिया हुआ है। मतलब हर सिमिलर बच्चे के बीच में कितना गैप होना चाहिए? दो सेट का गैप होना चाहिए। तो सबसे पहले तो जैसा हम लोग रीऑर्गेनाइज्ड स्ट्रिंग में किए थे इनका फ्रीक्वेंसी निकाल लेते हैं। सबसे पहला काम तो क्या किया करिए? इस तरीके के क्वेश्चन में जहां आपको फ्रीक्वेंसी की जरूरत पड़े ना फ्रीक्वेंसी निकाल लिया"
+    },
+    {
+      "start_time": 750.0,
+      "end_time": 780.87,
+      "text": "करिए कैसे हैश मैप में। तो आप क्या कह करिए? a तीन बार है और d तीन बार है। ये आप एक फ्रीक्वेंसी निकाल के रख लिए। अब कॉमन सेंस से हम लोग क्या सोचे थे कि हम लोग को किस बच्चे को सबसे पहले सेट करने की कोशिश करनी है? मोस्ट फ्रीक्वेंट वाले को। हर स्टेप में मोस्ट फ्रीक्वेंट। हर स्टेप में आपको क्या चाहिए? जिसकी फ्रीक्वेंसी सबसे ज्यादा हो। ये क्या बोलता है? चिल्ला-चिल्ला के हिप। क्योंकि हर स्टेप में आपको कौन सा बच्चा चाहिए? जिसकी फ्रीक्वेंसी अभी के लिए सबसे ज्यादा हो। तो वो क्या बोलता है? हीप। हीप। एक हिप बना लीजिए। ये क्या है? मैक्स हिप है।",
+      "source": "caption",
+      "english_text": "करिए कैसे हैश मैप में। तो आप क्या कह करिए? a तीन बार है और d तीन बार है। ये आप एक फ्रीक्वेंसी निकाल के रख लिए। अब कॉमन सेंस से हम लोग क्या सोचे थे कि हम लोग को किस बच्चे को सबसे पहले सेट करने की कोशिश करनी है? मोस्ट फ्रीक्वेंट वाले को। हर स्टेप में मोस्ट फ्रीक्वेंट। हर स्टेप में आपको क्या चाहिए? जिसकी फ्रीक्वेंसी सबसे ज्यादा हो। ये क्या बोलता है? चिल्ला-चिल्ला के हिप। क्योंकि हर स्टेप में आपको कौन सा बच्चा चाहिए? जिसकी फ्रीक्वेंसी अभी के लिए सबसे ज्यादा हो। तो वो क्या बोलता है? हीप। हीप। एक हिप बना लीजिए। What is this? मैक्स हिप है।"
+    },
+    {
+      "start_time": 780.88,
+      "end_time": 813.03,
+      "text": "आपको क्या चाहिए? आपको क्या चाहिए? फ्रीक्वेंसी चाहिए। और उस किस बच्चे की फ्रीक्वेंसी है? किस बच्चे की फ्रीक्वेंसी है? क्या बोलता है? एक तो इंट और एक कैर। इसका क्या? पेयर। किस तरीके का ही मैक्स फ्रीक्वेंसी चाहिए? मैक्स ही। अगर दो बच्चों की फ्रीक्वेंसी सेम हो गई तो फर्क नहीं पड़ता है। किसी को भी ले लीजिए। तो दोनों को मैक्स रहने दीजिए। दोनों को फर्स्ट और सेकंड दोनों में मैक्स रहने देंगे। तो आपको किस तरीके का ही चाहिए? मैक्स ही। क्यों? हर स्टेप में मैक्सिमम फ्रीक्वेंसी का बच्चा चाहिए। इसीलिए हमको मैक्स हीट चाहिए। ठीक है? मैक्स हीट में स्टोर क्या होगा? फ्रीक्वेंसी और बच्चा।",
+      "source": "caption",
+      "english_text": "What do you want? What do you want? फ्रीक्वेंसी चाहिए। और उस किस बच्चे की फ्रीक्वेंसी है? किस बच्चे की फ्रीक्वेंसी है? What does he say? एक तो इंट और एक कैर। What about this? पेयर। किस तरीके का ही मैक्स फ्रीक्वेंसी चाहिए? मैक्स ही। अगर दो बच्चों की फ्रीक्वेंसी सेम हो गई तो फर्क नहीं पड़ता है। किसी को भी ले लीजिए। तो दोनों को मैक्स रहने दीजिए। दोनों को फर्स्ट और सेकंड दोनों में मैक्स रहने देंगे। तो आपको किस तरीके का ही चाहिए? मैक्स ही। Why? हर स्टेप में मैक्सिमम फ्रीक्वेंसी का बच्चा चाहिए। इसीलिए हमको मैक्स हीट चाहिए। Ok? मैक्स हीट में स्टोर क्या होगा? फ्रीक्वेंसी और बच्चा।"
+    },
+    {
+      "start_time": 813.04,
+      "end_time": 846.71,
+      "text": "फ्रीक्वेंसी और बच्चा। तो हम लोग क्या स्टोर करेंगे? थ्री और A और थ्री और B ये आपका क्या है? मैक्स ही बनके तैयार है। सही बात है? ओके। अब सीट बाय सीट भरने की कोशिश करते हैं। एक-एक करके क्या करते हैं कि सीट बाय सीट भरने की कोशिश करते हैं। वही वही पिछले बार भी कर रहे थे क्योंकि पीटी सर क्या करेंगे? सीट वन को भरने की कोशिश कीजिए। आइए। शीट वन को भरने की कोशिश कीजिए। एक वेरिएबल ले लेंगे सीट। वो सब इंप्लीमेंटेशन भी देखेंगे। हम बस आपको समझा रहे हैं कि सोचा कैसे? दिमाग में ऐसे सोचते हैं। सीट वन को भरने की कोशिश कीजिए। हर सीट में भरने की किसको कोशिश",
+      "source": "caption",
+      "english_text": "Frequency and child. So what will we store? Three and A and three and B What's this for you? Max is ready. That's correct? Ok. Now let's try to fill it seat by seat. What they do one by one is that they try to fill seat by seat. They were doing the same thing last time too because what would PT sir do? Try to fill seat one. Come. Try filling out Sheet One. Will take a variable seat. He will also see all the implementation. We are just explaining to you how to think? This is how we think in our minds. Try to fill seat one. Who is trying to fill every seat?"
+    },
+    {
+      "start_time": 846.72,
+      "end_time": 880.87,
+      "text": "करेंगे? मैक्स वाले को जिसकी फ्रीक्वेंसी मैक्सिमम हो। तो सीट वन में आपके पास पहला बच्चा हिप से पॉप के लिए। तो पहला बच्चा क्या आया? इसकी फ्रीक्वेंसी है तीन। और जो आपका चाइल्ड है वो चाइल्ड क्या है? ए है। ओके? हो गया। पहला आपका पॉप हो गया। ये आदमी यहां से पॉप हो गया। वेरी गुड। अब एक डिसीजन आता है। क्या आप इस बच्चे को इस सीट पे बिठा सकते हैं? क्या आप इस बच्चे को इस सीट पे बिठा सकते हैं? वो कैसे मालूम चलेगा? पिछले क्वेश्चन में बहुत आसान था। पिछले क्वेश्चन में जो",
+      "source": "caption",
+      "english_text": "will do? Max is the one whose frequency is maximum. So in seat one you have the first baby to pop from the hip. So what came the first child? Its frequency is three. And what is your child? Is a. Ok? Done. The first one is yours popped. This guy popped out of here. very good. Now a decision comes. Can you put this child in this seat? Can you put this child in this seat? How will he know? The previous question was very easy. which in the previous question"
+    },
+    {
+      "start_time": 880.88,
+      "end_time": 913.43,
+      "text": "रीऑर्गेनाइज्ड स्ट्रिंग था हमारा कहां गया? पिछला जो रीऑर्गेनाइज्ड स्ट्रिंग था उसमें ये करना बहुत आसान था। उसमें ये करना क्यों आसान था? क्योंकि आप एक वेरिएबल एक स्ट्रिंग का एरे लेके चलते थे। और आपको अगर देखना था ना कि मान लीजिए हम इंडेक्स थ्री पे इसको बिठा सकते हैं कि नहीं बिठा सकते हैं तो आप जस्ट चेक कर लेते थे कि जो मेरा रेस है ना रेस्ट इंडेक्स - 1 नॉट इक्वल टू ये वाला जो भी कररेक्टर हो तो आप बिठा सकते हैं लेकिन यहां पे उतना आसान नहीं है। यहां पे मान लीजिए आप किसी अभी तो शीट वन में तो आप बोलेंगे कि सर सीट वन में तो बिठा ही सकते हैं लेकिन मान लीजिए आप किसी सीट 10 में हैं। मान लीजिए जस्ट फॉर एग्जांपल आप किसी",
+      "source": "caption",
+      "english_text": "Where did our reorganized string go? This was very easy to do in the previous reorganized string. Why was it easy to do this? Because you used to take a variable as an array of strings. And if you wanted to see whether we can place it on index three or not, then you would have just checked that it is my race or not the rest index - 1 is not equal to whatever character this is, then you can place it but here it is not that easy. Here, suppose you are sitting in sheet one, you will say that sir, you can sit in seat one, but suppose you are in seat 10. Suppose just for example you"
+    },
+    {
+      "start_time": 913.44,
+      "end_time": 943.35,
+      "text": "सीट 10 पे हैं। आप किसी सीट 10 पे हैं और आपका गैप है फाइव। आपका गैप है फाइव। अब यहां पे आप A को बिठा सकते हैं कि नहीं बिठा सकते हैं ये देखने के लिए ना आपको सब देखना पड़ेगा। आपको 9 8 7 6 ये सब देखना पड़ेगा। क्यों? क्योंकि अगर मान लीजिए ए यहां पे बैठा हो तो आप 10 पे नहीं बिठा सकते हैं क्योंकि कितने का गैप होगा? तीन का ही गैप होगा। ओ सॉरी फाइव पे भी आप नहीं बिठा सकते हैं। मान लीजिए अगर ए फाइव पे बैठा हो तो क्या आप यहां पे 10 पे बिठा सकते हैं? नहीं बिठा सकते हैं।",
+      "source": "caption",
+      "english_text": "Is on seat 10. You are on seat 10 and your gap is five. Your gap is five. Now here you will not have to see everything to see whether A can be seated or not. You have to see all this 9 8 7 6. Why? Because if suppose A is sitting here then you cannot make him sit at 10 because how much gap will there be? There will be a gap of only three. Oh sorry, you can't even sit on five. Suppose if A is sitting on five, can you sit on 10 here? Can't sit."
+    },
+    {
+      "start_time": 943.36,
+      "end_time": 977.59,
+      "text": "क्यों? क्योंकि तब यहां पे कितने सीट का गैप रहेगा? चार सीट का। गैप होना कितना चाहिए? पांच सीट का। अगर कहीं भी ए बैठा हो यहां पे सीट नंबर पांच से लेकर सीट नंबर नाइन तक कहीं भी अगर ए बैठा हुआ है तो आप 10 पे नहीं बैठा सकते हैं। तो ये चेक करना तो हार्ड हो गया। अब इसके लिए क्या आपको लूप चलाना पड़ेगा प्रेजेंट इंडेक्स से लूप चलाइए गैप का और फिर चेक करिए तो ये तो बहुत दिक्कत हो जाएगी। इतना दिक्कत हम लोग नहीं देखना चाहते हैं अपनी जिंदगी में जिंदगी को आसान बनाए रखने के लिए। क्योंकि ये दिक्कत ये दिक्कत समझ में आ रही है ना आपको कि दिक्कत क्या है? इस सीट पे ये बैठ सकता है कि नहीं बैठ सकता है? कैसे पता चलेगा? अब आपको तो पीछे के गैप्स प्लस वन जो भी है पीछे के चार पांच",
+      "source": "caption",
+      "english_text": "Why? Because then how many seats will be left gap here? Four seater. What should be the gap? Of five seats. If A is sitting anywhere here, from seat number five to seat number nine, then you cannot sit on 10. So it became difficult to check this. Now for this, will you have to run a loop? If you run a loop from the present index and then check the gap, then this will be very problematic. We do not want to see so much trouble in our lives to keep life easy. Because you can understand this problem, what is the problem? Can he sit on this seat or not? How to know? Now you have to know the rear gaps plus one, whatever the rear four or five are."
+    },
+    {
+      "start_time": 977.6,
+      "end_time": 1010.47,
+      "text": "सीट जो भी देखना है वो देखना पड़ेगा। अगर वहां पे ए बैठा हुआ है तो यहां पे नहीं बैठ सकता है। तो लेकिन ये देखेंगे कैसे? हम लोग एक ट्रिक करेंगे। हम लोग एक छोटा सा चाल चलेंगे। हम लोग क्या करेंगे? एक रजिस्टर मेंटेन कर लेंगे। पेटी सर के पास एक कॉपी है। उसमें रजिस्टर मेंटेन करते हैं। हम लोग उस रजिस्टर में क्या लिखेंगे? हम लोग उस रजिस्टर में लिखेंगे क्या? कि ए और बी दोनों का एक हैश मैप बनाएंगे। इसको हम लोग बोलेंगे कि हम लोग का ये रजिस्टर है भैया। इसमें हम क्या लिखेंगे? ए अगले किस सीट पे बैठ सकता है? ए अगले किस सीट पे बैठ सकता है? मिनिमम किस सीट पे बैठ सकता है? तो शुरू में दुनिया जब शुरू हुई",
+      "source": "caption",
+      "english_text": "Whatever seat you want to see, you will have to see it. If A is sitting there then A cannot sit here. So but how will we see this? We will do a trick. We will do a little trick. What will we do? Will maintain a register. Patti Sir has a copy. Registers are maintained in it. What will we write in that register? Will we write in that register? That will create a hash map of both A and B. We will call this that this is our register, brother. What will we write in it? In which seat can A sit next? In which seat can A sit next? On which seat can Minimum sit? So in the beginning when the world began"
+    },
+    {
+      "start_time": 1010.48,
+      "end_time": 1044.309,
+      "text": "थी तो कौन सा पहला सीट है जहां ए बैठ सकता है? सीट नंबर वन पे बैठ सकता है। क्योंकि पहला सीट पे तो कोई भी बैठ सकता है ना टेक्निकली। बी भी किस सीट पे बैठ सकता है? ए पे। इसको रख लिया करिए। इसको इसको हम लोग बोलेंगे फ्री। ए किस सीट पे बैठ सकता है? बी किस सीट पे बैठ सकता है? किस मिनिमम सीट पे बैठ सकता है? मान लीजिए अब जब सीट 10 पे आए हैं उसी एग्जांपल पे सीट 10 पे आए हैं अब यहां पे ए को बिठाने की कोशिश कर रहे है लेकिन वो फ्री वाले में लिखा हुआ है कि ए ना 12 पे बैठ सकता है 12 से पहले किसी पे नहीं बैठ सकता है अब ये होगा कैसे वो भी देखेंगे लेकिन मान लीजिए कोई आपको बता दिया कि ए ना 12 पे बैठ सकता है 12 से कम पे किसी पे नहीं बैठ सकता है",
+      "source": "caption",
+      "english_text": "Then which is the first seat where A can sit? Can sit on seat number one. Because technically anyone can sit on the first seat. On which seat can B also sit? A pe. Keep it. We will call this and this free. On which seat can A sit? On which seat can B sit? What is the minimum seat one can sit on? Suppose now when you have come on seat 10, on the same example, you have come on seat 10, now you are trying to make A sit here but it is written in the free one that A can sit on seat 12 and cannot sit on anyone before 12. Now how will this happen, we will also see, but suppose someone told you that A can sit on seat 12 and cannot sit on anyone below 12."
+    },
+    {
+      "start_time": 1044.319,
+      "end_time": 1070.789,
+      "text": "तो आपको तुरंत पता चल जाएगा की 10 तो 12 से कम है नहीं बैठ सकता है अगर यहां लिखा होता की ए 10 पे बैठ सकता है तो बिलकुल बैठाइए अगर यहां पे लिखा होता एट पे ही बैठ सकता है मतलब ए सीट एट पे बैठ सकता है या एट से आगे किसी पे बैठ सकता है तो बिलकुल बिठाइए 10 इज़ &gt; 8 तो ये बिल्कुल हो सकता है। मान लीजिए शुरू में हर बच्चा किस सीट पे बैठ सकता है? मिनिमम वन पे बैठ सकता है। वन पे तो कोई भी बैठ सकता है दुनिया में। ठीक है? आइए तो सीट वन पे आपका फ्रीक्वेंसी है थ्री। चाइल्ड है ए।",
+      "source": "caption",
+      "english_text": "So you will immediately know that 10 is less than 12, it cannot sit. If it was written here that A can sit on 10, then absolutely sit. If it was written here, A can sit only on Eight, meaning A can sit on the seat at eight or can sit on any seat beyond Eight, then absolutely sit. If 10 is > 8, then it is absolutely possible. Suppose initially in which seat can each child sit? Can sit on minimum one. Anyone in the world can sit on a tree. Ok? Come, your frequency on seat one is three. Child is A."
+    },
+    {
+      "start_time": 1070.799,
+      "end_time": 1104.71,
+      "text": "अब किस सीट पे है? वन पे। क्या इस सीट वन पे वन बैठ ए बैठ सकता है? हां। क्यों? कैसे पता चला? फ्री ऑफ़ A क्या है? फ्री ऑफ़ A क्या है? वन। वन। देखिए फ्री ऑफ़ A वन है। तो क्या फ्री ऑफ़ A ग्रेटर दैन इक्वल टू ये सीट है? यस फ्री ऑफ ए फ्री ऑफ ए क्या ग्रेटर दैन ग्रेटर दैन है कि लेस दैन होगा जी लेस दैन इक्वल टू सॉरी लेस दैन इक्वल टू वो सीट होगा लेस दैन इक्वल टू सीट मतलब कि a वन पे बैठ सकता है मिनिमम क्या आप जिस सीट पे बिठाने का कोशिश कर रहे हैं वो इससे बड़ा है या इससे इक्वल है यस इससे इक्वल है",
+      "source": "caption",
+      "english_text": "Which seat are you on now? On one. Can one sit on one seat at a time? Yes. Why? How did you know? What is free of A? What is free of A? Forest. Forest. See, free of A is one. So is Free of A Greater Than Equal to This Seat? Yes Free of a Free of a What is greater than greater than that Less than would be Yes Less than equal to Sorry Less than equal to That seat would be less than equal to Two seat means that a can sit on one Minimum Is the seat you are trying to sit on is bigger than this or equal to this Yes is equal to this"
+    },
+    {
+      "start_time": 1104.72,
+      "end_time": 1137.83,
+      "text": "वेरी गुड अब आप क्या करेंगे अब आप क्या करेंगे बिठा देंगे सीट पे बिठा देंगे सीट पे तो क्या कैसे बिठाएंगे सबसे पहले तो इस सीट वन पे a को आप मान लीजिए बिठा दिए सबसे पहले तो a की एक फ्रीक्वेंसी ेंसी कम करनी पड़ेगी। A की एक फ्रीक्वेंसी कम करनी पड़ेगी। और मान लीजिए ये फ्रीक्वेंसी कम करने के बाद अगर ये ज़ीरो हो जाता तो उसको हम लोग हीट में पुश नहीं करते। क्योंकि ज़ीरो हो गया ना? तो A खत्म। लेकिन फ्रीक्वेंसी कम करने के बाद ये टू है। वापस इसको हिट में पुश करेंगे। वापस इसको हिट में पुश करेंगे। क्या करेंगे? टू और A वापस इसको हिट में पुश करेंगे और आगे चल देंगे। आगे चल देंगे। सीट वन पे आप A को",
+      "source": "caption",
+      "english_text": "Very good, what will you do now? What will you do now? Will you make us sit on the seat? What will you make us sit on the seat? How will you make us sit? First of all, assume that a has been made to sit on this seat one. First of all, you will have to reduce the frequency of a by one. One frequency of A will have to be reduced. And suppose if it had become zero after reducing the frequency, then we would not have pushed it in the heat. Because it became zero, right? So A is finished. But after reducing the frequency it is two. Will push it back into hit. Will push it back into hit. What to do? Two and A will push it back into hit and move forward. Will go ahead. You get A on seat one."
+    },
+    {
+      "start_time": 1137.84,
+      "end_time": 1169.99,
+      "text": "बिठा चुके हैं। सीट वन पे हां एक और बात। एक और बात। अब सीट वन पे ए बैठ चुका है। अब सीट वन पे ए बैठ चुका है। सीट वन पे क्या बैठ चुका है? ए। ए अगला कौन सा सीट पे बैठ सकता है? क्या ये सीट टू पे बैठ सकता है? नहीं। कितने का गैप होना चाहिए? दो का। ना। क्या ये सीट थ्री पे बैठ सकता है? नहीं। कितने का गैप होना चाहिए? दो का नहीं है। क्या ये सीट फोर पे बैठ सकता है? यस। ये सीट फोर पे बैठ सकता है। क्योंकि अगर यहां पे आप ए को बिठाएंगे तो दो का गैप होगा। तो अगला कौन सा मिनिमम सीट है जिस पे ये बैठ सकता है? जिस शीट पे आप अभी",
+      "source": "caption",
+      "english_text": "Have seated. Yes, one more thing on seat one. One more thing. Now A is sitting on seat one. Now A is sitting on seat one. What is sitting on seat one? A. Which seat can A sit next? Can it sit on seat two? No. How much gap should there be? Of two. No. Can it sit on seat three? No. How much gap should there be? It is not for two. Can it sit on seat four? Yes. It can sit on seat four. Because if you seat A here then there will be a gap of two. So what is the next minimum seat it can sit on? The sheet you are currently on"
+    },
+    {
+      "start_time": 1170.0,
+      "end_time": 1204.07,
+      "text": "हैं शीट = 1 + गैप + गैप + 1 = 4 तो हम लोग क्या करेंगे? ये जो हम लोग रजिस्टर बनाए हुए हैं ना फ्री वाला ये ये फ्री वाला रजिस्टर जो बनाए हुए हैं इसको भी अपडेट कर देंगे। इसको क्या बोलेंगे? फ्री ए इक्वल टू जो भी इसमें अभी की वैल्यू थी जो भी इसमें अभी अभी की वैल्यू थी प्लस गैप + 1 प्लस गैप + 1 तो a इस पे बैठ सकता है। उसके बाद उसके बाद एक और काम बहुत इंपॉर्टेंट जो हम लोग बोल रहे हैं करना।",
+      "source": "caption",
+      "english_text": "Sheet = 1 + gap + gap + 1 = 4 So what should we do? We will update this free register which we have maintained. What will we call this? Free a is equal to whatever the current value was plus gap + 1 plus gap + 1 so a can sit on it. After that, do one more thing which is very important as we are saying."
+    },
+    {
+      "start_time": 1204.08,
+      "end_time": 1236.31,
+      "text": "ये जो आप इसका आपको पता कैसे चला था कि शीट वन पे ए को बिठाना सही रहेगा या नहीं? ये फ्री वाला डायरी पढ़ के। ये डायरी को अपडेट भी तो करना पड़ेगा। आप वन को कहां बिठा ए को कहां बिठा दिए हैं? सीट नंबर वन पे। अब अगर ये वन पे बैठ चुका है तो ये कहां बैठ पाएगा? ये अगर वन ए जो है वो अगर वन पे बैठ चुका है। आप इसको सीट वन पे ए को बिठा दिए हैं। क्या ये सीट टू पे बैठ सकता है? नहीं बैठ सकता है। क्यों? क्योंकि गैप होना चाहिए दो का नहीं बैठ बिठा सकते हैं। सीट थ्री पे ना। सीट फोर पे यस आप यहां पे ए को बिठा सकते हैं।",
+      "source": "caption",
+      "english_text": "How did you know whether it would be right to put A on sheet one or not? Read this free diary. This diary will also have to be updated. Where have you placed One and where have you placed A? On seat number one. Now if he has already sat on the forest, then where will he be able to sit? This agar one is the one who has sat on the agar one. You have made him sit on seat one. Can it sit on seat two? Can't sit. Why? Because there should be a gap, two cannot sit. On seat three. Seat Four Pay Yes you can seat Pay A here."
+    },
+    {
+      "start_time": 1236.32,
+      "end_time": 1263.19,
+      "text": "बिठा सकते हैं। बिठाना नहीं है। मिनिमम किस सीट पे बिठा सकते है? फोर पे बिठा सकते हैं। क्यों? क्योंकि दो का गैप होगा। तो क्या होगा? जिस सीट पे a को आप अभी बिठाए हैं वन प्लस गैप प्लस गैप क्योंकि उतनी कुर्सियां छोड़ के प्लस वन फोर पे तो जाते-जाते आपको क्या करना है? फ्री ए जो भी आपका बच्चा है इज़ इक्वल टू जिस भी पे आप बिठाए हैं प्लस गैप + 1 तो ये क्या हो जाएगा? फोर। A अगला कहां बैठ सकता है?",
+      "source": "caption",
+      "english_text": "Can sit. Don't want to sit. What is the minimum seat on which one can sit? Can sit on fours. Why? Because there will be a gap of two. So what will happen? The seat on which you have just seated a is one plus gap plus gap because after leaving that many chairs, what do you have to do while going to plus one four? Free A, whatever your child is, is equal to whatever you have placed on it, plus gap + 1, so what will this become? Four. Where can A sit next?"
+    },
+    {
+      "start_time": 1263.2,
+      "end_time": 1288.87,
+      "text": "फोर। ये हम लोग को काम आएगा जब हम लोग आगे जाएंगे। हम लोग जब C2 पे चेक करेंगे ना तब काम आएगा। आइए, आगे बढ़ते हैं। शीट वन का काम हो गया। सीट टू पे बढ़ते हैं। सीट टू पे देखते हैं क्या करेंगे। कुछ तो करेंगे ही। आइए देखते हैं। शीट नंबर दो पे। हर बार किसको बैठाने की कोशिश करनी है? सबसे ज्यादा फ्रीक्वेंसी वाले को। किसकी है? 3B। टू की नहीं है। ah a की नहीं है। बी की है। आइए। इसको पॉप करिए और देखते हैं।",
+      "source": "caption",
+      "english_text": "Four. This will be useful to us when we go ahead. It will be useful when we check on C2. Come, let's move ahead. Sheet one is done. Seat to pay increases. Let's see what Seat Two Pay will do. Will do something. let's watch. On sheet number two. Whom to try to seat each time? The one with the highest frequency. Whose is it? 3B. There is no two key. ah is not of a. It is from B. Come. Pop it and let's see."
+    },
+    {
+      "start_time": 1288.88,
+      "end_time": 1321.75,
+      "text": "तो क्या मिला आपको? आपकी फ्रीक्वेंसी है तीन। और आपका जो चाइल्ड है या तो जो आपका टास्क है वो क्या है? B क्या आप सीट टू पे बी को बिठा सकते हैं? कैसे पता चलेगा? बी किस सीट पे मिनिमम बैठ सकता है? वन पे। आप किस पे हैं भाई? टू पे। बिल्कुल बिठा सकते हैं। बिल्कुल तबीयत से बिठा सकते हैं। कैसे पता चला? आपका जो फ्री का बी है, ये क्या है? लेस दैन इक्वल टू सीट है। तो बिल्कुल बिठा सकते हैं। तो बिठाइए। तो आप मान लीजिए कि आप सीट टू पे बी को बिठा चुके हैं। बहुत अच्छी बात है। क्या करेंगे? इसका फ्रीक्वेंसी कम कर देंगे।",
+      "source": "caption",
+      "english_text": "So what did you get? Your frequency is three. And what is your child or your task? B Can you seat to pay B? How to know? On which seat can B sit minimum? On one. What are you on brother? To pe. Can absolutely sit. Can make you sit completely comfortably. How did you know? What is your free B? Less than equal to seat. So you can definitely sit. So sit down. So let us assume that you have seated Seat 2 Pay B. very good thing. What to do? Will reduce its frequency."
+    },
+    {
+      "start_time": 1321.76,
+      "end_time": 1354.549,
+      "text": "अगर इसका फ्रीक्वेंसी ज़ीरो हो जाता, हीट में पुश करने की जरूरत नहीं थी। लेकिन इसका फ्रीक्वेंसी कम नहीं हुआ जीरो नहीं हुआ तो मतलब बी अभी भी बचा हुआ है तो आपको फिर से पुश करना पड़ेगा आइए पुश कर दीजिए टू बी और और सबसे इंपॉर्टेंट बात जाते-जाते आप बी को कहां बिठाए हैं सीट नंबर दो पे बी को कहां बिठाए हैं सीट नंबर दो पे यहां पे बी बैठ चुका है क्या ये सीट थ्री पे बैठ सकता है नहीं गैप होना चाहिए सीट फोर पे नहीं गैप होना चाहिए सीट फाइव पे हां हो सकता है कैसे पता चला टू जिसपे आप अभी बिठाएं बी को प्लस गैप + 1 2 + 2 +",
+      "source": "caption",
+      "english_text": "If its frequency became zero, there would be no need to push in the heat. But its frequency has not reduced, if it has not become zero, then it means B is still left, so you will have to push again. Let's push to B. And the most important thing, while going on, where have you made B sit on seat number two? Where have you made B sit on seat number two? Is B already seated on seat number two? Can he sit on seat three? No, there should be a gap. There should not be a gap on seat four. There should be a gap on seat five. Yes, how can I know that you are sitting on seat number two? Place B plus gap + 1 2 + 2 +"
+    },
+    {
+      "start_time": 1354.559,
+      "end_time": 1382.149,
+      "text": "1 5 तो क्या करेंगे? फ्री बी को अपडेट कर देंगे। कैसे? फ्री बी इक्वल टू जो भी आप जिस सीट पे बिठाए हैं दूसरे सीट पे प्लस गैप प्लस वन। तो बी अब अगला कहां बैठ सकता है? फाइव पे। यहां तक तो बहुत अच्छा था। दोनों सीट पे आप दोनों बंदों को बिठा दिए। ए और बी दोनों का काम बन गया। अगले सीट से सीट थ्री से कॉम्प्लेक्स हो जाएगा। अब आप कान नाक खोल के देखिएगा। अब क्योंकि कॉम्प्लेक्स हो जाएगा आप देखिए।",
+      "source": "caption",
+      "english_text": "1 5 So what to do? Will update Free Bee. How? Free be equal to whatever seat you are seated on, plus gap plus one on the other seat. So where can B sit next? On five. Till now it was very good. You made both the people sit on both the seats. The work of both A and B was done. The next seat will become complex from seat three. Now you will see with your ears and nose open. Now because it will become complex, you see."
+    },
+    {
+      "start_time": 1382.159,
+      "end_time": 1415.75,
+      "text": "अब देखिएगा। अब आप नहीं बैठा पाएंगे किसी को। देखिए आइए ट्राई करते हैं। शीट थ्री। शीट थ्री पे हम लोग आ गए हैं। पहले पे ए बैठा, बी बैठा। अब हम इसको बिठाएंगे। हिप से किसको निकालेंगे अब? हिप से किसको निकालेंगे? मैक्स के हिसाब से अगर देखें तो दोनों की फ्रीक्वेंसी तो सेम है। A और B में से कौन बड़ा है? बी बड़ा है। तो बी ये वाला निकल जाएगा। तो इसको निकाल लीजिए। इस बच्चे को निकालिए और बिठाने की कोशिश करिए। आइए। क्या पता चला? एक बच्चा है जिसकी दो बच्चे बाकी हैं। और चाइल्ड किस प्रकार का है? ये बी का है। अच्छा। आप क्या इसको सीट नंबर तीन पे बिठा सकते हैं?",
+      "source": "caption",
+      "english_text": "Now we will see. Now you won't be able to make anyone sit. Look let's try. Sheet three. We have reached sheet three. A sits on the first floor, B sits on the first. Now we will install it. Who will be removed from the hip now? Whom will you remove from the hip? If we look at it according to max, the frequency of both is same. Who is elder between A and B? B is bigger. So B, this one will come out. So take this out. Take out this child and try to make him sit. Come. What did you find out? There is one child who has two children left. And what type of child is it? This is from B. Good. Can you make it sit on seat number three?"
+    },
+    {
+      "start_time": 1415.76,
+      "end_time": 1450.07,
+      "text": "नहीं बिठा सकते हैं। कैसे पता चला? फ्री बी फ्री ऑफ़ बी पांच है। बी को आप पांच से कम के किसी सीट पे नहीं बिठा सकते हैं। ग्रेटर देन आपका सीट है। नहीं बिठा सकते हैं। फंस गए आप। फंस गए ना? अब तो नहीं बिठा सकते। अब क्या करेंगे? पिछले बार क्या करते थे? रिऑर्गनाइज में। पिछले बार हम लोग देखते थे कि अगर इसको नहीं बिठा सकते हैं ना अगला मैक्स निकाल लेते थे। उसको बिठा देते थे और इसको वापस पुश कर देते थे। यही करते थे पिछले बार अगर आप लोग वो नहीं देख के आए हैं तो देख लीजिएगा पिछले रिऑर्गनाइज स्ट्रिंग में क्योंकि वहां पे अल्टरनेट था तो अगर ए नहीं बैठ सकता है तो बी पक्का बैठ सकता होगा वो",
+      "source": "caption",
+      "english_text": "Can't sit. How did you know? Free B is free of B is five. You cannot seat B on any seat less than five. Greater than your seat. Can't sit. You are stuck. Are you stuck? Can't make it sit now. What will you do now? What did you do last time? In reorganize. Last time we used to see that if we could not seat him then we would take out the next Max. They used to make him sit and push him back. This is what they used to do last time. If you guys haven't seen it then check it out in the previous rearranged string because there was an alternate there so if A can't sit then B can definitely sit."
+    },
+    {
+      "start_time": 1450.08,
+      "end_time": 1483.269,
+      "text": "होता था क्योंकि तो हम लोग क्या करते थे ना एक और मैक्स निकाल लेते थे कोई भी होगा और उसको बिठा देते थे और इसको अंदर घुसा देते थे लेकिन थोड़ी देर के लिए थोड़ी देर के लिए मान लीजिए ना कि हम इस हम इस आदमी को इस 2B को कहीं पे भेज दिए इसको बोले कि तुम जाके कोने में खड़े हो जाओ तुमको तुम लोग को हम देखते हैं अभी देखते हैं हिप में मत पुश करिएगा हिप में पुश करेंगे तो फिर मैथ्स में ए निकल जाएगा जाएगा तो फिर कुछ नहीं हो पाएगा। ठीक है? इसको बोलिए कि जाओ भाई तुम थोड़ा कोने में खड़े रहो टू और बी को कुछ नहीं किए इसमें। कोई चेंज नहीं किए। पता चला कि नहीं बैठा सकते हैं तो इसको बोले कि थोड़ा देर कोना में खड़ा रहो। तुमको हम अभी देखते हैं तुम्हारे",
+      "source": "caption",
+      "english_text": "It used to happen because what we used to do was take out another Max, whoever it may be, and make him sit and push him in, but for a while, for a while, let's say we sent this guy, this 2B, somewhere and told him that you go and stand in the corner, we are watching you guys, let's watch right now, don't push in the hip, if you push in the hip, then you will get A in Maths, then nothing will be able to happen. Ok? Tell him to go brother, you stand in the corner for a while, T and B did not do anything in this. No changes were made. When it was found that he could not sit, he was asked to stand in the corner for a while. we see you now your"
+    },
+    {
+      "start_time": 1483.279,
+      "end_time": 1508.63,
+      "text": "हैंडल करते हैं तुमको। अगला मैक्स निकालिए हिप से। अगला मैक्स निकाले क्या निकल गया? 2a आपका हिप हो गया खाली। आपका हिप हो गया खाली। क्या 2a इसका मतलब इसकी फ्रीक्वेंसी कितनी है? दो। क्या चाइल्ड है ये? ए चाइल्ड है। क्या आप ए को सीट नंबर तीन पर बिठा सकते हैं? नहीं बिठा सकते हैं। ए फोर पर बैठेगा। फोर से कम में नहीं बैठ सकता है। ए भी नहीं बैठ सकता है। अब आप फंस गए।",
+      "source": "caption",
+      "english_text": "Let's handle you. Next take out the max from the hip. What is the next Max release? 2a Your hip is empty. Your hip is empty. Does 2a mean what is its frequency? Two. What child is this? A is a child. Can you make A sit on seat number three? Can't sit. Will sit on A four. Can't sit in less than four. Even A can't sit. Now you are stuck."
+    },
+    {
+      "start_time": 1508.64,
+      "end_time": 1543.029,
+      "text": "पिछले में क्या होता था? कोई ना कोई तो बैठ ही जाता था। दोनों नहीं बैठ सकते हैं। अब आप इस सीट को किसी को नहीं दे सकते हैं। ना ए को ना बी को। ये सीट आपका खाली जाने वाला है। अब आप क्या करेंगे? अब तो फंस गए। अब तो दोनों को निकाले। फंस गए। कुछ है नहीं। तो फिर आप क्या करेंगे? अब देखते हैं। इसको भी बोलिए कि तुम भी जाओ कोने में खड़े हो जाओ। क्या कर सकते हैं? तो कुछ इसको बोले तुम भी जाओ भाई कोने में खड़े हो जाओ। कहीं भी कोना होगा। बोले तुम कोने में खड़े रहो। हाथ ऊपर करके अभी तुम लोग को हैंडल करते हैं। अगला निकालने की कोशिश करिए। लेकिन अगला निकालने की कोशिश किया। आपका हिप खत्म हो चुका है। आपका हिप एम्प्टी हो चुका है। अब आप बाहर निकल गए।",
+      "source": "caption",
+      "english_text": "What happened in the past? Someone or the other would always sit. Both cannot sit. Now you cannot give this seat to anyone. Neither to A nor to B. This seat is going to be vacant for you. What will you do now? Now we are stuck. Now remove both of them. Stuck. There is nothing. Then what will you do? Now let's see. Tell him also to go and stand in the corner. What can be done? So some told him, you too go brother and stand in the corner. There will be a corner somewhere. Said you stand in the corner. Hands up let's handle you guys right now. Try to figure out the next one. But tried to figure out the next one. Your hip is gone. Your hip is empty. Now you are out."
+    },
+    {
+      "start_time": 1543.039,
+      "end_time": 1576.47,
+      "text": "अब आप बाहर निकल गए। देखिए हुआ क्या? सीट नंबर थ्री पे क्या आप किसी भी आदमी को बिठा पाए? नहीं बिठा पाए। क्योंकि आप ए को निकाले क्योंकि दो ही लोग थे ना। पूरे क्लास में दो ही लोग हैं गिन के। ए को निकालें। ए नहीं बैठ सकता है। सॉरी बी बी को निकाले बी नहीं बैठ सकता है। ए को निकाले ए भी नहीं बैठ सकता है। अब हिप में कोई बचा नहीं है करने के लिए कुछ भी। हिप में कोई भी आदमी कुछ भी काम करने के लिए नहीं बचा हुआ है। अब आप क्या करेंगे? इसका यही मतलब है ना कि ये सीट आपका खाली जाने वाला है। सीट नंबर थ्री आइडल जो हम लोग ऊपर देखे थे ना सीट नंबर थ्री खाली जाता था। कहीं पे दिखाए होंगे। ये देखिए ऊपर",
+      "source": "caption",
+      "english_text": "Now you are out. See what happened? Were you able to seat any person on seat number three? Couldn't sit. Because you took out A because there were only two people, right? There are only two people in the entire class. Remove A. A cannot sit. Sorry BB, B can't sit. Remove A and A cannot sit. Now there is nothing left to do in Hip. There's no man left to do anything at the hip. What will you do now? This means that this seat is going to be vacant for you. The seat number three idol that we had seen above was vacant. Must have been shown somewhere. see this above"
+    },
+    {
+      "start_time": 1576.48,
+      "end_time": 1610.47,
+      "text": "वाले में भी सीट नंबर थ्री खाली जाता था। लेकिन लेकिन लेकिन ठीक है। खाली जाए तो कोई उससे दिक्कत नहीं है। खाली जाए तो ठीक है। खाली जाए। लेकिन जो आप इन दो लोगों को निकाल के कोने में खड़ा किए हैं। ये जो आप दो लोगों को निकाल के कोने में खड़ा किए हैं ना इनको वापस हिप में पुश करना पड़ेगा। इनको वापस हिप में पुश करना पड़ेगा क्योंकि ये बचे हुए हैं। आप इनको निकाल के कहीं पे छोड़ नहीं दे सकते हैं कि तुम लोग जाओ अब तुम लोग को नहीं देखेंगे। नहीं इनको बिठाना है ना। तो आपको इसके बाद मान लीजिए ये जो कोना है ना ये कोई वेक्टर या एरे ऑफ़ पेयर्स ये बस एक कोना है जहां पे आप उन लोगों को निकाल के जो लोग नहीं बैठ पाते हैं उनको स्टोर करते हैं थोड़ी देर के लिए कि तुम लोग थोड़ी",
+      "source": "caption",
+      "english_text": "Even in that car, seat number three was vacant. But but but okay. If it goes empty, there is no problem with it. It's okay if it goes empty. Go empty. But you have thrown out these two people and made them stand in the corner. These two people you have thrown out and made to stand in the corner will have to be pushed back into the hip. These will have to be pushed back into the hip as they are left. You cannot take them out and leave them somewhere and then go and not see them again. No, we have to make them sit, right? तो आपको इसके बाद मान लीजिए ये जो कोना है ना ये कोई वेक्टर या एरे ऑफ़ पेयर्स ये बस एक कोना है जहां पे आप उन लोगों को निकाल के जो लोग नहीं बैठ पाते हैं उनको स्टोर करते हैं थोड़ी देर के लिए कि तुम लोग थोड़ी"
+    },
+    {
+      "start_time": 1610.48,
+      "end_time": 1644.31,
+      "text": "देर के लिए स्टोर हो जाओ। भी आ रहे हैं। ये करने के बाद ये शीट करने के बाद आपको इस पूरे डेटा स्ट्रक्चर को देखना पड़ेगा इस वेक्टर को। और इसमें जो जो है एज़ इट इज़ यहां पे घुसाना पड़ेगा। एज़ इट इज़ हिप में घुसाना पड़ेगा। इन दोनों को 2B 2A दोनों को यहां घुसा दीजिए। 2B 2A दोनों को यहां यहां घुसा दीजिए। एज़ इट इज़ घुसा दीजिए। सीट नंबर थ्री का काम हो गया। सीट नंबर थ्री पे कोई नहीं बैठ पाया। फर्क नहीं पड़ता है ना? बैठे ना बैठे। एज़ इट इज़ घुसा दीजिए। इस राउंड में कुछ भी चेंज नहीं हुआ। इस राउंड में ना ए और बी का फ्री बदला, ना ए और बी का फ्रीक्वेंसी बदला। मतलब ये राउंड पूरा बेकार हो गया",
+      "source": "caption",
+      "english_text": "Get stored for a while. are also coming. After doing this, after doing this sheet, you will have to see this entire data structure, this vector. And whatever is in it will have to be inserted here as it is. As it is will have to be inserted into the hip. Insert both 2B and 2A here. Insert both 2B and 2A here. Enter it as it is. The work on seat number three is done. No one could sit on seat number three. It doesn't matter, right? Sitting or not sitting. Enter it as it is. Nothing changed in this round. In this round neither the free exchange of A and B nor the frequency of A and B changed. This means this round was completely wasted."
+    },
+    {
+      "start_time": 1644.32,
+      "end_time": 1670.789,
+      "text": "है। शीट नंबर थ्री आपका खाली चला गया। आगे आइए। आगे आइए। सीट नंबर फोर पे आइए। शीट नंबर फोर पे आइए। उम्मीद करते हैं कि ये समझ में आया होगा क्योंकि ये सीट पूरा खाली चला गया। इसीलिए हम लोग ये कोना वाला काम किए हैं कि जिसको जो नहीं बैठ पा रहा है ना उसको बोलेंगे कोने में चले जाओ तुम। ठीक है? बाद में तुमको इंसर्ट कर देंगे। पिछले में भी यही किए थे। पिछले में भी एक तरीके से आप सोचे तो यही किए थे कि जिस बच्चे को नहीं बैठा पाते हैं उसको बोले कि थोड़ी देर के लिए कहीं और रहो। तुमको वापस हम इंसर्ट कर रहे हैं। अभी अभी कर देंगे।",
+      "source": "caption",
+      "english_text": "Is. Your sheet number three went blank. Come forward. Come forward. Come to seat number four. Come to sheet number four. Hope this was understood because this seat went completely vacant. That's why we have done this corner thing where we tell anyone who is unable to sit, go to the corner. Ok? Will insert you later. Had done the same in the past also. In the past too, if you had thought about it, you had done the same thing by telling the child who could not sit, to stay somewhere else for a while. We are inserting you back. Will do it right now."
+    },
+    {
+      "start_time": 1670.799,
+      "end_time": 1699.59,
+      "text": "ठीक है? शीट फोर पे आइए। शीप में क्या है बच्चा? टू और बी। निकालिए। फ्रीक्वेंसी = 2 चाइल्ड = b। ये बच्चा निकल गया आपका। ठीक है? क्या आप सीट नंबर फोर पे बी को बिठा सकते हैं? नहीं बिठा सकते हैं। क्योंकि ये किस पे किस पे बैठेगा? फाइव पे बैठेगा। फोर पे नहीं बिठा सकते हैं। तो इसको तो नहीं बिठा सकते हैं। क्या करेंगे? बोलेंगे भाई तुम कोने में चले जाओ। तुम कोने में चले जाओ। तुम दोनों जो भी हो तुम टू बी तुम जाओ कोने में।",
+      "source": "caption",
+      "english_text": "ok? Come to sheet four. What's the kid in the sheep? To and B. Take it out. Frequency = 2 child = b. This child is yours. Ok? Can you seat B on seat number four? Can't sit. Because on whom will it sit? Will sit on five. Can't sit on four. So we can't make him sit. What to do? Will say, brother, you go to the corner. You go to the corner. Whatever you two are, you two go to the corner."
+    },
+    {
+      "start_time": 1699.6,
+      "end_time": 1733.43,
+      "text": "इसको यहां पे कोने में स्टोर कर दिए। ठीक है? ये आदमी हिप से निकल चुका है। अगले बच्चे को निकालिए। उसको ट्राई कीजिए क्योंकि हम लोग जिसका फ्रीक्वेंसी सबसे ज्यादा है उसको ट्राई कर रहे हैं निकालने का। अगले को ट्राई कीजिए। फ्रीक्वेंसी = 2 और चाइल्ड = a। चाइल्ड = a। ये आदमी भी निकल चुका है हिप से। ठीक है? क्या a को यहां बिठा सकते हैं? हां, a को यहां बिठा सकते हैं। वेरी नाइस। क्यों? a का फ्री सॉरी। a का फ्री कितना है? फोर। फोर पे फोर बैठ सकता है। तो बिठा दीजिए। सबसे पहले क्या करिए? मान के चलिए कि शीट नंबर फोर पे ये बैठ गया। शीट नंबर फोर पे ये बैठ गया। इसका फ्रीक्वेंसी हो गया वन। अब",
+      "source": "caption",
+      "english_text": "Stored it here in the corner. Ok? This guy is beyond hip. Take out the next child. Try it because we are trying to remove the one whose frequency is highest. Try the next one. Frequency = 2 and child = a. Child = a. This guy is also out of the hip. Ok? Can a be placed here? Yes, a can be placed here. Very nice. Why? A's free sorry. How much is free for a? Four. Can sit four on four. So please sit down. What to do first? Let us assume that it sits on sheet number four. It sat on sheet number four. Its frequency became one. now"
+    },
+    {
+      "start_time": 1733.44,
+      "end_time": 1767.669,
+      "text": "ये ज़ीरो नहीं है तो इसको एज़ इट इज़ ही पुश कर दीजिए। वन ए को पुश कर दीजिए। 1A को यहां पुश कर दीजिए। और किस सीट पे आप बिठाए हैं? फोर पे। a की अगली फ्री सीट कौन सी होनी चाहिए? फोर प्लस गैप। 4 + 2 + 1 7 ओके। हो गया। अब आगे आ जाइए। ये हो गया ये सीट फोर का काम हो गया ना लेकिन इसके बाद क्या नहीं भूलना है ये हम सीट वन और सीट टू में क्यों नहीं बताए थे क्योंकि उसमें कोई कोने में गया ही नहीं था पहला ही बंदा बैठ गया था लेकिन इसके बाद आपको देखना है कोने में कोई खड़ा है क्या हां 2b खड़ा है 2B पहले निकला था 2b अभी नहीं गया है कहीं",
+      "source": "caption",
+      "english_text": "If it is not zero then push it as it is. Push one A. Push 1A here. And on which seat have you sat? On four. Which should be the next free seat of a? Four plus gap. 4 + 2 + 1 7 OK. Done. Now come forward. This is done, the work of seat four is done, but what should not be forgotten after this, why did we not tell this about seat one and seat two because no one had gone to the corner in that, the first person had sat down, but after this you have to see, is anyone standing in the corner? Yes, 2b is standing, 2B had come out earlier, 2b has not gone anywhere yet."
+    },
+    {
+      "start_time": 1767.679,
+      "end_time": 1801.35,
+      "text": "पे 2b को एज इट इज़ घुसा दीजिए एज इट इज़ घुसा दीजिए टू बी का कोई प्रोसेसिंग नहीं हुआ है टू बी का ना फ्री खत्म हुआ ना उसका फ्रीक्वेंसी खत्म हुआ एज इट इज़ उसको अंदर डाल दीजिए अगले आइए फिर से आइए इसमें हम इतना टाइम ले रहे हैं क्योंकि बहुत इंपॉर्टेंट अंडरस्टैंडिंग है बनाने के लिए। ठीक है? इसीलिए हम इतना मेहनत करके ड्राई रन कर रहे हैं। सीट नंबर किस पे बिठाए थे? फाइव। सीट नंबर फाइव पे क्या आदमी निकलेगा? 2b निकलेगा। फ्रीक्वेंसी = 2 चाइल्ड = b क्या बी यहां बैठ सकता है फाइव पे? हां, बैठ सकता है। क्योंकि अगर आपको याद हो तो ये",
+      "source": "caption",
+      "english_text": "Insert 2b as it is. Insert it as it is. No processing has been done on 2B. Neither the free space of 2B has ended nor its frequency has finished. Insert it as it is. Next, come again. We are taking so much time in this because it is a very important understanding to make. Ok? That's why we're working so hard and doing a dry run. On whose seat number were you given? Five. What person will sit on seat number five? 2b will come out. Frequency = 2 Child = b Can B sit here on five? Yes, can sit. Because if you remember, this"
+    },
+    {
+      "start_time": 1801.36,
+      "end_time": 1834.789,
+      "text": "फाइव था। बिठा दीजिए। बिठा दीजिए। मतलब इसका फ्रीक्वेंसी कम कर दीजिए। वन बी को एज़ इट इज़ घुसा दीजिए। वन B को एज़ इट इज़ घुसा दीजिए। अभी तक याद कीजिए कोई भी कोने में नहीं खड़ा हुआ है। जो पहला बंदा निकला वही बैठ गया था। ठीक है? फ्री बी फ्री बी को अपडेट करना पड़ेगा। अगर आप फाइव पे इसको बिठाए हैं तो अगला किस पे बैठ सकता है? 5 + 2 का गैप 7 + 1 एट पे बैठ सकता है। इसको एट कर दीजिए। एट कर दीजिए। खत्म हो गई बात। क्या कोई बंदा कोने में खड़ा हुआ था इस राउंड में? इस सीट पे क्या कोई कोने में था? नहीं था। पहला ही था निकल गया। कुछ मत कीजिए। कोने में कोई है नहीं।",
+      "source": "caption",
+      "english_text": "It was five. Sit down. Sit down. Meaning reduce its frequency. Insert One B As It Is. Insert One B As It Is. Remember, no one is standing in the corner yet. The first person who came out sat down. Ok? Free Bee Free Bee needs to be updated. If you have made him sit on five, then who can sit next? The gap of 5+2 can sit at 7+1. Please note this. Atte it. The matter is over. Was anyone standing in the corner in this round? Was there anyone in the corner on this seat? Wasn't. The first one was gone. Don't do anything. There is no one in the corner."
+    },
+    {
+      "start_time": 1834.799,
+      "end_time": 1868.789,
+      "text": "तो कुछ है नहीं करने के लिए। आगे बढ़ जाइए। आगे बढ़ जाइए। आगे बढ़िए। शीट नंबर सिक्स। शीट नंबर सिक्स पर क्या निकलेगा? वन बी। वन बी फिर से निकालिए। फ्रीक्वेंसी = 1 और चाइल्ड = B इसको पॉप कर दिए। अब देखिए क्या आप सिक्स पे B को बिठा सकते हैं? नहीं बिठा सकते हैं। क्यों? B एट से कम में किसी में नहीं बैठ सकता है। क्या करेंगे? बोलेंगे तुम जाओ कोने में। थोड़ी देर के लिए। थोड़ी देर के लिए। कोने में जाओ भैया। तुमको हम अभी हैंडल करेंगे थोड़ी देर में। अगला बच्चा देखिए जिसके पास सबसे ज्यादा फ्रीक्वेंसी",
+      "source": "caption",
+      "english_text": "So there is nothing not to do. Go ahead. Go ahead. Go ahead. Sheet number six. What will appear on sheet number six? One B. Take out One B again. Frequency = 1 and child = B popped it. Now see if you can fit B on six? Can't sit. Why? B cannot sit in anything less than eight. What to do? Will say you go to the corner. For a while. For a while. Go to the corner, brother. We will handle you in a little while. Look at the next child who has the highest frequency."
+    },
+    {
+      "start_time": 1868.799,
+      "end_time": 1896.31,
+      "text": "है। 1A पॉप करिए वन ए फ्रीक्वेंसी इज़ इक्वल टू वन। चाइल्ड क्या है? A क्या A को आप सीट नंबर सिक्स पे बिठा सकते हैं? नहीं बिठा सकते हैं। फ्री क्या है? सेवन। सेवन से कम में नहीं बैठ सकता है। बोलेंगे जाओ भैया तुम भी कोने में। तुमको थोड़ी देर में देखते हैं। थोड़ी देर में तुमको देखते हैं। अगला निकालने की कोशिश कीजिए। हिप खत्म हो गया और कोई बच्चा बचा नहीं है। मतलब ये सीट आपका क्या जाने वाला है? ये सीट आपका आइडल जाने वाला है। ये सीट आपका बेकार जाने वाला है। कोई बात नहीं। जाने दो क्या कर सकते हैं?",
+      "source": "caption",
+      "english_text": "Is. Pop 1A. One A frequency is equal to one. What is a child? A Can you make A sit on seat number six? Can't sit. What is free? Seven. Can't settle for less than seven. Will say, go brother, you also go to the corner. Will see you in a little while. See you in a little while. Try to figure out the next one. The hip is gone and there are no kids left. Meaning, what is this seat going to do for you? This seat is going to go to your idol. This seat is going to be useless for you. No problem. Let go, what can you do?"
+    },
+    {
+      "start_time": 1896.32,
+      "end_time": 1921.669,
+      "text": "हमारे हाथ में तो है नहीं। कोने में जो जो बच्चे खड़े थे एज इट इज़ हीट में घुसा दीजिए। वन बी वन एज इट इज घुसा दीजिए। कौन सा सीट आपका आइडल चला गया? सीट नंबर सिक्स देख लीजिए ऊपर के एग्जांपल में। सीट नंबर सिक्स क्या था? आइडल था सच में। सच में अभी तक मतलब हम लोग सही जा रहे हैं। आइए, अगला सीट पे चलें। सीट नंबर सेवन पे। जब तक हिप खाली नहीं हो जाता, तब तक यह करना पड़ेगा। जब तक सारे बच्चे नहीं खत्म हो जाते हैं, तब तक यह करना पड़ेगा।",
+      "source": "caption",
+      "english_text": "It is not in our hands. Whatever kids were standing in the corner, put them in As It Is Heat. One be one as it is, enter it. Which seat did your idol go to? See seat number six in the above example. What was seat number six? Was really an idol. Really, so far it means we are going right. Come, let's go to the next seat. On seat number seven. This will have to be done until the hip becomes empty. This will have to be done until all the children are gone."
+    },
+    {
+      "start_time": 1921.679,
+      "end_time": 1953.269,
+      "text": "सीट नंबर सेवन। निकालिए किसी को? वन बी को निकालिए। वन बी को निकालिए। इसको मिटाइए। पॉप करिए। क्या बी सीट नंबर सात पे बैठ सकता है? ना। बी का फ्री क्या है? एट। बिल्कुल नहीं बैठ सकता है। बिल्कुल नहीं बैठ सकता है। तो क्या बोलेंगे? भैया तुम जाओ कोने में। तुमको थोड़ी देर में देखते हैं। थोड़ी देर में आपको देखते हैं थोड़ी देर में। अगला आओ। वन ए। इसको निकालो। इसकी फ्रीक्वेंसी है। वन ए। क्या ए बैठ सकता है सेवन पे? हां बैठ सकता है। a की फ्री क्या है? सेवन। तो सेवन इक्वल A ग्रेटर दैन इक्वल टू सेवन। ठीक है?",
+      "source": "caption",
+      "english_text": "Seat number seven. Fire someone? Take out One B. Take out One B. Delete this. Pop it. Can B sit on seat number seven? No. What is B's free? et. Can't sit at all. Can't sit at all. So what will you say? Brother, you go to the corner. Will see you in a little while. See you in a little while. Come next. One A. Take this out. Its frequency is. One A. Can A sit on the seven? Yes, he can sit. What is a's free? Seven. So seven equals A greater than equal to seven. Ok?"
+    },
+    {
+      "start_time": 1953.279,
+      "end_time": 1984.71,
+      "text": "बिल्कुल बैठे हो। क्या करना है? सबसे पहले तो फ्रीक्वेंसी कम करके ज़ीरो। अगर फ्रीक्वेंसी ज़ीरो हो गई, खत्म हो गया काम। कुछ और करना नहीं है। इसका फ्री अपडेट कर भी सकते हैं, नहीं भी कर सकते हैं। फायदा नहीं है। क्योंकि अगर ज़ीरो a हो गया ना, इसको वापस शीट पे तो हम नहीं घुसा रहे क्योंकि ज़ीरो हो गया। फायदा नहीं है। फ्री अपडेट करना हो तो कर दीजिए। उसका भी कोई मतलब नहीं है। खत्म हो गया। सीट नंबर सेवन पे कौन बैठ गया? ए आके बैठ गया। ये करने के बाद क्या कोई कोने में था? हां, ये आदमी कोने में था। इसको वापस डाल दो। एज इट इज़ डाल दो। ठीक है? अगले में आइए। सीट नंबर सेवन भर गया। सीट नंबर एट में आइए।",
+      "source": "caption",
+      "english_text": "You are sitting perfectly. What is the plan? First of all, reduce the frequency to zero. If the frequency becomes zero, the work is finished. There is nothing else to do. You may or may not be able to update it for free. There is no benefit. Because if zero becomes a, we are not entering it back on the sheet because it becomes zero. There is no benefit. If you want to update for free then do it. That doesn't make any sense either. It's over. Who sat on seat number seven? A came and sat down. Was anyone in the corner after this was done? Yes, this guy was in the corner. Put it back. Put it as it is. Ok? Come to the next one. Seat number seven was filled. Come to seat number eight."
+    },
+    {
+      "start_time": 1984.72,
+      "end_time": 2019.669,
+      "text": "अब सीट नंबर एट में आइए। जब जब तक सीट बढ़ाते रहिए। जब तक सारे ना बैठ जाए। जब तक हीप खत्म ना हो जाए तब तक आपको सीट बढ़ाते रहना है। सीट एट क्या है टॉप पे? एक ही आदमी है। वन बी वन बी। ठीक है? एक ही आदमी है। मिटा दीजिए। क्या B आठ पे बैठ सकता है? यस। B का फ्री आठ है। बिल्कुल बैठ सकता है। क्या करेंगे? ज़ीरो फ्रीक्वेंसी हो गई B की। आठ पे B बैठ गया। और B की फ्रीक्वेंसी ज़ीरो। अगर फ्रीक्वेंसी ज़ीरो है तो क्या इसको हीट में घुसाएंगे? नहीं घुसाएंगे। बिल्कुल नहीं घुसाएंगे। और हो गया अब इसका फ्री अपडेट कर सकते हैं नहीं भी कर सकते आपकी मर्जी। हो गया सीट आठ पे",
+      "source": "caption",
+      "english_text": "Now come to seat number eight. Keep increasing the seats as long as possible. Until everyone is seated. You have to keep increasing the seats until the heap is over. What is seat at top pe? There is only one man. One B One B. Ok? There is only one man. Erase it. Can B sit on eight? Yes. B has a free eight. Can sit absolutely. What to do? B has become zero frequency. B sat at eight. And frequency of B is zero. If the frequency is zero then will it be inserted into the heat? Will not enter. Will not enter at all. And now it's done, you can update it for free or not as per your choice. done on seat eight"
+    },
+    {
+      "start_time": 2019.679,
+      "end_time": 2053.589,
+      "text": "बी बैठ गया। अब क्या कोई आदमी कोने में खड़ा है? ना नहीं खड़ा है। कोई कोने में नहीं खड़ा है। तो कुछ नहीं घुसाएंगे। ठीक है? अगले में आइए। लेकिन आपको पता चलता है कि अब आपका हिप खाली हो गया है। हिप खाली हो गया मतलब कोई बच्चा नहीं है। सारे बच्चे खत्म हो गए। आप किस सीट पे खत्म किए लास्ट में? सीट नंबर आठ पे। क्या रिटर्न करेंगे? आठ। आठ सीट में आपको लग आठ सीट लगेंगे इन तीनों बच्चों को छहों बच्चों को बिठाने में। ऊपर का डायग्राम देख लीजिए। क्या आठ सीट में ही काम हो गया था? हां, काम हो गया था। और इसी ऑर्डर में काम हुआ होगा। आप इस डायग्राम से देख सकते हैं। अब चलते हैं इसका कोड लिखने की तरफ। थोड़ा इंप्लीमेंटेशन हैवी कोड है। तो बेयर",
+      "source": "caption",
+      "english_text": "B sat down. Now is there a man standing in the corner? No is not standing. No one is standing in the corner. So nothing will be inserted. Ok? Come to the next one. But you realize that now your hip is empty. Hip empty means no child. All the children are gone. Which seat did you finish last? On seat number eight. What will you return? Eight. It would take you eight seats to seat these three children and all six children. Look at the diagram above. Was the work done only on eight seats? Yes, the work was done. And the work must have been done in this order. You can see from this diagram. Now let's move towards writing its code. There is some implementation heavy code. so bare"
+    },
+    {
+      "start_time": 2053.599,
+      "end_time": 2084.629,
+      "text": "कीजिएगा। आइए कोड देखिए इसका। तो आपको दो चीजें दी हुई होंगी। आपको एक तो वेक्टर इंट a दिया होगा जिसमें आपको वो टास्क दिए होंगे। वेक्टर इंट नहीं सॉरी वेक्टर ऑफ कैर। वेक्टर ऑफ कैर वेक्टर ऑफ कैर और आपको एक इंट गैप दिया है। ठीक है? सबसे पहले तो फ्रीक्वेंसी का काम कर लेते हैं। तो इंट n = a डॉट साइज। सबसे पहले फ्रीक्वेंसी का गैप कर लीजिए। तो हम एक हैश मैप ले लेते हैं फ्रीक्वेंसी के लिए।",
+      "source": "caption",
+      "english_text": "Will do it. Let's see its code. So you must have been given two things. You would have been given a vector int a in which you would have been given those tasks. Vector int not sorry vector of care. Vector of Care Vector of Care and gave you an int gap. Ok? First of all let's do the frequency work. So int n = a dot size. First of all do the frequency gap. So we take a hash map for frequency."
+    },
+    {
+      "start_time": 2084.639,
+      "end_time": 2119.03,
+      "text": "अनऑर्डर्ड मैप किस तरीके का? कैरेक्टर और इंटीजर का। ये क्या है? फ्रीक्वेंसी। और एक फ्री वाला भी ले लेते हैं भी ले लेते हैं क्योंकि फ्री रखना तो है ही लास्ट में आपको। हर हर आदमी कब फ्री होता है। हां इसमें देखिए इसमें ना फर्क नहीं पड़ता है कि कितने नंबर ऑफ टास्क हैं। नंबर ऑफ यूनिक टास्क 26 ही हो सकते हैं क्योंकि ए बी सी डी z तक ही होता है ना। ए बी सी डी तो होता नहीं है। तो हर टास्क एक ए बी सी डी है। तो ए बी सी डी मैक्सिमम 26 हो सकता है। तो इसमें उसमें मत वरी कीजिएगा कि एक ही टास्क एक ही चीज को हम लोग बार-बार निकाल रहे हैं। बार-बार घुसा रहे हैं। 26",
+      "source": "caption",
+      "english_text": "What type of unordered map? Of character and integer. What is this? Frequency. And we take the free one also, we take it because we have to keep it free for you in the end. When is every person free? Yes, see in this, it does not matter how many number of tasks there are. The number of unique tasks can only be 26 because A B C D goes only till z. ABCD does not exist. So every task is an A B C D. So A B C D maximum can be 26. So don't worry that we are doing the same task again and again. Inserting again and again. 26"
+    },
+    {
+      "start_time": 2119.04,
+      "end_time": 2153.829,
+      "text": "ही है वो। ठीक है? ज्यादा नहीं है। फॉर i = 0 i &lt; n i प्लस प्लस दो चीजें करेंगे एक तो इस टास्क की फ्रीक्वेंसी बढ़ा देंगे और इस टास्क के फ्री को शुरू में किस सीट पे बैठ सकता है ये वन पे सारे लोग शुरू में वन पे बैठ सकते हैं वेरी गुड उसके बाद क्या करेंगे एक हीप लेंगे कैसा यहीं पे लिख दें क्या चलिए यहीं पे लिख देते हैं एक हीप लेते हैं मैक्स हीप लेना है पेयर का प्रायोरिटी q",
+      "source": "caption",
+      "english_text": "He is the one. Ok? Not much. For i = 0 i < n i plus plus we will do two things, first we will increase the frequency of this task and get the free of this task, on which seat can this person sit in the beginning, all the people can sit on one seat in the beginning, very good, what will we do after that, will we take one heap, how will we write it here, let's take one heap, let's write it here, let's take the max heap, the priority of the pair is q."
+    },
+    {
+      "start_time": 2153.839,
+      "end_time": 2185.91,
+      "text": "पेयर ऑफ किस तरीके का इंटजर कररेक्टर ये ध्यान दीजिएगा हम अभी गलती कर दिए थे कोड करने में तो आपको पता नहीं चलेगा क्यों गलती हो जाएगा ठीक है इसमें क्या घुसाना है हर सबका फ्रीक्वेंसी और वो टास्क तो फॉर ऑटो आई फ्रीक फ्रीक्वेंसी वाला हैश मैप में करके और पीq डॉट पुश जावा में ऐसे करते हैं c++ में ऐसे करते हैं जावा में देख लीजिएगा क्या करना है i डॉट सेकंड मतलब पहले उसका फ्रीक्वेंसी सी फिर वो लेटर",
+      "source": "caption",
+      "english_text": "Pair of which type of integer character, please note that we had just made a mistake in coding, so you will not know why the mistake will happen. Okay, what has to be entered in it, the frequency of everyone and that task, then for auto i.e. freq frequency, do it in the hash map and pq dot push, this is how it is done in java, this is how it is done in java, see what to do i dot second means first its frequency c and then that letter."
+    },
+    {
+      "start_time": 2185.92,
+      "end_time": 2212.15,
+      "text": "हिप बन के तैयार है। अब क्या करेंगे? शीट किस शीट से शुरू करना है आपको? इंट शीट इज़ इक्वल टू वन से ही ले लीजिए। वन से ले लीजिए। वन से ले लीजिए। अब आइए अब अपना भरना शुरू करते हैं। सीट बाय सीट। कब तक भरेंगे? वाइल PQ डॉट नॉट एम्प्टी। जब तक ये PQ खाली ना है तब तक भरेंगे।",
+      "source": "caption",
+      "english_text": "Hip bun is ready. What will you do now? Which sheet should you start with? Take it from the int sheet is equal to one. Take it from the forest. Take it from the forest. Now let's start our filling. Seat by seat. When will it take to fill? While PQ is not empty. This PQ will be filled until it is empty."
+    },
+    {
+      "start_time": 2212.16,
+      "end_time": 2246.63,
+      "text": "हर बार के लिए आपका गोल क्या है? आपका गोल एक ऐसा बच्चा निकालने का है जो सीट पे बैठ सकता हो और जरूरी नहीं है कि आपको पहली बार में मिल जाए। जरूरी नहीं है आपको दूसरे बार में मिल जाए। जरूरी नहीं है तीसरे बार में मिल जाए। हो सकता है आपको तीन चार लोग निकालने पड़ेंगे और तीन चार लोग को कोने में खड़ा करना पड़ेगा तब जाके आपको कुछ मिलेगा। तो सबसे पहले वो कोना बना लेते हैं। हम जो बोले थे ना कि बच्चे को कोने में भेज रहे हैं। वेक्टर ऑफ़ पेयर ऑफ़ इंटेंट कैर जो भी हिप से निकलेगा ना अगर वो हमारे काम का नहीं है तो उसको हम इस कोने में भेज देंगे। इसको बोलिए पुल्ड जो भी आप पुल कर रहे हैं या पॉप कर रहे हैं तो उसको हम इस कोने में भेजेंगे। ये",
+      "source": "caption",
+      "english_text": "What is your goal for every time? Your goal is to find a child who can sit in the seat and you may not necessarily get it on the first try. It is not necessary that you get it in the second time. It is not necessary to get it the third time. Maybe you will have to remove three-four people and make three-four people stand in the corner, only then you will get something. So first of all they make a corner. What we said is that we are sending the child to the corner. Vector of Pair of Intent Care: Whatever comes out of the hip, if it is not of any use to us, we will send it to this corner. Call it Pulled, whatever you are pulling or popping, we will send it to this corner. this"
+    },
+    {
+      "start_time": 2246.64,
+      "end_time": 2280.55,
+      "text": "कोना है ये जो ये कोना है यहां पे था ना यहां पे एक कोना था ना ये वाला कोना है वो ठीक है नहीं कहां पे था ये ये वाला जहां हम इस कोने में भेजते थे ये वो कोना है अच्छा बच्चे निकालते रहिए लगातार बच्चे निकालते रहिए देखिए एक और लिखिए वाइल pq डॉट mt इस वाइल के अंदर एक वाइल लिख रहे हैं क्यों लिख रहे हैं बताते हैं एक बच्चा निकालिए एक बच्चा निकालिए कैसे पेयर ऑफ इंट खैर P = PQ डॉट टॉप एक बच्चा",
+      "source": "caption",
+      "english_text": "Which corner is this, which is this corner, which was here, no, this corner is right, no, where was this one, where we used to send in this corner, this is the corner, okay, keep taking out children, keep taking out children, look, write one more while, pq dot mt, inside this while, we are writing a while, why are we writing, tell us, take out one child, take out one child, how to pair of int, well, P = PQ dot top, one child."
+    },
+    {
+      "start_time": 2280.56,
+      "end_time": 2315.109,
+      "text": "निकाले PQ टॉप करना ना भूलिए। बिल्कुल ना भूलिए। ठीक है? अब आपको देखना है कि अगर ये बच्चा यहां पे बैठ सकता है कि नहीं बैठ सकता है। ठीक है? तो अगर इफ फ्री ऑफ़ इसका टास्क क्या होगा? एक हम टास्क वाला लिख लेते हैं। ये जो बच्चा निकला है तो इंट इसका फ्रीक्वेंसी क्या है? P डॉट फर्स्ट। यह बच्चा इतने बार है। और यह कौन सा चाइल्ड है? यह चाइल्ड है B डॉट सेकंड का। क्या यह बच्चा इस सीट पर बैठ सकता है? आइए देखते हैं। इफ",
+      "source": "caption",
+      "english_text": "Remove PQ and don't forget to top it. Don't forget at all. Ok? Now you have to see whether this child can sit here or not. Ok? So if free of, what will be its task? We write one for the task. What is the frequency of this child that has emerged? P dot first. This kid is so many times. And which child is this? This is the child of B dot sec. Can this child sit on this seat? let's watch. If"
+    },
+    {
+      "start_time": 2315.119,
+      "end_time": 2344.069,
+      "text": "फ्री डॉट फ्री का जो चाइल्ड है मतलब चाइल्ड का जो फ्री है वो किस सीट पे बैठ सकता है? अगर ये लेस दैन इक्वल टू सीट है। तो यहां ये बैठ सकता है। बैठ सकता है तो क्या करते थे? सबसे पहले तो मान लीजिए कि यहां बैठ गया। इफ p डॉट फर्स्ट &gt; 1 यानी जो आप फ्रीक्वेंसी निकाले मान लीजिए इसका फ्रीक्वेंसी अगर वन होता अभी अभी अगर इसका फ्रीक्वेंसी वन है तो इसको पुश करने का जरूरत नहीं है। एक बच्चा था एक बैठ गया। अगर ये ग्रेटर दैन वन है तो आपको क्या करना पड़ेगा?",
+      "source": "caption",
+      "english_text": "Free Dot Free means which seat can a child sit on when he is free? If it is less than equal to seat. So it can sit here. What would you do if you could sit? First of all, let us assume that he is sitting here. If p dot first > 1 i.e. whatever frequency you find, suppose its frequency was one. Now if its frequency is one then there is no need to push it. There was a child and one sat down. What do you have to do if it is greater than one?"
+    },
+    {
+      "start_time": 2344.079,
+      "end_time": 2378.069,
+      "text": "PQ डॉट पुश इसको वापस पुश करिए। किसके साथ? P डॉट फर्स्ट -1 के साथ। एक बच्चा को बैठा चुके हैं। -1 और P डॉट सेकंड तो सेम ही रहेगा। ये और इसका फ्री भी बदल दीजिए। फ्री ऑफ P डॉट सेकंड इक्वल टू जिस सीट पर ये बैठा है प्लस गैप प्लस वन ठीक है और अगर ये बैठ गया अगर ये बैठ गया ना इस लूप को ब्रेक कर दीजिए इस जो सेकंड वाले लूप है ना ये ये चेकिंग लूप है ये चेकिंग लूप है एक के बाद एक बच्चा",
+      "source": "caption",
+      "english_text": "PQ dot push Push it back. With whom? With P dot first -1. Have seated a child. -1 and P dot seconds will remain the same. Change this and this also for free. Free off P dot second equal to the seat on which he is sitting plus gap plus one okay and if he sits if he sits no break this loop this is the loop of the second one no this is this checking loop this is a checking loop one child after another"
+    },
+    {
+      "start_time": 2378.079,
+      "end_time": 2411.99,
+      "text": "उठा रहा है जब तक कि कोई ना मिल जाए जैसे ही ये मिल गया ना इसको ब्रेक कर दीजिए इसको ब्रेक कर दीजिए ये इफ हो गया अगर बैठ सकता है इस लूप को ब्रेक कर दीजिए चेक इन वाले को लेकिन अगर ये नहीं बैठ सकता है तो क्या करेंगे? एल्स अगर नहीं बैठ सकता है तो क्या करते थे? बच्चे को क्या बोलते थे? जाओ भाई कोने में खेलो। जो हमारा पुल्ड था ये जो हमारा को पुल्ड था पुश बैक पी ये एल्स बंद हुआ। ये वो चेक वाला वाइल बंद हुआ है। चेकिंग वाइल चेकिंग वाला वाइल। कौन सा वाइल? चेकिंग",
+      "source": "caption",
+      "english_text": "Picking until someone is found, as soon as you find him, break him, break him, it's done, if he can sit, break this loop, check in the person, but what if he can't sit? What did Else do if he couldn't sit? What was the child called? Go play in the corner brother. Which was our pull, this was our pull, push back p, this is also closed. This check bottle is closed. Checking Vial Checking Vial. Which vile? checking"
+    },
+    {
+      "start_time": 2412.0,
+      "end_time": 2442.87,
+      "text": "वाला जो लगातार चेक कर रहा था। यह वाला वाइल बंद हुआ है। अब जबकि ये वाइल बंद हो गया है। अब जबकि ये वाइल बंद हो गया तो दो चीज हुआ होगा। या तो कोई बच्चा बैठ गया होगा जिसके कारण हम लोग ये ब्रेक लिखे और बाहर आ गए। या तो वो हिप पूरा खाली हो गया था और इस इसमें कोई नहीं बैठ पाया। ये ये पूरा सीट आइडल गया है। दोनों सिनेरियो ठीक है। दोनों सिनेरियो में आपका एक सीट तो हो ही गया ना यूज़। आपका एक सीट पे या तो कोई बच्चा बैठ गया होगा। अगर कोई बच्चा बैठ गया होगा तो उसको हम लोग वापस अंदर डाल दिए फ्रीक्वेंसी करके उसका फ्री भी कर दिए। अगर कोई बच्चा नहीं बैठा तो ठीक है तो ये सीट खाली जाएगा। क्या कर सकते हैं?",
+      "source": "caption",
+      "english_text": "The one who was constantly checking. This one is closed. Now that this vile has been closed. Now that this vial is closed, two things must have happened. Either some child might have sat down due to which we took a break and came out. Either that hip was completely empty and no one could sit in it. This entire seat is gone. Both scenarios are fine. In both the scenarios, one of your seats has been used. A child might have been sitting on one of your seats. If any child had sat down, we would have put him back inside and made him free after doing the frequency. If no child is sitting then it is okay, then this seat will go vacant. What can be done?"
+    },
+    {
+      "start_time": 2442.88,
+      "end_time": 2476.87,
+      "text": "बाहर आ जाइए। मतलब अगले सीट पे ट्राई कीजिए। लेकिन अगले सीट पे ट्राई करने से पहले जो बच्चे कोने में खड़े थे उनको वापस शीट में डालेंगे बिना कुछ किए हुए। फॉर i = 0 i &lt;ul डॉट साइड हो सकता है कोई बच्चा ना आया हो। कोई बात नहीं जितने भी आए होंगे उनको वापस डालेंगे। pq डॉट पुश एज़ इट इज़ डाल देंगे क्योंकि वो बच्चों के साथ कोई हम लोग कुछ किए ही नहीं ना। उनको ना बिठाए ना उनका कुछ फ्री का कुछ नहीं हुआ उनके साथ। हो गया। अब C++ C++ अगले बार अगले में देखेंगे और ये मेन वाइल लूप बंद हुआ। मेन वाइल लूप बंद हुआ।",
+      "source": "caption",
+      "english_text": "Come out. Meaning try the next seat. But before trying on the next seat, the children who were standing in the corner will be put back in the sheet without doing anything. For i = 0 i <ul dot side it is possible that no child has come. No problem, whoever came will be put back. We will put pq dot push as it is because we have not done anything with those children. They were neither accommodated nor given anything free, nothing happened to them. Done. Now C++ C++ will see next time in the next and this main while loop is closed. Main while loop closed."
+    },
+    {
+      "start_time": 2476.88,
+      "end_time": 2510.87,
+      "text": "पूरा खेल कब खत्म होगा? जब इस वाइल लूप को पता चलेगा। इस वाइल लूप को पता चलेगा कि पीक क्यू एम्प्टी हो गया है। लास्ट में आपको क्या रिटर्न करना है? शीट। लास्ट में आपको सीट नहीं। शीट माइनस वन। शीट माइनस वन। क्यों? क्योंकि पिछले एग्जांपल के हिसाब से मान लीजिए सीट नंबर आठ में आप बच्चे को बिठाए। अब बच्चे को बिठा के बाहर आए। लेकिन आप एक और बार सीट प्लस प्लस लास्ट में करते हैं तो ये लास्ट में जब आप निकलेंगे ना तो ये सीट नाइन हो चुका होगा। जब आप निकलेंगे तो सीट नाइन हो चुका होगा। इसीलिए हम लोग सीट माइनस वन तो सीट आठ ही लगेंगे। अब आप नाइन सीट पे जाने वाले थे लेकिन अभी खत्म हो गया वो है तो इसीलिए हम लोग आठ किए हैं। तो ये देखिए",
+      "source": "caption",
+      "english_text": "When will the whole game end? When this Vile Loop comes to know. This while loop will know that the peak queue is empty. What do you have to return in the end? Sheet. You don't have a seat in the last seat. Sheet Minus One. Sheet Minus One. Why? Because according to the previous example, suppose you seat the child in seat number eight. Now let the child sit and come out. But if you do seat plus plus last one more time, then by the time you come out last, this seat will have become nine. When you leave it will be seat nine. That is why we will be assigned seat minus one and seat eight. Now you were going to go to the nine seat but it has just finished so that is why we have made eight. so see this"
+    },
+    {
+      "start_time": 2510.88,
+      "end_time": 2536.71,
+      "text": "काफी बड़ा अच्छा कोड है। हम इसमें मान रहे हैं। कोड आपको आज हम दे देंगे। कोड बिल्कुल दे देंगे। काफी अच्छा कोड है। ठीक है? मतलब हम नहीं कहेंगे कि ये सिंपल कोड है। वेरी इंप्लीमेंटेशन हैवी प्रोग्राम वेरी अगर आपको इंटरव्यू मिलता है तो लगेगा इस कोड को लिखने में 10 मिनट तो लगेगा ही टाइपिंग में भी लगेगा 10 मिनट। ठीक है? ठीक है? तो ये कोड था और हमको लगा कि ये बहुत अच्छा क्वेश्चन था। बाकी को शेड्यूल वगैरह जब हम लोग रिकन करेंगे तब पढ़ लेंगे।",
+      "source": "caption",
+      "english_text": "Quite a nice code. We are agreeing in this. We will give you the code today. Will definitely give the code. Quite a nice code. Ok? Meaning we will not say that this is simple code. Very implementation heavy program. If you get an interview, it will take not only 10 minutes to write this code, it will also take 10 minutes to type. Ok? Ok? So this was the code and we thought it was a very good question. The rest will be read when we recon the schedule etc."
+    },
+    {
+      "start_time": 2536.72,
+      "end_time": 2539.599,
+      "text": "ठीक है? चलिए।",
+      "source": "caption",
+      "english_text": "ok? Let go."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

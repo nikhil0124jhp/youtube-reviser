@@ -1,0 +1,240 @@
+{
+  "video_id": "6ZtNHvGeEu4",
+  "video_title": "Easiest Graphs question Surrounded Regions | DSA Patterns 2026",
+  "video_number": 100,
+  "chunks": [
+    {
+      "start_time": 1.35,
+      "end_time": 34.95,
+      "text": "हेलो बच्चों आप [गला साफ़ करने की आवाज़] लोग देख रहे हैं पढ़ो विद प्रत्युष मेरा नाम है प्रत्युष और आज मेरा बनाने का मन नहीं था वीडियो लेकिन ये क्वेश्चन जो था ना ये थोड़ा हमको कहीं पे कमेंट में लिखा था कि सराउंडेड रीजन समझ में नहीं आता उसपे बना दीजिए तो बहुत इजी क्वेश्चन है इसको हम तुरंत बता देंगे ऐसा हो ही नहीं सकता है कि अगर आप ये ग्राफ सीरीज पढ़ते हुए आए हैं तो आपसे ये ना बने या आपको ना समझ में आए ऐसा बिल्कुल नहीं हो सकता है ठीक है हम लोग इससे बहुत हार्ड हार्ड क्वेश्चन ऑलरेडी कर चुके हैं क्वेश्चन एकदम पीस ऑफ केक है इसको हम एकदम इजी लेवल में करेंगे बशर्त है कि आप ये पढ़ते हुए आ रहे हैं ठीक है बहुत जल्दी से आपको हम क्वेश्चन समझाते हैं। क्या होता है सराउंडेड रीजन? क्वेश्चन इसीलिए थोड़ा आपको हार्ड लगेगा ना क्योंकि क्वेश्चन",
+      "source": "caption",
+      "english_text": "Hello children, you [sound of clearing the throat] people are watching, read with Pratyush, my name is Pratyush and today I did not feel like making a video, but this question was written to us somewhere in the comment that if you do not understand the surrounded region, then make it a very easy question. Come, this cannot happen at all, okay, we have already done very hard questions, the question is a piece of cake, we will do it in very easy level, provided that you are coming while reading this, okay, let us explain the question to you very quickly. What is surrounded region? This question will seem a little difficult to you because the question"
+    },
+    {
+      "start_time": 34.96,
+      "end_time": 66.07,
+      "text": "जैसे समझाया हुआ है लीड कोड में वो बहुत गंदा है। मतलब लीड कोड को क्वेश्चन समझाने नहीं आता है। मतलब पता नहीं क्या वो लोग करता है। लेकिन चलिए कोई बात नहीं थोड़ा इंग्लिश का भी दिक्कत होता है। तो ठीक है। आपको एक मैट्रिक्स दिया है। ग्राफ का क्वेश्चन है तो दो ही चीजें होंगी। या तो आपको एक ग्राफ बना के दिया रहेगा। मतलब कि या तो आपको एजेस दिया रहेगा या तो आपको एक मैट्रिक्स दिया रहेगा। दोनों तरीके का हम लोग डील कर चुके हैं। इस कंडीशन में ना आपको एक मैट्रिक्स दिया हुआ है। अच्छा मैट्रिक्स का मतलब होता है एक मैट्रिक्स टू डी एरे ऐसा करके मैट्रिक्स दिया हुआ है। ठीक है? मैट्रिक्स का क्या मतलब होता है? सिंपल टू डी एरे। इसको हम लोग ग्राफ",
+      "source": "caption",
+      "english_text": "As explained in the lead code, it is very dirty. Meaning the lead code is not able to explain the question. I don't know what those people do. But never mind, there is some problem with English also. Well then. You are given a matrix. If there is a question of graph then only two things will happen. Either a graph will be prepared and given to you. Meaning that either you will be given edges or you will be given a matrix. We have dealt with both the methods. In this condition you have not been given a matrix. Well matrix means a matrix to d array by doing this the matrix is ​​given. Ok? What does matrix mean? Simple to d array. We graph this"
+    },
+    {
+      "start_time": 66.08,
+      "end_time": 97.67,
+      "text": "की तरह ट्रीट करते हैं। 0 1 2 3 0 1 2 3 अब इस मैट्रिक्स में क्या-क्या है? इस मैट्रिक्स में दो तरीके का कैरेक्टर है। ध्यान दीजिएगा कि ये कैरेक्टर मैट्रिक्स है। इंटीजर मैट्रिक्स नहीं है। एक कैरेक्टर है इसमें x। एक कैरेक्टर क्या है इसमें? X और एक कैरेक्टर इसमें क्या है? O एक कैरेक्टर है O नहीं है। O है। ठीक है? अच्छा हम X और O लिख देते हैं। X और 0 इसमें हम जल्दी से बना लेते हैं। तो ये हो गया X एक्स X एक्सX X o o एक्स फिर से बता रहे हैं। जीरो नहीं है। O है। ठीक है? X",
+      "source": "caption",
+      "english_text": "Treat like. 0 1 2 3 0 1 2 3 Now what is there in this matrix? There are two types of characters in this matrix. Note that this is a character matrix. is not an integer matrix. There is a character x in it. What is a character in this? What is X and a character in it? O is a character, O is not. O is. Ok? Okay, let's write X and O. In this we can make X and 0 quickly. So this is it Is not zero. O is. Ok? X"
+    },
+    {
+      "start_time": 97.68,
+      "end_time": 131.67,
+      "text": "एक्सX ओX X ओ X एक्सX ये आपका मैट्रिक्स दिया हुआ है। अच्छा आपको ना इसमें सराउंडेड रीजंस खोजने हैं। खोजने क्या है? उसमें कुछ करना है। अभी हम बताते हैं इसका मतलब क्या है? सराउंडेड रीजंस ऑफ ओ ऑफ ओ देखिए हिंदी में आपको हम क्वेश्चन बताते हैं कि आपसे ये क्वेश्चन पूछना क्या चाहता है? इस में ना आपको बहुत सारे ओ दिख रहे होंगे। एक ये दिख रहा है, एक ये दिख रहा है, एक ये दिख रहा है और एक ये दिख रहा है। ठीक बात है। अच्छा देखिए सराउंडेड रीजन क्या मतलब है? ना ये जो x है ये जो x को आप एक मॉन्सर की तरह समझिए कि x ना",
+      "source": "caption",
+      "english_text": "XX OX Well, you don't have to find surrounded regions in it. What is search? Something has to be done about it. Now let us tell you what it means? See Surrounded Regions of O of O. We tell you the question in Hindi that what does this question want to ask you? You might be seeing a lot of O's in this. One is visible this, one is visible this, one is visible this and one is visible this. That's right. Well see what does surrounded region mean? No, this is what x is, this is what"
+    },
+    {
+      "start_time": 131.68,
+      "end_time": 164.39,
+      "text": "धीरे-धीरे करके ज़ीरो को खा जाएगा। x जो है ना x को आप कुछ भी समझिए। पानी समझिए उसको कुछ जानवर कुछ भी समझिए। धीरे-धीरे करके क्या होगा ना? x जो है वो इसको खा जाएगा। x किसको खा जाएगा? ज़ीरो को खा जाएगा। अगर x ज़ीरो को घेर लेता है। अगर x ज़ीरो को कहीं पे घेर लेता है ना तो वो ज़ीरो को खा जाएगा। कौन से ज़ीरो इसमें बचे रहेंगे? ये पूरे प्रोसेस के बाद कौन से ज़ीरो बचेंगे? जो ज़ीरो एज पे है। जो जीरो एज पे है। जो ज़ीरो एज पे है वो बच जाएगा। वह बच जाएगा या भाग जाएगा। उसको कहीं से हेल्प मिल",
+      "source": "caption",
+      "english_text": "It will slowly eat up Zero. Whatever x is, whatever you consider x to be. Think of it as water, think of it as some animal, think of it as anything. What will happen if we do it slowly? Whatever is there will eat it. Whom will x eat? Will eat zero. If x surrounds zero. If x surrounds zero somewhere then it will eat zero. Which zeros will remain in it? Which zeros will be left after this entire process? Who is at zero age. Who is at zero age. The one who is at zero edge will be saved. He will survive or run away. let him get help from somewhere"
+    },
+    {
+      "start_time": 164.4,
+      "end_time": 196.39,
+      "text": "जाएगा। जो भी जीरो एज पे है। एज का मतलब क्या होता है? ये एज है। ये एज है। ये एज है। और ये एज है। मतलब या तो फर्स्ट रो हो गया। फर्स्ट कॉलम हो गया। लास्ट कॉलम या लास्ट रो या लास्ट कॉलम। एज का मतलब समझ रहे हो ना? बाउंड्री पे मैट्रिक्स के बाउंड्री पे जो जो जीरो है ना वो बच जाएगा। उसको x नहीं खा पाएगा क्योंकि उसको कहीं से मदद पहुंच जाएगा। उसको बाहर से मदद पहुंच जाएगा। लेकिन जो भी ओ जो या जो भी ज़ीरो जो भी है जिसको X घेर लेगा अंदर वो उसको खा जाएगा और वो भी X बन जाएगा। वो भी क्या बन जाएगा? x बन जाएगा। आपको बस",
+      "source": "caption",
+      "english_text": "Will go. Whoever is at zero age. What does edge mean? This is the edge. This is the edge. This is the edge. And this is the edge. Means either got first row. First column is done. Last Column or Last Row or Last Column. Do you understand the meaning of edge? Whatever zeros are there on the boundaries of the matrix will be saved. X will not be able to eat him because help will reach him from somewhere. Help will reach him from outside. But whatever O or whatever zero whatever is there which X surrounds, it will eat it inside and it will also become X. What will that also become? will become x. you just"
+    },
+    {
+      "start_time": 196.4,
+      "end_time": 229.75,
+      "text": "यही काम करना है कि जो जो ज़ीरो बचने वाले हैं, जो जो ज़ीरो बचने वाले हैं, एक सेकंड। तो, हम आपको क्या बताएं कि जो भी ज़ीरो एज पे रहेगा ना, हम थोड़ा इसको डायग्राम को चेंज कर दिए समझाने के लिए बेहतर। वो [गला साफ़ करने की आवाज़] बच जाएगा। उसको x नहीं खा पाएगा। और जो भी ज़ीरो एज पे रहेगा ना, वो अकेला नहीं बचेगा। वो अपने चारों डायरेक्शन में मूव करेगा। और जो जो ज़ीरो उससे कनेक्टेड है, जो जो ज़ीरो उससे कनेक्टेड है, मतलब कि आप एक एज वाले ज़ीरो से जहांजहां भी जा सकते हैं चारों डायरेक्शन में आप जितना फैल सकते हैं वो सारे जीरो बच जाएंगे। वो सारे जीरो अंत",
+      "source": "caption",
+      "english_text": "The only thing to be done is that whoever zero is going to survive, whoever zero is going to survive, one second. So, what can we tell you that whoever will be at zero edge, we will change the diagram a bit to explain better. He [clearing throat] will survive. X will not be able to eat it. And whoever remains at zero age will not be left alone. It will move in all four directions. And whatever zero is connected to it, whatever zero is connected to it, means that wherever you can go from one edge zero, as far as you can spread in all four directions, all those zeros will be saved. all those zeros end"
+    },
+    {
+      "start_time": 229.76,
+      "end_time": 262.87,
+      "text": "में बच जाएंगे। कहने का क्या मतलब है? देखिए इस मैट्रिक्स में शुरुआत में आपको ये जीरो दिया है। कितने जीरो हैं? एक, दो और तीन। आपको एज पे कौन सा ज़ीरो दिख रहा है? आपको एज पे कौन सा ज़ीरो दिख रहा है? एज का मतलब क्या है? फिर से बता रहे हैं। फर्स्ट रो मतलब ये वाला, लास्ट रो, फर्स्ट कॉलम और लास्ट कॉलम। इसको एज वाले या बाउंड्री वाले जीरो बोलते हैं। तो यहां पे आप बोलिएगा कि हमको ये वाला जीरो दिख रहा है। ये वाला जीरो दिख रहा है जो कि अभी तक अनविज़िटेड है। शुरुआत में तो सब अनविज़िटेड है। अच्छा अब क्या करेंगे? इसको ना हम लोग कुछ और बना देंगे। इसको हम लोग कुछ और बना देंगे। मतलब कि इसको हम लोग चलिए हैश बना",
+      "source": "caption",
+      "english_text": "I will be saved. What does it mean to say? Look, in this matrix you have been given this zero at the beginning. How many zeros are there? One, two and three. Which zero do you see on the edge? Which zero do you see on the edge? What does edge mean? Telling again. First row means this one, last row, first column and last column. This is called edge zero or boundary zero. So here you say that we can see this zero. This one appears to be zero which is still unvisited. In the beginning everything is unvisited. Well, what will we do now? We will not convert this into something else. We will turn this into something else. That means let's make it a hash."
+    },
+    {
+      "start_time": 262.88,
+      "end_time": 297.83,
+      "text": "देते हैं। इसको हम लोग हैश बना दीजिए। इसको हम लोग हैश बना। ऐसे करके हैश बना दिए। ठीक है? अब यहां पे आपको रुकना नहीं है। यहां पे आपको रुकना नहीं है। क्या आप क्या आप इस हैश से कहीं और मूव कर सकते हैं? चार डायरेक्शन में ऊपर नीचे दाएं बाएं। तो देखिए इसके नीचे तो मूव कर नहीं सकते क्योंकि इसके नीचे तो क्या है? इसके नीचे तो खत्म हो जाता है दुनिया। वेरी गुड। इसके बाएं नहीं कर सकते क्योंकि x पे मूव नहीं है। x को बचाना नहीं है। x तो मॉन्सर है। ओके? इसके राइट में मूव नहीं कर सकते हैं क्योंकि x x है राइट में तो x को नहीं बचाना है। लेकिन इसके ऊपर इसके ऊपर आपको क्या मिला है? उसके ऊपर आपको एक जीरो मिल गया है। इसके ऊपर एक आपको जीरो",
+      "source": "caption",
+      "english_text": "Let's give. Let us make it hash. We made it hash. By doing this, hash was made. Ok? Now you don't have to wait here. You don't have to stay here. Can you can you move from this hash to somewhere else? Up, down, right and left in four directions. So see, you cannot move below it because what is there below it? The world ends below this. very good. Cannot move to its left because x has not moved. x is not to be saved. x is a monster. Ok? It cannot be moved to the right because x is x, so x is not to be saved. But what have you got on top of that? On top of that you've got a zero. one above this you get zero"
+    },
+    {
+      "start_time": 297.84,
+      "end_time": 330.95,
+      "text": "मिल गया है। तो वो ज़ीरो भी बच जाएगा। वो जीरो क्यों बच जाएगा? क्योंकि ये कनेक्टेड था एक जीरो से जो कि बाउंड्री पे था। तो अगर मदद इस जीरो तक पहुंचेगा ना तो ये अपने कनेक्शंस को भी बचा लेगा। अपने सारे कनेक्शंस को भी बचा लेगा। तो हम लोग क्या करेंगे? इसके ऊपर जाके नेक्स्ट जीरो पे चले जाएंगे। नेक्स्ट जीरो पे जाइए और यहां भी इसको#श बना दीजिए। हैश क्यों बना रहे हैं? एक विजिटेड मार्क करने के लिए। एक विजिटेड मार्क करने के लिए और दिखाने के लिए कि ये बच गया है। आप हैश के जगह कुछ और कर सकते हैं। कोई भी कररेक्टर एक्स और ज़ीरो के अलावा एक्स और ओ के अलावा कोई भी एक कैरेक्टर यहां पे लिख दीजिए। अच्छा। अब",
+      "source": "caption",
+      "english_text": "Got it. So that zero will also be saved. Why would that zero survive? Because it was connected to a zero which was on the boundary. So if help reaches this zero then it will save its connections also. Will also save all your connections. So what will we do? After going above this you will go to next zero. Go to the next zero and make it #sh here too. Why making hash? To mark a visited. To mark a visit and show that it has been saved. You can replace the hash with something else. Any character other than X and zero. Write any character other than X and O here. Good. now"
+    },
+    {
+      "start_time": 330.96,
+      "end_time": 359.51,
+      "text": "आप इस हैश पे आए। क्या इस हैश से आप कहीं और जाके किसी और जीरो को बचा सकते हैं? देखते हैं। क्या आप ऊपर जा सकते हैं? नहीं। ऊपर x है। क्या आप बाएं जा सकते हैं? नहीं। लेफ्ट में x है। राइट जा सकते हैं? नहीं। राइट में x है। नीचे जा सकते हैं? नहीं। नीचे वाला ऑलरेडी हैश है। तो विजिटेड है। आप बस जीरो की तरफ जा सकते थे। या तो ओ की तरफ जा सकते थे। तो यहां के बाद आप किसी को नहीं बचा रहे हैं तो आप स्टॉप कर जाएंगे। आप अब स्टॉप कर जाएंगे। ठीक है? क्या अब आपको कोई और जीरो या कोई और ओ दिख रहा है जो कि एज पे बाकी है।",
+      "source": "caption",
+      "english_text": "You came to this hash. Can you go somewhere else with this hash and save another zero? Let's see. Can you go up? No. Above is x. Can you go left? No. There is x on the left. Can go right? No. There is x on the right. Can go down? No. The one below is the already hash. So it is visited. You could just go to zero. Could either go towards O. So after here if you are not saving anyone then you will stop. You will stop now. Ok? Now do you see any more zeros or any more O's left on the edge?"
+    },
+    {
+      "start_time": 359.52,
+      "end_time": 393.43,
+      "text": "नहीं एक था ये वाला। इसको हम लोग कर दिए इसका काम कि अगर इस तक मदद पहुंचेगी तो ये खुद तो सेफ हो ही जाएगा अपने मॉन्सर से और अपने सारे दोस्तों को भी बचा लेगा। जो जो इससे कनेक्टेड हैं जो जो जीरो इससे कनेक्टेड हैं किस डायरेक्शन में? चार डायरेक्शन में। ऊपर नीचे दाएं बाएं उनको भी ये मॉन्सर से बचा लेगा। अब आपका खेल खत्म हो गया है। अब देखिए ये वाला जो जीरो था ये ना किसी भी बाउंड्री के जीरो से कनेक्टेड नहीं है। ये किसी भी बाउंड्री के जीरो से कनेक्टेड नहीं है। अब आप बोलिएगा कि ऐसे है तो कनेक्टेड नहीं। डायगोनल कनेक्शन अलाउड नहीं है। सिर्फ ऊपर नीचे करके आपको कनेक्शन बनाना है। तो आप देखिए",
+      "source": "caption",
+      "english_text": "No, it was this one. We made it so that if help reaches him, he will not only be safe from his monster but will also save all his friends. Which zero is connected to it, which zero is connected to it, in which direction? In four directions. It will save them from the monster, up, down, right or left. Now your game is over. Now see, this one which was zero is not connected to the zero of any boundary. It is not connected to the zero of any boundary. Now you will say that if it is like this then it is not connected. Diagonal connection is not allowed. You just have to make the connection by moving up and down. so you see"
+    },
+    {
+      "start_time": 393.44,
+      "end_time": 424.39,
+      "text": "ये ना एक तरीके से चारों तरफ से चारों तरफ से घिरा हुआ है। किससे घिरा हुआ है? x से घिरा हुआ है। तो ये जो x है ना अब इसको खा जाएगा। x इसको खा जाएगा। ये पूरा होने के बाद कौन-कौन से जीरो बचेंगे? ये जीरो जिसको आप हैश बना दिए वो बच जाएंगे। क्योंकि आप यही कर रहे हैं ना। आप बाउंड्री के बाउंड्री के जीरो से डीएफएस स्टार्ट कर रहे हैं और वो खुद तो बचता ही है। वो अपने सारे कनेक्टेड जीरोज़ को बचा लेता है। तो एक तो ये बच जाएगा एक तो ये बच जाएगा। तो लास्ट में आपको क्या करना है? लास्ट में आपको क्या करना है?",
+      "source": "caption",
+      "english_text": "It is surrounded from all sides on all sides. Surrounded by what? is surrounded by x. So this x will now eat it. x will eat it. Which zeros will be left after this is completed? These zeros which you make hash will be saved. Because that's what you're doing, right? You are starting DFS from zero of the boundary and it itself survives. He saves all his connected zeroes. So at least this one will be saved, at least this one will be saved. So what do you have to do in the end? What do you have to do in the end?"
+    },
+    {
+      "start_time": 424.4,
+      "end_time": 458.23,
+      "text": "जहांजहां#श है जहांजहां#श है उसको मिटा के ज़ीरो कर देना है। ज़ीरो कर देना। और बाकी सबको इस वाले जीरो को ना अब आपका x खा जाएगा और इसको x बना देगा। इसको अब x बना देगा। बाकी सबको x बनाना है। बाकी सबको x बना दीजिए। बाकी सबको क्या बना दीजिए? x आपका फाइनल मैट्रिक्स इस तरीके का दिखेगा। देखिएगा ये वाला जीरो को खा गया तो वो x बन गया। ये दोनों ज़ीरो बच गए। ये दोनों ज़ीरो क्यों बच गए? क्योंकि ये वाला ज़ीरो कहां था? एज पे और ये इस वाले ज़ीरो को भी जाके बचा लिया। अगर बाय चांस यहां पे भी",
+      "source": "caption",
+      "english_text": "Wherever #s are there, wherever #s are there, they have to be erased and reduced to zero. Reduce it to zero. And to everyone else, this zero will now be eaten by your x and will turn it into an x. Now this will be made x. Everyone else has to make x. Make everything else x. What do you make of everyone else? x Your final matrix will look like this. You will see that if this one eats zero, it becomes x. Both these zeros survived. Why were these two zeros saved? Because where was this zero? He went to the edge and saved this one Zero also. If by chance here too"
+    },
+    {
+      "start_time": 458.24,
+      "end_time": 484.23,
+      "text": "एक ज़ीरो होता ना तो ये भी बच जाता। तो ये भी बच जाता। क्यों? क्योंकि आप यहां से यहां जाते, यहां से ऊपर चले जाते। तो कोई भी बाउंड्री का जीरो कोई भी बाउंड्री का जीरो अपने आसपास के सारे जीरोज़ को बचाने की ताकत रखता है क्योंकि उसको यहां से मदद पहुंचेगी। को जो जीरो नहीं बच पाते हैं जो जीरो लास्ट तक नहीं बच पाते हैं। जैसे कि ये जीरो लास्ट तक नहीं बच पाया ये x बन जाएगा। इसको आसपास के x घेर के खा जाएंगे। इसीलिए इस क्वेश्चन का नाम क्या है?",
+      "source": "caption",
+      "english_text": "Had there been a zero, this too would have been saved. Then this too would have been saved. Why? Because you would go from here to here, go up from here. So any zero of any boundary, any zero of any boundary has the power to save all the zeros around it because it will get help from here. Those who do not survive the zero, those who do not survive till the zero last. As this zero could not survive till the last, it will become x. The surrounding x will surround it and eat it. That's why what is the name of this question?"
+    },
+    {
+      "start_time": 484.24,
+      "end_time": 509.43,
+      "text": "सराउंडेड रीजन। ये जो ज़ीरो था ना ये सराउंडेड हो गया था बेचारा x से। तो इसको x मिलके खा गया। तो बड़ा सिंपल क्वेश्चन है। इसमें बस ये समझना था। बस ये हार्ड पार्ट था क्वेश्चन का। अब कोई हार्ड पार्ट नहीं है। अब आपको समझ में आ गया होगा क्या करना है। आपको बाउंड्री वाले आपको बाउंड्री वाले बाउंड्री वाले बाउंड अरे ये क्या हो जाता है मेरे पेंसिल को समझ में नहीं आता है हमको।",
+      "source": "caption",
+      "english_text": "Surrounded region. This zero which was zero was surrounded by poor X. So he ate it together with X. So it is a very simple question. Just this had to be understood. This was the hard part of the question. There are no hard parts anymore. Now you must have understood what to do. You are bounded, you are bounded, you are bounded, you are bounded, what is happening, my pencil does not understand us."
+    },
+    {
+      "start_time": 509.44,
+      "end_time": 543.75,
+      "text": "बाउंड्री वाले ये मेरे पेंसिल होना। ठीक है? आपको बाउंड्री वाले ओ से बाउंड्री वाले ओ से डीएफएस स्टार्ट करना है। डीएफएस स्टार्ट करना है। ठीक है? हम लोग आमतौर पर जब नंबर ऑफ आइलैंड्स पढ़ रहे थे तो हम लोग एक विजिटेड एरे मेंटेन करते थे कि भैया इसको हम देख चुके हैं। उसके जगह आप क्या करिए ना हर एक जीरो को हर एक जीरो को क्या बना दीजिए अपने मन का कोई कैरेक्टर हैश डॉलर रुपया जो मन करे जो अलग दिखे जो अलग जिससे आपको पता चले कि भैया ये बच चुका है लास्ट में हमको इसको बचाना है इसको हमको वापस जीरो में कन्वर्ट करना है ये कर",
+      "source": "caption",
+      "english_text": "These should be my pencils with boundaries. Ok? You have to start DFS from boundary O to boundary O. Have to start DFS. Ok? Usually, when we were studying Number of Islands, we used to maintain a visited array saying that we have seen this. Instead of that, what should you do? Make every zero a character of your mind, hash dollar, rupee, whatever you want, which looks different, which will make you know that brother, this has been saved, in the end, we have to save it, we have to convert it back to zero, do this."
+    },
+    {
+      "start_time": 543.76,
+      "end_time": 573.91,
+      "text": "दीजिए हर एक बाउंड्री वाले जीरो से हर एक बाउंड्री वाले ज़ीरो से ये आपको करना पड़ेगा क्योंकि हर एक हो सकता है कि हर एक बाउंड्री का ज़ीरो ना मल्टीपल लोगों को बचाने की ताकत रखता हो अगर कोई बाउंड्री का ज़ीरो ऑलरेडी हैश बन चुका है तो मत करिए बाउंड्री ्री पे अगर आपको जीरो मिल रहा है तो वहां से आपको क्या करना है? डीएफएस स्टार्ट करना है। कितने डायरेक्शन में? चार डायरेक्शन में। ये सब आपको ऑलरेडी आता है नंबर ऑफ़ आइलैंड्स के कारण। ये सब होने के बाद पूरे मैट्रिक्स में जहांजहां#श है उसको वापस जीरो में या ओ में कन्वर्ट कर दीजिए। क्योंकि वो बच जाएंगे लास्ट में।",
+      "source": "caption",
+      "english_text": "You will have to do this from each boundary's zero, because each boundary's zero may not have the power to save multiple people. If a boundary's zero has already been hashed, then do not do it. If you are getting a zero, then what do you have to do from there? Have to start DFS. In how many directions? In four directions. All this comes to you already because of Number of Islands. After all this is done, wherever there is #sh in the entire matrix, convert it back to zero or O. Because they will be saved in the end."
+    },
+    {
+      "start_time": 573.92,
+      "end_time": 607.509,
+      "text": "और बाकी सबको बाकी सबको क्या बना दीजिए? x बना दीजिए। क्योंकि जो x है वो तो x है ही। जो जीरो बच जाएंगे लास्ट में जाके जो जीरो हैश नहीं बन पाएंगे ना वो जीरो क्या है वो जीरो मॉन्सर से सराउंडेड है तो x उनको खा जाएगा और उनको x बना देगा यही सब यही बस छोटा सा इसमें चीज है इसका कोड जस्ट लाइक नंबर ऑफ आइलैंड्स है तो नंबर ऑफ आइलैंड्स लिखने के लिए क्या कहते थे सबसे पहले तो एक बुलियन वैलिड फंक्शन लिखते थे सबसे पहले तो एक वैलिड फंक्शन वैलिड फंक्शन क्यों कि हम लोग बोर्ड से आगे ना पहुंच जाएं जो लोग वीडियो शुरू से देख रहे",
+      "source": "caption",
+      "english_text": "And what to make of everyone else and everyone else? Make x. Because whatever is x is x. The zeros that will be saved will go to the last and the zeros that will not be able to become a hash. What are those zeros? Those zeros are surrounded by monsters, so x will eat them and turn them into looking from"
+    },
+    {
+      "start_time": 607.519,
+      "end_time": 639.43,
+      "text": "हैं उनको ये सब ऑलरेडी याद होगा मतलब ऑलमोस्ट ऑलमोस्ट हमको को हम यकीन करते हैं कि आपको ये सब चीजें याद हो गई होंगी। अब ठीक है? इसमें कोई डाउट नहीं रहना चाहिए। अगर i नेगेटिव है और i n है और j अगर नेगेटिव हो गया और j &gt; = m हो गया तो रिटर्न फॉल्स। ये वैलिड नहीं है। वैलिड का मतलब कि वहां पे नहीं जाना है। डीएफएस में हो सकता है ना कि आप बोर्ड के बाहर निकलने की कोशिश कर रहे हो। नहीं जाएंगे। ऐसा नहीं है अगर तो रिटर्न ट्रू कर दो। रिटर्न ट्रू। x और y का एरे बना लेते हैं। क्यों?",
+      "source": "caption",
+      "english_text": "They must have already remembered all this, meaning almost almost. We are sure that you must have remembered all these things. It's fine now? There should be no doubt in this. Returns false if i is negative and i is n and if j becomes negative and j >= m. This is not valid. Valid means not to go there. In DFS you may be trying to get off the board. Will not go. If it is not so then return true. Returns true. Let's create an array of x and y. Why?"
+    },
+    {
+      "start_time": 639.44,
+      "end_time": 665.35,
+      "text": "डायरेक्शन के लिए याद कीजिए। नंबर ऑफ आइलैंड्स बताए थे। तो स्ट्राइबर भैया का ट्रिक बताए थे ना कि उनका एक ट्रिक था। बड़ा अच्छा लगा था। वही वाला ट्रिक कि आपको चारों डायरेक्शन में जाने के लिए ज्यादा मेहनत ना करनी पड़े। ज्यादा मेहनत ना करनी पड़े। ये क्या है? एक्स कोऑर्डिनेट। चारों डायरेक्शन के और चारों डायरेक्शन का y कोऑर्डिनेट। वेरी गुड। आइए अपना डीएफएस लिखें। बड़ा सिंपल सा डीएफएस होगा। वॉइड डीएफएस।",
+      "source": "caption",
+      "english_text": "Remember for direction. Told the number of islands. So you told me Strieber bhaiya's trick, it was one of his tricks. I liked it very much. The same trick is that you do not have to work very hard to go in all four directions. Don't have to work too hard. What is this? X coordinate. of all four directions and y coordinate of all four directions. very good. Let's write our DFS. It will be a very simple DFS. Void DFS."
+    },
+    {
+      "start_time": 665.36,
+      "end_time": 698.389,
+      "text": "डीएफएस में क्या पास होगा? आपका मैट्रिक्स आपका मतलब जो भी आपका ग्राफ दिया हुआ है किस तरीके का कैर टाइप का आपको ग्राफ दिया हुआ है। इंट n इंट m इंट i इंट j यही होगा ij मतलब इस पे आप हैं। सबसे पहला काम क्या बोले थे? इसको हैश बना दीजिए। इस इस आई जे को हैश बना दीजिए ताकि इस पे विजिटेड का ठप्पा लग जाए। विजिटेड का ठप्पा लग जाए। हैश बनाइएगा तो ऐसे करके बनाइएगा कैरेक्टर में करके। अब क्या करना है? इसके नेबर्स को देखिए। नेबर्स कैसे? चारों दिशाओं के नेबर",
+      "source": "caption",
+      "english_text": "What will pass in DFS? Your matrix means whatever your graph is given, what kind of care type graph is given to you. Int n int m int i int j This would be ij means you are on this. What was the first thing you said? Make it a hash. Make a hash of this IJ so that it can be marked as visited. Get the stamp of visited. If you create a hash then do it in characters like this. What to do now? Look at its neighbors. Neighbors how? Neighbors on all four sides"
+    },
+    {
+      "start_time": 698.399,
+      "end_time": 732.15,
+      "text": "को देखिए। k = 0 kस &lt; 4 k + चारों दिशाओं के नेबर को कैसे देखते हैं? इंट रो = i + i + x ऑफ़ k तो ये आपका रो आ जाएगा। इंट कॉलम = j + y ऑफ़ k तो आपको ये कॉलम मिल जाएगा। चेक कीजिए अगर ये वैलिड है। अगर ये रो और कॉम रो और कॉलम वैलिड है। अगर ये रो और कॉलम वैलिड है। एंड एंड अगर ये ज़ीरो है। अगर ये ज़ीरो है। हैश की तरफ नहीं जाना है। हैश की तरफ नहीं जाना है और अ X की",
+      "source": "caption",
+      "english_text": "Look at. k = 0 ks < 4 k + How to see neighbors in all four directions? Int row = i + i + x of k then this will be your row. Int column = j + y of k then you will get this column. Check if it is valid. If this row and com row and column are valid. If this row and column is valid. And end if it's zero. If it is zero. Don't go for hash. Do not go towards the hash and"
+    },
+    {
+      "start_time": 732.16,
+      "end_time": 765.11,
+      "text": "तरफ भी नहीं जाना है। तो एरे ऑफ़ रो कॉलम रो कॉलम इक्वल इक्वल टू O यहां पे O लिखिएगा। बार-बार बोल रहे हैं। हम भी गलती कर दिए थे। हम भी ज़ीरो लिखने लगे थे। याद से O लिखिएगा। कंफ्यूजिंग है लेकिन याद से आपको क्या लिखना है? कैपिटल O लिखना है। ठीक है? अगर ये ऐसा है तो उस पे डीएफएस कर दीजिए। एरे ऑफ़ n m रो एंड कॉलम तो ये बस डीएफएस हो जाएगा। ये कुछ नहीं है। सबसे स्टार्ट करके आपका फॉर बंद हो गया। यहां पे रिटर्न कर दीजिए। यहां पे रिटर्न कर दीजिए। तो ये आपका डीएफएस हो गया। मेन प्रोग्राम कैसे लिखे थे? मेन प्रोग्राम कैसे लिखे थे? मेन प्रोग्राम में कुछ नहीं",
+      "source": "caption",
+      "english_text": "Don't even go aside. So array of row column row column equal equal to O, write O here. Saying again and again. We too had made a mistake. We also started writing zero. Write O from memory. It's confusing but what do you have to write from memory? Have to write capital O. Ok? If it is like that then do DFS on it. Array of n m rows and columns so this will just be DFS. that's nothing. Your foray stopped after starting from the very beginning. Please return here. Please return here. So this is your DFS. How were the main programs written? How were the main programs written? nothing in the main program"
+    },
+    {
+      "start_time": 765.12,
+      "end_time": 791.43,
+      "text": "लिखना है। मेन प्रोग्राम में आपको एक वॉइड आपको एक सॉल्व करना है। आपको एक कैरेक्टर एरे दिया होगा। कैरेक्टर एरे दिया होगा। ऐसा करके एक एरे दिया होगा। इसका साइज निकाल लीजिए। साइज मतलब नंबर ऑफ रोज़ निकाल लीजिए। A डॉट साइज निकाल लीजिए। और इसका कॉलम का साइज भी निकाल लीजिए। इसका कॉलम का साइज भी निकाल लेंगे। हम हम क्या बोले थे? आपको डीएफएस किससे शुरू करना है?",
+      "source": "caption",
+      "english_text": "Have to write. In the main program you have to solve one void. You will be given a character array. Character array must be given. Doing this would have given an array. Find out its size. Find out the size i.e. number of roses. A: Find out the dot size. And also find out the size of its column. We will also find out the size of its column. What did we say? What should you start with in DFS?"
+    },
+    {
+      "start_time": 791.44,
+      "end_time": 821.75,
+      "text": "बाउंड्री वाले जीरो से। किससे? बाउंड्री वाले जीरो से। बाउंड्री वाले जीरो मतलब कि फर्स्ट रो, फर्स्ट कॉलम, लास्ट रो और लास्ट कॉलम। आइए एक-एक करके सारे को देखते हैं। सारे को देखने का क्या मतलब है? सबसे पहले हम लोग फर्स्ट रो वाले जीरो को देखेंगे। फर्स्ट रो वाले ओ को ओ को देखेंगे। तो देखिए इंट आई j क्या करेंगे? फॉर j = 0 j &lt; m j + ये है किसका? ये क्या है? फर्स्ट रो। ये क्या है? फर्स्ट रो।",
+      "source": "caption",
+      "english_text": "From boundary zero. With whom? From boundary zero. Boundary zero means first row, first column, last row and last column. Let's look at all of them one by one. What does it mean to see all? First of all we will look at the zero in the first row. Those in the first row will see O to O. So see what int i j will do? For j = 0 j < m j + whose is this? What is this? First row. What is this? First row."
+    },
+    {
+      "start_time": 821.76,
+      "end_time": 849.67,
+      "text": "फर्स्ट रो। फर्स्ट रो मतलब i = 0 जब रहेगा तो वो फर्स्ट रो को लेगा। i = 0 लेगा तो वो फर्स्ट रो को लेगा। तो इफ एरे ऑफ़ ज़ीरो जे इक्वल इक्वल टू ओ आपको क्या करना है? डीएफएस एर एन एम 0 जे ये क्या हो गया? फर्स्ट रो लास्ट रो लास्ट रो लास्ट रो मतलब एकदम सेम रहेगा हर चीज।",
+      "source": "caption",
+      "english_text": "First row. First row means when i = 0 then it will take the first row. If i = 0 then it will take the first row. So if the array of zeros j equals two o what do you have to do? DFS Er N M 0 J What happened? First row last row last row means everything will remain exactly the same."
+    },
+    {
+      "start_time": 849.68,
+      "end_time": 883.99,
+      "text": "= 0 j &lt; m j + लास्ट रो में एरे ऑफ 0 नहीं एरे ऑफ़ n - 1 j इक्वल इक्वल टू o देन डीएफएस कॉल कर दीजिए डीएफएस एरे n m n - 1 एंड j तो ये लास्ट रो वाले ज़ीरो का टेक केयर हो गया। फर्स्ट कॉलम फर्स्ट कॉलम फर्स्ट कॉलम जस्ट उल्टा कर दीजिए। अब i को बढ़ाइए। i को ज़ीरो से लेके n ले जाइए। हम उम्मीद करते हैं कि आपको समझ में आ रहा होगा। फर्स्ट रो लेने का क्या मतलब है? i = 0 और j सारा सारा सारा तो आप फर्स्ट रो",
+      "source": "caption",
+      "english_text": "= 0 j < m j + array of 0 in last row not array of n - 1 j equals equal to o Then call DFS DFS array n m n - 1 end j So it takes care of the zeros in the last row. First Column First Column First Column Just turn it upside down. Now increase i. Take i from zero to n. We hope you understand. What does it mean to have the first row? i = 0 and j sara sara sara so you are first row"
+    },
+    {
+      "start_time": 884.0,
+      "end_time": 917.91,
+      "text": "ले लेंगे। लास्ट रो लेने का क्या मतलब है? i को n - 1 पे फिक्स कर दिया और j को पूरा ले लिए। फर्स्ट कॉलम लेने का मतलब क्या है? j को ज़ीरो पे फिक्स कर दिया और i सारा ले लिए। तो वही कर रहे हैं। इफ एरे ऑफ़ i 0 फर्स्ट कॉलम है। इक्वल इक्वल टू ओ dfs क्या? एरे एन एम i 0 ये हो गया लास्ट कॉलम लास्ट कॉलम जस्ट सेम चीज करनी है फॉर i = 0 i &lt; n i +",
+      "source": "caption",
+      "english_text": "Will take. What does it mean to have the last cry? Fixed i at n - 1 and took j completely. What does it mean to take the first column? Fixed j at zero and took i all. So that's what they are doing. If array of i is 0 first column. Equals equal to o dfs what? Array n m i 0 This is done last column last column just same thing has to be done for i = 0 i < n i +"
+    },
+    {
+      "start_time": 917.92,
+      "end_time": 949.189,
+      "text": "इफ एरे ऑफ़ i m - 1 m - 1 लास्ट कॉलम इक्वल इक्वल टू ओ dfs एरे एन m i m - 1 वेरी गुड सारा बाउंड्री कर दीजिए ये सारा बाउंड्री करने से क्या होगा? जो जो भी बाउंड्री वाले ज़ीरो होंगे वो सारे हैश बन जाएंगे। उनके सारे दोस्त हैश बन जाएंगे। मतलब वो जो जो कनेक्शन है कहां जहां-जहां मतलब कोई भी ज़ीरो अगर कोई भी ओ अगर एज वाले से कनेक्टेड है तो वो हैश बन जाएगा। इसके बाद जो लोग बच जाएंगे वो उनको x खा जाएगा।",
+      "source": "caption",
+      "english_text": "If array of i m - 1 m - 1 last column equal to o dfs array n m i m - 1 very good make all the boundaries. What will happen by doing all these boundaries? All the zeros in the boundary will become hash. All his friends will become hash. Meaning, whatever connection is there, where it means any zero, if any O, if it is connected to the edge, then it will become a hash. After this, those who survive will be eaten by x."
+    },
+    {
+      "start_time": 949.199,
+      "end_time": 982.79,
+      "text": "इसके बाद जो लोग हैश बने हुए हैं उनको आपको ज़ीरो बना देना है। तो लास्ट स्टेप में क्या करेंगे? पूरे एरे पे लूप करेंगे। i = 0 i &lt; n i + फॉर j = 0 j &lt; m j + अब जो लोग#श बने हुए हैं जो लोग#श बने हुए हैं इफ एरे ऑफ़ i j इक्वल इक्वल टू#श उनको क्या बनाना है ज़ीरो वो बचे हुए होंगे वो बचे हुए होंगे वो बचे",
+      "source": "caption",
+      "english_text": "After this, you have to make the hash remaining ones zero. So what to do in the last step? Will loop over the entire array. i = 0 i < n i + for j = 0 j < m j + Now those who are #sh are those who are #sh who are left if array of i j is equal to #sh what to make them zero those who are left will be those who are left who will be those who are left"
+    },
+    {
+      "start_time": 982.8,
+      "end_time": 1016.31,
+      "text": "हुए होंगे ओ ओ एल्स एरे ऑफ़ ij = क्रॉस बाकी जितने हैं अब क्रॉस तो क्रॉस ही रहेगा अगर कोई ज़ीरो होगा अगर कोई ज़ीरो होगा जो बच गया है। उसका एक ही मतलब है कि ये x उसको खाने वाला है। करने के बाद रिटर्न कर दीजिए। तो इसका देखिए कोड थोड़ा हां कोड थोड़ा लंबा है। कोड हम मान रहे हैं थोड़ा लंबा है। लेकिन लंबा है इसे क्योंकि आप चार ठो लूप यहां लिख रहे हैं इसलिए लंबा हो गया है। वैसे बाकी चीज ये सब तो बोईलर प्लेट कोड है। बोईलर प्लेट बोईलर प्लेट का मतलब कि बड़ा ही नॉर्मल डीएफएस का कोड है। तो ये कोड देख लीजिए यहां से। ये कोड देख लीजिए। ये डीएफएस है।",
+      "source": "caption",
+      "english_text": "Must have happened O O Else Array of ij = Crosses as many as are left Now crosses will remain only crosses if there is any zero if there is any zero which is left. It only means that this x is going to eat him. Please return after doing. So look at the code, yes the code is a bit long. The code we assume is a bit long. But it is long because you are writing four loops here, hence it has become long. Well, the rest is all boiler plate code. Boiler Plate Boiler Plate means that it is a very normal DFS code. So see this code from here. Look at this code. This is DFS."
+    },
+    {
+      "start_time": 1016.32,
+      "end_time": 1045.36,
+      "text": "ये वॉइड सॉल्व है। ये देख लीजिए। चार तरीके का लूप है और ये आपका लास्ट में आप जो करते हैं वो है टाइम कॉम्प्लेक्सिटी ऑर्डर ऑफ़ m * n स्पेस कॉम्प्लेक्सिटी में ज्यादा कोई स्पेस यूज़ नहीं हुआ है ठीक है डीएफएस में स्पेस यूज़ हुआ होगा हां डीएफएस में स्पेस यूज़ होगा स्टक के लिए तो वो m * n वर्स्ट केस में हो जाएगा हां बिल्कुल तो ये सराउंडेड रीजन था बड़ा ही ईजी बड़ा नकली क्वेश्चन लेकिन बहुत फेमस क्वेश्चन बहुत अच्छा क्वेश्चन है तो इसको जाके करिए और मिलते हैं कल चलिए",
+      "source": "caption",
+      "english_text": "This void is solved. Take a look at this. There are four types of loops and this is your last thing what you do is time complexity order of m * n space complexity, there is not much space used, ok in DFS there must be space used, yes in DFS there will be space used, for stuck, it will be m * n in worst case, yes of course, it was surrounded region, very easy, big fake question but very famous question, it is a very good question, so go do it and see you tomorrow. let's go"
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

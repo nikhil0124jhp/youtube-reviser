@@ -1,0 +1,513 @@
+{
+  "video_id": "0Kxg0LPGwFo",
+  "video_title": "One Video To Solve All Binary Search Interview Questions | DSA Patterns 2026",
+  "video_number": 56,
+  "chunks": [
+    {
+      "start_time": 1.429,
+      "end_time": 35.43,
+      "text": "देखिए सबसे पहले तो मेरा हैप्पी बर्थडे है तो बहुत सारा हमको विश आया था थैंक यू थैंक यू सभी को 25 साल के हम हो गए और हम बोले थे कि पैटर्न वाला खत्म हो जाएगा बर्थडे तक लेकिन कुछ डिलेज़ की वजह से नहीं हो पाया लेकिन हमको लगता है जितना भी हुआ है बहुत अच्छा हुआ है और बहुत जल्दी हो जाएगा आज का लेक्चर सबसे इंपॉर्टेंट है बाइनरी सर्च का क्योंकि बाइनरी सर्च में लोग फंसते जब है ना तो जब उनको स्टोरी वाले प्रॉब्लम आते हैं आपको किसी इंटरव्यू में बाइनरी सर्च नहीं पूछा जाएगा कि एक नंबर है उसको सर्च करके बताओ जी नहीं वो तो कांसेप्ट था आपको हमेशा स्टोरी प्रॉब्लम जैसे कोको अग्रेसिव काऊ आज इस क्वेश्चन में आपको कोको इतने अच्छे से समझाएंगे कि आप वो सारे शीट के प्रॉब्लम करने में समर्थ रहेंगे। आपको फिर वो",
+      "source": "caption",
+      "english_text": "Look, first of all, it is my happy birthday, so we got a lot of wishes, thank you thank you to everyone, we turned 25 and we had said that the pattern will be finished by the birthday but due to some delay it could not be done but we feel that whatever has happened has been very good and will be done very soon. Today's lecture is most important on binary search because when people get stuck in binary search then when they are not able to get the story. Problems come to you, you will not be asked binary search in any interview that there is a number, search it and tell me, no, that was the concept, you always got story problems like Coco Aggressive Cow. Today in this question, Coco will be explained to you so well that you will be able to do all those sheet problems. you then"
+    },
+    {
+      "start_time": 35.44,
+      "end_time": 65.189,
+      "text": "वीडियो देखने की जरूरत नहीं पड़ेगी किसी भी प्रॉब्लम के लिए। तो ध्यान से कोको का प्रॉब्लम सुनिएगा क्योंकि बहुत फेमस प्रॉब्लम है और ये एकदम बेस प्रॉब्लम है ये स्टोरी प्रॉब्लम समझने का। तो इसमें हम बस आपको ये नहीं समझाएंगे कि ये प्रॉब्लम कैसे करना है जी इसको रट लेंगे। नहीं समझाएंगे कि क्यों ये बाइनरी सर्च का है। क्यों हर स्टोरी प्रॉब्लम बाइनरी सर्च का होता है। और कैसे एक ही टेंप्लेट से सारे चीजें सॉल्व होंगी। एकदम एक टेंपलेट है। हर प्रॉब्लम का एक टेंपलेट है। एक टेंपलेट सीख जाइए। एकदम होगा कि आप फिल कर रहे हैं उसमें वैल्यू जाके। ठीक है? तो, बहुत ध्यान से, बहुत गौर से लास्ट तक सुनिएगा।",
+      "source": "caption",
+      "english_text": "There will be no need to watch the video for any problem. So listen carefully to Coco's problem because it is a very famous problem and it is a very basic problem to understand this story problem. So in this we will not just explain to you how to do this problem, we will just memorize it. Will not explain why this is about binary search. Why every story problem is a binary search. And how will everything be solved with a single template? It's just a template. Every problem has a template. Learn a template. It will happen that the value goes into what you are filling. Ok? So, listen very carefully, very attentively till the end."
+    },
+    {
+      "start_time": 65.199,
+      "end_time": 93.83,
+      "text": "अगर आपको समझ में आ भी जाए, तो स्किप मत कीजिएगा वीडियो, ठीक है? ये वाला वीडियो ध्यान से सुन लेंगे। आगे का पांच वीडियो देखने का ज़रूरत नहीं पड़ेगा। समझ में आती है बात? एंड, अगेन, थैंक और चलिए वीडियो शुरू करते हैं। आइए सबसे पहले हम आपको क्वेश्चन समझाते हैं हिंदी में और मेरा टारगेट है कि आपको ये क्वेश्चन समझ में भी आए। आपको ये भी समझ में आए कि कैसा ये बाइनरी सर्च का क्वेश्चन है। ऐसे क्वेश्चन को कैसे पहचानते हैं? क्योंकि हम नहीं चाहते कि आप याद कर लें कि ये पांच चीज़ें बाइनरी सर्च की है। नहीं बहुत सारा क्वेश्चन पॉसिबल है। हम चाहते हैं कि आप समझ लें कि ये क्वेश्चन होता क्या है?",
+      "source": "caption",
+      "english_text": "Even if you understand, don't skip the video, okay? Listen to this video carefully. There will be no need to watch the next five videos. Do you understand? End, Again, Thank and let's start the video. Let us first explain the question to you in Hindi and my target is that you should understand this question. You should also understand how this is a binary search question. How to identify such questions? Because we don't want you to remember that these five things are from binary search. No, many questions are possible. We want you to understand what this question is?"
+    },
+    {
+      "start_time": 93.84,
+      "end_time": 128.389,
+      "text": "पहचाना कैसे जाता है और सॉल्व कैसे किया जाता है? सबका एक ही टेंप्लेट होगा। ठीक है? तो सबसे पहले आपको क्वेश्चन हिंदी में बताते हैं। तो एक कहानी की तरह क्वेश्चन दिया रहेगा। सबसे पहले आपको बोला है कि एक भालू है। भालू का नाम क्या है? कोको। भालू है कोको। फीमेल भालू है। तो इसका नाम है कोको। अब कोको के पास कुछ केले रखे हुए हैं। आप देख सकते हैं यहां पे केले रखे हुए हैं। और ये केला अकेला अकेला नहीं रखा हुआ है। ये केला गट्ठर में रखा हुआ है। कहीं पे तीन है, कहीं पे पांच है, कहीं पे सात है, कुछ भी हो सकता है। अच्छा। अब कोको क्या चुन सकती है? अपना के चुन सकती है। के मतलब ईटिंग स्पीड। क्या? के क्या है? ईटिंग स्पीड मतलब 1 घंटे में यह कितने",
+      "source": "caption",
+      "english_text": "How is it identified and solved? Everyone will have the same template. Ok? So first of all let us tell you the questions in Hindi. So the questions will be given like a story. First of all I told you that there is a bear. What is the name of the bear? Coco. The bear is Coco. There is a female bear. So its name is cocoa. Now Coco has some bananas. You can see bananas are kept here. And this banana is not kept alone. This banana is kept in a bundle. Somewhere there are three, somewhere there are five, somewhere there are seven, anything can happen. Good. What can Coco choose now? You can choose your own. Means eating speed. What? What is K? Eating speed means how much can be eaten in 1 hour"
+    },
+    {
+      "start_time": 128.399,
+      "end_time": 161.35,
+      "text": "केले खाएगी? ये कोको खुद डिसाइड कर सकती है। 1 घंटे में हमको तीन केला खा जाना है कि 1 घंटे में 10 केला खा जाना है। ये कोको डिसाइड करेगी। अच्छा क्या होगा डिसाइड करने के बाद? देखिए फॉर एग्जांपल कोको डिसाइड करती है कि मेरा के फोर है मतलब कि हम 1 घंटे में चार केले खा सकते हैं। तो क्या होगा? पहले घंटे में मान लीजिए कि वो इधर आई। इस वाले पे आई जहां पे तीन केला रखा हुआ है। तो देखिए अब 1 घंटे में चार खा सकती है। यहां तो तीन है। तो क्या करेगी यह तीनों तो खा लेगी। ये तीनों खाके इसको ज़ीरो कर देगी। लेकिन अभी भी इसका एक बनाना का स्पीड बचा हुआ है लेकिन वो वेस्ट हो जाएगा। ऐसा नहीं होगा कि ये तीन खाने के बाद ये पांचवें वाले पे",
+      "source": "caption",
+      "english_text": "Will you eat bananas? This cocoa can decide on its own. Whether we have to eat three bananas in 1 hour or 10 bananas in 1 hour. This cocoa will decide. Well, what will happen after disassembling? See for example Coco decides that my K is four which means we can eat four bananas in 1 hour. So what will happen? Let's say within the first hour that she came here. I came to this one where three bananas are kept. So see, now she can eat four in one hour. There are three here. So what will she do? She will eat all three. These three templates will reduce it to zero. But it still has one banana speed left but it will be wasted. It will not happen that after eating these three, he will eat the fifth one."
+    },
+    {
+      "start_time": 161.36,
+      "end_time": 195.43,
+      "text": "मूव कर जाएगी। नहीं अगर वो स्पीड से कम है तो वो पूरा केला खा के वहीं रहेगी 1 घंटा तो इसका 1 घंटा यहां पे वेस्ट हो जाएगा। 1 घंटा मतलब यहां ऑक्युपाई हो जाएगा और ये तीनों केले खा लेगी। जब इसका स्पीड चार है तो। अच्छा यहां पे आएगी तो पांच केला पे। तो देखिए केला है पांच। यह 1 घंटे में कितना खा सकती है? चार। तो क्या करेगी? पहले घंटे में। पहले घंटे में तो पांच में से चार खा लेगी क्योंकि चार खा सकती है। अब यहां पे बच जाएगा एक केला। अगले बार अगले बार अगले घंटे में क्या करेगी? अगले घंटे में बस यह एक को जीरो कर देगी मतलब एक केला खा लेगी और वहीं रुकेगी। वो घंटा वेस्ट हो गया। वो घंटे में और तीन खाने के",
+      "source": "caption",
+      "english_text": "Will move. No, if it is less than the speed, then after eating the whole banana, it will stay there for 1 hour, then its 1 hour will be wasted here. 1 hour means it will be occupied here and it will eat all three bananas. When its speed is four. Okay, if you come here then it will cost you five bananas. So look, the banana is five. How much can it eat in 1 hour? Four. So what will she do? In the first hour. In the first hour she will eat four out of five because she can eat four. Now there will be one banana left here. What will she do next time in the next hour? In the next hour it will just reduce one to zero, meaning it will eat one banana and stay there. That hour was wasted. Three more meals in an hour"
+    },
+    {
+      "start_time": 195.44,
+      "end_time": 229.83,
+      "text": "लिए कहीं नहीं जाएगी। तो यहां पे इसको कितना लग गया? यहां पे इसको 2 घंटा खाने में लग गया। अच्छा। सात पे आएगी तो क्या करेगी? पहले घंटे में पहले घंटे में तो सात में चार खा के इसको तीन कर देगी। ओके? दूसरे घंटे में क्या करेगी? दूसरे घंटे में क्या और इसको है कि एक पाइल पे जाती है तो उसको पूरा ही खाती है क्योंकि वेस्ट करना प यह नहीं है ना कि आप एक पाइल खाए उसमें तीन बचा हुआ है आप कहीं और बढ़ गए तो वैसे तो कुछ है नहीं। वो उसका टारगेट नहीं है। एक पाइल पे जाती है तो उसको खत्म करके ही मानती है। अब दूसरे घंटे में यहां पे तीन बचा है। इसका स्पीड क्या है? चार केला खाने की तो तीन में से 3 1/2 खा लेगी और यहां भी खत्म हो जाएगा। तो यहां भी इसको लग गया 2 घंटा। तो टोटल इसको कितना",
+      "source": "caption",
+      "english_text": "It won't go anywhere. So how much did it cost here? It took 2 hours to eat it here. Good. What will she do if she comes at seven? In the first hour, she will eat four out of seven and reduce it to three. Ok? What will she do in the next hour? What about the second hour, if she goes to one pile, she eats it completely because it is not worth wasting, right, if you eat one pile, there are three left in it, if you increase it somewhere else then it is nothing. He is not his target. When something goes to the pile, it is accepted only after finishing it. Now there are three left in the second hour. What is its speed? If you want to eat four bananas, you will eat 3 1/2 of the three and it will be over here too. So here also it took 2 hours. So how much is the total?"
+    },
+    {
+      "start_time": 229.84,
+      "end_time": 262.95,
+      "text": "टाइम लग गया? यहां पे 1 घंटा लगा था तीन खाने में। पांच खाने में 2 घंटा लग गया था। सात खाने में भी 2 घंटा लग गया था। तो टोटल मिला के इसको 5 घंटे लगे। तो आप देख सकते हैं कि जैसे-जैसे आप के चुनेंगे तो के हिसाब से आपका ये आवर बढ़ेगा। आपका ये आवर बढ़ेगा या घटेगा। मतलब जितना स्पीड चुनेंगे उतना हो सकता है ज्यादा घंटा लगे, कम घंटा लगे उस हिसाब से ये बढ़ेगा। अच्छा, ये तो हो गई ah स्टोरी की बात। करना क्या है? आपको करना क्या है? वहां पे ना अब ये कोको अकेली नहीं है, वहां पे कुछ गार्ड्स हैं। वहां पे क्या है? कुछ गार्ड साहब बैठे हुए हैं। ठीक है? केला की रखवाली करने के लिए गार्ड साहब बैठे हुए हैं। अब",
+      "source": "caption",
+      "english_text": "Did it take time? It took 1 hour to eat three meals here. It took 2 hours to eat five. It took 2 hours to eat even seven. So in total it took 5 hours. So you can see that your hours will increase as per your choice. Your hours will increase or decrease. Meaning, depending on the speed you choose, it may take more hours or may take less hours, it will increase accordingly. Okay, that's the point of the story. What is to be done? What do you have to do? Now Koko is not alone there, there are some guards there. What's there? Some guards are sitting. Ok? The guard is sitting to guard the banana. now"
+    },
+    {
+      "start_time": 262.96,
+      "end_time": 291.35,
+      "text": "गार्ड, गार्ड ना बाहर गया है पानी पीने या चाय पीने के लिए। गार्ड एच आवर्स में वापस आएगा। गार्ड एच आवर्स में वापस आएगा। एच आवर्स मतलब एच आपको कुछ दिया रहेगा। फॉर एग्जांपल, गार्ड बोला है कि हम 5 घंटे में वापस आएंगे। हम जा रहे हैं चाय पीने या कुछ काम करने। 5 घंटे में हम वापस आएंगे। मतलब कोको के पास यह बनाना खाने के लिए 5 ही घंटा है। जो भी आपको h दिया रहे। h आपको दिया रहेगा कि गार्ड साहब बाहर गए। इतनी देर में आएंगे। तो कोको के पास बनाना खाने के लिए ना पांच ही घंटा अवेलेबल है।",
+      "source": "caption",
+      "english_text": "Guard, the guard has not gone out to drink water or tea. The guard will return at H hours. The guard will return at H hours. H hours means H will give you something. For example, the guard said that we will return in 5 hours. We are going to have tea or do some work. We will be back in 5 hours. Meaning Coco has only 5 hours to eat this banana. Whatever is given to you. h You will be told that the guard went out. Will come after so long. So Coco has only five hours available to eat the banana."
+    },
+    {
+      "start_time": 291.36,
+      "end_time": 324.87,
+      "text": "अच्छा ये भी हो गया। ओके। अब आपको क्या करना है? आपको क्वेश्चन क्या बोला है? आपको मिनिमम वैल्यू ऑफ़ k बताना है। याद कीजिएगा। मिनिमम वैल्यू ऑफ़ k। k जो क्या है? ईटिंग स्पीड। इसका मैक्सिमम नहीं। इसका मिनिमम वैल्यू सो दैट सो दैट कोको कैन फिनिश ऑल बनानाज़। फिनिश ऑल बनानाज़। मतलब जितने भी पाइल्स हैं सब फिनिश हो जाने चाहिए। जितने भी गट्ठर रखे हुए हैं सब खा के खत्म कर देना चाहिए ऑल बनानाज़। और इसकी मिनिमम वैल्यू ऑफ़ केक क्योंकि कोको को",
+      "source": "caption",
+      "english_text": "Well, this is also done. Ok. What do you have to do now? What is your question? You have to tell the minimum value of k. Please remember. Minimum value of k. What is k? Eating speed. Its not the maximum. Its minimum value is so high that cocoa can finish all the bananas. Finish all the bananas. Meaning all the piles should be finished. All the bananas should be finished by eating all the bundles kept. And its minimum value of cake because cocoa"
+    },
+    {
+      "start_time": 324.88,
+      "end_time": 359.83,
+      "text": "धीरे-धीरे खाना पसंद है। कोको को हड़बड़ी में खाना पसंद नहीं है। तो ऑब्वियस सी बात है कि आपको कुछ ना कुछ स्पीड तो रखना ही पड़ेगा। लेकिन कोको चाहती है कि ऐसा कम से कम स्पीड पे मेरा काम हो जाता तो बढ़िया रहता। तो ये क्वेश्चन का प्रीमाइज़ है तो आपको क्या रिटर्न करना है? मिनिमम वैल्यू ऑफ़ K, मिनिमम वैल्यू ऑफ़ K। तो देखिए अब ये तो क्वेश्चन हो गया। अब ये बाइनरी सर्च का क्वेश्चन क्यों है? याद कीजिए जब पहली क्लास हुई थी बाइनरी सर्च की उसमें हम आपको कुछ बताए थे कुछ रूल्स बताए थे। सबसे पहले तो आपको हम बताए थे कि जो भी आपको होगा ना आपको कुछ ना कुछ ऑप्टिमाइज करना रहेगा। सबसे पहले तो आपको कोई सिंगल चीज़ फाइंड करनी रहेगी। सिंगल चीज़ या सिंगल वैल्यू यहां आपको क्या फाइंड करनी है?",
+      "source": "caption",
+      "english_text": "Like to eat slowly. Coco doesn't like to eat in a hurry. So it is obvious that you will have to maintain some speed. But Koko wants that it would have been better if my work was done at least at this speed. So this is the premise of the question, so what do you have to return? Minimum value of K, minimum value of K. So see, now this has become a question. Now why is this a binary search question? Remember when the first class was held on binary search, in that we told you some rules. First of all, we told you that whatever happens to you, you will have to optimize something or the other. First of all you have to find a single thing. Single thing or single value What do you want to find here?"
+    },
+    {
+      "start_time": 359.84,
+      "end_time": 392.79,
+      "text": "स्पीड मिनिमम वैल्यू ऑफ़ K, K क्या है? ईटिंग स्पीड। तो सिंगल चीज़। इसको आपको ऑप्टिमाइज़ करना रहेगा मतलब या तो इसको मिनिमाइज़ करना रहेगा जो भी आप फाइंड कर रहे हैं या तो इसको मैक्सिमाइज़ करना रहेगा। जनरली ऑप्टिमाइज करना रहेगा, मिनिमाइज करना रहेगा। ओके? उसके बाद हम क्या बोले थे? अगर बात आती है कि आप आपके पास है कि आपको ये फाइंड करना है। आप उसको गेस अगर कर सकते हैं। अगर आप उसको गेस कर सकते हैं जो आपको फाइंड करता है उसी को गेस कर लीजिए। ट्रायल एरर कर लीजिए कि अच्छा देखते हैं कि इसमें मेरा काम बनता है कि नहीं। और उस गेस का आंसर, उस गेस का",
+      "source": "caption",
+      "english_text": "What is the speed minimum value of K? Eating speed. So single thing. You will have to optimize it, meaning either minimize whatever you are finding or maximize it. Generally, we will have to optimize and minimize. Ok? What did we say after that? If it comes to that, you have to find it. If you can guess it. If you can guess the one who finds you, then guess the one who finds you. Do trial and error and see if it works for me or not. And the answer to that guess is"
+    },
+    {
+      "start_time": 392.8,
+      "end_time": 426.07,
+      "text": "आंसर मतलब आप जो भी चीज़ आपको क्वेश्चन बोला है फाइंड करने जो भी आपको रिटर्न करने बोला है। आपको बोला है रिटर्न द मिनिमम स्पीड ऑफ़ k। बाइनरी सर्च के क्वेश्चन में क्या बोलता था? रिटर्न द इंडेक्स वेयर दिस इज़ प्रेजेंट। तो हम लोग इंडेक्स गेस करते थे। तो जो भी चीज आपको बोला हुआ है ना वो आपको गेस करना है। उस गेस का आंसर उस गेस का आंसर मतलब वो आंसर सही है। वो आंसर गलत है। वो आंसर थोड़ा गलत है। वो क्या है? यस है नो है। या आपको आर्डर ऑफ़ वन में पता चल जाना चाहिए। या फिर ऑर्डर ऑफ़ n में पता चल जाना चाहिए सम केसेस में। ऑर्डर ऑफ़ वन मतलब बाइनरी सर्च में तुरंत पता चलता था कि आपके गेस पे वो नंबर है कि नहीं। एरे ऑफ़ गेस इक्वल इक्वल",
+      "source": "caption",
+      "english_text": "Answer means whatever the question has asked you to find, whatever you have been asked to return. You are told to return the minimum speed of k. What was said in the question of binary search? Returns the index where this is present. So we used to guess the index. So whatever is told to you, you have to guess it. The answer to that guess means that the answer is correct. That answer is wrong. That answer is slightly wrong. What is that? Yes is no. Or you should know in order of one. Or the order of n should be known in even cases. Order of one means in binary search it was immediately known whether that number is on your guess or not. Array of Guess Equals"
+    },
+    {
+      "start_time": 426.08,
+      "end_time": 459.43,
+      "text": "टू टारगेट। तुरंत पता चल गया। कुछ केसेस में आपको ऑर्डर ऑफ n टाइम लग सकता है वो अलाउड होता है। अच्छा और जो भी आपका आंसर होगा जो भी आपका आंसर होगा मतलब मान लीजिए आप सारा पॉसिबल गेसेस को लिख दिए और सारा आंसर ऐसे करके साइड बाय साइड लिख दिए। सारा आंसर ऐसे करके साइड बाय साइड लिख दिए। तो ये क्या होना चाहिए? ये मोनोटोनिक होना चाहिए था। मोनोटोनिक का क्या मतलब था? अगर आपका आंसर मान लीजिए यस या नो में आ रहा है तो ऐसा होना चाहिए था कि यस आए, यस आए, यस आए, यस आए। अचानक से एक जगह पे नो आए और फिर नो आता जाए और फिर नो आता",
+      "source": "caption",
+      "english_text": "To target. Came to know immediately. In some cases it may take you order of n time, that is allowed. Well, whatever your answer is, whatever your answer is, suppose you have written all the possible guesses and written all the answers side by side like this. All the answers were written side by side like this. So what should this be? It should have been monotonic. What did monotonic mean? If your answer is suppose to be yes or no then it should have been like yes, yes, yes, yes. Suddenly no comes to one place and then no comes and then no comes again"
+    },
+    {
+      "start_time": 459.44,
+      "end_time": 492.629,
+      "text": "जाए। ऐसा मिक्सर मैच ना हो कि दो यस आ रहा है, एक नो आ रहा है, दो ऐसा नहीं होना चाहिए। और 99% ऑफ केसेस में आपको ये टर्निंग पॉइंट ही फाइंड करना रहता है। याद कीजिए पंखा वाला एग्जांपल पंखा रेगुलेटर में टर्निंग पॉइंट ही फाइंड करना रहता है। ठीक है? तो ये सब ये क्या क्वेश्चन सब में फिट बैठ रहा है? देखते हैं। क्या आपको एक सिंगल चीज़ फाइंड करनी है? यस। आपको मिनिमम हीटिंग स्पीड फाइंड करनी है। मतलब जो सिंगल चीज़ है। क्या आपको उस स्पीड को ऑप्टिमाइज़ करना है? यस। हमको स्पीड को मिनिमाइज करना है। हमको हमको ऐसा नहीं कि कोई भी स्पीड बता दो भाई। नहीं मिनिमम स्पीड बताओ जिससे वो काम हो जाए। मिनिमम स्पीड जिससे वो काम हो जाए। जिससे वो काम",
+      "source": "caption",
+      "english_text": "Go. There should not be such a mixer match that two yeses are coming, one no is coming, two such things should not happen. And in 99% of the cases you have to find this turning point. Remember the fan example. In the fan regulator only the turning point has to be found. Ok? So what question does all this fit into? Let's see. Do you need to find one single thing? Yes. You have to find the minimum heating speed. Meaning which is a single thing. Do you want to optimize that speed? Yes. We have to minimize the speed. We don't feel like telling us any speed, brother. No, tell me the minimum speed at which the work can be done. Minimum speed at which the work can be done. through which that work"
+    },
+    {
+      "start_time": 492.639,
+      "end_time": 522.79,
+      "text": "हो जाए। यहां पे काम क्या है? फिनिश ऑल बनानाज़। फिनिश ऑल बनानाज़ आपकी कंडीशन है। फिनिश ऑल बनानाज़ आपकी क्या है? कंडीशन है। ओके? क्या आप गेस कर सकते हैं? हां, मतलब स्पीड तो गेस कर ही सकते हैं। मतलब आप कुछ भी बोल सकते हैं ना कि ईटिंग फीड। चलो। यहां हम गेस ही तो किए थे। यहां पे हम बोले चार, तो चार क्या था? चार मेरा गेस था कि हां, गेस कर लो। देखेंगे क्या होता है। तो गेस कर सकते हैं। अच्छा। गेस का आंसर आपको क्या मिल जाता है ऑर्डर ऑफ वन या ऑर्डर ऑफ n में ये देखते हैं। ये मालूम नहीं है ये देखना पड़ेगा। और क्या आपका आंसर मोनोटोनिक है ये भी देखते हैं। ये भी देखते [गला साफ़ करने की आवाज़] हैं। ओके।",
+      "source": "caption",
+      "english_text": "Let it be done. What is the work here? Finish all the bananas. Finish all the bananas is your condition. Finish All Bananas What's yours? There is a condition. Ok? Can you guess? Yes, that means we can guess the speed. Meaning you can say anything and not eating feed. Let us go. Here we just gassed. Here we said four, so what was four? Four, my guess was yes, guess. We will see what happens. So you can guess. Good. Let us see whether you get the answer of the guess in order of one or order of n. This is not known, we will have to see. And also let us see whether your answer is monotonic. These are also seen [throat clearing sound]. Ok."
+    },
+    {
+      "start_time": 522.8,
+      "end_time": 550.07,
+      "text": "आइए। अब जिनको समझ में आ गया है आपको हम एनकरेज करेंगे कि आप वीडियो पॉज़ करके खुद बना के आइए और जिनको नहीं समझ में आया आइए देखते हैं। तो ये याद रखिएगा जो हम पंखा वाला एग्जांपल दिए थे उसमें भी कुछ-कुछ ऐसा ही था कि अ आपको पंखे वाला एग्जांपल अगर याद होगा तो उसमें क्या था कि रेगुलेटर का मिनिमम स्पीड फाइंड करो। मिनिमम स्पीड फाइंड करो जिससे कि गर्मी ना लगे। पहली बात कि जिससे गर्मी ना लगे और बिल भी कम से कम आए। बिल भी कम से कम आए।",
+      "source": "caption",
+      "english_text": "Come. Now, those who have understood, we will encourage you to pause the video and make it yourself and those who have not understood, let's watch it. So remember that in the fan example that we had given, there was something similar in that. If you remember the fan example, what was there in it was to find the minimum speed of the regulator. Find the minimum speed so that you do not feel hot. The first thing is that there is no heat and the bills are also minimal. The bills also came to a minimum."
+    },
+    {
+      "start_time": 550.08,
+      "end_time": 584.07,
+      "text": "तो बिल कम से कम क्यों क्यों था? क्योंकि आपको मिनिमम स्पीड ही फाइंड करनी थी। मिनिमम स्पीड में ही बिल कम से कम आएगा लेकिन वो मिनिमम स्पीड कैसा होना चाहिए? जिसमें आपको गर्मी ना लगे जिसमें आपको गर्मी ना लगे। तो ये भी कुछ-कुछ वैसा ही है कि मिनिमम हीटिंग स्पीड बताओ। मिनिमम हीटिंग स्पीड बताओ। अब मिनिमम हीटिंग स्पीड तो बहुत कुछ बोल देगा कि मैं हीटिंग स्पीड जीरो रखूंगा वन रखूंगा वन हो सकता है मिनिमम स्पीड के एक ही केला खा सकते हो आधा केला नहीं खाना है एक केला तो खाएगा ही जीरो खाएगी तो तब तो कभी खत्म नहीं होगा तो कोई बोल सकता है कि मिनिमम तो वन होता है लेकिन उसमें कंडीशन भी है कि सारे बनानास खाने पड़ेंगे तुमको सारे बनानाज़ खाने हैं और कितने घंटे में h आवर्स में",
+      "source": "caption",
+      "english_text": "So why was the bill at least? Because you had to find the minimum speed only. The bill will be minimal only at minimum speed, but what should that minimum speed be? In which you do not feel hot, in which you do not feel hot. So this is also something like telling the minimum heating speed. Tell the minimum heating speed. Now the minimum heating speed will say a lot that I will keep the heating speed zero, I will keep one, it can be one, at the minimum speed, you can eat only one banana, if you do not want to eat half a banana, you will eat one banana, if you eat zero, then it will never end, then one can say that the minimum is one, but there is also a condition in it that you have to eat all the bananas, you have to eat all the bananas and in how many hours in h hours."
+    },
+    {
+      "start_time": 584.08,
+      "end_time": 617.43,
+      "text": "ही| सारे बनानाज़ H आवर्स में ही खाने हैं ऐसा नहीं है कि आपको लेट करना नहीं तो वो कंडीशन है वो एक कंडीशन है वैसा करके मिनिमाइज़ करना है आइए देखते हैं। मान लीजिए, मान लीजिए आपके पास जो पाइल है, वह ऐसा है। आपके पास पाइल है 3 6 7 और 11, 0 1 2 3. ठीक है? यह आपका पाइल है। मतलब बनाना का पाइल है। और आपको बोला है कि गार्ड साहब कितने घंटे में आएंगे? 8 घंटे में। मतलब आपके पास को के पास कितना घंटा है खाने के लिए? 8 ही घंटा है खाने के लिए। ओके? अब आपको क्या बताना है? मिनिमम ईटिंग स्पीड इसका बताना है। ओके? अच्छा, तो एक चीज खुद से दिमाग से सोचिए कि",
+      "source": "caption",
+      "english_text": "only All bananas have to be eaten in H hours only, it is not that you have to lie down otherwise that is a condition, it is a condition, you have to minimize it by doing so, let's see. Let's say the pile you have is like this. You have a pile of 3 6 7 and 11, 0 1 2 3. Okay? This is your pile. Meaning there is a pile of bananas. And have you been told that in what time will the guard come? In 8 hours. Meaning, how many hours do you have to eat? Only 8 hours to eat. Ok? What do you have to tell me now? This indicates the minimum eating speed. Ok? Well, then think one thing in your mind that"
+    },
+    {
+      "start_time": 617.44,
+      "end_time": 649.509,
+      "text": "मिनिमम ईटिंग स्पीड क्या हो सकता है? किसी भी आदमी का मिनिमम स्पीड क्या हो सकता है? अब कोई भी आदमी हो उसका मिनिमम स्पीड वन तो होगा ही। आप 1 घंटे में एक केला तो खाएंगे ना भाई। एक घंटे में अगर वो कोको बोलेगी कि हम जीरो केला खाएंगे। सबसे पहले तो 1 घंटा में -1 केला खाने का तो कोई है नहीं। स्पीड है ना स्पीड तो नेगेटिव होता नहीं है पहली बात। ओके? अब एक केला में जीरो केला 1 घंटे में जीरो केला खाने का कोई तुक नहीं है क्योंकि ज़ीरो खाओगी तो फिर खा ही नहीं पाओगे तो फिर तो कुछ नहीं हो पाएगा। तो मेरे हिसाब से जो आपकी मिनिमम स्पीड है मिनिमम पॉसिबल स्पीड है वो वन तो होनी चाहिए कि एक केला तो आपको खाना पड़ेगा पर घंटे कुछ भी सोचने के लिए",
+      "source": "caption",
+      "english_text": "What can be the minimum eating speed? What can be the minimum speed of any person? Now no matter who the person is, his minimum speed will be one. You will eat one banana in 1 hour, right brother? If she says cocoa in an hour, we will eat zero banana. First of all, no one can eat one banana in 1 hour. Speed ​​is not negative, speed is not negative, first thing. Ok? Now there is no point in eating zero banana in one hour because if you eat zero then you will not be able to eat and then nothing will be possible. So according to me, your minimum speed, minimum possible speed, should be one or the other, you will have to eat a banana but spend hours to think about anything."
+    },
+    {
+      "start_time": 649.519,
+      "end_time": 683.19,
+      "text": "भी ओके हाई मैक्सिमम केला कितना खा सकती हो एक घंटे में मैक्सिमम केला कितना खा सकती है अब देखिए कोको का आप याद रखिए कोको का बिहेवियर क्या है अगर अगर मान लीजिए वो कहीं पे जाती है कहीं पे वो जाती है यहां पे x किसी एक पाइल पे जाती है हर घंटे में किसी एक ही पाइल पे आप जा सकते हैं ठीक है मान लीजिए यहां पे x बनाना रखा हुआ है ओके अगर उसका स्पीड x से कम है तब तो वो ऐसा करेगी कि पहले वो उतना खाएगी फिर बचा होगा उतना खाएगी उतना वेस्ट करेगी। अगर इसका स्पीड मान लीजिए x = यहां पे फाइव है। आप कोको का स्पीड अगर 10 भी कर देंगे कि हम 1 घंटा में 10 केला खा",
+      "source": "caption",
+      "english_text": "Also OK, high maximum, how much banana can you eat, how much maximum banana can you eat in an hour, now look at Coco, remember what is the behavior of Coco, if let's say she goes somewhere, somewhere she goes here Will waste. If its speed is assumed to be x = five here. Even if you increase the speed of cocoa to 10, we will eat 10 bananas in 1 hour."
+    },
+    {
+      "start_time": 683.2,
+      "end_time": 716.389,
+      "text": "सकते हैं तो भी इसका 1 घंटा यहीं पे वेस्ट होने वाला है क्योंकि वो 1 घंटे में पांच को खा के ज़ीरो कर देगी। लेकिन तब भी वो 1 घंटा यहां पे वेस्ट करेगी ही करेगी। ऐसा नहीं होगा कि आपको पांच केला था तो आपको 10 फीट करने से कुछ खास फायदा होगा कि आप आ गए। आपको कुछ खास फायदा नहीं होने वाला है। इस पाइल में इस पाइल में आप देख सकते हैं कि 11 सबसे ज्यादा बनाना कहां रखा हुआ है? 11 में रखा हुआ है। तो अगर आप कोको का स्पीड 11 चुन लेते अगर आप कोको का स्पीड 11 चुन लेते। अगर आप कोको का हाईएस्ट स्पीड हाईएस्ट स्पीड मान लेते कि हम 11 केला खा सकते हैं। तो भी इसको 4 घंटे मिनिमम लगेगा। तो भी इसको 4 घंटे मिनिमम",
+      "source": "caption",
+      "english_text": "Even if she can, her 1 hour is going to be wasted here because in 1 hour she will eat five and reduce them to zero. But still she will spend 1 hour here. It will not be that if you had five bananas then you will get some special benefit by doing 10 feet that you have come. You are not going to get much benefit. In this pile, you can see where the 11 most bananas are kept? It is placed in 11. So if you would have chosen Coco's Speed ​​11. If you would have chosen Coco's Speed ​​11. If you assume the highest speed of cocoa, we can eat 11 bananas. Even then it will take minimum 4 hours. Even then it should be given for 4 hours minimum."
+    },
+    {
+      "start_time": 716.399,
+      "end_time": 745.43,
+      "text": "लगेगा। क्यों देखिए इधर आएगी यहां पे कितना है? है तीन। इसका स्पीड कितना है? 11. तीनों खा जाएगी कितने घंटे में? 1 घंटे में। तीनों कितने घंटे में खा जाएगी? यहां पे 1 घंटे में खा जाएगी। सिक्स पे आएगी। सिक्स पे भी कितना है? तीनों 1 घंटे में छह वो 1 घंटे में खा लेगी। इस देखिए इसका रीडिंग स्पीड आप 11 रख दिए हैं लेकिन उससे कुछ फायदा नहीं हो रहा है। छह है, छह खा के वहीं रुकेगी। सात पे आएगी 1 घंटे में खा लेगी। 11 पे आएगी 1 घंटे में खा लेगी। तो, टोटल कितना लगा? जितने नंबर ऑफ़ पाइल्स हैं, उतना घंटा तो लगेगा ही लगेगा।",
+      "source": "caption",
+      "english_text": "It will take. Why will you come here, see how much is here? Is three. What is its speed? 11. In how many hours will she eat all three? in 1 hour. In how many hours will all three be eaten? Will eat here in 1 hour. Will come at six. How much is six pay? All three in 1 hour, she will eat six in 1 hour. Look, you have set its reading speed to 11 but it is not helping you. It's six, she'll eat six and stop there. She will come at seven and will eat in an hour. She will come at 11 and will eat in 1 hour. So, what was the total? It will take as many hours as there are number of piles."
+    },
+    {
+      "start_time": 745.44,
+      "end_time": 780.389,
+      "text": "क्योंकि आप देख सकते हैं कि चार पाइल्स हैं, तो 4 घंटे तो आपको लगेगा ही लगेगा। क्यों? क्योंकि जब ये एक पाइल पे जाती है तो उसको खा लेती है। अगर आपका स्पीड इससे ज्यादा भी है, इससे स्पीड बहुत ज्यादा भी है, कोई दिक्कत नहीं है। खा लेगी बनाना और 1 घंटा वहीं वेस्ट करेगी तो आपको मिनिमम 4 घंटे तो लगेंगे ही आपका स्पीड कितना हो। अब अगर आप 11 से ज़्यादा अपनी स्पीड बढ़ा दें। अब कोई बोलेगा कि हम अपना स्पीड 1100 रख देंगे। रख सकते हो अभी भी 4 घंटे लगेगा। क्यों? तीन है। आपका स्पीड 1100 है। आपका स्पीड 1200 है। आपका स्पीड 2000 है। कोई किसी को फर्क नहीं पड़ता है। आपको 1 घंटा वहां वेस्ट करना पड़ेगा। इससे हमको समझ में आता है कि एरे का जो मैक्सिमम एलिमेंट है, पाइल्स का जो मैक्सिमम है जिसमें सबसे ज्यादा अकेले रखे हुए हैं।",
+      "source": "caption",
+      "english_text": "Because you can see that there are four piles, it will definitely take you 4 hours. Why? Because when it goes to a pile, it eats it. If your speed is more than this, even much higher than this, there is no problem. If you eat banana and waste 1 hour there, it will take you minimum 4 hours no matter your speed. Now if you increase your speed beyond 11. Now someone will say that we will keep our speed 1100. You can keep it, it will still take 4 hours. Why? There are three. Your speed is 1100. Your speed is 1200. Your speed is 2000. It doesn't matter to anyone. You will have to waste 1 hour there. From this we understand that the maximum element of the array is the maximum of the piles in which the maximum is kept alone."
+    },
+    {
+      "start_time": 780.399,
+      "end_time": 809.91,
+      "text": "अगर आप वो स्पीड चुन लेते हैं तो आप 4 घंटे में या चार मतलब जो भी n है। आपके आपके एरे का जो साइज है जितने पाइल्स रखे हुए हैं उतना आपको लगेगा ही लगेगा। तो हमको समझ में आता है कि हाईएस्ट हम क्या रख सकते हैं? जो भी मैक्सिमम एरे का है उसको हम हाईएस्ट रख सकते हैं। बस वेरी गुड। ओके? अब क्या करना होता था बाइनरी सर्च में? गेस करना होता था। क्या करना होता था? गेस करना होता था। आइए गेस करते हैं। मेरे साथ गेस कीजिए। आइए देखते हैं कि अब गेस करते हैं। दो चीजें फाइंड करनी है हम लोग को। अब गेस क्या करना है? क्या करना है? ये क्या है? ये ईटिंग स्पीड है।",
+      "source": "caption",
+      "english_text": "If you choose that speed then you can do it in 4 hours or four, whatever n is. The size of your array and the number of piles you have will be the same. So we understand what is the highest we can keep? We can keep whatever is of maximum array as the highest. Just very good. Ok? Now what had to be done in binary search? Had to gas. What had to be done? Had to gas. Let's guess. Guess with me. Let's guess now. We have to find two things. Now guess what to do? What is the plan? What is this? This is eating speed."
+    },
+    {
+      "start_time": 809.92,
+      "end_time": 844.23,
+      "text": "अगेन हम बोले जो चीज खोजना है उसी पे ये सब कहानी लर्चना है आपको कि हम ऐसा कर लूंगा वैसा कर लूंगा ये गेस। गेस क्या करना है? जो खोजना है उसी को गेस करेंगे। अभी तक इंडेक्स खोज रहे थे। अभी तक हर क्वेश्चन में इंडेक्स खोज रहे थे। इंडेक्स गेस हो रहा था। अब क्या खोजना है आपको? मिनिमम स्पीड तो स्पीड गेस कीजिए। ओके। आइए गेस करें। ah हम बोलते हैं कि चलिए रैंडमली कुछ भी ट्रेलर और कुछ भी कि मेरे मन में जो आएगा हम वो करेंगे। हम बोलते हैं कि थ्री कि कोको सोचेगी कि चलिए हम थ्री से ट्राई करके देखते हैं कि हम 1 घंटे में तीन बनाना खाएंगे। 1 घंटे में तीन बनाना खाएंगे। आइए देखते हैं कितना टाइम लगेगा। तो आपका बनाना ऐसा रखा हुआ है",
+      "source": "caption",
+      "english_text": "Again we said, whatever you want to find, you have to build this story based on this guess, I will do this, I will do that. Guess what to do? We will guess what we want to find. Still searching for the index. Till now we were searching for index in every question. Index was gasping. What do you want to find now? If the minimum speed is then guess the speed. Ok. Let's guess. ah We say let's randomly find any trailer and anything that comes to my mind, we will do it. We say that after eating three, Koko will think that let's try with three and see that we will eat three bananas in 1 hour. Will eat three bananas in 1 hour. Let's see how much time it will take. So your banana is kept like this"
+    },
+    {
+      "start_time": 844.24,
+      "end_time": 870.71,
+      "text": "कैसा? 3 6 7 11 है ना? आपका स्पीड है तीन। देखते हैं कितना घंटा लगेगा। और हां याद रखिएगा गार्ड साहब 8 घंटे में आ जाएंगे। 8 घंटे में गार्ड साहब आ जाएंगे। अगर आपको 8 घंटे से ज्यादा लगेगा तो आप नहीं खा पाएंगे। तो यही है कि गार्ड साहब से आने के पहले आपको खा लेना है। आठ के अंदर खा लीजिएगा तो हो जाएगा नहीं तो नहीं खा पाएंगे। ओके? तो आइए देखते हैं कितना टाइम लगेगा। ah आपका गेस क्या है? तीन मतलब आप 1 घंटे में तीन खा सकते हैं। सबसे पहले यहां आएगी। तो यहां तो तीन है वेरी गुड।",
+      "source": "caption",
+      "english_text": "how? 3 6 7 11 right? Your speed is three. Let's see how many hours it will take. And yes, remember that the guard will come in 8 hours. Guard sir will come in 8 hours. If it takes more than 8 hours you will not be able to eat. So this means that you have to eat before the guard comes. If you eat within eight hours then it will be done otherwise you will not be able to eat. Ok? So let's see how much time it will take. ah what's your guess? Three means you can eat three in 1 hour. Will come here first. So here are three very good ones."
+    },
+    {
+      "start_time": 870.72,
+      "end_time": 904.629,
+      "text": "तो तीन को तुरंत खा के ज़ीरो कर देगी। यहां इसको 1 घंटा लगेगा। छह छह को कितना घंटा लगेगा? देखिए पहले घंटे में पहले घंटे में ये छह को खा के तीन कर देगी। लेकिन अभी भी बचा हुआ है। अभी भी जा नहीं सकती है। तीन बनाना बचा हुआ है। अगले घंटे में इस तीन को खा के ज़ीरो कर देगी। तो यहां पे 2 घंटा लग गया। यहां पे 2 घंटा लग गया। सेवन, सेवन को कितना लगेगा? अगर आपकी ईटिंग स्पीड तीन है, आपके पास सात केले हैं तो कितना टाइम लगेगा, देखिए, पहले घंटे में सात में से तीन खा सकती है, तो चार कर देगी। दूसरे घंटे में चार में से तीन खा सकती है, इसको एक कर देगी और तीसरे घंटे में इस एक को खा के ज़ीरो करेगी, लेकिन",
+      "source": "caption",
+      "english_text": "So she will eat three immediately and reduce them to zero. Here it will take 1 hour. How many hours will it take for six six? See, in the first hour it will eat six and reduce it to three. But it still remains. Still can't go. There are three left to make. In the next hour she will eat these three and reduce them to zero. So it took 2 hours here. It took 2 hours here. Seven, how much will it cost to seven? If your eating speed is three, you have seven bananas then how much time will it take, see, if you can eat three out of seven in the first hour, then it will reduce to four. In the second hour she can eat three out of four, which will reduce it to one, and in the third hour, she can eat this one and reduce it to zero, but"
+    },
+    {
+      "start_time": 904.639,
+      "end_time": 937.829,
+      "text": "उसमें आगे नहीं जाएगी, वो घंटा वेस्ट हो गया इसका। अगर एक भी बनाना बचा है, तो आपका घंटा वेस्ट हो गया, ओके? 11। अरे यार, सबसे पहले घंटे में 11 को खा के आठ कर देगी। उसके बाद आठ को खा के पांच कर देगी। उसके बाद एक और घंटा इसको लगेगा जिसमें पांच को खा के दो कर देगी और एक और घंटा लगेगा जिसमें दो को खा के ज़ीरो। तो जब तक ये पूरा बनाना नहीं खा लेती है, पाइल आगे नहीं बढ़ती है। आइए गिनते हैं कितना टाइम लगेगा। यहां पे कितना टाइम लगा? 1 घंटा। यहां पे 2 घंटा। यहां पे 3 घंटा, यहां पे 4 घंटा। टोटल कितना? 1 + 2",
+      "source": "caption",
+      "english_text": "It won't go any further, that hour has been wasted. If even one banana is left, your hour has been wasted, okay? 11. Hey friend, she will eat 11 to 8 in the first hour. After that, she will reduce the eight to five. After that, it will take one more hour to reduce five to two and another hour to reduce two to zero. So the pile doesn't move forward until it eats the entire banana. Let's count how much time it will take. How much time did it take to get here? 1 hour. 2 hours here. Here 3 hours, here 4 hours. What is the total? 1 + 2"
+    },
+    {
+      "start_time": 937.839,
+      "end_time": 972.71,
+      "text": "3 3 6 10 ऑवर्स 10 ऑवर्स गार्ड साहब कब तक आने वाले हैं? 8 घंटे में। अगर कोको ये तीन गेस करती है तो उसको कितना समय लग रहा है? 10 ऑवर्स तो क्या कोको खा पाएगी तीन के स्पीड से? नहीं। नो नो नो नो। कोको नहीं खा पाएगी तीन के स्पीड से। हमको पता चल गया कि तीन मेरा आंसर नहीं हो सकता है। तीन मेरा आंसर नहीं हो सकता है। ओके, अच्छी बात है। आइए एक और ट्राई करते हैं करने का कुछ। अ हम इसीलिए बता रहे हैं क्योंकि हम चाहते हैं कि आप इस एक क्वेश्चन को देख के सारे क्वेश्चन सॉल्व कर सकें बाइनरी सर्च के। 3 6 7 11 चलिए 0",
+      "source": "caption",
+      "english_text": "3 3 6 10 hours 10 hours When will the guard arrive? In 8 hours. If Coco makes these three gasps, how much time is it taking? Will she be able to eat cocoa at the speed of 3 after 10 hours? No. No no no no. Will not be able to eat cocoa at the speed of three. We realized that three could not be my answer. Three can't be my answer. Ok, that's good. Let's try something else. We are telling this because we want you to be able to solve all the questions of binary search by looking at this one question. 3 6 7 11 let's go 0"
+    },
+    {
+      "start_time": 972.72,
+      "end_time": 1005.99,
+      "text": "1 2 3 हम बोलते हैं कि हम जो अभी स्पीड गेस कर रहे हैं ना जो भी हम अपना गेसिंग कर रहे हैं अ सेवन गेस कर लीजिए। सेवन हो सकता है गेस क्योंकि देखिए हम क्या बोले थे कि मेरा लोएस्ट स्पीड वन पॉसिबल है हाईएस्ट 11 हो सकता है। तो हम बोले सेवन कर लो। कुछ भी कर सकते हो ना। सेवन कर लेते हैं आइए देखते हैं। सेवन में क्या होगा? अब देखिए यहां पे तीन बनाना है। इसका ईटिंग स्पीड कितना है? सेवन। तो क्या करेगा? एक ही घंटे में तीनों खा के वहीं पे रुकेगा। तो इसको खा लेगा। यहां पे 1 घंटा लगेगा। सिक्स, सिक्स में भी क्या करेगा? सिक्स लेस है। एक ही घंटे में छह ओ खा के और 1 घंटा यहां पे रुकेगा। ओके? 1 घंटा तो लगना ही देखिए। हर पाई में 1 घंटा तो लगना ही है। उसमें अगर एक बनाना भी है",
+      "source": "caption",
+      "english_text": "1 2 3 We say that whatever speed we are doing now, whatever we are doing our own guessing, please do a seven guess. Seven can be gas because see what we said that my lowest speed is one possible, highest can be 11. So we said, consume it. You can do anything. Let's consume it. Let's see. What will happen in intake? Now look here we have to make three. What is its eating speed? Seven. So what will you do? Will eat all three in one hour and stay there. So he will eat it. It will take 1 hour here. What will he do even in six, six? There are six laces. Eat six o'clock in an hour and stay here for 1 hour. Ok? Make sure it takes at least 1 hour. It takes at least 1 hour for each pie. Even if one has to be made in it"
+    },
+    {
+      "start_time": 1006.0,
+      "end_time": 1039.27,
+      "text": "तो 1 घंटा लगेगा और एक बनाना तो होगा ही। ओके? सात, सात भी, ओके? आपका स्पीड सात है, सात केले हैं। सातों खा जाइए, सातों खा के 1 घंटे तक रुक जाइए। 11 1 घंटे पहले घंटे में क्या होगा? 11 में से यह सात खा पाएगी। चार बच जाएंगे। दूसरे घंटे में चार से चारों खा के इसको ज़ीरो कर देगी तो अब यहां पे दो लग गया। आइए देखते हैं कितना टाइम लगा। इसको खाने में 1 घंटा, इसको खाने में दो, इसको खाने में एक और इसको खाने में दो। 1 सॉरी एक यहां पे। तो 1 + 1 + 1 3 + 2 5 ऑवर्स यस यस यस। गार्ड साहब",
+      "source": "caption",
+      "english_text": "So it will take 1 hour and one will have to be made. Ok? Seven, even seven, okay? Your speed is seven, you have seven bananas. Eat all seven, wait for an hour after eating all seven. 11 1 What will happen in the first hour? Out of 11, it will be able to eat seven. Four will survive. In the next hour she will eat all four and reduce it to zero, so now it has taken two here. Let's see how much time it took. One hour to eat this, two to eat this, one hour to eat this and two to eat this. 1 Sorry one here. So 1 + 1 + 1 3 + 2 5 hours yes yes yes. guard sir"
+    },
+    {
+      "start_time": 1039.28,
+      "end_time": 1073.35,
+      "text": "कितने घंटे में आने वाले हैं? 8 घंटे में। अगर कोको सात के स्पीड से खाती है तो यह पांच ही घंटे में खा लेगी। तो ये पांच ही घंटे में खा लेगी। ओके? तो एक तो हमको ऐसे पता चला कि गेस करते हैं तो पता कैसे चलता है आंसर का। अब यहां तो हम ऐसा किए लेकिन ये पता कैसे चलेगा? देखिए दिखाते हैं कैसे पता चलेगा। मान लीजिए ये बहुत सिंपल है। आपको बस हर स्टोरी वाले प्रॉब्लम में ना ये सोचना है आपको कि गेस का आंसर कैसे पता करें? क्योंकि अभी तक हम लोग जो बाइनरी सर्च देख रहे थे ना उसमें आपको आपके गेस का आंसर तुरंत मिल जाता था। कैसे? आप गेस करते थे इंडेक्स पे तो आप ऐसा कर लेते थे कि एरे ऑफ़ गेस इक्वल इक्वल टू टारगेट। तो",
+      "source": "caption",
+      "english_text": "In how many hours will they arrive? In 8 hours. If Koko eats at the speed of seven, she will eat it in just five hours. So she will eat it within five hours. Ok? So one, we came to know that if we guess then how do we know the answer. Now here we did it but how will we know? Let us show you how to find out. Let's say it is very simple. All you have to think about in every story problem is how to find the answer to the guess? Because in the binary search that we were seeing till now, you used to get the answer to your guess immediately. How? When you used to guess on the index, you used to make such that the array of guesses is equal to the target. so"
+    },
+    {
+      "start_time": 1073.36,
+      "end_time": 1106.95,
+      "text": "आपको तुरंत पता चल जाता था कि मेरा गेस सही है कि मेरा गेस लेस वाले में है कि मेरा गेस मोर वाले में है तुरंत पता चलता था। लेकिन अभी आपको तुरंत ऐसा नहीं पता चलेगा। कैसे नहीं पता चलेगा? मान लीजिए आपका ऐसा है थ्री 6 7 और 11 आप k = इक्वल टु जो भी आपका k स्पीड है जो भी आपका गेसिंग है वो आप तीन गेस किए। अब आपको पता कैसे चलेगा कि आप इस तीन से अब देखिए एक स्पीड गेस करने के बाद क्या हो सकता है? या तो आप खा पाएंगे या तो आप नहीं खा पाएंगे। यही होगा ना बीच का तो कुछ होता नहीं है। या तो कोको सारे खा लेगी या तो कोको नहीं खा पाएगी या फिर एक और बात पता",
+      "source": "caption",
+      "english_text": "You would immediately come to know whether my guess is correct, whether my guess is in the lace one or whether my guess is in the peacock one. But you won't know it right away. How can you not know? Suppose your three is 6, 7 and 11. You k = equal to whatever your k is speed, whatever is your guessing, you made three guesses. Now how will you know what can happen after you guess one speed from these three? Either you will be able to eat or you will not be able to eat. This is what will happen, there is nothing in between. Either Koko will eat it all, or Koko will not be able to eat, or one more thing is known."
+    },
+    {
+      "start_time": 1106.96,
+      "end_time": 1141.83,
+      "text": "चल सकती है कि या तो आप या तो कितने घंटे में खा लेगी। देखिए हर स्पीड से अगर आपकी स्पीड वन भी होगी कभी ना कभी तो आप बनाना खा ही लेंगे ना। कभी ना कभी आगे जाके तो आप बनाना खा ही लेंगे। इट्स जस्ट अ मैटर ऑफ कि कितना घंटा लगता है। अगर आपको 100 घंटा लगता है खाने में तो फायदा नहीं है। तो आपको पता चल जाएगा कि किसी स्पीड से हमको कितना घंटा वही पता करना है इसमें। देखिए कैसे पता करेंगे। 0 1 2 3 अब देखिए आपका K3 है। आपका K3 है। अब देखिए कुछ एग्जांपल से इसको आप सोच सकते हैं कि मान लीजिए आपका स्पीड आपका बनाना अगर 10 रहता 10 है आपका स्पीड क्या है? के कितना घंटा लगेगा खाने में? तो इसका मतलब क्या होता",
+      "source": "caption",
+      "english_text": "It is possible that either you or the other will eat in how many hours. Look, even if your speed is one for every speed, then sooner or later you will end up eating banana. Sooner or later, if you go ahead, you will eat banana. It's just a matter of how many hours it takes. If it takes you 100 hours to eat then there is no use. So you will know how many hours we have to calculate at a given speed. See how we will find out. 0 1 2 3 Now look there is your K3. Yours is K3. Now look at some examples, you can think about it, suppose your speed remains 10, then what is your speed? How many hours will it take to eat? so what does this mean"
+    },
+    {
+      "start_time": 1141.84,
+      "end_time": 1175.669,
+      "text": "है कि आप 1 घंटे में तीन खा सकते हैं। 1 घंटे में तीन खा सकते हैं। तो देखिए पहले घंटे में आप 10 को खा के सात करेंगे तो एक। उसके बाद सात को खा के चार करेंगे एक और। उसके बाद चार को एक करेंगे एक और। उसके बाद एक को जीरो करेंगे तो एक और एक और। अब देखिए ये क्या 10 / 3 नहीं है। 10 / 3 क्या होता है? 10 / 3 थ्री होता है। इंटीजर की बात कर रहे हैं, कंप्यूटर लैंग्वेज की बात कर रहे हैं। 10 / 3 3 होता है। लेकिन अगर 10 मॉड्यूलस 3 इज नॉट इक्वल टू 0 मतलब कि कोई रिमाइंडर बच जाता है। 10 / 3 3 क्यों होता है? क्योंकि 10",
+      "source": "caption",
+      "english_text": "That means you can eat three in 1 hour. Can eat three in 1 hour. So see, in the first hour you will eat 10 and make seven then one. After that, after eating seven, we will make four and one more. After that one more will unite the four. After that if you zero one, then one and one more. Now see if this is not 10/3. What is 10 / 3? 10/3 is three. Talking about integers, talking about computer language. 10/3 is 3. But if 10 modulus 3 is not equal to 0 that means no reminder is left. Why is 10/3 3? because 10"
+    },
+    {
+      "start_time": 1175.679,
+      "end_time": 1201.51,
+      "text": "को 10 में से आप सबसे पहले नाइन खा सकते हैं। नाइन खाने में कितना घंटा लगेगा? 3 घंटा। लेकिन नाइन खाने के बाद भी रिमाइंडर बच जाता है एक का। इसको खाने में एक और एडिशनल घंटा लगेगा। तो अगर ऐसा है तो इसको 3 + 1 = 4 आंसर हो जाएगा। सिमिलरली आपके पास मान लीजिए सात बनाना है। आपकी ईटिंग स्पीड क्या है? थ्री। तो देखिए सात को कितना घंटा लगेगा? सात को आप पहले घंटे में खा के चार कर देंगे तो 1 घंटा लग गया।",
+      "source": "caption",
+      "english_text": "Out of 10, you can eat nine first. How many hours will it take to eat nine? 3 hours. But even after eating nine, a reminder of one remains. It will take another additional hour to eat it. So if it is so then the answer will be 3 + 1 = 4. Similarly, let's say you have seven to make. What is your eating speed? Three. So see how many hours will it take to reach seven? If you eat seven in the first hour and reduce it to four, it will take one hour."
+    },
+    {
+      "start_time": 1201.52,
+      "end_time": 1229.909,
+      "text": "इसके बाद चार को खा के 1 कर देंगे एक और घंटा लग गया। लेकिन रिमाइंडर बच गया तो इस वन को खाने में आपको एक और घंटा लगेगा तो तीन। आइए देखते हैं। सबसे पहले तो 7 / 3 इतना घंटा तो लगेगा ही। 7 / 3 कितना होता है? दो। क्योंकि इंटीजर वाला डिवीज़न कर रहे हैं। लेकिन 7 मॉड्यूलस 3 इज़ नॉट इक्वल टू 0 तो 2 + 1 = 3 ऐसे करके आप पता कर सकते हैं? यस यस पता कर सकते हैं। देखिए k = 3 था। आइए देखते हैं। याद कीजिएगा k = 3 का आंसर हम लोग निकाल चुके थे कहां पे? 10 ऑवर्स। आइए देखते हैं निकलता है कि नहीं।",
+      "source": "caption",
+      "english_text": "After this, it took another hour to reduce four to one. But if the reminder is saved, it will take you another hour or three to eat this forest. let's watch. First of all, it will take 7/3 hours. What is 7/3? Two. Because we are doing integer division. But you can find out by doing 7 modulus 3 is not equal to 0 so 2 + 1 = 3? Yes yes can find out. See k = 3. let's watch. Remember where we had found the answer of k = 3? 10 hours. Let's see whether it turns out or not."
+    },
+    {
+      "start_time": 1229.919,
+      "end_time": 1263.35,
+      "text": "सबसे पहले थ्री। सबसे पहले थ्री। तो क्या सबसे पहले क्या करेंगे? 3 / 3 = 1 लगेगा। और 3 मॉड्यूलस 3 = 0 है मतलब कोई रिमाइंडर नहीं है। मतलब कि एक ही घंटे में आप खा के साफ कर देंगे। कुछ नहीं बचेगा। इसका आंसर हो गया वन। वेरी गुड। सिक्स। 6 / 3 = 2 तो टू। लेकिन 6 मॉड्यूलस 3 कोई रिमाइंडर नहीं है। मतलब कि अगर आप सिक्स को खा लेंगे, तीन-तीन बार दो बार खा लेंगे तो छह बनाना खत्म हो जाएगा। तो रुकने का जरुरत नहीं है। वेरी गुड, दो। 7 / 3 = 2 लेकिन 7 मॉड्यूलस 3 इज नॉट इक्वल टू 0, मतलब कि आप",
+      "source": "caption",
+      "english_text": "First three. First three. So what will you do first? It will take 3 / 3 = 1. And 3 modulus is 3 = 0 meaning no reminder. Meaning that within an hour you will eat and clean it. Nothing will be left. The answer became forest. very good. Six. 6 / 3 = 2 so two. But 6 modulus 3 is not a reminder. Meaning that if you eat six, three or three times each, then making six will be finished. So there is no need to wait. Very good, two. 7 / 3 = 2 but 7 modulus 3 is not equal to 0, meaning you"
+    },
+    {
+      "start_time": 1263.36,
+      "end_time": 1288.549,
+      "text": "अगर इसको डिवाइड भी कर देंगे और खा भी लेंगे ना छह तो एक बच जाएगा। वो एक खाने में आपको और 1 घंटा लगेगा। 2 + 1 ओके? 11 11 / 3 = 3 लेकिन लेकिन 11 मॉड्यूलस 3 क्या होता है? टू होता है। अब देखिए अब इसका टू होता है मतलब ये नहीं है कि आपको 2 घंटे और लगेगा। नहीं देखिए 11 / 3 = 9 मतलब कि आप 11 में से नाइन खा लेंगे। मतलब आप इसमें नाइन खा के अब इसमें 2 बच जाएगा।",
+      "source": "caption",
+      "english_text": "Even if six divide it and eat it, one will be left. It will take you another hour to eat that one. 2+1 ok? 11 11 / 3 = 3 but but 11 What is modulus 3? There is two. Now see, now it takes two, it does not mean that it will take you 2 more hours. No see 11 / 3 = 9 meaning you will eat nine out of 11. Meaning, after adding nine to it, two will be left."
+    },
+    {
+      "start_time": 1288.559,
+      "end_time": 1318.23,
+      "text": "नाइन खाने में आपको 3 घंटा लगा। वो यहां पे लिखा हुआ है। लेकिन ये दो खाने में आपको कितना घंटा लगेगा? 2 घंटा नहीं लगेगा। 1 घंटा क्योंकि आपका स्पीड क्या है? आपका स्पीड 3 है ना? आपका स्पीड 3 है तो दो खाने में भी 1 घंटा। तो अगर 11 मॉड्यूलस 3 इज नॉट इक्वल टू 0 तो आपका आपका जो भी R आप गिन रहे हैं वो प्लस प्लस हो जाएगा। तो यहां भी प्लस वन कर देंगे। कितना आया? 1 + 2 3 + 2 5 + 6 + 9 + 10 ये आपको पता चल गया। ये आपको पता चल गया। ये कैसे पता चला? आप एक आप एक स्पीड चुनें।",
+      "source": "caption",
+      "english_text": "It took you 3 hours to eat nine. It is written here. But how many hours will it take you to eat these two? It won't take 2 hours. 1 hour because what's your speed? Your speed is 3 right? If your speed is 3 then it takes 1 hour even for two meals. So if 11 modulus 3 is not equal to 0 then your whatever R you're calculating is going to be plus plus. So here also we will do plus one. How much did it cost? 1 + 2 3 + 2 5 + 6 + 9 + 10 You came to know this. You came to know this. How did you know this? You choose your own speed."
+    },
+    {
+      "start_time": 1318.24,
+      "end_time": 1349.75,
+      "text": "एरे पे ट्रेवर्स किए। हर एलिमेंट को ऐसे-ऐसे करके देखें। हर एलिमेंट इसका कोड भी लिखेंगे। लेकिन हम बता रहे हैं। इसमें कितना टाइम लगा? ऑर्डर ऑफ़ n। ऑर्डर ऑफ़ n ऑर्डर ऑफ़ वन नहीं। नहीं तुरंत नहीं पता चलेगा देख के कि होगा कि नहीं। आपको पूरा एरे को देखना पड़ेगा। आपको हर पाइल को देख के आपको कैलकुलेट करना पड़ेगा कि हमको 10 घंटे लगेगा कि 11 घंटे लगेगा। ओके। बहुत अच्छी बात है। ऑर्डर ऑफ़ n क्या ये कंडीशन सेटिस्फाई करती है? गेस का आंसर कैसे मिलना चाहिए? ऑर्डर ऑफ़ वन में मिल जाए तो बहुत अच्छा है। ऑर्डर ऑफ़ n में लग सकता है। तो ऑर्डर ऑफ़ n में लग गया तो गेस का आंसर मिल गया। अच्छा। अब अगली बात आती है कि आपका जो आंसर है क्या ये मोनोटोनिक है?",
+      "source": "caption",
+      "english_text": "Traversed the array. Try each element like this. We will also write its code for each element. But we are telling. How much time did it take? Order of n. Order of n not order of one. No, we will not know immediately by seeing whether it will happen or not. You have to look at the entire array. You will have to look at each pile and calculate whether it will take 10 hours or 11 hours. Ok. very good thing. Does the order of n satisfy this condition? How should the answer to the guess be found? It is very good if you get it in order of one. May take place in order of n. So by putting the order of n, the answer to the guess was found. Good. Now the next thing comes that is your answer monotonic?"
+    },
+    {
+      "start_time": 1349.76,
+      "end_time": 1375.029,
+      "text": "क्या ये मोनोटोनिक है? अच्छा एक बात बताइए। अब आप थोड़ा सोचिए। अब थोड़ा सोचिए। सब कुछ सोचने का। हम जब पढ़ाते हैं तो हम ऐसा नहीं पढ़ाना चाहते हैं कि कुछ मैजिकल चीज हम पढ़ा दिए जो आपको समझ में नहीं हम आपके साथ-साथ सोचते हैं। आपको सिखाते हैं कि हां कैसे एप्रोच किया जाता है। अगर आप खुद से बनाइएगा तो कैसे सोचेंगे? ओके। आइए। मान लीजिए जब आपका स्पीड आप तीन गेस किए थे तो कोई भी पाइल हो सकता है। कोई भी पाइल है। आपको पता चला था कि हमको 10 घंटे लगे थे। हमको 10 घंटे लगे थे। ये क्या है?",
+      "source": "caption",
+      "english_text": "Is it monotonic? Okay, tell me one thing. Now think a little. Now think a little. Everything to think about. When we teach, we do not want to teach in such a way that we teach some magical thing which you do not understand, we think along with you. Teach you how to approach yes. How will you think if you make it yourself? Ok. Come. Suppose when your speed was 3 guesses then any pile up can happen. Any is a pile. You found out it took us 10 hours. It took us 10 hours. What is this?"
+    },
+    {
+      "start_time": 1375.039,
+      "end_time": 1404.31,
+      "text": "सिंपल स्पीड और टाइम है। सिंपल क्या है? स्पीड और ये टाइम है। स्पीड और टाइम है मतलब पाइल है। आप अपना स्पीड ओके। आप एक और चीज किए थे। आप अपना स्पीड सात भी चुन के देखे थे। सात में कितना आया था मेरे हिसाब से शायद सात में कहां लगा था जी? सात वाला भुला गया क्या? था तो कहीं इतना ही सात वाला भुला गया। 4 घंटे लगा था। मान लीजिए 4 घंटे लगा था। याद नहीं है हमको।",
+      "source": "caption",
+      "english_text": "It's simple speed and time. What is simple? Speed ​​and it's time. Speed ​​and time means pile. Your speed is ok. You did one more thing. You had also selected your speed seven. How much had come in seven? According to me, perhaps where had it come in seven? Has the seventh one been forgotten? If it was there somewhere then only this seven was forgotten. It took 4 hours. Let's say it took 4 hours. We don't remember."
+    },
+    {
+      "start_time": 1404.32,
+      "end_time": 1429.909,
+      "text": "देख लीजिएगा। सात वाला स्पीड आपका सात था तो 4 घंटे। अच्छा एक बात बताइए। इस केस में आपके गार्ड का आने का अवधि कितना है? 8 घंटे। मतलब आपके पास 8 घंटे का ही विंडो है। इस केस में आप क्या कोको खा पाएगी? जब आपका स्पीड थ्री था तो कोको खा पाएगी? नो नो बिल्कुल नहीं खा पाएगी। क्यों? गार्ड आ जाएगा 8 घंटे में आपको 10 घंटे लगेगा खाने में। तो अगर आपका 10 इज़ ग्रेटर दैन एट है। आप नहीं खा पाएंगे। लेकिन स्पीड इज़ इक्वल टू 7 में। यस।",
+      "source": "caption",
+      "english_text": "Please take a look. If your speed was seven then 4 hours. Okay, tell me one thing. What is the period of arrival of your guard in this case? 8 hours. Meaning you have a window of only 8 hours. Will you be able to eat cocoa in this case? Would you be able to eat cocoa when you had speed three? No no, she won't be able to eat at all. Why? The guard will come in 8 hours, it will take you 10 hours to eat. So if your 10 is greater than eight. You won't be able to eat. But speed is equal to 7. Yes."
+    },
+    {
+      "start_time": 1429.919,
+      "end_time": 1463.19,
+      "text": "क्यों? 4 ही घंटे में खाए खत्म कर देगी। गार्ड कब आएगा? 8 घंटे बाद। वेरी गुड। कोई इनफ टाइम है। ओके। अब बहुत इंपॉर्टेंट चीज़ रियलाइज़ करिए। स्पीड थ्री में आप पता बोले कि हम नहीं खा पाएंगे। मतलब जब आपकी स्पीड थ्री थी तो आप नहीं खा पाए क्योंकि आपकी स्पीड स्लो होगी। आपकी स्पीड स्लो होगी तो आप नहीं खा पाए। आपको ज्यादा टाइम लगा। ज्यादा टाइम किसको लगता है? जो जो धीरे होता है जो बच्चा धीरे-धीरे पढ़ता है वो ज्यादा टाइम में पढ़ता है। जो बच्चा तेज पढ़ता है वो जल्दी पढ़ लेता है। यही होता है ना? अच्छा। मां अब अगर हम आपको पूछे कि क्या स्पीड इज इक्वल टू टू में खा पाओगे क्या? तो क्या इसके लिए आपको कोई कैलकुलेशन करने की जरूरत है? ये लॉजिकल",
+      "source": "caption",
+      "english_text": "Why? Will finish eating within 4 hours. When will the guard come? After 8 hours. very good. Is there enough time? Ok. Now realize something very important. In speed three you said that we will not be able to eat. Meaning when your speed was three, you could not eat because your speed would be slow. If your speed is slow then you will not be able to eat. It took you more time. Who takes more time? The child who studies slowly, studies in more time. A child who reads fast learns quickly. This is what happens right? Good. Mother, now if we ask you, will you be able to eat if speed is equal to two? So do you need to do any calculations for this? this is logical"
+    },
+    {
+      "start_time": 1463.2,
+      "end_time": 1497.43,
+      "text": "बात नहीं है कि स्पीड टू में भी नो नहीं खा पाएंगे आप। आप स्पीड टू में भी नहीं खा पाएंगे। अगर आप स्पीड = 3 करके नहीं खा पाए तो आप स्पीड इक्वल टू करके कैसे खा लेंगे? अगर हम बोल रहे हैं कि आपका स्पीड जब 70 किलोमीटर पर घंटे था तो आपको दिल्ली से जयपुर जाने में 3 घंटा लगा। हम अब आपसे कोई पूछे कि अच्छा हम अपना अगर 40 किमी/h की स्पीड से गाड़ी कर लें तो हमको 3 घंटा ही लगेगा कि तीन से ज्यादा आपको 3 से ज्यादा घंटा लगेगा। स्पीड कम हो गई टाइम बढ़ जाएगा। तो अगर आपको स्पीड इज इक्वल टू 3 में 10 घंटे लग रहा है। स्पीड इज़ इक्वल",
+      "source": "caption",
+      "english_text": "It is not a matter that you will not be able to eat no even in speed two. You won't be able to eat even in speed two. If you could not eat at speed = 3, then how will you eat at speed equal to 2? If we are saying that when your speed was 70 kilometers per hour then it took you 3 hours to go from Delhi to Jaipur. Now let us ask you that if we drive at a speed of 40 km/h then it will take only 3 hours for us or it will take more than 3 hours for you. Speed ​​has decreased and time will increase. So if you find Speed ​​is Equal to 3 taking 10 hours. speed is equal"
+    },
+    {
+      "start_time": 1497.44,
+      "end_time": 1531.19,
+      "text": "टू टू में 10 से तो ज्यादा ही लगेगा हो सकता है 11 घंटा लगे। तो अब कितना भी घंटा लगे? नो ही होगा आंसर। क्योंकि आपको मिनिमम कितना? आपको 8 घंटे का ही समय मिला हुआ है। आपको 8 घंटे का समय मिला हुआ है। तो स्पीड इज़ इक्वल टू 3 में अगर नौ आता है तो आपको क्या पता चलता है? पीछे के सारे स्पीड में मतलब इससे कोई भी आप कम स्पीड अगर ट्राई करेंगे आंसर नो आएगा। ऐसा हो ही नहीं सकता है कि कोको जब तीन के स्पीड से खा रही है तो 10 घंटा लग रहा है और दो के स्पीड से खाने लगी तो उसको ah 2 ही घंटा लग रहा है। नहीं नहीं हो सकता है। दो के स्पीड से खाएगी उसको 20 घंटा लगेगा और टाइम लगेगा। सिमिलरली अगर स्पीड सेवन में यस आ रहा है। अगर स्पीड सेवन में यस आ रहा",
+      "source": "caption",
+      "english_text": "Two to two will take more than 10 hours, maybe 11 hours. So no matter how many hours does it take? The answer will be no. Because what is your minimum? You have only 8 hours time. You have got 8 hours. So what does the number nine tell you in Speed ​​Is Equal To 3? Of all the speeds at the back, that means if you try any speed lower than this, the answer will be no. It is not possible that when Koko is eating at the speed of 3, it is taking 10 hours and when she starts eating at the speed of 2, it is taking only 2 hours. No can't happen. She will eat at the speed of two, it will take 20 hours and it will take time. Similarly if yes is coming in speed seven. If yes coming in speed seven"
+    },
+    {
+      "start_time": 1531.2,
+      "end_time": 1565.83,
+      "text": "है। अगर आप स्पीड बढ़ाएंगे अगर आप स्पीड बढ़ाएंगे तो क्या आपको 4 से कम ही घंटा लगेगा ना? आप 100 कि.मी./घंटे की रफ्तार से दौड़ रहे थे तो आप 2 घंटे में पहुंच जा रहे थे। हम 200 से चलने लगे, तो हम 1 ही घंटे में पहुंच जाएंगे। तो इसको मान लीजिए 3 ऑवर्स ही तो लगेगा। 3 ऑवर्स भी क्या यस है? हां देखिए आपको 8 घंटे के अंदर कंप्लीट करना है। अब आप 4 घंटे में खा लेते हैं कि 2 घंटे में खा लेते हैं कि 30 मिनट में खा लेते हैं वो आपका पर्सपेक्टिव है। तो यहां भी यस है। तो ये देखिए ये मोनोटोोनिसिटी बन चुका है। ये मोनोटोनेसिटी बन चुका है। कैसे? हम क्या बोले थे? हम क्या बोले थे? आपका स्पीड कहां से कहां वैरी करता है? आपका स्पीड",
+      "source": "caption",
+      "english_text": "Is. If you increase the speed, it will take you less than 4 hours, right? If you were running at a speed of 100 km/hour, you would have reached there in 2 hours. If we start walking at 200, we will reach within 1 hour. So let's assume it will take only 3 hours. Is it even 3 hours? Yes see, you have to complete it within 8 hours. Now whether you eat in 4 hours or 2 hours or 30 minutes, that is your perspective. So here also yes. So see this has become monotonicity. It has become monotony. How? What did we say? What did we say? Where does your speed vary? your speed"
+    },
+    {
+      "start_time": 1565.84,
+      "end_time": 1600.549,
+      "text": "कहां से कहां? आपका स्पीड वन हो सकता है 2 3 4 5 6 7 8 9 10 11 इस केस में एक पॉइंट तक एक स्पीड तक सारे आंसर नो रहेंगे एक स्पीड तक सारे आंसर नो रहेंगे लेकिन एक स्पीड आएगा जहां पे आंसर पहली बार यस होगा और उससे आगे आप जितना स्पीड बढ़ाएंगे सबका आंसर यस रहेगा यस यस देखिए मोनोटोोनिसिटी बना कि नहीं मोनोटोनिसिटी बन गया है मोनोटोोनिसिटी बन गया है आप किस में इंटरेस्टेड हैं? आप यस वाले में इंटरेस्टेड हैं। लेकिन आपको मिनिमम स्पीड",
+      "source": "caption",
+      "english_text": "From where to where? Your speed can be one 2 3 4 5 6 7 8 9 10 11 In this case, up to one point, all the answers will be no, up to one speed, all the answers will be no, but there will be a speed where the answer will be yes for the first time and beyond that, the more you increase the speed, the answer to all will be yes. See whether monotonicity is formed or not. Monotonicity is formed in which one? Interested? You are interested in yes one. But you need minimum speed"
+    },
+    {
+      "start_time": 1600.559,
+      "end_time": 1635.029,
+      "text": "करनी है। अब ऐसे तो आप बोल सकते हैं कि हम 11 ही कर लेंगे। नहीं, 11 नहीं करना है। पंखा वाला एग्जांपल मिनिमम स्पीड सो दैट यू कैन ईट ऑल द बनाना। सो मिनिमम स्पीड सो इट इज़ यस। ये आपका टर्निंग पॉइंट है। ये आपका टर्निंग पॉइंट है। क्या है ये? फर्स्ट ऑकरेंस। फर्स्ट ऑकरेंस। तो अगर आपका गेस अब अगेन अगर आपका गेस यहां आता है। आपको पता चलता है मेरा आंसर नो है। आपको कहां जाना चाहिए? राइट जाना चाहिए। आपको राइट कैसे जाते हैं? लो = + 1 अगर आपका आंसर यस वाले पे आता है तो क्या करते थे फर्स्ट ऑकरेंस में। याद कीजिए",
+      "source": "caption",
+      "english_text": "Have to do. Now you can say that we will do only 11. No, don't do 11. Fan wala example minimum speed so that you can eat all the banana. So minimum speed so it is yes. This is your turning point. This is your turning point. What is this? First Occurrence. First Occurrence. So if your guess now again if your guess comes here. You realize my answer is no. Where should you go? Should go right. How do you know how to write? Lo = + 1 If your answer is yes, then what did you do in the first occurrence? remember"
+    },
+    {
+      "start_time": 1635.039,
+      "end_time": 1666.07,
+      "text": "क्या करते थे। सबसे पहले तो इसका आंसर लिखते थे। सबसे पहले इसका आंसर लिखते थे और अगर ये है आ गया है तो ये दोनों तो बेकार है ना? राइट वाले कैसे? फर्स्ट ऑकरेंस। आपको तो मिनिमम स्पीड में इंटरेस्टेड है ना? पंखा का एग्जांपल याद कीजिए। आठ नंबर पे आपको अच्छा लगने लगा, तो आप नौ 10 क्यों ट्राई कर रहे हैं? आप थोड़ा कम ट्राई कीजिए कि बिजली का बिल बचे। मिनिमम ट्राई कीजिए। लेफ्ट जाइए। लेकिन इसको लिख लीजिए, इसको लिख लीजिए, गारंटी नहीं है। इसको लिख लीजिए और लेफ्ट जाइए बेटा, लेफ्ट जाइए, लेफ्ट जाइए। ऐसे करके आप करेंगे तो आपको क्या मिल जाएगा लास्ट में? एक आंसर मिल जाएगा। वेरी गुड।",
+      "source": "caption",
+      "english_text": "What did you do? First of all we used to write its answer. First of all we used to write its answer and if this has arrived then both of these are useless, right? How about the one on the right? First Occurrence. You are interested in minimum speed, right? Remember the example of fan. You started liking number eight, so why are you trying nine or ten? You try to reduce your electricity bill a little. Try minimum. Go left. But write it down, write it down, there is no guarantee. Write this down and go left son, go left, go left. If you do this then what will you get in the end? You will get an answer. very good."
+    },
+    {
+      "start_time": 1666.08,
+      "end_time": 1696.95,
+      "text": "आइए इसका कोड लिखते हैं और ट्राई रन करते हैं। तो ये क्वेश्चन बहुत अच्छे से समझिएगा। बहुत फेमस क्वेश्चन है। लगभग लगभग हर कंपनी में पूछा जा चुका है। ठीक है? तो आइए इसका कोड लिखें। सबसे पहले तो आपको एक फंक्शन लिखना पड़ेगा। आपको क्या इस तरीके के क्वेश्चन में हमेशा आपको एक फंक्शन लिखना पड़ेगा। किस चीज के लिए? वो जो गेस से आंसर निकालने का स्टेप है ना हर बार आपको पता चल जाता था। इस बार गेस से आंसर निकालने के लिए एक अलग आपको प्रोसेस करना पड़ेगा। सबसे पहले तो वो लिख लेते हैं कि हिंट। फन इसमें आप क्या पास करेंगे? देखिए इसमें सबसे पहले तो हम अपना वो पाइल्स वाला पास करेंगे जो मेरा फाइल्स",
+      "source": "caption",
+      "english_text": "Let's write its code and try it. So understand this question very well. It is a very famous question. This has been asked in almost every company. Ok? So let's write its code. First of all you have to write a function. Do you always have to write a function in this type of question? For what? You used to know the steps to find the answer from the guess every time. This time you will have to do a different process to get the answer from the guess. First of all they write that hint. Fun What will you pass in this? See, first of all we will pass our files which is my files."
+    },
+    {
+      "start_time": 1696.96,
+      "end_time": 1731.83,
+      "text": "है। एरे है। एरे का लेंथ पास करेंगे। अ इसमें हम ये भी पास कर सकते हैं कि मेरा क्या स्पीड है। अब क्या स्पीड गेस किए हैं वो भी पास करिए। ओके। इतना ही पास करने की ज़रूरत है। अब इसका मतलब क्या है? इसका काम क्या है? अगर आप इसमें पास करते हैं कि मेरा k = 3 स्पीड है तो ये आपको घंटे बता देगा। अब देखिए हर स्पीड से हर स्पीड से कभी ना कभी तो खाएंगे ना। हर स्पीड से कभी ना कभी तो खा ही लेंगे। एक स्पीड से भी कभी ना कभी 2 साल लगेगा लेकिन खा तो लेंगे। तो अगर आपको ये घंटे बता दे मान लीजिए आपको बताएं कि हम पूछे कि बताओ भाई ah मेरा गेस है कि हम तीन स्पीड से खाते हैं कितना घंटा लगेगा?",
+      "source": "caption",
+      "english_text": "Is. It is array. Will pass the length of the array. A. In this we can also pass what is my speed. Now pass the speed gauges done also. Ok. That's all that needs to be passed. Now what does this mean? What is its function? If you pass in that I have k=3 speed then it will tell you the hours. Now see, at every speed, we will eat at some point or the other. At every speed you will eat at some point. Even at one speed it will take sometimes 2 years but we will eat it. So if I tell you these hours, suppose we ask you to tell me brother ah, my guess is that if we eat at three speeds, how many hours will it take?"
+    },
+    {
+      "start_time": 1731.84,
+      "end_time": 1756.87,
+      "text": "ये हमको लौटा दे कि 10 घंटे लगेंगे। उसके बाद हम अपना बाइनरी सर्च वाले में इसको चेक कर लेंगे कि अगर मेरा 10 इज़ ग्रेटर दैन एट है। आंसर है नौ। आठ क्या है? गार्ड साहब के आने का टाइम। लेकिन, अगर मेरा 10 &lt;= 8 है आंसर है यस। उसके हिसाब से हम डिसीजन ले सकते हैं। तो ये हमको आवर रिटर्न कर दे। ओके। कैसे कर दिया किए थे? int h = 0 उसके बाद क्या किए थे? लूप चलाए थे कहां से कहां तक? शुरू से अंत तक। ओके?",
+      "source": "caption",
+      "english_text": "Please return it to us or it will take 10 hours. After that we will check in our binary search tool that if my 10 is greater than eight. The answer is nine. What is eight? Time for the guard to arrive. But, if my 10 <= 8 then the answer is yes. We can take decisions accordingly. So please give us our return. Ok. How was it done? int h = 0 What did you do after that? From where to where were the loops run? From beginning to end. Ok?"
+    },
+    {
+      "start_time": 1756.88,
+      "end_time": 1791.029,
+      "text": "लूप चलाइए और क्या किए थे? सबसे पहले तो h = h +रे ऑफ i / स्पीड बाय स्पीड। याद कीजिए क्या किए थे? 10 / 3 10 / 3 उतना तो होगा ही। ही उतना तो होगा ही। अगर वहां पे छह अकेला है, आपका स्पीड 10 है, 3 है तो 6/3, 2 घंटे तो लगेगा ही लेकिन अगर कोई रिमाइंडर बच जाता है, मान लीजिए सेवन है, तो 7/3 2 तो लगेगा। अगर कोई रिमाइंडर बच जाता है नॉट इक्वल टू 0, 1 घंटा और लगेगा उस रिमाइंडर को साफ करने में। तो, इफ एरे ऑफ़ आई मॉड्यूलस स्पीड नॉट इक्वल टू 0 देन",
+      "source": "caption",
+      "english_text": "Run the loop and what else did you do? First of all h = h +ray of i / speed by speed. Remember what you did? 10 / 3 10 / 3 It will definitely be that much. It will definitely be that much. If there is six alone, your speed is 10, if there is 3 then it will take 6/3, 2 hours but if any reminder is left, say there are seven, then 7/3 will take 2 hours. If any reminder left is not equal to 0, it will take 1 more hour to clear that reminder. So, if array of i modulus speed not equal to 0 then"
+    },
+    {
+      "start_time": 1791.039,
+      "end_time": 1823.51,
+      "text": "h ++। बस हो गया। और रिटर्न hजि। इसका मतलब क्या है? इतने घंटे में खा लेगा। इतने घंटे में ये खा लेगा। उतने घंटे में खा के खत्म कर देगा। अब आइए मेन प्रोग्राम लिखें। या ये तो आपका क्या हो गया? हेल्पर फंक्शन। स्टोरी प्रॉब्लम में हमेशा आपको हेल्पर फंक्शन लिखना पड़ेगा। इसी इसी कारण से ये क्वेश्चन हार्ड लगता है लोगों को कि समझ में नहीं आता है कि करना क्या है? कुछ नहीं करना है। वो जो गेस से आंसर पहले आपको मिल जा रहा था ना अब आपको थोड़ा मेहनत करना पड़ेगा। तो पूरा मेहनत इसी में है। बाकी तो गेस है ना। गेस में क्या मेहनत है? उसमें तो कुछ मेहनत ही नहीं है। कुछ भी गेस करो। लेकिन वो गेस से आंसर निकालने का प्रोसेस में आपको थोड़ा मेहनत थोड़ा दिमाग हर क्वेश्चन में ऐसा ही दिमाग लगाना",
+      "source": "caption",
+      "english_text": "h++. That's it. And return hj. What does it mean? Will eat in so many hours. He will eat it in this number of hours. Will finish eating in that hour. Now let's write the main program. Or what has happened to you? Helper function. In story problems you will always have to write a helper function. It is for this reason that this question seems difficult to people as they do not understand what to do. nothing to be done. The answers which you were getting earlier through guessing, now you will have to work a little harder. So all the hard work is in this. The rest is a guess. What is the hard work in gas? There is no hard work in that. Guess anything. But in the process of finding the answer from the guess, you have to put in a little hard work and a little brain and apply the same brain to every question."
+    },
+    {
+      "start_time": 1823.52,
+      "end_time": 1849.029,
+      "text": "पड़ेगा। ठीक है? अब आइए अपने उस पे आ जाते हैं मेन फंक्शन पे। तो हमारा जो कोको वाला फंक्शन था उसमें आपको क्या-क्या दिया हुआ था? आपको सबसे पहले तो उसमें केला दिया हुआ था कि केला ऐसे रखा हुआ है और आपको एक गार्ड साहब का आने का वो डेडलाइन दिया हुआ था। आपको बताया हुआ था कि गार्ड साहब कितने उसमें घंटे में आएंगे। ऐसा दिया हुआ था। आइए सबसे पहले तो इंट n = a डॉट साइज।",
+      "source": "caption",
+      "english_text": "Will have to. Ok? Now let us come to our main function. So, what was given to you in our cocoa function? First of all, you were given a banana in it that the banana was kept like this and you were given a deadline for the arrival of a guard. You were told that in how many hours the guard will come there. It was a given. Let's first take int n = a dot size."
+    },
+    {
+      "start_time": 1849.039,
+      "end_time": 1874.31,
+      "text": "ठीक है? अब आपको हम क्या बोले थे? आपकी लोएस्ट स्पीड क्या हो सकती है? वन। ओके? हाईएस्ट स्पीड क्या हो सकती है? अ मैक्स ऑफ़ एरे। मैक्स ऑफ़ एरे लिख लीजिएगा लूप चला के। मैक्स ऑफ़ एरे हम इसमें नहीं लिख रहे हैं। मैक्स ऑफ़ एरे जैसे लिखते हैं लिख लीजिएगा। ठीक है? तो मैक्स ऑफ़ एरे निकाल लीजिए क्योंकि उससे ज्यादा स्पीड से कोई फायदा नहीं है। उससे ज्यादा स्पीड से कोई फायदा नहीं है। अच्छा। आइए। एक क्या लेंगे? रिजल्ट ले लेंगे। -1 ले लेंगे।",
+      "source": "caption",
+      "english_text": "ok? Now what did we tell you? What can be your lowest speed? Forest. Ok? What can be the highest speed? A max of array. Write the max of the array by running the loop. Max of array we are not writing in it. Write the Max of Array as you write it. Ok? So find out the max array because there is no benefit in speed more than that. There is no benefit in speeding more than that. Good. Come. What will you take? Will take the results. Will take -1."
+    },
+    {
+      "start_time": 1874.32,
+      "end_time": 1907.669,
+      "text": "Okay? हां और और अगर मान लीजिए ऐसा हो गया कि वो खा ही नहीं पाएगी, वो खा ही नहीं पाएगी। तो इसमें बोला नहीं हुआ है लेकिन शायद आपको वो ah -1 ही रिटर्न कर देना होगा और मान लीजिए वो खा ही नहीं पाएगी। ऐसा है ना कि गार्ड साहब एक ही घंटे में वापस आ गया और एक घंटे में पॉसिबल ही नहीं है खाना तो वो नहीं खा पाएगी। मान लीजिए ये वाले एरे में जहां पे चार पाइल था हम लोग देखे थे मिनिमम 4 घंटे तो लगेगा ही। अब गार्ड बोलेगा कि मैं एक ही घंटे के लिए जा रहा हूं। हम तो तुरंत आ जाऊंगा। तो नहीं खा पाएगी तो -1 रिटर्न कर दीजिएगा। वैसे ये होगा नहीं। क्वेश्चन में ऐसा कोई टेस्ट केस है नहीं। बस आप तैयार हैं? आप मेन काम",
+      "source": "caption",
+      "english_text": "Okay? Yes and and if it happens that she will not be able to eat, she will not be able to eat. So it is not mentioned here but perhaps you will have to return that ah -1 and assume that she will not be able to eat. It is like that the guard returned within an hour and it is not possible to have food within an hour, so she will not be able to eat. Suppose we saw this array where there were four piles, it would take minimum 4 hours. Now the guard will say that I am leaving for only one hour. We will come immediately. If you are not able to eat then return -1. Well this won't happen. There is no such test case in the question. Are you ready? you main work"
+    },
+    {
+      "start_time": 1907.679,
+      "end_time": 1940.07,
+      "text": "कर चुके हैं। अब आपको बस क्या करना है? लो लेस दैन इक्वल टू हाई इसका ड्राई रन भी करेंगे चिंता मत कीजिए सबसे पहले बीच वाला गेस कर लीजिए बीच वाला क्यों अपने हिसाब से कर सकते हैं लेकिन बीच वाला करना अच्छा होता है ठीक है ओके अब क्या करिए इंट आवर इक्वल टू अब ये फंक्शन कॉल करके क्या-क्या इसमें कॉल करना था an और आपका स्पीड जो आप गेस किए हैं जो आप गेस किए हैं ओके अब आपको एक आवर मिल गया कि ये 10 घंटे में खा लेगी कि 20 घंटे में खा लेगी अब इसका आंसर यस या नो कैसे पता चलेगा इफ",
+      "source": "caption",
+      "english_text": "Have done. Now all you have to do is? Low less than equal to high, we will also do its dry run. Don't worry, first of all guess the middle one. Why, you can guess the middle one as per your wish but it is good to do the middle one. Okay, now what to do int hour is equal to. Now after calling this function, what all had to be called in it an and your speed, what you have guessed, what you have guessed, okay, now you got an hour, will it eat in 10 hours or will it eat in 20 hours? Now the answer will be yes or no, how will you know if?"
+    },
+    {
+      "start_time": 1940.08,
+      "end_time": 1969.269,
+      "text": "आवर इज ग्रेटर दैन गार्ड। इफ आवर इज ग्रेटर दैन गार्ड मतलब कि इसको खाने में 10 घंटे लग रहा है। गार्ड तो 8 ही घंटे में आ जाएगा। इसका ये क्या है? ये क्या है? ये नो है। हां आपका आंसर आपका कैसा लगता था वो वाला। देखिए नो नो नो नो नो लगातार यस। तो अगर आप नो पे है तो कहां जाना था? राइट जाना था। तो हमेशा डायग्राम से देख के पता कर लिया करिए। तो आपको क्या करना पड़ेगा? राइट जाना था। राइट कैसे जाते है? नो इज इक्वल टू यस प्लस वन। एल्स, एल्स मतलब यस। यस यस में क्या करते थे?",
+      "source": "caption",
+      "english_text": "Our is greater than guard. If hour is greater than guard it means it is taking 10 hours to eat. The guard will come in just 8 hours. What is this? What is this? This is a no. Yes, how did you like your answer? See no no no no no continuously yes. So if you are on no pay then where to go? Had to go right. So always find out by looking at the diagram. So what do you have to do? Had to go right. How to go right? No is equal to yes plus one. Else, else means yes. What did you do in Yes Yes?"
+    },
+    {
+      "start_time": 1969.279,
+      "end_time": 1995.269,
+      "text": "सबसे पहले तो रिजल्ट में नोट करते थे इस गेस को। क्योंकि आपको फर्स्ट ऑकरेंस चाहिए। आपको फर्स्ट ऑकरेंस चाहिए तो कहां मिलेगा? लेफ्ट में मिल सकता है। इस फर्स्ट ऑकरेंस का क्वेश्चन याद कीजिए। वो प्लीज देखिएगा। बहुत प्यारा क्वेश्चन था वो। उसको हम बहुत अच्छे से समझाए थे। वो प्लीज देखिएगा। ठीक है? गेस माइनस वन। इसको बंद, इसको बंद। रिटर्न रेस्ट। तो देखिए। परफेक्ट बाइनरी सर्च का क्वेश्चन है। लेकिन क्या डिफरेंस है? क्या डिफरेंस है?",
+      "source": "caption",
+      "english_text": "First of all, this gas was noted in the result. Because you want first occurrence. If you want first occurrence, where can you get it? Can be found on the left. Remember the question of this first occurrence. He will please see. That was a very sweet question. We had explained it to him very well. He will please see. Ok? Guess minus one. Turn this off, turn this off. Return Rest. So see. There is a question of perfect binary search. But what is the difference? What is the difference?"
+    },
+    {
+      "start_time": 1995.279,
+      "end_time": 2029.59,
+      "text": "बस आप जो ये काम कर रहे हैं ना ये वाला इसमें आपको कितना टाइम लग रहा है? ऑर्डर ऑफ n। ऑर्डर ऑफ n टाइम लग रहा है। और टोटल बाइनरी सर्च में कितना टाइम लगेगा? करीब-करीब log n। तो इसकी टोटल टाइम कॉम्प्लेक्सिटी n log n। क्यों? क्योंकि हर बार बाइनरी सर्च में कितना लगता था? log n क्योंकि आपको ये गेस का आंसर तुरंत मिल जाता था। गेस का आंसर तुरंत मिल जाता था। अब तुरंत नहीं मिल रहा है। अब आपको काम करना पड़ रहा है उसके लिए तो n log। तो हम बोले थे आपको ये काम ही सोचना पड़ेगा। हर प्रॉब्लम में आपको ये वाला हेल्पर सोचना पड़ेगा कि जो हम गेस कर रहे हैं उसका आंसर कैसे मिलेगा। बस बस एक चीज अगर आप सोच लिए कोई भी क्वेश्चन बन जाएगा।",
+      "source": "caption",
+      "english_text": "Just this work that you are doing, how much time is it taking you? Order of n. The order is taking n time. And how much time will it take for total binary search? Approximately log n. So its total time complexity n log n. Why? Because how much did it take to do a binary search every time? log n because you could get the answer to this guess immediately. The answer to the guess was available immediately. Now it is not available immediately. Now you have to work for that n log. So we said that you will have to think about this work only. In every problem, you will have to think about how to get the answer to what we are guessing. Just one thing, if you think about it, any question will become."
+    },
+    {
+      "start_time": 2029.6,
+      "end_time": 2060.31,
+      "text": "आइए इसका ड्राई रन करके देखें। इसका एक ब्यूटीफुल ड्राई रन करके देख लेते हैं। तो क्या ड्राई रन करें? उतना बड़ा नहीं। इसी इसी एग्जांपल पे जो हम लोग पढ़ रहे थे उसी पे करते हैं। तो 3 6 7 11 3 6 7 11। ठीक है? 0 1 2 3 शुरुआत में हम क्या बोले थे? लो क्या होगा? अह वन क्योंकि एक तो खाना ही पड़ेगा। हाई क्या होगा आपके एरे का मैक्सिमम जो भी मैक्सिमम पाइल रखा हुआ है 11। आइए गेस करते हैं। तो क्या शुरू में क्या आएगा गेस? 1 + 11 / 2 मतलब सिक्स।",
+      "source": "caption",
+      "english_text": "Let's try its dry run. Let's do a beautiful dry run of it. So what to do a dry run? Not that big. We do it on the same exam that we were studying. So 3 6 7 11 3 6 7 11. Ok? 0 1 2 3 What did we say in the beginning? Lo what will happen? Ah one because one has to be eaten. What will be the maximum of your array whatever is the maximum pile kept 11. Let's guess. So what gas will come in the beginning? 1 + 11 / 2 means six."
+    },
+    {
+      "start_time": 2060.32,
+      "end_time": 2094.55,
+      "text": "देखिए सिक्स में देखते हैं काम होता है कि नहीं। तो आइए सिक्स में देखते हैं। सिक्स में क्या होगा देखिए। इसको खाने में कितना टाइम लगेगा? 3 / 6 हां अब देखिए आप पे बस तीन केले हैं तो कितना? 3 / 6 3 / 6 तो ज़ीरो होता है। लेकिन 3 मॉड्यूलस 6 इज़ नॉट इक्वल टू 0 मतलब कुछ रिमाइंडर रिमाइंडर बच गया ना? पूरा थ्री ही बच गया। तो एक प्लस करना पड़ेगा तो 1 घंटा। तो इसको खाने में कितना घंटा लगेगा? 1 घंटा। इसको खाने में 6 / 6 1 घंटा। इसको खाने में 7 / 6 1 घंटा। लेकिन 7 मॉड्यूलस 6 इज़ नॉट इक्वल टू ज़ीरो। तो दो घंटे। 11 / 6 इज़ वन। लेकिन 11 मॉड्यूलस 6 इज़ फाइव। मतलब नॉट इक्वल टू",
+      "source": "caption",
+      "english_text": "Let's see if it works in six. So let's look at six. Let's see what happens in six. How much time will it take to eat this? 3 / 6 Yes, now see if you have only three bananas, how much? 3 / 6 3 / 6 is zero. But 3 modulus 6 is not equal to 0 meaning some reminder reminder left, right? Only three survived. So if you have to do one plus then 1 hour. So how many hours will it take to eat it? 1 hour. 6/6 1 hour to eat this. 7/6 1 hour to eat this. But 7 modulus 6 is not equal to zero. So two hours. 11 / 6 is one. But 11 modulus 6 is five. means not equal to"
+    },
+    {
+      "start_time": 2094.56,
+      "end_time": 2124.23,
+      "text": "ज़ीरो। एक और घंटा उसको साफ़ करने में। एक और घंटा। तो कितना हुआ? 1 + 1 2 4 5 6 आपके गार्ड साहब कब आने वाले हैं? आपके गार्ड साहब इस हिसाब से 8 घंटे में आने वाले हैं। तो क्या सिक्स में हो जाएगा? यस सिक्स में हो जाएगा। इसका आंसर आया यस। यस मतलब इसको रिजल्ट में लिख लीजिए। इसको रिजल्ट में लिख लीजिए और लेफ्ट चलिए। देखते हैं कुछ और अच्छा मिलता है कि नहीं। तो लेफ्ट कैसे जाते हैं? हाई इज इक्वल टू गेस - 1। अब क्या हो गया हाई? फाइव हो गया। गेस क्या आएगा? थ्री थ्री थ्री। आइए थ्री का देखते हैं। थ्री में क्या होगा?",
+      "source": "caption",
+      "english_text": "Zero. Another hour to clean it. one more hour. So how much did it cost? 1 + 1 2 4 5 6 When is your guard coming? According to this, your guard sir is going to come in 8 hours. So will it happen in six? Yes, it will be done in six. The answer was yes. Yes means write it in the result. Write this in the result and move left. Let's see if we get something better. So how to go left? High is equal to guess - 1. What happened now Hai? It's five. What gas will come? Three three three. Let's look at three. What will happen in three?"
+    },
+    {
+      "start_time": 2124.24,
+      "end_time": 2157.589,
+      "text": "आइए थ्री का देखते हैं कि थ्री में क्या आंसर मिलता है आपको। अब आपकी स्पीड थ्री है। तो देखते हैं थ्री में 10 मिलेगा लेकिन देख लेते हैं प्रोग्राम से भी चलता है कि नहीं। ठीक है? थ्री। 3 / 3 क्या होता है? वन। क्या 3 मॉड्यूलस 3 ज़ीरो है? हां, ज़ीरो है। मतलब कोई रिमाइंडर नहीं, कुछ ऐड करने की ज़रूरत नहीं है। 6 / 3 2, 6 मॉड्यूलस 3 0 कुछ ऐड करने की ज़रूरत नहीं है। 7 / 3 इज़ टू। लेकिन 7 मॉड्यूलस 3 इज़ वन तो एक और। तीन। 11 मॉड्यूलस 11 / 3 इज़ थ्री। बट 11 मॉड्यूलस 3 इज़ नॉट ज़ीरो। तो रिमाइंडर बचेगा तो एक और घंटे। एक और घंटे। कितना? 1 + 2 3 6 9 10। अब इसको 10",
+      "source": "caption",
+      "english_text": "Let us see what answer you get in three. Now your speed is three. So let's see if we get 10 in three, but let's see whether the program works or not. Ok? Three. What is 3/3? Forest. Is 3 modulus 3 zero? Yes, it is zero. Meaning no reminder, no need to add anything. 6 / 3 2, 6 modulus 3 0 No need to add anything. 7 / 3 is two. But 7 modulus 3 is one so one more. Three. 11 Modulus 11 / 3 Is Three. But 11 modulus 3 is not zero. So the reminder will last for one more hour. One more hour. How much? 1 + 2 3 6 9 10. now it is 10"
+    },
+    {
+      "start_time": 2157.599,
+      "end_time": 2191.75,
+      "text": "घंटे लग रहा है। गार्ड साहब कब आएंगे? आठ ही घंटे में आ जाएंगे। तो क्या ये खा पाएगी? नहीं। नो। नो का मतलब ऐसा नो नो नो नो नो यस यस यस यस नो के राइट में है यस आ जाइए राइट राइट कैसे जाते हैं लो इज इक्वल टू गेस + 1 हाई = 5 आपका गेस क्या आया फोर फोर फोर आइए फोर देखते हैं आइए फोर देखते हैं आइए फोर देखा जाए फोर से देखिए 3 / 4 इज़ ज़ीरो लेकिन 3 मॉड्यूलस 4 इज़ नॉट इक्वल टू 0 तो इसमें 1 घंटा लगेगा 6/4 इज़ वन लेकिन 6 मॉड्यूलस 2 इज़ अह 6 मॉड्यूलस 4 इज़",
+      "source": "caption",
+      "english_text": "It feels like hours. When will the guard come? Will arrive in eight hours. So will she be able to eat? No. No. No means so no no no no no yes yes yes yes no is to the right of yes yes come right how to go right low is equal to guess + 1 high = 5 what is your guess four four four let's see four let's see four let's see four let's see four 3/4 is zero but 3 modulus 4 is not equal to 0 so it will take 1 hour 6/4 is One But 6 Modulus 2 Is Ah 6 Modulus 4 Is"
+    },
+    {
+      "start_time": 2191.76,
+      "end_time": 2226.55,
+      "text": "नॉट नॉट इक्वल टू 0 एक और दो 7 / 4 इज़ वन लेकिन 7 मॉड्यूलस 4 में रिमाइंडर बच जाता है दो 11 / 4 इज़ टू लेकिन 11 मॉड्यूलस 4 इज़ नॉट इक्वल टू 0 3 1 + 2 3 5 8 एग्जैक्टली एट तो एट में हो जाएगा हां एट में हो जाएगा क्योंकि आप मान के चलिए कि अगर आप एट में खा लिए और एट में वो आ रहा है तो हो जाता है हो जाता है तो ये क्या है यस यस में क्या करते थे रिजल्ट को अपडेट करते थे फोर और लेफ्ट जाके एक बार देख लेते थे एक बार लेफ्ट जाके देख लेते थे। लो फोर और हाई इक्वल टू थ्री। अब देखिए आपका लो हाई से बड़ा हो गया। मतलब ये",
+      "source": "caption",
+      "english_text": "Not Not Equal To 0 One And Two 7 / 4 Is One But 7 Modulus 4 Saves The Reminder Two 11 / 4 Is Two But 11 Modulus 4 Is Not Equal To 0 3 1 + 2 3 5 8 Exactly At So Will Be At At Yes Will Be At At Because Let's Assume If You Eat At At And It's Coming At At. If it happens, then what is this? Yes, yes, what did we do in this? We used to update the result, we used to go four and left and see it once, we used to see it once by going left. Low equals four and high equals two three. Now see your low has become bigger than the high. means this"
+    },
+    {
+      "start_time": 2226.56,
+      "end_time": 2254.87,
+      "text": "तो बेतुका बात है कि मेरा स्टार्ट स्पीड फोर है और एंड स्पीड थ्री है तो ये तो बेतुका बात है। क्वेश्चन खत्म हो गया। आपका आंसर क्या आया? फोर। मतलब फोर इज द मिनिमम स्पीड। और है भी देखिए। अगर आप फोर से कम करेंगे थ्री। तीन पे 10 घंटा लग रहा था। फोर पे 8 घंटा लग रहा है तो फोर आपका क्या आया? टर्निंग पॉइंट हो गया। तो इस हिसाब से आप फोर कर सकते हैं। तो आज के लिए बस इतना ही। और ये क्वेश्चन जरूर सॉल्व कीजिएगा। और आप अगर आपको अगर मन करता है तो शीट के सारे शीट में आपको बहुत सारे क्वेश्चन इसके नीचे मिलेंगे। वो सब सॉल्व कीजिएगा। सब ऐसे ही सॉल्व होता है।",
+      "source": "caption",
+      "english_text": "So it is absurd that my start speed is four and end speed is three. Question is over. What was your answer? Four. Meaning four is the minimum speed. See there is more too. If you reduce from four it becomes three. It was taking 10 hours at three. It's taking 8 hours on four, so what's your four? The turning point has happened. So according to this you can do four. So that's all for today. And definitely solve this question. And if you feel like it, you will find many questions below it in all the sheets. Solve all that. Everything is solved like this."
+    },
+    {
+      "start_time": 2254.88,
+      "end_time": 2260.88,
+      "text": "हम आने वाले दिनों में आपको बता देंगे कैसे क्या होता है। ठीक है? चलिए मिलते हैं।",
+      "source": "caption",
+      "english_text": "We will tell you in the coming days how and what happens. Ok? Let's meet."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

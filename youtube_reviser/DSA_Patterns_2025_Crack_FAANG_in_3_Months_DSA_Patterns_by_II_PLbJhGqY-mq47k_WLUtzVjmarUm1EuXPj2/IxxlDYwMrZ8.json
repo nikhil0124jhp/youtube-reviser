@@ -1,0 +1,443 @@
+{
+  "video_id": "IxxlDYwMrZ8",
+  "video_title": "DSA PATTERNS Episode 17 | Linked List Slow & Fast Pointer Technique: Introduction",
+  "video_number": 17,
+  "chunks": [
+    {
+      "start_time": 2.149,
+      "end_time": 33.59,
+      "text": "आ जाइए। आज शुरू होने वाला है लिंक लिस्ट पैटर्न्स। और कौन सा पैटर्न? स्लो एंड फास्ट पॉइंटर्स। अब देखिए बहुत इंपॉर्टेंट है। बहुत लिंक लिस्ट एक ऐसा टॉपिक है जिसके बारे में आप 100, 200, 500 क्वेश्चन करेंगे लेकिन आपको पूरा नहीं समझ में आएगा। और ऐसा भी आप कर सकते हैं कि जो हम बता रहे हैं वो 10 क्वेश्चन आप करेंगे तो आपको लिंक लिस्ट के जो भी कैटेगरीज़ ऑफ़ क्वेश्चंस हैं वो समझ में आ जाएंगे। तो आपको 80% तो समझ में आ जाएगा। ठीक है? पूरा लिंक लिस्ट या तो पूरा एरे ऐसा कोई नहीं खत्म कर सकता। इसीलिए ये टॉपिक नहीं है। ये लिंक लिस्ट टॉपिक की प्लेलिस्ट नहीं है। ये लिंक लिस्ट में जो क्वेश्चन आते हैं उनके पैटर्न्स की प्लेलिस्ट है।",
+      "source": "caption",
+      "english_text": "Come over. Linked List Patterns starting today. And which pattern? Slow and fast pointers. Now see, this is very important. Very link list is such a topic on which you will do 100, 200, 500 questions but you will not understand completely. And you can also do this that if you do the 10 questions that we are telling you, then you will understand all the categories of questions in the link list. So you will understand 80%. Ok? No one can finish the entire linked list or the entire array. That's why this is not a topic. This link list is not a playlist of topics. This link is a playlist of the patterns of questions that appear in the list."
+    },
+    {
+      "start_time": 33.6,
+      "end_time": 67.51,
+      "text": "समझ में आई बात? चलिए ध्यान से देखिएगा। बहुत इंपॉर्टेंट है। आज का लेक्चर आप समझ गए तो 40% ऑफ लिंक लिस्ट क्वेश्चन यहीं खत्म हो जाएगा। ठीक है? आज का लेक्चर बस समझ जाइए। 40% ऑफ लिंक लिस्ट क्वेश्चन क्या हो जाएगा? खत्म हो जाएगा। ठीक है? आज जो ये पैटर्न हम लोग शुरू करने वाले हैं, उसका क्या नाम है? स्लो एंड फास्ट पॉइंटर्स। अब देखिए, स्लो एंड फास्ट पॉइंटर्स होता क्या है? क्यों यूज़ करते हैं? कब यूज़ करते हैं? कैसे यूज़ करते हैं? सबके बारे में बात करेंगे। तो जैसा कि जो रेगुलर स्टूडेंट्स हैं, सबसे पहले हम लोग क्या पढ़ते हैं कि क्यों होता है, क्या होता है और फ्लो चार्ट। फ्लो चार्ट। ठीक",
+      "source": "caption",
+      "english_text": "Did you understand? Let us look carefully. It is very important. If you understand today's lecture, then the 40% off link list questions will end here. Ok? Just understand today's lecture. 40% Off Link List Question What will happen? It will end. Ok? What is the name of this pattern that we are going to start today? Slow and fast pointers. Now see, what are slow and fast pointers? Why use? When to use? How to use? Will talk about everything. So as we are regular students, first of all what we read is why it happens, what happens and flow chart. Flow chart. okay"
+    },
+    {
+      "start_time": 67.52,
+      "end_time": 93.59,
+      "text": "है? चलिए, अभी तक जो जो हम लोग पैटर्न पढ़े हैं, उसमें सबसे पहले फ्लो चार्ट में क्या स्टेप था कि किस किस डेटा स्ट्रक्चर का क्वेश्चन है। मतलब कि जो आपको क्वेश्चन दिया है, क्या वो एरे का है? या तो स्ट्रिंग का है या तो लिंक लिस्ट का है। यही तीन डेटा स्ट्रक्चर होता है। इसके अलावा और कोई डेटा स्ट्रक्चर नहीं होता है। है ना? डेटा स्ट्रक्चर मतलब सिंपल डेटा स्ट्रक्चर। अह ट्री जो होता है, ट्री भी एक तरीके का लिंक लिस्ट है। डीपी के जो क्वेश्चन है वो भी एक तरीके के एरे हैं।",
+      "source": "caption",
+      "english_text": "Is it? Well, in all the patterns that we have read till now, the first question is what was the step in the flow chart and which data structure. Meaning, is the question given to you an array? Either it is of string or it is of linked list. These are the three data structures. Apart from this there is no other data structure. Isn't it? Data structure means simple data structure. Ah, whatever a tree is, a tree is also a type of link list. The questions of DP are also a type of array."
+    },
+    {
+      "start_time": 93.6,
+      "end_time": 127.59,
+      "text": "तो बेसिकली बेसिकली मोटे-मोटे तौर पे एरे होता है, स्ट्रिंग होता है, लिंक लिस्ट होता है। स्ट्रिंग भी एक तरीके का एरे ही होता है। तो अभी तक पहला स्टेप हम लोग क्या समझ रहे थे कि डेटा स्ट्रक्चर देख के अगर हम लोग पता कर पाएं जैसे अगर स्लाइडिंग विंडो का क्वेश्चन है तो बहुत कम चांस है कि लिंक लिस्ट के क्वेश्चन में स्लाइडिंग विंडो नहीं लगता है। कभी नहीं लगता है। क्यों? क्योंकि लिंक लिस्ट में मूवमेंट करनी बहुत मुश्किल होती है। आप आगे जा सकते हैं। आगे से पीछे नहीं आ सकते हैं। अगर सिंगल लिंक लिस्ट है तो एरे में ये चीज आसान होती है। उसी तरीके से टू पॉइंटर टू पॉइंटर लिंक लिस्ट में बहुत कम लगता है। क्यों? सेम बात है। मूवमेंट करनी मुश्किल होती है। आगे पीछे आगे पीछे करना बहुत मुश्किल होता है। आपको आगे ही जाना",
+      "source": "caption",
+      "english_text": "So basically basically there is array, there is string, there is linked list. String is also a type of array. So till now, what we were understanding in the first step is that if we can find out by looking at the data structure, like if there is a question of sliding window, then there is very less chance that there is no sliding window in the question of linked list. Never seems to happen. Why? Because it is very difficult to make movement in the link list. you can go ahead. Cannot come from front to back. If it is a single linked list then this thing is easier in array. In the same manner two pointer to pointer link list seems very short. Why? Same thing. It is difficult to move. It is very difficult to switch back and forth. you should go ahead"
+    },
+    {
+      "start_time": 127.6,
+      "end_time": 155.67,
+      "text": "है। अगर सिंगल है तो आप पीछे नहीं आ सकते। इसीलिए। लेकिन लेकिन लेकिन यह एक ऐसा यूनिक पॉइंटर है। ऐसा यूनिक पैटर्न है जिसमें ऐसा यूनिक पैटर्न है। अब देखिए। आमतौर पे क्या होता है? लोग बताते हैं कि ये जो स्लो एंड फास्ट पॉइंटर है ये क्या होता है? हम अभी थोड़ी देर में बताएंगे। लेकिन आमतौर पे लोग क्या बताते हैं कि ये बेटा लिंक लिस्ट का पैटर्न है। लिंक लिस्ट का पैटर्न है। लेकिन ये लिंक लिस्ट का पैटर्न नहीं है। हम लोग इसको पढ़ना शुरू करेंगे लिंक लिस्ट से। हम लोग क्या करेंगे? इसको शुरू करेंगे लिंक लिस्ट से।",
+      "source": "caption",
+      "english_text": "Is. If you are single then you cannot come back. That's why. But but but it's such a unique pointer. There is such a unique pattern that has such a unique pattern. watch now. What usually happens? People ask what is this slow and fast pointer? We will tell you shortly. But what people generally say is that this is the pattern of beta link list. Linked list is a pattern. But this is not the pattern of the link list. We will start reading it from the link list. What will we do? We will start this from the link list."
+    },
+    {
+      "start_time": 155.68,
+      "end_time": 181.11,
+      "text": "लेकिन आप देखेंगे ये क्वेश्चन जो है ना ये एरे के क्वेश्चन में भी यूज हो सकता है। ये अगर किसी का क्वेश्चन नहीं है। अगर सिंगल नंबर का क्वेश्चन है मतलब सिंगल कोई n दिया हुआ है n से आपको कोई आउटपुट लाना है वहां भी यूज़ हो जाता है। अब कैसे यूज़ हो जाता है ये हम लोग देखेंगे लेकिन लेकिन लेकिन समझने के लिए शुरू करेंगे इसको लिंक लिस्ट से पढ़ना। इस फ्लो चार्ट में पहला स्टेप जो होता है ना आपका जो पहला स्टेप है कि डेटा स्ट्रक्चर देख के कैसे पता चलेगा ये स्टेप इसमें एप्लीकेबल नहीं है।",
+      "source": "caption",
+      "english_text": "But you will see that this question can also be used in array questions. If this is not a question from anyone. If there is a single number question, that is, a single n is given and you have to get some output from n, then it is used there also. Now we will see how it is used, but but to understand, we will start reading it from the link list. The first step in this flow chart, your first step is how to know by looking at the data structure, this step is not applicable in it."
+    },
+    {
+      "start_time": 181.12,
+      "end_time": 213.43,
+      "text": "क्या है? नहीं है। क्यों? एरे में भी ये लग सकता है। हम सब दिखाएंगे कैसे लगता है। स्ट्रिंग में भी लग सकता है। लिंक लिस्ट में भी लग सकता है और तो और सिंगल वेरिएबल का क्वेश्चन है वहां भी लग सकता है। तो डेटा स्ट्रक्चर देख के आप डिसाइड नहीं कर सकते हैं कि ये किसका क्वेश्चन है? सही बात है? आगे आते हैं। अब कब आप डिसाइड कर सकते हैं? बहुत बहुत मजबूती से कब डिसाइड कर सकते हैं। अगर अगर क्वेश्चन में किसी भी तरीके का साइकल आपको निकालना हो या तो लूप निकालना हो। या तो आपको पता करना हो कि कोई रिपीिटेटिव बिहेवियर है या नहीं,",
+      "source": "caption",
+      "english_text": "What is it? Not there. Why? This can be done in array also. We will show everyone how it feels. Can also be used in string. It can also be used in link list and if there is a question of single variable, it can be used there also. So by looking at the data structure you cannot decide whose question it is? That's correct? Come forward. When can you decide now? When can you decide very, very strongly? If you have to find any type of cycle in the question or you have to find a loop. Either you want to find out whether there is any repetitive behavior or not,"
+    },
+    {
+      "start_time": 213.44,
+      "end_time": 247.03,
+      "text": "रेपिटेटिव बिहेवियर है या नहीं। अगर ध्यान से सुनिए। अगर क्वेश्चन में हो साइकिल निकालना है, लूप निकालना है, किसी भी तरीके का रेपिटेटिव बिहेवियर निकालना नहीं है, पता करना है। क्या करना है? पता करना है। पता करना है कि है कि नहीं? है कि नहीं। साइकिल है कि नहीं? कोई लूप है कि नहीं? ये जो नंबर है ये किसी रिपीिटेटिव बिहेवियर में काम कर रहा है या नहीं। ठीक है? फॉर एग्जांपल जो डेसिमल का क्वेश्चन पढ़ते थे ना क्लास नाइन 10 के मैथ्स में कि रिकरिंग डेसिमल मतलब मान लीजिए कोई ऐसा",
+      "source": "caption",
+      "english_text": "Is it repetitive behavior or not? If you listen carefully. If the question is to find out a cycle, to find out a loop, not to find out any kind of repetitive behavior, it has to be found out. What is the plan? Have to find out. Want to know whether it is or not? Is it or not. Is it a bicycle or not? Is there a loop or not? Is this number working in any repetitive behavior or not? Ok? For example, those who used to read decimal questions in Class 9th 10th Maths that recurring decimal means, suppose someone like this"
+    },
+    {
+      "start_time": 247.04,
+      "end_time": 276.39,
+      "text": "डेसिमल 3.171717। अब देखिए थ्री तो ठीक है। आफ्टर डेसिमल 1 से देखिए बार-बार रिपीट हो रहा है। रिपीट हो रहा है। तो इसको क्या बोलते थे? इसको बोलते थे रिकरिंग डेसिमल। इस तरीके का अगर कोई क्वेश्चन आ जाए कि पता करो कि ऐसा हो रहा है कि नहीं? पता करो क्या पता करो? कहीं पे साइकिल है या नहीं? लूप बन रहा है या नहीं? रेपिटेटिव बन रहा है कि नहीं? तो पक्का पक्का क्या यूज़ होगा? स्लोस्ट पॉइंटर। स्लोस्ट पॉइंटर इसके अलावा और कुछ यूज़ हो ही नहीं सकता है दुनिया में।",
+      "source": "caption",
+      "english_text": "Decimal 3.171717. Now look, three is fine. See after decimal 1, it is repeating again and again. Repeating. So what was this called? This was called recurring decimal. If a question like this arises, find out whether this is happening or not? Find out what? Is there a bicycle somewhere or not? Is a loop being formed or not? Is it becoming repetitive or not? So what will be the use for sure? Slowest pointer. Slowest pointer cannot be used for anything else in this world."
+    },
+    {
+      "start_time": 276.4,
+      "end_time": 310.629,
+      "text": "दुनिया में यूज़ कुछ हो ही नहीं सकता है। तो सबसे पहला हिंट तो ये तीनों। ठीक है? अब चलिए इसी पे बात करते हैं। अब आगे का फ्लो चार्ट अभी बता दें या बाद में बताएं। चलिए इसी पे बात करिए। अभी हम लोग साइकिल पे और भी इसके हैं। लेकिन अगर आपको क्या दिखता है? साइकिल। साइकिल से जुड़ी कोई भी चीज़, साइकिल का कोई भी सिनोनिम उसका कोई भी हिंदी वर्ड, इंग्लिश वर्ड आपको दिखता है तो आप समझ जाते हैं फास्ट एंड स्लो पॉइंटर। ठीक है? अब ये पैटर्न होता क्या है? मतलब ये फास्ट एंड स्लो पॉइंटर होता क्या है? इसको ऐसे समझिए। आपके पास एक मैदान है। ठीक है? ठीक है? आपके पास क्या",
+      "source": "caption",
+      "english_text": "Nothing can be of any use in this world. So the first hint is these three. Ok? Now let's talk about this. Now tell us the further flow chart now or later. Let's talk about this. Now there are more of us on bicycles. But what do you see? Bicycle. If you see anything related to bicycle, any synonym of bicycle, any Hindi word, English word, then you understand fast and slow pointer. Ok? Now what is this pattern? Meaning, what is this fast and slow pointer? Understand it like this. You have a field. Ok? Ok? what do you have"
+    },
+    {
+      "start_time": 310.639,
+      "end_time": 343.67,
+      "text": "है? एक मैदान है। मैदान गोल होता है। गोल होता है। अब आप यहां पे हैं। आपका नाम है ए और आपका बी आपका जो दोस्त है वो यहां पे है। वो यहां खड़ा है। आप लोग दोनों दौड़ रहे हैं। किस तरीके से दौड़ रहे हैं? किस तरफ दौड़ रहे हैं? एक ही तरफ दौड़ रहे है। मतलब मान लीजिए आप भी इधर इधर इधर से दौड़ रहे हैं और आपका दोस्त भी इधर से दौड़ रहा है। ठीक है। अब इमेजिन कीजिए अगर आप लोग सेम स्पीड से दौड़ रहे हैं। आप लोग कैसे दौड़ रहे हैं? सेम स्पीड से दौड़ रहे हैं तो क्या होगा कि अगर आप आप कहीं पे स्टार्ट किए आप मान लीजिए यहां पे स्टार्ट किए और आपका दोस्त यहां पे स्टार्ट किया।",
+      "source": "caption",
+      "english_text": "Is it? There is a field. The field is round. Is round. Now you are here. Your name is A and your name is B. Your friend is here. He is standing here. Both of you guys are running. Which way are you running? Which way are you running? Running in the same direction. Meaning, suppose you are also running here and there and your friend is also running here and there. Ok. Now imagine if you guys are running at the same speed. How are you guys running? If you are running at the same speed, what will happen if you start somewhere, let's say you start here and your friend starts here."
+    },
+    {
+      "start_time": 343.68,
+      "end_time": 377.83,
+      "text": "आप लोग सेम स्पीड से दौड़ रहे हैं तो आप लोग कभी एक दूसरे को कैच नहीं कर पाएंगे। आप लोग कभी एक दूसरे को कैच नहीं कर पाएंगे। मतलब हमेशा आप उसके पीछे रहेंगे वो आपसे आगे रहेगा। सिंपल बात है ना? सेम स्पीड से दौड़ रहे हैं तो हमेशा आप उसके इक्वल अह पीछे रहेंगे वो आपसे आगे रहेगा। ठीक है? लेकिन लेकिन लेकिन अगर आप मान लीजिए दौड़ रहे हैं 1 कि.मी. पर आवर से। और आपका जो दोस्त है वह कितने से? 2 कि.मी. पर आर से। मतलब वो आपसे दुगने तेजी से दौड़ रहा है। वो आपसे डबल तेजी से दौड़ रहा है। डबल तेजी से दौड़ रहा है। तो कभी ना कभी कभी ना कभी क्या होगा ना कि मान",
+      "source": "caption",
+      "english_text": "If you guys are running at the same speed then you guys will never be able to catch each other. You guys will never be able to catch each other. Meaning you will always be behind him and he will always be ahead of you. It's a simple thing isn't it? If you are running at the same speed, you will always be equal behind him and he will always be ahead of you. Ok? But but but if you suppose you are running 1 km. But from the hour. And how many friends are you? 2 km But from R. Meaning he is running twice as fast as you. He is running twice as fast as you. Running double fast. So never ever never never what will happen right?"
+    },
+    {
+      "start_time": 377.84,
+      "end_time": 412.309,
+      "text": "लीजिए आप पहले यहां थे। आपका दोस्त यहां था। स्टार्टिंग पॉइंट मान रहे हैं। अगले घंटे क्या होगा? आप थोड़ा आगे बढ़ेंगे। आप थोड़ा आगे बढ़ेंगे। लेकिन क्योंकि आपका दोस्त डबल तेजी से दौड़ रहा है, वो बहुत आगे बढ़ जाएगा, आपसे दुगना आगे बढ़ जाएगा, वो डबल दौड़ रहा है। अगले घंटे क्या होगा ना? आप थोड़ा और आगे बढ़ेंगे। और आपका दोस्त बहुत तेजी से दौड़ रहा है तो वो स्टार्ट आपके आगे से किया था। लेकिन वो आपके पीछे आ जाएगा। अगर ग्राउंड में दौड़ रहे होंगे ओवरटेक करने में आ जाएगा। अगले घंटे क्या हो सकता है? अगले घंटे क्या हो",
+      "source": "caption",
+      "english_text": "Suppose you were here earlier. Your friend was here. Considering starting point. What will happen in the next hour? You will move forward a little. You will move forward a little. But because your friend is running twice as fast, he will go much further, twice as far as you, he is running double. What will happen in the next hour? You will move a little further. And your friend is running very fast, so he started ahead of you. But he will come after you. If you are running on the ground, you will be able to overtake. What could happen in the next hour? what happens in the next hour"
+    },
+    {
+      "start_time": 412.319,
+      "end_time": 447.11,
+      "text": "सकता है? आप आप कहीं पे रहेंगे। आप कहीं पर रहेंगे और आपका दोस्त जो कि डबल तेजी से दौड़ रहा है। आपका दोस्त जस्ट आपके बगल में आ जाएगा। जस्ट आपके क्या आ जाएगा? बगल में आ जाएगा। ये बात बहुत नेचुरल है। बहुत समझ में आती है। आप धीरे-धीरे धीरे धीरे दौड़ रहे हैं। आपका दोस्त तेजी से दौड़ रहा है। आपका दोस्त तेजी से दौड़ रहा है। तो कभी ना कभी तो ये आपको ओवरटेक करेगा। कभी ना कभी तो ओवरटेक करेगा। ओवरटेक करने का मतलब क्या है? जैसे ही ये आपको ओवरटेक किया। जैसे ही ये आपको क्या किया? ओवरटेक ओवरटेक ओवरटेक। आप समझ जाइए कि ये जो ग्राउंड है ना जहां पे आप दौड़ रहे हैं ये",
+      "source": "caption",
+      "english_text": "could? You will stay somewhere. You will be somewhere and your friend who is running double fast. Your friend will just appear next to you. Just what will come to you? Will come next. This thing is very natural. Makes a lot of sense. You are running slowly and slowly. Your friend is running fast. Your friend is running fast. So sooner or later it will overtake you. Will overtake sooner or later. What does overtake mean? As soon as it overtakes you. As soon as this happened to you what? Overtake Overtake Overtake. You must understand that this is the ground on which you are running."
+    },
+    {
+      "start_time": 447.12,
+      "end_time": 479.51,
+      "text": "जो ग्राउंड है ये साइकिल ग्राउंड है। मतलब सर्कल वाला ग्राउंड है। सर्कल वाला ग्राउंड है। ठीक है? क्यों ये सर्कल वाला ग्राउंड है? आप इसको कैसे समझिए कि ये सर्कल वाला ग्राउंड है। फॉर एग्जांपल आपका ग्राउंड नहीं होता। आप लोग रोड पे दौड़ रहे होते। आप लोग कैसे दौड़ रहे होते हैं? रोड पे। रोड इनफाइनाइट है। इनफाइनाइट लेंथ का है। यहां पे देखिए। यहां पे मान लीजिए आप यहां पे हैं। आपका दोस्त यहां पर है। आप 1 कि.मी. प्रति घंटे से दौड़ रहे हैं। वह 2 कि.मी. प्रति घंटे से दौड़ रहा है। अब अब क्या होगा ना कि आपके बीच की दूरी बढ़ती जाएगी। आपके बीच की दूरी बढ़ती जाएगी। फॉर एग्जांपल अगले बार",
+      "source": "caption",
+      "english_text": "The ground is bicycle ground. Meaning there is a circle ground. There is a circled ground. Ok? Why is this a circle ground? How do you understand that this is a circle ground? For example is not your ground. You guys would be running on the road. How are you guys running? On the road. The road is infinite. Is of infinite length. Look here. Suppose you are here. Your friend is here. You are 1 km. Running every hour. He is 2 km. Running every hour. What will happen now is that the distance between you will increase. The distance between you will increase. For example next time"
+    },
+    {
+      "start_time": 479.52,
+      "end_time": 504.869,
+      "text": "क्या होगा? अगले बार क्या होगा? अगले बार क्या होगा कि आप यहां आएंगे। आपका दोस्त यहां आ चुका होगा। यही होगा। अगले अगले घंटे क्या होगा? अगले घंटे आप यहां पहुंचेंगे और आपका दोस्त आपसे बहुत आगे निकल जाएगा। आपका दोस्त आपसे बहुत आगे। तो ये जो डिस्टेंस है ना आपकी ये जो डिस्टेंस है ये क्या है? डिस्टेंस है। ये इनक्रीस होती जाएगी। इनक्रीस होती जाएगी। आपका दोस्त आपको कभी ओवरटेक नहीं करेगा। क्यों?",
+      "source": "caption",
+      "english_text": "What will happen? What will happen next time? What will happen next time that you come here. Your friend must have come here. This is what will happen. What will happen in the next next hour? In the next hour you will reach here and your friend will be far ahead of you. Your friend is far ahead of you. So this distance is yours, what is this distance? There is distance. This will keep increasing. Will keep increasing. Your friend will never overtake you. Why?"
+    },
+    {
+      "start_time": 504.879,
+      "end_time": 533.11,
+      "text": "क्योंकि आप स्ट्रेट रोड पे दौड़ रहे हैं ना भाई। स्ट्रेट रोड पे दौड़ रहे हैं। स्ट्रेट रोड पे दौड़ रहे हैं। सर्कल ग्राउंड में नहीं दौड़ रहे हैं। ओवरटेक कब होगा? ओवरटेक सर्कल ग्राउंड में ही पॉसिबल है। स्ट्रेट रोड पे ओवरटेक पॉसिबल ही नहीं है। अगर दो गाड़ी जा रही है। एक गाड़ी बहुत तेज है। एक गाड़ी बहुत धीरे है तो तेज वाली गाड़ी कब निकल जाएगी? प्रोवाइडेड कि दोनों सेम जगह से स्टार्ट किए हों। सेम जगह से स्टार्ट किए हो। ओवरटेक कब होगा? दोनों गाड़ी सर्कल में है तो जो तेज़ वाली गाड़ी है वो कभी ना कभी आगे निकलेगी और उसके पीछे से आते ही उसको ओवरटेक कर देगी।",
+      "source": "caption",
+      "english_text": "Because you are running on the straight road, brother. Running on a straight road. Running on a straight road. Not running in circle ground. When will the overtake happen? Overtake is possible only in circle ground. Overtaking is not possible on a straight road. If two vehicles are going. A car is very fast. If a train is very slow then when will the faster train pass? Provided that both the beans are started from the same place. You started from the same place. When will the overtake happen? If both the vehicles are in the circle then the faster vehicle will sooner or later overtake it and will overtake it as soon as it comes from behind."
+    },
+    {
+      "start_time": 533.12,
+      "end_time": 564.79,
+      "text": "इससे हम लोग को क्या समझ में आया कि अगर जो ग्राउंड है अगर जो ग्राउंड है अगर सर्कल है अगर सर्कल है ओवरटेक होगा ही होगा अगर दोनों डिफरेंट स्पीड से दौड़ रहे हो सेम स्पीड से दौड़ रहे हैं तो कभी नहीं होगा लेकिन अगर स्ट्रेट रोड है अगर स्ट्रेट रोड है तो ओवरटेक कभी नहीं होगा ओवरटेक कभी नहीं होगा कभी नहीं होगा या तो क्या होगा रोड खत्म हो जाएगा रोड कभी ना कभी जाके खत्म हो जाएगा रोड रोड खत्म हो जाएगा। वो आदमी अपना रेस खत्म कर देगा।",
+      "source": "caption",
+      "english_text": "What we understood from this is that if there is ground, if there is ground, if there is a circle, if there is a circle, overtake will definitely happen, if both are running at different speeds, if they are running at the same speed, then it will never happen, but if there is a straight road, if there is a straight road, then overtake will never happen, overtake will never happen, never happen, either way, what will happen, the road will end sooner or later, the road will end, the road will end. That man will finish his race."
+    },
+    {
+      "start_time": 564.8,
+      "end_time": 598.47,
+      "text": "लेकिन ओवरटेक कभी नहीं होगा। ओवरटेक कभी नहीं होगा। ये तो नेचुरल है। यही कांसेप्ट है। बस सिमिलर कांसेप्ट है। बस सिमिलर कांसेप्ट है। क्यों इसको लिंक लिस्ट में पढ़ाया जाता है? क्योंकि एरे तो हम लोग जानते हैं कि एरे तो स्ट्रेट लाइन में होता है। तो एरे तो एक रोड है। एरे क्या है? एक स्ट्रेट रोड है। स्ट्रेट रोड है। लेकिन क्योंकि लिंक लिस्ट ऐसा लगता है देखने में। लिंक लिस्ट जब आप कॉपी में बनाते हैं तो ऐसा लगता है देखने में। इसको हम लोग मोड़ सकते हैं। इसको क्या अभी देखिए ये भी स्ट्रेट रोड है। मान लीजिए आपका लिंक लिस्ट ऐसा है। तो आपका लिंक लिस्ट ऐसा भी लग सकता है। ये भी एक एग्जांपल ऑफ",
+      "source": "caption",
+      "english_text": "But overtake will never happen. Overtake will never happen. This is natural. This is the concept. Just similar concept. Just similar concept. Why is it taught in linked list? Because we know that the array is in a straight line. So, it is just a road. What is erre? There is a straight road. There is a straight road. But because the link list looks like this. When you make a link list in a copy, it looks like this. We can change this. Look at this now, this is also a straight road. Suppose your link list is like this. So your link list may look like this. This is also an example of"
+    },
+    {
+      "start_time": 598.48,
+      "end_time": 632.15,
+      "text": "लिंक लिस्ट है। क्या? स्ट्रेट लिंक लिस्ट यहां के जा के खत्म हो गया ये। यहां से शुरू हुआ यहां से खत्म हो गया। लेकिन आपका लिंक लिस्ट ऐसा भी लग सकता है देखने में कभी ना कभी। अब ये इसको पॉइंट करे। ये नोड इसको पॉइंट करे। ये नोड यहां आ जाए और ये वापस यहां आ जाए। तो ये जो आपका लिंक लिस्ट बना ना ये जो आपका लिंक लिस्ट बना। ये जो आपका लिंक लिस्ट बना ना ये। ये क्या है? ये आपका देख रहे हैं ये आपका साइकिल है। ये आपका साइकिल है या तो सर्कल है। तो अगर कोई आदमी लिंक लिस्ट पे चलना शुरू करे इस रोड पे चलना शुरू करे ना तो वो पहले",
+      "source": "caption",
+      "english_text": "There is a link list. What? The straight link list ends here. It started from here and ended here. But your link list may look like this sometimes. Now point to this. This node should point to this. This node should come here and it should come back here. So this which becomes your link list, this which becomes your link list. This is what makes your link list. What is this? You are looking at this, this is your bicycle. This is your cycle or circle. So if a person starts following the link list and starts walking on this road, then he first"
+    },
+    {
+      "start_time": 632.16,
+      "end_time": 666.069,
+      "text": "यहां पहुंचेगा। फिर यहां आएगा। फिर यहां आएगा। फिर यहां आएगा। फिर यहां आ जाएगा। उसके बाद यहां आ जाएगा। फिर यहां आएगा। फिर यहां आएगा और फिर यहां आ जाएगा। और फिर यहां आ जाएगा। और ये फंस जाएगा इस साइकिल में। ये फंस जाएगा साइकिल में। कि ये कभी निकल ही नहीं पाएगा इस साइकिल से। इसीलिए लिंक लिस्ट में साइकिल दिखाना बहुत आसान होता है। एरे में भी होता है। एरे भी स्टेट नहीं होता है। हम बता देंगे एरे में कैसे साइकिल बनता है। लेकिन लिंक लिस्ट में समझाना बहुत आसान होता है। क्योंकि आपको पता चल रहा है कि हां चलो ये लिंक लिस्ट तो देख के पता लग रहा है कि इसमें साइकिल है। पता लग रहा है ना? ठीक। इसीलिए इसमें पढ़ाते हैं स्लो एंड फ़ास्ट पॉइंटर।",
+      "source": "caption",
+      "english_text": "Will reach here. Will come here again. Will come here again. Will come here again. Will come here again. Will come here after that. Will come here again. Will come here again and will come here again. And then he will come here. And it will get stuck in this cycle. It will get stuck in the bicycle. That he will never be able to get out of this cycle. That is why it is very easy to show a bicycle in the link list. Also happens in array. Array is also not state. We will tell you how a cycle is formed in an array. But it is very easy to explain in link list. Because you are coming to know that yes, after looking at this link list, it is clear that there is a bicycle in it. Are you getting it? Correct. That is why slow and fast pointer is taught in this."
+    },
+    {
+      "start_time": 666.079,
+      "end_time": 699.91,
+      "text": "पढ़ाना चाहिए लिंक लिस्ट में। लेकिन ऐसा नहीं है कि सिर्फ लिंक लिस्ट में यूज़ होता है। बहुत जगह यूज़ होता है। आपको समझ में आया कि लिंक लिस्ट में साइकिल कैसे होता है। जिनको लिंक लिस्ट का बेसिक नहीं आता है थोड़ा बहुत बेसिक आना चाहिए। थोड़ा बहुत चैट GP पे देखिए। सिंटेक्स लिखना सीखिए। अ नेक्स्ट पॉइंटर क्या होता है? अ हेड पॉइंटर क्या होता है? ये सब थोड़ा बहुत हम अस्यूम कर रहे हैं कि आपको आता है। लिंक लिस्ट बेसिकली क्या होता है? नोड्स होते हैं। नोड्स मतलब सर्कल। एक नोड किसी नोड को पॉइंट करता है। जो नोड किसी को पॉइंट नहीं करता है वो नल को पॉइंट करता है। मतलब कुछ नहीं करता है तो वहां पे लिंक लिस्ट आपकी खत्म हो जाती है। ये वाला जो लिंक लिस्ट है ये देखिए कभी खत्म ही",
+      "source": "caption",
+      "english_text": "Should be taught in link list. But it is not that it is used only in link list. Used in many places. You understood how a linked list cycles. Those who do not know the basics of link list should know some basics. Watch a little chat on GP. Learn to write syntax. What is a next pointer? What is a head pointer? We are assuming that you know all this to some extent. What is link list basically? There are nodes. Nodes mean circles. A node points to another node. A node that points to no one points to a null. Meaning, if you don't do anything then your link list ends there. Look at this link list that never ends."
+    },
+    {
+      "start_time": 699.92,
+      "end_time": 724.949,
+      "text": "नहीं हो रहा है। ये वाला लिंक लिस्ट ये कभी खत्म ही नहीं हो रहा है। ये जा के अंदर फंस गया है साइकिल में। ये जा के फंस गया है। तो ये जो साइकिल है अब ऐसा नहीं है कि हमेशा जो साइकिल वाले लिंक लिस्ट है वो ऐसे ही होंगे कि एक स्ट्रेट होगा और एक सर्कल होगा। हो सकता है पूरा ही लिंक लिस्ट सर्कल हो। पूरा ही लिंक लिस्ट भी सर्कल हो सकता है। पूरा लिंक लिस्ट भी सर्कल हो सकता है। तो ये देखिए ये एक एग्जांपल है लिंक लिस्ट का। ये एक लिंक लिस्ट का एग्जांपल है जो पूरा सर्कल है।",
+      "source": "caption",
+      "english_text": "It's not happening. This link list is never ending. He is stuck inside the bicycle. He is stuck. So this cycle is now not like the link list of cycles will always be like this, one will be straight and one will be circle. The entire link list may be a circle. The entire link list can also be a circle. The entire link list can also be circled. So see, this is an example of a link list. This is an example of a linked list which is a complete circle."
+    },
+    {
+      "start_time": 724.959,
+      "end_time": 759.75,
+      "text": "पूरा सर्कल। इसमें कोई स्ट्रेट पार्ट है ही नहीं। पहले वाले लिंक लिस्ट में एक स्ट्रेट पार्ट था और ऐसा लगता था। ये वाला पूरा ऐसा है। हो सकता है ऐसा भी लगे। ये और हां तो हो सकता है ये सर्कल पहले हो सकता है ये सर्कल पहले हो और फिर कुछ ऐसा हो मतलब कहीं ना कहीं कहीं ना कहीं शेप में सर्कल है मतलब अगर आप इस लिंक लिस्ट को चलना शुरू करेंगे शुरू से इस पे चलना शुरू करेंगे तो आप फंस जाएंगे क्या हो जाएंगे फंस जाएंगे फंस जाएंगे उसी का मतलब होता है सर्कल सर्कल में फंस जाते है ना आप एक ऐसे ग्राउंड में घुस गए जो सर्कल है तो आप कितना भी दौड़िए कितना भी दौड़िए आप उसी सर्कल में रहने वाले हैं आप बाहर नहीं",
+      "source": "caption",
+      "english_text": "Complete circle. There is no straight part in this. The earlier link list had a straight part and it looked like this. This one is totally like that. It may even seem like this. ये और हां तो हो सकता है ये सर्कल पहले हो सकता है ये सर्कल पहले हो और फिर कुछ ऐसा हो मतलब कहीं ना कहीं कहीं ना कहीं शेप में सर्कल है मतलब अगर आप इस लिंक लिस्ट को चलना शुरू करेंगे शुरू से इस पे चलना शुरू करेंगे तो आप फंस जाएंगे क्या हो जाएंगे फंस जाएंगे फंस जाएंगे उसी का मतलब होता है सर्कल सर्कल में फंस जाते है ना आप एक ऐसे ग्राउंड में घुस गए जो सर्कल है तो आप कितना भी दौड़िए कितना भी दौड़िए आप उसी सर्कल में रहने वाले हैं आप बाहर नहीं"
+    },
+    {
+      "start_time": 759.76,
+      "end_time": 794.629,
+      "text": "आएंगे बाहर जाने का कोई रास्ता ही नहीं है तो नहीं आ पाएंगे ठीक ठीक बात है। आ जाइए। अब हम लोग क्या करेंगे अब इसमें? स्लो फ़ास्ट होता क्या है? स्लो फ़ास्ट आपको समझ में आ गया होगा। स्लो मतलब जो स्लो दौड़ता हो। दौड़ता हो। फास्ट मतलब जो तेजी से दौड़ता हो। तेज़ी से दौड़ता हो। आपको फ्लो चार्ट समझ में आया कि लगाना कब है? वो तो समझ में आ गया आपको। कहीं भी। ये फर्स्ट पार्ट है फ्लो चार्ट का और भी एक कैटेगरी होती है। वो बाद में देखेंगे। साइकिल, लूप, सर्कल, फाइंड रेपेटीशन,",
+      "source": "caption",
+      "english_text": "आएंगे बाहर जाने का कोई रास्ता ही नहीं है तो नहीं आ पाएंगे ठीक ठीक बात है। Come over. अब हम लोग क्या करेंगे अब इसमें? स्लो फ़ास्ट होता क्या है? स्लो फ़ास्ट आपको समझ में आ गया होगा। स्लो मतलब जो स्लो दौड़ता हो। दौड़ता हो। फास्ट मतलब जो तेजी से दौड़ता हो। तेज़ी से दौड़ता हो। आपको फ्लो चार्ट समझ में आया कि लगाना कब है? वो तो समझ में आ गया आपको। Anywhere. ये फर्स्ट पार्ट है फ्लो चार्ट का और भी एक कैटेगरी होती है। वो बाद में देखेंगे। साइकिल, लूप, सर्कल, फाइंड रेपेटीशन,"
+    },
+    {
+      "start_time": 794.639,
+      "end_time": 828.629,
+      "text": "चेक इफ रेपेटीशन। तो ये सब में ये लगता है। लेकिन ये लगना कैसे है? सिंपल आपको आपको हर स्लोस्ट में एक ही काम करना है। सबसे पहले अब देखिए ये काम कैसे करता है? ये काम कैसे करेगा? चलिए एक लिंक लिस्ट बना लेते हैं। ये बनाए। ये बनाए। और ये बनाए। अब एक सर्कल बना देते हैं। ये इसको पॉइंट करेगा। ये इसको पॉइंट करेगा और ये वापस इसको पॉइंट। ये बहुत छोटा सा सर्कल है। ये आपका सर्कल है। ठीक है? आपका स्टार्ट यहां से होगा। आपका जो हेड हैड यहां पे है। हेड मतलब लिंक लिस्ट के",
+      "source": "caption",
+      "english_text": "Check if repetition. So this seems to be the case in all this. But how is this supposed to happen? Simple, you have to do only one thing in every slot. First of all, now see how it works? How will this work? Let's make a link list. Make this. Make this. And make this. Now let's make a circle. This will point to this. This will point to this and this will point back to this. This is a very small circle. This is your circle. Ok? You will start from here. Your head is here. head means link list"
+    },
+    {
+      "start_time": 828.639,
+      "end_time": 863.43,
+      "text": "स्टार्ट वाले नोड को मान लीजिए ये वन है, टू है, थ्री है, फोर है, फाइव है। ठीक है? तो जो नोड वन है ना जो नोड वन है उसको हम लोग बोलते हैं हेड। ठीक? कभी भी आपको क्वेश्चन आए, सबसे बेसिक क्वेश्चन से स्टार्ट करते हैं कि आपको ये लिंक लिस्ट दिया हुआ है। चेक करो कि इसमें साइकिल है कि नहीं। क्या करो? चेक करो कि साइकिल है कि नहीं? चेक बस चेक। ट्रू फॉल्स बताओ। ठीक है? तो सबसे पहला काम आपको क्या करना है कि आपको दो लोग रखने हैं। क्या लोग रखने हैं हम लोग को? स्लो एंड फास्ट। अब दोनों एक ही जगह से शुरू करेंगे। दोनों का शुरू एक ही जगह से होगा। शुरू कहां से",
+      "source": "caption",
+      "english_text": "Suppose the start node is one, two, three, four, five. Ok? So, the one which is node one, we call it head. Correct? Whenever you have a question, start with the most basic question that you have been given in this link list. Check whether it has a bicycle or not. What to do? Check whether the bicycle is there or not? Check just check. Tell me the true false. Ok? So the first thing you have to do is you have to hire two people. What people do we have to keep? Slow and fast. Now both will start from the same place. Both will start from the same place. where to start"
+    },
+    {
+      "start_time": 863.44,
+      "end_time": 888.629,
+      "text": "होगा? एक जगह से। एक जगह से। मतलब एक पॉइंट से ग्राउंड में एक ही बार से शुरू करेंगे। ठीक है? उसके बाद दौड़ेंगे अलग-अलग स्पीड में। अब स्लो जो है स्लो दौड़ेगा और फास्ट फास्ट दौड़ेगा। नाम तो समझ में आता है। ठीक है? अब देखिए कि ये काम कैसे करता है। सबसे पहले एस भी यहां है और एफ भी यहां है। यही हम बोले हैं। अब हम लोग काम करेंगे। हर स्टेप में हर स्टेप में स्लो को बोलेंगे कि तुम दौड़ो। कितना दौड़ो?",
+      "source": "caption",
+      "english_text": "Will it happen? From one place. From one place. Meaning, we will start from one point on the ground only once. Ok? After that we will run at different speeds. Now the slow one will run slow and the fast one will run fast. The name makes sense. Ok? Now see how it works. First of all S is also here and F is also here. This is what we have said. Now we will work. In every step, you will be told to run slowly. run how much?"
+    },
+    {
+      "start_time": 888.639,
+      "end_time": 916.949,
+      "text": "चलो तुम एक स्टेप दौड़ो। मतलब एक नोट दौड़ते जाओ। फास्ट को फास्ट को आप स्लो से तेज दौड़ाइए। अब तेज का मतलब तो तेज का मतलब बहुत चीज हो सकता है। तेज का मतलब होता है टू टाइम्स भी हो सकता है। थ्री टाइम्स भी हो सकता है। उससे 10 टाइम्स भी हो सकता है। लेकिन फॉर सिंपलीसिटी से आप इसको टू टाइम्स दौड़ाइए। टू टाइम्स जरूरी नहीं है। आप तीन गुना स्पीड से दौड़ाएंगे तब भी क्वेश्चन बनेगा। चार गुना दौड़ाएंगे तब भी क्वेश्चन बनेगा। लेकिन वो लिखना मुश्किल है। अब कैसे दौड़ाने का मतलब क्या होता है हम बताते हैं। चलिए मान लेते हैं कि टू टाइम्स ही दौड़ाना है। ठीक है?",
+      "source": "caption",
+      "english_text": "Come on, run one step. Meaning keep running one note. Run fast, run faster than slow. Now the meaning of fast is that fast can mean many things. Tej means it can happen twice. It could be three times also. It could be even 10 times that. But for simplicity, run it twice. Two times is not necessary. Even if you run at three times the speed, questions will arise. Even if we run it four times, questions will arise. But that is difficult to write. Now let us tell you what it means to run. Let us assume that it has to be run only two times. Ok?"
+    },
+    {
+      "start_time": 916.959,
+      "end_time": 950.47,
+      "text": "चलिए। तो शुरू में स्लो फास्ट यहां पे है। समझ में आ गई? हर स्टेप में हम क्या बोल रहे हैं? स्लो को एक सर्कल दौड़ाइए और फास्ट को बोलिए कि तुम दो सर्कल मतलब एक को स्किप करके दूसरे फास्ट ऐसे मतलब टू दो नोड दौड़ेगा। फिर उसके आगे दो नोड और स्लो धीरे धीरे धीरे धीरे दौड़ेगा। ठीक है? सबसे पहले क्या होगा? आपका जो स्लो है कितना दौड़ता है? एक दौड़ता है। आपका स्लो दौड़ के यहां आ जाएगा। आपका फास्ट कितना दौड़ता है? वो दो सर्किल आगे जाता है। तो आपका जो फास्ट है ना? आपका जो फास्ट है वो यहां आ जाएगा। वन से थ्री आएगा। स्लो वन से टू आएगा। सिंपल है। चलिए फिर दौड़ाइए।",
+      "source": "caption",
+      "english_text": "Let's go. So initially slow fast is here. Did you understand? What are we saying in each step? Tell the slow one to run a circle and the fast one to run two circles, meaning you will skip one and the fast one will run two nodes like this. Then two nodes ahead of him and slow will run slowly. Ok? What will happen first? How much does your slow one run? One runs. Your slow will come running here. How fast is your run? He goes two circles ahead. So yours is fast, isn't it? Your fast will come here. From one comes three. Slow one will lead to two. It is simple. Let's run again."
+    },
+    {
+      "start_time": 950.48,
+      "end_time": 983.749,
+      "text": "फिर दौड़ाइए। स्लो टू से कहां जाएगा? स्लो टू से थ्री जाएगा। आइए लिख लीजिए। स्लो टू से थ्री चला गया। ठीक है? फास्ट कहां जाएगा? फास्ट कहां जाएगा? फास्ट आपका थ्री पे था। थ्री से कहां जाएगा? फाइव पे। फाइव यहां आ गया। चलिए, दौड़ाते रहिए, दौड़ाते रहिए। हम बताएंगे, बताएंगे आप देखिएगा। अब फिर से दौड़ाइए। स्लो को फिर दौड़ाइए। स्लो को क्या कीजिए? थ्री से कहां दौड़ाइए? फोर पे। ठीक? फास्ट को भी दौड़ाए। फास्ट को भी दौड़ाइए। फास्ट कहां? फाइव से अब फाइव से सिक्स से 7 नहीं। फाइव देखिए। फाइव कहां जा रहा है? फाइव थ्री और फिर फोर। तो अब",
+      "source": "caption",
+      "english_text": "Then run it. Where will we go from slow to? Slow will go from two to three. Let's write it down. Went from slow two to three. Ok? Where will Fast go? Where will Fast go? Fast was on your three. Where will it go from three? On five. Five is here. Come on, keep running, keep running. We will tell you, you will see. Now run it again. Run slow again. What to do with slow? Where to run from three? On four. Correct? Run fast also. Run fast also. Where is fast? Now five to six, no more five to six, no more 7. Look at five. Where is Five going? Five three and then four. so now"
+    },
+    {
+      "start_time": 983.759,
+      "end_time": 1017.43,
+      "text": "अब देखिए बहुत इंपॉर्टेंट है। आपका फ़ास्ट यहां था। फास्ट कितना सर्किल दौड़ता है? दो सर्किल। तो फ़ास्ट एक और फिर दो। फास्ट भी यहां आ गया। देखिए। जैसे ही फास्ट यहां आया, जैसे ही फास्ट यहां आया, अब देख लीजिए इस फोर पे स्लो एंड फास्ट फिर से आ गए। क्या हो गया? फिर से आ गए। फिर से कैसे आ गए? फिर से कैसे आ गए? हम लोग पहले ही देख चुके हैं कि जब स्ट्रेट रोड होता अगर स्ट्रेट रोड होता स्लो एंड फास्ट एक साथ यहां स्टार्ट करते तो आप अगर दौड़ाते तो स्लो पहले यहां दौड़ता और फास्ट क्योंकि दो बार दौड़ता है तो यहां आता। फिर स्लो",
+      "source": "caption",
+      "english_text": "Now see, this is very important. Your fast was here. How many circles does Fast run? Two circles. So fast one and then two. Fast also came here. See. As soon as fast came here, as soon as fast came here, now look at this four pe slow and fast are back again. What happened? Came again. How did you come again? How did you come again? We have already seen that when there was a straight road, if there was a straight road, slow and fast would have started here together, then if you had started running, then slow would have run here first and fast, because it had run twice, would have come here. then slow"
+    },
+    {
+      "start_time": 1017.44,
+      "end_time": 1051.029,
+      "text": "यहां आता और फास्ट क्योंकि दो बार दौड़ता है तो फास्ट यहां आता। फिर स्लो यहां आता और फास्ट क्योंकि दो बार दौड़ता है तो फास्ट रोड से बाहर आ जाता। तो कभी नहीं मिलते। स्ट्रेट रोड में तो कभी नहीं मिलते। ये तो पता चल रहा है ड्राइंग बना के। लेकिन मिल कैसे गया? यहां मिल कैसे गया? मिल गया मतलब साइकिल है। मिल गया मतलब मिल गया मतलब स्लो एंड फास्ट। एक हो गया। एक ही नोड पे आपको दिख रहा है। कभी भी स्लो इज इक्वल टू फास्ट हो गया। तो मतलब उसका साइकिल है। ग्राउंड सर्कुलर होगा तभी ये मिल सकता है। ये हम लोग पहले देख चुके है। पहले समझ चुके है ग्राउंड अगर रोड होता। ग्राउंड अगर स्ट्रेट रोड",
+      "source": "caption",
+      "english_text": "Would come here and fast because if he runs twice then he would come here fast. Then slow would come here and fast because if it runs twice it would come out of the fast road. So we never meet. Never meet on straight road. This can be known by making a drawing. But how was it found? How did you get here? Got it means bicycle. Got it means got it means slow and fast. One is done. You can see it on only one node. Sometimes slow is equal to fast. So that means it is his bicycle. This can be achieved only if the ground is circular. We have seen this before. Earlier we have understood that if ground was a road. ground if straight road"
+    },
+    {
+      "start_time": 1051.039,
+      "end_time": 1082.63,
+      "text": "होता ना तो कभी नहीं मिलता। वो फास्ट रोड से बाहर निकल जाता। इतनी बात मेरे ख्याल से समझ में आई होगी। यही कांसेप्ट होता है। क्या कांसेप्ट होता है? सबसे पहले स्लो इज इक्वल टू हेड रखते हैं। और फास्ट इज़ इक्वल टू हेड रख देते हैं। हेड मतलब स्टार्टिंग वाला। स्टार्टिंग वाला। अब देखिए। अब हम लोग इसको दौड़ाते हैं। लिंक लिस्ट में दौड़ाया कैसे जाता है? वाइल लिखा जाता है। और लिंग लिस्ट में आपको ध्यान रखा जाता है कि आपका जो लिंक लिस्ट है वो खत्म ना हो जाए। आपका लिंक लिस्ट खत्म ना हो जाए। लिंक लिस्ट खत्म कैसे हो जाएगा?",
+      "source": "caption",
+      "english_text": "If it didn't happen then it would never have been found. He would have exited the fast road. I think this much must have been understood. This is the concept. What is concept? First of all let's keep slow is equal to head. And fast is equal to head. Head means starting one. The one starting. watch now. Now we run it. How to run link list? Vile is written. And in the gender list, you are kept in mind that your link list does not get exhausted. Your link list should not end. How will the link list end?"
+    },
+    {
+      "start_time": 1082.64,
+      "end_time": 1117.51,
+      "text": "आप क्या बोल रहे हैं कि हम स्लो को भी दौड़ाएंगे और फास्ट को भी दौड़ाएंगे। फॉर एग्जांपल कि अगर आपका लिंक लिस्ट स्ट्रेट रोड होता। फॉर एग्जांपल कि स्ट्रेट होता साइकिल नहीं होती। तो पहले कौन खत्म करेगा? पहले रोड से बाहर कौन आ जाएगा? पहले रोड से आगे फास्ट आ जाएगा। स्लो नहीं। स्लो तो फास्ट के या तो पीछे रहेगा। हमेशा पीछे रहेगा ना? स्लो जो है फास्ट से धीरे दौड़ रहा है। फास्ट बहुत तेज दौड़ रहा है। तो पहले रोड के बाहर कौन निकलेगा? फास्ट निकलेगा। तो हम लोग को चेक करना है कि फास्ट न रोड से बाहर निकल जाए। वो रोड से बाहर निकलने का मतलब है कि लिंक लिस्ट से बाहर ना निकल जाए। वो होता है फास्ट नॉट इक्वल टू नल।",
+      "source": "caption",
+      "english_text": "What are you saying that we will run the slow one as well as the fast one. For example, if your link list was a straight road. For example, a bicycle is not straight. So who will finish first? Who will come off the road first? Fast will come ahead of the first road. Not slow. Slow will either lag behind fast. Will always be behind, right? Slow is running slower than fast. Fast is running very fast. So who will come out of the road first? It will come out fast. So we have to check that the fast does not go out of the road. Getting out of that road means not getting out of the link list. That is fast is not equal to null."
+    },
+    {
+      "start_time": 1117.52,
+      "end_time": 1151.59,
+      "text": "ठीक है। इतना समझ में आ गया। अब अब क्या यहीं पे हम लोग चेक कर लेंगे? हम लोग क्या कंडीशन चेक करने की कोशिश कर रहे है कि स्लो फास्ट के इक्वल ना हो जाए। लेकिन अब तो शुरू ही किए हैं स्लो और फास्ट इक्वल बना के। अब शुरू में यही ना बोले कि दोनों का स्टार्टिंग पॉइंट एक होगा। तो यहां अगर चेक करेंगे तो यहां तो इक्वल होगा ही पहली बार में। इसीलिए पहले दौड़ा लीजिए। पहले क्या कीजिए? दौड़ा लीजिए। पहले दौड़ा लीजिए जितना आपको मन करे। दौड़ाने का मतलब क्या होता है? स्लो को कितना दौड़ाना है? एक स्टेप। एक स्टेप दौड़ाने का मतलब होता है स्लो इज इक्वल टू स्लो नेक्स्ट। अब अलग-अलग लैंग्वेज में हो सकता है C++ में",
+      "source": "caption",
+      "english_text": "Okay. This much is understood. Now can we check here only? What condition are we trying to check so that slow does not become equal to fast? But now we have just started by making slow and fast equal. Now do not say in the beginning that the starting point of both will be the same. So if we check here, it will be equal in the first time. That's why run first. What to do first? Run it. First run as much as you feel like. What does running mean? How much to run slow? One step. Running one step means slow is equal to slow next. Now it can be done in different languages in C++"
+    },
+    {
+      "start_time": 1151.6,
+      "end_time": 1185.43,
+      "text": "आप ऐसे लिखें। पाइथन में हो सकता है डॉट नेक्स्ट करके लिखें। Java में डॉट नेक्स्ट करके लिखें। तो वो नेक्स्ट। नेक्स्ट मतलब एक स्टेप दौड़ो भाई। एक स्टेप दौड़ जाओ। वेरी गुड। अब फ़ास्ट को कितना दौड़ाना है? फास्ट को दो स्टेप दौड़ाना है। दो स्टेप कैसे दौड़ाएंगे? ऐसे दौड़ाएंगे। आप पहले ये तो ये लिखेंगे। फास्ट इज़ इक्वल टू फास्ट डॉट नेक्स्ट। ये एक स्टेप दौड़ा। ये तो स्लो भी दौड़ा था। एक और करवाना है। एक और नेक्स्ट जोड़ दीजिए। एक और नेक्स्ट जोड़ दीजिए। ये देखिए। अब हम अब आपको समझ में आया होगा हम क्यों बोल रहे थे कि आप कितना भी स्पीड से दौड़ा सकते हैं। आप तीन गुना, चार गुना, पांच गुना। लेकिन अगर आप पांच गुना दौड़ाते ना तो आपको ये जो नेक्स्ट,",
+      "source": "caption",
+      "english_text": "You write like this. In Python it is possible to write dot next. Write in Java with dot next. So that's next. Next means run one step brother. Run one step. very good. Now how far should the fast be run? Fast has to run two steps. How to run two steps? Will run like this. You will write this first. Fast is equal to fast dot next. He ran one step. He also ran slowly. Have to get one more done. Add another next. Add another next. Look at this. Now you must have understood why we were saying that you can run at any speed. You triple, quadruple, five times. But if you ran five times, you wouldn't get this next one."
+    },
+    {
+      "start_time": 1185.44,
+      "end_time": 1215.11,
+      "text": "नेक्स्ट, नेक्स्ट, नेक्स्ट है ना ये पांच बार लिखना पड़ता है और आपको उतना चेक भी करना पड़ता है। इसीलिए दो बार दौड़ाते हैं। काम हो जाएगा। तेज़ दौड़ना है भाई। उससे वो डेढ़ गुना तेज दौड़ो, दो गुना दौड़ो, तीन गुना दौड़ो थोड़ा दो गुना दौड़ोगे तो हो सकता है साइकिल ओवरटेक करने में टाइम थोड़ा ज्यादा लगे। 10 गुना स्पीड से दौड़ोगे तो तुरंत हो सकता है ओवरटेक तो बात वही है। ठीक है? अब आपके दोनों लोग दौड़ चुके हैं। अब चेक करेंगे। दौड़ चुके? अब चेक कर लीजिए। इफ इफ स्लो इक्वल इक्वल टू फास्ट। फास्ट।",
+      "source": "caption",
+      "english_text": "Next, next, next, you have to write this five times and you also have to check that much. That's why we run it twice. will be working. Have to run fast brother. Run one and a half times faster than that, run twice, run three times, if you run twice as fast then it may take a little more time to overtake the bicycle. If you run at 10 times the speed, you can overtake immediately, so it's the same thing. Ok? Now both your people have run. Will check now. already run? Now check. If If Slow Equals Too Fast. Fast."
+    },
+    {
+      "start_time": 1215.12,
+      "end_time": 1249.35,
+      "text": "क्या देखे थे? इसका मतलब। साइकिल है सर्कुलर में ही ओवरटेक होता है। फास्ट इक्वल टू स्लो मतलब फास्ट कहीं ना कहीं दौड़ के तो स्लो के पास आ गया है। ठीक है? रिटर्न ट्रू। ठीक है? खत्म हो गई? वाइल लूप बंद कर दीजिए। अब अगर आप यहां पे आते हैं। अगर आप यहां पे आते हैं इस इसमें आते हैं। अगर आप वाइल लूप को तोड़ के आते हैं किसी भी ऐसे फास्ट फ्लो क्वेश्चन में। इसका मतलब है कि साइकिल नहीं है। इसका मतलब है साइकिल नहीं है। क्यों? क्योंकि ये वाइल लूप कब टूट रहा है? जब फास्ट नल हो जाए तब ये टूट जाएगा। फास्ट नॉट इक्वल टू नल",
+      "source": "caption",
+      "english_text": "What did you see? What does it mean. Overtaking happens only when the bicycle is circular. Fast equal to slow means fast has come somewhere close to slow in running. Ok? Returns true. Ok? Is it over? Close the while loop. Now if you come here. If you come here, come in this. If you break the while loop and come to any such fast flow question. It means there is no bicycle. This means there is no bicycle. Why? Because when is this vicious loop going to break? It will break when there is a fast tap. Fast Not Equal to Null"
+    },
+    {
+      "start_time": 1249.36,
+      "end_time": 1278.149,
+      "text": "कंडीशन है तो फास्ट नल पे फॉल्स हो जाएगा। फास्ट नल कब होगा? हम लोग पहले भी देख चुके थे। जब आपका लिंक लिस्ट जब आपका लिंक लिस्ट इस शेप का होता है। जब आपका लिंक लिस्ट किस शेप का होता है? इस शेप का साइकिल शेप का तो आपका जो फास्ट है ना वो कभी बाहर नहीं निकल पाता है। वो साइकिल में फंस जाता है। फास्ट बाहर कब निकलता है? सीधे रोड में। सीधे रोड में निकलता है। सीधे रोड में अगर आपका फास्ट बाहर निकल गया। बाहर निकल गया मतलब यहां पे। बाहर निकल गया। नल हो गया। नल हो गया। अगर नल हो गया तो वेरी गुड। जो अगर साइकल नहीं पे क्या करना था? फॉल्स रिटर्न करना था।",
+      "source": "caption",
+      "english_text": "If the condition is there then it will fall on fast tap. When will the fast tap happen? We had seen it before also. When your link list is of this shape. When what shape is your link list? Your fast bicycle of this shape can never come out. He gets stuck in the bicycle. When does fast come out? Straight in the road. Exits directly into the road. If your fast goes out on the straight road. Came out means here. Went out. The tap is done. The tap is done. If it is tap then very good. What was to be done if there was no bicycle? Had to return false."
+    },
+    {
+      "start_time": 1278.159,
+      "end_time": 1312.39,
+      "text": "ये कर दीजिए। बस इतना सा क्वेश्चन है। इसमें एक गलती है। अभी हम बता रहे हैं। बहुत हड़बड़ाइए नहीं। लेकिन फॉर्मेट ये है। टेंप्लेट क्या है? ये है। ठीक है? आइए। अब आप देखिए। अब आप देखिए। कभी भी आप दौड़ाते हैं जो वाइल का कंडीशन चेक करना है ना वाइल। हम क्या बोले थे? आप ये लिखिए। फास्ट नॉट इक्वल टू नल। ठीक। जभी भी आप लिंक लिस्ट में दौड़ाते हैं ना तो जब आप एक स्टेप दौड़वाना चाह रहे हैं आप स्लो को कितना एक स्टेप दौड़वाना चाह रहे हैं तो उस केस में तो सही है। फास्ट को आप दो स्टेप दौड़वाना चाहते हैं। फास्ट को आप दो स्टेप दौड़वाना चाहते हैं। तो उसको हम कैसे लिखे थे? ऐसे",
+      "source": "caption",
+      "english_text": "Do this. That's just one question. There is a mistake in this. Now we are telling. Don't be too hasty. But this is the format. What is a template? This is. Ok? Come. Now you see. Now you see. Whenever you run, you have to check the condition of the vehicle. What did we say? You write this. Fast Not Equal to Null. Correct. Whenever you run through the link list, whether you want to run one step or how much you want to run slow by one step, then it is correct in that case. You want to make Fast run two steps. You want to make Fast run two steps. So how did we write it? like this"
+    },
+    {
+      "start_time": 1312.4,
+      "end_time": 1347.11,
+      "text": "लिखे थे। फास्ट इक्वल टू फास्ट डॉट नेक्स्ट इससे एक दौड़ा और दूसरा दौड़ा। अब देखिए इसमें एक गलती होती है। आप फास्ट को दौड़ा तो दो बार रहे हैं।स्ट डॉट नेक्स्ट डॉट नेक्स्ट मतलब मान लीजिए ये थ्री पे है। थ्री फोर को पॉइंट कर रहा है। फोर फाइव को पॉइंट कर रहा है। ऐसा हो सकता है। आपका फ़स्ट यहां है। इससे क्या होता है? आप लिखते हैं कि फ़स्ट इज़ इक्वल टू आपका फ़स्ट थ्री पे है। तो आप लिखते हैं 3 डॉट नेक्स्ट और फिर उसका भी नेक्स्ट। तो पहले ये इवैलुएट होता है। पहले ये",
+      "source": "caption",
+      "english_text": "Were written. Fast equals two fast dot next This made one run and the other run. Now see there is a mistake in this. If you run fast then it has been written twice. st dot next dot next means suppose it is on three. Three is pointing to four. Four is pointing to five. could be possible. Your first is here. What happens from this? You write that first is equal to two and your first is equal to three. So you write 3 dot next and then that too next. So first it is evaluated. first this"
+    },
+    {
+      "start_time": 1347.12,
+      "end_time": 1381.51,
+      "text": "इवैल्यूएट होता है। तो थ्री का नेक्स्ट। थ्री का नेक्स्ट क्या है? फोर है। वेरी गुड। तो ये बन जाता है फोर। और फिर आप लिखना है 4 नेक्स्ट। तो आप फिर 4 डॉट नेक्स्ट लिखिए। आप ये करिए। अब ये चलेगा। अब ये चलेगा। अब ये चलेगा। तो 4 डॉट नेक्स्ट क्या है? फाइव। तो ये फाइव बन जाएगा। अब देखिए थ्री से फाइव बन गया। ये वेरी गुड। बहुत अच्छा। लेकिन लेकिन लेकिन अगर आपका लिंक लिस्ट मान लीजिए ऐसा होता। अगर आपका लिंक लिस्ट ऐसा होता थ्री और फोर और इसके बाद खत्म हो जाता। इसके बाद क्या है? खत्म हो जाता। फाइव नहीं रहता। हो सकता है ना भाई? डिफाइंड नहीं है। आपका स्ट्रेट रोड है। तो अभी आपका फ़स्ट यहां पे",
+      "source": "caption",
+      "english_text": "Is evaluated. So next of three. What's next for Three? Is four. very good. So this becomes four. And then you have to write 4 next. So you then write 4 dot next. You do this. Now this will work. Now this will work. Now this will work. So what is 4 Dot Next? Five. So this will become five. Now see, three became five. This is very good. Very good. But but but if your link list is suppose to be like this. If your link list was like this, it would have three and four and end after that. What's after this? It would end. There is no more five. Is it possible, brother? Not defined. Yours is a straight road. So your first here now"
+    },
+    {
+      "start_time": 1381.52,
+      "end_time": 1416.47,
+      "text": "है। फिर से आपने लिख दिया है। आपने क्या स्टेटमेंट दिया है इसको? बोला हैस्ट इक्वल टू फ़स्ट डॉट नेक्स्ट और इसका भी नेक्स्ट। इसका भी नेक्स्ट करो। ठीक है? आइए चलाइए। अब देखिए पहले ये चलेगा। पहले ये चलेगा। तो ये क्या है? 3 डॉट नेक्स्ट। 3 डॉट नेक्स्ट क्या है? फोर। तो ये फोर बन जाएगा। ये पूरा चीज़ फोर बन जाएगा। अब आप फिर से लिखे हैं। ये पूरा चीज़ फोर बन गया। अब आपका अब आप ये करने की कोशिश कर रहे हैं। लेकिन लेकिन लेकिन जैसे ही आप किसी नोड जो एंड वाला नोड है ना ये एंड वाला नोड है। इसका जो होता है ना ये एंड वाला",
+      "source": "caption",
+      "english_text": "Is. You have written again. What statement have you given to him? Said has is equal to first dot next and its also next. Next this also. Ok? Let's play. Now see, first this will work. This will work first. So what is this? 3 dot next. What is 3 dot next? Four. So this will become four. This will become a complete cheese four. Now you have written again. This whole thing became Cheez Four. Now your now you are trying to do this. But but but as soon as you see any node which is a node with an end, it is a node with an end. Whatever happens to this one, isn't this the one at the end?"
+    },
+    {
+      "start_time": 1416.48,
+      "end_time": 1450.789,
+      "text": "नोड है। ठीक है? ये एंड वाला नोड है। तो जैसे ही आप इसका नेक्स्ट करने की कोशिश करते हैं ना। तो ये नल बन जाता है। क्या बन जाता है? नल बन जाता है। ठीक है? हम क्या बोल रहे हैं? हम क्या बोल रहे हैं? अगर नहीं समझ में आया। देखिए। एक और अच्छा एग्जांपल से समझिए। मान लीजिए आपका आपके अ लिंक लिस्ट में एक ही नोड है। आपके लिंक लिस्ट में एक ही नोड है। ये इसी का नेक्स्ट नल है। अगर जो एन्ड नोड है ये आपका एन्ड नोड है। एक ही नोड है तो वही स्टार्ट है वही एंड है। तो किसी भी एंड नोड का अगर आप नेक्स्ट करते हैं ना वो होता है नल।",
+      "source": "caption",
+      "english_text": "is node. Ok? This is the end node. So as soon as you try to do its next thing. So it becomes a tap. What does it become? Becomes a tap. Ok? What are we saying? What are we saying? If you don't understand. See. Understand with another good example. Suppose you have only one node in your link list. There is only one node in your link list. This is the next tap of this. If that is the end node, this is your end node. If there is only one node, it is the start and the end. So if you do next on any end node it is null."
+    },
+    {
+      "start_time": 1450.799,
+      "end_time": 1484.789,
+      "text": "ये अलाउड है। ये करना अलाउड है। लेकिन आप कभी भी नल डॉट नेक्स्ट नहीं कर सकते हैं। जैसे ही आप नल डॉट नेक्स्ट कीजिएगा ना आपका प्रोग्राम एरर दे देगा। रन टाइम एरर फंस जाएगा। क्रैश कर जाएगा। अब देखिए मान लीजिए आपका फ़स्ट था थ्री। आप लिखिएस्ट इक्वल टू फ़स्ट डॉट नेक्स्ट डॉट नेक्स्ट डॉट नेक्स्ट। तो आइए चलाइए। पहले ये चलेगा। तो 3 डॉट नेक्स्ट 3 डॉट नेक्स्ट हम क्या बोले? जो एंड वाला नोड है जो एंड वाला नोड है। ये नल है। तो ये नल बन गया। अब आप इसके सामने और एक नेक्स्ट",
+      "source": "caption",
+      "english_text": "This is loud. It is okay to do this. But you can never tap dot next. As soon as you tap dot next your program will give an error. Run time error will be stuck. Will crash. Now see, suppose your first was three. You write equal to first dot next dot next dot next. So let's start. This will work first. So 3 dot next 3 dot next what do we say? Which is the node with end which is the node with end. This is a tap. So it became a tap. Now you are in front of this and a next"
+    },
+    {
+      "start_time": 1484.799,
+      "end_time": 1516.87,
+      "text": "लगाएं। ये यहां पे फंस जाएगा। जैसे ही आप यह करते हैं, जैसे ही आप नल डॉट नेक्स्ट करते हैं, आपका प्रोग्राम क्रैश हो जाता है। आपका प्रोग्राम क्रैश हो जाता है। क्रैश हो गया। ठीक है? इससे बचने के लिए, इससे बचने के लिए जब भी जब भी आपको एक दौड़वा ना हो जब भी आपको या फिर एक रूल की तरह याद रखिए। जिस चीज का आप नेक्स्ट निकाल रहे हैं। आप जिस चीज का नेक्स्ट निकाल रहे हैं। फॉर एग्जांपल आप आप कितने स्टेटमेंट लिख रहे हैं। आप दो स्टेटमेंट अपने प्रोग्राम में अपने वाइल लूप के अंदर लिख रहे हैं। एक स्टेटमेंट तो",
+      "source": "caption",
+      "english_text": "Apply. It will get stuck here. As soon as you do this, as soon as you tap dot next, your program crashes. Your program crashes. Crashed. Ok? To avoid this, whenever you have to run a race, remember this as a rule. The thing you are taking out next. Whatever you are coming out with next. For example, how many statements are you writing? You are writing two statements inside your while loop in your program. a statement then"
+    },
+    {
+      "start_time": 1516.88,
+      "end_time": 1550.47,
+      "text": "ये लिख रहे हैं। अच्छा और एक स्टेटमेंट आप ये लिख रहे हैं फास्ट डॉट नेक्स्ट डॉट नेक्स्ट या एरो नेक्स्ट दो स्टेटमेंट है। जिस भी चीज का आप नेक्स्ट निकाल रहे हैं। आप इसका नेक्स्ट निकाल रहे हैं। आप देखिए इसमें क्या-क्या किस चीजों का नेक्स्ट आप निकालना चाहते हैं। एक तो आप स्लो का नेक्स्ट निकाल रहे हैं। आप फास्ट का भी नेक्स्ट निकाल रहे हैं। आप फ़ास्ट का भी नेक्स्ट निकाल और आप फ़ास्ट डॉट नेक्स्ट का भी नेक्स्ट निकाल रहे हैं। इसका भी तो नेक्स्ट निकल रहा है। ये कोई भी आंसर आए इसका भी तो यहां से नेक्स्ट निकाल रहे हैं। इसको भी अपने लिस्ट में शामिल कर",
+      "source": "caption",
+      "english_text": "He is writing. Well, one more statement, you are writing this: fast dot next dot next or arrow next are two statements. Whatever you are taking out next. You are taking out its next. You see what all you want to do next in it. Firstly, you are bringing out the next one of Slow. You are also bringing out the next of Fast. You are also finding the next of Fast and you are also finding the next of Fast.Next. Its next is also coming out. Whatever answer comes, we are releasing the next one from here. include this also in your list"
+    },
+    {
+      "start_time": 1550.48,
+      "end_time": 1584.789,
+      "text": "लीजिए। एक लिस्ट बना लीजिए मन में। अच्छा। तो कभी भी कभी भी ये तीनों नल नहीं होना चाहिए। क्या होना चाहिए? नल नहीं होना चाहिए। ये आपको हमेशा कहां चेक करना है? वाइल लूप में चेक करना है। वाइल लूप में चेक करना है या तो पहले चेक कर लेना है। इसका कभी भी नेक्स्ट नहीं होगा। नल नेक्स्ट नहीं अलाउड होता है। नल अलाउड होता है। नल नेक्स्ट नहीं। ठीक है? तो अब आप बोलिएगा कि यहां तो तीन चीज हैं यहां तो वन है, टू है, थ्री है। आप बोलिएगा पहले तो आप बस फास्ट चेक किए थे। बोले फास्ट नॉट इक्वल टू नल स्लो तो नहीं चेक किए थे। इसलिए",
+      "source": "caption",
+      "english_text": "Take it. Make a list in your mind. Good. So there should never be these three taps ever. What should happen? There should be no tap. Where do you always have to check this? Have to check in while loop. Either you have to check in the while loop or you have to check first. There will never be a next. Tap Next is not allowed. The tap is loud. Tap Next. Ok? So now you say that there are three things here, there is one, two, three. You will say that earlier you had just done fast check. Said fast is not equal to slow but did not check. therefore"
+    },
+    {
+      "start_time": 1584.799,
+      "end_time": 1618.149,
+      "text": "नहीं किए थे क्योंकि हम लोग देख चुके हैं कि स्लो कभी भी होगा तो वो फास्ट से पीछे होगा। फास्ट से पीछे होगा। मतलब फास्ट अगर नल होगा। सर्कल होगा तब तो कोई नल नहीं होगा। लेकिन अगर नल होना है। अगर स्ट्रेट रोड है तो फास्ट पहले नल हो जाएगा। फास्ट पहले नल हो जाएगा। स्लोप बाद में होगा। बाद में होगा। तो ऐसा नहीं हो सकता है कि आपका स्लो कभी नल हो जाए। आपका स्लो कभी नल हो जाए और आपका फास्ट नॉन नल रहे। ऐसा नहीं होगा। रोड नल होने का मतलब रोड के बाहर निकल जाना। रोड के बाहर पहले फास्ट निकलेगा फिर स्लो निकलेगा। इसीलिए स्लो को",
+      "source": "caption",
+      "english_text": "Didn't do it because we have seen that whenever slow happens, it will lag behind fast. Will lag behind fast. Meaning fast if it is null. If there is a circle then there will be no tap. But if there is to be a tap. If there is a straight road then the fast one will be tapped first. Fast will be the first tap. Slope will be later. Will happen later. So it cannot happen that your slow ever becomes null. May your slow become null and your fast remain non-null. This will not happen. To have a road tap means to go out of the road. Off road, first it will go fast and then it will go slow. That's why slow"
+    },
+    {
+      "start_time": 1618.159,
+      "end_time": 1651.909,
+      "text": "चेक नहीं किए थे। लेकिन आप आप इसको चेक किए। लेकिन आप इसको छोड़ दिए। इसको छोड़ दिए। इसीलिए आपका प्रोग्राम क्रैश कर जाएगा। इसीलिए वाइल जो कंडीशन क्या बोले? जिसका-जिसका नेक्स्ट निकाल रहे हो उसको लिख दो। तो लिख दीजिए। फास्ट नॉट इक्वल टू नल एंड एंड एंड यह भी नहीं होना चाहिए। फास्ट डॉट नेक्स्ट नॉट इक्वल टू नल। अब आपका वाइल लूप सुरक्षित है। समझ गए? किसको-किसको चेक किए? बेटा फास्ट भी नल नहीं होना चाहिए।",
+      "source": "caption",
+      "english_text": "Didn't check. But you checked it yourself. But you left it. Abandoned this. That's why your program will crash. That's why what should we say about the condition? Write down whose next one you are planning. So write it down. Fast Not Equal To Null And And And It Shouldn't Be Even. Fast dot next not equal to null. Now your while loop is secure. Understand? Whom did you check? Son, fast should not be a tap either."
+    },
+    {
+      "start_time": 1651.919,
+      "end_time": 1684.71,
+      "text": "और फास्ट का जो नेक्स्ट है वो भी नल नहीं होना चाहिए। ठीक है? अगर आपको नहीं समझ में आता है, आपको नहीं समझ में आया कि आपको लगता है कि स्लो को भी लिखना चाहिए तो आप स्लो नॉट इक्वल टू नल भी लिख दीजिए। लिख कोई दिक्कत नहीं है। लिख दीजिए। सेफ रहना चाहिए। स्लो नॉट इक्वल टू नल लिख दीजिए। लेकिन इंटरव्यूअर आपसे पूछेगा कि ये क्यों लिख रहे हो? इसकी जरूरत नहीं है। ठीक है? तो इसीलिए अब इसमें भी एक और है। अब क्या अभी कंडीशन में लिखें? वाइल फ़स्ट नॉट इक्वल टू नल एंड फ़स्ट नेक्स्ट",
+      "source": "caption",
+      "english_text": "And the next one of Fast should also not be null. Ok? If you don't understand, you didn't understand that you think slow should also be written then you write slow is not equal to null also. There is no problem in writing. Please write it down. Must remain safe. Write slow not equal to null. But the interviewer will ask you why are you writing this? It is not needed. Ok? So that's why now there's another one in this too. Now write in Abhi condition? While first not equal to null and first next"
+    },
+    {
+      "start_time": 1684.72,
+      "end_time": 1717.51,
+      "text": "नॉट इक्वल टू नल। यही लिखे थे। क्या आप इसको रिवर्स करके लिख सकते हैं? इसमें एक कंडीशन ये है। एक कंडीशन ये है क्या आप इसको ऐसे लिख सकते हैं अगर आपका मन करे। वाइल फ़स्ट डॉट नेक्स्ट नॉट इक्वल टू नल एंड फ़स्ट नॉट इक्वल टू नल। अब आप बोलिएगा बात तो सेम है। बात तो सेम है। ये कंडीशन हम पहले लिख दिए। बाद में लिख दिए। ये गलत है। ये प्रोग्राम आपका क्रैश करवा सकता है। क्यों क्रैश करवा सकता है? इमेजिन कीजिए। इमेजिन कीजिए कभी ना कभी दुनिया",
+      "source": "caption",
+      "english_text": "Not equal to null. This is what was written. Can you write this in reverse? There is a condition in this. One condition is that you can write it like this if you feel like. While first dot next is not equal to null and first is not equal to null. Now you say it is the same thing. The matter is the same. We wrote this condition first. Wrote it later. This is wrong. This program can cause you to crash. Why can it cause a crash? Imagine. Imagine the world someday"
+    },
+    {
+      "start_time": 1717.52,
+      "end_time": 1750.549,
+      "text": "में। कभी ना कभी दुनिया में आपका फास्ट नल होता। फास्ट आपका नल हो गया। पहले वाले केस में तो आपका वाइल लूप यहीं पे ब्रेक हो जाता। पहले वाले केस में आपका वाइल लूप यहीं पे ब्रेक हो जाता। अगर ये फॉल्स हो जाता है तो कंप्यूटर आगे वाला नहीं पड़ता है एंड में। क्योंकि एंड में अगर पहला कंडीशन फॉल्स हो जाता है तो कंप्यूटर आगे का कंडीशन नहीं पड़ता है। तो ये तो चल जाता। आपका फास्ट नॉट इक्वल टू नल पड़ता। ये देखता अच्छा फास्ट तो नल है। ब्रेक कर दो वाइल लूप। लेकिन इस वाले में इस वाले सेकंड वाले वाइल लूप में आप क्या बोल रहे है कि पहले फास्ट डॉट नेक्स्ट निकाल लो भाई उसके बाद उसको चेक करना तो आपका",
+      "source": "caption",
+      "english_text": "In. At some point in the world you would have had a fast tap. Fast your tap is done. In the former case, your while loop would have broken here. In the former case, your while loop would have broken here. If this fails then the computer in front does not fall in the end. Because at the end if the first condition fails then the computer does not fulfill the further condition. So this would have worked. Your fast not equal to null. Looks like it's a good fast tap. Break the vicious loop. But in this one, in this second while loop, what are you saying that first take out the fast dot next brother, after that it is your responsibility to check it."
+    },
+    {
+      "start_time": 1750.559,
+      "end_time": 1779.669,
+      "text": "कंप्यूटर क्या करेगा नल डॉट नेक्स्ट निकालने का कोशिश करेगा जैसे ही ये कोशिश होगी ये आपका क्रैश करवा देगा ठीक है तो वाइल लूप में आपको जितना भी ऐसा लिखना है फ़ास्ट नॉट इक्वल टू नल फ़ास्ट डॉट नेक्स्ट नॉट इक्वल टू नल फ़ास्ट डॉट नेक्स्ट डॉट नेक्स्ट नॉट इक्वल टू नल ऑर्डर में लिखना है कि कहीं भी किसी को नहीं दिख देना है सबसे पहले फ़ास्ट फिर अगर ज़रूरत पड़ती है, ास्ट डॉट नेक्स्ट। अब उसके बाद भी ज़रूरत पड़ती है, तो फ़ास्ट, नेक्स्ट डॉट नेक्स्ट।",
+      "source": "caption",
+      "english_text": "What will the computer do? It will try to extract null dot next. As soon as this attempt is made, it will crash you. Okay, so in the while loop, you have to write as much as fast not equal to null fast dot next not equal to null fast dot next dot next not equal to null. You have to write in this order that it should not be visible to anyone anywhere, first of all fast then if needed, Ast Dot Next. Now if there is a need even after that, then fast, next dot next."
+    },
+    {
+      "start_time": 1779.679,
+      "end_time": 1804.71,
+      "text": "डॉट नेक्स्ट डॉट नेक्स्ट क्योंकि पहले चेक होगा कि क्या कहीं यही तो नल नहीं है। अगर ये नल नहीं है तो ठीक है। इसका नेक्स्ट निकालो और चेक करो कि ये नल नहीं है। अगर ये नल नहीं है तो मतलब ये सेफ है। अब इसका नेक्स्ट निकालो और चेक करो कि वो नल नहीं है। ये आपको ऐसे करके लिखना है। ठीक है? आइए इसका सूडो कोड लिखते हैं और इसको करके देख लेते हैं। तो एक लिंक लिस्ट बना लीजिए छोटा सा। ठीक है?",
+      "source": "caption",
+      "english_text": "Dot next dot next because first we will check whether this is the tap somewhere. If it is not a tap then it is okay. Take out its next and check that it is not a tap. If it is not a tap then it means it is safe. Now take out its next and check that it is not a tap. You have to do this and write like this. Ok? Let's write its pseudo code and try it. So make a small link list. Ok?"
+    },
+    {
+      "start_time": 1804.72,
+      "end_time": 1835.83,
+      "text": "और ये फोर हो गया। और ये फाइव हो गया और ये ये हो गया। सिंपल सा छोटा छोटू सा हमारा लिंक लिस्ट है। सबसे पहले सबसे पहले हम क्या बोले? दो चीज करें। स्लो इक्वल टू हेड और फास्ट इक्वल टू हेड। ठीक है? तो इसका मतलब क्या हुआ? इसका मतलब क्या हुआ? आपका स्लो कहां पे आ गया? वन पे। फास्ट कहां पे आ गया? वन पे। ठीक? उसके बाद हम लोग क्या चेक करते थे? वाइल वाइलस्ट नॉट इक्वल टू नल।",
+      "source": "caption",
+      "english_text": "And it became four. And it became five and it became this. Our link list is simple and small. First of all, what should we say? Do two things. Slow equal to head and fast equal to head. Ok? So what does this mean? What is the meaning of this? Where has your slow reached? On one. Where has Fast come? On one. Correct? What did we check after that? Vilst not equal to null."
+    },
+    {
+      "start_time": 1835.84,
+      "end_time": 1870.23,
+      "text": "एंड एंडस्ट डॉट नेक्स्ट नॉट इक्वल टू नल। नेक्स्ट डॉट नॉट इक्वल टू नल। ठीक है? आइए चेक करिए। क्या फास्ट नल है? नहीं। फास्ट नल तो नहीं है। क्या फ़स्ट का नेक्स्ट नल है? मतलब वन का नेक्स्ट। क्या टू नल है? नहीं। टू एक वैल्यू है। टू नल। एम्प्टी स्पेस नहीं है। एम्प्टी स्पेस नहीं है। टू वैल्यू है। ओके? सबसे पहले क्या करना था? स्लो इज इक्वल टू स्लो डॉट नेक्स्ट। दौड़ाइए। दौड़ाए दौड़ाइए इसको। और फ़ास्ट इज़ इक्वल टु फ़ास्ट डॉट नेक्स्ट। यह तो एक बार दौड़ा। दो बार दौड़ाना है ना जी। दो बार दौड़ाओ। आइए। ठीक",
+      "source": "caption",
+      "english_text": "And end dot next not equal to null. Next Dot Not Equal to Null. Ok? Let's check. What is fast tap? No. There is no fast tap. Is Fust's Next Null? Means one's next. What is two taps? No. To is a value. To tap. There is no empty space. There is no empty space. To value. Ok? What was the first thing to do? Slow is equal to slow dot next. Run it. Make it run. And fast is equal to fast dot next. He ran once. You have to run it twice, right? Run twice. Come. okay"
+    },
+    {
+      "start_time": 1870.24,
+      "end_time": 1904.47,
+      "text": "है? तो सबसे पहले क्या होगा? सबसे पहले क्या होगा? ये आप लिख लिए। अभी आपका स्लो इज इक्वल टू वन है। एक टेबल बना देते हैं ये। आपका ये स्लो है और ये फास्ट है। सबसे पहले क्या था? दोनों वन था। जब आप ये वाला एग्जीक्यूट किए, जब आप ये वाला एग्जीक्यूट किए, तो आपका स्लो क्या हो गया? वन का नेक्स्ट। वन का नेक्स्ट क्या है? टू है। लिख दीजिए। फास्ट कहां हो गया? वन का नेक्स्ट का नेक्स्ट। टू का नेक्स्ट मतलब थ्री। ये हो गया थ्री। क्या दोनों इक्वल है? नहीं दोनों इक्वल नहीं है। करते रहिए एक काम। अगला आइए। स्लो टू से कहां जाएगा?",
+      "source": "caption",
+      "english_text": "Is it? So what will happen first? What will happen first? You wrote this. Now your slow is equal to one. Let's make a table. Yours is slow and this is fast. What was the first? Both were forests. When you executed this one, when you executed this one, what became your slow? One's Next. What's next for One? It's two. Please write it down. Where is the fast? One's next's next's next. Next to two means three. This is three. Are both equal? No, both are not equal. Keep doing one thing. Come next. Where will we go from slow to?"
+    },
+    {
+      "start_time": 1904.48,
+      "end_time": 1938.789,
+      "text": "टू से नेक्स्ट करके थ्री पे चला जाएगा। लिख दीजिए। फास्ट कहां जाएगा? फास्ट अभी थ्री पे है। थ्री से ये पहले फोर पे जाएगा और फिर फाइव पे आ जाएगा। तो लिख दीजिए। फास्ट फाइव बना। क्या दोनों इक्वल है? नहीं। दोनों इक्वल नहीं है। आइए फिर करिए। स्लो कहां जाएगा? स्लो थ्री से फोर जाएगा। आगे जाएगा। नेक्स्ट पे जाएगा। लिख दीजिए। और फास्ट कहां जाएगा? फास्ट अभी फाइव पे है। फास्ट अभी फाइव पे है। फाइव से ये वापस थ्री पे जाएगा और फिर फोर पे आ जाएगा। तो फास्ट फोर पे आ गया। अब देखिए क्या दोनों इक्वल है? हां। स्लो इक्वल इक्वल टू फॉल्स हो गया। क्यों हुआ? साइकिल होगा तभी हुआ होगा। ऐसे नहीं होता है।",
+      "source": "caption",
+      "english_text": "After going from two to next, he will go to three. Please write it down. Where will Fast go? Fast is on three now. From three it will first go to four and then to five. So write it down. Made a fast five. Are both equal? No. Both are not equal. Let's do it again. Where will the slow go? Will go from slow three to four. Will go further. Will go to next. Please write it down. And where will Fast go? Fast is on five now. Fast is on five now. From five it will go back to three and then back to four. So it came to Fast Four. Now see are both equal? Yes. Slow equals two falls. Why did it happen? This would have happened only if there was a bicycle. It doesn't happen like that."
+    },
+    {
+      "start_time": 1938.799,
+      "end_time": 1972.389,
+      "text": "ट्रू रिटर्न कर दिए। ट्रू रिटर्न कर दिए। समझ में आई इतनी बात? सबको समझ में आई? ठीक? बहुत अच्छी बात है। तो ये आपका स्लो एंड फास्ट पॉइंटर का सूडो कोड कोड जो भी है जा के इसको सबमिट कीजिए। कौन सा क्वेश्चन है? आ पैटर्न में मिल जाएगा आपको। पैटर्न में तो हम दिखा ही दिए थे कौन सा क्वेश्चन है। तो मिल जाएगा। है ना? तो फाइंड द साइकल ये इसका क्वेश्चन नंबर है। 141 141 लीड कोड 141 बस फाइंड करना है कि लीड लिंक लिस्ट में साइकिल है कि नहीं। तो ये इसका कांसेप्ट होता है। कल बहुत अच्छा अच्छा",
+      "source": "caption",
+      "english_text": "Returned true. Returned true. Did you understand this much? Did everyone understand? Correct? very good thing. So whatever this is your pseudo code of slow and fast pointer, go and submit it. Which question is it? You will get it in Aa pattern. We had already shown in the pattern which question it was. So you will get it. Isn't it? So find the cycle, this is its question number. 141 141 Lead Code 141 Just find out if Cycle is in the lead link list or not. So this is its concept. tomorrow very good good"
+    },
+    {
+      "start_time": 1972.399,
+      "end_time": 1996.76,
+      "text": "क्वेश्चन करेंगे इस पे और इसको डिटेल में बात करेंगे कि एरे में ये कैसे होता है और ये नंबर में कैसे होता है। सेम चीज जो भी हम लोग लिंक लिस्ट में पढ़े हैं ये चीज आप एरे में भी करना है आपको और नंबर पे भी होता है ऐसा-सा क्वेश्चन। तो बहुत डिटेल में पढ़ेंगे कल के लेक्चर में या तो हां कल के लेक्चर में और चलिए इसको देखिए। यह बहुत इंट्रो लेक्चर था मेरे हिसाब से बहुत डिटेल लेक्चर था और मिलते हैं कल।",
+      "source": "caption",
+      "english_text": "We will question on this and talk about it in detail, how it happens in arrays and how it happens in numbers. Whatever we have read in the link list, you have to do it in the array also and similar questions arise on the number also. So we will read in great detail in tomorrow's lecture or yes in tomorrow's lecture and let's see it. This was a very intro lecture, according to me it was a very detailed lecture and see you tomorrow."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

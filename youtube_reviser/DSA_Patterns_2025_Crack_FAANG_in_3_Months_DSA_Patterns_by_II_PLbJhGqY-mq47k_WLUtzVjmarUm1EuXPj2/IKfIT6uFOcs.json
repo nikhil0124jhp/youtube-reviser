@@ -1,0 +1,639 @@
+{
+  "video_id": "IKfIT6uFOcs",
+  "video_title": "5 Point Template To Crack any Recursion Leetcode Question | DSA Patterns 2026",
+  "video_number": 76,
+  "chunks": [
+    {
+      "start_time": 1.829,
+      "end_time": 35.35,
+      "text": "भाई इस वीडियो में आपको हम बैक ट्रैकिंग का फिक्स पॉइंट बाय पॉइंट टेंपेंट दे देंगे। जैसा स्लाइडिंग विंडो में दिए थे याद कीजिए कि अगर मैथ्स है तो सेम सेट ऑफ स्टेप्स करना है। हम कहीं पे लिख के भी रखे हैं। पांच पॉइंट का टेंपलेट है। पांच पॉइंट है। कोड भी सेम पॉइंट बाय पॉइंट लिखना है। कोई भी रिकर्शन या बैक ट्रैकिंग का क्वेश्चन सॉल्व हो सकता है इस टेंप्लेट से। देखिए पांच पॉइंट का टेंप्लेट है। सबसे पहले तो क्वेश्चन देख के समझना है कि रिकर्शन और बैक ट्रैकिंग कैसा है? कैसे समझेंगे? ऑल कॉम्बिनेशन। जब भी आपको चॉइसेस का क्वेश्चन मिले और आपको ऑल कॉम्बिनेशन करना है ना बैक ट्रैकिंग सही होगा। उसका और कोई तरीका नहीं है। पांच पॉइंट में क्वेश्चन को ब्रेक करना है। हर एक पॉइंट जब आप समझ लेंगे हर एक पॉइंट के",
+      "source": "caption",
+      "english_text": "Brother, in this video we will give you the fixed point by point method of back tracking. As given in the sliding window, remember that if you have maths then you have to follow the same set of steps. We have also written it down somewhere. There is a five point template. There are five points. The code also has to be written the same point by point. Any recursion or back tracking question can be solved with this template. See, there is a five point template. First of all, we have to understand the question by looking at what is recursion and back tracking? How will you understand? All combination. Whenever you get a question of choices and you have to do all the combinations, back tracking will be useful. There is no other way. Questions have to be broken into five points. When you understand each point,"
+    },
+    {
+      "start_time": 35.36,
+      "end_time": 63.75,
+      "text": "अनुसार आपको कोड में लिखना है। कोड भी सिस्टमैटिक है। पॉइंट बाय पॉइंट कोड लिखना है। मतलब अगर आप पॉइंट फाइव समझ लिए सेम काम करना है। इसमें कोई डेविएशन नहीं है। इसमें कोई महान क्वेश्चन नहीं होता है कि अरे ये तो एकदम अलग हो गया। कुछ नहीं होता है। सेम ही चलता है। पूरा एक फिक्स ब्लूप्रिंट हम बनाए क्योंकि कुछ लोग कह रहे थे कि कुछ लोग कह रहे थे एक्सप्लेनेशन कॉम्प्लेक्स है। ड्राइडन कॉम्प्लेक्स है, कोड कॉम्प्लेक्स है। सब कनेक्ट कर दिए इसमें। हम लॉजिक कनेक्ट कर दिए। लॉजिक से पॉइंट बनाए, पॉइंट से कोड बनेगा, कोड से ड्राई रन बनेगा। सब कनेक्टेड है देखिएगा।",
+      "source": "caption",
+      "english_text": "According to this you have to write in code. The code is also systematic. Have to write point by point code. Meaning, if you understand point five, you have to do the same work. There is no deviation in this. There is no big question in this that oh this has become completely different. Nothing happens. Same thing works. We made a complete fixed blueprint because some people were saying that some people were saying that the explanation is complex. Dryden is complex, the code is complex. Connected everything in it. We connected the logic. Make points with logic, points will make code, code will make dry run. You will see everything is connected."
+    },
+    {
+      "start_time": 63.76,
+      "end_time": 97.51,
+      "text": "इसके बाद एक क्वेश्चन भी करवाएंगे आपको लेटर कॉम्बिनेशन। आप देखेंगे कि सेम पॉइंट बाय पॉइंट एकदम एग्जैक्ट ब्लूप्रिंट की तरह। इसके बाद और कुछ खुद से सोचने की ज़रूरत नहीं पड़ेगी मेरे हिसाब से। तो हमको जितना बेस्ट आता था रिकर्शन बैक ट्रैकिंग का जो हम सीखे हैं चार-पांच साल में, वो हम इसमें डाल दिए हैं वीडियो में। तो, देखिए और बताइएगा कैसा लगा और चलिए शुरू करते हैं जल्दी। तो, तो सबसे पहला वाला जो स्टेप है ना वो है कि अपने स्टेजेस को आइडेंटिफाई करिए। आइडेंटिफाई अपना स्टेजेस। अब हम स्टेजेस जब हम बोलते हैं ना तो इसका मतलब क्या होता है कि आपके पास कोई भी क्वेश्चन में आइटम्स होता है। एरे दिया होता है। बोलता है नंबर है। अब नंबर पे तुम खेलो कि हर नंबर को लो या ना लो।",
+      "source": "caption",
+      "english_text": "After this, you will also be asked a question about letter combination. You will see that it is the same point by point as the exact blueprint. After this, in my opinion, there will be no need to think on your own. So as much as we know about recursion back tracking, whatever we have learned in the last four-five years, we have put it in the video. So, watch it and tell me how you liked it and let's get started quickly. So, the first step is to identify your stages. Identify your stages. Now when we say stages, what does it mean that you have items in any question. Array is given. Says there is a number. Now you play on the numbers whether you take each number or not."
+    },
+    {
+      "start_time": 97.52,
+      "end_time": 128.949,
+      "text": "स्टेजेस का मतलब है ना कि मान लीजिए आप आप एक अह बिल्डिंग में घुसे वहां पे दो दरवाजे हैं। ठीक है? यहां पे कितने दरवाजे हैं? दो डोर्स हैं। हर डोर से आप या तो लेफ्ट जा सकते हैं या तो राइट जा सकते है। ऐसा है। तो ये जो डोर है ना ये कितना डोर है? दो डोर है। मतलब आपको दो बार डिसीजन लेने का मतलब अह मौका मिलेगा। तो ये आपके क्या हो गए? ये आपके स्टेजेस हो गए कि मतलब कितना स्टेज हमको पार करना है ताकि हम अंत में पहुंच जाएं। मान लीजिए आप आप जब पढ़ाई करते हैं तो आपके पास तीन स्टेजेस हैं। 10थ है, 12थ है और बीटेक है। ऐसा कितना मौका आएगा मेरे पास डिसीजन लेने का?",
+      "source": "caption",
+      "english_text": "Stages means that suppose you enter a building and there are two doors. Ok? How many doors are there here? There are two doors. From each door you can either go left or right. It is like that. So, how long is this string? There are two strings. This means you will get a chance to take the decision twice. So what has happened to you? These are your stages which means how many stages we have to cross so that we can reach the end. Suppose when you study, you have three stages. 10th, 12th and B.Tech. How many such chances will I have to take a decision?"
+    },
+    {
+      "start_time": 128.959,
+      "end_time": 163.67,
+      "text": "एक मौका 10थ में आएगा। एक मौका 12th में आएगा, एक मौका बीटेक में आएगा। तो आपके नंबर ऑफ स्टेजेस कितने हैं? तीन हैं। ठीक है? तो ये जब आइडेंटिफाई कर लिए। जनरली क्या होता है? आपको एक आइटम लिस्ट दिया रहेगा। एरे दिया रहेगा तो एरे का हर इंडेक्स एक आइटम हो गया। स्ट्रिंग दिया हुआ है। स्ट्रिंग का हर इंडेक्स एक आइटम हो गया। आपको आपको बोला हुआ है कि n नंबर्स है तो हर नंबर एक आइटम हो गया मतलब जो भी आपको मौका मिलता है ना डिसीजन लेने का जब हमको डिसीजन लेने का मौका कितनी बार मिल रहा है वो आपके हो गए स्टेजेस ठीक है अगला काम क्या कीजिए एक-एक करके इन स्टेजेस पे जाइए वन बाय वन जाइए लूप करके वन बाय वन स्टेजेस पे जाइए ये हम लोग कैसे",
+      "source": "caption",
+      "english_text": "An opportunity will come in the 10th. One chance will come in 12th, one chance will come in B.Tech. So what is your number of stages? There are three. Ok? So once this is identified. What is generally? You will be given an item list. Given an array, each index of the array becomes an item. String is given. Each index of the string becomes one item. You have been told that if there are n numbers, then each number becomes an item, meaning whatever opportunity you get to take a decision, how many times do we get a chance to take a decision, those are your stages, okay, what should we do next, go to these stages one by one, go in a loop, go to the stages one by one, how do we do this?"
+    },
+    {
+      "start_time": 163.68,
+      "end_time": 197.43,
+      "text": "करते हैं अगर एरे हैं तो आपको हर इंडेक्स पे जाना है कैसे जाएंगे आई से जाएंगे आई बढ़ाते जाएंगे मतलब हर फंक्शन में एक आई डालना पड़ेगा आपको क्या डालना पड़ेगा एक इंडेक्स डालना पड़ेगा या तो अगर नंबर का क्वेश्चन है कि नंबर करना है भैया तो हर हर में हर फंक्शन में एक नंबर डालना पड़ेगा मतलब हर फंक्शन को पता होना चाहिए कि हम किस स्टेज पे खड़े हैं इस समय हम किस स्टेज पे खड़े हैं ताकि हम अपना डिसिशन ले सके है ना तो ये हम जैसे-जैसे आगे जाएंगे क्लियर हो जाएगा तो एक-एक करके स्टेजेस पे जाइए हम प्रेफर करते हैं कि हम शुरू से लेकर लास्ट तक जाएं कुछ लोग क्या करते हैं लास्ट से शुरू पे आते हैं दोनों सही है हर स्टेज पे जाइए एक-एक एक-एक एक-एक करके पहले आप स्टेज वन पे खड़े हैं",
+      "source": "caption",
+      "english_text": "If it is an array then you have to go to every index, how will we go by i, we will keep increasing i, that is, we will have to put one i in every function, what will you have to put, will you have to put an index, or if there is a question of number, brother, then in every function, we will have to put a number in every function, that is, every function should know on which stage we are standing at the moment so that we can take our decision, otherwise this will become clear as we move ahead. Go to the stages one by one. We prefer to go from the beginning to the last. What some people do is to come from the last to the beginning. Both are correct. Go to each stage, one by one. First, you are standing on stage one."
+    },
+    {
+      "start_time": 197.44,
+      "end_time": 229.99,
+      "text": "जैसे ये दरवाजा का एग्जांपल हम लें तो पहले आप जा के डोर वन पे खड़े होंगे फिर जब आप डोर वन का डिसीजन कर लेंगे तो अगला अगला कहां कहां पे जाएंगे? आप डोर टू पे जाएंगे। ऐसे करके हर स्टेज पे जाइए। ठीक है? नाउ चॉइससेस डिसाइड करिए। चॉइससेस क्या हैं? हर स्टेज पे आपके पास चॉइससेस क्या हैं? आपको हमेशा रिकजन का और बैक ट्रैकिंग का मतलब ही होता है कि आपको चॉइससेस एक्सप्लोर करने हैं। पॉसिबिलिटीज़ क्या-क्या हैं? क्या-क्या कर सकते हैं? मान लीजिए एक डोर है वो लेफ्ट खुलता है और राइट खुलता है। कितने चॉइसेस हुए? दो चॉइसेस। लेफ्ट भी जा सकते हैं, राइट भी जा सकते हैं। तो नंबर ऑफ चॉइसेस आइडेंटिफाई",
+      "source": "caption",
+      "english_text": "For example, if we take the example of a door, first you will go and stand at door one, then when you decide on door one, then where will you go next? You will go to door two. Do this and go to every stage. Ok? Now decide the choices. What are the choices? What are your choices at each stage? Reconciliation and backtracking always means you have to explore options. What are the possibilities? What all can be done? Suppose there is a door that opens left and opens right. How many choices were there? Two choices. Can go left, can go right also. So number of choices identified"
+    },
+    {
+      "start_time": 230.0,
+      "end_time": 258.229,
+      "text": "कीजिए। हर स्टेज पे आप क्या कर सकते हैं? हर स्टेज पे आप क्या कर सकते हैं? आप क्या कर सकते हैं? आपके हाथ में क्या है? अब ये वेरी कर सकता है। कभी-कभी हो सकता है कि आप जो मन चाहे वो कर सकते हैं। मतलब अगर हम दरवाजा का एग्जांपल लें। आप लेफ्ट भी खोल सकते हैं, राइट भी खोल सकते हैं। तो एक तो हो गया कि जो मन करे वो करिए। मतलब सारे चॉइसेस आपके हाथ में हैं। तो जो मन करे वो कर सकते हैं। कभी-कभी कुछ कंडीशन होती है जैसे कि पिछले में हम लोग क्या देखे थे वो जो डिग्री वाला क्वेश्चन था।",
+      "source": "caption",
+      "english_text": "Do it. What can you do at each stage? What can you do at each stage? What can you do? What do you have in your hand? Now it can do very. Sometimes you may be able to do whatever you want. Meaning if we take the example of door. You can open left or right. So one thing is done, do whatever you feel like. Meaning all the choices are in your hands. So you can do whatever you want. Sometimes there are some conditions like what we saw earlier was a degree question."
+    },
+    {
+      "start_time": 258.239,
+      "end_time": 291.749,
+      "text": "आपके पापा यूजी आपको करने देते थे। यूजी आप करते थे उसमें एक कंडीशन होता था कि आप अगर n से ज्यादा यूजी कर लिए तो नहीं कर सकते हैं। पीजी करने का क्या कंडीशन था कि नंबर ऑफ़ यूजी शुड बी ग्रेटर दैन पीजी तभी आपको पीजी। तो मान लीजिए दरवाजे में कुछ कंडीशन हो गया कि कभी-कभी आप बस लेफ्ट खोल सकते हैं। या तो कभी-कभी आप बस राइट खोल सकते हैं। या कभी-कभी आप दोनों खोल सकते हैं। या कभी-कभी आप कोई नहीं खोल सकते हैं। तो ये तो क्वेश्चन बाय क्वेश्चन डिपेंड करेगा कि हर स्टेज पे कितनी आजादी है आपको। क्या आपको सारे चॉइसेस की आजादी है? क्या हैं वो चॉइसेस? और क्या आप सारे चॉइसेस बना सकते हैं? कोई एक ही चॉइस बना",
+      "source": "caption",
+      "english_text": "Your father UG used to let you do it. You used to do UG, there was a condition in it that you cannot do UG if you do more than n. What was the condition for doing PG that the number of UG should be greater than PG, only then you can do PG. So suppose there is some condition in the door that sometimes you can open just left. Or sometimes you can just open right. Or sometimes you can open both. Or sometimes you may open none. So question by question it will depend on how much freedom you have at each stage. Do you have freedom of all choices? What are those choices? And can you make all the choices? make only one choice"
+    },
+    {
+      "start_time": 291.759,
+      "end_time": 323.83,
+      "text": "सकते हैं या तो कोई दो बना सकते हैं। तो ये आप क्वेश्चन पढ़ के अपने कॉपी में लिखिए और लिखिए क्या चॉइस है मेरे पास भैया। अच्छा। एक बार आपको ये भी समझ में आ गया। अगला स्टेप होता है अगला स्टेप होता है। मेक वन चॉइस मेक वन चॉइस। मतलब कोई एक चॉइस। मान लीजिए कि लेफ्ट दरवाजा खोलना एक चॉइस है। ये आपकी आपकी आपका डिसीजन है ना। एक डिसीजन बना लीजिए। अच्छा मेक वन चॉइस। अपने पास एक डायरी में उस चॉइस का नाम लिख लीजिए। डायरी में हम डायरी बोल रहे हैं, हम लोग इसको वेरिएबल से अह समझेंगे, लेकिन, डायरी में उस चॉइस को लिख लीजिए।",
+      "source": "caption",
+      "english_text": "Can make either or both. So read this question and write it in your notebook and write what choice do I have, brother? Good. Once you understand this also. The next step is the next step is. Make One Choice Make One Choice. Meaning any one choice. Suppose opening the left door is a choice. This is your decision, isn't it? Make a decision. Well make one choice. Write the name of that choice in a diary with you. In diary we are saying diary, we will understand it as a variable, but, write that choice in the diary."
+    },
+    {
+      "start_time": 323.84,
+      "end_time": 356.95,
+      "text": "उस चॉइस को लिख लीजिए। लिख लीजिएगा मतलब मान लीजिए कि आप दरवाजे में घुसे, आप एक कॉपी लेके जा रहे हैं, तो अगर आप लेफ्ट जाना चाहते हैं, तो आप जाइए, लेकिन उससे पहले डायरी में लिख लीजिए कि हम लेफ्ट जा रहे है, ठीक है? अगर आप राइट जाना चाहते हैं, जाइए, लेकिन उससे पहले डायरी में लिख लीजिए, हम राइट जा रहे है, ठीक है? उसको डायरी में अपने लिख लीजिए। और आगे बढ़ जाइए और आगे चले जाइए। आगे वाले स्टेज पे चले जाइए। आगे वाले स्टेज पे चले जाइए। मतलब कि मान लीजिए आप डोर वन पे मान लीजिए आप अभी डोर वन पर खड़े हैं। आप आपको मन करता है कि मेरे पास दो चॉइससेस हैं। भैया हम लेफ्ट जा सकते",
+      "source": "caption",
+      "english_text": "Write down that choice. Write it down, meaning suppose you enter the door, you are carrying a notebook, so if you want to go left, then you go, but before that write in the diary that we are going left, okay? If you want to go right, go, but before that write in your diary, we are going right, okay? Write it down in your diary. And go ahead and move ahead. Go to the next stage. Go to the next stage. Meaning that suppose you are standing at door one. Suppose you are standing at door one right now. You feel like I have two choices. brother we can go left"
+    },
+    {
+      "start_time": 356.96,
+      "end_time": 386.55,
+      "text": "हैं, राइट जा सकते हैं तो आप जाइए। आप लेफ्ट जाइए। लेकिन उससे पहले उससे पहले अपने एक डायरी में क्या लिख लीजिए कि हम लेफ्ट गए थे याद रखने के लिए। अगले स्टेज पे जाने का क्या मतलब है? फंक्शन कॉल आगे वाले स्टेज पे। आप आगे वाले डोर पे पहुंच गए। आगे वाले डोर पे पहुंच गए। वहां पे सेम काम रिपीट होगा। वहां पे सेम काम रिपीट होगा। लेकिन आगे वाले स्टेज पे चले जाइए। लेकिन जब इस आगे वाले स्टेज से आप पीछे आते हैं बैक ट्रैकिंग। बैक ट्रैकिंग मान लीजिए डोर डोर टू में जाके बहुत काम हुआ होगा। हमको वो सब का फायदा नहीं है।",
+      "source": "caption",
+      "english_text": "Yes, if you can go right then you go. You go left. But before that, write in your diary that we went left to remember. What does it mean to go to the next stage? Function call on next stage. You reached the front door. Reached the front door. The same work will be repeated there. The same work will be repeated there. But move on to the next stage. But when you come back from this forward stage, back tracking. Back tracking: Suppose a lot of work would have been done by going door to door. We do not have the benefit of all that."
+    },
+    {
+      "start_time": 386.56,
+      "end_time": 419.83,
+      "text": "हुआ होगा बहुत काम। जब आप वापस आते हैं अपने डायरी में से ये जो आप डायरी में लिखे थे ना यहां पे कि हम लेफ्ट जा रहे हैं डायरी। डायरी को रिवर्स कर दीजिए। डायरी को रिवर्स कर दीजिए। डायरी को रिवर्स करने का क्या मतलब है? जब आप डी वन पे थे और आपको लेफ्ट जाने का मन था तो आप अपने डायरी में लिखे थे हम लेफ्ट जा रहे हैं और आप डोर टू में चले गए थे लेफ्ट करके। जब आप वापस आएंगे डी वन पे तो आप जो भी चेंजेस किए थे यहां पे इस पॉइंट में आप जो भी चेंज किए थे उसको रिवर्स करिए। जो भी चेंज किए थे उसको रिवर्स कीजिए। जो भी चेंज किए थे उसको क्या करिए? रिवर्स करिए।",
+      "source": "caption",
+      "english_text": "A lot of work must have been done. When you come back from your diary, what you had written in the diary is right here that we are going left diary. Reverse the diary. Reverse the diary. What does reverse diary mean? When you were on Door 1 and you wanted to go left, you wrote in your diary that we are going left and you went to Door 2 by taking the left. When you return to D1, reverse whatever changes you made at this point. Reverse whatever changes were made. What to do with whatever changes were made? Do the reverse."
+    },
+    {
+      "start_time": 419.84,
+      "end_time": 454.309,
+      "text": "बस उसको रिवर्स करना है। सबको खाली नहीं। जो यहां पे इस इस पार्ट में जो चेंज हुआ है उसी को यहां पे रिवर्स करना है। उसी को यहां पे ये चेंज कुछ भी हो सकता है। हो सकता है आपके पास एक वेक्टर हो। आप उसमें लिख रहे हो लेफ्ट। अगर आप उसमें एक पुश करते हैं। अगर आप उसमें एक पुश करते हैं आपको एक पॉप करना है। अगर आप उसमें दो पुश करते हैं तो आपको दो पॉप करना है। अगर कोई वेरिएबल है आप पुश कर रहे हैं सम प्लस = एरे ऑफ़ idx मतलब अभी हम जहां पे हैं। इसको रिवर्स करिए तो इसको रिवर्स करने का क्या मतलब है? किसी चीज में आप एरे ऑफ़ आईdx को जोड़ें तो वो हो गया चेंज। उस चेंज को",
+      "source": "caption",
+      "english_text": "Just have to reverse it. Not everyone is free. Whatever change has happened in this part has to be reversed here. Anything can change here. Maybe you have a vector. You are writing left in it. If you put a push into it. If you push one into it you get a pop. If you put two pushes into it, you get two pops. If there is a variable you are pushing sum plus = array of idx means where we are right now. If you reverse it, what does it mean to reverse it? If you add array of idx to something, it changes. to that change"
+    },
+    {
+      "start_time": 454.319,
+      "end_time": 488.469,
+      "text": "रिवर्स करिए। सम - = एरे ऑफ़ idx। मतलब जो भी चेंज होगा चॉइस करने से पहले उसको इस आगे वाले स्टेज से जब आप वापस आएंगे ना इस फंक्शन में उसको यहां पे रिवर्स करना है। उसको यहां पे रिवर्स करना है। ये पूरा कहानी किसके लिए? एक चॉइस के लिए है। ये पूरा कहानी एक चॉइस के लिए है। ये सारे चॉइसेस के लिए रिपीट कीजिए। सारे चॉइसेस मतलब जो भी आप चॉइसेस पॉसिबल हैं हो सकता है कोई चॉइस पॉसिबल ही ना हो तो उसके लिए तो नहीं करना है लेकिन सारे चॉइसेस या सारे पॉसिबल चॉइसेस मतलब आप अगर लेफ्ट जाना चाहते हैं तो आप जाइए लेफ्ट के लिए सेम चीज अप्लाई होगा फिर जब आप राइट में",
+      "source": "caption",
+      "english_text": "Do the reverse. Sum -= Array of idx. Meaning, whatever change happens, before making the choice, when you come back from this next stage, it has to be reversed here in this function. It has to be reversed here. Who is this whole story for? One is for choice. This whole story is about a choice. Repeat this for all the choices. All choices means whatever choices you make are possible. It may be possible that some choice is not possible so don't do it for that but all choices or all possible choices means if you want to go left then you go left. Same thing will apply when you go right."
+    },
+    {
+      "start_time": 488.479,
+      "end_time": 517.75,
+      "text": "जाना चाहेंगे राइट के लिए सेम चीज अप्लाई होगा आप राइट जाएंगे मतलब अपने डायरी में आप लिखेंगे राइट आगे स्टेज पे जाएंगे और जब आप वापस आएंगे तो डायरी में से राइट को मिटाएंगे तो सारे पॉसिबल चॉइसस के लिए सेम रिपीट करिए सेम रिपीट करो ये क्या हो गया चौथा स्टेप ये सबसे इंपॉर्टेंट स्टेप है कि आपके एल्गोरिदम का हार्ट होता है कि अगर आप इसमें गलती करेंगे तो आप फिर इनफाइनाइट लूप वगैरह में चले जाएंगे। अच्छा। अब इनफाइनाइट लूप से ही आता है अगला लास्ट पॉइंट। लास्ट पॉइंट ज्यादा नहीं है। फाइव पांच पॉइंट बोले थे।",
+      "source": "caption",
+      "english_text": "If you want to go, the same thing will apply for the right, you will go right, meaning you will write right in your diary, go to the next stage and when you come back, you will erase the right from the diary, then repeat the same for all possible choices, repeat the same. What happened, the fourth step, this is the most important step, the heart of your algorithm is that if you make a mistake in this, then you will again go into infinite loop etc. Good. Now the next last point comes from the infinite loop itself. The last point is not much. Said five five points."
+    },
+    {
+      "start_time": 517.76,
+      "end_time": 550.949,
+      "text": "जब सारे स्टेजेस खत्म हो जाएं। जब सारे स्टेजेस खत्म हो जाएं। जब सारे स्टेजेस खत्म हो जाएं। मान लीजिए कि आप जिस बिल्डिंग में थे उसमें दो ही दरवाजे थे। उसमें दो ही दरवाजे थे। तो आप अगर दो दरवाजे खोल चुके हैं। आप दो दरवाजे खोल के आपके पास था कि लेफ्ट राइट लेफ्ट राइट जो करना है करें। लेकिन आप दोनों दरवाजे खोल चुके हैं तो सारे स्टेजेस खत्म हो जाएं। इसको हम लोग कैसे देखते हैं? मान लीजिए आप किसी एरे में हैं। और आपका स्टेज जो है ना वो क्या है? आपका इंडेक्स है। अगर इंडेक्स इक्वल इक्वल टू n हो गया। मतलब आप एरे के लास्ट में पहुंच चुके हैं। एरे में जितना चीज था आप सबको देख के लास्ट में आ गए। जब",
+      "source": "caption",
+      "english_text": "When all the stages are over. When all the stages are over. When all the stages are over. Suppose the building you were in had only two doors. There were only two doors in it. So if you have opened two doors. You opened two doors and had the option to do left, right, left right, whatever you want. But once you have opened both the doors, all the stages are over. How do we see this? Suppose you are in an array. And what is your stage? is your index. If index becomes equal to n. Meaning you have reached the last of the array. After seeing all the things in the array, you came last. when"
+    },
+    {
+      "start_time": 550.959,
+      "end_time": 581.75,
+      "text": "आप लास्ट में आ गए हैं। जब आप लास्ट में आ गए हैं। तो इस समय इस समय आपको क्या करना है? बहुत इंपॉर्टेंट चीज करना है। अपनी डायरी देखिए जो आप डायरी मेंटेन करते हुए आते थे ना डायरी जो आप मेंटेन करते थे। हर चॉइस के पहले हर चॉइस के पहले डायरी में लिखते थे कि हम लेफ्ट जा रहे हैं। फिर जब आप आते थे दो डायरी से मिटाते थे तो वो डायरी अभी तक ना उसमें कुछ आ चुका होगा। उसमें कोई ना कोई कॉम्बिनेशन आ चुका होगा। उस डायरी में मान लीजिए कि जब आप दोनों दरवाजे खोले तो हो सकता है कि आप ऐसे खोले हो। हो सकता है आप d1 से लेफ्ट गए हों।",
+      "source": "caption",
+      "english_text": "You have come last. When you have come in last. So what are you supposed to do at this point in time? There is a very important thing to do. Look at your diary, the diary you used to maintain, not the diary you used to maintain. Before every choice, we used to write in the diary that we are going left. Then when you used to come and erase it from two diaries, nothing would have come in those diaries yet. There must be some combination in it. Suppose in that diary that when you opened both the doors, it is possible that you opened them like this. You may have gone left from d1."
+    },
+    {
+      "start_time": 581.76,
+      "end_time": 615.67,
+      "text": "ठीक है? ये लेफ्ट लेके आप आए हो डी टू पे। हो सकता है आप डी टू से राइट गए हों और ये करके आप आ गए हो लास्ट में क्योंकि डोर तो दो ही है। तो पहला डोर ये था उससे आप लेफ्ट गए तो आपके डायरी में क्या लिखा हुआ होगा? लेफ्ट। उसके बाद आप दूसरे डोर में आए इससे आप राइट गए तो आपके डायरी में क्या लिखा हुआ होगा? राइट। अब दोनों दरवाजे खोलने के बाद आप आ चुके हैं आपके स्टेज के अंत में आपके स्टेज के अंत में। इस समय आपके डायरी में क्या लिखा हुआ है? लेफ्ट राइट। यही आपका कॉम्बिनेशन है। यही आपका एक कॉम्बिनेशन है। यही आपका एक कॉम्बिनेशन है। यही पूछा जाता है कि कॉम्बिनेशन बताओ। ऑल पॉसिबिलिटी ये आपकी",
+      "source": "caption",
+      "english_text": "ok? You have come to D2P with this left. It is possible that you may have gone right from D2 and by doing this you have come last because there are only two doors. So the first door was this, if you went left from it, what would be written in your diary? Left. After that, if you came to the second door and went right through it, what would be written in your diary? Right. Now after opening both the doors, you have reached the end of your stage. What is written in your diary at this time? Left right. This is your combination. This is your one combination. This is your one combination. This is what is asked: tell the combination. All possibilities are yours"
+    },
+    {
+      "start_time": 615.68,
+      "end_time": 649.19,
+      "text": "एक पॉसिबिलिटी है कि एक पाथ हो सकता है कि हम लेफ्ट और फिर राइट आए। इस पाथ से आपको बहुत तरीके के काम हो सकते हैं। हो सकता है कि आपको अपनी डायरी देखिए। डायरी में आपको वो वाला पॉसिबिलिटी दिख रहा होगा जो आप इस समय आए हैं। जो आप इस समय करके शुरू से अंत तक कोई एक पाथ आपको दिख रहा होगा। अब या तो इसको प्रिंट करिए जो भी बोला जाए। इसको प्रिंट करिए। हो सकता है बोला कि सब लेफ्ट राइट प्रिंट करो। प्रिंट कर देंगे। अ हो सकता है इसमें कुछ और हो मतलब हो सकता है सम इसको करना हो कहीं। सम ऑफ़ ऑल पॉसिबिलिटी हो तो इसको सम कर दीजिए किसी एक किसी एक मास्टर वेरिएबल में किसी एक मास्टर वेरिएबल में मतलब एक बहुत बड़ा",
+      "source": "caption",
+      "english_text": "There is a possibility that there may be a path that we can take left and then right. You can get many types of work done with this path. Maybe you should look at your diary. In the diary you must be seeing the possibility which you have come to at this time. Whatever you do at this time, you will be able to see one path from beginning to end. Now either print this, whatever is said. Print this. Maybe it said print everything left and right. Will print it. A: There may be something else in it, meaning there may be something to be done somewhere. If there is a sum of all possibilities then sum it in any one master variable, it means a very big"
+    },
+    {
+      "start_time": 649.2,
+      "end_time": 677.99,
+      "text": "सा बहुत बड़ा सा कोई वेक्टर ऑफ़ इंट हो या वेक्टर। मतलब जो भी जो भी आपका फाइनल आंसर है और अगर आपका फाइनल आंसर है कि सारे पाथ को प्रिंट करो। तो वो क्या होगा? वेक्टर ऑफ़ स्ट्रिंग होगा। मतलब बहुत सारे पाथों का मिक्सचर होगा। तो उस वेक्टर ऑफ स्ट्रिंग में अपना अपना इसको प्रिंट कर दीजिए या इंसर्ट कर दीजिए जो भी करना है। कहीं पे इंसर्ट कर दीजिए। हो सकता है ah कोई नंबर का गेम हो उसमें हो कि सारे पॉसिबल सम निकालो और सबका मैक्सिमम कर दो तो जो भी है जो भी आपको काम करना है मैक्सिमम कर दो मिनिमम कर दो अपने इस डायरी से ये डायरी आपको क्या बताता है ना।",
+      "source": "caption",
+      "english_text": "Be it a very big vector of int or vector. Meaning whatever your final answer is and if your final answer is print the entire path. So what will that be? Will be vector of strings. Meaning there will be a mixture of many paths. So print it or insert it in that vector of string, whatever you want to do. Insert it somewhere. Maybe there is a number game in which you find out all the possible sums and maximize them all, so whatever work you have to do, maximize it, minimize it. What does this diary tell you from this diary of yours?"
+    },
+    {
+      "start_time": 678.0,
+      "end_time": 711.35,
+      "text": "ये डायरी आपको बताता है कि जब आप किसी स्टेज के लास्ट में आए हैं। तो अब आप कुछ चॉइसस करते हुए आए हैं। अगर आप डोर वन से चलते हुए लास्ट तक आए हैं। अब बीच में डोर टू आया होगा डोर थ्री आया होगा। हर बार आप कुछ ना कुछ चॉइसेस बनाते हुए आए होंगे। हर बार आप कुछ ना कुछ चॉइसेस करते हुए आए होंगे। लास्ट में ये जो आपकी डायरी है ना जिस डायरी में हम लोग चॉइस लिखते हैं और उसमें से हटाते हैं। ये डायरी आपको आपकी लाइफ की चॉइसेस बताता है। लाइफ की क्या बताता है? चॉइसेस बताता है। फॉर एग्जांपल मान लीजिए 10थ में। अब मान लीजिए हर बार दो चीजें हो सकती थी। या तो आप पास करते या तो फैल करते। आप 10थ में कर गए पास। आप",
+      "source": "caption",
+      "english_text": "This diary tells you when you have reached the end of a stage. So now you are faced with some choices. If you walked from door one and came to the last one. Now door two must have come and door three must have come in the middle. Every time you must have been making some choices. Every time you must have been making some choices. Lastly, this is your diary in which we write our choices and delete them from it. This diary tells you the choices of your life. What does it tell about life? Shows choices. For example, suppose in 10th. Now suppose two things could have happened every time. या तो आप पास करते या तो फैल करते। आप 10थ में कर गए पास। you"
+    },
+    {
+      "start_time": 711.36,
+      "end_time": 739.35,
+      "text": "आ गए 12थ में। यह एक चो एक पाथ है। यह एक पाथ है जिंदगी जीने का। एक तरीका है जिंदगी जीने का। 12 12 में आप हो गए फेल। 12 में हो गए फेल। आप आ गए किसी तरह आ गए बीटेक में। बीटेक में आप हो गए पास। अब आप आ गए अपनी जॉब में। मान लीजिए कि ये अंत है। आपकी एजुकेशन का अंत है। इस समय इस वाले आदमी की इस वाले आदमी की लाइफ की कहानी क्या है? ये 10 में पास हुआ है। 12 में फेल हुआ है। और बीटेक में पास हुआ है।",
+      "source": "caption",
+      "english_text": "आ गए 12थ में। यह एक चो एक पाथ है। यह एक पाथ है जिंदगी जीने का। एक तरीका है जिंदगी जीने का। 12 12 में आप हो गए फेल। 12 में हो गए फेल। आप आ गए किसी तरह आ गए बीटेक में। बीटेक में आप हो गए पास। अब आप आ गए अपनी जॉब में। मान लीजिए कि ये अंत है। आपकी एजुकेशन का अंत है। इस समय इस वाले आदमी की इस वाले आदमी की लाइफ की कहानी क्या है? ये 10 में पास हुआ है। 12 में फेल हुआ है। और बीटेक में पास हुआ है।"
+    },
+    {
+      "start_time": 739.36,
+      "end_time": 772.79,
+      "text": "ये इसकी कहानी है। ये इसके डायरी में लिखा हुआ होगा। ये इसके डायरी में लिखा हुआ होगा। अब इस कहानी से ये क्या करता है? बेस पे है। हो सकता है इस कहानी के बेसिस पे आपको कोई जॉब हो। हो सकता है ऐसा क्वेश्चन हो कि अगर कोई आदमी तीनों में पास करता है तो उसको जॉब मिलेगा तो इसको जॉब नहीं मिलेगा। अगर कोई होता है कि कोई आदमी एक में फेल करता है तो उसको जॉब मिल जाएगा। तो उसको कुछ भी हो सकता है। वो तो क्वेश्चन लेकिन जब आप लास्ट में आते हैं तो आपकी डाइरी में ना आपकी जिंदगी की कहानी लिखी हुई होती है। क्या आप जिंदगी में कुछ चॉइसेस करके यहां पे पहुंचे हैं। आप 2015 में एक चॉइस लिए थे कि पढ़ें तो आप पास हुए थे। 2017 में आप एक चॉइस लिए थे कि नहीं पढ़े? आप फेल हो गए थे। 2021 में आप एक चॉइस लिए थे कि हां पढ़ लेते हैं आप",
+      "source": "caption",
+      "english_text": "ये इसकी कहानी है। ये इसके डायरी में लिखा हुआ होगा। ये इसके डायरी में लिखा हुआ होगा। अब इस कहानी से ये क्या करता है? बेस पे है। हो सकता है इस कहानी के बेसिस पे आपको कोई जॉब हो। हो सकता है ऐसा क्वेश्चन हो कि अगर कोई आदमी तीनों में पास करता है तो उसको जॉब मिलेगा तो इसको जॉब नहीं मिलेगा। अगर कोई होता है कि कोई आदमी एक में फेल करता है तो उसको जॉब मिल जाएगा। तो उसको कुछ भी हो सकता है। वो तो क्वेश्चन लेकिन जब आप लास्ट में आते हैं तो आपकी डाइरी में ना आपकी जिंदगी की कहानी लिखी हुई होती है। क्या आप जिंदगी में कुछ चॉइसेस करके यहां पे पहुंचे हैं। आप 2015 में एक चॉइस लिए थे कि पढ़ें तो आप पास हुए थे। 2017 में आप एक चॉइस लिए थे कि नहीं पढ़े? आप फेल हो गए थे। 2021 में आप एक चॉइस लिए थे कि हां पढ़ लेते हैं आप"
+    },
+    {
+      "start_time": 772.8,
+      "end_time": 805.509,
+      "text": "पास हो गए। अब जब आप 2025 में खड़े हैं ना तो 2025 में आपको ये सारा कहानी बताता है कि आप क्या-क्या करके यहां पे पहुंचे हैं। तो ये इस डायरी का वो है। इसीलिए हम लोग इस डायरी को कुछ भी कर सकते हैं। इसमें कुछ भी कर सकते हैं। ठीक है? आइए एक हम आपको इसी दरवाजे वाले एग्जांपल से इसको कोड के भाषा से अब समझाते हैं कि क्या करना है। मान लीजिए आपके पास आपको बोला हुआ है कि दो डोर्स है। ठीक बात है। हर डोर पे आप या तो लेफ्ट या तो राइट जा सकते हैं। ठीक है? दो डोर है। हर लेफ्ट में लेफ्ट भी खुल देगा राइट भी खुलेगा। अच्छा, अ आपको लास्ट में प्रिंट करना है। आपको लास्ट में प्रिंट करना है ऑल पॉसिबल",
+      "source": "caption",
+      "english_text": "Passed. अब जब आप 2025 में खड़े हैं ना तो 2025 में आपको ये सारा कहानी बताता है कि आप क्या-क्या करके यहां पे पहुंचे हैं। तो ये इस डायरी का वो है। इसीलिए हम लोग इस डायरी को कुछ भी कर सकते हैं। इसमें कुछ भी कर सकते हैं। Ok? आइए एक हम आपको इसी दरवाजे वाले एग्जांपल से इसको कोड के भाषा से अब समझाते हैं कि क्या करना है। मान लीजिए आपके पास आपको बोला हुआ है कि दो डोर्स है। That's right. हर डोर पे आप या तो लेफ्ट या तो राइट जा सकते हैं। Ok? There are two strings. हर लेफ्ट में लेफ्ट भी खुल देगा राइट भी खुलेगा। अच्छा, अ आपको लास्ट में प्रिंट करना है। आपको लास्ट में प्रिंट करना है ऑल पॉसिबल"
+    },
+    {
+      "start_time": 805.519,
+      "end_time": 839.03,
+      "text": "पाथ्स। ऑल पॉसिबल पाथ्स ऑल पॉसिबल पाथ्स यू कैन टेक मतलब लेफ्ट लेफ्ट, लेफ्ट राइट कुछ भी कुछ भी जो भी पॉसिबल पाथ है सब कर सकते हैं। आइए इसको ब्रेक डाउन करें। सबसे पहले सबसे पहले पॉइंट नंबर वन, पॉइंट नंबर वन, कितने स्टेजेस है आपके पास? आपके पास दो दरवाजे हैं मतलब डिसीजन मेकिंग के कितने मौके हैं? दो मौके। टू डोर्स। तो ये आपका स्टेजेस हो गया। सेकंड सेकंड पॉइंट क्या था जी? चॉइस था कि क्या था? देख लेते हैं। वन बाय वन। सेकंड पॉइंट था कि वन बाय वन स्टेजेस पे जाइए। वन बाय वन स्टेजेस पे जाइए। वन बाय वन किस पे जाइए? स्टेजेस पे जाइए। हो सकता है कि ये स्टेजेस उसमें",
+      "source": "caption",
+      "english_text": "Paths. All Possible Paths All Possible Paths You Can Take Meaning Left Left, Left Right Anything, Whatever is the possible path, everyone can do. Let's break it down. First things first, point number one, point number one, how many stages do you have? You have two doors, which means how many opportunities for decision making? Two chances. Two Doors. So these are your stages. What was the second second point? What was the choice? Let's take a look. One by one. The second point was to go one by one stages. Go one by one stages. Who should go one by one? Go to the stages. It is possible that these stages"
+    },
+    {
+      "start_time": 839.04,
+      "end_time": 873.509,
+      "text": "दिया हो कि किसी एरे के फॉर्म में दिया हो। हो सकता है कि ये स्टेज किसी एरे के फॉर्म में दिया हो। ठीक है? तो हो सकता है कि एक एरे हो। इसमें डी वन हो और इसमें डी टू हो। ठीक है? एक-एक करके जाइए। तो हो गया। इंडेक्स से जाएंगे। शुरू करेंगे शुरू से जीरो से। अच्छा। थ्री, अपनी सारी चॉइसेस सोचिए। आपके पास हर दरवाजे पे क्या चॉइस है? हर दरवाजे पे आपके पास दो चॉइस है। क्या चॉइस है? लेफ्ट और राइट। ठीक है? अब किसी भी आप स्टेज पर आते हैं मेक वन चॉइस। मेक वन चॉइस मतलब या तो लेफ्ट चुनिए या राइट चुनिए। जो भी जो भी जो भी आप चॉइससेस कर सकते हैं सबको करने की कोशिश कीजिए। सब",
+      "source": "caption",
+      "english_text": "It may be given in the form of an array. It is possible that this stage may be given in the form of an array. Ok? So maybe an array. It has D one and it has D two. Ok? Go one by one. So it's done. Will go by index. Will start from scratch. Good. Three, consider all your options. What choices do you have at each door? You have two choices at every door. What is the choice? Left and right. Ok? Now any time you come on stage make one choice. Make one choice means either choose left or choose right. Whatever choices you can make, try to do them all. all"
+    },
+    {
+      "start_time": 873.519,
+      "end_time": 907.189,
+      "text": "करने की कोशिश कीजिए। तो यहां पे कोई कंडीशन है नहीं। आप लेफ्ट भी खोल सकते हैं, राइट भी खोल सकते हैं। आपकी मर्जी। तो हम लोग दोनों करने की कोशिश करेंगे। लेकिन जब आप एक चॉइस मेक कर रहे हैं। सबसे पहले तो अपनी डायरी में उसको लिखिए। अब उसको लिखिए का मतलब ये नहीं कि उसका नाम लिखिए। उस चॉइस से क्या हो रहा है? उस चॉइस हो सकता है आप यहां तो लेफ्ट राइट खोल रहे हैं तो आप सीधा लेफ्ट लिख सकते हैं। हो सकता है आप सम कर रहे होते तो आप सम में उस नंबर को जोड़ते। आप प्रोडक्ट कर रहे होते तो अपने प्रोडक्ट वाले में डायरी में उसको नंबर को प्रोडक्ट करते जो भी करना है अपने अपने डायरी में आपकी डायरी में वो चॉइस लिखा होना चाहिए कि ये आदमी जिंदगी में ये किया था कभी ना कभी। उसको",
+      "source": "caption",
+      "english_text": "Try to do it. So there is no condition here. You can open left or right. As you wish. So we will try to do both. But when you are making a choice. First of all, write it in your diary. Now writing to him does not mean writing his name. What is happening with that choice? That choice may be that if you are opening left right here then you can directly write left. Maybe if you were doing sum, you would have added that number to the sum. If you were doing a product, then you would have written that number in your diary in your product, whatever you want to do in your diary, that choice should be written in your diary that this person had done this at some point in his life. him"
+    },
+    {
+      "start_time": 907.199,
+      "end_time": 936.389,
+      "text": "लिखिए। आगे स्टेज पे जाइए। आगे स्टेज मतलब अगले दरवाजे पे। अगले दरवाजे पे हो गया ये चॉइस। जब आप वापस आएंगे तो डायरी से रिवर्स कीजिए। डायरी से रिवर्स कीजिए। अगेन यह रिवर्स किस पे डिपेंड करता है? आप लिखे क्या थे? अगर आप नाम लिखे थे नाम मिटाइए। सम किए थे सबट्रैक्ट करिए। प्रोडक्ट किए थे डिवाइड करिए। जो भी किए थे उसका उल्टा। आपकी डायरी को रिवर्स करिए। अपनी डायरी में एक लड़की की फोटो बनाए। लड़के की फोटो हटाइए। लड़की की फोटो बनाए लड़की की फोटो हटाइए। ऐसा नहीं कि फोटो बनाए गाय का और मिटा दिए कुत्ता।",
+      "source": "caption",
+      "english_text": "Write. Go to the next stage. Next stage means next door. This choice happened next door. When you come back, reverse the diary. Reverse from diary. Again what does this reverse depend on? What did you write? If you had written the name, delete the name. Subtract the sum. Divide the product. The opposite of whatever was done. Reverse your diary. Draw a photo of a girl in your diary. Remove the boy's photo. Create girl's photo and delete girl's photo. It is not like making a photo of a cow and erasing it of a dog."
+    },
+    {
+      "start_time": 936.399,
+      "end_time": 968.949,
+      "text": "नहीं नहीं। कुत्ते की फोटो कुत्ता हटेगा। जो भी किए उसको रिवर्स करना है। ये कब तक करना है? ये सारे चॉइस सारे पॉसिबल चॉइसेस। सारे पॉसिबल चॉइसेस। मतलब लेफ्ट के लिए एक बार करना है, राइट के लिए एक बार करना है। फिफ्थ पॉइंट क्या था? जब आप लास्ट पे पहुंच जाएं, जब आप लास्ट पहुंच जाएं, मतलब अब कोई स्टेज बचा ही नहीं है। दोनों स्टेज हो गया, कोई डिसीजन मेकिंग बची ही नहीं है। अब अपने डायरी को देखिए, अपने डायरी को देखिए। अब अपने डायरी को देखो, उसमें क्या लिखा हुआ है और जो भी करना है। यहां पे हमको बस उससे मतलब है कि हमको डायरी के कंटेंट्स को प्रिंट करना है, तो हम अपने डायरी को प्रिंट कर देंगे।",
+      "source": "caption",
+      "english_text": "No no. The photo of the dog will be removed. Whatever was done has to be reversed. How long will this have to be done? All these choices are all possible choices. All possible choices. Meaning, you have to do it once for the left, once for the right. What was the fifth point? When you reach the last point, when you reach the last stage, it means there is no stage left. Both stages are done, there is no decision making left. Now look at your diary, look at your diary. Now look at your diary, what is written in it and whatever has to be done. Here we just mean that we want to print the contents of the diary, so we will print our diary."
+    },
+    {
+      "start_time": 968.959,
+      "end_time": 995.11,
+      "text": "ठीक है? आइए इसको हम दिखाते हैं। ठीक है? मान लीजिए ये आपका एरे है। ये आपका एरे है जिसमें डोर वन है। एक और ये डोर टू है। ये जीरो ये वन। ठीक है? एरे की लेंथ क्या है? n = 2 है। हम लोग आइए पहले ड्राई रन करते हैं फिर कोड देखेंगे। सबसे पहले हम क्या बोले? स्टेजेस पहचानिए। हो गया। हर स्टेज पे एक-एक करके जाइए शुरू से। तो शुरू में आप कहां पे जाएंगे? i = 0। ये क्या है?",
+      "source": "caption",
+      "english_text": "ok? Let us show this. Ok? Suppose this is your array. This is your array containing door one. Another one is this door two. This zero, this one. Ok? What is the length of the array? n = 2. Let us first do a dry run and then look at the code. What should we say first? Recognize the stages. Done. Go to each stage one by one from the beginning. So where will you go initially? i=0. What is this?"
+    },
+    {
+      "start_time": 995.12,
+      "end_time": 1023.67,
+      "text": "डोर वन आ गए? अच्छा। अब क्या करना है? आपके पास चॉइसेस क्या है? लेफ्ट राइट। ये दो चॉइससेस हैं और हम बोले एक डायरी मेंटेन कीजिए। एक डायरी मेंटेन कीजिए जो हर फंक्शन में पास होता जाएगा। वो डायरी रेफरेंस से पास होगा ताकि एक फंक्शन में अगर आप चेंज करते हैं तो आगे वाले फंक्शन को भी पता चले। हम लोग एक डायरी यहां पे बनाते हैं। ये हमारी डायरी है। अच्छा। डायरी बन गई। क्या बोले? हर चॉइस कीजिए और उसको डायरी में लिखिए। आगे वाले स्टेज पे जाइए और वापस आके डायरी से रिवर्स कीजिए।",
+      "source": "caption",
+      "english_text": "Have you come to door one? Good. What to do now? What choices do you have? Left right. These are two choices and we said maintain a diary. Maintain a diary which will be passed on at every function. That diary will be passed by reference so that if you make a change in one function, the next function will also know about it. We make a diary here. This is our diary. Good. A diary was made. What did they say? Make every choice and write it in your diary. Go to the next stage and reverse from the diary when you come back."
+    },
+    {
+      "start_time": 1023.68,
+      "end_time": 1051.51,
+      "text": "तो सबसे पहले हम लोग लेफ्ट चॉइस करते हैं। हम लोग यहां से लेफ्ट जाते हैं। हम लोग लेफ्ट जाते हैं। लेकिन जाने से पहले डायरी में लिखो। डायरी में लिखो लेफ्ट। लेफ्ट लिख लिए? जाओ आगे। आगे वाले स्टेज पे जाओ। मतलब i = 1 और डोर टू। यहां पे आ गए आगे वाले स्टेज पे। ठीक है? अगेन यहां पे सेम काम करेंगे। हर चॉइस करिए लेकिन उसको डायरी में लिखिए। अब हर चॉइस का मतलब पहले यहां पे लेफ्ट कर दीजिए। लेकिन ये करने से पहले एक और यहां पे डायरी में लिखिए।",
+      "source": "caption",
+      "english_text": "So first of all we make left choice. We go left from here. We go left. But before leaving, write in your diary. Write left in diary. Have you written left? Go ahead. Go to the next stage. Meaning i = 1 and door two. Here we have come to the next stage. Ok? Same work will be done here again. Make every choice but write it in the diary. Now leave the meaning of each choice here first. But before doing this, write one more thing here in the diary."
+    },
+    {
+      "start_time": 1051.52,
+      "end_time": 1083.99,
+      "text": "डायरी देखिए सेम है। ये वाला लेफ्ट डोर वन में लिखा हुआ था। ये वाला लेफ्ट डोर टू में लिखा गया है। अच्छा और आगे वाले स्टेज पे जाइए। i = 2 अब जब आप i = 2 पे आते हैं तो आपको क्या पता चलता है कि अब मेरा एरे खत्म हो चुका है। i = n आ गया है। स्टेज खत्म हो गया तो हम क्या बोले? अब अपनी डायरी को पढ़िए। आपकी डायरी में क्या लिखा हुआ है? लेफ्ट लेफ्ट। यही आपकी जिंदगी की कहानी है मतलब आप डोर वन से लेफ्ट लिए थे और आप डोर टू से लेफ्ट लिए थे। आपको बताता है कि आप क्या-क्या फैसले करके यहां तक पहुंचे हैं। अब क्योंकि हमको इसको प्रिंट करना है तो हम इसको जनरली प्रिंट कर देंगे। तो इसको लेफ्ट लेफ्ट को एक प्रिंट",
+      "source": "caption",
+      "english_text": "Look at the diary, it's the same. This one was written on left door one. This one is written in Left Door Two. Okay and go to the next stage. i = 2 Now when you come to i = 2, what you realize is that now my array is over. i = n has arrived. What should we say when the stage is over? Now read your diary. What is written in your diary? Left left. This is the story of your life, meaning you took a left from door one and you took a left from door two. Tells you what decisions you have taken to reach here. Now since we have to print it, we will print it in general. So print this one to the left"
+    },
+    {
+      "start_time": 1084.0,
+      "end_time": 1118.07,
+      "text": "हो गया। तो ये एक पॉसिबल बात है। आप डोर वन से भी लेफ्ट लिए और डोर टू से लेफ्ट लिए। कोई बात नहीं। ओके। अब i = 2 अब लास्ट स्टेज पर कुछ नहीं करना। लास्ट स्टेज पे आप कुछ नहीं कर सकते हैं। लास्ट लास्ट स्टेज मतलब ये लास्ट स्टेज भी नहीं है। ये स्टेज खत्म है। फिनिश है। यहां पे कोई चॉइससेस मेक अप नहीं कर सकते हैं। तो ठीक है। अब इसको बाहर जाइए। मतलब ये खत्म। अब अब वापस कहां पे आ गए? ऐसे ये पीछे चलता है। ऐसे नहीं होता देखिए ऐसे आया। ऐसे आया और ऐसे गया। बैक ट्रैकिंग। बैक ट्रैकिंग यही होगा। अब आप यहां पे खड़े हैं। अब ये किसका खत्म हुआ है? आप लेफ्ट चॉइस करके आगे गए थे। ये खत्म हो चुका है।",
+      "source": "caption",
+      "english_text": "It's done. So this is a possible thing. You also take a left from Door One and a left from Door Two. No problem. Ok. Now i = 2 Now nothing to do in the last stage. You cannot do anything at the last stage. Last last stage means this is not even the last stage. This stage is over. Is Finnish. No choice of make up can be done here. Well then. Now take it out. Meaning this is over. Now where are you back now? This is how it moves backward. It doesn't happen like this, see it came like this. Came like this and went like this. Back tracking. This will be back tracking. Now you are standing here. Whose end is this now? You went ahead by making the left choice. It's over."
+    },
+    {
+      "start_time": 1118.08,
+      "end_time": 1152.31,
+      "text": "अब वापस आ चुके हैं। वापस आ के हम क्या बोले हैं? डायरी को रिवर्स कीजिए। यहां पे जब आप थे तो अपनी डायरी में आप लेफ्ट लिखे थे। ये वाला लेफ्ट लिखे थे इसको रिवर्स कीजिए। डायरी से मिटाइए। इसको डायरी से मिटाइए। इसको मिटाइए, मिटा दिए। वेरी गुड। अगला चॉइस कीजिए। अगला चॉइस कीजिए। अगला चॉइस कीजिए। राइट। अगला चॉइस क्या है? डोर टू से राइट। डोर टू से राइट जैसे ही आप लेकिन उसके पहले अपनी डायरी में लिखिए भैया लिखिए क्या चॉइस करने जा रहे हैं लिखिए और आ जाइए अगले स्टेज पे अगले स्टेज पे अगेन आप कहां पे आ जाते हैं i = 2 पे",
+      "source": "caption",
+      "english_text": "Have come back now. What did we say after coming back? Reverse the diary. When you were here, you had written left in your diary. This one was written on the left, reverse it. Erase from diary. Erase this from your diary. Erase it, erase it. very good. Make the next choice. Make the next choice. Make the next choice. Right. What is the next choice? Door to the right. Right from the door as soon as you can, but before that, write in your diary, brother, write down what choice you are going to make, and come to the next stage, again to the next stage, where do you come to i = 2."
+    },
+    {
+      "start_time": 1152.32,
+      "end_time": 1184.31,
+      "text": "जोकि खत्म हो चुका है क्या करना है लास्ट स्टेज पे डायरी को पढ़िए डायरी को पढ़िए लेफ्ट राइट यस डायरी को पढ़ के लिख लिए अब क्योंकि अभी स्टेज में कुछ होना नहीं है खत्म हो गया है स्टेज वापस हो गया ये खतम आप कहां पे वापस आ गए डोर टू पे डोर टू पे आप वापस आए हैं तो क्या बोले थे जो भी लिख के गए हो उसको रिवर्स करो उसको रिवर्स करो खत्म कर दो अब खत्म हो गया क्या डोर टू के पास और कुछ काम बचा है नहीं बचा है क्योंकि ये सारे चॉइसेस एक्सप्लोर कर लें लेफ्ट और राइट के अलावा कोई चॉइस होता ही",
+      "source": "caption",
+      "english_text": "Which is over, what to do, read the diary on the last stage, read the diary, left, right, yes, read the diary and write now, because there is nothing to be done in the stage, the stage is over, this is over, where have you come back? Door to pay, door to pay, you have come back, what did you say, reverse whatever you have written, reverse it, finish it, now is it over, is there any more work left for Door 2? No, because all these choices are left. Explore, there is no choice other than left and right."
+    },
+    {
+      "start_time": 1184.32,
+      "end_time": 1218.23,
+      "text": "नहीं है सारे हो गया रिटर्न मतलब वापस चले जाओ अपने अपने जहां से तुम आए थे वहां वापस चले जाओ तो ये वाला आदमी भी इसका खेल भी हो चुका है खत्म वापस कहां पे आ गए हम लोग सीधा डोर वन पे ये कब हुआ था अब याद कीजिए दुनिया कि शुरुआत में हम लोग लेफ्ट लेके गए थे। उससे ये सब तामझाम हुआ था। अब हम लोग वापस आए हैं डोर वन पे। तो हम क्या बोले थे? डोर वन क्या लिख के गया था? लेफ्ट। आप लेफ्ट से वापस आए हैं। रिवर्स करिए इस लेफ्ट को मिटाओ अपने से। आपका देखिए डायरी फिर से खाली हो गया है। आपका डायरी फिर से खाली हो गया है। अब डोर वन पे एक और चॉइस बचा है, लेकिन अभी सिर्फ",
+      "source": "caption",
+      "english_text": "No, all of you have returned, meaning go back to where you came from, so this man too, his game is over, where did we come back, straight at Door One, when did this happen? Now remember, in the beginning of the world, we were taken left. All this fuss happened with him. Now we are back at door one. So what did we say? What did Door One write? Left. You have come back from the left. Reverse, erase this left from yourself. Look your diary is empty again. Your diary is empty again. Now there is one more choice left on Door One, but for now only"
+    },
+    {
+      "start_time": 1218.24,
+      "end_time": 1252.39,
+      "text": "लेफ्ट हुआ है। अभी सिर्फ लेफ्ट हुआ है। राइट का चॉइस भी तो है बबुआ। राइट का चॉइस भी तो है। राइट का चॉइस ना करब। राइट का चॉइस लेकिन राइट लेने से पहले डायरी में लिखो भाई राइट ले जाओ राइट लिख के जाओ भूलना नहीं लिखना पूरा गड़बड़ा जाएगा वापस आ जाओ अगले स्टेज पे अब i = 0 का अगला स्टेज क्या होता है i = 1 और डोर टू आप देखिए अब फिर से डोर टू पे आया आप सोचेंगे कि अभी तो डोर टू करू के गए थे नहीं ये डोर टू कौन सा था जब डोर वन पे लेफ्ट लिया गया था तो ये तो आया था अब डोर वन पे राइट लिया हुआ है तो फिर से डोर टू आया है डोर",
+      "source": "caption",
+      "english_text": "Has been left. Just left now. Babua, this is also the right choice. There is right choice also. Don't choose the right one. Choice of the right but before taking the right, write in the diary brother, take the right, write down the right and go, don't forget to write, it will be a complete mess. Come back to the next stage. Now i = 0, what is the next stage of i = 1 and Door 2. You see, now again I have come to Door 2. You will think that I had just gone to Door 2. Which was this Door 2? When left was taken on Door 1, this one had come, now I have come to the right on Door 1. If it has happened then again door to door has come."
+    },
+    {
+      "start_time": 1252.4,
+      "end_time": 1280.07,
+      "text": "टू में सेम काम रिपीट करेंगे क्या डोर टू में डोर डिसीजन है। आइए लेफ्ट चलो लेकिन लेफ्ट जाने से पहले लिखो यहां पे लेफ्ट लिखो यहां पे लेफ्ट और आगे चलो। i = 2 अगेन खत्म हो गया स्टेज। क्या करना है? डायरी पढ़ो बाबू डायरी पढ़ो। राइट लेफ्ट राइट लेफ्ट। राइट? लेफ्ट, राइट लेफ्ट। डायरी पढ़ो। अभी क्या करना है? इसका काम हो गया खतम। वापस आया है। लेकिन आप वापस डॉट टू पे आए हैं।",
+      "source": "caption",
+      "english_text": "Will the same work be repeated in two? Is there a door to door decision? Let's go left but before going left, write left here, write left here and move ahead. i = 2 Again the stage is over. What is the plan? Read the diary Babu, read the diary. Right left right left. Right? Left, right left. Read the diary. What to do now? Its work is finished. is come back. But you are back to dot two."
+    },
+    {
+      "start_time": 1280.08,
+      "end_time": 1306.789,
+      "text": "क्या करना है? डायरी का डिसीजन रिवर्स करो भाई। रिवर्स करो ना डायरी का डिसीजन। हटाओ इसको। अभी क्या डोर टू का सारा खत्म हो गया? नहीं। राइट डिसीजन नहीं लिए हैं। राइट डिसीजन लो भाई। राइट डिसीजन लो। i = 2 लेकिन डिसीजन लेने से पहले राइट यहां पे लिखो। राइट लिखो और आगे जाओ। आगे आ गए। i = 2 सेम काम। क्या करना है? खत्म हो गया स्टेज। डायरी पढ़ो। डायरी पढ़ो। राइट राइट राइट राइट।",
+      "source": "caption",
+      "english_text": "What to do? Reverse the decision of the diary, brother. Please reverse the diary's decision. Remove this. Is Door 2 all over yet? No. Right decisions have not been taken. Take the right decision brother. Take the right decision. i = 2 but before taking decision write right here. Write right and go ahead. Came forward. i = 2 cm work. What is the plan? The stage is over. Read the diary. Read the diary. Right right right right."
+    },
+    {
+      "start_time": 1306.799,
+      "end_time": 1340.39,
+      "text": "राइट? राइट। यस, यस, यस। ये आपका आंसर बन रहा है। ये आपका धीरे-धीरे आंसर बन रहा है। याद कीजिएगा। i = 2 खत्म हो गया खेल खत्म हो गया वापस आओ वापस आओ अब डोर टू पे आ गए डोर टू वापस आए वापस आए कहां से i = 2 से वापस आए डोर टू पे रिवर्स करो जो डिसीजन लिए थे रिवर्स करो जो डिसीजन लिए थे खत्म क्या डोर टू पे अब इस समय कोई और काम कर सकते हैं नहीं लेफ्ट भी हो गया राइट भी हो गया कोई बात नहीं वापस चले जाओ भाई वापस चले जाओ वापस चले जाओ वापस आ गए वापस आ गए वापस आ गए डोर वन पे वापस आ गए डोर वन पे क्या करना है जो भी लिख के गए",
+      "source": "caption",
+      "english_text": "Right? Right. Yes, yes, yes. This is becoming your answer. This is slowly becoming your answer. Please remember. i = 2 It's over, the game is over, come back, come back, now you have come back to door 2, you came back to door 2, where did you come from i = 2, you came back to door 2, reverse the decision that was taken, reverse the decision that was taken, it is over, can you do anything else at this time? I came to door one and wrote down what to do."
+    },
+    {
+      "start_time": 1340.4,
+      "end_time": 1366.39,
+      "text": "थे रिवर्स करो आप याद कीजिए डोर वन पे हम लोग ये राइट लिख के नीचे गए थे। अब आ गए वापस रिवर्स हो जाएगा ये। रिवर्स खत्म। देखिए डायरी फिर से खाली हो गया। डायरी फिर से खाली हो गया। अब डोर वन पे आप खड़े हैं। क्या डोर वन पे और कुछ करने के लिए बचा है? नहीं। लेफ्ट भी हो गया, राइट भी हो गया। क्या करना है? वापस मेन फंक्शन में। रिकर्शन खत्म। रिकर्ज़न खतम। अब देखिए, डायरी तो खाली रह गया। डायरी शुरू हुआ था खाली से। डायरी वापस आया है खाली।",
+      "source": "caption",
+      "english_text": "Do the reverse, you remember we had written this right on door one and went down. Now that we have come back, it will be reversed. Reverse finish. Look, the diary is empty again. The diary became blank again. Now you are standing at door one. Is there anything else left to do on Door One? No. Left has happened, right has also happened. What is the plan? Back to main function. Recursion finished. Recursion finished. Now see, the diary remained empty. The diary started from scratch. The diary has come back empty."
+    },
+    {
+      "start_time": 1366.4,
+      "end_time": 1400.47,
+      "text": "बीच में बहुत सारा पुश पॉप, पुश पॉप अप हुआ होगा। कोई बात नहीं। गए थे खाली हाथ, आए थे खाली हाथ। लेकिन इस प्रोसेस में आपका क्या अपडेट हो चुका है? आपका आंसर आप देखिए। एक पाथ है लेफ्ट लेफ्ट। मतलब आप दोनों डोर से लेफ्ट लिए। डोर वन से लेफ्ट, डोर टू से राइट हो सकता है। डोर वन से राइट डोर टू से लेफ्ट हो सकता है। दोनों डोर से राइट राइट। क्या इसके अलावा और कोई भी कॉम्बिनेशन एक्सिस्ट करता है? जब दो दरवाजे और दोनों में लेफ्ट राइट हो? नहीं करता है। नहीं करता है। तो ये टोटल कितने हैं? ऑल कॉम्बिनेशन। तो रिकर्शन ऐसे काम करता है। रिकर्शन ऐसे काम करता है। अब हम आपको डायरी और इसका मतलब",
+      "source": "caption",
+      "english_text": "There must have been a lot of push pop, push pop up in between. No problem. Went empty handed, came empty handed. But what has been updated in this process? You see your answer. One path is left left. Meaning, both of you took a left from the door. Door one can be left, door two can be right. Right from door one can be left from door two. Right from both the doors. Do any other combinations exist? When there are two doors and both have left and right? Doesn't. Doesn't. So what is this total? All combination. So this is how recursion works. This is how recursion works. Now we will tell you about diary and its meaning."
+    },
+    {
+      "start_time": 1400.48,
+      "end_time": 1435.27,
+      "text": "समझाते हैं कोड में। अब हम आपको इसका मतलब समझाएंगे कोड भाषा में। सबसे पहले तो फंक्शन लिखिए। अच्छा एक चीज और फंक्शन का रिटर्न टाइप अगर अगर कोई ऐसा चीज है ना जिसमें आपको बस स्टोर करना है कोई चीज या तो प्रिंट करना है तो उसमें कोई रिटर्न टाइप नहीं चाहिए होता है तो उसमें कोई रिटर्न टाइप नहीं चाहिए होता है लेकिन मान लीजिए कोई ऐसा फंक्शन है जो कुछ रिटर्न कर रहा है जिसको कोई इंटीजर वैल्यू रिटर्न करनी है उसमें आप कर सकते हैं जनरली आपको ऐसा पता चलेगा कि वॉइड ही इसे काम बन जाएगा वॉइड फन सबसे पहले क्या पास करना है स्टेजेस की लिस्ट स्टेजेस की लिस्ट तो मान लीजिए आपके पास एक एरे है मान लीजिए आपके",
+      "source": "caption",
+      "english_text": "Explain in code. Now we will explain its meaning to you in code language. First of all write the function. Well, one thing and the return type of the function, if there is something in which you just have to store something or print it, then no return type is required in it, then no return type is required in it, but suppose there is a function which is returning something, which has to return an integer value, in that you can do it, generally you will find that void only will become useful for it, void fun, first of all, what is to be passed, list of stages, list of stages, so suppose your Suppose you have an array"
+    },
+    {
+      "start_time": 1435.28,
+      "end_time": 1467.909,
+      "text": "पास एक एरे है जिसमें कुछ दरवाजे होंगे। तो ये एरे हो गया। एरे का साइज ये है नंबर ऑफ़ स्टेजेस। ये है नंबर ऑफ़ स्टेजेस। मतलब ये तो स्टेजेस का लिस्ट हो गया। डोर वन डोर टू आपके स्टेज के लिस्ट। कितने स्टेज है टोटल? दो स्टेज हैं ये एरे का साइज है। अभी आप किस स्टेज पे हैं? अभी आप किस स्टेज पे डिसीजन ले रहे हैं? अभी आप किस पे हैं? आईडीएक्स, यस, यस, अभी आप किस पे डिसीजन ले रहे हैं? अब डायरी, डायरी क्या है? डायरी में आप क्या करना चाहते हैं? आप लेफ्ट या राइट को पुश करना चाहते हैं मतलब वो डायरी क्या होना चाहिए? डायरी में बहुत सारे वर्ड्स होने चाहिए। डायरी में बहुत",
+      "source": "caption",
+      "english_text": "Nearby is an array that will contain some doors. So this array is done. The size of the array is the number of stages. This is the number of stages. Meaning, this is the list of stages. Door one door to your stage list. How many stages are there total? There are two stages, this is the size of the array. What stage are you at now? At what stage are you taking the decision now? What are you on now? IDX, yes, yes, what are you deciding on now? Now diary, what is diary? What do you want to do in the diary? You want to push left or right, meaning what should be that diary? There should be many words in the diary. a lot in diary"
+    },
+    {
+      "start_time": 1467.919,
+      "end_time": 1494.23,
+      "text": "सारे वर्ड्स होने चाहिए। तो क्या हम डायरी को वेक्टर ऑफ स्ट्रिंग बना लें? वेक्टर ऑफ स्ट्रिंग बना लें? येस, बना सकते हैं। इसको चलिए डायरी ही नाम दे दीजिए आज के बाद। आज के बाद ये डायरी के नाम से जाना जाएगा। डायरी है डायरी। अब और तो कुछ चाहिए नहीं इसमें। अगर आपको होता कि सारे डायरी को स्टोर करो। मतलब सारे डायरी को एक जगह लिख लो तो वेक्टर ऑफ वेक्टर ऑफ स्ट्रिंग मतलब वेक्टर ऑफ़ डायरी। वेक्टर ऑफ डायरी मतलब हो सकता है ना देखिए हर बार आप आए तो आपके डायरी में अलग-अलग कंटेंट था।",
+      "source": "caption",
+      "english_text": "All words should be there. So should we make diary a vector of strings? Make a vector of strings? Yes, can make it. Let's call it diary from today onwards. From today onwards it will be known as diary. Diary is diary. Now nothing else is needed in it. If you had to store all the diaries. Meaning, if you write all the diaries in one place, then vector of vector of strings means vector of diary. Vector of diary may mean that every time you came, there was different content in your diary."
+    },
+    {
+      "start_time": 1494.24,
+      "end_time": 1528.149,
+      "text": "कोई बोलता है कि भैया डायरी में जितना भी कंटेंट सबको एक जगह इकट्ठा करो। तो क्या बनाते? जो भी डायरी है उसका वेक्टर उसका एरे वेक्टर ऑफ़ वेक्टर ऑफ स्ट्रिंग। लेकिन सिंपलीसिटी के लिए नहीं चाहिए। नहीं चाहिए। आइए। अब जब कोड लिखना स्टार्ट करेंगे। सबसे पहले कौन सा कोड लिख लीजिए? स्टेप फाइव। स्टेप फाइव मतलब या तो सारे स्टेजेस खत्म हो गए या आप इसके आगे कुछ कर नहीं सकते हैं। इसके आगे कुछ कर नहीं सकते। मान लीजिए कोई ऐसा क्वेश्चन हो अगर किसी दरवाजे में सांप बैठा है तो आप आगे नहीं जा सकते हैं तो बस खेल खत्म है और आप आगे लाइफ में नहीं जा सकते हैं। तो सबसे पहले लास्ट वाले का जब आपके सारे स्टेजेस खत्म हो जाएं या इसके आगे आप नहीं जा सकते",
+      "source": "caption",
+      "english_text": "Someone says, brother, collect all the content in the diary at one place. So what to make? Whatever the diary is, its vector is its array vector of vectors of strings. But not needed for simplicity. Don't want. Come. Now when we start writing the code. Which code should you write first? Step Five. Step five means either all the stages are over or you cannot do anything further. Can't do anything beyond this. Suppose there is such a question that if there is a snake sitting in a door, then you cannot go ahead, then the game is over and you cannot go ahead in life. So the last one comes first when all your stages are over or you cannot go further."
+    },
+    {
+      "start_time": 1528.159,
+      "end_time": 1561.51,
+      "text": "हैं। इफ idx इक्वल इक्वल टू n इसका मतलब दरवाजे खत्म दरवाजे खत्म। तो क्या करेंगे? अब यहां पे आए थे क्या करते थे? डायरी में जो भी लिखा हो उसको प्रिंट कर देते थे तो प्रिंट का जो भी होगा। तो प्रिंट डायरी कर दीजिए और रिटर्न रिटर्न लिखना ना भूलिएगा। रिटर्न लिखना ना भूलिएगा नहीं तो इनफाइनाइट लूप में ये आगे चला जाएगा कहीं पे ठीक है खत्म ये हो गया स्टेप फाइव फिनिश स्टेप फाइव फिनिश्ड अब क्या है ऑल चॉइसेस कर लीजिए जो भी चॉइसेस पॉसिबल है चेक कर लीजिए क्या-क्या चॉइससेस कर सकते हैं डिपेंडिंग ऑन क्वेश्चन जो चॉइससेस है",
+      "source": "caption",
+      "english_text": "Are. If idx equals equal to n it means doors over doors over. So what to do? Now what were you doing when you came here? Whatever was written in the diary was printed, so whatever would happen to the print. So print your diary and don't forget to write your return. Don't forget to write return otherwise it will go further in the infinite loop. Okay, this is over. Step five finished. Step five finished. What now? Do all the choices, whatever choices are possible. Check what all the choices can be made. Depending on the question, what are the choices?"
+    },
+    {
+      "start_time": 1561.52,
+      "end_time": 1592.39,
+      "text": "सब कर लीजिए तो आइए पहला चॉइस हम लोग क्या करते हैं लेफ्ट का पहला चॉइस लेफ्ट का करते हैं क्या बोले थे सबसे पहले डायरी डॉट पुशबैक पुशबैक कहां जा रहे हो लेफ्ट लेफ्ट जा रहे हो तो डायरी में लेफ्ट लिख दिए। डायरी में लेफ्ट लिख दिए। अब आगे वाले स्टेज पे जाओ। आगे वाले स्टेज पे कैसे जाएंगे? फन a nidx + 1 idx + 1 आगे वाले स्टेज पे अगर आप idx + 1 नहीं करेंगे तो आप इसी स्टेज पे वापस आ जाएंगे। अगर आप idx + 1 नहीं करेंगे तो आप ऐसे आ जाएंगे।",
+      "source": "caption",
+      "english_text": "After doing everything, let's do the first choice. What do we do for the left? The first choice is for the left. What did you say first of all - diary dot pushback pushback, where are you going left? If you are going left, then write left in the diary. Wrote left in the diary. Now go to the next stage. How to go to the next stage? Fun a nidx + 1 idx + 1 If you don't do idx + 1 on the next stage, you will come back to this stage. If you don't do idx + 1 you will end up like this."
+    },
+    {
+      "start_time": 1592.4,
+      "end_time": 1617.909,
+      "text": "देखिए डोर टू है। आप बोलें कि हम लेफ्ट जाना चाहते हैं लेकिन आप आइडीएक्स लिख दिए। आप लेफ्ट ले के वापस यहीं आ जाएंगे। ये लेफ्ट ले के आ जाएंगे। फिर आप डोर टू पे क्या करेंगे? फिर आप लेफ्ट ले के वापस आ जाएंगे। फिर आप लेफ्ट आप यहीं घूमते रहेंगे। ये बन गया इनफाइनाइट लूप। ये बन गया इनफाइनाइट लूप। आपको नीचे जाना है नीचे या ऊपर जाना पड़ेगा। idx + 1 और डायरी तो एज़ इट इज़ पास हो जाएगा। आप डायरी में चेंजिस कर लिए। यहां पे आप डायरी में चेंज किए और यहां पे आप डायरी को पास कर दिया।",
+      "source": "caption",
+      "english_text": "Look, there is door two. You say that we want to go left but you write IDX. You will come back here by taking left. They will come with the left. Then what will you do door to door? Then you will come back by taking left. Then you will turn left and keep roaming here. This became an infinite loop. This became an infinite loop. You have to go down or up. idx + 1 and the diary will pass as it is. You made changes in the diary. Here you made changes in the diary and here you passed the diary."
+    },
+    {
+      "start_time": 1617.919,
+      "end_time": 1650.95,
+      "text": "आगे आगे वाले को पता रहेगा कि आप क्या करके आए हैं। अब जब ये खत्म होगा जब ये खत्म होगा तो आप वापस यहां पे आए हैं। वापस इस स्टेज पे आए हैं। वापस आप इस स्टेज पे खड़े हैं। क्या करना है? डायरी में जो भी किए थे उसको रिवर्स कर दीजिए। डायरी में क्या किए थे? पुश बैक। पुश बैक का रिवर्स क्या होता है? पॉप बैकक डायरी डॉट पॉप बैकक पॉप बैकक रिवर्स यस रिवर्स खत्म हो गया। ये लेफ्ट का चॉइस खत्म हो गया। राइट के लिए सेम कुछ करना है। कुछ वैसा रॉकेट साइंस नहीं है राइट में। क्या करना है? इस बार डायरी में क्या पुश करना",
+      "source": "caption",
+      "english_text": "The person in front will know what you have done. Now when it's over, when it's over, you're back here. Have come back to this stage. You are back on this stage. What is the plan? Whatever you had done in the diary, reverse it. What did you do in the diary? Push back. What is the reverse of push back? Pop Backk Diary Dot Pop Backk Pop Backk Reverse Yes Reverse is over. This left's choice is over. Something has to be done for the right. There is nothing like rocket science in writing. What is the plan? What to push in the diary this time"
+    },
+    {
+      "start_time": 1650.96,
+      "end_time": 1683.59,
+      "text": "है? राइट लेफ्ट नहीं अब आप राइट जाना चाहते हैं। अब आप राइट जाना चाहते हैं। अब आप राइट जाना चाहते है। यस। आगे वाले स्टेज पे जाइए। फन a n एन idx + 1 डायरी अब जब ये खत्म हो जाए जब ये खत्म हो जाए वापस आएंगे जो भी डायरी में हुआ है उसको रिवर्स करो जो भी डायरी में हुआ है उसको रिवर्स पुश बैक का पॉप बैकक अगर कुछ सम करते सम से माइनस करते पॉप बैकक बस खेल खतम दोनों चॉइसेस हो गए इस स्टेज पे तो और कुछ नहीं कर सकते हर हर कोड को ना ऐसा मत",
+      "source": "caption",
+      "english_text": "Is it? Right not left, now you want to go right. Now you want to go right. Now you want to go right. Yes. Go to the next stage. fun a n n idx + 1 diary now when it's over when it's over come back reverse whatever has happened in the diary reverse whatever has happened in the diary push back pop backk if kuch even karte sum se minus karte pop backk bus game over both choices are done at this stage so nothing else can be done har har code ko no don't do this"
+    },
+    {
+      "start_time": 1683.6,
+      "end_time": 1715.99,
+      "text": "सोचिए कि हम इतना सारा चीज एक स्टेज पे आप क्या करेंगे ये सारे स्टेप्स किसके लिए हैं किसी एक स्टेज पे आप क्या करेंगे? बस अगर वो समझ गए ना आगे किसी चीज़ का टेंशन मत लीजिए कि ग्रैंड स्कीम ऑफ़ थिंग्स में क्या कुछ नहीं हो रहा है। एक स्टेज पे आप क्या-क्या कर सकते थे। एक स्टेज पे आप चेक कर सकते थे कि क्या ये स्टेज खत्म हो गया है? कर लिए। एक स्टेज पे आप लेफ्ट का चॉइस बनाके आगे जा सकते थे। हो गया। एक स्टेज पे आप राइट का चॉइस करके आगे जा सकते थे। हो गया। और इस दरवाजे पे और कुछ करने की ताकत है। नहीं है। नहीं है तो वापस चले जाओ। खत्म हो गया।",
+      "source": "caption",
+      "english_text": "Imagine, what will you do on one stage? What are all these steps for? What will you do on one stage? Just if they understand then don't worry about anything further that in the grand scheme of things nothing is happening. What all could you do on one stage? At one stage you could check whether this stage is over? Did it. At one stage you could have gone ahead by making a left choice. Done. At one stage you could go ahead by choosing right. Done. And this door has the power to do something else. Not there. If not then go back. It's over."
+    },
+    {
+      "start_time": 1716.0,
+      "end_time": 1750.87,
+      "text": "और बंद कर दो। यह देखिए। यह कोड है। यह कोड है। कोड बहुत छोटा है, लेकिन कोड के पीछे लॉजिक बहुत बड़ा है। यह क्या है? किसी भी एक स्टेज पे आप क्या कर सकते हो? किसी भी एक स्टेज पे आप क्या करेंगे? ये, ये वो बताता है। सबसे पहले चेक करेंगे क्या स्टेज खत्म हो गया है, हो गया। लेफ्ट चॉइस करेंगे, राइट चॉइस करेंगे, वापस चले जाएंगे और तो कुछ डांस थोड़ी करेंगे। तो ये उसका कोड हो गया है। तो ये एक टेंपलेट मान लीजिए कुछ भी मान लीजिए पांच स्टेप ऐसा कोड हर जगह आपको लिखना पड़ेगा। आइए एक क्वेश्चन करा के भी समझाते हैं।",
+      "source": "caption",
+      "english_text": "And turn it off. Look at this. This is the code. This is the code. The code is very small, but the logic behind the code is very big. What is this? What can you do on any one stage? What will you do on any one stage? This, this he tells. First of all we will check whether the stage is over, it is done. Will choose left, choose right, go back and do some dance. So this is its code. So let's say this is a template, let's say anything, five steps, you will have to write such code everywhere. Let us explain by asking a question."
+    },
+    {
+      "start_time": 1750.88,
+      "end_time": 1780.789,
+      "text": "बहुत इंटरेस्टिंग क्वेश्चन है। देखिए हमको मालूम नहीं कि आप लोग ऐसा फोन देखे होंगे कि नहीं। इसको लैंड लाइन बोलते थे। तो लैंडलाइन में क्या होता था ना कि वन को भूल जाइए। मान लीजिए इसमें टू से लेके नाइन तक ये आपका डायल होता था। जैसे आज डायलिंग होता है ना मोबाइल नंबर। अब क्या होता था कि पहले जब मोबाइल आता था कीपैड वाला ना तो उसमें टाइपिंग आज की डेट में तो कीबोर्ड होता है क्वर्टी वाला। तो आप कुछ भी दबा सकते हैं। लेकिन अब कीपैड फोन में उतना सारा लेटर कैसे डालेगा? वो लोग क्या करता था? अब देखिए जो टू का बटन होता था ना टू का बटन इसमें ए बी सी दोनों होता था। तीनों होता था। इसका क्या मतलब है?",
+      "source": "caption",
+      "english_text": "It is a very interesting question. Look, we don't know whether you guys have seen such a phone or not. This was called land line. So what happened in landline, forget the forest. Suppose this was your dial from two to nine. Just like dialing a mobile number is done today. Now what used to happen was that earlier when the mobile came with a keypad, there was no typing on it, today the keyboard is with QWERTY. So you can press anything. But now how will the keypad enter so many letters in the phone? What did those people do? Now see, the button for 2 was not the button for 2, it had both A and B.C. It used to be all three. What does it mean?"
+    },
+    {
+      "start_time": 1780.799,
+      "end_time": 1810.31,
+      "text": "मान लीजिए आप कीपैड पे कुछ टाइप कर रहे हैं। WhatsApp मैसेज कर रहे हैं। आप टू को एक बार दबाएं। आप टू एक बार दबाएं। तो इससे क्या प्रिंट होगा? ए। इससे ए टाइप हो जाएगा। मान के। अगर आप टू को दो बार दबा दिए। खटखट करके दो बार दबा दिए ना इससे बी टाइप हो जाता था। अगर आप टू को तीन बार दबा दिए। अगर आप टू को तीन बार दबा दिए ना, इससे सी टाइप हो जाता था। ऐसे करके लोग टाइप करते थे। मान लीजिए अगर आपको, मान लीजिए आप आपको टाइप करना है पढ़ो। मान लीजिए आपको पढ़ो टाइप करना है तो आप क्या करते थे? सबसे पहले पी को यहां खोजते थे।",
+      "source": "caption",
+      "english_text": "Suppose you are typing something on the keypad. Messaging on WhatsApp. You press two once. You press 2 once. So what will this print? A. This will become type A. Of honor. If you press two twice. If you knocked and pressed it twice, it would become type B. If you press two three times. If you pressed 2 three times, it would type C. People used to type like this. Let's say if you have to, let's say you have to type, read. Suppose you have to read and type, what did you do? P was first discovered here."
+    },
+    {
+      "start_time": 1810.32,
+      "end_time": 1844.149,
+      "text": "ठीक है? अब पी, पी कब है? पी इसके पहले में है मतलब सेवन एक बार दबाते थे। एक बार दबाएंगे पी टाइप हो गया। ए है तो टू एक बार दबाएंगे तो ए टाइप हो गया। डी है तीन एक बार दबाएंगे तो ये टाइप हो जाएगा। एच है। अब एच एच देखिए एच चार में है लेकिन एच इसके दूसरे नंबर पे है। जब आप चार को एक बार दबाएंगे ना तो जी प्रिंट हो जाता था। आपको चार को जल्दी-जल्दी दो बार दबाना पड़ेगा। जल्दी-जल्दी दो बार दबाना पड़ेगा। उसी तरीके से ओ है। ओ देखिए सिक्स के तीसरे वाले में ओ है तो आपको जल्दी-जल्दी तीन बार सिक्स दबाना पड़ेगा। तो इतना सारा चीज टाइप करना पड़ेगा आपको बस पढ़ो प्रिंट करने के लिए। तो ये होता था। आपको यही",
+      "source": "caption",
+      "english_text": "ok? Now P, when is P? P is in front of it meaning seven was pressed once. Press P once and the type is done. If A is there then press 2 once and A is typed. D is three and if you press it once, it will be typed. H is. Now H H see H is in four but H is at number two. When you press 4 once, no G is printed. You have to press four twice in quick succession. You will have to press twice quickly. In the same way O is. O Look, there is O in the third part of six, so you will have to press six quickly three times. So you will have to type so many things just to read and print. So this used to happen. this is what you need"
+    },
+    {
+      "start_time": 1844.159,
+      "end_time": 1879.029,
+      "text": "प्रॉब्लम है। आपको ये फोन नंबर दिया हुआ है। ये मैपिंग देख लीजिए। ठीक है? मैपिंग पॉज करके देख लीजिए। और आपको क्या बोला गया है? आपका आपका टास्क क्या है? आपको एक फोन नंबर दिया हुआ है। मतलब फोन नंबर के एक डिजिट्स का स्ट्रिंग दिया हुआ है। मतलब कि आपको मान लीजिए दिया हुआ है टू और थ्री। आपको दिया हुआ है टू और थ्री। अच्छा। अब कोई आदमी टू और थ्री दबा के आपको ऑल पॉसिबल देना है। ऑल पॉसिबल लेटर कॉम्बिनेशन। ऑल पॉसिबल लेटर कॉम्बिनेशन। इसका क्या मतलब है? देखिए। सबसे पहले तो एक आदमी टू बताता है। इसका ये मतलब है अब टू से आप मान के चलिए कि टू में फोन नंबर में जो भी",
+      "source": "caption",
+      "english_text": "There is a problem. You have been given this phone number. Look at this mapping. Ok? Try pausing the mapping. And what have you been told? What is your task? You have been given a phone number. Meaning, a string of one digit of the phone number is given. Meaning that suppose you are given two and three. You have been given two and three. Good. Now someone has to press two and three and give you all possible. All Possible Letter Combinations. All Possible Letter Combinations. What does it mean? See. First of all a man tells. This means that now from 2 you assume that whatever is in the phone number in 2"
+    },
+    {
+      "start_time": 1879.039,
+      "end_time": 1913.269,
+      "text": "लिखा हुआ है ए बी सी लिखा हुआ है। टू से ये तीनों हो सकता है। टू से ये तीनों हो सकता है। मतलब आप अगर कोई आदमी टू दबाता है ना। अगर कोई आदमी टू दबाता है तो आप मान के चलिए कि ये ए बी सी में से तीनों दबा सकता है। तो ये ए भी दबा सकता है। बी भी और c भी। ठीक है? टू का काम हो गया। थ्री। अब टू के बाद दबा है थ्री। लेकिन अब टू में क्योंकि तीन पाथ बन गए हैं तो तीनों में थ्री आ सकता है। तीनों में तीन दबाने की पॉसिबिलिटी है। मतलब टू दबा के अगर कोई a लिखा होगा तो फिर वो तीन दबा सकता है तो ए हो जाएगा। टू के बाद अगर वो बी होगा तो बी के बाद भी तीन दब सकता है।",
+      "source": "caption",
+      "english_text": "It is written ABC. From two it can be all three. From two it can be all three. Meaning, if a person presses two, right? If a person presses 2, then you can assume that he can press all three of ABC. So it can also press A. B too and C too. Ok? Two's work is done. Three. Now after two, three is pressed. But now in two because three paths have been made, three can come in all three. There is the possibility of pressing three in all three. Meaning, if someone has written 'a' by pressing two, then he can press three and it will become 'a'. If it is B after two, then three can be pressed after B also."
+    },
+    {
+      "start_time": 1913.279,
+      "end_time": 1946.63,
+      "text": "टू से अगर वो सी प्रिंट किया होगा उसके बाद भी वो तीन दबाया होगा। अब तीन से क्या-क्या कर सकते हैं? तीन से डी ई, एफ तीनों कर सकते हैं तो अगेन और फैल जाएगा ये। अगेन और फैल जाएगा। मतलब इससे डी हो सकता है ई हो सकता है एफ हो सकता है सिमिलरली हर थ्री से डी हो सकता है ई हो सकता है एफ हो सकता है इससे भी डी हो सकता है ई हो सकता है एफ हो सकता है अब आपको बताना है ऑल पॉसिबल कॉम्बिनेशन तो देखिए इसमें क्या आएगा इसमें ए दबा और डी बना तो एक तो ए डी हो गया एक क्या हुआ ए इ हो गया",
+      "source": "caption",
+      "english_text": "Even if he had printed 'C' from 'two', he would have still pressed '3'. Now what can we do with three? If you can do all the three D, E, F then it will spread again. Will spread again. Meaning, it can lead to D, it can lead to E, it can lead to F, similarly, every three can lead to D, it can lead to E, it can also lead to D, it can lead to E, it can lead to F. Now you have to tell all the possible combinations, so see what will come in it. If you press A in it and D is formed, then one becomes A. D, what happens to A, it becomes E."
+    },
+    {
+      "start_time": 1946.64,
+      "end_time": 1975.75,
+      "text": "एक एफ हो गया सिमिलरली जब हम बी वाले पाथ में देखेंगे तो आप बी डी टाइप कर सकते थे बी ई कर सकते थे, डी एफ कर सकते थे। सिमिलरली आप सी डी कर सकते थे, सी ई कर सकते थे, सी एफ कर सकते थे। तो ये सारी चीजों का एक लिस्ट बना के आपको रिटर्न करना है। ऑल पॉसिबल कॉम्बिनेशंस, ऑल पॉसिबल लेटर कॉम्बिनेशंस। ये स्टैंडर्ड क्वेश्चन है। स्टैंडर्ड क्वेश्चन है। अब आपको दिया क्या है? इनपुट क्या दिया हुआ है? इनपुट आपको एक स्ट्रिंग दिया हुआ है।",
+      "source": "caption",
+      "english_text": "A becomes F. Similarly, when we look at the path containing B, you could have typed B, D, B, E, D. F. Similarly you could do C D, C E, C F. So make a list of all these things and return them. All Possible Combinations, All Possible Letter Combinations. This is a standard question. Is a standard question. Now what have you given? What is the input given? Input You are given a string."
+    },
+    {
+      "start_time": 1975.76,
+      "end_time": 2004.149,
+      "text": "स्ट्रिंग माइंड कीजिए स्ट्रिंग जो कि ऐसा दिखेगा। उसमें सिर्फ नंबर्स होंगे। उसमें सिर्फ नंबर्स होंगे। उसमें सिर्फ नंबर्स होंगे, लेकिन ये स्ट्रिंग फॉर्मेट में है। ये असली नंबर नहीं है। ये एक कैरेक्टर है। ये एक कैरेक्टर है। आपको इसको नंबर में कन्वर्ट करना पड़ेगा। कन्वर्ट करना पड़ेगा। है ना? तो उसमें कोई मुश्किल नहीं है। हम बता देंगे। तो आपको एक स्ट्रिंग दिया हुआ है। आपको आपका काम क्या है? सारे जितने भी पॉसिबल हो सकते हैं सब रिटर्न करना है। सब रिटर्न करना है। आइए, अपने टेंप्लेट लगाएं इसमें। सबसे पहला क्या है? स्टेजेस।",
+      "source": "caption",
+      "english_text": "String Mind a string that will look like this. There will be only numbers in it. There will be only numbers in it. It will contain only numbers, but it is in string format. This is not the real number. This is a character. This is a character. You will have to convert it into numbers. Will have to convert. Isn't it? So there is no difficulty in that. We will tell. So you are given a string. What is your job to you? All possible returns have to be made. Everything has to be returned. Let's put our templates in it. What is the first? Stages."
+    },
+    {
+      "start_time": 2004.159,
+      "end_time": 2037.83,
+      "text": "स्टेजेस आइडेंटिफाई कर लो। स्टेजेस आइडेंटिफाई कर लो। स्टेजेस मतलब आपको डिसीजन मेकिंग का पावर कब-क मिलेगा। तो देखिए मान लीजिए स्ट्रिंग है टू थ्री। तो इसमें आप कब डिसीजन लिए थे? देखिए एक डिसीजन आप कब लिए? जब आप टू पे आए कि हम ए दबाएंगे, बी दबाएंगे, सी दबाएंगे। फिर जब आप तीन में आए फिर से आप डिसीजन लिए, फिर से आप डिसीजन लिए मतलब हर एक लेटर जो स्ट्रिंग में है, वो आपका एक स्टेज है। हर एक लेटर एक स्टेज है। हर एक नंबर पे आपको डिसीजन लेना है कि ये ए से है, कि बी से है, कि सी से है। डिपेंडिंग ऑन कि फोन नंबर पे क्या लिखा हुआ है। तो स्टेजेस कितना है? जो भी डिजिट्स जो भी लेटर्स हैं",
+      "source": "caption",
+      "english_text": "Identify the stages. Identify the stages. Stages means when will you get the power of decision making. So see, let's say the string is two three. So when did you take the decision in this? Look, when did you take a decision? When you come to two we will press A, press B, press C. Then when you come to three, again you take a decision, again you take a decision, meaning every letter in the string is a stage of yours. Every letter is a stage. You have to decide on each number whether it is from A, B or C. Depending on what is written on the phone number. So how many stages are there? whatever digits whatever letters"
+    },
+    {
+      "start_time": 2037.84,
+      "end_time": 2064.79,
+      "text": "स्ट्रिंग में जो भी लेटर्स हैं स्ट्रिंग में जो भी लेटर्स हैं स्ट्रिंग में हो गया नंबर ऑफ स्टेजेस कितने हैं? जितनी लेंथ है स्ट्रिंग की जितने लेटर उतने नंबर ऑफ स्टेजेस हैं। ठीक है? नंबर ऑफ स्टेजेस हर एक स्टेज पे कैसे जाना है? हर एक स्टेज पे इंडेक्स से जाना है। ये भी एक स्ट्रिंग में एक एरे होता है। तो पहले हम इसमें जाएंगे फिर हम इसमें जाएंगे। तो इंडेक्स से चले जाएंगे। वेरी गुड। चॉइसेस क्या-क्या हैं आपके पास? चॉइसेस क्या-क्या हैं? हर एक नंबर पे क्या चॉइससेस हैं?",
+      "source": "caption",
+      "english_text": "Whatever letters are in the string, whatever letters are in the string, what is the number of stages in the string? The length of the string is equal to the number of letters and the number of stages. Ok? Number of Stages How to reach each stage? Every stage has to be followed by index. This is also an array of strings. So first we'll go into this then we'll go into this. So it will be removed from the index. very good. What are the choices you have? What are the choices? What are the choices on each number?"
+    },
+    {
+      "start_time": 2064.8,
+      "end_time": 2097.589,
+      "text": "देखिए, जब आप बोलते हैं कि मान लीजिए मेरा एक लेटर या एक स्टेज अभी हम टू पे खड़े हैं। अभी हम आके किस पे खड़े हैं? टू पे खड़े हैं। टू पे आपके पास क्या-क्या चॉइसेस हैं? जो भी यहां पे लिखा हुआ है ए, बी, सी, ए, बी, सी, ए, बी, सी में से कोई भी। ए, बी या सी तो आपके पास चॉइसेस हैं। अब आप अगर सिक्स पे आ गए। क्या-क्या चॉइससेस है? एम, एन, ओ कुछ भी हो सकता है। सेवन पे हैं। पी, क्यू, आर, एस कुछ भी हो सकता है। कुछ भी तो चॉइससेस क्या है? जो टेलीफोन नंबर में जो लिखा हुआ है ना ये स्ट्रिंग ये ये दिया हुआ है डायग्राम बना के ये आपके चॉइस है। इसमें से कोई भी लेटर अगर",
+      "source": "caption",
+      "english_text": "See, when you say that let's say one of my letters or one stage, right now we are standing at two levels. What are we standing on now? Standing on two. What are your options for paying? Whatever is written here is any one of A, B, C, A, B, C, A, B, C. A, B or C, you have choices. Now if you have come to six. What are the choices? M, N, O can be anything. Are on intake. P, Q, R, S can be anything. If anything, what are the choices? This string, which is written in the telephone number, is given by making a diagram, it is your choice. If any of these letters"
+    },
+    {
+      "start_time": 2097.599,
+      "end_time": 2130.95,
+      "text": "कोई सेवन दबाता है तो वो पी क्यू आर एस में से कोई भी चॉइस मेक कर सकता है तो ये आपके चॉइस है। जो भी आपको फोन नंबर में दिए हुए हैं इसको देखेंगे कोड में लेकिन पता तो चल गया ना क्या चॉइस है? अच्छा। मेक वन चॉइस वाला, क्या करना है? क्या करना है? तो हम एक डायरी मेंटेन करेंगे। हम एक डायरी मेंटेन करेंगे। जभी भी हम कोई करेंगे तो डायरी में लिखेंगे उसको। क्या लिखेंगे? आप कुछ दबा के क्या चॉइस करते हैं? ये ए ये क्या है? ये एक लेटर है। ये एक लेटर है ना ये। ये तो लेटर है। हर चॉइस देखिए क्या है? या तो एक ही लेटर का चॉइस है। ऐसा नहीं है कि उसमें वर्ड आ जाता है नहीं। ए है, बी है, सी है कुछ भी हो। पी",
+      "source": "caption",
+      "english_text": "If someone presses Seven, he can make any choice from the PQRS, so it is your choice. Whatever you have given in the phone number, you will see it in the code, but now you know what is the choice? Good. Make one choice, what to do? What is the plan? So we will maintain a diary. We will maintain a diary. Whenever we do something, we will write it in the diary. What will you write? What choice do you make after suppressing something? What is this? This is a letter. This is a letter isn't it? This is a letter. See what every choice is? Either there is a choice of only one letter. It is not that the word does not come in it. A is there, B is there, C is there, whatever. p"
+    },
+    {
+      "start_time": 2130.96,
+      "end_time": 2157.19,
+      "text": "है, क्यू है, आर है, एस है, सब क्या हैं? लेटर्स हैं, लेटर्स हैं। तो, आपके डायरी में क्या लिखा होना चाहिए? आपके डायरी में बहुत सारे लेटर्स लिखे होने चाहिए, बहुत सारे लेटर्स लिखे होने चाहिए, बहुत सारे कैरेक्टर्स लिखे होने चाहिए। क्या होता है बहुत सारे कैरेक्टर्स? स्ट्रिंग। डायरी को स्ट्रिंग करिए। डायरी को स्ट्रिंग डायरी, स्ट्रिंग डायरी करेंगे। जभी भी कोई चॉइस मेक करेंगे अगर हम ए करना चाह रहे हैं। डायरी में वो लेटर लिख लेंगे। क्या लिख लेंगे? ए बी सी जो भी आप करना चाहते हैं।",
+      "source": "caption",
+      "english_text": "Hai, Q Hai, R Hai, S Hai, what are all? There are letters, there are letters. So, what should be written in your diary? There should be a lot of letters written in your diary, there should be a lot of letters written, there should be a lot of characters written. What is too many characters? string. String the diary. Will make the diary string diary, string diary. Whenever we make a choice, if we want to do A. He will write the letter in the diary. What will you write? A B C Whatever you want to do."
+    },
+    {
+      "start_time": 2157.2,
+      "end_time": 2190.15,
+      "text": "अगले स्टेज पे जाएंगे। अगले स्टेज मतलब अगले इंडेक्स पे जाएंगे। वापस आएंगे तो क्या करेंगे? डायरी डॉट पॉपक। डायरी डॉट पॉपक खत्म। पांचवा लास्ट स्टेज पे जाएंगे तो क्या करेंगे? लास्ट स्टेज पे। अब आपको क्या करना है? आपकी अब जब आप लास्ट स्टेज पे पहुंचेंगे ना तो आपके डायरी में कुछ लिखा हुआ रहेगा। फॉर एग्जांपल जब आप यहां पे पहुंचेंगे आपकी डायरी ऐसी दिखेगी। आपकी डायरी में एक ए होगा और एक डी होगा। अब ए डी एक कॉम्बिनेशन है। ए डी एक कॉम्बिनेशन है मतलब ये एक स्ट्रिंग है मतलब ये एक स्ट्रिंग है। आपको इसको कहीं पे स्टोर कर लेना है। आपको इसको आपको वही पूछा हुआ है",
+      "source": "caption",
+      "english_text": "Will go to the next stage. Next stage means we will go to the next index. What will you do when you come back? diary.popk. Diary Dot Popk is over. What will you do if you reach the fifth last stage? At the last stage. What do you have to do now? Now when you reach the last stage, there will be something written in your diary. For example, when you reach here your diary will look like this. There will be an A and a D in your diary. Now A D is a combination. A D is a combination meaning it is a string meaning it is a string. You have to store it somewhere. You have been asked the same thing"
+    },
+    {
+      "start_time": 2190.16,
+      "end_time": 2224.87,
+      "text": "कि प्रिंट ना करिए आप। आप सारे डायरी के कंटेंट्स को स्टोर करके हमको दे दीजिए। हम उसको खुद प्रिंट कर लेंगे। तो आपको सारे डायरीज को प्रिंट करनी हैं। मतलब डायरी क्या है? डायरी तो स्ट्रिंग है। आपको क्या करना है? सारे डाइरीज को कलेक्ट करना है। लास्ट स्टेज पे वेक्टर ऑफ स्ट्रिंग का एक वो बनाएंगे। फाइनल आंसर, यह हमारा फाइनल आंसर है। और आंसर में डायरी को पुश कर देंगे। मतलब हो गया जो हम लोग प्रिंट कर रहे थे आप पुश कर दीजिए। और कुछ और कर नहीं सकते हैं। लास्ट स्टेज मतलब खत्म हो गया ना स्ट्रिंग और क्या करेंगे? कुछ नहीं। रिटर्न कर जाइए। ये सवाल है। ये पांचों पॉइंट क्लियर है। अब आइए कोड पे चलते हैं। तो देखते हैं क्या करें। तो",
+      "source": "caption",
+      "english_text": "That you should not print. You store the contents of all the diary and give it to us. We will print it ourselves. So you have to print all the diaries. Meaning what is diary? Diary is a string. What do you have to do? All diaries have to be collected. At the last stage we will create a vector of strings. Final Answer, This is our final answer. And will push the diary in the answer. It means that whatever we were printing is done, you push it. And can't do anything else. Last stage means the string is finished, what else will we do? Nothing. Please return. This is the question. These five points are clear. Now let's move on to the code. So let's see what to do. so"
+    },
+    {
+      "start_time": 2224.88,
+      "end_time": 2258.71,
+      "text": "सबसे पहले तो हम सिंपलीसिटी के लिए क्या करते हैं ना कि अ एक मैप बना लेते हैं। एक हैश मैप बना लेते हैं। हैश मैप हम क्यों बना रहे हैं हम बताते हैं। हम एक हैश मैप बना लेते हैं जो कि ऐसा दिखेगा देखिए। ये हम ऊपर में बना लेते हैं। या मेन में बना लीजिए कहीं भी बना लीजिए। अनऑर्डर्ड मैप। इसमें हम क्या करेंगे? ये जो आपको फोन नंबर का फोटो दिया है ना। फोटो दिया है। कुछ लिखा नहीं है। तो फोटो देख के उतना बहुत टीडीएस हो जाएगा। हम क्या करते हैं ना? अब सारा डिजिट्स कैरेक्टर है। सारा डिजिट्स कैरेक्टर है। मतलब जो आपको स्ट्रिंग मिला हुआ है ना वो ऐसा है। टू थ्री। तो ये एक कैरेक्टर है। ये एक नंबर नहीं है। इंटीजर और कैरेक्टर में डिफरेंस समझिए। ये कैरेक्टर वाला टू है। नंबर वाला",
+      "source": "caption",
+      "english_text": "First of all, what we do for simplicity is that we create a map. Let's create a hash map. Let us explain why we are creating the hash map. Let's create a hash map that will look like this. We make this above. Or make it in Maine or make it anywhere. Unordered map. What will we do in this? This is the photo of the phone number that has been given to you. Photo is given. Nothing is written. So after seeing the photo, that much TDS will be done. What do we do? Now all digits are characters. All digits are characters. Meaning, the string you have got is like this. Two three. So this is a character. This is not a number. Understand the difference between integer and character. This is character wala two. number one"
+    },
+    {
+      "start_time": 2258.72,
+      "end_time": 2284.63,
+      "text": "टू नहीं है। ठीक है? तो हम क्या करेंगे कि इस कैरेक्टर को लेंगे। मतलब आप टू से लेके नाइन तक आपको बोला हुआ है कि आप फोन में बटन है। टू से लेके नाइन तक आप दबा सकते हैं। हर कैरेक्टर के लिए ना हम एक स्ट्रिंग ले लेंगे। हम एक स्ट्रिंग ले लेंगे। अभी देखिए हम इसमें क्या करते हैं। इसको f बोलेंगे। हम देखिए क्या करते हैं? f ऑफ 2 इक्वल टू क्या है? टू से क्या-क्या दब सकता है? a b c हम क्या करेंगे ना इसको एज अ स्ट्रिंग स्टोर कर लेंगे यहां पे।",
+      "source": "caption",
+      "english_text": "There is no two. Ok? So what we will do is take this character. Meaning you have been told from two to nine that you are a button on the phone. You can press from two to nine. For each character we will take a string. We'll take a string. Now see what we do with it. This will be called f. Let's see what we do? What is f of 2 equal to? What can be suppressed by two? a b c What we will do is store it as a string here."
+    },
+    {
+      "start_time": 2284.64,
+      "end_time": 2318.23,
+      "text": "देखिए बताएंगे क्यों कर रहे हैं? F ऑफ 3 = df। जो भी दिया हुआ है जो भी फोटो दिया हुआ है फोटो से देख के कर रहे हैं। हम अपने मन से नहीं कर रहे हैं। f ऑफ 4 = gh ऐसे-ऐसे करके अब सारा f ऑफ 9 तक यहां पे हम कर लेंगे। f ऑफ़ 9 में wx yz ये हम एक बार बना के इसको रख लेंगे ताकि हमको बार-बार ना करना पड़े। ठीक है? तो ये बना लीजिए। ये बना लीजिए। ये बनने के बाद क्या करेंगे? शुरू करेंगे। शुरू करेंगे। शुरू करेंगे। आइए शुरू करते हैं। तो शुरू करने के लिए क्या-क्या चाहिए? मेन फंक्शन से।",
+      "source": "caption",
+      "english_text": "Look, will you tell me why you are doing this? F of 3 = df. Whatever is given, whatever photo is given, we are doing it after looking at the photo. We are not doing it of our own accord. By doing f of 4 = gh like this, we will complete the whole process till f of 9 here. In f of 9 wx yz, we will create this once and keep it so that we do not have to do it again and again. Ok? So make this. Make this. What will you do after making this? Will start. Will start. Will start. Let's start. So what do you need to get started? From main function."
+    },
+    {
+      "start_time": 2318.24,
+      "end_time": 2352.31,
+      "text": "पहले तो फंक्शन ही लिख लेते हैं। पहले तो फंक्शन ही लिख लेते हैं। तो एक होगा वॉइड। फन। अच्छा। क्या पास करेंगे? स्टेजेस की लिस्ट। स्टेजेस की लिस्ट हो गया। कितने स्टेजेस हैं भैया? n स्टेजेस हैं उसकी लेंथ। अभी किस स्टेज पे हो? अभी किस नंबर पे हो? idx पे हैं। अच्छा। डायरी कैसी है? डायरी स्ट्रिंग तरीके की है। और फाइनल आंसर किस तरीके का है? फाइनल आंसर वेक्टर ऑफ़ स्ट्रिंग तरीके का है। क्योंकि इसमें हम सारे डायरीज को लिखने की इच्छा रखते हैं। m% लगाना ना भूलिए। चलिए, सबसे पहले फाइनल पॉइंट लिख लीजिए। जब आप फाइनल में",
+      "source": "caption",
+      "english_text": "First let's write the function itself. First let's write the function itself. So one will be void. Fun. Good. What will you pass? List of stages. The stages are listed. How many stages are there brother? n stages is its length. What stage are you at now? What number are you on now? Are on idx. Good. How is the diary? The diary is of string type. And what type is the final answer? The final answer is of vector of string method. Because in this we wish to write all the diaries. Don't forget to put m%. Come on, first write the final point. when you are in the finals"
+    },
+    {
+      "start_time": 2352.32,
+      "end_time": 2383.589,
+      "text": "पहुंच गए, idx = n खत्म हो गया खेल। क्या करना है? रिजल्ट में डायरी पुश कर दो। रिजल्ट में डायरी पुश कर दो। खत्म हो गया खेल। रिटर्न हो जाओ। सबसे आसान पार्ट खत्म। अब क्या करना है? हर एक चॉइस आराम से बनाओ। हर एक चॉइस को एक-एक करके बनाओ। तो अब देखिए अब हम इसीलिए मैप बनाए। मैप बनाने का सिग्निफिकेंस देखिए। मान लीजिए आपको पहला आता है टू। मतलब s ऑफ 0 क्या है? टू। मेरे मैप से हमको एक स्ट्रिंग मिलेगा। हम अगर निकालेंगे",
+      "source": "caption",
+      "english_text": "Reached, idx = n, game over. What is the plan? Push diary in result. Push diary in result. The game is over. Get back. The easiest part is over. What to do now? Make every choice comfortably. Make each choice one by one. So now see, this is why we made the map. See the significance of making the map. Let's say the first one you get is 2. What does s of 0 mean? To. From my map we will get a string. if we take out"
+    },
+    {
+      "start_time": 2383.599,
+      "end_time": 2416.47,
+      "text": "स्ट्रिंग t = f ऑफ जो भी है f ऑफ s ऑफ idx t में क्या आ गया a b c अब a b c का हर लेटर आप चूज कर सकते हैं आप ए चूस कर सकते हैं बी चूज कर सकते हैं सी चूज कर सकते हैं मतलब पहले में क्या था पहले वाले डोर में लेफ्ट और राइट अब टू में तीन चॉइसेज है वो तीन हमको कट कट करने की जरूरत नहीं है टी में जो भी स्ट्रिंग है ना इस स्ट्रिंग का हर एक लेटर आप टू के लिए चूज कर सकते हैं देख लीजिए ए बी सी क्या टू में आप ए बी सी चूस हां हां, अगर आपका लेटर हो जाए मान लो थ्री। थ्री का स्ट्रिंग क्या आएगा मैप से? डी ई एफ मतलब",
+      "source": "caption",
+      "english_text": "String t = f off whatever f off s off idx t what is there in a b c now every letter of a b c you can choose you can choose a you can choose b you can choose c it means what was there in the first door left and right now there are three choices in two we do not need to cut those three whatever string is in t no every letter of this string you can choose for two see A b c kya to me aap a b c suck yes yes, if your letter is done then consider three. What string of three will come from the map? d e f meaning"
+    },
+    {
+      "start_time": 2416.48,
+      "end_time": 2451.43,
+      "text": "डी ई एफ। मतलब डीई एफ का हर लेटर आप एक-एक बार चूज़ कर सकते हैं। तो आइए इसी को करते हैं। हम क्या करेंगे? हम ऐसा कर लेंगे स्ट्रिंग। चॉइस इक्वल टू एफ ऑफ एस ऑफ इंडेक्स। मतलब एस ऑफ इंडेक्स में कोई नंबर है। कोई फोन नंबर वाला मान लो टू है। टू के लिए क्या है? तो मेरे चॉइस में आ जाएगा ए बी सी। हर एक लेटर का चॉइस हो सकता है। आप ए चूज़ कर सकते हैं, बी चूज़ कर सकते हैं, सी चूज़ कर सकते हैं। तो एक लूप लगा लीजिए। हर एक चॉइस। पहले लेफ्ट राइट था तो हम वैसे ही लिख दिए थे। लेकिन आपको हर एक चॉइस करनी है। और कोई भी चॉइस करने पे क्या कोई पाबंदी है कि आप A नहीं चूज़ कर",
+      "source": "caption",
+      "english_text": "D E F. Meaning, you can choose each letter of DE F one by one. So let's do this. What will we do? We'll do this string. Choice Equals F of S of Index. Meaning there is a number in the S off index. Someone with a phone number is considered to be two. What's for two? So ABC will come in my choice. There can be a choice for each letter. You can choose A, you can choose B, you can choose C. So make a loop. Every choice. Earlier it was left and right so we wrote it the same way. But you have to make every choice. And is there any restriction on making any choice that you cannot choose A?"
+    },
+    {
+      "start_time": 2451.44,
+      "end_time": 2477.67,
+      "text": "नहीं कुछ नहीं है। पूरा आजादी है। फॉर इंट J = 0 j &lt; चॉइस डॉट साइज़ और j + यस यस यस। अब आप क्या चूज़ कर सकते हैं? इस चॉइस ऑफ जे को चूज़ कर सकते हैं। तो चूज़ करिए। लेकिन अपनी डायरी में लिखिए डायरी डॉट पुश बैक स्ट्रिंग भी एक वेक्टर होता है। इसमें आप पुश बैक कर सकते हैं।",
+      "source": "caption",
+      "english_text": "No there is nothing. There is complete freedom. For int J = 0 j < choice dot size and j + yes yes yes. What can you choose now? You can choose this choice of J. So choose. But write in your diary diary dot push back string is also a vector. In this you can push back."
+    },
+    {
+      "start_time": 2477.68,
+      "end_time": 2512.63,
+      "text": "आप क्या चूज़ कर रहे हैं इस समय जो आपका चॉइस स्ट्रिंग है ना A B C उसका J वाला उसका J वाला मतलब अगर J = 0 है तो आप A चूज़ कर रहे हैं। J = 1 है आप B चूज़ कर रहे हैं। J = 2 है तो आप C चूज़ कर रहे हैं। चूज़ हो गया। डायरी में लिख लिए। आगे वाले स्टेज पे जाइए। फन s n idx + 1 आगे वाले स्टेज पे सेम लिखेंगे फस जाएंगे इनफनाइट में डायरी रिजल्ट हो गया जब ये खत्म होगा क्या करना है डायरी डॉट पुशबक जो भी किए थे उसको रिवर्स करो जो भी किए उसको उल्टा करो",
+      "source": "caption",
+      "english_text": "What are you choosing? At this moment, your choice string is A B C, its J, its J, means if J = 0, then you are choosing A. J = 1. You are choosing B. If J = 2 then you are choosing C. Chosen. Wrote it in the diary. Go to the next stage. fun s n idx + 1 will write the same on the next stage, will get trapped in infinite diary result when it ends what to do diary dot pushbuck reverse whatever you did reverse whatever you did"
+    },
+    {
+      "start_time": 2512.64,
+      "end_time": 2542.23,
+      "text": "उल्टा डायरी डॉट पुशबक ये एक चॉइस हुआ और ये लूप ये लूप क्या चलेगा ये क्या करेगा ये लूप ये ऑल चॉइससेस कर देगा आपके लिए ए बी सी तीनों चूज़ करके एक-एक बार एक-एक बार सब होता रहेगा अब इस स्टेज पे सारा काम हो चुका है। कुछ और करने की ज़रूरत नहीं है। AB b हो गया मतलब जो भी करना था रिटर्न कर मस्ती में अपना। है ना? खत्म हो गया। ये देख लो फंक्शन। ये है फंक्शन। क्या-क्या कर रहे हैं फिर से? ये क्या है? लास्ट में आ गए तो ये वाला। है ना? ये वाला लास्ट।",
+      "source": "caption",
+      "english_text": "Ulta diary dot pushbak, this is one choice and this loop, what will this loop do, what will this loop do, this loop will make all the choices for you, by choosing all three ABCs, everything will keep happening one by one, now all the work has been done on this stage. There is no need to do anything else. AB b done means whatever you wanted to do, return it in fun. Isn't it? It's over. Look at this function. This is the function. What are you doing again? What is this? This one came last. Isn't it? This one is last."
+    },
+    {
+      "start_time": 2542.24,
+      "end_time": 2567.99,
+      "text": "ये क्या है? हम बस कुछ नहीं कर रहे हैं। ट्रिक यूज़ करके टू का वो निकाल रहे हैं कि टू से क्या हो सकता है भाई? ए बी सी हो सकता है। तो यहां से ए बी सी निकल जाएगा। ये क्या है? हर एक चॉइस आप कर रहे हैं। आप ए चुन रहे हैं, फिर बी चुन रहे हैं, फिर सी चुन रहे हैं। हर बार क्या कर रहे हैं? डायरी में उसको लिख रहे हैं। आगे जा रहे हैं। डायरी से रिवर्स कर रहे हैं हर बार। हर बार। ठीक है? मेन फंक्शन में क्या-क्या करना पड़ेगा? तो कुछ नहीं करना पड़ेगा। सबसे पहले तो ये हैश मैप बना लीजिए। ये वाला हैशमैप डायग्राम देख के बना लीजिएगा।",
+      "source": "caption",
+      "english_text": "What is this? We're just doing nothing. By using a trick, they are figuring out what can happen from two? Could be ABC. So ABC will come out from here. What is this? Every choice is yours. You're choosing A, then B, then C. What are you doing every time? Writing it in the diary. Going ahead. Doing reverse from diary every time. Every time. Ok? What needs to be done in the main function? So nothing will have to be done. First of all, create this hash map. Make this hashmap diagram by looking at it."
+    },
+    {
+      "start_time": 2568.0,
+      "end_time": 2594.15,
+      "text": "ये क्या है भाई? क्वेश्चन नंबर 17 है ये। लीड कोड 17 लेट पैटर्न शीट में मिलेगा। बना लीजिए। उसके बाद क्या करें? जो भी आपको काम लगे ना आपको फंक्शन भेजने के लिए क्या-क्या चाहिए? देखिए फंक्शन में हमको एक तो ये s भेजना है। ये दिया हुआ है। n भेजना है तो n निकाल लीजिए। n का क्या करिए? इंट n = s डॉट साइज निकाल लिए। वेरी गुड। आपको एक आईडीएक्स भेजना है तो idडीx तो आप शुरू से भेज दीजिएगा। तो ज़ीरो से भेज दीजिएगा। ठीक है? तो बना ही लीजिए।",
+      "source": "caption",
+      "english_text": "What is this brother? This is question number 17. The lead code will be found in the 17 lay pattern sheet. Make it. What to do after that? Whatever works for you, what do you need to send the function? See, in the function we have to send this s. This is a given. If you want to send n then take out n. What to do with n? Int n = s Find out the dot size. very good. If you want to send an IDX then you will send it from the beginning. So send it from zero. Ok? So make it."
+    },
+    {
+      "start_time": 2594.16,
+      "end_time": 2627.75,
+      "text": "कोई बात नहीं बना लीजिए। आईडीx = 0 हम शुरू से शुरू करेंगे। क्या चाहिए एक? डायरी चाहिए। डायरी शुरू में खाली होनी चाहिए। शुरू में खाली होनी चाहिए तो एक स्ट्रिंग डायरी बना लीजिए। स्ट्रिंग डायरी बना लीजिए। यह लीजिए डायरी बन गया। और एक क्या चाहिए? वेक्टर ऑफ स्ट्रिंग रिजल्ट लिखने के लिए। रिजल्ट लिखने के लिए इसी में तो सब होगा। वेक्टर ऑफ स्ट्रिंग। वेक्टर ऑफ स्ट्रिंग यही आपको रिटर्न भी करना पड़ेगा। अब क्या करिए? कॉल कर दीजिए एक बार। एक बार अपने चीज़ को अपने रिकर्शन को शुरू कर दीजिए। यहां से एक बार अपने रिकर्शन को किक स्टार्ट करिए। कैसे? एस एन",
+      "source": "caption",
+      "english_text": "Make up no matter what. IDx = 0 We'll start from the beginning. What do you need one for? Need a diary. The diary should be empty initially. It should be empty in the beginning, so make a string diary. Make a string diary. Here is the diary. What else is needed? To write vector of string results. This will be everything to write the result. Vector of string. You will also have to return this vector of string. What to do now? Please call once. Once your thing is done start your recursion. Kick start your recursion from here. How? s n"
+    },
+    {
+      "start_time": 2627.76,
+      "end_time": 2661.03,
+      "text": "आईडीx डायरी एंड रेस। खत्म। जब ये रिकर्शन पूरा चल जाएगा। ये रिकर्ज़ पूरा इधर पूरा माथा घूम के चल जाएगा। आपके रेस्ट में सारे डाइरीज आ जाएंगे क्योंकि आप यहां पे लिख रहे हैं ना रेस्ट में पुश बैक कर रहे हैं। एक बार ये हो गया मस्ती से यहां पे रिटर्न रेस्ट कर दीजिए। ये लीड कोड वाला फंक्शन है। लीड कोड ये हमारा रिकर्शन का फंक्शन है जो हम खुद लिखे हैं। तो एक बार ये आप रिकर्ज़न को यहां से किक स्टार्ट करते हैं। आप रिकर्शन को कोई ना कोई तो स्टार्ट करेगा ना भाई रिकर्शन को। किक स्टार्ट करते हैं यहां से। एक बार ये स्टार्ट होता है तो फिर ये",
+      "source": "caption",
+      "english_text": "IDx Diary & Race. End. When this recursion is completed. This recurse will go full circle here and there. All the diaries will come in your rest because you are not writing here but pushing back in the rest. Once this is done, have fun and rest here. This is a lead code function. Lead Code: This is our recursion function which we have written ourselves. So once this you kick start the recursion from here. You brother, someone will start the recursion. Let's kick start from here. Once it starts then it"
+    },
+    {
+      "start_time": 2661.04,
+      "end_time": 2690.55,
+      "text": "फैल जाता है और आपको वापस ला के सब कुछ दे देता है। तो ये आपका हेल्पर है। ये आपका हेल्पर है। है ना? इसको अगर ah ड्राई रन हमको नहीं लगता है करने की जरुरत है। कर देते हैं कोई बात नहीं है। ये कर देते हैं। तो मान के चलिए ये आपकी स्ट्रिंग है। ये आपकी स्ट्रिंग है। क्या है? टू और थ्री। ज़ीरो और वन ये आपकी स्ट्रिंग है। हम यहां पे आपकी डायरी बना लेते हैं। ये आपकी डायरी है। ठीक है? और हम इसको कहीं पे लिख लेंगे डायरी के रिजल्ट को। तो शुरू पे आप idx = 0 पे आइए। आपका नंबर क्या है? टू।",
+      "source": "caption",
+      "english_text": "Spreads out and gives you everything back. So this is your helper. This is your helper. Isn't it? If we don't feel there is a need to do a dry run on this. Let's do it, no problem. Let's do this. So let's assume this is your string. This is your string. What is? Two and three. Zeros and ones are your string. We make your diary here. This is your diary. Ok? And we will write the results of the diary somewhere. So initially you come to idx = 0. What is your number? To."
+    },
+    {
+      "start_time": 2690.56,
+      "end_time": 2719.91,
+      "text": "ठीक है? तो टू के लिए क्या निकलेगा हैश मैप सेप? a b c a b c तो वही है। तीन चॉइसस बनाइए। पहले a बनाइए। a बनाने से पहले डायरी में a लिख लीजिए। a लिख लिए आइए। a बनाने के बाद आप कहां गए? आईडी एक्स = 1 पे जोकि है थ्री पे। थ्री पे क्या है? d एफ। सेम काम करिए। एक चॉइस ले लीजिए डी का लेकिन ये d करने से पहले अपनी डायरी में लिख लीजिए। अपनी डायरी में लिख लीजिए। अब ये करते-करते आप कहां पहुंच जाएंगे? अगले स्टेज पे आईडीएस = 2. Idडीएस = 2 पे आप पाएंगे कि अब खत्म हो चुका है।",
+      "source": "caption",
+      "english_text": "ok? So what will be the hash map sep for two? a b c a b c So it's the same. Make three choices. First make a. Before making a, write a in the diary. Come write a. Where did you go after making a? ID X = 1 pe which is three pe. What is three pay? d f. Do the same work. Take a choice of D but before doing this write it in your diary. Write it in your diary. Now where will you reach by doing this? At the next stage IDS = 2. At IDS = 2 you will find that it is over."
+    },
+    {
+      "start_time": 2719.92,
+      "end_time": 2754.39,
+      "text": "क्या करना है? डायरी या कंटेंट को अपने रिजल्ट में लिख लीजिए। तो एक कंटेंट क्या हो गया मेरे रिजल्ट का? यहां पे हम अपना रिजल्ट बना लेते हैं। ए डी ठीक है? हो गया। i = 2 पे काम खत्म है। वापस आइए। अब आप आईडीएक्स वन पे वापस आ चुके हैं। तो किस आप डी पे गए थे? वापस आए हैं। डायरी में रिवर्स करिए। d लिखे थे ना खत्म करिए। ठीक है? हो गया। अब थ्री में और क्या है? ई भी है। ई भी कर लीजिए। थ्री में EB है। तो आप अगेन idx = 2 लेकिन करने से पहले क्या करना है? डायरी में लिखना है। लिखना है। लिखना है। idx = 2 पे सेम काम अपने-अ अपने फाइनल रिजल्ट में लिख",
+      "source": "caption",
+      "english_text": "What to do? Write down the diary or content in your result. So what is the content of my result? Here we prepare our result. A.D. Okay? Done. Work is finished at i = 2. Come back. You are now back on IDX One. So where did you go? Have come back. Reverse in diary. D was written, don't finish it. Ok? Done. Now what else is there in Three? There is also E. Do it also. Three has EB. So you say idx = 2 but what to do before doing it? Have to write in the diary. Have to write. Have to write. Write the same work on idx = 2 in your final result."
+    },
+    {
+      "start_time": 2754.4,
+      "end_time": 2780.95,
+      "text": "लीजिए। डायरी में जो भी है। क्या है? ae लिख लिए। वेरी गुड। अब इसका कोई काम बचा नहीं है। खत्म करके वापस आइए। idx वन पे वापस आए लेकिन e लिखे थे ना? e को रिवर्स करिए। idx वन पे कोई काम अब ना और कोई काम मेरे हिसाब से नहीं है। खत्म करिए। वापस आए। वापस आए। है। आप idx ज़ीरो पे खड़े हैं। a लिख के नीचे गए थे। रिवर्स करिए। रिवर्स करिए। चलो हो गया। देखिए ad a ही खत्म हो चुका है। अब idx = 0 पे टू पे आप खड़े हैं।",
+      "source": "caption",
+      "english_text": "Take it. Whatever is in the diary. What is? Wrote ae. very good. Now there is no work left for it. Come back after finishing. Came back on idx one but wrote e, right? Reverse e. There is no work on idx one now and no other work is according to me. Finish it. Came back. Came back. Is. You are standing at idx zero. Went down after writing a. Do the reverse. Do the reverse. Okay, it's done. Look, the ad itself has ended. Now you stand at idx=0."
+    },
+    {
+      "start_time": 2780.96,
+      "end_time": 2815.43,
+      "text": "टू पे कितना चॉइससेस है? तीन चॉइससेस। A B C A का खत्म हो चुका। b का भी तो बाकी है। बी का ओ सॉरी इसका एक और चॉइस होगा। इसका एक और एफ चॉइस भी होगा। इसका एक और एफ चॉइस भी होगा। तो यहां पे एक एफ आ जाएगा। सेम सेम लॉजिक से एकदम सेम लॉजिक से। अब आप खत्म हो चुके हैं। अब आप यहां पर आए हैं। अब इसका ए ही खत्म हुआ है। बी के लिए फिर से बी के लिए फिर से पूरा रिपीट होगा। यह फिर से पूरा रिपीट होगा। तो जब आप फाइनल रिजल्ट देखेंगे ड्राइंग करके देखिए आपके पास बी डी बी ई बी एफ सी डी सी ई सी एफ हर बार सेम चीज हो रही है। हर स्टेज पे",
+      "source": "caption",
+      "english_text": "How many choices are there on two? Three choices. A B C A is over. B is also left. B's O Sorry would be another choice. There will also be another F choice. There will also be another F choice. So there will be an F here. With the same same logic, with exactly the same logic. Now you are finished. Now you have come here. Now its A has ended. There will be a complete repeat for B again for B again. This will be a complete repeat again. So when you see the final result by drawing, you will have B D B E B F C D C E C F the same thing happening every time. at every stage"
+    },
+    {
+      "start_time": 2815.44,
+      "end_time": 2848.16,
+      "text": "हम लोग क्या करते हैं? सारे चॉइसस करते हैं। चॉइस करने के पहले डायरी में लिखो। चॉइस करो आगे स्टेज पे जाओ। वापस आओगे उसको डायरी से रिवर्स कर दो। बस यही खेल होता है रिकर्ज़ का। तो उम्मीद करते हैं कि आपको समझ में आया होगा। ये मेरी तरफ से बेस्ट एक्सप्लेनेशन है जो हम दे सकते थे। इससे ज्यादा अच्छा हमको रिकज़न पढ़ना नहीं आता है अनफॉर्चूनेटली। तो अगर ये भी नहीं समझ में आया तो फिर देखेंगे और कुछ करेंगे। नहीं समझ में आया तो प्लीज बताइएगा और हम इसको थोड़ा और सिंपलीफाई करने की कोशिश करेंगे। है ना? तो चलिए अच्छा क्वेश्चन है। इसको जरूर ट्राई कीजिए जाके। है ना? और चलिए मिलते हैं।",
+      "source": "caption",
+      "english_text": "What do we do? Everyone makes choices. Before making a choice, write in your diary. Make a choice and go on to the stage. When you come back, reverse it from the diary. This is just the game of recurse. So hope you have understood. This is the best explanation I could give. Unfortunately, we don't know how to read reviews any better than this. So if even this is not understood then we will see and do something. If you don't understand, please let us know and we will try to simplify it a bit more. Isn't it? So, it's a good question. Do try it. Isn't it? And let's meet."
+    }
+  ],
+  "playlist_id": "PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+  "playlist_title": "DSA Patterns 2025 | Crack FAANG in 3 Months | DSA Patterns by IITian"
+}

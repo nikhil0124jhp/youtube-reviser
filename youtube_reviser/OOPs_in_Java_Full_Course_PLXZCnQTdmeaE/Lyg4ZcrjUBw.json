@@ -1,0 +1,646 @@
+{
+  "video_id": "Lyg4ZcrjUBw",
+  "video_title": "Static & Final in Java | Static Methods, Blocks & String[] args | Java Full Course #15",
+  "video_number": 4,
+  "chunks": [
+    {
+      "start_time": 0.16,
+      "end_time": 31.519,
+      "text": "हां जी तो करें स्टार्ट। वेलकम बैक कोडर आर्मी हमारी इस जावा की सीरीज में। और आज इस वीडियो में हम ना दो बहुत ही इंपॉर्टेंट कीवर्ड्स की बात करने वाले हैं जो कि है स्टैटिक एंड फाइनल। अब जब आप ऊप्स की बात करते हो ना तो स्टैटिक और फाइनल आपका बहुत ज्यादा यूज़ भी होता है और बहुत ज्यादा इंपॉर्टेंट भी है। एक तो इंटरव्यू पर्सपेक्टिव्स के लिए भी कई लोग इसमें कंफ्यूज होते हैं कि एग्जैक्टली स्टैटिक का मतलब क्या होता है? फाइनल का मतलब क्या होता है? और जब आप रियल प्रोजेक्ट्स बिल्ड करते हो तो आपको पता होना चाहिए कि इनको कैसे यूज करना है। तो इस वीडियो में हम उसको डेप्थ से जानेंगे।",
+      "source": "transcript_api",
+      "english_text": "Yes, let's start. Welcome back Coder Army in our Java series. And today in this video we are going to talk about two very important keywords which are static and final. Now when you talk about Oops, static and final are used a lot and are also very important. Firstly, even for interview perspective, many people are confused about what exactly static means? What does final mean? And when you build real projects, you should know how to use them. So in this video we will know it in depth."
+    },
+    {
+      "start_time": 29.679,
+      "end_time": 62.559,
+      "text": "अच्छे से इंटरेस्टिंगली सारी चीजें समझेंगे। आपको बहुत मजा आएगा। तो चलो फटाफट चलते हैं स्क्रीन पे और स्टार्ट करते हैं। अब हमें ना जावा में दो बहुत इंपॉर्टेंट कीवर्ड देखने हैं। एक है स्टैटिक और एक है फाइनल। बस ये दो इंपॉर्टेंट कीवर्ड देखने हैं और ये लेक्चर हमारा बिल्कुल खत्म हो जाएगा और ये बहुत इंटरेस्टिंग भी है। तो इसको समझने से पहले ना वापस से हम अपनी एक स्टूडेंट क्लास में चलते हैं जो हमने कई बार बना ली। हम हमेशा क्या करते हैं? एक स्टूडेंट ऑब्जेक्ट बनाते हैं। ठीक है? और उसमें कुछ चीजें रखते हैं। लेट्स से हमने क्या सॉरी इंट",
+      "source": "transcript_api",
+      "english_text": "Will understand everything very interestingly. You will enjoy a lot. So let's quickly go to the screen and start. Now we have to see two very important keywords in Java. One is static and one is final. Just look at these two important keywords and our lecture will be completely over and it is also very interesting. So before understanding this, let us go back to one of our student classes which we have created many times. What do we always do? Create a Student object. Ok? And keep some things in it. What sorry did we mean by lets"
+    },
+    {
+      "start_time": 59.6,
+      "end_time": 93.6,
+      "text": "नहीं सबसे पहले हम रखते हैं एक स्ट्रिंग नेम। हम रखते हैं एक इंटज। हम रखते हैं एक इंट रोल नंबर और हम रखते हैं एक स्ट्रिंग कॉलेज। कुछ इस तरह से हम फील्ड्स रखते हैं। अच्छा व्हाट इफ क्या हो मैं आपको बोलूं कि हम एक एप्लीकेशन बना रहे हैं जो एक सेम कॉलेज के लिए है। ठीक है? तो लेट्स से कॉलेज का नाम है आईआईटी गुवाहाटी और हर इस कॉलेज के बच्चे के लिए हम एक एप्लीकेशन बना रहे हैं और मुझे इस आईआईटी गुवाहाटी के हर बच्चे को रिप्रेजेंट करना है। तो मैंने क्या कहा",
+      "source": "transcript_api",
+      "english_text": "No, first of all we keep a string name. We keep an intj. We keep an int roll number and we keep a string college. This is how we keep the fields. Well what if I tell you that we are making an application which is for a same college. Ok? So the name of the college from Lets is IIT Guwahati and we are making an application for every child of this college and I have to represent every child of this IIT Guwahati. so what did i say"
+    },
+    {
+      "start_time": 92.079,
+      "end_time": 126.64,
+      "text": "था? ऊप्स एक्चुअली करता क्या था? रियल लाइफ ऑब्जेक्ट को डिनोट करता था। तो एक रियल लाइफ स्टूडेंट होगा। उसको मैंने प्रोग्रामेटिकली ऐसे रिप्रेजेंट कर लिया। अब वो जो रियल लाइफ स्टूडेंट है ना उसके पास नाम होगा, एज होगी, रोल नंबर होगा और कॉलेज होगा। है ना? अब ऐसे 100 स्टूडेंट्स भी चाहे आप बना लो अगर वो 100 के 100 बच्चे एक ही कॉलेज के आते हैं तो उन सबका जो कॉलेज नेम है वो तो सेम हो गया। आईआईटी जी, आईआईटी जी है ना सबका सेम होगा। तो मेरा कहने का मतलब ये कि अगर मैं एक सेम कॉलेज को रिप्रेजेंट कर रहा हूं और मैंने यहां पे स्ट्रिंग कॉलेज लिखा हुआ है तो इसके मैं जितने भी ऑब्जेक्ट बना लूं चाहे",
+      "source": "transcript_api",
+      "english_text": "was? Oops what were you actually doing? Used to denote a real life object. So would be a real life student. I represented it programmatically like this. Now the real life student will have a name, age, roll number and college. Isn't it? Now even if you have 100 such students, if 100 of them come from the same college, then the college name of all of them is the same. IIT ji is IIT ji, everyone will be same. So what I mean to say is that if I am representing a same college and I have written the string college here, then I can create any number of objects for it."
+    },
+    {
+      "start_time": 124.159,
+      "end_time": 156.4,
+      "text": "मैं इसका एक ऑब्जेक्ट बनाऊं s1 s2 s3 कितने भी ऑब्जेक्ट बनाता रहूं सबके अंदर जो डॉट कॉलेज होगा वो तो आईआईटी गुवाहाटी ही होना चाहिए कोई और वैल्यू तो होनी नहीं चाहिए है ना यानी कि हर ऑब्जेक्ट के अंदर जो भी इसके हिप में ऑब्जेक्ट्स बनेंगे एक s1 बनेगा है ना एक s2 बनेगा एक s3 बनेगा बहुत सारे बन सकते हैं हजारों बन सकते हैं मान लो सबके अंदर कॉलेज कॉलेज कॉलेज भरा होगा और सबके अंदर सेम सेम वैल्यू भरी होगी आईआईटी आईआईटी पर ये तो गलत हुआ ना हम हर ऑब्जेक्ट के अंदर सेम वैल्यू कॉपी पेस्ट करे जा रहे हैं और मुझे पता है वो कभी चेंज ही नहीं होने वाली तो मैं उसको",
+      "source": "transcript_api",
+      "english_text": "Let me create an object of this s1 s2 s3, keep creating any number of objects, the dot college inside each one must be IIT Guwahati, there should not be any other value, that is, whatever objects will be created in its hip, one s1 will be created, not one s2 will be created, one s3 will be created, many can be created, thousands can be created, let's assume that each one will be filled with college college college and each one will have the same value filled with IIT. This is wrong at IIT, we are copying and pasting the same value inside every object and I know it is never going to change, so I am not going to change it."
+    },
+    {
+      "start_time": 154.08,
+      "end_time": 188.159,
+      "text": "हर ऑब्जेक्ट के अंदर क्यों डालूं आप सोचो अगर कुछ ऐसा कांसेप्ट होता कि ये वैल्यूज़ मैं यहां से निकाल करके कहीं और रख देता कहां रख देता वो हम बाद में समझेंगे। पर लेट से मैंने कहीं बाहर रख दी स्ट्रिंग कॉलेज। अब इसके जितने भी ऑब्जेक्ट्स मैं बनाऊं चाहे मैं इसका ऑब्जेक्ट बनाऊं S1 इसको मैं यहां बना के दिखा देता हूं। अब इसके मैं जितने भी ऑब्जेक्ट बनाऊं S1, S2, S3, S4 सब इसको ही रेफर करें। तब इसको रेफर करें। इसको अगर मैं और अच्छे से बताऊं तो इसको रेफर कैसे करेंगे? तो देखो",
+      "source": "transcript_api",
+      "english_text": "Why should I put it inside every object? You think, if there was some concept that I would have taken out these values from here and kept them somewhere else, we will understand later where I would have kept them. But late I kept the string college somewhere outside. Now whatever number of objects I create in it, whether I create its object S1, I create it and show it here. Now whatever objects I create, S1, S2, S3, S4 should all refer to it. Then refer to this. If I explain it better, how will you refer it? so look"
+    },
+    {
+      "start_time": 185.12,
+      "end_time": 217.519,
+      "text": "ये है मान लो मेरी हिप मेमोरी। ठीक है? लेट्स से ये है मेरी हिप मेमोरी। अब इसके अंदर मैं कितने भी ऑब्जेक्ट बना लूं। लेट्स से ये एक S1 ऑब्जेक्ट हो गया। ये एक S2 ऑब्जेक्ट हो गया। ये एक S3 ऑब्जेक्ट हो गया। ठीक है? इन सब ऑब्जेक्ट्स के अंदर कुछ वैल्यू्यूज होंगी। तो इनके अंदर अपना इनका नाम भी होगा। ठीक है? एज भी होगा, रोल नंबर भी होगा। सेम नेम, एज, रोल नंबर, नेम, एज, रोल नंबर। पर इन तीनों में से ना किसी के पास भी कॉलेज नहीं होगा। कॉलेज एक फील्ड है जो कहीं बाहर लिखी होगी कॉलेज और",
+      "source": "transcript_api",
+      "english_text": "This is, let's say, my hip memory. Ok? This is my hip memory from Letts. Now I can create any number of objects inside it. With LETS it became an S1 object. It became an S2 object. It becomes an S3 object. Ok? There will be some values ​​inside all these objects. So their name will also be there inside it. Ok? Age will also be there, roll number will also be there. Same Name, Age, Roll Number, Name, Age, Roll Number. But none of these three will have college. College is a field which will be written somewhere outside College and"
+    },
+    {
+      "start_time": 215.68,
+      "end_time": 248.64,
+      "text": "उसकी एक ही वैल्यू होगी। लेट्स से आईआईटी गुवाहाटी और वो सारे के सारे आपस में शेयर करेंगे। तो ये भी शेयर करेगा। इसको भी यही वैल्यू मिलेगी। इसको भी ये वैल्यू मिलेगी। कुछ इस तरह का अगर कांसेप्ट होता तो मेरा कितना सारा स्पेस बच जाता। है ना? अब देखो मुझे पता है कॉलेज क्या एक स्ट्रिंग है स्ट्रिंग क्योंकि एक नॉन प्रिमिटिव है तो एक रेफरेंस स्टोर करते हैं तो वो लेता है 4 बाइट्स है ना अब अगर हम हर ऑब्जेक्ट में 4 + 4 + 4 बाइट डालते रहेंगे हमारा कितना स्पेस यूटिलाइज हो जाएगा लेकिन अगर मैंने इसको बाहर रख दिया एक कॉमन जगह पे और मैंने कहा क्या कहा सब आप इसको शेयर करो",
+      "source": "transcript_api",
+      "english_text": "It will have only one value. Let's share it with IIT Guwahati and all of them. So will share this also. This will also get the same value. This will also get this value. If there was a concept like this, I would have saved so much space. Isn't it? Now look, I know college, what is a string, string because it is a non-primitive, if we store a reference, then it takes 4 bytes, right? Now if we keep putting 4 + 4 + 4 bytes in every object, how much space will be utilized, but if I put it out in a common place and I said what did you say, everyone share it."
+    },
+    {
+      "start_time": 246.319,
+      "end_time": 278.72,
+      "text": "तो मेरा तो ओवरऑल स्पेस सिर्फ 4 बाइट्स का लगा मैंने यहां सबसे 44 बाइट्स माइनस कर दिया है ना कितना बढ़िया कांसेप्ट हो जाएगा यही कांसेप्ट लेकर के आता है हमारा स्टैटिक कीवर्ड ठीक है तो अब समझते हैं स्टैटिक होता क्या है। मुझे बस क्या करना था? मैं जैसे ही यहां पे स्ट्रिंग कॉलेज लिखने वाला था ना, मैं क्या करता? मैं यहां पे कुछ ऐसे लिखता। मैं लिखता स्ट्रिंग कॉलेज और उससे पहले कीवर्ड लगा देता स्टैटिक",
+      "source": "transcript_api",
+      "english_text": "So my overall space was only 4 bytes, I have reduced the maximum 44 bytes here, what a great concept it will be, this is the concept that comes with our static keyword, okay, so now let us understand what is static. What was I just supposed to do? As soon as I was about to write String College here, what would I have done? I would write something like this here. I would write string college and put keyword static before it."
+    },
+    {
+      "start_time": 276.24,
+      "end_time": 310.639,
+      "text": "स्ट्रिंग कॉलेज। तो जैसे ही मैं ये कीवर्ड लगाता ना सारा काम यही होता जो मैंने अभी आपको समझाया। इंटरनली सब ऐसे ही काम करता। तो स्टैटिक कीवर्ड करता क्या है? स्टैटिक कीवर्ड कहता है कि ऐसा कोई भी वेरिएबल जो किसी ऑब्जेक्ट के स्पेसिफिक नहीं है बल्कि क्लास लेवल पे स्पेसिफिक है। क्योंकि देखो ये जो कॉलेज है ये हर ऑब्जेक्ट का सेम होने वाला है। ठीक है? तो ये हर ऑब्जेक्ट का अगर सेम होने वाला है तो ये ऑब्जेक्ट की कैरेक्टरिस्टिक नहीं हुई। जैसे हमने कहा था ना एक रियल लाइफ अ स्टूडेंट को अगर हमें रिप्रेजेंट करना है प्रोग्राम में तो उस रियल लाइफ स्टूडेंट के अंदर बहुत सारी चीजें होंगी। पर उसका",
+      "source": "transcript_api",
+      "english_text": "String College. So as soon as I put these keywords, all the work would be done as I just explained to you. Internally everything worked like this. So what does the static keyword do? The static keyword says that any variable that is not specific to an object but is specific at the class level. Because look, this is a college, every object is going to be same. Ok? So if it is going to be the same for every object then it is not characteristic of the object. Like we said, if we have to represent a real life student in the program, then there will be many things in that real life student. but his"
+    },
+    {
+      "start_time": 308.16,
+      "end_time": 341.919,
+      "text": "कॉलेज हमेशा सेम होगा। तो अगर कॉलेज सभी का सेम है तो वो एक ऑब्जेक्ट की प्रॉपर्टी ना हो के एक क्लास की प्रॉपर्टी हो गई। तो कोई भी ऐसा वेरिएबल जो एक क्लास की प्रॉपर्टी है उसके आगे हम स्टैटिक कीवर्ड लगाते हैं। और ये जावा को यही बताता है कि जिसके आगे स्टैटिक कीवर्ड लगा हो समझ जाना वो उस ऑब्जेक्ट की प्रॉपर्टी नहीं है। यानी कि हर s1 s2 के अंदर आप उसको अ क्रिएट मत करते रहना। बल्कि क्या करना एक कॉमन जगह पे कॉलेज इक्वल टू आईआईटी गुवाहाटी स्टोर कर देना। अब वो कॉमन जगह कहां है वो हम बाद में पढ़ेंगे जब हम मेमोरी मैनेजमेंट पढ़ेंगे। पर एक कॉमन जगह",
+      "source": "transcript_api",
+      "english_text": "College will always be the same. So if college is the same for everyone then it is not the property of an object but has become the property of a class. So any variable which is a property of a class, we put static keyword in front of it. And this tells Java that what is prefixed with the static keyword is not a property of that object. That means you don't keep creating it in every s1 s2. Rather what to do but store college equal to IIT Guwahati at a common place. Now where is that common place, we will read later when we will read memory management. a common place"
+    },
+    {
+      "start_time": 338.72,
+      "end_time": 365.52,
+      "text": "पे वहां स्टोर कर देना और s1, s2, s3 सब उसे अपने आप पॉइंट कर लेंगे। तो यही कांसेप्ट है मेरे स्टैटिक वेरिएबल्स का। ठीक है? तो ठीक है भैया आप तो ये तो समझ गए। अब मान लो जब मैं इस ऑब्जेक्ट इस क्लास का एक ऑब्जेक्ट बनाता होगा तो मैं कैसे बनाताऊंगा? तो लेट्स से मैं इसको मैं थोड़ा सा यहां लिखता हूं। तो मैं ऐसे ही बनाता होगा। लेट्स से स्टूडेंट s1 = न्यू स्टूडेंट। कुछ इस तरीके से बनाता होऊंगा।",
+      "source": "transcript_api",
+      "english_text": "Store it there and s1, s2, s3 will automatically point to it. So this is the concept of my static variables. Ok? So okay brother, you have understood this. Now suppose when I create this object an object of this class then how will I create it? So let me write a little bit of this here. So I would make it like this. Let Student be s1 = New Student. I will be making something like this."
+    },
+    {
+      "start_time": 364.24,
+      "end_time": 398.08,
+      "text": "लेट्स से अभी मेरे पास कोई खुद का कंस्ट्रक्टर मैंने बना नहीं रखा। तो जो भी डिफ़ॉल्ट कंस्ट्रक्टर होगा वो हमारा चल जाएगा। ठीक है? यहां पे अभी उसको इग्नोर करते हैं। तो मैंने S1 एक ऑब्जेक्ट बना लिया। S1 एक रेफरेंस वेरिएबल है जो इस न्यू स्टूडेंट को पॉइंट करता होगा। ओके? अब मुझे अगर नेम प्रिंट करना होता या नेम में कोई वैल्यू डालनी होती तो मैं ऐसे डालता था S1 डॉट नेम में डाल दो आदित्य। कुछ इस तरीके से डालता था। ठीक है? और सेम मैं ऐज को भी कर सकता था, रोल नंबर को भी कर सकता था। पर कॉलेज तो अब एक स्टैटिक है। तो क्या मैं ऐसे कर सकता हूं? s1 डॉट कॉलेज इक्वल टू अह लेट्स से कुछ वैल्यू",
+      "source": "transcript_api",
+      "english_text": "I don't have any own constructor from Lets yet. So whatever the default constructor is ours will run. Ok? Let's ignore him here for now. So I created an object S1. S1 is a reference variable that will point to this new student. Ok? Now if I had to print the name or put any value in the name, I would have put it like S1 dot put Aditya in the name. Used to put something in this manner. Ok? And I could have done the same thing with age and roll number also. But college is now a static. So can I do it like this? s1 dot college equal to ah lets get some value"
+    },
+    {
+      "start_time": 396.16,
+      "end_time": 430.56,
+      "text": "डाल दो आईआईटी गुवाहाटी। क्या मैं ऐसा कर सकता हूं? आंसर है बिल्कुल कर सकता हूं। ऐसा भी कर सकता हूं। क्यों? क्योंकि माना कि ये जो कॉलेज है ये एक ऑब्जेक्ट की प्रॉपर्टी नहीं है। पर एक तरह से हर ऑब्जेक्ट इसे पॉइंट तो कर रहा है। तो कोई भी ऑब्जेक्ट चाहे इसकी वैल्यू आईआईटीजी डाल सकता है। लेकिन इसका एक और तरीका होता है। मैं ऐसे भी लिख सकता हूं। मैं सीधा लिखूं अपनी क्लास का नाम स्टूडेंट डॉट कॉलेज। और यहां पे कोई वैल्यू डाल दूं लेट से आईआईटी गुवाहाटी। तो मैं ऐसा भी कर सकता हूं। मैं सीधा क्या लिखूं? अपनी",
+      "source": "transcript_api",
+      "english_text": "Put IIT Guwahati. Can I do this? The answer is absolutely I can. I can do that too. Why? Because it is believed that this college is not the property of an object. But in a way every object is pointing to it. So any object can enter its value as IITG. But there is another way. I can write like this also. I should directly write the name of my class student.college. And let me put some value here Late IIT Guwahati. So I can do that too. What should I write directly? your own"
+    },
+    {
+      "start_time": 428.319,
+      "end_time": 463.199,
+      "text": "क्लास का नाम। तो यहां पे हमारा जो सिंटेक्स हो गया वो क्या हो गया? क्लास नेम डॉट वेरिएबल नेम। कौन सा वेरिएबल? स्टैटिक वेरिएबल और उसमें कोई डाल दो आप वैल्यू। ये आपका सिंटेक्स हो गया। इस सिंटेक्स से भी मैं अपने स्टैटिक वेरिएबल को एक्सेस कर सकता हूं। क्यों? क्योंकि हमारे क्लास के वेरिएबल्स होते हैं। तो क्लास नेम डॉट स्टैटिक वेरिएबल नेम इक्वल टू वैल्यू। अब इसका फायदा बस ये है कि जब भी मैं S2, S3 किसी से भी डॉट कॉलेज को एक्सेस करने की कोशिश करूंगा मुझे हमेशा आईआईटी गुवाहाटी मिलेगा। इनफैक्ट अगर मैं S1, S2, S3 किसी",
+      "source": "transcript_api",
+      "english_text": "Class name. So what is our syntax here? Class name dot variable name. Which variable? Static variable and put any value in it. This is your syntax. With this syntax also I can access my static variables. Why? Because our class has variables. So class name dot static variable name equal to value. Now the only advantage is that whenever I try to access dot college from S2, S3 any time I will always get IIT Guwahati. Infact if I S1, S2, S3"
+    },
+    {
+      "start_time": 460.88,
+      "end_time": 486.56,
+      "text": "से भी इस वैल्यू को चेंज कर दूंगा तो अगर मैं लिख दूंगा लेट्स से S3 डॉट कॉलेज इक्वल टू आईआईटी खड़कपुर। अगर मैंने ऐसा कर दिया तो वो सबके लिए चेंज हो जाएगा। अब अगर मैं S1 डॉट कॉलेज प्रिंट करूंगा, S2 डॉट कॉलेज प्रिंट करूंगा तो सब में आईआईटी खड़कपुर आंसर आएगा। राइट? तो ये कांसेप्ट है हमारे स्टैटिक वेरिएबल का। ठीक है? आई होप आपको ये समझ आ गया होगा।",
+      "source": "transcript_api",
+      "english_text": "If I change this value from Let's also say S3.college equal to IIT Kharakpur. If I do this, it will change for everyone. Now if I print S1 dot college, S2 dot college then the answer will be IIT Kharakpur. Right? So this is the concept of our static variable. Ok? I hope you have understood this."
+    },
+    {
+      "start_time": 484.879,
+      "end_time": 519.76,
+      "text": "मैंने आपको ये बता ही दिया कि ये जो हमारा कॉलेज इक्वल टू आईआईटी गुहाटी जो एक स्टैटिक वेरिएबल है ये हिप्स में स्टोर नहीं होते। आर नॉट स्टर्ड इन हिप। तो ये कहां स्टोर होते हैं भैया? ये हम बाद में डिस्कस करेंगे जब हम मेमोरी मैनेजमेंट पढ़ेंगे। वो ज्यादा इंटरेस्टिंग होगा। ठीक है? तो ये हीप में स्टोर नहीं होते। आपको ये समझना पड़ेगा। तो हर ऑब्जेक्ट जो है हर इंस्टेंस जो है इस क्लास का वो एक ही को पॉइंट कर रहा होगा। कोई भी इसे चेंज करेगा सबके लिए चेंज हो जाएगा क्योंकि ये सबके लिए कॉमन है। ये क्लास का एक वेरिएबल है ना कि एक ऑब्जेक्ट का। तो इसका एक स्पेशल नाम होता है। हम इसको बोलते हैं मैं यहीं",
+      "source": "transcript_api",
+      "english_text": "I have already told you that this our college equal to IIT Guhati which is a static variable is not stored in HIPS. Are Not Stuck in the Hip. So where are these stored brother? We will discuss this later when we study memory management. That will be more interesting. Ok? So these are not stored in the heap. You have to understand this. So every object, every instance of this class will be pointing to the same thing. If anyone changes it, it will change for everyone because it is common for everyone. This is a variable of a class and not of an object. So it has a special name. I call it here"
+    },
+    {
+      "start_time": 517.599,
+      "end_time": 544.399,
+      "text": "लिख देता हूं। हम इसको क्या बोलते हैं? हम इसको बोलते हैं क्लास वेरिएबल। ठीक है? जैसे अभी तक हम बाकी सारे ऑब्जेक्ट्स को क्या बोल रहे थे? सॉरी बाकी सारे वेरिएबल्स को नेम, एज, रोल नंबर इनको क्या बोलते थे? इनको हम इंस्टेंस वेरिएबल बोलते थे। इंस्टेंस इंस्टेंस का मतलब क्या हुआ? किसी एक ऑब्जेक्ट के वेरिएबल। ऑब्जेक्ट वेरिएबल बोल लो या इंस्टेंस वेरिएबल। इस कॉलेज को हम स्पेशल नाम देते हैं क्लास वेरिएबल। क्लास वेरिएबल।",
+      "source": "transcript_api",
+      "english_text": "I will write. What do we call this? We call this class variable. Ok? Like what were we calling all the other objects till now? Sorry, all the other variables like name, age, roll number, what were they called? We used to call these instance variables. What does instance mean? Variables of a single object. Call it object variable or instance variable. We give this college a special name, class variable. Class variable."
+    },
+    {
+      "start_time": 542.399,
+      "end_time": 576.56,
+      "text": "क्योंकि ये क्लास का वेरिएबल है। इस पूरी क्लास का एक ही है। राइट? बाकी सारे ऑब्जेक्ट्स इसको शेयर करेंगे। तो ये ऑब्जेक्ट स्पेसिफिक नहीं है। ये क्लास स्पेसिफिक है। ठीक है? तो आई होप आपको ये पूरा अच्छे से समझ आ गया होगा। अब एक इंटरेस्टिंग चीज स्टैटिक कीवर्ड मैं सिर्फ एक वेरिएबल के आगे नहीं लगाता। एक मेथड के आगे भी लगा सकता हूं। इसका मतलब यह कि अगर लेट्स से मेरे पास यही क्लास होती सॉरी लेट्स से मेरे पास यही क्लास होती स्टूडेंट। ठीक है? और उसमें अगर कुछ वेरिएबल्स होते हैं पहले ऊपर लेट्स से कुछ",
+      "source": "transcript_api",
+      "english_text": "Because this is a class variable. There is only one of this entire class. Right? All other objects will share it. So this is not object specific. This is class specific. Ok? So I hope you have understood this completely. Now one interesting thing is I don't just put the static keyword in front of a variable. I can also put it in front of a method. This means that if I had got this class from Lets, then sorry, from Lets I would have had this class Student. Ok? And if there are some variables in it then first let's do some"
+    },
+    {
+      "start_time": 574.72,
+      "end_time": 606.88,
+      "text": "वेरिएबल्स और यहां पे एक फंक्शन होता लेट्स से गेट अटेंडेंस या लेट्स से मार्क अटेंडेंस जो हमने पहले ही बनाया हुआ है मार्क अटेंडेंस कुछ ऐसा हमारा अगर एक मेथड होता तो इस मेथड को भी मैं यहां पे एक कीवर्ड लगा सकता था स्टैटिक स्टैटिक वॉइड मार्क अटेंडेंस अब देखो जैसे ही मैं यहां पे कीवर्ड लगाता स्टैटिक क्या होता ये जो मेरा मेथड है ये किसी ऑब्जेक्ट स्पेसिफिक ना हो के एक क्लास का मेंबर बन जाता तो अगेन अगेन अगर मुझे इसे कॉल करना पड़ता और मेरे पास स्टूडेंट के मल्टीपल ऑब्जेक्ट",
+      "source": "transcript_api",
+      "english_text": "Variables and here there would be a function Get Attendance from Lets or Mark Attendance from Lets which we have already created Mark Attendance something like this, if we had a method then I could have put a keyword here in this method also static static void mark attendance Now see as soon as I put the keyword here static what would have happened, this is my method, it should not be any object specific but would have become a member of a class, then again Again if I had to call this and I had multiple objects of Student"
+    },
+    {
+      "start_time": 604.399,
+      "end_time": 638.48,
+      "text": "होते लेट्स से स्टूडेंट s1 = न्यू स्टूडेंट है ना सेम तरीके से मैं स्टूडेंट s2 बना सकता हूं s2 इक्वल टू लेट्स से न्यू स्टूडेंट सेम तरीके से तो मैं इसे या तो ऐसे भी कॉल कर सकता हूं s1 डॉट मार्क अटेंडेंस कुछ इस तरीके से या मैं लिख दूं s2 डॉट मार्क अटेंडेंस और मैं इसको ऐसे भी कॉल कर सकता हूं अपनी क्लास का नाम स्टूडेंट डॉट मार्क अटेंडेंस जैसे हमने वेरिएबल को कॉप कॉल किया था कुछ इस तरीके से स्टूडेंट डॉट मार्क",
+      "source": "transcript_api",
+      "english_text": "Let's say student s1 = New student right in the same way I can create student s2 s2 equal to Let's say new student in the same way so I can either call it like this s1 dot mark attendance something like this or I can write s2 dot mark attendance and I can also call it like this Name of my class student dot mark attendance like we called the variable cop Student dot mark in this way"
+    },
+    {
+      "start_time": 635.6,
+      "end_time": 668.88,
+      "text": "अटेंडेंस राइट क्योंकि कांसेप्ट तो सेम है मेरा ये जो स्टैटिक मेथड है ये एक क्लास का मेथड है ना कि एक ऑब्जेक्ट स्पेसिफिक तो ये s1 s2 सब एक ही मार्क अटेंडेंस नाम के मेथड को आपस में शेयर करेंगे। इन सबके अलग-अलग मार्क अटेंडेंस नहीं होगा। सब आपस में शेयर करेंगे। ओके? बहुत बढ़िया। अब अगेन क्वेश्चन ये आएगा कि भैया अभी तक तो जब हम एक ऑब्जेक्ट को स्टोर करते थे ना लेट्स से मैं यहां पे एक हीप मेमोरी बनाता हूं तो जब भी हम इस हीप मेमोरी के अंदर एक ऑब्जेक्ट को स्टोर करते थे तो मैं कहता था",
+      "source": "transcript_api",
+      "english_text": "Attendance right because the concept is the same, this is my static method, it is a method of a class and not an object specific, so all these s1 s2 will share the same method named Mark Attendance among themselves. There will be no different marks for attendance. Everyone will share among themselves. Ok? very nice. Now again the question will come that brother, till now whenever we used to store an object, let me create a heap memory here, then whenever we used to store an object inside this heap memory, I used to say"
+    },
+    {
+      "start_time": 667.68,
+      "end_time": 701.12,
+      "text": "इस ऑब्जेक्ट के अंदर क्या-क्या आता होगा जो भी स्टूडेंट क्लास के वेरिएबल्स होंगे तो भैया नेम आ गया एज आ गया रोल नंबर आ गया अब आपने कह दिया कि हमारा जो कॉलेज था यहां पे हमने कॉलेज को स्टैटिक कर दिया तो वो तो बाहर आ गया तो आपने कह दिया कॉलेज तो बाहर आ गया तो कॉलेज कहीं आ गया लेट्स से यहां कॉलेज इक्वल टू आईआईटी जी अब वो हिप के अंदर तो है नहीं कहीं और है तो वो यहां आ गया पर हमारे मेथड्स कहां आते होंगे हमारे ये जो मेथड्स हैं मार्क अटेंडेंस है ना ये क्या किसी ऑब्जेक्ट के अंदर आते हैं आंसर है नहीं इनफैक्ट स्टैटिक मेथड तो आप छोड़ ही दो जो हमारे",
+      "source": "transcript_api",
+      "english_text": "What would be included inside this object, whatever variables there would be of the student class, so brother, the name has come, the age has come, the roll number has come, now you have said that our college was here, if we made the college static, then it has come outside, then you said that the college has come outside, so the college has come somewhere. Let's say here the college is equal to IIT ji. Now it is inside the hip or somewhere else, so it has come here, but where would our methods come from? These are our methods. Mark is attendance, does it come inside any object? The answer is no, infact static method, then you leave it which is in our"
+    },
+    {
+      "start_time": 699.839,
+      "end_time": 734.639,
+      "text": "नॉर्मल मेथड भी होते थे अगर यहां पे स्टैटिक नहीं भी लिखा होता वॉइड मार्क अटेंडेंस भी होता था वो भी कहीं स्टोर होता है अगेन वो हम तब पढ़ेंगे जब हम मेमोरी मैनेजमेंट पढ़ेंगे तो ना तो स्टैटिक मेथड ना ही नॉर्मल मेथड कभी भी वो चीजें किसी ऑब्जेक्ट के अंदर स्टोर नहीं होती ऑब्जेक्ट के अंदर सिर्फ क्लास के वेरिएबल स्टोर होते हैं। ऑब्जेक्ट के वेरिएबल स्टोर होते हैं। इस केस में नेम, एज, रोल नंबर यहां पे हमने लिखा होगा। कहां गया? हां, यहां रहा। ये रहा नेम, एज, रोल नंबर। और कॉलेज क्योंकि हमारा क्या है? एक स्टैटिक है तो वो कहीं बाहर स्टोर होगा। मेथड्स और स्टैटिक मेथड्स हमेशा से ही बाहर स्टोर होते हैं। तो ऑब्जेक्ट के",
+      "source": "transcript_api",
+      "english_text": "There were normal methods also, if static was not written here, there was also void mark attendance, that too was stored somewhere. Again, we will read that when we will read memory management, so neither static method nor normal method, those things are never stored inside any object, only class variables are stored inside the object. Variables of objects are stored. In this case, we would have written name, age, roll number here. Where did he go? Yes, stayed here. Here is name, age, roll number. And college because what is ours? If it is static then it will be stored somewhere outside. Methods and static methods are always stored externally. So the object's"
+    },
+    {
+      "start_time": 732.56,
+      "end_time": 764.0,
+      "text": "अंदर सिर्फ ऑब्जेक्ट के वेरिएबल्स को स्टोर किया जाता है ना कि और किसी चीज को। ठीक है? ओके? तो, आप यह भी समझ गए कि हमारा जो स्टैटिक है, हमारा जो स्टैटिक कीवर्ड है, ठीक है? इट कैन बी यूज्ड ऑन वेरिएबल्स। इट कैन बी यूज्ड ऑन मेथड्स। ठीक है? बहुत बढ़िया। ये तो हम समझ गए। पर स्टैटिक के कुछ रूल्स भी तो होते होंगे। ऐसे थोड़ी हम कुछ भी कर देंगे। है ना? तो स्टैटिक के कुछ रूल्स हैं और वो रूल ज्यादातर हमारे मेथड्स पे अप्लाई होते हैं। ठीक है? तो",
+      "source": "transcript_api",
+      "english_text": "Only the variables of the object are stored inside and not anything else. Ok? Ok? So, you also understand that our static is our static keyword, right? It can be used on variables. It can be used on methods. Ok? very nice. We understood this. But there must be some rules of static also. We will do anything like this. Isn't it? So there are some rules of static and those rules mostly apply to our methods. Ok? So"
+    },
+    {
+      "start_time": 761.36,
+      "end_time": 796.0,
+      "text": "देखो कोई भी मेथड जिसको आप स्टैटिक बनाना चाहते हो वो कुछ रूल्स फॉलो करेगा। और वो रूल्स क्या हैं? तो सबसे पहला रूल है आपका कोई भी स्टैटिक मेथड दूसरे स्टैटिक मेथड को ही कॉल कर सकता है। तो वन स्टैटिक मेथड कैन ओनली कॉल अदर स्टैटिक मेथड। ठीक है? अब इसका रीज़न देखो बहुत सिंपल है। मैंने आपको क्या कहा था? कोई भी स्टैटिक मेथड आप डायरेक्टली कॉल कर सकते हो यूजिंग क्लास नेम। तो",
+      "source": "transcript_api",
+      "english_text": "Look, any method which you want to make static will follow some rules. And what are those rules? So the first rule is that any of your static methods can call only other static methods. So One Static Method Can Only Call Another Static Method. Ok? Now see the reason for this is very simple. What did I tell you? You can call any static method directly using class name. so"
+    },
+    {
+      "start_time": 794.16,
+      "end_time": 827.12,
+      "text": "मैंने यहां पे देखो ऐसे किया था स्टूडेंट डॉट मार्क अटेंडेंस। ये चल सकता है। अब लेट्स से ये जो मार्क अटेंडेंस है ना ये अंदर से एक और मेथड कॉल करता होगा प्रिंट। जो कि नॉन स्टैटिक होगा। ठीक है? कहां गया? स्टैटिक हमारा हां लेट्स से ये हमारी क्लास थी। इसके अंदर मैंने मार्क अटेंडेंस लिखा हुआ था। तो अभी के लिए आप मान लो यहां पे एक और फंक्शन लिखा हुआ है वॉइड प्रिंट और ये नॉन स्टैटिक है। ये क्या करता होगा? डिटेल्स प्रिंट करता होगा स्टूडेंट की। तो पहले हमने अटेंडेंस मार्क की और मार्क अटेंडेंस ने कहीं बीच में प्रिंट कॉल कर दिया होगा। कुछ ऐसा अगर यह",
+      "source": "transcript_api",
+      "english_text": "See here how I did student.mark attendance. This can work. Now this mark attendance from Lets will call another method from inside, print. Which will be non-static. Ok? Where did he go? Static was our class from Yes Lets. Inside this I had written Mark Attendance. So for now, assume that there is another function written here called void print and it is non-static. What would he do? Must be printing the details of the student. So first we marked the attendance and marked attendance must have printed call somewhere in between. something like this"
+    },
+    {
+      "start_time": 825.04,
+      "end_time": 859.839,
+      "text": "अलाउड होता कि एक स्टैटिक मेथड नॉन स्टैटिक मेथड को कॉल कर रहा है और मान लो मैं इस स्टूडेंट का एक भी ऑब्जेक्ट ना बनाता पर मैं सीधा क्या करता स्टूडेंट डॉट मार्क अटेंडेंस कॉल कर देता क्योंकि मैं ये कर सकता हूं मैं बिना इस स्टूडेंट का एक भी ऑब्जेक्ट बनाए सीधा इस मार्क अटेंडेंस को कॉल कर सकता हूं बाय यूजिंग क्लास नेम ये तो हमें पता ही है। तो अगर मैं ऐसा कॉल कर देता और जैसे ही मार्क अटेंडेंस कॉल हो करता होता वो इस प्रिंट को कॉल करता। पर ये जो प्रिंट है ये तो ऑब्जेक्ट स्पेसिफिक है। राइट? तो मैं कौन से प्रिंट को कॉल करना चाहता हूं ये जेवीएम को पता ही नहीं होगा। राइट? तो आप",
+      "source": "transcript_api",
+      "english_text": "It would be allowed that a static method is calling a non-static method and suppose I do not create a single object of this student, but what would I do directly? I would call student dot mark attendance because I can do this, I can directly call this mark attendance by using class name, we know this without creating a single object of this student. So if I make a call like this and as soon as the mark attendance is called, it will call this print. But this print is object specific. Right? So the JVM will not know which print I want to call. Right? so you"
+    },
+    {
+      "start_time": 858.32,
+      "end_time": 891.519,
+      "text": "इसको ऐसे समझो। मेरे पास बहुत सारे ऑब्जेक्ट्स हैं। सबके पास अपना प्रिंट मेथड है। सबके पास एक अपना प्रिंट मेथड है। ठीक है? लेकिन मार्क अटेंडेंस सबके लिए कॉमन है। तो मैंने क्लास का नाम लेके मार्क अटेंडेंस तो कॉल कर दिया। पर फिर मैंने कहा डॉट प्रिंट। इसके कहीं कोड के बीच में मैंने कहा प्रिंट को कॉल करो। पर कौन से प्रिंट को कॉल करें? इस ऑब्जेक्ट के इस ऑब्जेक्ट के इस ऑब्जेक्ट के इस ऑब्जेक्ट के ये तो पता ही नहीं हमारे जेवीएम को तो ऐसा कुछ ना हो ऐसी कोई कंफ्यूजन कभी होए ना तो हमने क्या लिख दिया वन स्टैटिक मेथड कैन ओनली कॉल अदर",
+      "source": "transcript_api",
+      "english_text": "Understand it like this. I have a lot of objects. Everyone has their own print method. Everyone has their own print method. Ok? But mark attendance is common for everyone. So I took the name of the class and called to mark attendance. But then I said dot print. Somewhere in the middle of the code I said call print. But which print to call? Our JVM doesn't even know about this object, this object, this object, so that there is no such confusion, what have we written, one static method can only call another."
+    },
+    {
+      "start_time": 888.48,
+      "end_time": 922.639,
+      "text": "स्टैटिक मेथड राइट ओके बहुत बढ़िया और क्या रूल है भैया देखो अगला रूल भी बिल्कुल सेम स्टैटिक मेथड जो होते हैं स्टैटिक मेथड कैन ओनली एक्सेस स्टैटिक वेरिएबल्स ये भी सिंपल रूल है सेम जो ऊपर लॉजिक है वो यहां अप्लाई करो स्टैटिक वेरिएबल्स एक स्टैटिक मेथड जो है सिर्फ स्टैटिक वेरिएबल्स ही यूज़ कर सकता है। वो कोई स्टैटिक नॉन स्टैटिक वेरिएबल्स यूज़ करके करेगा क्या? अगर मैंने डायरेक्टली कॉल कर दिया वो तो बने ही नहीं होंगे। जब तक आप ऑब्जेक्ट नहीं बनाओगे किसी भी क्लास का स्टैटिक वेरिएबल तो इंस्टेंशिएट ही नहीं होते। है ना? ये तो आपको पता ही है कि जब",
+      "source": "transcript_api",
+      "english_text": "Static method right ok, very good, what else is the rule brother, see the next rule is exactly the same static method which are static method can only access static variables, this is also a simple rule, the same logic which is above apply here, static variables are a static method which can be used only by static variables. Will he do it using any static non-static variables? If I had called directly they would not have been made. Static variables of any class are not instantiated unless you create an object. Isn't it? You know that when"
+    },
+    {
+      "start_time": 921.04,
+      "end_time": 946.959,
+      "text": "भी मैं क्लास स्टूडेंट का एक ऑब्जेक्ट नहीं बनाऊंगा। जब तक मैं ये वाली लाइन नहीं लिखूंगा ये वाली लाइन। तो मेरे इस स्टूडेंट के अंदर जितने भी वेरिएबल्स होते होंगे जैसे कि मान लो इसके अंदर होता होगा नेम, एज, रोल नंबर ये तो इंस्टेंशिएट ही नहीं होते होंगे। तो बनते ही नहीं होंगे। और जब तक ये बनेंगे ही नहीं। मेरा कोई भी नॉन मेरा कोई भी स्टैटिक मेथड जैसे कि मार्क अटेंडेंस इनको यूज़ कैसे कर सकता है? नहीं कर सकता। तो इस मार्क अटेंडेंस के अंदर मैं कभी भी नेम को यूज़ नहीं कर सकता।",
+      "source": "transcript_api",
+      "english_text": "Also I will not create an object of class Student. Until I write this line, this line. So all the variables that would be there in this student of mine, like name, age, roll number, these would not be instantiated at all. So it would not have been made. And until these are not made. How can any of my static methods like mark attendance use these? can't. So I can never use name inside this mark attendance."
+    },
+    {
+      "start_time": 945.04,
+      "end_time": 975.839,
+      "text": "ऐज को यूज़ नहीं कर सकता। रोल नंबर को यूज़ नहीं कर सकता। मैं सिर्फ कॉलेज को यूज़ कर सकता हूं। ये अलाउड है। ये तीनों अलाउड नहीं है। आपको रीज़न मैंने बता ही दिया। क्योंकि मार्क अटेंडेंस तो मैं डायरेक्टली कॉल कर सकता हूं। स्टूडेंट डॉट मार्क अटेंडेंस। चाहे मैं ये करूं, चाहे मैं ये ना करूं। पर जब तक मैं ये नहीं करूंगा। एक ऑब्जेक्ट क्रिएट नहीं करूंगा। मेरे जो ये यहां पे वेरिएबल्स थे नेम, एज, रोल नंबर ये तो असाइन ही नहीं होंगे। तो ये करना गलत हो जाएगा। राइट? तो मैं ये भी नहीं कर सकता। सेकंड रूल भी ऑब्वियस है। अब थर्ड रूल क्या कहता है? थर्ड रूल कहता है कि ये",
+      "source": "transcript_api",
+      "english_text": "Can't use edge. Cannot use roll number. I can only use college. This is loud. These three are not allowed. I have already told you the reason. Because mark attendance then I can call directly. Student dot mark attendance. Whether I do this, whether I don't do this. But until I do this. Will not create an object. My variables here, name, age, roll number, will not be assigned. Then it would be wrong to do this. Right? So I can't do this either. The second rule is also obvious. Now what does the third rule say? The third rule says that"
+    },
+    {
+      "start_time": 973.519,
+      "end_time": 1001.839,
+      "text": "जो हमारे स्टैटिक मेथड्स होते हैं इनके पास दिस का एक्सेस नहीं होता। डज़ नॉट हैव एक्सेस टू दिस कीवर्ड। दिस कीवर्ड याद है? हमने पढ़ा था लास्ट क्लास में। दिस कीवर्ड का एक्सेस नहीं होता किसी भी ऐसे मेथड को जो कि हमने स्टैटिक मार्क किया होगा। आई होप आपको ये भी लाइन बिल्कुल ऑब्वियसली समझ आ रही होगी। दिस क्या स्टोर करता है? दिस स्टोर करता है करंट ऑब्जेक्ट का रेफरेंस।",
+      "source": "transcript_api",
+      "english_text": "Our static methods do not have access to this. Does not have access to this keyword. Remember this keyword? We studied it in the last class. This keyword does not access any methods that we may have marked as static. I hope you are also understanding this line very obviously. What does this store? This stores a reference to the current object."
+    },
+    {
+      "start_time": 999.6,
+      "end_time": 1034.319,
+      "text": "पर अगर मैं स्टैटिक मेथड में उसको कॉल कर रहा हूं तो करंट ऑब्जेक्ट का तो मेरे पास एक्सेस ही नहीं है। है ना? तो ये जो मेरे पास मेथड है मार्क अटेंडेंस जो कि मैंने स्टैटिक मार्क किया हुआ है। इसके पास कोई करंट ऑब्जेक्ट का रेफरेंस नहीं है क्योंकि ये क्लास का वेरिएबल है। मैंने आपको बताया था ना ऊपर कि यहां पे मैंने मान लो मैंने मार्क अटेंडेंस बना रखा है। ये सबके लिए कॉमन है। इसके पास किसी एक स्पेसिफिक ऑब्जेक्ट का रेफरेंस नहीं हो सकता। तो इसके पास दिस का रेफरेंस नहीं हो सकता। ये दिस को यूज़ ही नहीं कर सकता। क्योंकि हमने अभी तक दिस को कैसे पढ़ा था? ये जो दिस कीवर्ड है वो स्टोर करता है करंट रेफरेंस",
+      "source": "transcript_api",
+      "english_text": "But if I am calling it in a static method then I do not have access to the current object. Isn't it? So this method that I have is mark attendance which I have marked as static. It does not have a reference to the current object because it is a class variable. I told you above that here I have maintained mark attendance. This is common for everyone. It cannot have a reference to any one specific object. So it cannot have a reference to this. He can't even use this. Because how did we read this till now? This keyword stores the current reference."
+    },
+    {
+      "start_time": 1031.6,
+      "end_time": 1066.0,
+      "text": "का करंट ऑब्जेक्ट का रेफरेंस। राइट? तो स्टैटिक मेथड्स के अंदर ये बिल्कुल इलॉजिकल चीज है कि मैं किसको स्टोर कर रहा हूं। मेरे पास तो एक्सेस ही नहीं है उसका। राइट? चलो आई होप आपको ये तीनों पॉइंटर समझ आ गए होंगे। तो यही सब है हमारा का पूरा स्टैटिक कीवर्ड्स कि मैं एक ऑब्जेक्ट को एक वेरिएबल को स्टैटिक बना सकता हूं। एक मेथड को स्टैटिक बना सकता हूं। मेथड को स्टैटिक बनाने के मेरे पास ये कुछ रूल्स थे। और स्टैटिक क्या करता है? सिर्फ किसी भी ऑब्जेक्ट वेरिएबल को या मेथड को क्लास स्पेसिफिक बना देता है और ऑब्जेक्ट स्पेसिफिक हटा देता है। ठीक है? और स्टैटिक मैं बनाता कैसे हूं वो आपको बता ही दिया था। मुझे बस एक कीवर्ड ऐड करना पड़ता है स्टैटिक और मेरा जो भी वेरिएबल",
+      "source": "transcript_api",
+      "english_text": "Reference to the current object. Right? So inside the static methods it is a completely logical thing as to what I am storing. I don't even have access to it. Right? Well, I hope you have understood these three pointers. So that's all of our static keywords that I can make a variable on an object static. Can make a method static. These were some rules I had for making the method static. And what does static do? Simply makes any object variable or method class specific and removes object specific. Ok? And I have already told you how I make static. I just have to add a keyword static and whatever my variable is"
+    },
+    {
+      "start_time": 1063.84,
+      "end_time": 1097.36,
+      "text": "था तो स्टैटिक स्ट्रिंग कॉलेज मैंने कॉलेज को स्टैटिक बनाना था तो मैंने कुछ इस तरह से कर दिया कुछ ऐसे है ना ओके बहुत बढ़िया अब मेरे पास एक और चीज होती है स्टैटिक ब्लॉक वो क्या होता है और इसको जैसे हमने अभी देखा वापस से इस सबको कोड में भी देख लेते हैं और स्टैटिक ब्लॉक भी वही समझते हैं तो देखो मैंने अगेन अपने डेमो थ्री एक फाइल बना रखी है और यहां पे हम क्या समझेंगे हम समझेंगे स्टैटिक कीवर्ड को स्टैटिक कीवर्ड्स को ठीक है तो तो सबसे पहले मैं क्या करता हूं? अपनी स्टूडेंट क्लास बनाता हूं दोबारा से। ठीक है? क्लास स्टूडेंट। और हमें पता था इसमें हमारे पास",
+      "source": "transcript_api",
+      "english_text": "So it was static string college, I wanted to make the college static, so I did something like this, it is something like this, okay, very good, now I have one more thing, static block, what is that and as we have just seen, let us look at all this again in the code and understand static block also the same, so look, again I have created a file in my demo three and what will we understand here, we will understand the static keyword, so first of all, okay. What do I do? I create my student class again. Ok? Class student. And we knew we had it in us"
+    },
+    {
+      "start_time": 1096.0,
+      "end_time": 1125.28,
+      "text": "क्या-क्या था? हमारे पास सबसे पहले होता था नेम। हमारे पास ऐज होती थी। हमारे पास ऐज होती थी। ओके? हमारे पास रोल नंबर होता था। और हमारे पास कॉलेज होता था। कुछ इस तरीके से। है ना? मैंने कहा कि मैं इस कॉलेज को स्टैटिक बना देता हूं। तो मैंने यहां पे ऐड कर दिया स्टैटिक कीवर्ड को। ठीक है? अब अभी इसको खाली छोड़ देते हैं। और चलो इसका कंस्ट्रक्टर भी बना देते हैं। स्टूडेंट ठीक है? जो क्या करता होगा? स्ट्रिंग नेम",
+      "source": "transcript_api",
+      "english_text": "What was it? We had a name first. We used to have edge. We used to have edge. Ok? We had roll numbers. And we had college. Something like this. Isn't it? I said I will make this college static. So I added the static keyword here. Ok? Now let's leave it blank. And let's also create its constructor. Is the student okay? What would Joe do? string name"
+    },
+    {
+      "start_time": 1123.28,
+      "end_time": 1149.28,
+      "text": "लेता होगा। अ ऐज लेता होगा, रोल नंबर लेता होगा। रोल नंबर लेता होगा और लेट्स से ये मैंने अलग-अलग लिख दिया। अच्छा क्या मैं यहां पे कॉलेज भी ले सकता हूं? ओके, देखते हैं मैं क्या कर रहा हूं। मैं कह रहा हूं कि मैं यहां पे लेता होगा स्ट्रिंग कॉलेज।",
+      "source": "transcript_api",
+      "english_text": "Must be taking. Must be taking age, roll number. He must have taken the roll number and I wrote it separately with letters. Well, can I take college here also? Okay, let's see what I'm doing. I'm saying that I would have taken string college here."
+    },
+    {
+      "start_time": 1146.799,
+      "end_time": 1179.36,
+      "text": "देखते हैं कि यह अलाउड है या नहीं। ठीक है? ओके? अलाउड है। हमें कोई एरर नहीं आया। राइट? तो मैं कर सकता हूं दिस डॉट अ नेम इक्वल टू जो भी यहां पे नेम आया होगा। दिस डॉट एज इक्वल टू एज दिस डॉट रोल नंबर इक्वल टू रोल नंबर। और फाइनली क्या मैं ऐसे कर सकता हूं? दिस डॉट कॉलेज इक्वल टू कॉलेज कर सकता हूं? नहीं कुछ तो वार्निंग आ रही है। द स्टैटिक फील्ड स्टूडेंट डॉट कॉलेज शुड बी एक्सेस्ड इन अ स्टैटिक वे।",
+      "source": "transcript_api",
+      "english_text": "Let's see if it is audible or not. Ok? Ok? Is loud. We did not get any error. Right? So I can do this dot a name equal to whatever name comes here. This dot as equal to as this dot roll number equal to roll number. And finally can I do this? Is this dot college equal to college? No, some warning is coming. The static field student.college should be accessed in a static way."
+    },
+    {
+      "start_time": 1177.2,
+      "end_time": 1206.559,
+      "text": "तो इस तरह से मैं नहीं कर सकता। तो या तो मैं लिख सकता हूं कॉलेज इक्वल टू कॉलेज। पर ये फिर गलत था। हमने लास्ट लेक्चर में पढ़ा था कि भ दिस असाइनमेंट टू वेरिएबल कॉलेज हैज़ नो इफेक्ट। क्योंकि ये इसी कॉलेज के अंदर इसी कॉलेज को डाल देगा। है ना? तो ये भी गलत है। तो मैं इसको यहां नहीं कर सकता या नहीं कर सकता। तो मैं यहां से इसको हटा देता हूं। ओके? हटा दिया। ठीक है? तो मैंने यहां पर सिर्फ नेम, एज, रोल नंबर लिए और उसको असाइन कर दिया। अब मैं इस कॉलेज को कहां असाइन करूं? एक चीज तो मैं ऐसी कर सकता हूं।",
+      "source": "transcript_api",
+      "english_text": "So this way I can't. So either I can write college equals to college. But again this was wrong. We had read in the last lecture that this assignment to variable college has no effect. Because it will put this college within this college. Isn't it? So this is also wrong. So I can't or won't do it here. So I remove it from here. Ok? Removed. Ok? So here I just took the name, age, roll number and assigned it to him. Now where do I assign this college? There is one thing I can do like this."
+    },
+    {
+      "start_time": 1204.799,
+      "end_time": 1231.679,
+      "text": "इसको मैं ऐसे ही छोड़ दूं। कॉलेज को मैं ऊपर खुद से असाइन कर दूंगा। यानी कि मैं क्या करूंगा? एक स्टूडेंट नाम का ऑब्जेक्ट बनाऊंगा। लेट्स से s1 = न्यू स्टूडेंट। और उसमें मैं तीन वैल्यूज़ दूंगा। लेट्स से आदित्य अ ऐज हो गई लेट्स से 28 और रोल नंबर हो गया 1001। कुछ इस तरीके से। और मैं एक और स्टूडेंट बना लेता हूं। लेट्स अह स्टूडेंट बना लेता हूं। S2 इक्वल टू न्यू यह हटा देते हैं। ऐसे ही है। हां।",
+      "source": "transcript_api",
+      "english_text": "I will leave it like this. I will assign the college above myself. That means what will I do? I will create an object named Student. Let s1 = new student. And in that I will give three values. Due to Lates, Aditya's age became 28 and roll number became 1001. Something like this. And I create another student. Let's make a student. S2 equal to new removes this. It is like that. Yes."
+    },
+    {
+      "start_time": 1229.44,
+      "end_time": 1263.44,
+      "text": "न्यू स्टूडेंट और यहां पे मैं लेट से वैल्यू दे देता हूं रोहित का। ओके। एज दे देते हैं लेट से 28 ही और रो अ हां। रोल नंबर दे देते हैं 102। कुछ ऐसे। ओके। यहां पे दो कॉमा आ गए थे। ओके। और ये भी हटा दो। हां जी। तो यहां पे मैंने दो वैल्यूज़ दिए S1 और S2। अब मैंने कहा था मैं एक काम करता हूं कॉलेज को कुछ ऐसे असाइन कर देता हूं कि स्टूडेंट डॉट कॉलेज = आईआईटी गुवाहाटी ये तो मैं कर ही सकता हूं। है ना? मैंने कहा था ना मैं इसको क्लास से एक्सेस कर सकता हूं। अब अगर मैं प्रिंट",
+      "source": "transcript_api",
+      "english_text": "New student and here I give late value to Rohit. Ok. They give the age 28 late and cry yes. Give roll number 102. Something like this. Ok. There were two commas here. Ok. And remove this also. Yes sir. So here I have given two values ​​S1 and S2. Now I had said that I do one thing, I assign it to the college in such a way that Student.college = IIT Guwahati, I can definitely do this. Isn't it? I told you I can access it from class. Now if I print"
+    },
+    {
+      "start_time": 1260.799,
+      "end_time": 1287.2,
+      "text": "करूं डिटेल्स को मैं लिखूं सिस्टम डॉट आउट डॉट प्रिंट एलn अपना प्रिंट एलन फंक्शन और मैं क्या करूं? S1 डॉट नेम प्रिंट करूं। फिर कॉमा और ऐसे सारे प्रिंट कर दूं। तो देखो मैंने यहां पे सारे प्रिंट किए। नेम, एज, रोल नंबर कॉलेज। कॉलेज पे एक वार्निंग आ रही है। द स्टैटिक फील्ड स्टूडेंट डॉट कॉलेज शुड बी एक्सेस्ड इन अ स्टैटिक वे कि भाई आप एक काम करो ना वैसे साइन करो। ये वार्निंग है। याद रखना ये रूल नहीं है।",
+      "source": "transcript_api",
+      "english_text": "Should I write the details system dot out dot print ln my print ln function and what should I do? Print S1 dot name. Then print commas and all such. So look, I printed everything here. Name, Age, Roll No. College. A warning is coming to the college. The static field student.college should be accessed in a static way that brother, you do one thing and sign it. This is a warning. Remember this is not a rule."
+    },
+    {
+      "start_time": 1285.44,
+      "end_time": 1319.36,
+      "text": "मैं ऐसे भी कर सकता हूं। सेम मुझे यहां पे भी वार्निंग आ रही थी। जब मैं यहां पे अ कॉलेज लेता था और दिस डॉट कॉलेज इक्वल टू कॉलेज साइन करता था। मेरे पास वार्निंग आती थी। ठीक है? तो मैं इसको ऐसा ऐसे भी असाइन कर सकता हूं। पर कोई नहीं। अभी इसको ऐसे ही रहने दे। वार्निंग को इग्नोर कर देते हैं। और मैं इन दोनों को प्रिंट कर देता हूं। यहां पे एक काम किया। मैंने S1 की डिटेल प्रिंट कर दी। यहां पे मैं S2 की डिटेल प्रिंट कर देता हूं। कुछ ऐसे तो पहले चार डिटेल S1 की होगी। फिर चार डिटेल S2 की होगी। तो देखते हैं डिटेल कैसे प्रिंट होती है हमारी।",
+      "source": "transcript_api",
+      "english_text": "I can do it like this too. I was getting the same warning here also. When I used to take a college here and sign this dot college is equal to college. I used to get warnings. Ok? So I can assign it like this also. But no one. Leave it like this for now. Ignore the warning. And I print both of these. Did a job here. I printed the details of S1. Here I print the details of S2. The first four details will be like this from S1. Then four details will be from S2. So let's see how our details are printed."
+    },
+    {
+      "start_time": 1317.44,
+      "end_time": 1350.64,
+      "text": "बिल्कुल सही तरीके से। है ना? दोनों की डिटेल्स प्रिंट हो गई। कॉलेज में आईआईटी गुवाहाटी दोनों में आ गया। तो मैं ये भी कर सकता था या फिर मैं डायरेक्टली स्टूडेंट भी लिख सकता था यहां पे। स्टूडेंट स्पेलिंग गलत हो गई। स्टूडेंट भी लिख सकता था। ठीक है? अब भी ये सही होता। देखो मेरे पास कोई वार्निंग नहीं आई। क्योंकि मेरा कंपाइलर भी चाहता है कि मैं हमेशा इसको ऐसे एक्सेस करूं। ठीक है? ओके। अब देखते हैं। देखो बिल्कुल सही चीज़ सही से प्रिंट हो गई। ओके? अब एक और चीज़ मैंने इसको अभी देखो बाहर डिक्लेअ किया क्योंकि मैं इसको अंदर नहीं करना चाहता था कंस्ट्रक्टर के क्योंकि दिस कीवर्ड मैं",
+      "source": "transcript_api",
+      "english_text": "In exactly the right way. Isn't it? Details of both were printed. In college I got admission in both IIT Guwahati. So I could do this also or I could directly write student here. Student got the spelling wrong. The student could also write. Ok? This would still be true. Look, I didn't get any warning. Because my compiler also wants me to always access it like this. Ok? Ok. Now let's see. Look, the exact thing got printed correctly. Ok? Now one more thing, I just declared this look outside because I didn't want to put it inside the constructor because this keyword."
+    },
+    {
+      "start_time": 1348.559,
+      "end_time": 1383.28,
+      "text": "यूज़ नहीं कर रहा था। तो मैं एक और चीज़ कर सकता हूं जिसका नाम होता है स्टैटिक ब्लॉक। स्टैटिक ब्लॉक कुछ नहीं होता। हम क्या करते हैं? हम अपना कीवर्ड लिखते हैं स्टैटिक और अपने कर्ली ब्रैकेट्स ऑन कर देते हैं। अब इस ब्लॉक के अंदर मैं जो भी लिखूंगा वो सब वैल्यू स्टैटिकली असाइन हो जाएगी। तो मैं यहां पे लिख सकता हूं मैं जो मेरा कॉलेज है उसको कर दो आईआईटी गुवाहाटी कुछ इस तरीके से। ठीक है? मैं ये कर सकता हूं। अब मुझे इस लाइन की कोई जरूरत नहीं है। अब मेरा अब भी आउटपुट सब कुछ सही से प्रिंट होगा। अगर आप देखना चाहो तो देख",
+      "source": "transcript_api",
+      "english_text": "Wasn't using. So I can do another thing called static block. Static block is nothing. What do we do? We write our keyword static and turn on our curly brackets. Now whatever I write inside this block, all those values ​​will be assigned statically. So I can write here that my college is IIT Guwahati in something like this. Ok? I can do this. Now I have no need for this line. Now my output will still print everything correctly. if you want to see then see"
+    },
+    {
+      "start_time": 1380.64,
+      "end_time": 1408.72,
+      "text": "सकते हो। ये देखो। ठीक है? तो स्टैटिक ब्लॉक जो मैंने यहां पे बनाया ये काम आता है हमारे स्टैटिक वेरिएबल्स को इनिशियलाइज करने के लिए। जैसे हमारा कंस्ट्रक्टर होता है नॉन स्टैटिक वेरिएबल्स के लिए वैसे हम स्टैटिक ब्लॉक को यूज़ करते हैं स्टैटिक वेरिएबल्स के लिए। अब अगर मैंने यहां पे एक और स्टैटिक वेरिएबल दिया होता तो मैं उसको भी इनिशलाइज़ कर पाता। इसी ब्लॉक के अंदर लेट्स से यहां पे एक और होता अगर अ लेट्स से स्टैटिक इंट ग्रेड कुछ ऐसा होता तो मैं उस ग्रेड को भी यहां पे लिख पाता।",
+      "source": "transcript_api",
+      "english_text": "Can. Look at this. Ok? So the static block that I created here is used to initialize our static variables. Just like our constructor is for non-static variables, similarly we use static block for static variables. Now if I had given another static variable here, I would have been able to initialize that too. Within the same block, there would have been another one from Lets here. If the static int grade from Lets was something like this, then I would have been able to write that grade here too."
+    },
+    {
+      "start_time": 1406.559,
+      "end_time": 1440.0,
+      "text": "लेट्स से ग्रेड इक्वल टू एट कुछ भी। ठीक है? रैंडम। ठीक है? तो मैं ऐसे भी कर पाता। तो स्टैटिक ब्लॉक काम आता है हमारी स्टैटिक चीजों को असाइन करने के लिए। जैसे मैंने यहां पे किया कॉलेज को और ग्रेड को। ठीक है? आई होप आपको ये समझ आ गया होगा ये स्टैटिक कीवर्ड किस काम का है? कैसे हम इसे यूज़ करते हैं? और एक स्टैटिक ब्लॉक क्या होता है? अब देखो बस एक चीज याद रखना। जैसे ही आपकी ये क्लास लोड होगी जितने भी ये जो स्टैटिक आपने वर्ड्स बना रखे होंगे। कॉलेज, ग्रेड और जो आपका ये स्टैटिक ब्लॉक होगा ये एक बार रन होगा। तो सबसे पहले जैसे ही आपकी क्लास लोड हुई",
+      "source": "transcript_api",
+      "english_text": "Let's grade equal to at least anything. Ok? Random. Ok? So I could do it like this also. So static block comes in handy to assign our static things. Like I did here with college and grades. Ok? I hope you have understood what is the use of this static keyword? How do we use it? And what is a static block? Now look, just remember one thing. As soon as your class is loaded, all the static words you have created will be deleted. College, grade and whatever your static block is, it will run once. So first of all as soon as your class is loaded"
+    },
+    {
+      "start_time": 1438.159,
+      "end_time": 1472.48,
+      "text": "सबसे पहले आपका स्टैटिक ब्लॉक रन हुआ। आपके सारे वेरिएबल्स असाइन हो गए। कॉलेज बी ग्रेड बी और इनफैक्ट मैं यहां पे भी लिख सकता हूं कॉलेज इक्वल टू आईआईटी गुवाहाटी यहां पे भी आईआईटी गुवाहाटी मैंने यहीं पे लिख दिया तो मुझे यहां पे लिखने की जरूरत नहीं है तो लेट्स से मैंने यहां पे हटा दिया और यहां पे सिर्फ ग्रेड लिख दिया ये भी अलाउड है तो इदर मैं यहीं पे असाइन कर दूं इदर मैं स्टैटिक ब्लॉक के अंदर असाइन करूं अब कंस्ट्रक्टर के अंदर वार्निंग आएगी पर वो भी कर सकता हूं नहीं तो मैं उसको बाहर भी असाइन कर सकता हूं मेरे पास बहुत सारे तरीके हैं पर याद रखना जैसे ही मेरी स्टूडेंट क्लास लोड होगी जैसे ही क्लास लोड होगी मेरे जो सारे स्टैटिक",
+      "source": "transcript_api",
+      "english_text": "First your static block is run. All your variables are assigned. College B Grade B and in fact I can write here also College is equal to IIT Guwahati here also IIT Guwahati I wrote it here so I don't need to write here so from Lets I removed it here and just wrote the grade here, this is also allowed, so here I assign it here, here I assign it inside the static block, now a warning will come inside the constructor but I can do that also otherwise. I can assign it outside also, I have many ways but remember as soon as my student class is loaded, as soon as the class is loaded, all my static"
+    },
+    {
+      "start_time": 1470.799,
+      "end_time": 1498.72,
+      "text": "ब्लॉक ब्लॉक है या फिर जितने भी स्टैटिक वेरिएबल्स हैं सब एक बार रन होंगे ऑब्जेक्ट बनने से भी पहले। तो ऑब्जेक्ट बनने से पहले ही मेरा ये सारा काम हो चुका होगा। उसके बाद मैं अपने ऑब्जेक्ट बनाऊंगा और बाकी सारी चीजें करूंगा। तो स्टैटिक ब्लॉक हमेशा पहले रन होता है। ठीक है? तो आई होप आपको सारी चीजें समझ आ गई होंगी। अब एक और चीज जो मुझे आपके साथ डिस्कस करनी है कि स्टैटिक हमारा क्या-क्या चीजें हो सकती थी? हमने देखा था वेरिएबल्स हो सकते हैं।",
+      "source": "transcript_api",
+      "english_text": "The block or all the static variables will be run once before the object is even created. So all this work would have been done even before the object was created. After that I will create my objects and do everything else. So the static block is always run first. Ok? So I hope you have understood everything. Now one more thing that I want to discuss with you is what could have been our static? We saw that there can be variables."
+    },
+    {
+      "start_time": 1495.84,
+      "end_time": 1525.6,
+      "text": "बिल्कुल हो सकते हैं। हमारे मेथड्स हो सकते हैं स्टैटिक्स? बिल्कुल हो सकते हैं। अच्छा मेरा अब आपसे क्वेश्चन है क्या किसी मेथड के पैराटर्स जो होते हैं पैराटर्स क्या वो स्टैटिक हो सकते हैं? पैरामीटर्स क्या होते हैं? जैसे मान लो अगर मेरा प्रिंट फंक्शन है तो वो कुछ पैराटर्स लेता होगा। तो लेट्स से उसने लिया यहां पे नेम स्ट्रिंग नेम तो मैं ऐसे लिखूंगा। तो क्या मैं इसको ऐसे लिख सकता हूं? स्टैटिक स्ट्रिंग नेम। क्या ये अलाउड है? सोचो।",
+      "source": "transcript_api",
+      "english_text": "Absolutely possible. Can our methods be statistics? Absolutely possible. Well, now I have a question for you, can the parameters of any method be static? What are the parameters? For example, if I have a print function, it must be taking some parameters. So from lets he took here name string name so I will write like this. So can I write it like this? Static string name. Is it loud? Think about it."
+    },
+    {
+      "start_time": 1524.159,
+      "end_time": 1551.2,
+      "text": "फर्स्ट थर्ड प्रिंसिपल लगाओ। क्या ये अलाउड है? आंसर है नहीं अलाउड है। अब क्यों नहीं अलाउड है? इसका क्या रीज़न होगा? अब इसका रीज़न बिल्कुल लॉजिकल है। मैंने आपको क्या कहा था? स्टैटिक सिर्फ हम उन चीजों को बनाते हैं जो एक ऑब्जेक्ट लेवल से हटा करके हम क्लास लेवल पे लाना चाहते हैं। पर ये जो हमारे पैराटर्स हैं ये तो वैसे भी लोकल वेरिएबल है। तो अगर हम एक प्रिंट फंक्शन लिखते हैं और उसमें यहां पे अगर हम एक लेट्स से नेम लेते हैं। ठीक है? तो और ये प्रिंट हमारा फंक्शन है।",
+      "source": "transcript_api",
+      "english_text": "Apply first third principle. Is it loud? The answer is no, it is allowed. Why is it not loud now? What would be the reason for this? Now its reason is absolutely logical. What did I tell you? We create static only those things which we want to remove from an object level and bring to the class level. But our parameters are local variables anyway. So if we write a print function and in it here if we take the name from a let. Ok? So and this print is our function."
+    },
+    {
+      "start_time": 1549.6,
+      "end_time": 1574.72,
+      "text": "इसके अंदर हम कुछ करते हैं। ठीक है? तो ये जो नेम जो वेरिएबल है एक लोकल वेरिएबल है। और ये तो स्टोर है हमारे स्टक के अंदर। हीप के अंदर तो है नहीं। तो जो वेरिएबल ऑलरेडी स्टक के अंदर स्टोर है एक लोकल वेरिएबल है उसका ऑब्जेक्ट से वैसे भी कोई लेना देना नहीं है। तो हम इसको स्टैटिक क्यों बनाएंगे? तो बिल्कुल नॉनसेंस है। राइट? तो इसलिए हमारे पैरामीटर स्टैटिक नहीं हो सकते क्योंकि ये लोकल वेरिएबल होता है। इनका एक्सेस तभी खत्म हो जाएगा जब इस फंक्शन का एक्सेस खत्म हो जाएगा।",
+      "source": "transcript_api",
+      "english_text": "We do something inside it. Ok? So this name variable is a local variable. And this is stored inside our stock. It is not inside the heap. So the variable that is stored inside AlreadyStuck is a local variable and has nothing to do with the object anyway. So why would we make it static? So this is complete nonsense. Right? So therefore our parameter cannot be static because it is a local variable. Their access will end only when access to this function ends."
+    },
+    {
+      "start_time": 1572.4,
+      "end_time": 1600.88,
+      "text": "राइट? ओके? बहुत बढ़िया। अब अगला क्वेश्चन। क्या हमारी पूरी की पूरी क्लास स्टैटिक हो सकती है? क्या मैं ऐसा लिख सकता हूं? स्टैटिक क्लास स्टूडेंट। क्या मैं ऐसा लिख सकता हूं? क्या यह अलाउड है? आंसर है? नहीं। एक पूरी की पूरी क्लास स्टैटिक नहीं हो सकती। एक रीजन से हो सकती है। अगर वो जो हमारी क्लास है वो इंटरनल क्लास है। इंटरनल मतलब नेस्टेड क्लास है। एक क्लास के अंदर दूसरी क्लास है। वो अभी तक हमने किया नहीं है।",
+      "source": "transcript_api",
+      "english_text": "Right? Ok? very nice. Now next question. Can our entire class be static? Can I write like this? Static class student. Can I write like this? Is it loud? Is there an answer? No. An entire class cannot be static. Could be from one region. If our class is an internal class. Internal means nested class. There is another class inside one class. We haven't done that yet."
+    },
+    {
+      "start_time": 1599.44,
+      "end_time": 1626.159,
+      "text": "वो हम बाद में देखेंगे। नेस्टेड क्लास कैसे बनाते हैं और क्यों बनाते हैं? पर अभी आप मान लो अगर आपकी क्लास नेस्टेड है तो तो वो स्टैटिक हो सकती है। पर अगर आपकी रूट लेवल पे क्लास बनी है तो वो कभी स्टैटिक नहीं हो सकती। क्यों नहीं हो सकती? रीजन सिंपल है क्योंकि ये जो क्लास है ना ये एक पैकेज का पार्ट होती है। एक क्लास। ठीक है? क्लास का ऑब्जेक्ट से वैसे भी कोई लेना देना नहीं होता। अब पैकेज क्या होता है वो भी अभी तक हमने नहीं पढ़ा। वो भी हम बाद में देखेंगे। पर आप बस अभी याद रख लो।",
+      "source": "transcript_api",
+      "english_text": "We will see that later. How to create nested classes and why? But for now, assume that if your class is nested then it can be static. But if your class is created at the root level then it can never be static. Why can't it happen? The reason is simple because this class is part of a package. A class. Ok? Class has nothing to do with object anyway. Now we have not yet read what the package is. We will see that also later. But you just remember now."
+    },
+    {
+      "start_time": 1624.32,
+      "end_time": 1658.72,
+      "text": "एक रूट लेवल की क्लास स्टैटिक नहीं हो सकती। पर एक नेस्टेड क्लास स्टैटिक हो सकती है। तो ये अलाउड नहीं है। ठीक है? तो यही था पूरा का पूरा स्टैटिक कीवर्ड्स के बारे में। आई होप आपके सारे डाउट्स यहां पे क्लियर हुए होंगे। अब हम मूव करते हैं अपने अगले कीवर्ड की तरफ जो कि है फाइनल। अब मान लो मैं आपको एक एग्जांपल लेता हूं एक क्लास का। लेट्स से हमने क्लास बनाई रैंडम। अभी इसको मैं नाम दे रहा हूं रैंडम। ठीक है? और इसके अंदर एक वेरिएबल है। ठीक है? और उस वेरिएबल का नाम है लेट्स से पाई। और ये हमारा मैथमेटिकल पाई है जिसकी वैल्यू होती है 3.14। अब",
+      "source": "transcript_api",
+      "english_text": "A root level class cannot be static. But a nested class can be static. So this is not loud. Ok? So this was all about static keywords. I hope all your doubts have been cleared here. Now we move to our next keyword which is final. Now suppose I take you an example of a class. From Lets we created the class Random. Right now I am naming it Random. Ok? And there is a variable inside it. Ok? And the name of that variable is let's say pi. And this is our mathematical pi whose value is 3.14. now"
+    },
+    {
+      "start_time": 1657.039,
+      "end_time": 1690.32,
+      "text": "ऑब्वियसली इसको मैं इंटीजर नहीं कर सकता क्योंकि यहां पे डेसिमल में वैल्यू है। तो मैं इसको कर देता हूं लेट्स से डबल। तो मेरी एक वैल्यू है डबल पाई जिसकी वैल्यू है 3.14। ठीक है? अब इसको मैं यहां तो असाइन करता नहीं हूं। मैं यहां पे डबल पाई लिख देता हूं। है ना? फिर या तो मैं इसको कंस्ट्रक्टर के थ्रू एक्सेस करता हूं कि मैं रैंडम एक डबल लेता होगा। लेट्स से पाई और उसको असाइन करता होगा। यहां पे यहां पे मैं क्या लिखताऊंगा? दिस डॉट पाई = π और कोई बाहर से मेन मेथड से मुझे इस पाई की वैल्यू देता होगा। पर आपको नहीं लगता इस पाई की तो ऑलरेडी एक फिक्स्ड वैल्यू होती",
+      "source": "transcript_api",
+      "english_text": "Obviously I can't integerize this because the value here is in decimal. So I double it with lets. So one of my values ​​is double pi whose value is 3.14. Ok? Now I don't assign it here. I write double pie here. Isn't it? Then either I access it through the constructor or I take a random double. Got it from Letts and would be assigning it. What will I write here? This dot Pi = π and someone from outside must be giving me the value of this Pi through the main method. But don't you think that this pie would already have a fixed value?"
+    },
+    {
+      "start_time": 1687.52,
+      "end_time": 1720.799,
+      "text": "है। है ना? 3.14 है ना? तो मैं क्यों चाहूंगा कि कोई बाहर से इसको वैल्यू दे और हो सकता है वो गलत दे दे। और ना ही मैं चाहूंगा वो कंस्ट्रक्टर से एसोसिएट हो। तो उस केस में मैं क्या करता हूं? मैं कीवर्ड लगाता हूं फाइनल अपने डेटा टाइप के आगे डबल और फिर वैल्यू देता हूं पाई की और यहीं पे उसको डिफाइन कर देता हूं 3.14 सॉरी ये अपने उसमें नहीं आएंगे ये सीधा आ जाएंगे 3.14 कुछ इस तरीके से ठीक है मैं ऐसे करता हूं",
+      "source": "transcript_api",
+      "english_text": "Is. Isn't it? 3.14 right? So why would I want someone from outside to give it a value and it may be wrong. Nor would I want him to be associated with the constructor. So what do I do in that case? I put the keyword final in front of my data type, double and then give the value of pi and define it here. 3.14 Sorry, these will not come in it, they will come directly. 3.14 Something like this is fine, I do it like this."
+    },
+    {
+      "start_time": 1717.12,
+      "end_time": 1750.88,
+      "text": "तो फाइनल डबल पाई = 3.14 ये फाइनल कीवर्ड कहता है कि ये जो पाई की वैल्यू है ना अब ये परमानेंटली कांस्टेंट हो गई है ये फिक्स्ड हो गई है लॉक हो गई है अब इस पाई की वैल्यू को कोई चेंज नहीं कर सकता। कल को कोई क्वाड में ऐसा नहीं लिख सकता कि रैंडम का मान लो ऑब्जेक्ट है R1 तो R1. पाई = 3.16 कर दिया। कुछ ये कर ही नहीं सकता। क्योंकि जो पाई है वो है फाइनल। फाइनल का मतलब फिक्स्ड कांस्टेंट। तो हम इनको दूसरी भाषा में क्या बोलते हैं? हम इनको बोलते हैं कांस्टेंट्स। ठीक है? अब जैसे हमारे वेरिएबल्स होते हैं जो चेंज हो",
+      "source": "transcript_api",
+      "english_text": "So Final Double Pi = 3.14 This final keyword says that this value of Pi has now become permanently constant, it has become fixed, it has been locked, now no one can change the value of this Pi. No one can write in Quad in such a way that if the random object is R1 then R1. Pi = 3.16. Can't do anything. Because what has been found is final. Final means fixed constant. So what do we call these in other languages? We call these constants. Ok? Now like we have variables that change"
+    },
+    {
+      "start_time": 1748.88,
+      "end_time": 1782.32,
+      "text": "सकते हैं। है ना? ये हमारे कांस्टेंट्स हैं जो हमारे सदैव सेम रहेंगे पूरे के पूरे कोड में। क्योंकि एक बार हमने इनके आगे फाइनल कीवर्ड लगा दिया। ठीक है? अब एक और नेमिंग कन्वेंशन याद रखना कि जब भी हम किसी के आगे फाइनल लगाते हैं वो कांस्टेंट बन जाता है। तो उसके सारे लेटर्स अपर केस होते हैं। तो अगर हमने पाई पहले ऐसे लिखा था अब हम इसको चेंज करके पी आई कैपिटल कर देंगे। ये नोमेनक्लेचर है। नेमिंग कन्वेंशन है। जैसे हमने वेरिएबल्स का नाम रखा था। अब अगर वो उसमें दो वर्ड्स आते होंगे तो अब मान लो हमारे वेरिएबल का नाम है पाई वैल्यू। तो हम उसको ऐसे स्टोर",
+      "source": "transcript_api",
+      "english_text": "Can. Isn't it? These are our constants which will always remain the same throughout our code. Because once we put final keyword in front of them. Ok? Now remember another naming convention that whenever we prefix something with a final, it becomes a constant. So all its letters are upper case. So if we had written Pi like this earlier, now we will change it to Pi capital. This is nomenclature. There is a naming convention. Like we named the variables. Now if those two words are there then suppose the name of our variable is Pi Value. So we store it like this"
+    },
+    {
+      "start_time": 1779.2,
+      "end_time": 1812.159,
+      "text": "करेंगे। पाई अंडरस्कोर वैल्यू कुछ इस तरीके से। ये हमारा नोमेनक्लेचर है। ठीक है? तो अगर हमारे मल्टीपल वर्ड्स हैं हम उनको सेपरेटर यूज करेंगे अंडरस्कोर्स तीन होंगे अगेन एक अंडरस्कोर फिर सब कुछ कैपिटल फिर अगेन एक अंडरस्कोर सब कुछ कैपिटल कुछ इस तरीके से हम नाम देते हैं और जो भी उसकी वैल्यू होगी लेट्स से 3.14 कुछ इस तरीके से उसकी वैल्यू देते हैं। ठीक है? तो आई होप आपको समझ आ गया होगा फाइनल का यूज़ क्या होता है? फाइनल हम लगाते हैं किसी भी वेरिएबल को एक कांस्टेंट बनाने के लिए और ये वेरिएबल अब फिक्स हो गया। अब इसका कोई दोबारा चेंज नहीं कर सकता। अब यहां पे इसका एक और चीज",
+      "source": "transcript_api",
+      "english_text": "Will do. Pi underscore value something like this. This is our nomenclature. Ok? So if we have multiple words, we will use them as separator, there will be three underscores, again one underscore, then everything is capital, then again one underscore, everything is capital, we name it in this way and whatever is its value, let's give its value in this way. Ok? So I hope you have understood what is the use of final? We apply final to any variable to make it a constant and this variable is now fixed. Now no one can change it again. Now here's one more thing"
+    },
+    {
+      "start_time": 1810.08,
+      "end_time": 1843.52,
+      "text": "याद रखना। अगर इसको कोई चेंज नहीं कर सकता तो आप इसका डिक्लेरेशन और डेफिनेशन अलग-अलग लाइन में नहीं लिख सकते। क्या मतलब? आप ऐसे नहीं लिख सकते कि आप पहले लिखो फाइनल डबल पाई आपने बस डिक्लेअर कर दिया और अगली लाइन में पाई = 3.14 आप कर रहे हो। ये अलाउड ही नहीं होगा। क्यों नहीं होगा? क्योंकि जैसे ही आपने इसको डिक्लेयर करा, अब यह फिक्स हो गया। अब इसके अंदर तो वैल्यू जा ही नहीं सकती। तो, जावा इसको अलाउ ही नहीं करेगा। जावा कहेगा, \"नहीं। आप इसको यहीं पे ही डिफ़ाइन करो। यहीं पे इसकी मुझे कोई वैल्यू बताओ।\"",
+      "source": "transcript_api",
+      "english_text": "Remember. If no one can change it then you cannot write its declaration and definition in separate lines. What do you mean? You can't write like this, first write final double pi, you just declare it and in the next line you are doing pi = 3.14. This will not be allowed. Why wouldn't it happen? Because as soon as you declare it, it is now fixed. Now value cannot go inside it. So, Java will not allow it. Java will say, \"No. You just define it here. Give me a value for it right here.\""
+    },
+    {
+      "start_time": 1840.64,
+      "end_time": 1875.12,
+      "text": "ठीक है? ओके। अब अगर आपको ये समझ आ गया तो अगेन कुछ कांस्टेंट बातें करनी है कि जो हमारा फाइनल कीवर्ड है क्या हम वो एक वेरिएबल के आगे लगा सकते हैं? बिल्कुल लगा सकते हैं। अभी हमने देखा क्या वो हम एक मेथड के आगे लगा सकते हैं? आंसर है लगा सकते हैं। पर उसका मतलब थोड़ा सा अलग हो जाएगा। ये हम तब पढ़ेंगे जब हम ऊप्स के अंदर और अंदर तक जाएंगे जब हम उसमें पॉलीमॉर्फिज्म, इन्हहेरिटेंस ये सब पढ़ रहे होंगे। तब हमें ज्यादा समझ आएगा कि मेथड के अंदर फाइनल लगाने का क्या मतलब होता है। ठीक है? फाइनल के मल्टीपल मतलब निकलते हैं। डिपेंडिंग अपॉन आपने उसे कहां लगाया? अगर आपने उसे वेरिएबल के आगे लगाया",
+      "source": "transcript_api",
+      "english_text": "ok? Ok. Now if you have understood this, then again we have to talk about some constant things that can we put our final keyword in front of a variable? Can absolutely be used. Now we saw whether we can put it in front of a method? The answer is can be put. But its meaning will be slightly different. We will study this when we go deeper into Oops when we study polymorphism, inheritance, all this. Then we will understand more what it means to put final inside the method. Ok? Final has multiple meanings. Depending upon where you planted it? If you put it in front of the variable"
+    },
+    {
+      "start_time": 1873.52,
+      "end_time": 1904.96,
+      "text": "है तो वो उसको कांस्टेंट बना देगा। यानी कि उसकी वैल्यू आप चेंज नहीं कर सकते। अगर आपने उसको एक मेथड के आगे लगाया है तो उसका कोई और मतलब होगा। अब अगर आपने उसे एक क्लास के आगे लगाया है तो भी उसका कोई और मतलब होगा और वो भी आप लगा सकते हो। वो भी हम बाद में देखेंगे। इनफैक्ट जो मैंने बात की थी ना पैराटर्स की जो एक मेथड के पैराटर्स होते हैं उनको भी आप फाइनल बना सकते हो। क्योंकि है तो वो भी एक वेरिएबल। अगर आपने मेथड पैराटर्स को फाइनल बना लिया तो आप उन लोकल वेरिएबल्स को भी चेंज नहीं कर पाओगे। तो अगर मान लो एक फंक्शन है",
+      "source": "transcript_api",
+      "english_text": "If it is then it will make it constant. That means you cannot change its value. If you put it before a method then it will have some other meaning. Now even if you have put it in front of a class, it will have some other meaning and you can put that also. We will see that also later. In fact, as I talked about, you can also make the parameters of a method final. Because it is also a variable. If you make method parameters final then you will not be able to change those local variables also. So if let's say is a function"
+    },
+    {
+      "start_time": 1902.32,
+      "end_time": 1935.919,
+      "text": "प्रिंट और वो एक स्ट्रिंग लेता है नेम तो अगर मैंने लिख दिया फाइनल स्ट्रिंग नेम तो इसको जो भी नेम वैल्यू मिलेगी ऊपर से जो भी इसे कॉल करेगा वो आप बीच में कहीं चेंज नहीं कर पाओगे। तो आप ये भी अलाउ है। ये भी आप कर सकते हो। ठीक है? तो इसको आप हर जगह लगा सकते हो। चाहे वेरिएबल के आगे, मेथड के आगे, क्लास के आगे, पैरामीटर्स के आगे। पर सबका यूज़ अलग-अलग है। वेरिएबल और पैराटर्स का तो सेम है कि वो कांस्टेंट बन जाएंगे। मेथड का तब हम समझेंगे जब हम पॉलीमॉर्फिज्म समझेंगे। और क्लास भी तब हम समझेंगे जब हम इन्हहेरिटेंस को समझेंगे जो",
+      "source": "transcript_api",
+      "english_text": "Print and it takes a string name, so if I have written the final string name, then whatever name value it will get, whoever calls it from above, you will not be able to change it anywhere in between. So you are also allowed this. You can do this also. Ok? So you can apply it everywhere. Be it before the variable, before the method, before the class, before the parameters. But everyone's use is different. Variables and parameters have the same meaning that they will become constants. We will understand the method when we understand polymorphism. And we will understand class also when we understand inheritance which"
+    },
+    {
+      "start_time": 1933.519,
+      "end_time": 1967.039,
+      "text": "कि आगे आएगा। राइट? अब इसे फटाफट हम एक बार कोड में देख लेते हैं। तो देखो यहां पे मैंने अगेन अपना खाली प्रोजेक्ट बना रखा है। मैं क्या करता हूं? एक और क्लास बनाता हूं अपनी रैंडम। ठीक है? और इसमें लेट्स से एक फाइनल कीवर्ड लगाता हूं। फाइनल अ डबल और पाई। और यहीं पे इसकी वैल्यू कर देता हूं 3.14 कुछ ऐसे। तो देखो ये अलाउड है। अब मैं जब इस रेंडम का ऑब्जेक्ट बनाऊंगा रेंडम R1 इक्वल टू न्यू रैंडम। अब अगर आप बताओ क्या होगा? जब मैं प्रिंट करूंगा सिस्टम डॉट आउट डॉट प्रिंट",
+      "source": "transcript_api",
+      "english_text": "That will come forward. Right? Now let's take a quick look at it in the code. So look here again I have created my empty project. What do I do? I create another class, my random. Ok? And I put a final keyword in it from lets. Final a double and pie. And here I make its value 3.14 something like this. So see this is loud. Now when I create an object of this random, random R1 equal to new random. Now if you tell me what will happen? When I print system dot out dot print"
+    },
+    {
+      "start_time": 1964.24,
+      "end_time": 1999.2,
+      "text": "एलn और मैं यहां पे लिखूंगा R1 डॉट पाई। तो मेरा ऑब्वियसली प्रिंट हो जाना चाहिए 3.14 बिल्कुल। अब क्या मैं कभी ऐसा कर सकता हूं कि R1. = 3.16 ऐसा कर सकता हूं? नहीं देखो एरर आ जाएगा। एरर क्या आएगा? दब फाइनल फील्ड रैंडम डॉट पाई कैन नॉट बी असाइन। तो आप इसको रीअसाइन नहीं कर सकते। बहुत बढ़िया। अच्छा। अब देखो क्या मैं इसको ऐसे कर सकता हूं कि यहां पे मैंने सिर्फ पाई डिक्लेअर कर दिया और मैंने कहा रैंडम में मैं उसको असाइन कर दूंगा हमारे कंस्ट्रक्टर के अंदर। तो मैं यहां पे लिख दूंगा दिस डॉट पाई = 3.14।",
+      "source": "transcript_api",
+      "english_text": "L n and I'll write here R1 dot pi. So my obviously print should be 3.14 exactly. Now can I ever do that in R1. = 3.16 Can I do this? Don't look, an error will occur. What error will come? Dab final field random dot pi cannot be assigned. So you can't reassign it. very nice. Good. Now see if I can do it like this, here I just declared pi and I said random, I will assign it inside our constructor. So I will write here this dot pi = 3.14."
+    },
+    {
+      "start_time": 1997.6,
+      "end_time": 2030.0,
+      "text": "क्या मैं ऐसे कर सकता हूं? देखो मुझे कोई एरर नहीं आया। मैं ऐसे कर अगर इसको प्रिंट करने की कोशिश करूं तो भी मेरा प्रिंट हो जाएगा। यानी कि अगर क्लास के अंदर आपने एक फाइनल कीवर्ड को लिखा है तो उसको आप तो कंस्ट्रक्टर तक रुक सकते हो। मतलब यहां पे मैंने इसको इनिशलाइज़ कर दिया। ठीक है? डिफाइन मैंने कंस्ट्रक्टर के अंदर किया। ये यहां पे तो अलाउड है। क्यों कर सकते हो आप ऐसा? क्योंकि आपको पता ही है जैसे ही मैं ये लाइन लिखूंगा न्यू रैंडम सबसे पहले जैसे ही मैंने कीवर्ड लिखा न्यू तभी तो ये एक ऑब्जेक्ट बनेगा। और जब तक ये ऑब्जेक्ट नहीं बनेगा इसकी वैल्यूज़ ही नहीं बनेंगी जो इसके वेरिएबल्स हैं। तो जैसे ही ऑब्जेक्ट बना इसके वेरिएबल्स बने तब ये हमारा कंस्ट्रक्टर कॉल हो गया उसी टाइम।",
+      "source": "transcript_api",
+      "english_text": "Can I do it like this? Look, I didn't get any error. Even if I try to print it like this, it will still be printed. That means, if you have written a final keyword inside the class, then you can stop it till the constructor. Meaning here I initialized it. Ok? Defined I did inside the constructor. It is loud here. Why can you do this? Because you know as soon as I write this line New Random, first of all as soon as I write the keyword New, only then it will become an object. And until this object is created, its values ​​which are its variables will not be created. So as soon as the object is created and its variables are created, our constructor is called at that very moment."
+    },
+    {
+      "start_time": 2028.24,
+      "end_time": 2058.32,
+      "text": "और जैसे ही कंस्ट्रक्टर कॉल हुआ उसने पाई की वैल्यू को एक असाइन करके दे दिया। तो ये अलाउड है। अब अगेन इसकी वैल्यू अभी भी मैं चेंज नहीं कर सकता। पर कंस्ट्रक्टर में एक बार असाइन कर सकता हूं। ठीक है? पर अगर मान लो सीधा मेन फंक्शन में मैं कोई फाइनल वेरिएबल बनाता फाइनल इंट x = 4 कुछ मैं ऐसे लिखता। ठीक है? तो ये भी अलाउड है। तो अगर अब मैं सिस्टम डॉट आउट डॉट प्रिंट लेन सॉरी यहां पे करूं x तो मेरा फोर प्रिंट हो जाना चाहिए अगली लाइन में।",
+      "source": "transcript_api",
+      "english_text": "And as soon as the constructor is called, it assigns the value of Pi as one. So this is loud. Now again I still cannot change its value. But I can assign it once in the constructor. Ok? But suppose I create a final variable directly in the main function, final int x = 4, I would write something like this. Ok? So this is also loud. So if now I do system dot out dot print lane sorry here x then my four should be printed on the next line."
+    },
+    {
+      "start_time": 2056.159,
+      "end_time": 2089.679,
+      "text": "देख लेते हैं एक बार। बिल्कुल हो गया। पर देखो क्या मैं ऐसे कर सकता हूं कि पहले मैंने इंट x डिक्लअर किया। फिर x = 4 असाइन कर दिया। देखो मैं ये भी कर सकता हूं। पर मैंने तो अभी आपको कहा था मैं ऐसा नहीं कर सकता। अगर मैं इसको रन करूं तो भी आंसर प्रिंट हो जाएगा। फोर। बिल्कुल सही। क्योंकि जावा क्या करता है ना थोड़ी सी एक ऑप्टिमाइजेशन करता है कि उसको पता है आपने एक बार डिक्लअ किया तो एक बार तो आप असाइन करोगे ही। तो वो एक बार तो आपको अलाउ कर देता है। तो जावा क्या कहता है कि वैसे तो ये पॉसिबल नहीं है कि आपने एक बार x को डिक्लअर किया फिर डिफाइन किया क्योंकि आप इसकी वैल्यू को एक तरह से चेंज नहीं कर सकते। है ना? पर जावा समझता है कि आप चेंज नहीं कर रहे। आप पहली बार तो असाइन ही",
+      "source": "transcript_api",
+      "english_text": "Let's see once. It's absolutely done. But see if I can do it like this, first I declared int x. Then assigned x = 4. Look, I can do this too. But I just told you I can't do that. Even if I run it the answer will be printed. Four. Correct. Because what Java does is it does a little bit of optimization that it knows that once you declare it, you will assign it once. So he allows you at least once. So what Java says is that it is not possible that once you declare x and then define it because you cannot change its value in any way. Isn't it? But Java understands that you are not changing. You are assigned for the first time."
+    },
+    {
+      "start_time": 2087.52,
+      "end_time": 2121.119,
+      "text": "करोगे। तो ये तो आपको करने देगा। पर अगली बार अगर मैं इसको फाइव करने की कोशिश करूंगा तो मेरे पास एरर आ जाएगा। और एरर क्या कहता है? द फाइनल लोकल वेरिएबल x मे ऑलरेडी हैव बीन असाइंड। तो एक ही बार आप इसको चेंज कर सकते हो या चेंज नहीं कहना चाहिए उसको। एक ही बार आप इसमें वैल्यू डाल सकते हो। बार-बार नहीं। ठीक है? तो थ्योरेटिकली दिस शुड नॉट बी अलाउड। ठीक है? क्यों? क्योंकि आप एक तरह से दूसरी और उसमें एक नई वैल्यू डाल रहे हो। लेकिन प्रैक्टिकली जावा इसको अलाउ करता है। वो कहता है एक बार आप डाल दो और अगली बार से मैं इसको कोई चेंज नहीं करने दूंगा। ठीक है? तो आई होप आपको ये सारी चीजें समझ आ गई होंगी। अब मेरा आपसे एक और इंटरेस्टिंग",
+      "source": "transcript_api",
+      "english_text": "Will do. So this will let you do it. But next time if I try to five it, I will get an error. And what does the error say? The final local variable x may already have been assigned. So you can change it only once or it should not be called change. You can enter value in it only once. Not again and again. Ok? So theoretically this should not be allowed. Ok? Why? Because in one way you are adding a new value to it. But practically Java allows it. He says you put it once and from next time I will not allow any change in it. Ok? So I hope you have understood all these things. Now I have another interest in you"
+    },
+    {
+      "start_time": 2119.28,
+      "end_time": 2147.839,
+      "text": "क्वेश्चन है कि अभी तक ना हमने जो इसका बोईलर प्लेट कोड लिखते थे अब तक हम ना उसकी ऑलमोस्ट सारी चीजें समझ गए हैं कि हमें क्लास क्यों बनाते हैं? आपको पता है हर चीज डावा में क्लास के अंदर होनी चाहिए। तो हम एक क्लास बनाते हैं खुद की। जैसे यहां पे डेमो फोर है उसके अंदर हमारा मेन फंक्शन होता है। अब उस मेन मेथड के बारे में भी हम बहुत कुछ समझ चुके हैं कि हमारा वॉइड क्या होता है? रिटर्न टाइप होता है। स्ट्रिंग आर्गुमेंट्स हमारी कुछ पैराटर्स होते हैं जो अभी अभी तक हमने लिए नहीं है। पर आप मान लो कुछ पैरामीटर्स वो एक्सपेक्ट करता है। अब स्टैटिक क्या होता है? ये हमने इस लेक्चर में देख लिया।",
+      "source": "transcript_api",
+      "english_text": "The question is that till now we, who used to write its boiler plate code, have not understood almost everything about it, why do they make us a class? You know everything should be inside class in Dava. So we create a class of our own. Like here we have demo four, our main function is inside it. Now we have understood a lot about that main method, what is our void? Has a return type. String arguments are some of our parameters which we have not taken yet. But let us assume that he expects some parameters. Now what is static? We saw this in this lecture."
+    },
+    {
+      "start_time": 2145.76,
+      "end_time": 2171.76,
+      "text": "स्टैटिक वॉइड मेन मतलब हम कहते हैं कि ये जो मेथड है ये मेथड क्लास स्पेसिफिक है ना कि ऑब्जेक्ट स्पेसिफिक। अच्छा इसकी जरूरत हमें क्यों पड़ी? क्यों? हमारा जो जावा में इसको थोड़ा मैं कमेंट करके लिखता हूं। व्हाई इन जावा हमारा जो मेन मेथड है वो स्टैटिक है। ठीक है? तो यहां पे क्वेश्चन पूछते हैं। व्हाई मेन इज़ स्टैटिक? इन जावा? इसका आंसर ये है कि आप सोचो अगर मेन स्टैटिक नहीं होगा।",
+      "source": "transcript_api",
+      "english_text": "Static void main means we say that this method is class specific and not object specific. Well why did we need this? Why? Ours which I write by commenting a little in Java. Why in Java our main method is static. Ok? So let's ask questions here. Why Men Are Static? in java? The answer to this is that you should think if the main will not be static."
+    },
+    {
+      "start_time": 2170.0,
+      "end_time": 2204.88,
+      "text": "मैंने क्या कहा था कि जावा क्या करता है? सीधा मेन फंक्शन के कोड को एग्जीक्यूट करता है। अगर मेन स्टैटिक नहीं होता तो जावा को या इंटरनली जेवीएम को मेन का एक ऑब्जेक्ट बनाना पड़ता और उस ऑब्जेक्ट से डॉट मेन कॉल करना पड़ता। है ना? तो जावा जेवीएम इंटरनली कुछ ऐसा करता कि हमारे इस डेमो फोर का ऑब्जेक्ट बनाता। डेमो फोर लेट्स से अ d1 = न्यू डेमो फोर। कुछ ऐसे करता पहले वो थ्री नहीं फोर। हां। और फिर अगली लाइन में वो क्या करता? D1 डॉट मेन ऐसे कॉल करता पर क्योंकि वो खुद से ऑब्जेक्ट क्रिएट नहीं",
+      "source": "transcript_api",
+      "english_text": "What did I say that Java does? Directly executes the code of the main function. If main was not static then Java or internally JVM would have to create an object of main and call dot main from that object. Isn't it? So Java JVM does something internally that creates the object of our demo four. Demo Four Let's say d1 = New Demo Four. He would have done something like this, not three but four. Yes. And then what does he do in the next line? D1 dot main calls like this because it does not create the object by itself."
+    },
+    {
+      "start_time": 2203.04,
+      "end_time": 2237.28,
+      "text": "कर सकता। ऑब्जेक्ट तो हम क्रिएट करेंगे। है ना? वो खुद से ऑब्जेक्ट क्रिएट नहीं कर सकता। तो उसने उसको क्या किया? उसने उसको एक स्टैटिक बना दिया। अब अगर क्योंकि उसने उसको एक स्टैटिक बना दिया। अब जेवीएम को कोई ऑब्जेक्ट बनाने की जरूरत नहीं है। जेवीएम डायरेक्टली लिख सकता है डेमो 4 डॉट मेन। जैसे ही जेवीएम ये लिखेगा जैसे ही डेमो डॉट 4 में जैसे ही जेवीएम ने लिखा है डेमो 4 डॉट मेन हमारा मेन फंक्शन एग्जीक्यूट होना स्टार्ट हो जाएगा। तो यही रीजन है कि हमारा जो मेन फंक्शन होता है वो स्टैटिक होता है। ठीक है? अब आपको ये भी समझ आ गया होगा। क्यों मैंने कहा था कि",
+      "source": "transcript_api",
+      "english_text": "Can do. We will create the object. Isn't it? He cannot create objects by himself. So what did he do to her? He made it a static. Now if because he made her a static. Now JVM does not need to create any object. JVM can write directly demo4.main. As soon as JVM writes demo.4, as soon as JVM writes demo.4.main, our main function will start executing. So this is the reason why our main function is static. Ok? Now you must have understood this also. why did i say that"
+    },
+    {
+      "start_time": 2235.04,
+      "end_time": 2269.92,
+      "text": "इस क्लास के अंदर हम जो भी मेथड्स लिखेंगे उसको भी स्टैटिक करना पड़ेगा। क्यों? क्योंकि वो मेथड्स हम कॉल करते होते थे मेन के अंदर से। तो अगर मान लो यहां पे मैंने लिखा स्टैटिक वर्ड प्रिंट। तो ये जो मेथड है प्रिंट इसे हम कॉल कहां करेंगे? मेन के अंदर। और मेन क्योंकि खुद स्टैटिक है तो वो एक स्टैटिक वेरिएबल स्टैटिक मेथड ही तो कॉल कर सकता है। अगर ये स्टैटिक नहीं होता तो ये इसे कॉल ही नहीं कर पाता। अगर मैं यहां पे लिखता प्रिंट तो मेरे पास एक एरर आता और एरर क्या आता? कैन नॉट मेक अ स्टैटिक रेफरेंस टू दी नॉन स्टैटिक मेथड। तो मुझे इसे स्टैटिक बनाना ही पड़ता। इसीलिए मैंने",
+      "source": "transcript_api",
+      "english_text": "Whatever methods we write inside this class will also have to be made static. Why? Because we used to call those methods from inside main. So if suppose here I wrote static word print. So where will we call this method print? Inside the main. And since main itself is static, it can call only a static method of a static variable. If it was not static then it would not have been able to call it. If I had written print here, I would have got an error and what would be the error? Cannot make a static reference to the non-static method. So I had to make it static. That's why I"
+    },
+    {
+      "start_time": 2267.599,
+      "end_time": 2302.0,
+      "text": "आपको कहा था कि अभी याद रखना कि हमें हर मेथड जो भी हम मेन डेमो फोर क्लास के अंदर लिखेंगे जिसके अंदर मेन भी है वो सब स्टैटिक होने चाहिए। तो अब आप ये भी समझ गएगे। ठीक है? इसको हटा देते हैं। ओके? तो अभी हम इसके लिए ऑलमोस्ट सारी चीजें समझ चुके हैं। बस ये पब्लिक या ऊपर भी पब्लिक, नीचे भी पब्लिक। ये जो लिखा है ये हम अभी आगे समझेंगे। ठीक है? बाकी चीजें तो हम ऑलमोस्ट समझ चुके हैं। अब एक और चीज़ ऐसे समझो। व्हाट इफ मैं एक वेरिएबल को स्टैटिक भी बोल दूं, फाइनल भी बोल दूं। लेट्स से इसी में भी मैं लगा रहा हूं स्टैटिक फाइनल डबल पाई। क्या मैं ऐसा कर सकता हूं?",
+      "source": "transcript_api",
+      "english_text": "Told you that now remember that every method that we write inside the main demo four class, which also contains main, should be static. So now you will understand this also. Ok? Let's remove this. Ok? So now we have understood almost everything for this. Just this public or above also public, below also public. We will understand what is written later. Ok? We have almost understood the rest of the things. Now understand one more thing like this. What if I call a variable static or final? I am also putting static final double pie in this from lets. Can I do this?"
+    },
+    {
+      "start_time": 2299.76,
+      "end_time": 2329.68,
+      "text": "बिल्कुल कर सकता हूं। सोचो स्टैटिक का मतलब क्या हुआ? मैंने कहा ये क्लास का वेरिएबल है। फाइनल मतलब ये फाइनल वेरिएबल है। इसकी कोई और वैल्यू नहीं हो सकती। तो देखो अब यहां पे कुछ एरर आ रहा है। पहले तो एरर क्या आ रहा है? द ब्लैंक फाइनल फील्ड पाई मे नॉट हैव बीन इनिशियलाइज़्ड। और यहां पे क्या एरर आ रहा है? द स्टैटिक फील्ड रैंडम डॉट पाई शुड बी एक्सेस्ड इन अ स्टैटिक वे। है ना? अब क्योंकि मैंने इसको स्टैटिक बना दिया तो ये क्लास का वेरिएबल है। ऑब्जेक्ट का तो है नहीं। तो इसको मैं कंस्ट्रक्टर में नहीं कर सकता। तो मैं ये नहीं कर सकता। मैं सिंपल क्या कर सकता हूं? अपना एक स्टैटिक ब्लॉक बना सकता हूं।",
+      "source": "transcript_api",
+      "english_text": "Of course I can. Guess what static means? I said this is a class variable. Final means this is the final variable. It cannot have any other value. So look, now some error is coming here. First of all, what is the error coming? The blank final field pi may not have been initialized. And what error is coming here? The static field Random Dot Pi should be accessed in a static way. Isn't it? Now because I made it static, it is a variable of the class. It doesn't belong to the object. So I can't do this in the constructor. So I can't do this. What can I do simply? I can create my own static block."
+    },
+    {
+      "start_time": 2328.0,
+      "end_time": 2354.88,
+      "text": "उसमें मैं पाई को एसोसिएट करने की कोशिश कर सकता हूं। पाई = 3.14 मैं ये कर सकता हूं। देखो ये अलाउड है। बिल्कुल। या फिर अगर मैं ये भी नहीं बनाना चाहता तो मैं सिंपल इसको यहीं पे डाल सकता हूं। 3.1414 कुछ ऐसे। ठीक है? तो लेट से अभी के लिए मैं इसको स्टैटिक ब्लॉक में डालता हूं क्योंकि वो ज्यादा सुंदर लगता है। है ना? तो मैंने इसको स्टैटिक ब्लॉक में डाल दिया। तो अब इसका मतलब क्या हुआ? मैंने कहा ये जो पाई है ना एक तो ये फाइनल है।",
+      "source": "transcript_api",
+      "english_text": "In that I can try to associate Pi. Pi = 3.14 I can do this. Look this is loud. Absolutely. Or if I don't want to create this, I can simply put it here. 3.1414 Something like this. Ok? So sooner rather than later I put it in a static block because it looks prettier. Isn't it? So I put it in the static block. So what does this mean now? I said, this is the final pie."
+    },
+    {
+      "start_time": 2352.64,
+      "end_time": 2386.24,
+      "text": "इसको कोई चेंज नहीं कर सकता जो कि होना भी चाहिए। है ना? पाई तो एक कांस्टेंट है। मैथमेटिकल कांस्टेंट है। ये कभी चेंज नहीं होना चाहिए। और ये स्टैटिक है क्योंकि हर ऑब्जेक्ट के लिए पाई की वैल्यू सेम रहने वाली है। तो 3.14 किसी एक ऑब्जेक्ट के लिए अलग तो होगी नहीं। तो रैंडम के जितने भी आप ऑब्जेक्ट बना लो। तो कल को आप रैंडम के R1, R2, R3, R4,000 ऑब्जेक्ट बना लो। सबके लिए पाई की वैल्यू 3.14 ही रहेगी। तो मैंने इसको यहां पे स्टैटिक कीवर्ड भी लगा दिया। तो कई बार आप देखोगे कुछ ऐसे कांस्टेंट्स के आगे लिखा होगा स्टैटिक फाइनल। ठीक है? तो स्टैटिक फाइनल मिलाकर के बहुत यूज़ होते हैं कि आप चाहते हो वो",
+      "source": "transcript_api",
+      "english_text": "No one can change this, which is as it should be. Isn't it? Pi is a constant. Is a mathematical constant. This should never change. And this is static because the value of pi is going to be the same for every object. So 3.14 will not be different for any one object. So make as many random objects as you want. So tomorrow you create R1, R2, R3, R4,000 random objects. The value of Pi will remain 3.14 for everyone. So I also put static keyword here. So many times you will see that static final will be written in front of some such constants. Ok? So there are many uses of adding static final if you want that."
+    },
+    {
+      "start_time": 2384.32,
+      "end_time": 2418.8,
+      "text": "कांस्टेंट भी बन जाए और सबके लिए सेम भी हो जाए। ठीक है? तो आप ऐसा भी कर सकते हो। अब देखो, मैंने आपको कहा था कि हम ऑलमोस्ट हर चीज़ समझ गए। बस एक चीज़ रह गई थी। व्हाट इज़ दिस स्ट्रिंग आर्गुमेंट? अभी तक हमने समझा ही नहीं कि एक आर्गुमेंट्स नाम का एक एरे क्यों लेता है? मतलब बेसिकली स्ट्रिंग का एरे क्यों लेता है आग्स जब भी हम मेन फंक्शन को रन करते हैं। देखो ये इसलिए लेता है कि पहले पुराने जमाने में क्या होता था जब हम एक जावा के कोड को रन करते थे तो हम ऐसे करके कोड को तो रन करते नहीं थे। हम टर्मिनल खोलते थे सॉरी यहां पे हम करते हैं व्यू टर्मिनल। ठीक है? पहले जमाने में और हम लिखते थे पहले इसे कंपाइल करते थे java सी डेमो 4 डॉट java क्लास का",
+      "source": "transcript_api",
+      "english_text": "It should become constant and be the same for everyone. Ok? So you can do this also. Now see, I told you that we understood almost everything. Only one thing was left. What is this string argument? So far we haven't understood why it takes an array called arguments? Meaning basically why does it take an array of strings whenever we run the main function. Look, this is because what used to happen in the olden times was that when we used to run a Java code, we did not run the code like this. We used to open terminal, sorry here we do view terminal. Ok? In earlier times, we used to write and first compile it. java c demo 4 dot java class"
+    },
+    {
+      "start_time": 2416.48,
+      "end_time": 2447.68,
+      "text": "नाम ये हमने पहले किया हुआ है। अब हमारा कोड कंपाइल हो गया। हमारा बाइट कोड बन गया होगा और फिर हम क्या लिखते थे? जावा डेमो फोर मतलब है ना जैसे हम ये लिखेंगे हमारा कोड रन हो जाएगा तो हमारा आउटपुट आ गया 3.14 और ये आना था पहले 3.14 और फिर x = 4 का आउटपुट आ गया बहुत बढ़िया तो उस जमाने में अगर हमें कुछ इनपुट देना है तो हमारे पास ये स्ट्रिंग आर्गुमेंट नाम की चीज होती थी। कैसे इनपुट देना है मैं आपको बताता हूं। लेट्स से मैं ये सारा कोड अभी के लिए कमेंट कर दूं या एक काम करते हैं।",
+      "source": "transcript_api",
+      "english_text": "Name: We have done this before. Now our code is compiled. Our byte code would have been created and then what did we write? Java Demo Four means that if we write this, our code will run, then our output will be 3.14 and this was to come first 3.14 and then the output of Let me tell you how to give input. Let me comment all this code for now or do something else."
+    },
+    {
+      "start_time": 2445.28,
+      "end_time": 2472.56,
+      "text": "इसको नई फाइल में करते हैं। है ना? तो मैं एक काम करता हूं। मैं एक डेमो 5 डॉट java करके बना लेता हूं। ओके? तो ये मेरी फाइल बन गई। डेमो 5. यहां पे मैं क्या दिखा रहा हूं? मैं दिखा रहा हूं यूज़ ऑफ स्ट्रिंग आर्गुमेंट्स। ओके? तो बेसिकली ये कहता है कि जब मैं अपने कोड को रन कर रहा हूं तो ना मैं कुछ नंबर ऑफ़ आर्गुमेंट्स भी ले सकता हूं।",
+      "source": "transcript_api",
+      "english_text": "Let's do this in a new file. Isn't it? So I do one thing. I make a demo using 5 dot java. Ok? So this became my file. Demo 5. What am I showing here? I am showing the use of string arguments. Ok? So basically it says that when I am running my code, I can take some number of arguments."
+    },
+    {
+      "start_time": 2470.64,
+      "end_time": 2499.04,
+      "text": "कैसे? लेट्स से मैंने यहां पे लिखा पहले कुछ कोड लिखता हूं। सिस्टम डॉट आउट डॉट प्रिंट एलn जितने भी मेरे आर्गुमेंट्स हैं ए आर इसको प्रिंट करते हैं। नंबर ऑफ आर्गुमेंट्स आर प्लस args डॉट लेंथ मान लो कुछ ऐसा प्रिंट करते हैं और एक-एक करके सारे आर्गुमेंट भी प्रिंट कर लेते हैं। तो एक लूप चलाता हूं मैं। अभी बताता हूं मैं क्या कर रहा हूं।",
+      "source": "transcript_api",
+      "english_text": "how? Let me first write some code here. System dot out dot print l n prints all the arguments I have. Number of arguments r plus args dot length Suppose we print something like this and also print all the arguments one by one. So I run a loop. Let me tell you what I am doing right now."
+    },
+    {
+      "start_time": 2496.64,
+      "end_time": 2526.52,
+      "text": "i स्मॉलर देन आग्स डॉट लेंथ। आपको पता है हम डॉट लेंथ ऑपरेटर यूज़ करते हैं i+ और मैं सिस्टम डॉट आउट डॉट प्रिंट एलn एक-एक करके सारे आर्गुमेंट प्रिंट कर लेता हूं। तो आर्गुमेंट आईएथ इक्वल टू प्लस ए आरजीएस आई कुछ ऐसे",
+      "source": "transcript_api",
+      "english_text": "i Smaller than augs dot length. You know we use dot length operator i+ and I print all the arguments one by one system dot out dot print l. So the argument iith is equal to two plus a rgs i something like this"
+    },
+    {
+      "start_time": 2526.88,
+      "end_time": 2559.04,
+      "text": "ओके जीएस आई कुछ ऐसे। ठीक है? तो मैं अभी आपको बताता हूं मैं क्या कर रहा हूं। ठीक है? तो आप मान के चलो मेरा मेन फंक्शन है। उसके अंदर मैंने कुछ कोड लिखा है। मैंने कहा है ये जो आर्गुमेंट्स का एरे आता है ना मेरे पास मैं उसकी लेंथ प्रिंट करके देखनी है। और अगर उसकी लेंथ ज़ीरो से ज्यादा है तो मुझे उसका हर एलिमेंट प्रिंट करना है। ठीक है? मैंने और कोई कोड नहीं लिखा। तो मैं अगेन इसको चलाता हूं। मैं सिंपल ऐसे करके ही चलाऊंगा। तो सबसे पहले मैं इसे पहले कंपाइल करता हूं। jo java c डेमो 5 डॉट java। अब देखो मेरा यहां पे सोर्स कोड कंपाइल हो गया। यानी कि बाइट",
+      "source": "transcript_api",
+      "english_text": "Ok GS I came like this. Ok? So let me tell you right now what I'm doing. Ok? So you assume this is my main function. Inside that I have written some code. I have said that whatever array of arguments comes to me, I have to print its length and see. And if its length is more than zero then I have to print every element of it. Ok? I didn't write any more code. So I run it again. I will do it simply like this. So first of all I compile it first. jo java c demo 5 dot java. Now see, my source code is compiled here. i.e. byte"
+    },
+    {
+      "start_time": 2557.119,
+      "end_time": 2591.119,
+      "text": "कोड बन गया होगा। फिर मैं लिखता हूं अ अपना जावा डेमो फाइव सॉरी डेमो फाइव। अब ये रन हो जाएगा। तो देखो आंसर क्या है? नंबर ऑफ़ आर्गुमेंट्स आर ज़ीरो। अभी तक तो कोई आर्गुमेंट नहीं है। और मेरा और कुछ आया ही नहीं क्योंकि इस फॉर लूप में हम घुसे ही नहीं क्योंकि आर्गुमेंट्स की लेंथ ज़ीरो थी। है ना? लेकिन व्हाट इफ मैं इसको ऐसे करके रन करूं। जावा डेमो फाइव। और यहां पे कुछ वैल्यूज़ दूं। लेट्स से आदित्य टंडन और रोहित नेगी कुछ इस तरह से वैल्यू्यूज दूं और अब",
+      "source": "transcript_api",
+      "english_text": "The code must have been created. Then I write a my java demo five sorry demo five. Now this run will be done. So see what is the answer? Number of arguments are zero. There is no argument yet. And nothing else of mine came because we did not enter this for loop because the length of the arguments was zero. Isn't it? But what if I run it like this? Java Demo Five. And let me give some values ​​here. Let's give values like this to Aditya Tandon and Rohit Negi and now"
+    },
+    {
+      "start_time": 2588.72,
+      "end_time": 2622.56,
+      "text": "इसको रन करूं तो देखो नंबर ऑफ आर्गुमेंट्स फोर हो गए। पहला जीरो आदित्य है। वन टंडन टू रोहित थ्री नेगी। 0 1 2 3 क्या है? ये कुछ नहीं है। ये इस स्ट्रिंग आर्गुमेंट्स का जो स्ट्रिंग का एरे है उसके इंडेक्सेस हैं। तो ज़ीरोथ इंडेक्स पे आदित्य पढ़ा है। फर्स्ट पे टंडन टू पे रोहित थ्री पे नेगी। और यहां पे मैंने इनको पास किया था। कुछ इस तरह ज़ीरो है 1 2 3 तो ये काम होता था इस स्ट्रिंग आर्गुमेंट्स का कि जब हम अपने कोड को रन कर रहे हैं तभी हम कुछ कंसोल पे आउटपुट दे दें और वो हमारा कट तभी हम कंसोल पे कुछ इनपुट दें और वो इनपुट हमारा",
+      "source": "transcript_api",
+      "english_text": "If I run it, the number of arguments becomes four. The first zero is Aditya. One Tandon to Rohit, three to Negi. What is 0 1 2 3? that's nothing. These are the indices of this string arguments which is an array of strings. So Aditya is read on Zeroth Index. Tandon at first, Rohit at two, Negi at three. And here I passed them. Zero is something like this 1 2 3 So the work of this string arguments was that when we are running our code then only we give some output on the console and that is our cut, only then we give some input on the console and that input is ours."
+    },
+    {
+      "start_time": 2620.56,
+      "end_time": 2654.72,
+      "text": "इस आर्गुमेंट्स नाम के एरे में स्टोर हो जाए और उसके साथ हम कुछ ना कुछ कर सकें। पर किस काम आता था? देखो अब तो ये ज्यादा काम नहीं आता क्योंकि हम कोड को डायरेक्टली रन करते हैं। पर पहले ये ज्यादा काम आता था कॉन्फ़िगरेशंस में। तो कई बार हम ऐसे लिखते थे जावा लेट्स से डेमो फाइव जावा का नाम क्लास का नाम है और उसके आगे हम कॉन्फ़िगरेशंस लिखते थे जैसे कि हमारी इनपुट डॉटxt फाइल ये है यहां से रीड करो आउटपुट डॉट अ सॉरी आउटपुट डॉटxt फाइल में आंसर को देना ठीक है तो ये सब वैल्यूज़ जो हम देते थे ना ये हम इस आर्गुमेंट नाम के एरे में कलेक्ट कर सकते",
+      "source": "transcript_api",
+      "english_text": "This should be stored in an array named arguments and we can do something with it. But what was it useful for? Look, now this is not of much use because we run the code directly. But earlier it was more useful in configurations. So many times we used to write like this, Demo Five from Java Lets, the name of Java is the name of the class and after that we used to write the configuration like this is our input .txt file, read it from here, output.a, sorry, it is okay to give the answer in the output .txt file, so all these values which we used to give, we can collect them in this array named Argument."
+    },
+    {
+      "start_time": 2652.56,
+      "end_time": 2686.4,
+      "text": "थे और फिर इसके साथ हम कुछ भी कर सकते थे बहुत सारी चेंजज़ कर सकते थे। तो ये पहले तो बहुत काम का था। अब क्योंकि हम यूजर से मैनुअली कोई आर्गुमेंट्स नहीं डलवाते तो उसका इतना काम नहीं है। पर अभी भी इसका बहुत यूज़ होता है। जब आप स्प्रिंग बूट पढ़ोगे तो आपको समझ आएगा कि जब हम लिखते हैं Java फाइव Java डेमो फाइव तो हम कुछ कॉन्फ़िगरेशंस इंटरनली देना चाहते हैं। जैसे अगर हम मान लो हो सकता है रन लिखे या बहुत सारी कॉन्फ़िगरेशंस होती हैं। वो हम स्प्रिंग बूट के टाइम पे पढ़ेंगे। पर आई होप आपको समझ आ गया होगा कि पहले इसका कितना ज्यादा यूज़ केस था और अभी तक तो हमने इसको कोई यूज़ किया ही नहीं पूरे के पूरे जावा में। मैंने बस आपको बता दिया कि इसको हम कैसे यूज़ कर सकते हैं। जब आप",
+      "source": "transcript_api",
+      "english_text": "And then we could do anything with it and make many changes. So this was very useful at first. Now because we do not make the user enter any arguments manually, there is not much work for him. But it is still used a lot. When you read Spring Boot, you will understand that when we write Java Five Java Demo Five, we want to provide some configuration internally. Like if we say maybe there are runs written or there are a lot of configurations. We will read that at the time of Spring Boot. But I hope you must have understood how many use cases it had earlier and till now we have not used it at all in Java. I just told you how we can use it. when you"
+    },
+    {
+      "start_time": 2684.4,
+      "end_time": 2710.599,
+      "text": "लिखते हो रन करने के लिए जावा डेमो फाइव तभी आप कुछ एज ए फाइल के नाम या फिर कुछ भी स्ट्रिंग्स दे सकते हो। जैसे मैंने दिया आदित्य टंडन रोहित नेगी वो सब इसने एक-एक करके स्ट्रिंग को एज एन आर्गुमेंट लिया और उनके साथ मैं कुछ भी कर सकता हूं। उस इनपुट्स के साथ मैं कुछ भी कर सकता हूं। राइट? तो ये इसका बहुत अच्छा यूज़ केस था और इस वीडियो में इतना ही। आई होप आपको बहुत अच्छे से सारी चीजें समझ आई। आपसे मिलते हैं नेक्स्ट लेक्चर में। तब तक के लिए थैंक यू सो मच।",
+      "source": "transcript_api",
+      "english_text": "To run Java Demo Five, you write, only then you can give some file names or any strings. Like I gave Aditya Tandon, Rohit Negi all that, he took the strings one by one as an argument and I can do anything with them. I can do anything with those inputs. Right? So this was a very good use case for it and that's all in this video. I hope you understood everything very well. See you in the next lecture. Till then thank you so much."
+    }
+  ],
+  "playlist_id": "PLXZCnQTdmeaE",
+  "playlist_title": "OOPs in Java Full Course"
+}

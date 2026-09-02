@@ -9,11 +9,10 @@ import threading
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 from urllib.parse import parse_qs, urlparse
 
 from dotenv import load_dotenv
-from faster_whisper import WhisperModel
 from youtube_transcript_api import YouTubeTranscriptApi
 
 
@@ -60,6 +59,11 @@ MAX_CONCURRENT_WHISPER = int(
     os.getenv("MAX_CONCURRENT_WHISPER", "1")
 )
 
+ENABLE_WHISPER_FALLBACK = (
+    os.getenv("ENABLE_WHISPER_FALLBACK", "true").strip().lower()
+    in ("true", "1", "yes")
+)
+
 
 # ============================================================
 # CHUNK CONFIGURATION
@@ -81,18 +85,23 @@ def get_ytdlp_cmd() -> List[str]:
 # WHISPER MODEL (LAZY SINGLETON & THREAD-SAFE CONCURRENCY)
 # ============================================================
 
-_WHISPER_MODEL: Optional[WhisperModel] = None
+_WHISPER_MODEL: Optional[Any] = None
 _WHISPER_INIT_LOCK = threading.Lock()
 _WHISPER_TRANSCRIBE_SEMAPHORE = threading.Semaphore(MAX_CONCURRENT_WHISPER)
 
 
-def get_whisper_model() -> WhisperModel:
+def get_whisper_model() -> Any:
     """Lazy-load the Whisper model once and reuse across calls."""
     global _WHISPER_MODEL
+    if not ENABLE_WHISPER_FALLBACK:
+        raise RuntimeError(
+            "Local Whisper model requested but ENABLE_WHISPER_FALLBACK is disabled."
+        )
     if _WHISPER_MODEL is None:
         with _WHISPER_INIT_LOCK:
             if _WHISPER_MODEL is None:
                 print("\n[ASR] Loading faster-whisper model (lazy singleton)...")
+                from faster_whisper import WhisperModel
                 try:
                     _WHISPER_MODEL = WhisperModel(
                         "small",
@@ -109,11 +118,16 @@ def get_whisper_model() -> WhisperModel:
     return _WHISPER_MODEL
 
 
-def set_whisper_cpu_model() -> WhisperModel:
+def set_whisper_cpu_model() -> Any:
     """Explicitly switch the global singleton to CPU model on failure and cache it."""
     global _WHISPER_MODEL
+    if not ENABLE_WHISPER_FALLBACK:
+        raise RuntimeError(
+            "Local Whisper model requested but ENABLE_WHISPER_FALLBACK is disabled."
+        )
     with _WHISPER_INIT_LOCK:
         print("[ASR] Initializing/updating global Whisper model on CPU (int8)...")
+        from faster_whisper import WhisperModel
         _WHISPER_MODEL = WhisperModel(
             "small",
             device="cpu",
@@ -1153,7 +1167,12 @@ def fallback_transcribe(
     """
     Downloads audio temporarily and transcribes with the lazy-singleton WhisperModel.
     Thread-safe execution guarded by _WHISPER_TRANSCRIBE_SEMAPHORE.
+    Bypasses Whisper when ENABLE_WHISPER_FALLBACK is False.
     """
+    if not ENABLE_WHISPER_FALLBACK:
+        print("[ASR] Whisper fallback is disabled (ENABLE_WHISPER_FALLBACK=false). Skipping audio transcription.")
+        return None
+
     audio_path = temp_dir / "audio.%(ext)s"
 
     download_command = get_ytdlp_cmd() + [
@@ -1470,12 +1489,15 @@ def process_single_video_detailed(
 
         # 3. Whisper Fallback (only when no captions exist)
         if not raw_chunks:
-            print(f"[{video_id}] No captions found. Falling back to faster-whisper...")
-            raw_chunks = fallback_transcribe(video_url, temp_dir)
-            if raw_chunks:
-                source = "whisper"
-                acq_path = "whisper"
-                print(f"[{video_id}] Whisper transcription completed.")
+            if not ENABLE_WHISPER_FALLBACK:
+                print(f"[{video_id}] No captions found. Whisper fallback is disabled (ENABLE_WHISPER_FALLBACK=false).")
+            else:
+                print(f"[{video_id}] No captions found. Falling back to faster-whisper...")
+                raw_chunks = fallback_transcribe(video_url, temp_dir)
+                if raw_chunks:
+                    source = "whisper"
+                    acq_path = "whisper"
+                    print(f"[{video_id}] Whisper transcription completed.")
 
         # 4. Validate
         if not raw_chunks or not source:

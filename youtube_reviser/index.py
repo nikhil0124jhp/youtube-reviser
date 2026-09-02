@@ -112,18 +112,12 @@ EXCLUDED_DIRS = {
 
 
 # ============================================================
-# EMBEDDING MODEL
+# EMBEDDING MODEL (SINGLETON)
 # ============================================================
 
 def load_embedding_model() -> SentenceTransformer:
-    print(
-        f"Loading embedding model: "
-        f"{EMBEDDING_MODEL}"
-    )
-
-    return SentenceTransformer(
-        EMBEDDING_MODEL
-    )
+    from .retrieval import load_embedding_model as _load_model
+    return _load_model()
 
 
 # ============================================================

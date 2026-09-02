@@ -2,6 +2,7 @@ import json
 import os
 import re
 import sys
+import threading
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from urllib.parse import quote
@@ -138,16 +139,25 @@ def clean_query_text(query: str) -> str:
 
 
 # ============================================================
-# EMBEDDING MODEL
+# EMBEDDING MODEL (SINGLETON)
 # ============================================================
 
+_EMBEDDING_MODEL_INSTANCE: Optional[SentenceTransformer] = None
+_EMBEDDING_MODEL_LOCK = threading.Lock()
+
+
 def load_embedding_model() -> SentenceTransformer:
-    print(
-        f"Loading embedding model: {EMBEDDING_MODEL}"
-    )
-    return SentenceTransformer(
-        EMBEDDING_MODEL
-    )
+    global _EMBEDDING_MODEL_INSTANCE
+    if _EMBEDDING_MODEL_INSTANCE is None:
+        with _EMBEDDING_MODEL_LOCK:
+            if _EMBEDDING_MODEL_INSTANCE is None:
+                print(
+                    f"Loading embedding model: {EMBEDDING_MODEL}"
+                )
+                _EMBEDDING_MODEL_INSTANCE = SentenceTransformer(
+                    EMBEDDING_MODEL
+                )
+    return _EMBEDDING_MODEL_INSTANCE
 
 
 # ============================================================

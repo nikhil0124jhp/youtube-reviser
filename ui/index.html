@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>YouTube Reviser</title>
+
+    <link rel="stylesheet" href="/static/style.css?v=6">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- =====================================================
+             HERO
+             ===================================================== -->
+
+        <header class="hero">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    ▶
+                </div>
+
+                <div class="brand-content">
+
+                    <h1>
+                        YouTube Reviser
+                    </h1>
+
+                    <p>
+                        Turn YouTube videos and playlists
+                        into searchable knowledge.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <nav class="page-nav">
+                <a href="/chat">Open Learning Assistant →</a>
+            </nav>
+
+        </header>
+
+
+        <!-- =====================================================
+             URL INPUT
+             ===================================================== -->
+
+        <section class="card input-card">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    KNOWLEDGE INGESTION
+                </span>
+
+                <h2>
+                    Add YouTube Content
+                </h2>
+
+                <p>
+                    Paste a YouTube video or playlist URL
+                    to analyze and add it to your knowledge base.
+                </p>
+
+            </div>
+
+
+            <form
+                id="urlForm"
+                class="url-form"
+            >
+
+                <div class="input-wrapper">
+
+                    <label for="youtubeUrl">
+                        YouTube URL
+                    </label>
+
+                    <div class="input-container">
+
+                        <span class="url-icon">
+                            🔗
+                        </span>
+
+                        <input
+                            type="url"
+                            id="youtubeUrl"
+                            name="youtubeUrl"
+                            placeholder="https://www.youtube.com/watch?v=..."
+                            autocomplete="off"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="clearBtn"
+                            class="clear-btn hidden"
+                            aria-label="Clear URL"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="analyzeBtn"
+                    class="primary-btn"
+                >
+
+                    <span class="btn-text">
+                        Analyze URL
+                    </span>
+
+                    <span
+                        id="analyzeLoader"
+                        class="loader hidden"
+                    ></span>
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =====================================================
+             ANALYSIS SECTION
+             ===================================================== -->
+
+        <section
+            id="analysisSection"
+            class="card hidden"
+        >
+
+            <div class="section-header">
+
+                <div>
+
+                    <span
+                        id="contentTypeBadge"
+                        class="badge"
+                    >
+                        VIDEO
+                    </span>
+
+                    <h2 id="contentTitle">
+                        YouTube Content
+                    </h2>
+
+                    <p
+                        id="contentUrl"
+                        class="content-url"
+                    ></p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =======================
+                 STATS
+                 ======================= -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <span class="stat-label">
+                        Content Type
+                    </span>
+
+                    <strong id="typeValue">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-label">
+                        Total Videos
+                    </span>
+
+                    <strong id="videoCount">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-label">
+                        Already Saved
+                    </span>
+
+                    <strong id="savedCount">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-label">
+                        New Videos
+                    </span>
+
+                    <strong id="newCount">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- =======================
+                 VIDEO LIST
+                 ======================= -->
+
+            <div class="video-section">
+
+                <div class="subsection-header">
+
+                    <div>
+
+                        <h3>
+                            Videos in Playlist
+                        </h3>
+
+                        <p>
+                            Content detected from the URL
+                        </p>
+
+                    </div>
+
+                    <span
+                        id="listStatus"
+                        class="list-status"
+                    >
+                        0 videos
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="videoList"
+                    class="video-list"
+                >
+                </div>
+
+            </div>
+
+
+            <!-- =======================
+                 PROCESS BUTTON
+                 ======================= -->
+
+            <div class="action-row">
+
+                <button
+                    id="removePlaylistBtn"
+                    class="danger-btn remove-playlist-btn hidden"
+                    type="button"
+                >
+                    🗑 Remove Playlist
+                </button>
+
+                <button
+                    id="processBtn"
+                    class="primary-btn"
+                    type="button"
+                >
+                    Process New Videos
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROCESSING / INGESTION
+             ===================================================== -->
+
+        <section
+            id="progressSection"
+            class="card hidden"
+        >
+
+            <!-- Header -->
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    LIVE STATUS
+                </span>
+
+                <h2 id="progressMainHeading">
+                    Processing your videos
+                </h2>
+
+                <div class="step-indicator-wrapper">
+                    <span class="step-label">Current Step:</span>
+                    <span id="progressStepText" class="current-step-badge">
+                        Fetching video transcripts...
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- Progress -->
+
+            <div class="progress-container">
+
+                <div class="progress-info">
+
+                    <span id="overallProgressText" class="overall-progress-text">
+                        Overall Progress: <strong id="progressPercent">0%</strong>
+                    </span>
+
+                    <span id="progressLabel" class="progress-label-text">
+                        0 / 0 videos
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="progress-track"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="0"
+                >
+
+                    <div
+                        id="progressFill"
+                        class="progress-fill"
+                    >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pipeline Stages -->
+
+            <div class="pipeline-stages" id="pipelineStages">
+
+                <div class="pipeline-stage-item" id="stageRowFetching">
+                    <div class="stage-left">
+                        <span class="stage-icon" id="stageIconFetching">○</span>
+                        <span class="stage-title">Fetching transcripts</span>
+                    </div>
+                    <span class="stage-metric" id="stageMetricFetching">0 / 0</span>
+                </div>
+
+                <div class="pipeline-stage-item" id="stageRowChunking">
+                    <div class="stage-left">
+                        <span class="stage-icon" id="stageIconChunking">○</span>
+                        <span class="stage-title">Creating chunks</span>
+                    </div>
+                    <span class="stage-metric" id="stageMetricChunking">-</span>
+                </div>
+
+                <div class="pipeline-stage-item" id="stageRowEmbedding">
+                    <div class="stage-left">
+                        <span class="stage-icon" id="stageIconEmbedding">○</span>
+                        <span class="stage-title">Generating embeddings</span>
+                    </div>
+                    <span class="stage-metric" id="stageMetricEmbedding">0 / 0</span>
+                </div>
+
+                <div class="pipeline-stage-item" id="stageRowIndexing">
+                    <div class="stage-left">
+                        <span class="stage-icon" id="stageIconIndexing">○</span>
+                        <span class="stage-title">Saving to knowledge base</span>
+                    </div>
+                    <span class="stage-metric" id="stageMetricIndexing">0 / 0</span>
+                </div>
+
+            </div>
+
+
+            <!-- Summary Box on Completion -->
+
+            <div id="completionSummary" class="completion-summary hidden">
+                <div class="completion-header">
+                    <span class="completion-icon">✓</span>
+                    <strong>Processing complete</strong>
+                </div>
+                <p id="completionDetails" class="completion-details"></p>
+            </div>
+
+
+            <!-- Video processing list -->
+
+            <div class="processing-list-heading">
+
+                <h3>
+                    Per-Video Status
+                </h3>
+
+                <p>
+                    Live status for each video as it is processed
+                </p>
+
+            </div>
+
+
+            <div
+                id="processingList"
+                class="processing-list"
+            >
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             MESSAGE
+             ===================================================== -->
+
+        <section
+            id="messageSection"
+            class="message-section hidden"
+        >
+
+            <div
+                id="messageBox"
+                class="message-box"
+            >
+
+                <div
+                    id="messageIcon"
+                    class="message-icon"
+                >
+                    ✓
+                </div>
+
+
+                <div class="message-content">
+
+                    <strong id="messageTitle">
+                        Success
+                    </strong>
+
+                    <p id="messageText">
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="closeMessageBtn"
+                    class="message-close"
+                    type="button"
+                    aria-label="Close message"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FOOTER
+             ===================================================== -->
+
+        <footer class="footer">
+
+            <span>
+                YouTube Reviser
+            </span>
+
+            <span class="footer-dot">
+                •
+            </span>
+
+            <span>
+                RAG Knowledge Base
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="/static/app.js?v=6"></script>
+
+</body>
+</html>
